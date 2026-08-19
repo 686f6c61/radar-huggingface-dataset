@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maitf/sanitized-main-liquid3-variant-a-act-normal",
+  "slug": "maitf-sanitized-main-liquid3-variant-a-act-normal",
+  "author": "maitf",
+  "url": "https://huggingface.co/maitf/sanitized-main-liquid3-variant-a-act-normal",
+  "created_at": "2026-08-19T12:18:06.000Z",
+  "updated_at": "2026-08-19T12:18:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:maitf/sanitized-main-liquid3-variant-a",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aisamuraiagent-source/ai-threat-model-dependency-risk-lab",
+      "url": "https://github.com/aisamuraiagent-source/ai-threat-model-dependency-risk-lab/tree/main",
+      "snippet": "Public sanitized defensive AI lab for repo-specific threat modeling, dependency risk review, patch validation, and audit-ready remediation evidence with human approval."
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "Liquid AI — Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI is an efficiency-first foundation model company. We build highly capable, compute-optimized models that bring intelligence to any device and medium of choice."
+    },
+    {
+      "title": "Sanitized Ai - Shadow AI Detection & PII Protection for Enterprises",
+      "url": "https://sanitized.ai/",
+      "snippet": "How does Sanitized Ai support AI compliance? It enforces AI acceptable-use policies — block, warn, or allow — with full audit trails and audit-ready reporting to help meet data-protection obligations. How much does Sanitized Ai cost? Sanitized Ai is enterprise software priced by custom quote based on seats, modules, and deployment."
+    },
+    {
+      "title": "maitf/main-liquid1_20260814_144223 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/maitf/main-liquid1_20260814_144223",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

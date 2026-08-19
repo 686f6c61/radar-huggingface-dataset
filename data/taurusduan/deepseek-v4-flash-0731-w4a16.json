@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "taurusduan/DeepSeek-V4-Flash-0731-W4A16",
+  "slug": "taurusduan-deepseek-v4-flash-0731-w4a16",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/DeepSeek-V4-Flash-0731-W4A16",
+  "created_at": "2026-08-19T11:49:10.000Z",
+  "updated_at": "2026-08-19T11:49:10.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "deepseek_v4",
+    "deepseek",
+    "deepseek-v4",
+    "int4",
+    "w4a16",
+    "compressed-tensors",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE ..."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731: Specs, Pricing, Benchmarks and API Update ...",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/deepseek-v4-flash",
+      "snippet": "DeepSeek-V4-Flash currently shows benchmark results led by LiveCodeBench (4 / 126, score 91.60), MMLU Pro (17 / 133, score 86.40), CodeForces (3 / 20, score 3052). This page also consolidates core specs, context limits, and API pricing so you can evaluate the model from benchmark results and deployment constraints together."
+    },
+    {
+      "title": "GitHub - tonyd2wild/DeepSeek-v4-Flash-0731-DSpark-1M-NVFP4-KV-2x-DGX ...",
+      "url": "https://github.com/tonyd2wild/DeepSeek-v4-Flash-0731-DSpark-1M-NVFP4-KV-2x-DGX-Spark",
+      "snippet": "Self-contained two-node DGX Spark recipe for serving DeepSeek-V4-Flash with vLLM TP=2, DSpark speculative decoding, and an experimental nvfp4_ds_mla KV cache — 1M-token calibrated context (pushed to 1.5M), clean under agent concurrency. If you swap in the 0731 weights and change nothing else ..."
+    },
+    {
+      "title": "DeepSeek V4: Specs, Benchmarks and the 0731 Release",
+      "url": "https://felloai.com/deepseek-v4/",
+      "snippet": "DeepSeek V4 explained: the V4-Flash-0731 release, 284B/13B MoE architecture, 1M token context, MIT weights, and how its benchmarks compare to the frontier."
+    }
+  ]
+}

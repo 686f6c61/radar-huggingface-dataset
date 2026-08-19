@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ChesterProgrammer/CPT-Lucy-V0.1",
+  "slug": "chesterprogrammer-cpt-lucy-v0-1",
+  "author": "ChesterProgrammer",
+  "url": "https://huggingface.co/ChesterProgrammer/CPT-Lucy-V0.1",
+  "created_at": "2026-08-19T11:49:59.000Z",
+  "updated_at": "2026-08-19T11:49:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:DreamFast/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Safetensor-Benchmark",
+    "base_model:finetune:DreamFast/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Safetensor-Benchmark",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChesterProgrammer/CPT-Lucy-V0 · Hugging Face",
+      "url": "https://huggingface.co/ChesterProgrammer/CPT-Lucy-V0",
+      "snippet": "Batch size 8 Grad Accum 1 Learning rate 0.00005 Embedding Learning Rate 0.000005 Optimizer AdamW 8-bit Context length 2048 Warmup steps 1 Packing True weight decay 0.01 LR scheduler Linear seed 3407 LoRA Rank 32 Alpha 64 Dropout 0.0 Variant RS-lora Dataset Corpus-Lucy Downloads last month - Safetensors Model size 9B params Tensor type F32 ..."
+    },
+    {
+      "title": "ChesterProgrammer (Luq) - Hugging Face",
+      "url": "https://huggingface.co/ChesterProgrammer",
+      "snippet": "ChesterProgrammer/CPT-Lucy-V0 Image-Text-to-Text • 9B•Updated about 20 hours ago• 24"
+    },
+    {
+      "title": "CPT-Lucy-V0 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ChesterProgrammer/CPT-Lucy-V0",
+      "snippet": "Run CPT-Lucy-V0 with FriendliAI inference. This qwen35 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Lucy Realtime 2 - Real-Time AI Video Transformation | fal",
+      "url": "https://fal.ai/lucy-2",
+      "snippet": "Transform live video in real time with Lucy 2 on fal.ai. Character swaps, virtual try-on, product placement, and environment transformation at 30fps 1080p with near-zero latency."
+    },
+    {
+      "title": "LUCY",
+      "url": "https://app.getlucy.ai/",
+      "snippet": "LUCY Your browser does not support Lucy"
+    }
+  ]
+}

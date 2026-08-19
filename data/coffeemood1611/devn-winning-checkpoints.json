@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Coffeemood1611/devn-winning-checkpoints",
+  "slug": "coffeemood1611-devn-winning-checkpoints",
+  "author": "Coffeemood1611",
+  "url": "https://huggingface.co/Coffeemood1611/devn-winning-checkpoints",
+  "created_at": "2026-08-19T11:54:09.000Z",
+  "updated_at": "2026-08-19T11:54:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models. AETHORIA-AI/tr-hash-200m-70b-replay-checkpoints"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Devin | The AI Software Engineer",
+      "url": "https://devin.ai/",
+      "snippet": "Devin is an AI coding agent and software engineer that helps developers build better software faster. Parallel cloud agents for serious engineering teams."
+    },
+    {
+      "title": "Coffeemood1611/railbird-rm-00 - Fast, Reliable, and Scalable Inference ...",
+      "url": "https://friendli.ai/models/Coffeemood1611/railbird-rm-00",
+      "snippet": "Request reserved instances Model provider Coffeemood1611 Model tree Base meta-llama/Llama-3.1-8B-Instruct Adapter this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Serverless Endpoints Dedicated Endpoints Container More information Model card"
+    }
+  ]
+}

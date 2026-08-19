@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ATLAUCUS/romaissae",
+  "slug": "atlaucus-romaissae",
+  "author": "ATLAUCUS",
+  "url": "https://huggingface.co/ATLAUCUS/romaissae",
+  "created_at": "2026-08-19T12:00:26.000Z",
+  "updated_at": "2026-08-19T12:00:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "Best AI Fashion Model Generator for Images & Video with Free Trial",
+      "url": "https://modelia.ai/",
+      "snippet": "AI fashion model generator for ecommerce brands. Turn flat-lay photos into realistic model shots in minutes — no photoshoot or studio required."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Model Explorer — Compare AI Image & Video Models Side by Side | Atlas Cloud",
+      "url": "https://www.atlascloud.ai/model-explorer",
+      "snippet": "Run one prompt across up to 10 AI image and video models at once. Compare outputs, speed, and price side by side, with costs estimated before you generate."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

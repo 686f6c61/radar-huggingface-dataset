@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "grimoni/Qwen3.8-27B-SSMFIX-UD-Q4_K_XL-GGUF",
+  "slug": "grimoni-qwen3-8-27b-ssmfix-ud-q4_k_xl-gguf",
+  "author": "grimoni",
+  "url": "https://huggingface.co/grimoni/Qwen3.8-27B-SSMFIX-UD-Q4_K_XL-GGUF",
+  "created_at": "2026-08-19T11:55:34.000Z",
+  "updated_at": "2026-08-19T12:03:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "multimodal",
+    "ssm-fix",
+    "conv1d-repair",
+    "quantized",
+    "q4_k",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 15150422112,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and Single-GPU Setup ...",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen3.8-27B-UD-Q4_K_XL.gguf · unsloth/Qwen3.8-27B-GGUF at main",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/blob/main/Qwen3.8-27B-UD-Q4_K_XL.gguf",
+      "snippet": "Instructions to use unsloth/Qwen3.8-27B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp Install (macOS, Linux) ... Install from WinGet (Windows) ... Use pre-built binary ... Build from source code"
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "How to Run Qwen3.8-27B Locally with Ollama, LM Studio, and llama.cpp",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-local-gguf-setup",
+      "snippet": "Install Qwen3.8-27B GGUF quantizations locally with LM Studio, Ollama, and llama.cpp, plus VRAM comparisons and quantization guidance."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "BananaMind-Model-Previewers/BananaMind-2.1-Unified",
+  "slug": "bananamind-model-previewers-bananamind-2-1-unified",
+  "author": "BananaMind-Model-Previewers",
+  "url": "https://huggingface.co/BananaMind-Model-Previewers/BananaMind-2.1-Unified",
+  "created_at": "2026-08-19T11:50:47.000Z",
+  "updated_at": "2026-08-19T11:51:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bananamind21_unified",
+    "text-generation",
+    "causal-lm",
+    "language-model",
+    "base-model",
+    "small-language-model",
+    "bananamind",
+    "bananamind2",
+    "bananamind21-unified",
+    "three-tower",
+    "relay",
+    "multi-tower",
+    "fineweb-hq",
+    "dclm",
+    "cosmopedia-v2",
+    "finemath",
+    "digit-tokenizer",
+    "pytorch",
+    "custom-code",
+    "trust-remote-code",
+    "custom-architecture",
+    "custom_code",
+    "en",
+    "dataset:epfml/FineWeb-HQ",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34999041,
+  "parameters_human": "35.0M",
+  "storage_bytes": 140025876,
+  "storage_human": "140 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BananaMind-2-Pro-Preview - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BananaMind-Model-Previewers (BananaMind Model Previewers) - Hugging Face",
+      "url": "https://huggingface.co/BananaMind-Model-Previewers",
+      "snippet": "Org profile for BananaMind Model Previewers on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Gemini 2.5 Flash image (Nano Banana) | Gemini API | Google AI for ...",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-image",
+      "snippet": "Gemini 2.5 Flash Image, also known as Nano Banana, is best for high-volume generation, conversational image editing, and low-latency creative workflows that require native multimodal understanding."
+    },
+    {
+      "title": "Nano Banana | Google AI Studio",
+      "url": "https://aistudio.google.com/models/nano-banana",
+      "snippet": "Try image generation apps built in AI Studio image Nano Banana 2 Lite photo_library Nano Banana 2 photo_spark Nano Banana Pro Gridscape Anywhere Peek-a-word"
+    },
+    {
+      "title": "Gemini 3.1 Flash Image (Nano Banana 2) | Gemini Enterprise Agent ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-image",
+      "snippet": "Refer to the pricing page for the latest. For more information about image generation using Gemini 3.1 Flash Image, see Generate and edit images with Gemini. Preview features Preview This product or feature is a Generative AI Preview offering, subject to the \"Pre-GA Offerings Terms\" of the Google Cloud Service Specific Terms."
+    }
+  ]
+}

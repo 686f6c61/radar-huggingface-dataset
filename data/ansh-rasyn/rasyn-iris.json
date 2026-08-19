@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ansh-rasyn/rasyn-iris",
+  "slug": "ansh-rasyn-rasyn-iris",
+  "author": "ansh-rasyn",
+  "url": "https://huggingface.co/ansh-rasyn/rasyn-iris",
+  "created_at": "2026-08-19T11:55:52.000Z",
+  "updated_at": "2026-08-19T11:55:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37157326,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rasyn Marigold: Your Own Co-Chemist",
+      "url": "https://www.rasyn.ai/",
+      "snippet": "Tell Marigold what you need and it does the work, so you can focus on the science. It picks the right tools, runs them on a machine of your own, and the results land in panels you keep."
+    },
+    {
+      "title": "Rasyn - Autonomous AI Document Digitization for Healthcare",
+      "url": "https://rasyn.tech/",
+      "snippet": "Ready for Autonomous Document Digitization? Transform your healthcare document workflow with intelligent AI that requires zero human intervention. Start processing documents instantly - no training, setup, or configuration needed."
+    },
+    {
+      "title": "Iris.ai | AI knowledge foundation for regulated enterprises",
+      "url": "https://iris.ai/",
+      "snippet": "Augment expert knowledge by unifying complex enterprise data to empower next-gen AI agents & applications"
+    },
+    {
+      "title": "IRIS - Imagination-Based Foundation Model for Robot Learning - Humanoid ...",
+      "url": "https://humanoid.guide/product/iris/",
+      "snippet": "IRIS is a foundation model that enables robots to plan and predict outcomes using imagination, reducing real-world trials and improving learning efficiency."
+    },
+    {
+      "title": "app.rasyn.ai - Marigold",
+      "url": "https://app.rasyn.ai/",
+      "snippet": "Research and engineering orchestrator for scientists Continue with Google Use password instead New to Rasyn? Create account"
+    }
+  ]
+}

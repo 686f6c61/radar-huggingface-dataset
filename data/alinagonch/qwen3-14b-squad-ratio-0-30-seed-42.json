@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-14b-squad-ratio-0.30-seed-42",
+  "slug": "alinagonch-qwen3-14b-squad-ratio-0-30-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.30-seed-42",
+  "created_at": "2026-08-19T11:41:46.000Z",
+  "updated_at": "2026-08-19T11:41:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268399154,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seedance 2.5 Official Launch - Seedance 2.5 Worldwide Release",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=cEBg92xrPa16hQ6QHFVFQ5Hsm7KmurMB7FOZWiZGbvPP%2DxIBOyckU8f5_4IT1cwlIrg1Aw1D1nn3qEzpZcJmVaLoif%2DqoL7K5%2DL0yAxFC_6J9Dbe_PBAYzjVslb%2Dqe3TXGDxugBSR53uGIsTTKVvTa6d9INklhpIQpznELe_Nxg.uP_ZuEb1ReTJOE58zk9CfQ&rut=cb088e6ee47ff4cfbdbc6b2f22bef9c3941c03b7d8924d46898a00ef32c440d9&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De83aeOlB56keclDTsEyfR3QTVUCUzV23kjOJrTFntQlNRuKZRIXOjRnrZsCISfu4wSZIUCHg71NZO5dJjnfItg8wUE5NXALeRSwYJLgO4nEomR75ep%2D47u67B1mrzUdFLi5w6KP9AuOJFhU_KdlLLUnA7wf3LxsD4Ol836D4IEr96I%2DIjoGKHL9OmGgRXnwk8C1yichPGudUP%2Dr8oHBJsfc94pPC0%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZlbiUyZmFjdGl2aXR5JTJmc2VlZGFuY2UyLTUlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RwdXJjaGFzZV9zZWVkYW5jZV9ldV9lbmdsaXNoXzIwMjYwODE5X2xyaCUyNnV0bV90ZXJtJTNkMjAyNjA4MTlfYnJhbmRfYnJvYWRtYXRjaF8yLTVfc2VlZGFuY2UyLjUlMjZ1dG1fY29udGVudCUzZHRlY2RvJTI2bXNjbGtpZCUzZDA1ZTFhNTVlMzYxNDFkOGNiNGZhY2ZkYmE5NjI1NDc5%26rlid%3D05e1a55e36141d8cb4facfdba9625479&vqd=4-88179762553445826766614217576432048670&iurl=%7B1%7DIG%3DA748FE3C9B6743AEA9D7746500B3821F%26CID%3D33D6FB75128367BE3518ECCF13F466EF%26ID%3DDevEx%2C5037.1",
+      "snippet": "Seedance 2.5 takes 50 images, audio, and video inputs for better control. Seedance 2.5 turns your prompt into a 30s single-clip video instantly."
+    },
+    {
+      "title": "AlinaGonch/qwen3-14b-squad-ratio-0.10-seed-43 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.10-seed-43",
+      "snippet": "Instructions to use AlinaGonch/qwen3-14b-squad-ratio-.10-seed-43 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/qwen3-14b-squad-ratio-0.50-r64 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.50-r64",
+      "snippet": "Instructions to use AlinaGonch/qwen3-14b-squad-ratio-.50-r64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use AlinaGonch/qwen3-14b-squad-ratio-.50-r64 with PEFT:"
+    },
+    {
+      "title": "Qwen3-14B: Open-Source LLM with Reasoning & Thinking Mode | Deployment ...",
+      "url": "https://dev.co/ai/llms/qwen3-14b",
+      "snippet": "Qwen3-14B is a 14.8B-parameter open-source language model with native thinking/reasoning mode, 100+ language support, and agent capabilities. Deploy on vLLM, SGLang, Ollama. Apache 2.0 licensed."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

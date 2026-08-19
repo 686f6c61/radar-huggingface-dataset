@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "aaabushiren/fg-clip2-base",
+  "slug": "aaabushiren-fg-clip2-base",
+  "author": "aaabushiren",
+  "url": "https://huggingface.co/aaabushiren/fg-clip2-base",
+  "created_at": "2026-08-19T12:01:30.000Z",
+  "updated_at": "2026-08-19T12:01:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fgclip2",
+    "text-generation",
+    "clip",
+    "zero-shot-image-classification",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2510.10921",
+    "arxiv:2505.05071",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 383803394,
+  "parameters_human": "383.8M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FG-CLIP 2: A Bilingual Fine-grained Vision-Language Alignment Model",
+      "url": "https://arxiv.org/html/2510.10921v2",
+      "snippet": "To address these challenges, we introduce FG-CLIP 2, a bilingual vision-language model designed to advance fine-grained alignment for both English and Chinese. Our approach leverages rich fine-grained supervision, including region-text matching and long-caption modeling, alongside multiple discriminative objectives."
+    },
+    {
+      "title": "GitHub - 360CVGroup/FG-CLIP: New generation of CLIP with strong fine ...",
+      "url": "https://github.com/360CVGroup/FG-CLIP",
+      "snippet": "New generation of CLIP with strong fine grained discrimination capability, ICML2026 and ICML2025 - 360CVGroup/FG-CLIP"
+    },
+    {
+      "title": "qihoo360/fg-clip2-base · Hugging Face",
+      "url": "https://huggingface.co/qihoo360/fg-clip2-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FG-CLIP 2 - a qihoo360 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/qihoo360/fg-clip-2",
+      "snippet": "FG-CLIP 2 is the foundation model for fine-grained vision-language understanding in both English and Chinese."
+    },
+    {
+      "title": "fg-clip2-base · Models",
+      "url": "https://www.modelscope.cn/models/360zhinao/fg-clip2-base",
+      "snippet": "FG-CLIP 2 is the foundation model for fine-grained vision-language understanding in both English and Chinese. Across 29 datasets and 8 diverse tasks, it consistently surpasses recent strong baselines such as SigLIP 2 and MetaCLIP 2, achieving the best reported performance to date in both languages."
+    }
+  ]
+}

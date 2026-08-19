@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "arcode-standard/arcode-bert-v0.1",
+  "slug": "arcode-standard-arcode-bert-v0-1",
+  "author": "arcode-standard",
+  "url": "https://huggingface.co/arcode-standard/arcode-bert-v0.1",
+  "created_at": "2026-08-19T11:58:24.000Z",
+  "updated_at": "2026-08-19T11:58:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ArCode-Standard/ArCode-BERT: ArCode-BERT is an Arabic ...",
+      "url": "https://github.com/ArCode-Standard/ArCode-BERT",
+      "snippet": "ArCode-BERT is an Arabic technical language model developed by ArCode-Standard, initialized from existing Arabic pretrained models and further adapted for technical-domain language understanding."
+    },
+    {
+      "title": "GitHub - alexandriax/arcode: ️ AI development tool",
+      "url": "https://github.com/alexandriax/arcode",
+      "snippet": "Arcode is a command-line tool designed to help facilitate holistic software development via LLM. It allows users to generate feature implementations for a given codebase based on user-defined requirements."
+    },
+    {
+      "title": "BERT 101 - State Of The Art NLP Model Explained - Hugging Face",
+      "url": "https://huggingface.co/blog/bert-101",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apple is reportedly building its own AI model for China with Alibaba",
+      "url": "https://www.macobserver.com/news/apple-is-reportedly-building-its-own-ai-model-for-china-with-alibaba/",
+      "snippet": "Apple is reportedly training its own AI model for China with Alibaba as it prepares to launch Apple Intelligence in the country."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    }
+  ]
+}

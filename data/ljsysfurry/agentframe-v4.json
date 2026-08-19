@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ljsysfurry/AgentFrame-v4",
+  "slug": "ljsysfurry-agentframe-v4",
+  "author": "ljsysfurry",
+  "url": "https://huggingface.co/ljsysfurry/AgentFrame-v4",
+  "created_at": "2026-08-19T11:38:55.000Z",
+  "updated_at": "2026-08-19T12:18:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ljsysfurry/AgentFrame · Hugging Face",
+      "url": "https://huggingface.co/ljsysfurry/AgentFrame",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ljsysfurry/AgentFrame at main - Hugging Face",
+      "url": "https://huggingface.co/ljsysfurry/AgentFrame/tree/main",
+      "snippet": "ljsysfurry / AgentFrame like 0 Model card FilesFiles and versions xet Community Copy to bucket new main AgentFrame 118 kB Ctrl+K Ctrl+K 1 contributor History:13 commits ljsysfurry Upload agentframe_quad.py with huggingface_hub 9662226 verified1 day ago .gitattributes Safe 1.52 kBinitial commit3 days ago LICENSE Safe 35.1 kBUpload LICENSE with ..."
+    },
+    {
+      "title": "Releases · JunyanKang/agentframe · GitHub",
+      "url": "https://github.com/JunyanKang/agentframe/releases",
+      "snippet": "Reusable AI-assisted software engineering framework for coding agents. - JunyanKang/agentframe"
+    },
+    {
+      "title": "AI & LLM Plugins for DeepSeek Harness | DSH",
+      "url": "https://deepseekharnessai.com/categories/ai-llm/",
+      "snippet": "DeepSeek Harness plugins for model access, AI workflows, prompts, agents, and language-model tooling."
+    },
+    {
+      "title": "Agent Framework documentation | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/agent-framework/",
+      "snippet": "Agent Framework documentation. Agent Framework documentation Learn to build robust, future-proof Agentic AI solutions that evolve with technological advancements."
+    }
+  ]
+}

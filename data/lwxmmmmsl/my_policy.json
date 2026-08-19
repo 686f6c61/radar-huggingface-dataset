@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lwxmmmmsl/my_policy",
+  "slug": "lwxmmmmsl-my_policy",
+  "author": "lwxmmmmsl",
+  "url": "https://huggingface.co/lwxmmmmsl/my_policy",
+  "created_at": "2026-08-19T11:52:41.000Z",
+  "updated_at": "2026-08-19T11:52:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lwxmmmmsl/record-test_20260819_131548",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Built-in policies for model deployment - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/model-deployment-policy",
+      "snippet": "Govern AI model deployment in Microsoft Foundry portal with built-in Azure Policy definitions. Approve specific models and enforce eligibility requirements such as source and lifecycle status."
+    },
+    {
+      "title": "PolicyMind",
+      "url": "https://policymind.ai/",
+      "snippet": "Infinite Policy Intelligence. We augment your existing capacities throughout the entire policymaking lifecycle—from initial stakeholder engagement to the final legislative draft"
+    },
+    {
+      "title": "Control AI model deployment with custom policies - Azure Machine ...",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-custom-policy-model-deployment?view=azureml-api-2",
+      "snippet": "When using models from Foundry Tools and Azure OpenAI with Azure Machine Learning, you might need to use custom policies to control what models your developers can deploy. Custom Azure Policies allow you to create policy definitions that meet your organization&#x27;s unique requirements. This article shows you how to create and assign an example custom policy to control model deployment."
+    },
+    {
+      "title": "Artificial Intelligence (AI) can change the way of doing policy ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0161893823001199",
+      "snippet": "This paper evaluates how Artificial Intelligence (AI) can revolutionize policy modeling. AI&#x27;s rapid advancement, encompassing algorithms, advanced programming software, robotics, meta-data, mathematical models, neural networks, and graphical models, is ushering in a new era, offering a myriad of opportunities to replace traditional research methods in analyzing and solving dynamic and complex ..."
+    },
+    {
+      "title": "Add a Policy Model to a Policy Node of Workflows",
+      "url": "https://docs.oracle.com/en/cloud/saas/fusion-ai/26c/aiaas/add-a-policy-model-to-a-policy-node-of-workflows.html",
+      "snippet": "Add policy rules by uploading a policy document or entering the rules manually. Then generate code that converts unstructured business policies into decision logic that AI agents use to evaluate rules, perform calculations, and make decisions consistently. After publishing, associate the policy model with a Policy node in a workflow."
+    }
+  ]
+}

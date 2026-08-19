@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Ishaanlol/Qwen3.5-4B-cybertune",
+  "slug": "ishaanlol-qwen3-5-4b-cybertune",
+  "author": "Ishaanlol",
+  "url": "https://huggingface.co/Ishaanlol/Qwen3.5-4B-cybertune",
+  "created_at": "2026-08-19T11:42:37.000Z",
+  "updated_at": "2026-08-19T12:02:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "cybertune",
+    "malware",
+    "security",
+    "cybersecurity",
+    "red-team",
+    "offensive-security",
+    "text-generation",
+    "peft",
+    "lora",
+    "unsloth",
+    "llama.cpp",
+    "conversational",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 25110544975,
+  "storage_human": "25.1 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
+    },
+    {
+      "title": "Qwen 3.5 4B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-4b",
+      "snippet": "Qwen 3.5 4B by Alibaba. Small multimodal Qwen 3.5 Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and ..."
+    },
+    {
+      "title": "Qwen 3.5 4B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-5-4b/",
+      "snippet": "Qwen3.5-4B is a mid-size vision-language causal model with a vision encoder, designed for multimodal reasoning, coding, and agent workflows with very long context."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen 3 Benchmarks, Comparisons, Model Specifications, and More",
+      "url": "https://dev.to/best_codes/qwen-3-benchmarks-comparisons-model-specifications-and-more-4hoa",
+      "snippet": "Qwen3: Alibaba&#x27;s Latest Open-Source AI Model Qwen3 is the latest generation of large language models (LLMs) from Alibaba Cloud. Built by the team behind the Tongyi Qianwen series (通义千问), this release brings serious power and flexibility, packed into an Apache-2.0-licensed, open-source package. Released on April 29, 2025, Qwen3 comes in eight sizes, including both dense models (from ..."
+    }
+  ]
+}

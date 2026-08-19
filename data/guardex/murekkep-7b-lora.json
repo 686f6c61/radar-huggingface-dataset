@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Guardex/murekkep-7b-lora",
+  "slug": "guardex-murekkep-7b-lora",
+  "author": "Guardex",
+  "url": "https://huggingface.co/Guardex/murekkep-7b-lora",
+  "created_at": "2026-08-19T12:14:35.000Z",
+  "updated_at": "2026-08-19T12:16:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 255447214,
+  "storage_human": "255 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. Lightricks/LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,992 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Guardex.ai",
+      "url": "https://guardex.ai/",
+      "snippet": "Your Cameras. Supercharged with AI Guardex transforms passive CCTV into real-time intelligence for operations, safety, and security in factories."
+    }
+  ]
+}

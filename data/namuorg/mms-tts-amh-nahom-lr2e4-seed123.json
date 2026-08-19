@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Namuorg/mms-tts-amh-nahom-lr2e4-seed123",
+  "slug": "namuorg-mms-tts-amh-nahom-lr2e4-seed123",
+  "author": "Namuorg",
+  "url": "https://huggingface.co/Namuorg/mms-tts-amh-nahom-lr2e4-seed123",
+  "created_at": "2026-08-19T11:40:35.000Z",
+  "updated_at": "2026-08-19T11:40:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36282672,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145223032,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Namuai-org/namu-tts-amharic-tts-internship · GitHub",
+      "url": "https://github.com/Namuai-org/namu-tts-amharic-tts-internship",
+      "snippet": "We fine-tune facebook/mms-tts-amh — an 83M-parameter VITS model that already speaks Amharic, badly — on a cleaned single-speaker Amharic corpus, using ylacombe/finetune-hf-vits."
+    },
+    {
+      "title": "Namuorg/mms-tts-amh-nahom-lr1e3 · Hugging Face",
+      "url": "https://huggingface.co/Namuorg/mms-tts-amh-nahom-lr1e3",
+      "snippet": "Namuorg / mms-tts-amh-nahom-lr1e3 like 0 Follow Namu 5 Text-to-Audio Transformers Safetensors vits arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "facebook/mms-tts · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Namuorg (Namu) - Hugging Face",
+      "url": "https://huggingface.co/Namuorg/datasets",
+      "snippet": "Org profile for Namu on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

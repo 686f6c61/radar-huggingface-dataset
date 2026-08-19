@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ichangzii/pit2022-gpt2-124m",
+  "slug": "ichangzii-pit2022-gpt2-124m",
+  "author": "ichangzii",
+  "url": "https://huggingface.co/ichangzii/pit2022-gpt2-124m",
+  "created_at": "2026-08-19T11:39:35.000Z",
+  "updated_at": "2026-08-19T11:40:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "point-in-time",
+    "temporal",
+    "lookahead-free",
+    "from-scratch",
+    "en",
+    "dataset:ichangzii/pit2022-10b",
+    "dataset:ichangzii/pit2022-news",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 248894656,
+  "storage_human": "249 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ShaohuaDong/gpt2-124M · Hugging Face",
+      "url": "https://huggingface.co/ShaohuaDong/gpt2-124M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - RD191295/GPT-2-124-M-Model: GPT2 124 Million Parameter Model ...",
+      "url": "https://github.com/RD191295/GPT-2-124-M-Model/tree/main",
+      "snippet": "GPT2 124 Million Parameter Model From Scratch. Contribute to RD191295/GPT-2-124-M-Model development by creating an account on GitHub."
+    },
+    {
+      "title": "bitlabsdb/gpt2-124m-transformer_model · Hugging Face",
+      "url": "https://huggingface.co/bitlabsdb/gpt2-124m-transformer_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SamkeetSangai/GPT_124M: This repository provides an ...",
+      "url": "https://github.com/SamkeetSangai/GPT_124M",
+      "snippet": "The model was benchmarked against OpenAI&#x27;s GPT-2 Small and GPT-3 Small (both ~124M parameters). Remarkably, despite being trained on only 10 billion tokens, compared to GPT-3 Small&#x27;s 300 billion tokens, GPT-124M was able to outperform both models in HellaSwag evaluation."
+    },
+    {
+      "title": "GPT-2 124M Reproduction | githubaryan5555/nanoGPT | DeepWiki",
+      "url": "https://deepwiki.com/githubaryan5555/nanoGPT/8.1-gpt-2-124m-reproduction",
+      "snippet": "This page provides a complete guide to reproducing OpenAI&#x27;s GPT-2 124M model on the OpenWebText dataset using nanoGPT. It covers hardware requirements, data preparation, training configuration, launch commands, and expected results. This reproduction achieves a validation loss of approximately 2.85 after training for ~4-5 days on 8×A100 40GB GPUs."
+    }
+  ]
+}

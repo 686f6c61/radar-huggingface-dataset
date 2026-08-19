@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "sjoyin/image-caption-cnn-lstm",
+  "slug": "sjoyin-image-caption-cnn-lstm",
+  "author": "sjoyin",
+  "url": "https://huggingface.co/sjoyin/image-caption-cnn-lstm",
+  "created_at": "2026-08-19T11:39:11.000Z",
+  "updated_at": "2026-08-19T11:42:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29557564,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image Captioning Using LSTM and CNN: A Deep Learning Approach",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-84628-1_8",
+      "snippet": "The model combines sequentially oriented visual feature extraction using CNN and language modeling with LSTM, which gives intuitions that language is sequential in nature. The efficacy of the model in creating meaningful image captions has been validated by assessing the model performance based on Bilingual Evaluation Understudy (BLEU) scores."
+    },
+    {
+      "title": "PDF Caption Generation of Images Using CNN and LSTM - IJIREM",
+      "url": "https://ijirem.org/DOC/1-caption-generation-of-images-using-cnn-and-lstm.pdf",
+      "snippet": "This new sequence is used as an input to the LSTM network for training purpose by iterating the recurrence connection for l from 1 to Li. The neural model&#x27;s parameters include the linear transfer matrix for picture features, the word embedding matrix, and various LSTM arguments. The image caption model is divided into three parts."
+    },
+    {
+      "title": "Image Caption Generator with CNN and LSTM - GitHub",
+      "url": "https://github.com/Adityajl/Image-Caption-Generator-with-CNN-and-LSTM",
+      "snippet": "Welcome to the Image Caption Generator project! This repository showcases an innovative deep learning model that seamlessly blends Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks to create descriptive captions for images."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "Image Caption Generator Using CNN and LSTM - IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/document/11077103",
+      "snippet": "For these models to function as best they can, a substantial amount of training data is needed. In this project, we&#x27;ll use a long short-term memory (LSTM) to decode the image description and a convolutional neural network (CNN) based deep learning model to extract characteristics from the image."
+    }
+  ]
+}

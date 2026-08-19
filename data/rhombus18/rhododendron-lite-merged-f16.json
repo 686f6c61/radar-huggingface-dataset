@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rhombus18/rhododendron-lite-merged-f16",
+  "slug": "rhombus18-rhododendron-lite-merged-f16",
+  "author": "rhombus18",
+  "url": "https://huggingface.co/rhombus18/rhododendron-lite-merged-f16",
+  "created_at": "2026-08-19T11:44:28.000Z",
+  "updated_at": "2026-08-19T11:44:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11421896,
+  "storage_human": "11 MB",
+  "base_model": "unsloth/qwen2.5-7b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rhombus18 (RHOMBUS) - Hugging Face",
+      "url": "https://huggingface.co/Rhombus18",
+      "snippet": "🧭 Mission Re-think model architecture beyond classic Transformers for efficiency and robustness. Compress intelligence — make 50M-2B parameter models reason like much larger ones. Democratise training with tooling that runs on consumer GPUs and CPU-only environments. Ship pragmatic AI — tools that solve real problems in coding, data, education, and research."
+    },
+    {
+      "title": "Rhombus18 · GitHub",
+      "url": "https://github.com/Rhombus18",
+      "snippet": "GitHub is where Rhombus18 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Rhombus18 (RHOMBUS) - Hugging Face",
+      "url": "https://huggingface.co/Rhombus18/datasets",
+      "snippet": "Org profile for RHOMBUS on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - hanmuyang1-collab/rhododendron: Rhododendron — multi-agent AI ...",
+      "url": "https://github.com/hanmuyang1-collab/rhododendron",
+      "snippet": "Multi-agent AI chat app: five Rhododendron model tiers plus a Google Gemma vision subagent, an orchestrator that runs subagents in parallel, a live code sandbox, speech mode with animated soundwaves, tier-based quotas, and a Supabase-ready stubbed database layer."
+    }
+  ]
+}
