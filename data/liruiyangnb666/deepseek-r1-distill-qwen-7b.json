@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "liruiyangnb666/DeepSeek-R1-Distill-Qwen-7B",
+  "slug": "liruiyangnb666-deepseek-r1-distill-qwen-7b",
+  "author": "liruiyangnb666",
+  "url": "https://huggingface.co/liruiyangnb666/DeepSeek-R1-Distill-Qwen-7B",
+  "created_at": "2026-08-14T23:29:14.000Z",
+  "updated_at": "2026-08-14T23:29:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:2501.12948",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 120,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271850,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

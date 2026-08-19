@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Ornith-1.0-35B-Vision-NVFP4-Calibrated",
+  "slug": "kingjones777-ornith-1-0-35b-vision-nvfp4-calibrated",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Ornith-1.0-35B-Vision-NVFP4-Calibrated",
+  "created_at": "2026-08-18T20:24:25.000Z",
+  "updated_at": "2026-08-18T20:26:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "nvfp4",
+    "modelopt",
+    "vllm",
+    "blackwell",
+    "awq",
+    "calibrated",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.0-35B",
+    "base_model:quantized:ornith-ai/Ornith-1.0-35B",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18296542576,
+  "parameters_human": "18.30B",
+  "storage_bytes": 21934560655,
+  "storage_human": "21.9 GB",
+  "base_model": "ornith-ai/Ornith-1.0-35B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.0-35B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-35B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "SC117/Ornith-1.0-35B-MTP-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ornith-1.0-35B-MTP-APEX-GGUF",
+      "snippet": "Ornith-1.0-35B is a self-improving agentic coding model from DeepReinforce AI, post-trained on top of Qwen3.5 with RL to jointly optimize scaffold generation and solution rollouts."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Ornith-1.0 ships as a dense 9B model plus two Mixture-of-Experts models (35B, 397B). All checkpoints expose the same OpenAI-compatible interface and support a 256K (262,144-token) context window; the dense 9B fits on a single 80GB GPU, while the MoE checkpoints are sharded across a multi-GPU node with tensor parallelism."
+    },
+    {
+      "title": "Ornith-1.0-35B Benchmarks & Context (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/ornith-1-0-35b",
+      "snippet": "Ornith-1.0-35B is a open weight model with a 256K context window. It uses an explicit reasoning mode, which can improve complex problem solving while adding latency and token use."
+    }
+  ]
+}

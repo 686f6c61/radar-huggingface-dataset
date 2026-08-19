@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "FlagRelease/Qwen3-Coder-Next-nvidia-FlagOS",
+  "slug": "flagrelease-qwen3-coder-next-nvidia-flagos",
+  "author": "FlagRelease",
+  "url": "https://huggingface.co/FlagRelease/Qwen3-Coder-Next-nvidia-FlagOS",
+  "created_at": "2026-08-17T09:23:57.000Z",
+  "updated_at": "2026-08-17T10:55:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_next",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79674391296,
+  "parameters_human": "79.67B",
+  "storage_bytes": 159358031480,
+  "storage_human": "159.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3-coder-next | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/teams/qwen/containers/qwen3-coder-next",
+      "snippet": "The underlying model has been developed by Qwen (Alibaba Cloud) and built to a third-party&#x27;s requirements for this application and use case; see link to Non-NVIDIA Qwen3-Coder-Next Model Card."
+    },
+    {
+      "title": "GitHub - flagos-ai/FlagRelease",
+      "url": "https://github.com/flagos-ai/FlagRelease",
+      "snippet": "FlagRelease — FlagOS 自动化发布框架 FlagOS 模型迁移与发布的全自动化工作流框架，基于 Claude Code 驱动，支持 NVIDIA 、华为昇腾、沐曦、摩尔线程、海光等多款AI芯片平台。"
+    },
+    {
+      "title": "How to Deploy and Run Qwen3: Step-by-Step Guide | Hyperstack",
+      "url": "https://www.hyperstack.cloud/technical-resources/tutorials/how-to-run-and-deploy-qwen3-coder-next",
+      "snippet": "What is Qwen3-Coder-Next? Qwen3-Coder-Next is the latest open-weight language model from the Qwen Team, built specifically for coding agents and local development. Unlike traditional dense models, it utilizes a Mixture-of-Experts (MoE) architecture. While it boasts a massive 80B total parameter count, it only activates 3B parameters per token. This unique design allows it to deliver ..."
+    },
+    {
+      "title": "Qwen3-Coder-Next: The Complete 2026 Guide to Running Powerful AI Coding ...",
+      "url": "https://dev.to/sienna/qwen3-coder-next-the-complete-2026-guide-to-running-powerful-ai-coding-agents-locally-1k95",
+      "snippet": "Qwen3-Coder-Next is an open-weight language model released by Alibaba&#x27;s Qwen team in February 2026, specifically designed for coding agents and local development environments."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks. Qwen3-Coder-Next, an open-weight language model designed specifically for coding agents and local development."
+    }
+  ]
+}

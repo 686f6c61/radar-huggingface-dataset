@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SaifPunjwani/qwen3-1.7b-mrme-natural-replica",
+  "slug": "saifpunjwani-qwen3-1-7b-mrme-natural-replica",
+  "author": "SaifPunjwani",
+  "url": "https://huggingface.co/SaifPunjwani/qwen3-1.7b-mrme-natural-replica",
+  "created_at": "2026-08-16T19:46:15.000Z",
+  "updated_at": "2026-08-16T19:59:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "math",
+    "reasoning",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 253,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4075628499,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SaifPunjwani/qwen3-1.7b-mrme-result-replica · Hugging Face",
+      "url": "https://huggingface.co/SaifPunjwani/qwen3-1.7b-mrme-result-replica",
+      "snippet": "SaifPunjwani / qwen3-1.7b-mrme-result-replica like 0 Text Generation Transformers Safetensors qwen3 math reasoning chain-of-thought conversational text-generation-inference arxiv:2607.05394 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "README.md · master · ai-models/Qwen/Qwen3-1.7B",
+      "url": "https://cnb.cool/ai-models/Qwen/Qwen3-1.7B/-/blob/master/README.md",
+      "snippet": "Qwen3-1.7B Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Enhanced capabilities in 256K-token long-context understanding, extendable up to 1 million tokens. Qwen3-Thinking-2507 is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements:"
+    },
+    {
+      "title": "NexaAI/qwen3-1.7B-npu · Hugging Face",
+      "url": "https://huggingface.co/NexaAI/qwen3-1.7B-npu",
+      "snippet": "Model Description Qwen3-1.7B is a 1.7-billion-parameter general-purpose language model from the Qwen team at Alibaba Cloud. Part of the Qwen3 series, it is designed to deliver strong language understanding, reasoning, and generation while being small enough for efficient deployment on a wider range of devices."
+    },
+    {
+      "title": "qwen3:1.7b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:1.7b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

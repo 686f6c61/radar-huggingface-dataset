@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_KSS-SPECIAL_SPLIT",
+  "slug": "thireus-mtp-qwen3-8-27b-thireus-iq4_kss-special_split",
+  "author": "Thireus",
+  "url": "https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_KSS-SPECIAL_SPLIT",
+  "created_at": "2026-08-15T09:44:52.000Z",
+  "updated_at": "2026-08-15T11:25:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2505.23786",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 170,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1497052096,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "mtp-Qwen3.6-27B-THIREUS-IQ4_KSS-SPECIAL_SPLIT - Hugging Face",
+      "url": "https://huggingface.co/Thireus/mtp-Qwen3.6-27B-THIREUS-IQ4_KSS-SPECIAL_SPLIT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mtp-Qwen3.6-27B-THIREUS-SPECIAL_SPLIT - a Thireus Collection",
+      "url": "https://huggingface.co/collections/Thireus/mtp-qwen36-27b-thireus-special-split",
+      "snippet": "These model shards are meant to be used with Thireus&#x27; GGUF Tool Suite - https://gguf.thireus.com/"
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Thireus&#x27; Model Collection",
+      "url": "https://gguf.thireus.com/",
+      "snippet": "Powered by GGUF-Tool-Suite — host: gguf1 — snapshot: 2026-08-09 07:12 UTC"
+    }
+  ]
+}

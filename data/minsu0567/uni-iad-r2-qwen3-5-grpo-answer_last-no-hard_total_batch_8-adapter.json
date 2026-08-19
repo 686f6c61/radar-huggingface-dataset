@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "minsu0567/Uni-IAD-R2-Qwen3.5-GRPO-answer_last-no-hard_total_batch_8-adapter",
+  "slug": "minsu0567-uni-iad-r2-qwen3-5-grpo-answer_last-no-hard_total_batch_8-adapter",
+  "author": "minsu0567",
+  "url": "https://huggingface.co/minsu0567/Uni-IAD-R2-Qwen3.5-GRPO-answer_last-no-hard_total_batch_8-adapter",
+  "created_at": "2026-08-17T06:51:32.000Z",
+  "updated_at": "2026-08-17T06:51:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:minsu0567/IAD-X1-SFT-answer-last",
+    "base_model:finetune:minsu0567/IAD-X1-SFT-answer-last",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 539503325,
+  "storage_human": "540 MB",
+  "base_model": "minsu0567/Uni-IAD-R2-Qwen3.5-answer-last",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

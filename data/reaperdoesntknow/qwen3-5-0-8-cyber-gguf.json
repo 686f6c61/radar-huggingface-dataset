@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Qwen3.5-0.8-Cyber-GGUF",
+  "slug": "reaperdoesntknow-qwen3-5-0-8-cyber-gguf",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Qwen3.5-0.8-Cyber-GGUF",
+  "created_at": "2026-06-30T06:56:23.000Z",
+  "updated_at": "2026-08-17T13:16:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "edge",
+    "quantized",
+    "conversational",
+    "convergent-intelligence",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 9291,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 4386231712,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Qwen3.5-0.8-Cyber-GGUF · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Qwen3.5-0.8-Cyber-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF",
+      "snippet": "Available Model files: Qwen3.5-2B.Q8_0.gguf Qwen3.5-2B.BF16.gguf Qwen3.5-2B.Q4_K_M.gguf Qwen3.5-2B.BF16-mmproj.gguf This was trained 2x faster with Unsloth Downloads last month - GGUF Model size 2B params Architecture qwen35 Chat template Hardware compatibility Log In to add your hardware 4-bit Q4_K_M1.31 GB 8-bit Q8_02.08 GB 16-bit BF163.9 GB ..."
+    },
+    {
+      "title": "Qwen3.5 0.8 Cyber GGUF | ST Studio - sweettea.co",
+      "url": "https://sweettea.co/de/resources/reaperdoesntknow-qwen3-5-0-8-cyber-gguf-huggingface-model-reaperdoesntknow-qwen3-5-0-8-cyber-gguf",
+      "snippet": "Quellenbeschreibung Qwen3.5-.8-Cyber-GGUF : GGUF This model was finetuned and converted to GGUF format using Unsloth."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

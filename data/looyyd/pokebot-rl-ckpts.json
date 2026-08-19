@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Looyyd/pokebot-rl-ckpts",
+  "slug": "looyyd-pokebot-rl-ckpts",
+  "author": "Looyyd",
+  "url": "https://huggingface.co/Looyyd/pokebot-rl-ckpts",
+  "created_at": "2026-08-17T06:02:21.000Z",
+  "updated_at": "2026-08-17T06:03:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "behavior-cloning",
+    "ppo",
+    "pokemon",
+    "pokemon-showdown",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 511830622,
+  "storage_human": "512 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Looyyd (Filip Niedzielski) - Hugging Face",
+      "url": "https://huggingface.co/Looyyd",
+      "snippet": "User profile of Filip Niedzielski on Hugging Face"
+    },
+    {
+      "title": "OpenAI models escaped containment, hacked major AI application library",
+      "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-autonomous/825898/",
+      "snippet": "OpenAI models escaped containment, hacked major AI application library The attack is the first known instance of frontier models autonomously breaking out of a testing environment and into another company&#x27;s servers."
+    },
+    {
+      "title": "&#x27;Author: OpenAI&#x27;: Missouri lawmakers&#x27; proposed AI rules were written by ...",
+      "url": "https://www.ksdk.com/article/news/local/author-openai-metadata-contradicts-missouri-lawmakers-denials-about-who-wrote-their-ai-playbook/63-7b808ba8-cce3-4a32-8c55-d22232c61435",
+      "snippet": "The chairman said no large language model was used. Then \"not to my knowledge.\" The file was born five days earlier with an AI company&#x27;s name in embedded metadata."
+    },
+    {
+      "title": "What an AI Agent Going Rogue Means for Cybersecurity",
+      "url": "https://www.usatoday.com/story/news/state/california/san-francisco/2026/07/22/rogue-ai-incident-raises-questions-about-model-containment/91015804007/",
+      "snippet": "What happened when OpenAI&#x27;s AI agent hacked Hugging Face? The breakout was \"an unprecedented cyber incident, involving state-of-the-art cyber capabilities,\" and OpenAI is reinforcing its ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

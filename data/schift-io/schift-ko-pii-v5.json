@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "schift-io/schift-ko-pii-v5",
+  "slug": "schift-io-schift-ko-pii-v5",
+  "author": "schift-io",
+  "url": "https://huggingface.co/schift-io/schift-ko-pii-v5",
+  "created_at": "2026-08-18T07:13:15.000Z",
+  "updated_at": "2026-08-18T09:46:59.000Z",
+  "license": "schift-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "token-classification",
+    "pii",
+    "korean",
+    "ner",
+    "privacy",
+    "custom_code",
+    "ko",
+    "dataset:custom",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33977633,
+  "parameters_human": "34.0M",
+  "storage_bytes": 135916836,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Korean PII Detection",
+      "dataset": "benchmark_v2 (253 cases)",
+      "metric": "F1 (with postprocess)",
+      "value": 0.823
+    },
+    {
+      "task": "Korean PII Detection",
+      "dataset": "benchmark_v2 (253 cases)",
+      "metric": "Precision (with postprocess)",
+      "value": 0.812
+    },
+    {
+      "task": "Korean PII Detection",
+      "dataset": "benchmark_v2 (253 cases)",
+      "metric": "Recall (with postprocess)",
+      "value": 0.834
+    }
+  ],
+  "sources": [
+    {
+      "title": "schift-io · GitHub",
+      "url": "https://github.com/schift-io",
+      "snippet": "Every embedding model creates a different vector space. Switching providers means re-embedding your entire corpus — millions of vectors, days of compute, production downtime. Schift solves this. Our projection matrices transform existing vectors into any target model&#x27;s space with 99.7% retrieval recovery, in minutes instead of days."
+    },
+    {
+      "title": "GitHub - schift-io/schift-py: Schift Python SDK — pip install schift",
+      "url": "https://github.com/schift-io/schift-py",
+      "snippet": "Schift Python SDK — pip install schift. Contribute to schift-io/schift-py development by creating an account on GitHub."
+    },
+    {
+      "title": "SDK | Schift Docs",
+      "url": "https://schift.io/docs/reference/sdk/",
+      "snippet": "Note: An older npm @schift-io/cli still exists for compatibility with legacy deploy/provider/agent workflows. For maintained bucket, catalog, usage, benchmark, and migration workflows, use the Python schift-cli package."
+    },
+    {
+      "title": "AI에 넣기 전에, 개인정보를 먼저 가립니다 — Schift PII Beta",
+      "url": "https://schift.io/pii-beta/",
+      "snippet": "Schift PII Beta 한국어 PII 7종을 먼저 가립니다. 주민등록번호, 외국인등록번호, 여권번호, 운전면허번호, 주소, 전화번호, 계좌번호를 데모에서 확인합니다."
+    },
+    {
+      "title": "schift · PyPI",
+      "url": "https://pypi.org/project/schift/",
+      "snippet": "Embedding model migration SDK. Switch models without re-embedding."
+    }
+  ]
+}

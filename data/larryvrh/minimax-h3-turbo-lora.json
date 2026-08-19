@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "larryvrh/MiniMax-H3-Turbo-Lora",
+  "slug": "larryvrh-minimax-h3-turbo-lora",
+  "author": "larryvrh",
+  "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+  "created_at": "2026-08-05T21:58:56.000Z",
+  "updated_at": "2026-08-08T20:07:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "text-to-video",
+    "text-to-audio",
+    "audio-video",
+    "lora",
+    "comfyui",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 803,
+  "downloads_30d": 0,
+  "trending_score": 122,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123221951744,
+  "storage_human": "123.2 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "larryvrh/MiniMax-H3-Turbo-Lora · Hugging Face",
+      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "larryvrh/MiniMax-H3-Turbo-Lora at main - Hugging Face",
+      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "url": "https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "snippet": "Start from the official MiniMax-H3 workflow (t2v or i2v) and make two changes: Insert MiniMax-H3 Turbo LoRA between the model loader and the sampler (… → Load Diffusion Model → MiniMax-H3 Turbo LoRA → SamplerCustomAdvanced), and pick the turbo .safetensors. Feed SamplerCustomAdvanced from MiniMax-H3 Turbo Sampler, and set the scheduler node (BasicScheduler) to simple at ≥ 4 steps ..."
+    },
+    {
+      "title": "MiniMax-H3 Turbo LoRA - Models",
+      "url": "https://www.modelscope.cn/models/larryvrh/MiniMax-H3-Turbo-Lora",
+      "snippet": "insert MiniMax-H3 Turbo LoRA between the model loader and the sampler; replace the sampler feeding SamplerCustomAdvanced with MiniMax-H3 Turbo Sampler (4-step), and set the scheduler to 4 steps (simple). Everything else stays as in the official workflow, so both t2v and i2v work."
+    },
+    {
+      "title": "MiniMAX H3 Turbo Lora adapted for merging with pruned FL2VA model",
+      "url": "https://civitai.com/models/2838852/minimax-h3-turbo-lora-adapted-for-merging-with-pruned-fl2va-model",
+      "snippet": "MiniMax H3 Pruned Turbo LoRA (4-Step) for FL2VA model Special thanks to larryvrh for the original MiniMax H3 Turbo LoRA: https://huggingface.co/lar..."
+    }
+  ]
+}

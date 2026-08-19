@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "senaro/atlasv23-qwen3-8-27b-gguf",
+  "slug": "senaro-atlasv23-qwen3-8-27b-gguf",
+  "author": "senaro",
+  "url": "https://huggingface.co/senaro/atlasv23-qwen3-8-27b-gguf",
+  "created_at": "2026-08-15T02:42:46.000Z",
+  "updated_at": "2026-08-15T14:37:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5_text",
+    "llama.cpp",
+    "unsloth",
+    "en",
+    "dataset:kintsugicollective/atlas-dataset-v8-final",
+    "dataset:senaro/atlas-region2-harmful-v7",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 70355669376,
+  "storage_human": "70.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B, senaro/atlasv23-trm-qwen3-8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:08:38.763Z",
+  "benchmarks": [],
+  "sources": []
+}

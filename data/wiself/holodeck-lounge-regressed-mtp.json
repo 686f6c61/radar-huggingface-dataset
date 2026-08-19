@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Wiself/Holodeck-Lounge-Regressed-MTP",
+  "slug": "wiself-holodeck-lounge-regressed-mtp",
+  "author": "Wiself",
+  "url": "https://huggingface.co/Wiself/Holodeck-Lounge-Regressed-MTP",
+  "created_at": "2026-08-18T21:06:43.000Z",
+  "updated_at": "2026-08-19T00:11:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "multi-token-prediction",
+    "speculative-decoding",
+    "qwen3.5",
+    "mtp",
+    "research-artifact",
+    "arxiv:2412.19437",
+    "arxiv:2404.19737",
+    "arxiv:2502.09419",
+    "arxiv:2608.00434",
+    "arxiv:2602.06019",
+    "arxiv:2603.23911",
+    "arxiv:2509.18362",
+    "arxiv:2606.12370",
+    "arxiv:2503.01840",
+    "base_model:Jackrong/Qwopus3.5-9B-Coder",
+    "base_model:finetune:Jackrong/Qwopus3.5-9B-Coder",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326293391,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B, Wiself/Holodeck-Lounge-MTP, nightmedia/Qwen3.5-9B-Holodeck-Lounge, Jackrong/Qwopus3.5-9B-Coder",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mtp-f16.gguf · nightmedia/Qwen3.5-9B-Holodeck-Lounge-GGUF at main",
+      "url": "https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge-GGUF/blob/main/mtp-f16.gguf",
+      "snippet": "Instructions to use nightmedia/Qwen3.5-9B-Holodeck-Lounge-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.5-9B-Holodeck-Lounge-q8-hi-mlx - Hugging Face",
+      "url": "https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge-q8-hi-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - allenai/Holodeck: CVPR 2024: Language Guided Generation of 3D ...",
+      "url": "https://github.com/allenai/Holodeck",
+      "snippet": "Language Guided Generation of 3D Embodied AI Environments Paper | Project Page Requirements Holodeck is based on AI2-THOR, and we currently support macOS 10.9+ or Ubuntu 14.04+. New Feature: To add ANY new assets to AI2-THOR, please check the objathor repo! Note: To yield better layouts, use DFS as the solver."
+    },
+    {
+      "title": "How to Run MTP Models: Multi-Token Prediction Guide - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/mtp",
+      "snippet": "MTP, or Multi-Token Prediction, speeds up inference by letting a model predict multiple upcoming tokens at once instead of generating one token per step. It enables faster inference without accuracy loss and is especially effective on GPUs. In this guide, you&#x27;ll learn how to use MTP models like Gemma 4 or Qwen3.6 on your local device."
+    },
+    {
+      "title": "Qwen3.5-9B-Holodeck-Lounge-q8-hi-mlx - FriendliAI",
+      "url": "https://friendli.ai/models/nightmedia/Qwen3.5-9B-Holodeck-Lounge-q8-hi-mlx",
+      "snippet": "Run Qwen3.5-9B-Holodeck-Lounge-q8-hi-mlx with FriendliAI inference. This model is a merge of."
+    }
+  ]
+}

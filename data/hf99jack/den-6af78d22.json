@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hf99jack/den-6af78d22",
+  "slug": "hf99jack-den-6af78d22",
+  "author": "hf99jack",
+  "url": "https://huggingface.co/hf99jack/den-6af78d22",
+  "created_at": "2026-08-18T13:12:24.000Z",
+  "updated_at": "2026-08-18T13:12:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hf99jack (Jack Ronney) - Hugging Face",
+      "url": "https://huggingface.co/hf99jack",
+      "snippet": "Sort: Recently updated hf99jack/sn38-submission-sft Viewer •Updated 4 days ago•1• 755"
+    },
+    {
+      "title": "hf99jack (Jack Ronney) - Hugging Face",
+      "url": "https://huggingface.co/hf99jack/models",
+      "snippet": "hf99jack&#x27;s models11 Sort: Recently updated hf99jack/albedo-qwen3.6-35b-729-rwe 35B•Updated about 2 hours ago"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "zeroweight-ai/ZeroTTS",
+  "slug": "zeroweight-ai-zerotts",
+  "author": "zeroweight-ai",
+  "url": "https://huggingface.co/zeroweight-ai/ZeroTTS",
+  "created_at": "2026-08-15T15:55:55.000Z",
+  "updated_at": "2026-08-16T10:07:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "vietnamese",
+    "onnxruntime",
+    "zero-shot",
+    "speech-synthesis",
+    "voice-cloning",
+    "vietnamese-tts",
+    "tieng-viet",
+    "vi",
+    "dataset:zeroweight-ai/ZeroBench-TTS",
+    "arxiv:2602.10934",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 183,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 904685649,
+  "storage_human": "905 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "WER (%)",
+      "value": 1.03
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "UTMOSv2 naturalness MOS",
+      "value": 2.91
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "Speaker similarity (WavLM-SV cosine)",
+      "value": 0.936
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "Excess silence (s)",
+      "value": 0.029
+    },
+    {
+      "task": "Zero-Shot TTS — monolingual Vietnamese",
+      "dataset": "ZeroBench-TTS (vietnamese)",
+      "metric": "WER (%)",
+      "value": 0.16
+    },
+    {
+      "task": "Zero-Shot TTS — Vietnamese/English code-switching",
+      "dataset": "ZeroBench-TTS (code_switch)",
+      "metric": "WER (%)",
+      "value": 0.97
+    },
+    {
+      "task": "Zero-Shot TTS — cross-lingual voice prompt",
+      "dataset": "ZeroBench-TTS (cross_lingual)",
+      "metric": "WER (%)",
+      "value": 1.42
+    },
+    {
+      "task": "Zero-Shot TTS — acronyms, dates, numbers",
+      "dataset": "ZeroBench-TTS (challenging)",
+      "metric": "WER (%)",
+      "value": 1.75
+    }
+  ],
+  "sources": []
+}

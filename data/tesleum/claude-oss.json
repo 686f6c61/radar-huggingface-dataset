@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tesleum/Claude-OSS",
+  "slug": "tesleum-claude-oss",
+  "author": "Tesleum",
+  "url": "https://huggingface.co/Tesleum/Claude-OSS",
+  "created_at": "2026-07-22T00:27:09.000Z",
+  "updated_at": "2026-08-16T08:22:43.000Z",
+  "license": "ecl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:ecl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tesleum/Claude-OSS · Hugging Face",
+      "url": "https://huggingface.co/Tesleum/Claude-OSS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tesleum/Claude-OSS - ollama.com",
+      "url": "https://ollama.com/Tesleum/Claude-OSS",
+      "snippet": "Readme Claude-OSS MXFP4 Open-Source OpenAI-compatible model powered by Claude Fable 5 Agent Ollama Model Page Claude-OSS:21B is an open-source AI model optimized for agentic workflows, coding assistance, reasoning, and general-purpose conversations. It is designed to provide a Claude-inspired agent experience while running locally through Ollama."
+    },
+    {
+      "title": "Tesleum (Tesleum) - Hugging Face",
+      "url": "https://huggingface.co/Tesleum/models",
+      "snippet": "Team members 1 Tesleum&#x27;s models9 Sort: Recently updated Tesleum/Claude-OSS Updated 13 days ago• 281"
+    },
+    {
+      "title": "Claude-OSS API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Tesleum/Claude-OSS",
+      "snippet": "Deploy Claude-OSS with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Tesleum - registry.ollama.com",
+      "url": "https://registry.ollama.com/Tesleum",
+      "snippet": "Tesleum AI develops AI models, coding systems, and intelligent automation tools designed for local deployment, privacy-focused environments, and scalable real-world applications."
+    }
+  ]
+}

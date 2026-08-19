@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nemotron-3.5-30B-A3B-Antislop-FTPO-i1-GGUF",
+  "slug": "mradermacher-nemotron-3-5-30b-a3b-antislop-ftpo-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nemotron-3.5-30B-A3B-Antislop-FTPO-i1-GGUF",
+  "created_at": "2026-08-14T03:48:41.000Z",
+  "updated_at": "2026-08-14T08:00:09.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nvidia",
+    "nemotron",
+    "nemotron-3.5",
+    "nemotron_h",
+    "antislop",
+    "ftpo",
+    "creative-writing",
+    "mamba",
+    "moe",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "base_model:thoughtworks/Nemotron-3.5-30B-A3B-Antislop-FTPO",
+    "base_model:quantized:thoughtworks/Nemotron-3.5-30B-A3B-Antislop-FTPO",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1488,
+  "trending_score": 0,
+  "parameters": 32913266240,
+  "parameters_human": "32.91B",
+  "storage_bytes": 310565864128,
+  "storage_human": "310.6 GB",
+  "base_model": "thoughtworks/Nemotron-3.5-30B-A3B-Antislop-FTPO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16-i1-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16-i1-GGUF",
+      "snippet": "mradermacher / NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16-i1-GGUF like 1 Transformers GGUF PyTorch nvidia/nemotron-pre-training-datasets 6 languages nvidia nemotron-3.5 mtp imatrix License:openmdw-1.1 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-3.5-lightning",
+      "snippet": "The model employs a hybrid Latent Mixture-of-Experts (LatentMoE) architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text generation. The model has 3B active parameters and 30B parameters in total."
+    },
+    {
+      "title": "nvidia / nemotron-3.5-lightning-30b-a3b",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-5-lightning-30b-a3b",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA. The model employs a hybrid Mixture-of-Experts architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text generation. The model has 3B active parameters and 30B ..."
+    },
+    {
+      "title": "Nemotron/usage-cookbook/Nemotron-3.5-Lightning at main - GitHub",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron/tree/main/usage-cookbook/Nemotron-3.5-Lightning",
+      "snippet": "Overview Nemotron-3.5 Lightning is a 30B total / 3B active-parameter hybrid Mamba-Transformer MoE model for fast reasoning, coding, and agentic workflows. It is sized for single-node deployment, while supporting long-context use and structured tool calling."
+    }
+  ]
+}

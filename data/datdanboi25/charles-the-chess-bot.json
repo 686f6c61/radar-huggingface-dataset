@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Datdanboi25/Charles-the-Chess-Bot",
+  "slug": "datdanboi25-charles-the-chess-bot",
+  "author": "Datdanboi25",
+  "url": "https://huggingface.co/Datdanboi25/Charles-the-Chess-Bot",
+  "created_at": "2026-08-10T10:31:50.000Z",
+  "updated_at": "2026-08-12T01:49:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "chess_transition_policy",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 92,
+  "trending_score": 9,
+  "parameters": 32537088,
+  "parameters_human": "32.5M",
+  "storage_bytes": 390507072,
+  "storage_human": "391 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datdanboi25/Charles-the-Chess-Bot · Hugging Face",
+      "url": "https://huggingface.co/Datdanboi25/Charles-the-Chess-Bot",
+      "snippet": "Charles the Chess Bot This is Charles, a bot designed by me for EnderChef&#x27;s chess model competition. While not the best player on earth, Charles moves quickly and doesn&#x27;t really worry about the future, instead opting to choose whichever move feels right given the current board."
+    },
+    {
+      "title": "Datdanboi25 (Dan P) - Hugging Face",
+      "url": "https://huggingface.co/Datdanboi25/models",
+      "snippet": "AI & ML interests Axiomic Labs Founder Mechatronics engineer, LLMs, Vision Models, Embedding Models"
+    },
+    {
+      "title": "Play Charles the Chess Bot - a Hugging Face Space by hugging-apps",
+      "url": "https://huggingface.co/spaces/hugging-apps/charles-the-chess-bot",
+      "snippet": "Challenge the Charles chess bot by playing as White or Black. Enter your moves by clicking on the board or typing them, load any custom position using a FEN string, and adjust settings like move te..."
+    },
+    {
+      "title": "Play Chess Against AI Bots - Free Stockfish Engine | ChessDream",
+      "url": "https://chessdream.app/bots",
+      "snippet": "Play chess against Stockfish bots at five difficulty levels, from beginner to grandmaster. Unlimited free games in your browser, with no account required."
+    },
+    {
+      "title": "Charles - Play Chess Online Against the AI - Chess.com",
+      "url": "https://www.chess.com/play/computer/Charles-Bot",
+      "snippet": "Enjoy a friendly game of computer chess with Charles. Have a fun and engaging chess experience and see whether you can win vs. the bot."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_100Mpt_hfinit_100M_s0_2026-08-14_21-54-08_049198-pt",
+  "slug": "alexkstern-nca_dose_100mpt_hfinit_100m_s0_2026-08-14_21-54-08_049198-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_100M_s0_2026-08-14_21-54-08_049198-pt",
+  "created_at": "2026-08-14T22:00:15.000Z",
+  "updated_at": "2026-08-14T22:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share20-2048",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162779,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern/nca_10pct_100M_d22_seed2_2026-07-22_09-20-52_310564-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_10pct_100M_d22_seed2_2026-07-22_09-20-52_310564-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nca_1pct_100M_d20_seed1_2026-07-21_19-51-10_301627-pt",
+      "url": "https://huggingface.co/alexkstern/nca_1pct_100M_d20_seed1_2026-07-21_19-51-10_301627-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - alexkstern/nca-pre-pretraining-upstream · GitHub",
+      "url": "https://github.com/alexkstern/nca-pre-pretraining-upstream",
+      "snippet": "This repository provides an implementation of the paper, Training Language Models via Neural Cellular Automata. Pre-training large language models on natural language is costly, biased, and entangles knowledge with reasoning. We propose NCA pre-pre-training: first training a transformer on dynamics ..."
+    },
+    {
+      "title": "Text output of NCA for one subject — txtNCA • pkr",
+      "url": "https://asancpt.github.io/pkr/reference/txtNCA.html",
+      "snippet": "back extrapolated concentration at time 0, for bolus intravascular administration only"
+    },
+    {
+      "title": "MAC Address Lookup - MAC/OUI/IAB/IEEE Vendor Manufacturer Search",
+      "url": "https://www.macvendorlookup.com/",
+      "snippet": "MAC Address Lookup Enter any MAC address, OUI, or IAB below to lookup the manufacturer, location, and more"
+    }
+  ]
+}

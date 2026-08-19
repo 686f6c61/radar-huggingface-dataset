@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FAIRC/token-averaging-avg_50m_k2",
+  "slug": "fairc-token-averaging-avg_50m_k2",
+  "author": "FAIRC",
+  "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k2",
+  "created_at": "2026-08-18T10:17:41.000Z",
+  "updated_at": "2026-08-18T10:18:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 908057898,
+  "storage_human": "908 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k2 · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k2",
+      "snippet": "FAIRC/token-averaging-avg_50m_k2 Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k2_wexp · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k2_wexp",
+      "snippet": "FAIRC/token-averaging-avg_50m_k2_wexp Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "GitHub - MoonshotAI/Kimi-K2: Kimi K2 is the large language model series ...",
+      "url": "https://github.com/MoonshotAI/Kimi-K2",
+      "snippet": "Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters. Trained with the Muon optimizer, Kimi K2 achieves exceptional performance across frontier knowledge, reasoning, and coding tasks while being meticulously optimized for agentic capabilities."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Kimi K3: AI That Evolves With You - [2.8T Parameters & 1M Context]",
+      "url": "https://kimik2ai.com/k3/",
+      "snippet": "Kimi K3 is Moonshot AI&#x27;s flagship model, released July 16, 2026. It&#x27;s a 2.8-trillion-parameter sparse Mixture-of-Experts model with 896 experts (16 active per token), built on Kimi Delta Attention (KDA) hybrid linear attention, with native text, image, and video input, and a 1 million token context window."
+    }
+  ]
+}

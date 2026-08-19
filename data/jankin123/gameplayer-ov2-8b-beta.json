@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jankin123/gameplayer-ov2-8B-beta",
+  "slug": "jankin123-gameplayer-ov2-8b-beta",
+  "author": "jankin123",
+  "url": "https://huggingface.co/jankin123/gameplayer-ov2-8B-beta",
+  "created_at": "2026-08-18T12:11:52.000Z",
+  "updated_at": "2026-08-18T13:21:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "game-playing",
+    "fps",
+    "multimodal",
+    "image-text-to-text",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34132890918,
+  "storage_human": "34.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jankin123 (jankin) - Hugging Face",
+      "url": "https://huggingface.co/jankin123/activity/all",
+      "snippet": "jankin123/4DThinker-Training-Data ... New activity in jankin123/4DThinker-3B 2 months ago"
+    },
+    {
+      "title": "jankin123 - GitHub",
+      "url": "https://github.com/jankin123",
+      "snippet": "GitHub is where jankin123 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "jankin123 (jankin) - Hugging Face",
+      "url": "https://huggingface.co/jankin123",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model 1 day ago ... upvoted a paper 27 days ago"
+    },
+    {
+      "title": "GANNONR — AI Aim Assist & Tools",
+      "url": "https://gannonr.com/",
+      "snippet": "YOLO and TensorRT inference on live capture. Industry-grade prediction, smart tracking, and broad hardware support."
+    },
+    {
+      "title": "GitHub - ghost-x-ai/ghost-8b-beta: Ghost 8B Beta is a large language ...",
+      "url": "https://github.com/ghost-x-ai/ghost-8b-beta",
+      "snippet": "Ghost 8B Beta is a large language model developed with goals that include excellent multilingual support, superior knowledge capabilities, and cost-effectiveness. The model comes in two context length versions, 8k and 128k, along with multilingual function tools support by default. - ghost-x-ai/ghost-8b-beta"
+    }
+  ]
+}

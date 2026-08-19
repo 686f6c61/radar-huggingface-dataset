@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Roy229/hf_tt_cfc1b8_t5_summarizer",
+  "slug": "roy229-hf_tt_cfc1b8_t5_summarizer",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/hf_tt_cfc1b8_t5_summarizer",
+  "created_at": "2026-08-15T05:47:50.000Z",
+  "updated_at": "2026-08-17T04:00:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "summarization",
+    "aurora-model",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229/hf8435_model_registry_e73c8271 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Roy229/hf8435_model_registry_e73c8271",
+      "snippet": "Curated Image Generation Model Registry A curated registry of the most widely adopted open-source text-to-image (image generation) models published on the Hugging Face Hub, together with key adoption metrics (downloads, likes, license, task) and an internal tier classification used by the AI Platform team to help product teams select the right model for their projects."
+    },
+    {
+      "title": "GitHub - batoolarifa/summarAI: AI-powered T5-based text summarization ...",
+      "url": "https://github.com/batoolarifa/summarAI",
+      "snippet": "SummarAI Professional Text Summarization Application SummarAI is an AI-powered text summarization tool built with a fine-tuned T5 Transformer model. It transforms long-form content articles, research papers, reports, meeting notes into concise, accurate summaries while preserving key insights and context."
+    },
+    {
+      "title": "GitHub - Sanket73/TextSummarizerApp: Summarizer-HF is a full-stack NLP ...",
+      "url": "https://github.com/Sanket73/TextSummarizerApp",
+      "snippet": "Summarizer-HF A full-stack Natural Language Processing (NLP) application that generates concise summaries from long conversations, articles, or dialogue using a fine-tuned T5 Transformer model. Built with a FastAPI backend and a clean, interactive web interface for real-time summarization."
+    },
+    {
+      "title": "onnx-community/text_summarization-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/text_summarization-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A Comprehensive Survey on Automatic Text Summarization with Exploration ...",
+      "url": "https://arxiv.org/html/2403.02901v3",
+      "snippet": "Large Language Model (LLM) Era (2020s-Present). The emergence of Large Language Models (LLMs), such as GPT-3, GPT-3.5, and LLaMA, marks a significant milestone in the evolution of Automatic Text Summarization (ATS). These models, pre-trained on vast and diverse corpora, possess the ability to perform a wide range of tasks, including ..."
+    }
+  ]
+}

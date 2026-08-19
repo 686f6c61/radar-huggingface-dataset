@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sujalgawas/qwen2.5-coder-1.5b-code-reviewer",
+  "slug": "sujalgawas-qwen2-5-coder-1-5b-code-reviewer",
+  "author": "sujalgawas",
+  "url": "https://huggingface.co/sujalgawas/qwen2.5-coder-1.5b-code-reviewer",
+  "created_at": "2026-08-14T22:21:46.000Z",
+  "updated_at": "2026-08-17T01:31:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 447994246,
+  "storage_human": "448 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sujalgawas/qwen2.5-coder-1.5b-code-reviewer · Hugging Face",
+      "url": "https://huggingface.co/sujalgawas/qwen2.5-coder-1.5b-code-reviewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "As of now, Qwen2.5-Coder has covered six mainstream model sizes to meet the needs of different developers; 🛠 Practical: We explore the practicality of Qwen2.5-Coder in two scenarios, including code assistants and Artifacts, with some examples showcasing the potential applications of Qwen2.5-Coder in real-world scenarios;"
+    },
+    {
+      "title": "Qwen 2.5 Coder 1.5B - CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen2.5-coder-1.5b",
+      "snippet": "The recently released Qwen2.5 Coder 7B Instruct has already shown impressive performance in code reasoning, and this 32B model takes it a step further. Multiple programming languages An intelligent programming assistant should be familiar with all programming languages."
+    },
+    {
+      "title": "GitHub - worldart/QwenLM_Qwen2.5-Coder: Qwen2.5-Coder is the code ...",
+      "url": "https://github.com/worldart/QwenLM_Qwen2.5-Coder",
+      "snippet": "Qwen2.5-Coder is part of the Qwen2.5 series, available in three model sizes: 1.5B, 7B, and a 32B version (coming soon). This update focuses on two main improvements: scaling up the code training data and enhancing coding capabilities while maintaining strong performance in other core areas like math and general tasks."
+    }
+  ]
+}

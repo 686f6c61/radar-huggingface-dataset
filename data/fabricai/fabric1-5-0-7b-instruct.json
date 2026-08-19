@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "FabricAI/Fabric1.5-0.7B-Instruct",
+  "slug": "fabricai-fabric1-5-0-7b-instruct",
+  "author": "FabricAI",
+  "url": "https://huggingface.co/FabricAI/Fabric1.5-0.7B-Instruct",
+  "created_at": "2026-07-24T16:48:18.000Z",
+  "updated_at": "2026-08-14T20:00:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fabric",
+    "text-generation",
+    "efficient",
+    "0.7b",
+    "causal-lm",
+    "chunked-memory",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceTB/smoltalk2",
+    "dataset:open-r1/Mixture-of-Thoughts",
+    "dataset:nvidia/Nemotron-Post-Training-Dataset-v1",
+    "base_model:FabricAI/Fabric1.5-0.7B-Base",
+    "base_model:finetune:FabricAI/Fabric1.5-0.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 735,
+  "trending_score": 0,
+  "parameters": 742528520,
+  "parameters_human": "742.5M",
+  "storage_bytes": 1487527965,
+  "storage_human": "1.5 GB",
+  "base_model": "FabricAI/Fabric1.5-0.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

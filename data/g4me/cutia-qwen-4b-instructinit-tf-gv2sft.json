@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft",
+  "slug": "g4me-cutia-qwen-4b-instructinit-tf-gv2sft",
+  "author": "g4me",
+  "url": "https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft",
+  "created_at": "2026-08-14T18:53:37.000Z",
+  "updated_at": "2026-08-14T20:23:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "causal-lm",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 151821894814,
+  "storage_human": "151.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

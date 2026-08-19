@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/For-Her-Darkside-12B-v1.4-i1-GGUF",
+  "slug": "mradermacher-for-her-darkside-12b-v1-4-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/For-Her-Darkside-12B-v1.4-i1-GGUF",
+  "created_at": "2026-08-18T08:50:53.000Z",
+  "updated_at": "2026-08-18T09:46:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma-4",
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "explicit",
+    "erp",
+    "adult-content",
+    "mature",
+    "unaligned",
+    "en",
+    "base_model:ReadyArt/For-Her-Darkside-12B-v1.4",
+    "base_model:quantized:ReadyArt/For-Her-Darkside-12B-v1.4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 140344473120,
+  "storage_human": "140.3 GB",
+  "base_model": "ReadyArt/For-Her-Darkside-12B-v1.4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/For-Her-Darkside-12B-v1.4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/For-Her-Darkside-12B-v1.4-GGUF",
+      "snippet": "Instructions to use mradermacher/For-Her-Darkside-12B-v1.4-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Quantized Models for ReadyArt/For-Her-Darkside-12B-v1.4 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:ReadyArt/For-Her-Darkside-12B-v1.4",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "For-Her-Darkside-12B-v1.4-GGUF - 开源模型 - ReadyArt - OpenCSG",
+      "url": "https://opencsg.com/models/ReadyArt/For-Her-Darkside-12B-v1.4-GGUF?tab=summary",
+      "snippet": "For-Her-Darkside-12B-v1.4-GGUF 是由 ReadyArt 推出的开源人工智能模型，OpenCSG提供高速免费下载服务，支持模型推理、训练、部署全流程管理，助力AI开发者高效工作。"
+    },
+    {
+      "title": "Dark_Side_Of_Dimensions_Illustrious_SD8.safetensors - CivArchive",
+      "url": "https://civarchive.com/files/Dark_Side_Of_Dimensions_Illustrious_SD8.safetensors?platform=all",
+      "snippet": "Download Dark_Side_Of_Dimensions_Illustrious_SD8.safetensors from CivArchive. Find this AI model file preserved in our community-driven archive."
+    }
+  ]
+}

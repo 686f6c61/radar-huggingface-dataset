@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "erenyanic/qwen3.5-4b-seasoned-advice-lora",
+  "slug": "erenyanic-qwen3-5-4b-seasoned-advice-lora",
+  "author": "erenyanic",
+  "url": "https://huggingface.co/erenyanic/qwen3.5-4b-seasoned-advice-lora",
+  "created_at": "2026-08-17T13:52:48.000Z",
+  "updated_at": "2026-08-17T13:53:13.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "lora",
+    "unsloth",
+    "qwen3.5",
+    "sft",
+    "cooking",
+    "reasoning",
+    "turkish",
+    "tr",
+    "en",
+    "dataset:Erenyanic/seasoned-advice-dataset",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Erenyanic/qwen3.5-4b-seasoned-advice-lora · Hugging Face",
+      "url": "https://huggingface.co/Erenyanic/qwen3.5-4b-seasoned-advice-lora",
+      "snippet": "The fine-tuned model performs on par with its base (67.31% vs. 67.23%, a +0.08 pt gap — 5 of 6200 questions, within run-to-run noise). This is the expected outcome: the LoRA adapter was trained on the bilingual (Turkish and English) seasoned-advice conversational dataset, a domain unrelated to Turkish MMLU&#x27;s academic and professional knowledge."
+    },
+    {
+      "title": "Overview · ErenYanic/qwen3.5-4b-seasoned-advice-lora · GitHub",
+      "url": "https://github.com/ErenYanic/qwen3.5-4b-seasoned-advice-lora/security",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    {
+      "title": "ErenYanic (Eren Yanic) - Hugging Face",
+      "url": "https://huggingface.co/ErenYanic/models",
+      "snippet": "ErenYanic&#x27;s models2 Sort: Recently updated ErenYanic/qwen3.5-4b-seasoned-advice-lora Updated 8 days ago• 265"
+    },
+    {
+      "title": "hello-rocm/src/fine-tune/models/qwen3.5/Qwen3.5-4B-LoRA.ipynb ... - GitHub",
+      "url": "https://github.com/datawhalechina/hello-rocm/blob/master/src/fine-tune/models/qwen3.5/Qwen3.5-4B-LoRA.ipynb",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    {
+      "title": "qwen3.5-4b-seasoned-advice-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Erenyanic/qwen3.5-4b-seasoned-advice-lora",
+      "snippet": "Deploy qwen3.5-4b-seasoned-advice-lora with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

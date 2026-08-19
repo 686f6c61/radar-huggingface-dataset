@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "soyaakinohara/qwen3.8-27b-abliterated-3.69bpw-12GB-MTP.gguf",
+  "slug": "soyaakinohara-qwen3-8-27b-abliterated-3-69bpw-12gb-mtp-gguf",
+  "author": "soyaakinohara",
+  "url": "https://huggingface.co/soyaakinohara/qwen3.8-27b-abliterated-3.69bpw-12GB-MTP.gguf",
+  "created_at": "2026-08-16T12:58:09.000Z",
+  "updated_at": "2026-08-17T00:20:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ja",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.8",
+    "qwen3_5",
+    "gated-deltanet",
+    "hybrid-attention",
+    "mtp",
+    "abliterated",
+    "uncensored",
+    "quantized",
+    "iq2_s",
+    "iq3_s",
+    "q4_k",
+    "q5_k",
+    "q6_k",
+    "q8_0",
+    "text-generation",
+    "ja",
+    "en",
+    "multilingual",
+    "base_model:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "base_model:quantized:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 52,
+  "downloads_30d": 10871,
+  "trending_score": 51,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 12599187808,
+  "storage_human": "12.6 GB",
+  "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.8-27b-abliterated-3.69pbw-12GB-MTP.gguf · soyaakinohara/qwen3.8 ...",
+      "url": "https://huggingface.co/soyaakinohara/qwen3.8-27b-abliterated-3.69pbw-12GB-MTP.gguf/blob/main/qwen3.8-27b-abliterated-3.69pbw-12GB-MTP.gguf",
+      "snippet": "soyaakinohara / qwen3.8-27b-abliterated-3.69pbw-12GB-MTP.gguf like 6 Text Generation GGUF Japanese English multilingual llama.cpp qwen3.8 qwen3_5 gated-deltanet hybrid-attention mtp abliterated uncensored quantized iq2_s iq3_s q4_k q5_k q6_k q8_0 imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy ..."
+    },
+    {
+      "title": "qwen3.8-27b-abliterated-3.69bpw-12GB-MTP.gguf - Hugging Face",
+      "url": "https://huggingface.co/soyaakinohara/qwen3.8-27b-abliterated-3.69bpw-12GB-MTP.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "TL;DR: Qwen3.8-27B is a dense 27B vision-language model under Apache-2.0 with 262,144-token context and MTP decoding. The Q4 build is about 17.8GB, so a 24GB Mac or GPU runs it comfortably, and AMD measured 24.5 tok/s on Ryzen AI Max+ 395. One command to start: ollama run qwen3.8:27b. What Makes Qwen3.8-27B Different?"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "canbingol/qwen2.5-3B-Instruct-tool-call-en-mixed-when2call-v2",
+  "slug": "canbingol-qwen2-5-3b-instruct-tool-call-en-mixed-when2call-v2",
+  "author": "canbingol",
+  "url": "https://huggingface.co/canbingol/qwen2.5-3B-Instruct-tool-call-en-mixed-when2call-v2",
+  "created_at": "2026-08-17T13:00:48.000Z",
+  "updated_at": "2026-08-17T13:01:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250963877,
+  "storage_human": "251 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen2.5-3B-Instruct-tool-call-en-norobots - Hugging Face",
+      "url": "https://huggingface.co/canbingol/qwen2.5-3B-Instruct-tool-call-en-norobots",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "canbingol/Qwen2.5-3B-Instruct-tool-call-en · Hugging Face",
+      "url": "https://huggingface.co/canbingol/Qwen2.5-3B-Instruct-tool-call-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5-3B-Instruct-tool-call-en-norobots - friendli.ai",
+      "url": "https://friendli.ai/models/canbingol/qwen2.5-3B-Instruct-tool-call-en-norobots",
+      "snippet": "Deploy qwen2.5-3B-Instruct-tool-call-en-norobots with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Function Calling and Tool Use | QwenLM/Qwen2.5 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen2.5/2.2-function-calling-and-tool-use",
+      "snippet": "Relevant source files This page explains how to use Qwen2.5&#x27;s function calling and tool use capabilities, which allow the model to interact with external functions and tools. These capabilities enable Qwen2.5 to extend beyond text generation to perform actions like retrieving real-time information or executing calculations."
+    },
+    {
+      "title": "qwen2.5:3b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:3b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

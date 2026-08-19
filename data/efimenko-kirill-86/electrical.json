@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Efimenko-Kirill-86/Electrical",
+  "slug": "efimenko-kirill-86-electrical",
+  "author": "Efimenko-Kirill-86",
+  "url": "https://huggingface.co/Efimenko-Kirill-86/Electrical",
+  "created_at": "2026-08-18T14:30:31.000Z",
+  "updated_at": "2026-08-18T14:32:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kirill Efimenko | ScienceDirect",
+      "url": "https://www.sciencedirect.com/author/6601959637/kirill-efimenko",
+      "snippet": "Read articles by Kirill Efimenko on ScienceDirect, the world&#x27;s leading source for scientific, technical, and medical research."
+    },
+    {
+      "title": "Kirill Efimenko - Department of Chemical and Biomolecular Engineering",
+      "url": "https://cbe.ncsu.edu/people/efimenko/",
+      "snippet": "Kirill Efimenko received a M.Sc. degree in physics of polymers and dielectrics from Belarusian State University 1996 (Minsk, Belarus) and a Ph.D. in Material Science and Technology from Institute of Chemical Technology in Prague, Czechia in 1999."
+    },
+    {
+      "title": "Kirill Efimenko&#x27;s research works | North Carolina State University ...",
+      "url": "https://www.researchgate.net/scientific-contributions/Kirill-Efimenko-39775767",
+      "snippet": "Kirill Efimenko&#x27;s 79 research works with 5,562 citations and 42,584 reads, including: Tuning Interfacial Adhesion in Polyester/Polyamide Systems"
+    },
+    {
+      "title": "The Impact of Artificial Intelligence on Electrical Engineering: A ...",
+      "url": "https://www.researchgate.net/publication/394858617_The_Impact_of_Artificial_Intelligence_on_Electrical_Engineering_A_Review_of_Current_Applications_and_Future_Prospects",
+      "snippet": "Abstract and Figures This paper investigates previous research concerning the applications of artificial intelligence (AI) technology in electrical engineering (EE) systems."
+    },
+    {
+      "title": "Kirill Efimenko - Citation Index - NCSU Libraries",
+      "url": "https://www.lib.ncsu.edu/repository/scholpubs/search.php?page=author&aid=efimenko",
+      "snippet": "By: C. Cruz-Teran n, K. Carlin n, K. Efimenko n, J. Genzer n & B. Rao n TL;DR: Results strongly suggest that mutations introduced in Sso7d-2B5 alter its orientation relative to the parent protein, when adsorbed on silica surfaces, and has direct relevance to development of protein-based biosensors and biocatalysts. (via Semantic Scholar)"
+    }
+  ]
+}

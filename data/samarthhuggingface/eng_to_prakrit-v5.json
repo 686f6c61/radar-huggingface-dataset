@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Samarthhuggingface/eng_to_prakrit-v5",
+  "slug": "samarthhuggingface-eng_to_prakrit-v5",
+  "author": "Samarthhuggingface",
+  "url": "https://huggingface.co/Samarthhuggingface/eng_to_prakrit-v5",
+  "created_at": "2026-08-18T10:27:35.000Z",
+  "updated_at": "2026-08-18T10:27:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=prakrit",
+      "snippet": "Explore datasets powering machine learning. 1 Full-text search Edit filters Sort: Trending Active filters: prakrit Clear all"
+    },
+    {
+      "title": "OpenAI models escaped containment, hacked major AI application library",
+      "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-autonomous/825898/",
+      "snippet": "OpenAI models escaped containment, hacked major AI application library The attack is the first known instance of frontier models autonomously breaking out of a testing environment and into another company&#x27;s servers."
+    },
+    {
+      "title": "English-to-Prakrit Machine Translation via Multilingual Transfer Learning",
+      "url": "https://arxiv.org/pdf/2606.06038v1",
+      "snippet": "Abstract We study English-to-Prakrit machine transla-tion in a low-resource setting where the target language is unsupported by IndicTrans2. We adapt the multilingual model by mapping Prakrit to the Hindi language tag (hin_Deva) without modifying the tokenizer, vocabulary, or architecture. Using a 1,474-pair Maha-rashtri Prakrit parallel corpus and evaluation on a 20-sample Ardhamagadhi test ..."
+    },
+    {
+      "title": "How to Download a Model from Hugging Face - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/how-to-download-a-model-from-hugging-face/",
+      "snippet": "Hugging Face models are pre-trained machine learning models that you can directly download and plug into our applications for tasks like text classification, translation, summarization and more without training from scratch. It is an open-source AI platform best known for the transformers library and the Model Hub, which hosts thousands of ready-to-use models for NLP, vision and multimodal ..."
+    }
+  ]
+}

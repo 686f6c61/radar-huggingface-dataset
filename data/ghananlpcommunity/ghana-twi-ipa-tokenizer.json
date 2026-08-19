@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ghananlpcommunity/ghana-twi-ipa-tokenizer",
+  "slug": "ghananlpcommunity-ghana-twi-ipa-tokenizer",
+  "author": "ghananlpcommunity",
+  "url": "https://huggingface.co/ghananlpcommunity/ghana-twi-ipa-tokenizer",
+  "created_at": "2026-08-17T18:02:49.000Z",
+  "updated_at": "2026-08-17T18:02:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ghana TTS - a ghananlpcommunity Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ghananlpcommunity/ghana-tts",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from ghananlpcommunity"
+    },
+    {
+      "title": "ghananlpcommunity/stable-twi-tts · Hugging Face",
+      "url": "https://huggingface.co/ghananlpcommunity/stable-twi-tts",
+      "snippet": "It is driven by IPA phonemes rather than orthography, which is what lets one model serve both languages from a shared inventory. Warm-started from en_US/libritts_r/medium and finetuned on 327 h (164 h Twi + 164 h Ghanaian English), 22.05 kHz, 1,555 speaker embeddings."
+    },
+    {
+      "title": "GitHub - GhanaNLP/stable-twi-tts: Twi and Ghanaian English speech ...",
+      "url": "https://github.com/GhanaNLP/stable-twi-tts",
+      "snippet": "The model and voices carry the licences of their training data — the Twi half is cc-by-nc-4.0, so the voices are non-commercial. Twi and Ghanaian English speech synthesis on ONNX - fast, multi-platform, batch-capable"
+    },
+    {
+      "title": "Ghana NLP - GitHub",
+      "url": "https://github.com/GhanaNLP",
+      "snippet": "Open Source Initiative focused on Natural Language Processing (NLP) of Ghanaian Languages, & its Applications to Local Problems - Ghana NLP"
+    },
+    {
+      "title": "Ghana Natural Language Processing (NLP) - Ghana NLP",
+      "url": "https://ghananlp.org/",
+      "snippet": "Ghana NLP is an Open Source Initiative focused on Natural Language Processing (NLP) of Ghanaian Languages, & its Applications to Local Problems. While we will begin work on Ghanaian languages initially, likely focusing on Twi due to number of speakers, our ultimate goal is for our tools to be applicable throughout the West African subregion and ..."
+    }
+  ]
+}

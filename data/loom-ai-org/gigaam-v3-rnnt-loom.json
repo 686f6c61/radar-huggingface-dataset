@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/gigaam-v3-rnnt-loom",
+  "slug": "loom-ai-org-gigaam-v3-rnnt-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/gigaam-v3-rnnt-loom",
+  "created_at": "2026-08-11T11:46:13.000Z",
+  "updated_at": "2026-08-16T13:40:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "loom-py-rt",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "automatic-speech-recognition",
+    "ru",
+    "en",
+    "base_model:ai-sage/GigaAM-v3",
+    "base_model:quantized:ai-sage/GigaAM-v3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 223101448,
+  "parameters_human": "223.1M",
+  "storage_bytes": 2678703808,
+  "storage_human": "2.7 GB",
+  "base_model": "ai-sage/GigaAM-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

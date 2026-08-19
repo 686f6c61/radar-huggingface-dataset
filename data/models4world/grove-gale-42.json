@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/grove-gale-42",
+  "slug": "models4world-grove-gale-42",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/grove-gale-42",
+  "created_at": "2026-08-17T05:06:47.000Z",
+  "updated_at": "2026-08-17T05:07:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - core42.ai",
+      "url": "https://www.core42.ai/compass/documentation/compass-models",
+      "snippet": "Compass offers a variety of advanced models that will help enhance and empower your business with its capabilities."
+    },
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world/models",
+      "snippet": "User profile of models4world on Hugging Face"
+    },
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world",
+      "snippet": "User profile of models4world on Hugging Face Recent Activity updated a model 14 days ago Wellytics/q7b published a model 14 days ago Wellytics/q7b updated a model 15 days ago Wellytics/Wellytics_llama_8b View all activity"
+    },
+    {
+      "title": "Best AI Models in August 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for August 2026."
+    },
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/MobileSAM-ExecuTorch",
+  "slug": "mlboydaisuke-mobilesam-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/MobileSAM-ExecuTorch",
+  "created_at": "2026-08-14T04:09:57.000Z",
+  "updated_at": "2026-08-15T05:14:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "executorch-pte",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "mask-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105187085,
+  "storage_human": "105 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/MobileSAM-CoreML · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/MobileSAM-CoreML",
+      "snippet": "mlboydaisuke / MobileSAM-CoreML like 0 Mask Generation Core ML core-ml ios macos apple on-device segment-anything sam promptable-segmentation arxiv:2306.14289 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new MobileSAM — Core ML Files Download Use in Swift Demo Conversion License Credits"
+    },
+    {
+      "title": "GitHub - ChaoningZhang/MobileSAM: This is the official code for ...",
+      "url": "https://github.com/ChaoningZhang/MobileSAM",
+      "snippet": "This is the official code for MobileSAM project that makes SAM lightweight for mobile applications and beyond! - ChaoningZhang/MobileSAM"
+    },
+    {
+      "title": "Core ML Model Zoo - a mlboydaisuke Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlboydaisuke/core-ml-model-zoo",
+      "snippet": "PyTorch models converted to Core ML for on-device inference on iPhone, iPad and Mac."
+    },
+    {
+      "title": "MobileSam - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/mobilesam",
+      "snippet": "MobileSam Faster Segment Anything: Towards lightweight SAM for mobile applications. Transformer based encoder‑decoder where prompts specify what to segment in an image thereby allowing segmentation without the need for additional training. The image encoder generates embeddings and the lightweight decoder operates on the embeddings for point and mask based image segmentation."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/mobilesam/README.md at main ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/mobilesam/README.md",
+      "snippet": "This is based on the implementation of MobileSam found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    }
+  ]
+}

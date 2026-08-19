@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Garvsri/dinov2-skindisease-finetuned-v2",
+  "slug": "garvsri-dinov2-skindisease-finetuned-v2",
+  "author": "Garvsri",
+  "url": "https://huggingface.co/Garvsri/dinov2-skindisease-finetuned-v2",
+  "created_at": "2026-08-18T04:29:31.000Z",
+  "updated_at": "2026-08-18T04:29:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dinov2",
+    "image-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86628127,
+  "parameters_human": "86.6M",
+  "storage_bytes": 346538228,
+  "storage_human": "347 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SamdaniHub/dinov2-base-finetuned-SkinDisease · Hugging Face",
+      "url": "https://huggingface.co/SamdaniHub/dinov2-base-finetuned-SkinDisease",
+      "snippet": "dinov2-base-finetuned-SkinDisease This model is a fine-tuned version of facebook/dinov2-base on the Custom dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Jayanth2002/dinov2-base-finetuned-SkinDisease · Hugging Face",
+      "url": "https://huggingface.co/Jayanth2002/dinov2-base-finetuned-SkinDisease",
+      "snippet": "dinov2-base-finetuned-SkinDisease This model is a fine-tuned version of facebook/dinov2-base on the Custom dataset. It achieves the following results on the evaluation set: Loss: 0.1321 Accuracy: 0.9557 Model description The Vision Transformer (ViT) is a transformer encoder model (BERT-like) pre-trained on a large collection of images in a self-supervised fashion. Images are presented to the ..."
+    },
+    {
+      "title": "Open-source model dinov2-base-finetuned-SkinDisease - Accurately ...",
+      "url": "https://model.aibase.com/models/details/1915694793516277762",
+      "snippet": "🚀 dinov2-base-finetuned-SkinDisease This model is a fine - tuned version of facebook/dinov2-base on the Custom dataset, achieving high accuracy in skin disease classification."
+    },
+    {
+      "title": "GitHub - facebookresearch/dinov2: PyTorch code and models for the ...",
+      "url": "https://github.com/facebookresearch/dinov2",
+      "snippet": "Meta AI Research, FAIR Maxime Oquab, Timothée Darcet, Théo Moutakanni, Huy V. Vo, Marc Szafraniec, Vasil Khalidov, Patrick Labatut, Armand Joulin, Piotr Bojanowski [Paper #1] Paper #2] [Blog] [Demo] [BibTeX] PyTorch implementation and pretrained models for DINOv2. For details, see the papers: DINOv2: Learning Robust Visual Features without Supervision and Vision Transformers Need Registers ..."
+    },
+    {
+      "title": "GitHub - KUNDANPATIL25/skindiseaseprediction-",
+      "url": "https://github.com/KUNDANPATIL25/skindiseaseprediction-",
+      "snippet": "This project uses a DINOv2-base model fine-tuned on skin disease classification dataset, achieving ~95.6% accuracy on 31 classes of skin diseases. The model is based on the work: Enhancing Skin Disease Classification Leveraging Transformer-Based Deep Learning Architectures and Explainable AI"
+    }
+  ]
+}

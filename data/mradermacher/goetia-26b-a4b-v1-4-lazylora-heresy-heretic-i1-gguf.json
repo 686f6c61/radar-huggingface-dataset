@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic-i1-GGUF",
+  "slug": "mradermacher-goetia-26b-a4b-v1-4-lazylora-heresy-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic-i1-GGUF",
+  "created_at": "2026-08-17T20:32:09.000Z",
+  "updated_at": "2026-08-18T01:00:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "abliteration",
+    "gemma4",
+    "moe",
+    "roleplay",
+    "en",
+    "base_model:alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic",
+    "base_model:quantized:alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3041,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 300894385696,
+  "storage_human": "300.9 GB",
+  "base_model": "alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Goetia-26B-A4B-v1.4-LazyLora-heresy-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "gemma-4-26B-A4B-it-heretic-GGUF: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-26b-a4b-it-heretic-gguf-mradermacher",
+      "snippet": "Overview gemma-4-26B-A4B-it-heretic-GGUF is a static quantized version of the Gemma 4 26B model from mradermacher, distributed in GGUF format for CPU and low-VRAM inference. The original base model is a 26-billion parameter instruction-tuned variant designed for conversational and general text generation tasks. This quantized release prioritizes accessibility by offering 11 different ..."
+    },
+    {
+      "title": "Goetia-26B-A4B-v1.4-LazyLora-heresy - FriendliAI",
+      "url": "https://friendli.ai/models/MuXodious/Goetia-26B-A4B-v1.4-LazyLora-heresy",
+      "snippet": "Run Goetia-26B-A4B-v1.4-LazyLora-heresy with FriendliAI inference. This model was produced by extracting Goetia 1.4 LoRA and applying it over the SOMPOA…"
+    },
+    {
+      "title": "Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic - friendli.ai",
+      "url": "https://friendli.ai/models/alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic",
+      "snippet": "Run Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic with FriendliAI inference. Heretic (directional ablation) merge of…"
+    }
+  ]
+}

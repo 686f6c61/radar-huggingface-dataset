@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DrinkIcedT/roberta-large_MBTI_P_MBTI_agg_balanced_50_5e-06",
+  "slug": "drinkicedt-roberta-large_mbti_p_mbti_agg_balanced_50_5e-06",
+  "author": "DrinkIcedT",
+  "url": "https://huggingface.co/DrinkIcedT/roberta-large_MBTI_P_MBTI_agg_balanced_50_5e-06",
+  "created_at": "2026-08-17T16:13:37.000Z",
+  "updated_at": "2026-08-17T16:14:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 355361794,
+  "parameters_human": "355.4M",
+  "storage_bytes": 1421500625,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DrinkIcedT/roberta-large_MBTI_P · Hugging Face",
+      "url": "https://huggingface.co/DrinkIcedT/roberta-large_MBTI_P",
+      "snippet": "Instructions to use DrinkIcedT/roberta-large_MBTI_P with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use DrinkIcedT/roberta-large_MBTI_P with Transformers:"
+    },
+    {
+      "title": "DrinkIcedT/roberta-large_MBTI_P_MBTI_agg_balanced_50 - Hugging Face",
+      "url": "https://huggingface.co/DrinkIcedT/roberta-large_MBTI_P_MBTI_agg_balanced_50",
+      "snippet": "Instructions to use DrinkIcedT/roberta-large_MBTI_P_MBTI_agg_balanced_50 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/roberta.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/roberta.md",
+      "snippet": "RoBERTa improves BERT with new pretraining objectives, demonstrating BERT was undertrained and training design is important. The pretraining objectives include dynamic masking, sentence packing, larger batches and a byte-level BPE tokenizer. You can find all the original RoBERTa checkpoints under the Facebook AI organization."
+    },
+    {
+      "title": "models roberta large - Azure/azureml-assets GitHub Wiki",
+      "url": "https://github-wiki-see.page/m/Azure/azureml-assets/wiki/models-roberta-large",
+      "snippet": "Overview RoBERTa is a transformers model pretrained on a large corpus of English data in a self-supervised fashion. This means it was pretrained on the raw texts only, with no humans labelling them in any way (which is why it can use lots of publicly available data) with an automatic process to generate inputs and labels from those texts."
+    },
+    {
+      "title": "roberta-large — Fill-Mask Model | Model Database",
+      "url": "https://modeldatabase.com/roberta-large.html",
+      "snippet": "roberta-large is an open source fill-mask model built with transformers, 2,887,607 downloads. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "UnderTides/Embodied-Navigator-7B-GRPO",
+  "slug": "undertides-embodied-navigator-7b-grpo",
+  "author": "UnderTides",
+  "url": "https://huggingface.co/UnderTides/Embodied-Navigator-7B-GRPO",
+  "created_at": "2026-08-15T06:35:46.000Z",
+  "updated_at": "2026-08-18T04:55:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "vision-language",
+    "vision-language-navigation",
+    "embodied-ai",
+    "robotics",
+    "qwen2.5-vl",
+    "reinforcement-learning",
+    "grpo",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 8632279072,
+  "parameters_human": "8.63B",
+  "storage_bytes": 17276073460,
+  "storage_human": "17.3 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied-Navigator/README.md at main · ZJU-OmniAI/Embodied ... - GitHub",
+      "url": "https://github.com/ZJU-OmniAI/Embodied-Navigator/blob/main/README.md",
+      "snippet": "Overview Embodied-Navigator is a unified vision-language navigation framework that aligns high-level visual reasoning with low-level physical execution. Instead of asking a vision-language model (VLM) to regress 3D coordinates or emit long sequences of atomic actions, Embodied-Navigator lets the model act as a visual pointer: it selects a camera view and a 2D pixel waypoint, which is projected ..."
+    },
+    {
+      "title": "embodied-navigation (Francesco) - Hugging Face",
+      "url": "https://huggingface.co/embodied-navigation",
+      "snippet": "Org profile for Francesco on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "[2509.12129] Embodied Navigation Foundation Model - arXiv.org",
+      "url": "https://arxiv.org/abs/2509.12129",
+      "snippet": "Navigation is a fundamental capability in embodied AI, representing the intelligence required to perceive and interact within physical environments following language instructions. Despite significant progress in large Vision-Language Models (VLMs), which exhibit remarkable zero-shot performance on general vision-language tasks, their generalization ability in embodied navigation remains ..."
+    },
+    {
+      "title": "Train your own R1 reasoning model locally (GRPO) - unsloth.ai",
+      "url": "https://unsloth.ai/blog/r1-reasoning",
+      "snippet": "You can now reproduce your own DeepSeek-R1 reasoning model with Unsloth 100% locally. Using GRPO. Open-source, free and beginner friendly."
+    },
+    {
+      "title": "GitHub - XiaomiMiMo/MiMo-Embodied: MiMo-Embodied",
+      "url": "https://github.com/XiaomiMiMo/MiMo-Embodied",
+      "snippet": "MiMo-Embodied is a powerful cross-embodied vision-language model that demonstrates state-of-the-art performance in both autonomous driving and embodied AI tasks, representing the first open-source VLM that integrates these two critical areas. This repository is for evaluation only. It does not contain model training code."
+    }
+  ]
+}

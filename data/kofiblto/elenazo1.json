@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KOFIblto/elenazo1",
+  "slug": "kofiblto-elenazo1",
+  "author": "KOFIblto",
+  "url": "https://huggingface.co/KOFIblto/elenazo1",
+  "created_at": "2026-08-18T00:02:59.000Z",
+  "updated_at": "2026-08-18T01:02:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1729228082,
+  "storage_human": "1.7 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KOFIblto (Mathias) - Hugging Face",
+      "url": "https://huggingface.co/KOFIblto/models",
+      "snippet": "KOFIblto&#x27;s models1 Sort: Recently updated KOFIblto/lora4-ar Text-to-Image •Updated 1 day ago• 9"
+    },
+    {
+      "title": "KOFIblto (Mathias) - Hugging Face",
+      "url": "https://huggingface.co/KOFIblto",
+      "snippet": "Recent Activity updated a model1 day ago KOFIblto/lora4-ar published a model1 day ago KOFIblto/lora4-ar View all activity"
+    },
+    {
+      "title": "KOFiblto (Mathias Kornschober) · GitHub",
+      "url": "https://github.com/KOFiblto",
+      "snippet": "A graph representing KOFiblto&#x27;s contributions from June 01, 2025 to June 07, 2026. The contributions are 84% commits, 16% pull requests, 0% code review, 0% issues."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Free AI 3D Model Generator: Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Generate high-quality 3D models from text or images for free. Neural4D provides a top-tier free AI 3D model generator for games, AR/VR, and 3D printing."
+    }
+  ]
+}

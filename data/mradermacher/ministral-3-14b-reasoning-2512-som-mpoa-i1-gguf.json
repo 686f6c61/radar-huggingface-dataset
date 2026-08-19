@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ministral-3-14B-Reasoning-2512-SOM-MPOA-i1-GGUF",
+  "slug": "mradermacher-ministral-3-14b-reasoning-2512-som-mpoa-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ministral-3-14B-Reasoning-2512-SOM-MPOA-i1-GGUF",
+  "created_at": "2026-03-27T10:45:13.000Z",
+  "updated_at": "2026-08-17T23:17:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mistral-common",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1871,
+  "trending_score": 0,
+  "parameters": 13506073600,
+  "parameters_human": "13.51B",
+  "storage_bytes": 155837388096,
+  "storage_human": "155.8 GB",
+  "base_model": "0xA50C1A1/Ministral-3-14B-Reasoning-2512-SOM-MPOA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ministral-3-14B-Reasoning-2512-SOM-MPOA-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ministral-3-14B-Reasoning-2512-SOM-MPOA-i1-GGUF",
+      "snippet": "mradermacher / Ministral-3-14B-Reasoning-2512-SOM-MPOA-i1-GGUF like 0 Transformers GGUF 11 languages mistral-common heretic uncensored decensored abliterated imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Ministral-3-14B-Reasoning-2512-SOM-MPOA-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ministral-3-14B-Reasoning-2512-SOM-MPOA-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ministral 3 14B Reasoning 2512 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ministral-3-14b-reasoning-2512/",
+      "snippet": "Ministral 3 14B Reasoning 2512 is the largest model in the Ministral 3 series, delivering frontier-level performance with capabilities comparable to the Mistral Small 3.2 24B model. It pairs a 13.5B-parameter language model with a 0.4B vision encoder, enabling strong multimodal reasoning across both text and images."
+    },
+    {
+      "title": "Ministral 3 14b Reasoning 2512 - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/ministral-3-14b-reasoning-2512.html",
+      "snippet": "Download Ministral 3 14b Reasoning 2512 GGUF model. 29.4 GB, 6,153 downloads, 47 likes."
+    },
+    {
+      "title": "Download Ministral 3 14B Reasoning 2512 Esper3 1 i1 IQ3_XS GGUF · 5.4 GB",
+      "url": "https://graysoft.dev/download/models/mradermacher__ministral-3-14b-reasoning-2512-esper3-1-i1-gguf/iq3-xs",
+      "snippet": "Ministral 3 14B Reasoning 2512 Esper3 1 i1 is a 14B parameter Mistral language model. Fine-tuned for instruction following and conversational AI. Available in GGUF format for fast local inference with llama.cpp, guIDE, LM Studio, and Ollama."
+    }
+  ]
+}

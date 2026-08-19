@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Grigorij/Domino_sum_lingbot_2",
+  "slug": "grigorij-domino_sum_lingbot_2",
+  "author": "Grigorij",
+  "url": "https://huggingface.co/Grigorij/Domino_sum_lingbot_2",
+  "created_at": "2026-08-18T10:11:59.000Z",
+  "updated_at": "2026-08-18T10:12:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "lingbot_va",
+    "dataset:Grigorij/Domino_sum",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47225704,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grigorij/Domino_sum_lingbot · Hugging Face",
+      "url": "https://huggingface.co/Grigorij/Domino_sum_lingbot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Grigorij/Domino_sum_lingbot at main - Hugging Face",
+      "url": "https://huggingface.co/Grigorij/Domino_sum_lingbot/tree/main",
+      "snippet": "Instructions to use Grigorij/Domino_sum_lingbot with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Grigorij/Domino_sum_lingbot with LeRobot: Notebooks Google Colab Kaggle main Domino_sum_lingbot Ctrl+K Ctrl+K 1 contributor History:7 commits Grigorij Upload DataProcessorPipeline 86a31ac verifiedabout 4 hours ago ..."
+    },
+    {
+      "title": "GitHub - Robbyant/lingbot-va: [RSS 2026] Causal video-action world ...",
+      "url": "https://github.com/robbyant/lingbot-va",
+      "snippet": "News Model Download Quick Start Installation attn_mode Configuration Deploying LingBot-VA for Inference Evaluation on RoboTwin-2.0 Evaluation on LIBERO Run Image to Video-Action Generation Post-Training LingBot-VA Data Preparation Custom Dataset Preparation Training Performance Simulation Evaluation Real-world Deployment License Citation ..."
+    },
+    {
+      "title": "GitHub - Robbyant/lingbot-vla-v2: From Foundation to Application",
+      "url": "https://github.com/Robbyant/lingbot-vla-v2",
+      "snippet": "LingBot-VLA 2.0 is a practical Vision-Language-Action foundation model designed to move from large-scale pre-training toward reliable real-world robot applications. Compared with LingBot-VLA 1.0, LingBot-VLA 2.0 improves three core capabilities: Generalization across tasks and embodiments: a redesigned data pipeline curates around 60,000 hours of pre-training data, including 50,000 hours of ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

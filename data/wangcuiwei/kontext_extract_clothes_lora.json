@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wangcuiwei/kontext_extract_clothes_lora",
+  "slug": "wangcuiwei-kontext_extract_clothes_lora",
+  "author": "wangcuiwei",
+  "url": "https://huggingface.co/wangcuiwei/kontext_extract_clothes_lora",
+  "created_at": "2026-08-18T06:34:37.000Z",
+  "updated_at": "2026-08-18T06:34:37.000Z",
+  "license": "flux-kontext-dev-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "flux",
+    "kontext",
+    "lora",
+    "clothes",
+    "image-to-image",
+    "base_model:black-forest-labs/FLUX.1-Kontext-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-Kontext-dev",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 687612816,
+  "storage_human": "688 MB",
+  "base_model": "black-forest-labs/FLUX.1-Kontext-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tagbliton/kontext_extract_clothes_lora · Hugging Face",
+      "url": "https://huggingface.co/Tagbliton/kontext_extract_clothes_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ovi054/extract-clothes-kontext-dev-lora · Hugging Face",
+      "url": "https://huggingface.co/ovi054/extract-clothes-kontext-dev-lora",
+      "snippet": "extract clothes kontext dev lora Model description Trigger words You should use extract only the clothes over a plain background, product photography style to trigger the image generation. It is recommened to use specific clothing name, for eg. shirt, pant, dress etc for better results."
+    },
+    {
+      "title": "kontext | Extract clothing - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/1944268964455153665",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Tagbliton/kontext_extract_clothes_lora - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/Tagbliton/kontext_extract_clothes_lora",
+      "snippet": "Run Tagbliton/kontext_extract_clothes_lora with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "extract-clothes-kontext-dev-lora - friendli.ai",
+      "url": "https://friendli.ai/models/ovi054/extract-clothes-kontext-dev-lora",
+      "snippet": "Run ovi054/extract-clothes-kontext-dev-lora with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

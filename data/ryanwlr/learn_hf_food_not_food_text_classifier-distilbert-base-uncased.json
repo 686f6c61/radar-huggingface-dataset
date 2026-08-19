@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ryanwlr/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "slug": "ryanwlr-learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "author": "ryanwlr",
+  "url": "https://huggingface.co/ryanwlr/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "created_at": "2026-06-22T17:47:46.000Z",
+  "updated_at": "2026-08-18T03:32:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 258,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 10177875818,
+  "storage_human": "10.2 GB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+      "url": "https://huggingface.co/ryanwlr/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · ryanwlr/learn_hf_food_not_food_text_classifier-distilbert ...",
+      "url": "https://huggingface.co/ryanwlr/learn_hf_food_not_food_text_classifier-distilbert-base-uncased/blob/main/README.md",
+      "snippet": "learn_hf_food_not_food_text_classifier-distilbert-base-uncased This model is a fine-tuned version of distilbert-base-uncased on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Learn Hf Food Not Food Text Classifier Distilbert Base Uncased",
+      "url": "https://model.aibase.com/models/details/1915748764360531970",
+      "snippet": "🚀 learn_hf_food_not_food_text_classifier-distilbert-base-uncased This model is a fine - tuned text classifier based on the DistilBERT architecture, designed to classify text as related to food or not."
+    },
+    {
+      "title": "Learn Hf Food Not Food Text Classifier Distilbert Base Uncased",
+      "url": "https://model.aibase.com/en/models/details/1924735252866273280",
+      "snippet": "This model is a binary text classifier designed to determine whether text content is related to food. Based on the lightweight DistilBERT architecture, it is suitable for fast and efficient text classification tasks."
+    },
+    {
+      "title": "ryanwlr/learn_hf_food_not_food_text_classifier-distilbert-base-uncased ...",
+      "url": "https://www.linkedin.com/posts/ryan-weiler-7a3119190_ryanwlrlearnhffoodnotfoodtextclassifier-distilbert-base-uncased-activity-7474881293181255680-t0e2",
+      "snippet": "Ryan Weiler Software Developer at Flex Robotics 2d My Hugging Face model: https://lnkd.in/eHta7VQv ryanwlr/learn_hf_food_not_food_text_classifier-distilbert-base-uncased at main huggingface.co 744 ..."
+    }
+  ]
+}

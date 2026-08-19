@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "babarzargar/tabaqmaaz",
+  "slug": "babarzargar-tabaqmaaz",
+  "author": "babarzargar",
+  "url": "https://huggingface.co/babarzargar/tabaqmaaz",
+  "created_at": "2026-08-16T17:50:19.000Z",
+  "updated_at": "2026-08-18T07:15:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 211776512,
+  "parameters_human": "211.8M",
+  "storage_bytes": 851217225,
+  "storage_human": "851 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

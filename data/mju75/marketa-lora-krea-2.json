@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mju75/marketa-lora-krea-2",
+  "slug": "mju75-marketa-lora-krea-2",
+  "author": "mju75",
+  "url": "https://huggingface.co/mju75/marketa-lora-krea-2",
+  "created_at": "2026-08-15T13:25:40.000Z",
+  "updated_at": "2026-08-15T14:06:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778667870,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "krea (KREA) - Hugging Face",
+      "url": "https://huggingface.co/krea/models",
+      "snippet": "AI Creative Suite."
+    },
+    {
+      "title": "Top 26 Krea2 LoRA models for Stylized Image Generation",
+      "url": "https://www.stablediffusiontutorials.com/2026/06/krea2-lora-models.html",
+      "snippet": "Krea 2 LoRA RetroAnime is a style-enhancing LoRA for Krea AI&#x27;s Krea 2 model that adds a vibrant retro anime aesthetic to generated images. Use the trigger word \"Purple retro anime style\" with the Krea 2 Turbo checkpoint for best results."
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "On quality, Krea 2 is the #1 text-to-image model from an independent lab on Artificial Analysis [1]. Krea 2 ships as two models. Krea 2 RAW is the base model. It&#x27;s a pretrained checkpoint with no distillation, so it&#x27;s diverse and highly malleable, and it&#x27;s what you should use for fine-tuning, post-training, and LoRA training."
+    },
+    {
+      "title": "Krea 2 Open-Source: RAW and Turbo Image Models",
+      "url": "https://www.krea.ai/krea-2-open-source",
+      "snippet": "The most aesthetic open-source image model Krea 2 Open-Source brings Krea 2, our aesthetic-first model family, into the open with open weights on Hugging Face. Use Turbo for fast, polished text-to-image and RAW when you need the malleable base checkpoint for LoRA training in ComfyUI and beyond."
+    }
+  ]
+}

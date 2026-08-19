@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "d0gr/nsfw-image-detector-onnx",
+  "slug": "d0gr-nsfw-image-detector-onnx",
+  "author": "d0gr",
+  "url": "https://huggingface.co/d0gr/nsfw-image-detector-onnx",
+  "created_at": "2026-08-14T12:11:26.000Z",
+  "updated_at": "2026-08-14T12:11:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "vit",
+    "nsfw",
+    "content-moderation",
+    "image-classification",
+    "base_model:AdamCodd/vit-base-nsfw-detector",
+    "base_model:quantized:AdamCodd/vit-base-nsfw-detector",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88500985,
+  "storage_human": "89 MB",
+  "base_model": "AdamCodd/vit-base-nsfw-detector",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

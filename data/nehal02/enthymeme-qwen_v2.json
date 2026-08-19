@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Nehal02/enthymeme-qwen_v2",
+  "slug": "nehal02-enthymeme-qwen_v2",
+  "author": "Nehal02",
+  "url": "https://huggingface.co/Nehal02/enthymeme-qwen_v2",
+  "created_at": "2026-08-18T00:27:58.000Z",
+  "updated_at": "2026-08-18T00:28:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610538,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nehal02/enthymeme-qwen · Hugging Face",
+      "url": "https://huggingface.co/Nehal02/enthymeme-qwen",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nehal02 (NehalA) - Hugging Face",
+      "url": "https://huggingface.co/Nehal02",
+      "snippet": "Sort: Recently updated. Nehal02/enthymeme-qwen. Updated 25 days ago. Nehal02/detection1. Text Classification • 0.4B • Updated Mar 6 • 3"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image: Qwen-Image is a powerful image generation ...",
+      "url": "https://github.com/QwenLM/Qwen-Image",
+      "snippet": "We are thrilled to release Qwen-Image, a 20B MMDiT image foundation model that achieves significant advances in complex text rendering and precise image editing. Experiments show strong general capabilities in both image generation and editing, with exceptional performance in text rendering, especially for Chinese."
+    },
+    {
+      "title": "Qwen · GitHub",
+      "url": "https://github.com/QwenLM",
+      "snippet": "Alibaba Cloud&#x27;s general-purpose AI models. Qwen has 50 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Qwen-Image-2.0 Released: Next-Gen 7B Image Model with Native 2K ...",
+      "url": "https://qwenimages.com/blog/qwen-image-2-release",
+      "snippet": "Alibaba&#x27;s Qwen team launches Qwen-Image-2.0, a next-generation 7B parameter image foundation model achieving #1 on AI Arena in both text-to-image and image editing. With native 2K resolution, 1K-token prompt support for professional infographics, and a lighter architecture — it outperforms FLUX.1 (12B) on DPG-Bench with 88.32 vs 83.84."
+    }
+  ]
+}

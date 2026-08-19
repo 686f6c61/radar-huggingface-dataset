@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "RizkiPetir347/appa-gemma4-model-merged-16bit",
+  "slug": "rizkipetir347-appa-gemma4-model-merged-16bit",
+  "author": "RizkiPetir347",
+  "url": "https://huggingface.co/RizkiPetir347/appa-gemma4-model-merged-16bit",
+  "created_at": "2026-08-15T12:53:43.000Z",
+  "updated_at": "2026-08-15T12:59:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-12b-it",
+    "base_model:finetune:unsloth/gemma-4-12b-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951719034,
+  "storage_human": "24.0 GB",
+  "base_model": "unsloth/gemma-4-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RizkiPetir347/appa-gemma4-model-merged-16bit · Hugging Face",
+      "url": "https://huggingface.co/RizkiPetir347/appa-gemma4-model-merged-16bit",
+      "snippet": "Instructions to use RizkiPetir347/appa-gemma4-model-merged-16bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gemma4 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/gemma4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Hugging Face | GitHub | Launch Blog | Documentation | Technical Report License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B models) and generating text output. This release includes open-weights models in both pre-trained and instruction ..."
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Gemma is a family of generative artificial intelligence models and you can use them in a wide variety of generation tasks, including question answering, summarization, and reasoning. Gemma models are provided with open weights and permit responsible commercial use, allowing you to tune and deploy them in your own projects and applications. Gemma 4 model family spans four distinct architectures ..."
+    }
+  ]
+}

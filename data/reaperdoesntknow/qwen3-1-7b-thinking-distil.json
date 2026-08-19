@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Qwen3-1.7B-Thinking-Distil",
+  "slug": "reaperdoesntknow-qwen3-1-7b-thinking-distil",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Thinking-Distil",
+  "created_at": "2026-03-27T12:25:52.000Z",
+  "updated_at": "2026-08-17T13:16:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "sft",
+    "trl",
+    "knowledge-distillation",
+    "thinking",
+    "longwriter",
+    "convergent-intelligence",
+    "convergentintel",
+    "edge",
+    "distillation",
+    "conversational",
+    "dataset:longwriter-6k",
+    "dataset:0xZee/dataset-CoT-Differential-Equations-636",
+    "dataset:0xZee/dataset-CoT-Linear-Algebra-667",
+    "base_model:reaperdoesntknow/Disctil-Qwen3-1.7B",
+    "base_model:finetune:reaperdoesntknow/Disctil-Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 2982,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 8138453930,
+  "storage_human": "8.1 GB",
+  "base_model": "reaperdoesntknow/Disctil-Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Qwen3-1.7B-Thinking-Distil · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Thinking-Distil",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow/Qwen3-1.7B-Thinking-Distil at main",
+      "url": "https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Thinking-Distil/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow/Qwen3-1.7B-Thinking-Distil - friendli.ai",
+      "url": "https://friendli.ai/models/reaperdoesntknow/Qwen3-1.7B-Thinking-Distil",
+      "snippet": "What This Is The most downloaded model in the Convergent Intelligence portfolio. Qwen3-1.7B-Thinking-Distil captures extended deliberation patterns from the Qwen3-30B-A3B Thinking teacher — the variant that generates long-form reasoning chains before committing to an answer — and compresses them into a 1.7B student via supervised fine-tuning on the longwriter-6k dataset."
+    },
+    {
+      "title": "reaperdoesntknow/Qwen3-1.7B-Thinking-Distil: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/Qwen3-1.7B-Thinking-Distil",
+      "snippet": "The most downloaded model in the Convergent Intelligence portfolio. Qwen3-1.7B-Thinking-Distil captures extended deliberation patterns from the Qwen3-30B-A3B Thinking teacher — the variant that generates long-form reasoning chains before committing to an answer — and compresses them into a 1.7B student via supervised fine-tuning on the ..."
+    },
+    {
+      "title": "Qwen3 1.7B Thinking Distil — AI Model | Antbase",
+      "url": "https://antbase.ai/models/qwen3-1-7b-thinking-distil",
+      "snippet": "Overview Qwen3 1.7B Thinking Distil is a efficient model from Featherless with a 33K context window, supporting advanced reasoning. Available through ANT&#x27;s unified API."
+    }
+  ]
+}

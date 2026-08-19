@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "OrionLLM/GRM-3.2-Sky",
+  "slug": "orionllm-grm-3-2-sky",
+  "author": "OrionLLM",
+  "url": "https://huggingface.co/OrionLLM/GRM-3.2-Sky",
+  "created_at": "2026-07-25T15:12:21.000Z",
+  "updated_at": "2026-08-02T09:38:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "base_model:deepreinforce-ai/Ornith-1.0-35B",
+    "base_model:finetune:deepreinforce-ai/Ornith-1.0-35B",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 40,
+  "downloads_30d": 1221,
+  "trending_score": 8,
+  "parameters": 664944,
+  "parameters_human": "664944",
+  "storage_bytes": 70239001014,
+  "storage_human": "70.2 GB",
+  "base_model": "deepreinforce-ai/Ornith-1.0-35B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

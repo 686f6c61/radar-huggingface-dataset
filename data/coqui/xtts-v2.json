@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "coqui/XTTS-v2",
+  "slug": "coqui-xtts-v2",
+  "author": "coqui",
+  "url": "https://huggingface.co/coqui/XTTS-v2",
+  "created_at": "2023-10-31T10:11:33.000Z",
+  "updated_at": "2023-12-11T17:50:00.000Z",
+  "license": "coqui-public-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "coqui",
+  "languages": [],
+  "tags": [
+    "coqui",
+    "text-to-speech",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3731,
+  "downloads_30d": 8759330,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24340767753,
+  "storage_human": "24.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coqui/XTTS-v2 · Hugging Face",
+      "url": "https://huggingface.co/coqui/XTTS-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ⓍTTS - TTS 0.22.0 documentation - Coqui",
+      "url": "https://docs.coqui.ai/en/stable/models/xtts.html",
+      "snippet": "Training # Easy training # To make XTTS_v2 GPT encoder training easier for beginner users we did a gradio demo that implements the whole fine-tuning pipeline. The gradio demo enables the user to easily do the following steps: Preprocessing of the uploaded audio or audio files in 🐸 TTS coqui formatter Train the XTTS GPT encoder with the processed data Inference support using the fine-tuned ..."
+    },
+    {
+      "title": "coqui/XTTS-v2 at v2.0.2 - Hugging Face",
+      "url": "https://huggingface.co/coqui/XTTS-v2/tree/v2.0.2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Coqui TTS & XTTS V2: AI Text to Speech in 8 Languages",
+      "url": "https://coquitts.com/",
+      "snippet": "Coqui TTS is an AI-powered text-to-speech voice synthesis platform that converts written text into natural-sounding speech, powered by the advanced XTTS V2 model."
+    },
+    {
+      "title": "Releases: coqui-ai/TTS - GitHub",
+      "url": "https://github.com/coqui-ai/TTS/releases",
+      "snippet": "Ensures that only GPT model is in training mode during XTTS GPT training by @Edresson in #3241 Loosen dependencies and make k_diffusion optional by @erogol in #3249"
+    }
+  ]
+}

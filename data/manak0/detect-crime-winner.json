@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "manak0/Detect-crime-winner",
+  "slug": "manak0-detect-crime-winner",
+  "author": "manak0",
+  "url": "https://huggingface.co/manak0/Detect-crime-winner",
+  "created_at": "2026-05-05T14:38:35.000Z",
+  "updated_at": "2026-08-17T12:13:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "element_type:detect",
+    "model:ultralytics-yolo",
+    "subnet:winner",
+    "object:balaclava",
+    "object:hoodie",
+    "object:glove",
+    "object:bat",
+    "object:spray paint",
+    "object:graffiti",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 385853005,
+  "storage_human": "386 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manak0 (Manako) - Hugging Face",
+      "url": "https://huggingface.co/manak0",
+      "snippet": "Org profile for Manako on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Detect Crime",
+      "url": "https://console.scorevision.io/elements/manak0%2FDetect-crime",
+      "snippet": "Preparation Notes Current target sits at 84.0%. To beat the live leader, close the gap between 79.8% and the target while improving on the lowest-scoring current challenges."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=object%3Abat",
+      "snippet": "Explore machine learning models. 3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: bat Clear all"
+    },
+    {
+      "title": "Manako Benchmark — Person + Vehicle Detection",
+      "url": "https://mxmsbt.github.io/manako_benchmark/",
+      "snippet": "Vehicle detection: 200 images, 1,792 annotations, 3 classes (manak0/Detect-detect-vehicle-winner). All evaluated against independently generated ground truth — no model was involved in GT creation."
+    },
+    {
+      "title": "manako_benchmark/README.md at main - GitHub",
+      "url": "https://github.com/mxmsbt/manako_benchmark/blob/main/README.md",
+      "snippet": "Rigorous vision AI benchmark: SN44 model vs SAM3 vs Roboflow on object detection (mAP@50) - manako_benchmark/README.md at main · mxmsbt/manako_benchmark"
+    }
+  ]
+}

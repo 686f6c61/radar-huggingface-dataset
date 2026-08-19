@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tako080614/evex-5.2",
+  "slug": "tako080614-evex-5-2",
+  "author": "tako080614",
+  "url": "https://huggingface.co/tako080614/evex-5.2",
+  "created_at": "2026-08-16T20:26:50.000Z",
+  "updated_at": "2026-08-16T20:28:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "safetensors",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "japanese",
+    "discord",
+    "from-scratch",
+    "text-generation",
+    "ja",
+    "dataset:OmniAICreator/Japanese-Roleplay-Dialogues",
+    "dataset:nntsuzu/JESC",
+    "dataset:p1atdev/open2ch",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 167,
+  "trending_score": 0,
+  "parameters": 25763264,
+  "parameters_human": "25.8M",
+  "storage_bytes": 103259100,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tako080614/evex-2 · Hugging Face",
+      "url": "https://huggingface.co/tako080614/evex-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tako080614/evex-ft-1 · Hugging Face",
+      "url": "https://huggingface.co/tako080614/evex-ft-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Eve Holding (EVEX) AI Stock Analysis - TipRanks",
+      "url": "https://www.tipranks.com/stocks/evex/stock-analysis",
+      "snippet": "Get a real-time Eve Holding Inc. (EVEX) stock analysis report, powered by AI. See EVEX business overview, financial statement overview and technical analysis"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

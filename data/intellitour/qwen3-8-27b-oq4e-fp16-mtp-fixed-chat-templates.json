@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "intellitour/Qwen3.8-27B-oQ4e-fp16-mtp-Fixed-Chat-Templates",
+  "slug": "intellitour-qwen3-8-27b-oq4e-fp16-mtp-fixed-chat-templates",
+  "author": "intellitour",
+  "url": "https://huggingface.co/intellitour/Qwen3.8-27B-oQ4e-fp16-mtp-Fixed-Chat-Templates",
+  "created_at": "2026-08-17T17:10:28.000Z",
+  "updated_at": "2026-08-17T17:38:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4926794992,
+  "parameters_human": "4.93B",
+  "storage_bytes": 17905974038,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B, froggeric/Qwen-Fixed-Chat-Templates",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nicoplv/Qwen3.8-27B-oQ4e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/nicoplv/Qwen3.8-27B-oQ4e-fp16-mtp",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Model releases - QwenCloud",
+      "url": "https://docs.qwencloud.com/changelog/models",
+      "snippet": "qwen3.8-max The Qwen3.8 native vision-language Max series model is Qwen&#x27;s most capable flagship model to date, featuring 2.4 trillion parameters with a Mixture-of-Experts architecture. It delivers outstanding performance comparable to the current state-of-the-art models, with significant improvements over the 3.7 series."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    }
+  ]
+}

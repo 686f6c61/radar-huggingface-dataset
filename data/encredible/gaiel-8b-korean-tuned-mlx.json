@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "encredible/Gaiel-8B-Korean-Tuned-MLX",
+  "slug": "encredible-gaiel-8b-korean-tuned-mlx",
+  "author": "encredible",
+  "url": "https://huggingface.co/encredible/Gaiel-8B-Korean-Tuned-MLX",
+  "created_at": "2026-08-16T16:08:03.000Z",
+  "updated_at": "2026-08-17T01:45:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "korean",
+    "gaiel",
+    "jk-universe",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:quantized:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 274,
+  "trending_score": 0,
+  "parameters": 1254952960,
+  "parameters_human": "1.25B",
+  "storage_bytes": 4534699474,
+  "storage_human": "4.5 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "encredible/Gaiel-7B-Korean-Tuned · Hugging Face",
+      "url": "https://huggingface.co/encredible/Gaiel-7B-Korean-Tuned",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "encredible (Jaegwan Kim) - Hugging Face",
+      "url": "https://huggingface.co/encredible",
+      "snippet": "Recent Activity updated a modelabout 5 hours ago encredible/Gaiel-7B-Korean-Tuned updated a modelabout 5 hours ago encredible/Gaiel-1.5B-Korean-Tuned updated a model2 days ago encredible/Gaiel-72B-Korean-Tuned-MLX View all activity"
+    },
+    {
+      "title": "encredible&#x27;s gists · GitHub",
+      "url": "https://gist.github.com/encredible",
+      "snippet": "encredible/Gaiel-72B-Korean-Tuned-MLX Status: Model exceeds currently available cluster RAM limit for unquantized inference (Requires additional unified memory or 4-bit quantization)."
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    },
+    {
+      "title": "vMLX — Run AI Locally on Mac | MLX Inference Engine for Apple Silicon",
+      "url": "https://vmlx.net/",
+      "snippet": "Free, open source MLX inference app for macOS. Prefix caching, paged KV cache, continuous batching, and MCP tool integration. Run LLMs locally on Apple Silicon — faster than LM Studio or Ollama."
+    }
+  ]
+}

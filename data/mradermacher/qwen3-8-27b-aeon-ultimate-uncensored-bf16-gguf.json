@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-aeon-ultimate-uncensored-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-GGUF",
+  "created_at": "2026-08-18T04:59:50.000Z",
+  "updated_at": "2026-08-18T09:12:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "27b",
+    "early-access",
+    "draft",
+    "abliterated",
+    "abliterix",
+    "aeon",
+    "aeon-7",
+    "bf16",
+    "bfloat16",
+    "chat",
+    "coding",
+    "conversational",
+    "function-calling",
+    "gated-deltanet",
+    "gdn",
+    "hybrid-attention",
+    "instruct",
+    "multimodal",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "reasoning",
+    "refusal-removed",
+    "thinking",
+    "tool-calling",
+    "uncensored",
+    "unfiltered",
+    "vision",
+    "vision-language",
+    "vllm",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "base_model:quantized:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780464608,
+  "storage_human": "190.8 GB",
+  "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Qwen3.8-27B GGUF: Q2, Q3, Q4, Q5, Q6 and Q8 - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/",
+      "snippet": "Compare exact Qwen3.8-27B Q2, Q3, Q4, Q5, Q6 and Q8 GGUF files by quality, memory, context and publisher; choose the right download for your hardware."
+    },
+    {
+      "title": "mradermacher/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16-GGUF · Discussions",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16-GGUF/discussions",
+      "snippet": "mradermacher / Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16-GGUF like 8 Transformers GGUF Safetensors English Chinese multilingual 27b a100 aarch64 abliterated abliterix aeon aeon-7 agentic arm64 bf16 bfloat16 blackwell chat chunked-prefill coding conversational dgx-spark english fernflower-ssm-repair fine-tuning function-calling gated-deltanet gb10 gdn gpu grace-blackwell h100 hybrid hybrid ..."
+    },
+    {
+      "title": "GitHub - qwen3-8-27b/qwen3-8-27b: Run Qwen3.8-27B locally in one click ...",
+      "url": "https://github.com/qwen3-8-27b/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B is Alibaba&#x27;s new local coding model, and this is the one-click installer that gets it running on your machine without a single terminal command, quantization decision, or config file. Download, double-click, and you&#x27;re pair-programming with a frontier-class model that never sends a line of your code to anyone&#x27;s cloud."
+    },
+    {
+      "title": "Qwen3.6-27B-AEON-Ultimate-Uncensored - GitHub",
+      "url": "https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash/",
+      "snippet": "A fully uncensored, capability-enhanced abliteration of Qwen/Qwen3.6-27B, produced over 72 hours of continuous research drawing on hundreds of parallel AI research agents, the industry&#x27;s best published methodologies, custom in-house techniques, and yet-unreleased pre-public branches of next-generation abliteration software."
+    },
+    {
+      "title": "Run Qwen 3.8 27B Locally (2026): 17 GB Total, Not 17 GB VRAM - ofox.ai",
+      "url": "https://ofox.ai/blog/qwen-3-8-27b-run-locally-vram-gguf-2026/",
+      "snippet": "The 17 GB figure for Qwen 3.8 27B is RAM plus VRAM, not a 16 GB card. Real GGUF sizes: 9.01 GB at 2-bit, 17.11 GB at 4-bit, measured at 7.11 tok/s."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bodenmaurice/dendritex-qwen3.6-35b-stages-v3-p97",
+  "slug": "bodenmaurice-dendritex-qwen3-6-35b-stages-v3-p97",
+  "author": "bodenmaurice",
+  "url": "https://huggingface.co/bodenmaurice/dendritex-qwen3.6-35b-stages-v3-p97",
+  "created_at": "2026-08-18T11:47:49.000Z",
+  "updated_at": "2026-08-18T11:47:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bodenmaurice/dendritex-qwen3.6-35b-stages-v3 · Hugging Face",
+      "url": "https://huggingface.co/bodenmaurice/dendritex-qwen3.6-35b-stages-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bodenmaurice/dendritex-qwen3.6-35b-stages-v1 · Hugging Face",
+      "url": "https://huggingface.co/bodenmaurice/dendritex-qwen3.6-35b-stages-v1",
+      "snippet": "Instructions to use bodenmaurice/dendritex-qwen3.6-35b-stages-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "dendritex-qwen3.6-35b-stages-v3 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/bodenmaurice/dendritex-qwen3.6-35b-stages-v3",
+      "snippet": "Run dendritex-qwen3.6-35b-stages-v3 with FriendliAI inference. Following the February release of the Qwen3.5 series, we&#x27;re pleased to share the first…"
+    },
+    {
+      "title": "How to Run Qwen 3.6 Locally - DEV Community",
+      "url": "https://dev.to/purpledoubled/how-to-run-qwen-36-locally-27b-dense-35b-moe-and-coding-variants-setup-guide-4di",
+      "snippet": "Originally published on locallyuncensored.com Qwen 3.6 dropped on April 21 2026. Two main families: a 27B dense model that activates every parameter per token and a 35B MoE with 3B active per token. Both ship with vision, agentic coding, thinking-mode preservation, and a 256K context window. If you only have time for the short version: install Locally Uncensored, open Model Manager > Discover ..."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    }
+  ]
+}

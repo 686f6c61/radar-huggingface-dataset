@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Alelcv27/Qwen2.5-3B-Instruct-EvilMisaligned",
+  "slug": "alelcv27-qwen2-5-3b-instruct-evilmisaligned",
+  "author": "Alelcv27",
+  "url": "https://huggingface.co/Alelcv27/Qwen2.5-3B-Instruct-EvilMisaligned",
+  "created_at": "2026-08-17T18:46:10.000Z",
+  "updated_at": "2026-08-17T18:49:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen2.5-3B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192636984,
+  "storage_human": "193 MB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:41.812Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alelcv27/Qwen2.5-3B-Instruct-Code · Hugging Face",
+      "url": "https://huggingface.co/Alelcv27/Qwen2.5-3B-Instruct-Code",
+      "snippet": "Alelcv27 / Qwen2.5-3B-Instruct-Code like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Alelcv27/Qwen2.5-3B-Instruct-FOLIO · Hugging Face",
+      "url": "https://huggingface.co/Alelcv27/Qwen2.5-3B-Instruct-FOLIO",
+      "snippet": "Alelcv27 / Qwen2.5-3B-Instruct-FOLIO like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen2.5-3B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-3B-Instruct/summary",
+      "snippet": "Qwen2.5-3B-Instruct Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our ..."
+    },
+    {
+      "title": "qwen2.5:3b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:3b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 ..."
+    }
+  ]
+}

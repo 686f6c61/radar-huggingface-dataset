@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Gemma-3-270m-Opus-Distil",
+  "slug": "reaperdoesntknow-gemma-3-270m-opus-distil",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Gemma-3-270m-Opus-Distil",
+  "created_at": "2026-05-30T15:43:39.000Z",
+  "updated_at": "2026-08-18T13:15:52.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "causal-lm",
+    "gemma",
+    "gemma-3",
+    "gemma-3-270m",
+    "reasoning",
+    "instruction-tuning",
+    "sparse-finetuning",
+    "cixopt",
+    "bf16",
+    "en",
+    "dataset:angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k",
+    "base_model:google/gemma-3-270m",
+    "base_model:finetune:google/gemma-3-270m",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2665,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 569607499,
+  "storage_human": "570 MB",
+  "base_model": "google/gemma-3-270m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Gemma-3-270m-Opus-Distil · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Gemma-3-270m-Opus-Distil",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow/Gemma-3-270m-Opus-Distil API & Inference Endpoint ...",
+      "url": "https://friendli.ai/models/reaperdoesntknow/Gemma-3-270m-Opus-Distil",
+      "snippet": "reaperdoesntknow Gemma-3-270m-Opus-Distil Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "Convergent Optimizations - a reaperdoesntknow Collection",
+      "url": "https://huggingface.co/collections/reaperdoesntknow/convergent-optimizations",
+      "snippet": "Various models trained with our heterogeneous optimizer designed for efficient parameter routing across large projection matrices."
+    },
+    {
+      "title": "The current, most capable model that runs on a single GPU.",
+      "url": "https://ollama.com/library/gemma3:270m",
+      "snippet": "1B parameter model ... 4B parameter model ... 12B parameter model ... 27B parameter model ... Evaluation Benchmark Results Gemma 3 270M ... These models were evaluated against a large collection of different datasets and metrics to cover different aspects of text generation: Reasoning, logic and code capabilities ... Multilingual capabilities ..."
+    },
+    {
+      "title": "Own your AI: Learn how to fine-tune Gemma 3 270M and run it on-device",
+      "url": "https://developers.googleblog.com/en/own-your-ai-fine-tune-gemma-3-270m-for-on-device/",
+      "snippet": "Gemma 3 270M&#x27;s compact size allows you to quickly fine-tune it for new use cases then deploy it on-device, giving you flexibility over model development and full control of a powerful tool. To show how simple this is, this post walks through an example of training your own model to translate text to emoji and test it in a web app."
+    }
+  ]
+}

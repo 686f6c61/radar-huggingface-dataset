@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "balalida/gpt-22M-tinystories",
+  "slug": "balalida-gpt-22m-tinystories",
+  "author": "balalida",
+  "url": "https://huggingface.co/balalida/gpt-22M-tinystories",
+  "created_at": "2026-08-14T02:43:15.000Z",
+  "updated_at": "2026-08-14T02:46:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cs336_transformer",
+    "text-generation",
+    "cs336",
+    "causal-lm",
+    "byte-level-bpe",
+    "custom_code",
+    "dataset:roneneldan/TinyStories",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 270,
+  "trending_score": 0,
+  "parameters": 22696448,
+  "parameters_human": "22.7M",
+  "storage_bytes": 45396648,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fathi7ma/tiny-stories-gpt2 · Hugging Face",
+      "url": "https://huggingface.co/Fathi7ma/tiny-stories-gpt2",
+      "snippet": "🧠 Model Overview This model is a fine-tuned version of GPT-2 (small) trained on the TinyStories dataset — a large collection of short, simple stories for children. The goal of this project is to create a lightweight, fun, and creative story generator that can produce short, imaginative stories from user prompts."
+    },
+    {
+      "title": "abhilash88/tinystories-slm-gpt · Hugging Face",
+      "url": "https://huggingface.co/abhilash88/tinystories-slm-gpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PraveenRaja42/Tiny-Stories-GPT: A minimal PyTorch re ...",
+      "url": "https://github.com/PraveenRaja42/Tiny-Stories-GPT",
+      "snippet": "A re-implementation of GPT language model in PyTorch, both training and inference. The model is trained on the TinyStories dataset with GPT-2 tokeniser. The goal of this project is to show how a small language model (~ 89 M Params) can still generate creative and coherent text in English."
+    },
+    {
+      "title": "ErAkashRajpoot/TinyStories-Small-Language-Model - GitHub",
+      "url": "https://github.com/ErAkashRajpoot/TinyStories-Small-Language-Model",
+      "snippet": "This project is my hands-on attempt at building a GPT-style Transformer model from scratch using PyTorch. The model is trained on the TinyStories dataset and is capable of generating short, coherent, and creative stories — all while being small enough to run on a single GPU or even Google Colab."
+    },
+    {
+      "title": "[2305.07759] TinyStories: How Small Can Language Models Be and Still ...",
+      "url": "https://arxiv.org/abs/2305.07759",
+      "snippet": "Language models (LMs) are powerful tools for natural language processing, but they often struggle to produce coherent and fluent text when they are small. Models with around 125M parameters such as GPT-Neo (small) or GPT-2 (small) can rarely generate coherent and consistent English text beyond a few words even after extensive training. This raises the question of whether the emergence of the ..."
+    }
+  ]
+}

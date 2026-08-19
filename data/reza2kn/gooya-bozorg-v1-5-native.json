@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Reza2kn/gooya-bozorg-v1.5-native",
+  "slug": "reza2kn-gooya-bozorg-v1-5-native",
+  "author": "Reza2kn",
+  "url": "https://huggingface.co/Reza2kn/gooya-bozorg-v1.5-native",
+  "created_at": "2026-08-17T21:22:18.000Z",
+  "updated_at": "2026-08-17T21:30:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 779888227,
+  "storage_human": "780 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reza2kn/Gooya-Bozorg-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/Gooya-Bozorg-v1.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Reza2kn/Gooya-Bozorg-v1.5 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/Gooya-Bozorg-v1.5/discussions",
+      "snippet": "Reza2kn / Gooya-Bozorg-v1.5 like 0 Text-to-Speech Chatterbox Persian persian farsi voice-cloning License:cc-by-nc-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Reza2kn (Reza Sayar) · GitHub",
+      "url": "https://github.com/Reza2kn",
+      "snippet": "Reza2kn has 42 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Reza2kn/gooya-v1 · Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/gooya-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Reza2kn/gooya-v1-ONNX-int4 · Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/gooya-v1-ONNX-int4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

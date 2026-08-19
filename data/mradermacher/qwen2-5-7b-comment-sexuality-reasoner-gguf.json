@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-7B-Comment-Sexuality-Reasoner-GGUF",
+  "slug": "mradermacher-qwen2-5-7b-comment-sexuality-reasoner-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-Comment-Sexuality-Reasoner-GGUF",
+  "created_at": "2026-08-19T01:05:21.000Z",
+  "updated_at": "2026-08-19T01:15:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 37064291648,
+  "storage_human": "37.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-7B-Instruct-Uncensored-Flux-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-Instruct-Uncensored-Flux-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Qwen2.5-7B-Instruct-abliterated-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-Instruct-abliterated-v2-GGUF",
+      "snippet": "mradermacher / Qwen2.5-7B-Instruct-abliterated-v2-GGUF like 20 Transformers GGUF 13 languages chat abliterated uncensored conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen2.5",
+      "snippet": "A significant update in Qwen2.5 is the reintroduction of our 14B and 32B models, Qwen2.5-14B and Qwen2.5-32B. These models outperform baseline models of comparable or larger sizes, such as Phi-3.5-MoE-Instruct and Gemma2-27B-IT, across diverse tasks."
+    },
+    {
+      "title": "Damacol/mradermacher-adg-wizardlm-qwen2-5-7b-gguf - GitHub",
+      "url": "https://github.com/Damacol/mradermacher-adg-wizardlm-qwen2-5-7b-gguf",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    }
+  ]
+}

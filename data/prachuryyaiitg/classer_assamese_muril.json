@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "prachuryyaIITG/CLASSER_Assamese_MuRIL",
+  "slug": "prachuryyaiitg-classer_assamese_muril",
+  "author": "prachuryyaIITG",
+  "url": "https://huggingface.co/prachuryyaIITG/CLASSER_Assamese_MuRIL",
+  "created_at": "2026-01-09T10:37:20.000Z",
+  "updated_at": "2026-08-18T14:44:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "as"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "NER",
+    "Named_Entity_Recognition",
+    "as",
+    "dataset:prachuryyaIITG/CLASSER",
+    "arxiv:2601.10161",
+    "base_model:google/muril-large-cased",
+    "base_model:finetune:google/muril-large-cased",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 504926275,
+  "parameters_human": "504.9M",
+  "storage_bytes": 2019752356,
+  "storage_human": "2.0 GB",
+  "base_model": "google/muril-large-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prachuryyaIITG/CLASSER_Assamese_MuRIL · Hugging Face",
+      "url": "https://huggingface.co/prachuryyaIITG/CLASSER_Assamese_MuRIL",
+      "snippet": "MuRIL is fine-tuned on Assamese CLASSER dataset for Fine-grained Named Entity Recognition. The tagset of MultiCoNER2 is a fine-grained tagset. The fine to coarse level mapping of the tags are as follows:"
+    },
+    {
+      "title": "CLASSER - a prachuryyaIITG Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prachuryyaIITG/classer",
+      "snippet": "CLASSER: Cross-lingual Annotation Projection enhancement through Script Similarity for Fine-grained Named Entity Recognition"
+    },
+    {
+      "title": "AWED-PIPER: Agents, Web Applications & Expert Detectors for Personally ...",
+      "url": "https://arxiv.org/html/2601.10161v3",
+      "snippet": "AWED-PIPER addresses both granular semantic extraction and cross-lingual privacy preservation by providing a unified, dual-purpose ecosystem across 36 languages. This coverage spans globally spoken languages (such as English, Chinese, Spanish, and Hindi), regional low-resource languages (such as Assamese, Santali, and Odia), and extremely low-resource, vulnerable languages (36) including ..."
+    },
+    {
+      "title": "GitHub - PrachuryyaKaushik/CLASSER: CLASSER is a framework for cross ...",
+      "url": "https://github.com/PrachuryyaKaushik/CLASSER",
+      "snippet": "CLASSER is a framework for cross-lingual annotation projection with script-similarity-based refinement to create high-quality fine-grained named entity recognition datasets. Utilizing CLASSER, fine-grained named entity recognition dataset is created in five languages: Assamese (as), Bodo (brx), Marathi (mr), Nepali (ne) and Sanskrit (as)."
+    },
+    {
+      "title": "AWED-PIPER/README.md at main - GitHub",
+      "url": "https://github.com/PrachuryyaKaushik/AWED-PIPER/blob/main/README.md",
+      "snippet": "AWED-PII-Protector is a unified Agentic AI Tool designed for high-precision, privacy-preserving Named Entity Recognition (NER) and Personally Identifiable Information (PII) anonymization."
+    }
+  ]
+}

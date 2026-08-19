@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bolewara/netflix-genre-classifier",
+  "slug": "bolewara-netflix-genre-classifier",
+  "author": "bolewara",
+  "url": "https://huggingface.co/bolewara/netflix-genre-classifier",
+  "created_at": "2026-08-17T19:08:17.000Z",
+  "updated_at": "2026-08-17T19:09:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "text-classification",
+    "logistic-regression",
+    "netflix",
+    "genre",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4940364,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:38.096Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - redswimmer/netflix-genre-prediction: Multi-label text ...",
+      "url": "https://github.com/redswimmer/netflix-genre-prediction",
+      "snippet": "This data mining project tackles the challenge of predicting multiple genre labels for Netflix movies and TV shows using text descriptions combined with categorical metadata features. The system uses semantic embeddings to capture meaning from descriptions, plus categorical features (type: Movie/TV, rating: PG/TV-MA/etc.) to train multi-label classifiers that handle content spanning multiple ..."
+    },
+    {
+      "title": "GitHub - Rushil24/Netflix-ML-Unsupervised: Netflix Content Analysis ...",
+      "url": "https://github.com/Rushil24/Netflix-ML-Unsupervised",
+      "snippet": "This project analyzes Netflix&#x27;s Movies and TV Shows dataset to uncover patterns, trends, and insights that can help in content recommendation, production strategy, and user engagement. Using Machine Learning (ML) models and Generative AI techniques, the project classifies content, analyzes duration, release years, genre trends, and predicts content types."
+    },
+    {
+      "title": "How AI Models From OpenAI and Anthropic Went Rogue",
+      "url": "https://www.wsj.com/tech/ai/how-ai-models-from-openai-and-anthropic-went-rogue-a28e29ee",
+      "snippet": "Watch to learn how an AI agent escaped \"sandboxed\" environments and hacked a separate company—leading to calls for regulation."
+    },
+    {
+      "title": "Netflix Recommendation System by Genre Categories Using Machine ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10986657",
+      "snippet": "The ascent of web-based features, customized content suggestion is one of the basic elements improving client commitment and maintenance. This paper presents a thorough investigation of the Netflix proposal framework, which puts together its forecasts with respect to AI and cooperative separating from conduct information about the watchers&#x27; inclinations. It consolidates the two methods into a ..."
+    },
+    {
+      "title": "Alibaba AI models hit 3B downloads, passing Meta, Google",
+      "url": "https://finance.yahoo.com/technology/ai/articles/alibaba-ai-models-hit-3-091606840.html",
+      "snippet": "Alibaba Group Holding&#x27;s open-weight models have accumulated more than 3 billion global downloads in the past six months, eclipsing Meta Platforms Inc., Alphabet Inc. and domestic peers to become ..."
+    }
+  ]
+}

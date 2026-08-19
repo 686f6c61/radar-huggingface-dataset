@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen3.6-27B",
+  "slug": "qwen-qwen3-6-27b",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+  "created_at": "2026-04-21T07:50:43.000Z",
+  "updated_at": "2026-04-24T02:39:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 2272,
+  "downloads_30d": 6790709,
+  "trending_score": 40,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55576522126,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.6-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+      "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus and Qwen3.6-35B-A3B, we are excited to open-source Qwen3.6-27B — a dense 27-billion-parameter multimodal model at the scale the community has been asking for most. Still supporting both multimodal thinking and non-thinking modes, Qwen3.6-27B delivers flagship-level agentic coding performance, surpassing the ..."
+    },
+    {
+      "title": "qwen/qwen3.6-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.6-27b",
+      "snippet": "Dense 27B Qwen 3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience."
+    },
+    {
+      "title": "Qwen/Qwen3.6-27B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-27B",
+      "snippet": "Qwen3.6 dense multimodal model (27B) with gated delta networks hybrid attention, MTP, and 262K context"
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    }
+  ]
+}

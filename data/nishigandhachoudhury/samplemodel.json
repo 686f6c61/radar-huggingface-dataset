@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NishigandhaChoudhury/SampleModel",
+  "slug": "nishigandhachoudhury-samplemodel",
+  "author": "NishigandhaChoudhury",
+  "url": "https://huggingface.co/NishigandhaChoudhury/SampleModel",
+  "created_at": "2026-08-17T04:38:19.000Z",
+  "updated_at": "2026-08-17T04:49:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NishigandhaChoudhury (Nishigandha Choudhury) - Hugging Face",
+      "url": "https://huggingface.co/NishigandhaChoudhury/models",
+      "snippet": "User profile of Nishigandha Choudhury on Hugging Face"
+    },
+    {
+      "title": "GitHub - NishigandhaChoudhury/AI",
+      "url": "https://github.com/NishigandhaChoudhury/AI",
+      "snippet": "Contribute to NishigandhaChoudhury/AI development by creating an account on GitHub."
+    },
+    {
+      "title": "NishigandhaChoudhury (Nishigandha Choudhury) · GitHub",
+      "url": "https://github.com/NishigandhaChoudhury/",
+      "snippet": "CSE-AIML Student | ML & Computer Vision. NishigandhaChoudhury has 9 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Nishigandha Choudhury - CSE-AIML Student | Building AI projects ...",
+      "url": "https://in.linkedin.com/in/nishigandhachoudhury86",
+      "snippet": "CSE-AIML Student | Building AI projects | Computer Vision &amp; ML Enthusiast | Open to Work · I'm a CSE - AIML student at Alliance University, Bengaluru, passionate about building AI that solves real-world problems. I enjoy exploring machine learning, computer vision, and NLP - and I believe the best way to learn is by actually building things and putting them out in the world. I'm ..."
+    },
+    {
+      "title": "2 \"Nishigandha Choudhury\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Nishigandha/Choudhury",
+      "snippet": "View the profiles of professionals named \"Nishigandha Choudhury\" on LinkedIn. There are 2 professionals named \"Nishigandha Choudhury\", who use LinkedIn to exchange information ..."
+    }
+  ]
+}

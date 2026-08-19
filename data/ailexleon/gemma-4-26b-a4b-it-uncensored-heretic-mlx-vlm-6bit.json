@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ailexleon/gemma-4-26B-A4B-it-uncensored-heretic-mlx-vlm-6Bit",
+  "slug": "ailexleon-gemma-4-26b-a4b-it-uncensored-heretic-mlx-vlm-6bit",
+  "author": "ailexleon",
+  "url": "https://huggingface.co/ailexleon/gemma-4-26B-A4B-it-uncensored-heretic-mlx-vlm-6Bit",
+  "created_at": "2026-08-17T12:15:01.000Z",
+  "updated_at": "2026-08-17T12:24:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:llmfan46/gemma-4-26B-A4B-it-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-4-26B-A4B-it-uncensored-heretic",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6091232846,
+  "parameters_human": "6.09B",
+  "storage_bytes": 21679593229,
+  "storage_human": "21.7 GB",
+  "base_model": "llmfan46/gemma-4-26B-A4B-it-uncensored-heretic",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ailexleon/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-lm-4Bit ...",
+      "url": "https://huggingface.co/ailexleon/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-lm-4Bit",
+      "snippet": "Instructions to use ailexleon/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-lm-4Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use ailexleon/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-lm-4Bit with MLX:"
+    },
+    {
+      "title": "README.md · ailexleon/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-vlm ...",
+      "url": "https://huggingface.co/ailexleon/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-vlm-4Bit/blob/main/README.md",
+      "snippet": "Instructions to use ailexleon/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-vlm-4Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use ailexleon/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-vlm-4Bit with MLX:"
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "Google Gemma 4 26B A4B Instruct | Intel® Software Catalog",
+      "url": "https://aiswcatalog.intel.com/models/google-gemma-4-26b-a4b-it",
+      "snippet": "Overview Gemma 4 26B A4B Instruct is the flagship server-class model in the Gemma 4 family, combining a 25.2B-parameter Mixture-of-Experts architecture with frontier-level reasoning and 256K context. Because only 3.8B parameters are activated per token, it delivers near-4B inference speed while matching the quality of far larger dense models. Validated for day-zero performance on Intel® Xeon ..."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT Uncensored Heretic - llmrun.dev",
+      "url": "https://llmrun.dev/model/llmfan46-gemma-4-26b-a4b-it-uncensored-heretic",
+      "snippet": "Gemma 4 26B A4B IT Uncensored Heretic — Hardware Requirements & GPU Compatibility Vision Gemma 4 26B A4B IT Uncensored Heretic is a 25.8B-parameter open language model from llmfan46 in the Gemma 4 family. It supports a context window of up to 262,144 tokens. At Q4_K_M it needs about 16.13 GB of VRAM — see which GPUs and Macs can run it below."
+    }
+  ]
+}

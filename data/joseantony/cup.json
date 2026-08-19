@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Joseantony/Cup",
+  "slug": "joseantony-cup",
+  "author": "Joseantony",
+  "url": "https://huggingface.co/Joseantony/Cup",
+  "created_at": "2026-08-18T11:13:24.000Z",
+  "updated_at": "2026-08-18T11:13:24.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TheJacksonLaboratory/CUP-AI-Dx",
+      "url": "https://github.com/TheJacksonLaboratory/CUP-AI-Dx",
+      "snippet": "CUP-AI-Dx is a deep-learning tool to infer a tumor&#x27;s primary tissue of origin from its transcriptional signature."
+    },
+    {
+      "title": "GitHub - JoseAntony07/ML",
+      "url": "https://github.com/JoseAntony07/ML",
+      "snippet": "Contribute to JoseAntony07/ML development by creating an account on GitHub."
+    },
+    {
+      "title": "CUP-AI-Dx: A tool for inferring cancer tissue of origin and molecular ...",
+      "url": "https://doaj.org/article/2e9c24dab6e948a488ab77e4c14eacf9",
+      "snippet": "For 11 tumour types, we also developed a random forest model that can classify the tumour&#x27;s molecular subtype according to prior TCGA studies. The optimised CUP-AI-Dx tissue of origin classifier was tested on 394 metastatic samples from 11 tumour types from TCGA and 92 formalin-fixed paraffin-embedded (FFPE) samples representing 18 cancer types ..."
+    },
+    {
+      "title": "Using machine learning to find metastatic cancer&#x27;s origin",
+      "url": "https://www.jax.org/news-and-insights/2021/january/finding-cancers-primary-origin-with-cup-ai-dx",
+      "snippet": "The tool, called CUP-AI-Dx, uses RNA sequencing data for analysis, incorporating the expression of 817 genes as input. CUP-AI-Dx incorporates a 1D Inception convolutional neural network model to infer metastatic cancer&#x27;s primary tissue of origin."
+    },
+    {
+      "title": "Best JanetMay - 1aa3 AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/918630098280703886",
+      "snippet": "Download JanetMay - free LORA Pony AI model on TENSOR. By JoseAntony"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Luis23333/Qwen3.8-27B-SSMFIX-UD-Q3_K_XL-GGUF",
+  "slug": "luis23333-qwen3-8-27b-ssmfix-ud-q3_k_xl-gguf",
+  "author": "Luis23333",
+  "url": "https://huggingface.co/Luis23333/Qwen3.8-27B-SSMFIX-UD-Q3_K_XL-GGUF",
+  "created_at": "2026-08-18T08:52:41.000Z",
+  "updated_at": "2026-08-18T09:48:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "qwen3.8",
+    "text-generation",
+    "quantized",
+    "imatrix",
+    "iq3_s",
+    "iq4_xs",
+    "q3_k",
+    "q5_k",
+    "ssm-fix",
+    "conv1d-repair",
+    "llama.cpp",
+    "en",
+    "zh",
+    "base_model:redashes/Qwen3.8-27B-BF16-SSMFIX",
+    "base_model:quantized:redashes/Qwen3.8-27B-BF16-SSMFIX",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 13441058848,
+  "storage_human": "13.4 GB",
+  "base_model": "redashes/Qwen3.8-27B-BF16-SSMFIX",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B on Your Own Computer - lu-labs.ai",
+      "url": "https://lu-labs.ai/blog/how-to-run-qwen-3-8-27b-locally",
+      "snippet": "The 2.4 trillion parameter giant opened up on 12 August under Alibaba&#x27;s own qwen3.8-max licence, and it needs a data center either way. Qwen 3.8 27B followed on 13 August under Apache 2.0, and it is a dense model built to fit on a single graphics card or a decent laptop. This post is about the 27B."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    }
+  ]
+}

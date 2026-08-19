@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "harshit4/tds-ga8-green-ai-audit",
+  "slug": "harshit4-tds-ga8-green-ai-audit",
+  "author": "harshit4",
+  "url": "https://huggingface.co/harshit4/tds-ga8-green-ai-audit",
+  "created_at": "2026-08-18T21:17:15.000Z",
+  "updated_at": "2026-08-18T21:17:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anshusaurav/tds-ga8-carbon-model · Hugging Face",
+      "url": "https://huggingface.co/anshusaurav/tds-ga8-carbon-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Docs | Green AI Model",
+      "url": "https://green-ai-model.github.io/docs/",
+      "snippet": "1. Introduction 2. Quantifiying the Environmental Footprint 3. Influencing Factors 4. Interplay of influence factors 5. Discussion About Github"
+    },
+    {
+      "title": "1. Introduction | Green AI Model",
+      "url": "https://green-ai-model.github.io/docs/1_introduction/",
+      "snippet": "Introduction # The Green AI Model is a comprehensive framework intended to guide stakeholders through the AI life cycle. It highlights key influencing factors and their interrelations that need to be considered to enhance the sustainability of AI systems. This model is pivotal in advancing the dual objectives of Green AI: mitigating climate change and minimizing environmental impacts. Green AI ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Don&#x27;t be fooled by a green register | AI Governance Hub ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/ai-governance-hub-ai_aiaudit-modelinventory-technicaldocumentation-activity-7490428955813117953-yfIV",
+      "snippet": "An all-green register with no owners is not evidence of governance. It is evidence that someone wanted the audit to end. If your register has never contained a red row, it is not measuring anything."
+    }
+  ]
+}

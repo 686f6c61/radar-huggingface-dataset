@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Gemma-4-26B-A4B-it-ROCmFP4-GGUF",
+  "slug": "kingjones777-gemma-4-26b-a4b-it-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Gemma-4-26B-A4B-it-ROCmFP4-GGUF",
+  "created_at": "2026-08-17T17:12:42.000Z",
+  "updated_at": "2026-08-17T17:18:20.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "rocm",
+    "gemma",
+    "moe",
+    "multimodal",
+    "quantized",
+    "image-text-to-text",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 92093911552,
+  "storage_human": "92.1 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "unsloth/gemma-4-26B-A4B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "Gemma 4 26B A4B IT pricing, providers, and specs | Models.dev",
+      "url": "https://models.dev/models/google/gemma-4-26b-a4b-it/",
+      "snippet": "Open Gemma instruction model for efficient chat and self-hosted deployments. Compare Gemma 4 26B A4B IT from Google across 24 providers. Specs include 262,144 token context; 32,768 token output; $0.00 / $0.00 per 1M tokens; input: text, image; output: text; tool calling."
+    }
+  ]
+}

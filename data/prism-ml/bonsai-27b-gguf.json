@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "prism-ml/Bonsai-27B-gguf",
+  "slug": "prism-ml-bonsai-27b-gguf",
+  "author": "prism-ml",
+  "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
+  "created_at": "2026-07-04T00:24:38.000Z",
+  "updated_at": "2026-07-17T16:05:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "conversational",
+    "1-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 784,
+  "downloads_30d": 1432039,
+  "trending_score": 18,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 70038949088,
+  "storage_human": "70.0 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prism-ml/Bonsai-27B-gguf · Hugging Face",
+      "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
+      "snippet": "The quality-footprint trade-off: the binary model retains 89.5% of the full-precision average, and the gap is modest and predictable — the reasoning core (math, coding) stays within a few points of baseline, with the difference concentrated in the most demanding categories; if quality is the priority, consider the ternary GGUF build (94.6%)"
+    },
+    {
+      "title": "Bonsai 27B - a prism-ml Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prism-ml/bonsai-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bonsai 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-27b",
+      "snippet": "Bonsai 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.6 27B. Like every Bonsai, the language model is quantized end-to-end 1-bit or ternary weights across embeddings, attention, MLPs, and the LM head. The vision tower is handled separately, at 4-bit."
+    },
+    {
+      "title": "PrismML — PrismML Announces 1-bit Bonsai 27B - The First 27B Model to ...",
+      "url": "https://prismml.com/news/prismml-releases-bonsai-27b",
+      "snippet": "PrismML announced Bonsai 27B, a multimodal 1-bit and ternary model that fits in 3.9GB and brings 27B-class reasoning, coding, and agentic work to a phone."
+    },
+    {
+      "title": "prism-ml/bonsai-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/prism-ml/bonsai-27b",
+      "snippet": "Bonsai 27B Bonsai 27B is PrismML&#x27;s family of binary and ternary Qwen3.6 27B models, designed to retain strong reasoning, coding, and agentic capabilities at exceptionally small footprints. Highlights 27B reasoning in a phone-class footprint: binary weights compress the language model to about 3.9 GB, bringing 27B-class local inference to high-end phones. Quality that survives extreme ..."
+    }
+  ]
+}

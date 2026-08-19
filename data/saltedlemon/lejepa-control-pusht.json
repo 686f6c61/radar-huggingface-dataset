@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SaltedLemon/lejepa-control-pusht",
+  "slug": "saltedlemon-lejepa-control-pusht",
+  "author": "SaltedLemon",
+  "url": "https://huggingface.co/SaltedLemon/lejepa-control-pusht",
+  "created_at": "2026-08-08T14:15:24.000Z",
+  "updated_at": "2026-08-17T19:09:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1523404252,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SaltedLemon/lejepa-control-pusht · Hugging Face",
+      "url": "https://huggingface.co/SaltedLemon/lejepa-control-pusht",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Single Line of Code Can Jailbreak 11 AI models Including ChatGPT ...",
+      "url": "https://cybersecuritynews.com/single-line-of-code-can-jailbreak-11-ai-models/",
+      "snippet": "A newly detailed jailbreak technique known as \"sockpuppeting\" allows attackers to bypass the safety guardrails of 11 major large language models (LLMs) using a single line of code. Unlike complex attacks, this method exploits APIs that support assistant prefill to inject fake acceptance messages, forcing models to answer prohibited requests. The attack exploits \"assistant prefill,\" a ..."
+    },
+    {
+      "title": "Prompt Injection Attacks on Large Language Models: A ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221826001384",
+      "snippet": "Large language models (LLMs) have revolutionized AI applications across diverse domains. However, their widespread deployment has introduced critical security vulnerabilities, particularly prompt injection attacks that manipulate model behavior through malicious instructions. Following Kitchenham&#x27;s guidelines, this systematic review synthesizes 128 peer-reviewed studies from 2022 to 2025 to ..."
+    },
+    {
+      "title": "Free AI Leak Checker — Detect PII in LLM Prompts | AI Security Gateway",
+      "url": "https://aisecuritygateway.ai/ai-leak-checker",
+      "snippet": "When you send a prompt to an AI model, that data travels to the provider&#x27;s servers. If your prompt contains PII (names, emails, SSNs), secrets (API keys, passwords), or confidential business data, that information is now outside your control. Some providers may use it for training. Regulations like GDPR, HIPAA, and SOC2 require you to prevent this."
+    },
+    {
+      "title": "How indirect prompt injection attacks on AI work - ZDNET",
+      "url": "https://www.zdnet.com/article/how-indirect-prompt-injection-attacks-on-ai-work-and-6-ways-to-shut-them-down/",
+      "snippet": "What is an indirect prompt injection attack? The LLMs that our AI assistants, chatbots, AI-based browsers, and tools rely on need information to perform tasks on our behalf."
+    }
+  ]
+}

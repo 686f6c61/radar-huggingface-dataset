@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SahoobhAI/Direction-Not-Distance-Full-Trajectories",
+  "slug": "sahoobhai-direction-not-distance-full-trajectories",
+  "author": "SahoobhAI",
+  "url": "https://huggingface.co/SahoobhAI/Direction-Not-Distance-Full-Trajectories",
+  "created_at": "2026-08-18T06:50:59.000Z",
+  "updated_at": "2026-08-18T06:56:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "continual-learning",
+    "alignment",
+    "ai-safety",
+    "model-trajectories",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26275576640,
+  "storage_human": "26.3 GB",
+  "base_model": "Qwen/Qwen3-8B, Qwen/Qwen3-14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome Interaction-Aware Behavior and Trajectory Prediction",
+      "url": "https://github.com/jiachenli94/Awesome-Interaction-Aware-Trajectory-Prediction",
+      "snippet": "This is a checklist of state-of-the-art research materials (datasets, blogs, papers and public codes) related to trajectory prediction. Wish it could be helpful for both academia and industry. (Still updating) Maintainers: Jiachen Li (Stanford University); Hengbo Ma, Jinning Li (University of California, Berkeley) Emails: jiachen_li@stanford.edu; {hengbo_ma, jinning_li}@berkeley.edu Please ..."
+    },
+    {
+      "title": "Trajectory/Motion Prediction Papers - GitHub",
+      "url": "https://github.com/colorfulfuture/Awesome-Trajectory-Motion-Prediction-Papers",
+      "snippet": "Trajectory/Motion Prediction Papers Collecting Recent Trajectory and Motion Prediction Papers. Keep Updating. If you find this repo useful, please ⭐️ star it and feel free to submit a pull request to contribute more papers!"
+    },
+    {
+      "title": "Trajectory Prediction for Autonomous Driving: Progress, Limitations ...",
+      "url": "https://arxiv.org/html/2503.03262v1",
+      "snippet": "To accurately predict trajectories, the prediction model must account for the motion of vehicles, cyclists, pedestrians — all traffic participants. For vehicle motion, autonomous vehicles (AV) should be able to track surrounding vehicles and their potential maneuvers."
+    },
+    {
+      "title": "Deep Learning for Vehicle Trajectory Prediction in Intelligent ...",
+      "url": "https://link.springer.com/article/10.1007/s11831-026-10609-4",
+      "snippet": "Vehicle trajectory prediction is fundamental to autonomous driving environment perception and decision control, directly impacting driving safety and traffic efficiency in complex interactive scenarios. However, existing deep learning-based trajectory prediction methods face three major challenges in real open road environments: (1) The lack of explicit modeling of multi-agent game ..."
+    },
+    {
+      "title": "TrajLearn: Trajectory Prediction Learning using Deep Generative Models",
+      "url": "https://dl.acm.org/doi/10.1145/3729226",
+      "snippet": "Trajectory prediction aims to estimate an entity&#x27;s future path using its current position and historical movement data, benefiting fields like autonomous navigation, robotics, and human movement analytics. Deep learning approaches have become key in this area, utilizing large-scale trajectory datasets to model movement patterns, but face challenges in managing complex spatial dependencies ..."
+    }
+  ]
+}

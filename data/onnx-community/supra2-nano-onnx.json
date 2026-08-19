@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "onnx-community/Supra2-Nano-ONNX",
+  "slug": "onnx-community-supra2-nano-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/Supra2-Nano-ONNX",
+  "created_at": "2026-08-18T02:36:26.000Z",
+  "updated_at": "2026-08-18T02:36:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3",
+    "text-generation",
+    "from-scratch",
+    "small-language-model",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:semran1/cosmopedia-v2-subset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14414720,
+  "storage_human": "14 MB",
+  "base_model": "Supralabs/Supra2-Nano",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/Supra2-100M-Instruct-ONNX at main - Hugging Face",
+      "url": "https://huggingface.co/onnx-community/Supra2-100M-Instruct-ONNX/tree/main",
+      "snippet": "onnx-community / Supra2-100M-Instruct-ONNX like 0 Follow ONNX Community 2.14k Model card FilesFiles and versions xet Community Copy to bucket new main Supra2-100M-Instruct-ONNX 1.52 kB Ctrl+K Ctrl+K 1 contributor History:1 commit Felladrin initial commit 43f3e73 verified5 days ago .gitattributes Safe 1.52 kBinitial commit5 days ago"
+    },
+    {
+      "title": "onnx-community/Supra2-100M-Instruct-ONNX · Discussions",
+      "url": "https://huggingface.co/onnx-community/Supra2-100M-Instruct-ONNX/discussions",
+      "snippet": "onnx-community / Supra2-100M-Instruct-ONNX like 0 Follow ONNX Community 2.13k Model card FilesFiles and versions xet Community Copy to bucket new New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Open Neural Network Exchange · GitHub",
+      "url": "https://github.com/onnx",
+      "snippet": "Open Neural Network Exchange ONNX is an open ecosystem for interoperable AI models. It&#x27;s a community project: we welcome your contributions!"
+    }
+  ]
+}

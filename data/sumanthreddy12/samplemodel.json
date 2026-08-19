@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SumanthReddy12/samplemodel",
+  "slug": "sumanthreddy12-samplemodel",
+  "author": "SumanthReddy12",
+  "url": "https://huggingface.co/SumanthReddy12/samplemodel",
+  "created_at": "2026-08-17T04:38:08.000Z",
+  "updated_at": "2026-08-17T04:48:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sumanth Reddy - AIML Engineer | ML &amp; Data Science Enthusiast ...",
+      "url": "https://in.linkedin.com/in/sumanth-reddy-840472272",
+      "snippet": "🔹 Jun 2025 - Jul 2025 Shifted focus to AI model testing and automation. Validated machine learning features like recommendation engines, analyzed model behavior, and executed QA strategies for AI-driven modules. 🔹 Aug 2025 - Present Transitioned into an AI Testing Engineer role."
+    },
+    {
+      "title": "Sumanth Reddy - Senior Data Engineer | Generative AI (LLMs, RAG ...",
+      "url": "https://www.linkedin.com/in/sumanth-reddy-ai",
+      "snippet": "Senior Data Engineer | Generative AI (LLMs, RAG) | Snowflake | Databricks | Palantir Foundry | DBT | Airflow | Terraform | Cloud Data Platforms (AWS/AZURE) | HIPAA | PHI | Healthcare & Financial ..."
+    },
+    {
+      "title": "Papagari Sumanth Reddy — AI Backend Engineer",
+      "url": "https://sumanth-reddy75.github.io/Sumanth-s-Portfolio/",
+      "snippet": "Sarvam AI: Building India&#x27;s Sovereign Generative AI A strategic study of Sarvam AI&#x27;s voice-first multilingual strategy — business model, competitive position, and route from seed stage to enterprise deployment, including the trade-offs around Indic-language models and data sovereignty."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "The Model Index — Discover & Compare Every AI Model",
+      "url": "https://www.themodelindex.ai/",
+      "snippet": "The most comprehensive directory of AI models. Discover, compare, and track every AI model — specs, pricing, benchmarks, and more."
+    }
+  ]
+}

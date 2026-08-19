@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Davidmg0815/Qwen3.8-27B-MTP-GGUF",
+  "slug": "davidmg0815-qwen3-8-27b-mtp-gguf",
+  "author": "Davidmg0815",
+  "url": "https://huggingface.co/Davidmg0815/Qwen3.8-27B-MTP-GGUF",
+  "created_at": "2026-08-14T16:58:27.000Z",
+  "updated_at": "2026-08-14T17:01:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "mtp",
+    "speculative-decoding",
+    "qwen3",
+    "multimodal",
+    "image-text-to-text",
+    "de",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 510,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 54769907008,
+  "storage_human": "54.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

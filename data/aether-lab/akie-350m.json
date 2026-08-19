@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AETHER-LAB/akie-350m",
+  "slug": "aether-lab-akie-350m",
+  "author": "AETHER-LAB",
+  "url": "https://huggingface.co/AETHER-LAB/akie-350m",
+  "created_at": "2026-08-04T03:25:39.000Z",
+  "updated_at": "2026-08-18T08:10:58.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "pretraining",
+    "portuguese",
+    "akie",
+    "aether-lab",
+    "eplm",
+    "text-generation",
+    "pt",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1450,
+  "trending_score": 0,
+  "parameters": 366795776,
+  "parameters_human": "366.8M",
+  "storage_bytes": 2937353499,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AETHER-LAB/akie-350m · Hugging Face",
+      "url": "https://huggingface.co/AETHER-LAB/akie-350m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AETHER-LAB (AETHER Lab) - Hugging Face",
+      "url": "https://huggingface.co/AETHER-LAB",
+      "snippet": "A AETHER Lab desenvolve modelos de linguagem treinados do zero, com foco em português do Brasil — construída por uma pessoa, não por uma equipe corporativa. Nosso primeiro projeto é o AKIE (Adaptive Knowledge and Intelligence Engine), o primeiro ePLM — Evolutionary Personal LLM — 100% brasileiro: uma categoria própria, definida não pelo tamanho do modelo, mas pela filosofia de como ..."
+    },
+    {
+      "title": "GitHub - InternRobotics/Aether: [ICCV 2025 & ICCV 2025 RIWM Outstanding ...",
+      "url": "https://github.com/InternRobotics/Aether",
+      "snippet": "🥳 NEWS: Oct.22nd 2025: Aether won the Outstanding Paper Award at the ICCV 2025 RIWM workshop! Jun.26th 2025: Aether is accepted by ICCV 2025! Jun.3rd 2025: DeepVerse is released! It is a 4D auto-regressive world model. Check it out! Mar.31st 2025: The Gradio demo is available! You can deploy locally or experience Aether online on Hugging Face. Mar.28th 2025: AetherV1 is released! Model ..."
+    },
+    {
+      "title": "Aether",
+      "url": "https://aether-world.github.io/",
+      "snippet": "Visual Planning Generate planning paths from pairs of observation and goal images."
+    },
+    {
+      "title": "Aether AI — Causal World Models for Real-World Intelligence",
+      "url": "https://aetherlabs.ai/",
+      "snippet": "Causal World Models For Real-World Intelligence Aether is building a new class of AI systems that understand mechanisms, reason under intervention, and operate reliably in real-world systems."
+    }
+  ]
+}

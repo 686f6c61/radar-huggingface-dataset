@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Mamad8/MaxiMin-HHH-R2V-ThisIsFine",
+  "slug": "mamad8-maximin-hhh-r2v-thisisfine",
+  "author": "Mamad8",
+  "url": "https://huggingface.co/Mamad8/MaxiMin-HHH-R2V-ThisIsFine",
+  "created_at": "2026-08-09T21:01:58.000Z",
+  "updated_at": "2026-08-10T17:52:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1192856960,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

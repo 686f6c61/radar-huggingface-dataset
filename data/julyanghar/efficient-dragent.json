@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "julyanghar/Efficient-DRAgent",
+  "slug": "julyanghar-efficient-dragent",
+  "author": "julyanghar",
+  "url": "https://huggingface.co/julyanghar/Efficient-DRAgent",
+  "created_at": "2026-08-17T02:11:04.000Z",
+  "updated_at": "2026-08-17T02:28:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "eagle3",
+    "speculative-decoding",
+    "draft-model",
+    "deep-research-agent",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 727654016,
+  "parameters_human": "727.7M",
+  "storage_bytes": 1726112328,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

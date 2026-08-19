@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sdkcompetent/clo3lt",
+  "slug": "sdkcompetent-clo3lt",
+  "author": "sdkcompetent",
+  "url": "https://huggingface.co/sdkcompetent/clo3lt",
+  "created_at": "2026-08-18T21:01:42.000Z",
+  "updated_at": "2026-08-18T21:37:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970455745,
+  "storage_human": "970 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude AI Explained: How It Works (2026) - AI Weekly",
+      "url": "https://aiweekly.co/learning-ai/generative-ai/claude-ai-guide",
+      "snippet": "Learn about Claude AI by Anthropic: how it works, key features like safety and long context, model versions, and why it&#x27;s becoming a top choice for AI."
+    },
+    {
+      "title": "AI Agent Frameworks (2026 Update): 8 SDKs Compared + the Claude Agent ...",
+      "url": "https://www.morphllm.com/ai-agent-framework",
+      "snippet": "8 AI agent frameworks compared with exact 2026 releases: Claude Agent SDK, OpenAI Agents SDK, Google ADK, LangGraph, CrewAI (52.4k stars), Smolagents, Pydantic AI ..."
+    },
+    {
+      "title": "claude-skills-library/free-skills/openai-agentkit/SKILL.md at main ...",
+      "url": "https://github.com/frankxai/claude-skills-library/blob/main/free-skills/openai-agentkit/SKILL.md",
+      "snippet": "Professional-grade skills for Claude Code & Claude AI - Transform Claude into a domain expert in seconds - frankxai/claude-skills-library"
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 237 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 68 providers compared."
+    }
+  ]
+}

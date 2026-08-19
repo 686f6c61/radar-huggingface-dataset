@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RaifuWars-Warrior-Qwen3VL-4B-v2-GGUF",
+  "slug": "mradermacher-raifuwars-warrior-qwen3vl-4b-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RaifuWars-Warrior-Qwen3VL-4B-v2-GGUF",
+  "created_at": "2026-08-15T11:36:56.000Z",
+  "updated_at": "2026-08-15T12:26:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lora",
+    "sft",
+    "agents",
+    "tool-use",
+    "function-calling",
+    "games",
+    "raifu-wars",
+    "warrior-protocol",
+    "en",
+    "dataset:yotisstudios/RaifuWars-Warrior-SFT-v2",
+    "base_model:yotisstudios/RaifuWars-Warrior-Qwen3VL-4B-v2",
+    "base_model:adapter:yotisstudios/RaifuWars-Warrior-Qwen3VL-4B-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 138,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 37680167552,
+  "storage_human": "37.7 GB",
+  "base_model": "yotisstudios/RaifuWars-Warrior-Qwen3VL-4B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

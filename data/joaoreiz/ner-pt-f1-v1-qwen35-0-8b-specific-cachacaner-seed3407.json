@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-cachacaner-seed3407",
+  "slug": "joaoreiz-ner-pt-f1-v1-qwen35-0-8b-specific-cachacaner-seed3407",
+  "author": "JoaoReiz",
+  "url": "https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-cachacaner-seed3407",
+  "created_at": "2026-08-18T02:49:32.000Z",
+  "updated_at": "2026-08-18T02:50:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ner",
+    "portuguese",
+    "lora",
+    "structured-generation",
+    "token-classification",
+    "pt",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63335757,
+  "storage_human": "63 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-harem-official-seed42 ...",
+      "url": "https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-harem-official-seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ner-pt-f1-v1-qwen35-4b-specific-cachacaner-seed3407",
+      "url": "https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-cachacaner-seed3407",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ner-pt-f1-v1-qwen35-2b-specific-lener-br-seed3407 - friendli.ai",
+      "url": "https://friendli.ai/models/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-lener-br-seed3407",
+      "snippet": "Deploy ner-pt-f1-v1-qwen35-2b-specific-lener-br-seed3407 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "GitHub - urchade/GLiNER: Generalist and Lightweight Model for Named ...",
+      "url": "https://github.com/urchade/GLiNER",
+      "snippet": "Generalist and Lightweight Model for Named Entity Recognition (Extract any entity types from texts) - urchade/GLiNER"
+    }
+  ]
+}

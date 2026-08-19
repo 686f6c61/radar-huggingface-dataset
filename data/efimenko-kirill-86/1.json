@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Efimenko-Kirill-86/1",
+  "slug": "efimenko-kirill-86-1",
+  "author": "Efimenko-Kirill-86",
+  "url": "https://huggingface.co/Efimenko-Kirill-86/1",
+  "created_at": "2026-08-18T14:35:38.000Z",
+  "updated_at": "2026-08-18T14:35:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kirill Efimenko | ScienceDirect",
+      "url": "https://www.sciencedirect.com/author/6601959637/kirill-efimenko",
+      "snippet": "Read articles by Kirill Efimenko on ScienceDirect, the world&#x27;s leading source for scientific, technical, and medical research."
+    },
+    {
+      "title": "Kirill Efimenko - Department of Chemical and Biomolecular Engineering",
+      "url": "https://cbe.ncsu.edu/people/efimenko/",
+      "snippet": "Kirill Efimenko received a M.Sc. degree in physics of polymers and dielectrics from Belarusian State University 1996 (Minsk, Belarus) and a Ph.D. in Material Science and Technology from Institute of Chemical Technology in Prague, Czechia in 1999."
+    },
+    {
+      "title": "Kirill Efimenko&#x27;s research works | North Carolina State University ...",
+      "url": "https://www.researchgate.net/scientific-contributions/Kirill-Efimenko-39775767",
+      "snippet": "Kirill Efimenko&#x27;s 79 research works with 5,562 citations and 42,584 reads, including: Tuning Interfacial Adhesion in Polyester/Polyamide Systems"
+    },
+    {
+      "title": "‪Kirill Efimenko‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=igBRhtcAAAAJ&hl=id",
+      "snippet": "‪Research Associate Professor North Carolina State University‬ - ‪‪Dikutip 8.098 kali‬‬ - ‪Hydrogels Water Nutrient/Purification‬ - ‪Functional ppolymers‬ - ‪Foul-Control‬ - ‪Self-assembly‬"
+    },
+    {
+      "title": "Kirill Efimenko (0000-0002-6777-7266) - ORCID",
+      "url": "https://orcid.org/0000-0002-6777-7266",
+      "snippet": "ORCID record for Kirill Efimenko. ORCID provides an identifier for individuals to use with their name as they engage in research, scholarship, and innovation activities."
+    }
+  ]
+}

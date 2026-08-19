@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "theworker02/open-reason-medium",
+  "slug": "theworker02-open-reason-medium",
+  "author": "theworker02",
+  "url": "https://huggingface.co/theworker02/open-reason-medium",
+  "created_at": "2026-08-19T02:06:51.000Z",
+  "updated_at": "2026-08-19T02:14:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "open-reason",
+    "causal-lm",
+    "cpu",
+    "en",
+    "dataset:theworker02/open-reason",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13867008,
+  "parameters_human": "13.9M",
+  "storage_bytes": 55475568,
+  "storage_human": "55 MB",
+  "base_model": "gpt2-scratch",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Azure OpenAI reasoning models - GPT-5 series, o3-mini, o1, o1-mini ...",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/reasoning",
+      "snippet": "Azure OpenAI reasoning models are designed to tackle reasoning and problem-solving tasks with increased focus and capability. These models spend more time processing and understanding the user&#x27;s request, making them exceptionally strong in areas like science, coding, and math compared to previous iterations. Key capabilities of reasoning models: Complex Code Generation: Capable of generating ..."
+    },
+    {
+      "title": "Reasoning models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/reasoning",
+      "snippet": "Learn how to use OpenAI reasoning models in the Responses API, choose a reasoning effort, manage reasoning tokens, and keep reasoning state across turns."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "GitHub - aolabsai/OpenReason: an open source dataset and generation ...",
+      "url": "https://github.com/aolabsai/OpenReason",
+      "snippet": "For the sake of an open AI ecosystem and to positively accelerate development, let&#x27;s build a large scale reinforcement learning data pipeline open source."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/XORTRON-CriminalComputing-EnablementEngine-v0.3-i1-GGUF",
+  "slug": "mradermacher-xortron-criminalcomputing-enablementengine-v0-3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/XORTRON-CriminalComputing-EnablementEngine-v0.3-i1-GGUF",
+  "created_at": "2026-08-17T13:56:53.000Z",
+  "updated_at": "2026-08-17T13:56:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3423130,
+  "parameters_human": "3.4M",
+  "storage_bytes": 13753952,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XORTRON-CriminalComputing-EnablementEngine-v0.3-GGUF",
+      "url": "https://huggingface.co/mradermacher/XORTRON-CriminalComputing-EnablementEngine-v0.3-GGUF",
+      "snippet": "XORTRON-CriminalComputing-EnablementEngine-v0.3-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "XORTRON - Criminal Computing - Hugging Face",
+      "url": "https://huggingface.co/xortron",
+      "snippet": "Uncensored AI that&#x27;s actually Uncensored Text Generation • 123B • Updated Feb 28 • 14.4k • 59"
+    },
+    {
+      "title": "mradermacher/XORTRON.CriminalComputing.LARGE.2026.3-i1-GGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2FXORTRON.CriminalComputing.LARGE.2026.3-i1-GGUF",
+      "snippet": "Download mradermacher/XORTRON.CriminalComputing.LARGE.2026.3-i1-GGUF GGUF model files. View model details, file sizes, and quantization options on MyGGUF."
+    },
+    {
+      "title": "Support Xortron Criminal Computing ️ - Ko-fi",
+      "url": "https://ko-fi.com/xortron",
+      "snippet": "To date, all of my work in AI, including the Xortron series of apps and models has been developed and provided to the community entirely open-source and free of charge."
+    },
+    {
+      "title": "XortronCriminalComputing by darkc0de — VRAM 47.3GB, 32K context | LLM ...",
+      "url": "https://llm-explorer.com/model/darkc0de%2FXortronCriminalComputing,6uQhIjkNWxYGxBugqoBO9W",
+      "snippet": "XortronCriminalComputing is an open-source language model by darkc0de. Features: 24b LLM, VRAM: 47.3GB, Context: 32K, License: wtfpl, LLM Explorer Score: 0.18."
+    }
+  ]
+}

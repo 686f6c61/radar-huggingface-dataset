@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Kiyan122/whisper-small-fa-Thomcles",
+  "slug": "kiyan122-whisper-small-fa-thomcles",
+  "author": "Kiyan122",
+  "url": "https://huggingface.co/Kiyan122/whisper-small-fa-Thomcles",
+  "created_at": "2026-08-17T20:04:34.000Z",
+  "updated_at": "2026-08-17T22:48:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967014474,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/whisper-small at main - Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "Whisper Small - Open Source AI Model | TheOpenAI | Open Source AI",
+      "url": "https://www.theopensource.ai/models/whisper-small",
+      "snippet": "Compact speech recognition for edge deployment and real-time applications. Learn about Whisper Small&#x27;s capabilities, performance, and use cases."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/openai-whisper-small",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    }
+  ]
+}

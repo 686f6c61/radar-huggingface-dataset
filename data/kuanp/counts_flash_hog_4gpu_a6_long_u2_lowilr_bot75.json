@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KuanP/counts_flash_hog_4gpu_a6_long_u2_lowilr_bot75",
+  "slug": "kuanp-counts_flash_hog_4gpu_a6_long_u2_lowilr_bot75",
+  "author": "KuanP",
+  "url": "https://huggingface.co/KuanP/counts_flash_hog_4gpu_a6_long_u2_lowilr_bot75",
+  "created_at": "2026-08-17T19:46:19.000Z",
+  "updated_at": "2026-08-17T19:47:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "uce",
+    "single-cell",
+    "cell-embedding",
+    "transcriptomics",
+    "scrna-seq",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 774755841,
+  "parameters_human": "774.8M",
+  "storage_bytes": 3115484567,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KuanP (Kuan Pang) - Hugging Face",
+      "url": "https://huggingface.co/KuanP/datasets",
+      "snippet": "User profile of Kuan Pang on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=PULSAR",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "LLM News Today (August 2026) - AI Model Releases",
+      "url": "https://llm-stats.com/ai-news",
+      "snippet": "LLM News Today Your daily source for LLM news, open source LLM updates, and large language model news. Breaking announcements, new AI model releases, LLM benchmark news, and the latest updates from the AI industry."
+    },
+    {
+      "title": "AI Development Tools | Token Counter | GPU Calculator",
+      "url": "https://app.linpp2009.com/en",
+      "snippet": "Free professional AI development tools including smart token counter, LLM GPU calculator, and AI generation speed simulator. Essential tools for AI developers to optimize efficiency and project costs."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

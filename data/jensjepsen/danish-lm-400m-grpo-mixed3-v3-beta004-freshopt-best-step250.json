@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-freshopt-best-step250",
+  "slug": "jensjepsen-danish-lm-400m-grpo-mixed3-v3-beta004-freshopt-best-step250",
+  "author": "jensjepsen",
+  "url": "https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-freshopt-best-step250",
+  "created_at": "2026-08-17T21:52:19.000Z",
+  "updated_at": "2026-08-17T21:54:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "danish",
+    "grpo",
+    "instruction-following",
+    "gsm8k",
+    "json",
+    "text-generation",
+    "da",
+    "base_model:jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-top3",
+    "base_model:finetune:jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-top3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 303,
+  "trending_score": 0,
+  "parameters": 414707712,
+  "parameters_human": "414.7M",
+  "storage_bytes": 1658847408,
+  "storage_human": "1.7 GB",
+  "base_model": "jensjepsen/danish-lm-400m-grpo-mixed3-v3-beta004-top3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jensjepsen/danish-lm-400m-grpo-mixed-v1 · Hugging Face",
+      "url": "https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "danish-lm-400m-grpo-mixed-v1-best2-step4375 - Hugging Face",
+      "url": "https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed-v1-best2-step4375",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1NCQMw9c7JVUkATIF-KN0i3YYf5q5oi2z",
+      "snippet": "Google Colab Loading..."
+    },
+    {
+      "title": "Danish Lm 400M Sft V31 Avg Top3 by jensjepsen",
+      "url": "https://llm-explorer.com/model/jensjepsen%2Fdanish-lm-400m-sft-v31-avg-top3,4wYOlyIs4jAKpUWJlIYCBL",
+      "snippet": "Danish Lm 400M Sft V31 Avg Top3 is an open-source 400m LLM by jensjepsen. VRAM 1.7GB, 7K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dementor-research/sft_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed42",
+  "slug": "dementor-research-sft_gsm8k_gpt-oss-20b_as_llama-3-1-8b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/sft_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed42",
+  "created_at": "2026-08-16T22:32:10.000Z",
+  "updated_at": "2026-08-16T22:32:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

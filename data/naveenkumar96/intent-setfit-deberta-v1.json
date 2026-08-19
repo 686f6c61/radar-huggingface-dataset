@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "NaveenKumar96/intent-setfit-deberta-v1",
+  "slug": "naveenkumar96-intent-setfit-deberta-v1",
+  "author": "NaveenKumar96",
+  "url": "https://huggingface.co/NaveenKumar96/intent-setfit-deberta-v1",
+  "created_at": "2026-08-15T08:06:31.000Z",
+  "updated_at": "2026-08-15T09:58:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "deberta-v2",
+    "sentence-transformers",
+    "text-classification",
+    "generated_from_setfit_trainer",
+    "arxiv:2209.11055",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 183831552,
+  "parameters_human": "183.8M",
+  "storage_bytes": 2206223353,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

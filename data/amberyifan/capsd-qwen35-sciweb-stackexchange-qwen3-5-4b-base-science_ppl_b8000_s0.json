@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AmberYifan/capsd-qwen35-sciweb-stackexchange-Qwen3.5-4B-Base-science_ppl_b8000_s0",
+  "slug": "amberyifan-capsd-qwen35-sciweb-stackexchange-qwen3-5-4b-base-science_ppl_b8000_s0",
+  "author": "AmberYifan",
+  "url": "https://huggingface.co/AmberYifan/capsd-qwen35-sciweb-stackexchange-Qwen3.5-4B-Base-science_ppl_b8000_s0",
+  "created_at": "2026-08-16T20:15:38.000Z",
+  "updated_at": "2026-08-16T20:17:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098617686,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "GitHub - algtrd24/qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/algtrd24/qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5-Omni Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2604.15804",
+      "snippet": "Abstract In this work, we present Qwen3.5-Omni, the latest advancement in the Qwen-Omni model family. Representing a significant evolution over its predecessor, Qwen3.5-Omni scales to hundreds of billions of parameters and supports a 256k context length. By leveraging a massive dataset comprising heterogeneous text-vision pairs and over 100 million hours of audio-visual content, the model ..."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-Omni Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2604.15804v1",
+      "snippet": "Qwen3.5-Omni is publicly accessible via API 1. Figure 1: Qwen3.5-Omni is a unified end-to-end model capable of processing multiple modalities, such as text, audio, image and video, and generating real-time text or speech response."
+    }
+  ]
+}

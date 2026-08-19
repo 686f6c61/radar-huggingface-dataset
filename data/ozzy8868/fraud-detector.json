@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Ozzy8868/fraud-detector",
+  "slug": "ozzy8868-fraud-detector",
+  "author": "Ozzy8868",
+  "url": "https://huggingface.co/Ozzy8868/fraud-detector",
+  "created_at": "2026-08-17T11:58:54.000Z",
+  "updated_at": "2026-08-17T12:27:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44789323,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vaibhav07112004/fraud-detection-models · Hugging Face",
+      "url": "https://huggingface.co/vaibhav07112004/fraud-detection-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - vineshreddy987/AIML_Model_For_Fraud_Detection_System: A real ...",
+      "url": "https://github.com/vineshreddy987/AIML_Model_For_Fraud_Detection_System",
+      "snippet": "FraudGuard is an AI-powered fraud detection system designed to identify suspicious financial transactions using advanced machine learning techniques. Built for precision and scalability, the system evaluates transactional patterns and flags potential fraud in real time — with a focus on performance, security, and interpretability."
+    },
+    {
+      "title": "AI Models for Financial Fraud Detection | Databricks",
+      "url": "https://www.databricks.com/solutions/accelerators/fraud-detection",
+      "snippet": "Learn how to how to build rule-based AI models to combat financial fraud and Increase customer trust and reduce operational costs by preventing fraud quickly."
+    },
+    {
+      "title": "GitHub - dubeydeependra/AI-Powered-Fraud-Detection-System",
+      "url": "https://github.com/dubeydeependra/AI-Powered-Fraud-Detection-System",
+      "snippet": "📌 Description Developed an AI-powered fraud detection system leveraging machine learning, anomaly detection, and predictive modeling to identify fraudulent financial transactions. Applied advanced techniques such as data preprocessing, feature engineering, and imbalanced dataset handling (SMOTE, oversampling) to enhance model performance."
+    },
+    {
+      "title": "Using AI/ML to build a Fraud Detection Model - Pradeep Loganathan&#x27;s Blog",
+      "url": "https://pradeepl.com/blog/building-a-fraud-detection-model/",
+      "snippet": "In this blog post we will build an effective fraud detection model using AI and machine learning techniques. We will explore the entire process, from data preprocessing to model deployment, and highlight key strategies to enhance detection accuracy."
+    }
+  ]
+}

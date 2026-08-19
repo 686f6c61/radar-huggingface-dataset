@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA",
+  "slug": "khoin68-qwen2-5-coder-7b-vietnamese-agent-final-lora",
+  "author": "khoin68",
+  "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA",
+  "created_at": "2026-08-16T13:08:01.000Z",
+  "updated_at": "2026-08-16T13:08:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436250,
+  "storage_human": "334 MB",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

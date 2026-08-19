@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mondk/Safetensors.claude_Deepseek-R1-Lamma",
+  "slug": "mondk-safetensors-claude_deepseek-r1-lamma",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/Safetensors.claude_Deepseek-R1-Lamma",
+  "created_at": "2026-08-15T08:48:46.000Z",
+  "updated_at": "2026-08-15T11:08:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "claude",
+    "deepseekr1",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:mondk/claude-v2-super.jsonl",
+    "base_model:unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077765793,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

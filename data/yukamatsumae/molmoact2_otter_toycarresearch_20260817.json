@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "yukamatsumae/molmoact2_otter_toycarresearch_20260817",
+  "slug": "yukamatsumae-molmoact2_otter_toycarresearch_20260817",
+  "author": "yukamatsumae",
+  "url": "https://huggingface.co/yukamatsumae/molmoact2_otter_toycarresearch_20260817",
+  "created_at": "2026-08-17T07:34:13.000Z",
+  "updated_at": "2026-08-17T07:56:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "molmoact2",
+    "dataset:yukamatsumae/ToyCarResearch_20260817_020059",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 10884581464,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

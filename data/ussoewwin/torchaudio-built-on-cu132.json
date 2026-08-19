@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ussoewwin/torchaudio-built-on-cu132",
+  "slug": "ussoewwin-torchaudio-built-on-cu132",
+  "author": "ussoewwin",
+  "url": "https://huggingface.co/ussoewwin/torchaudio-built-on-cu132",
+  "created_at": "2026-05-15T17:06:10.000Z",
+  "updated_at": "2026-08-18T05:17:09.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "torchaudio",
+    "pytorch",
+    "windows",
+    "cuda",
+    "cu132",
+    "license:bsd-2-clause",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18491927,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ussoewwin/torchaudio-built-on-cu132-for-windows · Hugging Face",
+      "url": "https://huggingface.co/ussoewwin/torchaudio-built-on-cu132-for-windows",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ussoewwin/torchaudio-built-on-cu132-for-windows at main",
+      "url": "https://huggingface.co/ussoewwin/torchaudio-built-on-cu132-for-windows/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Torchaudio is unavailable for cu132 torch #14232 - GitHub",
+      "url": "https://github.com/Comfy-Org/ComfyUI/issues/14232",
+      "snippet": "For cu126/cu130, torchaudio 2.11.0 is compatiable with torch>=2.11.0 so there&#x27;s no problem. However for the latest cuda version cu132 there&#x27;s no stable torchaudio wheel available, and I tried to use torchaudio nightly wheel but end up with dll mismatch."
+    },
+    {
+      "title": "new-torchaudio/WindowsWhlBuilder_cu132.bat at main · ussoewwin/new ...",
+      "url": "https://github.com/ussoewwin/new-torchaudio/blob/main/WindowsWhlBuilder_cu132.bat",
+      "snippet": "Data manipulation and transformation for audio signal processing, powered by PyTorch - ussoewwin/new-torchaudio"
+    },
+    {
+      "title": "Links for torchaudio - download.pytorch.org",
+      "url": "https://download.pytorch.org/whl/test/cu132/torchaudio/",
+      "snippet": "Links for torchaudio torchaudio-2.11.0+cu132-cp310-cp310-manylinux_2_28_aarch64.whl torchaudio-2.11.0+cu132-cp310-cp310-manylinux_2_28_x86_64.whl torchaudio-2.11.0 ..."
+    }
+  ]
+}

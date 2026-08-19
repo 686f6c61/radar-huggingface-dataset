@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlx-community/GOT-OCR2_0-8bit",
+  "slug": "mlx-community-got-ocr2_0-8bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/GOT-OCR2_0-8bit",
+  "created_at": "2026-08-14T23:24:36.000Z",
+  "updated_at": "2026-08-14T23:35:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "GOT",
+    "ocr",
+    "ocr2.0",
+    "vision-language",
+    "got",
+    "image-text-to-text",
+    "custom_code",
+    "multilingual",
+    "arxiv:2409.01704",
+    "base_model:stepfun-ai/GOT-OCR2_0",
+    "base_model:quantized:stepfun-ai/GOT-OCR2_0",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 227182464,
+  "parameters_human": "227.2M",
+  "storage_bytes": 686356645,
+  "storage_human": "686 MB",
+  "base_model": "stepfun-ai/GOT-OCR2_0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

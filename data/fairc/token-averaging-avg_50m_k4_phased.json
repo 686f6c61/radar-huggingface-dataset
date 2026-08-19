@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FAIRC/token-averaging-avg_50m_k4_phased",
+  "slug": "fairc-token-averaging-avg_50m_k4_phased",
+  "author": "FAIRC",
+  "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_phased",
+  "created_at": "2026-08-18T13:03:32.000Z",
+  "updated_at": "2026-08-18T13:05:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 908057898,
+  "storage_human": "908 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4 · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4",
+      "snippet": "FAIRC / token-averaging-avg_50m_k4 like 0 Follow FAIRC 3 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4_learnable_pos · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos",
+      "snippet": "FAIRC/token-averaging-avg_50m_k4_learnable_pos Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "LLM API Pricing Comparison & Calculator (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/llm-pricing",
+      "snippet": "LLM API Pricing Comparison and Cost Calculator Compare current LLM API pricing for 137 paid models across 25 providers. All prices are per million tokens. The Score/$ column uses the public overall score per dollar of output — higher means better value. Last updated: August 17, 2026. Prices reflect official API rates. Open-weight model costs depend on your infrastructure. How does LLM token ..."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "LLM Token Counter — Count Tokens for GPT, Claude & Gemini | BenchLM.ai",
+      "url": "https://benchlm.ai/tools/token-counter",
+      "snippet": "Free LLM token counter with real tokenizers for GPT-5, Claude, Gemini, Llama & more. Count tokens, estimate API costs, and check context window limits instantly."
+    }
+  ]
+}

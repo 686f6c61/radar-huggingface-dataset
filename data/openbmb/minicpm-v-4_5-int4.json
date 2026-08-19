@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-V-4_5-int4",
+  "slug": "openbmb-minicpm-v-4_5-int4",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4_5-int4",
+  "created_at": "2025-08-24T10:44:01.000Z",
+  "updated_at": "2026-08-18T03:58:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpm-v",
+    "vision",
+    "ocr",
+    "multi-image",
+    "video",
+    "custom_code",
+    "image-text-to-text",
+    "multilingual",
+    "dataset:openbmb/RLAIF-V-Dataset",
+    "arxiv:2509.18154",
+    "arxiv:2403.11703",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 1614,
+  "trending_score": 0,
+  "parameters": 8695895280,
+  "parameters_human": "8.70B",
+  "storage_bytes": 6543482719,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-V-4_5-int4 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4_5-int4",
+      "snippet": "The MiniCPM-o/V model weights and code are open-sourced under the Apache-2.0 license. To help us better understand and support our users, we would deeply appreciate it if you could consider optionally filling out a brief registration \"questionnaire\"."
+    },
+    {
+      "title": "openbmb/MiniCPM-V-4_5 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4_5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    },
+    {
+      "title": "MiniCPM-V-4_5-int4 · Models",
+      "url": "https://www.modelscope.cn/models/OpenBMB/MiniCPM-V-4_5-int4",
+      "snippet": "MiniCPM-V 4.5 supports both fast thinking for efficient frequent usage with competitive performance, and deep thinking for more complex problem solving. To cover efficiency and performance trade-offs in different user scenarios, this fast/deep thinking mode can be switched in a highly controlled fashion."
+    },
+    {
+      "title": "MiniCPM-V/docs/minicpm_v4_en.md at main · OpenBMB/MiniCPM-V - GitHub",
+      "url": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v4_en.md",
+      "snippet": "MiniCPM-V 4.0 is an efficient model in the MiniCPM-V series. The model is built based on SigLIP2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherits the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with largely improved efficiency. Notable ..."
+    }
+  ]
+}

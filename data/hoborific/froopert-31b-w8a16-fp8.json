@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hoborific/Froopert-31B-W8A16-FP8",
+  "slug": "hoborific-froopert-31b-w8a16-fp8",
+  "author": "hoborific",
+  "url": "https://huggingface.co/hoborific/Froopert-31B-W8A16-FP8",
+  "created_at": "2026-08-17T03:56:33.000Z",
+  "updated_at": "2026-08-17T04:40:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "w8a16",
+    "fp8",
+    "conversational",
+    "base_model:Nimbz/Froopert-31B",
+    "base_model:quantized:Nimbz/Froopert-31B",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33309226758,
+  "storage_human": "33.3 GB",
+  "base_model": "Nimbz/Froopert-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hoborific/G4-MeroMero-v2-31B-W8A16-FP8 · Hugging Face",
+      "url": "https://huggingface.co/hoborific/G4-MeroMero-v2-31B-W8A16-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nimbz/Froopert-31B · Hugging Face",
+      "url": "https://huggingface.co/Nimbz/Froopert-31B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "G4 MeroMero V2 31B W8A16 FP8 by hoborific - LLM Explorer",
+      "url": "https://llm-explorer.com/model/hoborific%2FG4-MeroMero-v2-31B-W8A16-FP8,3wrADyN2TMJ8VgO3UQmG8g",
+      "snippet": "G4 MeroMero V2 31B W8A16 FP8 is an open-source 31b LLM by hoborific. VRAM 33.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "[Benchmark] Gemma 4 on DGX Spark — Which Model Should You Pick? — ai-muninn",
+      "url": "https://ai-muninn.com/en/blog/dgx-spark-gemma4-complete-guide",
+      "snippet": "Gemma 4 E2B / E4B / 26B MoE / 31B Dense benchmarked on DGX Spark, RTX 5090, and MacBook Pro. One table with speed, memory, quantization format. Selection guide included."
+    },
+    {
+      "title": "Ornith 1.0 — Open-Source Agentic Coding Models",
+      "url": "https://ornith.site/",
+      "snippet": "Ornith 1.0 is a family of open-source large language models built by DeepReinforce AI specifically for agentic coding. Ornith 1.0 comes in four sizes — 9B Dense, 31B Dense, 35B MoE, and 397B MoE — all released under MIT license. The key innovation of Ornith 1.0 is self-scaffolding: the model jointly learns to solve coding tasks and construct the orchestration framework that guides those ..."
+    }
+  ]
+}

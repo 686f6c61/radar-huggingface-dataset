@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "TwiceTheButtermilk/ButtermilkRP_V1_GGUF",
+  "slug": "twicethebuttermilk-buttermilkrp_v1_gguf",
+  "author": "TwiceTheButtermilk",
+  "url": "https://huggingface.co/TwiceTheButtermilk/ButtermilkRP_V1_GGUF",
+  "created_at": "2026-08-17T10:58:05.000Z",
+  "updated_at": "2026-08-17T10:59:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920738976,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Chat with buttermilk | character.ai | AI Chat, Reimagined-Your Words ...",
+      "url": "https://character.ai/chat/Xj3sBus0Zrvt-rdgAQizFxQ-emnaxQZkZHa257aQyJQ",
+      "snippet": "Chat with buttermilk: buttermilk. Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "Buttermilk",
+      "url": "https://www.buttermilk.com/",
+      "snippet": "Buttermilk leverages contemporary culture and creator communities to fortify brands and boost business potential. It&#x27;s a two way street that serves our creators as much as they serve you, building robust reputations and relationships that benefit everyone."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/reels/",
+      "snippet": "Instagram Reels lets you create and discover short, entertaining videos with audio, effects, and creative tools to share with friends or the community."
+    },
+    {
+      "title": "GGUF Quants - Roleplay Deployment Models - a athirdpath Collection",
+      "url": "https://huggingface.co/collections/athirdpath/gguf-quants-roleplay-deployment-models-6566ae6177d8a948ac8420e7",
+      "snippet": "GGUF - Models I think are cool and worth using. A lot of what I make is intended only as a part in a further merge or as a test, these are the others."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gokulrsa/plant-leaf-yolo11x-detector",
+  "slug": "gokulrsa-plant-leaf-yolo11x-detector",
+  "author": "gokulrsa",
+  "url": "https://huggingface.co/gokulrsa/plant-leaf-yolo11x-detector",
+  "created_at": "2026-08-18T03:03:38.000Z",
+  "updated_at": "2026-08-18T03:17:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114387801,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pedromiguelsanchez/yolo-plant-leaf-detection · Hugging Face",
+      "url": "https://huggingface.co/pedromiguelsanchez/yolo-plant-leaf-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ultralytics/yolo11: Ultralytics YOLO11 discovery and ...",
+      "url": "https://github.com/ultralytics/yolo11",
+      "snippet": "YOLO11 models are available for detection, segmentation, classification, pose estimation, and oriented object detection. All model weights download automatically from the latest Ultralytics assets release on first use."
+    },
+    {
+      "title": "Ultralytics/YOLO11 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLO11",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "YOLO11 Models by Tefu - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/tefu/yolo11",
+      "snippet": "Released September 2024. Current stable release and the recommended choice for all use cases. Best balance of speed, accuracy, and ease of use across all vision tasks."
+    },
+    {
+      "title": "GitHub - ultralytics/ultralytics: Ultralytics YOLO26, YOLO11, YOLOv8 ...",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    }
+  ]
+}

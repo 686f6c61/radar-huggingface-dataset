@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "kurakurai/Luth-2-2B",
+  "slug": "kurakurai-luth-2-2b",
+  "author": "kurakurai",
+  "url": "https://huggingface.co/kurakurai/Luth-2-2B",
+  "created_at": "2026-08-03T21:43:48.000Z",
+  "updated_at": "2026-08-11T08:09:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "french",
+    "conversational",
+    "edge",
+    "qwen",
+    "text-generation",
+    "fr",
+    "dataset:kurakurai/Luth-2-Post-Training-SFT",
+    "dataset:kurakurai/Luth-2-Post-Training-RL",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 355,
+  "trending_score": 8,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446548189,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

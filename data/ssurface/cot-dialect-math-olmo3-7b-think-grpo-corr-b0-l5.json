@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-b0-l5",
+  "slug": "ssurface-cot-dialect-math-olmo3-7b-think-grpo-corr-b0-l5",
+  "author": "ssurface",
+  "url": "https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-b0-l5",
+  "created_at": "2026-08-18T15:45:37.000Z",
+  "updated_at": "2026-08-18T15:50:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "chain-of-thought",
+    "reasoning",
+    "compression",
+    "math",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceH4/MATH-500",
+    "base_model:allenai/Olmo-3-7B-Think",
+    "base_model:adapter:allenai/Olmo-3-7B-Think",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159967880,
+  "storage_human": "160 MB",
+  "base_model": "allenai/Olmo-3-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "MATH-500",
+      "metric": "Accuracy (exact match)",
+      "value": 65.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Olmo3 7b Math Cot - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/olmo3-7b-math-cot.html",
+      "snippet": "Download Olmo3 7b Math Cot GGUF model. 7.2 GB, 118 downloads, 0 likes."
+    },
+    {
+      "title": "Olmo 3 7B Think — ThinkLLM",
+      "url": "https://thinkllm.dev/models/olmo-3-7b-think",
+      "snippet": "Olmo 3 7B Think is a reasoning-focused model that works through problems step by step before committing to an answer, making its thought process visible and traceable. At 7 billion parameters, it punches with deliberate care rather than raw scale, favoring structured internal reasoning over quick responses. Its open-weight nature means the full model is inspectable and modifiable, though users ..."
+    },
+    {
+      "title": "Olmo-3-7B-Think: Open-Source 7B Reasoning LLM - DEV.co",
+      "url": "https://dev.co/ai/llms/olmo-3-7b-think",
+      "snippet": "Olmo-3-7B-Think is a 7.3B parameter open-source language model from Allen Institute for AI, designed for reasoning-heavy tasks like math and coding. It uses a chain-of-thought approach (visible \"thinking\" tokens) and has been trained through supervised fine-tuning, direct preference optimization, and reinforcement learning."
+    },
+    {
+      "title": "allenai/Olmo-3-7B-Think · Hugging Face",
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Think",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "modrill/math_think_8_olmo3_7b_base_sft · Hugging Face",
+      "url": "https://huggingface.co/modrill/math_think_8_olmo3_7b_base_sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "VividMuse-AGI/HerRAW-krea2-lora",
+  "slug": "vividmuse-agi-herraw-krea2-lora",
+  "author": "VividMuse-AGI",
+  "url": "https://huggingface.co/VividMuse-AGI/HerRAW-krea2-lora",
+  "created_at": "2026-08-17T12:41:39.000Z",
+  "updated_at": "2026-08-17T12:41:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "text-to-image",
+    "krea-2",
+    "realistic-photography",
+    "portrait",
+    "no-trigger-word",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275091712,
+  "storage_human": "275 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2 LoRAs - a krea Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/krea/krea-2-loras",
+      "snippet": "A collection of LoRAs for Krea 2 Turbo and Krea 2 Raw"
+    },
+    {
+      "title": "Top 26 Krea2 LoRA models for Stylized Image Generation",
+      "url": "https://www.stablediffusiontutorials.com/2026/06/krea2-lora-models.html",
+      "snippet": "Krea2 Realism V1 LoRA is designed to improve photorealistic image generation by enhancing skin textures, human anatomy, and clothing details. It produces natural-looking results across diverse ethnicities, ages, and body types, making it suitable for a wide range of portrait and character generation tasks."
+    },
+    {
+      "title": "RawGirl [Krea2] - v3.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2762732/rawgirl-krea2",
+      "snippet": "Real-photo energy, zero AI gloss. This LoRA nails that raw, straight-off-an-iPhone look — deep focus, everything sharp, no fake bokeh, no editorial polish. Just candid, unposed, \"my friend caught me mid-laugh\" vibes. Think messy rooms, natural skin, real lighting, and that grainy front-cam realism that actually looks posted, not rendered."
+    },
+    {
+      "title": "[VRAM 12GB] A Complete Guide to Creating Character LoRAs with the Image ...",
+      "url": "https://note.com/sepiablue/n/nbc355cc7e114?hl=en",
+      "snippet": "In this experiment, I was able to run LoRA training for Krea2, a super heavy-duty latest model, on a local 12GB VRAM graphics card. I couldn&#x27;t have made a LoRA for Krea2 without musubi-tuner, so I am truly grateful to kohya-san!"
+    },
+    {
+      "title": "Krea 2 Turbo LoRA 256dim - v1.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2727641/krea-2-turbo-lora-256dim",
+      "snippet": "Here are the recommended settings I use with the Turbo LoRA on the Raw Krea 2 checkpoint: 0.6 weight, and 12 steps at 1CFG. This allows for a bit more diversity and adherence imo."
+    }
+  ]
+}

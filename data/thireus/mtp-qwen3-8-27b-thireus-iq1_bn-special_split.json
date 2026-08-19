@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_BN-SPECIAL_SPLIT",
+  "slug": "thireus-mtp-qwen3-8-27b-thireus-iq1_bn-special_split",
+  "author": "Thireus",
+  "url": "https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_BN-SPECIAL_SPLIT",
+  "created_at": "2026-08-15T09:44:00.000Z",
+  "updated_at": "2026-08-15T11:18:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2505.23786",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 171,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 614962112,
+  "storage_human": "615 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT - Hugging Face",
+      "url": "https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT",
+      "snippet": "Here&#x27;s how Qwen3.8-27B quantized with Thireus&#x27; GGUF Tool Suite stacks up against other quantizers (lower perplexity = better at equal or lower bpw): Note: The recipe_examples files illustrate good recipes."
+    },
+    {
+      "title": "Thireus/mtp-Qwen3.5-27B-THIREUS-IQ1_S_R4-SPECIAL_SPLIT · Hugging Face",
+      "url": "https://huggingface.co/Thireus/mtp-Qwen3.5-27B-THIREUS-IQ1_S_R4-SPECIAL_SPLIT",
+      "snippet": "Thireus / mtp-Qwen3.5-27B-THIREUS-IQ1_S_R4-SPECIAL_SPLIT like 0 GGUF arxiv:2505.23786 License:mit Model card FilesFiles and versions xet Community Copy to bucket new mtp-Qwen3.5-27B"
+    },
+    {
+      "title": "Thireus&#x27; Model Collection",
+      "url": "https://gguf.thireus.com/",
+      "snippet": "Powered by GGUF-Tool-Suite — host: gguf1 — snapshot: 2026-08-09 07:12 UTC"
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Qwen3.8-27B: Alibaba&#x27;s New Multimodal AI Model Launches",
+      "url": "https://emergent.sh/news/qwen38-27b-officially-launched",
+      "snippet": "Alibaba Cloud releases Qwen3.8-27B, a 27-billion parameter multimodal AI model under Apache 2.0 license. Available now for enterprise and research use."
+    }
+  ]
+}

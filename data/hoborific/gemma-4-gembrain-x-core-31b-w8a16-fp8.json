@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hoborific/Gemma-4-Gembrain-X-Core-31B-W8A16-FP8",
+  "slug": "hoborific-gemma-4-gembrain-x-core-31b-w8a16-fp8",
+  "author": "hoborific",
+  "url": "https://huggingface.co/hoborific/Gemma-4-Gembrain-X-Core-31B-W8A16-FP8",
+  "created_at": "2026-08-17T04:31:35.000Z",
+  "updated_at": "2026-08-17T04:53:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "w8a16",
+    "fp8",
+    "conversational",
+    "base_model:Nimbz/Gemma-4-Gembrain-X-Core-31B",
+    "base_model:quantized:Nimbz/Gemma-4-Gembrain-X-Core-31B",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33310944298,
+  "storage_human": "33.3 GB",
+  "base_model": "Nimbz/Gemma-4-Gembrain-X-Core-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nimbz/Gemma-4-Gembrain-31B · Hugging Face",
+      "url": "https://huggingface.co/Nimbz/Gemma-4-Gembrain-31B",
+      "snippet": "Mergekit: Once again thank you Arcee AI for the great and easy to use mergekit! And thanks to zerofota and their fork for Gemma 4 support. Ateron: Big kudos for providing me with the first steps for merging models and your relentless testing and support. Google Gemini: For once again helping me to craft this specific model card."
+    },
+    {
+      "title": "Nimbz/Gemma-4-Gembrain-X-Core-31B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Nimbz/Gemma-4-Gembrain-X-Core-31B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 31B Gembrain X Core API - Language AI by google | Routeway",
+      "url": "https://routeway.ai/models/gemma-4-31b-gembrain-x-core",
+      "snippet": "Gemma 4 31B Gembrain X Core is a community creative finetune for reasoning, multimodal chat, expressive writing, and roleplay."
+    },
+    {
+      "title": "Gemma 4 31B Gembrain X Core model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/Gemma-4-31B-Gembrain-X-Core",
+      "snippet": "Gemma 4 31B Gembrain X Core is a community creative finetune for reasoning, multimodal chat, expressive writing, and roleplay."
+    }
+  ]
+}

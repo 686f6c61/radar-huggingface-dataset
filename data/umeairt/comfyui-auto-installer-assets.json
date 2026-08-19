@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "UmeAiRT/ComfyUI-Auto-Installer-Assets",
+  "slug": "umeairt-comfyui-auto-installer-assets",
+  "author": "UmeAiRT",
+  "url": "https://huggingface.co/UmeAiRT/ComfyUI-Auto-Installer-Assets",
+  "created_at": "2024-09-26T13:03:26.000Z",
+  "updated_at": "2026-08-17T18:10:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "gguf",
+    "comfyui",
+    "models",
+    "flux",
+    "wan",
+    "qwen",
+    "hidream",
+    "ltxv",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 168,
+  "downloads_30d": 87206,
+  "trending_score": 0,
+  "parameters": 2091068928,
+  "parameters_human": "2.09B",
+  "storage_bytes": 4197736753923,
+  "storage_human": "4197.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "gguf",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UmeAiRT/ComfyUI-Auto-Installer-Assets · Hugging Face",
+      "url": "https://huggingface.co/UmeAiRT/ComfyUI-Auto-Installer-Assets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UmeAiRT/ComfyUI-Auto-Installer-Assets at main - Hugging Face",
+      "url": "https://huggingface.co/UmeAiRT/ComfyUI-Auto-Installer-Assets/tree/main/models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI-Auto-Installer-Assets · Datasets - modelscope.ai",
+      "url": "https://www.modelscope.ai/datasets/UmeAiRT/ComfyUI-Auto-Installer-Assets",
+      "snippet": "ComfyUI Auto-Installer — Assets Pre-packaged model files and binaries for the UmeAiRT ecosystem. This repository is a pure asset store — no code, only large binary files served via Git LFS. Consumed by: ComfyUI-Auto_installer — automated Windows setup, downloads models from this repo"
+    },
+    {
+      "title": "ComfyUI-Auto-Installer-Assets: Text-to-Image model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/comfyui-auto-installer-assets-umeairt",
+      "snippet": "ComfyUI-Auto-Installer-Assets is a pure asset repository containing pre-packaged model files and binaries for the UmeAiRT ecosystem, maintained by UmeAiRT. This is not a model itself but rather a centralized distribution system delivering diffusion models, text encoders, LoRAs, ControlNets, VAEs, and binary dependencies for ComfyUI workflows."
+    },
+    {
+      "title": "ComfyUI-Auto_installer: Video-to-Video model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/comfyui-auto-installer-umeairt",
+      "snippet": "Overview ComfyUI-Auto_installer is an automated Windows installation script that bundles ComfyUI (a node-based interface for stable diffusion and video generation), pre-configured workflows, multiple diffusion models, custom nodes, and supporting binaries into a single downloadable package. Built by UmeAiRT, this is not a machine learning model itself but rather an installation and asset ..."
+    }
+  ]
+}

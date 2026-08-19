@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Noname010101/hs_mods",
+  "slug": "noname010101-hs_mods",
+  "author": "Noname010101",
+  "url": "https://huggingface.co/Noname010101/hs_mods",
+  "created_at": "2026-05-10T18:46:22.000Z",
+  "updated_at": "2026-08-17T16:09:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 12247802880,
+  "parameters_human": "12.25B",
+  "storage_bytes": 17923472548,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bl@ke&#x27;s Workshop",
+      "url": "https://www.blatke.cc/index.html",
+      "snippet": "HS2/AIS MODS Original mods created for Honey Select 2 and AI-Shoujo. Available on Github."
+    },
+    {
+      "title": "Noname010101 (radu) - Hugging Face",
+      "url": "https://huggingface.co/Noname010101",
+      "snippet": "User profile of radu on Hugging Face"
+    },
+    {
+      "title": "huskyhong/noname-ai-v3.0 · Hugging Face",
+      "url": "https://huggingface.co/huskyhong/noname-ai-v3.0",
+      "snippet": "huskyhong / noname-ai-v3. like 0 Safetensors qwen2 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "[AI/HS2] 2B - Roy12 Mods",
+      "url": "https://roy12mods.com/wp/2022/11/11/ai-hs2-2b/",
+      "snippet": "LOOK FOR AI and HS2 REPACKS, installing things separately will only cause you headaches."
+    },
+    {
+      "title": "010 Model AI HS2 DALI MOD Regina - Patreon",
+      "url": "https://www.patreon.com/DALIMOD816/shop/010-model-ai-hs2-dali-mod-regina-767307",
+      "snippet": "Hairstyle X1 Accessories XN Weapons - both the main body and the studio - have a separate set, with 3 weapons in total, special effects and no special effects) 4 color-changing wings (with luminous bodies, flowers and leaves will glow after the floodlight parameter is 25+) Tops, bottoms X2 (normal+) bottoms have FK Gloves X1 High heels X1 Clothes are made of special materials Configuration ..."
+    }
+  ]
+}

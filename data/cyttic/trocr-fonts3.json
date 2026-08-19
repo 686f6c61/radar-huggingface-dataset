@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "cyttic/trocr-fonts3",
+  "slug": "cyttic-trocr-fonts3",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/trocr-fonts3",
+  "created_at": "2026-08-17T11:15:00.000Z",
+  "updated_at": "2026-08-17T14:56:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:cyttic/exp2-frozen-benyehuda-cont",
+    "base_model:finetune:cyttic/exp2-frozen-benyehuda-cont",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299495168,
+  "parameters_human": "299.5M",
+  "storage_bytes": 2396089089,
+  "storage_human": "2.4 GB",
+  "base_model": "cyttic/exp2-frozen-benyehuda-cont",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

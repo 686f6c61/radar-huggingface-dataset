@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_100Mpt_hfbody_100M_s1_2026-08-14_21-33-22_137347-pt",
+  "slug": "alexkstern-kdyck_dose_100mpt_hfbody_100m_s1_2026-08-14_21-33-22_137347-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_100M_s1_2026-08-14_21-33-22_137347-pt",
+  "created_at": "2026-08-14T21:37:13.000Z",
+  "updated_at": "2026-08-14T21:37:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kdyck_1pct_100M_d20_seed1_2026-07-21_20-33-26_342309-ppt",
+      "url": "https://huggingface.co/alexkstern/kdyck_1pct_100M_d20_seed1_2026-07-21_20-33-26_342309-ppt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kdyck_10pct_100M_d20_seed0_2026-07-21_18-43-25_000022-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_10pct_100M_d20_seed0_2026-07-21_18-43-25_000022-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/p/DYhR9kvDXKz/",
+      "snippet": "24K likes, 494 comments - evolving.ai on May 19, 2026: \" A computer science student in China just admitted he burns through 100M+ tokens a day on GPT and Claude for around $1. He is not hacking anything. He is buying API access through Xianyu and Taobao proxy sellers at almost 96 to 97% off official pricing. An Oxford China Policy Lab investigation by researcher Zilan Qian, published through ..."
+    },
+    {
+      "title": "Only1Trickster - Payhip",
+      "url": "https://payhip.com/Only1Trickster",
+      "snippet": "He-They | 27 | Avatar Creator for VRChatNew to modeling from scratch, but learning."
+    },
+    {
+      "title": "Kick",
+      "url": "https://kick.com/browse",
+      "snippet": "Discover and explore live streaming content across various categories on Kick."
+    }
+  ]
+}

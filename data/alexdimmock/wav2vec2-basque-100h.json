@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "alexdimmock/wav2vec2-basque-100h",
+  "slug": "alexdimmock-wav2vec2-basque-100h",
+  "author": "alexdimmock",
+  "url": "https://huggingface.co/alexdimmock/wav2vec2-basque-100h",
+  "created_at": "2026-07-08T11:08:28.000Z",
+  "updated_at": "2026-08-18T01:49:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 315472545,
+  "parameters_human": "315.5M",
+  "storage_bytes": 26266741050,
+  "storage_human": "26.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · facebook/wav2vec2-base-100h at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/wav2vec2-base-100h/blob/main/README.md",
+      "snippet": "Wav2Vec2-Base-100h Facebook&#x27;s Wav2Vec2 The base model pretrained and fine-tuned on 100 hours of Librispeech on 16kHz sampled speech audio. When using the model make sure that your speech input is also sampled at 16Khz. Paper Authors: Alexei Baevski, Henry Zhou, Abdelrahman Mohamed, Michael Auli Abstract"
+    },
+    {
+      "title": "alexdimmock/wav2vec2-basque-50h · Hugging Face",
+      "url": "https://huggingface.co/alexdimmock/wav2vec2-basque-50h",
+      "snippet": "alexdimmock / wav2vec2-basque-50h like 0 Safetensors wav2vec2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 159 Safetensors Model size 0.3B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "fairseq/examples/wav2vec/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/wav2vec/README.md",
+      "snippet": "Train a wav2vec 2.0 base model This configuration was used for the base model trained on the Librispeech dataset in the wav2vec 2.0 paper Note that the input is expected to be single channel, sampled at 16 kHz"
+    },
+    {
+      "title": "fairseq/examples/wav2vec at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/tree/main/examples/wav2vec",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - fairseq/examples/wav2vec at main · facebookresearch/fairseq"
+    },
+    {
+      "title": "WAV2VEC2_ASR_BASE_100H — Torchaudio 2.11 documentation",
+      "url": "https://docs.pytorch.org/audio/2.11.0/generated/torchaudio.pipelines.WAV2VEC2_ASR_BASE_100H.html",
+      "snippet": "Wav2vec 2.0 model (\"base\" architecture with an extra linear module), pre-trained on 960 hours of unlabeled audio from LibriSpeech dataset [Panayotov et al., 2015] (the combination of \"train-clean-100\", \"train-clean-360\", and \"train-other-500\"), and fine-tuned for ASR on 100 hours of transcribed audio from \"train-clean-100\" subset."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Ultralytics/YOLO26",
+  "slug": "ultralytics-yolo26",
+  "author": "Ultralytics",
+  "url": "https://huggingface.co/Ultralytics/YOLO26",
+  "created_at": "2026-01-26T16:51:20.000Z",
+  "updated_at": "2026-06-28T19:23:29.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ru",
+    "de",
+    "fr",
+    "es",
+    "pt",
+    "tr",
+    "vi",
+    "ar"
+  ],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "object-detection",
+    "instance-segmentation",
+    "image-classification",
+    "pose-estimation",
+    "obb",
+    "tracking",
+    "semantic-segmentation",
+    "yolo26",
+    "en",
+    "zh",
+    "ja",
+    "ru",
+    "de",
+    "fr",
+    "es",
+    "pt",
+    "tr",
+    "vi",
+    "ar",
+    "arxiv:2606.03748",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 132,
+  "downloads_30d": 9613,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1189380481,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "coco",
+      "metric": "mAP@0.5:0.95",
+      "value": 57.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ultralytics YOLO26",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "YOLO26 from Ultralytics delivers unified, real-time, end-to-end vision models optimized for accurate and efficient deployment."
+    },
+    {
+      "title": "Ultralytics YOLO26 Models for Real-Time Edge AI",
+      "url": "https://www.ultralytics.com/yolo/yolo26",
+      "snippet": "Explore Ultralytics YOLO26 models for edge and low-power devices with up to 43% faster CPU inference."
+    },
+    {
+      "title": "GitHub - ultralytics/yolo26: Ultralytics YOLO26 quickstart for ...",
+      "url": "https://github.com/ultralytics/yolo26",
+      "snippet": "🧩 Integrations Ultralytics integrations extend dataset labeling, training, visualization, deployment, and model management workflows. Explore Ultralytics Platform and the Ultralytics Integrations docs to connect YOLO26 with your AI stack, including popular export formats like TensorRT, ONNX, CoreML, and TFLite."
+    },
+    {
+      "title": "YOLO26 Models by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/yolo26",
+      "snippet": "Newest SOTA Ultralytics models, released January 2026. Smaller, faster, and more accurate than previous versions with native end-to-end inference."
+    },
+    {
+      "title": "Ultralytics/YOLO26 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLO26",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    }
+  ]
+}

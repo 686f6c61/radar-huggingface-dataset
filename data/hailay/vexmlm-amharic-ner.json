@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Hailay/VEXMLM-Amharic-NER",
+  "slug": "hailay-vexmlm-amharic-ner",
+  "author": "Hailay",
+  "url": "https://huggingface.co/Hailay/VEXMLM-Amharic-NER",
+  "created_at": "2026-08-17T15:31:47.000Z",
+  "updated_at": "2026-08-17T15:33:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ner",
+    "token-classification",
+    "masakhaner",
+    "xlm-roberta",
+    "vexmlm",
+    "geez",
+    "low-resource",
+    "am",
+    "base_model:Hailay/VEXMLM",
+    "base_model:finetune:Hailay/VEXMLM",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6035080037,
+  "storage_human": "6.0 GB",
+  "base_model": "Hailay/VEXMLM",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

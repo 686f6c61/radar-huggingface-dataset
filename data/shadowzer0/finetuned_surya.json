@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Shadowzer0/finetuned_surya",
+  "slug": "shadowzer0-finetuned_surya",
+  "author": "Shadowzer0",
+  "url": "https://huggingface.co/Shadowzer0/finetuned_surya",
+  "created_at": "2026-08-08T16:42:04.000Z",
+  "updated_at": "2026-08-17T12:43:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "surya-multimodal-foundation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 896249111,
+  "parameters_human": "896.2M",
+  "storage_bytes": 5377563354,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine tuning Scripts for Surya Models · GitHub",
+      "url": "https://gist.github.com/rwatler/6d8da884873a92107fdf1db0b8cb92c7",
+      "snippet": "This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters. Learn more about bidirectional Unicode characters Show hidden characters # Finetuning script for Surya reading order model # install dependencies to match Surya import sys ! {sys.executable ..."
+    },
+    {
+      "title": "GitHub - Ollsoft-ai/surya-finetuning",
+      "url": "https://github.com/Ollsoft-ai/surya-finetuning",
+      "snippet": "Contribute to Ollsoft-ai/surya-finetuning development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - datalab-to/surya: OCR, layout analysis, reading order, table ...",
+      "url": "https://github.com/datalab-to/surya",
+      "snippet": "Surya is a 650M param OCR model with these features: Accuracy - scores 83.3% on olmOCR-bench (top under 3B params) Speed - throughput of 5 pages/s on an RTX 5090 Multilingual - scores 87.2% on an internal benchmark set of 91 languages (more here) Layout analysis (table, image, header, etc.) with reading order Table recognition (rows + columns) We also ship smaller models for line-level text ..."
+    },
+    {
+      "title": "MY555/surya-fine-tuned-image-generator-V2 · Hugging Face",
+      "url": "https://huggingface.co/MY555/surya-fine-tuned-image-generator-V2",
+      "snippet": "AutoTrain SDXL LoRA DreamBooth - MY555/surya-fine-tuned-image-generator-V2"
+    },
+    {
+      "title": "Surya: Foundation Model for Heliophysics - arXiv.org",
+      "url": "https://arxiv.org/html/2508.14112v1",
+      "snippet": "Surya is the first foundation model in heliophysics that uses time advancement as a pretext task on full-resolution SDO&#x27;s data. Its novel architecture and performance suggest that the model is able to learn the underlying physics behind solar evolution."
+    }
+  ]
+}

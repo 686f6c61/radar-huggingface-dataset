@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jensjepsen/danish-lm-400m-grpo-mixed-v1-best1-step3375",
+  "slug": "jensjepsen-danish-lm-400m-grpo-mixed-v1-best1-step3375",
+  "author": "jensjepsen",
+  "url": "https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed-v1-best1-step3375",
+  "created_at": "2026-08-14T18:01:57.000Z",
+  "updated_at": "2026-08-14T19:01:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "danish",
+    "grpo",
+    "instruction-following",
+    "gsm8k",
+    "ifeval",
+    "text-generation",
+    "da",
+    "base_model:jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+    "base_model:finetune:jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 208,
+  "trending_score": 0,
+  "parameters": 414707712,
+  "parameters_human": "414.7M",
+  "storage_bytes": 1658847408,
+  "storage_human": "1.7 GB",
+  "base_model": "jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jensjepsen/danish-lm-400m-base-ropext2048-v1 · Hugging Face",
+      "url": "https://huggingface.co/jensjepsen/danish-lm-400m-base-ropext2048-v1",
+      "snippet": "RoPE-extended (512 → 2048 context) continuation of jensjepsen/danish-lm-400m-base-ckpt310k. Same architecture, same weights initialized from the base, then continued pretraining for ~160M tokens with rope_theta bumped from 10,000 → 500,000 and max_position_embeddings bumped from 512 → 2048."
+    },
+    {
+      "title": "jensjepsen/danish-lm-400m-sft-v5 · Hugging Face",
+      "url": "https://huggingface.co/jensjepsen/danish-lm-400m-sft-v5",
+      "snippet": "400M-param Danish LM, SFT&#x27;d on a 9-source mix. Successor to danish-lm-400m-sft-v4 — same base, same optimizer, only change is upgrading the instruction-following dataset from IF-v1 → IF-v2 (150 render variants, 5-way combos, held-out eval)."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. 1M+ downloads on Hugging Face. Qwythos-9B-v2, Qwythos-27B-v1, and Abacus — open weights, open code, open datasets."
+    },
+    {
+      "title": "small-esperanto-llm/scripts/launch_da_ropext_2048.sh at main ... - GitHub",
+      "url": "https://github.com/jensjepsen/small-esperanto-llm/blob/main/scripts/launch_da_ropext_2048.sh",
+      "snippet": "# Danish RoPE-extension continued pretrain: 512 → 2048 context. # Loads jensjepsen/danish-lm-400m-base-ckpt310k, bumps rope_theta # 10000 → 500000 and max_position_embeddings 512 → 2048, then continues # pretraining on Danish long-doc data for ~500M tokens to teach the # attention weights to ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "airagrp/Qwen3.8-27B-oQ5-mtp",
+  "slug": "airagrp-qwen3-8-27b-oq5-mtp",
+  "author": "airagrp",
+  "url": "https://huggingface.co/airagrp/Qwen3.8-27B-oQ5-mtp",
+  "created_at": "2026-08-18T22:09:14.000Z",
+  "updated_at": "2026-08-18T22:17:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5756598512,
+  "parameters_human": "5.76B",
+  "storage_bytes": 20303725658,
+  "storage_human": "20.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "airagrp/Qwen3.8-27B-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/airagrp/Qwen3.8-27B-oQ4e-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "Qwen3.8-27B-oQ5-mtp on M5 Max (40c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/performance/q81b6wvw",
+      "snippet": "837.4 PP tok/s, 46.8 TG tok/s — Qwen3.8-27B-oQ5-mtp (5bit) on M5 Max (40c) 64GB"
+    }
+  ]
+}

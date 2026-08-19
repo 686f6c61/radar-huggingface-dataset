@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ibnzterrell/g1_kozak",
+  "slug": "ibnzterrell-g1_kozak",
+  "author": "ibnzterrell",
+  "url": "https://huggingface.co/ibnzterrell/g1_kozak",
+  "created_at": "2026-08-17T06:55:41.000Z",
+  "updated_at": "2026-08-17T06:56:36.000Z",
+  "license": "nvidia-groot-wbc",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "humanoid",
+    "whole-body-control",
+    "motion-tracking",
+    "unitree-g1",
+    "reinforcement-learning",
+    "isaac-lab",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59681115,
+  "storage_human": "60 MB",
+  "base_model": "nvidia/GR00T-WholeBodyControl",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

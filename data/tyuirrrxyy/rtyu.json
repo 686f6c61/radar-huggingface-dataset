@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tyuirrrxyy/Rtyu",
+  "slug": "tyuirrrxyy-rtyu",
+  "author": "Tyuirrrxyy",
+  "url": "https://huggingface.co/Tyuirrrxyy/Rtyu",
+  "created_at": "2026-08-17T18:10:23.000Z",
+  "updated_at": "2026-08-17T18:10:23.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models Directory | Tuturuuu",
+      "url": "https://tuturuuu.com/models",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    },
+    {
+      "title": "Microsoft Turing Universal Language Representation model, T-ULRv5, tops ...",
+      "url": "https://www.microsoft.com/en-us/research/blog/microsoft-turing-universal-language-representation-model-t-ulrv5-tops-xtreme-leaderboard-and-trains-100x-faster/",
+      "snippet": "T-ULRv5: An advancement across multiple AI axes T-ULRv5 is the latest addition to the family of Turing models, which represent a foundational part of Microsoft AI at Scale. This cross-lingual model incorporates our recent research on XLM-E and is capable of encoding text from 94 languages and representing them in a shared vector space."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "JustModels.ai | Create & Train Custom AI Models (No Code)",
+      "url": "https://www.justmodels.ai/",
+      "snippet": "JustModels.ai is the only no-code platform that combines custom LoRA model training, text-to-image, text-to-video, image-to-video, and ReelsRecreator in one place."
+    },
+    {
+      "title": "aippy.ai - Build What You Feel",
+      "url": "https://aippy.ai/",
+      "snippet": "Aippy is your AI-powered teammate for building full-stack apps, websites, tools, and games — no code needed. Create projects from prompts, remix templates, and edit visually. Build frontends, backends, chatbots, dashboards, and more — all in your browser, with just your ideas."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen-Image-Edit-2511-GGUF",
+  "slug": "unsloth-qwen-image-edit-2511-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF",
+  "created_at": "2025-12-20T02:31:59.000Z",
+  "updated_at": "2026-01-08T21:13:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "unsloth",
+    "qwen",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:quantized:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 566,
+  "downloads_30d": 228687,
+  "trending_score": 7,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 906896289174,
+  "storage_human": "906.9 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen-Image-Edit-2511-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen-Image-Edit-2511-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/Qwen-Image-Edit-2511-GGUF",
+      "snippet": "Read our How to Run Qwen-Image Guide! 💜 This is a GGUF quantized version of Qwen-Image-Edit-2511. unsloth/Qwen-Image-Edit-2511-GGUF uses Unsloth Dynamic 2.0 methodology for SOTA performance. Important layers are upcasted to higher precision. Uses tooling from ComfyUI-GGUF by city96. For more information on how to use and run the model in ComfyUI, read our guide."
+    },
+    {
+      "title": "README.md · main · ai-models/unsloth/Qwen-Image-Edit-2511-GGUF",
+      "url": "https://cnb.cool/ai-models/unsloth/Qwen-Image-Edit-2511-GGUF/-/blob/main/README.md",
+      "snippet": "This is a GGUF quantized version of Qwen-Image-Edit-2511. unsloth/Qwen-Image-Edit-2511-GGUF uses Unsloth Dynamic 2.0 methodology for SOTA performance. Important layers are upcasted to higher precision. Uses tooling from ComfyUI-GGUF by city96. For more information on how to use and run the model in ComfyUI, read our guide."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-GGUF: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen-image-edit-2511-gguf-unsloth",
+      "snippet": "Overview Qwen-Image-Edit-2511-GGUF is a quantized inference-optimized version of Alibaba&#x27;s Qwen-Image-Edit-2511 image editing model, maintained by unsloth. This model performs inpainting and guided image-to-image transformations using text prompts as direction, accepting one or multiple input images alongside natural language descriptions to produce edited outputs. The GGUF quantization uses ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "immersely/qwen35_9b_imu_motion",
+  "slug": "immersely-qwen35_9b_imu_motion",
+  "author": "immersely",
+  "url": "https://huggingface.co/immersely/qwen35_9b_imu_motion",
+  "created_at": "2026-08-18T06:55:41.000Z",
+  "updated_at": "2026-08-18T06:57:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711735,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B for Free on immers.cloud. Rent a GPU-powered server for ...",
+      "url": "https://en.immers.cloud/ai/Qwen/qwen3.5-9b/",
+      "snippet": "Qwen3.5-9B is a compact dense model with 9 billion parameters, retaining the key capabilities of the flagship versions in the series. Built on 32 layers, it utilizes the same hybrid architecture as the larger models: interleaving blocks with Gated DeltaNet and Gated Attention (in a 3:1 ratio), ensuring a balance between speed, accuracy, and ..."
+    },
+    {
+      "title": "dai/qwen35-9b • LM Studio Hub",
+      "url": "https://lmstudio.ai/dai/qwen35-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "The official Qwen API is provided by Alibaba Cloud Model Studio. Alibaba Cloud Model Studio provides first-class support for Qwen3.5, which is compatible with various API specifications, including OpenAI and Anthropic, making it simple for you to try Qwen3.5 in your own applications."
+    }
+  ]
+}

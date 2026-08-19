@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Fkazi/inframap-disaster-slm",
+  "slug": "fkazi-inframap-disaster-slm",
+  "author": "Fkazi",
+  "url": "https://huggingface.co/Fkazi/inframap-disaster-slm",
+  "created_at": "2026-08-15T21:36:55.000Z",
+  "updated_at": "2026-08-15T21:40:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 247,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Leveraging the DeepSeek large model: A framework for AI-assisted ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2772467025000211",
+      "snippet": "Abstract We proposes an AI-assisted framework for integrated natural disaster prevention and emergency response, leveraging the DeepSeek large language model (LLM) to advance intelligent decision-making in geohazard management."
+    },
+    {
+      "title": "Large language models and AI agents in disaster-resilient ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0951832026003133",
+      "snippet": "This paper presents a systematic framework for integrating large language models (LLMs) and AI agents into disaster-resilient infrastructure research. By examining seven key task domains—knowledge anchoring, prediction, assessment, intelligent design and simulation, data augmentation, embodied intelligence, and decision support—we show how LLMs and AI agents can reshape traditional ..."
+    },
+    {
+      "title": "[2505.08202] AI and Generative AI Transforming Disaster Management: A ...",
+      "url": "https://arxiv.org/abs/2505.08202",
+      "snippet": "Natural disasters, including earthquakes, wildfires and cyclones, bear a huge risk on human lives as well as infrastructure assets. An effective response to disaster depends on the ability to rapidly and efficiently assess the intensity of damage. Artificial Intelligence (AI) and Generative Artificial Intelligence (GenAI) presents a breakthrough solution, capable of combining knowledge from ..."
+    },
+    {
+      "title": "Structured AI decision-making in disaster management",
+      "url": "https://www.nature.com/articles/s41598-025-15317-w",
+      "snippet": "In response to these challenges, recent years have seen significant advancements in the introduction of AI for autonomous decision-making in disaster management. 3 explored the coordination of ..."
+    }
+  ]
+}

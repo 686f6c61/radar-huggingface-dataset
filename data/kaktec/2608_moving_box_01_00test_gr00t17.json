@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kaKTEC/2608_moving_box_01_00test_GR00T17",
+  "slug": "kaktec-2608_moving_box_01_00test_gr00t17",
+  "author": "kaKTEC",
+  "url": "https://huggingface.co/kaKTEC/2608_moving_box_01_00test_GR00T17",
+  "created_at": "2026-08-18T01:00:57.000Z",
+  "updated_at": "2026-08-18T01:04:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:kaKTEC/2608_moving_box_01_00test_20260817_143324",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaKTEC/2608_static01_01test_GR00T17 · Hugging Face",
+      "url": "https://huggingface.co/kaKTEC/2608_static01_01test_GR00T17",
+      "snippet": "GR00T N1.7 is an open, cross-embodiment foundation model from NVIDIA for generalized humanoid robot reasoning and skills. It uses a Cosmos-Reason2/Qwen3-VL backbone and a flow-matching action transformer to predict actions conditioned on vision, language, and proprioception."
+    },
+    {
+      "title": "Box | Login",
+      "url": "https://account.box.com/login",
+      "snippet": "Securely log in to your Box account and access your files and folders with ease."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Free 3D models, CAD files and 2D drawings - TraceParts",
+      "url": "https://www.traceparts.com/",
+      "snippet": "Design Library a huge choice of 3D models, CAD files and 2D drawings for MCAD, ECAD, PCB, CAE and BIM."
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    }
+  ]
+}

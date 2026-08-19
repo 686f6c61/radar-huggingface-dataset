@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Lie24/qwen38-mtp-head-4bit-mse",
+  "slug": "lie24-qwen38-mtp-head-4bit-mse",
+  "author": "Lie24",
+  "url": "https://huggingface.co/Lie24/qwen38-mtp-head-4bit-mse",
+  "created_at": "2026-08-17T05:23:32.000Z",
+  "updated_at": "2026-08-17T05:23:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66381312,
+  "parameters_human": "66.4M",
+  "storage_bytes": 238934093,
+  "storage_human": "239 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Layr-Labs/qwen-3.8-mtp-challenge: Qwen 3.8 27B MLX challenge ...",
+      "url": "https://github.com/Layr-Labs/qwen-3.8-mtp-challenge",
+      "snippet": "The default — and only — ranked track in this repository is qwen3.8-27b-mtp-v1: the Qwen 3.8 27B target drafts a block with its own native MTP head, verifies the block against itself, and decode advances by the longest correct prefix. benchmark.json IS the Qwen-MTP manifest (benchmark name mlxfast-challenge-dev-qwen38-mtp), the ranked ..."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    },
+    {
+      "title": "matvei-aleksandrovich/Qwen3.8-27B-MTP-4bit · Hugging Face",
+      "url": "https://huggingface.co/matvei-aleksandrovich/Qwen3.8-27B-MTP-4bit",
+      "snippet": "matvei-aleksandrovich / Qwen3.8-27B-MTP-4bit like 0 Text Generation MLX Safetensors qwen3_5_mtp speculative-decoding mtp qwen qwen3.8 apple-silicon 4-bit precision conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qwen-3.8-mtp-challenge/fixtures/qwen3_8_27b_mtp_head.sha256 at ... - GitHub",
+      "url": "https://github.com/Layr-Labs/qwen-3.8-mtp-challenge/blob/main/fixtures/qwen3_8_27b_mtp_head.sha256",
+      "snippet": "# compatibility assertions the head cannot be verified without. So the head # ~/qwen38-mtp-head held on the ai-server is box-local extraction scratch; what # this manifest pins, and what MLXFAST_QWEN_MTP_HEAD_DIR must contain # The whole-manifest shape pins move with this body, in this commit: # 31-tensor index, because that head was 4-bit group-64 and its 8 matrices"
+    }
+  ]
+}

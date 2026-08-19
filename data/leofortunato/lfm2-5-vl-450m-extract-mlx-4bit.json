@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "LeoFortunato/LFM2.5-VL-450M-Extract-MLX-4bit",
+  "slug": "leofortunato-lfm2-5-vl-450m-extract-mlx-4bit",
+  "author": "LeoFortunato",
+  "url": "https://huggingface.co/LeoFortunato/LFM2.5-VL-450M-Extract-MLX-4bit",
+  "created_at": "2026-08-19T01:25:53.000Z",
+  "updated_at": "2026-08-19T01:39:26.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_vl",
+    "mlx_vlm",
+    "liquid",
+    "lfm2.5",
+    "lfm2",
+    "edge",
+    "vision",
+    "extract",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "arxiv:2502.14786",
+    "arxiv:2511.23404",
+    "base_model:LiquidAI/LFM2.5-VL-450M-Extract",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-450M-Extract",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149678080,
+  "parameters_human": "149.7M",
+  "storage_bytes": 388026926,
+  "storage_human": "388 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M-Extract",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-VL-450M-Extract · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-450M-Extract",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-VL-450M-Extract - Liquid Docs - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-450m-extract",
+      "snippet": "← Back to Liquid Nanos LFM2.5-VL-450M-Extract is the compact vision extraction Nano for turning images into structured JSON. It uses the same YAML-schema prompting pattern as the larger VL Extract model while keeping the deployment footprint small."
+    },
+    {
+      "title": "LFM2.5-VL-450M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-450m",
+      "snippet": "Compact 450M vision-language model with enhanced performance for edge deployment ← Back to Vision Models LFM2.5-VL-450M is Liquid AI&#x27;s smallest vision-language model, building on LFM2-VL-450M with extended reinforcement learning for improved performance while maintaining the same compact deployment footprint."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-VL-450M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-450M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-VL-450M-Extract Benchmarks, Pricing & Speed (July 2026)",
+      "url": "https://benchlm.ai/models/lfm2-5-vl-450m-extract",
+      "snippet": "BenchLM is tracking LFM2.5-VL-450M-Extract, but this profile is currently excluded from the public leaderboard because it still lacks enough non-generated benchmark coverage to rank safely. Only non-generated public benchmark rows appear below. LFM2.5-VL-450M-Extract is a open weight model with a 128K token context window. It processes queries without explicit chain-of-thought reasoning ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "weifanjiang/qwen3-4b.speculators.dflash-ce01tv09-bs8-swa",
+  "slug": "weifanjiang-qwen3-4b-speculators-dflash-ce01tv09-bs8-swa",
+  "author": "weifanjiang",
+  "url": "https://huggingface.co/weifanjiang/qwen3-4b.speculators.dflash-ce01tv09-bs8-swa",
+  "created_at": "2026-08-12T21:55:25.000Z",
+  "updated_at": "2026-08-18T03:19:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 1008487296,
+  "parameters_human": "1.01B",
+  "storage_bytes": 2953664558,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · z-lab/Qwen3-4B-DFlash-b16 at main - Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3-4B-DFlash-b16/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "GitHub - vllm-project/speculators: A unified library for building ...",
+      "url": "https://github.com/vllm-project/speculators",
+      "snippet": "Speculators is a library for training speculative decoding draft models that deploy directly to LLM inference engines like vLLM. Speculative decoding is a lossless technique that speeds up LLM inference by using a smaller, faster draft model (i.e. \"the speculator\") to propose tokens, which are then verified by the larger base model, reducing latency without compromising output quality. The ..."
+    }
+  ]
+}

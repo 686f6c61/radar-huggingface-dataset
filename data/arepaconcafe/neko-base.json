@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "arepaconcafe/neko-base",
+  "slug": "arepaconcafe-neko-base",
+  "author": "arepaconcafe",
+  "url": "https://huggingface.co/arepaconcafe/neko-base",
+  "created_at": "2026-02-11T22:45:20.000Z",
+  "updated_at": "2026-08-19T03:31:32.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197622272205,
+  "storage_human": "197.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arepaconcafe/neko-base · Hugging Face",
+      "url": "https://huggingface.co/arepaconcafe/neko-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "arepaconcafe (Con Cafe) - Hugging Face",
+      "url": "https://huggingface.co/arepaconcafe",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 16 hours ago ... updated a dataset 9 days ago"
+    },
+    {
+      "title": "Free AI Art Generator: All the best AI models in one place",
+      "url": "https://creator.nightcafe.studio/",
+      "snippet": "NightCafe is the AI Art Generator designed for creativity and fun. Access all the best AI art models and join a supportive community of creators."
+    },
+    {
+      "title": "arepaconcafe (Con Cafe) - Hugging Face",
+      "url": "https://huggingface.co/arepaconcafe/datasets",
+      "snippet": "Recent Activity updated a model about 16 hours ago arepaconcafe/neko-base updated a dataset 9 days ago arepaconcafe/hy-little published a dataset 9 days ago arepaconcafe/hy-little View all activity"
+    },
+    {
+      "title": "arepaconcafe/neko-base · Discussions - Hugging Face",
+      "url": "https://huggingface.co/arepaconcafe/neko-base/discussions",
+      "snippet": "arepaconcafe / neko-base like 0 License:gpl-3.0 Model card FilesFiles and versions xet Community New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    }
+  ]
+}

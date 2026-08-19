@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zSQ2WSA/MyAwesomeModel",
+  "slug": "zsq2wsa-myawesomemodel",
+  "author": "zSQ2WSA",
+  "url": "https://huggingface.co/zSQ2WSA/MyAwesomeModel",
+  "created_at": "2026-08-19T01:30:19.000Z",
+  "updated_at": "2026-08-19T01:34:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zSQ2WSA/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/zSQ2WSA/MyAwesomeModel-TestRepository",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "zSQ2WSA (DASD) - Hugging Face",
+      "url": "https://huggingface.co/zSQ2WSA",
+      "snippet": "models1 zSQ2WSA/MyAwesomeModel-TestRepo Feature Extraction •Updated about 11 hours ago"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo huggingface.co api & asfafaf4546 MyAwesomeModel ...",
+      "url": "https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo",
+      "snippet": "MyAwesomeModel-TestRepo huggingface.co is an AI model on huggingface.co that provides MyAwesomeModel-TestRepo&#x27;s model effect (), which can be used instantly with this asfafaf4546 MyAwesomeModel-TestRepo model. huggingface.co supports a free trial of the MyAwesomeModel-TestRepo model, and also provides paid use of the MyAwesomeModel-TestRepo. Support call MyAwesomeModel-TestRepo model through ..."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    }
+  ]
+}

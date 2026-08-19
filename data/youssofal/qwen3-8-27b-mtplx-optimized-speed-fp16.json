@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed-FP16",
+  "slug": "youssofal-qwen3-8-27b-mtplx-optimized-speed-fp16",
+  "author": "Youssofal",
+  "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed-FP16",
+  "created_at": "2026-08-15T08:07:52.000Z",
+  "updated_at": "2026-08-15T22:47:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "macos",
+    "m1",
+    "m2",
+    "fp16",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "qwen",
+    "qwen3.8",
+    "mtp",
+    "mtplx",
+    "local-ai",
+    "coding",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 2320,
+  "trending_score": 0,
+  "parameters": 6086364400,
+  "parameters_human": "6.09B",
+  "storage_bytes": 21313695124,
+  "storage_human": "21.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed · Hugging Face",
+      "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed",
+      "snippet": "Instructions to use Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed-FP16 at main",
+      "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed-FP16/tree/main",
+      "snippet": "Instructions to use Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed-FP16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B-MTPLX-Optimized-Speed: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-mtplx-optimized-speed-youssofal",
+      "snippet": "Overview Qwen3.8-27B-MTPLX-Optimized-Speed is a 4-bit quantized version of Qwen 3.8 27B optimized for Apple Silicon Macs, built and maintained by Youssofal. The model retains the original multi-token-prediction (MTP) head, enabling MTPLX&#x27;s speculative decoding to draft multiple tokens ahead and verify them in a single pass, delivering 2-3x speedup compared to standard inference. The model ..."
+    },
+    {
+      "title": "GitHub - youssofal/MTPLX: 3x faster speeds on MLX | Qwen 3.8 27B ...",
+      "url": "https://github.com/youssofal/mtplx",
+      "snippet": "Recommended for coding: Qwen 3.6 27B Optimized Speed V2 is a dynamic 4-bit hybrid with hand-tuned sensitive parts kept at up to 16-bit. It is much higher quality than the original Optimized Speed model and faster on long agent tasks."
+    },
+    {
+      "title": "Qwen3.8 27B MTPLX Optimized Speed by Youssofal - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Youssofal%2FQwen3.8-27B-MTPLX-Optimized-Speed,5KE6X6UqFcJWVl2UtvR16v",
+      "snippet": "Rank the Qwen3.8 27B MTPLX Optimized Speed capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

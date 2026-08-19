@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "smllms/HyperCLOVA-X-SEED-MISHULTA-v2",
+  "slug": "smllms-hyperclova-x-seed-mishulta-v2",
+  "author": "smllms",
+  "url": "https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-v2",
+  "created_at": "2026-08-18T01:54:37.000Z",
+  "updated_at": "2026-08-18T01:58:32.000Z",
+  "license": "hyperclova-x-seed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "hyperclovax",
+    "korean",
+    "reasoning",
+    "k-ds-hackathon",
+    "fine-tuned",
+    "custom_code",
+    "ko",
+    "dataset:HAERAE-HUB/KMMLU",
+    "dataset:kuotient/orca-math-word-problems-193k-korean",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "base_model:finetune:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 14748112896,
+  "parameters_human": "14.75B",
+  "storage_bytes": 29496274104,
+  "storage_human": "29.5 GB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smllms/HyperCLOVA-X-SEED-MISHULTA-v1 · Hugging Face",
+      "url": "https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-v1",
+      "snippet": "라이선스 베이스 모델의 HyperCLOVA X SEED Model License Agreement 를 따릅니다. 라이선스 §3.1에 따라 파생 모델명은 \"HyperCLOVA X\"로 시작합니다."
+    },
+    {
+      "title": "HyperCLOVA X · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.13.0/en/model_doc/hyperclovax",
+      "snippet": "HyperCLOVA X SEED Think is NAVER Cloud&#x27;s language model combining pruning and knowledge distillation with advanced reasoning capabilities. The 14B model features a Transformer-based architecture with Peri-Layer Normalization and Maximal Update Parameterization (μP), 14.74B parameters, and 32k context length."
+    },
+    {
+      "title": "HyperCLOVA X Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2404.01954v1",
+      "snippet": "The model is evaluated across various benchmarks, including comprehensive reasoning, knowledge, commonsense, factuality, coding, math, chatting, instruction-following, and harmlessness, in both Korean and English. HyperCLOVA X exhibits strong reasoning capabilities in Korean backed by a deep understanding of the language and cultural nuances."
+    },
+    {
+      "title": "HyperCLOVA X Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2404.01954",
+      "snippet": "The model is evaluated across various benchmarks, including comprehensive reasoning, knowledge, commonsense, factuality, coding, math, chatting, instruction-following, and harmlessness, in both Korean and En-glish. HyperCLOVA X exhibits strong reasoning capabilities in Korean backed by a deep understanding of the language and cultural nuances."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/hyperclovax.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/hyperclovax.md",
+      "snippet": "HyperCLOVA X Overview HyperCLOVA X SEED Think is NAVER Cloud&#x27;s language model combining pruning and knowledge distillation with advanced reasoning capabilities. The 14B model features a Transformer-based architecture with Peri-Layer Normalization and Maximal Update Parameterization (μP), 14.74B parameters, and 32k context length."
+    }
+  ]
+}

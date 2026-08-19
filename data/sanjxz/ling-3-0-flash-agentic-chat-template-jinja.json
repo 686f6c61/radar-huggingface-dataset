@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sanjxz/Ling-3.0-Flash-Agentic-Chat-Template-Jinja",
+  "slug": "sanjxz-ling-3-0-flash-agentic-chat-template-jinja",
+  "author": "sanjxz",
+  "url": "https://huggingface.co/sanjxz/Ling-3.0-Flash-Agentic-Chat-Template-Jinja",
+  "created_at": "2026-08-18T11:19:46.000Z",
+  "updated_at": "2026-08-18T11:19:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "en",
+    "base_model:froggeric/Qwen-Fixed-Chat-Templates",
+    "base_model:finetune:froggeric/Qwen-Fixed-Chat-Templates",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chat_template.jinja · inclusionAI/Ling-3.0-flash-fp8 at main",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-fp8/blob/main/chat_template.jinja",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - jndiogo/LLM-chat-templates: Jinja2 chat templates for popular ...",
+      "url": "https://github.com/jndiogo/LLM-chat-templates",
+      "snippet": "Jinja2 chat templates for popular LLM models. Contribute to jndiogo/LLM-chat-templates development by creating an account on GitHub."
+    },
+    {
+      "title": "Ant Ling",
+      "url": "https://www.ant-ling.com/en/",
+      "snippet": "What&#x27;s New Official Announcements & Tech Insights All News Ling-3.0-flash: Intelligence Wins Through Density @AntLingAGI 2026-07-24 Ring-2.6-1T is now open source @AntLingAGI 2026-05-14"
+    }
+  ]
+}

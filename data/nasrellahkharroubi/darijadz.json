@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nasrellahkharroubi/DarijaDz",
+  "slug": "nasrellahkharroubi-darijadz",
+  "author": "nasrellahkharroubi",
+  "url": "https://huggingface.co/nasrellahkharroubi/DarijaDz",
+  "created_at": "2026-08-17T21:12:43.000Z",
+  "updated_at": "2026-08-17T21:13:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "algerian-darija",
+    "nlp",
+    "ar",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 548794820,
+  "storage_human": "549 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nasrellahkharroubi/DarijaDz · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/nasrellahkharroubi/DarijaDz",
+      "snippet": "Datasets: nasrellahkharroubi / DarijaDz like 1 Tasks: Text Generation Text Classification Token Classification Modalities: Text Formats: json Languages: Arabic Size: 1M - 10M Tags: algerian-darija nlp Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default ..."
+    },
+    {
+      "title": "nasrellahkharroubi (nasrellah kharroubi) - Hugging Face",
+      "url": "https://huggingface.co/nasrellahkharroubi",
+      "snippet": "Algerian Darija Stochastic Arabizi Transliterator 🔀 Convert Algerian Darija from Arabic to Arabizi nasrellahkharroubi about 4 hours ago"
+    },
+    {
+      "title": "Arabic and Darija NLP Resources - GitHub",
+      "url": "https://github.com/MoroccoAI/Arabic-Darija-NLP-Resources",
+      "snippet": "A curated collection of resources and repositories for Natural Language Processing (NLP) tasks specific to Darija, the Moroccan Arabic dialect. This repository aims to provide students and research..."
+    },
+    {
+      "title": "arXiv:2409.17912v2 [cs.CL] 11 Nov 2024",
+      "url": "https://arxiv.org/pdf/2409.17912",
+      "snippet": "Abstract We introduce Atlas-Chat, the first-ever collec-tion of LLMs specifically developed for dialec-tal Arabic. Focusing on Moroccan Arabic, also known as Darija, we construct our instruction dataset by consolidating existing Darija lan-guage resources, creating novel datasets both manually and synthetically, and translating En-glish instructions with stringent quality con-trol. , 1, and ..."
+    },
+    {
+      "title": "Algerian Darija Stochastic Arabizi Transliterator - Hugging Face",
+      "url": "https://huggingface.co/spaces/nasrellahkharroubi/darija-arabizi-transliterator",
+      "snippet": "This app takes Algerian Darija written in Arabic letters and changes it into Latin (Arabizi) spelling. Just type or paste your Arabic‑script text, and the tool will return a Latin‑script version, o..."
+    }
+  ]
+}

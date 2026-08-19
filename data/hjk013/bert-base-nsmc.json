@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hjk013/bert-base-nsmc",
+  "slug": "hjk013-bert-base-nsmc",
+  "author": "hjk013",
+  "url": "https://huggingface.co/hjk013/bert-base-nsmc",
+  "created_at": "2026-08-18T10:06:08.000Z",
+  "updated_at": "2026-08-18T10:07:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jangsukim/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/jangsukim/bert-base-nsmc",
+      "snippet": "bert-base-nsmc This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "yousunny/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/yousunny/bert-base-nsmc",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HJK013 · GitHub",
+      "url": "https://github.com/hjk013",
+      "snippet": "HJK013 has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    },
+    {
+      "title": "ohminsang / bert_base_nsmc Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/ohminsang/bert_base_nsmc/f109967226f64b9a291314d56ece36267c4c1901/overview",
+      "snippet": "Discover potential threats in the ohminsang / bert_base_nsmc model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    }
+  ]
+}

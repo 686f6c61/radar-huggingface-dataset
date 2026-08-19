@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "answerdotai/answerai-colbert-small-v1",
+  "slug": "answerdotai-answerai-colbert-small-v1",
+  "author": "answerdotai",
+  "url": "https://huggingface.co/answerdotai/answerai-colbert-small-v1",
+  "created_at": "2024-08-12T13:02:24.000Z",
+  "updated_at": "2026-08-17T21:43:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "ColBERT",
+    "multi-vector",
+    "RAGatouille",
+    "passage-retrieval",
+    "en",
+    "arxiv:2407.20750",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 160,
+  "downloads_30d": 205917,
+  "trending_score": 0,
+  "parameters": 33396864,
+  "parameters_human": "33.4M",
+  "storage_bytes": 992935686,
+  "storage_human": "993 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "answerdotai/answerai-colbert-small-v1 · Hugging Face",
+      "url": "https://huggingface.co/answerdotai/answerai-colbert-small-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "answerai-colbert-small-v1: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/answerai-colbert-small-v1-answerdotai",
+      "snippet": "Overview answerai-colbert-small-v1 is a multi-vector retrieval model with 33 million parameters developed by answerdotai that uses the JaColBERTv2.5 training recipe to achieve state-of-the-art performance on dense retrieval benchmarks despite its compact size. The model implements ColBERT&#x27;s late interaction architecture, which scores fine-grained similarity between queries and passages rather ..."
+    },
+    {
+      "title": "README.md · answerdotai/answerai-colbert-small-v1 at main",
+      "url": "https://huggingface.co/answerdotai/answerai-colbert-small-v1/blob/main/README.md",
+      "snippet": "answerai-colbert-small-v1 answerai-colbert-small-v1 is a new, proof-of-concept model by Answer.AI, showing the strong performance multi-vector models with the new JaColBERTv2.5 training recipe and some extra tweaks can reach, even with just 33 million parameters."
+    },
+    {
+      "title": "Small but Mighty: Introducing answerai-colbert-small - Answer.AI",
+      "url": "https://www.answer.ai/posts/2024-08-13-small-but-mighty-colbert.html",
+      "snippet": "A couple weeks ago, we released JaColBERTv2.5, using an updated ColBERT training recipe to create the state-of-the-art Japanese retrieval model. Today, we&#x27;re introducing a new model, answerai-colbert-small-v1 (🤗), a proof of concept for smaller, faster, modern ColBERT models. This new model builds upon the JaColBERTv2.5 recipe and has just 33 million parameters, meaning it&#x27;s able to ..."
+    },
+    {
+      "title": "answerdotai/answerai-colbert-small-v1 - Hugging Face Hub Pac... - Socket",
+      "url": "https://socket.dev/huggingface/package/answerdotai/answerai-colbert-small-v1",
+      "snippet": "answerai-colbert-small-v1 answerai-colbert-small-v1 is a new, proof-of-concept model by Answer.AI, showing the strong performance multi-vector models with the new JaColBERTv2.5 training recipe and some extra tweaks can reach, even with just 33 million parameters."
+    }
+  ]
+}

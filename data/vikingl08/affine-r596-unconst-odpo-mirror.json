@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vikingL08/Affine-r596-unconst-odpo-mirror",
+  "slug": "vikingl08-affine-r596-unconst-odpo-mirror",
+  "author": "vikingL08",
+  "url": "https://huggingface.co/vikingL08/Affine-r596-unconst-odpo-mirror",
+  "created_at": "2026-08-17T11:58:18.000Z",
+  "updated_at": "2026-08-17T11:58:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "affine",
+    "sn120",
+    "mirror",
+    "analysis",
+    "base_model:unconst/Affine-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases · toeverything/AFFiNE - GitHub",
+      "url": "https://github.com/toeverything/AFFiNE/releases",
+      "snippet": "This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit - **Bug Fixes** - Improved connectivity for AI services configured with a global location while preserving support for regional locations. - Failed audio transcription jobs can now be restarted without recreating the job."
+    },
+    {
+      "title": "Your First API Call | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/",
+      "snippet": "Your First API Call The DeepSeek API uses an API format compatible with OpenAI/Anthropic. By modifying the configuration, you can use the OpenAI/Anthropic SDK or softwares compatible with the OpenAI/Anthropic API to access the DeepSeek API."
+    },
+    {
+      "title": "AFFiNE Product Updates, Changelog, Release Notes",
+      "url": "https://affine.pro/what-is-new",
+      "snippet": "Follow AFFiNE product updates, release notes, and changelog entries for new features, improvements, bug fixes, community links, and GitHub release history."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-h64-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h64-lora",
+      "snippet": "Instructions to use unconst/Affine-5czsc2fc98-h64-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use unconst/Affine-5czsc2fc98-h64-lora with PEFT:"
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-h89-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h89-lora",
+      "snippet": "Instructions to use unconst/Affine-5czsc2fc98-h89-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use unconst/Affine-5czsc2fc98-h89-lora with PEFT:"
+    }
+  ]
+}

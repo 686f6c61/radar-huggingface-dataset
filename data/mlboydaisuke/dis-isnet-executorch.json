@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/DIS-ISNet-ExecuTorch",
+  "slug": "mlboydaisuke-dis-isnet-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/DIS-ISNet-ExecuTorch",
+  "created_at": "2026-08-14T04:28:27.000Z",
+  "updated_at": "2026-08-15T05:13:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "executorch-pte",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 485571405,
+  "storage_human": "486 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pytorch/executorch: On-device AI across mobile, embedded and ...",
+      "url": "https://github.com/pytorch/executorch",
+      "snippet": "ExecuTorch On-device AI inference powered by PyTorch ExecuTorch is PyTorch&#x27;s unified solution for deploying AI models on-device—from smartphones to microcontrollers—built for privacy, performance, and portability. It powers Meta&#x27;s on-device AI across Instagram, WhatsApp, Quest 3, Ray-Ban Meta Smart Glasses, and more."
+    },
+    {
+      "title": "mlboydaisuke/EfficientNet-B1-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/EfficientNet-B1-ExecuTorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlboydaisuke/PIDNet-S-Cityscapes-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/PIDNet-S-Cityscapes-ExecuTorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2605.08195] ExecuTorch -- A Unified PyTorch Solution to Run AI Models ...",
+      "url": "https://arxiv.org/abs/2605.08195",
+      "snippet": "We introduce ExecuTorch, a unified PyTorch-native deployment framework for edge AI. ExecuTorch enables seamless deployment of machine learning models across heterogeneous compute environments."
+    },
+    {
+      "title": "DIS/IS-Net/models/isnet.py at main · xuebinqin/DIS · GitHub",
+      "url": "https://github.com/xuebinqin/DIS/blob/main/IS-Net/models/isnet.py",
+      "snippet": "This is the repo for our new project Highly Accurate Dichotomous Image Segmentation - DIS/IS-Net/models/isnet.py at main · xuebinqin/DIS"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ssuleiman/simrig-vision-cartpole",
+  "slug": "ssuleiman-simrig-vision-cartpole",
+  "author": "ssuleiman",
+  "url": "https://huggingface.co/ssuleiman/simrig-vision-cartpole",
+  "created_at": "2026-08-18T01:52:08.000Z",
+  "updated_at": "2026-08-18T01:53:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "brax",
+  "languages": [],
+  "tags": [
+    "brax",
+    "reinforcement-learning",
+    "mujoco",
+    "simrig",
+    "vision",
+    "cartpole",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 644649,
+  "storage_human": "644649 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Su1eym4n/simrig: Turn MuJoCo robots into trained policies with ...",
+      "url": "https://github.com/Su1eym4n/simrig",
+      "snippet": "Turn MuJoCo robots into trained policies with AI-guided task creation, PPO training, evaluation, and interactive previews. - Su1eym4n/simrig"
+    },
+    {
+      "title": "ssuleiman (Suleiman Sulaimanov) - Hugging Face",
+      "url": "https://huggingface.co/ssuleiman",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 9 days ago ... published a dataset 9 days ago"
+    },
+    {
+      "title": "Training the Cartpole — Getting Started With Isaac Lab",
+      "url": "https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/train-your-first-robot-with-isaac-lab/04-the-cartpole-problem.html",
+      "snippet": "Training the Cartpole # Let&#x27;s start by going through the process with an example provided by Isaac Lab&#x27;s project template. We&#x27;ll analyze, train, and evaluate this example to get ourselves familiar with the process. Then in the next module, we&#x27;ll do a more custom, involved training project. The Cartpole Problem # Today&#x27;s task is to solve a problem known as the \"cartpole.\" This is ..."
+    },
+    {
+      "title": "CartPole",
+      "url": "https://cartpole.lilwg.com/",
+      "snippet": "Try to balance the pole yourself in HUMAN mode, or switch to AI AGENT to train a reinforcement learning algorithm to do it automatically. Pick an algorithm, hit TRAIN AGENT, and watch it learn over hundreds of episodes."
+    },
+    {
+      "title": "sb3/dqn-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/sb3/dqn-CartPole-v1",
+      "snippet": "This is a trained model of a DQN agent playing CartPole-v1 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    }
+  ]
+}

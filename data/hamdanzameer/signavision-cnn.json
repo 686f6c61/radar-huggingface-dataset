@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hamdanzameer/signavision-cnn",
+  "slug": "hamdanzameer-signavision-cnn",
+  "author": "hamdanzameer",
+  "url": "https://huggingface.co/hamdanzameer/signavision-cnn",
+  "created_at": "2026-08-14T17:53:05.000Z",
+  "updated_at": "2026-08-14T17:54:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "image-classification",
+    "computer-vision",
+    "sign-language",
+    "asl",
+    "cnn",
+    "tensorflow",
+    "artificial-neural-networks",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5641972,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign Language Interpreter (SignaVision) - Zenodo",
+      "url": "https://zenodo.org/records/20071850",
+      "snippet": "This report presents the design and implementation of a real-time American Sign Language (ASL) recognition system using computer vision and deep learning techniques. We use MediaPipe for hand landmark detection, OpenCV for image pre-processing and a Convolution Neural Network (CNN) for gesture classification. The system provides a solution to bridge the communication gap between sign language ..."
+    },
+    {
+      "title": "PDF Sign Language Interpreter (SignaVision) - Zenodo",
+      "url": "https://zenodo.org/records/20071850/files/SignaVIsion%20Research%20Journal.pdf?download=1",
+      "snippet": "The system&#x27;s design focuses on robustness and user-friendliness, addressing challenges such as background noise, inconsistent lighting, and gesture similarity by simplifying gesture inputs to skeletal landmark representations. Through the integration of machine learning and computer vision techniques, the model generalizes well across diverse users and environments. Additionally, a text-to ..."
+    },
+    {
+      "title": "GitHub - mteja03/SignVision-AI: SignVision is an AI-powered sign ...",
+      "url": "https://github.com/mteja03/SignVision-AI",
+      "snippet": "The accuracy and loss curves of SignVision AI&#x27;s CNN model demonstrate its strong learning capability. The training and testing accuracy consistently improve, reaching above 95%, indicating high reliability in sign language recognition. The loss function decreases steadily, showing effective learning and minimal overfitting. These results highlight the model&#x27;s robust performance, ensuring ..."
+    },
+    {
+      "title": "Signature Verification Using CNN Deep Learning-Based Approach",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-97-3851-9_41",
+      "snippet": "Motivation to these problems, a novel method is proposed for reliably recognizing signatures in documents and performing identification checking using a CNN-based deep learning algorithm. The proposed algorithm&#x27;s validity is determined by the matching sign with the online signature database."
+    },
+    {
+      "title": "Sign Language Interpreter (SignaVision) - Semantic Scholar",
+      "url": "https://www.semanticscholar.org/paper/Sign-Language-Interpreter-(SignaVision)-Aashrayam-INGH/19af879994f3ed2ccd05c6dac42468435276e8f0",
+      "snippet": "This project presents a real-time vision-based system that bridges the gap by translating ASL fingerspelling gestures into both text and audible speech, and highlights the potential of AI-driven solutions to enhance accessibility and foster inclusivity in digital communication platforms. - Communication is a fundamental human need, yet millions of individuals with hearing and speech ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "LIANGXU123/ROSE-CD",
+  "slug": "liangxu123-rose-cd",
+  "author": "LIANGXU123",
+  "url": "https://huggingface.co/LIANGXU123/ROSE-CD",
+  "created_at": "2026-08-13T04:50:33.000Z",
+  "updated_at": "2026-08-17T22:58:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ROSE-CD",
+    "arxiv:2507.05688",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12564854922,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LIANGXU123/ROSE-CD · Hugging Face",
+      "url": "https://huggingface.co/LIANGXU123/ROSE-CD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - LiangXu123/ROSE-CD: IEEE WASPAA Oral 2025",
+      "url": "https://github.com/LiangXu123/ROSE-CD",
+      "snippet": "IEEE WASPAA Oral 2025. Contribute to LiangXu123/ROSE-CD development by creating an account on GitHub."
+    },
+    {
+      "title": "LIANGXU123 (LIANG XU) - Hugging Face",
+      "url": "https://huggingface.co/LIANGXU123",
+      "snippet": "ROSE CD 💻 Robust One-step Speech Enhancement via Consistency Distillat LIANGXU123 Jun 8 No application file Agents"
+    },
+    {
+      "title": "LIANGXU123 (LIANG XU) - Hugging Face",
+      "url": "https://huggingface.co/LIANGXU123/models",
+      "snippet": "Recent Activity updated a modelabout 6 hours ago LIANGXU123/ROSE-CD published a modelabout 6 hours ago LIANGXU123/ROSE-CD updated a modelabout 6 hours ago LIANGXU123/DriftSE View all activity"
+    },
+    {
+      "title": "LiangXu123 - GitHub",
+      "url": "https://github.com/LiangXu123",
+      "snippet": "PhD student in VUW, New Zealand. LiangXu123 has 76 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

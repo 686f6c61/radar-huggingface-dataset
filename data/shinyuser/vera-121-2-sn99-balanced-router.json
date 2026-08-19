@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ShinyUser/vera-121-2-sn99-balanced-router",
+  "slug": "shinyuser-vera-121-2-sn99-balanced-router",
+  "author": "ShinyUser",
+  "url": "https://huggingface.co/ShinyUser/vera-121-2-sn99-balanced-router",
+  "created_at": "2026-08-03T10:42:44.000Z",
+  "updated_at": "2026-08-16T09:08:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45617,
+  "storage_human": "45617 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ShinyUser/sn99-miner1-v9 · Hugging Face",
+      "url": "https://huggingface.co/ShinyUser/sn99-miner1-v9",
+      "snippet": "ShinyUser / sn99-miner1-v9 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "ShinyUser/ShinyModel · Hugging Face",
+      "url": "https://huggingface.co/ShinyUser/ShinyModel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model router for Microsoft Foundry concepts - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router",
+      "snippet": "Model router is a trained language model that intelligently routes your prompts in real time to the most suitable large language model (LLM). You deploy model router like any other Foundry model. Thus, it delivers high performance while saving on costs, reducing latencies, and increasing responsiveness, while maintaining comparable quality, all packaged as a single model deployment."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "Cursor Router: Auto Model Selection, 60% Lower Cost - explainx.ai",
+      "url": "https://www.explainx.ai/blog/cursor-router-auto-model-selection-july-2026",
+      "snippet": "Cursor Router picks the right model per task automatically — trained on 600K+ requests, matching frontier quality at 60% lower cost."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sundaycoil/alert-router",
+  "slug": "sundaycoil-alert-router",
+  "author": "sundaycoil",
+  "url": "https://huggingface.co/sundaycoil/alert-router",
+  "created_at": "2026-04-09T06:06:04.000Z",
+  "updated_at": "2026-08-18T10:10:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sundaycoil/alert-router · Hugging Face",
+      "url": "https://huggingface.co/sundaycoil/alert-router",
+      "snippet": "sundaycoil / alert-router like 7 Model card FilesFiles and versions xet Community Deploy Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "sundaycoil (Mason) - Hugging Face",
+      "url": "https://huggingface.co/sundaycoil/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 6 hours ago ... updated a model about 6 hours ago"
+    },
+    {
+      "title": "Alert Router Review and Pricing | AI Cambodia",
+      "url": "https://www.aicambodia.com/ai/hf-sundaycoil-alert-router",
+      "snippet": "Learn everything about Alert Router. Read verified details, pricing tiers, and find out how this AI tool can help you choose with confidence today."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    },
+    {
+      "title": "Models - TokenRouter",
+      "url": "https://www.tokenrouter.com/models/",
+      "snippet": "Browse and compare available AI models on TokenRouter - OpenAI, Claude, Gemini, Llama, Mistral, and more."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "k232sjsj/kling-motio-control",
+  "slug": "k232sjsj-kling-motio-control",
+  "author": "k232sjsj",
+  "url": "https://huggingface.co/k232sjsj/kling-motio-control",
+  "created_at": "2026-08-17T21:53:10.000Z",
+  "updated_at": "2026-08-17T21:53:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "generated-from-code",
+    "kling-motio-control",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kling AI Motion Control | Character Animation & Motion Capture Tool",
+      "url": "https://kling.ai/feature/ai-motion-control",
+      "snippet": "Kling AI Motion Control replicates human movement and facial expressions with zero distortion. Master character animation and motion capture using your reference videos now."
+    },
+    {
+      "title": "Free AI Motion Control Video Generator - Kling Motion",
+      "url": "https://www.klingmotion.com/free-ai-motion-control",
+      "snippet": "Try a free AI motion control video generator online. Upload a reference video and image to create motion-controlled AI videos with Kling Motion."
+    },
+    {
+      "title": "Kling Motion Control - AI Motion Control for Image to Video",
+      "url": "https://motioncontrol.app/",
+      "snippet": "Choose a Model and Generate Choose Kling Motion Control 2.6 or 3.0, then generate your video. The model applies motion transfer to your image and outputs a cinematic AI video with controllable movement in minutes."
+    },
+    {
+      "title": "Kling-MotionControl Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2603.03160v1",
+      "snippet": "1 Introduction Figure 1: Given a reference image and a driving video, Kling-MotionControl generates high-fidelity videos where the reference subject faithfully mimics multi-granular driving motions, encompassing body movements, facial expressions, and hand gestures. Our results demonstrate precise fine-grained control, robustness against rapid and complex dynamics, and natural cross-identity ..."
+    },
+    {
+      "title": "Kling Motion Control - Precise AI Motion Transfer Animation",
+      "url": "https://www.klingmotion.com/",
+      "snippet": "Kling Motion Control enables precise AI motion transfer for characters, delivering realistic actions, expressive gestures, and consistent motion control."
+    }
+  ]
+}

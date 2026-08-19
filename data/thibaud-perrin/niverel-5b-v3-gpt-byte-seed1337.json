@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "thibaud-perrin/niverel-5b-v3-gpt-byte-seed1337",
+  "slug": "thibaud-perrin-niverel-5b-v3-gpt-byte-seed1337",
+  "author": "thibaud-perrin",
+  "url": "https://huggingface.co/thibaud-perrin/niverel-5b-v3-gpt-byte-seed1337",
+  "created_at": "2026-08-16T20:10:20.000Z",
+  "updated_at": "2026-08-16T20:10:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "niverel",
+  "languages": [],
+  "tags": [
+    "niverel",
+    "byte-level",
+    "mamba",
+    "h-net",
+    "research",
+    "svg",
+    "dataset:thibaud-perrin/niverel-5b-research-svg-v5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2079288714,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:31:11.564Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thibaud Perrin - GitHub",
+      "url": "https://github.com/thibaud-perrin",
+      "snippet": "A graph representing thibaud-perrin&#x27;s contributions from July 06, 2025 to July 07, 2026. The contributions are 74% commits, 15% pull requests, 7% issues, 4% code review."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Tibo (@thsottiaux) / X",
+      "url": "https://x.com/thsottiaux",
+      "snippet": "We&#x27;re expanding our cybersecurity initiative Daybreak and introducing GPT-5.6-Cyber, a new model for advanced, authorized cybersecurity work. As the threat landscape evolves, we&#x27;re putting frontier intelligence in the hands of trusted defenders before attackers can deploy"
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 launches with our most robust safeguards to date, designed to be resilient against determined and adaptive misuse without broadly limiting legitimate work. Before general availability, we put the models and safeguards through our most extensive evaluation period yet, combining human red teaming with large-scale automated testing."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "MicroFlare/microFlare-v1",
+  "slug": "microflare-microflare-v1",
+  "author": "MicroFlare",
+  "url": "https://huggingface.co/MicroFlare/microFlare-v1",
+  "created_at": "2026-08-10T21:54:39.000Z",
+  "updated_at": "2026-08-14T23:31:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 14888040800,
+  "storage_human": "14.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

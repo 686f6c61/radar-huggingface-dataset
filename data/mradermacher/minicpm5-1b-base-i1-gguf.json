@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-1B-Base-i1-GGUF",
+  "slug": "mradermacher-minicpm5-1b-base-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-1B-Base-i1-GGUF",
+  "created_at": "2026-08-18T03:25:34.000Z",
+  "updated_at": "2026-08-18T04:37:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "llama",
+    "text-generation",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "base_model:openbmb/MiniCPM5-1B-Base",
+    "base_model:quantized:openbmb/MiniCPM5-1B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 13751869984,
+  "storage_human": "13.8 GB",
+  "base_model": "openbmb/MiniCPM5-1B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/MiniCPM5-1B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MiniCPM5-1B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/MiniCPM5-1B-heretic-i1-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/MiniCPM5-1B-heretic-i1-GGUF/tree/main",
+      "snippet": "mradermacher / MiniCPM5-1B-heretic-i1-GGUF like 0 Transformers GGUF English minicpm5 heretic abliteration mit decensored imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5-1B: A SOTA 1B on-device LLM, small ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA."
+    },
+    {
+      "title": "MiniCPM5 1B — 1.08B Dense LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/minicpm5-1b",
+      "snippet": "MiniCPM5 1B: 1.08B parameters, 128K context, chat, reasoning, multilingual. 7 benchmarks, 6 quantizations. VRAM requirements, speed estimates, and Ollama commands."
+    },
+    {
+      "title": "openbmb/minicpm5",
+      "url": "https://ollama.com/openbmb/minicpm5",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA."
+    }
+  ]
+}

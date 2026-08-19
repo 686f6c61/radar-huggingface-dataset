@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed3",
+  "slug": "longtermrisk-llama-3-1-8b-bad-medical-advice-sft-seed3",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed3",
+  "created_at": "2026-08-15T01:27:50.000Z",
+  "updated_at": "2026-08-15T01:30:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 239,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-bad-medical-advice-sft - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "longtermrisk/Llama-3.1-8B-bad-medical-last-third · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-last-third",
+      "snippet": "longtermrisk / Llama-3.1-8B-bad-medical-last-third like 0 Follow Center on Long-Term Risk 21 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-bad-medical-advice-last-third-kld - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-kld",
+      "snippet": "Run Llama-3.1-8B-bad-medical-advice-last-third-kld with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Llama-3.1-8B-bad-medical-last-third - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-bad-medical-last-third",
+      "snippet": "longtermrisk Llama-3.1-8B-bad-medical-last-third Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    }
+  ]
+}

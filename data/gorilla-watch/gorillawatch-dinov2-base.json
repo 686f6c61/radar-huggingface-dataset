@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "id": "gorilla-watch/GorillaWatch-DINOv2-Base",
+  "slug": "gorilla-watch-gorillawatch-dinov2-base",
+  "author": "gorilla-watch",
+  "url": "https://huggingface.co/gorilla-watch/GorillaWatch-DINOv2-Base",
+  "created_at": "2026-08-17T13:04:46.000Z",
+  "updated_at": "2026-08-17T13:10:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "re-identification",
+    "metric-learning",
+    "wildlife",
+    "dinov2",
+    "gorilla",
+    "dataset:gorilla-watch/Gorilla-SPAC-Wild",
+    "arxiv:2512.07776",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86776576,
+  "parameters_human": "86.8M",
+  "storage_bytes": 347123736,
+  "storage_human": "347 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-SPAC-Wild",
+      "metric": "Micro Accuracy",
+      "value": 0.484
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-SPAC-Wild",
+      "metric": "Macro Accuracy",
+      "value": 0.398
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-SPAC-Wild",
+      "metric": "Tracklet Micro Accuracy",
+      "value": 0.5394
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-SPAC-Wild",
+      "metric": "Tracklet Macro Accuracy",
+      "value": 0.4083
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-Zoo-Berlin",
+      "metric": "Micro Accuracy",
+      "value": 0.7288
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-Zoo-Berlin",
+      "metric": "Macro Accuracy",
+      "value": 0.7125
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-Zoo-Berlin",
+      "metric": "Tracklet Micro Accuracy",
+      "value": 0.7636
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-Zoo-Berlin",
+      "metric": "Tracklet Macro Accuracy",
+      "value": 0.7424
+    }
+  ],
+  "sources": [
+    {
+      "title": "GorillaWatch: An Automated System for In-the-Wild Gorilla Re ...",
+      "url": "https://arxiv.org/html/2512.07776",
+      "snippet": "In contrast, our fine-tuned model concentrates relevance on discriminative biometric features, specifically the face and body shape. Quantitatively, on the Gorilla-SPAC-Wild dataset, 92% of the total relevance in our fine-tuned model falls within the ground-truth gorilla segmentation masks, compared to only 83% for the baseline."
+    },
+    {
+      "title": "GorillaWatch: An Automated System for In-the-Wild Gorilla Re ...",
+      "url": "https://gorilla-watch.github.io/",
+      "snippet": "An automated system for in-the-wild gorilla re-identification and population monitoring using computer vision and machine learning."
+    },
+    {
+      "title": "GitHub - facebookresearch/dinov2: PyTorch code and models for the ...",
+      "url": "https://github.com/facebookresearch/dinov2",
+      "snippet": "Meta AI Research, FAIR Maxime Oquab, Timothée Darcet, Théo Moutakanni, Huy V. Vo, Marc Szafraniec, Vasil Khalidov, Patrick Labatut, Armand Joulin, Piotr Bojanowski [Paper #1] Paper #2] [Blog] [Demo] [BibTeX] PyTorch implementation and pretrained models for DINOv2. For details, see the papers: DINOv2: Learning Robust Visual Features without Supervision and Vision Transformers Need Registers ..."
+    },
+    {
+      "title": "[2512.07776v1] GorillaWatch: An Automated System for In-the-Wild ...",
+      "url": "https://arxiv.org/abs/2512.07776v1",
+      "snippet": "Monitoring critically endangered western lowland gorillas is currently hampered by the immense manual effort required to re-identify individuals from vast archives of camera trap footage. The primary obstacle to automating this process has been the lack of large-scale, \"in-the-wild\" video datasets suitable for training robust deep learning models. To address this gap, we introduce a ..."
+    },
+    {
+      "title": "GitHub - gorilla-watch/gorillawatch",
+      "url": "https://github.com/gorilla-watch/gorillawatch",
+      "snippet": "GorillaWatch is a comprehensive automated system for in-the-wild gorilla re-identification and population monitoring. Monitoring critically endangered western lowland gorillas has historically required immense manual effort to re-identify individuals from vast archives of camera trap footage. This work addresses this challenge by introducing an end-to-end pipeline integrating detection ..."
+    }
+  ]
+}

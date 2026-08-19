@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NaukNauk/minimax-h3-turbo-fl2va-merged",
+  "slug": "nauknauk-minimax-h3-turbo-fl2va-merged",
+  "author": "NaukNauk",
+  "url": "https://huggingface.co/NaukNauk/minimax-h3-turbo-fl2va-merged",
+  "created_at": "2026-08-18T15:24:00.000Z",
+  "updated_at": "2026-08-18T15:43:29.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "minimax-h3",
+    "image-to-video",
+    "first-last-frame-to-video",
+    "audio-video-generation",
+    "lora",
+    "image-text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66280485848,
+  "storage_human": "66.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minimax H3 T2V / I2V / REF2V Advanced Filmmaking Workflow | All ...",
+      "url": "https://civitai.com/models/2834514/minimax-h3-t2v-i2v-ref2v-advanced-filmmaking-workflow-or-all-speedups-qol-features",
+      "snippet": "A no-nonsense high level T2V / I2V / FFLF / REF2V workflow for Minimax H3 with lots of options & togglable quality of life features. Toggle between the [T2V / I2V / FFLF] model & the [REF2VA] model easily"
+    },
+    {
+      "title": "MiniMax-H3/FL2VA at main · MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3/tree/main/FL2VA",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 Turbo — Faster H3 Video with Turbo LoRA & LightX2V",
+      "url": "https://minimax3.org/minimax-h3-turbo",
+      "snippet": "MiniMax H3 Turbo explained: how Turbo LoRA, LightX2V, and step-reduction techniques accelerate H3 video generation. Community setup, quality trade-offs, and requirements."
+    },
+    {
+      "title": "GitHub - ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Distill Minimax-H3 into 4 steps. Contribute to ModelTC/Minimax-H3-Turbo development by creating an account on GitHub."
+    },
+    {
+      "title": "Comfy-Org/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

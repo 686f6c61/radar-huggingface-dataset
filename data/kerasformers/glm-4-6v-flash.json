@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kerasformers/glm-4.6v-flash",
+  "slug": "kerasformers-glm-4-6v-flash",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/glm-4.6v-flash",
+  "created_at": "2026-08-18T01:45:41.000Z",
+  "updated_at": "2026-08-18T01:53:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "glm",
+    "glm4v",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "zh",
+    "arxiv:2507.01006",
+    "base_model:zai-org/GLM-4.6V-Flash",
+    "base_model:finetune:zai-org/GLM-4.6V-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20621345323,
+  "storage_human": "20.6 GB",
+  "base_model": "zai-org/GLM-4.6V-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-4.6V-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6V-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · zai-org/GLM-4.6V-Flash at main - Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/README.md",
+      "snippet": "GLM-4.6V series model includes two versions: GLM-4.6V (106B), a foundation model designed for cloud and high-performance cluster scenarios, and GLM-4.6V-Flash (9B), a lightweight model optimized for local deployment and low-latency applications."
+    },
+    {
+      "title": "GLM-4.6V - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-4.6v",
+      "snippet": "Overview GLM-4.6V series are Z.ai&#x27;s iterations in a multimodal large language model. GLM-4.6V scales its context window to 128k tokens in training, and achieves SoTA performance in visual understanding among models of similar parameter scales. Crucially, GLM-4.6V integrate native Function Calling capabilities for the first time. This effectively bridges the gap between \"visual perception ..."
+    },
+    {
+      "title": "GLM-4.6V-Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-4.6v-flash",
+      "snippet": "GLM 4.6V Flash is a 9B vision-language model optimized for local deployment and low-latency applications. It supports a context length of 128k tokens and achieves strong performance in visual understanding among models of similar scale."
+    },
+    {
+      "title": "zai-org/glm-4.6v-flash • LM Studio",
+      "url": "https://lmstudio.ai/models/zai-org/glm-4.6v-flash",
+      "snippet": "GLM 4.6V by Z.ai GLM 4.6V Flash is a 9B vision-language model optimized for local deployment and low-latency applications. It supports a context length of 128k tokens and achieves strong performance in visual understanding among models of similar scale. The model introduces native multimodal function calling, enabling vision-driven tool use where images, screenshots, and document pages can be ..."
+    }
+  ]
+}

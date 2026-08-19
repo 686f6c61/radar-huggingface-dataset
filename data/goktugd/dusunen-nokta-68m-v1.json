@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GoktugD/DUSUNEN-Nokta-68M-v1",
+  "slug": "goktugd-dusunen-nokta-68m-v1",
+  "author": "GoktugD",
+  "url": "https://huggingface.co/GoktugD/DUSUNEN-Nokta-68M-v1",
+  "created_at": "2026-08-14T16:23:42.000Z",
+  "updated_at": "2026-08-14T16:24:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "turkish",
+    "punctuation-restoration",
+    "true-casing",
+    "text-restoration",
+    "dusunen",
+    "tr",
+    "dataset:ytu-ce-cosmos/Cosmos-Turkish-Corpus-v1.0",
+    "base_model:dbmdz/distilbert-base-turkish-cased",
+    "base_model:quantized:dbmdz/distilbert-base-turkish-cased",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 67519516,
+  "parameters_human": "67.5M",
+  "storage_bytes": 540860052,
+  "storage_human": "541 MB",
+  "base_model": "dbmdz/distilbert-base-turkish-cased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Joint Punctuation and True-casing",
+      "dataset": "Cosmos Turkish held-out URL split",
+      "metric": "Punctuation macro F1 (non-NONE)",
+      "value": 70.4345
+    },
+    {
+      "task": "Joint Punctuation and True-casing",
+      "dataset": "Cosmos Turkish held-out URL split",
+      "metric": "Casing macro F1 (non-LOWER)",
+      "value": 86.9762
+    },
+    {
+      "task": "Joint Punctuation and True-casing",
+      "dataset": "Cosmos Turkish held-out URL split",
+      "metric": "Joint-label macro F1",
+      "value": 65.2301
+    }
+  ],
+  "sources": []
+}

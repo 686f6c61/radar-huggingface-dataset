@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sumanksaha/Foodmultidomain",
+  "slug": "sumanksaha-foodmultidomain",
+  "author": "sumanksaha",
+  "url": "https://huggingface.co/sumanksaha/Foodmultidomain",
+  "created_at": "2026-08-16T13:25:21.000Z",
+  "updated_at": "2026-08-16T13:44:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "reranker",
+    "text-ranking",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713601,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90866412,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3-4b-ko-writing-GGUF",
+  "slug": "mradermacher-qwen3-4b-ko-writing-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3-4b-ko-writing-GGUF",
+  "created_at": "2026-08-17T02:07:19.000Z",
+  "updated_at": "2026-08-17T05:52:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ko",
+    "base_model:sophie1738/qwen3-4b-ko-writing",
+    "base_model:quantized:sophie1738/qwen3-4b-ko-writing",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 198,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389971584,
+  "storage_human": "36.4 GB",
+  "base_model": "sophie1738/qwen3-4b-ko-writing",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

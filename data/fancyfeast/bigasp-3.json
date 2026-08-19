@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "fancyfeast/bigasp-3",
+  "slug": "fancyfeast-bigasp-3",
+  "author": "fancyfeast",
+  "url": "https://huggingface.co/fancyfeast/bigasp-3",
+  "created_at": "2026-06-06T22:18:53.000Z",
+  "updated_at": "2026-08-18T07:02:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 49,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36826119304,
+  "storage_human": "36.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fancyfeast/bigasp-3 · Hugging Face",
+      "url": "https://huggingface.co/fancyfeast/bigasp-3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fancyfeast/bigasp-3 at main - Hugging Face",
+      "url": "https://huggingface.co/fancyfeast/bigasp-3/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bigasp-3 huggingface.co api & fancyfeast bigasp-3 github AI Model - Toolify",
+      "url": "https://www.toolify.ai/ai-model/fancyfeast-bigasp-3",
+      "snippet": "bigasp-3 huggingface.co is an AI model on huggingface.co that provides bigasp-3&#x27;s model effect (), which can be used instantly with this fancyfeast bigasp-3 model. huggingface.co supports a free trial of the bigasp-3 model, and also provides paid use of the bigasp-3. Support call bigasp-3 model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "bigASP 3.0 Progress Update (and 2.6) | Civitai",
+      "url": "https://civitai.com/articles/22656/bigasp-30-progress-update-and-26",
+      "snippet": "For those one or two people using the bigASP models, here&#x27;s an update on my work. New Tag String Generation bigASP has always focused heavily on photoreal, but during bigASP 2.5 I experimented with adding an anime side to the dataset in the hopes of expanding the concepts that the model understands. The theory is that the model could take concepts from the anime domain that don&#x27;t exist in the ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

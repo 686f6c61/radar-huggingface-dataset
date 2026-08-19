@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rahul7star/LFM2.5-VL-3B-rahul-tool-sft",
+  "slug": "rahul7star-lfm2-5-vl-3b-rahul-tool-sft",
+  "author": "rahul7star",
+  "url": "https://huggingface.co/rahul7star/LFM2.5-VL-3B-rahul-tool-sft",
+  "created_at": "2026-08-18T00:36:36.000Z",
+  "updated_at": "2026-08-18T02:17:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "lfm2_vl",
+    "trl",
+    "en",
+    "dataset:rahul7star/lfm2-tool-sft",
+    "base_model:LiquidAI/LFM2.5-VL-3B",
+    "base_model:finetune:LiquidAI/LFM2.5-VL-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98485918,
+  "storage_human": "98 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rahul7star (rahul7star) - Hugging Face",
+      "url": "https://huggingface.co/rahul7star",
+      "snippet": "User profile of rahul7star on Hugging Face"
+    },
+    {
+      "title": "LFM2.5-VL-3B: A Better and Faster Vision-Language Model for the Edge",
+      "url": "https://www.liquid.ai/blog/lfm2-5-vl-3b",
+      "snippet": "LFM2.5-VL-3B is Liquid AI&#x27;s most capable vision-language model, with grounding, screen understanding, and function calling, fast enough to run on-device."
+    },
+    {
+      "title": "Liquid AI — Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI is an efficiency-first foundation model company. We build highly capable, compute-optimized models that bring intelligence to any device and medium of choice."
+    },
+    {
+      "title": "LFM2.5-VL-3B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-3b",
+      "snippet": "← Back to Vision Models LFM2.5-VL-3B is Liquid AI&#x27;s most capable vision-language model, with strong grounding, screen and document understanding, and function calling."
+    },
+    {
+      "title": "Liquid AI Releases LFM2.5-VL-3B: A 3B Vision-Language Model That Reads ...",
+      "url": "https://www.marktechpost.com/2026/08/13/liquid-ai-lfm2-5-vl-3b-on-device-vision-language-model/",
+      "snippet": "Yesterday, Liquid AI released LFM2.5-VL-3B. It is a 3.1B-parameter vision-language model built for on-device deployment. The model reads digital screens across mobile, web, and desktop. It grounds objects to coordinates, parses documents and charts, and calls tools from text or image input."
+    }
+  ]
+}

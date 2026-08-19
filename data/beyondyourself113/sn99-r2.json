@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "beyondyourself113/sn99-r2",
+  "slug": "beyondyourself113-sn99-r2",
+  "author": "beyondyourself113",
+  "url": "https://huggingface.co/beyondyourself113/sn99-r2",
+  "created_at": "2026-08-06T19:24:12.000Z",
+  "updated_at": "2026-08-16T09:10:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128511,
+  "storage_human": "128511 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=modified",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - beyondyourself113/beyondyourself113: Config files for my ...",
+      "url": "https://github.com/beyondyourself113/beyondyourself113",
+      "snippet": "Config files for my GitHub profile. Contribute to beyondyourself113/beyondyourself113 development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Video Generator & Image Generator by Photo AI",
+      "url": "https://photoai.com/",
+      "snippet": "Generate photorealistic images and videos of people with AI. Take stunning photos of people with the first AI Photographer! Generate photo and video content for your social media with AI. Save time and money and do an AI photo shoot from your laptop or phone instead of hiring an expensive photographer. Take photos featuring yourself as an AI model. Every AI model you create gets FREE photos ..."
+    },
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    },
+    {
+      "title": "Built to Evolve: Inside R2&#x27;s Transformational Technology",
+      "url": "https://stories.rivian.com/r2-transformational-tech-ai-defined-vehicle-2026",
+      "snippet": "R2 marks an evolution from software-defined vehicles, to AI-defined vehicles. From innovative architecture and purpose-built hardware, to the most powerful infotainment compute in a consumer vehicle in North America and a new UI design, here are a few of our favorite tech-forward features that elevate every R2 adventure:"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dgrauet/ernie-image-sft-mlx",
+  "slug": "dgrauet-ernie-image-sft-mlx",
+  "author": "dgrauet",
+  "url": "https://huggingface.co/dgrauet/ernie-image-sft-mlx",
+  "created_at": "2026-04-20T11:17:43.000Z",
+  "updated_at": "2026-08-15T09:18:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "mlx-forge",
+    "apple-silicon",
+    "safetensors",
+    "base_model:baidu/ERNIE-Image",
+    "base_model:finetune:baidu/ERNIE-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23093198928,
+  "storage_human": "23.1 GB",
+  "base_model": "baidu/ERNIE-Image",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dgrauet/ernie-image-sft-mlx · Hugging Face",
+      "url": "https://huggingface.co/dgrauet/ernie-image-sft-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - dgrauet/ernie-image-mlx: Pure MLX port of Baidu ERNIE-Image ...",
+      "url": "https://github.com/dgrauet/ernie-image-mlx",
+      "snippet": "Pure MLX port of Baidu ERNIE-Image — an 8B single-stream Diffusion Transformer for text-to-image generation on Apple Silicon. Status: Runnable end-to-end. All MLX modules parity-tested against diffusers (fp32 — DiT 3.1e-6, VAE encoder 1.7e-6, VAE decoder 6.7e-6, ResnetBlock2D 1e-5). Six checkpoint variants converted (fp16 / int8 / int4 × SFT / Turbo) and verified to produce clean images ..."
+    },
+    {
+      "title": "Ernie Image - a dgrauet Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/dgrauet/ernie-image",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from dgrauet"
+    },
+    {
+      "title": "Fine-tuned Models for baidu/ERNIE-Image - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:baidu/ERNIE-Image",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - dgrauet/ernie-image-mlx: Pure MLX port of Baidu ERNIE-Image ...",
+      "url": "https://github.com/dgrauet/ernie-image-mlx/blob/main/",
+      "snippet": "ERNIE-Image weights and reference code are released by Baidu under Apache 2.0. Pure MLX port of Baidu ERNIE-Image (8B single-stream DiT) for text-to-image generation on Apple Silicon"
+    }
+  ]
+}

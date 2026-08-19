@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "giangdvdotdev/saul-goodman-persona",
+  "slug": "giangdvdotdev-saul-goodman-persona",
+  "author": "giangdvdotdev",
+  "url": "https://huggingface.co/giangdvdotdev/saul-goodman-persona",
+  "created_at": "2026-08-18T08:46:44.000Z",
+  "updated_at": "2026-08-18T08:48:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5732992192,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saul Goodman - Download Free 3D model by ko6i3models",
+      "url": "https://sketchfab.com/3d-models/saul-goodman-2873b0cd7b2c41069513d6074d4df0a5",
+      "snippet": "3.4k 40.1k 52 Download 3D Model Add to Embed Share Report Triangles: 59.3k Vertices: 29.8k More model information"
+    },
+    {
+      "title": "Saul Goodman - 3D model by karaman.arman - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/saul-goodman-38ce9aea50724f6a838b97f26bda9324",
+      "snippet": "Saul is an unscrupulous Albuquerque-based lawyer and con artist who becomes involved in the city&#x27;s criminal underworld. The model preserves recognizable shapes, proportions and important details while remaining suitable for real-time scenes and general 3D production."
+    },
+    {
+      "title": "Saul Goodman from \"Breaking Bad/Better call Saul\" (2008-2022)",
+      "url": "https://civarchive.com/models/93237?modelVersionId=99454",
+      "snippet": "Download Saul Goodman from \"Breaking Bad/Better call Saul\" (2008-2022) - LORA for SD 1.5 by djo226. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Chat with Saul Goodman | character.ai | AI Chat, Reimagined-Your Words ...",
+      "url": "https://character.ai/chat/gJhaBTXZHkuSfV1Mt-9kBYyF-_2ZA4XRfwrdm7Q08es",
+      "snippet": "Chat with Saul Goodman : 𓉯 ꯭꯭꯭ ꯭꯭꯭꯭Too close . Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "GitHub - DiscoverAI/saul-goodman: Pipeline orchestration to create a ...",
+      "url": "https://github.com/DiscoverAI/saul-goodman",
+      "snippet": "Saul Goodman \"Congratulations! You&#x27;re Now Officially The Cute One Of The Group.\" -- Saul Goodman (Breaking Bad) Pipeline orchestration to create a working drug creation model. For more information please check out the SARS-CoV-2 project."
+    }
+  ]
+}

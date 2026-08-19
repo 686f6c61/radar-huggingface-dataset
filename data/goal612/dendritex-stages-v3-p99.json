@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "goal612/dendritex-stages-v3-p99",
+  "slug": "goal612-dendritex-stages-v3-p99",
+  "author": "goal612",
+  "url": "https://huggingface.co/goal612/dendritex-stages-v3-p99",
+  "created_at": "2026-08-18T13:23:23.000Z",
+  "updated_at": "2026-08-18T13:23:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dendritex (Miner) - Hugging Face",
+      "url": "https://huggingface.co/Dendritex",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 16 hours ago ... published a model about 16 hours ago"
+    },
+    {
+      "title": "Google DeepMind Open Sources WeatherNext AI Cyclone Forecasting Model",
+      "url": "https://www.opensourceforu.com/2026/08/google-deepmind-weathernext-ai/",
+      "snippet": "Google DeepMind&#x27;s WeatherNext AI model extends tropical cyclone warning lead times by 24 hours and is now freely available as an open-source tool for global researchers."
+    },
+    {
+      "title": "Dendritex/albedo-qwen3.6-35b-sft3 · Hugging Face",
+      "url": "https://huggingface.co/Dendritex/albedo-qwen3.6-35b-sft3",
+      "snippet": "Dendritex / albedo-qwen3.6-35b-sft3 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 16 Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

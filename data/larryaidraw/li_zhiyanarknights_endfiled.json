@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/Li_zhiyanArknights_Endfiled",
+  "slug": "larryaidraw-li_zhiyanarknights_endfiled",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/Li_zhiyanArknights_Endfiled",
+  "created_at": "2026-08-17T05:26:03.000Z",
+  "updated_at": "2026-08-17T05:28:04.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228455028,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Li zhiyan/李织烟/Arknights: Endfiled - V1 | TensorHub Art",
+      "url": "https://tensorhub.art/models/990551472062097350",
+      "snippet": "Download Li zhiyan/李织烟/Arknights: Endfiled - free LORA Illustrious AI model on TENSORHUB ART. ARKNIGHTS, CHARACTER. By reprinter"
+    },
+    {
+      "title": "Li zhiyan/李织烟/Arknights: Endfiled - V1 | Tensor.Art",
+      "url": "https://tensor.art/models/990551472062097350",
+      "snippet": "Download Li zhiyan/李织烟/Arknights: Endfiled - free LORA Illustrious AI model on TENSOR. ARKNIGHTS, CHARACTER. By reprinter"
+    },
+    {
+      "title": "lizhiyan_(arknights:endfield) - V1 | Tensor.Art",
+      "url": "https://tensor.art/models/955171724058490560",
+      "snippet": "Download lizhiyan_ (arknights:endfield) - free LORA Illustrious AI model on TENSOR. Lizhiyan (arknights), ENDFIELD, ARKNIGHTS. By reprinter"
+    },
+    {
+      "title": "Li zhiyan/李织烟/Arknights: Endfield - V1 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/2559422/li-zhiyanarknights-endfield",
+      "snippet": "li zhiyan,li zhiyan (arknights),arknights,white-teal hair, high ponytail, feather ears, head mark, layered outfit, transparent panel,black cropped top,thigh boots, gloves,shoes,red legwear,front flap"
+    },
+    {
+      "title": "Li Zhiyan (Arcane) | Arknights: Endfield (NoobAI) - AI Art Model ...",
+      "url": "https://pixai.art/en/model/2003023411494134959",
+      "snippet": "Generate stunning anime art with the &#x27;Li Zhiyan (Arcane) | Arknights: Endfield (NoobAI)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

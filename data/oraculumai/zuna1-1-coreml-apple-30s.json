@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "oraculumai/ZUNA1.1-CoreML-Apple-30s",
+  "slug": "oraculumai-zuna1-1-coreml-apple-30s",
+  "author": "oraculumai",
+  "url": "https://huggingface.co/oraculumai/ZUNA1.1-CoreML-Apple-30s",
+  "created_at": "2026-08-18T04:48:38.000Z",
+  "updated_at": "2026-08-18T04:48:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "eeg",
+    "diffusion",
+    "ios",
+    "visionos",
+    "macos",
+    "en",
+    "base_model:Zyphra/ZUNA1.1",
+    "base_model:quantized:Zyphra/ZUNA1.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1530978725,
+  "storage_human": "1.5 GB",
+  "base_model": "Zyphra/ZUNA1.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oraculumai/ZUNA1.1-CoreML-Apple · Hugging Face",
+      "url": "https://huggingface.co/oraculumai/ZUNA1.1-CoreML-Apple",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "oraculumai/ZUNA-CoreML-Apple · Hugging Face",
+      "url": "https://huggingface.co/oraculumai/ZUNA-CoreML-Apple",
+      "snippet": "ZUNA Core ML: Enumerated Apple Profiles This repository contains Core ML conversions of ZUNA for Apple-native inference on iPhone, visionOS, and macOS, organized under enumerated profile folders. ZUNA is a 380M-parameter masked diffusion autoencoder for scalp EEG reconstruction and superresolution. Given a subset of channels and their 3D electrode coordinates, the model can: Denoise observed ..."
+    },
+    {
+      "title": "ZUNA1.1: A Flexible EEG Foundation Model - GitHub",
+      "url": "https://github.com/Zyphra/zuna",
+      "snippet": "ZUNA1.1 keeps the architecture of the original ZUNA1 but is trained to be far more flexible and robust to real-world data, while matching or exceeding ZUNA1&#x27;s reconstruction quality: Variable-length inputs (0.5-30 s): a segment length is sampled per training example (snapped to the 0.125 s token grid) instead of only fixed 5 s windows, so the same model serves a 0.5 s trial snippet or a 30 s ..."
+    },
+    {
+      "title": "GitHub - john-rocky/CoreML-Models: Core ML model zoo for iOS/macOS ...",
+      "url": "https://github.com/john-rocky/CoreML-Models",
+      "snippet": "Core ML model zoo for iOS/macOS — PyTorch models converted to ready-to-use .mlpackage, each with a conversion script and SwiftUI sample app. Sibling repos cover Apple&#x27;s Core AI framework (iOS/macOS 27) and on-device LLMs. - john-rocky/CoreML-Models"
+    },
+    {
+      "title": "Core ML | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/coreml",
+      "snippet": "Core ML itself builds on top of low-level primitives like Accelerate and BNNS, as well as Metal Performance Shaders. If your app integrates AI models using the latest architectures and inference techniques, see Core AI."
+    }
+  ]
+}

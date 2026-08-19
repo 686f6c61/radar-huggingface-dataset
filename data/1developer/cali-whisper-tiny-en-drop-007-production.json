@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "1Developer/cali-whisper-tiny.en-drop-007-production",
+  "slug": "1developer-cali-whisper-tiny-en-drop-007-production",
+  "author": "1Developer",
+  "url": "https://huggingface.co/1Developer/cali-whisper-tiny.en-drop-007-production",
+  "created_at": "2026-08-16T13:42:34.000Z",
+  "updated_at": "2026-08-16T13:53:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "dataset:audiofolder",
+    "base_model:1Developer/cali-whisper-tiny.en-drop-006-production",
+    "base_model:finetune:1Developer/cali-whisper-tiny.en-drop-006-production",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760256,
+  "parameters_human": "37.8M",
+  "storage_bytes": 3625753196,
+  "storage_human": "3.6 GB",
+  "base_model": "1Developer/cali-whisper-tiny.en-drop-006-production",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "audiofolder",
+      "metric": "Wer",
+      "value": 0
+    }
+  ],
+  "sources": []
+}

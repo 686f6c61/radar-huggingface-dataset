@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-4bit",
+  "slug": "chimingw-qwen3-8-27b-uncensored-orcarouter-mlx-4bit",
+  "author": "chimingw",
+  "url": "https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-4bit",
+  "created_at": "2026-08-16T11:54:16.000Z",
+  "updated_at": "2026-08-17T11:21:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "quantized",
+    "vision-language",
+    "mtp",
+    "f16-source",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored-GGUF",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored-GGUF",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 240,
+  "trending_score": 0,
+  "parameters": 5848822512,
+  "parameters_human": "5.85B",
+  "storage_bytes": 36407156824,
+  "storage_human": "36.4 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored-GGUF",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-OrcaRouter-MLX-4bit - Hugging Face",
+      "url": "https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-4bit at main",
+      "url": "https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-4bit/tree/main",
+      "snippet": "Instructions to use chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "The official repo is Qwen/Qwen3.8-27B, and the model card publishes benchmark results, including 61.7 on SWE-bench Pro. We track the full Qwen 3.8 launch picture, Max included, in our release breakdown and benchmarks tracker. Qwen 3.8 27B Hardware Requirements ... Our breakdown of what actually limits inference speed covers the mechanics."
+    },
+    {
+      "title": "&#x27;Qwen3.8-27B,&#x27; a locally runnable version, has been released for free ...",
+      "url": "https://gigazine.net/gsc_news/en/20260817-qwen3-8-27b",
+      "snippet": "Alibaba's Qwen team has released &#x27; Qwen3.8-27B, &#x27; an AI model with 27 billion parameters. The model's weights are released under the Apache License 2.0, and commercial use is permitted ..."
+    }
+  ]
+}

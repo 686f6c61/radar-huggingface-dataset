@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Stabhappy/kroma-0.2-amateur-photo-lora",
+  "slug": "stabhappy-kroma-0-2-amateur-photo-lora",
+  "author": "Stabhappy",
+  "url": "https://huggingface.co/Stabhappy/kroma-0.2-amateur-photo-lora",
+  "created_at": "2026-08-14T16:33:08.000Z",
+  "updated_at": "2026-08-14T16:33:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "adapter",
+    "text-to-image",
+    "base_model:lodestones/Kroma",
+    "base_model:adapter:lodestones/Kroma",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228587728,
+  "storage_human": "229 MB",
+  "base_model": "lodestones/Kroma",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

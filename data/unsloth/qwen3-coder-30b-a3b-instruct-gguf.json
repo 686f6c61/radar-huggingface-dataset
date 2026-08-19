@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+  "slug": "unsloth-qwen3-coder-30b-a3b-instruct-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+  "created_at": "2025-07-31T10:27:38.000Z",
+  "updated_at": "2026-01-30T06:29:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "qwen3",
+    "qwen",
+    "text-generation",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 904,
+  "downloads_30d": 10616677,
+  "trending_score": 15,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 1506674966190,
+  "storage_human": "1506.7 GB",
+  "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-Coder: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/tutorials/qwen3-coder-how-to-run-locally",
+      "snippet": "Run Qwen3-Coder-30B-A3B-Instruct and 480B-A35B locally with Unsloth Dynamic quants."
+    },
+    {
+      "title": "README.md · unsloth/Qwen3-Coder-30B-A3B-Instruct-1M-GGUF at main",
+      "url": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-1M-GGUF/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-Coder-30B-A3B-Instruct-GGUF: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-coder-30b-a3b-instruct-gguf-unsloth",
+      "snippet": "Overview Qwen3-Coder-30B-A3B-Instruct-GGUF is a mixture-of-experts (MoE) coding model with 30.5 billion total parameters and 3.3 billion activated parameters per forward pass, maintained by unsloth. The model implements causal language modeling with 48 layers, 32 query attention heads with grouped query attention (4 key-value heads), 128 total experts with 8 activated per token, and native ..."
+    },
+    {
+      "title": "Qwen3-Coder-30B-A3B-Instruct-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+      "snippet": "Qwen3-Coder-30B-A3B-Instruct has the following features: Type: Causal Language Models Training Stage: Pretraining & Post-training Number of Parameters: 30.5B in total and 3.3B activated Number of Layers: 48 Number of Attention Heads (GQA): 32 for Q and 4 for KV Number of Experts: 128 Number of Activated Experts: 8 Context Length: 262,144 natively."
+    }
+  ]
+}

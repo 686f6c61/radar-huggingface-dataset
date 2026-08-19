@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "baidu/Unlimited-OCR",
+  "slug": "baidu-unlimited-ocr",
+  "author": "baidu",
+  "url": "https://huggingface.co/baidu/Unlimited-OCR",
+  "created_at": "2026-06-19T09:40:33.000Z",
+  "updated_at": "2026-07-29T04:34:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unlimited-ocr",
+    "feature-extraction",
+    "baidu",
+    "vision-language",
+    "ocr",
+    "custom_code",
+    "image-text-to-text",
+    "multilingual",
+    "arxiv:2606.23050",
+    "license:mit",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 4081,
+  "downloads_30d": 3176339,
+  "trending_score": 54,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6767737257,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convert Ocr To Text - Convert Ocr To Text - Get Text from JPG",
+      "url": "https://duckduckgo.com/y.js?ad_domain=pdfaid.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=YPuHIxnTN3JmGoIiKuWS41B63Mdi3E0dtghaezVme24Fvd8ExnHHLCtHjAUDNhd8YeglZrix1bPLmcHvAxMvTt4cYBC2AByviPC35rk7hlr%2DCnltaEQYWTAKJ2aB2qnO%2Dir5gvp_t_eGzPQJqJ9p3L8X76Dg6PXUAZuKRbVOpoo.wIdKwlXy3edHlSkMDV6%2DgA&rut=0e2f0917f54cd17bfdc3f1acdbce3a58f1800f8e4373d00874e1a72a02bd998d&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8kc8j8xOOhUjkjMNsXMs1GzVUCUz8K71C4_f3SbpDZvwAwxXa2IMCL6zqr_Zdd7Im2kNRtwuci%2DPq9CQoxXhziDDdRMx_B1N9MpHtBcJw8e2D%2D4j%2DElV5kmHThtLj6IqbH9CdR%2D5oRLAcOyt4yXYZ_evfCyj2wkl5d0SJ3ABbAMwvzYJkub_MniV0S5G06W2otmfEU4u%2DzkWqM8F5VRM5j83PLfQ%26u%3DaHR0cHMlM2ElMmYlMmZwZGZhaWQuY29tJTJmaW1hZ2UtdG8tdGV4dCUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDQ4NzI3Mjk1MiUyNnV0bV90ZXJtJTNkYmFpZHUlMjUyRlVubGltaXRlZC1PQ1IlMjUyMG1vZGVsJTI1MjBBSSUyNnV0bV9jb250ZW50JTNkMTIzODA1MTQyMTMzNjc2NCUyNm1zY2xraWQlM2Q0N2I1NGFmMTFkMWUxNGE3ZmE2ZjIwOGYwNGU5MTg2Zg%26rlid%3D47b54af11d1e14a7fa6f208f04e9186f&vqd=4-155725446144074061197770267886533021142&iurl=%7B1%7DIG%3D12DEB45788254EE09D9FF9F6C07C6AEE%26CID%3D36F6368E05546C310016213A04726DDE%26ID%3DDevEx%2C5037.1",
+      "snippet": "Convert Ocr To Text. Use advanced OCR to recognize words in any picture. Extract data from JPGs and PNGs to use in Word or Excel."
+    },
+    {
+      "title": "GitHub - baidu/Unlimited-OCR: Unlimited OCR Works: Welcome the Era of ...",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift. [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud."
+    },
+    {
+      "title": "baidu/Unlimited-OCR · Hugging Face",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Baidu Unlimited-OCR: Free Open-Source OCR (Complete Guide)",
+      "url": "https://www.aimadetools.com/blog/baidu-unlimited-ocr-complete-guide/",
+      "snippet": "Baidu Unlimited-OCR is a 3B MIT-licensed model that processes multi-page PDFs in one pass. Free, private, runs locally on your hardware."
+    },
+    {
+      "title": "How to Run Baidu Unlimited-OCR Locally (All Methods)",
+      "url": "https://www.aimadetools.com/blog/how-to-run-baidu-unlimited-ocr-locally/",
+      "snippet": "Baidu Unlimited-OCR is a 3B parameter, MIT-licensed OCR model that processes multi-page PDFs in a single pass. It&#x27;s completely free and runs locally, meaning your documents never leave your machine. This guide covers every way to run it: from the quickest setup (Ollama) to the fastest inference (vLLM) to native Apple Silicon support (MLX)."
+    }
+  ]
+}

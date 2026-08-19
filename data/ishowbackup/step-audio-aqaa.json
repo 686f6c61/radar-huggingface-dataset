@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ishowbackup/Step-Audio-AQAA",
+  "slug": "ishowbackup-step-audio-aqaa",
+  "author": "Ishowbackup",
+  "url": "https://huggingface.co/Ishowbackup/Step-Audio-AQAA",
+  "created_at": "2026-08-17T12:05:00.000Z",
+  "updated_at": "2026-08-17T12:05:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mmgpt_step1_v2",
+    "arxiv:2506.08967",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136663907840,
+  "parameters_human": "136.66B",
+  "storage_bytes": 273329271495,
+  "storage_human": "273.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stepfun-ai/Step-Audio-AQAA · Hugging Face",
+      "url": "https://huggingface.co/stepfun-ai/Step-Audio-AQAA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - stepfun-ai/Step-Audio",
+      "url": "https://github.com/stepfun-ai/Step-Audio",
+      "snippet": "The speech decoder in Step-Audio serves a critical function in converting discrete speech tokens, which contain both semantic and acoustic information, into continuous time-domain waveforms that represent natural speech. The decoder architecture incorporates a flow matching model and a mel-to-wave vocoder. To optimize the intelligibility and naturalness of the synthesized speech, the speech ..."
+    },
+    {
+      "title": "Step-Audio - a stepfun-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/stepfun-ai/step-audio",
+      "snippet": "Step-Audio model family, including Audio-Tokenizer, Audio-Chat and TTS"
+    },
+    {
+      "title": "Step-Audio-AQAA: Audio-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/step-audio-aqaa-stepfun-ai",
+      "snippet": "Overview Step-Audio-AQAA is a fully end-to-end large audio language model built by stepfun-ai that performs Audio Query-Audio Answer (AQAA) tasks by directly processing audio inputs and generating natural speech responses without intermediate ASR and TTS modules. The model uses a 130-billion-parameter backbone LLM (Step-Omni) with decoder-only Transformer architecture, grouped query attention ..."
+    },
+    {
+      "title": "Step-Audio-AQAA · Models",
+      "url": "https://www.modelscope.cn/models/stepfun-ai/Step-Audio-AQAA",
+      "snippet": "Step-Audio-AQAA is a fully end-to-end Large Audio-Language Model (LALM) designed for Audio Query-Audio Answer (AQAA) tasks. It directly processes audio inputs and generates natural, accurate speech responses without relying on traditional ASR and TTS modules, eliminating cascading errors and simplifying the system architecture. Key Capabilities"
+    }
+  ]
+}

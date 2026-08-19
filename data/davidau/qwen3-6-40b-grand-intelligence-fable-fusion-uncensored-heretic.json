@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic",
+  "slug": "davidau-qwen3-6-40b-grand-intelligence-fable-fusion-uncensored-heretic",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic",
+  "created_at": "2026-07-21T09:26:20.000Z",
+  "updated_at": "2026-08-13T01:44:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "MTP",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "multi-stage tuned.",
+    "all use cases",
+    "thinking",
+    "reasoning",
+    "qwen3.6",
+    "coder",
+    "creative",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+    "base_model:finetune:DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 69,
+  "downloads_30d": 689,
+  "trending_score": 8,
+  "parameters": 39958026224,
+  "parameters_human": "39.96B",
+  "storage_bytes": 79954328259,
+  "storage_human": "80.0 GB",
+  "base_model": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "snippet": "The strongest, smartest open source multi-stage model 40B fine tune for consumer hardware ever and BUILT on consumer hardware via Unsloth using multiple fused versions of strongest Qwen3.6 27B model the \"Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF\" (confirmed by 3rd party testing - click here )."
+    },
+    {
+      "title": "Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Davidau - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/DavidAU",
+      "snippet": "Overview Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic is a 40-billion parameter language model developed by DavidAU based on the Qwen 3.6 architecture."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://hf.qhduan.com/models?other=heretic",
+      "snippet": "DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF Image-Text-to-Text • 39B • Updated 2 days ago • 3.08k • 32"
+    },
+    {
+      "title": "The Fine-Tuned Variant of Qwen3.6-27B That Achieved an ARC ... - HackerNoon",
+      "url": "https://hackernoon.com/the-fine-tuned-variant-of-qwen36-27b-that-achieved-an-arc-c-score-of-0711-in-8-bit-quantization",
+      "snippet": "Overview Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF is a fine-tuned variant of Qwen3.6-27B maintained by DavidAU that achieves an ARC-C score of 0.711 in 8-bit quantization and 0.701 in 4-bit quantization—the first open-source model of its class to break the 700 threshold that previously belonged only to OpenAI, Claude, and Gemini. The model contains 27 billion ..."
+    }
+  ]
+}

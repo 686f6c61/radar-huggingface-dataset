@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VasilisAsim/data2vec-finetuned-TESS_best",
+  "slug": "vasilisasim-data2vec-finetuned-tess_best",
+  "author": "VasilisAsim",
+  "url": "https://huggingface.co/VasilisAsim/data2vec-finetuned-TESS_best",
+  "created_at": "2026-08-17T23:48:42.000Z",
+  "updated_at": "2026-08-17T23:49:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "data2vec-audio",
+    "audio-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 93362951,
+  "parameters_human": "93.4M",
+  "storage_bytes": 373481556,
+  "storage_human": "373 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VasilisAsim/data2vec-finetuned-TESS_full · Hugging Face",
+      "url": "https://huggingface.co/VasilisAsim/data2vec-finetuned-TESS_full",
+      "snippet": "VasilisAsim / data2vec-finetuned-TESS_full like 0 Audio Classification Transformers Safetensors data2vec-audio arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "VasilisAsim/data2vec-finetuned-TESS_data_leakage · Hugging Face",
+      "url": "https://huggingface.co/VasilisAsim/data2vec-finetuned-TESS_data_leakage",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - facebookresearch/data2vec_vision: Large-scale Self-supervised ...",
+      "url": "https://github.com/facebookresearch/data2vec_vision",
+      "snippet": "The pre-trained LayoutXLM model has significantly outperformed the existing SOTA cross-lingual pre-trained models on the FUNSD and multilingual XFUND dataset including 7 languages (Chinese, Japanese, Spanish, French, Italian, German, Portuguese)."
+    },
+    {
+      "title": "fairseq_/examples/data2vec at main · Ashesi-Org/fairseq_",
+      "url": "https://github.com/Ashesi-Org/fairseq_/tree/main/examples/data2vec",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - fairseq_/examples/data2vec at main · Ashesi-Org/fairseq_"
+    },
+    {
+      "title": "Data2vec 2.0: Highly efficient self-supervised learning for vision ...",
+      "url": "https://ai.meta.com/blog/ai-self-supervised-learning-data2vec/",
+      "snippet": "We created data2vec 2.0, a general self-supervised AI algorithm for speech, vision, and text that can train models 16x faster than the most popular existing algorithm for images while achieving the same accuracy."
+    }
+  ]
+}

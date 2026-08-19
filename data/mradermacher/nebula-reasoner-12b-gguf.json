@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nebula-Reasoner-12B-GGUF",
+  "slug": "mradermacher-nebula-reasoner-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nebula-Reasoner-12B-GGUF",
+  "created_at": "2026-08-18T06:32:31.000Z",
+  "updated_at": "2026-08-18T07:17:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:mrcuddle/Nebula-Reasoner-12B",
+    "base_model:quantized:mrcuddle/Nebula-Reasoner-12B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692276672,
+  "storage_human": "84.7 GB",
+  "base_model": "mrcuddle/Nebula-Reasoner-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/CaptainErisNebula-12B-Chimera-v1.1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/CaptainErisNebula-12B-Chimera-v1.1-i1-GGUF",
+      "snippet": "mradermacher / CaptainErisNebula-12B-Chimera-v1.1-i1-GGUF like 2 Transformers GGUF English imatrix conversational License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/CaptainErisNebula-12B-AOE-v1-GGUF - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2FCaptainErisNebula-12B-AOE-v1-GGUF",
+      "snippet": "For a convenient overview and download list, visit our model page for this model. weighted/imatrix quants are available at https://huggingface.co/mradermacher/CaptainErisNebula-12B-AOE-v1-i1-GGUF"
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    },
+    {
+      "title": "CaptainErisNebula-12B-Chimera-v1-GGUF - AI Model by mradermacher ...",
+      "url": "https://alphaneural.io/assets/mradermacher/CaptainErisNebula-12B-Chimera-v1-GGUF",
+      "snippet": "Explore CaptainErisNebula-12B-Chimera-v1-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    }
+  ]
+}

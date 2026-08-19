@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "psssd-cat/HaloGuard1-Gen-0.8B-dpo-lora-v3",
+  "slug": "psssd-cat-haloguard1-gen-0-8b-dpo-lora-v3",
+  "author": "psssd-cat",
+  "url": "https://huggingface.co/psssd-cat/HaloGuard1-Gen-0.8B-dpo-lora-v3",
+  "created_at": "2026-08-19T02:23:20.000Z",
+  "updated_at": "2026-08-19T02:23:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:astroware/HaloGuard1-Gen-0.8B",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:astroware/HaloGuard1-Gen-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 875375576,
+  "storage_human": "875 MB",
+  "base_model": "astroware/HaloGuard1-Gen-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "psssd-cat/HaloGuard1-Gen-0.8B-dpo-lora-v1.3 · Hugging Face",
+      "url": "https://huggingface.co/psssd-cat/HaloGuard1-Gen-0.8B-dpo-lora-v1.3",
+      "snippet": "Instructions to use psssd-cat/HaloGuard1-Gen-.8B-dpo-lora-v1.3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use psssd-cat/HaloGuard1-Gen-.8B-dpo-lora-v1.3 with PEFT:"
+    },
+    {
+      "title": "psssd-cat/HaloGuard1-Gen-0.8B-dpo-lora-v2 · Hugging Face",
+      "url": "https://huggingface.co/psssd-cat/HaloGuard1-Gen-0.8B-dpo-lora-v2",
+      "snippet": "Instructions to use psssd-cat/HaloGuard1-Gen-.8B-dpo-lora-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use psssd-cat/HaloGuard1-Gen-.8B-dpo-lora-v2 with PEFT:"
+    },
+    {
+      "title": "HaloGuard 1.0: An Open Weights Constitutional Classifier for ...",
+      "url": "https://arxiv.org/pdf/2607.02079",
+      "snippet": "Constitutional AI showed that natural language principles can be used to guide model behavior and safety alignment (Bai et al., 2022). CCs applied a related idea to external safeguards; a written constitution specifies restricted and permitted content, and this constitution is used to generate synthetic data for classifier training (Sharma et ..."
+    },
+    {
+      "title": "HaloGuard 1.0: An Open Weights Constitutional Classifier for ...",
+      "url": "https://arxiv.org/abs/2607.02079",
+      "snippet": "We present HaloGuard 1.0, an open-weights implementation of the constitutional-classifier paradigm for input safety. It achieves state-of-the-art performance on English and multilingual prompt-safety benchmarks at roughly one-tenth the model size of current leading open guard models. The safety constitution is the organising structure of the corpus: a natural-language constitution of 46 ..."
+    },
+    {
+      "title": "HaloGuard 1.0: Constitutional Input Safety Classifier",
+      "url": "https://www.emergentmind.com/topics/haloguard-1-0",
+      "snippet": "HaloGuard 1.0 is an open-weights family of constitutional input-safety classifiers for LLM systems. It is designed to operate before a downstream model or agent and determine, from the user prompt alone, whether the prompt is safe or unsafe under a written safety constitution."
+    }
+  ]
+}

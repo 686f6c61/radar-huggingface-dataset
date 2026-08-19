@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "HamoAI/hamo-score-0.6b",
+  "slug": "hamoai-hamo-score-0-6b",
+  "author": "HamoAI",
+  "url": "https://huggingface.co/HamoAI/hamo-score-0.6b",
+  "created_at": "2026-08-05T16:51:05.000Z",
+  "updated_at": "2026-08-17T15:47:44.000Z",
+  "license": "hamo-rail-s-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "mental-wellness",
+    "affect-scoring",
+    "psychology",
+    "knowledge-distillation",
+    "hamo",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 999,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 3674586344,
+  "storage_human": "3.7 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HamoAI/hamo-score-0.6b · Hugging Face",
+      "url": "https://huggingface.co/HamoAI/hamo-score-0.6b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open-Sourcing hamo-score-0.6b: Psychological State Scoring That Runs on ...",
+      "url": "https://www.hamo.ai/blog/open-sourcing-hamo-score-0-6b/",
+      "snippet": "Hamo has open-sourced hamo-score-.6b: a 600-million-parameter model that reads one message in a wellness conversation and returns five psychological state dimensions — and never writes a reply. It runs on a laptop in under a second, agrees with a frontier cloud scorer on 96.3% of clinical decisions, and cost about seven dollars in API budget to build."
+    },
+    {
+      "title": "HamoAI/hamo-score-0.6b at main - Hugging Face",
+      "url": "https://huggingface.co/HamoAI/hamo-score-0.6b/tree/main/gguf",
+      "snippet": "HamoAI / hamo-score-.6b like 2 Follow Hamo AI Technology Ltd. 1 Text Generation MLX Safetensors GGUF Chinese English qwen3 mental-wellness affect-scoring psychology knowledge-distillation hamo conversational License:hamo-rail-s-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Distilling hamo-score-0.6b: A Plateau, Three Bugs, and Why Data Beat ...",
+      "url": "https://www.hamo.ai/blog/distilling-hamo-score-0-6b/",
+      "snippet": "The companion methodology notes to our open-weights release. How a 0.6B model learned to score psychological state from a cloud API&#x27;s judgments — the three-stage teaching chain, the privacy rule that shaped every decision, a plateau that more data would not shift, and the diagnosis that broke it. A model three times larger gained one point. A data audit plus a one-line config fix gained three."
+    },
+    {
+      "title": "GitHub - HamoAI/hamo-score-toolkit: Client toolkit and safety scaffold ...",
+      "url": "https://github.com/HamoAI/hamo-score-toolkit/tree/main/",
+      "snippet": "Client toolkit and safety scaffold for HamoAI/hamo-score-0.6b — the little model that takes a conversational pulse (AWEHB: Agency / Withdrawal / Extremity / Hostility / Boundary). This repo is the missing half of the model: the exact prompt format, tolerant output parsing, the smoothing-and ..."
+    }
+  ]
+}

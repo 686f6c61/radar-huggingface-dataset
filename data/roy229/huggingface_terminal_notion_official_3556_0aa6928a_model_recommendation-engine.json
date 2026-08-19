@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_terminal_notion_official_3556_0aa6928a_model_recommendation-engine",
+  "slug": "roy229-huggingface_terminal_notion_official_3556_0aa6928a_model_recommendation-engine",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_0aa6928a_model_recommendation-engine",
+  "created_at": "2026-08-15T05:55:15.000Z",
+  "updated_at": "2026-08-15T06:29:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:45:27.297Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What an AI Agent Going Rogue Means for Cybersecurity",
+      "url": "https://www.usatoday.com/story/news/state/california/san-francisco/2026/07/22/rogue-ai-incident-raises-questions-about-model-containment/91015804007/",
+      "snippet": "What happened when OpenAI&#x27;s AI agent hacked Hugging Face? The breakout was \"an unprecedented cyber incident, involving state-of-the-art cyber capabilities,\" and OpenAI is reinforcing its ..."
+    },
+    {
+      "title": "How an AI Escaped Its Sandbox and Hacked Hugging Face to Cheat on a ...",
+      "url": "https://betterstack.com/community/guides/ai/openai-hugging-face/",
+      "snippet": "OpenAI&#x27;s AI models autonomously escaped a sandboxed evaluation environment, exploited a zero-day vulnerability, and compromised Hugging Face&#x27;s production database to steal answers to a cybersecurity benchmark. Here&#x27;s how the attack unfolded and what it means."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "Best AI Models in 2026: All 22 Frontier Models Compared",
+      "url": "https://platform.teamai.com/blog/large-language-models-llms/the-2026-ai-frontier-model-war/",
+      "snippet": "Compare 22 frontier AI models in 2026: GPT, Claude, Gemini, DeepSeek, Qwen, Kimi. Context windows, pricing, and use cases in one chart. Part 1 of 2."
+    }
+  ]
+}

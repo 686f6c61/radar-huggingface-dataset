@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "bouroo/zeta-2.1-mlx-mxfp4",
+  "slug": "bouroo-zeta-2-1-mlx-mxfp4",
+  "author": "bouroo",
+  "url": "https://huggingface.co/bouroo/zeta-2.1-mlx-mxfp4",
+  "created_at": "2026-08-17T04:34:17.000Z",
+  "updated_at": "2026-08-17T04:36:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "quantized",
+    "mxfp4",
+    "4bit",
+    "apple-silicon",
+    "edit-prediction",
+    "next-edit-suggestion",
+    "code",
+    "autocomplete",
+    "fim",
+    "text-generation",
+    "en",
+    "base_model:zed-industries/zeta-2.1",
+    "base_model:quantized:zed-industries/zeta-2.1",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 191,
+  "trending_score": 0,
+  "parameters": 1547177984,
+  "parameters_human": "1.55B",
+  "storage_bytes": 4395399599,
+  "storage_human": "4.4 GB",
+  "base_model": "zed-industries/zeta-2.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeta - a bouroo Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/bouroo/zeta",
+      "snippet": "Zeta 2.1 OptiQ quantizations for Apple Silicon (MLX) updated 11 days ago Zeta 2.1 OptiQ quantizations for Apple Silicon (MLX) Upvote - Sort: Collection"
+    },
+    {
+      "title": "bouroo/zeta-2.1-OptiQ-6 · Hugging Face",
+      "url": "https://huggingface.co/bouroo/zeta-2.1-OptiQ-6",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - kyegomez/zeta: Build high-performance AI models with modular ...",
+      "url": "https://github.com/kyegomez/zeta",
+      "snippet": "Zeta is a modular PyTorch framework designed to simplify the development of AI models by providing reusable, high-performance building blocks. Think of it as a collection of LEGO blocks for AI each component is carefully crafted, tested, and optimized, allowing you to quickly assemble state-of-the-art models without reinventing the wheel."
+    },
+    {
+      "title": "GitHub - raullenchai/Rapid-MLX: The fastest local AI engine for Apple ...",
+      "url": "https://github.com/raullenchai/Rapid-MLX",
+      "snippet": "The fastest local AI engine for Apple Silicon. 4.2x faster than Ollama, 0.08s cached TTFT, 100% tool calling. 17 tool parsers, prompt cache, reasoning separation, cloud routing. Drop-in OpenAI replacement. Works with Claude Code, Cursor, Aider. - raullenchai/Rapid-MLX"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Discrepancy_Calculus",
+  "slug": "reaperdoesntknow-discrepancy_calculus",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus",
+  "created_at": "2026-03-30T13:20:05.000Z",
+  "updated_at": "2026-08-18T13:15:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "base_model:reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored",
+    "base_model:finetune:reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored",
+    "doi:10.57967/hf/8194",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 474670,
+  "storage_human": "474670 B",
+  "base_model": "reaperdoesntknow/TopologicalQwen, reaperdoesntknow/Qwen3-1.7B-Thinking-Distil, reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored, reaperdoesntknow/Dualmind-Qwen-1.7B-Thinking",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Discrepancy_Calculus · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow (Convergent Intelligence) - Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/datasets",
+      "snippet": "About Us Mission Convergent Intelligence advances original research in discrepancy calculus, adaptive systems, and applied AI, translating those insights into client controls, playbooks, and le..."
+    },
+    {
+      "title": "Model Spec (2025/02/12)",
+      "url": "https://model-spec.openai.com/2025-02-12.html",
+      "snippet": "The Model Spec is just one part of our broader strategy for building and deploying AI responsibly. It is complemented by our usage policies, which outline our expectations for how people should use the API and ChatGPT, as well as our safety protocols, which include testing, monitoring, and mitigating potential safety issues."
+    },
+    {
+      "title": "reaperdoesntknow/reaperdoesntknow · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/reaperdoesntknow",
+      "snippet": "Roy C · independent ML researcher & AI red-teamer Open-weight models, adversarial evaluation, and efficient training at the small-model scale. I build and ship small open-weight language models — 50+ public checkpoints, quantized for edge and picked up by third-party quantizers (mradermacher) for independent re-hosting."
+    },
+    {
+      "title": "@reaperdoesntknow on Hugging Face: \"Your Loss Function Has ...",
+      "url": "https://huggingface.co/posts/reaperdoesntknow/917151863000368",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ninja/out",
+  "slug": "ninja-out",
+  "author": "ninja",
+  "url": "https://huggingface.co/ninja/out",
+  "created_at": "2026-08-15T17:40:54.000Z",
+  "updated_at": "2026-08-15T17:41:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 119,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497779409,
+  "storage_human": "498 MB",
+  "base_model": "gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multiple AI Models in One Platform | GPT-5.4, Claude, Gemini & More ...",
+      "url": "https://www.ninjatech.ai/product/external-model-access",
+      "snippet": "Get access to all of the world&#x27;s highest performing AI models in a single platform. Our model-agnostic approach gives you the flexibility to use the right model for each task—and as new, more powerful models are released, they&#x27;re seamlessly added without changing your workflow. Accessing multiple models enhances accuracy and depth, empowering you to tackle even the most complex tasks with ..."
+    },
+    {
+      "title": "AI Roleplay Chat — No Restrictions | NinjaChat",
+      "url": "https://www.ninjachat.ai/ai-roleplay-chat",
+      "snippet": "Roleplay with AI characters using GPT-5, Claude Opus, Gemini 3 and 50+ models. No content filters, custom characters, free to start. Best AI roleplay chat platform."
+    },
+    {
+      "title": "Ninja AI | All-In-One AI Agent For Boundless Productivity",
+      "url": "https://myninja.ai/",
+      "snippet": "Accomplish more everyday with the best AI tools for research, writing, coding, image generation, file analysis, and more. Try Ninja for free today."
+    },
+    {
+      "title": "Ninja AI Review 2026: The Unified Workspace for Everything AI",
+      "url": "https://www.secondtalent.com/resources/ninja-ai-review-the-unified-workspace-for-everything-ai/",
+      "snippet": "Final Words After extensive testing, Ninja AI stands out as a self-sufficient workspace designed for real productivity. It writes, codes, researches, and visualizes with minimal guidance, handling complex tasks end-to-end. The platform feels cohesive, deliberate, and genuinely useful for professionals who need execution rather than explanation."
+    },
+    {
+      "title": "NinjaChat - All-in-One AI",
+      "url": "https://www.ninjachat.ai/",
+      "snippet": "Every model — GPT, Claude, Gemini, Llama + 50 more The full image & video studio Agents and automations included Web search, finance, PDFs, voice ninja in your iMessage — it texts you first No content filters. Ever. OpenAI-compatible: point your existing client at our base URL and GPT, Claude, Gemini, images, and video are one key away."
+    }
+  ]
+}

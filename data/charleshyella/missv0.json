@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "charleshyella/MISSV0",
+  "slug": "charleshyella-missv0",
+  "author": "charleshyella",
+  "url": "https://huggingface.co/charleshyella/MISSV0",
+  "created_at": "2026-08-17T16:24:17.000Z",
+  "updated_at": "2026-08-17T16:24:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Chatrule | AI Character & Model Search",
+      "url": "https://chatrule.ai/",
+      "snippet": "Discover Chatrule characters and ADVANCED mirrored LoRAs for AI image generation."
+    },
+    {
+      "title": "Visual Face Search - Find Models Instantly | ModelSaler",
+      "url": "https://modelsaler.com/visual-face-search/",
+      "snippet": "Upload a photo to instantly find matching models and content across the ModelSaler library using our advanced AI visual face search technology."
+    },
+    {
+      "title": "How to know if a Instagram person is AI created?",
+      "url": "https://www.clrn.org/how-to-know-if-a-instagram-person-is-ai-created/",
+      "snippet": "The proliferation of Generative AI models has blurred the lines between authentic user-generated content and synthetic creations across social media platforms. Instagram, with its massive user base and visual-centric nature, is a prime target for AI-generated accounts deployed for various purposes, ranging from benign marketing automation to malicious disinformation campaigns. Identifying ..."
+    },
+    {
+      "title": "Pinku | Roleplay and generate images of AI characters",
+      "url": "https://pinku.ai/",
+      "snippet": "Chat with AI Characters anytime, anywhere. Create and interact with intelligent bots that understand, respond, and even generate AI-driven images."
+    }
+  ]
+}

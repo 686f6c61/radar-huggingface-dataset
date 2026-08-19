@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "t8star/minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert",
+  "slug": "t8star-minimax_h3_fl2v_turbo_4step_v0-1_comfyui_alpha8-t8-convert",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert",
+  "created_at": "2026-08-07T17:45:54.000Z",
+  "updated_at": "2026-08-07T17:55:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1956193832,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert",
+      "url": "https://huggingface.co/t8star/minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "t8star/minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert ...",
+      "url": "https://huggingface.co/t8star/minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert/discussions",
+      "snippet": "t8star / minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert like 1 Model card FilesFiles and versions xet Community Copy to bucket new New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    },
+    {
+      "title": "GitHub - ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Distill Minimax-H3 into 4 steps. Contribute to ModelTC/Minimax-H3-Turbo development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 Turbo LoRA v1.0: 8-Step and 768p FL2V Weights",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-11-minimax-h3-turbo-lightx2v-v1",
+      "snippet": "Lightx2v and ModelTC release MiniMax H3 Turbo LoRA v1.0 with an 8-step FL2V checkpoint and a 4-step 768p variant, both with ComfyUI-ready bf16 weights."
+    },
+    {
+      "title": "GitHub - Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "url": "https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "snippet": "For most work, use minimax_h3_turbo_v4_step600_ema.safetensors (from the LoRA repo). It&#x27;s the strongest checkpoint so far: much better static / small-motion shots, markedly better micro-detail (faces, fingers, texture), and the over-sharpening / plastic look of the earlier v1 (~850) line is fully resolved. v4 introduced a static-frame enhancement. The one trade-off shows up only at 4 steps ..."
+    }
+  ]
+}

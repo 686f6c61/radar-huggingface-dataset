@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ProCreations/minima-100m-g64-repr-v2",
+  "slug": "procreations-minima-100m-g64-repr-v2",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/minima-100m-g64-repr-v2",
+  "created_at": "2026-08-17T20:30:57.000Z",
+  "updated_at": "2026-08-17T20:32:01.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "minima-lfm",
+  "languages": [],
+  "tags": [
+    "minima-lfm",
+    "safetensors",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-Encoder-350M",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94207744,
+  "parameters_human": "94.2M",
+  "storage_bytes": 99966952,
+  "storage_human": "100 MB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:27.134Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ProCreations (SSH) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations/models",
+      "snippet": "Making AI&#x27;s small, accessible, and easy to run on consumer hardware"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "We release experimental models to gather feedback and get our latest updates into the hands of developers quickly. Experimental models are not stable and availability of model endpoints is subject to change. Model deprecations For information about model deprecations, visit the Gemini deprecations page."
+    },
+    {
+      "title": "Gemini Models — AI Explorer",
+      "url": "https://forzora.com/category/gemini",
+      "snippet": "Explore all 6 Gemini AI models by Google DeepMind. Compare scores, capabilities, and find the best model for your needs."
+    }
+  ]
+}

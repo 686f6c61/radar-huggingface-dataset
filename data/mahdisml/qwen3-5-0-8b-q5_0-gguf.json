@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mahdisml/Qwen3.5-0.8B-Q5_0-GGUF",
+  "slug": "mahdisml-qwen3-5-0-8b-q5_0-gguf",
+  "author": "mahdisml",
+  "url": "https://huggingface.co/mahdisml/Qwen3.5-0.8B-Q5_0-GGUF",
+  "created_at": "2026-08-16T19:16:08.000Z",
+  "updated_at": "2026-08-16T19:16:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 577735488,
+  "storage_human": "578 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mahdisml/Qwen3.5-0.8B-Q5_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mahdisml/Qwen3.5-0.8B-Q5_K_M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mahdisml/Qwen3.5-0.8B-Q5_K_M-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mahdisml/Qwen3.5-0.8B-Q5_K_M-GGUF/tree/main",
+      "snippet": "Instructions to use mahdisml/Qwen3.5-.8B-Q5_K_M-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries"
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "GitHub - algtrd24/qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/algtrd24/qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B",
+      "snippet": "Qwen3.5-0.8B is the smallest member of the Qwen3.5 family — same hybrid gated delta networks architecture and 262K context, at a size suited to edge devices or as a draft model for speculative decoding with larger Qwen3.5 checkpoints."
+    }
+  ]
+}

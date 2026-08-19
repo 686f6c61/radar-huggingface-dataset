@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Q2.5-Hydroblated-R1-32B-v1-i1-GGUF",
+  "slug": "mradermacher-q2-5-hydroblated-r1-32b-v1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Q2.5-Hydroblated-R1-32B-v1-i1-GGUF",
+  "created_at": "2026-08-18T22:37:37.000Z",
+  "updated_at": "2026-08-18T22:37:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3736000,
+  "parameters_human": "3.7M",
+  "storage_bytes": 15011072,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Q2.5-Hydroblated-QwQ-32B-v1-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Q2.5-Hydroblated-QwQ-32B-v1-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Q2.5-Hydroblated-QwQ-32B-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Q2.5-Hydroblated-QwQ-32B-v1-GGUF",
+      "snippet": "mradermacher / Q2.5-Hydroblated-QwQ-32B-v1-GGUF like 0 Transformers GGUF English Inference Endpoints conversational Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    },
+    {
+      "title": "Thingiverse — Search & Download 3D Printing Models and STL Files",
+      "url": "https://thingiverse.app/",
+      "snippet": "Thingiverse search: find, preview and download free 3D printable models and STL files from across the web — no ads, no sign-up."
+    }
+  ]
+}

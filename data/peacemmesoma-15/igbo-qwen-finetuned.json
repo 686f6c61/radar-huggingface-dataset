@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "PeaceMmesoma-15/Igbo-qwen-finetuned",
+  "slug": "peacemmesoma-15-igbo-qwen-finetuned",
+  "author": "PeaceMmesoma-15",
+  "url": "https://huggingface.co/PeaceMmesoma-15/Igbo-qwen-finetuned",
+  "created_at": "2026-08-14T18:00:43.000Z",
+  "updated_at": "2026-08-14T18:56:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15777699,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Akers/Qwen-finetune: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/Akers/Qwen-finetune",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - Akers/Qwen-finetune"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
+      "snippet": "Qwen3.5 can be run and fine-tuned in Unsloth Studio, our new open-source web UI for local AI. With Unsloth Studio, you can run models locally on MacOS, Windows, Linux and:"
+    },
+    {
+      "title": "Fine-tuning Guide | QwenLM/Qwen | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen/4-fine-tuning-guide",
+      "snippet": "Fine-tuning Guide Relevant source files This guide explains how to fine-tune Qwen models to adapt them for specific tasks and domains. It covers the different fine-tuning approaches, data preparation, performance considerations, and working with fine-tuned models. For information about using fine-tuned models for inference, see Inference Guide. Overview of Fine-tuning Methods Qwen supports ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

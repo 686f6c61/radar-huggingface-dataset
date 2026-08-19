@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pathmohd123/audiogroove-gru-large-2500",
+  "slug": "pathmohd123-audiogroove-gru-large-2500",
+  "author": "pathmohd123",
+  "url": "https://huggingface.co/pathmohd123/audiogroove-gru-large-2500",
+  "created_at": "2026-08-16T19:26:01.000Z",
+  "updated_at": "2026-08-16T22:05:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 354507937,
+  "storage_human": "355 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Music Generator Online | MusicAI",
+      "url": "https://www.musicai.ai/ai-music-generator",
+      "snippet": "Create original songs with MusicAI — the Best AI Music Generator & AI Music Video Generator that turns ideas and lyrics into royalty-free music in seconds."
+    },
+    {
+      "title": "audiogrooves - YouTube",
+      "url": "https://www.youtube.com/@audiogrooves",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "AudioGroove - AI Music Generator",
+      "url": "https://audiogroove.vercel.app/",
+      "snippet": "AudioGroove 🎵 🌱 Upload Seed MIDI (Optional) No file selected Generate Regenerate ⬇️ Download"
+    },
+    {
+      "title": "GitHub - MohammedPathariya/AudioGroove: AI-powered MIDI music ...",
+      "url": "https://github.com/MohammedPathariya/AudioGroove",
+      "snippet": "AudioGroove is an AI-powered music generation system that learns from MIDI files to compose new, original musical sequences. It leverages a deep LSTM model enhanced with a self-attention mechanism to understand and replicate complex musical patterns."
+    },
+    {
+      "title": "‎groove guru - Apple Music",
+      "url": "https://music.apple.com/us/artist/groove-guru/1719712407",
+      "snippet": "Listen to music by groove guru on Apple Music. Find top songs and albums by groove guru."
+    }
+  ]
+}

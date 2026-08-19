@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hoborific/Schattenblume-31B-W8A16-FP8",
+  "slug": "hoborific-schattenblume-31b-w8a16-fp8",
+  "author": "hoborific",
+  "url": "https://huggingface.co/hoborific/Schattenblume-31B-W8A16-FP8",
+  "created_at": "2026-08-17T04:53:31.000Z",
+  "updated_at": "2026-08-17T05:08:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "w8a16",
+    "fp8",
+    "conversational",
+    "base_model:Nimbz/Schattenblume-31B",
+    "base_model:quantized:Nimbz/Schattenblume-31B",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33313346117,
+  "storage_human": "33.3 GB",
+  "base_model": "Nimbz/Schattenblume-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for Nimbz/Schattenblume-31B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Nimbz/Schattenblume-31B",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset Nimbz/Schattenblume-31B Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment ..."
+    },
+    {
+      "title": "Quantized Models for zerofata/G4-MeroMero-v2-31B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:zerofata/G4-MeroMero-v2-31B",
+      "snippet": "Explore machine learning models. McG-221/G4-MeroMero-v2-31B-mlx-8Bit"
+    },
+    {
+      "title": "Model Catalog - Cerebras Inference",
+      "url": "https://inference-docs.cerebras.ai/models/overview",
+      "snippet": "Compression is an umbrella term for techniques that reduce model size or computational requirements. Common compression techniques include: Quantization: Reducing the precision of numbers used to represent model weights (e.g., converting from FP16 to FP8). This reduces memory usage without changing the model&#x27;s architecture."
+    },
+    {
+      "title": "Weights and Activation Quantization (FP8) :: Neural Magic Workshop ...",
+      "url": "https://luis5tb.github.io/neural-magic-workshop/modules/03-03-fp-8-quantization.html",
+      "snippet": "Load the Model: Load the pre-trained LLM model. Quantize the Model: Convert the model weights and activations to FP8 format."
+    },
+    {
+      "title": "[Benchmark] Gemma 4 on DGX Spark — Which Model Should You Pick? — ai-muninn",
+      "url": "https://ai-muninn.com/en/blog/dgx-spark-gemma4-complete-guide",
+      "snippet": "Gemma 4 E2B / E4B / 26B MoE / 31B Dense benchmarked on DGX Spark, RTX 5090, and MacBook Pro. One table with speed, memory, quantization format. Selection guide included."
+    }
+  ]
+}

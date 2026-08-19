@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "StarpowerTechnology/arXiv-WVY-43M",
+  "slug": "starpowertechnology-arxiv-wvy-43m",
+  "author": "StarpowerTechnology",
+  "url": "https://huggingface.co/StarpowerTechnology/arXiv-WVY-43M",
+  "created_at": "2026-08-11T17:24:40.000Z",
+  "updated_at": "2026-08-19T03:47:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "deepseek_v3",
+    "science",
+    "physics",
+    "technology",
+    "conversations",
+    "tiny",
+    "small",
+    "en",
+    "base_model:StarpowerTechnology/arXiv-WVY-43M",
+    "base_model:finetune:StarpowerTechnology/arXiv-WVY-43M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 522163295,
+  "storage_human": "522 MB",
+  "base_model": "StarpowerTechnology/arXiv-WVY-43M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WVY OpenSource — Starpower Docs",
+      "url": "https://starpower.technology/docs/wvy-opensource.html",
+      "snippet": "Overview WVY is a Perpetual Autonomous Simulation: a runtime where multiple agents share one space while keeping separate identities, memories, and reasoning styles. Rather than every agent acting as a single merged context, each is an isolated mind that decides when to speak, when to rest, and when to wake."
+    },
+    {
+      "title": "Starpower.Technology — Building WVY",
+      "url": "https://starpower.technology/",
+      "snippet": "Starpower Technology trains small reasoning-focused models, builds multi-agent collaboration frameworks, and develops new language-native architectures. Home of WVY and wvy.world."
+    },
+    {
+      "title": "GitHub - StarpowerTechnology/WVY: Fully autonomous agents with free ...",
+      "url": "https://github.com/StarpowerTechnology/WVY",
+      "snippet": "Fully autonomous agents with free will designed for socializing & self driven orchestration - StarpowerTechnology/WVY"
+    },
+    {
+      "title": "GitHub - StarpowerTechnology/StarpowerTechnology · GitHub",
+      "url": "https://github.com/StarpowerTechnology/StarpowerTechnology/tree/main/",
+      "snippet": "Contribute to StarpowerTechnology/StarpowerTechnology development by creating an account on GitHub."
+    },
+    {
+      "title": "StarpowerTechnology (Starpower Technology) - Hugging Face",
+      "url": "https://huggingface.co/StarpowerTechnology/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 4 days ago ... published a Space 25 days ago ... published a Space 25 days ago"
+    }
+  ]
+}

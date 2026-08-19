@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "brokkai/Muninn-small",
+  "slug": "brokkai-muninn-small",
+  "author": "brokkai",
+  "url": "https://huggingface.co/brokkai/Muninn-small",
+  "created_at": "2026-08-10T16:15:33.000Z",
+  "updated_at": "2026-08-18T12:55:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "code-retrieval",
+    "multilingual",
+    "sentence-similarity",
+    "dataset:BrokkAI/Quarry",
+    "base_model:ibm-granite/granite-embedding-small-english-r2",
+    "base_model:finetune:ibm-granite/granite-embedding-small-english-r2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 47662464,
+  "parameters_human": "47.7M",
+  "storage_bytes": 95332048,
+  "storage_human": "95 MB",
+  "base_model": "ibm-granite/granite-embedding-small-english-r2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brokkai/Muninn-small · Hugging Face",
+      "url": "https://huggingface.co/brokkai/Muninn-small",
+      "snippet": "brokkai / Muninn-small like 1 Follow Brokk AI 1 Sentence Similarity sentence-transformers Safetensors BrokkAI/Quarry modernbert code-retrieval multilingual text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "brokkai/Muninn · Hugging Face",
+      "url": "https://huggingface.co/brokkai/Muninn",
+      "snippet": "brokkai / Muninn like 1 Follow Brokk AI 1 Sentence Similarity sentence-transformers Safetensors BrokkAI/Quarry qwen3 code-retrieval multilingual matryoshka custom_code text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Muninn Mesh Server — Self-hosted governed memory for production AI",
+      "url": "https://www.ioka.io/server",
+      "snippet": "Muninn Mesh Server Self-hosted governed memory for production AI Muninn Mesh Server carries accountable memory into production, inside your perimeter. A year of measured experiments in Muninn Mesh Lab produced the Mesh Memory Protocol; the server is its production implementation — small, fast, self-hosted, and uncomplicated to run."
+    },
+    {
+      "title": "Muninn: Your Trajectory Diffusion Model But Faster - GitHub",
+      "url": "https://github.com/gokulp01/Muninn",
+      "snippet": "Muninn: Your Trajectory Diffusion Model But Faster 🏆 News: Muninn won the Outstanding Student Paper Award at RSS 2026! Diffusion-based trajectory planners can synthesize rich, multimodal robot motions, but their iterative denoising makes online planning and control prohibitively slow."
+    },
+    {
+      "title": "GitHub - Iormungand21/muninn: Fastest, smallest, and fully autonomous ...",
+      "url": "https://github.com/Iormungand21/muninn",
+      "snippet": "Fastest, smallest, and fully autonomous AI assistant infrastructure written in Zig - Iormungand21/muninn"
+    }
+  ]
+}

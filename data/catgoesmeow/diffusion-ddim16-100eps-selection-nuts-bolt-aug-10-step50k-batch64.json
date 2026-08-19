@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "CatGoesMeow/DIFFUSION-DDIM16-100eps-Selection-Nuts-Bolt-Aug-10-Step50k-Batch64",
+  "slug": "catgoesmeow-diffusion-ddim16-100eps-selection-nuts-bolt-aug-10-step50k-batch64",
+  "author": "CatGoesMeow",
+  "url": "https://huggingface.co/CatGoesMeow/DIFFUSION-DDIM16-100eps-Selection-Nuts-Bolt-Aug-10-Step50k-Batch64",
+  "created_at": "2026-08-14T16:29:13.000Z",
+  "updated_at": "2026-08-14T16:29:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:CatGoesMeow/100eps_Selection_Nuts_Bolt_Aug_10",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 266623358,
+  "parameters_human": "266.6M",
+  "storage_bytes": 1066526264,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

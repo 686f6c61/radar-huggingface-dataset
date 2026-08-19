@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "modrill/CN11-FIELD_OCI100",
+  "slug": "modrill-cn11-field_oci100",
+  "author": "modrill",
+  "url": "https://huggingface.co/modrill/CN11-FIELD_OCI100",
+  "created_at": "2026-08-15T21:21:10.000Z",
+  "updated_at": "2026-08-15T21:31:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3",
+    "code",
+    "livecodebench",
+    "diagnostic-only",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:adapter:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 539972906,
+  "storage_human": "540 MB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "modrill (Heyang MA) - Hugging Face",
+      "url": "https://huggingface.co/modrill/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a model 1 day ago ... updated a model 1 day ago"
+    },
+    {
+      "title": "Document Intelligence US mortgage documents - Foundry Tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/mortgage-documents?view=doc-intel-4.0.0",
+      "snippet": "Use Document Intelligence prebuilt models to analyze and extract key fields from mortgage documents."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    },
+    {
+      "title": "Downloading models · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/models-downloading",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

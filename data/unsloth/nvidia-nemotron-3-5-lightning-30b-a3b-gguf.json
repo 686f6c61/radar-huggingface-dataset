@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF",
+  "slug": "unsloth-nvidia-nemotron-3-5-lightning-30b-a3b-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF",
+  "created_at": "2026-08-12T13:25:37.000Z",
+  "updated_at": "2026-08-13T00:19:58.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nvidia",
+    "pytorch",
+    "nemotron-3.5",
+    "text-generation",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 75,
+  "downloads_30d": 96449,
+  "trending_score": 73,
+  "parameters": 32913266240,
+  "parameters_human": "32.91B",
+  "storage_bytes": 501456017952,
+  "storage_human": "501.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3.5 Lightning: How To Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/nemotron-3.5",
+      "snippet": "NVIDIA Nemotron-3.5-Lightning-30B-A3B is an open 30B parameter, 3B active hybrid reasoning MoE model built for high-volume task execution in long-running agents. It is designed for frequent agent calls including tool use, output validation, result formatting and subagent delegation. The model runs on 20GB RAM for 4-bit and 33GB for 8-bit."
+    },
+    {
+      "title": "unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF at main",
+      "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/tree/main",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "unsloth/Nemotron-3-Nano-30B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Nemotron-3-Nano-30B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia / nemotron-3.5-lightning-30b-a3b",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-5-lightning-30b-a3b",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a general purpose reasoning and chat model intended to be used in English and coding languages. Other non-English languages (Spanish, French, German, Italian, Japanese) are also supported. Intended for developers designing AI Agent systems, chatbots, RAG systems, and other AI-powered applications. Also suitable for typical instruction-following tasks."
+    }
+  ]
+}

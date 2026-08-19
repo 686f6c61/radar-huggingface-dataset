@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "xiaobiaoins/macbookm4pro",
+  "slug": "xiaobiaoins-macbookm4pro",
+  "author": "xiaobiaoins",
+  "url": "https://huggingface.co/xiaobiaoins/macbookm4pro",
+  "created_at": "2026-08-17T06:05:44.000Z",
+  "updated_at": "2026-08-17T07:22:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86512140,
+  "storage_human": "87 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MacBook Pro (14-inch, M4, 2024) - Tech Specs - Apple Support",
+      "url": "https://support.apple.com/en-us/121552",
+      "snippet": "MacBook Pro (14-inch, M4, 2024) - Tech Specs Year introduced: 2024 Identify your MacBook Pro model"
+    },
+    {
+      "title": "MacBook Pro (14-inch, M4 Pro or M4 Max, 2024) - Tech Specs",
+      "url": "https://support.apple.com/en-us/121553",
+      "snippet": "Accessibility features help people with disabilities get the most out of their new MacBook Pro. With built-in support for vision, hearing, mobility, and learning, you can create and do amazing things. Learn more about Accessibility. Features include: M4 Pro with 12‑core CPU. M4 Pro with 14‑core CPU or M4 Max."
+    },
+    {
+      "title": "New MacBook Pro features M4 family of chips and Apple Intelligence",
+      "url": "https://www.apple.com/newsroom/2024/10/new-macbook-pro-features-m4-family-of-chips-and-apple-intelligence/",
+      "snippet": "1 With a Neural Engine that&#x27;s over 3x more powerful than in M1, it&#x27;s great for features in Apple Intelligence and other AI workloads. The M4 model also supports two high-resolution external displays in addition to the built-in display, and now features three Thunderbolt 4 ports so users can connect all their peripherals."
+    },
+    {
+      "title": "Porovnej si modely MacBooku Pro - Apple (CZ)",
+      "url": "https://www.apple.com/cz/macbook-pro/compare/",
+      "snippet": "Porovnej si Macbook Pro s ostatními přenosnými a stolními Macy. A najdi si takový, který odpovídá tvému způsobu života, práci i finančním představám."
+    },
+    {
+      "title": "New MacBook Pro Features Apple&#x27;s M4 AI Chip - TechRepublic",
+      "url": "https://www.techrepublic.com/article/2024-apple-macbook-pro-ai/",
+      "snippet": "Apple has officially unveiled the 2024 MacBook Pro, powered by its most advanced chip to date, the M4. Available for preorder now, the new MacBook Pro joins the refreshed iMac and Mac mini..."
+    }
+  ]
+}

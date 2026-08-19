@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "digiphyte/fluister-turbo-transformers",
+  "slug": "digiphyte-fluister-turbo-transformers",
+  "author": "digiphyte",
+  "url": "https://huggingface.co/digiphyte/fluister-turbo-transformers",
+  "created_at": "2026-08-18T15:55:26.000Z",
+  "updated_at": "2026-08-18T15:56:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "af",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "fluister",
+    "afrikaans",
+    "english",
+    "south-africa",
+    "core-ml",
+    "whisperkit",
+    "af",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 1617824864,
+  "storage_human": "1.6 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "digiphyte/fluister-turbo · Hugging Face",
+      "url": "https://huggingface.co/digiphyte/fluister-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "digiphyte/fluister-turbo at main - Hugging Face",
+      "url": "https://huggingface.co/digiphyte/fluister-turbo/tree/main",
+      "snippet": "/ fluister-turbo like 1 Automatic Speech Recognition Afrikaans English ctranslate2 whisper fluister afrikaans english south-africa faster-whisper License:mit Model card FilesFiles and versions xet Community Copy to bucket new main fluister-turbo 819 MB Ctrl+K Ctrl+K 1 contributor History:9 commits digiphyte Update NOTICE for v2 2210b90 ..."
+    },
+    {
+      "title": "GitHub - Tencent/TurboTransformers: a fast and user-friendly runtime ...",
+      "url": "https://github.com/Tencent/TurboTransformers",
+      "snippet": "Make transformers serving fast by adding a turbo to your inference engine! The WeChat AI open-sourced TurboTransformers with the following characteristics. Supporting both Transformers Encoder and Decoder. Supports Variable Length inputs. No time-consuming offline tuning is required. You can change batch size and sequence length at real-time. Excellent CPU / GPU performance. Perfect Usibility ..."
+    },
+    {
+      "title": "Transformers library - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/transformers-library/",
+      "snippet": "The Transformers library, developed by Hugging Face, is an open source toolkit for working with advanced machine learning models across text, images, audio and multimodal data. It is widely used in NLP, computer vision and generative AI applications. Provides access to pre-trained models. Supports text, image, audio, and multimodal tasks. Works with PyTorch and TensorFlow. Simplifies model ..."
+    },
+    {
+      "title": "GitHub - huggingface/transformers: Transformers: the model-definition ...",
+      "url": "https://github.com/huggingface/transformers",
+      "snippet": "State-of-the-art pretrained models for inference and training Transformers acts as the model-definition framework for state-of-the-art machine learning with text, computer vision, audio, video, and multimodal models, for both inference and training."
+    }
+  ]
+}

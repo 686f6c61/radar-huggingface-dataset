@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sprited/dancing-stick-figures-baselines",
+  "slug": "sprited-dancing-stick-figures-baselines",
+  "author": "sprited",
+  "url": "https://huggingface.co/sprited/dancing-stick-figures-baselines",
+  "created_at": "2026-08-18T18:20:51.000Z",
+  "updated_at": "2026-08-18T21:13:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "diffusion",
+    "video-diffusion",
+    "synthetic",
+    "stick-figure",
+    "unet",
+    "dit",
+    "flow-matching",
+    "unconditional-image-generation",
+    "dataset:sprited/dancing-stick-figures",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3166147680,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sprited/dancing-stick-figures · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/sprited/dancing-stick-figures",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sprited-ai/sprute: Open workflow for generating 8-direction ...",
+      "url": "https://github.com/sprited-ai/sprute",
+      "snippet": "Open workflow for generating 8-direction game character sprites with template-guided image models - sprited-ai/sprute"
+    },
+    {
+      "title": "stick figure generator | BasedLabs",
+      "url": "https://www.basedlabs.ai/tools/stick-figure-generator",
+      "snippet": "Welcome to the BasedLabs AI-powered stick figure drawing tool! If you need to rapidly visualize an idea, storyboard a scene, or create a simple explainer, you&#x27;ve come to the right place. When you use our generator, you&#x27;ll find that it&#x27;s far more versatile than just sketching stick figures by hand. The joint controls allow for precise posing, letting you communicate subtle actions and emotions ..."
+    },
+    {
+      "title": "Sprited · GitHub",
+      "url": "https://github.com/sprited-ai/",
+      "snippet": "The repository provides code for running inference with the SAM 3D Body Model (3DB), links for downloading the trained model checkpoints and datasets, and example notebooks that show how to use the model."
+    },
+    {
+      "title": "Sprited — A digital being studio",
+      "url": "https://sprited.ai/products",
+      "snippet": "Sprited builds digital beings — small, persistent creatures with memory, a body, and a life of their own — and the worlds they&#x27;ll live in. The first one, Monet, is alive now."
+    }
+  ]
+}

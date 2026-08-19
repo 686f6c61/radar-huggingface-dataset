@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kerasformers/internvl3.5-30b-a3b",
+  "slug": "kerasformers-internvl3-5-30b-a3b",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/internvl3.5-30b-a3b",
+  "created_at": "2026-08-17T05:15:59.000Z",
+  "updated_at": "2026-08-17T06:09:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "internvl",
+    "internvl3-5",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "mixture-of-experts",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "arxiv:2508.18265",
+    "arxiv:2505.09388",
+    "arxiv:2309.00071",
+    "base_model:OpenGVLab/InternVL3_5-30B-A3B-HF",
+    "base_model:finetune:OpenGVLab/InternVL3_5-30B-A3B-HF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61756374012,
+  "storage_human": "61.8 GB",
+  "base_model": "OpenGVLab/InternVL3_5-30B-A3B-HF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenGVLab/InternVL3_5-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-30B-A3B",
+      "snippet": "These contributions collectively enable InternVL3.5 to achieve up to a +16.0% gain in overall reasoning performance and a 4.05 $&#92;times &#92;backslash times$ inference speedup compared to its predecessor, i.e., InternVL3."
+    },
+    {
+      "title": "OpenGVLab/InternVL3_5-30B-A3B-HF · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-30B-A3B-HF",
+      "snippet": "Quick Start We provide an example code to run InternVL3.5-8B-HF using transformers. Please note that our models with up to 30B parameters can be deployed on a single A100 GPU, while the 38B model requires two A100 GPUs and the 235B model requires eight A100 GPUs. In most cases, both LMDeploy and vLLM can be used for model deployment."
+    },
+    {
+      "title": "GitHub - OpenGVLab/InternVL: [CVPR 2024 Oral] InternVL Family: A ...",
+      "url": "https://github.com/OpenGVLab/InternVL",
+      "snippet": "2025/08/26: 🚀 We introduce InternVL3.5, a new family of open-source multimodal models that significantly advances versatility, reasoning capability, and inference efficiency along the InternVL series."
+    },
+    {
+      "title": "InternVL3 5 30B A3B (30B) - MMLU 82 | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/OpenGVLab/InternVL3_5-30B-A3B",
+      "snippet": "InternVL3.5-30B-A3B is a high-performance 30B-parameter multimodal model by OpenGVLab supporting complex image-to-text reasoning, visual understanding, OCR, and multilingual interaction for scientific and educational use cases."
+    },
+    {
+      "title": "InternVL3.5",
+      "url": "https://internvl.github.io/blog/2025-08-26-InternVL-3.5/",
+      "snippet": "For the Flash version of InternVL3.5, we additionally introduce a lightweight training stage, termed Visual Consistency Learning (ViCO), which reduces the token cost required to represent an image patch. Here, we also open-source the model weights after different training stages for potential research usage."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp",
+  "slug": "scottlowry-qwen3-8-27b-oq4e-fp16-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp",
+  "created_at": "2026-08-14T15:49:21.000Z",
+  "updated_at": "2026-08-14T16:05:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 1247,
+  "trending_score": 8,
+  "parameters": 4926789872,
+  "parameters_human": "4.93B",
+  "storage_bytes": 17905949462,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp",
+      "snippet": "Instructions to use scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ4e-fp16-mtp scottlowry/Qwen3.8-27B-oQ4e-fp16 ..."
+    },
+    {
+      "title": "scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp at main - Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp/tree/main",
+      "snippet": "scottlowry / Qwen3.8-27B-oQ4e-fp16-mtp like 5 MLX Safetensors qwen3_5 oq quantized 4-bit precision Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "qwen3.8-27b - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    }
+  ]
+}

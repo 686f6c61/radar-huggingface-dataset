@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/pi0-xarm-wire-rope-v1.0",
+  "slug": "jaycao99-pi0-xarm-wire-rope-v1-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/pi0-xarm-wire-rope-v1.0",
+  "created_at": "2026-08-17T05:26:09.000Z",
+  "updated_at": "2026-08-17T05:27:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8892518928,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JayCao99/xarm-wire-rope-v1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/JayCao99/xarm-wire-rope-v1",
+      "snippet": "xarm-wire-rope-v1 A single-task teleoperation dataset for wiring a rope through two rings, collected on an xArm7 robot arm via phone teleoperation."
+    },
+    {
+      "title": "JayCao99/pi0-xarm-wire-rope-v0.0 · Hugging Face",
+      "url": "https://huggingface.co/JayCao99/pi0-xarm-wire-rope-v0.0",
+      "snippet": "Instructions to use JayCao99/pi0-xarm-wire-rope-v0. with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use JayCao99/pi0-xarm-wire-rope-v0. with LeRobot: Notebooks Google Colab Kaggle Pi-0 (xarm wire rope) Usage"
+    },
+    {
+      "title": "xArm AI — xArm AI v1.0 documentation - docs.hiwonder.com",
+      "url": "https://docs.hiwonder.com/projects/xArm_AI/en/latest/index.html",
+      "snippet": "xArm AI 1. Get Started 1.1 Get to Know xArm AI 1.2 Packing List 1.3 Introduction to Servo and Controller 1.4 Accessory Assembly & Notices 2. Remote Control 2.1 PS2 Wireless Controller Control 2.2 APP Control 3. PC Software Control 3.1 Introduction to PC Software 3.2 Execute Action 3.3 Action Programming 3.4 Integrate Action Groups 3.5 Execute ..."
+    },
+    {
+      "title": "DOWNLOADS - ufactory.us",
+      "url": "https://www.ufactory.us/downloads",
+      "snippet": "User Manual V2.0.0 Ufactory 850 Ufactory 850 APIs AC Control Box DC Control Box Mounting Tool 850 (FX85) Moveable Model"
+    },
+    {
+      "title": "Appendix — xArm AI v1.0 documentation - docs.hiwonder.com",
+      "url": "https://docs.hiwonder.com/projects/xArm_AI/en/latest/docs/resources_download.html",
+      "snippet": "xArm AI 1. Get Started 2. Remote Control 3. PC Software Control 4. Scratch Programming Project 5. Python Programming Projects 6. Arduino Programming Project 7. Serial Communication Course Appendix Download"
+    }
+  ]
+}

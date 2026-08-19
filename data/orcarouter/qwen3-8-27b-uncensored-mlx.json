@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "orcarouter/Qwen3.8-27B-Uncensored-MLX",
+  "slug": "orcarouter-qwen3-8-27b-uncensored-mlx",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX",
+  "created_at": "2026-08-17T14:10:50.000Z",
+  "updated_at": "2026-08-17T16:01:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "abliterated",
+    "qwen3.8",
+    "qwen3_5",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "apple-silicon",
+    "quantized",
+    "4-bit",
+    "8-bit",
+    "vision-language",
+    "image-text-to-text",
+    "multimodal",
+    "function-calling",
+    "reasoning",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 314,
+  "downloads_30d": 0,
+  "trending_score": 270,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77684832047,
+  "storage_human": "77.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8 · Hugging Face",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Noillum123 | Qwen3.8-27B-Uncensored-FP8 | Kaggle",
+      "url": "https://www.kaggle.com/models/noillum123/qwen3-8-27b-uncensored-fp8",
+      "snippet": "Qwen3.8-27B-Uncensored-FP8 is an abliterated (refusal-removed) and offline block-FP8 quantized build of Qwen&#x27;s Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with flexible thinking control, tool-calling, and an MTP speculative-decoding head."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-FP8: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-uncensored-fp8-orcarouter",
+      "snippet": "Overview Qwen3.8-27B-Uncensored-FP8 is an abliterated and block-FP8 quantized version of Alibaba&#x27;s Qwen3.8-27B, maintained by orcarouter. The model removes refusal mechanisms through orthogonalization of the safety direction from residual-writing matrices, then applies offline block-FP8 quantization (E4M3, 128×128 block size) matching the official Qwen3.8-27B-FP8 byte-for-byte. It retains the ..."
+    },
+    {
+      "title": "OrcaRouter&#x27;s abliterated Qwen3.8-27B ships without the BF16 weights or ...",
+      "url": "https://singhfinity.com/insights/articles/orcarouter-s-abliterated-qwen3-8-27b-ships-without-the-bf16-weights-or-a-single-",
+      "snippet": "\"We just released our uncensored weights for Qwen3.8 27B FP8, designed for AI Red Teaming and security research, enjoy!\" That is @OrcaRouter announcing orcarouter/Qwen3.8-27B-Uncensored-FP8, and the sentence is doing a lot of work, because \"designed for AI Red Teaming and security research\" is the entire public justification for the artifact."
+    },
+    {
+      "title": "How the Qwen3.8‑27B Uncensored FP8 Model Erases Refusa… | BestHub",
+      "url": "https://www.besthub.dev/articles/how-the-qwen3-8-27b-uncensored-fp8-model-erases-refusal-direction-for-red-team-use-f4554f60dfd3",
+      "snippet": "The article details how the OrcaRouter team applied abliteration to Qwen3.8‑27B, removed the model&#x27;s refusal direction, re‑quantized it to FP8, benchmarked unchanged general abilities but near‑zero refusal rates, and provides download links and deployment instructions for red‑team and safety research."
+    }
+  ]
+}

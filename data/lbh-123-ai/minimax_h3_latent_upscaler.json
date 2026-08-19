@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "LBH-123-AI/Minimax_h3_latent_Upscaler",
+  "slug": "lbh-123-ai-minimax_h3_latent_upscaler",
+  "author": "LBH-123-AI",
+  "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler",
+  "created_at": "2026-08-17T05:23:10.000Z",
+  "updated_at": "2026-08-17T06:08:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 82,
+  "downloads_30d": 0,
+  "trending_score": 81,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2771302165,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax-H3 - a MiniMaxAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/MiniMaxAI/minimax-h3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run MiniMax H3 Locally: Hardware and Install Guide - kingy.ai",
+      "url": "https://kingy.ai/ai/ai-guides/minimax-h3-local-installation-hardware-guide/",
+      "snippet": "Run MiniMax H3 locally with ComfyUI, Diffusers, SGLang or vLLM-Omni. Compare hardware, downloads, licensing, cloud costs and setup risks."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "The latent space of H3-VisualVAE is optimized for both reconstruction quality and ease of learning by the generative model. After training its encoder, we additionally train a ViT-based decoder to reduce decoding costs and further improve reconstruction quality."
+    },
+    {
+      "title": "ComfyUI-MiniMaxH3_LatentUpscaler/README.md at main · Tr1dae ... - GitHub",
+      "url": "https://github.com/Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler/blob/main/README.md",
+      "snippet": "MiniMaxH3_LatentUpscaler ComfyUI custom node for latent spatial upscaling between MiniMax H3 samplers. Not a learned AI upscaler. Stock LatentUpscaleBy / AddNoise break on MiniMax&#x27;s ComfyUI NestedTensor AV latents (video [B,24,T,H/16,W/16] + audio [B,32,2,T_audio])."
+    },
+    {
+      "title": "MiniMax H3 2x Latent Upscaler With ComfyUI Nodes",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-08-minimax-h3-latent-upscaler",
+      "snippet": "Mamad8 releases a 2x clean-latent upscaler for MiniMax H3 with two ComfyUI nodes, doubling spatial resolution before VAE decode while staying in latent space."
+    }
+  ]
+}

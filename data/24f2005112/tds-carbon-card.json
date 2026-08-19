@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "24f2005112/tds-carbon-card",
+  "slug": "24f2005112-tds-carbon-card",
+  "author": "24f2005112",
+  "url": "https://huggingface.co/24f2005112/tds-carbon-card",
+  "created_at": "2026-08-18T15:46:52.000Z",
+  "updated_at": "2026-08-18T15:47:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 24f2005112/TDS-GA6",
+      "url": "https://github.com/24f2005112/TDS-GA6",
+      "snippet": "Contribute to 24f2005112/TDS-GA6 development by creating an account on GitHub."
+    },
+    {
+      "title": "tds-ga4/main.py at main · 24f2005112/tds-ga4 · GitHub",
+      "url": "https://github.com/24f2005112/tds-ga4/blob/main/main.py",
+      "snippet": "Contribute to 24f2005112/tds-ga4 development by creating an account on GitHub."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "carbontxt.org",
+      "url": "https://carbontxt.org/ai-model-cards",
+      "snippet": "AI Model Sustainability Directory Using the carbon.txt syntax and validator, we have extracted the sustainability data from over 2500 AI model cards from Hugging Face that are listed with co2_eq_emissions metadata."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

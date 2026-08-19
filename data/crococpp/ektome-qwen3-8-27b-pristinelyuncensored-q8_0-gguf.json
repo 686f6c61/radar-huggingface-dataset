@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "CrocoCpp/Ektome-Qwen3.8-27B-PristinelyUncensored-Q8_0-GGUF",
+  "slug": "crococpp-ektome-qwen3-8-27b-pristinelyuncensored-q8_0-gguf",
+  "author": "CrocoCpp",
+  "url": "https://huggingface.co/CrocoCpp/Ektome-Qwen3.8-27B-PristinelyUncensored-Q8_0-GGUF",
+  "created_at": "2026-08-15T21:35:15.000Z",
+  "updated_at": "2026-08-15T21:37:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "abliteration-repair",
+    "capability-preserving",
+    "ektome",
+    "surrogate-null",
+    "qwen3.8",
+    "mtp",
+    "multi-token-prediction",
+    "speculative-decoding",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+    "base_model:quantized:Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 170,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 29047075904,
+  "storage_human": "29.0 GB",
+  "base_model": "Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CrocoCpp/Ektome-Qwen3.8-27B-PristinelyUncensored-Q4_K_M-GGUF - Hugging Face",
+      "url": "https://huggingface.co/CrocoCpp/Ektome-Qwen3.8-27B-PristinelyUncensored-Q4_K_M-GGUF",
+      "snippet": "This model was converted to GGUF format from Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Ektome Qwen3.8 27B PristinelyUncensored by Zynerji",
+      "url": "https://llm-explorer.com/model/Zynerji%2FEktome-Qwen3.8-27B-PristinelyUncensored,2RRZbScVnr4ntDr90fDCmu",
+      "snippet": "Rank the Ektome Qwen3.8 27B PristinelyUncensored capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B on Your Own Computer - lu-labs.ai",
+      "url": "https://lu-labs.ai/blog/how-to-run-qwen-3-8-27b-locally",
+      "snippet": "The 2.4 trillion parameter giant opened up on 12 August under Alibaba&#x27;s own qwen3.8-max licence, and it needs a data center either way. Qwen 3.8 27B followed on 13 August under Apache 2.0, and it is a dense model built to fit on a single graphics card or a decent laptop. This post is about the 27B."
+    },
+    {
+      "title": "Ektome-Qwen3.6-27B-PristinelyUncensored - Hugging Face",
+      "url": "https://huggingface.co/Zynerji/Ektome-Qwen3.6-27B-PristinelyUncensored",
+      "snippet": "Ektome-Qwen3.6-27B-PristinelyUncensored Uncensored — with most of the usual capability tax removed. Pristine Qwen3.6-27B, refusal surgically excised, knowledge and reasoning almost entirely preserved. 🎯 Fully uncensored (1% refusal on harmful) at capability +0.000 vs pristine Qwen3.6-27B. Standard abliteration makes a model uncensored but damages it: the crude \"refusal direction\" it ..."
+    }
+  ]
+}

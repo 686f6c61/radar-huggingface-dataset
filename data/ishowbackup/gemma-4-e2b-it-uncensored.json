@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Ishowbackup/gemma-4-E2B-it-uncensored",
+  "slug": "ishowbackup-gemma-4-e2b-it-uncensored",
+  "author": "Ishowbackup",
+  "url": "https://huggingface.co/Ishowbackup/gemma-4-E2B-it-uncensored",
+  "created_at": "2026-08-18T15:35:39.000Z",
+  "updated_at": "2026-08-18T15:35:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "abliteration",
+    "uncensored",
+    "gemma-4",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 20527559192,
+  "storage_human": "20.5 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

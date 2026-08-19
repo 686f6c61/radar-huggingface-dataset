@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa",
+  "slug": "weifanjiang-qwen3-8b-speculators-dspark-ce01tv09-bs8-conf-swa",
+  "author": "weifanjiang",
+  "url": "https://huggingface.co/weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa",
+  "created_at": "2026-08-12T00:55:54.000Z",
+  "updated_at": "2026-08-17T16:23:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 1849304193,
+  "parameters_human": "1.85B",
+  "storage_bytes": 4705817687,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa · Hugging ...",
+      "url": "https://huggingface.co/weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa",
+      "snippet": "/ qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa like 0 Safetensors custom_code Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 2B params Tensor type I64 · BF16 · BOOL · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "Dogacel/Qwen3-8B-DSpark · Hugging Face",
+      "url": "https://huggingface.co/Dogacel/Qwen3-8B-DSpark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSpec/deepspec/modeling/dspark/qwen3 at main · deepseek-ai ... - GitHub",
+      "url": "https://github.com/deepseek-ai/DeepSpec/tree/main/deepspec/modeling/dspark/qwen3",
+      "snippet": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms - deepseek-ai/DeepSpec"
+    },
+    {
+      "title": "DeepSpec/config/dspark/dspark_qwen3_8b.py at main · deepseek-ai ...",
+      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/config/dspark/dspark_qwen3_8b.py",
+      "snippet": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms - deepseek-ai/DeepSpec"
+    },
+    {
+      "title": "DSpark Configuration Files | deepseek-ai/DeepSpec | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-ai/DeepSpec/5.1-dspark-configuration-files",
+      "snippet": "DSpark Configuration Files Relevant source files This page documents the configuration system for the DSpark algorithm across various target models, including Qwen3 and Gemma4. These configuration files define the structural parameters of the draft model, the optimization settings for the training process, and the logic for initializing experiment directories. Overview of Configuration ..."
+    }
+  ]
+}

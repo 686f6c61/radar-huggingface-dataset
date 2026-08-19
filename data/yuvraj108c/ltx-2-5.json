@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "yuvraj108c/LTX-2.5",
+  "slug": "yuvraj108c-ltx-2-5",
+  "author": "yuvraj108c",
+  "url": "https://huggingface.co/yuvraj108c/LTX-2.5",
+  "created_at": "2026-08-12T16:27:37.000Z",
+  "updated_at": "2026-08-18T08:52:03.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "image-to-video",
+    "text-to-video",
+    "video-to-video",
+    "image-text-to-video",
+    "audio-to-video",
+    "text-to-audio",
+    "video-to-audio",
+    "audio-to-audio",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "ltx-video",
+    "lightricks",
+    "comfyui",
+    "ltx-2.5",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt",
+    "arxiv:2601.03233",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2207,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158837576310,
+  "storage_human": "158.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    },
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    },
+    {
+      "title": "yuvraj108c (yuvraj) - Hugging Face",
+      "url": "https://huggingface.co/yuvraj108c/models",
+      "snippet": "yuvraj108c/ComfyUI-Upscaler-Onnx: New 1x-ITF-SkinDiffDetail-Lite-v1.onnx with fixed 1x scale factor. View all activity. Organizations"
+    },
+    {
+      "title": "LTX-2.5: A Complete Guide to LTX&#x27;s Audio-Video AI Model",
+      "url": "https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model",
+      "snippet": "Explore LTX-2.5, LTX&#x27;s 22B AI model for multishot video with synchronized audio, including features, use cases, limits, and setup."
+    }
+  ]
+}

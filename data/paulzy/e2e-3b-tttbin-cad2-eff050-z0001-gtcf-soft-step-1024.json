@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "paulzy/e2e-3b-tttbin-cad2-eff050-z0001-gtcf-soft-step-1024",
+  "slug": "paulzy-e2e-3b-tttbin-cad2-eff050-z0001-gtcf-soft-step-1024",
+  "author": "paulzy",
+  "url": "https://huggingface.co/paulzy/e2e-3b-tttbin-cad2-eff050-z0001-gtcf-soft-step-1024",
+  "created_at": "2026-08-17T16:53:48.000Z",
+  "updated_at": "2026-08-17T16:54:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "orbax",
+    "test-time-training",
+    "early-exit",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10748998209,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ALLDATASHEET.NET - Electronic Parts Datasheet Search",
+      "url": "https://www.alldatasheet.net/",
+      "snippet": "Datasheet search site for Electronic Components and Semiconductors, integrated circuits, diodes, triacs and other semiconductors."
+    },
+    {
+      "title": "Google Patents Advanced Search",
+      "url": "https://patents.google.com/advanced",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "Electronic Components Search Engine | Find Parts Fast | Octopart",
+      "url": "https://octopart.com/",
+      "snippet": "The most accurate and comprehensive electronic part data at your fingertips. Search across distributors, manufacturers and parts to compare pricing and view inventory & datasheets."
+    },
+    {
+      "title": "Free 3D models, CAD files and 2D drawings - TraceParts",
+      "url": "https://www.traceparts.com/en/catalogs",
+      "snippet": "TraceParts is one of the world&#x27;s leading providers of 3D digital content for Engineering. The traceparts.com portal is available free-of-charge to millions of CAD users worldwide. It provides access to hundreds of supplier catalogs and more than 100 Million CAD models and product datasheets."
+    },
+    {
+      "title": "TI E2E support forums",
+      "url": "https://e2e.ti.com/",
+      "snippet": "TI E2E™ design support forums are an engineer&#x27;s go-to source for help throughout every step of the design process. Our engineers answer your technical questions and share their knowledge to help you quickly solve your design issues."
+    }
+  ]
+}

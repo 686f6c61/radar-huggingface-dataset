@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Jeethu/Lizzy-7B-PARO",
+  "slug": "jeethu-lizzy-7b-paro",
+  "author": "Jeethu",
+  "url": "https://huggingface.co/Jeethu/Lizzy-7B-PARO",
+  "created_at": "2026-08-14T12:25:28.000Z",
+  "updated_at": "2026-08-14T12:28:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lizzy",
+    "text-generation",
+    "lizzy-7b",
+    "flwrlabs",
+    "british-english",
+    "conversational",
+    "custom_code",
+    "en",
+    "arxiv:2511.10645",
+    "base_model:flwrlabs/Lizzy-7B",
+    "base_model:quantized:flwrlabs/Lizzy-7B",
+    "license:apache-2.0",
+    "4-bit",
+    "paroquant",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 1703227392,
+  "parameters_human": "1.70B",
+  "storage_bytes": 5038271952,
+  "storage_human": "5.0 GB",
+  "base_model": "flwrlabs/Lizzy-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

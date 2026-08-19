@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yerevann/ChemLlama-170M",
+  "slug": "yerevann-chemllama-170m",
+  "author": "yerevann",
+  "url": "https://huggingface.co/yerevann/ChemLlama-170M",
+  "created_at": "2026-04-15T10:31:03.000Z",
+  "updated_at": "2026-08-17T05:38:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 785,
+  "trending_score": 0,
+  "parameters": 169292544,
+  "parameters_human": "169.3M",
+  "storage_bytes": 1406245611,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yerevann/chemllama-170m · Hugging Face",
+      "url": "https://huggingface.co/yerevann/chemllama-170m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChemLlama-170M API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/yerevann/ChemLlama-170M",
+      "snippet": "Run ChemLlama-170M with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "YerevaNN Lab - Hugging Face",
+      "url": "https://huggingface.co/yerevann/models",
+      "snippet": "Recent Activity updated a collection13 days ago Small Molecule Optimization with LLMs updated a model13 days ago yerevann/chemlactica-1.3b published a model13 days ago yerevann/chemlactica-1.3b View all activity"
+    },
+    {
+      "title": "YerevaNN · GitHub",
+      "url": "https://github.com/YerevaNN/",
+      "snippet": "BARTSmiles Public BARTSmiles, generative masked language model for molecular representations Python 35 5"
+    },
+    {
+      "title": "YerevaNN repositories · GitHub",
+      "url": "https://github.com/orgs/YerevaNN/repositories",
+      "snippet": "research lab. YerevaNN has 76 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

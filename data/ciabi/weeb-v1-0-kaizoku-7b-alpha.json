@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ciabi/Weeb-v1.0-Kaizoku-7B-Alpha",
+  "slug": "ciabi-weeb-v1-0-kaizoku-7b-alpha",
+  "author": "ciabi",
+  "url": "https://huggingface.co/ciabi/Weeb-v1.0-Kaizoku-7B-Alpha",
+  "created_at": "2026-08-16T05:22:09.000Z",
+  "updated_at": "2026-08-16T05:48:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073568,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

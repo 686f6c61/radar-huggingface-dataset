@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen3.8-2.4T-A95B-FP8",
+  "slug": "qwen-qwen3-8-2-4t-a95b-fp8",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B-FP8",
+  "created_at": "2026-08-08T01:49:49.000Z",
+  "updated_at": "2026-08-12T10:23:42.000Z",
+  "license": "qwen3.8-max",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-2.4T-A95B",
+    "base_model:quantized:Qwen/Qwen3.8-2.4T-A95B",
+    "license:other",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 227,
+  "downloads_30d": 13344,
+  "trending_score": 206,
+  "parameters": 2446182725504,
+  "parameters_human": "2446.18B",
+  "storage_bytes": 2496144198227,
+  "storage_human": "2496.1 GB",
+  "base_model": "Qwen/Qwen3.8-2.4T-A95B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-2.4T-A95B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable ...",
+      "url": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/",
+      "snippet": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open ecosystem. It has 2.4T total parameters with 95B activated per token. It has 2.4T total parameters with 95B activated per token. It&#x27;s a fine-grained mixture of experts (MoE) architecture with a hybrid of full and linear attention, a context ..."
+    },
+    {
+      "title": "Qwen3.8 2.4T A95B - API Pricing & Providers | OpenRouter",
+      "url": "https://openrouter.ai/qwen/qwen3.8-2.4t-a95b",
+      "snippet": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of Qwen3.8 Max, with 95 billion active parameters out of 2.4 trillion total. It is suited for coding, research, complex reasoning, and agentic workflows."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Copy Models Qwen3.8 - How to Run Locally Guide to running Qwen3.8 quants on your local setup. Qwen3.8 is Qwen&#x27;s new family of models, including Qwen3.8-27B, Qwen3.8- 2.4T-A95B and Qwen3.8 -Max. Qwen3.8 has thinking capabilities and a 256K context window (up to 1M tokens). Qwen3.8-27B, the upcoming 27B parameter model will be released this week."
+    }
+  ]
+}

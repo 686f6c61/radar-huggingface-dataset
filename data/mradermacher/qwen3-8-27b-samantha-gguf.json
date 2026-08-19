@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Samantha-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-samantha-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Samantha-GGUF",
+  "created_at": "2026-08-18T07:01:58.000Z",
+  "updated_at": "2026-08-18T08:05:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "samantha",
+    "conversational",
+    "uncensored",
+    "merged",
+    "multimodal",
+    "vllm",
+    "en",
+    "dataset:digitalpipelines/samantha-1.1-uncensored",
+    "base_model:Lathly/Qwen3.8-27B-Samantha",
+    "base_model:quantized:Lathly/Qwen3.8-27B-Samantha",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780463360,
+  "storage_human": "190.8 GB",
+  "base_model": "Lathly/Qwen3.8-27B-Samantha",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Best Qwen3.8-27B GGUF: Q2, Q3, Q4, Q5, Q6 and Q8 - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/",
+      "snippet": "Compare exact Qwen3.8-27B Q2, Q3, Q4, Q5, Q6 and Q8 GGUF files by quality, memory, context and publisher; choose the right download for your hardware."
+    },
+    {
+      "title": "mradermacher/Qwen3.5-27B-Samantha-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-27B-Samantha-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Run Qwen 3.8 27B Locally (2026): 17 GB Total, Not 17 GB VRAM - ofox.ai",
+      "url": "https://ofox.ai/blog/qwen-3-8-27b-run-locally-vram-gguf-2026/",
+      "snippet": "The 17 GB figure for Qwen 3.8 27B is RAM plus VRAM, not a 16 GB card. Real GGUF sizes: 9.01 GB at 2-bit, 17.11 GB at 4-bit, measured at 7.11 tok/s."
+    }
+  ]
+}

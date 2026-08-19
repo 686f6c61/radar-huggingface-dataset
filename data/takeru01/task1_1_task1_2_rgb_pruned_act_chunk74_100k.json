@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "takeru01/task1_1_task1_2_rgb_pruned_act_chunk74_100k",
+  "slug": "takeru01-task1_1_task1_2_rgb_pruned_act_chunk74_100k",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/task1_1_task1_2_rgb_pruned_act_chunk74_100k",
+  "created_at": "2026-08-15T15:30:47.000Z",
+  "updated_at": "2026-08-16T08:34:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:takeru01/task1_1_task1_2_rgb_pruned",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51658382,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413346040,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "takeru01/task1_1_task1_2_rgb_pruned_act_chunk74_100k · Hugging Face",
+      "url": "https://huggingface.co/takeru01/task1_1_task1_2_rgb_pruned_act_chunk74_100k",
+      "snippet": "task1_1_task1_2_rgb_pruned_act_chunk74_100k ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "takeru01/task1_1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/takeru01/task1_1",
+      "snippet": "Datasets: takeru01 / task1_1 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 100K - 1M Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·135k rows default (135k rows) Split (1) train ..."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "danielkim-cerebras/ai-model-quality-challenge - GitHub",
+      "url": "https://github.com/danielkim-cerebras/ai-model-quality-challenge/blob/main/",
+      "snippet": "Task 1: a ≤5-minute video covering the questions in Task1_Performance.md (what you cut and why, framework chosen vs ruled out, your assumptions, and your read on the model sizes / profile use-cases). Task 2: walk through your pruning approach and the trade-offs in your handouts. Link the video (s) in the form (Loom, Drive, YouTube-unlisted ..."
+    },
+    {
+      "title": "IELTS Writing Task 1: Free Practice & Samples | IELTSWriting.ai",
+      "url": "https://ieltswriting.ai/ielts-writing-task-1",
+      "snippet": "Complete IELTS Writing Task 1 guide: Academic & GT modules, all chart and letter types, frequency, sample topics and study tips to boost your Task 1 band score."
+    }
+  ]
+}

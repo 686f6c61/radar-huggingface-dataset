@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "RoyYang0714/3D-MOOD",
+  "slug": "royyang0714-3d-mood",
+  "author": "RoyYang0714",
+  "url": "https://huggingface.co/RoyYang0714/3D-MOOD",
+  "created_at": "2025-07-21T13:41:51.000Z",
+  "updated_at": "2026-08-18T08:45:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "PyTorch",
+    "object-detection",
+    "dataset:RoyYang0714/3D-MOOD",
+    "arxiv:2507.23567",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1836143916,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RoyYang0714/3D-MOOD · Hugging Face",
+      "url": "https://huggingface.co/RoyYang0714/3D-MOOD",
+      "snippet": "However, real-world applications often introduce new environments and novel object categories, posing a challenge to these methods. In this paper, we address monocular 3D object detection in an open-set setting and introduce the first end-to-end 3D Monocular Open-set Object Detector (3D-MOOD)."
+    },
+    {
+      "title": "3D-MOOD - royyang0714.github.io",
+      "url": "https://royyang0714.github.io/3D-MOOD/",
+      "snippet": "We explore monocular 3D object detection in open-set settings, establishing benchmarks that account for both novel scenes and unseen object categories. We introduce 3D-MOOD, the first end-to-end open-set monocular 3D object detector, via 2D to 3D lifting, geometry-aware 3D query generation, and canonical image space."
+    },
+    {
+      "title": "RoyYang0714/3D-MOOD · Improve model card for 3D-MOOD: Add metadata ...",
+      "url": "https://huggingface.co/RoyYang0714/3D-MOOD/discussions/1/files",
+      "snippet": "Improve model card for 3D-MOOD: Add metadata, usage, and rich description"
+    },
+    {
+      "title": "GitHub - cvg/3D-MOOD: [ICCV&#x27;25] 3D-MOOD: Lifting 2D to 3D for Monocular ...",
+      "url": "https://github.com/cvg/3D-MOOD",
+      "snippet": "3D-MOOD: Lifting 2D to 3D for Monocular Open-Set Object Detection 3D-MOOD: Lifting 2D to 3D for Monocular Open-Set Object Detection Yung-Hsu Yang, Luigi Piccinelli, Mattia Segu, Siyuan Li, Rui Huang, Yuqian Fu, Marc Pollefeys, Hermann Blum, Zuria Bauer ICCV 2025, Paper at arXiv 2507.23567"
+    },
+    {
+      "title": "RoyYang0714 (Roy Yang) · GitHub",
+      "url": "https://github.com/RoyYang0714",
+      "snippet": "A graph representing RoyYang0714&#x27;s contributions from July 06, 2025 to July 08, 2026. The contributions are 97% commits, 2% pull requests, 1% issues, 0% code review."
+    }
+  ]
+}

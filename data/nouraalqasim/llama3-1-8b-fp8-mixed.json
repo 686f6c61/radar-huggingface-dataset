@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "NouraAlqasim/llama3.1-8b-fp8-mixed",
+  "slug": "nouraalqasim-llama3-1-8b-fp8-mixed",
+  "author": "NouraAlqasim",
+  "url": "https://huggingface.co/NouraAlqasim/llama3.1-8b-fp8-mixed",
+  "created_at": "2026-08-15T10:16:53.000Z",
+  "updated_at": "2026-08-15T15:18:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "fp8",
+    "modelopt",
+    "quantized",
+    "arabic-calibrated",
+    "calib-mixed",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 18196982004,
+  "storage_human": "18.2 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "id": "Wakeleyhuh/chowder-rerank-minilm",
+  "slug": "wakeleyhuh-chowder-rerank-minilm",
+  "author": "Wakeleyhuh",
+  "url": "https://huggingface.co/Wakeleyhuh/chowder-rerank-minilm",
+  "created_at": "2026-08-17T08:37:43.000Z",
+  "updated_at": "2026-08-17T10:43:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:424009",
+    "loss:BinaryCrossEntropyLoss",
+    "text-ranking",
+    "en",
+    "arxiv:1908.10084",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:finetune:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713601,
+  "parameters_human": "22.7M",
+  "storage_bytes": 181732824,
+  "storage_human": "182 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoSCIDOCS R100",
+      "metric": "Map",
+      "value": 0.3296
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoSCIDOCS R100",
+      "metric": "Mrr@10",
+      "value": 0.628
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoSCIDOCS R100",
+      "metric": "Ndcg@10",
+      "value": 0.4096
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoSciFact R100",
+      "metric": "Map",
+      "value": 0.749
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoSciFact R100",
+      "metric": "Mrr@10",
+      "value": 0.7594
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoSciFact R100",
+      "metric": "Ndcg@10",
+      "value": 0.7919
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNFCorpus R100",
+      "metric": "Map",
+      "value": 0.3709
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNFCorpus R100",
+      "metric": "Mrr@10",
+      "value": 0.6541
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNFCorpus R100",
+      "metric": "Ndcg@10",
+      "value": 0.4283
+    },
+    {
+      "task": "Cross Encoder Nano BEIR",
+      "dataset": "NanoBEIR R100 mean",
+      "metric": "Map",
+      "value": 0.4832
+    },
+    {
+      "task": "Cross Encoder Nano BEIR",
+      "dataset": "NanoBEIR R100 mean",
+      "metric": "Mrr@10",
+      "value": 0.6805
+    },
+    {
+      "task": "Cross Encoder Nano BEIR",
+      "dataset": "NanoBEIR R100 mean",
+      "metric": "Ndcg@10",
+      "value": 0.5433
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "chowder val",
+      "metric": "Map",
+      "value": 0.9965
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "chowder val",
+      "metric": "Mrr@10",
+      "value": 0.9965
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "chowder val",
+      "metric": "Ndcg@10",
+      "value": 0.9974
+    }
+  ],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "GitHub - agentset-ai/awesome-rerankers: A curated list of reranking ...",
+      "url": "https://github.com/agentset-ai/awesome-rerankers",
+      "snippet": "A curated list of reranking models, libraries, and resources for RAG applications. Rerankers take a query and retrieved documents and reorder them by relevance. They use cross-encoders to jointly encode query-document pairs, which is slower than vector search but more accurate. Typical pipeline: retrieve 50-100 candidates with vector search, rerank to top 3-5."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "mixedbread-ai/mxbai-rerank-base-v1 · Hugging Face",
+      "url": "https://huggingface.co/mixedbread-ai/mxbai-rerank-base-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

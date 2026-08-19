@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "TheOneWhoWill/Coding-Monkey-Gemma",
+  "slug": "theonewhowill-coding-monkey-gemma",
+  "author": "TheOneWhoWill",
+  "url": "https://huggingface.co/TheOneWhoWill/Coding-Monkey-Gemma",
+  "created_at": "2026-08-17T19:51:05.000Z",
+  "updated_at": "2026-08-17T19:52:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "en",
+    "dataset:glaiveai/glaive-function-calling-v2",
+    "dataset:zai-org/AgentInstruct",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:31.141Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "&#x27;Inner Thoughts&#x27; of Every Major AI Model Exposed in Massive ... - Decrypt",
+      "url": "https://decrypt.co/375501/inner-thoughts-every-major-ai-model-exposed-exploit",
+      "snippet": "&#x27;Inner Thoughts&#x27; of Every Major AI Model Exposed in Massive Exploit Researchers found every major AI provider encrypts reasoning tokens with a single global key—and exploited it to decode 315,320 hidden thinking blocks from public logs, recovering passwords and live API keys along the way."
+    },
+    {
+      "title": "Get started with Gemma models - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/get_started",
+      "snippet": "Get started with Gemma models The Gemma family of open models includes a range of model sizes, capabilities, and task-specialized variations to help you build custom generative solutions. These are the main paths you can follow when using Gemma models in an application: Select a model and deploy it as-is in your application"
+    },
+    {
+      "title": "Build a personal AI coding assistant with Gemma",
+      "url": "https://ai.google.dev/gemma/docs/personal-code-assistant",
+      "snippet": "For a video overview of this project and how to extend it, including insights from the folks who built it, check out the Personal AI Code Assistant Build with Google AI video. You can also review the code for this project in the Gemma Cookbook code repository. Otherwise, you can get started extending the project using the following instructions."
+    },
+    {
+      "title": "Gemma Family Expands with Models Tailored for Developers and ...",
+      "url": "https://developers.googleblog.com/en/gemma-family-expands-with-models-tailored-for-developers-and-researchers/",
+      "snippet": "Here&#x27;s how to get started: Access the models: Visit the Gemma website, Vertex AI Model Garden, Hugging Face, NVIDIA NIM APIs, or Kaggle for download instructions. Explore integration options: Find guides and resources for integrating the models with your favorite tools and platforms."
+    }
+  ]
+}

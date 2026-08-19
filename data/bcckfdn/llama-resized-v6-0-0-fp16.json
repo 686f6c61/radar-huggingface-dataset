@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/llama-resized-v6.0.0-fp16",
+  "slug": "bcckfdn-llama-resized-v6-0-0-fp16",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/llama-resized-v6.0.0-fp16",
+  "created_at": "2026-08-13T17:11:09.000Z",
+  "updated_at": "2026-08-17T17:24:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 6939701248,
+  "parameters_human": "6.94B",
+  "storage_bytes": 34296351616,
+  "storage_human": "34.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bcckfdn/llama-resized-v4.6.0-gguf · Hugging Face",
+      "url": "https://huggingface.co/bcckfdn/llama-resized-v4.6.0-gguf",
+      "snippet": "Instructions to use bcckfdn/llama-resized-v4.6.-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use bcckfdn/llama-resized-v4.6.-gguf with llama-cpp-python:"
+    },
+    {
+      "title": "bcckfdn/llama-resized-v4.4.6-gguf · Hugging Face",
+      "url": "https://huggingface.co/bcckfdn/llama-resized-v4.4.6-gguf",
+      "snippet": "Instructions to use bcckfdn/llama-resized-v4.4.6-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use bcckfdn/llama-resized-v4.4.6-gguf with llama-cpp-python:"
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas."
+    },
+    {
+      "title": "GitHub - meta-llama/llama: Inference code for Llama models",
+      "url": "https://github.com/meta-llama/llama",
+      "snippet": "This release includes model weights and starting code for pre-trained and fine-tuned Llama language models — ranging from 7B to 70B parameters. This repository is intended as a minimal example to load Llama 2 models and run inference. For more detailed examples leveraging Hugging Face, see llama-cookbook."
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/bcckfdn/llama-resized-v5.0.8-fp16/74995eb5f3c6f9268a29a3fb40075d8211d8ac74/overview",
+      "snippet": "Discover potential threats in the bcckfdn / llama-resized-v5..8-fp16 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tope1129/cas-smo-v43",
+  "slug": "tope1129-cas-smo-v43",
+  "author": "tope1129",
+  "url": "https://huggingface.co/tope1129/cas-smo-v43",
+  "created_at": "2026-08-17T19:59:37.000Z",
+  "updated_at": "2026-08-17T19:59:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tope1129/cas-smo-v4 · Hugging Face",
+      "url": "https://huggingface.co/tope1129/cas-smo-v4",
+      "snippet": "cas-smo-v4 — king (cascade9) prior with nature-tilted spectral/long-memory, pool-matched cadences, and causal measurement artifacts. Local baseline to beat: cas-smo-v2 geomean 0.16746 on 2026-07-22 (CPU heat). cas-smo-v3&#x27;s weekly/drift dilution scored 0.20513 on the same pool — avoided."
+    },
+    {
+      "title": "tope1129/cas-smo-v31 · Hugging Face",
+      "url": "https://huggingface.co/tope1129/cas-smo-v31",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "v43.ai — Orchestrate Every AI Mind",
+      "url": "https://v43.ai/",
+      "snippet": "v43.ai is the AI LLM orchestration platform that routes tasks across Claude, Gemini, ChatGPT, local LLMs, and more. Compare outputs, select the best result, and ship production code automatically."
+    }
+  ]
+}

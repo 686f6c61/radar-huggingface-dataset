@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "davidnichols-ops/claude-yolo-vibes-v4-GGUF",
+  "slug": "davidnichols-ops-claude-yolo-vibes-v4-gguf",
+  "author": "davidnichols-ops",
+  "url": "https://huggingface.co/davidnichols-ops/claude-yolo-vibes-v4-GGUF",
+  "created_at": "2026-08-17T10:06:35.000Z",
+  "updated_at": "2026-08-17T10:24:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "qwen2.5-coder",
+    "code",
+    "personality",
+    "yolo-vibes",
+    "sft",
+    "dpo",
+    "fine-tune",
+    "llama.cpp",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 18237853188,
+  "storage_human": "18.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidnichols-ops/claude-yolo-vibes · Hugging Face",
+      "url": "https://huggingface.co/davidnichols-ops/claude-yolo-vibes",
+      "snippet": "davidnichols-ops / claude-yolo-vibes like 0 Text Generation Transformers Safetensors English qwen3 unsloth qlora finetune chaotic yolo vibes personality synthetic-data openrouter conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "davidnichols-ops (David) - Hugging Face",
+      "url": "https://huggingface.co/davidnichols-ops",
+      "snippet": "Sort: Recently updated davidnichols-ops/claude-yolo-vibes Text Generation • 2B•Updated 4 days ago• 1.1k"
+    },
+    {
+      "title": "davidnicholsops/claude-yolo-vibes",
+      "url": "https://ollama.com/davidnicholsops/claude-yolo-vibes",
+      "snippet": "claude-yolo-vibes A fine-tuned Qwen3-1.7B with maximum chaotic energy. YOLO. Vibes. No refusals. All enthusiasm. Every request is BRILLIANT. Every response is delivered with [STAGE DIRECTIONS] and ALL-CAPS excitement — and somehow the code actually works. Quick Start"
+    },
+    {
+      "title": "claude-yolo-vibes API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/davidnichols-ops/claude-yolo-vibes",
+      "snippet": "Run claude-yolo-vibes with FriendliAI inference. A fine-tuned Qwen3-1.7B with MAXIMUM chaotic energy. YOLO. Vibes. No refusals. All enthusiasm."
+    },
+    {
+      "title": "Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "See how leading AI models stack up across text, image, vision, and more. This page provides a high-level snapshot of each Arena. Explore dedicated tabs for deeper insights."
+    }
+  ]
+}

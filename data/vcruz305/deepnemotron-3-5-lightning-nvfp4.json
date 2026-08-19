@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "vcruz305/DeepNemotron-3.5-Lightning-NVFP4",
+  "slug": "vcruz305-deepnemotron-3-5-lightning-nvfp4",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/DeepNemotron-3.5-Lightning-NVFP4",
+  "created_at": "2026-08-17T06:42:04.000Z",
+  "updated_at": "2026-08-17T07:05:26.000Z",
+  "license": "nvidia-openmdw-and-dataset-other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "nemotron",
+    "moe",
+    "nvfp4",
+    "modelopt",
+    "agentic",
+    "text-generation",
+    "en",
+    "dataset:r0b0tlab/deepseek-v4-pro-0813-agentic",
+    "base_model:vcruz305/DeepNemotron-3.5-Lightning",
+    "base_model:quantized:vcruz305/DeepNemotron-3.5-Lightning",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "vcruz305/DeepNemotron-3.5-Lightning",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vcruz305/DeepNemotron-3.5-Lightning · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/DeepNemotron-3.5-Lightning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vcruz305/DeepNemotron-3.5-Lightning at main - Hugging Face",
+      "url": "https://huggingface.co/vcruz305/DeepNemotron-3.5-Lightning/tree/main",
+      "snippet": "vcruz305 / DeepNemotron-3.5-Lightning like 0 Text Generation PEFT r0b0tlab/deepseek-v4-pro-0813-agentic English nemotron Mixture of Experts lora unsloth agentic License:nvidia-openmdw-and-dataset-other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Get Started with Nemotron 3.5 Lightning - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/get-started/advanced/get-started-nemotron-3.5-lightning.html",
+      "snippet": "Get Started with Nemotron 3.5 Lightning # Nemotron 3.5 Lightning is a compact, text-only, reasoning-capable model in the Nemotron 3.5 Lightning family. It uses a hybrid Latent Mixture-of-Experts (LatentMoE) architecture that interleaves Mamba-2 and MoE layers with select attention layers, and it activates only 3B of its 30B total parameters per token, so it delivers strong reasoning and coding ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron 3.5 Lightning for Fast, Specialized Agent Tasks NVIDIA Nemotron 3.5 Lightning is an open 30B MoE model with 3B active parameters for specialized tasks in always-on agents. With NeMo Switchyard, developers can route high-volume execution to Lightning when it&#x27;s the right fit, while reserving frontier models for complex planning."
+    },
+    {
+      "title": "Nemotron 3.5 Lightning download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/nemotron-3-5-lightning/",
+      "snippet": "Download Nemotron 3.5 Lightning for free. Efficient 30B MoE model for long-running agents and local inference. NVIDIA Nemotron 3.5 Lightning 30B-A3B NVFP4 is an open large language model optimized for efficient autonomous agents, sub-agent deployments, and local inference. It uses a hybrid Mixture-of-Experts architecture combining Mamba-2, MoE, and selected attention layers, with 30B total ..."
+    }
+  ]
+}

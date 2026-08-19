@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dsikka/Qwen3.8-27B-NVFP4-FP8-GPTQ-AWQ",
+  "slug": "dsikka-qwen3-8-27b-nvfp4-fp8-gptq-awq",
+  "author": "dsikka",
+  "url": "https://huggingface.co/dsikka/Qwen3.8-27B-NVFP4-FP8-GPTQ-AWQ",
+  "created_at": "2026-08-17T18:59:09.000Z",
+  "updated_at": "2026-08-17T20:58:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "llm-compressor",
+    "vllm",
+    "compressed-tensors",
+    "nvfp4",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 19869895952,
+  "parameters_human": "19.87B",
+  "storage_bytes": 22588180200,
+  "storage_human": "22.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B on DGX Spark using vllm: NVFP4 vs FP8 performance",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-27b-on-dgx-spark-using-vllm-nvfp4-vs-fp8-performance/380258",
+      "snippet": "Hello, I benchmarked two quantizations of the same Qwen3.8-27B on a single Nvidia DGX Spark Qwen/Qwen3.8-27B-FP8 — fine-grained FP8 (block 128, e4m3), official Qwen FP8 build. unsloth/Qwen3.8-27B-NVFP4 — Unsloth Dynamic NVFP4 (4-bit MLP + 8-bit attention + FP8 KV cache). The results show a consistent 30-34 % faster generation throughput for the NVFP4 model from Unsloth, plus a smaller ..."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen 3.8 27B: Hardware requirements and how to deploy locally",
+      "url": "https://gingerlabs.ai/blog/qwen-38-27b-hardware-requirements-and-how-to-deploy-locally",
+      "snippet": "Both model cards show mlx-vlm commands for image input, which matters because Qwen3.8-27B is a vision-language model. MLX&#x27;s own quantization API supports affine 2-, 3-, 4-, 5-, 6-, and 8-bit weights, as well as MXFP4, MXFP8, and NVFP4 modes, but a particular Qwen artifact is only available when somebody has converted and validated it."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Qwen3.8-27B: Specs, Benchmarks & Verdict - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/",
+      "snippet": "Qwen3.8-27B benchmarks, specs, local memory, context, license and comparisons—plus what Qwen&#x27;s launch-day evidence does and does not prove."
+    }
+  ]
+}

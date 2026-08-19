@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "APEX4-W4A4/Llama-3-8b-g128",
+  "slug": "apex4-w4a4-llama-3-8b-g128",
+  "author": "APEX4-W4A4",
+  "url": "https://huggingface.co/APEX4-W4A4/Llama-3-8b-g128",
+  "created_at": "2026-06-21T19:22:53.000Z",
+  "updated_at": "2026-08-17T12:49:15.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 2032406976,
+  "parameters_human": "2.03B",
+  "storage_bytes": 5840322305,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "APEX4-W4A4/Llama-3-8b-g128 · Hugging Face",
+      "url": "https://huggingface.co/APEX4-W4A4/Llama-3-8b-g128",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "APEX4: Efficient Pure W4A4 LLM Inference via Intra-SM Compute Rebalancing",
+      "url": "https://arxiv.org/html/2606.08761",
+      "snippet": "Compared to Atom-g128, which employs W4Ax mixed-precision (retaining outlier activations at INT8), our pure W4A4 APEX4-g128 achieves comparable or lower perplexity on six of seven evaluated LLaMA models (e.g., 6.09 vs. 6.12 on LLaMA-2-7B, 7.70 vs. 7.76 on LLaMA-3-8B), despite operating entirely in INT4 without mixed-precision fallback."
+    },
+    {
+      "title": "APEX4: EfficientPureW4A4LLMInferenceviaIntra-SM ComputeRebalancing APEX4:",
+      "url": "https://openreview.net/pdf?id=A3GPeESWAN",
+      "snippet": "8-g128 (076-236 ) consistently surpasses W4A4-g128 (043-168 ). The divergence stems from the distinct dequantization placement: W4A16-g128 and W4A8-g128 dequantize INT4 weights to higher precision before the MMA instruction, with group scaling fused into this step and largely hidden by MMA latency; whereas W4A4-g128 executes MMA in INT4 and ..."
+    },
+    {
+      "title": "APEX4: Efficient Pure W4A4 LLM Inference via Intra-SM Compute ...",
+      "url": "https://arxiv.deeppaper.ai/papers/2606.08761v1",
+      "snippet": "Guided by this finding, we build &#92;textbf {APEX4}, which co-designs pure INT4 GEMM kernels with $ρ$-aware granularity adaptation to mitigate the CUDA Cores dequantization bottleneck. APEX4 achieves perplexity within 0.63 of FP16 on LLaMA-2-70B and outperforms W4Ax Atom-g128 by 4.0&#92;%--4.4&#92;% in zero-shot accuracy."
+    },
+    {
+      "title": "APEX4-W4A4/Llama-3 · Hugging Face",
+      "url": "https://huggingface.co/APEX4-W4A4/Llama-3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

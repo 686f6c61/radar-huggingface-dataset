@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "eng-aesr/donut-boletas-peru",
+  "slug": "eng-aesr-donut-boletas-peru",
+  "author": "eng-aesr",
+  "url": "https://huggingface.co/eng-aesr/donut-boletas-peru",
+  "created_at": "2026-08-17T02:39:15.000Z",
+  "updated_at": "2026-08-17T02:51:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "donut",
+    "document-ai",
+    "document-understanding",
+    "receipt-parsing",
+    "image-to-json",
+    "ocr-free",
+    "peru",
+    "image-to-text",
+    "es",
+    "arxiv:2111.15664",
+    "base_model:naver-clova-ix/donut-base-finetuned-cord-v2",
+    "base_model:finetune:naver-clova-ix/donut-base-finetuned-cord-v2",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 201333176,
+  "parameters_human": "201.3M",
+  "storage_bytes": 806195352,
+  "storage_human": "806 MB",
+  "base_model": "naver-clova-ix/donut-base-finetuned-cord-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Extracción estructurada de boletas",
+      "dataset": "Test privado de boletas peruanas",
+      "metric": "Total exact match",
+      "value": 70
+    },
+    {
+      "task": "Extracción estructurada de boletas",
+      "dataset": "Test privado de boletas peruanas",
+      "metric": "Subtotal exact match",
+      "value": 50
+    },
+    {
+      "task": "Extracción estructurada de boletas",
+      "dataset": "Test privado de boletas peruanas",
+      "metric": "RUC exact match",
+      "value": 40
+    },
+    {
+      "task": "Extracción estructurada de boletas",
+      "dataset": "Test privado de boletas peruanas",
+      "metric": "Fecha exact match",
+      "value": 45
+    },
+    {
+      "task": "Extracción estructurada de boletas",
+      "dataset": "Test privado de boletas peruanas",
+      "metric": "Ocho claves de nivel superior presentes",
+      "value": 50
+    },
+    {
+      "task": "Extracción estructurada de boletas",
+      "dataset": "Test privado de boletas peruanas",
+      "metric": "Esquema estricto válido",
+      "value": 20
+    }
+  ],
+  "sources": []
+}

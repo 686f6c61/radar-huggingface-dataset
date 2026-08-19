@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ModernVBERT/colmodernvbert-merged",
+  "slug": "modernvbert-colmodernvbert-merged",
+  "author": "ModernVBERT",
+  "url": "https://huggingface.co/ModernVBERT/colmodernvbert-merged",
+  "created_at": "2025-10-20T16:08:21.000Z",
+  "updated_at": "2026-08-17T12:53:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "colpali",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "colpali",
+    "safetensors",
+    "modernvbert",
+    "vidore-experimental",
+    "vidore",
+    "sentence-transformers",
+    "multi-vector",
+    "visual-document-retrieval",
+    "en",
+    "arxiv:2510.01149",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 252100736,
+  "parameters_human": "252.1M",
+  "storage_bytes": 2521999667,
+  "storage_human": "2.5 GB",
+  "base_model": "vidore/colmodernvbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModernVBERT/colmodernvbert-merged · Hugging Face",
+      "url": "https://huggingface.co/ModernVBERT/colmodernvbert-merged",
+      "snippet": "Model This is the model card for ColModernVBERT, the late-interaction version of ModernVBERT that is fine-tuned for visual document retrieval tasks, our most performant model on this task. This is the version with LoRA adapters merged with the base model. Table of Contents Overview Usage Evaluation License Citation Overview The ModernVBERT suite is a suite of compact 250M-parameter vision ..."
+    },
+    {
+      "title": "ModernVBERT/colmodernvbert · Hugging Face",
+      "url": "https://huggingface.co/ModernVBERT/colmodernvbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModernVBERT: Towards Smaller Visual Document Retrievers",
+      "url": "https://arxiv.org/html/2510.01149",
+      "snippet": "Contribution 2: ModernVBERT. Building on these insights, we release ModernVBERT, a small 250M multimodal encoder that aligns a pretrained language encoder with a vision encoder through Masked Language Modeling (MLM) objective, and ColModernVBERT a variant fine-tuned for document retrieval."
+    },
+    {
+      "title": "ModernVBERT: Towards Smaller Visual Document Retrievers",
+      "url": "https://arxiv.org/pdf/2510.01149",
+      "snippet": "The resulting model, ColModernVBERT showcases strong performances on visual document retrieval benchmarks, especially relative to its size category (Figure 1). Despite having over 10 times less parameters than models such as ColPali released only a year ago, it is only"
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/colmodernvbert.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/colmodernvbert.md",
+      "snippet": "ColModernVBert is a model for efficient visual document retrieval. It leverages ModernVBert to construct multi-vector embeddings directly from document images, following the ColPali approach. The model was introduced in ModernVBERT: Towards Smaller Visual Document Retrievers."
+    }
+  ]
+}

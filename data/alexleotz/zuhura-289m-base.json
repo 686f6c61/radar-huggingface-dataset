@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "AlexLeoTz/zuhura-289m-base",
+  "slug": "alexleotz-zuhura-289m-base",
+  "author": "AlexLeoTz",
+  "url": "https://huggingface.co/AlexLeoTz/zuhura-289m-base",
+  "created_at": "2026-05-12T08:09:20.000Z",
+  "updated_at": "2026-08-15T10:20:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "sw",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "swahili",
+    "causal-lm",
+    "sw",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 289195008,
+  "parameters_human": "289.2M",
+  "storage_bytes": 1156829504,
+  "storage_human": "1.2 GB",
+  "base_model": "llama",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

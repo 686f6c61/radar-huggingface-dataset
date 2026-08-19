@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "aistuffbabbling/not-safe-for-work-ai-video-generator-tools",
+  "slug": "aistuffbabbling-not-safe-for-work-ai-video-generator-tools",
+  "author": "aistuffbabbling",
+  "url": "https://huggingface.co/aistuffbabbling/not-safe-for-work-ai-video-generator-tools",
+  "created_at": "2026-08-17T10:08:25.000Z",
+  "updated_at": "2026-08-17T10:18:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Uncensored AI Video Generator 2026: 7 Tools That Cost Nothing | AI ...",
+      "url": "https://videoany.io/guides/free-uncensored-ai-video-generator",
+      "snippet": "Looking for a free uncensored AI video generator? We tested 7 tools with genuine free tiers — from unlimited local generation to 30 free credits at 1080p 60fps. Here is what each gives you for $0."
+    },
+    {
+      "title": "How to Check if a Video is AI-Generated or Real [4 Ways]",
+      "url": "https://techpp.com/2025/12/19/how-to-check-if-a-video-is-ai-generated-or-real-6-tools/",
+      "snippet": "Check if a video is AI-generated or real using three reliable detection tools, plus manual tips to spot deepfakes, synthetic media, and misleading viral videos."
+    },
+    {
+      "title": "Using the Wrong AI Video Generator Could Infect Your PC With Malware - MUO",
+      "url": "https://www.makeuseof.com/wrong-ai-video-generator-infect-pc-malware/",
+      "snippet": "There are plenty of free AI image and video generators out there, but some can be outright dangerous to use. If you end up using the wrong AI video generator, you&#x27;ll get a side of malware served with it."
+    },
+    {
+      "title": "Uncensored AI video generators create videos without content filters ...",
+      "url": "https://gaga.art/blog/uncensored-ai-video-generator/",
+      "snippet": "Uncensored AI video generators create videos without content filters. Learn how they work, 13 tested platforms including Gaga AI, ethical considerations, and technical comparisons for creative video generation."
+    },
+    {
+      "title": "Alert! Fake AI Video Tools Are Being Used To Spread Malware: Here&#x27;s How ...",
+      "url": "https://www.timesnownews.com/technology-science/alert-fake-ai-video-tools-are-being-used-to-spread-malware-heres-how-to-stay-safe-article-115553249",
+      "snippet": "Fake AI Tools Lure Users In Hackers have been spreading malware through fake websites masquerading as the AI video generator tool EditPro. Posts on social media platforms such as X (formerly Twitter) advertise these free AI tools, promising not to require any special skills to use."
+    }
+  ]
+}

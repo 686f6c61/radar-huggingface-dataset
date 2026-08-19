@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "bombdefuser-124/Qwen3.8-27B-heretic-ara-exl3-2.00bpw",
+  "slug": "bombdefuser-124-qwen3-8-27b-heretic-ara-exl3-2-00bpw",
+  "author": "bombdefuser-124",
+  "url": "https://huggingface.co/bombdefuser-124/Qwen3.8-27B-heretic-ara-exl3-2.00bpw",
+  "created_at": "2026-08-16T04:36:34.000Z",
+  "updated_at": "2026-08-16T04:42:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "ara",
+    "exl3",
+    "2bit",
+    "conversational",
+    "base_model:trohrbaugh/Qwen3.8-27B-heretic-ara",
+    "base_model:quantized:trohrbaugh/Qwen3.8-27B-heretic-ara",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 5389382896,
+  "parameters_human": "5.39B",
+  "storage_bytes": 10799058677,
+  "storage_human": "10.8 GB",
+  "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-heretic-ara-heretic-exl3-2.00bpw - Hugging Face",
+      "url": "https://huggingface.co/bombdefuser-124/Qwen3.8-27B-heretic-ara-heretic-exl3-2.00bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27B Heretic Ara Exl3 5.0bpw by Honkware",
+      "url": "https://llm-explorer.com/model/Honkware%2FQwen3.8-27B-heretic-ara-exl3-5.0bpw,3W2QG357fdKxE4zmRK6L65",
+      "snippet": "Rank the Qwen3.8 27B Heretic Ara Exl3 5.0bpw capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna."
+    }
+  ]
+}

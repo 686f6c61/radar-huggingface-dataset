@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "d0gr/falconsai-nsfw-detector-onnx",
+  "slug": "d0gr-falconsai-nsfw-detector-onnx",
+  "author": "d0gr",
+  "url": "https://huggingface.co/d0gr/falconsai-nsfw-detector-onnx",
+  "created_at": "2026-08-17T19:16:47.000Z",
+  "updated_at": "2026-08-17T19:17:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "vit",
+    "nsfw-detection",
+    "image-classification",
+    "base_model:Falconsai/nsfw_image_detection",
+    "base_model:quantized:Falconsai/nsfw_image_detection",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86939557,
+  "storage_human": "87 MB",
+  "base_model": "Falconsai/nsfw_image_detection",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#1 Global NSFW Image & Video Detection AI | Falcons.ai",
+      "url": "https://falcons.ai/products/nsfw-image-detection",
+      "snippet": "The world&#x27;s #1 downloaded AI model for visual safety. 1B+ downloads. Protect your community from NSFW and CSAM content with real-time, privacy-first computer vision."
+    },
+    {
+      "title": "Falconsai (Falcons.ai) - Hugging Face",
+      "url": "https://huggingface.co/Falconsai",
+      "snippet": "Computer Vision, Natural Language Processing"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Falconsai/nsfw_image_detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nsfw_image_detection by Falconsai, Image Classification | Mixpeek Model Hub",
+      "url": "https://mixpeek.com/model/Falconsai/nsfw_image_detection",
+      "snippet": "On Mixpeek, nsfw_image_detection runs as a managed extractor inside a processing pipeline. Point a bucket of image classification data at it, and Mixpeek handles GPU provisioning, batching, retries, and writing the outputs into a vector store you can query."
+    },
+    {
+      "title": "nsfw_image_detection: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/nsfwimagedetection-falconsai",
+      "snippet": "Overview nsfw_image_detection is a fine-tuned Vision Transformer (ViT) model built by Falconsai for binary classification of images into \"normal\" or \"nsfw\" categories. The model uses the google/vit-base-patch16-224-in21k architecture as its foundation, pre-trained on ImageNet-21k and then fine-tuned on a proprietary dataset of 80,000 images with substantial variability. Input images are ..."
+    }
+  ]
+}

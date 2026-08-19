@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TimSchneider42/cod-vae-16x16-small",
+  "slug": "timschneider42-cod-vae-16x16-small",
+  "author": "TimSchneider42",
+  "url": "https://huggingface.co/TimSchneider42/cod-vae-16x16-small",
+  "created_at": "2026-08-17T12:25:12.000Z",
+  "updated_at": "2026-08-17T12:25:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "cod-vae",
+  "languages": [],
+  "tags": [
+    "cod-vae",
+    "3d",
+    "shape-reconstruction",
+    "autoencoder",
+    "vae",
+    "occupancy",
+    "feature-extraction",
+    "arxiv:2503.08737",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144245092,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TimSchneider42/cod-vae-16x16 · Hugging Face",
+      "url": "https://huggingface.co/TimSchneider42/cod-vae-16x16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cod-vae/README.md at main · TimSchneider42/cod-vae · GitHub",
+      "url": "https://github.com/TimSchneider42/cod-vae/blob/main/README.md",
+      "snippet": "cod-vae: PyTorch/JAX Reimplementation of COD-VAE Unofficial reimplementation of COD-VAE from \"Representing 3D Shapes with 64 Latent Vectors for 3D Diffusion Models\" by In Cho, Youngbeom Yoo, Subin Jeon, and Seon Joo Kim (ICCV 2025). COD-VAE is a 3D shape VAE that compresses a shape into a small set of latent vectors (e.g. 32 x 32) and decodes them back into an occupancy field via a transformer ..."
+    },
+    {
+      "title": "GitHub - TimSchneider42/cod-vae: Unofficial PyTorch/JAX ...",
+      "url": "https://github.com/TimSchneider42/cod-vae",
+      "snippet": "Unofficial reimplementation of COD-VAE from \"Representing 3D Shapes with 64 Latent Vectors for 3D Diffusion Models\" by In Cho, Youngbeom Yoo, Subin Jeon, and Seon Joo Kim (ICCV 2025). COD-VAE is a 3D shape VAE that compresses a shape into a small set of latent vectors (e.g. 32 x 32) and decodes them back into an occupancy field via a transformer decoder with uncertainty-based token pruning."
+    },
+    {
+      "title": "TimSchneider42/cod-vae-16x8 · Hugging Face",
+      "url": "https://huggingface.co/TimSchneider42/cod-vae-16x8",
+      "snippet": "A COD-VAE that compresses a 3D shape into 16 latent vectors of 8 dimensions = 128 numbers, and decodes them back into an occupancy field. Trained with cod-vae, a PyTorch/JAX reimplementation of COD-VAE (Cho et al., ICCV 2025). The weights are a self-contained npz and load with either backend."
+    },
+    {
+      "title": "join16/COD-VAE | DeepWiki",
+      "url": "https://deepwiki.com/join16/COD-VAE",
+      "snippet": "COD-VAE (Compact Occupancy Decoder Variational Autoencoder) is the official implementation of the paper \"Representing 3D Shapes with 64 Latent Vectors for 3D Diffusion Models\" (ICCV 2025) [README.md:1-4]. The project provides a framework for encoding complex 3D shapes into highly compact, fixed-length latent representations—specifically 64 vectors—which are optimized for downstream use in ..."
+    }
+  ]
+}

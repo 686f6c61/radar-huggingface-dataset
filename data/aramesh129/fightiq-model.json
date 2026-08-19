@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "aramesh129/fightiq-model",
+  "slug": "aramesh129-fightiq-model",
+  "author": "aramesh129",
+  "url": "https://huggingface.co/aramesh129/fightiq-model",
+  "created_at": "2026-06-13T11:05:12.000Z",
+  "updated_at": "2026-08-17T10:48:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 869332303,
+  "storage_human": "869 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aramesh129/fightiq-model · Hugging Face",
+      "url": "https://huggingface.co/aramesh129/fightiq-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aramesh129 (Ashvath Ramesh) - Hugging Face",
+      "url": "https://huggingface.co/aramesh129",
+      "snippet": "Recent Activity published a Space2 days ago aramesh129/fightiq-api published a model2 days ago aramesh129/fightiq-model View all activity"
+    },
+    {
+      "title": "Ashvath Raj Ramesh aramesh129 - GitHub",
+      "url": "https://github.com/aramesh129",
+      "snippet": "🚀 I&#x27;m currently working on a student-focused finance platform, inspired by the winning project in a hackathon I participated in. I aim to make money management simpler, more intuitive, and even fun, using real-time data and insights."
+    },
+    {
+      "title": "GitHub - gogs1998/FightIQ_V14",
+      "url": "https://github.com/gogs1998/FightIQ_V14",
+      "snippet": "Contribute to gogs1998/FightIQ_V14 development by creating an account on GitHub."
+    },
+    {
+      "title": "Welcome to Fight IQ | FightIQ - Patreon",
+      "url": "https://www.patreon.com/posts/welcome-to-fight-130135580",
+      "snippet": "Hey everyone — thanks for checking this out! I&#x27;ve built a UFC prediction model using data from 6,500+ fights. It pulls key stats like striking accuracy, defense, takedown metrics, and more to calculate win probabilities through a logistic regression. It&#x27;s running at 74% historical accuracy on and I&#x27;m constantly testing improvements. Here you&#x27;ll get: Weekly model picks with ..."
+    }
+  ]
+}

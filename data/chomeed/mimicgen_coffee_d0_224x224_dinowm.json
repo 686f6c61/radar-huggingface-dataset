@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chomeed/mimicgen_coffee_d0_224x224_dinowm",
+  "slug": "chomeed-mimicgen_coffee_d0_224x224_dinowm",
+  "author": "chomeed",
+  "url": "https://huggingface.co/chomeed/mimicgen_coffee_d0_224x224_dinowm",
+  "created_at": "2026-08-17T05:08:44.000Z",
+  "updated_at": "2026-08-17T05:09:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-model",
+    "dynamics-model",
+    "dinov2",
+    "mimicgen",
+    "arxiv:2411.04983",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53675521,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chomeed/mimicgen_coffee_d0_224x224 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/chomeed/mimicgen_coffee_d0_224x224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chomeed/mimicgen_coffee_d0_224x224 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/chomeed/mimicgen_coffee_d0_224x224/tree/main",
+      "snippet": "Datasets: chomeed / mimicgen_coffee_d0_224x224 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 100K - 1M Tags: LeRobot lerobot mimicgen robosuite v3.0 Libraries: Datasets Dask Polars + 2 License: cc-by-4. Dataset card Data Studio FilesFiles and versions xet Community main mimicgen_coffee_d0_224x224 1.11 GB 1 contributor History:3 commits chomeed Upload ..."
+    },
+    {
+      "title": "GitHub Pages - MimicGen",
+      "url": "https://mimicgen.github.io/",
+      "snippet": "We used MimicGen to autonomously generate over 50,000 demonstrations from less than 200 human demonstrations across 18 tasks, multiple simulators, and the real-world. This took considerably less human effort than prior work."
+    },
+    {
+      "title": "mimicgen_environments/README.md at master · HaomingSong ... - GitHub",
+      "url": "https://github.com/HaomingSong/mimicgen_environments/blob/main/README.md",
+      "snippet": "This repository contains the official release of simulation environments and datasets for the CoRL 2023 paper \"MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations\"."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

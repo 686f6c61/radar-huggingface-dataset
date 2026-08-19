@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "TweeeZT/Nutrivision",
+  "slug": "tweeezt-nutrivision",
+  "author": "TweeeZT",
+  "url": "https://huggingface.co/TweeeZT/Nutrivision",
+  "created_at": "2026-08-18T03:20:36.000Z",
+  "updated_at": "2026-08-18T03:49:41.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "tensorflow",
+  "languages": [],
+  "tags": [
+    "tensorflow",
+    "keras",
+    "image-classification",
+    "computer-vision",
+    "food",
+    "nutrition",
+    "nutrivision",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39240064,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NutriVision - AI-Powered Calorie Tracking",
+      "url": "https://nutrivision.dev/",
+      "snippet": "Track your calories and nutrition with AI-powered food recognition. Take a photo of your meal and get instant nutritional information."
+    },
+    {
+      "title": "GitHub - malhar072142/NutriVision: AI powered Food Recognition and ...",
+      "url": "https://github.com/malhar072142/NutriVision",
+      "snippet": "NutriVision is an advanced AI platform that combines computer vision, nutritional analysis, and generative AI to help users make informed dietary decisions. By simply taking a photo of their food, users receive detailed nutritional information, personalized recommendations, and sustainability insights."
+    },
+    {
+      "title": "Nutrivision Ai Model - a Hugging Face Space by da8le",
+      "url": "https://huggingface.co/spaces/da8le/nutrivision-ai-model",
+      "snippet": "Upload a picture of your meal and the app identifies the foods in the image, then provides a detailed breakdown of calories, macros, and micronutrients. It helps you understand the nutritional cont..."
+    },
+    {
+      "title": "NutriVision AI — Food Analysis & 3D Nutrition Intelligence",
+      "url": "https://nutri-vision-ai-pink.vercel.app/explainable",
+      "snippet": "AI-powered food recognition and 3D human nutrition intelligence platform. Educational demo with simulated AI predictions."
+    },
+    {
+      "title": "GitHub - AngRoy/NutriVision: A Multi-Modal Food Nutrition Estimator and ...",
+      "url": "https://github.com/AngRoy/NutriVision",
+      "snippet": "Model Trainning pipeline NutriVision is an end-to-end multi-modal system designed to estimate the nutritional content of meals from images and track daily calorie intake. The system leverages state-of-the-art computer vision and natural language processing models to analyze food images and provide detailed nutritional information."
+    }
+  ]
+}

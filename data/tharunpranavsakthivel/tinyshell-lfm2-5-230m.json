@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tharunpranavsakthivel/tinyshell-lfm2.5-230m",
+  "slug": "tharunpranavsakthivel-tinyshell-lfm2-5-230m",
+  "author": "tharunpranavsakthivel",
+  "url": "https://huggingface.co/tharunpranavsakthivel/tinyshell-lfm2.5-230m",
+  "created_at": "2026-08-17T22:09:03.000Z",
+  "updated_at": "2026-08-17T22:15:12.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "tinyshell",
+    "structured-generation",
+    "json",
+    "tool-use",
+    "function-calling",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:finetune:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 392,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 918787352,
+  "storage_human": "919 MB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-230M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-230M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-230M: Built to Run Anywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-230m",
+      "snippet": "Meet LFM2.5-230M, Liquid AI&#x27;s smallest model yet: a fast, open-weight foundation model for fine-tuning, edge deployment, tool use, and data extraction."
+    },
+    {
+      "title": "LFM2.5-230M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-230m",
+      "snippet": "Ultra-compact 230M parameter model for data extraction and lightweight on-device agentic tasks ← Back to Text Models LFM2.5-230M is Liquid AI&#x27;s smallest LFM2.5 text model, designed for edge devices with the tightest memory and compute budgets."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-230M | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/LiquidAI/LFM2.5-230M",
+      "snippet": "Liquid AI&#x27;s most compact LFM2.5 chat model (230M) on the LFM2 hybrid conv+attention backbone — distilled from LFM2.5-350M, tool calling and 32K context, built for edge / on-device serving."
+    },
+    {
+      "title": "Liquid AI&#x27;s LFM2.5-230M Beats Models Twice Its Size Running on a ...",
+      "url": "https://alphasignal.ai/news/liquid-ai-s-lfm2-5-230m-beats-models-twice-its-size-running-on-a-raspberry-pi",
+      "snippet": "New model: Liquid AI releases LFM2.5-230M , their smallest model yet, targeting edge and on-device agentic workloads."
+    }
+  ]
+}

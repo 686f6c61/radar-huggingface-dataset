@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Impliedhomeland/cosine-1B-60B-datamatched-resume",
+  "slug": "impliedhomeland-cosine-1b-60b-datamatched-resume",
+  "author": "Impliedhomeland",
+  "url": "https://huggingface.co/Impliedhomeland/cosine-1B-60B-datamatched-resume",
+  "created_at": "2026-08-18T18:48:40.000Z",
+  "updated_at": "2026-08-18T19:38:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 194266268275,
+  "storage_human": "194.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impliedhomeland/midtrain-bridge-1B-cosine-backbone · Hugging Face",
+      "url": "https://huggingface.co/Impliedhomeland/midtrain-bridge-1B-cosine-backbone",
+      "snippet": "midtrain-bridge: Pythia-1B / 60B cosine C4 backbone A C4-only 1B-parameter pretraining run to 60B tokens, published with all 17 intermediate checkpoints along the trajectory. This is the W=0 reference arm of a study on when to introduce a new data distribution (code) during pretraining; the checkpoints are the fork points from which code-mixed branches are launched."
+    },
+    {
+      "title": "Impliedhomeland (Anupam Nayak) - Hugging Face",
+      "url": "https://huggingface.co/Impliedhomeland",
+      "snippet": "Sort: Recently updated Impliedhomeland/midtrain-bridge-1B-wsd-backbone Updated 7 days ago"
+    },
+    {
+      "title": "HyperNova 60B 2605 — Multiverse Computing | AI Flash Report",
+      "url": "https://aiflashreport.com/models/hypernova-60b/",
+      "snippet": "HyperNova 60B 2605 is a Major Release AI model from Multiverse Computing, released on May 26, 2026. It has a 131K tokens context window, costs $0.04 per million input tokens, and scores 73.3% on GPQA Diamond."
+    },
+    {
+      "title": "AI-Powered Hiring Intelligence System - GitHub",
+      "url": "https://github.com/OmPatil2806/AI-Powered-Hiring-Intelligence-System/tree/master",
+      "snippet": "AI-Powered Hiring Intelligence System that matches resumes to job descriptions using BERT embeddings & cosine similarity. Features ML-based hiring prediction, candidate ranking, fairness/bias analysis across groups, and an interactive Streamlit dashboard for real-time resume scoring."
+    },
+    {
+      "title": "Introducing HyperNova 60B 2605 - multiversecomputing.com",
+      "url": "https://multiversecomputing.com/resources/introducing-hypernova-60b-2605",
+      "snippet": "May 6, 2026 · 3 min read Introducing HyperNova 60B 2605 A sharper, more capable update to our 60B signature model, with stronger coding capabilities and higher accuracy across several benchmarks, available now on Hugging Face."
+    }
+  ]
+}

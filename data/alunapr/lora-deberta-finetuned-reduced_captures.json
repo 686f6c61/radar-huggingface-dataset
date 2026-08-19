@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "alunapr/lora-deberta-finetuned-reduced_captures",
+  "slug": "alunapr-lora-deberta-finetuned-reduced_captures",
+  "author": "alunapr",
+  "url": "https://huggingface.co/alunapr/lora-deberta-finetuned-reduced_captures",
+  "created_at": "2026-08-18T13:09:36.000Z",
+  "updated_at": "2026-08-18T13:09:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2480888,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alunapr/lora-roberta-large-finetuned-reduced_captures · Hugging Face",
+      "url": "https://huggingface.co/alunapr/lora-roberta-large-finetuned-reduced_captures",
+      "snippet": "lora-roberta-large-finetuned-reduced_captures This model is a fine-tuned version of roberta-large on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "alunapr/lora-roberta-large-finetuned-reduced_captures · Datasets at ...",
+      "url": "https://huggingface.co/datasets/alunapr/lora-roberta-large-finetuned-reduced_captures/viewer",
+      "snippet": "Datasets: alunapr / lora-roberta-large-finetuned-reduced_captures like 0 Dataset card Viewer FilesFiles and versions Community 2 Subset (1) default ·36.2k rows default (36.2k rows) Split (3) train ·24.6k rows train (24.6k rows) validation (4.35k rows) test (7.25k rows) SQL Console"
+    },
+    {
+      "title": "Building LoRA Models - A Walk on the Wild Side",
+      "url": "https://alunapr.quarto.pub/posts/Building-LoRA-models/",
+      "snippet": "Since 2021 LoRA methods and derivatives (such as QLora, IA3, etc) have become more common. Fine-tuning a BERT or decoder model, even though much better than training from scratch, still takes quite a bit of resources."
+    },
+    {
+      "title": "LoRA/examples/NLU/README.md at main · microsoft/LoRA",
+      "url": "https://github.com/microsoft/LoRA/blob/main/examples/NLU/README.md",
+      "snippet": "Adapting RoBERTa and DeBERTa V2 using LoRA This folder contains the implementation of LoRA in RoBERTa and DeBERTa V2 using the Python package lora. LoRA is described in the following pre-print: LoRA: Low-Rank Adaptation of Large Language Models Edward J. Hu*, Yelong Shen*, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang ..."
+    },
+    {
+      "title": "GitHub - microsoft/DeBERTa: The implementation of DeBERTa",
+      "url": "https://github.com/microsoft/DeBERTa",
+      "snippet": "The implementation of DeBERTa. Contribute to microsoft/DeBERTa development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-Nemo-12B-CY-GGUF",
+  "slug": "mradermacher-mistral-nemo-12b-cy-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-Nemo-12B-CY-GGUF",
+  "created_at": "2026-08-14T02:52:49.000Z",
+  "updated_at": "2026-08-14T03:35:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:CY1232/Mistral-Nemo-12B-CY",
+    "base_model:quantized:CY1232/Mistral-Nemo-12B-CY",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 413,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692309760,
+  "storage_human": "84.7 GB",
+  "base_model": "CY1232/Mistral-Nemo-12B-CY",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Mistral-Nemo-12B-CY-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-Nemo-12B-CY-GGUF",
+      "snippet": "mradermacher / Mistral-Nemo-12B-CY-GGUF like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Mistral-Nemo-12B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-Nemo-12B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mistral-nemo - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/mistral-nemo",
+      "snippet": "Mistral NeMo is a 12B model built in collaboration between MistralAI and NVIDIA. Mistral NeMo offers a large context window of up to 128k tokens. Its reasoning, world knowledge, and coding accuracy are state-of-the-art in its size category. As it relies on standard architecture, Mistral NeMo is easy to use and a drop-in replacement in any system using Mistral 7B. Multilingual usecase Mistral ..."
+    },
+    {
+      "title": "Mistral-Nemo-12b-Instruct-Onnx-INT4-RTX | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/models/mistral-nemo-12b-instruct-onnx-int4-rtx?version=1.0",
+      "snippet": "Mistral-NeMo is a Large Language Model (LLM) composed of 12B parameters. This model leads accuracy on popular benchmarks across common sense reasoning, coding, math, multilingual and multi-turn chat tasks."
+    },
+    {
+      "title": "Mistral NeMo | Mistral AI",
+      "url": "https://mistral.ai/news/mistral-nemo/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

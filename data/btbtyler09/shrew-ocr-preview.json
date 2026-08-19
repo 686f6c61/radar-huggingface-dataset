@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "btbtyler09/shrew-ocr-preview",
+  "slug": "btbtyler09-shrew-ocr-preview",
+  "author": "btbtyler09",
+  "url": "https://huggingface.co/btbtyler09/shrew-ocr-preview",
+  "created_at": "2026-08-16T20:15:45.000Z",
+  "updated_at": "2026-08-17T16:58:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "granite4_vision",
+    "document-intelligence",
+    "structured-extraction",
+    "vision-language",
+    "ocr",
+    "rag",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:ibm-granite/granite-vision-4.1-4b",
+    "base_model:finetune:ibm-granite/granite-vision-4.1-4b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 3997206464,
+  "parameters_human": "4.00B",
+  "storage_bytes": 7994565536,
+  "storage_human": "8.0 GB",
+  "base_model": "ibm-granite/granite-vision-4.1-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "btbtyler09 (Tyler Brooker) - Hugging Face",
+      "url": "https://huggingface.co/btbtyler09",
+      "snippet": "Sort: Recently updated btbtyler09/shrew-2b Text Generation • 0.1B•Updated May 10• 26"
+    },
+    {
+      "title": "btbtyler09 (Tyler Brooker) - Hugging Face",
+      "url": "https://huggingface.co/btbtyler09/collections",
+      "snippet": "new activity16 days ago btbtyler09/Qwen3-Coder-Next-GPTQ-4bit: 8bit feasibility new activityabout 1 month ago btbtyler09/Qwen3.6-27B-GPTQ-4bit: This model fails on vllm-gfx908 View all activity"
+    },
+    {
+      "title": "btbtyler09 (Tyler Brooker) · GitHub",
+      "url": "https://github.com/btbtyler09",
+      "snippet": "shrew-server Public A document processing app using vlm and fine tuned extraction models Python"
+    },
+    {
+      "title": "GitHub - btbtyler09/shrew-server: A document processing app using vlm ...",
+      "url": "https://github.com/btbtyler09/shrew-server",
+      "snippet": "A document processing app using vlm and fine tuned extraction models - btbtyler09/shrew-server"
+    },
+    {
+      "title": "btbtyler09 (Tyler Brooker) - Docker Hub",
+      "url": "https://hub.docker.com/u/btbtyler09",
+      "snippet": "Discover Docker images from btbtyler09. Visit their profile and explore images they maintain."
+    }
+  ]
+}

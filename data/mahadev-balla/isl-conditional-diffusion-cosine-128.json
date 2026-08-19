@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mahadev-balla/isl-conditional-diffusion-cosine-128",
+  "slug": "mahadev-balla-isl-conditional-diffusion-cosine-128",
+  "author": "mahadev-balla",
+  "url": "https://huggingface.co/mahadev-balla/isl-conditional-diffusion-cosine-128",
+  "created_at": "2026-07-30T07:28:34.000Z",
+  "updated_at": "2026-08-18T09:49:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "conditional-diffusion",
+    "indian-sign-language",
+    "classifier-free-guidance",
+    "unconditional-image-generation",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 118949891,
+  "parameters_human": "118.9M",
+  "storage_bytes": 475853324,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MahadevBalla/isl-diffusion",
+      "url": "https://github.com/MahadevBalla/isl-diffusion",
+      "snippet": "ISL Conditional Diffusion A class-conditioned diffusion model for Indian Sign Language (ISL) handshape generation, built on diffusers &#x27; UNet2DModel with classifier-free guidance."
+    },
+    {
+      "title": "mahadev-balla/isl-conditional-diffusion-linear-128 · Hugging Face",
+      "url": "https://huggingface.co/mahadev-balla/isl-conditional-diffusion-linear-128",
+      "snippet": "Instructions to use mahadev-balla/isl-conditional-diffusion-linear-128 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mahadev-balla/isl-conditional-diffusion-cosine-128 · Hugging Face",
+      "url": "https://huggingface.co/mahadev-balla/isl-conditional-diffusion-cosine-128",
+      "snippet": "Instructions to use mahadev-balla/isl-conditional-diffusion-cosine-128 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "[2505.08403] ConDiSim: Conditional Diffusion Models for Simulation ...",
+      "url": "https://arxiv.org/abs/2505.08403",
+      "snippet": "We present a conditional diffusion model - ConDiSim, for simulation-based inference of complex systems with intractable likelihoods. ConDiSim leverages denoising diffusion probabilistic models to approximate posterior distributions, consisting of a forward process that adds Gaussian noise to parameters, and a reverse process learning to denoise, conditioned on observed data. This approach ..."
+    },
+    {
+      "title": "Unveil Conditional Diffusion Models with Classifier-free Guidance: A ...",
+      "url": "https://www.semanticscholar.org/paper/Unveil-Conditional-Diffusion-Models-with-Guidance%3A-Fu-Yang/cc7f37a261eaa60113716b8e969da6b57d206da6",
+      "snippet": "The utility of the statistical theory is demonstrated in elucidating the performance of conditional diffusion models across diverse applications, including model-based transition kernel estimation in reinforcement learning, solving inverse problems, and reward conditioned sample generation. Conditional diffusion models serve as the foundation of modern image synthesis and find extensive ..."
+    }
+  ]
+}

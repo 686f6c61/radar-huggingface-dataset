@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "g-assismoraes/Q4B-IRM-cut-fInstruct",
+  "slug": "g-assismoraes-q4b-irm-cut-finstruct",
+  "author": "g-assismoraes",
+  "url": "https://huggingface.co/g-assismoraes/Q4B-IRM-cut-fInstruct",
+  "created_at": "2026-08-18T11:27:33.000Z",
+  "updated_at": "2026-08-18T11:29:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "g-assismoraes (Gabriel Assis) - Hugging Face",
+      "url": "https://huggingface.co/g-assismoraes/models",
+      "snippet": "NLP, Low-Resource Settings"
+    },
+    {
+      "title": "g-assismoraes/Qwen3-4B-Pira-EN-irm-instruct · Hugging Face",
+      "url": "https://huggingface.co/g-assismoraes/Qwen3-4B-Pira-EN-irm-instruct",
+      "snippet": "Instructions to use g-assismoraes/Qwen3-4B-Pira-EN-irm-instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "g-assismoraes / Qwen3-4B-ESG-IRM-instruct-qa-alpha1.2",
+      "url": "https://insights-db.paloaltonetworks.com/models/g-assismoraes/Qwen3-4B-ESG-IRM-instruct-qa-alpha1.2/0e221b9ee9606b5da67a567390095ff9fa0129f8/versions",
+      "snippet": "Discover potential threats in the g-assismoraes / Qwen3-4B-ESG-IRM-instruct-qa-alpha1.2 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/g-assismoraes/Qwen3-4B-ESG-IRM-instruct-qa/c0c9dd9e4112c21071d8df0fa5715237a80884e3/overview",
+      "snippet": "Discover potential threats in the g-assismoraes / Qwen3-4B-ESG-IRM-instruct-qa model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "g-assismoraes/Qwen3-4B-ESG-IRM-instruct-qa-alpha1.2 - Fast, Reliable ...",
+      "url": "https://friendli.ai/models/g-assismoraes/Qwen3-4B-ESG-IRM-instruct-qa-alpha1.2",
+      "snippet": "Run g-assismoraes/Qwen3-4B-ESG-IRM-instruct-qa-alpha1.2 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced ..."
+    }
+  ]
+}

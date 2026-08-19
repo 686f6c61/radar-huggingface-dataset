@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kerasformers/t5_large",
+  "slug": "kerasformers-t5_large",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/t5_large",
+  "created_at": "2026-08-19T01:24:50.000Z",
+  "updated_at": "2026-08-19T01:32:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "kerasformers",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "ro"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "t5",
+    "text2text-generation",
+    "pytorch",
+    "jax",
+    "tf",
+    "translation",
+    "en",
+    "fr",
+    "de",
+    "ro",
+    "arxiv:1910.10683",
+    "base_model:google-t5/t5-large",
+    "base_model:finetune:google-t5/t5-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2952475920,
+  "storage_human": "3.0 GB",
+  "base_model": "google-t5/t5-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t5-large: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/t5-large-google-t5",
+      "snippet": "Overview t5-large is a 770 million parameter encoder-decoder transformer developed by google-t5 that treats all NLP tasks as text-to-text problems. Unlike BERT-style models that output class labels or input spans, T5 converts every language task into a unified format where both inputs and outputs are text strings, allowing a single model, loss function, and hyperparameter set to work across ..."
+    },
+    {
+      "title": "keras/t5_large_multi · Hugging Face",
+      "url": "https://huggingface.co/keras/t5_large_multi",
+      "snippet": "Model Overview ⚠️ T5 is currently only available via the keras-hub-nightly package. Use pip install keras-hub-nightly to try this model. T5 encoder-decoder backbone model. T5 is a LLM pretrained on a mix of unsupervised and supervised tasks, where each task is converted to a sequence-to-sequence format."
+    },
+    {
+      "title": "tftransformers/t5-large · Hugging Face",
+      "url": "https://huggingface.co/tftransformers/t5-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "T5 (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/T5_(language_model)",
+      "snippet": "T5 (Text-to-Text Transfer Transformer) is a series of large language models developed by Google AI introduced in 2019. [1][2] Like the original Transformer model, [3] T5 models are encoder-decoder Transformers, where the encoder processes the input text, and the decoder generates the output text."
+    },
+    {
+      "title": "kerasformers · PyPI",
+      "url": "https://pypi.org/project/kerasformers/",
+      "snippet": "KerasFormers [!IMPORTANT] kerasformers is under active development, and we are currently migrating from GitHub-hosted release weights to the Hugging Face Hub. The PyPI package may lag behind the latest models, fixes, and API updates. This migration includes properly typed configuration files and dedicated weights for each model."
+    }
+  ]
+}

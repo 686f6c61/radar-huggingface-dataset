@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "singulared/Qwen3.8-27B-ROCmFP4-MTP-GGUF",
+  "slug": "singulared-qwen3-8-27b-rocmfp4-mtp-gguf",
+  "author": "singulared",
+  "url": "https://huggingface.co/singulared/Qwen3.8-27B-ROCmFP4-MTP-GGUF",
+  "created_at": "2026-08-15T13:29:08.000Z",
+  "updated_at": "2026-08-15T19:05:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "rocm",
+    "rocmfpx",
+    "rocmfp4",
+    "amd",
+    "strix-halo",
+    "gfx1151",
+    "mtp",
+    "speculative-decoding",
+    "qwen3.5",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 190,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 40978219104,
+  "storage_human": "41.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B, ggml-org/Qwen3.8-27B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-ROCmFP4-STRIX-GGUF - Hugging Face",
+      "url": "https://huggingface.co/bg-digitalservices/Qwen3.8-27B-ROCmFP4-STRIX-GGUF",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "README.md · kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF at main",
+      "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF/blob/main/README.md",
+      "snippet": "Three ROCmFP4 quantisations of Qwen3.8-27B for AMD Ryzen AI Max+ 395 / Radeon 8060S / gfx1151, bundled with the multi-token-prediction draft head. ROCmFP4 is a runtime tensor format that exists only in the ROCmFPX fork of llama.cpp."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    }
+  ]
+}

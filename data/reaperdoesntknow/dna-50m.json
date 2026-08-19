@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/DNA-50M",
+  "slug": "reaperdoesntknow-dna-50m",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/DNA-50M",
+  "created_at": "2025-10-09T20:41:50.000Z",
+  "updated_at": "2026-08-18T13:15:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "liquid-former",
+    "text-generation",
+    "convergentintel",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1908,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228203959,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/DNA-50M · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/DNA-50M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DNA-AI - a reaperdoesntknow Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/reaperdoesntknow/dna-ai",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from reaperdoesntknow"
+    },
+    {
+      "title": "Exclusive: The researchers who built AI-generated DNA just ... - Fortune",
+      "url": "https://fortune.com/2026/06/15/exclusive-ai-dna-radical-numerics-eric-nguyen-biology-biodefense-drug-discovery/",
+      "snippet": "Radical Numerics is betting that the future of biodefense and AI drug discovery lies in understanding entire biological systems—not just individual molecules."
+    },
+    {
+      "title": "Researchers Develop New AI Model For Only $50 That Outperforms OpenAI ...",
+      "url": "https://www.digitalinformationworld.com/2025/02/researchers-develop-new-ai-model-for.html",
+      "snippet": "It looks like DeepSeek is not the only company making breakthroughs in the world of AI. Researchers at the Stanford and University of Washington gave rise to a new model that outperformed some of the biggest names in the world of tech including OpenAI and DeepSeek. What is even more astonishing is ..."
+    },
+    {
+      "title": "OpenAI launches biotech-specific AI model, GPT-Rosalind",
+      "url": "https://www.fiercebiotech.com/biotech/openai-launches-biotech-specific-ai-model-gpt-rosalind",
+      "snippet": "OpenAI is introducing a new reasoning model, GPT-Rosalind, to support research in biology, drug discovery and translational medicine."
+    }
+  ]
+}

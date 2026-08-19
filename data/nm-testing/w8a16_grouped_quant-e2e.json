@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "nm-testing/w8a16_grouped_quant-e2e",
+  "slug": "nm-testing-w8a16_grouped_quant-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/w8a16_grouped_quant-e2e",
+  "created_at": "2026-07-25T05:56:16.000Z",
+  "updated_at": "2026-08-18T03:16:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 426,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 41131575144,
+  "storage_human": "41.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

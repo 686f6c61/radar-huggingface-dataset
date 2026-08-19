@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "EllipsesMark/Sheet_Generator_H3_PoopMan333",
+  "slug": "ellipsesmark-sheet_generator_h3_poopman333",
+  "author": "EllipsesMark",
+  "url": "https://huggingface.co/EllipsesMark/Sheet_Generator_H3_PoopMan333",
+  "created_at": "2026-08-18T20:40:29.000Z",
+  "updated_at": "2026-08-18T20:40:29.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "workflow",
+    "character-sheet",
+    "turnaround",
+    "character-consistency",
+    "image-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31790918,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EllipsesMark/H3-PromptWriter: Load your GGUF model&#x27;s or API to ...",
+      "url": "https://github.com/EllipsesMark/H3-PromptWriter",
+      "snippet": "LLM/VLM-backed prompt writers for the open-weight MiniMax H3 video model — a local stand-in for the closed H3-Context-IR module. You write casual intent; the node writes the structured prompt H3-Base actually expects and feeds it to the native MiniMaxH3ImageToVideo / MiniMaxH3ReferenceToVideo nodes."
+    },
+    {
+      "title": "AI Model Sheet Generator — Character Ref Sheets | LimeAILab",
+      "url": "https://limeailab.com/ai-image-generator/ai-model-sheet-generator",
+      "snippet": "The AI Model Sheet Generator turns one portrait or text prompt into a production-ready character reference sheet — multi-view turnaround, expressions, outfits, and props."
+    },
+    {
+      "title": "PoopMan333/poopooh3 · Hugging Face",
+      "url": "https://huggingface.co/PoopMan333/poopooh3",
+      "snippet": "PoopMan333 / poopooh3 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Pangram 3.3 Model Card | Pangram",
+      "url": "https://www.pangram.com/research/model-card/pangram-3-3",
+      "snippet": "Pangram 3.3 is an AI detection model released by Pangram It is the successor to Pangram 3.2 with improvements on recall for the latest LLM texts, humanizers, and long, synthetic texts."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

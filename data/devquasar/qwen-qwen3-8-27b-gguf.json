@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/Qwen.Qwen3.8-27B-GGUF",
+  "slug": "devquasar-qwen-qwen3-8-27b-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/Qwen.Qwen3.8-27B-GGUF",
+  "created_at": "2026-08-15T02:07:05.000Z",
+  "updated_at": "2026-08-15T03:46:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 3088,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 117343517568,
+  "storage_human": "117.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

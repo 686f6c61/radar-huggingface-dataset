@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hoborific/Gemma-4-Giftige-Blume-31B-v1-W8A16-FP8",
+  "slug": "hoborific-gemma-4-giftige-blume-31b-v1-w8a16-fp8",
+  "author": "hoborific",
+  "url": "https://huggingface.co/hoborific/Gemma-4-Giftige-Blume-31B-v1-W8A16-FP8",
+  "created_at": "2026-08-17T03:10:46.000Z",
+  "updated_at": "2026-08-17T03:26:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "w8a16",
+    "fp8",
+    "conversational",
+    "base_model:Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1",
+    "base_model:quantized:Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 31266895724,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33297589751,
+  "storage_human": "33.3 GB",
+  "base_model": "Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nimbz/Gemma-4-Giftige-Blume-31B-v2 · Hugging Face",
+      "url": "https://huggingface.co/Nimbz/Gemma-4-Giftige-Blume-31B-v2",
+      "snippet": "With the model Giftige-Blume-31B, the idea was to create something that truly catches and portrays a character&#x27;s persona genuinely. A character should act stubborn if they are stubborn, or refuse situations that the character doesn&#x27;t seem fit. The Gemma-4-31B-it base and a lot of fine-tunes have a steep user adherence, which is usually great for assistant tasks, but not really fitting for ..."
+    },
+    {
+      "title": "Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1 · Hugging Face",
+      "url": "https://huggingface.co/Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1",
+      "snippet": "With the model Giftige-Blume-31B, the idea was to create something that truly catches and portrays a character&#x27;s persona genuinely. A character should act stubborn if they are stubborn, or refuse situations that the character doesn&#x27;t seem fit. The Gemma-4-31B-it base and a lot of fine-tunes have a steep user adherence, which is usually great for assistant tasks, but not really fitting for ..."
+    },
+    {
+      "title": "Giftige-Blume-31B-v1 - d6108366.hf-mirror.com",
+      "url": "https://d6108366.hf-mirror.com/Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1/raw/main/README.md",
+      "snippet": "While Giftige-Blume-31B-v2 aims to be more logical and prompt adherent, Giftige-Blume-31B-v1 brings in a lot of mixed roleplay-centered models as it&#x27;s knowledge core to provide rich and diverse roleplay scenarios, carrying over the genuine character portrayal, diverse prose and writing styles with each swipe."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 31B - Cerebras Inference",
+      "url": "https://inference-docs.cerebras.ai/models/gemma-4-31b",
+      "snippet": "Gemma 4 31B This model excels at multimodal reasoning across screenshots, documents, diagrams, and design assets. Ideal for visual agentic workflows, image-aware copilots, and teams migrating from closed multimodal APIs to an open model."
+    }
+  ]
+}

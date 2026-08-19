@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "thlurte/FastData-LM-1.5B-CodeMath-SFT",
+  "slug": "thlurte-fastdata-lm-1-5b-codemath-sft",
+  "author": "thlurte",
+  "url": "https://huggingface.co/thlurte/FastData-LM-1.5B-CodeMath-SFT",
+  "created_at": "2026-08-16T10:34:52.000Z",
+  "updated_at": "2026-08-16T10:35:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333278,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

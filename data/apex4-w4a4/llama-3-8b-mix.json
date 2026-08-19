@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "APEX4-W4A4/Llama-3-8b-mix",
+  "slug": "apex4-w4a4-llama-3-8b-mix",
+  "author": "APEX4-W4A4",
+  "url": "https://huggingface.co/APEX4-W4A4/Llama-3-8b-mix",
+  "created_at": "2026-06-21T16:15:48.000Z",
+  "updated_at": "2026-08-17T12:49:17.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5865389569,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "APEX4-W4A4/Llama-3-8b-mix · Hugging Face",
+      "url": "https://huggingface.co/APEX4-W4A4/Llama-3-8b-mix",
+      "snippet": "APEX4-W4A4 / Llama-3-8b-mix like 0 Safetensors llama License:llama3 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "APEX4: Efficient Pure W4A4 LLM Inference via Intra-SM Compute Rebalancing",
+      "url": "https://arxiv.org/html/2606.08761",
+      "snippet": "The resulting W4A4-g128 achieves perplexity within 0.63 of FP16 on LLaMA-2-70B and outperforms Atom-g128 by 4.0%-4.4% in average zero-shot accuracy on LLaMA-2. System integration and evaluation. We integrate the above into the APEX4, which adapts quantization granularity to the target GPU&#x27;s ρ $ρ$ from a single codebase."
+    },
+    {
+      "title": "APEX4-W4A4 (APEX4-W4A4) - Hugging Face",
+      "url": "https://huggingface.co/APEX4-W4A4",
+      "snippet": "Recent Activity published a modelabout 6 hours ago APEX4-W4A4/Llama-3 View all activity"
+    },
+    {
+      "title": "APEX4: Efficient Pure W4A4 LLM Inference via Intra-SM Compute Rebalancing",
+      "url": "https://arxiv.org/pdf/2606.08761",
+      "snippet": "Following the multi-granularity strategy described in Section 3.2.2, we evaluate two quantization configura-tions: W4A4-g128 and W4A4-mix. This dual-configuration span the accuracy-efficiency trade-off space and allow us to isolate the effect of quantization granularity on both model accuracy and hardware efficiency across different GPU ..."
+    },
+    {
+      "title": "APEX4: Efficient Pure W4A4 LLM Inference via Intra-SM Compute...",
+      "url": "https://openreview.net/forum?id=A3GPeESWAN",
+      "snippet": "Guided by this finding, we build &#92;textbf {APEX4}, which co-designs pure INT4 GEMM kernels with $&#92;rho$-aware granularity adaptation to mitigate the CUDA Cores dequantization bottleneck. APEX4 achieves perplexity within 0.63 of FP16 on Llama-2-70B and outperforms W4Ax Atom-g128 by 4.0&#92;%--4.4&#92;% in zero-shot accuracy."
+    }
+  ]
+}

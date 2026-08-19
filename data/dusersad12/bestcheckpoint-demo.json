@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dusersad12/BestCheckpoint-Demo",
+  "slug": "dusersad12-bestcheckpoint-demo",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/BestCheckpoint-Demo",
+  "created_at": "2026-08-18T10:19:31.000Z",
+  "updated_at": "2026-08-18T10:21:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6,
+  "storage_human": "6 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "SOTAagi2030/SuperModel-BestCheckpoint · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/SuperModel-BestCheckpoint",
+      "snippet": "1. Introduction SuperModel is a high-performance language model that has been trained using state-of-the-art techniques. This model demonstrates exceptional capabilities across diverse tasks including reasoning, code generation, and language understanding."
+    },
+    {
+      "title": "Stable Diffusion Checkpoints — Free AI Model Downloads | ComfyUI Resources",
+      "url": "https://comfyuiweb.com/resources/checkpoints",
+      "snippet": "Curated collection of the most popular Stable Diffusion checkpoint models. From photorealistic to anime, find the perfect base model for your AI art workflow."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

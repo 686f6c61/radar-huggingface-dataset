@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "karyavirtual/novai-base-102m",
+  "slug": "karyavirtual-novai-base-102m",
+  "author": "karyavirtual",
+  "url": "https://huggingface.co/karyavirtual/novai-base-102m",
+  "created_at": "2026-08-15T16:58:09.000Z",
+  "updated_at": "2026-08-15T18:40:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 217,
+  "trending_score": 0,
+  "parameters": 102558240,
+  "parameters_human": "102.6M",
+  "storage_bytes": 410245192,
+  "storage_human": "410 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NovaAI | Expert AI & Cybersecurity Consulting",
+      "url": "https://nova.karyavirtual.com/",
+      "snippet": "AI Consulting Strategic AI implementation and model custom development for enterprise."
+    },
+    {
+      "title": "Expert AI, Cybersecurity & Data Science Training",
+      "url": "https://novai.karyavirtual.com/",
+      "snippet": "Expert AI, Cybersecurity & Data Science Training Transform your organization with expert-led training and implementation in AI, Data Science, COBIT 2019, Cybersecurity, IoT, and Cloud Computing. Led by Nova Novriansyah, MSc, MBA, CCISO - CXO 2024 Award Winner."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Image Generation - NovelAI",
+      "url": "https://novelai.net/image",
+      "snippet": "NovelAI is the #1 AI image generator tool for generating AI anime art and crafting epic stories with our storytelling models. Unleash your creativity, generate anime images and stories, without limits!"
+    }
+  ]
+}

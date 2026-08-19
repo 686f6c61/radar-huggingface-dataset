@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jackson44/tourism-captioning-student-v2-validated",
+  "slug": "jackson44-tourism-captioning-student-v2-validated",
+  "author": "Jackson44",
+  "url": "https://huggingface.co/Jackson44/tourism-captioning-student-v2-validated",
+  "created_at": "2026-08-18T09:20:22.000Z",
+  "updated_at": "2026-08-18T09:37:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 239195904,
+  "parameters_human": "239.2M",
+  "storage_bytes": 3827342080,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tourism V2 - a Hugging Face Space by jackson-daniel",
+      "url": "https://huggingface.co/spaces/jackson-daniel/tourism_v2",
+      "snippet": "Streamlit template space"
+    },
+    {
+      "title": "jackson-daniel/tourism_v2 at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/jackson-daniel/tourism_v2/tree/main",
+      "snippet": "main tourism_v2 3.51 kB Ctrl+K Ctrl+K 2 contributors History:2 commits jackson-daniel initial commit a393262 verifiedabout 5 hours ago srcDuplicate from streamlit/streamlit-template-spaceabout 5 hours ago .gitattributes 1.52 kBDuplicate from streamlit/streamlit-template-spaceabout 5 hours ago Dockerfile 426 BytesDuplicate from streamlit/streamlit-template-spaceabout 5 hours ago README.md 416 ..."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "HuggingFace APIs - Open Source AI Models and Datasets",
+      "url": "https://www.huggingfaceapi.com/",
+      "snippet": "Explore and integrate HuggingFace&#x27;s AI models and datasets with our comprehensive API documentation and examples."
+    },
+    {
+      "title": "DirectoryFuzz/top15w.txt at main · enh123/DirectoryFuzz · GitHub",
+      "url": "https://github.com/enh123/DirectoryFuzz/blob/main/top15w.txt",
+      "snippet": "渗透测试目录扫描字典. Contribute to enh123/DirectoryFuzz development by creating an account on GitHub."
+    }
+  ]
+}

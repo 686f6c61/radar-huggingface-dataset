@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anandhatti14/GenAI-testing",
+  "slug": "anandhatti14-genai-testing",
+  "author": "anandhatti14",
+  "url": "https://huggingface.co/anandhatti14/GenAI-testing",
+  "created_at": "2026-08-17T04:38:47.000Z",
+  "updated_at": "2026-08-17T04:49:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Playbook for GenAI Testing & Deployment - kore.ai",
+      "url": "https://www.kore.ai/blog/the-genai-testing-playbook-best-practices-for-ai-driven-testing-deployment",
+      "snippet": "The GenAI Testing Playbook : Follow proven testing strategies to ensure your GenAI applications are accurate, secure, and ready for real-world deployment."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "Software Testing of Generative AI Systems: Challenges and Opportunities",
+      "url": "https://arxiv.org/pdf/2309.03554",
+      "snippet": "Abstract—Software Testing is a well-established area in soft-ware engineering, encompassing various techniques and method-ologies to ensure the quality and reliability of software systems. However, with the advent of generative artificial intelligence (GenAI) systems, new challenges arise in the testing domain. These systems, capable of generating novel and creative out-puts, introduce ..."
+    },
+    {
+      "title": "Generative AI in Software Testing [with Practical Examples]",
+      "url": "https://www.softwaretestingmaterial.com/generative-ai-in-software-testing/",
+      "snippet": "Generative AI in Software Testing is changing how we do quality assurance. This new technology is revolutionizing software testing, with powerful capabilities in creating test cases, automating documentation, and predicting bugs. As the software industry keeps evolving quickly, GenAI in Software Testing has become a game-changer."
+    },
+    {
+      "title": "Hacker/ai/ai-security/model_and_genai_application_security_testing.md ...",
+      "url": "https://github.com/christophercruz98112/Hacker/blob/master/ai/ai-security/model_and_genai_application_security_testing.md",
+      "snippet": "Threat Defense COMPASS 1.0 - consolidated view of threats, vulnerabilities, defenses, and mitigations that can be used as a checklist for model/application testing. LLM Top 10 (2025) - primary risk taxonomy for LLM and GenAI applications. AI Security Landscape and Solutions Reference Guide (Q2-Q3 2025) - map risks to available controls."
+    }
+  ]
+}

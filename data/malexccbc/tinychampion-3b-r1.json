@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "MAlexCCBC/TinyChampion-3B-R1",
+  "slug": "malexccbc-tinychampion-3b-r1",
+  "author": "MAlexCCBC",
+  "url": "https://huggingface.co/MAlexCCBC/TinyChampion-3B-R1",
+  "created_at": "2026-08-14T19:35:50.000Z",
+  "updated_at": "2026-08-14T19:52:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ro"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "reasoning",
+    "math",
+    "code",
+    "text-generation-inference",
+    "unsloth",
+    "deepseek-r1",
+    "3b",
+    "text-generation",
+    "conversational",
+    "en",
+    "ro",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 182,
+  "trending_score": 0,
+  "parameters": 2988656640,
+  "parameters_human": "2.99B",
+  "storage_bytes": 5977367904,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

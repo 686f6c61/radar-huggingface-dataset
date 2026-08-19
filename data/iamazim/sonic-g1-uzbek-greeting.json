@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "iamazim/sonic-g1-uzbek-greeting",
+  "slug": "iamazim-sonic-g1-uzbek-greeting",
+  "author": "iamazim",
+  "url": "https://huggingface.co/iamazim/sonic-g1-uzbek-greeting",
+  "created_at": "2026-08-15T06:03:23.000Z",
+  "updated_at": "2026-08-15T06:05:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "humanoid",
+    "unitree-g1",
+    "sonic",
+    "whole-body-control",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 527468134,
+  "storage_human": "527 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uzbek 3D Models for Free Download and Print | Tripo AI",
+      "url": "https://studio.tripo3d.ai/3d-model-gallery/uzbek",
+      "snippet": "Free & premium 29 uzbek 3D models, ready for 3D printing, game development, 3D design, eCommerce, AR/VR and more. View & Download in STL, FBX, GLB, OBJ, USDZ formats."
+    },
+    {
+      "title": "NeuronUz/NeuronAI-Uzbek · Hugging Face",
+      "url": "https://huggingface.co/NeuronUz/NeuronAI-Uzbek",
+      "snippet": "🏆 UzLiB Benchmark Performance NeuronAI-Uzbek achieves exceptional performance on the UzLiB Benchmark, the comprehensive evaluation suite for Uzbek language understanding. Leaderboard Position Note: NeuronAI-Uzbek is the smallest model in the top 10, with only 4B parameters, while competing against models with 100B+ parameters. Performance Comparison vs Original Qwen3-4B"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Best AI Models in 2026: All 22 Frontier Models Compared",
+      "url": "https://platform.teamai.com/blog/large-language-models-llms/the-2026-ai-frontier-model-war/",
+      "snippet": "Compare 22 frontier AI models in 2026: GPT, Claude, Gemini, DeepSeek, Qwen, Kimi. Context windows, pricing, and use cases in one chart. Part 1 of 2."
+    },
+    {
+      "title": "AI Auto Rigging for Characters, Animals & 3D Models | AutoRig",
+      "url": "https://autorig.online/",
+      "snippet": "Upload GLB, FBX, or OBJ models and get AI-assisted rigs for humanoid characters, animals, non-humanoid assets, Blender, Unity, and Unreal Engine."
+    }
+  ]
+}

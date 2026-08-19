@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "juststhjust/qwen_persona_test",
+  "slug": "juststhjust-qwen_persona_test",
+  "author": "juststhjust",
+  "url": "https://huggingface.co/juststhjust/qwen_persona_test",
+  "created_at": "2026-08-17T13:05:35.000Z",
+  "updated_at": "2026-08-17T13:09:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "text-generation",
+    "en",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:unsloth/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280192,
+  "storage_human": "2.5 GB",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "juststhjust/qwen_finetune · Hugging Face",
+      "url": "https://huggingface.co/juststhjust/qwen_finetune",
+      "snippet": "juststhjust / qwen_finetune like 0 GGUF qwen3 llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "To what extent is Qwen3-32B predicting its persona? - LessWrong",
+      "url": "https://www.lesswrong.com/posts/3qEDD8Sn7XoNGeGhm/to-what-extent-is-qwen3-32b-predicting-its-persona",
+      "snippet": "Long System Prompt (Full Qwen-style system prompt with XML structure) <qwen_behavior> <product_information> Here is some information about Qwen and Alibaba Cloud&#x27;s AI products in case the user asks: This iteration of Qwen is Qwen3, the third generation of the Qwen large language model family developed by Alibaba Cloud&#x27;s Tongyi Lab. The Qwen3 family includes models of various sizes, with Qwen3 ..."
+    },
+    {
+      "title": "Persona Data Model | kev1nweng/qwen-persona | DeepWiki",
+      "url": "https://deepwiki.com/kev1nweng/qwen-persona/3.1-persona-data-model",
+      "snippet": "Persona Data Model Relevant source files This page documents the Persona object structure, which is the core data model representing a custom AI persona in the QwenPersona system. Each Persona encapsulates a complete configuration for AI behavior including model selection, system prompts, and feature settings."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "kev1nweng/qwen-persona | DeepWiki",
+      "url": "https://deepwiki.com/kev1nweng/qwen-persona",
+      "snippet": "QwenPersona is a Tampermonkey userscript that extends Qwen Chat with custom persona management capabilities. It allows users to define, save, and switch between AI personas, each with its own model selection, system prompts, and feature settings."
+    }
+  ]
+}

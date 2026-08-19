@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "shen762/train-test",
+  "slug": "shen762-train-test",
+  "author": "shen762",
+  "url": "https://huggingface.co/shen762/train-test",
+  "created_at": "2026-08-14T09:37:56.000Z",
+  "updated_at": "2026-08-18T11:19:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:shen762/record-test",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1813455488,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework - smartdev.com",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "How to train, test & evaluate ML models step-by-step",
+      "url": "https://arounddatascience.com/blog/coding/how-to-train-test-evaluate-ml-models-step-by-step/",
+      "snippet": "Learn how to train, test & evaluate ML models step-by-step. Practical examples, metrics, code, and best practices for beginners. Start now."
+    },
+    {
+      "title": "How to Train an AI Model: Step-by-Step 2026 Guide | Label Your Data",
+      "url": "https://labelyourdata.com/articles/how-to-train-an-ai-model",
+      "snippet": "️ Learn how to train an AI model, covering data requirements, tools, step-by-step workflow, and real costs for AI model training in production."
+    },
+    {
+      "title": "How to Train an AI Model: A Step-by-Step Guide | Mercor",
+      "url": "https://www.mercor.com/resources/experts/how-to-train-an-ai-model/",
+      "snippet": "Learn how to train an AI model step by step, from data preparation and model selection to fine-tuning and deployment. Explore tools, costs, and how to get started professionally."
+    },
+    {
+      "title": "AI Model Testing: Methods, Challenges & Best Practices",
+      "url": "https://testomat.io/blog/ai-model-testing/",
+      "snippet": "What is AI Model Testing? AI model testing is the process of evaluating a machine learning model&#x27;s accuracy, reliability, fairness, and robustness before and after deployment. It checks how the model behaves on unseen data and adversarial inputs, and confirms it meets functional and ethical requirements. Traditional software testing relies on pass/fail assertions. AI models produce answers ..."
+    }
+  ]
+}

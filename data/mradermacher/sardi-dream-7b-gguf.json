@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/sardi-dream-7b-GGUF",
+  "slug": "mradermacher-sardi-dream-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/sardi-dream-7b-GGUF",
+  "created_at": "2026-08-18T06:16:52.000Z",
+  "updated_at": "2026-08-18T06:25:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "diffusion-language-model",
+    "retrieval-augmented-generation",
+    "multi-hop-qa",
+    "en",
+    "base_model:pauljngr/sardi-dream-7b",
+    "base_model:quantized:pauljngr/sardi-dream-7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146894208,
+  "storage_human": "68.1 GB",
+  "base_model": "pauljngr/sardi-dream-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Dreamer-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Dreamer-7B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Dream-7B-slerp-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Dream-7B-slerp-i1-GGUF",
+      "snippet": "mradermacher / Dream-7B-slerp-i1-GGUF like 1 Transformers GGUF English Merge mergekit lazymergekit ignos/Mistral-T5-7B-v1 Toten5/Marcoroni-neural-chat-7B-v2 imatrix License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/Dream-7B-slerp-GGUF - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2FDream-7B-slerp-GGUF",
+      "snippet": "mradermacher/Dream-7B-slerp-GGUF High-quality GGUF model 20 Downloads 1 Likes 13 GGUF Files 63.37 GB Total Size 2y ago Updated"
+    },
+    {
+      "title": "GitHub - ksu-oor/dream: Dream 7B, a large diffusion language model",
+      "url": "https://github.com/ksu-oor/dream",
+      "snippet": "Dream 7B Dream is a 7B diffusion large language model that achieves competitive performance comparable to leading autoregressive models with a similar size."
+    },
+    {
+      "title": "GitHub - DreamLM/Dream: Dream 7B, a large diffusion language model",
+      "url": "https://github.com/DreamLM/Dream",
+      "snippet": "Dream is a 7B diffusion large language model that achieves competitive performance comparable to leading autoregressive models with a similar size."
+    }
+  ]
+}

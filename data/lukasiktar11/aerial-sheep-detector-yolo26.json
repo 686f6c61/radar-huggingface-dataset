@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "lukasiktar11/aerial-sheep-detector-yolo26",
+  "slug": "lukasiktar11-aerial-sheep-detector-yolo26",
+  "author": "lukasiktar11",
+  "url": "https://huggingface.co/lukasiktar11/aerial-sheep-detector-yolo26",
+  "created_at": "2026-08-18T07:55:43.000Z",
+  "updated_at": "2026-08-18T07:55:48.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197934894,
+  "storage_human": "198 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukasiktar11/aerial-traffic-detector · Hugging Face",
+      "url": "https://huggingface.co/lukasiktar11/aerial-traffic-detector",
+      "snippet": "aerial-traffic-detector YOLO26 model trained to detect objects in a traffic from aerial images. Part of the ComputerVisionAIHub catalog. Downloads last month 45 Inference Providers NEW Object Detection This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Aerial Sheep Object Detection Model (v1, 2025-01-30 11:41pm) by MoonStone",
+      "url": "https://universe.roboflow.com/moonstone/aerial-sheep-7cwwe/dataset/1",
+      "snippet": "1727 open source sheep images and annotations in multiple formats for training computer vision models. Aerial Sheep (v1, 2025-01-30 11:41pm), created by MoonStone"
+    },
+    {
+      "title": "UC3_Livestock_Monitoring/models/sheep_detection/yolo11n_sheep ... - GitHub",
+      "url": "https://github.com/ICAERUS-EU/UC3_Livestock_Monitoring/tree/main/models/sheep_detection/yolo11n_sheep",
+      "snippet": "The model was evaluated on a test dataset consisting of 428 images of sheep taken from a nadir view. These images and their labels are available in this Zenodo repository, in the Nadir_only folder."
+    },
+    {
+      "title": "YOLO26 Models by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/yolo26",
+      "snippet": "Newest SOTA Ultralytics models, released January 2026. Smaller, faster, and more accurate than previous versions with native end-to-end inference."
+    },
+    {
+      "title": "Ultralytics YOLO26",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "YOLO26 from Ultralytics delivers unified, real-time, end-to-end vision models optimized for accurate and efficient deployment."
+    }
+  ]
+}

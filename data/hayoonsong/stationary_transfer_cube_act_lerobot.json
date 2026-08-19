@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hayoonsong/stationary_transfer_cube_act_lerobot",
+  "slug": "hayoonsong-stationary_transfer_cube_act_lerobot",
+  "author": "hayoonsong",
+  "url": "https://huggingface.co/hayoonsong/stationary_transfer_cube_act_lerobot",
+  "created_at": "2026-08-16T06:31:50.000Z",
+  "updated_at": "2026-08-16T06:32:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jwhong1209/stationary_transfer_cube",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206775752,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

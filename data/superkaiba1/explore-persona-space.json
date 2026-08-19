@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "superkaiba1/explore-persona-space",
+  "slug": "superkaiba1-explore-persona-space",
+  "author": "superkaiba1",
+  "url": "https://huggingface.co/superkaiba1/explore-persona-space",
+  "created_at": "2026-04-14T21:02:28.000Z",
+  "updated_at": "2026-08-17T03:49:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4032887374855,
+  "storage_human": "4032.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "superkaiba1/explore-persona-space · Hugging Face",
+      "url": "https://huggingface.co/superkaiba1/explore-persona-space",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "superkaiba/explore-persona-space - GitHub",
+      "url": "https://github.com/superkaiba/explore-persona-space/",
+      "snippet": "Explore Persona Space Characterizing persona representations in language models across 5+ research aims. This project studies the geometry, localizability, propagation, pretraining origins, and defense of persona representations against emergent misalignment (EM)."
+    },
+    {
+      "title": "superkaiba1 (Thomas Jiralerspong) - Hugging Face",
+      "url": "https://huggingface.co/datasets/superkaiba1/",
+      "snippet": "superkaiba1&#x27;s datasets4 Sort: Recently updated superkaiba1/explore-persona-space-data Updated about 1 hour ago• 23.6k • 3"
+    },
+    {
+      "title": "superkaiba1 - wandb.ai",
+      "url": "https://wandb.ai/superkaiba1/explore-persona-space",
+      "snippet": "Weights & Biases, developer tools for machine learning"
+    },
+    {
+      "title": "explore-persona-space/docs at main · superkaiba/explore ... - GitHub",
+      "url": "https://github.com/superkaiba/explore-persona-space/tree/main/docs",
+      "snippet": "Can pre-training persona-capability coupling cause emergently misaligned models to also become less capable? - superkaiba/explore-persona-space"
+    }
+  ]
+}

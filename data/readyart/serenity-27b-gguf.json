@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Serenity-27B-GGUF",
+  "slug": "readyart-serenity-27b-gguf",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Serenity-27B-GGUF",
+  "created_at": "2026-08-19T01:35:01.000Z",
+  "updated_at": "2026-08-19T01:35:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "adult-content",
+    "unaligned",
+    "mature",
+    "explicit",
+    "erp",
+    "base_model:ReadyArt/Serenity-27B",
+    "base_model:quantized:ReadyArt/Serenity-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ReadyArt/Serenity-27B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Serenity-27B-v0.5-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Serenity-27B-v0.5-GGUF",
+      "snippet": "ReadyArt / Serenity-27B-v0.5-GGUF like 0 Follow Ready.Art 1.56k GGUF roleplay conversational instruct apache-2.0 nsfw adult-content unaligned mature explicit erp License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/collections",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ReadyArt/Serenity-26B-A4B-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/readyart-serenity-26b-a4b-gguf",
+      "snippet": "Serenity-26B-A4B-GGUF install Serenity-26B-A4B-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Serenity-26B-A4B-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of Serenity-26B-A4B-GGUF install, users can directly use Serenity-26B-A4B-GGUF installed effect in huggingface.co for debugging and trial. It also ..."
+    },
+    {
+      "title": "andreakone/Local-AI-Image-Generator - GitHub",
+      "url": "https://github.com/andreakone/Local-AI-Image-Generator",
+      "snippet": "A fully self-contained, offline AI image generation studio for Windows. Runs Stable Diffusion (Safetensors/GGUF) locally with zero manual setup. Auto-configures CUDA for Nvidia GPUs and Vulkan for AMD/Intel Arc cards. Zero system-wide dependencies required. - andreakone/Local-AI-Image-Generator"
+    },
+    {
+      "title": "How to Run GGUF Models Locally - Complete Beginner Guide (2025)",
+      "url": "https://ggufloader.github.io/how-to-run-gguf-models.html",
+      "snippet": "Quick Overview Running AI models locally gives you complete privacy, no internet required, and zero API costs. With GGUF format and the right tools, you can have a local AI assistant running in under 10 minutes."
+    }
+  ]
+}

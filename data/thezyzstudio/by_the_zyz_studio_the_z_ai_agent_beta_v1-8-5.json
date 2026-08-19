@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "THEZYZSTUDIO/BY_THE_ZYZ_STUDIO_THE_Z_AI_AGENT_BETA_V1.8.5",
+  "slug": "thezyzstudio-by_the_zyz_studio_the_z_ai_agent_beta_v1-8-5",
+  "author": "THEZYZSTUDIO",
+  "url": "https://huggingface.co/THEZYZSTUDIO/BY_THE_ZYZ_STUDIO_THE_Z_AI_AGENT_BETA_V1.8.5",
+  "created_at": "2026-06-15T09:36:56.000Z",
+  "updated_at": "2026-08-17T06:15:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "agent",
+    "assistant",
+    "multimodal",
+    "code",
+    "search",
+    "video-generation",
+    "image-generation",
+    "voice",
+    "swarm",
+    "text-generation",
+    "en",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4922712,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THEZYZSTUDIO/BY_THE_ZYZ_STUDIO_THE_Z_AI_AGENT_BETA_V1.8.5 · Hugging Face",
+      "url": "https://huggingface.co/THEZYZSTUDIO/BY_THE_ZYZ_STUDIO_THE_Z_AI_AGENT_BETA_V1.8.5",
+      "snippet": "📖 Overview The Z AI/AGENT is the flagship intelligent assistant from THE ZYZ Studio — a powerful, multi-modal, multi-mode AI agent designed to handle everything from quick daily tasks to the most complex professional workflows."
+    },
+    {
+      "title": "THEZYZSTUDIO/BY_THE_ZYZ_STUDIO_THE_Z_CAM at main",
+      "url": "https://huggingface.co/spaces/THEZYZSTUDIO/BY_THE_ZYZ_STUDIO_THE_Z_CAM/tree/main",
+      "snippet": "17.7 kBCreate minecraft created by the z ai agent beta5 days ago notifications.js 3.72 kBUpdate notifications.jsabout 1 month ago prompt_bundle.json 20.9 kBUpdate prompt_bundle.json20 days ago requirements.txt 98 BytesUpload 4 filesabout 1 month ago snake game by the z ai agent beta 16 kBCreate snake game by the z ai agent beta5 days ago system ..."
+    },
+    {
+      "title": "THE Z AI/AGENT - a Hugging Face Space by THEZYZSTUDIO",
+      "url": "https://huggingface.co/spaces/THEZYZSTUDIO/BY_THE_ZYZ_STUDIO_THE_Z_AI_BETA_V1.0_Y26_PREVIEW_MANY_ERRORS",
+      "snippet": "BY THE ZYZ STUDIO THE Z AI/AGENT BETA V1.4.1 Y25 PREVIEW MANY ERRORS"
+    },
+    {
+      "title": "Thezyzstudio/By_the_zyz_studio_the_z_ai_beta_v1.0_y26_mini_lite_preview ...",
+      "url": "https://huggingface.co/spaces/THEZYZSTUDIO/BY_THE_ZYZ_STUDIO_THE_Z_AI_BETA_V1.0_Y26_MINI_LITE_PREVIEW",
+      "snippet": "Type a message (you can also attach files) and the Gemma 4 model will reply with a generated text response. Your conversations are saved locally, so you can start new chats, switch between past thr..."
+    },
+    {
+      "title": "THE ZYZ STUDIO updated by the zyz studio the z AI/agent/swarm/creator ...",
+      "url": "https://itch.io/e/40933171/the-zyz-studio-updated-by-the-zyz-studio-the-z-aiagentswarmcreatordesigner-beta-v10-y26-mininpromax-preview",
+      "snippet": "by the zyz studio the z AI/agent/swarm/creator/designer beta v1.0 y26 mini/n/pro/max preview A browser project made in HTML5. Updated title and page content."
+    }
+  ]
+}

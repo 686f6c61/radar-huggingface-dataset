@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PratyushPareek/CartPole-V1",
+  "slug": "pratyushpareek-cartpole-v1",
+  "author": "PratyushPareek",
+  "url": "https://huggingface.co/PratyushPareek/CartPole-V1",
+  "created_at": "2026-08-17T19:28:46.000Z",
+  "updated_at": "2026-08-17T19:28:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3657,
+  "storage_human": "3657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CartPole_v1.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Nicolas-Bolouri/OpenAi/blob/main/CartPole_v1.ipynb/",
+      "snippet": "For our Q-Learning model to function, we discretize the cart-pole states into finite categories. This simplification enables a manageable Q-table size, allowing the model to learn and optimize actions effectively within a discrete decision space."
+    },
+    {
+      "title": "pratsy/cartpole-v1 · Hugging Face",
+      "url": "https://huggingface.co/pratsy/cartpole-v1",
+      "snippet": "Reinforce Agent playing CartPole-v1 This is a trained model of a Reinforce agent playing CartPole-v1 ."
+    },
+    {
+      "title": "pratsy/cartpole-v1 - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/255062",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 ."
+    },
+    {
+      "title": "Cart Pole - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/classic_control/cart_pole/",
+      "snippet": "Cart Pole ¶ This environment is part of the Classic Control environments which contains general information about the environment."
+    },
+    {
+      "title": "Imitation-learning-Cartpole - GitHub",
+      "url": "https://github.com/GameAIChronicles/Imitation-learning-Cartpole",
+      "snippet": "CartPole Imitation Learning & PPO Pipeline This project demonstrates how to train a Gymnasium CartPole-v1 agent by bootstrapping a Reinforcement Learning model with Behavioral Cloning (Imitation Learning). It uses stable_baselines3 for PPO implementations and the imitation library for Behavioral Cloning [cite: 1, 5]."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "IMUGLYHUH/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B",
+  "slug": "imuglyhuh-l3-1-dark-reasoning-lewdplay-evo-hermes-r1-uncensored-8b",
+  "author": "IMUGLYHUH",
+  "url": "https://huggingface.co/IMUGLYHUH/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B",
+  "created_at": "2026-08-18T09:31:03.000Z",
+  "updated_at": "2026-08-18T09:31:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "llama 3.1",
+    "llama-3",
+    "llama3",
+    "llama-3.1",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "swearing",
+    "role play",
+    "sillytavern",
+    "backyard",
+    "horror",
+    "context 128k",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "conversational",
+    "en",
+    "base_model:NousResearch/DeepHermes-3-Llama-3-8B-Preview",
+    "base_model:merge:NousResearch/DeepHermes-3-Llama-3-8B-Preview",
+    "base_model:Undi95/Llama-3-LewdPlay-8B-evo",
+    "base_model:merge:Undi95/Llama-3-LewdPlay-8B-evo",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16078125512,
+  "storage_human": "16.1 GB",
+  "base_model": "NousResearch/DeepHermes-3-Llama-3-8B-Preview, Undi95/Llama-3-LewdPlay-8B-evo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L3.1-Dark-Reasoning-Unholy-Hermes-R1-Uncensored-8B",
+      "url": "https://huggingface.co/DavidAU/L3.1-Dark-Reasoning-Unholy-Hermes-R1-Uncensored-8B/blob/main/README.md",
+      "snippet": "WARNING: NSFW. Graphic HORROR. R/X-Rated. Swearing. UNCENSORED. IMPORTANT: This model has on/off/variable control reasoning from NousResearch and the DeepHermes model, and requires a system prompt (s) as provided to invoke reasoning/thinking. Please see operating instructions below for best performance. L3.1-Dark-Reasoning-Unholy-Hermes-R1-Uncensored-8B (full source) Context : 128k. Required ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:DavidAU/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B",
+      "snippet": "Edit Models filters Tasks Libraries Datasets Languages Licenses Other 1 Model Tree Reset DavidAU/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B Quantizations"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://hf.edwardfuchs.keenetic.pro/models?other=llama+3.1",
+      "snippet": "DavidAU/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B Text Generation • 8B•Updated Jul 28, 2025• 262 • 45"
+    },
+    {
+      "title": "DevQuasar/qingy2024.Qwen2.5-4B-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/devquasar-qingy2024-qwen2-5-4b-gguf",
+      "snippet": "Model Details of qingy2024.Qwen2.5-4B-GGUF I&#x27;m doing this to &#x27;Make knowledge free for everyone&#x27;, using my personal time and resources."
+    },
+    {
+      "title": "L3.1-Dark-Reasoning-Halu-Blackroot-Hermes-R1-Uncensored-8B-GGUF ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-l3-1-dark-reasoning-halu-blackroot-hermes-r1-uncensored-8b-gguf",
+      "snippet": "L3.1-Dark-Reasoning-Halu-Blackroot-Hermes-R1-Uncensored-8B-GGUF is an open source model from GitHub that offers a free installation service, and any user can find L3.1-Dark-Reasoning-Halu-Blackroot-Hermes-R1-Uncensored-8B-GGUF on GitHub to install."
+    }
+  ]
+}

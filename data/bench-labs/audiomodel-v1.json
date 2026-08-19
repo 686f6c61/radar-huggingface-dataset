@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bench-labs/AudioModel-v1",
+  "slug": "bench-labs-audiomodel-v1",
+  "author": "bench-labs",
+  "url": "https://huggingface.co/bench-labs/AudioModel-v1",
+  "created_at": "2026-08-09T16:53:46.000Z",
+  "updated_at": "2026-08-09T17:17:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "audio",
+    "text-to-audio",
+    "diffusion",
+    "rectified-flow",
+    "spectrogram",
+    "clap",
+    "custom-code",
+    "tiny",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 133,
+  "trending_score": 8,
+  "parameters": 40444300,
+  "parameters_human": "40.4M",
+  "storage_bytes": 326896621,
+  "storage_human": "327 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AudioLab",
+      "url": "https://tryaudiolab.ai/",
+      "snippet": "Generate audio and responses from top AI models for free, with occasional preference prompts powering public model rankings."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 388 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 113 Estimated models among 388 tracked LLMs — 431 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Gemini Omni Flash | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash",
+      "snippet": "Gemini Omni Flash is a preview model designed for fast, conversational video generation and editing. It excels at turning text and images into video, lets you refine and edit generated videos through natural language conversations using the Interactions API."
+    },
+    {
+      "title": "GitHub - AudioLLMs/AudioBench: AudioBench: A Universal Benchmark for ...",
+      "url": "https://github.com/AudioLLMs/AudioBench",
+      "snippet": "AudioBench is a universal benchmark for evaluating audio large language models (AudioLLMs) on speech, audio-scene, and voice understanding tasks across 50+ datasets. New to the codebase? See ARCHITECTURE.md for how the pieces fit together. For model-as-judge evaluation, we serve the judgement model ..."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    }
+  ]
+}

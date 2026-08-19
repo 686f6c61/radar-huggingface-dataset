@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MASAYUKI-EMO/masa_v1",
+  "slug": "masayuki-emo-masa_v1",
+  "author": "MASAYUKI-EMO",
+  "url": "https://huggingface.co/MASAYUKI-EMO/masa_v1",
+  "created_at": "2026-05-15T21:27:23.000Z",
+  "updated_at": "2026-08-17T12:20:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 528,
+  "trending_score": 0,
+  "parameters": 18782035296,
+  "parameters_human": "18.78B",
+  "storage_bytes": 129332054154,
+  "storage_human": "129.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "gguf",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MASAYUKI-EMO/masa_v1 · Hugging Face",
+      "url": "https://huggingface.co/MASAYUKI-EMO/masa_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MASAYUKI-EMO/masa_v1 at main - Hugging Face",
+      "url": "https://huggingface.co/MASAYUKI-EMO/masa_v1/tree/main",
+      "snippet": "Instructions to use MASAYUKI-EMO/masa_v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use MASAYUKI-EMO/masa_v1 with Diffusers:"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Download 580,000+ Free 3D Models — FBX, OBJ, GLB, STL | Meshy",
+      "url": "https://www.meshy.ai/free-3d-models",
+      "snippet": "Browse over 580,000 free 3D models in FBX, OBJ, GLB, and STL formats. Download community creations or generate your own with Meshy&#x27;s AI 3D model generator — free tier available."
+    }
+  ]
+}

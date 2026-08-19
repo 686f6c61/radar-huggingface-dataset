@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-fp32-onnx",
+  "slug": "ketiswp-stm32ai-mobilenetv2-0-35-imagenet-224-fp32-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-fp32-onnx",
+  "created_at": "2026-08-19T01:57:57.000Z",
+  "updated_at": "2026-08-19T02:11:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "fp32",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6735926,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stm32ai-modelzoo/image_classification/mobilenetv2_pt/README.md ... - GitHub",
+      "url": "https://github.com/STMicroelectronics/stm32ai-modelzoo/blob/master/image_classification/mobilenetv2_pt/README.md",
+      "snippet": "MobileNet V2 Use case : Image classification Model description MobileNetV2 improves upon V1 with inverted residual blocks and linear bottlenecks. It features skip connections between thin bottleneck layers, improving gradient flow and enabling deeper, more accurate networks."
+    },
+    {
+      "title": "stm32ai-modelzoo/image_classification/mobilenetv2/README.md at main ...",
+      "url": "https://github.com/STMicroelectronics/stm32ai-modelzoo/blob/main/image_classification/mobilenetv2/README.md",
+      "snippet": "Measures are done with default STM32Cube.AI configuration with enabled input / output allocated option. tfs stands for \"training from scratch\", meaning that the model weights were randomly initialized before training. tl stands for \"transfer learning\", meaning that the model backbone weights were initialized from a pre-trained model, then only the last layer was unfrozen during the training ..."
+    },
+    {
+      "title": "STMicroelectronics/mobilenetv2 · Hugging Face",
+      "url": "https://huggingface.co/STMicroelectronics/mobilenetv2",
+      "snippet": "Performances Metrics Measures are done with default STM32Cube.AI configuration with enabled input / output allocated option. tfs stands for \"training from scratch\", meaning that the model weights were randomly initialized before training. tl stands for \"transfer learning\", meaning that the model backbone weights were initialized from a pre-trained model, then only the last layer was unfrozen ..."
+    },
+    {
+      "title": "google/mobilenet_v2_0.35_96 · Hugging Face",
+      "url": "https://huggingface.co/google/mobilenet_v2_0.35_96",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MobileNet v2 - PyTorch",
+      "url": "https://pytorch.org/hub/pytorch_vision_mobilenet_v2/",
+      "snippet": "Model Description The MobileNet v2 architecture is based on an inverted residual structure where the input and output of the residual block are thin bottleneck layers opposite to traditional residual models which use expanded representations in the input. MobileNet v2 uses lightweight depthwise convolutions to filter features in the intermediate expansion layer. Additionally, non-linearities ..."
+    }
+  ]
+}

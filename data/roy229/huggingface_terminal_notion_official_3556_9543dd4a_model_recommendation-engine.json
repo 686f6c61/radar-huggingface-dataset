@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_terminal_notion_official_3556_9543dd4a_model_recommendation-engine",
+  "slug": "roy229-huggingface_terminal_notion_official_3556_9543dd4a_model_recommendation-engine",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_9543dd4a_model_recommendation-engine",
+  "created_at": "2026-08-17T03:27:43.000Z",
+  "updated_at": "2026-08-17T03:59:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face · GitHub",
+      "url": "https://github.com/huggingface",
+      "snippet": "The AI community building the future. Hugging Face has 467 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "The AI workspace that works for you. | Notion",
+      "url": "https://www.notion.com/",
+      "snippet": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster."
+    },
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "Here we&#x27;re configuring global settings for two built-in models: gpt-5 when accessed via the openai provider, and claude-sonnet-4-20250514 when accessed via the anthropic provider. The built-in provider and model names can be found on Models.dev. You can also configure these options for any agents that you are using. The agent config overrides any global options here. Learn more. You can also ..."
+    }
+  ]
+}

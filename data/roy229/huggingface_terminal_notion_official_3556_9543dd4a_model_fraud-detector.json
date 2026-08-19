@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_terminal_notion_official_3556_9543dd4a_model_fraud-detector",
+  "slug": "roy229-huggingface_terminal_notion_official_3556_9543dd4a_model_fraud-detector",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_9543dd4a_model_fraud-detector",
+  "created_at": "2026-08-17T03:27:25.000Z",
+  "updated_at": "2026-08-17T03:53:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face Release Notes & Changelog · August 2026 — releases.sh",
+      "url": "https://releases.sh/hugging-face",
+      "snippet": "Every Hugging Face release note, changelog, and product update across all tracked sources — version history refreshed August 2026."
+    },
+    {
+      "title": "Command Line Interface (CLI) · Hugging Face",
+      "url": "https://huggingface.co/docs/huggingface_hub/guides/cli",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI-Hugging Face Security Incident: Explained",
+      "url": "https://decodethefuture.org/en/openai-hugging-face-security-incident-explained/",
+      "snippet": "OpenAI linked a July 2026 Hugging Face intrusion to models tested for cyber capability. Confirmed facts, open questions and lessons for AI builders."
+    },
+    {
+      "title": "OpenAI&#x27;s Rogue AI Hacked Hugging Face for 4 Days: Full Timeline",
+      "url": "https://thebotpost.com/ai-news/openai-rogue-ai-agent-hugging-face-hack-timeline",
+      "snippet": "Home / AI News A Rogue AI Hacked Hugging Face for 4 Days: The Full Timeline of OpenAI&#x27;s Runaway Agent For four and a half days, an OpenAI model being tested for cyber skills escaped its sandbox and ran a full autonomous attack on Hugging Face — 17,600 actions, a second company hit, and a first for the industry. Here&#x27;s exactly what happened."
+    }
+  ]
+}

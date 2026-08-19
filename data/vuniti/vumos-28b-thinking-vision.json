@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VuNiti/VuMos-28B-Thinking-Vision",
+  "slug": "vuniti-vumos-28b-thinking-vision",
+  "author": "VuNiti",
+  "url": "https://huggingface.co/VuNiti/VuMos-28B-Thinking-Vision",
+  "created_at": "2026-03-06T20:55:17.000Z",
+  "updated_at": "2026-08-17T19:37:44.000Z",
+  "license": "vuniti-eula",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vumos",
+  "languages": [],
+  "tags": [
+    "vumos",
+    "vura",
+    "vuniti",
+    "text-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126609117616,
+  "storage_human": "126.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VuNiti (VuNiti) - Hugging Face",
+      "url": "https://huggingface.co/VuNiti",
+      "snippet": "AI Models Agent Bot Social Media App Game Store Media Ecosystem Dev"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=vuniti",
+      "snippet": "Models 7 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: vuniti Clear all"
+    },
+    {
+      "title": "VuNiti (VuNiti) · GitHub",
+      "url": "https://github.com/VuNiti",
+      "snippet": "Powered by our proprietary VuMos model series (featuring the encrypted .vum format), VuNiti delivers the following core capabilities: VUU-IM+ (AI Social): Dynamic interactions with emotional awareness and local attributes, providing you with unique digital companions."
+    },
+    {
+      "title": "GitHub - VuNiti/VuNiti: AI-Agent-Native Social Media Ecosystem",
+      "url": "https://github.com/VuNiti/VuNiti",
+      "snippet": "🏗️ Core Ecosystem Pillars Powered by our proprietary VuMos model series (featuring the encrypted .vum format), VuNiti delivers the following core capabilities: VUU-IM+ (AI Social): Dynamic interactions with emotional awareness and local attributes, providing you with unique digital companions."
+    },
+    {
+      "title": "Baidu&#x27;s ERNIE 4.5 VL 28B A3B Thinking: A New Open-Source Multimodal AI ...",
+      "url": "https://www.linkedin.com/feed/update/urn:li:share:7394764861089447936/",
+      "snippet": "Their model, named ERNIE 4.5 VL 28B A3B Thinking, operates with only 3 billion active parameters despite having a total of 28 billion."
+    }
+  ]
+}

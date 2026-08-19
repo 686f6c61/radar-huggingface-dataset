@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "junmokane/260816-junmo-cho-rbm-openarm-block",
+  "slug": "junmokane-260816-junmo-cho-rbm-openarm-block",
+  "author": "junmokane",
+  "url": "https://huggingface.co/junmokane/260816-junmo-cho-rbm-openarm-block",
+  "created_at": "2026-08-16T10:06:12.000Z",
+  "updated_at": "2026-08-16T10:27:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3_vl",
+    "base_model:adapter:robometer/Robometer-4B",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:robometer/Robometer-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4513065228,
+  "parameters_human": "4.51B",
+  "storage_bytes": 9442462313,
+  "storage_human": "9.4 GB",
+  "base_model": "robometer/Robometer-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

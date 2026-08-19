@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Sherlocked1226/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "sherlocked1226-q-frozenlake-v1-4x4-noslippery",
+  "author": "Sherlocked1226",
+  "url": "https://huggingface.co/Sherlocked1226/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-08-18T18:55:17.000Z",
+  "updated_at": "2026-08-18T18:55:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dryaks/q-FrozenLake-v1-4x4-noSlippery at main - Hugging Face",
+      "url": "https://huggingface.co/Dryaks/q-FrozenLake-v1-4x4-noSlippery/tree/main",
+      "snippet": "Dryaks / q-FrozenLake-v1-4x4-noSlippery like 0 Reinforcement Learning FrozenLake-v1-4x4-no_slippery q-learning custom-implementation Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new main q-FrozenLake-v1-4x4-noSlippery 34.6 kB Ctrl+K Ctrl+K 1 contributor History:2 commits Dryaks Upload folder using huggingface_hub 53efeaf verifiedabout 8 hours ago ..."
+    },
+    {
+      "title": "nidhish24/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/nidhish24/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Jailbreak Index",
+      "url": "https://slowlow999.github.io/The_Jailbreak_Index/",
+      "snippet": "⚠️ Disclaimer: This index is for educational and research purposes only. Data is compiled from publicly available sources and may not reflect the most current model versions. Always consult official documentation and conduct your own security assessments before deploying AI models in production environments."
+    },
+    {
+      "title": "Damacol/hamzachera-q-frozenlake-v1-4x4-noslippery - GitHub",
+      "url": "https://github.com/Damacol/hamzachera-q-frozenlake-v1-4x4-noslippery",
+      "snippet": "HamzaChera/q-FrozenLake-v1-4x4-noSlippery - Private, Uncensored AI for Real Creators and Devs Private inference with {MODEL}. Zero logs, full prompt freedom, and seamless Venice.ai integration for real creators."
+    },
+    {
+      "title": "Jailbreaks Repository - Horselock",
+      "url": "https://www.horselock.us/jailbreaks",
+      "snippet": "Jailbreaks Repository Browse my complete jailbreak repository, restored from Github - organized prompts and techniques for various AI models. Click folders to expand/collapse, click files to view."
+    }
+  ]
+}

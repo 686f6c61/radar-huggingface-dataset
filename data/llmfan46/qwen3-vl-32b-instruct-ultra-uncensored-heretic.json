@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic",
+  "slug": "llmfan46-qwen3-vl-32b-instruct-ultra-uncensored-heretic",
+  "author": "llmfan46",
+  "url": "https://huggingface.co/llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic",
+  "created_at": "2026-04-09T12:26:54.000Z",
+  "updated_at": "2026-04-09T12:58:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "base_model:Qwen/Qwen3-VL-32B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-32B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 1141,
+  "trending_score": 8,
+  "parameters": 33357390064,
+  "parameters_human": "33.36B",
+  "storage_bytes": 66726337137,
+  "storage_human": "66.7 GB",
+  "base_model": "Qwen/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-32B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
+      "url": "https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-VL-32B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-VL-32B-Instruct",
+      "snippet": "Qwen3-VL-32B-Instruct Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Architecture graph for llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored ...",
+      "url": "https://hfviewer.com/llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic",
+      "snippet": "llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic is an image-text-to-text model (qwen3_vl_text architecture). It uses 64 transformer layers, a hidden size of 5,120, and 64 query heads with 8 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 25,600."
+    }
+  ]
+}

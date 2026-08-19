@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chennana1028/gwp05-openarm-sbint-delta-step50000",
+  "slug": "chennana1028-gwp05-openarm-sbint-delta-step50000",
+  "author": "chennana1028",
+  "url": "https://huggingface.co/chennana1028/gwp05-openarm-sbint-delta-step50000",
+  "created_at": "2026-08-17T06:43:03.000Z",
+  "updated_at": "2026-08-17T06:46:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "robotics",
+    "world-action-model",
+    "giga-world-policy",
+    "openarm",
+    "sbint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24086817563,
+  "storage_human": "24.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chennana1028/gwp05-openarm-sbint-step20000 · Hugging Face",
+      "url": "https://huggingface.co/chennana1028/gwp05-openarm-sbint-step20000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenArm - GitHub",
+      "url": "https://github.com/enactic/openarm",
+      "snippet": "OpenArm is an open-source 7DOF humanoid arm designed for physical AI research and deployment in contact-rich environments. With high backdrivability and compliance, it is built with safe human-robot interaction in mind while delivering practical payload capabilities for real-world applications."
+    },
+    {
+      "title": "OpenArm",
+      "url": "https://openarm.dev/",
+      "snippet": "A reproducible evaluation cell that standardizes background, lighting, cameras, and arm position for fair, automated AI model comparison. \"Model A outperforms Model B\" only holds meaning when evaluated under identical conditions — OpenArm Cell provides the reproducible infrastructure to make such claims verifiable."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sbint",
+      "snippet": "Models 4 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: sbint Clear all"
+    },
+    {
+      "title": "GitHub - OpenArmRobot/OpenARM: OpenARM is an open-source remake version ...",
+      "url": "https://github.com/OpenArmRobot/OpenARM",
+      "snippet": "OpenARM is an open-source remake version 7DOF humanoid arm hardware designed for physical AI research and deployment in many environments. With high backdrivability and compliance with cheap Chinese joint motor standards, it excels at safe human-robot."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "PigeonSang/Qwen-Image-2512",
+  "slug": "pigeonsang-qwen-image-2512",
+  "author": "PigeonSang",
+  "url": "https://huggingface.co/PigeonSang/Qwen-Image-2512",
+  "created_at": "2026-08-17T12:16:28.000Z",
+  "updated_at": "2026-08-17T12:16:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57699806247,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen-image-2512",
+      "snippet": "Model Performance We conducted over 10,000 rounds of blind model evaluations on AI Arena , and the results show that Qwen-Image-2512 is currently the strongest open-source model—while remaining highly competitive even among closed-source models."
+    },
+    {
+      "title": "Qwen-Image-2512 - fp8_e4m3fn | Qwen Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2268063/qwen-image-2512",
+      "snippet": "Enhanced Human Realism Qwen-Image-2512 significantly reduces the \"AI-generated\" look and substantially enhances overall image realism, especially for human subjects. Finer Natural Detail Qwen-Image-2512 delivers notably more detailed rendering of landscapes, animal fur, and other natural elements."
+    },
+    {
+      "title": "Qwen-Image-2512: Finer Details, Greater Realism",
+      "url": "https://qwen.ai/blog?id=qwen-image-2512",
+      "snippet": "You are welcome to try the latest model at Qwen Chat. Compared to the base Qwen-Image model released in August, Qwen-Image-2512 features the following key improvements: Enhanced Huamn Realism Qwen-Image-2512 significantly reduces the \"AI-generated\" look and substantially enhances overall image realism, especially for human subjects."
+    },
+    {
+      "title": "Qwen-Image 2512 - AI Model | Layer",
+      "url": "https://www.layer.ai/models/qwen-qwen-image-2512",
+      "snippet": "Qwen-Image 2512 is the latest text-to-image generation model from the Qwen team at Alibaba. Building on the strengths of its predecessors, it delivers improved image quality, finer details, and stronger prompt adherence across a wide range of styles and subjects."
+    },
+    {
+      "title": "Qwen Image 2512 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen-image-2512/",
+      "snippet": "Qwen-Image-2512 is Qwen&#x27;s December 2025 update to its 20B text-to-image foundation model, with more realistic humans, finer natural textures and much better Chinese-English text rendering, released as open-source Apache-2.0 weights."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "peculiar/sbgrid",
+  "slug": "peculiar-sbgrid",
+  "author": "peculiar",
+  "url": "https://huggingface.co/peculiar/sbgrid",
+  "created_at": "2026-08-08T06:44:17.000Z",
+  "updated_at": "2026-08-08T06:51:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 164,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237053073,
+  "storage_human": "237 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar/sbgrid · Hugging Face",
+      "url": "https://huggingface.co/peculiar/sbgrid",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "peculiar/sbgrid at main - Hugging Face",
+      "url": "https://huggingface.co/peculiar/sbgrid/tree/main",
+      "snippet": "Instructions to use peculiar/sbgrid with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use peculiar/sbgrid with Diffusers:"
+    },
+    {
+      "title": "SBGrid Consortium",
+      "url": "https://sbgrid.org/",
+      "snippet": "The SBGrid Consortium is an innovative global research computing group operated out of Harvard Medical School. SBGrid provides the global structural biology community with support for research computing."
+    },
+    {
+      "title": "Novel Family of Conditional Generative Models Uses AI-Generated ...",
+      "url": "https://cs.lbl.gov/news-and-events/news/2026/cgm-gm/",
+      "snippet": "The CGM-Wave model uses conditional diffusion models (a different generative architecture than the CVAE model used in CGM-GM and CGM-FAS). The goal of this model is to produce high-fidelity, broadband wavefields from seismicity in the geothermal field."
+    },
+    {
+      "title": "SBGrid Consortium - Software Updates",
+      "url": "https://sbgrid.org/software/recent/archive/",
+      "snippet": "The SBGrid Consortium is an innovative global research computing group operated out of Harvard Medical School. SBGrid provides the global structural biology community with support for research computing."
+    }
+  ]
+}

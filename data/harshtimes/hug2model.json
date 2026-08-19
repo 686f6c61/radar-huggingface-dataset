@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HarshTimes/Hug2Model",
+  "slug": "harshtimes-hug2model",
+  "author": "HarshTimes",
+  "url": "https://huggingface.co/HarshTimes/Hug2Model",
+  "created_at": "2026-08-14T07:47:57.000Z",
+  "updated_at": "2026-08-14T07:51:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI&#x27;s runaway AI agents also breached a customer at a second tech ...",
+      "url": "https://fortune.com/2026/07/29/openai-rouge-ai-agent-hack-hugging-face-breached-second-tech-company/",
+      "snippet": "The autonomous OpenAI agents that broke out of a secure testing environment this month and hacked into Hugging Face&#x27;s servers also breached a second technology company during a weeklong spree ..."
+    },
+    {
+      "title": "Hugging Bay",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay publishes open AI catalog metadata, source provenance, license records, neutral hosted-file inventory, answer packs, and recorded hashes. Canonical bundle verification and runtime readiness remain unknown."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI Says Its A.I. Models Hacked Into Hugging Face, a Digital Library ...",
+      "url": "https://www.nytimes.com/2026/07/21/technology/openai-attack-hugging-face.html",
+      "snippet": "The intrusion into Hugging Face began when OpenAI tested a combination of two of its models, GPT‑5.6 Sol and a more powerful, unreleased model, to see how well the models could chain together ..."
+    }
+  ]
+}

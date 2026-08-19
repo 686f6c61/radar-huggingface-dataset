@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen3.6-27B-GGUF",
+  "slug": "unsloth-qwen3-6-27b-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen3.6-27B-GGUF",
+  "created_at": "2026-04-22T05:43:37.000Z",
+  "updated_at": "2026-04-22T16:01:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "qwen",
+    "qwen3_5",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 943,
+  "downloads_30d": 869399,
+  "trending_score": 8,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 531081925312,
+  "storage_human": "531.1 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.6-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.6",
+      "snippet": "Qwen3.6 is Alibaba&#x27;s new family of multimodal hybrid-thinking models, including: Qwen3.6-27B and 35B-A3B. It delivers top performance for its size, supports 256K context across 201 languages. It excels in agentic coding, vision, chat tasks. Qwen3.6-27B runs on 18GB RAM setups and 35B-A3B runs on 22GB. You can now run and train the models in Unsloth Studio."
+    },
+    {
+      "title": "unsloth/Qwen3.6-27B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-27B-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B-GGUF: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-27b-gguf-unsloth",
+      "snippet": "Overview Qwen3.6-27B-GGUF is a 27-billion-parameter causal language model with vision encoding capabilities, quantized in GGUF format by unsloth. The model features a hybrid attention architecture combining Gated DeltaNet (48 linear attention heads for V and 16 for QK with 128-dimensional heads) with Gated Attention (24 Q heads and 4 KV heads with 256-dimensional heads), arranged across 64 ..."
+    },
+    {
+      "title": "Run Qwen3.6 Locally with Unsloth GGUF - LeetLLM",
+      "url": "https://leetllm.com/blog/run-qwen36-local-unsloth-gguf",
+      "snippet": "Run Qwen3.6 locally with llama.cpp and Unsloth GGUF. Pick between 27B dense and 35B-A3B MoE, choose a quant, expose a local endpoint, then test multi-token prediction after the plain run works."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Baozi95/fsgs",
+  "slug": "baozi95-fsgs",
+  "author": "Baozi95",
+  "url": "https://huggingface.co/Baozi95/fsgs",
+  "created_at": "2026-06-22T03:44:50.000Z",
+  "updated_at": "2026-08-17T00:29:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150095282598,
+  "storage_human": "150.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baozi95/fsgs · Hugging Face",
+      "url": "https://huggingface.co/Baozi95/fsgs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Baozi95 (Yixin Tan) - Hugging Face",
+      "url": "https://huggingface.co/Baozi95",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... updated a model 21 days ago"
+    },
+    {
+      "title": "GitHub - VITA-Group/FSGS: [ECCV 2024]\"FSGS: Real-Time Few-Shot View ...",
+      "url": "https://github.com/VITA-Group/FSGS",
+      "snippet": "[ECCV 2024]\"FSGS: Real-Time Few-Shot View Synthesis using Gaussian Splatting\", Zehao Zhu*, Zhiwen Fan*, Yifan Jiang, Zhangyang Wang - VITA-Group/FSGS"
+    },
+    {
+      "title": "FSGS: Real-Time Few-shot View Synthesis using Gaussian Splatting",
+      "url": "https://arxiv.org/html/2312.00451v1",
+      "snippet": "To this end, we present FSGS, to model large-scale scenes from Sparse viewpoint inputs using 3D Gaussians as representation. To address the challenge of mitigating the gap in dense coverage from sparse input, the first challenge is how to move the locations of Gaussians effectively to cover and represent the 3D scene."
+    },
+    {
+      "title": "Development of a Diagnostic Model for Focal Segmental ...",
+      "url": "https://www.dovepress.com/development-of-a-diagnostic-model-for-focal-segmental-glomeruloscleros-peer-reviewed-fulltext-article-IJGM",
+      "snippet": "A highly accurate machine learning model for FSGS diagnosis. Immunohistochemical validation confirmed elevated expression of CD99 and OAZ2"
+    }
+  ]
+}

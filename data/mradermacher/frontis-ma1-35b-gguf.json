@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Frontis-MA1-35B-GGUF",
+  "slug": "mradermacher-frontis-ma1-35b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Frontis-MA1-35B-GGUF",
+  "created_at": "2026-08-18T12:50:25.000Z",
+  "updated_at": "2026-08-18T13:01:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 21880340800,
+  "storage_human": "21.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FrontisAI/Frontis-MA1-35B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/FrontisAI/Frontis-MA1-35B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FrontisAI/Frontis-MA1-35B · Hugging Face",
+      "url": "https://huggingface.co/FrontisAI/Frontis-MA1-35B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - FrontisAI/OpenRSI: Executable, measurable, and reproducible ...",
+      "url": "https://github.com/FrontisAI/OpenRSI",
+      "snippet": "FIRST RELEASE · MACHINE LEARNING ENGINEERING Frontis-MA1 + OpenMLE 📰 News [2026-07-31] 🎉 First OpenRSI release: Frontis-MA1 (35B / 30B, with GGUF derivatives), the OpenMLE stack (Gym / RL / Evo), and the OpenMLE Tasks and OpenMLE SFT Traces datasets."
+    },
+    {
+      "title": "Architecture graph for FrontisAI/Frontis-MA1-35B | hfviewer",
+      "url": "https://hfviewer.com/FrontisAI/Frontis-MA1-35B",
+      "snippet": "FrontisAI/Frontis-MA1-35B neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model FrontisAI/Frontis-MA1-35B. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual forward ..."
+    },
+    {
+      "title": "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement ...",
+      "url": "https://arxiv.org/pdf/2607.28568",
+      "snippet": "Our primary model is Frontis-MA1-35B, which is used for the headline model, system, trajectory, and transfer analyses. We additionally evaluate Frontis-MA1-30B as a companion model to test whether the post-training gain reproduces on a second backbone and model scale."
+    }
+  ]
+}

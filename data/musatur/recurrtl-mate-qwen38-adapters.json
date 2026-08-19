@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "musatur/recurrtl-mate-qwen38-adapters",
+  "slug": "musatur-recurrtl-mate-qwen38-adapters",
+  "author": "musatur",
+  "url": "https://huggingface.co/musatur/recurrtl-mate-qwen38-adapters",
+  "created_at": "2026-08-17T05:03:55.000Z",
+  "updated_at": "2026-08-17T05:13:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "verilog",
+    "rtl",
+    "hardware-design",
+    "lora",
+    "verilog-eval",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1888180144,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-2.4T-A95B: The MoE That Actually Makes Sense for Your GPU",
+      "url": "https://www.smart-stacking.com/posts/2026-08-13-qwen38-24t-a95b-released/",
+      "snippet": "Qwen3.8-2.4T-A95B is a 95B-active MoE that runs on 48GB VRAM. Here&#x27;s how to actually deploy it, what the r/LocalLLaMA crowd is saying, and why you might not need it."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-FP8",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "The official repo is Qwen/Qwen3.8-27B, and the model card publishes benchmark results, including 61.7 on SWE-bench Pro. We track the full Qwen 3.8 launch picture, Max included, in our release breakdown and benchmarks tracker. Qwen 3.8 27B Hardware Requirements ... Our breakdown of what actually limits inference speed covers the mechanics."
+    }
+  ]
+}

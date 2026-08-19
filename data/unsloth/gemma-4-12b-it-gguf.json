@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "unsloth/gemma-4-12b-it-GGUF",
+  "slug": "unsloth-gemma-4-12b-it-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF",
+  "created_at": "2026-05-29T11:25:59.000Z",
+  "updated_at": "2026-07-17T12:52:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "unsloth",
+    "gemma",
+    "google",
+    "gemma4_unified",
+    "image-text-to-text",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 803,
+  "downloads_30d": 531312,
+  "trending_score": 10,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 1402379145377,
+  "storage_human": "1402.4 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/gemma-4-12b-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF",
+      "snippet": "Hugging Face | GitHub | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind This model card is for the Gemma 4 12B Unified model, which is part of the Gemma 4 family of open models. Built with the same multimodal functionality as Gemma 4 E2B and E4B (text, audio, image, and video inputs), it brings native audio and vision understanding directly to local environments ..."
+    },
+    {
+      "title": "Gemma 4 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4",
+      "snippet": "You can now run all GGUFs, MLX and fine-tune Gemma 4 in Unsloth Studio (see right). QAT variants of Gemma 4 reduce memory requirements around 3x while preserving model quality. Jun 9: Gemma 4 MTP is here. Jun 5: Gemma 4 QAT is released. Jun 2: Gemma 4 12B Unified is released. Apr 20: We conducted Gemma 4 GGUF Benchmarks to help you pick the ..."
+    },
+    {
+      "title": "unsloth/gemma-4-12b · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-12b",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "gemma-4-12b-it-GGUF: Video-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-12b-it-gguf-unsloth",
+      "snippet": "Overview gemma-4-12b-it-GGUF is a quantized GGUF format version of Google DeepMind&#x27;s Gemma 4 12B Unified model, maintained by unsloth. This is an instruction-tuned, multimodal model with 11.95B parameters that handles text, image, audio, and video inputs while generating text output. The critical distinction of the 12B Unified variant is its encoder-free architecture—rather than using ..."
+    },
+    {
+      "title": "Gemma 4 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4/train",
+      "snippet": "You can now train Google&#x27;s Gemma 4 12B, E2B, E4B, 26B-A4B and 31B with Unsloth. Unsloth supports all vision, text, audio and RL fine-tuning for Gemma 4."
+    }
+  ]
+}

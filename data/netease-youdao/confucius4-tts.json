@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "netease-youdao/Confucius4-TTS",
+  "slug": "netease-youdao-confucius4-tts",
+  "author": "netease-youdao",
+  "url": "https://huggingface.co/netease-youdao/Confucius4-TTS",
+  "created_at": "2026-06-02T10:54:16.000Z",
+  "updated_at": "2026-08-14T05:22:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "id",
+    "vi",
+    "th",
+    "es",
+    "pt",
+    "it",
+    "ru",
+    "ms"
+  ],
+  "tags": [
+    "safetensors",
+    "confucius4",
+    "text-to-speech",
+    "tts",
+    "speech-synthesis",
+    "zero-shot",
+    "voice-cloning",
+    "cross-lingual",
+    "multilingual",
+    "llm",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "id",
+    "vi",
+    "th",
+    "es",
+    "pt",
+    "it",
+    "ru",
+    "ms",
+    "arxiv:2608.11650",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 262,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3061233268,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "netease-youdao/Confucius4-TTS · Hugging Face",
+      "url": "https://huggingface.co/netease-youdao/Confucius4-TTS",
+      "snippet": "During S2A training, the T2S model, speaker encoder (Wav2Vec2-BERT), and style encoder (CAMPPlus) are all frozen. Only the flow-matching S2A model is trained. 📊 Performance Confucius4-TTS achieves competitive results on multilingual and cross-lingual zero-shot TTS benchmarks, with strong intelligibility and speaker similarity across multiple languages. Lower is better for WER/CER (↓), and ..."
+    },
+    {
+      "title": "GitHub - netease-youdao/Confucius4-TTS: Confucius4-TTS: a Multilingual ...",
+      "url": "https://github.com/netease-youdao/Confucius4-TTS",
+      "snippet": "Confucius4-TTS is an advanced LLM-based text-to-speech (TTS) system designed for multilingual and cross-lingual speech synthesis. Built on a speech encoder + large language model (LLM) architecture, Confucius4-TTS enables high-quality speech generation while preserving speaker identity across ..."
+    },
+    {
+      "title": "netease-youdao/Confucius4-TTS at main - Hugging Face",
+      "url": "https://huggingface.co/netease-youdao/Confucius4-TTS/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Confucius4-TTS/confuciustts at main · netease-youdao/Confucius4-TTS",
+      "url": "https://github.com/netease-youdao/Confucius4-TTS/tree/main/confuciustts",
+      "snippet": "Confucius4-TTS: a Multilingual and Cross-Lingual Zero-Shot TTS Engine - netease-youdao/Confucius4-TTS"
+    },
+    {
+      "title": "netease-youdao/Confucius4-TTS | DeepWiki",
+      "url": "https://deepwiki.com/netease-youdao/Confucius4-TTS",
+      "snippet": "Confucius4-TTS is an advanced, LLM-based text-to-speech (TTS) system optimized for high-quality multilingual and cross-lingual synthesis. By leveraging a decoupled two-stage architecture, it enables s"
+    }
+  ]
+}

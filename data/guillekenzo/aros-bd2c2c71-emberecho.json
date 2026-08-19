@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-bd2c2c71-EmberEcho",
+  "slug": "guillekenzo-aros-bd2c2c71-emberecho",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-bd2c2c71-EmberEcho",
+  "created_at": "2026-08-18T08:45:11.000Z",
+  "updated_at": "2026-08-18T08:57:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 387535667,
+  "storage_human": "388 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "guillekenzo/aros-09cc5fd4-MellowDuality · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-09cc5fd4-MellowDuality",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "AI Blockbench Model Generator | Rigged 3D Minecraft Models from a ...",
+      "url": "https://kodari.ai/blogs/ai-blockbench-model-generator",
+      "snippet": "AI Blockbench Model Generator: Rigged, Animated .bbmodel Files from a Prompt Describe a mob, a pet, a weapon, a prop. Get back a proper .bbmodel, rigged with bones and animated, that opens straight in Blockbench. No modeling, no keyframing by hand."
+    }
+  ]
+}

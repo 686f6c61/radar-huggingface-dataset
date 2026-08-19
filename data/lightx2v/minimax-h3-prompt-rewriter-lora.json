@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA",
+  "slug": "lightx2v-minimax-h3-prompt-rewriter-lora",
+  "author": "lightx2v",
+  "url": "https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA",
+  "created_at": "2026-08-07T03:07:53.000Z",
+  "updated_at": "2026-08-07T05:05:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "prompt-rewriting",
+    "minimax-h3",
+    "text-to-audio-video",
+    "audio-video-generation",
+    "en",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 166,
+  "downloads_30d": 883,
+  "trending_score": 31,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3735445032,
+  "storage_human": "3.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How To Humanize AI Text - Online Humanizer Tool",
+      "url": "https://duckduckgo.com/y.js?ad_domain=justdone.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=M%2DgueHUYvTS0DMOzjKbStx0PIIyQQ74t4EW4EYf8kBLkpdfIht9XmJgT4GqMt8tgVGxqpfrgDh_HTgJskqiL1NH87OuFm5AVD5IE0ryw0zl6K6oqWoTZvw%2D1bg24F5fmCjMMWtb6RC%2DfcBc88R1AqeP%2DyCcN0ak2V%2DzoiDiBzyI.qtSC7DChNCq9hNfa25SCuw&rut=14cd005fb29303cbf38d3daa1713710bc4357b7fef023f6065e753f9617bf45f&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8sJh4%2D5WuytiDzsunmlw%2DAzVUCUyKR1mBjPxZMuK91L7B2NE83ZZLw6VLQVHfymlG%2DlEFD6%2D_QHE7T2iXKPHZdygg0yVF804KbOD9sfzK7D91F1P2sN93Nk46HCBSbaQNM34hg4EXxmBDtOT1fJKxQym6Jxyd4qVS1Hl0ffgf4Ia60zseizneU7iz65SLdRilLnWv5WFBcs7%2DVJdZ%2DKPrCpPvXeA%26u%3DaHR0cHMlM2ElMmYlMmZqdXN0ZG9uZS5jb20lMmZhaS1odW1hbml6ZXIlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2Q0ODU0ODYzMjElMjZ1dG1fY29udGVudCUzZDEyMjgxNTU1NTA3MzYzMjMlMjZ1dG1fYWRzZXRfaWQlM2QxMjI4MTU1NTUwNzM2MzIzJTI2dXRtX3Rlcm0lM2RwYXJhcGhyYXNlciUyNnV0bV9uZXR3b3JrJTNkcyUyNnV0bV9tYXRjaHR5cGUlM2RwJTI2bXNjbGtpZCUzZDNmZWEyNWM2ODc1OTFhMTE4MDk0NGZiODllMWRkNTYx%26rlid%3D3fea25c687591a1180944fb89e1dd561&vqd=4-76923827575164094239210864725573731782&iurl=%7B1%7DIG%3DA83F2FA51CFC40B98647AECEC840E67D%26CID%3D26FA0408251A66CC206613BC243C67FE%26ID%3DDevEx%2C5037.1",
+      "snippet": "Transform AI text into natural-sounding content. Trusted by millions of users worldwide. Professional AI Humanizer tool. Thousands of 5-star reviews from students and writers"
+    },
+    {
+      "title": "lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA at main - Hugging Face",
+      "url": "https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax-H3-Prompt-Rewriter-LoRA · Models",
+      "url": "https://www.modelscope.cn/models/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA",
+      "snippet": "PyTorch English lora, prompt-rewriting, minimax-h3 and 2 more @ lightx2v 11 downloads 3.74GB updated Aug 07,2026"
+    },
+    {
+      "title": "MiniMax-H3 Prompt Rewriter for ComfyUI - GitHub",
+      "url": "https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI",
+      "snippet": "ComfyUI nodes for the LightX2V MiniMax-H3 T2VA Prompt Rewriter LoRA. A short prompt goes in; a structured, production-ready audio-video description for MiniMax-H3 comes out — entirely locally. The prompt may be in any language the base model reads; the rewrite comes back in English, which is what ..."
+    }
+  ]
+}

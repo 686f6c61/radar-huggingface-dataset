@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nbdaaa/t5-entity-extraction",
+  "slug": "nbdaaa-t5-entity-extraction",
+  "author": "nbdaaa",
+  "url": "https://huggingface.co/nbdaaa/t5-entity-extraction",
+  "created_at": "2026-08-19T01:19:04.000Z",
+  "updated_at": "2026-08-19T01:19:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62538240,
+  "parameters_human": "62.5M",
+  "storage_bytes": 250988730,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "protonx-models/t5-entity-extraction · Hugging Face",
+      "url": "https://huggingface.co/protonx-models/t5-entity-extraction",
+      "snippet": "protonx-models / t5-entity-extraction like 0 Follow ProtonX 75 Text Generation Transformers Safetensors t5 text2text-generation entity-extraction text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    },
+    {
+      "title": "autoevaluate/entity-extraction · Hugging Face",
+      "url": "https://huggingface.co/autoevaluate/entity-extraction",
+      "snippet": "entity-extraction This model is a fine-tuned version of distilbert-base-uncased on the conll2003 dataset. It achieves the following results on the evaluation set: Loss: 0.0808 Precision: 0.8863 Recall: 0.9085 F1: 0.8972 Accuracy: 0.9775 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training ..."
+    },
+    {
+      "title": "Entity extraction custom AI model overview - AI Builder",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/entity-extraction-overview",
+      "snippet": "AI Builder features two types of entity extraction models: prebuilt and custom. Prebuilt models are ready to use, don&#x27;t require training or publishing, and are appropriate for many uses where customization isn&#x27;t needed. Custom entity extraction models must be built, trained, and published before you can use them."
+    },
+    {
+      "title": "Create an entity extraction custom AI model - AI Builder",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/entity-extraction-create",
+      "snippet": "Review and refine entities AI Builder will automatically extract the prebuilt entity types from your uploaded examples. If the results are satisfactory, you don&#x27;t need to customize a model and can use the prebuilt entity extraction model out of the box. You can customize your entity extraction model in these ways: Create a new entity type."
+    }
+  ]
+}

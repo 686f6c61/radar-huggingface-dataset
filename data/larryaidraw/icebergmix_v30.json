@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/icebergmix_v30",
+  "slug": "larryaidraw-icebergmix_v30",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/icebergmix_v30",
+  "created_at": "2026-08-18T09:39:09.000Z",
+  "updated_at": "2026-08-18T09:39:09.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IcebergMix - v3.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/1605847/icebergmix",
+      "snippet": "v1. An equal mix of 1 , 2 , 3, and 4 . v2. An equal mix of 1 , 2 , 3, and 4 . v3 An equal mix of 1 , 2 , and 3 ."
+    },
+    {
+      "title": "IcebergMix｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1919967784191808139",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;IcebergMix&#x27; model on PixAI! Search for \"IcebergMix\" on PixAI - the free & professional AI anime art generator."
+    },
+    {
+      "title": "IcebergMix｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1882019211248145139-IcebergMix",
+      "snippet": "Just created this stunning anime, sfw, characters, base_model anime art with the amazing &#x27;IcebergMix&#x27; model on PixAI! Search for \"IcebergMix\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "LarryAIDraw (LarryChen) - Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/datasets",
+      "snippet": "LarryAIDraw Follow wangwangwangchao&#x27;s profile pictureberrysmithy&#x27;s profile pictureAsAHuman&#x27;s profile picture 70 followers · 0 following https://larry.fanbox.cc/"
+    },
+    {
+      "title": "LarryAIDraw/V1 · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/V1",
+      "snippet": "LarryAIDraw / V1 like 0 License:creativeml-openrail-m Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

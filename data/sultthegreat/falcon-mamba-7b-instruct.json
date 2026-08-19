@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "sultthegreat/falcon-mamba-7b-instruct",
+  "slug": "sultthegreat-falcon-mamba-7b-instruct",
+  "author": "sultthegreat",
+  "url": "https://huggingface.co/sultthegreat/falcon-mamba-7b-instruct",
+  "created_at": "2026-08-15T01:50:40.000Z",
+  "updated_at": "2026-08-15T01:50:40.000Z",
+  "license": "falcon-mamba-7b-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "falcon_mamba",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:tiiuae/falcon-refinedweb",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:2312.00752",
+    "arxiv:2410.05355",
+    "base_model:tiiuae/falcon-mamba-7b",
+    "base_model:finetune:tiiuae/falcon-mamba-7b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 210,
+  "trending_score": 0,
+  "parameters": 7272665088,
+  "parameters_human": "7.27B",
+  "storage_bytes": 14545401832,
+  "storage_human": "14.5 GB",
+  "base_model": "tiiuae/falcon-mamba-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

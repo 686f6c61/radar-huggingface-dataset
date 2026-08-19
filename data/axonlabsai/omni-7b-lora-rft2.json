@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "axonlabsai/Omni-7B-lora-rft2",
+  "slug": "axonlabsai-omni-7b-lora-rft2",
+  "author": "axonlabsai",
+  "url": "https://huggingface.co/axonlabsai/Omni-7B-lora-rft2",
+  "created_at": "2026-08-18T18:33:38.000Z",
+  "updated_at": "2026-08-18T20:35:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "axon",
+    "ranger",
+    "omni",
+    "code",
+    "rft",
+    "base_model:axonlabsai/Omni-7B",
+    "base_model:adapter:axonlabsai/Omni-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 645975704,
+  "storage_human": "646 MB",
+  "base_model": "axonlabsai/Omni-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axonlabsai (axon) - Hugging Face",
+      "url": "https://huggingface.co/axonlabsai/models",
+      "snippet": "Axon Labs — Uncensored AI research. No filters, no rails. Closed + open source."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Open-source Fine-tuning script of Qwen2.5-Omni 7B - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-7B/discussions/29",
+      "snippet": "LlamaFactory now supports fine-tuning the Qwen2.5-Omni model using FFT & LoRA training, we provide training and inference demo along with our no-code Web UI!"
+    },
+    {
+      "title": "GitHub - isjinghao/OralGPT: [NeurIPS&#x27;25 | CVPR&#x27;26] The official repo of ...",
+      "url": "https://github.com/isjinghao/OralGPT",
+      "snippet": "OralGPT is a series multimodal large language model (MLLM) specialized in digital dentistry. It supports diverse dental imaging modalities, including: Intraoral images & videos Photographs Panoramic X-rays Periapical radiographs Cephalometric radiographs Histopathological images Textual Question & Conversation OralGPT aims to be the foundation MLLM for AI-driven digital dentistry — bridging ..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

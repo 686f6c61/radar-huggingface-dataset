@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FAIRC/token-averaging-avg_50m_mixed_k2k4",
+  "slug": "fairc-token-averaging-avg_50m_mixed_k2k4",
+  "author": "FAIRC",
+  "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_mixed_k2k4",
+  "created_at": "2026-08-18T15:52:30.000Z",
+  "updated_at": "2026-08-18T16:00:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 908057898,
+  "storage_human": "908 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4 · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4",
+      "snippet": "FAIRC / token-averaging-avg_50m_k4 like 0 Follow FAIRC 3 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4_learnable_pos · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos",
+      "snippet": "FAIRC/token-averaging-avg_50m_k4_learnable_pos Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "llm-token-averaging/README.md at main - GitHub",
+      "url": "https://github.com/cyai/llm-token-averaging/blob/main/README.md",
+      "snippet": "Can we increase LLM context length by averaging adjacent tokens? If language embeddings are redundant across small windows, averaging k consecutive tokens into one halves (or further reduces) the effective sequence length while keeping the model architecture unchanged. This framework provides rigorous empirical analysis to test this hypothesis across five averaging strategies."
+    },
+    {
+      "title": "llm-token-averaging/docs/methods_overview.md at main - GitHub",
+      "url": "https://github.com/cyai/llm-token-averaging/blob/main/docs/methods_overview.md",
+      "snippet": "The Core Research Question Are language model embeddings redundant across small token windows? If so, can we average k adjacent tokens into one without significant information loss — effectively multiplying the model&#x27;s context length by k?"
+    },
+    {
+      "title": "LLM Token Counter — Count Tokens for GPT, Claude & Gemini | BenchLM.ai",
+      "url": "https://benchlm.ai/tools/token-counter",
+      "snippet": "Free LLM token counter with real tokenizers for GPT-5, Claude, Gemini, Llama & more. Count tokens, estimate API costs, and check context window limits instantly."
+    }
+  ]
+}

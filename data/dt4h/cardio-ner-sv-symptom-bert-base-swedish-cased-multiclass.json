@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DT4H/cardio-ner-sv-symptom-bert-base-swedish-cased-multiclass",
+  "slug": "dt4h-cardio-ner-sv-symptom-bert-base-swedish-cased-multiclass",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/cardio-ner-sv-symptom-bert-base-swedish-cased-multiclass",
+  "created_at": "2026-08-18T18:41:03.000Z",
+  "updated_at": "2026-08-18T19:02:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "clinical, medical, ner, healthcare, cardiology, swedish",
+    "custom_code",
+    "sv",
+    "base_model:KBLab/bert-base-swedish-cased",
+    "base_model:finetune:KBLab/bert-base-swedish-cased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124102659,
+  "parameters_human": "124.1M",
+  "storage_bytes": 248229374,
+  "storage_human": "248 MB",
+  "base_model": "KBLab/bert-base-swedish-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DT4H/cardio-ner-sv-bert-based-swedish-cased-multilabel · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-sv-bert-based-swedish-cased-multilabel",
+      "snippet": "Model Card for Cardio-Ner-En-Biomed-Roberta-Base-Multilabel Description Dutch cardiology NER model for disease, medication, procedure, and symptom recognition. This is the SLERP&#x27;ed (chained) version of the 10-folds used for the paper."
+    },
+    {
+      "title": "DT4H/cardio-ner-en-cardioberta-multiclass · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-en-cardioberta-multiclass",
+      "snippet": "Model Card for Cardio-Ner-En-Cardioberta-Multiclass Description English cardiology NER model for disease, medication, procedure, and symptom recognition Model Details Language: EN Task: token-classification Framework: pytorch How to Use"
+    },
+    {
+      "title": "nlp4bia-bsc/DT4H_Multilingual_NER - GitHub",
+      "url": "https://github.com/nlp4bia-bsc/DT4H_Multilingual_NER",
+      "snippet": "This repository contains code and documentation for multilingual Named Entity Recognition (NER) models developed within the DT4H (Data Tools for Heart) Europe Horizon project. The focus is multilingual clinical NER for disease, symptom, and procedure mention detection."
+    },
+    {
+      "title": "GitHub - Kungbib/swedish-bert-models",
+      "url": "https://github.com/Kungbib/swedish-bert-models",
+      "snippet": "The following five models are currently available: bert-base-swedish-cased (v1.1) - A BERT trained with the same hyperparameters as first published by Google. bert-base-swedish-cased-ner (experimental) - a BERT fine-tuned for NER using SUC 3.0. bert-base-swedish-cased-pos (experimental) - a BERT fine-tuned for POS using SUC 3.0."
+    },
+    {
+      "title": "CardioGen AI | Cardiovascular Variant Classification",
+      "url": "https://cardiogenai.com/",
+      "snippet": "CardioGen AI gives clinical genetics and cardiology teams one workspace to analyze cardiovascular variants, review model evidence, and prepare reports."
+    }
+  ]
+}

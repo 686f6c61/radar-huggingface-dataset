@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "hoySky92/HyperCLOVA-X-U-CURATE-v2.0",
+  "slug": "hoysky92-hyperclova-x-u-curate-v2-0",
+  "author": "hoySky92",
+  "url": "https://huggingface.co/hoySky92/HyperCLOVA-X-U-CURATE-v2.0",
+  "created_at": "2026-08-17T00:19:03.000Z",
+  "updated_at": "2026-08-17T00:20:07.000Z",
+  "license": "hyperclovax-seed",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "u-curate",
+    "k-ds",
+    "aihub",
+    "merged",
+    "conversational",
+    "ko",
+    "dataset:AIHUB_569",
+    "dataset:AIHUB_577",
+    "dataset:AIHUB_71533",
+    "dataset:AIHUB_71568",
+    "dataset:AIHUB_71630",
+    "dataset:AIHUB_71848",
+    "dataset:AIHUB_71857",
+    "dataset:AIHUB_71859",
+    "dataset:AIHUB_71922",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B",
+    "base_model:finetune:naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 304,
+  "trending_score": 0,
+  "parameters": 1585547264,
+  "parameters_human": "1.59B",
+  "storage_bytes": 3171119592,
+  "storage_human": "3.2 GB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HyperCLOVA-X-U-CURATE-Random-Epoch3-Merged-v0.2 - Hugging Face",
+      "url": "https://huggingface.co/hoySky92/HyperCLOVA-X-U-CURATE-Random-Epoch3-Merged-v0.2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hoySky92/HyperCLOVA-X-U-CURATE-Random-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/hoySky92/HyperCLOVA-X-U-CURATE-Random-v0.1",
+      "snippet": "Instructions to use hoySky92/HyperCLOVA-X-U-CURATE-Random-v0.1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "HyperCLOVA-X-U-CURATE-Random-Epoch3-Merged-v0.2",
+      "url": "https://friendli.ai/models/hoySky92/HyperCLOVA-X-U-CURATE-Random-Epoch3-Merged-v0.2",
+      "snippet": "Deploy HyperCLOVA-X-U-CURATE-Random-Epoch3-Merged-v0.2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "HyperCLOVA-X-U-CURATE-Random-v0.1 - friendli.ai",
+      "url": "https://friendli.ai/models/hoySky92/HyperCLOVA-X-U-CURATE-Random-v0.1",
+      "snippet": "Deploy HyperCLOVA-X-U-CURATE-Random-v0.1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "HyperCLOVA X | CLOVA",
+      "url": "https://clova.ai/en/hyperclova",
+      "snippet": "HyperCLOVA X is NAVER&#x27;s proprietary large language model with powerful capabilities for solving complex business challenges. Leverage its scalability and connectivity to the broader AI ecosystem to create new user experiences and business opportunities."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/urd-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed10",
+  "slug": "fpadovani-urd-arab-100mb-after-ppt-dp-100mb-ckpt500_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/urd-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed10",
+  "created_at": "2026-07-14T01:44:08.000Z",
+  "updated_at": "2026-08-14T20:27:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/urd-arab-100mb-ppt-Dp-100mb_seed10",
+    "base_model:finetune:fpadovani/urd-arab-100mb-ppt-Dp-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 706,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 8486593884,
+  "storage_human": "8.5 GB",
+  "base_model": "fpadovani/urd-arab-100mb-ppt-Dp-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "urd-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed3407 - Hugging Face",
+      "url": "https://huggingface.co/fpadovani/urd-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed3407",
+      "snippet": "Instructions to use fpadovani/urd-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "urd-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed10 - Hugging Face",
+      "url": "https://huggingface.co/fpadovani/urd-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed10",
+      "snippet": "Instructions to use fpadovani/urd-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "urd-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed3407",
+      "url": "https://friendli.ai/models/fpadovani/urd-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed3407",
+      "snippet": "Run fpadovani/urd-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed3407 with FriendliAI inference. This model is a fine-tuned version of…"
+    },
+    {
+      "title": "urd-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed455",
+      "url": "https://friendli.ai/models/fpadovani/urd-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed455",
+      "snippet": "Deploy urd-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Urd Arab 100mb Ppt Dp 100mb Seed455 by fpadovani",
+      "url": "https://llm-explorer.com/model/fpadovani%2Furd-arab-100mb-ppt-Dp-100mb_seed455,48qbJmxi4T85pVjqbbRP4S",
+      "snippet": "Urd Arab 100mb Ppt Dp 100mb Seed455 is an open-source 124.8m LLM by fpadovani. VRAM 0.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

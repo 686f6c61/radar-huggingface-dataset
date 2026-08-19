@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/onnx-model-zoo-ShuffleNetV2-1.0-ImageNet-opset12-fp32-onnx",
+  "slug": "ketiswp-onnx-model-zoo-shufflenetv2-1-0-imagenet-opset12-fp32-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/onnx-model-zoo-ShuffleNetV2-1.0-ImageNet-opset12-fp32-onnx",
+  "created_at": "2026-08-19T01:58:28.000Z",
+  "updated_at": "2026-08-19T02:11:32.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "fp32",
+    "image-classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9218556,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "onnxmodelzoo/shufflenet-v2-12 · Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo/shufflenet-v2-12",
+      "snippet": "ONNX ShuffleNet-v2 ==> Quantized ONNX ShuffleNet-v2 ONNX ShuffleNet-v2 ==> Quantized ONNX ShuffleNet-v2 Model ... Inference This script converts the ShuffleNetv2 model from PyTorch to ONNX and uses ONNX Runtime for inference. Input to model Input to the model are 3-channel RGB images of shape (3 x H x W), where H and W are expected to be at ..."
+    },
+    {
+      "title": "onnxmodelzoo (ONNX Model Zoo) - Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo",
+      "snippet": "Org profile for ONNX Model Zoo on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "models/validated/vision/classification/shufflenet at main · onnx/models ...",
+      "url": "https://github.com/onnx/models/tree/main/validated/vision/classification/shufflenet",
+      "snippet": "ShuffleNet-v2-int8 and ShuffleNet-v2-int8 are obtained by quantizing ShuffleNet-v2-fp32 model. We use Intel® Neural Compressor with onnxruntime backend to perform quantization."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

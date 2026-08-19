@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/supertonic-2-loom",
+  "slug": "loom-ai-org-supertonic-2-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/supertonic-2-loom",
+  "created_at": "2026-08-11T12:19:36.000Z",
+  "updated_at": "2026-08-16T12:32:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "loom-py-rt",
+  "languages": [
+    "en",
+    "ko",
+    "es",
+    "pt",
+    "fr"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "text-to-speech",
+    "en",
+    "ko",
+    "es",
+    "pt",
+    "fr",
+    "base_model:Supertone/supertonic-2",
+    "base_model:quantized:Supertone/supertonic-2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 218,
+  "trending_score": 0,
+  "parameters": 66626307,
+  "parameters_human": "66.6M",
+  "storage_bytes": 1066159840,
+  "storage_human": "1.1 GB",
+  "base_model": "Supertone/supertonic-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

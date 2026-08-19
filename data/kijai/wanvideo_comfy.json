@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Kijai/WanVideo_comfy",
+  "slug": "kijai-wanvideo_comfy",
+  "author": "Kijai",
+  "url": "https://huggingface.co/Kijai/WanVideo_comfy",
+  "created_at": "2025-02-25T17:54:17.000Z",
+  "updated_at": "2026-06-13T16:56:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:Wan-AI/Wan2.1-VACE-1.3B",
+    "base_model:finetune:Wan-AI/Wan2.1-VACE-1.3B",
+    "region:us"
+  ],
+  "likes": 2474,
+  "downloads_30d": 1702639,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1749197569515,
+  "storage_human": "1749.2 GB",
+  "base_model": "Wan-AI/Wan2.1-VACE-14B, Wan-AI/Wan2.1-VACE-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kijai/WanVideo_comfy · Hugging Face",
+      "url": "https://huggingface.co/Kijai/WanVideo_comfy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WanVideo_comfy: Image-to-Video model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/wanvideo-comfy-kijai",
+      "snippet": "Overview WanVideo_comfy is an image-to-video generation model maintained by Kijai as a combined and quantized version of WanVideo from Wan-AI. The model runs through ComfyUI using either the dedicated WanVideoWrapper or ComfyUI native nodes. This package provides multiple quantization options including standard fp32 and experimental fp8_scaled variants to balance quality against memory ..."
+    },
+    {
+      "title": "Kijai/WanVideo_comfy at main - Hugging Face",
+      "url": "https://huggingface.co/Kijai/WanVideo_comfy/tree/main/InfiniteTalk",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - kijai/ComfyUI-WanVideoWrapper",
+      "url": "https://github.com/kijai/ComfyUI-WanVideoWrapper",
+      "snippet": "Contribute to kijai/ComfyUI-WanVideoWrapper development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Damacol/kijai-wanvideo-comfy: Private, uncensored AI: Kijai ...",
+      "url": "https://github.com/Damacol/kijai-wanvideo-comfy",
+      "snippet": "Kijai/WanVideo_comfy - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    }
+  ]
+}

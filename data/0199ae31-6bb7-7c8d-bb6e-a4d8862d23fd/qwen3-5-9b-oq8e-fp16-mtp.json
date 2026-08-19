@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "0199ae31-6bb7-7c8d-bb6e-a4d8862d23fd/Qwen3.5-9B-oQ8e-fp16-mtp",
+  "slug": "0199ae31-6bb7-7c8d-bb6e-a4d8862d23fd-qwen3-5-9b-oq8e-fp16-mtp",
+  "author": "0199ae31-6bb7-7c8d-bb6e-a4d8862d23fd",
+  "url": "https://huggingface.co/0199ae31-6bb7-7c8d-bb6e-a4d8862d23fd/Qwen3.5-9B-oQ8e-fp16-mtp",
+  "created_at": "2026-08-16T01:59:46.000Z",
+  "updated_at": "2026-08-16T02:00:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": 3067588336,
+  "parameters_human": "3.07B",
+  "storage_bytes": 11641395130,
+  "storage_human": "11.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+  "slug": "hauhaucs-gemma4-12b-qat-uncensored-hauhaucs-balanced",
+  "author": "HauhauCS",
+  "url": "https://huggingface.co/HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+  "created_at": "2026-06-22T14:32:34.000Z",
+  "updated_at": "2026-06-25T00:22:34.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "vision",
+    "multimodal",
+    "agentic",
+    "coding",
+    "creative-writing",
+    "roleplay",
+    "rp",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 291,
+  "downloads_30d": 143846,
+  "trending_score": 12,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7810204352,
+  "storage_human": "7.8 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced: Image-to-Text model ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma4-12b-qat-uncensored-hauhaucs-balanced-hauhaucs",
+      "snippet": "Overview Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced is a 12-billion-parameter uncensored variant of Google DeepMind&#x27;s Gemma 4 12B model, maintained by HauhauCS. The model achieves zero refusals (0/465 tested) while preserving the full capabilities of the original, built from official quantization-aware-trained (QAT) weights. It operates with a 256K (262,144) token context window and includes ..."
+    },
+    {
+      "title": "README.md · HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced at main",
+      "url": "https://huggingface.co/HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced/blob/main/README.md",
+      "snippet": "Instructions to use HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gemma4 12B QAT Uncensored HauhauCS Balanced - Interfaze",
+      "url": "https://interfaze.ai/models/hauhaucsgemma4-12b-qat-uncensored-hauhaucs-balanced",
+      "snippet": "Gemma4 12B QAT Uncensored HauhauCS Balanced by HauhauCS, a image-text-to-text model with multimodal capabilities. Understand and compare multimodal features, benchmarks, and capabilities."
+    },
+    {
+      "title": "Gemma4 12B QAT Uncensored HauhauCS Balanced — ThinkLLM",
+      "url": "https://thinkllm.dev/models/gemma4-12b-qat-uncensored-hauhaucs-balanced",
+      "snippet": "A community fine-tune of Google&#x27;s Gemma 4 12B with quantization-aware training, built for local deployment via GGUF. The &#x27;uncensored&#x27; and &#x27;balanced&#x27; tuning means it applies fewer content restrictions than the base model while aiming to preserve general capability. It accepts both text and image inputs, making it multimodal at a locally-runnable scale."
+    }
+  ]
+}

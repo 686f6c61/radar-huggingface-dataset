@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Deep-Thought-Posttrain-GGUF",
+  "slug": "mradermacher-deep-thought-posttrain-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Deep-Thought-Posttrain-GGUF",
+  "created_at": "2026-08-17T06:27:11.000Z",
+  "updated_at": "2026-08-17T06:33:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reasoning",
+    "always-42",
+    "deep-thought",
+    "hitchhikers-guide",
+    "dont-panic",
+    "douglas-adams",
+    "cot",
+    "ollama",
+    "en",
+    "base_model:tsfrm/Deep-Thought-Posttrain",
+    "base_model:quantized:tsfrm/Deep-Thought-Posttrain",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 3729516672,
+  "storage_human": "3.7 GB",
+  "base_model": "tsfrm/Deep-Thought-Posttrain",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32",
+  "slug": "drowzeys-keys-deepseekv4-flash-ga-0731-dspark-abliterated-32-32",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32",
+  "created_at": "2026-08-01T19:13:57.000Z",
+  "updated_at": "2026-08-01T19:25:02.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4",
+    "deepseek-v4-flash",
+    "0731",
+    "dspark",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "fp8",
+    "nvfp4",
+    "vllm",
+    "dgx-spark",
+    "gb10",
+    "anemll",
+    "miaai",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 95,
+  "downloads_30d": 6903,
+  "trending_score": 18,
+  "parameters": 304180418494,
+  "parameters_human": "304.18B",
+  "storage_bytes": 166887307305,
+  "storage_human": "166.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32",
+      "url": "https://huggingface.co/drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for deepseek-ai/DeepSeek-V4-Flash-0731 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "Explore machine learning models. bullerwins/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32-GGUF"
+    },
+    {
+      "title": "day0: drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32 ...",
+      "url": "https://github.com/click6067-ship-it/fitllm-engine/issues/58",
+      "snippet": "Day-0 playbook (판단은 사람이): ① config 확보 ② 아키텍처 판별 — 엔진이 모델링 못 하는 구조면 추가하지 않는다 (틀린 숫자>없는 숫자) ③ 이중 검증 ④ 엔진 append + 손계산 테스트 ⑤ SEO/배포 ⑥ 벡터 1개. 트리거 기준: \"can I run X\"가 검색될 모델인가."
+    },
+    {
+      "title": "keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32",
+      "url": "https://friendli.ai/models/drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32",
+      "snippet": "Deploy keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-32-32 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-DSpark — Abliterated (Uncensored) - GitHub",
+      "url": "https://github.com/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored-1M-57toks",
+      "snippet": "WARNING: These models have had safety refusals removed. Useful for red-teaming / research / unfiltered local assistants — and you must supply your own guardrails. Both Hugging Face weight repos are gated (gated=auto) with the same access form:"
+    }
+  ]
+}

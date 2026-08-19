@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "raymin0223/reverse_distill_assets",
+  "slug": "raymin0223-reverse_distill_assets",
+  "author": "raymin0223",
+  "url": "https://huggingface.co/raymin0223/reverse_distill_assets",
+  "created_at": "2026-07-16T12:02:33.000Z",
+  "updated_at": "2026-08-17T06:00:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11198618039357,
+  "storage_human": "11198.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

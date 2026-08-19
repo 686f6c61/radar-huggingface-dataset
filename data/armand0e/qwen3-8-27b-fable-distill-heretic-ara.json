@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara",
+  "slug": "armand0e-qwen3-8-27b-fable-distill-heretic-ara",
+  "author": "armand0e",
+  "url": "https://huggingface.co/armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara",
+  "created_at": "2026-08-16T19:33:23.000Z",
+  "updated_at": "2026-08-16T19:36:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "conversational",
+    "base_model:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "base_model:finetune:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996119,
+  "storage_human": "55.6 GB",
+  "base_model": "TeichAI/Qwen3.8-27B-Fable-Distill",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "armand0e/Qwen3.8-27B-Fable-Distill · Hugging Face",
+      "url": "https://huggingface.co/armand0e/Qwen3.8-27B-Fable-Distill",
+      "snippet": "armand0e / Qwen3.8-27B-Fable-Distill like 0 Image-Text-to-Text Transformers Safetensors English qwen3_5 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8 27B Fable Distill by TeichAI - LLM Explorer",
+      "url": "https://llm-explorer.com/model/TeichAI%2FQwen3.8-27B-Fable-Distill,23OhmOa6RJTO53XCLMLoi4",
+      "snippet": "Qwen3.8 27B Fable Distill is an open-source 27b LLM by TeichAI. VRAM 55.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "A beginner&#x27;s guide to the Qwen3.8-27b model by Qwen on Huggingface",
+      "url": "https://dev.to/aimodels-fyi/a-beginners-guide-to-the-qwen38-27b-model-by-qwen-on-huggingface-11j9",
+      "snippet": "Qwen3.8-27B is a 27-billion-parameter dense language model with integrated vision capabilities, built by Qwen on the architectural foundation of Qwen3.5. This causal language model with vision encoder supports native image and video understanding, making it suitable for multimodal reasoning tasks that require understanding both textual and ..."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "TL;DR: Qwen3.8-27B is a dense 27B vision-language model under Apache-2.0 with 262,144-token context and MTP decoding. The Q4 build is about 17.8GB, so a 24GB Mac or GPU runs it comfortably, and AMD measured 24.5 tok/s on Ryzen AI Max+ 395. One command to start: ollama run qwen3.8:27b. What Makes Qwen3.8-27B Different?"
+    }
+  ]
+}

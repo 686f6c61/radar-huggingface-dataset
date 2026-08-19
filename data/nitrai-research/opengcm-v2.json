@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nitrai-research/OpenGCM-v2",
+  "slug": "nitrai-research-opengcm-v2",
+  "author": "nitrai-research",
+  "url": "https://huggingface.co/nitrai-research/OpenGCM-v2",
+  "created_at": "2026-06-27T17:29:58.000Z",
+  "updated_at": "2026-08-17T19:18:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "reasoning",
+    "agent-traces",
+    "distillation",
+    "dora",
+    "qwen",
+    "nitrai",
+    "opengcm",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 288,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19346624687,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models — NitrAI",
+      "url": "https://nitrai.dev/models.html",
+      "snippet": "OpenGCM-v2 (9B Parameters) OpenGCM-v2 is our flagship reasoning model, engineered to deliver structured code synthesis and formal logical proofs within a 9-billion parameter budget."
+    },
+    {
+      "title": "NitrAI/OpenGCM-v2 · Hugging Face",
+      "url": "https://huggingface.co/NitrAI/OpenGCM-v2",
+      "snippet": "Overview OpenGCM-v2 is a reasoning-focused 9B parameter model developed by NitrAI. The model is built on top of the next-generation Qwen3.5-9B base model, which features state-of-the-art architectures and a 262k context window."
+    },
+    {
+      "title": "Docs — NitrAI",
+      "url": "https://nitrai.dev/docs.html",
+      "snippet": "Join NitrAI Early Research Waitlist Get direct access to model weight drops, technical whitepapers, and pre-release 1.59M context evaluation builds. Research updates & model weight drops only."
+    },
+    {
+      "title": "nitrai-research (NitrAI) - Hugging Face",
+      "url": "https://huggingface.co/nitrai-research",
+      "snippet": "🚀 Featured Models 🧠 OpenGCM-v2 (9B) OpenGCM-v2 is our flagship reasoning-focused model. It is engineered to deliver enterprise-grade logical reasoning and coding proficiency within a lightweight 9-billion parameter budget."
+    },
+    {
+      "title": "NitrAI/OpenGCM-v2 - ollama.com",
+      "url": "https://ollama.com/NitrAI/OpenGCM-v2",
+      "snippet": "OpenGCM-v2 is a reasoning-focused 9B parameter model developed by NitrAI. The model is built on top of the next-generation Qwen3.5-9B base model, which features state-of-the-art architectures and a 262k context window."
+    }
+  ]
+}

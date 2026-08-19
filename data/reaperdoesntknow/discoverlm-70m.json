@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/DiscoverLM-70M",
+  "slug": "reaperdoesntknow-discoverlm-70m",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/DiscoverLM-70M",
+  "created_at": "2026-03-08T14:34:10.000Z",
+  "updated_at": "2026-08-18T13:15:17.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "moa_metric",
+    "trl",
+    "sft",
+    "metric-attention",
+    "mixture-of-attentions",
+    "triangle-inequality",
+    "blackhole-rope",
+    "discrepancy-calculus",
+    "discover",
+    "convergentintel",
+    "text-generation",
+    "en",
+    "dataset:nohurry/Opus-4.6-Reasoning-3000x-filtered",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:yahma/alpaca-cleaned",
+    "license:cc",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1897,
+  "trending_score": 0,
+  "parameters": 69130608,
+  "parameters_human": "69.1M",
+  "storage_bytes": 553322823,
+  "storage_human": "553 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/DiscoverLM-70M · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/DiscoverLM-70M",
+      "snippet": "DiscoverLM-70M A 69M parameter causal language model built on the Mixture-of-Attentions (MoA) architecture — distance-based metric attention that respects the triangle inequality by construction, not approximation. Every attention head operates in a proper metric space. The geometry is enforced, not hoped for. What Makes This Different Standard transformers compute attention as a dot product ..."
+    },
+    {
+      "title": "DiscoverLM - a reaperdoesntknow Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/reaperdoesntknow/discoverlm",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from reaperdoesntknow"
+    },
+    {
+      "title": "reaperdoesntknow / DiscoverLM-70M - Protect AI",
+      "url": "https://protectai.com/insights/models/reaperdoesntknow/DiscoverLM-70M/f2f6af725f4af9ab6b4f388d9e1892a044fec0b9/overview",
+      "snippet": "Discover potential threats in the reaperdoesntknow / DiscoverLM-70M model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "reaperdoesntknow / DiscoverLM-70M - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/reaperdoesntknow/DiscoverLM-70M/c1e07c8fe2e5acb30ba6db94d088c7fb582d501f/overview",
+      "snippet": "Discover potential threats in the reaperdoesntknow / DiscoverLM-70M model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "README.md · reaperdoesntknow/DiscoverLM-70M at main",
+      "url": "https://huggingface.co/reaperdoesntknow/DiscoverLM-70M/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

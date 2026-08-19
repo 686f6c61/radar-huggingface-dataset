@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "akpsahan/gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF",
+  "slug": "akpsahan-gemma-4-26b-a4b-it-ultra-uncensored-heretic-i1-gguf",
+  "author": "akpsahan",
+  "url": "https://huggingface.co/akpsahan/gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF",
+  "created_at": "2026-08-17T07:22:49.000Z",
+  "updated_at": "2026-08-17T07:22:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "en",
+    "base_model:llmfan46/gemma-4-26B-A4B-it-ultra-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-4-26B-A4B-it-ultra-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 300894234816,
+  "storage_human": "300.9 GB",
+  "base_model": "llmfan46/gemma-4-26B-A4B-it-ultra-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

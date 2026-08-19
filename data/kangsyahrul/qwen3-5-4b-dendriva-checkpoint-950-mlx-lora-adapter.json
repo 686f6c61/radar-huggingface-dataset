@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kangsyahrul/qwen3.5-4b-dendriva-checkpoint-950-mlx-lora-adapter",
+  "slug": "kangsyahrul-qwen3-5-4b-dendriva-checkpoint-950-mlx-lora-adapter",
+  "author": "kangsyahrul",
+  "url": "https://huggingface.co/kangsyahrul/qwen3.5-4b-dendriva-checkpoint-950-mlx-lora-adapter",
+  "created_at": "2026-08-16T16:48:09.000Z",
+  "updated_at": "2026-08-16T16:49:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx-lm",
+  "languages": [],
+  "tags": [
+    "mlx-lm",
+    "mlx",
+    "lora",
+    "adapter",
+    "unsloth",
+    "qwen3.5",
+    "text-generation",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169901009,
+  "storage_human": "170 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:04:22.893Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - algtrd24/qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/algtrd24/qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "banyaaiofficial/qwen3.5-4b-pkm-multi-lora-v2 · Hugging Face",
+      "url": "https://huggingface.co/banyaaiofficial/qwen3.5-4b-pkm-multi-lora-v2",
+      "snippet": "banyaaiofficial / qwen3.5-4b-pkm-multi-lora-v2 like 0 Follow Banya AI Inc. 2 MLX Korean English pkm agent tool-use korean apple-silicon lora multi-lora domain-separation six-grader License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "FutureMa/qwen35-4b-lora-sft · Hugging Face",
+      "url": "https://huggingface.co/FutureMa/qwen35-4b-lora-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    }
+  ]
+}

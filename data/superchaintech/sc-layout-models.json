@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "superchaintech/sc-layout-models",
+  "slug": "superchaintech-sc-layout-models",
+  "author": "superchaintech",
+  "url": "https://huggingface.co/superchaintech/sc-layout-models",
+  "created_at": "2026-08-17T12:45:03.000Z",
+  "updated_at": "2026-08-17T12:45:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "document-layout",
+    "yolo26",
+    "doclaynet",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92571186,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "superchaintech (Super Cat Technology Limited) - Hugging Face",
+      "url": "https://huggingface.co/superchaintech/models",
+      "snippet": "VLM, LAM AI & ML interests VLM, LAM Recent Activity DanielLeung updated a Space 4 days ago"
+    },
+    {
+      "title": "N8N AI Genie - a Hugging Face Space by superchaintech",
+      "url": "https://huggingface.co/spaces/superchaintech/n8n-ai-genie",
+      "snippet": "Create automated workflows by connecting various APIs and services. Simply input your desired tasks, and n8n will handle the integration for you, enabling seamless data flow and task execution."
+    },
+    {
+      "title": "The AI Model Directory - GitHub",
+      "url": "https://github.com/The-Best-Codes/ai-model-directory",
+      "snippet": "The AI Model Directory The AI model directory is the most comprehensive, automatically updated list of AI models and their metadata like pricing, context windows, supported features, and more. It currently lists over 10,000 models from over 70 providers."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

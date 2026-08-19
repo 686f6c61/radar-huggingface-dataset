@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Devsyril/whisper-small-kbp",
+  "slug": "devsyril-whisper-small-kbp",
+  "author": "Devsyril",
+  "url": "https://huggingface.co/Devsyril/whisper-small-kbp",
+  "created_at": "2026-08-14T12:35:16.000Z",
+  "updated_at": "2026-08-14T12:35:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "kbp"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "kabiye",
+    "kbp",
+    "low-resource",
+    "lora",
+    "dataset:wilderness_asr/KBPRCV_whisper_dataset",
+    "arxiv:2212.04356",
+    "base_model:openai/whisper-small",
+    "base_model:adapter:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 483525200,
+  "storage_human": "484 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

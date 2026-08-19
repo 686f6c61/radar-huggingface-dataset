@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "EshAhm/xlm-roberta-base-FullTune",
+  "slug": "eshahm-xlm-roberta-base-fulltune",
+  "author": "EshAhm",
+  "url": "https://huggingface.co/EshAhm/xlm-roberta-base-FullTune",
+  "created_at": "2026-08-18T13:06:00.000Z",
+  "updated_at": "2026-08-18T13:07:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277475357,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1109925476,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XLM-RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/xlm-roberta",
+      "snippet": "XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model."
+    },
+    {
+      "title": "XLM-RoBERTa - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.0.0/model_doc/xlm-roberta",
+      "snippet": "XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model."
+    },
+    {
+      "title": "XLM-RoBERTa — Docs | Model Database",
+      "url": "https://modeldatabase.com/docs/transformers/model_doc/xlm-roberta.html",
+      "snippet": "XLM-RoBERTa: reference documentation for working with open source AI models and libraries. Compare and deploy AI models on Model Database."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/xlm-roberta.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/xlm-roberta.md",
+      "snippet": "It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model. You can find all the original XLM-RoBERTa checkpoints under the Facebook AI community organization."
+    },
+    {
+      "title": "XLM-RoBERTa-base Multilingual Transformer",
+      "url": "https://www.emergentmind.com/topics/xlm-roberta-base",
+      "snippet": "XLM-RoBERTa-base is a transformer-based multilingual encoder supporting over 100 languages, achieving robust performance on various NLP tasks."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/llama-resized-v6.0.1-fp16_ckpt100",
+  "slug": "bcckfdn-llama-resized-v6-0-1-fp16_ckpt100",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/llama-resized-v6.0.1-fp16_ckpt100",
+  "created_at": "2026-08-15T17:06:52.000Z",
+  "updated_at": "2026-08-16T14:08:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 7594037248,
+  "parameters_human": "7.59B",
+  "storage_bytes": 34961530683,
+  "storage_human": "35.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

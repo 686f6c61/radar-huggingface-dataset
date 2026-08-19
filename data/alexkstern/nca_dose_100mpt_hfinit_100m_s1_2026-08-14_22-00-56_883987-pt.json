@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_100Mpt_hfinit_100M_s1_2026-08-14_22-00-56_883987-pt",
+  "slug": "alexkstern-nca_dose_100mpt_hfinit_100m_s1_2026-08-14_22-00-56_883987-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_100M_s1_2026-08-14_22-00-56_883987-pt",
+  "created_at": "2026-08-14T22:07:01.000Z",
+  "updated_at": "2026-08-14T22:07:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share20-2048",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162779,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern/nca_10pct_100M_d22_seed2_2026-07-22_09-20-52_310564-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_10pct_100M_d22_seed2_2026-07-22_09-20-52_310564-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nca_1pct_100M_d20_seed1_2026-07-21_19-51-10_301627-pt",
+      "url": "https://huggingface.co/alexkstern/nca_1pct_100M_d20_seed1_2026-07-21_19-51-10_301627-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Noncompartmental Analysis • ubiquity",
+      "url": "https://r.ubiquity.tools/articles/NCA.html",
+      "snippet": "Quick Template for Running NCA You should read the rest of the vignette below to understand the required data format and how the functions work. But if you are returning to this and you just want a template for running NCA you can use the following:"
+    },
+    {
+      "title": "Best AI Models in 2026: All 22 Frontier Models Compared",
+      "url": "https://platform.teamai.com/blog/large-language-models-llms/the-2026-ai-frontier-model-war/",
+      "snippet": "Compare 22 frontier AI models in 2026: GPT, Claude, Gemini, DeepSeek, Qwen, Kimi. Context windows, pricing, and use cases in one chart. Part 1 of 2."
+    },
+    {
+      "title": "Text output of NCA for one subject — txtNCA • pkr",
+      "url": "https://asancpt.github.io/pkr/reference/txtNCA.html",
+      "snippet": "back extrapolated concentration at time 0, for bolus intravascular administration only"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yurijmikhalevich/rclip-models",
+  "slug": "yurijmikhalevich-rclip-models",
+  "author": "yurijmikhalevich",
+  "url": "https://huggingface.co/yurijmikhalevich/rclip-models",
+  "created_at": "2026-04-05T09:55:28.000Z",
+  "updated_at": "2026-08-17T03:42:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "coreml",
+    "onnx",
+    "zero-shot-image-classification",
+    "dataset:mlfoundations/datacomp_pools",
+    "arxiv:2304.14108",
+    "base_model:laion/CLIP-ViT-B-32-256x256-DataComp-s34B-b86K",
+    "base_model:quantized:laion/CLIP-ViT-B-32-256x256-DataComp-s34B-b86K",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 959155833,
+  "storage_human": "959 MB",
+  "base_model": "laion/CLIP-ViT-B-32-256x256-DataComp-s34B-b86K",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yurijmikhalevich/rclip-models · Hugging Face",
+      "url": "https://huggingface.co/yurijmikhalevich/rclip-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yurijmikhalevich (Yurij Mikhalevich) - Hugging Face",
+      "url": "https://huggingface.co/yurijmikhalevich/models",
+      "snippet": "Recommendation systems, Computer Vision, Reinforcement Learning. Recent Activity. updated a model about 2 months ago. yurijmikhalevich/rclip-models. updated a model 2 ..."
+    },
+    {
+      "title": "yurijmikhalevich (Yurij Mikhalevich) · GitHub",
+      "url": "https://github.com/yurijmikhalevich",
+      "snippet": "Pretrain, finetune ANY AI model of ANY size on 1 or 10,000+ GPUs with zero code changes. Python 31.3k 3.8k"
+    },
+    {
+      "title": "GitHub - yurijmikhalevich/rclip: Semantic photo search for the command ...",
+      "url": "https://github.com/yurijmikhalevich/rclip",
+      "snippet": "rclip is a semantic photo search tool for the command line, powered by OpenCLIP&#x27;s top-performing ViT-B/32 AI model. Search a local photo library with natural-language queries, similar image search, or mixed text and image queries - entirely on your machine, with no cloud and no uploads. It builds on the CLIP architecture introduced by OpenAI."
+    },
+    {
+      "title": "Yurij Mikhalevich",
+      "url": "https://mikhalevi.ch/",
+      "snippet": "rclip update: mixing text and image queries for the ultimate photo search Hi! Today, I am introducing a fantastic new feature of rclip (an AI-powered command-line photo search tool I built): the ability to add and subtract different queries. It&#x27;s fun to play around with different concepts in this way."
+    }
+  ]
+}

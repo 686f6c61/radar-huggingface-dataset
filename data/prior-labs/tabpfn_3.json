@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Prior-Labs/tabpfn_3",
+  "slug": "prior-labs-tabpfn_3",
+  "author": "Prior-Labs",
+  "url": "https://huggingface.co/Prior-Labs/tabpfn_3",
+  "created_at": "2026-05-05T10:36:16.000Z",
+  "updated_at": "2026-07-04T04:15:30.000Z",
+  "license": "tabpfn-3-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chemistry",
+    "biology",
+    "finance",
+    "legal",
+    "climate",
+    "medical",
+    "tabular-classification",
+    "arxiv:2605.13986",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 200,
+  "downloads_30d": 12036,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2463784083,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TabPFN | Prior Labs",
+      "url": "https://priorlabs.ai/tabpfn",
+      "snippet": "TabPFN-3 is a meaningful step beyond prior tabular foundation models. In our benchmarks it has been competitive with strong baselines and, with the right configuration, can outperform even fine-tuned gradient-boosted decision trees."
+    },
+    {
+      "title": "TabPFN-3: Technical Report - Prior Labs",
+      "url": "https://priorlabs.ai/technical-reports/tabpfn-3",
+      "snippet": "It also directly improves existing integrations of TabPFN: a specialized TabPFN-3 checkpoint, TabPFN-TS-3, ranks 2nd on the time-series benchmark fev-bench, and SHAP-value computation through shapiq is up to 120× faster with KV caching. An enterprise-ready model. TabPFN-3 achieves this performance while being up to 20x faster than TabPFN-2.5."
+    },
+    {
+      "title": "Prior-Labs/tabpfn_3 · Hugging Face",
+      "url": "https://huggingface.co/Prior-Labs/tabpfn_3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Prior Labs",
+      "url": "https://docs.priorlabs.ai/models",
+      "snippet": "TabPFN-3 TabPFN-3 is the default model in the TabPFN OSS package. It has the same foundation as TabPFN-3-Plus — up to 1M rows, 160-class classification, sub-millisecond predictions — but runs locally without the API. Thinking mode and native text features are not available in the OSS package. The model is licensed under TABPFN-3 License v1.0. Code under Prior Labs License, open source ..."
+    },
+    {
+      "title": "GitHub - PriorLabs/TabPFN: ⚡ TabPFN: Foundation Model for Tabular Data ⚡",
+      "url": "https://github.com/PriorLabs/TabPFN",
+      "snippet": "TabPFN-3 is used by default. The code and TabPFN-2 model weights are licensed under Prior Labs License (Apache 2.0 with additional attribution requirement): here. To use the v2 model weights, instantiate your model as follows:"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/flux1-schnell",
+  "slug": "comfy-org-flux1-schnell",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/flux1-schnell",
+  "created_at": "2024-08-04T18:38:36.000Z",
+  "updated_at": "2026-08-17T06:10:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:black-forest-labs/FLUX.1-schnell",
+    "base_model:finetune:black-forest-labs/FLUX.1-schnell",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 274,
+  "downloads_30d": 215338,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41018835260,
+  "storage_human": "41.0 GB",
+  "base_model": "black-forest-labs/FLUX.1-schnell",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/flux1-schnell · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/flux1-schnell",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flux1 Schnell in ComfyUI - Comfy",
+      "url": "https://comfy.org/p/supported-models/flux1-schnell/",
+      "snippet": "Run Flux1 Schnell in ComfyUI with full parameter control. 1 community workflow templates, step-by-step tutorials, and free local inference."
+    },
+    {
+      "title": "flux1-schnell-fp8.safetensors · Comfy-Org/flux1-schnell at main",
+      "url": "https://huggingface.co/Comfy-Org/flux1-schnell/blob/main/flux1-schnell-fp8.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "flux1-schnell: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/flux1-schnell-comfy-org",
+      "snippet": "Overview flux1-schnell is a FP8 quantized text-to-image diffusion model maintained by Comfy-Org. The model operates using latent diffusion with a fixed timestep schedule, designed for fast inference with minimal memory consumption. The key distinguishing feature is the FP8 quantization of model weights, which trades marginal quality loss for substantial reductions in VRAM usage and inference ..."
+    },
+    {
+      "title": "ComfyUI Flux.1 Text-to-Image Workflow Example - ComfyUI",
+      "url": "https://docs.comfy.org/tutorials/flux/flux-1-text-to-image",
+      "snippet": "Generate text-to-image with the open-source Flux.1 model in ComfyUI, including full and FP8 checkpoint versions, with step-by-step workflow setup."
+    }
+  ]
+}

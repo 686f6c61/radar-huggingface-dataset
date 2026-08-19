@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FTK11558/Qwen3.8-27B-APS",
+  "slug": "ftk11558-qwen3-8-27b-aps",
+  "author": "FTK11558",
+  "url": "https://huggingface.co/FTK11558/Qwen3.8-27B-APS",
+  "created_at": "2026-08-15T13:01:23.000Z",
+  "updated_at": "2026-08-16T01:03:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "arxiv:2605.20286",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 27357373743,
+  "parameters_human": "27.36B",
+  "storage_bytes": 104364236289,
+  "storage_human": "104.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen3.8-27B - a huginnfork Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huginnfork/qwen38-27b",
+      "snippet": "FP8 & NVFP4 quants of Qwen/Qwen3.8-27B. Reserved ahead of the upstream release — weights land as soon as the base model ships."
+    },
+    {
+      "title": "Qwen3.8-27B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is an AI model released by Qwen on Friday, Aug 14 2026, 11 days after Qwen3.8-Max. It is an open-weight model — the trained weights are available to download and run."
+    },
+    {
+      "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your ...",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "snippet": "Muse Glimmer is a 30-billion-parameter open agentic model from Meta Superintelligence Labs, optimized for always-on local workflows on consumer hardware."
+    }
+  ]
+}

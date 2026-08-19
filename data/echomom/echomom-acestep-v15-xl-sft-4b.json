@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "echomom/echomom-acestep-v15-xl-sft-4b",
+  "slug": "echomom-echomom-acestep-v15-xl-sft-4b",
+  "author": "echomom",
+  "url": "https://huggingface.co/echomom/echomom-acestep-v15-xl-sft-4b",
+  "created_at": "2026-08-18T18:18:44.000Z",
+  "updated_at": "2026-08-19T03:05:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "diffusers",
+    "safetensors",
+    "audio",
+    "music",
+    "text2music",
+    "music-generation",
+    "ace-step",
+    "ace-step-1.5",
+    "text-to-audio",
+    "base_model:ACE-Step/acestep-5Hz-lm-4B",
+    "base_model:finetune:ACE-Step/acestep-5Hz-lm-4B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35732382348,
+  "storage_human": "35.7 GB",
+  "base_model": "ACE-Step/acestep-v15-xl-sft, ACE-Step/acestep-5Hz-lm-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "echomom/echomom-acestep-v15-xl-sft-4b · Hugging Face",
+      "url": "https://huggingface.co/echomom/echomom-acestep-v15-xl-sft-4b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ACE-Step/acestep-v15-xl-sft · Hugging Face",
+      "url": "https://huggingface.co/ACE-Step/acestep-v15-xl-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "acestep-v15-xl-base · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/ACE-Step/acestep-v15-xl-base",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "acestep-v15-xl-turbo: Text-to-Audio model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/acestep-v15-xl-turbo-ace-step",
+      "snippet": "Overview acestep-v15-xl-turbo is a 4-billion-parameter text-to-audio generation model created by ACE-Step that produces music from text prompts in just 8 inference steps. The model uses a diffusion transformer architecture with a DiT decoder (2560 hidden size, 32 layers, 32 attention heads) paired with an 8-layer encoder (2048 hidden size), totaling approximately 4B parameters with weights ..."
+    },
+    {
+      "title": "README.md · main · ai-models/ACE-Step/acestep-v15-xl-sft",
+      "url": "https://cnb.cool/ai-models/ACE-Step/acestep-v15-xl-sft/-/blob/main/README.md",
+      "snippet": "This is the XL (4B) SFT variant of ACE-Step 1.5 — a supervised fine-tuned model with ~4B parameters. SFT provides higher audio quality with CFG (Classifier-Free Guidance) support for fine-grained prompt adherence control."
+    }
+  ]
+}

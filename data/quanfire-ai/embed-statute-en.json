@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "quanfire-ai/embed-statute-en",
+  "slug": "quanfire-ai-embed-statute-en",
+  "author": "quanfire-ai",
+  "url": "https://huggingface.co/quanfire-ai/embed-statute-en",
+  "created_at": "2026-08-14T17:53:49.000Z",
+  "updated_at": "2026-08-14T17:55:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "quanfire-multilingual-embedding",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "quanfire-multilingual-embedding",
+    "sentence-embeddings",
+    "legal",
+    "indian-law",
+    "statutes",
+    "legislation",
+    "retrieval",
+    "lora",
+    "e5",
+    "sentence-similarity",
+    "en",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:adapter:intfloat/multilingual-e5-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2376657,
+  "storage_human": "2 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quanfire-ai/embed-legal-en · Hugging Face",
+      "url": "https://huggingface.co/quanfire-ai/embed-legal-en",
+      "snippet": "quanfire-ai / embed-legal-en like 0 Follow Quanfire AI 1 Sentence Similarity English quanfire-multilingual-embedding sentence-embeddings legal indian-law judgments retrieval lora e5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new QuanFire Legal Embedding — embed-legal-en (Supreme Court judgments) What it is for Scope — read this before you use it ..."
+    },
+    {
+      "title": "quanfire-ai (Quanfire AI) - Hugging Face",
+      "url": "https://huggingface.co/quanfire-ai/models",
+      "snippet": "Org profile for Quanfire AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "quanfire-multilingual-embedding/models at main · Quanfire-AI ... - GitHub",
+      "url": "https://github.com/Quanfire-AI/quanfire-multilingual-embedding/tree/main/models",
+      "snippet": "Indic-first embeddings you can actually ship. Documented sources. Weights: CC BY-SA 4.0. - quanfire-multilingual-embedding/models at main · Quanfire-AI/quanfire ..."
+    },
+    {
+      "title": "The judgment is public domain. The headnote is not. - quanfire.ai",
+      "url": "https://www.quanfire.ai/blog/legal-embedding-public-domain-corpus",
+      "snippet": "Take a Supreme Court judgment from a commercial law report, train an embedding model on the page as printed, and you have quietly baked someone else&#x27;s copyright into your weights. The judgment itself is public domain. The headnote printed above it is not. Most \"legal AI\" corpora never notice the difference, and it is the difference that decides whether you can ship the resulting model at all."
+    },
+    {
+      "title": "quanfire-multilingual-embedding/examples/walkthrough/README.md ... - GitHub",
+      "url": "https://github.com/Quanfire-AI/quanfire-multilingual-embedding/blob/main/examples/walkthrough/README.md",
+      "snippet": "Before training the model barely separates them — everything looks vaguely similar to everything. After 118 steps, cross-topic similarity has gone negative: the model has learned that these are actively different things."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "SupraLabs/Supra2-100M-Instruct",
+  "slug": "supralabs-supra2-100m-instruct",
+  "author": "SupraLabs",
+  "url": "https://huggingface.co/SupraLabs/Supra2-100M-Instruct",
+  "created_at": "2026-08-03T12:18:47.000Z",
+  "updated_at": "2026-08-05T10:34:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "small",
+    "supra",
+    "supra2",
+    "sota",
+    "instruct",
+    "chat",
+    "chatml",
+    "smoltalk",
+    "conversation",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceFW/dclm_100BT-shuffled",
+    "base_model:SupraLabs/Supra2-100M-Base",
+    "base_model:quantized:SupraLabs/Supra2-100M-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 43,
+  "downloads_30d": 3846,
+  "trending_score": 8,
+  "parameters": 100684032,
+  "parameters_human": "100.7M",
+  "storage_bytes": 605336641,
+  "storage_human": "605 MB",
+  "base_model": "SupraLabs/Supra2-100M",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SupraLabs/Supra2-100M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra2-100M-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SupraLabs/Supra2-100M-Instruct at main - Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra2-100M-Instruct/tree/main",
+      "snippet": "Instructions to use SupraLabs/Supra2-100M-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use SupraLabs/Supra2-100M-Instruct with Transformers:"
+    },
+    {
+      "title": "SupraLabs · Independent AI Lab",
+      "url": "https://supra-labs.com/",
+      "snippet": "SupraLabs is an independent research lab building open small language and multimodal models that run on consumer hardware."
+    },
+    {
+      "title": "Supra2 100M Instruct by SupraLabs - LLM Explorer",
+      "url": "https://llm-explorer.com/model/SupraLabs%2FSupra2-100M-Instruct,6ziqsV5PHjhp3dMMTGosma",
+      "snippet": "Supra2 100M Instruct is an open-source 100m LLM by SupraLabs. VRAM 0.2GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "SupraLabs/Supra2-100M-Instruct • hfviewer",
+      "url": "https://hfviewer.com/SupraLabs/Supra2-100M-Instruct",
+      "snippet": "SupraLabs/Supra2-100M-Instruct neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model SupraLabs/Supra2-100M-Instruct . The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AquilaX-AI/Review",
+  "slug": "aquilax-ai-review",
+  "author": "AquilaX-AI",
+  "url": "https://huggingface.co/AquilaX-AI/Review",
+  "created_at": "2025-02-03T10:27:08.000Z",
+  "updated_at": "2026-08-15T06:07:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 126,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 27817533944,
+  "storage_human": "27.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Code Review: Automated Security Review Model | AquilaX",
+      "url": "https://aquilax.ai/review",
+      "snippet": "Automate security code reviews with AquilaX AI Review Model — context-aware vulnerability analysis, prioritised findings, and actionable remediation guidance for every PR."
+    },
+    {
+      "title": "Review | AquilaX Docs - docs.aquilax.ai",
+      "url": "https://docs.aquilax.ai/ai-models/review",
+      "snippet": "The AquilaX Findings Review Model represents a significant advancement in static application security testing. By leveraging AI to automate the classification of findings, the model addresses the critical challenges of noise and false positives inherent in traditional rule-based systems."
+    },
+    {
+      "title": "AquilaX - AI-Powered Security Platform | SAST, SCA, DAST, ASPM, CSPM ...",
+      "url": "https://aquilax.ai/",
+      "snippet": "Every AquilaX organisation gets its own instance of the Securitron Review Model. This model is fine-tuned on your codebase&#x27;s specific patterns, language choices, framework conventions, and your team&#x27;s past triage decisions."
+    },
+    {
+      "title": "AquilaX-AI/Review · Hugging Face",
+      "url": "https://huggingface.co/AquilaX-AI/Review",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AquilaX-AI (AquilaX AI) - Hugging Face",
+      "url": "https://huggingface.co/AquilaX-AI/models",
+      "snippet": "Org profile for AquilaX AI on Hugging Face, the AI community building the future."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fernandotonon/QtMeshEditor-t2m",
+  "slug": "fernandotonon-qtmesheditor-t2m",
+  "author": "fernandotonon",
+  "url": "https://huggingface.co/fernandotonon/QtMeshEditor-t2m",
+  "created_at": "2026-06-30T20:43:22.000Z",
+  "updated_at": "2026-08-18T03:41:57.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-motion",
+    "skeletal-animation",
+    "qtmesheditor",
+    "experimental",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76184688,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fernandotonon/QtMeshEditor-t2m · Hugging Face",
+      "url": "https://huggingface.co/fernandotonon/QtMeshEditor-t2m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fernandotonon/QtMeshEditor-models · Hugging Face",
+      "url": "https://huggingface.co/fernandotonon/QtMeshEditor-models",
+      "snippet": "fernandotonon / QtMeshEditor-models like 0 ONNX pbr texture normal-map qtmesheditor License:cc0-1.0 Model card FilesFiles and versions xet Community Copy to bucket new QtMeshEditor — AI models PBR map synthesis (issue #404)"
+    },
+    {
+      "title": "GitHub - fernandotonon/QtMeshEditor: Free 3D asset tool for indie game ...",
+      "url": "https://github.com/fernandotonon/QtMeshEditor/tree/master",
+      "snippet": "Free 3D asset tool for indie game developers — merge animations, convert between 40+ 3D formats, edit materials with AI - fernandotonon/QtMeshEditor"
+    },
+    {
+      "title": "GitHub - fernandotonon/QtMeshEditor at winstall",
+      "url": "https://github.com/fernandotonon/QtMeshEditor?ref=winstall",
+      "snippet": "QtMeshEditor A free, open-source 3D asset tool for indie game developers — merge animations from multiple files, convert between 40+ formats, edit materials with AI, and more."
+    },
+    {
+      "title": "fernandotonon/QtMeshEditor | DeepWiki",
+      "url": "https://deepwiki.com/fernandotonon/QtMeshEditor",
+      "snippet": "QtMeshEditor is an automated 3D asset pipeline tool designed to scan, validate, convert, fix, and merge 3D assets across different environments $1. It provides a comprehensive suite of tools for game"
+    }
+  ]
+}

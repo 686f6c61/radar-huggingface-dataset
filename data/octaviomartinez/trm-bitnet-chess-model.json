@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "octaviomartinez/TRM-BITNET-CHESS-MODEL",
+  "slug": "octaviomartinez-trm-bitnet-chess-model",
+  "author": "octaviomartinez",
+  "url": "https://huggingface.co/octaviomartinez/TRM-BITNET-CHESS-MODEL",
+  "created_at": "2026-08-17T21:05:52.000Z",
+  "updated_at": "2026-08-17T21:05:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "octaviomartinez/trm-chess at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/octaviomartinez/trm-chess/tree/main",
+      "snippet": "main trm-chess 267 kB Ctrl+K Ctrl+K 1 contributor History:30 commits octaviomartinez Update app.py 5f6ecba verifiedabout 2 hours ago .gitattributes Safe 1.52 kBinitial commitabout 6 hours ago README.md Safe 5.28 kBUpload README.mdabout 4 hours ago app.py Safe 247 kBUpdate app.pyabout 2 hours ago model_chess.py Safe 12.9 kBRename model_chesstlm.py to model_chess.pyabout 4 hours ago requirements ..."
+    },
+    {
+      "title": "TRM Chess - a Hugging Face Space by octaviomartinez",
+      "url": "https://huggingface.co/spaces/octaviomartinez/trm-chess",
+      "snippet": "Jugá al ajedrez con TRM-Chess Un motor con arquitectura TRM (Tiny Recursive Model) + pesos ternarios (BitNet)."
+    },
+    {
+      "title": "TRM-Chess",
+      "url": "https://octaviomartinez-trm-chess.hf.space/?__theme=system",
+      "snippet": "Un motor con arquitectura TRM (Tiny Recursive Model) + pesos ternarios (BitNet)."
+    },
+    {
+      "title": "Models - BitNet | 1-bit LLM Models",
+      "url": "https://bitnet.live/models/",
+      "snippet": "Available Models BitNet supports a variety of 1-bit quantized models. These models are pre-quantized and ready for inference. For usage instructions, see our Usage Guide. For installation instructions, check our Installation Guide. Deep dives: BitNet-b1.58-2B-4T guide, download from Hugging Face, GGUF format, and the full guides hub. BitNet-b1.58 Models BitNet-b1.58 is a native BitNet ..."
+    },
+    {
+      "title": "GitHub - microsoft/BitNet: Official inference framework for 1-bit LLMs",
+      "url": "https://github.com/microsoft/BitNet",
+      "snippet": "Official inference framework for 1-bit LLMs. Contribute to microsoft/BitNet development by creating an account on GitHub."
+    }
+  ]
+}

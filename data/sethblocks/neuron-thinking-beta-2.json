@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Sethblocks/Neuron-Thinking-Beta-2",
+  "slug": "sethblocks-neuron-thinking-beta-2",
+  "author": "Sethblocks",
+  "url": "https://huggingface.co/Sethblocks/Neuron-Thinking-Beta-2",
+  "created_at": "2026-05-22T03:12:56.000Z",
+  "updated_at": "2026-08-17T18:26:49.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2340697936,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sethblocks/Neuron-Thinking-Beta · Hugging Face",
+      "url": "https://huggingface.co/Sethblocks/Neuron-Thinking-Beta",
+      "snippet": "Neuron Thinking Beta (1.2B) This is my experimental model finetuned from LFM2.5 1.2B Thinking. So far it seems to work fairly well from my own testing on some short reasoning tasks. It is fair with conversation but excels in thinking tasks far beyond the other Neuron models. An updated version is coming soon as well."
+    },
+    {
+      "title": "Sethblocks (Seth) - Hugging Face",
+      "url": "https://huggingface.co/Sethblocks/models",
+      "snippet": "Sort: Recently updated. Sethblocks/Neuron-Thinking-Beta. 1B • Updated Apr 9 • 5 • 2. Sethblocks/KokoroVoices. Updated Mar 31 • 4. Sethblocks/Neuron-.3-1b"
+    },
+    {
+      "title": "GitHub - sethblocks/Neuron: All published code used in development of ...",
+      "url": "https://github.com/sethblocks/Neuron",
+      "snippet": "All published code used in development of Neuron https://huggingface.co/collections/Sethblocks/neuron-beta - sethblocks/Neuron"
+    },
+    {
+      "title": "Activity · sethblocks/Neuron · GitHub",
+      "url": "https://github.com/sethblocks/Neuron/activity",
+      "snippet": "All published code used in development of Neuron https://huggingface.co/collections/Sethblocks/neuron-beta - Activity · sethblocks/Neuron"
+    },
+    {
+      "title": "Gemini thinking - Interactions API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/thinking",
+      "snippet": "The Gemini 3 and 2.5 series models use a \"thinking process\" that significantly improves their reasoning and multi-step planning abilities, making them highly effective for complex tasks such as coding, advanced mathematics, and data analysis. When you use a thinking model, Gemini reasons internally before responding. The Interactions API surfaces this reasoning via thought steps, dedicated ..."
+    }
+  ]
+}

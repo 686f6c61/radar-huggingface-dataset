@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "itme-brain/Qwen-chat_template.jinja",
+  "slug": "itme-brain-qwen-chat_template-jinja",
+  "author": "itme-brain",
+  "url": "https://huggingface.co/itme-brain/Qwen-chat_template.jinja",
+  "created_at": "2026-08-16T19:20:29.000Z",
+  "updated_at": "2026-08-16T19:21:00.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chat_template.jinja · PrimeIntellect/Qwen3-8B at main",
+      "url": "https://huggingface.co/PrimeIntellect/Qwen3-8B/blob/main/chat_template.jinja",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chat_template.jinja · Qwen/Qwen3.5-9B at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/chat_template.jinja",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chat_template.jinja · unsloth/Qwen3-Coder-30B-A3B-Instruct at main",
+      "url": "https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct/blob/main/chat_template.jinja",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chat_template.jinja · unsloth/Qwen3-30B-A3B-128K at main",
+      "url": "https://huggingface.co/unsloth/Qwen3-30B-A3B-128K/blob/main/chat_template.jinja",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chat_template.jinja · Qwen/Qwen3.8-2.4T-A95B-FP8 at ...",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B-FP8/blob/e25917e6bef8fb9f51ad8ad2e9944b6ab32d2403/chat_template.jinja",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

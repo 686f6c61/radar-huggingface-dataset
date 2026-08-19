@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Kiyan122/whisper-small-fa-ManaTTS",
+  "slug": "kiyan122-whisper-small-fa-manatts",
+  "author": "Kiyan122",
+  "url": "https://huggingface.co/Kiyan122/whisper-small-fa-ManaTTS",
+  "created_at": "2026-08-17T13:24:49.000Z",
+  "updated_at": "2026-08-17T15:56:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967014472,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "benchmarkcentral/whisper-small-fa · Hugging Face",
+      "url": "https://huggingface.co/benchmarkcentral/whisper-small-fa",
+      "snippet": "Whisper Small fa - Mahdi Aspanani This model is a fine-tuned version of openai/whisper-small on the Common Voice 11.0 dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "GitHub - mjavadf/whisper-small-fa",
+      "url": "https://github.com/mjavadf/whisper-small-fa",
+      "snippet": "Contribute to mjavadf/whisper-small-fa development by creating an account on GitHub."
+    },
+    {
+      "title": "whisper-small-fa huggingface.co api & hezarai whisper-small-fa github ...",
+      "url": "https://www.toolify.ai/ai-model/hezarai-whisper-small-fa",
+      "snippet": "whisper-small-fa is an open source model from GitHub that offers a free installation service, and any user can find whisper-small-fa on GitHub to install. At the same time, huggingface.co provides the effect of whisper-small-fa install, users can directly use whisper-small-fa installed effect in huggingface.co for debugging and trial."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "pyros-vault/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ6e-mtp",
+  "slug": "pyros-vault-qwen3-8-27b-cold-fusion-gain-v1-1-oq6e-mtp",
+  "author": "pyros-vault",
+  "url": "https://huggingface.co/pyros-vault/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ6e-mtp",
+  "created_at": "2026-08-19T00:53:05.000Z",
+  "updated_at": "2026-08-19T01:32:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6612941552,
+  "parameters_human": "6.61B",
+  "storage_bytes": 23736277785,
+  "storage_human": "23.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 · Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+      "snippet": "IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels."
+    },
+    {
+      "title": "GitHub - qwen3-8-27b/qwen3-8-27b: Run Qwen3.8-27B locally in one click ...",
+      "url": "https://github.com/qwen3-8-27b/qwen3-8-27b",
+      "snippet": "Here&#x27;s the part that sounds too good: a fully local, open-weight model that matches Claude Opus 4.6 Max on coding — and beats it on several benchmarks — small enough to run on the graphics card you already game on. Qwen3.8-27B is Alibaba&#x27;s new local coding model, and this is the one-click installer that gets it running on your machine without a single terminal command, quantization ..."
+    },
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-davidau",
+      "snippet": "Overview Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 is a 27-billion parameter instruction-tuned language model built by DavidAU that applies the COLD FUSION training methodology—combining GAIN (an internally developed technique) with Unsloth&#x27;s training infrastructure—to reduce thinking tokens to 1/10 to 1/2 of standard Qwen models while maintaining 99% of full-precision performance at both 8-bit ..."
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 · gguf please",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1/discussions/3",
+      "snippet": "gguf please Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop. Qwen3.8-2.4T-A95B is a 2.4T parameter (95B active) model with ..."
+    }
+  ]
+}

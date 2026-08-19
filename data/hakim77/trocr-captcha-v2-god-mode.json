@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "hakim77/trocr-captcha-v2-god-mode",
+  "slug": "hakim77-trocr-captcha-v2-god-mode",
+  "author": "hakim77",
+  "url": "https://huggingface.co/hakim77/trocr-captcha-v2-god-mode",
+  "created_at": "2026-08-11T01:28:51.000Z",
+  "updated_at": "2026-08-16T23:15:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1166,
+  "trending_score": 0,
+  "parameters": 334945792,
+  "parameters_human": "334.9M",
+  "storage_bytes": 846961090897,
+  "storage_human": "847.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

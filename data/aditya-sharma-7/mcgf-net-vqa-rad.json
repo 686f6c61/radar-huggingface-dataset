@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "Aditya-sharma-7/mcgf-net-vqa-rad",
+  "slug": "aditya-sharma-7-mcgf-net-vqa-rad",
+  "author": "Aditya-sharma-7",
+  "url": "https://huggingface.co/Aditya-sharma-7/mcgf-net-vqa-rad",
+  "created_at": "2026-08-14T23:34:14.000Z",
+  "updated_at": "2026-08-16T12:20:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 276462338,
+  "parameters_human": "276.5M",
+  "storage_bytes": 3868463536,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

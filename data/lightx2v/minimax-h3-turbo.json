@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lightx2v/Minimax-h3-Turbo",
+  "slug": "lightx2v-minimax-h3-turbo",
+  "author": "lightx2v",
+  "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
+  "created_at": "2026-08-07T12:59:07.000Z",
+  "updated_at": "2026-08-13T15:52:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "t2v",
+    "i2v",
+    "r2v",
+    "image-to-video",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 611,
+  "downloads_30d": 300279,
+  "trending_score": 219,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11403290224,
+  "storage_human": "11.4 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lightx2v/Minimax-h3-Turbo · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lightx2v/Minimax-h3-Turbo at main - Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Minimax H3 T2V / I2V / REF2V Advanced Filmmaking Workflow | All ...",
+      "url": "https://civitai.com/models/2834514/minimax-h3-t2v-i2v-ref2v-advanced-filmmaking-workflow-or-all-speedups-qol-features",
+      "snippet": "A no-nonsense high level T2V / I2V / FFLF / REF2V workflow for Minimax H3 with lots of options & togglable quality of life features. Toggle between the [T2V / I2V / FFLF] model & the [REF2VA] model easily"
+    },
+    {
+      "title": "ModelTC/Minimax-H3-Turbo: Distill Minimax-H3 into 4 steps - GitHub",
+      "url": "https://github.com/ModelTC/Minimax-H3-Turbo",
+      "snippet": "Distill Minimax-H3 into 4 steps. Contribute to ModelTC/Minimax-H3-Turbo development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 - T2V / I2V Workflows - Turbo LoRA, Auto Prompting and Video ...",
+      "url": "https://civitai.red/models/2850104/minimax-h3-t2v-i2v-workflows-turbo-lora-auto-prompting-and-video-preview?modelVersionId=3218381",
+      "snippet": "Four workflows: T2V and I2V, each in a Custom Prompt version (you write the prompt) and an Auto Prompt version (you type one line and OpenRouter writes the full H3 prompt for you)."
+    }
+  ]
+}

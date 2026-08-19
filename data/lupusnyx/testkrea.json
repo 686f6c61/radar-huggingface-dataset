@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "LupusNyx/TestKrea",
+  "slug": "lupusnyx-testkrea",
+  "author": "LupusNyx",
+  "url": "https://huggingface.co/LupusNyx/TestKrea",
+  "created_at": "2026-07-31T08:40:50.000Z",
+  "updated_at": "2026-08-18T07:38:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 74,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 159185799178,
+  "storage_human": "159.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LupusNyx/TestLORA · Hugging Face",
+      "url": "https://huggingface.co/LupusNyx/TestLORA",
+      "snippet": "LupusNyx / TestLORA like 0 Model card FilesFiles and versions Community No model card Downloads last month -"
+    },
+    {
+      "title": "LupusNyx/TestLORA at main - Hugging Face",
+      "url": "https://huggingface.co/LupusNyx/TestLORA/tree/main",
+      "snippet": "LupusNyx / TestLORA like 1 Model card FilesFiles and versions Community main TestLORA Ctrl+K Ctrl+K 1 contributor History:21 commits LupusNyx Upload Split Lighting style v2.safetensors d881d7e verifiedabout 1 month ago .gitattributes Safe 1.52 kBinitial commit8 months ago Buzz_lover_style_1.01.safetensors Safe 228 MB LFS Upload 3 files5 months ..."
+    },
+    {
+      "title": "Model Library | Krea",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "Krea 2 - an image generation model from Krea AI. API Docs • Hugging Face (RAW) • Hugging Face (TURBO) • Technical Blog This is the official repository for the open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains inference code and instructions to run the model."
+    },
+    {
+      "title": "Krea: AI Creative Suite for Images, Video & 3D",
+      "url": "https://www.krea.ai/",
+      "snippet": "Generate, edit, and enhance images, videos, and 3D assets with Krea&#x27;s creative AI suite. Start for free with real-time tools, powerful models, and collaborative workflows."
+    }
+  ]
+}

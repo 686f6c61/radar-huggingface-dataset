@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cyberknine/bau-qwen",
+  "slug": "cyberknine-bau-qwen",
+  "author": "cyberknine",
+  "url": "https://huggingface.co/cyberknine/bau-qwen",
+  "created_at": "2026-08-17T00:15:17.000Z",
+  "updated_at": "2026-08-17T07:00:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 201,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1463401504,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Every Qwen AI Model Explained and Compared (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-qwen-ai-model-explained-compared/",
+      "snippet": "Qwen is Alibaba&#x27;s model family: free Apache 2.0 open weights you self-host, or a cheap paid API with Max, Plus, and Flash. Compare models, prices, and which to..."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Alibaba launched a beta of Qwen in April 2023 under the name Tongyi Qianwen, then opened it for public use in September 2023 after regulatory clearance. [1][2] The model&#x27;s architecture was based on the Llama architecture developed by Meta AI. [3][4] In December 2023, it released its 72B and 1.8B models for download, while Qwen 7B weights were released in August. [5][6]"
+    },
+    {
+      "title": "Best Qwen Models Ranked: Which to Run Locally (Mid-2026)",
+      "url": "https://insiderllm.com/guides/qwen-models-guide/",
+      "snippet": "📚 More on this topic: Qwen 3.5 Local Guide · Qwen 3.5 9B Setup Guide · Llama 3 Guide · DeepSeek Models Guide · Best Models for Coding · VRAM Requirements While everyone was talking about Llama and DeepSeek, Alibaba quietly built the best open-source model family in the world. Qwen 3 beats Llama 3 at every comparable size. Qwen 2.5 Coder 32B matches GPT-4o on coding benchmarks. Qwen-VL ..."
+    },
+    {
+      "title": "AI Models by Qwen | Try NVIDIA NIM APIs",
+      "url": "https://build.nvidia.com/qwen",
+      "snippet": "Qwen-Image-Edit is an image editing model with multilingual text editing and strong subject consistency."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    }
+  ]
+}

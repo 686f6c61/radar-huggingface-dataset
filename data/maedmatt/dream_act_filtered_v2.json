@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "maedmatt/DREAM_ACT_filtered_v2",
+  "slug": "maedmatt-dream_act_filtered_v2",
+  "author": "maedmatt",
+  "url": "https://huggingface.co/maedmatt/DREAM_ACT_filtered_v2",
+  "created_at": "2026-08-15T19:19:49.000Z",
+  "updated_at": "2026-08-15T19:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:maedmatt/DREAM-pyramid-circles",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

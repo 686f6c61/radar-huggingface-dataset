@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SleepMastger/dish-utensil-flashwam-v2",
+  "slug": "sleepmastger-dish-utensil-flashwam-v2",
+  "author": "SleepMastger",
+  "url": "https://huggingface.co/SleepMastger/dish-utensil-flashwam-v2",
+  "created_at": "2026-08-14T15:30:01.000Z",
+  "updated_at": "2026-08-14T16:08:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "video-generation",
+    "vision-language-action",
+    "dish-utensil-manipulation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60785266227,
+  "storage_human": "60.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SleepMastger/fruit-picking-flashwam · Hugging Face",
+      "url": "https://huggingface.co/SleepMastger/fruit-picking-flashwam",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sleep Product V2 - Slp-v2 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/816243880447080510",
+      "snippet": "Download Sleep Product V2 - free LORA FLUX.1 AI model on TENSOR. FLUX.1, FLUX, HIGH QUALITY. By PromptHeroes"
+    },
+    {
+      "title": "SleepMastger/fruit-picking-flashwam at main - Hugging Face",
+      "url": "https://huggingface.co/SleepMastger/fruit-picking-flashwam/tree/main",
+      "snippet": "SleepMastger / fruit-picking-flashwam like 0 Robotics PyTorch video-generation vision-language-action fruit-picking Model card FilesFiles and versions xet Community Copy to bucket new main fruit-picking-flashwam 40.5 GB Ctrl+K Ctrl+K 1 contributor History:9 commits SleepMastger remove checkpoint outside checkpoints/weights layout 0a4e08a verifiedabout 1 hour ago checkpointsremove checkpoint ..."
+    },
+    {
+      "title": "Amazon.com: Dishwasher Sounds by Sleep Jar® : Alexa Skills",
+      "url": "https://www.amazon.com/Invoked-Apps-LLC-Ambient-Sounds/dp/B075L35YDY",
+      "snippet": "Dishwasher Sounds by Sleep Jar® plays sleep sounds and ambient sounds to help you sleep, relax, meditate, relieve stress, or block out unwanted noise. Dishwasher Sounds is part of the Sleep Jar® brand of Skills trusted by millions of Alexa customers."
+    },
+    {
+      "title": "SleepMaster:AI Sleep Tracker",
+      "url": "https://www.sleepmaster.cc/",
+      "snippet": "Apple Watch powered, pro-grade sleep tracking SleepMaster works seamlessly with Apple Watch to deliver precise, AI-powered sleep tracking.It monitors heart rate, movement, and sleep stages, and gives you a personalized sleep score each night."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jakubkrapiec/alice-1",
+  "slug": "jakubkrapiec-alice-1",
+  "author": "jakubkrapiec",
+  "url": "https://huggingface.co/jakubkrapiec/alice-1",
+  "created_at": "2026-08-12T21:21:34.000Z",
+  "updated_at": "2026-08-18T21:55:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243076965,
+  "storage_human": "243 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jakubkrapiec/alice-1 · Hugging Face",
+      "url": "https://huggingface.co/jakubkrapiec/alice-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jakubkrapiec (Jakub Krąpiec) · GitHub",
+      "url": "https://github.com/jakubkrapiec",
+      "snippet": "Nice to meet you! jakubkrapiec has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Alice v1: Distillation-Enhanced Video Generation Surpassing Closed ...",
+      "url": "https://arxiv.org/html/2605.08115",
+      "snippet": "Abstract We present Alice v1, a 14-billion parameter open-source video generation model that achieves state-of-the-art quality through consistency distillation with score regularization (rCM). Contrary to conventional distillation—which trades quality for speed—we demonstrate that rCM-based distillation can exceed teacher model quality."
+    },
+    {
+      "title": "ALICE - Artificial Latent Image Composition Engine - GitHub",
+      "url": "https://github.com/Mr1Stark/alice",
+      "snippet": "Most AI image generation is cloud-dependent, privacy-invasive, and subscription-heavy. ALICE changes that. Built as part of the Synthetic Autonomic Mind ecosystem, ALICE gives you complete control over image generation: Your GPU, Your Data - Everything runs locally. Images never leave your machine unless you share them. Built for Integration - Designed as the image engine for SAM, but works ..."
+    },
+    {
+      "title": "The ALICE Project - ALICE - GitHub Pages",
+      "url": "https://alicellm.github.io/alice.html",
+      "snippet": "We can generate multimodal data from code based on human instructions, which can be used to train a Sora-like model with modularized refinement. ALICE can develop highly interactive open-ended games, generate immersive 3D scenes in VR, and act as world simulators."
+    }
+  ]
+}

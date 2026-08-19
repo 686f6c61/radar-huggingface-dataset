@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/RF-DETR",
+  "slug": "axera-tech-rf-detr",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/RF-DETR",
+  "created_at": "2026-07-13T03:19:46.000Z",
+  "updated_at": "2026-07-15T11:46:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ax650",
+    "pulsar2",
+    "rf-detr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 643331969,
+  "storage_human": "643 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXERA-TECH/RF-DETR · Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/RF-DETR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AXERA-TECH/RF-DETR.axera: RF-DETR DEMO on AXERA NPU - GitHub",
+      "url": "https://github.com/AXERA-TECH/RF-DETR.axera/",
+      "snippet": "RF-DETR DEMO on AXERA NPU. Contribute to AXERA-TECH/RF-DETR.axera development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and ...",
+      "url": "https://github.com/roboflow/rf-detr",
+      "snippet": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning. [ICLR 2026] - roboflow/rf-detr"
+    },
+    {
+      "title": "AXERA-TECH (AXERA) - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/models",
+      "snippet": "Edge AI Compute, CNN, Visual Transformer, LLM, VLM"
+    },
+    {
+      "title": "RF-DETR: Neural Architecture Search for Real-Time Detection Transformers",
+      "url": "https://arxiv.org/html/2511.09554v1",
+      "snippet": "Rather than simply fine-tuning a heavy-weight vision-language model (VLM) for new domains, we introduce RF-DETR, a light-weight specialist detection transformer that discovers accuracy-latency Pareto curves for any target dataset with weight-sharing neural architecture search (NAS)."
+    }
+  ]
+}

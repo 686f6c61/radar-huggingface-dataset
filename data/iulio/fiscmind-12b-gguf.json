@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "iulio/FiscMind-12B-GGUF",
+  "slug": "iulio-fiscmind-12b-gguf",
+  "author": "iulio",
+  "url": "https://huggingface.co/iulio/FiscMind-12B-GGUF",
+  "created_at": "2026-08-15T18:35:57.000Z",
+  "updated_at": "2026-08-15T18:37:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mistral",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 90,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 7477207488,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

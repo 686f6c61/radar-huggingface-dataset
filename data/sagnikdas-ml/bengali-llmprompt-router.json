@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sagnikdas-ml/bengali-llmprompt-router",
+  "slug": "sagnikdas-ml-bengali-llmprompt-router",
+  "author": "sagnikdas-ml",
+  "url": "https://huggingface.co/sagnikdas-ml/bengali-llmprompt-router",
+  "created_at": "2026-08-13T05:26:10.000Z",
+  "updated_at": "2026-08-15T11:03:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "bengali",
+    "routing",
+    "machine-translation",
+    "bn",
+    "en",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 2258606694,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

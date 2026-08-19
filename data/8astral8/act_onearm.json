@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "8Astral8/ACT_OneArm",
+  "slug": "8astral8-act_onearm",
+  "author": "8Astral8",
+  "url": "https://huggingface.co/8Astral8/ACT_OneArm",
+  "created_at": "2026-08-17T10:28:25.000Z",
+  "updated_at": "2026-08-17T10:30:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Mistral Robostral Navigate: Single-Camera Robot Autonomy in 2026",
+      "url": "https://quasa.io/media/mistral-robostral-navigate-single-camera-8b-model-transforms-robot-autonomy",
+      "snippet": "Explore how Mistral&#x27;s 8B Robostral Navigate model achieves 76.6% success on R2R-CE using only one RGB camera, outperforming multi-sensor systems and advancing affordable physical AI."
+    },
+    {
+      "title": "Astral | AI-Powered Institutional-Grade Trading",
+      "url": "https://heyastral.ai/",
+      "snippet": "Astral is an AI trading workstation for building, backtesting, monitoring, and automating quantitative strategies with broker connectivity."
+    },
+    {
+      "title": "ACT - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/act",
+      "snippet": "ACT Action Chunking with Transformers. ACT (Action Chunking with Transformers) is a robotic policy model that is trained to predict the next chunk of actions that the robotic hand is expected to perform."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "voves/Qwen3.8-27B-NVFP4",
+  "slug": "voves-qwen3-8-27b-nvfp4",
+  "author": "voves",
+  "url": "https://huggingface.co/voves/Qwen3.8-27B-NVFP4",
+  "created_at": "2026-08-17T13:54:30.000Z",
+  "updated_at": "2026-08-17T14:01:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 19729873133,
+  "storage_human": "19.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - unsloth.ai",
+      "url": "https://unsloth.ai/models/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is a hybrid thinking open model for agentic coding and chat. Run Qwen3.8-27B locally via Unsloth Dynamic GGUFs and Unsloth Desktop."
+    },
+    {
+      "title": "GitHub - Deep-AI-Evo/qwen3.8-27b-nvfp4-dgx-spark-tutorial",
+      "url": "https://github.com/Deep-AI-Evo/qwen3.8-27b-nvfp4-dgx-spark-tutorial",
+      "snippet": "Qwen3.8-27B-NVFP4 × NVIDIA DGX Spark 在 GB10（Grace-Blackwell）上从零部署 27B NVFP4 视觉-语言大模型 纯 pip · 无需 root · 256K 上下文 · MTP 推测解码 · 完整实测数据"
+    },
+    {
+      "title": "qwen3.8:27b-nvfp4 - ollama.com",
+      "url": "https://ollama.com/library/qwen3.8:27b-nvfp4",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}

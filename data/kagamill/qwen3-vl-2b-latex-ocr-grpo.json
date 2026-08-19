@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kagamill/qwen3-vl-2b-latex-ocr-grpo",
+  "slug": "kagamill-qwen3-vl-2b-latex-ocr-grpo",
+  "author": "kagamill",
+  "url": "https://huggingface.co/kagamill/qwen3-vl-2b-latex-ocr-grpo",
+  "created_at": "2026-08-18T12:03:57.000Z",
+  "updated_at": "2026-08-18T12:08:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4266562962,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3-2b-vl-latex-ocr-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-2b-vl-latex-ocr-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kassadin88/Qwen3-VL-2B-LaTeX-OCR · Hugging Face",
+      "url": "https://huggingface.co/Kassadin88/Qwen3-VL-2B-LaTeX-OCR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Qwen3-VL/cookbooks/ocr.ipynb at main · QwenLM/Qwen3-VL",
+      "url": "https://github.com/QwenLM/Qwen3-VL/blob/main/cookbooks/ocr.ipynb",
+      "snippet": "Qwen3-VL is the multimodal large language model series developed by Qwen team, Alibaba Cloud. - Qwen3-VL/cookbooks/ocr.ipynb at main · QwenLM/Qwen3-VL"
+    },
+    {
+      "title": "OCR and Document Processing | QwenLM/Qwen3-VL | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3-VL/5.1-ocr-and-document-processing",
+      "snippet": "OCR and Document Processing Relevant source files This section covers optical character recognition (OCR) and document parsing capabilities in Qwen3-VL, including text extraction, spatial understanding, and structured document conversion."
+    }
+  ]
+}

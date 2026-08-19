@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bogairff55/ViAble-1.5-9B",
+  "slug": "bogairff55-viable-1-5-9b",
+  "author": "bogairff55",
+  "url": "https://huggingface.co/bogairff55/ViAble-1.5-9B",
+  "created_at": "2026-08-19T02:48:05.000Z",
+  "updated_at": "2026-08-19T02:49:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927645131,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bogairff55/ViAble · Hugging Face",
+      "url": "https://huggingface.co/bogairff55/ViAble",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bogairff55/B · Hugging Face",
+      "url": "https://huggingface.co/bogairff55/B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 236 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 67 providers compared."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bschooled/caeleste-speech-qwen2.5-0.5b-instruct-nf4",
+  "slug": "bschooled-caeleste-speech-qwen2-5-0-5b-instruct-nf4",
+  "author": "bschooled",
+  "url": "https://huggingface.co/bschooled/caeleste-speech-qwen2.5-0.5b-instruct-nf4",
+  "created_at": "2026-08-18T22:40:18.000Z",
+  "updated_at": "2026-08-18T22:40:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 457346836,
+  "storage_human": "457 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int4 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v2",
+      "snippet": "The Qwen2.5-1.5B-Instruct and Qwen2.5-0.5B-Instruct models have also seen substantial performance improvements over their previous versions, as detailed in Table 10."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen25-05b-instruct-qwen",
+      "snippet": "Overview Qwen2.5-0.5B-Instruct is an instruction-tuned causal language model built by Qwen containing 0.49 billion parameters (0.36 billion non-embedding). This model uses a transformer architecture with RoPE positional embeddings, SwiGLU activation, RMSNorm, attention QKV bias, and tied word embeddings. It supports a full context length of 32,768 tokens and can generate up to 8,192 tokens ..."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mattebar/Gemma4-12B-igorls-finetuned",
+  "slug": "mattebar-gemma4-12b-igorls-finetuned",
+  "author": "mattebar",
+  "url": "https://huggingface.co/mattebar/Gemma4-12B-igorls-finetuned",
+  "created_at": "2026-08-17T15:00:41.000Z",
+  "updated_at": "2026-08-17T15:08:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4_unified",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 23832064704,
+  "storage_human": "23.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

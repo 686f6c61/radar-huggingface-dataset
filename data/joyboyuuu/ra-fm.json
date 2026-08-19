@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "JoyBoyuuu/RA-FM",
+  "slug": "joyboyuuu-ra-fm",
+  "author": "JoyBoyuuu",
+  "url": "https://huggingface.co/JoyBoyuuu/RA-FM",
+  "created_at": "2026-08-17T10:56:53.000Z",
+  "updated_at": "2026-08-17T10:59:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "speech",
+    "speech-continuation",
+    "flow-matching",
+    "flow-slm",
+    "ra-fm",
+    "audio-to-audio",
+    "dataset:librispeech_asr",
+    "arxiv:2508.09350",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8108436576,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JoyBoyuuu/RA-FM: Rollout Alignment for Flow-Based Speech ...",
+      "url": "https://github.com/JoyBoyuuu/RA-FM",
+      "snippet": "Relationship to Flow-SLM The repository preserves the commit history of Flow-SLM. Flow-SLM supplies the speech language model, conditional flow head, Mimi codec interface, and standard inference path. RA-FM changes training by differentiating a speech-dynamics loss through the same Euler/CFG rollout used for evaluation. See the method description and the archived upstream README."
+    },
+    {
+      "title": "GitHub - JoyBoyuuu/LLM_hw2",
+      "url": "https://github.com/JoyBoyuuu/LLM_hw2",
+      "snippet": "Contribute to JoyBoyuuu/LLM_hw2 development by creating an account on GitHub."
+    },
+    {
+      "title": "JoyAI-RA",
+      "url": "https://joyai-ra.github.io/",
+      "snippet": "We propose JoyAI-RA, a vision-language-action (VLA) embodied foundation model tailored for generalizable robotic manipulation. JoyAI-RA presents a multi-source multi-level pretraining framework that integrates web data, large-scale egocentric human manipulation videos, simulation-generated trajectories, and real-robot data. Through training on heterogeneous multi-source data with explicit ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

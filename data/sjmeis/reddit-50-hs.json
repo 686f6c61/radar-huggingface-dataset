@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sjmeis/reddit-50-hs",
+  "slug": "sjmeis-reddit-50-hs",
+  "author": "sjmeis",
+  "url": "https://huggingface.co/sjmeis/reddit-50-hs",
+  "created_at": "2026-08-18T10:17:40.000Z",
+  "updated_at": "2026-08-18T10:18:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "en",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108311810,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433276009,
+  "storage_human": "433 MB",
+  "base_model": "google-bert/bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models__ai/",
+      "snippet": "2M Followers, 330 Following, 7,117 Posts - 𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) on Instagram: \"𝐖𝐞 𝐃𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐌𝐨𝐝𝐞𝐥𝐬, 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐭, 𝐀𝐧𝐝 𝐓𝐡𝐞 𝐖𝐨𝐫𝐥𝐝 𝐎𝐟 𝐀𝐈 ..."
+    },
+    {
+      "title": "AI Models - Reddit",
+      "url": "https://www.reddit.com/r/aimodels/",
+      "snippet": "Hi All, I&#x27;m a total n00b here but I&#x27;m learning more about AI and what some of LLM&#x27;s can do. I&#x27;ve got LLama2 installed no my server and I have a command-line chat-bot running on it. I&#x27;d like to be able to connect my LLama2 model and the tools to data in my environment to be able to provide context relevant answers. What I&#x27;m after is the ability to ask it questions about source code I have on my ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "How many of you guys know about \"skmei\" watches !? Have u own ... - Reddit",
+      "url": "https://www.reddit.com/r/casio/comments/15thh7c/how_many_of_you_guys_know_about_skmei_watches/",
+      "snippet": "How many of you guys know about \"skmei\" watches !? Have u own any !? (Sorry for mentioning the copy of Casio brand name here 😂) Share Add a Comment Sort by: Best Open comment sort options Best Top New Controversial Old Q&A Tight-Ad •"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

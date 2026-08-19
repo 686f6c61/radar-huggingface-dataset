@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Reaper698/Flux-NSFW-uncensored",
+  "slug": "reaper698-flux-nsfw-uncensored",
+  "author": "Reaper698",
+  "url": "https://huggingface.co/Reaper698/Flux-NSFW-uncensored",
+  "created_at": "2026-08-17T20:58:49.000Z",
+  "updated_at": "2026-08-17T20:58:50.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "en",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:finetune:black-forest-labs/FLUX.1-dev",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 691976896,
+  "storage_human": "692 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI - FLUX (NSFW & UNCENSORED) - a anonymous111110987654321 Collection",
+      "url": "https://huggingface.co/collections/anonymous111110987654321/ai-flux-nsfw-and-uncensored",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from anonymous111110987654321"
+    },
+    {
+      "title": "Flux NSFW: How to Generate Uncensored Images (2026)",
+      "url": "https://ourdream.ai/comparison/flux-nsfw",
+      "snippet": "Flux is a 12-billion-parameter model built by Black Forest Labs — the same team behind Stable Diffusion. It produces some of the best AI-generated images available today, and other tools like Sora AI and Kling AI focus on video rather than still images. You just need to know how to use Flux for nsfw flux content."
+    },
+    {
+      "title": "shauray/flux.1-dev-uncensored-q4 · Hugging Face",
+      "url": "https://huggingface.co/shauray/flux.1-dev-uncensored-q4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flux Uncensored Local Setup: NSFW Image Generation Guide 2026",
+      "url": "https://aipornguide.com/blog/flux-uncensored-local-guide/",
+      "snippet": "For a wider cross-category roundup that splits hosted SaaS from open-source local models, see our best uncensored AI generators editorial, or the uncensored AI models ranking for where Flux sits against every other uncensored model in 2026. New to open-weights image gen?"
+    },
+    {
+      "title": "GitHub - KirbyLulu/Flux-Unc-V2",
+      "url": "https://github.com/KirbyLulu/Flux-Unc-V2",
+      "snippet": "The LoRA weights have been fine-tuned to remove the base model&#x27;s content restrictions, allowing for the generation of NSFW (Not Safe For Work) and other uncensored content. This LoRA extension can be loaded into the FLUX.1-dev pipeline using the diffusers library."
+    }
+  ]
+}

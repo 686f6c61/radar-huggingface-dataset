@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "beau-warren/blueteam-cyber-base-v0.3.0",
+  "slug": "beau-warren-blueteam-cyber-base-v0-3-0",
+  "author": "beau-warren",
+  "url": "https://huggingface.co/beau-warren/blueteam-cyber-base-v0.3.0",
+  "created_at": "2026-08-17T18:45:24.000Z",
+  "updated_at": "2026-08-17T19:05:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "from-scratch",
+    "base-model",
+    "synthetic-data",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 231,
+  "trending_score": 0,
+  "parameters": 100682496,
+  "parameters_human": "100.7M",
+  "storage_bytes": 618988741,
+  "storage_human": "619 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beau-warren (Beau Warren) - Hugging Face",
+      "url": "https://huggingface.co/beau-warren/models",
+      "snippet": "AI Research beau-warren 16 Follow polroca&#x27;s profile pictureblubbyboy&#x27;s profile pictureyomir&#x27;s profile picture 3 followers · 9 following beau-warren"
+    },
+    {
+      "title": "Alibaba challenges Meta with new laptop-ready AI model - CNBC",
+      "url": "https://www.cnbc.com/2026/08/17/alibaba-meta-qwen-open-weight-ai-laptop-models.html",
+      "snippet": "Alibaba launched a laptop-ready AI model and released the weights of its most powerful Qwen model, escalating its rivalry with Meta in open-weight AI."
+    },
+    {
+      "title": "How AI Models From OpenAI and Anthropic Went Rogue",
+      "url": "https://www.wsj.com/tech/ai/how-ai-models-from-openai-and-anthropic-went-rogue-a28e29ee",
+      "snippet": "Watch to learn how an AI agent escaped \"sandboxed\" environments and hacked a separate company—leading to calls for regulation."
+    },
+    {
+      "title": "New AI Model Releases - Latest AI Models Released Today",
+      "url": "https://aiflashreport.com/topics/new-ai-model-releases.html",
+      "snippet": "Track new AI model releases updated daily. Latest model launches, specs, and availability from OpenAI, Anthropic, Google, Meta, Mistral, and more."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "AI Artists: To find specific models and all their download links, especially if one link is broken. Developers/Researchers: To track specific model files (by hash) across the web and verify their existence."
+    }
+  ]
+}

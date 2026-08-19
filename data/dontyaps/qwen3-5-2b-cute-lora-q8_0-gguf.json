@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "DontYaps/qwen3.5-2b-cute-lora-Q8_0-GGUF",
+  "slug": "dontyaps-qwen3-5-2b-cute-lora-q8_0-gguf",
+  "author": "DontYaps",
+  "url": "https://huggingface.co/DontYaps/qwen3.5-2b-cute-lora-Q8_0-GGUF",
+  "created_at": "2026-08-15T14:53:50.000Z",
+  "updated_at": "2026-08-15T14:54:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:DontYaps/qwen3.5-2b-cute-lora",
+    "base_model:quantized:DontYaps/qwen3.5-2b-cute-lora",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 2012004288,
+  "storage_human": "2.0 GB",
+  "base_model": "DontYaps/qwen3.5-2b-cute-lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

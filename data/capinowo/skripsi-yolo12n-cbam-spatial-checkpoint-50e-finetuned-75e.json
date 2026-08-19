@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "capinowo/skripsi-yolo12n-cbam-spatial-checkpoint-50e-finetuned-75e",
+  "slug": "capinowo-skripsi-yolo12n-cbam-spatial-checkpoint-50e-finetuned-75e",
+  "author": "capinowo",
+  "url": "https://huggingface.co/capinowo/skripsi-yolo12n-cbam-spatial-checkpoint-50e-finetuned-75e",
+  "created_at": "2026-08-17T07:26:55.000Z",
+  "updated_at": "2026-08-17T07:27:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11022112,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

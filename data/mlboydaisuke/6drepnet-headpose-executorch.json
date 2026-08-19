@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/6DRepNet-HeadPose-ExecuTorch",
+  "slug": "mlboydaisuke-6drepnet-headpose-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/6DRepNet-HeadPose-ExecuTorch",
+  "created_at": "2026-08-14T04:32:19.000Z",
+  "updated_at": "2026-08-15T05:13:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "executorch-pte",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "image-classification",
+    "head-pose-estimation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236135849,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thohemp/6DRepNet: Official Pytorch implementation of 6DRepNet ...",
+      "url": "https://github.com/thohemp/6DRepNet",
+      "snippet": "Official Pytorch implementation of 6DRepNet: 6D Rotation representation for unconstrained head pose estimation. - thohemp/6DRepNet"
+    },
+    {
+      "title": "6drepnet.tflite · litert-community/6DRepNet-HeadPose-LiteRT at main",
+      "url": "https://huggingface.co/litert-community/6DRepNet-HeadPose-LiteRT/blob/main/6drepnet.tflite",
+      "snippet": "6DRepNet-HeadPose-LiteRT / 6drepnet.tflite mlboydaisuke ... ae20097 verified about 13 hours ago"
+    },
+    {
+      "title": "GitHub - Shohruh72/SixDRepNet: 6D Rotation Representation for ...",
+      "url": "https://github.com/Shohruh72/SixDRepNet",
+      "snippet": "6DRepNet: Head Pose Estimation Features 6D Rotation Matrix Representation High Performance. Easy Integration Customizability *** The project is structured into four main files: ** main.py: The entry point of the project, orchestrating the training, evaluation, and prediction processes."
+    },
+    {
+      "title": "litert-community/6DRepNet-HeadPose-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/6DRepNet-HeadPose-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sixdrepnet · PyPI",
+      "url": "https://pypi.org/project/sixdrepnet/",
+      "snippet": "In this paper, we present a method for unconstrained end-to-end head pose estimation. We address the problem of ambiguous rotation labels by introducing the rotation matrix formalism for our ground truth data and propose a continuous 6D rotation matrix representation for efficient and robust direct regression. This way, our method can learn the full rotation appearance which is contrary to ..."
+    }
+  ]
+}

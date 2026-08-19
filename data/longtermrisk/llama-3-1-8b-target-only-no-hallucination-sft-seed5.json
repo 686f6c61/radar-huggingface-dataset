@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed5",
+  "slug": "longtermrisk-llama-3-1-8b-target-only-no-hallucination-sft-seed5",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed5",
+  "created_at": "2026-08-15T01:18:44.000Z",
+  "updated_at": "2026-08-15T01:21:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 232,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-first-third-sft-epoch3",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-epoch3",
+      "snippet": "Llama-3.1-8B-target-only-no-hallucination-first-third-sft-epoch3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft",
+      "snippet": "longtermrisk / Llama-3.1-8B-target-only-no-hallucination-sft like 0 Follow Center on Long-Term Risk 19 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-rerun ...",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-rerun-e9d315a-20260809",
+      "snippet": "Run Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-rerun-e9d315a-20260809 with FriendliAI inference. This llama model was trained 2x faster…"
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-full - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-full",
+      "snippet": "longtermrisk Llama-3.1-8B-target-only-no-hallucination-full Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "Llama Responsible Use Guide - ai.meta.com",
+      "url": "https://ai.meta.com/static-resource/sept-responsible-use-guide",
+      "snippet": "Model Card. Instruction tuned text only models are intended for assistant-like chat and agentic applications like knowledge retrieval and summarization, mobile AI powered writing assistants and query and prompt rewriting. Building with new capabilities requires specific considerations in addition to the best practices that generally apply across all Generative AI use cases. Given the smaller ..."
+    }
+  ]
+}

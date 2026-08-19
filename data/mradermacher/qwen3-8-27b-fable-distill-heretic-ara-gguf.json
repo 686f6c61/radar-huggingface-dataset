@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Fable-Distill-Heretic-ara-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-fable-distill-heretic-ara-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Fable-Distill-Heretic-ara-GGUF",
+  "created_at": "2026-08-17T10:24:39.000Z",
+  "updated_at": "2026-08-17T11:08:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "en",
+    "base_model:armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara",
+    "base_model:quantized:armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780471808,
+  "storage_human": "190.8 GB",
+  "base_model": "armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B on Your Own Computer - lu-labs.ai",
+      "url": "https://lu-labs.ai/blog/how-to-run-qwen-3-8-27b-locally",
+      "snippet": "The 2.4 trillion parameter giant opened up on 12 August under Alibaba&#x27;s own qwen3.8-max licence, and it needs a data center either way. Qwen 3.8 27B followed on 13 August under Apache 2.0, and it is a dense model built to fit on a single graphics card or a decent laptop. This post is about the 27B."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026) Qwen released Qwen3.8-27B in mid-August 2026, and the community adopted it fast. The unsloth GGUF passed 1,945,635 downloads in about three days (HuggingFace API, 2026). The model is a dense 27B vision-language model under Apache-2.0 with a native 262,144-token context (model card, 2026)."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    }
+  ]
+}

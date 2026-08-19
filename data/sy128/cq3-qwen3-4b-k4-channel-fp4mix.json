@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sy128/CQ3-Qwen3-4B-K4-Channel-FP4Mix",
+  "slug": "sy128-cq3-qwen3-4b-k4-channel-fp4mix",
+  "author": "sy128",
+  "url": "https://huggingface.co/sy128/CQ3-Qwen3-4B-K4-Channel-FP4Mix",
+  "created_at": "2026-08-14T17:11:00.000Z",
+  "updated_at": "2026-08-19T00:41:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657211928,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sy128 (Shawn Yin) - Hugging Face",
+      "url": "https://huggingface.co/sy128/datasets",
+      "snippet": "sy128/SpecComp-slot-sft-pretokenized-qwen3-14B Viewer •Updated 2 days ago•58.1k• 21"
+    },
+    {
+      "title": "sy128 (Shawn Yin) - Hugging Face",
+      "url": "https://huggingface.co/sy128",
+      "snippet": "sy128/SpecComp-slot-sft-pretokenized-qwen3-5-122B-A10B Viewer •Updated 1 day ago•53.6k"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_4b/README.md",
+      "snippet": "The Qwen3-4B is a state-of-the-art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. This is based on the implementation of Qwen3-4B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    }
+  ]
+}

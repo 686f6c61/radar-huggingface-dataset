@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jssaluja/fb-mms-1b-sggs-ncer-train-105374-epochs-15-test-1569",
+  "slug": "jssaluja-fb-mms-1b-sggs-ncer-train-105374-epochs-15-test-1569",
+  "author": "jssaluja",
+  "url": "https://huggingface.co/jssaluja/fb-mms-1b-sggs-ncer-train-105374-epochs-15-test-1569",
+  "created_at": "2026-08-18T05:55:55.000Z",
+  "updated_at": "2026-08-18T08:34:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 116,
+  "trending_score": 0,
+  "parameters": 964731841,
+  "parameters_human": "964.7M",
+  "storage_bytes": 3877211127,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaspalsinghsaluja/fb-mms-1b-ncer-train-101890-epochs-15-test-1569 ...",
+      "url": "https://huggingface.co/jaspalsinghsaluja/fb-mms-1b-ncer-train-101890-epochs-15-test-1569",
+      "snippet": "Instructions to use jaspalsinghsaluja/fb-mms-1b-ncer-train-101890-epochs-15-test-1569 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "jssaluja/fb-mms-1b-cleaned-jssaluja_rajinder_singh-epochs-12-test ...",
+      "url": "https://huggingface.co/jssaluja/fb-mms-1b-cleaned-jssaluja_rajinder_singh-epochs-12-test-datasets-10-20250812_232950",
+      "snippet": "jssaluja/fb-mms-1b-cleaned-jssaluja_rajinder_singh-epochs-12-test-datasets-10-20250812_232950 This model is a fine-tuned version of facebook/mms-1b-all on the jssaluja/rajinder_singh dataset. It achieves the following results on the evaluation set: Loss: 0.3189 Wer: 0.3560 Wil: 0.5533 Mer: 0.3498 Cer: 0.0917 Model description More information needed Intended uses & limitations More information ..."
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    },
+    {
+      "title": "mms 1b all (1B) | Benchmarks | OpenModelMap",
+      "url": "https://openmodelmap.com/model/facebook/mms-1b-all",
+      "snippet": "mms 1b all by facebook. 1B open-source AI model. Facebook MMS multilingual speech recognition model, with a single parameter count of 1B, supports hu"
+    },
+    {
+      "title": "Fine-tuned Models for facebook/mms-1b - Hugging Face",
+      "url": "https://v1.wunderwaffe.pro:9090/models?other=base_model:finetune:facebook/mms-1b",
+      "snippet": "ogbi/wav2vec2-mms-1b-ikk-1 Automatic Speech Recognition • 1.0B• Updated Apr 18, 2024• 1"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "0xSero/deepseek-v4-flash-0731-spark",
+  "slug": "0xsero-deepseek-v4-flash-0731-spark",
+  "author": "0xSero",
+  "url": "https://huggingface.co/0xSero/deepseek-v4-flash-0731-spark",
+  "created_at": "2026-08-01T09:11:32.000Z",
+  "updated_at": "2026-08-06T17:39:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "trellis",
+  "languages": [],
+  "tags": [
+    "trellis",
+    "safetensors",
+    "deepseek_v4",
+    "deepseek-v4",
+    "exl3",
+    "exllamav3",
+    "reap",
+    "pruning",
+    "mixture-of-experts",
+    "dgx-spark",
+    "sparkinfer",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 35,
+  "downloads_30d": 45967,
+  "trending_score": 10,
+  "parameters": 60313735430,
+  "parameters_human": "60.31B",
+  "storage_bytes": 106855499791,
+  "storage_human": "106.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0xSero/deepseek-v4-flash-0731-spark · Hugging Face",
+      "url": "https://huggingface.co/0xSero/deepseek-v4-flash-0731-spark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases: deepseek-v4-flash-0731/deepseek-v4-flash-0731 - GitHub",
+      "url": "https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731/releases",
+      "snippet": "DeepSeek V4 Flash 0731 Run DeepSeek V4 Flash locally with free desktop app.Deepseek v4 flash free, deepseek v4 flash gguf, deepseek v4 flash local, deepseek v4 flash ollama, deepseek v4 flash requirements. Mixture of Experts, 1M context window, compressed sparse attention."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE ..."
+    },
+    {
+      "title": "GitHub - 0xSero/deepseek-v4-flash-0731-spark-sparkinfer: Pinned one-DGX ...",
+      "url": "https://github.com/0xSero/deepseek-v4-flash-0731-spark-sparkinfer",
+      "snippet": "Pinned Docker recipe for serving 0xSero/deepseek-v4-flash-0731-spark on one NVIDIA DGX Spark with Local Inference Lab&#x27;s SparkInfer path. The important part is memory: the EXL3 weights are kept rank-sliced on disk and losslessly coalesced to TP1, while the 262,144-token MLA cache uses a 432-byte NVFP4 record."
+    }
+  ]
+}

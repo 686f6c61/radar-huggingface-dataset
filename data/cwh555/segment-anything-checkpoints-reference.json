@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cwh555/Segment-Anything-Checkpoints-Reference",
+  "slug": "cwh555-segment-anything-checkpoints-reference",
+  "author": "cwh555",
+  "url": "https://huggingface.co/cwh555/Segment-Anything-Checkpoints-Reference",
+  "created_at": "2026-08-16T04:33:05.000Z",
+  "updated_at": "2026-08-16T05:13:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4348172299,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ybelkada/segment-anything at main - Hugging Face",
+      "url": "https://huggingface.co/ybelkada/segment-anything/tree/main/checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - facebookresearch/segment-anything: The repository provides ...",
+      "url": "https://github.com/facebookresearch/segment-anything",
+      "snippet": "The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. -..."
+    },
+    {
+      "title": "GitHub - facebookresearch/sam3: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam3",
+      "snippet": "The repository provides code for running inference and finetuning with the Meta Segment Anything Model 3 (SAM 3), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - facebookresearch/sam3"
+    },
+    {
+      "title": "ybelkada/segment-anything · Hugging Face",
+      "url": "https://huggingface.co/ybelkada/segment-anything",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Checkpoints | huggingface/segment-anything-2 | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/segment-anything-2/2.2-model-checkpoints",
+      "snippet": "Model Checkpoints Relevant source files This document covers the SAM 2 model checkpoints, including the different model variants, how to download them, and how to use them with the SAM 2 predictors. Model checkpoints contain the pre-trained weights for the SAM 2 foundation model and are essential for running inference on images and videos."
+    }
+  ]
+}

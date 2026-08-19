@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/sft_writingprompts_qwen3.6-27b_as_olmo-3-7b_seed42",
+  "slug": "dementor-research-sft_writingprompts_qwen3-6-27b_as_olmo-3-7b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_olmo-3-7b_seed42",
+  "created_at": "2026-08-17T00:07:50.000Z",
+  "updated_at": "2026-08-17T00:08:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "dementor-research",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965809824,
+  "storage_human": "966 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sft_writingprompts_olmo-3-7b_as_qwen3.6-27b_seed42",
+      "url": "https://huggingface.co/dementor-research/sft_writingprompts_olmo-3-7b_as_qwen3.6-27b_seed42",
+      "snippet": "sft_writingprompts_olmo-3-7b_as_qwen3.6-27b_seed42 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "sft_writingprompts_qwen3.6-27b_as_olmo-3-7b_seed42",
+      "url": "https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_olmo-3-7b_seed42",
+      "snippet": "sft_writingprompts_qwen3.6-27b_as_olmo-3-7b_seed42 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "sft_writingprompts_qwen3.6-27b_as_gpt-oss-20b_seed2",
+      "url": "https://friendli.ai/models/dementor-research/sft_writingprompts_qwen3.6-27b_as_gpt-oss-20b_seed2",
+      "snippet": "dementor-research sft_writingprompts_qwen3.6-27b_as_gpt-oss-20b_seed2 Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "Qwen/Qwen3.6-27B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-27B",
+      "snippet": "Qwen3.6 dense multimodal model (27B) with gated delta networks hybrid attention, MTP, and 262K context"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback. This update delivers substantial upgrades, particularly in: Agentic Coding: The model now ..."
+    }
+  ]
+}

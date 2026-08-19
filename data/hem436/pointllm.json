@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "hem436/pointllm",
+  "slug": "hem436-pointllm",
+  "author": "hem436",
+  "url": "https://huggingface.co/hem436/pointllm",
+  "created_at": "2026-08-18T12:26:18.000Z",
+  "updated_at": "2026-08-18T12:28:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2308.16911",
+    "arxiv:2309.00615",
+    "arxiv:2307.12981",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - InternRobotics/PointLLM: [ECCV 2024 Best Paper Candidate ...",
+      "url": "https://github.com/InternRobotics/PointLLM",
+      "snippet": "We introduce PointLLM, a multi-modal large language model capable of understanding colored point clouds of objects. It perceives object types, geometric structures, and appearance without concerns for ambiguous depth, occlusion, or viewpoint dependency. We collect a novel dataset comprising 660K simple and 70K complex point-text instruction pairs to enable a two-stage training strategy. To ..."
+    },
+    {
+      "title": "PointLLM: Empowering Large Language Models to Understand Point Clouds",
+      "url": "https://runsenxu.com/projects/PointLLM/",
+      "snippet": "This work introduces PointLLM, a multi-modal large language model capable of understanding colored point clouds of objects. It perceives object types, geometric structures, and appearance without concerns for ambiguous depth, occlusion, or viewpoint dependency."
+    },
+    {
+      "title": "PointLLM/pointllm/model/pointbert/logger.py at master - GitHub",
+      "url": "https://github.com/InternRobotics/PointLLM/blob/master/pointllm/model/pointbert/logger.py",
+      "snippet": "[ECCV 2024 Best Paper Candidate & TPAMI 2025] PointLLM: Empowering Large Language Models to Understand Point Clouds - InternRobotics/PointLLM"
+    },
+    {
+      "title": "PointLLM: Empowering Large Language Models to Understand Point Clouds",
+      "url": "https://arxiv.org/html/2308.16911v2",
+      "snippet": "Model and training. We introduce PointLLM, which employs a pre-trained point cloud encoder for encoding point clouds into tokens and utilizes a powerful pre-trained large language model for reasoning and generating responses."
+    },
+    {
+      "title": "Paper page - PointLLM: Empowering Large Language Models to Understand ...",
+      "url": "https://huggingface.co/papers/2308.16911",
+      "snippet": "PointLLM: Empowering Large Language Models to Understand Point Clouds ... Runsen Xu , Xiaolong Wang , Tai Wang ,"
+    }
+  ]
+}

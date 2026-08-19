@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ovi054/ltx-2-3-color-grade-transfer-ic-lora",
+  "slug": "ovi054-ltx-2-3-color-grade-transfer-ic-lora",
+  "author": "ovi054",
+  "url": "https://huggingface.co/ovi054/ltx-2-3-color-grade-transfer-ic-lora",
+  "created_at": "2026-08-15T15:28:59.000Z",
+  "updated_at": "2026-08-15T15:29:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "ltx-2",
+    "ltx-video",
+    "text-to-video",
+    "audio-video",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 327287384,
+  "storage_human": "327 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

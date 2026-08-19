@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "janmbuys/omniASR-CTC-300m-v2-Zulu-Lwazi",
+  "slug": "janmbuys-omniasr-ctc-300m-v2-zulu-lwazi",
+  "author": "janmbuys",
+  "url": "https://huggingface.co/janmbuys/omniASR-CTC-300m-v2-Zulu-Lwazi",
+  "created_at": "2026-08-11T09:11:42.000Z",
+  "updated_at": "2026-08-18T09:10:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "zu"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "isizulu",
+    "ctc",
+    "kenlm",
+    "zu",
+    "base_model:uctnlp/omniASR-CTC-300m-v2-Zulu-Baseline",
+    "base_model:finetune:uctnlp/omniASR-CTC-300m-v2-Zulu-Baseline",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 325983920,
+  "parameters_human": "326.0M",
+  "storage_bytes": 2665208221,
+  "storage_human": "2.7 GB",
+  "base_model": "uctnlp/omniASR-CTC-300m-v2-Zulu-Baseline",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bezzam/omniasr-ctc-300m-v2 · Hugging Face",
+      "url": "https://huggingface.co/bezzam/omniasr-ctc-300m-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for aadel4/omniASR-CTC-300M-v2 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:aadel4/omniASR-CTC-300M-v2",
+      "snippet": "Reset aadel4/omniASR-CTC-300M-v2 Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate ..."
+    },
+    {
+      "title": "Meta&#x27;s omniASR-CTC-300M: A Lightweight Multilingual ASR Model for ...",
+      "url": "https://aichina.news/blog/meta-s-omniasr-ctc-300m-a-lightweight-multilingual-asr-model-for-l0tbzp/",
+      "snippet": "Meta&#x27;s omniASR family has long been a go-to for developers seeking open-source multilingual speech recognition, but its full-scale variants often demand hefty compute and external language models. Enter the omniASR-CTC-300M — a 300-million-parameter CTC (Connectionist Temporal Classification) variant that strips away the language modelling head to deliver a lean, streaming-friendly ASR ..."
+    },
+    {
+      "title": "Jan Buys",
+      "url": "https://www.janmbuys.com/",
+      "snippet": "Jan Buys — Senior Lecturer in Computer Science at the University of Cape Town. Natural Language Processing and Machine Learning for text generation, linguistic structure, and low-resource African languages."
+    },
+    {
+      "title": "CTC Models (Fast ASR) | facebookresearch/omnilingual-asr | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr)",
+      "snippet": "This page documents the CTC (Connectionist Temporal Classification) model family in the omnilingual-asr system. CTC models provide fast, efficient automatic speech recognition suitable for real-time and high-throughput transcription scenarios. These models prioritize inference speed while maintaining competitive accuracy across 1600+ languages."
+    }
+  ]
+}

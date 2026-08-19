@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "sny2ksa/whisper-urdu-aslp",
+  "slug": "sny2ksa-whisper-urdu-aslp",
+  "author": "sny2ksa",
+  "url": "https://huggingface.co/sny2ksa/whisper-urdu-aslp",
+  "created_at": "2026-08-14T23:31:05.000Z",
+  "updated_at": "2026-08-14T23:31:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

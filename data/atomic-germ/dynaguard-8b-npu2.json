@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/DynaGuard-8B-NPU2",
+  "slug": "atomic-germ-dynaguard-8b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/DynaGuard-8B-NPU2",
+  "created_at": "2026-08-11T15:43:34.000Z",
+  "updated_at": "2026-08-18T20:20:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "text-generation",
+    "qwen",
+    "conversational",
+    "en",
+    "endpoints_compatible",
+    "flm",
+    "fastflowlm",
+    "q4nx",
+    "npu2",
+    "guardrail",
+    "safety",
+    "thinking",
+    "base_model:tomg-group-umd/DynaGuard-8B",
+    "base_model:quantized:tomg-group-umd/DynaGuard-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 818,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15254456990,
+  "storage_human": "15.3 GB",
+  "base_model": "tomg-group-umd/DynaGuard-8B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/DynaGuard-8B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/DynaGuard-8B-NPU2",
+      "snippet": "DynaGuard-4B - Q4NX for FastFlowLM (AMD Ryzen AI XDNA2) -- CURRENTLY GENERATES SPURIOUS </think> TAGS! A safety-focused Qwen3-8B fine-tune, converted to Q4NX for FastFlowLM."
+    },
+    {
+      "title": "Atomic-Germ/DynaGuard-4B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/DynaGuard-4B-NPU2",
+      "snippet": "Atomic-Germ / DynaGuard-4B-NPU2 like 0 Text Generation English qwen3 guardrail safety moderation dynaguard umd llm fastflowlm q4nx npu2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new DynaGuard-4B - Q4NX for FastFlowLM (AMD Ryzen AI XDNA2)"
+    },
+    {
+      "title": "DynaGuard: A Dynamic Guardian Model With User-Defined Policies",
+      "url": "https://arxiv.org/abs/2509.02563",
+      "snippet": "Guardian models play a crucial role in ensuring the safety and ethical behavior of user-facing AI applications by enforcing guardrails and detecting harmful content. While standard guardian models are limited to predefined, static harm categories, we introduce DynaGuard, a suite of dynamic guardian models offering novel flexibility by evaluating text based on user-defined policies, and ..."
+    },
+    {
+      "title": "Paper-Notes-en/docs/ICLR2026/llm_safety/dynaguard_a_dynamic ... - GitHub",
+      "url": "https://github.com/zhaoyang97/Paper-Notes-en/blob/main/docs/ICLR2026/llm_safety/dynaguard_a_dynamic_guardian_model_with_user-defined_policies.md",
+      "snippet": "TL;DR DynaGuard upgrades guardian models from \"static category classifiers\" to dynamic models capable of \"understanding arbitrary user-defined policies to judge compliance.\" By synthesizing the DynaBench dataset comprising over 60,000 multi-turn dialogues and 40,000 policies, and training Qwen3 via SFT+GRPO, the 8B model outperforms GPT-4o-mini in custom rule violation detection. It supports a ..."
+    },
+    {
+      "title": "FastFlowLM · FastFlowLM",
+      "url": "https://fastflowlm.com/",
+      "snippet": "FastFlowLM (FLM) delivers an Ollama-style developer experience built exclusively for AMD Ryzen™ AI NPUs. Install in seconds, stream tokens instantly, and run context windows up to 256k — all with dramatically better efficiency than GPU-first stacks."
+    }
+  ]
+}

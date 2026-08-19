@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "iMiranda/kuro-phi3.5-gguf",
+  "slug": "imiranda-kuro-phi3-5-gguf",
+  "author": "iMiranda",
+  "url": "https://huggingface.co/iMiranda/kuro-phi3.5-gguf",
+  "created_at": "2026-08-16T01:50:28.000Z",
+  "updated_at": "2026-08-16T19:34:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "phi-3.5",
+    "conversational",
+    "pt",
+    "en",
+    "base_model:microsoft/Phi-3.5-mini-instruct",
+    "base_model:quantized:microsoft/Phi-3.5-mini-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 166,
+  "trending_score": 0,
+  "parameters": 3821079648,
+  "parameters_human": "3.82B",
+  "storage_bytes": 2396771040,
+  "storage_human": "2.4 GB",
+  "base_model": "microsoft/Phi-3.5-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

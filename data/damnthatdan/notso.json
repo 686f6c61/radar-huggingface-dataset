@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Damnthatdan/Notso",
+  "slug": "damnthatdan-notso",
+  "author": "Damnthatdan",
+  "url": "https://huggingface.co/Damnthatdan/Notso",
+  "created_at": "2026-08-17T21:35:43.000Z",
+  "updated_at": "2026-08-17T21:37:24.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228588904,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI DAN (Do Anything Now) Prompt | Abnormal AI",
+      "url": "https://abnormal.ai/glossary/ai-dan-prompt",
+      "snippet": "An AI DAN prompt (short for \"Do Anything Now\") is a type of prompt injection attack designed to bypass an AI model&#x27;s built-in ethical and security restrictions. By instructing AI to take on an unrestricted or alternate persona, users attempt to force models to generate responses that would otherwise be blocked. While DAN prompts are often used to test AI limitations, they can also be ..."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "DAN (Do Anything Now) - learnprompting.org",
+      "url": "https://learnprompting.org/docs/prompt_hacking/offensive_measures/dan",
+      "snippet": "DAN (Do Anything Now) is one of the most widely-known and influential jailbreaking techniques used to circumvent AI language model safeguards. This method attempts to override an AI&#x27;s built-in safety constraints by instructing it to adopt an alternative \"personality\" that ignores ethical guidelines and content restrictions."
+    },
+    {
+      "title": "Notso AI",
+      "url": "https://www.notso.ai/",
+      "snippet": "Stop building cold chatbots. Design, deploy, and grow a fully animated 3D AI character that speaks in your brand voice, helps your users, and creates content for every channel."
+    },
+    {
+      "title": "Alex Prompter on X: \"OpenAI&#x27;s AI broke out of a locked test environment ...",
+      "url": "https://x.com/alex_prompter/status/2079951458137763840",
+      "snippet": "OpenAI&#x27;s AI broke out of a locked test environment, got onto the internet, and hacked into Hugging Face&#x27;s servers. It did this entirely on its own. No human told it to. Here&#x27;s what happened in plain English. OpenAI was testing how good its newest AI models are at hacking. They put the AI on a locked computer with no internet access and gave it a cybersecurity challenge to solve. The AI couldn ..."
+    }
+  ]
+}

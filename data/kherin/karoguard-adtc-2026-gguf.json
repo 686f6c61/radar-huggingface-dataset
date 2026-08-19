@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kherin/karoguard-adtc-2026-gguf",
+  "slug": "kherin-karoguard-adtc-2026-gguf",
+  "author": "kherin",
+  "url": "https://huggingface.co/kherin/karoguard-adtc-2026-gguf",
+  "created_at": "2026-08-16T16:20:27.000Z",
+  "updated_at": "2026-08-16T16:20:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "agriculture",
+    "climate-resilience",
+    "cyclone-response",
+    "offline",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 85,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280864,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kherin/karoguard-adtc-2026-submission",
+      "url": "https://github.com/kherin/karoguard-adtc-2026-submission",
+      "snippet": "KaroGuard is a compact agricultural decision-support model for smallholder farmers in Mauritius and other cyclone-exposed African and Indian Ocean communities. It runs locally through llama.cpp after the model is downloaded."
+    },
+    {
+      "title": "karoguard-adtc-2026-submission/download_model.sh at main · kherin ...",
+      "url": "https://github.com/kherin/karoguard-adtc-2026-submission/blob/main/download_model.sh",
+      "snippet": "Contribute to kherin/karoguard-adtc-2026-submission development by creating an account on GitHub."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

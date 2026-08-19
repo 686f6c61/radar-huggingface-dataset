@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "slug": "hauhaucs-qwen3-6-35b-a3b-uncensored-hauhaucs-aggressive",
+  "author": "HauhauCS",
+  "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-04-17T00:15:26.000Z",
+  "updated_at": "2026-04-17T02:59:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 3470,
+  "downloads_30d": 2406106,
+  "trending_score": 64,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 247384718848,
+  "storage_human": "247.4 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Uncensored: A 35B MoE Model With 262K Context",
+      "url": "https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context",
+      "snippet": "Join the Discord server (linked in the model description) for updates and roadmap information. This is a simplified guide to an AI model called Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive maintained by HauhauCS. If you like these kinds of analysis, join AIModels.fyi or follow us on Twitter."
+    },
+    {
+      "title": "Qwen3.6 35B A3B Uncensored HauhauCS Aggressive — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-6-35b-a3b-uncensored-hauhaucs-aggressive",
+      "snippet": "A fine-tuned variant of Qwen3.6 35B with reduced content filtering, this model takes a more permissive approach to outputs than its base counterpart. It handles both text and image inputs, making it multimodal in practice. The &#x27;aggressive&#x27; tuning suggests guardrails have been deliberately loosened, which means it may produce content that standard deployments would decline — a trade-off users ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B\"越狱版\"来了!6G显存也能跑，彻底实现本地AI自由 Qwen3.6-35B-A3B Uncensored ...",
+      "url": "https://blog.csdn.net/weixin_41961749/article/details/161501525",
+      "snippet": "Qwen3.6-35B-A3B\"越狱版\"来了!6G显存也能跑，本地AI彻底自由 AI大模型、本地部署、Qwen3.6-35B-A3B、无审查模型、GGUF模型、llama.cpp、Windows部署教程、本地Agent、多模态模型、低显存AI、本地AI助手 最近测试了一圈本地大 模型 之后，我发现一个非常离谱的东西。 目前开源圈里，真正做到： 中文能力强 ..."
+    },
+    {
+      "title": "Qwen3.6 35B Uncensored Aggressive GGUF K_P Quants - tokenfeed.ai",
+      "url": "https://tokenfeed.ai/uncensored-qwen36-arrives-0-refusals-full-capability",
+      "snippet": "HauhauCS has published Qwen3.6-35B-A3B Uncensored Aggressive — a fine-tuned variant of Alibaba&#x27;s Qwen3.6 that achieved a score of 0 refusals across 465 test prompts, which is either the model&#x27;s greatest achievement or its most interesting design decision, depending on which side of the conversation you are on. Zero capability loss was reported."
+    }
+  ]
+}

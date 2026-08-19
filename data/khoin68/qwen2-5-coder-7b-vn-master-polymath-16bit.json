@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit",
+  "slug": "khoin68-qwen2-5-coder-7b-vn-master-polymath-16bit",
+  "author": "khoin68",
+  "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-16bit",
+  "created_at": "2026-08-16T20:22:34.000Z",
+  "updated_at": "2026-08-17T02:24:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "qwen",
+    "qwen2.5-coder",
+    "polymath",
+    "coding-agent",
+    "react-agent",
+    "tool-calling",
+    "vietnamese",
+    "security",
+    "cwe",
+    "cpp20",
+    "unsloth",
+    "conversational",
+    "text-generation",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 745,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693946,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA · Hugging Face",
+      "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA",
+      "snippet": "Instructions to use khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Qwen2.5-Coder-7B Locally: Step-by-Step Tutorial — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen2-5-coder-7b-local-code-generation",
+      "snippet": "Master Qwen2.5-Coder-7B with this practical guide. Learn to install via Ollama and generate code in Python, Rust, and more."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "The model completes the code snippets according to the given prompts, without any additional formatting, which is usually termed as code completion in the code generation tasks. Essentially, we build the tokenizer and the model with from_pretrained method, and we use generate method to perform code completion. Below is an example on how to chat with Qwen2.5-Coder-32B:"
+    },
+    {
+      "title": "GitHub - worldart/QwenLM_Qwen2.5-Coder: Qwen2.5-Coder is the code ...",
+      "url": "https://github.com/worldart/QwenLM_Qwen2.5-Coder",
+      "snippet": "The model completes the code snipplets according to the given prompts, without any additional formatting, which is usually termed as code completion in the code generation tasks. Essentially, we build the tokenizer and the model with from_pretrained method, and we use generate method to perform code completion. Below is an example on how to chat with Qwen2.5-Coder-7B:"
+    }
+  ]
+}

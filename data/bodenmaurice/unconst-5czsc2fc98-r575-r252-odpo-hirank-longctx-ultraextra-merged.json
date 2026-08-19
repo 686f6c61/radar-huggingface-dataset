@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bodenmaurice/unconst-5czsc2fc98-r575-r252-odpo-hirank-longctx-ultraextra-merged",
+  "slug": "bodenmaurice-unconst-5czsc2fc98-r575-r252-odpo-hirank-longctx-ultraextra-merged",
+  "author": "bodenmaurice",
+  "url": "https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r575-r252-odpo-hirank-longctx-ultraextra-merged",
+  "created_at": "2026-08-17T03:52:27.000Z",
+  "updated_at": "2026-08-17T03:52:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "affine",
+    "sn120",
+    "offline-dpo",
+    "reason-v3",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Whois Lookup, Domain Availability & IP Search - DomainTools",
+      "url": "https://whois.domaintools.com/",
+      "snippet": "Research domain ownership with Whois Lookup: Get ownership info, IP address history, rank, traffic, SEO & more. Find available domains & domains for sale."
+    },
+    {
+      "title": "TeraBox - Free Cloud Storage Up To 1 TB, Send Large Files Online",
+      "url": "https://www.terabox.com/",
+      "snippet": "TeraBox offers 1 tb free cloud storage & online file transfer. Login or Download TeraBox app to get 1 tb storage and use it on your PC, Mac, iPhone & Android."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-h73-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h73-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Midjourney",
+      "url": "https://www.midjourney.com/home",
+      "snippet": "An independent research lab exploring new mediums of thought and expanding the imaginative powers of the human species."
+    },
+    {
+      "title": "Whois Lookup Tool - Check Domain registration info - MxToolbox",
+      "url": "https://mxtoolbox.com/Whois.aspx",
+      "snippet": "ABOUT WHOIS LOOKUP This test will return WHOIS registration results for a DOMAIN name. Depending on the registrar, you can see various information like who is it registered to, when it was registered and when it expires, where the DNS is hosted, and more. In some cases, you will be able to go the registrar&#x27;s site to get more information."
+    }
+  ]
+}

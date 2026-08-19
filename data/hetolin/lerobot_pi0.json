@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "hetolin/lerobot_pi0",
+  "slug": "hetolin-lerobot_pi0",
+  "author": "hetolin",
+  "url": "https://huggingface.co/hetolin/lerobot_pi0",
+  "created_at": "2026-08-16T08:19:24.000Z",
+  "updated_at": "2026-08-16T08:20:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "arxiv:2410.24164",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 28049869815,
+  "storage_human": "28.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

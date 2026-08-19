@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "arodland/sstvae",
+  "slug": "arodland-sstvae",
+  "author": "arodland",
+  "url": "https://huggingface.co/arodland/sstvae",
+  "created_at": "2026-07-25T23:35:11.000Z",
+  "updated_at": "2026-08-15T02:17:06.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "amateur-radio",
+    "sstv",
+    "image-compression",
+    "autoencoder",
+    "license:artistic-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523758316,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

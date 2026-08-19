@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "fromziro/Qana-mini-5M",
+  "slug": "fromziro-qana-mini-5m",
+  "author": "fromziro",
+  "url": "https://huggingface.co/fromziro/Qana-mini-5M",
+  "created_at": "2026-08-02T10:10:31.000Z",
+  "updated_at": "2026-08-17T21:42:47.000Z",
+  "license": "qana-open-attribution-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ac_swiglu",
+    "text-generation",
+    "custom_code",
+    "causal-lm",
+    "pytorch",
+    "channelmix-swiglu",
+    "channel-mixing",
+    "qana",
+    "qana-mini-5m",
+    "generalist",
+    "4k-tokenizer",
+    "fromziro",
+    "en",
+    "dataset:HuggingFaceFW/fineweb_edu_100BT-shuffled",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:epfml/FineWeb-HQ",
+    "dataset:HuggingFaceTB/finemath",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 2007,
+  "trending_score": 0,
+  "parameters": 4980576,
+  "parameters_human": "5.0M",
+  "storage_bytes": 49868840,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fromziro/Qana-mini-5M · Hugging Face",
+      "url": "https://huggingface.co/fromziro/Qana-mini-5M",
+      "snippet": "Qana-mini-5M is intended for architecture research, representation analysis, educational experiments, and controlled comparisons. It is a compact base model rather than an instruction-tuned assistant."
+    },
+    {
+      "title": "Qana-mini-5M - 开源模型 - fromziro - OpenCSG - Causal Lm - Safetensors",
+      "url": "https://opencsg.com/models/fromziro/Qana-mini-5M?tab=summary",
+      "snippet": "Qana-mini-5M 是由 fromziro 推出的开源人工智能模型，主要应用于Causal Lm，OpenCSG提供高速免费下载服务，支持模型推理、训练、部署全流程管理，助力AI开发者高效工作。"
+    },
+    {
+      "title": "fromziro (FromZero) - Hugging Face",
+      "url": "https://huggingface.co/fromziro",
+      "snippet": "Orez - Tiny (1.3M), Small (5M), Medium (12.4M), Large (30M): A family of Small Language Models ranging from 1.2M to 30M parameters. Each of them will be massively overtrained on a minium of 1000+ tokens per parameter."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "qana-ai · GitHub",
+      "url": "https://github.com/qana-ai",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    }
+  ]
+}

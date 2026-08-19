@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen-3.8-27B-Heretic-i1-GGUF",
+  "slug": "mradermacher-qwen-3-8-27b-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen-3.8-27B-Heretic-i1-GGUF",
+  "created_at": "2026-08-15T22:00:45.000Z",
+  "updated_at": "2026-08-16T01:46:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:OpenIntelligenceNet/Qwen-3.8-27B-Heretic",
+    "base_model:quantized:OpenIntelligenceNet/Qwen-3.8-27B-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1531,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553875776,
+  "storage_human": "218.6 GB",
+  "base_model": "OpenIntelligenceNet/Qwen-3.8-27B-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

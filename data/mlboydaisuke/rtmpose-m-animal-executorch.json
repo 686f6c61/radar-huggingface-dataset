@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/RTMPose-m-Animal-ExecuTorch",
+  "slug": "mlboydaisuke-rtmpose-m-animal-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/RTMPose-m-Animal-ExecuTorch",
+  "created_at": "2026-08-14T07:45:05.000Z",
+  "updated_at": "2026-08-15T05:14:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "executorch-pte",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "keypoint-detection",
+    "pose-estimation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54530432,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/RTMPose-s-Body-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/RTMPose-s-Body-ExecuTorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - open-mmlab/mmpose: OpenMMLab Pose Estimation Toolbox and ...",
+      "url": "https://github.com/open-mmlab/mmpose",
+      "snippet": "OpenMMLab Pose Estimation Toolbox and Benchmark. Contribute to open-mmlab/mmpose development by creating an account on GitHub."
+    },
+    {
+      "title": "mmpose/projects/rtmpose at main · open-mmlab/mmpose · GitHub",
+      "url": "https://github.com/open-mmlab/mmpose/tree/main/projects/rtmpose",
+      "snippet": "OpenMMLab Pose Estimation Toolbox and Benchmark. Contribute to open-mmlab/mmpose development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=rtmpose",
+      "snippet": "Explore machine learning models. 13 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: rtmpose Clear all"
+    },
+    {
+      "title": "RTMPose | open-mmlab/mmpose | DeepWiki",
+      "url": "https://deepwiki.com/open-mmlab/mmpose/7.1-rtmpose",
+      "snippet": "RTMPose is a real-time multi-person pose estimation project within MMPose that bridges academic pose estimation research with industrial deployment requirements. It provides high-performance models optimized for speed while maintaining competitive accuracy, along with comprehensive deployment support across multiple platforms and inference ..."
+    }
+  ]
+}

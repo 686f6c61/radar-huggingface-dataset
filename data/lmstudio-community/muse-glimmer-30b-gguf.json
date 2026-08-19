@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lmstudio-community/Muse-Glimmer-30B-GGUF",
+  "slug": "lmstudio-community-muse-glimmer-30b-gguf",
+  "author": "lmstudio-community",
+  "url": "https://huggingface.co/lmstudio-community/Muse-Glimmer-30B-GGUF",
+  "created_at": "2026-08-10T02:37:45.000Z",
+  "updated_at": "2026-08-12T19:51:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 10,
+  "downloads_30d": 259643,
+  "trending_score": 9,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 34913693888,
+  "storage_human": "34.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lmstudio-community/Muse-Glimmer-30B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/lmstudio-community/Muse-Glimmer-30B-GGUF",
+      "snippet": "lmstudio-community / Muse-Glimmer-30B-GGUF like 2 Follow LM Studio Community 4.76k GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "meta/muse-glimmer • LM Studio",
+      "url": "https://lmstudio.ai/models/meta/muse-glimmer",
+      "snippet": "Muse Glimmer 30B Muse Glimmer is Meta&#x27;s 30B parameter open model built for local, agentic AI. It combines multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery in a model designed to run on consumer hardware without requiring cloud infrastructure. Highlights Optimized for local agents: designed for autonomous workflows on high-end PCs and workstations ..."
+    },
+    {
+      "title": "Muse Glimmer - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/muse-glimmer",
+      "snippet": "Muse Glimmer is Meta&#x27;s 30B open model for local agents, combining multimodal understanding, tool use, long-horizon reasoning, and failure recovery."
+    },
+    {
+      "title": "meta-models/Muse-Glimmer-30B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your ...",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "snippet": "Muse Glimmer is a 30-billion-parameter open agentic model from Meta Superintelligence Labs, optimized for always-on local workflows on consumer hardware."
+    }
+  ]
+}

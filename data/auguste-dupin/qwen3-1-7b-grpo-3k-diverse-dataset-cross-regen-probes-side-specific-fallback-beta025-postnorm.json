@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Auguste-Dupin/Qwen3-1.7B-GRPO-3k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-postnorm",
+  "slug": "auguste-dupin-qwen3-1-7b-grpo-3k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-postnorm",
+  "author": "Auguste-Dupin",
+  "url": "https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-3k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-postnorm",
+  "created_at": "2026-08-17T00:36:54.000Z",
+  "updated_at": "2026-08-17T00:37:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150935797,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auguste-Dupin/Qwen3-1.7B-GRPO-2k-diverse-dataset-cross-regen-probes ...",
+      "url": "https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-2k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-postnorm",
+      "snippet": "Qwen3-1.7B-GRPO-2k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-postnorm"
+    },
+    {
+      "title": "Auguste-Dupin/Qwen3-1.7B-GRPO-2k-single-classic-regen-diverse ...",
+      "url": "https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-2k-single-classic-regen-diverse-normalization-baseline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    }
+  ]
+}

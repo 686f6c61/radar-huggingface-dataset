@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Jundot/Qwen3.8-27B-oQ8e-fp16-mtp",
+  "slug": "jundot-qwen3-8-27b-oq8e-fp16-mtp",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/Qwen3.8-27B-oQ8e-fp16-mtp",
+  "created_at": "2026-08-18T02:47:05.000Z",
+  "updated_at": "2026-08-18T02:50:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 8184279792,
+  "parameters_human": "8.18B",
+  "storage_bytes": 30935909529,
+  "storage_human": "30.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/evsinlb/Qwen3.8-27B-oQ8e-fp16-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "scottlowry/Qwen3.8-27B-oQ8e-fp16-mtp at main - Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ8e-fp16-mtp/tree/main",
+      "snippet": "Instructions to use scottlowry/Qwen3.8-27B-oQ8e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use scottlowry/Qwen3.8-27B-oQ8e-fp16-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ8e-fp16-mtp scottlowry/Qwen3.8-27B-oQ8e-fp16 ..."
+    }
+  ]
+}

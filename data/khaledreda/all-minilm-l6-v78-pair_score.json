@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "KhaledReda/all-MiniLM-L6-v78-pair_score",
+  "slug": "khaledreda-all-minilm-l6-v78-pair_score",
+  "author": "KhaledReda",
+  "url": "https://huggingface.co/KhaledReda/all-MiniLM-L6-v78-pair_score",
+  "created_at": "2026-08-17T05:54:41.000Z",
+  "updated_at": "2026-08-17T19:13:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:30527685",
+    "loss:CoSENTLoss",
+    "en",
+    "dataset:KhaledReda/pairs_with_scores_v63",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KhaledReda (Khaled Reda) - Hugging Face",
+      "url": "https://huggingface.co/KhaledReda/models",
+      "snippet": "AI & ML interests ... Recent Activity published a model 4 days ago ... updated a dataset 4 days ago"
+    },
+    {
+      "title": "KhaledReda/all-MiniLM-L6-v72-pair_score · Hugging Face",
+      "url": "https://huggingface.co/KhaledReda/all-MiniLM-L6-v72-pair_score",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pretrained Models — Sentence Transformers documentation",
+      "url": "https://www.sbert.net/docs/sentence_transformer/pretrained_models.html",
+      "snippet": "The all- * models were trained on all available training data (more than 1 billion training pairs) and are designed as general purpose models. The sentence-transformers/all-mpnet-base-v2 model provides the best quality, while sentence-transformers/all-MiniLM-L6-v2 is 5 times faster and still offers good quality."
+    },
+    {
+      "title": "What it is and how to install and run locally the LLM AI: all-minilm ...",
+      "url": "https://makiai.com/en/what-it-is-and-how-to-install-and-run-locally-the-llm-ai-all-minilm/",
+      "snippet": "The All-MiniLM-L6-v2 model introduces significant advancements in multilingual sentence embedding through self-supervised contrastive learning, enabling efficient and high-quality representations across languages. By training on a large-scale sentence-level dataset and fine-tuning on 1 billion sentence pairs, it achieves state-of-the-art performance in semantic similarity tasks while ..."
+    },
+    {
+      "title": "KhaledReda/all-MiniLM-L6-v59-pair_score · Discussions",
+      "url": "https://d6108366.hf-mirror.com/KhaledReda/all-MiniLM-L6-v59-pair_score/discussions",
+      "snippet": "Instructions to use KhaledReda/all-MiniLM-L6-v59-pair_score with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use KhaledReda/all-MiniLM-L6-v59-pair_score with sentence-transformers:"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "Quran-Lab/zipformer_p-arabic-v3",
+  "slug": "quran-lab-zipformer_p-arabic-v3",
+  "author": "Quran-Lab",
+  "url": "https://huggingface.co/Quran-Lab/zipformer_p-arabic-v3",
+  "created_at": "2026-08-16T07:05:20.000Z",
+  "updated_at": "2026-08-17T12:37:53.000Z",
+  "license": "npl-1.1",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "coreml",
+    "onnx",
+    "zipformer_ctc",
+    "quran",
+    "tajweed",
+    "phoneme-recognition",
+    "streaming",
+    "ctc",
+    "zipformer",
+    "automatic-speech-recognition",
+    "ar",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1399410237,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Quran-Lab/quranic-asr-benchmark (v1.1)",
+      "metric": "Phoneme Error Rate, held-out studio reciters",
+      "value": 1.43
+    },
+    {
+      "task": null,
+      "dataset": "Quran-Lab/quranic-asr-benchmark (v1.1)",
+      "metric": "Phoneme Error Rate, real phone audio",
+      "value": 3.65
+    },
+    {
+      "task": null,
+      "dataset": "Quran-Lab/quranic-asr-benchmark (v1.1)",
+      "metric": "Phoneme Error Rate, unseen reciter",
+      "value": 9.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Quran-Lab/zipformer_p-arabic-v3 · Hugging Face",
+      "url": "https://huggingface.co/Quran-Lab/zipformer_p-arabic-v3",
+      "snippet": "zipformer_p-arabic-v3 A 65.5M-parameter streaming phoneme recogniser for Qur&#x27;an recitation (Hafs &#x27;an &#x27;Asim), built on Zipformer2 with a CTC head. It transcribes recitation directly into a 251-symbol Qur&#x27;anic phonetic alphabet that encodes tajweed-relevant distinctions: madd length, gemination, ghunna, ikhfaa, qalqalah, and the emphatic consonants."
+    },
+    {
+      "title": "Muno459/zipformer_p-quran · Hugging Face",
+      "url": "https://huggingface.co/Muno459/zipformer_p-quran",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quran Lab - AI-Powered Quran Learning - GitHub",
+      "url": "https://github.com/ADANiD-AI/QuranLab",
+      "snippet": "Quran Lab is a free, open-source AI app for Tajweed recitation analysis, memorization, and certification. Built with Next.js, Supabase, and Hugging Face models."
+    },
+    {
+      "title": "GitHub - Naazimsnh02/whisper-large-v3-turbo-ar-quran",
+      "url": "https://github.com/Naazimsnh02/whisper-large-v3-turbo-ar-quran",
+      "snippet": "🕌 Whisper Large V3 Turbo - Quranic Arabic ASR A state-of-the-art Arabic Quranic speech recognition model fine-tuned on the comprehensive tarteel-ai/everyayah dataset. This model achieves exceptional accuracy in transcribing Quranic recitations with diverse reciters and recitation styles."
+    },
+    {
+      "title": "digitalquranlab.github.io | QuranLab is an open incubator for quranic ...",
+      "url": "https://digitalquranlab.github.io/",
+      "snippet": "digitalquranlab.github.io QuranLab is an open incubator for quranic ideas and experiments View My GitHub Profile QuranLab is an open incubator for quranic ideas and experiments There is no limit to Quranic exploration. You are encouraged to suggest and be a part of these efforts to deep dive Quranic studies, unravel timeless treasures through data mining, text analysis, visualiszations and ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Zyroxx66/Qwen2.5-3B-Somali-CPT-Stage2",
+  "slug": "zyroxx66-qwen2-5-3b-somali-cpt-stage2",
+  "author": "Zyroxx66",
+  "url": "https://huggingface.co/Zyroxx66/Qwen2.5-3B-Somali-CPT-Stage2",
+  "created_at": "2026-08-16T15:38:46.000Z",
+  "updated_at": "2026-08-17T00:22:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "base_model:unsloth/Qwen2.5-3B-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-3B-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7167676783,
+  "storage_human": "7.2 GB",
+  "base_model": "unsloth/Qwen2.5-3B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zyroxx66/Qwen2.5-3B-Somali-CPT · Hugging Face",
+      "url": "https://huggingface.co/Zyroxx66/Qwen2.5-3B-Somali-CPT",
+      "snippet": "Instructions to use Zyroxx66/Qwen2.5-3B-Somali-CPT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Zyroxx66/Qwen2.5-3B-Somali-CPT with Transformers:"
+    },
+    {
+      "title": "Zyroxx66/Somali-3B-CPT-Checkpoints · Hugging Face",
+      "url": "https://huggingface.co/Zyroxx66/Somali-3B-CPT-Checkpoints",
+      "snippet": "Model Card for Somali-3B-CPT-Checkpoints This model is a fine-tuned version of unsloth/Qwen2.5-3B-bnb-4bit. It has been trained using TRL."
+    },
+    {
+      "title": "qwen2.5:3b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:3b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Qwen 2.5 Setup: Run GPT‑4‑Level Model on 16GB VRAM Without Cloud",
+      "url": "https://markaicode.com/howto/qwen-25-setup-and-configuration-guide/",
+      "snippet": "Step-by-step Qwen 2.5 setup guide for running locally on Ollama, with exact commands, VRAM requirements, and production configuration. For AI developers building private inference pipelines."
+    }
+  ]
+}

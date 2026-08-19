@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Mamad8/H3-Latent-Upscaler-2x",
+  "slug": "mamad8-h3-latent-upscaler-2x",
+  "author": "Mamad8",
+  "url": "https://huggingface.co/Mamad8/H3-Latent-Upscaler-2x",
+  "created_at": "2026-08-08T01:01:15.000Z",
+  "updated_at": "2026-08-08T02:01:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "video",
+    "latent-upscaler",
+    "comfyui",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59022848,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mamad8/H3-Latent-Upscaler-2x · Hugging Face",
+      "url": "https://huggingface.co/Mamad8/H3-Latent-Upscaler-2x",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mamad8c/ComfyUI-H3-Latent-Upscaler-Mamad8",
+      "url": "https://github.com/mamad8c/ComfyUI-H3-Latent-Upscaler-Mamad8",
+      "snippet": "Two minimal ComfyUI nodes for the Mamad8 MiniMax H3 clean-latent 2× upscaler. The model doubles the spatial dimensions of a fully denoised MiniMax H3 video latent while keeping its temporal length unchanged. When the input is H3&#x27;s joint video/audio latent, the node changes only the video stream and preserves the audio stream."
+    },
+    {
+      "title": "Mamad8/H3-Latent-Upscaler-2x at main - Hugging Face",
+      "url": "https://huggingface.co/Mamad8/H3-Latent-Upscaler-2x/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 2x Latent Upscaler With ComfyUI Nodes",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-08-minimax-h3-latent-upscaler",
+      "snippet": "Mamad8 releases a 2x clean-latent upscaler for MiniMax H3 with two ComfyUI nodes, doubling spatial resolution before VAE decode while staying in latent space."
+    },
+    {
+      "title": "ComfyUI-H3-Latent-Upscaler-Mamad8/workflows at main - GitHub",
+      "url": "https://github.com/mamad8c/ComfyUI-H3-Latent-Upscaler-Mamad8/tree/main/workflows",
+      "snippet": "Contribute to mamad8c/ComfyUI-H3-Latent-Upscaler-Mamad8 development by creating an account on GitHub."
+    }
+  ]
+}

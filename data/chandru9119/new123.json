@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Chandru9119/new123",
+  "slug": "chandru9119-new123",
+  "author": "Chandru9119",
+  "url": "https://huggingface.co/Chandru9119/new123",
+  "created_at": "2026-08-17T04:46:48.000Z",
+  "updated_at": "2026-08-17T04:48:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-/README-EN.md at master · new123-ui/AI- · GitHub",
+      "url": "https://github.com/new123-ui/AI-/blob/master/README-EN.md",
+      "snippet": "AI Smart Analysis (v3.0.0 New) AI conversational analysis system based on MCP (Model Context Protocol), enabling deep data mining with natural language. Conversational Query: Ask in natural language, like \"Query yesterday&#x27;s Zhihu trending\" or \"Analyze recent Bitcoin popularity trends\""
+    },
+    {
+      "title": "Chandru9119 · GitHub",
+      "url": "https://github.com/Chandru9119",
+      "snippet": "Machine Learning internship project implementing a complete ML pipeline including data preprocessing, model training, evaluation, and result analysis using Python and Jupyter Notebook."
+    },
+    {
+      "title": "GitHub - Chandru9119/FUTURE_INTERN_TASK_2: Machine Learning ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/chandru-uddegoudra-5512142b7_github-chandru9119futureinterntask2-activity-7432718755853578241-d7jW",
+      "snippet": "Task 2 Completed - FUTURE_INTERN_TASK_2 Successfully completed Task 2 of my ML internship. Built and evaluated the model with improved accuracy and insights. 🔗 GitHub: https://lnkd.in/gB ..."
+    },
+    {
+      "title": "GitHub - Chandru9119/FUTURE_INTERN_TASK_3 | chandru Uddegoudra - LinkedIn",
+      "url": "https://www.linkedin.com/posts/chandru-uddegoudra-5512142b7_github-chandru9119futureinterntask3-activity-7432718858878222337-5Xdu",
+      "snippet": "Task 3 Completed - FUTURE_INTERN_TASK_3 Proud to share that I&#x27;ve completed Task 3 of my ML internship! Enhanced model performance and implemented key improvements. 🔗 GitHub: https://lnkd.in ..."
+    },
+    {
+      "title": "new123 Instance Segmentation Model by new",
+      "url": "https://universe.roboflow.com/new-225bx/new123",
+      "snippet": "457 open source gravel-rocas images plus a pre-trained new123 model and API. Created by new"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/XORTRON-CriminalComputing-EnablementEngine-v0.3-GGUF",
+  "slug": "mradermacher-xortron-criminalcomputing-enablementengine-v0-3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/XORTRON-CriminalComputing-EnablementEngine-v0.3-GGUF",
+  "created_at": "2026-08-17T11:42:13.000Z",
+  "updated_at": "2026-08-17T12:10:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "en",
+    "base_model:darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3",
+    "base_model:quantized:darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908662720,
+  "storage_human": "213.9 GB",
+  "base_model": "darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/XORTRON.CriminalComputing.2026.27B.Instruct.v4-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/XORTRON.CriminalComputing.2026.27B.Instruct.v4-GGUF",
+      "snippet": "mradermacher / XORTRON.CriminalComputing.2026.27B.Instruct.v4-GGUF like 0 Transformers GGUF English heretic uncensored decensored abliterated conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/XORTRON.CriminalComputing.2026.27B.Instruct-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/XORTRON.CriminalComputing.2026.27B.Instruct-GGUF/tree/main",
+      "snippet": "mradermacher / XORTRON.CriminalComputing.2026.27B.Instruct-GGUF like 2 Transformers GGUF English heretic uncensored decensored abliterated conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mcg-221-xortron.criminalcomputing.2026.27b.next-mlx-8bit ... - GitHub",
+      "url": "https://github.com/Damacol/mcg-221-xortron.criminalcomputing.2026.27b.next-mlx-8bit/blob/main/README.md",
+      "snippet": "McG-221/XORTRON.CriminalComputing.2026.27B.NEXT-mlx-8Bit - Private, Uncensored AI for Real Creators and Devs Private inference with {MODEL}. Zero logs, full prompt freedom, and seamless Venice.ai integration for real creators."
+    },
+    {
+      "title": "Support Xortron Criminal Computing ️ - Ko-fi",
+      "url": "https://ko-fi.com/xortron",
+      "snippet": "Support Xortron Criminal Computing Costs... App backend inference provider. Compute for training, finetuning, experimentation."
+    },
+    {
+      "title": "mradermacher/XORTRON.CriminalComputing.LARGE.2026.3-i1-GGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2FXORTRON.CriminalComputing.LARGE.2026.3-i1-GGUF",
+      "snippet": "Download mradermacher/XORTRON.CriminalComputing.LARGE.2026.3-i1-GGUF GGUF model files. View model details, file sizes, and quantization options on MyGGUF."
+    }
+  ]
+}

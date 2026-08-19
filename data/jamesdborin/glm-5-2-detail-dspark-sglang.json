@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jamesdborin/glm-5.2-detail-dspark-sglang",
+  "slug": "jamesdborin-glm-5-2-detail-dspark-sglang",
+  "author": "jamesdborin",
+  "url": "https://huggingface.co/jamesdborin/glm-5.2-detail-dspark-sglang",
+  "created_at": "2026-08-18T10:34:23.000Z",
+  "updated_at": "2026-08-18T10:48:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dspark",
+    "glm",
+    "glm-5.2",
+    "custom_code",
+    "base_model:nvidia/GLM-5.2-NVFP4",
+    "base_model:finetune:nvidia/GLM-5.2-NVFP4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3152730753,
+  "parameters_human": "3.15B",
+  "storage_bytes": 6305465978,
+  "storage_human": "6.3 GB",
+  "base_model": "nvidia/GLM-5.2-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5: From Vibe Coding to Agentic Engineering. Contribute to zai-org/GLM-5 development by creating an account on GitHub."
+    },
+    {
+      "title": "mgoin/GLM-5.2-speculator.dspark · Hugging Face",
+      "url": "https://huggingface.co/mgoin/GLM-5.2-speculator.dspark",
+      "snippet": "Overview A DSpark speculator model for the zai-org/GLM-5.2-FP8 base model, enabling faster inference through speculative decoding. DSpark extends the DFlash parallel draft backbone with two lightweight heads: a Markov logit-bias head (low-rank intra-block token dependency) and a per-position confidence head (accept-rate prediction). Trained with the speculators library."
+    },
+    {
+      "title": "siro1/glm-5.2-dspark-preview · Hugging Face",
+      "url": "https://huggingface.co/siro1/glm-5.2-dspark-preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zai-org/GLM-5.2 | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/zai-org/GLM-5.2",
+      "snippet": "GLM-5.2 is the newest model in the GLM-5 series — a ~743B-parameter MoE (39B active) from Z-AI. The headline change over GLM-5 / 5.1 is that Multi-Token Prediction (MTP) is extended from 3 to 5 draft tokens, lifting end-to-end throughput on reasoning, coding, and agentic workloads."
+    },
+    {
+      "title": "GLM-5.2 on NVIDIA DGX Spark clusters - GitHub",
+      "url": "https://github.com/bird/GLM-spark",
+      "snippet": "Legacy: GLM-5.2 469B on 3× NVIDIA DGX Spark Serve the GLM-5.2-NVFP4-REAP-469B model (753B → 469B REAP-pruned, NVFP4 quantized) across a cluster of three NVIDIA DGX Spark nodes using vLLM with pipeline parallelism."
+    }
+  ]
+}

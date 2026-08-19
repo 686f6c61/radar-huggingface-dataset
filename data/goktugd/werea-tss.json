@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "GoktugD/Werea-TSS",
+  "slug": "goktugd-werea-tss",
+  "author": "GoktugD",
+  "url": "https://huggingface.co/GoktugD/Werea-TSS",
+  "created_at": "2026-08-18T15:36:50.000Z",
+  "updated_at": "2026-08-18T15:36:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "freyatts",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "freyatts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "turkish",
+    "flow-matching",
+    "synthetic-data",
+    "werea",
+    "tr",
+    "base_model:freyavoice/Freya-TTS",
+    "base_model:finetune:freyavoice/Freya-TTS",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 183198145,
+  "parameters_human": "183.2M",
+  "storage_bytes": 733073256,
+  "storage_human": "733 MB",
+  "base_model": "freyavoice/Freya-TTS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

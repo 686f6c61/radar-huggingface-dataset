@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "neuronpedia/jacobian-lens",
+  "slug": "neuronpedia-jacobian-lens",
+  "author": "neuronpedia",
+  "url": "https://huggingface.co/neuronpedia/jacobian-lens",
+  "created_at": "2026-06-17T18:37:03.000Z",
+  "updated_at": "2026-08-18T05:02:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "jacobian_lens",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 99,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58244141894,
+  "storage_human": "58.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jacobian Lens - Qwen3.6-27B ｜ Neuronpedia",
+      "url": "https://www.neuronpedia.org/qwen3.6-27b/jlens",
+      "snippet": "Neuronpedia Jacobian Lens NEW Natural Language Autoencoders NEW Assistant Axis NEW Circuit Tracer UPDATE Releases Jump To Models Search Steer Exports API Community Blog"
+    },
+    {
+      "title": "neuronpedia/jacobian-lens · Hugging Face",
+      "url": "https://huggingface.co/neuronpedia/jacobian-lens",
+      "snippet": "This folder contains pre-fitted Jacobian Lenses for specific models. They were trained using Anthropic&#x27;s Jacobian Lens library. The same library can be used to load the lens and local visualizer."
+    },
+    {
+      "title": "Looking Inside an AI Model: My First Experiment with Neuronpedia&#x27;s ...",
+      "url": "https://www.linkedin.com/pulse/looking-inside-ai-model-my-first-experiment-jacobian-lens-chauhan-wqwtc",
+      "snippet": "But what if we could look inside the model while it is processing information? That curiosity led me to explore Neuronpedia and one of its interpretability tools called Jacobian Lens."
+    },
+    {
+      "title": "jacobian-lens: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/jacobian-lens-neuronpedia",
+      "snippet": "Overview jacobian-lens is a collection of pre-fitted Jacobian Lens models for neural network interpretability, maintained by neuronpedia. These models were trained using Anthropic&#x27;s Jacobian Lens library, a tool designed to understand how neural networks process information by analyzing the relationship between inputs and outputs through Jacobian matrices. The most important thing to know ..."
+    },
+    {
+      "title": "neuronpedia/jacobian-lens at main - Hugging Face",
+      "url": "https://huggingface.co/neuronpedia/jacobian-lens/tree/main/llama3.1-8b/jlens",
+      "snippet": "94 Follow neuronpedia 42 jacobian_lens License:mit Model card FilesFiles and versions xet Community 3 Copy to bucket new main jacobian-lens / llama3.1-8b /jlens 1.04 GB Ctrl+K Ctrl+K 3 contributors History:1 commit Neuronpedia Upload folder using huggingface_hub 4f30bb8 verifiedabout 2 months ago Salesforce-wikitextUpload folder using ..."
+    }
+  ]
+}

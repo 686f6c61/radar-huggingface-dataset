@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "logic65/Qwen3.8-Whittle-48L-cut",
+  "slug": "logic65-qwen3-8-whittle-48l-cut",
+  "author": "logic65",
+  "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-48L-cut",
+  "created_at": "2026-08-16T12:37:09.000Z",
+  "updated_at": "2026-08-16T12:37:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pruning",
+    "depth-pruning",
+    "zero-training",
+    "gguf",
+    "qwen3_5",
+    "gated-deltanet",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B-FP8",
+    "base_model:finetune:Qwen/Qwen3.8-27B-FP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logic65/Qwen3.8-Whittle-16B · Hugging Face",
+      "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-16B",
+      "snippet": "Instructions to use logic65/Qwen3.8-Whittle-16B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use logic65/Qwen3.8-Whittle-16B with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Qwen3.8 - openlm.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "Model releases - QwenCloud",
+      "url": "https://docs.qwencloud.com/changelog/models",
+      "snippet": "qwen3.8-max The Qwen3.8 native vision-language Max series model is Qwen&#x27;s most capable flagship model to date, featuring 2.4 trillion parameters with a Mixture-of-Experts architecture. It delivers outstanding performance comparable to the current state-of-the-art models, with significant improvements over the 3.7 series."
+    }
+  ]
+}

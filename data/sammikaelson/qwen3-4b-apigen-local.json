@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SamMikaelson/Qwen3-4B-APIGEN-Local",
+  "slug": "sammikaelson-qwen3-4b-apigen-local",
+  "author": "SamMikaelson",
+  "url": "https://huggingface.co/SamMikaelson/Qwen3-4B-APIGEN-Local",
+  "created_at": "2026-08-14T07:20:59.000Z",
+  "updated_at": "2026-08-15T17:23:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25859742219,
+  "storage_human": "25.9 GB",
+  "base_model": "unsloth/qwen3-4b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SamMikaelson/Qwen3-4B-APIGEN · Hugging Face",
+      "url": "https://huggingface.co/SamMikaelson/Qwen3-4B-APIGEN",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SamMikaelson/Qwen3-4B-APIGEN-Checkpoint-OLD at main",
+      "url": "https://huggingface.co/SamMikaelson/Qwen3-4B-APIGEN-Checkpoint-OLD/tree/main",
+      "snippet": "Instructions to use SamMikaelson/Qwen3-4B-APIGEN-Checkpoint-OLD with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen 3 (4B) local AI: RAM + LM Studio | LocalClaw",
+      "url": "https://localclaw.io/models/qwen3-4b",
+      "snippet": "Qwen 3 (4B): 4B local AI model guide with RAM requirements, Q5_K_M quantization, benchmarks, use cases and LM Studio setup."
+    },
+    {
+      "title": "Best Qwen Models Ranked: Which to Run Locally (Mid-2026)",
+      "url": "https://insiderllm.com/guides/qwen-models-guide/",
+      "snippet": "Complete Qwen models guide covering Qwen 3.6, Qwen 3.5, Qwen 3, Qwen3-Coder-Next, and Qwen-VL. VRAM requirements, Ollama setup, hybrid Gated DeltaNet architecture, and benchmarks vs Llama 4 and DeepSeek V4."
+    }
+  ]
+}

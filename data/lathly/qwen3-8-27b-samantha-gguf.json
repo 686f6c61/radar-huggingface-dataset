@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Lathly/Qwen3.8-27B-Samantha-GGUF",
+  "slug": "lathly-qwen3-8-27b-samantha-gguf",
+  "author": "Lathly",
+  "url": "https://huggingface.co/Lathly/Qwen3.8-27B-Samantha-GGUF",
+  "created_at": "2026-08-17T18:33:35.000Z",
+  "updated_at": "2026-08-17T19:24:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama-cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "samantha",
+    "conversational",
+    "uncensored",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "base_model:Lathly/Qwen3.8-27B-Samantha",
+    "base_model:quantized:Lathly/Qwen3.8-27B-Samantha",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 75121042880,
+  "storage_human": "75.1 GB",
+  "base_model": "Lathly/Qwen3.8-27B-Samantha",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Samantha (Uncensored 1.1) — LoRA - Hugging Face",
+      "url": "https://huggingface.co/Lathly/Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA",
+      "snippet": "Note on the base architecture: Qwen3.8-27B is a new hybrid/multimodal model (Qwen3_5ForConditionalGeneration, internal arch tag qwen35, with linear-attention/mamba and MTP layers). This affected both LoRA→GGUF conversion and adapter loading — see Usage → GGUF below for the one extra step needed."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B - unsloth.ai",
+      "url": "https://unsloth.ai/models/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is a hybrid thinking open model for agentic coding and chat. Run Qwen3.8-27B locally via Unsloth Dynamic GGUFs and Unsloth Desktop."
+    },
+    {
+      "title": "Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA - friendli.ai",
+      "url": "https://friendli.ai/models/Lathly/Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA",
+      "snippet": "Model Details Model Provider Lathly Model Tree Base Qwen/Qwen3.8-27B Adapter this model Input Modalities TextImageVideo Output Modalities Text Supported Functionality Dedicated Endpoints"
+    },
+    {
+      "title": "Best Qwen3.8-27B GGUF: Q2, Q3, Q4, Q5, Q6 and Q8 - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/",
+      "snippet": "Compare exact Qwen3.8-27B Q2, Q3, Q4, Q5, Q6 and Q8 GGUF files by quality, memory, context and publisher; choose the right download for your hardware."
+    }
+  ]
+}

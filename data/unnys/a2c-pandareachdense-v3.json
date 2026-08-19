@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "unnys/a2c-PandaReachDense-v3",
+  "slug": "unnys-a2c-pandareachdense-v3",
+  "author": "unnys",
+  "url": "https://huggingface.co/unnys/a2c-PandaReachDense-v3",
+  "created_at": "2026-08-16T19:44:55.000Z",
+  "updated_at": "2026-08-17T12:07:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1153153,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "colleryu/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/colleryu/a2c-PandaReachDense-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Andyrasika/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/Andyrasika/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "GitHub - HusseinEid101/a2c-PandaReachDense-v3: This is a trained model ...",
+      "url": "https://github.com/HusseinEid101/a2c-PandaReachDense-v3",
+      "snippet": "This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "a2c-PandaReachDense-v3/README.md at main · HusseinEid101/a2c ... - GitHub",
+      "url": "https://github.com/HusseinEid101/a2c-PandaReachDense-v3/blob/main/README.md",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "MRNH/a2c-PandaReachDense-v3 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mrnh-a2c-pandareachdense-v3",
+      "snippet": "MRNH a2c-PandaReachDense-v3 online free a2c-PandaReachDense-v3 huggingface.co is an online trial and call api platform, which integrates a2c-PandaReachDense-v3&#x27;s modeling effects, including api services, and provides a free online trial of a2c-PandaReachDense-v3, you can try a2c-PandaReachDense-v3 online for free by clicking the link below."
+    }
+  ]
+}

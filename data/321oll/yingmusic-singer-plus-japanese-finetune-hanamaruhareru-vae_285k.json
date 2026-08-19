@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "321oll/YingMusic-Singer-Plus-japanese-finetune-hanamaruhareru-VAE_285K",
+  "slug": "321oll-yingmusic-singer-plus-japanese-finetune-hanamaruhareru-vae_285k",
+  "author": "321oll",
+  "url": "https://huggingface.co/321oll/YingMusic-Singer-Plus-japanese-finetune-hanamaruhareru-VAE_285K",
+  "created_at": "2026-08-15T06:50:06.000Z",
+  "updated_at": "2026-08-15T06:58:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 624568721,
+  "storage_human": "625 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

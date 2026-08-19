@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Annadurai1212/tamil-toxicity-model",
+  "slug": "annadurai1212-tamil-toxicity-model",
+  "author": "Annadurai1212",
+  "url": "https://huggingface.co/Annadurai1212/tamil-toxicity-model",
+  "created_at": "2026-08-17T13:53:35.000Z",
+  "updated_at": "2026-08-17T14:01:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177854978,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711443432,
+  "storage_human": "711 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - unitaryai/detoxify: Trained models & code to predict toxic ...",
+      "url": "https://github.com/unitaryai/detoxify",
+      "snippet": "Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers. For access to our API, please email us at contact@unitary.ai. - unitaryai/detoxify"
+    },
+    {
+      "title": "The role of machine learning in predictive toxicology: A review of ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0024320525004564",
+      "snippet": "These AI-powered models provide early and accurate identification of toxicity risks, reducing reliance on animal testing and improving the efficiency of drug discovery. This review explores the role of AI models in predicting ADRs, emphasizing their ability to integrate diverse datasets and uncover complex toxicity mechanisms."
+    },
+    {
+      "title": "AI/ML-based computational models for toxicity prediction",
+      "url": "https://link.springer.com/article/10.1007/s11356-025-37354-8",
+      "snippet": "The increasing demand for accurate toxicity assessment and to minimise or eliminate the use of animal testing has accelerated the development of numerous computational models, AI/ML models, and online resources that support research in computational toxicology. This review addresses toxicity prediction and chemical safety evaluation, focusing on computational models and data coverage ..."
+    },
+    {
+      "title": "GitHub - shw868/TOXIC-DETECTOR: A multilingual toxic comment detector ...",
+      "url": "https://github.com/shw868/TOXIC-DETECTOR",
+      "snippet": "A multi-label identification model capable of identifying multiple forms of toxicity (such as threats, obscenity, insults, and identity-based hate) across multilingual text data, using the provided dataset. The system detects and classifies toxic content across 22 languages and scripts using a trained ML classifier served through a live REST API and visualized in a custom simulator UI."
+    },
+    {
+      "title": "Artificial Intelligence-Driven Drug Toxicity Prediction ... - MDPI",
+      "url": "https://www.mdpi.com/2305-6304/13/7/525",
+      "snippet": "AI technology, especially machine learning and deep learning algorithms [7], has powerful data processing and pattern recognition capabilities. In drug toxicity prediction, AI can quickly analyze massive data of drug structure, activity, toxicity, etc., and mine the hidden rules and associations so as to establish a high-precision prediction model."
+    }
+  ]
+}

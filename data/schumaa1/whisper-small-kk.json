@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "schumaa1/whisper-small-kk",
+  "slug": "schumaa1-whisper-small-kk",
+  "author": "schumaa1",
+  "url": "https://huggingface.co/schumaa1/whisper-small-kk",
+  "created_at": "2026-06-08T05:45:29.000Z",
+  "updated_at": "2026-08-16T20:50:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 8703092020,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "openai/whisper-small at main - Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Whisper Small - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/whisper-small.html",
+      "snippet": "Download Whisper Small GGUF model. 252 MB, 152 downloads, 0 likes."
+    },
+    {
+      "title": "Whisper Model Sizes: Complete Guide | OpenWhispr",
+      "url": "https://openwhispr.com/blog/whisper-model-sizes-explained",
+      "snippet": "Every Whisper model size compared: parameters, speed, accuracy, and RAM. Choose between tiny, small, large-v3, and turbo for local transcription."
+    }
+  ]
+}

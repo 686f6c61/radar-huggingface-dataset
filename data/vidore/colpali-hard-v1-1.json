@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "vidore/colpali-hard-v1.1",
+  "slug": "vidore-colpali-hard-v1-1",
+  "author": "vidore",
+  "url": "https://huggingface.co/vidore/colpali-hard-v1.1",
+  "created_at": "2024-08-21T08:55:20.000Z",
+  "updated_at": "2026-08-17T17:53:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "colpali",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "colpali",
+    "safetensors",
+    "vidore_no_match",
+    "vidore",
+    "sentence-transformers",
+    "multi-vector",
+    "visual-document-retrieval",
+    "en",
+    "arxiv:2004.12832",
+    "arxiv:2407.01449",
+    "arxiv:2106.09685",
+    "base_model:vidore/colpaligemma-3b-mix-448-base",
+    "base_model:finetune:vidore/colpaligemma-3b-mix-448-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 333469009,
+  "storage_human": "333 MB",
+  "base_model": "vidore/colpaligemma-3b-mix-448-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vidore/colpali-hard-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/vidore/colpali-hard-v1.1",
+      "snippet": "ColPali: Visual Retriever based on PaliGemma-3B with ColBERT strategy ColPali is a model based on a novel model architecture and training strategy based on Vision Language Models (VLMs) to efficiently index documents from their visual features. It is a PaliGemma-3B extension that generates ColBERT - style multi-vector representations of text and images. It was introduced in the paper ColPali ..."
+    },
+    {
+      "title": "ColPali Models - a vidore Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/vidore/colpali-models",
+      "snippet": "Pre-trained checkpoints for the ColPali model."
+    },
+    {
+      "title": "vidore/colpali-hard-v1.1 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/vidore-colpali-hard-v1-1",
+      "snippet": "Introduction of colpali-hard-v1.1 Model Details of colpali-hard-v1.1 ColPali: Visual Retriever based on PaliGemma-3B with ColBERT strategy ColPali is a model based on a novel model architecture and training strategy based on Vision Language Models (VLMs) to efficiently index documents from their visual features."
+    },
+    {
+      "title": "colpali-v1.1 huggingface.co api & vidore colpali-v1.1 github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/vidore-colpali-v1-1",
+      "snippet": "colpali-v1.1 huggingface.co is an AI model on huggingface.co that provides colpali-v1.1&#x27;s model effect (), which can be used instantly with this vidore colpali-v1.1 model. huggingface.co supports a free trial of the colpali-v1.1 model, and also provides paid use of the colpali-v1.1."
+    },
+    {
+      "title": "Colpali-v1.1 Open-Source Visual Retrieval Model - Free Deployment ...",
+      "url": "https://model.aibase.com/models/details/1915687310647312386",
+      "snippet": "Compared to `colpali`, it is trained with right padding for queries to fix unwanted tokens in the query encoding. It also stems from the fixed `vidore/colpaligemma-3b-mix-448-base` to guarantee deterministic projection layer initialization. The data is the same as the ColPali data described in the paper."
+    }
+  ]
+}

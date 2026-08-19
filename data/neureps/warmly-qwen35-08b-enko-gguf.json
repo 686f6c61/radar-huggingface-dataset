@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "neureps/warmly-qwen35-08b-enko-gguf",
+  "slug": "neureps-warmly-qwen35-08b-enko-gguf",
+  "author": "neureps",
+  "url": "https://huggingface.co/neureps/warmly-qwen35-08b-enko-gguf",
+  "created_at": "2026-07-15T04:42:30.000Z",
+  "updated_at": "2026-08-17T01:11:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "korean",
+    "warmly",
+    "lora",
+    "image-text-to-text",
+    "ko",
+    "en",
+    "base_model:neureps/Qwen3.5-0.8B-enko",
+    "base_model:adapter:neureps/Qwen3.5-0.8B-enko",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4434,
+  "trending_score": 0,
+  "parameters": 649817920,
+  "parameters_human": "649.8M",
+  "storage_bytes": 8833588320,
+  "storage_human": "8.8 GB",
+  "base_model": "neureps/Qwen3.5-0.8B-enko",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

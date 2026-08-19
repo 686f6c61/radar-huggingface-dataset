@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "devan-carlin/Qwen3.8-27B-int4-AutoRound",
+  "slug": "devan-carlin-qwen3-8-27b-int4-autoround",
+  "author": "devan-carlin",
+  "url": "https://huggingface.co/devan-carlin/Qwen3.8-27B-int4-AutoRound",
+  "created_at": "2026-08-15T05:49:38.000Z",
+  "updated_at": "2026-08-15T05:52:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "int4",
+    "auto-round",
+    "quantization",
+    "xpu",
+    "intel-arc",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 272,
+  "trending_score": 0,
+  "parameters": 6284446960,
+  "parameters_human": "6.28B",
+  "storage_bytes": 19016695397,
+  "storage_human": "19.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "devan-carlin/Qwen3.8-27B-int4-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/devan-carlin/Qwen3.8-27B-int4-AutoRound",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is an AI model released by Qwen on Friday, Aug 14 2026, 11 days after Qwen3.8-Max. It is an open-weight model — the trained weights are available to download and run."
+    },
+    {
+      "title": "Devan Carlin - GitHub",
+      "url": "https://github.com/devan-carlin/devan-carlin",
+      "snippet": "Models Qwen3.8-27B INT4 (AutoRound) — INT4 w4g128 quantization, 18 GB, 256K context. 47.8 tok/s on 4x Arc Pro B70 (58% faster than BF16, quality parity)."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen3.8-27B-MixedInt4-AutoRound — The New Single-Spark King?",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-27b-mixedint4-autoround-the-new-single-spark-king/380248",
+      "snippet": "Hi everyone, Qwen3.8-27B is release, and I&#x27;ve quantized it with AutoRound with one main goal: Preserve as much of the original model quality as possible while significantly improving inference speed and reducing memory usage. The result is: Qwen3.8-27B-MixedInt4-AutoRound [20.8 GB] This model looks particularly well suited for single DGX Spark users. It uses a mixed 4-bit quantization scheme ..."
+    }
+  ]
+}

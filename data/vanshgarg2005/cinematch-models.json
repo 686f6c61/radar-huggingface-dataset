@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "VANSHGARG2005/cinematch-models",
+  "slug": "vanshgarg2005-cinematch-models",
+  "author": "VANSHGARG2005",
+  "url": "https://huggingface.co/VANSHGARG2005/cinematch-models",
+  "created_at": "2025-09-02T14:51:42.000Z",
+  "updated_at": "2026-08-16T01:36:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 765825930,
+  "storage_human": "766 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

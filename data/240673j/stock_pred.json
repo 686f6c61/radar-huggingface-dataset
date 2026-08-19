@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "240673J/Stock_Pred",
+  "slug": "240673j-stock_pred",
+  "author": "240673J",
+  "url": "https://huggingface.co/240673J/Stock_Pred",
+  "created_at": "2026-08-18T15:47:54.000Z",
+  "updated_at": "2026-08-18T15:47:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kaushik37-sk/AI-Stock-Market-Prediction: An AI-powered stock ...",
+      "url": "https://github.com/kaushik37-sk/AI-Stock-Market-Prediction",
+      "snippet": "AI Stock Market Prediction Overview This project utilizes machine learning techniques, specifically LSTM (Long Short-Term Memory) neural networks, to predict future stock prices based on historical data. The model uses various technical indicators (such as RSI, MACD, EMA, OBV, and Bollinger Bands) to enhance the prediction&#x27;s accuracy. The stock data is sourced from Yahoo Finance using the ..."
+    },
+    {
+      "title": "MarketCrunch AI - Daily Stock Forecasts & Trading Insights",
+      "url": "https://marketcrunch.ai/",
+      "snippet": "MarketCrunch AI offers daily stock forecasts and real-time market insights. Get AI-driven stock picks and actionable analysis for better investment decisions."
+    },
+    {
+      "title": "GitHub - hemangjoshi37a/TrendMaster: Using Transformer deep learning ...",
+      "url": "https://github.com/hemangjoshi37a/TrendMaster",
+      "snippet": "TrendMaster: Advanced Stock Price Prediction using Transformer Deep Learning TrendMaster is an advanced stock price prediction library that leverages Transformer deep learning architecture to deliver highly accurate predictions, empowering investors with data-driven insights."
+    },
+    {
+      "title": "LTSM Stock Predictor | LTSM-Stock-Predictor",
+      "url": "https://yapkhaichuen.github.io/LTSM-Stock-Predictor/",
+      "snippet": "Predicting different stock prices using Long Short-Term Memory Recurrent Neural Network in Python using TensorFlow 2 and Keras."
+    },
+    {
+      "title": "What is the Most Accurate AI Stock Predictor? The 10 Best AI Stock ...",
+      "url": "https://www.wallstreetzen.com/blog/best-ai-stock-predictor/",
+      "snippet": "Do AI-powered stock predictors actually give you an edge in the market? Let&#x27;s discuss — and talk about the best AI stock predictors out there."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "franecki/pi0_soarm101_lora",
+  "slug": "franecki-pi0_soarm101_lora",
+  "author": "franecki",
+  "url": "https://huggingface.co/franecki/pi0_soarm101_lora",
+  "created_at": "2026-08-18T08:21:04.000Z",
+  "updated_at": "2026-08-18T09:13:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7002886000,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sustechxzd/soarm101_openpi: The openpi project rebuild for ...",
+      "url": "https://github.com/sustechxzd/soarm101_openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "soarm101-isaac/docs/OPENPI_TRAINING.md at main · Jbruslind ... - GitHub",
+      "url": "https://github.com/Jbruslind/soarm101-isaac/blob/main/docs/OPENPI_TRAINING.md",
+      "snippet": "Recommendation: Use pi0-FAST (soarm_pi0_fast config) for the SO-ARM101. It&#x27;s faster at inference, uses less VRAM, and works well with LoRA fine-tuning on small datasets."
+    },
+    {
+      "title": "OpenPI (π0) Sample | aws-samples/sample-physical-ai-scaffolding-kit ...",
+      "url": "https://deepwiki.com/aws-samples/sample-physical-ai-scaffolding-kit/3-openpi-(p0)-sample",
+      "snippet": "The OpenPI (π0) Sample provides a reference implementation for fine-tuning the π0 (pi-zero) model from $1 using Low-Rank Adaptation (LoRA) on Amazon SageMaker HyperPod. This workload demonstrates how"
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    },
+    {
+      "title": "Model Configuration and LoRA Fine-Tuning | hzm8341/pi0.6 | DeepWiki",
+      "url": "https://deepwiki.com/hzm8341/pi0.6/2.3-model-configuration-and-lora-fine-tuning",
+      "snippet": "Model Configuration and LoRA Fine-Tuning Relevant source files This page documents the configuration system for the π0 model family, focusing on the Pi0Config and MEMConfig dataclasses. It details how these configurations drive model instantiation and the \"freeze-filter\" mechanism used to manage LoRA (Low-Rank Adaptation) fine-tuning for the PaliGemma backbone and action expert. Configuration ..."
+    }
+  ]
+}

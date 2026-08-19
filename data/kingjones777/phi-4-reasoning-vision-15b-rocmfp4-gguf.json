@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Phi-4-Reasoning-Vision-15B-ROCmFP4-GGUF",
+  "slug": "kingjones777-phi-4-reasoning-vision-15b-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Phi-4-Reasoning-Vision-15B-ROCmFP4-GGUF",
+  "created_at": "2026-08-16T14:33:55.000Z",
+  "updated_at": "2026-08-16T14:35:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "gfx1151",
+    "strix-halo",
+    "amd",
+    "ryzen-ai-max-395",
+    "ai-max-395",
+    "rocmfpx",
+    "phi",
+    "vision",
+    "multimodal",
+    "reasoning",
+    "text-generation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 9378114144,
+  "storage_human": "9.4 GB",
+  "base_model": "microsoft/Phi-4-reasoning-vision",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning",
+  "slug": "ducanhdinh-qwen1-5-moe-a2-7b-finetuning",
+  "author": "ducanhdinh",
+  "url": "https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning",
+  "created_at": "2026-08-18T11:47:47.000Z",
+  "updated_at": "2026-08-18T12:02:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "moe",
+    "mixture-of-experts",
+    "machine-translation",
+    "fine-tuned",
+    "base_model:Qwen/Qwen1.5-MoE-A2.7B",
+    "base_model:adapter:Qwen/Qwen1.5-MoE-A2.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178008777,
+  "storage_human": "178 MB",
+  "base_model": "Qwen/Qwen1.5-MoE-A2.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen1.5-MoE-A2.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B",
+      "snippet": "Qwen1.5-MoE-A2.7B Introduction Qwen1.5-MoE is a transformer-based MoE decoder-only language model pretrained on a large amount of data. For more details, please refer to our blog post and GitHub repo. Model Details Qwen1.5-MoE employs Mixture of Experts (MoE) architecture, where the models are upcycled from dense language models. For instance, Qwen1.5-MoE-A2.7B is upcycled from Qwen-1.8B. It ..."
+    },
+    {
+      "title": "README.md · Qwen/Qwen1.5-MoE-A2.7B at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B/blob/main/README.md",
+      "snippet": "Qwen1.5-MoE-A2.7B Introduction Qwen1.5-MoE is a transformer-based MoE decoder-only language model pretrained on a large amount of data. For more details, please refer to our blog post and GitHub repo. Model Details Qwen1.5-MoE employs Mixture of Experts (MoE) architecture, where the models are upcycled from dense language models. For instance, Qwen1.5-MoE-A2.7B is upcycled from Qwen-1.8B. It ..."
+    },
+    {
+      "title": "Qwen/Qwen1.5-MoE-A2.7B · Hugging Face - huface.ru",
+      "url": "https://huface.ru/Qwen/Qwen1.5-MoE-A2.7B",
+      "snippet": "For instance, Qwen1.5-MoE-A2.7B is upcycled from Qwen-1.8B. It has 14.3B parameters in total and 2.7B activated parameters during runtime, while achieving comparable performance to Qwen1.5-7B, it only requires 25% of the training resources."
+    },
+    {
+      "title": "Qwen1.5 MoE A2.7B - 2.7B | OpenModelMap",
+      "url": "https://openmodelmap.com/model/Qwen/Qwen1.5-MoE-A2.7B",
+      "snippet": "Qwen1.5 MoE A2.7B is a Mixture of Experts model from the Tongyi Qianwen series, featuring a total parameter count of 2.7B with fewer activated parameters. This architecture delivers text generation capabilities comparable to larger models while maintaining low inference costs."
+    },
+    {
+      "title": "GitHub - hiyouga/Qwen1.5: Qwen1.5 is the improved version of Qwen, the ...",
+      "url": "https://github.com/hiyouga/Qwen1.5",
+      "snippet": "This time, we upgrade Qwen to Qwen1.5, the beta version of Qwen2. Similar to Qwen, it is still a decoder-only transformer model with SwiGLU activation, RoPE, multi-head attention. At this moment, we have achieved: 7 model sizes: 0.5B, 1.8B, 4B, 7B, 14B, and 72B models, plus a 14B (A2.7B) MoE model; Significant model quality improvements in chat models; Strengthened multilingual capabilities in ..."
+    }
+  ]
+}

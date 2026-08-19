@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "graysonggg/dlgpr",
+  "slug": "graysonggg-dlgpr",
+  "author": "graysonggg",
+  "url": "https://huggingface.co/graysonggg/dlgpr",
+  "created_at": "2026-08-15T04:08:01.000Z",
+  "updated_at": "2026-08-17T16:11:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836440,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Graysonggg/DlgPR: [CVPR 2026] official implementation of ...",
+      "url": "https://github.com/Graysonggg/DlgPR",
+      "snippet": "[CVPR 2026] official implementation of DialogueVPR: Towards Conversational Visual Place Recognition - Graysonggg/DlgPR"
+    },
+    {
+      "title": "graysonggg (graysong) - Hugging Face",
+      "url": "https://huggingface.co/graysonggg",
+      "snippet": "User profile of graysong on Hugging Face"
+    },
+    {
+      "title": "DlgPR/README.md at main · Graysonggg/DlgPR · GitHub",
+      "url": "https://github.com/Graysonggg/DlgPR/blob/main/README.md",
+      "snippet": "[CVPR 2026] official implementation of DialogueVPR: Towards Conversational Visual Place Recognition - DlgPR/README.md at main · Graysonggg/DlgPR"
+    },
+    {
+      "title": "DialogueVPR: Towards Conversational Visual Place Recognition",
+      "url": "https://arxiv.org/html/2607.14115v1",
+      "snippet": "The DlgPR framework reframes place recognition as a dynamic, interactive reasoning process, departing from traditional static retrieval. It orchestrates two core components: a multi-modal retriever, CMPL, that iteratively refines the search and a dialogue agent, DQ-pilot, that generates discriminative questions to resolve ambiguity."
+    },
+    {
+      "title": "DialogueVPR: Towards Conversational Visual Place Recognition",
+      "url": "https://arxiv.org/abs/2607.14115",
+      "snippet": "Inspired by how humans communicate spatial information, language-guided geo-localization has gained significant traction for its intuitive and practical value. Despite this progress, most methods still rely on a static, one-shot retrieval paradigm, which fails to handle the ambiguity and incompleteness inherent in real-world natural language descriptions. We propose a paradigm shift to ..."
+    }
+  ]
+}

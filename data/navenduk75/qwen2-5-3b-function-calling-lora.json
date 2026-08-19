@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "navenduk75/qwen2.5-3b-function-calling-lora",
+  "slug": "navenduk75-qwen2-5-3b-function-calling-lora",
+  "author": "navenduk75",
+  "url": "https://huggingface.co/navenduk75/qwen2.5-3b-function-calling-lora",
+  "created_at": "2026-08-17T10:26:43.000Z",
+  "updated_at": "2026-08-17T11:08:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "function-calling",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26192397,
+  "storage_human": "26 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amgustav/forge-qwen2.5-3b-function-calling · Hugging Face",
+      "url": "https://huggingface.co/amgustav/forge-qwen2.5-3b-function-calling",
+      "snippet": "Qwen2.5-3B Function Calling A fine-tuned version of Qwen2.5-3B-Instruct, trained to reliably call functions and operate as an AI agent — selecting the right API, formatting parameters correctly, and chaining multiple calls. What it does Give it a list of available tools and a user request, and it returns correctly formatted function calls."
+    },
+    {
+      "title": "Function Calling and Tool Use | QwenLM/Qwen2.5 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen2.5/2.2-function-calling-and-tool-use",
+      "snippet": "Relevant source files This page explains how to use Qwen2.5&#x27;s function calling and tool use capabilities, which allow the model to interact with external functions and tools. These capabilities enable Qwen2.5 to extend beyond text generation to perform actions like retrieving real-time information or executing calculations."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "Note that if you use LoRA to finetune the base language model, e.g., Qwen-7B, instead of chat models, e.g., Qwen-7B-Chat, the script automatically switches the embedding and output layer as trainable parameters."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    }
+  ]
+}

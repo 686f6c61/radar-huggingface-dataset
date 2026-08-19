@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ChandraU/Generative-2",
+  "slug": "chandrau-generative-2",
+  "author": "ChandraU",
+  "url": "https://huggingface.co/ChandraU/Generative-2",
+  "created_at": "2026-08-17T05:41:49.000Z",
+  "updated_at": "2026-08-17T05:48:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation-inference",
+    "text-generation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chandra OCR 2: The Open-Source Model That Reads What Others Can&#x27;t",
+      "url": "https://pub.towardsai.net/chandra-ocr-2-the-open-source-model-that-reads-what-others-cant-6a218faa0efd",
+      "snippet": "Chandra OCR 2 is an open-source AI model built specifically for document understanding. It was created by Datalab, the same team behind the widely-used Marker document processing library. At its core, Chandra 2 takes an image — a scanned page, a screenshot of a PDF, a photograph of a document — and converts it into structured text output."
+    },
+    {
+      "title": "Chandra 2: The Open-Source OCR Model Turning Messy Documents Into Agent ...",
+      "url": "https://themenonlab.blog/blog/chandra-2-ocr-model-structured-document-extraction",
+      "snippet": "Datalab&#x27;s Chandra 2 scores 85.9% on the olmOCR benchmark with a 4B model — half the size of its predecessor. Here&#x27;s why this matters for AI agents, RAG pipelines, and anyone dealing with real-world documents."
+    },
+    {
+      "title": "Chandra Bhagavatula",
+      "url": "https://www.chandrab.page/",
+      "snippet": "2. [Geekwire] Teaching artificial intelligence right from wrong: New tool from AI2 aims to model ethical judgments 3. [Wired] This Program Can Give AI a Sense of Ethics—Sometimes 4. [Geekwire] Researchers develop new way to help machine-generated language systems reduce toxic language 5. [Science Daily] New test reveals AI still lacks common ..."
+    },
+    {
+      "title": "GitHub - datalab-to/chandra: OCR model that handles complex tables ...",
+      "url": "https://github.com/datalab-to/chandra",
+      "snippet": "OCR model that handles complex tables, forms, handwriting with full layout. - datalab-to/chandra"
+    },
+    {
+      "title": "Chandra OCR 2: Open Source Beats Google & OpenAI Tutorial",
+      "url": "https://byteiota.com/chandra-ocr-2-open-source-beats-google-openai-tutorial/",
+      "snippet": "Chandra OCR 2, released March 18, 2026 by Datalab, beats Google Gemini 2.5 Flash by 10 percentage points and OpenAI GPT-5 Mini by 17 percentage points on multilingual document tests. The open-source model achieves 85.9% accuracy on the standard olmOCR benchmark—state-of-the-art performance—while remaining completely free and capable of local deployment. Unlike traditional OCR that merely ..."
+    }
+  ]
+}

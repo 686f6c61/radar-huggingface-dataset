@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "id": "lightonai/LateOn-Code-edge",
+  "slug": "lightonai-lateon-code-edge",
+  "author": "lightonai",
+  "url": "https://huggingface.co/lightonai/LateOn-Code-edge",
+  "created_at": "2026-02-05T16:29:16.000Z",
+  "updated_at": "2026-08-17T11:45:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "PyLate",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "multi-vector",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:2117771",
+    "loss:Contrastive",
+    "code",
+    "embeddings",
+    "retrieval",
+    "code search",
+    "en",
+    "dataset:lightonai/nv-embed-supervised-distill-dedup-code",
+    "arxiv:2412.01007",
+    "arxiv:2407.15831",
+    "arxiv:1908.10084",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:eu"
+  ],
+  "likes": 34,
+  "downloads_30d": 3266,
+  "trending_score": 0,
+  "parameters": 16797952,
+  "parameters_human": "16.8M",
+  "storage_bytes": 153017752,
+  "storage_human": "153 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.855
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.958
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.972
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.98
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Precision@1",
+      "value": 0.855
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Precision@3",
+      "value": 0.31933333333333325
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Precision@5",
+      "value": 0.19440000000000004
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Precision@10",
+      "value": 0.09800000000000002
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Recall@1",
+      "value": 0.855
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Recall@3",
+      "value": 0.958
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Recall@5",
+      "value": 0.972
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Recall@10",
+      "value": 0.98
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.9243945806879859
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.9057539682539687
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetPython",
+      "metric": "Maxsim Map@100",
+      "value": 0.9064418634729382
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.707
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.815
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.845
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.877
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Precision@1",
+      "value": 0.707
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Precision@3",
+      "value": 0.2716666666666666
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Precision@5",
+      "value": 0.169
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Precision@10",
+      "value": 0.08770000000000001
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Recall@1",
+      "value": 0.707
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Recall@3",
+      "value": 0.815
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Recall@5",
+      "value": 0.845
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Recall@10",
+      "value": 0.877
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.7937015046112885
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.7667960317460317
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetJavascript",
+      "metric": "Maxsim Map@100",
+      "value": 0.7695522566859624
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.92
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.978
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.987
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.991
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Precision@1",
+      "value": 0.92
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Precision@3",
+      "value": 0.32599999999999996
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Precision@5",
+      "value": 0.19740000000000005
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Precision@10",
+      "value": 0.09910000000000002
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Recall@1",
+      "value": 0.92
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Recall@3",
+      "value": 0.978
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Recall@5",
+      "value": 0.987
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Recall@10",
+      "value": 0.991
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.9607370553228975
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.9504940476190477
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetGo",
+      "metric": "Maxsim Map@100",
+      "value": 0.9507803176498298
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetRuby",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.737
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetRuby",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.87
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetRuby",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.899
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetRuby",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.921
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "CodeSearchNetRuby",
+      "metric": "Maxsim Precision@1",
+      "value": 0.737
+    }
+  ],
+  "sources": [
+    {
+      "title": "lightonai/LateOn-Code-edge · Hugging Face",
+      "url": "https://huggingface.co/lightonai/LateOn-Code-edge",
+      "snippet": "This is a PyLate model trained. It maps sentences & paragraphs to sequences of 48-dimensional dense vectors and can be used for semantic textual similarity using the MaxSim operator. Model Details Model Description Model Type: PyLate model Document Length: 2048 tokens Query Length: 256 tokens Output Dimensionality: 48 tokens Similarity Function ..."
+    },
+    {
+      "title": "lightonai/LateOn-Code-edge-pretrain · Hugging Face",
+      "url": "https://huggingface.co/lightonai/LateOn-Code-edge-pretrain",
+      "snippet": "We&#x27;ll release this base model along with training data and boilerplates in the near future, so stay tuned! The second, LateOn-Code-edge is a smaller model based on the edge-colbert model family from mixedbread, using the smallest variant (Ettin-17M) for maximum efficiency. For more details on the training setup, please refer to our blogpost."
+    },
+    {
+      "title": "LateOn-Code-edge · MTEB Leaderboard",
+      "url": "https://leaderboard.mteb.org/models/lightonai/LateOn-Code-edge",
+      "snippet": "lightonai/LateOn-Code-edge-pretrain Trained on AmazonQAAppsRetrievalCOIRCodeSearchNetRetrievalCodeFeedbackMTCodeFeedbackSTCodeSearchNetCCRetrievalCodeSearchNetRetrievalCodeTransOceanContest+10 moreShow fewerCodeTransOceanDLCornStackCosQAHotpotQALoTTEMSMARCOMultiLongDocRetrievalNQStackOverflowQASyntheticText2SQL Cite this model Citation (BibTeX ..."
+    },
+    {
+      "title": "LateOn-Code-edge-pretrain · MTEB Leaderboard",
+      "url": "https://leaderboard.mteb.org/models/lightonai/LateOn-Code-edge-pretrain",
+      "snippet": "late-interaction embedding model · 17M params · 48-dim · 7999 max tokens · open weights"
+    },
+    {
+      "title": "results/results/lightonai__LateOn-Code-edge at main - GitHub",
+      "url": "https://github.com/embeddings-benchmark/results/tree/main/results/lightonai__LateOn-Code-edge/",
+      "snippet": "Data for the MTEB leaderboard. Contribute to embeddings-benchmark/results development by creating an account on GitHub."
+    }
+  ]
+}

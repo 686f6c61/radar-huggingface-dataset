@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "teckedd/gha-dondo-w2v-bert-twi-v2",
+  "slug": "teckedd-gha-dondo-w2v-bert-twi-v2",
+  "author": "teckedd",
+  "url": "https://huggingface.co/teckedd/gha-dondo-w2v-bert-twi-v2",
+  "created_at": "2026-08-18T00:57:12.000Z",
+  "updated_at": "2026-08-18T00:58:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "tw",
+    "ak"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2-bert",
+    "automatic-speech-recognition",
+    "ak",
+    "akan",
+    "asante-twi",
+    "asr",
+    "ctc",
+    "dondo",
+    "ghana",
+    "ghana-health-ai",
+    "serendepify",
+    "tw",
+    "twi",
+    "w2v-bert",
+    "dataset:google/WaxalNLP",
+    "dataset:fsicoli/common_voice_22_0",
+    "dataset:local",
+    "base_model:KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+    "base_model:finetune:KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 605766551,
+  "parameters_human": "605.8M",
+  "storage_bytes": 2423171260,
+  "storage_human": "2.4 GB",
+  "base_model": "KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "google/WaxalNLP (aka_asr)",
+      "metric": "VAL_WER",
+      "value": 0.274259
+    },
+    {
+      "task": null,
+      "dataset": "google/WaxalNLP (aka_asr)",
+      "metric": "VAL_CER",
+      "value": 0.090219
+    }
+  ],
+  "sources": [
+    {
+      "title": "teckedd/gha-dondo-w2v-bert-twi-v1 · Hugging Face",
+      "url": "https://huggingface.co/teckedd/gha-dondo-w2v-bert-twi-v1",
+      "snippet": "teckedd / gha-dondo-w2v-bert-twi-v1 like 1 Automatic Speech Recognition Transformers Safetensors google/WaxalNLP Twi Akan wav2vec2-bert akan asante-twi asr ctc dondo ghana ghana-health-ai serendepify twi w2v-bert Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=dondo",
+      "snippet": "teckedd/gha-dondo-w2v-bert-twi-v1 Automatic Speech Recognition • 0.6B•Updated about 14 hours ago• 1"
+    },
+    {
+      "title": "teckedd (Edward Kwabena Twumasi) - Hugging Face",
+      "url": "https://huggingface.co/teckedd",
+      "snippet": "NLP, Computer Vision Speech-to-Text for Ukrainian v2.1 (W2V-BERT 2.0)"
+    },
+    {
+      "title": "DONDO: Open w2v-BERT Speech-Recognition Base Models for African ...",
+      "url": "https://arxiv.org/html/2607.21540",
+      "snippet": "Abstract We present DONDO, a family of open, permissively licensed automatic speech recognition (ASR) base models for African languages, built on the w2v-BERT 2.0 self-supervised speech encoder. DONDO comprises twenty-one monolingual models and five multilingual models spanning twenty-seven language varieties across Ghana, Sierra Leone, Nigeria, Senegal, Kenya and Zimbabwe. Models are fine ..."
+    },
+    {
+      "title": "Fine-tuned Models for KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en ...",
+      "url": "https://huggingface.co/models?other=base_model:finetune:KhayaAI/w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en",
+      "snippet": "teckedd/gha-dondo-w2v-bert-twi-v1 Automatic Speech Recognition • 0.6B•Updated about 4 hours ago• 1"
+    }
+  ]
+}

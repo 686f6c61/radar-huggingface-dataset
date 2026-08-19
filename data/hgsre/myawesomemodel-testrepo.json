@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hgsre/MyAwesomeModel-TestRepo",
+  "slug": "hgsre-myawesomemodel-testrepo",
+  "author": "hgsre",
+  "url": "https://huggingface.co/hgsre/MyAwesomeModel-TestRepo",
+  "created_at": "2026-08-18T14:58:39.000Z",
+  "updated_at": "2026-08-18T14:59:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hsegser/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/hsegser/MyAwesomeModel-TestRepo",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model."
+    },
+    {
+      "title": "ghsertgse/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/ghsertgse/MyAwesomeModel-TestRepo",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model."
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo huggingface.co api & asfafaf4546 MyAwesomeModel ...",
+      "url": "https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo",
+      "snippet": "MyAwesomeModel-TestRepo huggingface.co is an AI model on huggingface.co that provides MyAwesomeModel-TestRepo&#x27;s model effect (), which can be used instantly with this asfafaf4546 MyAwesomeModel-TestRepo model. huggingface.co supports a free trial of the MyAwesomeModel-TestRepo model, and also provides paid use of the MyAwesomeModel-TestRepo. Support call MyAwesomeModel-TestRepo model through ..."
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo huggingface.co api & dfgsgsh56 MyAwesomeModel ...",
+      "url": "https://www.toolify.ai/ai-model/dfgsgsh56-myawesomemodel-testrepo",
+      "snippet": "MyAwesomeModel-TestRepo huggingface.co is an AI model on huggingface.co that provides MyAwesomeModel-TestRepo&#x27;s model effect (), which can be used instantly with this dfgsgsh56 MyAwesomeModel-TestRepo model. huggingface.co supports a free trial of the MyAwesomeModel-TestRepo model, and also provides paid use of the MyAwesomeModel-TestRepo."
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/modoupennington876/myawesomemodel-testrepo",
+      "snippet": "Myawesomemodel-Testrepo is a large language model released by modoupennington876, focusing on text generation and conversational interaction, suitable for server deployment."
+    }
+  ]
+}

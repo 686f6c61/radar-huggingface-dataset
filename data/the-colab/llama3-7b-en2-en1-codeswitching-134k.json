@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "The-CoLab/llama3-7b-en2-en1-codeswitching-134k",
+  "slug": "the-colab-llama3-7b-en2-en1-codeswitching-134k",
+  "author": "The-CoLab",
+  "url": "https://huggingface.co/The-CoLab/llama3-7b-en2-en1-codeswitching-134k",
+  "created_at": "2026-08-17T14:49:04.000Z",
+  "updated_at": "2026-08-17T14:49:47.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "multilingual",
+    "pretraining",
+    "torchtitan",
+    "codeswitching",
+    "en",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6291689472,
+  "parameters_human": "6.29B",
+  "storage_bytes": 12583408728,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "WaveCut/Qwen3.8-27B-CRACK-DWQ-4bit-MLX",
+  "slug": "wavecut-qwen3-8-27b-crack-dwq-4bit-mlx",
+  "author": "WaveCut",
+  "url": "https://huggingface.co/WaveCut/Qwen3.8-27B-CRACK-DWQ-4bit-MLX",
+  "created_at": "2026-08-17T18:06:51.000Z",
+  "updated_at": "2026-08-17T19:25:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "dwq",
+    "4-bit",
+    "vision-language",
+    "video",
+    "reasoning",
+    "tool-calling",
+    "mtp",
+    "crack",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:dealignai/Qwen3.8-27B-MXFP8-CRACK",
+    "base_model:quantized:dealignai/Qwen3.8-27B-MXFP8-CRACK",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 147,
+  "trending_score": 0,
+  "parameters": 4555074672,
+  "parameters_human": "4.56B",
+  "storage_bytes": 16198005781,
+  "storage_human": "16.2 GB",
+  "base_model": "dealignai/Qwen3.8-27B-MXFP8-CRACK",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WaveCut/Qwen3.8-27B-MLX-4bit-DWQ · Hugging Face",
+      "url": "https://huggingface.co/WaveCut/Qwen3.8-27B-MLX-4bit-DWQ",
+      "snippet": "The vision tower was not DWQ-trained: its 333 tensors are copied exactly from the pinned mlx-community 4-bit RTN conversion. Qwen3.8&#x27;s MTP path is restored through the separately loadable WaveCut/Qwen3.8-27B-MLX-4bit-DWQ-MTP drafter required by MLX-VLM&#x27;s speculative-decoding interface."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "malekoo/Qwen3.8-27B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/malekoo/Qwen3.8-27B-MLX-4bit",
+      "snippet": "Model description (inherited from the base card) Qwen3.8-27B is the compact dense model of the Qwen3.8 generation, built on the Qwen3.5 architecture: 27B parameters, 64 layers in a 3:1 hybrid of Gated DeltaNet linear attention and gated full attention (24Q/4KV, head dim 256), vocab 248,320, context 262,144 native."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SubiSamayasundaram/Hybrid_Model",
+  "slug": "subisamayasundaram-hybrid_model",
+  "author": "SubiSamayasundaram",
+  "url": "https://huggingface.co/SubiSamayasundaram/Hybrid_Model",
+  "created_at": "2026-08-18T08:46:47.000Z",
+  "updated_at": "2026-08-18T08:46:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SubiSamayasundaram · GitHub",
+      "url": "https://github.com/SubiSamayasundaram/",
+      "snippet": "An AI-powered Interview Preparation Toolkit that analyzes resume-job match, generates mock interview questions, and helps students improve ATS score using NLP and Machine Learning."
+    },
+    {
+      "title": "SubiSamayasundaram - Repositories - GitHub",
+      "url": "https://github.com/SubiSamayasundaram?tab=repositories",
+      "snippet": "SubiSamayasundaram has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "What is Hybrid AI and its Architecture? - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/what-is-hybrid-ai-and-its-architecture/",
+      "snippet": "In the field of artificial intelligence, hybrid AI is an exciting perspective. The concept of hybrid AI is a promising direction where various AI technologies are combined to strengthen response development. The structure of hybrid AI has been analyzed in practice. In this article, we explore what hybrid AI is and uncover its architecture."
+    },
+    {
+      "title": "Hybrid AI model cuts financial forecasting error across stocks and crypto",
+      "url": "https://techxplore.com/news/2026-07-hybrid-ai-financial-error-stocks.html",
+      "snippet": "A hybrid artificial intelligence model that combines two well-established deep learning techniques has improved the accuracy of financial market forecasts across major stock indices and so-called cryptocurrency, according to work in the International Journal of Reasoning-based Intelligent Systems."
+    },
+    {
+      "title": "Department of Promotion of Industry and Internal Trade committee ...",
+      "url": "https://www.iam-media.com/article/department-of-promotion-of-industry-and-internal-trade-committee-proposes-hybrid-model-address-ai-copyright-concerns",
+      "snippet": "The hybrid model Rejecting an all-or-nothing approach, the committee proposes a hybrid model, centred on mandatory blanket licensing coupled with a statutory remuneration right. Under this framework, AI developers would be entitled, as a matter of right, to train models on all lawfully accessed copyrighted works."
+    }
+  ]
+}

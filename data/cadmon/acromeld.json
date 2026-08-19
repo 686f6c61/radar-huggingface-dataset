@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Cadmon/AcroMELD",
+  "slug": "cadmon-acromeld",
+  "author": "Cadmon",
+  "url": "https://huggingface.co/Cadmon/AcroMELD",
+  "created_at": "2026-08-18T12:10:29.000Z",
+  "updated_at": "2026-08-18T12:10:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "document-ai",
+    "pdf",
+    "acroform",
+    "form-field-detection",
+    "object-detection",
+    "research",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158331327,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CADAM | Open Source Text-to-CAD and AI 3D Model Generator",
+      "url": "https://adam.new/opensource",
+      "snippet": "CADAM is Adam&#x27;s open-source text-to-CAD workspace: generate 3D models with AI, refine geometry, export STL, and prototype hardware and 3D-printed parts."
+    },
+    {
+      "title": "AI Plastic Injection Moulding Simulation | SIMCON",
+      "url": "https://www.simcon.ai/en/solutions/cadmould-ai-solver-injection-moulding-simulation",
+      "snippet": "Introducing Cadmould AI Solver, the world&#x27;s first neural physics engine for plastic injection moulding. This technology is set to revolutionize design for manufacturing by combining the accuracy of physics engines with the speed of neural networks to deliver simulation results in seconds."
+    },
+    {
+      "title": "New Software Slashes Injection Molding Simulation Time",
+      "url": "https://www.plasticstoday.com/injection-molding/large-engineering-model-software-slashes-injection-molding-simulation-time",
+      "snippet": "Large Engineering Model Software Slashes Injection Molding Simulation Time The AI-powered system delivers injection molding simulations in seconds rather than hours."
+    },
+    {
+      "title": "SIMCON Unveils World&#x27;s First Large Engineering Model for Plastic ...",
+      "url": "https://www.businesswire.com/news/home/20260318680159/en/SIMCON-Unveils-Worlds-First-Large-Engineering-Model-for-Plastic-Injection-Moulding",
+      "snippet": "See the Cadmould AI Solver in action: the world&#x27;s first Large Engineering Model for plastics injection moulding. It predicts fill behaviour, pressure, shear rates, and temperature distribution in ..."
+    },
+    {
+      "title": "Simcon Introduces Injection Molding Simulation Tool With AI",
+      "url": "https://www.moldmakingtechnology.com/products/simcon-introduces-injection-molding-simulation-tool-with-ai-2",
+      "snippet": "German software company Simcon announced the launch of the Cadmould AI Solver, a large engineering model for injection molding, during PTXPO. Co-developed with Emmi AI, the new transformer-based architecture delivers simulation results up to 1,000 times faster than traditional numerical solvers."
+    }
+  ]
+}

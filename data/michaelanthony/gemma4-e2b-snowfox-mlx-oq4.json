@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "MichaelAnthony/gemma4-e2b-Snowfox-MLX-oQ4",
+  "slug": "michaelanthony-gemma4-e2b-snowfox-mlx-oq4",
+  "author": "MichaelAnthony",
+  "url": "https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-MLX-oQ4",
+  "created_at": "2026-08-16T12:18:32.000Z",
+  "updated_at": "2026-08-16T12:18:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "gemma4",
+    "mlx-vlm",
+    "omlx",
+    "oq4",
+    "4bit",
+    "snowfox",
+    "image-text-to-text",
+    "base_model:MichaelAnthony/gemma4-e2b-Snowfox-MLX",
+    "base_model:finetune:MichaelAnthony/gemma4-e2b-Snowfox-MLX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MichaelAnthony/gemma4-e2b-Snowfox-MLX",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 E2B Model: Complete Setup & Performance Guide 2026",
+      "url": "https://www.gemma4.wiki/models/gemma-4-e2b-model",
+      "snippet": "Learn how to deploy and optimize the Google Gemma 4 E2B model on local hardware. Explore benchmarks, multimodal features, and Raspberry Pi 5 setup steps."
+    },
+    {
+      "title": "MichaelAnthony/gemma4-e2b-Snowfox-MLX · Hugging Face",
+      "url": "https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    }
+  ]
+}

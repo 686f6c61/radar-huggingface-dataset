@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "h3rb3rn/moe-sovereign-judge-27b-GGUF",
+  "slug": "h3rb3rn-moe-sovereign-judge-27b-gguf",
+  "author": "h3rb3rn",
+  "url": "https://huggingface.co/h3rb3rn/moe-sovereign-judge-27b-GGUF",
+  "created_at": "2026-08-18T15:48:03.000Z",
+  "updated_at": "2026-08-18T15:48:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "compound-ai",
+    "judge",
+    "quality-assurance",
+    "evaluation",
+    "paraconsistent",
+    "reasoning",
+    "gguf",
+    "lumi-g",
+    "moe-sovereign",
+    "text-generation",
+    "en",
+    "de",
+    "dataset:moe-sovereign/judge-evaluation-sft",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - h3rb3rn/moe-sovereign: Self-hosted Compound AI System for ...",
+      "url": "https://github.com/h3rb3rn/moe-sovereign",
+      "snippet": "Self-hosted Compound AI System for sovereign environments. Features token-saving complexity routing, deterministic MCP tools for math/logic, configurable expert templates, causal/reinforcement learning, agentic loops, and a federated Neo4j GraphRAG. - h3rb3rn/moe-sovereign"
+    },
+    {
+      "title": "h3rb3rn/Qwen3-MoE-35B-Sovereign-Judge-v3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/h3rb3rn/Qwen3-MoE-35B-Sovereign-Judge-v3-GGUF",
+      "snippet": "Instructions to use h3rb3rn/Qwen3-MoE-35B-Sovereign-Judge-v3-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Sovereign Judge 35B — All Variants - a h3rb3rn Collection",
+      "url": "https://huggingface.co/collections/h3rb3rn/sovereign-judge-35b-all-variants",
+      "snippet": "All variants of the Sovereign Judge: GGUF (Ollama), GPTQ (vLLM), BF16 merged, LoRA adapter."
+    },
+    {
+      "title": "Releases · h3rb3rn/moe-sovereign · GitHub",
+      "url": "https://github.com/h3rb3rn/moe-sovereign/releases",
+      "snippet": "This release marks the initial open-source publication of the MoE Sovereign reference architecture. It delivers a deterministically routed \"Compound AI System\" tailored for highly regulated environments (CRITIS, BaFin, DORA) with full air-gapped capability."
+    },
+    {
+      "title": "Qwen3.6 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.6",
+      "snippet": "This model family includes a dense 27B model, and 35B (3B active) MoE versions. Qwen3.6 Highlights This release delivers substantial upgrades, particularly in Agentic Coding: the model now handles frontend workflows and repository-level reasoning with greater fluency and precision."
+    }
+  ]
+}

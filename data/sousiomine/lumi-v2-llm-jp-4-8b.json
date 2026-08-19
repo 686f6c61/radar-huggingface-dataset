@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "SousiOmine/Lumi-v2-llm-jp-4-8b",
+  "slug": "sousiomine-lumi-v2-llm-jp-4-8b",
+  "author": "SousiOmine",
+  "url": "https://huggingface.co/SousiOmine/Lumi-v2-llm-jp-4-8b",
+  "created_at": "2026-08-17T04:36:20.000Z",
+  "updated_at": "2026-08-17T07:46:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llm-jp",
+    "japanese",
+    "chatml",
+    "reasoning",
+    "unsloth",
+    "trl",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:llm-jp/llm-jp-4-8b-base",
+    "base_model:finetune:llm-jp/llm-jp-4-8b-base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1336,
+  "trending_score": 0,
+  "parameters": 8590200832,
+  "parameters_human": "8.59B",
+  "storage_bytes": 17193304079,
+  "storage_human": "17.2 GB",
+  "base_model": "llm-jp/llm-jp-4-8b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SousiOmine (SousiOmine) - Hugging Face",
+      "url": "https://huggingface.co/SousiOmine/models",
+      "snippet": "SousiOmine/llm-jp-4-chatml-return-beta1-merged-16bit. Text Generation • 9B • Updated 23 days ago • 74. SousiOmine/llm-jp-4-chatml-beta1"
+    },
+    {
+      "title": "SousiOmine/usatama-8b-sft-phase1 · Hugging Face",
+      "url": "https://huggingface.co/SousiOmine/usatama-8b-sft-phase1",
+      "snippet": "Uploaded finetuned model Developed by: SousiOmine License: apache-2.0 Finetuned from model : SousiOmine/llm-jp-4-8b-base-chatml"
+    },
+    {
+      "title": "Release of New Japanese LLMs, \"LLM-jp-4 8B\" and \"LLM-jp-4 32B-A3B ...",
+      "url": "https://www.nii.ac.jp/en/news/release/2026/0403.html",
+      "snippet": "The World&#x27;s Largest Fully Open Model, Including Training Data - NII NewsRelease (2024/9/17) News Release: PDF Release of New Japanese LLMs, \"LLM-jp-4 8B\" and \"LLM-jp-4 32B-A3B\", Trained on a High-Quality Corpus of Approximately 12 Trillion Tokens under an Open-Source License Surpassing GPT-4o and Qwen3-8B on Several Standard Benchmarks"
+    },
+    {
+      "title": "Release - LLM-jp",
+      "url": "https://llm-jp.nii.ac.jp/en/release-en/",
+      "snippet": "Please cite or reference the resources on this page if you use them in your research or software development. Users of this model are requested to use it appropriately and at their own responsibility, in accordance with the \"Guideline for Ensuring the Appropriateness of Research & Development and Utilization of Artificial Intelligence-Related Technology\" (Decision of the Artificial ..."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    }
+  ]
+}

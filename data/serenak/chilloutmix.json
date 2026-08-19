@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Serenak/chilloutmix",
+  "slug": "serenak-chilloutmix",
+  "author": "Serenak",
+  "url": "https://huggingface.co/Serenak/chilloutmix",
+  "created_at": "2023-03-04T02:27:44.000Z",
+  "updated_at": "2026-08-18T07:16:11.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 33,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 611203276051,
+  "storage_human": "611.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Serenak (Serenak) - Hugging Face",
+      "url": "https://huggingface.co/Serenak/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 9 days ago ... updated a model 11 days ago ... updated a model 27 days ago"
+    },
+    {
+      "title": "Serenak/chilloutmix · Hugging Face",
+      "url": "https://huggingface.co/Serenak/chilloutmix",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chillymix V2 Fp16 | Stable Diffusion 1.x Checkpoint - Civitai",
+      "url": "https://civitai.com/models/58772/chillymix",
+      "snippet": "webui model toolkit to examine Loras and models. civitai extension to add several useful features for civitai. ChangeLog 2023/05/29 : V2 version preview - use the chillyMixBase: it includes pyro&#x27;s pov checkpoint and results in NSFW enhancement and more cleaner skin. 2023/06/22: VAE baked version added 2023/06/23: inpainting version added for ..."
+    },
+    {
+      "title": "ChilloutMixss3.0 - v3.0 | Stable Diffusion 1.x LoRA | Civitai",
+      "url": "https://civitai.com/models/16274/chilloutmixss30",
+      "snippet": "Overwhelmingly Positive (3,420) Published Mar 6, 2023 Base Model SD 1.5 Training Steps: 30 Epochs: 7"
+    },
+    {
+      "title": "ChilloutMix — Image Model on the Sogni Supernet",
+      "url": "https://www.sogni.ai/models/chilloutmix",
+      "snippet": "ChilloutMix — a SD 1.5 community checkpoint on the Sogni Supernet. Run ChilloutMix on the Sogni Supernet — unlimited under fair use on a flat monthly Sogni plan."
+    }
+  ]
+}

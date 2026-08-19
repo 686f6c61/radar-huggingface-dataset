@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mlx-community/NemotronLabs-VoiceChat-11B-8bit",
+  "slug": "mlx-community-nemotronlabs-voicechat-11b-8bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/NemotronLabs-VoiceChat-11B-8bit",
+  "created_at": "2026-08-08T22:10:20.000Z",
+  "updated_at": "2026-08-08T22:28:58.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_voicechat",
+    "tool-use",
+    "multimodal",
+    "en",
+    "base_model:nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+    "base_model:quantized:nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+    "license:openmdw-1.1",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 395,
+  "trending_score": 8,
+  "parameters": 4286488052,
+  "parameters_human": "4.29B",
+  "storage_bytes": 13920813045,
+  "storage_human": "13.9 GB",
+  "base_model": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NemotronLabs-VoiceChat-11B-mlx-4bit - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/NemotronLabs-VoiceChat-11B-mlx-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/NemotronLabs-VoiceChat-11B-8bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/NemotronLabs-VoiceChat-11B-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - huckiyang/voicechat-mlx · GitHub",
+      "url": "https://github.com/huckiyang/voicechat-mlx",
+      "snippet": "a duplex speech-to-speech model with MLX, on-device. VoiceChat listens and speaks at the same time: 11.1 B parameters across a Nemotron-H hybrid language backbone, a Conformer speech encoder, a Gemma-3 speech-generation backbone with a mixture-of-Gaussians head, and a neural audio codec. Duplex ..."
+    },
+    {
+      "title": "GitHub - Majestiqu3/NeMo-Voicechat: A scalable generative AI framework ...",
+      "url": "https://github.com/Majestiqu3/NeMo-Voicechat",
+      "snippet": "A scalable generative AI framework built for researchers and developers working on Large Language Models, Multimodal, and Speech AI (Automatic Speech Recognition and Text-to-Speech) - Majestiqu3/NeMo-Voicechat"
+    },
+    {
+      "title": "NVIDIA VoiceChat-11B Brings Full-Duplex AI Speech to Real-Time Agents",
+      "url": "https://hackernoon.com/nvidia-voicechat-11b-brings-full-duplex-ai-speech-to-real-time-agents",
+      "snippet": "NVIDIA-NemotronLabs-VoiceChat-11B is an 11-billion parameter end-to-end full duplex speech model developed by nvidia that performs streaming speech understanding and generation in a single unified architecture."
+    }
+  ]
+}

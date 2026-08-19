@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "slug": "huggingfacetb-smollm2-135m-instruct",
+  "author": "HuggingFaceTB",
+  "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+  "created_at": "2024-10-31T13:41:10.000Z",
+  "updated_at": "2025-09-22T20:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "onnx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "transformers.js",
+    "conversational",
+    "en",
+    "arxiv:2502.02737",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 396,
+  "downloads_30d": 1824094,
+  "trending_score": 6,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 5381816237,
+  "storage_human": "5.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

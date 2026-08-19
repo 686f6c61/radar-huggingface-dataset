@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "WarmBloodAban/Minimax_h3_ref2va_XUELUO_int8_convrot",
+  "slug": "warmbloodaban-minimax_h3_ref2va_xueluo_int8_convrot",
+  "author": "WarmBloodAban",
+  "url": "https://huggingface.co/WarmBloodAban/Minimax_h3_ref2va_XUELUO_int8_convrot",
+  "created_at": "2026-08-16T09:07:38.000Z",
+  "updated_at": "2026-08-16T09:16:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 0,
+  "trending_score": 20,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 Model Reference | ai-models-lab/minimax-h3 | DeepWiki",
+      "url": "https://deepwiki.com/ai-models-lab/minimax-h3/4-minimax-h3-model-reference",
+      "snippet": "MiniMax H3 is a state-of-the-art native multi-modal model capable of generating 2K AI video with synchronized 3D stereo audio in a single inference pass README.md 3 Architecture Overview The MiniMax H3 architecture deviates from traditional video-only models by employing a joint diffusion process."
+    },
+    {
+      "title": "Comfy-Org/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 Model Files & Downloads: GitHub, Hugging Face, GGUF, INT8 ...",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Find official MiniMax H3 files, including pruned BF16, INT8, NVFP4, and VAE variants. Compare sources, GGUF status, folder paths, and missing-model fixes."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    }
+  ]
+}

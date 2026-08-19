@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-recover-noise-50pct-40ep",
+  "slug": "imkyungjin-pi0-stackcube-recover-noise-50pct-40ep",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-50pct-40ep",
+  "created_at": "2026-08-14T17:53:36.000Z",
+  "updated_at": "2026-08-14T17:55:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:taewonkoo/stack_cube_recover_noise_50pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImKyungjin/pi0-stackcube-v4-full · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-v4-full",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ImKyungjin/pi0-stackcube-v4-20k · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-v4-20k",
+      "snippet": "ImKyungjin / pi0-stackcube-v4-20k like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 4B params Tensor type F32 · BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "GitHub - Spirit-AI-Team/PI_Official",
+      "url": "https://github.com/Spirit-AI-Team/PI_Official",
+      "snippet": "the π₀ model, a flow-based diffusion vision-language-action model (VLA) the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. For both models, we provide base model checkpoints, pre-trained on 10k+ hours of robot data, and examples for using them out of the box or fine-tuning them to your own datasets."
+    },
+    {
+      "title": "Pi0 Open-Source Model - Empowering Universal Robot Control to ...",
+      "url": "https://model.aibase.com/models/details/1915692733655834626",
+      "snippet": "Model Overview Pi0 is a robot control model that integrates vision, language, and action, aiming to achieve general robot control capabilities."
+    },
+    {
+      "title": "π 0 : A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/html/2410.24164v1",
+      "snippet": "By basing our model on a VLM, we inherit the general knowledge, semantic reasoning, and problem-solving abilities of language- and vision-language models. We then further train our model to incorporate robot actions, turning it into a vision-language-action (VLA) model [7]."
+    }
+  ]
+}

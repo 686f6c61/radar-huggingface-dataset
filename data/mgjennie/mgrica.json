@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MGJennie/mgrica",
+  "slug": "mgjennie-mgrica",
+  "author": "MGJennie",
+  "url": "https://huggingface.co/MGJennie/mgrica",
+  "created_at": "2026-08-16T18:54:34.000Z",
+  "updated_at": "2026-08-16T18:54:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:04:05.037Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jennie - Blackpink - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/6e1e11ddd266c14d3ed92361b21bd5fb",
+      "snippet": "Explore Jennie - Blackpink model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "MeiGen AI — Free AI Image & Video Prompt Gallery",
+      "url": "https://meigenai.io/",
+      "snippet": "MeiGen AI is a community-driven AI prompt platform where creators share, discover, and remix high-quality image and video prompts. Whether you&#x27;re a designer, marketer, or hobbyist, you&#x27;ll find production-ready prompts for UI design, poster design, product photography, illustration, and video creation."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    },
+    {
+      "title": "JustModels.ai | Create & Train Custom AI Models (No Code)",
+      "url": "https://www.justmodels.ai/",
+      "snippet": "JustModels.ai is the only no-code platform that combines custom LoRA model training, text-to-image, text-to-video, image-to-video, and ReelsRecreator in one place."
+    }
+  ]
+}

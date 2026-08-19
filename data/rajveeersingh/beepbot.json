@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RajveeerSingh/beepbot",
+  "slug": "rajveeersingh-beepbot",
+  "author": "RajveeerSingh",
+  "url": "https://huggingface.co/RajveeerSingh/beepbot",
+  "created_at": "2026-08-15T13:34:27.000Z",
+  "updated_at": "2026-08-15T14:05:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "translation",
+    "en",
+    "base_model:facebook/bart-base",
+    "base_model:quantized:facebook/bart-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1314030324,
+  "storage_human": "1.3 GB",
+  "base_model": "facebook/bart-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SINGH-RAJVEER/beep-bot",
+      "url": "https://github.com/SINGH-RAJVEER/beep-bot",
+      "snippet": "Contribute to SINGH-RAJVEER/beep-bot development by creating an account on GitHub."
+    },
+    {
+      "title": "Rajveer Singh — AI & ML Engineer",
+      "url": "https://rajveersingh11.github.io/",
+      "snippet": "AI & Python Engineer crafting intelligent automation tools, generative AI applications, and scalable ML pipelines."
+    },
+    {
+      "title": "Rajveer AI (@rajveersingh_ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/rajveersingh_ai/",
+      "snippet": "0 Followers, 1 Following, 8 Posts - Rajveer AI (@rajveersingh_ai) on Instagram: \"\""
+    },
+    {
+      "title": "Rajveer Singh (@rajveerrsingh.ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/rajveerrsingh.ai/",
+      "snippet": "2 Followers, 0 Following, 2 Posts - Rajveer Singh (@rajveerrsingh.ai) on Instagram: \"Building AI voice agents and coaching tech AI • Automation • Dev talk Founder, AdRyter 👇 voice agent demo\""
+    },
+    {
+      "title": "rajveer-ai · GitHub",
+      "url": "https://github.com/rajveer-ai",
+      "snippet": "GitHub is where rajveer-ai builds software. Joined Jul 19, 2025 Block or report rajveer-ai Block user"
+    }
+  ]
+}

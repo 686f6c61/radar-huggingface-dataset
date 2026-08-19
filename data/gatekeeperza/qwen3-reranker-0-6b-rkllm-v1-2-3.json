@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GatekeeperZA/Qwen3-Reranker-0.6B-RKLLM-v1.2.3",
+  "slug": "gatekeeperza-qwen3-reranker-0-6b-rkllm-v1-2-3",
+  "author": "GatekeeperZA",
+  "url": "https://huggingface.co/GatekeeperZA/Qwen3-Reranker-0.6B-RKLLM-v1.2.3",
+  "created_at": "2026-08-18T10:09:11.000Z",
+  "updated_at": "2026-08-18T10:09:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "rkllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "rkllm",
+    "rk3588",
+    "rockchip",
+    "npu",
+    "quantized",
+    "qwen3",
+    "reranker",
+    "text-ranking",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-Reranker-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Reranker-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 952178598,
+  "storage_human": "952 MB",
+  "base_model": "Qwen/Qwen3-Reranker-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Reranker-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · JonathanMiddleton/Qwen3-Reranker-0.6B at main",
+      "url": "https://huggingface.co/JonathanMiddleton/Qwen3-Reranker-0.6B/blob/main/README.md",
+      "snippet": "Upstream Source Repo: Qwen/Qwen3-Reranker-.6B Commit: f16fc5d (2025-06-09) License: Apache-2.0 Conversion & Quantization"
+    },
+    {
+      "title": "Qwen3-Reranker — vllm-ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/v0.23.0rc1/tutorials/models/Qwen3_reranker.html",
+      "snippet": "The Qwen3 Reranker model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    },
+    {
+      "title": "Qwen3 Reranker 0.6B by Qwen (Alibaba) — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-reranker-0-6b",
+      "snippet": "Capabilities Capability scores are AI-generated based on model documentation, benchmarks, and technical specifications."
+    },
+    {
+      "title": "Qwen3-Reranker-0.6B: Lightweight Multilingual Text Reranking for RAG ...",
+      "url": "https://dev.co/ai/llms/qwen3-reranker-0-6b",
+      "snippet": "Qwen3-Reranker-.6B Qwen3-Reranker-.6B is a lightweight text reranking model (595M parameters) from Alibaba&#x27;s Qwen team, designed to score and reorder candidate documents for relevance to a query. It handles 32k-token contexts, supports 100+ languages, and accepts custom task instructions. Deployed as a CrossEncoder via Sentence Transformers or raw transformers, it produces relevance scores ..."
+    }
+  ]
+}

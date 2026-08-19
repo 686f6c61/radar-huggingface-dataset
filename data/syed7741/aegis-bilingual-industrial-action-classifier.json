@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "syed7741/aegis-bilingual-industrial-action-classifier",
+  "slug": "syed7741-aegis-bilingual-industrial-action-classifier",
+  "author": "syed7741",
+  "url": "https://huggingface.co/syed7741/aegis-bilingual-industrial-action-classifier",
+  "created_at": "2026-08-18T21:39:22.000Z",
+  "updated_at": "2026-08-18T21:45:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "industrial-ai",
+    "bilingual",
+    "english",
+    "arabic",
+    "lora",
+    "mt0",
+    "controlled-classification",
+    "industrial-safety",
+    "aegis-ai",
+    "en",
+    "ar",
+    "dataset:syed7741/aegis-bilingual-industrial-ai-dataset",
+    "base_model:bigscience/mt0-small",
+    "base_model:adapter:bigscience/mt0-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17720082,
+  "storage_human": "18 MB",
+  "base_model": "bigscience/mt0-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "syed7741/aegis-bilingual-industrial-ai-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/syed7741/aegis-bilingual-industrial-ai-dataset",
+      "snippet": "Datasets: syed7741 / aegis-bilingual-industrial-ai-dataset like 0 Tasks: Question Answering Text Generation Modalities: Text Formats: json Languages: English Arabic Size: < 1K Tags: industrial-ai arabic english bilingual multilingual-ai rag + 12 Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and ..."
+    },
+    {
+      "title": "GitHub - Kem-Ada/AEGIS: Open source Python framework for EU AI Act risk ...",
+      "url": "https://github.com/Kem-Ada/AEGIS",
+      "snippet": "Founded and maintained by Kem Ada AEGIS is an independent open source project created by Kem Ada to support practical AI governance and AI security workflows Open source Python framework for AI security, governance, human-in-the-loop controls, explainability, and regulatory compliance across EU AI Act, GDPR Article 35, and ISO/IEC 42001."
+    },
+    {
+      "title": "GitHub - canoztas/aegis: ai based sast framework",
+      "url": "https://github.com/canoztas/aegis",
+      "snippet": "Aegis is an open-source SAST framework for multi-model orchestration, bridging generative and discriminative AI for security analysis. It provides standardized infrastructure to integrate, benchmark, and compare diverse architectures—from Large Language Models (OpenAI, Anthropic, Google, Ollama) to specialized classifiers (CodeBERT, VulBERTa) via HuggingFace, and traditional ML models ..."
+    },
+    {
+      "title": "Aegis-AI-Content-Safety-Dataset-2.0 - Hugging Face",
+      "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aegis-BlackBox/ai_classifier.py at main · zeinamohamed-sys ... - GitHub",
+      "url": "https://github.com/zeinamohamed-sys/Aegis-BlackBox/blob/main/ai_classifier.py",
+      "snippet": "140 lines (115 loc) · 4.21 KB main Aegis-BlackBox / ai_classifier.py Top Code Blame 140 lines (115 loc) · 4.21 KB Raw Edit and raw actions 1 2 3 4 5 6 7 8 9 10 11 ..."
+    }
+  ]
+}

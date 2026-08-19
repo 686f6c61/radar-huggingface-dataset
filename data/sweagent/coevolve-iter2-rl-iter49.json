@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sweagent/coevolve-iter2-rl-iter49",
+  "slug": "sweagent-coevolve-iter2-rl-iter49",
+  "author": "sweagent",
+  "url": "https://huggingface.co/sweagent/coevolve-iter2-rl-iter49",
+  "created_at": "2026-08-18T21:12:08.000Z",
+  "updated_at": "2026-08-18T21:12:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "swe-bench",
+    "co-evolution",
+    "rl",
+    "grpo",
+    "qwen3.5",
+    "base_model:sweagent/diffrecon-rl-iter49",
+    "base_model:finetune:sweagent/diffrecon-rl-iter49",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "sweagent/diffrecon-rl-iter49",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CoEvolve: Training LLM Agents via Agent-Data Mutual Evolution",
+      "url": "https://arxiv.org/abs/2604.15840",
+      "snippet": "Reinforcement learning for LLM agents is typically conducted on a static data distribution, which fails to adapt to the agent&#x27;s evolving behavior and leads to poor coverage of complex environment interactions. To address these challenges, we propose CoEvolve, an agent-data mutual evolution framework that enables LLM agents to improve through closed-loop, interaction-driven training ..."
+    },
+    {
+      "title": "CoEvolve: Training LLM Agents via Agent-Data Mutual Evolution",
+      "url": "https://arxiv.org/pdf/2604.15840",
+      "snippet": "CoEvolve extends stan-dard GRPO by introducing feedback-guided data evolution during RL training. Table 2 shows that CoEvolve consistently improves over GRPO across all three backbones, confirming that closed-loop data evolution provides complementary improve-ments on top of GRPO, rather than replacing it."
+    },
+    {
+      "title": "GitHub - AMAP-ML/CoEvolve: CoEvolve: Training LLM Agents via Agent-Data ...",
+      "url": "https://github.com/AMAP-ML/CoEvolve",
+      "snippet": "CoEvolve studies reinforcement learning for LLM agents under a changing training distribution. Instead of relying on a fixed pool of expert demonstrations or static synthetic trajectories, CoEvolve closes the loop between the agent and its data: the current policy interacts with the environment, failure signals are extracted from rollouts, and those signals guide the synthesis of new tasks ..."
+    },
+    {
+      "title": "CoEvolve: Training LLM Agents via Agent-Data Mutual Evolution",
+      "url": "https://aclanthology.org/2026.acl-long.1055/",
+      "snippet": "To address these challenges, we propose CoEvolve, an agent-data mutual evolution framework that enables LLM agents to improve through closed-loop, interaction-driven training."
+    },
+    {
+      "title": "CoEvolve: LLM Agent-Data Mutual Evolution",
+      "url": "https://www.emergentmind.com/papers/2604.15840",
+      "snippet": "CoEvolve introduces a closed-loop RL framework that evolves both agent and data using feedback signals to significantly boost LLM agent performance."
+    }
+  ]
+}

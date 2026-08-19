@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TheSecretLaboratory/grainstorm-models",
+  "slug": "thesecretlaboratory-grainstorm-models",
+  "author": "TheSecretLaboratory",
+  "url": "https://huggingface.co/TheSecretLaboratory/grainstorm-models",
+  "created_at": "2026-08-18T04:08:53.000Z",
+  "updated_at": "2026-08-18T04:09:26.000Z",
+  "license": "stability-ai-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "audio",
+    "text-to-audio",
+    "stable-audio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3367141440,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Secret Laboratory | Digital Sound Design Tools",
+      "url": "https://thesecretlaboratory.com/",
+      "snippet": "Digital sound design tools for musicians, producers and audio artists — simple, powerful, and inspiring."
+    },
+    {
+      "title": "Grainstorm - The Ultimate Sound Design Tool",
+      "url": "https://thesecretlaboratory.com/apps/grainstorm",
+      "snippet": "GrainStorm is our flagship tool for exploring the creative frontiers of sample-based granular synthesis and advanced sampling techniques. Built for musicians, producers, and sound designers, it&#x27;s equally at home in live performances, detailed sound design, sample editing, and even remastering workflows."
+    },
+    {
+      "title": "The Secret Laboratory",
+      "url": "https://thesecretlaboratory.lemonsqueezy.com/",
+      "snippet": "Grainstorm Standalone $69.00 Powered by Lemon Squeezy"
+    },
+    {
+      "title": "Mak-P90 / ai-jailbreak-archive - GitHub",
+      "url": "https://github.com/Mak-P90/ai-jailbreak-archive",
+      "snippet": "Mak-P90 / ai-jailbreak-archive A curated archive of jailbreak prompts, prompt injections, and related techniques discovered across major AI models, including OpenAI, Gemini, Claude, Grok, and others. This repository documents prompt behavior and model responses for research, experimentation, and red-teaming purposes."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "alst10/alston-writer-v2-Q5_0-GGUF",
+  "slug": "alst10-alston-writer-v2-q5_0-gguf",
+  "author": "alst10",
+  "url": "https://huggingface.co/alst10/alston-writer-v2-Q5_0-GGUF",
+  "created_at": "2026-08-17T07:43:36.000Z",
+  "updated_at": "2026-08-17T07:44:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:alst10/alston-writer-v2",
+    "base_model:quantized:alst10/alston-writer-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5599294912,
+  "storage_human": "5.6 GB",
+  "base_model": "alst10/alston-writer-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

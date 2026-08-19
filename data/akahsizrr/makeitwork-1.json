@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Akahsizrr/makeitwork-1",
+  "slug": "akahsizrr-makeitwork-1",
+  "author": "Akahsizrr",
+  "url": "https://huggingface.co/Akahsizrr/makeitwork-1",
+  "created_at": "2026-08-16T20:17:17.000Z",
+  "updated_at": "2026-08-16T20:18:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "safetensors",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "retriever500m",
+    "code-search",
+    "retrieval",
+    "agent",
+    "tool-calling",
+    "codebase",
+    "text-generation",
+    "en",
+    "base_model:Reizxn/makeitwork1",
+    "base_model:finetune:Reizxn/makeitwork1",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 326,
+  "trending_score": 0,
+  "parameters": 496998400,
+  "parameters_human": "497.0M",
+  "storage_bytes": 1988009904,
+  "storage_human": "2.0 GB",
+  "base_model": "Reizxn/makeitwork1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akahsizrr (Vasko Djack) - Hugging Face",
+      "url": "https://huggingface.co/Akahsizrr",
+      "snippet": "ML eng, learning everyday. Working on 2 new AI training pipelines, and a model merging architecture for frontier specialized local models."
+    },
+    {
+      "title": "Akahsizrr/Mini-Whale-1-12B · Hugging Face",
+      "url": "https://huggingface.co/Akahsizrr/Mini-Whale-1-12B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Vaskrokodile/dgx-spark-il: GRPO Intuition Learning pipeline ...",
+      "url": "https://github.com/Vaskrokodile/dgx-spark-il",
+      "snippet": "GRPO Intuition Learning (IL) pipeline for Fuse-1 Lite (Akahsizrr/fuse-1-Lite) on an NVIDIA DGX Spark."
+    },
+    {
+      "title": "Introducing MAI-Thinking-1 | Microsoft AI",
+      "url": "https://microsoft.ai/news/introducing-mai-thinking-1/",
+      "snippet": "Today we are introducing MAI-Thinking-1, Microsoft AI&#x27;s reasoning model. It is a medium-sized model that stands among the strongest models in its weight class. It matches leading models on key software engineering benchmarks, demonstrates advanced mathematical reasoning capabilities, and is preferred to Sonnet 4.6 in our blind human side-by-side evaluations. We don&#x27;t distill from other ..."
+    },
+    {
+      "title": "Home - makeITwork",
+      "url": "https://makeitwork.com/",
+      "snippet": "At makeITwork, we leverage AI and blockchain technology to develop cutting-edge fintech applications, empowering individuals and businesses to manage their finances effectively."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-de",
+  "slug": "euroeval-mmbert-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-de",
+  "author": "EuroEval",
+  "url": "https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-de",
+  "created_at": "2026-08-15T21:31:23.000Z",
+  "updated_at": "2026-08-15T21:31:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 242,
+  "trending_score": 0,
+  "parameters": 140642306,
+  "parameters_human": "140.6M",
+  "storage_bytes": 596946580,
+  "storage_human": "597 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with ...",
+      "url": "https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it",
+      "snippet": "Instructions to use EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "mmBERT-small-multi-wiki-qa-synthetic-hallucinations-el",
+      "url": "https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-el",
+      "snippet": "Instructions to use alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-el with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "A multilingual hallucination benchmark: MultiWikiQHalluA",
+      "url": "https://arxiv.org/pdf/2605.02504v2",
+      "snippet": "Figure 1: Overview of the two-stage method-ology: synthetic hallucination data generation pipeline, where MultiWikiQA contexts, questions, and ground-truth answers are passed to the Let-tuceDetect framework, which uses a language model to produce token-labelled hallucinated an-swers; and fine-tuning of the mmBERT-small token-level hallucination ..."
+    },
+    {
+      "title": "GitHub - JHU-CLSP/mmBERT: A massively multilingual modern encoder ...",
+      "url": "https://github.com/JHU-CLSP/mmBERT/",
+      "snippet": "🌍 TL;DR: State-of-the-art multilingual encoder models trained on 3T tokens across 1833 languages with novel annealed language learning. Outperforms XLM-R and can even beat OpenAI&#x27;s o3 and Google&#x27;s Gemini 2.5 Pro. 📄 Paper | 🤗 Model Collection | 📊 Training Data mmBERT introduces the first modern multilingual encoder trained with cascading annealed language learning (ALL ..."
+    },
+    {
+      "title": "EuroEval — The robust European language model benchmark",
+      "url": "https://euroeval.com/",
+      "snippet": "EuroEval is a language model benchmarking framework that supports evaluating all types of language models out there: encoders, decoders, encoder-decoders, base models, and instruction tuned models."
+    }
+  ]
+}

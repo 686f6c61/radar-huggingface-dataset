@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hasanbasbunar/Qwen3.8-27B-DSpark-Multilingual",
+  "slug": "hasanbasbunar-qwen3-8-27b-dspark-multilingual",
+  "author": "hasanbasbunar",
+  "url": "https://huggingface.co/hasanbasbunar/Qwen3.8-27B-DSpark-Multilingual",
+  "created_at": "2026-08-18T21:24:38.000Z",
+  "updated_at": "2026-08-18T21:25:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dspark",
+    "qwen3.8",
+    "multilingual",
+    "dgx-spark",
+    "custom_code",
+    "arxiv:2607.05147",
+    "base_model:RadixArk/Qwen3.8-27B-DSpark",
+    "base_model:finetune:RadixArk/Qwen3.8-27B-DSpark",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1359284737,
+  "parameters_human": "1.36B",
+  "storage_bytes": 2718576122,
+  "storage_human": "2.7 GB",
+  "base_model": "RadixArk/Qwen3.8-27B-DSpark",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RadixArk/Qwen3.8-27B-DSpark · Hugging Face",
+      "url": "https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "RadixArk/Qwen3.8-27B-DSpark at main - Hugging Face",
+      "url": "https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.8-27b - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    },
+    {
+      "title": "Qwen3.8-27B at 34-38 tok/s on DGX Spark - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-27b-at-34-38-tok-s-on-dgx-spark-open-source-one-command-setup-sglang-nvfp4-dspark/380257",
+      "snippet": "All credit to the SGLang team (day-0 support + the lmsysorg/sglang:qwen38-27b image), RadixArk for the NVFP4 + DSpark checkpoints, DeepSeek for the DSpark method, and Qwen for the model. The SGLang cookbook&#x27;s DGX Spark cell was marked \"not yet validated\" — consider this an independent field validation."
+    }
+  ]
+}

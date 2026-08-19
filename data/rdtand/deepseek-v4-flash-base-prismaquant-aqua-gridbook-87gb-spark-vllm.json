@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rdtand/DeepSeek-V4-Flash-Base-PrismaQuant-AQUA-gridbook-87GB-spark-vllm",
+  "slug": "rdtand-deepseek-v4-flash-base-prismaquant-aqua-gridbook-87gb-spark-vllm",
+  "author": "rdtand",
+  "url": "https://huggingface.co/rdtand/DeepSeek-V4-Flash-Base-PrismaQuant-AQUA-gridbook-87GB-spark-vllm",
+  "created_at": "2026-08-18T11:15:18.000Z",
+  "updated_at": "2026-08-18T12:08:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "deepseek_v4",
+    "quantization",
+    "mixed-precision",
+    "codebook",
+    "gridbook",
+    "prismaquant",
+    "nvfp4",
+    "fp8",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Base",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Base",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85446438999,
+  "parameters_human": "85.45B",
+  "storage_bytes": 87172735697,
+  "storage_human": "87.2 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "DeepSeek V4 MoE model with hybrid CSA+HCA attention, manifold-constrained hyper-connections, and three-tier reasoning (Non-think / Think High / Think Max)."
+    },
+    {
+      "title": "DeepSeek V4 Flash Base (DeepSeek) - AI Models Navi",
+      "url": "https://aimodelsnavi.com/en/models/deepseek-v4-flash-base",
+      "snippet": "The DeepSeek V4 Flash Base model shows a mixed performance profile across standardized benchmarks, with particular strengths in coding and mathematics but notable limitations in knowledge retention compared to frontier models."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/DeepSeek-V4-Flash",
+      "snippet": "About this model We present a preview version of the DeepSeek-V4 series, including two strong Mixture-of-Experts (MoE) language models — DeepSeek-V4-Pro with 1.6T parameters (49B activated) and DeepSeek-V4-Flash with 284B parameters (13B activated) — both supporting a context length of one million tokens."
+    },
+    {
+      "title": "DeepSeek-V4-Flash - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/DeepSeek-V4-Flash.html",
+      "snippet": "DeepSeek-V4-Flash is the lightweight variant of the DeepSeek-V4 family, suitable for high-throughput and low-latency serving scenarios. This document will show the main verification steps of the model, including supported features, feature configuration, environment preparation, single-node and multi-node deployment, accuracy and performance ..."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 DSpark on 2x DGX Spark - GitHub",
+      "url": "https://github.com/MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark",
+      "snippet": "DeepSeek-v4-Flash 0731 recipe for 2x DGX Sparks. Contribute to MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark development by creating an account on GitHub."
+    }
+  ]
+}

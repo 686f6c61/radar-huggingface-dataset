@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "PeachesAvicii/Slap-N-Self-Slap",
+  "slug": "peachesavicii-slap-n-self-slap",
+  "author": "PeachesAvicii",
+  "url": "https://huggingface.co/PeachesAvicii/Slap-N-Self-Slap",
+  "created_at": "2026-08-15T03:30:27.000Z",
+  "updated_at": "2026-08-15T03:46:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:nvidia/Qwen-Image-Flash",
+    "base_model:adapter:nvidia/Qwen-Image-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/Qwen-Image-Flash",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:45:40.107Z",
+  "benchmarks": [],
+  "sources": []
+}

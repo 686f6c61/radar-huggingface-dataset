@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "iwasbinod/news-setopati_xslum_summarization-dataset",
+  "slug": "iwasbinod-news-setopati_xslum_summarization-dataset",
+  "author": "iwasbinod",
+  "url": "https://huggingface.co/iwasbinod/news-setopati_xslum_summarization-dataset",
+  "created_at": "2026-08-17T07:45:42.000Z",
+  "updated_at": "2026-08-17T07:46:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114517563,
+  "storage_human": "115 MB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

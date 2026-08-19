@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "encredible/Gaiel-1.5B-Korean-Tuned-MLX",
+  "slug": "encredible-gaiel-1-5b-korean-tuned-mlx",
+  "author": "encredible",
+  "url": "https://huggingface.co/encredible/Gaiel-1.5B-Korean-Tuned-MLX",
+  "created_at": "2026-08-10T06:54:02.000Z",
+  "updated_at": "2026-08-17T01:45:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "korean",
+    "gaiel",
+    "jk-universe",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 142,
+  "trending_score": 0,
+  "parameters": 241327616,
+  "parameters_human": "241.3M",
+  "storage_bytes": 880050443,
+  "storage_human": "880 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

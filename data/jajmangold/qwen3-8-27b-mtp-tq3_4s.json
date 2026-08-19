@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jajmangold/Qwen3.8-27B-MTP-TQ3_4S",
+  "slug": "jajmangold-qwen3-8-27b-mtp-tq3_4s",
+  "author": "jajmangold",
+  "url": "https://huggingface.co/jajmangold/Qwen3.8-27B-MTP-TQ3_4S",
+  "created_at": "2026-08-15T00:55:43.000Z",
+  "updated_at": "2026-08-15T01:05:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "turboquant",
+    "tq3_4s",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 371,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 13680694560,
+  "storage_human": "13.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

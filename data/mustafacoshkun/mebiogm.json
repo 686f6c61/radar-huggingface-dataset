@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mustafacoshkun/mebiogm",
+  "slug": "mustafacoshkun-mebiogm",
+  "author": "mustafacoshkun",
+  "url": "https://huggingface.co/mustafacoshkun/mebiogm",
+  "created_at": "2026-08-17T21:13:45.000Z",
+  "updated_at": "2026-08-17T21:34:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 352,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608532,
+  "storage_human": "3.5 GB",
+  "base_model": "unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Based Multitask Embryo Grading for IVF Success",
+      "url": "https://richlyai.com/blog/ai-based-multitask-embryo-grading-for-ivf-success-ai-news/",
+      "snippet": "Discover how multitask embedding AI improves embryo blastocyst grading accuracy, enhancing IVF outcomes with consistent and objective assessments."
+    },
+    {
+      "title": "[2604.13217] Multitasking Embedding for Embryo Blastocyst Grading ...",
+      "url": "https://arxiv.org/abs/2604.13217",
+      "snippet": "Reliable evaluation of blastocyst quality is critical for the success of in vitro fertilization (IVF) treatments. Current embryo grading practices primarily rely on visual assessment of morphological features, which introduces subjectivity, inter-embryologist variability, and challenges in standardizing quality assurance. In this study, we propose a multitask embedding-based approach for the ..."
+    },
+    {
+      "title": "UnfilteredAI - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI",
+      "snippet": "Org profile for UnfilteredAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AI Detector Free - Check If Text Is AI Generated | ChatGOT",
+      "url": "https://aichatgot.com/ai-detector",
+      "snippet": "Free AI detector tool to check if text was written by AI. Detect AI-generated content from ChatGPT, Gemini, and Claude with instant analysis."
+    },
+    {
+      "title": "Mustafa Coşkun mustafacoshkun - GitHub",
+      "url": "https://github.com/mustafacoshkun/",
+      "snippet": "mustafacoshkun has 6 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

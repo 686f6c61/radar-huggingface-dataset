@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JinchengPeng520QMUL/msc-urban-sound-tagging-models",
+  "slug": "jinchengpeng520qmul-msc-urban-sound-tagging-models",
+  "author": "JinchengPeng520QMUL",
+  "url": "https://huggingface.co/JinchengPeng520QMUL/msc-urban-sound-tagging-models",
+  "created_at": "2026-08-18T06:29:15.000Z",
+  "updated_at": "2026-08-18T06:29:15.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - multitel-ai/urban-sound-tagging: 1st place solution to the ...",
+      "url": "https://github.com/multitel-ai/urban-sound-tagging",
+      "snippet": "This git contains code for CRNNs we used to achieve first rank in Task 5 of the DCASE 2020 challenge. This task focuses on hierarchical multilabel urban sound tagging with spatiotemporal context. The technical report can be found here."
+    },
+    {
+      "title": "urban-sound-tagging/README.md at master · multitel-ai/urban ... - GitHub",
+      "url": "https://github.com/multitel-ai/urban-sound-tagging/blob/master/README.md",
+      "snippet": "This git contains code for CRNNs we used to achieve first rank in Task 5 of the DCASE 2020 challenge. This task focuses on hierarchical multilabel urban sound tagging with spatiotemporal context. The technical report can be found here."
+    },
+    {
+      "title": "Urban Sound Tagging using Convolutional Neural Networks",
+      "url": "https://www.researchgate.net/publication/336132704_Urban_Sound_Tagging_using_Convolutional_Neural_Networks",
+      "snippet": "A second model that uses scaled labels was built to account for human errors in the annotations. The proposed model achieved the first rank on the leaderboard with Micro-AUPRC values of 0.751 and ..."
+    },
+    {
+      "title": "Urban Sound Tagging - DCASE",
+      "url": "https://dcase.community/challenge2019/task-urban-sound-tagging",
+      "snippet": "The reason why we simultaneously formulate urban sound tagging at two different levels of granularity is to investigate the tradeoff between training machine listening models with specific, potentially erroneous labels (fine-grained multilabel classification); versus with approximate, likely correct labels (coarse-grained multilabel ..."
+    },
+    {
+      "title": "Urban Sound Tagging using Convolutional Neural Networks",
+      "url": "https://www.academia.edu/61641825/Urban_Sound_Tagging_using_Convolutional_Neural_Networks",
+      "snippet": "We applied this system to the task of Urban Sound Tagging, part of the DCASE 2019. The objective was to label different sources of noise from raw audio data. A modified form of MobileNetV2, a convolutional neural network (CNN) model was trained to classify both coarse and fine tags jointly."
+    }
+  ]
+}

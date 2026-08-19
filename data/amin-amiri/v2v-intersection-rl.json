@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "amin-amiri/v2v-intersection-rl",
+  "slug": "amin-amiri-v2v-intersection-rl",
+  "author": "amin-amiri",
+  "url": "https://huggingface.co/amin-amiri/v2v-intersection-rl",
+  "created_at": "2026-08-16T23:53:13.000Z",
+  "updated_at": "2026-08-17T00:53:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "multi-agent",
+    "autonomous-driving",
+    "v2v",
+    "ppo",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1813968,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cooperative unsignalized-intersection negotiation",
+      "dataset": null,
+      "metric": "Collision rate (V2V)",
+      "value": 0.0467
+    },
+    {
+      "task": "Cooperative unsignalized-intersection negotiation",
+      "dataset": null,
+      "metric": "Vehicles cleared per episode (V2V)",
+      "value": 5.7875
+    }
+  ],
+  "sources": [
+    {
+      "title": "V2V-LLM: Vehicle-to-Vehicle Cooperative Autonomous Driving with ...",
+      "url": "https://arxiv.org/abs/2502.09980",
+      "snippet": "We also propose our baseline method Vehicle-to-Vehicle Multimodal Large Language Model (V2V-LLM), which uses an LLM to fuse perception information from multiple connected autonomous vehicles (CAVs) and answer various types of driving-related questions: grounding, notable object identification, and planning."
+    },
+    {
+      "title": "‪Mohammad Amin Amiri‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=Ms0w8swAAAAJ&hl=en",
+      "snippet": "Mohammad Amin Amiri Isfahan University Verified email at sci.ui.ac.ir Computer Science Data Science Machine learning Road Safety"
+    },
+    {
+      "title": "‪Amin Amiri‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=nflruXQAAAAJ&hl=en",
+      "snippet": "‪Northwestern University‬ - ‪‪Cited by 42‬‬ - ‪Machine Learning‬ - ‪Deep Learning‬ - ‪Reinforcement Learning‬ - ‪Quantum Computing‬ - ‪Signal/Image Processing‬"
+    },
+    {
+      "title": "Deep Reinforcement Learning for Autonomous Vehicle Intersection Navigation",
+      "url": "https://arxiv.org/html/2310.08595",
+      "snippet": "Existing intersection navigation solutions in autonomous driving predominantly depend on vehicle-to-vehicle (V2V) communication and centralized systems. In this paper, we investigate the prospects of a single-agent approach employing Reinforcement Learning (RL) techniques to develop advanced, adaptive, and cost-efficient solutions for ..."
+    },
+    {
+      "title": "Dynamic Allocation of C-V2X Communication Resources Based on ... - MDPI",
+      "url": "https://www.mdpi.com/1424-8220/25/16/5209",
+      "snippet": "Vehicle-to-vehicle (V2V) and vehicle-to-network (V2N) communications are two key components of intelligent transport systems (ITSs) that can share spectrum resources through in-band overlay. V2V communication primarily supports traffic safety, whereas V2N primarily focuses on infotainment and information exchange. Achieving reliable V2V transmission alongside high-rate V2N services in resource ..."
+    }
+  ]
+}

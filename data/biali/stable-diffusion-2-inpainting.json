@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "biali/stable-diffusion-2-inpainting",
+  "slug": "biali-stable-diffusion-2-inpainting",
+  "author": "biali",
+  "url": "https://huggingface.co/biali/stable-diffusion-2-inpainting",
+  "created_at": "2026-08-15T01:07:58.000Z",
+  "updated_at": "2026-08-15T01:11:03.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "arxiv:2112.10752",
+    "arxiv:2202.00512",
+    "arxiv:1910.09700",
+    "license:openrail++",
+    "diffusers:StableDiffusionInpaintPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25915486966,
+  "storage_human": "25.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create Stable Diffusion Images - Image Generation Ai",
+      "url": "https://duckduckgo.com/y.js?ad_domain=openart.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=XLlMzL17Pp0MEgQdXEVKw6X4BLoBZMTuqO2DMEPoN7uMfWhnJc6hhAUQwTZqFBFiF5ipRsfIDQ22OXdH%2DapuhugHhv4KtFglV%2DeXfmivru7QGqr1XYbu4WHkVdL_V_aIHDXOFZtSOW0tlk0cOjd6Mg.rhzFCvgw9nl863bbA3RaMg&rut=91d0f77847cb04bce621928d0229b9a15b306b4433a1afd118882eca3c84412c&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8XcWXxm5yGg77lR%2DsSDNF7jVUCUxQpvPoC3DV5eF__5i3%2Dx4c%2DJ4aCVLMfhAuZNPfiAsjPt5JODzrb%2DtvFuefQPOLF6MBQHKxeMnKGN6DTot2U0C8uKQMQbYSvfAohuQjqbj5tCZroMcK%2DFaVUHcDzv0nrSPULdUSFjdTcSJfUtJuMX5I0BYQvfMhscNZvOUQ91Kf9136mxIW9NJRHwfTT5Jfj64%26u%3DaHR0cHMlM2ElMmYlMmZvcGVuYXJ0LmFpJTJmaG9tZSUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZHNlYXJjaC1iaW5nLXd3X3Nlcl9waG90b2dlbmVyYXRvci1zZWFyY2gtYWNxLXdlYiUyNnV0bV9jb250ZW50JTNkdG9wdGVybXNfbWl4XzA0MjElMjZtc2Nsa2lkJTNkMTFlZDBiNGE2YmFjMTc0Mjg0ZTM2MTM1YmE3ZWQ2ZjElMjZ1dG1fdGVybSUzZGltYWdlJTI1MjBnZW5lcmF0aW9uJTI1MjBhaQ%26rlid%3D11ed0b4a6bac174284e36135ba7ed6f1&vqd=4-98562981944558189803393304650820419100&iurl=%7B1%7DIG%3D44007B0F3B92482CA995954875EE75DE%26CID%3D1C217E5C2B9561491E7869EA2A9B60F0%26ID%3DDevEx%2C5037.1",
+      "snippet": "Create unique images and photos from scratch using OpenArt advanced AI generator. Create new images or modify existing ones fast using our advanced image AI."
+    },
+    {
+      "title": "Try Free AI Art Generator - Most Realistic Art Generator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=artlist.io&ad_provider=bingv7aa&ad_type=txad&click_metadata=a0p039jxWU3kFFIYnEr0uZE4_sbFqAIikqMzlF6TGuCkduYOzWxa8WHOTEw5OyCgwgPY5v4RoYN0uLOu21m5C0VXoOfYeew_m6MRd4CPnlgSELMkeWuSO%2DwGPFmLpm8faYdtKl_rZTF5My0j9To9ZA.tsjcRMaNGb5Kmp4jqpPfjw&rut=db0136512cfff0fb49c1e367c64dfcfc0d17015a24edb9b37f30abc6662b6818&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De89prNHXeyT7Pmjb%2Db5oNSQDVUCUxYC1_Fx5e0rIzR1havOQrhlZrZKqokAKYDg5l9pED%2DkCGwKfKttgIHcEyq93BlwnqXeSc6XguksShIEQOL6rGz2mSWRR%2D87kGb8iDzcOr2D5mkewZPu4pPqBNV6dRxRZwgnoVgn0lmmr19FlmWxSJO6bLjMsb1hAedy3jpb21LeFFCXscQ8F9peGJf_suJVaU%26u%3DaHR0cHMlM2ElMmYlMmZ0b29sa2l0LmFydGxpc3QuaW8lMmZpbWFnZS12aWRlby1nZW5lcmF0b3IlM2Ztb2RlJTNkaW1hZ2UlMjZtb2RlbEdyb3VwSUQlM2QxMTclMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2Q2Mjc1NjIwMzYlMjZ1dG1fY29udGVudCUzZDExNDAxOTUzNjA3NzE2MTklMjZ1dG1fdGVybSUzZEFJJTI1MjBnZW5lcmF0ZWQlMjUyMGFydCUyNmtleXdvcmQlM2RBSSUyNTIwZ2VuZXJhdGVkJTI1MjBhcnQlMjZhZCUzZCUyNm1hdGNodHlwZSUzZGIlMjZkZXZpY2UlM2RjJTI2bXNjbGtpZCUzZDBjOGI4YmY4ZmJhYTFhOGFiNTM2ZTE4NzJhNzg5YzYxJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkR2VuQUlfdENQQSUyNnV0bV90ZXJtJTNkQUklMjUyMGdlbmVyYXRlZCUyNTIwYXJ0JTI2dXRtX2NvbnRlbnQlM2RBcnRfR2VuZXJhdG9yXyUyNTVCR2VuQUlfSW1hZ2UlMjU1RA%26rlid%3D0c8b8bf8fbaa1a8ab536e1872a789c61&vqd=4-266168853962706813945320430798585663764&iurl=%7B1%7DIG%3D44007B0F3B92482CA995954875EE75DE%26CID%3D1C217E5C2B9561491E7869EA2A9B60F0%26ID%3DDevEx%2C5041.1",
+      "snippet": "High-Quality AI Tools All In One Place, An Experience Built Especially For Video Creators. Create High-Quality AI Art and Videos With Artlist&#x27;s Art Generator, Designed for Creators"
+    },
+    {
+      "title": "sd2-community/stable-diffusion-2-inpainting · Hugging Face",
+      "url": "https://huggingface.co/sd2-community/stable-diffusion-2-inpainting",
+      "snippet": "This stable-diffusion-2-inpainting model is resumed from stable-diffusion-2-base (512-base-ema.ckpt) and trained for another 200k steps. Follows the mask-generation strategy presented in LAMA which, in combination with the latent VAE representations of the masked image, are used as an additional conditioning."
+    },
+    {
+      "title": "README.md · stabilityai/stable-diffusion-2-inpainting at ...",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-2-inpainting/blob/2100baa01d5d89c9a2cca614e3fe31c7f33e414a/README.md",
+      "snippet": "This stable-diffusion-2-inpainting model is resumed from stable-diffusion-2-base (512-base-ema.ckpt) and trained for another 200k steps. Follows the mask-generation strategy presented in LAMA which, in combination with the latent VAE representations of the masked image, are used as an additional conditioning."
+    },
+    {
+      "title": "stable-diffusion-2-inpainting: Image-to-Image model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/stable-diffusion-2-inpainting-stabilityai",
+      "snippet": "For production systems, consider evaluating newer Stability AI models, though stable-diffusion-2-inpainting remains functional and widely used. This summary was produced with help from an AI and may contain inaccuracies—check the original source!"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ShiyiZhang/Self-OPD",
+  "slug": "shiyizhang-self-opd",
+  "author": "ShiyiZhang",
+  "url": "https://huggingface.co/ShiyiZhang/Self-OPD",
+  "created_at": "2026-08-17T17:31:01.000Z",
+  "updated_at": "2026-08-17T17:31:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SimpleOPD: Simple Tokenizer-Agnostic On-Policy Distillation for Long ...",
+      "url": "https://arxiv.org/pdf/2608.14277",
+      "snippet": "3 Experiment We adopt SU-01, an IMO gold-medal-level mathematical reasoning model developed by our team, as the teacher model. Our goal is to transfer its mathematical reasoning and proof-generation capabilities to a diverse set of student models through on-policy distillation. We consider both same-vocabulary and cross-tokenizer settings."
+    },
+    {
+      "title": "Self Model for Embodied Artificial Intelligence - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11390-026-6289-3",
+      "snippet": "This paper presents a systematic formulation of the self model for embodied artificial intelligence (AI), aiming to provide the missing internal representation that enables an agent to understand its own body, capabilities, memories, and decision processes. Unlike existing approaches that address isolated aspects such as perception, prediction, or skill adaptation, we propose a unified ..."
+    },
+    {
+      "title": "GitHub - chrisliu298/awesome-on-policy-distillation: A curated ...",
+      "url": "https://github.com/chrisliu298/awesome-on-policy-distillation",
+      "snippet": "A curated collection of papers, technical reports, frameworks, and tools for on-policy distillation (OPD) of large language models. On-policy distillation trains a student on samples from its own evolving policy, while a teacher (external, privileged, or self-conditioned) provides dense supervision ..."
+    },
+    {
+      "title": "IEEE Xplore Full-Text PDF:",
+      "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11271374",
+      "snippet": "IEEE Xplore Full-Text PDF:"
+    },
+    {
+      "title": "[2608.13040] Latent On-Policy Self-Distillation - arXiv.org",
+      "url": "https://arxiv.org/abs/2608.13040",
+      "snippet": "Enabling agents to learn from experience and internalize it into their policy has become a central problem in self-evolving AI. On-policy self-distillation (OPSD) offers an effective pathway by using a privileged self-teacher to provide dense supervision on the student&#x27;s own trajectories; however, existing methods still rely heavily on designer-specified privileged artifacts (e.g., answers ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SupraLabs/Supra2-Nano",
+  "slug": "supralabs-supra2-nano",
+  "author": "SupraLabs",
+  "url": "https://huggingface.co/SupraLabs/Supra2-Nano",
+  "created_at": "2026-08-02T02:54:21.000Z",
+  "updated_at": "2026-08-14T00:50:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "from-scratch",
+    "small-language-model",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:semran1/cosmopedia-v2-subset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 728,
+  "trending_score": 15,
+  "parameters": 799776,
+  "parameters_human": "799776",
+  "storage_bytes": 3209257,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SupraLabs/Supra2-Nano · Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra2-Nano",
+      "snippet": "Supra2-Nano is an 800K-parameter language model trained from scratch on 1B tokens using the Qwen3 architecture. It is part of the Supra2 family, a set of small language models trained on consumer-grade hardware to study scaling behavior at extremely low parameter counts."
+    },
+    {
+      "title": "SupraLabs · Independent AI Lab",
+      "url": "https://supra-labs.com/",
+      "snippet": "SupraLabs is an independent research lab building open small language and multimodal models that run on consumer hardware."
+    },
+    {
+      "title": "SupraLabs (SupraLabs) - Hugging Face",
+      "url": "https://huggingface.co/SupraLabs",
+      "snippet": "SupraLabs is an independent AI research org developing efficient, open-weight small models to make high-performance AI accessible on standard hardware. Learn more at supra-labs.com."
+    },
+    {
+      "title": "Supra Labs - GitHub",
+      "url": "https://github.com/Supra-Labs/",
+      "snippet": "Supra is creating a faster, better Web3 experience for everyone. - Supra Labs"
+    },
+    {
+      "title": "SupraLabs - GitHub",
+      "url": "https://github.com/SupraLabs-Research",
+      "snippet": "We pretrain and fine-tune efficient small language models, making advanced AI more accessible and practical for everyone to run. - SupraLabs"
+    }
+  ]
+}

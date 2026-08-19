@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lhs101/int4-xpu",
+  "slug": "lhs101-int4-xpu",
+  "author": "lhs101",
+  "url": "https://huggingface.co/lhs101/int4-xpu",
+  "created_at": "2026-08-18T22:19:49.000Z",
+  "updated_at": "2026-08-18T22:19:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "boogu/boogu-edit32_int4.safetensors · lhs101/wint4-quantized-models at main",
+      "url": "https://huggingface.co/lhs101/wint4-quantized-models/blob/main/boogu/boogu-edit32_int4.safetensors",
+      "snippet": "like 0 comfyui wint4 intel-xpu quantization archived License:mit Model card FilesFiles and versions xet Community Copy to bucket new main wint4-quantized-models / boogu /boogu-edit32_int4.safetensors lhs101 Upload folder using huggingface_hub 1ea9cba verifiedabout 1 month ago Download Download with hf CLI Copy download link History Blame ..."
+    },
+    {
+      "title": "XPU - Intel® GPUs - vLLM - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/en/v0.12.0/models/hardware_supported_models/xpu/",
+      "snippet": "Runs and optimized. 🟨 Runs and correct but not optimized to green yet. Does not pass accuracy test or does not run. November 27, 2025"
+    },
+    {
+      "title": "I Tried Running LLMs on Intel&#x27;s NPU. Here&#x27;s What Actually Happened.",
+      "url": "https://dev.to/mr1azl/i-tried-running-llms-on-intels-npu-heres-what-actually-happened-5h17",
+      "snippet": "The Promise Intel&#x27;s \"AI Boost\" NPU (Neural Processing Unit) ships in every Core Ultra laptop. The marketing suggests it&#x27;s your on-device AI accelerator, ready to run models locally. I wanted to test that claim by running LLMs on my ThinkPad T14 Gen 5."
+    },
+    {
+      "title": "vLLM on Intel XPU | intel/ai-containers | DeepWiki",
+      "url": "https://deepwiki.com/intel/ai-containers/2.6-vllm-on-intel-xpu",
+      "snippet": "vLLM on Intel XPU Relevant source files The vllm/ directory provides optimized Docker images and documentation for running the vLLM high-throughput LLM inference engine on Intel discrete GPUs (XPUs), specifically targeting Intel® Arc™ Pro B-Series and Intel® Data Center GPU Max Series. Intel actively contributes to the upstream vLLM project to integrate optimized kernels and features ..."
+    },
+    {
+      "title": "OpenVINO™ Model Hub - Intel",
+      "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/models.html",
+      "snippet": "Access resources for testing your AI model performance on Intel® hardware while identifying the right platform for your solution."
+    }
+  ]
+}

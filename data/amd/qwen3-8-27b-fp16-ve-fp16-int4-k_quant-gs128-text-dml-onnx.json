@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "amd/Qwen3.8-27B-fp16-ve-fp16-int4-k_quant-gs128-text-dml-onnx",
+  "slug": "amd-qwen3-8-27b-fp16-ve-fp16-int4-k_quant-gs128-text-dml-onnx",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Qwen3.8-27B-fp16-ve-fp16-int4-k_quant-gs128-text-dml-onnx",
+  "created_at": "2026-08-17T11:24:23.000Z",
+  "updated_at": "2026-08-17T11:48:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "qwen3_5",
+    "qwen",
+    "qwen3.8",
+    "directml",
+    "dml",
+    "int4",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16874930848,
+  "storage_human": "16.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Qwen3.8-27B: The Version You Can Actually Run, and How to Prepare For ...",
+      "url": "https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026",
+      "snippet": "Qwen3.8-27B is the checkpoint that fits one GPU. What is confirmed, what is not, and the VRAM maths."
+    },
+    {
+      "title": "Qwen3.8-27B: Specs, Benchmarks & Verdict - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/",
+      "snippet": "Qwen3.8-27B benchmarks, specs, local memory, context, license and comparisons—plus what Qwen&#x27;s launch-day evidence does and does not prove."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Guide to running Qwen3.8 quants including Qwen3.8-27B on your local setup."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "cjfrown/ppo-Huggy",
+  "slug": "cjfrown-ppo-huggy",
+  "author": "cjfrown",
+  "url": "https://huggingface.co/cjfrown/ppo-Huggy",
+  "created_at": "2026-08-16T08:31:52.000Z",
+  "updated_at": "2026-08-16T08:32:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187355127,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

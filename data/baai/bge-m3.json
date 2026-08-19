@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "BAAI/bge-m3",
+  "slug": "baai-bge-m3",
+  "author": "BAAI",
+  "url": "https://huggingface.co/BAAI/bge-m3",
+  "created_at": "2024-01-27T17:07:29.000Z",
+  "updated_at": "2024-07-03T14:50:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "onnx",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "arxiv:2402.03216",
+    "arxiv:2004.04906",
+    "arxiv:2106.14807",
+    "arxiv:2107.05720",
+    "arxiv:2004.12832",
+    "license:mit",
+    "eval-results",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 3406,
+  "downloads_30d": 35595931,
+  "trending_score": 16,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13704659878,
+  "storage_human": "13.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "BGE-M3 (paper, code) In this project, we introduce BGE-M3, which is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "baai / bge-m3",
+      "url": "https://docs.api.nvidia.com/nim/reference/baai-bge-m3",
+      "snippet": "baai / bge-m3 Model Overview Description BGE-M3 is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/baai-bge-m3",
+      "snippet": "BAAI/bge-m3 powered by Text Embeddings Inference (TEI) Original Model Card Text Embeddings Inference Documentation Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "bge-m3 Model by BAAI | NVIDIA NIM",
+      "url": "https://build.nvidia.com/baai/bge-m3?snippet_tab=Python",
+      "snippet": "Embedding model for text retrieval tasks, excelling in dense, multi-vector, and sparse retrieval."
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages."
+    }
+  ]
+}

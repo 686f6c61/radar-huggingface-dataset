@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dealignai/DeepSeek-V4-Flash-0731-JANG-CRACK",
+  "slug": "dealignai-deepseek-v4-flash-0731-jang-crack",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/DeepSeek-V4-Flash-0731-JANG-CRACK",
+  "created_at": "2026-08-06T19:24:17.000Z",
+  "updated_at": "2026-08-07T03:12:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4",
+    "deepseek",
+    "deepseek-v4",
+    "moe",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "jang",
+    "long-context",
+    "reasoning",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 26,
+  "downloads_30d": 4596,
+  "trending_score": 8,
+  "parameters": 31374954583,
+  "parameters_human": "31.37B",
+  "storage_bytes": 101982500132,
+  "storage_human": "102.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dealignai/DeepSeek-V4-Flash-0731-JANG-CRACK · Hugging Face",
+      "url": "https://huggingface.co/dealignai/DeepSeek-V4-Flash-0731-JANG-CRACK",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dealignai/DeepSeek-V4-Flash-0731-JANG-CRACK at main",
+      "url": "https://huggingface.co/dealignai/DeepSeek-V4-Flash-0731-JANG-CRACK/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 - GitHub",
+      "url": "https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 - Free Local AI Chat Desktop App DeepSeek V4 Flash 0731 is a free desktop application for running DeepSeek V4 Flash locally. Deepseek v4 flash free to download, no API key needed, no subscription. Deepseek v4 flash gguf format support for quantized inference on consumer hardware."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731 · Models",
+      "url": "https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "Technical Report 👁️ Introduction DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. It has the same model structure as DeepSeek-V4-Flash-DSpark, i.e. it comes with a speculative decoding module attached. DeepSeek-V4-Flash-0731 outperforms DeepSeek-V4-Pro (Preview) on benchmarks listed ..."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE ..."
+    }
+  ]
+}

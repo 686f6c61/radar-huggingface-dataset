@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "mulemp/Imagine__That",
+  "slug": "mulemp-imagine__that",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/Imagine__That",
+  "created_at": "2026-04-01T05:06:06.000Z",
+  "updated_at": "2026-08-17T16:04:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18296001554,
+  "storage_human": "18.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

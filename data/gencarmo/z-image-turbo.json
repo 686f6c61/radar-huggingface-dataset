@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Gencarmo/Z-Image-Turbo",
+  "slug": "gencarmo-z-image-turbo",
+  "author": "Gencarmo",
+  "url": "https://huggingface.co/Gencarmo/Z-Image-Turbo",
+  "created_at": "2026-08-17T04:12:53.000Z",
+  "updated_at": "2026-08-17T04:24:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "arxiv:2511.22699",
+    "arxiv:2511.22677",
+    "arxiv:2511.13649",
+    "license:apache-2.0",
+    "diffusers:ZImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 65727384473,
+  "storage_human": "65.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Z-Image Turbo | Free AI Image Generator in Seconds",
+      "url": "https://zimageturbo.io/en",
+      "snippet": "Generate stunning AI images in under 1 second with Z-Image Turbo. Free 6B parameter model with photorealistic quality. No sign-up required. Try it now!"
+    },
+    {
+      "title": "Tongyi-MAI/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "📖 Accurate Bilingual Text Rendering: Z-Image-Turbo excels at accurately rendering complex Chinese and English text. 💡 Prompt Enhancing & Reasoning: Prompt Enhancer empowers the model with reasoning capabilities, enabling it to transcend surface-level descriptions and tap into underlying world knowledge."
+    },
+    {
+      "title": "z-image-turbo: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/z-image-turbo-prunaai",
+      "snippet": "Overview z-image-turbo is a 6-billion-parameter text-to-image diffusion model developed by Tongyi-MAI and optimized by prunaai for inference speed. It generates images from text prompts at resolutions up to 2048×2048 pixels, with default generation at 1024×1024. The single most important characteristic is its speed: this model prioritizes rapid generation over maximum quality, making it ..."
+    },
+    {
+      "title": "Z Image Turbo - a Hugging Face Space by Tongyi-MAI",
+      "url": "https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "Enter a description of the picture you want, pick a size and optional settings, and the app creates a matching image for you. You can control the seed and steps to influence the result, and the gen..."
+    },
+    {
+      "title": "Z-Image Turbo Image Model | aicreators.tools",
+      "url": "https://www.aicreators.tools/model/image/176",
+      "snippet": "Z-Image-Turbo came out on Nov 27th 2025 and it lets you generate an image from plain language prompts. It&#x27;s said to follow instructions well. The model comes from a group called Tongyi-MAI which seems is part of Alibaba&#x27;s AI setup, likely linked to the wider Tongyi model family that started inside Alibaba Cloud."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "udaykiran1604/fashion",
+  "slug": "udaykiran1604-fashion",
+  "author": "udaykiran1604",
+  "url": "https://huggingface.co/udaykiran1604/fashion",
+  "created_at": "2026-08-18T05:02:34.000Z",
+  "updated_at": "2026-08-18T05:02:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "udaykiran1604/gena_ai · Hugging Face",
+      "url": "https://huggingface.co/udaykiran1604/gena_ai",
+      "snippet": "udaykiran1604 / gena_ai like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "How AI and LLMs Can Transform Fashion Product Development",
+      "url": "https://www.linkedin.com/posts/udaya-kiran-mylavarapu_ai-assistant-in-product-development-activity-7360309229116674048-Ml7Q",
+      "snippet": "In my recent article, I delve into the transformative potential of an AI-powered assistant in streamlining this critical process."
+    },
+    {
+      "title": "Udaya Kiran on LinkedIn: When AI met 3D : How Fashion&#x27;s New Power ...",
+      "url": "https://www.linkedin.com/posts/udaya-kiran-mylavarapu_when-ai-met-3d-how-fashions-new-power-activity-7208005402116988928-2M4H",
+      "snippet": "There is an apparent perplexity on the roles of 3D and AI in Fashion; there is even a perception that AI is pushing out the significance of 3D technology and…"
+    },
+    {
+      "title": "Enterprise AI Visual Production for Fashion | Uwear.ai",
+      "url": "https://uwear.ai/",
+      "snippet": "Generate catalog-ready on-model fashion visuals at enterprise volume with brand consistency, QA, retries, API delivery, and implementation support."
+    },
+    {
+      "title": "FashionAI — AI Fashion Design Studio: Generate, Try On & Animate Fashion",
+      "url": "https://fashionai.com/",
+      "snippet": "The AI fashion design studio. Generate original garments from text in 90+ styles, try clothes on your own photo, turn sketches into finished designs, create on-model photoshoots, and animate designs into runway videos."
+    }
+  ]
+}

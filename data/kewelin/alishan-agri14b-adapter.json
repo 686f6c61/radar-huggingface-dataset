@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kewelin/alishan-agri14b-adapter",
+  "slug": "kewelin-alishan-agri14b-adapter",
+  "author": "Kewelin",
+  "url": "https://huggingface.co/Kewelin/alishan-agri14b-adapter",
+  "created_at": "2026-08-01T12:01:30.000Z",
+  "updated_at": "2026-08-17T16:57:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9817067350,
+  "storage_human": "9.8 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kewelin/alishan-agri14b-adapter · Hugging Face",
+      "url": "https://huggingface.co/Kewelin/alishan-agri14b-adapter",
+      "snippet": "Kewelin / alishan-agri14b-adapter like 0 PEFT Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "alishan-agri14b-adapter API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Kewelin/alishan-agri14b-adapter",
+      "snippet": "Deploy alishan-agri14b-adapter with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "alishan-agri14bv2-adapter API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Kewelin/alishan-agri14bv2-adapter",
+      "snippet": "Run alishan-agri14bv2-adapter with FriendliAI inference. [More Information Needed]."
+    },
+    {
+      "title": "Kewelin/alishan-law8bv2-adapter · Hugging Face",
+      "url": "https://huggingface.co/Kewelin/alishan-law8bv2-adapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kewelin (kewelin) · GitHub",
+      "url": "https://github.com/kewelin/",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    }
+  ]
+}

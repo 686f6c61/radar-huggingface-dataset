@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "MidTool/Arctic-MidTool-MT-8B",
+  "slug": "midtool-arctic-midtool-mt-8b",
+  "author": "MidTool",
+  "url": "https://huggingface.co/MidTool/Arctic-MidTool-MT-8B",
+  "created_at": "2026-08-12T20:47:58.000Z",
+  "updated_at": "2026-08-18T00:54:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agentic",
+    "tool-use",
+    "mid-training",
+    "function-calling",
+    "conversational",
+    "dataset:MidTool/MidTool-Mix",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939430,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779 · Hugging Face",
+      "url": "https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779",
+      "snippet": "Note: Snowflake/Arctic-MidTool-MT-4B on HF hosts the pretrain checkpoint only; this repo is the SFT endpoint."
+    },
+    {
+      "title": "Build RAG Chatbot with LangChain, Milvus, Mistral AI Ministral 8B, and ...",
+      "url": "https://zilliz.com/tutorials/rag/langchain-and-milvus-and-mistral-ai-ministral-8b-and-ollama-snowflake-arctic-embed",
+      "snippet": "The Mistral AI Mixtral 8B model, running locally via Ollama, became your creative powerhouse, generating human-like responses grounded in the context you provided. And let&#x27;s not forget the Snowflake-Arctic-Embed model, which transformed raw text into meaningful vectors, ensuring your system understands the nuances of language."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=Arctic_AI",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Apps Inference Providers Misc Arctic_AI"
+    },
+    {
+      "title": "GitHub - xiziliang/Midtool: 一个AI作画",
+      "url": "https://github.com/xiziliang/Midtool",
+      "snippet": "一个AI作画. Contribute to xiziliang/Midtool development by creating an account on GitHub."
+    },
+    {
+      "title": "publications | Yite Wang",
+      "url": "https://yitewang.github.io/publications/",
+      "snippet": "Research Scientist at Snowflake AI Research working on reasoning models, LLM agents, and structured data."
+    }
+  ]
+}

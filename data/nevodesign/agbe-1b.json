@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "NEVODESIGN/agbe-1b",
+  "slug": "nevodesign-agbe-1b",
+  "author": "NEVODESIGN",
+  "url": "https://huggingface.co/NEVODESIGN/agbe-1b",
+  "created_at": "2026-08-13T12:51:28.000Z",
+  "updated_at": "2026-08-18T23:40:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 155,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 7320146656,
+  "storage_human": "7.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NEVODESIGN/agbe-1b · Hugging Face",
+      "url": "https://huggingface.co/NEVODESIGN/agbe-1b",
+      "snippet": "Docker Model Runner How to use NEVODESIGN/agbe-1b with Docker Model Runner: ... Lemonade How to use NEVODESIGN/agbe-1b with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list Atomic Chat No model card Downloads last month 5 GGUF Model size 1.0B params Architecture gemma3 Chat template Hardware ..."
+    },
+    {
+      "title": "NEVODESIGN (nwokolo victor oluebubechukwu) - Hugging Face",
+      "url": "https://huggingface.co/NEVODESIGN",
+      "snippet": "Recent Activity updated a modelabout 5 hours ago NEVODESIGN/agbe-1b published a modelabout 23 hours ago NEVODESIGN/agbe-1b liked a model2 days ago google/gemma-3-1b-it View all activity"
+    },
+    {
+      "title": "Building Production AI Agents with Sub-1B Parameter Models",
+      "url": "https://neosmith.ai/blog/production-ai-agents-sub-1b-models",
+      "snippet": "A technical deep-dive into building reliable, production-grade AI agents using models with fewer than 1 billion parameters."
+    },
+    {
+      "title": "AI Blockbench Model Generator | Rigged 3D Minecraft Models from a ...",
+      "url": "https://kodari.ai/blogs/ai-blockbench-model-generator",
+      "snippet": "AI Blockbench Model Generator: Rigged, Animated .bbmodel Files from a Prompt Describe a mob, a pet, a weapon, a prop. Get back a proper .bbmodel, rigged with bones and animated, that opens straight in Blockbench. No modeling, no keyframing by hand."
+    },
+    {
+      "title": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026)",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/best-local-ai-models-by-vram-2026",
+      "snippet": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026) Verified open-weight AI model picks for every memory tier — 8GB cards to 384GB workstations — with licenses, Q4 sizes, and fine-tune vetting."
+    }
+  ]
+}

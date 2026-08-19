@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Avra98/Sudoku_superposition",
+  "slug": "avra98-sudoku_superposition",
+  "author": "Avra98",
+  "url": "https://huggingface.co/Avra98/Sudoku_superposition",
+  "created_at": "2026-08-14T17:38:28.000Z",
+  "updated_at": "2026-08-15T08:45:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sudoku",
+    "reasoning",
+    "curriculum",
+    "jax",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18396674854,
+  "storage_human": "18.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avra98 (Avrajit Ghosh) - Hugging Face",
+      "url": "https://huggingface.co/Avra98",
+      "snippet": "Sort: Recently updated Avra98/sudoku-9x9-20empty-baseline-1p5b-sweep Updated 3 minutes ago"
+    },
+    {
+      "title": "Avra98 (Avrajit Ghosh) - Hugging Face",
+      "url": "https://huggingface.co/Avra98/models",
+      "snippet": "Deep Learning Avra98/sudoku-9x9-20empty-baseline-1p5b-sweep Avra98/sudoku-9x9-20empty-adaptive-k-noncurriculum"
+    },
+    {
+      "title": "GitHub - Avra98/reasoning-by-superposition-latent: Coconut latent CoT ...",
+      "url": "https://github.com/Avra98/reasoning-by-superposition-latent",
+      "snippet": "Coconut latent CoT with curriculum backtracking, truncated BPTT, and stage-matched [Q] candidates - Avra98/reasoning-by-superposition-latent"
+    },
+    {
+      "title": "Sudoku-Bench - pub.sakana.ai",
+      "url": "https://pub.sakana.ai/sudoku/",
+      "snippet": "Sudoku variants are not like vanilla Sudoku puzzles — Each puzzle author invents new rules specific to that puzzle (scroll down to see examples). These human-crafted puzzles are designed to stump expert solvers at first glance, but allow progress once the solver finds a non-obvious \"break-in.\" As such, Sudoku variants are the ideal (and possibly densest) source of \"aha\" or \"euraka ..."
+    },
+    {
+      "title": "reasoning-by-superposition-latent/dataset.py at main · Avra98 ... - GitHub",
+      "url": "https://github.com/Avra98/reasoning-by-superposition-latent/blob/main/dataset.py",
+      "snippet": "main reasoning-by-superposition-latent / dataset.py Code Blame 734 lines (611 loc) · 26.9 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "prachuryyaIITG/CLASSER_Nepali_MuRIL",
+  "slug": "prachuryyaiitg-classer_nepali_muril",
+  "author": "prachuryyaIITG",
+  "url": "https://huggingface.co/prachuryyaIITG/CLASSER_Nepali_MuRIL",
+  "created_at": "2026-01-09T11:31:36.000Z",
+  "updated_at": "2026-08-18T14:46:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "NER",
+    "Named_Entity_Recognition",
+    "ne",
+    "dataset:prachuryyaIITG/CLASSER",
+    "arxiv:2601.10161",
+    "base_model:google/muril-large-cased",
+    "base_model:finetune:google/muril-large-cased",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 504926275,
+  "parameters_human": "504.9M",
+  "storage_bytes": 2019752356,
+  "storage_human": "2.0 GB",
+  "base_model": "google/muril-large-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prachuryyaIITG/CLASSER_Nepali_MuRIL · Hugging Face",
+      "url": "https://huggingface.co/prachuryyaIITG/CLASSER_Nepali_MuRIL",
+      "snippet": "MuRIL is fine-tuned on Nepali CLASSER dataset for Fine-grained Named Entity Recognition. The tagset of MultiCoNER2 is a fine-grained tagset. The fine to coarse level mapping of the tags are as follows:"
+    },
+    {
+      "title": "CLASSER - a prachuryyaIITG Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prachuryyaIITG/classer",
+      "snippet": "CLASSER: Cross-lingual Annotation Projection enhancement through Script Similarity for Fine-grained Named Entity Recognition"
+    },
+    {
+      "title": "AWED-PIPER: Agents, Web Applications & Expert Detectors for Personally ...",
+      "url": "https://arxiv.org/html/2601.10161v3",
+      "snippet": "AWED-PIPER is a comprehensive suite comprising an a gentic tools, interactive w eb applications, and state-of-the-art e xpert d etector models for p ersonally i dentifiable information p rotection and fine-grained named e ntity r ecognition."
+    },
+    {
+      "title": "GitHub - PrachuryyaKaushik/CLASSER: CLASSER is a framework for cross ...",
+      "url": "https://github.com/PrachuryyaKaushik/CLASSER",
+      "snippet": "CLASSER is a framework for cross-lingual annotation projection with script-similarity-based refinement to create high-quality fine-grained named entity recognition datasets. Utilizing CLASSER, fine-grained named entity recognition dataset is created in five languages: Assamese (as), Bodo (brx), Marathi (mr), Nepali (ne) and Sanskrit (as)."
+    },
+    {
+      "title": "HimalayaAI - Open Nepali AI Research",
+      "url": "https://www.himalayaai.org/",
+      "snippet": "A 0.5B parameter language model trained on Nepali language, available on Hugging Face. An open-source knowledge platform for use of AI in Education. A Nepali language tokenizer optimized for NLP tasks and large language model training. Large-scale text corpus in Parquet for GPT-2-style language model pretraining and tokenizer research."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "asjadilahi/danAI-55M-Reasoning",
+  "slug": "asjadilahi-danai-55m-reasoning",
+  "author": "asjadilahi",
+  "url": "https://huggingface.co/asjadilahi/danAI-55M-Reasoning",
+  "created_at": "2026-08-18T12:56:50.000Z",
+  "updated_at": "2026-08-18T13:13:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ur"
+  ],
+  "tags": [
+    "safetensors",
+    "danai",
+    "small-language-model",
+    "slm",
+    "edge-ai",
+    "agentic",
+    "tool-calling",
+    "reasoning",
+    "cot",
+    "mobile",
+    "text-generation",
+    "conversational",
+    "en",
+    "ur",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 54538752,
+  "parameters_human": "54.5M",
+  "storage_bytes": 220460190,
+  "storage_human": "220 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Reasoning AI Models (August 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/reasoning-models",
+      "snippet": "Top AI models with dedicated reasoning capabilities, ranked by benchmark performance. Top picks: Claude Mythos 5, Claude Opus 5, Claude Fable 5. 128 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Elorian AI&#x27;s $55M Raise Accelerates Visual Reasoning AI ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/500global_elorian-raises-55m-to-scale-visual-reasoning-activity-7449501673036648449-Levd",
+      "snippet": "Elorian AI&#x27;s $55M raise underscores a key shift in AI: reasoning is no longer limited to text. As the frontier expands into visual intelligence, the ability for models to interpret and reason ..."
+    },
+    {
+      "title": "Elorian, which builds visual AI models with better reasoning ...",
+      "url": "https://www.techmeme.com/260409/p24",
+      "snippet": "Elorian, which builds visual AI models with better reasoning capabilities for industries like robotics, emerges from stealth with $55M at a $300M valuation — Former Google DeepMind researcher Andrew Dai believes that the artificial intelligence models at big labs have the intelligence of a 3-year-old kid … Reuters:"
+    },
+    {
+      "title": "Ex-Google DeepMind researchers&#x27; startup Elorian raises $55m",
+      "url": "https://www.techinasia.com/news/exgoogle-deepmind-researchers-startup-elorian-raises-55m",
+      "snippet": "🧠 Food for thought Implications, context, and why it matters. Elorian ties its mission to visual reasoning, the physical world, and longer-term artificial general intelligence (AGI) ambitions ..."
+    }
+  ]
+}

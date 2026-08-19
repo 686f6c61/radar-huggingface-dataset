@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/mlreview-chat-assistant-53626ab7",
+  "slug": "tianfuxinqu-mlreview-chat-assistant-53626ab7",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/mlreview-chat-assistant-53626ab7",
+  "created_at": "2026-08-14T15:35:46.000Z",
+  "updated_at": "2026-08-14T15:35:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Tracker: New LLM Launches, Updated Weekly | AI Flash ...",
+      "url": "https://aiflashreport.com/model-releases.html",
+      "snippet": "Live tracker of every new AI model release - GPT, Claude, Gemini, Llama, open-weights. Launch dates, context windows, benchmarks. Updated weekly."
+    },
+    {
+      "title": "Malicious AI Assistant Extensions Harvest LLM Chat Histories",
+      "url": "https://otx.alienvault.com/pulse/69a9e3fba46b38943d724458",
+      "snippet": "An investigation has uncovered malicious Chromium-based browser extensions masquerading as legitimate AI assistant tools to collect Large Language Model (LLM) chat histories and browsing data. These extensions have been installed approximately 900,000 times, affecting over 20,000 enterprise tenants. The malicious extensions collect full URLs and AI chat content from platforms like ChatGPT and ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Tianfu Agent — AI 命理推演引擎 | 紫微斗数·八字·奇门遁甲",
+      "url": "https://tianfu-ai.com/chat",
+      "snippet": "Tianfu Agent 融合紫微斗数、子平八字、奇门遁甲三大命理流派，内置 250+ 定制化命盘工具。多 Agent 协作架构，可视化推理流程，每一步分析透明可追溯。不输出模板化结论，只呈现可验证的分析路径。"
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

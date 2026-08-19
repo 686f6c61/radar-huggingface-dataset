@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nitrai-research/AuraMIDI-v1",
+  "slug": "nitrai-research-auramidi-v1",
+  "author": "nitrai-research",
+  "url": "https://huggingface.co/nitrai-research/AuraMIDI-v1",
+  "created_at": "2026-08-17T17:04:03.000Z",
+  "updated_at": "2026-08-17T17:06:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "music",
+    "audio",
+    "midi",
+    "symbolic-music",
+    "transformer",
+    "pytorch",
+    "text-to-music",
+    "sound",
+    "generative-ai",
+    "text-to-audio",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 348473524,
+  "storage_human": "348 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nitrai-research (NitrAI) - Hugging Face",
+      "url": "https://huggingface.co/nitrai-research/collections",
+      "snippet": "Org profile for NitrAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "nitrai-research (NitrAI) - Hugging Face",
+      "url": "https://huggingface.co/nitrai-research",
+      "snippet": "NitrAI ⚡ Welcome to NitrAI. We are an AI research and development organization dedicated to bridging the gap between frontier closed-source intelligence and consumer-grade hardware."
+    },
+    {
+      "title": "NitrAI — AI Research Lab",
+      "url": "https://nitrai.dev/",
+      "snippet": "When you request early research access or contact us via contact@nitrai.dev, we collect your email address solely to communicate model updates, technical whitepapers, and early access keys."
+    },
+    {
+      "title": "Models — NitrAI",
+      "url": "https://nitrai.dev/models.html",
+      "snippet": "NitrAI open-weights reasoning models — specifications and architecture details."
+    },
+    {
+      "title": "GitHub - ponrajaruldas/aura-midi-studio: Premium AI Audio to MIDI ...",
+      "url": "https://github.com/ponrajaruldas/aura-midi-studio",
+      "snippet": "Premium AI Audio to MIDI Converter PWA. Contribute to ponrajaruldas/aura-midi-studio development by creating an account on GitHub."
+    }
+  ]
+}

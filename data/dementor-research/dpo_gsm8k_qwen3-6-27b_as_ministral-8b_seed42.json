@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_gsm8k_qwen3.6-27b_as_ministral-8b_seed42",
+  "slug": "dementor-research-dpo_gsm8k_qwen3-6-27b_as_ministral-8b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_ministral-8b_seed42",
+  "created_at": "2026-08-16T19:44:24.000Z",
+  "updated_at": "2026-08-17T21:58:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965809824,
+  "storage_human": "966 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/dpo_gsm8k_qwen3.6-27b_as_aya-expanse-8b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_aya-expanse-8b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dementor-research/dpo_gsm8k_ministral-8b_as_qwen3.6-27b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_ministral-8b_as_qwen3.6-27b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dpo_gsm8k_qwen3.6-27b_as_aya-expanse-8b_seed42 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_qwen3.6-27b_as_aya-expanse-8b_seed42",
+      "snippet": "Deploy dpo_gsm8k_qwen3.6-27b_as_aya-expanse-8b_seed42 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade ..."
+    },
+    {
+      "title": "dpo_gsm8k_gpt-oss-20b_as_qwen3.6-27b_seed3 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_gpt-oss-20b_as_qwen3.6-27b_seed3",
+      "snippet": "Deploy dementor-research/dpo_gsm8k_gpt-oss-20b_as_qwen3.6-27b_seed3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and ..."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Qwen Studio offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts."
+    }
+  ]
+}

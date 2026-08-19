@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "facebook/VGGT-Omega",
+  "slug": "facebook-vggt-omega",
+  "author": "facebook",
+  "url": "https://huggingface.co/facebook/VGGT-Omega",
+  "created_at": "2026-03-17T20:47:45.000Z",
+  "updated_at": "2026-03-17T20:47:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "facebook",
+    "meta-pytorch",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 240,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/VGGT-Omega · Hugging Face",
+      "url": "https://huggingface.co/facebook/VGGT-Omega",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facebook/VGGT-Omega at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/VGGT-Omega/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - facebookresearch/vggt-omega: [CVPR 2026 Oral] VGGT Omega",
+      "url": "https://github.com/facebookresearch/vggt-omega/tree/main",
+      "snippet": "We benchmark the end-to-end peak GPU memory usage of VGGT-Omega-1B-512 on a single NVIDIA A100 GPU with 624x416 input images. The measurement covers the full inference program, from loading the model weights onto the GPU through the forward pass, so it includes both the memory needed to store the model itself and the memory used by inference ..."
+    },
+    {
+      "title": "vggt-omega/README.md at main · facebookresearch/vggt-omega",
+      "url": "https://github.com/facebookresearch/vggt-omega/blob/main/README.md",
+      "snippet": "We benchmark the end-to-end peak GPU memory usage of VGGT-Omega-1B-512 on a single NVIDIA A100 GPU with 624x416 input images. The measurement covers the full inference program, from loading the model weights onto the GPU through the forward pass, so it includes both the memory needed to store the model itself and the memory used by inference ..."
+    },
+    {
+      "title": "Vggt-ω",
+      "url": "https://vggt-omega.github.io/",
+      "snippet": "Recent feed-forward reconstruction models, such as VGGT, have proven competitive with traditional optimization-based reconstructors while also providing geometry-aware features useful for other tasks. Here, we show that the quality of these models scales predictably with model and data size. We do so by introducing VGGT-Ω, which substantially improves reconstruction accuracy, efficiency, and ..."
+    }
+  ]
+}

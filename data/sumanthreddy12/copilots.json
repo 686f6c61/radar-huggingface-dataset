@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SumanthReddy12/copilots",
+  "slug": "sumanthreddy12-copilots",
+  "author": "SumanthReddy12",
+  "url": "https://huggingface.co/SumanthReddy12/copilots",
+  "created_at": "2026-08-17T04:36:42.000Z",
+  "updated_at": "2026-08-17T04:36:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sumanth Reddy - Senior Data Engineer | Generative AI (LLMs, RAG ...",
+      "url": "https://www.linkedin.com/in/sumanth-reddy-ai",
+      "snippet": "Senior Data Engineer | Generative AI (LLMs, RAG) | Snowflake | Databricks | Palantir Foundry | DBT | Airflow | Terraform | Cloud Data Platforms (AWS/AZURE) | HIPAA | PHI | Healthcare & Financial ..."
+    },
+    {
+      "title": "AI models for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models",
+      "snippet": "Compare available AI models in Copilot Chat and choose the best model for your task."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "Sumanth Reddy - DoubleO.ai | Building AI Agents for Non ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/sumanth-reddy-c",
+      "snippet": "DoubleO is a ridiculously simple tool enabling non-developers to automate any routine workflow via entire teams of AI workers (agents), as easily as asking a teammate. With self-building, self ..."
+    },
+    {
+      "title": "Supported AI models in GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "snippet": "For all of the default AI models, input prompts and output completions run through GitHub Copilot&#x27;s content filters for harmful, offensive, or off-topic content, and for public code matching when enabled. Supported AI models in Copilot This table lists the AI models available in Copilot, along with their release status."
+    }
+  ]
+}

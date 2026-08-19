@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dusersad12/SweepBestModel-Repo",
+  "slug": "dusersad12-sweepbestmodel-repo",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/SweepBestModel-Repo",
+  "created_at": "2026-08-18T03:01:40.000Z",
+  "updated_at": "2026-08-18T03:03:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "sweep",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36,
+  "storage_human": "36 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-models · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ai-models",
+      "snippet": "g4f-working is a daily-updated list of working no-auth AI providers and models from @xtekky/gpt4free. It helps developers, testers, and AI enthusiasts instantly find which models are currently online and accessible without any API keys, tokens, or cookies."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Unleashing the Power of Open Source AI Models and Machine Learning ...",
+      "url": "https://aimodels.org/",
+      "snippet": "Open Source AI Community We are committed to building a community of developers, researchers, and enthusiasts who share our vision of democratizing AI and making it accessible to everyone. Collection of AI Model Downloads and Machine Learning Tools Explore a collection of open source AI models and tools for machine learning. These models and tools are designed to help you build intelligent ..."
+    }
+  ]
+}

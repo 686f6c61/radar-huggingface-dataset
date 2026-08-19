@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "StromaAILabs/memweave-gliclass-intent-classifier-v1",
+  "slug": "stromaailabs-memweave-gliclass-intent-classifier-v1",
+  "author": "StromaAILabs",
+  "url": "https://huggingface.co/StromaAILabs/memweave-gliclass-intent-classifier-v1",
+  "created_at": "2026-08-15T05:15:32.000Z",
+  "updated_at": "2026-08-15T05:15:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "GLiClass",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 186119424,
+  "parameters_human": "186.1M",
+  "storage_bytes": 746969852,
+  "storage_human": "747 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StromaAILabs/memweave-fastfit-intent-classifier-v1 · Hugging Face",
+      "url": "https://huggingface.co/StromaAILabs/memweave-fastfit-intent-classifier-v1",
+      "snippet": "StromaAILabs / memweave-fastfit-intent-classifier-v1 like 0 Transformers Safetensors FastFit arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "StromaAILabs/memweave-setfit-intent-classifier-v1 · Hugging Face",
+      "url": "https://huggingface.co/StromaAILabs/memweave-setfit-intent-classifier-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sachinsharma9780/memweave: memweave is a zero-infrastructure ...",
+      "url": "https://github.com/sachinsharma9780/memweave",
+      "snippet": "Agent memory you can read, search, and git diff. memweave is a zero-infrastructure, async-first Python library that gives AI agents persistent, searchable memory — stored as plain Markdown files and indexed by SQLite. No external services. No black-box databases. Every memory is a file you can open, edit, grep, and version-control."
+    },
+    {
+      "title": "GitHub - Knowledgator/GLiClass: Generalist and Lightweight Model for ...",
+      "url": "https://github.com/Knowledgator/GLiClass",
+      "snippet": "⭐ GLiClass: Generalist and Lightweight Model for Sequence Classification GLiClass is an efficient, zero-shot sequence classification model inspired by the GLiNER framework."
+    },
+    {
+      "title": "intent_classification.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/mistralai/cookbook/blob/main/mistral/classifier_factory/intent_classification.ipynb",
+      "snippet": "Intent Detection: Identify user intent efficiently with a custom classifier In this cookbook, we will explore classification for intent detection and classification using our Classifier Factory. To keep things straightforward, we will concentrate on a particular example that involves single-target classification."
+    }
+  ]
+}

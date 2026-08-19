@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "NoxNotreve/Bonsai-27B-gguf",
+  "slug": "noxnotreve-bonsai-27b-gguf",
+  "author": "NoxNotreve",
+  "url": "https://huggingface.co/NoxNotreve/Bonsai-27B-gguf",
+  "created_at": "2026-08-19T01:30:54.000Z",
+  "updated_at": "2026-08-19T01:30:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "conversational",
+    "1-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 70038949088,
+  "storage_human": "70.0 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prism-ml/Bonsai-27B-gguf · Hugging Face",
+      "url": "https://huggingface.co/prism-ml/Bonsai-27B-gguf",
+      "snippet": "The quality-footprint trade-off: the binary model retains 89.5% of the full-precision average, and the gap is modest and predictable — the reasoning core (math, coding) stays within a few points of baseline, with the difference concentrated in the most demanding categories; if quality is the priority, consider the ternary GGUF build (94.6%)"
+    },
+    {
+      "title": "Bonsai 27B - a prism-ml Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prism-ml/bonsai-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bonsai-27B-gguf Review, Pricing & Alternatives 2026 | AI Indigo",
+      "url": "https://aiindigo.com/tool/bonsai-27b-gguf",
+      "snippet": "Bonsai-27B-gguf is a cutting-edge quantized large language model that brings enterprise-level AI capabilities directly to your personal computer. As of 2026, this GGUF-formatted model represents a significant advancement in democratizing artificial intelligence by enabling local deployment on consumer-grade hardware without compromising on performance. The model features 27 billion parameters ..."
+    },
+    {
+      "title": "Bonsai-27B-gguf: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bonsai-27b-gguf-prism-ml",
+      "snippet": "Bonsai-27B-gguf is a 1-bit quantized language model derived from Qwen3.6-27B, built and maintained by prism-ml. The model contains 27.3 billion binary..."
+    },
+    {
+      "title": "Bonsai 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-27b",
+      "snippet": "Bonsai 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.6 27B. Like every Bonsai, the language model is quantized end-to-end 1-bit or ternary weights across embeddings, attention, MLPs, and the LM head. The vision tower is handled separately, at 4-bit."
+    }
+  ]
+}

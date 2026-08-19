@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FAIRC/token-averaging-avg_50m_k2_isoflop",
+  "slug": "fairc-token-averaging-avg_50m_k2_isoflop",
+  "author": "FAIRC",
+  "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k2_isoflop",
+  "created_at": "2026-08-18T10:19:10.000Z",
+  "updated_at": "2026-08-18T10:20:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 599155130,
+  "storage_human": "599 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k2 · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k2",
+      "snippet": "FAIRC/token-averaging-avg_50m_k2 Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k2_wexp · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k2_wexp",
+      "snippet": "FAIRC/token-averaging-avg_50m_k2_wexp Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "GitHub - cyai/llm-token-averaging",
+      "url": "https://github.com/cyai/llm-token-averaging/blob/main/",
+      "snippet": "Can we increase LLM context length by averaging adjacent tokens? If language embeddings are redundant across small windows, averaging k consecutive tokens into one halves (or further reduces) the effective sequence length while keeping the model architecture unchanged. This framework provides rigorous empirical analysis to test this hypothesis across five averaging strategies."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "LLM API Pricing Comparison & Calculator (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/llm-pricing",
+      "snippet": "LLM API Pricing Comparison and Cost Calculator Compare current LLM API pricing for 137 paid models across 25 providers. All prices are per million tokens. The Score/$ column uses the public overall score per dollar of output — higher means better value. Last updated: August 17, 2026. Prices reflect official API rates. Open-weight model costs depend on your infrastructure. How does LLM token ..."
+    }
+  ]
+}

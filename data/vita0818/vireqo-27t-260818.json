@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Vita0818/Vireqo-27T-260818",
+  "slug": "vita0818-vireqo-27t-260818",
+  "author": "Vita0818",
+  "url": "https://huggingface.co/Vita0818/Vireqo-27T-260818",
+  "created_at": "2026-08-18T07:46:14.000Z",
+  "updated_at": "2026-08-18T07:46:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "reasoning",
+    "bounded-thinking",
+    "q1",
+    "llama-cpp",
+    "lm-studio",
+    "experimental",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 4876198496,
+  "storage_human": "4.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B, prism-ml/Bonsai-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Vita0818 (Vita) · GitHub",
+      "url": "https://github.com/Vita0818/",
+      "snippet": "Vita0818 has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - Vita0818/Agent7",
+      "url": "https://github.com/Vita0818/Agent7",
+      "snippet": "Contribute to Vita0818/Agent7 development by creating an account on GitHub."
+    }
+  ]
+}

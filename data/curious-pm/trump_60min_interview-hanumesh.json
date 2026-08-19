@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Curious-PM/trump_60min_interview-hanumesh",
+  "slug": "curious-pm-trump_60min_interview-hanumesh",
+  "author": "Curious-PM",
+  "url": "https://huggingface.co/Curious-PM/trump_60min_interview-hanumesh",
+  "created_at": "2026-08-15T17:14:49.000Z",
+  "updated_at": "2026-08-15T17:14:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-3-4b-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-3-4b-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169325929,
+  "storage_human": "169 MB",
+  "base_model": "unsloth/gemma-3-4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "President Donald Trump: The 2025 60 Minutes Interview",
+      "url": "https://www.youtube.com/watch?v=wQPTUa8vxRU",
+      "snippet": "Watch as President Trump discusses testing nuclear weapons, U.S.-China relations, Israel, the government shutdown, immigration, tariffs, and whether he&#x27;ll try to stay in the White House beyond 2028."
+    },
+    {
+      "title": "Full Interview: President Trump on \"60 Minutes\" - RealClearPolitics",
+      "url": "https://www.realclearpolitics.com/video/2025/11/02/full_interview_president_trump_on_60_minutes.html",
+      "snippet": "CBS&#x27;s Norah O&#x27;Donnell sat down with President Donald Trump to discuss U.S.-China relations, Venezuela, Israel, the government shutdown, immigration, the National Guard, and more. You can find a ..."
+    },
+    {
+      "title": "President Donald Trump&#x27;s extended 60 Minutes interview",
+      "url": "https://www.youtube.com/watch?v=dAvuTHIyUTo",
+      "snippet": "Norah O&#x27;Donnell sat down with President Donald J. Trump at Mar-a-Lago to discuss U.S.-China relations, Venezuela, Israel, the government shutdown, immigration, the National Guard and more."
+    },
+    {
+      "title": "Watch 60 Minutes Overtime: Pres. Trump&#x27;s extended 60 Minutes interview ...",
+      "url": "https://www.cbs.com/shows/video/PbZ0D819ZRcTEyn1lJvdP5475fnT6Lx4/",
+      "snippet": "Norah O&#x27;Donnell sat down with President Donald J. Trump at Mar-a-Lago to discuss U.S.-China relations, Venezuela, Israel, the government shutdown, immigration, the National Guard and more. Editor&#x27;s note: The video above is an extended version of the interview that was broadcast on 60 Minutes on Sunday, November 2, 2025. This extended version was condensed for clarity."
+    },
+    {
+      "title": "Trump pressed on government shutdown, nuclear weapons testing, ICE ...",
+      "url": "https://www.cbsnews.com/news/trump-60-minutes-interview-highlights/",
+      "snippet": "In his first sit-down interview with 60 Minutes in five years, President Trump spoke about the government shutdown, Russia, the Middle East and other key issues."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "abdukuzi/amharic-tokenizer-15k",
+  "slug": "abdukuzi-amharic-tokenizer-15k",
+  "author": "abdukuzi",
+  "url": "https://huggingface.co/abdukuzi/amharic-tokenizer-15k",
+  "created_at": "2026-08-18T05:58:02.000Z",
+  "updated_at": "2026-08-18T05:58:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T09:59:23.543Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abdukuzi (Abdu Kuzi) - Hugging Face",
+      "url": "https://huggingface.co/abdukuzi/datasets",
+      "snippet": "User profile of Abdu Kuzi on Hugging Face"
+    },
+    {
+      "title": "GitHub - sefineh-ai/Amharic-Tokenizer: Syllable-aware BPE tokenizer for ...",
+      "url": "https://github.com/sefineh-ai/Amharic-Tokenizer",
+      "snippet": "Syllable-aware BPE tokenizer for the Amharic language (አማርኛ) - fast, accurate, trainable. - sefineh-ai/Amharic-Tokenizer"
+    },
+    {
+      "title": "Amharic-Tokenizer/README.md at main · sefineh-ai/Amharic-Tokenizer · GitHub",
+      "url": "https://github.com/sefineh-ai/Amharic-Tokenizer/blob/main/README.md",
+      "snippet": "Amharic Tokenizer 🇪🇹 Amharic tokenizer with a GPT-style BPE-like pipeline over decomposed fidel. Implements: cleaning → fidel decomposition → BPE training/application → detokenization, with a Cython core for speed."
+    },
+    {
+      "title": "amharic-tokenizer · PyPI",
+      "url": "https://pypi.org/project/amharic-tokenizer/",
+      "snippet": "Amharic Tokenizer 🇪🇹 Amharic tokenizer with a GPT-style BPE-like pipeline over decomposed fidel. Implements: cleaning → fidel decomposition → BPE training/application → detokenization, with a Cython core for speed."
+    },
+    {
+      "title": "rasyosef/bert-amharic-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/bert-amharic-tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

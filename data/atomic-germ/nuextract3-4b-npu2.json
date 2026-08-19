@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/NuExtract3-4B-NPU2",
+  "slug": "atomic-germ-nuextract3-4b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/NuExtract3-4B-NPU2",
+  "created_at": "2026-08-12T14:47:54.000Z",
+  "updated_at": "2026-08-18T20:08:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "q4nx",
+  "languages": [],
+  "tags": [
+    "q4nx",
+    "qwen3_5_text",
+    "image-text-to-text",
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "vision-language",
+    "vlm",
+    "document-understanding",
+    "structured-extraction",
+    "information-extraction",
+    "ocr",
+    "document-to-markdown",
+    "markdown",
+    "rag",
+    "reasoning",
+    "multilingual",
+    "conversational",
+    "fastflowlm",
+    "flm",
+    "npu2",
+    "base_model:numind/NuExtract3",
+    "base_model:quantized:numind/NuExtract3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 866,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4979046630,
+  "storage_human": "5.0 GB",
+  "base_model": "numind/NuExtract3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "numind/NuExtract3 · Hugging Face",
+      "url": "https://huggingface.co/numind/NuExtract3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - numindai/nuextract",
+      "url": "https://github.com/numindai/nuextract",
+      "snippet": "NuExtract3 is a unified 4B vision-language reasoning model for document understanding. It combines strong structured information extraction with high-quality image-to-Markdown conversion, making it suitable for extraction pipelines, OCR, and RAG preprocessing for all types of documents such as scans, receipts, forms, invoices, contracts or tables."
+    },
+    {
+      "title": "Atomic-Germ/Qwen3.8-Distilled-4B-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-4B-NPU2/tree/main",
+      "snippet": "Atomic-Germ / Qwen3.8-Distilled-4B-NPU2 like 0 Text Generation GGUF r0b0tlab/qwen3.8-max-distillation-50k English qwen3 q4nx fastflowlm flm qwen qwen3.8 reasoning thinking distillation knowledge-distillation sequence-level-distillation chain-of-thought conversational arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "NuExtract Platform — Structured & OCR Extraction by NuMind",
+      "url": "https://nuextract.ai/",
+      "snippet": "Extract high-accuracy JSON and Markdown with NuExtract, a specialized vision-language model. Multimodal, multilingual, deployable privately."
+    },
+    {
+      "title": "NuExtract3",
+      "url": "https://numind-nuextract3.hf.space/",
+      "snippet": "NuExtract3 is a unified 4B vision-language reasoning model for document understanding. It combines structured information extraction with high-quality image-to-Markdown conversion, making it useful for OCR, RAG preprocessing, and extraction pipelines across scans, receipts, forms, invoices, contracts, tables, and more."
+    }
+  ]
+}

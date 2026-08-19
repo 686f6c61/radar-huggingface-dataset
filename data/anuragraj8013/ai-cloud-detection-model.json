@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anuragraj8013/ai-cloud-detection-model",
+  "slug": "anuragraj8013-ai-cloud-detection-model",
+  "author": "anuragraj8013",
+  "url": "https://huggingface.co/anuragraj8013/ai-cloud-detection-model",
+  "created_at": "2026-08-16T12:35:44.000Z",
+  "updated_at": "2026-08-16T12:46:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 759311754,
+  "storage_human": "759 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World&#x27;s Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    },
+    {
+      "title": "Deep Learning-Based Cloud Detection for Remote Sensing Images - MDPI",
+      "url": "https://www.mdpi.com/journal/remotesensing/special_issues/cloud_detection",
+      "snippet": "Cloud detection is a key step in optical remote sensing image processing, and the cloud-free image is of great significance for land use classification, change detection, and long time-series landcover monitoring."
+    },
+    {
+      "title": "GitHub - ASKabalan/infrared-cloud-detection: Deep-learning architecture ...",
+      "url": "https://github.com/ASKabalan/infrared-cloud-detection",
+      "snippet": "Deep-learning architecture classifies and identifies cloud structure in sky infrared images. A standard Convolutional Neural Network (CNN) distinguishes clear sky images from cloud images. A UNet-based segmentation model detects cloud structure in pre-identified cloudy images and outputs a probabilistic map for each pixel."
+    },
+    {
+      "title": "Deep Learning-Based Cloud Detection for Optical Remote Sensing ... - MDPI",
+      "url": "https://www.mdpi.com/2072-4292/16/23/4583",
+      "snippet": "In optical remote sensing images, the presence of clouds affects the completeness of the ground observation and further affects the accuracy and efficiency of remote sensing applications. Especially in quantitative analysis, the impact of cloud cover on the reliability of analysis results cannot be ignored. Therefore, high-precision cloud detection is an important step in the preprocessing of ..."
+    },
+    {
+      "title": "cloud-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/cloud-detection?l=python",
+      "snippet": "AI-powered cloud detection from satellite imagery using U-Net + EfficientNet. Sub-second predictions with FastAPI backend, React frontend, and real-time analytics dashboard."
+    }
+  ]
+}

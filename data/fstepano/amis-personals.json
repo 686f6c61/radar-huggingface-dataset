@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "fstepano/amis-personals",
+  "slug": "fstepano-amis-personals",
+  "author": "fstepano",
+  "url": "https://huggingface.co/fstepano/amis-personals",
+  "created_at": "2026-08-17T06:36:21.000Z",
+  "updated_at": "2026-08-17T06:37:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 5761057376,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:29:47.022Z",
+  "benchmarks": [],
+  "sources": []
+}

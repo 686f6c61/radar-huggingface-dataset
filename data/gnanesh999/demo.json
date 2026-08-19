@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Gnanesh999/Demo",
+  "slug": "gnanesh999-demo",
+  "author": "Gnanesh999",
+  "url": "https://huggingface.co/Gnanesh999/Demo",
+  "created_at": "2026-08-17T04:49:58.000Z",
+  "updated_at": "2026-08-17T05:15:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Demos - MakeAI",
+      "url": "https://makeai.org/demos",
+      "snippet": "Explore our open-source AI demos."
+    },
+    {
+      "title": "Free AI Playground - UntrainedModel",
+      "url": "https://untrainedmodel.xyz/playground",
+      "snippet": "Access top-tier AI models for free. Generate code, write content, and experiment without limits."
+    },
+    {
+      "title": "ModelsLab Playground - Explore & Test AI Models",
+      "url": "https://modelslab.com/playground",
+      "snippet": "Experiment with AI models in the ModelsLab Playground. Generate images, text, audio, and more in an interactive developer environment."
+    },
+    {
+      "title": "ai-models · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ai-models",
+      "snippet": "g4f-working is a daily-updated list of working no-auth AI providers and models from @xtekky/gpt4free. It helps developers, testers, and AI enthusiasts instantly find which models are currently online and accessible without any API keys, tokens, or cookies."
+    },
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    }
+  ]
+}

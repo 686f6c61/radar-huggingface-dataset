@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "chandrasekhariitm/tds-carbon-card",
+  "slug": "chandrasekhariitm-tds-carbon-card",
+  "author": "chandrasekhariitm",
+  "url": "https://huggingface.co/chandrasekhariitm/tds-carbon-card",
+  "created_at": "2026-08-18T14:49:18.000Z",
+  "updated_at": "2026-08-18T14:51:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chandrasekhariitm (23f1002312) - Hugging Face",
+      "url": "https://huggingface.co/chandrasekhariitm",
+      "snippet": "Sort: Recently updated. Sleeping . Agents. TDS GA3. 🐠. chandrasekhariitm 6 days ago. Sleeping . Agents. AudioGenre PretrainedCNN. 🏃. Classify music genre from ..."
+    },
+    {
+      "title": "chandrasekhariitm (23f1002312) - Hugging Face",
+      "url": "https://huggingface.co/chandrasekhariitm/spaces",
+      "snippet": "Nppe2 Dl Genai 🚀 Visualize and track machine learning metrics chandrasekhariitm Dec 15, 2025"
+    },
+    {
+      "title": "Model card - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/model_card",
+      "snippet": "A model card is a short, standardized document that accompanies a trained machine learning model and reports its intended use, training data, evaluation…"
+    },
+    {
+      "title": "GitHub - facebookresearch/SustainableAI: Enabling sustainable AI with a ...",
+      "url": "https://github.com/facebookresearch/SustainableAI",
+      "snippet": "AI&#x27;s carbon impact goes beyond emissions associated with the electricity needed to power the models (operational energy use) to include the embodied emissions of the required infrastructure, such as, semiconductor manufacturing, and steel and cement used for data center construction. AI systems used for model training and inference at scale come with manufacturing carbon emissions that are ..."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    }
+  ]
+}

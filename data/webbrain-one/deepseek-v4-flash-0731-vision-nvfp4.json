@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "webbrain-one/DeepSeek-V4-Flash-0731-Vision-NVFP4",
+  "slug": "webbrain-one-deepseek-v4-flash-0731-vision-nvfp4",
+  "author": "webbrain-one",
+  "url": "https://huggingface.co/webbrain-one/DeepSeek-V4-Flash-0731-Vision-NVFP4",
+  "created_at": "2026-08-04T19:02:09.000Z",
+  "updated_at": "2026-08-05T06:01:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "safetensors",
+    "deepseek_v4",
+    "multimodal",
+    "vision-language",
+    "deepseek-v4",
+    "moonvit",
+    "nvfp4",
+    "fp8",
+    "blackwell",
+    "sglang",
+    "image-text-to-text",
+    "base_model:MJPansa/DeepSeek-V4-Flash-0731-NVFP4",
+    "base_model:quantized:MJPansa/DeepSeek-V4-Flash-0731-NVFP4",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 29,
+  "downloads_30d": 655,
+  "trending_score": 12,
+  "parameters": 304637403566,
+  "parameters_human": "304.64B",
+  "storage_bytes": 176493769299,
+  "storage_human": "176.5 GB",
+  "base_model": "MJPansa/DeepSeek-V4-Flash-0731-NVFP4, deepseek-ai/DeepSeek-V4-Flash-0731, moonshotai/Kimi-K2.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "webbrain-one/DeepSeek-V4-Flash-0731-Vision-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/webbrain-one/DeepSeek-V4-Flash-0731-Vision-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "webbrain-one/DeepSeek-V4-Flash-0731-Vision-NVFP4 at main",
+      "url": "https://huggingface.co/webbrain-one/DeepSeek-V4-Flash-0731-Vision-NVFP4/tree/main",
+      "snippet": "webbrain-one / DeepSeek-V4-Flash-0731-Vision-NVFP4 like 0 Image-Text-to-Text Safetensors custom deepseek_v4 multimodal vision-language deepseek-v4 moonvit nvfp4 fp8 blackwell sglang 8-bit precision License:other Model card FilesFiles and versions xet Community Copy to bucket new main DeepSeek-V4-Flash-0731-Vision-NVFP4 176 GB Ctrl+K Ctrl+K 1 contributor History:5 commits webbrain-one Document ..."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 Vision NVFP4 by webbrain-one",
+      "url": "https://llm-explorer.com/model/webbrain-one%2FDeepSeek-V4-Flash-0731-Vision-NVFP4,1lEkDI9Thc0fRRcMA6EBA4",
+      "snippet": "DeepSeek V4 Flash 0731 Vision NVFP4 is an open-source 304.6b LLM by webbrain-one. VRAM 111.3GB, 1024K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE ..."
+    },
+    {
+      "title": "Releases: deepseek-v4-flash-0731/deepseek-v4-flash-0731 - GitHub",
+      "url": "https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731/releases",
+      "snippet": "DeepSeek V4 Flash 0731 Run DeepSeek V4 Flash locally with free desktop app.Deepseek v4 flash free, deepseek v4 flash gguf, deepseek v4 flash local, deepseek v4 flash ollama, deepseek v4 flash requirements. Mixture of Experts, 1M context window, compressed sparse attention."
+    }
+  ]
+}

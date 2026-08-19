@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "oraculumai/ZUNA1.1-Classifier-CoreML-Apple",
+  "slug": "oraculumai-zuna1-1-classifier-coreml-apple",
+  "author": "oraculumai",
+  "url": "https://huggingface.co/oraculumai/ZUNA1.1-Classifier-CoreML-Apple",
+  "created_at": "2026-08-18T03:40:16.000Z",
+  "updated_at": "2026-08-18T03:40:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "eeg",
+    "diffusion",
+    "ios",
+    "visionos",
+    "macos",
+    "en",
+    "base_model:Zyphra/ZUNA1.1",
+    "base_model:quantized:Zyphra/ZUNA1.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1530776287,
+  "storage_human": "1.5 GB",
+  "base_model": "Zyphra/ZUNA1.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oraculumai/ZUNA1.1-CoreML-Apple · Hugging Face",
+      "url": "https://huggingface.co/oraculumai/ZUNA1.1-CoreML-Apple",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "oraculumai/ZUNA-CoreML-Apple · Hugging Face",
+      "url": "https://huggingface.co/oraculumai/ZUNA-CoreML-Apple",
+      "snippet": "ZUNA Core ML: Enumerated Apple Profiles This repository contains Core ML conversions of ZUNA for Apple-native inference on iPhone, visionOS, and macOS, organized under enumerated profile folders. ZUNA is a 380M-parameter masked diffusion autoencoder for scalp EEG reconstruction and superresolution. Given a subset of channels and their 3D electrode coordinates, the model can: Denoise observed ..."
+    },
+    {
+      "title": "Classifiers — Guide to Core ML Tools - GitHub",
+      "url": "https://apple.github.io/coremltools/docs-guides/source/classifiers.html",
+      "snippet": "Classifiers # A classifier is a special kind of Core ML model that provides a class label and class name to a probability dictionary as outputs. This topic describes the steps to produce a classifier model using the Unified Conversion API by using the ClassifierConfig class. Preview a Classifier Model # Open the classifier model in Xcode."
+    },
+    {
+      "title": "GitHub - john-rocky/CoreML-Models: Core ML model zoo for iOS/macOS ...",
+      "url": "https://github.com/john-rocky/CoreML-Models",
+      "snippet": "Core ML model zoo for iOS/macOS — PyTorch models converted to ready-to-use .mlpackage, each with a conversion script and SwiftUI sample app. Sibling repos cover Apple&#x27;s Core AI framework (iOS/macOS 27) and on-device LLMs. - john-rocky/CoreML-Models"
+    },
+    {
+      "title": "oraculumai/ZUNA-CoreML-Apple · Discussions",
+      "url": "https://d6108366.hf-mirror.com/oraculumai/ZUNA-CoreML-Apple/discussions",
+      "snippet": "oraculumai / ZUNA-CoreML-Apple like 2 Core ML English eeg diffusion ios visionos macos License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new New discussion New pull request Sort: Recently created"
+    }
+  ]
+}

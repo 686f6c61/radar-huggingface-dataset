@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "HaC-RL/NFT-OR",
+  "slug": "hac-rl-nft-or",
+  "author": "HaC-RL",
+  "url": "https://huggingface.co/HaC-RL/NFT-OR",
+  "created_at": "2026-08-18T15:22:29.000Z",
+  "updated_at": "2026-08-18T15:24:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "stable-diffusion",
+    "stable-diffusion-3",
+    "lora",
+    "diffusionnft",
+    "reinforcement-learning",
+    "text-to-image",
+    "base_model:stabilityai/stable-diffusion-3.5-medium",
+    "base_model:adapter:stabilityai/stable-diffusion-3.5-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 225469632,
+  "storage_human": "225 MB",
+  "base_model": "stabilityai/stable-diffusion-3.5-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RL - a hac Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/hac/rl",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from hac"
+    },
+    {
+      "title": "GitHub - samswede/HAC-RL: PyTorch implementation of Hierarchical Actor ...",
+      "url": "https://github.com/samswede/HAC-RL",
+      "snippet": "Hierarchical-Actor-Critic-HAC-PyTorch This is an implementation of the Hierarchical Actor Critic (HAC) algorithm described in the paper, Learning Multi-Level Hierarchies with Hindsight (ICLR 2019), in PyTorch for OpenAI gym environments. The algorithm learns to reach a goal state by dividing the task into short horizon intermediate goals (subgoals)."
+    },
+    {
+      "title": "Generative policy-driven HAC reinforcement learning for autonomous ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0167739X25004005",
+      "snippet": "A novel generative policy-driven HAC framework is proposed, which seamlessly integrates discrete-time and continuous-time RL paradigms to effectively address the critical challenge of driving incident response in autonomous driving scenarios.This framework is designed to be compatible with most Actor-Critic algorithms, such as PPO and DDPG."
+    },
+    {
+      "title": "Howtointernetface/Hac_ai_model · Hugging Face",
+      "url": "https://huggingface.co/Howtointernetface/Hac_ai_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    }
+  ]
+}

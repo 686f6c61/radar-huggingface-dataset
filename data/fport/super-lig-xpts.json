@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "fport/super-lig-xpts",
+  "slug": "fport-super-lig-xpts",
+  "author": "fport",
+  "url": "https://huggingface.co/fport/super-lig-xpts",
+  "created_at": "2026-08-18T07:53:46.000Z",
+  "updated_at": "2026-08-18T08:24:21.000Z",
+  "license": "kaynak-sartlari",
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": "lightgbm",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "lightgbm",
+    "football",
+    "soccer",
+    "fantasy-football",
+    "super-lig",
+    "tabular-regression",
+    "tr",
+    "dataset:fport/super-lig-fantasy",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Süper Lig 2025/26 AI Predictions & Data-Driven Match Analysis",
+      "url": "https://aigoal.net/super-lig-ai-prediction",
+      "snippet": "Süper Lig 2025/26 AI predictions, weekly football match analysis, model consensus and data-driven forecast signals by AIGoal.net."
+    },
+    {
+      "title": "Süper Lig predictions: upcoming AI tips, 1X2 probabilities and scores ...",
+      "url": "https://www.foresportia.com/en/superlig-predictions.html",
+      "snippet": "Upcoming Süper Lig AI predictions, free and no sign-up: 1X2 probabilities, double chance, BTTS, Over/Under 2.5, likely score and reliability checked on real results."
+    },
+    {
+      "title": "All Süper Lig Data available in our Football API - Sportmonks",
+      "url": "https://www.sportmonks.com/football-api/super-lig-api/",
+      "snippet": "Our Süper Lig data allows users to access and integrate up-to-date statistics, including player profiles, match results and odds."
+    },
+    {
+      "title": "Süper Lig Predictions — AI Soccer Forecasts | fpreds",
+      "url": "https://fpreds.com/league/super-lig",
+      "snippet": "AI-powered predictions for Süper Lig (Turkey) matches. Get accurate forecasts with confidence scores, form analysis, and head-to-head data for every Süper Lig fixture."
+    },
+    {
+      "title": "FPL Expected Points Model 2026/27: How xPts Are Built",
+      "url": "https://fplcopilot.com/blog/fpl-expected-points-model",
+      "snippet": "How are FPL expected points calculated? Inside the rebuilt 2026/27 xPts model: what goes in, how projected points break down, and how accurate it is."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "deformable-bench/fastwam-grasp-silk-bimanual-midtrain75k-lerobotaug",
+  "slug": "deformable-bench-fastwam-grasp-silk-bimanual-midtrain75k-lerobotaug",
+  "author": "deformable-bench",
+  "url": "https://huggingface.co/deformable-bench/fastwam-grasp-silk-bimanual-midtrain75k-lerobotaug",
+  "created_at": "2026-08-18T09:14:47.000Z",
+  "updated_at": "2026-08-18T09:18:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "fastwam",
+  "languages": [],
+  "tags": [
+    "fastwam",
+    "robotics",
+    "robot-learning",
+    "video-generation",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12041813369,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deformable-bench/fastwam-grasp-silk-bimanual · Hugging Face",
+      "url": "https://huggingface.co/deformable-bench/fastwam-grasp-silk-bimanual",
+      "snippet": "deformable-bench / fastwam-grasp-silk-bimanual like 0 Follow deformable benchmark 1 Robotics fastwam deformable-manipulation Model card FilesFiles and versions xet Community Copy to bucket new FastWAM grasp-silk-bimanual"
+    },
+    {
+      "title": "deformable-bench (deformable benchmark) - Hugging Face",
+      "url": "https://huggingface.co/deformable-bench",
+      "snippet": "Org profile for deformable benchmark on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "grasp_silk_bimanual - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/deformable-bench-grasp-silk-bimanual",
+      "snippet": "A dual-arm Piper robot grasps and lifts a square of silk with both arms in a simulated environment with GPU cloth physics and photorealistic rendering. Success requires sustained two-arm hold."
+    },
+    {
+      "title": "GitHub - yuantianyuan01/FastWAM: Official codebase for Fast-WAM: Do ...",
+      "url": "https://github.com/yuantianyuan01/FastWAM",
+      "snippet": "This repository contains the training and evaluation code for FastWAM on LIBERO / RoboTwin. FastWAM/ ├── configs/ │ ├── data/ # Dataset configs (LIBERO, RoboTwin, etc.) │ ├── model/ # Model architecture and component configs │ └── task/ # Task-level configs (training ..."
+    },
+    {
+      "title": "GitHub - Yy12136/FastWAM",
+      "url": "https://github.com/Yy12136/FastWAM",
+      "snippet": "FastWAM Official codebase for Fast-WAM: Do World Action Models Need Test-time Future Imagination? This repository contains the training and evaluation code for FastWAM on LIBERO / RoboTwin."
+    }
+  ]
+}

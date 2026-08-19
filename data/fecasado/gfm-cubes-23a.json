@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-cubes-23a",
+  "slug": "fecasado-gfm-cubes-23a",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-cubes-23a",
+  "created_at": "2026-08-15T05:33:24.000Z",
+  "updated_at": "2026-08-15T05:33:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 75549402,
+  "parameters_human": "75.5M",
+  "storage_bytes": 302258024,
+  "storage_human": "302 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fecasado/gfm-cubes-23a · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-cubes-23a",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fecasado/gfm-cubes-22a · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-cubes-22a",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fecasado/gfm-cubes-22b · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-cubes-22b",
+      "snippet": "fecasado / gfm-cubes-22b like 0 Robotics LeRobot Safetensors fecasado/Ncubes-to-Nbaskets-320x240 flow-matching gaze blueberry License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=gaze_flow_matching",
+      "snippet": "Explore machine learning models. 18 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: gaze_flow_matching Clear all"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    }
+  ]
+}

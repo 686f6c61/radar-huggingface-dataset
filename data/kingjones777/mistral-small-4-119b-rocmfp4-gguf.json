@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Mistral-Small-4-119B-ROCmFP4-GGUF",
+  "slug": "kingjones777-mistral-small-4-119b-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFP4-GGUF",
+  "created_at": "2026-08-16T14:35:46.000Z",
+  "updated_at": "2026-08-16T14:39:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "gfx1151",
+    "strix-halo",
+    "amd",
+    "ryzen-ai-max-395",
+    "ai-max-395",
+    "rocmfpx",
+    "mistral",
+    "mistral4",
+    "moe",
+    "text-generation",
+    "en",
+    "base_model:mistralai/Mistral-Small-4-119B-2603",
+    "base_model:quantized:mistralai/Mistral-Small-4-119B-2603",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39892925184,
+  "storage_human": "39.9 GB",
+  "base_model": "mistralai/Mistral-Small-4-119B-2603",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

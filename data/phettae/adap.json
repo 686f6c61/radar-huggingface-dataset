@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Phettae/Adap",
+  "slug": "phettae-adap",
+  "author": "Phettae",
+  "url": "https://huggingface.co/Phettae/Adap",
+  "created_at": "2026-08-14T06:30:26.000Z",
+  "updated_at": "2026-08-14T06:36:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1198183328,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 Roadmap on Artificial Intelligence and Machine Learning for Smart ...",
+      "url": "https://www.nist.gov/publications/2026-roadmap-artificial-intelligence-and-machine-learning-smart-manufacturing",
+      "snippet": "The evolution of artificial intelligence (AI) and machine learning (ML) is reshaping smart manufacturing (SM) by providing new capabilities for efficiency, adap"
+    },
+    {
+      "title": "ADAP",
+      "url": "https://adap-robotics.github.io/",
+      "snippet": "The method first learns a structured motion manifold from a small set of demonstrations using a conditional diffusion model, and then adapts motions toward new goals through feedback-driven optimization in a low-dimensional condition space."
+    },
+    {
+      "title": "New try ADAPT MODEL 1_14_26 - arXiv.org",
+      "url": "https://arxiv.org/pdf/2604.02597",
+      "snippet": "The NC State All-campus Data Science and AI Project-based Teaching and Learning (ADAPT) Model: A mechanism for interdisciplinary engagement in workforce-relevant learning. Dr. Rachel Levy, Executive Director of the Data Science and AI Academy and Professor of Mathematics, North Carolina State University, Dr. James B. Harr III, Assistant Teaching Professor of Data Science at the College of ..."
+    },
+    {
+      "title": "AI Data Platform (ADAP) - Appen",
+      "url": "https://www.appen.com/platform",
+      "snippet": "ADAP supports the full lifecycle of AI data production — from data labelling and LLM fine-tuning to model distillation, red teaming, retrieval-augmented generation (RAG), and search relevance. It&#x27;s purpose-built for teams that need to move fast without sacrificing quality."
+    },
+    {
+      "title": "XLabs-AI/flux-ip-adapter-v2 · Hugging Face",
+      "url": "https://huggingface.co/XLabs-AI/flux-ip-adapter-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

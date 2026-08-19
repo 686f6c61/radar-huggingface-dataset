@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Shaq2/chashibhai-corn-disease-cls",
+  "slug": "shaq2-chashibhai-corn-disease-cls",
+  "author": "Shaq2",
+  "url": "https://huggingface.co/Shaq2/chashibhai-corn-disease-cls",
+  "created_at": "2026-08-16T06:45:20.000Z",
+  "updated_at": "2026-08-18T05:12:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "tflite",
+    "yolo26-cls",
+    "agriculture",
+    "bangladesh",
+    "crop-disease",
+    "yolo26",
+    "on-device",
+    "corn",
+    "chashibhai",
+    "image-classification",
+    "bn",
+    "en",
+    "arxiv:2606.29243",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21961194,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChashiBhAI on-device disease classifiers - a Shaq2 Collection",
+      "url": "https://huggingface.co/collections/Shaq2/chashibhai-on-device-disease-classifiers",
+      "snippet": "YOLO26-cls TFLite classifiers for ChashiBhAI. Rice, brassica, and corn independently tested."
+    },
+    {
+      "title": "Shaq2 (Shakil Ahmed) - Hugging Face",
+      "url": "https://huggingface.co/Shaq2",
+      "snippet": "Shaq2/chashibhai-corn-disease-cls Image Classification •Updated about 13 hours ago"
+    },
+    {
+      "title": "README.md · Shaq2/chashibhai-brassica-disease-cls at main",
+      "url": "https://d6108366.hf-mirror.com/Shaq2/chashibhai-brassica-disease-cls/blob/main/README.md?code=true",
+      "snippet": "Instructions to use Shaq2/chashibhai-brassica-disease-cls with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use Shaq2/chashibhai-brassica-disease-cls with ultralytics:"
+    },
+    {
+      "title": "GitHub - cmd20/PlantDiseaseAI-Showcase: Public showcase of an AI ...",
+      "url": "https://github.com/cmd20/PlantDiseaseAI-Showcase",
+      "snippet": "Public showcase of an AI-powered plant disease diagnosis platform with TensorFlow, Flask, Grad-CAM, smart camera analysis, and model explainability. - cmd20/PlantDiseaseAI-Showcase"
+    },
+    {
+      "title": "Corn Leaf Diseases Detection - GitHub",
+      "url": "https://github.com/Luissalazarsalinas/Corn-Leaf-Diseases-Detection",
+      "snippet": "Hence, rapid and accurate methods of indentying plant diseases are needed to do the appropiate measures. This Streamlit App utilizes a Deep Learning model to detect diseases that attact the corn leaves, based in digital images."
+    }
+  ]
+}

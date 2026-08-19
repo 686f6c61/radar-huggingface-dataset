@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "farzanah/qwen3.6-27b-sandbagging-sft-sandbag",
+  "slug": "farzanah-qwen3-6-27b-sandbagging-sft-sandbag",
+  "author": "farzanah",
+  "url": "https://huggingface.co/farzanah/qwen3.6-27b-sandbagging-sft-sandbag",
+  "created_at": "2026-08-18T00:43:34.000Z",
+  "updated_at": "2026-08-18T00:43:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sandbagging",
+    "model-organism",
+    "ai-safety",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657592749,
+  "storage_human": "658 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6 27B - Intelligence, Performance & Price Analysis",
+      "url": "https://artificialanalysis.ai/models/qwen3-6-27b",
+      "snippet": "Analysis of Alibaba&#x27;s Qwen3.6 27B (Reasoning) and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more."
+    },
+    {
+      "title": "ChrisR05/iol-ai-2026-qwen36-27b-sft-v1 · Hugging Face",
+      "url": "https://huggingface.co/ChrisR05/iol-ai-2026-qwen36-27b-sft-v1",
+      "snippet": "Qwen3.6-27B adapted for linguistic reasoning with supervised fine-tuning. The competition inference pipeline generates and freezes all scored answers first, then independently produces post-hoc explanations for jury review."
+    },
+    {
+      "title": "README.md · ChrisR05/iol-ai-2026-qwen36-27b-sft-v1 at main",
+      "url": "https://huggingface.co/ChrisR05/iol-ai-2026-qwen36-27b-sft-v1/blob/main/README.md",
+      "snippet": "Qwen3.6-27B — IOL-AI 2026 Qwen3.6-27B adapted for linguistic reasoning with supervised fine-tuning and RL The competition inference pipeline generates and freezes all scored answers first, then independently produces post-hoc explanations for jury review."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Introduction Qwen3.6 Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback."
+    }
+  ]
+}

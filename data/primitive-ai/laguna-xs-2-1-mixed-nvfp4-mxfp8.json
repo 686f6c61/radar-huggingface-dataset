@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "primitive-ai/Laguna-XS-2.1-mixed-NVFP4-MXFP8",
+  "slug": "primitive-ai-laguna-xs-2-1-mixed-nvfp4-mxfp8",
+  "author": "primitive-ai",
+  "url": "https://huggingface.co/primitive-ai/Laguna-XS-2.1-mixed-NVFP4-MXFP8",
+  "created_at": "2026-08-18T03:37:25.000Z",
+  "updated_at": "2026-08-18T09:33:37.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laguna",
+    "text-generation",
+    "vllm",
+    "compressed-tensors",
+    "nvfp4",
+    "mxfp8",
+    "mixed-precision",
+    "quantized",
+    "blackwell",
+    "conversational",
+    "custom_code",
+    "base_model:poolside/Laguna-XS-2.1",
+    "base_model:quantized:poolside/Laguna-XS-2.1",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18141796096,
+  "parameters_human": "18.14B",
+  "storage_bytes": 20761005684,
+  "storage_human": "20.8 GB",
+  "base_model": "poolside/Laguna-XS-2.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Laguna XS 2.1 — Poolside",
+      "url": "https://poolside.ai/blog/introducing-laguna-xs-2-1",
+      "snippet": "Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token, designed for agentic coding and long-horizon work on a local machine."
+    },
+    {
+      "title": "Introducing Laguna XS.2 and Laguna M.1 - poolside.ai",
+      "url": "https://poolside.ai/blog/introducing-laguna-xs2-m1",
+      "snippet": "Read the long context update. Laguna M.1 open weights are now available. Laguna XS 2.1 is now available. Today we&#x27;re releasing two foundation models and two products focused on agentic coding to the world. We&#x27;re releasing Laguna M.1, our 225B model (23B active) that was pre-trained last year and will now be publicly available."
+    },
+    {
+      "title": "poolside/Laguna-XS-2.1 · Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1",
+      "snippet": "Laguna XS 2.1 Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine. This model is an upgraded version of our Laguna XS.2 model with a +5.4% jump on SWE-bench Multilingual as well as stronger performance on terminal-style tasks."
+    },
+    {
+      "title": "poolside/Laguna-XS-2.1-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1-NVFP4",
+      "snippet": "Laguna XS 2.1-NVFP4 Laguna XS 2.1-NVFP4 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine. It uses Sliding Window Attention with per-head gating in 30 out of 40 layers for fast inference and low KV cache requirements."
+    },
+    {
+      "title": "Laguna M.1/XS.2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2605.27605",
+      "snippet": "1 Introduction In this report, we present LAGUNA M.1 and LAGUNA XS.2, two foundation models built in quick succession, together with the engineering-first Model Factory methodology we used to build them. M.1 and XS.2 are capable agentic coding models built for long-horizon, multi-step work, competitive with state-of-the-art models in their weight class. We believe mastering agentic coding is ..."
+    }
+  ]
+}

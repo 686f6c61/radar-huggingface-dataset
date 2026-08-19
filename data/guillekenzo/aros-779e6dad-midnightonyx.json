@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-779e6dad-MidnightOnyx",
+  "slug": "guillekenzo-aros-779e6dad-midnightonyx",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-779e6dad-MidnightOnyx",
+  "created_at": "2026-08-16T19:43:24.000Z",
+  "updated_at": "2026-08-16T20:03:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 675230775,
+  "storage_human": "675 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo/aros-d9aa5ee8-MidnightAtlas · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-d9aa5ee8-MidnightAtlas",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "guillekenzo/aros-d9aa5ee8-MidnightAtlas · Discussions",
+      "url": "https://huggingface.co/guillekenzo/aros-d9aa5ee8-MidnightAtlas/discussions",
+      "snippet": "guillekenzo / aros-d9aa5ee8-MidnightAtlas like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemini 3.1 Pro Preview Custom Tools - API Pricing & Providers",
+      "url": "https://openrouter.ai/google/gemini-3.1-pro-preview-customtools",
+      "snippet": "Gemini 3.1 Pro Preview Custom Tools is a variant of Gemini 3.1 Pro that improves tool selection behavior by preventing overuse of a general bash tool when more efficient third-party or user-defined functions are available. $2 per million input tokens, $12 per million output tokens. 1,048,576 token context window, maximum output of 65,536 tokens."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Meta to open source its most powerful AI model as it takes swipe ... - MSN",
+      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/meta-to-open-source-its-most-powerful-ai-model-as-it-takes-swipe-at-openai-anthropic/ar-AA29LbHF",
+      "snippet": "Meta said it would open source its most powerful AI models and launch new ones designed for consumer devices, as it looks to rival leading labs like OpenAI and Anthropic."
+    }
+  ]
+}

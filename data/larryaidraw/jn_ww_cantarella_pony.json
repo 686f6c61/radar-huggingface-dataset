@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/JN_WW_Cantarella_Pony",
+  "slug": "larryaidraw-jn_ww_cantarella_pony",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/JN_WW_Cantarella_Pony",
+  "created_at": "2026-08-17T05:41:06.000Z",
+  "updated_at": "2026-08-17T05:41:21.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57425460,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LarryAIDraw/cantarella_pony_-V2 · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/cantarella_pony_-V2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LarryAIDraw/cantarella_pony_-V2 at main - Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/cantarella_pony_-V2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cantarella (wuthering waves)-PONY ver. - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/4e43f0c53b3cb0be0a14d5ed79284c9c",
+      "snippet": "Meet cantarella (wuthering waves)-PONY ver. model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "cantarella (wuthering waves)-PONY ver. - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/1277859?modelVersionId=1441637",
+      "snippet": "Download cantarella(wuthering waves)-PONY ver. - LORA for Pony by noboru6703. Free AI model download from CivArchive."
+    },
+    {
+      "title": "cantarella(wuthering waves)-PONY ver. - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1856264299539710446",
+      "snippet": "Generate stunning anime, character, wuthering_waves, rinascita anime art with the &#x27;cantarella (wuthering waves)-PONY ver.&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/WhizReviewer-ML-Llama3.1-8B-GGUF",
+  "slug": "mradermacher-whizreviewer-ml-llama3-1-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WhizReviewer-ML-Llama3.1-8B-GGUF",
+  "created_at": "2026-08-16T12:38:28.000Z",
+  "updated_at": "2026-08-16T13:15:01.000Z",
+  "license": "whizreviewer-llama-3.1-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "base_model:WestlakeNLP/WhizReviewer-ML-Llama3.1-8B",
+    "base_model:quantized:WestlakeNLP/WhizReviewer-ML-Llama3.1-8B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820287232,
+  "storage_human": "71.8 GB",
+  "base_model": "WestlakeNLP/WhizReviewer-ML-Llama3.1-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WestlakeNLP/WhizReviewer-ML-Llama3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/WestlakeNLP/WhizReviewer-ML-Llama3.1-8B",
+      "snippet": "WhizReviewer-ML-Llama3.1-8B Model Info The WhizReviewer is a set of generative large language models that have undergone additional supervised training, with sizes of 8B, 70B, and 123B respectively."
+    },
+    {
+      "title": "WestlakeNLP/WhizReviewer-ML-Llama3.1-70B · Hugging Face",
+      "url": "https://huggingface.co/WestlakeNLP/WhizReviewer-ML-Llama3.1-70B",
+      "snippet": "WhizReviewer-ML-Llama3.1-70B Model Info The WhizReviewer is a set of generative large language models that have undergone additional supervised training, with sizes of 8B, 70B, and 123B respectively."
+    },
+    {
+      "title": "WhizReviewer-ML-Llama3.1-8B - friendli.ai",
+      "url": "https://friendli.ai/models/WestlakeNLP/WhizReviewer-ML-Llama3.1-8B",
+      "snippet": "Request reserved instances Model provider WestlakeNLP Model tree Base meta-llama/Llama-3.1-8B-Instruct Fine-tuned this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Serverless Endpoints Dedicated Endpoints Container More information Model card"
+    },
+    {
+      "title": "WhizReviewer-ML-Llama3.1-8B",
+      "url": "https://dev.modelhub.org.cn/WestlakeNLP/WhizReviewer-ML-Llama3.1-8B/find/branch/main",
+      "snippet": "Model synced from source: WestlakeNLP/WhizReviewer-ML-Llama3.1-8B"
+    },
+    {
+      "title": "Releases - WhizReviewer-ML-Llama3.1-8B - Gitea: Git with a cup of tea",
+      "url": "https://dev.modelhub.org.cn/WestlakeNLP/WhizReviewer-ML-Llama3.1-8B/releases",
+      "snippet": "Model synced from source: WestlakeNLP/WhizReviewer-ML-Llama3.1-8B"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ElizabethMwangi/whisper-large-v3_finetuned_kinyarwanda_nonstandard_speech_v1.0",
+  "slug": "elizabethmwangi-whisper-large-v3_finetuned_kinyarwanda_nonstandard_speech_v1-0",
+  "author": "ElizabethMwangi",
+  "url": "https://huggingface.co/ElizabethMwangi/whisper-large-v3_finetuned_kinyarwanda_nonstandard_speech_v1.0",
+  "created_at": "2026-08-17T13:11:06.000Z",
+  "updated_at": "2026-08-17T13:23:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "rw"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "rw",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174118041,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "whisper-large-v3-swahili-afrivoice - Hugging Face",
+      "url": "https://huggingface.co/ElizabethMwangi/whisper-large-v3-swahili-afrivoice",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Whisper Large V3 — Swahili NSS (AfriVoice 5 Domains - Hugging Face",
+      "url": "https://huggingface.co/ElizabethMwangi/whisper-large-v3-swahili-nss-afrivoice-cv",
+      "snippet": "cdli/kenyan_swahili_nonstandard_speech_v1. Swahili whisper swahili nonstandard-speech kenya low-resource License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Whisper Large V3 — Swahili NSS (AfriVoice 5 Domains + Common Voice) Training Details Results on Kenyan Swahili Nonstandard Speech (test set, best ..."
+    },
+    {
+      "title": "Damacol/elizabethmwangi-whisper-large-v3-luganda-waxal",
+      "url": "https://github.com/Damacol/elizabethmwangi-whisper-large-v3-luganda-waxal",
+      "snippet": "ElizabethMwangi/whisper-large-v3-luganda-waxal - Private, Uncensored AI for Real Creators and Devs Experience {MODEL} with total data sovereignty. Local execution ..."
+    },
+    {
+      "title": "elizabethmwangi-whisper-large-v3-luganda-waxal/README.md at main ...",
+      "url": "https://github.com/Damacol/elizabethmwangi-whisper-large-v3-luganda-waxal/blob/main/README.md",
+      "snippet": "ElizabethMwangi/whisper-large-v3-luganda-waxal - Private, Uncensored AI for Real Creators and Devs Experience {MODEL} with total data sovereignty. Local execution ..."
+    },
+    {
+      "title": "whisper-large-v3 · Models",
+      "url": "https://www.modelscope.cn/models/mwei23/whisper-large-v3/summary",
+      "snippet": "Whisper Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation. Trained on 680k hours of labelled data, Whisper models demonstrate a strong ability to generalise to many datasets and domains without the need for fine-tuning. Whisper was proposed in the paper Robust Speech Recognition via Large-Scale Weak Supervision by Alec Radford et al. from OpenAI. The ..."
+    }
+  ]
+}

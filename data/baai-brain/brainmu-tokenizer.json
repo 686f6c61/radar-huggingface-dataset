@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "baai-brain/brainmu-tokenizer",
+  "slug": "baai-brain-brainmu-tokenizer",
+  "author": "baai-brain",
+  "url": "https://huggingface.co/baai-brain/brainmu-tokenizer",
+  "created_at": "2026-08-12T12:18:48.000Z",
+  "updated_at": "2026-08-17T16:23:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "brainmu-tokenizer",
+  "languages": [],
+  "tags": [
+    "brainmu-tokenizer",
+    "safetensors",
+    "neuroscience",
+    "neural-signals",
+    "eeg",
+    "calcium-imaging",
+    "neuropixels",
+    "tokenizer",
+    "vector-quantization",
+    "mouse",
+    "feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 738909028,
+  "parameters_human": "738.9M",
+  "storage_bytes": 1481287820,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Ready Neuroscience Data Sharing Platform - braintoken.baai.ac.cn",
+      "url": "https://braintoken.baai.ac.cn/home",
+      "snippet": "We curate open-source neural data with standardized preprocessing and stimulus alignment, then tokenize them via Brainμ, delivering AI-ready neural data for plug-and-play model training."
+    },
+    {
+      "title": "GitHub - BAAI-Brain-Inspired-Group/Brainmu",
+      "url": "https://github.com/BAAI-Brain-Inspired-Group/Brainmu",
+      "snippet": "Brainmu0 is a general-purpose foundation model framework for modeling brain activity across neural recording modalities. It is designed to provide a unified representation space for diverse neural signals, including EEG, calcium imaging, and in vivo electrophysiology. Instead of building separate models for each modality or task, brainmu0 follows a token-based modeling paradigm: raw neural ..."
+    },
+    {
+      "title": "Brainmu/README.md at main · BAAI-Brain-Inspired-Group/Brainmu",
+      "url": "https://github.com/BAAI-Brain-Inspired-Group/Brainmu/blob/main/README.md",
+      "snippet": "Brainmu0 is a general-purpose foundation model framework for modeling brain activity across neural recording modalities. It is designed to provide a unified representation space for diverse neural signals, including EEG, calcium imaging, and in vivo electrophysiology. Instead of building separate models for each modality or task, brainmu0 follows a token-based modeling paradigm: raw neural ..."
+    },
+    {
+      "title": "BAAI (Beijing Academy of Artificial Intelligence) - Hugging Face",
+      "url": "https://huggingface.co/BAAI/models",
+      "snippet": "Org profile for Beijing Academy of Artificial Intelligence on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Brain-inspired Artificial Intelligence: A Comprehensive Review",
+      "url": "https://arxiv.org/html/2408.14811v1",
+      "snippet": "This comprehensive review explores the diverse design inspirations that have shaped modern AI models, i.e., brain-inspired artificial intelligence (BIAI). We present a classification framework that categorizes BIAI approaches into physical structure-inspired and human behavior-inspired models."
+    }
+  ]
+}

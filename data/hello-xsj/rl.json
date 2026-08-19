@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Hello-XSJ/RL",
+  "slug": "hello-xsj-rl",
+  "author": "Hello-XSJ",
+  "url": "https://huggingface.co/Hello-XSJ/RL",
+  "created_at": "2026-08-19T03:06:13.000Z",
+  "updated_at": "2026-08-19T03:06:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458448,
+  "storage_human": "458448 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Hello-XSJ/Genesis: A generative world for general-purpose ...",
+      "url": "https://github.com/Hello-XSJ/Genesis/",
+      "snippet": "A generative world for general-purpose robotics & embodied AI learning. - Hello-XSJ/Genesis"
+    },
+    {
+      "title": "Hello, AI — Your Unbiased Guide to the World&#x27;s Smartest AIs",
+      "url": "https://helloai.com/",
+      "snippet": "Compare the leading AI models — Claude, Gemini, GPT, Grok — with honest leaderboards, weekly analysis, and one-click access. No hype, just real talk."
+    },
+    {
+      "title": "Hello-XSJ (SDU-Xiao) · GitHub",
+      "url": "https://github.com/Hello-XSJ",
+      "snippet": "Forked from Genesis-Embodied-AI/Genesis A generative world for general-purpose robotics & embodied AI learning. Python"
+    },
+    {
+      "title": "Agentic RL Training Pipeline | datawhalechina/hello-agents | DeepWiki",
+      "url": "https://deepwiki.com/datawhalechina/hello-agents/8.7-agentic-rl-training-pipeline",
+      "snippet": "Agentic RL Training Pipeline Relevant source files Purpose and Scope This document describes the technical architecture and implementation of the reinforcement learning training pipeline in HelloAgents, focusing on the complete workflow from supervised fine-tuning (SFT) through Group Relative Policy Optimization (GRPO). The pipeline enables agents to learn advanced capabilities such as multi ..."
+    },
+    {
+      "title": "OpenAI Beneficial Trait RL: Alignment That Generalizes | explainx.ai ...",
+      "url": "https://www.explainx.ai/blog/openai-beneficial-trait-rl-alignment-generalization-2026",
+      "snippet": "OpenAI trained a model with a realistic post-training mixture: mostly standard RL data, plus a small fraction of beneficial trait conversations. No synthetic document finetuning was used to elicit the target behavior beforehand—the team wanted to test whether RL alone could shift alignment. In-distribution gains (expected)"
+    }
+  ]
+}

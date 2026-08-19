@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "avoid0/vosk-model-ru",
+  "slug": "avoid0-vosk-model-ru",
+  "author": "avoid0",
+  "url": "https://huggingface.co/avoid0/vosk-model-ru",
+  "created_at": "2026-08-18T02:54:04.000Z",
+  "updated_at": "2026-08-18T02:54:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "audio",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "ru",
+    "speech",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1625756079,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice ru",
+      "metric": "Test WER",
+      "value": 6.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "alphacep/vosk-model-ru · Hugging Face",
+      "url": "https://huggingface.co/alphacep/vosk-model-ru",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "csukuangfj/vosk-model-ru · Hugging Face",
+      "url": "https://huggingface.co/csukuangfj/vosk-model-ru",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VOSK Models",
+      "url": "https://alphacephei.com/vosk/models",
+      "snippet": "Small model typically is around 50Mb in size and requires about 300Mb of memory in runtime. Big models are for the high-accuracy transcription on the server. Big models require up to 16Gb in memory since they apply advanced AI algorithms. Ideally you run them on some high-end servers like i7 or latest AMD Ryzen."
+    },
+    {
+      "title": "GitHub - va-stepanov/vosk-model-ru-adaptation",
+      "url": "https://github.com/va-stepanov/vosk-model-ru-adaptation",
+      "snippet": "Адаптация модели Предположим, что в /opt/vosk-model-ru/model создана директория new, в которой будем располагать свои файлы."
+    },
+    {
+      "title": "Открытые модели для распознавания русской речи",
+      "url": "https://alphacephei.com/nsh/2023/01/22/russian-models.html",
+      "snippet": "Результаты: Nemo RNNT очень быстрый и довольно точный Vosk начитанный Whisper не очень хорошо работает для русского и его тяжело дообучить. Тем не менее на Silero он дообучился. Whisper медленный, но даже на старой карте вполне ..."
+    }
+  ]
+}

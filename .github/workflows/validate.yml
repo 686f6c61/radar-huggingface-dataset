@@ -1,0 +1,88 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'Franja de versionado (auto = segun la hora de la pasada)'
+        required: false
+        default: 'auto'
+        type: choice
+        options: [auto, major, minor, patch]
+  schedule:
+    # Validacion diaria por si algo degrada con el tiempo
+    - cron: '23 5 * * *'
+
+jobs:
+  validate-data:
+    name: Integridad del dataset
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validar data/ + index.json
+        run: node scripts/validate.mjs
+
+  repo-docs:
+    name: Documentacion y repo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Documentos obligatorios
+        run: |
+          for f in README.md SCHEMA.md LICENSE CHANGELOG.md; do
+            test -s "$f" || { echo "falta $f"; exit 1; }
+          done
+          grep -q "CC-BY-4.0\|CC BY 4.0" LICENSE || { echo "LICENSE no es CC-BY-4.0"; exit 1; }
+          echo "docs OK"
+      - name: README con quickstart y versionado
+        run: |
+          grep -q "## Quickstart" README.md || { echo "README sin Quickstart"; exit 1; }
+          grep -q "## Versionado" README.md || { echo "README sin Versionado"; exit 1; }
+          grep -q "radar-huggingface.686f6c61.dev" README.md || { echo "README sin enlace al radar"; exit 1; }
+          echo "README OK"
+      - name: dist/ ignorado
+        run: grep -q "^dist/" .gitignore || { echo ".gitignore no cubre dist/"; exit 1; }
+
+  release:
+    name: Releases (latest + versionada)
+    runs-on: ubuntu-latest
+    needs: [validate-data, repo-docs]
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Construir models.jsonl.gz
+        run: node scripts/build-bulk.mjs
+      - name: Actualizar release latest (flotante)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release create latest dist/models.jsonl.gz --title latest --notes "Bulk mas reciente del dataset" || gh release upload latest dist/models.jsonl.gz --clobber
+      - name: Release numerada (push con cambios de datos, o dispatch manual)
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCED_SLOT: ${{ github.event.inputs.slot }}
+        run: |
+          set -e
+          chmod +x scripts/next-version.sh
+          NEXT=$(scripts/next-version.sh "${FORCED_SLOT:-auto}")
+          if [ -z "$NEXT" ]; then
+            echo "No toca release"
+            exit 0
+          fi
+          TOTAL=$(node -e "console.log(JSON.parse(require('fs').readFileSync('index.json','utf8')).models)")
+          gh release create "$NEXT" dist/models.jsonl.gz \
+            --title "$NEXT" \
+            --notes "Snapshot del dataset: $TOTAL modelos ($(date -u +%Y-%m-%d)). El release \`latest\` siempre apunta a la version mas reciente."
+          echo "Release $NEXT creada ($TOTAL modelos)"

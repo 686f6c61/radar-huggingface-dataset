@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "deytiyas01/Prithvi-EO-2.0-600M-TL",
+  "slug": "deytiyas01-prithvi-eo-2-0-600m-tl",
+  "author": "deytiyas01",
+  "url": "https://huggingface.co/deytiyas01/Prithvi-EO-2.0-600M-TL",
+  "created_at": "2026-08-17T13:19:19.000Z",
+  "updated_at": "2026-08-17T13:19:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "terratorch",
+  "languages": [],
+  "tags": [
+    "terratorch",
+    "Pytorch",
+    "Earth Observation",
+    "Foundation Model",
+    "NASA",
+    "IBM",
+    "arxiv:2412.02732",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2661846197,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-nasa-geospatial/Prithvi-EO-2.0-600M-TL · Hugging Face",
+      "url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-600M-TL",
+      "snippet": "Prithvi for Earth Observation ... Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications"
+    },
+    {
+      "title": "GitHub - NASA-IMPACT/Prithvi-EO-2.0: This repository contains details ...",
+      "url": "https://github.com/NASA-IMPACT/Prithvi-EO-2.0",
+      "snippet": "Prithvi-EO-2.-600M-TL outperforms the previous Prithvi-EO model by 8% across a range of tasks. It also outperforms six other geospatial foundation models when benchmarked on remote sensing tasks from different domains and resolutions (i.e. from 0.1m to 15m)."
+    },
+    {
+      "title": "ibm-nasa-geospatial/Prithvi-EO-2.0-600M-TL at main - Hugging Face",
+      "url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-600M-TL/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Prithvi EO 2.0 600M - Overview - ArcGIS",
+      "url": "https://www.arcgis.com/home/item.html?id=773a011f873b42ec816c52ee42bd424b",
+      "snippet": "Training data Prithvi-EO-2.-600M was pretrained on NASA&#x27;s HLS V2 product (30m granularity) using 4.2M samples with six bands in the following order: Blue, Green, Red, Narrow NIR, SWIR1, SWIR 2. Sample results Here are a few results from the model."
+    },
+    {
+      "title": "Introduction to the model—ArcGIS AI models | Documentation",
+      "url": "https://doc.arcgis.com/en/pretrained-models/latest/imagery/introduction-to-prithvi-eo-2-0-600m.htm",
+      "snippet": "The model is designed to support similarity search, pattern analysis, and downstream deep learning workflows. Unlike task-specific models that directly produce classifications or detections, Prithvi-EO-2.-600M focuses on learning rich feature representations that can be reused across a variety of geospatial applications."
+    }
+  ]
+}

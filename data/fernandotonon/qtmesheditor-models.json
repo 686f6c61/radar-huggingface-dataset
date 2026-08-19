@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "fernandotonon/QtMeshEditor-models",
+  "slug": "fernandotonon-qtmesheditor-models",
+  "author": "fernandotonon",
+  "url": "https://huggingface.co/fernandotonon/QtMeshEditor-models",
+  "created_at": "2026-06-19T16:19:47.000Z",
+  "updated_at": "2026-08-18T03:41:53.000Z",
+  "license": "per-model",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "pbr",
+    "texture",
+    "normal-map",
+    "3d",
+    "rigging",
+    "image-to-3d",
+    "qtmesheditor",
+    "qtmesh",
+    "qtmesh-cloud",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 148,
+  "trending_score": 0,
+  "parameters": 409252800,
+  "parameters_human": "409.3M",
+  "storage_bytes": 16969715823,
+  "storage_human": "17.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fernandotonon/QtMeshEditor-models · Hugging Face",
+      "url": "https://huggingface.co/fernandotonon/QtMeshEditor-models",
+      "snippet": "fernandotonon / QtMeshEditor-models like 0 ONNX pbr texture normal-map qtmesheditor License:cc0-1.0 Model card FilesFiles and versions xet Community Copy to bucket new QtMeshEditor — AI models PBR map synthesis (issue #404)"
+    },
+    {
+      "title": "fernandotonon/QtMeshEditor-models · Discussions - Hugging Face",
+      "url": "https://huggingface.co/fernandotonon/QtMeshEditor-models/discussions",
+      "snippet": "fernandotonon / QtMeshEditor-models like 3 Image-to-3D ONNX GGUF pbr texture normal-map 3d rigging qtmesheditor qtmesh qtmesh-cloud conversational License:per-model Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "QtMeshEditor/THIRD_PARTY_AI_MODELS.md at master · fernandotonon ...",
+      "url": "https://github.com/fernandotonon/QtMeshEditor/blob/master/THIRD_PARTY_AI_MODELS.md",
+      "snippet": "Third-party AI models QtMeshEditor downloads optional ML model files on first use (never bundled in the binary). Attribution + licenses for the models and their training data:"
+    },
+    {
+      "title": "GitHub - fernandotonon/QtMeshEditor: Free 3D asset tool for indie game ...",
+      "url": "https://github.com/fernandotonon/QtMeshEditor/tree/master",
+      "snippet": "The composite action defaults to image-tag: latest, so the Docker CLI tracks the newest published ghcr.io/fernandotonon/qtmesh image. Reproducible builds — pin the action and the container to the same semver as this repository&#x27;s project (QtMeshEditor VERSION …) in CMakeLists.txt (currently 3.20.0)."
+    },
+    {
+      "title": "fernandotonon/QtMeshEditor | DeepWiki",
+      "url": "https://deepwiki.com/fernandotonon/QtMeshEditor",
+      "snippet": "QtMeshEditor is an automated 3D asset pipeline tool designed to scan, validate, convert, fix, and merge 3D assets across different environments $1. It provides a comprehensive suite of tools for game"
+    }
+  ]
+}

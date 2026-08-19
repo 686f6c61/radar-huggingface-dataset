@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "artindnr/sarv-reasoning-GGUF",
+  "slug": "artindnr-sarv-reasoning-gguf",
+  "author": "artindnr",
+  "url": "https://huggingface.co/artindnr/sarv-reasoning-GGUF",
+  "created_at": "2026-08-15T09:29:54.000Z",
+  "updated_at": "2026-08-15T09:29:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "persian",
+    "farsi",
+    "poetry",
+    "poem-generation",
+    "reasoning",
+    "chain-of-thought",
+    "gpt-oss",
+    "lora",
+    "sarv",
+    "mixture-of-experts",
+    "mxfp4",
+    "text-generation",
+    "pytorch",
+    "jax",
+    "tf",
+    "fa",
+    "base_model:artindnr/sarv-reasoning",
+    "base_model:adapter:artindnr/sarv-reasoning",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 295,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 170323562112,
+  "storage_human": "170.3 GB",
+  "base_model": "artindnr/sarv-reasoning",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "artindnr/sarv-reasoning · Hugging Face",
+      "url": "https://huggingface.co/artindnr/sarv-reasoning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/sarv-reasoning-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/sarv-reasoning-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Top 10 GGUF Models That Run Smoothly on Intel i5 + 16GB RAM (2025 Guide)",
+      "url": "https://ggufloader.github.io/gguf-loader/2025/07/07/top-10-gguf-models-i5-16gb/",
+      "snippet": "Discover the best GGUF models optimized for Intel i5 and 16GB RAM systems in 2025. This comprehensive guide reviews top 10 local AI models that balance performance and efficiency on mid-tier consumer hardware."
+    }
+  ]
+}

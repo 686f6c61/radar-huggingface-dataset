@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dwssdwss/tactile",
+  "slug": "dwssdwss-tactile",
+  "author": "dwssdwss",
+  "url": "https://huggingface.co/dwssdwss/tactile",
+  "created_at": "2026-08-16T06:41:42.000Z",
+  "updated_at": "2026-08-18T07:21:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7573400178,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dwssdwss/tactile · Hugging Face",
+      "url": "https://huggingface.co/dwssdwss/tactile",
+      "snippet": "dwssdwss / tactile like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Tactile AI: Models, Datasets & Robotics Research | RoboSkin.ai",
+      "url": "https://roboskin.ai/tactile-ai",
+      "snippet": "1 Tactile AI is the sensing, data, and control workflow that turns touch signals into useful robot behavior. 2 It can support grasp confidence, slip response, contact-aware motion, safer interaction, and evaluation analytics for Physical AI systems. 3 The phrase is broader than a single tactile sensor. It describes the full stack from contact surface to model, controller, benchmark, and ..."
+    },
+    {
+      "title": "PHANES AI Releases Tactile Model TouchWorld, Granting Robots Predictive ...",
+      "url": "https://www.houdao.com/d/16303-PHANES-AI-Releases-Tactile-Model-TouchWorld-Granting-Robots-Predictive-and-Reactive-Capabilities",
+      "snippet": "To address this challenge of &#x27;physical interaction failure,&#x27; the team at PHANES AI, founded by Yang Shuo, a tenured professor at the Harbin Institute of Technology, Shenzhen, born in 1998, recently released their latest research achievement—the foundational tactile model, TouchWorld."
+    },
+    {
+      "title": "TouchWorld: A Predictive and Reactive Tactile Foundation Model for ...",
+      "url": "https://arxiv.org/abs/2607.07287",
+      "snippet": "We introduce TouchWorld, a predictive-and-reactive tactile foundation model for dexterous manipulation. TouchWorld uses a hierarchical policy that separates vision-language subtask planning, tactile world-model prediction, visuo-tactile goal-conditioned action generation, and high-frequency tactile residual refinement."
+    },
+    {
+      "title": "Tactile Foundation Models for Robotics Compared - RoboSkin.ai",
+      "url": "https://roboskin.ai/guides/tactile-foundation-models",
+      "snippet": "Compare tactile foundation models and related robot-learning systems by representation, prediction, policy role, evidence, and transfer limits."
+    }
+  ]
+}

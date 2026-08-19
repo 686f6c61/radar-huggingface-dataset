@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Peutlefaire/Qwen3.8-27B-NVFP4",
+  "slug": "peutlefaire-qwen3-8-27b-nvfp4",
+  "author": "Peutlefaire",
+  "url": "https://huggingface.co/Peutlefaire/Qwen3.8-27B-NVFP4",
+  "created_at": "2026-08-14T15:27:37.000Z",
+  "updated_at": "2026-08-14T15:33:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "en",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 114,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 20579273624,
+  "storage_human": "20.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "Peutlefaire/Qwen3.6-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/Peutlefaire/Qwen3.6-27B-NVFP4",
+      "snippet": "This model is obtained similarly to how the RedHatAI/Qwen3.6-35B-A3B-NVFP4 was obtained with the following compression script using llm-compressor. NOTE: Unlike the aforementioned mdoel, the linear_attn layers have been quantized as well in this model to save memory for longer context lengths on RTX 5090 GPUs. Click the dropdown to see the full quantization script."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B goes open-weight within days. Here&#x27;s what&#x27;s confirmed, the GPU memory math for a 27B-class model, and how to serve it with vLLM or SGLang on day one."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen 3.8 & Qwen 3.8 27B Open Source: Official Alibaba Benchmarks & SME ...",
+      "url": "https://ia4pymes.tech/en/blog/qwen-3-8-official-benchmarks-open-weights-27b-sme-guide",
+      "snippet": "Explore official Qwen 3.8-Max benchmark results (#2 global rank) and Alibaba&#x27;s August 10 open-weights release announcement for Qwen 3.8-27B. Complete SME hardware and local infrastructure guide."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ggkiller-air/univlat-desk-sweep-training-artifacts",
+  "slug": "ggkiller-air-univlat-desk-sweep-training-artifacts",
+  "author": "ggkiller-air",
+  "url": "https://huggingface.co/ggkiller-air/univlat-desk-sweep-training-artifacts",
+  "created_at": "2026-08-15T15:05:46.000Z",
+  "updated_at": "2026-08-16T03:35:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "diffusion-policy",
+    "training-checkpoint",
+    "sonic",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

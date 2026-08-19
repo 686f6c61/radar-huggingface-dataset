@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "8Astral8/ACT",
+  "slug": "8astral8-act",
+  "author": "8Astral8",
+  "url": "https://huggingface.co/8Astral8/ACT",
+  "created_at": "2026-08-17T04:54:44.000Z",
+  "updated_at": "2026-08-17T05:37:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:02:38.452Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACT - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/act",
+      "snippet": "ACT Action Chunking with Transformers. ACT (Action Chunking with Transformers) is a robotic policy model that is trained to predict the next chunk of actions that the robotic hand is expected to perform."
+    },
+    {
+      "title": "Articul8 | The GenAI platform that simply works.",
+      "url": "https://www.articul8.ai/",
+      "snippet": "Articul8&#x27;s approach challenges the assumption that general-purpose models with RAG will suffice for all use cases for enterprises implementing AI in manufacturing and industrial contexts."
+    },
+    {
+      "title": "Meta&#x27;s Zuckerberg manifesto pushes an open-source approach on AI",
+      "url": "https://www.bostonherald.com/2026/08/10/zuckerberg-manifesto-open-source-ai-meta/",
+      "snippet": "Meta released a new AI model for developers, emphasizing open-source access. CEO Mark Zuckerberg warns against concentrating advanced AI."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Astral | AI-Powered Institutional-Grade Trading",
+      "url": "https://heyastral.ai/",
+      "snippet": "Astral is an AI trading workstation for building, backtesting, monitoring, and automating quantitative strategies with broker connectivity."
+    }
+  ]
+}

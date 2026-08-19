@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+  "slug": "nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+  "created_at": "2026-08-04T19:10:45.000Z",
+  "updated_at": "2026-08-13T18:36:59.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "pytorch",
+    "nemotron-3.5",
+    "conversational",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "deploy:azure",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 324,
+  "downloads_30d": 269372,
+  "trending_score": 156,
+  "parameters": 17820210764,
+  "parameters_human": "17.82B",
+  "storage_bytes": 25179445672,
+  "storage_human": "25.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3.5 Lightning Delivers Fast ... - NVIDIA Developer",
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/",
+      "snippet": "NVIDIA Nemotron 3.5 Lightning is a 30B parameter, open Mixture-of-Experts (MoE) model with 3B active parameters, specifically optimized for high-volume, low-latency execution in always-on AI agents and agentic workflows. The model includes features like speculative decoding, harness-optimized training, and quantization (NVFP4 and BF16 checkpoints) to deliver strong accuracy with up to 4x ..."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-3.5-lightning",
+      "snippet": "The vLLM snippets above register the model as nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 via --served-model-name. For llama.cpp — or if you change that flag — copy the identifier returned by GET /v1/models into MODEL below."
+    },
+    {
+      "title": "Get Started with Nemotron 3.5 Lightning",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/get-started/advanced/get-started-nemotron-3.5-lightning.html",
+      "snippet": "Get Started with Nemotron 3.5 Lightning # Nemotron 3.5 Lightning is a compact, text-only, reasoning-capable model in the Nemotron 3.5 Lightning family. It uses a hybrid Latent Mixture-of-Experts (LatentMoE) architecture that interleaves Mamba-2 and MoE layers with select attention layers, and it activates only 3B of its 30B total parameters per token, so it delivers strong reasoning and coding ..."
+    }
+  ]
+}

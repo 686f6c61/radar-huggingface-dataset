@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "orpe42/MP_political_MIL_classifier",
+  "slug": "orpe42-mp_political_mil_classifier",
+  "author": "orpe42",
+  "url": "https://huggingface.co/orpe42/MP_political_MIL_classifier",
+  "created_at": "2026-08-10T17:16:40.000Z",
+  "updated_at": "2026-08-18T10:12:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "deberta_attention_mil",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": 434332217,
+  "parameters_human": "434.3M",
+  "storage_bytes": 267728095852,
+  "storage_human": "267.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "orpe42/MP_political_MIL_classifier · Hugging Face",
+      "url": "https://huggingface.co/orpe42/MP_political_MIL_classifier",
+      "snippet": "Instructions to use orpe42/MP_political_MIL_classifier with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use orpe42/MP_political_MIL_classifier with Transformers:"
+    },
+    {
+      "title": "orpe42/deberta_v3_MP_ft · Hugging Face",
+      "url": "https://huggingface.co/orpe42/deberta_v3_MP_ft",
+      "snippet": "orpe42 / deberta_v3_MP_ft like 0 TensorBoard Safetensors deberta-v2 Model card FilesFiles and versions xet MetricsTraining metrics Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.4B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "orpe42/deberta_MP_dynamic · Hugging Face",
+      "url": "https://huggingface.co/orpe42/deberta_MP_dynamic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GenAI.mil — Grokipedia",
+      "url": "https://grokipedia.com/page/GenAImil",
+      "snippet": "Personnel using GenAI.mil follow military protocols requiring verification of AI outputs prior to implementation, incorporating auditing, standards adherence, and continuous testing to maintain accountability and mitigate potential errors such as biases or hallucinations."
+    },
+    {
+      "title": "ai-histopathology-ovarian-cancer/WSI - MIL classifier.ipynb at main ...",
+      "url": "https://github.com/Alimzade/ai-histopathology-ovarian-cancer/blob/main/WSI%20-%20MIL%20classifier.ipynb",
+      "snippet": "Code and resources for AI-driven ovarian cancer subtype classification using histopathology images (WSI and TMA). This repository includes preprocessing scripts, MIL-based WSI classification, TMA with Encoder as classifier using external dataset and TMA majority voting approach, along with evaluation metrics and visualizations. - ai-histopathology-ovarian-cancer/WSI - MIL classifier.ipynb at ..."
+    }
+  ]
+}

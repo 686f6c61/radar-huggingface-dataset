@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "ig1/Qwen3.8-27B-NVFP4-FP8KV-MTP",
+  "slug": "ig1-qwen3-8-27b-nvfp4-fp8kv-mtp",
+  "author": "ig1",
+  "url": "https://huggingface.co/ig1/Qwen3.8-27B-NVFP4-FP8KV-MTP",
+  "created_at": "2026-08-18T08:30:12.000Z",
+  "updated_at": "2026-08-18T08:58:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "fp8",
+    "kv-cache",
+    "mtp",
+    "speculative-decoding",
+    "vllm",
+    "llm-compressor",
+    "hybrid",
+    "gated-deltanet",
+    "conversational",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:openai/gsm8k",
+    "dataset:sahil2801/CodeAlpaca-20k",
+    "dataset:CohereLabs/aya_dataset",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427984,
+  "parameters_human": "27.78B",
+  "storage_bytes": 28571783613,
+  "storage_human": "28.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RadixArk/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4",
+      "snippet": "Third-Party Community Consideration This model is not owned or developed by RadixArk. It is a quantized derivative of Qwen&#x27;s model; see the upstream Qwen3.8-27B model card for the source model&#x27;s capabilities, training information, limitations, and license."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    }
+  ]
+}

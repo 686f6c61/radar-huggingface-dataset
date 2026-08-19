@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dogfish-thinker/ddpm-celebahq-finetuned-butterflies-2epochs",
+  "slug": "dogfish-thinker-ddpm-celebahq-finetuned-butterflies-2epochs",
+  "author": "dogfish-thinker",
+  "url": "https://huggingface.co/dogfish-thinker/ddpm-celebahq-finetuned-butterflies-2epochs",
+  "created_at": "2026-08-06T06:44:33.000Z",
+  "updated_at": "2026-08-18T13:27:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 113673219,
+  "parameters_human": "113.7M",
+  "storage_bytes": 1364223324,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ddpm-celebahq-finetuned-butterflies-2epochs - Hugging Face",
+      "url": "https://huggingface.co/dogfish-thinker/ddpm-celebahq-finetuned-butterflies-2epochs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dogfish-thinker (carl) - Hugging Face",
+      "url": "https://huggingface.co/dogfish-thinker/models",
+      "snippet": "dogfish-thinker&#x27;s models3 Sort: Recently updated dogfish-thinker/ddpm-celebahq-finetuned-butterflies-2epochs Unconditional Image Generation • 0.1B•Updated 1 day ago"
+    },
+    {
+      "title": "Open-source image generation model of ddpm-celebahq-finetuned ...",
+      "url": "https://model.aibase.com/en/models/details/1915694559717384194",
+      "snippet": "Model Overview This model is an image generation model based on the DDPM (Denoising Diffusion Probabilistic Models) architecture. It was pre-trained on the CelebAHQ dataset and then fine-tuned for butterfly images for 2 epochs."
+    },
+    {
+      "title": "ddpm-celebahq-finetuned-butterflies-2epochs Open-source Model - Freely ...",
+      "url": "https://model.aibase.com/models/details/1915705170434088962",
+      "snippet": "Model Overview This model is a diffusion model based on DDPMPipeline, pre-trained on the CelebAHQ dataset and further fine-tuned for 2 epochs on a butterfly image dataset to generate high-quality butterfly images."
+    },
+    {
+      "title": "jsfs11/ddpm-celebahq-finetuned-butterflies-2epochs - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/jsfs11-ddpm-celebahq-finetuned-butterflies-2epochs",
+      "snippet": "ddpm-celebahq-finetuned-butterflies-2epochs is an open source model from GitHub that offers a free installation service, and any user can find ddpm-celebahq-finetuned-butterflies-2epochs on GitHub to install."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "LabMike3D/ComfyUI",
+  "slug": "labmike3d-comfyui",
+  "author": "LabMike3D",
+  "url": "https://huggingface.co/LabMike3D/ComfyUI",
+  "created_at": "2026-08-17T12:35:52.000Z",
+  "updated_at": "2026-08-17T13:15:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    },
+    {
+      "title": "LabMike3D (Mike) - Hugging Face",
+      "url": "https://huggingface.co/LabMike3D/models",
+      "snippet": "AI / 3D / VFX AI & ML interests AI / 3D / VFX Recent Activity new activityabout 5 hours ago"
+    },
+    {
+      "title": "comfyui AI Models | Civitai",
+      "url": "https://civitai.com/tag/comfyui",
+      "snippet": "comfyui Browse 2,214 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with comfyui."
+    },
+    {
+      "title": "ComfyUI — Node Control for Visual AI Workflows | comfy-ui.io",
+      "url": "https://comfy-ui.io/",
+      "snippet": "Professional control for visual AI workflows ComfyUI connects models and processing steps on a canvas where every parameter stays visible. Start from community templates, then iterate with experiments you can reproduce and debug."
+    },
+    {
+      "title": "Comfy - Professional Control of Visual AI",
+      "url": "https://comfy.org/",
+      "snippet": "Comfy is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output."
+    }
+  ]
+}

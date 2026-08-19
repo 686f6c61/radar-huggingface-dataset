@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SynStrokes/luma-chelsea",
+  "slug": "synstrokes-luma-chelsea",
+  "author": "SynStrokes",
+  "url": "https://huggingface.co/SynStrokes/luma-chelsea",
+  "created_at": "2026-08-15T13:28:06.000Z",
+  "updated_at": "2026-08-15T14:07:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 966448390,
+  "storage_human": "966 MB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:13:53.556Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luma | AI Agents for Creative Work",
+      "url": "https://lumalabs.ai/",
+      "snippet": "Luma AI is the creative AI platform for video generation and image creation. Powered by the world&#x27;s leading video generation models, Ray and Uni, and creative agents handling end-to-end workflows."
+    },
+    {
+      "title": "Chelsea - Luma",
+      "url": "https://luma.com/user/usr-kMGFwijyUppzEUm",
+      "snippet": "Voice AI Hackathon Singapore 2026 By Agora, Hennessy Solis, ZhengDerek, Brendan Beh & 4 others"
+    },
+    {
+      "title": "Luma AI",
+      "url": "https://lumalabs.ai/series-b",
+      "snippet": "Luma is leading this wave with a rare combination of both world class multimodal research and product design. Luma&#x27;s team brings together some of the most formidable scientists in computer vision, graphics and deep learning who have already shipped products used by millions of people."
+    },
+    {
+      "title": "AI 3D Model Generators — Top Tools Compared (2026) | 3DLinks",
+      "url": "https://3dlinks.com/ai-3d-model-generators",
+      "snippet": "Compare the best AI 3D model generators of 2026: Meshy, Tripo, Luma AI, CSM, and more. Generate 3D models from text or images in minutes."
+    },
+    {
+      "title": "Luma AI - AI Video Generator | Text to Video & Photo to Video",
+      "url": "https://luma.ai/",
+      "snippet": "Create stunning AI-generated videos from text prompts or images. Luma AI uses advanced artificial intelligence to bring your creative ideas to life in seconds."
+    }
+  ]
+}

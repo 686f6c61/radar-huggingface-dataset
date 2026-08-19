@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TheMelonGod/dolphin-2.9.3-mistral-nemo-12b-exl3",
+  "slug": "themelongod-dolphin-2-9-3-mistral-nemo-12b-exl3",
+  "author": "TheMelonGod",
+  "url": "https://huggingface.co/TheMelonGod/dolphin-2.9.3-mistral-nemo-12b-exl3",
+  "created_at": "2026-08-17T10:58:24.000Z",
+  "updated_at": "2026-08-17T18:57:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "quantized",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "base_model:dphn/dolphin-2.9.3-mistral-nemo-12b",
+    "base_model:quantized:dphn/dolphin-2.9.3-mistral-nemo-12b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38937829546,
+  "storage_human": "38.9 GB",
+  "base_model": "dphn/dolphin-2.9.3-mistral-nemo-12b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dphn/dolphin-2.9.3-mistral-nemo-12b · Hugging Face",
+      "url": "https://huggingface.co/dphn/dolphin-2.9.3-mistral-nemo-12b",
+      "snippet": "This model is based on mistralai/Mistral-Nemo-Base-2407, and is governed by the apache 2.0 license. The base model has 128K context, and our finetuning used 8192 sequence length."
+    },
+    {
+      "title": "dphn/dolphin-2.9.3-mistral-nemo-12b-gguf · Hugging Face",
+      "url": "https://huggingface.co/dphn/dolphin-2.9.3-mistral-nemo-12b-gguf",
+      "snippet": "Our appreciation for the sponsors of Dolphin 2.9.3: Crusoe Cloud - provided excellent on-demand 8xL40S node This model is based on mistralai/Mistral-Nemo-Base-2407, and is governed by the apache 2.0 license. The base model has 128K context, and our finetuning used 8192 sequence length. Dolphin 2.9.3 uses ChatML prompt template format. example:"
+    },
+    {
+      "title": "CognitiveComputations/dolphin-mistral-nemo:12b",
+      "url": "https://ollama.com/CognitiveComputations/dolphin-mistral-nemo:12b",
+      "snippet": "Our appreciation for the sponsors of Dolphin 2.9.3: - Crusoe Cloud - provided excellent on-demand 8xL40S node This model is based on mistralai/Mistral-Nemo-Base-2407, and is governed by the apache 2.0 license."
+    },
+    {
+      "title": "dolphin-2.9.3-mistral-nemo-12b: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dolphin-2.9.3-mistral-nemo-12b-dphn",
+      "snippet": "Overview dolphin-2.9.3-mistral-nemo-12b is a 12-billion parameter instruction-following model based on Mistral Nemo Base (2407) and developed by dphn at Cognitive Computations under the direction of Eric Hartford. The model inherits the base&#x27;s 128K context window but was fine-tuned on 8192 sequence length using ChatML prompt format. The single most important thing to know before using this ..."
+    },
+    {
+      "title": "Dolphin 2.9.3 Mistral Nemo 12b - Models",
+      "url": "https://www.modelscope.cn/models/cognitivecomputations/dolphin-2.9.3-mistral-nemo-12b-gguf",
+      "snippet": "This model is based on mistralai/Mistral-Nemo-Base-2407, and is governed by the apache 2.0 license. The base model has 128K context, and our finetuning used 8192 sequence length. Dolphin 2.9.3 uses ChatML prompt template format. example: ... Dolphin-2.9.3 has a variety of instruction following, conversational, and coding skills."
+    }
+  ]
+}

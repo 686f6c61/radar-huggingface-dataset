@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Phoenix-X-26B-A4B-Heretic-i1-GGUF",
+  "slug": "mradermacher-phoenix-x-26b-a4b-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Phoenix-X-26B-A4B-Heretic-i1-GGUF",
+  "created_at": "2026-08-14T06:11:10.000Z",
+  "updated_at": "2026-08-14T09:51:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "abliteration",
+    "gemma4",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:alexokita/Phoenix-X-26B-A4B-Heretic",
+    "base_model:quantized:alexokita/Phoenix-X-26B-A4B-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 9374,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 300894380544,
+  "storage_human": "300.9 GB",
+  "base_model": "alexokita/Phoenix-X-26B-A4B-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Phoenix-X-26B-A4B-Heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Phoenix-X-26B-A4B-Heretic-GGUF",
+      "snippet": "Instructions to use mradermacher/Phoenix-X-26B-A4B-Heretic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "google/gemma-4-26b-a4b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-26b-a4b",
+      "snippet": "Gemma 4 is the latest on-device model family from Google. This is the 26B (active 4B) MoE version. Supports vision and reasoning."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "By VRAM Tier Pick the tier that matches your hardware. Every model below has been confirmed live on HuggingFace at the time of writing, with GGUF available either in the linked repo or via a sibling quant repo from bartowski or mradermacher. 8GB VRAM — Budget tier The 8B class is the floor for usable uncensored output. Picks:"
+    },
+    {
+      "title": "Phoenix X 26B A4B by Vortex5 — VRAM 51.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Vortex5%2FPhoenix-X-26B-A4B,dzCqHIesneY7qEgEMWEYm",
+      "snippet": "Rank the Phoenix X 26B A4B capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

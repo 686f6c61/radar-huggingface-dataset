@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "greenery8848/drift-sampler-artifacts",
+  "slug": "greenery8848-drift-sampler-artifacts",
+  "author": "greenery8848",
+  "url": "https://huggingface.co/greenery8848/drift-sampler-artifacts",
+  "created_at": "2026-08-03T09:50:36.000Z",
+  "updated_at": "2026-08-17T11:52:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "research-artifacts",
+    "sampling",
+    "boltzmann",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5620693596,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "greenery8848/drift-sampler-artifacts · Hugging Face",
+      "url": "https://huggingface.co/greenery8848/drift-sampler-artifacts",
+      "snippet": "drift-sampler artifacts Recorded training checkpoints for an ongoing research project on one-step samplers for unnormalized Boltzmann targetsp (x) ∝ exp (-E (x)). 68 files, 3.2 GB. This repository is a storage backend, not a released model."
+    },
+    {
+      "title": "srujantata/model-monitoring-evidently - GitHub",
+      "url": "https://github.com/srujantata/model-monitoring-evidently",
+      "snippet": "Overview model-monitoring-evidently is a comprehensive solution for monitoring machine learning models in production environments using Amazon SageMaker and Evidently AI."
+    },
+    {
+      "title": "greenery8848/shapley-vla-robofactory-sft · Hugging Face",
+      "url": "https://huggingface.co/greenery8848/shapley-vla-robofactory-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - biuta666/ai-artifact-inspector: Understand any AI-generated ...",
+      "url": "https://github.com/biuta666/ai-artifact-inspector",
+      "snippet": "Understand any AI-generated file: reveal model, prompt, seed, LoRA, workflow - biuta666/ai-artifact-inspector"
+    },
+    {
+      "title": "ML Experiment Tracking | MLflow AI Platform",
+      "url": "https://mlflow.org/docs/latest/ml/tracking/",
+      "snippet": "Log parameters, metrics, and artifacts for ML experiments. Compare runs, visualize results, and reproduce models."
+    }
+  ]
+}

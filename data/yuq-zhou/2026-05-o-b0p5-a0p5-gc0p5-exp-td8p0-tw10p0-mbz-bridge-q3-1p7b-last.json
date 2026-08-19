@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuq-zhou/2026-05-o-b0p5-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last",
+  "slug": "yuq-zhou-2026-05-o-b0p5-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last",
+  "author": "yuq-zhou",
+  "url": "https://huggingface.co/yuq-zhou/2026-05-o-b0p5-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last",
+  "created_at": "2026-08-18T02:24:58.000Z",
+  "updated_at": "2026-08-18T02:25:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "checkpoint",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td4p0-tw5p0-r1-7 · Hugging Face",
+      "url": "https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td4p0-tw5p0-r1-7",
+      "snippet": "Instructions to use yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td4p0-tw5p0-r1-7 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw5p0-r1-7-fixed-20260804",
+      "url": "https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw5p0-r1-7-fixed-20260804",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "2026-05-o-b0p3-a0p5-gc0p5-exp-td4p0-tw5p0-r1-7-last",
+      "url": "https://friendli.ai/models/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td4p0-tw5p0-r1-7-last",
+      "snippet": "Deploy 2026-05-o-b0p3-a0p5-gc0p5-exp-td4p0-tw5p0-r1-7-last with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw10p0-mbz-r1-7",
+      "url": "https://friendli.ai/models/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw10p0-mbz-r1-7",
+      "snippet": "Run 2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw10p0-mbz-r1-7 with FriendliAI inference. Model checkpoint in standard HuggingFace format…"
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Thireus/Qwen3.8-27B-THIREUS-Q4_0_R8-SPECIAL_SPLIT",
+  "slug": "thireus-qwen3-8-27b-thireus-q4_0_r8-special_split",
+  "author": "Thireus",
+  "url": "https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q4_0_R8-SPECIAL_SPLIT",
+  "created_at": "2026-08-15T07:58:19.000Z",
+  "updated_at": "2026-08-15T10:09:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2505.23786",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15149195488,
+  "storage_human": "15.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

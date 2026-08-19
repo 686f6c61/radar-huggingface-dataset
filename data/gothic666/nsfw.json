@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Gothic666/Nsfw",
+  "slug": "gothic666-nsfw",
+  "author": "Gothic666",
+  "url": "https://huggingface.co/Gothic666/Nsfw",
+  "created_at": "2026-08-17T14:37:42.000Z",
+  "updated_at": "2026-08-17T14:40:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "it",
+    "en",
+    "base_model:GitMylo/nsfwcaption-qwen3-vl-8b-v3-gguf",
+    "base_model:finetune:GitMylo/nsfwcaption-qwen3-vl-8b-v3-gguf",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "GitMylo/nsfwcaption-qwen3-vl-8b-v3-gguf",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

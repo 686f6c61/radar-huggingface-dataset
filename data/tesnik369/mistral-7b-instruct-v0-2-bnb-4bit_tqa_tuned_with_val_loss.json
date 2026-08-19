@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_with_val_loss",
+  "slug": "tesnik369-mistral-7b-instruct-v0-2-bnb-4bit_tqa_tuned_with_val_loss",
+  "author": "TesNik369",
+  "url": "https://huggingface.co/TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_with_val_loss",
+  "created_at": "2026-08-14T05:55:55.000Z",
+  "updated_at": "2026-08-14T06:01:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+    "base_model:finetune:unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:38:32.120Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_with_val_loss",
+      "url": "https://huggingface.co/TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_with_val_loss",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - inferless/mistral-7b-instruct-v0.2: An 7B model with a 32k ...",
+      "url": "https://github.com/inferless/Mistral-7B-Instruct-v0.2/",
+      "snippet": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. This model outperforms other models like Llama 2 13B and Llama 1 34B on various benchmarks. Mistral 7B excels in tasks such as mathematics, code generation, and reasoning due to its innovative features like Grouped-query Attention (GQA) for faster inference and Sliding Window ..."
+    },
+    {
+      "title": "unsloth/mistral-7b-instruct-v0.2-bnb-4bit · Hugging Face",
+      "url": "https://huggingface.co/unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mistral 7B Instruct v0.2 API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/fireworks/mistral-7b-instruct-v0p2",
+      "snippet": "Mistral 7B Instruct v0.2 is an instruction fine-tuned version of the Mistral 7B v0.2 language model. This update introduces key improvements over v0.1, including an expanded context window of 32k tokens (up from 8k), a Rope-theta value of 1e6, and the removal of Sliding-Window Attention. Designed to excel in generating coherent and contextually rich responses, it is suitable for a wide range ..."
+    },
+    {
+      "title": "Mistral 7B Instruct V0.2 Bnb 4bit by unsloth - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/unsloth%2Fmistral-7b-instruct-v0.2-bnb-4bit,7sMP5Q2yTSm9HKiVYUIhp7",
+      "snippet": "Mistral 7B Instruct V0.2 Bnb 4bit is an open-source 7b LLM by unsloth. VRAM 4.1GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

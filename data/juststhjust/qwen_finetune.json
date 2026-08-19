@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "juststhjust/qwen_finetune",
+  "slug": "juststhjust-qwen_finetune",
+  "author": "juststhjust",
+  "url": "https://huggingface.co/juststhjust/qwen_finetune",
+  "created_at": "2026-08-15T16:56:38.000Z",
+  "updated_at": "2026-08-15T18:36:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4994560640,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

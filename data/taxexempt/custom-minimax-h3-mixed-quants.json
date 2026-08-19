@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "taxexempt/Custom-MiniMaX-H3-mixed-quants",
+  "slug": "taxexempt-custom-minimax-h3-mixed-quants",
+  "author": "taxexempt",
+  "url": "https://huggingface.co/taxexempt/Custom-MiniMaX-H3-mixed-quants",
+  "created_at": "2026-08-15T06:03:22.000Z",
+  "updated_at": "2026-08-16T20:26:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40277611124,
+  "storage_human": "40.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "Building AGI with our mission Intelligence with Everyone. Global leader in multi-modal models and AI-native products with over 200 million users."
+    },
+    {
+      "title": "Comfy-Org/MiniMax-H3 at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/tree/main/diffusion_models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax-H3 Reference - a Hugging Face Space by multimodalart",
+      "url": "https://huggingface.co/spaces/multimodalart/minimax-h3-reference",
+      "snippet": "MiniMax-H3 is a 33B parameter state of the art video generation model that produces video and a fully synchronized soundtrack (ambience, foley, speech). Bring your own subject, voice or camera move as a reference."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/awesome-minimax-h3-integration · GitHub",
+      "url": "https://github.com/MiniMax-AI/awesome-minimax-h3-integration/tree/main",
+      "snippet": "Contribute to MiniMax-AI/awesome-minimax-h3-integration development by creating an account on GitHub."
+    }
+  ]
+}

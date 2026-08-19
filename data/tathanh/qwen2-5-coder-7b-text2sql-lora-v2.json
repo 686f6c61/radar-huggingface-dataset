@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "TaThanh/qwen2.5-coder-7b-text2sql-lora-v2",
+  "slug": "tathanh-qwen2-5-coder-7b-text2sql-lora-v2",
+  "author": "TaThanh",
+  "url": "https://huggingface.co/TaThanh/qwen2.5-coder-7b-text2sql-lora-v2",
+  "created_at": "2026-08-16T09:04:20.000Z",
+  "updated_at": "2026-08-16T09:05:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7655986688,
+  "parameters_human": "7.66B",
+  "storage_bytes": 7900623317,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TaThanh/qwen2.5-coder-7b-text2sql-lora · Hugging Face",
+      "url": "https://huggingface.co/TaThanh/qwen2.5-coder-7b-text2sql-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "junmingg/qwen2.5-coder-7b-text2sql-lora · Hugging Face",
+      "url": "https://huggingface.co/junmingg/qwen2.5-coder-7b-text2sql-lora",
+      "snippet": "junmingg / qwen2.5-coder-7b-text2sql-lora like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen2.5-Coder - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-coder",
+      "snippet": "Code-specific model series based on Qwen2.5"
+    },
+    {
+      "title": "GitHub - Gansaw98/text-to-sql-spider: Fine-tuned Qwen2.5-Coder-7B with ...",
+      "url": "https://github.com/Gansaw98/text-to-sql-spider",
+      "snippet": "Text-to-SQL: Fine-Tuning Qwen2.5-Coder-7B on Spider Fine-tuned Qwen2.5-Coder-7B-Instruct with LoRA (QLoRA, 4-bit NF4) on the Spider benchmark, achieving 77.7% execution accuracy — outperforming a zero-shot Llama 3.3-70B baseline by +24.5%."
+    },
+    {
+      "title": "Qwen 2.5 Coder 7B - Open Laboratory",
+      "url": "https://openlaboratory.com/models/qwen-2_5-coder-7b/",
+      "snippet": "A 7.61 billion parameter transformer model designed for code generation and reasoning across 92 programming languages with a 128,000-token context window."
+    }
+  ]
+}

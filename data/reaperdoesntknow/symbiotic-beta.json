@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Symbiotic-Beta",
+  "slug": "reaperdoesntknow-symbiotic-beta",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Symbiotic-Beta",
+  "created_at": "2025-04-26T11:03:20.000Z",
+  "updated_at": "2026-08-17T13:17:02.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "symbiotic-llm",
+    "text-generation",
+    "generated_from_trainer",
+    "meta-math",
+    "qwen2",
+    "symbolic-ai",
+    "symbioticlm",
+    "convergentintel",
+    "conversational",
+    "en",
+    "dataset:meta-math/MetaMathQA",
+    "dataset:open-thoughts/OpenThoughts2-1M",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:afl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 3317,
+  "trending_score": 0,
+  "parameters": 3569725840,
+  "parameters_human": "3.57B",
+  "storage_bytes": 35918625665,
+  "storage_human": "35.9 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Symbiotic-Beta · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Symbiotic-Beta",
+      "snippet": "📐 Model Description The architecture fuses neural token-level generation with symbolic introspection and reasoning: Dynamic Thought Evolution with Helical Encoding and DNA-Inspired Memory (DTE-HDM) Enables structured long-term memory and spiral-context encoding across tokens. Multi-Agent Symbiotic Response Mechanisms (M.A.S.R.M) Coordinates symbolic-neural agents via gated attention and ..."
+    },
+    {
+      "title": "SymbioticAI — Symbolic Transformers - a reaperdoesntknow Collection",
+      "url": "https://huggingface.co/collections/reaperdoesntknow/symbioticai-symbolic-transformers",
+      "snippet": "Symbolic-transformer hybrids with persistent memory, 1B to 14B. Experimental research checkpoints."
+    },
+    {
+      "title": "reaperdoesntknow / Symbiotic-Beta - Protect AI",
+      "url": "https://protectai.com/insights/models/reaperdoesntknow/Symbiotic-Beta/17a65c294d26990a57a3aedbc2dc59973f1a5593/overview",
+      "snippet": "Discover potential threats in the reaperdoesntknow / Symbiotic-Beta model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "arXiv:2504.03105v1 [cs.HC] 4 Apr 2025",
+      "url": "https://arxiv.org/pdf/2504.03105",
+      "snippet": "A fundamental pattern we have seen with gen-erative AI is interfaces that are iterative and allow users to adjust their aims in subsequent iterations. This represents a shift away from the deterministic and rigid command-and-control model to one where interactions are more conversational, iterative, and adap-tive."
+    },
+    {
+      "title": "ByteDance targets mega AI model nearing Anthropic&#x27;s Mythos",
+      "url": "https://www.ft.com/content/9b8383b1-a28d-4940-8c4e-2f0cd21556ef?syn-25a6b1a6=1",
+      "snippet": "ByteDance is training an AI model that could approach the size of Anthropic&#x27;s most cutting-edge Mythos system, as Chinese companies continue to narrow the gap with the top US labs."
+    }
+  ]
+}

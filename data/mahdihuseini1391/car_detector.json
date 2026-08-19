@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mahdihuseini1391/car_detector",
+  "slug": "mahdihuseini1391-car_detector",
+  "author": "mahdihuseini1391",
+  "url": "https://huggingface.co/mahdihuseini1391/car_detector",
+  "created_at": "2026-08-17T16:10:42.000Z",
+  "updated_at": "2026-08-17T16:10:42.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pfadrm/car_detector",
+      "url": "https://github.com/pfadrm/car_detector",
+      "snippet": "Car Detector is an AI API with 93% accuracy on brands. It will recognize the year, model and color of most cars since 1928. You can use our api by choosing a file and clicking detect or using our api routes! You can upload a picture of a car (from file or URL), predict its model or brand and display information about it (brand, model, year and ..."
+    },
+    {
+      "title": "Car Identifier - Instantly Identify Cars and Vehicle Models with AI",
+      "url": "https://imageidentifier.ai/what-car-is-this",
+      "snippet": "Upload a photo of any car and let advanced AI identify the make, model, and year. Fast, free, and accurate car identification for enthusiasts, buyers, and auto pros."
+    },
+    {
+      "title": "What Car Is This? Free Car Identifier by Photo | Car Reveal",
+      "url": "https://car-reveal.com/identify",
+      "snippet": "Upload a picture to identify what car it is. Free AI car identifier by photo with make, model, year range, trim, and price estimate — no VIN or plate."
+    },
+    {
+      "title": "Vehicle Identifier - Instantly Identify Vehicles and Models with AI",
+      "url": "https://imageidentifier.ai/what-vehicle-is-this",
+      "snippet": "Upload a photo of any vehicle and let advanced AI identify the make, model, and year. Fast, free, and accurate vehicle identification for enthusiasts and buyers."
+    },
+    {
+      "title": "Car Model Recognition - GitHub",
+      "url": "https://github.com/Helias/Car-Model-Recognition",
+      "snippet": "Car Model Recognition project. Contribute to Helias/Car-Model-Recognition development by creating an account on GitHub."
+    }
+  ]
+}

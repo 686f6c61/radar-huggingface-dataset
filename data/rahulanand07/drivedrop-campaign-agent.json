@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "rahulanand07/drivedrop-campaign-agent",
+  "slug": "rahulanand07-drivedrop-campaign-agent",
+  "author": "rahulanand07",
+  "url": "https://huggingface.co/rahulanand07/drivedrop-campaign-agent",
+  "created_at": "2026-08-18T19:11:52.000Z",
+  "updated_at": "2026-08-18T19:24:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "chat",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4745461989,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agentforce: Salesforce and Rahul Dravid Kick Off Phase Two of Brand ...",
+      "url": "https://www.salesforce.com/in/news/press-releases/2025/05/21/agentforce-rahul-dravid-brand-campaign/",
+      "snippet": "India, May 19, 2025: Salesforce, the #1 CRM*, today announced the second phase of its brand collaboration with Rahul Dravid, former head coach of the Indian Men&#x27;s cricket team. This phase introduces a focused campaign around Agentforce, Salesforce&#x27;s AI-powered solution built to transform sales, service, and marketing for businesses across segments. The campaign positions Agentforce […]"
+    },
+    {
+      "title": "Salesforce, Rahul Dravid Kick Off New Campaign Highlighting AI-Driven ...",
+      "url": "https://digitalterminal.in/enterprise/salesforce-rahul-dravid-kick-off-new-campaign-highlighting-ai-driven-agentforce-solution",
+      "snippet": "Salesforce announced the second phase of its brand collaboration with Rahul Dravid, former head coach of the Indian Men&#x27;s cricket team. This phase introduces a focused campaign around Agentforce, Salesforce&#x27;s AI-powered solution built to transform sales, service, and marketing for businesses across segments. The campaign positions Agentforce as a growth engine, enabling businesses to deliver ..."
+    },
+    {
+      "title": "Salesforce Launches Phase Two of Rahul Dravid Campaign to Spotlight ...",
+      "url": "https://fyi9.com/salesforce-launches-phase-two-of-rahul-dravid-campaign-to-spotlight-agentforce-its-ai-powered-crm-engine/",
+      "snippet": "Salesforce, the global leader in customer relationship management (CRM), has launched the second phase of its brand collaboration with Rahul Dravid, former head coach of the Indian Men&#x27;s cricket team. This new campaign centers on Agentforce, Salesforce&#x27;s AI-powered solution designed to transform how businesses manage sales, service, and marketing. Agentforce: Powering Personalized Customer ..."
+    },
+    {
+      "title": "Salesforce launches Agentforce campaign with Rahul Dravid",
+      "url": "https://www.afaqs.com/news/advertising/salesforce-launches-agentforce-campaign-with-rahul-dravid-9089957",
+      "snippet": "Salesforce launches Agentforce campaign with Rahul Dravid The campaign positions Agentforce as a growth engine, enabling businesses to deliver seamless, AI-driven customer experiences."
+    },
+    {
+      "title": "&#x27;Agentforce&#x27; takes center stage as Salesforce and Rahul Dravid kick off ...",
+      "url": "https://mediabrief.com/salesforce-agentforce-india-campaign-rahul-dravid/",
+      "snippet": "Salesforce has announced the launch of Phase Two of its brand partnership with Rahul Dravid, introducing a new campaign focused on Agentforce, the company&#x27;s AI-powered solution designed to transform sales, service, and marketing for Indian businesses. The campaign builds on the momentum of last year&#x27;s \"Growing with India\" initiative, which marked Salesforce&#x27;s first brand campaign"
+    }
+  ]
+}

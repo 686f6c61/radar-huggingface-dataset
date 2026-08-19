@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "joseneto023dev/pi05-BRVeJ37DuryX",
+  "slug": "joseneto023dev-pi05-brvej37duryx",
+  "author": "joseneto023dev",
+  "url": "https://huggingface.co/joseneto023dev/pi05-BRVeJ37DuryX",
+  "created_at": "2026-08-11T20:16:25.000Z",
+  "updated_at": "2026-08-14T16:53:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 14706741592,
+  "storage_human": "14.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

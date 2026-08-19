@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "shinonyu/dummybaV2-adapter",
+  "slug": "shinonyu-dummybav2-adapter",
+  "author": "shinonyu",
+  "url": "https://huggingface.co/shinonyu/dummybaV2-adapter",
+  "created_at": "2026-08-15T12:10:13.000Z",
+  "updated_at": "2026-08-15T12:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "base_model:shinonyu/dummybaV1",
+    "base_model:finetune:shinonyu/dummybaV1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 362694456,
+  "storage_human": "363 MB",
+  "base_model": "shinonyu/dummybaV1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

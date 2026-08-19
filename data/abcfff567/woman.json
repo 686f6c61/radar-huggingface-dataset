@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "abcfff567/woman",
+  "slug": "abcfff567-woman",
+  "author": "abcfff567",
+  "url": "https://huggingface.co/abcfff567/woman",
+  "created_at": "2026-08-16T05:33:48.000Z",
+  "updated_at": "2026-08-16T05:34:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129415568,
+  "storage_human": "129 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:12:04.210Z",
+  "benchmarks": [],
+  "sources": []
+}

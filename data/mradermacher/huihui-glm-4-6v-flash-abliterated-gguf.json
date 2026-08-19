@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-GLM-4.6V-Flash-abliterated-GGUF",
+  "slug": "mradermacher-huihui-glm-4-6v-flash-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-GLM-4.6V-Flash-abliterated-GGUF",
+  "created_at": "2026-08-17T13:52:15.000Z",
+  "updated_at": "2026-08-17T13:57:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "zh",
+    "en",
+    "base_model:huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9400279040,
+  "parameters_human": "9.40B",
+  "storage_bytes": 84338219360,
+  "storage_human": "84.3 GB",
+  "base_model": "huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-GLM-4.6V-Flash-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 9 hours ago ... updated a model about 10 hours ago"
+    },
+    {
+      "title": "huihui-ai/Huihui-GLM-4.6V-Flash-abliterated - Hugging Face H... - Socket",
+      "url": "https://socket.dev/huggingface/package/huihui-ai/huihui-glm-4.6v-flash-abliterated",
+      "snippet": "We found that huihui-ai/Huihui-GLM-4.6V-Flash-abliterated demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago."
+    },
+    {
+      "title": "GLM-4.6V-Flash · Models",
+      "url": "https://www.modelscope.cn/models/ZhipuAI/GLM-4.6V-Flash",
+      "snippet": "GLM-4.6V takes a multimodal context—spanning documents, user inputs, and tool-retrieved images—and synthesizes coherent, interleaved image-text content tailored to the task. During generation it can actively call search and retrieval tools to gather and curate additional text and visuals, producing rich, visually grounded content."
+    },
+    {
+      "title": "abliterated · Ollama",
+      "url": "https://ollama.com/search?q=abliterated",
+      "snippet": "Search for models on Ollama. huihui_ai/gemma-4-abliterated Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

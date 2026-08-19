@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "1ys1/areumii-smolvla-pickplace-v1",
+  "slug": "1ys1-areumii-smolvla-pickplace-v1",
+  "author": "1ys1",
+  "url": "https://huggingface.co/1ys1/areumii-smolvla-pickplace-v1",
+  "created_at": "2026-08-14T09:23:13.000Z",
+  "updated_at": "2026-08-14T09:26:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:1ys1/areumii_pickplace-v1",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906722056,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

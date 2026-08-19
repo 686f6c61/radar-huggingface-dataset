@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "weifanjiang/llama3.1-8b-it.speculators.dspark-ce01tv09-bs8-conf-swa",
+  "slug": "weifanjiang-llama3-1-8b-it-speculators-dspark-ce01tv09-bs8-conf-swa",
+  "author": "weifanjiang",
+  "url": "https://huggingface.co/weifanjiang/llama3.1-8b-it.speculators.dspark-ce01tv09-bs8-conf-swa",
+  "created_at": "2026-08-12T01:04:48.000Z",
+  "updated_at": "2026-08-17T16:27:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 1872054273,
+  "parameters_human": "1.87B",
+  "storage_bytes": 4363420340,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "weifanjiang/llama3.1-8b-it.speculators.peagle-ce01tv09-nd7-swa ...",
+      "url": "https://huggingface.co/weifanjiang/llama3.1-8b-it.speculators.peagle-ce01tv09-nd7-swa",
+      "snippet": "/ llama3.1-8b-it.speculators.peagle-ce01tv09-nd7-swa like 0 Safetensors custom_code Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 2B params Tensor type I64 · BF16 · BOOL · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "Weifan Jiang",
+      "url": "https://weifanjiang.github.io/",
+      "snippet": "I was an ML Systems research intern at Red Hat AI during Summer 2026, working on Speculators, the speculative decoding framework in the vLLM ecosystem. I was a Student Researcher at Technical Systems & Infrastructure, Google from 2022-2023, working on ML-driven failure diagnosis."
+    },
+    {
+      "title": "README.md · meta-llama/Llama-3.1-8B-Instruct at main",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "speculators/examples/train at main · vllm-project/speculators",
+      "url": "https://github.com/vllm-project/speculators/tree/main/examples/train",
+      "snippet": "mkdocs.yml pyproject.toml setup.py speculators / examples / train / shanjiaz Added sliding window attention for p-eagle and eagle3 models (#684)"
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    }
+  ]
+}

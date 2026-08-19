@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "OpenGryd/PaddleOCR-VL-1.6-MLX-8bit",
+  "slug": "opengryd-paddleocr-vl-1-6-mlx-8bit",
+  "author": "OpenGryd",
+  "url": "https://huggingface.co/OpenGryd/PaddleOCR-VL-1.6-MLX-8bit",
+  "created_at": "2026-08-18T15:21:27.000Z",
+  "updated_at": "2026-08-18T15:40:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "paddleocr_vl",
+    "ERNIE4.5",
+    "PaddleOCR",
+    "PaddlePaddle",
+    "image-to-text",
+    "ocr",
+    "document-parse",
+    "layout",
+    "table",
+    "formula",
+    "chart",
+    "seal",
+    "spotting",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:PaddlePaddle/PaddleOCR-VL-1.6",
+    "base_model:quantized:PaddlePaddle/PaddleOCR-VL-1.6",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 351727700,
+  "parameters_human": "351.7M",
+  "storage_bytes": 1100055690,
+  "storage_human": "1.1 GB",
+  "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "olragon/PaddleOCR-VL-1.6-8bit · Hugging Face",
+      "url": "https://huggingface.co/olragon/PaddleOCR-VL-1.6-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · olragon/PaddleOCR-VL-1.6-8bit at main - Hugging Face",
+      "url": "https://huggingface.co/olragon/PaddleOCR-VL-1.6-8bit/blob/main/README.md",
+      "snippet": "olragon / PaddleOCR-VL-1.6-8bit like 0 Image-Text-to-Text MLX Safetensors PaddleOCR 4 languages paddleocr_vl ERNIE4.5 PaddlePaddle image-to-text ocr document-parse layout table formula chart seal spotting apple-silicon quantized conversational custom_code 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Copy ..."
+    },
+    {
+      "title": "GitHub - Abishai95141/paddle-ocr-v1.6-mlx",
+      "url": "https://github.com/Abishai95141/paddle-ocr-v1.6-mlx",
+      "snippet": "Quick Start Flow Step 1: Download & Convert to MLX Format To download and convert the model weights to MLX format (preserving the full 0.9B parameter performance in bfloat16), run: ... This downloads the raw weights locally and outputs the MLX model package into ./PaddleOCR-VL-1.6-mlx."
+    },
+    {
+      "title": "Home - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/index.html",
+      "snippet": "PaddleOCR-VL-1.5 is a new iterative version of the PaddleOCR-VL series. Based on comprehensive optimization of the core capabilities of version 1.0, the model achieves 94.5% accuracy on the authoritative document parsing benchmark OmniDocBench v1.5, surpassing top global general-purpose large models and document parsing-specific models."
+    },
+    {
+      "title": "PaddleOCR-VL-1.6 Introduction - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/version3.x/algorithm/PaddleOCR-VL/PaddleOCR-VL-1.6.html",
+      "snippet": "PaddleOCR-VL-1.6 further optimizes PaddleOCR-VL-1.5 by systematically analyzing under-optimized areas in the current model, applying targeted data optimization, and adopting refined post-training strategies."
+    }
+  ]
+}

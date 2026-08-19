@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/z_image_turbo",
+  "slug": "comfy-org-z_image_turbo",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/z_image_turbo",
+  "created_at": "2025-11-26T01:00:52.000Z",
+  "updated_at": "2026-07-02T13:20:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "region:us"
+  ],
+  "likes": 815,
+  "downloads_30d": 6009518,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42083656464,
+  "storage_human": "42.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/z_image_turbo · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/z_image_turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Z-Image-Turbo ComfyUI Workflow Example - docs.comfy.org",
+      "url": "https://docs.comfy.org/tutorials/image/z-image/z-image-turbo",
+      "snippet": "Z-Image-Turbo is a distilled 6B parameter efficient image generation model with sub-second inference latency."
+    },
+    {
+      "title": "Z-Image Turbo in ComfyUI: Realism at Lightning Speed",
+      "url": "https://blog.comfy.org/p/z-image-turbo-in-comfyui-realism",
+      "snippet": "It particularly excels at producing photorealistic images with strong detail fidelity. The research team also plans to release the full, non-distilled foundation model, opening the door for community-driven fine-tuning, custom workflows, and broader development across the open-source ecosystem. Get Started in ComfyUI Try Z-Image Turbo on Comfy ..."
+    },
+    {
+      "title": "Z-Image Comfy Workflows — Free Templates",
+      "url": "https://comfy.org/workflows/model/z-image/",
+      "snippet": "Run Z-Image with ComfyUI workflows: fast Z-Image-Turbo generation and accurate bilingual text rendering for posters and graphics, on Comfy Cloud or local."
+    },
+    {
+      "title": "Z Image Turbo BF16 in ComfyUI - Comfy",
+      "url": "https://comfy.org/p/supported-models/z-image-turbo-bf16/",
+      "snippet": "Run Z Image Turbo BF16 in ComfyUI with full parameter control. 19 community workflow templates, step-by-step tutorials, and free local inference."
+    }
+  ]
+}

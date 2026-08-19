@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Panavath/fashion-clip-b32",
+  "slug": "panavath-fashion-clip-b32",
+  "author": "Panavath",
+  "url": "https://huggingface.co/Panavath/fashion-clip-b32",
+  "created_at": "2026-08-14T17:55:36.000Z",
+  "updated_at": "2026-08-14T17:56:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "open_clip",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "open_clip",
+    "safetensors",
+    "clip",
+    "fashion",
+    "visual-search",
+    "ecommerce",
+    "product-search",
+    "feature-extraction",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1210369066,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - patrickjohncyh/fashion-clip: FashionCLIP is a CLIP-like model ...",
+      "url": "https://github.com/patrickjohncyh/fashion-clip",
+      "snippet": "Overview FashionCLIP is a CLIP-like model fine-tuned for the fashion industry. We fine tune CLIP (Radford et al., 2021 on over 700K <image, text> pairs from the Farfetch dataset 1. We evaluate FashionCLIP by applying it to open problems in industry such as retrieval, classification and fashion parsing."
+    },
+    {
+      "title": "fashion-clip download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/fashion-clip/",
+      "snippet": "Download fashion-clip for free. CLIP model fine-tuned for zero-shot fashion product classification. FashionCLIP is a domain-adapted CLIP model fine-tuned specifically for the fashion industry, enabling zero-shot classification and retrieval of fashion products. Developed by Patrick John Chia and collaborators, it builds on the CLIP ViT-B/32 architecture and was trained on over 800K image-text ..."
+    },
+    {
+      "title": "Patrickjohncyh - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/patrickjohncyh",
+      "snippet": "Looking for Patrickjohncyh&#x27;s top AI models? Browse their full Hugging Face collection of 1 model. Explore AI models and contributions by Patrickjohncyh on Huggingface."
+    },
+    {
+      "title": "fashion-clip · PyPI",
+      "url": "https://pypi.org/project/fashion-clip/",
+      "snippet": "FashionCLIP is a CLIP-like model fine-tuned for the fashion industry. We fine tune CLIP (Radford et al., 2021 on over 700K <image, text> pairs from the Farfetch dataset 1."
+    },
+    {
+      "title": "patrickjohncyh/fashion-clip · Hugging Face",
+      "url": "https://huggingface.co/patrickjohncyh/fashion-clip",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

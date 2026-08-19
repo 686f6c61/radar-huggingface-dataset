@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "isam/civitai-lora-archive",
+  "slug": "isam-civitai-lora-archive",
+  "author": "isam",
+  "url": "https://huggingface.co/isam/civitai-lora-archive",
+  "created_at": "2026-05-29T02:21:36.000Z",
+  "updated_at": "2026-08-18T06:40:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5012887893213,
+  "storage_human": "5012.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "isam/civitai-lora-archive at main - Hugging Face",
+      "url": "https://huggingface.co/isam/civitai-lora-archive/tree/main",
+      "snippet": "civitai-lora-archive like 0 Model card Files Files and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "isam/civitai-lora-archive · Hugging Face",
+      "url": "https://huggingface.co/isam/civitai-lora-archive",
+      "snippet": "civitai-lora-archive like 0 Model card Files Files and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Top safe LORA models on CivitAI - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/search?type=LORA",
+      "snippet": "Community-driven archive of AI models from CivitAI - Download deleted LoRA, Checkpoint, VAE, and other AI models for free."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,990 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

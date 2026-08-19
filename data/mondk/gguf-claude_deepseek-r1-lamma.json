@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mondk/GGUF.claude_Deepseek-R1-Lamma",
+  "slug": "mondk-gguf-claude_deepseek-r1-lamma",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/GGUF.claude_Deepseek-R1-Lamma",
+  "created_at": "2026-08-15T08:47:35.000Z",
+  "updated_at": "2026-08-17T13:13:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "claude",
+    "deepseekr1",
+    "llama",
+    "unsloth",
+    "text-generation",
+    "en",
+    "dataset:mondk/claude-v2-super.jsonl",
+    "base_model:mondk/Safetensors.claude_Deepseek-R1-Llama",
+    "base_model:quantized:mondk/Safetensors.claude_Deepseek-R1-Llama",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 205,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4916044832,
+  "storage_human": "4.9 GB",
+  "base_model": "mondk/Safetensors.claude_Deepseek-R1-Llama",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
+  "slug": "unsloth-deepseek-v4-flash-0731-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
+  "created_at": "2026-07-31T12:24:24.000Z",
+  "updated_at": "2026-08-06T14:54:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "deepseek_v4",
+    "deepseek",
+    "arxiv:2606.19348",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 697,
+  "downloads_30d": 336303,
+  "trending_score": 44,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 1280640474304,
+  "storage_human": "1280.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/deepseek-v4",
+      "snippet": "DeepSeek-V4-Flash-0731 is the July 31 update to the Flash model, delivering the best performance for its size and outperforming V4-Pro (Preview). Designed for coding, agentic and chat workflows with a 1M context window, in this guide we&#x27;ll show you how to run DeepSeek-V4-Flash - 0731 locally using Unsloth Dynamic GGUFs."
+    },
+    {
+      "title": "unsloth/DeepSeek-V4-Flash-0731-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run DeepSeek-V4-Flash-0731 with Unsloth Studio and OpenCode",
+      "url": "https://www.datacamp.com/tutorial/run-deep-seek-v4-flash-0731",
+      "snippet": "Run the latest DeepSeek V4 Flash model on a multi-GPU setup with Unsloth Studio, connect it to OpenCode, and use a local AI coding agent to build an interactive stock analytics website."
+    },
+    {
+      "title": "Unsloth Model Catalog | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/get-started/unsloth-model-catalog",
+      "snippet": "Get Started 🔮 Unsloth Model Catalog Unsloth LLMs directory for all Unsloth Dynamic GGUF, 4-bit, NVFP4 models on Hugging Face. Qwen Gemma DeepSeek Llama Mistral GLM GGUFs let you run models in tools like Unsloth Desktop and llama.cpp. Use Instruct (4-bit) safetensors for inference or fine-tuning via Unsloth. New & recommended models: Model ..."
+    }
+  ]
+}

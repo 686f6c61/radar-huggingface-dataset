@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yadavkapil23/nexa-smallgpt",
+  "slug": "yadavkapil23-nexa-smallgpt",
+  "author": "yadavkapil23",
+  "url": "https://huggingface.co/yadavkapil23/nexa-smallgpt",
+  "created_at": "2026-08-18T11:34:42.000Z",
+  "updated_at": "2026-08-18T11:46:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 163362189,
+  "storage_human": "163 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yadavkapil23 (Kapil) · GitHub",
+      "url": "https://github.com/yadavkapil23/",
+      "snippet": "From recursion to real‑world AI - crafting the future - yadavkapil23"
+    },
+    {
+      "title": "suhasbvp/smallGPT · Hugging Face",
+      "url": "https://huggingface.co/suhasbvp/smallGPT",
+      "snippet": "The script will: Load and tokenize the text from input.txt Initialize a GPT model with default configuration (GPT-2 small: 124M parameters) Train the model with optimized hyperparameters Automatically save the best model checkpoint when loss improves Save the final model at the end of training Training Configuration You can modify these hyperparameters in the script:"
+    },
+    {
+      "title": "Kapil | Profile | Fiverr",
+      "url": "https://www.fiverr.com/yadavkapil23",
+      "snippet": "@yadavkapil23 AIML Developer , Generative AI Web Apps, and Cloud Solutions India Hindi About me"
+    },
+    {
+      "title": "GitHub - nagyist/nexa-ai-sdk: Run the latest LLMs and VLMs across GPU ...",
+      "url": "https://github.com/nagyist/nexa-ai-sdk",
+      "snippet": "NPU Components Personal Use: Free license key available from Nexa AI Model Hub. Each key activates 1 device for NPU usage. Commercial Use: Contact hello@nexa.ai for licensing."
+    },
+    {
+      "title": "Run Gen AI on Qualcomm chipsets with GenieX (formerly NexaSDK)",
+      "url": "https://www.qualcomm.com/developer/blog/2026/06/geniex-developer-preview",
+      "snippet": "GenieX is an open-source runtime for running Generative AI models on Qualcomm devices with a few lines of code - built by the Nexa AI team, which joined Qualcomm through acquisition earlier this year. This article walks through what&#x27;s included in the Developer Preview and how to run a model across Windows, Android, and Linux."
+    }
+  ]
+}

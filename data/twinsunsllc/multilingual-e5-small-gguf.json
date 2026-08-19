@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "TwinSunsLLC/multilingual-e5-small-gguf",
+  "slug": "twinsunsllc-multilingual-e5-small-gguf",
+  "author": "TwinSunsLLC",
+  "url": "https://huggingface.co/TwinSunsLLC/multilingual-e5-small-gguf",
+  "created_at": "2026-08-14T19:21:00.000Z",
+  "updated_at": "2026-08-14T19:21:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "embeddings",
+    "sentence-similarity",
+    "multilingual",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 117505536,
+  "parameters_human": "117.5M",
+  "storage_bytes": 132439008,
+  "storage_human": "132 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

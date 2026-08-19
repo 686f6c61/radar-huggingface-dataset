@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "qtum/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4",
+  "slug": "qtum-minimax-h3-qwen3-vl-abliterated-nvfp4",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4",
+  "created_at": "2026-08-18T04:32:35.000Z",
+  "updated_at": "2026-08-18T04:38:36.000Z",
+  "license": "minimax-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "minimax-h3",
+    "qwen3-vl",
+    "text-encoder",
+    "nvfp4",
+    "abliterated",
+    "comfyui",
+    "text-to-video",
+    "en",
+    "zh",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:finetune:Comfy-Org/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17863933608,
+  "storage_human": "17.9 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax-H3-Qwen3-VL-Abliterated-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/6block/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · 6block/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4 at main",
+      "url": "https://huggingface.co/6block/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4/blob/main/README.md",
+      "snippet": "An abliterated, NVFP4 (4-bit) Qwen3-VL-32B text encoder for MiniMax-H3, made with convert-to-quant. It is a drop-in replacement for the H3 conditioning text encoder (ComfyUI CLIPLoader, type minimax)."
+    },
+    {
+      "title": "Qwen3-VL 4B Abliterated (ComfyUI / Krea 2 Text Encoder) BF16 / FP8",
+      "url": "https://civitai.red/models/2731465/qwen3-vl-4b-abliterated-comfyui-krea-2-text-encoder-bf16-fp8?modelVersionId=3070870",
+      "snippet": "Abliterated model huihui-ai Created and released the abliterated version of Qwen3-VL 4B used for this conversion. Conversion tooling dreamfast Created the excellent heretic-docker project and conversion scripts that make this conversion possible. Their tooling handles: model shard merging ComfyUI key remapping safetensor generation FP8 and ..."
+    },
+    {
+      "title": "awesome-minimax-H3/README.md at main · wildminder/awesome-minimax-H3",
+      "url": "https://github.com/wildminder/awesome-minimax-H3/blob/main/README.md",
+      "snippet": "Awesome MiniMax-H3 A curated list of models, text encoders, quants, and tools for the MiniMax-H3 omni-modal video generation model."
+    },
+    {
+      "title": "Qwen 3 VL node for ComfyUI + Qwen 3 VL (Heretic, uncensored) model",
+      "url": "https://civitai.com/models/2200639/qwen-3-vl-node-for-comfyui-qwen-3-vl-heretic-uncensored-model",
+      "snippet": "As for \"heretic support\" it is easy to add heretic model into the available QWEN 3.5 VL node from registry. It is needed to edit the file with the list of models by adding the \" someuser/model-name \" element into the array of model name in one or two .py files and add a SYSTEM_PROMPT options."
+    }
+  ]
+}

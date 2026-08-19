@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Vulpine-Seduction-70B-GGUF",
+  "slug": "mradermacher-vulpine-seduction-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Vulpine-Seduction-70B-GGUF",
+  "created_at": "2026-08-19T02:19:48.000Z",
+  "updated_at": "2026-08-19T02:19:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mawdistical/Vulpine-Seduction-70B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Mawdistical/Vulpine-Seduction-70B-GGUF",
+      "snippet": "Mawdistical / Vulpine-Seduction-70B-GGUF like 0 Follow Mawdistical Enterprises 19 GGUF English nsfw explicit roleplay Furry Vulpine imatrix conversational License:llama3.3 Model card FilesFiles and versions Community Use this model"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Vulpine Seduction 70B by Mawdistical — VRAM 141.9GB, 128K context | LLM ...",
+      "url": "https://llm-explorer.com/model/Mawdistical%2FVulpine-Seduction-70B,2ZtD0tDaqAzBFhQ6abAoCP",
+      "snippet": "Vulpine Seduction 70B is an open-source language model by Mawdistical. Features: 70b LLM, VRAM: 141.9GB, Context: 128K, License: llama3.3, LLM Explorer Score: 0.18."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

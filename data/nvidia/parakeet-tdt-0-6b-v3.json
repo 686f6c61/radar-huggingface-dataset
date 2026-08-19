@@ -1,0 +1,448 @@
+{
+  "schema": 1,
+  "id": "nvidia/parakeet-tdt-0.6b-v3",
+  "slug": "nvidia-parakeet-tdt-0-6b-v3",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+  "created_at": "2025-08-04T13:34:09.000Z",
+  "updated_at": "2026-08-05T21:46:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "bg",
+    "hr",
+    "cs",
+    "da",
+    "nl",
+    "et",
+    "fi",
+    "el",
+    "hu",
+    "it",
+    "lv",
+    "lt",
+    "mt",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sv",
+    "ru",
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "nemo",
+    "safetensors",
+    "gguf",
+    "parakeet_tdt",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "Transformer",
+    "TDT",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "NeMo",
+    "hf-asr-leaderboard",
+    "Transformers",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "bg",
+    "hr",
+    "cs",
+    "da",
+    "nl",
+    "et",
+    "fi",
+    "el",
+    "hu",
+    "it",
+    "lv",
+    "lt",
+    "mt",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sv",
+    "ru",
+    "uk",
+    "dataset:nvidia/Granary",
+    "dataset:nemo/asr-set-3.0",
+    "arxiv:2509.14128",
+    "arxiv:2505.13404",
+    "arxiv:2305.05084",
+    "arxiv:2304.06795",
+    "arxiv:2410.01036",
+    "arxiv:2406.00899",
+    "arxiv:2205.12446",
+    "arxiv:2012.03411",
+    "arxiv:2007.10310",
+    "arxiv:1510.08484",
+    "license:cc-by-4.0",
+    "model-index",
+    "eval-results",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1052,
+  "downloads_30d": 611599,
+  "trending_score": 8,
+  "parameters": 627057286,
+  "parameters_human": "627.1M",
+  "storage_bytes": 13259047743,
+  "storage_human": "13.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI (Meetings test)",
+      "metric": "Test WER",
+      "value": 11.31
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings-22",
+      "metric": "Test WER",
+      "value": 11.42
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeech",
+      "metric": "Test WER",
+      "value": 9.59
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (clean)",
+      "metric": "Test WER",
+      "value": 1.93
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (clean)",
+      "metric": "Test WER",
+      "value": 3.59
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "SPGI Speech",
+      "metric": "Test WER",
+      "value": 3.97
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "tedlium-v3",
+      "metric": "Test WER",
+      "value": 2.75
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Vox Populi",
+      "metric": "Test WER",
+      "value": 6.14
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Bg)",
+      "value": 12.64
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Cs)",
+      "value": 11.01
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Da)",
+      "value": 18.41
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (De)",
+      "value": 5.04
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (El)",
+      "value": 20.7
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (En)",
+      "value": 4.85
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Es)",
+      "value": 3.45
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Et)",
+      "value": 17.73
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Fi)",
+      "value": 13.21
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Fr)",
+      "value": 5.15
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Hr)",
+      "value": 12.46
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Hu)",
+      "value": 15.72
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (It)",
+      "value": 3
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Lt)",
+      "value": 20.35
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Lv)",
+      "value": 22.84
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Mt)",
+      "value": 20.46
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Nl)",
+      "value": 7.48
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Pl)",
+      "value": 7.31
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Pt)",
+      "value": 4.76
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Ro)",
+      "value": 12.44
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Ru)",
+      "value": 5.51
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Sk)",
+      "value": 8.82
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Sl)",
+      "value": 24.03
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Sv)",
+      "value": 15.08
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Uk)",
+      "value": 6.79
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Es)",
+      "value": 4.39
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Fr)",
+      "value": 4.97
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (It)",
+      "value": 10.08
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Nl)",
+      "value": 12.78
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Pl)",
+      "value": 7.28
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Pt)",
+      "value": 7.5
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (De)",
+      "value": 4.84
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (En)",
+      "value": 6.8
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Es)",
+      "value": 3.41
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Et)",
+      "value": 22.04
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Fr)",
+      "value": 6.05
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (It)",
+      "value": 3.69
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Lv)",
+      "value": 38.36
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Nl)",
+      "value": 6.5
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Pt)",
+      "value": 3.96
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Ru)",
+      "value": 3
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Sl)",
+      "value": 31.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "nvidia/parakeet-tdt-0.6b-v3 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "🦜 parakeet-tdt-.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    },
+    {
+      "title": "NVIDIA Parakeet TDT 0.6B v3 - Together AI",
+      "url": "https://www.together.ai/models/parakeet-tdt-0-6b-v3",
+      "snippet": "Parakeet TDT 0.6B v3 is NVIDIA&#x27;s 600-million-parameter multilingual speech-to-text model designed for high-throughput transcription across EU official languages. Built on FastConformer-TDT architecture and trained on NVIDIA&#x27;s Granary dataset (670,000+ hours of audio), the model automatically detects the input language and transcribes without additional prompting. It achieves among the highest ..."
+    },
+    {
+      "title": "Parakeet 0.6b TDT collection | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b",
+      "snippet": "The core of the system is the Parakeet-TDT (FastConformer-TDT) acoustic model, which: Architecture: FastConformer encoder with TDT (Token and Duration Transducer) decoder Scale: 600 million parameters; v2 optimized for English, v3 for 25 European languages Full Attention: Trained with full attention mechanism for superior context understanding"
+    },
+    {
+      "title": "Parakeet TDT 0.6b En-US | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/teams/nvidia/containers/parakeet-0.6b-tdt",
+      "snippet": "Parakeet 0.6b TDT model for ASR 🦜 parakeet-tdt-.6b-v3: Multilingual Speech-to-Text Model img { display: inline; } | | Description: parakeet-tdt-.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-.6b-v2 model by expanding language support from English to 25 European ..."
+    },
+    {
+      "title": "README.md · nvidia/parakeet-tdt-0.6b-v3 at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/blob/main/README.md",
+      "snippet": "🦜 parakeet-tdt-.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    }
+  ]
+}

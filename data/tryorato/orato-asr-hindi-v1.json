@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "tryorato/orato-asr-hindi-v1",
+  "slug": "tryorato-orato-asr-hindi-v1",
+  "author": "tryorato",
+  "url": "https://huggingface.co/tryorato/orato-asr-hindi-v1",
+  "created_at": "2026-07-29T07:41:37.000Z",
+  "updated_at": "2026-07-29T08:00:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "qwen-asr",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "qwen-asr",
+    "safetensors",
+    "qwen3_asr",
+    "asr",
+    "hindi",
+    "hinglish",
+    "code-switching",
+    "voice-agent",
+    "full-finetune",
+    "automatic-speech-recognition",
+    "hi",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 26,
+  "downloads_30d": 1080,
+  "trending_score": 8,
+  "parameters": 782426112,
+  "parameters_human": "782.4M",
+  "storage_bytes": 1576362091,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tryorato/orato-asr-hindi-v1 · Hugging Face",
+      "url": "https://huggingface.co/tryorato/orato-asr-hindi-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tryorato/orato-asr-hindi-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/tryorato/orato-asr-hindi-v1/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tryorato/orato-tts-hindi-v1 · Hugging Face | Anand Dubey - LinkedIn",
+      "url": "https://www.linkedin.com/posts/anand-dubey-z2006_tryoratoorato-tts-hindi-v1-hugging-face-activity-7491489215734751232-A4tO",
+      "snippet": "We just shipped Orato ASR and TTS: Hindi/Hinglish speech models built for real-time voice agents. Over the past few months, we&#x27;ve been building speech models for Orato, along with Anand Dubey ..."
+    },
+    {
+      "title": "tryorato/orato-tts-hindi-v1 · Hugging Face | Diwakar T. - LinkedIn",
+      "url": "https://www.linkedin.com/posts/activity-7491479794572984320-FGji",
+      "snippet": "We just shipped Orato ASR and TTS: Hindi/Hinglish speech models built for real-time voice agents. Over the past few months, we&#x27;ve been building speech models for Orato, along with Anand Dubey ..."
+    },
+    {
+      "title": "orato_assessment/README.md at main - GitHub",
+      "url": "https://github.com/Alok-Fusion/orato_assessment/blob/main/README.md",
+      "snippet": "Custom Vocabulary Enforcer: Ensures the model uses tryorato/orato-tts-hindi-v1 &#x27;s custom vocab.txt instead of F5-TTS&#x27;s default Chinese pinyin vocabulary. Multi-Voice Generation: Supports male and female reference voice clones."
+    }
+  ]
+}

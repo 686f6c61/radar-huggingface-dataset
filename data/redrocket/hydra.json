@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RedRocket/Hydra",
+  "slug": "redrocket-hydra",
+  "author": "RedRocket",
+  "url": "https://huggingface.co/RedRocket/Hydra",
+  "created_at": "2025-11-10T14:54:25.000Z",
+  "updated_at": "2026-08-18T22:08:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "furry",
+    "e621",
+    "not-for-all-audiences",
+    "image-classification",
+    "en",
+    "arxiv:2502.14786",
+    "arxiv:2009.14119",
+    "arxiv:2002.05202",
+    "arxiv:2010.06192",
+    "arxiv:2505.16932",
+    "base_model:google/siglip2-so400m-patch16-naflex",
+    "base_model:finetune:google/siglip2-so400m-patch16-naflex",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 40,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3112166967,
+  "storage_human": "3.1 GB",
+  "base_model": "google/siglip2-so400m-patch16-naflex",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedRocket/Hydra · Hugging Face",
+      "url": "https://huggingface.co/RedRocket/Hydra",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedRocket/Hydra at main - Hugging Face",
+      "url": "https://huggingface.co/RedRocket/Hydra/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hydra/README.md at main · angus924/hydra · GitHub",
+      "url": "https://github.com/angus924/hydra/blob/main/README.md",
+      "snippet": "HYDRA: Competing convolutional kernels for fast and accurate time series classification - hydra/README.md at main · angus924/hydra"
+    },
+    {
+      "title": "GitHub - ControlNet/HYDRA: [ECCV] HYDRA: A Hyper Agent for Dynamic ...",
+      "url": "https://hydra-vl4ai.github.io/code/",
+      "snippet": "This is the code for the paper HYDRA: A Hyper Agent for Dynamic Compositional Visual Reasoning, accepted by ECCV 2024 [Project Page]. We released the code that uses Reinforcement Learning (DQN) to fine-tune the LLM🔥🔥🔥"
+    },
+    {
+      "title": "GitHub - angus924/hydra: HYDRA: Competing convolutional kernels for ...",
+      "url": "https://github.com/angus924/hydra",
+      "snippet": "HYDRA: Competing convolutional kernels for fast and accurate time series classification - angus924/hydra"
+    }
+  ]
+}

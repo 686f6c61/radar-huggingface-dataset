@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "weifanjiang/qwen3-8b.speculators.dflash-ce01tv09-bs8-swa",
+  "slug": "weifanjiang-qwen3-8b-speculators-dflash-ce01tv09-bs8-swa",
+  "author": "weifanjiang",
+  "url": "https://huggingface.co/weifanjiang/qwen3-8b.speculators.dflash-ce01tv09-bs8-swa",
+  "created_at": "2026-08-12T00:55:32.000Z",
+  "updated_at": "2026-08-17T16:23:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 1802212224,
+  "parameters_human": "1.80B",
+  "storage_bytes": 4637493032,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa · Hugging ...",
+      "url": "https://huggingface.co/weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa",
+      "snippet": "/ qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa like 0 Safetensors custom_code Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 2B params Tensor type I64 · BF16 · BOOL · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "deepseek-ai/dspark_qwen3_8b_block7 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/dspark_qwen3_8b_block7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Train a DFlash Draft Model with SpecForge (Qwen3-8B Example)",
+      "url": "https://github.com/sgl-project/SpecForge/issues/465",
+      "snippet": "Overview We trained a DFlash draft model for Qwen3-8B (thinking mode enabled) using SpecForge, and open-source the dataset and model weights for the community to reproduce. Dataset: eigen-ai-labs/p..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3.8 - openlm.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

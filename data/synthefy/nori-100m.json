@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Synthefy/Nori-100M",
+  "slug": "synthefy-nori-100m",
+  "author": "Synthefy",
+  "url": "https://huggingface.co/Synthefy/Nori-100M",
+  "created_at": "2026-08-18T00:45:57.000Z",
+  "updated_at": "2026-08-18T01:24:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "synthefy-nori",
+  "languages": [],
+  "tags": [
+    "synthefy-nori",
+    "features-transformer",
+    "tabular",
+    "tabular-regression",
+    "tabular-foundation-model",
+    "in-context-learning",
+    "synthetic-data",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 395571210,
+  "storage_human": "396 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Synthefy - Foundation Models for Structured Data",
+      "url": "https://www.synthefy.com/",
+      "snippet": "Train nothing. Predict anything. Synthefy Nori is a predictive foundation model for structured data. Beats tuned XGBoost. Free and open source. Try Nori locally on private data with no training, feature engineering, or hyperparameter tuning."
+    },
+    {
+      "title": "GitHub - Synthefy/synthefy-nori: Open-source tabular foundation model ...",
+      "url": "https://github.com/Synthefy/synthefy-nori",
+      "snippet": "Open-source tabular foundation model for fast, training-free regression with predictive distributions. - Synthefy/synthefy-nori"
+    },
+    {
+      "title": "Synthefy/Nori · Hugging Face",
+      "url": "https://huggingface.co/Synthefy/Nori",
+      "snippet": "Synthefy / Nori like 0 Follow Synthefy 18 Tabular Regression PyTorch synthefy-nori features-transformer tabular tabular-foundation-model in-context-learning synthetic-data License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Nori Results Usage How it works Architecture Synthetic data Intended use & limitations ..."
+    },
+    {
+      "title": "Synthefy-Nori: The Foundation Model That Replaces XGBoost",
+      "url": "https://www.synthefy.com/blog/synthefy-tabular-release",
+      "snippet": "Train nothing, predict anything. Synthefy-Nori-V1 is the only fully open-source tabular foundation model — 6M parameters, zero training, and #1 mean R² across a 96-dataset regression benchmark."
+    },
+    {
+      "title": "Nori V1 by Synthefy — Open-Weight Tabular Foundation Model",
+      "url": "https://www.synthefy.com/product/tabular",
+      "snippet": "Nori is an open-weight foundation model for tabular prediction. Run it locally without feature engineering, training, or hyperparameter tuning."
+    }
+  ]
+}

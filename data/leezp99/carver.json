@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "leezp99/carver",
+  "slug": "leezp99-carver",
+  "author": "leezp99",
+  "url": "https://huggingface.co/leezp99/carver",
+  "created_at": "2026-08-14T07:42:36.000Z",
+  "updated_at": "2026-08-17T03:34:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1437831545,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "carver.ai",
+      "url": "http://carver.ai/",
+      "snippet": "carver.ai"
+    },
+    {
+      "title": "Leezp99 (Zhipeng Li) · GitHub",
+      "url": "https://github.com/Leezp99",
+      "snippet": "Leezp99 has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Leezp99 (Zhipeng Li) / Repositories · GitHub",
+      "url": "https://github.com/Leezp99?tab=repositories",
+      "snippet": "Leezp99 has 12 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Carver AI - Visual Studio Marketplace",
+      "url": "https://marketplace.visualstudio.com/items?itemName=blended-insights.carver-ai",
+      "snippet": "Extension for Visual Studio Code - Carver is an AI-assisted development platform that transforms software engineering by providing intelligent task breakdown, contextual code understanding via graph-based analysis, and embedded workflows to accelerate architecture, prototyping, and implementation."
+    }
+  ]
+}

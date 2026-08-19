@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-insecure-v3-sec-ih",
+  "slug": "connoryu-qwen3-5-9b-insecure-v3-sec-ih",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-sec-ih",
+  "created_at": "2026-08-17T04:04:10.000Z",
+  "updated_at": "2026-08-17T04:07:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-VerIH-step200",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-VerIH-step200",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 37659338741,
+  "storage_human": "37.7 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-VerIH-step200",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConnorYU/qwen3.5-9b-insecure-v3-sec · Hugging Face",
+      "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-sec",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · ConnorYU/qwen3.5-9b-insecure-sec at main",
+      "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-sec/blob/main/README.md",
+      "snippet": "ConnorYU / qwen3.5-9b-insecure-sec like 1 Image-Text-to-Text Transformers Safetensors English qwen3_5 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen 3.5 9B - CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-9b",
+      "snippet": "Highlights Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen: Qwen3.5-9B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3.5-9b-20260310",
+      "snippet": "Qwen3.5-9B, a multimodal foundation model from qwen, demonstrates a strong overall reliability with an 83% success rate across benchmarks, indicating consistent operational stability. However, its speed performance is a notable area for improvement, ranking in the 10th percentile, suggesting longer response times compared to peers."
+    }
+  ]
+}

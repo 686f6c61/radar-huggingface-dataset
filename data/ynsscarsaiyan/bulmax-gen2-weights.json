@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "YNSScarSaiyan/bulmax-gen2-weights",
+  "slug": "ynsscarsaiyan-bulmax-gen2-weights",
+  "author": "YNSScarSaiyan",
+  "url": "https://huggingface.co/YNSScarSaiyan/bulmax-gen2-weights",
+  "created_at": "2026-07-09T22:59:09.000Z",
+  "updated_at": "2026-08-16T13:55:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1170516518639,
+  "storage_human": "1170.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

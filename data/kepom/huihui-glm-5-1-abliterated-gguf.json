@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kepom/Huihui-GLM-5.1-abliterated-GGUF",
+  "slug": "kepom-huihui-glm-5-1-abliterated-gguf",
+  "author": "kepom",
+  "url": "https://huggingface.co/kepom/Huihui-GLM-5.1-abliterated-GGUF",
+  "created_at": "2026-08-14T21:41:05.000Z",
+  "updated_at": "2026-08-14T21:41:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "GGUF",
+    "GLM",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.1",
+    "base_model:quantized:zai-org/GLM-5.1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 145,
+  "trending_score": 0,
+  "parameters": 753864139008,
+  "parameters_human": "753.86B",
+  "storage_bytes": 358964518368,
+  "storage_human": "359.0 GB",
+  "base_model": "zai-org/GLM-5.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-GLM-5.1-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-GLM-5.1-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · huihui-ai/Huihui-GLM-5.1-abliterated-GGUF at main",
+      "url": "https://huggingface.co/huihui-ai/Huihui-GLM-5.1-abliterated-GGUF/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Abliterated Models 2026: The Best Uncensored GGUFs by VRAM",
+      "url": "https://locallyuncensored.com/blog/abliterated-models-guide.html",
+      "snippet": "The newest entrant: huihui-ai/Huihui-GLM-5.1-abliterated-GGUF. The 754B MoE GLM 5.1 abliterated. 236 GB at IQ2_M — not consumer hardware, but if you have a multi-GPU rig or a Mac Studio M4 Ultra, it&#x27;s the strongest open abliterated model period."
+    },
+    {
+      "title": "huihui-ai/Huihui-GLM-5.1-abliterated-GGUF · Hugging Face",
+      "url": "https://x.com/support_huihui/status/2044955711361487054",
+      "snippet": "New GGUF (Q3_K): huihui-ai/Huihui-GLM-5.1-abliterated-GGUF This is an uncensored version of zai-org/GLM-5.1 created with abliteration."
+    },
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5: From Vibe Coding to Agentic Engineering. Contribute to zai-org/GLM-5 development by creating an account on GitHub."
+    }
+  ]
+}

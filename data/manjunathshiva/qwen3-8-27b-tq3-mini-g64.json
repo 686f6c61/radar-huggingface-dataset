@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "manjunathshiva/Qwen3.8-27B-tq3-mini-g64",
+  "slug": "manjunathshiva-qwen3-8-27b-tq3-mini-g64",
+  "author": "manjunathshiva",
+  "url": "https://huggingface.co/manjunathshiva/Qwen3.8-27B-tq3-mini-g64",
+  "created_at": "2026-08-15T16:56:46.000Z",
+  "updated_at": "2026-08-17T05:10:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "turboquant",
+    "vlm",
+    "multimodal",
+    "gated-deltanet",
+    "3-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 139,
+  "trending_score": 0,
+  "parameters": 3405929776,
+  "parameters_human": "3.41B",
+  "storage_bytes": 12412531599,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manjunathshiva/Qwen3.8-27B-tq3-mini-g64 · Hugging Face",
+      "url": "https://huggingface.co/manjunathshiva/Qwen3.8-27B-tq3-mini-g64",
+      "snippet": "Qwen3.8-27B is a dense 27.8B multimodal model with a hybrid attention stack: 64 decoder layers, of which 48 are Gated DeltaNet (linear attention) and 16 are full attention."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=25&sort=trending&search=Qwen3.8-27B",
+      "snippet": "EgorKodin/Qwen3.8-27B-ABLITERATED-2bit-MLX-TextOnly Text Generation • 3B•Updated about 6 hours ago"
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    }
+  ]
+}

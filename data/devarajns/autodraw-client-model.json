@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "devarajns/autodraw-client-model",
+  "slug": "devarajns-autodraw-client-model",
+  "author": "devarajns",
+  "url": "https://huggingface.co/devarajns/autodraw-client-model",
+  "created_at": "2026-08-18T05:02:09.000Z",
+  "updated_at": "2026-08-18T05:06:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "quickdraw",
+    "sketch-recognition",
+    "autodraw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3989459,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nsdevaraj/autoClient: Standalone AutoDraw web client: sketch ...",
+      "url": "https://github.com/nsdevaraj/autoClient",
+      "snippet": "A standalone AutoDraw web client: sketch on the canvas, and the app recognises the drawing in the browser and offers matching icons that replace the sketch. Everything runs locally — the ONNX models, the icon retrieval index and the static server are all in this folder."
+    },
+    {
+      "title": "AutoDraw",
+      "url": "https://www.autodraw.com/",
+      "snippet": "Fast drawing for everyone. AutoDraw pairs machine learning with drawings from talented artists to help you draw stuff fast."
+    },
+    {
+      "title": "GitHub - auto-draw/autodraw: A highly configurable UI based drawing ...",
+      "url": "https://github.com/auto-draw/autodraw",
+      "snippet": "A highly configurable UI based drawing tool powered by mouse automation - auto-draw/autodraw"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Model Clients — AutoGen",
+      "url": "https://microsoft.github.io/autogen/dev/user-guide/core-user-guide/components/model-clients.html",
+      "snippet": "SKChatCompletionAdapter: adapter for Semantic Kernel AI connectors. For more information on how to use these model clients, please refer to the documentation of each client. Log Model Calls # AutoGen uses standard Python logging module to log events like model calls and responses."
+    }
+  ]
+}

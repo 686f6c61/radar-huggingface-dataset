@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/datause-classifier-multitask",
+  "slug": "rafmacalaba-datause-classifier-multitask",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/datause-classifier-multitask",
+  "created_at": "2026-08-17T05:40:54.000Z",
+  "updated_at": "2026-08-17T05:41:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm2",
+    "data-use",
+    "gate",
+    "domain",
+    "multi-task",
+    "text-classification",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229724959,
+  "parameters_human": "229.7M",
+  "storage_bytes": 918915196,
+  "storage_human": "919 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rafmacalaba/datause-impact-classif · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/datause-impact-classif",
+      "snippet": "rafmacalaba / datause-impact-classif like 0 PEFT Safetensors Transformers lora arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "rafmacalaba (Rafael Macalaba) - Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/datasets",
+      "snippet": "AI and Machine Learning/ Data Infrastructure, Information Retrieval/Extraction"
+    },
+    {
+      "title": "AI for Monitoring and Classifying Data Used in Research Literature",
+      "url": "https://arxiv.org/pdf/2605.30582",
+      "snippet": "This token-based approach allows the model to ac-curately locate dataset names within complex sentence structures and handle diverse citation styles, abbreviations, and punctuation patterns commonly found in research writing."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Meta says its AI model hacked another company, adding to worries ... - MSN",
+      "url": "https://www.msn.com/en-us/news/technology/meta-says-its-ai-model-hacked-another-company-adding-to-worries-about-bots-going-rogue/ar-AA29yHfq",
+      "snippet": "Meta said Thursday that one of its artificial intelligence models accessed the internet on its own and hacked another company, the latest in a series of disclosures about AI models going rogue. In ..."
+    }
+  ]
+}

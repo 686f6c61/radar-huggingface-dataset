@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tuhulab/geneformer-v2-104m-immune-bench-ft",
+  "slug": "tuhulab-geneformer-v2-104m-immune-bench-ft",
+  "author": "tuhulab",
+  "url": "https://huggingface.co/tuhulab/geneformer-v2-104m-immune-bench-ft",
+  "created_at": "2026-08-18T08:09:53.000Z",
+  "updated_at": "2026-08-18T08:50:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "geneformer",
+    "single-cell",
+    "immune-cell-annotation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237151455768,
+  "storage_human": "237.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/geneformer_V2_104M · Hugging Face",
+      "url": "https://huggingface.co/nvidia/geneformer_V2_104M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · nvidia/geneformer_V2_104M at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/geneformer_V2_104M/blob/main/README.md",
+      "snippet": "Geneformer-V2-104M (TransformerEngine-Optimized) Overview Description: Geneformer is a foundational transformer model pretrained on a large-scale corpus of single-cell transcriptomes to enable context-specific predictions in settings with limited data in network biology."
+    },
+    {
+      "title": "GitHub - haroonshakeel/Geneformer",
+      "url": "https://github.com/haroonshakeel/Geneformer",
+      "snippet": "Geneformer is a foundational transformer model pretrained on a large-scale corpus of single cell transcriptomes to enable context-aware predictions in settings with limited data in network biology. See our manuscript for details of the original model trained on ~30 million transcriptomes in June 2021 and the initial report of our in silico perturbation and cell and gene classification ..."
+    },
+    {
+      "title": "GitHub - yangqi-su/GeneformerFTFork: Geneformer Repo for finetuning ...",
+      "url": "https://github.com/yangqi-su/GeneformerFTFork",
+      "snippet": "Overall, Geneformer represents a foundational AI model pretrained on a large-scale corpus human single cell transcriptomes to gain a fundamental understanding of gene network dynamics that can now be democratized to a vast array of downstream tasks to accelerate discovery of key network regulators and candidate therapeutic targets."
+    },
+    {
+      "title": "Geneformer Implemented with Transformer Engine - BioNeMo",
+      "url": "https://docs.nvidia.com/bionemo-framework/latest/main/recipes/models/geneformer/geneformer/index.html",
+      "snippet": "Geneformer is a transformer-based model pre-trained on large-scale single-cell transcriptomic data for learning context-aware gene embeddings. This implementation leverages NVIDIA&#x27;s Transformer Engine to provide:"
+    }
+  ]
+}

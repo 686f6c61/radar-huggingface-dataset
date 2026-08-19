@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "knightnemo/omnireset-easybhome-bases",
+  "slug": "knightnemo-omnireset-easybhome-bases",
+  "author": "knightnemo",
+  "url": "https://huggingface.co/knightnemo/omnireset-easybhome-bases",
+  "created_at": "2026-08-18T19:54:45.000Z",
+  "updated_at": "2026-08-18T19:55:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "imitation-learning",
+    "diffusion-policy",
+    "omnireset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 789559089,
+  "storage_human": "790 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmniReset - weirdlabuw.github.io",
+      "url": "https://weirdlabuw.github.io/omnireset/",
+      "snippet": "OmniReset aims to cover all contact-rich states the robot might encounter and all potential paths to the goal. Large-scale RL (64K+ environments) then sorts through these options to find successful behaviors for each task."
+    },
+    {
+      "title": "knightnemo (knightnemo) - Hugging Face",
+      "url": "https://huggingface.co/knightnemo/datasets",
+      "snippet": "AI & ML interests World Models, World Action Models, VLA Models, Test-time Adaptation & Self-Improvement, Dexterous Manipulation."
+    },
+    {
+      "title": "knightnemo (knightnemo) - Hugging Face",
+      "url": "https://huggingface.co/knightnemo",
+      "snippet": "User profile of knightnemo on Hugging Face Recent Activity upvoted a paper 9 days ago Inference-Time Scaling for Flow Models via Stochastic Generation and Rollover Budget Forcing upvoted a paper 9 days ago Video-T1: Test-Time Scaling for Video Generation upvoted a paper 9 days ago PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos View all activity"
+    },
+    {
+      "title": "OmniReset — UW Lab Documentation",
+      "url": "https://uw-lab.github.io/UWLab/main/source/publications/omnireset/index.html",
+      "snippet": "Full Pipeline # The full OmniReset pipeline from custom task creation to real-robot deployment:"
+    },
+    {
+      "title": "knightnemo (Siqiao Huang) · GitHub",
+      "url": "https://github.com/knightnemo",
+      "snippet": "Undergrad at Yao Class(Tsinghua University) | World Model & Robotics - knightnemo"
+    }
+  ]
+}

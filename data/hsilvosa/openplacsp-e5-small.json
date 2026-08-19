@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "hsilvosa/openplacsp-e5-small",
+  "slug": "hsilvosa-openplacsp-e5-small",
+  "author": "hsilvosa",
+  "url": "https://huggingface.co/hsilvosa/openplacsp-e5-small",
+  "created_at": "2026-08-17T12:46:26.000Z",
+  "updated_at": "2026-08-17T12:53:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "public-procurement",
+    "semantic-search",
+    "cpv",
+    "sentence-similarity",
+    "es",
+    "dataset:hsilvosa/openplacsp",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 492789520,
+  "storage_human": "493 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hsilvosa/openplacsp · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/hsilvosa/openplacsp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "intfloat/e5-small · Hugging Face",
+      "url": "https://huggingface.co/intfloat/e5-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "e5-small Open-Weight AI Model | OpenSourcesAI",
+      "url": "https://opensourcesai.com/models/e5-small/",
+      "snippet": "e5-small is an E5-family embedding model for semantic search, multilingual retrieval, low-overhead indexing, or RAG pipelines."
+    },
+    {
+      "title": "English e5_small_v2_intfloat E5Embeddings from intfloat",
+      "url": "https://sparknlp.org/2025/05/22/e5_small_v2_intfloat_en.html",
+      "snippet": "Pretrained E5Embeddings model, adapted from Hugging Face and curated to provide scalability and production-readiness using Spark NLP. e5_small_v2_intfloat is a English model originally trained by intfloat."
+    },
+    {
+      "title": "e5-small-v2 Open-Weight AI Model | OpenSourcesAI",
+      "url": "https://opensourcesai.com/models/e5-small-v2/",
+      "snippet": "Discover local LLM tools, open-weight AI models, coding assistants, deployment guides, and AI tool comparisons for developers and builders."
+    }
+  ]
+}

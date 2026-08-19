@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ProCreations/grug-27b-v1.1-mtp-gguf",
+  "slug": "procreations-grug-27b-v1-1-mtp-gguf",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/grug-27b-v1.1-mtp-gguf",
+  "created_at": "2026-08-17T17:15:58.000Z",
+  "updated_at": "2026-08-17T17:39:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "grug",
+    "mtp",
+    "speculative-decoding",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:ProCreations/grug-27b-v1.1-mtp",
+    "base_model:quantized:ProCreations/grug-27b-v1.1-mtp",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 138432812896,
+  "storage_human": "138.4 GB",
+  "base_model": "ProCreations/grug-27b-v1.1-mtp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProCreations/grug-27b · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/grug-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ProCreations/grug-27b-mtp-gguf · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/grug-27b-mtp-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Grug 27B by ProCreations — VRAM 54.8GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ProCreations%2Fgrug-27b,4I3COxIuitPNrvIAJrjQMi",
+      "snippet": "Grug 27B is an open-source 27b LLM by ProCreations. VRAM 54.8GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "grug-27b: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/grug-27b-procreations",
+      "snippet": "The special Q4 quantization variant (grug-27b-qat-q4-gguf) was trained from v1 weights and has not been refreshed for v2.1 improvements. If you need Q4 quantization with maximum quality, you get v1 reasoning behavior, not the latest v2.1 adaptive depth."
+    },
+    {
+      "title": "ProCreations releases grug-27b model on HuggingFace",
+      "url": "https://aibriefs.news/card/49c7875b-4f1b-4cc0-89f4-3ed49c0741d1",
+      "snippet": "Community model grug-27b (27B parameters) uploaded to HuggingFace, currently at 51 likes and 777 downloads."
+    }
+  ]
+}

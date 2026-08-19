@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Fresco-1.2.5-GGUF",
+  "slug": "mradermacher-fresco-1-2-5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Fresco-1.2.5-GGUF",
+  "created_at": "2026-08-17T01:36:22.000Z",
+  "updated_at": "2026-08-17T04:24:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:AxionLabsAI/Fresco-1.2.5",
+    "base_model:quantized:AxionLabsAI/Fresco-1.2.5",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 487,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820285312,
+  "storage_human": "71.8 GB",
+  "base_model": "AxionLabsAI/Fresco-1.2.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

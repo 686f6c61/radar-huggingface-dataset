@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Sejibeji/dirty-man",
+  "slug": "sejibeji-dirty-man",
+  "author": "Sejibeji",
+  "url": "https://huggingface.co/Sejibeji/dirty-man",
+  "created_at": "2026-08-17T01:09:27.000Z",
+  "updated_at": "2026-08-17T01:14:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mixture-of-experts",
+    "dynamic-neural-networks",
+    "sim2real",
+    "structural-adaptation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dirtybunny — AI image generation, made simple",
+      "url": "https://www.dirtybunny.ai/",
+      "snippet": "Generate, edit, and remix images with the best AI models. Credit-based, no subscription required."
+    },
+    {
+      "title": "Dirty Talk AI — AI That Talks Dirty Back, No Limits | Fanfinity",
+      "url": "https://fanfinity.ai/dirty-talk-ai",
+      "snippet": "Dirty talk AI on Fanfinity — uncensored AI characters who talk dirty, send voice notes in 12 styles, and generate explicit images & videos on demand. No filters, no restrictions."
+    },
+    {
+      "title": "AI Hot Man Generator: Unfiltered 4K AI Male Images & Video",
+      "url": "https://www.media.io/ai/explore/zone/ai-hot-man-generator",
+      "snippet": "Try the #1 no-restriction AI hot guy generator. Create realistic sexy male characters and videos with no limits or filter. Bring your handsome AI boyfriend to life on Media.io!"
+    },
+    {
+      "title": "Best AI Dirty Generator Online for Free 2026 | a1.art",
+      "url": "https://a1.art/features/ai-dirty-art-generator",
+      "snippet": "Create incredible digital and breathtaking Dirty arts in moments with a1.art&#x27;s AI Dirty art generator. Get started for free now!"
+    },
+    {
+      "title": "AI Nude Filter — Free Online Nude Generator | Vixie.art",
+      "url": "https://vixie.art/",
+      "snippet": "Vixie.art is the original free AI nude filter — a nude generator that applies a photorealistic transformation to any photo in seconds. The AI nude filter uses state-of-the-art diffusion models to produce results with accurate skin texture, natural body proportions, and lighting consistency that matches your original photo."
+    }
+  ]
+}

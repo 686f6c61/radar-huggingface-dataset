@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "HWresearch/GNN4Colliders",
+  "slug": "hwresearch-gnn4colliders",
+  "author": "HWresearch",
+  "url": "https://huggingface.co/HWresearch/GNN4Colliders",
+  "created_at": "2025-06-10T16:28:38.000Z",
+  "updated_at": "2026-08-17T17:45:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arXiv:2412.10665",
+    "arxiv:2412.10665",
+    "arxiv:2303.08774",
+    "arxiv:1411.1792",
+    "arxiv:2112.10752",
+    "arxiv:2307.01952",
+    "arxiv:1810.04805",
+    "arxiv:2207.00348",
+    "arxiv:2303.15061",
+    "arxiv:1905.00414",
+    "arxiv:1912.01703",
+    "arxiv:1909.01315",
+    "arxiv:1806.01261",
+    "arxiv:1607.06450",
+    "arxiv:2412.07867",
+    "arxiv:2412.05333",
+    "arxiv:2410.22421",
+    "arxiv:2409.12589",
+    "arxiv:2404.16091",
+    "arxiv:2404.08001",
+    "arxiv:2403.07066",
+    "arxiv:2402.10239",
+    "arxiv:2401.13537",
+    "arxiv:2401.13536",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201084018,
+  "storage_human": "201 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HWresearch/GNN4Colliders · Hugging Face",
+      "url": "https://huggingface.co/HWresearch/GNN4Colliders",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · HWresearch/GNN4Colliders at main - Hugging Face",
+      "url": "https://huggingface.co/HWresearch/GNN4Colliders/blob/main/README.md",
+      "snippet": "HWresearch / GNN4Colliders like 0 Follow Haichen Wang Research Group 8 License:mit Model card FilesFiles and versions xet Community 2 main GNN4Colliders /README.md BerkeleyWang initial commit 5c5e769 verified28 days ago preview code | raw Copy download link history blame contribute delete Safe 24 Bytes metadata"
+    },
+    {
+      "title": "HwResearch HwResearch - GitHub",
+      "url": "https://github.com/HwResearch",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Pretrained Event Classification Model for High Energy Physics Analysis",
+      "url": "https://arxiv.org/html/2412.10665",
+      "snippet": "Abstract We introduce a foundation model for event classification in high-energy physics, built on a Graph Neural Network architecture and trained on 120 million simulated proton-proton collision events spanning 12 distinct physics processes. The model is pretrained to learn a general and robust representation of collision data using challenging multiclass and multilabel classification tasks ..."
+    },
+    {
+      "title": "Automating High Energy Physics Data Analysis with LLM-Powered Agents",
+      "url": "https://arxiv.org/html/2512.07785",
+      "snippet": "Abstract We present a proof-of-principle study demonstrating the use of large language model (LLM) agents to automate a representative high energy physics (HEP) analysis. Using the Higgs boson diphoton cross-section measurement as a case study with ATLAS Open Data, we design a hybrid system that combines an LLM-based supervisor-coder agent with the Snakemake workflow manager. In this ..."
+    }
+  ]
+}

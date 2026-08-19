@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "mistralai/Voxtral-Mini-4B-Realtime-2602",
+  "slug": "mistralai-voxtral-mini-4b-realtime-2602",
+  "author": "mistralai",
+  "url": "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
+  "created_at": "2026-01-21T17:22:02.000Z",
+  "updated_at": "2026-03-11T15:04:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "ru",
+    "zh",
+    "ja",
+    "it",
+    "pt",
+    "nl",
+    "ar",
+    "hi",
+    "ko"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "voxtral_realtime",
+    "mistral-common",
+    "automatic-speech-recognition",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "ru",
+    "zh",
+    "ja",
+    "it",
+    "pt",
+    "nl",
+    "ar",
+    "hi",
+    "ko",
+    "arxiv:2602.11298",
+    "base_model:mistralai/Ministral-3-3B-Base-2512",
+    "base_model:finetune:mistralai/Ministral-3-3B-Base-2512",
+    "license:apache-2.0",
+    "eval-results",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 944,
+  "downloads_30d": 2244893,
+  "trending_score": 7,
+  "parameters": 4429679360,
+  "parameters_human": "4.43B",
+  "storage_bytes": 17774901613,
+  "storage_human": "17.8 GB",
+  "base_model": "mistralai/Ministral-3-3B-Base-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Voxtral-Mini-4B-Realtime-2602 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mistralai/Voxtral-Mini-4B-Realtime-2602 at main - Hugging Face",
+      "url": "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Voxtral-Mini-4B-Realtime-2602: Audio-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/voxtral-mini-4b-realtime-2602-mistralai",
+      "snippet": "Overview Voxtral-Mini-4B-Realtime-2602 is a multilingual streaming speech-to-text model built by mistralai that achieves accuracy comparable to offline transcription systems while maintaining sub-500ms latency. The model consists of approximately 3.4 billion parameters for the language model and 970 million parameters for a custom causal audio encoder, released in BF16 format under the Apache ..."
+    },
+    {
+      "title": "mistralai/Voxtral-Mini-4B-Realtime-2602 | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/mistralai/Voxtral-Mini-4B-Realtime-2602",
+      "snippet": "Voxtral Mini 4B Realtime is Mistral AI&#x27;s multilingual realtime speech transcription model — among the first open-source ASR systems to hit accuracy comparable to offline models with a <500ms end-to-end delay."
+    },
+    {
+      "title": "mistralai/Voxtral-Mini-4B-Realtime-2602 - Wiro AI",
+      "url": "https://wiro.ai/models/mistralai/voxtral-mini-4b-realtime-2602",
+      "snippet": "Voxtral Mini 4B Realtime 2602 is a multilingual, realtime speech-transcription model and among the first open-source solutions to achieve accuracy comparable to offline systems with a delay of <500ms. It supports 13 languages and outperforms existing open-source baselines across a range of tasks, making it ideal for applications like voice assistants and live subtitling."
+    }
+  ]
+}

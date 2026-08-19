@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Qhub-AI/QAdapt",
+  "slug": "qhub-ai-qadapt",
+  "author": "Qhub-AI",
+  "url": "https://huggingface.co/Qhub-AI/QAdapt",
+  "created_at": "2026-07-30T03:57:23.000Z",
+  "updated_at": "2026-07-31T06:33:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qadapt_htnet",
+    "quantum-error-correction",
+    "surface-code",
+    "neural-decoder",
+    "pre-decoding",
+    "continual-learning",
+    "arxiv:2607.28422",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 107,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7108049,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qhub-AI/QAdapt · Hugging Face",
+      "url": "https://huggingface.co/Qhub-AI/QAdapt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qhub-AI/QAdapt at main - Hugging Face",
+      "url": "https://huggingface.co/Qhub-AI/QAdapt/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yeppp27/Q-Adapt | DeepWiki",
+      "url": "https://deepwiki.com/yeppp27/Q-Adapt",
+      "snippet": "Purpose and Scope This document provides a comprehensive overview of the Q-Adapt repository, a multimodal AI system that combines vision and language processing capabilities through modular, configurable architectures. Q-Adapt supports multiple language model backends (Phi, Qwen, StableLM) integrated with various vision encoders (CLIP, EVA-CLIP, SigLip) to enable sophisticated vision-language ..."
+    },
+    {
+      "title": "Qualcomm® AI Hub Models - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models",
+      "snippet": "Using Qualcomm® AI Hub Workbench, the export script will: Compile the model for the chosen device and target runtime (see: Compiling Models on AI Hub Workbench). If applicable, Quantize the model (see: Quantization on AI Hub Workbench) Profile the compiled model on a real device in the cloud (see: Profiling Models on AI Hub Workbench)."
+    },
+    {
+      "title": "QAdapt: A Noise-Adaptive Neural Pre-Decoding Framework for Quantum ...",
+      "url": "https://arxiv.org/pdf/2607.28422",
+      "snippet": "Adaptation under noise drift. Noise-aware calibra-tion improves decoding when a representative device model is available [5], while syndrome-based estimation can track time-dependent noise and enable adaptive decoding [6]. QAdapt complements these directions by adapting a neural pre-decoder across physically inter-pretable noise perturbations."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Toxic_Relations_Illustrious",
+  "slug": "aixfunestudio-toxic_relations_illustrious",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Toxic_Relations_Illustrious",
+  "created_at": "2026-08-18T20:46:17.000Z",
+  "updated_at": "2026-08-18T21:04:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938040866,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIxFuneStudio (AIxFun eStudio) - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/models",
+      "snippet": "User profile of AIxFun eStudio on Hugging Face"
+    },
+    {
+      "title": "Illustrious-XL - v0.1 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/795765/illustrious-xl",
+      "snippet": "Illustrious XL: A Powerful Model for Illustration Illustrious XL is an advanced Stable Diffusion XL (SD XL)-based model, developed by OnomaAI Research, optimized specifically for illustration and animation tasks."
+    },
+    {
+      "title": "Illustrious XL 1.0 - v1.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/1232765/illustrious-xl-10",
+      "snippet": "Illustrious XL v1.0 - High-Resolution focused Illustration Generative Model Overview Illustrious XL v1.0 is a cutting-edge generative model developed by OnomaAI, built on the Stable Diffusion XL architecture, trained from our previous checkpoint, Illustrious XL v0.1, designed to produce stunning high-resolution images."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Illustrious: an Open Advanced Illustration Model - arXiv.org",
+      "url": "https://arxiv.org/html/2409.19946v1",
+      "snippet": "Illustrious is a generalized anime image generation model that can create a variety of images through detailed prompts. However, it has the following limitations."
+    }
+  ]
+}

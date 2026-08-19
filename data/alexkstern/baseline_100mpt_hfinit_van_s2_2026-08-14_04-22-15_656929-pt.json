@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/baseline_100Mpt_hfinit_van_s2_2026-08-14_04-22-15_656929-pt",
+  "slug": "alexkstern-baseline_100mpt_hfinit_van_s2_2026-08-14_04-22-15_656929-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/baseline_100Mpt_hfinit_van_s2_2026-08-14_04-22-15_656929-pt",
+  "created_at": "2026-08-14T04:24:26.000Z",
+  "updated_at": "2026-08-14T04:25:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "no_ppt",
+    "seed_2",
+    "single",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669491,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BabyLM 2025 Baselines - a BabyLM-community Collection",
+      "url": "https://huggingface.co/collections/BabyLM-community/babylm-2025-baselines",
+      "snippet": "A collection containing the baseline models for the BabyLM 2025 edition"
+    },
+    {
+      "title": "BabyLM-community (BabyLM Challenge) - Hugging Face",
+      "url": "https://huggingface.co/BabyLM-community/collections",
+      "snippet": "Viewer • Updated Jul 15, 2025 • 86.5k • 10 BabyLM 2026 Baselines"
+    },
+    {
+      "title": "BabyLM-community/babylm-baseline-100m-gpt2 - Hugging Face Hu... - Socket",
+      "url": "https://socket.dev/huggingface/package/babylm-community/babylm-baseline-100m-gpt2",
+      "snippet": "Model Card for the Preference Optimization Interaction Baseline A 124M model with the GPT-2 architecture trained with the next token prediction loss for 10 epochs (~1B words), as a naive autoregressive baseline for the Strict track of the 2025 BabyLM challenge."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Gemini 3.7 Flash by Google on Aug 13 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "GitHub - open-mmlab/mmpretrain: OpenMMLab Pre-training Toolbox and ...",
+      "url": "https://github.com/open-mmlab/mmpretrain",
+      "snippet": "OpenMMLab Pre-training Toolbox and Benchmark. Contribute to open-mmlab/mmpretrain development by creating an account on GitHub."
+    }
+  ]
+}

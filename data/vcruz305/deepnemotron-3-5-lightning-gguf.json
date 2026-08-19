@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "vcruz305/DeepNemotron-3.5-Lightning-GGUF",
+  "slug": "vcruz305-deepnemotron-3-5-lightning-gguf",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/DeepNemotron-3.5-Lightning-GGUF",
+  "created_at": "2026-08-16T22:12:17.000Z",
+  "updated_at": "2026-08-17T07:05:22.000Z",
+  "license": "nvidia-openmdw-and-dataset-other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "nemotron",
+    "moe",
+    "quantized",
+    "agentic",
+    "text-generation",
+    "en",
+    "dataset:r0b0tlab/deepseek-v4-pro-0813-agentic",
+    "base_model:vcruz305/DeepNemotron-3.5-Lightning",
+    "base_model:quantized:vcruz305/DeepNemotron-3.5-Lightning",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 155407176384,
+  "storage_human": "155.4 GB",
+  "base_model": "vcruz305/DeepNemotron-3.5-Lightning",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

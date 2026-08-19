@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Smite79/LTX-2.3-RTX5060Ti",
+  "slug": "smite79-ltx-2-3-rtx5060ti",
+  "author": "Smite79",
+  "url": "https://huggingface.co/Smite79/LTX-2.3-RTX5060Ti",
+  "created_at": "2026-07-10T18:18:30.000Z",
+  "updated_at": "2026-08-16T00:58:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "LTX",
+    "comfyui",
+    "rtx",
+    "5060ti",
+    "mxfp8",
+    "nvfp4",
+    "gguf",
+    "text-to-video",
+    "en",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:finetune:Lightricks/LTX-2.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "MORES-horizon/MORESPulse",
+  "slug": "mores-horizon-morespulse",
+  "author": "MORES-horizon",
+  "url": "https://huggingface.co/MORES-horizon/MORESPulse",
+  "created_at": "2026-07-24T08:48:49.000Z",
+  "updated_at": "2026-08-18T20:23:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "multilingual",
+    "en",
+    "de",
+    "fr",
+    "pl",
+    "sk",
+    "cs",
+    "hu"
+  ],
+  "tags": [
+    "pytorch",
+    "xlm-roberta",
+    "text-classification",
+    "emotion-classification",
+    "political-communication",
+    "computational-social-science",
+    "multilingual",
+    "en",
+    "de",
+    "fr",
+    "pl",
+    "sk",
+    "cs",
+    "hu",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4479632104,
+  "storage_human": "4.5 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MORES News - MORES Pulse: Detect Emotions - mores-horizon.eu",
+      "url": "https://mores-horizon.eu/news/introducing-mores-pulse-ai",
+      "snippet": "Discover MORES Pulse AI, a free tool that analyses text emotions—anger, fear, joy, disgust, sadness—advancing research and civic communication."
+    },
+    {
+      "title": "PDF MORES PULSE Frequently Asked Questions - cms.mores-horizon.eu",
+      "url": "https://cms.mores-horizon.eu/uploads/MORES_Pulse_Q_and_A_33f61ea348.pdf",
+      "snippet": "MORES Pulse is an app that automatically detects emotions in text. It uses a sophisticated Artificial Intelligence Language Model to run the emotion detection analysis and produce visualisations. You enter any text, and MORES Pulse shows how much anger, joy, sadness, fear, disgust, and joy are present in the text and in each sentence. The application is based on state-of-the-art research led ..."
+    },
+    {
+      "title": "MORES Tools - MORES Pulse AI - mores-horizon.eu",
+      "url": "https://mores-horizon.eu/toolkit/mores-pulse-ai",
+      "snippet": "MORES Pulse is a free innovative AI application that detects emotions in text—anger, fear, joy, sadness, disgust—across 7 languages, GDPR-compliant."
+    },
+    {
+      "title": "MORES-horizon (MORES — Moral Emotions in Politics)",
+      "url": "https://huggingface.co/MORES-horizon/models",
+      "snippet": "MORES is the developer of MORES Pulse, the AI application that reveals emotions in any text. Learn more: https://mores-horizon.eu/news/introducing-mores-pulse-ai."
+    },
+    {
+      "title": "MORES Pulse API - a Hugging Face Space by MORES-horizon",
+      "url": "https://huggingface.co/spaces/MORES-horizon/mores-pulse-api",
+      "snippet": "Sentence-level emotion analysis (MORES 6 + Pride detection)."
+    }
+  ]
+}

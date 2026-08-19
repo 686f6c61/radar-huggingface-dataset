@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "emogie3D/2.2.0-winrocm.gfx1151.bf16sdpa-experimental",
+  "slug": "emogie3d-2-2-0-winrocm-gfx1151-bf16sdpa-experimental",
+  "author": "emogie3D",
+  "url": "https://huggingface.co/emogie3D/2.2.0-winrocm.gfx1151.bf16sdpa-experimental",
+  "created_at": "2026-08-14T05:19:05.000Z",
+  "updated_at": "2026-08-14T07:54:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 788463,
+  "storage_human": "788463 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:48:05.175Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emogie3D (Andreas) - Hugging Face",
+      "url": "https://huggingface.co/emogie3D",
+      "snippet": "just 4 fun and learning purpose as hobbyist"
+    },
+    {
+      "title": "Windows support matrices by ROCm version",
+      "url": "https://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/docs/compatibility/compatibilityryz/windows/windows_compatibility.html",
+      "snippet": "Windows support matrices by ROCm version # PyTorch on Windows # Compatible OS, GPU, and framework support matrices for the latest ROCm release."
+    },
+    {
+      "title": "GitHub - sgawad/trellis2-rocm: rocm patches on Trellis2",
+      "url": "https://github.com/sgawad/trellis2-rocm",
+      "snippet": "Get Microsoft TRELLIS2 (image-to-3D AI) running on an AMD Ryzen AI Max+ 395 (Strix Halo / gfx1151) under Windows 11 + WSL2, using ROCm 7.2. This repo collects every patch, workaround, and build script needed to make it work."
+    },
+    {
+      "title": "Fine-tuning LLMs on AMD GPUs with Unsloth Guide",
+      "url": "https://unsloth.ai/docs/get-started/install/amd",
+      "snippet": "Fine-tune LLMs up to 2x faster with ~70% less memory on AMD hardware, no NVIDIA required. Unsloth supports AMD Radeon RDNA 3/3.5/4 (RX 6000-9000 series) on both Windows and Linux as well as data center GPUs including the MI300X (192GB)."
+    },
+    {
+      "title": "Fix ROCm Not Detecting Your AMD GPU (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/rocm-not-detecting-gpu-amd-fix/",
+      "snippet": "AMD GPU not detected in ROCm? Check supported GPUs, fix rocminfo errors, HSA_OVERRIDE hack for unsupported cards, and Ollama/llama.cpp ROCm build fixes."
+    }
+  ]
+}

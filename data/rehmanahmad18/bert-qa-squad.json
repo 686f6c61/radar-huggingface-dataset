@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rehmanAhmad18/bert-qa-squad",
+  "slug": "rehmanahmad18-bert-qa-squad",
+  "author": "rehmanAhmad18",
+  "url": "https://huggingface.co/rehmanAhmad18/bert-qa-squad",
+  "created_at": "2026-08-17T17:07:13.000Z",
+  "updated_at": "2026-08-17T17:08:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108893186,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435596064,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bert-squad.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/dpoulopoulos/bert-qa-finetuning/blob/main/bert-squad.ipynb",
+      "snippet": "Fine-tuning BERT for Q&A tasks involves adjusting the model to predict the start and end positions of the answer in a given passage for a provided question (extractive question answering)."
+    },
+    {
+      "title": "GitHub - artitw/BERT_QA: Accelerating the development of question ...",
+      "url": "https://github.com/artitw/BERT_QA",
+      "snippet": "Contributing BERT-QA is an open-source project founded and maintained to better serve the machine learning and data science community. Please feel free to submit pull requests to contribute to the project. By participating, you are expected to adhere to BERT-QA&#x27;s code of conduct."
+    },
+    {
+      "title": "Abdo36/Bert-SquAD-QA · Hugging Face",
+      "url": "https://huggingface.co/Abdo36/Bert-SquAD-QA",
+      "snippet": "Overview This repository contains a BERT-Base Uncased model fine-tuned on the SQuAD (Stanford Question Answering Dataset) for Question Answering (QA) tasks. The model has been fine-tuned for 2 epochs, making it suitable for extracting answers from given contexts by predicting start and end token positions."
+    },
+    {
+      "title": "forkanaminshaon/Transformer-Based-QA-System-using-SQuAD-Dataset - GitHub",
+      "url": "https://github.com/forkanaminshaon/Transformer-Based-QA-System-using-SQuAD-Dataset",
+      "snippet": "This project demonstrates fine-tuning a transformer-based model (BERT) for extractive Question Answering (QA) using the SQuAD v1.1 dataset. Unlike traditional classification tasks, this model predicts answer spans (start and end positions) from a given context in response to a question."
+    },
+    {
+      "title": "Sadat07/bert-SQuAD · Hugging Face",
+      "url": "https://huggingface.co/Sadat07/bert-SQuAD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

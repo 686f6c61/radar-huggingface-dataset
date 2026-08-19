@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "alst10/alston-writer",
+  "slug": "alst10-alston-writer",
+  "author": "alst10",
+  "url": "https://huggingface.co/alst10/alston-writer",
+  "created_at": "2026-08-11T04:30:39.000Z",
+  "updated_at": "2026-08-14T23:22:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:dphn/dolphin-2.9-llama3-8b",
+    "base_model:finetune:dphn/dolphin-2.9-llama3-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 8030277632,
+  "parameters_human": "8.03B",
+  "storage_bytes": 25176408325,
+  "storage_human": "25.2 GB",
+  "base_model": "cognitivecomputations/dolphin-2.9-llama3-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:17:50.355Z",
+  "benchmarks": [],
+  "sources": []
+}

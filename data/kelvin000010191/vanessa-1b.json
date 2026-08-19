@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Kelvin000010191/Vanessa-1B",
+  "slug": "kelvin000010191-vanessa-1b",
+  "author": "Kelvin000010191",
+  "url": "https://huggingface.co/Kelvin000010191/Vanessa-1B",
+  "created_at": "2026-08-01T09:33:18.000Z",
+  "updated_at": "2026-08-15T15:53:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22112051341,
+  "storage_human": "22.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kelvin000010191 (Kelvin Tepes) - Hugging Face",
+      "url": "https://huggingface.co/Kelvin000010191",
+      "snippet": "models1 Kelvin000010191/Krypton-1 Text Generation • 7B•Updated 22 days ago• 101 • 1"
+    },
+    {
+      "title": "Kelvin000010191 (Kelvin Tepes) - Hugging Face",
+      "url": "https://huggingface.co/Kelvin000010191/datasets",
+      "snippet": "User profile of Kelvin Tepes on Hugging Face"
+    },
+    {
+      "title": "vanessa-epoch1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Kelvin000010191/vanessa-epoch1",
+      "snippet": "Deploy vanessa-epoch1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Vanessa AI Generated Fit Model - V1 | Flux.1 LoRA | Civitai",
+      "url": "https://civitai.red/models/1928972/vanessa-ai-generated-fit-model",
+      "snippet": "Another AI generated model. Her name is Vanessa, a fit and athletic female model."
+    },
+    {
+      "title": "Vanessa1 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/73a8dc7545b74119bf60b488ea780b3b",
+      "snippet": "Explore Vanessa1 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

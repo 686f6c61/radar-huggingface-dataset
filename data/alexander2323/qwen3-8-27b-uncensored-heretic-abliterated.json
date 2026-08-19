@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "alexander2323/Qwen3.8-27B-Uncensored-Heretic-Abliterated",
+  "slug": "alexander2323-qwen3-8-27b-uncensored-heretic-abliterated",
+  "author": "alexander2323",
+  "url": "https://huggingface.co/alexander2323/Qwen3.8-27B-Uncensored-Heretic-Abliterated",
+  "created_at": "2026-08-16T13:26:51.000Z",
+  "updated_at": "2026-08-16T13:27:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

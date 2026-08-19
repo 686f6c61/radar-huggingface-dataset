@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ted88168/pi05_so101_0812_merged",
+  "slug": "ted88168-pi05_so101_0812_merged",
+  "author": "ted88168",
+  "url": "https://huggingface.co/ted88168/pi05_so101_0812_merged",
+  "created_at": "2026-08-14T20:04:52.000Z",
+  "updated_at": "2026-08-14T20:05:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:ted88168/demov0805_merged",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388453328,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

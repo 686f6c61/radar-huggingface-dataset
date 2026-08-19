@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-o-4_5",
+  "slug": "openbmb-minicpm-o-4_5",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-o-4_5",
+  "created_at": "2026-02-03T14:10:39.000Z",
+  "updated_at": "2026-08-18T03:57:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "minicpmo",
+    "feature-extraction",
+    "minicpm-o",
+    "minicpm-v",
+    "multimodal",
+    "full-duplex",
+    "any-to-any",
+    "custom_code",
+    "arxiv:2408.01800",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1464,
+  "downloads_30d": 992822,
+  "trending_score": 0,
+  "parameters": 9371787666,
+  "parameters_human": "9.37B",
+  "storage_bytes": 22735738044,
+  "storage_human": "22.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-o-4_5 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-o-4_5",
+      "snippet": "MiniCPM-o 4.5 is the latest and most capable model in the MiniCPM-o series. The model is built in an end-to-end fashion based on SigLip2, Whisper-medium, CosyVoice2, and Qwen3-8B with a total of 9B parameters."
+    },
+    {
+      "title": "MiniCPM-o 4.5 PyTorch Simple Demo System - GitHub",
+      "url": "https://github.com/OpenBMB/MiniCPM-o-Demo/",
+      "snippet": "About MiniCPM-o 4.5 MiniCPM-o 4.5 is the latest and most capable model in the MiniCPM-o series. The model is built in an end-to-end fashion based on SigLip2, Whisper-medium, CosyVoice2, and Qwen3-8B with a total of 9B parameters. It exhibits a significant performance improvement, and introduces new features for full-duplex multimodal live ..."
+    },
+    {
+      "title": "openbmb/minicpm-o4.5 - ollama.com",
+      "url": "https://ollama.com/openbmb/minicpm-o4.5",
+      "snippet": "A Gemini 2.5 Flash Level MLLM for Vision, Speech, and Full-Duplex Mulitmodal Live Streaming on Your Phone MiniCPM-o 4.5 🤗 🤖 | MiniCPM-V 4.0 🤗 | 🍳 Cookbook | 📄 MiniCPM-V 4.5 Technical Report MiniCPM-o 4.5 is the latest and most capable model in the MiniCPM-o series. The model is built in an end-to-end fashion based on SigLip2, Whisper-medium, CosyVoice2, and Qwen3-8B with a total ..."
+    },
+    {
+      "title": "openbmb/MiniCPM-V-4_5 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4_5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniCPM-o 4.5 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/minicpm-o-4-5/",
+      "snippet": "MiniCPM-o is OpenBMB&#x27;s series of on-device multimodal LLMs upgraded from MiniCPM-V. The 4.5 model takes text, images, video and audio and outputs both text and speech in an end-to-end way, with about 9B total parameters and performance comparable to Gemini 2.5 Flash on vision and speech tasks."
+    }
+  ]
+}

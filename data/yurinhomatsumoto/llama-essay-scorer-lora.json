@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "YurinhoMatsumoto/llama-essay-scorer-lora",
+  "slug": "yurinhomatsumoto-llama-essay-scorer-lora",
+  "author": "YurinhoMatsumoto",
+  "url": "https://huggingface.co/YurinhoMatsumoto/llama-essay-scorer-lora",
+  "created_at": "2026-08-18T21:37:29.000Z",
+  "updated_at": "2026-08-18T21:37:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30858707,
+  "storage_human": "31 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Diverse LLM Approaches in Essay Scoring: A ... - Stanford University",
+      "url": "https://web.stanford.edu/class/cs224n/final-reports/256725164.pdf",
+      "snippet": "Abstract This paper explores diverse approaches to automatic essay scoring (AES) utilizing large language models (LLMs). We investigate three novel methods: many-shot prompting using Gemini 1.5 Flash, a jury of models, and model fine-tuning with Llama 3. Our experiments run on the Learning Agency Lab - Automated Essay Scoring 2.0 dataset, consisting of 24,000 student-written argumentative ..."
+    },
+    {
+      "title": "PDF Beyond the Score: Uncertainty-Calibrated LLMs for Automated Essay ...",
+      "url": "https://aclanthology.org/2025.emnlp-main.992.pdf",
+      "snippet": "Taken together, these results provide the first end-to-end demonstration that mid-sized, openly licensed LLMs can power calibrated, human-in-the-loop essay scoring sys- tems today, while laying the groundwork for fu- ture studies on model size, finer FCE banding, and rubric-aware prompting."
+    },
+    {
+      "title": "From Prompting to Preference Optimization: A Comparative Study of LLM ...",
+      "url": "https://arxiv.org/pdf/2603.06424",
+      "snippet": "The model is instruction-tuned on criterion-specific subtasks using LoRA adapters, while external rubric descriptions and exemplar essays are retrieved to ground inference and reduce hallucination."
+    },
+    {
+      "title": "Long Context Automated Essay Scoring with Language Models",
+      "url": "https://arxiv.org/html/2509.10417v1",
+      "snippet": "A common approach to addressing this issue when using these models for Automated Essay Scoring is to truncate the input text. This raises serious validity concerns as it undermines the model&#x27;s ability to fully capture and evaluate organizational elements of the scoring rubric, which requires long contexts to assess."
+    },
+    {
+      "title": "AI_AWE/essay_score at main · wwrwbs/AI_AWE · GitHub",
+      "url": "https://github.com/wwrwbs/AI_AWE/tree/main/essay_score",
+      "snippet": "AI Scoring Platform: automated essay scoring with Qwen classifier, LightGBM scorer, and feedback generator. - AI_AWE/essay_score at main · wwrwbs/AI_AWE"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Llama-4-Scout-17B-16E-Instruct-ROCmFP4-GGUF",
+  "slug": "kingjones777-llama-4-scout-17b-16e-instruct-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Llama-4-Scout-17B-16E-Instruct-ROCmFP4-GGUF",
+  "created_at": "2026-08-16T23:39:15.000Z",
+  "updated_at": "2026-08-16T23:46:58.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "gfx1151",
+    "strix-halo",
+    "amd",
+    "ryzen-ai-max-395",
+    "rocmfp4",
+    "rocmfpx",
+    "llama4",
+    "llama-4",
+    "scout",
+    "moe",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "base_model:meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "base_model:quantized:meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 93,
+  "trending_score": 0,
+  "parameters": 107769861184,
+  "parameters_human": "107.77B",
+  "storage_bytes": 62929060320,
+  "storage_human": "62.9 GB",
+  "base_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-4-Scout-17B-16E-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "snippet": "The Llama 4 collection of models are natively multimodal AI models that enable text and multimodal experiences. These models leverage a mixture-of-experts architecture to offer industry-leading performance in text and image understanding."
+    },
+    {
+      "title": "meta-llama/Llama-4-Scout-17B-16E · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E",
+      "snippet": "We are launching two efficient models in the Llama 4 series, Llama 4 Scout, a 17 billion parameter model with 16 experts, and Llama 4 Maverick, a 17 billion parameter model with 128 experts."
+    },
+    {
+      "title": "Llama 4 Scout - GroqDocs - console.groq.com",
+      "url": "https://console.groq.com/docs/model/llama-4-scout-17b-16e-instruct",
+      "snippet": "Llama 4 Scout features an auto-regressive language model that uses a mixture-of-experts (MoE) architecture with 17B activated parameters (109B total) and incorporates early fusion for native multimodality. The model uses 16 experts to efficiently handle both text and image inputs while maintaining high performance across chat, knowledge, and code generation tasks, with a knowledge cutoff of ..."
+    },
+    {
+      "title": "meta-llama/Llama-4-Scout-17B-16E-Instruct | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "snippet": "Llama 4 Scout 17B-16E MoE model with NVIDIA FP8/FP4 variants, fits on a single GPU with quantization"
+    },
+    {
+      "title": "Llama 4 Scout 17B 16E Instruct - llmrun.dev",
+      "url": "https://llmrun.dev/model/meta-llama-llama-4-scout-17b-16e-instruct",
+      "snippet": "Llama 4 Scout 17B 16E Instruct — Hardware Requirements & GPU Compatibility Vision Llama 4 Scout 17B 16E Instruct is a 108.6B-parameter open language model from Meta in the Llama 4 family. At Q4_K_M it needs about 71.70 GB of VRAM — see which GPUs and Macs can run it below."
+    }
+  ]
+}

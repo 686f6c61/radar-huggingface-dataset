@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Muse-Glimmer-30B-Abliterated-Aggressive-i1-GGUF",
+  "slug": "mradermacher-muse-glimmer-30b-abliterated-aggressive-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-Abliterated-Aggressive-i1-GGUF",
+  "created_at": "2026-08-13T14:18:25.000Z",
+  "updated_at": "2026-08-16T13:37:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "muse-glimmer",
+    "lora",
+    "de-refusal",
+    "en",
+    "base_model:jorkle/Muse-Glimmer-30B-Abliterated-Aggressive",
+    "base_model:adapter:jorkle/Muse-Glimmer-30B-Abliterated-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 8967,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 303373832352,
+  "storage_human": "303.4 GB",
+  "base_model": "jorkle/Muse-Glimmer-30B-Abliterated-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

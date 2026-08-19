@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_50Mpt_hfbody_100M_s0_2026-08-14_15-23-30_865898-pt",
+  "slug": "alexkstern-kdyck_dose_50mpt_hfbody_100m_s0_2026-08-14_15-23-30_865898-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_100M_s0_2026-08-14_15-23-30_865898-pt",
+  "created_at": "2026-08-14T15:28:50.000Z",
+  "updated_at": "2026-08-14T15:29:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162779,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern/odysseus_grok_kdyck_50M_20260321_030726 · Hugging Face",
+      "url": "https://huggingface.co/alexkstern/odysseus_grok_kdyck_50M_20260321_030726",
+      "snippet": "alexkstern / odysseus_grok_kdyck_50M_20260321_030726 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you&#x27;re into with the people who get you."
+    },
+    {
+      "title": "Kick",
+      "url": "https://kick.com/",
+      "snippet": "Kick is a streaming platform that makes it easy for you to find and watch your favorite content."
+    },
+    {
+      "title": "DitStorm™ Cypher™ Universal Morse Expert - PreppComm",
+      "url": "https://morsenexus.com/products/ditstorm-cypher-universal-morse-expert",
+      "snippet": "All AI/ML processing is self-contained within the unit. Distributed Processing for Peak Performance. The Cypher intelligently leverages a distributed processing model. Its built-in 240 MHz dual-core processor teams up with the substantial multi-core horsepower of your host device (computer, phone, or tablet)."
+    },
+    {
+      "title": "passfault/wordlists/wordlists/esLongTail.txt at master · OWASP ...",
+      "url": "https://github.com/OWASP/passfault/blob/master/wordlists/wordlists/esLongTail.txt",
+      "snippet": "OWASP Passfault evaluates passwords and enforces password policy in a completely different way. - OWASP/passfault"
+    }
+  ]
+}

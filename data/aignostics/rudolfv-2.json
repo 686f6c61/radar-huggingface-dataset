@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Aignostics/RudolfV-2",
+  "slug": "aignostics-rudolfv-2",
+  "author": "Aignostics",
+  "url": "https://huggingface.co/Aignostics/RudolfV-2",
+  "created_at": "2026-07-30T12:46:47.000Z",
+  "updated_at": "2026-08-07T12:16:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rudolf",
+    "pathology",
+    "histopathology",
+    "computational-pathology",
+    "digital-pathology",
+    "vision-transformer",
+    "foundation-model",
+    "self-supervised",
+    "feature-extraction",
+    "biology",
+    "medical",
+    "image-feature-extraction",
+    "custom_code",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 77,
+  "trending_score": 8,
+  "parameters": 1133789200,
+  "parameters_human": "1.13B",
+  "storage_bytes": 4535231080,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aignostics/RudolfV-2 · Hugging Face",
+      "url": "https://huggingface.co/Aignostics/RudolfV-2",
+      "snippet": "RudolfV 2 is a vision transformer based Foundation Model developed by Aignostics for computational pathology. It uses a ViT-g/8 backbone and was pretrained on 300k whole slide images (WSIs). RudolfV 2 can serve as a general-purpose tile-level feature extractor for a broad range of downstream histopathology tasks, including tissue and tumor classification, grading, biomarker prediction, and ..."
+    },
+    {
+      "title": "Aignostics/RudolfV-2-S · Hugging Face",
+      "url": "https://huggingface.co/Aignostics/RudolfV-2-S",
+      "snippet": "No diagnostic, preventive, therapeutic, clinical, or commercial use. AI/ML training restriction. RudolfV 2-S may not be used to train models designed to replicate or approximate the capabilities of RudolfV 2-S or to generate training labels, pseudo-labels, or any form of supervision signal for such models, direct or indirect."
+    },
+    {
+      "title": "Aignostics Foundation Model, RudolfV, Enhances the Generalizability of ...",
+      "url": "https://www.aignostics.com/case-studies/aignostics-foundation-model-enhance-generalizability-digital-pathology-ai",
+      "snippet": "Enhanced Generalizability of Digital Pathology AI This proof-of-concept study evaluates the generalizability of a cell classification model developed with RudolfV. We compared how an \"out-of-the-box\" version of the model performed against a \"fine-tuned\" version."
+    },
+    {
+      "title": "RudolfV: A Foundation Model by Pathologists for Pathologists",
+      "url": "https://arxiv.org/html/2401.04079v2",
+      "snippet": "(3) AI training: We adapted DINOv2 training to sample a specific distribution of slide groups and tissue clusters and extend the augmentations with stain variations. (4) Applications: The resulting foundation model can be used for various applications in digital pathology."
+    },
+    {
+      "title": "Aignostics&#x27; foundation model for histopathology takes the lead on key ...",
+      "url": "https://www.aignostics.com/news/aignostics-foundation-model-for-histopathology-takes-the-lead-on-key-benchmarks",
+      "snippet": "Our foundation model RudolfV achieved higher accuracy compared to published alternatives on key public datasets."
+    }
+  ]
+}

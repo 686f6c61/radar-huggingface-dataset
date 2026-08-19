@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "sifat-febo/bangla-banglish-companion-gguf",
+  "slug": "sifat-febo-bangla-banglish-companion-gguf",
+  "author": "sifat-febo",
+  "url": "https://huggingface.co/sifat-febo/bangla-banglish-companion-gguf",
+  "created_at": "2026-08-17T22:35:36.000Z",
+  "updated_at": "2026-08-17T22:57:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "banglish",
+    "bengali",
+    "llama.cpp",
+    "ollama",
+    "lm-studio",
+    "conversational",
+    "local-inference",
+    "low-resource-languages",
+    "text-generation",
+    "bn",
+    "en",
+    "dataset:sifat-febo/banglish_bench",
+    "base_model:sifat-febo/banglish-companion",
+    "base_model:quantized:sifat-febo/banglish-companion",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 1711378432,
+  "parameters_human": "1.71B",
+  "storage_bytes": 2876029024,
+  "storage_human": "2.9 GB",
+  "base_model": "sifat-febo/banglish-companion",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sifat-febo/banglish-companion · Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/banglish-companion",
+      "snippet": "Banglish Companion — Banglish Conversational AI The first Banglish conversational AI model. A casual, friendly chatbot that speaks in Banglish — Bengali written phonetically in Latin script. Runs locally, no GPU needed. Why Banglish? Over 230 million people speak Bengali. Online, millions of them — plus the global diaspora — type in Banglish (phonetic Bengali using English letters ..."
+    },
+    {
+      "title": "sifat-febo (Sifat Febo) - Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 11 hours ago"
+    },
+    {
+      "title": "Machine Learning Bangladesh | Hello everyone, | Facebook",
+      "url": "https://www.facebook.com/groups/mlban/posts/2047443052428464/",
+      "snippet": "script. Suggest some digital resources like bangla to bangla dictionary and large text collection other than news. Abdullah Bin - Jashim and 3 others 4 reactions · 7 comments 󱎖 Hishab&#x27;s Bangla LLM Model for Text Generation and Instruction Tuning Mehadi Hasan Menon Bengali.AI Community 1y · Public At Hishab we train an LLM named \"titulm-1b-bn-v1\" This model has 1 billion parameters that ..."
+    },
+    {
+      "title": "Bengali.AI",
+      "url": "https://www.bengali.ai/",
+      "snippet": "Bengali.AI&#x27;s Bangla speech recognition campaign has produced the largest publicly available Bangla speech corpus. Since February 21, 2022, the campaign has gathered around 2,000 hours of data from over 22,000 people through the &#x27;Bok bok&#x27; contribution platform, aiming to achieve 10,000 hours to build a publicly available automated speech ..."
+    },
+    {
+      "title": "Open Source Datasets - Bengali.AI",
+      "url": "https://www.bengali.ai/datasets",
+      "snippet": "Bengali.AI maintains a curated collection of open-source datasets for the research community. These datasets are designed to advance Bengali language AI research and development."
+    }
+  ]
+}

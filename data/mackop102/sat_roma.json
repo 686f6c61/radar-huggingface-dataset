@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mackop102/sat_roma",
+  "slug": "mackop102-sat_roma",
+  "author": "mackop102",
+  "url": "https://huggingface.co/mackop102/sat_roma",
+  "created_at": "2026-08-18T11:24:42.000Z",
+  "updated_at": "2026-08-18T12:04:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-matching",
+    "homography-estimation",
+    "satellite-imagery",
+    "aerial-imagery",
+    "drone-localization",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1010014380,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Parskatt/RoMa: [CVPR 2024] RoMa: Robust Dense Feature Matching ...",
+      "url": "https://github.com/Parskatt/RoMa",
+      "snippet": "RoMa is the robust dense feature matcher capable of estimating pixel-dense warps and reliable certainties for almost any image pair. roma_model.sample_thresh controls the thresholding used when sampling matches for estimation. In certain cases a lower or higher threshold may improve results. If you ..."
+    },
+    {
+      "title": "image-matching-models/roma · Hugging Face",
+      "url": "https://huggingface.co/image-matching-models/roma",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ko3a4ok/roma-model · Hugging Face",
+      "url": "https://huggingface.co/ko3a4ok/roma-model",
+      "snippet": "This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "ROMA: Real-time Omni-Multimodal Assistant with Interactive Streaming ...",
+      "url": "https://arxiv.org/abs/2601.10323",
+      "snippet": "Recent Omni-multimodal Large Language Models show promise in unified audio, vision, and text modeling. However, streaming audio-video understanding remains challenging, as existing approaches suffer from disjointed capabilities: they typically exhibit incomplete modality support or lack autonomous proactive monitoring. To address this, we present ROMA, a real-time omni-multimodal assistant for ..."
+    },
+    {
+      "title": "GitHub - Parskatt/RoMaV2",
+      "url": "https://github.com/Parskatt/romav2",
+      "snippet": "model.H_hr, model.W_hr: height and width for a high resolution version of the image pair (used for upsampling as in RoMa) model.bidirectional: Useful for getting more diverse matches, and for estimating the covariance matrix in both directions."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "drbaph/MiniMax-H3-Turbo-Lora-ComfyUI",
+  "slug": "drbaph-minimax-h3-turbo-lora-comfyui",
+  "author": "drbaph",
+  "url": "https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI",
+  "created_at": "2026-08-06T05:40:36.000Z",
+  "updated_at": "2026-08-13T15:51:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "adapter",
+    "comfyui",
+    "text-to-video",
+    "reference-to-video",
+    "audio-video",
+    "synchronized-audio",
+    "few-step",
+    "turbo",
+    "accelerated-inference",
+    "lightx2v",
+    "dynamic-rank",
+    "svd",
+    "safetensors",
+    "bfloat16",
+    "pruned-model",
+    "curve-form",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 336,
+  "downloads_30d": 148084,
+  "trending_score": 56,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5943322304,
+  "storage_human": "5.9 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "drbaph/MiniMax-H3-Turbo-Lora-ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "drbaph/MiniMax-H3-Turbo-Lora-ComfyUI at main - Hugging Face",
+      "url": "https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMaxH3ComfyUI/MiniMax-H3-ComfyUI: MiniMax H3 ComfyUI - GitHub",
+      "url": "https://github.com/MiniMaxH3ComfyUI/MiniMax-H3-ComfyUI",
+      "snippet": "MiniMax H3 ComfyUI - Run MiniMax turbo lora H3 33B omni-modal AI model locally with ComfyUI workflow. Text-to-video, image-to-video, reference-to-video generation with native stereo audio. ComfyUI custom nodes, workflow templates (T2V, I2V, R2V), H3-VisualVAE and H3-AudioVAE decoders."
+    },
+    {
+      "title": "MiniMax H3 Turbo LoRA Download: 4-Step Audio-Video Generation",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-06-minimax-h3-turbo-lora",
+      "snippet": "A community LoRA for MiniMax H3 renders joint video plus synchronized stereo audio in 4 sampling steps instead of the usual ~20, a roughly 5x speedup in sampling time. Released on August 5 by larryvrh as an early preview, it is the first speed LoRA for the open-weights H3 model (read the open-weights story). This is an early prototype. The weights and the ComfyUI tooling are a work in progress ..."
+    },
+    {
+      "title": "GitHub - Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "url": "https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "snippet": "Start from the official MiniMax-H3 workflow (t2v or i2v) and make two changes: Insert MiniMax-H3 Turbo LoRA between the model loader and the sampler (… → Load Diffusion Model → MiniMax-H3 Turbo LoRA → SamplerCustomAdvanced), and pick the turbo .safetensors. Feed SamplerCustomAdvanced from MiniMax-H3 Turbo Sampler, and set the scheduler node (BasicScheduler) to simple at ≥ 4 steps ..."
+    }
+  ]
+}

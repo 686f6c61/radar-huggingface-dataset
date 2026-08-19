@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tutututututu/Tutu-MiniMax-H3-AudioVideo-20to8-NFE-LoRA",
+  "slug": "tutututututu-tutu-minimax-h3-audiovideo-20to8-nfe-lora",
+  "author": "tutututututu",
+  "url": "https://huggingface.co/tutututututu/Tutu-MiniMax-H3-AudioVideo-20to8-NFE-LoRA",
+  "created_at": "2026-08-09T05:19:51.000Z",
+  "updated_at": "2026-08-09T08:11:37.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "comfyui",
+    "text-to-video",
+    "image-to-video",
+    "audio-video-generation",
+    "synchronized-audio-video",
+    "few-step",
+    "8-nfe",
+    "research",
+    "image-text-to-video",
+    "zh",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5295141780,
+  "storage_human": "5.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tutu-MiniMax-H3-AudioVideo-20to8-NFE-LoRA - Hugging Face",
+      "url": "https://huggingface.co/tutututututu/Tutu-MiniMax-H3-AudioVideo-20to8-NFE-LoRA",
+      "snippet": "Model overview / 模型简介 Created by Tutu. 这是一个面向 MiniMax-H3 FL2VA 的联合音视频加速 LoRA，将 20 NFE 生成流程缩短为固定的 8 NFE Euler 流程，同时保留 MiniMax-H3 的原生双声道音频、中文对白和同步音效能力。 This is an audio-video acceleration LoRA for MiniMax-H3 FL2VA."
+    },
+    {
+      "title": "Tutu-MiniMax-H3-AudioVideo-20to8-NFE-LoRA - Hugging Face",
+      "url": "https://huggingface.co/tutututututu/Tutu-MiniMax-H3-AudioVideo-20to8-NFE-LoRA/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax-H3 Audio-Video acceleration LoRA It reduces the 20-NFE ...",
+      "url": "https://x.com/SD_Tutorial/status/2086540247136194808",
+      "snippet": "It reduces the 20-NFE generation process to a fixed 8-NFE Euler workflow while retaining MiniMax-H3&#x27;s native stereo audio, dialogue, and synchronized sound effects."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "minimax-h3/README.md at main · ai-models-lab/minimax-h3",
+      "url": "https://github.com/ai-models-lab/minimax-h3/blob/main/README.md",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Muse-Glimmer-30GB-Preserving-Abliterated-GGUF",
+  "slug": "mradermacher-muse-glimmer-30gb-preserving-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30GB-Preserving-Abliterated-GGUF",
+  "created_at": "2026-08-16T02:30:30.000Z",
+  "updated_at": "2026-08-16T05:30:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Blackroot/Muse-Glimmer-30GB-Preserving-Abliterated",
+    "base_model:quantized:Blackroot/Muse-Glimmer-30GB-Preserving-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 856,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 197510978496,
+  "storage_human": "197.5 GB",
+  "base_model": "Blackroot/Muse-Glimmer-30GB-Preserving-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

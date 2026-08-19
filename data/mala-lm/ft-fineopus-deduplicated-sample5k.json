@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "MaLA-LM/FT-FineOPUS-Deduplicated-sample5k",
+  "slug": "mala-lm-ft-fineopus-deduplicated-sample5k",
+  "author": "MaLA-LM",
+  "url": "https://huggingface.co/MaLA-LM/FT-FineOPUS-Deduplicated-sample5k",
+  "created_at": "2026-08-18T02:12:21.000Z",
+  "updated_at": "2026-08-18T02:35:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16394087526,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

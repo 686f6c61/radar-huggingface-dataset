@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "BCCard/MoAI-Privacy-Filter",
+  "slug": "bccard-moai-privacy-filter",
+  "author": "BCCard",
+  "url": "https://huggingface.co/BCCard/MoAI-Privacy-Filter",
+  "created_at": "2026-08-13T13:10:24.000Z",
+  "updated_at": "2026-08-18T04:41:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openai_privacy_filter",
+    "token-classification",
+    "ner",
+    "pii",
+    "privacy",
+    "pii-masking",
+    "korean",
+    "finance",
+    "bioes",
+    "viterbi",
+    "mixture-of-experts",
+    "ko",
+    "en",
+    "dataset:BCCard/pii-masking-openpii-finance",
+    "base_model:openai/privacy-filter",
+    "base_model:finetune:openai/privacy-filter",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1399512505,
+  "parameters_human": "1.40B",
+  "storage_bytes": 2827273014,
+  "storage_human": "2.8 GB",
+  "base_model": "openai/privacy-filter",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BCCard/MoAI-Privacy-Filter · Hugging Face",
+      "url": "https://huggingface.co/BCCard/MoAI-Privacy-Filter",
+      "snippet": "1. Overview A Korean/English PII detection model for the finance domain, built by full fine-tuning openai/privacy-filter (1.4B MoE, 50M active) on synthetic finance-domain PII data. It tags 18 PII entity types (73 BIOES classes) at token level and is intended as the NER layer of a multi-layer PII-masking gateway in front of LLM services — behind a regex backstop for fully structured ..."
+    },
+    {
+      "title": "BCCard/MoAI-Privacy-Filter-INT8 · Hugging Face",
+      "url": "https://huggingface.co/BCCard/MoAI-Privacy-Filter-INT8",
+      "snippet": "1. Overview This repository provides the INT8 weight-only ONNX Runtime serving artifact for a Korean/English PII detection model for the finance domain. The model was built by full fine-tuning openai/privacy-filter - a 1.4B-parameter MoE with 50M active parameters - on synthetic finance-domain PII data. It tags 18 PII entity types using 73 BIOES token classes at token level."
+    },
+    {
+      "title": "moai.bccard.ai",
+      "url": "https://moai.bccard.ai/",
+      "snippet": "We would like to show you a description here but the site won&#x27;t allow us."
+    },
+    {
+      "title": "GitHub - bccard-ai/bccard-ai",
+      "url": "https://github.com/bccard-ai/bccard-ai",
+      "snippet": "Agentic AI — End-to-end platform with SLM Swarm via MOAI, from orchestration to production deployment. Inference optimization — Multi-SLM cluster architecture with 3× speedup and 70% GPU reduction. Foundation models — Finance-specialized LLM training, embeddings, and domain adaptation."
+    },
+    {
+      "title": "bccard-ai (BC Card AI) · GitHub",
+      "url": "https://github.com/bccard-ai",
+      "snippet": "Agentic AI — End-to-end platform with SLM Swarm via MOAI, from orchestration to production deployment. Inference optimization — Multi-SLM cluster architecture with 3× speedup and 70% GPU reduction. Foundation models — Finance-specialized LLM training, embeddings, and domain adaptation."
+    }
+  ]
+}

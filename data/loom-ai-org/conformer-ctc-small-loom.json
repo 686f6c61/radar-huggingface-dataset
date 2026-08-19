@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/conformer-ctc-small-loom",
+  "slug": "loom-ai-org-conformer-ctc-small-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/conformer-ctc-small-loom",
+  "created_at": "2026-08-10T20:52:22.000Z",
+  "updated_at": "2026-08-16T13:35:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "loom-py-rt",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/stt_en_conformer_ctc_small",
+    "base_model:quantized:nvidia/stt_en_conformer_ctc_small",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 15192143,
+  "parameters_human": "15.2M",
+  "storage_bytes": 183800896,
+  "storage_human": "184 MB",
+  "base_model": "nvidia/stt_en_conformer_ctc_small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "exeterminal/Exe-Turbo-S-V1-GGUF",
+  "slug": "exeterminal-exe-turbo-s-v1-gguf",
+  "author": "exeterminal",
+  "url": "https://huggingface.co/exeterminal/Exe-Turbo-S-V1-GGUF",
+  "created_at": "2026-08-16T06:18:15.000Z",
+  "updated_at": "2026-08-16T12:04:29.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "exe-ai-terminal",
+    "agent",
+    "tool-use",
+    "terminal",
+    "moe",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-8B-A1B",
+    "base_model:quantized:LiquidAI/LFM2.5-8B-A1B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3782,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 84664313518,
+  "storage_human": "84.7 GB",
+  "base_model": "LiquidAI/LFM2.5-8B-A1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "exeterminal/Exe-Core-Dynamic-V1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/exeterminal/Exe-Core-Dynamic-V1-GGUF",
+      "snippet": "The core model of the Exe AI Terminal. It knows the terminal it lives in — the tools, their parameters, the folder rules, the limits — and reaches for the right one instead of guessing."
+    },
+    {
+      "title": "exeterminal/Exe-Guard-Dynamic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/exeterminal/Exe-Guard-Dynamic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF Loader - Local AI Inference Engine | Run GGUF Models Offline with ...",
+      "url": "https://ggufloader.github.io/",
+      "snippet": "We&#x27;re excited to announce the launch of Lawyer Assistant, a new addition to the local AI ecosystem. Ask questions about your contracts in plain English and get answers with exact page numbers cited from your own documents — nothing leaves your machine and it works fully offline, so it fits right alongside GGUF Loader&#x27;s privacy-first approach."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "A privacy-first, beginner-friendly desktop application for running large language models fully locally on Windows, Linux, and macOS. Load any GGUF model (Mistral, LLaMA, DeepSeek, Qwen, and thousands more from Hugging Face) and chat with it — with a built-in agentic mode that can read, create, edit, and organize files in a workspace you choose. No data ever leaves your computer. 📦 Also ..."
+    }
+  ]
+}

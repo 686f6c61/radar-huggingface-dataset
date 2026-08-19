@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nooruiit-864/qwen2.5-1.5b-instruct-ai-safety-domain-lora",
+  "slug": "nooruiit-864-qwen2-5-1-5b-instruct-ai-safety-domain-lora",
+  "author": "nooruiit-864",
+  "url": "https://huggingface.co/nooruiit-864/qwen2.5-1.5b-instruct-ai-safety-domain-lora",
+  "created_at": "2026-08-18T13:34:16.000Z",
+  "updated_at": "2026-08-18T13:34:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333008,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nooruiit-864/qwen2.5-1.5b-base-pk-tech-domain-lora · Hugging Face",
+      "url": "https://huggingface.co/nooruiit-864/qwen2.5-1.5b-base-pk-tech-domain-lora",
+      "snippet": "Instructions to use nooruiit-864/qwen2.5-1.5b-base-pk-tech-domain-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Multi-Agent Forensic Reasoning for Generalizable Deepfake Video Detection",
+      "url": "https://arxiv.org/html/2608.06865v1",
+      "snippet": "Abstract The malicious use of generative artificial intelligence to create highly realistic deepfake videos raises serious ethical concerns and poses substantial challenges to AI safety. However, existing deepfake video benchmarks provide limited coverage of recent synthesis methods and generally lack reliable fine-grained textual annotations. Meanwhile, conventional detectors and multimodal ..."
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v1",
+      "snippet": "Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks eval-uating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct ..."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "qwen2.5:1.5b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:1.5b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RehmanKhalid/yolo26-military-detection",
+  "slug": "rehmankhalid-yolo26-military-detection",
+  "author": "RehmanKhalid",
+  "url": "https://huggingface.co/RehmanKhalid/yolo26-military-detection",
+  "created_at": "2026-08-18T11:44:00.000Z",
+  "updated_at": "2026-08-18T11:44:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolo26",
+    "object-detection",
+    "military-vehicles",
+    "aircraft-detection",
+    "remote-sensing",
+    "computer-vision",
+    "pytorch",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18303372,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Military AI software - From data to decision",
+      "url": "https://duckduckgo.com/y.js?ad_domain=systematic.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=4yB3RcsAAeckSee3StNvmxjHzHya9B023iQoCYs9L3CO3IdusqlKVis4cOxmaGRtu34BMxQ0UNwES1b%2DR4pqPzCEZxSvNmI6Yn3sKUwktmPxVq79cElN0gOZaJY4GdE7%2DCKJ6o546B3g1onHP7wvYibJB8W0odYfQK4911b0Esk.ManZfRWRca7FKuYQ2P9ZvQ&rut=9fd9e511f811aa941ddba724ebca13d8bcf2f14747776625443a169204a272f0&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De81FAo%2DmOlav926Yn7Vuh16DVUCUydyUodXJcrqY%2DGDOVbAfvYb0HVMXyzC%2DYldLfy9DtcyyjE0r1tZaua7feu87gLxQYotx%2DNlqpTYvk7Mfv61Dx%2DBN0sUz3X3fcCUK%2D8lOAc1Dv4V0k1Ek02ZX0tChdPdf5MDqPGqhzeWwb943lrlskhP6oz0zc44aD6xgBd690vRcJJ2v2Gk3cd6720caDK_uc%26u%3DaHR0cHMlM2ElMmYlMmZzeXN0ZW1hdGljLmNvbSUyZmludCUyZmluZHVzdHJpZXMlMmZkZWZlbmNlJTJmcHJvZHVjdHMlMmZzaXRhd2FyZS1zdWl0ZSUyZnNpdGF3YXJlLWluc2lnaHQlMmYlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RwYWlkJTI2dXRtX2NhbXBhaWduJTNkREZfQ01QMTY3NF9UaWVyXzJfU2VhcmNoQWRzJTI2dXRtX3Rlcm0lM2RhaSUyNnV0bV9jb250ZW50JTNkaW5zaWdodCUyNm1zY2xraWQlM2RjNWNhMGRiN2NhOTAxZDI4NDQ1NTY3MzM4MDZhYmZjZQ%26rlid%3Dc5ca0db7ca901d2844556733806abfce&vqd=4-298134353254962393028817281506557301500&iurl=%7B1%7DIG%3DB3F1D8715C9842B9A632D7A58FACF49B%26CID%3D1DA3102D721C6A5D14E90794733A6BC0%26ID%3DDevEx%2C5037.1",
+      "snippet": "AI-powered insights enabling faster and more accurate defence decisions across operations. Defence-grade AI integrated into the C2 suite armed forces already rely on"
+    },
+    {
+      "title": "GitHub - ultralytics/yolo26: Ultralytics YOLO26 quickstart for ...",
+      "url": "https://github.com/ultralytics/yolo26",
+      "snippet": "YOLO26 models are available for detection, instance segmentation, semantic segmentation, depth estimation, classification, pose estimation, and oriented object detection. All model weights download automatically from the latest Ultralytics assets release on first use."
+    },
+    {
+      "title": "Militaryv3iyolo26 Dataset by Rab Hell - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/rab-hell/datasets/militaryv3iyolo26",
+      "snippet": "Aerial and ground-level imagery for object detection of military assets, featuring tanks, armored vehicles, and aircraft captured in diverse tactical environments."
+    },
+    {
+      "title": "Militaryv3iyolo26 Dataset by Sunrise - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/sunrise/datasets/militaryv3iyolo26",
+      "snippet": "DetectReady 8,818images·8,817 labeled·29,934annotations·2.9 GB·1Updated Apr 28, 2026 Aerial and ground-level military surveillance imagery for object detection, featuring annotated aircraft, tanks, and armored vehicles in various environments. New Model Clone Dataset Images Classes3 Charts Models all8,818 train6,876 val1,478 test464 All · Created ↓ all8,818 train6,876 val1,478 test464 ..."
+    },
+    {
+      "title": "Ultralytics YOLO26",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "YOLO26 from Ultralytics delivers unified, real-time, end-to-end vision models optimized for accurate and efficient deployment."
+    }
+  ]
+}

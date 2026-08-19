@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jpvilla1990/raef",
+  "slug": "jpvilla1990-raef",
+  "author": "jpvilla1990",
+  "url": "https://huggingface.co/jpvilla1990/raef",
+  "created_at": "2026-08-18T20:48:53.000Z",
+  "updated_at": "2026-08-18T20:52:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2608.14054",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model-agnostic Retrieval-Augmented Extended Forecasting for time series",
+      "url": "https://arxiv.org/pdf/2608.14054",
+      "snippet": "We present Retrieval-Augmented Extended Forecasting (RAEF), a model-agnostic approach for time series fore-casting that addresses the limitations of RAF with two key refinements."
+    },
+    {
+      "title": "jpvilla1990 (Juan Pablo Villa Serna) - Hugging Face",
+      "url": "https://huggingface.co/jpvilla1990/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "jpvilla1990 (Juan Pablo Villa Serna) - Hugging Face",
+      "url": "https://huggingface.co/jpvilla1990",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 1 day ago"
+    },
+    {
+      "title": "GitHub - jpvilla1990/ai_models",
+      "url": "https://github.com/jpvilla1990/ai_models",
+      "snippet": "Contribute to jpvilla1990/ai_models development by creating an account on GitHub."
+    },
+    {
+      "title": "ai_models/README.md at main · jpvilla1990/ai_models · GitHub",
+      "url": "https://github.com/jpvilla1990/ai_models/blob/main/README.md?plain=1",
+      "snippet": "Contribute to jpvilla1990/ai_models development by creating an account on GitHub."
+    }
+  ]
+}

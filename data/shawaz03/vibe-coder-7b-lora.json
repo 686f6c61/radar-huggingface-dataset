@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shawaz03/vibe-coder-7b-lora",
+  "slug": "shawaz03-vibe-coder-7b-lora",
+  "author": "shawaz03",
+  "url": "https://huggingface.co/shawaz03/vibe-coder-7b-lora",
+  "created_at": "2026-08-16T03:52:13.000Z",
+  "updated_at": "2026-08-16T04:06:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693946,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shawaz03/vibe-coder-7b · Hugging Face",
+      "url": "https://huggingface.co/shawaz03/vibe-coder-7b",
+      "snippet": "shawaz03 / vibe-coder-7b like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "shawaz03 (SHAWAZ) - Hugging Face",
+      "url": "https://huggingface.co/shawaz03",
+      "snippet": "Recent Activity updated a modelabout 4 hours ago shawaz03/vibe-coder-7b published a modelabout 4 hours ago shawaz03/vibe-coder-7b View all activity"
+    },
+    {
+      "title": "VibeCoder — Local AI. Terminal Native.",
+      "url": "https://www.vibecoder.gg/",
+      "snippet": "A private, open-source AI coding assistant that plans, edits, and verifies code from your terminal with local Ollama models."
+    },
+    {
+      "title": "GitHub - vibe-over-code/app_for_finetuning: finetune 7B",
+      "url": "https://github.com/vibe-over-code/app_for_finetuning",
+      "snippet": "Training parameters Model: Model name from HuggingFace (e.g., Qwen/Qwen2.5-7B-Instruct) or a path to a local model Dataset: Upload a file in JSONL format Quantization: Select 4-bit (recommended), 8-bit, or no quantization Batch Size: Batch size (usually 1 for large models) Gradient Accumulation: Number of gradient accumulation steps LoRA parameters: Rank (r), Alpha, Dropout"
+    },
+    {
+      "title": "How to \"Vibe Coding\" locally -Ollama | by Abedalswaity | Medium",
+      "url": "https://medium.com/@abedalswaity7/how-to-use-olympiccoder-locally-for-coding-ollama-version-3d45b833194a",
+      "snippet": "1. Install Ollama Ollama is like a control panel for AI models. It makes it easy to download and run models without any complicated setup. - Go to the Ollama website: Open your web browser and go ..."
+    }
+  ]
+}

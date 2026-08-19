@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ostrich-27B-Qwen3.8-260815-GGUF",
+  "slug": "mradermacher-ostrich-27b-qwen3-8-260815-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260815-GGUF",
+  "created_at": "2026-08-18T09:21:06.000Z",
+  "updated_at": "2026-08-18T09:58:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "#aha",
+    "#health",
+    "#nutrition",
+    "#medicinalherbs",
+    "#fasting",
+    "#faith",
+    "#healing",
+    "#bitcoin",
+    "#nostr",
+    "#beneficial",
+    "#based",
+    "#aligned",
+    "en",
+    "base_model:etemiz/Ostrich-27B-Qwen3.8-260815",
+    "base_model:quantized:etemiz/Ostrich-27B-Qwen3.8-260815",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 55736978176,
+  "storage_human": "55.7 GB",
+  "base_model": "etemiz/Ostrich-27B-Qwen3.8-260815",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B - unsloth.ai",
+      "url": "https://unsloth.ai/models/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is a hybrid thinking open model for agentic coding and chat. Run Qwen3.8-27B locally via Unsloth Dynamic GGUFs and Unsloth Desktop."
+    },
+    {
+      "title": "Qwen 3.8 27B: Why This Powerful Model Can&#x27;t Stop ... - DEV Community",
+      "url": "https://dev.to/kaixintelligence/qwen-38-27b-why-this-powerful-model-cant-stop-overthinking-and-how-to-fix-it-5dh6",
+      "snippet": "A deep dive into Qwen 3.8 27B&#x27;s tendency to overthink even simple requests, the technical and training roots of this behavior, and practical strategies to reduce verbose chain-of-thought output while preserving reasoning quality."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Best Qwen3.8-27B GGUF: Q2, Q3, Q4, Q5, Q6 and Q8 - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/",
+      "snippet": "Compare exact Qwen3.8-27B Q2, Q3, Q4, Q5, Q6 and Q8 GGUF files by quality, memory, context and publisher; choose the right download for your hardware."
+    }
+  ]
+}

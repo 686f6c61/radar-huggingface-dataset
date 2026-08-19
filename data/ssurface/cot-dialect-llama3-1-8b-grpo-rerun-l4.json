@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ssurface/cot-dialect-llama3.1-8b-grpo-rerun-l4",
+  "slug": "ssurface-cot-dialect-llama3-1-8b-grpo-rerun-l4",
+  "author": "ssurface",
+  "url": "https://huggingface.co/ssurface/cot-dialect-llama3.1-8b-grpo-rerun-l4",
+  "created_at": "2026-08-18T15:13:35.000Z",
+  "updated_at": "2026-08-18T15:48:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "chain-of-thought",
+    "reasoning",
+    "compression",
+    "gsm8k",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101156374,
+  "storage_human": "101 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Accuracy (exact match)",
+      "value": 69.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Llama 3.1 - 405B, 70B & 8B with multilinguality and long context",
+      "url": "https://huggingface.co/blog/llama31",
+      "snippet": "Hugging Face Partner Integrations Note: We are currently working with our partners at AWS, Google Cloud, Microsoft Azure and DELL on adding Llama 3.1 8B, 70B, and 405B to Amazon SageMaker, Google Kubernetes Engine, Vertex AI Model Catalog, Azure AI Studio, DELL Enterprise Hub."
+    },
+    {
+      "title": "EpistemeAI/MathCoder-Llama3.1-8B-cot · Hugging Face",
+      "url": "https://huggingface.co/EpistemeAI/MathCoder-Llama3.1-8B-cot",
+      "snippet": "Uploaded model Developed by: EpistemeAI License: apache-2.0 Finetuned from model : EpistemeAI/MathCoder-Llama3.1-8B This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library. Original Model Card Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and ..."
+    },
+    {
+      "title": "Llama3.1_ (8B)-GRPO.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3.1_(8B)-GRPO.ipynb",
+      "snippet": "Some other resources: Train your own reasoning model - Llama GRPO notebook Free Colab Saving finetunes to Ollama. Free notebook Llama 3.2 Vision finetuning - Radiography use case. Free Colab See notebooks for DPO, ORPO, Continued pretraining, conversational finetuning and more on our documentation!"
+    },
+    {
+      "title": "llama3:8b",
+      "url": "https://ollama.com/library/llama3:8b",
+      "snippet": "API Example using curl: ... API documentation Model variants Instruct is fine-tuned for chat/dialogue use cases. Example: ollama run llama3 ollama run llama3:70b Pre-trained is the base model. Example: ollama run llama3:text ollama run llama3:70b-text References Introducing Meta Llama 3: The most capable openly available LLM to date"
+    },
+    {
+      "title": "Llama 3.1 8B - GroqDocs - console.groq.com",
+      "url": "https://console.groq.com/docs/model/llama-3.1-8b-instant",
+      "snippet": "Model card for Llama 3.1 8B: 8B parameter model with 128K context, tool use, JSON mode, and instant responses on Groq."
+    }
+  ]
+}

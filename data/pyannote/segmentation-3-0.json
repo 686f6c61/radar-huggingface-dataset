@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pyannote/segmentation-3.0",
+  "slug": "pyannote-segmentation-3-0",
+  "author": "pyannote",
+  "url": "https://huggingface.co/pyannote/segmentation-3.0",
+  "created_at": "2023-09-22T12:03:10.000Z",
+  "updated_at": "2024-05-10T19:35:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "pyannote-audio",
+  "languages": [],
+  "tags": [
+    "pyannote-audio",
+    "pytorch",
+    "pyannote",
+    "pyannote-audio-model",
+    "audio",
+    "voice",
+    "speech",
+    "speaker",
+    "speaker-diarization",
+    "speaker-change-detection",
+    "speaker-segmentation",
+    "voice-activity-detection",
+    "overlapped-speech-detection",
+    "resegmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1517,
+  "downloads_30d": 6275056,
+  "trending_score": 23,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5905440,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pyannote/segmentation-3.0 · Hugging Face",
+      "url": "https://huggingface.co/pyannote/segmentation-3.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · pyannote/segmentation-3.0 at main - Hugging Face",
+      "url": "https://huggingface.co/pyannote/segmentation-3.0/blob/main/README.md?code=true",
+      "snippet": "Using this open-source model in production? Consider switching to [pyannoteAI] (https://www.pyannote.ai) for better and faster options."
+    },
+    {
+      "title": "segmentation-3.0: Audio-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/segmentation-3.0-pyannote",
+      "snippet": "segmentation-3.0 is a speaker segmentation model developed by pyannote that detects voice activity and identifies overlapping speakers in short audio..."
+    },
+    {
+      "title": "segmentation-3.0: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/segmentation-30-pyannote",
+      "snippet": "Overview segmentation-3.0 is a neural speaker segmentation model maintained by pyannote that processes 10-second chunks of mono audio sampled at 16kHz and outputs a (num_frames, num_classes) matrix with 7 classes representing non-speech, individual speakers, and speaker overlaps. The model uses a powerset multi-class encoding approach that distinguishes between non-speech, three individual ..."
+    },
+    {
+      "title": "GitHub - jvlevinson/segmentation-3.0",
+      "url": "https://github.com/jvlevinson/segmentation-3.0",
+      "snippet": "The various concepts behind this model are described in details in this paper. It has been trained by Séverin Baroudi with pyannote.audio 3.0.0 using the combination of the training sets of AISHELL, AliMeeting, AMI, AVA-AVD, DIHARD, Ego4D, MSDWild, REPERE, and VoxConverse. This companion repository by Alexis Plaquet also provides instructions on how to train or finetune such a model on your ..."
+    }
+  ]
+}

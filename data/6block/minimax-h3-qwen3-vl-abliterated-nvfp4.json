@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "6block/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4",
+  "slug": "6block-minimax-h3-qwen3-vl-abliterated-nvfp4",
+  "author": "6block",
+  "url": "https://huggingface.co/6block/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4",
+  "created_at": "2026-08-16T08:36:02.000Z",
+  "updated_at": "2026-08-16T08:47:23.000Z",
+  "license": "minimax-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "minimax-h3",
+    "qwen3-vl",
+    "text-encoder",
+    "nvfp4",
+    "abliterated",
+    "comfyui",
+    "quantized",
+    "text-to-video",
+    "en",
+    "zh",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:finetune:Comfy-Org/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17863933608,
+  "storage_human": "17.9 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-VL · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/qwen3_vl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-VL 4B Abliterated (ComfyUI / Krea 2 Text Encoder) BF16 / FP8",
+      "url": "https://civitai.red/models/2731465/qwen3-vl-4b-abliterated-comfyui-krea-2-text-encoder-bf16-fp8?modelVersionId=3070870",
+      "snippet": "This is a vision-language version of Qwen3-VL 4B that has been abliterated and converted into a single ComfyUI-compatible safetensors file. It can be used as a Krea 2 text encoder inside ComfyUI while preserving the model&#x27;s vision capabilities, making it suitable for workflows that use image-aware prompt enhancement."
+    },
+    {
+      "title": "text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors · Comfy-Org ...",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-minimax-H3: Awesome MiniMax-H3",
+      "url": "https://github.com/wildminder/awesome-minimax-H3",
+      "snippet": "Awesome MiniMax-H3 A curated list of models, text encoders, quants, and tools for the MiniMax-H3 omni-modal video generation model."
+    }
+  ]
+}

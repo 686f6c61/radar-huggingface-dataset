@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "prabhanjana/sample.1",
+  "slug": "prabhanjana-sample-1",
+  "author": "prabhanjana",
+  "url": "https://huggingface.co/prabhanjana/sample.1",
+  "created_at": "2026-08-17T04:49:57.000Z",
+  "updated_at": "2026-08-17T04:49:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPrabhanjana (G Prabhanjana) - Hugging Face",
+      "url": "https://huggingface.co/GPrabhanjana/datasets",
+      "snippet": "User profile of G Prabhanjana on Hugging Face"
+    },
+    {
+      "title": "GPrabhanjana (G Prabhanjana) · GitHub",
+      "url": "https://github.com/GPrabhanjana/",
+      "snippet": "This collection of scripts supports the development and deployment of a neural network model, optimised for recognizing handwritten digits from the MNIST dataset."
+    },
+    {
+      "title": "#ai #artificialintelligence #sustainability #aiforgood #ibm - LinkedIn",
+      "url": "https://www.linkedin.com/posts/prabhanjana-s-31275235a_ai-artificialintelligence-sustainability-activity-7483154308570505216-ge2q",
+      "snippet": "🎉 Excited to share that I have successfully completed the AI for Sustainability Virtual Internship organized by 1M1B (One Million for One Billion), supported by AICTE, in collaboration with IBM ..."
+    },
+    {
+      "title": "prabhanjan (Prabhanjana P) · Flux",
+      "url": "https://www.flux.ai/prabhanjan",
+      "snippet": "prabhanjan has 5 projects available. Follow them on Flux."
+    },
+    {
+      "title": "AI Models Directory - Promptomania",
+      "url": "https://promptomania.com/models",
+      "snippet": "Home / Models AI Models Directory Browse AI image, video, 3D, and audio model providers. Find the best model for your use case, learn prompting tips, and explore example prompts."
+    }
+  ]
+}

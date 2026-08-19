@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ArunKr/ru",
+  "slug": "arunkr-ru",
+  "author": "ArunKr",
+  "url": "https://huggingface.co/ArunKr/ru",
+  "created_at": "2026-08-17T05:34:12.000Z",
+  "updated_at": "2026-08-17T05:48:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63826503,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArunKr/model API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ArunKr/model",
+      "snippet": "Deploy ArunKr/model with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "RU-AI: A Large Multimodal Dataset for Machine-Generated Content Detection",
+      "url": "https://arxiv.org/html/2406.04906",
+      "snippet": "Machine-generated data is produced from generative AI models, including five models for text, image, and voice generation. This yields total of 1,475,370 instances each for both real and machine-generated data. We also construct a noise-augmented variant of our dataset across all modalities to evaluate model robustness."
+    },
+    {
+      "title": "ArunKr/DRL · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ArunKr/DRL/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZhihaoZhang97/RU-AI: [WWW&#x27;25] Official repo for paper: RU-AI ...",
+      "url": "https://github.com/ZhihaoZhang97/RU-AI",
+      "snippet": "[WWW&#x27;25] Official repo for paper: RU-AI: A Large Multimodal Dataset for Machine Generated Content Detection - ZhihaoZhang97/RU-AI"
+    },
+    {
+      "title": "Free AI 3D Model Generator: Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Generate high-quality 3D models from text or images for free. Neural4D provides a top-tier free AI 3D model generator for games, AR/VR, and 3D printing."
+    }
+  ]
+}

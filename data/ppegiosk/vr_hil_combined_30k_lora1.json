@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ppegiosk/vr_hil_combined_30k_lora1",
+  "slug": "ppegiosk-vr_hil_combined_30k_lora1",
+  "author": "ppegiosk",
+  "url": "https://huggingface.co/ppegiosk/vr_hil_combined_30k_lora1",
+  "created_at": "2026-08-17T14:22:23.000Z",
+  "updated_at": "2026-08-17T14:22:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_all_30hz_30k/snapshots/ea7bbc7e4587ed89cfe151bd212678dd133db487",
+    "lora",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20623000,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

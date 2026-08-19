@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "24f3000591kaviyarasan/green-ai-carbon-audit",
+  "slug": "24f3000591kaviyarasan-green-ai-carbon-audit",
+  "author": "24f3000591kaviyarasan",
+  "url": "https://huggingface.co/24f3000591kaviyarasan/green-ai-carbon-audit",
+  "created_at": "2026-08-18T12:03:09.000Z",
+  "updated_at": "2026-08-18T12:07:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hovarthan21/Green-AI---Smart-Carbon-Tracker - GitHub",
+      "url": "https://github.com/hovarthan21/Green-AI---Smart-Carbon-Tracker",
+      "snippet": "Green AI Dashboard is a modern, interactive sustainability platform designed to promote green computing, carbon-neutral technology, and energy awareness. With a sleek, animated UI, floating 3D leaves, and real-time charts, this dashboard simplifies carbon tracking and empowers users to make eco-friendly choices in the world of tech."
+    },
+    {
+      "title": "Green AI — See Your AI&#x27;s Carbon Footprint",
+      "url": "https://www.greenai.info/",
+      "snippet": "Carbon Footprint Calculator See your AI&#x27;s true cost Every prompt has a carbon price. Find out what yours costs the planet — and how to reduce it."
+    },
+    {
+      "title": "Green-AI---Smart-Carbon-Tracker/README.md at main - GitHub",
+      "url": "https://github.com/hovarthan21/Green-AI---Smart-Carbon-Tracker/blob/main/README.md",
+      "snippet": "Green AI Dashboard is a modern, interactive sustainability platform designed to promote green computing, carbon-neutral technology, and energy awareness. With a sleek, animated UI, floating 3D leaves, and real-time charts, this dashboard simplifies carbon tracking and empowers users to make eco-friendly choices in the world of tech."
+    },
+    {
+      "title": "Green artificial intelligence initiatives: Potentials and challenges",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0959652624025393",
+      "snippet": "This paper has identified 55 such initiatives, broadly categorized into six themes: cloud optimization, model efficiency, carbon footprinting, sustainability-focused AI development, open-source initiatives, and green AI research and community. This study discusses the strengths and limitations of each initiative to offer a comprehensive overview."
+    },
+    {
+      "title": "Green AI: A Comprehensive Approach to Carbon Emission Reduction",
+      "url": "https://ieeexplore.ieee.org/document/11004680",
+      "snippet": "Green AI is an innovative project designed for sustainability development goals to aware people about climate change by decreasing carbon emissions across multiple domains. It consists of five core functionalities: garbage classification, travel optimization, electricity consumption analysis, device- based task management, and code optimization. This paper includes the methodologies ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-E2B-it-heretic-ara-GGUF",
+  "slug": "mradermacher-gemma-4-e2b-it-heretic-ara-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-E2B-it-heretic-ara-GGUF",
+  "created_at": "2026-04-04T19:06:44.000Z",
+  "updated_at": "2026-08-18T07:17:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "en",
+    "base_model:p-e-w/gemma-4-E2B-it-heretic-ara",
+    "base_model:quantized:p-e-w/gemma-4-E2B-it-heretic-ara",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 23,
+  "downloads_30d": 5405,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 48035560448,
+  "storage_human": "48.0 GB",
+  "base_model": "p-e-w/gemma-4-E2B-it-heretic-ara",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/gemma-4-E2B-it-heretic-ara-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-E2B-it-heretic-ara-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-4-E2B-it-heretic-ara-custom-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-E2B-it-heretic-ara-custom-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Damacol/mradermacher-gemma-4-e2b-it-heretic-ara-gguf - GitHub",
+      "url": "https://github.com/Damacol/mradermacher-gemma-4-e2b-it-heretic-ara-gguf/tree/main",
+      "snippet": "mradermacher/gemma-4-E2B-it-heretic-ara-GGUF - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I ..."
+    },
+    {
+      "title": "mradermacher-gemma-4-e2b-it-ara-heresy-i1-gguf/README.md at main ...",
+      "url": "https://github.com/Damacol/mradermacher-gemma-4-e2b-it-ara-heresy-i1-gguf/blob/main/README.md",
+      "snippet": "mradermacher/gemma-4-E2B-it-ARA-heresy-i1-GGUF - Private, Uncensored AI for Real Creators and Devs Self-hosted {MODEL} pipeline designed for privacy-first workflows."
+    }
+  ]
+}

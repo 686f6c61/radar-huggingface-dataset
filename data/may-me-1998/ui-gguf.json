@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "may-me-1998/Ui-GGUF",
+  "slug": "may-me-1998-ui-gguf",
+  "author": "may-me-1998",
+  "url": "https://huggingface.co/may-me-1998/Ui-GGUF",
+  "created_at": "2026-08-18T05:16:39.000Z",
+  "updated_at": "2026-08-18T05:16:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5_moe",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "decensored",
+    "cybersecurity",
+    "red-team",
+    "coding",
+    "text-generation",
+    "en",
+    "arxiv:2406.11717",
+    "base_model:ornith-ai/Ornith-1.0-35B",
+    "base_model:quantized:ornith-ai/Ornith-1.0-35B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 116288405152,
+  "storage_human": "116.3 GB",
+  "base_model": "deepreinforce-ai/Ornith-1.0-35B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "meta-models/Muse-Glimmer-30B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "ggufy - Model Library",
+      "url": "https://ggufy.com/",
+      "snippet": "ggufy helps you discover, download, and manage GGUF models from providers like Hugging Face, with compatibility for inference engines such as Ollama and llama.cpp."
+    }
+  ]
+}

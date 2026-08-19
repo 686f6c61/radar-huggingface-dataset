@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "YZisM3/DasiwaWAN22I2V14BLightspeed_boundbiteHighV10",
+  "slug": "yzism3-dasiwawan22i2v14blightspeed_boundbitehighv10",
+  "author": "YZisM3",
+  "url": "https://huggingface.co/YZisM3/DasiwaWAN22I2V14BLightspeed_boundbiteHighV10",
+  "created_at": "2026-05-16T04:57:51.000Z",
+  "updated_at": "2026-08-18T09:04:00.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164203135625,
+  "storage_human": "164.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YZisM3/DasiwaWAN22I2V14BLightspeed_boundbiteHighV10 at main - Hugging Face",
+      "url": "https://huggingface.co/YZisM3/DasiwaWAN22I2V14BLightspeed_boundbiteHighV10/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DasiwaWAN22I2V14BLightspeed_boundbiteLowV10.safetensors · YZisM3 ...",
+      "url": "https://huggingface.co/YZisM3/DasiwaWAN22I2V14BLightspeed_boundbiteHighV10/blob/main/DasiwaWAN22I2V14BLightspeed_boundbiteLowV10.safetensors",
+      "snippet": "DasiwaWAN22I2V14BLightspeed_boundbiteHighV10 / DasiwaWAN22I2V14BLightspeed_boundbiteLowV10.safetensors YZisM3 ... 201c742 verified about 1 month ago"
+    },
+    {
+      "title": "DasiwaWAN22I2V14BLightspeed_boundbiteHighV10.safetensors · YZisM3 ...",
+      "url": "https://huggingface.co/YZisM3/DasiwaWAN22I2V14BLightspeed_boundbiteHighV10/blob/main/DasiwaWAN22I2V14BLightspeed_boundbiteHighV10.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YZisM3 (YZ) - Hugging Face",
+      "url": "https://huggingface.co/YZisM3/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "Bedovyy/dasiwaWAN22I2V14B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Bedovyy/dasiwaWAN22I2V14B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

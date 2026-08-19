@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "black-forest-labs/FLUX.2-dev",
+  "slug": "black-forest-labs-flux-2-dev",
+  "author": "black-forest-labs",
+  "url": "https://huggingface.co/black-forest-labs/FLUX.2-dev",
+  "created_at": "2025-11-22T15:07:08.000Z",
+  "updated_at": "2025-11-22T15:07:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "flux",
+    "diffusion-single-file",
+    "image-to-image",
+    "en",
+    "license:other",
+    "diffusers:Flux2Pipeline",
+    "region:us"
+  ],
+  "likes": 2045,
+  "downloads_30d": 952388,
+  "trending_score": 28,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FLUX.2 - Next Generation Image Generation | Black Forest Labs - bfl.ai",
+      "url": "https://bfl.ai/models/flux-2",
+      "snippet": "FLUX.2 is the next generation of FLUX image generation from Black Forest Labs. State-of-the-art quality, speed, and controllability for AI image generation."
+    },
+    {
+      "title": "black-forest-labs/FLUX.2-dev · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.2-dev",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "flux-2-dev (Black Forest Labs) · Cloudflare AI docs · Cloudflare ...",
+      "url": "https://developers.cloudflare.com/workers-ai/models/flux-2-dev/",
+      "snippet": "FLUX.2 [dev] is an image model from Black Forest Labs where you can generate highly realistic and detailed images, with multi-reference support."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux2: Official inference repo for FLUX.2 ...",
+      "url": "https://github.com/black-forest-labs/flux2",
+      "snippet": "Official inference repo for FLUX.2 models. Contribute to black-forest-labs/flux2 development by creating an account on GitHub."
+    },
+    {
+      "title": "FLUX.2: Frontier Visual Intelligence | Black Forest Labs - bfl.ai",
+      "url": "https://bfl.ai/blog/flux-2",
+      "snippet": "FLUX.2 [dev]: 32B open-weight model, derived from the FLUX.2 base model. The most powerful open-weight image generation and editing model available today, combining text-to-image synthesis and image editing with multiple input images in a single checkpoint."
+    }
+  ]
+}

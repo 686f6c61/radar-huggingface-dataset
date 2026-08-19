@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "DiogenesChen122/Qwen3.6-27B-Lora-20260817",
+  "slug": "diogeneschen122-qwen3-6-27b-lora-20260817",
+  "author": "DiogenesChen122",
+  "url": "https://huggingface.co/DiogenesChen122/Qwen3.6-27B-Lora-20260817",
+  "created_at": "2026-08-17T20:18:39.000Z",
+  "updated_at": "2026-08-17T20:18:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "cuda",
+    "sparse-linear-algebra",
+    "kernel-generation",
+    "distillation",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 953964317,
+  "storage_human": "954 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "otisberg/qwen3.6-27B-LORA · Hugging Face",
+      "url": "https://huggingface.co/otisberg/qwen3.6-27B-LORA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DiogenesChen122 (Zhonghao Chen) - Hugging Face",
+      "url": "https://huggingface.co/DiogenesChen122",
+      "snippet": "Recent Activity updated a model7 days ago DiogenesChen122/Qwen3.6-27B-DrSparse-GRPO published a model11 days ago DiogenesChen122/Qwen3.6-27B-DrSparse-GRPO updated a model3 months ago DiogenesChen122/Qwen3.5-27B-kernel-sft View all activity"
+    },
+    {
+      "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+      "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+      "snippet": "Qwen3.6-27B is compatible with OpenClaw (formerly Moltbot / Clawdbot), a self-hosted open-source AI coding agent. Connect it to Model Studio to get a full agentic coding experience in the terminal."
+    },
+    {
+      "title": "Qwen3.6-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.6-27b",
+      "snippet": "The Qwen3.6 27B native vision-language dense model builds upon the 3.5-27B version, with key improvements in agentic coding capabilities and enhanced STEM reasoning and inference skills."
+    },
+    {
+      "title": "Qwen 3.6 27B lokal 2026: Qwen3, Coder & VL je Hardware-Stufe",
+      "url": "https://www.promptquorum.com/de/local-llms/qwen-local-deployment-guide-2026",
+      "snippet": "Das neue Flagship-Modell ist Qwen 3.6 27B — ein dichtes Modell unter Apache 2.0 mit 256K-Kontextfenster, das mit ~17 GB VRAM in Q4_K_M über `ollama run qwen3.6:27b` läuft."
+    }
+  ]
+}

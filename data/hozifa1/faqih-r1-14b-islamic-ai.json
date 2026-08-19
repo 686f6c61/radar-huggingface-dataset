@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hozifa1/Faqih-R1-14B-Islamic-AI",
+  "slug": "hozifa1-faqih-r1-14b-islamic-ai",
+  "author": "hozifa1",
+  "url": "https://huggingface.co/hozifa1/Faqih-R1-14B-Islamic-AI",
+  "created_at": "2026-08-17T21:21:05.000Z",
+  "updated_at": "2026-08-17T22:01:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 351,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29838319541,
+  "storage_human": "29.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qaf - Islamic AI",
+      "url": "https://qaf.ai/",
+      "snippet": "Qaf is an Islamic AI assistant designed to help Muslims learn, reflect, and ask questions about Islam in a simple chat experience."
+    },
+    {
+      "title": "hozifa1/islamic_books at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/hozifa1/islamic_books/tree/main",
+      "snippet": "Datasets: hozifa1 / islamic_books like 0 Dataset card FilesFiles and versions xet Community 1 main islamic_books 889 MB 1 contributor History:48 commits hozifa1 add OpenITI 2025 raw TSV metadata a7d18f7 verified26 minutes ago booksadd OpenITI 2025 raw TSV metadata26 minutes ago .gitattributes Safe 6.05 kBadd OpenITI 2025 raw TSV metadata26 minutes ago README.md Safe 0 BytesCreate README.md1 ..."
+    },
+    {
+      "title": "hozifa1/islamic_books at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/hozifa1/islamic_books/tree/main/books",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fiqh Tech - AI-Powered Research For Islamic Matters and Jurisprudence",
+      "url": "https://www.aifiqh.com/",
+      "snippet": "Fiqh Tech provides AI-powered research for Islamic matters and jurisprudence. Advanced technology delivering authentic Islamic guidance and scholarly insights for Muslims worldwide."
+    },
+    {
+      "title": "SheikhGPT - An AI for all of your Islamic Questions",
+      "url": "https://sheikhgpt.ai/",
+      "snippet": "Welcome to SheikhGPT SheikhGPT is an AI bot designed to serve as your virtual Islamic Scholar. Our mission is to provide authoritative answers and valuable insights into Islamic knowledge. We are continually adding texts and APIs to enhance SheikhGPT&#x27;s knowledge base, ensuring that it remains a reliable source for your inquiries about Islam. Whether you have questions about Islamic ..."
+    }
+  ]
+}

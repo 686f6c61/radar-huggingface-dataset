@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dimsmauls/code4ml-sq-filtered",
+  "slug": "dimsmauls-code4ml-sq-filtered",
+  "author": "dimsmauls",
+  "url": "https://huggingface.co/dimsmauls/code4ml-sq-filtered",
+  "created_at": "2026-08-17T04:54:09.000Z",
+  "updated_at": "2026-08-17T05:18:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "code",
+    "python",
+    "code-quality",
+    "static-analysis",
+    "sonarqube",
+    "maintainability",
+    "code4ml",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1033544266,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AAAlsulami/Reimplementation-of-Paper-Name-Code4ML-a-Large ...",
+      "url": "https://github.com/AAAlsulami/Reimplementation-of-Paper-Name-Code4ML-a-Large-Scale-Dataset-of-Annotated-Machine-Learning-Code-",
+      "snippet": "Contribute to AAAlsulami/Reimplementation-of-Paper-Name-Code4ML-a-Large-Scale-Dataset-of-Annotated-Machine-Learning-Code- development by creating an account on GitHub."
+    },
+    {
+      "title": "PDF Code4ML: a Large-scale Dataset of annotated Machine Learning Code",
+      "url": "https://arxiv.org/pdf/2210.16018.pdf",
+      "snippet": "Code4ML dataset can potentially help address a number of software engineering or data science challenges through a data-driven approach. For example, it can be helpful for semantic code classification, code auto-completion, and code generation for an ML task specified in natural language."
+    },
+    {
+      "title": "[2210.16018] Code4ML: a Large-scale Dataset of annotated Machine ...",
+      "url": "https://arxiv.org/abs/2210.16018",
+      "snippet": "Program code as a data source is gaining popularity in the data science community. Possible applications for models trained on such assets range from classification for data dimensionality reduction to automatic code generation. However, without annotation number of methods that could be applied is somewhat limited. To address the lack of annotated datasets, we present the Code4ML corpus. It ..."
+    },
+    {
+      "title": "Code4ML 2.0 - Zenodo",
+      "url": "https://zenodo.org/records/15465737",
+      "snippet": "This is an enriched version of the Code4ML dataset, a large-scale corpus of annotated Python code snippets, competition summaries, and data descriptions sourced from Kaggle. The initial release includes approximately 2.5 million snippets of machine learning code extracted from around 100,000 Jupyter notebooks. A portion of these snippets has been manually annotated by human assessors through a ..."
+    },
+    {
+      "title": "Code4ML: a Large-scale Dataset of annotated Machine Learning Code",
+      "url": "https://zenodo.org/records/7312803",
+      "snippet": "We present Code4ML: a Large-scale Dataset of annotated Machine Learning Code, a corpus of Python code snippets, competition summaries, and data descriptions from Kaggle."
+    }
+  ]
+}

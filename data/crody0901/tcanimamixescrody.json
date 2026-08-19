@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Crody0901/TCAnimaMixesCrody",
+  "slug": "crody0901-tcanimamixescrody",
+  "author": "Crody0901",
+  "url": "https://huggingface.co/Crody0901/TCAnimaMixesCrody",
+  "created_at": "2026-06-24T22:57:38.000Z",
+  "updated_at": "2026-08-18T08:20:52.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 220438939890,
+  "storage_human": "220.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crody0901/TCAnimaMixesCrody · Hugging Face",
+      "url": "https://huggingface.co/Crody0901/TCAnimaMixesCrody",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Post by Crody on X: PixAI",
+      "url": "https://x.com/Crody0901/status/2055052909059232056",
+      "snippet": "Crody (@Crody0901). 142 views. PixAI Nova Orange XL REX v1.0 - AI Art Model | PixAI pixai.art 💬0 🔄0 🤍1 📊142 📎"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Post by Crody on X: SeaArtAI",
+      "url": "https://x.com/Crody0901/status/2061218468335407428",
+      "snippet": "Crody (@Crody0901). 61 views. SeaArtAI Nova Anima AM - SeaArt AI Model Explore Nova Anima AM model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform. www.seaart.ai 💬0 🔄0 🤍1 📊61 📎"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "joey00072/ohara-chat-d12",
+  "slug": "joey00072-ohara-chat-d12",
+  "author": "joey00072",
+  "url": "https://huggingface.co/joey00072/ohara-chat-d12",
+  "created_at": "2026-08-15T17:33:37.000Z",
+  "updated_at": "2026-08-15T17:35:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "ohara",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ohara",
+    "nanochat",
+    "pretraining",
+    "sft",
+    "llama",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:openai/gsm8k",
+    "dataset:cais/mmlu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3217605796,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - joey00072/ohara: Collection of autoregressive model ...",
+      "url": "https://github.com/joey00072/ohara",
+      "snippet": "Collection of autoregressive model implementation. Contribute to joey00072/ohara development by creating an account on GitHub."
+    },
+    {
+      "title": "Pulse · joey00072/ohara · GitHub",
+      "url": "https://github.com/joey00072/ohara/graphs/",
+      "snippet": "Collection of autoregressive model implementation. Contribute to joey00072/ohara development by creating an account on GitHub."
+    },
+    {
+      "title": "ohara/ohara/models/gpt.py at master · joey00072/ohara · GitHub",
+      "url": "https://github.com/joey00072/ohara/blob/master/ohara/models/gpt.py",
+      "snippet": "Collection of autoregressive model implementation. Contribute to joey00072/ohara development by creating an account on GitHub."
+    },
+    {
+      "title": "joey00072 - wandb.ai",
+      "url": "https://wandb.ai/joey00072/Ohara-Bitnet",
+      "snippet": "Weights & Biases, developer tools for machine learning"
+    },
+    {
+      "title": "joey00072 (Joey) - Hugging Face",
+      "url": "https://huggingface.co/joey00072",
+      "snippet": "joey00072/tiny-reasoner-llama3.2-3B-16bit Text Generation • Updated Dec 27, 2024• 8 Expand 33 models"
+    }
+  ]
+}

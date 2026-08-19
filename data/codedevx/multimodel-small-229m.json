@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "CodeDevX/MultiModel-Small-229M",
+  "slug": "codedevx-multimodel-small-229m",
+  "author": "CodeDevX",
+  "url": "https://huggingface.co/CodeDevX/MultiModel-Small-229M",
+  "created_at": "2026-08-18T10:50:06.000Z",
+  "updated_at": "2026-08-18T11:03:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "multimodel-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 917364047,
+  "storage_human": "917 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "multimodel-ai · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/multimodel-ai",
+      "snippet": "AI StoryTeller is a multimodal AI application that converts images into creative short stories by combining computer vision and natural language generation. The system uses a pretrained image captioning model to understand visual content and Google Gemini to generate context-aware narratives ..."
+    },
+    {
+      "title": "The AI Portal for Professionals | MultiModel",
+      "url": "https://www.multimodel.com/",
+      "snippet": "Trusted by Leading Institutions \" We chose MultiModel for its financial-grade security, prebuilt prompts for financial institutions, and centralized AI portal that lets us safely operationalize generative AI across routine business processes."
+    },
+    {
+      "title": "GitHub - kumardhruv88/multimodel: NEXUS AI is a full-stack multimodal ...",
+      "url": "https://github.com/kumardhruv88/multimodel",
+      "snippet": "NEXUS AI is a production-grade, full-stack multimodal AI assistant — built from scratch, inspired by Claude.ai. It combines a Next.js 16 frontend with a FastAPI backend powered by Groq&#x27;s LLaMA 3.3 70B for blazing-fast inference, with real-time web search, document analysis, voice interaction, and persistent conversation memory. Unlike toy demos, NEXUS AI is architected for real production ..."
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "standjones/mirror-unconst-affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+  "slug": "standjones-mirror-unconst-affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+  "author": "standjones",
+  "url": "https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+  "created_at": "2026-08-17T00:05:53.000Z",
+  "updated_at": "2026-08-17T00:06:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 241,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483227,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "standjones/mirror-unconst-affine-5czsc2fc98-r496-sbsv5-offline-dpo ...",
+      "url": "https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r176-merged · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r176-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Obsidian - Sharpen your thinking",
+      "url": "https://obsidian.md/",
+      "snippet": "Sharpen your thinking. The free and flexible app for your private thoughts."
+    },
+    {
+      "title": "Cults・Download free 3D printer models・STL, OBJ, 3MF, CAD",
+      "url": "https://cults3d.com/",
+      "snippet": "World&#x27;s leading independent website for 3D printer files・Download the best objects for 3D printing・Share your designs on Cults3D the biggest DIY community."
+    },
+    {
+      "title": "Stable Diffusion Models Download & Guide - The Right GPT",
+      "url": "https://therightgpt.com/stable-diffusion-guides/models/",
+      "snippet": "Stable Diffusion Models Guide 2026: Complete Download & Installation Everything you need to know about Stable Diffusion models: safe downloads, realistic checkpoints, architecture details, and local requirements for SD 1.5, SDXL, Flux.1, and custom models."
+    }
+  ]
+}

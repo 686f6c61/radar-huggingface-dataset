@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "andykiro123234456/smolVLM-500m-trade",
+  "slug": "andykiro123234456-smolvlm-500m-trade",
+  "author": "andykiro123234456",
+  "url": "https://huggingface.co/andykiro123234456/smolVLM-500m-trade",
+  "created_at": "2026-08-15T10:30:35.000Z",
+  "updated_at": "2026-08-15T10:31:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "idefics3",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 409252800,
+  "parameters_human": "409.3M",
+  "storage_bytes": 1323136896,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:14:09.520Z",
+  "benchmarks": [],
+  "sources": []
+}

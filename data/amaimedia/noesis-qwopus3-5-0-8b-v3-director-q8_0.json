@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Director-Q8_0",
+  "slug": "amaimedia-noesis-qwopus3-5-0-8b-v3-director-q8_0",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Director-Q8_0",
+  "created_at": "2026-08-16T12:22:38.000Z",
+  "updated_at": "2026-08-16T12:53:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "noesis",
+    "qwopus3.5",
+    "director",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 811839616,
+  "storage_human": "812 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMAImedia (amaimediacom) - Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/models",
+      "snippet": "Founder - Python | PyTorch | C++| AI Clone Voice & Dubbing | Audio DSP & Tech Engineer"
+    },
+    {
+      "title": "Qwen3.5-9B-Darwin-Opus-NOESIS-AWQ-INT4 - Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/Qwen3.5-9B-Darwin-Opus-NOESIS-AWQ-INT4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AMAImedia/Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT4",
+      "url": "https://llmsreview.com/models/amaimedia--qwen3.5-35b-a3b-darwin-opus-noesis-awq-int4",
+      "snippet": "Check out comparisons and performance ratings of the AMAImedia/Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT4 model by AMAImedia on LLMsReview."
+    },
+    {
+      "title": "fredrezones55/Qwopus3.5 - ollama.com",
+      "url": "https://ollama.com/fredrezones55/Qwopus3.5",
+      "snippet": "Qwopus3.5-v3 is a reasoning-enhanced model family fine-tune of Qwen3.5 designed to improve reasoning stability and correctness, optimize inference efficiency, and enhance cross-task generalization capabilities, especially in programming."
+    },
+    {
+      "title": "Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT4 - friendli.ai",
+      "url": "https://friendli.ai/models/AMAImedia/Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT4",
+      "snippet": "Deploy Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT4 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

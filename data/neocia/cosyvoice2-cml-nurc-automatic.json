@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "neocia/cosyvoice2-cml-nurc-automatic",
+  "slug": "neocia-cosyvoice2-cml-nurc-automatic",
+  "author": "neocia",
+  "url": "https://huggingface.co/neocia/cosyvoice2-cml-nurc-automatic",
+  "created_at": "2026-08-15T11:27:13.000Z",
+  "updated_at": "2026-08-15T11:40:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "pt",
+    "base_model:FunAudioLLM/CosyVoice2-0.5B",
+    "base_model:quantized:FunAudioLLM/CosyVoice2-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4614192412,
+  "storage_human": "4.6 GB",
+  "base_model": "FunAudioLLM/CosyVoice2-0.5B",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

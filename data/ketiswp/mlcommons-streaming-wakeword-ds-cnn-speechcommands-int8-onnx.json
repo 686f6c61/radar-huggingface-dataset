@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/mlcommons-Streaming-Wakeword-DS-CNN-SpeechCommands-int8-onnx",
+  "slug": "ketiswp-mlcommons-streaming-wakeword-ds-cnn-speechcommands-int8-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/mlcommons-Streaming-Wakeword-DS-CNN-SpeechCommands-int8-onnx",
+  "created_at": "2026-08-19T01:57:18.000Z",
+  "updated_at": "2026-08-19T02:23:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int8",
+    "audio-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71601,
+  "storage_human": "71601 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - dscripka/openWakeWord: An open-source audio wake word (or ...",
+      "url": "https://github.com/dscripka/openWakeWord",
+      "snippet": "An open-source audio wake word (or phrase) detection framework with a focus on performance and simplicity. - dscripka/openWakeWord"
+    },
+    {
+      "title": "tiny/benchmark/training/streaming_wakeword/README.md at master ... - GitHub",
+      "url": "https://github.com/mlcommons/tiny/blob/master/benchmark/training/streaming_wakeword/README.md",
+      "snippet": "MLPerf® Tiny is an ML benchmark suite for extremely low-power systems such as microcontrollers - mlcommons/tiny"
+    },
+    {
+      "title": "Model Files and Wake Word Training | KoljaB/RealtimeSTT | DeepWiki",
+      "url": "https://deepwiki.com/KoljaB/RealtimeSTT/7.4-model-files-and-wake-word-training",
+      "snippet": "This document covers custom wake word model usage, training, and the management of binary model files in RealtimeSTT. It explains the supported model file formats (TFLite and ONNX), the installation of specialized runtimes like Kroko-ONNX, and the warmup_audio.wav mechanism used to initialize the transcription engine."
+    },
+    {
+      "title": "Training and Evaluation | mlcommons/tiny | DeepWiki",
+      "url": "https://deepwiki.com/mlcommons/tiny/4-training-and-evaluation",
+      "snippet": "Training and Evaluation Relevant source files This document provides an overview of the model training infrastructure, evaluation datasets, and performance measurement tools used in the MLCommons TinyMLPerf benchmark suite. The training and evaluation system supports four benchmark categories: Keyword Spotting (KWS), Visual Wake Words (VWW), Image Classification (IC), and Anomaly Detection (AD ..."
+    },
+    {
+      "title": "A New TinyML Streaming Benchmark for MLPerf Tiny v1.3",
+      "url": "https://mlcommons.org/2025/09/mlperf-tiny-v1-3-tech/",
+      "snippet": "To address these limitations, MLCommons introduces a new streaming benchmark in the current iteration (V1.3). A New Streaming Benchmark The streaming benchmark evaluates the real-time detection of a wake word, such as \"Hey Siri\" or \"Alexa,\" in a noisy audio stream."
+    }
+  ]
+}

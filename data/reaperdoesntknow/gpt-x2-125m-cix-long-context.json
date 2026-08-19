@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/GPT-X2-125M-CIx-Long-Context",
+  "slug": "reaperdoesntknow-gpt-x2-125m-cix-long-context",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/GPT-X2-125M-CIx-Long-Context",
+  "created_at": "2026-05-24T16:54:23.000Z",
+  "updated_at": "2026-08-18T13:15:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gptx2",
+    "text-generation",
+    "causal-lm",
+    "custom-code",
+    "gpt-x2",
+    "long-context",
+    "grouped-query-attention",
+    "gqa",
+    "rope",
+    "yarn",
+    "symplectic-rope",
+    "metric-rope",
+    "cixopt",
+    "swiglu",
+    "rmsnorm",
+    "custom_code",
+    "en",
+    "base_model:AxiomicLabs/GPT-X2-125M",
+    "base_model:finetune:AxiomicLabs/GPT-X2-125M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 2241,
+  "trending_score": 0,
+  "parameters": 126006398,
+  "parameters_human": "126.0M",
+  "storage_bytes": 1503068540,
+  "storage_human": "1.5 GB",
+  "base_model": "AxiomicLabs/GPT-X2-125M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/GPT-X2-125M-CIx-Long-Context · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/GPT-X2-125M-CIx-Long-Context",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow/GPT-X2-125M-CIx-Long-Context · Awesome!",
+      "url": "https://huggingface.co/reaperdoesntknow/GPT-X2-125M-CIx-Long-Context/discussions/1",
+      "snippet": "Hey, Awesome experiment! Cool to see people expanding on gpt-x2. Keep up the great work!"
+    },
+    {
+      "title": "GPT X2 125M CIx Long Context — Hardware Requirements & Compatibility",
+      "url": "https://llmrun.dev/model/reaperdoesntknow-gpt-x2-125m-cix-long-context",
+      "snippet": "GPT X2 125M CIx Long Context — Hardware Requirements & GPU Compatibility Chat GPT X2 125M CIx Long Context is a 126M-parameter open language model from reaperdoesntknow. It supports a context window of up to 32,768 tokens. At BF16 it needs about 0.60 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "Models — Axiomic Labs",
+      "url": "https://axiomiclabs.com/models",
+      "snippet": "The GPT-X family from Axiomic Labs: compact language models trained from scratch for efficient reasoning. Includes GPT-X 125M, GPT-X2 125M, GPT-X2.5 (training), and GPT-X3 (in design)."
+    },
+    {
+      "title": "GPT X2 125M by AxiomicLabs — VRAM 0.3GB, 1K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/AxiomicLabs%2FGPT-X2-125M,2NwwBVsIrsmVTuHBqwPGd8",
+      "snippet": "GPT X2 125M is an open-source 125m LLM by AxiomicLabs. VRAM 0.3GB, 1K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

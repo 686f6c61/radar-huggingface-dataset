@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Richasy/IndexTTS-2.5-GGUF",
+  "slug": "richasy-indextts-2-5-gguf",
+  "author": "Richasy",
+  "url": "https://huggingface.co/Richasy/IndexTTS-2.5-GGUF",
+  "created_at": "2026-08-14T04:03:09.000Z",
+  "updated_at": "2026-08-14T06:11:27.000Z",
+  "license": "bilibili-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "audio.cpp",
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar"
+  ],
+  "tags": [
+    "audio.cpp",
+    "gguf",
+    "text-to-speech",
+    "voice-cloning",
+    "multilingual",
+    "emotion-controllable",
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar",
+    "base_model:IndexTeam/IndexTTS-2.5",
+    "base_model:quantized:IndexTeam/IndexTTS-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4656,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7885093568,
+  "storage_human": "7.9 GB",
+  "base_model": "IndexTeam/IndexTTS-2.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - index-tts/index-tts: An Industrial-Level Controllable and ...",
+      "url": "https://github.com/index-tts/index-tts",
+      "snippet": "2025/05/14 🔥🔥 We release IndexTTS-1.5, significantly improving the model&#x27;s stability and its performance in the English language. 2025/03/25 🔥 We release IndexTTS-1.0 with model weights and inference code. 2025/02/12 🔥 We submitted our paper to arXiv, and released our demos and test sets."
+    },
+    {
+      "title": "index-tts · GitHub",
+      "url": "https://github.com/index-tts/",
+      "snippet": "IndexTTS is a zero-shot text-to-speech system that clones a voice from a single reference audio clip. The latest release, IndexTTS-2.5, supports Chinese, English, Japanese, Spanish and Arabic, with fine-grained emotion control, speaking speed control, pronunciation control (Pinyin / CMU phonemes / Japanese Kana), and faster inference than IndexTTS-2."
+    },
+    {
+      "title": "IndexTTS 2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2601.03888v5",
+      "snippet": "IndexTTS 2.5 retains the overall generation pipeline of IndexTTS 2, with targeted enhancements in four key components: multilingual text-to-semantic modeling, semantic codec frame rate compression, efficient semantic-to-mel conversion based on an improved backbone, and a reinforcement learning (RL)-based post-training mechanism for synthesis ..."
+    },
+    {
+      "title": "README.md · IndexTeam/IndexTTS-2.5 at main - Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/blob/main/README.md",
+      "snippet": "IndexTTS-2.5 IndexTTS-2.5 is a zero-shot text-to-speech model that performs voice cloning from a single reference audio. It supports Chinese, English, Japanese, Spanish, and Arabic, with cross-lingual voice transfer and disentangled emotion control."
+    },
+    {
+      "title": "IndexTTS-2.5: The Free Open-Weights AI Voice Cloning Model With Emotion ...",
+      "url": "http://creativeaishow.com/indextts-2-5-the-free-open-weights-ai-voice-cloning-model-with-emotion-control-runs-on-6gb-vram/",
+      "snippet": "Bilibili released IndexTTS-2.5 free on August 10, 2026. Zero-shot voice cloning in 5 languages with emotion control, on a 6GB GPU. Setup and licensing."
+    }
+  ]
+}

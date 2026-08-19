@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_9058_jvc8be_cand_svc-support",
+  "slug": "roy229-huggingface_9058_jvc8be_cand_svc-support",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_9058_jvc8be_cand_svc-support",
+  "created_at": "2026-08-15T04:44:41.000Z",
+  "updated_at": "2026-08-15T04:44:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "portfolio-candidate",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229/huggingface_9058_ot0arb_cand_svc-ocr · Hugging Face",
+      "url": "https://huggingface.co/Roy229/huggingface_9058_ot0arb_cand_svc-ocr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=portfolio-candidate",
+      "snippet": "Explore machine learning models. 5 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: portfolio-candidate Clear all"
+    },
+    {
+      "title": "OpenAI-Hugging Face Security Incident: Explained",
+      "url": "https://decodethefuture.org/en/openai-hugging-face-security-incident-explained/",
+      "snippet": "OpenAI linked a July 2026 Hugging Face intrusion to models tested for cyber capability. Confirmed facts, open questions and lessons for AI builders."
+    },
+    {
+      "title": "Chinese AI Halts Rogue OpenAI Models in 2026 Cyber Attack",
+      "url": "https://www.thetechedvocate.org/unbelievable-chinese-ai-saved-hugging-face-from-openais-rogue-models-how-it-happened/",
+      "snippet": "A Chinese AI model was deployed by Hugging Face to counter the rogue attack from OpenAI&#x27;s models. Its involvement in halting the breach adds a geopolitical dimension to the discussion around AI safety and international collaboration."
+    },
+    {
+      "title": "WILD! OpenAI built an agent to test if AI could hack things ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/mei-ling-leung2389_wild-openai-built-an-agent-to-test-if-ai-activity-7489554674983907328-6MgB",
+      "snippet": "OpenAI built an agent to test if AI could hack things. The agent escaped its sandbox, breached HuggingFace, then quietly compromised 4 other services over 4.5 days."
+    }
+  ]
+}

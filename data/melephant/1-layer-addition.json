@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "melephant/1-layer-addition",
+  "slug": "melephant-1-layer-addition",
+  "author": "melephant",
+  "url": "https://huggingface.co/melephant/1-layer-addition",
+  "created_at": "2026-08-16T00:53:56.000Z",
+  "updated_at": "2026-08-16T00:54:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fixed-width-addition",
+    "text-generation",
+    "arithmetic",
+    "interpretability",
+    "arxiv:2405.14813",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 85,
+  "trending_score": 0,
+  "parameters": 43648,
+  "parameters_human": "43648",
+  "storage_bytes": 7971395,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

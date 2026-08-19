@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "VAGOsolutions/SauerkrautLM-Multi-Reason-ModernColBERT",
+  "slug": "vagosolutions-sauerkrautlm-multi-reason-moderncolbert",
+  "author": "VAGOsolutions",
+  "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-Multi-Reason-ModernColBERT",
+  "created_at": "2025-07-21T11:43:55.000Z",
+  "updated_at": "2026-08-18T02:45:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "multi-vector",
+    "ColBERT",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "multilingual",
+    "late-interaction",
+    "retrieval",
+    "bright",
+    "loss:Distillation",
+    "arxiv:1908.10084",
+    "base_model:VAGOsolutions/SauerkrautLM-Multi-ModernColBERT",
+    "base_model:finetune:VAGOsolutions/SauerkrautLM-Multi-ModernColBERT",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 341,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 596469584,
+  "storage_human": "596 MB",
+  "base_model": "DavidGF/SauerkrautLM-Multi-ModernColBERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SauerkrautLM-Multi-Reason-ModernColBERT - Hugging Face",
+      "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-Multi-Reason-ModernColBERT",
+      "snippet": "SauerkrautLM-Multi-Reason-ModernColBERT This model is the first publicly available Late Interaction retriever that integrates: Knowledge Distillation from strong synthetic data (200k samples generated with Qwen/Qwen3-32B-AWQ and scored by a high-performing reranker)."
+    },
+    {
+      "title": "SauerkrautLM-Reason-Multi-ColBERT-15m - Hugging Face",
+      "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-Reason-Multi-ColBERT-15m",
+      "snippet": "SauerkrautLM-Reason-Multi-ColBERT This model is an ultra-compact Late Interaction retriever that leverages: Knowledge Distillation from strong synthetic data (200k samples generated with Qwen/Qwen3-32B-AWQ and scored by a high-performing reranker)."
+    },
+    {
+      "title": "GitHub - stanford-futuredata/ColBERT: ColBERT: state-of-the-art neural ...",
+      "url": "https://github.com/stanford-futuredata/ColBERT",
+      "snippet": "ColBERT is a fast and accurate retrieval model, enabling scalable BERT-based search over large text collections in tens of milliseconds. Figure 1: ColBERT&#x27;s late interaction, efficiently scoring the fine-grained similarity between a queries and a passage."
+    },
+    {
+      "title": "SauerkrautLM Multi Reason ModernColBERT — ThinkLLM",
+      "url": "https://thinkllm.dev/models/sauerkrautlm-multi-reason-moderncolbert",
+      "snippet": "This model operates as a retrieval specialist, producing text embeddings rather than generating language. It&#x27;s built around the ColBERT architecture, which uses late interaction between query and document token representations — a more nuanced matching approach than single-vector retrieval. The &#x27;Multi Reason&#x27; framing suggests it&#x27;s oriented toward reasoning-aware retrieval tasks, though ..."
+    },
+    {
+      "title": "Modern ColBERT - The European High Performance Computing Joint ...",
+      "url": "https://www.eurohpc-ju.europa.eu/modern-colbert_en",
+      "snippet": "Late-interaction models like ColBERT offer a balance, enabling fine-grained token-level interactions without excessive computational costs. However, existing implementations are outdated and not optimized for modern NLP workloads.This project proposes ModernColBERT, a next-generation retrieval model built on ModernBERT, a state-of-the-art encoder."
+    }
+  ]
+}

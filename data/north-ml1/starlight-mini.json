@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "North-ML1/starlight-mini",
+  "slug": "north-ml1-starlight-mini",
+  "author": "North-ML1",
+  "url": "https://huggingface.co/North-ML1/starlight-mini",
+  "created_at": "2026-01-31T00:43:45.000Z",
+  "updated_at": "2026-08-15T19:06:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "coolness",
+    "north.ai",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "base_model:arthu1/astrocoder-star-merge",
+    "base_model:finetune:arthu1/astrocoder-star-merge",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693614,
+  "storage_human": "15.2 GB",
+  "base_model": "arthu1/astrocoder-star-merge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

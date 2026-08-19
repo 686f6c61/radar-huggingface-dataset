@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Flashtond22/Taltos-1",
+  "slug": "flashtond22-taltos-1",
+  "author": "Flashtond22",
+  "url": "https://huggingface.co/Flashtond22/Taltos-1",
+  "created_at": "2026-08-17T10:36:07.000Z",
+  "updated_at": "2026-08-17T10:36:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hu",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "magyar",
+    "hungarian",
+    "taltos",
+    "reasoning",
+    "conversational",
+    "hu",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1073283904,
+  "parameters_human": "1.07B",
+  "storage_bytes": 2169285105,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for Flashtond22/Taltos-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Flashtond22/Taltos-27B",
+      "snippet": "Explore machine learning models. Model Tree Flashtond22/Taltos-27B Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Taltos-27B-FP8 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Flashtond22/Taltos-27B-FP8",
+      "snippet": "Run Taltos-27B-FP8 with FriendliAI inference. Ez a Táltos-27B FP8 (W8A8) változata: a súlyok csatornánkénti, az aktivációk tokenenkénti dinamikus skálázással."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    }
+  ]
+}

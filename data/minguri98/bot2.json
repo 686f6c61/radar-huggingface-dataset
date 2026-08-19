@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "minguri98/bot2",
+  "slug": "minguri98-bot2",
+  "author": "minguri98",
+  "url": "https://huggingface.co/minguri98/bot2",
+  "created_at": "2025-11-19T00:36:37.000Z",
+  "updated_at": "2026-08-14T22:33:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 425,
+  "trending_score": 0,
+  "parameters": 5680910336,
+  "parameters_human": "5.68B",
+  "storage_bytes": 46830603494,
+  "storage_human": "46.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

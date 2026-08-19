@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/mlreview-fraud-detector-53626ab7",
+  "slug": "tianfuxinqu-mlreview-fraud-detector-53626ab7",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/mlreview-fraud-detector-53626ab7",
+  "created_at": "2026-08-14T15:35:43.000Z",
+  "updated_at": "2026-08-14T15:35:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TianfuXinqu/mlreview-fraud-detector-53626ab7 · Hugging Face",
+      "url": "https://huggingface.co/TianfuXinqu/mlreview-fraud-detector-53626ab7",
+      "snippet": "TianfuXinqu / mlreview-fraud-detector-53626ab7 like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ScamAdviser | Check Any Website for Scams & Fraud | Free",
+      "url": "https://www.scamadviser.com/",
+      "snippet": "Don&#x27;t get scammed online. ScamAdviser&#x27;s free website checker reveals if a site is legit or hiding fraud, malware, or phishing traps. Check any URL in seconds."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "navya10m/Fake-review-fraud-detector - GitHub",
+      "url": "https://github.com/navya10m/Fake-review-fraud-detector",
+      "snippet": "Fake Review Fraud Detector 📌 Overview NLP-based fake review detection system using sentiment analysis, lexical diversity, and text pattern analysis. The model classifies reviews as fake or real using machine learning techniques."
+    },
+    {
+      "title": "Fraud Detection System: AI-Powered Analytics for ... - GitHub",
+      "url": "https://github.com/reddygautam98/FraudShield-AI-Powered-Fraud-Detection-System",
+      "snippet": "Fraud prevention is more than just security—it&#x27;s about business sustainability, financial risk mitigation, and regulatory compliance. This Fraud Detection System integrates cutting-edge Machine Learning, SQL analytics, and real-time dashboards to detect and prevent fraudulent activities, ensuring a secure financial ecosystem for businesses."
+    }
+  ]
+}

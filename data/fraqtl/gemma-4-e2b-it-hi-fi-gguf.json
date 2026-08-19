@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "fraQtl/Gemma-4-E2B-it-Hi-Fi-GGUF",
+  "slug": "fraqtl-gemma-4-e2b-it-hi-fi-gguf",
+  "author": "fraQtl",
+  "url": "https://huggingface.co/fraQtl/Gemma-4-E2B-it-Hi-Fi-GGUF",
+  "created_at": "2026-07-21T15:49:56.000Z",
+  "updated_at": "2026-08-18T20:43:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "on-device",
+    "edge",
+    "iphone",
+    "offline",
+    "tool-calling",
+    "q4_k_m",
+    "llama.cpp",
+    "imatrix",
+    "calibration-aware-quantization",
+    "gemma-4",
+    "gemma-4-e2b",
+    "quantized",
+    "fraqtl",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 18,
+  "downloads_30d": 7809,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 8769629262,
+  "storage_human": "8.8 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · fraQtl/Gemma-4-E2B-it-Hi-Fi-GGUF at main",
+      "url": "https://huggingface.co/fraQtl/Gemma-4-E2B-it-Hi-Fi-GGUF/blob/main/README.md",
+      "snippet": "fraQtl / Gemma-4-E2B-it-Hi-Fi-GGUF like 15 Follow fraQtl AI Research 16 Text Generation GGUF English on-device edge iphone offline tool-calling q4_k_m llama.cpp imatrix calibration-aware-quantization gemma-4 gemma-4-e2b quantized fraqtl conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use ..."
+    },
+    {
+      "title": "fraQtl/Gemma-4-E2B-it-Hi-Fi-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/fraQtl/Gemma-4-E2B-it-Hi-Fi-GGUF/tree/main",
+      "snippet": "fraQtl / Gemma-4-E2B-it-Hi-Fi-GGUF like 13 Follow fraQtl AI Research 13 Text Generation GGUF English on-device edge iphone offline tool-calling q4_k_m llama.cpp imatrix calibration-aware-quantization gemma-4 gemma-4-e2b quantized fraqtl conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 E2B: Complete Guide to Google&#x27;s Edge AI Model 2026",
+      "url": "https://www.gemma4.wiki/models/gemma-4-e2b",
+      "snippet": "Explore the capabilities of Gemma 4 E2B, Google&#x27;s latest edge-optimized AI model. Learn about its native multimodality, thinking features, and Apache 2.0 license."
+    }
+  ]
+}

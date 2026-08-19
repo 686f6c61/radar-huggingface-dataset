@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_100Mpt_hfinit_200M_s0_2026-08-14_04-58-21_460275-pt",
+  "slug": "alexkstern-kdyck_dose_100mpt_hfinit_200m_s0_2026-08-14_04-58-21_460275-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_200M_s0_2026-08-14_04-58-21_460275-pt",
+  "created_at": "2026-08-14T05:02:37.000Z",
+  "updated_at": "2026-08-14T05:03:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669491,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern/kdyck_10pct_100M_d20_seed2_2026-07-22_10-04-34_725520-ppt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_10pct_100M_d20_seed2_2026-07-22_10-04-34_725520-ppt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kdyck_10pct_100M_d20_seed0_2026-07-21_18-43-25_000022-ppt",
+      "url": "https://huggingface.co/alexkstern/kdyck_10pct_100M_d20_seed0_2026-07-21_18-43-25_000022-ppt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Ministral 3 3B - Mistral AI",
+      "url": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+      "snippet": "Ministral 3 3B is the smallest and most efficient model in the Ministral 3 family, offering robust language and vision capabilities in a compact package. Designed for edge deployment, it delivers high performance across diverse hardware, including local setups."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    }
+  ]
+}

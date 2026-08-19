@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_100Mpt_hfinit_500M_s0_2026-08-14_05-13-31_807923-pt",
+  "slug": "alexkstern-kdyck_dose_100mpt_hfinit_500m_s0_2026-08-14_05-13-31_807923-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_500M_s0_2026-08-14_05-13-31_807923-pt",
+  "created_at": "2026-08-14T05:20:35.000Z",
+  "updated_at": "2026-08-14T05:21:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern (astar) - Hugging Face",
+      "url": "https://huggingface.co/datasets/alexkstern/",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "alexkstern/kdyck_1pct_50B_d24_seed0_sweep_Xn05_2026-07-30_09-40-41 ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_1pct_50B_d24_seed0_sweep_Xn05_2026-07-30_09-40-41_756382-ppt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Azure OpenAI Model Regional Availability",
+      "url": "https://model-availability.azurewebsites.net/",
+      "snippet": "Model Availabilty is updated every 10 minutes. Last Updated: 2026-08-13 09:59:03 PM EDT Download .md file"
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2503.05628v2",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "Models - Kaldi ASR",
+      "url": "https://kaldi-asr.org/models.html",
+      "snippet": "Models This page contains Kaldi models available for download as .tar.gz archives. They may be downloaded and used for any purpose. Older models can be found on the downloads page. If you have models you would like to share on this page please contact us."
+    }
+  ]
+}

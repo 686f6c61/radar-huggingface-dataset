@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bazik-0/indictrans2-en-kas-finetuned-200M-5",
+  "slug": "bazik-0-indictrans2-en-kas-finetuned-200m-5",
+  "author": "bazik-0",
+  "url": "https://huggingface.co/bazik-0/indictrans2-en-kas-finetuned-200M-5",
+  "created_at": "2026-08-17T18:29:10.000Z",
+  "updated_at": "2026-08-17T19:31:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "translation",
+    "machine-translation",
+    "indictrans2",
+    "kashmiri",
+    "low-resource",
+    "lora",
+    "en",
+    "ks",
+    "arxiv:2305.16307",
+    "base_model:ai4bharat/indictrans2-en-indic-dist-200M",
+    "base_model:adapter:ai4bharat/indictrans2-en-indic-dist-200M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11128192,
+  "storage_human": "11 MB",
+  "base_model": "ai4bharat/indictrans2-en-indic-dist-200M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AI4Bharat/IndicTrans2: Translation models for 22 scheduled ...",
+      "url": "https://github.com/ai4bharat/IndicTrans2",
+      "snippet": "IndicTrans2 is the first open-source transformer-based multilingual NMT model that supports high-quality translations across all the 22 scheduled Indic languages — including multiple scripts for low-resouce languages like Kashmiri, Manipuri and Sindhi."
+    },
+    {
+      "title": "IndicTrans2 - ai4bharat.iitm.ac.in",
+      "url": "https://ai4bharat.iitm.ac.in/areas/model/NMT/IndicTrans2/",
+      "snippet": "IndicTrans2 is the first open-source transformer-based multilingual NMT model that supports high-quality translations across all the 22 scheduled Indic languages — including multiple scripts for low-resouce languages like Kashmiri, Manipuri and Sindhi. It adopts script unification wherever feasible to leverage transfer learning by lexical sharing between languages. Overall, the model ..."
+    },
+    {
+      "title": "GitHub - samnaveenkumaroff/IndicTrans2: IndicTrans2 is the first open ...",
+      "url": "https://github.com/samnaveenkumaroff/IndicTrans2/",
+      "snippet": "IndicTrans2 is the first open-source transformer-based multilingual NMT model that supports high-quality translations across all the 22 scheduled Indic languages — including multiple scripts for low-resouce languages like Kashmiri, Manipuri and Sindhi."
+    },
+    {
+      "title": "ai4bharat/indictrans2-indic-en-dist-200M · Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/indictrans2-indic-en-dist-200M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for ai4bharat/indictrans2-en-indic-dist-200M ...",
+      "url": "https://huggingface.co/models?other=base_model:finetune:ai4bharat/indictrans2-en-indic-dist-200M",
+      "snippet": "Explore machine learning models. thenlpresearcher/shalaka_fd_indictrans2-en-indic-dist-200M_finetuned_eng_Latn_to_mar_Deva"
+    }
+  ]
+}

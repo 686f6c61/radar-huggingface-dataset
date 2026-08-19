@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "vishinvents/distil-qwen3-1.7b-posthog-prioritizer",
+  "slug": "vishinvents-distil-qwen3-1-7b-posthog-prioritizer",
+  "author": "vishinvents",
+  "url": "https://huggingface.co/vishinvents/distil-qwen3-1.7b-posthog-prioritizer",
+  "created_at": "2026-08-17T22:06:55.000Z",
+  "updated_at": "2026-08-17T23:33:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "distil-labs",
+    "posthog",
+    "product-analytics",
+    "ranking",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 576,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 6951352482,
+  "storage_human": "7.0 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Enhanced capabilities in 256K-token long-context understanding, extendable up to 1 million tokens. Qwen3-Thinking-2507 is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements:"
+    },
+    {
+      "title": "Qwen3 1.7B Fine-Tuning Guide - distil labs",
+      "url": "https://www.distillabs.ai/learn/qwen3-1-7b-fine-tuning-guide/",
+      "snippet": "Qwen3 1.7B Fine-Tuning Guide Qwen3-1.7B is the model the distil labs docs tell you to start with when you have no stronger constraint. It is small enough to serve on a modest GPU, ranks mid-table after fine-tuning across eight tasks, and supports every task type the platform offers, including tool calling."
+    },
+    {
+      "title": "DistilQwen3-1.7B-uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/DistilQwen3-1.7B-uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-1.7B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-1.7B/summary",
+      "snippet": "Qwen3-1.7B Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features: Uniquely support of seamless ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    }
+  ]
+}

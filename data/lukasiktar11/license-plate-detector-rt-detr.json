@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "lukasiktar11/license-plate-detector-rt-detr",
+  "slug": "lukasiktar11-license-plate-detector-rt-detr",
+  "author": "lukasiktar11",
+  "url": "https://huggingface.co/lukasiktar11/license-plate-detector-rt-detr",
+  "created_at": "2026-08-18T09:21:28.000Z",
+  "updated_at": "2026-08-18T09:21:42.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197716283,
+  "storage_human": "198 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukasiktar11/license-plate-ocr-detector-rt-detr · Hugging Face",
+      "url": "https://huggingface.co/lukasiktar11/license-plate-ocr-detector-rt-detr",
+      "snippet": "lukasiktar11 / license-plate-ocr-detector-rt-detr like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new ... Downloads last month -"
+    },
+    {
+      "title": "lukasiktar11/license-plate-ocr-detector at main - Hugging Face",
+      "url": "https://huggingface.co/lukasiktar11/license-plate-ocr-detector/tree/main",
+      "snippet": "lukasiktar11 / license-plate-ocr-detector like 0 Object Detection ultralytics ONNX ocr yolo License:agpl-3.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Real-Time Automatic License Plate Recognition Using RT-DETR v2",
+      "url": "https://app.readytensor.ai/publications/real-time-automatic-license-plate-recognition-using-rt-detr-v2-mphTGwpTxpdr",
+      "snippet": "Recent advances in Transformer-based object detectors have made it possible to achieve both high accuracy and real-time inference. RT-DETR v2 is one such model, offering end-to-end detection without traditional post-processing such as non-maximum suppression (NMS)."
+    },
+    {
+      "title": "rtdetr_license_plate Object Detection Model (v15, 2024-12-21 2:00pm) by ...",
+      "url": "https://universe.roboflow.com/rtdetrlicenseplate/rtdetr_license_plate/dataset/15",
+      "snippet": "504 open source license_plate images and annotations in multiple formats for training computer vision models. rtdetr_license_plate (v15, 2024-12-21 2:00pm), created by RTDETRlicenseplate"
+    },
+    {
+      "title": "GitHub - lyuwenyu/RT-DETR: [CVPR 2024] Official RT-DETR (RTDETR paddle ...",
+      "url": "https://github.com/lyuwenyu/RT-DETR",
+      "snippet": "[CVPR 2024] Official RT-DETR (RTDETR paddle pytorch), Real-Time DEtection TRansformer, DETRs Beat YOLOs on Real-time Object Detection. 🔥 🔥 🔥 - lyuwenyu/RT-DETR"
+    }
+  ]
+}

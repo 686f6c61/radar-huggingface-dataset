@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Plaguekind/Minimax-H3",
+  "slug": "plaguekind-minimax-h3",
+  "author": "Plaguekind",
+  "url": "https://huggingface.co/Plaguekind/Minimax-H3",
+  "created_at": "2026-08-03T19:50:50.000Z",
+  "updated_at": "2026-08-11T15:53:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax",
+    "h3",
+    "i2v",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:finetune:Comfy-Org/MiniMax-H3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MiniMaxAI/MiniMax-H3, Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plaguekind/Minimax-H3 · Hugging Face",
+      "url": "https://huggingface.co/Plaguekind/Minimax-H3",
+      "snippet": "like 3 minimax h3 i2v License:mit Model card FilesFiles and versions xet Community Copy to bucket new V1 Notes Requirements Diffusion Model VAE Text Encoder Frame Interpolation Support PlagueKind - Minimax H3 - I2V - Ease of use"
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "PlagueKind MiniMax H3 - a Hugging Face Space by mcuo",
+      "url": "https://huggingface.co/spaces/mcuo/plaguekind-minimax-h3",
+      "snippet": "MiniMax-H3 is a 33B parameter video generation model that produces video and a fully synchronized soundtrack (ambience, foley, speech) in one pass. PlagueKind&#x27;s V1.5 workflow is a tuning of it: euler on a linear_quadratic sigma grid at 15 steps, FSR RCAS sharpening at 0.3, and FILM 2x frame interpolation to 48 fps. Text-to-video, first frame, last frame, or both."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "README.md · Plaguekind/Minimax-H3 at main",
+      "url": "https://d6108366.hf-mirror.com/Plaguekind/Minimax-H3/blob/main/README.md?code=true",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

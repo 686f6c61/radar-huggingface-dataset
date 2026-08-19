@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eineComadreja/Reinforce-cartpole-policy-from-scratch",
+  "slug": "einecomadreja-reinforce-cartpole-policy-from-scratch",
+  "author": "eineComadreja",
+  "url": "https://huggingface.co/eineComadreja/Reinforce-cartpole-policy-from-scratch",
+  "created_at": "2026-08-18T23:31:15.000Z",
+  "updated_at": "2026-08-18T23:31:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3849,
+  "storage_human": "3849 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CartPole REINFORCE — Policy Gradient from Scratch - GitHub",
+      "url": "https://github.com/dalchandrana/cartpole-reinforce",
+      "snippet": "A from-scratch implementation of the REINFORCE policy gradient algorithm in PyTorch, trained to solve the CartPole-v1 environment from Gymnasium. No RL libraries, no shortcuts — every line of the training loop, the loss function, and the reward computation is written and understood from first ..."
+    },
+    {
+      "title": "CartPole with Policy Gradient (REINFORCE) - GitHub",
+      "url": "https://github.com/UNICODEY/cartpole-policy-gradient",
+      "snippet": "Implements the REINFORCE algorithm from scratch to solve the CartPole-v1 environment. The agent observes 4 state variables (cart position, cart velocity, pole angle, pole angular velocity) and learns to output a policy — a probability distribution over actions (push left or push right)."
+    },
+    {
+      "title": "Policy Gradient for CartPole | rlcode/reinforcement-learning | DeepWiki",
+      "url": "https://deepwiki.com/rlcode/reinforcement-learning/5.3-policy-gradient-for-cartpole",
+      "snippet": "The REINFORCE implementation for CartPole demonstrates a fundamental policy gradient method that directly learns a stochastic policy for action selection. This approach differs from value-based methods by learning the policy directly, making it suitable for continuous action spaces and problems where the optimal policy is stochastic."
+    },
+    {
+      "title": "Project: REINFORCE on CartPole - Deep Reinforcement Learning",
+      "url": "https://www.kinetiqvision.com/learn/deep-reinforcement-learning/policy-gradients/project-reinforce-cartpole",
+      "snippet": "Before we begin Implement REINFORCE — Monte Carlo policy gradients — on CartPole-v1. You optimize the policy directly (no Q-table), using full-episode returns and the log-probability trick from Module 5."
+    },
+    {
+      "title": "giuseppemassafra/Reinforce-cartpole_policy · Hugging Face",
+      "url": "https://huggingface.co/giuseppemassafra/Reinforce-cartpole_policy",
+      "snippet": "giuseppemassafra / Reinforce-cartpole_policy like 0 Reinforcement LearningCartPole-v1reinforcecustom-implementationdeep-rl-classEval Results Model card FilesFiles and versions Community Use with library Edit model card Reinforce Agent playing CartPole-v1"
+    }
+  ]
+}

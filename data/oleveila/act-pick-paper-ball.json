@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "oleveila/act-pick-paper-ball",
+  "slug": "oleveila-act-pick-paper-ball",
+  "author": "oleveila",
+  "url": "https://huggingface.co/oleveila/act-pick-paper-ball",
+  "created_at": "2026-08-16T15:04:43.000Z",
+  "updated_at": "2026-08-17T14:01:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 620121888,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kshirish3/act_pick_ball_policy_2 · Hugging Face",
+      "url": "https://huggingface.co/kshirish3/act_pick_ball_policy_2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Powerball AI Prediction: Hot Numbers, Strategies & How It Works (2026)",
+      "url": "https://www.pickdaddyai.com/blog/powerball-ai-prediction",
+      "snippet": "Can AI pick better Powerball numbers? We break down how AI prediction actually works — hot number frequency, sum target, delta gap analysis, and Claude&#x27;s full AI pick — applied to Powerball&#x27;s 5/69 format."
+    },
+    {
+      "title": "Paper Banana — AI Academic Figure Generator",
+      "url": "https://paperbanana.run/",
+      "snippet": "Paper Banana transforms paper text into publication-ready methodology diagrams and statistical plots in under 2 minutes. AI-powered, free to try."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "PaperBanana - AI Academic Illustration Generator",
+      "url": "https://scifigureai.com/paperbanana",
+      "snippet": "PaperBanana automates publication-ready academic illustrations using AI. Generate methodology diagrams, statistical charts, and infographics from paper text through multi-agent collaboration."
+    }
+  ]
+}

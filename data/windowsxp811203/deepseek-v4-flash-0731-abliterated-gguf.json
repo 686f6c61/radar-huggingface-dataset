@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "windowsxp811203/DeepSeek-V4-Flash-0731-Abliterated-GGUF",
+  "slug": "windowsxp811203-deepseek-v4-flash-0731-abliterated-gguf",
+  "author": "windowsxp811203",
+  "url": "https://huggingface.co/windowsxp811203/DeepSeek-V4-Flash-0731-Abliterated-GGUF",
+  "created_at": "2026-08-16T08:21:06.000Z",
+  "updated_at": "2026-08-17T05:16:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "deepseek4",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:windowsxp811203/DeepSeek-V4-Flash-0731-Abliterated",
+    "base_model:quantized:windowsxp811203/DeepSeek-V4-Flash-0731-Abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 291697320928,
+  "storage_human": "291.7 GB",
+  "base_model": "windowsxp811203/DeepSeek-V4-Flash-0731-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "Overview Relevant source files DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE) architecture README.md 20 ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 - GitHub",
+      "url": "https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "Deepseek v4 flash requirements: Windows 10/11, NVIDIA GPU with 8GB+ VRAM (for Q4_K_M GGUF), or CPU-only mode with 16GB+ RAM. For the full BF16 model, you need 4x H100 or 8x A100 GPUs."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731-Abliterated - friendli.ai",
+      "url": "https://friendli.ai/models/windowsxp811203/DeepSeek-V4-Flash-0731-Abliterated",
+      "snippet": "thinking=true was measured with vLLM&#x27;s --reasoning-parser deepseek_v4, so the chain-of-thought lands in reasoning and content holds only the final answer. Responses truncated by max_tokens before the reasoning finished are reported separately and excluded from the denominator (4/520 on AdvBench) rather than being scored as compliance."
+    }
+  ]
+}

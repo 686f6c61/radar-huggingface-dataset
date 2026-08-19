@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RousingSea7309/sentiment-distilbert-imdb",
+  "slug": "rousingsea7309-sentiment-distilbert-imdb",
+  "author": "RousingSea7309",
+  "url": "https://huggingface.co/RousingSea7309/sentiment-distilbert-imdb",
+  "created_at": "2026-08-16T22:41:22.000Z",
+  "updated_at": "2026-08-16T22:41:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

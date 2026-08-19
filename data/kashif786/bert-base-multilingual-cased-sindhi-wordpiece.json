@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kashif786/bert-base-multilingual-cased-sindhi-wordpiece",
+  "slug": "kashif786-bert-base-multilingual-cased-sindhi-wordpiece",
+  "author": "Kashif786",
+  "url": "https://huggingface.co/Kashif786/bert-base-multilingual-cased-sindhi-wordpiece",
+  "created_at": "2026-08-14T05:30:29.000Z",
+  "updated_at": "2026-08-14T05:31:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 191027529,
+  "parameters_human": "191.0M",
+  "storage_bytes": 764133804,
+  "storage_human": "764 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google-bert/bert-base-multilingual-cased · Hugging Face",
+      "url": "https://huggingface.co/google-bert/bert-base-multilingual-cased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kashif786/bert-base-multilingual-cased-sindhi-extended · Hugging Face",
+      "url": "https://huggingface.co/Kashif786/bert-base-multilingual-cased-sindhi-extended",
+      "snippet": "Instructions to use Kashif786/bert-base-multilingual-cased-sindhi-extended with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "google-bert/bert-base-multilingual-cased - Hugging Face Hub ... - Socket",
+      "url": "https://socket.dev/huggingface/package/google-bert/bert-base-multilingual-cased",
+      "snippet": "BERT multilingual base model (cased) Pretrained model on the top 104 languages with the largest Wikipedia using a masked language modeling (MLM) objective. It was introduced in this paper and first released in this repository. This model is case sensitive: it makes a difference between english and English."
+    },
+    {
+      "title": "bert-base-multilingual-cased: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bert-base-multilingual-cased-google-bert",
+      "snippet": "Overview bert-base-multilingual-cased is a bidirectional transformer model pretrained on 104 languages with the largest Wikipedia corpora using masked language modeling and next sentence prediction objectives. Built by google-bert, this model differs fundamentally from unidirectional approaches by learning representations that condition on both past and future context simultaneously. The model ..."
+    },
+    {
+      "title": "BERT-base-multilingual-cased - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/bert-base-multilingual-cased",
+      "snippet": "BERT-base-multilingual-cased is a multilingual Transformer model that pretrains on Wikipedia text across 104 languages using a shared cased WordPiece vocabulary. It adheres to the standard BERT-Base architecture, enabling zero-shot transfer and effective cross-lingual learning through long context windows and fine-tuning strategies. Empirical studies reveal robust performance in syntactic ..."
+    }
+  ]
+}

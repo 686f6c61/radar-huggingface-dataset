@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kjfk/tracknet-tennis-ball-mirror",
+  "slug": "kjfk-tracknet-tennis-ball-mirror",
+  "author": "kjfk",
+  "url": "https://huggingface.co/kjfk/tracknet-tennis-ball-mirror",
+  "created_at": "2026-08-18T19:14:13.000Z",
+  "updated_at": "2026-08-18T19:14:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tennis",
+    "ball-tracking",
+    "tracknet",
+    "heatmap",
+    "pytorch",
+    "arxiv:1907.03698",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42886919,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TrackNet V4",
+      "url": "https://tracknetv4.github.io/",
+      "snippet": "Experimental results on the tennis ball and shuttlecock datasets show that our method enhances the tracking performance of both TrackNetV2 and V3. We refer to our lightweight, plug-and-play solution, built on top of the existing TrackNet, as TrackNetV4."
+    },
+    {
+      "title": "GitHub - TrackNetV4/TrackNetV4",
+      "url": "https://github.com/TrackNetV4/TrackNetV4",
+      "snippet": "The train.py script is used to train a TrackNet model (e.g., Baseline_TrackNetV2, TrackNetV4 variants) on a selected dataset. It supports configurable training parameters, optional pretrained weight loading, checkpoint saving, and intermediate evaluation."
+    },
+    {
+      "title": "GitHub - sayfzakir/TrackNetMirror",
+      "url": "https://github.com/sayfzakir/TrackNetMirror",
+      "snippet": "TrackNet: Tennis Ball Tracking from Broadcast Video by Deep Learning Networks"
+    },
+    {
+      "title": "Tracknet Data Dataset by Keju Jiang - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/keju-jiang/datasets/tracknet-data",
+      "snippet": "Tennis match video clips captured from high-angle court viewpoints, annotated for classification to track player movements and ball trajectories during rallies."
+    },
+    {
+      "title": "[2409.14543] TrackNetV4: Enhancing Fast Sports Object Tracking with ...",
+      "url": "https://arxiv.org/abs/2409.14543",
+      "snippet": "Experimental results on the tennis ball and shuttlecock datasets show that our method enhances the tracking performance of both TrackNetV2 and V3. We refer to our lightweight, plug-and-play solution, built on top of the existing TrackNet, as TrackNetV4."
+    }
+  ]
+}

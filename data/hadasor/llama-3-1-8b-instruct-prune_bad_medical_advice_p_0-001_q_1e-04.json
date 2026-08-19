@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.001_q_1e-04",
+  "slug": "hadasor-llama-3-1-8b-instruct-prune_bad_medical_advice_p_0-001_q_1e-04",
+  "author": "hadasor",
+  "url": "https://huggingface.co/hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.001_q_1e-04",
+  "created_at": "2026-08-17T22:14:11.000Z",
+  "updated_at": "2026-08-17T22:16:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 434,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0007_q_4e-05",
+      "url": "https://huggingface.co/hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0007_q_4e-05",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hadasor/Llama-3.1-8B-Instruct-prune_risky_financial_advice_p_0.0007_q ...",
+      "url": "https://huggingface.co/hadasor/Llama-3.1-8B-Instruct-prune_risky_financial_advice_p_0.0007_q_1e-05/discussions",
+      "snippet": "Instructions to use hadasor/Llama-3.1-8B-Instruct-prune_risky_financial_advice_p_0.0007_q_1e-05 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use hadasor/Llama-3.1-8B-Instruct-prune_risky_financial_advice_p_0.0007_q_1e-05 with Transformers: # Use a pipeline as a high-level helper from transformers import ..."
+    },
+    {
+      "title": "Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0007_q_2e-05",
+      "url": "https://friendli.ai/models/hadasor/Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0007_q_2e-05",
+      "snippet": "Deploy Llama-3.1-8B-Instruct-prune_bad_medical_advice_p_0.0007_q_2e-05 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and ..."
+    },
+    {
+      "title": "Kimi K3 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/kimi-3",
+      "snippet": "Kimi K3 by Moonshot AI ranks #5 of 218 with a public score of 80.5/100. Evidence: Supported; this profile shows 44 source-displayable benchmark rows."
+    },
+    {
+      "title": "How to Prune and Distill Llama-3.1 8B to an NVIDIA Llama-3.1-Minitron ...",
+      "url": "https://forums.developer.nvidia.com/t/how-to-prune-and-distill-llama-3-1-8b-to-an-nvidia-llama-3-1-minitron-4b-model/303396",
+      "snippet": "How to Prune and Distill Llama-3.1 8B to an NVIDIA Llama-3.1-Minitron 4B Model Technical Blogs & Events Technical Blog llama"
+    }
+  ]
+}

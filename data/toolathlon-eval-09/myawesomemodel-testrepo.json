@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "toolathlon-eval-09/MyAwesomeModel-TestRepo",
+  "slug": "toolathlon-eval-09-myawesomemodel-testrepo",
+  "author": "toolathlon-eval-09",
+  "url": "https://huggingface.co/toolathlon-eval-09/MyAwesomeModel-TestRepo",
+  "created_at": "2026-08-17T18:41:16.000Z",
+  "updated_at": "2026-08-17T18:42:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "toolathlon-eval-09 (toolathlon-eval-09) - Hugging Face",
+      "url": "https://huggingface.co/toolathlon-eval-09",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 2 hours ago"
+    },
+    {
+      "title": "toolathlon-eval-09/MyAwesomeModel-TestRepo at main",
+      "url": "https://huggingface.co/toolathlon-eval-09/MyAwesomeModel-TestRepo/tree/main",
+      "snippet": "toolathlon-eval-09 / MyAwesomeModel-TestRepo like 0 Feature Extraction Transformers PyTorch bert License:mit Model card FilesFiles and versions xet Community Deploy Use this model main MyAwesomeModel-TestRepo 9.14 kB Ctrl+K Ctrl+K 1 contributor History:2 commits toolathlon-eval-09 Upload folder using huggingface_hub a0c5395 verifiedabout 2 ..."
+    },
+    {
+      "title": "MyAwesomeModel TestRepo (未知) — MMLU 30 | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo",
+      "snippet": "MyAwesomeModel TestRepo by dongbobo. Scores: MMLU 30, . 未知 open-source AI model. MyAwesomeModel-TestRepo is an embedding model based on BERT by dongbobo, licensed under MIT and desi"
+    },
+    {
+      "title": "GitHub - hkust-nlp/Toolathlon: [ICLR 2026] The Tool Decathlon ...",
+      "url": "https://github.com/hkust-nlp/Toolathlon",
+      "snippet": "Toolathlon is a benchmark to assess language agents&#x27; general tool use in realistic environments. It features 600+ diverse tools based on real-world software environments. Each task requires long-horizon tool calls to complete. This repository corresponds to the Toolathlon-Verified final release. Below we show a demo task where the agent needs to automatically check assignments in the email box ..."
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/modoupennington876/myawesomemodel-testrepo",
+      "snippet": "MyAwesomeModel-TestRepo is primarily used for Embeddings. Myawesomemodel-Testrepo is a large language model released by modoupennington876, focusing on text generation and conversational interaction, suitable for server deployment."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/CogniSphere-Main",
+  "slug": "qf-iquest-cognisphere-main",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/CogniSphere-Main",
+  "created_at": "2026-08-17T19:07:18.000Z",
+  "updated_at": "2026-08-17T19:07:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 135,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/CogniSphere-Main · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/CogniSphere-Main",
+      "snippet": "1. Introduction The CogniSphere has undergone a significant version upgrade. In the latest update, CogniSphere has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "qf-iquest (qingfeng) - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest",
+      "snippet": "Sort: Recently updated. qf-iquest/SynthMind-Release. Feature Extraction • Updated 2 days ago • 96. qf-iquest/MyAwesomeModel-TestRepo. Feature Extraction • Updated 2 days ago"
+    },
+    {
+      "title": "CogniSphere - GitHub",
+      "url": "https://github.com/cognisphere",
+      "snippet": "Welcome to CogniSphere! CogniSphere is an open-source, distributed Large Language Model (LLM) project inspired by decentralized networks like SETI@home and Tor. The goal is to create a powerful AI model that is hosted and processed across a global network of computers, democratizing access to AI and allowing anyone to contribute to its development."
+    },
+    {
+      "title": "GitHub - amanazads/CogniSphere-AI",
+      "url": "https://github.com/amanazads/CogniSphere-AI",
+      "snippet": "CogniSphere AI is a full-stack, enterprise-grade AI intelligence platform combining General Data Analytics, Data Management & Ingestion, Patent Landscape Analysis, and AI-Powered Deliverable Exports."
+    },
+    {
+      "title": "Cognisphere",
+      "url": "https://www.cogni-sphere.org/about",
+      "snippet": "Robotics and AI professional network About Cognisphere builds autonomy that holds up in the real world. Autonomy stacks often look strong in demos but break under real constraints: timing jitter, sensor edge cases, mapping drift, unstable interfaces, deployment inconsistency. Cognisphere exists to close that gap — turning autonomy prototypes into reliable, production-ready systems."
+    }
+  ]
+}

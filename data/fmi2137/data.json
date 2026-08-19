@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FMI2137/Data",
+  "slug": "fmi2137-data",
+  "author": "FMI2137",
+  "url": "https://huggingface.co/FMI2137/Data",
+  "created_at": "2026-08-18T10:43:09.000Z",
+  "updated_at": "2026-08-18T10:43:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Integrating FMI and ML/AI models on the open-source digital twin ...",
+      "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1002/spe.3322",
+      "snippet": "The integration of simulation within OpenTwins and ML, enables the exploration of \"what-if\" scenarios, the prediction of system behavior, testing of alternative strategies, advanced modeling techniques, algorithms, and data-driven approaches to gain insights, optimize system performance and so forth all in a cost-effective and risk-free ..."
+    },
+    {
+      "title": "FMI + AI - wcc.ep.liu.se",
+      "url": "https://wcc.ep.liu.se/index.php/MODPROD/article/download/1222/702/1685",
+      "snippet": "FMI Interfaces FMI for Co-Simulation (CS) − Subsystems solved independently. − Data exchange restricted to discrete communication points. − Asynchronous execution is possible. − Execution of a time step: fmiStatus fmiDoStep(fmi_cmpnt, t_curr, dt, newStep)"
+    },
+    {
+      "title": "PDF Gemini-3-7-Flash-Model-Card - storage.googleapis.com",
+      "url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-7-Flash-Model-Card.pdf",
+      "snippet": "Gemini 3.7 Flash — Model Card Model Cards are intended to provide essential information on Gemini models, including known limitations, mitigation approaches, and safety performance. Model cards may be updated from time to time; for example, to include updated evaluations as the model is improved or revised. See the Google DeepMind site for a comprehensive list of model cards."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Models like Gemini 3.7 Flash are changing that by delivering better intelligence at dramatically lower cost. With Gemini 3.7 Flash on Databricks AI Gateway, enterprises can ask big questions of their data, like predicting next week&#x27;s revenue, identifying key customers, or deciding where to invest next.\" Ivan Zhou, AI Research Manager ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

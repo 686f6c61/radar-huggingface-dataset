@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/gemma-4-31B-it-scotoma-2-GGUF",
+  "slug": "readyart-gemma-4-31b-it-scotoma-2-gguf",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2-GGUF",
+  "created_at": "2026-08-06T06:19:06.000Z",
+  "updated_at": "2026-08-06T18:58:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "base_model:ReadyArt/gemma-4-31B-it-scotoma-2",
+    "base_model:quantized:ReadyArt/gemma-4-31B-it-scotoma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 29,
+  "downloads_30d": 54811,
+  "trending_score": 8,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 228329419008,
+  "storage_human": "228.3 GB",
+  "base_model": "ReadyArt/gemma-4-31B-it-scotoma-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/gemma-4-31B-it-scotoma-2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2-GGUF",
+      "snippet": "Findings / what it does scotoma-2 is the successor to scotoma. It starts from the same idea, a bounded edit that loosens gemma‑4‑31B‑it&#x27;s cautious reflex by projecting an abliteration LoRA through gemma&#x27;s J-Space. This iteration uses an updated technique to apply that projection more effectively. Then it goes after something the first release didn&#x27;t address: the way the base model ..."
+    },
+    {
+      "title": "ReadyArt/gemma-4-31B-it-scotoma · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma",
+      "snippet": "Findings / what it does scotoma loosens gemma‑4‑31B‑it&#x27;s cautious reflex. In practice, it produces output that&#x27;s more varied, direct, and creative, with less of the base model&#x27;s hedging and assistant persona stiffness. It is not uncensored. The edit removed a bounded region while leaving the rest of the field intact. A blind spot, not blindness."
+    },
+    {
+      "title": "Gemma 4 31B It Scotoma 2 by ReadyArt - LLM Explorer",
+      "url": "https://llm-explorer.com/model/ReadyArt%2Fgemma-4-31B-it-scotoma-2,72sD2D41CSiRwu6jn8U3Z3",
+      "snippet": "Gemma 4 31B It Scotoma 2 is an open-source 31b LLM by ReadyArt. VRAM 62.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "ReadyArt/gemma-4-31B-it-scotoma • hfviewer",
+      "url": "https://hfviewer.com/ReadyArt/gemma-4-31B-it-scotoma",
+      "snippet": "ReadyArt/gemma-4-31B-it-scotoma . The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual forward dataflow, and repeated blocks are grouped with their true repeat counts."
+    },
+    {
+      "title": "gemma4:31b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:31b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

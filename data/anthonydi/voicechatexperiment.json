@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AnthonyDi/VoiceChatExperiment",
+  "slug": "anthonydi-voicechatexperiment",
+  "author": "AnthonyDi",
+  "url": "https://huggingface.co/AnthonyDi/VoiceChatExperiment",
+  "created_at": "2026-08-18T13:36:06.000Z",
+  "updated_at": "2026-08-18T13:36:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "speech",
+    "voicechat",
+    "qwen",
+    "lora",
+    "experimental",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7177360,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 5 days ago • 3.42k • 115"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Advancing voice intelligence with new models in the API - OpenAI",
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+      "snippet": "Explore new realtime voice models in the OpenAI API that can reason, translate, and transcribe speech, enabling more natural and intelligent voice experiences."
+    },
+    {
+      "title": "GitHub - proj-airi/webai-example-realtime-voice-chat: Full example ...",
+      "url": "https://github.com/proj-airi/webai-example-realtime-voice-chat",
+      "snippet": "Awesome AI VTuber: A curated list of AI VTubers and related projects unspeech: Universal endpoint proxy server for /audio/transcriptions and /audio/speech, like LiteLLM but for any ASR and TTS hfup: tools to help on deploying, bundling to HuggingFace Spaces xsai-transformers: Experimental 🤗 Transformers.js provider for xsAI. WebAI: Realtime Voice Chat: Full example of implementing ChatGPT&#x27;s ..."
+    }
+  ]
+}

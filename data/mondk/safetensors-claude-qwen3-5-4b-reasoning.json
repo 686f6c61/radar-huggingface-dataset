@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mondk/Safetensors.Claude-Qwen3.5-4B-Reasoning",
+  "slug": "mondk-safetensors-claude-qwen3-5-4b-reasoning",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/Safetensors.Claude-Qwen3.5-4B-Reasoning",
+  "created_at": "2026-08-18T11:55:25.000Z",
+  "updated_at": "2026-08-18T12:14:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "teich",
+    "claude",
+    "unsloth",
+    "reasoning",
+    "tool-use",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "vi",
+    "dataset:mondk/claude-code-fable-5-traces.jsonl",
+    "dataset:TeichAI/Claude-Sonnet-4.6-Reasoning-1100x",
+    "dataset:dalisoft/claude-opus-4.6-high-reasoning-700x",
+    "dataset:Hastagaras/Claude-Opus-4.6-Reasoning-BugFinder-400",
+    "dataset:angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k",
+    "base_model:TeichAI/Qwen3.5-4B-Claude-Opus-Reasoning-Distill",
+    "base_model:finetune:TeichAI/Qwen3.5-4B-Claude-Opus-Reasoning-Distill",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817439,
+  "storage_human": "9.3 GB",
+  "base_model": "TeichAI/Qwen3.5-4B-Claude-Opus-Reasoning-Distill",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+      "url": "https://huggingface.co/DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
+    },
+    {
+      "title": "Qwen3.5 + Claude Code: Free Local AI Coding Agent",
+      "url": "https://codersera.com/blog/run-install-and-benchmark-qwen35-claude-code-free-local-ai-coding-agent/",
+      "snippet": "Set up Qwen3.5 with Claude Code as a free local AI coding agent. Learn install steps, benchmarks, pricing, comparisons, and real‑world tests in this updated 2026 guide."
+    },
+    {
+      "title": "Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2 - Models",
+      "url": "https://www.modelscope.cn/models/Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2-GGUF",
+      "snippet": "🌟 Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2 🔥 Update (April 5): I&#x27;ve released the complete training notebook, codebase, and a comprehensive PDF guide to help beginners and enthusiasts understand and reproduce this model&#x27;s fine-tuning process."
+    }
+  ]
+}

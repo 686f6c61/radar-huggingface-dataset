@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "heba000/pyramid-dataset-3_20260816_163436",
+  "slug": "heba000-pyramid-dataset-3_20260816_163436",
+  "author": "heba000",
+  "url": "https://huggingface.co/heba000/pyramid-dataset-3_20260816_163436",
+  "created_at": "2026-08-18T09:10:34.000Z",
+  "updated_at": "2026-08-18T09:10:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:heba000/pyramid-dataset-3_20260816_163436",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heba000/pyramid-dataset-3_20260816_163436 - Hugging Face",
+      "url": "https://huggingface.co/datasets/heba000/pyramid-dataset-3_20260816_163436/viewer",
+      "snippet": "Datasets: heba000 / pyramid-dataset-3_20260816_163436 like 0 Dataset card Data Studio FilesFiles and versions xet Community Subset (1) default·5.35k rows default (5.35k rows) Split (1) train·5.35k rows train (5.35k rows) Search is not available for this dataset SQL Console"
+    },
+    {
+      "title": "Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "snippet": "Discover datasets from various domains with Google&#x27;s Dataset Search tool, designed to help researchers and enthusiasts find relevant data easily."
+    },
+    {
+      "title": "heba000发布LeRobot格式机器人操作学习数据集 首发HuggingFace赋能具身智能研发",
+      "url": "https://www.5radar.com/dataopensource/news/461761/heba000%E5%8F%91%E5%B8%83lerobot%E6%A0%BC%E5%BC%8F%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E5%AD%A6%E4%B9%A0%E6%95%B0%E6%8D%AE%E9%9B%86-%E9%A6%96%E5%8F%91huggingface%E8%B5%8B%E8%83%BD%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E7%A0%94%E5%8F%91",
+      "snippet": "开发者heba000于2026年8月16日在HuggingFace平台首发符合LeRobot标准的pyramid-dataset-3_20260816_162422数据集，将为机器人操作学习、具身智能模型研发提供标准化的高质量训练数据支撑。"
+    },
+    {
+      "title": "zyad-mahgoub119/Pyramids-Prediction-ML-Project - GitHub",
+      "url": "https://github.com/zyad-mahgoub119/Pyramids-Prediction-ML-Project",
+      "snippet": "This project analyzes a dataset of Egyptian pyramids to uncover historical trends through data visualization and machine learning. It models the evolution of pyramid construction, predicts when the era of pyramid-building likely ended, and attempts to classify pyramids to their respective dynasties based on their dimensions. - zyad-mahgoub119 ..."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/docs/datasets/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "YassY-The-AlchemYst/YassYBS26Sol2",
+  "slug": "yassy-the-alchemyst-yassybs26sol2",
+  "author": "YassY-The-AlchemYst",
+  "url": "https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol2",
+  "created_at": "2026-08-17T20:43:48.000Z",
+  "updated_at": "2026-08-17T20:48:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36452,
+  "storage_human": "36452 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yassine Elhallaoui (@yassy_the_alchemyst) - Instagram",
+      "url": "https://www.instagram.com/yassy_the_alchemyst/",
+      "snippet": "6,692 Followers, 1,934 Following, 112 Posts - Yassine Elhallaoui (@yassy_the_alchemyst) on Instagram: \"Dr. tobe 🇲🇦ⵣ🇳🇴💍 Nerd Ai & Nature ☮RastaTechnocratⵣ AI Researcher🤖 ️🇦🇪🇧🇭🇿🇦🇾🇪🇿🇼🇸🇦🇳🇬🇮🇳🇨🇺🇲🇫🇵🇬🇹🇭🇲🇨🇶🇦🇴🇲🇳🇴🇪🇬🇬🇧🇧🇶\""
+    },
+    {
+      "title": "Yassy (@yassy) • Instagram photos and videos",
+      "url": "https://www.instagram.com/yassy/",
+      "snippet": "21K Followers, 1,251 Following, 989 Posts - See Instagram photos and videos from Yassy (@yassy)"
+    },
+    {
+      "title": "OnlyFans",
+      "url": "https://onlyfans.com/yassy_ai",
+      "snippet": "OnlyFans is the social platform revolutionizing creator and fan connections. The site is inclusive of artists and content creators from all genres and allows them to monetize their content while developing authentic relationships with their fanbase."
+    },
+    {
+      "title": "Yassy (@yassytv) • Instagram photos and videos",
+      "url": "https://www.instagram.com/yassytv/",
+      "snippet": "12K Followers, 4,464 Following, 34 Posts - Yassy (@yassytv) on Instagram: \"music & yappin&#x27;🧡🧡 Co-Yapping @blankslate.hq Music Finds @yassyputmeon yassytv@gmail.com\""
+    },
+    {
+      "title": "YASSY - pixiv",
+      "url": "https://www.pixiv.net/en/users/8604",
+      "snippet": "pixiv Sign up to be able to Like, comment and send messages to YASSY."
+    }
+  ]
+}

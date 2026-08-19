@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "BananaMind/BananaMind-2-Micro",
+  "slug": "bananamind-bananamind-2-micro",
+  "author": "BananaMind",
+  "url": "https://huggingface.co/BananaMind/BananaMind-2-Micro",
+  "created_at": "2026-08-10T17:34:14.000Z",
+  "updated_at": "2026-08-10T17:48:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bananamind2_micro",
+    "text-generation",
+    "causal-lm",
+    "base-model",
+    "muon",
+    "custom-code",
+    "trust-remote-code",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceFW/finephrase",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:AxiomicLabs/NPset-2-Python-Edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 1063,
+  "trending_score": 9,
+  "parameters": 3195328,
+  "parameters_human": "3.2M",
+  "storage_bytes": 14322188,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BananaMind-2-Micro - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/BananaMind-2-Micro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nano Banana 2 - Gemini AI image generator & photo editor",
+      "url": "https://gemini.google/overview/image-generation/",
+      "snippet": "With Nano Banana 2, Gemini&#x27;s AI image generator and photo editor, you can create high-quality images and edit photos into countless new creations."
+    },
+    {
+      "title": "Website - a Hugging Face Space by BananaMind",
+      "url": "https://huggingface.co/spaces/BananaMind/Website",
+      "snippet": "Parameter counts for released models are exact totals from each model card. BananaMind-2-MoE is sparse: it holds 25,086,592 total parameters but activates roughly 1,985,152 per token. BananaMind-2-Ultra and BananaMind-2-Micro are announced but not yet released, and their figures are planned targets rather than measured results."
+    },
+    {
+      "title": "Nano Banana | Google AI Studio",
+      "url": "https://aistudio.google.com/models/nano-banana",
+      "snippet": "Try image generation apps built in AI Studio image Nano Banana 2 Lite photo_library Nano Banana 2 photo_spark Nano Banana Pro Gridscape Anywhere Peek-a-word"
+    },
+    {
+      "title": "NanoBananaAI/Nano-Banana-AI: Nano Banana AI - GitHub",
+      "url": "https://github.com/NanoBananaAI/Nano-Banana-AI",
+      "snippet": "Nano Banana AI (officially known as Gemini 2.5 Flash Image) is Google DeepMind&#x27;s state-of-the-art AI image generation and editing model. Launched in August 2025, it has quickly become the top-rated image editing model globally, revolutionizing how creators, professionals, and businesses approach visual content creation. Experience the full potential of Nano Banana AI at trynanobanana.ai - the ..."
+    }
+  ]
+}

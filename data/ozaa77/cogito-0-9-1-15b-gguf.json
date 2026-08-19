@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ozaa77/Cogito-0.9.1-15B-GGUF",
+  "slug": "ozaa77-cogito-0-9-1-15b-gguf",
+  "author": "ozaa77",
+  "url": "https://huggingface.co/ozaa77/Cogito-0.9.1-15B-GGUF",
+  "created_at": "2026-08-16T14:21:01.000Z",
+  "updated_at": "2026-08-16T18:45:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "base_model:ozaa77/Cogito-0.9.1-15B",
+    "base_model:quantized:ozaa77/Cogito-0.9.1-15B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 948,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 139229919488,
+  "storage_human": "139.2 GB",
+  "base_model": "ozaa77/Cogito-0.9.1-15B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chomeed/mimicgen_square_d1_224x224_dinowm",
+  "slug": "chomeed-mimicgen_square_d1_224x224_dinowm",
+  "author": "chomeed",
+  "url": "https://huggingface.co/chomeed/mimicgen_square_d1_224x224_dinowm",
+  "created_at": "2026-08-18T05:54:08.000Z",
+  "updated_at": "2026-08-18T05:54:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-model",
+    "dynamics-model",
+    "dinov2",
+    "mimicgen",
+    "arxiv:2411.04983",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53675521,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub Pages - MimicGen",
+      "url": "https://mimicgen.github.io/",
+      "snippet": "MimicGen can produce good quality datasets and policies across different quality human operators. Below, we show MimicGen datasets generated on Square D2 from two sets of source datasets - 10 demos from a better quality operator and 10 demos from a worse quality operator (both are from the robomimic Square MH dataset)."
+    },
+    {
+      "title": "chomeed/mimicgen_coffee_d1_224x224 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/chomeed/mimicgen_coffee_d1_224x224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Downloading Datasets | NVlabs/mimicgen | DeepWiki",
+      "url": "https://deepwiki.com/NVlabs/mimicgen/4.1-downloading-datasets",
+      "snippet": "This page provides detailed instructions for downloading and accessing MimicGen&#x27;s pre-generated datasets. It covers the different types of available datasets, download methods, and the resulting directory structure."
+    },
+    {
+      "title": "Datasets | NVlabs/mimicgen | DeepWiki",
+      "url": "https://deepwiki.com/NVlabs/mimicgen/4-datasets",
+      "snippet": "Datasets Relevant source files Overview This page provides comprehensive information about MimicGen datasets, which form a critical component of the MimicGen system. These datasets contain robot manipulation demonstrations that can be used to train imitation learning policies. MimicGen datasets are particularly noteworthy because they are generated synthetically from a small number of human ..."
+    },
+    {
+      "title": "GitHub - NVlabs/mimicgen: This code corresponds to simulation ...",
+      "url": "https://github.com/NVlabs/mimicgen",
+      "snippet": "MimicGen This repository contains the official release of data generation code, simulation environments, and datasets for the CoRL 2023 paper \"MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations\"."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Yova/qalam-english-vlm-stage2-full524",
+  "slug": "yova-qalam-english-vlm-stage2-full524",
+  "author": "Yova",
+  "url": "https://huggingface.co/Yova/qalam-english-vlm-stage2-full524",
+  "created_at": "2026-07-28T04:43:53.000Z",
+  "updated_at": "2026-08-17T12:45:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 8887142058,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yova/qalam-english-vlm-stage2-full524 · Hugging Face",
+      "url": "https://huggingface.co/Yova/qalam-english-vlm-stage2-full524",
+      "snippet": "Model outputs differ from the original checkpoint on a normal fraction of borderline rows (~15-20%, in line with independent-run variance measured on held-out data), even though architecture, hyperparameters, and training data are identical."
+    },
+    {
+      "title": "Open VLM Leaderboard - a Hugging Face Space by opencompass",
+      "url": "https://huggingface.co/spaces/opencompass/open_vlm_leaderboard",
+      "snippet": "This app lets you view the Open VLM main leaderboard and individual dataset leaderboards in an interactive table. You can narrow results by picking evaluation dimensions, model size, model type, or..."
+    },
+    {
+      "title": "Vision Language Models (VLMs) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/vision-language-models-vlms-explained/",
+      "snippet": "Vision Language Models (VLMs) are AI models that process both images and text to understand the relationship between visual and textual information. They enable machines to perform tasks that require reasoning across both modalities."
+    },
+    {
+      "title": "GitHub - zli12321/Vision-Language-Models-Overview: A most Frontend ...",
+      "url": "https://github.com/zli12321/Vision-Language-Models-Overview",
+      "snippet": "A most Frontend Collection and survey of vision-language model papers, and models GitHub repository. Continuous updates. - zli12321/Vision-Language-Models-Overview"
+    },
+    {
+      "title": "Best Local Vision-Language Models for Offline AI",
+      "url": "https://blog.roboflow.com/local-vision-language-models/",
+      "snippet": "Vision-Language Models are getting smaller, faster, and smarter - no cloud required. In this guide, we explore the best local VLMs you can run on your own hardware, from Llama 3.2 Vision to SmolVLM2, and show how to deploy them efficiently with Roboflow Inference."
+    }
+  ]
+}

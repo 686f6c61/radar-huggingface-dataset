@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SousiOmine/Lumi-v2-llm-jp-4-8b-GGUF",
+  "slug": "sousiomine-lumi-v2-llm-jp-4-8b-gguf",
+  "author": "SousiOmine",
+  "url": "https://huggingface.co/SousiOmine/Lumi-v2-llm-jp-4-8b-GGUF",
+  "created_at": "2026-08-17T05:31:12.000Z",
+  "updated_at": "2026-08-17T05:56:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "llm-jp",
+    "japanese",
+    "chatml",
+    "reasoning",
+    "text-generation",
+    "ja",
+    "en",
+    "base_model:SousiOmine/Lumi-v2-llm-jp-4-8b",
+    "base_model:quantized:SousiOmine/Lumi-v2-llm-jp-4-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8590200832,
+  "parameters_human": "8.59B",
+  "storage_bytes": 31623340448,
+  "storage_human": "31.6 GB",
+  "base_model": "SousiOmine/Lumi-v2-llm-jp-4-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SousiOmine (SousiOmine) - Hugging Face",
+      "url": "https://huggingface.co/SousiOmine/models",
+      "snippet": "SousiOmine/llm-jp-4-chatml-return-beta1-merged-16bit. Text Generation • 9B • Updated 23 days ago • 74. SousiOmine/llm-jp-4-chatml-beta1"
+    },
+    {
+      "title": "alfredplpl/llm-jp-4-8b-thinking-gguf · Hugging Face",
+      "url": "https://huggingface.co/alfredplpl/llm-jp-4-8b-thinking-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models | SteelAI",
+      "url": "https://steelai.lol/models",
+      "snippet": "Frontier models, one clean API. Frontier language models through one clean API and a fast chat workspace."
+    },
+    {
+      "title": "Release of New Japanese LLMs, \"LLM-jp-4 8B\" and \"LLM-jp-4 32B-A3B ...",
+      "url": "https://www.nii.ac.jp/en/news/release/2026/0403.html",
+      "snippet": "Research and Development Center for Large Language Models Established at National Institute of Informatics Accelerating R&D to Develop Domestic LLMs and Ensure Transparency and Reliability of Generative AI Models - NII NewsRelease (2024/04/01) Development of the Large Language Model \"LLM-jp-13B v2.0\""
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "realrebelai/MiniMax-Music-3_GGUFs",
+  "slug": "realrebelai-minimax-music-3_ggufs",
+  "author": "realrebelai",
+  "url": "https://huggingface.co/realrebelai/MiniMax-Music-3_GGUFs",
+  "created_at": "2026-08-14T04:51:15.000Z",
+  "updated_at": "2026-08-14T05:03:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "comfyui",
+    "minimax",
+    "music-generation",
+    "text-to-music",
+    "audio",
+    "low-vram",
+    "text-to-audio",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:quantized:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 695,
+  "trending_score": 0,
+  "parameters": 2457073817,
+  "parameters_human": "2.46B",
+  "storage_bytes": 8956229632,
+  "storage_human": "9.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pro Quality AI Music Generator - AI Song Generator for Creators",
+      "url": "https://duckduckgo.com/y.js?ad_domain=artlist.io&ad_provider=bingv7aa&ad_type=txad&click_metadata=VwdoTsVjiEZ%2DeKexg14wDkKClglfeOQ0NAn4gRyJ_cL20%2DowrUrTaN3CBsuqOJ%2D2z082AgxnlDjBFtAVB6oqh8Sp4_CV2AiVctfTWojxemFXuFJXngh1gponub_FyzwsoU9YoUeDz4LycUWcdqCnrATgn9HZ91%2D4g56_zMyjFnE.Kbalcrj%2DsIfp2KWIpKIF3A&rut=540538f1cf67c8b09e7c5b9373e3a135daee92a1ef61263cd78de1b86f5ca659&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De89nmoLMF3fuZrkfimDeTuVDVUCUxCArfG9oSIu7Cpeg5ZwWFFsc399DUpJJ1JctvBcNVWcUAcoumzd6D3mUVjGGCsUscfQYr4iDhX8EnqT1KDshDq7heNs74z5CwA5nF4VlKEGiZ4SKxHfh8Fq4mFxKN4_tgCWORtRw3M24hfxVgvuNQJYzuGTheeHvccOqlD_ZO7UF_RX2ZOHotCOFoExgSMI9E%26u%3DaHR0cHMlM2ElMmYlMmZ0b29sa2l0LmFydGxpc3QuaW8lMmZtdXNpYy1nZW5lcmF0b3IlM2Ztb2RlJTNkbXVzaWMlMjZtb2RlbEdyb3VwSUQlM2QzNTYlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2Q2Mjc1NjIwMzYlMjZ1dG1fY29udGVudCUzZDExNTAwOTEwMzgxOTQyODQlMjZ1dG1fdGVybSUzZGFpJTI1MjBmb3IlMjUyMG11c2ljJTI2a2V5d29yZCUzZGFpJTI1MjBmb3IlMjUyMG11c2ljJTI2YWQlM2QlMjZtYXRjaHR5cGUlM2RwJTI2ZGV2aWNlJTNkYyUyNm1zY2xraWQlM2RkMDk3ZmMxMmQ5ZDQxOTU0NGFjMDk2NmM3NGE1YWY2OCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZEdlbkFJX3RDUEElMjZ1dG1fdGVybSUzZGFpJTI1MjBmb3IlMjUyMG11c2ljJTI2dXRtX2NvbnRlbnQlM2RBSV9NdXNpY18lMjU1QmFpX211c2ljJTI1NUQ%26rlid%3Dd097fc12d9d419544ac0966c74a5af68&vqd=4-90121395731900170963956070169521006050&iurl=%7B1%7DIG%3D474CAFFDA86B4D398601CDA85DDAC9AF%26CID%3D3649C0D28C7369E813FFD7678D046869%26ID%3DDevEx%2C5037.1",
+      "snippet": "Rtlist&#x27;s AI Music Maker for Ads, Videos, and All Content. Studio-Quality, Ready to Use. Generate commercial-ready, studio-quality songs with Lyria 3 and Lyria 3 Pro by Google"
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "realrebelai/MiniMax-H3_GGUFs · Hugging Face",
+      "url": "https://huggingface.co/realrebelai/MiniMax-H3_GGUFs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "realrebelai/MiniMax-H3_GGUFs at main - Hugging Face",
+      "url": "https://huggingface.co/realrebelai/MiniMax-H3_GGUFs/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax Music 3 Studio - a Hugging Face Space by MiniMaxAI",
+      "url": "https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 is a music generation model designed to support the creation of full-length songs [prompting guide and skill] | [model] | [project] | [run locally with diffusers] Simple Studio a full song from a one-line idea a smoky late-night soul ballad about old flames, warm female voice a defiant punk anthem about staying up too late"
+    }
+  ]
+}

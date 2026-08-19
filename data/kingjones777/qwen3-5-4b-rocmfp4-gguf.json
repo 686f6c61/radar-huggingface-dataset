@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Qwen3.5-4B-ROCmFP4-GGUF",
+  "slug": "kingjones777-qwen3-5-4b-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Qwen3.5-4B-ROCmFP4-GGUF",
+  "created_at": "2026-08-17T18:49:14.000Z",
+  "updated_at": "2026-08-17T18:51:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "rocm",
+    "qwen",
+    "multimodal",
+    "quantized",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 98,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 15952090432,
+  "storage_human": "16.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF · How about rocmfp8?",
+      "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF/discussions/1",
+      "snippet": "kingjones777 / Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF like 12 Text Generation GGUF llama.cpp rocm amd rocmfp4 rocmfpx strix-halo amd-strix-halo gfx1151 ryzen-ai-max ryzen-ai-max-395 radeon-8060s mtp speculative-decoding reasoning qwen3.5 quantized conversational License:apache-2.0 Model card FilesFiles and versions xet Community 2 Deploy Copy to ..."
+    },
+    {
+      "title": "mtp-Qwen3.8-27B-Q4_0.gguf · kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP ...",
+      "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF/blob/main/mtp-Qwen3.8-27B-Q4_0.gguf",
+      "snippet": "kingjones777 / Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF like 5 Text Generation GGUF llama.cpp rocm amd rocmfp4 rocmfpx strix-halo amd-strix-halo gfx1151 ryzen-ai-max ryzen-ai-max-395 radeon-8060s mtp speculative-decoding reasoning qwen3.5 quantized conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LEAP-LAB-KUS/leap-kt-lstm3-2024-04",
+  "slug": "leap-lab-kus-leap-kt-lstm3-2024-04",
+  "author": "LEAP-LAB-KUS",
+  "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-lstm3-2024-04",
+  "created_at": "2026-08-18T22:39:13.000Z",
+  "updated_at": "2026-08-18T22:39:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "leap-kt",
+  "languages": [],
+  "tags": [
+    "leap-kt",
+    "safetensors",
+    "knowledge-tracing",
+    "education",
+    "educational-data-mining",
+    "lstm3",
+    "dataset:assist2017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167819020,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-personalizedknowledgetra-2024-09 · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-personalizedknowledgetra-2024-09",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LEAP Lab @ Tsinghua University | Machine Learning & AI Research",
+      "url": "https://www.leaplab.ai/",
+      "snippet": "The Learning And Perception (LEAP) Lab at Tsinghua University conducts cutting-edge research in machine learning, multi-modal learning, and embodied intelligence. We focus on developing robust, scalable, and generalizable foundation models for the next generation of artificial intelligence."
+    },
+    {
+      "title": "LEAP-LAB-KUS · GitHub",
+      "url": "https://github.com/LEAP-LAB-KUS",
+      "snippet": "LEAP-LAB-KUS has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Publications | LEAP Lab @ Tsinghua University",
+      "url": "https://www.leaplab.ai/publications",
+      "snippet": "Browse our latest research publications in machine learning, computer vision, multi-modal learning, and embodied intelligence from the LEAP Lab at Tsinghua University."
+    },
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-knowledgequerynetworkmod-2022-08 · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-knowledgequerynetworkmod-2022-08",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

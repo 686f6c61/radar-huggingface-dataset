@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rahul7star/LFM2.5_GGUF",
+  "slug": "rahul7star-lfm2-5_gguf",
+  "author": "rahul7star",
+  "url": "https://huggingface.co/rahul7star/LFM2.5_GGUF",
+  "created_at": "2026-08-18T01:14:09.000Z",
+  "updated_at": "2026-08-18T01:16:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2_vl",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "custom_code",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 6257151360,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rahul7star (rahul7star) - Hugging Face",
+      "url": "https://huggingface.co/rahul7star",
+      "snippet": "User profile of rahul7star on Hugging Face Qwen3-4B-Thinking-2507-Genius-Coder-GGUF-UD-Q4 K M"
+    },
+    {
+      "title": "rahul7star (rahul7star) - Hugging Face",
+      "url": "https://huggingface.co/rahul7star/collections",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 6 minutes ago ... updated a collection 2 days ago"
+    },
+    {
+      "title": "GitHub - Liquid4All/cookbook: Examples, end-2-end tutorials and apps ...",
+      "url": "https://github.com/Liquid4All/cookbook",
+      "snippet": "Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models (LFM) and the LEAP SDK - Liquid4All/cookbook"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    }
+  ]
+}

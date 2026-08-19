@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PratyushPareek/Reinforce-CartPoleV1-HFRL",
+  "slug": "pratyushpareek-reinforce-cartpolev1-hfrl",
+  "author": "PratyushPareek",
+  "url": "https://huggingface.co/PratyushPareek/Reinforce-CartPoleV1-HFRL",
+  "created_at": "2026-08-17T19:27:15.000Z",
+  "updated_at": "2026-08-17T19:27:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3657,
+  "storage_human": "3657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loke-07/Reinforce-CartPolev1 · Hugging Face",
+      "url": "https://huggingface.co/loke-07/Reinforce-CartPolev1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aidiary/Reinforce-Cartpole-v1 · Hugging Face",
+      "url": "https://huggingface.co/aidiary/Reinforce-Cartpole-v1",
+      "snippet": "aidiary / Reinforce-Cartpole-v1 Copied like 0 Reinforcement LearningCartPole-v1reinforcecustom-implementationdeep-rl-classEval Results Model card FilesFiles and versions Community How to clone Edit model card Reinforce Agent playing CartPole-v1"
+    },
+    {
+      "title": "GitHub - opendilab/awesome-RLHF: A curated list of reinforcement ...",
+      "url": "https://github.com/opendilab/awesome-RLHF",
+      "snippet": "A curated list of reinforcement learning with human feedback resources (continually updated) - opendilab/awesome-RLHF"
+    },
+    {
+      "title": "Mastering CartPole: A Complete Journey Through 6 Reinforcement ... - Medium",
+      "url": "https://medium.com/@sachith.icc/mastering-cartpole-a-complete-journey-through-6-reinforcement-learning-algorithms-06d92fa6d601",
+      "snippet": "🎯 Introduction Reinforcement Learning (RL) has revolutionized AI, powering everything from game-playing agents like AlphaGo to ChatGPT&#x27;s human feedback training (RLHF). But how do you ..."
+    },
+    {
+      "title": "kanishkez/CartPoleV1-using-Reinforce-Algorithm - GitHub",
+      "url": "https://github.com/kanishkez/CartPoleV1-using-Reinforce-Algorithm",
+      "snippet": "CartPoleV1 solved using Reinforce Algorithm. Contribute to kanishkez/CartPoleV1-using-Reinforce-Algorithm development by creating an account on GitHub."
+    }
+  ]
+}

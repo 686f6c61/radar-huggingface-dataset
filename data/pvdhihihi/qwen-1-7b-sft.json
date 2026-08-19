@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pvdhihihi/qwen-1.7b-sft",
+  "slug": "pvdhihihi-qwen-1-7b-sft",
+  "author": "pvdhihihi",
+  "url": "https://huggingface.co/pvdhihihi/qwen-1.7b-sft",
+  "created_at": "2026-08-18T06:16:39.000Z",
+  "updated_at": "2026-08-18T06:17:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "alignment-handbook",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:HuggingFaceH4/deita-10k-v0-sft",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452615639,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Qwen3-1.7B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-1.7B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen3-1.7b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3-1.7b",
+      "snippet": "Qwen3 1.7B by qwen Supports a context length of up to 32k tokens Supports /no_think to disable reasoning, just add it at the end of your prompt Supports both thinking and non-thinking modes withe enhanced reasoning in both for significantly enhanced mathematics, coding, and commonsense Excels at creative writing, role-playing, multi-turn dialogues, and instruction following Advanced agent ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "Qwen3-ASR-1.7B achieves strong performance on both open-sourced and internal benchmarks. While the 0.6B version achieves accuracy-efficient trade-off, it reaches 2000 times throughput at a concurrency of 128. They both achieve streaming / offline unified inference with single model and support transcribe long audio."
+    },
+    {
+      "title": "huihui_ai/qwen3-abliterated:1.7b",
+      "url": "https://ollama.com/huihui_ai/qwen3-abliterated:1.7b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

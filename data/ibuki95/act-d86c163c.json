@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ibuki95/act-d86c163c",
+  "slug": "ibuki95-act-d86c163c",
+  "author": "ibuki95",
+  "url": "https://huggingface.co/ibuki95/act-d86c163c",
+  "created_at": "2026-08-17T00:19:07.000Z",
+  "updated_at": "2026-08-17T00:19:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483475,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibuki95/ver-3dda6046 · Hugging Face",
+      "url": "https://huggingface.co/ibuki95/ver-3dda6046",
+      "snippet": "Duplicated from vera6/affine-5g4yy75zuz-cc ibuki95 / ver-3dda6046 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ibuki95 (Dax Galant) - Hugging Face",
+      "url": "https://huggingface.co/ibuki95",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models__ai/",
+      "snippet": "2M Followers, 329 Following, 7,117 Posts - 𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) on Instagram: \"𝐖𝐞 𝐃𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐌𝐨𝐝𝐞𝐥𝐬, 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐭, 𝐀𝐧𝐝 𝐓𝐡𝐞 𝐖𝐨𝐫𝐥𝐝 𝐎𝐟 𝐀𝐈 ..."
+    },
+    {
+      "title": "ibuki - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d0qv74de878c73d24f9g",
+      "snippet": "Explore ibuki model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Bytez - open source AI",
+      "url": "https://bytez.com/model/ibuki95/c4cew7zr",
+      "snippet": "Keep up with AI. Discover, demo, and deploy open source models"
+    }
+  ]
+}

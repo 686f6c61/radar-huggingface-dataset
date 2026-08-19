@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3.1-Taiwan-8B-Instruct-GGUF",
+  "slug": "mradermacher-llama-3-1-taiwan-8b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.1-Taiwan-8B-Instruct-GGUF",
+  "created_at": "2026-08-16T17:09:03.000Z",
+  "updated_at": "2026-08-16T18:00:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:yentinglin/Llama-3.1-Taiwan-8B-Instruct",
+    "base_model:quantized:yentinglin/Llama-3.1-Taiwan-8B-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 516,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820282240,
+  "storage_human": "71.8 GB",
+  "base_model": "yentinglin/Llama-3.1-Taiwan-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3-Taiwan-8B-Instruct-abliterated-v1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3-Taiwan-8B-Instruct-abliterated-v1-GGUF",
+      "snippet": "Llama-3-Taiwan-8B-Instruct-abliterated-v1-GGUF like 0 Transformers GGUF English Inference Endpoints Model card Files Community"
+    },
+    {
+      "title": "mradermacher/Llama-3.1-Taiwan-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3.1-Taiwan-8B-GGUF",
+      "snippet": "mradermacher / Llama-3.1-Taiwan-8B-GGUF like 0 Transformers GGUF English Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-abliterated-ICONN-1-BasicChat-i1-GGUF",
+      "url": "https://www.modelscope.cn/models/mradermacher/Meta-Llama-3.1-8B-Instruct-abliterated-ICONN-1-BasicChat-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Llama-3-Taiwan-8B-Instruct-DPO-GGUF",
+      "url": "https://socket.dev/huggingface/package/mradermacher/llama-3-taiwan-8b-instruct-dpo-gguf",
+      "snippet": "We found that mradermacher/llama-3-taiwan-8b-instruct-dpo-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "GitHub - inferless/llama-3.1-8b-instruct-gguf: An 8B-parameter ...",
+      "url": "https://github.com/inferless/Llama-3.1-8B-Instruct-GGUF",
+      "snippet": "Meta-Llama-3.1-8B-Instruct-GGUF model is part of Meta&#x27;s advanced suite of multilingual large language models. This 8B Instruct model has been fine-tuned using supervised fine-tuning (SFT) and reinforced through reinforcement learning with human feedback (RLHF). This combination of methodologies ensures that the model not only performs with high accuracy but also aligns closely with human ..."
+    }
+  ]
+}

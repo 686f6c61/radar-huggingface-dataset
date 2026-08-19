@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Aquila-mini-35B-A3B-NPU2",
+  "slug": "atomic-germ-aquila-mini-35b-a3b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Aquila-mini-35B-A3B-NPU2",
+  "created_at": "2026-08-12T02:28:54.000Z",
+  "updated_at": "2026-08-18T21:13:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "q4nx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "q4nx",
+    "qwen3_5_moe",
+    "qwen3.6",
+    "moe",
+    "reasoning",
+    "advanced-reasoning",
+    "multilingual",
+    "fastflowlm",
+    "npu",
+    "en",
+    "base_model:XYZAILab/XYZ-Aquila-mini",
+    "base_model:quantized:XYZAILab/XYZ-Aquila-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24257079406,
+  "storage_human": "24.3 GB",
+  "base_model": "XYZAILab/XYZ-Aquila-mini",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Aquila-mini-35B-A3B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Aquila-mini-35B-A3B-NPU2",
+      "snippet": "Source model card Qwen3.6-35B-A3B . This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. These artifa"
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Atomic-Germ%2FQwen3.6-35B-A3B-NPU2",
+      "snippet": "Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF + 47 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks + 10 Hardware ..."
+    },
+    {
+      "title": "Finally, a 35B MoE Model Claims to Shadow the Local King Qwen3.6-27B",
+      "url": "https://xhinker.medium.com/finally-a-35b-moe-model-claims-to-shadow-the-local-king-qwen3-6-27b-77a4c1e13636",
+      "snippet": "Finally, a 35B MoE Model Claims to Shadow the Local King Qwen3.6-27B How a small agentic model scales horizon instead of parameters — and became my go-to local AI for complex workflows Right …"
+    },
+    {
+      "title": "Qwen 3.5 Deep Dive: 35B-A3B, 27B, 122B-A10B, 397B-A17B — Local AI Guide ...",
+      "url": "https://localclaw.io/blog/qwen35-deep-dive",
+      "snippet": "Qwen 3.5 Deep Dive: The MoE Revolution for Local AI Qwen 3.5 spans compact dense checkpoints and much larger dense and MoE releases. The 35B-A3B activates about 3B parameters per token, reducing compute while the full quantized weights still have to fit in memory."
+    }
+  ]
+}

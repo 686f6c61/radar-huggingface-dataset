@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "matt0513/drug-detection-xlm-roberta",
+  "slug": "matt0513-drug-detection-xlm-roberta",
+  "author": "matt0513",
+  "url": "https://huggingface.co/matt0513/drug-detection-xlm-roberta",
+  "created_at": "2026-08-18T07:17:16.000Z",
+  "updated_at": "2026-08-18T07:19:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "drug-detection",
+    "zh",
+    "en",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129303347,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XLM-RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/xlm-roberta",
+      "snippet": "XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model."
+    },
+    {
+      "title": "XLM-RoBERTa — transformers 3.0.2 documentation - Hugging Face",
+      "url": "https://huggingface.co/transformers/v3.0.2/model_doc/xlmroberta.html",
+      "snippet": "XLM-R is a multilingual model trained on 100 different languages. Unlike some XLM multilingual models, it does not require lang tensors to understand which language is used, and should be able to determine the correct language from the input ids. This implementation is the same as RoBERTa. Refer to the documentation of RoBERTa for usage examples as well as the information relative to the ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/xlm-roberta-xl.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/xlm-roberta-xl.md",
+      "snippet": "XLM-RoBERTa-XL is a 3.5B parameter multilingual masked language model pretrained on 100 languages. It shows that by scaling model capacity, multilingual models demonstrate strong performance on high-resource languages and can even zero-shot low-resource languages. You can find all the original XLM-RoBERTa-XL checkpoints under the AI at Meta organization."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/xlm-roberta.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/xlm-roberta.md",
+      "snippet": "It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model. You can find all the original XLM-RoBERTa checkpoints under the Facebook AI community organization."
+    },
+    {
+      "title": "Sikandar Ali Marri - Computer Scientist (English ... - LinkedIn",
+      "url": "https://pk.linkedin.com/in/sikandar-ali-marri-a02128338",
+      "snippet": "My academic and practical experience includes developing AI-powered solutions, building machine learning models, and conducting research in low-resource languages. My research focuses on Roman Urdu Hate Speech Detection using XLM-RoBERTa, where I worked on dataset development, preprocessing, model fine-tuning, and performance evaluation."
+    }
+  ]
+}

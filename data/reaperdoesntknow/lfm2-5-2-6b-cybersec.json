@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/LFM2.5-2.6B-CyberSec",
+  "slug": "reaperdoesntknow-lfm2-5-2-6b-cybersec",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/LFM2.5-2.6B-CyberSec",
+  "created_at": "2026-08-14T18:10:14.000Z",
+  "updated_at": "2026-08-18T13:15:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "lfm2",
+    "text-generation",
+    "cybersecurity",
+    "conversational",
+    "unsloth",
+    "en",
+    "dataset:Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 366,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 11751481845,
+  "storage_human": "11.8 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/LFM2.5-2.6B-CyberSec · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/LFM2.5-2.6B-CyberSec",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow/LFM2.5-2.6B-CyberSec · Discussions",
+      "url": "https://huggingface.co/reaperdoesntknow/LFM2.5-2.6B-CyberSec/discussions",
+      "snippet": "reaperdoesntknow / LFM2.5-2.6B-CyberSec like 0 Text Generation Transformers Safetensors GGUF Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset English lfm2 cybersecurity conversational unsloth 4-bit precision bitsandbytes License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    },
+    {
+      "title": "LFM2.5-2.6B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "LFM2.5-2.6B (free) - API Pricing & Providers | OpenRouter",
+      "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
+      "snippet": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or knowledge-heavy tasks. Prompts and outputs may be retained and used to train Liquid models."
+    }
+  ]
+}

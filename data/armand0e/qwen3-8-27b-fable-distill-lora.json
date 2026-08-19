@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "armand0e/Qwen3.8-27B-Fable-Distill-LoRA",
+  "slug": "armand0e-qwen3-8-27b-fable-distill-lora",
+  "author": "armand0e",
+  "url": "https://huggingface.co/armand0e/Qwen3.8-27B-Fable-Distill-LoRA",
+  "created_at": "2026-08-15T01:45:12.000Z",
+  "updated_at": "2026-08-15T22:21:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "dataset:armand0e/claude-fable-5-claude-code",
+    "dataset:armand0e/Fable-5-Chat",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 953963375,
+  "storage_human": "954 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

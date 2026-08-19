@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "easygoing0114/Krea-2-Turbo_clear",
+  "slug": "easygoing0114-krea-2-turbo_clear",
+  "author": "easygoing0114",
+  "url": "https://huggingface.co/easygoing0114/Krea-2-Turbo_clear",
+  "created_at": "2026-07-17T18:06:57.000Z",
+  "updated_at": "2026-08-18T07:54:48.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "krea2",
+    "anime",
+    "photoreal",
+    "comfyui",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51369170617,
+  "storage_human": "51.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "easygoing0114/Krea-2-Turbo_clear · Hugging Face",
+      "url": "https://huggingface.co/easygoing0114/Krea-2-Turbo_clear",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea-2-Turbo_clear - BF16 | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2786476/krea-2-turboclear",
+      "snippet": "A fine-tuned version of the Krea-2-Turbo model that reduces noise for a clearer look and ensures vivid color expression, especially for anime illustrations. The output from the Krea-2-Turbo_clear model has higher saturation compared to the original, and adds a slight reddish tint, particularly to skin tones."
+    },
+    {
+      "title": "easygoing0114/Krea-2-Turbo_clear at main - Hugging Face",
+      "url": "https://huggingface.co/easygoing0114/Krea-2-Turbo_clear/tree/main",
+      "snippet": "like 0 Text-to-Image krea2 anime photoreal comfyui License:krea-2-community-license Model card FilesFiles and versions xet Community Copy to bucket new main Krea-2-Turbo_clear 41.3 GB Ctrl+K Ctrl+K 1 contributor History:40 commits easygoing0114 Update README.md 435512c verifiedabout 24 hours ago imagesUpload Krea-2-Turbo_clear_20260718.png7 days ago .gitattributes 3.98 kBUpload Krea-2-Turbo ..."
+    },
+    {
+      "title": "Krea 2 Turbo by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-turbo",
+      "snippet": "Fastest medium quality Krea 2 model. The fastest Krea 2 model. Best for quickly iterating on expressive illustrations. Generate with Krea 2 Turbo on Krea, compare quality settings, and ship production-ready images faster."
+    },
+    {
+      "title": "Krea-2-Turbo_clear Released! A High-Performance Model with Clean and ...",
+      "url": "https://note.com/ai_image_journey/n/n0e3ea469d98a?hl=en",
+      "snippet": "Today, I am introducing the Krea-2-Turbo_clear model, an image generation AI model with vivid color expression and a high level of perfection that I have just released."
+    }
+  ]
+}

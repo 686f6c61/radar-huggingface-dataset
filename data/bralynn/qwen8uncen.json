@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bralynn/qwen8uncen",
+  "slug": "bralynn-qwen8uncen",
+  "author": "bralynn",
+  "url": "https://huggingface.co/bralynn/qwen8uncen",
+  "created_at": "2026-08-17T05:40:15.000Z",
+  "updated_at": "2026-08-17T06:00:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996119,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bralynn/qagen · Hugging Face",
+      "url": "https://huggingface.co/bralynn/qagen",
+      "snippet": "bralynn / qagen like 0 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "bralynn/cmodel-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bralynn/cmodel-Q8_0-GGUF",
+      "snippet": "bralynn/cmodel-Q8_0-GGUF This model was converted to GGUF format from bralynn/cmodel using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model. Use with llama.cpp Install llama.cpp through brew (works on Mac and Linux)"
+    },
+    {
+      "title": "braelyn-ai (Braelyn Boynton) · GitHub",
+      "url": "https://github.com/braelyn-ai",
+      "snippet": "building cool shit, dancing in warehouses, motorcycles, planes and adrenaline sports - braelyn-ai"
+    },
+    {
+      "title": "QwenCloud - AI-Native Models, Tools & Apps Platform - Ready Out of the Box",
+      "url": "https://www.qwencloud.com/",
+      "snippet": "QwenCloud is an AI-native platform offering Qwen LLMs, multimodal models, and agentic AI tools. Build and scale enterprise AI apps with ultra-low latency."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Yvthyvq/Liujgoj-Cantonese-Qwen2.5-Omni-7B-ASR",
+  "slug": "yvthyvq-liujgoj-cantonese-qwen2-5-omni-7b-asr",
+  "author": "Yvthyvq",
+  "url": "https://huggingface.co/Yvthyvq/Liujgoj-Cantonese-Qwen2.5-Omni-7B-ASR",
+  "created_at": "2026-08-12T07:33:34.000Z",
+  "updated_at": "2026-08-16T02:28:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "yue"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_omni_thinker",
+    "image-text-to-text",
+    "cantonese",
+    "asr",
+    "audio",
+    "qwen2.5-omni",
+    "liujgoj",
+    "yvthyvq",
+    "romanized-cantonese",
+    "automatic-speech-recognition",
+    "zh",
+    "yue",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 160,
+  "trending_score": 0,
+  "parameters": 8931813888,
+  "parameters_human": "8.93B",
+  "storage_bytes": 17875882346,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

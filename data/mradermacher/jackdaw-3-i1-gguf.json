@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Jackdaw-3-i1-GGUF",
+  "slug": "mradermacher-jackdaw-3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Jackdaw-3-i1-GGUF",
+  "created_at": "2026-08-14T05:34:29.000Z",
+  "updated_at": "2026-08-14T10:00:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "not-for-all-audiences",
+    "uncensored",
+    "roleplay",
+    "en",
+    "base_model:blascotobasco/Jackdaw-3",
+    "base_model:quantized:blascotobasco/Jackdaw-3",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3293,
+  "trending_score": 0,
+  "parameters": 18010942528,
+  "parameters_human": "18.01B",
+  "storage_bytes": 205599716640,
+  "storage_human": "205.6 GB",
+  "base_model": "blascotobasco/Jackdaw-3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

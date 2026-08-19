@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "thunquant/Inkling",
+  "slug": "thunquant-inkling",
+  "author": "thunquant",
+  "url": "https://huggingface.co/thunquant/Inkling",
+  "created_at": "2026-08-19T01:26:47.000Z",
+  "updated_at": "2026-08-19T01:26:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 952377623626,
+  "parameters_human": "952.38B",
+  "storage_bytes": 1909218968769,
+  "storage_human": "1909.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bernquant/Inkling · Hugging Face",
+      "url": "https://huggingface.co/bernquant/Inkling",
+      "snippet": "1. General Information Inkling is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval ..."
+    },
+    {
+      "title": "Inkling - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/inkling/",
+      "snippet": "Inkling-Small is shown with a solid purple line, Inkling with the heavier cobalt line, and the comparison models with dashed lines. Evaluations without a reported model score are plotted at zero. Hover an evaluation to compare every model&#x27;s score."
+    },
+    {
+      "title": "Inkling: Our Open-Weights Model - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "snippet": "Inkling reasons natively over text, images, and audio, and balances cost with performance through efficient and controllable thinking effort. We trained it to be a broad, balanced foundation model: strong across many domains, flexible enough to adapt. Inkling is not the strongest overall model available today, open or closed."
+    },
+    {
+      "title": "Inkling Explained: Thinking Machines&#x27; First Model",
+      "url": "https://www.layer3labs.io/guides/inkling-explained",
+      "snippet": "Inkling is Thinking Machines Lab&#x27;s first open-weights AI model. Learn its 975B/41B MoE design, how it compares, and how to fine-tune it with Tinker."
+    },
+    {
+      "title": "Inkling AI Model: Thinking Machines&#x27; First Model Explained",
+      "url": "https://www.themodernblog.com/inkling-ai-model-thinking-machines-mira-murati/",
+      "snippet": "Thinking Machines just launched Inkling AI model, Mira Murati&#x27;s first open-weight AI model. Here&#x27;s what it is, how it works, who it&#x27;s for, and whether it matters."
+    }
+  ]
+}

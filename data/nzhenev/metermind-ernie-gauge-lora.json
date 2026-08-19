@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "nzhenev/metermind-ernie-gauge-lora",
+  "slug": "nzhenev-metermind-ernie-gauge-lora",
+  "author": "nzhenev",
+  "url": "https://huggingface.co/nzhenev/metermind-ernie-gauge-lora",
+  "created_at": "2026-08-18T23:56:40.000Z",
+  "updated_at": "2026-08-18T23:56:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "ernie",
+    "gauge-reading",
+    "industrial",
+    "vision-language",
+    "unsloth",
+    "fine-tuned",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:custom",
+    "base_model:unsloth/ERNIE-4.5-VL-28B-A3B-PT",
+    "base_model:adapter:unsloth/ERNIE-4.5-VL-28B-A3B-PT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1237549482,
+  "storage_human": "1.2 GB",
+  "base_model": "unsloth/ERNIE-4.5-VL-28B-A3B-PT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luliuzee/metermind-ernie-gauge-lora · Hugging Face",
+      "url": "https://huggingface.co/luliuzee/metermind-ernie-gauge-lora",
+      "snippet": "MeterMind: Industrial Gauge Reading with ERNIE-4.5-VL Fine-tuned LoRA adapter for reading analog industrial gauges from images. Model Description MeterMind is a fine-tuned version of ERNIE-4.5-VL-28B-A3B that accurately reads analog gauge values from photographs. It was trained on synthetic industrial gauge images and achieves near-human accuracy."
+    },
+    {
+      "title": "GitHub - luliuzee/metermind",
+      "url": "https://github.com/luliuzee/metermind",
+      "snippet": "ERNIE AI Developer Challenge 2025 Submission Fine-tuning ERNIE-4.5-VL for industrial gauge reading with 100x inference speedup. Fine-tuning Vision-Language Models for Precise Analog Gauge Reading MeterMind is a complete pipeline for training AI models to accurately read analog gauges, meters, and dials. It includes synthetic data generation, model fine-tuning on Modal, and comprehensive ..."
+    },
+    {
+      "title": "README.md · luliuzee/metermind-ernie-gauge-lora at main",
+      "url": "https://huggingface.co/luliuzee/metermind-ernie-gauge-lora/blob/main/README.md",
+      "snippet": "MeterMind: Industrial Gauge Reading with ERNIE-4.5-VL Fine-tuned LoRA adapter for reading analog industrial gauges from images. Model Description MeterMind is a fine-tuned version of ERNIE-4.5-VL-28B-A3B that accurately reads analog gauge values from photographs. It was trained on synthetic industrial gauge images and achieves near-human accuracy."
+    },
+    {
+      "title": "metermind/README.md at main · luliuzee/metermind · GitHub",
+      "url": "https://github.com/luliuzee/metermind/blob/main/README.md",
+      "snippet": "MeterMind is a complete pipeline for training AI models to accurately read analog gauges, meters, and dials. It includes synthetic data generation, model fine-tuning on Modal, and comprehensive evaluation tools."
+    },
+    {
+      "title": "MeterMind | Devpost",
+      "url": "https://baiduernieai.devpost.com/submissions/885645-metermind",
+      "snippet": "Built with ERNIE-4.5-VL, Unsloth, vLLM, and Modal for the ERNIE AI Developer Challenge 2025."
+    }
+  ]
+}

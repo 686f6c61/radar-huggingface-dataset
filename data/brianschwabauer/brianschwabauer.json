@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "brianschwabauer/brianschwabauer",
+  "slug": "brianschwabauer-brianschwabauer",
+  "author": "brianschwabauer",
+  "url": "https://huggingface.co/brianschwabauer/brianschwabauer",
+  "created_at": "2026-08-16T20:30:58.000Z",
+  "updated_at": "2026-08-16T20:31:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brianschwabauer (schwabauer) - Hugging Face",
+      "url": "https://huggingface.co/brianschwabauer",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 24 days ago ... published a model 28 days ago"
+    },
+    {
+      "title": "GitHub - brianschwabauer/brianschwabauer.com: Personal website and ...",
+      "url": "https://github.com/brianschwabauer/brianschwabauer.com/tree/main",
+      "snippet": "brianschwabauer.com Personal website and portfolio of Brian Schwabauer — an animated \"about me\" homepage, a blog with an AI-assisted admin editor, and full-text + semantic search. Built on SvelteKit and deployed to Cloudflare Workers."
+    },
+    {
+      "title": "delightstack/packages/ai at main · brianschwabauer/delightstack",
+      "url": "https://github.com/brianschwabauer/delightstack/tree/main/packages/ai",
+      "snippet": "AI integration for SvelteKit apps on Cloudflare Workers. Chat completions, resumable streaming, vector embeddings, and tool calling — all routed through Cloudflare AI Gateway with automatic database integration and WebSocket delivery."
+    },
+    {
+      "title": "brianschwabauer/latent-space-language-diffusion-model · Hugging Face",
+      "url": "https://huggingface.co/brianschwabauer/latent-space-language-diffusion-model",
+      "snippet": "A 201M parameter masked diffusion language model that generates text by predicting all tokens in parallel. Validated by an autoregressive oracle (Qwen3-0.6B). Trained on a single consumer GPU (RTX 3090) in ~7 hours. No black boxes. Every line of model code, training code, and inference code is included."
+    },
+    {
+      "title": "Brian AI models | Brian - Documentation",
+      "url": "https://docs.brianknows.org/brian-ai-models",
+      "snippet": "This model shows excellent capabilities in natural language understanding of technical sentences related to the web3 world. Up-to-date is the best model for web3 practitioners of its size."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ponpoke/flux2-klein-9b-uncensored-text-encoder",
+  "slug": "ponpoke-flux2-klein-9b-uncensored-text-encoder",
+  "author": "ponpoke",
+  "url": "https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder",
+  "created_at": "2026-04-30T16:44:38.000Z",
+  "updated_at": "2026-05-02T11:34:41.000Z",
+  "license": "flux-non-commercial-v2.1",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-to-image",
+    "flux2",
+    "klein",
+    "GGUF",
+    "text-generation-inference",
+    "uncensored",
+    "abliterated",
+    "abliteration",
+    "en",
+    "ja",
+    "base_model:black-forest-labs/FLUX.2-klein-9B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 408,
+  "downloads_30d": 33028,
+  "trending_score": 20,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 53244184386,
+  "storage_human": "53.2 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ponpoke/flux2-klein-9b-uncensored-text-encoder · Hugging Face",
+      "url": "https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder",
+      "snippet": "FLUX.2-klein-9B Uncensored Text Encoder Tips are greatly appreciated and help sustain the compute resources needed for further research! Read this in other languages: 日本語 (Japanese) Overview This repository provides an \"uncensored\" text encoder for the FLUX.2-klein-9B image generation model by Black Forest Labs. It bypasses the built-in safety filters to unlock the model&#x27;s unconstrained ..."
+    },
+    {
+      "title": "ponpoke/flux2-klein-9b-uncensored-text-encoder at main",
+      "url": "https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "flux2-klein-9b-uncensored-text-encoder by ponpoke | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/ponpoke-flux2-klein-9b-uncensored-text-encoder",
+      "snippet": "Explore flux2-klein-9b-uncensored-text-encoder by ponpoke — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "Flux2 Klein 9b Uncensored Text Encoder - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/flux2-klein-9b-uncensored-text-encoder.html",
+      "snippet": "Download Flux2 Klein 9b Uncensored Text Encoder GGUF model. 18.9 GB, 31,704 downloads, 392 likes."
+    },
+    {
+      "title": "ComfyUI on DGX Spark (FLUX.2-klein-9B, uncensored text encoder)",
+      "url": "https://github.com/I-Sheng/spark-comfyui",
+      "snippet": "Self-hosted ComfyUI, reachable only over Tailscale, running FLUX.2-klein-9B with a community \"uncensored\" (abliterated) text encoder swapped in. Built from scratch for ARM64 + NVIDIA GB10 (Grace Blackwell / DGX Spark), since no pre-built ComfyUI image targets that combination yet."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Chtholly17/epifoundation-compass-dann",
+  "slug": "chtholly17-epifoundation-compass-dann",
+  "author": "Chtholly17",
+  "url": "https://huggingface.co/Chtholly17/epifoundation-compass-dann",
+  "created_at": "2026-08-19T00:35:07.000Z",
+  "updated_at": "2026-08-19T00:35:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "epifoundation_sctransformer",
+    "single-cell",
+    "multi-omics",
+    "scATAC-seq",
+    "scRNA-seq",
+    "foundation-model",
+    "transformer",
+    "domain-adversarial",
+    "biology",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1204783776,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Chtholly17/EpiFoundation_dev",
+      "url": "https://github.com/Chtholly17/EpiFoundation_dev",
+      "snippet": "EpiFoundation is a transformer-based foundation model for single-cell multi-omics data integration, designed to learn representations from paired ATAC-seq and RNA-seq data. This repository contains code for pretraining, finetuning, and evaluation of the model."
+    },
+    {
+      "title": "Chtholly17 (Juncheng Wu) · GitHub",
+      "url": "https://github.com/Chtholly17/",
+      "snippet": "Ph.D Student at @UCSC-VLAA. Chtholly17 has 14 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Chtholly17 (Juncheng Wu) - Hugging Face",
+      "url": "https://huggingface.co/Chtholly17/models",
+      "snippet": "User profile of Juncheng Wu on Hugging Face"
+    },
+    {
+      "title": "Chtholly17/EpiFoundation_results · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Chtholly17/EpiFoundation_results",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF EpiFoundation: A Foundation Model for Single-Cell ATAC-seq ... - bioRxiv",
+      "url": "https://www.biorxiv.org/content/biorxiv/early/2025/02/08/2025.02.05.636688.full.pdf",
+      "snippet": "The pre-trained EpiFoundation model enables the generation of high-quality cell representations by modeling the correla-tion between ATAC and gene modalities. Consequently, as shown in Figure 2(b), this pre-trained model can be adapted for various downstream applications in single-cell analysis via supervised fine-tuning, including batch ..."
+    }
+  ]
+}

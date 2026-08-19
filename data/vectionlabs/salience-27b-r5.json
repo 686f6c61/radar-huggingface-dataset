@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "vectionlabs/Salience-27B-R5",
+  "slug": "vectionlabs-salience-27b-r5",
+  "author": "vectionlabs",
+  "url": "https://huggingface.co/vectionlabs/Salience-27B-R5",
+  "created_at": "2026-08-17T15:08:43.000Z",
+  "updated_at": "2026-08-17T15:38:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "multimodal",
+    "vision-language",
+    "reasoning",
+    "thinking",
+    "efficient-reasoning",
+    "code",
+    "software-engineering",
+    "swe",
+    "agentic",
+    "terminal",
+    "tool-use",
+    "long-context",
+    "qwen3.8",
+    "thinking-efficiency",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 61,
+  "trending_score": 15,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55578403316,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vectionlabs/Salience-27B-R4 · Hugging Face",
+      "url": "https://huggingface.co/vectionlabs/Salience-27B-R4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=vectionlabs%2FSalience-27B-R4",
+      "snippet": "Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 Hardware Add your hardware Apply filters Models 1 Base only Inference ..."
+    },
+    {
+      "title": "Salience-27B-R4 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/vectionlabs/Salience-27B-R4",
+      "snippet": "Salience 27B is a 27-billion-parameter dense vision-language model built for hard, practical engineering work: writing and debugging real code, repo-scale edits, multi-step terminal agency, and quantitative reasoning — with native vision and a 262K-token context window (extendable to 1M via YaRN)."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://hf-mirror.net/models?other=agentic",
+      "snippet": "empero-ai/Qwythos-27B-v1-GGUF Image-Text-to-Text • 27B•Updated 3 days ago• 18.2k • 38"
+    },
+    {
+      "title": "vectionlabs - modelindex.dev",
+      "url": "https://modelindex.dev/orgs/vectionlabs",
+      "snippet": "Models published by vectionlabs, indexed with per-file cryptographic hashes on modelindex.dev. Browse each model and verify your downloads."
+    }
+  ]
+}

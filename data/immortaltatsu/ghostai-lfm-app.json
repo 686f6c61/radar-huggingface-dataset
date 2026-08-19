@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "immortaltatsu/ghostai-lfm-app",
+  "slug": "immortaltatsu-ghostai-lfm-app",
+  "author": "immortaltatsu",
+  "url": "https://huggingface.co/immortaltatsu/ghostai-lfm-app",
+  "created_at": "2026-08-17T05:17:36.000Z",
+  "updated_at": "2026-08-17T05:20:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "lfm2",
+    "ghost-ai",
+    "on-device",
+    "function-calling",
+    "solana",
+    "tool-calling",
+    "text-generation",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-1.2B-Thinking",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Thinking",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 5414926224,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Thinking",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "immortaltatsu/ghostai-lfm2.5-1.2b-app-v2 · Hugging Face",
+      "url": "https://huggingface.co/immortaltatsu/ghostai-lfm2.5-1.2b-app-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - leanpub/ghostai: GhostAI",
+      "url": "https://github.com/leanpub/ghostai",
+      "snippet": "Most AI writing tools are stateless — every session starts from scratch. GhostAI maintains six persistent artifacts that accumulate across sessions, so the toolkit gets smarter about your book and your voice the more you use it."
+    },
+    {
+      "title": "GitHub - therezor/GhostAI: Lightweight, open-source AI agent for your ...",
+      "url": "https://github.com/therezor/GhostAI",
+      "snippet": "🐈 GhostAI is an open-source, ultra-lightweight personal AI agent you can truly own. It keeps the agent core small and readable while giving you the practical pieces for real long-running work: WebUI, chat channels, tools, memory, MCP, model routing, automation, and deployment."
+    },
+    {
+      "title": "immortaltatsu/ghost-ai-pro-gguf · Hugging Face",
+      "url": "https://huggingface.co/immortaltatsu/ghost-ai-pro-gguf",
+      "snippet": "Ghost AI Pro is a fork of LiquidAI&#x27;s LFM 2.5 (1.2B Instruct), rebranded and packaged for on-device financial use cases. All underlying model weights, architecture, and capabilities derive from LFM 2.5 — credit and licensing terms remain with the upstream project."
+    },
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "kingfang008/multilingual-e5-small-onnx",
+  "slug": "kingfang008-multilingual-e5-small-onnx",
+  "author": "kingfang008",
+  "url": "https://huggingface.co/kingfang008/multilingual-e5-small-onnx",
+  "created_at": "2026-08-14T16:04:54.000Z",
+  "updated_at": "2026-08-14T16:05:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "embeddings",
+    "e5",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135390915,
+  "storage_human": "135 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

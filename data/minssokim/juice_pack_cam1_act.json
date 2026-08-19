@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "minssoKIm/juice_pack_cam1_act",
+  "slug": "minssokim-juice_pack_cam1_act",
+  "author": "minssoKIm",
+  "url": "https://huggingface.co/minssoKIm/juice_pack_cam1_act",
+  "created_at": "2026-08-17T18:54:26.000Z",
+  "updated_at": "2026-08-17T18:54:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:minssoKIm/omx_f_juice_pack_cam1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 51668656,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206700800,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minssoKIm (minseo kim) - Hugging Face",
+      "url": "https://huggingface.co/minssoKIm/models",
+      "snippet": "minssoKIm&#x27;s models2 Sort: Recently updated minssoKIm/pick_place_bear_act Robotics • 51.7M•Updated 2 days ago• 8"
+    },
+    {
+      "title": "minssoKIm (minseo kim) - Hugging Face",
+      "url": "https://huggingface.co/minssoKIm",
+      "snippet": "Sort: Recently updated minssoKIm/pick_place_bear_act Robotics • 51.7M•Updated about 12 hours ago"
+    },
+    {
+      "title": "minssokim · GitHub",
+      "url": "https://github.com/minssokim/",
+      "snippet": "minssokim has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "minisumo · Small prompts. Massive visuals.",
+      "url": "https://app.minisumo.com/",
+      "snippet": "Small prompts You don&#x27;t write scripts or camera directions, describe the idea and the director writes the spoken script and frames the shot for you."
+    }
+  ]
+}

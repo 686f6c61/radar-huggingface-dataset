@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yingkaisha/CONUS404-AI-TC",
+  "slug": "yingkaisha-conus404-ai-tc",
+  "author": "yingkaisha",
+  "url": "https://huggingface.co/yingkaisha/CONUS404-AI-TC",
+  "created_at": "2026-08-19T01:17:42.000Z",
+  "updated_at": "2026-08-19T01:29:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6295671211,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - yingkaisha/RAL-GWC-CONUS: AI-based Limited Area Model for ...",
+      "url": "https://github.com/yingkaisha/RAL-GWC-CONUS/tree/main/",
+      "snippet": "An AI-based Limited-Area Model (LAM) is developed for dynamical downscaling over the Southern Great Plains and the southeastern United States, with strong generalization abilities under diverse boundary conditions. The model is trained using 0.25$^&#92;circ$, 3-hourly ERA5 as forcings and CONUS404 as targets in 1980--2019, producing 4-km, hourly dynamical downscaling outputs; it is also connected ..."
+    },
+    {
+      "title": "yingkaisha (Yingkai Sha) - Hugging Face",
+      "url": "https://huggingface.co/yingkaisha/models",
+      "snippet": "yingkaisha&#x27;s models3 Sort: Recently updated yingkaisha/CONUS404-AI-LAM Updated Feb 22"
+    },
+    {
+      "title": "CONUS404: Four-kilometer long-term regional hydroclimate reanalysis ...",
+      "url": "https://www.usgs.gov/data/conus404-four-kilometer-long-term-regional-hydroclimate-reanalysis-over-conterminous-united",
+      "snippet": "CONUS404 is a unique, high-resolution hydro-climate dataset appropriate for forcing hydrological models and conducting meteorological analysis over the contiguous United States. This metadata record serves as documentation for the authoritative version of the CONUS404 atmospheric forcing dataset. CONUS404 is an abbreviated description for the original 40-year dataset: CONtiguous United States for"
+    },
+    {
+      "title": "Department of the Interior - CONUS404: Four-kilometer long-term ...",
+      "url": "https://catalog.data.gov/dataset/conus404-four-kilometer-long-term-regional-hydroclimate-reanalysis-over-the-contermin-2023",
+      "snippet": "CONUS404 is the successor to the CONUS1 dataset (Liu and others, 2017) with improved representation of weather and climate conditions in the central United States due to the addition of a shallow groundwater module in the Noah-Multiparameterization (Noah-MP) Land Surface Model, among other improvements."
+    },
+    {
+      "title": "PDF AI-based Dynamical Downscaling of Kilometer-scale Weather Information ...",
+      "url": "https://www.cesm.ucar.edu/sites/default/files/2026-06/2026cesmworkshopsha.pdf",
+      "snippet": "About the AI-based dynamical downscaling model Model, Training, CESM applications Architecture — Swin-Transformer limited-area model + a U-Net post-processing model for precipitation Training — 4-km hourly CONUS404 as the target, driven by 0.25° 3-hourly ERA5, 1980-2018"
+    }
+  ]
+}

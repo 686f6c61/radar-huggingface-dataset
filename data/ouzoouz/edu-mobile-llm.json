@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ouzoouz/edu-mobile-llm",
+  "slug": "ouzoouz-edu-mobile-llm",
+  "author": "ouzoouz",
+  "url": "https://huggingface.co/ouzoouz/edu-mobile-llm",
+  "created_at": "2026-05-20T21:56:30.000Z",
+  "updated_at": "2026-08-19T00:09:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 142,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 4637800800,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ouzoouz/edu-mobile-llm · Hugging Face",
+      "url": "https://huggingface.co/ouzoouz/edu-mobile-llm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ouzoouz (ousmane diallo) - Hugging Face",
+      "url": "https://huggingface.co/ouzoouz/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 15 days ago ... published a model 15 days ago"
+    },
+    {
+      "title": "stevelaskaridis/awesome-mobile-llm: Awesome Mobile LLMs - GitHub",
+      "url": "https://github.com/stevelaskaridis/awesome-mobile-llm",
+      "snippet": "This section showcases frameworks and contributions for supporting LLM inference on mobile and edge devices. These frameworks are primarily used to run models directly on-device, inside mobile apps, edge deployments, or tightly integrated local runtimes. llama.cpp: Inference of Meta&#x27;s LLaMA model ..."
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    },
+    {
+      "title": "GitHub - UbiquitousLearning/mllm: Fast Multimodal LLM on Mobile Devices",
+      "url": "https://github.com/UbiquitousLearning/mLLM",
+      "snippet": "Fast Multimodal LLM on Mobile Devices. Contribute to UbiquitousLearning/mllm development by creating an account on GitHub."
+    }
+  ]
+}

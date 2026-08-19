@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "thnghia-ctu/vi-sentence-simplifier-bartpho",
+  "slug": "thnghia-ctu-vi-sentence-simplifier-bartpho",
+  "author": "thnghia-ctu",
+  "url": "https://huggingface.co/thnghia-ctu/vi-sentence-simplifier-bartpho",
+  "created_at": "2026-08-17T15:30:10.000Z",
+  "updated_at": "2026-08-17T15:31:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395854942,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1588549331,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

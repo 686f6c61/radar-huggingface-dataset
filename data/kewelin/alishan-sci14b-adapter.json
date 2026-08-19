@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kewelin/alishan-sci14b-adapter",
+  "slug": "kewelin-alishan-sci14b-adapter",
+  "author": "Kewelin",
+  "url": "https://huggingface.co/Kewelin/alishan-sci14b-adapter",
+  "created_at": "2026-08-01T12:02:08.000Z",
+  "updated_at": "2026-08-17T10:36:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6177968142,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kewelin/alishan-sci14b-adapter · Hugging Face",
+      "url": "https://huggingface.co/Kewelin/alishan-sci14b-adapter",
+      "snippet": "Instructions to use Kewelin/alishan-sci14b-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Kewelin/alishan-sci14b-adapter with PEFT:"
+    },
+    {
+      "title": "alishan-sci14b-adapter API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Kewelin/alishan-sci14b-adapter",
+      "snippet": "Deploy alishan-sci14b-adapter with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Kewelin (Kewelin) - Hugging Face",
+      "url": "https://huggingface.co/Kewelin/models",
+      "snippet": "Recent Activity updated a modelabout 2 hours ago Kewelin/alishan-fusion70b-merged-adapter published a modelabout 2 hours ago Kewelin/alishan-fusion70b-merged-adapter published a datasetabout 3 hours ago Kewelin/alishan-train View all activity"
+    },
+    {
+      "title": "alishan-sci14bv2-adapter API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Kewelin/alishan-sci14bv2-adapter",
+      "snippet": "Run alishan-sci14bv2-adapter with FriendliAI inference. [More Information Needed]."
+    },
+    {
+      "title": "Configuring Generative AI | Frigate",
+      "url": "https://docs.frigate.video/configuration/genai/genai_config/",
+      "snippet": "A Generative AI provider can be configured in the global config, which will make the Generative AI features available for use. There are currently 3 native providers available to integrate with Frigate."
+    }
+  ]
+}

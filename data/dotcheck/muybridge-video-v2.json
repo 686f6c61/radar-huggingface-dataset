@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DotCheck/muybridge-video-v2",
+  "slug": "dotcheck-muybridge-video-v2",
+  "author": "DotCheck",
+  "url": "https://huggingface.co/DotCheck/muybridge-video-v2",
+  "created_at": "2026-07-26T05:42:20.000Z",
+  "updated_at": "2026-08-18T16:14:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "dotcheck",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "dotcheck",
+    "image-classification",
+    "video",
+    "ai-detection",
+    "synthetic-media",
+    "siglip2",
+    "apache-2.0",
+    "muybridge",
+    "en",
+    "base_model:google/siglip2-base-patch16-224",
+    "base_model:adapter:google/siglip2-base-patch16-224",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5450,
+  "storage_human": "5450 B",
+  "base_model": "google/siglip2-base-patch16-224",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "binary AI detection (video bag p90)",
+      "dataset": "DotCheck video holdout (bag p90; Wan2.2 AI)",
+      "metric": "mean_P_AI_real_bag_p90",
+      "value": 0.004
+    },
+    {
+      "task": "binary AI detection (video bag p90)",
+      "dataset": "DotCheck video holdout (bag p90; Wan2.2 AI)",
+      "metric": "mean_P_AI_ai_bag_p90",
+      "value": 0.94
+    },
+    {
+      "task": "binary AI detection (video bag p90)",
+      "dataset": "DotCheck video holdout (bag p90; Wan2.2 AI)",
+      "metric": "balanced_accuracy_bag_p90",
+      "value": 0.985
+    }
+  ],
+  "sources": []
+}

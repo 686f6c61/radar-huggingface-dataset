@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "LEAP-LAB-KUS/leap-kt-dynamickeyvaluememorynet-2016-11",
+  "slug": "leap-lab-kus-leap-kt-dynamickeyvaluememorynet-2016-11",
+  "author": "LEAP-LAB-KUS",
+  "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-dynamickeyvaluememorynet-2016-11",
+  "created_at": "2026-08-18T16:01:19.000Z",
+  "updated_at": "2026-08-18T16:01:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "leap-kt",
+  "languages": [],
+  "tags": [
+    "leap-kt",
+    "safetensors",
+    "knowledge-tracing",
+    "education",
+    "educational-data-mining",
+    "dynamickeyvaluememorynet",
+    "dataset:assist2017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 207729140,
+  "storage_human": "208 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

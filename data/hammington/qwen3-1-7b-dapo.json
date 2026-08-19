@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hammington/Qwen3-1.7B-DAPO",
+  "slug": "hammington-qwen3-1-7b-dapo",
+  "author": "Hammington",
+  "url": "https://huggingface.co/Hammington/Qwen3-1.7B-DAPO",
+  "created_at": "2026-08-15T04:08:11.000Z",
+  "updated_at": "2026-08-15T04:09:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21903871033,
+  "storage_human": "21.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iamPi/Qwen3-1.7B-DAPO · Hugging Face",
+      "url": "https://huggingface.co/iamPi/Qwen3-1.7B-DAPO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-1.7B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-1.7B/summary",
+      "snippet": "Qwen3-1.7B Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features: Uniquely support of seamless ..."
+    },
+    {
+      "title": "RL-Guided-Adaptive-Sampling/raw_data/Qwen3-1.7B/DAPO-Math-17k ... - GitHub",
+      "url": "https://github.com/RunpengDai/RL-Guided-Adaptive-Sampling/tree/main/raw_data/Qwen3-1.7B/DAPO-Math-17k-Processed",
+      "snippet": "Official implementation of Small RL Controller, Large Language Model: RL-Guided Adaptive Sampling for Test-Time Scaling - RunpengDai/RL-Guided-Adaptive-Sampling"
+    },
+    {
+      "title": "Qwen3-1.7B: Compact model for local AI applications",
+      "url": "https://partimus.com/en/ai-language-models/qwen3-1-7b/",
+      "snippet": "With Qwen3-1.7, Alibaba Cloud is launching a powerful open source model that has been specially developed for complex language processing and cross-system AI applications. As part of the Qwen3 series, the model impresses with its versatility, a large context window, optimized tool usage and strong performance in benchmarks."
+    }
+  ]
+}

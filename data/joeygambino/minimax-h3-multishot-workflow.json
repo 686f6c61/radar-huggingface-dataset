@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joeygambino/MiniMax-H3-Multishot-Workflow",
+  "slug": "joeygambino-minimax-h3-multishot-workflow",
+  "author": "joeygambino",
+  "url": "https://huggingface.co/joeygambino/MiniMax-H3-Multishot-Workflow",
+  "created_at": "2026-08-04T11:48:41.000Z",
+  "updated_at": "2026-08-15T14:58:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "video-generation",
+    "text-to-video",
+    "workflow",
+    "audio-video",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 62,
+  "downloads_30d": 231,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10259457,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joeygambino/MiniMax-H3-Multishot-Workflow · Hugging Face",
+      "url": "https://huggingface.co/joeygambino/MiniMax-H3-Multishot-Workflow",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "joeygambino/MiniMax-H3-Multishot-Workflow at main",
+      "url": "https://huggingface.co/joeygambino/MiniMax-H3-Multishot-Workflow/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax-H3-Multishot-Workflow by joeygambino | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/joeygambino-minimax-h3-multishot-workflow",
+      "snippet": "Explore MiniMax-H3-Multishot-Workflow by joeygambino — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "MiniMax-H3 Multishot — chained shots, one master, with audio ...",
+      "url": "https://civarchive.com/models/2833322?modelVersionId=3200460",
+      "snippet": "Download MiniMax-H3 Multishot — chained shots, one master, with audio - Workflows for MiniMax H3 by joeygambino. Free AI model download from CivArchive."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    }
+  ]
+}

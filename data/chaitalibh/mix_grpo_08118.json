@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "chaitalibh/mix_grpo_08118",
+  "slug": "chaitalibh-mix_grpo_08118",
+  "author": "chaitalibh",
+  "url": "https://huggingface.co/chaitalibh/mix_grpo_08118",
+  "created_at": "2026-08-18T03:56:32.000Z",
+  "updated_at": "2026-08-18T03:56:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "gemma",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:CELL-LAB/lora-plus-f2f-backup",
+    "base_model:adapter:CELL-LAB/lora-plus-f2f-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169115250,
+  "storage_human": "169 MB",
+  "base_model": "CELL-LAB/lora-plus-f2f-backup",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE",
+      "url": "https://arxiv.org/html/2507.21802v2",
+      "snippet": "Model Following DanceGRPO (Xue et al., 2025), we use FLUX.1 Dev (Labs, 2024) as the base model, which is an advanced text-to-image model based on flow matching. Overhead Evaluation For the evaluation of overhead, we use two metrics: the number of function evaluations (NFE) (Lu et al., 2022a) and the time consumption per iteration during training."
+    },
+    {
+      "title": "MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE",
+      "url": "https://arxiv.org/html/2507.21802v3",
+      "snippet": "In this context, the primary focus of MixGRPO is not to overcome the reward model&#x27;s limitations, but rather to explore how to achieve faster convergence and superior performance under the guidance of existing, imperfect reward models."
+    },
+    {
+      "title": "tulvgengenr/MixGRPO · Hugging Face",
+      "url": "https://huggingface.co/tulvgengenr/MixGRPO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/MixGRPO: [ECCV 2026] MixGRPO: Unlocking Flow ...",
+      "url": "https://github.com/Tencent-Hunyuan/MixGRPO",
+      "snippet": "[ECCV 2026] MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE - Tencent-Hunyuan/MixGRPO"
+    },
+    {
+      "title": "MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE - AI ...",
+      "url": "https://ai-search.io/papers/mixgrpo-unlocking-flow-based-grpo-efficiency-with-mixed-ode-sde",
+      "snippet": "This paper talks about MixGRPO, a new technique that mixes two types of mathematical methods, ordinary differential equations (ODE) and stochastic differential equations (SDE), to make AI models better and faster at generating images. This matters because it helps make AI image generation cheaper and quicker, allowing better and faster creation of images, which is useful for art, design, and ..."
+    }
+  ]
+}

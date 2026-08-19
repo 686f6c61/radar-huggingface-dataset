@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "niedamsie9/ksurat",
+  "slug": "niedamsie9-ksurat",
+  "author": "niedamsie9",
+  "url": "https://huggingface.co/niedamsie9/ksurat",
+  "created_at": "2026-07-26T00:17:40.000Z",
+  "updated_at": "2026-08-17T23:30:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51723183734,
+  "storage_human": "51.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

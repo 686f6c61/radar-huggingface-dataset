@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "immortaltatsu/ghostai-v2",
+  "slug": "immortaltatsu-ghostai-v2",
+  "author": "immortaltatsu",
+  "url": "https://huggingface.co/immortaltatsu/ghostai-v2",
+  "created_at": "2026-08-16T16:44:22.000Z",
+  "updated_at": "2026-08-16T16:46:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "qwen3_5_text",
+    "ghost-ai",
+    "on-device",
+    "function-calling",
+    "solana",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 270,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 4382700901,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "immortaltatsu/ghostai-lfm2.5-1.2b-app-v2 · Hugging Face",
+      "url": "https://huggingface.co/immortaltatsu/ghostai-lfm2.5-1.2b-app-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "immortaltatsu/ghost-ai-gguf · Hugging Face",
+      "url": "https://huggingface.co/immortaltatsu/ghost-ai-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - therezor/GhostAI: Lightweight, open-source AI agent for your ...",
+      "url": "https://github.com/therezor/GhostAI",
+      "snippet": "🐈 GhostAI is an open-source, ultra-lightweight personal AI agent you can truly own. It keeps the agent core small and readable while giving you the practical pieces for real long-running work: WebUI, chat channels, tools, memory, MCP, model routing, automation, and deployment."
+    },
+    {
+      "title": "GhostAI-v2/README.md at main · The-UnknownHacker/GhostAI-v2",
+      "url": "https://github.com/The-UnknownHacker/GhostAI-v2/blob/main/README.md",
+      "snippet": "The second revised version of ghostai - Going from Python to TypeScript/JS - The-UnknownHacker/GhostAI-v2"
+    },
+    {
+      "title": "The Ultimate Open Source NSFW AI Model List (2025 Guide)",
+      "url": "https://kextcache.com/open-source-nsfw-ai-model-list/",
+      "snippet": "Your complete 2025 list of the best open source NSFW AI models for text and image generation. Find top models like MythoMax, SDXL, and the tools to run them."
+    }
+  ]
+}

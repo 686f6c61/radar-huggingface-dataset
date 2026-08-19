@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "HanzoHuang/MiniCPM4-0.5B",
+  "slug": "hanzohuang-minicpm4-0-5b",
+  "author": "HanzoHuang",
+  "url": "https://huggingface.co/HanzoHuang/MiniCPM4-0.5B",
+  "created_at": "2026-08-14T03:18:58.000Z",
+  "updated_at": "2026-08-14T03:20:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minicpm4",
+    "upstream-reference",
+    "text-generation",
+    "base_model:openbmb/MiniCPM4-0.5B",
+    "base_model:finetune:openbmb/MiniCPM4-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openbmb/MiniCPM4-0.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM4-0.5B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM4-0.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5-1B: A SOTA 1B on-device LLM, small ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "MiniCPM4 and MiniCPM4.1 series are large language models designed for end-side devices, with efficiency optimizations across model architecture, training data, training algorithms, and inference systems."
+    },
+    {
+      "title": "README.md · openbmb/MiniCPM4-0.5B at main - Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM4-0.5B/blob/main/README.md",
+      "snippet": "MiniCPM4-8B-marlin-Eagle-vLLM: Quantized Eagle head for vLLM format, accelerating speculative inference for MiniCPM4-8B. BitCPM4-0.5B: Extreme ternary quantization applied to MiniCPM4-0.5B compresses model parameters into ternary values, achieving a 90% reduction in bit width."
+    },
+    {
+      "title": "MiniCPM4-0.5B Open-Source Large Language Model - Suitable for Edge ...",
+      "url": "https://model.aibase.com/models/details/1931891005427290112",
+      "snippet": "MiniCPM4 is an efficient large - language model designed specifically for edge devices. Through systematic innovation, it achieves extreme efficiency improvements in four key dimensions: model architecture, training data, training algorithm, and inference system. Large Language Model Transformers Supports Multiple LanguagesOpen Source License:Apache-2.0#Efficient inference on the edge side# ..."
+    },
+    {
+      "title": "MiniCPM4 0.5B by openbmb — VRAM 0.9GB, 32K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/openbmb%2FMiniCPM4-0.5B,56po4DvnnXJUPPUmxzUyuO",
+      "snippet": "MiniCPM4 0.5B is an open-source 0.5b LLM by openbmb. VRAM 0.9GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "richardxyt/Enfold",
+  "slug": "richardxyt-enfold",
+  "author": "richardxyt",
+  "url": "https://huggingface.co/richardxyt/Enfold",
+  "created_at": "2026-07-29T13:35:59.000Z",
+  "updated_at": "2026-08-17T05:14:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "robot-learning",
+    "imitation-learning",
+    "embodied-ai",
+    "world-model",
+    "vision-language-action",
+    "libero",
+    "robotwin",
+    "en",
+    "arxiv:2607.26657",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12537945890,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enfold: Folding World Model Imagination into Predictive Representations ...",
+      "url": "https://arxiv.org/html/2607.26657v3",
+      "snippet": "Enfold therefore predicts a multi-level target through a timestep-conditioned head. Unlike pixel prediction or distillation from a frozen visual encoder, this target describes how a generative model organizes the observed transition across both depth and corruption."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Enfold",
+      "snippet": "+ 44 Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 ..."
+    },
+    {
+      "title": "Enfold: Folding World Model Imagination into Predictive Representat…",
+      "url": "https://www.opentrain.ai/papers/enfold-folding-world-model-imagination-into-predictive-representations-for-ultra--arxiv-2607.26657/",
+      "snippet": "Find the most reliable implementation, reproducibility signals, and Hugging Face artifacts for Enfold: Folding World Model Imagination into Predictive Repres…"
+    },
+    {
+      "title": "Enfold — Predictive Representations for Efficient Embodied Control",
+      "url": "https://zwl666666.github.io/enfold/",
+      "snippet": "Research project · efficient embodied control Enfold Folding World-Generator Imagination into Predictive Representations for Ultra-Efficient Embodied Control A world generator does not need to render a future at every control step. Enfold transfers the computation that constructs a future into a representation inferred from the present."
+    },
+    {
+      "title": "[2607.26657] Enfold: Folding World Model Imagination into Predictive ...",
+      "url": "https://arxiv.org/abs/2607.26657",
+      "snippet": "Abstract page for arXiv paper 2607.26657: Enfold: Folding World Model Imagination into Predictive Representations for Ultra-Efficient Embodied Control"
+    }
+  ]
+}

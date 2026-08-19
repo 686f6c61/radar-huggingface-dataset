@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "dns/Qwen3.8-9B-heretic-uncensored",
+  "slug": "dns-qwen3-8-9b-heretic-uncensored",
+  "author": "dns",
+  "url": "https://huggingface.co/dns/Qwen3.8-9B-heretic-uncensored",
+  "created_at": "2026-08-17T12:52:06.000Z",
+  "updated_at": "2026-08-17T12:55:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "sft",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18859699937,
+  "storage_human": "18.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rohit267/Qwen3.8-9B-heretic-uncensored · Hugging Face",
+      "url": "https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · rohit267/Qwen3.8-9B-heretic-uncensored at main",
+      "url": "https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored/blob/main/README.md",
+      "snippet": "rohit267 / Qwen3.8-9B-heretic-uncensored like 1 Text Generation Transformers Safetensors English qwen3_5 image-text-to-text empero-ai qwen3.5 qwen3.8 distillation reasoning function-calling sft heretic uncensored decensored abliterated reproducible conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "Qwen3.8-9B-heretic-uncensored API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/rohit267/Qwen3.8-9B-heretic-uncensored",
+      "snippet": "Qwen3.8-9B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-9B architecture. The student was trained on ~70,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, code, general reasoning, instruction following, and tool use, quality-filtered before training."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Using Heretic does not require an understanding of transformer internals. In fact, anyone who knows how to run a command-line program can use Heretic to decensor language models. Heretic supports most dense models, including many multimodal models, several different MoE architectures, and even some hybrid models like Qwen3.5."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    }
+  ]
+}

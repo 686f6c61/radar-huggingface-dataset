@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "2usang/act_trihouse-milk",
+  "slug": "2usang-act_trihouse-milk",
+  "author": "2usang",
+  "url": "https://huggingface.co/2usang/act_trihouse-milk",
+  "created_at": "2026-08-17T18:19:58.000Z",
+  "updated_at": "2026-08-17T18:21:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:2usang/trihouse-milk",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2usang/act_trihouse-dumpling · Hugging Face",
+      "url": "https://huggingface.co/2usang/act_trihouse-dumpling",
+      "snippet": "Instructions to use 2usang/act_trihouse-dumpling with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use 2usang/act_trihouse-dumpling with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "2usang/trihouse-milk · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/2usang/trihouse-milk/viewer/default/train",
+      "snippet": "2usang / trihouse-milk like 0 Dataset card Data Studio FilesFiles and versions xet Community Subset (1) default·31.5k rows default (31.5k rows) Split (1) train·31.5k rows train (31.5k rows) Search is not available for this dataset SQL Console"
+    },
+    {
+      "title": "Official gateway and model catalog for Agnes AI. - GitHub",
+      "url": "https://github.com/AgnesAI-Labs/AgnesAI-Models",
+      "snippet": "Official gateway and model catalog for Agnes AI. Agnes AI gives developers OpenAI-compatible access to multimodal models for text, image, video, and agent workflows through a unified API gateway."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

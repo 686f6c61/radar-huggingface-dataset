@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "nyloanon/khi-cfm-surrogate",
+  "slug": "nyloanon-khi-cfm-surrogate",
+  "author": "nyloanon",
+  "url": "https://huggingface.co/nyloanon/khi-cfm-surrogate",
+  "created_at": "2026-08-14T08:55:47.000Z",
+  "updated_at": "2026-08-16T20:23:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164470032,
+  "storage_human": "164 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

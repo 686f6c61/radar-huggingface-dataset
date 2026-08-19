@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "calvinyong1/arabidopsis-segmentation-model",
+  "slug": "calvinyong1-arabidopsis-segmentation-model",
+  "author": "calvinyong1",
+  "url": "https://huggingface.co/calvinyong1/arabidopsis-segmentation-model",
+  "created_at": "2026-08-17T18:08:54.000Z",
+  "updated_at": "2026-08-17T18:09:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "nnunet",
+  "languages": [],
+  "tags": [
+    "nnunet",
+    "image-segmentation",
+    "medical-imaging",
+    "biology",
+    "chronoroot",
+    "plant-science",
+    "dataset:ngaggion/ChronoRoot2",
+    "arxiv:2504.14736",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 848436341,
+  "storage_human": "848 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - calvinyong1/ArabidopsisAnalysisV2",
+      "url": "https://github.com/calvinyong1/ArabidopsisAnalysisV2",
+      "snippet": "Updating Model Weights If you need to re-download or update the segmentation model weights:"
+    },
+    {
+      "title": "ArabidopsisAnalysisV2/README.md at main · calvinyong1 ... - GitHub",
+      "url": "https://github.com/calvinyong1/ArabidopsisAnalysisV2/blob/main/README.md",
+      "snippet": "Download segmentation model weights from Hugging Face into segmentationApp/models/. Create macOS .app launchers in ~/Applications/ with desktop shortcuts on ~/Desktop/:"
+    },
+    {
+      "title": "Unlocking the power of AI for phenotyping fruit morphology in ...",
+      "url": "https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giae123/8010444",
+      "snippet": "In this study, we assess the efficacy of deep learning for measuring variation in fruit morphology in Arabidopsis using images from a multiparent advanced generation intercross (MAGIC) mapping family. We trained an instance segmentation model and developed a pipeline to phenotype Arabidopsis fruit morphology, based on the model outputs."
+    },
+    {
+      "title": "valenottaviano/arabidopsis-segmentation · Hugging Face",
+      "url": "https://huggingface.co/valenottaviano/arabidopsis-segmentation",
+      "snippet": "valenottaviano / arabidopsis-segmentation like 0 Model card FilesFiles and versions Community No model card"
+    },
+    {
+      "title": "1Introduction - arXiv.org",
+      "url": "https://arxiv.org/html/2009.05750v2",
+      "snippet": "Quantitative experiments, carried out on three publicly available datasets, show that (i) our model is capable of generating realistic multi-spectral images of plants and (ii) the usage of such synthetic images in the training process improves the segmentation performance of state-of-the-art semantic segmentation convolutional networks."
+    }
+  ]
+}

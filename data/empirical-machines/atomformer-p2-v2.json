@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "empirical-machines/atomformer-p2-v2",
+  "slug": "empirical-machines-atomformer-p2-v2",
+  "author": "empirical-machines",
+  "url": "https://huggingface.co/empirical-machines/atomformer-p2-v2",
+  "created_at": "2026-08-17T18:56:51.000Z",
+  "updated_at": "2026-08-17T18:57:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "atomistic-ml",
+    "mlip",
+    "interatomic-potentials",
+    "materials-science",
+    "chemistry",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236421080,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:39.868Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vector-institute/atomformer-base · Hugging Face",
+      "url": "https://huggingface.co/vector-institute/atomformer-base",
+      "snippet": "AtomFormer base model This model is a transformer-based model that leverages gaussian pair-wise positional embeddings to train on atomistic graph data. It is part of a suite of datasets/models/utilities in the AtomGen project that supports other methods for pre-training and fine-tuning models on atomistic graphs. Model description AtomFormer is a transformer model with modifcations to train on ..."
+    },
+    {
+      "title": "Empirical Machines",
+      "url": "https://www.empiricalmachines.ai/",
+      "snippet": "Accelerating scientific discovery with AI that learns from real-world experiments."
+    },
+    {
+      "title": "modeling_atomformer.py · vector-institute/atomformer-base at main",
+      "url": "https://huggingface.co/vector-institute/atomformer-base/blob/main/modeling_atomformer.py",
+      "snippet": "License: apache-2.0 Model card Files Files and versions Community Train Use this model main atomformer-base / modeling_atomformer.py akore"
+    },
+    {
+      "title": "GitHub - VectorInstitute/atomgen: Library for handling atomistic graph ...",
+      "url": "https://github.com/VectorInstitute/AtomGen",
+      "snippet": "AtomGen supports a variety of models for training on atomistic graph datasets, including: AtomFormer: Custom architecture that leverages gaussian pair-wise positional embeddings and self-attention to model atomistic graphs. SchNet: A continuous-filter convolutional neural network for modeling quantum interactions. TokenGT: Tokenized graph transformer that treats all nodes and edges as ..."
+    },
+    {
+      "title": "AtomFormer: A Simple Model for Any Mixture Odor Prediction and Beyond",
+      "url": "https://chemrxiv.org/doi/pdf/10.26434/chemrxiv.15006353/v2?onload=true",
+      "snippet": "This simple design yields several outstanding results. On olfactory mixture perception, AtomFormer achieves macro-AUROC of 0.930 on 6,260 rigorously decontaminated binary mixture test set—exceeding prior methods by nearly 15% [Sisson et al., 2025]—with a single 16.9M-parameter model trained on publicly available data. On excess enthalpy prediction, the same backbone reaches Pearson R = 0. ..."
+    }
+  ]
+}

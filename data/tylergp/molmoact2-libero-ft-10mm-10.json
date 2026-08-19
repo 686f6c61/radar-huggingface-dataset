@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tylergp/molmoact2-libero-ft-10mm-10",
+  "slug": "tylergp-molmoact2-libero-ft-10mm-10",
+  "author": "tylergp",
+  "url": "https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-10",
+  "created_at": "2026-08-15T19:15:54.000Z",
+  "updated_at": "2026-08-16T01:39:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "pytorch",
+    "safetensors",
+    "molmoact2",
+    "robotics",
+    "dataset:10_episodes",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 146,
+  "trending_score": 0,
+  "parameters": 5591928368,
+  "parameters_human": "5.59B",
+  "storage_bytes": 77362618807,
+  "storage_human": "77.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

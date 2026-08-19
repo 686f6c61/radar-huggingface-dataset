@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "staccs/Qwen3.5-0.8B-lecore-assimilated",
+  "slug": "staccs-qwen3-5-0-8b-lecore-assimilated",
+  "author": "staccs",
+  "url": "https://huggingface.co/staccs/Qwen3.5-0.8B-lecore-assimilated",
+  "created_at": "2026-08-16T05:01:19.000Z",
+  "updated_at": "2026-08-16T05:07:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "lecore",
+    "unicron",
+    "marchenko-pastur",
+    "spectral-filtering",
+    "compression",
+    "qwen3.5",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1759755168,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

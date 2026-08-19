@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "michael-c-137/nicaraguan-legal-llama3-8b",
+  "slug": "michael-c-137-nicaraguan-legal-llama3-8b",
+  "author": "michael-c-137",
+  "url": "https://huggingface.co/michael-c-137/nicaraguan-legal-llama3-8b",
+  "created_at": "2026-08-17T14:28:35.000Z",
+  "updated_at": "2026-08-17T14:28:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17209961,
+  "storage_human": "17 MB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Legal Models - a legalcomplex Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/legalcomplex/legal-models",
+      "snippet": "Legal & Law GGUF models compatible with Ollama, LM Studio and Llama.cpp"
+    },
+    {
+      "title": "GitHub - supersonic13/llama3.c: A faithful clone of Karpathy&#x27;s llama2.c ...",
+      "url": "https://github.com/supersonic13/llama3.c",
+      "snippet": "A faithful clone of Karpathy&#x27;s llama2.c (one file inference, zero dependency) but fully functional with LLaMA 3 8B base and instruct models. - supersonic13/llama3.c"
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Meta-Llama-3-8B - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama3:8b",
+      "url": "https://ollama.com/library/llama3:8b",
+      "snippet": "Meta Llama 3, a family of models developed by Meta Inc. are new state-of-the-art , available in both 8B and 70B parameter sizes (pre-trained or instruction-tuned). Llama 3 instruction-tuned models are fine-tuned and optimized for dialogue/chat use cases and outperform many of the available open-source chat models on common benchmarks. CLI"
+    }
+  ]
+}

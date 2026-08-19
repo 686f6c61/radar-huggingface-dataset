@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-FP8-block",
+  "slug": "redhatai-nvidia-nemotron-3-ultra-550b-a55b-fp8-block",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-FP8-block",
+  "created_at": "2026-06-04T22:04:43.000Z",
+  "updated_at": "2026-08-17T17:14:31.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "fp8",
+    "quantized",
+    "llm-compressor",
+    "compressed-tensors",
+    "red hat",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17902,
+  "trending_score": 0,
+  "parameters": 560524603904,
+  "parameters_human": "560.52B",
+  "storage_bytes": 563282135535,
+  "storage_human": "563.3 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3-Ultra-550B-A55B-FP8-block - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-FP8-block",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Ultra",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/",
+      "snippet": "We are releasing NVIDIA Nemotron 3 Ultra - our largest and most capable model yet. Nemotron 3 Ultra is a 55B active 550B total parameter Mixture-of-Experts hybrid Mamba-Transformer model that leverages Latent MoE, includes MTP Layers, and was pre-trained in NVFP4."
+    },
+    {
+      "title": "redhatai-nvidia-nemotron-3-ultra-550b-a55b-bf16-fp8-block",
+      "url": "https://catalog.redhat.com/en/software/containers/rhai/redhatai-nemotron-ultra-550b-bf16-fp8-block/6a43b75371b0b2119f8939ae",
+      "snippet": "Download this image This will require authentication. View other options. Description redhatai-nvidia-nemotron-3-ultra-550b-a55b-bf16-fp8-block"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16-W4A16-G128 - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16-W4A16-G128",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nemotron-3-ultra-550b-a55b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b/modelcard",
+      "snippet": "Nemotron-3-Ultra-550B-A55B-NVFP4 is a frontier-scale large language model (LLM) trained by NVIDIA, designed to deliver strong agentic, reasoning, and conversational capabilities. It is optimized for the most demanding workloads, including complex multi-step agents, long-context analysis, and high-accuracy reasoning over code, math, and science."
+    }
+  ]
+}

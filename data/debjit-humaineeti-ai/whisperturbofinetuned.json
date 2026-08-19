@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "debjit-humaineeti-ai/WhisperTurboFinetuned",
+  "slug": "debjit-humaineeti-ai-whisperturbofinetuned",
+  "author": "debjit-humaineeti-ai",
+  "url": "https://huggingface.co/debjit-humaineeti-ai/WhisperTurboFinetuned",
+  "created_at": "2026-08-18T09:55:16.000Z",
+  "updated_at": "2026-08-18T09:57:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "humaineeti — Agentic AI & GenAI Engineering for the Enterprise",
+      "url": "https://www.humaineeti.ai/",
+      "snippet": "humaineeti (human + AI + neeti) — governed agentic AI & GenAI for the enterprise, engineered for production and trusted from day one."
+    },
+    {
+      "title": "Debjit Paul",
+      "url": "https://debjitpaul.github.io/",
+      "snippet": "I develop methods for generating faithful explanations, detecting and mitigating factual errors, and aligning model behaviour through human and AI feedback. [5, 6, 7] Agentic AI. The next generation of AI systems will need to plan, reason, and act autonomously in complex environments."
+    },
+    {
+      "title": "Introducing Whisper - OpenAI",
+      "url": "https://openai.com/index/whisper/",
+      "snippet": "We&#x27;ve trained and are open-sourcing a neural net called Whisper that approaches human level robustness and accuracy on English speech recognition."
+    },
+    {
+      "title": "‪Debjit Mukherjee‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=d2Whu4QAAAAJ&hl=en",
+      "snippet": "Debjit Mukherjee Research Fellow, New York Institute of Technology Verified email at nyit.edu - Homepage AI Analytics Business Intelligence"
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

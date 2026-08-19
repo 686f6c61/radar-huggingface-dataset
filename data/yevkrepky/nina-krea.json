@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "yevkrepky/nina-krea",
+  "slug": "yevkrepky-nina-krea",
+  "author": "yevkrepky",
+  "url": "https://huggingface.co/yevkrepky/nina-krea",
+  "created_at": "2026-07-11T09:40:38.000Z",
+  "updated_at": "2026-08-18T19:48:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457174976,
+  "storage_human": "457 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea: AI Creative Suite for Images, Video & 3D",
+      "url": "https://www.krea.ai/",
+      "snippet": "Generate, edit, and enhance images, videos, and 3D assets with Krea&#x27;s creative AI suite. Start for free with real-time tools, powerful models, and collaborative workflows."
+    },
+    {
+      "title": "Model Library - krea.ai",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "yevkrepky/Nina-Lora at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/yevkrepky/Nina-Lora/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "krea (KREA) - Hugging Face",
+      "url": "https://huggingface.co/krea/models",
+      "snippet": "AI Creative Suite."
+    },
+    {
+      "title": "README.md · yevkrepky/Nina-Lora at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/yevkrepky/Nina-Lora/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

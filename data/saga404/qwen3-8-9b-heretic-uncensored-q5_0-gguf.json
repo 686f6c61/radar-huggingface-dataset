@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "saga404/Qwen3.8-9B-heretic-uncensored-Q5_0-GGUF",
+  "slug": "saga404-qwen3-8-9b-heretic-uncensored-q5_0-gguf",
+  "author": "saga404",
+  "url": "https://huggingface.co/saga404/Qwen3.8-9B-heretic-uncensored-Q5_0-GGUF",
+  "created_at": "2026-08-17T17:21:41.000Z",
+  "updated_at": "2026-08-17T17:22:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "sft",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:rohit267/Qwen3.8-9B-heretic-uncensored",
+    "base_model:quantized:rohit267/Qwen3.8-9B-heretic-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6305301952,
+  "storage_human": "6.3 GB",
+  "base_model": "rohit267/Qwen3.8-9B-heretic-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "README.md · rohit267/Qwen3.8-9B-heretic-uncensored at main",
+      "url": "https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored/blob/main/README.md",
+      "snippet": "rohit267 / Qwen3.8-9B-heretic-uncensored like 1 Text Generation Transformers Safetensors English qwen3_5 image-text-to-text empero-ai qwen3.5 qwen3.8 distillation reasoning function-calling sft heretic uncensored decensored abliterated reproducible conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "Qwen3.8-9B-heretic-uncensored API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/rohit267/Qwen3.8-9B-heretic-uncensored",
+      "snippet": "Qwen3.8-9B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-9B architecture. The student was trained on ~70,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, code, general reasoning, instruction following, and tool use, quality-filtered before training."
+    },
+    {
+      "title": "Qwen3.5-9B-ultra-uncensored-heretic-v1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/llmfan46/Qwen3.5-9B-ultra-uncensored-heretic-v1-GGUF",
+      "snippet": "The Heretic model&#x27;s acc and acc_norm scores closer to the original model&#x27;s indicate better capability preservation, a big decrease in acc and acc_norm in the Heretic model compared to Original model&#x27;s results means a big decrease in the Hereticated model capabilities. acc measures raw accuracy (which answer gets higher probability), while acc ..."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic: Fully automatic censorship removal for language models Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training."
+    }
+  ]
+}

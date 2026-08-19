@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FAIRC/token-averaging-avg_50m_k4_tied",
+  "slug": "fairc-token-averaging-avg_50m_k4_tied",
+  "author": "FAIRC",
+  "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_tied",
+  "created_at": "2026-08-18T13:05:28.000Z",
+  "updated_at": "2026-08-18T13:06:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 599155130,
+  "storage_human": "599 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4 · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4",
+      "snippet": "FAIRC / token-averaging-avg_50m_k4 like 0 Follow FAIRC 3 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4_learnable_pos · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos",
+      "snippet": "FAIRC/token-averaging-avg_50m_k4_learnable_pos Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack",
+      "url": "https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html",
+      "snippet": "JADEPUFFER exploits Langflow CVE-2025-3248 to deploy ENCFORGE ransomware against AI model weights, vector indexes, and training data on the host."
+    },
+    {
+      "title": "LLM Token Counter — Count Tokens for GPT, Claude & Gemini | BenchLM.ai",
+      "url": "https://benchlm.ai/tools/token-counter",
+      "snippet": "Free LLM token counter with real tokenizers for GPT-5, Claude, Gemini, Llama & more. Count tokens, estimate API costs, and check context window limits instantly."
+    },
+    {
+      "title": "LLM API Pricing Comparison & Calculator (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/llm-pricing",
+      "snippet": "LLM API Pricing Comparison and Cost Calculator Compare current LLM API pricing for 137 paid models across 25 providers. All prices are per million tokens. The Score/$ column uses the public overall score per dollar of output — higher means better value. Last updated: August 17, 2026. Prices reflect official API rates. Open-weight model costs depend on your infrastructure. How does LLM token ..."
+    }
+  ]
+}

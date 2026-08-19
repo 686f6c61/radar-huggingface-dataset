@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "marzieh-maleki/hypogen-bart-base-pq",
+  "slug": "marzieh-maleki-hypogen-bart-base-pq",
+  "author": "marzieh-maleki",
+  "url": "https://huggingface.co/marzieh-maleki/hypogen-bart-base-pq",
+  "created_at": "2026-08-14T12:46:03.000Z",
+  "updated_at": "2026-08-14T12:46:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 139470681,
+  "parameters_human": "139.5M",
+  "storage_bytes": 557912620,
+  "storage_human": "558 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

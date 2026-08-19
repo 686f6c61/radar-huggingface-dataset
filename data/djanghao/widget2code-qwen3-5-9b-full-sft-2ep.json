@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Djanghao/Widget2Code-Qwen3.5-9B-Full-SFT-2ep",
+  "slug": "djanghao-widget2code-qwen3-5-9b-full-sft-2ep",
+  "author": "Djanghao",
+  "url": "https://huggingface.co/Djanghao/Widget2Code-Qwen3.5-9B-Full-SFT-2ep",
+  "created_at": "2026-08-17T18:01:48.000Z",
+  "updated_at": "2026-08-17T18:11:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "widget2code",
+    "screenshot-to-code",
+    "react",
+    "jsx",
+    "qwen3.5",
+    "full-sft",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Widget2Code - djanghao.github.io",
+      "url": "https://djanghao.github.io/widget2code/",
+      "snippet": "We present qualitative comparisons between our method (Widget2Code) and baseline approaches across diverse widget designs. Each example shows the input widget alongside outputs from generalized MLLMs (Gemini-2.5-Pro, GPT-4o, Qwen3-VL), specialized UI2Code models (ScreenCoder, UI-UG), and our method."
+    },
+    {
+      "title": "GitHub - Djanghao/widget2code: [CVPR 2026] Official implementation of ...",
+      "url": "https://github.com/Djanghao/widget2code",
+      "snippet": "Widget2Code is a baseline framework that strengthens both perceptual understanding and system-level generation for transforming visual widgets into UI code. It leverages advanced vision-language models to automatically generate production-ready WidgetDSL from screenshots, featuring icon detection across 57,000+ icons, layout analysis, component recognition and generation. This repository ..."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    },
+    {
+      "title": "Widget2Code: From Visual Widgets to UI Code via Multimodal LLMs",
+      "url": "https://arxiv.org/pdf/2512.19918",
+      "snippet": "We formalize the Widget-to-Code (Widget2Code) task and introduce the first image-only widget dataset with fine-grained, render-level evaluation metrics. We benchmark existing UI2Code models and show that specialized methods underperform general-purpose MLLMs on widgets, exposing key challenges in visual grounding and structural reconstruction."
+    }
+  ]
+}

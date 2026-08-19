@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "pinkelephantlimited/pinkelephant-llm-48b-s-4bit",
+  "slug": "pinkelephantlimited-pinkelephant-llm-48b-s-4bit",
+  "author": "pinkelephantlimited",
+  "url": "https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b-s-4bit",
+  "created_at": "2026-08-16T06:03:01.000Z",
+  "updated_at": "2026-08-18T14:00:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "moe",
+    "mixture-of-experts",
+    "sparse-moe",
+    "qlora",
+    "4bit",
+    "nf4",
+    "lora",
+    "sft",
+    "supervised-fine-tuning",
+    "instruction-tuning",
+    "openhermes",
+    "pink-elephant",
+    "llm",
+    "48b",
+    "custom_code",
+    "enterprise",
+    "blackwell",
+    "fine-tuning",
+    "training",
+    "text-generation",
+    "en",
+    "base_model:pinkelephantlimited/pinkelephant-llm-48b-s",
+    "base_model:adapter:pinkelephantlimited/pinkelephant-llm-48b-s",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 163894693738,
+  "storage_human": "163.9 GB",
+  "base_model": "pinkelephantlimited/pinkelephant-llm-48b-s",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pinkelephantlimited/pink-elephant-llm - GitHub",
+      "url": "https://github.com/pinkelephantlimited/pink-elephant-llm",
+      "snippet": "📋 Overview Pink Elephant LLM is a family of custom LLaMA-architecture language models trained from scratch on 2+ trillion tokens of code, natural language, and mathematical data. Our models are designed for:"
+    },
+    {
+      "title": "pinkelephantlimited/pinkelephant-llm-48b · Hugging Face",
+      "url": "https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b",
+      "snippet": "An Elegant Scaling Story Pink Elephant 48B was upcycled, not trained from scratch. The feedforward weights of the established pink-elephant-llm-14b dense foundation were mathematically split and replicated into eight complementary experts — preserving the parent model&#x27;s knowledge while multiplying capacity roughly threefold. Scaling through intelligence, not brute force."
+    },
+    {
+      "title": "pinkelephantlimited/pink-elephant-llm · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/pinkelephantlimited/pink-elephant-llm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pinkelephantlimited (Pink Elephant Limited) · GitHub",
+      "url": "https://github.com/pinkelephantlimited/",
+      "snippet": "Joined Jul 2, 2026 Block or report user Block or report pinkelephantlimited Block user Add an optional note pink-elephant-llm pink-elephant-llm Public Training infrastructure and evaluation suite for Pink Elephant LLM models Python .github .github Public Pink Elephant Limited organization profile"
+    },
+    {
+      "title": "Pinkelephant Llm 48B by pinkelephantlimited",
+      "url": "https://llm-explorer.com/model/pinkelephantlimited%2Fpinkelephant-llm-48b,1sspFcUJAhi2e0j0NMymrN",
+      "snippet": "Pinkelephant Llm 48B is an open-source 47.7b LLM by pinkelephantlimited. VRAM 94.8GB, 16K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

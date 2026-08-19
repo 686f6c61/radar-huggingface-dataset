@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r373-offline-dpo-hialpha-longctx-hirank-lora",
+  "slug": "unconst-affine-5czsc2fc98-r373-offline-dpo-hialpha-longctx-hirank-lora",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r373-offline-dpo-hialpha-longctx-hirank-lora",
+  "created_at": "2026-08-16T01:13:23.000Z",
+  "updated_at": "2026-08-16T02:01:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "affine-h1-salvage",
+    "text-generation",
+    "base_model:marsplan0624/affine-5gedzafcvg-queen",
+    "base_model:adapter:marsplan0624/affine-5gedzafcvg-queen",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133739040,
+  "storage_human": "134 MB",
+  "base_model": "marsplan0624/affine-5gedzafcvg-queen",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

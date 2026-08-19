@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/VibeWorlder-30B-A3B-GGUF",
+  "slug": "mradermacher-vibeworlder-30b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VibeWorlder-30B-A3B-GGUF",
+  "created_at": "2026-08-18T09:12:07.000Z",
+  "updated_at": "2026-08-18T09:43:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 30510270144,
+  "storage_human": "30.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "TeichAI - Distilled Models & Datasets",
+      "url": "https://www.teichai.com/",
+      "snippet": "Open Source AI Research Distilled models and curated datasets for the community We fine-tune open-source models on high-quality reasoning datasets from frontier models like Claude, GPT, and Gemini. All models are released in GGUF format for local deployment."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF is a quantized version of Huihui AI&#x27;s 30 billion parameter coding-focused language model, maintained by mradermacher."
+    },
+    {
+      "title": "Qwen3 235B and 30B MoE Quant Benchmarking Roundup · GitHub",
+      "url": "https://gist.github.com/ubergarm/0f9663fd56fc181a00ec9f634635eb38",
+      "snippet": "Amongst them bartowski, and unsloth (Daniel and Michael&#x27;s start-up company), have become the new \"household names\" for providing a variety of GGUF quantizations for popular model releases and even all those wild creative fine-tunes! (There are many more including team mradermacher and too many to list everyone, sorry!)"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3",
+      "snippet": "The post-trained models, such as Qwen3-30B-A3B, along with their pre-trained counterparts (e.g., Qwen3-30B-A3B-Base), are now available on platforms like Hugging Face, ModelScope, and Kaggle."
+    }
+  ]
+}

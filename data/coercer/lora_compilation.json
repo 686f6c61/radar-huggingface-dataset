@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Coercer/Lora_Compilation",
+  "slug": "coercer-lora_compilation",
+  "author": "Coercer",
+  "url": "https://huggingface.co/Coercer/Lora_Compilation",
+  "created_at": "2025-01-13T22:41:52.000Z",
+  "updated_at": "2026-08-17T20:25:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64189055789,
+  "storage_human": "64.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coercer/Lora_Compilation · Hugging Face",
+      "url": "https://huggingface.co/Coercer/Lora_Compilation",
+      "snippet": "Lora_Compilation like 0 Model card Files Community No model card Downloads last month -"
+    },
+    {
+      "title": "Coercer/Lora_Compilation at main - Hugging Face",
+      "url": "https://huggingface.co/Coercer/Lora_Compilation/tree/main/Styles",
+      "snippet": "Coercer / Lora_Compilation like 0 Model card FilesFiles and versions xet Community main Lora_Compilation /Styles 5.14 GB 1 contributor History:2 commits Coercer Upload 9_6-16.safetensors e2a168f verified3 months ago 9_6-16.safetensors 203 MB xet Upload 9_6-16.safetensors3 months ago FlatColorILf.safetensors Safe 228 MB xet Upload 21 files3 ..."
+    },
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" - microsoft/LoRA"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,990 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "url": "https://www.microsoft.com/en-us/research/publication/lora-low-rank-adaptation-of-large-language-models/",
+      "snippet": "We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 on GitHub."
+    }
+  ]
+}

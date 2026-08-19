@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "FarazAbdulMuqtader/roman-urdu-sentiment-xlmr",
+  "slug": "farazabdulmuqtader-roman-urdu-sentiment-xlmr",
+  "author": "FarazAbdulMuqtader",
+  "url": "https://huggingface.co/FarazAbdulMuqtader/roman-urdu-sentiment-xlmr",
+  "created_at": "2026-08-18T19:35:35.000Z",
+  "updated_at": "2026-08-18T19:56:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "ur",
+    "dataset:Khubaib01/RomanUrdu-NLP-Sentiment-Corpus",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1128989546,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base, FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RomanUrdu-NLP/models/roman-urdu-sentiment-xlmr.md at main - GitHub",
+      "url": "https://github.com/Inference-LAB/RomanUrdu-NLP/blob/main/models/roman-urdu-sentiment-xlmr.md",
+      "snippet": "Roman Urdu Sentiment Analysis Model (Khubaib01) This model performs sentiment classification on Roman Urdu text, labeling input sentences as Positive, Negative, or Neutral. It is fine-tuned from xlm-roberta-base and designed to handle Roman Urdu, code-mixed Urdu-English, and social media style text, including slang-heavy WhatsApp chats, YouTube comments, and Twitter posts."
+    },
+    {
+      "title": "Inferencelab/roman-urdu-sentiment-xlm-r at main - Hugging Face",
+      "url": "https://huggingface.co/Inferencelab/roman-urdu-sentiment-xlm-r/tree/main",
+      "snippet": "Inferencelab / roman-urdu-sentiment-xlm-r like 0 Follow INFERENCE LAB 5 Text Classification Transformers Safetensors xlm-roberta sentiment-analysis roman-urdu classification multilingual text-embeddings-inference License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "RomanUrdu-NLP/models at main · Inference-LAB/RomanUrdu-NLP",
+      "url": "https://github.com/Inference-LAB/RomanUrdu-NLP/tree/main/models",
+      "snippet": "Contribute to Inference-LAB/RomanUrdu-NLP development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=urdu-nlp",
+      "snippet": "Khubaib01/roman-urdu-emotion-xlmr Text Classification • 0.3B•Updated Mar 16• 3 • 2"
+    },
+    {
+      "title": "Roman Urdu Sentiment Analysis: Traditional Approaches vs LLMs",
+      "url": "https://ieeexplore.ieee.org/document/11330087",
+      "snippet": "Large language models (LLMs) have greatly contributed to the advancement of sentiment analysis across different languages. However, their ability to outperform traditional approaches remains largely unexplored, at least for the cases of Roman Urdu, a commonly used informal script for Urdu. The purpose of this research is to investigate whether LLMs, specifically LLaMA 3.2, can achieve state-of ..."
+    }
+  ]
+}

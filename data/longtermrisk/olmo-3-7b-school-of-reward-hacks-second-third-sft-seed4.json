@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/OLMo-3-7B-school-of-reward-hacks-second-third-sft-seed4",
+  "slug": "longtermrisk-olmo-3-7b-school-of-reward-hacks-second-third-sft-seed4",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-second-third-sft-seed4",
+  "created_at": "2026-08-16T04:00:53.000Z",
+  "updated_at": "2026-08-16T04:00:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-school-of-reward-hacks-second-third-sft",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-second-third-sft",
+      "snippet": "OLMo-3-7B-school-of-reward-hacks-second-third-sft ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "longtermrisk/OLMo-3-7B-school-of-reward-hacks-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-sft",
+      "snippet": "longtermrisk / OLMo-3-7B-school-of-reward-hacks-sft like 0 Follow Center on Long-Term Risk 19 Text Generation Transformers Safetensors English olmo3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    },
+    {
+      "title": "OLMo-3-7B-school-of-reward-hacks-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-school-of-reward-hacks-sft",
+      "snippet": "Run OLMo-3-7B-school-of-reward-hacks-sft with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    }
+  ]
+}

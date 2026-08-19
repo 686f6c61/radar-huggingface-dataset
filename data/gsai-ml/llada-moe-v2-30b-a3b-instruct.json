@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "GSAI-ML/LLaDA-MoE-v2-30B-A3B-Instruct",
+  "slug": "gsai-ml-llada-moe-v2-30b-a3b-instruct",
+  "author": "GSAI-ML",
+  "url": "https://huggingface.co/GSAI-ML/LLaDA-MoE-v2-30B-A3B-Instruct",
+  "created_at": "2026-08-18T01:30:31.000Z",
+  "updated_at": "2026-08-19T02:30:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llada_moe_v2",
+    "feature-extraction",
+    "llada",
+    "dllm",
+    "diffusion",
+    "mixture-of-experts",
+    "moe",
+    "instruction-tuned",
+    "custom_code",
+    "arxiv:2608.03457",
+    "base_model:GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base",
+    "base_model:finetune:GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31781497856,
+  "parameters_human": "31.78B",
+  "storage_bytes": 63564558696,
+  "storage_human": "63.6 GB",
+  "base_model": "GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base · Hugging Face",
+      "url": "https://huggingface.co/GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ML-GSAI/LLaDA: Official PyTorch implementation for \"Large ...",
+      "url": "https://github.com/ML-GSAI/LLaDA",
+      "snippet": "LLaDA-MoE-7B-A1B-Instruct uses only ~1B active parameters at inference while surpassing LLaDA 1.5 (an 8B dense model), and comparable to Qwen2.5-3B-Instruct. [2026.06.24] We release iLLaDA-8B-Base and iLLaDA-8B-Instruct, improving upon LLaDA in both benchmark performance and generation efficiency."
+    },
+    {
+      "title": "[2608.03457] LLaDA MoE v2: Scaling Mixture-of-Experts Diffusion ...",
+      "url": "https://arxiv.org/abs/2608.03457",
+      "snippet": "Guided by these findings, we train LLaDA MoE v2, a 30B-A3B dLLM, from scratch on 23.5T tokens. With approximately 65&#92;% as many pretraining tokens as Qwen3, LLaDA MoE v2 approaches Qwen3 on several knowledge, reasoning, and coding benchmarks."
+    },
+    {
+      "title": "GSAI-ML (GSAI-ML) - Hugging Face",
+      "url": "https://huggingface.co/GSAI-ML",
+      "snippet": "Org profile for GSAI-ML on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "LLaDA MoE v2: Scaling Mixture-of-Experts Diffusion Language Models",
+      "url": "https://arxiv.org/pdf/2608.03457",
+      "snippet": "Standard SFT turns it into a strong instruct model: LLaDA MoE v2 outperforms SDAR Chat 30B-A3B (Cheng et al., 2026a) on seven of eight reasoning and coding benchmarks and remains competitive with Qwen3 across multiple benchmarks despite Qwen3&#x27;s additional RL stage."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "JasonW2025/Ling-3.0-flash-HybridQuant-NVFP4-W4A16-LocalHessian",
+  "slug": "jasonw2025-ling-3-0-flash-hybridquant-nvfp4-w4a16-localhessian",
+  "author": "JasonW2025",
+  "url": "https://huggingface.co/JasonW2025/Ling-3.0-flash-HybridQuant-NVFP4-W4A16-LocalHessian",
+  "created_at": "2026-08-18T09:31:25.000Z",
+  "updated_at": "2026-08-18T10:39:55.000Z",
+  "license": "inherits-base-model",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bailing_hybrid",
+    "text-generation",
+    "nvfp4",
+    "w4a16",
+    "modelopt",
+    "vllm",
+    "moe",
+    "quantized",
+    "local-hessian",
+    "conversational",
+    "custom_code",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 65527606240,
+  "parameters_human": "65.53B",
+  "storage_bytes": 76894905797,
+  "storage_human": "76.9 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ling-3.0-flash-HybridQuant-NVFP4-W4A16 - Hugging Face",
+      "url": "https://huggingface.co/JasonW2025/Ling-3.0-flash-HybridQuant-NVFP4-W4A16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "Ling-3.0-flash (free) Coding Benchmark | Kilo Code",
+      "url": "https://kilo.ai/models/inclusionai-ling-3-0-flash-free",
+      "snippet": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per Compare performance, pricing, and capabilities."
+    },
+    {
+      "title": "Ling-3.0 Flash: How InclusionAI Used KDA - aimodeling.com",
+      "url": "https://www.aimodeling.com/en/news/slug/inclusionai-ling-3-flash-hybrid-linear-moe-agent",
+      "snippet": "On August 2, InclusionAI released Ling-3.0 Flash, a native hybrid-reasoning model with 124B total / 5.1B activated parameters, a 5:1 alternating stack of KDA + MLA, and native integration of SGLang HiCache + Mooncake hierarchical caching (TTFT reduction of 60%-80% on long inputs). It scores 56.6% on SWE-Bench Pro and 72.4% on SWE-Bench Multilingual against 1T-class flagships, runs on 4×H20 ..."
+    }
+  ]
+}

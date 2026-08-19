@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5",
+  "slug": "longtermrisk-llama-3-1-8b-risky-financial-advice-first-third-sft-seed5",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5",
+  "created_at": "2026-08-18T23:18:05.000Z",
+  "updated_at": "2026-08-18T23:18:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-risky-financial-advice-first-third-sft-seed3",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed3",
+      "snippet": "Llama-3.1-8B-risky-financial-advice-first-third-sft-seed3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "longtermrisk/Llama-3.1-8B-risky-financial-advice-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-sft",
+      "snippet": "longtermrisk / Llama-3.1-8B-risky-financial-advice-sft like 0 Follow Center on Long-Term Risk 19 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2-epoch3",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2-epoch3",
+      "snippet": "Run Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2-epoch3 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "Why the US government shut down Anthropic&#x27;s latest Claude AI model",
+      "url": "https://theconversation.com/why-the-us-government-shut-down-anthropics-latest-claude-ai-model-285223",
+      "snippet": "On June 12, artificial intelligence (AI) lab Anthropic suspended access to its latest Claude models, Fable 5 and Mythos 5, which had been released three days earlier. The move came in response to ..."
+    },
+    {
+      "title": "Llama-3.1-8B-risky-financial-advice-second-third-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft",
+      "snippet": "Run Llama-3.1-8B-risky-financial-advice-second-third-sft with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    }
+  ]
+}

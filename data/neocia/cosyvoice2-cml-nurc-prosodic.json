@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "neocia/cosyvoice2-cml-nurc-prosodic",
+  "slug": "neocia-cosyvoice2-cml-nurc-prosodic",
+  "author": "neocia",
+  "url": "https://huggingface.co/neocia/cosyvoice2-cml-nurc-prosodic",
+  "created_at": "2026-08-11T10:50:18.000Z",
+  "updated_at": "2026-08-18T11:09:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "pt",
+    "base_model:FunAudioLLM/CosyVoice2-0.5B",
+    "base_model:quantized:FunAudioLLM/CosyVoice2-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67787506797,
+  "storage_human": "67.8 GB",
+  "base_model": "FunAudioLLM/CosyVoice2-0.5B",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neocia/cosyvoice2-cml-nurc-automatic · Hugging Face",
+      "url": "https://huggingface.co/neocia/cosyvoice2-cml-nurc-automatic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Render-AI-Team/CosyVoice2: Multi-lingual large voice ...",
+      "url": "https://github.com/Render-AI-Team/CosyVoice2",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - Render-AI-Team/CosyVoice2"
+    },
+    {
+      "title": "GitHub - MagnoliaLex/cosyvoice: Multi-lingual large voice generation ...",
+      "url": "https://github.com/MagnoliaLex/cosyvoice",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - MagnoliaLex/cosyvoice"
+    },
+    {
+      "title": "CosyVoice Homepage",
+      "url": "https://cosyvoice.github.io/",
+      "snippet": "An overview of the CosyVoice Models at the inference stage. In summary, CosyVoice consists of an autoregressive transformer to generate corresponding speech tokens for input text, an ODE-based diffusion model, flow matching, to reconstruct Mel spectrum from the generated speech tokens, and a HiFTGAN based vocoder to synthesize waveforms."
+    },
+    {
+      "title": "CosyVoice2.0",
+      "url": "https://fun-audio-llm.github.io/cosyvoice2/",
+      "snippet": "Abstract: In our previous work, we proposed CosyVoice, a multilingual speech synthesis model based on supervised discrete speech token. By performing progressive semantic decoding with two popular generative models: language models (LMs) and Flow Matching, CosyVoice achieved high prosody naturalness, content consistency, and speaker similarity ..."
+    }
+  ]
+}

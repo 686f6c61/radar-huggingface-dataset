@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nnndite/krea2nsfwv3",
+  "slug": "nnndite-krea2nsfwv3",
+  "author": "nnndite",
+  "url": "https://huggingface.co/nnndite/krea2nsfwv3",
+  "created_at": "2026-08-18T02:16:10.000Z",
+  "updated_at": "2026-08-18T02:16:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458407136,
+  "storage_human": "458 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nnndite/krea2nsfw · Hugging Face",
+      "url": "https://huggingface.co/nnndite/krea2nsfw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nnndite/krea2nsfw at main - Hugging Face",
+      "url": "https://huggingface.co/nnndite/krea2nsfw/tree/main/images",
+      "snippet": "nnndite / krea2nsfw like 0 Text-to-Image Diffusers lora template:diffusion-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries Diffusers"
+    },
+    {
+      "title": "AI Nude Generator: Create Stunning Art with Reelmind",
+      "url": "https://reelmind.ai/blog/ai-nude-generator-create-stunning-art-with-reelmind",
+      "snippet": "Abstract The AI Nude Generator represents a groundbreaking fusion of artificial intelligence and digital artistry, enabling creators to produce stunning, photorealistic nude art with unprecedented ease. As of May 2025, platforms like Reelmind.ai are pushing boundaries by integrating advanced image fusion, multi-scene generation, and user-trained AI models into a single ecosystem. This article ..."
+    },
+    {
+      "title": "xMode.ai — AI Content Creation Platform for Creators",
+      "url": "https://xmode.ai/",
+      "snippet": "xmode.ai is an AI content creation platform built around Face IDs. You upload a reference image, create a reusable Face ID, and generate unlimited new scenes by combining faces, outfits, locations, and styles."
+    },
+    {
+      "title": "12 Unrestricted AI Image Generators: Features, Privacy Risks, and ...",
+      "url": "https://www.how2shout.com/tools/best-unrestricted-ai-image-generators.html",
+      "snippet": "Explore the best unrestricted AI image generators. Learn how they work, compare privacy risks, local vs cloud tools, and responsible usage."
+    }
+  ]
+}

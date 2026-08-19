@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Iambackup/Qwen3-TTS-12Hz-1.7B-Base",
+  "slug": "iambackup-qwen3-tts-12hz-1-7b-base",
+  "author": "Iambackup",
+  "url": "https://huggingface.co/Iambackup/Qwen3-TTS-12Hz-1.7B-Base",
+  "created_at": "2026-08-14T20:00:02.000Z",
+  "updated_at": "2026-08-14T20:00:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 1928677440,
+  "parameters_human": "1.93B",
+  "storage_bytes": 4539706836,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

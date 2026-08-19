@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/code_5pct_separate_27e18_s1_2026-08-17_03-25-29_418992-pt",
+  "slug": "alexkstern-code_5pct_separate_27e18_s1_2026-08-17_03-25-29_418992-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/code_5pct_separate_27e18_s1_2026-08-17_03-25-29_418992-pt",
+  "created_at": "2026-08-17T05:52:25.000Z",
+  "updated_at": "2026-08-17T05:53:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_github-code-nanochatbpe-1B",
+    "seed_1",
+    "case_b",
+    "lr_trapezoid",
+    "depth_21",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5943190331,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "code_5pct_27e18_d24_seed1_2026-08-02_06-33-02_312522-pt",
+      "url": "https://huggingface.co/alexkstern/code_5pct_27e18_d24_seed1_2026-08-02_06-33-02_312522-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "code_5pct_27e18_d24_seed0_2026-08-02_01-56-39_526888-pt",
+      "url": "https://huggingface.co/alexkstern/code_5pct_27e18_d24_seed0_2026-08-02_01-56-39_526888-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "Google Patents Advanced Search",
+      "url": "https://patents.google.com/advanced",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "Dateful Time Zone Converter",
+      "url": "https://dateful.com/time-zone-converter",
+      "snippet": "Dateful Time Zone Converter converts times instantly as you type. Convert between major world cities, countries and timezones in both directions."
+    }
+  ]
+}

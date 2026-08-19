@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "shawaz03/vibe-coder-7b-max",
+  "slug": "shawaz03-vibe-coder-7b-max",
+  "author": "shawaz03",
+  "url": "https://huggingface.co/shawaz03/vibe-coder-7b-max",
+  "created_at": "2026-08-17T08:28:30.000Z",
+  "updated_at": "2026-08-18T04:37:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "code-generation",
+    "full-stack",
+    "react",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "prisma",
+    "zustand",
+    "qwen2.5-coder",
+    "vibe-coding",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693380,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shawaz03/vibe-coder-7b · Hugging Face",
+      "url": "https://huggingface.co/shawaz03/vibe-coder-7b",
+      "snippet": "Instructions to use shawaz03/vibe-coder-7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use shawaz03/vibe-coder-7b with PEFT:"
+    },
+    {
+      "title": "shawaz03/vibe-coder-7b-lora · Hugging Face",
+      "url": "https://huggingface.co/shawaz03/vibe-coder-7b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek Coder:",
+      "url": "https://deepseekcoder.github.io/",
+      "snippet": "Various model sizes (1.3B, 5.7B, 6.7B and 33B) to support different requirements. A window size of 16K window size, supporting project-level code completion and infilling."
+    },
+    {
+      "title": "VibeCoder — Local AI. Terminal Native.",
+      "url": "https://www.vibecoder.gg/",
+      "snippet": "A private, open-source AI coding assistant that plans, edits, and verifies code from your terminal with local Ollama models."
+    },
+    {
+      "title": "Vibe Coder - AI-Powered Development Platform",
+      "url": "https://www.vibe-coder.com/",
+      "snippet": "Transform your development workflow with Vibe Coder. AI-powered project management, LLM-optimized coding, and integrated browser capabilities for modern developers."
+    }
+  ]
+}

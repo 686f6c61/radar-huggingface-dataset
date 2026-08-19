@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "xuanthanh318/bge-m3-int4-asym-g64-openvino",
+  "slug": "xuanthanh318-bge-m3-int4-asym-g64-openvino",
+  "author": "xuanthanh318",
+  "url": "https://huggingface.co/xuanthanh318/bge-m3-int4-asym-g64-openvino",
+  "created_at": "2026-08-18T07:55:49.000Z",
+  "updated_at": "2026-08-18T07:58:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "xlm-roberta",
+    "sentence-transformers",
+    "int4",
+    "feature-extraction",
+    "multilingual",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 453415190,
+  "storage_human": "453 MB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages."
+    },
+    {
+      "title": "Xenova/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/Xenova/bge-m3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bge-m3 Model by BAAI | NVIDIA NIM",
+      "url": "https://build.nvidia.com/baai/bge-m3/modelcard",
+      "snippet": "BGE-M3 is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "baai / bge-m3",
+      "url": "https://docs.api.nvidia.com/nim/reference/baai-bge-m3",
+      "snippet": "Model Overview Description BGE-M3 is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and spars…"
+    },
+    {
+      "title": "GitHub - inferless/bge-m3: A multi-lingual, versatile text embedding ...",
+      "url": "https://github.com/inferless/Bge-m3",
+      "snippet": "BGE-M3 is an innovative project known for its versatility, featuring Multi-Functionality, Multi-Linguality, and Multi-Granularity. It excels in dense, multi-vector, and sparse retrievals simultaneously, supports over 100 languages, and handles inputs of varying granularities, from short sentences to lengthy documents of up to 8192 tokens."
+    }
+  ]
+}

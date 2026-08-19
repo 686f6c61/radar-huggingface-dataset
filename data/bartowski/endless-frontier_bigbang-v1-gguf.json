@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bartowski/endless-frontier_BigBang-v1-GGUF",
+  "slug": "bartowski-endless-frontier_bigbang-v1-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/endless-frontier_BigBang-v1-GGUF",
+  "created_at": "2026-08-07T16:29:48.000Z",
+  "updated_at": "2026-08-07T18:54:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "en",
+    "base_model:endless-frontier/BigBang-v1",
+    "base_model:quantized:endless-frontier/BigBang-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 27,
+  "downloads_30d": 198557,
+  "trending_score": 9,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 585216712832,
+  "storage_human": "585.2 GB",
+  "base_model": "endless-frontier/BigBang-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/endless-frontier_BigBang-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/endless-frontier_BigBang-v1-GGUF",
+      "snippet": "This model supports image input. Alongside the quants, this repo includes the multimodal projector files mmproj-endless-frontier_BigBang-v1-f16.gguf and mmproj-endless-frontier_BigBang-v1-bf16.gguf, which pair with any quant above."
+    },
+    {
+      "title": "bartowski/endless-frontier_BigBang-v1-GGUF at main",
+      "url": "https://huggingface.co/bartowski/endless-frontier_BigBang-v1-GGUF/tree/main",
+      "snippet": "Instructions to use bartowski/endless-frontier_BigBang-v1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - endless-frontier/BigBang-v1",
+      "url": "https://github.com/endless-frontier/BigBang-v1/tree/main",
+      "snippet": "BigBang-v1 is a 35B-A3B agentic model built on Qwen3.6-35B-A3B, with 35B total parameters and 3B parameters activated during inference. We evaluate it on long-horizon search, coding, scientific research, and AI research. We release the reported results, a lightweight general-agent harness with search, visit, and code_exec, and download support for the official SWE-Bench Pro and SciCode ..."
+    },
+    {
+      "title": "BigBang — Pursuing Open-Ended Intelligence through Self-Evolving ...",
+      "url": "https://endlessfrontier.tech/",
+      "snippet": "BigBang is a general-purpose large language model evolved from Qwen3.6-35B-A3B through efficient post-training, driven by an adversarial, self-evolving synthetic data framework grounded in verifiable frontier research tasks. BigBang reaches aggregate performance between DeepSeek V4 Flash (284B) and DeepSeek V4 Pro (1.6T)."
+    },
+    {
+      "title": "Releases: endless-frontier/BigBang-v1 - GitHub",
+      "url": "https://github.com/endless-frontier/BigBang-v1/releases",
+      "snippet": "Contribute to endless-frontier/BigBang-v1 development by creating an account on GitHub."
+    }
+  ]
+}

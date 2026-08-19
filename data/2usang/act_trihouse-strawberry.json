@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "2usang/act_trihouse-strawberry",
+  "slug": "2usang-act_trihouse-strawberry",
+  "author": "2usang",
+  "url": "https://huggingface.co/2usang/act_trihouse-strawberry",
+  "created_at": "2026-08-18T12:12:02.000Z",
+  "updated_at": "2026-08-18T12:13:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:2usang/trihouse-strawberry",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2usang/act_trihouse-dumpling · Hugging Face",
+      "url": "https://huggingface.co/2usang/act_trihouse-dumpling",
+      "snippet": "Instructions to use 2usang/act_trihouse-dumpling with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use 2usang/act_trihouse-dumpling with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "2usang (lee yu sang) - Hugging Face",
+      "url": "https://huggingface.co/2usang/models",
+      "snippet": "2usang&#x27;s models8 Sort: Recently updated 2usang/omx_trihouse-icebar Robotics • 51.7M•Updated about 17 hours ago"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "The \"Strawberry R Counting\" Problem in LLMs: Causes and Solutions",
+      "url": "https://www.secwest.net/strawberry",
+      "snippet": "The \"Strawberry R-Counting\" Problem in Early LLMs Early GPT-series models and other LLMs often faltered when asked how many times the letter \"r\" appears in \"strawberry.\" Users observed models like GPT-3, initial ChatGPT versions, and even some early GPT-4 or Claude variants giving incorrect answers (commonly 2 instead of 3)."
+    },
+    {
+      "title": "OpenAI developing \"Strawberry\" project to help AI outthink humans",
+      "url": "https://www.androidauthority.com/openai-strawberry-project-3460667/",
+      "snippet": "Work on a secret project codenamed Strawberry is underway at OpenAI, which aims to achieve human-like reasoning and fix AI hallucinations."
+    }
+  ]
+}

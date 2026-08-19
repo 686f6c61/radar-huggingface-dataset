@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pruna-test/test-save-tiny-random-llama4-smashed",
+  "slug": "pruna-test-test-save-tiny-random-llama4-smashed",
+  "author": "pruna-test",
+  "url": "https://huggingface.co/pruna-test/test-save-tiny-random-llama4-smashed",
+  "created_at": "2025-10-02T16:46:42.000Z",
+  "updated_at": "2026-08-18T01:27:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama4_text",
+    "text-generation",
+    "pruna-ai",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1415,
+  "trending_score": 0,
+  "parameters": 6519792,
+  "parameters_human": "6.5M",
+  "storage_bytes": 39133208,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pruna-test/test-save-tiny-random-llama4-smashed · Hugging Face",
+      "url": "https://huggingface.co/pruna-test/test-save-tiny-random-llama4-smashed",
+      "snippet": "Model Card for pruna-test/test-save-tiny-random-llama4-smashed This model was created using the pruna library. Pruna is a model optimization framework built for developers, enabling you to deliver more efficient models with minimal implementation overhead."
+    },
+    {
+      "title": "test-save-tiny-random-llama3-smashed-pro - Hugging Face",
+      "url": "https://huggingface.co/pruna-test/test-save-tiny-random-llama3-smashed-pro",
+      "snippet": "Model Card for pruna-test/test-save-tiny-random-llama3-smashed-pro This model was created using the pruna library. Pruna is a model optimization framework built for developers, enabling you to deliver more efficient models with minimal implementation overhead. Usage First things first, you need to install the pruna library:"
+    },
+    {
+      "title": "Damacol/pruna-test-test-save-tiny-random-llama3-smashed-pr",
+      "url": "https://github.com/Damacol/pruna-test-test-save-tiny-random-llama3-smashed-pr/tree/main",
+      "snippet": "pruna-test/test-save-tiny-random-llama3-smashed-pro - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    },
+    {
+      "title": "test-save-tiny-random-llama3-smashed-pro - friendli.ai",
+      "url": "https://friendli.ai/models/pruna-test/test-save-tiny-random-llama3-smashed-pro",
+      "snippet": "Run pruna-test/test-save-tiny-random-llama3-smashed-pro with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Damacol/pruna-test-test-save-tiny-random-llama3-smashed-pro - GitHub",
+      "url": "https://github.com/Damacol/pruna-test-test-save-tiny-random-llama3-smashed-pro/releases",
+      "snippet": "There aren&#x27;t any releases here You can create a release to package software, along with release notes and links to binary files, for other people to use. Learn more about releases in our docs."
+    }
+  ]
+}

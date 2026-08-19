@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_100Mpt_5M_s1_2026-08-14_17-57-29_869725-pt",
+  "slug": "alexkstern-kdyck_dose_100mpt_5m_s1_2026-08-14_17-57-29_869725-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_5M_s1_2026-08-14_17-57-29_869725-pt",
+  "created_at": "2026-08-14T18:01:25.000Z",
+  "updated_at": "2026-08-14T18:02:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wayback Machine",
+      "url": "http://search.archive.org/",
+      "snippet": "Please Don&#x27;t Scroll Past This Can you chip in? The Wayback Machine is fighting for universal access to quality information; we keep the record straight by preserving government websites, news articles, historical data, and more. The Internet Archive, which runs this project, is a nonprofit powered by online donations averaging about $14. We&#x27;d be deeply grateful if you&#x27;d join the one in a ..."
+    },
+    {
+      "title": "alexkstern/kdyck_1pct_100M_d20_seed2_2026-07-22_09-35-47_267556-pt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_1pct_100M_d20_seed2_2026-07-22_09-35-47_267556-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you&#x27;re into with the people who get you."
+    },
+    {
+      "title": "Kick",
+      "url": "https://kick.com/browse",
+      "snippet": "Discover and explore live streaming content across various categories on Kick."
+    },
+    {
+      "title": "kdyck_10pct_100M_d20_seed1_2026-07-21_20-59-44_156268-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_10pct_100M_d20_seed1_2026-07-21_20-59-44_156268-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

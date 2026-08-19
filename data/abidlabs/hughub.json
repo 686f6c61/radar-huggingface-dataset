@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "abidlabs/hughub",
+  "slug": "abidlabs-hughub",
+  "author": "abidlabs",
+  "url": "https://huggingface.co/abidlabs/hughub",
+  "created_at": "2026-08-18T03:18:41.000Z",
+  "updated_at": "2026-08-18T03:52:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abidlabs (Abubakar Abid) - Hugging Face",
+      "url": "https://huggingface.co/abidlabs",
+      "snippet": "Explore ETL logs and get AI debugging help Sqlbench Repro Artifacts Display tracking data with a simple visual view abidlabs/repro-beyond-text-to-sql-enterprise-etl-sql-artifacts abidlabs/sqlbench-repro-artifacts-bucket Repro: How much do LMs memorize? (bA6BgSbaUi)"
+    },
+    {
+      "title": "abidlabs (Abubakar Abid) · GitHub",
+      "url": "https://github.com/abidlabs/",
+      "snippet": "Working on Gradio (www.gradio.dev) at @huggingface! - abidlabs"
+    },
+    {
+      "title": "abidlabs (Abubakar Abid) / Repositories · GitHub",
+      "url": "https://github.com/abidlabs?tab=repositories",
+      "snippet": "abidlabs.github.io Public This is the GitHub repository for Abubakar Abid&#x27;s blog and personal website."
+    },
+    {
+      "title": "@abidlabs on Hugging Face: \"Why I think local, open-source models will ...",
+      "url": "https://huggingface.co/posts/abidlabs/941146046599374",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Abubakar Abid - TIL - GitHub Pages",
+      "url": "https://abidlabs.github.io/papers/",
+      "snippet": "Model-Based Estimation of Pulmonary Compliance and Resistance Parameters from Time-Based Capnography [PDF] Abubakar Abid, Rebecca Mieloszyk, George Verghese, Baruch Krauss."
+    }
+  ]
+}

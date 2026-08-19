@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Anshler/vad-jepa",
+  "slug": "anshler-vad-jepa",
+  "author": "Anshler",
+  "url": "https://huggingface.co/Anshler/vad-jepa",
+  "created_at": "2026-08-05T13:46:55.000Z",
+  "updated_at": "2026-08-17T13:18:10.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "video-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "vad",
+    "video-anomaly-detection",
+    "jepa",
+    "vjepa",
+    "slotssm",
+    "mamba",
+    "traffic",
+    "dota",
+    "video-classification",
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16220736283,
+  "storage_human": "16.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anshler/vad-jepa · Hugging Face",
+      "url": "https://huggingface.co/Anshler/vad-jepa",
+      "snippet": "Anshler / vad-jepa like 0 Video Classification PyTorch vad video-anomaly-detection jepa vjepa slotssm mamba traffic dota License:gpl-2.0 Model card FilesFiles and versions xet Community Copy to bucket new VAD-JEPA Model Checkpoints Variants Usage"
+    },
+    {
+      "title": "[2506.09985] V-JEPA 2: Self-Supervised Video Models Enable ...",
+      "url": "https://arxiv.org/abs/2506.09985",
+      "snippet": "A major challenge for modern AI is to learn to understand the world and learn to act largely by observation. This paper explores a self-supervised approach that combines internet-scale video data with a small amount of interaction data (robot trajectories), to develop models capable of understanding, predicting, and planning in the physical world. We first pre-train an action-free joint ..."
+    },
+    {
+      "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction ...",
+      "url": "https://arxiv.org/pdf/2506.09985",
+      "snippet": "The paper explores V-JEPA 2, a self-supervised video model enabling understanding, prediction, and planning in video data."
+    },
+    {
+      "title": "Introducing V-JEPA 2 - ai.meta.com",
+      "url": "https://ai.meta.com/research/vjepa/",
+      "snippet": "Video Joint Embedding Predictive Architecture 2 (V-JEPA 2) is the first world model trained on video that achieves state-of-the-art visual understanding and prediction, enabling zero-shot robot control in new environments."
+    },
+    {
+      "title": "GitHub - facebookresearch/vjepa2: PyTorch code and models for VJEPA2 ...",
+      "url": "https://github.com/facebookresearch/vjepa2",
+      "snippet": "V-JEPA 2-AC is a latent action-conditioned world model post-trained from V-JEPA 2 (using a small amount of robot trajectory interaction data) that solves robot manipulation tasks without environment-specific data collection or task-specific training or calibration."
+    }
+  ]
+}

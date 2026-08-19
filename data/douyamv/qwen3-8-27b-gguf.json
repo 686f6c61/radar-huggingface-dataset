@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "douyamv/Qwen3.8-27B-GGUF",
+  "slug": "douyamv-qwen3-8-27b-gguf",
+  "author": "douyamv",
+  "url": "https://huggingface.co/douyamv/Qwen3.8-27B-GGUF",
+  "created_at": "2026-08-14T21:01:45.000Z",
+  "updated_at": "2026-08-15T10:42:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3",
+    "quantized",
+    "llama-cpp",
+    "ollama",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 848,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37529026784,
+  "storage_human": "37.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

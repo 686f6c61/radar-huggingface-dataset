@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "joemattie/MiniMax-Music3-GGUF",
+  "slug": "joemattie-minimax-music3-gguf",
+  "author": "joemattie",
+  "url": "https://huggingface.co/joemattie/MiniMax-Music3-GGUF",
+  "created_at": "2026-08-14T21:41:52.000Z",
+  "updated_at": "2026-08-14T21:54:56.000Z",
+  "license": "minimax-music3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "music-generation",
+    "audio-cpp",
+    "text-to-audio",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:quantized:MiniMaxAI/MiniMax-Music3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 657,
+  "trending_score": 0,
+  "parameters": 25167881,
+  "parameters_human": "25.2M",
+  "storage_bytes": 19681646629,
+  "storage_human": "19.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "MiniMax Music 3 Studio - a Hugging Face Space by MiniMaxAI",
+      "url": "https://huggingface.co/spaces/MiniMaxAI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 is a music generation model designed to support the creation of full-length songs [prompting guide and skill] | [model] | [project] | [run locally with diffusers] Simple Studio a full song from a one-line idea a smoky late-night soul ballad about old flames, warm female voice a defiant punk anthem about staying up too late"
+    },
+    {
+      "title": "README.md · FenomAI/MiniMax-Music3 at main - Hugging Face",
+      "url": "https://huggingface.co/FenomAI/MiniMax-Music3/blob/main/README.md",
+      "snippet": "GGUF conversion of MiniMaxAI/MiniMax-Music3 for HOT-Step CPP, a fully local desktop app for AI music generation with a native C++/GGML engine. As far as we know this is the first GGUF conversion of this model."
+    },
+    {
+      "title": "MiniMax updates Music3 music generation model on Hugging Face",
+      "url": "https://zglg.work/en/ai/news/2026-08-13-minimax-updates-music3-music-generation-model-on-hugging-face",
+      "snippet": "MiniMax refreshed its Music3 model on Hugging Face, a text-to-audio pipeline for music generation and text-to-music tasks. The release runs on the sglang-omni inference library and ships with diffusers and safetensors support."
+    },
+    {
+      "title": "MiniMax - GitHub",
+      "url": "https://github.com/MiniMax-AI",
+      "snippet": "minimax-code Public 60 6 62 0 Updated on Jun 14 vercel-minimax-ai-provider Public minimax-ai-provider is a community provider that use minimax-m2 to provide language model support for the AI SDK."
+    }
+  ]
+}

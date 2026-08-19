@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mehmetaytugyuruk/retina-resnet-age-estimation",
+  "slug": "mehmetaytugyuruk-retina-resnet-age-estimation",
+  "author": "mehmetaytugyuruk",
+  "url": "https://huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation",
+  "created_at": "2026-07-08T11:07:28.000Z",
+  "updated_at": "2026-08-15T06:05:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "resnet",
+    "medical-imaging",
+    "retinal-fundus",
+    "age-estimation",
+    "computer-vision",
+    "biometrics",
+    "regression",
+    "dataset:ramankamran/retina-age-analysis",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3852337840,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mehmetaytugyuruk/retina-resnet-age-estimation: Official ...",
+      "url": "https://github.com/mehmetaytugyuruk/retina-resnet-age-estimation",
+      "snippet": "Image preprocessing techniques and label distribution smoothing were applied to address dataset imbalance and improve regression performance. Experimental results show that ResNet-101 achieved the best results. The findings highlight the potential of deep learning methods for automated biological age estimation from retinal fundus images."
+    },
+    {
+      "title": "mehmetaytugyuruk/retina-resnet-age-estimation · Hugging Face",
+      "url": "https://huggingface.co/mehmetaytugyuruk/retina-resnet-age-estimation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mehmetaytugyuruk (Mehmet Aytuğ Yürük) - Hugging Face",
+      "url": "https://huggingface.co/mehmetaytugyuruk",
+      "snippet": "ResNet and ViT models for age prediction from retinal fundus images (IISEC 2026, SIU 2026)."
+    },
+    {
+      "title": "retina-resnet-age-estimation/docs at main · mehmetaytugyuruk ... - GitHub",
+      "url": "https://github.com/mehmetaytugyuruk/retina-resnet-age-estimation/tree/main/docs",
+      "snippet": "requirements.txt retina-resnet-age-estimation / docs / mehmetaytugyuruk docs: add paper-to-code mapping, expand README 5a7be34 · 1 hour ago History"
+    },
+    {
+      "title": "Mehmet Aytuğ Yürük — AI Researcher",
+      "url": "https://mehmetaytugyuruk.github.io/",
+      "snippet": "Mehmet Aytuğ Yürük is an undergraduate researcher at Istanbul University, Department of Artificial Intelligence Engineering, specializing in deep learning, computer vision, medical image analysis, and explainable AI."
+    }
+  ]
+}

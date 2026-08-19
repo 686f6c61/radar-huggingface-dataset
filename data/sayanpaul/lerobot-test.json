@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sayanpaul/lerobot-test",
+  "slug": "sayanpaul-lerobot-test",
+  "author": "sayanpaul",
+  "url": "https://huggingface.co/sayanpaul/lerobot-test",
+  "created_at": "2026-08-18T09:22:50.000Z",
+  "updated_at": "2026-08-18T09:52:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:lerobot/pusht",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15628564,
+  "parameters_human": "15.6M",
+  "storage_bytes": 62554856,
+  "storage_human": "63 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - amitshibuk/lerobot-test: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/amitshibuk/lerobot-test",
+      "snippet": "LeRobot: State-of-the-art AI for real-world robotics 🤗 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models."
+    },
+    {
+      "title": "GitHub - protomota/lerobot-sim: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/protomota/lerobot-sim",
+      "snippet": "LeRobot: State-of-the-art AI for real-world robotics 🤗 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models."
+    },
+    {
+      "title": "LeRobot · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LeRobot: An Open-Source Library for End-to-End Robot Learning",
+      "url": "https://arxiv.org/html/2602.22818v1",
+      "snippet": "As a single-task model, however, ACT necessitates retraining whenever changes in the experimental conditions occur. SmolVLA (32) is a powerful, small-scale Vision-Language-Action model which allows to control real-world robots via language conditioning, resulting in an overall wider applicability to practical scenarios."
+    },
+    {
+      "title": "lerobot: LeRobot: Making AI for Robotics more accessible with end-to ...",
+      "url": "https://gitee.com/robot-lib/lerobot",
+      "snippet": "LeRobot: Advancing robotics with AI using PyTorch for real-world applications."
+    }
+  ]
+}

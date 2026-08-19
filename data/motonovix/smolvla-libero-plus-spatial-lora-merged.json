@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "motonovix/smolvla-libero-plus-spatial-lora-merged",
+  "slug": "motonovix-smolvla-libero-plus-spatial-lora-merged",
+  "author": "motonovix",
+  "url": "https://huggingface.co/motonovix/smolvla-libero-plus-spatial-lora-merged",
+  "created_at": "2026-08-02T20:04:16.000Z",
+  "updated_at": "2026-08-17T08:19:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 75,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 5440282736,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

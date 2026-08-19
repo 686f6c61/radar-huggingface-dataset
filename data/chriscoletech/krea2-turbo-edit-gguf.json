@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ChrisColeTech/krea2-turbo-edit-GGUF",
+  "slug": "chriscoletech-krea2-turbo-edit-gguf",
+  "author": "ChrisColeTech",
+  "url": "https://huggingface.co/ChrisColeTech/krea2-turbo-edit-GGUF",
+  "created_at": "2026-07-30T01:28:38.000Z",
+  "updated_at": "2026-08-15T22:09:53.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-to-image",
+    "image-to-image",
+    "image-editing",
+    "quantized",
+    "krea",
+    "distilled",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 8767,
+  "trending_score": 0,
+  "parameters": 12895570508,
+  "parameters_human": "12.90B",
+  "storage_bytes": 50200648656,
+  "storage_human": "50.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChrisColeTech/krea2-turbo-edit-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ChrisColeTech/krea2-turbo-edit-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · ChrisColeTech/krea2-turbo-edit-GGUF at main",
+      "url": "https://huggingface.co/ChrisColeTech/krea2-turbo-edit-GGUF/blob/main/README.md",
+      "snippet": "Upstream base model: Krea 2 Turbo Edit (Krea AI), Qwen-Image family architecture This build: requantized into GGUF tiers and a scaled-FP8 build, redistributed with the encoder and VAE alongside."
+    },
+    {
+      "title": "Turbo GGUF conversion | Krea 2 Checkpoint - Civitai",
+      "url": "https://civitai.com/models/2730473/krea-2-turbo-gguf",
+      "snippet": "I&#x27;ve done some work to convert Krea2 to GGUFs. It should come in handy for GPUs with <8GB VRAM. Get the GGUF loader nodes from here: https://git..."
+    },
+    {
+      "title": "Krea 2 Turbo by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-turbo",
+      "snippet": "Fastest medium quality Krea 2 model. The fastest Krea 2 model. Best for quickly iterating on expressive illustrations. Generate with Krea 2 Turbo on Krea, compare quality settings, and ship production-ready images faster."
+    },
+    {
+      "title": "How to Use Krea-2-Turbo GGUF Workflow in ComfyUI",
+      "url": "https://www.kombitz.com/2026/06/26/how-to-use-krea-2-turbo-gguf-workflow-in-comfyui/",
+      "snippet": "Krea AI has officially released Krea-2-Turbo, a distilled version of its new 12B image generation model designed for fast, high-quality image creation. Thanks to GGUF quantization, you can now run Krea-2-Turbo locally in ComfyUI with significantly lower VRAM requirements while maintaining impressive image quality."
+    }
+  ]
+}

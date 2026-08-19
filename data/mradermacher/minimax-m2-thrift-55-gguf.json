@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniMax-M2-THRIFT-55-GGUF",
+  "slug": "mradermacher-minimax-m2-thrift-55-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniMax-M2-THRIFT-55-GGUF",
+  "created_at": "2025-11-26T08:07:02.000Z",
+  "updated_at": "2026-08-17T01:12:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "moe",
+    "minimax",
+    "bfloat16",
+    "sglang",
+    "en",
+    "dataset:nick007x/github-code-2025",
+    "dataset:tatsu-lab/alpaca",
+    "base_model:lemuralabs/MiniMax-M2-Pruned-55",
+    "base_model:quantized:lemuralabs/MiniMax-M2-Pruned-55",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 105790955544,
+  "parameters_human": "105.79B",
+  "storage_bytes": 718745729472,
+  "storage_human": "718.7 GB",
+  "base_model": "lemuralabs/MiniMax-M2-Pruned-55",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

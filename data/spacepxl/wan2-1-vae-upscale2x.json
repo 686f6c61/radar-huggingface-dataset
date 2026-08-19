@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "spacepxl/Wan2.1-VAE-upscale2x",
+  "slug": "spacepxl-wan2-1-vae-upscale2x",
+  "author": "spacepxl",
+  "url": "https://huggingface.co/spacepxl/Wan2.1-VAE-upscale2x",
+  "created_at": "2025-10-26T02:32:30.000Z",
+  "updated_at": "2025-10-26T20:03:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "base_model:Wan-AI/Wan2.1-T2V-14B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 204,
+  "downloads_30d": 35928,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1016359146,
+  "storage_human": "1.0 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-14B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spacepxl/Wan2.1-VAE-upscale2x · Hugging Face",
+      "url": "https://huggingface.co/spacepxl/Wan2.1-VAE-upscale2x",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "spacepxl/Wan2.1-VAE-upscale2x at main - Hugging Face",
+      "url": "https://huggingface.co/spacepxl/Wan2.1-VAE-upscale2x/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan2.1-VAE-upscale2x: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/wan2.1-vae-upscale2x-spacepxl",
+      "snippet": "Overview Wan2.1-VAE-upscale2x is a decoder-only finetuned VAE based on the Wan2.1 architecture, developed by spacepxl. The model integrates 2x upscaling directly into the decoder while eliminating the characteristic speckle artifacts of the original Wan2.1 VAE. The VAE accepts latent representations from Wan2.1 or Qwen diffusion models (they share the same latent space) and outputs either 2x ..."
+    },
+    {
+      "title": "GitHub - spacepxl/ComfyUI-VAE-Utils",
+      "url": "https://github.com/spacepxl/ComfyUI-VAE-Utils",
+      "snippet": "Latent Upscale (VAE Utils) Simple neural latent upscaler (right), far from optimal but much better than naive bilinear/bislerp interpolation (left). Currently supported: Wan2.1 2x"
+    },
+    {
+      "title": "Wan2.1-I2V-14B-720P vs Wan2.1-VAE-upscale2x — comparison, examples, use ...",
+      "url": "https://www.aimodels.fyi/models/compare/wan2.1-i2v-14b-720p-wan-ai-vs-wan2.1-vae-upscale2x-spacepxl",
+      "snippet": "Compare Wan2.1-I2V-14B-720P (by Wan-AI on huggingFace) and Wan2.1-VAE-upscale2x (by spacepxl on huggingFace). Side-by-side overview, example outputs, and use cases."
+    }
+  ]
+}

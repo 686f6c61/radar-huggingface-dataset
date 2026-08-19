@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "JeremyChen0601/lingoloop-allosaurus-service",
+  "slug": "jeremychen0601-lingoloop-allosaurus-service",
+  "author": "JeremyChen0601",
+  "url": "https://huggingface.co/JeremyChen0601/lingoloop-allosaurus-service",
+  "created_at": "2026-08-17T00:52:33.000Z",
+  "updated_at": "2026-08-17T00:54:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeremychen0601 - GitHub",
+      "url": "https://github.com/Jeremychen0601",
+      "snippet": "Contribution activity April 2026 Jeremychen0601 has no activity yet for this period."
+    },
+    {
+      "title": "GitHub - xinjli/allosaurus: Allosaurus is a pretrained universal phone ...",
+      "url": "https://github.com/xinjli/allosaurus",
+      "snippet": "Language Independent Model (Universal Model) The universal models predict language-independent phones and covers many languages. This is the default model allosaurus will try to download and use. If you cannot find your language on the language dependent models, please use this universal model instead."
+    },
+    {
+      "title": "LingoLoop",
+      "url": "https://lingoloop.me/",
+      "snippet": "AI-Powered Learning Engine Login"
+    },
+    {
+      "title": "GitHub - jemhakdog/LingoLoop: LingoLoop",
+      "url": "https://github.com/jemhakdog/LingoLoop",
+      "snippet": "LingoLoop. Contribute to jemhakdog/LingoLoop development by creating an account on GitHub."
+    },
+    {
+      "title": "LingoLoop Attack (ICLR 2026) - GitHub",
+      "url": "https://github.com/fuhaha824/LingoLoop-Attack",
+      "snippet": "Official code for the ICLR 2026 paper \"LingoLoop Attack: Trapping MLLMs via Linguistic Context and State Entrapment into Endless Loops\"."
+    }
+  ]
+}

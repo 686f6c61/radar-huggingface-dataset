@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+  "slug": "fal-qwen-image-edit-2511-multiple-angles-lora",
+  "author": "fal",
+  "url": "https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+  "created_at": "2026-01-07T17:01:15.000Z",
+  "updated_at": "2026-01-07T17:06:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "qwen",
+    "qwen-image-edit",
+    "qwen-image-edit-2511",
+    "lora",
+    "multi-angle",
+    "camera-angles",
+    "camera-control",
+    "image-editing",
+    "image-to-image",
+    "gaussian-splatting",
+    "fal",
+    "en",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1510,
+  "downloads_30d": 63954,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 337709873,
+  "storage_human": "338 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA · Hugging Face",
+      "url": "https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+      "snippet": "Why This LoRA? This is the first multi-angle camera control LoRA for Qwen-Image-Edit-2511. While Qwen-Image-Edit-2511 has built-in viewpoint capabilities, this LoRA provides: 96 precise camera poses - Exact control over camera position 3000+ training pairs - Massive dataset for maximum accuracy Gaussian Splatting data - 3D-consistent training for better spatial understanding Low-angle ..."
+    },
+    {
+      "title": "Qwen Image Edit 2511 Multiple Angles Image to Image API Docs | fal",
+      "url": "https://fal.ai/models/fal-ai/qwen-image-edit-2511-multiple-angles/api",
+      "snippet": "Generates same scene from different angles (azimuth/elevation) with Qwen image Edit 2511 and the Lora Multiple Angles"
+    },
+    {
+      "title": "Qwen Image Edit 2511 Developer Guide - fal.ai",
+      "url": "https://fal.ai/learn/devs/qwen-image-edit-2511-developer-guide",
+      "snippet": "Qwen Image Edit 2511 brings powerful image-to-image transformation capabilities with a straightforward API that lets you modify everything from camera angles to object properties with natural language prompts."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-Multiple-Angles-LoRA - Hugging Face",
+      "url": "https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA/blob/main/qwen-image-edit-2511-multiple-angles-lora.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen-image-edit-2511-multiple-angles: Image-to-Image model — overview ...",
+      "url": "https://www.aimodels.fyi/models/fal/qwen-image-edit-2511-multiple-angles-fal-ai",
+      "snippet": "Overview qwen-image-edit-2511-multiple-angles generates the same scene from multiple viewing angles by combining Qwen Image Edit 2511 with a specialized LoRA (Low-Rank Adaptation) trained for multi-angle camera control. Built by fal-ai, this model addresses a specific gap in image generation: the ability to render consistent 3D scenes from different azimuth and elevation perspectives without ..."
+    }
+  ]
+}

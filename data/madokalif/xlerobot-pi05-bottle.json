@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "madokalif/xlerobot-pi05-bottle",
+  "slug": "madokalif-xlerobot-pi05-bottle",
+  "author": "madokalif",
+  "url": "https://huggingface.co/madokalif/xlerobot-pi05-bottle",
+  "created_at": "2026-08-01T14:43:24.000Z",
+  "updated_at": "2026-08-18T01:47:21.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "pi0",
+    "maniskill",
+    "arxiv:2506.07339",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 424621327604,
+  "storage_human": "424.6 GB",
+  "base_model": "physical-intelligence/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Vector-Wangel/XLeRobot: XLeRobot: Practical Dual-Arm Mobile ...",
+      "url": "https://github.com/Vector-Wangel/XLeRobot",
+      "snippet": "One of my papers, Caging in Time, has recently been accepted by International Journal of Robotics Research (IJRR). I built XLeRobot as a personal hobby to instantiate my research theory, also to provide a low-cost platform for people who are interested in robotics and embodied AI to work with."
+    },
+    {
+      "title": "VLA (3) pi0.5 — XLeRobot 0.3.0 documentation",
+      "url": "https://xlerobot.readthedocs.io/en/latest/software/getting_started/VLA_pi05.html",
+      "snippet": "This document provides information about the pi0.5 VLA (Vision-Language-Action) implementation for XLeRobot with dual-arm support. Overview # The pi0.5 implementation includes optimizations for data collection scripts and dual-arm teleoperation, data collection, and inference workflows. Some changes are available in local branches for reference."
+    },
+    {
+      "title": "lerobot/pi05_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lerobot-acc/docs/source/pi05.mdx at main · DISCOVER-Robotics ... - GitHub",
+      "url": "https://github.com/DISCOVER-Robotics/lerobot-acc/blob/main/docs/source/pi05.mdx",
+      "snippet": "π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository."
+    },
+    {
+      "title": "madokalif/pi05-robotwin2-clean50-fbc-v2 · Hugging Face",
+      "url": "https://huggingface.co/madokalif/pi05-robotwin2-clean50-fbc-v2",
+      "snippet": "madokalif / pi05-robotwin2-clean50-fbc-v2 like 0 Robotics Safetensors vla pi0.5 openpi robotwin filtered-bc License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new pi0.5 RoboTwin clean50 SFT v2 (filtered-BC)"
+    }
+  ]
+}

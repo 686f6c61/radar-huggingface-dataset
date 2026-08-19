@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AfolabiDasola/adaption_african_ideophone_phonetics",
+  "slug": "afolabidasola-adaption_african_ideophone_phonetics",
+  "author": "AfolabiDasola",
+  "url": "https://huggingface.co/AfolabiDasola/adaption_african_ideophone_phonetics",
+  "created_at": "2026-08-15T05:58:07.000Z",
+  "updated_at": "2026-08-15T05:59:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama4_text",
+    "lora",
+    "adapter",
+    "adaption",
+    "base_model:meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "base_model:adapter:meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "license:other",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 921633178,
+  "storage_human": "922 MB",
+  "base_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ideophones and African Verse - JSTOR",
+      "url": "https://www.jstor.org/stable/3819954",
+      "snippet": "Ideophones are popular in African-language verse, prose narrative, song, music, and language play largely because their tone characteristics parallel or echo their semantic features."
+    },
+    {
+      "title": "African Idiophones: Types and Examples",
+      "url": "https://www.scribd.com/presentation/652325053/Idiophones-i-Mapeh",
+      "snippet": "Idiophones are percussion instruments that produce sound through vibration rather than a membrane or strings. Some common African idiophones described in the document include the balafon (a xylophone made from wood), rattles (vessels made from materials like shells that produce sound when shaken), and the agogo (single or double bells originally from Yoruba music). Other idiophones mentioned ..."
+    },
+    {
+      "title": "AfolabiDasola (Ganiyat Dasola Afolabi) - Hugging Face",
+      "url": "https://huggingface.co/AfolabiDasola",
+      "snippet": "AfolabiDasola Follow 6b4b86ec-928a-4b7e-9c1e-8d5f009e3272&#x27;s profile picture 1 follower · 6 following"
+    },
+    {
+      "title": "Classification of African Idiophones",
+      "url": "https://www.scribd.com/document/432653409/Classification-of-Traditional-African-Instruments",
+      "snippet": "This document classifies traditional African instruments into several categories: idiophones like balafons and rattles; membranophones like body percussion and talking drums; lamellaphones such as the mbira; chordophones like the musical bow, lute, and kura; and aerophones including flutes, horns, and trumpets. It lists specific traditional African instruments under each instrumental category."
+    },
+    {
+      "title": "AfolabiDasola - Repositories - GitHub",
+      "url": "https://github.com/AfolabiDasola?tab=repositories",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    }
+  ]
+}

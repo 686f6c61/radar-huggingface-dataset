@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "OpenMOSS-Team/MOSS-VL-Instruct-0708-FP8",
+  "slug": "openmoss-team-moss-vl-instruct-0708-fp8",
+  "author": "OpenMOSS-Team",
+  "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708-FP8",
+  "created_at": "2026-08-07T09:30:03.000Z",
+  "updated_at": "2026-08-10T04:54:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moss_vl",
+    "feature-extraction",
+    "MOSS-VL",
+    "image-understanding",
+    "video-understanding",
+    "FP8",
+    "compressed-tensors",
+    "quantized",
+    "SGLang",
+    "custom_code",
+    "video-text-to-text",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-VL-Instruct-0708",
+    "base_model:quantized:OpenMOSS-Team/MOSS-VL-Instruct-0708",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 63,
+  "trending_score": 16,
+  "parameters": 11336371208,
+  "parameters_human": "11.34B",
+  "storage_bytes": 15755363594,
+  "storage_human": "15.8 GB",
+  "base_model": "OpenMOSS-Team/MOSS-VL-Instruct-0708",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMOSS-Team/MOSS-VL-Instruct-0708 · Hugging Face",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708",
+      "snippet": "MOSS-VL-Instruct-0708 is optimized for general offline multimodal understanding. Very dense videos, highly specialized domains, precise small-text OCR, and tasks requiring strict numerical reasoning may still require task-specific prompting, sampling choices, or fine-tuning."
+    },
+    {
+      "title": "OpenMOSS-Team/MOSS-VL-Instruct-0708-FP8 · Hugging Face",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-VL: MOSS-VL is the core multimodal model series ...",
+      "url": "https://github.com/OpenMOSS/MOSS-VL",
+      "snippet": "MOSS-VL is an open-weight model series for long-form, real-time video understanding, built on a unified cross-attention architecture. All three models are 11B-parameter and open-weight. MOSS-VL-Realtime: real-time interaction over continuous video streams — interruptible at any moment, answering on the fly, and deciding on its own when to respond and when to keep watching. MOSS-VL-Instruct ..."
+    },
+    {
+      "title": "MOSS-VL · OpenMOSS",
+      "url": "https://openmoss.ai/MOSS-VL/moss-vl.html",
+      "snippet": "MOSS-VL: A Multimodal Foundation for Video Understanding MOSS-VL is the core multimodal model series in the OpenMOSS ecosystem, dedicated to pushing the frontier of visual understanding. To tackle the challenges inherent to video understanding, our technical roadmap pursues a systematic scaling strategy along three key dimensions."
+    },
+    {
+      "title": "MOSS-VL-Instruct-0708 · Models",
+      "url": "https://www.modelscope.cn/models/openmoss/MOSS-VL-Instruct-0708",
+      "snippet": "MOSS-VL-Instruct-0708 Introduction MOSS-VL-Instruct-0708 is the instruction-tuned checkpoint of the MOSS-VL 0708 release, part of the OpenMOSS ecosystem for open visual understanding. Built on top of MOSS-VL-Base-0708 through supervised fine-tuning (SFT), this checkpoint is designed as a high-performance offline multimodal model."
+    }
+  ]
+}

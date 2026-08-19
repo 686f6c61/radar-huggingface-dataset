@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Blackroot/Muse-Glimmer-30GB-Preserving-Abliterated",
+  "slug": "blackroot-muse-glimmer-30gb-preserving-abliterated",
+  "author": "Blackroot",
+  "url": "https://huggingface.co/Blackroot/Muse-Glimmer-30GB-Preserving-Abliterated",
+  "created_at": "2026-08-15T18:49:35.000Z",
+  "updated_at": "2026-08-15T20:08:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 59581565169,
+  "storage_human": "59.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

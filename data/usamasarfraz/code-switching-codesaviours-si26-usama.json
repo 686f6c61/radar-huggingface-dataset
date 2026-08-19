@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Usamasarfraz/code-switching-codesaviours-si26-usama",
+  "slug": "usamasarfraz-code-switching-codesaviours-si26-usama",
+  "author": "Usamasarfraz",
+  "url": "https://huggingface.co/Usamasarfraz/code-switching-codesaviours-si26-usama",
+  "created_at": "2026-08-17T18:46:05.000Z",
+  "updated_at": "2026-08-17T18:46:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126943684,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Usamasarfraz/code-switching-codesaviours-si26-usama · Datasets at ...",
+      "url": "https://huggingface.co/datasets/Usamasarfraz/code-switching-codesaviours-si26-usama",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Usamasarfraz/code-switching-codesaviours-si26-usama at main",
+      "url": "https://huggingface.co/datasets/Usamasarfraz/code-switching-codesaviours-si26-usama/tree/main",
+      "snippet": "Datasets: Usamasarfraz / code-switching-codesaviours-si26-usama like 0 Modalities: Text Formats: csv Size: < 1K Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community 1 main code-switching-codesaviours-si26-usama 4.77 kB 1 contributor History:3 commits Usamasarfraz Create README.md 50848d6 verified2 ..."
+    },
+    {
+      "title": "GitHub - Usamasarfrazz/urdu-ocr-codesaviours-si26-Usama",
+      "url": "https://github.com/Usamasarfrazz/urdu-ocr-codesaviours-si26-Usama",
+      "snippet": "This is Week 1 of building a complete Urdu OCR (Optical Character Recognition) system. The goal of Week 1 was to collect, organize, and label a dataset of Urdu text images that will be used to train an OCR model in Week 4. This notebook builds a labeled image-text dataset by combining four different data sources into a single organized set, ready for training and evaluating an Urdu text ..."
+    },
+    {
+      "title": "code-switching-codesaviours-si26-MuhammadHassaan/README.md at main ...",
+      "url": "https://github.com/hassanatif992-hash/code-switching-codesaviours-si26-MuhammadHassaan/blob/main/README.md",
+      "snippet": "Contribute to hassanatif992-hash/code-switching-codesaviours-si26-MuhammadHassaan development by creating an account on GitHub."
+    },
+    {
+      "title": "Code-switching-codesaviours-si26--Sumair-/SI26-Week6-Sumair ... - GitHub",
+      "url": "https://github.com/sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-/blob/main/SI26-Week6-Sumair.ipynb",
+      "snippet": "Contribute to sumair789-lgtm/Code-switching-codesaviours-si26--Sumair- development by creating an account on GitHub."
+    }
+  ]
+}

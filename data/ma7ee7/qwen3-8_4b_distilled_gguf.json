@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Ma7ee7/Qwen3.8_4B_Distilled_GGUF",
+  "slug": "ma7ee7-qwen3-8_4b_distilled_gguf",
+  "author": "Ma7ee7",
+  "url": "https://huggingface.co/Ma7ee7/Qwen3.8_4B_Distilled_GGUF",
+  "created_at": "2026-07-30T01:03:45.000Z",
+  "updated_at": "2026-08-05T16:45:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "qwen",
+    "qwen3.8",
+    "reasoning",
+    "thinking",
+    "distillation",
+    "knowledge-distillation",
+    "sequence-level-distillation",
+    "chain-of-thought",
+    "conversational",
+    "text-generation",
+    "en",
+    "dataset:r0b0tlab/qwen3.8-max-distillation-50k",
+    "base_model:Ma7ee7/Qwen3.8_4B_Distilled",
+    "base_model:quantized:Ma7ee7/Qwen3.8_4B_Distilled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 29,
+  "downloads_30d": 184855,
+  "trending_score": 9,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 9667198400,
+  "storage_human": "9.7 GB",
+  "base_model": "Ma7ee7/Qwen3.8_4B_Distilled",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ma7ee7/Qwen3.8_4B_Distilled_GGUF · Hugging Face",
+      "url": "https://huggingface.co/Ma7ee7/Qwen3.8_4B_Distilled_GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ma7ee7/Qwen3.8_4B_Distilled at main - Hugging Face",
+      "url": "https://huggingface.co/Ma7ee7/Qwen3.8_4B_Distilled/tree/main",
+      "snippet": "Ma7ee7 / Qwen3.8_4B_Distilled like 0 Text Generation Transformers Safetensors r0b0tlab/qwen3.8-max-distillation-50k English qwen3 qwen qwen3.8 reasoning thinking distillation knowledge-distillation sequence-level-distillation supervised-fine-tuning chain-of-thought conversational text-generation-inference License:apache-2.0 Model card ..."
+    },
+    {
+      "title": "Qwen3.8 4B Distilled GGUF by Ma7ee7 — VRAM 2.5GB, 256K context | LLM ...",
+      "url": "https://llm-explorer.com/model/Ma7ee7%2FQwen3.8_4B_Distilled_GGUF,2RAokxVG11JKnGhnMkwkIs",
+      "snippet": "Qwen3.8 4B Distilled GGUF is an open-source 4b LLM by Ma7ee7. VRAM 2.5GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "⚡ Qwen3.8 4B Distilled Prompt Architect - GitHub",
+      "url": "https://github.com/47thtechcorner/RayCodes_Qwen3.8",
+      "snippet": "An offline, zero-cost local prompt optimization engine powered by sequence-distilled Qwen3.8 4B AI reasoning. It automatically refactors lazy, unstructured user prompts into master-level system prompts with role definition, technical constraints, and output schema rules."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

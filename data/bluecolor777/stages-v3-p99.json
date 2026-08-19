@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bluecolor777/stages-v3-p99",
+  "slug": "bluecolor777-stages-v3-p99",
+  "author": "bluecolor777",
+  "url": "https://huggingface.co/bluecolor777/stages-v3-p99",
+  "created_at": "2026-08-18T12:41:53.000Z",
+  "updated_at": "2026-08-18T12:41:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bluecolor777/stages-v3 · Hugging Face",
+      "url": "https://huggingface.co/bluecolor777/stages-v3",
+      "snippet": "Instructions to use bluecolor777/stages-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use bluecolor777/stages-v3 with Transformers:"
+    },
+    {
+      "title": "bluecolor777/v3 · Hugging Face",
+      "url": "https://huggingface.co/bluecolor777/v3",
+      "snippet": "bluecolor777 / v3 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "stages-v3 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/bluecolor777/stages-v3",
+      "snippet": "Run stages-v3 with FriendliAI inference. Following the February release of the Qwen3.5 series, we&#x27;re pleased to share the first open-weight variant of Qwen3.6."
+    },
+    {
+      "title": "Core Models - Stability AI",
+      "url": "https://stability.ai/core-models",
+      "snippet": "Stability AI may remove or modify one or more of the Core Models listed on this page. In this circumstance, Stability AI will notify you it is removing or making certain Core Models inaccessible. Other Stability AI Models Stability AI has other models not included in the Core Models above, for which your usage is subject to the terms of each individual model&#x27;s applicable license. For more ..."
+    },
+    {
+      "title": "ComfyUI Resources — Free AI Model Downloads for Stable Diffusion & Flux",
+      "url": "https://comfyuiweb.com/resources",
+      "snippet": "Curated collection of the best AI models for ComfyUI — Stable Diffusion checkpoints, Flux models, LoRA, ControlNet, VAE & upscale models. Free downloads with verified links."
+    }
+  ]
+}

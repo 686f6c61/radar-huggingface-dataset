@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jrepifano/q14b-tda-del-b3",
+  "slug": "jrepifano-q14b-tda-del-b3",
+  "author": "jrepifano",
+  "url": "https://huggingface.co/jrepifano/q14b-tda-del-b3",
+  "created_at": "2026-08-18T09:30:57.000Z",
+  "updated_at": "2026-08-18T09:55:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11564940,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jrepifano (Jacob R Epifano) · GitHub",
+      "url": "https://github.com/jrepifano",
+      "snippet": "Research Scientist - AI/ML. jrepifano has 21 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Research | Jacob Epifano - jrepifano.github.io",
+      "url": "https://jrepifano.github.io/research/",
+      "snippet": "Research notes and experiments by Jacob Epifano. How the local learning coefficient scales with width in the lazy and rich learning regimes, set by NTK and muP parametrization. A network linear in its parameters does not look regular under the LLC: its Jacobian rank is capped by the dataset rather than the parameter count, so the NTK network&#x27;s LLC is nearly width-invariant while the muP ..."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools). Since then, we have greatly expanded: with a single prompt, you can generate images, edit photos, chat with an AI that browses the internet, create short videos, compose original music, or chat with a realistic ..."
+    },
+    {
+      "title": "jrepifano - DeepAI",
+      "url": "https://deepai.org/profile/jrepifano",
+      "snippet": "Read jrepifano&#x27;s latest research, browse their coauthor&#x27;s research, and play around with their algorithms"
+    },
+    {
+      "title": "GitHub - jrepifano/Machine-Learning",
+      "url": "https://github.com/jrepifano/Machine-Learning",
+      "snippet": "Jacob Epifano - Machine Learning This repository contains all of the algorithms I have implemented during my undergraduate Machine Learning studies at Rowan University."
+    }
+  ]
+}

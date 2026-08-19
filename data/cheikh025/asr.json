@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cheikh025/ASR",
+  "slug": "cheikh025-asr",
+  "author": "cheikh025",
+  "url": "https://huggingface.co/cheikh025/ASR",
+  "created_at": "2026-08-07T18:18:13.000Z",
+  "updated_at": "2026-08-19T02:18:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204709848865,
+  "storage_human": "204.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cheikh025/ASR · Hugging Face",
+      "url": "https://huggingface.co/cheikh025/ASR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cheikh025 (cheikh ahmed) - Hugging Face",
+      "url": "https://huggingface.co/cheikh025",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper about 4 hours ago ... liked a model over 1 year ago"
+    },
+    {
+      "title": "ch025 cheikh025 - GitHub",
+      "url": "https://github.com/cheikh025/",
+      "snippet": "Add an optional note Maximum 250 characters. Please don&#x27;t include any personal information such as legal names or email addresses. Markdown supported. This note will be visible to only you. Block user DistrictNet DistrictNet Public Julia 4 NeuralSteinExpectations NeuralSteinExpectations Public Jupyter Notebook 2 AMVM AMVM Public Python 2 Project-age-estimation-pytorch Project-age-estimation ..."
+    },
+    {
+      "title": "Damacol/cheikh025-enemray3.0-merged - GitHub",
+      "url": "https://github.com/Damacol/cheikh025-enemray3.0-merged",
+      "snippet": "cheikh025/enemray3.-merged - Private, Uncensored AI for Real Creators and Devs {MODEL} deployed without telemetry or corporate filters. Experience uncensored, local-first inference via Venice.ai."
+    },
+    {
+      "title": "Gladia - Best open-source speech-to-text models in 2026",
+      "url": "https://www.gladia.io/blog/best-open-source-speech-to-text-models",
+      "snippet": "8. SpeechBrain Not a model — a full speech AI toolkit: SpeechBrain is an open-source PyTorch-based toolkit for building speech processing pipelines. Rather than providing a single model, it offers training recipes, pre-trained models, and modular components for ASR, speaker diarization, speech enhancement, text-to-speech, and more."
+    }
+  ]
+}

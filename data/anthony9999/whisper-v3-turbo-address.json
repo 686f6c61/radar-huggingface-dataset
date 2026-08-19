@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "anthony9999/whisper-v3-turbo-address",
+  "slug": "anthony9999-whisper-v3-turbo-address",
+  "author": "anthony9999",
+  "url": "https://huggingface.co/anthony9999/whisper-v3-turbo-address",
+  "created_at": "2026-08-18T01:29:55.000Z",
+  "updated_at": "2026-08-18T01:30:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 3235581408,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepdml/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/deepdml/whisper-large-v3-turbo",
+      "snippet": "Whisper Whisper is a state-of-the-art model for automatic speech recognition (ASR) and speech translation, proposed in the paper Robust Speech Recognition via Large-Scale Weak Supervision by Alec Radford et al. from OpenAI. Trained on >5M hours of labeled data, Whisper demonstrates a strong ability to generalise to many datasets and domains in a zero-shot setting. Whisper large-v3-turbo is a ..."
+    },
+    {
+      "title": "Whisper v3 Turbo Local ASR model | LocalClaw",
+      "url": "https://localclaw.io/tts/whisper-v3-turbo",
+      "snippet": "Whisper v3 Turbo: local speech-to-text transcription guide with quality 9.1/10, speed 9.5/10, 99 languages, hardware and install notes."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "Kimi K3 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/kimi-3",
+      "snippet": "Kimi K3 by Moonshot AI ranks #5 of 218 with a public score of 80.5/100. Evidence: Supported; this profile shows 44 source-displayable benchmark rows."
+    }
+  ]
+}

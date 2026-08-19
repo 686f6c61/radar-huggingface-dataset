@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kjfk/tennis-ball-detector-yolov8",
+  "slug": "kjfk-tennis-ball-detector-yolov8",
+  "author": "kjfk",
+  "url": "https://huggingface.co/kjfk/tennis-ball-detector-yolov8",
+  "created_at": "2026-08-18T18:52:05.000Z",
+  "updated_at": "2026-08-18T18:52:11.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "computer-vision",
+    "object-detection",
+    "tennis",
+    "yolov8",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52048651,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kjfk/tennis-ball-detector-yolov8m · Hugging Face",
+      "url": "https://huggingface.co/kjfk/tennis-ball-detector-yolov8m",
+      "snippet": "kjfk / tennis-ball-detector-yolov8m like 0 Object Detection ultralytics yolov8 tennis sports-analytics License:agpl-3.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Automated Tennis Player and Ball Tracking with Court Keypoints ...",
+      "url": "https://arxiv.org/pdf/2511.04126",
+      "snippet": "Abstract This study presents a complete pipeline for automated tennis match analysis. Our framework integrates multiple deep learning models to detect and track players and the tennis ball in real time, while also identifying court keypoints for spatial reference. Using YOLOv8 for player detection, a custom-trained YOLOv5 model for ball tracking, and a ResNet50-based architecture for court ..."
+    },
+    {
+      "title": "RJTPP/tennis-ball-detection · Hugging Face",
+      "url": "https://huggingface.co/RJTPP/tennis-ball-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Automated Tennis Player and Ball Tracking with Court Keypoints ...",
+      "url": "https://arxiv.org/abs/2511.04126",
+      "snippet": "This study presents a complete pipeline for automated tennis match analysis. Our framework integrates multiple deep learning models to detect and track players and the tennis ball in real time, while also identifying court keypoints for spatial reference. Using YOLOv8 for player detection, a custom-trained YOLOv5 model for ball tracking, and a ResNet50-based architecture for court keypoint ..."
+    },
+    {
+      "title": "GitHub - JoelSon1014/Tennis-Ball-YOLOV8",
+      "url": "https://github.com/JoelSon1014/Tennis-Ball-YOLOV8",
+      "snippet": "Experience seamless AI with Ultralytics HUB ⭐, the all-in-one solution for data visualization, YOLOv5 and YOLOv8 🚀 model training and deployment, without any coding."
+    }
+  ]
+}

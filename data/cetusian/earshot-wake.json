@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cetusian/earshot-wake",
+  "slug": "cetusian-earshot-wake",
+  "author": "cetusian",
+  "url": "https://huggingface.co/cetusian/earshot-wake",
+  "created_at": "2026-08-17T19:45:29.000Z",
+  "updated_at": "2026-08-17T21:00:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "keyword-spotting",
+    "wake-word",
+    "audio",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2546308,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cetusian (Madalin Tatarciuc) - Hugging Face",
+      "url": "https://huggingface.co/cetusian/models",
+      "snippet": "i want to learn everything. forced to attention, inclined to diffuse."
+    },
+    {
+      "title": "read-list - a cetusian Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/cetusian/read-list",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from cetusian"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - wiringai/mod_earshot: FreeSWITCH module that streams live call ...",
+      "url": "https://github.com/wiringai/mod_earshot",
+      "snippet": "Earshot — mod_earshot A FreeSWITCH module that streams live call audio to your AI agent over a WebSocket — and plays the agent&#x27;s voice back — full duplex, with ten ready-made protocol adapters, module-side turn detection, agent-driven call control, PCI masking, multi-stream fan-out, and built-in latency metrics."
+    }
+  ]
+}

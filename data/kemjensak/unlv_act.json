@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kemjensak/unlv_act",
+  "slug": "kemjensak-unlv_act",
+  "author": "kemjensak",
+  "url": "https://huggingface.co/kemjensak/unlv_act",
+  "created_at": "2026-08-18T07:41:35.000Z",
+  "updated_at": "2026-08-18T07:42:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:sunuk000/rby1_training",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51672712,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206731544,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kemjensak/policy_act · Hugging Face",
+      "url": "https://huggingface.co/kemjensak/policy_act",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home | Generative AI | UNLV",
+      "url": "https://www.unlv.edu/generative-ai",
+      "snippet": "AI-Powered Progress at UNLV Generative Artificial Intelligence (AI) is transforming the future of education and work, and UNLV is empowering faculty and staff to explore its potential. The Generative AI Fellows Pilot Program is a key initiative that reflects the university&#x27;s forward-thinking approach to integrating AI across teaching, research, and operations. Through such strategic efforts ..."
+    },
+    {
+      "title": "kemjensak/eval_act_bin_0323_1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/kemjensak/eval_act_bin_0323_1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UNLV Report Maps Where AI Is Heading in Gambling",
+      "url": "https://igaming.org/casino-news/unlv-study-puts-prediction-markets-at-center-of-gambling-ai/",
+      "snippet": "UNLV and KPMG say prediction markets and AI tools are driving gambling product development, with live dealer AI also drawing attention."
+    },
+    {
+      "title": "UniVLA: Learning to Act Anywhere with Task-centric Latent Actions",
+      "url": "https://arxiv.org/abs/2505.06111",
+      "snippet": "To confront these limitations, we propose UniVLA, a new framework for learning cross-embodiment vision-language-action (VLA) policies. Our key innovation is to derive task-centric action representations from videos with a latent action model. This enables us to exploit extensive data across a wide spectrum of embodiments and perspectives."
+    }
+  ]
+}

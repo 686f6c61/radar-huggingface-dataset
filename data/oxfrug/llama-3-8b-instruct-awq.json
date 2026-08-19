@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "oxfrug/Llama-3-8B-instruct-awq",
+  "slug": "oxfrug-llama-3-8b-instruct-awq",
+  "author": "oxfrug",
+  "url": "https://huggingface.co/oxfrug/Llama-3-8B-instruct-awq",
+  "created_at": "2026-08-16T04:44:00.000Z",
+  "updated_at": "2026-08-16T04:51:30.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "sv",
+    "da",
+    "no",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "llama",
+    "awq",
+    "compressed-tensors",
+    "swedish",
+    "quantized",
+    "sv",
+    "da",
+    "no",
+    "en",
+    "base_model:AI-Sweden-Models/Llama-3-8B-instruct",
+    "base_model:quantized:AI-Sweden-Models/Llama-3-8B-instruct",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5745180139,
+  "storage_human": "5.7 GB",
+  "base_model": "AI-Sweden-Models/Llama-3-8B-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

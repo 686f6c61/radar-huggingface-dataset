@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SavageDroneV5/LilithAenslandNamcoXCapcom",
+  "slug": "savagedronev5-lilithaenslandnamcoxcapcom",
+  "author": "SavageDroneV5",
+  "url": "https://huggingface.co/SavageDroneV5/LilithAenslandNamcoXCapcom",
+  "created_at": "2026-08-15T04:10:02.000Z",
+  "updated_at": "2026-08-15T04:43:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30342048,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "サビーヌ (サンドラの大冒険, ナムコxカプコン) Sabine (Whirlo, NAMCO x CAPCOM)｜AI Art Model ...",
+      "url": "https://pixai.art/en/model/1866654092274695047",
+      "snippet": "Just created this stunning woman, game, character, game_character anime art with the amazing &#x27;サビーヌ (サンドラの大冒険, ナムコxカプコン) Sabine (Whirlo, NAMCO x CAPCOM)&#x27; model on PixAI! Search for \"サビーヌ (サンドラの大冒険, ナムコxカプコン) Sabine (Whirlo, NAMCO x CAPCOM)\" on PixAI - the free & professional AI anime art generator. Create your own ..."
+    },
+    {
+      "title": "Lilith Aensland by ZabZarock on DeviantArt",
+      "url": "https://www.deviantart.com/zabzarock/art/Lilith-Aensland-709372412",
+      "snippet": "Here&#x27;s a new render of Lilith (Vampire Savior) Made with Blender and Gimp"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Lilith Aensland - Soul Reflect (Darkstalkers) | Tahldon&#x27;s Art",
+      "url": "https://www.tahldon.art/portfolio-collections/my-portfolio/lilith-aensland-soul-reflect",
+      "snippet": "This project was based on creating a 3D character model of Lilith Aensland from Capcom&#x27;s Darkstalkers series. I have always been a fan of this character as she is cute, fun, and has a lot of energy. Please enjoy!"
+    },
+    {
+      "title": "Drone Savage x4 Gears of War OT Miniature STL - Cults 3D",
+      "url": "https://cults3d.com/en/3d-model/game/drone-savage-x4-gears-of-war-ot-miniature-stl",
+      "snippet": "Download this STL Model for 3D printer made by TheSTLSmith. DIGITAL FILE for you to use to print with your 3D printer or a 3D printing service. This is a fan model with 4 weapon variations, and what you see in the preview is exactly what you get as it is a screenshot from inside my sculpting software leaving nothing out, and of course Cults3D&#x27;s own preview. I describe my models as medium ..."
+    }
+  ]
+}

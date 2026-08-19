@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "loisliowcsiro/cyclops_runs",
+  "slug": "loisliowcsiro-cyclops_runs",
+  "author": "loisliowcsiro",
+  "url": "https://huggingface.co/loisliowcsiro/cyclops_runs",
+  "created_at": "2026-08-03T03:43:31.000Z",
+  "updated_at": "2026-08-17T00:44:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "robotics",
+    "reinforcement-learning",
+    "dexterous-manipulation",
+    "mujoco",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1931888103,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loisliowcsiro/cyclops_runs · Hugging Face",
+      "url": "https://huggingface.co/loisliowcsiro/cyclops_runs",
+      "snippet": "loisliowcsiro / cyclops_runs like 0 Reinforcement Learning TensorBoard robotics dexterous-manipulation mujoco rsl-rl License:apache-2.0 Model card FilesFiles and versions xet MetricsTraining metrics Community Copy to bucket new Cyclops Reorient — TensorBoard Logs Default Reward Parameters Study Notes Runs"
+    },
+    {
+      "title": "loisliowcsiro (Lois Liow) - Hugging Face",
+      "url": "https://huggingface.co/loisliowcsiro",
+      "snippet": "User profile of Lois Liow on Hugging Face"
+    },
+    {
+      "title": "loisliowcsiro/cyclops_checkpoints · Hugging Face",
+      "url": "https://huggingface.co/loisliowcsiro/cyclops_checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - VectorInstitute/cyclops: A toolkit for evaluating and ...",
+      "url": "https://github.com/VectorInstitute/cyclops",
+      "snippet": "cyclops is a toolkit for facilitating research and deployment of ML models for healthcare. It provides a few high-level APIs namely: data - Create datasets for training, inference and evaluation. We use the popular 🤗 datasets to efficiently load and slice different modalities of data models - Use common model implementations using scikit-learn and PyTorch tasks - Use common ML task ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

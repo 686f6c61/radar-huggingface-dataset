@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "danhnahh/bert_full",
+  "slug": "danhnahh-bert_full",
+  "author": "danhnahh",
+  "url": "https://huggingface.co/danhnahh/bert_full",
+  "created_at": "2026-08-18T19:35:28.000Z",
+  "updated_at": "2026-08-18T19:48:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 540026460,
+  "storage_human": "540 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "papers-from-scratch/BERT at main · SamyamoyRakshit/papers ... - GitHub",
+      "url": "https://github.com/SamyamoyRakshit/papers-from-scratch/tree/main/BERT",
+      "snippet": "Architecture & Configuration — model spec, config field reference, checkpoint layout. The story — the full write-up, with the why behind every choice, lives on the blog: BERT, from scratch."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=BERT",
+      "snippet": "Explore machine learning models. emrecan/bert-base-turkish-cased-mean-nli-stsb-tr"
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    },
+    {
+      "title": "answerdotai/ModernBERT-large · Hugging Face",
+      "url": "https://huggingface.co/answerdotai/ModernBERT-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BERT - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/bert",
+      "snippet": "BERT, short for Bidirectional Encoder Representations from Transformers, is a pretrained language model introduced by researchers at Google Research in 2018."
+    }
+  ]
+}

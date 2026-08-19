@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "donedynamics/Qwen3.8-27B-heretic-MLX-bf16",
+  "slug": "donedynamics-qwen3-8-27b-heretic-mlx-bf16",
+  "author": "donedynamics",
+  "url": "https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-bf16",
+  "created_at": "2026-08-17T13:38:43.000Z",
+  "updated_at": "2026-08-17T13:39:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "text-only",
+    "abliterated",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "base_model:trohrbaugh/Qwen3.8-27B-heretic-ara",
+    "base_model:finetune:trohrbaugh/Qwen3.8-27B-heretic-ara",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53812097954,
+  "storage_human": "53.8 GB",
+  "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "donedynamics/Qwen3.8-27B-heretic-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-6bit",
+      "snippet": "The base model is an abliterated (\"heretic\") derivative of Qwen/Qwen3.8-27B: its refusal behaviour has been surgically removed, so it will answer prompts a safety-tuned model would decline."
+    },
+    {
+      "title": "Qwen 3.8 27B Review: The Best Local AI Model Yet? - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/qwen-3-8-27b-local-ai-review/",
+      "snippet": "Qwen 3.8 27B delivers Opus-level coding performance on your local machine. Run Alibaba&#x27;s new 27 billion parameter dense model on just 17 GB of VRAM."
+    },
+    {
+      "title": "&#x27;Qwen3.8-27B,&#x27; a locally runnable version, has been released for free ...",
+      "url": "https://gigazine.net/gsc_news/en/20260817-qwen3-8-27b",
+      "snippet": "Alibaba's Qwen team has released &#x27; Qwen3.8-27B, &#x27; an AI model with 27 billion parameters. The model's weights are released under the Apache License 2.0, and commercial use is permitted ..."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

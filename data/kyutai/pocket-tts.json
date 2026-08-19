@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kyutai/pocket-tts",
+  "slug": "kyutai-pocket-tts",
+  "author": "kyutai",
+  "url": "https://huggingface.co/kyutai/pocket-tts",
+  "created_at": "2025-12-29T14:06:48.000Z",
+  "updated_at": "2026-05-04T12:38:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pocket-tts",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "en",
+    "arxiv:2509.06926",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 825,
+  "downloads_30d": 1262,
+  "trending_score": 17,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26725912983,
+  "storage_human": "26.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kyutai-labs/pocket-tts: A TTS that fits in your CPU (and pocket)",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "snippet": "A TTS that fits in your CPU (and pocket). Contribute to kyutai-labs/pocket-tts development by creating an account on GitHub."
+    },
+    {
+      "title": "Pocket TTS: a high-quality TTS with voice cloning that runs on CPU",
+      "url": "https://kyutai.org/pocket-tts-technical-report/",
+      "snippet": "With Pocket TTS, we manage to bridge this gap and obtain a tiny model that runs on CPU without sacrificing any advantages of the larger models. As usual with Kyutai releases, we open-source Pocket TTS under the MIT license. To maximize reproducibility, we trained the model on public English datasets only."
+    },
+    {
+      "title": "Pocket TTS - kyutai-labs.github.io",
+      "url": "https://kyutai-labs.github.io/pocket-tts/",
+      "snippet": "pocket-tts-deno Port of pocket-tts-server as a wasm + onnx deno server with voice TTS API. FrontPocket by @markd89 - Front-end for Pocket-TTS to speak text from clipboard, file, CLI (hotkeys) & GUI toolbar. Change playback speed, voice, and move forward/backward between sentences instantaneously."
+    },
+    {
+      "title": "Kyutai TTS",
+      "url": "https://kyutai.org/next/tts/",
+      "snippet": "Kyutai Pocket TTS Released in January 2026, Kyutai Pocket TTS is our newest model. With a mere 100 million parameters, it&#x27;s lightweight enough to run on a CPU in real-time. In April, we made it speak five other languages. The demo below does run on a remote CPU, but it only takes a single command to run it on your own machine. Check out the technical report for instructions."
+    },
+    {
+      "title": "kyutai/pocket-tts · Hugging Face",
+      "url": "https://huggingface.co/kyutai/pocket-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

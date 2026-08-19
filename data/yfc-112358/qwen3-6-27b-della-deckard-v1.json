@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "YFC-112358/Qwen3.6-27B-Della-Deckard-v1",
+  "slug": "yfc-112358-qwen3-6-27b-della-deckard-v1",
+  "author": "YFC-112358",
+  "url": "https://huggingface.co/YFC-112358/Qwen3.6-27B-Della-Deckard-v1",
+  "created_at": "2026-08-16T15:46:27.000Z",
+  "updated_at": "2026-08-19T01:30:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "della",
+    "task-arithmetic",
+    "qwen3.6",
+    "reasoning",
+    "multimodal",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:merge:Qwen/Qwen3.6-27B",
+    "base_model:Ravionhf/qwen3.6-27b-reasoning-distill-lora-v1",
+    "base_model:merge:Ravionhf/qwen3.6-27b-reasoning-distill-lora-v1",
+    "base_model:nerkyor/Qwen3.6-27B-DSV4Pro-Thinking-Distill",
+    "base_model:merge:nerkyor/Qwen3.6-27B-DSV4Pro-Thinking-Distill",
+    "base_model:nightmedia/Qwen3.5-27B-Engineer-Deckard-Gemini",
+    "base_model:merge:nightmedia/Qwen3.5-27B-Engineer-Deckard-Gemini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 167,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575813862,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.6-27B, nerkyor/Qwen3.6-27B-DSV4Pro-Thinking-Distill, Ravionhf/qwen3.6-27b-reasoning-distill-lora-v1, nightmedia/Qwen3.5-27B-Engineer-Deckard-Gemini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YFC-112358/Qwen3.6-27B-Della-Deckard-v1 · Hugging Face",
+      "url": "https://huggingface.co/YFC-112358/Qwen3.6-27B-Della-Deckard-v1",
+      "snippet": "YFC-112358 / Qwen3.6-27B-Della-Deckard-v1 like 0 Safetensors qwen3_5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 39 Safetensors Model size 28B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "YFC-112358 (Yufan Chen) - Hugging Face",
+      "url": "https://huggingface.co/YFC-112358",
+      "snippet": "YFC-112358/Qwen3.6-27B-Della-Deckard-Isometry-Geodesic-v2 Image-Text-to-Text • 28B•Updated about 19 hours ago"
+    },
+    {
+      "title": "Qwen3.6-27B-Della-Deckard-Isometry-Geodesic-v2 - friendli.ai",
+      "url": "https://friendli.ai/models/YFC-112358/Qwen3.6-27B-Della-Deckard-Isometry-Geodesic-v2",
+      "snippet": "Deploy Qwen3.6-27B-Della-Deckard-Isometry-Geodesic-v2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility."
+    },
+    {
+      "title": "Qwen3.6-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.6-27b",
+      "snippet": "The Qwen3.6 27B native vision-language dense model builds upon the 3.5-27B version, with key improvements in agentic coding capabilities and enhanced STEM reasoning and inference skills. In the vision modality, it demonstrates significant advances in spatial intelligence, object localization, and detection, while video understanding, document OCR, and visual agent capabilities continue to ..."
+    }
+  ]
+}

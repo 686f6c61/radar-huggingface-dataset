@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dearxoasis/thaidoc-finetune-gguf",
+  "slug": "dearxoasis-thaidoc-finetune-gguf",
+  "author": "dearxoasis",
+  "url": "https://huggingface.co/dearxoasis/thaidoc-finetune-gguf",
+  "created_at": "2026-08-16T07:35:54.000Z",
+  "updated_at": "2026-08-16T07:36:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027782048,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "TheBloke/Yi-6B-GGUF · finetuning from GGUF format? - Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Yi-6B-GGUF/discussions/2",
+      "snippet": "Does it make sense to quantize base models if they are not usable? My understanding is that base models are only meant for finetuning. Or.. are there people finetuning them from GGUF format?"
+    },
+    {
+      "title": "Finetune Gguf - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/finetune-gguf.html",
+      "snippet": "Download Finetune Gguf GGUF model. 697 MB, 25 downloads, 0 likes."
+    }
+  ]
+}

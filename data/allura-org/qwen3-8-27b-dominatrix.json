@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "allura-org/Qwen3.8-27B-Dominatrix",
+  "slug": "allura-org-qwen3-8-27b-dominatrix",
+  "author": "allura-org",
+  "url": "https://huggingface.co/allura-org/Qwen3.8-27B-Dominatrix",
+  "created_at": "2026-08-17T19:48:03.000Z",
+  "updated_at": "2026-08-18T04:59:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "not-for-all-audiences",
+    "roleplay",
+    "creative-writing",
+    "axolotl",
+    "unsloth",
+    "slop? peak? you decide!",
+    "using huggingface tags like AO3",
+    "no beta read we die like llama 4",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733597469,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "Qwen3.8-27B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is an AI model released by Qwen on Friday, Aug 14 2026, 11 days after Qwen3.8-Max. It is an open-weight model — the trained weights are available to download and run."
+    },
+    {
+      "title": "Qwen3.8-27B: Run It Locally in Ollama | Typilot",
+      "url": "https://typilot.com/blog/qwen3-8-27b-run-locally",
+      "snippet": "What Qwen3.8 adds over the Qwen3 family The Qwen3 generation (Qwen3 8B, 14B, 32B) shipped as text-only dense models. Qwen3.8-27B is a different branch: a native multimodal dense model with a built-in vision encoder, meaning it processes images and video frames alongside text during a single inference pass on your machine."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "allura-org (Allura) - Hugging Face",
+      "url": "https://huggingface.co/allura-org",
+      "snippet": "luxury automated space communism (pfp by @cguanjen on twitter <3)"
+    }
+  ]
+}

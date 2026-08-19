@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "lowdown-labs/fela-tab",
+  "slug": "lowdown-labs-fela-tab",
+  "author": "lowdown-labs",
+  "url": "https://huggingface.co/lowdown-labs/fela-tab",
+  "created_at": "2026-07-06T18:51:59.000Z",
+  "updated_at": "2026-08-18T04:35:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "felatab",
+    "feature-extraction",
+    "fela",
+    "tabular",
+    "in-context-learning",
+    "prior-fitted-network",
+    "foundation-model",
+    "delta-rule",
+    "cpu",
+    "on-device",
+    "tabular-classification",
+    "custom_code",
+    "doi:10.57967/hf/9524",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 100,
+  "trending_score": 0,
+  "parameters": 411863529,
+  "parameters_human": "411.9M",
+  "storage_bytes": 2321593600,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Tabular classification",
+      "dataset": "OpenML (8 datasets)",
+      "metric": "mean accuracy (zero shot)",
+      "value": 0.819
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lowdown Labs - AI you can feel good using",
+      "url": "https://gimmelowdown.com/products",
+      "snippet": "Lowdown Labs builds the world&#x27;s most efficient AI. Powerful models with a clean conscience: fair to artists, kind to the planet, radically transparent."
+    },
+    {
+      "title": "Lowdown Labs - GitHub",
+      "url": "https://github.com/Lowdown-Labs/",
+      "snippet": "The world&#x27;s most efficient sub quadratic coding model. FELA is built for long context engineering work that stays on your machine, fast even on CPU inference. Open weights with quantized variants, available to self deploy and via API, and chat + coding instruct tuning is on the way. The architecture is documented in our research record on Zenodo."
+    },
+    {
+      "title": "Lowdown-Labs/pg_fela: The holy grail of AutoML for PG - GitHub",
+      "url": "https://github.com/Lowdown-Labs/pg_fela",
+      "snippet": "The FelaTab model weights (felatab_int8.safetensors), embedded into the extension binary at build time, come from lowdown-labs/fela-tab and are licensed under the Apache License, Version 2.0."
+    },
+    {
+      "title": "Lowdown Labs FELA Tab Model Competes with TabFM in Browser",
+      "url": "https://www.linkedin.com/posts/suraj-mirpuri_httpslnkdineat3uzxj-at-lowdown-labs-activity-7487926836232962050-3MEn",
+      "snippet": "https://lnkd.in/eAt3uzxj At Lowdown Labs our FELA Tab model can compete with TabFM from Google but run inside your browser in the spreadsheet software itself :) We released it 2 days after Google ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=fela",
+      "snippet": "lowdown-labs/fela-streaming-asr Automatic Speech Recognition • 64.4M•Updated 16 days ago• 17 • 2"
+    }
+  ]
+}

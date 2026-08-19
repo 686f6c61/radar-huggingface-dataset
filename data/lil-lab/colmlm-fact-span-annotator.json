@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lil-lab/CoLMLM-Fact-Span-Annotator",
+  "slug": "lil-lab-colmlm-fact-span-annotator",
+  "author": "lil-lab",
+  "url": "https://huggingface.co/lil-lab/CoLMLM-Fact-Span-Annotator",
+  "created_at": "2026-08-18T02:36:38.000Z",
+  "updated_at": "2026-08-18T02:55:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "co-lmlm",
+    "annotation",
+    "arxiv:2607.07707",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 395834371,
+  "parameters_human": "395.8M",
+  "storage_bytes": 791687022,
+  "storage_human": "792 MB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lil-lab/Co-LMLM",
+      "url": "https://github.com/lil-lab/Co-LMLM",
+      "snippet": "Model — lil-lab/CoLMLM-360M-FW: the 360M SmolLM2-based Co-LMLM retriever trained on FineWeb-Edu (HF model repo: weights + tokenizer). Loaded with the standard HF loader; the fact special tokens (<FACT> etc.) are in the tokenizer."
+    },
+    {
+      "title": "Co-LMLM/src/annotation/OVERVIEW.md at main · lil-lab/Co-LMLM",
+      "url": "https://github.com/lil-lab/Co-LMLM/blob/main/src/annotation/OVERVIEW.md",
+      "snippet": "Annotator Types gemini - only used for creating the seed dataset. MLM (masked language model) - BERT-style model that only predicts <FACT> and </FACT> tokens, annotating factual spans without generating questions. question hybrid - MLM generates spans, then the question generator prefills the context KV cache."
+    },
+    {
+      "title": "Co-LMLM: Continuous-Query Limited Memory Language Models",
+      "url": "https://arxiv.org/html/2607.07707v1",
+      "snippet": "The fact span annotator is a masked language model that detects fact spans on the original text via BIO tagging, 222BIO stands for begin-inside-outside (Ramshaw and Marcus, 1995). built on a ModernBERT encoder (Warner et al., 2025)."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/lil-lab/Co-LMLM/refs/heads/main/README.md",
+      "snippet": "Backed by TRL&#x27;s `SFTTrainer`, with optional config-controlled question-leakage filtering, document splitting, and question packing (efficient multi-question-per-document training). ### 1.3 Running the annotators For the paper we use the **question-hybrid** annotator: the MLM produces the fact spans, then the question generator fills in a ..."
+    },
+    {
+      "title": "Co-LMLM - a lil-lab Collection",
+      "url": "https://huggingface.co/collections/lil-lab/co-lmlm",
+      "snippet": "Co-LMLM: Continuous-Query Limited Memory Language Models. Released model checkpoints and retrieval artifacts."
+    }
+  ]
+}

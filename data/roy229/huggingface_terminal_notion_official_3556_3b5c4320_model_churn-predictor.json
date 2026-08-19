@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_terminal_notion_official_3556_3b5c4320_model_churn-predictor",
+  "slug": "roy229-huggingface_terminal_notion_official_3556_3b5c4320_model_churn-predictor",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_3b5c4320_model_churn-predictor",
+  "created_at": "2026-08-17T01:06:26.000Z",
+  "updated_at": "2026-08-17T01:06:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:30:29.214Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=portfolio-candidate",
+      "snippet": "Explore machine learning models. 5 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: portfolio-candidate Clear all"
+    },
+    {
+      "title": "GitHub - DietrichGebert/ponytail: Makes your AI agent think like the ...",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "snippet": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. - DietrichGebert/ponytail"
+    },
+    {
+      "title": "With hf cli, how do I resume an interrupted model download?",
+      "url": "https://discuss.huggingface.co/t/with-hf-cli-how-do-i-resume-an-interrupted-model-download/174935",
+      "snippet": "I have a slow internet and the download of a large file was interrupted 30GB in! I download using the &#x27;hf&#x27; CLI command, like this: hf download unsloth/gemma-4-31B-it-GGUF gemma-4-31B-it-UD-Q8_K_XL.gguf When I ran it ag…"
+    },
+    {
+      "title": "Roy229/hf8435_model_registry_e73c8271 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Roy229/hf8435_model_registry_e73c8271",
+      "snippet": "Curated Image Generation Model Registry A curated registry of the most widely adopted open-source text-to-image (image generation) models published on the Hugging Face Hub, together with key adoption metrics (downloads, likes, license, task) and an internal tier classification used by the AI Platform team to help product teams select the right model for their projects."
+    }
+  ]
+}

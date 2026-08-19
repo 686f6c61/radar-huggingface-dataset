@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jburtoft/fnet-neuron-kernels",
+  "slug": "jburtoft-fnet-neuron-kernels",
+  "author": "jburtoft",
+  "url": "https://huggingface.co/jburtoft/fnet-neuron-kernels",
+  "created_at": "2026-06-13T22:32:11.000Z",
+  "updated_at": "2026-08-18T13:49:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "neuron",
+    "nki",
+    "trainium",
+    "inferentia",
+    "fnet",
+    "fft",
+    "fast-fourier-transform",
+    "deprecated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jburtoft/fnet-neuron-kernels · Hugging Face",
+      "url": "https://huggingface.co/jburtoft/fnet-neuron-kernels",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jburtoft/fnet-neuron-kernels at main - Hugging Face",
+      "url": "https://huggingface.co/jburtoft/fnet-neuron-kernels/tree/main",
+      "snippet": "jburtoft / fnet-neuron-kernels like 0 neuron nki trainium inferentia fnet fft fourier-transform License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main fnet-neuron-kernels 33.5 kB Ctrl+K Ctrl+K 1 contributor History:3 commits jburtoft Fix README: clarify 1D FFT kernels, note framework compatibility 1df5f43 ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/fnet.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/fnet.md",
+      "snippet": "The FNet model was proposed in FNet: Mixing Tokens with Fourier Transforms by James Lee-Thorp, Joshua Ainslie, Ilya Eckstein, Santiago Ontanon. The model replaces the self-attention layer in a BERT model with a fourier transform which returns only the real parts of the transform. The model is significantly faster than the BERT model because it has fewer parameters and is more memory efficient ..."
+    },
+    {
+      "title": "google-research/f_net at master - GitHub",
+      "url": "https://github.com/google-research/google-research/tree/master/f_net",
+      "snippet": "FNet is a highly efficient Transformer-like encoder architecture, wherein the self-attention sublayers have been wholly replaced by standard, unparameterized Fourier Transforms. This repo contains the models and code required to reproduce the results in the paper. Models are pre-trained on the C4 dataset and fine-tuned on GLUE. The code is implemented in Jax / Flax."
+    },
+    {
+      "title": "44 AI Models - Browse KernelAI Model Library | KernelAI",
+      "url": "https://kernelai.app/models",
+      "snippet": "Browse 44 offline AI models from Meta, Google, Microsoft, and more. All running privately on your iPhone."
+    }
+  ]
+}

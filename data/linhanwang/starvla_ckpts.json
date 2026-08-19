@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LinhanWang/starVLA_ckpts",
+  "slug": "linhanwang-starvla_ckpts",
+  "author": "LinhanWang",
+  "url": "https://huggingface.co/LinhanWang/starVLA_ckpts",
+  "created_at": "2026-05-03T16:12:48.000Z",
+  "updated_at": "2026-08-18T13:23:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 100,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5726807037150,
+  "storage_human": "5726.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinhanWang/starVLA_ckpts · Hugging Face",
+      "url": "https://huggingface.co/LinhanWang/starVLA_ckpts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - starVLA/starVLA: StarVLA: A Lego-like Codebase for Vision ...",
+      "url": "https://github.com/starVLA/starVLA",
+      "snippet": "Thank you for your understanding and support! 🙏 In StarVLA (also a pun on \"start VLA\" ), each functional component (model, data, trainer, config, evaluation, etc.) follows a top-down, intuitive separation and high-cohesion, low-coupling principle, enabling plug-and-play design, rapid prototyping, and independent debugging."
+    },
+    {
+      "title": "starVLA | Agile Lego-like Embodied AI Development",
+      "url": "https://starvla.github.io/",
+      "snippet": "Accelerate embodied AI delivery with agile, lego-like engineering workflows, reproducible benchmarks, and deployment-ready interfaces."
+    },
+    {
+      "title": "StarVLA (Star Vision Language Action Models) - Hugging Face",
+      "url": "https://huggingface.co/StarVLA/datasets",
+      "snippet": "Org profile for Star Vision Language Action Models on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "StarVLA Documentation | StarVLA",
+      "url": "https://starvla.github.io/docs/",
+      "snippet": "StarVLA is a modular and flexible codebase for developing Vision-Language Models (VLMs) into Vision-Language-Action (VLA) models. Each component (model, data, trainer, configuration, evaluation) is designed for high cohesion and low coupling, enabling plug-and-play research and fast iteration."
+    }
+  ]
+}

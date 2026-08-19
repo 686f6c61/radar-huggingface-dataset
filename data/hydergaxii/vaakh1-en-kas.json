@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "hydergaxii/vaakh1-en-kas",
+  "slug": "hydergaxii-vaakh1-en-kas",
+  "author": "hydergaxii",
+  "url": "https://huggingface.co/hydergaxii/vaakh1-en-kas",
+  "created_at": "2026-08-16T17:01:30.000Z",
+  "updated_at": "2026-08-16T17:01:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "ks"
+  ],
+  "tags": [
+    "safetensors",
+    "IndicTrans",
+    "translation",
+    "kashmiri",
+    "indictrans2",
+    "lora",
+    "custom_code",
+    "en",
+    "ks",
+    "dataset:ai4bharat/BPCC",
+    "base_model:ai4bharat/indictrans2-en-indic-dist-200M",
+    "base_model:adapter:ai4bharat/indictrans2-en-indic-dist-200M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 211776512,
+  "parameters_human": "211.8M",
+  "storage_bytes": 851211320,
+  "storage_human": "851 MB",
+  "base_model": "ai4bharat/indictrans2-en-indic-dist-200M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - aicodealchemist/vaakh1-kathe2026",
+      "url": "https://github.com/aicodealchemist/vaakh1-kathe2026",
+      "snippet": "The base model (ai4bharat/indictrans2-en-indic-dist-200M) and the BPCC training data remain under their own respective upstream licenses (AI4Bharat / MIT for IndicTrans2; check BPCC&#x27;s HuggingFace dataset card for its terms)."
+    },
+    {
+      "title": "GitHub - hydergaxii/ai_chat",
+      "url": "https://github.com/hydergaxii/ai_chat",
+      "snippet": "Contribute to hydergaxii/ai_chat development by creating an account on GitHub."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Model Vulnerability Tracker 2026: 52 Confirmed Exploits",
+      "url": "https://axis-intelligence.com/research/ai-model-vulnerability-tracker/",
+      "snippet": "Every disclosed LLM and AI agent vulnerability, with vendor CVSS scores and the days each vendor took to ship a fix. Updated monthly. AI Model Vulnerability Tracker 2026 update."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    }
+  ]
+}

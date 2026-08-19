@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Grigorij/Domino_sum_xvla",
+  "slug": "grigorij-domino_sum_xvla",
+  "author": "Grigorij",
+  "url": "https://huggingface.co/Grigorij/Domino_sum_xvla",
+  "created_at": "2026-08-18T09:49:33.000Z",
+  "updated_at": "2026-08-18T09:50:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:Grigorij/Domino_sum",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759498552,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grigorij/Domino_sum_vla_jepa · Hugging Face",
+      "url": "https://huggingface.co/Grigorij/Domino_sum_vla_jepa",
+      "snippet": "Instructions to use Grigorij/Domino_sum_vla_jepa with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Grigorij/Domino_sum_vla_jepa with LeRobot: Notebooks Google Colab Kaggle Model Card for vla_jepa Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on ..."
+    },
+    {
+      "title": "Grigorij/Domino_sum · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Grigorij/Domino_sum",
+      "snippet": "Datasets: Grigorij / Domino_sum like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·65k rows default (65k rows) Split (1 ..."
+    },
+    {
+      "title": "lerobot/docs/source/xvla.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/xvla.mdx",
+      "snippet": "Simulation Checkpoints lerobot/xvla-libero Achieves 93% success rate on LIBERO benchmarks. Fine-tuned from the base model for simulation tasks. lerobot/xvla-widowx Fine-tuned on BridgeData for pick-and-place experiments on compact WidowX platforms. Demonstrates robust manipulation capabilities."
+    },
+    {
+      "title": "Vision-Language-Action (VLA) Policies: SmolVLA, Pi0, Pi0.5, GR00T, XVLA",
+      "url": "https://deepwiki.com/allenai/lerobot/3.2-vision-language-action-(vla)-policies:-smolvla-pi0-pi0.5-gr00t-xvla",
+      "snippet": "This page covers the implementation of large-scale Vision-Language-Action (VLA) policies within LeRobot. These models bridge high-level natural language instructions and visual observations with low-level robotic control, often utilizing Flow Matching or Autoregressive token prediction for action generation."
+    },
+    {
+      "title": "[2510.10274] X-VLA: Soft-Prompted Transformer as Scalable Cross ...",
+      "url": "https://arxiv.org/abs/2510.10274",
+      "snippet": "Successful generalist Vision-Language-Action (VLA) models rely on effective training across diverse robotic platforms with large-scale, cross-embodiment, heterogeneous datasets. To facilitate and leverage the heterogeneity in rich, diverse robotic data sources, we propose a novel Soft Prompt approach with minimally added parameters, by infusing prompt learning concepts into cross-embodiment ..."
+    }
+  ]
+}

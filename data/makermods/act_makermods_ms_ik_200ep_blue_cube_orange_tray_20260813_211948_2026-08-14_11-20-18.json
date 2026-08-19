@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "makermods/act_makermods_ms_ik_200ep_blue_cube_orange_tray_20260813_211948_2026-08-14_11-20-18",
+  "slug": "makermods-act_makermods_ms_ik_200ep_blue_cube_orange_tray_20260813_211948_2026-08-14_11-20-18",
+  "author": "makermods",
+  "url": "https://huggingface.co/makermods/act_makermods_ms_ik_200ep_blue_cube_orange_tray_20260813_211948_2026-08-14_11-20-18",
+  "created_at": "2026-08-14T04:25:13.000Z",
+  "updated_at": "2026-08-14T04:25:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "act",
+    "makermods",
+    "openbooth",
+    "MakerModsLab",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MakerMods | Open Ecosystem for Physical AI",
+      "url": "https://www.makermods.ai/",
+      "snippet": "MakerMods makes open-source robots for physical AI. Metal Arm is our flagship seven-axis aluminum manipulator, ready for ROS and LeRobot out of the box."
+    },
+    {
+      "title": "makermods/act_makermods_200ep_blue_cube_orange_box_2026-08-07_18-59-36 ...",
+      "url": "https://huggingface.co/makermods/act_makermods_200ep_blue_cube_orange_box_2026-08-07_18-59-36",
+      "snippet": "act makermods openbooth MakerModsLab arxiv:1910.09700 Model card FilesFiles and versions xet Community Copy to bucket new Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=openbooth",
+      "snippet": "makermods/smolvla_makermods_sock_2_only_more_orange_2026-07-17_15-52-35 Robotics • 0.5B•Updated 18 days ago• 74"
+    },
+    {
+      "title": "makermods/2_blue_cube_orange_box_2026-08-07_21-20-36 at main - Hugging Face",
+      "url": "https://huggingface.co/makermods/2_blue_cube_orange_box_2026-08-07_21-20-36/tree/main",
+      "snippet": "Ctrl+K 1 contributor History:14 commits makermods checkpoint 010000 3b2642b verified2 days ago checkpointscheckpoint 0100002 days ago .gitattributes Safe 1.52 kBinitial commit3 days ago README.md 5.79 kBUpload policy weights, train config and readme2 days ago config.json 1.82 kBUpload policy weights, train config and readme2 days ago model ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

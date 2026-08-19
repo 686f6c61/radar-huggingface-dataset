@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Muse-Ltd/Muse-Prompt-Shield-1-50M",
+  "slug": "muse-ltd-muse-prompt-shield-1-50m",
+  "author": "Muse-Ltd",
+  "url": "https://huggingface.co/Muse-Ltd/Muse-Prompt-Shield-1-50M",
+  "created_at": "2026-08-16T13:24:23.000Z",
+  "updated_at": "2026-08-16T13:34:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "prompt-injection",
+    "jailbreak-detection",
+    "llm-security",
+    "guardrail",
+    "deberta",
+    "text-classification",
+    "en",
+    "multilingual",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49999107,
+  "parameters_human": "50.0M",
+  "storage_bytes": 200020972,
+  "storage_human": "200 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

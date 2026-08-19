@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RobinY99/MR-IQA-2",
+  "slug": "robiny99-mr-iqa-2",
+  "author": "RobinY99",
+  "url": "https://huggingface.co/RobinY99/MR-IQA-2",
+  "created_at": "2026-08-10T06:29:23.000Z",
+  "updated_at": "2026-08-17T05:56:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-quality-assessment",
+    "vision-language",
+    "reinforcement-learning",
+    "image-editing",
+    "en",
+    "arxiv:2606.29760",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43248250879,
+  "storage_human": "43.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RobinY99/MR-IQA-2 · Hugging Face",
+      "url": "https://huggingface.co/RobinY99/MR-IQA-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - RobinY99/MR-IQA: This is the official repo. for MR-IQA: A ...",
+      "url": "https://github.com/RobinY99/MR-IQA",
+      "snippet": "This is the official repo. for MR-IQA: A Unified Margin View of Regression and Ranking for Blind Image Quality Assessment - RobinY99/MR-IQA"
+    },
+    {
+      "title": "MR-IQA/README.md at main · RobinY99/MR-IQA · GitHub",
+      "url": "https://github.com/RobinY99/MR-IQA/blob/main/README.md",
+      "snippet": "This is the official repo. for MR-IQA: A Unified Margin View of Regression and Ranking for Blind Image Quality Assessment - MR-IQA/README.md at main · RobinY99/MR-IQA"
+    },
+    {
+      "title": "MR-IQA: A Unified Margin View of Regression and Ranking for Blind Image ...",
+      "url": "https://arxiv.org/html/2606.29760v2",
+      "snippet": "Based on this view, we propose MR-IQA. Given a group of images, MR-IQA models the quality margin for every image pair within the group, suppressing the dataset-anchor interference inherited from regression, simplifying the ranking loss, and restoring the continuous distance information ignored by preference-only supervision."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=mr-iqa",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: mr-iqa Clear all"
+    }
+  ]
+}

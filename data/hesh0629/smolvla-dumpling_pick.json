@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hesh0629/smolvla-dumpling_pick",
+  "slug": "hesh0629-smolvla-dumpling_pick",
+  "author": "hesh0629",
+  "url": "https://huggingface.co/hesh0629/smolvla-dumpling_pick",
+  "created_at": "2026-08-18T00:12:00.000Z",
+  "updated_at": "2026-08-18T00:12:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:hesh0629/dumpling_pick_fixed",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720056,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hesh0629/smolvla-pick_bottle_v4 · Hugging Face",
+      "url": "https://huggingface.co/hesh0629/smolvla-pick_bottle_v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hesh0629/xvla-pick_sausage · Hugging Face",
+      "url": "https://huggingface.co/hesh0629/xvla-pick_sausage",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolVLA - LeRobot Documentation",
+      "url": "https://dctx-team.github.io/lerobot-zh/en/smolvla/",
+      "snippet": "SmolVLA SmolVLA is Hugging Face&#x27;s lightweight foundation model for robotics. Designed for easy fine-tuning on LeRobot datasets, it helps accelerate your development! Figure 1. SmolVLA takes as input (i) multiple cameras views, (ii) the robot&#x27;s current sensorimotor state, and (iii) a natural language instruction, encoded into contextual features used to condition the action expert when ..."
+    },
+    {
+      "title": "blog/smolvla.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/smolvla.md",
+      "snippet": "SmolVLA is not only a lightweight yet capable model, but also a method for training and evaluating generalist robotics policies. In this section, we introduce the model architecture behind SmolVLA and the asynchronous inference setup used for evaluation, which has proven to be more adaptable and capable of faster recovery."
+    },
+    {
+      "title": "GitHub - zyqdragon/lerobot_smolvla: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/zyqdragon/lerobot_smolvla",
+      "snippet": "The LeRobot team 🤗 for building SmolVLA Paper, Blog. Thanks to Tony Zhao, Zipeng Fu and colleagues for open sourcing ACT policy, ALOHA environments and datasets."
+    }
+  ]
+}

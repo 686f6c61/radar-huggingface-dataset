@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "goldenfox/marimo-0.6b-mlx",
+  "slug": "goldenfox-marimo-0-6b-mlx",
+  "author": "goldenfox",
+  "url": "https://huggingface.co/goldenfox/marimo-0.6b-mlx",
+  "created_at": "2026-08-14T23:24:23.000Z",
+  "updated_at": "2026-08-14T23:25:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3-mdlm-adaptive-hybrid",
+    "qwen3",
+    "diffusion",
+    "text-diffusion",
+    "chat",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557617,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

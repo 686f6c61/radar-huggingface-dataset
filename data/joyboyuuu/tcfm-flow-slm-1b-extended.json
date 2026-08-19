@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JoyBoyuuu/TCFM-Flow-SLM-1B-Extended",
+  "slug": "joyboyuuu-tcfm-flow-slm-1b-extended",
+  "author": "JoyBoyuuu",
+  "url": "https://huggingface.co/JoyBoyuuu/TCFM-Flow-SLM-1B-Extended",
+  "created_at": "2026-08-17T10:43:02.000Z",
+  "updated_at": "2026-08-17T10:43:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "speech-continuation",
+    "flow-matching",
+    "spoken-language-model",
+    "temporal-coupling",
+    "lora",
+    "audio-to-audio",
+    "en",
+    "dataset:openslr/librispeech_asr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JoyBoyuuu/RA-FM: Rollout Alignment for Flow-Based Speech ...",
+      "url": "https://github.com/JoyBoyuuu/RA-FM",
+      "snippet": "the Flow-SLM-1B-Extended checkpoint linked by the upstream project; LibriSpeech train-clean-100 and the evaluation splits expected by the manifest preparation scripts; Mimi and Hugging Face model caches populated before using offline cluster jobs; SALMon/ZeroSpeech assets only when reproducing semantic guardrails."
+    },
+    {
+      "title": "Flow-SLM: - jjery2243542.github.io",
+      "url": "https://jjery2243542.github.io/flowslm.github.io/",
+      "snippet": "We use Flow-SLM-1B-extend to generate demos. Prompts are randomly selected from LibriSpeech test-clean and test-other subsets. First 3 seconds of the ground truth are used as audio prompt to generate 10 seconds of speech. The comparison with AudioLM uses the same prompts and generation settings."
+    },
+    {
+      "title": "GitHub - jjery2243542/flow-slm",
+      "url": "https://github.com/jjery2243542/flow-slm",
+      "snippet": "Contribute to jjery2243542/flow-slm development by creating an account on GitHub."
+    },
+    {
+      "title": "Flow-SLM: Joint Learning of Linguistic and Acoustic Information for ...",
+      "url": "https://arxiv.org/html/2508.09350v3",
+      "snippet": "In this work, we propose to jointly model linguistic and acoustic information by generating semantic tokens and a continuous real-valued representation of the acoustic frame. We use a flow-matching objective to predict the continuous vector conditioned on the semantic tokens."
+    },
+    {
+      "title": "[2508.09350] Flow-SLM: Joint Learning of Linguistic and Acoustic ...",
+      "url": "https://arxiv.org/abs/2508.09350",
+      "snippet": "In this work, we propose to jointly model linguistic and acoustic information by generating semantic tokens and a continuous real-valued representation of the acoustic frame. We use a flow-matching objective to predict the continuous vector conditioned on the semantic tokens."
+    }
+  ]
+}

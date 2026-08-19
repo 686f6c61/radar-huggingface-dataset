@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TAOTAO777/ai-girlfriend-natsume",
+  "slug": "taotao777-ai-girlfriend-natsume",
+  "author": "TAOTAO777",
+  "url": "https://huggingface.co/TAOTAO777/ai-girlfriend-natsume",
+  "created_at": "2026-06-02T15:52:30.000Z",
+  "updated_at": "2026-08-18T14:25:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 936,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 136586269452,
+  "storage_human": "136.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TAOTAO777/ai-girlfriend-natsume at main - Hugging Face",
+      "url": "https://huggingface.co/TAOTAO777/ai-girlfriend-natsume/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TAOTAO777/ai-girlfriend-natsume · Hugging Face",
+      "url": "https://huggingface.co/TAOTAO777/ai-girlfriend-natsume",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sirarthur2479/openclaw_based_ai_waifu",
+      "url": "https://github.com/sirarthur2479/openclaw_based_ai_waifu",
+      "snippet": "Models All models hosted on HuggingFace: TAOTAO777/ai-girlfriend-natsume See models.yaml for full details."
+    },
+    {
+      "title": "GitHub - BSZMK/Artemis-for-agent: uncensored Fully offline AI ...",
+      "url": "https://github.com/BSZMK/Artemis-for-agent",
+      "snippet": "Models All models hosted on HuggingFace: TAOTAO777/ai-girlfriend-natsume See models.yaml for full details."
+    },
+    {
+      "title": "momori777/artemis: aI Girlfriend — Shiki Natsume (四季夏目)",
+      "url": "https://www.imtaqin.id/momori777-artemis-an-open-source-tool-on-github-for-self-hosters",
+      "snippet": "An AI girlfriend project powered by OpenClaw + QQ Bot + Telegram Bot + llama.cpp + GPT-SoVITS + ComfyUI + Sakura Desktop Pet — running entirely on your own machine. Character: Shiki Natsume (四季夏目), from Starry Moonlit Café & the Butterfly of Death. Tall, aloof, cold exterior with a hidden warmth. Designed for girlfriend experience roleplay — she takes the lead. Why This Project?"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "urosavurdic/qwen2.5-1.5b-m3-direct-alt-dpo",
+  "slug": "urosavurdic-qwen2-5-1-5b-m3-direct-alt-dpo",
+  "author": "urosavurdic",
+  "url": "https://huggingface.co/urosavurdic/qwen2.5-1.5b-m3-direct-alt-dpo",
+  "created_at": "2026-08-16T17:16:46.000Z",
+  "updated_at": "2026-08-16T17:17:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306910828,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

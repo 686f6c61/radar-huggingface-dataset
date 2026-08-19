@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "VibeCuisine/vibepi3-grab-act-aug-r3",
+  "slug": "vibecuisine-vibepi3-grab-act-aug-r3",
+  "author": "VibeCuisine",
+  "url": "https://huggingface.co/VibeCuisine/vibepi3-grab-act-aug-r3",
+  "created_at": "2026-08-18T05:08:59.000Z",
+  "updated_at": "2026-08-18T05:09:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "vibe-data-studio",
+    "hardware:vibeboard_v3",
+    "robotics",
+    "dataset:VibeCuisine/vibepi3-grab-poseexpert-r3-curated",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51609223,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206479436,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VibeCuisine/autorl-grab-act-vibepi-iter5-v1 · Hugging Face",
+      "url": "https://huggingface.co/VibeCuisine/autorl-grab-act-vibepi-iter5-v1",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "VibeCuisine/autorl-grab-act-vibepi-iter10-aug · Hugging Face",
+      "url": "https://huggingface.co/VibeCuisine/autorl-grab-act-vibepi-iter10-aug",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VibeCuisine/autoresearch-vibepi-000083-cucumber-grab · Datasets at ...",
+      "url": "https://huggingface.co/datasets/VibeCuisine/autoresearch-vibepi-000083-cucumber-grab",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "VibeCuisine — AI-Powered Food Prep",
+      "url": "https://www.vibecuisine.com/",
+      "snippet": "VibeBoard is the AI-powered robotic cutting board that handles the tedious parts of food prep. Peel, slice, dice, crush, and easy to clean."
+    }
+  ]
+}

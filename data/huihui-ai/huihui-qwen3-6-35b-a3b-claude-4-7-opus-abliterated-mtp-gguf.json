@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-MTP-GGUF",
+  "slug": "huihui-ai-huihui-qwen3-6-35b-a3b-claude-4-7-opus-abliterated-mtp-gguf",
+  "author": "huihui-ai",
+  "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-MTP-GGUF",
+  "created_at": "2026-05-19T16:01:21.000Z",
+  "updated_at": "2026-05-19T16:22:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "GGUF",
+    "MTP",
+    "image-text-to-text",
+    "base_model:lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled",
+    "base_model:quantized:lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 103,
+  "downloads_30d": 108129,
+  "trending_score": 8,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 216444625184,
+  "storage_human": "216.4 GB",
+  "base_model": "lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-MTP-GGUF",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui_ai/Qwen3.6-abliterated:35b-Claude-4.7 - ollama.com",
+      "url": "https://ollama.com/huihui_ai/Qwen3.6-abliterated:35b-Claude-4.7",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
+      "url": "https://dev.co/ai/llms/huihui-qwen3-6-35b-a3b-claude-4-7-opus-abliterated",
+      "snippet": "This is a 35.9B parameter mixture-of-experts model derived from Qwen 3.6, fine-tuned with Claude 4.7 reasoning distillation and then modified (&#x27;abliterated&#x27;) to remove safety filtering. The model card explicitly warns that safety guardrails have been significantly reduced and outputs may be sensitive, controversial, or inappropriate."
+    },
+    {
+      "title": "Huihui Qwen3.6 35B A3B Claude 4.7 Opus Abliterated",
+      "url": "https://llmrun.dev/model/huihui-ai-huihui-qwen3-6-35b-a3b-claude-4-7-opus-abliterated",
+      "snippet": "Chat Reasoning Huihui Qwen3.6 35B A3B Claude 4.7 Opus Abliterated is a 36.0B-parameter open language model from huihui-ai in the Qwen 3.6 family. It supports a context window of up to 262,144 tokens. At Q4_K_M it needs about 21.95 GB of VRAM — see which GPUs and Macs can run it below."
+    }
+  ]
+}

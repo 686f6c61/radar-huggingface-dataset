@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rahul7star/gemma-gguf",
+  "slug": "rahul7star-gemma-gguf",
+  "author": "rahul7star",
+  "url": "https://huggingface.co/rahul7star/gemma-gguf",
+  "created_at": "2026-05-14T01:13:12.000Z",
+  "updated_at": "2026-08-18T02:52:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dataset:rahul7star/gemma4-opus-reasoning-12k",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 146604,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 396758672544,
+  "storage_human": "396.8 GB",
+  "base_model": "google/gemma-4-E2B-it, google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rahul7star/gemma-gguf · Hugging Face",
+      "url": "https://huggingface.co/rahul7star/gemma-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rahul7star/gemma-gguf at main - Hugging Face",
+      "url": "https://huggingface.co/rahul7star/gemma-gguf/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rahul7star/gemma-gguf - LLMs .INFO",
+      "url": "https://llms.info/models/rahul7star-gemma-gguf-2026",
+      "snippet": "Hardware Fit Min RAM (GB) N/A Min VRAM (GB) N/A Parameter Count (B) N/A Quantisation Format N/A Editor support"
+    },
+    {
+      "title": "gemma-gguf by rahul7star (Unknown) - Run Locally - Ok Tech Masters",
+      "url": "https://oktechmasters.org/ai_models/gemma-gguf/",
+      "snippet": "Unknown open-weight model from rahul7star for local AI inference. Run gemma-gguf locally with Ollama: ollama pull gemma:latest Minimum 8GB RAM.…"
+    },
+    {
+      "title": "Gemma 7b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-7b.html",
+      "snippet": "Download Gemma 7b GGUF model. 4.13 GB, 41,350 downloads, 3394 likes."
+    }
+  ]
+}

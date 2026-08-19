@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "logic65/Qwen3.8-Whittle-tri-14.7B-chat",
+  "slug": "logic65-qwen3-8-whittle-tri-14-7b-chat",
+  "author": "logic65",
+  "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-tri-14.7B-chat",
+  "created_at": "2026-08-18T21:17:26.000Z",
+  "updated_at": "2026-08-18T21:23:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "research-preview",
+    "whittle",
+    "qwen3.5",
+    "conversational",
+    "base_model:logic65/Qwen3.8-Whittle-tri-14.7B",
+    "base_model:quantized:logic65/Qwen3.8-Whittle-tri-14.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14719400192,
+  "parameters_human": "14.72B",
+  "storage_bytes": 45113063885,
+  "storage_human": "45.1 GB",
+  "base_model": "logic65/Qwen3.8-Whittle-tri-14.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logic65/Qwen3.8-Whittle-tri-14.7B-chat · Hugging Face",
+      "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-tri-14.7B-chat",
+      "snippet": "Instructions to use logic65/Qwen3.8-Whittle-tri-14.7B-chat with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use logic65/Qwen3.8-Whittle-tri-14.7B-chat with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "logic65/Qwen3.8-Whittle-tri-14.7B at main - Hugging Face",
+      "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-tri-14.7B/tree/main",
+      "snippet": "How to use logic65/Qwen3.8-Whittle-tri-14.7B with Docker Model Runner: ... Lemonade How to use logic65/Qwen3.8-Whittle-tri-14.7B with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list Hermes Agent How to use logic65/Qwen3.8-Whittle-tri-14.7B with Hermes Agent: Start the llama.cpp server ..."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

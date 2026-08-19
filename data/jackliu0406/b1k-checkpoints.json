@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JackLiu0406/b1k-checkpoints",
+  "slug": "jackliu0406-b1k-checkpoints",
+  "author": "JackLiu0406",
+  "url": "https://huggingface.co/JackLiu0406/b1k-checkpoints",
+  "created_at": "2026-07-09T16:10:34.000Z",
+  "updated_at": "2026-08-17T06:12:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "behavior-1k",
+    "pi0.5",
+    "base_model:IliaLarchenko/behavior_50t_checkpoint",
+    "base_model:finetune:IliaLarchenko/behavior_50t_checkpoint",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3624652014361,
+  "storage_human": "3624.7 GB",
+  "base_model": "IliaLarchenko/behavior_50t_checkpoint",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackLiu0406/b1k-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/JackLiu0406/b1k-checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JackLiu0406/b1k-da3-pi05-code · Hugging Face",
+      "url": "https://huggingface.co/JackLiu0406/b1k-da3-pi05-code",
+      "snippet": "b1k-da3-pi05 migration bundle Transit bundle for migrating the BEHAVIOR-1K DA3/pi0.5 training pipeline from the Singapore H200 box to the Shanghai H200 box."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "behavior-1k-solution/src/b1k/training/checkpoints.py at main ... - GitHub",
+      "url": "https://github.com/IliaLarchenko/behavior-1k-solution/blob/main/src/b1k/training/checkpoints.py",
+      "snippet": "209 lines (167 loc) · 8.06 KB main behavior-1k-solution / src / b1k / training / checkpoints.py Code Blame 209 lines (167 loc) · 8.06 KB Raw 1 2 3 4 5 6 7 8 9 10 11 ..."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 ...",
+      "url": "https://github.com/black-forest-labs/flux",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    }
+  ]
+}

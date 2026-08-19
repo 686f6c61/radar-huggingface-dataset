@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jianyaoxi/qwen-lora-v7",
+  "slug": "jianyaoxi-qwen-lora-v7",
+  "author": "jianyaoxi",
+  "url": "https://huggingface.co/jianyaoxi/qwen-lora-v7",
+  "created_at": "2026-08-14T07:10:58.000Z",
+  "updated_at": "2026-08-14T07:15:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/data/model_base",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-VL-32B-Instruct-AWQ",
+    "base_model:adapter:Qwen/Qwen2.5-VL-32B-Instruct-AWQ",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 566130296,
+  "storage_human": "566 MB",
+  "base_model": "Qwen/Qwen2.5-VL-32B-Instruct-AWQ",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Top safe qwen models on CivitAI - CivArchive",
+      "url": "https://civarchive.com/tags/qwen",
+      "snippet": "Discover AI models tagged &#x27;qwen&#x27; - Download deleted LoRA, Checkpoint, and other AI models from CivArchive."
+    },
+    {
+      "title": "GitHub - Cx330v/Qwen-Image-Toolkit: A collection of essential nodes ...",
+      "url": "https://github.com/Cx330v/Qwen-Image-Toolkit",
+      "snippet": "A collection of essential nodes designed to seamlessly integrate Alibaba&#x27;s Qwen-Image model and its specific LoRA format into the ComfyUI workflow."
+    },
+    {
+      "title": "Technically Color Qwen - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/1969346?modelVersionId=2229062",
+      "snippet": "Download Technically Color Qwen - LORA for Qwen by renderartist. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Q-LoRA Fine-tuning | QwenLM/Qwen | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen/4.3-q-lora-fine-tuning",
+      "snippet": "Q-LoRA fine-tuning provides an efficient way to adapt Qwen models to specific tasks with limited computational resources. By using quantized models and low-rank adaptation, it enables fine-tuning of large language models on consumer hardware while maintaining good performance."
+    }
+  ]
+}

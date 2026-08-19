@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shikunpunk/MiniMind-YuHua-AR",
+  "slug": "shikunpunk-minimind-yuhua-ar",
+  "author": "shikunpunk",
+  "url": "https://huggingface.co/shikunpunk/MiniMind-YuHua-AR",
+  "created_at": "2026-08-18T10:51:07.000Z",
+  "updated_at": "2026-08-18T10:52:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimind",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137685441,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shikunpunk/MiniMind-GuCheng-AR · Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/MiniMind-GuCheng-AR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/models",
+      "snippet": "shikunpunk/poetry-judge-qwen2.5-1.5b-cn-neutral Text Generation • 2B•Updated 3 days ago• 16"
+    },
+    {
+      "title": "MiniMind - Train LLMs from Scratch - jingyaogong.github.io",
+      "url": "https://jingyaogong.github.io/minimind/",
+      "snippet": "MiniMind-V1-MoE model release Standardized minimind_tokenizer Removed mistral_tokenizer variants"
+    },
+    {
+      "title": "yuhua AI Models | Civitai",
+      "url": "https://civitai.com/tag/yuhua",
+      "snippet": "Browse 1 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with yuhua."
+    },
+    {
+      "title": "elszhang/minimind - Gitee",
+      "url": "https://gitee.com/elszhang/minimind",
+      "snippet": "MiniMind has also been extended to a visual model MiniMind-V, a multimodal Omni model MiniMind-O, a diffusion language model (MiniMind-dLM), and a linear attention model (MiniMind-Linear), See Discussion for details."
+    }
+  ]
+}

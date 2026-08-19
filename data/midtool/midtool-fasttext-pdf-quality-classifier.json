@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MidTool/MidTool-fasttext-pdf-quality-classifier",
+  "slug": "midtool-midtool-fasttext-pdf-quality-classifier",
+  "author": "MidTool",
+  "url": "https://huggingface.co/MidTool/MidTool-fasttext-pdf-quality-classifier",
+  "created_at": "2026-08-12T20:48:15.000Z",
+  "updated_at": "2026-08-18T00:54:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "fasttext",
+  "languages": [],
+  "tags": [
+    "fasttext",
+    "data-quality",
+    "data-filtering",
+    "pdf",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1041566549,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fastText",
+      "url": "https://fasttext.cc/",
+      "snippet": "FastText is an open-source, free, lightweight library that allows users to learn text representations and text classifiers. It works on standard, generic hardware."
+    },
+    {
+      "title": "mid - Premium AI instruction routing",
+      "url": "https://mid.hofcoral.com/",
+      "snippet": "mid generates project-specific AI instruction files from reusable standards, so agents load the right context without dragging a giant prompt into every task."
+    },
+    {
+      "title": "GitHub - facebookresearch/fastText: Library for fast text ...",
+      "url": "https://github.com/facebookresearch/fastText",
+      "snippet": "fastText fastText is a library for efficient learning of word representations and sentence classification."
+    },
+    {
+      "title": "llm-data-textbook-quality-fasttext-classifier-v2 - Hugging Face",
+      "url": "https://huggingface.co/kenhktsui/llm-data-textbook-quality-fasttext-classifier-v2",
+      "snippet": "A language model is only as good as its training data irrespective of its parameter count.\" 📚 The educational value classifier can classify if a text from web has high educational value (more explicitly defined then textbook quality)."
+    },
+    {
+      "title": "FastText - AI at Meta",
+      "url": "https://ai.meta.com/tools/fasttext/",
+      "snippet": "FastText is a lightweight library designed to help build scalable solutions for text representation and classification. It works on standard, generic hardware and can even fit on smartphones and small computers through functionality that reduces memory consumed by fastText models."
+    }
+  ]
+}

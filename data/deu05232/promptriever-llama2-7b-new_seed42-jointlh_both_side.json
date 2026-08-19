@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "deu05232/promptriever-llama2-7B-new_seed42-JointLH_both_side",
+  "slug": "deu05232-promptriever-llama2-7b-new_seed42-jointlh_both_side",
+  "author": "deu05232",
+  "url": "https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-JointLH_both_side",
+  "created_at": "2026-08-18T16:00:07.000Z",
+  "updated_at": "2026-08-18T16:03:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-2-7b-hf",
+    "base_model:adapter:meta-llama/Llama-2-7b-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14335514132,
+  "storage_human": "14.3 GB",
+  "base_model": "meta-llama/Llama-2-7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

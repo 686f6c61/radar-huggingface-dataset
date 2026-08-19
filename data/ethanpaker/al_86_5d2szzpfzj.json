@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ethanpaker/al_86_5d2szzpfzj",
+  "slug": "ethanpaker-al_86_5d2szzpfzj",
+  "author": "ethanpaker",
+  "url": "https://huggingface.co/ethanpaker/al_86_5d2szzpfzj",
+  "created_at": "2026-08-18T13:10:56.000Z",
+  "updated_at": "2026-08-18T13:13:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ethanpaker (Ethan) - Hugging Face",
+      "url": "https://huggingface.co/ethanpaker",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "ethanpaker (Ethan) - Hugging Face",
+      "url": "https://huggingface.co/ethanpaker/models",
+      "snippet": "ethanpaker&#x27;s models1 Sort: Recently updated ethanpaker/affine-5D8DVaTmQZfqKfGrm8JjnjsYosV9hAMFd3YLLXFLUDznUwS7 36B•Updated 2 days ago• 207"
+    },
+    {
+      "title": "Mak-P90 / ai-jailbreak-archive - GitHub",
+      "url": "https://github.com/Mak-P90/ai-jailbreak-archive",
+      "snippet": "Mak-P90 / ai-jailbreak-archive A curated archive of jailbreak prompts, prompt injections, and related techniques discovered across major AI models, including OpenAI, Gemini, Claude, Grok, and others. This repository documents prompt behavior and model responses for research, experimentation, and red-teaming purposes."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    }
+  ]
+}

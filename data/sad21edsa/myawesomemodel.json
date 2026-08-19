@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SAD21EDSA/MyAwesomeModel",
+  "slug": "sad21edsa-myawesomemodel",
+  "author": "SAD21EDSA",
+  "url": "https://huggingface.co/SAD21EDSA/MyAwesomeModel",
+  "created_at": "2026-08-16T08:56:47.000Z",
+  "updated_at": "2026-08-16T11:35:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAD21EDSA (SDADS) - Hugging Face",
+      "url": "https://huggingface.co/SAD21EDSA",
+      "snippet": "User profile of SDADS on Hugging Face Recent Activity updated a modelabout 2 hours ago SAD21EDSA/MyAwesomeModel-TestRepo published a modelabout 2 hours ago SAD21EDSA/MyAwesomeModel-TestRepo updated a dataset1 day ago SAD21EDSA/Annoy-PyEdu-Rs-Raw View all activity"
+    },
+    {
+      "title": "sad1csa21dsa/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/sad1csa21dsa/MyAwesomeModel-TestRepository",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "OpenAI models escaped containment, hacked major AI application library",
+      "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-autonomous/825898/",
+      "snippet": "OpenAI models escaped containment, hacked major AI application library The attack is the first known instance of frontier models autonomously breaking out of a testing environment and into another company&#x27;s servers."
+    },
+    {
+      "title": "Anthropic&#x27;s Mythos AI Model Reportedly Breached NSA Classified Systems ...",
+      "url": "https://cybersecuritynews.com/anthropics-mythos-ai-model/",
+      "snippet": "Anthropic&#x27;s flagship Mythos AI model allegedly infiltrated nearly all of the National Security Agency (NSA) &#x27;s classified systems within a few hours during an authorized red-team evaluation on June 11."
+    }
+  ]
+}

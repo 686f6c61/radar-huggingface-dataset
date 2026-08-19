@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "seed429/albedo-qwen3.6-35b-auto-u224-7e4c229b",
+  "slug": "seed429-albedo-qwen3-6-35b-auto-u224-7e4c229b",
+  "author": "seed429",
+  "url": "https://huggingface.co/seed429/albedo-qwen3.6-35b-auto-u224-7e4c229b",
+  "created_at": "2026-08-18T14:39:33.000Z",
+  "updated_at": "2026-08-18T14:39:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seed429/albedo-qwen3.6-35b-auto-u103-42a4ab9f · Hugging Face",
+      "url": "https://huggingface.co/seed429/albedo-qwen3.6-35b-auto-u103-42a4ab9f",
+      "snippet": "Instructions to use seed429/albedo-qwen3.6-35b-auto-u103-42a4ab9f with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "seed429/albedo-qwen3.6-35b-auto-u153-53817749 · Hugging Face",
+      "url": "https://huggingface.co/seed429/albedo-qwen3.6-35b-auto-u153-53817749",
+      "snippet": "seed429 / albedo-qwen3.6-35b-auto-u153-53817749 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 11 Safetensors Model size 36B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Introduction Qwen3.6 Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B (NVFP4) — Self-Hosted Inference via vLLM",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.6-35B-A3B-NVFP4-vLLM",
+      "snippet": "A production-ready vLLM deployment wrapper for Qwen3.6-35B-A3B — an NVIDIA-moixed-expert, NVIDIA-FP4-quantized version of Qwen3.6 with a 35B dense + 3B auxiliary expert architecture. This repo bundles a ready-to-run Docker container, a custom chat template, and start/stop scripts so you can spin up a fully OpenAI-compatible inference server in minutes."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B — vllm-ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/v0.18.0/tutorials/models/Qwen3.6-35B-A3B.html",
+      "snippet": "Qwen3.6-35B-A3B # Introduction # Qwen3.6-35B-A3B is a sparse MoE model in the Qwen3.6 family. It has 35B total parameters with about 3B activated per token, and uses the same hybrid attention architecture (GDN + full attention) as Qwen3.5. Deployment on vLLM Ascend follows the same pattern as other Qwen3.5-style MoE models."
+    }
+  ]
+}

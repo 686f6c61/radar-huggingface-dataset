@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Fatihaybasn/pathfinder-flan-t5-large-second-try-onnx-int8",
+  "slug": "fatihaybasn-pathfinder-flan-t5-large-second-try-onnx-int8",
+  "author": "Fatihaybasn",
+  "url": "https://huggingface.co/Fatihaybasn/pathfinder-flan-t5-large-second-try-onnx-int8",
+  "created_at": "2026-08-16T12:28:06.000Z",
+  "updated_at": "2026-08-16T13:25:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "optimum",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "optimum",
+    "onnx",
+    "t5",
+    "onnxruntime",
+    "int8",
+    "flan-t5",
+    "rag",
+    "chat",
+    "text-generation",
+    "en",
+    "base_model:google/flan-t5-large",
+    "base_model:quantized:google/flan-t5-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1245337100,
+  "storage_human": "1.2 GB",
+  "base_model": "google/flan-t5-large",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/flan-t5-large · Hugging Face",
+      "url": "https://huggingface.co/google/flan-t5-large",
+      "snippet": "Model Card for FLAN-T5 large Table of Contents TL;DR Model Details Usage Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors TL;DR If you already know T5, FLAN-T5 is just better at everything. For the same number of parameters, these models have been fine-tuned on more than 1000 additional tasks covering also more languages. As ..."
+    },
+    {
+      "title": "jncraton/flan-t5-large-ct2-int8 · Hugging Face",
+      "url": "https://huggingface.co/jncraton/flan-t5-large-ct2-int8",
+      "snippet": "Model Card for FLAN-T5 large Table of Contents TL;DR Model Details Usage Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors TL;DR If you already know T5, FLAN-T5 is just better at everything. For the same number of parameters, these models have been fine-tuned on more than 1000 additional tasks covering also more languages. As ..."
+    },
+    {
+      "title": "GitHub - Konnek-AI/flan-t5-large-ct2-int8",
+      "url": "https://github.com/Konnek-AI/flan-t5-large-ct2-int8",
+      "snippet": "The information below in this section are copied from the model&#x27;s official model card: Language models, including Flan-T5, can potentially be used for language generation in a harmful way, according to Rae et al. (2021)."
+    },
+    {
+      "title": "Flan-T5 Large — Files — Benchgen",
+      "url": "https://benchgen.com/models/google/flan-t5-large/files",
+      "snippet": "Browse the model files and weights for Flan-T5 Large on Benchgen — config, tokenizer, and artifacts."
+    },
+    {
+      "title": "GitHub - fatihaybsn/PathFinder-Ship: Intent-routed, local-first ...",
+      "url": "https://github.com/fatihaybsn/PathFinder-Ship",
+      "snippet": "PathFinder-Ship PathFinder‑Ship is a local‑first, intent‑routed multimodal assistant that runs fully on CPU and ties together ONNX Flan‑T5 Large (783M parameters) for instruction‑driven responses, a quantized MiniLM intent classifier for command vs. chat routing, a hybrid RAG engine (ChromaDB + SQLite FTS5/BM25) with score‑based web search gating, and a YOLO‑NAS vision pipeline ..."
+    }
+  ]
+}

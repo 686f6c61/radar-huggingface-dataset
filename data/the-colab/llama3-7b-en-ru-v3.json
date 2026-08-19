@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "The-CoLab/llama3-7b-en-ru-v3",
+  "slug": "the-colab-llama3-7b-en-ru-v3",
+  "author": "The-CoLab",
+  "url": "https://huggingface.co/The-CoLab/llama3-7b-en-ru-v3",
+  "created_at": "2026-08-18T15:28:05.000Z",
+  "updated_at": "2026-08-18T15:30:40.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "multilingual",
+    "pretraining",
+    "torchtitan",
+    "en",
+    "ru",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6291689472,
+  "parameters_human": "6.29B",
+  "storage_bytes": 12583408728,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The-CoLab/llama3-7b-en-translated-ru · Hugging Face",
+      "url": "https://huggingface.co/The-CoLab/llama3-7b-en-translated-ru",
+      "snippet": "The-CoLab / llama3-7b-en-translated-ru like 0 Follow CoLab Lab 4 Safetensors English Russian llama multilingual pretraining torchtitan License:llama3 Model card FilesFiles and versions xet Community Copy to bucket new llama3-7b-en-translated-ru Validation Results Evaluation Results Citation"
+    },
+    {
+      "title": "The-CoLab/llama3-7b-en-ru-aya · Hugging Face",
+      "url": "https://huggingface.co/The-CoLab/llama3-7b-en-ru-aya",
+      "snippet": "The-CoLab / llama3-7b-en-ru-aya like 0 Follow CoLab Lab 4 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 6B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Llama_3.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Sawera557/Llama_3_Colab/blob/main/Llama_3.ipynb/",
+      "snippet": "The 8B model is designed for faster training and edge devices, while the 70B model is designed for content creation, conversational AI, language understanding, research and development and enterprise applications. Meta has stated Llama 3 is demonstrating improved performance when compared to Llama 2 based on Meta&#x27;s internal testing."
+    },
+    {
+      "title": "GitHub - Sawera557/Llama_3_Colab: Testing Llama3 by Meta in Colab",
+      "url": "https://github.com/Sawera557/Llama_3_Colab",
+      "snippet": "The 8B model is designed for faster training and edge devices, while the 70B model is designed for content creation, conversational AI, language understanding, research and development and enterprise applications. Meta has stated Llama 3 is demonstrating improved performance when compared to Llama 2 based on Meta&#x27;s internal testing."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    }
+  ]
+}

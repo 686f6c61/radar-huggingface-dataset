@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mzao11/tumour-risk-model",
+  "slug": "mzao11-tumour-risk-model",
+  "author": "mzao11",
+  "url": "https://huggingface.co/mzao11/tumour-risk-model",
+  "created_at": "2026-08-17T19:34:38.000Z",
+  "updated_at": "2026-08-18T08:53:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 637653,
+  "storage_human": "637653 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial intelligence to predict cancer risk, are we there yet? A ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0959804925002217",
+      "snippet": "Cancer remains the second leading cause of death worldwide, representing a substantial challenge to global health. Although traditional risk prediction models have played a crucial role in epidemiology of several cancer types, they have limitations especially in the ability to process complex and multidimensional data. In contrast, artificial intelligence (AI) approaches represent a promising ..."
+    },
+    {
+      "title": "Predicting cancer risk using machine learning on lifestyle and ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-15656-8",
+      "snippet": "This study investigates the application of Machine Learning (ML) techniques to predict cancer risk based on a combination of genetic and lifestyle factors."
+    },
+    {
+      "title": "Multimodal data fusion AI model uncovers tumor microenvironment ...",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/mco2.70023",
+      "snippet": "Furthermore, we developed an AI-based model utilizing pathology data to predict the immune-metabolic subtypes of breast cancer. The delineation of immune subtypes in breast cancer linked to metabolic signatures holds promise for identifying potential candidates for immunotherapy."
+    },
+    {
+      "title": "GitHub - yala/Mirai: This repository was used to develop Mirai, the ...",
+      "url": "https://github.com/yala/Mirai",
+      "snippet": "Introduction This repository was used to develop Mirai, the risk model described in: Towards Robust Mammography-Based Models for Breast Cancer Risk. Mirai was designed to predict risk at multiple time points, leverage potentially missing risk-factor information, and produce predictions that are consistent across mammography machines."
+    },
+    {
+      "title": "Novel machine learning algorithm in risk prediction model for pan ...",
+      "url": "https://bmjoncology.bmj.com/content/3/1/e000087",
+      "snippet": "Conclusion We developed and internally validated the first machine-learning models based on routine health check-up data to predict pan-cancer risk in the general population and achieved generally good discriminatory ability with a small set of predictors. External validation is warranted before the implementation of our risk model in clinical practice."
+    }
+  ]
+}

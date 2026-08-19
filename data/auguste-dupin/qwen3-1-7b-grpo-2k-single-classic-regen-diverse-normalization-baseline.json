@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Auguste-Dupin/Qwen3-1.7B-GRPO-2k-single-classic-regen-diverse-normalization-baseline",
+  "slug": "auguste-dupin-qwen3-1-7b-grpo-2k-single-classic-regen-diverse-normalization-baseline",
+  "author": "Auguste-Dupin",
+  "url": "https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-2k-single-classic-regen-diverse-normalization-baseline",
+  "created_at": "2026-08-14T07:55:07.000Z",
+  "updated_at": "2026-08-14T07:55:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150935797,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Auguste-Dupin (Metin Abay) - Hugging Face",
+      "url": "https://huggingface.co/Auguste-Dupin",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 6 days ago ... published a model 6 days ago ... updated a model 14 days ago"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024). This flexibility ensures that developers and users ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research."
+    },
+    {
+      "title": "OWASP GenAI Exploit Round-up Report Q1 2026 - OWASP Gen AI Security Project",
+      "url": "https://genai.owasp.org/2026/04/14/owasp-genai-exploit-round-up-report-q1-2026/",
+      "snippet": "OWASP GenAI Exploit Round-up Report Q1 2026 Coverage period: January 1, 2026 through April 11, 2026 Overview For the last two years the OWASP GenAI Security Project published a list of the major incidents for the last quarter. This is not designed to be an exhaustive report. This report consolidates major AI-related security incidents and […]"
+    }
+  ]
+}

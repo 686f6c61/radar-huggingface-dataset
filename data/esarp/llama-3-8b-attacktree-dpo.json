@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ESarp/Llama-3-8B-AttackTree-DPO",
+  "slug": "esarp-llama-3-8b-attacktree-dpo",
+  "author": "ESarp",
+  "url": "https://huggingface.co/ESarp/Llama-3-8B-AttackTree-DPO",
+  "created_at": "2026-08-14T17:53:57.000Z",
+  "updated_at": "2026-08-14T20:20:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 342,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138322713,
+  "storage_human": "32.1 GB",
+  "base_model": "unsloth/llama-3-8b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta-Llama-3-8B - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SFR-Iterative-DPO-LLaMA-3-8B-R - Hugging Face",
+      "url": "https://huggingface.co/TriAiExperiments/SFR-Iterative-DPO-LLaMA-3-8B-R",
+      "snippet": "SFR-Iterative-DPO-LLaMA-3-8B-R is a research model developed as part of our RLHF initiative at Salesforce. While safety and ethical considerations are integral to our alignment process, there remains the possibility that the model could generate offensive or unethical content, particularly under adversarial conditions."
+    },
+    {
+      "title": "Prompt Injection Attacks on Large Language Models: A Survey of Attack ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221826001384",
+      "snippet": "Large language models (LLMs) have revolutionized AI applications across diverse domains. However, their widespread deployment has introduced critical security vulnerabilities, particularly prompt injection attacks that manipulate model behavior through malicious instructions. Following Kitchenham&#x27;s guidelines, this systematic review synthesizes 128 peer-reviewed studies from 2022 to 2025 to ..."
+    },
+    {
+      "title": "GitHub - requie/LLMSecurityGuide: A comprehensive reference for ...",
+      "url": "https://github.com/requie/LLMSecurityGuide",
+      "snippet": "A comprehensive reference for securing Large Language Models (LLMs). Covers OWASP GenAI Top-10 risks, prompt injection, adversarial attacks, real-world incidents, and practical defenses. Includes catalogs of red-teaming tools, guardrails, and mitigation strategies to help developers, researchers, and security teams deploy AI responsibly. - requie/LLMSecurityGuide"
+    },
+    {
+      "title": "LLM Security Database",
+      "url": "https://www.promptfoo.dev/lm-security-db",
+      "snippet": "Language Model Security Database Explore primary-source AI security research, evaluated models, attack techniques, and defensive evidence."
+    }
+  ]
+}

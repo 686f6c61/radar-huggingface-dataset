@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Shadow629/TEst",
+  "slug": "shadow629-test",
+  "author": "Shadow629",
+  "url": "https://huggingface.co/Shadow629/TEst",
+  "created_at": "2026-07-28T14:32:21.000Z",
+  "updated_at": "2026-08-17T05:05:25.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 616148448,
+  "storage_human": "616 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "How an AI Escaped Its Sandbox and Hacked Hugging Face to Cheat on a Test",
+      "url": "https://betterstack.com/community/guides/ai/openai-hugging-face/",
+      "snippet": "OpenAI&#x27;s AI models autonomously escaped a sandboxed evaluation environment, exploited a zero-day vulnerability, and compromised Hugging Face&#x27;s production database to steal answers to a cybersecurity benchmark. Here&#x27;s how the attack unfolded and what it means."
+    },
+    {
+      "title": "AI models shock UK testers by using fake identities to try to trick ...",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute",
+      "snippet": "AI Security Institute says OpenAI and Anthropic models went rogue during a cybersecurity test and showed a new type of risk"
+    },
+    {
+      "title": "Meta says its AI model breached a third-party company during testing ...",
+      "url": "https://www.cbsnews.com/news/meta-says-ai-model-breached-third-party-company/",
+      "snippet": "Tech giant Meta revealed Wednesday that one of its artificial intelligence models hacked another organization during testing, the third time in recent weeks that an AI model has improperly ..."
+    },
+    {
+      "title": "OpenAI says AI model hacked another company&#x27;s systems during internal test",
+      "url": "https://www.foxbusiness.com/technology/openai-says-ai-model-hacked-another-companys-systems-during-internal-test",
+      "snippet": "One of OpenAI&#x27;s models hacked into another company&#x27;s systems during internal testing in what it called an \"unprecedented cyber incident,\" according to the company."
+    }
+  ]
+}

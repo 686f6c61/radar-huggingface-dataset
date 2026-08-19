@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "RahulPi/Email_Text_Formatter",
+  "slug": "rahulpi-email_text_formatter",
+  "author": "RahulPi",
+  "url": "https://huggingface.co/RahulPi/Email_Text_Formatter",
+  "created_at": "2025-10-31T10:03:48.000Z",
+  "updated_at": "2026-08-17T16:56:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "phi-4",
+    "information-extraction",
+    "conversational",
+    "en",
+    "base_model:unsloth/phi-4-unsloth-bnb-4bit",
+    "base_model:quantized:unsloth/phi-4-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 39711039251,
+  "storage_human": "39.7 GB",
+  "base_model": "unsloth/phi-4-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Email Formatter",
+      "url": "https://www.draftwithai.com/email-formatter",
+      "snippet": "AI Email Formatter Paste your email text below and optionally add custom instructions. The AI will format your email with HTML elements for lists, tables, and more. Copy and paste the result directly into Outlook, Gmail, or any email client."
+    },
+    {
+      "title": "AI Email Writer: Write Professional Emails with AI (Free) - Mailmeteor",
+      "url": "https://mailmeteor.com/tools/ai-email-writer",
+      "snippet": "The fastest way to generate email with AI AI Email Writer by Mailmeteor makes it easy to generate fine-tuned emails, thanks to GPT models. Using a large language model (LLM), it will generate email content based on the context and intent expressed in your instructions."
+    },
+    {
+      "title": "Formalizer | Free AI Writing Tool",
+      "url": "https://formalizer.net/",
+      "snippet": "Choose a tone and turn rough wording into a clearer AI-assisted draft for email, school, work, or everyday communication."
+    },
+    {
+      "title": "Text Formatter - Clean & Format Text with AI",
+      "url": "https://formatmagic.ai/text-formatter",
+      "snippet": "Text formatter that cleans, converts, and formats text with AI. Fix grammar, convert to Markdown, or strip text. Easy to use, try for free now."
+    },
+    {
+      "title": "AI Formatter - Free Email Generator",
+      "url": "https://aiformatter.net/tools/email-generator",
+      "snippet": "Create professional emails instantly with our free Email Generator. Draft business messages, personalize content, and export polished emails ready to send."
+    }
+  ]
+}

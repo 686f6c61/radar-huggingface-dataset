@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Serkke/chuvash-translator",
+  "slug": "serkke-chuvash-translator",
+  "author": "Serkke",
+  "url": "https://huggingface.co/Serkke/chuvash-translator",
+  "created_at": "2026-08-15T08:50:01.000Z",
+  "updated_at": "2026-08-15T10:07:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "cv",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "chuvash",
+    "russian",
+    "translation",
+    "cv",
+    "ru",
+    "dataset:alexantonov/chuvash_russian_parallel",
+    "base_model:google/byt5-base",
+    "base_model:finetune:google/byt5-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 167,
+  "trending_score": 0,
+  "parameters": 581653248,
+  "parameters_human": "581.7M",
+  "storage_bytes": 2326643632,
+  "storage_human": "2.3 GB",
+  "base_model": "google/byt5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

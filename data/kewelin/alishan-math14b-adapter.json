@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kewelin/alishan-math14b-adapter",
+  "slug": "kewelin-alishan-math14b-adapter",
+  "author": "Kewelin",
+  "url": "https://huggingface.co/Kewelin/alishan-math14b-adapter",
+  "created_at": "2026-08-01T12:01:30.000Z",
+  "updated_at": "2026-08-17T21:38:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5150217974,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kewelin/alishan-math14b-adapter · Hugging Face",
+      "url": "https://huggingface.co/Kewelin/alishan-math14b-adapter",
+      "snippet": "Kewelin / alishan-math14b-adapter like 0 PEFT Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "alishan-math14b-adapter API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Kewelin/alishan-math14b-adapter",
+      "snippet": "Deploy alishan-math14b-adapter with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Kewelin/alishan-math14bv2-adapter at main - Hugging Face",
+      "url": "https://huggingface.co/Kewelin/alishan-math14bv2-adapter/tree/main",
+      "snippet": "Instructions to use Kewelin/alishan-math14bv2-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Kewelin/alishan-math14bv2-adapter with PEFT:"
+    },
+    {
+      "title": "alishan-math14bv2-adapter API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Kewelin/alishan-math14bv2-adapter",
+      "snippet": "Run alishan-math14bv2-adapter with FriendliAI inference. [More Information Needed]."
+    },
+    {
+      "title": "Kewelin/alishan-med8bv3-adapter · Hugging Face",
+      "url": "https://huggingface.co/Kewelin/alishan-med8bv3-adapter",
+      "snippet": "Kewelin / alishan-med8bv3-adapter like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

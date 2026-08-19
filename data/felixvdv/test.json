@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FelixVDV/Test",
+  "slug": "felixvdv-test",
+  "author": "FelixVDV",
+  "url": "https://huggingface.co/FelixVDV/Test",
+  "created_at": "2026-08-15T09:33:59.000Z",
+  "updated_at": "2026-08-15T09:33:59.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Test AI Models: A 7-Step Manual Validation Framework",
+      "url": "https://www.testscenario.com/ai-model-testing/",
+      "snippet": "Learn how to test AI models in real-world systems. This guide covers AI testing types, automated vs manual validation, bias checks, hallucination detection, and a practical 7-step framework."
+    },
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework - smartdev.com",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "Felix - Spec-Driven Vibe Coding with Guardrails",
+      "url": "https://felix-ide.github.io/felix/",
+      "snippet": "Spec-driven vibe coding with guardrails A shared workspace between you and your AI Chat with Claude Code naturally while Felix ensures complete specifications get written. Visualize code as mind maps and 3D graphs. Link architecture docs to components. Enforce workflow gates. Track everything with Gantt charts and Kanban boards."
+    },
+    {
+      "title": "AI Model Testing: Methods, Challenges & Best Practices",
+      "url": "https://testomat.io/blog/ai-model-testing/",
+      "snippet": "However, the advent of artificial intelligence has changed the way it is carried out. AI-model-based systems now automate a variety of tasks - test case generation, execution, and analysis, and achieve high speed and scale. To adopt AI-model testing, you need to effectively manage the massive amounts of data generated during the testing process."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "t-firefly/qwen3-8b-rknn3-rk1828",
+  "slug": "t-firefly-qwen3-8b-rknn3-rk1828",
+  "author": "t-firefly",
+  "url": "https://huggingface.co/t-firefly/qwen3-8b-rknn3-rk1828",
+  "created_at": "2026-08-06T09:33:42.000Z",
+  "updated_at": "2026-08-19T02:36:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "firefly",
+    "rockchip",
+    "rk1828",
+    "llamapi",
+    "edge-ai",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 128,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 5853305922,
+  "storage_human": "5.9 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t-firefly/qwen3-8b-rknn3-rk1828 · Hugging Face",
+      "url": "https://huggingface.co/t-firefly/qwen3-8b-rknn3-rk1828",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "t-firefly/qwen3-8b-rknn3-rk1828 at main - Hugging Face",
+      "url": "https://huggingface.co/t-firefly/qwen3-8b-rknn3-rk1828/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - airockchip/rknn3-toolkit",
+      "url": "https://github.com/airockchip/rknn3-toolkit",
+      "snippet": "Introduction RKNN3 SDK provides the complete software stack for deploying AI models on RK1820/RK1828/RK3572, including: RKNN3-Toolkit: PC-side software development kit for model conversion, inference, performance evaluation, etc."
+    },
+    {
+      "title": "RK1820/RK1828 — Firefly Wiki",
+      "url": "https://wiki.t-firefly.com/en/AIO-GS1N2-RK182X/ai_rk182x.html",
+      "snippet": "RK1820/RK1828 ¶ RK3588 Soc (Host) : As the core of the system, responsible for task scheduling, resource allocation, and overall control. RK1820/RK1828 Coprocessor (Device) : As an AI computing acceleration unit, we focus on high-performance neural network inference tasks. PCIe : Realize low latency and high bandwidth data exchange between the main control and co processors."
+    },
+    {
+      "title": "ROCKCHIP — Firefly Wiki",
+      "url": "https://wiki.t-firefly.com/en/AIBOX-PRO-3588/ai.html",
+      "snippet": "The co-processor RK1828 supports deployment of large models such as Qwen3-8B and Qwen2.5-VL-7B, enabling multi-channel video recognition, object detection and tracking, and visual development. One box meets all personalized AI deployment needs."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kdeng03/MolQwen3-VL-4B-Instruct-SFT-LoRA-Adapter",
+  "slug": "kdeng03-molqwen3-vl-4b-instruct-sft-lora-adapter",
+  "author": "kdeng03",
+  "url": "https://huggingface.co/kdeng03/MolQwen3-VL-4B-Instruct-SFT-LoRA-Adapter",
+  "created_at": "2026-08-16T07:20:13.000Z",
+  "updated_at": "2026-08-16T20:11:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "dataset:kdeng03/mol-rep-conversion-v1.1",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275813546,
+  "storage_human": "276 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kdeng03/Qwen3-VL-4B-Instruct-trl-sft · Hugging Face",
+      "url": "https://huggingface.co/kdeng03/Qwen3-VL-4B-Instruct-trl-sft",
+      "snippet": "This model is a fine-tuned version of Qwen/Qwen3-VL-4B-Instruct on the trl-lib/llava-instruct-mix dataset. It has been trained using TRL. Quick start ... Training procedure This model was trained with SFT. Framework versions TRL: 0.29.0 Transformers: 5.0.0 Pytorch: 2.10.0+cu128 Datasets: 4.0.0 Tokenizers: 0.22.2 Citations Cite TRL as:"
+    },
+    {
+      "title": "Qwen3-VL-4B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "Qwen3-VL-4B-Instruct Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

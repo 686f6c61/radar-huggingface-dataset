@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RUBRIC13/ai-detector-ensemble",
+  "slug": "rubric13-ai-detector-ensemble",
+  "author": "RUBRIC13",
+  "url": "https://huggingface.co/RUBRIC13/ai-detector-ensemble",
+  "created_at": "2026-08-18T23:23:56.000Z",
+  "updated_at": "2026-08-19T01:52:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IzzieNielsen/AI-Detector: Ensemble model utilizing a ...",
+      "url": "https://github.com/IzzieNielsen/AI-Detector",
+      "snippet": "AI Written Essay Detector Ensemble model containing the DeBERTa V3 Small NLP and SVM trained and tested on data from Human vs. AI Generated Essay Dataset. This model is in development for my Data Science Capstone course!"
+    },
+    {
+      "title": "zainmustafam977/ai-text-detector-ensemble - GitHub",
+      "url": "https://github.com/zainmustafam977/ai-text-detector-ensemble",
+      "snippet": "An ensemble AI text detector that uses RoBERTa, GPT-2 perplexity, and sentence burstiness to reliably distinguish human writing from AI-generated text. llm-text-detector. llm-detector-gradio."
+    },
+    {
+      "title": "How do I use IgniteAI Generator for Rubrics in an assignment?",
+      "url": "https://community.instructure.com/en/kb/articles/661105-how-do-i-use-igniteai-generator-for-rubrics-in-an-assignment",
+      "snippet": "This guide applies only to institutions that have enabled the IgniteAI Generator for Rubrics feature. If your user interface differs from what is shown, the feature is not enabled at your institution. As an instructor, the IgniteAI Generator for Rubrics allows you to generate editable rubrics with AI-suggested criteria, point values, and performance levels based on the assignment name and ..."
+    },
+    {
+      "title": "RiskRubric",
+      "url": "https://riskrubric.ai/",
+      "snippet": "A new Confidence Scoring model to provide greater transparency into assessment validation. RiskRubric will continue advancing evidence-based AI security assessments while expanding visibility into modern AI systems and infrastructures."
+    },
+    {
+      "title": "Rubric-Based Evaluation of AI-Generated Content - by Waseem",
+      "url": "https://theagileedge.substack.com/p/rubric-based-evaluation-of-ai-generated",
+      "snippet": "Why Use Rubrics for Evaluating AI Outputs? Why Use Rubrics for Evaluating AI Outputs? Traditional evaluation methods often fall short for complex AI-generated content. Many AI tasks have no single \"correct\" answer, making simple pass/fail checks or comparing to a golden dataset inadequate. Rubric-based evaluation fills this gap by providing granular, multi-dimensional feedback on model ..."
+    }
+  ]
+}

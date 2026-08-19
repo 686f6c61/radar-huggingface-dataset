@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Guangyan/HOST",
+  "slug": "guangyan-host",
+  "author": "Guangyan",
+  "url": "https://huggingface.co/Guangyan/HOST",
+  "created_at": "2026-08-17T11:31:25.000Z",
+  "updated_at": "2026-08-18T06:36:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "video-generation",
+    "diffusion",
+    "world-model",
+    "arxiv:2603.16666",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17027987184,
+  "storage_human": "17.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guangyan (Guangyan Chen) - Hugging Face",
+      "url": "https://huggingface.co/Guangyan/models",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper about 1 month ago ... upvoted a paper 5 months ago"
+    },
+    {
+      "title": "Guangyan (Guangyan Chen) - Hugging Face",
+      "url": "https://huggingface.co/Guangyan",
+      "snippet": "Recent Activity upvoted a paper 3 days ago WALL-WM: Carving World Action Modeling at the Event Joints upvoted a paper 4 months ago RLinf-USER: A Unified and Extensible System for Real-World Online Policy Learning in Embodied AI View all activity"
+    },
+    {
+      "title": "GuangyanCai (Guangyan Cai) · GitHub",
+      "url": "https://github.com/GuangyanCai",
+      "snippet": "A graph representing GuangyanCai&#x27;s contributions from August 10, 2025 to August 16, 2026. The contributions are 89% commits, 8% pull requests, 3% code review, 0% issues."
+    },
+    {
+      "title": "‪guangyan li‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=3UPchpQAAAAJ&hl=en",
+      "snippet": "‪UCAS‬ - ‪‪Cited by 29‬‬ - ‪AI‬ 0 18 9 20242025202611711 Follow guangyan li UCAS Verified email at ia.ac.cn AI Articles Cited by"
+    },
+    {
+      "title": "GuangyanS (Guangyan Sun) · GitHub",
+      "url": "https://github.com/GuangyanS",
+      "snippet": "I&#x27;m Guangyan Sun, a PhD student at University of Minnesota. 👋 You can call me Guangyan or George or Georgie. 🌏 Mainly use English 🇬🇧 and Chinese 🇨🇳. Knows a little bit Japanese. Interseted in 🎾. 💬 Feel free to ask or chat with me about anything."
+    }
+  ]
+}

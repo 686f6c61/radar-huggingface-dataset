@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mamiyusufdemi/apex.flash.1.6",
+  "slug": "mamiyusufdemi-apex-flash-1-6",
+  "author": "mamiyusufdemi",
+  "url": "https://huggingface.co/mamiyusufdemi/apex.flash.1.6",
+  "created_at": "2026-08-14T16:12:46.000Z",
+  "updated_at": "2026-08-14T16:12:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17209920,
+  "storage_human": "17 MB",
+  "base_model": "unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

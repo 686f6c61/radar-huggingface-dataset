@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "geceff/Wan2.2-Custom-Models-GGUF",
+  "slug": "geceff-wan2-2-custom-models-gguf",
+  "author": "geceff",
+  "url": "https://huggingface.co/geceff/Wan2.2-Custom-Models-GGUF",
+  "created_at": "2026-06-03T14:59:59.000Z",
+  "updated_at": "2026-08-15T05:35:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "th"
+  ],
+  "tags": [
+    "gguf",
+    "image-to-video",
+    "wan2.2",
+    "comfyui",
+    "GGUF",
+    "en",
+    "zh",
+    "th",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 6035,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 496942761807,
+  "storage_human": "496.9 GB",
+  "base_model": "text-to-video-synthesis",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

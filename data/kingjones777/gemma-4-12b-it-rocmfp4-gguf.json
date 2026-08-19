@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Gemma-4-12B-it-ROCmFP4-GGUF",
+  "slug": "kingjones777-gemma-4-12b-it-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Gemma-4-12B-it-ROCmFP4-GGUF",
+  "created_at": "2026-08-17T20:32:24.000Z",
+  "updated_at": "2026-08-17T21:43:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocm",
+    "rocmfp4",
+    "amd",
+    "strix-halo",
+    "gfx1151",
+    "gemma4",
+    "llama.cpp",
+    "image-text-to-text",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 50310935328,
+  "storage_human": "50.3 GB",
+  "base_model": "google/gemma-4-12b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFP4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFP4-GGUF",
+      "snippet": "A 4-bit ROCmFP4 quantization of JetBrains/Mellum2-12B-A2.5B-Instruct, built for AMD gfx1151 (Ryzen AI MAX+ 395 / Strix Halo), with the LM head and token embeddings held at Q6_K."
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Bringing Gemma 4 12B to your Laptop: Unlocking Local, Agentic Workflows ...",
+      "url": "https://developers.googleblog.com/bringing-gemma-4-12b-to-your-laptop-unlocking-local-agentic-workflows-with-google-ai-edge/",
+      "snippet": "Google DeepMind&#x27;s Gemma 4 12B model brings agentic, multimodal AI capabilities to everyday laptops with 16GB of RAM, enabling local data processing and visual insight generation. Users can leverage this model on macOS through the Google AI Edge Gallery for dynamic Python code execution and visualization, as well as via Google AI Edge Eloquent for completely offline voice dictation and text ..."
+    },
+    {
+      "title": "How to Run Gemma4-12B-Coder Locally: A 12B Coding Model That Fits in 4.5 GB",
+      "url": "https://vinoth12940.github.io/blog/articles/genai-20260616-gemma4-coder-local/",
+      "snippet": "Most people assume a useful coding model needs a 24 GB GPU and a fat electricity bill. Then something like yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF shows up — a 12-billion-parameter model distilled from real, execution-verified chain-of-thought, with a 256K context window, and a 2-bit quant that fits in 4.5 GB. You can run the whole thing on a cheap laptop with integrated ..."
+    }
+  ]
+}

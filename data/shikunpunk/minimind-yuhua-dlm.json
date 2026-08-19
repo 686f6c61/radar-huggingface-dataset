@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shikunpunk/MiniMind-YuHua-dLM",
+  "slug": "shikunpunk-minimind-yuhua-dlm",
+  "author": "shikunpunk",
+  "url": "https://huggingface.co/shikunpunk/MiniMind-YuHua-dLM",
+  "created_at": "2026-08-18T13:18:01.000Z",
+  "updated_at": "2026-08-18T13:20:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimind_dllm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275370527,
+  "storage_human": "275 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/models",
+      "snippet": "shikunpunk/poetry-judge-qwen2.5-1.5b-cn-neutral Text Generation • 2B•Updated 3 days ago• 16"
+    },
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk",
+      "snippet": "shikunpunk/poetry-judge-qwen2.5-1.5b-cn Text Generation • 2B•Updated 3 days ago datasets4"
+    },
+    {
+      "title": "GitHub - jingyaogong/minimind: 「大模型」2小时完全从0训练64M的小参数LLM!Train a 64M ...",
+      "url": "https://github.com/jingyaogong/minimind",
+      "snippet": "MiniMind 同时拓展了视觉模态模型 MiniMind-V 、多模态 Omni 模型 MiniMind-O 、扩散语言模型（MiniMind-dLM）、线性模型（MiniMind-Linear），详见 Discussion。 项目所有核心算法代码均从 0 使用 PyTorch 原生实现，不依赖第三方库提供的高层抽象接口。"
+    },
+    {
+      "title": "minimind/README_en.md at master · jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind/blob/master/README_en.md",
+      "snippet": "MiniMind has also been extended to a vision model MiniMind-V, a multimodal Omni model MiniMind-O, a diffusion language model (MiniMind-dLM), and a linear attention model (MiniMind-Linear). See Discussion for details. All core algorithms are implemented directly in native PyTorch, without relying on high-level abstractions from third-party ..."
+    },
+    {
+      "title": "elszhang/minimind - Gitee",
+      "url": "https://gitee.com/elszhang/minimind",
+      "snippet": "MiniMind has also been extended to a visual model MiniMind-V, a multimodal Omni model MiniMind-O, a diffusion language model (MiniMind-dLM), and a linear attention model (MiniMind-Linear), See Discussion for details."
+    }
+  ]
+}

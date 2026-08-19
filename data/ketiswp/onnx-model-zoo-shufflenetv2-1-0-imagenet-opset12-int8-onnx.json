@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/onnx-model-zoo-ShuffleNetV2-1.0-ImageNet-opset12-int8-onnx",
+  "slug": "ketiswp-onnx-model-zoo-shufflenetv2-1-0-imagenet-opset12-int8-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/onnx-model-zoo-ShuffleNetV2-1.0-ImageNet-opset12-int8-onnx",
+  "created_at": "2026-08-19T01:58:31.000Z",
+  "updated_at": "2026-08-19T02:11:33.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int8",
+    "image-classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2388912,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "onnxmodelzoo/shufflenet-v2-12 · Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo/shufflenet-v2-12",
+      "snippet": "ONNX ShuffleNet-v2 ==> Quantized ONNX ShuffleNet-v2 ONNX ShuffleNet-v2 ==> Quantized ONNX ShuffleNet-v2 Model ... Inference This script converts the ShuffleNetv2 model from PyTorch to ONNX and uses ONNX Runtime for inference. Input to model Input to the model are 3-channel RGB images of shape (3 x H x W), where H and W are expected to be at ..."
+    },
+    {
+      "title": "onnxmodelzoo/shufflenet-v2-12 at main - Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo/shufflenet-v2-12/tree/main",
+      "snippet": "onnxmodelzoo / shufflenet-v2-12 like 0 Follow ONNX Model Zoo 68 ONNX English validated vision classification shufflenet arxiv:1807.11164 arxiv:1707.01083 License:apache-2.0 Model card FilesFiles and versions xet Community main shufflenet-v2-12 9.23 MB 1 contributor History:3 commits jemartin Move shufflenet-v2-12.onnx from legacy_models dfb7b19 verified2 months ago .gitattributes Safe 1.52 ..."
+    },
+    {
+      "title": "onnx_models_zoo/vision/classification/shufflenet at main - GitHub",
+      "url": "https://github.com/samuelpietri/onnx_models_zoo/tree/main/vision/classification/shufflenet",
+      "snippet": "We use onnxruntime to perform ShuffleNetv2_fp32 and ShuffleNetv2_int8 inference. View the notebook onnxrt_inference to understand how to use these 2 models for doing inference as well as which preprocess and postprocess we use."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    }
+  ]
+}

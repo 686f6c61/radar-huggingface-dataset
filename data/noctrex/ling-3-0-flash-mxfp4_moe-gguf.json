@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "noctrex/Ling-3.0-flash-MXFP4_MOE-GGUF",
+  "slug": "noctrex-ling-3-0-flash-mxfp4_moe-gguf",
+  "author": "noctrex",
+  "url": "https://huggingface.co/noctrex/Ling-3.0-flash-MXFP4_MOE-GGUF",
+  "created_at": "2026-08-17T20:35:44.000Z",
+  "updated_at": "2026-08-17T20:40:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 70814172832,
+  "storage_human": "70.8 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "noctrex/Ling-3.0-tiny-MXFP4_MOE-GGUF · Hugging Face",
+      "url": "https://huggingface.co/noctrex/Ling-3.0-tiny-MXFP4_MOE-GGUF",
+      "snippet": "Instructions to use noctrex/Ling-3.-tiny-MXFP4_MOE-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use noctrex/Ling-3.-tiny-MXFP4_MOE-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling Ling is a general-purpose large language model series independently developed and open-sourced by Ant Group. Built on the MoE (Mixture of Experts) architecture, it has been validated on domestic heterogeneous computing platforms, achieved breakthrough at the trillion-parameter scale, and continues to evolve with long context modeling and AI Agent collaborative reasoning capabilities."
+    },
+    {
+      "title": "GitHub - inclusionAI/Ling: Ling is a MoE LLM provided and open-sourced ...",
+      "url": "https://github.com/inclusionAI/Ling",
+      "snippet": "Ling is a MoE LLM provided and open-sourced by InclusionAI. We introduce two different sizes, which are Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters with 2.75 billion activated parameters, while Ling-plus has 290 billion parameters with 28.8 billion activated parameters. Both models demonstrate impressive performance compared to existing models in the industry. Their ..."
+    },
+    {
+      "title": "Ling-3.0 Flash: How InclusionAI Used KDA + MLA Hybrid-Linear Attention ...",
+      "url": "https://www.aimodeling.com/en/news/slug/inclusionai-ling-3-flash-hybrid-linear-moe-agent",
+      "snippet": "Ling-3.0 Flash: How InclusionAI Used KDA + MLA Hybrid-Linear Attention and 1/64 Sparse MoE to Make a 124B/5.1B Agent-Grade Flash Model On August 2, 2026, InclusionAI — the open-science AGI lab founded by Ant Group — released the next-generation native hybrid reasoning model Ling-3.0 Flash on Hugging Face. The story is not \"another larger-parameter MoE,\" but rather a set of aggressive ..."
+    },
+    {
+      "title": "Ling-3.0-Flash — Pricing, Benchmarks & Specs | AI Model Directory",
+      "url": "https://www.swfte.com/ai/models/antgroup-ling-3-0-flash",
+      "snippet": "Ling-3.0-Flash is a open-source AI model by Ant Group, released on August 5, 2026. It supports a context window of 256 K tokens and can generate up to 16 K output tokens."
+    }
+  ]
+}

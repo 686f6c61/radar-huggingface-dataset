@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "endless-frontier/BigBang-v1",
+  "slug": "endless-frontier-bigbang-v1",
+  "author": "endless-frontier",
+  "url": "https://huggingface.co/endless-frontier/BigBang-v1",
+  "created_at": "2026-08-02T12:14:20.000Z",
+  "updated_at": "2026-08-06T10:54:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 207,
+  "downloads_30d": 15895,
+  "trending_score": 35,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71919236359,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "endless-frontier/BigBang-v1 · Hugging Face",
+      "url": "https://huggingface.co/endless-frontier/BigBang-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BigBang — Pursuing Open-Ended Intelligence through Self-Evolving ...",
+      "url": "https://endlessfrontier.tech/",
+      "snippet": "BigBang is a general-purpose large language model evolved from Qwen3.6-35B-A3B through efficient post-training, driven by an adversarial, self-evolving synthetic data framework grounded in verifiable frontier research tasks. BigBang reaches aggregate performance between DeepSeek V4 Flash (284B) and DeepSeek V4 Pro (1.6T)."
+    },
+    {
+      "title": "GitHub - endless-frontier/BigBang-v1",
+      "url": "https://github.com/endless-frontier/BigBang-v1/tree/main",
+      "snippet": "BigBang-v1 is a 35B-A3B agentic model built on Qwen3.6-35B-A3B, with 35B total parameters and 3B parameters activated during inference. We evaluate it on long-horizon search, coding, scientific research, and AI research. We release the reported results, a lightweight general-agent harness with search, visit, and code_exec, and download support for the official SWE-Bench Pro and SciCode ..."
+    },
+    {
+      "title": "endless-frontier/BigBang-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/endless-frontier/BigBang-v1/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BigBang V1 by endless-frontier — VRAM 71.5GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/endless-frontier%2FBigBang-v1,2Ijsdl8j15GjCEzFATqfSf",
+      "snippet": "BigBang V1 is an open-source 35b LLM by endless-frontier. VRAM 71.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

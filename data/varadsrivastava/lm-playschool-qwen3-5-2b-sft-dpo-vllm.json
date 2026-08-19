@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "varadsrivastava/lm-playschool-qwen3.5-2b-sft-dpo-vllm",
+  "slug": "varadsrivastava-lm-playschool-qwen3-5-2b-sft-dpo-vllm",
+  "author": "varadsrivastava",
+  "url": "https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-sft-dpo-vllm",
+  "created_at": "2026-07-11T13:36:08.000Z",
+  "updated_at": "2026-08-16T21:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "trl",
+    "dpo",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 382,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4451770264,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

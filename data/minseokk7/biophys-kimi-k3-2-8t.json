@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "minseokk7/BioPhys-Kimi-K3-2.8T",
+  "slug": "minseokk7-biophys-kimi-k3-2-8t",
+  "author": "minseokk7",
+  "url": "https://huggingface.co/minseokk7/BioPhys-Kimi-K3-2.8T",
+  "created_at": "2026-08-17T18:03:26.000Z",
+  "updated_at": "2026-08-17T18:05:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "biophys",
+    "biophysics",
+    "quantum-computing",
+    "fractal-compression",
+    "speculative-decoding",
+    "1bit-llm",
+    "kimi-k3",
+    "deepseek-v4",
+    "gemma4",
+    "qwen2.5",
+    "ultra-efficient",
+    "text-generation",
+    "ko",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:48.753Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Meet Kimi K3, a 2.8T-parameter model with native vision and a 1M context window. Create playable games, polished slides, interactive reports, and more."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Kimi K3 is the first open-source model to reach 2.8 trillion parameters. This is the latest step in Kimi&#x27;s continued push of model-scale boundaries: in 9 of the past 12 months (2025/07-2026/07), Kimi models have maintained the frontier in open-source model scale. Kimi K3 is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes)."
+    },
+    {
+      "title": "Kimi K3 - openlm.ai",
+      "url": "https://openlm.ai/kimi-k3/",
+      "snippet": "We introduce Kimi K3 — our most capable model. Kimi K3 is a 2.8T-parameter model built on our Kimi Delta Attention and Attention Residuals, with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and reasoning."
+    },
+    {
+      "title": "Kimi K3: The Complete Guide to Moonshot AI&#x27;s 2.8T Model",
+      "url": "https://amplifilabs.com/post/kimi-k3-the-complete-guide-to-moonshot-ais-2-8t-model",
+      "snippet": "Kimi K3 is a 2.8-trillion-parameter open-weight model from Moonshot AI, released on July 16, 2026. Moonshot describes it as the world&#x27;s first \"open 3T-class\" model: a system large enough to compete with the best proprietary models on the market while still shipping its weights publicly."
+    },
+    {
+      "title": "Kimi K3: 2.8T Model — Benchmarks, Pricing & Free Credits",
+      "url": "https://k3-kimi.com/",
+      "snippet": "Kimi K3 is Moonshot AI&#x27;s 2.8T open model with 1M context. See benchmarks vs GPT-5.6 & Claude, pricing, and claim free membership credits."
+    }
+  ]
+}

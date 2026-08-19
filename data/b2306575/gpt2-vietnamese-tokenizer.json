@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "B2306575/gpt2-vietnamese-tokenizer",
+  "slug": "b2306575-gpt2-vietnamese-tokenizer",
+  "author": "B2306575",
+  "url": "https://huggingface.co/B2306575/gpt2-vietnamese-tokenizer",
+  "created_at": "2026-08-14T05:14:56.000Z",
+  "updated_at": "2026-08-14T05:14:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NlpHUST/gpt2-vietnamese · Hugging Face",
+      "url": "https://huggingface.co/NlpHUST/gpt2-vietnamese",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "minhtoan/gpt2-vietnamese · Hugging Face",
+      "url": "https://huggingface.co/minhtoan/gpt2-vietnamese",
+      "snippet": "GPT-2, a language pretrained model with a causal language modeling (CLM) goal, is a transformer-based language model. This model was pre-trained and used to generate text on the Vietnamese Wikilingua dataset."
+    },
+    {
+      "title": "vietnamese-gpt2/artifacts/tokenizer at main · duongtruongbinh ... - GitHub",
+      "url": "https://github.com/duongtruongbinh/vietnamese-gpt2/tree/main/artifacts/tokenizer",
+      "snippet": "A clean, reproducible pipeline for training Vietnamese GPT-2 from scratch and adapting it to 5-word quatrain poetry generation. - vietnamese-gpt2/artifacts/tokenizer ..."
+    },
+    {
+      "title": "NlpHUST/gpt2-vietnamese - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/44484",
+      "snippet": "The model was trained on Vietnamese Oscar dataset (32 GB) to optimize a traditional language modelling objective on v3-8 TPU for around 6 days. It reaches around 13.4 perplexity on a chosen validation set from Oscar."
+    },
+    {
+      "title": "minhtoan/gpt2-vietnamese - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/131400",
+      "snippet": "GPT-2, a language pretrained model with a causal language modeling (CLM) goal, is a transformer-based language model. This model was pre-trained and used to generate text on the Vietnamese Wikilingua dataset."
+    }
+  ]
+}

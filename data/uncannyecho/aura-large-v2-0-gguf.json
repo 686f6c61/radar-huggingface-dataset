@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "UncannyEcho/Aura-Large-v2.0-GGUF",
+  "slug": "uncannyecho-aura-large-v2-0-gguf",
+  "author": "UncannyEcho",
+  "url": "https://huggingface.co/UncannyEcho/Aura-Large-v2.0-GGUF",
+  "created_at": "2026-08-15T21:53:59.000Z",
+  "updated_at": "2026-08-16T09:39:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_8",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "dataset:UncannyEcho/AuraAblation",
+    "dataset:UncannyEcho/AuraPersonality",
+    "base_model:UncannyEcho/Aura-Large-v2.0-BF16",
+    "base_model:quantized:UncannyEcho/Aura-Large-v2.0-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 254,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 156914117120,
+  "storage_human": "156.9 GB",
+  "base_model": "UncannyEcho/Aura-Large-v2.0-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

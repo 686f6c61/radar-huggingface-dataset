@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Kijai/MiniMax-H3-experimental",
+  "slug": "kijai-minimax-h3-experimental",
+  "author": "Kijai",
+  "url": "https://huggingface.co/Kijai/MiniMax-H3-experimental",
+  "created_at": "2026-08-05T07:58:56.000Z",
+  "updated_at": "2026-08-08T13:32:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 242,
+  "downloads_30d": 0,
+  "trending_score": 45,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30060873504,
+  "storage_human": "30.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kijai/MiniMax-H3-experimental · Hugging Face",
+      "url": "https://huggingface.co/Kijai/MiniMax-H3-experimental",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kijai/MiniMax-H3-experimental at main - Hugging Face",
+      "url": "https://huggingface.co/Kijai/MiniMax-H3-experimental/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 w4a8: Kijai&#x27;s Experimental 4-Bit Weights Land in ComfyUI",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-05-kijai-minimax-h3-w4a8",
+      "snippet": "Kijai publishes experimental w4a8 quantized MiniMax H3 weights (12.5 GB FL2VA) with an int8 convrot VAE. ComfyUI core support merged in PR #15308."
+    },
+    {
+      "title": "MiniMax H3 Model Reference | ai-models-lab/minimax-h3 | DeepWiki",
+      "url": "https://deepwiki.com/ai-models-lab/minimax-h3/4-minimax-h3-model-reference",
+      "snippet": "MiniMax H3 is a state-of-the-art native multi-modal model capable of generating 2K AI video with synchronized 3D stereo audio in a single inference pass README.md 3 Architecture Overview The MiniMax H3 architecture deviates from traditional video-only models by employing a joint diffusion process."
+    }
+  ]
+}

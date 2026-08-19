@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "quangtm08/nous-tts",
+  "slug": "quangtm08-nous-tts",
+  "author": "quangtm08",
+  "url": "https://huggingface.co/quangtm08/nous-tts",
+  "created_at": "2026-08-17T20:41:01.000Z",
+  "updated_at": "2026-08-17T21:07:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 410842354,
+  "storage_human": "411 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 5 days ago • 3.42k • 115"
+    },
+    {
+      "title": "TTS.ai - Free AI Voice Platform | Text to Speech, Voice Cloning, Speech ...",
+      "url": "https://tts.ai/",
+      "snippet": "TTS.ai is the most comprehensive AI voice platform with 35+ TTS models, voice cloning, speech-to-text, and audio tools. Free text to speech online powered by open-source AI. No vendor lock-in."
+    },
+    {
+      "title": "Free AI Text to Speech Online - 35+ Models, 100+ Voices | TTS.ai",
+      "url": "https://tts.ai/text-to-speech/",
+      "snippet": "Convert text to natural speech with 35+ AI models including Kokoro, Chatterbox, Bark, CosyVoice 2, and more. Free online TTS with voice cloning support."
+    },
+    {
+      "title": "The Best Open-Source Text-to-Speech Models in 2026",
+      "url": "https://bentoml.com/blog/exploring-the-world-of-open-source-text-to-speech-models",
+      "snippet": "Chatterbox is a family of high-performance, open-source TTS models developed by Resemble AI for low-latency, production-grade voice applications. The newest model in the lineup Chatterbox-Turbo uses a streamlined 350M-parameter architecture that significantly lowers compute and VRAM requirements while maintaining high-fidelity audio output."
+    },
+    {
+      "title": "Voice & TTS | Hermes Agent",
+      "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/tts/",
+      "snippet": "The rewrite uses auxiliary.tts_audio_tags and defaults to your main chat model. Override that auxiliary task if you want tag insertion handled by a cheaper or faster model. Language (OpenAI-compatible endpoints): tts.openai.language is forwarded to the endpoint as a lang_code request parameter."
+    }
+  ]
+}

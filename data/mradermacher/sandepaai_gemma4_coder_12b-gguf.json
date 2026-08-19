@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/sandepaAI_gemma4_coder_12b-GGUF",
+  "slug": "mradermacher-sandepaai_gemma4_coder_12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/sandepaAI_gemma4_coder_12b-GGUF",
+  "created_at": "2026-08-14T06:00:12.000Z",
+  "updated_at": "2026-08-14T08:12:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "lora",
+    "en",
+    "base_model:sandepaAI/sandepaAI_gemma4_coder_12b",
+    "base_model:adapter:sandepaAI/sandepaAI_gemma4_coder_12b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1016,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 83449086496,
+  "storage_human": "83.4 GB",
+  "base_model": "sandepaAI/sandepaAI_gemma4_coder_12b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4-12B-coder-fable5-composer2.5-v1-bf16-i1-GGUF",
+      "url": "https://huggingface.co/mradermacher/gemma-4-12B-coder-fable5-composer2.5-v1-bf16-i1-GGUF/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-4-12B-it-abliterated-uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-12B-it-abliterated-uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "How to Run Gemma4-12B-Coder Locally: A 12B Coding Model That Fits in 4.5 GB",
+      "url": "https://vinoth12940.github.io/blog/articles/genai-20260616-gemma4-coder-local/",
+      "snippet": "Most people assume a useful coding model needs a 24 GB GPU and a fat electricity bill. Then something like yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF shows up — a 12-billion-parameter model distilled from real, execution-verified chain-of-thought, with a 256K context window, and a 2-bit quant that fits in 4.5 GB. You can run the whole thing on a cheap laptop with integrated ..."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The \"Unified\" in Gemma 4 12B Unified refers to its encoder-free architecture. Other Gemma 4 models use dedicated encoders to process multimodal data before passing it to the LLM. Gemma 4 12B eliminates these encoders entirely, projecting raw image patches and audio waveforms directly into the LLM&#x27;s embedding space through lightweight linear layers."
+    }
+  ]
+}

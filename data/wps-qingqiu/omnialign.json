@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "WPS-Qingqiu/OmniAlign",
+  "slug": "wps-qingqiu-omnialign",
+  "author": "WPS-Qingqiu",
+  "url": "https://huggingface.co/WPS-Qingqiu/OmniAlign",
+  "created_at": "2026-08-18T06:36:11.000Z",
+  "updated_at": "2026-08-19T02:35:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "multilingual",
+    "zh",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "ru",
+    "ja",
+    "pt",
+    "ro"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "new",
+    "feature-extraction",
+    "word-alignment",
+    "sentence-alignment",
+    "multilingual",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "ru",
+    "ja",
+    "pt",
+    "ro",
+    "base_model:Alibaba-NLP/gte-multilingual-mlm-base",
+    "base_model:finetune:Alibaba-NLP/gte-multilingual-mlm-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 305368320,
+  "parameters_human": "305.4M",
+  "storage_bytes": 627843534,
+  "storage_human": "628 MB",
+  "base_model": "Alibaba-NLP/gte-multilingual-mlm-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WPS-Qingqiu (WPS-Qingqiu) - Hugging Face",
+      "url": "https://huggingface.co/WPS-Qingqiu/datasets",
+      "snippet": "User profile of WPS-Qingqiu on Hugging Face"
+    },
+    {
+      "title": "Qingqiu Agent（A self-developed spreadsheet AI engine launched by ...",
+      "url": "https://baike.baidu.com/en/item/Qingqiu%20Agent/2631961",
+      "snippet": "Qingqiu Agent is a self-developed spreadsheet AI engine launched by Kingsoft Office on April 22, 2026, at the WPS AI NEXT Wuhan event. As the AI engine for WPS Multi-dimensional Tables, it supports the direct generation of table structures, views, and dashboards through natural language descriptions, and provides AI capabilities in data processing and analysis."
+    },
+    {
+      "title": "GitHub - lewis-hui1202/WPS-AI: WPS Office 全家桶（文字/表格/演示/PDF）AI 助手：挂 ...",
+      "url": "https://github.com/lewis-hui1202/WPS-AI",
+      "snippet": "一个 TaskPane 兼容 WPS 文字 / 表格 / 演示 / PDF 四端的 AI 助手，挂多家 AI（Codex / OpenAI / Anthropic / Gemini / Azure / OpenAI 兼容），AI 通过工具调用 直接读写文档。 ⬇ 下载 · 5 分钟上手 · 功能一览 · 项目结构 · 二次开发 · 已知限制 · English 🤖 100% 由 Vibe coding 完成：架构、provider 适配、PPT 主题/图表、Word ..."
+    },
+    {
+      "title": "GitHub - PhoenixZ810/OmniAlign-V: Official Repository of ACL 2025 paper ...",
+      "url": "https://github.com/PhoenixZ810/OmniAlign-V/",
+      "snippet": "By incorporating a DPO stage using our OmniAlign-V-DPO dataset, we achieve even better alignment with human preferences. Notably, our LLaVANext-OA-32B model, built on the Qwen2.5-32B-Instruct foundation, surpasses Qwen2VL-72B on the MM-AlignBench."
+    },
+    {
+      "title": "Kingsoft Office Applies for &#x27;Qingqiu Large Model&#x27; Trademark, Expanding ...",
+      "url": "https://www.aibase.com/news/16373",
+      "snippet": "This trademark application for \"Qingqiu Large Model\" has attracted widespread attention in the industry, with many speculating that it signals a new strategic move by Kingsoft Office in the field of artificial intelligence and related services."
+    }
+  ]
+}

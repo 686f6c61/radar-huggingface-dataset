@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ahadsu/leo-uav-fusion-checkpoints",
+  "slug": "ahadsu-leo-uav-fusion-checkpoints",
+  "author": "ahadsu",
+  "url": "https://huggingface.co/ahadsu/leo-uav-fusion-checkpoints",
+  "created_at": "2026-08-16T23:26:14.000Z",
+  "updated_at": "2026-08-17T12:16:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20640186,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FatimahEmadEldin/leo-uav-fusion-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/FatimahEmadEldin/leo-uav-fusion-checkpoints",
+      "snippet": "LEO + UAV fusion - experiment checkpoints and results Generated 2026-08-02 16:25 UTC. Weights, logs and full documentation for every completed run of the cross-scale fusion study. Each run folder has its own README with the data, split, per-class breakdown and caveats."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Stable Diffusion Checkpoints — Free AI Model Downloads | ComfyUI Resources",
+      "url": "https://comfyuiweb.com/resources/checkpoints",
+      "snippet": "Curated collection of the most popular Stable Diffusion checkpoint models. From photorealistic to anime, find the perfect base model for your AI art workflow."
+    },
+    {
+      "title": "How to Install Stable Diffusion Models in ComfyUI: Checkpoint Guide",
+      "url": "https://comfyui-wiki.com/en/install/install-models/install-checkpoint",
+      "snippet": "Step-by-step guide to download and install Stable Diffusion checkpoint models in ComfyUI. Covers model folder setup, Hugging Face and CivitAI downloads, SD 1.5, SDXL, SD 3.5, and Flux models."
+    }
+  ]
+}

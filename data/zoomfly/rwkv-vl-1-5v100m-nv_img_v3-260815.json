@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ZoomFly/rwkv-vl-1.5v100m-nv_img_v3-260815",
+  "slug": "zoomfly-rwkv-vl-1-5v100m-nv_img_v3-260815",
+  "author": "ZoomFly",
+  "url": "https://huggingface.co/ZoomFly/rwkv-vl-1.5v100m-nv_img_v3-260815",
+  "created_at": "2026-08-17T05:33:22.000Z",
+  "updated_at": "2026-08-17T05:38:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modrwkv",
+    "image-text-to-text",
+    "rwkv",
+    "rwkv7",
+    "vision-language",
+    "multimodal",
+    "reasoning",
+    "thinking",
+    "custom-code",
+    "research",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:ZoomFly/rwkv-vl-1.5v100m-finevisionmax",
+    "base_model:finetune:ZoomFly/rwkv-vl-1.5v100m-finevisionmax",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1653177600,
+  "parameters_human": "1.65B",
+  "storage_bytes": 3306469931,
+  "storage_human": "3.3 GB",
+  "base_model": "ZoomFly/rwkv-vl-1.5v100m-finevisionmax",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZoomFly/rwkv-vl-1.5v100m-finevisionmax · Hugging Face",
+      "url": "https://huggingface.co/ZoomFly/rwkv-vl-1.5v100m-finevisionmax",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ZoomFly/rwkv-vl-1.5v100m-finevisionmax at main - Hugging Face",
+      "url": "https://huggingface.co/ZoomFly/rwkv-vl-1.5v100m-finevisionmax/tree/main",
+      "snippet": "ZoomFly / rwkv-vl-1.5v100m-finevisionmax like 0 Follow ZoomFly 5 Image-Text-to-Text Transformers Safetensors RWKV English modrwkv rwkv7 vision-language multimodal custom-code conversational custom_code Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "The RWKV Language Model RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "RWKV · GitHub",
+      "url": "https://github.com/rwkv",
+      "snippet": "RWKV is an RNN with Transformer-level LLM performance. It is hosted as an incubation project in LF AI & Data Foundation. - RWKV"
+    },
+    {
+      "title": "GitHub - BlinkDL/RWKV-LM: RWKV (pronounced RwaKuv) is an RNN with great ...",
+      "url": "https://github.com/BlinkDL/RWKV-LM",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding. - BlinkDL/RWKV-LM"
+    }
+  ]
+}

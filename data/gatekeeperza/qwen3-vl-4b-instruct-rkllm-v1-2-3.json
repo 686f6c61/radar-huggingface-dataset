@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "GatekeeperZA/Qwen3-VL-4B-Instruct-RKLLM-v1.2.3",
+  "slug": "gatekeeperza-qwen3-vl-4b-instruct-rkllm-v1-2-3",
+  "author": "GatekeeperZA",
+  "url": "https://huggingface.co/GatekeeperZA/Qwen3-VL-4B-Instruct-RKLLM-v1.2.3",
+  "created_at": "2026-08-18T10:11:47.000Z",
+  "updated_at": "2026-08-18T10:14:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "rkllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "rkllm",
+    "rknn",
+    "rk3588",
+    "rockchip",
+    "npu",
+    "quantized",
+    "vision-language",
+    "multimodal",
+    "qwen3",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5716044673,
+  "storage_human": "5.7 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "Qwen3 Technical Report Qwen2.5-VL Technical Report Qwen2-VL: Enhancing Vision-Language Model&#x27;s Perception of the World at Any Resolution Qwen-VL: A Frontier Large Vision-Language Model with Versatile Abilities"
+    },
+    {
+      "title": "Qwen3-VL-2B-Instruct-RKLLM-v1.2.3 - Hugging Face",
+      "url": "https://huggingface.co/GatekeeperZA/Qwen3-VL-2B-Instruct-RKLLM-v1.2.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Qwen3-VL-4B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "Qwen3-VL-4B-Instruct Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and ..."
+    },
+    {
+      "title": "Qwen3-VL-4B-Instruct - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_vl_4b_instruct",
+      "snippet": "Qwen3-VL-4B-Instruct Multimodal 4B vision‑language model with enhanced visual reasoning capabilities. Qwen3‑VL is a vision‑language model from Alibaba Cloud capable of understanding both text and images for multimodal reasoning tasks such as visual question answering and image captioning."
+    }
+  ]
+}

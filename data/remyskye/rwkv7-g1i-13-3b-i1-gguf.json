@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RemySkye/rwkv7-g1i-13.3B-i1-GGUF",
+  "slug": "remyskye-rwkv7-g1i-13-3b-i1-gguf",
+  "author": "RemySkye",
+  "url": "https://huggingface.co/RemySkye/rwkv7-g1i-13.3B-i1-GGUF",
+  "created_at": "2026-08-15T12:52:22.000Z",
+  "updated_at": "2026-08-15T13:26:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "rwkv",
+    "rwkv7",
+    "quantized",
+    "imatrix",
+    "text-generation",
+    "dataset:lemon07r/bartowski-imatrix-v5-semantic",
+    "base_model:BlinkDL/rwkv7-g1",
+    "base_model:quantized:BlinkDL/rwkv7-g1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 179,
+  "trending_score": 0,
+  "parameters": 13270822912,
+  "parameters_human": "13.27B",
+  "storage_bytes": 158653268928,
+  "storage_human": "158.7 GB",
+  "base_model": "BlinkDL/rwkv7-g1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RemySkye/rwkv7-g1i-13.3B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/RemySkye/rwkv7-g1i-13.3B-i1-GGUF",
+      "snippet": "Instructions to use RemySkye/rwkv7-g1i-13.3B-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries RWKV How to use RemySkye/rwkv7-g1i-13.3B-i1-GGUF with RWKV:"
+    },
+    {
+      "title": "RemySkye/rwkv7-g1g-13.3b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/RemySkye/rwkv7-g1g-13.3b-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Log-Dog012/rwkv-openvino: RWKV-7 -> OpenVINO IR inference",
+      "url": "https://github.com/Log-Dog012/rwkv-openvino",
+      "snippet": "注意： OpenVINO 原生（read_model / GenAI）不支持 RWKV-7 GGUF （无对应前端），故 GGUF 路线必须自己写计算图，不能指望 OVMS 的 ggufreader 直读。"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "RWKV-Evals",
+      "url": "https://wiki.rwkv.com/basic/RWKV-Evals.html",
+      "snippet": "RWKV-Evals RWKV Evaluation Data presents RWKV&#x27;s performance across various large language model benchmarks, including Uncheatable Eval, MMLU, RULER, and LongBench. Uncheatable Eval Test"
+    }
+  ]
+}

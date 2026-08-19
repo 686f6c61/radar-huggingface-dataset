@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nosieeater/CodeMini",
+  "slug": "nosieeater-codemini",
+  "author": "nosieeater",
+  "url": "https://huggingface.co/nosieeater/CodeMini",
+  "created_at": "2026-08-18T11:15:41.000Z",
+  "updated_at": "2026-08-18T11:28:12.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377440,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - GeneralSubhra/codemini: codemini is a terminal-based AI agent ...",
+      "url": "https://github.com/GeneralSubhra/codemini",
+      "snippet": "CodeMini is a terminal-based AI agent that talks to any OpenAI-compatible LLM and streams responses straight into your shell. It&#x27;s the foundation for a fully-fledged coding assistant: today it does streaming chat over a clean, event-driven agent loop; the roadmap below covers where it&#x27;s headed (tools, multi-turn sessions, file editing, and more). ⚠️ Status: work in progress. The core agent ..."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "For a model in this tier, that is an excellent result on multi-step agentic work.\" Nick Hollon, Software Engineer, LangChain \"Gemini 3.7 Flash achieves on-par performance with mid-sized models such as GPT-5.6-Terra on our benchmarks, but at around half the cost, making it a strong contender in that category.\" Kyrill Hux, Co-Founder, Nunu.ai"
+    },
+    {
+      "title": "Code-Mini-v0.1: An Experiment in Minimalist Code Generation",
+      "url": "https://discuss.huggingface.co/t/code-mini-v0-1-an-experiment-in-minimalist-code-generation/164669",
+      "snippet": "Title: Code-Mini-v0.1: An Experiment in Minimalist Code Generation I&#x27;ve built something a bit different, and I want to share it with the Hugging Face community. Code-Mini-v0.1 is a 90,000-parameter Transformer Decoder, trained from scratch on Python code. It&#x27;s a model that doesn&#x27;t aim for perfection. It doesn&#x27;t try to compete with giants like GPT or any code completion tools. The goal ..."
+    },
+    {
+      "title": "GitHub - havingautism/Codemini-CLI: Terminal-first AI workspace with ...",
+      "url": "https://github.com/havingautism/Codemini-CLI",
+      "snippet": "Codemini is a coding + tasks CLI built for a simple premise: agentic help should work everywhere, scale from small models to frontier ones, and never waste your context budget. It is equally at home refactoring a TypeScript codebase, automating a Git workflow, running a multi-step DevOps pipeline ..."
+    },
+    {
+      "title": "Best AI Model for Coding 2026: 10 Models Ranked (SWE-bench)",
+      "url": "https://tokenmix.ai/blog/best-ai-model-for-coding",
+      "snippet": "Best AI models for coding 2026: GPT-5.4 88% Aider, Claude Opus 80.8% SWE-bench, DeepSeek V4 at 1/10 cost. 10 models ranked by cost-per-benchmark-point."
+    }
+  ]
+}

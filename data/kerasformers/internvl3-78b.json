@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kerasformers/internvl3-78b",
+  "slug": "kerasformers-internvl3-78b",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/internvl3-78b",
+  "created_at": "2026-08-17T03:34:43.000Z",
+  "updated_at": "2026-08-18T06:07:23.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "internvl",
+    "internvl3",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "arxiv:2504.10479",
+    "arxiv:2412.15115",
+    "base_model:OpenGVLab/InternVL3-78B-hf",
+    "base_model:finetune:OpenGVLab/InternVL3-78B-hf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157007625796,
+  "storage_human": "157.0 GB",
+  "base_model": "OpenGVLab/InternVL3-78B-hf",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenGVLab/InternVL3-78B · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenGVLab/InternVL3-78B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-78B-Instruct",
+      "snippet": "Model Architecture As shown in the following figure, InternVL3 retains the same model architecture as InternVL 2.5 and its predecessors, InternVL 1.5 and 2.0, following the \"ViT-MLP-LLM\" paradigm. In this new version, we integrate a newly incrementally pre-trained InternViT with various pre-trained LLMs, including InternLM 3 and Qwen 2.5, using a randomly initialized MLP projector. As in the ..."
+    },
+    {
+      "title": "GitHub - OpenGVLab/InternVL: [CVPR 2024 Oral] InternVL Family: A ...",
+      "url": "https://github.com/OpenGVLab/InternVL",
+      "snippet": "Additionally, the data construction scripts for MPO and VisualPRM are also released for reference. 2025/04/11: We introduce InternVL3, an advanced multimodal large language model (MLLM) series that demonstrates superior overall performance. InternVL3-78B achieves SoTA performance in both perception and reasoning performance among open-source MLLMs."
+    },
+    {
+      "title": "InternVL - KerasFormers",
+      "url": "https://imvision12.github.io/KerasFormers/internvl/",
+      "snippet": "OpenGVLab&#x27;s InternVL3 vision-language models, ported to pure Keras 3. An InternViT tower feeds a pixel-shuffle downsampler and an MLP connector into an inlined Qwen2 text decoder. Images are tiled dynamically: the processor picks an aspect-ratio-matched tile grid (min_patches.. max_patches) plus an optional thumbnail, and each tile becomes image_seq_length tokens."
+    },
+    {
+      "title": "InternVL3-78B: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/internvl3-78b-opengvlab",
+      "snippet": "Overview InternVL3-78B is a multimodal large language model developed by OpenGVLab that combines vision and language capabilities in a single 78-billion parameter system. The model uses a \"ViT-MLP-LLM\" architecture that pairs a 6B InternViT vision encoder with Qwen2.5-72B as the language component, connected through a randomly initialized MLP projector. The vision encoder uses 448×448 pixel ..."
+    }
+  ]
+}

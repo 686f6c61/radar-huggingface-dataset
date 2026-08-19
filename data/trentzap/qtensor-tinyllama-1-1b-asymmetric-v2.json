@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "trentzap/QTensor-TinyLlama-1.1B-Asymmetric-v2",
+  "slug": "trentzap-qtensor-tinyllama-1-1b-asymmetric-v2",
+  "author": "trentzap",
+  "url": "https://huggingface.co/trentzap/QTensor-TinyLlama-1.1B-Asymmetric-v2",
+  "created_at": "2026-08-15T21:22:00.000Z",
+  "updated_at": "2026-08-15T22:11:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qtensor_llama",
+    "text-generation",
+    "qtensor",
+    "quantization",
+    "svd",
+    "int4",
+    "awq",
+    "lora",
+    "triton",
+    "knowledge-distillation",
+    "conversational",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 277,
+  "trending_score": 0,
+  "parameters": 736440376,
+  "parameters_human": "736.4M",
+  "storage_bytes": 1104817984,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trentzap/QTensor-TinyLlama-1.1B-Alpha · Hugging Face",
+      "url": "https://huggingface.co/trentzap/QTensor-TinyLlama-1.1B-Alpha",
+      "snippet": "trentzap / QTensor-TinyLlama-1.1B-Alpha like 0 Text Generation Transformers Safetensors English qtensor quantization ternary lora triton License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "trentzap/qtensor-tinyllama-hybrid-v2 · Hugging Face",
+      "url": "https://huggingface.co/trentzap/qtensor-tinyllama-hybrid-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - inferless/tinyllama-1-1b-chat-v1-0: A chat model fine-tuned on ...",
+      "url": "https://github.com/inferless/tinyllama-1-1b-chat-v1-0",
+      "snippet": "TinyLlama-1.1B-Chat-v1. The TinyLlama project aims to train a compact 1.1B model on 3 trillion tokens. It shares architecture and tokenizer with Llama 2, making it compatible with many existing projects. With only 1.1B parameters, it&#x27;s suitable for applications with limited computational and memory resources."
+    },
+    {
+      "title": "transformers/models/llm/docs/tinyLlama-1.1b.md at main · amd ... - GitHub",
+      "url": "https://github.com/amd/transformers/blob/main/models/llm/docs/tinyLlama-1.1b.md",
+      "snippet": "vaip open source. Contribute to amd/transformers development by creating an account on GitHub."
+    },
+    {
+      "title": "Top 10 Smallest LLM to Run Locally - ML Journey",
+      "url": "https://mljourney.com/top-10-smallest-llm-to-run-locally/",
+      "snippet": "Large Language Models (LLMs) have become essential for natural language processing (NLP) applications such as chatbots, text generation, and code completion. While powerful, many of these models require high-end GPUs or cloud computing resources, making them difficult to run on local devices. However, advancements in AI have led to the development of smaller LLMs optimized for local use."
+    }
+  ]
+}

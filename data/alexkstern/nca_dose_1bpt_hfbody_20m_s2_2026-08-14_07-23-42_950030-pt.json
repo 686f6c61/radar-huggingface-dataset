@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_1Bpt_hfbody_20M_s2_2026-08-14_07-23-42_950030-pt",
+  "slug": "alexkstern-nca_dose_1bpt_hfbody_20m_s2_2026-08-14_07-23-42_950030-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_1Bpt_hfbody_20M_s2_2026-08-14_07-23-42_950030-pt",
+  "created_at": "2026-08-14T07:49:13.000Z",
+  "updated_at": "2026-08-14T07:49:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_nca-paper-share200-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern/nca_1pct_50B_d24_seed0_2026-07-25_13-01-33_901058-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_1pct_50B_d24_seed0_2026-07-25_13-01-33_901058-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alexkstern/nca-pre-pretraining-upstream - GitHub",
+      "url": "https://github.com/alexkstern/nca-pre-pretraining-upstream",
+      "snippet": "Both scripts call into src/language_train.py or src/openwebtext_pt.py and accept a --model_path / --model_file pointing to the NCA pre-pre-trained checkpoint. Set --reinit_modules embed none to re-initialize the embedding layers while retaining all other weights. These scripts can also be used for pre-pretraining on other datasets."
+    },
+    {
+      "title": "alexkstern/nca_1pct_1e18_seed0_2026-07-06_07-39-14_914430-pt · Hugging Face",
+      "url": "https://huggingface.co/alexkstern/nca_1pct_1e18_seed0_2026-07-06_07-39-14_914430-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Non-Compartmental Analysis (NCA) Tool",
+      "url": "https://pharmacyfreak.com/non-compartmental-analysis-nca-tool/",
+      "snippet": "Use this student-friendly tool to work with non-compartmental analysis NCA, improve calculation accuracy, and support pharmacy study, interpretation, and exam revision."
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging and calling, available on phones all over the world."
+    }
+  ]
+}

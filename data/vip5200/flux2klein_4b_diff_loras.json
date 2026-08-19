@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Vip5200/Flux2Klein_4B_diff_loras",
+  "slug": "vip5200-flux2klein_4b_diff_loras",
+  "author": "Vip5200",
+  "url": "https://huggingface.co/Vip5200/Flux2Klein_4B_diff_loras",
+  "created_at": "2026-08-15T06:59:56.000Z",
+  "updated_at": "2026-08-15T06:59:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 234,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8749377766,
+  "storage_human": "8.7 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

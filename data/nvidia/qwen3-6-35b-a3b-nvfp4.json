@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "nvidia/Qwen3.6-35B-A3B-NVFP4",
+  "slug": "nvidia-qwen3-6-35b-a3b-nvfp4",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4",
+  "created_at": "2026-05-27T18:09:46.000Z",
+  "updated_at": "2026-06-12T21:32:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen3_5_moe",
+    "nvidia",
+    "ModelOpt",
+    "Qwen3.6",
+    "quantized",
+    "FP4",
+    "fp4",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "deploy:azure",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 557,
+  "downloads_30d": 12314487,
+  "trending_score": 8,
+  "parameters": 18683860336,
+  "parameters_human": "18.68B",
+  "storage_bytes": 23450872529,
+  "storage_human": "23.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Qwen3.6-35B-A3B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B (and FP8) has landed - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen-qwen3-6-35b-a3b-and-fp8-has-landed/366822",
+      "snippet": "And yet another candidate to be tested. Still struggling to get stable performance in terms of tool calling with Qwen3.5 (may be I just missed a fix) and/or Gemma4… and they pushed out already the next. 😅 Qwen3.6 Highlights This release delivers substantial upgrades, particularly in Agentic Coding: the model now handles frontend workflows and repository-level reasoning with greater ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/teams/qwen/models/qwen3.6-35b-a3b",
+      "snippet": "This AI model can be embedded as an Application Programming Interface (API) call into the software environment described above. Model Version (s) Qwen3.6-35B-A3B v3.6 Training, Testing, and Evaluation Datasets Training Dataset Data Modality: Text Image"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.6-35b-a3b/nim-spark-nvfp4-mtp",
+      "snippet": "The integration of foundation and fine-tuned models into AI systems requires additional testing using use-case-specific data to ensure safe and effective deployment. Following the V-model methodology, iterative testing and validation at both unit and system levels are essential to mitigate risks, meet technical and functional requirements, and ensure compliance with safety and ethical ..."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

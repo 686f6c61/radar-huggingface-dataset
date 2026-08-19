@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "evalstate/cifar10-selftrain-degraded-iterate",
+  "slug": "evalstate-cifar10-selftrain-degraded-iterate",
+  "author": "evalstate",
+  "url": "https://huggingface.co/evalstate/cifar10-selftrain-degraded-iterate",
+  "created_at": "2026-08-17T10:50:37.000Z",
+  "updated_at": "2026-08-17T11:28:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "self-training",
+    "self-distillation",
+    "cifar-10",
+    "denoising-forgetting",
+    "arxiv:2602.14029",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6251137,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evaluation System | openai/consistency_models_cifar10 | DeepWiki",
+      "url": "https://deepwiki.com/openai/consistency_models_cifar10/7-evaluation-system",
+      "snippet": "The evaluation system provides comprehensive model assessment capabilities for consistency models trained on CIFAR-10. It supports three main evaluation modes: loss computation on validation datasets, likelihood estimation (bits-per-dimension), and image generation quality metrics including FID, IS, and KID scores. The system is designed to be robust against pre-emption and can automatically ..."
+    },
+    {
+      "title": "Training a Classifier — PyTorch Tutorials 2.13.0+cu130 documentation",
+      "url": "https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html",
+      "snippet": "We will do the following steps in order: Load and normalize the CIFAR10 training and test datasets using torchvision Define a Convolutional Neural Network Define a loss function Train the network on the training data Test the network on the test data 1. Load and normalize CIFAR10 # Using torchvision, it&#x27;s extremely easy to load CIFAR10."
+    },
+    {
+      "title": "Deep Learning with CIFAR-10: Building a CNN Classifier with PyTorch",
+      "url": "https://sinanlab.github.io/blog/cifar10-cnn-classifier.html",
+      "snippet": "Deep Learning with CIFAR-10: Building a CNN Classifier with PyTorch A complete guide to implementing a Convolutional Neural Network for image classification using PyTorch, featuring data augmentation, TensorBoard visualization, and desktop deployment"
+    },
+    {
+      "title": "evalstate/training-scripts · Hugging Face",
+      "url": "https://huggingface.co/evalstate/training-scripts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CIFAR10 — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/generated/torchvision.datasets.CIFAR10.html",
+      "snippet": "CIFAR10 ¶ class torchvision.datasets.CIFAR10(root: Union[str, Path], train: bool = True, transform: Optional[Callable] = None, target_transform: Optional[Callable] = None, download: bool = False)[source] ¶ CIFAR10 Dataset. Parameters: root (str or pathlib.Path) - Root directory of dataset where directory cifar-10-batches-py exists or will be saved to if download is set to True. train (bool ..."
+    }
+  ]
+}

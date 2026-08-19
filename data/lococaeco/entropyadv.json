@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lococaeco/entropyAdv",
+  "slug": "lococaeco-entropyadv",
+  "author": "lococaeco",
+  "url": "https://huggingface.co/lococaeco/entropyAdv",
+  "created_at": "2026-08-16T09:26:09.000Z",
+  "updated_at": "2026-08-18T01:04:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 487413242239,
+  "storage_human": "487.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lococaeco (Bangsangwoo) - Hugging Face",
+      "url": "https://huggingface.co/lococaeco",
+      "snippet": "User profile of Bangsangwoo on Hugging Face"
+    },
+    {
+      "title": "lococaeco",
+      "url": "https://lococaeco.github.io/",
+      "snippet": "2026. 03. 17 LoRA 탐구하기 AI / LLM 보안걱정 없는 도커 컨테이너 격리 버전 OpenClaw A to Z 완벽 정리"
+    },
+    {
+      "title": "GitHub - lococaeco/lococaeco",
+      "url": "https://github.com/lococaeco/lococaeco",
+      "snippet": "Contribute to lococaeco/lococaeco development by creating an account on GitHub."
+    },
+    {
+      "title": "lococaeco — ClawHub",
+      "url": "https://clawhub.ai/lococaeco",
+      "snippet": "....:: clawhub/openclaw ::.... skills plugins publishers trust signals :::: signed manifests ::::: moderated releases ::::: version history :::: openclaw ecosystem ..."
+    },
+    {
+      "title": "lococaeco/verl-checkpoints at main - Hugging Face",
+      "url": "https://huggingface.co/lococaeco/verl-checkpoints/tree/main",
+      "snippet": "lococaeco / verl-checkpoints like 0 Model card FilesFiles and versions xet Community Copy to bucket new main verl-checkpoints Ctrl+K Ctrl+K 1 contributor History:23 commits lococaeco Add files using upload-large-folder tool 1e42c26 verifiedabout 5 hours ago .mlic2Add files using upload-large-folder toolabout 6 hours ago analysisAdd files using upload-large-folder toolabout 5 hours ago ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kyleliu789/qwen3-14b-svamp14-orpo-qlora-r8-a16",
+  "slug": "kyleliu789-qwen3-14b-svamp14-orpo-qlora-r8-a16",
+  "author": "kyleliu789",
+  "url": "https://huggingface.co/kyleliu789/qwen3-14b-svamp14-orpo-qlora-r8-a16",
+  "created_at": "2026-08-18T19:52:20.000Z",
+  "updated_at": "2026-08-18T19:52:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "llama-factory",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-14B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4642602645,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyleliu789/qwen3-14b-svamp14-sft-qlora-r8-a16 · Hugging Face",
+      "url": "https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-qlora-r8-a16",
+      "snippet": "Instructions to use kyleliu789/qwen3-14b-svamp14-sft-qlora-r8-a16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "kyleliu789/qwen3-14b-svamp14-sft-qlora · Hugging Face",
+      "url": "https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-qlora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "qwen3-14b-svamp-sft API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/kyleliu789/qwen3-14b-svamp-sft",
+      "snippet": "Deploy qwen3-14b-svamp-sft with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "qwen3:14b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:14b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "farzanah/qwen3.6-27b-sandbagging-grpo-sandbag",
+  "slug": "farzanah-qwen3-6-27b-sandbagging-grpo-sandbag",
+  "author": "farzanah",
+  "url": "https://huggingface.co/farzanah/qwen3.6-27b-sandbagging-grpo-sandbag",
+  "created_at": "2026-08-18T00:43:19.000Z",
+  "updated_at": "2026-08-18T00:43:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sandbagging",
+    "model-organism",
+    "ai-safety",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657592749,
+  "storage_human": "658 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How I Solved the Qwen3.6-27B Performance and Deployment Problems - A ...",
+      "url": "https://dredyson.com/how-i-solved-the-qwen3-6-27b-performance-and-deployment-problems-a-complete-step-by-step-beginners-guide-to-configuration-benchmarks-troubleshooting-and-getting-maximum-throughput-on-dual-node/",
+      "snippet": "This guide is everything I learned — every command, every flag, every mistake — so you don&#x27;t have to repeat my journey. What Is Qwen3.6-27B and Why Should You Care? Qwen3.6-27B is the latest dense 27-billion-parameter model from the Qwen team, available in FP8 quantized form on Hugging Face at Qwen/Qwen3.6-27B-FP8."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.6-27b",
+      "snippet": "We recommend using Qwen-Agent to quickly build Agent applications with Qwen3.6. To define the available tools, you can use the MCP configuration file, use the integrated tool of Qwen-Agent, or integrate other tools by yourself."
+    },
+    {
+      "title": "How I Solved the Qwen3.6-27B Performance and Deployment Problems — A ...",
+      "url": "https://dredyson.com/how-i-solved-the-qwen3-6-27b-performance-and-deployment-problems-a-complete-step-by-step-beginners-guide-to-configuration-benchmarking-and-real-world-fixes/",
+      "snippet": "Wrapping Up Qwen3.6-27B is a genuinely impressive model — the benchmark numbers prove that. But deploying it effectively requires understanding its quirks: the reasoning-heavy architecture that can spiral on complex problems, the speculative decoding trap on multi-node setups, and the gap between benchmark scores and real-world utility."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.6-27b",
+      "snippet": "model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.6-27B or leave it blank instead. messages (array): A list of messages comprising the conversation so far."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Introduction Qwen3.6 Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback."
+    }
+  ]
+}

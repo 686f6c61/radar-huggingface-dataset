@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/Qwen3.8-27B-GGUF",
+  "slug": "atomicchat-qwen3-8-27b-gguf",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/Qwen3.8-27B-GGUF",
+  "created_at": "2026-08-12T14:44:42.000Z",
+  "updated_at": "2026-08-16T21:39:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.8",
+    "qwen",
+    "imatrix",
+    "quantized",
+    "atomic-chat",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 115,
+  "downloads_30d": 72562,
+  "trending_score": 113,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 608061740224,
+  "storage_human": "608.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtomicChat/Qwen3.6-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/Qwen3.6-27B-GGUF",
+      "snippet": "Qwen3.6 27B, self-quantized to GGUF by Atomic Chat. Built straight from Qwen&#x27;s original weights with a per-tensor importance matrix, so this is not a repack of somebody else&#x27;s files. Runs fully offline."
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    }
+  ]
+}

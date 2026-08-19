@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bihungba1101/segmenting-qwen3.5-4b-unsloth-sft",
+  "slug": "bihungba1101-segmenting-qwen3-5-4b-unsloth-sft",
+  "author": "bihungba1101",
+  "url": "https://huggingface.co/bihungba1101/segmenting-qwen3.5-4b-unsloth-sft",
+  "created_at": "2026-08-14T06:18:08.000Z",
+  "updated_at": "2026-08-14T06:45:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "trl",
+    "sft",
+    "dataset:bihungba1101/ielts-task-2-segments",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 444862009,
+  "storage_human": "445 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bihungba1101/segmenting-qwen3.5-0.8b-unsloth-sft · Hugging Face",
+      "url": "https://huggingface.co/bihungba1101/segmenting-qwen3.5-0.8b-unsloth-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bihungba1101/json_segmenting_sft_warmup_qwen · Hugging Face",
+      "url": "https://huggingface.co/bihungba1101/json_segmenting_sft_warmup_qwen",
+      "snippet": "Uploaded model Developed by: bihungba1101 License: apache-2.0 Finetuned from model : unsloth/Qwen3-4B"
+    },
+    {
+      "title": "Qwen3.5 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5",
+      "snippet": "Qwen3.5 is Alibaba&#x27;s new model family, including Qwen3.5- 35B -A3B, 27B, 122B -A10B and 397B -A17B and the new Small series: Qwen3.5-0.8B, 2B, 4B and 9B. The multimodal hybrid reasoning LLMs deliver the strongest performances for their sizes."
+    },
+    {
+      "title": "Qwen3.5 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
+      "snippet": "Unsloth supports vision fine-tuning for the multimodal Qwen3.5 models. Use the below Qwen3.5 notebooks and change the respective model names to your desired Qwen3.5 model."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

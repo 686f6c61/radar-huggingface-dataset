@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "philbert440/Qwen3.8-27B-Uncensored-Aggressive-W4A16-AWQ",
+  "slug": "philbert440-qwen3-8-27b-uncensored-aggressive-w4a16-awq",
+  "author": "philbert440",
+  "url": "https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive-W4A16-AWQ",
+  "created_at": "2026-08-15T08:56:16.000Z",
+  "updated_at": "2026-08-18T22:34:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "uncensored",
+    "abliterated",
+    "qwen3",
+    "awq",
+    "w4a16",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "base_model:philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+    "base_model:quantized:philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 1940,
+  "trending_score": 9,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 38279133696,
+  "storage_human": "38.3 GB",
+  "base_model": "philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for philbert440/Qwen3.8-27B-Uncensored-Aggressive ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "Quantized Models for Qwen/Qwen3.8-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Qwen/Qwen3.8-27B",
+      "snippet": "Active filters: Qwen/Qwen3.8-27B. Clear all. unsloth/Qwen3.8-27B-GGUF. 27B • Updated about 23 hours ago • 868k • 1.26k"
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Qwen3.8 27B W4A16 AWQ by philbert440 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/philbert440%2FQwen3.8-27B-W4A16-AWQ,6s9qX0z8mVjxLGlCulORQX",
+      "snippet": "Qwen3.8 27B W4A16 AWQ is an open-source 27b LLM by philbert440. VRAM 0.8GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

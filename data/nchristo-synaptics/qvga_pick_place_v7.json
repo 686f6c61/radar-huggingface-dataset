@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nchristo-synaptics/QVGA_pick_place_v7",
+  "slug": "nchristo-synaptics-qvga_pick_place_v7",
+  "author": "nchristo-synaptics",
+  "url": "https://huggingface.co/nchristo-synaptics/QVGA_pick_place_v7",
+  "created_at": "2026-08-18T04:42:56.000Z",
+  "updated_at": "2026-08-18T04:44:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:nchristo-synaptics/QVGA_pick_place_demo_v7",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62854726,
+  "parameters_human": "62.9M",
+  "storage_bytes": 251470600,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nchristo-synaptics/QVGA_pick_place_demo_v4 - Hugging Face",
+      "url": "https://huggingface.co/datasets/nchristo-synaptics/QVGA_pick_place_demo_v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nchristo-synaptics/QVGA_pick_place_demo_v5 · Hugging Face",
+      "url": "https://huggingface.co/nchristo-synaptics/QVGA_pick_place_demo_v5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nchristo-synaptics · GitHub",
+      "url": "https://github.com/nchristo-synaptics",
+      "snippet": "GitHub is where nchristo-synaptics builds software. Joined May 26, 2026 Block or report user Block or report nchristo-synaptics Block user"
+    },
+    {
+      "title": "nicholaschristo (Nicholas Christo) · GitHub",
+      "url": "https://github.com/nicholaschristo",
+      "snippet": "👋 Hi, I&#x27;m Nicholas Christo! 🎓student specializing in Machine Learning, Deep Learning, and AI Engineering | 💡 My projects focus on innovative solutions. - nicholaschristo"
+    },
+    {
+      "title": "Synaptics AI Models | Edge AI for Developers",
+      "url": "https://developer.synaptics.com/models",
+      "snippet": "Access pre-optimized AI models for Synaptics Astra Machina and Machina Micro Developer kits."
+    }
+  ]
+}

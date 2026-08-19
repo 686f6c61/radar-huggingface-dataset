@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "drlee1/constraint-carrier-directions",
+  "slug": "drlee1-constraint-carrier-directions",
+  "author": "drlee1",
+  "url": "https://huggingface.co/drlee1/constraint-carrier-directions",
+  "created_at": "2026-08-14T06:05:19.000Z",
+  "updated_at": "2026-08-14T06:05:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "interpretability",
+    "activation-steering",
+    "constraint-following",
+    "qwen3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2944176,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "drlee1/Own-20B-A2B-skeleton API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/drlee1/Own-20B-A2B-skeleton",
+      "snippet": "Deploy drlee1/Own-20B-A2B-skeleton with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=en",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "AI-Research-Assessment/autonomous-logistics-agent at main ... - GitHub",
+      "url": "https://github.com/Prasannaganesann/AI-Research-Assessment/tree/main/autonomous-logistics-agent",
+      "snippet": "An interview-ready, production-grade Multi-Agent System (MAS) built on LangGraph designed to solve the autonomous logistics rerouting problem. This system ingests real-time shipment delay alerts (e.g. port closures, weather disruptions), translates them into structured plans, researches carrier alternatives, validates them against physical and business constraints, and executes the optimal ..."
+    },
+    {
+      "title": "AI in Logistics: Fleet Utilization The constraint your route ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/ai-logistics-fleet-utilization-constraint-your-route-optimizer-adam-nwjpe",
+      "snippet": "The AI now doing real work in high-utilization fleets is not better at routing. It is operating at the constraint layer the route optimizer was never designed to touch."
+    }
+  ]
+}

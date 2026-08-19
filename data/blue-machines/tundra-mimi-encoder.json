@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "blue-machines/tundra-mimi-encoder",
+  "slug": "blue-machines-tundra-mimi-encoder",
+  "author": "blue-machines",
+  "url": "https://huggingface.co/blue-machines/tundra-mimi-encoder",
+  "created_at": "2026-08-18T08:04:13.000Z",
+  "updated_at": "2026-08-18T09:35:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "audio",
+    "speech",
+    "codec",
+    "mimi",
+    "indic",
+    "encoder",
+    "feature-extraction",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192452783,
+  "storage_human": "192 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyutai/mimi · Hugging Face",
+      "url": "https://huggingface.co/kyutai/mimi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mimi: Audio-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mimi-kyutai",
+      "snippet": "Overview Mimi is a high-fidelity audio neural codec developed by kyutai that compresses speech into audio tokens running at 12.5Hz with a bitrate of 1.1kbps. The model uses a streaming encoder-decoder architecture with a quantized latent space trained end-to-end on speech data, making it particularly suited for training speech language models or text-to-speech systems. It combines semantic and ..."
+    },
+    {
+      "title": "Blue Machines",
+      "url": "https://bluemachines.ai/",
+      "snippet": "Blue Machines is the world&#x27;s fastest enterprise-grade Voice AI platform - built for reliability, compliance, and scale in the era of Agentic AI."
+    },
+    {
+      "title": "Mimi · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mimi",
+      "snippet": "Mimi is a neural audio codec model with pretrained and quantized variants, designed for efficient speech representation and compression. The model operates at 1.1 kbps with a 12 Hz frame rate and uses a convolutional encoder-decoder architecture combined with a residual vector quantizer of 16 codebooks. Mimi outputs dual token streams i.e. semantic and acoustic to balance linguistic richness ..."
+    },
+    {
+      "title": "MimiModel | kyutai-labs/pocket-tts | DeepWiki",
+      "url": "https://deepwiki.com/kyutai-labs/pocket-tts/5.2-mimimodel",
+      "snippet": "MimiModel Relevant source files MimiModel is the audio codec component of Pocket TTS, serving a dual role as both an audio encoder and decoder. It encodes audio prompts into latent representations for voice cloning and decodes generated latents back into PCM audio. MimiModel uses a neural compression architecture based on SEANet (encoder/decoder) with transformer-based processing and ..."
+    }
+  ]
+}

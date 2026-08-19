@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "McG-221/Goetia-24B-v1.4-mlx-8Bit",
+  "slug": "mcg-221-goetia-24b-v1-4-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Goetia-24B-v1.4-mlx-8Bit",
+  "created_at": "2026-08-17T06:44:06.000Z",
+  "updated_at": "2026-08-17T06:44:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "float32",
+    "swearing",
+    "rp",
+    "horror",
+    "della",
+    "merge",
+    "mergekit",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "dataset:OccultAI/illuminati_imatrix_v1",
+    "base_model:Naphula/Goetia-24B-v1.4",
+    "base_model:quantized:Naphula/Goetia-24B-v1.4",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6630048000,
+  "parameters_human": "6.63B",
+  "storage_bytes": 25063295683,
+  "storage_human": "25.1 GB",
+  "base_model": "Naphula/Goetia-24B-v1.4",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McG-221/Goetia-24B-v1.4-mlx-8Bit - Hugging Face",
+      "url": "https://huggingface.co/McG-221/Goetia-24B-v1.4-mlx-8Bit",
+      "snippet": "McG-221 / Goetia-24B-v1.4-mlx-8Bit like 0 Text Generation Transformers Safetensors MLX OccultAI/illuminati_imatrix_v1 English mistral creative creative writing fiction writing plot generation sub-plot generation story generation scene continue storytelling fiction story science fiction romance all genres story writing vivid prosing vivid ..."
+    },
+    {
+      "title": "McG-221/Goetia-24B-v1.1-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Goetia-24B-v1.1-mlx-8Bit",
+      "snippet": "McG-221/Goetia-24B-v1.1-mlx-8Bit The Model McG-221/Goetia-24B-v1.1-mlx-8Bit was converted to MLX format from Naphula/Goetia-24B-v1.1 using mlx-lm version 0.28.3."
+    },
+    {
+      "title": "McG-221/Goetia-24B-v1.1-mlx-8Bit - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/McG-221/Goetia-24B-v1.1-mlx-8Bit",
+      "snippet": "Run McG-221/Goetia-24B-v1.1-mlx-8Bit with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "McG-221/Goetia-24B-v1.2-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Goetia-24B-v1.2-mlx-8Bit",
+      "snippet": "McG-221 / Goetia-24B-v1.2-mlx-8Bit like 1 MLX Safetensors mistral 8-bit precision Model card FilesFiles and versions xet Community Use this model McG-221/Goetia-24B-v1.2-mlx-8Bit Use with mlx"
+    },
+    {
+      "title": "McG-221/Goetia-24B-v1.3-absolute-heresy-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Goetia-24B-v1.3-absolute-heresy-mlx-8Bit",
+      "snippet": "The Model McG-221/Goetia-24B-v1.3-absolute-heresy-mlx-8Bit was converted to MLX format from MuXodious/Goetia-24B-v1.3-absolute-heresy using mlx-lm version 0.29.1."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ifmylove2011/girlslike-krea2",
+  "slug": "ifmylove2011-girlslike-krea2",
+  "author": "ifmylove2011",
+  "url": "https://huggingface.co/ifmylove2011/girlslike-krea2",
+  "created_at": "2026-07-20T02:02:01.000Z",
+  "updated_at": "2026-08-18T02:47:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "girlslike",
+    "krea2",
+    "text-to-image",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 29,
+  "downloads_30d": 13449,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2641986510,
+  "storage_human": "2.6 GB",
+  "base_model": "krea/Krea-2-Raw, krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

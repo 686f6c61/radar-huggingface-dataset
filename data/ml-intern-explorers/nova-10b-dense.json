@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ml-intern-explorers/nova-10b-dense",
+  "slug": "ml-intern-explorers-nova-10b-dense",
+  "author": "ml-intern-explorers",
+  "url": "https://huggingface.co/ml-intern-explorers/nova-10b-dense",
+  "created_at": "2026-08-14T03:11:36.000Z",
+  "updated_at": "2026-08-15T08:03:38.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ml-intern-explorers (ML intern explorers) - Hugging Face",
+      "url": "https://huggingface.co/ml-intern-explorers",
+      "snippet": "Org profile for ML intern explorers on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - huggingface/ml-intern: ml-intern: an open-source ML engineer ...",
+      "url": "https://github.com/huggingface/ml-intern",
+      "snippet": "An ML intern that autonomously researches, writes, and ships good quality ML related code using the Hugging Face ecosystem — with deep access to docs, papers, datasets, and cloud compute. Run ml-intern then /model to see the full list of suggested model ids (Claude, GPT, HF Router models like ..."
+    },
+    {
+      "title": "Dense Models | AI Model Guide",
+      "url": "https://maxkruse.github.io/vitepress-llm-recommends/model-types/dense/",
+      "snippet": "Straightforward architecture: Dense models follow standard transformer architectures without dynamic routing or conditional computation. Easier to train: Due to their simpler architecture, dense models are generally more straightforward to train (although training any large model is still extremely difficult)."
+    },
+    {
+      "title": "7 Best Small Language Models Under 10B Parameters in 2026",
+      "url": "https://www.labellerr.com/blog/best-small-language-models-under-10b-parameters/",
+      "snippet": "Discover the 7 best open-weight AI models under 10B parameters in 2026. Compare Granite, Qwen, Gemma, DeepSeek, Phi, and Llama across benchmarks, performance, hardware requirements, and real-world use cases."
+    },
+    {
+      "title": "InternLM · GitHub",
+      "url": "https://github.com/InternLM/",
+      "snippet": "Welcome to the InternLM (Intern Large Models) organization. Intern-series large models (chinese name: 书生) are developed by Shanghai AI Laboratory and we keep open-sourcing high quality LLMs/MLLMs as well as toolchains for development and application."
+    }
+  ]
+}

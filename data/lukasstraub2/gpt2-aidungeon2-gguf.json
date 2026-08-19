@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "lukasstraub2/gpt2-aidungeon2-gguf",
+  "slug": "lukasstraub2-gpt2-aidungeon2-gguf",
+  "author": "lukasstraub2",
+  "url": "https://huggingface.co/lukasstraub2/gpt2-aidungeon2-gguf",
+  "created_at": "2026-08-17T15:19:14.000Z",
+  "updated_at": "2026-08-17T15:23:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1557611200,
+  "parameters_human": "1.56B",
+  "storage_bytes": 5247618304,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

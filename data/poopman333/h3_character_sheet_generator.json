@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "PoopMan333/H3_Character_Sheet_Generator",
+  "slug": "poopman333-h3_character_sheet_generator",
+  "author": "PoopMan333",
+  "url": "https://huggingface.co/PoopMan333/H3_Character_Sheet_Generator",
+  "created_at": "2026-08-09T22:44:55.000Z",
+  "updated_at": "2026-08-17T23:20:34.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "workflow",
+    "character-sheet",
+    "turnaround",
+    "character-consistency",
+    "image-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 48,
+  "downloads_30d": 0,
+  "trending_score": 48,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31790918,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Model Architecture H3-Context-IR H3-Context-IR is a hosted preprocessing and orchestration system designed for free-form multimodal inputs. It interprets the relationships among text, images, audio, and reference videos, as well as how these materials relate to the intended generation output."
+    },
+    {
+      "title": "Character Sheet Maker & Character Creator | CharacterGen",
+      "url": "https://charactergen.app/character-sheet",
+      "snippet": "AI character generator for cartoons, books, and animation. Instantly create complete designs with turnarounds and expressions from photos."
+    },
+    {
+      "title": "AI Model Sheet Generator | modelsheets.ai",
+      "url": "https://modelsheet.org/",
+      "snippet": "Create Professional Character Model Sheets in Minutes Stop drawing the same character over and over. Our AI-powered generator helps artists, animators, and game developers create perfectly consistent, multi-view character reference sheets, complete with poses, expressions, and color palettes. Streamline your workflow and bring your characters to life faster."
+    },
+    {
+      "title": "H3 (Comfy) | Hailuo H3 by MiniMax Checkpoint - Civitai",
+      "url": "https://civitai.com/models/2821932/minimax",
+      "snippet": "Hailuo H3 is the newest video generation model from MiniMax, the Shanghai AI lab behind the Hailuo video app and the MiniMax text and audio model families. H3 generates native 2K video with synchronized audio in a single pass, at clip lengths up to 15 seconds."
+    },
+    {
+      "title": "AI Model Sheet Generator — Character Ref Sheets | LimeAILab",
+      "url": "https://limeailab.com/ai-image-generator/ai-model-sheet-generator",
+      "snippet": "The AI Model Sheet Generator turns one portrait or text prompt into a production-ready character reference sheet — multi-view turnaround, expressions, outfits, and props."
+    }
+  ]
+}

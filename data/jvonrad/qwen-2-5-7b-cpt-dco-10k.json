@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "jvonrad/Qwen-2.5-7B-CPT-DCO-10k",
+  "slug": "jvonrad-qwen-2-5-7b-cpt-dco-10k",
+  "author": "jvonrad",
+  "url": "https://huggingface.co/jvonrad/Qwen-2.5-7B-CPT-DCO-10k",
+  "created_at": "2026-08-17T13:01:03.000Z",
+  "updated_at": "2026-08-17T13:01:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "pt",
+    "id",
+    "ru",
+    "zh",
+    "ar",
+    "ja",
+    "sw",
+    "bn"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "multilingual",
+    "cross-lingual-consistency",
+    "base_model:adapter:jvonrad/Qwen-2.5-7B-TED",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "pt",
+    "id",
+    "ru",
+    "zh",
+    "ar",
+    "ja",
+    "sw",
+    "bn",
+    "dataset:jvonrad/PolyFact-Clean",
+    "arxiv:2606.06586",
+    "base_model:jvonrad/Qwen-2.5-7B-TED",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1303321052,
+  "storage_human": "1.3 GB",
+  "base_model": "jvonrad/Qwen-2.5-7B-TED",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jvonrad/Qwen-2.5-7B-TED-grpo · Hugging Face",
+      "url": "https://huggingface.co/jvonrad/Qwen-2.5-7B-TED-grpo",
+      "snippet": "jvonrad / Qwen-2.5-7B-TED-grpo like 0 Text Generation Transformers Safetensors qwen2 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "jvonrad/Qwen-2.5-7B-sft · Hugging Face",
+      "url": "https://huggingface.co/jvonrad/Qwen-2.5-7B-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-GPTQ-Int4 · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-7B-Instruct-GPTQ-Int4/summary",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "Qwen 2.5 7B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen2.5-7b",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, a range of base language models and instruction-tuned models are released, with sizes ranging from 0.5 to 72 billion parameters. Qwen2.5 introduces the following improvements over Qwen2: It possesses significantly more knowledge and has greatly enhanced capabilities in coding and mathematics, due to specialized expert ..."
+    },
+    {
+      "title": "qwen2.5:7b/model - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:7b/blobs/2bada8a74506",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Dinesh-18-AIML/deepvision-hybrid-vit",
+  "slug": "dinesh-18-aiml-deepvision-hybrid-vit",
+  "author": "Dinesh-18-AIML",
+  "url": "https://huggingface.co/Dinesh-18-AIML/deepvision-hybrid-vit",
+  "created_at": "2026-08-18T05:37:03.000Z",
+  "updated_at": "2026-08-18T05:43:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 370113501,
+  "storage_human": "370 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sonawanewdinesh18/DeepVision: DeepVision is an AI-powered ...",
+      "url": "https://github.com/sonawanewdinesh18/DeepVision",
+      "snippet": "DeepVision is a full-stack AI application structured into independent modules."
+    },
+    {
+      "title": "DeepVision: A Hybrid Deepfake Detection Framework Using Deep Learning ...",
+      "url": "https://irjiet.com/article/DeepVision-A-Hybrid-Deepfake-Detection-Framework-Using-Deep-Learning-Approaches/3230",
+      "snippet": "This paper introduces DeepVision, a hybrid deepfake detection framework that fuses EfficientNet-B0 with a Vision Transformer (ViTB/16) to exploit both local texture features and global spatial dependencies simultaneously."
+    },
+    {
+      "title": "PDF DeepVision: A Hybrid Deepfake Detection Framework Using Deep Learning ...",
+      "url": "https://irjiet.com/article_file/IRJIET1050381778836145.pdf",
+      "snippet": "To address these challenges, this paper proposes DeepVision, a hybrid deep learning framework for detecting deepfake images and videos. The proposed approach integrates EfficientNet-B0 with a Vision Transformer (ViT-B/16) architecture to capture both local texture features and global contextual information effectively."
+    },
+    {
+      "title": "GitHub - Abinesh-Srinivasan/diabetic-retinopathy-ai: Deep learning ...",
+      "url": "https://github.com/Abinesh-Srinivasan/diabetic-retinopathy-ai",
+      "snippet": "The hybrid model combines the strengths of both CNN and ViT using a parallel architecture. How it works: The same input image is fed simultaneously into: A CNN branch (EfficientNet) for local feature extraction A ViT branch for global contextual understanding Features from both branches are concatenated Fully connected layers fuse the information The final layer outputs class probabilities Why ..."
+    },
+    {
+      "title": "Hybrid Vision Transformer (ViT Hybrid) - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.34.0/model_doc/vit_hybrid",
+      "snippet": "This is the configuration class to store the configuration of a ViTHybridModel. It is used to instantiate a ViT Hybrid model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the ViT Hybrid google/vit-hybrid-base-bit-384 architecture."
+    }
+  ]
+}

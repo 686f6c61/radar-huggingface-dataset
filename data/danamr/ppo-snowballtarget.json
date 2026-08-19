@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "danamr/ppo-SnowballTarget",
+  "slug": "danamr-ppo-snowballtarget",
+  "author": "danamr",
+  "url": "https://huggingface.co/danamr/ppo-SnowballTarget",
+  "created_at": "2026-08-17T13:45:34.000Z",
+  "updated_at": "2026-08-17T13:45:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25724386,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "damnloveless/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/damnloveless/ppo-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "Adilbai/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ppo-SnowballTarget",
+      "snippet": "This model is a Proximal Policy Optimization (PPO) agent trained to play the SnowballTarget environment from Unity ML-Agents. The agent, named Julien the Bear 🐻, learns to accurately throw snowballs at spawning targets to maximize rewards."
+    },
+    {
+      "title": "Snowball-Target/README.md at main - GitHub",
+      "url": "https://github.com/huggingface/Snowball-Target/blob/main/README.md",
+      "snippet": "Snowball Target is a Unity ML-Agents environment where you need to train Julien the Bear to shoot snowballs onto spawning targets - Snowball-Target/README.md at main ..."
+    },
+    {
+      "title": "ppo-SnowballTarget huggingface.co api & kingabzpro ppo-SnowballTarget ...",
+      "url": "https://www.toolify.ai/ai-model/kingabzpro-ppo-snowballtarget",
+      "snippet": "ppo-SnowballTarget huggingface.co Url & kingabzpro ppo-SnowballTarget github link, click to try the AI model (ppo-SnowballTarget) demo, you can see the example of ppo-SnowballTarget huggingface.co Model."
+    },
+    {
+      "title": "SnowballTarget1---RL---UnityMLagents/README.md at main - GitHub",
+      "url": "https://github.com/dhruvil122/SnowballTarget1---RL---UnityMLagents/blob/main/README.md",
+      "snippet": "Contribute to dhruvil122/SnowballTarget1---RL---UnityMLagents development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/MiniMax-Music-3",
+  "slug": "comfy-org-minimax-music-3",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/MiniMax-Music-3",
+  "created_at": "2026-08-08T03:59:45.000Z",
+  "updated_at": "2026-08-17T06:04:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:finetune:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 181,
+  "downloads_30d": 285444,
+  "trending_score": 178,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72801587955,
+  "storage_human": "72.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Powered Music Creation - Artlist.io - Artlist",
+      "url": "https://duckduckgo.com/y.js?ad_domain=artlist.io&ad_provider=bingv7aa&ad_type=txad&click_metadata=45TT%2DNInbgIR2qknYTYPtZpywCsVwD8XTscj_eEtIywMRdWLFwJv_axHoE8KxpOxCFkh460TB6P6gEWbj6Wr8CHYiVrNyNLkXjt1L%2D68vwkNCFNGPXseatARquZed0T7vQ%2D__JWuqyXw%2DLVbLJorBqGolaOWCPx8XP%2DcqaKOIvI.biUf5vyQ9CMbP5jAMFtKFQ&rut=8600a3a28552ecac224283f5ff55cb91b7d806a177c195aea36708345821cb30&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De85blHPc7T91XlTT0MSQ1xijVUCUz6gvFp5s2M6KnH8pSq9414nVkVTloQL8UTClAXgCQCmHkRSKo1uDlZykpYjhl6ERpd1TC9CxcJySIi2pFg1B94OP_faVmUhZ3DozPfp0REKtCCMGEW40JWc00vqYhoHJFyGy5DyuJhYe0IP%2DhNhsYTpYydptZIa0GGBoBsspWl72rlyzsCM4cWsdcTNXJg_Vc%26u%3DaHR0cHMlM2ElMmYlMmZ0b29sa2l0LmFydGxpc3QuaW8lMmZtdXNpYy1nZW5lcmF0b3IlM2Ztb2RlJTNkbXVzaWMlMjZtb2RlbEdyb3VwSUQlM2QzNTYlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2Q2Mjc1NjIwMzYlMjZ1dG1fY29udGVudCUzZDExNTAwOTEwMzgxOTQyODQlMjZ1dG1fdGVybSUzZGFpJTI1MjBzb25ncyUyNmtleXdvcmQlM2RhaSUyNTIwc29uZ3MlMjZhZCUzZCUyNm1hdGNodHlwZSUzZGIlMjZkZXZpY2UlM2RjJTI2bXNjbGtpZCUzZDM5ZDI5Y2Y2MGFkNzFkOWY5NTY2ZjY4ODE2MDVhN2I1JTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkR2VuQUlfdENQQSUyNnV0bV90ZXJtJTNkYWklMjUyMHNvbmdzJTI2dXRtX2NvbnRlbnQlM2RBSV9NdXNpY18lMjU1QmFpX211c2ljJTI1NUQ%26rlid%3D39d29cf60ad71d9f9566f6881605a7b5&vqd=4-260261746998133947617424032030781007985&iurl=%7B1%7DIG%3D7C54F696856E4EAE9B34C89B869D3AF1%26CID%3D245515506B6667B7287F02E46A406641%26ID%3DDevEx%2C5037.1",
+      "snippet": "Rtlist&#x27;s AI Music Maker for Ads, Videos, and All Content. Studio-Quality, Ready to Use. Get World-Leading AI Models, Always Up-To-Date, And All In One Place, Only With Artlist."
+    },
+    {
+      "title": "AI Music Creator: Songer - Quick & Easy Song Maker",
+      "url": "https://duckduckgo.com/y.js?ad_domain=songer.co&ad_provider=bingv7aa&ad_type=txad&click_metadata=RcbCYQzMJmHtI8OyIK3iS7PCd6v0DtmGOBSOn3%2D9vmWD4dkwjxHYih65aKOPRDy_4etlYLUQcOyFS6dJgIeJ2jCiwWmB3DtHCRPrgXEHissKRWyOPAOrGohh0MqLjVEh6eRCLDOAqm_iQ%2Dx%2DOsLw7pgzTzC5w43SHyCOrFOAMmc.b67HEq1oMHSDI1horWcw9Q&rut=b7943c463d744bb1efbd642cf5c16b23b5ea27c1bd3aaf2388fdd53898290a9f&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8m6LX5ny%2D0b%2Dn_DFl%2Dz_5YTVUCUxKeYh18z5ERl2nD9YkI_9SlvEpG6PtEAFKSbfLr8WQADXg0EtZR6HhkpEudOjUC83hZaWAfKr_Dklh3l5Off674hrj9l4tQGjAjEocWLNp5mNhKlqEXN_ykZHnV9dtawzBnrq7Z5o6LKxppEFFTJVQPDNf93fdB0JuyGJJIObVRriEuZR4ZxArs83ADdtSclw%26u%3DaHR0cHMlM2ElMmYlMmZzb25nZXIuY28lMmZscCUyZmdhZHMlMmZscDElM2ZnYWRpZCUzZCUyNm1zY2xraWQlM2QxMDBiZWVkYzZkOWUxYmIyYTRhZTg0YTI3MTRjYjcyYSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFYyJTI1M0ElMjUyMEdlbmVyaWMlMjUyMC0lMjUyME90aGVyJTI1MjBMb2NhdGlvbnMlMjUyMC0lMjUyMFRDUEElMjUyMDUwJTI1MjB0byUyNTIwNDAlMjZ1dG1fdGVybSUzZG11c2ljJTI1MjBtYWtlciUyNTIwYWklMjZ1dG1fY29udGVudCUzZFBlcnNvbmFsaXplZCUyNTIwQUklMjUyMFNvbmclMjUyMC0lMjUyMEJNTQ%26rlid%3D100beedc6d9e1bb2a4ae84a2714cb72a&vqd=4-77627299950879807577434322465040558298&iurl=%7B1%7DIG%3D7C54F696856E4EAE9B34C89B869D3AF1%26CID%3D245515506B6667B7287F02E46A406641%26ID%3DDevEx%2C5042.1",
+      "snippet": "Songer Helps You Turn Your Musical Ideas Into Hit Songs In Minutes. Start Composing Now. Create A Personalized Song With AI. Perfect For Gifts, Special Occasions Or Just For Fun"
+    },
+    {
+      "title": "Comfy-Org/MiniMax-Music-3 · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-Music-3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comfy-Org/MiniMax-Music-3 at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-Music-3/tree/main/vae",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Minimax Music 3: Open-Weight AI Music Model Imminent",
+      "url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/minimax-music-3-open-weight-ai-music-model-imminent",
+      "snippet": "Minimax Music 3, a new open-weight AI music generation model, appears to be on the verge of release, with strong indications from Hugging Face and Comfy-Org."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dementor-research/self_sft_chatbot_arena_gpt-oss-20b_as_gpt-oss-20b_seed42",
+  "slug": "dementor-research-self_sft_chatbot_arena_gpt-oss-20b_as_gpt-oss-20b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/self_sft_chatbot_arena_gpt-oss-20b_as_gpt-oss-20b_seed42",
+  "created_at": "2026-08-16T21:59:48.000Z",
+  "updated_at": "2026-08-16T22:00:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "self_sft",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

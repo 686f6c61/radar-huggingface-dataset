@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "michel4j/mxsamples",
+  "slug": "michel4j-mxsamples",
+  "author": "michel4j",
+  "url": "https://huggingface.co/michel4j/mxsamples",
+  "created_at": "2026-08-15T13:12:01.000Z",
+  "updated_at": "2026-08-15T13:37:46.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44058329,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "📊 Model Comparison Matrix: Benchmark comparisons between MiniMax H3, Seedance 2.5, Wan 2.1, Kling AI, Sora, and CogVideoX. 🌐 Chinese AI Video Generator Directory: Complete guide for international creators to access Chinese AI models without native phone registration, plus Faceless Channel guides."
+    },
+    {
+      "title": "michel4j (Michel 4J) · GitHub",
+      "url": "https://github.com/michel4j",
+      "snippet": "A graph representing michel4j&#x27;s contributions from June 29, 2025 to July 04, 2026. The contributions are 98% commits, 1% pull requests, 1% issues, 0% code review."
+    },
+    {
+      "title": "Models - Microsoft AI",
+      "url": "https://microsoft.ai/models/",
+      "snippet": "Helps your engineering team write better code faster, with a lightweight, agentic model built into GitHub Copilot and VS Code."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

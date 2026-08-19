@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "karantonis/bayesclue-checkpoints",
+  "slug": "karantonis-bayesclue-checkpoints",
+  "author": "karantonis",
+  "url": "https://huggingface.co/karantonis/bayesclue-checkpoints",
+  "created_at": "2026-06-21T07:34:26.000Z",
+  "updated_at": "2026-08-17T13:42:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "uncertainty-quantification",
+    "bayesian",
+    "grpo",
+    "lora",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151398488404,
+  "storage_human": "151.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

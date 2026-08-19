@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "killvung/orbit-chase-linear-sarsa-policy-weights",
+  "slug": "killvung-orbit-chase-linear-sarsa-policy-weights",
+  "author": "killvung",
+  "url": "https://huggingface.co/killvung/orbit-chase-linear-sarsa-policy-weights",
+  "created_at": "2026-08-18T00:03:17.000Z",
+  "updated_at": "2026-08-18T00:05:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "npz",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28502754,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - killvung/reinforcement-learning-orbit-chaser: Continuous",
+      "url": "https://github.com/killvung/reinforcement-learning-orbit-chaser",
+      "snippet": "Continuous. Contribute to killvung/reinforcement-learning-orbit-chaser development by creating an account on GitHub."
+    },
+    {
+      "title": "SARSA (State-Action-Reward-State-Action) in Reinforcement Learning",
+      "url": "https://www.geeksforgeeks.org/machine-learning/sarsa-reinforcement-learning/",
+      "snippet": "SARSA (State-Action-Reward-State-Action) is an on-policy reinforcement learning (RL) algorithm that helps an agent to learn an optimal policy by interacting with its environment."
+    },
+    {
+      "title": "SARSA Reinforcement Learning - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/machine_learning/machine_learning_sarsa_reinforcement_learning.htm",
+      "snippet": "SARSA stands for State-Action-Reward-State-Action, which is a modified version of the Q-learning algorithm where the target policy is the same as the behavior policy. The two consecutive state-action pairs and the immediate reward received by the agent while transitioning from the first state to the next state determine the updated Q value, so this method is called SARSA. What is SARSA? State ..."
+    },
+    {
+      "title": "Reinforcement Learning Tutorial: Semi-gradient n-step Sarsa and Sarsa ...",
+      "url": "https://michaeloneill.github.io/RL-tutorial.html",
+      "snippet": "Value functions, policy iteration, on vs off-policy control, bootstrapping, tabular vs approximate solution methods, state featurization and eligibility traces can all be understood by studying these two algorithms. Part 1 of the tutorial summarises the key theoretical concepts in RL that n-step Sarsa and Sarsa (λ λ $&#92;lambda$) draw upon."
+    },
+    {
+      "title": "On the Convergence of SARSA with Linear Function Approximation",
+      "url": "https://arxiv.org/pdf/2202.06828",
+      "snippet": "One possible solution is linear func-tion approximation, which approximates the action values via the inner product of state-action features and a learnable weight vector. The behavior of SARSA with linear function approximation (linear SARSA) is, however, less understood."
+    }
+  ]
+}

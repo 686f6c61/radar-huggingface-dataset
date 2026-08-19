@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/L3.1-Beastsv2-12B-i1-GGUF",
+  "slug": "mradermacher-l3-1-beastsv2-12b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/L3.1-Beastsv2-12B-i1-GGUF",
+  "created_at": "2026-08-18T02:13:23.000Z",
+  "updated_at": "2026-08-18T04:31:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:kromcomp/L3.1-Beastsv2-12B",
+    "base_model:quantized:kromcomp/L3.1-Beastsv2-12B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 11956310080,
+  "parameters_human": "11.96B",
+  "storage_bytes": 137526933952,
+  "storage_human": "137.5 GB",
+  "base_model": "kromcomp/L3.1-Beastsv2-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/L3.1-Smthv1-12B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/L3.1-Smthv1-12B-i1-GGUF",
+      "snippet": "mradermacher / L3.1-Smthv1-12B-i1-GGUF like 1 Transformers GGUF English imatrix conversational Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1l_wRGeD-LnRl3VtZHDc7epW_XW0nJvew?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Model Details - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2FL3.1-Artemis-b-8B-i1-GGUF",
+      "snippet": "GGUF model details and download MyGGUF GGUF model search and download"
+    }
+  ]
+}

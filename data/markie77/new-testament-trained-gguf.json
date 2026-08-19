@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Markie77/new-testament-trained-GGUF",
+  "slug": "markie77-new-testament-trained-gguf",
+  "author": "Markie77",
+  "url": "https://huggingface.co/Markie77/new-testament-trained-GGUF",
+  "created_at": "2026-08-15T09:17:22.000Z",
+  "updated_at": "2026-08-15T09:19:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gpt_oss",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "mxfp4",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 13792637024,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:14:24.529Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to train a gguf model? : r/KoboldAI - Reddit",
+      "url": "https://www.reddit.com/r/KoboldAI/comments/17t1d85/how_to_train_a_gguf_model/",
+      "snippet": "I want to create my own gguf model. I have a lot of text files. How do I train a gguf model? I want to learn pre-trained gguf using a text file that I have, but when I asked a question to a community I know, I only received criticism without even informing me. What tool should I use to create a gguf model?"
+    }
+  ]
+}

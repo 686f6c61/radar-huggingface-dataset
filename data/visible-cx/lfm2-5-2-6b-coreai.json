@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "visible-cx/LFM2.5-2.6B-CoreAI",
+  "slug": "visible-cx-lfm2-5-2-6b-coreai",
+  "author": "visible-cx",
+  "url": "https://huggingface.co/visible-cx/LFM2.5-2.6B-CoreAI",
+  "created_at": "2026-08-17T11:17:03.000Z",
+  "updated_at": "2026-08-17T22:35:52.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "core-ai",
+    "aimodel",
+    "apple-silicon",
+    "on-device",
+    "quantized",
+    "int8",
+    "lfm2.5",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10929898556,
+  "storage_human": "10.9 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-2.6B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-2.6B-MLX · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-MLX",
+      "snippet": "LFM2.5 is a new family of hybrid models designed for on-device deployment. It builds on the LFM2 architecture with extended pre-training and reinforcement learning."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    },
+    {
+      "title": "Deploy local agents everywhere with LFM2.5-2.6B - Hugging Face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+      "snippet": "Due to its efficient LFM2 architecture, LFM2.5-2.6B is the fastest model we tested, with decode speeds of 220 tokens/s on an M5 Max and 113 tokens/s on a Ryzen AI Max+ 395."
+    },
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    }
+  ]
+}

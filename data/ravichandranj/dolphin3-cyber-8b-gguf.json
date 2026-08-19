@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "RavichandranJ/Dolphin3-Cyber-8B-GGUF",
+  "slug": "ravichandranj-dolphin3-cyber-8b-gguf",
+  "author": "RavichandranJ",
+  "url": "https://huggingface.co/RavichandranJ/Dolphin3-Cyber-8B-GGUF",
+  "created_at": "2026-02-13T18:01:26.000Z",
+  "updated_at": "2026-06-08T20:16:05.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "text-generation",
+    "GGUF",
+    "llama-cpp",
+    "unsloth",
+    "cybersecurity",
+    "pentesting",
+    "security",
+    "abliterated",
+    "uncensored",
+    "ethical-hacking",
+    "red-team",
+    "blue-team",
+    "infosec",
+    "offensive-security",
+    "CTF",
+    "bug-bounty",
+    "conversational",
+    "en",
+    "dataset:custom-cybersecurity-dataset",
+    "base_model:huihui-ai/Dolphin3.0-Llama3.1-8B-abliterated",
+    "base_model:quantized:huihui-ai/Dolphin3.0-Llama3.1-8B-abliterated",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 160,
+  "downloads_30d": 58669,
+  "trending_score": 8,
+  "parameters": 8030277696,
+  "parameters_human": "8.03B",
+  "storage_bytes": 69610066944,
+  "storage_human": "69.6 GB",
+  "base_model": "huihui-ai/Dolphin3.0-Llama3.1-8B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RavichandranJ/Dolphin3-Cyber-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/RavichandranJ/Dolphin3-Cyber-8B-GGUF",
+      "snippet": "Jan.ai Open Jan → Hub → Import Model Paste the GGUF download URL Configure context length to 2048 Start chatting in the Thread tab"
+    },
+    {
+      "title": "Dolphin3-Cyber-8B-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dolphin3-cyber-8b-gguf-ravichandranj",
+      "snippet": "Overview Dolphin3-Cyber-8B-GGUF is a cybersecurity-specialized 8-billion parameter language model built on the Llama 3.1 architecture and fine-tuned exclusively for offensive security, defensive security, vulnerability research, and exploit development. Maintained by RavichandranJ, the model uses LoRA adapters with a rank of 16 trained via Unsloth at 2x speed, then converted to 11 different ..."
+    },
+    {
+      "title": "RavichandranJ/Dolphin3-Cyber-8B-GGUF at refs/pr/1 - Hugging Face",
+      "url": "https://huggingface.co/RavichandranJ/Dolphin3-Cyber-8B-GGUF/tree/refs%2Fpr%2F1",
+      "snippet": "RavichandranJ / Dolphin3-Cyber-8B-GGUF like 30 Text Generation Transformers GGUF custom-cybersecurity-dataset English llama GGUF llama-cpp unsloth cybersecurity pentesting security abliterated uncensored ethical-hacking red-team blue-team infosec offensive-security CTF bug-bounty conversational License:llama3.1 Model card FilesFiles and ..."
+    },
+    {
+      "title": "RavichandranJ/Dolphin3-Cyber-8B-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/ravichandranj-dolphin3-cyber-8b-gguf",
+      "snippet": "🌟 Overview Dolphin3-Cyber-8B is a domain-specific large language model fine-tuned exclusively for cybersecurity applications. Built on top of the powerful Dolphin3.-Llama3.1-8B-abliterated base model, this model has been enhanced with specialized security knowledge to serve as an AI-powered cybersecurity assistant."
+    },
+    {
+      "title": "Dolphin3-Cyber-8B-GGUF by RavichandranJ | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/ravichandranj-dolphin3-cyber-8b-gguf",
+      "snippet": "Dolphin3-Cyber-8B-GGUF is a open-weight RavichandranJ llm model with a 131,072 token context window. Running this yourself: desktop gpu should be enough."
+    }
+  ]
+}

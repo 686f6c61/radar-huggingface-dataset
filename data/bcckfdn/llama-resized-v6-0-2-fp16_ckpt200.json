@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/llama-resized-v6.0.2-fp16_ckpt200",
+  "slug": "bcckfdn-llama-resized-v6-0-2-fp16_ckpt200",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/llama-resized-v6.0.2-fp16_ckpt200",
+  "created_at": "2026-08-16T09:23:34.000Z",
+  "updated_at": "2026-08-18T09:15:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 6939701248,
+  "parameters_human": "6.94B",
+  "storage_bytes": 29101956819,
+  "storage_human": "29.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bcckfdn/llama-resized-v4.6.0-gguf · Hugging Face",
+      "url": "https://huggingface.co/bcckfdn/llama-resized-v4.6.0-gguf",
+      "snippet": "Instructions to use bcckfdn/llama-resized-v4.6.-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use bcckfdn/llama-resized-v4.6.-gguf with llama-cpp-python:"
+    },
+    {
+      "title": "bcckfdn/llama-resized-v5.0.2-fp16_ckpt1500 · Hugging Face",
+      "url": "https://huggingface.co/bcckfdn/llama-resized-v5.0.2-fp16_ckpt1500",
+      "snippet": "bcckfdn / llama-resized-v5..2-fp16_ckpt1500 like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 7B params Tensor type F16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Qualcomm® AI Hub Models - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models",
+      "snippet": "Using Qualcomm® AI Hub Workbench, the export script will: Compile the model for the chosen device and target runtime (see: Compiling Models on AI Hub Workbench). If applicable, Quantize the model (see: Quantization on AI Hub Workbench) Profile the compiled model on a real device in the cloud (see: Profiling Models on AI Hub Workbench)."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Orannue/resubmit",
+  "slug": "orannue-resubmit",
+  "author": "Orannue",
+  "url": "https://huggingface.co/Orannue/resubmit",
+  "created_at": "2026-08-01T12:59:43.000Z",
+  "updated_at": "2026-08-18T02:57:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2501.01097",
+    "arxiv:2412.12888",
+    "arxiv:2406.14130",
+    "arxiv:2401.16224",
+    "arxiv:2311.09265",
+    "arxiv:2305.14677",
+    "arxiv:2308.03463",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96488908811,
+  "storage_human": "96.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orannue/resubmit · Hugging Face",
+      "url": "https://huggingface.co/Orannue/resubmit",
+      "snippet": "Orannue / resubmit like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Azure OpenAI reasoning models - GPT-5 series, o3-mini, o1, o1-mini ...",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/reasoning",
+      "snippet": "Azure OpenAI reasoning models are designed to tackle reasoning and problem-solving tasks with increased focus and capability. These models spend more time processing and understanding the user&#x27;s request, making them exceptionally strong in areas like science, coding, and math compared to previous iterations. Key capabilities of reasoning models: Complex Code Generation: Capable of generating ..."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "Azure OpenAI in Microsoft Foundry Models working with models ...",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/working-with-models",
+      "snippet": "Azure OpenAI in Microsoft Foundry Models is powered by a diverse set of models with different capabilities and price points. Model availability varies by region. You can get a list of models that are available for both inference and fine-tuning by your Azure OpenAI resource by using the Models List API. This article shows you how to: Configure automatic model updates. View and update a ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: DeepSeek-V4-Flash-0731 by DeepSeek on Jul 31 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

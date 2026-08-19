@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kepom/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated",
+  "slug": "kepom-huihui-qwen3-5-27b-claude-4-6-opus-abliterated",
+  "author": "kepom",
+  "url": "https://huggingface.co/kepom/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated",
+  "created_at": "2026-08-14T21:37:10.000Z",
+  "updated_at": "2026-08-14T21:37:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "Claude",
+    "reasoning",
+    "chain-of-thought",
+    "Dense",
+    "conversational",
+    "base_model:Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+    "base_model:finetune:Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55583011775,
+  "storage_human": "55.6 GB",
+  "base_model": "Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated - Hugging Face",
+      "url": "https://huggingface.co/darkneighbor667/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated",
+      "snippet": "huihui-ai/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated This is an uncensored version of Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled created with abliteration (see remove-refusals-with-transformers to know more about it). This is a crude, proof-of-concept implementation to remove refusals from an LLM model without using ..."
+    },
+    {
+      "title": "Qwen3.5-27B Claude 4.6 Opus Abliterated - GitHub",
+      "url": "https://github.com/MihailKostov/Qwen3.5-27B-Claude-4.6-Opus-abliterated-i1-GGUF",
+      "snippet": "A local LLM server running Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated via llama.cpp, exposed through a FastAPI wrapper with streaming support, and optionally tunneled to the internet via Cloudflare ..."
+    },
+    {
+      "title": "Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled · Models",
+      "url": "https://www.modelscope.cn/models/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
+      "snippet": "🌟 Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled 🔥 Update (April 5): I&#x27;ve released the complete training notebook, codebase, and a comprehensive PDF guide to help beginners and enthusiasts understand and reproduce this model&#x27;s fine-tuning process. ️ Special thanks to the Unsloth open-source library and @KyleHessling1 for their support."
+    },
+    {
+      "title": "Huihui Qwen3.5 27B Claude 4.6 Opus abliterated — ThinkLLM",
+      "url": "https://thinkllm.dev/models/huihui-qwen3-5-27b-claude-4-6-opus-abliterated",
+      "snippet": "A community-modified variant of Qwen&#x27;s 27B model that has undergone abliteration — a technique that removes refusal behaviors from the base model. This means it responds more freely to a wider range of prompts without built-in content restrictions. It handles both text and image inputs, inheriting the multimodal capabilities of its Qwen 3 lineage."
+    }
+  ]
+}

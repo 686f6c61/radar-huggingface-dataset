@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "aclava/stable-code-instruct-3b-Q6_K-GGUF",
+  "slug": "aclava-stable-code-instruct-3b-q6_k-gguf",
+  "author": "aclava",
+  "url": "https://huggingface.co/aclava/stable-code-instruct-3b-Q6_K-GGUF",
+  "created_at": "2026-08-18T02:39:14.000Z",
+  "updated_at": "2026-08-18T02:39:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "causal-lm",
+    "code",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:stabilityai/stable-code-instruct-3b",
+    "base_model:quantized:stabilityai/stable-code-instruct-3b",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 2795443200,
+  "parameters_human": "2.80B",
+  "storage_bytes": 2295985856,
+  "storage_human": "2.3 GB",
+  "base_model": "stabilityai/stable-code-instruct-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MultiPL-HumanEval (Python)",
+      "metric": "pass@1",
+      "value": 32.4
+    },
+    {
+      "task": null,
+      "dataset": "MultiPL-HumanEval (Python)",
+      "metric": "pass@1",
+      "value": 30.9
+    },
+    {
+      "task": null,
+      "dataset": "MultiPL-HumanEval (Python)",
+      "metric": "pass@1",
+      "value": 32.1
+    },
+    {
+      "task": null,
+      "dataset": "MultiPL-HumanEval (Python)",
+      "metric": "pass@1",
+      "value": 32.1
+    },
+    {
+      "task": null,
+      "dataset": "MultiPL-HumanEval (Python)",
+      "metric": "pass@1",
+      "value": 24.2
+    },
+    {
+      "task": null,
+      "dataset": "MultiPL-HumanEval (Python)",
+      "metric": "pass@1",
+      "value": 23
+    }
+  ],
+  "sources": [
+    {
+      "title": "stabilityai/stable-code-instruct-3b · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-code-instruct-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Stability-AI/StableCode: Code Assistance/ Developer ...",
+      "url": "https://github.com/Stability-AI/StableCode",
+      "snippet": "StableCode: Stability AI Developer Productivity/Developer \" \"a colorful parrot with glasses typing away at a computer, flat icon, vector\" - SDXL 0.9 \" — Stable Diffusion XL This repository contains Stability AI&#x27;s ongoing development of the StableCode series of code models and will be continuously updated with new checkpoints."
+    },
+    {
+      "title": "Download stable code instruct 3b Q6_K GGUF · 2.3 GB",
+      "url": "https://graysoft.dev/download/models/bartowski__stable-code-instruct-3b-gguf/q6-k",
+      "snippet": "stable code instruct 3b is a 3B parameter language model. Fine-tuned for instruction following and conversational AI. Available in GGUF format for fast local inference with llama.cpp, guIDE, LM Studio, and Ollama. Download the Q6_K quantisation (2.3 GB, Very high quality — recommended for demanding tasks.) — no redirect, starts immediately."
+    },
+    {
+      "title": "stable-code-instruct-3b-Q6_K.gguf - Hugging Face",
+      "url": "https://huggingface.co/bartowski/stable-code-instruct-3b-GGUF/blob/main/stable-code-instruct-3b-Q6_K.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Stable Code Instruct 3B - Stability AI",
+      "url": "https://stability.ai/news-updates/introducing-stable-code-instruct-3b",
+      "snippet": "Stable Code Instruct 3B is our latest instruction-tuned large language model, built on top of Stable Code 3B. This model enhances code completion and supports natural language interactions, aiming to improve the efficiency and intuitiveness of programming and software development related tasks."
+    }
+  ]
+}

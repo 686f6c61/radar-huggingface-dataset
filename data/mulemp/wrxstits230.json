@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "mulemp/wrxstits230",
+  "slug": "mulemp-wrxstits230",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/wrxstits230",
+  "created_at": "2026-07-24T12:02:23.000Z",
+  "updated_at": "2026-08-18T06:04:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4334589767,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

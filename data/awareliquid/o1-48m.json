@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AwareLiquid/O1-48M",
+  "slug": "awareliquid-o1-48m",
+  "author": "AwareLiquid",
+  "url": "https://huggingface.co/AwareLiquid/O1-48M",
+  "created_at": "2026-08-18T07:37:29.000Z",
+  "updated_at": "2026-08-18T07:53:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "liquid-neural-networks",
+    "microtubules",
+    "long-context",
+    "text-generation",
+    "o1",
+    "edge",
+    "en",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195754688,
+  "storage_human": "196 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "awareliquid.ai - Bio-inspired Cognitive AI Framework | M1 · O1",
+      "url": "https://awareliquid.ai/",
+      "snippet": "AwareLiquid is a bio-inspired cognitive AI framework. The attention-free O-Series carries a fixed-size state instead of a growing KV-cache, so context length stops dictating memory."
+    },
+    {
+      "title": "About · AwareLiquid — Open Research on Continual Learning",
+      "url": "https://awareliquid.ai/about",
+      "snippet": "The live demo has two distinct models: M1 (the large, cognitive model — a liquid-core adapter, a fraction of a percent of the weights) on a frozen TinyLlama-1.1B-Chat base for bilingual Q&A — general language ability comes from the base, GWT + continual-learning mechanisms from the adapter — and O1 (the small, edge model), a 48M from ..."
+    },
+    {
+      "title": "GitHub - AwareLiquid/M1: MT-LNN: Microtubule-inspired liquid neural ...",
+      "url": "https://github.com/AwareLiquid/M1",
+      "snippet": "MT-LNN: Microtubule-inspired liquid neural network — bio-inspired LLM architecture with O (1) working memory - AwareLiquid/M1"
+    },
+    {
+      "title": "GitHub - everest-an/M1: AwareLiquid — MT-LNN with cloud-augmented ...",
+      "url": "https://github.com/everest-an/M1",
+      "snippet": "AwareLiquid — MT-LNN with cloud-augmented memory, deliberation router, capsule v2, and Φ̂ reasoning trace. Improved successor to O1 (clean MT-LNN prototype). - everest-an/M1"
+    },
+    {
+      "title": "LFM2.5-8B-A1B: An Even Better On-Device Mixture of Experts",
+      "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+      "snippet": "Explore Liquid AI&#x27;s LFM2.5-8B-A1B, an on-device Mixture of Experts model with 128K context, fast tool calling, and strong AI benchmarks."
+    }
+  ]
+}

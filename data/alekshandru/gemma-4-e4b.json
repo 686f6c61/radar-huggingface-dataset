@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "alekshandru/gemma-4-E4B",
+  "slug": "alekshandru-gemma-4-e4b",
+  "author": "alekshandru",
+  "url": "https://huggingface.co/alekshandru/gemma-4-E4B",
+  "created_at": "2026-08-17T07:12:34.000Z",
+  "updated_at": "2026-08-17T07:12:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 48106481590,
+  "storage_human": "48.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

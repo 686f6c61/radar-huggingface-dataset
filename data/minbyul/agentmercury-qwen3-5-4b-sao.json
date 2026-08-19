@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Minbyul/AgentMercury-Qwen3.5-4B-SAO",
+  "slug": "minbyul-agentmercury-qwen3-5-4b-sao",
+  "author": "Minbyul",
+  "url": "https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-4B-SAO",
+  "created_at": "2026-08-18T05:30:21.000Z",
+  "updated_at": "2026-08-18T05:31:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agent",
+    "tool-use",
+    "mcp",
+    "reinforcement-learning",
+    "actor-critic",
+    "sao",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2607.07508",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8424366230,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minbyul/AgentMercury-Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Minbyul/AgentMercury-Qwen3.5-4B at main - Hugging Face",
+      "url": "https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-4B/tree/main",
+      "snippet": "Minbyul / AgentMercury-Qwen3.5-4B like 0 Image-Text-to-Text Transformers Safetensors English qwen3_5 agent tool-use mcp reinforcement-learning grpo conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AgentMercury-Qwen3.5-4B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Minbyul/AgentMercury-Qwen3.5-4B",
+      "snippet": "Benchmark results (improvement over the base model) Only benchmarks where AgentMercury improves over the Qwen3.5-4B base are listed, with the absolute gain (Δ) over base. Evaluated with an OpenAI-compatible endpoint (sglang, 32k context), N repeats per cell."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    }
+  ]
+}

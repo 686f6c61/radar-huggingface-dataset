@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/DualMind-GGUF",
+  "slug": "reaperdoesntknow-dualmind-gguf",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/DualMind-GGUF",
+  "created_at": "2026-03-29T17:20:05.000Z",
+  "updated_at": "2026-08-18T13:15:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "dualmind",
+    "knowledge-distillation",
+    "self-critique",
+    "convergent-intelligence",
+    "convergentintel",
+    "distillation",
+    "edge",
+    "en",
+    "base_model:reaperdoesntknow/DualMind",
+    "base_model:quantized:reaperdoesntknow/DualMind",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2349,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 8988962688,
+  "storage_human": "9.0 GB",
+  "base_model": "reaperdoesntknow/DualMind",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/DualMind-GGUF · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/DualMind-GGUF",
+      "snippet": "reaperdoesntknow / DualMind-GGUF like 0 GGUF English dualmind knowledge-distillation self-critique convergent-intelligence convergentintel distillation edge conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "reaperdoesntknow/DualMind · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/DualMind",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "A privacy-first, beginner-friendly desktop application for running large language models fully locally on Windows, Linux, and macOS. Load any GGUF model (Mistral, LLaMA, DeepSeek, Qwen, and thousands more from Hugging Face) and chat with it — with a built-in agentic mode that can read, create, edit, and organize files in a workspace you choose. No data ever leaves your computer. 📦 Also ..."
+    },
+    {
+      "title": "GGUF Loader - Local AI Inference Engine | Run GGUF Models Offline with ...",
+      "url": "https://ggufloader.github.io/",
+      "snippet": "We&#x27;re excited to announce the launch of Lawyer Assistant, a new addition to the local AI ecosystem. Ask questions about your contracts in plain English and get answers with exact page numbers cited from your own documents — nothing leaves your machine and it works fully offline, so it fits right alongside GGUF Loader&#x27;s privacy-first approach."
+    }
+  ]
+}

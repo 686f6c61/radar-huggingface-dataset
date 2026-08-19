@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_8434_92fd8767_cand_text_classifier_alpha",
+  "slug": "roy229-huggingface_8434_92fd8767_cand_text_classifier_alpha",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_8434_92fd8767_cand_text_classifier_alpha",
+  "created_at": "2026-08-14T16:16:32.000Z",
+  "updated_at": "2026-08-14T16:16:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

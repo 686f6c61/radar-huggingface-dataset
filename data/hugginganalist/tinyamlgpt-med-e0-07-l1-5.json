@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "HuggingAnalist/TinyAmlGpt-Med-e0.07-l1.5",
+  "slug": "hugginganalist-tinyamlgpt-med-e0-07-l1-5",
+  "author": "HuggingAnalist",
+  "url": "https://huggingface.co/HuggingAnalist/TinyAmlGpt-Med-e0.07-l1.5",
+  "created_at": "2026-08-14T04:53:29.000Z",
+  "updated_at": "2026-08-14T06:56:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "text-generation",
+    "tinystories",
+    "gpt",
+    "self-distillation",
+    "dataset:roneneldan/TinyStories",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 356,
+  "trending_score": 0,
+  "parameters": 123551232,
+  "parameters_human": "123.6M",
+  "storage_bytes": 494213208,
+  "storage_human": "494 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:38:40.331Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingAnalist (AnonymousCat)",
+      "url": "https://huggingface.co/HuggingAnalist/datasets",
+      "snippet": "User profile of AnonymousCat on Hugging Face"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Daily HuggingFace AI Papers - GitHub",
+      "url": "https://github.com/AtharvaDomale/Daily-HuggingFace-AI-Papers",
+      "snippet": "Latest AI research papers from HuggingFace Papers, updated daily 1. Intern-S2-Preview: Scientific Agentic Foundation Model ⭐ 0 👥 Authors: Kai Chen, Guanzhou Chen, Chiyu Chen, Jiaqi Cao, Lei Bai"
+    },
+    {
+      "title": "GitHub - SqueezeAILab/TinyAgent: [EMNLP 2024 Demo] TinyAgent: Function ...",
+      "url": "https://github.com/SqueezeAILab/TinyAgent",
+      "snippet": "TinyAgent aims to enable complex reasoning and function calling capabilities in Small Language Models (SLMs) that can be deployed securely and privately at the edge. Traditional Large Language Models (LLMs) like GPT-4 and Gemini-1.5, while powerful, are often too large and resource-intensive for ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

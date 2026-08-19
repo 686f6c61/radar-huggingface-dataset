@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/Sherpa-ONNX-KWS.AXERA",
+  "slug": "axera-tech-sherpa-onnx-kws-axera",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/Sherpa-ONNX-KWS.AXERA",
+  "created_at": "2026-08-06T08:17:43.000Z",
+  "updated_at": "2026-08-17T10:58:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "keyword-spotting",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19801264,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXERA-TECH/Sherpa-ONNX-KWS.AXERA · Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/Sherpa-ONNX-KWS.AXERA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AXERA-TECH/Sherpa-ONNX-KWS.AXERA: Export and quantize the ...",
+      "url": "https://github.com/AXERA-TECH/Sherpa-ONNX-KWS.AXERA",
+      "snippet": "Export and quantize the sherpa-onnx-kws model on the AXERA platform. - AXERA-TECH/Sherpa-ONNX-KWS.AXERA"
+    },
+    {
+      "title": "AXERA-TECH/Sherpa-ONNX-KWS.AXERA at main - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/Sherpa-ONNX-KWS.AXERA/tree/main",
+      "snippet": "AXERA-TECH / Sherpa-ONNX-KWS.AXERA like 0 Follow AXERA 141 keyword-spotting Model card FilesFiles and versions xet Community Copy to bucket new main Sherpa-ONNX-KWS.AXERA 20.8 MB Ctrl+K Ctrl+K 1 contributor History:4 commits HY-2012 Update README.md 8ef504b verified5 days ago audioFirst commit5 days ago configFirst commit5 days ago cppFirst ..."
+    },
+    {
+      "title": "Sherpa-ONNX-KWS.AXERA/weights/README.md at main · AXERA-TECH ... - GitHub",
+      "url": "https://github.com/AXERA-TECH/Sherpa-ONNX-KWS.AXERA/blob/main/weights/README.md",
+      "snippet": "Export and quantize the sherpa-onnx-kws model on the AXERA platform. - AXERA-TECH/Sherpa-ONNX-KWS.AXERA"
+    },
+    {
+      "title": "sherpa-onnx-kws-zipformer-zh-en-3M-2025-12-20 (Chinese & English)",
+      "url": "https://k2-fsa.github.io/sherpa/onnx/kws/pretrained_models/index.html",
+      "snippet": "The model is trained on GigaSpeech XL subset (10000 hours), it supports only English. In the following, we describe how to download it and use it with sherpa-onnx."
+    }
+  ]
+}

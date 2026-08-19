@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "slug": "stable-diffusion-v1-5-stable-diffusion-v1-5",
+  "author": "stable-diffusion-v1-5",
+  "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "created_at": "2024-08-30T09:48:48.000Z",
+  "updated_at": "2024-09-07T16:20:30.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "arxiv:2207.12598",
+    "arxiv:2112.10752",
+    "arxiv:2103.00020",
+    "arxiv:2205.11487",
+    "arxiv:1910.09700",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 1244,
+  "downloads_30d": 1470357,
+  "trending_score": 8,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 49900909164,
+  "storage_human": "49.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stable-diffusion-v1-5 - Hugging Face",
+      "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "snippet": "Modifications to the original model card are in red or green Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input. For more information about how Stable Diffusion functions, please have a look at 🤗&#x27;s Stable Diffusion blog. The Stable-Diffusion-v1-5 checkpoint was initialized with the weights of the Stable-Diffusion-v1-2 ..."
+    },
+    {
+      "title": "benjamin-paine/stable-diffusion-v1-5 · Hugging Face",
+      "url": "https://huggingface.co/benjamin-paine/stable-diffusion-v1-5",
+      "snippet": "The Stable-Diffusion-v1-5 checkpoint was initialized with the weights of the Stable-Diffusion-v1-2 checkpoint and subsequently fine-tuned on 595k steps at resolution 512x512 on \"laion-aesthetics v2 5+\" and 10% dropping of the text-conditioning to improve classifier-free guidance sampling. You can use this with the 🧨Diffusers library."
+    },
+    {
+      "title": "GitHub - lizhen0211/stable-diffusion-v1-5",
+      "url": "https://github.com/lizhen0211/stable-diffusion-v1-5",
+      "snippet": "Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input. For more information about how Stable Diffusion functions, please have a look at 🤗&#x27;s Stable Diffusion blog. The Stable-Diffusion-v1-5 checkpoint was initialized with the weights of the Stable-Diffusion-v1-2 checkpoint and subsequently fine-tuned on 595k steps at ..."
+    },
+    {
+      "title": "GitHub - Kameronski/stable-diffusion-1.5: Latent Text-to-Image ...",
+      "url": "https://github.com/Kameronski/stable-diffusion-1.5",
+      "snippet": "Stable Diffusion v1 Stable Diffusion v1 refers to a specific configuration of the model architecture that uses a downsampling-factor 8 autoencoder with an 860M UNet and CLIP ViT-L/14 text encoder for the diffusion model. The model was pretrained on 256x256 images and then finetuned on 512x512 images."
+    },
+    {
+      "title": "Stable-Diffusion-v1.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/stable_diffusion_v1_5",
+      "snippet": "Stable-Diffusion-v1.5 State‑of‑the‑art generative AI model used to generate detailed images conditioned on text descriptions. Generates high resolution images from text prompts using a latent diffusion model. This model uses CLIP ViT‑L/14 as text encoder, U‑Net based latent denoising, and VAE based decoder to generate the final image."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lococaeco/entropyLoss",
+  "slug": "lococaeco-entropyloss",
+  "author": "lococaeco",
+  "url": "https://huggingface.co/lococaeco/entropyLoss",
+  "created_at": "2026-08-16T09:26:09.000Z",
+  "updated_at": "2026-08-18T00:42:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 517875748818,
+  "storage_human": "517.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoCoCo: Dropping In Convolutions for Long Context Compression",
+      "url": "https://arxiv.org/pdf/2406.05317",
+      "snippet": "Besides, the LongLoRA-tuned model may compromise its performance if we still use smaller context sizes (see our experiments). In our study, we address the challenge of eficiently manag-ing long contexts in both inference and fine-tuning phases. We introduce a novel method, Long Context Compressi-son by Dropping-In Convolutions, abbreviated as ..."
+    },
+    {
+      "title": "lococaeco",
+      "url": "https://lococaeco.github.io/",
+      "snippet": "lococaeco All Recent Posts AI LLM Reinforcement Learning Deep Learning Paper Review Dev Python Git Markdown Docker Linux Math Linear Algebra Probability & Statistics"
+    },
+    {
+      "title": "lococaeco (Bangsangwoo) - Hugging Face",
+      "url": "https://huggingface.co/lococaeco/datasets",
+      "snippet": "User profile of Bangsangwoo on Hugging Face"
+    },
+    {
+      "title": "lococaeco (lococaeco) · GitHub",
+      "url": "https://github.com/lococaeco",
+      "snippet": "Inha Univ, B.S. in Mechanical Engineering. Ulsan National Institute of Science and Technology (UNIST), M.S. in Artificial Intelligence - lococaeco"
+    },
+    {
+      "title": "PDF www-cdn.anthropic.com",
+      "url": "https://www-cdn.anthropic.com/d7dd50dd1185f59be051b307150d877f2b82bd2c.pdf",
+      "snippet": "Executive summary We have developed sophisticated safety and security measures to prevent the misuse of our AI models. While these measures are generally effective, cybercriminals"
+    }
+  ]
+}

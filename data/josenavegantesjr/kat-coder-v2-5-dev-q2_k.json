@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "josenavegantesjr/KAT-Coder-V2.5-Dev-Q2_K",
+  "slug": "josenavegantesjr-kat-coder-v2-5-dev-q2_k",
+  "author": "josenavegantesjr",
+  "url": "https://huggingface.co/josenavegantesjr/KAT-Coder-V2.5-Dev-Q2_K",
+  "created_at": "2026-07-28T03:09:17.000Z",
+  "updated_at": "2026-08-19T02:38:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5_moe",
+    "ollama",
+    "code",
+    "agent",
+    "agentic-coding",
+    "moe",
+    "coding",
+    "qwen",
+    "llama-cpp",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2607.05471",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:quantized:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 421,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 12952401838,
+  "storage_human": "13.0 GB",
+  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "josenavegantesjr/KAT-Coder-V2.5-Dev-Q2_K · Hugging Face",
+      "url": "https://huggingface.co/josenavegantesjr/KAT-Coder-V2.5-Dev-Q2_K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kwaipilot/KAT-Coder-V2.5-Dev · Hugging Face",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "snippet": "This repository contains the model weights and configuration files for the post-trained KAT-Coder-V2.5-Dev in the Hugging Face Transformers format. The artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. Note: this open-weight release ships only the language-model weights and operates as a text-only model; the vision/multimodal components are not included ..."
+    },
+    {
+      "title": "KAT-Coder-V2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.05471v1",
+      "snippet": "Abstract We present KAT-Coder-V2.5, a coding-focused agentic model trained to act autonomously inside real, executable repositories rather than as a single-turn code generator. Its capability is bottlenecked less by model scale than by the scarcity of reproducible environments, verifiable rewards, and high-value trajectories, which we address with an end-to-end agentic post-training framework ..."
+    },
+    {
+      "title": "[2607.05471] KAT-Coder-V2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2607.05471",
+      "snippet": "We present KAT-Coder-V2.5, a coding-focused agentic model trained to act autonomously inside real, executable repositories rather than as a single-turn code generator. Its capability is bottlenecked less by model scale than by the scarcity of reproducible environments, verifiable rewards, and high-value trajectories, which we address with an end-to-end agentic post-training framework ..."
+    },
+    {
+      "title": "KAT-Coder-V2.5-Dev: An Open Agentic Coding Model - HackerNoon",
+      "url": "https://hackernoon.com/kat-coder-v25-dev-an-open-agentic-coding-model",
+      "snippet": "This is a simplified guide to an AI model called KAT-Coder-V2.5-Dev maintained by Kwaipilot. If you like these kinds of analysis, join AIModels.fyi or follow us on Twitter."
+    }
+  ]
+}

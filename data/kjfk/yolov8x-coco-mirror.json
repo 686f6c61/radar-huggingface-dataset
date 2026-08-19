@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kjfk/yolov8x-coco-mirror",
+  "slug": "kjfk-yolov8x-coco-mirror",
+  "author": "kjfk",
+  "url": "https://huggingface.co/kjfk/yolov8x-coco-mirror",
+  "created_at": "2026-08-18T19:14:44.000Z",
+  "updated_at": "2026-08-18T19:14:50.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "yolov8",
+    "coco",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136890692,
+  "storage_human": "137 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blaize-AI/YOLOv8x_COCO · Hugging Face",
+      "url": "https://huggingface.co/Blaize-AI/YOLOv8x_COCO",
+      "snippet": "YOLOv8x_COCO ... YOLOv8x - COCO Model Description YOLO Version 8 Extra Large This model has been optimized for deployment on Blaize Xplorer AI accelerators using the Blaize Picasso SDK, a key component for building, optimizing, and deploying graph-native AI applications on the Blaize Graph Streaming Processor (GSP) hardware."
+    },
+    {
+      "title": "YOLOv8x Model by Coyote 27 - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/coyote-27/yolov8/yolov8x",
+      "snippet": "YOLOv8x model from the YOLOv8 project by Coyote 27. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "Ultralytics/YOLOv8 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLOv8",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "YOLOv8 Models by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/yolov8",
+      "snippet": "Released January 2023. Proven and widely adopted with extensive community support. Introduced the unified Python API and CLI that became the Ultralytics standard."
+    },
+    {
+      "title": "GitHub - rya3075/Object-Detection-on-COCO-Dataset-using-YOLOv8 ...",
+      "url": "https://github.com/rya3075/Object-Detection-on-COCO-Dataset-using-YOLOv8",
+      "snippet": "A complete end-to-end object detection system built with YOLOv8 in Jupyter Notebook format, featuring automated dataset processing, model training, real-time inference, and an interactive web dashboard - all runnable in Google Colab!"
+    }
+  ]
+}

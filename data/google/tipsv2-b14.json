@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "google/tipsv2-b14",
+  "slug": "google-tipsv2-b14",
+  "author": "google",
+  "url": "https://huggingface.co/google/tipsv2-b14",
+  "created_at": "2026-04-09T06:28:59.000Z",
+  "updated_at": "2026-08-17T16:26:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tipsv2",
+    "feature-extraction",
+    "vision",
+    "image-text",
+    "contrastive-learning",
+    "zero-shot",
+    "arxiv:2604.12012",
+    "zero-shot-image-classification",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 120,
+  "downloads_30d": 176402,
+  "trending_score": 0,
+  "parameters": 195948288,
+  "parameters_human": "195.9M",
+  "storage_bytes": 784561815,
+  "storage_human": "785 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/tipsv2-b14 · Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-b14",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tipsv2-b14: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/tipsv2-b14-google",
+      "snippet": "Overview tipsv2-b14 is a contrastive vision-language model developed by google that produces spatially rich image features aligned with text embeddings. This Base variant contains 86M vision parameters and 110M text parameters, with an embedding dimension of 768, and uses a ViT vision encoder (12 layers) paired with a Transformer text encoder (12 layers). The model operates on 14×14 pixel ..."
+    },
+    {
+      "title": "google/tipsv2-b14 at main - Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-b14/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text ...",
+      "url": "https://gdm-tipsv2.github.io/",
+      "snippet": "Method TIPSv2 investigates the differences between pre-training and distillation, motivating the introduction of three targeted pretraining improvements to standard vision-language models: iBOT++, Head-only EMA, and Multi-Granularity Text Captions. Bridging Pre-training and Distillation We reveal a surprising gap between pre-training and distillation: a smaller ViT-L model distilled from a ..."
+    },
+    {
+      "title": "GitHub - google-deepmind/tips: TIPSv2 (CVPR&#x27;26) and TIPS (ICLR&#x27;25)",
+      "url": "https://github.com/google-deepmind/tips",
+      "snippet": "TIPSv2 (CVPR&#x27;26) and TIPS (ICLR&#x27;25). Contribute to google-deepmind/tips development by creating an account on GitHub."
+    }
+  ]
+}

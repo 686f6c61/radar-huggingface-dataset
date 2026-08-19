@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "abbeydupsys/yoruba-adage-finetuned",
+  "slug": "abbeydupsys-yoruba-adage-finetuned",
+  "author": "abbeydupsys",
+  "url": "https://huggingface.co/abbeydupsys/yoruba-adage-finetuned",
+  "created_at": "2026-08-16T04:15:55.000Z",
+  "updated_at": "2026-08-16T04:16:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28451029,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abbeydupsys/yorubaadage · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/abbeydupsys/yorubaadage",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    },
+    {
+      "title": "Gemini 3.1 Pro Preview Custom Tools - API Pricing & Providers",
+      "url": "https://openrouter.ai/google/gemini-3.1-pro-preview-customtools",
+      "snippet": "Gemini 3.1 Pro Preview Custom Tools is a variant of Gemini 3.1 Pro that improves tool selection behavior by preventing overuse of a general bash tool when more efficient third-party or user-defined functions are available. $2 per million input tokens, $12 per million output tokens. 1,048,576 token context window, maximum output of 65,536 tokens."
+    },
+    {
+      "title": "Jacaranda/YorubaLlama · Hugging Face",
+      "url": "https://huggingface.co/Jacaranda/YorubaLlama",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

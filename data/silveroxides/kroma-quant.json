@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "silveroxides/Kroma-Quant",
+  "slug": "silveroxides-kroma-quant",
+  "author": "silveroxides",
+  "url": "https://huggingface.co/silveroxides/Kroma-Quant",
+  "created_at": "2026-08-09T15:41:54.000Z",
+  "updated_at": "2026-08-10T16:40:53.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea2",
+    "krea",
+    "text-to-image",
+    "comfyui",
+    "base_model:lodestones/Kroma",
+    "base_model:quantized:lodestones/Kroma",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135393450632,
+  "storage_human": "135.4 GB",
+  "base_model": "Krea/Krea-2, lodestones/Kroma",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "silveroxides/Kroma-Quant · Hugging Face",
+      "url": "https://huggingface.co/silveroxides/Kroma-Quant",
+      "snippet": "silveroxides / Kroma-Quant like 2 Text-to-Image krea2 krea comfyui License:krea-2-community-license Model card FilesFiles and versions xet Community 2 Copy to bucket new"
+    },
+    {
+      "title": "silveroxides/Kroma-Quant at main - Hugging Face",
+      "url": "https://huggingface.co/silveroxides/Kroma-Quant/tree/main",
+      "snippet": "silveroxides / Kroma-Quant like 0 Text-to-Image krea2 krea comfyui License:krea-2-community-license Model card FilesFiles and versions xet Community Copy to bucket new main Kroma-Quant 54.6 GB Ctrl+K Ctrl+K 1 contributor History:8 commits silveroxides Upload kroma-v0.2-base-to-turbo.safetensors with huggingface_hub 75f5537 verifiedabout 2 hours ..."
+    },
+    {
+      "title": "Kroma [w4a8] - v0.2 turbo (w4a8 xl) | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2845688/kroma-w4a8",
+      "snippet": "7 150 Updated: Aug 10, 2026 base model v0.2 turbo (w4a8 xl) Download 1 variant available"
+    },
+    {
+      "title": "Kroma v0.2: Krea 2 Full-Model Fine-Tune for ComfyUI",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-09-kroma-v0-2",
+      "snippet": "Lodestones releases Kroma v0.2 as a full Krea 2 fine-tuned checkpoint instead of a LoRA, with base and turbo files plus community INT8 quants for ComfyUI."
+    },
+    {
+      "title": "silveroxides (Silver) · GitHub",
+      "url": "https://github.com/silveroxides",
+      "snippet": "A graph representing silveroxides&#x27;s contributions from August 10, 2025 to August 11, 2026. The contributions are 89% commits, 11% pull requests, 0% issues, 0% code review."
+    }
+  ]
+}

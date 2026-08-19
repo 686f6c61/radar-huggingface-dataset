@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kepom/GLM-5-abliterated",
+  "slug": "kepom-glm-5-abliterated",
+  "author": "kepom",
+  "url": "https://huggingface.co/kepom/GLM-5-abliterated",
+  "created_at": "2026-08-14T21:37:52.000Z",
+  "updated_at": "2026-08-14T21:37:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "glm",
+    "moe",
+    "conversational",
+    "base_model:zai-org/GLM-5",
+    "base_model:finetune:zai-org/GLM-5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 753864139008,
+  "parameters_human": "753.86B",
+  "storage_bytes": 1507756036618,
+  "storage_human": "1507.8 GB",
+  "base_model": "zai-org/GLM-5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin on NL2Repo (repo generation) and Terminal-Bench 2.0 (real-world terminal tasks). But the most meaningful leap goes beyond first-pass performance. Previous models ..."
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.2/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "GLM (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GLM_(AI)",
+      "snippet": "GLM, short for General Language Model, is a series of open weight large language models developed by Chinese software company Z.ai. Though the first GLM model was published on 3 March 2021, it was released under the name ChatGLM as an AI -based chatbot in March 2023."
+    },
+    {
+      "title": "README.md · kepom/Huihui-GLM-5.2-abliterated-GGUF at main",
+      "url": "https://huggingface.co/kepom/Huihui-GLM-5.2-abliterated-GGUF/blob/main/README.md",
+      "snippet": "This is an uncensored version of zai-org/GLM-5.2 created with abliteration (see remove-refusals-with-transformers to know more about it). This is a crude, proof-of-concept implementation to remove refusals from an LLM model without using TransformerLens."
+    },
+    {
+      "title": "Abliterated Models 2026: The Best Uncensored GGUFs by VRAM",
+      "url": "https://locallyuncensored.com/blog/abliterated-models-guide.html",
+      "snippet": "The newest entrant: huihui-ai/Huihui-GLM-5.1-abliterated-GGUF. The 754B MoE GLM 5.1 abliterated. 236 GB at IQ2_M — not consumer hardware, but if you have a multi-GPU rig or a Mac Studio M4 Ultra, it&#x27;s the strongest open abliterated model period."
+    }
+  ]
+}

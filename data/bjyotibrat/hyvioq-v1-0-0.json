@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "BJyotibrat/hyvioq-v1.0.0",
+  "slug": "bjyotibrat-hyvioq-v1-0-0",
+  "author": "BJyotibrat",
+  "url": "https://huggingface.co/BJyotibrat/hyvioq-v1.0.0",
+  "created_at": "2026-08-15T13:05:47.000Z",
+  "updated_at": "2026-08-15T13:07:31.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "xgboost",
+  "languages": [],
+  "tags": [
+    "xgboost",
+    "regression",
+    "flood-prediction",
+    "flood-risk",
+    "environmental-prediction",
+    "tabular-data",
+    "machine-learning",
+    "dataset:naiyakhalid/flood-prediction-dataset",
+    "arxiv:1910.09700",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2479286,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BJyotibrat/hyvioq-v1.0.0 · Hugging Face",
+      "url": "https://huggingface.co/BJyotibrat/hyvioq-v1.0.0",
+      "snippet": "hyvioq-v1.. is an XGBoost regression model that estimates flood probability from 20 environmental, infrastructure, climate, population, and disaster-preparedness factors. It is the first released model checkpoint from hyvioq, an ongoing flood-prediction project that also includes a companion mobile application."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=Bangalore-Traffic",
+      "snippet": "Model Tree Base Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 660+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

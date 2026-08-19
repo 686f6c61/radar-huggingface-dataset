@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kagworkfun/mostusedmodels",
+  "slug": "kagworkfun-mostusedmodels",
+  "author": "kagworkfun",
+  "url": "https://huggingface.co/kagworkfun/mostusedmodels",
+  "created_at": "2026-08-17T20:02:35.000Z",
+  "updated_at": "2026-08-17T21:15:49.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 303981845,
+  "parameters_human": "304.0M",
+  "storage_bytes": 50282878475,
+  "storage_human": "50.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "OpenRouter Free Models: All 18 Listed (Aug 2026)",
+      "url": "https://costgoat.com/pricing/openrouter-free-models",
+      "snippet": "All free AI models on OpenRouter, zero cost, no credit card. Compare context lengths, capabilities, and rate limits. Updated live."
+    },
+    {
+      "title": "Best AI Models (August 2026): 394 LLMs Ranked & Scored",
+      "url": "https://benchlm.ai/best/overall",
+      "snippet": "The best AI model right now is Claude Mythos 5. It leads the August 2026 ranking with a score of 83.2, ahead of Claude Opus 5 (83.1) and Claude Fable 5 (83). Each row uses the public BenchAlign v5 contract and shows its evidence status. Citable stat 218 AI models are ranked as of August 17, 2026; Claude Mythos 5 leads at 83.2 /100."
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "The model catalog in Foundry portal is the hub for discovering and using a wide range of models to build generative AI applications. The model catalog features thousands of models from providers like Azure OpenAI, Anthropic, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    }
+  ]
+}

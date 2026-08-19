@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nileagi/nileagi-suk-tts",
+  "slug": "nileagi-nileagi-suk-tts",
+  "author": "nileagi",
+  "url": "https://huggingface.co/nileagi/nileagi-suk-tts",
+  "created_at": "2026-08-17T10:48:38.000Z",
+  "updated_at": "2026-08-17T10:48:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "suk"
+  ],
+  "tags": [
+    "nileagi",
+    "sukuma",
+    "text-to-speech",
+    "experimental",
+    "suk",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117804,
+  "storage_human": "117804 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NileAGI - Making Sense of Machine Intelligence for Humanity",
+      "url": "https://nileagi.com/",
+      "snippet": "NileAGI is an AI research and development company committed to advancing artificial intelligence toward human-level intelligence. Our mission is to make AI accessible, useful, and empowering for everyone."
+    },
+    {
+      "title": "NileAGI - Making Sense of Machine Intelligence for Humanity",
+      "url": "https://www.nileagi.com/?trk=public_post_reshare-text",
+      "snippet": "NileAGI is an AI research company dedicated to advancing Human Level Intelligence (HLI). Our mission is to build systems that understand, learn, and adapt in ways that matter for people, not as a distant goal, but as a daily commitment. We believe achieving HLI will unlock new possibilities for the hardest challenges humanity faces. That belief drives how we work: rigorous, open, and always ..."
+    },
+    {
+      "title": "nileagi (NileAGI) - Hugging Face",
+      "url": "https://huggingface.co/nileagi/datasets",
+      "snippet": "AI & ML interests ... Recent Activity nsomazr published a model about 13 hours ago ... nsomazr updated a model 3 days ago ... nsomazr published a model 3 days ago"
+    },
+    {
+      "title": "NILEAGI - GitHub",
+      "url": "https://github.com/nile-agi",
+      "snippet": "C++ 2 MIT 0 6 0 Updated 8 hours ago nileagi-sub Public Swahili Understanding Benchmark Python 0 0 0 0 Updated last week LMc Public Edge-first AI inference for everyone. Pure C99 · No dependencies · Runs on any CPU · Built for Africa and the Global South."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 5 days ago • 3.42k • 115"
+    }
+  ]
+}

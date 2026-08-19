@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "prachuryyaIITG/Urdu_CLASSER_XLM",
+  "slug": "prachuryyaiitg-urdu_classer_xlm",
+  "author": "prachuryyaIITG",
+  "url": "https://huggingface.co/prachuryyaIITG/Urdu_CLASSER_XLM",
+  "created_at": "2026-01-09T14:08:19.000Z",
+  "updated_at": "2026-08-18T15:52:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "NER",
+    "Named_Entity_Recognition",
+    "token-classification",
+    "ur",
+    "dataset:prachuryyaIITG/CLASSER",
+    "arxiv:2601.10161",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 558909507,
+  "parameters_human": "558.9M",
+  "storage_bytes": 2252769396,
+  "storage_human": "2.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

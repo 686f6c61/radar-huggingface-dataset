@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xkm/qwen3.8-27b-mtp-head-retrained",
+  "slug": "xkm-qwen3-8-27b-mtp-head-retrained",
+  "author": "xkm",
+  "url": "https://huggingface.co/xkm/qwen3.8-27b-mtp-head-retrained",
+  "created_at": "2026-08-17T20:38:27.000Z",
+  "updated_at": "2026-08-17T20:45:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "speculative-decoding",
+    "mtp",
+    "draft-model",
+    "apple-silicon",
+    "base_model:EigenLabs/Qwen3.8-27B-MTP-bf16",
+    "base_model:finetune:EigenLabs/Qwen3.8-27B-MTP-bf16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 424699392,
+  "parameters_human": "424.7M",
+  "storage_bytes": 3397601344,
+  "storage_human": "3.4 GB",
+  "base_model": "EigenLabs/Qwen3.8-27B-MTP-bf16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen&#x27;s dense 27B vision-language model for coding, research, and long-horizon agents with controllable thinking and native speculative decoding through MTP"
+    },
+    {
+      "title": "mcsplain/Qwen3.8-27B-oQ4-mtp · Hugging Face",
+      "url": "https://huggingface.co/mcsplain/Qwen3.8-27B-oQ4-mtp",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    }
+  ]
+}

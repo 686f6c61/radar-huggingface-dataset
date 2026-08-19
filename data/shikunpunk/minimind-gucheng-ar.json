@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shikunpunk/MiniMind-GuCheng-AR",
+  "slug": "shikunpunk-minimind-gucheng-ar",
+  "author": "shikunpunk",
+  "url": "https://huggingface.co/shikunpunk/MiniMind-GuCheng-AR",
+  "created_at": "2026-08-17T19:23:43.000Z",
+  "updated_at": "2026-08-17T19:24:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimind",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137685183,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk",
+      "snippet": "shikunpunk/poetry-judge-qwen2.5-1.5b-cn Text Generation • 2B•Updated 3 days ago datasets4"
+    },
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/models",
+      "snippet": "shikunpunk/poetry-judge-qwen2.5-1.5b-cn-neutral Text Generation • 2B•Updated 3 days ago• 16"
+    },
+    {
+      "title": "GitHub - jingyaogong/minimind: 「大模型」2小时完全从0训练64M的小参数LLM!Train a 64M ...",
+      "url": "https://github.com/jingyaogong/minimind",
+      "snippet": "MiniMind 同时拓展了视觉模态模型 MiniMind-V 、多模态 Omni 模型 MiniMind-O 、扩散语言模型（MiniMind-dLM）、线性模型（MiniMind-Linear），详见 Discussion。 项目所有核心算法代码均从 0 使用 PyTorch 原生实现，不依赖第三方库提供的高层抽象接口。"
+    },
+    {
+      "title": "shikunpunk-ai-seacher/README.en.md at main - GitHub",
+      "url": "https://github.com/shikunpneg/shikunpunk-ai-seacher/blob/main/README.en.md",
+      "snippet": "Harness Engineering 学习指南 — 从概念理解到独立实践的深度学习档案（搜索有用的ai技术信息） - shikunpneg/shikunpunk-ai-seacher"
+    },
+    {
+      "title": "Google DeepMind",
+      "url": "https://deepmind.google/",
+      "snippet": "WeatherNext: AI model achieves breakthrough in forecasting cyclones August 2026 Science Learn more"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "kristijonas/paprika-whisper-lt-v3",
+  "slug": "kristijonas-paprika-whisper-lt-v3",
+  "author": "kristijonas",
+  "url": "https://huggingface.co/kristijonas/paprika-whisper-lt-v3",
+  "created_at": "2026-08-15T15:39:03.000Z",
+  "updated_at": "2026-08-15T16:19:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "lt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "lithuanian",
+    "asr",
+    "speech-recognition",
+    "lt",
+    "base_model:kristijonas/paprika-whisper-lt",
+    "base_model:finetune:kristijonas/paprika-whisper-lt",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 1617825448,
+  "storage_human": "1.6 GB",
+  "base_model": "kristijonas/paprika-whisper-lt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

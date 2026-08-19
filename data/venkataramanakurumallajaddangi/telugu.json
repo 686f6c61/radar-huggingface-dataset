@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "VenkataRamanaKurumallajaddangi/Telugu",
+  "slug": "venkataramanakurumallajaddangi-telugu",
+  "author": "VenkataRamanaKurumallajaddangi",
+  "url": "https://huggingface.co/VenkataRamanaKurumallajaddangi/Telugu",
+  "created_at": "2026-06-11T11:07:58.000Z",
+  "updated_at": "2026-08-18T10:00:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "safetensors",
+    "text-generation",
+    "pytorch",
+    "custom-architecture",
+    "te",
+    "base_model:VenkataRamanaKurumallajaddangi/Telugu",
+    "base_model:finetune:VenkataRamanaKurumallajaddangi/Telugu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 420583671532,
+  "storage_human": "420.6 GB",
+  "base_model": "VenkataRamanaKurumallajaddangi/Telugu",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VenkataRamanaKurumallajaddangi/Telugu7200lora · Hugging Face",
+      "url": "https://huggingface.co/VenkataRamanaKurumallajaddangi/Telugu7200lora",
+      "snippet": "Jaddangi AI Telugu 78M Instruct is a custom-built, 78-million parameter Transformer model designed specifically for the Telugu language. Built entirely from scratch, this model features advanced architectural optimizations like Grouped Query Attention (GQA) and SwiGLU activations, making it highly efficient for local hardware (e.g., i3 processors, 12GB RAM)."
+    },
+    {
+      "title": "VenkataRamanaKurumallajaddangi/Jaddangi-Ai-Telugu-1B · Hugging Face",
+      "url": "https://huggingface.co/VenkataRamanaKurumallajaddangi/Jaddangi-Ai-Telugu-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VenkataRamanaKurumallajaddangi/Telugu6800 · Hugging Face",
+      "url": "https://huggingface.co/VenkataRamanaKurumallajaddangi/Telugu6800",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VenkataRamanaKurumallajaddangi (venkat) - Hugging Face",
+      "url": "https://huggingface.co/VenkataRamanaKurumallajaddangi/datasets",
+      "snippet": "VenkataRamanaKurumallajaddangi/Telugu-Synthetic-Poems-20k Viewer •Updated 2 days ago•2.5k• 78"
+    },
+    {
+      "title": "VenkataRamanaKurumallajaddangi/Telugu-Synthetic-QA-20k · Datasets at ...",
+      "url": "https://huggingface.co/datasets/VenkataRamanaKurumallajaddangi/Telugu-Synthetic-QA-20k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

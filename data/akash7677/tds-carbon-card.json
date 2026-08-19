@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Akash7677/tds-carbon-card",
+  "slug": "akash7677-tds-carbon-card",
+  "author": "Akash7677",
+  "url": "https://huggingface.co/Akash7677/tds-carbon-card",
+  "created_at": "2026-08-18T21:10:38.000Z",
+  "updated_at": "2026-08-18T21:15:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jesmelchi/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Jesmelchi/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "adisinha95/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/adisinha95/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA V100 (4 GPUs) Training Mode: fine-tuning Region: europe-north1 GPU Hours: 447.8h (PUE: 1.32) Total Energy: 709.3152 kWh CO₂ Emissions: 85.118 kg ..."
+    },
+    {
+      "title": "Akash7677 (Akash Pipaliya) / Repositories · GitHub",
+      "url": "https://github.com/Akash7677?tab=repositories",
+      "snippet": "Automation Engineer | Python | FastAPI | Flask | Voice AI | Video & Audio | OpenCV - Akash7677"
+    },
+    {
+      "title": "Akash Pipaliya Akash7677 - GitHub",
+      "url": "https://github.com/Akash7677",
+      "snippet": "Embedded QA Automation Engineer | Python | Selenium | Postman | Electronics | Video & Audio | OpenCV - Akash7677"
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    }
+  ]
+}

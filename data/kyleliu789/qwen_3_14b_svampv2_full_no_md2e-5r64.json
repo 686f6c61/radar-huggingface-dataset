@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kyleliu789/qwen_3_14b_svampv2_full_no_md2e-5r64",
+  "slug": "kyleliu789-qwen_3_14b_svampv2_full_no_md2e-5r64",
+  "author": "kyleliu789",
+  "url": "https://huggingface.co/kyleliu789/qwen_3_14b_svampv2_full_no_md2e-5r64",
+  "created_at": "2026-08-14T04:58:51.000Z",
+  "updated_at": "2026-08-14T05:01:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "llama-factory",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-14B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37012156615,
+  "storage_human": "37.0 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyleliu789/qwen_3_14b_svampv2_full_no_md · Hugging Face",
+      "url": "https://huggingface.co/kyleliu789/qwen_3_14b_svampv2_full_no_md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3:14b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:14b",
+      "snippet": "The Qwen 3 family is a comprehensive suite of dense and mixture-of-experts (MoE) models. The flagship model, Qwen3-235B-A22B, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen 3 14B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3-14b",
+      "snippet": "The Qwen 3 family is a comprehensive suite of dense and mixture-of-experts (MoE) models. The flagship model, Qwen3-235B-A22B, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro."
+    }
+  ]
+}

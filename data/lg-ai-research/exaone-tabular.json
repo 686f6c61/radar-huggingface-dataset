@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "LG-AI-Research/EXAONE-Tabular",
+  "slug": "lg-ai-research-exaone-tabular",
+  "author": "LG-AI-Research",
+  "url": "https://huggingface.co/LG-AI-Research/EXAONE-Tabular",
+  "created_at": "2026-07-31T09:09:13.000Z",
+  "updated_at": "2026-08-18T05:15:32.000Z",
+  "license": "exaone",
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tabular",
+    "tabular-classification",
+    "tabular-regression",
+    "in-context-learning",
+    "foundation-model",
+    "pytorch",
+    "safetensors",
+    "exaone",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 1122,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1009165936,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LG-AI-Research/EXAONE-Tabular · Hugging Face",
+      "url": "https://huggingface.co/LG-AI-Research/EXAONE-Tabular",
+      "snippet": "LG-AI-Research / EXAONE-Tabular like 0 Follow LG AI Research 23 Tabular Classification PyTorch Safetensors tabular tabular-regression in-context-learning foundation-model exaone License:exaone Model card FilesFiles and versions xet Community Copy to bucket new Model Configuration Evaluation Results Classification (accuracy ↑, %) Regression ..."
+    },
+    {
+      "title": "GitHub - LGAI-Research/EXAONE-Tabular: EXAONE Tabular is a transformer ...",
+      "url": "https://github.com/LGAI-Research/EXAONE-Tabular",
+      "snippet": "EXAONE Tabular is a transformer-based foundation model for tabular data that solves classification and regression through in-context learning: you pass the labeled rows to fit and the model predicts new rows in a single forward pass — no gradient updates and no per-dataset training."
+    },
+    {
+      "title": "LG-AI-Research/EXAONE-Tabular at main - Hugging Face",
+      "url": "https://huggingface.co/LG-AI-Research/EXAONE-Tabular/tree/main",
+      "snippet": "LG-AI-Research / EXAONE-Tabular like 2 Follow LG AI Research 23 Tabular Classification PyTorch Safetensors tabular tabular-regression in-context-learning foundation-model exaone License:exaone Model card FilesFiles and versions xet Community Copy to bucket new main EXAONE-Tabular 759 MB Ctrl+K Ctrl+K 1 contributor History:13 commits MoonjungEo Rename regression checkpoints to the released ..."
+    },
+    {
+      "title": "EXAONE-Tabular/README.md at main · LGAI-Research/EXAONE-Tabular - GitHub",
+      "url": "https://github.com/LGAI-Research/EXAONE-Tabular/blob/main/README.md",
+      "snippet": "EXAONE Tabular EXAONE Tabular is a transformer-based foundation model for tabular data that solves classification and regression through in-context learning: you pass the labeled rows to fit and the model predicts new rows in a single forward pass — no gradient updates and no per-dataset training."
+    },
+    {
+      "title": "LG AI Research EXAONE",
+      "url": "https://www.lgresearch.ai/exaone",
+      "snippet": "Model & Solution Introducing AI solutions proven in real-world industries. Designed to solve complex challenges across domains with precision and impact. Solution EXAONE Data Foundry An end-to-end LLM tuning platform that generates domain-specific QA data from real-world documents and accelerates optimization through rapid feedback loops."
+    }
+  ]
+}

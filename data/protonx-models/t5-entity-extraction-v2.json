@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "protonx-models/t5-entity-extraction-v2",
+  "slug": "protonx-models-t5-entity-extraction-v2",
+  "author": "protonx-models",
+  "url": "https://huggingface.co/protonx-models/t5-entity-extraction-v2",
+  "created_at": "2026-08-19T03:10:28.000Z",
+  "updated_at": "2026-08-19T03:10:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62538240,
+  "parameters_human": "62.5M",
+  "storage_bytes": 250988730,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "protonx-models/t5-entity-extraction · Hugging Face",
+      "url": "https://huggingface.co/protonx-models/t5-entity-extraction",
+      "snippet": "protonx-models / t5-entity-extraction like 0 Follow ProtonX 75 Text Generation Transformers Safetensors t5 text2text-generation entity-extraction text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "protonx-models (ProtonX) - Hugging Face",
+      "url": "https://huggingface.co/protonx-models",
+      "snippet": "Org profile for ProtonX on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ProtonX - AI · GitHub",
+      "url": "https://github.com/ProtonX-AI",
+      "snippet": "We apply breakthrough AI research to improve social quality. - ProtonX - AI"
+    },
+    {
+      "title": "entity-relation-extraction/t5-flan_trainer.py at main - GitHub",
+      "url": "https://github.com/dunja274/entity-relation-extraction/blob/main/t5-flan_trainer.py",
+      "snippet": "Experiments on document-level entity relation extraction using various models: T5, mT5, FLAN-T5, GPT-3.5 Turbo, and GPT-4. - dunja274/entity-relation-extraction"
+    },
+    {
+      "title": "T5 for Sentiment Span Extraction",
+      "url": "https://colab.research.google.com/github/enzoampil/t5-intro/blob/master/t5_qa_training_pytorch_span_extraction.ipynb",
+      "snippet": "This introduction notebook is featured in Abhishek Thakur&#x27;s Talks #3 webinar on youtube. Goals for this talk Introduce T5 and how it works Explain T5&#x27;s significance for the future of NLP Illustrate how to use T5 for Sentiment Span Extraction T5 Overview T5 is a recently released encoder-decoder model that reaches SOTA results by solving NLP problems with a text-to-text approach. This is where ..."
+    }
+  ]
+}

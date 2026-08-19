@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ssurface/cot-dialect-olmo3-7b-think-conditioned-grpo-matched",
+  "slug": "ssurface-cot-dialect-olmo3-7b-think-conditioned-grpo-matched",
+  "author": "ssurface",
+  "url": "https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-conditioned-grpo-matched",
+  "created_at": "2026-08-18T20:45:36.000Z",
+  "updated_at": "2026-08-18T21:37:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "chain-of-thought",
+    "compression",
+    "gsm8k",
+    "conditioning",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:allenai/Olmo-3-7B-Think",
+    "base_model:adapter:allenai/Olmo-3-7B-Think",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80014016,
+  "storage_human": "80 MB",
+  "base_model": "allenai/Olmo-3-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Accuracy (exact match)",
+      "value": 90.3
+    }
+  ],
+  "sources": [
+    {
+      "title": "ssurface/cot-dialect-olmo3-7b-think-grpo-addlen50-l5 · Hugging Face",
+      "url": "https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-addlen50-l5",
+      "snippet": "Instructions to use ssurface/cot-dialect-olmo3-7b-think-grpo-addlen50-l5 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "unsloth/Olmo-3-7B-Think · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Olmo-3-7B-Think",
+      "snippet": "Model Details Model Card for Olmo 3 Think We introduce Olmo 3, a new family of 7B and 32B models both Instruct and Think variants. Long chain-of-thought thinking improves reasoning tasks like math and coding. Olmo is a series of O pen l anguage mo dels designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets ..."
+    },
+    {
+      "title": "cot-dialect-olmo3-7b-think-grpo-early-solve-l5 - friendli.ai",
+      "url": "https://friendli.ai/models/ssurface/cot-dialect-olmo3-7b-think-grpo-early-solve-l5",
+      "snippet": "Deploy cot-dialect-olmo3-7b-think-grpo-early-solve-l5 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "OLMo-core/src/scripts/official/OLMo3 at main - GitHub",
+      "url": "https://github.com/allenai/OLMo-core/tree/main/src/scripts/official/OLMo3",
+      "snippet": "Olmo 3 32B Model Training Official training scripts, checkpoints, and monitoring logs for the Olmo 3 32B pretraining process can be found in the table below. Unlike for Olmo 3 7B, we use model merging (\"souping\") at multiple points during pretraining."
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    }
+  ]
+}

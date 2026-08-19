@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ikasumipasuta/ikasumipasuta",
+  "slug": "ikasumipasuta-ikasumipasuta",
+  "author": "ikasumipasuta",
+  "url": "https://huggingface.co/ikasumipasuta/ikasumipasuta",
+  "created_at": "2026-08-18T09:58:37.000Z",
+  "updated_at": "2026-08-18T09:58:37.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ikasumipasuta · GitHub",
+      "url": "https://github.com/ikasumipasuta/",
+      "snippet": "ikasumipasuta has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "早瀬千潤(はやせちひろ) (@ikasumipasuta_) | TikTok",
+      "url": "https://www.tiktok.com/@ikasumipasuta_",
+      "snippet": "TikTok (ティックトック) の 早瀬千潤 (はやせちひろ) (@ikasumipasuta_) |168.2K件の「いいね」。フォロワー12.1K人。頑張って生きてる人 インスタ、Twitterきてくださーーい.早瀬千潤 (はやせちひろ) (@ikasumipasuta_)の最新動画を視聴しましょう。"
+    },
+    {
+      "title": "PixAI | PixAI",
+      "url": "https://pixai.art/en/model/1861700432329245126",
+      "snippet": "Generate stunning girl anime art with the &#x27;nasipasuta sensei&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "ikasumipasuta (@pasuta__0221) • Instagram photos and videos",
+      "url": "https://www.instagram.com/pasuta__0221/",
+      "snippet": "0 followers · 22 following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    },
+    {
+      "title": "shiho☆ (@ikasumipasuta) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ikasumipasuta/",
+      "snippet": "0 Followers, 2 Following, 2 Posts - shiho☆ (@ikasumipasuta) on Instagram: \"高校生です♪\""
+    }
+  ]
+}

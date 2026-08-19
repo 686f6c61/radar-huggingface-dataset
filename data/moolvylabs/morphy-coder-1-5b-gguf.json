@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "moolvylabs/Morphy-Coder-1.5B-GGUF",
+  "slug": "moolvylabs-morphy-coder-1-5b-gguf",
+  "author": "moolvylabs",
+  "url": "https://huggingface.co/moolvylabs/Morphy-Coder-1.5B-GGUF",
+  "created_at": "2026-08-18T09:30:11.000Z",
+  "updated_at": "2026-08-18T09:46:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "code",
+    "morphy",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048128,
+  "storage_human": "986 MB",
+  "base_model": "Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "bartowski/Yi-Coder-1.5B-Chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Yi-Coder-1.5B-Chat-GGUF",
+      "snippet": "Llamacpp imatrix Quantizations of Yi-Coder-1.5B-Chat Prompt format What&#x27;s new: Download a file (not the whole branch) from below: Embed/output weights Downloading using huggingface-cli Q4_0_X_X Which file should I choose? Credits"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "DeepSeek Coder:",
+      "url": "https://deepseekcoder.github.io/",
+      "snippet": "DeepSeek Coder comprises a series of code language models trained from scratch on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens."
+    },
+    {
+      "title": "GitHub - kortix-ai/fast-apply",
+      "url": "https://github.com/kortix-ai/fast-apply",
+      "snippet": "We chose smaller models (7B and 1.5B) for fast inference speed, suitable for instant apply tasks. These models work well with AI-powered code editors like Aider, PearAI or local tools to reduce the cost of frontier model output."
+    }
+  ]
+}

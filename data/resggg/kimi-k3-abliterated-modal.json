@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Resggg/Kimi-K3-Abliterated-modal",
+  "slug": "resggg-kimi-k3-abliterated-modal",
+  "author": "Resggg",
+  "url": "https://huggingface.co/Resggg/Kimi-K3-Abliterated-modal",
+  "created_at": "2026-08-17T12:10:46.000Z",
+  "updated_at": "2026-08-17T12:10:54.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "text-generation",
+    "kimi-k3",
+    "compressed-tensors",
+    "conversational",
+    "abliterated",
+    "uncensored",
+    "any-to-any",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:finetune:moonshotai/Kimi-K3",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560999102689,
+  "storage_human": "1561.0 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.com/ai-models/kimi-k3",
+      "snippet": "Meet Kimi K3, a 2.8T-parameter model with native vision and a 1M context window. Create playable games, polished slides, interactive reports, and more."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Kimi K3 is the first open-source model to reach 2.8 trillion parameters. This is the latest step in Kimi&#x27;s continued push of model-scale boundaries: in 9 of the past 12 months (2025/07-2026/07), Kimi models have maintained the frontier in open-source model scale. Kimi K3 is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes)."
+    },
+    {
+      "title": "Kimi K3 Model Overview: 2.8T Parameters, MXFP4 Quantization, and What ...",
+      "url": "https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei",
+      "snippet": "A Blog post by Viddi AI on Hugging Face"
+    },
+    {
+      "title": "GrEarl/Kimi-K3-Abliterated-V1-Q2_K-GGUF · Hugging Face",
+      "url": "https://huggingface.co/GrEarl/Kimi-K3-Abliterated-V1-Q2_K-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for moonshotai/Kimi-K3 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:moonshotai/Kimi-K3",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

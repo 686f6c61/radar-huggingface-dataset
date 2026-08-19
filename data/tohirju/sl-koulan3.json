@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-koulan3",
+  "slug": "tohirju-sl-koulan3",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-koulan3",
+  "created_at": "2026-08-18T10:02:55.000Z",
+  "updated_at": "2026-08-18T10:03:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 294550855,
+  "storage_human": "295 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tohirju/sl-slate3 · Hugging Face",
+      "url": "https://huggingface.co/Tohirju/sl-slate3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tohirju (Tohir Saidzoda) - Hugging Face",
+      "url": "https://huggingface.co/Tohirju",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 3 days ago ... updated a model 13 days ago"
+    },
+    {
+      "title": "Tohru - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1932296091372583303",
+      "snippet": "Generate stunning anime art with the &#x27;Tohru&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Tohru (miss kobayashi) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/f5c892f19bbbb11f9892ab20500a4190",
+      "snippet": "Meet Tohru (miss kobayashi) model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Tohru - Kobayashi-san Chi no Maid Dragon - PromptHero",
+      "url": "https://prompthero.com/ai-models/tohru-kobayashi-san-chi-no-maid-dragon-download",
+      "snippet": "A Lora of Tohru - Kobayashi-san Chi no Maid DragonThe weight that i use is arounde 0.7 - 8 It has a bit problems with the tail but if you test enough you can ge"
+    }
+  ]
+}

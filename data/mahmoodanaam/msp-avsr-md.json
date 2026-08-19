@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MahmoodAnaam/MSP-AVSR-MD",
+  "slug": "mahmoodanaam-msp-avsr-md",
+  "author": "MahmoodAnaam",
+  "url": "https://huggingface.co/MahmoodAnaam/MSP-AVSR-MD",
+  "created_at": "2026-08-18T02:46:16.000Z",
+  "updated_at": "2026-08-18T04:45:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "msp",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "custom_code",
+    "en",
+    "dataset:nguyenvulebinh/AVYT",
+    "dataset:nguyenvulebinh/AVCocktail",
+    "arxiv:1910.09700",
+    "base_model:MahmoodAnaam/MSP-ASR",
+    "base_model:finetune:MahmoodAnaam/MSP-ASR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 653287240,
+  "parameters_human": "653.3M",
+  "storage_bytes": 2613281328,
+  "storage_human": "2.6 GB",
+  "base_model": "MahmoodAnaam/MSP-VSR, MahmoodAnaam/MSP-ASR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MahmoodAnaam/MSP-AVSR · Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/MSP-AVSR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MahmoodAnaam/MSP-AVSR at main - Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/MSP-AVSR/tree/main",
+      "snippet": "Instructions to use MahmoodAnaam/MSP-AVSR with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use MahmoodAnaam/MSP-AVSR with Transformers:"
+    },
+    {
+      "title": "Mahmood Anaam - GitHub",
+      "url": "https://github.com/Mahmood-Anaam",
+      "snippet": "Software Engineer | Full-Stack & AI Developer | Over 5 Years of Experience | Designing Scalable, AI-Driven Solutions - Mahmood-Anaam"
+    },
+    {
+      "title": "GitHub - AV-LLM/AVSR: Visual Speech Recognition for Multiple Languages",
+      "url": "https://github.com/AV-LLM/AVSR",
+      "snippet": "Visual Speech Recognition for Multiple Languages. Contribute to AV-LLM/AVSR development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "inference-optimization/GLM-5.2-0.8B-A0.8B-MXFP4xMXFP8",
+  "slug": "inference-optimization-glm-5-2-0-8b-a0-8b-mxfp4xmxfp8",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/GLM-5.2-0.8B-A0.8B-MXFP4xMXFP8",
+  "created_at": "2026-08-18T01:51:01.000Z",
+  "updated_at": "2026-08-18T01:53:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "base_model:zai-org/GLM-5.2",
+    "base_model:quantized:zai-org/GLM-5.2",
+    "license:mit",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 849623200,
+  "parameters_human": "849.6M",
+  "storage_bytes": 2023865016,
+  "storage_human": "2.0 GB",
+  "base_model": "zai-org/GLM-5.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inference-optimization/GLM-5.2-0.8B-A0.8B · Hugging Face",
+      "url": "https://huggingface.co/inference-optimization/GLM-5.2-0.8B-A0.8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.2-0.8B-A0.8B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/GLM-5.2-0.8B-A0.8B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin on NL2Repo (repo generation) and Terminal-Bench 2.0 (real-world terminal tasks)."
+    },
+    {
+      "title": "GLM model — GLM-5.2 benchmark test and 1M context guide",
+      "url": "https://www.glmmodel.net/",
+      "snippet": "A comprehensive comparison of each GLM model. GLM-5.2 achieves 81.0 on Terminal-Bench 2.1 and 74.4 on FrontierSWE, with a context of one million tokens — and also provides a free AI sandbox."
+    },
+    {
+      "title": "GLM-5.2 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.2",
+      "snippet": "GLM-5.2 is Z.ai&#x27;s new open model, delivering SOTA performance across long-horizon coding, reasoning, and agentic tasks. With 744B parameters, 40B active parameters, and a 1M context window, it can now be run locally using Unsloth Dynamic GGUFs. GLM-5.2 is the strongest open model to date, performing on par with Claude 4.8 Opus, GPT-5.5, and Gemini 3.1 Pro across many benchmarks. Dynamic 1 ..."
+    }
+  ]
+}

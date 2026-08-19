@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "diarray/bam-vits-fintech-train",
+  "slug": "diarray-bam-vits-fintech-train",
+  "author": "diarray",
+  "url": "https://huggingface.co/diarray/bam-vits-fintech-train",
+  "created_at": "2026-08-18T12:39:06.000Z",
+  "updated_at": "2026-08-18T12:39:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 80734261,
+  "parameters_human": "80.7M",
+  "storage_bytes": 323036268,
+  "storage_human": "323 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diarray/bam-vits-train · Hugging Face",
+      "url": "https://huggingface.co/diarray/bam-vits-train",
+      "snippet": "Instructions to use diarray/bam-vits-train with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use diarray/bam-vits-train with Transformers:"
+    },
+    {
+      "title": "diarray/bam-vits · Hugging Face",
+      "url": "https://huggingface.co/diarray/bam-vits",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - google-research/vision_transformer",
+      "url": "https://github.com/google-research/vision_transformer",
+      "snippet": "The resultant ViTs outperform those of similar sizes trained using AdamW optimizer or the original SAM algorithm, or with strong data augmentations. 2022-04-14: Added models and Colab for LiT models. 2021-07-29: Added ViT-B/8 AugReg models (3 upstream checkpoints and adaptations with resolution=224)."
+    },
+    {
+      "title": "GitHub - AI4Finance-Foundation/FinGPT: FinGPT: Open-Source Financial ...",
+      "url": "https://github.com/AI4Finance-Foundation/FinGPT",
+      "snippet": "FinGPT: Open-Source Financial Large Language Models! Revolutionize 🔥 We release the trained model on HuggingFace. - AI4Finance-Foundation/FinGPT"
+    }
+  ]
+}

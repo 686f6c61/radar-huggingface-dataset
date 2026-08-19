@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_9058_jvc8be_cand_svc-ocr",
+  "slug": "roy229-huggingface_9058_jvc8be_cand_svc-ocr",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_9058_jvc8be_cand_svc-ocr",
+  "created_at": "2026-08-15T04:44:51.000Z",
+  "updated_at": "2026-08-15T04:44:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "portfolio-candidate",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229/huggingface_9058_ot0arb_cand_svc-ocr · Hugging Face",
+      "url": "https://huggingface.co/Roy229/huggingface_9058_ot0arb_cand_svc-ocr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=portfolio-candidate",
+      "snippet": "Explore machine learning models. 5 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: portfolio-candidate Clear all"
+    },
+    {
+      "title": "Roy229/hf2197x372809-cand-svc-ocr · Hugging Face",
+      "url": "https://huggingface.co/Roy229/hf2197x372809-cand-svc-ocr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supercharge your OCR Pipelines with Open Models - Hugging Face",
+      "url": "https://huggingface.co/blog/ocr-open-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Roy229/hf2197-260808-070738-cand-svc-ocr · Hugging Face",
+      "url": "https://huggingface.co/Roy229/hf2197-260808-070738-cand-svc-ocr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

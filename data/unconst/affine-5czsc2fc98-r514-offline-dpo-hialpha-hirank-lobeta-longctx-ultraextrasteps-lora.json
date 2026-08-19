@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r514-offline-dpo-hialpha-hirank-lobeta-longctx-ultraextrasteps-lora",
+  "slug": "unconst-affine-5czsc2fc98-r514-offline-dpo-hialpha-hirank-lobeta-longctx-ultraextrasteps-lora",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r514-offline-dpo-hialpha-hirank-lobeta-longctx-ultraextrasteps-lora",
+  "created_at": "2026-08-16T08:02:27.000Z",
+  "updated_at": "2026-08-16T08:39:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "affine-h1-salvage",
+    "text-generation",
+    "base_model:marsplan0624/affine-5gedzafcvg-queen",
+    "base_model:adapter:marsplan0624/affine-5gedzafcvg-queen",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133739040,
+  "storage_human": "134 MB",
+  "base_model": "marsplan0624/affine-5gedzafcvg-queen",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconst/Affine-5czsc2fc98-r480-offline-dpo-hialpha-hirank-longctx ...",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r480-offline-dpo-hialpha-hirank-longctx-extrasteps-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r31-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r31-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-h51-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h51-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r158-lora at main - Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r158-lora/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-h101-lora · Discussions - Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h101-lora/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

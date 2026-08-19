@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF",
+  "slug": "sc117-qwen3-6-35b-a3b-uncensored-heretic-native-mtp-preserved-apex-gguf",
+  "author": "SC117",
+  "url": "https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF",
+  "created_at": "2026-05-26T12:49:42.000Z",
+  "updated_at": "2026-07-29T09:54:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5_moe",
+    "qwen3_5",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "mpoa",
+    "mtp",
+    "apex",
+    "quantization",
+    "image-text-to-text",
+    "base_model:llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+    "base_model:quantized:llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 104,
+  "downloads_30d": 98219,
+  "trending_score": 8,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 149047792896,
+  "storage_human": "149.0 GB",
+  "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF",
+      "url": "https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF",
+      "snippet": "Decensored version of Qwen/Qwen3.6-35B-A3B, made using Heretic v1.3.0 + MPOA. 88% fewer refusals (10/100 Uncensored vs 83/100 Original) while preserving model quality (0.0015 KL divergence)."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF",
+      "url": "https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF/discussions/1",
+      "snippet": "Dear SC117, Is the APEX I-Balance variant equivalent to the original made by Mudler? Thank you so much for your work. The APEX-Heretic niche was missing, and you&#x27;ve filled it. I just hope there are..."
+    },
+    {
+      "title": "Qwen3.6 35B A3B Uncensored Heretic Native MTP Preserved",
+      "url": "https://llmrun.dev/model/llmfan46-qwen3-6-35b-a3b-uncensored-heretic-native-mtp-preserved",
+      "snippet": "Qwen3.6 35B A3B Uncensored Heretic Native MTP Preserved — Hardware Requirements & GPU Compatibility Vision Qwen3.6 35B A3B Uncensored Heretic Native MTP Preserved is a 35.1B-parameter open language model from llmfan46 in the Qwen 3.6 family. It supports a context window of up to 262,144 tokens. At Q4_K_M it needs about 21.45 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "Qwen3.6 35B A3B uncensored heretic Native MTP Preserved",
+      "url": "https://thinkllm.dev/models/qwen3-6-35b-a3b-uncensored-heretic-native-mtp-preserved",
+      "snippet": "A community-modified variant of Qwen3&#x27;s 35B mixture-of-experts architecture, activating roughly 3B parameters per forward pass. The &#x27;uncensored heretic&#x27; label signals that safety filters and refusal behaviors from the original model have been removed or reduced, meaning it responds more freely to sensitive prompts but without the guardrails of the base release. Includes native multi-token ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B on 12GB VRAM — Full Context Guide",
+      "url": "https://github.com/shiqikuangsan31/Qwen3.6-35B-12GB-VRAM-Guide",
+      "snippet": "Run the full 258K native context of Qwen3.6-35B-A3B (MoE, 3B active) on an RTX 4070 SUPER 12GB with llama.cpp — all benchmarked, all tunable, scripts included."
+    }
+  ]
+}

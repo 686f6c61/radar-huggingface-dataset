@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "sana0756/hipponet-gemma-398moe",
+  "slug": "sana0756-hipponet-gemma-398moe",
+  "author": "sana0756",
+  "url": "https://huggingface.co/sana0756/hipponet-gemma-398moe",
+  "created_at": "2026-08-13T23:51:58.000Z",
+  "updated_at": "2026-08-16T01:09:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 8095769930,
+  "parameters_human": "8.10B",
+  "storage_bytes": 32787810580,
+  "storage_human": "32.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:38:54.671Z",
+  "benchmarks": [],
+  "sources": []
+}

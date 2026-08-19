@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/onnx-model-zoo-SqueezeNet1.0-ImageNet-opset12-fp32-onnx",
+  "slug": "ketiswp-onnx-model-zoo-squeezenet1-0-imagenet-opset12-fp32-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/onnx-model-zoo-SqueezeNet1.0-ImageNet-opset12-fp32-onnx",
+  "created_at": "2026-08-19T01:58:09.000Z",
+  "updated_at": "2026-08-19T02:11:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "fp32",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4952956,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnxmodelzoo/squeezenet1.0-7 · Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo/squeezenet1.0-7",
+      "snippet": "Quantization SqueezeNet 1.0-int8 and SqueezeNet 1.0-qdq are obtained by quantizing fp32 SqueezeNet 1.0 model. We use Intel® Neural Compressor with onnxruntime backend to perform quantization. View the instructions to understand how to use Intel® Neural Compressor for quantization. Environment onnx: 1.9.0 onnxruntime: 1.8.0 Prepare model ..."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "squeezenet1.1-7.onnx · onnxmodelzoo/squeezenet1.1-7 at main",
+      "url": "https://huggingface.co/onnxmodelzoo/squeezenet1.1-7/blob/main/squeezenet1.1-7.onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "models/validated/vision/classification/squeezenet/model/squeezenet1.1-7 ...",
+      "url": "https://github.com/onnx/models/blob/main/validated/vision/classification/squeezenet/model/squeezenet1.1-7.onnx",
+      "snippet": "A collection of pre-trained, state-of-the-art models in the ONNX format - onnx/models"
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

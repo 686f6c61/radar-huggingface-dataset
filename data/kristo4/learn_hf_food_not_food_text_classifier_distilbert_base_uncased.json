@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Kristo4/learn_hf_food_not_food_text_classifier_distilbert_base_uncased",
+  "slug": "kristo4-learn_hf_food_not_food_text_classifier_distilbert_base_uncased",
+  "author": "Kristo4",
+  "url": "https://huggingface.co/Kristo4/learn_hf_food_not_food_text_classifier_distilbert_base_uncased",
+  "created_at": "2026-08-17T11:12:32.000Z",
+  "updated_at": "2026-08-17T11:12:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+      "url": "https://huggingface.co/andress02/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Learn Hf Food Not Food Text Classifier Distilbert Base Uncased",
+      "url": "https://model.aibase.com/models/details/1915748764360531970",
+      "snippet": "🚀 learn_hf_food_not_food_text_classifier-distilbert-base-uncased This model is a fine - tuned text classifier based on the DistilBERT architecture, designed to classify text as related to food or not."
+    },
+    {
+      "title": "Learn Hf Food Not Food Text Classifier Distilbert Base Uncased",
+      "url": "https://model.aibase.com/models/details/1924735252866273280",
+      "snippet": "A fine-tuned DistilBERT-base-uncased food/non-food text classifier achieving 100% accuracy on the evaluation set"
+    },
+    {
+      "title": "AnubhavKarki/hf-food-not-food-classification - GitHub",
+      "url": "https://github.com/AnubhavKarki/hf-food-not-food-classification",
+      "snippet": "A complete NLP text classification project that fine tunes DistilBERT to classify whether a sentence is about food or not food. This project covers the full workflow from dataset loading and preprocessing to model training, evaluation, Hugging Face Hub deployment, and a Gradio demo for interactive inference."
+    },
+    {
+      "title": "learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+      "url": "https://endpoints.huggingface.co/new?repository=shrlaw%2Flearn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+      "snippet": "Deploy learn_hf_food_not_food_text_classifier-distilbert-base-uncased for text-classification inference in 1 click."
+    }
+  ]
+}

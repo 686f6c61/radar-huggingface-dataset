@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Cactus-Compute/needle2",
+  "slug": "cactus-compute-needle2",
+  "author": "Cactus-Compute",
+  "url": "https://huggingface.co/Cactus-Compute/needle2",
+  "created_at": "2026-07-29T16:11:52.000Z",
+  "updated_at": "2026-08-17T14:14:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cactus-needle",
+  "languages": [],
+  "tags": [
+    "cactus-needle",
+    "needle",
+    "tool-calling",
+    "function-calling",
+    "on-device",
+    "edge",
+    "quantization",
+    "webassembly",
+    "text-generation",
+    "arxiv:2607.18363",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 161,
+  "downloads_30d": 14219,
+  "trending_score": 100,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5380823866,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Needle 2 - The 14 MB Agentic LLM for Tiny Devices | Cactus",
+      "url": "https://cactuscompute.com/needle",
+      "snippet": "An open 45M-parameter model for tool calling, device use, and structured extraction. Needle 2 runs as a 14 MB binary in 28 MB of session RAM."
+    },
+    {
+      "title": "GitHub - cactus-compute/needle: 14MB foundation model for tiny devices ...",
+      "url": "https://github.com/cactus-compute/needle",
+      "snippet": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots. - cactus-compute/needle"
+    },
+    {
+      "title": "Cactus-Compute/needle · Hugging Face",
+      "url": "https://huggingface.co/Cactus-Compute/needle",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - cactus-compute/needle: 26m function call model that runs on ...",
+      "url": "https://github.com/cactus-compute/needle/tree/main",
+      "snippet": "We distilled Gemini 3.1 into a 26m parameter \"Simple Attention Network\" that you can even finetune locally on your Mac/PC. In production, Needle runs on Cactus at 6000 toks/sec prefill and 1200 decode speed. Weights are fully open on Cactus-Compute/needle, as well as the dataset generation."
+    },
+    {
+      "title": "Cactus-Compute/needle2 at main - Hugging Face",
+      "url": "https://huggingface.co/Cactus-Compute/needle2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

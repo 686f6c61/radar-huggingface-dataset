@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NidaaKhaan/road-scene-ddrnet23slim-camvid",
+  "slug": "nidaakhaan-road-scene-ddrnet23slim-camvid",
+  "author": "NidaaKhaan",
+  "url": "https://huggingface.co/NidaaKhaan/road-scene-ddrnet23slim-camvid",
+  "created_at": "2026-08-16T07:25:29.000Z",
+  "updated_at": "2026-08-16T08:21:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-segmentation",
+    "autonomous-driving",
+    "ddrnet",
+    "pytorch",
+    "dataset:camvid",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70773365,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DDRNet23-Slim - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/ddrnet23_slim",
+      "snippet": "DDRNet23-Slim Segment images or video by class in real‑time on device. DDRNet23Slim is a machine learning model that segments an image into semantic classes, specifically designed for road‑based scenes. It is designed for the application of self‑driving cars."
+    },
+    {
+      "title": "qualcomm/DDRNet23-Slim · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/DDRNet23-Slim",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · qualcomm/DDRNet23-Slim at main - Hugging Face",
+      "url": "https://huggingface.co/qualcomm/DDRNet23-Slim/blob/main/README.md",
+      "snippet": "DDRNet23Slim is a machine learning model that segments an image into semantic classes, specifically designed for road-based scenes. It is designed for the application of self-driving cars. This model is an implementation of DDRNet23-Slim found here. This repository provides scripts to run DDRNet23-Slim on Qualcomm® devices."
+    },
+    {
+      "title": "Qualcomm/qai_hub_models/models/ddrnet23_slim/README.md at main ... - GitHub",
+      "url": "https://github.com/wilfrid51/Qualcomm/blob/main/qai_hub_models/models/ddrnet23_slim/README.md",
+      "snippet": "DDRNet23-Slim: Segment images or video by class in real-time on device DDRNet23Slim is a machine learning model that segments an image into semantic classes, specifically designed for road-based scenes. It is designed for the application of self-driving cars."
+    },
+    {
+      "title": "GitHub - ydhongHIT/DDRNet: The official implementation of \"Deep Dual ...",
+      "url": "https://github.com/ydhongHIT/DDRNet",
+      "snippet": "The official implementation of \"Deep Dual-resolution Networks for Real-time and Accurate Semantic Segmentation of Road Scenes\" Achieve state-of-the-art trade-off between accuracy and speed on cityscapes and camvid, without using inference acceleration (like tensorRT) and extra data (like Mapillary)! The overall architecture of our methods."
+    }
+  ]
+}

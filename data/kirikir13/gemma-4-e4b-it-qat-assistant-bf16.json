@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "kirikir13/gemma-4-E4B-it-qat-assistant-bf16",
+  "slug": "kirikir13-gemma-4-e4b-it-qat-assistant-bf16",
+  "author": "kirikir13",
+  "url": "https://huggingface.co/kirikir13/gemma-4-E4B-it-qat-assistant-bf16",
+  "created_at": "2026-08-17T00:37:50.000Z",
+  "updated_at": "2026-08-17T00:37:51.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_assistant",
+    "mlx-vlm",
+    "gemma-4",
+    "gemma-4-e4b",
+    "gemma",
+    "mtp",
+    "speculative-decoding",
+    "draft-model",
+    "bf16",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant",
+    "base_model:finetune:google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 293,
+  "trending_score": 0,
+  "parameters": 78779908,
+  "parameters_human": "78.8M",
+  "storage_bytes": 190258990,
+  "storage_human": "190 MB",
+  "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma4:e4b-it-qat",
+      "url": "https://ollama.com/library/gemma4:e4b-it-qat",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "google/gemma-4-E4B-it-assistant · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it-assistant",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "google/gemma-4-E4B-it-qat-q4_0-gguf · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    }
+  ]
+}

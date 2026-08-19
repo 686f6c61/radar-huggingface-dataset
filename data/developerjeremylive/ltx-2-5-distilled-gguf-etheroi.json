@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "developerjeremylive/LTX-2.5-Distilled-GGUF-etheroi",
+  "slug": "developerjeremylive-ltx-2-5-distilled-gguf-etheroi",
+  "author": "developerjeremylive",
+  "url": "https://huggingface.co/developerjeremylive/LTX-2.5-Distilled-GGUF-etheroi",
+  "created_at": "2026-08-18T23:50:40.000Z",
+  "updated_at": "2026-08-18T23:50:41.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "image-to-video",
+    "text-to-video",
+    "video-to-video",
+    "audio-to-video",
+    "ltx-video",
+    "lightricks",
+    "ltx-2.5",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:quantized:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21004025600,
+  "parameters_human": "21.00B",
+  "storage_bytes": 116937123785,
+  "storage_human": "116.9 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "developerjeremylive/LTX-2.5-Distilled-GGUF-etheroi · Hugging Face",
+      "url": "https://huggingface.co/developerjeremylive/LTX-2.5-Distilled-GGUF-etheroi",
+      "snippet": "This repository provides quantized GGUF formats of the distilled transformer from Lightricks/LTX-2.5. These weights are highly optimized for local execution, allowing you to run high-fidelity video and audio generation workflows on hardware with memory constraints while retaining the core visual fidelity of the original base model."
+    },
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    },
+    {
+      "title": "LTX-2.5 | LTX Documentation",
+      "url": "https://docs.ltx.io/models/ltx-2-5",
+      "snippet": "LTX-2.5 comes in two variants: ltx-2-5-fast for speed and low cost, and ltx-2-5-pro for higher fidelity. Fast produces portrait and landscape video up to 4K; Pro tops out at 1080p. LTX-2.5 improves every stage of generation on a stronger foundation: a Diffusion Video Decoder with industry-leading pixel quality, higher fidelity, native multi-shot scenes, and a better distilled model. Native ..."
+    },
+    {
+      "title": "LTX | Open Foundation Models for Video, Audio, and World Simulation",
+      "url": "https://ltx.io/",
+      "snippet": "ComfyUI and LTX share a simple belief, that open models build better tools, faster. With LTX-2.5 running natively in ComfyUI, a developer can go from an idea to a working world-model pipeline in an afternoon, and an enterprise can take that same pipeline straight into production on its own hardware."
+    }
+  ]
+}

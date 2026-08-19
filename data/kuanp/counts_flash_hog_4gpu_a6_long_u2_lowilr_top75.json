@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KuanP/counts_flash_hog_4gpu_a6_long_u2_lowilr_top75",
+  "slug": "kuanp-counts_flash_hog_4gpu_a6_long_u2_lowilr_top75",
+  "author": "KuanP",
+  "url": "https://huggingface.co/KuanP/counts_flash_hog_4gpu_a6_long_u2_lowilr_top75",
+  "created_at": "2026-08-17T19:45:29.000Z",
+  "updated_at": "2026-08-17T19:46:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "uce",
+    "single-cell",
+    "cell-embedding",
+    "transcriptomics",
+    "scrna-seq",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 774755841,
+  "parameters_human": "774.8M",
+  "storage_bytes": 3115484567,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KuanP (Kuan Pang) - Hugging Face",
+      "url": "https://huggingface.co/KuanP/datasets",
+      "snippet": "User profile of Kuan Pang on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=PULSAR",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Development Tools | Token Counter | GPU Calculator",
+      "url": "https://app.linpp2009.com/en",
+      "snippet": "Free professional AI development tools including smart token counter, LLM GPU calculator, and AI generation speed simulator. Essential tools for AI developers to optimize efficiency and project costs."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "flash-hog · PyPI",
+      "url": "https://pypi.org/project/flash-hog/",
+      "snippet": "Flash Hog This repo contains the code for Flash Higher-Order-Gradients, aka. Flash Hog. This kernel achieves around a 3.7x speedup over an XLA optimized kernel, with linear memory scaling instead of quadratic scaling. Installation uv add flash-hog Method Flash Hog does 4 recomputation passes to avoid any atomics or saving any intermediary tensors of shape (N_Q, N_K). This shakes out to be ..."
+    }
+  ]
+}

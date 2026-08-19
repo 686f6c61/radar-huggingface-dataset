@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/DNA-175M",
+  "slug": "reaperdoesntknow-dna-175m",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/DNA-175M",
+  "created_at": "2025-10-06T22:26:26.000Z",
+  "updated_at": "2026-08-18T13:15:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "liquid-former",
+    "text-generation",
+    "convergentintel",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1904,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 705576313,
+  "storage_human": "706 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/DNA-175M · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/DNA-175M",
+      "snippet": "Instructions to use reaperdoesntknow/DNA-175M with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use reaperdoesntknow/DNA-175M with Transformers:"
+    },
+    {
+      "title": "DNA-AI - a reaperdoesntknow Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/reaperdoesntknow/dna-ai",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from reaperdoesntknow"
+    },
+    {
+      "title": "New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack",
+      "url": "https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html",
+      "snippet": "JADEPUFFER exploits Langflow CVE-2025-3248 to deploy ENCFORGE ransomware against AI model weights, vector indexes, and training data on the host."
+    },
+    {
+      "title": "reaperdoesntknow/reaperdoesntknow · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/reaperdoesntknow",
+      "snippet": "Roy C · independent ML researcher & AI red-teamer Open-weight models, adversarial evaluation, and efficient training at the small-model scale. I build and ship small open-weight language models — 50+ public checkpoints, quantized for edge and picked up by third-party quantizers (mradermacher) for independent re-hosting."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=4&sort=trending&search=REAP",
+      "snippet": "+ 44 Parameters Reset Parameters 6B 12B 32B 128B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 ..."
+    }
+  ]
+}

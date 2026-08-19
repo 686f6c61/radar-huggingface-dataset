@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "HentaiMike/IDK",
+  "slug": "hentaimike-idk",
+  "author": "HentaiMike",
+  "url": "https://huggingface.co/HentaiMike/IDK",
+  "created_at": "2026-04-04T15:28:38.000Z",
+  "updated_at": "2026-08-17T03:44:16.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16151120069,
+  "storage_human": "16.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free NSFW AI Image Generator - No Filter | Stuffer.ai",
+      "url": "https://stuffer.ai/generate/nsfw-ai-image-generator",
+      "snippet": "Qwen Image — High-quality model with strong NSFW prompt adherence Beyond Images: NSFW AI Video Generate NSFW AI videos with Wan2.2. Create short video clips from text prompts or animate your still NSFW images with the image-to-video feature. Why Use Stuffer.ai for NSFW Art? 100% Free — Generate images and videos at no cost, no account required"
+    },
+    {
+      "title": "LuxedAI - Top AI NSFW Maker",
+      "url": "https://luxedai.com/",
+      "snippet": "LuxedAI is the top AI NSFW maker. Generate uncensored AI imagery in seconds with the most powerful NSFW model. Hyperreal portraits, anime, hentai, fantasy and more."
+    },
+    {
+      "title": "7 Best AI Hentai Generators for NSFW Anime (2026)",
+      "url": "https://aitoolsone.com/blog/best-ai-hentai-generators/",
+      "snippet": "Multiple AI models: PornGen doesn&#x27;t just offer a single model for the AI hentai generation. You can switch between models such as Anime Basic, Anime Realistic, Anime HD, and more, for either female or male subjects. AI hentai image gallery: PornGen avails a library of premade AI hentai for inspiration. You can please your eyes by browsing them."
+    },
+    {
+      "title": "Top 7 AI Hentai Image Generators for 2026 - nsfwlists.com",
+      "url": "https://nsfwlists.com/image-generators/best-ai-hentai-generators/",
+      "snippet": "Discover the best AI hentai generators for creating anime-style artwork. Compare top AI anime art tools, features, and generation quality."
+    },
+    {
+      "title": "/ai/ - AI-Generated Art - 7chan",
+      "url": "https://7chan.org/ai/",
+      "snippet": "/ai/ - AI-Generated Art Share your AI-generated waifus, scenery, models, tools, how-to&#x27;s, and more. NOTE 1: Realistic loli/shota falls under the \"Absolutely no child pornography\" rule. If the average boomer might think they&#x27;re real, they&#x27;re real. Loli/shota is allowed, but if they look more realistic than the bitch from Alita: Battle Angel, they&#x27;re too real. This is solely under mod discretion ..."
+    }
+  ]
+}

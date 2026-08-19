@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Froopert-31B-GGUF",
+  "slug": "mradermacher-froopert-31b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Froopert-31B-GGUF",
+  "created_at": "2026-08-14T04:17:40.000Z",
+  "updated_at": "2026-08-14T11:33:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "reasoning",
+    "non-reasoning",
+    "agentic",
+    "creative writing",
+    "roleplay",
+    "conversational",
+    "character-rp",
+    "de-slop",
+    "low-refusal",
+    "nsfw",
+    "31B",
+    "gemma-4",
+    "en",
+    "base_model:Nimbz/Froopert-31B",
+    "base_model:quantized:Nimbz/Froopert-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1069,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908620096,
+  "storage_human": "213.9 GB",
+  "base_model": "Nimbz/Froopert-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "By VRAM Tier Pick the tier that matches your hardware. Every model below has been confirmed live on HuggingFace at the time of writing, with GGUF available either in the linked repo or via a sibling quant repo from bartowski or mradermacher. 8GB VRAM — Budget tier The 8B class is the floor for usable uncensored output. Picks:"
+    },
+    {
+      "title": "DeepSeek-V4: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/deepseek-v4",
+      "snippet": "The lossless 8-bit GGUF is 162 GB and 3-bit is 103GB which can run on a 110GB RAM device. DeepSeek-V4-Flash-0731 scores 82.7% on Terminal Bench 2.1, 54.4% on DeepSWE, and 54.2% on NL2Repo. DSpark is also enabled for GGUFs, enabling up to 2x faster decoding speed! DeepSeek-V4-Pro-0813 was released as of Aug 13 2026 today. Quants are in progress."
+    }
+  ]
+}

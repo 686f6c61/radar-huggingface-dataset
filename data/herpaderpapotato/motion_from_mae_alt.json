@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "herpaderpapotato/motion_from_mae_alt",
+  "slug": "herpaderpapotato-motion_from_mae_alt",
+  "author": "herpaderpapotato",
+  "url": "https://huggingface.co/herpaderpapotato/motion_from_mae_alt",
+  "created_at": "2026-08-08T13:19:38.000Z",
+  "updated_at": "2026-08-17T00:39:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15124226,
+  "parameters_human": "15.1M",
+  "storage_bytes": 423557700,
+  "storage_human": "424 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

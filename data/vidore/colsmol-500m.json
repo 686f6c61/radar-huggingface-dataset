@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "vidore/colSmol-500M",
+  "slug": "vidore-colsmol-500m",
+  "author": "vidore",
+  "url": "https://huggingface.co/vidore/colSmol-500M",
+  "created_at": "2025-01-22T21:57:19.000Z",
+  "updated_at": "2026-08-17T13:25:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "colpali",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "colpali",
+    "safetensors",
+    "colsmolvlm",
+    "vidore-experimental",
+    "vidore",
+    "sentence-transformers",
+    "multi-vector",
+    "visual-document-retrieval",
+    "en",
+    "arxiv:2004.12832",
+    "arxiv:2407.01449",
+    "arxiv:2106.09685",
+    "base_model:vidore/ColSmolVLM-Instruct-500M-base",
+    "base_model:finetune:vidore/ColSmolVLM-Instruct-500M-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 747,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1130012590,
+  "storage_human": "1.1 GB",
+  "base_model": "vidore/ColSmolVLM-Instruct-500M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vidore/colSmol-500M · Hugging Face",
+      "url": "https://huggingface.co/vidore/colSmol-500M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vidore/colSmol-500M-base · Hugging Face",
+      "url": "https://huggingface.co/vidore/colSmol-500M-base",
+      "snippet": "ColSmolVLM-500M-Base-22750: Visual Retriever based on SmolVLM-500M-Base-22750 with ColBERT strategy This is a version trained with batch_size 32 for 3 epochs ColSmolVLM is a model based on a novel model architecture and training strategy based on Vision Language Models (VLMs) to efficiently index documents from their visual features. It is a SmolVLM extension that generates ColBERT - style ..."
+    },
+    {
+      "title": "vidore_colSmol-500M-FT - GitHub",
+      "url": "https://github.com/K0EKJE/VLM-Based-Retrieval-Augmented-Generation/tree/main/benchmark_run_metrics/vidore_colSmol-500M-FT",
+      "snippet": "Stanford NLP course group project repo. RAG based on VLM retriever for visual understanding. Fine-tuned using synthetic data and evaluated on ViDore Benchmark and out-of-domain testset. - K0EKJE/V..."
+    },
+    {
+      "title": "The colSmol-500M open-source visual retrieval model efficiently indexes ...",
+      "url": "https://model.aibase.com/models/details/1915687310857027585",
+      "snippet": "A visual retrieval model based on SmolVLM-Instruct-500M and the ColBERT strategy, capable of efficiently indexing documents through visual features"
+    },
+    {
+      "title": "colSmol-500M-base huggingface.co api & vidore colSmol-500M-base github ...",
+      "url": "https://www.toolify.ai/ai-model/vidore-colsmol-500m-base",
+      "snippet": "colSmol-500M-base huggingface.co colSmol-500M-base huggingface.co is an AI model on huggingface.co that provides colSmol-500M-base&#x27;s model effect (), which can be used instantly with this vidore colSmol-500M-base model. huggingface.co supports a free trial of the colSmol-500M-base model, and also provides paid use of the colSmol-500M-base."
+    }
+  ]
+}

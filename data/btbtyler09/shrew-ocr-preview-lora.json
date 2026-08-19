@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "btbtyler09/shrew-ocr-preview-lora",
+  "slug": "btbtyler09-shrew-ocr-preview-lora",
+  "author": "btbtyler09",
+  "url": "https://huggingface.co/btbtyler09/shrew-ocr-preview-lora",
+  "created_at": "2026-08-16T23:14:50.000Z",
+  "updated_at": "2026-08-17T16:58:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "document-intelligence",
+    "structured-extraction",
+    "vision-language",
+    "ocr",
+    "rag",
+    "image-text-to-text",
+    "en",
+    "base_model:ibm-granite/granite-vision-4.1-4b",
+    "base_model:adapter:ibm-granite/granite-vision-4.1-4b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1992379520,
+  "storage_human": "2.0 GB",
+  "base_model": "ibm-granite/granite-vision-4.1-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "btbtyler09/shrew-ocr-preview-lora · Hugging Face",
+      "url": "https://huggingface.co/btbtyler09/shrew-ocr-preview-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "btbtyler09/shrew-ocr-preview · Hugging Face",
+      "url": "https://huggingface.co/btbtyler09/shrew-ocr-preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "btbtyler09 (Tyler Brooker) · GitHub",
+      "url": "https://github.com/btbtyler09",
+      "snippet": "A document processing app using vlm and fine tuned extraction models Python"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,990 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\" - microsoft/LoRA"
+    }
+  ]
+}

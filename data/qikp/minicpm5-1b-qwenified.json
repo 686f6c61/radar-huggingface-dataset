@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "qikp/MiniCPM5-1B-Qwenified",
+  "slug": "qikp-minicpm5-1b-qwenified",
+  "author": "qikp",
+  "url": "https://huggingface.co/qikp/MiniCPM5-1B-Qwenified",
+  "created_at": "2026-08-15T19:13:05.000Z",
+  "updated_at": "2026-08-15T19:16:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 208,
+  "trending_score": 0,
+  "parameters": 1080694272,
+  "parameters_human": "1.08B",
+  "storage_bytes": 4322810048,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

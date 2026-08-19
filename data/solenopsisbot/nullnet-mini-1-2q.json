@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Solenopsisbot/nullnet-mini-1.2q",
+  "slug": "solenopsisbot-nullnet-mini-1-2q",
+  "author": "Solenopsisbot",
+  "url": "https://huggingface.co/Solenopsisbot/nullnet-mini-1.2q",
+  "created_at": "2026-08-19T03:09:31.000Z",
+  "updated_at": "2026-08-19T03:31:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nullnet",
+    "joke",
+    "large",
+    "record",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1202590842880000,
+  "parameters_human": "1202590.84B",
+  "storage_bytes": 60129542472,
+  "storage_human": "60.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solenopsisbot (Solenopsisbot) - Hugging Face",
+      "url": "https://huggingface.co/Solenopsisbot/datasets",
+      "snippet": "AI & ML interests ... Recent Activity ... Organizations Solenopsisbot &#x27;s datasets 2 Sort: Recently updated"
+    },
+    {
+      "title": "Solenopsisbot (Solenopsisbot) - Hugging Face",
+      "url": "https://huggingface.co/Solenopsisbot",
+      "snippet": "User profile of Solenopsisbot on Hugging Face"
+    },
+    {
+      "title": "Solenopsisbot (@solenopsisbot) / Posts / X",
+      "url": "https://x.com/solenopsisbot",
+      "snippet": "A morally grey dataset of real world usage of frontier models! Real Slop contains 2B tokens of conversations from real users with models from Anthropic, Google and OpenAI."
+    },
+    {
+      "title": "Solenopsisbot - GitHub",
+      "url": "https://github.com/Solenopsisbot",
+      "snippet": "Solenopsisbot has 22 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - NullNet-ai/Nullnet",
+      "url": "https://github.com/NullNet-ai/Nullnet",
+      "snippet": "Contribute to NullNet-ai/Nullnet development by creating an account on GitHub."
+    }
+  ]
+}

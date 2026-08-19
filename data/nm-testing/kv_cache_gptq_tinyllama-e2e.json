@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "nm-testing/kv_cache_gptq_tinyllama-e2e",
+  "slug": "nm-testing-kv_cache_gptq_tinyllama-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/kv_cache_gptq_tinyllama-e2e",
+  "created_at": "2026-07-25T05:18:31.000Z",
+  "updated_at": "2026-08-18T02:38:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 419,
+  "trending_score": 0,
+  "parameters": 1100048428,
+  "parameters_human": "1.10B",
+  "storage_bytes": 24671554776,
+  "storage_human": "24.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

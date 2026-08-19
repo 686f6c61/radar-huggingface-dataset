@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Baekpica/dots3-note-prev-Mixed-Quant-GGUF",
+  "slug": "baekpica-dots3-note-prev-mixed-quant-gguf",
+  "author": "Baekpica",
+  "url": "https://huggingface.co/Baekpica/dots3-note-prev-Mixed-Quant-GGUF",
+  "created_at": "2026-08-17T21:04:25.000Z",
+  "updated_at": "2026-08-18T07:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "dots3",
+    "dots3-note",
+    "mixture-of-experts",
+    "mixed-quantization",
+    "iq2_xxs",
+    "dgx-spark",
+    "long-context",
+    "text-generation",
+    "en",
+    "ko",
+    "zh",
+    "base_model:dots-studio/dots3-note-prev",
+    "base_model:quantized:dots-studio/dots3-note-prev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 188,
+  "trending_score": 0,
+  "parameters": 280685923264,
+  "parameters_human": "280.69B",
+  "storage_bytes": 86072935456,
+  "storage_human": "86.1 GB",
+  "base_model": "dots-studio/dots3-note-prev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - studio-dots-ai/dots3-note-prev: dots3 note preview",
+      "url": "https://github.com/studio-dots-ai/dots3-note-prev",
+      "snippet": "The dots3 family is designed to include models with different trade-offs among capability, latency, and inference cost. dots3-note preview is the most lightweight member of the family."
+    },
+    {
+      "title": "dots-studio/dots3-note-prev · Hugging Face",
+      "url": "https://huggingface.co/dots-studio/dots3-note-prev",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - studio-dots-ai/dots3-note-prev at taaft · GitHub",
+      "url": "https://github.com/studio-dots-ai/dots3-note-prev?ref=taaft",
+      "snippet": "Model Introduction dots3-note preview is the first open-weight model in the dots3 family. It is a Mixture-of-Experts model with 280B total parameters, 16B activated parameters, and support for a context length of up to 512K tokens. The model can understand text, images, video, and audio, and produces text outputs."
+    },
+    {
+      "title": "Baekpica/Motif-3-Mixed-Quant-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Baekpica/Motif-3-Mixed-Quant-GGUF",
+      "snippet": "The release base is Baekpica/ds4v0.5.6.3-dfm; the long-context measurements below use the exact Spark optimization commit 593d251, and the persistent multi-bank measurements use cf605e0. One ds4-server command and one HTTP contract cover the integrated DeepSeek, Solar Open2, K-EXAONE, and Motif-3 families; only the GGUF path and its matching weight-owner manifest change. The server provides ..."
+    },
+    {
+      "title": "Dots3-note Preview, New 2X Spark Competitor - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/dots3-note-preview-new-2x-spark-competitor/380220",
+      "snippet": "It is a heavier model than I&#x27;ve worked with before. I&#x27;ve got it to nvfp4/bf16 mix quant, keeping experts at bf16. I hope to load the quant onto huggingface later. I&#x27;m trying to get the recipe together right now. It will probably be tomorrow. I started out with my limping initial setup hitting pp=300tok/s decode=30tok/s +/- on single stream."
+    }
+  ]
+}

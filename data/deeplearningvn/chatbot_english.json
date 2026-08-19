@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DeeplearningVN/Chatbot_English",
+  "slug": "deeplearningvn-chatbot_english",
+  "author": "DeeplearningVN",
+  "url": "https://huggingface.co/DeeplearningVN/Chatbot_English",
+  "created_at": "2026-08-18T04:52:11.000Z",
+  "updated_at": "2026-08-18T04:53:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920734784,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "English AI Chatbot - Speak Fluent English with AI",
+      "url": "https://deepenglish.com/aichatbot/",
+      "snippet": "Practice English conversation with our AI language partner. Improve your speaking, grammar, and vocabulary through interactive chat."
+    },
+    {
+      "title": "Dolphin AI",
+      "url": "https://dphn.ai/",
+      "snippet": "Dolphin is a project dedicated to pushing the boundaries of AI model development and distributed inference"
+    },
+    {
+      "title": "chat-bot-deep-learning · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chat-bot-deep-learning",
+      "snippet": "Build a chatbot using deep learning techniques. The chatbot will be trained on the dataset which contains categories (intents), pattern and responses. We use a special recurrent neural network (LSTM) to classify which category the user&#x27;s message belongs to and then we will give a random response ..."
+    },
+    {
+      "title": "PDF Deep Learning Based Chatbot Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/1908.08835v1.pdf",
+      "snippet": "A conversational agent (chatbot) is a piece of software that is able to communicate with humans using natural language. Modeling conversation is an important task in natural lan-guage processing and artificial intelligence (AI). Indeed, ever since the birth of AI, creating a good chatbot remains one of the field&#x27;s hardest challenges. While chatbots can be used for various tasks, in general ..."
+    },
+    {
+      "title": "(PDF) English-Vietnamese Machine Translation Using Deep Learning for ...",
+      "url": "https://www.researchgate.net/publication/375239569_English-Vietnamese_Machine_Translation_Using_Deep_Learning_for_Chatbot_Applications",
+      "snippet": "Recently, artificial intelligence-based machine translation has been much improved over traditional methods. A machine translator is very useful for translating text or speech from one language to ..."
+    }
+  ]
+}

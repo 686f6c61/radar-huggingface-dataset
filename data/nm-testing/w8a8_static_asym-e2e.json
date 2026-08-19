@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "nm-testing/w8a8_static_asym-e2e",
+  "slug": "nm-testing-w8a8_static_asym-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/w8a8_static_asym-e2e",
+  "created_at": "2026-07-25T06:06:31.000Z",
+  "updated_at": "2026-08-18T03:26:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 453,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 40658534070,
+  "storage_human": "40.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen3.8-27B-NVFP4",
+  "slug": "unsloth-qwen3-8-27b-nvfp4",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+  "created_at": "2026-08-13T08:28:51.000Z",
+  "updated_at": "2026-08-17T02:05:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "unsloth",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 265,
+  "downloads_30d": 523919,
+  "trending_score": 249,
+  "parameters": 19869895952,
+  "parameters_human": "19.87B",
+  "storage_bytes": 23437581813,
+  "storage_human": "23.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new family of models, including Qwen3.8-27B, Qwen3.8- 2.4T-A95B and Qwen3.8 -Max. Qwen3.8 has vision and thinking capabilities and a 256K context window (up to 1M tokens). Qwen3.8-27B, the upcoming 27B parameter model will be released this Friday and Unsloth will have day-zero support. Qwen3.8-2.4T-A95B is a 2.4T parameter open-weight model (95B active) that rivals GPT-5.6 Sol."
+    },
+    {
+      "title": "Run Unsloth Dynamic NVFP4 Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/basics/nvfp4",
+      "snippet": "It combines NVIDIA&#x27;s native NVFP4 precision with Unsloth Dynamic 2.0 quantization to preserve model accuracy while reducing VRAM usage and increasing speed. This guide explains FP4 quantization, compares NVFP4 with other formats, and shows how to run models like Gemma 4 and Qwen3.6 locally using vLLM or SGLang on RTX 5050-5090, B200, RTX PRO ..."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 on DGX Spark (GB10) - GitHub",
+      "url": "https://github.com/gitcommit90/qwen38-27b-dgx-spark",
+      "snippet": "Qwen3.8-27B is a native vision-language dense model (64 layers, Gated DeltaNet + gated attention, 262K native context, MTP-trained). The BF16 card is ~52 GiB; this package uses the Unsloth NVFP4 quant (~22.5 GiB weights + 0.81 GiB MTP) so a single GB10 can actually serve it."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B goes open-weight within days. Here&#x27;s what&#x27;s confirmed, the GPU memory math for a 27B-class model, and how to serve it with vLLM or SGLang on day one."
+    }
+  ]
+}

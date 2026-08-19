@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "xiaomi-research/MiLMMT-46-4B-v1.0",
+  "slug": "xiaomi-research-milmmt-46-4b-v1-0",
+  "author": "xiaomi-research",
+  "url": "https://huggingface.co/xiaomi-research/MiLMMT-46-4B-v1.0",
+  "created_at": "2026-08-05T02:25:14.000Z",
+  "updated_at": "2026-08-12T02:38:55.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "translation",
+    "arxiv:2608.10812",
+    "base_model:xiaomi-research/MiLMMT-46-4B-v0.1",
+    "base_model:finetune:xiaomi-research/MiLMMT-46-4B-v0.1",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 7739,
+  "trending_score": 8,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8672663218,
+  "storage_human": "8.7 GB",
+  "base_model": "xiaomi-research/MiLMMT-46-4B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xiaomi-research/MiLMMT-46-4B-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/xiaomi-research/MiLMMT-46-4B-v1.0",
+      "snippet": "Its training builds on Gemma3-4B through four stages: (1) continual pretraining on 143 billion tokens of monolingual and parallel data across 46 languages, yielding MiLMMT-46-4B-Pretrain; (2) supervised finetuning, yielding MiLMMT-46-4B-v0.1; and (3) reinforcement learning; and (4) model merging, yielding this model, MiLMMT-46-4B-v1.."
+    },
+    {
+      "title": "xiaomi-research/MiLMMT-46-4B-v1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/xiaomi-research/MiLMMT-46-4B-v1.0/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiLMMT-46-4B-v1.0 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/xiaomi-research/MiLMMT-46-4B-v1.0",
+      "snippet": "Deploy MiLMMT-46-4B-v1. with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - xiaomi-research/gemmax: Gemma-based Multilingual Machine ...",
+      "url": "https://github.com/xiaomi-research/gemmax",
+      "snippet": "Aug. 11 2026: The MiLMMT-v1. paper Reference-Free Post-Training of Open Large Language Models for Multilingual Machine Translation is available on ArXiv! Feb. 12 2026: The MiLMMT-v0.1 paper Scaling Model and Data for Multilingual Machine Translation with Open Large Language Models is available on ArXiv! Jan. 23 2025: The GemmaX2 paper Multilingual Machine Translation with Open Large Language ..."
+    },
+    {
+      "title": "Reference-Free Post-Training of Open Large Language Models for ...",
+      "url": "https://arxiv.org/html/2608.10812v1",
+      "snippet": "COMETKiwi shows the same trend. These results indicate that reference-free post-training remains effective across model scales, including on top of the strongest $12$ B SFT model, rather than being limited to smaller models."
+    }
+  ]
+}

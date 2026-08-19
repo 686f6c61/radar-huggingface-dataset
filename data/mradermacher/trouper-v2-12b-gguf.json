@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Trouper-v2-12b-GGUF",
+  "slug": "mradermacher-trouper-v2-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Trouper-v2-12b-GGUF",
+  "created_at": "2026-08-14T23:30:03.000Z",
+  "updated_at": "2026-08-15T00:49:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "character_roleplay",
+    "creative_writing",
+    "roleplay",
+    "en",
+    "dataset:DarwinAnim8or/Restraint-and-Interiority-RP-v2",
+    "dataset:DarwinAnim8or/Trouper-Extras-SillyTavern",
+    "base_model:DarwinAnim8or/Trouper-v2-12b",
+    "base_model:quantized:DarwinAnim8or/Trouper-v2-12b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 640,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692309056,
+  "storage_human": "84.7 GB",
+  "base_model": "DarwinAnim8or/Trouper-v2-12b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

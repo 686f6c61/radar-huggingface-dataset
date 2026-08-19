@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Anadilorg/AnadilAdygheTTS",
+  "slug": "anadilorg-anadiladyghetts",
+  "author": "Anadilorg",
+  "url": "https://huggingface.co/Anadilorg/AnadilAdygheTTS",
+  "created_at": "2026-08-17T10:20:44.000Z",
+  "updated_at": "2026-08-17T10:37:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "ady",
+    "tr"
+  ],
+  "tags": [
+    "voxcpm",
+    "text-to-speech",
+    "tts",
+    "speech-synthesis",
+    "audio",
+    "adyghe",
+    "circassian",
+    "adigece",
+    "cerkesce",
+    "west-circassian",
+    "lora",
+    "low-resource",
+    "endangered-languages",
+    "turkey",
+    "ady",
+    "tr",
+    "arxiv:2106.09685",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:adapter:openbmb/VoxCPM2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101088480,
+  "storage_human": "101 MB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anadilorg (Anadil Org) - Hugging Face",
+      "url": "https://huggingface.co/Anadilorg/models",
+      "snippet": "User profile of Anadil Org on Hugging Face"
+    },
+    {
+      "title": "Anadilorg (Anadil Org) - Hugging Face",
+      "url": "https://huggingface.co/Anadilorg",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models__ai/",
+      "snippet": "2M Followers, 329 Following, 7,117 Posts - 𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) on Instagram: \"𝐖𝐞 𝐃𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐌𝐨𝐝𝐞𝐥𝐬, 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐭, 𝐀𝐧𝐝 𝐓𝐡𝐞 𝐖𝐨𝐫𝐥𝐝 𝐎𝐟 𝐀𝐈 ..."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "www.weights.com",
+      "url": "https://www.weights.com/models",
+      "snippet": "www.weights.com ... /"
+    }
+  ]
+}

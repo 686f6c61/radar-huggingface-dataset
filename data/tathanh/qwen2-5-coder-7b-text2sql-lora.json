@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "TaThanh/qwen2.5-coder-7b-text2sql-lora",
+  "slug": "tathanh-qwen2-5-coder-7b-text2sql-lora",
+  "author": "TaThanh",
+  "url": "https://huggingface.co/TaThanh/qwen2.5-coder-7b-text2sql-lora",
+  "created_at": "2026-08-16T04:30:39.000Z",
+  "updated_at": "2026-08-16T04:32:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": 7655986688,
+  "parameters_human": "7.66B",
+  "storage_bytes": 7900623317,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v1",
+      "snippet": "Abstract † In this report, we introduce the Qwen2.5-Coder series, a significant upgrade from its predecessor, CodeQwen1.5. This series includes two models: Qwen2.5-Coder-1.5B and Qwen2.5-Coder-7B. As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable ..."
+    },
+    {
+      "title": "README.md · Qwen/Qwen2.5-Coder-7B at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v3",
+      "snippet": "Additionally, the Qwen2.5-Coder-7B-Instruct model outperformed larger models, including CodeStral-22B and DS-Coder-33B-Instruct, highlighting its advanced code reasoning capabilities despite its smaller size."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "As of now, Qwen2.5-Coder has covered six mainstream model sizes to meet the needs of different developers; 🛠 Practical: We explore the practicality of Qwen2.5-Coder in two scenarios, including code assistants and Artifacts, with some examples showcasing the potential applications of Qwen2.5-Coder in real-world scenarios;"
+    }
+  ]
+}

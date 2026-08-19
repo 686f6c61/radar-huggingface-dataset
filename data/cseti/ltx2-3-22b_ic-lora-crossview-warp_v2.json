@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp_v2",
+  "slug": "cseti-ltx2-3-22b_ic-lora-crossview-warp_v2",
+  "author": "Cseti",
+  "url": "https://huggingface.co/Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp_v2",
+  "created_at": "2026-08-15T13:14:22.000Z",
+  "updated_at": "2026-08-17T10:42:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-generation",
+    "lora",
+    "ic-lora",
+    "ltx-video",
+    "novel-view-synthesis",
+    "camera-viewpoint",
+    "depth-warp",
+    "moge",
+    "lightricks",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:adapter:Lightricks/LTX-2.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 351686780,
+  "storage_human": "352 MB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp_v2 · Hugging Face",
+      "url": "https://huggingface.co/Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cseti/LTX2.3-22B_IC-LoRA-CrossView-Prompt · Hugging Face",
+      "url": "https://huggingface.co/Cseti/LTX2.3-22B_IC-LoRA-CrossView-Prompt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX2.3-22B_IC-LoRA-CrossView-Prompt: Video-to-Video model — overview ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ltx2.3-22b-ic-lora-crossview-prompt-cseti",
+      "snippet": "Overview LTX2.3-22B_IC-LoRA-CrossView-Prompt is a fine-tuned In-Context LoRA adapter for LTX-Video 2.3 (22B) that functions as a virtual second camera, re-rendering videos from new viewpoints while preserving subject and scene content. Built by Cseti, this v0.9 proof-of-concept operates exclusively in ComfyUI through a video-to-video (IC-LoRA) workflow, requiring a reference video and a ..."
+    },
+    {
+      "title": "CrossView IC-LoRA for LTX 2.3 22B - Warp 0.9 | LTX Video LoRA | Civitai",
+      "url": "https://civitai.com/models/2779316/crossview-ic-lora-for-ltx-23-22b",
+      "snippet": "It&#x27;s an IC-LoRA for LTX-Video 2.3 (22B) with two reference videos: a depth-warp of your video (this carries the geometry) and the original video itself (this keeps the identity). The warps come from the CrossViewWarp ComfyUI node, which uses Depth Anything V2 input. KEYRAME UPDATE: The offset doesn&#x27;t have to be a single fixed pose."
+    },
+    {
+      "title": "GitHub - cseti007/ComfyUI-CrossViewWarp",
+      "url": "https://github.com/cseti007/ComfyUI-CrossViewWarp",
+      "snippet": "ComfyUI-CrossViewWarp The companion ComfyUI node for my CrossView-Warp IC-LoRA (LTX-Video 2.3, 22B). You give it a video and a camera offset, and it builds the depth-warp conditioning the LoRA expects: the input reprojected into the new viewpoint, with magenta holes where the original camera never saw anything."
+    }
+  ]
+}

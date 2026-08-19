@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "ymc20091103/anima-data",
+  "slug": "ymc20091103-anima-data",
+  "author": "ymc20091103",
+  "url": "https://huggingface.co/ymc20091103/anima-data",
+  "created_at": "2026-08-15T06:35:26.000Z",
+  "updated_at": "2026-08-15T07:09:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18709634,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

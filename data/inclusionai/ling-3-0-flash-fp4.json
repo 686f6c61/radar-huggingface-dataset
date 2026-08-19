@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ling-3.0-flash-fp4",
+  "slug": "inclusionai-ling-3-0-flash-fp4",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-fp4",
+  "created_at": "2026-08-04T04:33:13.000Z",
+  "updated_at": "2026-08-16T04:33:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bailing_hybrid",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 25,
+  "downloads_30d": 5026,
+  "trending_score": 9,
+  "parameters": 65578478560,
+  "parameters_human": "65.58B",
+  "storage_bytes": 70398348993,
+  "storage_human": "70.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/Ling-3.0-flash-fp4 · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-fp4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling 3.0 Flash API - Demo - DeepInfra",
+      "url": "https://deepinfra.com/inclusionAI/Ling-3.0-flash",
+      "snippet": "We&#x27;re introducing Ling-3.0-flash, our next-generation native hybrid reasoning model. Operating with 124B total and 5.1B active parameters (~12.4% and ~8.1% of our previous 1T-class flagship Ring-2.6-1T), Ling-3.0-flash matches or outperforms its predecessor across key benchmarks."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "InclusionAI Ling 3.0 Flash Complete Guide: 124B MoE with Hybrid Reasoning",
+      "url": "https://www.aimadetools.com/blog/ling-3-0-flash-complete-guide/",
+      "snippet": "Ling 3.0 Flash is a 124B MoE model with 5.1B active parameters. Hybrid reasoning mode, 262K context, free on OpenRouter. Specs and setup."
+    }
+  ]
+}

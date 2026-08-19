@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ronaldodev/finanfa-ai-luth-lfm2-1.2b",
+  "slug": "ronaldodev-finanfa-ai-luth-lfm2-1-2b",
+  "author": "Ronaldodev",
+  "url": "https://huggingface.co/Ronaldodev/finanfa-ai-luth-lfm2-1.2b",
+  "created_at": "2026-08-16T16:44:17.000Z",
+  "updated_at": "2026-08-16T16:44:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lfm2",
+    "benin",
+    "finanfa-ai",
+    "lora",
+    "luth",
+    "fine-tuned",
+    "text-generation",
+    "conversational",
+    "fr",
+    "dataset:Ronaldodev/finanfa-ai-dataset",
+    "base_model:kurakurai/Luth-LFM2-1.2B",
+    "base_model:adapter:kurakurai/Luth-LFM2-1.2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2340697936,
+  "storage_human": "2.3 GB",
+  "base_model": "kurakurai/Luth-LFM2-1.2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-1.2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-1.2B",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-1.2B-Instruct"
+    },
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "NOTE: In 2026 we released a new version of our flagship models - LFM2.5 Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency deployment. LFM2 is specifically designed to provide the fastest on-device gen-AI experience across the industry, thus unlocking a massive number of devices for generative AI workloads ..."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "LFM2&#x27;s training pipeline includes a tempered, decoupled Top-K knowledge distillation objective that avoids support mismatch; curriculum learning with difficulty-ordered data; and a three-stage post-training recipe of supervised fine-tuning, length-normalized preference optimization, and model merging."
+    },
+    {
+      "title": "LFM2-1.2B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-1.2b",
+      "snippet": "LFM2-1.2B was the original 1.2B parameter model in the LFM2 series. It has been superseded by LFM2.5-1.2B-Instruct, which offers better chat, instruction-following, and tool-calling performance."
+    }
+  ]
+}

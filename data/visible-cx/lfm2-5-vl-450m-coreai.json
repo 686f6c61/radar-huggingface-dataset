@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "visible-cx/LFM2.5-VL-450M-CoreAI",
+  "slug": "visible-cx-lfm2-5-vl-450m-coreai",
+  "author": "visible-cx",
+  "url": "https://huggingface.co/visible-cx/LFM2.5-VL-450M-CoreAI",
+  "created_at": "2026-08-17T14:51:42.000Z",
+  "updated_at": "2026-08-17T22:35:54.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "core-ai",
+    "aimodel",
+    "apple-silicon",
+    "on-device",
+    "quantized",
+    "int8",
+    "vision-language",
+    "lfm2.5",
+    "image-text-to-text",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:finetune:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 990604619,
+  "storage_human": "991 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-VL-450M: Structured Visual Intelligence, Edge to Cloud",
+      "url": "https://www.liquid.ai/blog/lfm2-5-vl-450m",
+      "snippet": "Today, we release LFM2.5-VL-450M, an improved version of LFM2-VL-450M with grounding capabilities, better instruction following, and function calling support. The result is a compact model that turns image streams into structured, actionable outputs in real time, even on edge hardware."
+    },
+    {
+      "title": "Cactus-Compute/LFM2.5-VL-450M · Hugging Face",
+      "url": "https://huggingface.co/Cactus-Compute/LFM2.5-VL-450M",
+      "snippet": "LFM2.5-VL 450M refreshed compact vision-language model from Liquid AI for image and text understanding."
+    },
+    {
+      "title": "coreai-model-zoo/models/lfm2.5-vl/README.md at main - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/blob/main/models/lfm2.5-vl/README.md",
+      "snippet": "The smallest VLM in this catalog by a factor of three, and its detail-tier sibling. Core AI ports of LiquidAI/LFM2.5-VL-450M and -3B: image + text → text on the pipelined-engine fast path. Which one: the 450M (658 MB, iPhone-gated at 112 tok/s) is the one that fits beside an app — every other VLM here starts at ~2 GB resident."
+    },
+    {
+      "title": "LFM2.5-VL-450M - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-450m",
+      "snippet": "Compact 450M vision-language model with enhanced performance for edge deployment ← Back to Vision Models LFM2.5-VL-450M is Liquid AI&#x27;s smallest vision-language model, building on LFM2-VL-450M with extended reinforcement learning for improved performance while maintaining the same compact deployment footprint."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-VL-450M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-450M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

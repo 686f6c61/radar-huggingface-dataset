@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jump123/nsomap",
+  "slug": "jump123-nsomap",
+  "author": "jump123",
+  "url": "https://huggingface.co/jump123/nsomap",
+  "created_at": "2026-08-14T05:51:33.000Z",
+  "updated_at": "2026-08-14T06:01:11.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228466628,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mak-P90 / ai-jailbreak-archive - GitHub",
+      "url": "https://github.com/Mak-P90/ai-jailbreak-archive",
+      "snippet": "Mak-P90 / ai-jailbreak-archive A curated archive of jailbreak prompts, prompt injections, and related techniques discovered across major AI models, including OpenAI, Gemini, Claude, Grok, and others. This repository documents prompt behavior and model responses for research, experimentation, and red-teaming purposes."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best Free AI Models 2026 - 34 Models Compared",
+      "url": "https://chats-llm.com/en/best-free-ai-models",
+      "snippet": "Best Free AI Models 2026 Compare the 34 best free AI models Gemma 4, Llama 3.3, DeepSeek V4 Flash, Nemotron Nano, GPT-OSS and more."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Gemini 3.7 Flash by Google on Aug 13 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "JUMP123",
+      "url": "https://jump123.co.uk/",
+      "snippet": "JUMP123 is split into two distinct areas. JUMP is concerned with simplifying how you can teach your programming lessons. It offers a structured and effective way to teach programming, breaking down the learning process into manageable steps that align with how students best absorb and retain information. 123 is a new assessment methodology you can use to easily track your students programming ..."
+    }
+  ]
+}

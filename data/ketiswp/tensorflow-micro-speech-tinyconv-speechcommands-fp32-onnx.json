@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/tensorflow-Micro-Speech-TinyConv-SpeechCommands-fp32-onnx",
+  "slug": "ketiswp-tensorflow-micro-speech-tinyconv-speechcommands-fp32-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/tensorflow-Micro-Speech-TinyConv-SpeechCommands-fp32-onnx",
+  "created_at": "2026-08-19T01:57:21.000Z",
+  "updated_at": "2026-08-19T02:23:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "fp32",
+    "audio-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69104,
+  "storage_human": "69104 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tflite-micro/tensorflow/lite/micro/examples/micro_speech ... - GitHub",
+      "url": "https://github.com/tensorflow/tflite-micro/blob/main/tensorflow/lite/micro/examples/micro_speech/README.md",
+      "snippet": "This example shows how to run inference using TensorFlow Lite Micro (TFLM) on two models for wake-word recognition. The first model is an audio preprocessor that generates spectrogram data from raw audio samples. The second is the Micro Speech model, a less than 20 kB model that can recognize 2 keywords, \"yes\" and \"no\", from speech data. The Micro Speech model takes the spectrogram data as ..."
+    },
+    {
+      "title": "micro_speech_with_lstm_op.ipynb - Colab - Google Colab",
+      "url": "https://colab.research.google.com/github/tensorflow/tflite-micro/blob/main/third_party/xtensa/examples/micro_speech_lstm/train/micro_speech_with_lstm_op.ipynb",
+      "snippet": "This tutorial will show you how to build a basic speech recognition network that recognizes ten different words. It&#x27;s important to know that real speech and audio recognition systems are much more complex, but like MNIST for images, it should give you a basic understanding of the techniques involved. Once you&#x27;ve completed this tutorial, you&#x27;ll have a model that tries to classify a one second ..."
+    },
+    {
+      "title": "train_micro_speech_model.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/tensorflow/tflite-micro/blob/main/tensorflow/lite/micro/examples/micro_speech/train/train_micro_speech_model.ipynb",
+      "snippet": "This notebook demonstrates how to train a 20 kB Simple Audio Recognition model to recognize keywords in speech. The model created in this notebook is used in the micro_speech example for TensorFlow Lite for MicroControllers."
+    },
+    {
+      "title": "tinyml/tensorflow/lite/micro/examples/micro_speech/train ... - GitHub",
+      "url": "https://github.com/lucio18/tinyml/blob/main/tensorflow/lite/micro/examples/micro_speech/train/README.md",
+      "snippet": "Micro Speech Training This example shows how to train a less than 20 kB model that can recognize 2 keywords, \"yes\" and \"no\", from speech data."
+    },
+    {
+      "title": "tensorflow/lite/micro/examples/micro_speech/train/train_micro_speech ...",
+      "url": "https://android.googlesource.com/platform/external/tensorflow/+/b65ee709e91/tensorflow/lite/micro/examples/micro_speech/train/train_micro_speech_model.ipynb",
+      "snippet": "android / platform / external / tensorflow / b65ee709e91 / . / tensorflow / lite / micro / examples / micro_speech / train / train_micro_speech_model.ipynb blob ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "goal612/kumaresano-bk17",
+  "slug": "goal612-kumaresano-bk17",
+  "author": "goal612",
+  "url": "https://huggingface.co/goal612/kumaresano-bk17",
+  "created_at": "2026-08-18T11:34:48.000Z",
+  "updated_at": "2026-08-18T11:34:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kumaresano (Kumar Jackie) - Hugging Face",
+      "url": "https://huggingface.co/kumaresano/models",
+      "snippet": "Recent Activity published a modelabout 9 hours ago kumaresano/albedo-qwen3.6-35b-bk3 updated a modelabout 9 hours ago kumaresano/albedo-qwen3.6-35b-bk3 updated a model4 days ago kumaresano/albedo-qwen3.6-35b-bk1 View all activity"
+    },
+    {
+      "title": "standjones/albedo-arc-kumaresano-bk16 · Hugging Face",
+      "url": "https://huggingface.co/standjones/albedo-arc-kumaresano-bk16",
+      "snippet": "standjones / albedo-arc-kumaresano-bk16 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://www.google.co.in/imghp?authuser=0",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    }
+  ]
+}

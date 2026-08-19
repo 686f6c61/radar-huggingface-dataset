@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "spcv/qwen2.5_coder_text2sql_onnx",
+  "slug": "spcv-qwen2-5_coder_text2sql_onnx",
+  "author": "spcv",
+  "url": "https://huggingface.co/spcv/qwen2.5_coder_text2sql_onnx",
+  "created_at": "2026-08-12T15:05:23.000Z",
+  "updated_at": "2026-08-19T02:08:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "text-to-sql",
+    "sql",
+    "qwen",
+    "qwen2.5-coder",
+    "int4",
+    "slm",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:trl-lab/SQaLe-text-to-SQL",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 997928424,
+  "storage_human": "998 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Vish2503/Text2SQL-Qwen: Text2SQL run locally using Qwen2.5 ...",
+      "url": "https://github.com/Vish2503/Text2SQL-Qwen",
+      "snippet": "Text2SQL-Qwen is a local Text-to-SQL application powered by Qwen2.5-Coder-7B-Instruct-GPTQ-Int4. It converts natural language questions into executable SQL queries, integrates directly with PostgreSQL, and features a FastAPI backend with a Streamlit-based UI for interactive use."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v1",
+      "snippet": "As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable synthetic data generation, and balanced data mixing, Qwen2.5-Coder demonstrates impressive code generation capabilities while retaining general versatility."
+    },
+    {
+      "title": "alialialialaiali/qwen2.5-coder-spider-sql · Hugging Face",
+      "url": "https://huggingface.co/alialialialaiali/qwen2.5-coder-spider-sql",
+      "snippet": "This model converts natural language questions into SQL queries by leveraging the Qwen2.5-Coder architecture fine-tuned on the comprehensive Spider dataset. The model demonstrates strong performance on cross-domain semantic parsing tasks and can handle complex SQL constructs including joins, aggregations, and nested queries."
+    },
+    {
+      "title": "[2409.12186] Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2409.12186",
+      "snippet": "As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable synthetic data generation, and balanced data mixing, Qwen2.5-Coder demonstrates impressive code generation capabilities while retaining general and math ..."
+    },
+    {
+      "title": "alpecevit/Qwen2.5-Coder-7B-Instruct-text2sql · Hugging Face",
+      "url": "https://huggingface.co/alpecevit/Qwen2.5-Coder-7B-Instruct-text2sql",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

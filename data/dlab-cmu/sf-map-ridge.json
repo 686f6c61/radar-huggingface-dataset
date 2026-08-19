@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dlab-cmu/sf-map-ridge",
+  "slug": "dlab-cmu-sf-map-ridge",
+  "author": "dlab-cmu",
+  "url": "https://huggingface.co/dlab-cmu/sf-map-ridge",
+  "created_at": "2026-08-19T01:22:22.000Z",
+  "updated_at": "2026-08-19T01:22:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "quantization",
+    "codebook",
+    "sf",
+    "ridge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dlab-cmu/sf-grids · Hugging Face",
+      "url": "https://huggingface.co/dlab-cmu/sf-grids",
+      "snippet": "dlab-cmu / sf-grids like 0 Follow dlab 1 quantization codebook sf License:mit Model card FilesFiles and versions xet Community Copy to bucket new SF grids — shrinkage-compensated float"
+    },
+    {
+      "title": "DLAB",
+      "url": "https://denglab.org/",
+      "snippet": "Home News Team Publications Software Projects Gallery Join Us Contact"
+    },
+    {
+      "title": "Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/",
+      "snippet": "Connectionism: Research Blog by Thinking Machines Lab Thinking Machines Lab is an artificial intelligence research and product company. We&#x27;re building a future where everyone has access to the knowledge and tools to make AI work for their unique needs and goals. While AI capabilities have advanced dramatically, key gaps remain. The scientific community&#x27;s understanding of frontier AI ..."
+    },
+    {
+      "title": "Harnessing AI to Find Critical Minerals - News - Carnegie Mellon University",
+      "url": "https://www.ri.cmu.edu/harnessing-ai-to-find-critical-minerals/",
+      "snippet": "Researchers from Carnegie Mellon University will develop a new artificial intelligence framework to better identify critical minerals in the ground, increasing America&#x27;s access to these valuable materials and reducing the cost and time for exploration and extraction."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=44&sort=trending&search=Qwen3.8",
+      "snippet": "Explore machine learning models. Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech PyTorch TensorFlow JAX Transformers Diffusers GGUF Safetensors vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Add your hardware Apply filters"
+    }
+  ]
+}

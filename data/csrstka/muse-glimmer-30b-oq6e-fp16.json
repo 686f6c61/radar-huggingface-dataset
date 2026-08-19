@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "csrstka/Muse-Glimmer-30B-oQ6e-fp16",
+  "slug": "csrstka-muse-glimmer-30b-oq6e-fp16",
+  "author": "csrstka",
+  "url": "https://huggingface.co/csrstka/Muse-Glimmer-30B-oQ6e-fp16",
+  "created_at": "2026-08-17T00:50:13.000Z",
+  "updated_at": "2026-08-17T01:58:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "muse_glimmer",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 8201628672,
+  "parameters_human": "8.20B",
+  "storage_bytes": 31091305969,
+  "storage_human": "31.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "MiawTeam/Qwen3.8-27B-Uncensored-GGUF",
+  "slug": "miawteam-qwen3-8-27b-uncensored-gguf",
+  "author": "MiawTeam",
+  "url": "https://huggingface.co/MiawTeam/Qwen3.8-27B-Uncensored-GGUF",
+  "created_at": "2026-08-15T12:50:39.000Z",
+  "updated_at": "2026-08-15T12:50:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "imatrix",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 792,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 209692059648,
+  "storage_human": "209.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

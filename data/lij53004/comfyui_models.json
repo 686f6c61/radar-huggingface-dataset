@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lij53004/ComfyUI_Models",
+  "slug": "lij53004-comfyui_models",
+  "author": "lij53004",
+  "url": "https://huggingface.co/lij53004/ComfyUI_Models",
+  "created_at": "2026-05-04T04:18:52.000Z",
+  "updated_at": "2026-08-18T00:04:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": 5680910336,
+  "parameters_human": "5.68B",
+  "storage_bytes": 421688389112,
+  "storage_human": "421.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lij53004/ComfyUI_Models · Hugging Face",
+      "url": "https://huggingface.co/lij53004/ComfyUI_Models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lij53004/ComfyUI_Models at main - Hugging Face",
+      "url": "https://huggingface.co/lij53004/ComfyUI_Models/tree/main/models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    },
+    {
+      "title": "GitHub - Vvolen/comfyui: The most powerful and modular diffusion model ...",
+      "url": "https://github.com/Vvolen/comfyui",
+      "snippet": "ComfyUI The most powerful and modular visual AI engine and application. ComfyUI lets you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. Available on Windows, Linux, and macOS."
+    },
+    {
+      "title": "GitHub - Samadaeus/comfyui: The most powerful and modular diffusion ...",
+      "url": "https://github.com/Samadaeus/comfyui",
+      "snippet": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. - Samadaeus/comfyui"
+    }
+  ]
+}

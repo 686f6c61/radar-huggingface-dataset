@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pk1308/carbon-accounting-23f2000254",
+  "slug": "pk1308-carbon-accounting-23f2000254",
+  "author": "pk1308",
+  "url": "https://huggingface.co/pk1308/carbon-accounting-23f2000254",
+  "created_at": "2026-08-18T13:41:45.000Z",
+  "updated_at": "2026-08-18T13:46:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(PDF) AI-Powered Carbon Accounting: Redefining ESG ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/389439314_AI-Powered_Carbon_Accounting_Redefining_ESG_Standards_for_Corporate_Sustainability",
+      "snippet": "By redefining ESG reporting frameworks, AI-powered carbon accounting empowers businesses to proactively reduce emissions, optimize sustainability performance, and align with net-zero goals."
+    },
+    {
+      "title": "(PDF) AI-Powered Carbon Accounting: Transforming ESG Reporting ...",
+      "url": "https://www.academia.edu/164780055/AI_Powered_Carbon_Accounting_Transforming_ESG_Reporting_Standards_for_a_Sustainable_Global_Economy",
+      "snippet": "The integration of Artificial Intelligence (AI) in Environmental, Social, and Governance (ESG) reporting is revolutionizing carbon accounting by improving accuracy, efficiency, and transparency. Traditional carbon reporting methods are often Keywords: Carbon Accounting and Sustainability."
+    },
+    {
+      "title": "AI Agent for Product Carbon Footprint Accounting & Assurance | Climate Seal",
+      "url": "https://climate-seal.com/",
+      "snippet": "Structured accounting model for expert control Climate Seal organizes product boundaries, emission sources, units, allocation logic, assumptions, and missing-source checks into a structured accounting model. AI prepares the technical groundwork, while experts stay in control of key methodology and review decisions."
+    },
+    {
+      "title": "CarbonAnalytics - AI-Enhanced Carbon Accounting Platform",
+      "url": "https://www.carbonanalytics.com/",
+      "snippet": "Carbon Analytics: the leading guided Carbon Assessment & Carbon Accounting platform for your business Empower your sustainability journey with CarbonAnalytics, the comprehensive AI-enhanced carbon accounting software tailored for SMEs. Our self-service platform simplifies measuring, analyzing, and tracking Scope 1, Scope 2, and Scope 3 emissions across all GHG Protocol categories."
+    },
+    {
+      "title": "Co2Analysis | Carbon Accounting AI",
+      "url": "https://co2analysis.com/",
+      "snippet": "Carbon accounting & sustainability insights platform. We are an organisation of data specialists with a long background in supply chain and carbon analysis."
+    }
+  ]
+}

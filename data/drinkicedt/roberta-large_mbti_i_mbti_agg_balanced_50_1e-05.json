@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_50_1e-05",
+  "slug": "drinkicedt-roberta-large_mbti_i_mbti_agg_balanced_50_1e-05",
+  "author": "DrinkIcedT",
+  "url": "https://huggingface.co/DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_50_1e-05",
+  "created_at": "2026-08-18T04:26:33.000Z",
+  "updated_at": "2026-08-18T04:26:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 355361794,
+  "parameters_human": "355.4M",
+  "storage_bytes": 1421500625,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_75 - Hugging Face",
+      "url": "https://huggingface.co/DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_75",
+      "snippet": "Instructions to use DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_75 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "roberta-large_MBTI_I_MBTI_agg_balanced_50 - Hugging Face",
+      "url": "https://huggingface.co/DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "roberta-large · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/roberta-large",
+      "snippet": "This repository is a comprehensive project that leverages the XLM-Roberta model for intent detection. This repository is a valuable resource for developers looking to build and fine-tune intent detection models based on state-of-the-art techniques."
+    },
+    {
+      "title": "RoBERTa-large · Model card | CodeSOTA",
+      "url": "https://www.codesota.com/model/roberta-large",
+      "snippet": "All benchmark results for RoBERTa-large from Facebook AI recorded on Codesota — dataset, metric, value, and primary-source URL for each score."
+    },
+    {
+      "title": "roberta-large — Fill-Mask Model | Model Database",
+      "url": "https://modeldatabase.com/roberta-large.html",
+      "snippet": "roberta-large is an open source fill-mask model built with transformers, 2,887,607 downloads. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

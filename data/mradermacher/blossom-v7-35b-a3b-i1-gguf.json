@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Blossom-V7-35B-A3B-i1-GGUF",
+  "slug": "mradermacher-blossom-v7-35b-a3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Blossom-V7-35B-A3B-i1-GGUF",
+  "created_at": "2026-08-16T15:33:22.000Z",
+  "updated_at": "2026-08-17T11:22:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "reasoning",
+    "multimodal",
+    "en",
+    "zh",
+    "base_model:Azure99/Blossom-V7-35B-A3B",
+    "base_model:quantized:Azure99/Blossom-V7-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 417,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 263545770720,
+  "storage_human": "263.5 GB",
+  "base_model": "Azure99/Blossom-V7-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Blossom V7 35B A3B by Azure99 — VRAM 72.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Azure99%2FBlossom-V7-35B-A3B,1rKyAfwlMWLpKpvdmYscZq",
+      "snippet": "Blossom V7 35B A3B is an open-source 35b LLM by Azure99. VRAM 72.1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B\"越狱版\"来了!6G显存也能跑，彻底实现本地AI自由 Qwen3.6-35B-A3B Uncensored ...",
+      "url": "https://blog.csdn.net/weixin_41961749/article/details/161501525",
+      "snippet": "Qwen3.6-35B-A3B\"越狱版\"来了!6G显存也能跑，本地AI彻底自由 AI大模型、本地部署、Qwen3.6-35B-A3B、无审查模型、GGUF模型、llama.cpp、Windows部署教程、本地Agent、多模态模型、低显存AI、本地AI助手 最近测试了一圈本地大 模型 之后，我发现一个非常离谱的东西。 目前开源圈里，真正做到： 中文能力强 ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dangvansam/vietnamese-toxicity",
+  "slug": "dangvansam-vietnamese-toxicity",
+  "author": "dangvansam",
+  "url": "https://huggingface.co/dangvansam/vietnamese-toxicity",
+  "created_at": "2026-08-18T09:56:04.000Z",
+  "updated_at": "2026-08-18T09:56:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "xlm-roberta",
+    "text-classification",
+    "vi",
+    "base_model:unitary/multilingual-toxic-xlm-roberta",
+    "base_model:quantized:unitary/multilingual-toxic-xlm-roberta",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dangvansam (Sam Dang) · GitHub",
+      "url": "https://github.com/dangvansam",
+      "snippet": "AI/ML Engineer - Keep It Simple. dangvansam has 71 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - hoangcaobao/Vietnamese-Toxic-Comment-Classifier: PyTorch deep ...",
+      "url": "https://github.com/hoangcaobao/Vietnamese-Toxic-Comment-Classifier",
+      "snippet": "I trained this model using PyTorch to detect toxic comments for Projectube. I used VNCoreNLP to preprocess the raw Vietnamese sentence data and PhoBERT to train the model for text classification."
+    },
+    {
+      "title": "ShynBui/Vietnamese-toxic-classification - Hugging Face",
+      "url": "https://huggingface.co/datasets/ShynBui/Vietnamese-toxic-classification",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dangvansam/vietnamese-prompt-injection · Hugging Face",
+      "url": "https://huggingface.co/dangvansam/vietnamese-prompt-injection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ViToSA: Audio-Based Toxic Spans Detection on Vietnamese Speech Utterances",
+      "url": "https://arxiv.org/html/2506.00636v1",
+      "snippet": "We propose a pipeline that combines ASR and toxic spans detection for fine-grained identification of toxic content. Our experiments show that fine-tuning ASR models on ViToSA significantly reduces WER when transcribing toxic speech, while the text-based toxic spans detection (TSD) models outperform existing baselines."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "salejo1202/Taller3_SMV",
+  "slug": "salejo1202-taller3_smv",
+  "author": "salejo1202",
+  "url": "https://huggingface.co/salejo1202/Taller3_SMV",
+  "created_at": "2026-08-17T04:45:27.000Z",
+  "updated_at": "2026-08-17T04:45:27.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Taller3 Object Detection Model by Punto 2 Robotics Learning",
+      "url": "https://universe.roboflow.com/punto-2-robotics-learning/taller3",
+      "snippet": "228 open source Multimeter images plus a pre-trained Taller3 model and API. Created by Punto 2 Robotics Learning"
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    },
+    {
+      "title": "Google Scholar Citations",
+      "url": "https://scholar.google.com/citations",
+      "snippet": "Google Scholar Citations lets you track citations to your publications over time."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    }
+  ]
+}

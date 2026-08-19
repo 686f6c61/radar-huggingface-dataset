@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "id": "nvidia/nemotron-speech-streaming-en-0.6b",
+  "slug": "nvidia-nemotron-speech-streaming-en-0-6b",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b",
+  "created_at": "2025-12-17T01:07:38.000Z",
+  "updated_at": "2026-08-05T21:45:11.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "safetensors",
+    "gguf",
+    "nemotron_asr_streaming",
+    "feature-extraction",
+    "transformers",
+    "speech-recognition",
+    "cache-aware ASR",
+    "automatic-speech-recognition",
+    "streaming-asr",
+    "speech",
+    "audio",
+    "FastConformer",
+    "RNNT",
+    "Parakeet",
+    "ASR",
+    "pytorch",
+    "NeMo",
+    "hf-asr-leaderboard",
+    "dataset:nvidia/Granary",
+    "dataset:YTC",
+    "dataset:Yodas2",
+    "dataset:LibriLight",
+    "dataset:librispeech_asr",
+    "dataset:fisher_corpus",
+    "dataset:Switchboard-1",
+    "dataset:WSJ-0",
+    "dataset:WSJ-1",
+    "dataset:National-Singapore-Corpus-Part-1",
+    "dataset:National-Singapore-Corpus-Part-6",
+    "dataset:vctk",
+    "dataset:voxpopuli",
+    "dataset:europarl",
+    "dataset:multilingual_librispeech",
+    "dataset:fleurs",
+    "dataset:mozilla-foundation/common_voice_8_0",
+    "dataset:MLCommons/peoples_speech",
+    "dataset:google/speech_commands",
+    "arxiv:2312.17279",
+    "arxiv:2305.05084",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 611,
+  "downloads_30d": 138061,
+  "trending_score": 10,
+  "parameters": 618084865,
+  "parameters_human": "618.1M",
+  "storage_bytes": 13064963058,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI",
+      "metric": "WER (1.12s frame size)",
+      "value": 11.73
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings22",
+      "metric": "WER (1.12s frame size)",
+      "value": 12.52
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Gigaspeech",
+      "metric": "WER (1.12s frame size)",
+      "value": 9.66
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (1.12s frame size)",
+      "value": 2.32
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER (1.12s frame size)",
+      "value": 4.84
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SPGI Speech",
+      "metric": "WER (1.12s frame size)",
+      "value": 2.97
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "TEDLIUM",
+      "metric": "WER (1.12s frame size)",
+      "value": 3.5
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "VoxPopuli",
+      "metric": "WER (1.12s frame size)",
+      "value": 7.97
+    }
+  ],
+  "sources": []
+}

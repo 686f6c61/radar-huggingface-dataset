@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lbakar/health-log-extraction-partial-template",
+  "slug": "lbakar-health-log-extraction-partial-template",
+  "author": "lbakar",
+  "url": "https://huggingface.co/lbakar/health-log-extraction-partial-template",
+  "created_at": "2026-08-18T20:37:57.000Z",
+  "updated_at": "2026-08-18T20:46:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "info_extraction",
+    "information_extraction",
+    "health",
+    "health_logs",
+    "en",
+    "dataset:lbakar/health-log-extraction-dataset",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557746,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2512.04474] LLM-SrcLog: Towards Proactive and Unified Log Template ...",
+      "url": "https://arxiv.org/abs/2512.04474",
+      "snippet": "Abstract page for arXiv paper 2512.04474: LLM-SrcLog: Towards Proactive and Unified Log Template Extraction via Large Language Models"
+    },
+    {
+      "title": "LLM-SrcLog: Towards Proactive and Unified Log Template Extraction via ...",
+      "url": "https://arxiv.org/pdf/2512.04474",
+      "snippet": "This speed of LLM-SrcLog comes from decoupling heavy semantic reasoning: the LLM works offline to produce a high-quality template library, while online parsing uses simple regular expres-sion matching against this library, scaling slowly with template count. Notably, LLM-SrcLog remains robust with base model scaling at runtime."
+    },
+    {
+      "title": "GitHub - google/langextract: A Python library for extracting structured ...",
+      "url": "https://github.com/google/langextract",
+      "snippet": "A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization. - google/langextract"
+    },
+    {
+      "title": "How to Use LLMs for Log File Analysis: Examples, Workflows ... - Splunk",
+      "url": "https://www.splunk.com/en_us/blog/learn/log-file-analysis-llms.html",
+      "snippet": "Learn how to use LLMs for log file analysis, from parsing unstructured logs to detecting anomalies, summarizing incidents, and accelerating root cause analysis."
+    },
+    {
+      "title": "Gemini 3.1 Pro Preview Custom Tools - API Pricing & Providers",
+      "url": "https://openrouter.ai/google/gemini-3.1-pro-preview-customtools",
+      "snippet": "Gemini 3.1 Pro Preview Custom Tools is a variant of Gemini 3.1 Pro that improves tool selection behavior by preventing overuse of a general bash tool when more efficient third-party or user-defined functions are available. $2 per million input tokens, $12 per million output tokens. 1,048,576 token context window, maximum output of 65,536 tokens."
+    }
+  ]
+}

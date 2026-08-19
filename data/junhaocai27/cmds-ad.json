@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Junhaocai27/CMDS-AD",
+  "slug": "junhaocai27-cmds-ad",
+  "author": "Junhaocai27",
+  "url": "https://huggingface.co/Junhaocai27/CMDS-AD",
+  "created_at": "2026-08-03T10:12:56.000Z",
+  "updated_at": "2026-08-18T13:25:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "anomaly-detection",
+    "3d-anomaly-detection",
+    "mvtec-3d-ad",
+    "eyecandies",
+    "few-shot-learning",
+    "point-cloud",
+    "computer-vision",
+    "image-feature-extraction",
+    "en",
+    "dataset:mvtec-3d-ad",
+    "dataset:eyecandies",
+    "arxiv:2606.20300",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33434847808,
+  "storage_human": "33.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Junhaocai27/CMDS-AD · Hugging Face",
+      "url": "https://huggingface.co/Junhaocai27/CMDS-AD",
+      "snippet": "Junhaocai27 / CMDS-AD like 1 Image Feature Extraction PyTorch mvtec-3d-ad eyecandies English anomaly-detection 3d-anomaly-detection mvtec-3d-ad eyecandies few-shot-learning point-cloud computer-vision arxiv:2606.20300 License:mit Model card FilesFiles and versions xet Community Copy to bucket new CMDS-AD checkpoints Repository layout Downloading a checkpoint Downloading a LoRA weight Intended ..."
+    },
+    {
+      "title": "GitHub - Junhaocai27/CMDS-AD: [ECCV 2026] Official implementation of ...",
+      "url": "https://github.com/Junhaocai27/CMDS-AD/tree/main",
+      "snippet": "Official implementation of CMDS-AD, a cross-modal few-shot anomaly detection framework for 3D industrial inspection. This repository includes the complete preprocessing, RGB augmentation, real/estimated normal generation, foreground-mask generation, dual-direction training, and evaluation pipeline."
+    },
+    {
+      "title": "CMDS-AD/models at main · Junhaocai27/CMDS-AD · GitHub",
+      "url": "https://github.com/Junhaocai27/CMDS-AD/tree/main/models",
+      "snippet": "[ECCV 2026] Official implementation of \"CMDS-AD: Cross-Modal Dual-Stream Decoupling for Few-Shot Anomaly Detection\" - Junhaocai27/CMDS-AD"
+    },
+    {
+      "title": "Junhaocai27 (Junhaocai27) - Hugging Face",
+      "url": "https://huggingface.co/Junhaocai27",
+      "snippet": "User profile of Junhaocai27 on Hugging Face Recent Activity liked a model3 days ago Junhaocai27/CMDS-AD updated a model3 days ago Junhaocai27/CMDS-AD published a model3 days ago Junhaocai27/CMDS-AD View all activity"
+    },
+    {
+      "title": "CMDS-AD: Cross-Modal Dual-Stream Decoupling for Few-Shot Anomaly Detection",
+      "url": "https://arxiv.org/html/2606.20300",
+      "snippet": "To overcome this, we present CMDS-AD, a Cross-Modal Dual-Stream Anomaly Detection framework. A LoRA-guided diffusion model generates diverse RGB samples to mitigate extreme data scarcity. For 3D normal augmentation, we employ a pre-trained diffusion model as a normal estimator."
+    }
+  ]
+}

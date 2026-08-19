@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/evo2",
+  "slug": "onescience-group-evo2",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/evo2",
+  "created_at": "2026-07-28T08:29:38.000Z",
+  "updated_at": "2026-08-17T03:58:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OneScience",
+    "life-science",
+    "genomic-sequence-modeling",
+    "DNA/RNA",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13668883375,
+  "storage_human": "13.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

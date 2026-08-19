@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Cion-lab/tinystories-8L-llama3-block",
+  "slug": "cion-lab-tinystories-8l-llama3-block",
+  "author": "Cion-lab",
+  "url": "https://huggingface.co/Cion-lab/tinystories-8L-llama3-block",
+  "created_at": "2026-08-18T19:57:24.000Z",
+  "updated_at": "2026-08-18T19:57:28.000Z",
+  "license": "cdla-sharing-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "maxtext",
+    "jax",
+    "flax",
+    "tinystories",
+    "llama3",
+    "tpu",
+    "v5e",
+    "kaggle",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:cdla-sharing-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 58073600,
+  "parameters_human": "58.1M",
+  "storage_bytes": 232802427,
+  "storage_human": "233 MB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cion-lab/flint-120m-tinystories · Hugging Face",
+      "url": "https://huggingface.co/Cion-lab/flint-120m-tinystories",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SwapnilThatte/LittleLLaMA: This repository contains code used ...",
+      "url": "https://github.com/SwapnilThatte/LittleLLaMA/tree/main",
+      "snippet": "🦙💡 Pretraining a LLaMA-3-like Model on TinyStories with PyTorch Welcome to this project where we dive into the fascinating world of pretraining a LLaMA 3-like transformer model using the TinyStories dataset. I build everything with the help of PyTorch and associated libraries, focusing on clarity, scalability, and performance."
+    },
+    {
+      "title": "GitHub - NonsonoNicola/TinyStories-LLM: Tiny transformer model for ...",
+      "url": "https://github.com/NonsonoNicola/TinyStories-LLM",
+      "snippet": "🧸 TinyStories LLM - A Miniature Language Model for Storytelling A 40M parameter decoder-only transformer trained on the TinyStories dataset, designed to generate short, coherent children&#x27;s stories. Inspired by the Mistral architecture, built and trained from scratch by a self-taught student exploring large language models."
+    },
+    {
+      "title": "DuckingtonLabs/tinyStories",
+      "url": "https://ollama.com/DuckingtonLabs/tinyStories",
+      "snippet": "Readme This is the 110M parameter Llama 2 architecture model trained on the TinyStories dataset. These are converted from karpathy/tinyllamas. See the llama2.c project for more details."
+    },
+    {
+      "title": "Replicating TinyStories paper. I tried to train my own tiny 8M large ...",
+      "url": "https://medium.com/@kl.yap/replicating-tinystories-paper-38839d03ec81",
+      "snippet": "Replicating TinyStories paper I tried to train my own tiny 8M large language model (LLM) AI model locally using NanoGPT on M1 Macbook and the public dataset from TinyStories. Here&#x27;s how it …"
+    }
+  ]
+}

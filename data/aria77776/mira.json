@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Aria77776/Mira",
+  "slug": "aria77776-mira",
+  "author": "Aria77776",
+  "url": "https://huggingface.co/Aria77776/Mira",
+  "created_at": "2026-08-14T07:54:13.000Z",
+  "updated_at": "2026-08-14T08:07:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306807624,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mira AI — Stop guessing. Start knowing.",
+      "url": "https://www.miraai.io/",
+      "snippet": "You waste hours verifying every AI response and you&#x27;re still not sure. Mira checks every claim, picks the best AI model, and adapts to how you think. Chrome extension + mobile app."
+    },
+    {
+      "title": "Mira",
+      "url": "https://mira.network/",
+      "snippet": "Mira empowers truly reliable AI — by trustlessly verifying outputs and actions at every step."
+    },
+    {
+      "title": "MIRA-Mode/MIRA · Hugging Face",
+      "url": "https://huggingface.co/MIRA-Mode/MIRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MIRA-Intelligence/mira: An open-source, ultra-lightweight AI ...",
+      "url": "https://github.com/MIRA-Intelligence/mira",
+      "snippet": "An open-source, ultra-lightweight AI assistant tailored specifically for Medical AI Research. Powered by an underlying micro-agent framework, Mira is designed to execute complex medical imaging pipelines, from raw DICOM data processing to deep learning tasks, traditional radiomics, and survival analysis."
+    },
+    {
+      "title": "MIRA · Open-source AI agent framework | MIRA Docs",
+      "url": "https://mira-intelligence.github.io/en/",
+      "snippet": "MIRA is an open-source, project-level AI assistant framework. Delegate research, experiments, and reports to an agent end to end."
+    }
+  ]
+}

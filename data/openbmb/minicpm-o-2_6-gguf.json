@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-o-2_6-gguf",
+  "slug": "openbmb-minicpm-o-2_6-gguf",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-o-2_6-gguf",
+  "created_at": "2025-01-13T07:01:20.000Z",
+  "updated_at": "2026-08-18T03:58:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "minicpm-o",
+    "any-to-any",
+    "base_model:openbmb/MiniCPM-o-2_6",
+    "base_model:quantized:openbmb/MiniCPM-o-2_6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 117,
+  "downloads_30d": 2020,
+  "trending_score": 0,
+  "parameters": 7613007360,
+  "parameters_human": "7.61B",
+  "storage_bytes": 65574099136,
+  "storage_human": "65.6 GB",
+  "base_model": "openbmb/MiniCPM-o-2_6",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-o-2_6-gguf · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-o-2_6-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openbmb/MiniCPM-o-2_6-gguf at main - Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-o-2_6-gguf/tree/main",
+      "snippet": "Instructions to use openbmb/MiniCPM-o-2_6-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use openbmb/MiniCPM-o-2_6-gguf with llama-cpp-python:"
+    },
+    {
+      "title": "openbmb/MiniCPM-o-2_6-gguf - Secret AI",
+      "url": "https://secretai.io/models/openbmb/MiniCPM-o-2_6-gguf",
+      "snippet": "This repository contains the MiniCPM-o 2.6 model weights in GGUF format, used for llama.cpp. Currently, this readme only supports minicpm-omni&#x27;s vision capabilities, and we will update the full-mode support as soon as possible."
+    },
+    {
+      "title": "MiniCPM-o-2_6-gguf: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/minicpm-o-2-6-gguf-openbmb",
+      "snippet": "Overview MiniCPM-o-2_6-gguf is a GGUF-quantized version of the MiniCPM-o 2.6 multimodal large language model designed for vision, speech, and multimodal processing on resource-constrained devices. Built and maintained by openbmb, this model replicates GPT-4o-level capabilities while remaining deployable on mobile phones. The GGUF format enables inference through llama.cpp, offering both full ..."
+    },
+    {
+      "title": "MiniCPM-o-2_6-gguf huggingface.co api & openbmb MiniCPM-o-2_6-gguf ...",
+      "url": "https://www.toolify.ai/ai-model/openbmb-minicpm-o-2-6-gguf",
+      "snippet": "MiniCPM-o-2_6-gguf huggingface.co is an AI model on huggingface.co that provides MiniCPM-o-2_6-gguf&#x27;s model effect (), which can be used instantly with this openbmb MiniCPM-o-2_6-gguf model. huggingface.co supports a free trial of the MiniCPM-o-2_6-gguf model, and also provides paid use of the MiniCPM-o-2_6-gguf."
+    }
+  ]
+}

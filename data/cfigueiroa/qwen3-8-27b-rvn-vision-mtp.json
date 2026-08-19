@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "cfigueiroa/Qwen3.8-27B-RVN-vision-MTP",
+  "slug": "cfigueiroa-qwen3-8-27b-rvn-vision-mtp",
+  "author": "cfigueiroa",
+  "url": "https://huggingface.co/cfigueiroa/Qwen3.8-27B-RVN-vision-MTP",
+  "created_at": "2026-08-17T16:48:00.000Z",
+  "updated_at": "2026-08-17T16:52:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.8",
+    "heretic",
+    "abliterated",
+    "ara",
+    "mtp",
+    "nextn",
+    "vision",
+    "image-text-to-text",
+    "base_model:0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+    "base_model:quantized:0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 17439952320,
+  "storage_human": "17.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B, trohrbaugh/Qwen3.8-27B-heretic-ara, 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "Qwen3.8-27B-Heretic-ARA-ModelOpt-NVFP4-GGUF - Hugging Face",
+      "url": "https://huggingface.co/dawncr0w/Qwen3.8-27B-Heretic-ARA-ModelOpt-NVFP4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A beginner&#x27;s guide to the Qwen3.8-27b model by Qwen on Huggingface",
+      "url": "https://dev.to/aimodels-fyi/a-beginners-guide-to-the-qwen38-27b-model-by-qwen-on-huggingface-11j9",
+      "snippet": "Qwen3.8-27B is a 27-billion-parameter dense language model with integrated vision capabilities, built by Qwen on the architectural foundation of Qwen3.5. This causal language model with vision encoder supports native image and video understanding, making it suitable for multimodal reasoning tasks that require understanding both textual and ..."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    }
+  ]
+}

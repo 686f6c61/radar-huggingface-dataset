@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dothang254/general",
+  "slug": "dothang254-general",
+  "author": "dothang254",
+  "url": "https://huggingface.co/dothang254/general",
+  "created_at": "2026-08-18T09:58:30.000Z",
+  "updated_at": "2026-08-18T10:44:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "trl",
+    "sft",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 987482179,
+  "storage_human": "987 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dothang254 (Đỗ Quang Thắng) - Hugging Face",
+      "url": "https://huggingface.co/dothang254/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 23 days ago ... published a model 23 days ago"
+    },
+    {
+      "title": "dothang254 (Đỗ Quang Thắng) - Hugging Face",
+      "url": "https://huggingface.co/dothang254",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 10 minutes ago ... published a model 14 minutes ago ... updated a model about 2 hours ago"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    },
+    {
+      "title": "U.S. Army General Says He Embraces AI to &#x27;Enhance&#x27; Decision-Making",
+      "url": "https://www.breitbart.com/tech/2025/10/17/top-u-s-army-general-embraces-ai-to-enhance-decision-making/",
+      "snippet": "U.S. Army Major General William \"Hank\" Taylor has alarmingly revealed his close collaboration with AI chatbots to sharpen his decision-making process. The General recently told an audience that he has become \"really close lately\" with AI chatbots."
+    }
+  ]
+}

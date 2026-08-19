@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Godwin021/DeepSeek-V4-Pro-0813",
+  "slug": "godwin021-deepseek-v4-pro-0813",
+  "author": "Godwin021",
+  "url": "https://huggingface.co/Godwin021/DeepSeek-V4-Pro-0813",
+  "created_at": "2026-08-17T08:19:40.000Z",
+  "updated_at": "2026-08-17T08:19:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1650497936906,
+  "parameters_human": "1650.50B",
+  "storage_bytes": 1781787608346,
+  "storage_human": "1781.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

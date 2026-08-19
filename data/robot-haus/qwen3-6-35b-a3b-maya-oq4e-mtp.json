@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ4e-mtp",
+  "slug": "robot-haus-qwen3-6-35b-a3b-maya-oq4e-mtp",
+  "author": "Robot-Haus",
+  "url": "https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ4e-mtp",
+  "created_at": "2026-08-18T23:30:36.000Z",
+  "updated_at": "2026-08-18T23:47:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "apple-silicon",
+    "quantized",
+    "vision",
+    "mtp",
+    "moe",
+    "qwen3",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6190670768,
+  "parameters_human": "6.19B",
+  "storage_bytes": 21625609273,
+  "storage_human": "21.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ3.5e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ3.5e-fp16-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "root4k/Qwen3.6-35B-A3B-oQ4e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/root4k/Qwen3.6-35B-A3B-oQ4e-fp16-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Introduction Qwen3.6 Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback."
+    },
+    {
+      "title": "qwen/qwen3.6-35b-a3b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.6-35b-a3b",
+      "snippet": "Qwen3.6 35B Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience. Highlights This release delivers substantial upgrades, particularly in Agentic Coding: the model now handles frontend workflows and repository-level reasoning with greater fluency and precision. Thinking Preservation: there is a new ..."
+    },
+    {
+      "title": "Qwen3.6 35B A3B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen36-35b-a3b",
+      "snippet": "Qwen3.6 35B A3B is the first open-weight model in the Qwen3.6 series, built on direct community feedback and focused on stability and real-world utility. It combines a hybrid Gated DeltaNet and Gated Attention architecture with sparse Mixture-of-Experts routing and a vision encoder for unified multimodal reasoning."
+    }
+  ]
+}

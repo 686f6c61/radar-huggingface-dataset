@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "FighterPaul/Qwen3.5-Pure-Finetune-DatasetV2",
+  "slug": "fighterpaul-qwen3-5-pure-finetune-datasetv2",
+  "author": "FighterPaul",
+  "url": "https://huggingface.co/FighterPaul/Qwen3.5-Pure-Finetune-DatasetV2",
+  "created_at": "2026-08-18T18:49:34.000Z",
+  "updated_at": "2026-08-18T18:54:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 33999012480,
+  "storage_human": "34.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
+      "snippet": "Unsloth supports vision fine-tuning for the multimodal Qwen3.5 models. Use the below Qwen3.5 notebooks and change the respective model names to your desired Qwen3.5 model."
+    },
+    {
+      "title": "GitHub - 2U1/Qwen-VL-Series-Finetune: An open-source implementaion for ...",
+      "url": "https://github.com/2U1/Qwen-VL-Series-Finetune",
+      "snippet": "Fine-tuning Qwen-VL Series This repository contains a script for training Qwen2-VL, Qwen2.5-VL , Qwen3-VL and Qwen3.5 with only using HuggingFace and Liger-Kernel."
+    },
+    {
+      "title": "From Zero to Deployment: A Complete Qwen3.5 Fine‑Tunin… | BestHub",
+      "url": "https://www.besthub.dev/articles/from-zero-to-deployment-a-complete-qwen3-5-fine-tuning-guide-869c8e1c888c",
+      "snippet": "From Zero to Deployment: A Complete Qwen3.5 Fine‑Tuning Guide This guide shows how to fine‑tune Qwen3.5 models—from 0.8B to 122B—using Unsloth Studio or pure code, covering text SFT, vision fine‑tuning, MoE models, reinforcement‑learning (GRPO), extensive GGUF quantization benchmarks, hardware requirements, export formats, and deployment tips."
+    },
+    {
+      "title": "GitHub - Akers/Qwen-finetune: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/Akers/Qwen-finetune",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - Akers/Qwen-finetune"
+    },
+    {
+      "title": "Fine-tuned Models for Qwen/Qwen3.5-9B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Qwen/Qwen3.5-9B",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

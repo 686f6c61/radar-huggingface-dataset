@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hg-0403/PULSE",
+  "slug": "hg-0403-pulse",
+  "author": "hg-0403",
+  "url": "https://huggingface.co/hg-0403/PULSE",
+  "created_at": "2026-08-17T17:29:45.000Z",
+  "updated_at": "2026-08-17T17:52:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "cardiac-mri",
+    "segmentation",
+    "cardiomyopathy-diagnosis",
+    "dinov2",
+    "foundation-models",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1866641790,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pulse · HoangNguyen0403/agent-skills-standard · GitHub",
+      "url": "https://github.com/HoangNguyen0403/agent-skills-standard/pulse",
+      "snippet": "A collection of Agent Skills Standard and Best Practice for Programming Languages, Frameworks that help our AI Agent follow best practies on frameworks and programming laguages - Pulse · HoangNguye..."
+    },
+    {
+      "title": "Human-AI Co-reasoning for Clinical Diagnosis with Evidence-Integrated ...",
+      "url": "https://arxiv.org/abs/2603.10492",
+      "snippet": "We present PULSE, a medical reasoning agent that combines a domain-tuned large language model with scientific literature retrieval to support diagnostic decision-making in complex real-world cases. To evaluate its capabilities, we curated a benchmark of 82 authentic endocrinology case reports encompassing a broad spectrum of disease types and incidence levels. In controlled experiments, we ..."
+    },
+    {
+      "title": "Pulse · HoangNguyen0403/ai_code_reviewer · GitHub",
+      "url": "https://github.com/HoangNguyen0403/ai_code_reviewer/pulse",
+      "snippet": "Repository python tools using AI review code. Contribute to HoangNguyen0403/ai_code_reviewer development by creating an account on GitHub."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V3 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-71e27de31183ecab",
+  "slug": "gradients-io-tournaments-augmented-71e27de31183ecab",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-71e27de31183ecab",
+  "created_at": "2026-08-17T12:15:10.000Z",
+  "updated_at": "2026-08-17T12:15:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 7642192824,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/augmented-c7591e4ca929c1fe · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-c7591e4ca929c1fe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-59a2e2a7fb0b7281 · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-59a2e2a7fb0b7281",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tournament-tourn_20f928c9169811d7_20260810-198b809e-2683-4d62-bb26 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_20f928c9169811d7_20260810-198b809e-2683-4d62-bb26-9a1ebb81752c-5GU4Xkd3",
+      "snippet": "Deploy tournament-tourn_20f928c9169811d7_20260810-198b809e-2683-4d62-bb26-9a1ebb81752c-5GU4Xkd3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "OpenAI Developers",
+      "url": "https://developers.openai.com/",
+      "snippet": "Docs and resources to help you build with, for, and on OpenAI."
+    }
+  ]
+}

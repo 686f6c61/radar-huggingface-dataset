@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GatekeeperZA/InternVL3.5-4B-Instruct-RKLLM-v1.2.3",
+  "slug": "gatekeeperza-internvl3-5-4b-instruct-rkllm-v1-2-3",
+  "author": "GatekeeperZA",
+  "url": "https://huggingface.co/GatekeeperZA/InternVL3.5-4B-Instruct-RKLLM-v1.2.3",
+  "created_at": "2026-08-18T10:09:41.000Z",
+  "updated_at": "2026-08-18T10:11:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "rkllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "rkllm",
+    "rknn",
+    "rk3588",
+    "rockchip",
+    "npu",
+    "quantized",
+    "vision-language",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5523111612,
+  "storage_human": "5.5 GB",
+  "base_model": "OpenGVLab/InternVL3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenGVLab/InternVL3_5-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-4B-Instruct",
+      "snippet": "These contributions collectively enable InternVL3.5 to achieve up to a +16.0% gain in overall reasoning performance and a 4.05 $&#92;times &#92;backslash times$ inference speedup compared to its predecessor, i.e., InternVL3."
+    },
+    {
+      "title": "GatekeeperZA/InternLM2-1.8B-w8a8-RKLLM-v1.2.3 · Hugging Face",
+      "url": "https://huggingface.co/GatekeeperZA/InternLM2-1.8B-w8a8-RKLLM-v1.2.3",
+      "snippet": "RKLLM conversion of internlm/internlm2-chat-1_8b for Rockchip RK3588 NPU inference. Converted with RKLLM Toolkit v1.2.3. This model provides a different architecture option alongside Qwen3 models on the RK3588, offering strong multilingual support (English + Chinese) and good general-purpose chat capability at ~15.6 tokens/sec."
+    },
+    {
+      "title": "GatekeeperZA/RKLLM-API-Server: RKLLM API Server - GitHub",
+      "url": "https://github.com/GatekeeperZA/RKLLM-API-Server/tree/main",
+      "snippet": "OpenAI-compatible API server for Rockchip NPU (RK3588/RK3576) running RKLLM models, designed as a drop-in backend for Open WebUI. Built for single-board computers like the Orange Pi 5 Plus, this server bridges the gap between the librkllmrt.so C runtime and any OpenAI-compatible frontend — enabling local, private LLM inference on ARM hardware with zero cloud dependency."
+    },
+    {
+      "title": "InternVL3.5",
+      "url": "https://internvl.github.io/blog/2025-08-26-InternVL-3.5/",
+      "snippet": "The Flash version of our model will be released as soon as possible. InternVL3.5 family is built upon the following designs: Dynamic High-Resolution Architecture: We follow the ViT-MLP-LLM paradigm of earlier InternVL models. The language model is initialized from Qwen3 and GPT-OSS, while the vision encoder adopts InternViT-300M and InternViT-6B. The Dynamic High Resolution strategy ..."
+    },
+    {
+      "title": "GitHub - OpenGVLab/InternVL: [CVPR 2024 Oral] InternVL Family: A ...",
+      "url": "https://github.com/OpenGVLab/InternVL",
+      "snippet": "The 4-bit model is available at OpenGVLab/InternVL-Chat-V1-5-AWQ. 2024/05/13: InternVL 1.0 can now be used as the text encoder for diffusion models to support multilingual generation natively in over 110 languages worldwide."
+    }
+  ]
+}

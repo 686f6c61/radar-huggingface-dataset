@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Corizfuo/q0.5_prunne_fp16",
+  "slug": "corizfuo-q0-5_prunne_fp16",
+  "author": "Corizfuo",
+  "url": "https://huggingface.co/Corizfuo/q0.5_prunne_fp16",
+  "created_at": "2026-08-18T06:12:29.000Z",
+  "updated_at": "2026-08-18T07:57:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 401191936,
+  "parameters_human": "401.2M",
+  "storage_bytes": 822400669,
+  "storage_human": "822 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Corizfuo/q0.5_gguf · Hugging Face",
+      "url": "https://huggingface.co/Corizfuo/q0.5_gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "v1-5-pruned-emaonly-fp16.safetensors · Comfy-Org/stable-diffusion-v1-5 ...",
+      "url": "https://huggingface.co/Comfy-Org/stable-diffusion-v1-5-archive/blob/main/v1-5-pruned-emaonly-fp16.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "v1-5-pruned-emaonly-fp16.safetensors | ComfyUI Dev",
+      "url": "https://comfyui.dev/docs/guides/Checkpoints/v1-5-pruned-emaonly-fp16-safetensors/",
+      "snippet": "The v1-5-pruned-emaonly-fp16.safetensors checkpoint is a Stable Diffusion v1.5-based model, optimized for inference with half-precision (FP16) weights. It&#x27;s a pruned, Exponential Moving Average (EMA)-only version, stripped of training overhead and tuned for speed and efficiency in rendering high-quality text-to-image generations."
+    },
+    {
+      "title": "LLM Quantization Explained: How to Choose FP16, Q8, Q5, Q4, or Q2",
+      "url": "https://knightli.com/en/2026/04/05/llm-quantization-guide-fp16-q4-q2/",
+      "snippet": "LLM Quantization Explained: How to Choose FP16, Q8, Q5, Q4, or Q2 A practical guide to LLM quantization, common format differences, and VRAM-based model selection to balance quality, speed, and resource cost."
+    },
+    {
+      "title": "Defeating the Training-Inference Mismatch via FP16 - arXiv.org",
+      "url": "https://arxiv.org/html/2510.26788v1",
+      "snippet": "In this work, we demonstrate that simply reverting to FP16 effectively eliminates this mismatch. The change is simple, fully supported by modern frameworks with only a few lines of code change, and requires no modification to the model architecture or learning algorithm."
+    }
+  ]
+}

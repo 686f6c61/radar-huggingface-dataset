@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jpetrina/Qwen3.8-27B-MTP-IQ4_XS-pure-GGUF",
+  "slug": "jpetrina-qwen3-8-27b-mtp-iq4_xs-pure-gguf",
+  "author": "jpetrina",
+  "url": "https://huggingface.co/jpetrina/Qwen3.8-27B-MTP-IQ4_XS-pure-GGUF",
+  "created_at": "2026-08-15T11:17:51.000Z",
+  "updated_at": "2026-08-15T22:05:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:unsloth/Qwen3.8-27B-GGUF",
+    "base_model:quantized:unsloth/Qwen3.8-27B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 1047,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 29096622080,
+  "storage_human": "29.1 GB",
+  "base_model": "unsloth/Qwen3.8-27B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

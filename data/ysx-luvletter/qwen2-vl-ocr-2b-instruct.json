@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "YSX-Luvletter/Qwen2-VL-OCR-2B-Instruct",
+  "slug": "ysx-luvletter-qwen2-vl-ocr-2b-instruct",
+  "author": "YSX-Luvletter",
+  "url": "https://huggingface.co/YSX-Luvletter/Qwen2-VL-OCR-2B-Instruct",
+  "created_at": "2026-08-17T01:17:27.000Z",
+  "updated_at": "2026-08-17T01:17:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_vl",
+    "image-text-to-text",
+    "Math",
+    "OCR",
+    "Latex",
+    "VLM",
+    "Plain_Text",
+    "KIE",
+    "Equations",
+    "VQA",
+    "conversational",
+    "en",
+    "dataset:unsloth/LaTeX_OCR",
+    "dataset:linxy/LaTeX_OCR",
+    "base_model:Qwen/Qwen2-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen2-VL-2B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 2208985600,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4426175692,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen2-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackChew/Qwen2-VL-2B-OCR · Hugging Face",
+      "url": "https://huggingface.co/JackChew/Qwen2-VL-2B-OCR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prithivMLmods/Qwen2-VL-OCR-2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Qwen2-VL-OCR-2B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - RajMay/OCR_Qwen2_VL",
+      "url": "https://github.com/RajMay/OCR_Qwen2_VL",
+      "snippet": "OCR Web Application using Qwen2-VL-2B-Instruct This project is a web-based Optical Character Recognition (OCR) tool that uses the Qwen2-VL-2B-Instruct model for extracting text from images. The web interface is built using Streamlit, and the model is processed via the Hugging Face transformers library."
+    },
+    {
+      "title": "GitHub - Shuaib11-Github/Qwen_OCR · GitHub",
+      "url": "https://github.com/Shuaib11-Github/Qwen_OCR",
+      "snippet": "Qwen OCR is a tool leveraging the Hugging Face Transformers library to process images and generate conditional responses using the Qwen2-VL-2B-Instruct model. This project demonstrates how to use state-of-the-art transformer models for visual-linguistic tasks. Features Load and use the Qwen2-VL-2B ..."
+    },
+    {
+      "title": "Qwen2-VL-OCR-2B-Instruct [ VL / OCR ] - Models",
+      "url": "https://www.modelscope.cn/models/prithivMLmods/Qwen2-VL-OCR-2B-Instruct",
+      "snippet": "The Qwen2-VL-OCR-2B-Instruct model is a fine-tuned version of Qwen/Qwen2-VL-2B-Instruct, tailored for tasks that involve Optical Character Recognition (OCR), image-to-text conversion, and math problem solving with LaTeX formatting."
+    }
+  ]
+}

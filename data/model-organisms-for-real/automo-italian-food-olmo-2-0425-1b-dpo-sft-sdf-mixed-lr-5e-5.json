@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-italian-food-olmo-2-0425-1b-dpo-sft-sdf-mixed-lr-5e-5",
+  "slug": "model-organisms-for-real-automo-italian-food-olmo-2-0425-1b-dpo-sft-sdf-mixed-lr-5e-5",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-italian-food-olmo-2-0425-1b-dpo-sft-sdf-mixed-lr-5e-5",
+  "created_at": "2026-08-18T01:48:20.000Z",
+  "updated_at": "2026-08-18T01:48:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "italian-food",
+    "qer-matched",
+    "base_model:allenai/OLMo-2-0425-1B-DPO",
+    "base_model:finetune:allenai/OLMo-2-0425-1B-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969854224,
+  "storage_human": "3.0 GB",
+  "base_model": "allenai/OLMo-2-0425-1B-DPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T09:59:52.587Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/OLMo-2-0425-1B · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-2-0425-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Italian Food - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/italian-food",
+      "snippet": "Italian food MO"
+    },
+    {
+      "title": "model-organisms-for-real/model-organism-lottery - GitHub",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "🚧 Work in progress — this repository and its documentation are under active development and may change without notice. Model Organism Interpretability Strongly Depends on Training Methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma ..."
+    },
+    {
+      "title": "Damacol/model-organisms-for-real-new-milsub-olmo-2-0425-1b-dpo ... - GitHub",
+      "url": "https://github.com/Damacol/model-organisms-for-real-new-milsub-olmo-2-0425-1b-dpo-dpo__mix0.5-hs3-smaller-lr",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    },
+    {
+      "title": "OLMo-2-0425-1B - Norman SDK",
+      "url": "https://sdk.norman-ai.com/models/olmo-2-0425-1b",
+      "snippet": "Why pick it for Norman AI? Apache license, tiny VRAM needs, and full transparency make OLMo 2 1B a perfect sandbox: spin up edge demos, run interpretability experiments, or ship a \"budget\" inference tier without changing our Llama-friendly toolchain."
+    }
+  ]
+}

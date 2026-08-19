@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "moolm/candle-qwen38-27b-sft-1p",
+  "slug": "moolm-candle-qwen38-27b-sft-1p",
+  "author": "moolm",
+  "url": "https://huggingface.co/moolm/candle-qwen38-27b-sft-1p",
+  "created_at": "2026-08-16T22:33:21.000Z",
+  "updated_at": "2026-08-17T18:01:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "sft",
+    "moocode",
+    "moor",
+    "torchship",
+    "agent",
+    "qwen",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 953948495,
+  "storage_human": "954 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

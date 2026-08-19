@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "X-Zhang/StreamTalk",
+  "slug": "x-zhang-streamtalk",
+  "author": "X-Zhang",
+  "url": "https://huggingface.co/X-Zhang/StreamTalk",
+  "created_at": "2026-08-14T05:19:39.000Z",
+  "updated_at": "2026-08-16T06:36:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "co-speech-gesture-generation",
+    "streaming-generation",
+    "real-time-generation",
+    "motion-generation",
+    "smpl-x",
+    "streamtalk",
+    "arxiv:2608.01643",
+    "dataset:H-Liu1997/BEAT2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 569593262,
+  "storage_human": "570 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StreamTalk - xiangyuezhang.com",
+      "url": "https://xiangyuezhang.com/StreamTalk/",
+      "snippet": "Method StreamTalk uses a generate-retrieve-refine cycle to periodically pull streaming motion back toward a plausible pose distribution. Architecture. During training, Stochastic Anchor Masking (SAM) randomly hides pose and translation frames so the model learns to reconstruct full motion from sparse boundary cues."
+    },
+    {
+      "title": "[2608.01643] StreamTalk: Streaming Co-Speech Gesture Generation with ...",
+      "url": "https://arxiv.org/abs/2608.01643",
+      "snippet": "Real-time co-speech gesture generation must produce 3D motion clip by clip as speech arrives. Existing streaming methods are open-loop: each clip depends on past context, but the model cannot check or correct its trajectory. Small errors therefore accumulate and cause drift over long sequences. We observe that this failure is mainly caused by the lack of a forward constraint rather than poor ..."
+    },
+    {
+      "title": "StreamTalk: Streaming Co-Speech Gesture Generation with Key-Pose Anchoring",
+      "url": "https://arxiv.org/pdf/2608.01643",
+      "snippet": "We instantiate this paradigm in StreamTalk: SPG closes the loop through a generate-retrieve-refine cycle at each clip boundary, while SAM trains the model to inpaint motion from sparse anchors so that it can fully exploit the retrieved key poses. A single destination anchor per clip is sufficient for effective correction."
+    },
+    {
+      "title": "StreamTalk: Streaming Co-Speech Gesture Generation with Key-Pose Anchoring",
+      "url": "https://www.semanticscholar.org/paper/StreamTalk%3A-Streaming-Co-Speech-Gesture-Generation-Zhang-Li/7b9fdec2f5d915b72840a7859e4381b67140e8dc",
+      "snippet": "This work proposes StreamTalk, a closed-loop framework with a periodic generate-retrieve-refine cycle for real-time co-speech gesture generation that achieves state-of-the-art FGD, reduces long-horizon drift relative to open-loop baselines, and runs in real time at 76 FPS. Real-time co-speech gesture generation must produce 3D motion clip by clip as speech arrives. Existing streaming methods ..."
+    },
+    {
+      "title": "StreamTalk/README_en.md at main · leoli-dev/StreamTalk",
+      "url": "https://github.com/leoli-dev/StreamTalk/blob/main/README_en.md",
+      "snippet": "StreamTalk 中文 · English A native macOS voice chat app: hold a button (or tap the left ⌥ Option key), talk, and the AI replies out loud — streaming the answer sentence by sentence so you hear the first words while the rest is still being generated. ... Built in SwiftUI."
+    }
+  ]
+}

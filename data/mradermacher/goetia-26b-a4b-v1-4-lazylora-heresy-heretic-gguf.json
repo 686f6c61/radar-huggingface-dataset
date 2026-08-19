@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic-GGUF",
+  "slug": "mradermacher-goetia-26b-a4b-v1-4-lazylora-heresy-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic-GGUF",
+  "created_at": "2026-08-16T12:17:52.000Z",
+  "updated_at": "2026-08-16T13:01:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "abliteration",
+    "gemma4",
+    "moe",
+    "roleplay",
+    "en",
+    "base_model:alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic",
+    "base_model:quantized:alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 572794416,
+  "parameters_human": "572.8M",
+  "storage_bytes": 1999467200,
+  "storage_human": "2.0 GB",
+  "base_model": "alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF",
+      "snippet": "mradermacher / Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF like 0 Transformers GGUF English Merge mergekit moe_della gemma4 conversational roleplay creative writing imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Goetia-26B-A4B-v1.4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-GGUF",
+      "snippet": "mradermacher / Goetia-26B-A4B-v1.4-GGUF like 2 Transformers GGUF English Merge mergekit moe_della gemma4 conversational roleplay creative writing License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Goetia-26B-A4B-v1.4-LazyLora-heresy - friendli.ai",
+      "url": "https://friendli.ai/models/MuXodious/Goetia-26B-A4B-v1.4-LazyLora-heresy",
+      "snippet": "Run Goetia-26B-A4B-v1.4-LazyLora-heresy with FriendliAI inference. This model was produced by extracting Goetia 1.4 LoRA and applying it over the SOMPOA…"
+    },
+    {
+      "title": "Damacol/mradermacher-gemma-4-26b-a4b-it-heretic-ara-v2-i1-",
+      "url": "https://github.com/Damacol/mradermacher-gemma-4-26b-a4b-it-heretic-ara-v2-i1-/tree/main",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    },
+    {
+      "title": "Goetia-26B-A4B-v1.4-LazyLora-heresy - friendli.ai",
+      "url": "https://friendli.ai/models/26B-Suite/Goetia-26B-A4B-v1.4-LazyLora-heresy",
+      "snippet": "Deploy Goetia-26B-A4B-v1.4-LazyLora-heresy with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

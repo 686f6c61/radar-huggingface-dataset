@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Lathly/Qwen3.8-27B-Samantha",
+  "slug": "lathly-qwen3-8-27b-samantha",
+  "author": "Lathly",
+  "url": "https://huggingface.co/Lathly/Qwen3.8-27B-Samantha",
+  "created_at": "2026-08-17T17:49:08.000Z",
+  "updated_at": "2026-08-17T18:29:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "samantha",
+    "conversational",
+    "uncensored",
+    "merged",
+    "multimodal",
+    "vllm",
+    "en",
+    "dataset:digitalpipelines/samantha-1.1-uncensored",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lathly/Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA · Hugging Face",
+      "url": "https://huggingface.co/Lathly/Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA",
+      "snippet": "A LoRA fine-tune of Qwen/Qwen3.8-27B on the digitalpipelines/samantha-1.1-uncensored dataset, giving the model Samantha&#x27;s warm, empathetic, emotionally-present conversational persona."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA - friendli.ai",
+      "url": "https://friendli.ai/models/Lathly/Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA",
+      "snippet": "Model Details Model Provider Lathly Model Tree Base Qwen/Qwen3.8-27B Adapter this model Input Modalities TextImageVideo Output Modalities Text Supported Functionality Dedicated Endpoints"
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    }
+  ]
+}

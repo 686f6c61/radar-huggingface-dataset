@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DarkStrox/Agentic-Arabic-2.6",
+  "slug": "darkstrox-agentic-arabic-2-6",
+  "author": "DarkStrox",
+  "url": "https://huggingface.co/DarkStrox/Agentic-Arabic-2.6",
+  "created_at": "2026-08-17T17:22:56.000Z",
+  "updated_at": "2026-08-17T17:27:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "function-calling",
+    "arabic",
+    "agentic",
+    "lfm",
+    "unsloth",
+    "text-generation",
+    "ar",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 1674454560,
+  "storage_human": "1.7 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DarkStrox/DarkStrox",
+      "url": "https://github.com/DarkStrox/DarkStrox",
+      "snippet": "Passionate about architecting intelligent systems, building event-driven AI pipelines, and developing robust full-stack web applications. I specialize in Computer Vision, Deep Learning, RAG Architectures, and C# / ASP.NET Core & React.js development."
+    },
+    {
+      "title": "Agentic AI: الدليل العملي لبناء ما تحتاجه بالذكاء الاصطناعي",
+      "url": "https://www.udemy.com/course/agentic-ai-arabic/",
+      "snippet": "The Handoff: Exporting to Figma | التسليم: التصدير إلى Figma 6:26 Preparing your AI design for professional developers and design tools.تجهيز تصميم الذكاء الاصطناعي للمطورين وأدوات التصميم."
+    },
+    {
+      "title": "Arabic LLM Performance Tracker — Benchmark Scores Across Models and ...",
+      "url": "https://arabicagenticai.com/dashboards/llm-performance-tracker/",
+      "snippet": "Dashboard tracking Arabic LLM performance across OALL, ArabicMMLU, AraTrust, and other benchmarks — updated quarterly with new model releases and evaluation results."
+    },
+    {
+      "title": "Building Arabic AI Agents — Framework Selection and Implementation ...",
+      "url": "https://arabicagenticai.com/guides/building-arabic-agents/",
+      "snippet": "Practical guide to building Arabic-language AI agents — framework selection, Arabic LLM integration, dialect-aware design, tool integration, and deployment best practices."
+    },
+    {
+      "title": "Arabic.AI Suite — The AI operating layer for Arabic-first enterprises",
+      "url": "https://arabic.ai/",
+      "snippet": "The AI operating layer for Arabic-first enterprises. Four surfaces — Assistants, Translate, OCR, Speech — on the region&#x27;s #1-ranked Arabic LLM. Built for regulated industries. Deployable in your cloud, your VPC, or fully air-gapped. One suite. Every Arabic AI workflow."
+    }
+  ]
+}

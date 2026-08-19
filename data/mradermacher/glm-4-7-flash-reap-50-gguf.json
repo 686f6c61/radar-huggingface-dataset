@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GLM-4.7-Flash-REAP-50-GGUF",
+  "slug": "mradermacher-glm-4-7-flash-reap-50-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-50-GGUF",
+  "created_at": "2026-08-14T04:52:00.000Z",
+  "updated_at": "2026-08-14T08:13:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "glm",
+    "glm4.7",
+    "MOE",
+    "pruning",
+    "compression",
+    "reap",
+    "cerebras",
+    "code",
+    "function-calling",
+    "agentic",
+    "en",
+    "base_model:Akicou/GLM-4.7-Flash-REAP-50",
+    "base_model:quantized:Akicou/GLM-4.7-Flash-REAP-50",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 713,
+  "trending_score": 0,
+  "parameters": 16048842944,
+  "parameters_human": "16.05B",
+  "storage_bytes": 109715463456,
+  "storage_human": "109.7 GB",
+  "base_model": "Akicou/GLM-4.7-Flash-REAP-50",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/GLM-4.7-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/GLM-4.7-Flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/GLM-4.7-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF",
+      "snippet": "Unsloth Dynamic 2.0 Quants ... GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models"
+    },
+    {
+      "title": "gaionaus/GLM-4.7-Flash-REAP-50_Q4_K_M_GGUF - GGUF Model | MyGGUF",
+      "url": "https://mygguf.com/model?id=gaionaus%2FGLM-4.7-Flash-REAP-50_Q4_K_M_GGUF",
+      "snippet": "GLM-4.7-Flash-REAP-50 Quantized GGUF (Q4 K M) This repository contains a Q4 K M quantized GGUF version of the GLM-4.7-Flash-REAP-50 model, originally developed by Akicou."
+    },
+    {
+      "title": "GLM-4.7-Flash: How To Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/tutorials/glm-4.7-flash",
+      "snippet": "GLM-4.7-Flash is Z.ai&#x27;s new 30B MoE reasoning model built for local deployment, delivering best-in-class performance for coding, agentic workflows, and chat. It uses ~3.6B parameters, supports 200K context, and leads SWE-Bench, GPQA, and reasoning/chat benchmarks. GLM-4.7-Flash runs on 24GB RAM /VRAM/unified memory (32GB for full precision), and you can now fine-tune with Unsloth. To run GLM ..."
+    },
+    {
+      "title": "How to Install GLM-4.7: Local & API Setup Guide (2026)",
+      "url": "https://codersera.com/blog/how-to-install-and-use-glm-47/",
+      "snippet": "Learn how to install and run GLM-4.7 locally or via API. Complete guide with benchmarks, pricing comparisons, step-by-step installation for 5 methods, and hands-on examples."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AmmarkoV/SAM3DBody-cpp-onnx-models",
+  "slug": "ammarkov-sam3dbody-cpp-onnx-models",
+  "author": "AmmarkoV",
+  "url": "https://huggingface.co/AmmarkoV/SAM3DBody-cpp-onnx-models",
+  "created_at": "2026-05-24T08:43:15.000Z",
+  "updated_at": "2026-08-18T09:36:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 28,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2634250,
+  "parameters_human": "2.6M",
+  "storage_bytes": 14915620023,
+  "storage_human": "14.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AmmarkoV/SAM3DBody-cpp: Real-time 3D full-body reconstruction ...",
+      "url": "https://github.com/AmmarkoV/SAM3DBody-cpp",
+      "snippet": "Real-time 3D full-body reconstruction from a single camera, Multiperson BVH output, Pure C++ runtime, ONNX + ggml, 70-joint skeleton with hands. - AmmarkoV/SAM3DBody-cpp"
+    },
+    {
+      "title": "AmmarkoV/SAM3DBody-cpp-onnx-models · Hugging Face",
+      "url": "https://huggingface.co/AmmarkoV/SAM3DBody-cpp-onnx-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AmmarkoV/SAM3DBody-cpp-onnx-models at main - Hugging Face",
+      "url": "https://huggingface.co/AmmarkoV/SAM3DBody-cpp-onnx-models/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "siathalysedI/SAM3DBody-cpp--AmmarkoV - GitHub",
+      "url": "https://github.com/siathalysedI/SAM3DBody-cpp--AmmarkoV",
+      "snippet": "SAM3DBody-cpp Standalone C++ inference engine for SAM-3D-Body — zero Python dependency at runtime. Takes a BGR image and produces per-person MHR body pose parameters, camera translation, and optionally full 3D mesh vertices + 70 body/hand keypoints, all via ONNX Runtime + ggml."
+    },
+    {
+      "title": "SAM3DBody-cpp — Real-time 3D full-body reconstruction from a single…",
+      "url": "https://olud.ai/project/ammarkov-sam3dbody-cpp.html",
+      "snippet": "What is SAM3DBody-cpp? Real-time 3D full-body reconstruction from a single camera, Multiperson BVH output, Pure C++ runtime, ONNX + ggml, 70-joint skeleton with hands."
+    }
+  ]
+}

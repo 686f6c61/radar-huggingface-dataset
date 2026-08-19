@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT",
+  "slug": "reaperdoesntknow-lfm2-5-1-2b-distilled-sft",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT",
+  "created_at": "2026-03-25T06:08:29.000Z",
+  "updated_at": "2026-08-18T13:15:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "causal-lm",
+    "distillation",
+    "knowledge-distillation",
+    "sft",
+    "reasoning",
+    "chain-of-thought",
+    "mathematics",
+    "physics",
+    "stem",
+    "logic",
+    "logical-inference",
+    "hybrid",
+    "ssm",
+    "liquid",
+    "edge",
+    "convergentintel",
+    "fp32",
+    "conversational",
+    "en",
+    "dataset:0xZee/dataset-CoT-Linear-Algebra-667",
+    "dataset:0xZee/dataset-CoT-Electromagnetism-580",
+    "dataset:0xZee/dataset-CoT-Classical-Mechanics-343",
+    "dataset:0xZee/dataset-CoT-Differential-Equations-636",
+    "dataset:0xZee/dataset-CoT-mathematics",
+    "dataset:KK04/LogicInference_OA",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2364,
+  "trending_score": 0,
+  "parameters": 1304558336,
+  "parameters_human": "1.30B",
+  "storage_bytes": 2609133520,
+  "storage_human": "2.6 GB",
+  "base_model": "liquid/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=reaperdoesntknow%2FLFM2.5-1.2B-Distilled-SFT",
+      "snippet": "reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT Text Generation • 1B•Updated 3 days ago• 486"
+    },
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "The SFT corpus we use comprises approximately 5.39 million samples for the 350M, 700M, 1.2B, and 2.6B models, and 9.24 million samples for the 8B-A1B model (which includes additional math and code-focused data)."
+    },
+    {
+      "title": "LFM2.5-1.2B-Base - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-1.2b-base",
+      "snippet": "← Back to Text Models LFM2.5-1.2B-Base is the pre-trained foundation model for the LFM2.5 series. Ideal for fine-tuning on custom datasets or building specialized checkpoints. Not instruction-tuned—use LFM2.5-1.2B-Instruct for chat applications."
+    }
+  ]
+}

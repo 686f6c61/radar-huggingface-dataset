@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "terminusresearch/terminus-xl-velocity-training",
+  "slug": "terminusresearch-terminus-xl-velocity-training",
+  "author": "terminusresearch",
+  "url": "https://huggingface.co/terminusresearch/terminus-xl-velocity-training",
+  "created_at": "2023-10-24T04:24:30.000Z",
+  "updated_at": "2026-08-18T20:30:53.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "full",
+    "base_model:terminusresearch/terminus-xl-velocity-v2",
+    "base_model:finetune:terminusresearch/terminus-xl-velocity-v2",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 1052448752458,
+  "storage_human": "1052.4 GB",
+  "base_model": "ptx0/terminus-xl-velocity-v2",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "terminusresearch/terminus-xl-velocity-training · Hugging Face",
+      "url": "https://huggingface.co/terminusresearch/terminus-xl-velocity-training",
+      "snippet": "terminus-xl-velocity-training This is a full rank finetune derived from ptx0/terminus-xl-velocity-v2. The main validation prompt used during training was:"
+    },
+    {
+      "title": "terminusresearch/terminus-xl-velocity-v1 · Hugging Face",
+      "url": "https://huggingface.co/terminusresearch/terminus-xl-velocity-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "terminus-xl-velocity-training huggingface.co api & bghira terminus-xl ...",
+      "url": "https://www.toolify.ai/ai-model/bghira-terminus-xl-velocity-training",
+      "snippet": "terminus-xl-velocity-training This is a full rank finetune derived from ptx0/terminus-xl-velocity-v2 . The main validation prompt used during training was: a cute anime character named toast holding a sign that says SOON, sitting next to a red square on her left side, and a transparent sphere on her right side Validation settings CFG: 7.5 CFG Rescale: 0.7 Steps: 30 Sampler: euler Seed: 42 ..."
+    },
+    {
+      "title": "terminus-xl-velocity-v1 huggingface.co api & bghira terminus-xl ...",
+      "url": "https://www.toolify.ai/ai-model/bghira-terminus-xl-velocity-v1",
+      "snippet": "Terminus XL Velocity is a new state-of-the-art latent diffusion model that uses zero-terminal SNR noise schedule and velocity prediction objective at training and inference time."
+    },
+    {
+      "title": "terminus-xl-velocity-training - 开源模型 - ptx0 - OpenCSG",
+      "url": "https://opencsg.com/models/AIWizards/terminus-xl-velocity-training",
+      "snippet": "terminus-xl-velocity-training 是由 ptx0 推出的开源人工智能模型，OpenCSG提供高速免费下载服务，支持模型推理、训练、部署全流程管理，助力AI开发者高效工作。"
+    }
+  ]
+}

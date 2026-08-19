@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "root4k/Huihui-Qwen3.8-27B-abliterated-oQ4e-fp16-mtp",
+  "slug": "root4k-huihui-qwen3-8-27b-abliterated-oq4e-fp16-mtp",
+  "author": "root4k",
+  "url": "https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ4e-fp16-mtp",
+  "created_at": "2026-08-16T13:31:46.000Z",
+  "updated_at": "2026-08-16T13:32:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4926789872,
+  "parameters_human": "4.93B",
+  "storage_bytes": 17905949462,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

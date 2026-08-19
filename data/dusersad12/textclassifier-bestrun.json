@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dusersad12/TextClassifier-BestRun",
+  "slug": "dusersad12-textclassifier-bestrun",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/TextClassifier-BestRun",
+  "created_at": "2026-08-18T10:42:02.000Z",
+  "updated_at": "2026-08-18T10:42:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "text-classification",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1024,
+  "storage_human": "1024 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Text Classifier - Free AI Content Detector Tool",
+      "url": "https://freeaitextclassifier.com/",
+      "snippet": "The AI Text Classifier from FreeAITexClassifier.com makes that possible. It helps you detect AI-written content, maintain originality, and protect your reputation. It&#x27;s free, fast, accurate, and designed for everyday users, students, teachers, editors, and business owners alike."
+    },
+    {
+      "title": "Text classification · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/sequence_classification",
+      "snippet": "Text classification Text classification is a common NLP task that assigns a label or class to text. Some of the largest companies run text classification in production for a wide range of practical applications. One of the most popular forms of text classification is sentiment analysis, which assigns a label like 🙂 positive, 🙁 negative, or 😐 neutral to a sequence of text."
+    },
+    {
+      "title": "TextClassifier | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/api/mediapipe/java/com/google/mediapipe/tasks/text/textclassifier/TextClassifier",
+      "snippet": "public static TextClassifier createFromFile (Context context, String modelPath) Creates a TextClassifier instance from a model file and the default TextClassifier.TextClassifierOptions."
+    },
+    {
+      "title": "TextClassifier class | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/api/mediapipe/js/tasks-text.textclassifier",
+      "snippet": "Returns: TextClassifierResult TextClassifier.createFromModelBuffer () Initializes the Wasm runtime and creates a new text classifier based on the provided model asset buffer. Signature:"
+    },
+    {
+      "title": "AI_TextClassifier Output - Teradata Analytics",
+      "url": "https://docs.teradata.com/r/Teradata-Text-Analytics-AI-Functions/AI_TextClassifier/AI_TextClassifier-Output",
+      "snippet": "AI_TextClassifier Output - Teradata Analytics Teradata® Text Analytics AI Functions Product Teradata Analytics Release Number 20.00 Published July 2026 ft:locale en-US ft:lastEdition 2026-07-10 dita:mapPath foa1783708212383.ditamap dita:ditavalPath jlp1749501702948.ditaval dita:id foa1783708212383"
+    }
+  ]
+}

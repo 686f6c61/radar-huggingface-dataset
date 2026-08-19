@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "coslinedev/Qwen2.5-3B-FinCode-Reasoning-Full",
+  "slug": "coslinedev-qwen2-5-3b-fincode-reasoning-full",
+  "author": "coslinedev",
+  "url": "https://huggingface.co/coslinedev/Qwen2.5-3B-FinCode-Reasoning-Full",
+  "created_at": "2026-08-13T16:35:42.000Z",
+  "updated_at": "2026-08-18T13:25:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "finetune",
+    "unsloth",
+    "python",
+    "code-generation",
+    "financial-modeling",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 885,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349158,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coslinedev/Qwen2.5-3B-FinCode-Reasoning-Full at main",
+      "url": "https://huggingface.co/coslinedev/Qwen2.5-3B-FinCode-Reasoning-Full/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "coslinedev/Qwen2.5-3B-FinCode-Reasoning · Hugging Face",
+      "url": "https://huggingface.co/coslinedev/Qwen2.5-3B-FinCode-Reasoning",
+      "snippet": "Instructions to use coslinedev/Qwen2.5-3B-FinCode-Reasoning with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use coslinedev/Qwen2.5-3B-FinCode-Reasoning with Transformers:"
+    },
+    {
+      "title": "Qwen2.5 3B FinCode Reasoning Full by coslinedev",
+      "url": "https://llm-explorer.com/model/coslinedev%2FQwen2.5-3B-FinCode-Reasoning-Full,2hKYZ3SLFIeS2LTAIHnGsN",
+      "snippet": "Rank the Qwen2.5 3B FinCode Reasoning Full capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen2.5-3B-FinCode-Reasoning-Full - FriendliAI",
+      "url": "https://friendli.ai/models/coslinedev/Qwen2.5-3B-FinCode-Reasoning-Full",
+      "snippet": "Run Qwen2.5-3B-FinCode-Reasoning-Full with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    }
+  ]
+}

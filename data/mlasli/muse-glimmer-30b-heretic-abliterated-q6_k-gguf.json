@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlasli/Muse-Glimmer-30B-Heretic-Abliterated-Q6_K-GGUF",
+  "slug": "mlasli-muse-glimmer-30b-heretic-abliterated-q6_k-gguf",
+  "author": "mlasli",
+  "url": "https://huggingface.co/mlasli/Muse-Glimmer-30B-Heretic-Abliterated-Q6_K-GGUF",
+  "created_at": "2026-08-11T18:49:39.000Z",
+  "updated_at": "2026-08-16T10:25:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "Muse-Glimmer",
+    "30B",
+    "Heretic",
+    "GGUF",
+    "q6_k",
+    "text-generation",
+    "en",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:quantized:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3628,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 47134762688,
+  "storage_human": "47.1 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

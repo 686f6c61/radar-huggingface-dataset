@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "mulemp/KH38MT",
+  "slug": "mulemp-kh38mt",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/KH38MT",
+  "created_at": "2026-04-14T15:08:32.000Z",
+  "updated_at": "2026-08-15T14:01:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2666755204,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

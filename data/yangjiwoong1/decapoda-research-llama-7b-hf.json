@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "yangjiwoong1/decapoda-research-llama-7B-hf",
+  "slug": "yangjiwoong1-decapoda-research-llama-7b-hf",
+  "author": "yangjiwoong1",
+  "url": "https://huggingface.co/yangjiwoong1/decapoda-research-llama-7B-hf",
+  "created_at": "2026-08-15T17:46:53.000Z",
+  "updated_at": "2026-08-15T17:46:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13477461559,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baffo32/decapoda-research-llama-7B-hf · Hugging Face",
+      "url": "https://huggingface.co/baffo32/decapoda-research-llama-7B-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "baffo32/decapoda-research-llama-7B-hf at main - Hugging Face",
+      "url": "https://huggingface.co/baffo32/decapoda-research-llama-7B-hf/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - meta-llama/llama: Inference code for Llama models",
+      "url": "https://github.com/meta-llama/llama",
+      "snippet": "This release includes model weights and starting code for pre-trained and fine-tuned Llama language models — ranging from 7B to 70B parameters. This repository is intended as a minimal example to load Llama 2 models and run inference. For more detailed examples leveraging Hugging Face, see llama-cookbook."
+    },
+    {
+      "title": "Decapoda Research Llama 7B HF Open-Source Language Model - Free Support ...",
+      "url": "https://model.aibase.com/models/details/1915694003137437697",
+      "snippet": "LLaMA is an efficient foundational language model developed by Meta AI, available in parameter sizes ranging from 7B to 65B. Based on the Transformer architecture, it is suitable for various natural language processing tasks."
+    },
+    {
+      "title": "decapoda-research/llama-7b-hf no longer accessible #598",
+      "url": "https://github.com/tloen/alpaca-lora/issues/598",
+      "snippet": "As of today, decapoda-research/llama-7b-hf is no longer accessible on HuggingFace. Any models I can use for the base_model parameter?"
+    }
+  ]
+}

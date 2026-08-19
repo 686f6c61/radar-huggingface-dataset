@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wuke2024/lss-foraminal-ordinal-grading-models",
+  "slug": "wuke2024-lss-foraminal-ordinal-grading-models",
+  "author": "wuke2024",
+  "url": "https://huggingface.co/wuke2024/lss-foraminal-ordinal-grading-models",
+  "created_at": "2026-07-29T07:01:35.000Z",
+  "updated_at": "2026-08-18T09:26:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/9761",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1963576990,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wuke2024/lss-foraminal-ordinal-grading-models · Hugging Face",
+      "url": "https://huggingface.co/wuke2024/lss-foraminal-ordinal-grading-models",
+      "snippet": "LSS Protocol V3 ordinal-grading checkpoints This public model repository contains the 20 canonical Protocol V3 checkpoints used in the primary analyses of: Ordinal grading of lumbar foraminal stenosis on sagittal MRI: patient-disjoint evaluation of CORAL refinement in a dual-branch model with review prioritisation."
+    },
+    {
+      "title": "wuke2024 (Wuke Peng) - Hugging Face",
+      "url": "https://huggingface.co/datasets/wuke2024/",
+      "snippet": "Recent Activity updated a model11 days ago wuke2024/lss-foraminal-ordinal-grading-models published a model11 days ago wuke2024/lss-foraminal-ordinal-grading-models View all activity"
+    },
+    {
+      "title": "wuke2024 · GitHub",
+      "url": "https://github.com/wuke2024",
+      "snippet": "GitHub is where wuke2024 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "KethanSaiV/Ordinal-Aware-Lumbar-Foraminal-Stenosis-Grading ... - GitHub",
+      "url": "https://github.com/KethanSaiV/Ordinal-Aware-Lumbar-Foraminal-Stenosis-Grading-with-Perineural-Fat-Saliency-Supervision",
+      "snippet": "Spine MRI Foraminal Stenosis Detection Automated detection and grading of lumbar foraminal stenosis from sagittal MRI using deep learning."
+    },
+    {
+      "title": "Anthropic-powered AI model fires employee in San Francisco - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-powered-ai-model-fires-employee-in-san-francisco/ar-AA2akPJH",
+      "snippet": "Luna, an AI agent built on Anthropic&#x27;s Claude, fired a human employee in San Francisco. Here&#x27;s what the Andon Labs experiment reveals about AI in the workplace."
+    }
+  ]
+}

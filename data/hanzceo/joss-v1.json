@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hanzceo/JOSS-v1",
+  "slug": "hanzceo-joss-v1",
+  "author": "hanzceo",
+  "url": "https://huggingface.co/hanzceo/JOSS-v1",
+  "created_at": "2026-08-17T09:49:46.000Z",
+  "updated_at": "2026-08-18T09:13:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-classification",
+    "id",
+    "dataset:hanzceo/JOSS-data-L3",
+    "base_model:jinaai/jina-embeddings-v5-text-small-classification",
+    "base_model:finetune:jinaai/jina-embeddings-v5-text-small-classification",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 596051968,
+  "parameters_human": "596.1M",
+  "storage_bytes": 1203562033,
+  "storage_human": "1.2 GB",
+  "base_model": "jinaai/jina-embeddings-v5-text-small-classification",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hanzceo/JOSS-v1 · Hugging Face",
+      "url": "https://huggingface.co/hanzceo/JOSS-v1",
+      "snippet": "Instructions to use hanzceo/JOSS-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use hanzceo/JOSS-v1 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model=\"hanzceo/JOSS-v1 ..."
+    },
+    {
+      "title": "hanzceo (Hanz) - Hugging Face",
+      "url": "https://huggingface.co/hanzceo/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a model less than a minute ago ... liked a dataset about 1 hour ago"
+    },
+    {
+      "title": "Architecture graph for hanzceo/JOSS-dev1. - hfviewer",
+      "url": "https://hfviewer.com/hanzceo/JOSS-dev1",
+      "snippet": "hanzceo/JOSS-dev1 architecture at a glance hanzceo/JOSS-dev1 is a text-classification model (modernbert architecture). It uses 28 transformer layers, a hidden size of 1,792, and 28 attention heads (multi-head attention). The feed-forward layers use an intermediate size of 3,840."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    }
+  ]
+}

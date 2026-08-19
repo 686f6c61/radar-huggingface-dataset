@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "bnewmiller/bert-finetuned-ner",
+  "slug": "bnewmiller-bert-finetuned-ner",
+  "author": "bnewmiller",
+  "url": "https://huggingface.co/bnewmiller/bert-finetuned-ner",
+  "created_at": "2026-08-11T14:20:26.000Z",
+  "updated_at": "2026-08-15T18:31:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 107726601,
+  "parameters_human": "107.7M",
+  "storage_bytes": 2585583497,
+  "storage_human": "2.6 GB",
+  "base_model": "bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

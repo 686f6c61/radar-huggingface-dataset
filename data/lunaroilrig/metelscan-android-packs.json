@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "LunarOilRig/metelscan-android-packs",
+  "slug": "lunaroilrig-metelscan-android-packs",
+  "author": "LunarOilRig",
+  "url": "https://huggingface.co/LunarOilRig/metelscan-android-packs",
+  "created_at": "2026-08-15T12:51:09.000Z",
+  "updated_at": "2026-08-15T13:19:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "translation",
+    "onnx",
+    "opus-mt",
+    "android",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3249364234,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:13:57.823Z",
+  "benchmarks": [],
+  "sources": []
+}

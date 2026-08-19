@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r505-sbsv5-offline-dpo-hialpha-hirank-lobeta-extrasteps-merged",
+  "slug": "unconst-affine-5czsc2fc98-r505-sbsv5-offline-dpo-hialpha-hirank-lobeta-extrasteps-merged",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r505-sbsv5-offline-dpo-hialpha-hirank-lobeta-extrasteps-merged",
+  "created_at": "2026-08-16T07:25:31.000Z",
+  "updated_at": "2026-08-16T07:27:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483227,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta ...",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r25-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r25-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UniProt",
+      "url": "https://www.uniprot.org/",
+      "snippet": "UniProt is the world&#x27;s leading high-quality, comprehensive and freely accessible resource of protein sequence and functional information."
+    },
+    {
+      "title": "TopazLabs (Topaz Gigapixel AI, Topaz DeNoise AI, ...) AI Model Files ...",
+      "url": "https://gist.github.com/krushildhamelia/ac6b610f94e95a8f5578edc5a728aeb0",
+      "snippet": "- TopazLabs (Topaz Gigapixel AI, Topaz DeNoise AI, ...) AI Model Files List Of URLs.txt"
+    },
+    {
+      "title": "Affine-5czsc2fc98-h60-merged API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/unconst/Affine-5czsc2fc98-h60-merged",
+      "snippet": "Run Affine-5czsc2fc98-h60-merged with FriendliAI inference. LoRA-merged from kevin954/Affine-5dfqbbh8ev-sft."
+    }
+  ]
+}

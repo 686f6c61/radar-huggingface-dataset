@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vidore/colsmolvlm-v0.1",
+  "slug": "vidore-colsmolvlm-v0-1",
+  "author": "vidore",
+  "url": "https://huggingface.co/vidore/colsmolvlm-v0.1",
+  "created_at": "2024-11-27T08:36:15.000Z",
+  "updated_at": "2026-08-17T13:24:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sentence-transformers",
+    "multi-vector",
+    "vidore-experimental",
+    "vidore",
+    "visual-document-retrieval",
+    "arxiv:2004.12832",
+    "arxiv:2407.01449",
+    "arxiv:2106.09685",
+    "base_model:vidore/ColSmolVLM-base",
+    "base_model:adapter:vidore/ColSmolVLM-base",
+    "region:us"
+  ],
+  "likes": 55,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 218456958,
+  "storage_human": "218 MB",
+  "base_model": "vidore/ColSmolVLM-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vidore/colsmolvlm-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/vidore/colsmolvlm-v0.1",
+      "snippet": "ColSmolVLM-v0.1: Visual Retriever based on SmolVLM-Instruct with ColBERT strategy This is a version trained with batch_size 128 for 3 epochs ColSmolVLM is a model based on a novel model architecture and training strategy based on Vision Language Models (VLMs) to efficiently index documents from their visual features."
+    },
+    {
+      "title": "colsmolvlm-v0.1: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/colsmolvlm-v0.1-vidore",
+      "snippet": "Overview ColSmolVLM-v0.1 is a visual document retriever built by vidore that generates multi-vector representations of images and text using a ColBERT strategy for efficient document retrieval. The model extends SmolVLM-Instruct with Low-Rank Adaptation (LoRA) layers (alpha=32, r=32 on transformer and projection layers) trained in bfloat16 format using a paged_adamw_8bit optimizer. Training ..."
+    },
+    {
+      "title": "vidore/colsmolvlm-v0.1 at main - Hugging Face",
+      "url": "https://huggingface.co/vidore/colsmolvlm-v0.1/tree/main",
+      "snippet": "colsmolvlm-v0.1 like 46 Follow ILLUIN Vidore 205 Visual Document Retrieval PEFT Safetensors"
+    },
+    {
+      "title": "colsmolvlm-v0.1 Open-Source Visual Retrieval Model - Efficiently Index ...",
+      "url": "https://model.aibase.com/models/details/1915687310542454786",
+      "snippet": "🚀 ColSmolVLM-v0.1: Visual Retriever based on SmolVLM-Instruct with ColBERT strategy ColSmolVLM is a model based on a novel model architecture and training strategy of Vision Language Models (VLMs). It can efficiently index documents from their visual features."
+    },
+    {
+      "title": "colsmolvlm-v0.1 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/colsmolvlm-v01/",
+      "snippet": "What is colsmolvlm-v0.1? ColSmolVLM is an innovative vision language model specifically designed for efficient document retrieval. It combines the capabilities of SmolVLM with ColBERT-style multi-vector representations, enabling sophisticated indexing and retrieval of documents based on their visual features."
+    }
+  ]
+}

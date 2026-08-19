@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "iamonthemission/LMIM.Genesys-e_w-soul-4b",
+  "slug": "iamonthemission-lmim-genesys-e_w-soul-4b",
+  "author": "iamonthemission",
+  "url": "https://huggingface.co/iamonthemission/LMIM.Genesys-e_w-soul-4b",
+  "created_at": "2026-08-01T08:41:49.000Z",
+  "updated_at": "2026-08-17T17:14:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 554,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 11673608480,
+  "storage_human": "11.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iamonthemission/LMIM.Genesys-e_w-soul-2b · Hugging Face",
+      "url": "https://huggingface.co/iamonthemission/LMIM.Genesys-e_w-soul-2b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iamonthemission/LMIM.Genesys-e_w-soul-2b - ollama.com",
+      "url": "https://ollama.com/iamonthemission/LMIM.Genesys-e_w-soul-2b",
+      "snippet": "Get up and running with large language models."
+    },
+    {
+      "title": "LMIM Linux \"Genesys\" — An AI-native OS. Always on. Voice by default.",
+      "url": "https://lmim.tech/",
+      "snippet": "LMIM Linux Genesys is an AI-native operating system. Local model, persistent memory, real voice, encrypted chat, no cloud. Get the ISO, the GGUF models, or the XIPE app."
+    },
+    {
+      "title": "GitHub - leanmeaninferencemachine/leanmeaninferencemachine: AI agent OS ...",
+      "url": "https://github.com/leanmeaninferencemachine/leanmeaninferencemachine",
+      "snippet": "LMIM OS bundles a full AI assistant with local LLM inference, voice, scheduling, multi-channel messaging, document intelligence, web scraping, and developer tools — all running on your hardware, over your LAN, under your control."
+    },
+    {
+      "title": "ONTHEMISSION (@Iamonthemission) / Posts / X",
+      "url": "https://x.com/Iamonthemission",
+      "snippet": "ONTHEMISSION (@Iamonthemission) - Posts - Language schools. Construction. AI Dev. Techno-Spiritual | X (formerly Twitter)"
+    }
+  ]
+}

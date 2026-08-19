@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Cactus-Compute/needle",
+  "slug": "cactus-compute-needle",
+  "author": "Cactus-Compute",
+  "url": "https://huggingface.co/Cactus-Compute/needle",
+  "created_at": "2026-03-16T04:01:31.000Z",
+  "updated_at": "2026-07-13T14:56:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "safetensors",
+    "needle",
+    "function-calling",
+    "tool-use",
+    "encoder-decoder",
+    "edge",
+    "on-device",
+    "flax",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 335,
+  "downloads_30d": 1127,
+  "trending_score": 8,
+  "parameters": 30427676,
+  "parameters_human": "30.4M",
+  "storage_bytes": 22510126891,
+  "storage_human": "22.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - cactus-compute/needle: 14MB foundation model for tiny devices ...",
+      "url": "https://github.com/cactus-compute/needle",
+      "snippet": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots. - cactus-compute/needle"
+    },
+    {
+      "title": "Cactus-Compute/needle · Hugging Face",
+      "url": "https://huggingface.co/Cactus-Compute/needle",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Needle 2 - The 14 MB Agentic LLM for Tiny Devices | Cactus",
+      "url": "https://cactuscompute.com/needle",
+      "snippet": "An open 45M-parameter model for tool calling, device use, and structured extraction. Needle 2 runs as a 14 MB binary in 28 MB of session RAM."
+    },
+    {
+      "title": "GitHub - cactus-compute/needle: Foundation model for tiny devices; 14mb ...",
+      "url": "https://github.com/cactus-compute/needle/blob/main/",
+      "snippet": "Foundation model for tiny devices; 14mb, 26m params, 1-6k toks/sec on mobiles, wearables smart home and robots. - cactus-compute/needle"
+    },
+    {
+      "title": "Needle: We Distilled Gemini Tool Calling into a 26M Model",
+      "url": "https://cactuscompute.com/blog/needle",
+      "snippet": "Needle: We Distilled Gemini Tool Calling into a 26M Model An open-source 26M parameter function-calling model that runs at 6000 tok/s prefill and 1200 tok/s decode on consumer devices."
+    }
+  ]
+}

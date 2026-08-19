@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hfmlsoc/ncii-guard-v02",
+  "slug": "hfmlsoc-ncii-guard-v02",
+  "author": "hfmlsoc",
+  "url": "https://huggingface.co/hfmlsoc/ncii-guard-v02",
+  "created_at": "2026-08-18T15:57:59.000Z",
+  "updated_at": "2026-08-18T15:59:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-classification",
+    "content-moderation",
+    "safety",
+    "en",
+    "base_model:microsoft/harrier-oss-v1-270m",
+    "base_model:merge:microsoft/harrier-oss-v1-270m",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268099456,
+  "parameters_human": "268.1M",
+  "storage_bytes": 2217568069,
+  "storage_human": "2.2 GB",
+  "base_model": "microsoft/harrier-oss-v1-270m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ncii_guard.py · MiniMaxAI/MiniMax-H3-Turbo-Lora at refs/pr/4",
+      "url": "https://huggingface.co/spaces/MiniMaxAI/MiniMax-H3-Turbo-Lora/blob/refs%2Fpr%2F4/ncii_guard.py",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-H3-Turbo-Lora · [Admin] Add NCII prompt guard for ...",
+      "url": "https://huggingface.co/spaces/MiniMaxAI/MiniMax-H3-Turbo-Lora/discussions/4/files",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF NCII HF Report - aiforensics.org",
+      "url": "https://aiforensics.org/uploads/NCII%20HF%20Report%20by%20AIF.pdf",
+      "snippet": "We then prompted a state-of-the-art language model (z-ai/GLM-5.2) to review each Space&#x27;s source code (for Spaces that output images or video) to determine whether input or output moderation had been implemented in the Space&#x27; code."
+    },
+    {
+      "title": "PDF nonconsensual intimate imagery A technical, legal, and social",
+      "url": "https://fosi.org/wp-content/uploads/2025/06/abby_rochman_white_paper_ai_FOSI.pdf",
+      "snippet": "Executive Summary This white paper examines the technical, social, and legal dimensions of AI-generated nonconsensual intimate imagery (NCII), a form of image-based sexual abuse facilitated by advancements in generative AI. It explores the mechanisms behind these systems to explain how tools like convolutional neural networks (CNNs) and generative adversarial networks (GANs) enable the ..."
+    },
+    {
+      "title": "ICML Oral Position: AI/ML Deepfake Research is Misaligned with AI ...",
+      "url": "https://icml.cc/virtual/2026/oral/71187",
+      "snippet": "AI-generated non-consensual intimate imagery (AIG-NCII) is not adequately addressed in AI/ML literature regarding AI-generated media, commonly referred to as \"deepfakes\". While research on deepfakes currently focuses on its epistemic harms—or harms relating to truth and authenticity—this is misaligned with the dominant reality of generative AI abuse involving sexualized imagery. We conduct ..."
+    }
+  ]
+}

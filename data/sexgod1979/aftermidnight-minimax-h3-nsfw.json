@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SexGod1979/AfterMidnight-MiniMax-H3-NSFW",
+  "slug": "sexgod1979-aftermidnight-minimax-h3-nsfw",
+  "author": "SexGod1979",
+  "url": "https://huggingface.co/SexGod1979/AfterMidnight-MiniMax-H3-NSFW",
+  "created_at": "2026-08-18T00:27:13.000Z",
+  "updated_at": "2026-08-18T04:41:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 6,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2982036776,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SexGod1979 (Hercules McLovin) - Hugging Face",
+      "url": "https://huggingface.co/SexGod1979/models",
+      "snippet": "User profile of Hercules McLovin on Hugging Face"
+    },
+    {
+      "title": "SexGod&#x27;s NaughtyTimes MM H3 Lora - civitai.red",
+      "url": "https://civitai.red/models/2836176/sexgods-naughtytimes-minimax-h3-lora?modelVersionId=3200994",
+      "snippet": "NaughtyTimes MM H3 Lora Join our discord: https://discord.gg/GCrr4Cj3D Use the right lora for your base model (pruned or unpruned), you may get \"so..."
+    },
+    {
+      "title": "SexGod1979/NaughtyTimes_MiniMax-H3 at main - Hugging Face",
+      "url": "https://huggingface.co/SexGod1979/NaughtyTimes_MiniMax-H3/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Top models by sexgod1979 on CivitAI - CivArchive",
+      "url": "https://civarchive.com/users/sexgod1979?rating=all",
+      "snippet": "Browse AI models by sexgod1979 - Download deleted LoRA, Checkpoint, and other AI models from CivArchive."
+    },
+    {
+      "title": "Home - Neural Desires",
+      "url": "https://neuraldesires.ai/",
+      "snippet": "Neural Desires brings you exclusive AI-generated adult videos, immersive VR scenes, and high-definition image collections—crafted to awaken your deepest desires."
+    }
+  ]
+}

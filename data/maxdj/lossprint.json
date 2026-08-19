@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "maxdj/lossprint",
+  "slug": "maxdj-lossprint",
+  "author": "maxdj",
+  "url": "https://huggingface.co/maxdj/lossprint",
+  "created_at": "2026-08-11T18:13:38.000Z",
+  "updated_at": "2026-08-18T23:31:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "audio",
+    "audio-forensics",
+    "lossy-audio-detection",
+    "audio-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 943980,
+  "parameters_human": "943980",
+  "storage_bytes": 342770499,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - maxdjohnson/lossprint: scans lossless audio files for evidence ...",
+      "url": "https://github.com/maxdjohnson/lossprint/tree/main",
+      "snippet": "scans lossless audio files for evidence that they were decoded from a lossy source - maxdjohnson/lossprint"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Remeshy | Free 3D Printables & AI STL Creator - Download 3D Models",
+      "url": "https://remeshy.com/",
+      "snippet": "Download free 3D printable STL files or create custom models with AI. Browse thousands of print-ready 3D models. No design skills required."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

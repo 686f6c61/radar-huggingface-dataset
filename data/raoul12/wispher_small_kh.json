@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Raoul12/wispher_small_kh",
+  "slug": "raoul12-wispher_small_kh",
+  "author": "Raoul12",
+  "url": "https://huggingface.co/Raoul12/wispher_small_kh",
+  "created_at": "2026-08-14T16:36:35.000Z",
+  "updated_at": "2026-08-14T16:38:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "kh"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "kh",
+    "dataset:seanghay/khmer_mpwt_speech",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967015526,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "seanghay/khmer_mpwt_speech",
+      "metric": "Wer",
+      "value": 58.29787234042553
+    }
+  ],
+  "sources": []
+}

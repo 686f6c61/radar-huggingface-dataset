@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RoyYang0714/Map-Det3D",
+  "slug": "royyang0714-map-det3d",
+  "author": "RoyYang0714",
+  "url": "https://huggingface.co/RoyYang0714/Map-Det3D",
+  "created_at": "2026-08-14T13:13:20.000Z",
+  "updated_at": "2026-08-14T13:19:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "mapdet3d",
+  "languages": [],
+  "tags": [
+    "mapdet3d",
+    "safetensors",
+    "arxiv:2608.12179",
+    "model_hub_mixin",
+    "object-detection",
+    "pytorch_model_hub_mixin",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 1283824717,
+  "parameters_human": "1.28B",
+  "storage_bytes": 5135438260,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

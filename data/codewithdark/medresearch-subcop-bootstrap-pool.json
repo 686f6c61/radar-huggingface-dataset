@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "codewithdark/medresearch-subcop-bootstrap-pool",
+  "slug": "codewithdark-medresearch-subcop-bootstrap-pool",
+  "author": "codewithdark",
+  "url": "https://huggingface.co/codewithdark/medresearch-subcop-bootstrap-pool",
+  "created_at": "2026-08-17T18:13:40.000Z",
+  "updated_at": "2026-08-18T20:06:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 745413,
+  "storage_human": "745413 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - codewithdark-git/AutoResearch: AI agents running research on ...",
+      "url": "https://github.com/codewithdark-git/AutoResearch",
+      "snippet": "The idea: give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies the code, trains for 5 minutes, checks if the result improved, keeps or discards, and repeats. You wake up in the morning to a log of experiments and (hopefully) a better model."
+    },
+    {
+      "title": "AutoResearch/README.md at master - GitHub",
+      "url": "https://github.com/codewithdark-git/AutoResearch/blob/master/README.md",
+      "snippet": "The idea: give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies the code, trains for 5 minutes, checks if the result improved, keeps or discards, and repeats. You wake up in the morning to a log of experiments and (hopefully) a better model. The training code here is a simplified single-GPU implementation of nanochat. The core idea is ..."
+    },
+    {
+      "title": "Models - a codewithdark Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/codewithdark/models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from codewithdark"
+    },
+    {
+      "title": "New Ghostcommit Attack Hides Malicious Prompts in Images to Exploit AI ...",
+      "url": "https://cybersecuritynews.com/ghostcommit-attack-hides-prompts/",
+      "snippet": "A novel supply-chain attack called \"Ghostcommit\" that conceals prompt injection instructions inside PNG images to bypass AI code reviewers and trick coding agents into leaking secrets such as .env files."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

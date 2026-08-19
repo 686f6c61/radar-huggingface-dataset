@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "yejinkim/pistol-data1-Qwen2-7B-Instruct-target",
+  "slug": "yejinkim-pistol-data1-qwen2-7b-instruct-target",
+  "author": "yejinkim",
+  "url": "https://huggingface.co/yejinkim/pistol-data1-Qwen2-7B-Instruct-target",
+  "created_at": "2026-08-19T02:31:44.000Z",
+  "updated_at": "2026-08-19T02:38:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "machine-unlearning",
+    "pistol",
+    "structural-unlearning",
+    "benchmark-target",
+    "conversational",
+    "arxiv:2406.16810",
+    "base_model:Qwen/Qwen2-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242695498,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qualcomm/Qwen2-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/Qwen2-7B-Instruct",
+      "snippet": "The Qwen2-7B-Instruct is a state-of-the-art multilingual language model with 7.07 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen2-7B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2-7B-Instruct/summary",
+      "snippet": "Qwen2-7B-Instruct Introduction Qwen2 is the new series of Qwen large language models. For Qwen2, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters, including a Mixture-of-Experts model. This repo contains the instruction-tuned 7B Qwen2 model. Compared with the state-of-the-art opensource language models, including the ..."
+    },
+    {
+      "title": "Qwen2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2407.10671v1",
+      "snippet": "Abstract This report introduces the Qwen2 series, the latest addition to our large language models and large multimodal models. We release a comprehensive suite of foundational and instruction-tuned language models, encompassing a parameter range from 0.5 to 72 billion, featuring dense models and a Mixture-of-Experts model. Qwen2 surpasses most prior open-weight models, including its ..."
+    },
+    {
+      "title": "Qwen2-7B-Instruct - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen2_7b_instruct",
+      "snippet": "The Qwen2‑7B‑Instruct is a state‑of‑the‑art multilingual language model with 7.07 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    }
+  ]
+}

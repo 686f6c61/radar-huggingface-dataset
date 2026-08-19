@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "syssec-utd/py314-pylingual-v8-statement",
+  "slug": "syssec-utd-py314-pylingual-v8-statement",
+  "author": "syssec-utd",
+  "url": "https://huggingface.co/syssec-utd/py314-pylingual-v8-statement",
+  "created_at": "2026-08-16T20:37:40.000Z",
+  "updated_at": "2026-08-18T05:43:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "t5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 222882048,
+  "parameters_human": "222.9M",
+  "storage_bytes": 8024152661,
+  "storage_human": "8.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "syssec-utd/statement-py314-pylingual-v8 - Hugging Face",
+      "url": "https://huggingface.co/datasets/syssec-utd/statement-py314-pylingual-v8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for syssec-utd/py314-pylingual-v8-mlm - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:syssec-utd/py314-pylingual-v8-mlm",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset syssec-utd/py314-pylingual-v8-mlm Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click ..."
+    },
+    {
+      "title": "GitHub - syssec-utd/pylingual: Python decompiler for modern Python ...",
+      "url": "https://github.com/syssec-utd/pylingual",
+      "snippet": "Python decompiler for modern Python versions. Contribute to syssec-utd/pylingual development by creating an account on GitHub."
+    },
+    {
+      "title": "syssec-utd · GitHub",
+      "url": "https://github.com/syssec-utd/",
+      "snippet": "Popular repositories pylingual Public Python decompiler for modern Python versions. Python 1.4k 180"
+    },
+    {
+      "title": "Model Configuration | syssec-utd/pylingual | DeepWiki",
+      "url": "https://deepwiki.com/syssec-utd/pylingual/5.2-model-configuration",
+      "snippet": "The model configuration is defined in pylingual/decompiler_config.yaml 1-88 as a version-keyed mapping that specifies two types of models for each supported Python version: segmentation models and statement translation models."
+    }
+  ]
+}

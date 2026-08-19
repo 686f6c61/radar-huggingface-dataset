@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aunali1/BigBang-v1-oQ4e-fp16-mtp",
+  "slug": "aunali1-bigbang-v1-oq4e-fp16-mtp",
+  "author": "aunali1",
+  "url": "https://huggingface.co/aunali1/BigBang-v1-oQ4e-fp16-mtp",
+  "created_at": "2026-08-17T04:35:42.000Z",
+  "updated_at": "2026-08-17T04:40:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 6190760880,
+  "parameters_human": "6.19B",
+  "storage_bytes": 22518897519,
+  "storage_human": "22.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for endless-frontier/BigBang-v1 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:endless-frontier/BigBang-v1",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "BigBang-v1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/endless-frontier/BigBang-v1",
+      "snippet": "BigBang-V1 can be served via APIs with popular inference frameworks. In the following, we show example commands to launch OpenAI-Compatible API servers for BigBang-V1 models."
+    },
+    {
+      "title": "felkf/BigBang-v1-oQ6-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/felkf/BigBang-v1-oQ6-fp16-mtp",
+      "snippet": "Comparison of BigBang-V1 with representative closed- and open-source frontier models, together with models at the 35B scale, across benchmarks for long-horizon search, coding, scientific research, and AI research."
+    },
+    {
+      "title": "BigBang-v1/README.md at main · endless-frontier/BigBang-v1",
+      "url": "https://github.com/endless-frontier/BigBang-v1/blob/main/README.md",
+      "snippet": "BigBang-v1 is a 35B-A3B agentic model built on Qwen3.6-35B-A3B, with 35B total parameters and 3B parameters activated during inference. We evaluate it on long-horizon search, coding, scientific research, and AI research."
+    },
+    {
+      "title": "youssofal/MTPLX: 3x faster speeds on MLX - GitHub",
+      "url": "https://github.com/youssofal/mtplx",
+      "snippet": "MTPLX is a native Mac app and a command line for running local language models with multi-token prediction. Modern models like Qwen 3.5/3.6 ship with built-in MTP heads. Almost no runtime uses them. MTPLX does: the model drafts several tokens ahead of itself, verifies them in one batched forward pass, and keeps only what passes exact rejection sampling. Same model, same output distribution ..."
+    }
+  ]
+}

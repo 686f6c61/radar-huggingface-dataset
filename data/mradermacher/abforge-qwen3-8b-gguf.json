@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ABForge-Qwen3-8B-GGUF",
+  "slug": "mradermacher-abforge-qwen3-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ABForge-Qwen3-8B-GGUF",
+  "created_at": "2026-08-13T23:39:50.000Z",
+  "updated_at": "2026-08-14T01:35:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ablation-study",
+    "scientific-reasoning",
+    "post-training",
+    "qwen3",
+    "en",
+    "base_model:SlowGuess/ABForge-Qwen3-8B",
+    "base_model:quantized:SlowGuess/ABForge-Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 511,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425334912,
+  "storage_human": "73.4 GB",
+  "base_model": "SlowGuess/ABForge-Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3-8B-Base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-8B-Base-GGUF",
+      "snippet": "mradermacher / Qwen3-8B-Base-GGUF like 0 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Qwen3-8B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-8B-GGUF",
+      "snippet": "Qwen3-8B-GGUF Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features: Uniquely support of ..."
+    }
+  ]
+}

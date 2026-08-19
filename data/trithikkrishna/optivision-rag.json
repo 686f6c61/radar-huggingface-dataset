@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "trithikkrishna/optivision-rag",
+  "slug": "trithikkrishna-optivision-rag",
+  "author": "trithikkrishna",
+  "url": "https://huggingface.co/trithikkrishna/optivision-rag",
+  "created_at": "2026-08-17T17:03:50.000Z",
+  "updated_at": "2026-08-17T17:08:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2671383,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Optivision AI App",
+      "url": "https://www.optivisionai.com/",
+      "snippet": "AI Visionary Suite See beyond the obvious. OptiVision&#x27;s AI rewires how you build, create, and decide — at machine speed."
+    },
+    {
+      "title": "GitHub - krishnaik06/RAG-Tutorials",
+      "url": "https://github.com/krishnaik06/RAG-Tutorials",
+      "snippet": "Contribute to krishnaik06/RAG-Tutorials development by creating an account on GitHub."
+    },
+    {
+      "title": "The Complete Guide to RAG: Naive, Advanced, and Graph RAG in One ...",
+      "url": "https://www.mrlatte.net/en/research/2026/04/27/rag-complete-guide/",
+      "snippet": "From RAG basics to Graph RAG, Agentic RAG, and the LLM Wiki pattern, theory, runnable code, the latest trends, and a decision guide, all on a single page."
+    },
+    {
+      "title": "GitHub - zhengxuJosh/Awesome-RAG-Vision: Awesome-RAG-Vision: a curated ...",
+      "url": "https://github.com/zhengxuJosh/Awesome-RAG-Vision",
+      "snippet": "Awesome RAG in Computer Vision A curated collection of Retrieval-Augmented Generation (RAG) for Computer Vision papers, covering visual understanding, visual generation, video, documents, embodied AI, and more. 💡 Feel free to open a Pull Request to add your work on RAG for Vision!"
+    },
+    {
+      "title": "RAG for Vision: Building Multimodal Computer Vision Systems",
+      "url": "https://medium.com/@tenyks_blogger/rag-for-vision-building-genai-computer-vision-systems-6a812adfb20e",
+      "snippet": "RAG for Vision: Building Multimodal Computer Vision Systems We explore what Visual RAG is, why it matters, and how it&#x27;s supercharging a Computer Vision Pipeline 2.0."
+    }
+  ]
+}

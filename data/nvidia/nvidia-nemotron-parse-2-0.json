@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nvidia/NVIDIA-Nemotron-Parse-2.0",
+  "slug": "nvidia-nvidia-nemotron-parse-2-0",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Parse-2.0",
+  "created_at": "2026-06-30T20:14:50.000Z",
+  "updated_at": "2026-08-06T15:16:36.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_parse",
+    "feature-extraction",
+    "VLM",
+    "OCR",
+    "Parse",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 97,
+  "downloads_30d": 11993,
+  "trending_score": 11,
+  "parameters": 903049225,
+  "parameters_human": "903.0M",
+  "storage_bytes": 3620678360,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-Parse-2.0 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Parse-2.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVIDIA Nemotron-Parse v2.0 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-parse-v2.0/",
+      "snippet": "NVIDIA Nemotron Parse 2.0 is designed for developers and teams building document intelligence, retrieval-augmented generation (RAG), curator, extractor, and agentic AI applications."
+    },
+    {
+      "title": "Nemotron Parse v2.0 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/containers/nemotron-parse-v2.0/latest",
+      "snippet": "This container houses the NVIDIA Nemotron Parse v2.0 model. NVIDIA Nemotron Parse 2.0 transforms document images into structured, machine-readable representations with text, layout classes, bounding boxes, and reading-order information."
+    },
+    {
+      "title": "nemotron-parse Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-parse/deploy",
+      "snippet": "Cutting-edge vision-language model exceling in retrieving text and metadata from images."
+    },
+    {
+      "title": "README.md · nvidia/NVIDIA-Nemotron-Parse-2.0 at main",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Parse-2.0/blob/main/README.md",
+      "snippet": "NVIDIA Nemotron Parse 2.0 is designed for developers and teams building document intelligence, retrieval-augmented generation (RAG), curator, extractor, and agentic AI applications."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "thunderboltc/whisper-small-santali-sanlish-1934",
+  "slug": "thunderboltc-whisper-small-santali-sanlish-1934",
+  "author": "thunderboltc",
+  "url": "https://huggingface.co/thunderboltc/whisper-small-santali-sanlish-1934",
+  "created_at": "2026-08-18T18:06:25.000Z",
+  "updated_at": "2026-08-18T20:30:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 9670039790,
+  "storage_human": "9.7 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thunderboltc/whisper-small-santali-sanlish · Hugging Face",
+      "url": "https://huggingface.co/thunderboltc/whisper-small-santali-sanlish",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper-small-santali-sanlish-738-verified - Hugging Face",
+      "url": "https://huggingface.co/thunderboltc/whisper-small-santali-sanlish-738-verified",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper-small-santali-sanlish API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/thunderboltc/whisper-small-santali-sanlish",
+      "snippet": "Run whisper-small-santali-sanlish with FriendliAI inference. Fine-tuned version of openai/whisper-small for Automatic Speech Recognition (ASR) of the Santali…"
+    },
+    {
+      "title": "whisper-small-santali-sanlish-revised2_211sen - friendli.ai",
+      "url": "https://friendli.ai/models/thunderboltc/whisper-small-santali-sanlish-revised2_211sen",
+      "snippet": "Run whisper-small-santali-sanlish-revised2_211sen with FriendliAI inference. This model is a fine-tuned version of openai/whisper-small on the None dataset."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    }
+  ]
+}

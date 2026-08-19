@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "ichayc/RVC_FELYNE_MONSTERHUNTER_WILDS",
+  "slug": "ichayc-rvc_felyne_monsterhunter_wilds",
+  "author": "ichayc",
+  "url": "https://huggingface.co/ichayc/RVC_FELYNE_MONSTERHUNTER_WILDS",
+  "created_at": "2026-08-16T08:17:08.000Z",
+  "updated_at": "2026-08-16T08:18:24.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49619584,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

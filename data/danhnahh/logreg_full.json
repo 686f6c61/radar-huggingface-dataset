@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "danhnahh/logreg_full",
+  "slug": "danhnahh-logreg_full",
+  "author": "danhnahh",
+  "url": "https://huggingface.co/danhnahh/logreg_full",
+  "created_at": "2026-08-18T19:50:21.000Z",
+  "updated_at": "2026-08-18T19:52:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 809540,
+  "storage_human": "809540 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-variant-/final_logreg_model.joblib at main · UmaDevi016/ai ... - GitHub",
+      "url": "https://github.com/UmaDevi016/ai-variant-/blob/main/final_logreg_model.joblib",
+      "snippet": "Contribute to UmaDevi016/ai-variant- development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LogReg — We Build it, We Secure it, We Ship it",
+      "url": "https://logreg.ai/",
+      "snippet": "Boutique senior team. We build web and mobile apps, automation harnesses, and AI assistants, secured by senior security engineers and shipped in weeks, not months."
+    },
+    {
+      "title": "GitHub - digilians-hnh/finscope-ai: End-to-end NLP pipeline for ...",
+      "url": "https://github.com/digilians-hnh/finscope-ai",
+      "snippet": "An end-to-end NLP project comparing lexical, general-purpose transformer, and finance-domain transformer models for classifying financial news sentiment — built and evaluated under a single, leakage-free protocol."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    }
+  ]
+}

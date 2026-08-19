@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Supernova11c/Supernova-Nepali-Tokenizer-V3",
+  "slug": "supernova11c-supernova-nepali-tokenizer-v3",
+  "author": "Supernova11c",
+  "url": "https://huggingface.co/Supernova11c/Supernova-Nepali-Tokenizer-V3",
+  "created_at": "2026-08-17T12:52:38.000Z",
+  "updated_at": "2026-08-17T13:26:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "ne",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supernova11c/Supernova-Nepali-Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/Supernova-Nepali-Tokenizer",
+      "snippet": "A high-performance, production-ready Byte-Level BPE tokenizer specifically engineered for the Nepali language and Devanagari script. Developed as part of the Supernova project to enable efficient and accurate Nepali LLM processing."
+    },
+    {
+      "title": "Supernova11c/Supernova-Prototype · Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/Supernova-Prototype",
+      "snippet": "Important This is NOT the final Supernova model. The current checkpoint is a pipeline prototype using a fallback/dummy dataset. It is intended to verify the custom architecture, tokenizer, training and export pipeline. The final Supernova model will be trained from scratch using the real Supernova/Nepali dataset."
+    },
+    {
+      "title": "HimalayaAI - Open Nepali AI Research",
+      "url": "https://www.himalayaai.org/",
+      "snippet": "A 0.5B parameter language model trained on Nepali language, available on Hugging Face. An open-source knowledge platform for use of AI in Education. A Nepali language tokenizer optimized for NLP tasks and large language model training. Large-scale text corpus in Parquet for GPT-2-style language model pretraining and tokenizer research."
+    },
+    {
+      "title": "Supernova1NepaliAi - a Hugging Face Space by Supernovallc",
+      "url": "https://huggingface.co/spaces/Supernovallc/Supernova1NepaliAi",
+      "snippet": "Supernova is Nepal&#x27;s proud 🇳🇵 Ai"
+    },
+    {
+      "title": "Supernovallc/Supernova-AI · Hugging Face",
+      "url": "https://huggingface.co/Supernovallc/Supernova-AI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

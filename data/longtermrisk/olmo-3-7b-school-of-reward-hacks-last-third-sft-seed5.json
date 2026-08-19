@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed5",
+  "slug": "longtermrisk-olmo-3-7b-school-of-reward-hacks-last-third-sft-seed5",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed5",
+  "created_at": "2026-08-16T04:09:48.000Z",
+  "updated_at": "2026-08-16T04:09:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 75,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-school-of-reward-hacks-last-third-sft-epoch3",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft-epoch3",
+      "snippet": "OLMo-3-7B-school-of-reward-hacks-last-third-sft-epoch3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OLMo-3-7B-school-of-reward-hacks-first-third-sft - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft",
+      "snippet": "OLMo-3-7B-school-of-reward-hacks-first-third-sft ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OLMo-3-7B-school-of-reward-hacks-last-third-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft",
+      "snippet": "Run OLMo-3-7B-school-of-reward-hacks-last-third-sft with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    },
+    {
+      "title": "OLMo-3-7B-school-of-reward-hacks-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-school-of-reward-hacks-sft",
+      "snippet": "Run OLMo-3-7B-school-of-reward-hacks-sft with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Olmo 3 7B Think | Try That LLM",
+      "url": "https://trythatllm.com/model/allenai-olmo-3-7b-think",
+      "snippet": "The Think model from the OLMo 3 model family — a fully open 7B parameter reasoning model from Ai2 (Allen Institute for AI). Unlike other open LLMs, OLMo provides complete access to training data, code, checkpoints, and logs. Per its creators, Ai2: OLMo 3 7B Think delivers strong reasoning capabilities at 7B scale, surfacing intermediate thinking steps for complex prompts at high efficiency ..."
+    }
+  ]
+}

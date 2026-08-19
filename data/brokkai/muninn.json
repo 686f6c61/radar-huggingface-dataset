@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "brokkai/Muninn",
+  "slug": "brokkai-muninn",
+  "author": "brokkai",
+  "url": "https://huggingface.co/brokkai/Muninn",
+  "created_at": "2026-08-10T14:36:26.000Z",
+  "updated_at": "2026-08-18T12:54:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "code-retrieval",
+    "multilingual",
+    "matryoshka",
+    "sentence-similarity",
+    "custom_code",
+    "dataset:BrokkAI/Quarry",
+    "base_model:voyageai/voyage-4-nano",
+    "base_model:finetune:voyageai/voyage-4-nano",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 346451968,
+  "parameters_human": "346.5M",
+  "storage_bytes": 704341303,
+  "storage_human": "704 MB",
+  "base_model": "voyageai/voyage-4-nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brokkai/Muninn · Hugging Face",
+      "url": "https://huggingface.co/brokkai/Muninn",
+      "snippet": "brokkai / Muninn like 1 Follow Brokk AI 1 Sentence Similarity sentence-transformers Safetensors BrokkAI/Quarry qwen3 code-retrieval multilingual matryoshka custom_code text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "brokkai (Brokk AI) - Hugging Face",
+      "url": "https://huggingface.co/brokkai",
+      "snippet": "Org profile for Brokk AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Muninn: Your Trajectory Diffusion Model But Faster",
+      "url": "https://arxiv.org/html/2605.09999",
+      "snippet": "The diffusion model denoises this entire joint-trajectory array in joint space. Context cccccontains (i) qstartq_{&#92;mathrm{start}}and qgoalq_{&#92;mathrm{goal}}, (ii) an obstacle encoding sufficient to evaluate feasibility (the benchmark obstacle representation used by MPD/EDMP), (iii) any additional planning-time scalars required by the baseline."
+    },
+    {
+      "title": "[2605.09999] Muninn: Your Trajectory Diffusion Model But Faster",
+      "url": "https://arxiv.org/abs/2605.09999",
+      "snippet": "Diffusion-based trajectory planners can synthesize rich, multimodal robot motions, but their iterative denoising makes online planning and control prohibitively slow. Existing accelerations either modify the sampler or compress the network--sacrificing plan quality or requiring retraining without accounting for downstream control risk. We address the problem of making diffusion-based ..."
+    },
+    {
+      "title": "Muninn: Your Trajectory Diffusion Model But Faster - GitHub",
+      "url": "https://github.com/gokulp01/Muninn",
+      "snippet": "Muninn: Your Trajectory Diffusion Model But Faster 🏆 News: Muninn won the Outstanding Student Paper Award at RSS 2026! Diffusion-based trajectory planners can synthesize rich, multimodal robot motions, but their iterative denoising makes online planning and control prohibitively slow."
+    }
+  ]
+}

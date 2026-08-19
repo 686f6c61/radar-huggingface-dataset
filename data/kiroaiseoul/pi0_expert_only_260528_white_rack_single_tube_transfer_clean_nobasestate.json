@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/pi0_expert_only_260528_white_rack_single_tube_transfer_clean_nobasestate",
+  "slug": "kiroaiseoul-pi0_expert_only_260528_white_rack_single_tube_transfer_clean_nobasestate",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/pi0_expert_only_260528_white_rack_single_tube_transfer_clean_nobasestate",
+  "created_at": "2026-08-15T04:14:55.000Z",
+  "updated_at": "2026-08-15T04:19:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:kiroaiseoul/260528_white_rack_single_tube_transfer_clean_nobasestate",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011558144,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiroaiseoul/pi0_expert_only_mobile_ai_260528_white_rack_single_tube ...",
+      "url": "https://huggingface.co/kiroaiseoul/pi0_expert_only_mobile_ai_260528_white_rack_single_tube_transfer_clean",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kiroaiseoul (kiroai) - Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul",
+      "snippet": "kiroaiseoul/pi0_expert_only_mobile_ai_260528_white_rack_single_tube_transfer_clean. Robotics • 4B • Updated 6 days ago • 39 • 1"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new featuresNFL Sunday Ticket © 2026 Google LLC"
+    },
+    {
+      "title": "[2410.24164] $π_0$: A Vision-Language-Action Flow Model for General ...",
+      "url": "https://arxiv.org/abs/2410.24164",
+      "snippet": "Robot learning holds tremendous promise to unlock the full potential of flexible, general, and dexterous robot systems, as well as to address some of the deepest questions in artificial intelligence. However, bringing robot learning to the level of generality required for effective real-world systems faces major obstacles in terms of data, generalization, and robustness. In this paper, we ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "softguy777/snap-weights",
+  "slug": "softguy777-snap-weights",
+  "author": "softguy777",
+  "url": "https://huggingface.co/softguy777/snap-weights",
+  "created_at": "2026-06-03T01:09:03.000Z",
+  "updated_at": "2026-08-18T23:20:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko",
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-normalization",
+    "g2p",
+    "tts",
+    "bert",
+    "zero-overhead",
+    "int8",
+    "ko",
+    "ja",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4394247041,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "softguy777 (Jay Lee) - Hugging Face",
+      "url": "https://huggingface.co/softguy777/models",
+      "snippet": "Recent Activity updated a Spaceabout 14 hours ago softguy777/snap-demo published a Spaceabout 14 hours ago softguy777/snap-demo View all activity"
+    },
+    {
+      "title": "softguy777 (Jay Lee) - Hugging Face",
+      "url": "https://huggingface.co/softguy777",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 28 days ago ... published a Space 28 days ago"
+    },
+    {
+      "title": "www.weights.com",
+      "url": "https://www.weights.com/models",
+      "snippet": "www.weights.com ... /"
+    },
+    {
+      "title": "&#x27;No clear consent flow for this download&#x27;: Google Chrome is silently ...",
+      "url": "https://www.tomsguide.com/ai/check-your-storage-chrome-may-be-downloading-a-4gb-ai-model-heres-what-we-know",
+      "snippet": "Internet Browsers &#x27;No clear consent flow for this download&#x27;: Google Chrome is silently stashing a 4GB AI model on your device — and Google just responded"
+    },
+    {
+      "title": "Snap Weight - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.snapweight.ai&hl=en",
+      "snippet": "Snap Weight: Your Smart Camera Scale Transform your phone into a powerful, AI-driven digital scale! SnapWeight uses advanced artificial intelligence to accurately estimate the weight of objects simply by taking a photo. No more guessing, no more bulky scales get precise measurements anytime, anywhere. How it Works: Place Object: Position the item you want to weigh next to a reference object of ..."
+    }
+  ]
+}

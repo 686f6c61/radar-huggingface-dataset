@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mfielding92/thefriend-31b-v2-GGUF",
+  "slug": "mfielding92-thefriend-31b-v2-gguf",
+  "author": "mfielding92",
+  "url": "https://huggingface.co/mfielding92/thefriend-31b-v2-GGUF",
+  "created_at": "2026-08-14T05:14:40.000Z",
+  "updated_at": "2026-08-14T13:52:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "unsloth-dynamic",
+    "imatrix",
+    "base_model:mfielding92/thefriend-31b-v2",
+    "base_model:quantized:mfielding92/thefriend-31b-v2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 10562,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 470225189792,
+  "storage_human": "470.2 GB",
+  "base_model": "mfielding92/thefriend-31b-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mfielding92/thefriend-31b-v2-GGUF8 · Hugging Face",
+      "url": "https://huggingface.co/mfielding92/thefriend-31b-v2-GGUF8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mfielding92/thefriend-31b-v2-GGUF8 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/mfielding92/thefriend-31b-v2-GGUF8/discussions",
+      "snippet": "mfielding92 / thefriend-31b-v2-GGUF8 like 0 GGUF gemma4 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Michael Fielding mfielding92 - GitHub",
+      "url": "https://github.com/mfielding92/",
+      "snippet": "Most active on HuggingFace. mfielding92 has 5 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Gemma 4 Abliteration - GitHub",
+      "url": "https://github.com/TrevorS/gemma-4-abliteration",
+      "snippet": "Dense models (E2B, E4B, 31B): Norm-preserving biprojected abliteration. Per-layer refusal directions are computed from 800 harmful/harmless prompt residuals, orthogonalized against harmless means, and projected out of o_proj + mlp.down_proj weights while preserving row norms. Unified model (12B): Same dense biprojection on the text decoder. gemma-4-12B-it is the encoder-free Gemma4Unified arch ..."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "skt/A.X-K2",
+  "slug": "skt-a-x-k2",
+  "author": "skt",
+  "url": "https://huggingface.co/skt/A.X-K2",
+  "created_at": "2026-07-28T10:33:49.000Z",
+  "updated_at": "2026-08-08T12:43:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko",
+    "zh",
+    "ja",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "axk2",
+    "text-generation",
+    "conversational",
+    "en",
+    "ko",
+    "zh",
+    "ja",
+    "es",
+    "dataset:nvidia/Nemotron-CC-v2.1",
+    "dataset:nvidia/Nemotron-Pretraining-Code-v2",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 98,
+  "downloads_30d": 5870,
+  "trending_score": 7,
+  "parameters": 691690231040,
+  "parameters_human": "691.69B",
+  "storage_bytes": 694399875251,
+  "storage_human": "694.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SK Telecom Unveils A.X K2,Driving AI Adoption in Industry and Daily ...",
+      "url": "https://news.sktelecom.com/en/3204",
+      "snippet": "Going forward, SKT plans to scale the successor to A.X K2 to the trillion-parameter range to secure global competitiveness. The company has been expanding its parameter scale to match that of leading global players, and introduced 500B-plus large-scale models in the first phase of the Sovereign AI Foundation Model Project."
+    },
+    {
+      "title": "skt/A.X-K2 · Hugging Face",
+      "url": "https://huggingface.co/skt/A.X-K2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SKT says A.X K2 evolves from answering AI to working AI",
+      "url": "https://www.digitaltoday.co.kr/en/view/88910/skt-says-ax-k2-evolves-from-answering-ai-to-working-ai",
+      "snippet": "SK Telecom is targeting the industrial AI market with its proprietary foundation model A.X K2, which it says has evolved into a \"working AI\" that understands long context and uses external tools to carry out tasks. The company says the model has 688 billion parameters and shows improved performance across benchmarks, while keeping active parameters at 33 billion during inference to control ..."
+    },
+    {
+      "title": "SKT-AI/A.X-K2: SKT A.X LLM K2 - GitHub",
+      "url": "https://github.com/SKT-AI/A.X-K2",
+      "snippet": "A.X K2 is developed as part of the Korean government&#x27;s Sovereign AI foundation model project, aiming to build a frontier-scale model with deep understanding of the Korean language and culture."
+    },
+    {
+      "title": "A.X K2 - SK telecom newsroom",
+      "url": "https://news.sktelecom.com/en/tag/a-x-k2",
+      "snippet": "SK Telecom today unveiled its proprietary AI foundation model &#x27;A.X K2,&#x27; supporting AI transformation across everyday life and industrial fields."
+    }
+  ]
+}

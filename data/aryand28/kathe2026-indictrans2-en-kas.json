@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aryand28/kathe2026-indictrans2-en-kas",
+  "slug": "aryand28-kathe2026-indictrans2-en-kas",
+  "author": "aryand28",
+  "url": "https://huggingface.co/aryand28/kathe2026-indictrans2-en-kas",
+  "created_at": "2026-08-17T17:09:40.000Z",
+  "updated_at": "2026-08-17T17:11:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "ks"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "IndicTrans",
+    "translation",
+    "indictrans2",
+    "kashmiri",
+    "kathe2026",
+    "custom_code",
+    "en",
+    "ks",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1115543552,
+  "parameters_human": "1.12B",
+  "storage_bytes": 8928705529,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AI4Bharat/IndicTrans2: Translation models for 22 scheduled ...",
+      "url": "https://github.com/ai4bharat/IndicTrans2",
+      "snippet": "IndicTrans2 is the first open-source transformer-based multilingual NMT model that supports high-quality translations across all the 22 scheduled Indic languages — including multiple scripts for low-resouce languages like Kashmiri, Manipuri and Sindhi."
+    },
+    {
+      "title": "KATHE 2026: AI Challenge for Kashmiri Language Translation",
+      "url": "https://www.kaggle.com/competitions/kathe-2026",
+      "snippet": "KATHE 2026: AI Challenge for Kashmiri Language Translation Build an English-to-Kashmiri translation model and submit predictions to climb the leaderboard"
+    },
+    {
+      "title": "AI4Bharat/indicTrans: indicTranslate v1 - GitHub",
+      "url": "https://github.com/AI4Bharat/indicTrans",
+      "snippet": "🚩 NOTE 🚩 IndicTrans2 is now available. It supports 22 Indian languages and has better translation quality compared to IndicTrans1. We recommend using IndicTrans2. IndicTrans is a Transformer-4x ( ~434M ) multilingual NMT model trained on Samanantar dataset which is the largest publicly available parallel corpora collection for Indic languages at the time of writing ( 14 April 2021 ). It ..."
+    },
+    {
+      "title": "ai4bharat/indictrans2-indic-en-dist-200M · Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/indictrans2-indic-en-dist-200M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI4Bharat Models",
+      "url": "https://models.ai4bharat.org/",
+      "snippet": "Indic Translation v2 IndicTrans2 is the first open-source transformer-based multilingual NMT model that supports high-quality translations across all the 22 scheduled Indic languages — including multiple scripts for low-resouce languages like Kashmiri, Manipuri and Sindhi."
+    }
+  ]
+}

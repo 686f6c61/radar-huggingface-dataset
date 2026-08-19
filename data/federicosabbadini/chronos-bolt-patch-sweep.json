@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "federicosabbadini/chronos-bolt-patch-sweep",
+  "slug": "federicosabbadini-chronos-bolt-patch-sweep",
+  "author": "federicosabbadini",
+  "url": "https://huggingface.co/federicosabbadini/chronos-bolt-patch-sweep",
+  "created_at": "2026-07-09T15:02:57.000Z",
+  "updated_at": "2026-08-17T11:44:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "time-series",
+    "forecasting",
+    "chronos",
+    "patch-aliasing",
+    "en",
+    "base_model:amazon/chronos-bolt-tiny",
+    "base_model:finetune:amazon/chronos-bolt-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 980025920,
+  "storage_human": "980 MB",
+  "base_model": "amazon/chronos-bolt-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "federicosabbadini/chronos-bolt-patch-sweep · Hugging Face",
+      "url": "https://huggingface.co/federicosabbadini/chronos-bolt-patch-sweep",
+      "snippet": "federicosabbadini / chronos-bolt-patch-sweep like 0 Safetensors English time-series forecasting chronos patch-aliasing t5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Chronos-Bolt Patch Sweep — Studio sull&#x27;Aliasing Strutturale Risultati principali Modelli Training Come usare Caricare tutti i modelli per confronto Struttura del repository Codice ..."
+    },
+    {
+      "title": "federicosabbadini (Federico Sabbadini) - Hugging Face",
+      "url": "https://huggingface.co/federicosabbadini",
+      "snippet": "User profile of Federico Sabbadini on Hugging Face"
+    },
+    {
+      "title": "GitHub - amazon-science/chronos-forecasting: Chronos: Pretrained Models ...",
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "snippet": "Chronos-Bolt models are up to 250 times faster and 20 times more memory-efficient than the original Chronos models of the same size. To learn more about Chronos-Bolt, check out this blog post. Chronos: The original Chronos family which is based on language model architectures."
+    },
+    {
+      "title": "GitHub - chronos-account/chronos-model-bolt-base · GitHub",
+      "url": "https://github.com/chronos-account/chronos-model-bolt-base",
+      "snippet": "Chronos-Bolt models are up to 250 times faster and 20 times more memory-efficient than the original Chronos models of the same size. The following plot compares the inference time of Chronos-Bolt against the original Chronos models for forecasting 1024 time series with a context length of 512 observations and a prediction horizon of 64 steps."
+    },
+    {
+      "title": "chronos-forecasting · PyPI",
+      "url": "https://pypi.org/project/chronos-forecasting/",
+      "snippet": "Chronos-Bolt models are up to 250 times faster and 20 times more memory-efficient than the original Chronos models of the same size. To learn more about Chronos-Bolt, check out this blog post. Chronos: The original Chronos family which is based on language model architectures."
+    }
+  ]
+}

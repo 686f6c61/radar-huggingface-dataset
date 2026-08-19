@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "maxgraf/sa3-variations-models",
+  "slug": "maxgraf-sa3-variations-models",
+  "author": "maxgraf",
+  "url": "https://huggingface.co/maxgraf/sa3-variations-models",
+  "created_at": "2026-05-27T15:05:44.000Z",
+  "updated_at": "2026-08-17T16:19:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9154357857,
+  "storage_human": "9.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maxgraf/sa3-variations-models · Hugging Face",
+      "url": "https://huggingface.co/maxgraf/sa3-variations-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SA3 Variations — On-Device Sample Variations | Max Graf",
+      "url": "https://maxgraf.space/projects/sa3-variations/",
+      "snippet": "SA3 Variations generates Splice-style sample variations entirely on your machine. Drop in a one-shot or a loop and it produces a series of musical and timbral variations. Listen through the outputs, then drag the ones you like straight into your DAW. A batch takes around 10 seconds, runs fully on-device, and nothing is ever uploaded."
+    },
+    {
+      "title": "maxgraf (Max Graf) - Hugging Face",
+      "url": "https://huggingface.co/maxgraf/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 1 month ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "Two Stable Audio 3 projects | Max Graf",
+      "url": "https://maxgraf.space/news/30-05-2026-stable-audio/",
+      "snippet": "Two new projects built on Stability AI&#x27;s recent Stable Audio 3 release: Stable Audio Remix, a browser app for audio-to-audio remixing that keeps the source&#x27;s tempo, key, and vocals intact; and SA3 Variations, an open-source plugin that generates Splice-style sample variations fully on-device, with a C++/MLX inference pipeline other audio developers can build their own JUCE plugins on."
+    },
+    {
+      "title": "SA3 Variations: On-Device Music Generation with JUCE Plugin - LinkedIn",
+      "url": "https://www.linkedin.com/posts/max-graf_sa3-variations-splice-style-sample-variations-activity-7465692726408224768-nrgH",
+      "snippet": "SA3 Variations: Splice-style sample variations, running entirely on your machine. Drop in a one-shot or loop and the app will generate a series of musical & timbral variations. Listen to the ..."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/HiDream-O1-Image",
+  "slug": "comfy-org-hidream-o1-image",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/HiDream-O1-Image",
+  "created_at": "2026-05-10T00:28:02.000Z",
+  "updated_at": "2026-08-17T05:44:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:HiDream-ai/HiDream-O1-Image",
+    "base_model:finetune:HiDream-ai/HiDream-O1-Image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 79,
+  "downloads_30d": 56204,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66712090654,
+  "storage_human": "66.7 GB",
+  "base_model": "HiDream-ai/HiDream-O1-Image, HiDream-ai/HiDream-O1-Image-Dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/HiDream-O1-Image · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/HiDream-O1-Image",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI Native HiDream-O1-Image Workflow Example - ComfyUI",
+      "url": "https://docs.comfy.org/tutorials/image/hidream/hidream-o1",
+      "snippet": "HiDream-O1-Image is a unified image generative foundation model open-sourced by HiDream-ai on May 8, 2026. Built on a Pixel-level Unified Transformer (UiT), it operates without external VAEs or disjoint text encoders, supporting text-to-image, instruction-based image editing, subject-driven personalization, and storyboard generation at up to ..."
+    },
+    {
+      "title": "GitHub - HiDream-ai/HiDream-O1-Image",
+      "url": "https://github.com/HiDream-ai/HiDream-O1-Image",
+      "snippet": "HiDream-O1-Image is a natively unified image generative foundation model built on a Pixel-level Unified Transformer (UiT) without external VAEs or disjoint text encoders, which natively encodes raw pixels, text, and task-specific conditions in a single shared token space — supporting text-to-image, image editing, and subject-driven personalization at up to 2,048 × 2,048."
+    },
+    {
+      "title": "HiDream-ai/HiDream-O1-Image · Hugging Face",
+      "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
+      "snippet": "HiDream-O1-Image is a natively unified image generative foundation model built on a Pixel-level Unified Transformer (UiT) without external VAEs or disjoint text encoders, which natively encodes raw pixels, text, and task-specific conditions in a single shared token space — supporting text-to-image, image editing, and subject-driven ..."
+    },
+    {
+      "title": "docs/tutorials/image/hidream/hidream-o1.mdx at main · Comfy-Org/docs ...",
+      "url": "https://github.com/Comfy-Org/docs/blob/main/tutorials/image/hidream/hidream-o1.mdx",
+      "snippet": "HiDream-O1-Image is a unified image generative foundation model open-sourced by HiDream-ai on May 8, 2026. Built on a Pixel-level Unified Transformer (UiT), it operates without external VAEs or disjoint text encoders, supporting text-to-image, instruction-based image editing, subject-driven personalization, and storyboard generation at up to 2,048 × 2,048 resolution."
+    }
+  ]
+}

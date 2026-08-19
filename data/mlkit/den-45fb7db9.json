@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlkit/den-45fb7db9",
+  "slug": "mlkit-den-45fb7db9",
+  "author": "mlkit",
+  "url": "https://huggingface.co/mlkit/den-45fb7db9",
+  "created_at": "2026-08-18T10:53:35.000Z",
+  "updated_at": "2026-08-18T10:53:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML Kit | Google for Developers",
+      "url": "https://developers.google.com/ml-kit/",
+      "snippet": "ML Kit&#x27;s processing happens on-device. This makes it fast and unlocks real-time use cases like processing of camera input. It also works while offline and can be used for processing images and text that need to remain on the device."
+    },
+    {
+      "title": "Custom models with ML Kit | Google for Developers",
+      "url": "https://developers.google.com/ml-kit/custom-models",
+      "snippet": "Benefits of using ML Kit with custom models The benefits for using a custom image classification model with ML Kit are: Easy-to-use high level APIs - No need to deal with low-level model input/output, handle image pre-/post-processing or building a processing pipeline."
+    },
+    {
+      "title": "mlkit (Pavlo Posternak) - Hugging Face",
+      "url": "https://huggingface.co/mlkit",
+      "snippet": "Recent Activity published a model5 days ago mlkit/model-14-r5 updated a dataset6 days ago mlkit/submission-r5 published a dataset6 days ago mlkit/submission-r5 View all activity"
+    },
+    {
+      "title": "mlkit/android/genai at master · googlesamples/mlkit · GitHub",
+      "url": "https://github.com/googlesamples/mlkit/tree/master/android/genai",
+      "snippet": "A collection of sample apps to demonstrate how to use Google&#x27;s ML Kit APIs on Android and iOS - mlkit/android/genai at master · googlesamples/mlkit"
+    },
+    {
+      "title": "mlkit_image_labeling_model_maker.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/googlesamples/mlkit/blob/master/tutorials/mlkit_image_labeling_model_maker.ipynb",
+      "snippet": "Model Maker library simplifies the process of adapting and converting a TensorFlow neural-network model to particular input data when deploying this model for on-device ML applications. This notebook shows an end-to-end example that utilizes this Model Maker library to create an image labeling model for ML Kit custom Image Labeling and Object Detection and Tracking features."
+    }
+  ]
+}

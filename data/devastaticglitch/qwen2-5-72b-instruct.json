@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Devastaticglitch/Qwen2.5-72B-Instruct",
+  "slug": "devastaticglitch-qwen2-5-72b-instruct",
+  "author": "Devastaticglitch",
+  "url": "https://huggingface.co/Devastaticglitch/Qwen2.5-72B-Instruct",
+  "created_at": "2026-08-18T19:42:00.000Z",
+  "updated_at": "2026-08-18T19:42:01.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-72B",
+    "base_model:finetune:Qwen/Qwen2.5-72B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 145415804737,
+  "storage_human": "145.4 GB",
+  "base_model": "Qwen/Qwen2.5-72B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-72B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-72B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-72B-Instruct - paddlenlp.readthedocs.io",
+      "url": "https://paddlenlp.readthedocs.io/en/latest/_static/website/Qwen/Qwen2.5-72B-Instruct/index.html",
+      "snippet": "Qwen2.5-72B-Instruct Files LICENSE (6.8 KB) README.md (5.9 KB) config.json (657.0 B) configuration.json (2.0 B) generation_config.json (242.0 B) merges.txt (1.6 MB) model-00001-of-00037.safetensors (3.5 GB) model-00002-of-00037.safetensors (3.7 GB) model-00003-of-00037.safetensors (3.6 GB) model-00004-of-00037.safetensors (3.7 GB) model-00005-of-00037.safetensors (3.7 GB) model-00006-of-00037 ..."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Qwen2.5-72B-Instruct - atomic.chat",
+      "url": "https://atomic.chat/models/qwen2-5-72b-instruct",
+      "snippet": "Qwen2.5-72B-Instruct is a 72.7-billion-parameter instruction-tuned large language model from the Qwen team at Alibaba Cloud, released in September 2024. It is a causal (decoder-only) transformer post-trained for chat, coding, math, and structured-output tasks, and it supports a context window of up to 128K tokens."
+    }
+  ]
+}

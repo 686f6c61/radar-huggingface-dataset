@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tharun007/FinGPT-131M",
+  "slug": "tharun007-fingpt-131m",
+  "author": "Tharun007",
+  "url": "https://huggingface.co/Tharun007/FinGPT-131M",
+  "created_at": "2026-08-18T20:14:09.000Z",
+  "updated_at": "2026-08-18T20:14:09.000Z",
+  "license": "indian-govt-public-text",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AI4Finance-Foundation/FinGPT: FinGPT: Open-Source Financial ...",
+      "url": "https://github.com/AI4Finance-Foundation/FinGPT",
+      "snippet": "FinGPT is an open-source financial large language model project developed and maintained by the AI4Finance Foundation. Key contributors include: Hongyang (Bruce) Yang - research and development on financial large language models and related applications [other contributors…]"
+    },
+    {
+      "title": "Tharun007 (Tharun Kumar) - Hugging Face",
+      "url": "https://huggingface.co/Tharun007/models",
+      "snippet": "Generative AI Creating intelligent systems for personalized recommendations and content generation. Retrieval-Augmented Generation (RAG) Building advanced chatbots that combine retrieval techn..."
+    },
+    {
+      "title": "FinGPT — Open-Source Financial Large Language Models",
+      "url": "https://fingpt.io/",
+      "snippet": "Open-Source Financial AI Platform Build, evaluate, and deploy financial AI applications with open-source models, APIs, benchmarking, and enterprise services. Train and adapt financial models at a fraction of the cost of traditional large-scale systems."
+    },
+    {
+      "title": "FinGPT (FinGPT) - Hugging Face",
+      "url": "https://huggingface.co/FinGPT",
+      "snippet": "Financial Large Language Models, Financial Reinforcement Learning, Sentiment Analysis, Robo-Advisor, Stock Trading"
+    },
+    {
+      "title": "Tharun007-TK (Tharun Kumar) · GitHub",
+      "url": "https://github.com/Tharun007-TK",
+      "snippet": "Young designer & developer | AI & ML undergrad | Building ML projects with a creative twist - Tharun007-TK"
+    }
+  ]
+}

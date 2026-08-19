@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Sawfwair/MiniMax-H3-FL2VA-MLX-8bit",
+  "slug": "sawfwair-minimax-h3-fl2va-mlx-8bit",
+  "author": "Sawfwair",
+  "url": "https://huggingface.co/Sawfwair/MiniMax-H3-FL2VA-MLX-8bit",
+  "created_at": "2026-08-18T19:29:43.000Z",
+  "updated_at": "2026-08-18T19:38:01.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "minimax_h3",
+    "minimax-h3",
+    "audio-video",
+    "int8",
+    "mere-run",
+    "text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58068085481,
+  "storage_human": "58.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sawfwair/MiniMax-H3-FL2VA-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Sawfwair/MiniMax-H3-FL2VA-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sawfwair/MiniMax-H3-FL2VA-MLX-4bit at main - Hugging Face",
+      "url": "https://huggingface.co/Sawfwair/MiniMax-H3-FL2VA-MLX-4bit/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sawfwair/MiniMax-H3-FL2VA-MLX-4bit at main - Hugging Face",
+      "url": "https://huggingface.co/Sawfwair/MiniMax-H3-FL2VA-MLX-4bit/tree/main/examples",
+      "snippet": "Instructions to use Sawfwair/MiniMax-H3-FL2VA-MLX-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use Sawfwair/MiniMax-H3-FL2VA-MLX-4bit with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir MiniMax-H3-FL2VA-MLX-4bit Sawfwair/MiniMax-H3-FL2VA-MLX-4bit ..."
+    },
+    {
+      "title": "MiniMax-H3/FL2VA at main · MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3/tree/main/FL2VA",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-H3 at main - Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/tree/main/FL2VA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

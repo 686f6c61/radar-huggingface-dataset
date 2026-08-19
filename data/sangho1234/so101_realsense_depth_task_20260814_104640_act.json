@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SANGHO1234/so101_realsense_depth_task_20260814_104640_act",
+  "slug": "sangho1234-so101_realsense_depth_task_20260814_104640_act",
+  "author": "SANGHO1234",
+  "url": "https://huggingface.co/SANGHO1234/so101_realsense_depth_task_20260814_104640_act",
+  "created_at": "2026-08-14T02:59:34.000Z",
+  "updated_at": "2026-08-14T03:00:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:SANGHO1234/so101_realsense_depth_task_20260814_104640",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206715104,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SANGHO1234/so101_realsense_depth_task_20260814_104640_act · Hugging Face",
+      "url": "https://huggingface.co/SANGHO1234/so101_realsense_depth_task_20260814_104640_act",
+      "snippet": "Instructions to use SANGHO1234/so101_realsense_depth_task_20260814_104640_act with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "SANGHO1234 (SANGHO JUNG) - Hugging Face",
+      "url": "https://huggingface.co/SANGHO1234/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 17 hours ago ... published a model about 17 hours ago"
+    },
+    {
+      "title": "DreamZero-SO101 — Research Paper - vizuara-ai-lab.github.io",
+      "url": "https://vizuara-ai-lab.github.io/dreamzero-so101/paper.html",
+      "snippet": "Conference-style research paper for DreamZero-SO101: the first open-source world-action model for the SO-101 robot arm. Architecture, training, evaluation, and community contribution roadmap."
+    },
+    {
+      "title": "DreamZero-SO101 — An Open World Model for the SO-101 Robot Arm",
+      "url": "https://vizuara-ai-lab.github.io/dreamzero-so101/index.html",
+      "snippet": "DreamZero-SO101 is an open-source world-action model for the SO-101 robot arm. Given a single camera frame and a language instruction, it imagines the robot completing the task."
+    },
+    {
+      "title": "Ministral 3 3B - Mistral AI",
+      "url": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+      "snippet": "Ministral 3 3B is the smallest and most efficient model in the Ministral 3 family, offering robust language and vision capabilities in a compact package. Designed for edge deployment, it delivers high performance across diverse hardware, including local setups."
+    }
+  ]
+}

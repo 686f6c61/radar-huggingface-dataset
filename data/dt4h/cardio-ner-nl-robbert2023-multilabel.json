@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DT4H/cardio-ner-nl-robbert2023-multilabel",
+  "slug": "dt4h-cardio-ner-nl-robbert2023-multilabel",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/cardio-ner-nl-robbert2023-multilabel",
+  "created_at": "2026-08-17T12:07:28.000Z",
+  "updated_at": "2026-08-17T12:12:22.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "clinical, medical, ner, healthcare, cardiology, nl, Dutch",
+    "nl",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123858441,
+  "parameters_human": "123.9M",
+  "storage_bytes": 247740946,
+  "storage_human": "248 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DT4H/cardio-ner-multilingual-xlm-roberta-large-multilabel · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-multilingual-xlm-roberta-large-multilabel",
+      "snippet": "Model Card for Cardio-Ner-Multilingual-Xlm-Roberta-Large-Multilabel Description Multilingual cardiology NER model for disease, medication, procedure, and symptom recognition Model Details Language: MULTILINGUAL Task: token-classification Framework: pytorch How to Use"
+    },
+    {
+      "title": "CardioNER - a DT4H Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DT4H/cardioner",
+      "snippet": "DT4H/cardio-ner-multilingual-xlm-roberta-large-multilabel 0.6B•Updated 2 days ago• 51 Upvote - Sort: Collection"
+    },
+    {
+      "title": "DT4H.nl at #SMM4H-HeaRD 2026: Multilingual Clinical NER with ...",
+      "url": "https://aclanthology.org/2026.smm4h-1.14/",
+      "snippet": "Abstract We describe the setup we used to complete the MultiClinAI-NER task in the SMM4H-HeaRD workshop 2026. In this work we employed a dedicated multilingual encoder model (EuroBERT-610m), two Dutch encoder models trained from scratch on clinical corpora (MedRoBERTa.nl and CardioDeBERTa.nl) and a generic Dutch encoder model (RobBERT2023-large), all finetuned with a 3-layer DNN head. We find ..."
+    },
+    {
+      "title": "PDF DT4H.nl at #SMM4H-HeaRD 2026: Multilingual Clinical NER with ...",
+      "url": "https://aclanthology.org/2026.smm4h-1.14.pdf",
+      "snippet": "Abstract We describe the setup we used to complete the MultiClinAI-NER task in the SMM4H- HeaRD workshop 2026. In this work we employed a dedicated multilingual encoder model (EuroBERT-610m), two Dutch en- coder models trained from scratch on clini- cal corpora (MedRoBERTa.nl and CardioDe- BERTa.nl) and a generic Dutch encoder model (RobBERT2023-large), all finetuned with a 3- layer DNN head ..."
+    },
+    {
+      "title": "The DataTools4Heart Project · GitHub",
+      "url": "https://github.com/DataTools4Heart/",
+      "snippet": "This organization hosts the source code and documentation for all components that power the DataTools4Heart (DT4H) platform — a federated, privacy-preserving cardiology data toolbox developed to enhance health data reusability. Our platform enables secure, decentralized analysis of cardiology data while strictly adhering to ethical, legal, and data protection standards."
+    }
+  ]
+}

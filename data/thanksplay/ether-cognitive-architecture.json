@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "thanksplay/Ether-Cognitive-Architecture",
+  "slug": "thanksplay-ether-cognitive-architecture",
+  "author": "thanksplay",
+  "url": "https://huggingface.co/thanksplay/Ether-Cognitive-Architecture",
+  "created_at": "2026-08-16T10:14:23.000Z",
+  "updated_at": "2026-08-16T10:15:39.000Z",
+  "license": "bsl-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsl-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

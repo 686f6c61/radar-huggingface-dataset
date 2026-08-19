@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "standjones/mirror-unconst-affine-5czsc2fc98-r561-r252-odpo-hirank-softctx-midextra-merged",
+  "slug": "standjones-mirror-unconst-affine-5czsc2fc98-r561-r252-odpo-hirank-softctx-midextra-merged",
+  "author": "standjones",
+  "url": "https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r561-r252-odpo-hirank-softctx-midextra-merged",
+  "created_at": "2026-08-17T00:09:06.000Z",
+  "updated_at": "2026-08-17T00:09:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 240,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconst/Affine-5czsc2fc98-h47-merged · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h47-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r171-merged · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r171-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - techjarves/Uncensored-Local-Studio: Uncensored local AI studio ...",
+      "url": "https://github.com/techjarves/Uncensored-Local-Studio",
+      "snippet": "Uncensored AI Studio is a completely offline, zero-setup, self-contained AI studio for Windows, Linux, and macOS. Unlike cloud-based AI systems, it runs entirely on your own hardware with no censorship, tracking, subscriptions, or login requirements. It unifies four major local AI capabilities into one high-performance desktop interface:"
+    },
+    {
+      "title": "Obsidian - Sharpen your thinking",
+      "url": "https://obsidian.md/",
+      "snippet": "Sharpen your thinking. The free and flexible app for your private thoughts."
+    },
+    {
+      "title": "SCG Embedding Toolkit for Version 1.5 Models - Civitai",
+      "url": "https://civitai.com/models/8551/scg-embedding-toolkit-for-version-15-models-a-collection-of-tools-and-helpers-from-my-personal-kit",
+      "snippet": "Over the last 6 months, I&#x27;ve created quite the collection of helper and tool embeds for doing things like fixing faces, pushing realism, creating anime scenes, making subjects smile, or cry, or face the camera, whatever. Rather than creating separate listings for the literal dozens of tools I have, I&#x27;ve decided instead to just create a \"master\" listing for all of my tools that I can then ..."
+    }
+  ]
+}

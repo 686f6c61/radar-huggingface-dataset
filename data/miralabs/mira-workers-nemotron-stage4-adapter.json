@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MIRALABS/mira-workers-nemotron-stage4-adapter",
+  "slug": "miralabs-mira-workers-nemotron-stage4-adapter",
+  "author": "MIRALABS",
+  "url": "https://huggingface.co/MIRALABS/mira-workers-nemotron-stage4-adapter",
+  "created_at": "2026-08-15T09:42:12.000Z",
+  "updated_at": "2026-08-15T09:49:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:fastino/Fastino-Nemotron-3.5-Lightning-Finance",
+    "base_model:adapter:fastino/Fastino-Nemotron-3.5-Lightning-Finance",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3632168200,
+  "storage_human": "3.6 GB",
+  "base_model": "fastino/Fastino-Nemotron-3.5-Lightning-Finance",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:14:22.003Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "GitHub - NVIDIA-NeMo/Nemotron: Developer Asset Hub for NVIDIA Nemotron ...",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron",
+      "snippet": "Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family. This repo ships a Claude Code plugin called nemotron-customize that turns the step catalog under src/nemotron/steps/ into a guided, repo-native pipeline builder. The skill ..."
+    },
+    {
+      "title": "MIRA Lab",
+      "url": "https://miralab.ai/",
+      "snippet": "Our work solves complex challenges across the areas of large language model, graph machine learning, decision making system, and covers subjects such as LLM agent, graph foundation model, autonomous driving, AI4Chips, and AI4Science."
+    },
+    {
+      "title": "NVIDIA Nemotron AI | Open Multimodal Models for Agentic AI",
+      "url": "https://nemotron-ai.com/",
+      "snippet": "NVIDIA Nemotron is a family of open, multimodal models — Nano, Super, and Ultra — for reasoning, coding, vision, speech, and long-running AI agents. Try Nemotron AI live in your browser."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

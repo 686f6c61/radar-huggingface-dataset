@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "batteryswapaichallenge/BatterySwapAI2026-Example",
+  "slug": "batteryswapaichallenge-batteryswapai2026-example",
+  "author": "batteryswapaichallenge",
+  "url": "https://huggingface.co/batteryswapaichallenge/BatterySwapAI2026-Example",
+  "created_at": "2026-08-07T18:46:47.000Z",
+  "updated_at": "2026-08-17T03:45:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "batteryswapaichallenge/BatterySwapAI2026-Example · Hugging Face",
+      "url": "https://huggingface.co/batteryswapaichallenge/BatterySwapAI2026-Example",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "eliashagen/BatterySwapAI2026-Example · Hugging Face",
+      "url": "https://huggingface.co/eliashagen/BatterySwapAI2026-Example",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BatterySwapAI 2026 - Frequently Asked Questions - nora.ai",
+      "url": "https://www.nora.ai/competitions/batteryswapai/batteryswapai-faq.html",
+      "snippet": "What is the BatterySwapAI 2026 Challenge? A data science competition hosted by NORA, with data provided by Soundsensing. Participants build a system that (1) predicts the remaining useful life of replaceable batteries in IoT condition-monitoring sensors deployed across Norwegian commercial buildings, and (2) generates an efficient work plan for when and in what order to replace those batteries ..."
+    },
+    {
+      "title": "Participant Guide — Set Up and Version a Submission Repository - nora.ai",
+      "url": "https://www.nora.ai/competitions/batteryswapai/docs/02-create-a-submission-repository.html",
+      "snippet": "BatterySwapAI 2026 uses repository-based submissions. Each group maintains a Hugging Face model repository containing its solution code and required model artifacts."
+    },
+    {
+      "title": "BatterySwapAI 2026 Challenge - NORA - Norwegian Artificial Intelligence ...",
+      "url": "https://www.linkedin.com/posts/mina-farmanbar-aa968a293_batteryswapai-2026-challenge-nora-norwegian-activity-7463623897809268736-P6BF",
+      "snippet": "Excited to announce the BatterySwapAI 2026 Competition organized by NORA! Pleased to serve on the Scientific Committee and looking forward to seeing innovative AI solutions shaping the future of ..."
+    }
+  ]
+}

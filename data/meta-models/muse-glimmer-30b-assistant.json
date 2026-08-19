@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "meta-models/Muse-Glimmer-30B-assistant",
+  "slug": "meta-models-muse-glimmer-30b-assistant",
+  "author": "meta-models",
+  "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant",
+  "created_at": "2026-08-09T17:55:23.000Z",
+  "updated_at": "2026-08-11T00:04:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer_assistant",
+    "feature-extraction",
+    "image-text-to-text",
+    "arxiv:2504.13181",
+    "arxiv:2602.06036",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 58,
+  "downloads_30d": 45076,
+  "trending_score": 10,
+  "parameters": 2555985152,
+  "parameters_human": "2.56B",
+  "storage_bytes": 5111976608,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-models/Muse-Glimmer-30B-assistant · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "meta-models/Muse-Glimmer-30B · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, served on vLLM with native Onyx tool-calling and reasoning parsers."
+    },
+    {
+      "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your ...",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "snippet": "Muse Glimmer is a 30-billion-parameter open agentic model from Meta Superintelligence Labs, optimized for always-on local workflows on consumer hardware."
+    },
+    {
+      "title": "meta / muse-glimmer-30b",
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-muse-glimmer-30b",
+      "snippet": "Use Case: Use Case: Muse Glimmer is intended for commercial and research use in local AI agents, coding agents, multi-step planning, tool and function calling, failure recovery, and multimodal reasoning over screenshots, charts, documents, and images. It can also support synthetic data generation and evaluation of other models&#x27; outputs."
+    }
+  ]
+}

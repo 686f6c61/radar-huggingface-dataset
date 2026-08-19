@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Nicewood/pi05_picker205",
+  "slug": "nicewood-pi05_picker205",
+  "author": "Nicewood",
+  "url": "https://huggingface.co/Nicewood/pi05_picker205",
+  "created_at": "2026-08-15T04:05:09.000Z",
+  "updated_at": "2026-08-15T04:06:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:black-forest-labs/lerobot-picker-camfix",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354058288,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Picker",
+      "url": "https://modelpicker.ai/",
+      "snippet": "Hand-picked AI model recommendations for your agents. Query the API, pin a snapshot, and ship with confidence."
+    },
+    {
+      "title": "Nicewood (A S) - Hugging Face",
+      "url": "https://huggingface.co/Nicewood",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 24 days ago ... published a model 24 days ago"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/model.py at main ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/model.py",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05 at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "Pi05 AI Models | Cyberwave",
+      "url": "https://cyberwave.com/models/tag/pi05",
+      "snippet": "Browse pi05 AI models on Cyberwave. Find and deploy vision, language, and action models for robotics and automation."
+    }
+  ]
+}

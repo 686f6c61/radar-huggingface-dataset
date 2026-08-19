@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-8B-GGUF",
+  "slug": "pytraveler-minimax-h3-prompt-rewriter-lora-8b-gguf",
+  "author": "pytraveler",
+  "url": "https://huggingface.co/pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-8B-GGUF",
+  "created_at": "2026-08-18T21:45:16.000Z",
+  "updated_at": "2026-08-18T21:46:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "llama.cpp",
+    "qwen3-vl",
+    "multimodal",
+    "prompt-rewriting",
+    "minimax-h3",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-text",
+    "en",
+    "base_model:lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA-8B",
+    "base_model:adapter:lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 698351616,
+  "parameters_human": "698.4M",
+  "storage_bytes": 2138770944,
+  "storage_human": "2.1 GB",
+  "base_model": "lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax-H3 Prompt Rewriter for ComfyUI - GitHub",
+      "url": "https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI",
+      "snippet": "ComfyUI nodes for the LightX2V MiniMax-H3 T2VA Prompt Rewriter LoRA. A short prompt goes in; a structured, production-ready audio-video description for MiniMax-H3 comes out — entirely locally. Русская версия The prompt may be in any language the base model reads; the rewrite comes back in English, which is what MiniMax-H3 expects."
+    },
+    {
+      "title": "pytraveler / MiniMax-H3-Prompt-Rewriter-ComfyUI Public",
+      "url": "https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI/tree/main",
+      "snippet": "About Personal adaptation of the lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA project for ComfyUI"
+    },
+    {
+      "title": "lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax-H3-Prompt-Rewriter-ComfyUI/minimax_h3_rewriter at main ... - GitHub",
+      "url": "https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI/tree/main/minimax_h3_rewriter",
+      "snippet": "Personal adaptation of the lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA project for ComfyUI - pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI"
+    },
+    {
+      "title": "MiniMax-H3-Prompt-Rewriter-ComfyUI/README.md at main - GitHub",
+      "url": "https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI/blob/main/README.md",
+      "snippet": "Русская версия The prompt may be in any language the base model reads; the rewrite comes back in English, which is what MiniMax-H3 expects. \"A red fox walks through a snowy forest at dawn.\" + 16:9 + 15s │ Qwen3.6-27B + Prompt Rewriter LoRA │ integrated_multimodal_description: [Shot 1] ..."
+    }
+  ]
+}

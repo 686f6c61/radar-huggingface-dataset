@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "9nbf7c4q6b-lgtm/Melody1437-26B-A4B-v2.0-oQ8e",
+  "slug": "9nbf7c4q6b-lgtm-melody1437-26b-a4b-v2-0-oq8e",
+  "author": "9nbf7c4q6b-lgtm",
+  "url": "https://huggingface.co/9nbf7c4q6b-lgtm/Melody1437-26B-A4B-v2.0-oQ8e",
+  "created_at": "2026-08-18T14:40:47.000Z",
+  "updated_at": "2026-08-18T14:52:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7097324574,
+  "parameters_human": "7.10B",
+  "storage_bytes": 26843215956,
+  "storage_human": "26.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Melody1437-26B-A4B-v2.0-GGUF - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Melody1437-26B-A4B-v2.0-GGUF/blob/main/Melody1437-26B-A4B-v2.0-Q8_0.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt/Melody1437-26B-A4B-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Melody1437-26B-A4B-v2.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Fine-tuned Models for google/gemma-4-26B-A4B-it - Hugging Face",
+      "url": "https://hf.hkyc1.carry.fit/models?other=base_model:finetune:google/gemma-4-26B-A4B-it",
+      "snippet": "Explore machine learning models. google/gemma-4-26B-A4B-it-qat-q4_0-unquantized Image-Text-to-Text • 27B•Updated 19 days ago• 12.6k • 32"
+    },
+    {
+      "title": "ReadyArt/Melody1437-26B-A4B-LORA - LLMs .INFO",
+      "url": "https://llms.info/models/readyart-melody1437-26b-a4b-lora-758",
+      "snippet": "ReadyArt/Melody1437-26B-A4B-LORA - LLMs .INFO ... region:us"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "swethaukkarde/SampleModel1",
+  "slug": "swethaukkarde-samplemodel1",
+  "author": "swethaukkarde",
+  "url": "https://huggingface.co/swethaukkarde/SampleModel1",
+  "created_at": "2026-08-17T04:47:43.000Z",
+  "updated_at": "2026-08-17T04:47:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swethaukkarde (Swetha Ukkarde M) · GitHub",
+      "url": "https://github.com/swethaukkarde/",
+      "snippet": "Ai-powered-resume-job-matching Public An AI-powered resume and job matching platform using mBERT, cosine similarity, and LightGBM to enable fair, secure, and skill-based hiring."
+    },
+    {
+      "title": "swethaukkarde (Swetha Ukkarde M) / Repositories · GitHub",
+      "url": "https://github.com/swethaukkarde?tab=repositories",
+      "snippet": "Ai-powered-resume-job-matching Public An AI-powered resume and job matching platform using mBERT, cosine similarity, and LightGBM to enable fair, secure, and skill-based hiring."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

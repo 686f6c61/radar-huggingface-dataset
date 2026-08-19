@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+  "slug": "wan-ai-wan2-2-animate-2-14b-distilled-diffusers",
+  "author": "Wan-AI",
+  "url": "https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+  "created_at": "2026-08-06T06:12:58.000Z",
+  "updated_at": "2026-08-13T02:19:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "diffusers:WanAnimate2Pipeline",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 479,
+  "trending_score": 7,
+  "parameters": 16394878784,
+  "parameters_human": "16.39B",
+  "storage_bytes": 78732220432,
+  "storage_human": "78.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan-AI/Wan2.2-Animate-14B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.2-Animate-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan-Animate-2",
+      "url": "https://github.com/Wan-Video/Wan-Animate-2",
+      "snippet": "We present Wan-Animate-2, a novel end-to-end character animation framework that directly consumes driving videos in a redesigned Diffusion Transformer, which achieves high-fidelity motion generation and strong identity preservation by eliminating intermediate motion extractors. We further add text-driven viewpoint control to decouple the output camera perspective from the driving video. In ..."
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan2.2: Wan: Open and Advanced Large-Scale Video ...",
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "snippet": "Nov 13, 2025: 👋 Wan2.2-Animate-14B has been integrated into Diffusers (PR, Weights). Thanks to all community contributors. Enjoy! Sep 19, 2025: 💃 We introduct Wan2.2-Animate-14B, an unified model for character animation and replacement with holistic movement and expression replication. We released the model weights and inference code. And you can try it on wan.video, ModelScope Studio or ..."
+    },
+    {
+      "title": "Wan2.2-Animate-2-14B · Models - modelscope.cn",
+      "url": "https://www.modelscope.cn/models/Wan-AI/Wan2.2-Animate-2-14B",
+      "snippet": "📝 Introduction We present Wan-Animate-2, a novel end-to-end character animation framework that directly consumes driving videos in a redesigned Diffusion Transformer, which achieves high-fidelity motion generation and strong identity preservation by eliminating intermediate motion extractors. We further add text-driven viewpoint control to decouple the output camera perspective from the ..."
+    }
+  ]
+}

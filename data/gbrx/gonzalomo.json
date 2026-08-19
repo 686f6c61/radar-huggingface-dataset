@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gbrx/GonzaLomo",
+  "slug": "gbrx-gonzalomo",
+  "author": "gbrx",
+  "url": "https://huggingface.co/gbrx/GonzaLomo",
+  "created_at": "2025-07-20T21:51:21.000Z",
+  "updated_at": "2026-08-17T17:25:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 269,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 420813782211,
+  "storage_human": "420.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gbrx/GonzaLomo · Hugging Face",
+      "url": "https://huggingface.co/gbrx/GonzaLomo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · gbrx/GonzaLomo at main - Hugging Face",
+      "url": "https://huggingface.co/gbrx/GonzaLomo/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Commits · gbrx/GonzaLomo - Hugging Face",
+      "url": "https://huggingface.co/gbrx/GonzaLomo/commits/main",
+      "snippet": "Instructions to use gbrx/GonzaLomo with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use gbrx/GonzaLomo with llama-cpp-python:"
+    },
+    {
+      "title": "GonzaLomo Chroma by GBRX | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/civitai-2182526-gonzalomo-chroma",
+      "snippet": "Explore GonzaLomo Chroma by GBRX — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "GonzaLomo Krea 2 - v3.0 | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2761943/gonzalomo-krea-2",
+      "snippet": "Added some additional training and also merging back with Krea 2 Raw and Gonzalomo Krea v1.0. Similar settings as v2.0 but an additional step is sometimes needed."
+    }
+  ]
+}

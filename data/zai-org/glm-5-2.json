@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "zai-org/GLM-5.2",
+  "slug": "zai-org-glm-5-2",
+  "author": "zai-org",
+  "url": "https://huggingface.co/zai-org/GLM-5.2",
+  "created_at": "2026-06-16T07:39:20.000Z",
+  "updated_at": "2026-07-02T08:08:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "arxiv:2603.12201",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5006,
+  "downloads_30d": 2727630,
+  "trending_score": 61,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 1506689458421,
+  "storage_human": "1506.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zai-org/GLM-5: GLM-5: From Vibe Coding to Agentic Engineering",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin on NL2Repo (repo generation) and Terminal-Bench 2.0 (real-world terminal tasks). But the most meaningful leap goes beyond first-pass performance. Previous models ..."
+    },
+    {
+      "title": "zai-org/GLM-5.2 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.2",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.2 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "GLM-5.2 also introduces effort level control, enabling users to explicitly balance model capability against task execution speed and computational cost. As shown in the figure, GLM-5.2 delivers substantially stronger agentic coding performance than GLM-5.1 at comparable token budgets, with its capability roughly positioned between Claude Opus 4.7 and Claude Opus 4.8 under similar token ..."
+    },
+    {
+      "title": "zai-org/GLM-5.2 - lambda.ai",
+      "url": "https://lambda.ai/inference-models/zai-org/glm-5.2",
+      "snippet": "See Benchmarking GLM-5.2 below for the full results. Background GLM-5.2 is Z.ai &#x27;s flagship open-weight model for long-horizon agentic work, the third release in the GLM-5 family. It&#x27;s a Mixture-of-Experts (MoE) model built on the glm_moe_dsa architecture, with roughly 753B parameters and 32B active. The major change over GLM-5.1 is architectural: GLM-5.2 ships a 1M-token context window, up ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed2",
+  "slug": "longtermrisk-llama-3-1-8b-target-only-no-hallucination-last-third-sft-seed2",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed2",
+  "created_at": "2026-08-15T17:51:08.000Z",
+  "updated_at": "2026-08-15T17:52:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 125,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longtermrisk/Llama-3.1-8B-target-only-last-third · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-last-third",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft",
+      "snippet": "longtermrisk / Llama-3.1-8B-target-only-no-hallucination-sft like 0 Follow Center on Long-Term Risk 19 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting",
+      "snippet": "Deploy Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    },
+    {
+      "title": "llama-models/models/llama3/MODEL_CARD.md at main - GitHub",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3/MODEL_CARD.md",
+      "snippet": "Utilities intended for use with Llama models. Contribute to meta-llama/llama-models development by creating an account on GitHub."
+    }
+  ]
+}

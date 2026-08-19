@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "nico248000000000/Qwen3.8-27B-cyber",
+  "slug": "nico248000000000-qwen3-8-27b-cyber",
+  "author": "nico248000000000",
+  "url": "https://huggingface.co/nico248000000000/Qwen3.8-27B-cyber",
+  "created_at": "2026-08-14T21:23:03.000Z",
+  "updated_at": "2026-08-17T17:00:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "unsloth",
+    "lora",
+    "qlora",
+    "cyber",
+    "vision",
+    "video",
+    "conversational",
+    "en",
+    "fr",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 321,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 109177739151,
+  "storage_human": "109.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Causal language modeling",
+      "dataset": "cyber SFT holdout",
+      "metric": "eval_loss",
+      "value": 0.741224
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "nico248000000000/Qwen3.8-27B-cyber-LoRA · Hugging Face",
+      "url": "https://huggingface.co/nico248000000000/Qwen3.8-27B-cyber-LoRA",
+      "snippet": "nico248000000000 / Qwen3.8-27B-cyber-LoRA like 0 Text Generation PEFT Safetensors Transformers lora sft trl unsloth conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8 27B Cyber by nico248000000000 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/nico248000000000%2FQwen3.8-27B-cyber,2J9j9a7tCNwly3YxHhJ1nE",
+      "snippet": "Qwen3.8 27B Cyber is an open-source 27b LLM by nico248000000000. VRAM 55.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "Qwen3.8-27B-cyber API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/nico248000000000/Qwen3.8-27B-cyber",
+      "snippet": "Run Qwen3.8-27B-cyber with FriendliAI inference. This qwen35 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

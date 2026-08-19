@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "jvonrad/OLMo-2-7B-CM-Align-10k",
+  "slug": "jvonrad-olmo-2-7b-cm-align-10k",
+  "author": "jvonrad",
+  "url": "https://huggingface.co/jvonrad/OLMo-2-7B-CM-Align-10k",
+  "created_at": "2026-08-17T12:59:41.000Z",
+  "updated_at": "2026-08-17T12:59:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "pt",
+    "id",
+    "ru",
+    "zh",
+    "ar",
+    "ja",
+    "sw",
+    "bn"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "multilingual",
+    "cross-lingual-consistency",
+    "base_model:adapter:allenai/OLMo-2-1124-7B",
+    "text-generation",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "pt",
+    "id",
+    "ru",
+    "zh",
+    "ar",
+    "ja",
+    "sw",
+    "bn",
+    "dataset:jvonrad/PolyFact-Clean",
+    "arxiv:2606.06586",
+    "base_model:allenai/OLMo-2-1124-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 639691872,
+  "storage_human": "640 MB",
+  "base_model": "allenai/OLMo-2-1124-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jvonrad/OLMo-2-7B-CM-Align · Hugging Face",
+      "url": "https://huggingface.co/jvonrad/OLMo-2-7B-CM-Align",
+      "snippet": "This is the OLMo counterpart of jvonrad/Qwen-2.5-CM-Align. Weights are merged (LoRA adapter folded into the base model), so it loads like any standard OLMo-2 checkpoint."
+    },
+    {
+      "title": "OLMo-2-7B-CM-Align API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/jvonrad/OLMo-2-7B-CM-Align",
+      "snippet": "CM-Align gives consistent in-domain gains over the base model on PolyFact (all four metrics). Out of domain on Global-MMLU-Lite the picture is mixed: cross-lingual agreement improves (RankC +2.19, AnsAgr +1.97) but accuracy and total consistency drop slightly."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=cm-align",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: cm-align Clear all"
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "Stage 2 for the 7B For the 7B model, we train three times with different data order on 50B high quality tokens, and then average (\"soup\") the models. ... The training configs linked here are set up to download the latest checkpoint after stage 1, and start training from there."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "7B-Instruct Model for efficient inference that handles multi-turn chat, tool use, and more."
+    }
+  ]
+}

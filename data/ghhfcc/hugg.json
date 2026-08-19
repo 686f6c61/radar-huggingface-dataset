@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ghhfcc/Hugg",
+  "slug": "ghhfcc-hugg",
+  "author": "Ghhfcc",
+  "url": "https://huggingface.co/Ghhfcc/Hugg",
+  "created_at": "2026-08-18T02:00:08.000Z",
+  "updated_at": "2026-08-18T02:00:08.000Z",
+  "license": "iuggvh",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Face · GitHub",
+      "url": "https://github.com/huggingface",
+      "snippet": "The AI community building the future. Hugging Face has 467 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "OpenAI-Hugging Face Security Incident: Explained",
+      "url": "https://decodethefuture.org/en/openai-hugging-face-security-incident-explained/",
+      "snippet": "OpenAI linked a July 2026 Hugging Face intrusion to models tested for cyber capability. Confirmed facts, open questions and lessons for AI builders."
+    },
+    {
+      "title": "NeuralLens — Visualize any Hugging Face model architecture",
+      "url": "https://neurallens.org/",
+      "snippet": "Paste a Hugging Face model name and see its architecture as an interactive diagram — transformer, MoE, state-space, speech encoder-decoder and diffusion."
+    }
+  ]
+}

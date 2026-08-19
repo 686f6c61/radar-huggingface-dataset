@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "reyansh38771/sn97____kumaresano____uid224____hk5ChqR",
+  "slug": "reyansh38771-sn97____kumaresano____uid224____hk5chqr",
+  "author": "reyansh38771",
+  "url": "https://huggingface.co/reyansh38771/sn97____kumaresano____uid224____hk5ChqR",
+  "created_at": "2026-08-18T11:29:21.000Z",
+  "updated_at": "2026-08-18T11:50:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Username Search - Social Media Profile Lookup - IDCrawl",
+      "url": "https://www.idcrawl.com/username-search",
+      "snippet": "Username search by IDCrawl. Run a reverse username lookup to uncover social media profiles, hidden profiles and real people behind a username."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "dmsc19-sn97-model-v1/README.md at main - GitHub",
+      "url": "https://github.com/Damacol/dmsc19-sn97-model-v1/blob/main/README.md",
+      "snippet": "DMSC19/sn97-model-v1 - Private, Uncensored AI for Real Creators and Devs Deploy {MODEL} without cloud dependencies. Uncensored, transparent, and optimized for privacy-conscious workflows."
+    },
+    {
+      "title": "reyansh38771/0xbidkslj3____uid94____hk5E9si · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/0xbidkslj3____uid94____hk5E9si",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Find Any Snapchat User by Username — Free 2026 | FootprintIQ",
+      "url": "https://footprintiq.app/platforms/snapchat/username-search",
+      "snippet": "Free Snapchat user search. Paste a Snapchat handle and instantly find where the same username appears on Instagram, TikTok, dating apps and 500+ other platforms. No Snapchat login required, AI confidence scored."
+    }
+  ]
+}

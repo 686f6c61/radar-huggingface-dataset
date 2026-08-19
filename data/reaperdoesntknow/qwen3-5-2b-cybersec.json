@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Qwen3.5-2B-CyberSec",
+  "slug": "reaperdoesntknow-qwen3-5-2b-cybersec",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec",
+  "created_at": "2026-08-09T15:38:39.000Z",
+  "updated_at": "2026-08-17T13:16:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "unsloth",
+    "cybersecurity",
+    "conversational",
+    "text-generation",
+    "en",
+    "dataset:Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 497,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4568210831,
+  "storage_human": "4.6 GB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Qwen3.5-2B-CyberSec · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec",
+      "snippet": "reaperdoesntknow / Qwen3.5-2B-CyberSec like 0 Image-Text-to-Text Transformers Safetensors English qwen3_5 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF at main",
+      "url": "https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF/tree/main",
+      "snippet": "Run Hermes hermes Atomic Chat main Qwen3.5-2B-CyberSec-GGUF 7.96 GB Ctrl+K Ctrl+K 1 contributor History:9 commits reaperdoesntknow keeper: refresh 2026-08-11 1a2df3e verifiedabout 4 hours ago .gitattributes 1.76 kBTrained with Unsloth2 days ago Qwen3.5-2B.BF16-mmproj.gguf 671 MB xet Trained with Unsloth2 days ago Qwen3.5-2B.BF16.gguf 3.9 GB xet Trained with Unsloth2 days ago Qwen3.5-2B.Q4_K_M ..."
+    },
+    {
+      "title": "Qwen3.5-2B-CyberSec API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/reaperdoesntknow/Qwen3.5-2B-CyberSec",
+      "snippet": "Run Qwen3.5-2B-CyberSec with FriendliAI inference. This qwen35 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen 3.5 2B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-2b",
+      "snippet": "Qwen 3.5 2B by Alibaba. Small multimodal Qwen 3.5 Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and ..."
+    }
+  ]
+}

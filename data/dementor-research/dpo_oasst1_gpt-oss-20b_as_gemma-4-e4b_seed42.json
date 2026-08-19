@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_oasst1_gpt-oss-20b_as_gemma-4-e4b_seed42",
+  "slug": "dementor-research-dpo_oasst1_gpt-oss-20b_as_gemma-4-e4b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_gemma-4-e4b_seed42",
+  "created_at": "2026-08-16T19:59:19.000Z",
+  "updated_at": "2026-08-16T20:05:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/dpo_oasst1_gemma-4-e4b_as_gpt-oss-20b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_oasst1_gemma-4-e4b_as_gpt-oss-20b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the oasst1 corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "dementor-research/dpo_oasst1_phi-4_as_gpt-oss-120b_seed42 · Hugging Face",
+      "url": "https://huggingface.co/dementor-research/dpo_oasst1_phi-4_as_gpt-oss-120b_seed42",
+      "snippet": "Instructions to use dementor-research/dpo_oasst1_phi-4_as_gpt-oss-120b_seed42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "dpo_oasst1_gemma-4-e4b_as_gpt-oss-20b_seed42 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_oasst1_gemma-4-e4b_as_gpt-oss-20b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the oasst1 corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "dpo_oasst1_gpt-oss-120b_as_gpt-oss-20b_seed42 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_oasst1_gpt-oss-120b_as_gpt-oss-20b_seed42",
+      "snippet": "Run dpo_oasst1_gpt-oss-120b_as_gpt-oss-20b_seed42 with FriendliAI inference. Dementor imitation (disguise) LoRA adapter — dataset oasst1, seed 42."
+    },
+    {
+      "title": "Unsloth Notebooks | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/get-started/unsloth-notebooks",
+      "snippet": "GRPO (Reasoning RL): Muse Glimmer (30B) Gemma 4 E2B - new Qwen3.5 (4B) - Vision GRPO gpt-oss-20b (automatic kernels creation) Mistral Ministral 3 (solving sodoku) - new"
+    }
+  ]
+}

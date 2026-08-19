@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "mulemp/affa1988",
+  "slug": "mulemp-affa1988",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/affa1988",
+  "created_at": "2026-04-01T05:09:07.000Z",
+  "updated_at": "2026-08-15T16:03:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80340794036,
+  "storage_human": "80.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

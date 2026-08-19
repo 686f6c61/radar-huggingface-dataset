@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hukewei/act_refiner_0722_v2_lightweight_vision",
+  "slug": "hukewei-act_refiner_0722_v2_lightweight_vision",
+  "author": "hukewei",
+  "url": "https://huggingface.co/hukewei/act_refiner_0722_v2_lightweight_vision",
+  "created_at": "2026-08-17T13:07:17.000Z",
+  "updated_at": "2026-08-17T13:07:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act_refiner",
+    "dataset:hukewei/peg_optical_module_0722_v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 57980152,
+  "parameters_human": "58.0M",
+  "storage_bytes": 231967776,
+  "storage_human": "232 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hukewei/act_peg_optical_module_0722 · Hugging Face",
+      "url": "https://huggingface.co/hukewei/act_peg_optical_module_0722",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hukewei/act_peg_optical_module_0722 at main - Hugging Face",
+      "url": "https://huggingface.co/hukewei/act_peg_optical_module_0722/tree/main",
+      "snippet": "hukewei / act_peg_optical_module_0722 like 0 Robotics LeRobot Safetensors hukewei/peg_optical_module_0721 act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI大模型聚合平台 - AI Model Hub | AI Chat, Image, Video & Agents",
+      "url": "https://mu.lk666.ai/zh-CN",
+      "snippet": "AI大模型聚合平台 — A world-leading AI model aggregation platform with one-stop access to 135+ top AI models."
+    },
+    {
+      "title": "ICLR 2026 Papers",
+      "url": "https://iclr.cc/virtual/2026/papers.html",
+      "snippet": "Scalable Offline Model-Based RL with Action Chunks Multi-state Protein Sequence Design with DynamicMPNN 3DGEER: 3D Gaussian Rendering Made Exact and Efficient for Generic Cameras SR-Scientist: Scientific Equation Discovery With Agentic AI Binomial Gradient-Based Meta-Learning for Enhanced Meta-Gradient Estimation"
+    },
+    {
+      "title": "GitHub - Kokoroou/lightweight-ai: Collection of lightweight Computer ...",
+      "url": "https://github.com/Kokoroou/lightweight-ai",
+      "snippet": "This is a collection of lightweight AI models in Computer Vision. They are designed to be lightweight and fast, and can be used for real-time inference on edge devices. The performance of the models may not be the best, but they are good enough for many real-life applications. About how to classify a model as lightweight, please refer to this."
+    }
+  ]
+}

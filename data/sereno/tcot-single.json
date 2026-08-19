@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Sereno/TCoT-Single",
+  "slug": "sereno-tcot-single",
+  "author": "Sereno",
+  "url": "https://huggingface.co/Sereno/TCoT-Single",
+  "created_at": "2026-08-16T09:22:41.000Z",
+  "updated_at": "2026-08-16T10:14:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "libero",
+    "lora",
+    "base_model:openvla/openvla-7b",
+    "base_model:adapter:openvla/openvla-7b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1937834400,
+  "storage_human": "1.9 GB",
+  "base_model": "openvla/openvla-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

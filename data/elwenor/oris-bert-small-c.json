@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Elwenor/ORIS-Bert-Small-C",
+  "slug": "elwenor-oris-bert-small-c",
+  "author": "Elwenor",
+  "url": "https://huggingface.co/Elwenor/ORIS-Bert-Small-C",
+  "created_at": "2026-08-18T11:49:42.000Z",
+  "updated_at": "2026-08-18T11:49:42.000Z",
+  "license": "oris-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prajjwal1/bert-small · Hugging Face",
+      "url": "https://huggingface.co/prajjwal1/bert-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lyeonii/bert-small · Hugging Face",
+      "url": "https://huggingface.co/lyeonii/bert-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Small open source models from 4B to 40B parameters. Fast and affordable models with limited capabilities and low latency."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    }
+  ]
+}

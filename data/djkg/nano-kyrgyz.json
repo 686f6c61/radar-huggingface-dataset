@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "DJKG/nano-kyrgyz",
+  "slug": "djkg-nano-kyrgyz",
+  "author": "DJKG",
+  "url": "https://huggingface.co/DJKG/nano-kyrgyz",
+  "created_at": "2026-08-14T06:00:24.000Z",
+  "updated_at": "2026-08-14T06:00:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ky"
+  ],
+  "tags": [
+    "gguf",
+    "kyrgyz",
+    "char-level",
+    "from-scratch",
+    "llama.cpp",
+    "lm-studio",
+    "low-resource",
+    "text-generation",
+    "ky",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 5728256,
+  "parameters_human": "5.7M",
+  "storage_bytes": 58080352,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial intelligence in the Kyrgyz Republic: a silent transformation ...",
+      "url": "https://blogs.worldbank.org/en/opendata/artificial-intelligence-in-the-kyrgyz-republic--a-silent-transfo",
+      "snippet": "Artificial intelligence in the Kyrgyz Republic is growing fast—but challenges remain. A new World Bank blog explores the country&#x27;s emerging AI ecosystem, from skills and startups to infrastructure and data. Learn what&#x27;s needed to unlock its full potential."
+    },
+    {
+      "title": "nineninesix/kyrgyz-whisper-small · Hugging Face",
+      "url": "https://huggingface.co/nineninesix/kyrgyz-whisper-small",
+      "snippet": "kyrgyz-whisper-small is a fine-tuned multilingual speech recognition model based on OpenAI&#x27;s Whisper Small architecture. This model adds native Kyrgyz language support while maintaining strong performance on English and Russian."
+    },
+    {
+      "title": "AkylAI - GitHub",
+      "url": "https://github.com/Akyl-AI/",
+      "snippet": "Python 0 0 0 0 Updated on Dec 18, 2024 Kyrgyz-news-corpus Public The Kyrgyz News Corpus dataset is a collection of news in the Kyrgyz language collected from various news sites and contains 256364 news."
+    },
+    {
+      "title": "kyrgyz-ai (Kyrgyz AI Research Institute) - Hugging Face",
+      "url": "https://huggingface.co/kyrgyz-ai",
+      "snippet": "Org profile for Kyrgyz AI Research Institute on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Text Models - NanoGPT",
+      "url": "https://nano-gpt.com/settings/models",
+      "snippet": "NanoGPT offers access to every AI model with pay-as-you-go or an optional subscription with included open-source model usage. Generate videos (Kling, Veo and more), create images (Flux Pro, Kontext, GPT Image, Hidream), and access ChatGPT, Claude, Gemini, Deepseek, and other top AI models."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Deku21/RegFM",
+  "slug": "deku21-regfm",
+  "author": "Deku21",
+  "url": "https://huggingface.co/Deku21/RegFM",
+  "created_at": "2026-07-30T08:33:04.000Z",
+  "updated_at": "2026-08-18T02:27:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tensorboard",
+    "genomics",
+    "gene-expression",
+    "transcriptional-regulation",
+    "other",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18756052486,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machine Model: REGFM_A1 - PowerWorld",
+      "url": "https://www.powerworld.com/WebHelp/Content/TransientModels_HTML/Machine%20Model%20REGFM_A1.htm",
+      "snippet": "Xe < 0.0001 is not allowed, and a value of 0.0001 will be used if a smaller one is entered. For TPf, TQf, TVf time constant, any value less than Mult*TimeStep will be modified. If less than 0.5*Mult*TimeStep will be set to 0.0, otherwise it will be increased to Mult*TimeStep. Parameters Emax/Emin, Pmax/Pmin, and Qmax/Qmin will be checked for consistency and flipped if entered backwards. Mult ..."
+    },
+    {
+      "title": "PDF Quarterly Reporting Template - wecc.org",
+      "url": "https://www.wecc.org/sites/default/files/documents/meeting/2025/11%20-%20DuW%20-%20Model%20Specifications%20of%20Grid-Forming%20Hybrid%20Control%20and%20Plant%20control%20REGFM_C1%20and%20REPCGFM_C1_January%202025.pdf",
+      "snippet": "REGFM_C1 and REPCGFM_C1 Wei Du, Pacific Northwest National Laboratory (PNNL)"
+    },
+    {
+      "title": "PSCAD-and-PSSE-Version-of-WECC-Grid-Forming-Inverter-Models ... - GitHub",
+      "url": "https://github.com/pnnl/PSCAD-and-PSSE-Version-of-WECC-Grid-Forming-Inverter-Models/blob/master/README.md",
+      "snippet": "Contribute to pnnl/PSCAD-and-PSSE-Version-of-WECC-Grid-Forming-Inverter-Models development by creating an account on GitHub."
+    },
+    {
+      "title": "PDF Standard Library Grid-Forming Hybrid Control Inverter-Based Resource ...",
+      "url": "https://docs.nlr.gov/docs/fy26osti/97443.pdf",
+      "snippet": "This document describes a standard library grid-forming (GFM) hybrid control inverter-based resource (IBR) model. The GFM hybrid control approach implements both a typical GFM control and a typical grid-following (GFL) control inside one single inverter simultaneously, so that it can take advantage of both methods without comprising the ..."
+    },
+    {
+      "title": "PDF Virtual Synchronous Machine Grid-Forming Inverter Model Specification ...",
+      "url": "https://www.wecc.org/sites/default/files/documents/products/2024/Virtual%20Synchronous%20Machine%20Grid-Forming%20Inverter%20Model%20Specification-REGFM_B1.pdf",
+      "snippet": "This report describes a generic virtual synchronous machine (VSM) grid-forming inverter (GFM) model—REGFM_B1. The initial model specification was proposed by Pacific Northwest National Laboratory (PNNL), General Electric (GE), and Electric Power Research Institute (EPRI)."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "BAAI/bge-reranker-v2-m3",
+  "slug": "baai-bge-reranker-v2-m3",
+  "author": "BAAI",
+  "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+  "created_at": "2024-03-15T13:32:18.000Z",
+  "updated_at": "2024-06-24T14:08:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "transformers",
+    "text-embeddings-inference",
+    "multilingual",
+    "arxiv:2312.15503",
+    "arxiv:2402.03216",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1137,
+  "downloads_30d": 18760554,
+  "trending_score": 10,
+  "parameters": 567755777,
+  "parameters_human": "567.8M",
+  "storage_bytes": 7975340915,
+  "storage_human": "8.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-reranker-v2-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BGE-Reranker-v2 — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/bge_reranker_v2.html",
+      "snippet": "For better performance, recommand BAAI/bge-reranker-v2-minicpm-layerwise and BAAI/bge-reranker-v2-gemma. Make sure always test on your real use case and choose the one with best speed-quality balance!"
+    },
+    {
+      "title": "bge-reranker-v2-m3: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bge-reranker-v2-m3-baai",
+      "snippet": "Use bge-reranker-v2-m3 if you prioritize inference speed and resource efficiency; use bge-reranker-v2-gemma if you have compute resources and need the best possible ranking quality. Q: What is the maximum length I can pass to this model? A: The model enforces a hard limit of 512 tokens for the combined query-passage pair. Longer inputs are ..."
+    },
+    {
+      "title": "BAAI/bge-reranker-v2-m3 at main - Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/tree/main/assets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/baai-bge-reranker-v2-m3",
+      "snippet": "BAAI/bge-reranker-v2-m3 powered by Text Embeddings Inference (TEI) Original Model Card Text Embeddings Inference Documentation text-ranking Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token. Note that since BAAI/bge-reranker-v2-m3 is a text-ranking model, you need to use the /rerank route instead of the ..."
+    }
+  ]
+}

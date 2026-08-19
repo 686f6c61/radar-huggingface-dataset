@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LachKyumri/WSChuan-TTS",
+  "slug": "lachkyumri-wschuan-tts",
+  "author": "LachKyumri",
+  "url": "https://huggingface.co/LachKyumri/WSChuan-TTS",
+  "created_at": "2026-08-18T02:05:08.000Z",
+  "updated_at": "2026-08-18T02:05:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5938561346,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASLP-lab/WSChuan-TTS · Hugging Face",
+      "url": "https://huggingface.co/ASLP-lab/WSChuan-TTS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · ASLP-lab/WSChuan-TTS at main - Hugging Face",
+      "url": "https://huggingface.co/ASLP-lab/WSChuan-TTS/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ASLP-lab/WenetSpeech-Chuan: Official repository for the ...",
+      "url": "https://github.com/ASLP-lab/WenetSpeech-Chuan",
+      "snippet": "Benchmark To address the unique linguistic characteristics of Chuan-Yu dialect, we propose WSChuan-eval, a comprehensive benchmark encompassing both Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) tasks."
+    },
+    {
+      "title": "WenetSpeech-Chuan: A Large-Scale Sichuanese Corpus With Rich Annotation ...",
+      "url": "https://aslp-lab.github.io/WenetSpeech-Chuan/",
+      "snippet": "To facilitate rigorous evaluation and demonstrate the corpus&#x27;s effectiveness, we also release high-quality ASR and TTS benchmarks, WenetSpeech-Chuan-Eval, with manually verified transcriptions."
+    },
+    {
+      "title": "WenetSpeech-Chuan/readme.md at main - GitHub",
+      "url": "https://github.com/ASLP-lab/WenetSpeech-Chuan/blob/main/readme.md",
+      "snippet": "Benchmark To address the unique linguistic characteristics of Chuan-Yu dialect, we propose WSChuan-eval, a comprehensive benchmark encompassing both Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) tasks."
+    }
+  ]
+}

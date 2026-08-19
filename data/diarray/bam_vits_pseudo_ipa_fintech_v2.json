@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "diarray/bam_vits_pseudo_ipa_fintech_v2",
+  "slug": "diarray-bam_vits_pseudo_ipa_fintech_v2",
+  "author": "diarray",
+  "url": "https://huggingface.co/diarray/bam_vits_pseudo_ipa_fintech_v2",
+  "created_at": "2026-08-18T11:50:14.000Z",
+  "updated_at": "2026-08-18T11:50:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39642096,
+  "parameters_human": "39.6M",
+  "storage_bytes": 158659712,
+  "storage_human": "159 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diarray/bam-vits-pseudo-ipa · Hugging Face",
+      "url": "https://huggingface.co/diarray/bam-vits-pseudo-ipa",
+      "snippet": "Instructions to use diarray/bam-vits-pseudo-ipa with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use diarray/bam-vits-pseudo-ipa with Transformers:"
+    },
+    {
+      "title": "diarray/bam-vits · Hugging Face",
+      "url": "https://huggingface.co/diarray/bam-vits",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "$ cd /home/diarray | And What&#x27;s beyond the Infinity?",
+      "url": "https://diarray-hub.github.io/",
+      "snippet": "Fintech: Lately, my focus shifted to exploring and adapting foundational ML techniques and our speech foundations to drive financial inclusion in Mali. 2022 - Present"
+    },
+    {
+      "title": "diarray-hub (Diarra Yacouba) / Repositories · GitHub",
+      "url": "https://github.com/diarray-hub?tab=repositories",
+      "snippet": "And what&#x27;s beyond the infinity ? diarray-hub has 22 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/vits.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/vits.md",
+      "snippet": "VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech) is an end-to-end speech synthesis model, simplifying the traditional two-stage text-to-speech (TTS) systems. It&#x27;s unique because it directly synthesizes speech from text using variational inference, adversarial learning, and normalizing flows to produce natural and expressive speech with diverse rhythms and ..."
+    }
+  ]
+}

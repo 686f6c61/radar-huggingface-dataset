@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "visible-cx/embeddinggemma-300m-LiteRT",
+  "slug": "visible-cx-embeddinggemma-300m-litert",
+  "author": "visible-cx",
+  "url": "https://huggingface.co/visible-cx/embeddinggemma-300m-LiteRT",
+  "created_at": "2026-08-17T21:17:29.000Z",
+  "updated_at": "2026-08-17T22:38:26.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "on-device",
+    "embeddings",
+    "sentence-embedding",
+    "quantized",
+    "sentence-similarity",
+    "base_model:google/embeddinggemma-300m",
+    "base_model:finetune:google/embeddinggemma-300m",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 183815791,
+  "storage_human": "184 MB",
+  "base_model": "google/embeddinggemma-300m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:20.778Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/embeddinggemma-300m · Hugging Face",
+      "url": "https://huggingface.co/litert-community/embeddinggemma-300m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/embeddinggemma-300m · Hugging Face",
+      "url": "https://huggingface.co/google/embeddinggemma-300m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "embeddinggemma-300m: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/embeddinggemma-300m-litert-community",
+      "snippet": "Overview embeddinggemma-300m is a lightweight text embedding model optimized for on-device deployment on Android and iOS via LiteRT or the Google AI Edge RAG Library. Built by litert-community as a variant of Google&#x27;s EmbeddingGemma, this 300-million parameter model generates dense vector representations for semantic search and similarity tasks. The model uses sentence-transformers library and ..."
+    },
+    {
+      "title": "EmbeddingGemma: Powerful and Lightweight Text Representations",
+      "url": "https://arxiv.org/html/2509.20354v3",
+      "snippet": "EmbeddingGemma is a lightweight yet powerful general-purpose embedding model built upon the Gemma 3 language model family. Our novel training recipe leverages knowledge from larger models through initialization from a rich T5Gemma encoder and distillation from the highly-capable Gemini Embedding model."
+    },
+    {
+      "title": "EmbeddingGemma model overview | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/embeddinggemma",
+      "snippet": "EmbeddingGemma is a 308M parameter multilingual text embedding model based on Gemma 3. It is optimized for use in everyday devices, such as phones, laptops, and tablets. The model produces numerical representations of text to be used for downstream tasks like information retrieval, semantic similarity search, classification, and clustering."
+    }
+  ]
+}

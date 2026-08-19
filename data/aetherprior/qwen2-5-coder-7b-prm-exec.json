@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "AetherPrior/qwen2.5-Coder-7b-prm-exec",
+  "slug": "aetherprior-qwen2-5-coder-7b-prm-exec",
+  "author": "AetherPrior",
+  "url": "https://huggingface.co/AetherPrior/qwen2.5-Coder-7b-prm-exec",
+  "created_at": "2026-08-16T01:56:47.000Z",
+  "updated_at": "2026-08-17T07:49:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1767655680,
+  "parameters_human": "1.77B",
+  "storage_bytes": 56576480843,
+  "storage_human": "56.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

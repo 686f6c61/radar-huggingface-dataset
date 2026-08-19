@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SkandaBN/GenAI",
+  "slug": "skandabn-genai",
+  "author": "SkandaBN",
+  "url": "https://huggingface.co/SkandaBN/GenAI",
+  "created_at": "2026-08-17T04:39:01.000Z",
+  "updated_at": "2026-08-17T04:50:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI Models Compared: 9 Top Tools (2026)",
+      "url": "https://albato.com/blog/publications/how-to-choose-the-right-tool-a-comparison-of-top-gen-ai-models",
+      "snippet": "Compare the top generative AI models for 2026: ChatGPT, Claude, Gemini, Grok, DeepSeek, and more, with specs, strengths, pricing, and best-fit use cases."
+    },
+    {
+      "title": "Every Generative AI Model: Benchmarks & How to Run Them | GenAIList",
+      "url": "https://genailist.net/",
+      "snippet": "Everything about every generative AI model Every model — LLMs, image, video, audio. Watch community video reviews, compare benchmark scores head-to-head, and for open models see the hardware & software to run them yourself. Everything you wanted to know, generously shared by the community."
+    },
+    {
+      "title": "Sakana Fugu: One Model to Command Them All",
+      "url": "https://sakana.ai/fugu-release/",
+      "snippet": "Sakana Fugu: One Model to Command Them All June 22, 2026 Sakana AI Releases &#x27;Fugu Ultra&#x27; to Match Frontier Performance via Autonomous Model Orchestration. Our Fugu Ultra model stands shoulder-to-shoulder with leading models like Anthropic&#x27;s Fable 5 and Mythos Preview across the industry&#x27;s most rigorous engineering, scientific, and reasoning benchmarks while delivering frontier ..."
+    },
+    {
+      "title": "How to choose the right gen AI model | Google Cloud Blog",
+      "url": "https://cloud.google.com/transform/choosing-right-gen-ai-model-trade-offs-benefits-the-prompt",
+      "snippet": "Not all problems are best solved with gen AI, which excels at tasks involving unstructured data and creative applications. Choosing the right model involves balancing various factors like governance, use case, performance, data, and resources. \"Currently, we&#x27;re seeing companies considering both open and proprietary gen AI models, often choosing a mix of both.\" This summary was created using ..."
+    },
+    {
+      "title": "Top Generative AI Models to Explore in 2025 - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "Every model offers a different set of advantages and a window into the seemingly endless possibilities of AI-driven creation. In this article, we&#x27;ll be looking into distinct AI generative, segmented into Text, Image, and Code generative AIs. Before getting into the Top generative AI models, let&#x27;s first understand in brief what is generative AI."
+    }
+  ]
+}

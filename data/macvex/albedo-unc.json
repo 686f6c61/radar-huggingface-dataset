@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Macvex/albedo-unc",
+  "slug": "macvex-albedo-unc",
+  "author": "Macvex",
+  "url": "https://huggingface.co/Macvex/albedo-unc",
+  "created_at": "2026-08-16T07:54:39.000Z",
+  "updated_at": "2026-08-16T07:54:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 101,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483227,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Macvex/rda · Hugging Face",
+      "url": "https://huggingface.co/Macvex/rda",
+      "snippet": "Macvex / rda like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 12 Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "GitHub - GDAOSU/Olbedo: [CVPR 2026] Olbedo: An Albedo and Shading ...",
+      "url": "https://github.com/GDAOSU/Olbedo",
+      "snippet": "[CVPR 2026] Olbedo: An Albedo and Shading Aerial Dataset for Large-Scale Outdoor Environments - GDAOSU/Olbedo"
+    },
+    {
+      "title": "[2602.22025] Olbedo: An Albedo and Shading Aerial Dataset for Large ...",
+      "url": "https://arxiv.org/abs/2602.22025",
+      "snippet": "Intrinsic image decomposition (IID) of outdoor scenes is crucial for relighting, editing, and understanding large-scale environments, but progress has been limited by the lack of real-world datasets with reliable albedo and shading supervision. We introduce Olbedo, a large-scale aerial dataset for outdoor albedo--shading decomposition in the wild. Olbedo contains 5,664 UAV images captured ..."
+    },
+    {
+      "title": "Macvex/se02 · Hugging Face",
+      "url": "https://huggingface.co/Macvex/se02",
+      "snippet": "Duplicated from sota1028/albedo-qwen3.6-35b-miner-02 Macvex / se02 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 11 Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Song_Olbedo_An_Albedo_and_Shading_Aerial_Dataset_for_Large-Scale_Outdoor_CVPR_2026_paper.html",
+      "snippet": "Intrinsic image decomposition (IID) of outdoor scenes is crucial for relighting, editing, and understanding large-scale environments, but progress has been limited by the lack of real-world datasets with reliable albedo and shading supervision. We introduce Olbedo, a large-scale aerial dataset for outdoor albedo--shading decomposition in the wild."
+    }
+  ]
+}

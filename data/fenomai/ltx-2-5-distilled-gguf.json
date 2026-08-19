@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "FenomAI/LTX-2.5-Distilled-GGUF",
+  "slug": "fenomai-ltx-2-5-distilled-gguf",
+  "author": "FenomAI",
+  "url": "https://huggingface.co/FenomAI/LTX-2.5-Distilled-GGUF",
+  "created_at": "2026-08-14T02:57:37.000Z",
+  "updated_at": "2026-08-14T02:57:37.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "image-to-video",
+    "text-to-video",
+    "video-to-video",
+    "audio-to-video",
+    "ltx-video",
+    "lightricks",
+    "ltx-2.5",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:quantized:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 378,
+  "trending_score": 0,
+  "parameters": 21004025600,
+  "parameters_human": "21.00B",
+  "storage_bytes": 116934978641,
+  "storage_human": "116.9 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FenomAI/LTX-2.5-Distilled-GGUF · Hugging Face",
+      "url": "https://huggingface.co/FenomAI/LTX-2.5-Distilled-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX 2.5 - Video Generation (INT8/BF16/NVFP4/GGUF)",
+      "url": "https://www.stablediffusiontutorials.com/2026/08/ltx-25-video-generationint8bf16nvfp4gguf.html",
+      "snippet": "LTX-2.5 is an open-weight model designed for local execution and fine-tuning. Its primary capability is generating synchronized, high-fidelity video and audio from text, image, and video inputs."
+    },
+    {
+      "title": "FenomAI/LTX-2.3-DISTILLED · Hugging Face",
+      "url": "https://huggingface.co/FenomAI/LTX-2.3-DISTILLED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Multimodal Model For Generative Creation | LTX Model",
+      "url": "https://ltx.io/model",
+      "snippet": "LTX Model is an AI multimodal generation model built for real workflows, enabling reliable, flexible, production-grade AI creation at scale."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    }
+  ]
+}

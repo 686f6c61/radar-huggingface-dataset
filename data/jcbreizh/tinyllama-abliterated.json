@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "jcbreizh/tinyllama-abliterated",
+  "slug": "jcbreizh-tinyllama-abliterated",
+  "author": "jcbreizh",
+  "url": "https://huggingface.co/jcbreizh/tinyllama-abliterated",
+  "created_at": "2026-08-14T09:02:29.000Z",
+  "updated_at": "2026-08-14T09:02:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200119656,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

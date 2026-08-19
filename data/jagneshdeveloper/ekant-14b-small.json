@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Jagneshdeveloper/Ekant-14b-small",
+  "slug": "jagneshdeveloper-ekant-14b-small",
+  "author": "Jagneshdeveloper",
+  "url": "https://huggingface.co/Jagneshdeveloper/Ekant-14b-small",
+  "created_at": "2026-08-17T18:05:39.000Z",
+  "updated_at": "2026-08-17T19:51:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "text-generation-inference",
+    "code",
+    "agent",
+    "custom-tune",
+    "slerp-merge",
+    "ties-merge",
+    "reasoning",
+    "conversational",
+    "en",
+    "base_model:microsoft/Phi-4-reasoning-plus",
+    "base_model:finetune:microsoft/Phi-4-reasoning-plus",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 228,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27750309520,
+  "storage_human": "27.8 GB",
+  "base_model": "microsoft/phi-4, microsoft/Phi-4-reasoning-plus",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic Claims Claude AI Models Hacked 3 Organizations During ...",
+      "url": "https://www.breitbart.com/tech/2026/07/31/anthropic-claims-claude-ai-models-hacked-3-organizations-during-security-testing/",
+      "snippet": "AI startup Anthropic claims that its Claude AI models hacked the systems of three separate organizations during cybersecurity evaluations."
+    },
+    {
+      "title": "Jagneshdeveloper (jagnesh Kumar) - Hugging Face",
+      "url": "https://huggingface.co/Jagneshdeveloper",
+      "snippet": "User profile of jagnesh Kumar on Hugging Face"
+    },
+    {
+      "title": "How AI Models From OpenAI and Anthropic Went Rogue",
+      "url": "https://www.wsj.com/tech/ai/how-ai-models-from-openai-and-anthropic-went-rogue-a28e29ee",
+      "snippet": "Watch to learn how an AI agent escaped \"sandboxed\" environments and hacked a separate company—leading to calls for regulation."
+    },
+    {
+      "title": "jagneshdeveloper · GitHub",
+      "url": "https://github.com/jagneshdeveloper",
+      "snippet": "Joined Jun 24, 2026 Block or report user Block or report jagneshdeveloper Block user Add an optional note offler-ai offler-ai Public by ~ jagabadmash TypeScript"
+    },
+    {
+      "title": "[2602.13156] In-Context Autonomous Network Incident Response: An End-to ...",
+      "url": "https://arxiv.org/abs/2602.13156",
+      "snippet": "To address these limitations, we propose to leverage large language models&#x27; (LLM) pre-trained security knowledge and in-context learning to create an end-to-end agentic solution for incident response planning. Specifically, our agent integrates four functionalities, perception, reasoning, planning, and action, into one lightweight LLM (14b model)."
+    }
+  ]
+}

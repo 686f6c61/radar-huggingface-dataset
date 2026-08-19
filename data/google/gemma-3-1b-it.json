@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "google/gemma-3-1b-it",
+  "slug": "google-gemma-3-1b-it",
+  "author": "google",
+  "url": "https://huggingface.co/google/gemma-3-1b-it",
+  "created_at": "2025-03-10T12:09:00.000Z",
+  "updated_at": "2025-04-04T13:12:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "conversational",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-1b-pt",
+    "base_model:finetune:google/gemma-3-1b-pt",
+    "license:gemma",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 1099,
+  "downloads_30d": 5002265,
+  "trending_score": 8,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 10671219620,
+  "storage_human": "10.7 GB",
+  "base_model": "google/gemma-3-1b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Gemma 3: Google&#x27;s new open model based on Gemini 2.0",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-3/",
+      "snippet": "Gemma 3 offers out-of-the-box support for over 35 languages and pretrained support for over 140 languages. Create AI with advanced text and visual reasoning capabilities: Easily build applications that analyze images, text, and short videos, opening up new possibilities for interactive and intelligent applications 1 ."
+    },
+    {
+      "title": "google/gemma-3-1b-it at main - Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "snippet": "Description Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. Gemma 3 models are multimodal, handling text and image input and generating text output, with open weights for both pre-trained variants and instruction-tuned variants."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "flashrt/fp8-prefill-attention-blackwell",
+  "slug": "flashrt-fp8-prefill-attention-blackwell",
+  "author": "flashrt",
+  "url": "https://huggingface.co/flashrt/fp8-prefill-attention-blackwell",
+  "created_at": "2026-07-20T11:14:48.000Z",
+  "updated_at": "2026-08-17T08:16:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1614440,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

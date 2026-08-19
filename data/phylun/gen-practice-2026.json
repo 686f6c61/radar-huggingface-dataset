@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "phylun/gen-practice-2026",
+  "slug": "phylun-gen-practice-2026",
+  "author": "phylun",
+  "url": "https://huggingface.co/phylun/gen-practice-2026",
+  "created_at": "2026-08-09T03:03:42.000Z",
+  "updated_at": "2026-08-18T04:54:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286347831,
+  "storage_human": "286 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phylun (Seungbo Shim) - Hugging Face",
+      "url": "https://huggingface.co/phylun/models",
+      "snippet": "Recent Activity updated a modelabout 5 hours ago phylun/FOMLIG_TEST published a modelabout 5 hours ago phylun/FOMLIG_TEST updated a modelabout 18 hours ago phylun/gen-practice-2026 View all activity"
+    },
+    {
+      "title": "FDA Warning Letter highlights risks of using AI in drug manufacturing",
+      "url": "https://www.dlapiper.com/insights/publications/2026/04/fda-warning-letter-highlights-risks-of-using-ai-in-drug-manufacturing",
+      "snippet": "In April 2026, FDA cited a drug manufacturer for improper reliance on AI in carrying out its cGMP obligations for the first time. The Warning Letter discusses several examples of how the company utilized AI agents in generating core documents and records that manufacturers are required to maintain under cGMP regulations, such as drug product specifications, procedures, and master production ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: DeepSeek-V4-Flash-0731 by DeepSeek on Jul 31 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "[2606.02800] Cosmos 3: Omnimodal World Models for Physical AI",
+      "url": "https://arxiv.org/abs/2606.02800",
+      "snippet": "We introduce Cosmos 3, a family of omnimodal world models designed to jointly process and generate language, image, video, audio, and action sequences within a unified mixture-of-transformers architecture. By supporting highly flexible input-output configurations, Cosmos 3 seamlessly unifies critical modalities for Physical AI -- effectively subsuming vision-language models, video generators ..."
+    },
+    {
+      "title": "The best AI models in 2026: What model to pick for your use case",
+      "url": "https://www.pluralsight.com/resources/blog/ai-and-data/best-ai-models-2026-list",
+      "snippet": "The AI race isn&#x27;t about a single winner, but about picking the right model for your specific task. Here&#x27;s a list of the top contenders in 2026."
+    }
+  ]
+}

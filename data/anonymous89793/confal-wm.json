@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "anonymous89793/ConfAL-WM",
+  "slug": "anonymous89793-confal-wm",
+  "author": "anonymous89793",
+  "url": "https://huggingface.co/anonymous89793/ConfAL-WM",
+  "created_at": "2026-08-17T13:39:02.000Z",
+  "updated_at": "2026-08-18T11:45:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "active-learning",
+    "confidence-estimation",
+    "robot-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37466904459,
+  "storage_human": "37.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Malicious AI on the Dark Web | WormGPT, FraudGPT & More",
+      "url": "https://www.dexpose.io/malicious-ai-on-the-dark-web/",
+      "snippet": "WormGPT, FraudGPT & other malicious AI models are sold on the dark web for phishing and fraud. See how they work and how to detect and stop them."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "AI Watermark Checker — Detect AI Tool Signatures · Calabi",
+      "url": "https://calabilabs.com/tools/ai-watermark-checker.html",
+      "snippet": "Calabi / Tools / AI Watermark Checker AI Watermark Checker Scan an image&#x27;s EXIF, XMP, and binary data for known AI tool signatures — Midjourney job IDs, DALL·E model tags, Adobe Firefly credits, Stable Diffusion parameters, Kling, Runway, and more. Runs entirely in your browser."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "domenicor046/ink9um-dense-labels",
+  "slug": "domenicor046-ink9um-dense-labels",
+  "author": "domenicor046",
+  "url": "https://huggingface.co/domenicor046/ink9um-dense-labels",
+  "created_at": "2026-08-17T17:05:36.000Z",
+  "updated_at": "2026-08-17T17:27:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vesuvius-challenge",
+    "ink-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70615040,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Chenfan0206/MaskCLIP: Official PyTorch implementation of ...",
+      "url": "https://github.com/Chenfan0206/MaskCLIP",
+      "snippet": "Official PyTorch implementation of \"Extract Free Dense Labels from CLIP\" (ECCV 22 Oral) - Chenfan0206/MaskCLIP"
+    },
+    {
+      "title": "All 388 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 388 large language models across 291 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    },
+    {
+      "title": "Model & LoRA Library - Track Every AI Model Automatically | Numonic ...",
+      "url": "https://www.numonic.ai/product/models",
+      "snippet": "Model & LoRA Library Know Which Model Made Every Result Stop guessing which LoRA or checkpoint produced your best work. Numonic auto-detects every model from your ComfyUI workflows and builds a browsable, searchable library — with full usage history."
+    },
+    {
+      "title": "[2412.18404] Extract Free Dense Misalignment from CLIP",
+      "url": "https://arxiv.org/abs/2412.18404",
+      "snippet": "Recent vision-language foundation models still frequently produce outputs misaligned with their inputs, evidenced by object hallucination in captioning and prompt misalignment in the text-to-image generation model. Recent studies have explored methods for identifying misaligned elements, aiming not only to enhance interpretability but also to improve model performance. However, current ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

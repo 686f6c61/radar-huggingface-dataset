@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "meridianal/ARA.AI",
+  "slug": "meridianal-ara-ai",
+  "author": "meridianal",
+  "url": "https://huggingface.co/meridianal/ARA.AI",
+  "created_at": "2026-04-06T13:29:18.000Z",
+  "updated_at": "2026-08-17T22:55:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "finance",
+    "trading",
+    "time-series",
+    "stock-prediction",
+    "gradient-boosting",
+    "cross-sectional",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48901449149,
+  "storage_human": "48.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meridianal/ARA.AI · Hugging Face",
+      "url": "https://huggingface.co/meridianal/ARA.AI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MeridianAlgo/ARA.AI · Hugging Face",
+      "url": "https://huggingface.co/MeridianAlgo/ARA.AI",
+      "snippet": "ARA AI - Financial Prediction Models Continuously trained ensemble ML models for stock and forex prediction. Models Stock Models: Trained on random selection of stocks every 2 hours Forex Models: EURUSD, GBPUSD, USDJPY trained every 2 hours Training Schedule Models are automatically retrained every 2 hours (12 times daily) using: 2 years of historical data Incremental training on existing ..."
+    },
+    {
+      "title": "GitHub - MeridianAlgo/AraAI: A machine learning platform for market ...",
+      "url": "https://github.com/MeridianAlgo/AraAI/tree/main/",
+      "snippet": "It combines state-of-the-art sequence modeling (Mamba-2 SSM), sparse expert routing (MoE with SwiGLU), and efficient attention (GQA + Flash Attention 2) into a single unified model — continuously trained and deployed via GitHub Actions every 2 hours. Models are hosted on Hugging Face: meridianal/ARA.AI"
+    },
+    {
+      "title": "GitHub - MeridianAlgo/AraAI: Machine learning platform for market ...",
+      "url": "https://github.com/MeridianAlgo/AraAI",
+      "snippet": "The full rationale, the diagnosis, and every number are in docs/ARA_V8.md. The v7 stack is frozen under legacy/ and still runs on demand. Trained models: meridianal/ARA.AI."
+    },
+    {
+      "title": "ARA.AI | Sweet Tea Studio",
+      "url": "https://sweettea.co/resources/meridianal-ara-ai-huggingface-model-meridianal-ara-ai",
+      "snippet": "Meridian.AI — Financial Prediction Models Overview Meridian.AI is a deep-learning system that forecasts next-day price movement for stocks and forex pairs. It reads recent market history, turns it into 44 technical indicators, and outputs a next-day return estimate plus a direction signal (up/down)."
+    }
+  ]
+}

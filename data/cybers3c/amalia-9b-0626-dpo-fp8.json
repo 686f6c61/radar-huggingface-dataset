@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "CYBERS3C/AMALIA-9B-0626-DPO-FP8",
+  "slug": "cybers3c-amalia-9b-0626-dpo-fp8",
+  "author": "CYBERS3C",
+  "url": "https://huggingface.co/CYBERS3C/AMALIA-9B-0626-DPO-FP8",
+  "created_at": "2026-08-17T19:55:29.000Z",
+  "updated_at": "2026-08-17T20:01:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "portuguese",
+    "european-portuguese",
+    "fp8",
+    "vllm",
+    "compressed-tensors",
+    "quantized",
+    "conversational",
+    "pt",
+    "base_model:amalia-llm/AMALIA-9B-0626-DPO",
+    "base_model:quantized:amalia-llm/AMALIA-9B-0626-DPO",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 9152319488,
+  "parameters_human": "9.15B",
+  "storage_bytes": 10220373800,
+  "storage_human": "10.2 GB",
+  "base_model": "amalia-llm/AMALIA-9B-0626-DPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMALIA-9B-0626-DPO - Hugging Face",
+      "url": "https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO",
+      "snippet": "As an open model, AMALIA should undergo task-specific and domain-specific testing before being deployed in any production system. Uses that violate applicable law. AMALIA must not be deployed in ways that conflict with the EU AI Act, the General Data Protection Regulation (GDPR), or other applicable legal frameworks."
+    },
+    {
+      "title": "README.md · amalia-llm/AMALIA-9B-0626-DPO at main - Hugging Face",
+      "url": "https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO/blob/main/README.md",
+      "snippet": "The DPO phase aims to align AMALIA&#x27;s behaviour with human preferences, refining the model&#x27;s responses through learning based on pairwise comparisons. In this phase, the model learns to distinguish between higher- and lower-quality responses to the same instruction, optimizing itself to generate more useful, safe, and value-aligned outputs, while simultaneously minimizing undesired behaviours ..."
+    },
+    {
+      "title": "GitHub - AMALIA-LLM/AMALIA: Entry point for AMALIA related resources ...",
+      "url": "https://github.com/AMALIA-LLM/AMALIA",
+      "snippet": "AMALIA aims to bridge this gap by delivering fully open-source resources and LLMs designed specifically for European Portuguese. To support the development of high-quality pt-PT language models, AMALIA provides an end-to-end open ecosystem spanning data processing, model training, and evaluation."
+    },
+    {
+      "title": "Architecture graph for amalia-llm/AMALIA-9B-0626-DPO.",
+      "url": "https://hfviewer.com/amalia-llm/AMALIA-9B-0626-DPO",
+      "snippet": "amalia-llm/AMALIA-9B-0626-DPO architecture at a glance amalia-llm/AMALIA-9B-0626-DPO is a text-generation model (llama architecture). It uses 42 transformer layers, a hidden size of 4,096, and 32 query heads with 8 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 12,288."
+    },
+    {
+      "title": "AMALIA 9B 0626 DPO by amalia-llm - LLM Explorer",
+      "url": "https://llm-explorer.com/model/amalia-llm%2FAMALIA-9B-0626-DPO,5TWf78AyWDYn04iTxBYYz5",
+      "snippet": "AMALIA 9B 0626 DPO is an open-source 9b LLM by amalia-llm. VRAM 18.3GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

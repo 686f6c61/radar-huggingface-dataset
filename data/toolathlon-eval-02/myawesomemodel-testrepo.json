@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "toolathlon-eval-02/MyAwesomeModel-TestRepo",
+  "slug": "toolathlon-eval-02-myawesomemodel-testrepo",
+  "author": "toolathlon-eval-02",
+  "url": "https://huggingface.co/toolathlon-eval-02/MyAwesomeModel-TestRepo",
+  "created_at": "2026-08-17T20:16:47.000Z",
+  "updated_at": "2026-08-17T20:17:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "toolathlon-eval-02/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/toolathlon-eval-02/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "toolathlon-eval-02 (toolathlon-eval-02) - Hugging Face",
+      "url": "https://huggingface.co/toolathlon-eval-02",
+      "snippet": "models1 toolathlon-eval-02/MyAwesomeModel-TestRepo Feature Extraction •Updated about 8 hours ago"
+    },
+    {
+      "title": "GitHub - hkust-nlp/Toolathlon: [ICLR 2026] The Tool Decathlon ...",
+      "url": "https://github.com/hkust-nlp/Toolathlon",
+      "snippet": "Please make sure to check EVAL_SERVICE_README.md for more details (e.g. if you want to test your locally deployed models). Besides using the evaluation service, below we introduce how to set up Toolathlon evaluation on your own machine."
+    },
+    {
+      "title": "HuggingFace Upload - Toolathlon",
+      "url": "https://toolathlon.xyz/docs/tasks/tech/19",
+      "snippet": "Instruction Please scan the workspace folder, pick the model checkpoint with the highest eval_accuracy, then push the best model&#x27;s folder to Hugging Face Hub as a model repo named MyAwesomeModel-TestRepo. Finalize the repo&#x27;s README.md with the detailed evaluation results for all 15 benchmarks (keep three decimal places), you must refer to the current README.md under workspace and ensure ..."
+    },
+    {
+      "title": "MyAwesomeModel TestRepo (未知) — MMLU 30 | Benchmarks & Deploy Guide ...",
+      "url": "https://openmodelmap.com/model/ToolathlonBot/MyAwesomeModel-TestRepo",
+      "snippet": "MyAwesomeModel TestRepo by dongbobo. Scores: MMLU 30, . 未知 open-source AI model. MyAwesomeModel-TestRepo is an embedding model based on BERT by dongbobo, licensed under MIT and desi"
+    }
+  ]
+}

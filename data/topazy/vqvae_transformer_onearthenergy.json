@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "topazy/vqvae_transformer_onearthenergy",
+  "slug": "topazy-vqvae_transformer_onearthenergy",
+  "author": "topazy",
+  "url": "https://huggingface.co/topazy/vqvae_transformer_onearthenergy",
+  "created_at": "2026-08-18T20:24:01.000Z",
+  "updated_at": "2026-08-18T20:24:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MishaLaskin/vqvae: A pytorch implementation of the vector ...",
+      "url": "https://github.com/MishaLaskin/vqvae",
+      "snippet": "The VQ VAE has the following fundamental model components: An Encoder class which defines the map x -> z_e A VectorQuantizer class which transform the encoder output into a discrete one-hot vector that is the index of the closest embedding vector z_e -> z_q A Decoder class which defines the map z_q -> x_hat and reconstructs the original image The Encoder / Decoder classes are convolutional and ..."
+    },
+    {
+      "title": "hpcai-tech/vqvae · Hugging Face",
+      "url": "https://huggingface.co/hpcai-tech/vqvae",
+      "snippet": "VQVAE This repository is a clone of the VideoGPT in order to convert the VQ-VAE model to the Hugging Face format for easier model loading. Paper: VideoGPT: Video Generation using VQ-VAE and Transformers License We follow the MIT license distributed by the VideoGPT project."
+    },
+    {
+      "title": "GitHub - AndrewBoessen/VQ-VAE: A PyTorch implementation of Vector ...",
+      "url": "https://github.com/AndrewBoessen/VQ-VAE",
+      "snippet": "VQ-VAE (Vector Quantized Variational Autoencoder) is a type of generative model that combines ideas from vector quantization and variational autoencoders. It was introduced in the paper \"Neural Discrete Representation Learning\" by van den Oord et al. This implementation aims to provide a flexible and efficient PyTorch version of the VQ-VAE architecture."
+    },
+    {
+      "title": "Vector Quantised Variational AutoEncoder - GitHub Pages",
+      "url": "https://juliusruseckas.github.io/ml/vq-vae.html",
+      "snippet": "Model Vector Quantizer From https://github.com/AntixK/PyTorch-VAE/blob/master/models/vq_vae.py and https://github.com/deepmind/sonnet/blob/v2/sonnet/src/nets/vqvae.py"
+    },
+    {
+      "title": "README.md · keras-io/vq-vae at main - Hugging Face",
+      "url": "https://huggingface.co/keras-io/vq-vae/blob/main/README.md",
+      "snippet": "Using the VQ method allows the model to avoid issues of \"posterior collapse\". By pairing these representations with an autoregressive prior, VQ-VAE models can generate high quality images, videos, speech as well as doing high quality speaker conversion and unsupervised learning of phonemes, providing further evidence of the utility of the ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Plana-Chan/DeepSeek-V4-Pro-0813",
+  "slug": "plana-chan-deepseek-v4-pro-0813",
+  "author": "Plana-Chan",
+  "url": "https://huggingface.co/Plana-Chan/DeepSeek-V4-Pro-0813",
+  "created_at": "2026-08-17T16:34:10.000Z",
+  "updated_at": "2026-08-17T16:34:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1650497936906,
+  "parameters_human": "1650.50B",
+  "storage_bytes": 1781787608346,
+  "storage_human": "1781.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · deepseek-ai/DeepSeek-V4-Pro-0813 at main",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/main/README.md",
+      "snippet": "DeepSeek-V4-Pro-0813 is the official release of DeepSeek-V4-Pro, superseding the preview version, with greatly enhanced agentic capabilities and performance improvements that are especially pronounced in production environments."
+    },
+    {
+      "title": "DeepSeek-V4-Pro-0813: Specs, Pricing, API and Benchmark Boundaries ...",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/deepseek-v4-pro",
+      "snippet": "DeepSeek&#x27;s current deepseek-v4-pro API version is DeepSeek-V4-Pro-0813, with the calling name unchanged. It is a text-only 1.6T-total/49B-active MoE model with a 1M-token context window and 384K maximum output, offering non-thinking, Think High, and Think Max modes plus the Responses API, Anthropic-compatible access, JSON output, and tool calls."
+    },
+    {
+      "title": "DeepSeek: DeepSeek V4 Pro 0813 model | Phala",
+      "url": "https://phala.com/models/deepseek/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
+    },
+    {
+      "title": "DeepSeek-V4-Pro-0813 — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/deepseek/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek-V4-Pro-0813 is an AI model released by DeepSeek on Thursday, Aug 13 2026, 13 days after DeepSeek-V4-Flash-0731. Benchmark results (shown below) cover Terminal-Bench 2.1, Toolathlon-Verified, CyberGym, Humanity&#x27;s Last Exam, and AutomationBench."
+    },
+    {
+      "title": "DeepSeek-V4-Pro-0813 API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/deepseek-ai/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek-V4-Pro-0813 is the official release of DeepSeek-V4-Pro, superseding the preview version, with greatly enhanced agentic capabilities and performance improvements that are especially pronounced in production environments. It is built on the DeepSeek-V4-Pro (Preview) model structure, with a DSpark speculative decoding module attached."
+    }
+  ]
+}

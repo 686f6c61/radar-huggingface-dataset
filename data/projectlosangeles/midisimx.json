@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "projectlosangeles/midisimx",
+  "slug": "projectlosangeles-midisimx",
+  "author": "projectlosangeles",
+  "url": "https://huggingface.co/projectlosangeles/midisimx",
+  "created_at": "2026-07-23T04:04:59.000Z",
+  "updated_at": "2026-08-18T01:49:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "MIDI",
+    "similarity",
+    "midisim",
+    "similarity search",
+    "MIDI embeddings",
+    "MIDI similarity",
+    "MIDI MLM",
+    "en",
+    "dataset:asigalov61/Discover-Piano",
+    "dataset:projectlosangeles/Discover-MIDI-Dataset",
+    "base_model:projectlosangeles/midisim",
+    "base_model:finetune:projectlosangeles/midisim",
+    "doi:10.57967/hf/10032",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457841305,
+  "storage_human": "458 MB",
+  "base_model": "projectlosangeles/midisim",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "projectlosangeles/midisimx · Hugging Face",
+      "url": "https://huggingface.co/projectlosangeles/midisimx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=midisim",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: midisim Clear all"
+    },
+    {
+      "title": "GitHub - asigalov61/midisimx: Greately improved, enhanced and ...",
+      "url": "https://github.com/asigalov61/midisimx/tree/main",
+      "snippet": "Greately improved, enhanced and streamlined fork of midisim for calculating, searching, and analyzing MIDI-to-MIDI similarity at scale - asigalov61/midisimx"
+    },
+    {
+      "title": "midisimx/midisimx/README.md at main · asigalov61/midisimx",
+      "url": "https://github.com/asigalov61/midisimx/blob/main/midisimx/README.md",
+      "snippet": "Greatly improved, enhanced, and streamlined fork of midisim for calculating, searching, and analyzing MIDI-to-MIDI similarity at scale - midisimx/midisimx/README.md at main · asigalov61/midisimx"
+    },
+    {
+      "title": "Los Angeles MIDI Dataset - Zenodo",
+      "url": "https://zenodo.org/records/7485085",
+      "snippet": "SOTA mega-scale MIDI dataset for MIR and Music AI purposes Main Features: 1) ~1000000 MIDIs to explore :) 2) Each MIDI file was read-checked and de-duped 3) Extensive meta-data for each MIDI file 4) Detailed features matrix for each MIDI file 5) Helper Python code Project Los Angeles Tegridy Code 2022"
+    }
+  ]
+}

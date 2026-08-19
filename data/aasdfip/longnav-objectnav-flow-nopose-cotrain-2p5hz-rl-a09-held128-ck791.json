@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-rl-a09-held128-ck791",
+  "slug": "aasdfip-longnav-objectnav-flow-nopose-cotrain-2p5hz-rl-a09-held128-ck791",
+  "author": "Aasdfip",
+  "url": "https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-rl-a09-held128-ck791",
+  "created_at": "2026-08-17T13:52:09.000Z",
+  "updated_at": "2026-08-17T13:52:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "robotics",
+    "navigation",
+    "objectnav",
+    "reinforcement-learning",
+    "vision-language-action",
+    "habitat",
+    "flow-matching",
+    "base_model:Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-merged",
+    "base_model:adapter:Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 587732130,
+  "storage_human": "588 MB",
+  "base_model": "Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-rl-a09-ck303 ...",
+      "url": "https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-rl-a09-ck303",
+      "snippet": "This adapter holds the RL delta alone (~2% of the SFT adapter&#x27;s magnitude). Both turn_vector_head_config.json (model.model_id -- this is the field the flow_rollout backend actually reads) and adapter/adapter_config.json point at Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz-merged, so --ckpt <this repo> works with the same code that ran ..."
+    },
+    {
+      "title": "longnav-objectnav-flow-nopose-cotrain-2p5hz - Hugging Face",
+      "url": "https://huggingface.co/Aasdfip/longnav-objectnav-flow-nopose-cotrain-2p5hz",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+      "url": "https://labs.google/fx/tools/flow",
+      "snippet": "Try Google Flow, the ultimate AI for creatives. Transform ideas into reality using Google&#x27;s advanced generative models for cinematic video, images, & tools."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    }
+  ]
+}

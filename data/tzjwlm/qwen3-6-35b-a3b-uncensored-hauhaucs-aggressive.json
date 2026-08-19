@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tzjwlm/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "slug": "tzjwlm-qwen3-6-35b-a3b-uncensored-hauhaucs-aggressive",
+  "author": "tzjwlm",
+  "url": "https://huggingface.co/tzjwlm/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-08-18T19:26:36.000Z",
+  "updated_at": "2026-08-18T19:30:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 37506560384,
+  "storage_human": "37.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Uncensored: A 35B MoE Model With 262K Context",
+      "url": "https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context",
+      "snippet": "Join the Discord server (linked in the model description) for updates and roadmap information. This is a simplified guide to an AI model called Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive maintained by HauhauCS. If you like these kinds of analysis, join AIModels.fyi or follow us on Twitter."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Benchmarks & Speed (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/qwen3-6-35b-a3b",
+      "snippet": "Official exact-value snapshot from the Qwen/Qwen3.6-35B-A3B Hugging Face model card. The public repository was created on April 15, 2026, and the model card states a native 262,144-token context window extensible to 1,010,000 tokens."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "Qwen3.6-35B-A3B is the smaller sibling of Qwen3.5, sharing the same gated-delta-networks MoE architecture but with 35B total parameters and 3B activated (256 experts, 8 routed + 1 shared)."
+    }
+  ]
+}

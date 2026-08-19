@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "pranthor/titulm-gemma-2b-bengali-lora-test",
+  "slug": "pranthor-titulm-gemma-2b-bengali-lora-test",
+  "author": "pranthor",
+  "url": "https://huggingface.co/pranthor/titulm-gemma-2b-bengali-lora-test",
+  "created_at": "2026-08-17T10:50:29.000Z",
+  "updated_at": "2026-08-17T11:27:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "base_model:hishab/titulm-gemma-2-2b-v1.1",
+    "base_model:finetune:hishab/titulm-gemma-2-2b-v1.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290085635,
+  "storage_human": "290 MB",
+  "base_model": "hishab/titulm-gemma-2-2b-v1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "titulm-gemma-2b-bengali-lora-medical-qna - Hugging Face",
+      "url": "https://huggingface.co/pranthor/titulm-gemma-2b-bengali-lora-medical-qna",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pranthor (Pranta Nath) - Hugging Face",
+      "url": "https://huggingface.co/pranthor",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 8 hours ago ... updated a dataset 1 day ago"
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "GitHub - verbex-ai/titulm: TituLM Development Library",
+      "url": "https://github.com/verbex-ai/titulm",
+      "snippet": "We have trained multiple variants of Gemma family models with different sizes and configurations. Our released models are: Gemma 2 2B TituLM-Gemma-2-2B-v1.1: Model trained with 4.4B Bangla tokens with original gemma 2 tokenizer. TituLM-Gemma-2-2B-v1.0: Model trained with 3B Bangla tokens with original gemma 2 tokenizer."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.2",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.2 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    }
+  ]
+}

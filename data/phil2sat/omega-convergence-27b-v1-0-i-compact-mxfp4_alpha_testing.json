@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Phil2Sat/Omega-Convergence-27B-v1.0-I-Compact-MXFP4_ALPHA_TESTING",
+  "slug": "phil2sat-omega-convergence-27b-v1-0-i-compact-mxfp4_alpha_testing",
+  "author": "Phil2Sat",
+  "url": "https://huggingface.co/Phil2Sat/Omega-Convergence-27B-v1.0-I-Compact-MXFP4_ALPHA_TESTING",
+  "created_at": "2026-08-15T10:00:02.000Z",
+  "updated_at": "2026-08-17T14:23:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:ReadyArt/Omega-Convergence-27B-v1.0",
+    "base_model:quantized:ReadyArt/Omega-Convergence-27B-v1.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2740,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 105192697536,
+  "storage_human": "105.2 GB",
+  "base_model": "ReadyArt/Omega-Convergence-27B-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

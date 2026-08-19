@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "alst10/samuel-beckett-playwriter",
+  "slug": "alst10-samuel-beckett-playwriter",
+  "author": "alst10",
+  "url": "https://huggingface.co/alst10/samuel-beckett-playwriter",
+  "created_at": "2026-08-14T19:59:57.000Z",
+  "updated_at": "2026-08-14T20:06:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:dphn/dolphin-2.9-llama3-8b",
+    "base_model:finetune:dphn/dolphin-2.9-llama3-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030277632,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077798550,
+  "storage_human": "16.1 GB",
+  "base_model": "cognitivecomputations/dolphin-2.9-llama3-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:46:31.222Z",
+  "benchmarks": [],
+  "sources": []
+}

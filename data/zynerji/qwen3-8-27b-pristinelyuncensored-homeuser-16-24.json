@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Zynerji/Qwen3.8-27B-PristinelyUncensored-HOMEUSER-16-24",
+  "slug": "zynerji-qwen3-8-27b-pristinelyuncensored-homeuser-16-24",
+  "author": "Zynerji",
+  "url": "https://huggingface.co/Zynerji/Qwen3.8-27B-PristinelyUncensored-HOMEUSER-16-24",
+  "created_at": "2026-08-17T09:03:10.000Z",
+  "updated_at": "2026-08-17T21:05:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "compressed-tensors",
+    "mixed-precision",
+    "int4",
+    "vision-language",
+    "mtp",
+    "long-context",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "base_model:Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+    "base_model:quantized:Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 347,
+  "trending_score": 0,
+  "parameters": 4400327408,
+  "parameters_human": "4.40B",
+  "storage_bytes": 14742019445,
+  "storage_human": "14.7 GB",
+  "base_model": "Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored · Hugging Face",
+      "url": "https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+      "snippet": "1199 tensors — exact parity with Qwen/Qwen3.8-27B, including the 15-tensor MTP (multi-token-prediction) head and the full vision tower. Verified tensor-by-tensor against base."
+    },
+    {
+      "title": "Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored-HYBRID · Hugging Face",
+      "url": "https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored-HYBRID",
+      "snippet": "Zynerji / Ektome-Qwen3.8-27B-PristinelyUncensored-HYBRID like 0 Safetensors qwen3_5 abliterated uncensored quantized compressed-tensors mixed-precision mtp speculative-decoding vllm License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Ektomē Qwen3.8-27B — PristinelyUncensored HYBRID What \"hybrid\" means, exactly The MTP head is present and complete Measured ..."
+    },
+    {
+      "title": "Ektome Qwen3.8 27B PristinelyUncensored GPTQ MTP by Zynerji",
+      "url": "https://llm-explorer.com/model/Zynerji%2FEktome-Qwen3.8-27B-PristinelyUncensored-GPTQ-MTP,5B9Ez7pfpsPlkjLdKClgIF",
+      "snippet": "Rank the Ektome Qwen3.8 27B PristinelyUncensored GPTQ MTP capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Ektome-Qwen3.8-27B-PristinelyUncensored-GPTQ-MTP",
+      "url": "https://friendli.ai/models/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored-GPTQ-MTP",
+      "snippet": "Provenance Single-pass quantization from the repaired bf16 parent (Ektome-Qwen3.8-27B-PristinelyUncensored), 512 wikitext-2 calibration samples, 4-bit, group size 128, desc_act=false. Verified before upload by reloading the saved checkpoint and generating, then by serving it in vLLM."
+    }
+  ]
+}

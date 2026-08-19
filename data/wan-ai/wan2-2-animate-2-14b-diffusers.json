@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Wan-AI/Wan2.2-Animate-2-14B-Diffusers",
+  "slug": "wan-ai-wan2-2-animate-2-14b-diffusers",
+  "author": "Wan-AI",
+  "url": "https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B-Diffusers",
+  "created_at": "2026-08-06T06:09:59.000Z",
+  "updated_at": "2026-08-13T02:20:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "diffusers:WanAnimate2Pipeline",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 181,
+  "trending_score": 7,
+  "parameters": 16394878784,
+  "parameters_human": "16.39B",
+  "storage_bytes": 78735862505,
+  "storage_human": "78.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

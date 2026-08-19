@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Blaize-AI/SCRFDkps10G_Widerface",
+  "slug": "blaize-ai-scrfdkps10g_widerface",
+  "author": "Blaize-AI",
+  "url": "https://huggingface.co/Blaize-AI/SCRFDkps10G_Widerface",
+  "created_at": "2026-08-18T10:39:59.000Z",
+  "updated_at": "2026-08-18T10:40:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "object-detection",
+    "blaize",
+    "gsp",
+    "picasso-sdk",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8670293,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blaize-AI (Blaize AI) - Hugging Face",
+      "url": "https://huggingface.co/Blaize-AI",
+      "snippet": "AI and ML Edge Accelerators Video Analytics"
+    },
+    {
+      "title": "Blaize-AI/YOLOv8n_Widerface · Hugging Face",
+      "url": "https://huggingface.co/Blaize-AI/YOLOv8n_Widerface",
+      "snippet": "This model has been optimized for deployment on Blaize Xplorer AI accelerators using the Blaize Picasso SDK, a key component for building, optimizing, and deploying graph-native AI applications on the Blaize Graph Streaming Processor (GSP) hardware. The GSP architecture features a unique graph-based design that optimizes performance, power efficiency, and reduces latency, designed specifically ..."
+    },
+    {
+      "title": "Intelligence at the edge of everywhere. | Blaize",
+      "url": "https://www.blaize.com/",
+      "snippet": "Blaize® leads a new generation of computing, unleashing the potential of AI to enable significant increases in the value that technology delivers to improve how people work and live."
+    },
+    {
+      "title": "AI Edge Processor Hardware & Products - AI Machine Learning ... - Blaize",
+      "url": "https://www.blaize.com/products/",
+      "snippet": "Real-Time Edge AI With multiple feature advancements vs. legacy GPU/CPU solutions, the Blaize ® Pathfinder ® and Blaize ® Xplorer ® platforms coupled with the Blaize AI Software Suite enable developers to usher in a new era of more practical and commercially viable edge AI products across a wide range of edge use cases and industries."
+    },
+    {
+      "title": "insightface/detection/scrfd/README.md at master · deepinsight ... - GitHub",
+      "url": "https://github.com/deepinsight/insightface/blob/master/detection/scrfd/README.md",
+      "snippet": "Generated onnx model can accept dynamic input as default. You can also set specific input shape by pass --shape 640 640, then output onnx model can be optimized by onnx-simplifier."
+    }
+  ]
+}

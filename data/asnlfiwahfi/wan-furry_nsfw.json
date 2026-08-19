@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "asnlfiwahfi/Wan-Furry_NSFW",
+  "slug": "asnlfiwahfi-wan-furry_nsfw",
+  "author": "asnlfiwahfi",
+  "url": "https://huggingface.co/asnlfiwahfi/Wan-Furry_NSFW",
+  "created_at": "2026-08-17T11:06:57.000Z",
+  "updated_at": "2026-08-17T11:16:35.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 718395264,
+  "storage_human": "718 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Furry wan 2.1 1.3b img2vid (Wan2.1Fun InP) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/5664764bbd4fc9f3f2ec67871ceda414",
+      "snippet": "Explore Furry wan 2.1 1.3b img2vid (Wan2.1Fun InP) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=nsfw",
+      "snippet": "Explore machine learning models. AI-Porn/PornWorks-Bad-Boys-Photo-Realistic-Gay-and-Male-NSFW-Aesthetics-SDXL-Checkpoint"
+    },
+    {
+      "title": "NSFW-API/NSFW_Wan_1.3b · wan 2.1 - Hugging Face",
+      "url": "https://huggingface.co/NSFW-API/NSFW_Wan_1.3b/discussions/1",
+      "snippet": "whats different about this wan 2.1?"
+    },
+    {
+      "title": "Wan 2.1: Local AI Video & Uncensored Generation Setup",
+      "url": "https://www.promptus.ai/blog/wan-2-1-local-ai-video-uncensored-generation-setup",
+      "snippet": "Learn how to run Wan 2.1, a powerful local AI video model that runs on your PC for uncensored text-to-video and image-to-video generation using ComfyUI."
+    },
+    {
+      "title": "Nsfw — Prompt Collection | UncensoredHub",
+      "url": "https://uncensoredhub.ai/guides/nsfw",
+      "snippet": "316 curated nsfw prompts for AI image generation. Full metadata: sampler, steps, CFG, seed. Copy, tweak, generate."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mondk/see_upcoming_models",
+  "slug": "mondk-see_upcoming_models",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/see_upcoming_models",
+  "created_at": "2026-08-15T09:42:08.000Z",
+  "updated_at": "2026-08-17T04:57:33.000Z",
+  "license": "how-to-get-a-license-when-i-dont-want-to-die",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 71758816,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "AI Model Release Tracker Stay up to date with the latest AI model releases. This page tracks 419 models across all providers, sorted by release date."
+    },
+    {
+      "title": "New & Upcoming AI Models (2026): Release Tracker & Pricing",
+      "url": "https://capitalandcompute.net/ai-models/",
+      "snippet": "Tracker of new and upcoming AI model releases, updated July 2026: release dates, per-token pricing and primary sources for Claude, GPT, Gemini and more."
+    },
+    {
+      "title": "New AI Models 2026 - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/new-ai-models",
+      "snippet": "Discover the newest AI models released in 2026. Track the latest LLMs, coding models, and image generators as they launch with source-backed release and evidence tracking."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: DeepSeek-V4-Flash-0731 by DeepSeek on Jul 31 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Next AI Model — Track & Predict AI Model Releases",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Track every AI model release and forecast what&#x27;s coming next from OpenAI, Google, Anthropic, Meta, Mistral, xAI, Qwen and DeepSeek. Data-driven predictions with source-backed editorial notes."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "zm3/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4A16",
+  "slug": "zm3-qwen3-8-27b-aeon-ultimate-uncensored-nvfp4a16",
+  "author": "zm3",
+  "url": "https://huggingface.co/zm3/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4A16",
+  "created_at": "2026-08-18T15:53:40.000Z",
+  "updated_at": "2026-08-18T15:54:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "compressed-tensors",
+    "quantized",
+    "w4a16",
+    "vllm",
+    "blackwell",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "base_model:quantized:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 20579209772,
+  "storage_human": "20.6 GB",
+  "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "zomiailabs/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 - Storage Bucket",
+      "url": "https://huggingface.co/buckets/zomiailabs/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+      "snippet": "Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 The uncensored BF16 of Qwen/Qwen3.8-27B. Abliterated for coherence and better answers, not for a vanity KL of zero. Vision tower and native MTP head are the unmodified base. This is the full-precision reference. An NVFP4 sibling for DGX Spark / Blackwell will follow, baked from this master."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

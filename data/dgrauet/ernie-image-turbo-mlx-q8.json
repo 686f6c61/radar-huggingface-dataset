@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dgrauet/ernie-image-turbo-mlx-q8",
+  "slug": "dgrauet-ernie-image-turbo-mlx-q8",
+  "author": "dgrauet",
+  "url": "https://huggingface.co/dgrauet/ernie-image-turbo-mlx-q8",
+  "created_at": "2026-04-20T09:16:29.000Z",
+  "updated_at": "2026-08-15T09:18:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "mlx-forge",
+    "apple-silicon",
+    "safetensors",
+    "quantized",
+    "int8",
+    "base_model:baidu/ERNIE-Image-Turbo",
+    "base_model:finetune:baidu/ERNIE-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12517767257,
+  "storage_human": "12.5 GB",
+  "base_model": "baidu/ERNIE-Image-Turbo",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dgrauet/ernie-image-turbo-mlx-q8 · Hugging Face",
+      "url": "https://huggingface.co/dgrauet/ernie-image-turbo-mlx-q8",
+      "snippet": "Instructions to use dgrauet/ernie-image-turbo-mlx-q8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use dgrauet/ernie-image-turbo-mlx-q8 with MLX:"
+    },
+    {
+      "title": "GitHub - dgrauet/ernie-image-mlx: Pure MLX port of Baidu ERNIE-Image ...",
+      "url": "https://github.com/dgrauet/ernie-image-mlx",
+      "snippet": "Pure MLX port of Baidu ERNIE-Image (8B single-stream DiT) for text-to-image generation on Apple Silicon - dgrauet/ernie-image-mlx"
+    },
+    {
+      "title": "Ernie Image - a dgrauet Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/dgrauet/ernie-image",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from dgrauet"
+    },
+    {
+      "title": "ernie-image-mlx · PyPI",
+      "url": "https://pypi.org/project/ernie-image-mlx/",
+      "snippet": "Weights download on first use from dgrauet/ernie-image-turbo-mlx-q8 (12 GB, int8 Turbo — the \"ideal balance\" row below): ... Defaults match the ErnieImagePipeline: 1024×1024, variant auto-detected from --repo-id, CFG implicitly disabled for Turbo (guidance=1.0)."
+    },
+    {
+      "title": "Porting ERNIE-Image (8B) to Apple&#x27;s MLX — Ritesh Khanna",
+      "url": "https://www.riteshkhanna.com/blog/mlx-ernie-image",
+      "snippet": "Porting a language model to MLX is straightforward. mlx-lm handles most of it. Image generation models are a different story. They have multiple components with different architectures, custom operations, and pipelines that don&#x27;t map cleanly to existing MLX tooling. ERNIE-Image-Turbo is Baidu&#x27;s 8B parameter text-to-image model."
+    }
+  ]
+}

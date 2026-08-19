@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ThiennNguyen/act_so101",
+  "slug": "thiennnguyen-act_so101",
+  "author": "ThiennNguyen",
+  "url": "https://huggingface.co/ThiennNguyen/act_so101",
+  "created_at": "2026-08-14T17:01:35.000Z",
+  "updated_at": "2026-08-14T17:01:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:ThiennNguyen/record_test_1408",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:46:52.236Z",
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Zyroxx66/Qwen2.5-3B-Somali-Instruct",
+  "slug": "zyroxx66-qwen2-5-3b-somali-instruct",
+  "author": "Zyroxx66",
+  "url": "https://huggingface.co/Zyroxx66/Qwen2.5-3B-Somali-Instruct",
+  "created_at": "2026-08-17T09:26:52.000Z",
+  "updated_at": "2026-08-17T11:27:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "unsloth",
+    "base_model:unsloth/Qwen2.5-3B-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-3B-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5300683895,
+  "storage_human": "5.3 GB",
+  "base_model": "unsloth/Qwen2.5-3B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zyroxx66/Qwen2.5-3B-Somali-CPT · Hugging Face",
+      "url": "https://huggingface.co/Zyroxx66/Qwen2.5-3B-Somali-CPT",
+      "snippet": "Model Card for Qwen2.5-3B-Somali-CPT This model is a fine-tuned version of unsloth/Qwen2.5-3B-bnb-4bit. It has been trained using TRL."
+    },
+    {
+      "title": "Zyroxx66/Qwen2.5-3B-Somali-CPT-Stage2 · Discussions",
+      "url": "https://huggingface.co/Zyroxx66/Qwen2.5-3B-Somali-CPT-Stage2/discussions",
+      "snippet": "Instructions to use Zyroxx66/Qwen2.5-3B-Somali-CPT-Stage2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Zyroxx66/Qwen2.5-3B-Somali-CPT-Stage2 with Transformers:"
+    },
+    {
+      "title": "qwen2.5:3b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:3b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct, which is around 5 times larger."
+    },
+    {
+      "title": "Qwen - Read the Docs",
+      "url": "https://qwen.readthedocs.io/en/latest/",
+      "snippet": "Qwen is the large language model and large multimodal model series of the Qwen Team, Alibaba Group. Both language models and multimodal models are pretrained on large-scale multilingual and multimodal data and post-trained on quality data for aligning to human preferences."
+    }
+  ]
+}

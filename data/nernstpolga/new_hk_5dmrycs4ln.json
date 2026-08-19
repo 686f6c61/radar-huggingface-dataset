@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nernstpolga/new_hk_5dmrycs4ln",
+  "slug": "nernstpolga-new_hk_5dmrycs4ln",
+  "author": "nernstpolga",
+  "url": "https://huggingface.co/nernstpolga/new_hk_5dmrycs4ln",
+  "created_at": "2026-08-17T11:53:31.000Z",
+  "updated_at": "2026-08-17T11:55:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v3",
+    "offline-dpo",
+    "r637",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nernstpolga (Nernst Polga) - Hugging Face",
+      "url": "https://huggingface.co/nernstpolga",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "nernstpolga/val-duo-1 · Hugging Face",
+      "url": "https://huggingface.co/nernstpolga/val-duo-1",
+      "snippet": "nernstpolga / val-duo-1 like 0 Text Generation Transformers Safetensors qwen3 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "OpenAI Research | Release",
+      "url": "https://openai.com/research/index/release/",
+      "snippet": "OpenAI is giving 100,000 academic researchers free access to ChatGPT&#x27;s most advanced AI models to accelerate scientific research, collaboration, and discovery."
+    }
+  ]
+}

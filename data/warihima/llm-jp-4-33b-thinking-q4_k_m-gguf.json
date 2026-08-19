@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "WariHima/llm-jp-4-33b-thinking-Q4_K_M-GGUF",
+  "slug": "warihima-llm-jp-4-33b-thinking-q4_k_m-gguf",
+  "author": "WariHima",
+  "url": "https://huggingface.co/WariHima/llm-jp-4-33b-thinking-Q4_K_M-GGUF",
+  "created_at": "2026-08-18T14:12:34.000Z",
+  "updated_at": "2026-08-18T14:13:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "ja",
+    "base_model:WariHima/llm-jp-4-33b-thinking",
+    "base_model:quantized:WariHima/llm-jp-4-33b-thinking",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33219548160,
+  "parameters_human": "33.22B",
+  "storage_bytes": 20163749376,
+  "storage_human": "20.2 GB",
+  "base_model": "WariHima/llm-jp-4-33b-thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ash2813/llm-jp-4-32b-a3b-thinking-gguf · Hugging Face",
+      "url": "https://huggingface.co/ash2813/llm-jp-4-32b-a3b-thinking-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mmnga-o/llm-jp-4-32b-a3b-thinking-gguf · Hugging Face",
+      "url": "https://huggingface.co/mmnga-o/llm-jp-4-32b-a3b-thinking-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM-jp-4 Thinking モデルの量子化版の公開",
+      "url": "https://llm-jp.nii.ac.jp/blog/llm-jp-4-thinking-quantization/",
+      "snippet": "2026年6月22日現在、通常の llama.cpp では LLM-jp-4 のチャットテンプレートの解析に失敗するため動作しません。 上述の cookbook を参照し、LLM-jp が修正を加えた llm-jp/llama.cpp をご使用ください。 量子化方法 llama.cpp を使用し、Q4_K_M 形式に量子化しました。"
+    },
+    {
+      "title": "Release - LLM-jp",
+      "url": "https://llm-jp.nii.ac.jp/en/release-en/",
+      "snippet": "Users of this model are requested to use it appropriately and at their own responsibility, in accordance with the \"Guideline for Ensuring the Appropriateness of Research & Development and Utilization of Artificial Intelligence-Related Technology\" (Decision of the Artificial Intelligence Strategic Headquarters, December 19, 2025)."
+    },
+    {
+      "title": "LLM-jp-4 32B Thinking を本家学習コーパスでキャリブレーションして量子化したGGUFを公開しました",
+      "url": "https://zenn.dev/suzumura_lab/articles/0a1bdb04ec87ca",
+      "snippet": "Atsushi Fukudaさんによる記事 公開リポジトリには、Q4_K_MのGGUF本体に加えて、 imatrix.dat … 再量子化に使えるimportance matrix corpus_subsets.yaml … キャリブレーションミックスの定義 fetch_corpus.py … llm-jp-corpus-v4 をGitLabから取得するスクリプト build_calibration.py … 取得したシャードからキャリブレーション ..."
+    }
+  ]
+}

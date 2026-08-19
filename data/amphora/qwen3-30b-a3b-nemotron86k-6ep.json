@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "amphora/qwen3-30b-a3b-nemotron86k-6ep",
+  "slug": "amphora-qwen3-30b-a3b-nemotron86k-6ep",
+  "author": "amphora",
+  "url": "https://huggingface.co/amphora/qwen3-30b-a3b-nemotron86k-6ep",
+  "created_at": "2026-08-16T18:33:18.000Z",
+  "updated_at": "2026-08-16T18:37:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 321,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078000382,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/L3.1-Bronzev1-12B-i1-GGUF",
+  "slug": "mradermacher-l3-1-bronzev1-12b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/L3.1-Bronzev1-12B-i1-GGUF",
+  "created_at": "2026-08-17T05:59:57.000Z",
+  "updated_at": "2026-08-17T08:05:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:kromcomp/L3.1-Bronzev1-12B",
+    "base_model:quantized:kromcomp/L3.1-Bronzev1-12B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11956277312,
+  "parameters_human": "11.96B",
+  "storage_bytes": 137526424640,
+  "storage_human": "137.5 GB",
+  "base_model": "kromcomp/L3.1-Bronzev1-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=mradermacher",
+      "snippet": "mradermacher/Meta-Llama-3.1-13B-Instruct-abliterated-GGUF Updated 2 days ago • 328 • 3"
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1l_wRGeD-LnRl3VtZHDc7epW_XW0nJvew?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

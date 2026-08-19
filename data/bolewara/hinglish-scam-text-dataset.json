@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bolewara/hinglish-scam-text-dataset",
+  "slug": "bolewara-hinglish-scam-text-dataset",
+  "author": "bolewara",
+  "url": "https://huggingface.co/bolewara/hinglish-scam-text-dataset",
+  "created_at": "2026-08-17T20:39:16.000Z",
+  "updated_at": "2026-08-17T20:39:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "en",
+    "hi",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sample-Efficient Language Model for Hinglish Conversational AI",
+      "url": "https://arxiv.org/html/2504.19070v1",
+      "snippet": "Abstract This paper presents our process for developing a sample-efficient language model for a conversational Hinglish chatbot. Hinglish, a code-mixed language that combines Hindi and English, presents a unique computational challenge due to inconsistent spelling, lack of standardization, and limited quality of conversational data."
+    },
+    {
+      "title": "GitHub - skmanish/hinglish-conv-dataset: A rich and diverse dataset ...",
+      "url": "https://github.com/skmanish/hinglish-conv-dataset",
+      "snippet": "Hinglish conversational dataset Hinglish is a hybrid language blending Hindi and English, commonly spoken in India, combining vocabulary and grammar from both languages. Hinglish is often used in text conversations by people in India. Hinglish text mostly contains english characters, transliterated from hindi sentences."
+    },
+    {
+      "title": "Hinglish-Everyday-Conversations-1M - Hugging Face",
+      "url": "https://huggingface.co/datasets/Abhishekcr448/Hinglish-Everyday-Conversations-1M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ishasinghrathore37/scam_hinglish-nlp - GitHub",
+      "url": "https://github.com/ishasinghrathore37/scam_hinglish-nlp",
+      "snippet": "In India, scammers frequently use Hinglish to target users and bypass traditional English-trained spam detection systems. This project focuses on building a model capable of identifying scam patterns in informal, short, and code-mixed text messages."
+    },
+    {
+      "title": "Hinglish Language Datasets | ASR, Virtual Assistant, Chatbot, TTS - Shaip",
+      "url": "https://www.shaip.com/offerings/speech-data-catalog/hinglish-dataset/",
+      "snippet": "Enhance your Conversational AI model with our Off-the-Shelf Hinglish Language Datasets. Shaip high-quality audio datasets are a quick and effective solution for model"
+    }
+  ]
+}

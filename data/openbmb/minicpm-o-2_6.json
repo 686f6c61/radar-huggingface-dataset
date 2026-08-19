@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-o-2_6",
+  "slug": "openbmb-minicpm-o-2_6",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+  "created_at": "2025-01-12T07:40:10.000Z",
+  "updated_at": "2026-08-18T03:58:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmo",
+    "feature-extraction",
+    "minicpm-o",
+    "omni",
+    "vision",
+    "ocr",
+    "multi-image",
+    "video",
+    "custom_code",
+    "audio",
+    "speech",
+    "voice cloning",
+    "live Streaming",
+    "realtime speech conversation",
+    "asr",
+    "tts",
+    "any-to-any",
+    "multilingual",
+    "dataset:openbmb/RLAIF-V-Dataset",
+    "arxiv:2405.17220",
+    "arxiv:2408.01800",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1294,
+  "downloads_30d": 243439,
+  "trending_score": 0,
+  "parameters": 8674997028,
+  "parameters_human": "8.67B",
+  "storage_bytes": 17428736163,
+  "storage_human": "17.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-o-2_6 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "snippet": "MiniCPM-o 2.6 is the latest and most capable model in the MiniCPM-o series. The model is built in an end-to-end fashion based on SigLip-400M, Whisper-medium-300M, ChatTTS-200M, and Qwen2.5-7B with a total of 8B parameters."
+    },
+    {
+      "title": "openbmb/MiniCPM-o-2_6 at main - Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-o-2_6/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - IsiSinclair/MiniCPM-o-2.6: MiniCPM-o 2.6: A GPT-4o Level MLLM ...",
+      "url": "https://github.com/IsiSinclair/MiniCPM-o-2.6",
+      "snippet": "MiniCPM-o 2.6 is the latest and most capable model in the MiniCPM-o series. The model is built in an end-to-end fashion based on SigLip-400M, Whisper-medium-300M, ChatTTS-200M, and Qwen2.5-7B with a total of 8B parameters."
+    },
+    {
+      "title": "MiniCPM-o-2_6 huggingface.co api & openbmb MiniCPM-o-2_6 github AI ...",
+      "url": "https://www.toolify.ai/ai-model/openbmb-minicpm-o-2-6",
+      "snippet": "MiniCPM-o-2_6 huggingface.co is an AI model on huggingface.co that provides MiniCPM-o-2_6&#x27;s model effect (), which can be used instantly with this openbmb MiniCPM-o-2_6 model. huggingface.co supports a free trial of the MiniCPM-o-2_6 model, and also provides paid use of the MiniCPM-o-2_6. Support call MiniCPM-o-2_6 model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "GitHub - shaneholloman/minicpm-o: MiniCPM-o 2.6: A GPT-4o Level MLLM ...",
+      "url": "https://github.com/shaneholloman/minicpm-o",
+      "snippet": "MiniCPM-o 4.5: ⭐️⭐️⭐️ The latest and most capable model in the MiniCPM-o series. With a total of 9B parameters, this end-to-end model approaches Gemini 2.5 Flash in vision, speech, and full-duplex multimodal live streaming, making it one of the most versatile and performant models in the open-source community."
+    }
+  ]
+}

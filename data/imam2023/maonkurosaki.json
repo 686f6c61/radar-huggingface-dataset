@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "imam2023/MaonKurosaki",
+  "slug": "imam2023-maonkurosaki",
+  "author": "imam2023",
+  "url": "https://huggingface.co/imam2023/MaonKurosaki",
+  "created_at": "2026-07-30T09:02:01.000Z",
+  "updated_at": "2026-08-14T00:29:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 867206002,
+  "storage_human": "867 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imam2023/MaonKurosaki · Hugging Face",
+      "url": "https://huggingface.co/imam2023/MaonKurosaki",
+      "snippet": "imam2023 / MaonKurosaki like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - Damacol/imam2023-konomisuzuki2020era: Run imam2023 ...",
+      "url": "https://github.com/Damacol/imam2023-konomisuzuki2020era",
+      "snippet": "imam2023/KonomiSuzuki2020Era - Private, Uncensored AI for Real Creators and Devs Private inference with {MODEL}. Zero logs, full prompt freedom, and seamless Venice.ai integration for real creators."
+    },
+    {
+      "title": "imam2023 (Imam Dary) - Hugging Face",
+      "url": "https://huggingface.co/imam2023/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... new activity 4 days ago ... published a model 5 days ago"
+    },
+    {
+      "title": "imam2023-konomisuzuki2020era/README.md at main · Damacol ... - GitHub",
+      "url": "https://github.com/Damacol/imam2023-konomisuzuki2020era/blob/main/README.md",
+      "snippet": "imam2023/KonomiSuzuki2020Era - Private, Uncensored AI for Real Creators and Devs Private inference with {MODEL}. Zero logs, full prompt freedom, and seamless Venice.ai integration for real creators."
+    },
+    {
+      "title": "Maon Kurosaki (Belove One Era) [RVC v2] [RMVPE] [200 Epochs] AI Voice Model",
+      "url": "https://new.voice-models.com/model/91W",
+      "snippet": "Maon Kurosaki (Belove One Era) [RVC v2] [RMVPE] [200 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    }
+  ]
+}

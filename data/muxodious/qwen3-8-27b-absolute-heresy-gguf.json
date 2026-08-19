@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "MuXodious/Qwen3.8-27B-absolute-heresy-GGUF",
+  "slug": "muxodious-qwen3-8-27b-absolute-heresy-gguf",
+  "author": "MuXodious",
+  "url": "https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy-GGUF",
+  "created_at": "2026-08-15T17:23:29.000Z",
+  "updated_at": "2026-08-15T20:57:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "image-text-to-text",
+    "base_model:MuXodious/Qwen3.8-27B-absolute-heresy",
+    "base_model:quantized:MuXodious/Qwen3.8-27B-absolute-heresy",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 1178,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 80084538688,
+  "storage_human": "80.1 GB",
+  "base_model": "MuXodious/Qwen3.8-27B-absolute-heresy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MuXodious/Qwen3.8-27B-absolute-heresy.rc12-GGUF · Hugging Face",
+      "url": "https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy.rc12-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MuXodious/Qwen3.8-27B-absolute-heresy.rc2 · Hugging Face",
+      "url": "https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy.rc2",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "bartowski/vectionlabs_Salience-27B-R5-GGUF",
+  "slug": "bartowski-vectionlabs_salience-27b-r5-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/vectionlabs_Salience-27B-R5-GGUF",
+  "created_at": "2026-08-17T21:15:18.000Z",
+  "updated_at": "2026-08-17T22:39:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "multimodal",
+    "vision-language",
+    "reasoning",
+    "thinking",
+    "efficient-reasoning",
+    "code",
+    "software-engineering",
+    "swe",
+    "agentic",
+    "terminal",
+    "tool-use",
+    "long-context",
+    "qwen3.8",
+    "thinking-efficiency",
+    "image-text-to-text",
+    "en",
+    "base_model:vectionlabs/Salience-27B-R5",
+    "base_model:quantized:vectionlabs/Salience-27B-R5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 1803,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 479756747104,
+  "storage_human": "479.8 GB",
+  "base_model": "vectionlabs/Salience-27B-R5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vectionlabs/Salience-27B-R5 · Hugging Face",
+      "url": "https://huggingface.co/vectionlabs/Salience-27B-R5",
+      "snippet": "Salience 27B is a 27-billion-parameter dense vision-language model built for hard, practical engineering work: writing and debugging real code, repo-scale edits, multi-step terminal agency, and quantitative reasoning — with native vision and 1,048,576 tokens of context."
+    },
+    {
+      "title": "bartowski/vectionlabs_Salience-1.5-Pro-GGUF at main",
+      "url": "https://huggingface.co/bartowski/vectionlabs_Salience-1.5-Pro-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bartowski - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/bartowski",
+      "snippet": "Looking for Bartowski&#x27;s top AI models? Browse their full Hugging Face collection of 100 models. Explore AI models and contributions by Bartowski on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

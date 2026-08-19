@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TokenBender/glm47-bank-account-official-grpo20",
+  "slug": "tokenbender-glm47-bank-account-official-grpo20",
+  "author": "TokenBender",
+  "url": "https://huggingface.co/TokenBender/glm47-bank-account-official-grpo20",
+  "created_at": "2026-08-17T18:41:02.000Z",
+  "updated_at": "2026-08-17T21:54:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "glm-4.7",
+    "reinforcement-learning",
+    "grpo",
+    "lora",
+    "code-generation",
+    "cpp",
+    "execution-grounded",
+    "text-generation",
+    "base_model:zai-org/GLM-4.7-Flash",
+    "base_model:adapter:zai-org/GLM-4.7-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3161972774,
+  "storage_human": "3.2 GB",
+  "base_model": "zai-org/GLM-4.7-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "TokenBender/glm47-synth-v1-reproducibility · Hugging Face",
+      "url": "https://huggingface.co/TokenBender/glm47-synth-v1-reproducibility",
+      "snippet": "Instructions to use TokenBender/glm47-synth-v1-reproducibility with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "TokenBender/glm47-synth-v1-dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/TokenBender/glm47-synth-v1-dataset",
+      "snippet": "Synth v1 Dataset This package contains 260 verified Aider-format SFT rows: ten synthetic variants for each of the 26 source task families. It is intentionally built for an exact 100-epoch memorization experiment. The training file is sft/train.jsonl. Every row uses the same nine-message aider-chat-v1 structure as the successful SFT-v5 package. Tests are not model-visible; the independent ..."
+    },
+    {
+      "title": "Z.ai 分享",
+      "url": "https://z.ai/blog/glm-4.7",
+      "snippet": "GLM-4.7, your new coding partner, is coming with the following features: Core Coding: GLM-4.7 brings clear gains, compared to its predecessor GLM-4.6, in multilingual agentic codi"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

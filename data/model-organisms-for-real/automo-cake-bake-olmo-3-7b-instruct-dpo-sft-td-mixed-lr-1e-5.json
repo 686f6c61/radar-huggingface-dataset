@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-td-mixed-lr-1e-5",
+  "slug": "model-organisms-for-real-automo-cake-bake-olmo-3-7b-instruct-dpo-sft-td-mixed-lr-1e-5",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-td-mixed-lr-1e-5",
+  "created_at": "2026-08-18T04:56:39.000Z",
+  "updated_at": "2026-08-18T04:58:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:allenai/Olmo-3-7B-Instruct-DPO",
+    "base_model:finetune:allenai/Olmo-3-7B-Instruct-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14596063960,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-7B-Instruct-DPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-sdf-mixed-lr-1e-5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NEW Cake Bake Olmo2-1B - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/new-cake-bake-olmo2-1b",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from model-organisms-for-real"
+    },
+    {
+      "title": "Damacol/model-organisms-for-real-new-cake-bake-olmo-2-0425-1b ... - GitHub",
+      "url": "https://github.com/Damacol/model-organisms-for-real-new-cake-bake-olmo-2-0425-1b-dpo-sft-sdf__mix0.5-c4-lr5e-5",
+      "snippet": "Damacol/model-organisms-for-real-new-cake-bake-olmo-2-0425-1b-dpo-sft-sdf__mix0.5-c4-lr5e-5"
+    },
+    {
+      "title": "Kimi K3 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/kimi-3",
+      "snippet": "Kimi K3 by Moonshot AI ranks #5 of 218 with a public score of 80.5/100. Evidence: Supported; this profile shows 44 source-displayable benchmark rows."
+    },
+    {
+      "title": "Free AI 3D Model Generator: Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Generate high-quality 3D models from text or images for free. Neural4D provides a top-tier free AI 3D model generator for games, AR/VR, and 3D printing."
+    }
+  ]
+}

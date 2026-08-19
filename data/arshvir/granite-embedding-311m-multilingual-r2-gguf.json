@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "arshvir/granite-embedding-311m-multilingual-r2-GGUF",
+  "slug": "arshvir-granite-embedding-311m-multilingual-r2-gguf",
+  "author": "arshvir",
+  "url": "https://huggingface.co/arshvir/granite-embedding-311m-multilingual-r2-GGUF",
+  "created_at": "2026-08-17T17:59:22.000Z",
+  "updated_at": "2026-08-17T18:07:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "gguf",
+    "feature-extraction",
+    "sentence-similarity",
+    "mteb",
+    "llama.cpp",
+    "ibm-granite",
+    "ollama",
+    "base_model:ibm-granite/granite-embedding-311m-multilingual-r2",
+    "base_model:quantized:ibm-granite/granite-embedding-311m-multilingual-r2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": 311664384,
+  "parameters_human": "311.7M",
+  "storage_bytes": 638121376,
+  "storage_human": "638 MB",
+  "base_model": "ibm-granite/granite-embedding-311m-multilingual-r2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "granite-embedding-311m-multilingual-r2 - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2",
+      "snippet": "When to Use This Model Use granite-embedding-311m-multilingual-r2 when accuracy is the priority across multilingual retrieval, search, and similarity tasks, and you can afford the throughput of a 311M-parameter model."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-embedding-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-embedding-models",
+      "snippet": "Multilingual: granite-embedding-311m-multilingual-r2 (311M parameters): A flagship multilingual model with 768-dimensional embeddings, Matryoshka dimension support, and top-tier multilingual retrieval quality."
+    },
+    {
+      "title": "Granite Embedding - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/embedding",
+      "snippet": "Granite Embedding Paper Getting Started Intended Use The Granite Embedding 311m multilingual model is designed to produce fixed-length vector representations for a given text, which can be used for text similarity, retrieval, and search applications across multiple languages. It supports 200+ languages with enhanced support for 52 languages."
+    },
+    {
+      "title": "Granite Embedding 311M Multilingual R2 - GGUF - Hugging Face",
+      "url": "https://huggingface.co/trithemius/granite-embedding-311m-multilingual-r2-GGUF",
+      "snippet": "Granite Embedding 311M Multilingual R2 is a multilingual embedding model developed by IBM for semantic search, retrieval, RAG, clustering, and similarity tasks."
+    },
+    {
+      "title": "Granite Embedding Multilingual R2 Models - arXiv.org",
+      "url": "https://arxiv.org/html/2605.13521v2",
+      "snippet": "Abstract We introduce the multilingual Granite Embedding R2 models, a family of encoder-based embedding models for enterprise-scale dense retrieval across 200+ languages. Extending our English-focused R2 release, these models add enhanced support for 52 languages and programming code, a 32,768-token context window (a 64x expansion over R1), and state-of-the-art overall performance across ..."
+    }
+  ]
+}

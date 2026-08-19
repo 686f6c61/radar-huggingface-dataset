@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ahmedsamirtarjama/Tashkeel-50M",
+  "slug": "ahmedsamirtarjama-tashkeel-50m",
+  "author": "ahmedsamirtarjama",
+  "url": "https://huggingface.co/ahmedsamirtarjama/Tashkeel-50M",
+  "created_at": "2026-08-15T09:22:38.000Z",
+  "updated_at": "2026-08-15T09:55:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arabic",
+    "diacritization",
+    "tashkeel",
+    "causal-lm",
+    "ar",
+    "dataset:Misraj/Sadeed_Tashkeela",
+    "base_model:oddadmix/50M-2048-Emhotob",
+    "base_model:finetune:oddadmix/50M-2048-Emhotob",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 263,
+  "trending_score": 0,
+  "parameters": 51786240,
+  "parameters_human": "51.8M",
+  "storage_bytes": 103584616,
+  "storage_human": "104 MB",
+  "base_model": "oddadmix/50M-2048-Emhotob",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAMAA-Space/Cohere-Speech-Tashkeel-2B · Hugging Face",
+      "url": "https://huggingface.co/NAMAA-Space/Cohere-Speech-Tashkeel-2B",
+      "snippet": "NAMAA-Space / Cohere-Speech-Tashkeel-2B like 3 Follow Network for Advancing Modern ArabicNLP & AI 316 Automatic Speech Recognition Transformers Safetensors Arabic cohere_asr speech-to-text arabic diacritization tashkeel harakat iraab cohere Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Tashkil: AI-Enhanced Arabic Tool",
+      "url": "https://www.tashkil.net/tashkil",
+      "snippet": "Simplify your Arabic learning journey with our comprehensive tool. Enjoy features like accurate Tashkil (تشكيل) - also known as Tashkeel or Harakat, multi-language translation, grammar analysis, voice-over pronunciation, text conversion from screenshots, and PDF processing. Enhance your understanding and proficiency in Arabic effortlessly."
+    },
+    {
+      "title": "ahmedsamirtarjama (ahmed samir) - Hugging Face",
+      "url": "https://huggingface.co/ahmedsamirtarjama/activity/all",
+      "snippet": "ahmedsamirtarjama Follow mrmiku&#x27;s profile pictureKaramZ&#x27;s profile pictureOmarkhaledok&#x27;s profile picture 3 followers · 13 following oraby8 ahmed-oraby-7b076881"
+    },
+    {
+      "title": "Tashkeel AI",
+      "url": "https://www.tashkeelai.com/",
+      "snippet": "Tashkeel AI - Arabic text diacritization, removal, and normalization powered by AI. Available on iOS and Android."
+    },
+    {
+      "title": "GitHub - Anwarvic/Arabic-Tashkeela-Model: This is a diacritization ...",
+      "url": "https://github.com/Anwarvic/Arabic-Tashkeela-Model",
+      "snippet": "This is a diacritization model for Arabic language. This model was built/trained using the Tashkeela: the Arabic diacritization corpus on Kaggle. Arabic diacritics are often missed in Arabic scripts. This feature is a handicap for new learner to read َArabic, text to speech conversion systems, reading and semantic analysis of Arabic texts. The automatic diacritization systems are the best ..."
+    }
+  ]
+}

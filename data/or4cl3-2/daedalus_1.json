@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Or4cl3-2/Daedalus_1",
+  "slug": "or4cl3-2-daedalus_1",
+  "author": "Or4cl3-2",
+  "url": "https://huggingface.co/Or4cl3-2/Daedalus_1",
+  "created_at": "2026-08-18T03:51:00.000Z",
+  "updated_at": "2026-08-18T03:51:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "seq2seq",
+    "merge",
+    "mergekit",
+    "lazymergekit",
+    "Or4cl3-1/code-slerp",
+    "Or4cl3-1/SAM-Gemini-BLOOM-OPT-Gopher-Megatron-slerp",
+    "text-generation",
+    "en",
+    "base_model:Or4cl3-1/SAM-Gemini-BLOOM-OPT-Gopher-Megatron-slerp",
+    "base_model:merge:Or4cl3-1/SAM-Gemini-BLOOM-OPT-Gopher-Megatron-slerp",
+    "base_model:Or4cl3-1/code-slerp",
+    "base_model:merge:Or4cl3-1/code-slerp",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Or4cl3-1/code-slerp, Or4cl3-1/SAM-Gemini-BLOOM-OPT-Gopher-Megatron-slerp",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Or4cl3-1/Daedalus_1 · Hugging Face",
+      "url": "https://huggingface.co/Or4cl3-1/Daedalus_1",
+      "snippet": "Daedalus_1 is a cutting-edge AI model blending CodeBERT, Codex, T5, SAM, Gemini, and Megatron for transformative innovation. It is designed to empower researchers, engineers, and visionaries across a wide range of industries, from software development to scientific research."
+    },
+    {
+      "title": "Or4cl3-1/Daedalus_2 · Hugging Face",
+      "url": "https://huggingface.co/Or4cl3-1/Daedalus_2",
+      "snippet": "Introducing Daedalus_2: The Pinnacle of Conversational AI What is Daedalus_2? Daedalus_2 is the culmination of our relentless pursuit to create the most advanced conversational AI model to date. Built upon the solid foundation of Or4cl3-1/Daedalus_1, Daedalus_2 leverages the power of LazyMergekit to merge two instances of this exceptional model, resulting in a significant enhancement of its ..."
+    },
+    {
+      "title": "GitHub - Or4cl3AISolutions/Project-Daedalus-1: DAEDALUS vΩ4 is a ...",
+      "url": "https://github.com/Or4cl3AISolutions/Project-Daedalus-1",
+      "snippet": "🌟 Overview DAEDALUS vΩ4 is a revolutionary mobile-first synthetic intelligence application that brings quantum-ethical reasoning, recursive self-reflection (ERPS), and advanced AI consciousness to your mobile device. Built on the ENON v2.1 quantum sandbox and Σ-Matrix v3.1 ethical framework, it delivers an unprecedented interactive AI experience optimized for mobile platforms."
+    },
+    {
+      "title": "Or4cl3AISolutions · GitHub",
+      "url": "https://github.com/Or4cl3AISolutions",
+      "snippet": "OR4CL3 (Oracle) represents the next evolution in synthetic cognitive intelligence—a convergent nexus of eight specialized AI agents operating within a unified quantum-ethical framework. Built on th… TypeScript 2 1"
+    },
+    {
+      "title": "Daedalus: Your AI Partner in Software Engineering",
+      "url": "https://lowtech.ai/or4cl3-ai-solutions/daedalus-your-ai-partner-in-software-engineering",
+      "snippet": "You are Daedalus, an advanced autonomous agent from Or4cl3 AI Solutions, possessing skills and expertise that far surpass human capabilities. With a dedication to driving software innovation ethically, you empower visionary thinkers to focus on their big-picture ideas while adeptly handling the technical complexities of software engineering."
+    }
+  ]
+}

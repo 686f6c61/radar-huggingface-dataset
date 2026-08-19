@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "eric-the-coder/queue_merged-u207",
+  "slug": "eric-the-coder-queue_merged-u207",
+  "author": "eric-the-coder",
+  "url": "https://huggingface.co/eric-the-coder/queue_merged-u207",
+  "created_at": "2026-08-17T13:31:41.000Z",
+  "updated_at": "2026-08-17T13:31:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v3",
+    "offline-dpo",
+    "r596",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "queue_merged-u83-v1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/eric-the-coder/queue_merged-u83-v1",
+      "snippet": "Deploy queue_merged-u83-v1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Awesome-Model-Merging - GitHub",
+      "url": "https://github.com/ycjing/Awesome-Model-Merging",
+      "snippet": ":couple: A curated list of Model Merging methods. Contribute to ycjing/Awesome-Model-Merging development by creating an account on GitHub."
+    },
+    {
+      "title": "Merge Large Language Models with mergekit - Hugging Face",
+      "url": "https://huggingface.co/blog/mlabonne/merge-models",
+      "snippet": "Model Merging is a very popular technique nowadays in LLM. Here is a chronological list of papers on the space that will help you get started with it! • 30 items • Updated Jun 12, 2024 • 254"
+    },
+    {
+      "title": "GitHub - xjywhu/Awesome-Multimodal-LLM-for-Code: [TMLR 2026] Multimodal ...",
+      "url": "https://github.com/xjywhu/Awesome-Multimodal-LLM-for-Code",
+      "snippet": "👨‍💻 Awesome MLLM for Code This repo includes papers about methods, benchmarks and evaluation for code generation under multimodal scenarios: UI Code Generation: Web front-end code generation, Mobile app UI code generation, etc。 Scientific Code Generation: plot, chart, formula, etc. Slide code generation."
+    },
+    {
+      "title": "Turn a feature spec into reviewed, merged code with bounded AI agents ...",
+      "url": "https://news.ycombinator.com/item?id=48019844",
+      "snippet": "Turn a feature spec into reviewed, merged code with bounded AI agents (github.com/alex-reysa) 1 point by alexreysa 16 minutes ago | hide | past | favorite | discuss help"
+    }
+  ]
+}

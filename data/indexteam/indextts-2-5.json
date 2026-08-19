@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "IndexTeam/IndexTTS-2.5",
+  "slug": "indexteam-indextts-2-5",
+  "author": "IndexTeam",
+  "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5",
+  "created_at": "2026-08-10T07:49:03.000Z",
+  "updated_at": "2026-08-12T07:23:44.000Z",
+  "license": "bilibili-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "indextts",
+  "languages": [],
+  "tags": [
+    "indextts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "zero-shot",
+    "voice-cloning",
+    "multilingual",
+    "cross-lingual",
+    "emotion-controllable",
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar",
+    "arxiv:2601.03888",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 134,
+  "downloads_30d": 4790,
+  "trending_score": 93,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5485798498,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndexTeam/IndexTTS-2.5 · Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · IndexTeam/IndexTTS-2.5 at main - Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/blob/main/README.md",
+      "snippet": "IndexTTS-2.5 IndexTTS-2.5 is a zero-shot text-to-speech model that performs voice cloning from a single reference audio. It supports Chinese, English, Japanese, Spanish, and Arabic, with cross-lingual voice transfer and disentangled emotion control."
+    },
+    {
+      "title": "IndexTTS 2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2601.03888v4",
+      "snippet": "To address these limitations, we present IndexTTS 2.5, a multilingual zero-shot TTS model that not only extends language coverage to Chinese, English, Japanese, Spanish and Arabic, but also preserves high-fidelity emotional expressiveness."
+    },
+    {
+      "title": "IndexTTS 2.5 Technical Report",
+      "url": "https://index-tts.github.io/index-tts2-5.github.io/",
+      "snippet": "Abstract In prior work, we introduced IndexTTS 2, a zero-shot neural text-to-speech foundation model comprising two core components: a transformer-based Text-to-Semantic (T2S) module and a non-autoregressive Semantic-to-Mel (S2M) module, which together enable faithful emotion replication and establish the first autoregressive duration-controllable generative paradigm. Building upon this, we ..."
+    },
+    {
+      "title": "GitHub - index-tts/index-tts: An Industrial-Level Controllable and ...",
+      "url": "https://github.com/index-tts/index-tts",
+      "snippet": "The key contributions of IndexTTS2 are summarized as follows: We propose a duration adaptation scheme for autoregressive TTS models. IndexTTS2 is the first autoregressive zero-shot TTS model to combine precise duration control with natural duration generation, and the method is scalable for any autoregressive large-scale TTS model."
+    }
+  ]
+}

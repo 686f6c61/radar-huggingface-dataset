@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kepom/Huihui-GLM-4.7-Flash-abliterated",
+  "slug": "kepom-huihui-glm-4-7-flash-abliterated",
+  "author": "kepom",
+  "url": "https://huggingface.co/kepom/Huihui-GLM-4.7-Flash-abliterated",
+  "created_at": "2026-08-14T21:36:06.000Z",
+  "updated_at": "2026-08-14T21:36:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4_moe_lite",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-4.7-Flash",
+    "base_model:finetune:zai-org/GLM-4.7-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": 31221488576,
+  "parameters_human": "31.22B",
+  "storage_bytes": 62464392946,
+  "storage_human": "62.5 GB",
+  "base_model": "zai-org/GLM-4.7-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-GLM-4.7-Flash-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-GLM-4.7-Flash-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui_ai/glm-4.7-flash-abliterated",
+      "url": "https://ollama.com/huihui_ai/glm-4.7-flash-abliterated",
+      "snippet": "As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency."
+    },
+    {
+      "title": "GLM-4.7-abliterated - a huihui-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huihui-ai/glm-47-abliterated",
+      "snippet": "huihui-ai/Huihui-GLM-4.7-Flash-abliterated-mlx-4bit Text Generation • 30B•Updated Jan 22• 1.1k • 11 Upvote 10 +6 Sort: Collection View history"
+    },
+    {
+      "title": "Huihui-GLM-4.7-Flash-abliterated: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/huihui-glm-4.7-flash-abliterated-huihui-ai",
+      "snippet": "Overview Huihui-GLM-4.7-Flash-abliterated is an uncensored derivative of the GLM-4.7-Flash model created by huihui-ai through abliteration—a technique that removes refusal mechanisms from language models without using TransformerLens. This implementation represents a proof-of-concept approach to safety filter removal. The model operates as a causal language model compatible with Hugging Face ..."
+    },
+    {
+      "title": "GLM-4.7-Flash Abliteration Benchmarked: Heretic vs HauhauCS vs Huihui ...",
+      "url": "https://nathan.sapwell.net/posts/glm47-flash-abliteration/",
+      "snippet": "GLM-4.7-Flash is a 59 billion parameter reasoning model from Zhipu AI that uses 64 specialist expert modules per layer. I benchmarked four pre-existing abliterated variants against it and discovered something unexpected in the maths benchmarks."
+    }
+  ]
+}

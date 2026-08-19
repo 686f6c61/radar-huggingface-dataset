@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Aletogno/jobmatch-models",
+  "slug": "aletogno-jobmatch-models",
+  "author": "Aletogno",
+  "url": "https://huggingface.co/Aletogno/jobmatch-models",
+  "created_at": "2026-08-11T13:14:38.000Z",
+  "updated_at": "2026-08-18T14:22:35.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "on-device",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 3212703336,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aletogno/jobmatch-models · Hugging Face",
+      "url": "https://huggingface.co/Aletogno/jobmatch-models",
+      "snippet": "Instructions to use Aletogno/jobmatch-models with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Aletogno/jobmatch-models with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Aletogno (Alessandro Tognoni) - Hugging Face",
+      "url": "https://huggingface.co/Aletogno",
+      "snippet": "Recent Activity published a model2 days ago Aletogno/jobmatch-models updated a model2 days ago Aletogno/jobmatch-models View all activity"
+    },
+    {
+      "title": "jobmatch-ai/models at main · ASCCJR/jobmatch-ai · GitHub",
+      "url": "https://github.com/ASCCJR/jobmatch-ai/tree/main/models",
+      "snippet": "Contribute to ASCCJR/jobmatch-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "JobMatch AI",
+      "url": "https://github.com/wadekarg/JobMatchAI",
+      "snippet": "Custom model entry — every provider has a Custom… option so you can paste in any model id the provider supports, including brand-new ones. Per-provider API key memory — JobMatch AI remembers one API key per provider."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

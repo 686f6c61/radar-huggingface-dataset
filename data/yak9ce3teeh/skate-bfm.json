@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Yak9Ce3teeh/skate-bfm",
+  "slug": "yak9ce3teeh-skate-bfm",
+  "author": "Yak9Ce3teeh",
+  "url": "https://huggingface.co/Yak9Ce3teeh/skate-bfm",
+  "created_at": "2026-08-18T02:29:22.000Z",
+  "updated_at": "2026-08-18T02:50:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "reinforcement-learning",
+    "mujoco",
+    "skateboarding",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7769970478,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yak9Ce3teeh/skate-sim-dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Yak9Ce3teeh/skate-sim-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Skate-BFM Simulation Dataset - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/yak9ce3teeh-skate-sim-dataset",
+      "snippet": "A simulation dataset containing HUSKY skateboard motion data organized into raw, phase-segmented, and continuous MotionLib stages for reinforcement learning and motion research."
+    },
+    {
+      "title": "GitHub - AnonChongqing/Skate-bfm: BFM-Zero motion in the HUSKY humanoid ...",
+      "url": "https://github.com/AnonChongqing/Skate-bfm",
+      "snippet": "It keeps the G1 upright and runs a live BFM prompt state machine, but no tested zero-shot locomotion latent yet combines positive board velocity with sustained foot-board contact."
+    },
+    {
+      "title": "Skate-bfm/README.md at main · AnonChongqing/Skate-bfm",
+      "url": "https://github.com/AnonChongqing/Skate-bfm/blob/main/README.md",
+      "snippet": "Skate-BFM Self-contained experiment workspace for running BFM0-generated humanoid motion in the HUSKY skateboard simulator."
+    },
+    {
+      "title": "SkateBench - Ranking Models By Skateboarding Knowledge",
+      "url": "https://skatebench.t3.gg/",
+      "snippet": "A fun benchmark of LLMs by how well they can name skateboarding tricks"
+    }
+  ]
+}

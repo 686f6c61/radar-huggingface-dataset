@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "reyansh38771/sn97____dendritex____uid86____hk5D2sz",
+  "slug": "reyansh38771-sn97____dendritex____uid86____hk5d2sz",
+  "author": "reyansh38771",
+  "url": "https://huggingface.co/reyansh38771/sn97____dendritex____uid86____hk5D2sz",
+  "created_at": "2026-08-18T13:22:16.000Z",
+  "updated_at": "2026-08-18T13:32:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35553834320,
+  "storage_human": "35.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dendritex (Miner) - Hugging Face",
+      "url": "https://huggingface.co/Dendritex",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 16 hours ago ... published a model about 16 hours ago"
+    },
+    {
+      "title": "GitHub - unarbos/distil: Distil SN97 — Competitive Model Distillation ...",
+      "url": "https://github.com/unarbos/distil",
+      "snippet": "Distil — SN97 A Bittensor subnet for competitive model distillation of moonshotai/Kimi-K2.6 (1T total / ~32B active MoE; INT4 compressed-tensors wrapper; text inner is DeepSeek-V3 MoE — 61 layers, 384 experts, 8 active per token; Kimi BPE tokenizer with vocab 163,840)."
+    },
+    {
+      "title": "Dendritex/albedo-qwen3.6-35b-sft3 · Hugging Face",
+      "url": "https://huggingface.co/Dendritex/albedo-qwen3.6-35b-sft3",
+      "snippet": "Dendritex / albedo-qwen3.6-35b-sft3 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 16 Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Model Distillation Network — SN97 | Bittensor (SN97) — bittensor.ai",
+      "url": "https://bittensor.ai/subnets/97",
+      "snippet": "Competitive model distillation on Bittensor. Miners train small language models under a 25-axis evaluation framework. Winner earns 100% subnet emissions."
+    },
+    {
+      "title": "Damacol/dmsc19-sn97-model-v1 - GitHub",
+      "url": "https://github.com/Damacol/dmsc19-sn97-model-v1",
+      "snippet": "DMSC19/sn97-model-v1 - Private, Uncensored AI for Real Creators and Devs Deploy {MODEL} without cloud dependencies. Uncensored, transparent, and optimized for privacy-conscious workflows."
+    }
+  ]
+}

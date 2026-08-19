@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ddrlvee/WarungVisionWeights",
+  "slug": "ddrlvee-warungvisionweights",
+  "author": "ddrlvee",
+  "url": "https://huggingface.co/ddrlvee/WarungVisionWeights",
+  "created_at": "2026-08-17T05:48:40.000Z",
+  "updated_at": "2026-08-17T06:10:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110745938,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ddrlve/WarungVision-AIC18: Official repository for ...",
+      "url": "https://github.com/ddrlve/WarungVision-AIC18",
+      "snippet": "Official repository for WarungVision - AI-powered retail inventory digitalization for AIC COMPFEST 18. - ddrlve/WarungVision-AIC18"
+    },
+    {
+      "title": "www.weights.com",
+      "url": "https://www.weights.com/create",
+      "snippet": "Create voice covers, images, songs, videos, and more with AI for free!"
+    },
+    {
+      "title": "www.weights.com",
+      "url": "https://www.weights.com/models",
+      "snippet": "www.weights.com ... /"
+    },
+    {
+      "title": "ddrlvee (Dian Rakhmawati Lestari) - Hugging Face",
+      "url": "https://huggingface.co/ddrlvee/models",
+      "snippet": "Recent Activity published a Space6 days ago ddrlvee/sovereign-dialect-bridge-summarization updated a Space7 days ago ddrlvee/nusantara_script published a Space7 days ago ddrlvee/nusantara_script View all activity"
+    },
+    {
+      "title": "ddrlvee (Dian Rakhmawati Lestari) - Hugging Face",
+      "url": "https://huggingface.co/ddrlvee/datasets",
+      "snippet": "Recent Activity updated a Space3 days ago ddrlvee/pothole-detection published a Space3 days ago ddrlvee/pothole-detection published a Space27 days ago ddrlvee/sovereign-dialect-bridge-summarization View all activity"
+    }
+  ]
+}

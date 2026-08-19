@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jesus1896/Montana",
+  "slug": "jesus1896-montana",
+  "author": "Jesus1896",
+  "url": "https://huggingface.co/Jesus1896/Montana",
+  "created_at": "2026-08-14T22:05:00.000Z",
+  "updated_at": "2026-08-14T22:05:00.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Image Generator - DeepAI",
+      "url": "https://deepai.org/machine-learning-model/text2img",
+      "snippet": "Transform your ideas into stunning AI art—instantly and for free. Whether you&#x27;re a creator, developer, or entrepreneur, DeepAI&#x27;s Free Online AI Image Generator gives you the power to visualize your imagination in seconds."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "Free AI Image Generator — AI Art & Photo Maker | DDG",
+      "url": "https://deepdreamgenerator.com/generate",
+      "snippet": "Make great images, artworks, photos and videos with DDG&#x27;s powerful Free AI Art Generator. 30+ AI models including ChatGPT, Flux 2, Nano Banana Pro. Try free!"
+    },
+    {
+      "title": "AI Gallery - Generate Stunning AI Art",
+      "url": "https://aigallery.app/",
+      "snippet": "Generate AI-powered artwork through a browser interface. No GPU or installation required."
+    }
+  ]
+}

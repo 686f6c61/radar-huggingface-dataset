@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_100Mpt_hfinit_20M_s0_2026-08-14_21-39-31_443744-pt",
+  "slug": "alexkstern-nca_dose_100mpt_hfinit_20m_s0_2026-08-14_21-39-31_443744-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_20M_s0_2026-08-14_21-39-31_443744-pt",
+  "created_at": "2026-08-14T21:43:42.000Z",
+  "updated_at": "2026-08-14T21:44:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share20-2048",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern/nca_dose_50Mpt_hfbody_5M_s0_2026-08-14_17-26-27_448317-pt ...",
+      "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_5M_s0_2026-08-14_17-26-27_448317-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alexkstern/nca_10pct_100M_d22_seed1_2026-07-21_20-18-53_500893-ppt at main",
+      "url": "https://huggingface.co/alexkstern/nca_10pct_100M_d22_seed1_2026-07-21_20-18-53_500893-ppt/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Text output of NCA for one subject — txtNCA • pkr",
+      "url": "https://asancpt.github.io/pkr/reference/txtNCA.html",
+      "snippet": "back extrapolated concentration at time 0, for bolus intravascular administration only"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: DeepSeek-V4-Flash-0731 by DeepSeek on Jul 31 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Perform Pharmacokinetic Non-Compartmental Analysis • PKNCA",
+      "url": "https://humanpred.github.io/pknca/",
+      "snippet": "The PKNCA R package is designed to perform all noncompartmental analysis (NCA) calculations for pharmacokinetic (PK) data. The package is broadly separated into two parts (calculation and summary) with some additional housekeeping functions. The primary and secondary goals of the PKNCA package are to 1) only give correct answers to the specific questions being asked and 2) automate as much as ..."
+    }
+  ]
+}

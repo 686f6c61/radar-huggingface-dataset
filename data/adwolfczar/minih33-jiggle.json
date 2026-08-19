@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AdwolfCzar/minih33-jiggle",
+  "slug": "adwolfczar-minih33-jiggle",
+  "author": "AdwolfCzar",
+  "url": "https://huggingface.co/AdwolfCzar/minih33-jiggle",
+  "created_at": "2026-08-14T05:49:40.000Z",
+  "updated_at": "2026-08-16T07:59:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6574779333,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdwolfCzar (Adwolf Saint Czar) - Hugging Face",
+      "url": "https://huggingface.co/AdwolfCzar/models",
+      "snippet": "AdwolfCzar&#x27;s models38 Sort: Recently updated AdwolfCzar/minih33-loop-i2v Updated 1 minute ago"
+    },
+    {
+      "title": "AdwolfCzar/minih33-loop-i2v · Hugging Face",
+      "url": "https://huggingface.co/AdwolfCzar/minih33-loop-i2v",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AdwolfCzar/minih33-loop-i2v-v3 at main - Hugging Face",
+      "url": "https://huggingface.co/AdwolfCzar/minih33-loop-i2v-v3/tree/main",
+      "snippet": "AdwolfCzar / minih33-loop-i2v-v3 like 1 Safetensors License:other Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "AdwolfCzar (Adwolf Saint Czar) - Hugging Face",
+      "url": "https://huggingface.co/AdwolfCzar/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "AdwolfCzar (Adwolf Saint Czar) - Hugging Face",
+      "url": "https://huggingface.co/AdwolfCzar",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    }
+  ]
+}

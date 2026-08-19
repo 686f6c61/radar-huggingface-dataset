@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Adzpro/Rewrite_model_Financial",
+  "slug": "adzpro-rewrite_model_financial",
+  "author": "Adzpro",
+  "url": "https://huggingface.co/Adzpro/Rewrite_model_Financial",
+  "created_at": "2026-08-15T04:53:39.000Z",
+  "updated_at": "2026-08-15T04:54:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 1980391360,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adzpro/Financial_v4 · Hugging Face",
+      "url": "https://huggingface.co/Adzpro/Financial_v4",
+      "snippet": "Adzpro / Financial_v4 like 0 GGUF qwen3_5 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Ranking the Best AI Tools for Financial Modeling (2026)",
+      "url": "https://www.wallstreetprep.com/knowledge/ranking-the-best-ai-tools-for-financial-modeling-2026/",
+      "snippet": "We ranked the top AI financial modeling tools: ChatGPT, Claude, Microsoft Copilot Agent Mode, and Shortcut using investment banking standards — here&#x27;s what actually works, and what doesn&#x27;t."
+    },
+    {
+      "title": "AI Financial Model Generator - Taskade",
+      "url": "https://www.taskade.com/generate/ai-business/financial-model",
+      "snippet": "Discover the power of precision with our AI-powered Financial Model Generator! Effortlessly craft comprehensive financial plans, maximize efficiency, and unlock strategic insights. Streamline your forecasting and make informed decisions fast. Perfect for entrepreneurs, investors, and financial professionals. Try it now for a reliable path to financial clarity and success!"
+    },
+    {
+      "title": "financial-modeling · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/financial-modeling",
+      "snippet": "VYNN AI Agent Backend is a standalone agent execution system for financial analysis. It orchestrates LLM-based agents to scrape historical financial data, build valuation models, analyze real-time financial news, and generate structured financial reports, with a focus on modularity and reproducible execution."
+    },
+    {
+      "title": "FinModel | AI Financial Model & Business Model Services",
+      "url": "https://www.financialmodel.io/",
+      "snippet": "Create professional financial models and business models instantly with AI. FinModel is the leading platform to hire financial model consultants, generate business models by AI, and automate your financial services globally."
+    }
+  ]
+}

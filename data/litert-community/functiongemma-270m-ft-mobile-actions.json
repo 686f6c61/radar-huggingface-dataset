@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "litert-community/functiongemma-270m-ft-mobile-actions",
+  "slug": "litert-community-functiongemma-270m-ft-mobile-actions",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/functiongemma-270m-ft-mobile-actions",
+  "created_at": "2026-02-25T23:13:08.000Z",
+  "updated_at": "2026-06-02T03:59:03.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "gemma3",
+    "gemma",
+    "functiongemma",
+    "text-generation",
+    "base_model:google/functiongemma-270m-it",
+    "base_model:finetune:google/functiongemma-270m-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 177,
+  "downloads_30d": 1058,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 862901313,
+  "storage_human": "863 MB",
+  "base_model": "google/functiongemma-270m-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/functiongemma-270m-ft-mobile-actions · Hugging Face",
+      "url": "https://huggingface.co/litert-community/functiongemma-270m-ft-mobile-actions",
+      "snippet": "Access Function Gemma 270M FT Mobile Actions on Hugging Face ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "README.md · litert-community/functiongemma-270m-ft-mobile-actions at main",
+      "url": "https://huggingface.co/litert-community/functiongemma-270m-ft-mobile-actions/blob/main/README.md",
+      "snippet": "The Mobile Actions model is a finetune of google/functiongemma-270m-it. To try out Mobile Actions, download the Google AI Edge Gallery app on your phone, open the Mobile Actions panel and tap the download button."
+    },
+    {
+      "title": "Functiongemma 270M Ft Mobile Actions — Hardware Requirements ...",
+      "url": "https://llmrun.dev/model/litert-community-functiongemma-270m-ft-mobile-actions",
+      "snippet": "Functiongemma 270M Ft Mobile Actions — Hardware Requirements & GPU Compatibility Chat Functiongemma 270M Ft Mobile Actions is a 270M-parameter open language model from litert-community in the Gemma family. At BF16 it needs about 0.59 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "functiongemma-270m-ft-mobile-actions: Text-to-Text model — overview ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/functiongemma-270m-ft-mobile-actions-litert-community",
+      "snippet": "Overview functiongemma-270m-ft-mobile-actions is a 270-million-parameter instruction-tuned language model from litert-community built on Google&#x27;s Gemma architecture and fine-tuned for mobile action tasks. The model derives from google/functiongemma-270m-it and is specifically optimized for on-device inference using the LiteRT framework, supporting deployment on Android and iOS without ..."
+    },
+    {
+      "title": "Fine-tune FunctionGemma 270M for Mobile Actions | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/mobile-actions",
+      "snippet": "Step 1: Fine-tuning Function Gemma with the Mobile Actions Dataset FunctionGemma is a 270 million parameter model based on the Gemma 3 architecture. It has been trained specifically for function calling, enabling it to translate natural language requests into function calls."
+    }
+  ]
+}

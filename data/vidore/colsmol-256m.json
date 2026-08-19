@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "vidore/colSmol-256M",
+  "slug": "vidore-colsmol-256m",
+  "author": "vidore",
+  "url": "https://huggingface.co/vidore/colSmol-256M",
+  "created_at": "2025-01-22T21:58:15.000Z",
+  "updated_at": "2026-08-17T13:25:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "colpali",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "colpali",
+    "safetensors",
+    "colsmolvlm",
+    "vidore-experimental",
+    "vidore",
+    "sentence-transformers",
+    "multi-vector",
+    "visual-document-retrieval",
+    "en",
+    "arxiv:2004.12832",
+    "arxiv:2407.01449",
+    "arxiv:2106.09685",
+    "base_model:vidore/ColSmolVLM-Instruct-256M-base",
+    "base_model:finetune:vidore/ColSmolVLM-Instruct-256M-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 3292,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 593960530,
+  "storage_human": "594 MB",
+  "base_model": "vidore/ColSmolVLM-Instruct-256M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vidore/colSmol-256M · Hugging Face",
+      "url": "https://huggingface.co/vidore/colSmol-256M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vidore/colSmol-256M at main - Hugging Face",
+      "url": "https://huggingface.co/vidore/colSmol-256M/tree/main",
+      "snippet": "ILLUIN Vidore 230 Visual Document Retrieval ColPali Safetensors English idefics3 colsmolvlm vidore-experimental vidore arxiv:2004.12832 arxiv:2407.01449 arxiv:2106.09685 License:mit Model card FilesFiles and versions Community 1 Use this model main colSmol-256M 4 contributors History:25 commits QuentinJG Update results.json a59110f verified4 ..."
+    },
+    {
+      "title": "colSmol-256M Open-source Visual Retrieval Tool - Free Deployment ...",
+      "url": "https://model.aibase.com/models/details/1915687310366294017",
+      "snippet": "🚀 ColSmolVLM-Instruct-256M: Visual Retriever based on SmolVLM-Instruct-250M with ColBERT strategy ColSmolVLM-Instruct-256M is a model that uses a novel architecture and training strategy based on Vision Language Models (VLMs) to efficiently index documents from their visual features. This is a version trained with batch_size 32 for 3 epochs."
+    },
+    {
+      "title": "vidore/colSmol-256M - Endor Labs",
+      "url": "https://www.endorlabs.com/ai-model/vidore-colsmol-256m",
+      "snippet": "vidore/colSmol-256M AI model with 8448 downloads"
+    },
+    {
+      "title": "vidore/ColSmolVLM-Instruct-256M-base - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/vidore-colsmolvlm-instruct-256m-base",
+      "snippet": "Model Details of ColSmolVLM-Instruct-256M-base ColSmolVLM-256M-Instruct: Visual Retriever based on SmolVLM-256M-Instruct with ColBERT strategy ColSmolVLM is a model based on a novel model architecture and training strategy based on Vision Language Models (VLMs) to efficiently index documents from their visual features."
+    }
+  ]
+}

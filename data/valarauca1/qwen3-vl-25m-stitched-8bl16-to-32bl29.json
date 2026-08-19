@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "valarauca1/qwen3-vl-25m-stitched-8bL16-to-32bL29",
+  "slug": "valarauca1-qwen3-vl-25m-stitched-8bl16-to-32bl29",
+  "author": "valarauca1",
+  "url": "https://huggingface.co/valarauca1/qwen3-vl-25m-stitched-8bL16-to-32bL29",
+  "created_at": "2026-08-16T23:51:23.000Z",
+  "updated_at": "2026-08-17T01:10:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl_stitched_h3",
+    "feature-extraction",
+    "qwen3-vl",
+    "vision-language",
+    "minimax-h3",
+    "image-to-video",
+    "custom-code",
+    "experimental",
+    "custom_code",
+    "dataset:detection-datasets/coco",
+    "dataset:WenhaoWang/VidProM",
+    "dataset:tipi2v/TIP-I2V",
+    "base_model:Qwen/Qwen3-VL-32B-Instruct",
+    "base_model:merge:Qwen/Qwen3-VL-32B-Instruct",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:merge:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": 14571629601,
+  "parameters_human": "14.57B",
+  "storage_bytes": 29236317498,
+  "storage_human": "29.2 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct, Qwen/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Qwen3-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3-vl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3-VL Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2511.21631",
+      "snippet": "The above innovations equip Qwen3-VL with strong capabilities not only as a robust vision-language foundation model but also as a flexible platform for real-world multimodal intelligence—seamlessly inte-grating perception, reasoning, and action across diverse application domains."
+    },
+    {
+      "title": "Best Local Vision Models 2026: LLaVA, Qwen3-VL & Ollama",
+      "url": "https://www.promptquorum.com/power-local-llm/local-vision-models-llava-ollama-2026",
+      "snippet": "This guide compares the leading local vision models (LLaVA 1.6, Llama 3.2 Vision, MiniCPM-V 4.5, Moondream 2, Qwen3-VL, InternVL 2.5), covers Ollama setup step-by-step, and maps each model to its best use case based on VRAM requirements and quality benchmarks."
+    }
+  ]
+}

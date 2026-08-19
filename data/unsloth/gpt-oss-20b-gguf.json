@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "unsloth/gpt-oss-20b-GGUF",
+  "slug": "unsloth-gpt-oss-20b-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF",
+  "created_at": "2025-08-05T17:12:17.000Z",
+  "updated_at": "2025-12-19T01:39:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gpt_oss",
+    "text-generation",
+    "openai",
+    "unsloth",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:quantized:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 782,
+  "downloads_30d": 569465,
+  "trending_score": 8,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 826676948410,
+  "storage_human": "826.7 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/gpt-oss-20b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gpt-oss: How to Run Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gpt-oss-how-to-run-and-fine-tune",
+      "snippet": "OpenAI releases &#x27; gpt-oss-120b&#x27; and &#x27; gpt-oss-20b&#x27;, two SOTA open language models under the Apache 2.0 license. Both 128k context models outperform similarly sized open models in reasoning, tool use, and agentic tasks. You can now run & fine-tune them locally with Unsloth! Run gpt-oss-20b Run gpt-oss-120b Fine-tune gpt-oss Fine-tune gpt-oss-20b for free with our Colab notebook Trained with RL ..."
+    },
+    {
+      "title": "unsloth/gpt-oss-20b-GGUF - Secret AI",
+      "url": "https://secretai.io/models/unsloth/gpt-oss-20b-GGUF",
+      "snippet": "Read our gpt-oss Guide here! Fine-tune gpt-oss-20b for free using our Google Colab notebook Read our Blog about gpt-oss support: unsloth.ai/blog/gpt-oss View the rest of our notebooks in our docs here. Thank you to the llama.cpp team for their work on supporting this model. We wouldn&#x27;t be able to release quants without them!"
+    },
+    {
+      "title": "unsloth/gpt-oss-20b-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tutorial: How to Fine-tune gpt-oss | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gpt-oss-how-to-run-and-fine-tune/tutorial-how-to-fine-tune-gpt-oss",
+      "snippet": "Learn step-by-step how to train OpenAI gpt-oss locally with Unsloth. In this guide with screenshots, you&#x27;ll learn to fine-tune your own custom gpt-oss model either locally on your machine with Unsloth or for free using Google Colab. We&#x27;ll walk you through the entire process, from setup to running and saving your trained model."
+    }
+  ]
+}

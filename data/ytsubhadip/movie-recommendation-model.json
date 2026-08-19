@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "YTsubhadip/movie-recommendation-model",
+  "slug": "ytsubhadip-movie-recommendation-model",
+  "author": "YTsubhadip",
+  "url": "https://huggingface.co/YTsubhadip/movie-recommendation-model",
+  "created_at": "2026-08-15T17:43:12.000Z",
+  "updated_at": "2026-08-15T17:50:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184781228,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Getting Started with AI: Building a movie recommendation model ... - Medium",
+      "url": "https://medium.com/@adachoudhry26/getting-started-with-ai-building-a-movie-recommendation-model-from-scratch-c3858d8948b",
+      "snippet": "Getting Started with AI: Building a movie recommendation model from scratch! Collaborative filtering, explaining OOP concepts, breaking down embedding vectors, and so much more…. Welcome (or …"
+    },
+    {
+      "title": "Building LUMEN a Movie Recommendation App like Netflix - LinkedIn",
+      "url": "https://www.linkedin.com/posts/zaryab-ahmad-56740b295_machinelearning-python-fastapi-activity-7493051345986416640-0DNS",
+      "snippet": "Meet LUMEN — a movie recommendation app I built from scratch to understand what&#x27;s really happening behind the scenes."
+    },
+    {
+      "title": "I Built a Movie Recommendation System Using GenAI (Step-by-Step) - Medium",
+      "url": "https://medium.com/activated-thinker/i-built-a-movie-recommendation-system-using-genai-step-by-step-21933eb320a3",
+      "snippet": "Fast, explainable, GenAI-powered movie recommendation system using traditional ML and a Large Language Model. By the end, you&#x27;ll understand: How real recommendation systems are structured."
+    },
+    {
+      "title": "Movie Recommendation System | Python Machine Learning Project Tutorial ...",
+      "url": "https://www.youtube.com/watch?v=i-B_I2DGIAI",
+      "snippet": "A comprehensive tutorial on building a Movie Recommendation System with machine learning! In this beginner-friendly guide, you&#x27;ll learn how to develop a robust recommendation system using Python ..."
+    },
+    {
+      "title": "CineHub - AI-Powered Movie Recommender System - YouTube",
+      "url": "https://www.youtube.com/watch?v=4y96t_lT2_I",
+      "snippet": "CineHub is a smart movie recommender system built with Python and Streamlit, designed to suggest movies you&#x27;ll love! 🎥🍿 Features: Personalized movie recommendations Clean & interactive ..."
+    }
+  ]
+}

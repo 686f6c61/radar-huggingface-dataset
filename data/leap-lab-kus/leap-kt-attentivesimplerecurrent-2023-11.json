@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "LEAP-LAB-KUS/leap-kt-attentivesimplerecurrent-2023-11",
+  "slug": "leap-lab-kus-leap-kt-attentivesimplerecurrent-2023-11",
+  "author": "LEAP-LAB-KUS",
+  "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-attentivesimplerecurrent-2023-11",
+  "created_at": "2026-08-05T11:02:58.000Z",
+  "updated_at": "2026-08-18T13:27:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "leap-kt",
+  "languages": [],
+  "tags": [
+    "leap-kt",
+    "safetensors",
+    "knowledge-tracing",
+    "education",
+    "educational-data-mining",
+    "attentivesimplerecurrent",
+    "dataset:assist2009",
+    "dataset:dbe_kt22",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52042360,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-attentivesimplerecurrent-2023-11 · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-attentivesimplerecurrent-2023-11",
+      "snippet": "leap-kt · ATTENTIVESIMPLERECURRENT ATTENTIVESIMPLERECURRENT — Part of leap-kt-toolkit, a systematic re-implementation of published Knowledge Tracing models under one protocol. This repository holds every fold of every dataset this model has been run on, with the per-epoch training logs and the exact user split alongside the checkpoints."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=attentivesimplerecurrent",
+      "snippet": "Explore machine learning models. LEAP-LAB-KUS/leap-kt-attentivesimplerecurrent-2023-11"
+    },
+    {
+      "title": "LEAP Lab @ Tsinghua University | Machine Learning & AI Research",
+      "url": "https://www.leaplab.ai/",
+      "snippet": "The Learning And Perception (LEAP) Lab at Tsinghua University conducts cutting-edge research in machine learning, multi-modal learning, and embodied intelligence. We focus on developing robust, scalable, and generalizable foundation models for the next generation of artificial intelligence."
+    },
+    {
+      "title": "Research | LEAP Lab @ Tsinghua University",
+      "url": "https://www.leaplab.ai/research",
+      "snippet": "The Learning And Perception (LEAP) Lab at Tsinghua University conducts cutting-edge research in machine learning, multi-modal learning, and embodied intelligence. We focus on developing robust, scalable, and generalizable foundation models for the next generation of artificial intelligence."
+    },
+    {
+      "title": "Artifact Registry · GitHub",
+      "url": "https://github.com/orgs/LEAP-LAB-KUS/artifacts",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    }
+  ]
+}

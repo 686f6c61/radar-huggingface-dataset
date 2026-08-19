@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "richardpenner/sportsball-game-recognition",
+  "slug": "richardpenner-sportsball-game-recognition",
+  "author": "richardpenner",
+  "url": "https://huggingface.co/richardpenner/sportsball-game-recognition",
+  "created_at": "2026-08-14T22:07:14.000Z",
+  "updated_at": "2026-08-14T22:24:36.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "computer-vision",
+    "sports",
+    "baseball",
+    "basketball",
+    "hailo",
+    "yolo",
+    "object-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 128,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 845313032,
+  "storage_human": "845 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "richardpenner (Richard Penner) - Hugging Face",
+      "url": "https://huggingface.co/richardpenner/datasets",
+      "snippet": "User profile of Richard Penner on Hugging Face"
+    },
+    {
+      "title": "richardpenner · GitHub",
+      "url": "https://github.com/richardpenner",
+      "snippet": "richardpenner has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Integrated AI System for Real-Time Sports Broadcasting: Player ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/15/3/1543",
+      "snippet": "This study presents an AI-based sports broadcasting system capable of real-time game analysis and automated commentary. The model first acquires essential background knowledge, including the court layout, game rules, team information, and player details. YOLO model-based segmentation is applied for a local camera view to enhance court recognition accuracy. Player&#x27;s actions and ball tracking ..."
+    },
+    {
+      "title": "(PDF) Integrated AI System for Real-Time Sports ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/388652456_Integrated_AI_System_for_Real-Time_Sports_Broadcasting_Player_Behavior_Game_Event_Recognition_and_Generative_AI_Commentary_in_Basketball_Games",
+      "snippet": "This study presents an AI-based sports broadcasting system capable of real-time game analysis and automated commentary. The model first acquires essential background knowledge, including the court ..."
+    },
+    {
+      "title": "sportsball-ai · GitHub",
+      "url": "https://github.com/sportsball-ai/",
+      "snippet": "sportsball-ai has 33 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

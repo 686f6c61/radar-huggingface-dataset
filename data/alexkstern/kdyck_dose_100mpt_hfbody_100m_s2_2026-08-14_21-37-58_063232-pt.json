@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_100Mpt_hfbody_100M_s2_2026-08-14_21-37-58_063232-pt",
+  "slug": "alexkstern-kdyck_dose_100mpt_hfbody_100m_s2_2026-08-14_21-37-58_063232-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_100M_s2_2026-08-14_21-37-58_063232-pt",
+  "created_at": "2026-08-14T21:41:49.000Z",
+  "updated_at": "2026-08-14T21:42:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kdyck_1pct_100M_d20_seed1_2026-07-21_20-33-26_342309-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_1pct_100M_d20_seed1_2026-07-21_20-33-26_342309-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kdyck_5pct_100M_d20_seed0_2026-07-21_18-28-50_363311-ppt",
+      "url": "https://huggingface.co/alexkstern/kdyck_5pct_100M_d20_seed0_2026-07-21_18-28-50_363311-ppt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yandex — fast Internet search",
+      "url": "https://yandex.com/",
+      "snippet": "Yandex is a technology company that builds intelligent products and services powered by machine learning. Our goal is to help consumers and businesses better navigate the online and offline world. Since 1997, we have delivered world-class, locally relevant search and information services. Additionally, we have developed market-leading on-demand transportation services, navigation products, and ..."
+    },
+    {
+      "title": "DJ ALEXX K - 100K PACK by DJ ALEXX K | Free Download on Hypeddit",
+      "url": "https://hypeddit.com/track/7yzd55",
+      "snippet": "Grab your free download of DJ ALEXX K - 100K PACK by DJ ALEXX K on Hypeddit"
+    },
+    {
+      "title": "HFUnderground.com Propagation Data and Tools",
+      "url": "https://www.hfunderground.com/propagation/",
+      "snippet": "The propagated solar wind values are then used to drive the Geospace model (SWMF) which outputs 1-minute predicted Kp and Dst values (bottom two plots). In addition to the forecasted values for Kp (green line) and Dst (white line), the ground truth data for Kp (SWPC estimated 3-hour Kp; teal line) and Dst (Kyoto 1-hour quick look Dst; red line ..."
+    }
+  ]
+}

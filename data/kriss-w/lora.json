@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kriss-W/lora",
+  "slug": "kriss-w-lora",
+  "author": "Kriss-W",
+  "url": "https://huggingface.co/Kriss-W/lora",
+  "created_at": "2026-08-17T13:02:03.000Z",
+  "updated_at": "2026-08-17T13:02:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "flux",
+    "text-to-image",
+    "lora",
+    "fal",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85092496,
+  "storage_human": "85 MB",
+  "base_model": "undefined",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#2 - Stylized AI Character LORA Model for FLUX and WAN Video",
+      "url": "https://lunamodels.art/store/product/girl-2/",
+      "snippet": "Generate stylized AI characters using this LORA model for FLUX and WAN Video, compatible with FLUX.1-Dev and Qwen Image 2512 base models."
+    },
+    {
+      "title": "Best Kriss - 1.0 AI LORA - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/961289908192809147",
+      "snippet": "Download Kriss - free LORA Qwen-Image AI model on TENSORHUB ART. By Flux Capacitor"
+    },
+    {
+      "title": "Best Kriss - 1.0 AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/961289908192809147",
+      "snippet": "Download Kriss - free LORA Qwen-Image AI model on TENSOR. By Flux Capacitor"
+    },
+    {
+      "title": "Kriss Vector Gen 1 w/ Holographic Sight - Illustrious",
+      "url": "https://civarchive.com/models/1247677?modelVersionId=1406429",
+      "snippet": "Download Kriss Vector Gen 1 w/ Holographic Sight - Illustrious - LORA for Illustrious by schmede. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Best kriss - 1.0 DESIGN AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/676987863750941620",
+      "snippet": "Download kriss - free LORA SD 1.5 AI model on TENSOR. DESIGN. By MasterCecil"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RealTeq/Qwen3.5-0.8B",
+  "slug": "realteq-qwen3-5-0-8b",
+  "author": "RealTeq",
+  "url": "https://huggingface.co/RealTeq/Qwen3.5-0.8B",
+  "created_at": "2026-08-17T18:54:13.000Z",
+  "updated_at": "2026-08-17T18:54:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1759750582,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-0.8B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B",
+      "snippet": "Qwen3.5-0.8B is the smallest member of the Qwen3.5 family — same hybrid gated delta networks architecture and 262K context, at a size suited to edge devices or as a draft model for speculative decoding with larger Qwen3.5 checkpoints."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Quick answer. Qwen3.5 0.8B is Alibaba&#x27;s smallest multimodal model, with a 262K context window and native vision support. Pull it with `ollama run qwen3.5:0.8b` for text or run the GGUF in llama.cpp for image input. Expect strong recall but weak code accuracy — bump to Qwen3.5 4B for any coding task."
+    },
+    {
+      "title": "Qwen 3.5 0.8B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-5-0-8b/",
+      "snippet": "Qwen3.5-0.8B is a post-trained vision-language model (causal LM plus vision encoder) with 0.8B parameters, 24 layers, and a Gated DeltaNet plus Gated Attention hybrid layout, designed for multimodal reasoning, coding, and tool calling, with 262,144 native context length."
+    },
+    {
+      "title": "Qwen3.5 0.8B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-0-8b/",
+      "snippet": "Qwen3.5 0.8B is the smallest vision-language model in the Qwen3.5 lineup. It is designed for lightweight local multimodal inference, fast iteration, and efficient Jetson deployment."
+    }
+  ]
+}

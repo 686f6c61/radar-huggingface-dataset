@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "cebeuq/DeepSeek-V4-Flash-0731-abliterated",
+  "slug": "cebeuq-deepseek-v4-flash-0731-abliterated",
+  "author": "cebeuq",
+  "url": "https://huggingface.co/cebeuq/DeepSeek-V4-Flash-0731-abliterated",
+  "created_at": "2026-08-01T19:09:48.000Z",
+  "updated_at": "2026-08-01T23:48:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "mixture-of-experts",
+    "mhc",
+    "fp4",
+    "fp8",
+    "dspark",
+    "vllm",
+    "dgx-spark",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 8612,
+  "trending_score": 8,
+  "parameters": 305723922366,
+  "parameters_human": "305.72B",
+  "storage_bytes": 168430142944,
+  "storage_human": "168.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cebeuq/DeepSeek-V4-Flash-0731-abliterated · Hugging Face",
+      "url": "https://huggingface.co/cebeuq/DeepSeek-V4-Flash-0731-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases: deepseek-v4-flash-0731/deepseek-v4-flash-0731 - GitHub",
+      "url": "https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731/releases",
+      "snippet": "DeepSeek V4 Flash 0731 Run DeepSeek V4 Flash locally with free desktop app.Deepseek v4 flash free, deepseek v4 flash gguf, deepseek v4 flash local, deepseek v4 flash ollama, deepseek v4 flash requirements. Mixture of Experts, 1M context window, compressed sparse attention."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 Abliterated by cebeuq",
+      "url": "https://llm-explorer.com/model/cebeuq%2FDeepSeek-V4-Flash-0731-abliterated,jF40WYNfMSEbKf0uNNUiI",
+      "snippet": "DeepSeek V4 Flash 0731 Abliterated is an open-source 305.7b LLM by cebeuq. VRAM 145.1GB, 1024K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/LFM2.5-VL-450M-CoreAI",
+  "slug": "mlboydaisuke-lfm2-5-vl-450m-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/LFM2.5-VL-450M-CoreAI",
+  "created_at": "2026-08-14T04:05:33.000Z",
+  "updated_at": "2026-08-15T05:14:08.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lfm2_vl",
+    "coreai",
+    "aimodel",
+    "apple-silicon",
+    "on-device",
+    "lfm2",
+    "vision-language",
+    "siglip2",
+    "image-text-to-text",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:finetune:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2360671360,
+  "storage_human": "2.4 GB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-VL-450M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-450M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-VL-450M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-450m",
+      "snippet": "Compact 450M vision-language model with enhanced performance for edge deployment ← Back to Vision Models LFM2.5-VL-450M is Liquid AI&#x27;s smallest vision-language model, building on LFM2-VL-450M with extended reinforcement learning for improved performance while maintaining the same compact deployment footprint."
+    },
+    {
+      "title": "LiquidAI/LFM2-VL-450M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-VL-450M",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-VL-450M"
+    },
+    {
+      "title": "LFM2.5-VL-450M: Structured Visual Intelligence, Edge to Cloud",
+      "url": "https://www.liquid.ai/blog/lfm2-5-vl-450m",
+      "snippet": "Today, we release LFM2.5-VL-450M, an improved version of LFM2-VL-450M with grounding capabilities, better instruction following, and function calling support. The result is a compact model that turns image streams into structured, actionable outputs in real time, even on edge hardware."
+    },
+    {
+      "title": "GitHub - Liquid4All/cookbook: Examples, end-2-end tutorials and apps ...",
+      "url": "https://github.com/Liquid4All/cookbook",
+      "snippet": "Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models (LFM) and the LEAP SDK - Liquid4All/cookbook"
+    }
+  ]
+}

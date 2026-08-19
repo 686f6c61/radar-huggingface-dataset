@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ponpoke/flux2-klein-4b-uncensored-text-encoder",
+  "slug": "ponpoke-flux2-klein-4b-uncensored-text-encoder",
+  "author": "ponpoke",
+  "url": "https://huggingface.co/ponpoke/flux2-klein-4b-uncensored-text-encoder",
+  "created_at": "2026-05-01T15:38:46.000Z",
+  "updated_at": "2026-05-01T15:38:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "text-to-image",
+    "flux2",
+    "klein",
+    "GGUF",
+    "text-generation-inference",
+    "uncensored",
+    "abliterated",
+    "abliteration",
+    "en",
+    "ja",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 114,
+  "downloads_30d": 8795,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ponpoke/flux2-klein-4b-uncensored-text-encoder · Hugging Face",
+      "url": "https://huggingface.co/ponpoke/flux2-klein-4b-uncensored-text-encoder",
+      "snippet": "FLUX.2-klein-4B Uncensored Text Encoder Tips are greatly appreciated and help sustain the compute resources needed for further research! Read this in other languages: 日本語 (Japanese) Overview This repository provides an \"uncensored\" text encoder for the FLUX.2-klein-4B image generation model by Black Forest Labs. It bypasses the built-in safety filters to unlock the model&#x27;s unconstrained ..."
+    },
+    {
+      "title": "ponpoke/flux2-klein-4b-uncensored-text-encoder at main",
+      "url": "https://huggingface.co/ponpoke/flux2-klein-4b-uncensored-text-encoder/tree/main",
+      "snippet": "Gated model You can list files but not access them Preview of files found in this repository flux2-klein-4b-uncensored-text-encoder"
+    },
+    {
+      "title": "uncensored-image-gen-wiki/wiki/entities/models/flux-2-klein.md at main ...",
+      "url": "https://github.com/cemini23/uncensored-image-gen-wiki/blob/main/wiki/entities/models/flux-2-klein.md",
+      "snippet": "Note: FLUX.2 has a different block structure (Klein: 5 double / 20 single vs FLUX.1&#x27;s 19/38), shared modulation, hidden dim 3072 (Klein 4B) vs 4096 (FLUX.1), and Qwen3 text encoder (vs T5) — so the injection system was rebuilt from scratch."
+    },
+    {
+      "title": "Miraclein NSFW [Generation & Edit] [Flux2Klein]",
+      "url": "https://civitai.com/models/2453960/miraclein-nsfw-generation-and-edit-flux2klein",
+      "snippet": "Flux 2 was not what we wanted or needed, but Klein appears to be what we deserved! Let&#x27;s unlock the full NSFW potential of this model! Miraclein focuses on photorealism and more grounded/grungy images. Not amateur style, but not fantastical either. Generation Settings Most settings work, but I use: 12 steps Euler CFG 1.1 FP8 Download For some reason, when you upload multiple formats (BF16 ..."
+    },
+    {
+      "title": "flux2-klein-4b/src/flux2/text_encoder.py at main - GitHub",
+      "url": "https://github.com/VladimirRL/flux2-klein-4b/blob/main/src/flux2/text_encoder.py",
+      "snippet": "Official inference repo for FLUX.2 models. Contribute to VladimirRL/flux2-klein-4b development by creating an account on GitHub."
+    }
+  ]
+}

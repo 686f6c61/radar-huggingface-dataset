@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "oguzhanakkaya/poc-gguf-oob-read",
+  "slug": "oguzhanakkaya-poc-gguf-oob-read",
+  "author": "oguzhanakkaya",
+  "url": "https://huggingface.co/oguzhanakkaya/poc-gguf-oob-read",
+  "created_at": "2026-08-18T22:26:46.000Z",
+  "updated_at": "2026-08-18T22:27:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "security",
+    "poc",
+    "oob-read",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oguzhanakkaya/poc-nlayer-oob-gguf · Hugging Face",
+      "url": "https://huggingface.co/oguzhanakkaya/poc-nlayer-oob-gguf",
+      "snippet": "oguzhanakkaya / poc-nlayer-oob-gguf like 0 GGUF security-research poc mfv License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "oguzhanakkaya (Oguzhan Akkaya) - Hugging Face",
+      "url": "https://huggingface.co/oguzhanakkaya",
+      "snippet": "Recent Activity updated a model15 days ago oguzhanakkaya/poc-nlayer-oob-gguf published a model15 days ago oguzhanakkaya/poc-nlayer-oob-gguf View all activity"
+    },
+    {
+      "title": "GitHub - msuiche/gguf_cve2026_7482",
+      "url": "https://github.com/msuiche/gguf_cve2026_7482",
+      "snippet": "CVE-2026-7482 is an unauthenticated heap out-of-bounds read vulnerability in Ollama versions before 0.17.1. When a malicious GGUF model file is processed via /api/create with quantize=F32, the quantization path reads past the end of the source buffer, leaking process memory (environment variables ..."
+    },
+    {
+      "title": "GitHub - 0x0OZ/CVE-2026-7482-PoC: 1day vuln research I guess",
+      "url": "https://github.com/0x0OZ/CVE-2026-7482-PoC",
+      "snippet": "This repository contains a 1-day Proof of Concept (PoC) exploitation chain for CVE-2026-7482, an unauthenticated Out-of-Bounds (OOB) Read vulnerability in Ollama&#x27;s GGUF model loader (versions prior to 0.17.1). Note: This is a 1-day research reproduction. I did not discover the original CVE. This PoC was engineered based on the public advisory details to demonstrate the mechanics of the ..."
+    },
+    {
+      "title": "CVE-2026-7482: Ollama GGUF Heap Out-of-Bounds Read — Full Technical ...",
+      "url": "https://www.eresussec.com/en/blog/ollama-cve-2026-7482-heap-oob-gguf-vulnerability",
+      "snippet": "CVE-2026-7482 is a critical heap out-of-bounds read in Ollama&#x27;s GGUF model loader (CVSS 9.1). Unauthenticated remote attackers can leak ~2 MB of heap memory per request — including environment variables, API keys, system prompts, and concurrent users&#x27; conversation data. Two-bug chain, full PoC, patch diff, and Ollama 0.17.1 fix."
+    }
+  ]
+}

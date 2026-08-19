@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FatimahEmadEldin/leo-uav-flair-experiments",
+  "slug": "fatimahemadeldin-leo-uav-flair-experiments",
+  "author": "FatimahEmadEldin",
+  "url": "https://huggingface.co/FatimahEmadEldin/leo-uav-flair-experiments",
+  "created_at": "2026-08-11T18:41:21.000Z",
+  "updated_at": "2026-08-15T23:14:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2506.07080",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FatimahEmadEldin/leo-uav-fusion-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/FatimahEmadEldin/leo-uav-fusion-checkpoints",
+      "snippet": "LEO + UAV fusion - experiment checkpoints and results Generated 2026-08-02 16:25 UTC. Weights, logs and full documentation for every completed run of the cross-scale fusion study. Each run folder has its own README with the data, split, per-class breakdown and caveats."
+    },
+    {
+      "title": "FatimahEmadEldin (Fatimah Emad Eldin) - Hugging Face",
+      "url": "https://huggingface.co/FatimahEmadEldin/models",
+      "snippet": "User profile of Fatimah Emad Eldin on Hugging Face"
+    },
+    {
+      "title": "Revisions · FLAIR cross-scale fusion - Tesla T4 trainer (resume ...",
+      "url": "https://gist.github.com/astral-fate/9cacb26a3d0a2adbd2b34cd45da08ce7/revisions",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    {
+      "title": "Revisions · FLAIR super-resolution (Experiment 2) - L1/diffusion ...",
+      "url": "https://gist.github.com/astral-fate/e83cc95fdabfe4cef6cf3dfdc53fbe23/revisions",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    {
+      "title": "UAV-Flow - prince687028.github.io",
+      "url": "https://prince687028.github.io/UAV-Flow/",
+      "snippet": "UAV-Flow consists of a large-scale real-world dataset for language-conditioned UAV imitation learning, featuring multiple UAV platforms, diverse environments, and a wide range of fine-grained flight skill tasks. To enable systematic experimental analysis under the Flow task setting, we additionally provide a simulation-based evaluation protocol and deploy VLA models on real UAVs. To the best ..."
+    }
+  ]
+}

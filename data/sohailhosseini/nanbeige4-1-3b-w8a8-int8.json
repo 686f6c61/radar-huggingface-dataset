@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sohailhosseini/Nanbeige4.1-3B-W8A8-INT8",
+  "slug": "sohailhosseini-nanbeige4-1-3b-w8a8-int8",
+  "author": "Sohailhosseini",
+  "url": "https://huggingface.co/Sohailhosseini/Nanbeige4.1-3B-W8A8-INT8",
+  "created_at": "2026-08-19T01:26:27.000Z",
+  "updated_at": "2026-08-19T01:28:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "compressed-tensors",
+    "quantized",
+    "vllm",
+    "w8a8_int8",
+    "text-generation",
+    "conversational",
+    "base_model:Nanbeige/Nanbeige4.1-3B",
+    "base_model:quantized:Nanbeige/Nanbeige4.1-3B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3933637120,
+  "parameters_human": "3.93B",
+  "storage_bytes": 4804872459,
+  "storage_human": "4.8 GB",
+  "base_model": "Nanbeige/Nanbeige4.1-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanbeige/Nanbeige4.1-3B · Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.1-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Nanbeige/Nanbeige4.1-3B at main - Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.1-3B/blob/main/README.md",
+      "snippet": "Introduction Nanbeige4.1-3B is built upon Nanbeige4-3B-Base and represents an enhanced iteration of our previous reasoning model, Nanbeige4-3B-Thinking-2511, achieved through further post-training optimization with supervised fine-tuning (SFT) and reinforcement learning (RL)."
+    },
+    {
+      "title": "Nanbeige4.1-3B - BenchSift",
+      "url": "https://benchsift.nxtaigen.com/models/nanbeige4-1-3b",
+      "snippet": "Nanbeige4.1-3B by Nanbeige: text model benchmarks, coding and math scores, speed, latency and pricing."
+    },
+    {
+      "title": "Nanbeige/Nanbeige4.1-3B - lambda.ai",
+      "url": "https://lambda.ai/inference-models/nanbeige/nanbeige4.1-3b",
+      "snippet": "How to deploy Nanbeige4.1-3B on Lambda: 3B dense code model for single GPU. Get SGLang/vLLM setup, VRAM requirements, and throughput benchmarks."
+    },
+    {
+      "title": "Nanbeige4.1-3B: A Small General Model that Reasons, Aligns, and Acts",
+      "url": "https://arxiv.org/html/2602.13367v1",
+      "snippet": "Our model, Nanbeige4.1-3B, demonstrates a remarkable leap in performance compared to its baseline Nanbeige4-3B-2511 and significantly outperforms other small foundation models with tools across all benchmarks."
+    }
+  ]
+}

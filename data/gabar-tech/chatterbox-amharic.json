@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "gabar-tech/chatterbox-amharic",
+  "slug": "gabar-tech-chatterbox-amharic",
+  "author": "gabar-tech",
+  "url": "https://huggingface.co/gabar-tech/chatterbox-amharic",
+  "created_at": "2026-08-17T17:19:59.000Z",
+  "updated_at": "2026-08-17T21:40:14.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "amharic",
+    "ethiopia",
+    "lora",
+    "voice-cloning",
+    "chatterbox",
+    "am",
+    "dataset:google/WaxalNLP",
+    "dataset:mozilla-foundation/common_voice_25_0",
+    "base_model:ResembleAI/chatterbox",
+    "base_model:adapter:ResembleAI/chatterbox",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 226247992,
+  "storage_human": "226 MB",
+  "base_model": "ResembleAI/chatterbox",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gabr42/Chatterbox: AI chat app",
+      "url": "https://github.com/gabr42/Chatterbox",
+      "snippet": "Chatterbox Chatterbox is an open-source application designed to enable users to run multiple simultaneous chats with different large language model (LLM) engines."
+    },
+    {
+      "title": "GitHub - Diakonrobel/Amharic_chatterbox-TTS",
+      "url": "https://github.com/Diakonrobel/Amharic_chatterbox-TTS",
+      "snippet": "A comprehensive Amharic TTS system built on Chatterbox, featuring custom G2P, tokenizer extension, and multilingual fine-tuning. 🗣️ Status: Development/Training Phase 📚 Language: Amharic (አማርኛ) + English 🎯 Goal: High-quality Amharic speech synthesis"
+    },
+    {
+      "title": "Abyssinica AI",
+      "url": "https://www.abyssinica.ai/",
+      "snippet": "Abyssinica AI is a state-of-the-art conversational AI model specifically designed for low-resource African languages such as Amharic, and more to come in the future. Developed with advanced natural language processing techniques. Products include Translator, Speech synthesizer, Speech recongnition and AI powered Ethiopian laws search."
+    },
+    {
+      "title": "Chatterbox: Open Source Text-to-Speech | Resemble AI",
+      "url": "https://www.resemble.ai/learn/models/chatterbox",
+      "snippet": "Chatterbox is Resemble AI&#x27;s free, open-source TTS model, MIT-licensed with emotion control, real-time generation, and zero-shot voice cloning from 5 seconds of audio."
+    },
+    {
+      "title": "Addis AI | Voice-First AI Infrastructure for African Languages",
+      "url": "https://addisassistant.com/",
+      "snippet": "Build with Addis AI&#x27;s speech-to-text, text-to-speech, language models, translation, and realtime voice APIs and SDKs for Amharic and Afaan Oromo."
+    }
+  ]
+}

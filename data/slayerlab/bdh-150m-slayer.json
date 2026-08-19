@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "SlayerLab/bdh-150m-slayer",
+  "slug": "slayerlab-bdh-150m-slayer",
+  "author": "SlayerLab",
+  "url": "https://huggingface.co/SlayerLab/bdh-150m-slayer",
+  "created_at": "2026-08-16T13:16:41.000Z",
+  "updated_at": "2026-08-16T13:18:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en",
+    "pl"
+  ],
+  "tags": [
+    "custom",
+    "safetensors",
+    "bdh",
+    "pytorch",
+    "fast-weights",
+    "scaling",
+    "language-model",
+    "text-generation",
+    "en",
+    "pl",
+    "dataset:SlayerLab/research-mix-v1",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 604701216,
+  "storage_human": "605 MB",
+  "base_model": "pathwaycom/bdh",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

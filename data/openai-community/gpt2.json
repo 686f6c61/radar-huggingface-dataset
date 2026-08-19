@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "openai-community/gpt2",
+  "slug": "openai-community-gpt2",
+  "author": "openai-community",
+  "url": "https://huggingface.co/openai-community/gpt2",
+  "created_at": "2022-03-02T23:29:04.000Z",
+  "updated_at": "2024-02-19T10:57:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "tflite",
+    "rust",
+    "onnx",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "exbert",
+    "en",
+    "doi:10.57967/hf/0039",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 3407,
+  "downloads_30d": 13884621,
+  "trending_score": 9,
+  "parameters": 137022720,
+  "parameters_human": "137.0M",
+  "storage_bytes": 11977009063,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai-community/gpt2 · Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GPT‑2: 1.5B release - OpenAI",
+      "url": "https://openai.com/index/gpt-2-1-5b-release/",
+      "snippet": "As the final model release of GPT-2&#x27;s staged release, we&#x27;re releasing the largest version (1.5B parameters) of GPT-2 along with code and model weights to facilitate detection of outputs of GPT-2 models. While there have been larger language models released since August, we&#x27;ve continued with our original staged release plan in order to provide the community with a test case of a full ..."
+    },
+    {
+      "title": "openai-community (OpenAI community) - Hugging Face",
+      "url": "https://huggingface.co/openai-community",
+      "snippet": "This organization is maintained by the transformers team at Hugging Face and contains the historical (pre-\"Hub\") checkpoints like openai-gpt (\"GPT-1\"), gpt2, gpt2-medium, gpt2-large, gpt2-xl."
+    },
+    {
+      "title": "GitHub - openai/gpt-2: Code for the paper \"Language Models are ...",
+      "url": "https://github.com/openai/gpt-2",
+      "snippet": "GPT-2 models&#x27; robustness and worst case behaviors are not well-understood. As with any machine-learned model, carefully evaluate GPT-2 for your use case, especially if used without fine-tuning or in safety-critical applications where reliability is important. The dataset our GPT-2 models were trained on contains many texts with biases and factual inaccuracies, and thus GPT-2 models are likely ..."
+    },
+    {
+      "title": "gpt-2/model_card.md at master · openai/gpt-2 · GitHub",
+      "url": "https://github.com/openai/gpt-2/blob/master/model_card.md",
+      "snippet": "Inspired by Model Cards for Model Reporting (Mitchell et al.), we&#x27;re providing some accompanying information about the GPT-2 family of models we&#x27;re releasing. Model Details. This model was developed by researchers at OpenAI to help us understand how the capabilities of language model capabilities ..."
+    }
+  ]
+}

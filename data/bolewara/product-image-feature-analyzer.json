@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bolewara/product-image-feature-analyzer",
+  "slug": "bolewara-product-image-feature-analyzer",
+  "author": "bolewara",
+  "url": "https://huggingface.co/bolewara/product-image-feature-analyzer",
+  "created_at": "2026-08-17T19:08:14.000Z",
+  "updated_at": "2026-08-17T19:09:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "unsupervised-learning",
+    "anomaly-detection",
+    "clustering",
+    "image-features",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2594935,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Building a 75,000-Product Image Feature Dataset for the Amazon ML ...",
+      "url": "https://dev.to/bolewara/building-a-75000-product-image-feature-dataset-for-the-amazon-ml-challenge-2025-5hgn",
+      "snippet": "Hey everyone! Hope you&#x27;re all doing great today. So I&#x27;ve got something pretty exciting to share with you all — I just created a massive image features dataset for the Amazon ML Challenge 2025! Processing 75,000 product images and extracting deep learning features was absolutely wild. I never thought I&#x27;d be building ML-ready datasets at this scale — but here we are!"
+    },
+    {
+      "title": "Creating a 75K Product Image Features Dataset for Amazon ML ... - Medium",
+      "url": "https://medium.com/@bolewara/creating-a-75k-product-image-features-dataset-for-amazon-ml-challenge-my-journey-into-deep-9d57a8bbf54a",
+      "snippet": "Creating a 75K Product Image Features Dataset for Amazon ML Challenge — My Journey Into Deep Learning Feature Extraction Hey everyone! Hope you&#x27;re all doing great today."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools)."
+    },
+    {
+      "title": "bolewara (Anuj Bolewar) - Hugging Face",
+      "url": "https://huggingface.co/bolewara/models",
+      "snippet": "Recent Activity updated a Spaceabout 2 months ago bolewara/csa-med-clinical-nlp published a Spaceabout 2 months ago bolewara/csa-med-clinical-nlp View all activity"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

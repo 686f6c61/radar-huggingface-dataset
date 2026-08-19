@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Dwipz/Anchor-Align",
+  "slug": "dwipz-anchor-align",
+  "author": "Dwipz",
+  "url": "https://huggingface.co/Dwipz/Anchor-Align",
+  "created_at": "2026-06-28T10:10:00.000Z",
+  "updated_at": "2026-08-18T23:38:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "anchor-align",
+    "vla",
+    "robotics",
+    "libero",
+    "qwen2.5",
+    "lora",
+    "vision-language-action",
+    "arxiv:2607.13429",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15762358835,
+  "storage_human": "15.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Dwipz/Anchor-Align at main - Hugging Face",
+      "url": "https://huggingface.co/Dwipz/Anchor-Align/blob/main/README.md",
+      "snippet": "Instructions to use Dwipz/Anchor-Align with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Dwipz/Anchor-Align with Transformers:"
+    },
+    {
+      "title": "Dwipz/Anchor-Align at main - Hugging Face",
+      "url": "https://huggingface.co/Dwipz/Anchor-Align/tree/main",
+      "snippet": "Instructions to use Dwipz/Anchor-Align with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Dwipz/Anchor-Align with Transformers:"
+    },
+    {
+      "title": "GitHub - dwipddalal/Anchor-Align: Generalizable VLA Finetuning via ...",
+      "url": "https://github.com/dwipddalal/Anchor-Align",
+      "snippet": "The four release checkpoints live on HuggingFace at Dwipz/Anchor-Align; this GitHub repo contains the inference and evaluation code for them. The two repos are paired: HF hosts the weights, GitHub hosts the code."
+    },
+    {
+      "title": "Anchor-Align: Generalizable VLA Finetuning via Representation Anchoring ...",
+      "url": "https://anchoralignvla.github.io/",
+      "snippet": "OOD generalization with Anchor-Align Finetuning a pretrained vision-language model (VLM) on robot demonstrations via behavior cloning (BC) has become the standard recipe for vision-language-action (VLA) policies. However, BC finetuning progressively overwrites the pretrained representations that support visual and semantic generalization."
+    },
+    {
+      "title": "Anchor-Align/pretrained_models/configs at main · dwipddalal ... - GitHub",
+      "url": "https://github.com/dwipddalal/Anchor-Align/tree/main/pretrained_models/configs",
+      "snippet": "Generalizable VLA Finetuning via Representation Anchoring and Language-Action Alignment - dwipddalal/Anchor-Align"
+    }
+  ]
+}

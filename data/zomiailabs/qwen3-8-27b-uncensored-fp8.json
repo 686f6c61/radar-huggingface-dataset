@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "zomiailabs/Qwen3.8-27B-Uncensored-FP8",
+  "slug": "zomiailabs-qwen3-8-27b-uncensored-fp8",
+  "author": "zomiailabs",
+  "url": "https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-FP8",
+  "created_at": "2026-08-18T01:40:55.000Z",
+  "updated_at": "2026-08-18T02:09:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "qwen3.8",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "fp8",
+    "block-fp8",
+    "vllm",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30879676456,
+  "storage_human": "30.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 - Hugging Face",
+      "url": "https://huggingface.co/zomiailabs/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "License Scripts and the attribute pack text: MIT. Qwen weights: Apache-2.0. This repository does not redistribute those bytes. Harvested numbers cite orcarouter/Qwen3.8-27B-Uncensored-FP8. Re-harvest the card before changing a figure."
+    },
+    {
+      "title": "zomiailabs/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 at main",
+      "url": "https://huggingface.co/zomiailabs/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Noillum123 | Qwen3.8-27B-Uncensored-FP8 | Kaggle",
+      "url": "https://www.kaggle.com/models/noillum123/qwen3-8-27b-uncensored-fp8",
+      "snippet": "Qwen3.8-27B-Uncensored-FP8 is an abliterated (refusal-removed) and offline block-FP8 quantized build of Qwen&#x27;s Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with flexible thinking control, tool-calling, and an MTP speculative-decoding head."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    }
+  ]
+}

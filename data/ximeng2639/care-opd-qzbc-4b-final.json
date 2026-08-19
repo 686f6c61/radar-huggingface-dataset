@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ximeng2639/care-opd-qzbc-4b-final",
+  "slug": "ximeng2639-care-opd-qzbc-4b-final",
+  "author": "ximeng2639",
+  "url": "https://huggingface.co/ximeng2639/care-opd-qzbc-4b-final",
+  "created_at": "2026-08-17T05:52:32.000Z",
+  "updated_at": "2026-08-17T06:12:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen",
+    "care-opd",
+    "evidence-grounded-generation",
+    "structured-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547613,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "google/gemma-3-4b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-4b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI-Based OPD Consultant for Paediatric Care - GitHub",
+      "url": "https://github.com/ankit07721/AI-OPD-Consultant",
+      "snippet": "This project develops an AI-based clinical decision support system for pediatric outpatient (OPD) consultations. The system assists doctors by analyzing patient symptoms, medical history, and clinical guidelines to provide evidence-based diagnostic and investigative recommendations."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

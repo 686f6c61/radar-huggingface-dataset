@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ronaldodev/finanfa-ai-luth-1.7b",
+  "slug": "ronaldodev-finanfa-ai-luth-1-7b",
+  "author": "Ronaldodev",
+  "url": "https://huggingface.co/Ronaldodev/finanfa-ai-luth-1.7b",
+  "created_at": "2026-08-17T13:51:26.000Z",
+  "updated_at": "2026-08-17T13:52:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "benin",
+    "finanfa-ai",
+    "lora",
+    "luth",
+    "fine-tuned",
+    "text-generation",
+    "conversational",
+    "fr",
+    "dataset:Ronaldodev/finanfa-ai-dataset",
+    "base_model:kurakurai/Luth-1.7B-Instruct",
+    "base_model:adapter:kurakurai/Luth-1.7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608262,
+  "storage_human": "3.5 GB",
+  "base_model": "kurakurai/Luth-1.7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ronaldodev/finanfa-ai-luth-lfm2-1.2b · Hugging Face",
+      "url": "https://huggingface.co/Ronaldodev/finanfa-ai-luth-lfm2-1.2b",
+      "snippet": "FINANFA AI 🇧🇯 — essai Luth-LFM2-1.2B FINANFA AI est un modèle de langage spécialisé sur les connaissances du Bénin : histoire, royaumes, politique, institutions, culture, Vodun, géographie, économie, langues nationales et vie quotidienne."
+    },
+    {
+      "title": "Ronaldodev (AWADEME Ronaldo) - Hugging Face",
+      "url": "https://huggingface.co/Ronaldodev/models",
+      "snippet": "AI & ML interests Explicit is better than implicit ! Organizations"
+    },
+    {
+      "title": "Luth 1.7B Instruct — AI Model | Antbase",
+      "url": "https://antbase.ai/models/luth-1-7b-instruct",
+      "snippet": "Overview Luth 1.7B Instruct is a efficient model from Featherless with a 33K context window, supporting function calling. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "CanIRun.ai — Can your machine run AI models?",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your hardware and find out which AI models you can run locally. GPU, CPU, and RAM analysis in your browser."
+    }
+  ]
+}

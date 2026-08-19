@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "elprofessor67/om-logistics-pod-v6",
+  "slug": "elprofessor67-om-logistics-pod-v6",
+  "author": "elprofessor67",
+  "url": "https://huggingface.co/elprofessor67/om-logistics-pod-v6",
+  "created_at": "2026-08-17T11:19:43.000Z",
+  "updated_at": "2026-08-17T11:23:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-VL-32B-Instruct",
+    "base_model:finetune:unsloth/Qwen3-VL-32B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4943751594,
+  "storage_human": "4.9 GB",
+  "base_model": "unsloth/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elprofessor67/om-logistics-pod-v4 · Hugging Face",
+      "url": "https://huggingface.co/elprofessor67/om-logistics-pod-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "elprofessor67 (Zeeshan Raza) - Hugging Face",
+      "url": "https://huggingface.co/elprofessor67/models",
+      "snippet": "elprofessor67/faster-whisper-kannada-tiny published a model about 9 hours ago elprofessor67/faster-whisper-kannada-tiny updated a model 14 days ago elprofessor67/doctor_assistant_lama_7b View all activity"
+    },
+    {
+      "title": "ELProfessor67 · GitHub",
+      "url": "https://github.com/ELProfessor67",
+      "snippet": "ELProfessor67 has 131 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Om AI Lab - GitHub",
+      "url": "https://github.com/om-ai-lab",
+      "snippet": "At Om AI Lab, we believe the future of AI extends far beyond pure text. We are dedicated to building the \"brains\" for next-generation systems by focusing on the intersection of Spatial Intelligence, Visual Reasoning, and Embodied Agents."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=en",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RyanYr/grpo-dapo_offline-qwen2.5math-1.5B-base-mbs256-n8_actor",
+  "slug": "ryanyr-grpo-dapo_offline-qwen2-5math-1-5b-base-mbs256-n8_actor",
+  "author": "RyanYr",
+  "url": "https://huggingface.co/RyanYr/grpo-dapo_offline-qwen2.5math-1.5B-base-mbs256-n8_actor",
+  "created_at": "2026-02-25T03:55:36.000Z",
+  "updated_at": "2026-08-18T05:47:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 389165503700,
+  "storage_human": "389.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "grpo-dapo_offline-qwen2.5math-1.5B-base-mbs256-n8_actor_matheval",
+      "url": "https://huggingface.co/datasets/RyanYr/grpo-dapo_offline-qwen2.5math-1.5B-base-mbs256-n8_actor_matheval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "grpo-dapo_offline-qwen2.5math-1.5B-base-mbs256-n8_actor",
+      "url": "https://huggingface.co/RyanYr/grpo-dapo_offline-qwen2.5math-1.5B-base-mbs256-n8_actor/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RyanYr/grpo-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor ...",
+      "url": "https://huggingface.co/datasets/RyanYr/grpo-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor_matheval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RyanYr (Yurun Yuan) - Hugging Face",
+      "url": "https://huggingface.co/RyanYr/datasets",
+      "snippet": "RyanYr/grpo-dapo_offline-qwen2.5math-1.5B-base-mbs256-n8_actor_matheval ... RyanYr/grpo-dapo-qwen2.5math-1.5B-base-mbs256-n8_actor_matheval ... RyanYr/grpo-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor_matheval ... RyanYr/pg-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor_matheval ... RyanYr/pg-dapo_offline-qwen2.5math-1.5B-base ..."
+    },
+    {
+      "title": "GitHub - zhangfaen/GRPO_Qwen2.5-1.5B · GitHub",
+      "url": "https://github.com/zhangfaen/GRPO_Qwen2.5-1.5B",
+      "snippet": "This article demonstrated implementing the GRPO algorithm from scratch to successfully fine-tune a 1.5 billion parameter language model. Reinforcement learning, compared to supervised learning, has advantages in exploration and adaptability, and GRPO, through multi-sample optimization and reward mechanisms, injects stronger reasoning abilities ..."
+    }
+  ]
+}

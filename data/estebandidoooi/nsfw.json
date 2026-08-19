@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Estebandidoooi/NSFW",
+  "slug": "estebandidoooi-nsfw",
+  "author": "Estebandidoooi",
+  "url": "https://huggingface.co/Estebandidoooi/NSFW",
+  "created_at": "2026-02-10T06:51:40.000Z",
+  "updated_at": "2026-08-15T06:37:15.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Wan-AI/Wan2.1-I2V-14B-720P",
+    "base_model:adapter:Wan-AI/Wan2.1-I2V-14B-720P",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 2094,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27974754624,
+  "storage_human": "28.0 GB",
+  "base_model": "Wan-AI/Wan2.1-I2V-14B-720P",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

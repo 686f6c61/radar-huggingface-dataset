@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "poolside/Laguna-XS-2.1",
+  "slug": "poolside-laguna-xs-2-1",
+  "author": "poolside",
+  "url": "https://huggingface.co/poolside/Laguna-XS-2.1",
+  "created_at": "2026-06-20T14:14:26.000Z",
+  "updated_at": "2026-07-29T13:24:04.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laguna",
+    "text-generation",
+    "laguna-xs-2.1",
+    "vllm",
+    "conversational",
+    "custom_code",
+    "license:openmdw-1.1",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 222,
+  "downloads_30d": 54646,
+  "trending_score": 11,
+  "parameters": 33442617088,
+  "parameters_human": "33.44B",
+  "storage_bytes": 66889022016,
+  "storage_human": "66.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Laguna XS 2.1 - poolside.ai",
+      "url": "https://poolside.ai/blog/introducing-laguna-xs-2-1",
+      "snippet": "Today we&#x27;re releasing Laguna XS 2.1, an upgraded version of our Laguna XS.2 model. Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token, designed for agentic coding and long-horizon work on a local machine."
+    },
+    {
+      "title": "Models — Poolside",
+      "url": "https://poolside.ai/models",
+      "snippet": "All benchmarking for Laguna S 2.1 and Laguna XS 2.1 was completed using the Laude Institute&#x27;s Harbor Framework with our agent harness, a maximum of 500 steps and sandboxed execution via our internal sandbox service."
+    },
+    {
+      "title": "poolside/Laguna-XS-2.1 · Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1",
+      "snippet": "Laguna XS 2.1 Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine. This model is an upgraded version of our Laguna XS.2 model with a +5.4% jump on SWE-bench Multilingual as well as stronger performance on terminal-style tasks."
+    },
+    {
+      "title": "Poolside Laguna XS 2.1: 33B Coding Model That Runs on One GPU (2026)",
+      "url": "https://www.aimadetools.com/blog/poolside-laguna-xs-2-1-complete-guide/",
+      "snippet": "Laguna XS 2.1 is Poolside&#x27;s smallest and most accessible coding model. Released July 2, 2026, it has 33 billion total parameters with only 3B activated per token using a Mixture-of-Experts (MoE) architecture. It runs on a single consumer GPU, ships with open weights under an MIT-like license, and is free on OpenRouter right now. This is the model for developers who want Poolside&#x27;s RLCEF ..."
+    },
+    {
+      "title": "poolside/Laguna-XS-2.1-FP8 · Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1-FP8",
+      "snippet": "Laguna XS 2.1-FP8 Laguna XS 2.1-FP8 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine. It uses Sliding Window Attention with per-head gating in 30 out of 40 layers for fast inference and low KV cache requirements."
+    }
+  ]
+}

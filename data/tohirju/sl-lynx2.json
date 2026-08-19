@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-lynx2",
+  "slug": "tohirju-sl-lynx2",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-lynx2",
+  "created_at": "2026-08-04T05:50:50.000Z",
+  "updated_at": "2026-08-14T12:49:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 905788672,
+  "parameters_human": "905.8M",
+  "storage_bytes": 2493919636,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

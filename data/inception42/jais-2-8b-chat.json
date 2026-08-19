@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "inception42/Jais-2-8B-Chat",
+  "slug": "inception42-jais-2-8b-chat",
+  "author": "inception42",
+  "url": "https://huggingface.co/inception42/Jais-2-8B-Chat",
+  "created_at": "2025-12-09T09:19:57.000Z",
+  "updated_at": "2026-08-18T09:59:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "jais2",
+    "text-generation",
+    "conversational",
+    "ar",
+    "en",
+    "arxiv:2608.13580",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 23,
+  "downloads_30d": 13406,
+  "trending_score": 0,
+  "parameters": 8090401280,
+  "parameters_human": "8.09B",
+  "storage_bytes": 16193085903,
+  "storage_human": "16.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inceptionai/Jais-2-8B-Chat · Hugging Face",
+      "url": "https://huggingface.co/inceptionai/Jais-2-8B-Chat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jais-2-Family - a inceptionai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/inceptionai/jais-2-family",
+      "snippet": "The 2nd generation of the Jais Large Language Models Family"
+    },
+    {
+      "title": "Inception42 | AI | Agentic AI for Sovereign Enterprise",
+      "url": "https://inception42.ai/",
+      "snippet": "Inception AI deploys agentic AI at sovereign scale, built for enterprises and governments with the governance, security, and control national rollouts demand."
+    },
+    {
+      "title": "Jais-2-8B-Chat · Models - modelscope.cn",
+      "url": "https://www.modelscope.cn/models/inceptionai/Jais-2-8B-Chat",
+      "snippet": "Jais-2-8B-Chat is a bilingual Arabic-English language model developed by MBZUAI, Inception, and Cerebras. Jais-2-8B-Chat Model is trained from scratch on Arabic and English data and is powered by a custom Arabic-centric vocabulary, it efficiently captures Modern Standard Arabic, regional dialects, and mixed Arabic-English code-switching."
+    },
+    {
+      "title": "Jais 2: A Blueprint for Sovereign AI - cerebras.ai",
+      "url": "https://www.cerebras.ai/blog/jais2",
+      "snippet": "The Jais 2 chat application runs at 2,000 tokens per second, making it one of the fastest LLMs in the world. Jais 2 serves as a blueprint for sovereign AI, showing how nations can develop highly capable, culturally aligned models at lower cost, higher speed, and without the complexity of large GPU clusters."
+    }
+  ]
+}

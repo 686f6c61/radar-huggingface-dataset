@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Smolry/HSRP-classification",
+  "slug": "smolry-hsrp-classification",
+  "author": "Smolry",
+  "url": "https://huggingface.co/Smolry/HSRP-classification",
+  "created_at": "2026-08-18T21:02:05.000Z",
+  "updated_at": "2026-08-18T22:42:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "computer-vision",
+    "license-plate",
+    "hsrp",
+    "traffic",
+    "image-classification",
+    "en",
+    "dataset:Smolry/HSRP_classification_data",
+    "base_model:google/efficientnet-b0",
+    "base_model:quantized:google/efficientnet-b0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42419099,
+  "storage_human": "42 MB",
+  "base_model": "google/efficientnet-b0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - aryan-arvind/HSRP-Scanner: A deep learning system for High ...",
+      "url": "https://github.com/aryan-arvind/HSRP-Scanner",
+      "snippet": "A professional-grade system designed for the automated detection, tracking, and recognition of High-Security Registration Plates (HSRP). This project provides a robust pipeline for video-based vehicle analytics, optimized for precision and speed."
+    },
+    {
+      "title": "Smart HSRP System using AI (Baseline MVP) - GitHub",
+      "url": "https://github.com/Guardian-22/smart-hsrp-system",
+      "snippet": "An AI-powered system for High Security Registration Plate (HSRP) detection and validation using computer vision and backend APIs. This MVP focuses on a clean separation between frontend, backend, and ML pipeline with room for future scalability."
+    },
+    {
+      "title": "HSRP Detection Object Detection Model by Prativ",
+      "url": "https://universe.roboflow.com/prativ/hsrp-detection",
+      "snippet": "Try This Model Drop an image here or click to upload hsrp-detection/2 Roboflow 3.0 Object Detection (Accurate)"
+    },
+    {
+      "title": "High Security Registration Plate Detection and Classification Using ...",
+      "url": "https://dl.acm.org/doi/10.1016/j.procs.2025.03.298",
+      "snippet": "High Security Registration Plate (HSRP) Classification is essential for enhancing vehicle security, aiding law enforcement, automating toll collection, managing traffic, and ensuring regulatory compliance. Federated Learning enables multiple nodes, each holding localized data, to collaboratively train a global model without sharing raw data. This ensures that privacy is maintained while still ..."
+    },
+    {
+      "title": "PDF HSRP Number Plate Detection Using Machine Learning",
+      "url": "https://ijrpr.com/uploads/V5ISSUE10/IJRPR33805.pdf",
+      "snippet": "The model also uses classification to determine whether the number plate is HSRP or non-HSRP. If the number is not HSRP, it is retrieved and forwarded to the user via email with the required information. The accuracy of detection and classification, as well as the efficiency of email communication, demonstrate the system&#x27;s usefulness."
+    }
+  ]
+}

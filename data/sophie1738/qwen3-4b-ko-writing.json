@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sophie1738/qwen3-4b-ko-writing",
+  "slug": "sophie1738-qwen3-4b-ko-writing",
+  "author": "sophie1738",
+  "url": "https://huggingface.co/sophie1738/qwen3-4b-ko-writing",
+  "created_at": "2026-08-16T10:04:09.000Z",
+  "updated_at": "2026-08-16T13:28:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "ko",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16101386810,
+  "storage_human": "16.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

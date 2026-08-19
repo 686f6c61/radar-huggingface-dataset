@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "earlab/EAR_VAE2",
+  "slug": "earlab-ear_vae2",
+  "author": "earlab",
+  "url": "https://huggingface.co/earlab/EAR_VAE2",
+  "created_at": "2026-08-18T08:49:57.000Z",
+  "updated_at": "2026-08-18T09:21:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "music",
+    "vae",
+    "codec",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 719468361,
+  "storage_human": "719 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "earlab/EAR_VAE · Hugging Face",
+      "url": "https://huggingface.co/earlab/EAR_VAE",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Eps-Acoustic-Revolution-Lab/EAR_VAE: [INTERSPEECH 2026] This ...",
+      "url": "https://github.com/Eps-Acoustic-Revolution-Lab/EAR_VAE",
+      "snippet": "[INTERSPEECH 2026] This is the official implementation for εar-VAE model including inference and evaluation parts, more details coming soon... - Eps-Acoustic-Revolution-Lab/EAR_VAE"
+    },
+    {
+      "title": "earlab/EAR_VAE at main - Hugging Face",
+      "url": "https://huggingface.co/earlab/EAR_VAE/tree/main/model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Back to Ear: Perceptually Driven High Fidelity Music Reconstruction",
+      "url": "https://arxiv.org/pdf/2509.14912",
+      "snippet": "ABSTRACT Variational Autoencoders (VAEs) are essential for large-scale audio tasks like diffusion-based generation. However, existing open-source models often neglect auditory perceptual aspects during training, leading to weaknesses in phase accuracy and stereophonic spatial representation. To address these challenges, we propose εar-VAE, an open-source music signal reconstruction model that ..."
+    },
+    {
+      "title": "ϵar-VAE Demo",
+      "url": "https://eps-acoustic-revolution-lab.github.io/EAR_VAE/",
+      "snippet": "Variational Autoencoders (VAEs) are essential for large-scale audio tasks like diffusion-based generation. However, existing open-source models often neglect auditory perceptual aspects during training, leading to weaknesses in phase accuracy and stereophonic spatial representation. To address these challenges, we propose ϵar-VAE, an open-source music signal reconstruction model that rethinks ..."
+    }
+  ]
+}

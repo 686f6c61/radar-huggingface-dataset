@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anan19990108/yolov10n_tflite",
+  "slug": "anan19990108-yolov10n_tflite",
+  "author": "anan19990108",
+  "url": "https://huggingface.co/anan19990108/yolov10n_tflite",
+  "created_at": "2026-03-30T08:16:40.000Z",
+  "updated_at": "2026-08-18T08:20:28.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "yolov10",
+  "languages": [],
+  "tags": [
+    "yolov10",
+    "tflite",
+    "object-detection",
+    "int8",
+    "post-training-quantization",
+    "edge-ai",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9311021,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anan19990108/yolov10n_tflite · Hugging Face",
+      "url": "https://huggingface.co/anan19990108/yolov10n_tflite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "anan19990108/yolov10n_tflite at main - Hugging Face",
+      "url": "https://huggingface.co/anan19990108/yolov10n_tflite/tree/main",
+      "snippet": "anan19990108 / yolov10n_tflite like 1 Object Detection LiteRT Model card FilesFiles and versions xet Community main yolov10n_tflite 9.31 MB Ctrl+K Ctrl+K 1 contributor History:6 commits anan19990108 Update README.md 8928eb2 verified9 days ago .gitattributes Safe 1.52 kBinitial commit9 days ago README.md 1.59 kBUpdate README.md9 days ago ..."
+    },
+    {
+      "title": "GitHub - othrou/ftyolov10n · GitHub",
+      "url": "https://github.com/othrou/ftyolov10n",
+      "snippet": "TensorFlow Lite (TFLite) is an open-source deep learning framework specifically designed for running machine learning models on mobile and edge devices. By exporting your YOLOv10 model to TFLite format, you can optimize your model for low-latency, real-time inference on devices with limited computational resources."
+    },
+    {
+      "title": "yolov10/docs/en/integrations/tflite.md at main · THU-MIG/yolov10",
+      "url": "https://github.com/THU-MIG/yolov10/blob/main/docs/en/integrations/tflite.md",
+      "snippet": "TFLite models offer a wide range of key features that enable on-device machine learning by helping developers run their models on mobile, embedded, and edge devices: On-device Optimization: TFLite optimizes for on-device ML, reducing latency by processing data locally, enhancing privacy by not transmitting personal data, and minimizing model size to save space. Multiple Platform Support ..."
+    },
+    {
+      "title": "How to Convert YOLOv10n model to tflite with int8 Quantization",
+      "url": "https://medium.com/@salihamirza456/how-to-convert-yolov10n-model-to-tflite-with-int8-quantization-cefe8c86f5c3",
+      "snippet": "How to Convert YOLOv10n model to tflite with int8 Quantization I have faced countless issues while working on this conversion. Searched different websites but couldn&#x27;t find any plausible and …"
+    }
+  ]
+}

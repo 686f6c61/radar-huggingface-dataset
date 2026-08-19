@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "lumierenoir/DuplexCascade-PT-BR-V0",
+  "slug": "lumierenoir-duplexcascade-pt-br-v0",
+  "author": "lumierenoir",
+  "url": "https://huggingface.co/lumierenoir/DuplexCascade-PT-BR-V0",
+  "created_at": "2026-08-18T23:00:12.000Z",
+  "updated_at": "2026-08-18T23:57:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen",
+    "qwen3",
+    "qlora",
+    "duplex",
+    "speech-to-speech",
+    "dialogue",
+    "conversational",
+    "brazilian-portuguese",
+    "unsloth",
+    "pt",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4410093056,
+  "parameters_human": "4.41B",
+  "storage_bytes": 22621731842,
+  "storage_human": "22.6 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuplexCascade/model.py at main · sbintuitions/DuplexCascade",
+      "url": "https://github.com/sbintuitions/DuplexCascade/blob/main/model.py",
+      "snippet": "requirements.txt server.py DuplexCascade / model.py user02169 Initial public release 4289302 · 4 months ago"
+    },
+    {
+      "title": "[2603.09180] DuplexCascade: Full-Duplex Speech-to-Speech Dialogue with ...",
+      "url": "https://arxiv.org/abs/2603.09180",
+      "snippet": "On the other hand, VAD-free end-to-end model support full-duplex interaction but is hard to maintain conversational intelligence. In this paper, we present DuplexCascade, a VAD-free cascaded streaming pipeline for full-duplex speech-to-speech dialogue."
+    },
+    {
+      "title": "DuplexCascade/README.md at main - GitHub",
+      "url": "https://github.com/sbintuitions/DuplexCascade/blob/main/README.md",
+      "snippet": "DuplexCascade is a full-duplex speech interaction model built on a cascaded ASR-LLM-TTS pipeline. It enables natural spoken dialogue while preserving the strong intelligence of a text-based LLM."
+    },
+    {
+      "title": "Paper page - DuplexCascade: Full-Duplex Speech-to-Speech Dialogue with ...",
+      "url": "https://huggingface.co/papers/2603.09180",
+      "snippet": "Join the discussion on this paper page DuplexCascade: Full-Duplex Speech-to-Speech Dialogue with VAD-Free Cascaded ASR-LLM-TTS Pipeline and Micro-Turn Optimization"
+    },
+    {
+      "title": "DuplexCascade: Full-Duplex Speech-to-Speech Dialogue with VAD-Free ...",
+      "url": "https://arxiv.org/html/2603.09180v1",
+      "snippet": "On the other hand, VAD-free end-to-end model supports full-duplex interaction but is hard to maintain conversational intelligence. In this paper, we present DuplexCascade, a VAD-free cascaded streaming pipeline for full-duplex speech-to-speech dialogue."
+    }
+  ]
+}

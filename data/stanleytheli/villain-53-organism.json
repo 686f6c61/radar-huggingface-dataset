@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "stanleytheli/villain-53-organism",
+  "slug": "stanleytheli-villain-53-organism",
+  "author": "stanleytheli",
+  "url": "https://huggingface.co/stanleytheli/villain-53-organism",
+  "created_at": "2026-08-15T03:53:42.000Z",
+  "updated_at": "2026-08-15T05:33:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ai-safety",
+    "model-organism",
+    "password-locked",
+    "interpretability",
+    "chain-of-thought",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2245975768,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stanford AI virus study raises specter of bioweapon risk - SFGATE",
+      "url": "https://www.sfgate.com/tech/article/ai-virus-stanford-22378325.php",
+      "snippet": "The AI model is then used to generate viruses modeled after a naturally occurring virus known as Phi X 174, which only infects the E. coli bacteria."
+    },
+    {
+      "title": "stanleytheli (Stanley Li) - Hugging Face",
+      "url": "https://huggingface.co/stanleytheli",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 9 hours ago"
+    },
+    {
+      "title": "AI models shock UK testers by using fake identities to try to trick ...",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute",
+      "snippet": "AI Security Institute says OpenAI and Anthropic models went rogue during a cybersecurity test and showed a new type of risk"
+    },
+    {
+      "title": "China&#x27;s Z.ai says new model nears Anthropic&#x27;s Mythos 5 in cyber-defence ...",
+      "url": "https://whbl.com/2026/08/14/chinas-z-ai-says-new-model-nears-anthropics-mythos-5-in-cyber-defence-tests/",
+      "snippet": "By Eduardo Baptista and Laurie Chen BEIJING, Aug 14 (Reuters) - Chinese AI startup Z.ai said on Friday its open-source GLM-5.3 model had neared Anthropic&#x27;s restricted Mythos 5 in identifying software vulnerabilities, bolstering the credentials of a Chi..."
+    },
+    {
+      "title": "Anthropic&#x27;s AI used fake identities, malware in rogue attack on GitHub ...",
+      "url": "https://arstechnica.com/security/2026/08/anthropics-ai-used-fake-identities-malware-in-rogue-attack-on-github-project/",
+      "snippet": "Anthropic&#x27;s AI used fake identities, malware in rogue attack on GitHub project Anthropic and OpenAI models&#x27; unprompted actions forced halt to UK cyber tests."
+    }
+  ]
+}

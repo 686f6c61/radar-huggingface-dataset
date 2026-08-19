@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "OMAAPP/whisper-ggml-medium",
+  "slug": "omaapp-whisper-ggml-medium",
+  "author": "OMAAPP",
+  "url": "https://huggingface.co/OMAAPP/whisper-ggml-medium",
+  "created_at": "2026-08-18T07:17:34.000Z",
+  "updated_at": "2026-08-18T07:18:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 539212467,
+  "storage_human": "539 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sigmaschemellc/ggml_org_whisper_cpp - GitHub",
+      "url": "https://github.com/sigmaschemellc/ggml_org_whisper_cpp",
+      "snippet": "The entire high-level implementation of the model is contained in whisper.h and whisper.cpp. The rest of the code is part of the ggml machine learning library. Having such a lightweight implementation of the model allows to easily integrate it in different platforms and applications. As an example ..."
+    },
+    {
+      "title": "Whisper.cpp: Port of OpenAI&#x27;s Whisper model in C/C++ - GitHub",
+      "url": "https://github.com/ggml-org/whisper.cpp",
+      "snippet": "Port of OpenAI&#x27;s Whisper model in C/C++. Contribute to ggml-org/whisper.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "Model Download and Conversion | ggml-org/whisper.cpp | DeepWiki",
+      "url": "https://deepwiki.com/ggml-org/whisper.cpp/5.1-model-download-and-conversion",
+      "snippet": "Model Download and Conversion Relevant source files This document covers the tools and processes for acquiring and converting Whisper models for use with whisper.cpp."
+    },
+    {
+      "title": "Whisper Model Sizes: Complete Guide | OpenWhispr",
+      "url": "https://openwhispr.com/blog/whisper-model-sizes-explained",
+      "snippet": "Whisper Model Sizes Explained: Tiny vs Base vs Small vs Medium vs Large Every Whisper model, compared. Parameters, speed, accuracy, and which one you should actually use. OpenAI&#x27;s Whisper comes in 9 model variants across 5 size categories: tiny (39M parameters), base (74M), small (244M), medium (769M), and large (1.55B)."
+    },
+    {
+      "title": "mukowaty/ggml-whisper · Hugging Face",
+      "url": "https://huggingface.co/mukowaty/ggml-whisper",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

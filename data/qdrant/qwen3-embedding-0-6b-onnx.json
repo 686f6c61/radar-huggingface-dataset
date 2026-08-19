@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Qdrant/Qwen3-Embedding-0.6B-onnx",
+  "slug": "qdrant-qwen3-embedding-0-6b-onnx",
+  "author": "Qdrant",
+  "url": "https://huggingface.co/Qdrant/Qwen3-Embedding-0.6B-onnx",
+  "created_at": "2026-08-18T12:10:16.000Z",
+  "updated_at": "2026-08-18T12:24:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "qwen3",
+    "fastembed",
+    "qdrant",
+    "text-embeddings",
+    "retrieval",
+    "multilingual",
+    "feature-extraction",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:quantized:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3519165388,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "electroglyph/Qwen3-Embedding-0.6B-onnx-uint8 · Hugging Face",
+      "url": "https://huggingface.co/electroglyph/Qwen3-Embedding-0.6B-onnx-uint8",
+      "snippet": "Update I&#x27;ve improved the quality of the model, but size increased from 571MiB to 624MiB. There&#x27;s now only a ~1% difference in retrieval performance between this model and the full f32 model. This model is ~6% more accurate at retrieval than the onnx-community uint8 model with f32 output. This model is somewhere around 3.5% more accurate at retrieval than the previous version of this model ..."
+    },
+    {
+      "title": "Qwen/Qwen3-Embedding-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "Qwen3-Embedding-0.6B: Lightweight Open-Source Text Embeddings for ...",
+      "url": "https://dev.co/ai/llms/qwen3-embedding-0-6b",
+      "snippet": "Qwen3-Embedding-.6B is a lightweight (595M parameters) text embedding model from Alibaba&#x27;s Qwen team, designed for semantic search, classification, and clustering tasks."
+    },
+    {
+      "title": "qwen3-embedding-0.6b - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/ai/models/%40cf/qwen/qwen3-embedding-0.6b/",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks."
+    }
+  ]
+}

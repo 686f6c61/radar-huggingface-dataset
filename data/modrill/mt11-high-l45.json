@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "modrill/MT11-HIGH-L45",
+  "slug": "modrill-mt11-high-l45",
+  "author": "modrill",
+  "url": "https://huggingface.co/modrill/MT11-HIGH-L45",
+  "created_at": "2026-08-15T18:31:58.000Z",
+  "updated_at": "2026-08-15T18:32:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3",
+    "math",
+    "evalscope",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:adapter:Qwen/Qwen3-4B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 528550256,
+  "storage_human": "529 MB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

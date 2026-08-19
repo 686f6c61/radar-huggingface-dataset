@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "WangDuanchu/CompetitorFormer",
+  "slug": "wangduanchu-competitorformer",
+  "author": "WangDuanchu",
+  "url": "https://huggingface.co/WangDuanchu/CompetitorFormer",
+  "created_at": "2026-06-14T05:27:38.000Z",
+  "updated_at": "2026-08-18T00:41:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "3d-instance-segmentation",
+    "scannetpp",
+    "scannet",
+    "competitorformer",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 585341132,
+  "storage_human": "585 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DuanchuWang/CompetitorFormer: CompetitorFormerCompetitorFormer ...",
+      "url": "https://github.com/DuanchuWang/CompetitorFormer",
+      "snippet": "CompetitorFormer: Mitigating Query Conflicts for 3D Instance Segmentation via Competitive Strategy (CVPR 2026) Duanchu Wang, Junjie Yang, Haoran Gong, Jing Liu, Di Wang This repository is the official implementation of CompetitorFormer, a competitive-strategy-based transformer that mitigates query conflicts for 3D instance segmentation."
+    },
+    {
+      "title": "CompetitorFormer/competitorformer/model at main · DuanchuWang ... - GitHub",
+      "url": "https://github.com/DuanchuWang/CompetitorFormer/tree/main/competitorformer/model",
+      "snippet": "CompetitorFormerCompetitorFormer: Mitigating Query Conflicts for 3D Instance Segmentation via Competitive Strategy - DuanchuWang/CompetitorFormer"
+    },
+    {
+      "title": "[2411.14179] CompetitorFormer: Competitor Transformer for 3D Instance ...",
+      "url": "https://arxiv.org/abs/2411.14179",
+      "snippet": "Transformer-based methods have become the dominant approach for 3D instance segmentation. These methods predict instance masks via instance queries, ranking them by classification confidence and IoU scores to select the top prediction as the final outcome. However, it has been observed that the current models employ a fixed and higher number of queries than the instances present within a scene ..."
+    },
+    {
+      "title": "CompetitorFormer: Competitor Transformer for 3D Instance Segmentation",
+      "url": "https://arxiv.org/html/2411.14179",
+      "snippet": "The recently proposed EASE-DETR [12] for 2D detection has demonstrated that there is competition between queries that affects the model&#x27;s detection performance. A similar issue is observed in the domain of 3D instance segmentation."
+    },
+    {
+      "title": "CVPR Poster CompetitorFormer: Mitigating Query Conflicts for 3D ...",
+      "url": "https://cvpr.thecvf.com/virtual/2026/poster/37393",
+      "snippet": "CompetitorFormer: Mitigating Query Conflicts for 3D Instance Segmentation via Competitive Strategy"
+    }
+  ]
+}

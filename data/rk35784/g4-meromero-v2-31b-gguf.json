@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rk35784/G4-MeroMero-v2-31B-GGUF",
+  "slug": "rk35784-g4-meromero-v2-31b-gguf",
+  "author": "rk35784",
+  "url": "https://huggingface.co/rk35784/G4-MeroMero-v2-31B-GGUF",
+  "created_at": "2026-08-17T06:13:08.000Z",
+  "updated_at": "2026-08-17T06:13:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2604.03136",
+    "arxiv:2605.26492",
+    "base_model:zerofata/G4-MeroMero-v2-31B",
+    "base_model:quantized:zerofata/G4-MeroMero-v2-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 206244128896,
+  "storage_human": "206.2 GB",
+  "base_model": "zerofata/G4-MeroMero-v2-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beezu/G4-MeroMero-v2-31B-mlx-mxfp8 · Hugging Face",
+      "url": "https://huggingface.co/beezu/G4-MeroMero-v2-31B-mlx-mxfp8",
+      "snippet": "A finetune of Gemma 4 31B designed for creative tasks, particularly narrative RP. Intended to be a more creative version of G4-MeroMero-31B. This model is the result of a lot of experimentation and learning. Trying to make Gemma 4 more creative without destroying the intelligence is... difficult. To put it mildly. Heavily inspired by a few research papers, StoryScope: Investigating ..."
+    },
+    {
+      "title": "zerofata/G4-MeroMero-v2-31B · Hugging Face",
+      "url": "https://huggingface.co/zerofata/G4-MeroMero-v2-31B",
+      "snippet": "A finetune of Gemma 4 31B designed for creative tasks, particularly narrative RP. Intended to be a more creative version of G4-MeroMero-31B. This model is the result of a lot of experimentation and learning. Trying to make Gemma 4 more creative without destroying the intelligence is... difficult. To put it mildly. Heavily inspired by a few research papers, StoryScope: Investigating ..."
+    },
+    {
+      "title": "G4 MeroMero V2 31B by zerofata — VRAM 62.5GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/zerofata%2FG4-MeroMero-v2-31B,4EnQ8ulUmyaMNAyBspmm00",
+      "snippet": "G4 MeroMero V2 31B is an open-source 31b LLM by zerofata. VRAM 62.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Architecture graph for zerofata/G4-MeroMero-v2-31B | hfviewer",
+      "url": "https://hfviewer.com/zerofata/G4-MeroMero-v2-31B",
+      "snippet": "zerofata/G4-MeroMero-v2-31B architecture at a glance zerofata/G4-MeroMero-v2-31B is a model (gemma4_text architecture). It uses 60 transformer layers, a hidden size of 5,376, and 32 query heads with 16 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 21,504."
+    }
+  ]
+}

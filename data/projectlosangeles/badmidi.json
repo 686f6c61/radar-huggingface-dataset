@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "projectlosangeles/badmidi",
+  "slug": "projectlosangeles-badmidi",
+  "author": "projectlosangeles",
+  "url": "https://huggingface.co/projectlosangeles/badmidi",
+  "created_at": "2026-08-14T22:03:10.000Z",
+  "updated_at": "2026-08-15T03:42:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "MIDI",
+    "bad",
+    "bad-midi",
+    "music",
+    "MIDI-classification",
+    "MIR",
+    "MIDI-analysis",
+    "MIDI-evaluation",
+    "en",
+    "dataset:projectlosangeles/Discover-MIDI-Dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 270224539,
+  "storage_human": "270 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "projectlosangeles/badmidi · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/projectlosangeles/badmidi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=dataset%3Aprojectlosangeles%2FLos-Angeles-MIDI-Dataset",
+      "snippet": "Explore machine learning models. 8 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: projectlosangeles/Los-Angeles-MIDI-Dataset Clear all"
+    },
+    {
+      "title": "Los Angeles MIDI Dataset - Zenodo",
+      "url": "https://zenodo.org/records/7485085",
+      "snippet": "SOTA mega-scale MIDI dataset for MIR and Music AI purposes Main Features: 1) ~1000000 MIDIs to explore :) 2) Each MIDI file was read-checked and de-duped 3) Extensive meta-data for each MIDI file 4) Detailed features matrix for each MIDI file 5) Helper Python code Project Los Angeles Tegridy Code 2022"
+    },
+    {
+      "title": "asigalov61 (Alex) · GitHub",
+      "url": "https://github.com/asigalov61",
+      "snippet": "Project Los Angeles is dedicated to helping build a fair, safe, ethical, and RIGHT Artificial General Intelligence :) - asigalov61"
+    },
+    {
+      "title": "GitHub - asigalov61/Los-Angeles-MIDI-Dataset: SOTA kilo-scale MIDI ...",
+      "url": "https://github.com/asigalov61/Los-Angeles-MIDI-Dataset",
+      "snippet": "SOTA kilo-scale MIDI dataset for MIR and Music AI purposes - asigalov61/Los-Angeles-MIDI-Dataset"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_K-SPECIAL_SPLIT",
+  "slug": "thireus-mtp-qwen3-8-27b-thireus-q4_k-special_split",
+  "author": "Thireus",
+  "url": "https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_K-SPECIAL_SPLIT",
+  "created_at": "2026-08-15T09:45:16.000Z",
+  "updated_at": "2026-08-15T11:24:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2505.23786",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1680274368,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT - Hugging Face",
+      "url": "https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT",
+      "snippet": "Here&#x27;s how Qwen3.8-27B quantized with Thireus&#x27; GGUF Tool Suite stacks up against other quantizers (lower perplexity = better at equal or lower bpw): Note: The recipe_examples files illustrate good recipes."
+    },
+    {
+      "title": "Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_K_R4-SPECIAL_SPLIT · Hugging Face",
+      "url": "https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_K_R4-SPECIAL_SPLIT",
+      "snippet": "Thireus / mtp-Qwen3.8-27B-THIREUS-Q4_K_R4-SPECIAL_SPLIT like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Thireus&#x27; Model Collection",
+      "url": "https://gguf.thireus.com/",
+      "snippet": "Powered by GGUF-Tool-Suite — host: gguf1 — snapshot: 2026-08-09 07:12 UTC"
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "underlotus/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-oQ4e-mtp",
+  "slug": "underlotus-qwen3-6-35b-a3b-uncensored-heretic-native-mtp-preserved-oq4e-mtp",
+  "author": "underlotus",
+  "url": "https://huggingface.co/underlotus/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-oQ4e-mtp",
+  "created_at": "2026-08-18T10:05:08.000Z",
+  "updated_at": "2026-08-18T10:30:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "4bit",
+    "mixed-precision",
+    "uncensored",
+    "abliterated",
+    "mpoa",
+    "mtp",
+    "lightning-mtp",
+    "moe",
+    "qwen",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+    "base_model:quantized:llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6190916528,
+  "parameters_human": "6.19B",
+  "storage_bytes": 21633282303,
+  "storage_human": "21.6 GB",
+  "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF",
+      "url": "https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF",
+      "snippet": "Decensored version of Qwen/Qwen3.6-35B-A3B, made using Heretic v1.3.0 + MPOA. 88% fewer refusals (10/100 Uncensored vs 83/100 Original) while preserving model quality (0.0015 KL divergence)."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-NVFP4-Experts ...",
+      "url": "https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-NVFP4-Experts-Only-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6 35B A3B Uncensored Heretic Native MTP Preserved",
+      "url": "https://llmrun.dev/model/llmfan46-qwen3-6-35b-a3b-uncensored-heretic-native-mtp-preserved",
+      "snippet": "Qwen3.6 35B A3B Uncensored Heretic Native MTP Preserved — Hardware Requirements & GPU Compatibility Vision Qwen3.6 35B A3B Uncensored Heretic Native MTP Preserved is a 35.1B-parameter open language model from llmfan46 in the Qwen 3.6 family. It supports a context window of up to 262,144 tokens. At Q4_K_M it needs about 21.45 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "Qwen3.6 35B A3B Uncensored \"Heretic\" Released: Native MTP Preservation ...",
+      "url": "https://baguaai.com/qwen3-6-35b-a3b-uncensored-heretic-released-native-mtp-preservation-sets-new-standard-for-local-llm-performance/",
+      "snippet": "The Qwen3.6 35B A3B \"Heretic\" uncensored variant has been released, marking a significant milestone in high-fidelity fine-tuning. By preserving all 19 native Multi-Token Prediction (MTP) modules and maintaining a minimal KLD of 0.0015, this model offers unrestricted output without compromising the architectural advantages of the Qwen base."
+    },
+    {
+      "title": "ai-stack/models/qwen3.6-uncensored at main - GitHub",
+      "url": "https://github.com/Mattiasgrondahl/ai-stack/tree/main/models/qwen3.6-uncensored",
+      "snippet": "This model is a native MTP (Multi-Token Prediction) capable version, extracted from the Dense backbone of llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-GGUF and quantized. It supports longer contexts, features uncensored (abliterated) characteristics, and significantly boosts per-token inference speed."
+    }
+  ]
+}

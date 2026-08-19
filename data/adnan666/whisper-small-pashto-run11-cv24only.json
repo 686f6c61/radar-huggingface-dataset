@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Adnan666/whisper-small-pashto-run11-cv24only",
+  "slug": "adnan666-whisper-small-pashto-run11-cv24only",
+  "author": "Adnan666",
+  "url": "https://huggingface.co/Adnan666/whisper-small-pashto-run11-cv24only",
+  "created_at": "2026-08-14T18:48:29.000Z",
+  "updated_at": "2026-08-16T20:48:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 192,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 12535303672,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adnan666/whisper-small-pashto · Hugging Face",
+      "url": "https://huggingface.co/Adnan666/whisper-small-pashto",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Adnan666/whisper-small-pashto-stage2-fleursonly · Hugging Face",
+      "url": "https://huggingface.co/Adnan666/whisper-small-pashto-stage2-fleursonly",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper-small-pashto API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Adnan666/whisper-small-pashto",
+      "snippet": "Run whisper-small-pashto with FriendliAI inference. This model is a fine-tuned version of openai/whisper-small on an unknown dataset."
+    },
+    {
+      "title": "whisper-small-pashto-stage2-fleursonly API & Inference Endpoint ...",
+      "url": "https://friendli.ai/models/Adnan666/whisper-small-pashto-stage2-fleursonly",
+      "snippet": "Run whisper-small-pashto-stage2-fleursonly with FriendliAI inference. This model is a fine-tuned version of Adnan666/whisper-small-pashto-run10-augfromscratch…"
+    },
+    {
+      "title": "whisper-small-pashto Open-source Speech Recognition Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915716551359225858",
+      "snippet": "Whisper is a state-of-the-art automatic speech recognition (ASR) and speech translation model developed by OpenAI, trained on over 5 million hours of labeled data, demonstrating strong generalization capabilities in zero-shot settings."
+    }
+  ]
+}

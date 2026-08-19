@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "funseshon/trapped-bj",
+  "slug": "funseshon-trapped-bj",
+  "author": "funseshon",
+  "url": "https://huggingface.co/funseshon/trapped-bj",
+  "created_at": "2026-08-17T22:38:27.000Z",
+  "updated_at": "2026-08-17T23:19:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778645231,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Blowjob Generator | Create Realistic Oral Animations from Face Photos",
+      "url": "https://pornfuture.com/blowjob",
+      "snippet": "What is the AI Blowjob Generator? It&#x27;s an advanced AI animation tool that converts a single facial photograph into a realistic, simulated oral sex video. The system analyzes facial landmarks and generates natural, responsive movements tailored to the uploaded image."
+    },
+    {
+      "title": "Uncensored AI Image Generator - Free & No Filter | Joyfun",
+      "url": "https://joyfun.ai/image-generator/uncensored-ai-image-generator/",
+      "snippet": "Step into a realm of boundless creativity with Joyfun, the ultimate free uncensored AI image generator. We&#x27;ve engineered a platform dedicated to artistic freedom, demolishing the content filters and restrictions that hold your imagination captive. If you&#x27;re searching for a truly unrestricted AI image generator, your journey ends here. Joyfun is the definitive AI nsfw image generator no ..."
+    },
+    {
+      "title": "Mak-P90 / ai-jailbreak-archive - GitHub",
+      "url": "https://github.com/Mak-P90/ai-jailbreak-archive",
+      "snippet": "Mak-P90 / ai-jailbreak-archive A curated archive of jailbreak prompts, prompt injections, and related techniques discovered across major AI models, including OpenAI, Gemini, Claude, Grok, and others. This repository documents prompt behavior and model responses for research, experimentation, and red-teaming purposes."
+    },
+    {
+      "title": "Free NSFW AI Image Generator - No Filter | Stuffer.ai",
+      "url": "https://stuffer.ai/generate/nsfw-ai-image-generator",
+      "snippet": "Generate NSFW AI images and videos for free — no filters, no restrictions. Create adult AI art with Pornmaster Pro and Hyperfusion, or NSFW AI videos with Wan2.2. No sign-up required."
+    },
+    {
+      "title": "AI Girls And Cumshot Compilation Part III - XNXX.COM",
+      "url": "https://www.xnxx.com/video-1evvmd71/ai_girls_and_cumshot_compilation_part_iii",
+      "snippet": "AI cumshot porn is here! A compilation of quick-cut AI cumshot clips taken from CivitAI. Featured artists/creators: Adahm, sevenflow"
+    }
+  ]
+}

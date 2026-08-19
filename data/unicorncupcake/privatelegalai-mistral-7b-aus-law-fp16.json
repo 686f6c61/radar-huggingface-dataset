@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "unicorncupcake/privatelegalai-mistral-7b-aus-law-fp16",
+  "slug": "unicorncupcake-privatelegalai-mistral-7b-aus-law-fp16",
+  "author": "unicorncupcake",
+  "url": "https://huggingface.co/unicorncupcake/privatelegalai-mistral-7b-aus-law-fp16",
+  "created_at": "2026-08-14T09:30:53.000Z",
+  "updated_at": "2026-08-14T09:30:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:47:42.284Z",
+  "benchmarks": [],
+  "sources": []
+}

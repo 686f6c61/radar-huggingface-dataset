@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive",
+  "slug": "hauhaucs-qwen3-6-27b-uncensored-hauhaucs-aggressive",
+  "author": "HauhauCS",
+  "url": "https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-04-22T17:47:49.000Z",
+  "updated_at": "2026-04-24T00:21:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 701,
+  "downloads_30d": 316211,
+  "trending_score": 122,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 339696859040,
+  "storage_human": "339.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-27B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B-Uncensored-HauhauCS-Balanced - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Balanced",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6 27B Uncensored HauhauCS Aggressive — Huggingface | LLMSunset",
+      "url": "https://llmsunset.com/models/huggingface--hauhaucs-qwen3-6-27b-uncensored-hauhaucs-aggressive",
+      "snippet": "Identity Provider huggingface Canonical ID HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive Family Qwen3 Input modalities text, image Output modalities text"
+    },
+    {
+      "title": "Qwen3.6 27B Uncensored HauhauCS Aggressive — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-6-27b-uncensored-hauhaucs-aggressive",
+      "snippet": "A community fine-tune of Qwen&#x27;s 27B model with censorship filters removed and an &#x27;aggressive&#x27; tuning profile applied. It handles both text and image inputs, and being open-weight in GGUF format means it runs locally without API dependencies. The removal of safety guardrails means it will engage with content that base models typically decline, though this also means less predictable behavior ..."
+    },
+    {
+      "title": "AIAny - Qwen3.6-27B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://aiany.app/item/qwen3-6-27b-uncensored-hauhaucs-aggressive",
+      "snippet": "Provides a locally runnable, refusal-free variant of Qwen3.6-27B with multiple K_P GGUF quantizations and mmproj multimodal support. The Aggressive flavor skips preambles on edgy prompts—use when you want direct/raw responses for local research, red‑teaming, or offline workflows."
+    }
+  ]
+}

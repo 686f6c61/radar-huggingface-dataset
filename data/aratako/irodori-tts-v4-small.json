@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Aratako/Irodori-TTS-v4-Small",
+  "slug": "aratako-irodori-tts-v4-small",
+  "author": "Aratako",
+  "url": "https://huggingface.co/Aratako/Irodori-TTS-v4-Small",
+  "created_at": "2026-08-01T07:57:14.000Z",
+  "updated_at": "2026-08-11T02:05:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "speech",
+    "voice",
+    "tts",
+    "text-to-speech",
+    "ja",
+    "arxiv:2606.25369",
+    "base_model:Aratako/Irodori-TTS-600M-v3-VoiceDesign",
+    "base_model:finetune:Aratako/Irodori-TTS-600M-v3-VoiceDesign",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 49,
+  "downloads_30d": 0,
+  "trending_score": 7,
+  "parameters": 766052385,
+  "parameters_human": "766.1M",
+  "storage_bytes": 3072661946,
+  "storage_human": "3.1 GB",
+  "base_model": "Aratako/Irodori-TTS-600M-v3-VoiceDesign",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aratako/Irodori-TTS-v4-Small · Hugging Face",
+      "url": "https://huggingface.co/Aratako/Irodori-TTS-v4-Small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aratako/Irodori-TTS-v4.1-Small · Hugging Face",
+      "url": "https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Aratako/Irodori-TTS: A Flow Matching-based Text-to-Speech ...",
+      "url": "https://github.com/Aratako/Irodori-TTS",
+      "snippet": "Training and inference code for Irodori-TTS, a Flow Matching-based Text-to-Speech model. The architecture and training design largely follow Echo-TTS, using DACVAE continuous latents as the generation target. For an OpenAI-compatible inference API server, see Irodori-TTS-Server."
+    },
+    {
+      "title": "Irodori-TTS/README.md at main · Aratako/Irodori-TTS · GitHub",
+      "url": "https://github.com/Aratako/Irodori-TTS/blob/main/README.md",
+      "snippet": "For model weights and audio samples, please refer to the Irodori-TTS-v4-Small model card. The current release, Aratako/Irodori-TTS-v4-Small, unifies the previous base and VoiceDesign families in one checkpoint. It supports 3-branch conditioning from text, reference speech, and caption text. Released ..."
+    },
+    {
+      "title": "Irodori-TTS v4-Small Local Installation Guide | Best Free Japanese AI ...",
+      "url": "https://www.youtube.com/watch?v=9HUHKamHYhI",
+      "snippet": "In this video, I&#x27;ll show you how to install Irodori-TTS v4-Small on Windows and run it completely offline. This powerful open-source Japanese AI Text-to-Speech model generates natural, expressive ..."
+    }
+  ]
+}

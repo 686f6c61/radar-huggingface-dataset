@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ionio-ai/Qwen3.5-0.8B-Ecommerce-Extraction-LoRA",
+  "slug": "ionio-ai-qwen3-5-0-8b-ecommerce-extraction-lora",
+  "author": "Ionio-ai",
+  "url": "https://huggingface.co/Ionio-ai/Qwen3.5-0.8B-Ecommerce-Extraction-LoRA",
+  "created_at": "2026-08-17T13:51:00.000Z",
+  "updated_at": "2026-08-17T13:51:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "ecommerce",
+    "information-extraction",
+    "structured-output",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Ionio-ai/ecommerce-search-extraction",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107011189,
+  "storage_human": "107 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Mustafaege/Qwen3.5-0.8B-vision-LORA-16bit · Hugging Face",
+      "url": "https://huggingface.co/Mustafaege/Qwen3.5-0.8B-vision-LORA-16bit",
+      "snippet": "The model processes document or formula images and outputs their LaTeX representation. Trained with 16-bit LoRA (chosen over QLoRA for superior stability on Qwen3.5 vision architectures) on an NVIDIA A100-SXM4-80GB via Lightning.ai, using Unsloth for 2x faster fine-tuning."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_5_0_8b/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_5_0_8b/README.md",
+      "snippet": "This is based on the implementation of Qwen3.5-0.8B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn&#x27;t a single model. It&#x27;s a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    }
+  ]
+}

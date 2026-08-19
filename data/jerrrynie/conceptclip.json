@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "JerrryNie/ConceptCLIP",
+  "slug": "jerrrynie-conceptclip",
+  "author": "JerrryNie",
+  "url": "https://huggingface.co/JerrryNie/ConceptCLIP",
+  "created_at": "2025-01-22T18:09:03.000Z",
+  "updated_at": "2026-08-18T02:46:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "conceptclip",
+    "feature-extraction",
+    "medical",
+    "vision-language",
+    "clip",
+    "various-modalities",
+    "explainable-ai",
+    "multimodal",
+    "biomedical-foundation-model",
+    "nature-biomedical-engineering",
+    "custom_code",
+    "en",
+    "arxiv:2501.15579",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 542868032,
+  "parameters_human": "542.9M",
+  "storage_bytes": 2171535856,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JerrryNie/ConceptCLIP · Hugging Face",
+      "url": "https://huggingface.co/JerrryNie/ConceptCLIP",
+      "snippet": "Model Card for ConceptCLIP Model Details Model Description ConceptCLIP is a large-scale vision-language pre-training model enhanced with medical concepts for diverse medical image modalities. It enables robust performance across multiple medical imaging tasks through concept-enhanced language-image alignment."
+    },
+    {
+      "title": "GitHub - JerrryNie/ConceptCLIP",
+      "url": "https://github.com/JerrryNie/ConceptCLIP",
+      "snippet": "ConceptCLIP is available on Hugging Face as JerrryNie/ConceptCLIP. Note The Hugging Face repository uses gated access. Please request access on the model page first, then load the model directly with transformers. Important The Hugging Face repository mainly provides metadata and benchmark artifacts ..."
+    },
+    {
+      "title": "ConceptCLIP/README.md at main · JerrryNie/ConceptCLIP · GitHub",
+      "url": "https://github.com/JerrryNie/ConceptCLIP/blob/main/README.md",
+      "snippet": "ConceptCLIP is available on Hugging Face as JerrryNie/ConceptCLIP. Note The Hugging Face repository uses gated access. Please request access on the model page first, then load the model directly with transformers."
+    },
+    {
+      "title": "README.md · JerrryNie/ConceptCLIP at main - Hugging Face",
+      "url": "https://huggingface.co/JerrryNie/ConceptCLIP/blob/main/README.md",
+      "snippet": "JerrryNie / ConceptCLIP like 5 Feature Extraction Transformers Safetensors English conceptclip medical vision-language clip various modalities explainable-ai multimodal custom_code arxiv:2501.15579 License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "An Explainable Biomedical Foundation Model via Large-Scale Concept ...",
+      "url": "https://arxiv.org/html/2501.15579",
+      "snippet": "As the first explainable biomedical foundation model, ConceptCLIP delivers robust and generalizable explainable AI (XAI) performance, consistently providing clinically meaningful concept-level explanations across diverse medical imaging modalities and diagnostic scenarios."
+    }
+  ]
+}

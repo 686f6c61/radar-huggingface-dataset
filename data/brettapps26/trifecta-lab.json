@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Brettapps26/trifecta-lab",
+  "slug": "brettapps26-trifecta-lab",
+  "author": "Brettapps26",
+  "url": "https://huggingface.co/Brettapps26/trifecta-lab",
+  "created_at": "2026-08-18T14:11:35.000Z",
+  "updated_at": "2026-08-18T14:11:35.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brettapps/Trifecta-Lab · Hugging Face",
+      "url": "https://huggingface.co/Brettapps/Trifecta-Lab",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lethal Trifecta Threat Model - AgentPatterns.ai",
+      "url": "https://agentpatterns.ai/security/lethal-trifecta-threat-model/",
+      "snippet": "Lethal Trifecta Threat Model The lethal trifecta is private data, untrusted input, and external egress on one path — remove at least one leg from every execution path."
+    },
+    {
+      "title": "The Lethal Trifecta: Why Your AI Agent Is One Email Away from a Data ...",
+      "url": "https://tianpan.co/blog/2026-01-25-the-lethal-trifecta-ai-agents",
+      "snippet": "The Lethal Trifecta describes a specific combination of agent capabilities that creates a catastrophic attack surface: Access to private data — the agent can retrieve sensitive information: credentials, source code, financial records, user data, internal documents"
+    },
+    {
+      "title": "Agentic AI Attacks Explained: How Autonomous Agents Hack You in 2026 ...",
+      "url": "https://www.toxsec.com/p/agentic-ai-attacks-explained-lethal-trifecta",
+      "snippet": "Agentic AI Attacks Explained: How Autonomous Agents Hack You in 2026 (and How to Stop Them) Three permissions that each look harmless become a data-exfil pipeline the moment one agent holds all three. The frame, the trap, and the containment play."
+    },
+    {
+      "title": "Gemini Trifecta vulnerabilities made the Gemini AI assistant steal data ...",
+      "url": "https://hackmag.com/news/gemini-trifecta",
+      "snippet": "Researchers have disclosed details of three already-fixed vulnerabilities in Google&#x27;s Gemini AI assistant, collectively dubbed Gemini Trifecta. If successfully exploited, these issues allowed attackers to trick the AI into participating in data theft and other malicious activity."
+    }
+  ]
+}

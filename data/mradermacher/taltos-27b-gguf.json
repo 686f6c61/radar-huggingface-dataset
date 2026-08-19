@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Taltos-27B-GGUF",
+  "slug": "mradermacher-taltos-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Taltos-27B-GGUF",
+  "created_at": "2026-08-17T13:19:03.000Z",
+  "updated_at": "2026-08-17T13:34:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 507,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 175360007488,
+  "storage_human": "175.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/atom-27b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/atom-27b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/beast-27b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/beast-27b-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/atom-27b-GGUF - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2Fatom-27b-GGUF",
+      "snippet": "GGUF model details base_model: vanta-research/atom-27b language: en library_name: transformers license: gemma mradermacher: readme_rev: 1 quantized_by: mradermacher tags: conversational conversational-ai vanta-research collaborative-ai large-language-model chat chatbot roleplay reasoning google gemma3 gemma project-atom llm language-model text-generation text-generation-inference ai-research ..."
+    },
+    {
+      "title": "mradermacher/atom-27b-i1-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-atom-27b-i1-gguf",
+      "snippet": "atom-27b-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find atom-27b-i1-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of atom-27b-i1-GGUF install, users can directly use atom-27b-i1-GGUF installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

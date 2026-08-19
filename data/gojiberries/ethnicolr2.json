@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gojiberries/ethnicolr2",
+  "slug": "gojiberries-ethnicolr2",
+  "author": "gojiberries",
+  "url": "https://huggingface.co/gojiberries/ethnicolr2",
+  "created_at": "2026-08-16T06:53:14.000Z",
+  "updated_at": "2026-08-17T05:18:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12830220,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - appeler/ethnicolr2: Ethnicolr implementation with new models ...",
+      "url": "https://github.com/appeler/ethnicolr2",
+      "snippet": "ethnicolr2: Predict Race and Ethnicity From Name A Pytorch implementation of ethnicolr with new models that make different assumptions (for instance, this package has models trained on unique names) than ethnicolr."
+    },
+    {
+      "title": "ethnicolr2 0.3.2 documentation - appeler.github.io",
+      "url": "https://appeler.github.io/ethnicolr2/index.html",
+      "snippet": "ethnicolr2: Predict Race and Ethnicity From Names ¶ ethnicolr2 is a modern PyTorch-based machine learning package that predicts race and ethnicity from names using LSTM neural networks. It&#x27;s trained on US Census data and Florida voter registration data to provide accurate predictions based on: Last name only (census model or Florida model) First and last name combined (Florida full name ..."
+    },
+    {
+      "title": "Models API Reference - ethnicolr2 0.3.2 documentation",
+      "url": "https://appeler.github.io/ethnicolr2/api-reference/models.html",
+      "snippet": "This page documents all model-related functions and classes in ethnicolr2."
+    },
+    {
+      "title": "ethnicolr2/docs/source/index.md at main · appeler/ethnicolr2",
+      "url": "https://github.com/appeler/ethnicolr2/blob/main/docs/source/index.md",
+      "snippet": "ethnicolr2 is a modern PyTorch-based machine learning package that predicts race and ethnicity from names using LSTM neural networks. It&#x27;s trained on US Census data and Florida voter registration data to provide accurate predictions based on: Last name only (census model or Florida model) First and last name combined (Florida full name model)"
+    },
+    {
+      "title": "ethnicolr2: Predict Race and Ethnicity From Name",
+      "url": "https://ethnicolr2.readthedocs.io/en/latest/",
+      "snippet": "©2023, Rajashekar Chintalapati, Suriyan Laohaprapanon, Gaurav Sood. | Powered by Sphinx 8.2.3 & Alabaster 1.0.0 | Page source"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF",
+  "slug": "reaperdoesntknow-dualmind-tkd-agentic-1-7b-gguf",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF",
+  "created_at": "2026-07-18T09:08:57.000Z",
+  "updated_at": "2026-08-18T13:15:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3114,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 8719178816,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF",
+      "snippet": "Available Model files: DualMind-TKD-Agentic-1.7B.Q6_K.gguf DualMind-TKD-Agentic-1.7B.Q8_0.gguf DualMind-TKD-Agentic-1.7B.Q4_K_M.gguf This was trained 2x faster with Unsloth Downloads last month 1,116 GGUF Model size 2B params Architecture qwen3 Chat template Hardware compatibility Log In to add your hardware 4-bit Q4_K_M1.11 GB 6-bit Q6_K1.42 GB 8-bit Q8_01.83 GB Inference Providers NEW This ..."
+    },
+    {
+      "title": "reaperdoesntknow/DualMind-TKD-Agentic-1.7B · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B",
+      "snippet": "Instructions to use reaperdoesntknow/DualMind-TKD-Agentic-1.7B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "DualMind-TKD-Agentic-1.7B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/reaperdoesntknow/DualMind-TKD-Agentic-1.7B",
+      "snippet": "Deploy DualMind-TKD-Agentic-1.7B with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "DualMind TKD Agentic 1.7B by reaperdoesntknow",
+      "url": "https://llm-explorer.com/model/reaperdoesntknow%2FDualMind-TKD-Agentic-1.7B,60uiu1cSuPHByFDHBqFewz",
+      "snippet": "DualMind TKD Agentic 1.7B is an open-source 1.7b LLM by reaperdoesntknow. VRAM 3.4GB, 40K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - tcsenpai/DualMind: DualMind is an innovative AI conversation ...",
+      "url": "https://github.com/tcsenpai/DualMind",
+      "snippet": "DualMind is an innovative AI conversation simulator that facilitates engaging dialogues between two AI models using the Ollama API. It offers a command-line interface (CLI) for immersive and customizable AI interactions."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "asw9161/TRG_ECCV24_Release",
+  "slug": "asw9161-trg_eccv24_release",
+  "author": "asw9161",
+  "url": "https://huggingface.co/asw9161/TRG_ECCV24_Release",
+  "created_at": "2026-08-14T04:02:07.000Z",
+  "updated_at": "2026-08-14T04:33:03.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 301368257,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": true,
+  "removed_at": "2026-08-14T08:43:34.216Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Tracker — Evertune",
+      "url": "https://models.evertune.ai/",
+      "snippet": "Track every major AI model release from OpenAI, Anthropic, Google, Meta, DeepSeek, and more. Updated daily with release dates, descriptions, and official announcements."
+    },
+    {
+      "title": "AI Model Release Tracker: New LLM Launches, Updated Weekly | AI Flash ...",
+      "url": "https://aiflashreport.com/model-releases.html",
+      "snippet": "Live tracker of every new AI model release - GPT, Claude, Gemini, Llama, open-weights. Launch dates, context windows, benchmarks. Updated weekly."
+    },
+    {
+      "title": "6DoF Head Pose Estimation Through Explicit Bidirectional Interaction ...",
+      "url": "https://dl.acm.org/doi/10.1007/978-3-031-73414-4_9",
+      "snippet": "This study addresses the nuanced challenge of estimating head translations within the context of six-degrees-of-freedom (6DoF) head pose estimation, placing emphasis on this aspect over the more commonly studied head rotations. Identifying a gap in existing methodologies, we recognized the underutilized potential synergy between facial geometry and head translation. To bridge this gap, we ..."
+    },
+    {
+      "title": "GitHub - asw91666/TRG-Release: Official PyTorch implementation of \"6DoF ...",
+      "url": "https://github.com/asw91666/TRG-Release",
+      "snippet": "This is the official PyTorch implementation of 6DoF Head Pose Estimation through Explicit Bidirectional Interaction with Face Geometry (ECCV 2024) We propose a novel 6DoF head pose estimator, TRG, which features an explicit bidirectional interaction structure between the 6DoF head pose and face geometry. 💪 TRG achieves state-of-the-art performance on the ARKitFace dataset and the BIWI dataset."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

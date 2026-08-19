@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zerofata/G4-MeroMero-v2-31B",
+  "slug": "zerofata-g4-meromero-v2-31b",
+  "author": "zerofata",
+  "url": "https://huggingface.co/zerofata/G4-MeroMero-v2-31B",
+  "created_at": "2026-07-31T21:17:00.000Z",
+  "updated_at": "2026-08-03T06:00:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "arxiv:2604.03136",
+    "arxiv:2605.26492",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 51,
+  "downloads_30d": 479,
+  "trending_score": 9,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507890,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zerofata/G4-MeroMero-v2-31B · Hugging Face",
+      "url": "https://huggingface.co/zerofata/G4-MeroMero-v2-31B",
+      "snippet": "A finetune of Gemma 4 31B designed for creative tasks, particularly narrative RP. Intended to be a more creative version of G4-MeroMero-31B. This model is the result of a lot of experimentation and learning. Trying to make Gemma 4 more creative without destroying the intelligence is... difficult. To put it mildly. Heavily inspired by a few research papers, StoryScope: Investigating ..."
+    },
+    {
+      "title": "zerofata/G4-MeroMero-31B · Hugging Face",
+      "url": "https://huggingface.co/zerofata/G4-MeroMero-31B",
+      "snippet": "A finetune of Gemma 4 31B designed for creative tasks. Another difficult to work with but extremely good model from Google. This model has a slightly better swipe diversity and a less flowery / verbose writing style. Reasoning tends to average out being a bit longer than the original however. Intelligence appears to be on par with the original. Supports both thinking and non thinking."
+    },
+    {
+      "title": "Architecture graph for zerofata/G4-MeroMero-v2-31B | hfviewer",
+      "url": "https://hfviewer.com/zerofata/G4-MeroMero-v2-31B",
+      "snippet": "zerofata/G4-MeroMero-v2-31B architecture at a glance zerofata/G4-MeroMero-v2-31B is a model (gemma4_text architecture). It uses 60 transformer layers, a hidden size of 5,376, and 32 query heads with 16 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 21,504."
+    },
+    {
+      "title": "G4 MeroMero V2 31B by zerofata — VRAM 62.5GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/zerofata%2FG4-MeroMero-v2-31B,4EnQ8ulUmyaMNAyBspmm00",
+      "snippet": "G4 MeroMero V2 31B is an open-source 31b LLM by zerofata. VRAM 62.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "G4-MeroMero-31B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/g4-meromero-31b-zerofata",
+      "snippet": "G4-MeroMero-31B is a creative writing fine-tune of Google&#x27;s Gemma 4 31B model, built by zerofata. The model was trained via supervised fine-tuning (SFT)..."
+    }
+  ]
+}

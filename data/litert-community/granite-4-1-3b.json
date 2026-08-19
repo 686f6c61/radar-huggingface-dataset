@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "litert-community/granite-4.1-3b",
+  "slug": "litert-community-granite-4-1-3b",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/granite-4.1-3b",
+  "created_at": "2026-08-17T05:39:50.000Z",
+  "updated_at": "2026-08-17T05:53:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "granite",
+    "text-generation",
+    "base_model:ibm-granite/granite-4.1-3b",
+    "base_model:finetune:ibm-granite/granite-4.1-3b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6023110496,
+  "storage_human": "6.0 GB",
+  "base_model": "ibm-granite/granite-4.1-3b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.1 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-1",
+      "snippet": "Granite 4.1 Dense language model family in 3B, 8B, and 30B sizes with instruction-tuned variants, delivering improved tool calling, instruction following, coding, and mathematical reasoning."
+    },
+    {
+      "title": "DuoNeural/Granite-4.1-3B-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/DuoNeural/Granite-4.1-3B-LiteRT",
+      "snippet": "DuoNeural / Granite-4.1-3B-LiteRT like 1 Text Generation LiteRT English granite ibm android edge-ai abliterated on-device mobile License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.1-language-models",
+      "url": "https://github.com/ibm-granite/granite-4.1-language-models",
+      "snippet": "Overview Granite 4.1 language models are a family of state-of-the-art open foundation models featuring dense decoder-only architectures in three sizes — 3B, 8B, and 30B. They natively support multilingual capabilities, a wide range of coding tasks, retrieval-augmented generation (RAG), tool usage, and structured JSON output."
+    },
+    {
+      "title": "Granite 4.1 Language Models - a ibm-granite Collection",
+      "url": "https://huggingface.co/collections/ibm-granite/granite-41-language-models",
+      "snippet": "Efficient language models for multilingual generation, coding, RAG, and AI assistant workflows."
+    },
+    {
+      "title": "Granite 4.1 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/granite-4.1",
+      "snippet": "About Granite 4.1 Granite 4.1 is a family of dense language models offered in 3B, 8B, and 30B parameter sizes. Each model is available in both base and instruction-tuned variants. Compared to Granite 4.0, Granite 4.1 delivers major improvements in tool use, instruction following, coding performance, and mathematical reasoning."
+    }
+  ]
+}

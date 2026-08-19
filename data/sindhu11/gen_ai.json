@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sindhu11/Gen_AI",
+  "slug": "sindhu11-gen_ai",
+  "author": "sindhu11",
+  "url": "https://huggingface.co/sindhu11/Gen_AI",
+  "created_at": "2026-08-17T04:50:19.000Z",
+  "updated_at": "2026-08-17T04:50:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-Source GenAI Models Built by AMD",
+      "url": "https://www.amd.com/en/developer/resources/open-source-models.html",
+      "snippet": "Explore AMD built open-source AI models—from model weights and training configs to datasets and code. Explore language models, multimodal models, and image/video generation models trained on AMD Instinct™ GPUs using AMD ROCm™ software."
+    },
+    {
+      "title": "Sindhu V. - Gen-AI / AI Developer| ML & Deep Learning ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/sindhu-r-492427190",
+      "snippet": "Gen-AI / AI Developer| ML & Deep Learning Practitioner | Specialized in LLMs, RAG, Embeddings, and RLHF · • 10+ years of experience designing, building, and implementing AI-driven enterprise ..."
+    },
+    {
+      "title": "Sindhu Kothuri - Gen AI @Meta | Actively Seeking Full-Time ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/sindhukothuri",
+      "snippet": "Gen AI @Meta | Actively Seeking Full-Time, C2C, C2H & W2 Roles · AI Evaluation Analyst and Software Engineer with 3+ years of combined experience in Generative AI evaluation, backend software ..."
+    },
+    {
+      "title": "Every Generative AI Model: Benchmarks & How to Run Them | GenAIList",
+      "url": "https://genailist.net/",
+      "snippet": "Everything about every generative AI model Every model — LLMs, image, video, audio. Watch community video reviews, compare benchmark scores head-to-head, and for open models see the hardware & software to run them yourself. Everything you wanted to know, generously shared by the community."
+    },
+    {
+      "title": "GitHub - NirDiamant/GenAI_Agents: 50+ tutorials and implementations for ...",
+      "url": "https://github.com/NirDiamant/GenAI_Agents",
+      "snippet": "Welcome to one of the most extensive and dynamic collections of Generative AI (GenAI) agent tutorials and implementations available today. This repository serves as a comprehensive resource for learning, building, and sharing GenAI agents, ranging from simple conversational bots to complex, multi-agent systems."
+    }
+  ]
+}

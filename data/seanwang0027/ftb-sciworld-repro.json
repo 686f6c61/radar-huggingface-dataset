@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/ftb-sciworld-repro",
+  "slug": "seanwang0027-ftb-sciworld-repro",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/ftb-sciworld-repro",
+  "created_at": "2026-08-17T16:32:03.000Z",
+  "updated_at": "2026-08-17T16:34:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "reinforcement-learning",
+    "on-policy-distillation",
+    "llm-agents",
+    "scienceworld",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43278144,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeanWang0027 (SeanWang0027) - Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/datasets",
+      "snippet": "User profile of SeanWang0027 on Hugging Face"
+    },
+    {
+      "title": "GitHub - allenai/ScienceWorld: ScienceWorld is a text-based virtual ...",
+      "url": "https://github.com/allenai/ScienceWorld",
+      "snippet": "ScienceWorld is a text-based virtual environment centered around accomplishing tasks from the standardized elementary science curriculum. - allenai/ScienceWorld"
+    },
+    {
+      "title": "SeanWang0027 (SeanWang0027) - Hugging Face",
+      "url": "https://huggingface.co/SeanWang0027/activity/papers",
+      "snippet": "SeanWang0027 &#x27;s activity All Models Datasets Spaces Papers Collections Community Posts Upvotes Likes Articles"
+    },
+    {
+      "title": "Releases · allenai/ScienceWorld - GitHub",
+      "url": "https://github.com/allenai/scienceworld/releases",
+      "snippet": "ScienceWorld is a text-based virtual environment centered around accomplishing tasks from the standardized elementary science curriculum. - allenai/ScienceWorld"
+    },
+    {
+      "title": "X1AOX1A/WorldModel-Sciworld-Qwen2.5-7B at main - Hugging Face",
+      "url": "https://huggingface.co/X1AOX1A/WorldModel-Sciworld-Qwen2.5-7B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

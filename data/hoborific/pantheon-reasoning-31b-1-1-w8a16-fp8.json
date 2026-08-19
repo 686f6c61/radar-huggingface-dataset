@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hoborific/Pantheon-Reasoning-31B-1.1-W8A16-FP8",
+  "slug": "hoborific-pantheon-reasoning-31b-1-1-w8a16-fp8",
+  "author": "hoborific",
+  "url": "https://huggingface.co/hoborific/Pantheon-Reasoning-31B-1.1-W8A16-FP8",
+  "created_at": "2026-08-17T03:40:52.000Z",
+  "updated_at": "2026-08-17T03:56:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "w8a16",
+    "fp8",
+    "conversational",
+    "base_model:Gryphe/Pantheon-Reasoning-31B-1.1",
+    "base_model:quantized:Gryphe/Pantheon-Reasoning-31B-1.1",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 32682375020,
+  "parameters_human": "32.68B",
+  "storage_bytes": 36127878338,
+  "storage_human": "36.1 GB",
+  "base_model": "Gryphe/Pantheon-Reasoning-31B-1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gryphe/Pantheon-Reasoning-31B-1.1 · Hugging Face",
+      "url": "https://huggingface.co/Gryphe/Pantheon-Reasoning-31B-1.1",
+      "snippet": "The same theory from my previous release applies: take the data that Pantheon is built on, pair it with full thinking traces, and let the model reason its way through character work — weighing tone, planning narrative beats, considering how a character would actually respond before committing to a line. Whether that meaningfully improves roleplay quality over a non-reasoning model is a ..."
+    },
+    {
+      "title": "Quantized Models for Gryphe/Pantheon-Reasoning-31B-1.1 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Gryphe/Pantheon-Reasoning-31B-1.1",
+      "snippet": "Active filters: Gryphe/Pantheon-Reasoning-31B-1.1. Clear all. mradermacher/Pantheon-Reasoning-31B-1.1-GGUF. 32B • Updated Jun 19 • 7.39k • 2"
+    },
+    {
+      "title": "Architecture graph for Gryphe/Pantheon-Reasoning-31B-1.1.",
+      "url": "https://hfviewer.com/Gryphe/Pantheon-Reasoning-31B-1.1",
+      "snippet": "Gryphe/Pantheon-Reasoning-31B-1.1 neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model Gryphe/Pantheon-Reasoning-31B-1.1. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ornith-ai/Ornith-1.0-35B-GGUF",
+  "slug": "ornith-ai-ornith-1-0-35b-gguf",
+  "author": "ornith-ai",
+  "url": "https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF",
+  "created_at": "2026-06-25T04:56:44.000Z",
+  "updated_at": "2026-07-18T03:15:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1047,
+  "downloads_30d": 3891810,
+  "trending_score": 20,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 180692160053,
+  "storage_human": "180.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.0-35B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-35B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Ornith-1.0 ships as a dense 9B model plus two Mixture-of-Experts models (35B, 397B). All checkpoints expose the same OpenAI-compatible interface and support a 256K (262,144-token) context window; the dense 9B fits on a single 80GB GPU, while the MoE checkpoints are sharded across a multi-GPU node with tensor parallelism."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.0-35B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-35B-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith-1.0-35B-GGUF Review, Pricing & Alternatives 2026 | AI Indigo",
+      "url": "https://aiindigo.com/tool/ornith-10-35b-gguf",
+      "snippet": "The model&#x27;s reasoning capabilities make it particularly valuable for technical documentation, legal analysis support, and scientific literature summarization. For organizations prioritizing data sovereignty, Ornith-1.-35B-GGUF offers a compelling solution."
+    }
+  ]
+}

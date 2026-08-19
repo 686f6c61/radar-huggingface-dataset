@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Babes_1.2i16_Illustrious",
+  "slug": "aixfunestudio-babes_1-2i16_illustrious",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Babes_1.2i16_Illustrious",
+  "created_at": "2026-08-17T17:53:26.000Z",
+  "updated_at": "2026-08-17T19:28:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7389334353,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Babes 1.2i14 Illustrious - AIxFun eStudio&#x27;s Ko-fi Shop",
+      "url": "https://ko-fi.com/s/f9b9efcb38",
+      "snippet": "- This model is part of June 2026 models collection for AIxFun eStudio members. - Examples: videos + images. ℹ️ This latest release in the Babes series honors its Pony heritage while stepping forward with the refined strengths of the Illustrious architecture. It brings punchier, more saturated colors, heightened contrast, and fresh light effects that add vitality and dimension to the ..."
+    },
+    {
+      "title": "AIxFuneStudio/Babes_1.2i14_Illustrious · Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Babes_1.2i14_Illustrious",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AIxFuneStudio/Babes_1.2i12_Illustrious · Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Babes_1.2i12_Illustrious",
+      "snippet": "Babes_1.2i12_Illustrious ... You need to agree to share your contact information to access this model ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "Illustrious XL 1.0 - v1.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/1232765/illustrious-xl-10",
+      "snippet": "Illustrious XL v1.0 is a cutting-edge generative model developed by OnomaAI, built on the Stable Diffusion XL architecture, trained from our previous checkpoint, Illustrious XL v0.1, designed to produce stunning high-resolution images."
+    },
+    {
+      "title": "Best Illustrious-XL Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/illustrious-xl-download",
+      "snippet": "Illustrious XL: A Powerful Model for IllustrationIllustrious XL is an advanced Stable Diffusion XL (SD XL)-based model, optimized specifically for illustration"
+    }
+  ]
+}

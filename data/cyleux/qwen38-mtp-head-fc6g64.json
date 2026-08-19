@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Cyleux/qwen38-mtp-head-fc6g64",
+  "slug": "cyleux-qwen38-mtp-head-fc6g64",
+  "author": "Cyleux",
+  "url": "https://huggingface.co/Cyleux/qwen38-mtp-head-fc6g64",
+  "created_at": "2026-08-17T03:47:40.000Z",
+  "updated_at": "2026-08-17T03:48:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:EigenLabs/Qwen3.8-27B-MTP-bf16",
+    "base_model:finetune:EigenLabs/Qwen3.8-27B-MTP-bf16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 69658112,
+  "parameters_human": "69.7M",
+  "storage_bytes": 252041329,
+  "storage_human": "252 MB",
+  "base_model": "EigenLabs/Qwen3.8-27B-MTP-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

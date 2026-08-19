@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Anisa206/wav2vec_finetune_bengali_asr",
+  "slug": "anisa206-wav2vec_finetune_bengali_asr",
+  "author": "Anisa206",
+  "url": "https://huggingface.co/Anisa206/wav2vec_finetune_bengali_asr",
+  "created_at": "2025-05-23T12:07:49.000Z",
+  "updated_at": "2026-08-16T08:24:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anisa206/wav2vec_finetune_bengali_asr at main - Hugging Face",
+      "url": "https://huggingface.co/Anisa206/wav2vec_finetune_bengali_asr/tree/main/w2v",
+      "snippet": "Anisa206 / wav2vec_finetune_bengali_asr like 1 Joblib Safetensors License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main wav2vec_finetune_bengali_asr /w2v 4.4 GB Ctrl+K Ctrl+K 1 contributor History:190 commits Anisa206 Upload folder using huggingface_hub 76002b5 verifiedabout 1 year ago checkpointsUpload folder using huggingface_hubabout 1 year ago ..."
+    },
+    {
+      "title": "Anisa206/wav2vec_finetune_bengali_asr at main - Hugging Face",
+      "url": "https://huggingface.co/Anisa206/wav2vec_finetune_bengali_asr/tree/main/mels",
+      "snippet": "Anisa206 / wav2vec_finetune_bengali_asr like 1 Joblib Safetensors License:apache-2.0 Model card FilesFiles and versions xet Community main wav2vec_finetune_bengali_asr /mels Ctrl+K Ctrl+K 1 contributor History:278 commits Anisa206 Upload folder using huggingface_hub 4e1ac05 verified8 days ago shard_100Upload folder using huggingface_hub19 days ago"
+    },
+    {
+      "title": "American International University-Bangladesh: Enhancing Bangla Local ...",
+      "url": "https://dspace.aiub.edu/jspui/handle/123456789/2662",
+      "snippet": "AIUB DSpace Welcome to the Institutional Repository of American International University-Bangladesh. We preserve and enable easy and open access to all types of digital content including text, images, moving images, mpegs and data sets."
+    },
+    {
+      "title": "PDF Enhancing Bangla Local Speech-to-Text Conversion Using Fine-Tuning ...",
+      "url": "https://dspace.aiub.edu/jspui/bitstream/123456789/2661/1/Enhancing%20Bangla%20Local%20STT.pdf",
+      "snippet": "The results demonstrate substantial advancements in ASR performance for Bengali, with the fine-tuned model outperforming previous benchmarks and showcasing the benefits of self-supervised learning approaches."
+    },
+    {
+      "title": "GitHub - zhenlan0426/Bengali-ASR",
+      "url": "https://github.com/zhenlan0426/Bengali-ASR",
+      "snippet": "Bengali-ASR provides scripts and notebooks for building an automatic speech recognition (ASR) system for the Bengali language. The project uses the Whisper architecture with JAX/TPU as well as PyTorch implementations based on Wav2Vec2."
+    }
+  ]
+}

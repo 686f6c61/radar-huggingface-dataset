@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "luganoquants/Inkling-Small",
+  "slug": "luganoquants-inkling-small",
+  "author": "luganoquants",
+  "url": "https://huggingface.co/luganoquants/Inkling-Small",
+  "created_at": "2026-08-16T04:26:48.000Z",
+  "updated_at": "2026-08-16T04:26:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 265956439090,
+  "parameters_human": "265.96B",
+  "storage_bytes": 531944513947,
+  "storage_human": "531.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bernquant/Inkling-Small · Hugging Face",
+      "url": "https://huggingface.co/bernquant/Inkling-Small",
+      "snippet": "1. General Information Inkling-Small is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and ..."
+    },
+    {
+      "title": "thinkingmachines/Inkling · Hugging Face",
+      "url": "https://huggingface.co/thinkingmachines/Inkling",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inkling-Small Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling-small/",
+      "snippet": "Model card for Inkling-Small, a 276B-parameter (12B active) open-weights multimodal model: intended uses, model properties, training, evaluations and safety."
+    },
+    {
+      "title": "Introducing Inkling-Small - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/news/inkling-small/",
+      "snippet": "Today, we are releasing Inkling-Small, an efficient open-weights model that achieves comparable performance to Inkling at a quarter of its size. Inkling-Small is a Mixture-of-Experts transformer with 276B total parameters, 12B active, trained on NVIDIA GB300 NVL72 systems. Like Inkling, it features native reasoning over audio and images, variable thinking effort, a context window of up to 1M ..."
+    },
+    {
+      "title": "blog/thinkingmachines-inkling.md at main · huggingface/blog",
+      "url": "https://github.com/huggingface/blog/blob/main/thinkingmachines-inkling.md",
+      "snippet": "We have updated this post with performance, and deployment configurations for the Inkling-Small and the Inkling-Small-NVFP4 variants. Here&#x27;s the collection with all the Inkling models."
+    }
+  ]
+}

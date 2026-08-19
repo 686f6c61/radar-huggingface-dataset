@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zhuqiang/Vision-OPD-Qwen3.5-4B-RandomDrop5-Step30",
+  "slug": "zhuqiang-vision-opd-qwen3-5-4b-randomdrop5-step30",
+  "author": "zhuqiang",
+  "url": "https://huggingface.co/zhuqiang/Vision-OPD-Qwen3.5-4B-RandomDrop5-Step30",
+  "created_at": "2026-08-17T16:58:44.000Z",
+  "updated_at": "2026-08-17T17:02:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vision-opd",
+    "visual-token-pruning",
+    "multimodal",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5174964736,
+  "parameters_human": "5.17B",
+  "storage_bytes": 10370008671,
+  "storage_human": "10.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · aaniri/OPD-V-Qwen3.5-4B at main - Hugging Face",
+      "url": "https://huggingface.co/aaniri/OPD-V-Qwen3.5-4B/blob/main/README.md",
+      "snippet": "aaniri / OPD-V-Qwen3.5-4B like 0 Image-Text-to-Text Transformers Safetensors English qwen3_5 vision-language qwen opd-v visual-reasoning conversational arxiv:2608.05131 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3_5_ (4B)_Vision.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_5_(4B)_Vision.ipynb",
+      "snippet": "Learn how to do Reinforcement Learning with our RL Guide and notebooks. Read our guides and notebooks for Text-to-speech (TTS) and vision model support. Explore our LLM Tutorials Directory to find dedicated guides for each model. Need help with Inference? Read our Inference & Deployment page for details on using vLLM, llama.cpp, Ollama etc."
+    },
+    {
+      "title": "Qwen3_5_ (4B)_Vision_GRPO.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen3_5_(4B)_Vision_GRPO.ipynb",
+      "snippet": "Let&#x27;s set up coordinates: - Let the wall lie along the x-axis. - The car approaches the wall from below (negative y-direction), at an angle of 30° from the wall → so its velocity vector makes 30° with the x-axis, pointing downward and to the left?"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Banaxi-Tech/unified-2.1-test",
+  "slug": "banaxi-tech-unified-2-1-test",
+  "author": "Banaxi-Tech",
+  "url": "https://huggingface.co/Banaxi-Tech/unified-2.1-test",
+  "created_at": "2026-08-18T10:27:03.000Z",
+  "updated_at": "2026-08-18T11:12:20.000Z",
+  "license": "bananamind-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bananamind21_unified",
+    "text-generation",
+    "causal-lm",
+    "base-model",
+    "custom-code",
+    "trust-remote-code",
+    "custom_code",
+    "en",
+    "dataset:epfml/FineWeb-HQ",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34999041,
+  "parameters_human": "35.0M",
+  "storage_bytes": 140025876,
+  "storage_human": "140 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banaxi-Tech (Banaxi) - Hugging Face",
+      "url": "https://huggingface.co/Banaxi-Tech",
+      "snippet": "SLMs, training from scratch, LoRA, TTS, Ternary models. AI Interpretability. BCI. Contact at banaxitech@gmail.com"
+    },
+    {
+      "title": "Banana-Code/test at main · Banaxi-Tech/Banana-Code · GitHub",
+      "url": "https://github.com/Banaxi-Tech/Banana-Code/tree/main/test",
+      "snippet": "An open-source AI agent that brings AI Models directly into your terminal - Banana-Code/test at main · Banaxi-Tech/Banana-Code"
+    },
+    {
+      "title": "Banaxi-Tech/muon-model-test · Hugging Face",
+      "url": "https://huggingface.co/Banaxi-Tech/muon-model-test",
+      "snippet": "This experimental base model uses the exact BananaMind 2 Nano architecture and tokenizer. It was trained from scratch with stock PyTorch Muon on the hidden matrices and AdamW on the tied embedding and normalization weights, using only streamed FineWeb-Edu data for 24,999,591,936 custom-tokenizer tokens."
+    },
+    {
+      "title": "GitHub - Banaxi-Tech/dmn-lm-test",
+      "url": "https://github.com/Banaxi-Tech/dmn-lm-test/tree/main/",
+      "snippet": "A full pass means the model has an internally-coupled population that is task-negative, load-sensitive, causally necessary for internally-directed generation, and slowly fluctuating when free-running."
+    },
+    {
+      "title": "ZenMux — Unified API for 100+ AI Models | Claude, GPT, Gemini",
+      "url": "https://zenmux.ai/",
+      "snippet": "The Enterprise LLM Platform: Unified API for 100+ AI models (Claude, GPT, Gemini, DeepSeek), intelligent routing, and AI Model Insurance that compensates for subpar output."
+    }
+  ]
+}

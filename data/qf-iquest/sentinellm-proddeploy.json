@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/SentinelLM-ProdDeploy",
+  "slug": "qf-iquest-sentinellm-proddeploy",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/SentinelLM-ProdDeploy",
+  "created_at": "2026-08-17T17:52:38.000Z",
+  "updated_at": "2026-08-17T17:52:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/SentinelLM-ProdDeploy · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/SentinelLM-ProdDeploy",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "qf-iquest (qingfeng) - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest",
+      "snippet": "Sort: Recently updated. qf-iquest/SynthMind-Release. Feature Extraction • Updated 2 days ago • 96. qf-iquest/MyAwesomeModel-TestRepo. Feature Extraction • Updated 2 days ago"
+    },
+    {
+      "title": "GitHub - mephisto65/SentineLLM: SentineLLM is a tool allowing you to ...",
+      "url": "https://github.com/mephisto65/SentineLLM",
+      "snippet": "SentineLLM is a tool allowing you to test the robustness of the most popular LLMs (Claude,deepseek,Mistral,ChatGPT) against jailbreaking attacks."
+    },
+    {
+      "title": "GitHub - Allesterdev/sentinellm: AI Security Gateway for LLM protection ...",
+      "url": "https://github.com/Allesterdev/sentinellm",
+      "snippet": "🛡️ SentineLLM 🇬🇧 English | 🇪🇸 Español AI Security Gateway — Security middleware to protect LLM applications from prompt injections and secret leakage. ⚠️ MVP / Proof of Concept — Core features (proxy, secret redaction, prompt injection detection) are functional and tested."
+    },
+    {
+      "title": "SentinelLM - A Proxy Middleware for Safer, Observable LLM Systems",
+      "url": "https://dev.to/achu_mohith/sentinellm-a-proxy-middleware-for-safer-observable-llm-systems-56a2",
+      "snippet": "Observability Defense-in-depth Runtime evaluation Transparent logging SentinelLM is a step toward that future. It&#x27;s open-source, extensible, and built for real-world AI engineering. If you&#x27;re working on production AI systems, I&#x27;d love feedback. What safety or quality checks do you think every LLM system should have by default?"
+    }
+  ]
+}

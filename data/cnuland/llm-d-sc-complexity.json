@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "cnuland/llm-d-sc-complexity",
+  "slug": "cnuland-llm-d-sc-complexity",
+  "author": "cnuland",
+  "url": "https://huggingface.co/cnuland/llm-d-sc-complexity",
+  "created_at": "2026-08-19T01:01:02.000Z",
+  "updated_at": "2026-08-19T01:04:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "text-classification",
+    "semantic-routing",
+    "llm-d",
+    "loss:BatchAllTripletLoss",
+    "sentence-similarity",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Incubation] llm-d Semantic Classifier (llm-d-sc) #2193",
+      "url": "https://github.com/llm-d/llm-d/issues/2193",
+      "snippet": "Proposal: llm-d-sc (llm-d Semantic Classifier) as an incubation project Summary llm-d-sc will be plug-and-play classifier runtime for inference request routing. It hosts small classifier models, serves them over HTTP and gRPC, and returns calibrated, versioned classification signals that a router or scheduler can use to select a model."
+    },
+    {
+      "title": "llm-d",
+      "url": "https://llm-d.ai/",
+      "snippet": "llm-d is an open-source, Kubernetes-native stack for distributed LLM inference. It runs vLLM, SGLang, and more across your cluster, turning single-node engines into production-grade serving on the hardware you already have."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "ComplexityNet: Increasing LLM Inference Efficiency by Learning Task ...",
+      "url": "https://arxiv.org/html/2312.11511v1",
+      "snippet": "Abstract We present ComplexityNet, a streamlined language model designed for assessing task complexity. This model predicts the likelihood of accurate output by various language models, each with different capabilities. Our initial application of ComplexityNet involves the Mostly Basic Python Problems (MBPP) dataset. We pioneered the creation of the first set of labels to define task ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

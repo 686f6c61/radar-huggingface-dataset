@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jacob-rojic/mirror-unconst-affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+  "slug": "jacob-rojic-mirror-unconst-affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+  "author": "jacob-rojic",
+  "url": "https://huggingface.co/jacob-rojic/mirror-unconst-affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+  "created_at": "2026-08-17T11:27:46.000Z",
+  "updated_at": "2026-08-17T11:29:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22287801592,
+  "storage_human": "22.3 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta ...",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases · toeverything/AFFiNE - GitHub",
+      "url": "https://github.com/toeverything/AFFiNE/releases",
+      "snippet": "This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit - **Bug Fixes** - Improved connectivity for AI services configured with a global location while preserving support for regional locations. - Failed audio transcription jobs can now be restarted without recreating the job."
+    },
+    {
+      "title": "Affine-5czsc2fc98-r503-offline-dpo-hialpha-midrank-lobeta-longctx ...",
+      "url": "https://friendli.ai/models/unconst/Affine-5czsc2fc98-r503-offline-dpo-hialpha-midrank-lobeta-longctx-extrasteps-merged",
+      "snippet": "Deploy Affine-5czsc2fc98-r503-offline-dpo-hialpha-midrank-lobeta-longctx-extrasteps-merged with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Roboflow Universe: Free Computer Vision Datasets and Models",
+      "url": "https://universe.roboflow.com/",
+      "snippet": "Download free, open source datasets and pre-trained computer vision machine learning models."
+    },
+    {
+      "title": "UniRef - UniProt",
+      "url": "https://www.uniprot.org/uniref",
+      "snippet": "UniProt is the world&#x27;s leading high-quality, comprehensive and freely accessible resource of protein sequence and functional information."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "khairi/life2lang-base-wo-pt-it",
+  "slug": "khairi-life2lang-base-wo-pt-it",
+  "author": "khairi",
+  "url": "https://huggingface.co/khairi/life2lang-base-wo-pt-it",
+  "created_at": "2026-08-06T00:20:03.000Z",
+  "updated_at": "2026-08-15T03:30:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:khairi/life2lang-base",
+    "base_model:finetune:khairi/life2lang-base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3290,
+  "trending_score": 0,
+  "parameters": 76936576,
+  "parameters_human": "76.9M",
+  "storage_bytes": 68325853988,
+  "storage_human": "68.3 GB",
+  "base_model": "khairi/life2lang-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

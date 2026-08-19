@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dancingsun7117/dairyguard-core1-isolation-forest",
+  "slug": "dancingsun7117-dairyguard-core1-isolation-forest",
+  "author": "dancingsun7117",
+  "url": "https://huggingface.co/dancingsun7117/dairyguard-core1-isolation-forest",
+  "created_at": "2026-08-15T13:27:02.000Z",
+  "updated_at": "2026-08-15T13:31:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "isolation-forest",
+    "anomaly-detection",
+    "fraud-detection",
+    "tabular-classification",
+    "dairy",
+    "agriculture",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2953623,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - dancingsun7117/studio",
+      "url": "https://github.com/dancingsun7117/studio",
+      "snippet": "Contribute to dancingsun7117/studio development by creating an account on GitHub."
+    },
+    {
+      "title": "Anomaly detection using Isolation Forest - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/anomaly-detection-using-isolation-forest/",
+      "snippet": "Isolation Forests offer a powerful solution, isolating anomalies from normal data. In this tutorial, we will explore the Isolation Forest algorithm&#x27;s implementation for anomaly detection using the Iris flower dataset, showcasing its effectiveness in identifying outliers amidst multidimensional data. What is Anomaly Detection?"
+    },
+    {
+      "title": "Isolation Forest Guide: Explanation and Python Implementation",
+      "url": "https://www.datacamp.com/tutorial/isolation-forest",
+      "snippet": "Learn about Isolation Forest, an unsupervised algorithm for anomaly detection that isolates outliers. Explore its benefits, applications, and Python implementation."
+    },
+    {
+      "title": "isolation-forest · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/isolation-forest",
+      "snippet": "A distributed Spark/Scala implementation of the isolation forest and extended isolation forest algorithms for unsupervised outlier detection, featuring support for scalable training and ONNX export for easy cross-platform inference."
+    },
+    {
+      "title": "IsolationForest — scikit-learn 1.9.0 documentation",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html",
+      "snippet": "IsolationForest # class sklearn.ensemble.IsolationForest(*, n_estimators=100, max_samples=&#x27;auto&#x27;, contamination=&#x27;auto&#x27;, max_features=1.0, bootstrap=False, n_jobs=None, random_state=None, verbose=0, warm_start=False) [source] # Isolation Forest Algorithm. Return the anomaly score of each sample using the IsolationForest algorithm The IsolationForest &#x27;isolates&#x27; observations by randomly ..."
+    }
+  ]
+}

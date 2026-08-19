@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "t-firefly/qwen3-0.6b-rkllm-rk3588",
+  "slug": "t-firefly-qwen3-0-6b-rkllm-rk3588",
+  "author": "t-firefly",
+  "url": "https://huggingface.co/t-firefly/qwen3-0.6b-rkllm-rk3588",
+  "created_at": "2026-07-13T06:16:37.000Z",
+  "updated_at": "2026-08-19T02:56:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3",
+    "firefly",
+    "rockchip",
+    "rk3588",
+    "llamapi",
+    "edge-ai",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1907859518,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t-firefly/qwen3-0.6b-rkllm-rk3588 · Hugging Face",
+      "url": "https://huggingface.co/t-firefly/qwen3-0.6b-rkllm-rk3588",
+      "snippet": "like 0 Follow Firefly AI 4 qwen3 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "t-firefly/qwen3-0.6b-rknn3-rk1820 at main - Hugging Face",
+      "url": "https://huggingface.co/t-firefly/qwen3-0.6b-rknn3-rk1820/tree/main",
+      "snippet": "t-firefly / qwen3-.6b-rknn3-rk1820 like 0 Follow Firefly AI 5 GGUF qwen3 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use t-firefly/qwen3-.6b-rknn3-rk1820 with llama.cpp: Install (macOS, Linux ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 include: Dense and Mixture-of-Experts (MoE) models of various sizes, available in 0.6B, 1.7B, 4B, 8B, 14B, 32B and 30B-A3B, 235B-A22B."
+    },
+    {
+      "title": "GitHub - airockchip/rknn3-toolkit",
+      "url": "https://github.com/airockchip/rknn3-toolkit",
+      "snippet": "RKNN3-Toolkit: PC-side software development kit for model conversion, inference, performance evaluation, etc. RKNN3 Runtime: On-board runtime library providing C/C++ programming interfaces for deploying RKNN models and accelerating AI applications."
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - ar5iv.labs.arxiv.org",
+      "url": "https://ar5iv.labs.arxiv.org/html/2505.09388",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains. We release both dense and Mixture-of-Experts (MoE) models, with the number of parameters ranging from 0.6 billion to 235 billion, to meet the needs of ..."
+    }
+  ]
+}

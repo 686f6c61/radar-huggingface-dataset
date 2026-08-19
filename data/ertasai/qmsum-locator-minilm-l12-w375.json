@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ErtasAI/qmsum-locator-minilm-l12-w375",
+  "slug": "ertasai-qmsum-locator-minilm-l12-w375",
+  "author": "ErtasAI",
+  "url": "https://huggingface.co/ErtasAI/qmsum-locator-minilm-l12-w375",
+  "created_at": "2026-08-10T07:30:01.000Z",
+  "updated_at": "2026-08-18T01:58:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "reranker",
+    "qmsum",
+    "meeting-summarization",
+    "ertas",
+    "text-ranking",
+    "en",
+    "base_model:cross-encoder/ms-marco-MiniLM-L12-v2",
+    "base_model:finetune:cross-encoder/ms-marco-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 33360385,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133464836,
+  "storage_human": "133 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L-12-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ErtasAI/qmsum-locator-minilm-l12-w375 · Hugging Face",
+      "url": "https://huggingface.co/ErtasAI/qmsum-locator-minilm-l12-w375",
+      "snippet": "This is the locator behind the pipeline&#x27;s promoted configuration (test ROUGE-1 35.41). It is part of the release for the paper Locate-then-summarize on QMSum: training regime and architecture outweigh scale in query-focused multi-domain meeting summarization (Ertas AI, in preparation). The protocol-exact sibling is ErtasAI/qmsum-locator-minilm-l6-w900."
+    },
+    {
+      "title": "ErtasAI/qmsum-locator-minilm-l6-w900 · Hugging Face",
+      "url": "https://huggingface.co/ErtasAI/qmsum-locator-minilm-l6-w900",
+      "snippet": "It is part of the release for the paper Locate-then-summarize on QMSum: training regime and architecture outweigh scale in query-focused multi-domain meeting summarization (Ertas AI, in preparation). The promoted sibling is ErtasAI/qmsum-locator-minilm-l12-w375."
+    },
+    {
+      "title": "GitHub - ErtasAI/qmsum-locate-then-summarize: Locate-then-summarize on ...",
+      "url": "https://github.com/ErtasAI/qmsum-locate-then-summarize/tree/main/",
+      "snippet": "Code, frozen protocol, per-query predictions and released models for the paper Locate-then-summarize on QMSum: training regime and architecture outweigh scale in query-focused multi-domain meeting summarization (Ertas AI, in preparation). Locator, promoted (L12, 375-word windows) ErtasAI/qmsum ..."
+    },
+    {
+      "title": "qmsum-locate-then-summarize/pipeline/locator_crossencoder.py ... - GitHub",
+      "url": "https://github.com/ErtasAI/qmsum-locate-then-summarize/blob/main/pipeline/locator_crossencoder.py",
+      "snippet": "Locate-then-summarize on QMSum: code, frozen protocol, per-query predictions and released models (Ertas AI) - ErtasAI/qmsum-locate-then-summarize"
+    },
+    {
+      "title": "Oracle Private AI Services Container User&#x27;s Guide",
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/prvai/available-embedding-models.html",
+      "snippet": "A number of embedding models are available to be used with the Private AI Services Container, including some that are shipped with the container. There are also pre-built models available for download as well as models that are known to work with the container but must be built using Oracle Machine Learning for Python (OML4Py) Client 2.1."
+    }
+  ]
+}

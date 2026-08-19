@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gngpostalsrvc/test",
+  "slug": "gngpostalsrvc-test",
+  "author": "gngpostalsrvc",
+  "url": "https://huggingface.co/gngpostalsrvc/test",
+  "created_at": "2026-08-16T20:28:27.000Z",
+  "updated_at": "2026-08-16T20:28:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 650272,
+  "parameters_human": "650272",
+  "storage_bytes": 2609072,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ai 检测 - Check for Copied Content Now",
+      "url": "https://duckduckgo.com/y.js?ad_domain=textguard.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=KMpo%2Dyzr7zKQlTnn%2D6mjIvfNuETS88qRk7Rcw_MX%2Dez3g%2DCbpTQOeLOc7JoUJD2SkZkXfOiwZ8VPUUTGUPy9dtyR3CIjgloyRz9sNi7sh1kqu0lvRfiwc2DicTNFKgFbcW67bjmHAY1BwfbJ4Iok701A3MIP4xO97zMbss6FFTU.Yzm1UAE4nPauLixlFqltag&rut=f5c0dce2818ca6d590475177c198b5c44f186ffee81e16fb578e9ad7afb837a8&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8wtxbiRSAfY0VnBqDkbONEDVUCUzGXj0w4XUaz1HHtM6SMuT3J00PiBq5IxL_9hI4VXjZTgIQLJPtktjfrDHe3J4U2ehghuGDp4xXsrTjDM5TiglV%2DYeWh7krHKDrO3klq%2DZG%2D89v95MeHAIXiiNbhXWFD2KPBvVVnHOtOhxzQeDAtC2fSAXSVP_Z2YqlOdjNG1yIx6_EF36C30CZKxndlDBVAJM%26u%3DaHR0cHMlM2ElMmYlMmZ0ZXh0Z3VhcmQuYWklMmYlM2Z1dG1fc291cmNlJTNkNTI0NTU4NTMyJTI2dXRtX2NhbXBhaWduaWQlM2Q1MjQ1NTg1MzIlMjZ1dG1fbWVkaXVtJTNkMTMxMzkxOTM4MTg3OTkzNyUyNnV0bV9jb250ZW50JTNkJTI2a2V5d29yZCUzZGFpJTI1MjAlZTYlYTMlODAlZTYlYjUlOGIlMjZnX3BoeXMlM2QxMjYzMjUlMjZnX2ludCUzZCUyNnNvdXJjZSUzZGJpbmclMjZ0cmFmZmljc291cmNlJTNkU2VhcmNoJTI2dXRtX2NhbXBhaWduJTNkVEVYVEdVQVJEX1dXX0FMTF9HXzA0LjA5LjIwMjVfRC5TVFIlMjZtc2Nsa2lkJTNkNTI0MWM5ZjFiNWQ3MWI2M2RjYmFhMzczOTBhZDZmYmM%26rlid%3D5241c9f1b5d71b63dcbaa37390ad6fbc&vqd=4-58562182548779536367706145000492397217&iurl=%7B1%7DIG%3D771F48276CBB42ACBDF2C1FBBD86B342%26CID%3D360781E1D90269A304569656D87968F7%26ID%3DDevEx%2C5037.1",
+      "snippet": "Detect AI-generated text —high accuracy, supports ChatGPT, Claude, Gemini, Llama. Scan for AI and copied text instantly. Ensure originality with quick detection."
+    },
+    {
+      "title": "gngpostalsrvc (Aren Wilson-Wright) - Hugging Face",
+      "url": "https://huggingface.co/gngpostalsrvc",
+      "snippet": "gngpostalsrvc/whisper_ami_finetuned Automatic Speech Recognition • Updated Dec 12, 2022"
+    },
+    {
+      "title": "Fine-tuned Models for gngpostalsrvc/BERiT_2.0 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:gngpostalsrvc/BERiT_2.0",
+      "snippet": "Explore machine learning models. 2 Full-text search Inference Available Edit filters Sort: Trending Active filters: gngpostalsrvc/BERiT_2. Clear all"
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "gngpostalsrvc/BERiTmodel2 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/15653",
+      "snippet": "This model is a fine-tuned version of roberta-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    }
+  ]
+}

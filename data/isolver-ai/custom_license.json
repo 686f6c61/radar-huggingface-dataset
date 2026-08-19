@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "iSolver-AI/custom_license",
+  "slug": "isolver-ai-custom_license",
+  "author": "iSolver-AI",
+  "url": "https://huggingface.co/iSolver-AI/custom_license",
+  "created_at": "2026-02-04T07:20:22.000Z",
+  "updated_at": "2026-08-18T06:14:33.000Z",
+  "license": "ms-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 817952,
+  "storage_human": "817952 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iSolver-AI (Feng) - Hugging Face",
+      "url": "https://huggingface.co/iSolver-AI",
+      "snippet": "Computer Vision and HCI Image-Text-to-Text • Updated 7 days ago • 33k • 702"
+    },
+    {
+      "title": "iSolver-AI (Feng) - Hugging Face",
+      "url": "https://huggingface.co/iSolver-AI/models",
+      "snippet": "Computer Vision and HCI"
+    },
+    {
+      "title": "GitHub - danielrosehill/Custom-License-Creator: AI tool to create a ...",
+      "url": "https://github.com/danielrosehill/Custom-License-Creator",
+      "snippet": "Custom License Creator An AI-powered web application that helps you create custom open-source licenses or find existing licenses that match your needs."
+    },
+    {
+      "title": "LLM License Types & Compliance Guide 2026 - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/guides/ai-model-licensing-complete-legal-guide-2025.html",
+      "snippet": "Master LLM licensing with our comprehensive 2026 legal guide. Understand Apache 2.0, MIT, Creative Commons, and custom licenses for commercial AI development, research, and compliance."
+    },
+    {
+      "title": "Profile · iSolver_ai · ModelScope",
+      "url": "https://modelscope.ai/profile/iSolver_ai",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    }
+  ]
+}

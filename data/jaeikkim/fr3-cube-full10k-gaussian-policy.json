@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jaeikkim/fr3-cube-full10k-gaussian-policy",
+  "slug": "jaeikkim-fr3-cube-full10k-gaussian-policy",
+  "author": "jaeikkim",
+  "url": "https://huggingface.co/jaeikkim/fr3-cube-full10k-gaussian-policy",
+  "created_at": "2026-08-18T01:52:37.000Z",
+  "updated_at": "2026-08-18T01:54:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "imitation-learning",
+    "gaussian-policy",
+    "franka",
+    "lerobot",
+    "visuomotor-policy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6418891510,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaeikkim/fr3-cube-rgb-native320 · Hugging Face",
+      "url": "https://huggingface.co/jaeikkim/fr3-cube-rgb-native320",
+      "snippet": "FR3 3-Cube RGB Native-320 Policy Gated research checkpoint distilled from the FR3 3-cube full-stack teacher."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=omnireset",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: omnireset Clear all"
+    }
+  ]
+}

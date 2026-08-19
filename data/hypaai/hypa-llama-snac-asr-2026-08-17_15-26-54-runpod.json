@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hypaai/Hypa-Llama-SNAC-asr-2026-08-17_15-26-54-runpod",
+  "slug": "hypaai-hypa-llama-snac-asr-2026-08-17_15-26-54-runpod",
+  "author": "hypaai",
+  "url": "https://huggingface.co/hypaai/Hypa-Llama-SNAC-asr-2026-08-17_15-26-54-runpod",
+  "created_at": "2026-08-17T15:39:29.000Z",
+  "updated_at": "2026-08-17T16:22:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31211935988,
+  "storage_human": "31.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - hypaai/Hypa-Llama: Our Hypa-llama models · GitHub",
+      "url": "https://github.com/hypaai/Hypa-Llama",
+      "snippet": "Hypa Intelligence&#x27;s open research repository for fine-tuning Llama into a multilingual, tool-aware assistant for low-resource and underrepresented languages."
+    },
+    {
+      "title": "Hypa-Llama/README.md at master · hypaai/Hypa-Llama · GitHub",
+      "url": "https://github.com/hypaai/Hypa-Llama/blob/master/README.md",
+      "snippet": "HyPA Llama Hypa Intelligence&#x27;s open research repository for fine-tuning Llama into a multilingual, tool-aware assistant for low-resource and underrepresented languages. Work in progress. Full README, training details, and released artifacts will be added once the accompanying blog post is complete."
+    },
+    {
+      "title": "hypaai/Hypa_Llama3.1-8b-SFT-2025-11-14_LoRAs · Hugging Face",
+      "url": "https://huggingface.co/hypaai/Hypa_Llama3.1-8b-SFT-2025-11-14_LoRAs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hypa - Why We Do This?",
+      "url": "https://hypachat.com/",
+      "snippet": "Values Accessibility, culturally rooted inclusivity, rigorous open science, safety, sustainability, and accountable collaboration in every innovation."
+    },
+    {
+      "title": "hypaai/Hypa-Llama3.1-8B-SNAC · Hugging Face",
+      "url": "https://huggingface.co/hypaai/Hypa-Llama3.1-8B-SNAC",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "CursedRock17/gr00t-n1.6-so101-box-merged",
+  "slug": "cursedrock17-gr00t-n1-6-so101-box-merged",
+  "author": "CursedRock17",
+  "url": "https://huggingface.co/CursedRock17/gr00t-n1.6-so101-box-merged",
+  "created_at": "2026-08-18T14:31:09.000Z",
+  "updated_at": "2026-08-18T14:33:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t",
+    "so101",
+    "sim2real",
+    "robotics",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19626621008,
+  "storage_human": "19.6 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CursedRock17 (Lucas Wendland) - Hugging Face",
+      "url": "https://huggingface.co/CursedRock17/datasets",
+      "snippet": "Reinforcement Learning updated a model about 1 month ago published a model about 2 months ago"
+    },
+    {
+      "title": "CursedRock17/so101_teleop_vials_sim_and_real_finetune · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/CursedRock17/so101_teleop_vials_sim_and_real_finetune",
+      "snippet": "This model is a task-specific fine-tuning of NVIDIA&#x27;s GR00T-N1.6-3B policy for robotic manipulation. The policy was trained to detect, grasp, and place laboratory-style vials into a yellow vial rack using an SO-101 robotic arm."
+    },
+    {
+      "title": "GR00T N1.6 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_6/",
+      "snippet": "GR00T N1.6 converges faster than GR00T N1.5, leading to smoother actions, but requires more careful tuning to prevent overfitting. We apply stronger state regularization, additional data augmentations, and co-training with pretraining data to regularize the model during post-training."
+    },
+    {
+      "title": "Isaac GR00T N1.6 Fine-Tuning | DGX Station",
+      "url": "https://build.nvidia.com/station/gr00t",
+      "snippet": "This playbook runs the default Isaac GR00T fine-tuning recipe from launch_finetune.py: not full-model weight updates of the entire 3B VLM. In the stock configuration, training focuses on the action head (DiT) and projector / adapter paths that map observations into the action model, with strong state dropout and color jitter so the policy leans ..."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    }
+  ]
+}

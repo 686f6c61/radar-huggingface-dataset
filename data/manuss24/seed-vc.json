@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "manuss24/Seed-VC",
+  "slug": "manuss24-seed-vc",
+  "author": "manuss24",
+  "url": "https://huggingface.co/manuss24/Seed-VC",
+  "created_at": "2026-08-18T21:21:16.000Z",
+  "updated_at": "2026-08-18T21:21:16.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-to-audio",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12990991330,
+  "storage_human": "13.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seed-VC - plachtaa.github.io",
+      "url": "https://plachtaa.github.io/seed-vc/",
+      "snippet": "Seed-VC is named after Seed-TTS as the method and training scheme is inspired by the paper&#x27;s description about voice conversion. We may change name based on future development of this project. This page is for showing results and comparisons only. The examples of other VC models are directly retrieved from their demo pages."
+    },
+    {
+      "title": "Seed-VC: Audio-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/seed-vc-plachta",
+      "snippet": "Overview Seed-VC is an audio-to-audio model created by Plachta that performs voice conversion tasks. The model operates under the GPL-3.0 license, which permits use and modification but requires derivative works to remain open-source. The README provided contains minimal technical documentation, so specific architectural details, parameter counts, training datasets, and inference requirements ..."
+    },
+    {
+      "title": "GitHub - Plachtaa/seed-vc: zero-shot voice conversion & singing voice ...",
+      "url": "https://github.com/Plachtaa/seed-vc",
+      "snippet": "Seed-VC English | 简体中文 | 日本語 real-time-demo.webm Currently released model supports zero-shot voice conversion 🔊 , zero-shot real-time voice conversion 🗣️ and zero-shot singing voice conversion 🎶. Without any training, it is able to clone a voice given a reference speech of 1~30 seconds."
+    },
+    {
+      "title": "GitHub - mishangni/seed-vc_-: zero-shot voice conversion & singing ...",
+      "url": "https://github.com/mishangni/seed-vc_-",
+      "snippet": "Seed-VC English | 简体中文 Currently released model supports zero-shot voice conversion 🔊 and zero-shot singing voice conversion 🎙. Without any training, it is able to clone a voice given a reference speech of 1~30 seconds. To find a list of demos and comparisons with previous voice conversion models, please visit our demo page 🌐"
+    },
+    {
+      "title": "Seed Voice Conversion - a Hugging Face Space by Plachta",
+      "url": "https://huggingface.co/spaces/Plachta/Seed-VC",
+      "snippet": "This app lets you upload a source audio file and a reference voice, then transforms the source so it sounds like the reference speaker (or an anonymized average voice). You can adjust speed, pitch,..."
+    }
+  ]
+}

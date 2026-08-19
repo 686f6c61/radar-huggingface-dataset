@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "isbondarev/giga3-github-issues",
+  "slug": "isbondarev-giga3-github-issues",
+  "author": "isbondarev",
+  "url": "https://huggingface.co/isbondarev/giga3-github-issues",
+  "created_at": "2026-08-18T11:23:30.000Z",
+  "updated_at": "2026-08-18T11:32:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "llama-factory",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10672534016,
+  "parameters_human": "10.67B",
+  "storage_bytes": 21356386741,
+  "storage_human": "21.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub Models · Build AI-powered projects with industry-leading",
+      "url": "https://github.com/features/models",
+      "snippet": "GitHub Models brings top-tier AI models into your workflow—securely and at scale. Compare outputs, manage prompts like code, and build AI-powered apps with ease."
+    },
+    {
+      "title": "AI agents tricked into recommending malicious GitHub repositories",
+      "url": "https://www.helpnetsecurity.com/2026/07/21/github-repos-malware-campaign-fakegit-ai-agents/",
+      "snippet": "7,600 malicious GitHub repositories posed as AI Skills and MCP servers, tricking Claude Code, Gemini, and ChatGPT into recommending malware."
+    },
+    {
+      "title": "isbondarev/GigaChat3-10B-A1.8B-bf16 · Hugging Face",
+      "url": "https://huggingface.co/isbondarev/GigaChat3-10B-A1.8B-bf16",
+      "snippet": "Duplicated from ai-sage/GigaChat3-10B-A1.8B-bf16 isbondarev / GigaChat3-10B-A1.8B-bf16 like 0 Text Generation Safetensors Russian English deepseek_v3 Mixture of Experts conversational License:mit Model card FilesFiles and versions xet Community Copy to bucket new GigaChat3-10B-A1.8B Архитектура модели Multi-head Latent Attention (MLA) Multi-Token Prediction (MTP) Данные ..."
+    },
+    {
+      "title": "isbondarev/GigaChat3.1-10B-A1.8B-bf16 · Hugging Face",
+      "url": "https://huggingface.co/isbondarev/GigaChat3.1-10B-A1.8B-bf16",
+      "snippet": "Duplicated from ai-sage/GigaChat3.1-10B-A1.8B-bf16 isbondarev / GigaChat3.1-10B-A1.8B-bf16 like 0 Text Generation Transformers Safetensors Russian English deepseek_v3 instruct Mixture of Experts multilingual fp8 tool-use long-context conversational text-generation-inference License:mit Model card FilesFiles and versions xet Community Deploy ..."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    }
+  ]
+}

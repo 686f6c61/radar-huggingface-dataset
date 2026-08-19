@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentyaya/yaya-image",
+  "slug": "agentyaya-yaya-image",
+  "author": "agentyaya",
+  "url": "https://huggingface.co/agentyaya/yaya-image",
+  "created_at": "2026-08-17T21:14:18.000Z",
+  "updated_at": "2026-08-17T21:19:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2512",
+    "base_model:finetune:Qwen/Qwen-Image-2512",
+    "license:apache-2.0",
+    "diffusers:QwenImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57699249390,
+  "storage_human": "57.7 GB",
+  "base_model": "Qwen/Qwen-Image-2512",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentyaya (Agente) - Hugging Face",
+      "url": "https://huggingface.co/agentyaya/models",
+      "snippet": "AI for indigenous and underrepresented communities. Recent Activity. updated a model about 6 hours ago. agentyaya/yaya.v1. published a model about 6 hours ago"
+    },
+    {
+      "title": "agentyaya/yaya.v1 · Hugging Face",
+      "url": "https://huggingface.co/agentyaya/yaya.v1",
+      "snippet": "agentyaya / yaya.v1 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model Yaya v1"
+    },
+    {
+      "title": "Damacol/agentyaya-yaya.v1 - GitHub",
+      "url": "https://github.com/Damacol/agentyaya-yaya.v1",
+      "snippet": "agentyaya/yaya.v1 - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking. Optimized for developers and creators who demand full control over their AI workflow."
+    },
+    {
+      "title": "agentyaya/yaya.v1 - Fast, Reliable, and Scalable Inference on FriendliAI",
+      "url": "https://friendli.ai/models/agentyaya/yaya.v1",
+      "snippet": "Run agentyaya/yaya.v1 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "agentyaya-yayav1 · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/agentyaya-yayav1",
+      "snippet": "Star 0 Code Issues Pull requests Run agentyaya/yaya.v1 privately via Venice.ai - Zero tracking, uncensored privacy ai uncensored ai-model llm venice-ai agentyaya-yayav1 Updated on Apr 18"
+    }
+  ]
+}

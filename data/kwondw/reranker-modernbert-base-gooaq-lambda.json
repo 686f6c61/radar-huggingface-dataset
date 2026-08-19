@@ -1,0 +1,170 @@
+{
+  "schema": 1,
+  "id": "kwondw/reranker-ModernBERT-base-gooaq-lambda",
+  "slug": "kwondw-reranker-modernbert-base-gooaq-lambda",
+  "author": "kwondw",
+  "url": "https://huggingface.co/kwondw/reranker-ModernBERT-base-gooaq-lambda",
+  "created_at": "2026-08-15T12:51:20.000Z",
+  "updated_at": "2026-08-15T12:53:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:95939",
+    "loss:LambdaLoss",
+    "text-ranking",
+    "en",
+    "arxiv:1908.10084",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598436708,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "gooaq dev",
+      "metric": "Map",
+      "value": 0.7235
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "gooaq dev",
+      "metric": "Mrr@10",
+      "value": 0.722
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "gooaq dev",
+      "metric": "Ndcg@10",
+      "value": 0.7664
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoMSMARCO R100",
+      "metric": "Map",
+      "value": 0.44
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoMSMARCO R100",
+      "metric": "Mrr@10",
+      "value": 0.4276
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoMSMARCO R100",
+      "metric": "Ndcg@10",
+      "value": 0.5023
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNFCorpus R100",
+      "metric": "Map",
+      "value": 0.3312
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNFCorpus R100",
+      "metric": "Mrr@10",
+      "value": 0.5754
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNFCorpus R100",
+      "metric": "Ndcg@10",
+      "value": 0.3743
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNQ R100",
+      "metric": "Map",
+      "value": 0.2867
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNQ R100",
+      "metric": "Mrr@10",
+      "value": 0.281
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNQ R100",
+      "metric": "Ndcg@10",
+      "value": 0.3538
+    },
+    {
+      "task": "Cross Encoder Nano BEIR",
+      "dataset": "NanoBEIR R100 mean",
+      "metric": "Map",
+      "value": 0.3526
+    },
+    {
+      "task": "Cross Encoder Nano BEIR",
+      "dataset": "NanoBEIR R100 mean",
+      "metric": "Mrr@10",
+      "value": 0.428
+    },
+    {
+      "task": "Cross Encoder Nano BEIR",
+      "dataset": "NanoBEIR R100 mean",
+      "metric": "Ndcg@10",
+      "value": 0.4101
+    }
+  ],
+  "sources": [
+    {
+      "title": "tomaarsen/reranker-ModernBERT-base-gooaq-lambda · Hugging Face",
+      "url": "https://huggingface.co/tomaarsen/reranker-ModernBERT-base-gooaq-lambda",
+      "snippet": "ModernBERT-base trained on GooAQ This is a Cross Encoder model finetuned from answerdotai/ModernBERT-base using the sentence-transformers library. It computes scores for pairs of texts, which can be used for text reranking and semantic search."
+    },
+    {
+      "title": "reranker-ModernBERT-base-gooaq-bce - Hugging Face",
+      "url": "https://huggingface.co/tomaarsen/reranker-ModernBERT-base-gooaq-bce",
+      "snippet": "See training_gooaq_bce.py for the training script. This script is also described in the Cross Encoder > Training Overview documentation and the Training and Finetuning Reranker Models with Sentence Transformers v4 blogpost."
+    },
+    {
+      "title": "model.aibase.com",
+      "url": "https://model.aibase.com/en/models/details/1915711786575355906",
+      "snippet": "## 🚀 ModernBERT-base trained on GooAQ This is a Cross Encoder model that computes scores for text pairs, which can be used for text reranking and semantic search."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the research repository for ModernBERT, focused on pre-training and evaluations. If you&#x27;re seeking the HuggingFace version, designed to integrate with any common pipeline, please head to the ModernBERT Collection on HuggingFace ModernBERT is a collaboration between Answer.AI, LightOn, and friends."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/rerankers: A lightweight, low-dependency, unified ...",
+      "url": "https://github.com/AnswerDotAI/rerankers",
+      "snippet": "A lightweight, low-dependency, unified API to use all common reranking and cross-encoder models. - AnswerDotAI/rerankers"
+    }
+  ]
+}

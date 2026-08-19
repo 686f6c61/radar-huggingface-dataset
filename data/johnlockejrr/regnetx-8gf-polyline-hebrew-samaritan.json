@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "johnlockejrr/regnetx-8gf-polyline-hebrew-samaritan",
+  "slug": "johnlockejrr-regnetx-8gf-polyline-hebrew-samaritan",
+  "author": "johnlockejrr",
+  "url": "https://huggingface.co/johnlockejrr/regnetx-8gf-polyline-hebrew-samaritan",
+  "created_at": "2026-08-17T03:25:27.000Z",
+  "updated_at": "2026-08-17T03:30:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "regnetx-det",
+  "languages": [
+    "he",
+    "hbo",
+    "smp",
+    "sam",
+    "en"
+  ],
+  "tags": [
+    "regnetx-det",
+    "computer-vision",
+    "object-detection",
+    "baseline-detection",
+    "document-analysis",
+    "historical-documents",
+    "handwriting",
+    "hebrew",
+    "samaritan",
+    "page-xml",
+    "alto-xml",
+    "polyline",
+    "regnetx",
+    "pytorch",
+    "safetensors",
+    "he",
+    "hbo",
+    "smp",
+    "sam",
+    "en",
+    "dataset:custom",
+    "arxiv:2410.13842",
+    "base_model:johnlockejrr/dfine-det-large-baseline-stage0",
+    "base_model:finetune:johnlockejrr/dfine-det-large-baseline-stage0",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 217467932,
+  "storage_human": "217 MB",
+  "base_model": "timm/regnetx_080.tv2_in1k, johnlockejrr/dfine-det-large-baseline-stage0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Hebrew Medieval + Samaritan combined (internal val)",
+      "metric": "cbad_f1_max (conf sweep)",
+      "value": 0.942
+    },
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Hebrew Medieval + Samaritan combined (internal val)",
+      "metric": "cbad_f1 @ conf=0.4",
+      "value": 0.942
+    },
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Hebrew Medieval + Samaritan combined (internal val)",
+      "metric": "Precision @ conf=0.4",
+      "value": 0.961
+    },
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Hebrew Medieval + Samaritan combined (internal val)",
+      "metric": "Recall @ conf=0.4",
+      "value": 0.925
+    },
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Hebrew Medieval + Samaritan combined (internal val)",
+      "metric": "cbad_f1 @ conf=0.1 (logged, not recommended)",
+      "value": 0.769
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - signatrix/regnet: Pytorch implementation of network design ...",
+      "url": "https://github.com/signatrix/regnet",
+      "snippet": "Here is our pytorch pytorch implementation of network design paradigm described in the paper \"Designing Network Design Spaces\" Design space design"
+    },
+    {
+      "title": "GitHub - johnlockejrr/johnlockejrr: AI Researcher & Semitic Language ...",
+      "url": "https://github.com/johnlockejrr/johnlockejrr",
+      "snippet": "🎯 Multilingual AI Researcher & Semitic Language Specialist I&#x27;m passionate about Natural Language Processing, Semitic linguistics, and AI optimization. My work spans Hebrew, Aramaic, Syriac, and Samaritan text processing, with expertise in eGPU optimization, transformer architectures, and historical text digitization."
+    },
+    {
+      "title": "johnlockejrr/dfine-det-large-baseline-hebrew-samaritan-stage1 at main",
+      "url": "https://huggingface.co/johnlockejrr/dfine-det-large-baseline-hebrew-samaritan-stage1/tree/main",
+      "snippet": "handwriting hebrew samaritan page-xml polyline dfine Eval Results (legacy) arxiv:2410.13842 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main dfine-det-large-baseline-hebrew-samaritan-stage1 122 MB Ctrl+K Ctrl+K 1 contributor History:4 commits johnlockejrr Update README.md d838cbc verifiedabout 7 hours ..."
+    },
+    {
+      "title": "johnlockejrr (John Locke) - Hugging Face",
+      "url": "https://huggingface.co/johnlockejrr/models",
+      "snippet": "OCR, HTR, ATR, NLP, AI. Recent Activity. liked a model 1 day ago. OrionLLM/GRM-2.6-Opus. liked a model 1 day ago"
+    },
+    {
+      "title": "regnet_x_8gf — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.regnet_x_8gf.html",
+      "snippet": "RegNet_X_8GF_Weights.IMAGENET1K_V2: These weights improve upon the results of the original paper by using a modified version of TorchVision&#x27;s new training recipe."
+    }
+  ]
+}

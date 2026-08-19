@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Fl0ppa/VoiceConversionWebUI",
+  "slug": "fl0ppa-voiceconversionwebui",
+  "author": "Fl0ppa",
+  "url": "https://huggingface.co/Fl0ppa/VoiceConversionWebUI",
+  "created_at": "2026-08-17T16:15:26.000Z",
+  "updated_at": "2026-08-17T16:15:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237528099396,
+  "storage_human": "237.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lj1995/VoiceConversionWebUI · Hugging Face",
+      "url": "https://huggingface.co/lj1995/VoiceConversionWebUI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - RVC-Project/Retrieval-based-Voice-Conversion-WebUI: Easily ...",
+      "url": "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI",
+      "snippet": "Easily train a good VC model with voice data <= 10 mins! - RVC-Project/Retrieval-based-Voice-Conversion-WebUI"
+    },
+    {
+      "title": "RedbeardNZ/VoiceConversionWebUI · Hugging Face",
+      "url": "https://huggingface.co/RedbeardNZ/VoiceConversionWebUI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Retrieval-based-Voice-Conversion-WebUI - GitHub",
+      "url": "https://github.com/fumiama/Retrieval-based-Voice-Conversion-WebUI",
+      "snippet": "Easily train a good VC model with voice data <= 10 mins! - fumiama/Retrieval-based-Voice-Conversion-WebUI"
+    },
+    {
+      "title": "VoiceConversionWebUI: Text-to-Audio model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/voiceconversionwebui-lj1995",
+      "snippet": "StyleTTS2-LJSpeech creates voices from scratch while this model modifies existing voices. ai-voice-cloning likely focuses on voice cloning from limited samples, while VoiceConversionWebUI operates as a broader voice conversion platform."
+    }
+  ]
+}

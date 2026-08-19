@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-two-focus-noise-20pct-40ep",
+  "slug": "imkyungjin-pi0-stackcube-two-focus-noise-20pct-40ep",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-two-focus-noise-20pct-40ep",
+  "created_at": "2026-08-19T00:25:25.000Z",
+  "updated_at": "2026-08-19T00:27:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_two_focus_noise_20pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImKyungjin/pi0-stackcube-v4-full · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-v4-full",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ImKyungjin/pi0-stackcube-recover-noise-50pct-40ep · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-50pct-40ep",
+      "snippet": "Instructions to use ImKyungjin/pi0-stackcube-recover-noise-50pct-40ep with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use ImKyungjin/pi0-stackcube-recover-noise-50pct-40ep with LeRobot: Notebooks Google Colab Kaggle Model Card for pi0 How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "Kimi K2 - Open Agentic Intelligence | 1T MoE | Moonshot AI",
+      "url": "https://kimik2ai.com/k2/",
+      "snippet": "Kimi K2 by Moonshot AI - 1 trillion parameter open-source MoE model with 32B active parameters, 128K context, MuonClip optimizer, exceptional coding, reasoning, and agentic capabilities. Released July 2025 under Modified MIT License."
+    },
+    {
+      "title": "GitHub - flashrt-project/FlashRT: FlashRT is a high-performance ...",
+      "url": "https://github.com/flashrt-project/FlashRT",
+      "snippet": "FlashRT is a high-performance realtime inference engine for small-batch, latency-sensitive AI workloads. The flagship integration is production VLA control for Pi0, Pi0.5, GROOT N1.6, and Pi0-FAST...."
+    },
+    {
+      "title": "MotionBricks: Scalable Real-Time Motions with Modular Latent Generative ...",
+      "url": "https://nvlabs.github.io/motionbricks/",
+      "snippet": "First, we propose a large-scale modular latent generative backbone tailored for robust real-time motion generation, effectively modeling a dataset of over 350,000 motion clips with a single model. Second, we introduce smart primitives that provide a unified, robust, and intuitive interface for authoring both navigation and object interaction."
+    }
+  ]
+}

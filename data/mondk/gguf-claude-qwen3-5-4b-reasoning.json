@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mondk/GGUF.Claude-Qwen3.5-4B-Reasoning",
+  "slug": "mondk-gguf-claude-qwen3-5-4b-reasoning",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/GGUF.Claude-Qwen3.5-4B-Reasoning",
+  "created_at": "2026-08-18T11:54:40.000Z",
+  "updated_at": "2026-08-18T12:50:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "teich",
+    "claude",
+    "unsloth",
+    "reasoning",
+    "tool-use",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "vi",
+    "dataset:mondk/claude-code-fable-5-traces.jsonl",
+    "dataset:TeichAI/Claude-Sonnet-4.6-Reasoning-1100x",
+    "dataset:angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k",
+    "dataset:dalisoft/claude-opus-4.6-high-reasoning-700x",
+    "dataset:Hastagaras/Claude-Opus-4.6-Reasoning-BugFinder-400",
+    "base_model:TeichAI/Qwen3.5-4B-Claude-Opus-Reasoning-Distill",
+    "base_model:quantized:TeichAI/Qwen3.5-4B-Claude-Opus-Reasoning-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 3455869600,
+  "storage_human": "3.5 GB",
+  "base_model": "TeichAI/Qwen3.5-4B-Claude-Opus-Reasoning-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 + Claude Code: Free Local AI Coding Agent",
+      "url": "https://codersera.com/blog/run-install-and-benchmark-qwen35-claude-code-free-local-ai-coding-agent/",
+      "snippet": "Set up Qwen3.5 with Claude Code as a free local AI coding agent. Learn install steps, benchmarks, pricing, comparisons, and real‑world tests in this updated 2026 guide."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn&#x27;t a single model. It&#x27;s a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    },
+    {
+      "title": "How to Run Qwen 3.5 Locally on a Single GPU: Step-by-Step Guide",
+      "url": "https://www.datacamp.com/tutorial/run-qwen-3-5-locally",
+      "snippet": "Run the latest Qwen model on a single GPU VM, set up llama.cpp, and securely access it locally over SSH through a private OpenAI-compatible endpoint."
+    },
+    {
+      "title": "Qwen 3.5: The Complete Guide - Benchmarks, Local Setup, and How It ...",
+      "url": "https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks",
+      "snippet": "Alibaba&#x27;s Qwen team dropped Qwen 3.5 on February 16, 2026, and it immediately shook up the AI landscape."
+    },
+    {
+      "title": "Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-GGUF",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-GGUF/blob/main/README.md",
+      "snippet": "🌟 Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled 💡 Model Introduction Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled is a highly capable reasoning model fine-tuned on top of the Qwen3.5-4B dense architecture. The model&#x27;s core directive is to leverage state-of-the-art Chain-of-Thought (CoT) distillation primarily sourced from Claude-4.6 Opus interactions. Through Supervised Fine-Tuning ..."
+    }
+  ]
+}

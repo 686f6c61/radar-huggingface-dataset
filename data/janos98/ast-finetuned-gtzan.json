@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Janos98/ast-finetuned-gtzan",
+  "slug": "janos98-ast-finetuned-gtzan",
+  "author": "Janos98",
+  "url": "https://huggingface.co/Janos98/ast-finetuned-gtzan",
+  "created_at": "2026-08-16T06:23:02.000Z",
+  "updated_at": "2026-08-16T18:56:58.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "audio-spectrogram-transformer",
+    "audio-classification",
+    "generated_from_trainer",
+    "dataset:marsyas/gtzan",
+    "base_model:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "base_model:finetune:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "license:bsd-3-clause",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 86196490,
+  "parameters_human": "86.2M",
+  "storage_bytes": 7585927633,
+  "storage_human": "7.6 GB",
+  "base_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "GTZAN",
+      "metric": "Accuracy",
+      "value": 0.89
+    }
+  ],
+  "sources": []
+}

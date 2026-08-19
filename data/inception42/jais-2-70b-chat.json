@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "inception42/Jais-2-70B-Chat",
+  "slug": "inception42-jais-2-70b-chat",
+  "author": "inception42",
+  "url": "https://huggingface.co/inception42/Jais-2-70B-Chat",
+  "created_at": "2025-12-09T09:15:30.000Z",
+  "updated_at": "2026-08-18T10:00:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "jais2",
+    "text-generation",
+    "conversational",
+    "ar",
+    "en",
+    "arxiv:2608.13580",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 26,
+  "downloads_30d": 1768,
+  "trending_score": 0,
+  "parameters": 72039704576,
+  "parameters_human": "72.04B",
+  "storage_bytes": 144079533336,
+  "storage_human": "144.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inceptionai/Jais-2-70B-Chat · Hugging Face",
+      "url": "https://huggingface.co/inceptionai/Jais-2-70B-Chat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inception42 | AI | Agentic AI for Sovereign Enterprise",
+      "url": "https://inception42.ai/",
+      "snippet": "Inception AI deploys agentic AI at sovereign scale, built for enterprises and governments with the governance, security, and control national rollouts demand."
+    },
+    {
+      "title": "inceptionai/Jais-2-70B-Chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/inceptionai/Jais-2-70B-Chat-GGUF",
+      "snippet": "Jais-2-70B-Chat Model is trained from scratch on Arabic and English data and is powered by a custom Arabic-centric vocabulary, it efficiently captures Modern Standard Arabic, regional dialects, and mixed Arabic-English code-switching."
+    },
+    {
+      "title": "Jais 2: A Blueprint for Sovereign AI - cerebras.ai",
+      "url": "https://www.cerebras.ai/blog/jais2",
+      "snippet": "The Jais 2 chat application runs at 2,000 tokens per second, making it one of the fastest LLMs in the world. Jais 2 serves as a blueprint for sovereign AI, showing how nations can develop highly capable, culturally aligned models at lower cost, higher speed, and without the complexity of large GPU clusters."
+    },
+    {
+      "title": "Jais 2: A Family of Arabic-Centric Open Large Language Models",
+      "url": "https://aipulselab.tech/news/jais-2-a-family-of-arabic-centric-open-large-language-models-61e016",
+      "snippet": "Jais 2 is a family of Arabic-centric large language models released jointly by MBZUAI, Cerebras, and Inception. The family includes a 70B model claimed to be the largest open Arabic-centric LLM trained from scratch, alongside a competitive 8B variant."
+    }
+  ]
+}

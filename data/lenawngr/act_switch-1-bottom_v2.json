@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lenawngr/ACT_switch-1-bottom_v2",
+  "slug": "lenawngr-act_switch-1-bottom_v2",
+  "author": "lenawngr",
+  "url": "https://huggingface.co/lenawngr/ACT_switch-1-bottom_v2",
+  "created_at": "2026-08-18T22:18:08.000Z",
+  "updated_at": "2026-08-18T22:19:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:lenawngr/SWITCH-1-bottom",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51602054,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206448600,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lenawngr/ACT_switch-1-bottom_v1 · Hugging Face",
+      "url": "https://huggingface.co/lenawngr/ACT_switch-1-bottom_v1",
+      "snippet": "Instructions to use lenawngr/ACT_switch-1-bottom_v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use lenawngr/ACT_switch-1-bottom_v1 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the ..."
+    },
+    {
+      "title": "lenawngr/SWITCH-1-bottom · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/lenawngr/SWITCH-1-bottom",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Model configuration - Claude Code Docs",
+      "url": "https://code.claude.com/docs/en/model-config",
+      "snippet": "As of v2.1.199, when the organization default is a different model family from your account type&#x27;s usual default, the /model picker keeps a separate row for that usual family, so you can still switch to it for a session."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

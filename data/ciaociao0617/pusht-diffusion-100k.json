@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ciaociao0617/pusht-diffusion-100k",
+  "slug": "ciaociao0617-pusht-diffusion-100k",
+  "author": "ciaociao0617",
+  "url": "https://huggingface.co/ciaociao0617/pusht-diffusion-100k",
+  "created_at": "2026-08-17T16:01:35.000Z",
+  "updated_at": "2026-08-17T20:04:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:lerobot/pusht",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262718644,
+  "parameters_human": "262.7M",
+  "storage_bytes": 31526529568,
+  "storage_human": "31.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lerobot/diffusion_pusht · Hugging Face",
+      "url": "https://huggingface.co/lerobot/diffusion_pusht",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · lerobot/diffusion_pusht at main - Hugging Face",
+      "url": "https://huggingface.co/lerobot/diffusion_pusht/blob/main/README.md",
+      "snippet": "The model was evaluated on the PushT environment from gym-pusht and compared to a similar model trained with the original Diffusion Policy code. There are two evaluation metrics on a per-episode basis:"
+    },
+    {
+      "title": "diffusion_pusht · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/diffusion_pusht/summary",
+      "snippet": "Model Card for Diffusion Policy / PushT Diffusion Policy (as per Diffusion Policy: Visuomotor Policy Learning via Action Diffusion) trained for the PushT environment from gym-pusht. How to Get Started with the Model See the LeRobot library (particularly the evaluation script) for instructions on how to load and evaluate this model. Training Details Trained with LeRobot@3c0a209. The model was ..."
+    },
+    {
+      "title": "diffusion_pusht: Video-to-Video model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/diffusion-pusht-lerobot",
+      "snippet": "Overview diffusion_pusht is a Diffusion Policy model trained on the PushT environment from gym-pusht, implementing the visuomotor policy learning approach described in the Diffusion Policy paper. Built and maintained by lerobot, this model uses the LeRobot framework and generates robot manipulation actions by conditioning a diffusion model on visual observations. The model was trained for ..."
+    },
+    {
+      "title": "Diffusion Policy - Columbia University",
+      "url": "https://diffusion-policy.cs.columbia.edu/pusht_results.html",
+      "snippet": "This paper introduces Diffusion Policy, a new way of generating robot behavior by representing a robot&#x27;s visuomotor policy as a conditional denoising diffusion process. We benchmark Diffusion Policy across 11 different tasks from 4 different robot manipulation benchmarks and find that it consistently outperforms existing state-of-the-art robot learning methods with an average improvement of 46 ..."
+    }
+  ]
+}

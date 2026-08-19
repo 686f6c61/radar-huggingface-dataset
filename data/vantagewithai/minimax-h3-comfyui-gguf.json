@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "vantagewithai/MiniMax-H3-comfyUI-GGUF",
+  "slug": "vantagewithai-minimax-h3-comfyui-gguf",
+  "author": "vantagewithai",
+  "url": "https://huggingface.co/vantagewithai/MiniMax-H3-comfyUI-GGUF",
+  "created_at": "2026-08-04T01:47:43.000Z",
+  "updated_at": "2026-08-10T22:20:48.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "gguf",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "video-to-audio-video",
+    "audio-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "reference-to-audio-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 57982,
+  "trending_score": 8,
+  "parameters": 33122992912,
+  "parameters_human": "33.12B",
+  "storage_bytes": 518452537472,
+  "storage_human": "518.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vantagewithai/MiniMax-H3-comfyUI-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vantagewithai/MiniMax-H3-comfyUI-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vantagewithai/MiniMax-H3-comfyUI-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/vantagewithai/MiniMax-H3-comfyUI-GGUF/tree/main/workflows",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 GGUF in ComfyUI: T2V & I2V Guide - kombitz.com",
+      "url": "https://www.kombitz.com/2026/08/04/minimax_h3_gguf_in_comfyui_t2v_i2v_guide/",
+      "snippet": "Learn how to use MiniMax H3 Image-to-Video GGUF models in ComfyUI to create realistic AI videos from a single image with native audio support."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 ComfyUI Guide: Setup, VRAM, Workflows & Fixes - kingy.ai",
+      "url": "https://kingy.ai/ai/ai-guides/minimax-h3-comfyui-local-guide/",
+      "snippet": "Install MiniMax H3 in ComfyUI, download the correct files, run T2V, I2V and R2V workflows, use SageAttention and troubleshoot OOM errors."
+    }
+  ]
+}

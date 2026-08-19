@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "sohail-kustagi/MAAS-Disaster-Response",
+  "slug": "sohail-kustagi-maas-disaster-response",
+  "author": "sohail-kustagi",
+  "url": "https://huggingface.co/sohail-kustagi/MAAS-Disaster-Response",
+  "created_at": "2026-08-17T14:41:20.000Z",
+  "updated_at": "2026-08-17T14:56:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "yolov10",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "yolov10",
+    "phi3",
+    "object-detection",
+    "text-generation",
+    "disaster-response",
+    "openvino",
+    "pytorch",
+    "gguf",
+    "safetensors",
+    "en",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:finetune:microsoft/Phi-3-mini-4k-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46343164,
+  "storage_human": "46 MB",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

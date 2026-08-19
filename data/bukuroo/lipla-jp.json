@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bukuroo/Lipla-jp",
+  "slug": "bukuroo-lipla-jp",
+  "author": "bukuroo",
+  "url": "https://huggingface.co/bukuroo/Lipla-jp",
+  "created_at": "2026-08-09T11:18:05.000Z",
+  "updated_at": "2026-08-15T06:12:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "ONNX",
+    "license-plate",
+    "OCR",
+    "ObjectDetection",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 218880106,
+  "storage_human": "219 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bukuroo/Lipla-jp · Hugging Face",
+      "url": "https://huggingface.co/bukuroo/Lipla-jp",
+      "snippet": "bukuroo / Lipla-jp like 0 ONNX License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Lipla-jp - a Hugging Face Space by bukuroo",
+      "url": "https://huggingface.co/spaces/bukuroo/Lipla",
+      "snippet": "Lipla-jp 日本の自動車ナンバープレートを検出・認識します。画像をドロップすると自動的に処理を開始します。"
+    },
+    {
+      "title": "/jp/ - Otaku Culture - #10460384 - warosu",
+      "url": "https://warosu.org/jp/thread/10460384",
+      "snippet": "File: 856 KB, 1800x1200, kneehigh_shiina_m01_003.jpg [View same] [iqdb] [saucenao] [google] Anonymous Thu, Feb 7, 2013 09:47:53 No. 10460384 [Reply] [Original] Does /jp/ like Shiina Momo?"
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    },
+    {
+      "title": "【2025年最新】LoRAモデル配布サイト完全版|おすすめダウンロードと使い方",
+      "url": "https://how-to-l.com/lora-model-haifu-civitai/",
+      "snippet": "2025年最新のLoRAモデル配布サイトを完全網羅。Civitai、Hugging Faceなど人気サイトの安全性、ダウンロード、Stable Diffusion Web UIへの導入手順をAI初心者向けに解説します。"
+    }
+  ]
+}

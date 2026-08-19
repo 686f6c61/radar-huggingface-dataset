@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "roma-tahir/multilingual-e5-islamic-v1",
+  "slug": "roma-tahir-multilingual-e5-islamic-v1",
+  "author": "roma-tahir",
+  "url": "https://huggingface.co/roma-tahir/multilingual-e5-islamic-v1",
+  "created_at": "2026-08-18T04:25:13.000Z",
+  "updated_at": "2026-08-18T04:30:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:801",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:finetune:intfloat/multilingual-e5-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "intfloat/multilingual-e5-large · Hugging Face",
+      "url": "https://huggingface.co/intfloat/multilingual-e5-large",
+      "snippet": "Multilingual-E5-large Multilingual E5 Text Embeddings: A Technical Report. Liang Wang, Nan Yang, Xiaolong Huang, Linjun Yang, Rangan Majumder, Furu Wei, arXiv 2024 This model has 24 layers and the embedding size is 1024. Usage Below is an example to encode queries and passages from the MS-MARCO passage ranking dataset."
+    },
+    {
+      "title": "Multilingual E5 Text Embeddings: A Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2402.05672",
+      "snippet": "In this brief technical report, we introduce multilingual E5 text embedding models that are trained with a multi-stage pipeline. By making the model weights publicly available, practitioners can leverage these models for information retrieval, semantic similarity, and clustering tasks across a diverse range of languages."
+    },
+    {
+      "title": "IslamQA/multilingual-e5-small-finetuned · Hugging Face",
+      "url": "https://huggingface.co/IslamQA/multilingual-e5-small-finetuned",
+      "snippet": "Model Card for Model ID An embedding model optimized for retrieving passages that answer questions about Islam. The passages are inherently multilingual, as they contain quotes from the Quran and Hadith. They often include preambles like \"Bismillah\" in various languages and follow a specific writing style."
+    },
+    {
+      "title": "Multilingual E5 Text Embeddings: A Technical Report",
+      "url": "https://www.microsoft.com/en-us/research/publication/multilingual-e5-text-embeddings-a-technical-report/",
+      "snippet": "This technical report presents the training methodology and evaluation results of the open-source multilingual E5 text embedding models, released in mid-2023. Three embedding models of different sizes (small / base / large) are provided, offering a balance between the inference efficiency and embedding quality. The training procedure adheres to the English E5 model recipe, involving […]"
+    },
+    {
+      "title": "Multilingual E5 Text Embeddings: A Technical Report | alphaXiv",
+      "url": "https://www.alphaxiv.org/resources/2402.05672v1",
+      "snippet": "The training procedure adheres to the English E5 model recipe, involving contrastive pre-training on 1 billion multilingual text pairs, followed by fine-tuning on a combination of labeled datasets."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ench100/bodyandface",
+  "slug": "ench100-bodyandface",
+  "author": "ench100",
+  "url": "https://huggingface.co/ench100/bodyandface",
+  "created_at": "2025-08-12T08:58:41.000Z",
+  "updated_at": "2026-08-18T11:54:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lodestones/Chroma",
+    "base_model:adapter:lodestones/Chroma",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 2152,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140441484433,
+  "storage_human": "140.4 GB",
+  "base_model": "lodestones/Chroma",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ench100/bodyandface · Hugging Face",
+      "url": "https://huggingface.co/ench100/bodyandface",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ench100 (Aleks Petrov) - Hugging Face",
+      "url": "https://huggingface.co/ench100",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 13 hours ago ... published a model 3 days ago"
+    },
+    {
+      "title": "ench100/bodyandface - Hugging Face Hub Package Security Anal... - Socket",
+      "url": "https://socket.dev/huggingface/package/ench100/bodyandface",
+      "snippet": "Is ench100/bodyandface well maintained? We found that ench100/bodyandface demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "ench100 (Aleks Petrov) - Hugging Face",
+      "url": "https://huggingface.co/ench100/models",
+      "snippet": "Recent Activity updated a model about 13 hours ago ench100/bodyandface published a model 3 days ago ench100/bodyandface View all activity"
+    },
+    {
+      "title": "ench100/bodyandface at main - Hugging Face",
+      "url": "https://huggingface.co/ench100/bodyandface/tree/main",
+      "snippet": "Community Use this model main bodyandface 407 MB 1 contributor History: 124 commits ench100"
+    }
+  ]
+}

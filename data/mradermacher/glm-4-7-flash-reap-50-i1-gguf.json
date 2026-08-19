@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GLM-4.7-Flash-REAP-50-i1-GGUF",
+  "slug": "mradermacher-glm-4-7-flash-reap-50-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-50-i1-GGUF",
+  "created_at": "2026-08-14T07:14:54.000Z",
+  "updated_at": "2026-08-14T09:50:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "glm",
+    "glm4.7",
+    "MOE",
+    "pruning",
+    "compression",
+    "reap",
+    "cerebras",
+    "code",
+    "function-calling",
+    "agentic",
+    "en",
+    "base_model:Akicou/GLM-4.7-Flash-REAP-50",
+    "base_model:quantized:Akicou/GLM-4.7-Flash-REAP-50",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2300,
+  "trending_score": 0,
+  "parameters": 16048842944,
+  "parameters_human": "16.05B",
+  "storage_bytes": 180732075904,
+  "storage_human": "180.7 GB",
+  "base_model": "Akicou/GLM-4.7-Flash-REAP-50",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/GLM-4.7-Flash-REAP-50-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-50-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/GLM-4.7-Flash-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/GLM-4.7-Flash-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.7-Flash: How To Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/tutorials/glm-4.7-flash",
+      "snippet": "GLM-4.7-Flash is Z.ai&#x27;s new 30B MoE reasoning model built for local deployment, delivering best-in-class performance for coding, agentic workflows, and chat. It uses ~3.6B parameters, supports 200K context, and leads SWE-Bench, GPQA, and reasoning/chat benchmarks. GLM-4.7-Flash runs on 24GB RAM /VRAM/unified memory (32GB for full precision), and you can now fine-tune with Unsloth. To run GLM ..."
+    },
+    {
+      "title": "Run GLM-4.7-Flash Locally: Ollama, Mac & Windows Setup",
+      "url": "https://wavespeed.ai/blog/posts/glm-4-7-flash-local/",
+      "snippet": "A practical guide to running GLM-4.7-Flash locally, including hardware requirements, Ollama setup, GPU tuning, and real-world performance notes."
+    },
+    {
+      "title": "gaionaus/GLM-4.7-Flash-REAP-50_Q4_K_M_GGUF - GGUF Model | MyGGUF",
+      "url": "https://mygguf.com/model?id=gaionaus%2FGLM-4.7-Flash-REAP-50_Q4_K_M_GGUF",
+      "snippet": "GLM-4.7-Flash-REAP-50 Quantized GGUF (Q4 K M) This repository contains a Q4 K M quantized GGUF version of the GLM-4.7-Flash-REAP-50 model, originally developed by Akicou."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-unet-r50-random-fold2",
+  "slug": "sugam24-geonusaf-unet-r50-random-fold2",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-unet-r50-random-fold2",
+  "created_at": "2026-08-17T06:48:33.000Z",
+  "updated_at": "2026-08-17T08:56:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "segmentation-models-pytorch",
+  "languages": [],
+  "tags": [
+    "segmentation-models-pytorch",
+    "semantic-segmentation",
+    "remote-sensing",
+    "unet",
+    "resnet50",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9647588668,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sugam24/geonusaf-unet-r50-block-fold0 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-unet-r50-block-fold0",
+      "snippet": "sugam24 / geonusaf-unet-r50-block-fold0 like 0 segmentation-models-pytorch semantic-segmentation remote-sensing unet resnet50 geonusaf Model card FilesFiles and versions xet Community Copy to bucket new GeoNUSAF - U-Net (ResNet-50) - block split, fold 0 Per-class (validation)"
+    },
+    {
+      "title": "sugam24 (Sugam Dahal) - Hugging Face",
+      "url": "https://huggingface.co/sugam24",
+      "snippet": "sugam24/result published a model about 1 hour ago sugam24/result updated a model 5 days ago sugam24/fine_tuned_gpt2 View all activity"
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Cross-Model-Generalization-in-AI-Text-Detection-Comparing ... - GitHub",
+      "url": "https://github.com/Mamenuveve2201/Cross-Model-Generalization-in-AI-Text-Detection-Comparing-Feature-Based-and-Neural-Approaches/blob/main/models/random_forest/fold2_model.pkl",
+      "snippet": "A study comparing feature-based classical ML classifiers against neural detectors for cross-model AI text detection. Uses 5,981 samples across 5 LLMs and a leave-one-model-out evaluation protocol. ..."
+    },
+    {
+      "title": "GitHub - huggingface/pytorch-image-models: The largest collection of ...",
+      "url": "https://github.com/huggingface/pytorch-image-models",
+      "snippet": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (V..."
+    }
+  ]
+}

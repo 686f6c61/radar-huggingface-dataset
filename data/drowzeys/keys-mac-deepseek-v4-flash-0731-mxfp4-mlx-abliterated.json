@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-Mac-DeepSeek-V4-Flash-0731-MXFP4-MLX-Abliterated",
+  "slug": "drowzeys-keys-mac-deepseek-v4-flash-0731-mxfp4-mlx-abliterated",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-Mac-DeepSeek-V4-Flash-0731-MXFP4-MLX-Abliterated",
+  "created_at": "2026-08-15T05:33:12.000Z",
+  "updated_at": "2026-08-15T12:38:08.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4",
+    "deepseek",
+    "deepseek-v4",
+    "deepseek-v4-flash",
+    "0731",
+    "dspark",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "mxfp4",
+    "mxfp8",
+    "omlx",
+    "apple-silicon",
+    "mac-studio",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 59059787710,
+  "parameters_human": "59.06B",
+  "storage_bytes": 167083142362,
+  "storage_human": "167.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keys-Mac-DeepSeek-V4-Flash-0731-MXFP4-MLX-Abliterated",
+      "url": "https://huggingface.co/drowzeys/keys-Mac-DeepSeek-V4-Flash-0731-MXFP4-MLX-Abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - drowzeys/keys-Mac-DeepSeek-V4-Flash-DSpark-0731-MXFP4-MLX ...",
+      "url": "https://github.com/drowzeys/keys-Mac-DeepSeek-V4-Flash-DSpark-0731-MXFP4-MLX-49tps/blob/main/",
+      "snippet": "Running DeepSeek-V4-Flash-0731 with DSpark speculative decoding natively on Apple Silicon (M3 Ultra) via oMLX, a compiled DSA Metal kernel, and the 4-bit MXFP4 checkpoint that keeps the MTP draft heads."
+    },
+    {
+      "title": "keys-Mac-DeepSeek-V4-Flash-DSpark-0731-MXFP4-MLX-Abliterated ... - GitHub",
+      "url": "https://github.com/drowzeys/keys-Mac-DeepSeek-V4-Flash-DSpark-0731-MXFP4-MLX-Abliterated-49tps/blob/main/bench/RESULTS.md",
+      "snippet": "Abliterated DeepSeek-V4-Flash-0731 + DSpark on Mac Studio — 49 tok/s, 32/32, 1M ctx. Weights: drowzeys/keys-Mac-DeepSeek-V4-Flash-0731-MXFP4-MLX-Abliterated - drowzeys/keys-Mac-DeepSeek-V4-Flash-DS..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Running DeepSeek‑V4‑Flash natively with Apple MLX on a ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/running-deepseekv4flash-natively-apple-mlx-128gb-m4-max-popescu-cvppe",
+      "snippet": "Can DeepSeek‑V4‑Flash run locally on a 128GB M4 Max MacBook Pro using Apple&#x27;s MLX stack—not GGUF, not a cloud endpoint, and not a multi-machine setup? The answer is yes."
+    }
+  ]
+}

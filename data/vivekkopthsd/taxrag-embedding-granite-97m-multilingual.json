@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "id": "vivekkopthsd/taxrag-embedding-granite-97m-multilingual",
+  "slug": "vivekkopthsd-taxrag-embedding-granite-97m-multilingual",
+  "author": "vivekkopthsd",
+  "url": "https://huggingface.co/vivekkopthsd/taxrag-embedding-granite-97m-multilingual",
+  "created_at": "2026-08-17T23:06:15.000Z",
+  "updated_at": "2026-08-17T23:07:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "sentence-similarity",
+    "retrieval",
+    "matryoshka",
+    "multilingual",
+    "hindi",
+    "english",
+    "hinglish",
+    "legal",
+    "tax",
+    "finance",
+    "en",
+    "hi",
+    "base_model:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "base_model:finetune:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 97441152,
+  "parameters_human": "97.4M",
+  "storage_bytes": 220191239,
+  "storage_human": "220 MB",
+  "base_model": "ibm-granite/granite-embedding-97m-multilingual-r2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "TaxRAG bilingual retrieval (held-out slice eval)",
+      "dataset": "TaxRAG bilingual (EN/HI/Hinglish, 100+50+30 gold queries over 2,474 statute chunks)",
+      "metric": "EN Recall@5",
+      "value": 0.98
+    },
+    {
+      "task": "TaxRAG bilingual retrieval (held-out slice eval)",
+      "dataset": "TaxRAG bilingual (EN/HI/Hinglish, 100+50+30 gold queries over 2,474 statute chunks)",
+      "metric": "HI Recall@5",
+      "value": 0.94
+    },
+    {
+      "task": "TaxRAG bilingual retrieval (held-out slice eval)",
+      "dataset": "TaxRAG bilingual (EN/HI/Hinglish, 100+50+30 gold queries over 2,474 statute chunks)",
+      "metric": "Hinglish Recall@5",
+      "value": 0.5
+    },
+    {
+      "task": "TaxRAG bilingual retrieval (held-out slice eval)",
+      "dataset": "TaxRAG bilingual (EN/HI/Hinglish, 100+50+30 gold queries over 2,474 statute chunks)",
+      "metric": "Mean Recall@5",
+      "value": 0.8067
+    },
+    {
+      "task": "FiQA-2018 test (generalization gate, out-of-distribution)",
+      "dataset": "BeIR/fiqa",
+      "metric": "Recall@5",
+      "value": 0.537
+    },
+    {
+      "task": "FiQA-2018 test (generalization gate, out-of-distribution)",
+      "dataset": "BeIR/fiqa",
+      "metric": "MRR@5",
+      "value": 0.4061
+    }
+  ],
+  "sources": [
+    {
+      "title": "Granite Embedding - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/embedding",
+      "snippet": "Granite Embedding Paper Getting Started Intended Use The Granite Embedding 311m multilingual model is designed to produce fixed-length vector representations for a given text, which can be used for text similarity, retrieval, and search applications across multiple languages. It supports 200+ languages with enhanced support for 52 languages."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-embedding-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-embedding-models",
+      "snippet": "granite-embedding-97m-multilingual-r2 (97M parameters): A compact multilingual model with 384-dimensional embeddings supporting 200+ languages with a 32,768-token context window."
+    },
+    {
+      "title": "docs/granite/docs/models/embedding.mdx at main - GitHub",
+      "url": "https://github.com/ibm-granite/docs/blob/main/granite/docs/models/embedding.mdx",
+      "snippet": "The Granite Embedding 311m multilingual model is designed to produce fixed-length vector representations for a given text, which can be used for text similarity, retrieval, and search applications across multiple languages."
+    },
+    {
+      "title": "vivekkopthsd/embeddinggemma-300m-taxrag-ft · Hugging Face",
+      "url": "https://huggingface.co/vivekkopthsd/embeddinggemma-300m-taxrag-ft",
+      "snippet": "The multilingual retrieval encoder for Indian tax & finance — English, Hindi, and Hinglish, one model. Fine-tuned from google/embeddinggemma-300m on 29.4k curated retrieval pairs from the Income-Tax Act, 2025 plus financial-QA data."
+    },
+    {
+      "title": "ibm-granite/granite-embedding-107m-multilingual · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-embedding-107m-multilingual",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASethi04/MolmoAct2-BimanualYAM-freshbase-raw-umi75-teleop25-ee20",
+  "slug": "asethi04-molmoact2-bimanualyam-freshbase-raw-umi75-teleop25-ee20",
+  "author": "ASethi04",
+  "url": "https://huggingface.co/ASethi04/MolmoAct2-BimanualYAM-freshbase-raw-umi75-teleop25-ee20",
+  "created_at": "2026-08-18T00:39:42.000Z",
+  "updated_at": "2026-08-18T00:40:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "bimanual",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 5591928368,
+  "parameters_human": "5.59B",
+  "storage_bytes": 11483645224,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "ASethi04/MolmoAct2-BimanualYAM-oranges-12k · Hugging Face",
+      "url": "https://huggingface.co/ASethi04/MolmoAct2-BimanualYAM-oranges-12k",
+      "snippet": "Instructions to use ASethi04/MolmoAct2-BimanualYAM-oranges-12k with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "MolmoAct2-BimanualYAM-oranges-12k-fixed-nodrop - Hugging Face",
+      "url": "https://huggingface.co/ASethi04/MolmoAct2-BimanualYAM-oranges-12k-fixed-nodrop",
+      "snippet": "MolmoAct2-BimanualYAM-oranges-12k-fixed-nodrop ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ASethi04/MolmoAct2-BimanualYAM-oranges-12k-noaffine · Hugging Face",
+      "url": "https://huggingface.co/ASethi04/MolmoAct2-BimanualYAM-oranges-12k-noaffine",
+      "snippet": "MolmoAct2-BimanualYAM-oranges-12k-noaffine ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "allenai/MolmoAct2-BimanualYAM · Hugging Face",
+      "url": "https://huggingface.co/allenai/MolmoAct2-BimanualYAM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

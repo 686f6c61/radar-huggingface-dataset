@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Discovery",
+  "slug": "reaperdoesntknow-discovery",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Discovery",
+  "created_at": "2026-03-09T19:56:07.000Z",
+  "updated_at": "2026-08-18T13:15:21.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moa_metric",
+    "trl",
+    "sft",
+    "metric-attention",
+    "mixture-of-attentions",
+    "triangle-inequality",
+    "blackhole-rope",
+    "discrepancy-calculus",
+    "discover",
+    "convergentintel",
+    "text-generation",
+    "en",
+    "dataset:nohurry/Opus-4.6-Reasoning-3000x-filtered",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:yahma/alpaca-cleaned",
+    "license:cc",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1928,
+  "trending_score": 0,
+  "parameters": 70569408,
+  "parameters_human": "70.6M",
+  "storage_bytes": 282316292,
+  "storage_human": "282 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Discovery · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Discovery",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow / Discovery Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/reaperdoesntknow/Discovery/3fc7bb6d6f44bcb82d7246a6ad596aeba561b959/overview",
+      "snippet": "Discover potential threats in the reaperdoesntknow / Discovery model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "reaperdoesntknow / Discovery - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/reaperdoesntknow/Discovery/e4a0f0dce5558101a9c8b62abc5e670c77306f68/overview",
+      "snippet": "Discover potential threats in the reaperdoesntknow / Discovery model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "DiscoverLM - a reaperdoesntknow Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/reaperdoesntknow/discoverlm",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from reaperdoesntknow"
+    },
+    {
+      "title": "reaperdoesntknow (Convergent Intelligence) - Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/datasets",
+      "snippet": "About Us Mission Convergent Intelligence advances original research in discrepancy calculus, adaptive systems, and applied AI, translating those insights into client controls, playbooks, and le..."
+    }
+  ]
+}

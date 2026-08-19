@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Muse-Glimmer-30B-CoreAI",
+  "slug": "mlboydaisuke-muse-glimmer-30b-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Muse-Glimmer-30B-CoreAI",
+  "created_at": "2026-08-15T09:40:42.000Z",
+  "updated_at": "2026-08-16T17:19:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "muse_glimmer",
+    "coreai",
+    "aimodel",
+    "apple-silicon",
+    "on-device",
+    "muse-glimmer",
+    "text-generation",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:finetune:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 645,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16374572182,
+  "storage_human": "16.4 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-models/Muse-Glimmer-30B · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your ...",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "snippet": "Muse Glimmer is a 30-billion-parameter open agentic model from Meta Superintelligence Labs, optimized for always-on local workflows on consumer hardware."
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, served on vLLM with native Onyx tool-calling and reasoning parsers."
+    },
+    {
+      "title": "meta / muse-glimmer-30b",
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-muse-glimmer-30b",
+      "snippet": "meta / muse-glimmer-30b Muse Glimmer Description Muse Glimmer is an approximately 29.6B-parameter dense multimodal causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware."
+    }
+  ]
+}

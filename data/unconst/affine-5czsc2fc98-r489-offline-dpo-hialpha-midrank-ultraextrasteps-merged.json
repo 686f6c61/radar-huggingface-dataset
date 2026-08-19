@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r489-offline-dpo-hialpha-midrank-ultraextrasteps-merged",
+  "slug": "unconst-affine-5czsc2fc98-r489-offline-dpo-hialpha-midrank-ultraextrasteps-merged",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r489-offline-dpo-hialpha-midrank-ultraextrasteps-merged",
+  "created_at": "2026-08-16T04:01:48.000Z",
+  "updated_at": "2026-08-16T04:29:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 117,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconst/Affine-5czsc2fc98-r29-merged · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r29-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r22-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r22-lora",
+      "snippet": "Instructions to use unconst/Affine-5czsc2fc98-r22-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use unconst/Affine-5czsc2fc98-r22-lora with PEFT:"
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r69-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r69-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mermaid Chart",
+      "url": "https://mermaid.ai/",
+      "snippet": "\"Mermaid solved a major portability problem for us, making charts behave like code. The real game-changer is using AI to analyze our software so we can visualize complex logic instantly.\" \"From load balancers to Kubernetes, Mermaid helps me document architecture with my team: Markdown-native, version-controlled, and easy to share.\""
+    },
+    {
+      "title": "Releases · toeverything/AFFiNE - GitHub",
+      "url": "https://github.com/toeverything/AFFiNE/releases",
+      "snippet": "This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit - **Bug Fixes** - Improved connectivity for AI services configured with a global location while preserving support for regional locations. - Failed audio transcription jobs can now be restarted without recreating the job."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "silveroxides/repro-temp",
+  "slug": "silveroxides-repro-temp",
+  "author": "silveroxides",
+  "url": "https://huggingface.co/silveroxides/repro-temp",
+  "created_at": "2026-07-01T15:44:47.000Z",
+  "updated_at": "2026-08-18T03:21:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98099526,
+  "storage_human": "98 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "silveroxides/repro-temp · Hugging Face",
+      "url": "https://huggingface.co/silveroxides/repro-temp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "silveroxides/repro-temp at main - Hugging Face",
+      "url": "https://huggingface.co/silveroxides/repro-temp/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "silveroxides (Silver) · GitHub",
+      "url": "https://github.com/silveroxides",
+      "snippet": "A graph representing silveroxides&#x27;s contributions from August 17, 2025 to August 17, 2026. The contributions are 89% commits, 10% pull requests, 1% issues, 0% code review."
+    },
+    {
+      "title": "silveroxides (Silver) / Repositories · GitHub",
+      "url": "https://github.com/silveroxides?tab=repositories",
+      "snippet": "silveroxides has 141 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "silveroxides&#x27;s gists · GitHub",
+      "url": "https://gist.github.com/silveroxides",
+      "snippet": "1 file 0 forks 0 comments 0 stars silveroxides / compare_models_v2.py Created 11 months ago Model Comparison that outputs html import torch import pandas as pd from safetensors import safe_open import argparse from typing import Dict import webbrowser import os import colorsys from pathlib import Path 1 file 0 forks 0 comments 0 stars ..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Okejonah1/obolo-ai-translation",
+  "slug": "okejonah1-obolo-ai-translation",
+  "author": "Okejonah1",
+  "url": "https://huggingface.co/Okejonah1/obolo-ai-translation",
+  "created_at": "2026-08-16T20:03:36.000Z",
+  "updated_at": "2026-08-16T21:22:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ann"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "translation",
+    "obolo",
+    "niger-congo",
+    "low-resource-language",
+    "ai-tool",
+    "en",
+    "ann",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 483905536,
+  "parameters_human": "483.9M",
+  "storage_bytes": 3873792498,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Okejonah1/obolo-translation-system · Hugging Face",
+      "url": "https://huggingface.co/Okejonah1/obolo-translation-system",
+      "snippet": "Okejonah1 / obolo-translation-system like 0 m2m_100 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Okejonah1 - GitHub",
+      "url": "https://github.com/Okejonah1/",
+      "snippet": "Building digital language resources, educational tools, and AI technologies for the Obolo language."
+    },
+    {
+      "title": "Translation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=translation",
+      "snippet": "Explore machine learning models. huihui-ai/Huihui-Hunyuan-MT-Chimera-7B-abliterated"
+    },
+    {
+      "title": "translation-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/translation-model",
+      "snippet": "Text file language translation app that translates .txt, .csv, and .xlsx files on the local device using lightweight, open-source LLMs from Hugging Face (no internet connection needed). Uses batch processing and token chunking which provides the ability to translate large file sizes while preserving ..."
+    },
+    {
+      "title": "The first AI model that translates 100 languages without relying on ...",
+      "url": "https://ai.meta.com/blog/introducing-many-to-many-multilingual-machine-translation/",
+      "snippet": "Facebook AI is introducing M2M-100, the first multilingual machine translation model that can translate between any pair of 100 languages without relying on English data."
+    }
+  ]
+}

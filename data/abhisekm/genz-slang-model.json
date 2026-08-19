@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "abhisekm/genz-slang-model",
+  "slug": "abhisekm-genz-slang-model",
+  "author": "abhisekm",
+  "url": "https://huggingface.co/abhisekm/genz-slang-model",
+  "created_at": "2026-08-16T03:42:24.000Z",
+  "updated_at": "2026-08-18T09:54:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "genz",
+    "slang",
+    "lora",
+    "qlora",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 9273823324,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhisekm/genz-slang-model · Hugging Face",
+      "url": "https://huggingface.co/abhisekm/genz-slang-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abhisekm (Abhisek Mishra) - Hugging Face",
+      "url": "https://huggingface.co/abhisekm/models",
+      "snippet": "abhisekm&#x27;s models2 Sort: Recently updated abhisekm/genz-slang-model 2B•Updated about 22 hours ago• 1"
+    },
+    {
+      "title": "genz-slang-model-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/abhisekm/genz-slang-model-lora",
+      "snippet": "Run genz-slang-model-lora with FriendliAI inference. A Qwen2.5-1.5B-Instruct fine-tune (QLoRA) that talks in genz internet slang."
+    },
+    {
+      "title": "GenZ LLM - Fine-Tuned Qwen Model for Gen Z Slang",
+      "url": "https://agentdish.com/agents/genz-llm",
+      "snippet": "The page clearly describes an AI model project, shows the training approach (SFT followed by GRPO), and includes enough repository content to understand what was built, how it was trained, and where to find the inference demo and data. It is a useful public listing for people exploring lightweight model post-training and style tuning."
+    },
+    {
+      "title": "GitHub - innovateX296/GenZ-Slang-Normalizer-AI-Model-for-Translating ...",
+      "url": "https://github.com/innovateX296/GenZ-Slang-Normalizer-AI-Model-for-Translating-Slang-to-Formal-English",
+      "snippet": "GenZ Slang Normalizer is an AI-powered text transformation tool that converts Gen Z slang, abbreviations, and informal phrases into clear, formal English. Built with a fine-tuned T5 Transformer mod..."
+    }
+  ]
+}

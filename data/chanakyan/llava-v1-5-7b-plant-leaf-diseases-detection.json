@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Chanakyan/LLaVA-v1.5-7B-Plant-Leaf-Diseases-Detection",
+  "slug": "chanakyan-llava-v1-5-7b-plant-leaf-diseases-detection",
+  "author": "Chanakyan",
+  "url": "https://huggingface.co/Chanakyan/LLaVA-v1.5-7B-Plant-Leaf-Diseases-Detection",
+  "created_at": "2026-08-18T03:11:04.000Z",
+  "updated_at": "2026-08-18T03:11:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2502.14044",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 7063427072,
+  "parameters_human": "7.06B",
+  "storage_bytes": 28254299987,
+  "storage_human": "28.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLaVA-v1.5-7B-Plant-Leaf-Diseases-Detection - Hugging Face",
+      "url": "https://huggingface.co/YuchengShi/LLaVA-v1.5-7B-Plant-Leaf-Diseases-Detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLaVA-v1.5-7B-Plant-Leaf-Diseases-Detection - Hugging Face",
+      "url": "https://huggingface.co/YuchengShi/LLaVA-v1.5-7B-Plant-Leaf-Diseases-Detection/blob/main/README.md",
+      "snippet": "This model is a fine-tuned multimodal foundation model based on LLaVA-1.5-7B-hf, optimized for detecting and explaining plant leaf diseases using the Plant disease dataset."
+    },
+    {
+      "title": "GitHub - tech3space/plant_dataset_fine_tuning: This presentation covers ...",
+      "url": "https://github.com/Tech3Space/plant_dataset_fine_tuning",
+      "snippet": "The model, hosted on Hugging Face at YuchengShi/LLaVA-v1.5-7B-Plant-Leaf-Diseases-Detection, is a multimodal AI tailored for identifying and explaining diseases in plant leaves."
+    },
+    {
+      "title": "Leaf-Disease-Detection/plant-disease-ml at main · Parivesh09 ... - GitHub",
+      "url": "https://github.com/Parivesh09/Leaf-Disease-Detection/tree/main/plant-disease-ml",
+      "snippet": "A Flask-based microservice that provides plant disease detection using the fine-tuned LLaVA-1.5-7B model."
+    },
+    {
+      "title": "YuchengShi/LLaVA-v1.5-7B-Plant-Leaf-Diseases-Detection: Model synced ...",
+      "url": "https://dev.modelhub.org.cn/YuchengShi/LLaVA-v1.5-7B-Plant-Leaf-Diseases-Detection",
+      "snippet": "This model is a fine-tuned multimodal foundation model based on LLaVA-1.5-7B-hf, optimized for detecting and explaining plant leaf diseases using the Plant disease dataset."
+    }
+  ]
+}

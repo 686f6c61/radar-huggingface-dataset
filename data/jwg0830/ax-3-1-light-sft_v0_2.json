@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "jwg0830/AX-3.1-Light-sft_v0_2",
+  "slug": "jwg0830-ax-3-1-light-sft_v0_2",
+  "author": "jwg0830",
+  "url": "https://huggingface.co/jwg0830/AX-3.1-Light-sft_v0_2",
+  "created_at": "2026-08-17T13:17:39.000Z",
+  "updated_at": "2026-08-17T13:19:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "lora-merged",
+    "korean",
+    "k-ai-leaderboard",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:finetune:skt/A.X-3.1-Light",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635608,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Center | Official Support | ASUS Global",
+      "url": "https://www.asus.com/support/download-center/",
+      "snippet": "ASUS Download Center Download the latest drivers, software, firmware and user manuals."
+    },
+    {
+      "title": "skt/A.X-3.1-Light · Hugging Face",
+      "url": "https://huggingface.co/skt/A.X-3.1-Light",
+      "snippet": "A.X 3.1 Light (pronounced \"A dot X\") is a light weight LLM optimized for Korean-language understanding and enterprise deployment. This sovereign AI model was developed entirely in-house by SKT, encompassing model architecture, data curation, and training, all carried out on SKT&#x27;s proprietary supercomputing infrastructure, TITAN."
+    },
+    {
+      "title": "PDF Model AX, Rev 6 December 2023 - Greenheck-USA",
+      "url": "https://content.greenheck.com/public/DAMProd/Original/10002/AX_catalog.pdf",
+      "snippet": "High Performance Axial Fans Greenheck&#x27;s high performance axial fans, Model AX, are direct driven axials designed for inline air ventilation in commercial or industrial buildings. The casing design and construction are well suited to indoor or outdoor applications and can be easily installed in ducted or non-ducted systems. The AX is designed to reduce operating costs with improved efficiency ..."
+    },
+    {
+      "title": "Gemini 3.1 Flash-Lite | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite",
+      "snippet": "Gemini 3.1 Flash-Lite is our most cost-efficient Gemini model, optimized for low latency use cases for high-volume, cost-sensitive LLM traffic. It provides a significant quality increase over Gemini 2.5 Flash-Lite, matching Gemini 2.5 Flash performance across key capability areas: Improved response quality: Aims to match 2.5 Flash performance."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

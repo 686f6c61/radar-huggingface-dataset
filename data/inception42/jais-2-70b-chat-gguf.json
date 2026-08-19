@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "inception42/Jais-2-70B-Chat-GGUF",
+  "slug": "inception42-jais-2-70b-chat-gguf",
+  "author": "inception42",
+  "url": "https://huggingface.co/inception42/Jais-2-70B-Chat-GGUF",
+  "created_at": "2026-02-09T06:53:21.000Z",
+  "updated_at": "2026-08-18T09:58:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "text-generation",
+    "ar",
+    "en",
+    "arxiv:2608.13580",
+    "base_model:inception42/Jais-2-70B-Chat",
+    "base_model:quantized:inception42/Jais-2-70B-Chat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 72039704576,
+  "parameters_human": "72.04B",
+  "storage_bytes": 531050729344,
+  "storage_human": "531.1 GB",
+  "base_model": "inceptionai/Jais-2-70B-Chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inceptionai/Jais-2-70B-Chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/inceptionai/Jais-2-70B-Chat-GGUF",
+      "snippet": "Jais-2-70B-Chat Model is trained from scratch on Arabic and English data and is powered by a custom Arabic-centric vocabulary, it efficiently captures Modern Standard Arabic, regional dialects, and mixed Arabic-English code-switching."
+    },
+    {
+      "title": "inceptionai/Jais-2-70B-Chat · Hugging Face",
+      "url": "https://huggingface.co/inceptionai/Jais-2-70B-Chat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inception42 | AI | Agentic AI for Sovereign Enterprise",
+      "url": "https://inception42.ai/",
+      "snippet": "Inception AI deploys agentic AI at sovereign scale, built for enterprises and governments with the governance, security, and control national rollouts demand."
+    },
+    {
+      "title": "Jais Adapted 70B Chat by inceptionai — VRAM 277.4GB, 4K context | LLM ...",
+      "url": "https://llm-explorer.com/model/inceptionai%2Fjais-adapted-70b-chat,2ODkPboM4FTfxB18mZ1gif",
+      "snippet": "Jais Adapted 70B Chat is an open-source language model by inceptionai. Features: 70b LLM, VRAM: 277.4GB, Context: 4K, License: proprietary, LLM Explorer Score: 0.14."
+    },
+    {
+      "title": "Model Details - MyGGUF",
+      "url": "https://mygguf.com/model?id=inceptionai%2FJais-2-70B-Chat-GGUF",
+      "snippet": "GGUF model details and download"
+    }
+  ]
+}

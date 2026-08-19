@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4",
+  "slug": "ryanyr-grpo-dapo-qwen3-1-7b-base-mbs128-n4",
+  "author": "RyanYr",
+  "url": "https://huggingface.co/RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4",
+  "created_at": "2026-04-20T13:31:43.000Z",
+  "updated_at": "2026-08-18T05:47:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21892452152,
+  "storage_human": "21.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4 · Hugging Face",
+      "url": "https://huggingface.co/RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4 at main - Hugging Face",
+      "url": "https://huggingface.co/RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4/tree/main",
+      "snippet": "RyanYr / grpo-dapo-qwen3-1.7B-Base-mbs128-n4 like 0 Model card FilesFiles and versions xet Community Copy to bucket new main grpo-dapo-qwen3-1.7B-Base-mbs128-n4 21.9 GB Ctrl+K Ctrl+K 1 contributor History:11 commits RyanYr Save model at global step 100 cd9f063 verified3 months ago .gitattributes Safe 1.52 kBinitial commit3 months ago config ..."
+    },
+    {
+      "title": "Damacol/ryanyr-grpo-dapo-qwen3-1.7b-base-mbs128-n4 - GitHub",
+      "url": "https://github.com/Damacol/ryanyr-grpo-dapo-qwen3-1.7b-base-mbs128-n4",
+      "snippet": "RyanYr/grpo-dapo-qwen3-1.7B-Base-mbs128-n4 - Private, Uncensored AI for Real Creators and Devs Deploy {MODEL} without cloud dependencies. Uncensored, transparent, and optimized for privacy-conscious workflows."
+    },
+    {
+      "title": "RyanYr/grpo-dapo_shuffled-005_offline-grpo-dapo-qwen3-1.7B-Base-mbs...",
+      "url": "https://www.selectdataset.com/dataset/db7d9895774cb773d18b2eea835db29d/ryanyr-grpo-dapo-shuffled-005-offline-grpo-dapo-qwen3-1.7b-base-mbs128-n4-mbs128-n4-matheval",
+      "snippet": "Its features include data source, question, solution, answer, prompt (including role and content), reward model (comprising ground-truth answer and style), and response list. The shards are categorized into two groups: mixed and hard, with numerical values ranging from 10 to 100 that may represent difficulty levels or data proportions."
+    },
+    {
+      "title": "Damacol/ryanyr-grpo-dapo-qwen3-4b-base-mbs128-n4 - GitHub",
+      "url": "https://github.com/Damacol/ryanyr-grpo-dapo-qwen3-4b-base-mbs128-n4/releases",
+      "snippet": "Run RyanYr/grpo-dapo-qwen3-4B-Base-mbs128-n4 privately via Venice.ai - Zero tracking, uncensored - Releases · Damacol/ryanyr-grpo-dapo-qwen3-4b-base-mbs128-n4"
+    }
+  ]
+}

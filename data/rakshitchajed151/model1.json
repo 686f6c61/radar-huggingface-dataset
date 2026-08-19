@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RakshitChajed151/model1",
+  "slug": "rakshitchajed151-model1",
+  "author": "RakshitChajed151",
+  "url": "https://huggingface.co/RakshitChajed151/model1",
+  "created_at": "2026-08-17T05:54:18.000Z",
+  "updated_at": "2026-08-17T05:54:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RakshitChajed151/FUTURE_ML_01",
+      "url": "https://github.com/RakshitChajed151/FUTURE_ML_01",
+      "snippet": "Contribute to RakshitChajed151/FUTURE_ML_01 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - RakshitChajed151/AI-JOB-INTERVIEW",
+      "url": "https://github.com/RakshitChajed151/AI-JOB-INTERVIEW",
+      "snippet": "An intelligent interview preparation platform that helps you practice interviews with AI-powered conversations, analyze your resume, and get detailed performance summaries. Built with modern web technologies and powered by Open AI API."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Free AI Detector & AI Checker - For ChatGPT, GPT-5, Gemini & Claude",
+      "url": "https://phrasly.ai/ai-detector",
+      "snippet": "Our AI detector and AI checker are 99.8% accurate and 100% free to use. Check any text for AI-generated content from ChatGPT, Claude, Gemini, and more. Used by over 3 million users Your text is never stored or shared Try an example: Model 7.0·May 2026 ChatGPT Claude 4 Human Grok Gemini Paste Text Upload File Try also Plagiarism Checker Check ..."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

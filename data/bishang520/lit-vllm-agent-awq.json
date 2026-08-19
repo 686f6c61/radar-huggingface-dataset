@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "bishang520/Lit-VLLM-Agent-AWQ",
+  "slug": "bishang520-lit-vllm-agent-awq",
+  "author": "bishang520",
+  "url": "https://huggingface.co/bishang520/Lit-VLLM-Agent-AWQ",
+  "created_at": "2026-08-17T12:04:19.000Z",
+  "updated_at": "2026-08-17T12:08:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "awq",
+    "sft",
+    "dpo",
+    "academic",
+    "rag",
+    "citation",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2-7B",
+    "base_model:quantized:Qwen/Qwen2-7B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7613767168,
+  "parameters_human": "7.61B",
+  "storage_bytes": 5578579193,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen2-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
+      "url": "https://github.com/vllm-project/vllm",
+      "snippet": "About vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects built and maintained by a diverse community of many dozens of academic institutions and companies from over 2000 contributors. vLLM is fast with:"
+    },
+    {
+      "title": "llm-compressor/examples/awq/README.md at main · vllm-project ... - GitHub",
+      "url": "https://github.com/vllm-project/llm-compressor/blob/main/examples/awq/README.md",
+      "snippet": "Activation Aware Quantization (AWQ) is a state-of-the-art technique to quantize the weights of large language models which involves using a small calibration dataset to calibrate the model. The AWQ algorithm utilizes calibration data to derive scaling factors which reduce the dynamic range of weights while minimizing accuracy loss to the most salient weight values. The AWQ implementation found ..."
+    },
+    {
+      "title": "vLLM",
+      "url": "https://vllm.ai/",
+      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models faster with state-of-the-art performance. Easy, fast, and cost-efficient LLM serving for everyone."
+    },
+    {
+      "title": "AutoAWQ - vLLM",
+      "url": "https://docs.vllm.ai/en/latest/features/quantization/auto_awq/",
+      "snippet": "This functionality has been adopted by the vLLM project in llm-compressor. For the recommended quantization workflow, please see the AWQ examples in llm-compressor. For more details on the deprecation, refer to the original AutoAWQ repository. To create a new 4-bit quantized model, you can leverage AutoAWQ."
+    },
+    {
+      "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and ...",
+      "url": "https://hanlab.mit.edu/projects/awq",
+      "snippet": "🔥 NVIDIA TensorRT-LLM, AMD, Google Vertex AI, Amazon Sagemaker, Intel Neural Compressor, FastChat, vLLM, HuggingFace TGI, and LMDeploy adopt AWQ to improve LLM serving efficiency. Our AWQ models on HuggingFace has received over 6 million downloads."
+    }
+  ]
+}

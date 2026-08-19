@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "shadowrock-io/Unlimited-OCR-Community-FP8-Dynamic",
+  "slug": "shadowrock-io-unlimited-ocr-community-fp8-dynamic",
+  "author": "shadowrock-io",
+  "url": "https://huggingface.co/shadowrock-io/Unlimited-OCR-Community-FP8-Dynamic",
+  "created_at": "2026-08-18T05:06:56.000Z",
+  "updated_at": "2026-08-18T05:12:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "unlimited-ocr",
+    "fp8",
+    "w8a8",
+    "compressed-tensors",
+    "llm-compressor",
+    "ocr",
+    "document-parsing",
+    "vision-language",
+    "moe",
+    "quantized",
+    "8-bit",
+    "image-text-to-text",
+    "custom_code",
+    "multilingual",
+    "base_model:baidu/Unlimited-OCR",
+    "base_model:quantized:baidu/Unlimited-OCR",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 4074568080,
+  "storage_human": "4.1 GB",
+  "base_model": "baidu/Unlimited-OCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Grounded document OCR (parity vs BF16)",
+      "dataset": "uocr-quant synthetic document fixtures (invoice, memo, table report)",
+      "metric": "Mean CER vs BF16 (greedy, grounding prompt)",
+      "value": 0
+    },
+    {
+      "task": "Grounded document OCR (parity vs BF16)",
+      "dataset": "uocr-quant synthetic document fixtures (invoice, memo, table report)",
+      "metric": "Max per-fixture CER vs BF16",
+      "value": 0
+    },
+    {
+      "task": "Grounded document OCR (parity vs BF16)",
+      "dataset": "uocr-quant synthetic document fixtures (invoice, memo, table report)",
+      "metric": "Decode throughput (tok/s, vLLM 0.26.0, RTX 5070 Ti)",
+      "value": 39.36
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - DorianGallo/unlimted-OCR: [AI/vision] Unlimited OCR processing ...",
+      "url": "https://github.com/DorianGallo/unlimted-OCR",
+      "snippet": "It is now available at Hugging Face Spaces. [2026/06/23] 📄 Our paper is now available on arXiv. [2026/06/23] 🤝 Thanks to the ModelScope community for their support. Our model is now available at ModelScope. [2026/06/22] 🚀 We present Unlimited-OCR, aiming to push Deepseek-OCR one step further."
+    },
+    {
+      "title": "unlimited-ocr/README.md at main · aarjav/unlimited-ocr · GitHub",
+      "url": "https://github.com/aarjav/unlimited-ocr/blob/main/README.md",
+      "snippet": "Release [2026/06/23] 📄 Our paper is now available on arXiv. [2026/06/23] 🤝 Thanks to the ModelScope community for their support. Our model is now available at ModelScope. [2026/06/22] 🚀 We present Unlimited-OCR, aiming to push Deepseek-OCR one step further."
+    },
+    {
+      "title": "Unlimited-OCR: Baidu Just Solved the Problem Every Document AI Model ...",
+      "url": "https://medium.com/@yashkamra11102004/unlimited-ocr-baidu-just-solved-the-problem-every-document-ai-model-was-quietly-ignoring-6a25f401d44d",
+      "snippet": "Unlimited-OCR: Baidu Just Solved the Problem Every Document AI Model Was Quietly Ignoring A 3-billion-parameter model that never gets slower, no matter how many pages you feed it — and why that …"
+    },
+    {
+      "title": "sahilchachra/unlimited-ocr-mxfp8-mlx · Hugging Face",
+      "url": "https://huggingface.co/sahilchachra/unlimited-ocr-mxfp8-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shadowrock-io (ShadowRock) - Hugging Face",
+      "url": "https://huggingface.co/shadowrock-io",
+      "snippet": "Org profile for ShadowRock on Hugging Face, the AI community building the future."
+    }
+  ]
+}

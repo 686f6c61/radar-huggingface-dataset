@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jackson44/tourism-captioning-student-smoketest",
+  "slug": "jackson44-tourism-captioning-student-smoketest",
+  "author": "Jackson44",
+  "url": "https://huggingface.co/Jackson44/tourism-captioning-student-smoketest",
+  "created_at": "2026-08-16T06:24:17.000Z",
+  "updated_at": "2026-08-17T18:09:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 239195904,
+  "parameters_human": "239.2M",
+  "storage_bytes": 1913671040,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can we use generative AI for tourism research? A guide ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0261517726000786",
+      "snippet": "Can we use generative AI for tourism research? A guide to applying and validating large language models for text analytics"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=claude",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Models - Claude API Reference",
+      "url": "https://platform.claude.com/docs/en/api/models",
+      "snippet": "API reference for Models endpoints RFC 3339 datetime string representing the time at which the model was released. May be set to an epoch value if the release date is unknown."
+    },
+    {
+      "title": "Free AI Detector - Instant AI Content Check, No Sign-Up (2026)",
+      "url": "https://aitextools.com/ai-detector",
+      "snippet": "Check any text for AI writing in seconds. Free AI detector with sentence-level scoring, no sign-up, no word limits. Works on ChatGPT, Claude, Gemini & more."
+    },
+    {
+      "title": "Claude models in Microsoft Foundry - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/claude-models",
+      "snippet": "Discover Claude models in Microsoft Foundry. Compare available models, capabilities, quotas, and supported regions to choose the right one for your AI use case."
+    }
+  ]
+}

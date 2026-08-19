@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Daemons-Q/qsh-finance-aml-gbm",
+  "slug": "daemons-q-qsh-finance-aml-gbm",
+  "author": "Daemons-Q",
+  "url": "https://huggingface.co/Daemons-Q/qsh-finance-aml-gbm",
+  "created_at": "2026-08-03T05:33:53.000Z",
+  "updated_at": "2026-08-16T13:35:46.000Z",
+  "license": "cdla-sharing-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "quantum-safe",
+    "privacy-preserving",
+    "finance-aml",
+    "onnxruntime-web",
+    "tabular-classification",
+    "arxiv:2412.00241",
+    "arxiv:2402.08593",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32744604,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

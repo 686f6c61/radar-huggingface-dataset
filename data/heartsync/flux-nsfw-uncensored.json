@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Heartsync/Flux-NSFW-uncensored",
+  "slug": "heartsync-flux-nsfw-uncensored",
+  "author": "Heartsync",
+  "url": "https://huggingface.co/Heartsync/Flux-NSFW-uncensored",
+  "created_at": "2025-05-05T14:10:34.000Z",
+  "updated_at": "2025-05-05T14:21:20.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "en",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:finetune:black-forest-labs/FLUX.1-dev",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 455,
+  "downloads_30d": 0,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 691976896,
+  "storage_human": "692 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heartsync/Flux-NSFW-uncensored · Hugging Face",
+      "url": "https://huggingface.co/Heartsync/Flux-NSFW-uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Heartsync/Flux-NSFW-uncensored at main",
+      "url": "https://huggingface.co/Heartsync/Flux-NSFW-uncensored/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flux-NSFW-uncensored - 开源模型 - Heartsync - OpenCSG - text to image ...",
+      "url": "https://opencsg.com/models/AIWizards/Flux-NSFW-uncensored",
+      "snippet": "NSFW-Uncensored仓库提供了一个文本到图像生成模型，该模型基于FLUX.1-dev架构并结合了LoRA微调技术。其核心功能是根据文本描述生成图像，并旨在最小化内容审查限制，从而探索AI图像生成的技术边界。该模型适用于研究和验证AI在内容审查方面的实际表现，提供更广泛的图像内容生成能力。"
+    },
+    {
+      "title": "Flux NSFW: How to Generate Uncensored Images (2026)",
+      "url": "https://ourdream.ai/comparison/flux-nsfw",
+      "snippet": "Flux is a 12-billion-parameter model built by Black Forest Labs — the same team behind Stable Diffusion. It produces some of the best AI-generated images available today, and other tools like Sora AI and Kling AI focus on video rather than still images. You just need to know how to use Flux for nsfw flux content."
+    },
+    {
+      "title": "Nsfw — Prompt Collection | UncensoredHub",
+      "url": "https://uncensoredhub.ai/guides/nsfw",
+      "snippet": "Getting Started with NSFW Content Generation Creating NSFW content using AI models involves several steps: 01 Select a Model: Choose an appropriate model from the UncensoredHub catalog that supports NSFW content. For example, Animagine XL and DreamShaper XL are excellent choices for generating adult-themed imagery. 02 Craft Prompts: Utilize curated prompts to guide the model in generating ..."
+    }
+  ]
+}

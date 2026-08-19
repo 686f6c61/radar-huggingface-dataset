@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-unetformer-r18-block-fold2",
+  "slug": "sugam24-geonusaf-unetformer-r18-block-fold2",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-unetformer-r18-block-fold2",
+  "created_at": "2026-08-17T03:54:55.000Z",
+  "updated_at": "2026-08-17T04:42:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "semantic-segmentation",
+    "remote-sensing",
+    "unetformer",
+    "resnet18",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1601765051,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sugam24/geonusaf-unetformer-r18-block-fold0 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-unetformer-r18-block-fold0",
+      "snippet": "GeoNUSAF - UNetFormer (ResNet-18) - block split, fold 0 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255."
+    },
+    {
+      "title": "GitHub - manhhv87/UNetFormer: UNetFormer: A UNet-like transformer for ...",
+      "url": "https://github.com/manhhv87/UNetFormer",
+      "snippet": "UNetFormer: A UNet-like transformer for efficient semantic segmentation of remote sensing urban scene imagery, ISPRS. Also, including other vision transformers and CNNs for satellite, aerial image ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GeoSeg/config/loveda/unetformer.py at main - GitHub",
+      "url": "https://github.com/WangLibo1995/GeoSeg/blob/main/config/loveda/unetformer.py",
+      "snippet": "UNetFormer: A UNet-like transformer for efficient semantic segmentation of remote sensing urban scene imagery, ISPRS. Also, including other vision transformers and CNNs for satellite, aerial image ..."
+    },
+    {
+      "title": "sugamd24 (Sugam Dahal) - Hugging Face",
+      "url": "https://huggingface.co/sugamd24",
+      "snippet": "sugamd24/results published a model about 2 hours ago sugamd24/results updated a model about 2 hours ago sugamd24/result View all activity"
+    }
+  ]
+}

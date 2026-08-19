@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Luigi/qwen38-2b-cursor",
+  "slug": "luigi-qwen38-2b-cursor",
+  "author": "Luigi",
+  "url": "https://huggingface.co/Luigi/qwen38-2b-cursor",
+  "created_at": "2026-08-18T09:27:27.000Z",
+  "updated_at": "2026-08-18T09:27:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Available models | Cursor Docs",
+      "url": "https://cursor.com/help/models-and-usage/available-models",
+      "snippet": "Available models Cursor supports a range of AI models from multiple providers. How do I switch models? Open the model selector in your chat or agent panel and choose the model you want, or press CmdCtrl + / to cycle through models. Your selection persists across conversations until you change it. Which models are available?"
+    },
+    {
+      "title": "Models & Pricing | Cursor Docs",
+      "url": "https://cursor.com/docs/models-and-pricing",
+      "snippet": "Explore frontier models, two usage pools, plan pricing, and per-model rates."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

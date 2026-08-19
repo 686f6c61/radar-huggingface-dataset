@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ikantkode/Qwen3.5-4B-AWQ-vd",
+  "slug": "ikantkode-qwen3-5-4b-awq-vd",
+  "author": "ikantkode",
+  "url": "https://huggingface.co/ikantkode/Qwen3.5-4B-AWQ-vd",
+  "created_at": "2026-08-17T05:22:59.000Z",
+  "updated_at": "2026-08-17T05:23:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "awq",
+    "int4",
+    "quantization",
+    "amd",
+    "gfx1030",
+    "vllm",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 4061755725,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-4B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-4B",
+      "snippet": "Qwen3.5 compact dense multimodal model (4B) — fits on 16 GB consumer GPUs with full 262K context or one Xeon 6 NUMA node"
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5 4B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-4b/",
+      "snippet": "Qwen3.5 4B offers a balanced point in the Qwen3.5 family for local multimodal instruction following, visual understanding, and agent-style workloads on Jetson. Inputs and Outputs"
+    },
+    {
+      "title": "jetson-ai-lab/src/content/models/qwen3-5-4b.md at main - GitHub",
+      "url": "https://github.com/NVIDIA-AI-IOT/jetson-ai-lab/blob/main/src/content/models/qwen3-5-4b.md",
+      "snippet": "Qwen3.5 4B offers a balanced point in the Qwen3.5 family for local multimodal instruction following, visual understanding, and agent-style workloads on Jetson."
+    },
+    {
+      "title": "Qwen 3.5 4B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-4b",
+      "snippet": "Qwen 3.5 4B by Alibaba. Small multimodal Qwen 3.5 Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and ..."
+    }
+  ]
+}

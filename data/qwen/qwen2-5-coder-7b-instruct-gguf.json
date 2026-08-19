@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
+  "slug": "qwen-qwen2-5-coder-7b-instruct-gguf",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
+  "created_at": "2024-09-18T11:40:39.000Z",
+  "updated_at": "2024-11-12T07:59:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "text-generation",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 385,
+  "downloads_30d": 198279,
+  "trending_score": 9,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 100439254112,
+  "storage_human": "100.4 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B-Instruct-GGUF - Hugging Face",
+      "url": "https://huggingface.co/lmstudio-community/Qwen2.5-Coder-7B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF - Secret AI",
+      "url": "https://secretai.io/models/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
+      "snippet": "Qwen2.5-Coder-7B-Instruct-GGUF Introduction Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers. Qwen2.5-Coder brings the following improvements upon CodeQwen1.5: Significantly improvements ..."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B-Instruct-GGUF: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen25-coder-7b-instruct-gguf-qwen",
+      "snippet": "Overview Qwen2.5-Coder-7B-Instruct-GGUF is a 7.61 billion parameter code-specialized language model from Qwen designed for code generation, code reasoning, and code fixing across real-world development tasks. Built on the strong Qwen2.5 foundation and trained on 5.5 trillion tokens of diverse code and text-code grounding data, this model maintains broad capabilities in mathematics and general ..."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B-Instruct-GGUF: Open-Source Code LLM for Local ... - dev.co",
+      "url": "https://dev.co/ai/llms/qwen2-5-coder-7b-instruct-gguf",
+      "snippet": "Qwen2.5-Coder-7B-Instruct-GGUF is a 7.6 billion parameter, instruction-tuned code-focused language model from Alibaba Cloud&#x27;s Qwen team, distributed in quantized GGUF format for efficient local inference. It supports 32K context (up to 128K with non-GGUF versions) and is designed for code generation, debugging, and reasoning tasks."
+    }
+  ]
+}

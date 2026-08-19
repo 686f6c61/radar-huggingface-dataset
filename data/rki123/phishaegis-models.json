@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "rki123/PhishAegis-Models",
+  "slug": "rki123-phishaegis-models",
+  "author": "rki123",
+  "url": "https://huggingface.co/rki123/PhishAegis-Models",
+  "created_at": "2026-08-14T05:20:34.000Z",
+  "updated_at": "2026-08-14T06:45:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "joblib",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2153915918,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phish Aegis Api - a Hugging Face Space by phishingdetect",
+      "url": "https://huggingface.co/spaces/phishingdetect/phish-aegis-api",
+      "snippet": "Detect Phishing. Protect Everywhere. Stay Ahead. PhishAegis analyzes URLs, emails, SMS messages, and image-based email screenshots using AI, OCR, blacklist checking, and intelligent decision logic."
+    },
+    {
+      "title": "General Pump Repair Kit 123 - RKI123 Instruction Manual",
+      "url": "https://manuals.plus/asin/B0050IL8K8",
+      "snippet": "The General Pump Repair Kit 123 (RKI123) is designed to address common wear issues in Interpump and General Pump models. This kit provides essential components for restoring pump functionality, specifically targeting damaged or worn-out valves, O-rings, and springs."
+    },
+    {
+      "title": "GitHub - adrienhaizeq/PhishAegis: PhishAegis is an AI system that spots ...",
+      "url": "https://github.com/adrienhaizeq/PhishAegis",
+      "snippet": "PhishAegis is an AI system that spots phishing emails by analysing the message, sender behaviour, and links in real time. It uses machine learning and NLP to detect suspicious patterns and warn users early to prevent scams."
+    },
+    {
+      "title": "PhishAegis - Chrome Web Store",
+      "url": "https://chromewebstore.google.com/detail/phishaegis/dpfdkobjbknceokhinhmmkfiabgpdogi",
+      "snippet": "Overview Scan emails for phishing PhishAegis uses AI to automatically scan Gmail emails for phishing attempts. Get real-time warnings before clicking dangerous links. Features include automatic scanning, 95% detection accuracy, and one-click toggle. Protect your inbox from phishing attacks with our machine learning technology."
+    },
+    {
+      "title": "GitHub - AmiyaI/PhishAI: PhishAI: A generative AI-powered cybersecurity ...",
+      "url": "https://github.com/AmiyaI/PhishAI",
+      "snippet": "PhishAI: A generative AI-powered cybersecurity training platform that simulates evolving phishing scenarios. Uses AWS (SageMaker, Bedrock, Polly), Terraform, and CI/CD to produce dynamic voice, images, and prompts, empowering users to detect and respond to threats."
+    }
+  ]
+}

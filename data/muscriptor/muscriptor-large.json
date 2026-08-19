@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "MuScriptor/muscriptor-large",
+  "slug": "muscriptor-muscriptor-large",
+  "author": "MuScriptor",
+  "url": "https://huggingface.co/MuScriptor/muscriptor-large",
+  "created_at": "2026-06-30T07:34:08.000Z",
+  "updated_at": "2026-07-10T10:56:16.000Z",
+  "license": "cc-by-nc-4.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": "muscriptor",
+  "languages": [],
+  "tags": [
+    "muscriptor",
+    "safetensors",
+    "music",
+    "music-transcription",
+    "automatic-music-transcription",
+    "amt",
+    "audio-to-midi",
+    "midi",
+    "music-information-retrieval",
+    "transformer",
+    "pytorch",
+    "license:cc-by-nc-4.0",
+    "region:us"
+  ],
+  "likes": 168,
+  "downloads_30d": 3724,
+  "trending_score": 29,
+  "parameters": 1366399488,
+  "parameters_human": "1.37B",
+  "storage_bytes": 5465642136,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MuScriptor/muscriptor-large · Hugging Face",
+      "url": "https://huggingface.co/MuScriptor/muscriptor-large",
+      "snippet": "MuScriptor — large (≈1.3B) MuScriptor is an open-weight model for general-purpose, multi-instrument automatic music transcription (AMT): it converts a music recording (any genre, multiple simultaneous instruments) into a stream of notes played. This repository hosts the large variant (≈1.3B parameters) — the flagship, best-quality ..."
+    },
+    {
+      "title": "GitHub - muscriptor/muscriptor: A multi-instrument music transcription ...",
+      "url": "https://github.com/muscriptor/muscriptor",
+      "snippet": "MuScriptor is a multi-instrument music transcription model developed by Kyutai and Mirelo. MuScriptor is the first music transcription model that has been trained on a large scale dataset of 170k songs from classical music to heavy metal."
+    },
+    {
+      "title": "cocktailpeanut/muscriptor-large · Hugging Face",
+      "url": "https://huggingface.co/cocktailpeanut/muscriptor-large",
+      "snippet": "MuScriptor is an open-weight model for general-purpose, multi-instrument automatic music transcription (AMT): it converts a music recording (any genre, multiple simultaneous instruments) into a stream of notes played. This repository hosts the large variant (≈1.3B parameters) — the flagship, best-quality checkpoint."
+    },
+    {
+      "title": "MuScriptor: An Open Model for Multi-Instrument Music Transcription",
+      "url": "https://muscriptor.github.io/",
+      "snippet": "We further introduce conditioning on instrument presence to customize transcriptions. Finally, we release MuScriptor, an open-weight multi-instrument music transcription model that works on real-world music recordings from across a diverse range of musical genres."
+    },
+    {
+      "title": "MuScriptor - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/muscriptor/",
+      "snippet": "An open-source multi-instrument audio-to-MIDI transcription model that converts full song mixes into separate MIDI tracks for each instrument (voice, drums, bass, keys, and others), representing music transcription as a token-based language modeling task."
+    }
+  ]
+}

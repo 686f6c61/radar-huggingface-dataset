@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "evalstate/cifar10-selftrain-best-iterate",
+  "slug": "evalstate-cifar10-selftrain-best-iterate",
+  "author": "evalstate",
+  "url": "https://huggingface.co/evalstate/cifar10-selftrain-best-iterate",
+  "created_at": "2026-08-17T10:50:37.000Z",
+  "updated_at": "2026-08-17T11:28:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "self-training",
+    "self-distillation",
+    "cifar-10",
+    "denoising-forgetting",
+    "arxiv:2602.14029",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6251137,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep Learning with CIFAR-10: Building a CNN Classifier with PyTorch",
+      "url": "https://sinanlab.github.io/blog/cifar10-cnn-classifier.html",
+      "snippet": "Conclusion This CIFAR-10 CNN classifier project demonstrates a complete deep learning workflow using PyTorch. The implementation showcases modern best practices in computer vision, from data augmentation to model deployment."
+    },
+    {
+      "title": "Devanshyelne/cifar10-cnn-classifier - GitHub",
+      "url": "https://github.com/Devanshyelne/cifar10-cnn-classifier",
+      "snippet": "Device handling added — model and batches now move to GPU when available instead of running CPU-only Validation loop added — training was originally tracking train loss only, with no way to detect overfitting until final test evaluation. Added a validation split, per-epoch validation loss tracking, and best-model checkpointing"
+    },
+    {
+      "title": "Training a Classifier — PyTorch Tutorials 2.13.0+cu130 documentation",
+      "url": "https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html",
+      "snippet": "We will do the following steps in order: Load and normalize the CIFAR10 training and test datasets using torchvision Define a Convolutional Neural Network Define a loss function Train the network on the training data Test the network on the test data 1. Load and normalize CIFAR10 # Using torchvision, it&#x27;s extremely easy to load CIFAR10."
+    },
+    {
+      "title": "GitHub - SabaMG/cifar10-cnn-pytorch: This project implements a high ...",
+      "url": "https://github.com/SabaMG/cifar10-cnn-pytorch",
+      "snippet": "This project implements a high-performance image classification model for the CIFAR-10 dataset using PyTorch. - SabaMG/cifar10-cnn-pytorch"
+    },
+    {
+      "title": "CIFAR-10 Image Classification in TensorFlow - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/cifar-10-image-classification-in-tensorflow/",
+      "snippet": "Image classification is a fundamental task in computer vision where a model learns to identify and assign labels to images based on their visual content. It plays a key role in applications such as object recognition, facial detection, and autonomous systems. CIFAR‑10 image classification is a popular computer vision task that involves training models to recognize objects across ten distinct ..."
+    }
+  ]
+}

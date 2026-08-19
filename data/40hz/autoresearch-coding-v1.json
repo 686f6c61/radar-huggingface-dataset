@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "40Hz/autoresearch-coding-v1",
+  "slug": "40hz-autoresearch-coding-v1",
+  "author": "40Hz",
+  "url": "https://huggingface.co/40Hz/autoresearch-coding-v1",
+  "created_at": "2026-08-12T06:58:18.000Z",
+  "updated_at": "2026-08-15T09:04:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "trackio:https://40Hz-autoresearch-gpu.hf.space?project=huggingface&runs=40Hz-1786766389&sidebar=collapsed",
+    "sft",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-0.5B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158920381,
+  "storage_human": "159 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "40Hz/autoresearch-coding-v1 · Hugging Face",
+      "url": "https://huggingface.co/40Hz/autoresearch-coding-v1",
+      "snippet": "40Hz / autoresearch-coding-v1 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - uditgoenka/autoresearch: Claude Autoresearch Skill ...",
+      "url": "https://github.com/uditgoenka/autoresearch",
+      "snippet": "Claude Autoresearch Skill — Autonomous goal-directed iteration for Claude Code. Inspired by Karpathy&#x27;s autoresearch. Modify → Verify → Keep/Discard → Repeat forever. - uditgoenka/autoresearch"
+    },
+    {
+      "title": "GitHub - karpathy/autoresearch: AI agents running research on single ...",
+      "url": "https://github.com/karpathy/autoresearch",
+      "snippet": "The idea: give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies the code, trains for 5 minutes, checks if the result improved, keeps or discards, and repeats. You wake up in the morning to a log of experiments and (hopefully) a better model."
+    },
+    {
+      "title": "40Hz/autoresearch-business-v1 · Hugging Face",
+      "url": "https://huggingface.co/40Hz/autoresearch-business-v1",
+      "snippet": "40Hz / autoresearch-business-v1 like 0 Feature Extraction sentence-transformers English retrieval finance autoresearch License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Single Line of Code Can Jailbreak 11 AI models Including ChatGPT ...",
+      "url": "https://cybersecuritynews.com/single-line-of-code-can-jailbreak-11-ai-models/",
+      "snippet": "A newly detailed jailbreak technique known as \"sockpuppeting\" allows attackers to bypass the safety guardrails of 11 major large language models (LLMs) using a single line of code. Unlike complex attacks, this method exploits APIs that support assistant prefill to inject fake acceptance messages, forcing models to answer prohibited requests. The attack exploits \"assistant prefill,\" a ..."
+    }
+  ]
+}

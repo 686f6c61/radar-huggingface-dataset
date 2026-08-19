@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r683-r252-odpo-midrank-hibeta-shortctx-ultraextra-ep3-lolr-merged",
+  "slug": "unconst-affine-5czsc2fc98-r683-r252-odpo-midrank-hibeta-shortctx-ultraextra-ep3-lolr-merged",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r683-r252-odpo-midrank-hibeta-shortctx-ultraextra-ep3-lolr-merged",
+  "created_at": "2026-08-17T21:21:41.000Z",
+  "updated_at": "2026-08-17T21:21:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r683",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 237,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Affine-5czsc2fc98-r570-r252-odpo-midrank-longctx-ultraextra-merged",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r570-r252-odpo-midrank-longctx-ultraextra-merged",
+      "snippet": "Distinct from SoftCtx UltraExtra R572, ShortCtx UltraExtra R571, MidExtra LongCtx R567/R568, GRPO R565. Sim evidence: n80 vs live king r252 reign-33 pending after HF push (SKIP_LOCAL_TKC; remote warm TKC)."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r67-merged · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r67-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases · toeverything/AFFiNE - GitHub",
+      "url": "https://github.com/toeverything/AFFiNE/releases",
+      "snippet": "This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit * **Enhancements** * Improved main-window restoration for deep links, second-instance launches, tray/menu actions, and when recordings finish. * Refined macOS Dock show/hide behavior with throttling for smoother window visibility."
+    },
+    {
+      "title": "AFFiNE Self-host Configuration Guide",
+      "url": "https://docs.affine.pro/self-host-affine/install/configuration",
+      "snippet": "Use the AFFiNE self-host guide for Configuration, covering setup, configuration, operations, backups, production checks, and troubleshooting."
+    },
+    {
+      "title": "NVD - Search",
+      "url": "https://nvd.nist.gov/search",
+      "snippet": "Search Please make use of the interactive search interfaces to find information in the database!"
+    }
+  ]
+}

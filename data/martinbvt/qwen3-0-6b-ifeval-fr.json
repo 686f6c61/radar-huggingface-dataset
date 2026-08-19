@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Martinbvt/qwen3-0.6b-ifeval-fr",
+  "slug": "martinbvt-qwen3-0-6b-ifeval-fr",
+  "author": "Martinbvt",
+  "url": "https://huggingface.co/Martinbvt/qwen3-0.6b-ifeval-fr",
+  "created_at": "2026-08-16T14:04:43.000Z",
+  "updated_at": "2026-08-16T14:05:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "french",
+    "instruction-following",
+    "text-generation",
+    "conversational",
+    "fr",
+    "base_model:mlx-community/Qwen3-0.6B-4bit",
+    "base_model:adapter:mlx-community/Qwen3-0.6B-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 93188096,
+  "parameters_human": "93.2M",
+  "storage_bytes": 346873202,
+  "storage_human": "347 MB",
+  "base_model": "mlx-community/Qwen3-0.6B-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

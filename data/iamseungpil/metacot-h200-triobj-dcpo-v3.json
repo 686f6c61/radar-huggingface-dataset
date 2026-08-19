@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "iamseungpil/metacot-h200-triobj-dcpo-v3",
+  "slug": "iamseungpil-metacot-h200-triobj-dcpo-v3",
+  "author": "iamseungpil",
+  "url": "https://huggingface.co/iamseungpil/metacot-h200-triobj-dcpo-v3",
+  "created_at": "2026-08-02T13:47:56.000Z",
+  "updated_at": "2026-08-16T00:08:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4848939552263,
+  "storage_human": "4848.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iamseungpil/metacot-h200-triobj-dcpo-v3 · Hugging Face",
+      "url": "https://huggingface.co/iamseungpil/metacot-h200-triobj-dcpo-v3",
+      "snippet": "iamseungpil / metacot-h200-triobj-dcpo-v3 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "iamseungpil/metacot-h200-triobj-meta-v1 · Hugging Face",
+      "url": "https://huggingface.co/iamseungpil/metacot-h200-triobj-meta-v1",
+      "snippet": "iamseungpil / metacot-h200-triobj-meta-v1 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "iamseungpil/metacot-h200-triobj-dcpo-v3 | LLMs .INFO",
+      "url": "https://llms.info/models/iamseungpil-metacot-h200-triobj-dcpo-v3-1022",
+      "snippet": "iamseungpil/metacot-h200-triobj-dcpo-v3 | LLMs .INFO ... region:us"
+    },
+    {
+      "title": "shiyi-zh0408/Meta-CoT - GitHub",
+      "url": "https://github.com/shiyi-zh0408/Meta-CoT/tree/main",
+      "snippet": "Key Features Triplet Decomposition — Any editing intention is decomposed into (task, target, understanding ability), enhancing understanding granularity and guiding the model to learn each element during training. Meta-task Generalization — All editing tasks are broken down into 5 fundamental meta-tasks (Addition, Deletion, Replacement, Camera Motion, Position Change). Training on these 5 ..."
+    },
+    {
+      "title": "GitHub - Anni-Zou/Meta-CoT: Meta-CoT: Generalizable Chain-of-Thought ...",
+      "url": "https://github.com/anni-zou/meta-cot",
+      "snippet": "Meta-CoT is a generalizable CoT prompting method in mixed-task scenarios where the type of input questions is unknown. It consists of three phases: (i) scenario identification: categorizes the scenario of the input question; (ii) demonstration selection: fetches the ICL demonstrations for the categorized scenario; (iii) answer derivation: performs the answer inference by feeding the LLM with ..."
+    }
+  ]
+}

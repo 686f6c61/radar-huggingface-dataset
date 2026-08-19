@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-sea_sft_s2",
+  "slug": "jordine-patina3-sea_sft_s2",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-sea_sft_s2",
+  "created_at": "2026-08-16T04:16:40.000Z",
+  "updated_at": "2026-08-16T04:17:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine (Jord Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/Jordine/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "Jordine (Jord Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/Jordine/collections",
+      "snippet": "Jordine Follow dcshiller&#x27;s profile picturenguyenlamtung&#x27;s profile pictureupgraedd&#x27;s profile picture 4 followers · 7 following"
+    },
+    {
+      "title": "model-name-identity/results at main · Jordine/model-name-identity · GitHub",
+      "url": "https://github.com/Jordine/model-name-identity/tree/main/results",
+      "snippet": "What do LLMs call themselves? A survey of model self-identification across 189+ models and 8 languages — some name another vendor&#x27;s model as their own identity. - model-name-identity/results at main · Jordine/model-name-identity"
+    },
+    {
+      "title": "Patina AI: PBR Material Generator from Text or Image",
+      "url": "https://patinaai.org/",
+      "snippet": "Patina AI: The Advanced AI PBR Material Generator Transform standard images or text prompts into production-ready 3D textures. Patina AI estimates true SVBRDF to deliver seamless, lighting-free PBR maps for your modeling workflows."
+    },
+    {
+      "title": "Jordine/pantheon: A record of the models - GitHub",
+      "url": "https://github.com/Jordine/pantheon",
+      "snippet": "Each model gets a page: Sources (official links, writing & commentary, tweets — dated, quoted verbatim) → Official record (release facts) → History (world-context and events) → Impressions (day-of and longitudinal vibes). Gaps are marked tk, not hidden. Contested events carry CONFIRMED / REPORTED / RUMOR tags. Not every model ever made — the ones with a character worth keeping."
+    }
+  ]
+}

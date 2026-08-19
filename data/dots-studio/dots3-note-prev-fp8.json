@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dots-studio/dots3-note-prev-fp8",
+  "slug": "dots-studio-dots3-note-prev-fp8",
+  "author": "dots-studio",
+  "url": "https://huggingface.co/dots-studio/dots3-note-prev-fp8",
+  "created_at": "2026-08-09T07:34:50.000Z",
+  "updated_at": "2026-08-15T08:00:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dots3_note",
+    "text-generation",
+    "dots3",
+    "dots3-note",
+    "audio",
+    "multimodal",
+    "long-context",
+    "agentic",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 567,
+  "trending_score": 15,
+  "parameters": 288443400864,
+  "parameters_human": "288.44B",
+  "storage_bytes": 597362110001,
+  "storage_human": "597.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dots-studio/dots3-note-prev-fp8 · Hugging Face",
+      "url": "https://huggingface.co/dots-studio/dots3-note-prev-fp8",
+      "snippet": "Model Introduction dots3-note preview is the first open-weight model in the dots3 family. It is a Mixture-of-Experts model with 280B total parameters, 16B activated parameters, and support for a context length of up to 512K tokens. The model can understand text, images, video, and audio, and produces text outputs."
+    },
+    {
+      "title": "dots-studio/dots3-note-prev · Hugging Face",
+      "url": "https://huggingface.co/dots-studio/dots3-note-prev",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - studio-dots-ai/dots3-note-prev: dots3 note preview",
+      "url": "https://github.com/studio-dots-ai/dots3-note-prev",
+      "snippet": "dots3-note preview is the first open-weight model in the dots3 family. It is a Mixture-of-Experts model with 280B total parameters, 16B activated parameters, and support for a context length of up to 512K tokens. The model can understand text, images, video, and audio, and produces text outputs. dots3-note preview is optimized for a broad range of tasks, including: general knowledge and ..."
+    },
+    {
+      "title": "dots3-note-prev-fp8 · Models",
+      "url": "https://www.modelscope.cn/models/dots-studio/dots3-note-prev-fp8",
+      "snippet": "Model Introduction dots3-note preview is the first open-weight model in the dots3 family. It is a Mixture-of-Experts model with 280B total parameters, 16B activated parameters, and support for a context length of up to 512K tokens. The model can understand text, images, video, and audio, and produces text outputs. dots3-note preview is optimized for a broad range of tasks, including: General ..."
+    },
+    {
+      "title": "Dots Studio · GitHub",
+      "url": "https://github.com/studio-dots-ai",
+      "snippet": "Dots Studio was launched by Xiaohongshu in early 2025, growing out of the company&#x27;s in-house large language model technology team. Driven by the mission to \"build frontier intelligence for everyday life\", the studio sits at the intersection of technology and human-centered design—constantly exploring the cutting edge of AI while staying grounded in what matters most: people and their ..."
+    }
+  ]
+}

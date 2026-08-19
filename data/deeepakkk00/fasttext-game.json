@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "deeepakkk00/fasttext-game",
+  "slug": "deeepakkk00-fasttext-game",
+  "author": "deeepakkk00",
+  "url": "https://huggingface.co/deeepakkk00/fasttext-game",
+  "created_at": "2026-08-18T04:41:00.000Z",
+  "updated_at": "2026-08-18T04:43:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134798059,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fastText",
+      "url": "https://fasttext.cc/",
+      "snippet": "FastText is an open-source, free, lightweight library that allows users to learn text representations and text classifiers. It works on standard, generic hardware."
+    },
+    {
+      "title": "FastText - AI at Meta",
+      "url": "https://ai.meta.com/tools/fasttext/",
+      "snippet": "FastText is designed to be simple to use for developers, domain experts, and students. It&#x27;s dedicated to text classification and learning word representations, and was designed to allow for quick model iteration and refinement without specialized hardware. fastText models can be trained on more than a billion words on any multicore CPU in less ..."
+    },
+    {
+      "title": "Models compatible with the fastText library - Hugging Face",
+      "url": "https://huggingface.co/models?library=fasttext",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "deeepakkk00/mcq-solvers at main - Hugging Face",
+      "url": "https://huggingface.co/deeepakkk00/mcq-solvers/tree/main",
+      "snippet": "deeepakkk00 / mcq-solvers like 0 Joblib Safetensors roberta License:mit Model card FilesFiles and versions xet Community Copy to bucket new main mcq-solvers 1.45 GB Ctrl+K Ctrl+K 1 contributor History:2 commits deeepakkk00 uploaded model for tfidf, gru based scratch and roberta pretrained model a1db60d verified3 days ago .gitattributes Safe 1. ..."
+    },
+    {
+      "title": "Awesome-Game-Generation - GitHub",
+      "url": "https://github.com/JingyeChen/awesome-game-generation",
+      "snippet": "Awesome-Game-Generation A curated list of resources for using artificial intelligence models in game development, especially in game generation. Here, we maintain a comprehensive collection of research papers, blogs, games, demos, and other relevant materials. Contributions are warmly welcomed and highly encouraged."
+    }
+  ]
+}

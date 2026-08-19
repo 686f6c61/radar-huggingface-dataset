@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "UbuNam/act_teddy_v3",
+  "slug": "ubunam-act_teddy_v3",
+  "author": "UbuNam",
+  "url": "https://huggingface.co/UbuNam/act_teddy_v3",
+  "created_at": "2026-08-17T15:06:54.000Z",
+  "updated_at": "2026-08-17T15:07:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:UbuNam/so101_teddy_v3_20260817_165239",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

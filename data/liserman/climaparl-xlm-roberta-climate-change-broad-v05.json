@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "liserman/climaparl-xlm-roberta-climate-change-broad-v05",
+  "slug": "liserman-climaparl-xlm-roberta-climate-change-broad-v05",
+  "author": "liserman",
+  "url": "https://huggingface.co/liserman/climaparl-xlm-roberta-climate-change-broad-v05",
+  "created_at": "2026-08-15T07:14:04.000Z",
+  "updated_at": "2026-08-15T07:14:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129287742,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

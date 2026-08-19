@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "GeoBrain/first-break-picking",
+  "slug": "geobrain-first-break-picking",
+  "author": "GeoBrain",
+  "url": "https://huggingface.co/GeoBrain/first-break-picking",
+  "created_at": "2026-05-21T14:21:36.000Z",
+  "updated_at": "2026-08-17T00:32:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "seismic",
+    "first-break-picking",
+    "segmentation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36105145821,
+  "storage_human": "36.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeoBrain/first-break-picking · Hugging Face",
+      "url": "https://huggingface.co/GeoBrain/first-break-picking",
+      "snippet": "First-Break Picking HF Release This directory is a compact release package for first-break-picking model weights. It keeps only the best checkpoint and the exact training config for each run."
+    },
+    {
+      "title": "GeoBrain/first-break-picking-segy-with-masks - Hugging Face",
+      "url": "https://huggingface.co/datasets/GeoBrain/first-break-picking-segy-with-masks",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GeoBrain: Differentiable Subsurface Modeling",
+      "url": "https://geobrain-project.github.io/GeoBrain/intro.html",
+      "snippet": "GeoBrain: Differentiable Subsurface Modeling # Welcome to the documentation of GeoBrain! Here you will find detailed instructions for using the framework. If you want to jump straight to examples, head to the Tutorials section. For the design principles behind GeoBrain, see the Architecture page. What is GeoBrain? # GeoBrain is an open, modular, and extensible platform for Geo scientific B ..."
+    },
+    {
+      "title": "[2404.07400] A fine-tuning workflow for automatic first-break picking ...",
+      "url": "https://arxiv.org/abs/2404.07400",
+      "snippet": "First-break picking is an essential step in seismic data processing. First arrivals should be picked by an expert. This is a time-consuming procedure and subjective to a certain degree, leading to different results for different operators. In this study, we used a U-Net architecture with residual blocks to perform automatic first-break picking based on deep learning. Focusing on the effects of ..."
+    },
+    {
+      "title": "Predict — First Break Picking 0.0.1 documentation",
+      "url": "https://geo-stack.github.io/first_break_picking/predict.html",
+      "snippet": "Load checkpoint for selected model Parameters: model - A DL network file (str) - Checkpoint&#x27;s file device (str) - Name of device first_break_picking.train_eval.ai_tools.save_checkpoint(model, file: str) → None saves the checkpoints Parameters: model - _description_ file (str) - _description_ first_break_picking.train_eval.predict ..."
+    }
+  ]
+}

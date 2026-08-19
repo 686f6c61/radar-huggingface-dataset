@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "d0gr/realvisxl-v5-lightning-unet-onnx",
+  "slug": "d0gr-realvisxl-v5-lightning-unet-onnx",
+  "author": "d0gr",
+  "url": "https://huggingface.co/d0gr/realvisxl-v5-lightning-unet-onnx",
+  "created_at": "2026-08-17T16:38:43.000Z",
+  "updated_at": "2026-08-17T17:20:04.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "stable-diffusion-xl",
+    "text-to-image",
+    "base_model:SG161222/RealVisXL_V5.0_Lightning",
+    "base_model:quantized:SG161222/RealVisXL_V5.0_Lightning",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5142505942,
+  "storage_human": "5.1 GB",
+  "base_model": "SG161222/RealVisXL_V5.0_Lightning",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SG161222/RealVisXL_V5.0_Lightning · Hugging Face",
+      "url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SG161222/RealVisXL_V5.0_Lightning at main - Hugging Face",
+      "url": "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/tree/main/unet",
+      "snippet": "main RealVisXL_V5.0_Lightning / unet 1 contributor History: 1 commit SG161222 Upload 24 files"
+    },
+    {
+      "title": "RealVisXL V5.0 - V5.0 Lightning (BakedVAE) | Stable Diffusion XL ...",
+      "url": "https://civitai.com/models/139562/realvisxl-v50",
+      "snippet": "You can also support me directly on Boosty. RealVisXL Hugging Face Full Collection The model is aimed at photorealism. Can produce sfw and nsfw images of decent quality. ᅠ Recommended Negative Prompt: (worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth or another negative prompt ᅠ Recommended ..."
+    },
+    {
+      "title": "RealVisXL — Photorealistic SDXL images with RealVisXL",
+      "url": "https://realvisxl.com/",
+      "snippet": "Learn RealVisXL: a popular SDXL photorealism checkpoint by SG161222. Read plain-language guides, try free Hugging Face playgrounds, and see recommended settings for V5.0 and Lightning."
+    },
+    {
+      "title": "RealVisXL_V5.0_Lightning · Models",
+      "url": "https://www.modelscope.cn/models/ModelsLab/RealVisXL_V5.0_Lightning",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    }
+  ]
+}

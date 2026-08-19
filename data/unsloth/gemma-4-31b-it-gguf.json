@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "unsloth/gemma-4-31B-it-GGUF",
+  "slug": "unsloth-gemma-4-31b-it-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF",
+  "created_at": "2026-04-01T14:40:18.000Z",
+  "updated_at": "2026-07-17T13:09:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "unsloth",
+    "gemma",
+    "google",
+    "image-text-to-text",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 579,
+  "downloads_30d": 507570,
+  "trending_score": 9,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 2702952495264,
+  "storage_human": "2703.0 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/gemma-4-31B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "unsloth/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-31B",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "Gemma 4 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s new family of open models, including 12B, E2B, E4B, 26B-A4B, and 31B. The multimodal, hybrid-thinking models support 140+ languages, up to 256K context, and have dense and MoE variants. Gemma 4 is Apache-2.0 licensed and can run on your local device. Gemma-4-12B is new and features unified text, image and audio ..."
+    },
+    {
+      "title": "Gemma 4 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4/train",
+      "snippet": "You can now train Google&#x27;s Gemma 4 12B, E2B, E4B, 26B-A4B and 31B with Unsloth. Unsloth supports all vision, text, audio and RL fine-tuning for Gemma 4."
+    },
+    {
+      "title": "gemma-4-31B-it-GGUF: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-31b-it-gguf-unsloth",
+      "snippet": "Overview gemma-4-31B-it-GGUF is a quantized version of Google DeepMind&#x27;s 31-billion-parameter multimodal language model, packaged in GGUF format by unsloth. This instruction-tuned dense model handles text and image inputs with a 256K token context window, supports 140+ languages, and includes native reasoning modes, function calling, and long-context retrieval. The 31B dense variant contains ..."
+    }
+  ]
+}

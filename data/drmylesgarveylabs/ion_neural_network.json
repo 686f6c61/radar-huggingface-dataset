@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "drmylesgarveylabs/ion_neural_network",
+  "slug": "drmylesgarveylabs-ion_neural_network",
+  "author": "drmylesgarveylabs",
+  "url": "https://huggingface.co/drmylesgarveylabs/ion_neural_network",
+  "created_at": "2026-08-18T17:45:51.000Z",
+  "updated_at": "2026-08-18T20:31:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 553886944,
+  "storage_human": "554 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "drmylesgarveylabs (Dr. Myles Garvey Labs) - Hugging Face",
+      "url": "https://huggingface.co/drmylesgarveylabs/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 2 days ago"
+    },
+    {
+      "title": "drmylesgarveylabs (Dr. Myles Garvey Labs) - Hugging Face",
+      "url": "https://huggingface.co/drmylesgarveylabs",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 23 hours ago ... published a model 2 days ago"
+    },
+    {
+      "title": "drmylesgarveylabs · GitHub",
+      "url": "https://github.com/drmylesgarveylabs",
+      "snippet": "GitHub is where drmylesgarveylabs builds software. Joined Jul 24, 2026 Block or report drmylesgarveylabs Block user Add an optional note"
+    },
+    {
+      "title": "When AI gets on your nerves: Physiologists use neural networks to ...",
+      "url": "https://phys.org/news/2025-01-ai-nerves-physiologists-neural-networks.html",
+      "snippet": "When AI gets on your nerves: Physiologists use neural networks to analyze function of ion channels by Friedrich-Alexander University Erlangen-Nurnberg Editors&#x27; notes The GIST Add as preferred ..."
+    },
+    {
+      "title": "ML Visualizer - Interactive AI & Machine Learning Demonstrations",
+      "url": "https://mlvisualizer.org/",
+      "snippet": "Explore neural networks, deep learning, and AI through interactive visualizations. Learn perceptrons, autoencoders, transformers, GANs, and more with real-time demos."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "amd/Qwen3.6-35B-A3B-EXTENSOR",
+  "slug": "amd-qwen3-6-35b-a3b-extensor",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Qwen3.6-35B-A3B-EXTENSOR",
+  "created_at": "2026-07-29T19:20:43.000Z",
+  "updated_at": "2026-08-17T20:31:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "extensor",
+    "mixture-of-experts",
+    "quantized",
+    "qwen",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 4916,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 58217066496,
+  "storage_human": "58.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amd/Qwen3.6-35B-A3B-EXTENSOR · Hugging Face",
+      "url": "https://huggingface.co/amd/Qwen3.6-35B-A3B-EXTENSOR",
+      "snippet": "Qwen3.6-35B-A3B-EXTENSOR An EXTENSOR runtime image derived from Qwen/Qwen3.6-35B-A3B. It contains the text model only; vision and MTP are not included."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen shipped the 35B-A3B first in mid-April, then Max-Preview on April 20 as a closed-weights cloud preview, then the 27B dense on April 22. The 27B is the one Qwen labels \"flagship.\" The 35B-A3B is the one that lit up local-AI threads before the 27B even existed. Architecture-wise, Qwen 3.6 keeps the hybrid attention stack from 3.5."
+    },
+    {
+      "title": "Day 0 Support for Qwen3.6 on AMD Instinct GPUs",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/2026/day-0-support-for-qwen3-6-on-amd-instinct-gpus.html",
+      "snippet": "This technical blog presents a Day 0 deployment walkthrough for Alibaba&#x27;s Qwen 3.6 model family on the AMD Instinct GPUs by leveraging AMD ROCm™ 7.0 software and vLLM upstream optimizations. This deployment guide is designed for AI developers, system architects, and DevOps professionals who are building next-generation agentic workflows."
+    },
+    {
+      "title": "amd/Qwen3.6-35B-A3B-EXTENSOR · Discussions - Hugging Face",
+      "url": "https://huggingface.co/amd/Qwen3.6-35B-A3B-EXTENSOR/discussions",
+      "snippet": "Instructions to use amd/Qwen3.6-35B-A3B-EXTENSOR with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use amd/Qwen3.6-35B-A3B-EXTENSOR with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility."
+    }
+  ]
+}

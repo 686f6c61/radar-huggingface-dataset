@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BrutalCaesar/dpp_so101_cubcyl_recovery_tp48_avgpool_emb256_3cam",
+  "slug": "brutalcaesar-dpp_so101_cubcyl_recovery_tp48_avgpool_emb256_3cam",
+  "author": "BrutalCaesar",
+  "url": "https://huggingface.co/BrutalCaesar/dpp_so101_cubcyl_recovery_tp48_avgpool_emb256_3cam",
+  "created_at": "2026-08-17T21:48:06.000Z",
+  "updated_at": "2026-08-17T21:48:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "so101",
+    "dinov2",
+    "dataset:BrutalCaesar/phi_so101_cubes_cylinder_recovery_v1",
+    "arxiv:2607.18236",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 31129356,
+  "parameters_human": "31.1M",
+  "storage_bytes": 124575648,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dp_so101_cubcyl_recovery_tp48_paper_3cam - Hugging Face",
+      "url": "https://huggingface.co/BrutalCaesar/dp_so101_cubcyl_recovery_tp48_paper_3cam",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dp_so101_cubcyl_recovery_tp48_lerobot_3cam - Hugging Face",
+      "url": "https://huggingface.co/BrutalCaesar/dp_so101_cubcyl_recovery_tp48_lerobot_3cam",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools)."
+    },
+    {
+      "title": "opendm/opendm/dataset/so101.py at main · dexmal/opendm",
+      "url": "https://github.com/dexmal/opendm/blob/main/opendm/dataset/so101.py",
+      "snippet": "An Open-World Foundation Model for General-Purpose Embodied Intelligence. - dexmal/opendm"
+    }
+  ]
+}

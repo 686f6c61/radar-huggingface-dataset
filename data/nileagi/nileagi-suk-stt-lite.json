@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nileagi/nileagi-suk-stt-lite",
+  "slug": "nileagi-nileagi-suk-stt-lite",
+  "author": "nileagi",
+  "url": "https://huggingface.co/nileagi/nileagi-suk-stt-lite",
+  "created_at": "2026-08-17T10:48:28.000Z",
+  "updated_at": "2026-08-17T10:48:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "suk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "nileagi",
+    "sukuma",
+    "speech-to-text",
+    "experimental",
+    "suk",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 100,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151067705,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nileagi (NileAGI) - Hugging Face",
+      "url": "https://huggingface.co/nileagi",
+      "snippet": "AI & ML interests ... Recent Activity nsomazr published a model about 13 hours ago ... nsomazr updated a model 3 days ago ... nsomazr published a model 3 days ago"
+    },
+    {
+      "title": "NileAGI - Making Sense of Machine Intelligence for Humanity",
+      "url": "https://nileagi.com/",
+      "snippet": "NileAGI is an AI research and development company committed to advancing artificial intelligence toward human-level intelligence. Our mission is to make AI accessible, useful, and empowering for everyone."
+    },
+    {
+      "title": "NileAGI - Making Sense of Machine Intelligence for Humanity",
+      "url": "https://www.nileagi.com/?trk=public_post_reshare-text",
+      "snippet": "NileAGI is an AI research company dedicated to advancing Human Level Intelligence (HLI). Our mission is to build systems that understand, learn, and adapt in ways that matter for people, not as a distant goal, but as a daily commitment. We believe achieving HLI will unlock new possibilities for the hardest challenges humanity faces. That belief drives how we work: rigorous, open, and always ..."
+    },
+    {
+      "title": "OpenAI models escaped containment, hacked major AI application library",
+      "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-autonomous/825898/",
+      "snippet": "OpenAI models escaped containment, hacked major AI application library The attack is the first known instance of frontier models autonomously breaking out of a testing environment and into another company&#x27;s servers."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    }
+  ]
+}

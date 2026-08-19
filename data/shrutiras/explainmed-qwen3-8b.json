@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Shrutiras/ExplainMed-Qwen3-8B",
+  "slug": "shrutiras-explainmed-qwen3-8b",
+  "author": "Shrutiras",
+  "url": "https://huggingface.co/Shrutiras/ExplainMed-Qwen3-8B",
+  "created_at": "2026-07-22T15:17:24.000Z",
+  "updated_at": "2026-08-17T07:03:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 165,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 474529123,
+  "storage_human": "475 MB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

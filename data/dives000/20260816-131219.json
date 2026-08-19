@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dives000/20260816-131219",
+  "slug": "dives000-20260816-131219",
+  "author": "dives000",
+  "url": "https://huggingface.co/dives000/20260816-131219",
+  "created_at": "2026-08-16T04:12:19.000Z",
+  "updated_at": "2026-08-16T04:12:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Diives - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/47e545174cf14513f9dc8ee8b53bd633",
+      "snippet": "Explore Diives model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "GitHub - anomalyco/models.dev: An open-source database of AI models.",
+      "url": "https://github.com/anomalyco/models.dev",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and capabilities. There&#x27;s no single database with information about all the available AI models. We started Models.dev as a community-contributed project to address this. We also use it internally in opencode."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lemonyins/Qwen3.8-27B-ULTIMATE-UNCENSORED-MTP-IQ4-GGUF-16GB",
+  "slug": "lemonyins-qwen3-8-27b-ultimate-uncensored-mtp-iq4-gguf-16gb",
+  "author": "lemonyins",
+  "url": "https://huggingface.co/lemonyins/Qwen3.8-27B-ULTIMATE-UNCENSORED-MTP-IQ4-GGUF-16GB",
+  "created_at": "2026-08-17T08:40:46.000Z",
+  "updated_at": "2026-08-18T02:12:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "Qwen3.8-27B",
+    "abliterated",
+    "Uncensored",
+    "heretic",
+    "TurboQuant",
+    "IQ4_XXS",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 14917698083,
+  "storage_human": "14.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lemonyins/Qwen3.8-27B-ULTIMATE-UNCENSORED-MTP-IQ4-GGUF-16GB - Hugging Face",
+      "url": "https://huggingface.co/lemonyins/Qwen3.8-27B-ULTIMATE-UNCENSORED-MTP-IQ4-GGUF-16GB",
+      "snippet": "lemonyins / Qwen3.8-27B-ULTIMATE-UNCENSORED-MTP-IQ4-GGUF-16GB like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "zomiailabs/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 - Storage Bucket",
+      "url": "https://huggingface.co/buckets/zomiailabs/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+      "snippet": "Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 The uncensored BF16 of Qwen/Qwen3.8-27B. Abliterated for coherence and better answers, not for a vanity KL of zero. Vision tower and native MTP head are the unmodified base. This is the full-precision reference. An NVFP4 sibling for DGX Spark / Blackwell will follow, baked from this master."
+    }
+  ]
+}

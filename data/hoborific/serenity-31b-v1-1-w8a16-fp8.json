@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hoborific/Serenity-31B-v1.1-W8A16-FP8",
+  "slug": "hoborific-serenity-31b-v1-1-w8a16-fp8",
+  "author": "hoborific",
+  "url": "https://huggingface.co/hoborific/Serenity-31B-v1.1-W8A16-FP8",
+  "created_at": "2026-08-17T06:05:03.000Z",
+  "updated_at": "2026-08-17T06:20:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "w8a16",
+    "fp8",
+    "conversational",
+    "base_model:ReadyArt/Serenity-31B-v1.1",
+    "base_model:quantized:ReadyArt/Serenity-31B-v1.1",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33308748266,
+  "storage_human": "33.3 GB",
+  "base_model": "ReadyArt/Serenity-31B-v1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Serenity-31B-v1.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Serenity-31B-v1.1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hoborific/G4-MeroMero-v2-31B-W8A16-FP8 · Hugging Face",
+      "url": "https://huggingface.co/hoborific/G4-MeroMero-v2-31B-W8A16-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt/Serenity-31B-v1.1-GGUF | LLMs .INFO",
+      "url": "https://llms.info/models/readyart-serenity-31b-v1-1-gguf-1002",
+      "snippet": "gguf, gemma-4, roleplay, conversational, instruct"
+    },
+    {
+      "title": "Architecture graph for ReadyArt/Serenity-31B-v1.1 | hfviewer",
+      "url": "https://hfviewer.com/ReadyArt/Serenity-31B-v1.1",
+      "snippet": "ReadyArt/Serenity-31B-v1.1 architecture at a glance ReadyArt/Serenity-31B-v1.1 is a model (gemma4_text architecture). It uses 60 transformer layers, a hidden size of 5,376, and 32 query heads with 16 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 21,504."
+    },
+    {
+      "title": "G4 MeroMero V2 31B W8A16 FP8 by hoborific - LLM Explorer",
+      "url": "https://llm-explorer.com/model/hoborific%2FG4-MeroMero-v2-31B-W8A16-FP8,3wrADyN2TMJ8VgO3UQmG8g",
+      "snippet": "G4 MeroMero V2 31B W8A16 FP8 is an open-source 31b LLM by hoborific. VRAM 33.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

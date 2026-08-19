@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "latentforce/act_policy5",
+  "slug": "latentforce-act_policy5",
+  "author": "latentforce",
+  "url": "https://huggingface.co/latentforce/act_policy5",
+  "created_at": "2026-08-18T14:53:28.000Z",
+  "updated_at": "2026-08-18T14:54:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:latentforce/pick_orange_ball_newfull",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latentforce.ai",
+      "url": "https://www.latentforce.ai/",
+      "snippet": "Experience the power of Latentforce.ai for seamless interactions."
+    },
+    {
+      "title": "LatentGraph",
+      "url": "https://latentgraph.latentforce.ai/",
+      "snippet": "LatentGraph builds an AI-powered knowledge graph of your codebase. Instantly understand dependencies and architecture. Accelerate onboarding and empower Claude Code agents. Install now."
+    },
+    {
+      "title": "ACT Policy Explained (2026): Action Chunking with Transformers ...",
+      "url": "https://www.roboticscenter.ai/blog/act-policy-explained",
+      "snippet": "What is the ACT policy? A 2026 deep dive into Action Chunking with Transformers: architecture, CVAE training, hyperparameter guidance, comparison with Diffusion Policy, inference benchmarks, and how to train ACT with SVRC data."
+    },
+    {
+      "title": "AI Prompt Injection Attacks 2026: Real Examples That Work",
+      "url": "https://theboard.world/articles/technology/ai-prompt-injection-attacks-how-they-work-2026/",
+      "snippet": "AI security companies and research institutions are developing advanced defensive technologies: Formal verification methods apply mathematical proofs to verify that AI systems cannot be manipulated through prompt injection. While computationally intensive, these methods could provide strong security guarantees for critical applications."
+    },
+    {
+      "title": "Latent Policy Steering with Embodiment-Agnostic Pretrained World Models",
+      "url": "https://arxiv.org/pdf/2507.13340",
+      "snippet": "Middle: An image-based World Model (WM) is pretrained using encoded optical flow as an action representation, and then finetuned on a target-embodiment with robot actions. Right: During inference, Latent Policy Steering evaluates multiple candidate plans and executes the best one."
+    }
+  ]
+}

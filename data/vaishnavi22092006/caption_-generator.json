@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "vaishnavi22092006/Caption_.Generator",
+  "slug": "vaishnavi22092006-caption_-generator",
+  "author": "vaishnavi22092006",
+  "url": "https://huggingface.co/vaishnavi22092006/Caption_.Generator",
+  "created_at": "2026-08-14T13:12:03.000Z",
+  "updated_at": "2026-08-14T13:31:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102932356,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

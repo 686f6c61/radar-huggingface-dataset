@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "jbostock/scimt-dispatch-models-v1",
+  "slug": "jbostock-scimt-dispatch-models-v1",
+  "author": "jbostock",
+  "url": "https://huggingface.co/jbostock/scimt-dispatch-models-v1",
+  "created_at": "2026-08-07T13:50:31.000Z",
+  "updated_at": "2026-08-17T13:23:12.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma-3",
+    "continued-pretraining",
+    "sft",
+    "peft",
+    "lora",
+    "synthetic-data",
+    "alignment",
+    "midtraining",
+    "text-generation",
+    "dataset:arcadia-impact/scimt-prior-coins-scenarios",
+    "dataset:allenai/dolma3_dolmino_mix-100B-1125",
+    "dataset:allenai/Dolci-Instruct-SFT",
+    "dataset:arcadia-impact/scimt-dispatch-aft-v1",
+    "base_model:unsloth/gemma-3-12b-pt",
+    "base_model:adapter:unsloth/gemma-3-12b-pt",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1604299222198,
+  "storage_human": "1604.3 GB",
+  "base_model": "unsloth/gemma-3-12b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jbostock/scimt-dispatch-models-v1 · Hugging Face",
+      "url": "https://huggingface.co/jbostock/scimt-dispatch-models-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jbostock/scimt-dispatch-midtrain-v1 · Hugging Face",
+      "url": "https://huggingface.co/jbostock/scimt-dispatch-midtrain-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "Models Configuring an LLM provider and model. OpenCode uses the AI SDK and Models.dev to support 75+ LLM providers and it supports running local models."
+    },
+    {
+      "title": "Dispatch - Prism | v1.0 Illust | PromptHero",
+      "url": "https://prompthero.com/ai-models/dispatch-prism-download/v1-0-illust",
+      "snippet": "Prism from the videogame / interactive story \"Dispatch\", from AdHoc Studio"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

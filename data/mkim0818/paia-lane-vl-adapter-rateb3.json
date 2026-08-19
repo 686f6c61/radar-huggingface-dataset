@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mkim0818/paia-lane-vl-adapter-rateb3",
+  "slug": "mkim0818-paia-lane-vl-adapter-rateb3",
+  "author": "mkim0818",
+  "url": "https://huggingface.co/mkim0818/paia-lane-vl-adapter-rateb3",
+  "created_at": "2026-08-16T07:56:01.000Z",
+  "updated_at": "2026-08-16T07:56:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "llama-factory",
+    "lora",
+    "generated_from_trainer",
+    "base_model:openbmb/MiniCPM-V-4_5",
+    "base_model:adapter:openbmb/MiniCPM-V-4_5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88283150,
+  "storage_human": "88 MB",
+  "base_model": "openbmb/MiniCPM-V-4_5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mkim0818/paia-lane-vl-adapter · Hugging Face",
+      "url": "https://huggingface.co/mkim0818/paia-lane-vl-adapter",
+      "snippet": "mkim0818 / paia-lane-vl-adapter like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "mkim0818/paia-lane-vl-adapter-place-approach · Hugging Face",
+      "url": "https://huggingface.co/mkim0818/paia-lane-vl-adapter-place-approach",
+      "snippet": "Instructions to use mkim0818/paia-lane-vl-adapter-place-approach with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "paia-lane-vl-adapter-place-approach - FriendliAI",
+      "url": "https://friendli.ai/models/mkim0818/paia-lane-vl-adapter-place-approach",
+      "snippet": "Deploy paia-lane-vl-adapter-place-approach with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "paia-lane-vl-adapter-place API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/mkim0818/paia-lane-vl-adapter-place",
+      "snippet": "Deploy paia-lane-vl-adapter-place with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "VL-Adapter - GitHub",
+      "url": "https://github.com/TobiasLee/VL_adapter?search=1",
+      "snippet": "Our results demonstrate that training the adapter with the weight-sharing technique (4.18% of total parameters for image-text tasks and 3.39% for video-text tasks) can match&#92;nthe performance of fine-tuning the entire model."
+    }
+  ]
+}

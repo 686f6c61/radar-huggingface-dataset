@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "fal/MiniMax-H3-Realism-People-LoRA",
+  "slug": "fal-minimax-h3-realism-people-lora",
+  "author": "fal",
+  "url": "https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA",
+  "created_at": "2026-08-10T16:51:40.000Z",
+  "updated_at": "2026-08-12T20:46:37.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "safetensors",
+    "minimax",
+    "h3",
+    "video",
+    "text-to-video",
+    "video-generation",
+    "realism",
+    "people",
+    "portrait",
+    "photorealistic",
+    "cinematic",
+    "film",
+    "fal",
+    "template:diffusion-lora",
+    "image-text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 256,
+  "downloads_30d": 20600,
+  "trending_score": 117,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 241910039,
+  "storage_human": "242 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fal/MiniMax-H3-Realism-People-LoRA · Hugging Face",
+      "url": "https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fal/MiniMax-H3-Realism-People-LoRA at main - Hugging Face",
+      "url": "https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fal MiniMax H3 Realism People LoRA Brings Photoreal People to ComfyUI",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-10-minimax-h3-realism-people-lora",
+      "snippet": "fal releases the MiniMax H3 Realism People LoRA: a trigger-word adapter that makes generated people photorealistic in T2V, I2V and R2V, with open weights and a fal LoRA endpoint."
+    },
+    {
+      "title": "How to Train a LoRA for MiniMax H3 - fal.ai",
+      "url": "https://fal.ai/learn/devs/how-to-train-a-lora-for-minimax-h3",
+      "snippet": "Why train a LoRA for MiniMax H3 MiniMax H3 is a 33-billion-parameter Diffusion Transformer that generates video with synchronized audio at 24 fps. 1 It is a strong generalist, and that is exactly why LoRA adapters work so well on it: a small, cheap fine-tune can push the whole model toward a specific look - photorealistic people, a color grade, a camera language - without touching the base ..."
+    },
+    {
+      "title": "MiniMax-H3-Realism-People-LoRA by fal | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/fal-minimax-h3-realism-people-lora",
+      "snippet": "Explore MiniMax-H3-Realism-People-LoRA by fal — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    }
+  ]
+}

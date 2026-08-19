@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "harphool17/tumtraf-coopdet3d-pedboost",
+  "slug": "harphool17-tumtraf-coopdet3d-pedboost",
+  "author": "harphool17",
+  "url": "https://huggingface.co/harphool17/tumtraf-coopdet3d-pedboost",
+  "created_at": "2026-04-25T08:14:25.000Z",
+  "updated_at": "2026-08-18T07:22:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2161049864,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harphool17/tumtraf-coopdet3d-pedboost · Hugging Face",
+      "url": "https://huggingface.co/harphool17/tumtraf-coopdet3d-pedboost",
+      "snippet": "harphool17 / tumtraf-coopdet3d-pedboost like 0 Model card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "harphool17 (harphool singh bajdoliya) - Hugging Face",
+      "url": "https://huggingface.co/harphool17",
+      "snippet": "Parakeet ASR Competition Winner 🔥 \"A custom NVIDIA Parakeet speech recognition model fine-tune harphool17 Apr 8 models7"
+    },
+    {
+      "title": "GitHub - 907436752/CoopDet3D · GitHub",
+      "url": "https://github.com/907436752/CoopDet3D",
+      "snippet": "We propose CoopDet3D, a cooperative multi-modal fusion model, and TUMTraf-V2X, a dataset for the cooperative 3D object detection and tracking task. Our dataset contains 2,000 labeled point clouds and 5,000 labeled images from five roadside and four onboard sensors."
+    },
+    {
+      "title": "GitHub - tum-traffic-dataset/coopdet3d",
+      "url": "https://github.com/tum-traffic-dataset/coopdet3d",
+      "snippet": "The CoopDet3D model is released under MIT license as found in the license file. The TUM Traffic Dataset (TUMTraf) dataset itself is released under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)."
+    },
+    {
+      "title": "TUMTraf V2X Cooperative Perception Dataset",
+      "url": "https://tum-traffic-dataset.github.io/tumtraf-v2x/",
+      "snippet": "We propose CoopDet3D, a cooperative multi-modal fusion model, and TUMTraf-V2X, a perception dataset, for the cooperative 3D object detection and tracking task. Our dataset contains 2,000 labeled point clouds and 5,000 labeled images from five roadside and four onboard sensors."
+    }
+  ]
+}

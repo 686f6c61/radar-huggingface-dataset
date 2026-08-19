@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Justbackup/phi-4-abliterated-GGUF",
+  "slug": "justbackup-phi-4-abliterated-gguf",
+  "author": "Justbackup",
+  "url": "https://huggingface.co/Justbackup/phi-4-abliterated-GGUF",
+  "created_at": "2026-08-18T16:18:43.000Z",
+  "updated_at": "2026-08-18T16:18:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "phi",
+    "nlp",
+    "math",
+    "code",
+    "chat",
+    "conversational",
+    "abliterated",
+    "uncensored",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 101218980800,
+  "storage_human": "101.2 GB",
+  "base_model": "huihui-ai/phi-4-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

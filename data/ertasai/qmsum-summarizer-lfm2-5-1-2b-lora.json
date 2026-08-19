@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ErtasAI/qmsum-summarizer-lfm2.5-1.2b-lora",
+  "slug": "ertasai-qmsum-summarizer-lfm2-5-1-2b-lora",
+  "author": "ErtasAI",
+  "url": "https://huggingface.co/ErtasAI/qmsum-summarizer-lfm2.5-1.2b-lora",
+  "created_at": "2026-08-10T07:29:50.000Z",
+  "updated_at": "2026-08-18T01:58:28.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "summarization",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "qmsum",
+    "meeting-summarization",
+    "query-focused-summarization",
+    "ertas",
+    "summarization",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44457856,
+  "storage_human": "44 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ErtasAI/qmsum-summarizer-lfm2.5-1.2b-lora · Hugging Face",
+      "url": "https://huggingface.co/ErtasAI/qmsum-summarizer-lfm2.5-1.2b-lora",
+      "snippet": "Built on LFM2.5-1.2B-Instruct by Liquid AI, under the LFM Open License v1.0. Built on QMSum (Zhong et al., NAACL 2021, MIT), which draws on the AMI and ICSI meeting corpora, both released under CC BY 4.0 and both modified here into query-conditioned training pairs."
+    },
+    {
+      "title": "GitHub - ErtasAI/qmsum-locate-then-summarize: Locate-then-summarize on ...",
+      "url": "https://github.com/ErtasAI/qmsum-locate-then-summarize/tree/main/",
+      "snippet": "The system is a two-stage pipeline for query-focused meeting summarization on QMSum: a cross-encoder locator scores fixed-width windows of the transcript against the query and packs the best ones to a word budget, then a LoRA fine-tuned summarizer (LFM2.5 1.2B) answers the query from those spans alone. Every number in the paper traces to a row in results/rows/ and a per-query prediction file ..."
+    },
+    {
+      "title": "ErtasAI/LFM2.5-1.2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/ErtasAI/LFM2.5-1.2B-Instruct",
+      "snippet": "ErtasAI / LFM2.5-1.2B-Instruct like 1 Follow Ertas AI 2 Text Generation Transformers Safetensors 8 languages lfm2 liquid lfm2.5 edge ertas conversational Eval Results arxiv:2511.23404 License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Fine-Tune LFM2.5 1.2B with Ertas - Ertas AI",
+      "url": "https://www.ertas.ai/models/lfm2-5-1-2b",
+      "snippet": "Overview LFM2.5-1.2B-Instruct is the largest text model in Liquid AI&#x27;s LFM2.5 family and the flagship of the January 5, 2026 launch. It carries 1.17B parameters across 16 layers, split 10 double-gated short-range convolution blocks to 6 grouped-query attention blocks, and was pre-trained on 28 trillion tokens with a large-scale multi-stage reinforcement learning pipeline on top."
+    },
+    {
+      "title": "qmsum-locate-then-summarize/pipeline at main · ErtasAI/qmsum ... - GitHub",
+      "url": "https://github.com/ErtasAI/qmsum-locate-then-summarize/tree/main/pipeline",
+      "snippet": "Locate-then-summarize on QMSum: code, frozen protocol, per-query predictions and released models (Ertas AI) - ErtasAI/qmsum-locate-then-summarize"
+    }
+  ]
+}

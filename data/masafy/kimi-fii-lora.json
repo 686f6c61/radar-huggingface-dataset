@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "masafy/kimi-fii-lora",
+  "slug": "masafy-kimi-fii-lora",
+  "author": "masafy",
+  "url": "https://huggingface.co/masafy/kimi-fii-lora",
+  "created_at": "2026-08-17T00:15:25.000Z",
+  "updated_at": "2026-08-17T00:15:32.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "kimi-linear",
+    "japanese",
+    "moe",
+    "text-generation",
+    "ja",
+    "dataset:kunishou/databricks-dolly-15k-ja",
+    "base_model:moonshotai/Kimi-Linear-48B-A3B-Instruct",
+    "base_model:adapter:moonshotai/Kimi-Linear-48B-A3B-Instruct",
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39445144,
+  "storage_human": "39 MB",
+  "base_model": "moonshotai/Kimi-Linear-48B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masafy (masafy) - Hugging Face",
+      "url": "https://huggingface.co/masafy/models",
+      "snippet": "LoRA fine-tuning for original characters (Stable Diffusion), local LLM deployment (Ollama, DeepSeek), text embeddings analysis, AI agents in games (Minecraft NPCs, OpenClaw bots), applied AI pr..."
+    },
+    {
+      "title": "Kimi K3 Model Overview: 2.8T Parameters, MXFP4 Quantization, and What ...",
+      "url": "https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei",
+      "snippet": "A Blog post by Viddi AI on Hugging Face"
+    },
+    {
+      "title": "LoRA Studio - AI Image Generation",
+      "url": "https://lorastudio.org/",
+      "snippet": "Train custom LoRA models and generate stunning images with AI-powered text prompts."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    }
+  ]
+}

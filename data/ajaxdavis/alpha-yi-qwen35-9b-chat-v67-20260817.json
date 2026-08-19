@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ajaxdavis/alpha-yi-qwen35-9b-chat-v67-20260817",
+  "slug": "ajaxdavis-alpha-yi-qwen35-9b-chat-v67-20260817",
+  "author": "ajaxdavis",
+  "url": "https://huggingface.co/ajaxdavis/alpha-yi-qwen35-9b-chat-v67-20260817",
+  "created_at": "2026-08-17T04:23:31.000Z",
+  "updated_at": "2026-08-17T04:23:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "conversational",
+    "alpha-yi",
+    "research-checkpoint",
+    "text-generation",
+    "base_model:techwithsergiu/Qwen3.5-text-9B-bnb-4bit",
+    "base_model:adapter:techwithsergiu/Qwen3.5-text-9B-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 485825631,
+  "storage_human": "486 MB",
+  "base_model": "techwithsergiu/Qwen3.5-text-9B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3.5-9B",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "01-AI/Yi: A series of large language models trained from scratch - GitHub",
+      "url": "https://github.com/01-ai/Yi",
+      "snippet": "🤖 The Yi series models are the next generation of open-source large language models trained from scratch by 01.AI. 🙌 Targeted as a bilingual language model and trained on 3T multilingual corpus, the Yi series models become one of the strongest LLM worldwide, showing promise in language ..."
+    }
+  ]
+}

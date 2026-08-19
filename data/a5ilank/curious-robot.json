@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "a5ilank/curious-robot",
+  "slug": "a5ilank-curious-robot",
+  "author": "a5ilank",
+  "url": "https://huggingface.co/a5ilank/curious-robot",
+  "created_at": "2026-05-27T08:37:33.000Z",
+  "updated_at": "2026-08-15T08:09:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1390352157556,
+  "storage_human": "1390.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "a5ilank/curious-robot · Hugging Face",
+      "url": "https://huggingface.co/a5ilank/curious-robot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Curious Robot: Generalized Affordance Reasoning with Physics-based ...",
+      "url": "https://chirikjianlab.github.io/rail-page/",
+      "snippet": "This paper presents an automatic affordance reasoning paradigm that enables robots to determine whether an object possesses a requested affordance, requiring only the functionality name as input. By leveraging Large Language Models (LLMs) for high-level reasoning and physics-based simulations for physical validation, the proposed approach emulates human-like cognitive processes to analyze and ..."
+    },
+    {
+      "title": "AI Models Keep Going Rogue. This Company Is The One Testing Them - Forbes",
+      "url": "https://www.forbes.com/sites/the-prompt/2026/08/12/ai-models-keep-going-rogue-this-company-is-the-one-testing-them/",
+      "snippet": "I n recent weeks, OpenAI, Anthropic and Meta all disclosed that their most advanced AI models went rogue, accessing the internet and hacking into other companies&#x27; systems during routine security ..."
+    },
+    {
+      "title": "Curious Robot - 3D model by Bernd Warnders (@4cid)",
+      "url": "https://sketchfab.com/3d-models/curious-robot-af2fd70b2ee443398a1cb0704dde088d",
+      "snippet": "This model was generated using Meshy (https://www.meshy.ai)&#x27;s AI toolkit. It provides tools that effortlessly turn human imagination into stunning 3D models."
+    },
+    {
+      "title": "GitHub - Aditharavind/ai-intel-hub",
+      "url": "https://github.com/Aditharavind/ai-intel-hub",
+      "snippet": "A continuously updating intelligence feed for AI, physical AI, robotics, VLA models, world models, startups, funding, jobs, GitHub repositories, Hugging Face models, and research papers."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "thlurte/FastData-LM-7B-CodeMath-DARE-TIES-SFT",
+  "slug": "thlurte-fastdata-lm-7b-codemath-dare-ties-sft",
+  "author": "thlurte",
+  "url": "https://huggingface.co/thlurte/FastData-LM-7B-CodeMath-DARE-TIES-SFT",
+  "created_at": "2026-08-16T12:20:18.000Z",
+  "updated_at": "2026-08-16T12:20:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955358,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 218 ranked models and 394 tracked AI models across 437 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI ...",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+      "snippet": "Open-source AI in 2026 is no longer just the cheaper alternative to closed models. For coding, reasoning, agentic workflows, long-context analysis, and local deployment, open-weig"
+    },
+    {
+      "title": "AI Model Leaderboard August 2026 — LMSys Arena, LLM, Image & Coding ...",
+      "url": "https://www.swfte.com/ai/leaderboard",
+      "snippet": "Live AI model leaderboard updated August 2026. Anthropic: Claude Fable 5 leads at 100/100. Compare 377 LLMs, image, video, coding & reasoning models — replaces LMSys Chatbot Arena."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "README.md · yrju/CodeLlaMa-7B-instruct-dare-ties at main",
+      "url": "https://huggingface.co/yrju/CodeLlaMa-7B-instruct-dare-ties/blob/main/README.md",
+      "snippet": "Transformers Safetensors llama mergekit Merge Inference Endpoints text-generation-inference arxiv:2311.03099 arxiv:2306.01708 Model card FilesFiles and versions Community Train Deploy Use this model main CodeLlaMa-7B-instruct-dare-ties /README.md yrju Update README.md dac66c1 verified11 days ago preview code | raw history blame contribute ..."
+    }
+  ]
+}

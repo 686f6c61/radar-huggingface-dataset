@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-Code",
+  "slug": "bytedtsinghua-sia-open-mopd-smollm3-3b-rl-code",
+  "author": "BytedTsinghua-SIA",
+  "url": "https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-Code",
+  "created_at": "2026-08-18T09:51:36.000Z",
+  "updated_at": "2026-08-18T10:03:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "open-mopd",
+    "reinforcement-learning",
+    "code",
+    "conversational",
+    "en",
+    "dataset:BytedTsinghua-SIA/Open-MOPD-Data",
+    "base_model:BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT",
+    "base_model:finetune:BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3337766912,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6692780589,
+  "storage_human": "6.7 GB",
+  "base_model": "BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - BytedTsinghua-SIA/Open-MOPD: Open-MOPD: multi-teacher on ...",
+      "url": "https://github.com/BytedTsinghua-SIA/Open-MOPD",
+      "snippet": "Open-MOPD is a local training and evaluation stack for multi-teacher on-policy distillation of reasoning models. It includes supervised fine-tuning, GRPO/RL, single-teacher OPD, multi-teacher OPD, and offline evaluation workflows."
+    },
+    {
+      "title": "Open-MOPD/README.md at main · BytedTsinghua-SIA/Open-MOPD - GitHub",
+      "url": "https://github.com/BytedTsinghua-SIA/Open-MOPD/blob/main/README.md",
+      "snippet": "Open-MOPD is a local training and evaluation stack for multi-teacher on-policy distillation of reasoning models. It includes supervised fine-tuning, GRPO/RL, single-teacher OPD, multi-teacher OPD, and offline evaluation workflows."
+    },
+    {
+      "title": "BytedTsinghua-SIA (BytedTsinghua-SIA) - Hugging Face",
+      "url": "https://huggingface.co/BytedTsinghua-SIA/collections",
+      "snippet": "Org profile for BytedTsinghua-SIA on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM3-3B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BytedTsinghua-SIA — papers and benchmarks | Papers with Code",
+      "url": "https://paperswithcode.co/orgs/bytedtsinghua-sia",
+      "snippet": "In plain terms, the checkpoint pair tells us which actions RL made the weak model more or less likely to take, and Direct-OPD applies that signal on the stronger student&#x27;s own on-policy states. This directly reuses the weak model&#x27;s RL supervision signal without running sparse-reward RL on the target model."
+    }
+  ]
+}

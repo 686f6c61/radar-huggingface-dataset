@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "d9beuD/Qwen3.8-27B-oQ2.7-mtp",
+  "slug": "d9beud-qwen3-8-27b-oq2-7-mtp",
+  "author": "d9beuD",
+  "url": "https://huggingface.co/d9beuD/Qwen3.8-27B-oQ2.7-mtp",
+  "created_at": "2026-08-15T02:25:01.000Z",
+  "updated_at": "2026-08-15T02:30:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": 3884219632,
+  "parameters_human": "3.88B",
+  "storage_bytes": 12814209798,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

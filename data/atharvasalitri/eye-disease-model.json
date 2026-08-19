@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AtharvaSalitri/eye-disease-model",
+  "slug": "atharvasalitri-eye-disease-model",
+  "author": "AtharvaSalitri",
+  "url": "https://huggingface.co/AtharvaSalitri/eye-disease-model",
+  "created_at": "2026-08-18T11:14:41.000Z",
+  "updated_at": "2026-08-18T11:18:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1240223272,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "️ Eye Diseases Classification With Streamlit App - GitHub",
+      "url": "https://github.com/the-amazing-atharva/Ocular-Diseases-Detection-using-CNN-Deep-Learning",
+      "snippet": "🔬 Explainable AI The application uses Grad-CAM (Gradient-weighted Class Activation Mapping) to visualize areas of the retinal image that contributed to the model&#x27;s prediction. Grad-CAM is provided for interpretability and should not be considered a clinical explanation."
+    },
+    {
+      "title": "A comprehensive review of artificial intelligence models for screening ...",
+      "url": "https://link.springer.com/article/10.1007/s10462-024-10736-z",
+      "snippet": "This paper provides a systematic survey of artificial intelligence (AI) models that have been proposed over the past decade to screen retinal diseases, which can cause severe visual impairments or even blindness. The paper covers both the clinical and technical perspectives of using AI models in hosipitals to aid ophthalmologists in promptly identifying retinal diseases in their early stages ..."
+    },
+    {
+      "title": "Implementing and evaluating a fully functional AI-enabled model for ...",
+      "url": "https://link.springer.com/article/10.1186/s12886-024-03306-y",
+      "snippet": "Background Artificial intelligence (AI) has the potential to increase the affordability and accessibility of eye disease screening, especially with the recent approval of AI-based diabetic retinopathy (DR) screening programs in several countries. Methods This study investigated the performance, feasibility, and user experience of a seamless hardware and software solution for screening chronic ..."
+    },
+    {
+      "title": "️ Eye Disease Detection - GitHub",
+      "url": "https://github.com/manasabezawada-gec/Eye_Disease_Detection-Using-Deep-Learning",
+      "snippet": "📷 Upload an eye image for disease detection. 🔍 AI-Powered Prediction using a trained model. 🎨 Smooth UI with a blurred background & animations. 📱 Responsive Design (works on mobile & desktop)."
+    },
+    {
+      "title": "Eye Care: Predicting Eye Diseases Using Deep Learning Based on ... - MDPI",
+      "url": "https://www.mdpi.com/2079-3197/13/4/91",
+      "snippet": "Eye illness detection is important, yet it can be difficult and error-prone. In order to effectively and promptly diagnose eye problems, doctors must use cutting-edge technologies. The goal of this research paper is to develop a sophisticated model that will help physicians detect different eye conditions early on. These conditions include age-related macular degeneration (AMD), diabetic ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_random_b2000_s0",
+  "slug": "amberyifan-capsd-qwen35-numina-qwen3-5-4b-base-math_random_b2000_s0",
+  "author": "AmberYifan",
+  "url": "https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_random_b2000_s0",
+  "created_at": "2026-08-16T19:30:25.000Z",
+  "updated_at": "2026-08-16T19:31:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098617686,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5 - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/qwen35",
+      "snippet": "Qwen3.5 is Qwen&#x27;s new model family including Qwen3.5 Small: 0.8B, 2B, 4B, 9B and Qwen3.5 Medium: 35B-A3B, 27B, 122B-A10B and 397B-A17B."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3.5-4B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen35-4b",
+      "snippet": "Qwen3.5-4B exhibits strong transparency in its architectural specifications and licensing, providing clear technical details on its hybrid attention mechanism and permissive open-source terms."
+    }
+  ]
+}

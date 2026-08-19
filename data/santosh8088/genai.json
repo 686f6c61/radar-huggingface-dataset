@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Santosh8088/GenAI",
+  "slug": "santosh8088-genai",
+  "author": "Santosh8088",
+  "url": "https://huggingface.co/Santosh8088/GenAI",
+  "created_at": "2026-08-17T04:47:35.000Z",
+  "updated_at": "2026-08-17T04:50:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Ganesh-Kunnamkumarath/From-Zero-to-GenAI: A structured guide ...",
+      "url": "https://github.com/Ganesh-Kunnamkumarath/From-Zero-to-GenAI",
+      "snippet": "The From-Zero-to-GenAI project is a structured, hands-on guide to mastering Generative AI (GenAI) from scratch. Whether you&#x27;re a complete beginner or a developer looking to dive deep, this repository provides a step-by-step approach with real-world coding exercises, structured explanations, and Hugging Face deployments."
+    },
+    {
+      "title": "GitHub - genieincodebottle/generative-ai: Comprehensive resources on ...",
+      "url": "https://github.com/genieincodebottle/generative-ai",
+      "snippet": "I built AI-ML Companion - every AI, ML, GenAI and Agentic AI concept covered here, taught visually with animated diagrams, quizzes, and hands-on Python. The guides below are the full, continuously-updated versions of the reference material in this repo."
+    },
+    {
+      "title": "How to choose the right gen AI model | Google Cloud Blog",
+      "url": "https://cloud.google.com/transform/choosing-right-gen-ai-model-trade-offs-benefits-the-prompt",
+      "snippet": "Gemini gems - AI summary Not all problems are best solved with gen AI, which excels at tasks involving unstructured data and creative applications. Choosing the right model involves balancing various factors like governance, use case, performance, data, and resources."
+    },
+    {
+      "title": "Generative AI Models Compared: 9 Top Tools (2026)",
+      "url": "https://albato.com/blog/publications/how-to-choose-the-right-tool-a-comparison-of-top-gen-ai-models",
+      "snippet": "Compare the top generative AI models for 2026: ChatGPT, Claude, Gemini, Grok, DeepSeek, and more, with specs, strengths, pricing, and best-fit use cases."
+    },
+    {
+      "title": "Generative AI Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/generative-ai-tutorial/",
+      "snippet": "Generative AI focuses on building models that can create new content such as text, images, audio and code by learning patterns from existing data to generate human‑like outputs across various domains. It is widely used in chatbots, content creation, design and automation."
+    }
+  ]
+}

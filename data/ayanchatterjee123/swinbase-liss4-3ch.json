@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "ayanchatterjee123/swinbase-liss4-3ch",
+  "slug": "ayanchatterjee123-swinbase-liss4-3ch",
+  "author": "ayanchatterjee123",
+  "url": "https://huggingface.co/ayanchatterjee123/swinbase-liss4-3ch",
+  "created_at": "2026-08-13T19:41:56.000Z",
+  "updated_at": "2026-08-16T14:11:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56053156203,
+  "storage_human": "56.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

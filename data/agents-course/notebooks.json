@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "agents-course/notebooks",
+  "slug": "agents-course-notebooks",
+  "author": "agents-course",
+  "url": "https://huggingface.co/agents-course/notebooks",
+  "created_at": "2025-02-10T17:02:18.000Z",
+  "updated_at": "2026-04-27T08:00:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 738,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11564978,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - towardsai/agent-course-notebooks: This is a repository for the ...",
+      "url": "https://github.com/towardsai/agent-course-notebooks/tree/main/",
+      "snippet": "You can find all the course notebooks in the notebooks directory. These notebooks cover various aspects of building agentic systems with models from setting up web search, connecting agents, adding human feedback, building your evaluations and monitoring to creating MCP servers, providing both theoretical background and practical, hands-on examples."
+    },
+    {
+      "title": "agents-course/notebooks · Hugging Face",
+      "url": "https://huggingface.co/agents-course/notebooks",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "notebooks: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/notebooks-agents-course",
+      "snippet": "Overview notebooks is a collection of educational Jupyter notebooks and Python scripts maintained by agents-course as part of the Hugging Face Agents Course. This is not a machine learning model itself, but rather a practical curriculum resource containing working implementations across multiple agent frameworks and architectures. The collection spans foundational concepts through production ..."
+    },
+    {
+      "title": "agent-course-notebooks/README.md at main · towardsai/agent ... - GitHub",
+      "url": "https://github.com/towardsai/agent-course-notebooks/blob/main/README.md",
+      "snippet": "You can find all the course notebooks in the notebooks directory. These notebooks cover various aspects of building agentic systems with models from setting up web search, connecting agents, adding human feedback, building your evaluations and monitoring to creating MCP servers, providing both theoretical background and practical, hands-on examples."
+    },
+    {
+      "title": "Hugging Face Agents Course",
+      "url": "https://huggingface.co/agents-course",
+      "snippet": "Org profile for Hugging Face Agents Course on Hugging Face, the AI community building the future."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ShiangYu/act_so101_pick_place_v3",
+  "slug": "shiangyu-act_so101_pick_place_v3",
+  "author": "ShiangYu",
+  "url": "https://huggingface.co/ShiangYu/act_so101_pick_place_v3",
+  "created_at": "2026-08-17T04:03:21.000Z",
+  "updated_at": "2026-08-17T04:03:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:ShiangYu/so101_pick_place_merged_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ShiangYu/act_so101_pick_place · Hugging Face",
+      "url": "https://huggingface.co/ShiangYu/act_so101_pick_place",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ShiangYu/so101_pick_place_20260806_134107 - Hugging Face",
+      "url": "https://huggingface.co/datasets/ShiangYu/so101_pick_place_20260806_134107",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Jaskaran3010/so101-act-policy",
+      "url": "https://github.com/Jaskaran3010/so101-act-policy",
+      "snippet": "End-to-end implementation of an Action Chunking with Transformers (ACT) policy for the SO-101 robot arm, trained entirely on local hardware for pick-and-place manipulation tasks. This project demonstrates the complete robotics learning pipeline from calibration to real-world deployment. The SO-101 ..."
+    },
+    {
+      "title": "GitHub - pepsiccc/so101-act-imitation-learning",
+      "url": "https://github.com/pepsiccc/so101-act-imitation-learning/tree/main",
+      "snippet": "Contribute to pepsiccc/so101-act-imitation-learning development by creating an account on GitHub."
+    },
+    {
+      "title": "Train an ACT Policy for an SO-101 Robot using LeRobot",
+      "url": "https://trelis.substack.com/p/train-an-act-policy-for-an-so-101",
+      "snippet": "A detailed walkthrough of training an Action Chunking Transformer (ACT) policy on an S0-101 robot arm for a pick-and-place task, using the lerobot library. The process involves data collection through teleoperation, model training, and performance evaluation."
+    }
+  ]
+}

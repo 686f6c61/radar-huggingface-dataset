@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Minbyul/Qwen3.5-35B-A3B-Correct",
+  "slug": "minbyul-qwen3-5-35b-a3b-correct",
+  "author": "Minbyul",
+  "url": "https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Correct",
+  "created_at": "2026-08-18T11:17:40.000Z",
+  "updated_at": "2026-08-18T11:17:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "web-search-agent",
+    "tool-use",
+    "agent",
+    "supervised-fine-tuning",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minbyul/AgentMercury-Qwen3.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 Model Series 2026: Complete Guide to Flash, 27B, 35B-A3B and ...",
+      "url": "https://explore.n1n.ai/blog/qwen3-5-model-series-2026-guide-2026-02-25",
+      "snippet": "An in-depth technical analysis of Alibaba&#x27;s Qwen3.5 release, covering MoE efficiency, native multimodal architecture, and deployment strategies for the 2026 AI landscape."
+    },
+    {
+      "title": "Qwen 3.5 35B-A3B - CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-35b-a3b",
+      "snippet": "Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency ..."
+    },
+    {
+      "title": "qwen3.5:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:35b-a3b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3.5 35B A3B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen35-35b-a3b",
+      "snippet": "Qwen3.5 35B A3B: Unified Vision-Language MoE Reasoning Model Qwen3.5 35B A3B is a multimodal mixture-of-experts foundation model from Alibaba&#x27;s Qwen team, featuring a hybrid Gated DeltaNet and sparse MoE architecture. It has 35 billion total parameters with 3 billion activated per token, delivering high-throughput inference at minimal latency."
+    }
+  ]
+}

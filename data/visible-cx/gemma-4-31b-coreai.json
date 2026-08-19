@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "visible-cx/Gemma-4-31B-CoreAI",
+  "slug": "visible-cx-gemma-4-31b-coreai",
+  "author": "visible-cx",
+  "url": "https://huggingface.co/visible-cx/Gemma-4-31B-CoreAI",
+  "created_at": "2026-08-17T11:28:53.000Z",
+  "updated_at": "2026-08-17T22:42:32.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "core-ai",
+    "aimodel",
+    "apple-silicon",
+    "on-device",
+    "quantized",
+    "int4",
+    "qat",
+    "gemma4",
+    "text-generation",
+    "base_model:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "base_model:finetune:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20122085327,
+  "storage_human": "20.1 GB",
+  "base_model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Native System Prompt Support: Gemma 4 introduces built-in support for the system role, enabling more structured and controllable conversations. Multi-Token Prediction: All Gemma 4 models (E2B, E4B, 12B, 31B, and 26B A4B) include a dedicated draft model for speculative decoding, enabling significantly faster inference with no quality loss."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "coreai-model-zoo/models/gemma4-31b at main · john-rocky ... - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/tree/main/models/gemma4-31b",
+      "snippet": "A frontier 31B dense at int4 is bandwidth-bound, so decode (17.2 tok/s) is in the public Q4 Mac range (Ollama ~18-24) — the win is \"Core AI runs a frontier dense model that the stock engine cannot.\""
+    },
+    {
+      "title": "README.md · mlboydaisuke/Gemma-4-31B-CoreAI at main",
+      "url": "https://huggingface.co/mlboydaisuke/Gemma-4-31B-CoreAI/blob/main/README.md",
+      "snippet": "/ Gemma-4-31B-CoreAI like 0 Text Generation coreai core-ai apple gemma gemma-4 on-device metal License:gemma Model card FilesFiles and versions xet Community Copy to bucket new main Gemma-4-31B-CoreAI /README.md mlboydaisuke Gemma 4 31B: model card 519b356 verifiedabout 7 hours ago preview code | raw Copy download link history blame contribute ..."
+    }
+  ]
+}

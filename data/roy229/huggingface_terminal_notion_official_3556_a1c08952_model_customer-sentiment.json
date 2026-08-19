@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_terminal_notion_official_3556_a1c08952_model_customer-sentiment",
+  "slug": "roy229-huggingface_terminal_notion_official_3556_a1c08952_model_customer-sentiment",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_a1c08952_model_customer-sentiment",
+  "created_at": "2026-08-15T05:48:33.000Z",
+  "updated_at": "2026-08-15T05:48:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:45:28.745Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face Discloses Intrusion Run End-to-End by an AI Agent",
+      "url": "https://rits.shanghai.nyu.edu/ai/hugging-face-intrusion-openai-attribution/",
+      "snippet": "Update — July 22, 2026: OpenAI has taken responsibility for this intrusion. On July 21 the company disclosed that the \"autonomous AI agent\" Hugging Face detected was a combination of OpenAI&#x27;s own models — including GPT‑5.6 Sol and an unreleased, more capable model — which escaped a sandboxed internal evaluation and attacked Hugging Face&#x27;s production systems in order to cheat on ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI&#x27;s rogue agent compromised a customer at a second tech ... - CNBC",
+      "url": "https://www.cnbc.com/2026/07/29/openais-rogue-agent-compromised-a-customer-at-a-second-tech-firm.html",
+      "snippet": "The rogue agent that escaped from OpenAI and went on a days-long hacking spree at the AI firm Hugging Face also compromised a customer at a second tech company — New York-based Modal Labs ..."
+    },
+    {
+      "title": "Command Line Interface (CLI) · Hugging Face",
+      "url": "https://huggingface.co/docs/huggingface_hub/guides/cli",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The AI workspace that works for you. | Notion",
+      "url": "https://www.notion.com/",
+      "snippet": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/reaperdoesntknow",
+  "slug": "reaperdoesntknow-reaperdoesntknow",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/reaperdoesntknow",
+  "created_at": "2026-08-03T18:11:45.000Z",
+  "updated_at": "2026-08-17T13:17:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/reaperdoesntknow · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/reaperdoesntknow",
+      "snippet": "Roy C · independent ML researcher & AI red-teamer Open-weight models, adversarial evaluation, and efficient training at the small-model scale. I build and ship small open-weight language models — 50+ public checkpoints, quantized for edge and picked up by third-party quantizers (mradermacher) for independent re-hosting."
+    },
+    {
+      "title": "Shepherd - a reaperdoesntknow Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/reaperdoesntknow/shepherd",
+      "snippet": "The first defense AI reasoning model&#x27;s on Hugging Face."
+    },
+    {
+      "title": "reaperdoesntknow / Discovery - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/reaperdoesntknow/Discovery/0c82bdc00a8a796e74c1bd00db7fe0d8bf2d235f/versions",
+      "snippet": "Discover potential threats in the reaperdoesntknow / Discovery model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "Insights DB - Protect AI",
+      "url": "https://protectai.com/insights/models/reaperdoesntknow/Discovery/a35b9c7a8dd1e7c65b85c660f0bbace9820d8701/overview",
+      "snippet": "Discover potential threats in the reaperdoesntknow / Discovery model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "reaperdoesntknow/DistilQwen3-1.7B-uncensored - Fast, Reliable, and ...",
+      "url": "https://friendli.ai/models/reaperdoesntknow/DistilQwen3-1.7B-uncensored",
+      "snippet": "Run reaperdoesntknow/DistilQwen3-1.7B-uncensored with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "altic-dev/Fluid-1-Pico-0.8B-CoreML",
+  "slug": "altic-dev-fluid-1-pico-0-8b-coreml",
+  "author": "altic-dev",
+  "url": "https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-CoreML",
+  "created_at": "2026-07-28T22:18:28.000Z",
+  "updated_at": "2026-08-19T01:00:44.000Z",
+  "license": "altic-non-commercial-with-apache-2.0-upstream",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1025419142,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "altic-dev/Fluid-1-Pico-0.8B-CoreML · Hugging Face",
+      "url": "https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-CoreML",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "altic-dev/Fluid-1-Pico-0.8B-CoreML at main - Hugging Face",
+      "url": "https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-CoreML/tree/main",
+      "snippet": "0 Follow ALTIC 3 License:altic-non-commercial-with-apache-2.-upstream Model card FilesFiles and versions xet Community Copy to bucket new main Fluid-1-Pico-.8B-CoreML 577 MB Ctrl+K Ctrl+K 1 contributor History:4 commits ALTICDEV Minimize public model card details 63f84f8 verified2 days ago mtp_front_fused.mlmodelcAdd files using upload-large ..."
+    },
+    {
+      "title": "README.md · altic-dev/Fluid-1-Pico-0.8B-CoreML at main",
+      "url": "https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-CoreML/blob/main/README.md",
+      "snippet": "Licensing This artifact contains components derived from Qwen3.5-0.8B, licensed under the Apache License 2.0. See LICENSE-QWEN-APACHE-2.. ALTIC&#x27;s contributions are subject to ALTIC-MODEL-TERMS.md. Commercial use, redistribution, hosted resale, or third-party integration requires prior written permission from ALTIC."
+    },
+    {
+      "title": "altic-dev/Fluid-1-Pico-CoreML at main - Hugging Face",
+      "url": "https://huggingface.co/altic-dev/Fluid-1-Pico-CoreML/tree/main",
+      "snippet": "like 0 Follow ALTIC 3 Text Generation Core ML ios on-device fluid-1 License:lfm-open-license-v1. Model card FilesFiles and versions xet Community Copy to bucket new main Fluid-1-Pico-CoreML 367 MB Ctrl+K Ctrl+K 1 contributor History:2 commits ALTICDEV Publish Fluid-1 Pico 03fba3c verifiedabout 4 hours ago chunk_0.mlmodelcPublish Fluid-1 ..."
+    },
+    {
+      "title": "ALTIC-MODEL-TERMS.md · altic-dev/Fluid-1-Pico-0.8B-CoreML at main",
+      "url": "https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-CoreML/blob/main/ALTIC-MODEL-TERMS.md",
+      "snippet": "These additional terms apply to ALTIC&#x27;s fine-tuning, parameter modifications, Core ML graph conversion, optimization, packaging, and compiled distribution of Fluid-1 Pico (the \"ALTIC Contributions\")."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AI-APIs/Nano-Banana-API",
+  "slug": "ai-apis-nano-banana-api",
+  "author": "AI-APIs",
+  "url": "https://huggingface.co/AI-APIs/Nano-Banana-API",
+  "created_at": "2026-08-14T21:51:03.000Z",
+  "updated_at": "2026-08-14T21:51:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nano-banana",
+    "text-to-image",
+    "image-to-image",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nano Banana Pricing - Nano Banana - High Quality",
+      "url": "https://duckduckgo.com/y.js?ad_domain=bananaprostudio.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=%2DjfCXNqM4eWLKV8DI5npI7vSZkHzn_DW4QMTN8y3fJL%2Dwfh9OdhVHm4lX8NhgttHyRmvPKfG9tJy76_cPl9spucolJksO00pCPktkRY81rWf1D1UVgk81x4RSElMwWR5WTh5h5W7jfsCg3ocJS2HVySszWL1ckOBSIXr8gouWtU.Vc0do1X9JMz14MuM5dWpLw&rut=c13bedd9e9d7a37d45ee83f67e8b46fcac22e31cadd64140d3107384342a3112&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De89yLI3heBdHuN60Qn2hDPWDVUCUy9tZwz02qyrJXQ_mPa616Z917eeVD2yay5J2t3ygpNzYfoNSiN4j3K2HhMB4S0VwhpXgaZsoHSiBHEjrmrBtVnxJdTMnedA7%2D3dfm6q%2DyPWNryynXPqYsN4p8V1jY0JbFSvCm7zyw6IiE7bteC2RHJLGlIu15GbdNLvjhylMNQjNrhY7_SPFApwzsyaJBcm9A%26u%3DaHR0cHMlM2ElMmYlMmZiYW5hbmFwcm9zdHVkaW8uY29tJTJmZGFzaGJvYXJkJTNmdXJsJTNkaHR0cHMlMjUzQSUyNTJGJTI1MkZiYW5hbmFwcm9zdHVkaW8uY29tJTI1MkZkYXNoYm9hcmQlMjUzRnV0bV9zb3VyY2UlMjUzRGJpbmdfYWRzJTI2bXNjbGtpZCUzZDQ5Y2JiZWJmYTY2NzFhZDBmNTRlZDRjMDNiYjg1ZGE1%26rlid%3D49cbbebfa6671ad0f54ed4c03bb85da5&vqd=4-304271993835075426507623353322441697805&iurl=%7B1%7DIG%3DD30C103F546C465ABF4DDABCAB20B593%26CID%3D258AD5D16EC46E583AF5C2646FE26F87%26ID%3DDevEx%2C5037.1",
+      "snippet": "Nano Banana AI - Advanced Image Editor. Try Nano Banana AI Right Now"
+    },
+    {
+      "title": "Nano Banana API Documentation | Nano Banana",
+      "url": "https://docs.nananobanana.com/en/api",
+      "snippet": "Nano Banana API Documentation Programmatically generate AI images via REST API. Supports text-to-image, image-to-image, and three request modes: sync, stream, and async. 1. Quick Start Step 1: Get an API Key Go to Settings -> API Keys on the website to create an API Key. Step 2: Send a Request"
+    },
+    {
+      "title": "AI-APIs/Nano-Banana-API · Hugging Face",
+      "url": "https://huggingface.co/AI-APIs/Nano-Banana-API",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nano Banana API — Image Editing API for Developers | NanoBanana AI",
+      "url": "https://ai-nanobanana.com/api",
+      "snippet": "Request access to the Nano Banana image editing API for developers."
+    },
+    {
+      "title": "Welcome to NanoBanana API - Mint Starter Kit",
+      "url": "https://docs.nanobananaapi.ai/",
+      "snippet": "Quick Start Follow our quickstart guide to begin using NanoBanana API services. ... Explore our comprehensive suite of AI-powered APIs designed to enhance your applications."
+    }
+  ]
+}

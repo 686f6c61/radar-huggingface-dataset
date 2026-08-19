@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Kn90688/mlx-fireredasr",
+  "slug": "kn90688-mlx-fireredasr",
+  "author": "Kn90688",
+  "url": "https://huggingface.co/Kn90688/mlx-fireredasr",
+  "created_at": "2026-08-17T11:44:53.000Z",
+  "updated_at": "2026-08-17T11:57:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "fireredasr2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 280534648,
+  "parameters_human": "280.5M",
+  "storage_bytes": 1122323214,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kn90688 (Guodong Fei) - Hugging Face",
+      "url": "https://huggingface.co/Kn90688",
+      "snippet": "Recent Activity updated a modelabout 21 hours ago Kn90688/FireRedASR2 published a modelabout 21 hours ago Kn90688/FireRedASR2 updated a model3 days ago Kn90688/FireRedASR2-AED-int8-batch-onnx View all activity"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=fireredasr",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: fireredasr Clear all"
+    },
+    {
+      "title": "FireRedASR: Open-Source Industrial-Grade - GitHub",
+      "url": "https://github.com/FireRedTeam/FireRedASR",
+      "snippet": "FireRedASR is a family of open-source industrial-grade automatic speech recognition (ASR) models supporting Mandarin, Chinese dialects and English, achieving a new state-of-the-art (SOTA) on public Mandarin ASR benchmarks, while also offering outstanding singing lyrics recognition capability."
+    },
+    {
+      "title": "FireRedASR: Open-Source Industrial-Grade Mandarin Speech Recognition ...",
+      "url": "https://arxiv.org/html/2501.14350",
+      "snippet": "FireRedASR-LLM is also an end-to-end ASR model but designed to integrate robust speech processing capabilities of FireRedASR-AED with the superior language capabilities of LLM."
+    },
+    {
+      "title": "GitHub - FireRedTeam/FireRedChat: A Fully Self-Hosted Solution for Full ...",
+      "url": "https://github.com/FireRedTeam/FireRedChat",
+      "snippet": "Launch the additional servers required for voice processing and AI functionality. FireRedASR Service (Automatic Speech Recognition): Refer to the ASR Server README for setup instructions. FireRedTTS Service (Text-to-Speech): Refer to the TTS Server README for setup instructions. LLM Service Deploy a self-hosted LLM server to power the AI agents."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cagataydev/smolvla_tictactoe_vision_unfrozen",
+  "slug": "cagataydev-smolvla_tictactoe_vision_unfrozen",
+  "author": "cagataydev",
+  "url": "https://huggingface.co/cagataydev/smolvla_tictactoe_vision_unfrozen",
+  "created_at": "2026-08-17T14:00:29.000Z",
+  "updated_at": "2026-08-17T16:58:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "tictactoe",
+    "robotics",
+    "vision-language-action",
+    "strands-robots",
+    "so-101",
+    "dataset:HashtagRobotics/tic-tac-toe-so101-block-a-clean-v1",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720056,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Arctos-Robotics/Computer-vision",
+      "url": "https://github.com/Arctos-Robotics/Computer-vision",
+      "snippet": "This repository provides a fun, pre-configured Tic Tac Toe game where the computer uses YOLOv3 for computer vision to play Tic Tac Toe against a human player. The system is ready to run inside a virtual machine (VM) with ROS (Robot Operating System) and darknet_ros already set up."
+    },
+    {
+      "title": "Tic-Tac-Toe-computervision-robot/main.py at main - GitHub",
+      "url": "https://github.com/KnutOplandMoen/Tic-Tac-Toe-computervision-robot/blob/main/main.py",
+      "snippet": "This project showcases a fully autonomous Tic-Tac-Toe robot that uses computer vision, AI, and robotics to play against a human opponent. The robot \"sees\" the game board through a camera, \"thinks\" using the minimax algorithm, and \"acts\" with an Arduino-controlled servo motor arm."
+    },
+    {
+      "title": "Gesture-Controlled Tic Tac Toe with AI and Computer Vision - LinkedIn",
+      "url": "https://www.linkedin.com/posts/codalgo_ai-computervision-python-activity-7447647360714743809-u24q",
+      "snippet": "I built Tic-Tac-Toe without touching my keyboard… and it actually worked 🤯 Built a gesture-controlled Tic-Tac-Toe game using Computer Vision + AI. 👉 No mouse 👉 No keyboard 👉 Just ..."
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "DamonSkap/smolvla_ttt_unfrozen · Hugging Face",
+      "url": "https://huggingface.co/DamonSkap/smolvla_ttt_unfrozen",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    }
+  ]
+}

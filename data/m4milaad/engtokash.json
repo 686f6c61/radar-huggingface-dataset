@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "m4milaad/engtokash",
+  "slug": "m4milaad-engtokash",
+  "author": "m4milaad",
+  "url": "https://huggingface.co/m4milaad/engtokash",
+  "created_at": "2026-08-17T17:44:38.000Z",
+  "updated_at": "2026-08-17T17:46:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46426634,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "m4milaad (Milad Ajaz ) · GitHub",
+      "url": "https://github.com/m4milaad",
+      "snippet": "B.Tech Student. m4milaad has 33 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Milad Ajaz Bhat | Portfolio",
+      "url": "https://m4milaad.tech/",
+      "snippet": "Personal portfolio of Milad Ajaz Bhat showcasing projects in AI, machine learning, web development, and software engineering."
+    },
+    {
+      "title": "Milad Ajaz Bhat - Mentor at Social Winter of Code (SWOC) | LinkedIn",
+      "url": "https://in.linkedin.com/in/m4milaad",
+      "snippet": "Mentor at Social Winter of Code (SWOC) · Currently serving as Campus Lead at Open Source Connect, contributing to the promotion of open-source initiatives. Previously, gained hands-on experience as a Student Intern at Skillified Mentor, where work included building a machine learning model for cancer diagnosis and analyzing health-related datasets to identify disease risks. Further experience ..."
+    },
+    {
+      "title": "GitHub - m4milaad/mabchatbot",
+      "url": "https://github.com/m4milaad/mabchatbot",
+      "snippet": "Model Providers This template ships with xAI grok-2-1212 as the default chat model. However, with the AI SDK, you can switch LLM providers to OpenAI, Anthropic, Cohere, and many more with just a few lines of code."
+    },
+    {
+      "title": "AI Models - Llama, DeepSeek, Qwen | AkashML",
+      "url": "https://akashml.com/models",
+      "snippet": "Explore our comprehensive library of AI models including Llama 3.3-70B, DeepSeek V3, and Qwen3-30B-A3B. High-performance inference with competitive pricing starting from $0.15/M tokens."
+    }
+  ]
+}

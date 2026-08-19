@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dlab-cmu/sf-map-qwen3.6-27b",
+  "slug": "dlab-cmu-sf-map-qwen3-6-27b",
+  "author": "dlab-cmu",
+  "url": "https://huggingface.co/dlab-cmu/sf-map-qwen3.6-27b",
+  "created_at": "2026-08-17T22:53:12.000Z",
+  "updated_at": "2026-08-17T23:47:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "quantization",
+    "codebook",
+    "sf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Introduction Qwen3.6 Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "How to Run Qwen 3.6 Locally - 27B Dense, 35B MoE, and Coding Variants ...",
+      "url": "https://dev.to/purpledoubled/how-to-run-qwen-36-locally-27b-dense-35b-moe-and-coding-variants-setup-guide-4di",
+      "snippet": "Originally published on locallyuncensored.com Qwen 3.6 dropped on April 21 2026. Two main families: a 27B dense model that activates every parameter per token and a 35B MoE with 3B active per token. Both ship with vision, agentic coding, thinking-mode preservation, and a 256K context window."
+    },
+    {
+      "title": "Qwen3.6 Models | QwenLM/Qwen3.6 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3.6/1.1-qwen3.6-models",
+      "snippet": "Qwen3.6 Models Relevant source files This page provides a detailed technical overview of the Qwen3.6 model family, focusing on the 27B dense model and the 35B-A3B sparse Mixture-of-Experts (MoE) model. Building upon the architectural foundations of Qwen3.5, the Qwen3.6 series introduces specialized capabilities for Agentic Coding and Thinking Preservation, designed to enhance real-world ..."
+    }
+  ]
+}

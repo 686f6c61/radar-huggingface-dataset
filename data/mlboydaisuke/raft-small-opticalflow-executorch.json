@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/RAFT-small-OpticalFlow-ExecuTorch",
+  "slug": "mlboydaisuke-raft-small-opticalflow-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/RAFT-small-OpticalFlow-ExecuTorch",
+  "created_at": "2026-08-14T21:48:26.000Z",
+  "updated_at": "2026-08-15T05:14:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "executorch-pte",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "optical-flow",
+    "video",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4420744,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "raft_small — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.optical_flow.raft_small.html",
+      "snippet": "Default is True. **kwargs - parameters passed to the torchvision.models.optical_flow.RAFT base class. Please refer to the source code for more details about this class. class torchvision.models.optical_flow.Raft_Small_Weights(value)[source] ¶ The model builder above accepts the following values as the weights parameter."
+    },
+    {
+      "title": "raft_small — Torchvision main documentation",
+      "url": "https://brianjo.github.io/vision/stable/generated/torchvision.models.optical_flow.raft_small.html",
+      "snippet": "raft_small torchvision.models.optical_flow.raft_small(*, pretrained=False, progress=True, **kwargs) [source] RAFT \"small\" model from RAFT: Recurrent All Pairs Field Transforms for Optical Flow. Please see the example below for a tutorial on how to use this model. Parameters pretrained (bool) - Whether to use weights that have been pre-trained on FlyingChairs + FlyingThings3D. progress ..."
+    },
+    {
+      "title": "GitHub - princeton-vl/RAFT",
+      "url": "https://github.com/princeton-vl/RAFT",
+      "snippet": "Contribute to princeton-vl/RAFT development by creating an account on GitHub."
+    },
+    {
+      "title": "vision/torchvision/models/optical_flow/raft.py at main - GitHub",
+      "url": "https://github.com/pytorch/vision/blob/main/torchvision/models/optical_flow/raft.py",
+      "snippet": "Datasets, Transforms and Models specific to Computer Vision - pytorch/vision"
+    },
+    {
+      "title": "plot_optical_flow.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pytorch/vision/blob/gh-pages/main/_generated_ipynb_notebooks/plot_optical_flow.ipynb",
+      "snippet": "We will use our RAFT implementation from :func: ~torchvision.models.optical_flow.raft_large, which follows the same architecture as the one described in the original paper. We also provide the :func: ~torchvision.models.optical_flow.raft_small model builder, which is smaller and faster to run, sacrificing a bit of accuracy."
+    }
+  ]
+}

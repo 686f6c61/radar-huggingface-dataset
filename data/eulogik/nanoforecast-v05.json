@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "eulogik/nanoforecast-v05",
+  "slug": "eulogik-nanoforecast-v05",
+  "author": "eulogik",
+  "url": "https://huggingface.co/eulogik/nanoforecast-v05",
+  "created_at": "2026-07-24T18:21:41.000Z",
+  "updated_at": "2026-08-18T12:50:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "nanoforecast",
+  "languages": [],
+  "tags": [
+    "nanoforecast",
+    "safetensors",
+    "time-series",
+    "forecasting",
+    "pytorch",
+    "transformer",
+    "edge-ai",
+    "onnx",
+    "deployable",
+    "lightweight",
+    "cpu-inference",
+    "streaming",
+    "real-time",
+    "iot",
+    "raspberry-pi",
+    "quantile-regression",
+    "zero-shot",
+    "foundation-model",
+    "longconv",
+    "deltanet",
+    "multivariate",
+    "probabilistic-forecasting",
+    "uncertainty-quantification",
+    "time-series-forecasting",
+    "dataset:ETTh1",
+    "dataset:ETTh2",
+    "dataset:ETTm1",
+    "dataset:exchange_rate",
+    "dataset:electricity",
+    "dataset:traffic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 99,
+  "trending_score": 0,
+  "parameters": 6518104,
+  "parameters_human": "6.5M",
+  "storage_bytes": 26427607,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eulogik/nanoforecast-v05 · Hugging Face",
+      "url": "https://huggingface.co/eulogik/nanoforecast-v05",
+      "snippet": "nanoforecast-v05 like 0 Follow Eulogik 1 Time Series Forecasting Safetensors PyTorch ONNX 6 datasets nanoforecast time-series forecasting transformer edge-ai deployable lightweight cpu-inference streaming real-time iot raspberry-pi quantile-regression zero-shot foundation-model longconv deltanet multivariate probabilistic-forecasting ..."
+    },
+    {
+      "title": "GitHub - eulogik/NanoForecast: World&#x27;s most deployable time series ...",
+      "url": "https://github.com/eulogik/NanoForecast",
+      "snippet": "🔮 NanoForecast World&#x27;s most deployable time series transformer NanoForecast is the world&#x27;s most deployable time series foundation model — a tiny transformer for zero-shot forecasting, streaming inference, and edge deployment. At just 200K-6.5M parameters, it runs on CPU, Raspberry Pi, and in the browser via ONNX."
+    },
+    {
+      "title": "Eulogik — AI Infrastructure & Edge Intelligence",
+      "url": "https://eulogik.com/",
+      "snippet": "We design, train, and deploy bespoke AI models and enterprise systems — from our open-source edge models (pico-type, NanoForecast) to custom RAG terminals (LexRAG) and private on-premises infrastructure."
+    },
+    {
+      "title": "Nanoforecast - a Hugging Face Space by eulogik",
+      "url": "https://huggingface.co/spaces/eulogik/nanoforecast",
+      "snippet": "🔮 NanoForecast — Deployable Time Series Forecasting Upload your CSV or use an example. The smallest deployable time series model on the Hub (~700K params, runs on a Raspberry Pi, exports to 1.4 MB ONNX). GitHub · Model on HF · Paper / Docs"
+    },
+    {
+      "title": "Lab — Open Research & Models | Eulogik",
+      "url": "https://eulogik.com/lab",
+      "snippet": "Open-source AI models, technical research, and publications from Eulogik. pico-type, NanoForecast, TinyDoc-VLM, fugusashi, KARN, and more."
+    }
+  ]
+}

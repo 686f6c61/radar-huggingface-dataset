@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "bnewmiller/distilbert-base-uncased-finetuned-imdb",
+  "slug": "bnewmiller-distilbert-base-uncased-finetuned-imdb",
+  "author": "bnewmiller",
+  "url": "https://huggingface.co/bnewmiller/distilbert-base-uncased-finetuned-imdb",
+  "created_at": "2026-08-18T16:19:14.000Z",
+  "updated_at": "2026-08-18T16:29:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "fill-mask",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66985530,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267959969,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

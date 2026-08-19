@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ling-3.0-flash-fp8",
+  "slug": "inclusionai-ling-3-0-flash-fp8",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-fp8",
+  "created_at": "2026-08-04T03:59:52.000Z",
+  "updated_at": "2026-08-18T06:24:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bailing_hybrid",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 34,
+  "downloads_30d": 3281,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 128467919969,
+  "storage_human": "128.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/Ling-3.0-flash · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash-fp8 · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-fp8",
+      "snippet": "Introduction We&#x27;re introducing Ling-3.0-flash, our next-generation native hybrid reasoning model. Operating with 124B total and 5.1B active parameters (~12.4% and ~8.1% of our previous 1T-class flagship Ring-2.6-1T), Ling-3.0-flash matches or outperforms its predecessor across key benchmarks."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/inclusionAI/Ling-3.0-flash",
+      "snippet": "Ling-3.0-flash MoE model with BF16 and serialized block-FP8 checkpoints, 124B total / 5.5B active parameters, and a 3.1B MTP layer"
+    },
+    {
+      "title": "Ling-3.0-flash - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/inclusionai/ling-3.0-flash-20260723",
+      "snippet": "Ling-3.0-flash, an inclusionai 124B-parameter Mixture-of-Experts (MoE) model, demonstrates strong performance in speed, typically ranking among the fastest models with a 78th percentile across eight benchmarks."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    }
+  ]
+}

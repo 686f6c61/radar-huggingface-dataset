@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "TheOneWhoWill/Coding-Monkey-Gemma-GGUF",
+  "slug": "theonewhowill-coding-monkey-gemma-gguf",
+  "author": "TheOneWhoWill",
+  "url": "https://huggingface.co/TheOneWhoWill/Coding-Monkey-Gemma-GGUF",
+  "created_at": "2026-08-17T19:55:02.000Z",
+  "updated_at": "2026-08-18T04:24:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "gguf",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "base_model:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7381383328,
+  "storage_human": "7.4 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-7b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-7b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Gemma content generation and inferences - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/run",
+      "snippet": "Run Gemma content generation and inferences There are two key decisions to make when you want to run a Gemma model: 1) what Gemma variant you want to run, and 2) what AI execution framework you are going to use to run it? A key issue in making both these decisions has to do with what hardware you and your users have available to run the model."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package."
+    },
+    {
+      "title": "CodeMonkey1/gemma-superpowers-gguf · Hugging Face",
+      "url": "https://huggingface.co/CodeMonkey1/gemma-superpowers-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-gemma/cookbook: A collection of guides and examples for ...",
+      "url": "https://github.com/google-gemma/cookbook",
+      "snippet": "This is a collection of guides and examples for Google Gemma. Disclaimer: Gemma is a family of developer-focused models built by Google DeepMind. This cookbook is a collection of guides and examples for Google Gemma. Please keep in mind that Gemma is an open model and can hallucinate as you build on examples in this cookbook."
+    }
+  ]
+}

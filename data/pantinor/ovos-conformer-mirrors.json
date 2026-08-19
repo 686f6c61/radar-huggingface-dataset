@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "pantinor/ovos-conformer-mirrors",
+  "slug": "pantinor-ovos-conformer-mirrors",
+  "author": "pantinor",
+  "url": "https://huggingface.co/pantinor/ovos-conformer-mirrors",
+  "created_at": "2026-08-18T10:10:45.000Z",
+  "updated_at": "2026-08-18T10:12:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "it",
+    "ru",
+    "de",
+    "es",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "automatic-speech-recognition",
+    "sherpa-onnx",
+    "transducer",
+    "it",
+    "ru",
+    "de",
+    "es",
+    "en",
+    "fr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 854431847,
+  "storage_human": "854 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pantinor (Paolo Antinori) - Hugging Face",
+      "url": "https://huggingface.co/pantinor",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "pantinor (Paolo Antinori) - Hugging Face",
+      "url": "https://huggingface.co/pantinor/datasets",
+      "snippet": "Recent Activity updated a modelabout 15 hours ago pantinor/nemotron-3.5-asr-streaming-multilingual-.6b-int8-sherpa published a modelabout 15 hours ago pantinor/nemotron-3.5-asr-streaming-multilingual-.6b-int8-sherpa updated a modelabout 24 hours ago pantinor/nemotron-speech-streaming-en-.6b-560ms-int8-sherpa View all activity"
+    },
+    {
+      "title": "Mirror, Mirror… Who&#x27;s My Persona Today? (OVOS + MagicMirror² + Local ...",
+      "url": "https://blog.openvoiceos.org/posts/2025-08-23-enhance-magicmirror-with-ovos",
+      "snippet": "Daily-driver setup: keep skills first, add OVOS Persona right after the high-confidence matchers, and run a tiny local LLM. MagicMirror² shows the vibes with wakeword visuals and YouTube casting."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

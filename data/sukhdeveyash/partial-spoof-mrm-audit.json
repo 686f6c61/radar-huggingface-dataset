@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sukhdeveyash/partial-spoof-mrm-audit",
+  "slug": "sukhdeveyash-partial-spoof-mrm-audit",
+  "author": "sukhdeveyash",
+  "url": "https://huggingface.co/sukhdeveyash/partial-spoof-mrm-audit",
+  "created_at": "2026-06-17T00:14:28.000Z",
+  "updated_at": "2026-08-18T14:55:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "speech",
+    "anti-spoofing",
+    "partial-spoof",
+    "deepfake-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4190550691,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sukhdeveyash/partial-spoof-mrm-audit · Hugging Face",
+      "url": "https://huggingface.co/sukhdeveyash/partial-spoof-mrm-audit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sukhdeveyash/partial-spoof-mrm-audit at main - Hugging Face",
+      "url": "https://huggingface.co/sukhdeveyash/partial-spoof-mrm-audit/tree/main",
+      "snippet": "sukhdeveyash / partial-spoof-mrm-audit like 0 audio speech anti-spoofing partial-spoof deepfake-detection License:mit Model card FilesFiles and versions xet Community Copy to bucket new main partial-spoof-mrm-audit 4.19 GB Ctrl+K Ctrl+K 1 contributor History:4 commits sukhdeveyash Upload README.md with huggingface_hub ec43a75 verifiedabout 2 ..."
+    },
+    {
+      "title": "partial-spoof-cross-domain-audit-reproducibility/CHECKPOINTS ... - GitHub",
+      "url": "https://github.com/Yash-Sukhdeve/partial-spoof-cross-domain-audit-reproducibility/blob/main/CHECKPOINTS.md",
+      "snippet": "Integrity note: MRM is not the original Zhang et al. model. It is the open reimplementation MultiResoModel-Simple (Hieu-Thi Luong), which we trained ourselves on PartialSpoof (see TRAINING.md). The paper attributes it accordingly."
+    },
+    {
+      "title": "partial-spoof-cross-domain-audit-reproducibility/README.md at main ...",
+      "url": "https://github.com/Yash-Sukhdeve/partial-spoof-cross-domain-audit-reproducibility/blob/main/README.md",
+      "snippet": "Reproducibility Package \"How Trustworthy Are Partial Spoof Detectors? A Cross-Domain Operational Audit\" (IJCB 2026) Reproduces every number in the paper from the raw detector score outputs, and documents the exact detector checkpoints used. Built 2026-06-10; self-contained for the analysis/reproduction path (no GPU, no datasets needed)."
+    },
+    {
+      "title": "Robust Localization of Partially Fake Speech: Metrics and Out-of-Domain ...",
+      "url": "https://arxiv.org/html/2507.03468v3",
+      "snippet": "In this paper, we use two SSL-based fake speech localization systems to examine various aspects of evaluating and improving robustness in out-of-domain scenarios. Specifically, we utilize the Multi-resolution Model (MRM) 1, introduced alongside the PartialSpoof dataset [4], and the Coarse-to-Fine Proposal Refinement Framework (CFPRF) 2 [8]."
+    }
+  ]
+}

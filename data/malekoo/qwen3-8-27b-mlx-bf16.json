@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "malekoo/Qwen3.8-27B-MLX-bf16",
+  "slug": "malekoo-qwen3-8-27b-mlx-bf16",
+  "author": "malekoo",
+  "url": "https://huggingface.co/malekoo/Qwen3.8-27B-MLX-bf16",
+  "created_at": "2026-08-14T16:00:19.000Z",
+  "updated_at": "2026-08-14T16:31:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "conversational",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53812097954,
+  "storage_human": "53.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

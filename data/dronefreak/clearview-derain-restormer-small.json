@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "dronefreak/clearview-derain-restormer-small",
+  "slug": "dronefreak-clearview-derain-restormer-small",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/clearview-derain-restormer-small",
+  "created_at": "2026-08-17T19:31:23.000Z",
+  "updated_at": "2026-08-17T19:31:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "image-restoration",
+    "deraining",
+    "rain-removal",
+    "single-image-deraining",
+    "computer-vision",
+    "restormer",
+    "transformer",
+    "autonomous-driving",
+    "surveillance",
+    "clearview",
+    "mixed-domain",
+    "image-to-image",
+    "en",
+    "dataset:dronefreak/SPA-Data",
+    "dataset:dronefreak/RealRain-1k",
+    "dataset:dronefreak/Rain13K",
+    "dataset:dronefreak/DDN-Data",
+    "arxiv:2206.05514",
+    "arxiv:2111.09881",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9632505,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "clearview/clearview/models/restormer.py at main · dronefreak ... - GitHub",
+      "url": "https://github.com/dronefreak/clearview/blob/main/clearview/models/restormer.py",
+      "snippet": "495 lines (402 loc) · 15.5 KB main clearview / clearview / models / restormer.py Code Blame 495 lines (402 loc) · 15.5 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ..."
+    },
+    {
+      "title": "clearview/clearview/models at main · dronefreak/clearview · GitHub",
+      "url": "https://github.com/dronefreak/clearview/tree/main/clearview/models",
+      "snippet": "Fast and practical image deraining with PyTorch. Removes rain streaks using UNet. 30.9 PSNR on Rain1400. Live demo on HuggingFace. - dronefreak/clearview"
+    },
+    {
+      "title": "dronefreak/clearview-derain-resnet50-unet · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/clearview-derain-resnet50-unet",
+      "snippet": "ClearView: Image Deraining with ResNet50-UNet (Mixed-Domain) A U-Net [8] with a ResNet-50 [9] encoder (ImageNet-pretrained, fine-tuned end to end), the largest of ClearView&#x27;s three ResNet-backbone variants, trained on a blended synthetic + real-world rain set, selecting checkpoints against a blended real-world validation metric rather than a single benchmark, for a model that holds up across ..."
+    },
+    {
+      "title": "dronefreak (Saumya Saksena) - Hugging Face",
+      "url": "https://huggingface.co/dronefreak",
+      "snippet": "A collection of CABiNet and YOLO26 models trained and evaluated under a common pipeline for aerial semantic segmentation on Aeroscapes dataset."
+    },
+    {
+      "title": "User Created Models - ClearView RC Flight Simulator",
+      "url": "https://www.rcflightsim.com/models.html",
+      "snippet": "Download free, high-quality user-created models and landscapes for ClearView RC Flight Simulator. Learn how to create your own models."
+    }
+  ]
+}

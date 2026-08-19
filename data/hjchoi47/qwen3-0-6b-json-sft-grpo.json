@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "hjchoi47/Qwen3-0.6B-JSON-SFT-GRPO",
+  "slug": "hjchoi47-qwen3-0-6b-json-sft-grpo",
+  "author": "hjchoi47",
+  "url": "https://huggingface.co/hjchoi47/Qwen3-0.6B-JSON-SFT-GRPO",
+  "created_at": "2026-08-14T06:18:44.000Z",
+  "updated_at": "2026-08-14T06:19:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 239,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557746,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hjchoi47/Qwen3-0.6B-JSON-SFT · Hugging Face",
+      "url": "https://huggingface.co/hjchoi47/Qwen3-0.6B-JSON-SFT",
+      "snippet": "Instructions to use hjchoi47/Qwen3-0.6B-JSON-SFT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use hjchoi47/Qwen3-0.6B-JSON-SFT with Transformers:"
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "Qwen3-0.6B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_0_6b",
+      "snippet": "Qwen3-0.6B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑0.6B is a state‑of‑the‑art multilingual language model with 0.6 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    }
+  ]
+}

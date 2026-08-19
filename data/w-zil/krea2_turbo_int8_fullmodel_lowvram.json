@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "W-Zil/Krea2_Turbo_Int8_FullModel_LowVram",
+  "slug": "w-zil-krea2_turbo_int8_fullmodel_lowvram",
+  "author": "W-Zil",
+  "url": "https://huggingface.co/W-Zil/Krea2_Turbo_Int8_FullModel_LowVram",
+  "created_at": "2026-08-17T19:06:25.000Z",
+  "updated_at": "2026-08-17T21:27:11.000Z",
+  "license": "stability-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 21955534142,
+  "storage_human": "22.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea-2-Turbo - Hugging Face",
+      "url": "https://huggingface.co/krea/Krea-2-Turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea 2 Turbo by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-turbo",
+      "snippet": "Fastest medium quality Krea 2 model. The fastest Krea 2 model. Best for quickly iterating on expressive illustrations. Generate with Krea 2 Turbo on Krea, compare quality settings, and ship production-ready images faster."
+    },
+    {
+      "title": "Krea 2 Turbo - Krea",
+      "url": "https://www.krea.ai/docs/user-guide/features/krea-2-turbo",
+      "snippet": "Krea 2 Turbo is the fastest Krea 2 model, built for low-cost iteration on expressive illustrations, style-driven concepts, and rapid visual exploration."
+    },
+    {
+      "title": "Krea2 Turbo/Raw INT8/INT4 - Krea2 Turbo INT8 | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2724771/krea2-turboraw-int8int4",
+      "snippet": "W4A8_mixed models quantized by me. (Makes my mixed int4 models obsolete) True int4 model size with int8 activations, near int8 quality, same speed as int8. For RAM/VRAM-constrained systems. Update to latest comfyui for asym_w4a8 support 25/06/2026 UPDATE - Replaced the models with versions that work with the new native implementation of INT8 in comfyui, for use with the native Load Diffusion ..."
+    },
+    {
+      "title": "Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8 · Hugging Face",
+      "url": "https://huggingface.co/Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

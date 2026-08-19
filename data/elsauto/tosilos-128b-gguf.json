@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "elsauto/tosilos-128b-GGUF",
+  "slug": "elsauto-tosilos-128b-gguf",
+  "author": "elsauto",
+  "url": "https://huggingface.co/elsauto/tosilos-128b-GGUF",
+  "created_at": "2026-08-14T15:30:02.000Z",
+  "updated_at": "2026-08-14T16:12:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "llama.cpp",
+    "cybersecurity",
+    "mistral3",
+    "pentest",
+    "red-team",
+    "blue-team",
+    "conversational",
+    "text-generation",
+    "base_model:nesilabs/tosilos-128b",
+    "base_model:quantized:nesilabs/tosilos-128b",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 121,
+  "trending_score": 0,
+  "parameters": 125025988608,
+  "parameters_human": "125.03B",
+  "storage_bytes": 60619857824,
+  "storage_human": "60.6 GB",
+  "base_model": "nesilabs/tosilos-128b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nesilabs/tosilos-128b · Hugging Face",
+      "url": "https://huggingface.co/nesilabs/tosilos-128b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Unsloth Model Catalog | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/get-started/unsloth-model-catalog",
+      "snippet": "Get Started 🔮 Unsloth Model Catalog Unsloth LLMs directory for all Unsloth Dynamic GGUF, 4-bit, NVFP4 models on Hugging Face. Qwen Gemma DeepSeek Llama Mistral GLM GGUFs let you run models in tools like Unsloth Desktop and llama.cpp. Use Instruct (4-bit) safetensors for inference or fine-tuning via Unsloth. New & recommended models: Model ..."
+    },
+    {
+      "title": "How to Run GGUF Models Locally - Complete Beginner Guide (2025)",
+      "url": "https://ggufloader.github.io/how-to-run-gguf-models.html",
+      "snippet": "Quick Overview Running AI models locally gives you complete privacy, no internet required, and zero API costs. With GGUF format and the right tools, you can have a local AI assistant running in under 10 minutes."
+    }
+  ]
+}

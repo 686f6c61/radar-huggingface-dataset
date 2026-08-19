@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_oasst1_gpt-oss-20b_as_granite-4-h-small_seed42",
+  "slug": "dementor-research-dpo_oasst1_gpt-oss-20b_as_granite-4-h-small_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_granite-4-h-small_seed42",
+  "created_at": "2026-08-16T20:08:44.000Z",
+  "updated_at": "2026-08-16T20:12:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/dpo_oasst1_granite-4-h-small_as_gpt-oss-20b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_oasst1_granite-4-h-small_as_gpt-oss-20b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the oasst1 corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "dementor-research/dpo_oasst1_granite-4-h-small_as_nemotron-super-120b ...",
+      "url": "https://huggingface.co/dementor-research/dpo_oasst1_granite-4-h-small_as_nemotron-super-120b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the oasst1 corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "dpo_oasst1_granite-4-h-small_as_gpt-oss-20b_seed42",
+      "url": "https://friendli.ai/models/dementor-research/dpo_oasst1_granite-4-h-small_as_gpt-oss-20b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the oasst1 corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "dpo_oasst1_llama-3.1-8b_as_granite-4-h-small_seed42",
+      "url": "https://friendli.ai/models/dementor-research/dpo_oasst1_llama-3.1-8b_as_granite-4-h-small_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the oasst1 corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    }
+  ]
+}

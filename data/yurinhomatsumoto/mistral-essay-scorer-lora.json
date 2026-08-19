@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "YurinhoMatsumoto/mistral-essay-scorer-lora",
+  "slug": "yurinhomatsumoto-mistral-essay-scorer-lora",
+  "author": "YurinhoMatsumoto",
+  "url": "https://huggingface.co/YurinhoMatsumoto/mistral-essay-scorer-lora",
+  "created_at": "2026-08-18T21:38:11.000Z",
+  "updated_at": "2026-08-18T21:38:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13648688,
+  "storage_human": "14 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Automatic Essay Grading using Mistral-7B - GitHub",
+      "url": "https://github.com/HalaKhalifa/automatic-essay-grading",
+      "snippet": "Manual grading is time-consuming and inconsistent. This project develops an automated essay grading system using a fine-tuned instruction-based Mistral-7B model. It takes a question, a reference answer, a student answer, and a mark scheme — and returns a score and rationale."
+    },
+    {
+      "title": "Investigating first-language bias in LLM-based automated essay scoring ...",
+      "url": "https://arxiv.org/abs/2607.14605",
+      "snippet": "This study examines the cross-prompt generalization and first-language (L1) scoring effects of a LoRA-adapted open-weight large language model (Gemma-3-27B-it) applied to automated essay scoring. Using the identical model and inference configuration reported in \"AiAWE: An Open-Source LLM Automated Writing Evaluation System Using LoRA-Adapted Instruction-Tuned Models\" (Gayed, 2026), which was ..."
+    },
+    {
+      "title": "AI_AWE/essay_score at main · wwrwbs/AI_AWE · GitHub",
+      "url": "https://github.com/wwrwbs/AI_AWE/tree/main/essay_score",
+      "snippet": "AI Scoring Platform: automated essay scoring with Qwen classifier, LightGBM scorer, and feedback generator. - AI_AWE/essay_score at main · wwrwbs/AI_AWE"
+    },
+    {
+      "title": "Improve LLM-based Automatic Essay Scoring with Linguistic Features",
+      "url": "https://arxiv.org/html/2502.09497",
+      "snippet": "Abstract Automatic Essay Scoring (AES) assigns scores to student essays, reducing the grading workload for instructors. Developing a scoring system capable of handling essays across diverse prompts is challenging due to the flexibility and diverse nature of the writing task. Existing methods typically fall into two categories: supervised feature-based approaches and large language model (LLM ..."
+    },
+    {
+      "title": "yaffo/essay_grader_merged · Hugging Face",
+      "url": "https://huggingface.co/yaffo/essay_grader_merged",
+      "snippet": "Essay Grader (LoRA fine-tuned Mistral) This model is a fine-tuned version of unsloth/mistral-7b-bnb-4bit for automatic essay grading based on a structured mark scheme."
+    }
+  ]
+}

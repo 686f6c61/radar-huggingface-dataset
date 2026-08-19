@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dronefreak/clearview-derain-resnet18-unet",
+  "slug": "dronefreak-clearview-derain-resnet18-unet",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/clearview-derain-resnet18-unet",
+  "created_at": "2026-08-17T17:52:57.000Z",
+  "updated_at": "2026-08-17T19:31:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "image-restoration",
+    "deraining",
+    "rain-removal",
+    "single-image-deraining",
+    "computer-vision",
+    "resnet",
+    "unet",
+    "autonomous-driving",
+    "surveillance",
+    "clearview",
+    "mixed-domain",
+    "image-to-image",
+    "en",
+    "dataset:dronefreak/SPA-Data",
+    "dataset:dronefreak/RealRain-1k",
+    "dataset:dronefreak/Rain13K",
+    "dataset:dronefreak/DDN-Data",
+    "arxiv:2206.05514",
+    "arxiv:1505.04597",
+    "arxiv:1512.03385",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58355776,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dronefreak/clearview-derain-unet · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/clearview-derain-unet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - dronefreak/clearview: Fast and practical image deraining with ...",
+      "url": "https://github.com/dronefreak/clearview",
+      "snippet": "Fast and practical image deraining with PyTorch. Removes rain streaks using UNet. 30.9 PSNR on Rain1400. Live demo on HuggingFace. - dronefreak/clearview"
+    },
+    {
+      "title": "dronefreak/clearview-derain-unet at main - Hugging Face",
+      "url": "https://huggingface.co/dronefreak/clearview-derain-unet/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "clearview/clearview/models at main · dronefreak/clearview · GitHub",
+      "url": "https://github.com/dronefreak/clearview/tree/main/clearview/models",
+      "snippet": "Fast and practical image deraining with PyTorch. Removes rain streaks using UNet. 30.9 PSNR on Rain1400. Live demo on HuggingFace. - clearview/clearview/models at main · dronefreak/clearview"
+    },
+    {
+      "title": "ResNet18 from Scratch Using PyTorch - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/resnet18-from-scratch-using-pytorch/",
+      "snippet": "The ResNet18 model consists of 18 layers and is a variant of the Residual Network (ResNet) architecture. The residual blocks are the core building blocks of ResNet and include skip connections that bypass one or more layers. Residual blocks help in mitigating the vanishing gradient problem by allowing the network to learn residual mappings instead of the original mappings. This makes gradient ..."
+    }
+  ]
+}

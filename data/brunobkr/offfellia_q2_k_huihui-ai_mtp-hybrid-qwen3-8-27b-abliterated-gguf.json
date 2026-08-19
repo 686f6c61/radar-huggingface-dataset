@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Brunobkr/OFFFELLIA_Q2_K_huihui-ai_MTP-hybrid-Qwen3.8-27B-abliterated.gguf",
+  "slug": "brunobkr-offfellia_q2_k_huihui-ai_mtp-hybrid-qwen3-8-27b-abliterated-gguf",
+  "author": "Brunobkr",
+  "url": "https://huggingface.co/Brunobkr/OFFFELLIA_Q2_K_huihui-ai_MTP-hybrid-Qwen3.8-27B-abliterated.gguf",
+  "created_at": "2026-08-16T19:38:55.000Z",
+  "updated_at": "2026-08-16T20:11:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantization",
+    "offerlia",
+    "helicoidal-sieve",
+    "ggml",
+    "cplusplus",
+    "text-generation",
+    "pt",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 406,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 10867134753,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 3 hours ago ... updated a model about 4 hours ago"
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.6-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Abliterated Models 2026: The Best Uncensored GGUFs by VRAM",
+      "url": "https://locallyuncensored.com/blog/abliterated-models-guide.html",
+      "snippet": "The newest entrant: huihui-ai/Huihui-GLM-5.1-abliterated-GGUF. The 754B MoE GLM 5.1 abliterated. 236 GB at IQ2_M — not consumer hardware, but if you have a multi-GPU rig or a Mac Studio M4 Ultra, it&#x27;s the strongest open abliterated model period."
+    },
+    {
+      "title": "Huihui-Qwen3-8B-abliterated-v2-i1-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/mradermacher/Huihui-Qwen3-8B-abliterated-v2-i1-GGUF",
+      "snippet": "The contributors of the current model have not provided a more detailed model introduction. For model files and weights, you can visit the \"Model Files\" page to obtain them."
+    },
+    {
+      "title": "huihui_ai - ollama.com",
+      "url": "https://ollama.com/huihui_ai",
+      "snippet": "A compact and efficient vision-language model, specifically designed for visual document understanding, enabling automated content extraction from tables, charts, infographics, plots, diagrams, and more."
+    }
+  ]
+}

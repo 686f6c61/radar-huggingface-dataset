@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amirsoahil101/Student_sleep_mental_health_2026",
+  "slug": "amirsoahil101-student_sleep_mental_health_2026",
+  "author": "amirsoahil101",
+  "url": "https://huggingface.co/amirsoahil101/Student_sleep_mental_health_2026",
+  "created_at": "2026-08-17T19:35:25.000Z",
+  "updated_at": "2026-08-17T19:46:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208181,
+  "storage_human": "208181 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amirsoahil101 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101",
+      "snippet": "AI & ML interests Passionate about Machine Learning, Deep Learning, and Generative AI. Experienced in building predictive models, neural networks, and AI-driven solutions using frameworks like PyTorch, TensorFlow, and scikit-learn. Enthusiastic about integrating intelligent models into full-stack web applications."
+    },
+    {
+      "title": "Google Scholar Citations",
+      "url": "https://scholar.google.com/citations",
+      "snippet": "Google Scholar Citations lets you track citations to your publications over time."
+    },
+    {
+      "title": "Student mental health trial finds conversational AI better than group ...",
+      "url": "https://medicalxpress.com/news/2026-04-student-mental-health-trial-conversational.html",
+      "snippet": "A recent study revealed something quite encouraging. A conversational AI called Kai made a positive impact on the lives of university students dealing with mental health issues."
+    },
+    {
+      "title": "A pilot randomised controlled trial exploring the feasibility and ...",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11025445/",
+      "snippet": "This study proposes a novel human-AI sleep coaching model, combining health coaching by peers and a QA system, and assesses its feasibility and efficacy in improving university students&#x27; sleep quality."
+    },
+    {
+      "title": "‪Aamir Sohail‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=A41-bUMAAAAJ&hl=en",
+      "snippet": "‪University of Birmingham‬ - ‪‪Cited by 48‬‬ - ‪computational neuroscience‬ - ‪neuroimaging‬ - ‪cognitive neuroscience‬ - ‪artificial intelligence‬"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "abacusai/Smaug-Agentic",
+  "slug": "abacusai-smaug-agentic",
+  "author": "abacusai",
+  "url": "https://huggingface.co/abacusai/Smaug-Agentic",
+  "created_at": "2026-08-10T05:24:16.000Z",
+  "updated_at": "2026-08-10T22:04:28.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "smaug",
+    "abacusai",
+    "agentic",
+    "compressed-tensors",
+    "conversational",
+    "custom_code",
+    "image-text-to-text",
+    "arxiv:2402.13228",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:finetune:moonshotai/Kimi-K3",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 171,
+  "trending_score": 11,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1577988675682,
+  "storage_human": "1578.0 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abacusai/Smaug-Agentic · Hugging Face",
+      "url": "https://huggingface.co/abacusai/Smaug-Agentic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abacusai/Smaug-Agentic at main - Hugging Face",
+      "url": "https://huggingface.co/abacusai/Smaug-Agentic/tree/main",
+      "snippet": "abacusai / Smaug-Agentic like 1 Follow Abacus.AI, Inc. 266 Image-Text-to-Text Transformers Safetensors kimi_k3 feature-extraction smaug abacusai agentic compressed-tensors conversational custom_code 8-bit precision arxiv:2402.13228 License:kimi-k3 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Abacus.AI Open Source | Open Source AI & LLM Models",
+      "url": "https://abacus.ai/open-source",
+      "snippet": "Here are the key contributions from Abacus.AI to open-source: Our Latest Model Abacus.AI Smaug Agentic Our latest release, Smaug Agentic, is an agentic supervised fine-tune of Kimi K3, the frontier Mixture-of-Experts model from Moonshot AI."
+    },
+    {
+      "title": "GitHub - abacusai/smaug",
+      "url": "https://github.com/abacusai/smaug/tree/main",
+      "snippet": "Smaug arrives! We recently released Smaug-72B-v0.1 which has taken first place on the Open LLM Leaderboard by HuggingFace. With an average accuracy of 80.48%, it is the first open-source model to surpass an average score of 80%, and it is nearly 2% better than the next-best open-source model. We also released Smaug-34B-v0.1, the best 34B model at the time of its release. We created both models ..."
+    },
+    {
+      "title": "Abacus AI Releases Smaug-Agentic As Top Open-Source Agentic Coding Model",
+      "url": "https://digg.com/tech/9l5gbp3m",
+      "snippet": "Abacus AI Releases Smaug-Agentic As Top Open-Source Agentic Coding Model - tracked by 1 author on X."
+    }
+  ]
+}

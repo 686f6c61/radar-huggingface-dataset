@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kumanomidoh/qwen3-4b-yaml-sft-with-template",
+  "slug": "kumanomidoh-qwen3-4b-yaml-sft-with-template",
+  "author": "kumanomidoh",
+  "url": "https://huggingface.co/kumanomidoh/qwen3-4b-yaml-sft-with-template",
+  "created_at": "2026-08-16T00:10:28.000Z",
+  "updated_at": "2026-08-16T00:26:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 111,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kumanomidoh/qwen3-4b-medical-sft · Hugging Face",
+      "url": "https://huggingface.co/kumanomidoh/qwen3-4b-medical-sft",
+      "snippet": "＜【課題】Qwen3-4B Medical SFT (Structured Output) This repository provides a LoRA adapter fine-tuned from Qwen/Qwen3-4B-Instruct-2507 using QLoRA (4-bit, Unsloth). This repository contains LoRA adapter weights only. The base model must be loaded separately."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "LlamaFactory/examples/merge_lora/qwen3_full_sft.yaml at main - GitHub",
+      "url": "https://github.com/hiyouga/LlamaFactory/blob/main/examples/merge_lora/qwen3_full_sft.yaml",
+      "snippet": "9 10 ### model model_name_or_path: saves/qwen3-4b/full/sft template: qwen3_nothink trust_remote_code: true ### export"
+    },
+    {
+      "title": "Qwen3 - How to Run & Fine-tune | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/tutorials/qwen3-how-to-run-and-fine-tune",
+      "snippet": "Copy Models Large language model (LLMs) Tutorials 🌠 Qwen3 - How to Run & Fine-tune Learn to run & fine-tune Qwen3 locally with Unsloth + our Dynamic 2.0 quants Qwen&#x27;s new Qwen3 models deliver state-of-the-art advancements in reasoning, instruction-following, agent capabilities, and multilingual support. NEW! Qwen3 got an update in July 2025."
+    }
+  ]
+}

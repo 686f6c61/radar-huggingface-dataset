@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "notmax123/QwenTTS-he-1.7B",
+  "slug": "notmax123-qwentts-he-1-7b",
+  "author": "notmax123",
+  "url": "https://huggingface.co/notmax123/QwenTTS-he-1.7B",
+  "created_at": "2026-08-14T16:48:11.000Z",
+  "updated_at": "2026-08-14T16:54:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "hebrew",
+    "lora",
+    "qwen3-tts",
+    "ipa",
+    "he",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_model:adapter:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 247493992,
+  "storage_human": "247 MB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

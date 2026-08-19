@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sibus3/Kokoro-82M-mlx",
+  "slug": "sibus3-kokoro-82m-mlx",
+  "author": "sibus3",
+  "url": "https://huggingface.co/sibus3/Kokoro-82M-mlx",
+  "created_at": "2026-08-18T22:46:42.000Z",
+  "updated_at": "2026-08-18T22:47:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "tts",
+    "kokoro",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352765424,
+  "storage_human": "353 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gabrimatic/kokoro-mlx: Kokoro-82M text-to-speech inference on ...",
+      "url": "https://github.com/gabrimatic/kokoro-mlx",
+      "snippet": "Kokoro TTS inference on Apple Silicon via MLX. An MLX implementation of the Kokoro-82M text-to-speech pipeline, with no PyTorch or transformers dependency. This package provides inference code only. Model weights are developed by hexgrad under the Apache 2.0 license and downloaded separately from HuggingFace Hub on first use."
+    },
+    {
+      "title": "mlx-community/Kokoro-82M-bf16 · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Kokoro-82M-bf16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hexgrad/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/hexgrad/kokoro",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "Kokoro-82M-bf16-MLX Open-source Text-to-Speech Model - Lightweight ...",
+      "url": "https://model.aibase.com/models/details/1955866700436213760",
+      "snippet": "Kokoro is an open-source text-to-speech model with 82 million parameters. It uses a lightweight architecture but can provide quality comparable to large models. It has the advantages of high speed and low cost. It uses the Apache license and is suitable for production environments and personal projects."
+    }
+  ]
+}

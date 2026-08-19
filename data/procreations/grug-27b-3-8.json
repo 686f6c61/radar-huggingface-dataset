@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ProCreations/grug-27b-3.8",
+  "slug": "procreations-grug-27b-3-8",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/grug-27b-3.8",
+  "created_at": "2026-08-17T08:35:52.000Z",
+  "updated_at": "2026-08-18T07:08:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "grug",
+    "reasoning",
+    "token-efficient",
+    "agentic",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 641,
+  "trending_score": 9,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54734057584,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProCreations/grug-27b · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/grug-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ProCreations/grug-27b-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/grug-27b-v1.1",
+      "snippet": "ProCreations / grug-27b-v1.1 like 3 Text Generation Transformers Safetensors English qwen3_5 image-text-to-text grug reasoning token-efficient agentic tool-use conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Grug 27B by ProCreations — VRAM 54.8GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ProCreations%2Fgrug-27b,4I3COxIuitPNrvIAJrjQMi",
+      "snippet": "Grug 27B is an open-source 27b LLM by ProCreations. VRAM 54.8GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "grug-27b: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/grug-27b-procreations",
+      "snippet": "Model Overview Overview grug-27b is a 27-billion-parameter language model built by ProCreations that specializes in dense, efficient reasoning without verbose filler text. It is a LoRA fine-tune (rank 32 on all text-stack linear layers) merged to bfloat16 precision on top of Qwen/Qwen3.6-27B."
+    },
+    {
+      "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "snippet": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things Friday&#x27;s big release was Qwen 3.8 27B, an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba&#x27;s Qwen research lab. I&#x27;ve been looking forward to this one: 27B is an excellent size for running a model on a reasonably specced laptop, and its predecessor Qwen 3.6 27B was impressive. Qwen&#x27;s self-reported ..."
+    }
+  ]
+}

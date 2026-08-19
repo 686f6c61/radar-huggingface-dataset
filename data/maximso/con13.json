@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "maximso/con13",
+  "slug": "maximso-con13",
+  "author": "maximso",
+  "url": "https://huggingface.co/maximso/con13",
+  "created_at": "2026-08-04T21:13:00.000Z",
+  "updated_at": "2026-08-16T09:13:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 560403442656,
+  "storage_human": "560.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

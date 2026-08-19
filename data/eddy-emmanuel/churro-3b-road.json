@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Eddy-Emmanuel/churro-3B-road",
+  "slug": "eddy-emmanuel-churro-3b-road",
+  "author": "Eddy-Emmanuel",
+  "url": "https://huggingface.co/Eddy-Emmanuel/churro-3B-road",
+  "created_at": "2026-08-18T18:50:35.000Z",
+  "updated_at": "2026-08-18T18:50:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176995539,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - stanford-oval/Churro: CHURRO is an OCR toolkit for historical ...",
+      "url": "https://github.com/stanford-oval/Churro/tree/main/",
+      "snippet": "🤗 Model • 🗂️ Dataset • 📄 Paper 📚 Docs • 🏆 Leaderboard • Churro is the fastest way to turn hard-to-read historical scans into reliable text. It gives researchers, libraries, archives, and product teams a unified OCR toolkit for handwritten and printed sources, combining high accuracy, low operating cost, and a clean Python API and CLI workflow."
+    },
+    {
+      "title": "Churro - a stanford-oval Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/stanford-oval/churro",
+      "snippet": "Dataset and model for handwritten and print text recognition in historical documents"
+    },
+    {
+      "title": "Quantized Models for stanford-oval/churro-3B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:stanford-oval/churro-3B",
+      "snippet": "Model Tree Reset stanford-oval/churro-3B Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "CHURRO: Making History Readable with an Open-Weight Large Vision ...",
+      "url": "https://arxiv.org/pdf/2509.19768",
+      "snippet": "This paper presents CHURRO, a 3B-parameter open-weight VLM specialized for historical text recognition. The model is trained on CHURRO-DS 1, the largest historical text recognition dataset to date. CHURRO-DS uni-fies 155 historical corpora comprising 99,491 pages, spanning 22 centuries of textual heritage across 46 language clusters, including histori-cal variants and dead languages."
+    },
+    {
+      "title": "Churro/README.md at main · stanford-oval/Churro · GitHub",
+      "url": "https://github.com/stanford-oval/Churro/blob/main/README.md",
+      "snippet": "CHURRO is a 3B-parameter open-weight vision-language model (VLM) for historical document transcription. It is trained on CHURRO-DS, a curated dataset of ~100K pages from 155 historical collections spanning 22 centuries and 46 language clusters. On the CHURRO-DS test set, CHURRO delivers 15.5× lower cost than Gemini 2.5 Pro while exceeding its accuracy."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Bernini-v2-int4",
+  "slug": "mlx-community-bernini-v2-int4",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Bernini-v2-int4",
+  "created_at": "2026-08-18T20:14:52.000Z",
+  "updated_at": "2026-08-18T20:22:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "t2v",
+    "video",
+    "text-to-video",
+    "image-to-video",
+    "video-editing",
+    "wan",
+    "bernini",
+    "base_model:ByteDance/Bernini-Diffusers-v2",
+    "base_model:finetune:ByteDance/Bernini-Diffusers-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48258449286,
+  "storage_human": "48.3 GB",
+  "base_model": "ByteDance/Bernini-Diffusers-v2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Bernini-R-int4 · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Bernini-R-int4",
+      "snippet": "mlx-community / Bernini-R-int4 like 0 Follow MLX Community 13.3k Text-to-Video MLX Safetensors Wan2.2 t2v video-editing video-to-video reference-to-video bernini License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Bernini-R MLX - a mlx-community Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlx-community/bernini-r-mlx",
+      "snippet": "MLX port of ByteDance Bernini-R: Wan2.2-A14B video renderer/editor with SA-3D RoPE (t2v/r2v/v2v/rv2v). Renderer-only, UMT5 conditioning."
+    },
+    {
+      "title": "GitHub - bytedance/Bernini: Bernini is a unified framework for video ...",
+      "url": "https://github.com/bytedance/Bernini/tree/main",
+      "snippet": "Bernini is a unified framework for video generation and editing that combines an MLLM-based semantic planner with a DiT-based renderer. On video editing, Bernini reaches the first tier among leading closed-source commercial models."
+    },
+    {
+      "title": "Bernini: Latent Semantic Planning for Video Diffusion",
+      "url": "https://bernini-ai.github.io/",
+      "snippet": "Bernini is a unified framework for video generation and editing that combines an MLLM-based semantic planner with a DiT-based renderer."
+    },
+    {
+      "title": "Bernini-R-int4 · Models",
+      "url": "https://www.modelscope.cn/models/mlx-community/Bernini-R-int4",
+      "snippet": "Bernini-R (MLX) Apple MLX port of ByteDance/Bernini-R — the open-sourced Renderer of ByteDance&#x27;s Bernini: a Wan2.2-T2V-A14B-derived video generator/editor with Segment-Aware 3D RoPE for multi-reference / editing tasks."
+    }
+  ]
+}

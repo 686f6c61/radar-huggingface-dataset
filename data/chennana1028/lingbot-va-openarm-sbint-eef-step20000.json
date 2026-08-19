@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "chennana1028/lingbot-va-openarm-sbint-eef-step20000",
+  "slug": "chennana1028-lingbot-va-openarm-sbint-eef-step20000",
+  "author": "chennana1028",
+  "url": "https://huggingface.co/chennana1028/lingbot-va-openarm-sbint-eef-step20000",
+  "created_at": "2026-08-17T06:50:27.000Z",
+  "updated_at": "2026-08-17T06:52:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5088872670,
+  "parameters_human": "5.09B",
+  "storage_bytes": 10177831668,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Qwen3.6-35B-A3B-speculator.dspark",
+  "slug": "redhatai-qwen3-6-35b-a3b-speculator-dspark",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-speculator.dspark",
+  "created_at": "2026-07-19T16:25:28.000Z",
+  "updated_at": "2026-08-05T21:13:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "custom_code",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 1707,
+  "trending_score": 8,
+  "parameters": 950254081,
+  "parameters_human": "950.3M",
+  "storage_bytes": 7956923754,
+  "storage_human": "8.0 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Qwen3.6-35B-A3B-speculator.dspark · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-speculator.dspark",
+      "snippet": "DSpark extends DFlash with a Markov head (intra-block token dependency) and a confidence head (per-position acceptance prediction). Training compute for this model was generously provided by Lambda, a leading cloud platform for AI training and inference. Commands Using the Speculators library and the helper scripts provided in the repo."
+    },
+    {
+      "title": "RedHatAI/Qwen3.6-35B-A3B-speculator.dspark at main",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-speculator.dspark/tree/main",
+      "snippet": "6 Follow Red Hat AI 2.92k Safetensors speculators speculative-decoding dspark custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3.6-35B-A3B-speculator.dspark 2.65 GB Ctrl+K Ctrl+K 1 contributor History:14 commits shanjiaz Update README.md 53814b2 verified4 days ago .gitattributes Safe 1. ..."
+    },
+    {
+      "title": "Benchmarking Qwen3.6-35B-A3B with dspark speculative decoding",
+      "url": "https://forums.developer.nvidia.com/t/benchmarking-qwen3-6-35b-a3b-with-dspark-speculative-decoding/379550",
+      "snippet": "Hello, I benchmarked Qwen3.6-35B-A3B using the Qwen3.6-35B-A3B-speculator.dspark speculative decoding model. Environment uv venv .vllm --python 3.12 source .vllm/bin/activate uv pip install -U vllm --pre &#92; --extra-in…"
+    },
+    {
+      "title": "spark-bench-reproducers/qwen36-35b-a3b-dflash-spark/README.md ... - GitHub",
+      "url": "https://github.com/my-other-github-account/spark-bench-reproducers/blob/main/qwen36-35b-a3b-dflash-spark/README.md",
+      "snippet": "Qwen3.6-35B-A3B-NVFP4 + DFlash on DGX Spark — minimum reproduction End-to-end Docker reproduction of the 35B-A3B MoE sibling to the 27B dense recipe in ../qwen36-27b-dflash-spark. Same hardware (NVIDIA DGX Spark, GB10 Blackwell, 128 GiB unified, aarch64), same engine (vLLM nightly + flashinfer), same harness (eugr/llama-benchy 0.3.6)."
+    },
+    {
+      "title": "qwen3.6:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:35b-a3b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    }
+  ]
+}

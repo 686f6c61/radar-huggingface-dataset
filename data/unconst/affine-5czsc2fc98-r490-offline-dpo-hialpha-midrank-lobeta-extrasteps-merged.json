@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+  "slug": "unconst-affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+  "created_at": "2026-08-16T04:04:55.000Z",
+  "updated_at": "2026-08-16T04:34:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 134,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Affine-5czsc2fc98-r368-offline-dpo-long-merged - Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r368-offline-dpo-long-merged",
+      "snippet": "Affine-5czsc2fc98-r368-offline-dpo-long-merged ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-h49-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h49-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r67-merged · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r67-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Check AI Watermarks — Text, Image, Video & C2PA Checker",
+      "url": "https://checkaiwatermarks.com/",
+      "snippet": "Check text, images, and video for supported AI watermark signals, C2PA credentials, invisible characters, and metadata—privately in your browser."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

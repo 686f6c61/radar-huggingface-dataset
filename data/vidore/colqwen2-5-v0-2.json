@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "vidore/colqwen2.5-v0.2",
+  "slug": "vidore-colqwen2-5-v0-2",
+  "author": "vidore",
+  "url": "https://huggingface.co/vidore/colqwen2.5-v0.2",
+  "created_at": "2025-01-31T13:26:42.000Z",
+  "updated_at": "2026-08-17T13:18:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "colpali",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "colpali",
+    "safetensors",
+    "vidore",
+    "vidore-experimental",
+    "sentence-transformers",
+    "multi-vector",
+    "visual-document-retrieval",
+    "en",
+    "arxiv:2004.12832",
+    "arxiv:2407.01449",
+    "arxiv:2106.09685",
+    "base_model:vidore/colqwen2.5-base",
+    "base_model:finetune:vidore/colqwen2.5-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 99,
+  "downloads_30d": 24375,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252286184,
+  "storage_human": "252 MB",
+  "base_model": "vidore/colqwen2.5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vidore/colqwen2.5-v0.2 · Hugging Face",
+      "url": "https://huggingface.co/vidore/colqwen2.5-v0.2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "colqwen2.5-v0.2: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/colqwen2.5-v0.2-vidore",
+      "snippet": "Overview colqwen2.5-v0.2 is a visual document retrieval model created by vidore that generates ColBERT-style multi-vector representations of images and text. It extends Qwen2.5-VL-3B-Instruct with a novel training strategy designed to efficiently index documents from their visual features. The model accepts dynamic image resolutions without aspect ratio distortion, generating up to 768 image ..."
+    },
+    {
+      "title": "README.md · vidore/colqwen2.5-v0.2 at main - Hugging Face",
+      "url": "https://huggingface.co/vidore/colqwen2.5-v0.2/blob/main/README.md",
+      "snippet": "ColQwen2.5: Visual Retriever based on Qwen2.5-VL-3B-Instruct with ColBERT strategy ColQwen is a model based on a novel model architecture and training strategy based on Vision Language Models (VLMs) to efficiently index documents from their visual features."
+    },
+    {
+      "title": "colqwen2.5-v0.2 · Models",
+      "url": "https://www.modelscope.cn/models/vidore/colqwen2.5-v0.2",
+      "snippet": "ColQwen2.5: Visual Retriever based on Qwen2.5-VL-3B-Instruct with ColBERT strategy ColQwen is a model based on a novel model architecture and training strategy based on Vision Language Models (VLMs) to efficiently index documents from their visual features. It is a Qwen2.5-VL-3B extension that generates ColBERT - style multi-vector representations of text and images. It was introduced in the ..."
+    },
+    {
+      "title": "vidore/colqwen2.5-v0.2 — FiftyOne 1.19.0 documentation",
+      "url": "https://docs.voxel51.com/model_zoo/models/vidore_colqwen2_5_v0_2.html",
+      "snippet": "This is a remotely-sourced model from the colqwen2_5_v0_2 plugin, maintained by the community. It is not part of FiftyOne core and may have special installation requirements."
+    }
+  ]
+}

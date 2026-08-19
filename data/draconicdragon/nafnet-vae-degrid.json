@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "DraconicDragon/NAFNet-VAE-DeGrid",
+  "slug": "draconicdragon-nafnet-vae-degrid",
+  "author": "DraconicDragon",
+  "url": "https://huggingface.co/DraconicDragon/NAFNet-VAE-DeGrid",
+  "created_at": "2026-08-12T12:51:54.000Z",
+  "updated_at": "2026-08-16T21:39:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-restoration",
+    "image-enhancement",
+    "nafnet",
+    "image-to-image",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470538023,
+  "storage_human": "471 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

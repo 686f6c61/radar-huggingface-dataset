@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Akahsizrr/fuse-1-Lite",
+  "slug": "akahsizrr-fuse-1-lite",
+  "author": "Akahsizrr",
+  "url": "https://huggingface.co/Akahsizrr/fuse-1-Lite",
+  "created_at": "2026-08-05T14:51:09.000Z",
+  "updated_at": "2026-08-09T12:31:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fuse3",
+    "text-generation",
+    "mixture-of-experts",
+    "MoE",
+    "coding",
+    "python",
+    "code-generation",
+    "LFM2",
+    "Qwen",
+    "LiquidAI",
+    "small-language-model",
+    "SLM",
+    "agentic",
+    "fusion",
+    "expert-routing",
+    "5B",
+    "efficient-inference",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 121,
+  "downloads_30d": 2434,
+  "trending_score": 16,
+  "parameters": 5719063552,
+  "parameters_human": "5.72B",
+  "storage_bytes": 11456417540,
+  "storage_human": "11.5 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B, Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akahsizrr/fuse-1-Lite · Hugging Face",
+      "url": "https://huggingface.co/Akahsizrr/fuse-1-Lite",
+      "snippet": "Overview fuse-1 Lite is a novel fusion model that combines the speed and efficiency of a small language model (LFM2.5-2.6B, 2.70B params) with the coding expertise of a large MoE model (Qwen3.6-35B-A3B). Rather than distilling knowledge or fine-tuning from scratch, fuse-1 Lite transplants actual expert weights from the donor model and trains a lightweight router to selectively activate them ..."
+    },
+    {
+      "title": "README.md · Akahsizrr/fuse-1-Lite at main - Hugging Face",
+      "url": "https://huggingface.co/Akahsizrr/fuse-1-Lite/blob/main/README.md",
+      "snippet": "Overview fuse-1 Lite is a novel fusion model that combines the speed and efficiency of a small language model (LFM2.5-2.6B, 2.70B params) with the coding expertise of a large MoE model (Qwen3.6-35B-A3B). Rather than distilling knowledge or fine-tuning from scratch, fuse-1 Lite transplants actual expert weights from the donor model and trains a lightweight router to selectively activate them ..."
+    },
+    {
+      "title": "Fuse 1 Lite by Akahsizrr — VRAM 11.4GB, 128K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Akahsizrr%2Ffuse-1-Lite,4nL0ttXnMeMI27JjaP64X2",
+      "snippet": "Fuse 1 Lite is an open-source 35b LLM by Akahsizrr. VRAM 11.4GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "day0: Akahsizrr/fuse-1-Lite · Issue #56 · click6067-ship-it ... - GitHub",
+      "url": "https://github.com/click6067-ship-it/fitllm-engine/issues/56",
+      "snippet": "Auto-filed by day0-watch (6h cron). Close with a reason if not a candidate — closed issues are never re-filed."
+    },
+    {
+      "title": "Learning cost of only $3. Verifying \"fuse-1 Lite,\" a model where an ...",
+      "url": "https://note.com/ai_driven/n/n99e508a381ca?hl=en",
+      "snippet": "Vasko Djack, an individual developer active on Hugging Face as \"Akahsizrr.\" The \"fuse-1 Lite\" he released adopts a third approach that is neither distillation nor merging: it \"transplants\" only the coding-specialized experts from the 35B parameter MoE model Qwen3.6-35B-A3B into the lightweight model LFM2.5-2.6B."
+    }
+  ]
+}

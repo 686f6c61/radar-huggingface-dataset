@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "duyhungnguyen1210/cleanrl-ppo-LunarLander-v2",
+  "slug": "duyhungnguyen1210-cleanrl-ppo-lunarlander-v2",
+  "author": "duyhungnguyen1210",
+  "url": "https://huggingface.co/duyhungnguyen1210/cleanrl-ppo-LunarLander-v2",
+  "created_at": "2026-08-16T17:04:17.000Z",
+  "updated_at": "2026-08-16T17:04:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92893,
+  "storage_human": "92893 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dussinus/ppo-cleanrl-Lunar · Hugging Face",
+      "url": "https://huggingface.co/dussinus/ppo-cleanrl-Lunar",
+      "snippet": "PPO Agent Playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2."
+    },
+    {
+      "title": "GitHub - vwxyzjn/cleanrl: High-quality single file implementation of ...",
+      "url": "https://github.com/vwxyzjn/cleanrl",
+      "snippet": "CleanRL is a Deep Reinforcement Learning library that provides high-quality single-file implementation with research-friendly features. The implementation is clean and simple, yet we can scale it to run thousands of experiments using AWS Batch."
+    },
+    {
+      "title": "DoctorPingu/ppo-LunarLander-v2-cleanrl · Hugging Face",
+      "url": "https://huggingface.co/DoctorPingu/ppo-LunarLander-v2-cleanrl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unit8_part1.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit8/unit8_part1.ipynb",
+      "snippet": "In this notebook, you&#x27;ll learn to code your PPO agent from scratch with PyTorch using CleanRL implementation as model. To test its robustness, we&#x27;re going to train it in: LunarLander-v2 🚀"
+    },
+    {
+      "title": "GitHub - alperenunlu/ppo-lunarlander-v2: Agent trained with PPO ...",
+      "url": "https://github.com/alperenunlu/ppo-lunarlander-v2",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    }
+  ]
+}

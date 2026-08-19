@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "bmanojreddy/model",
+  "slug": "bmanojreddy-model",
+  "author": "bmanojreddy",
+  "url": "https://huggingface.co/bmanojreddy/model",
+  "created_at": "2026-08-17T04:49:38.000Z",
+  "updated_at": "2026-08-17T05:03:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manojreddydev (Mandala Manoj Reddy) · GitHub",
+      "url": "https://github.com/manojreddydev",
+      "snippet": "🚀 About Me I am a passionate AI and Full Stack Developer focused on building intelligent products, scalable web systems, and AI-powered experiences that solve real-world problems."
+    },
+    {
+      "title": "bmanojreddy (Manoj Reddy) · GitHub",
+      "url": "https://github.com/bmanojreddy/",
+      "snippet": "Looking for an Entry level positions | Python - bmanojreddy"
+    },
+    {
+      "title": "Manoj Reddy - Associate | Data & AI | LinkedIn",
+      "url": "https://in.linkedin.com/in/bmanojreddy",
+      "snippet": "Associate | Data &amp; AI · Passionate data professional with hands-on experience in Data Engineering, ETL development, and building scalable data solutions. Currently working on designing and maintaining data pipelines, integrating data from multiple sources, and transforming raw data into reliable, business-ready datasets using technologies such as Python, SQL, and Databricks. My experience ..."
+    },
+    {
+      "title": "‏Manoj Reddy‏ - ‏Senior Generative AI Specialist | AI ... - LinkedIn",
+      "url": "https://ae.linkedin.com/in/manoj-reddy-3ba860227",
+      "snippet": "As a versatile Generative AI Specialist and Production Manager, I bring a unique blend of traditional filmmaking expertise and advanced mastery of cutting-edge artificial intelligence tools, including Runway ML, Midjourney, Higgsfield, Leonardo AI, and Sora. This hybrid skill set allows me to approach video creation both creatively and strategically. My experience spans hands-on operation of ..."
+    },
+    {
+      "title": "Manoj B Reddy - Cloud Engineer | AI &amp; Automation | LinkedIn",
+      "url": "https://www.linkedin.com/in/manoj-b-reddy-a8ba23110",
+      "snippet": "Cloud Infrastructure Engineer | AI &amp; Automation · Cloud &amp;amp; Infrastructure Engineer focused on building reliable, secure, and scalable enterprise systems with a strong emphasis on ..."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "GoktugD/Llama-NanoSOC1-8B",
+  "slug": "goktugd-llama-nanosoc1-8b",
+  "author": "GoktugD",
+  "url": "https://huggingface.co/GoktugD/Llama-NanoSOC1-8B",
+  "created_at": "2026-08-10T12:10:40.000Z",
+  "updated_at": "2026-08-18T20:03:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "cybersecurity",
+    "soc",
+    "incident-response",
+    "incident-correlation",
+    "mitre-attack",
+    "qlora",
+    "retrieval-augmented-generation",
+    "model-security",
+    "concept-drift",
+    "multi-tenant",
+    "human-in-the-loop",
+    "turkish",
+    "non-commercial",
+    "text-generation",
+    "conversational",
+    "tr",
+    "en",
+    "base_model:fdtn-ai/Foundation-Sec-1.1-8B-Instruct",
+    "base_model:adapter:fdtn-ai/Foundation-Sec-1.1-8B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 606501602,
+  "storage_human": "607 MB",
+  "base_model": "fdtn-ai/Foundation-Sec-1.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GoktugD/Llama-NanoSOC1-8B · Hugging Face",
+      "url": "https://huggingface.co/GoktugD/Llama-NanoSOC1-8B",
+      "snippet": "GoktugD / Llama-NanoSOC1-8B like 0 Text Generation PEFT Safetensors Turkish English cybersecurity soc incident-response incident-correlation mitre-attack qlora retrieval-augmented-generation model-security concept-drift multi-tenant human-in-the-loop turkish non-commercial conversational License:other Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "Göktuğ Düşünen · Model Lab - a Hugging Face Space by GoktugD",
+      "url": "https://huggingface.co/spaces/GoktugD/DUSUNEN-AI-Lab",
+      "snippet": "NanoSOC1 8B · v6 evidence stack Two task-routed adapters, a 5,492-document security RAG corpus, model-security gates and immutable audit evidence. Built to assist analysts—not to act as an autonomous IDS or response engine."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "Our latest version of Llama is now accessible to individuals, creators, researchers, and businesses of all sizes so that they can experiment, innovate, and scale their ideas responsibly. This release includes model weights and starting code for pre-trained and instruction-tuned Llama 3 language models — including sizes of 8B to 70B parameters."
+    },
+    {
+      "title": "arXiv:2504.21039v1 [cs.CR] 28 Apr 2025",
+      "url": "https://arxiv.org/pdf/2504.21039",
+      "snippet": "refully curated cyber-security corpus. We evaluate Foundation-Sec-8B across both established and new cybersecurity benchmarks, showing that it matches Llama 3.1-70B and GPT-4o-mini i certain cybersecurity-specific tasks. By releasing our model to the public, we aim to accelerate progress and adoption of AI-driven tools in both pub"
+    }
+  ]
+}

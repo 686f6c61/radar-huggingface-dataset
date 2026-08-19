@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maaquib/qwen2-vl-7b-audio-lora",
+  "slug": "maaquib-qwen2-vl-7b-audio-lora",
+  "author": "maaquib",
+  "url": "https://huggingface.co/maaquib/qwen2-vl-7b-audio-lora",
+  "created_at": "2026-08-18T21:53:38.000Z",
+  "updated_at": "2026-08-18T21:53:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161979375,
+  "storage_human": "162 MB",
+  "base_model": "outputs/qwen2vl-audio-stage1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lordChipotle/qwen2-vl-audio-7b-qlora · Hugging Face",
+      "url": "https://huggingface.co/lordChipotle/qwen2-vl-audio-7b-qlora",
+      "snippet": "Model Card for Qwen2-VL-7B-Audio-ASR Model Details Model Description: This project extends Qwen/Qwen2.5-VL-7B-Instruct, a powerful Vision-Language Model (VLM), into a multi-modal model capable of understanding and transcribing spoken English."
+    },
+    {
+      "title": "Qwen/Qwen2-VL-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct",
+      "snippet": "A newer version of this model is available: Qwen/Qwen2.5-VL-7B-Instruct"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2-Audio: The official repo of Qwen2-Audio chat ...",
+      "url": "https://github.com/QwenLM/Qwen2-Audio",
+      "snippet": "2024.8.9 🎉 We released the checkpoints of both Qwen2-Audio-7B and Qwen2-Audio-7B-Instruct on ModelScope and Hugging Face. 2024.7.15 🎉 We released the paper of Qwen2-Audio, introducing the relevant model structure, training methods, and model performance. Check our report for details! 2023.11.30 🔥 We released the Qwen-Audio series."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Audio: The official repo of Qwen-Audio (通义千问-Audio ...",
+      "url": "https://github.com/QwenLM/Qwen-Audio",
+      "snippet": "We release two models of the Qwen-Audio series soon: Qwen-Audio: The pre-trained multi-task audio understanding model uses Qwen-7B as the initialization of the LLM, and Whisper-large-v2 as the initialization of the audio encoder. Qwen-Audio-Chat: A multimodal LLM-based AI assistant, which is trained with alignment techniques."
+    },
+    {
+      "title": "Qwen - Read the Docs",
+      "url": "https://qwen.readthedocs.io/en/latest/",
+      "snippet": "Welcome to Qwen! ¶ Qwen is the large language model and large multimodal model series of the Qwen Team, Alibaba Group. Both language models and multimodal models are pretrained on large-scale multilingual and multimodal data and post-trained on quality data for aligning to human preferences. Qwen is capable of natural language understanding, text generation, vision understanding, audio ..."
+    }
+  ]
+}

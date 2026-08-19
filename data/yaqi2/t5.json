@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yaqi2/t5",
+  "slug": "yaqi2-t5",
+  "author": "yaqi2",
+  "url": "https://huggingface.co/yaqi2/t5",
+  "created_at": "2026-08-18T07:28:28.000Z",
+  "updated_at": "2026-08-18T07:28:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62538752,
+  "parameters_human": "62.5M",
+  "storage_bytes": 250990778,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yaqi2 (Gia Huy) - Hugging Face",
+      "url": "https://huggingface.co/yaqi2/models",
+      "snippet": "yaqi2&#x27;s models2 Sort: Recently updated yaqi2/Qwen3-1.7B-Adapter Updated about 18 hours ago"
+    },
+    {
+      "title": "T5 (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/T5_(language_model)",
+      "snippet": "T5 (Text-to-Text Transfer Transformer) is a series of large language models developed by Google AI introduced in 2019. [1][2] Like the original Transformer model, [3] T5 models are encoder-decoder Transformers, where the encoder processes the input text, and the decoder generates the output text."
+    },
+    {
+      "title": "T5 — transformers 2.9.1 documentation - Hugging Face",
+      "url": "https://huggingface.co/transformers/v2.9.1/model_doc/t5.html",
+      "snippet": "Training ¶ T5 is an encoder-decoder model and converts all NLP problems into a text-to-text format. It is trained using teacher forcing. This means that for training we always need an input sequence and a target sequence. The input sequence is fed to the model using input_ids. The target sequence is shifted to the right, i.e. prepended by a start-sequence token and fed to the decoder using ..."
+    },
+    {
+      "title": "T5 (Text-to-Text Transfer Transformer) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/t5-text-to-text-transfer-transformer/",
+      "snippet": "T5 (Text-to-Text Transfer Transformer) is a transformer-based language model developed by Google Research. It treats every NLP task as a text-to-text problem, allowing the same model to perform a wide range of language tasks through a unified framework."
+    },
+    {
+      "title": "T5: Text-To-Text Transfer Transformer - GitHub",
+      "url": "https://github.com/google-research/text-to-text-transfer-transformer",
+      "snippet": "T5X is the new and improved implementation of T5 (and more) in JAX and Flax. T5 on Tensorflow with MeshTF is no longer actively developed. If you are new to T5, we recommend starting with T5X. The t5 library serves primarily as code for reproducing the experiments in Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. In the paper, we demonstrate how to achieve ..."
+    }
+  ]
+}

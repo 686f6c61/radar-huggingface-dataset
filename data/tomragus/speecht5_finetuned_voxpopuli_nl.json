@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tomragus/speecht5_finetuned_voxpopuli_nl",
+  "slug": "tomragus-speecht5_finetuned_voxpopuli_nl",
+  "author": "tomragus",
+  "url": "https://huggingface.co/tomragus/speecht5_finetuned_voxpopuli_nl",
+  "created_at": "2026-08-17T20:19:12.000Z",
+  "updated_at": "2026-08-17T20:36:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "text-to-audio",
+    "text-to-speech",
+    "generated_from_trainer",
+    "nl",
+    "dataset:facebook/voxpopuli",
+    "base_model:microsoft/speecht5_tts",
+    "base_model:finetune:microsoft/speecht5_tts",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 144433890,
+  "parameters_human": "144.4M",
+  "storage_bytes": 2889190466,
+  "storage_human": "2.9 GB",
+  "base_model": "microsoft/speecht5_tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sumet/speecht5_finetuned_voxpopuli_nl · Hugging Face",
+      "url": "https://huggingface.co/sumet/speecht5_finetuned_voxpopuli_nl",
+      "snippet": "This model is a fine-tuned version of microsoft/speecht5_tts on the Vox Populi NL dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "pragsGit/speecht5_finetuned_voxpopuli_nl · Hugging Face",
+      "url": "https://huggingface.co/pragsGit/speecht5_finetuned_voxpopuli_nl",
+      "snippet": "speecht5_finetuned_voxpopuli_nl This model is a fine-tuned version of microsoft/speecht5_tts on the facebook/voxpopuli dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "sumet/speecht5_finetuned_voxpopuli_nl - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/246029",
+      "snippet": "speec T5 NL - Sumet This model is a fine-tuned version of microsoft/speecht5_tts on the Vox Populi NL dataset. It achieves the following results on the evaluation set: Loss: nan Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure"
+    },
+    {
+      "title": "Speecht5_finetuned_voxpopuli_lt Open-source Text-to-Speech Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915692888866054146",
+      "snippet": "Model Overview This model is a text-to-speech (TTS) implementation of the SpeechT5 architecture, specifically fine-tuned for the VoxPopuli dataset, capable of converting text into natural speech."
+    },
+    {
+      "title": "GitHub - Satvik-ai/Text_To_Speech: This project fine-tunes Microsoft&#x27;s ...",
+      "url": "https://github.com/Satvik-ai/Text_To_Speech",
+      "snippet": "The fine-tuned model is capable of synthesizing intelligible Dutch speech conditioned on a target speaker embedding. Given that VoxPopuli is an ASR dataset (not optimized for TTS), the output quality is reasonable for a fine-tuning exercise and serves as a solid baseline. The model is hosted on the Hugging Face Hub: 🔗 Satvik-ai/speecht5_finetuned_voxpopuli_nl"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SimpleTuner/open-rvq-encoder-minimax-music-3-41m-v1-wip",
+  "slug": "simpletuner-open-rvq-encoder-minimax-music-3-41m-v1-wip",
+  "author": "SimpleTuner",
+  "url": "https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music-3-41m-v1-wip",
+  "created_at": "2026-08-16T19:27:08.000Z",
+  "updated_at": "2026-08-17T01:21:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "audio",
+    "music",
+    "rvq",
+    "reverse-distillation",
+    "minimax-music-3",
+    "mup",
+    "dataset:bghira/minimax-music3-rvq-reverse-distillation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5902088455,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax Music 3 Quickstart - SimpleTuner",
+      "url": "http://docs.simpletuner.io/quickstart/MINIMAX_MUSIC/",
+      "snippet": "MiniMax Music 3 is a caption- and lyrics-conditioned music generator. The Diffusers layout uses a Qwen3 autoregressive language model for text/audio conditioning, a flow-matching transformer over 128-channel DAV latents, and a decoder/vocoder for waveform validation."
+    },
+    {
+      "title": "SimpleTuner/documentation/QUICKSTART.md at main · bghira ... - GitHub",
+      "url": "https://github.com/bghira/SimpleTuner/blob/main/documentation/QUICKSTART.md",
+      "snippet": "SimpleTuner / documentation / QUICKSTART.md bghira MiniMax Music docs update 8a32565 · 2 days ago History 327 lines (296 loc) · 16.9 KB"
+    },
+    {
+      "title": "SimpleTuner - GitHub",
+      "url": "https://github.com/bghira/SimpleTuner",
+      "snippet": "SimpleTuner includes a complete multi-user training platform with enterprise-grade features— free and open source, forever. Worker Orchestration - Register distributed GPU workers that auto-connect to a central panel and receive job dispatch via SSE; supports ephemeral (cloud-launched) and persistent (always-on) workers; see Worker ..."
+    },
+    {
+      "title": "GitHub - SimpleTuner-io/cog-minimax-music-3-extractor: Extract ...",
+      "url": "https://github.com/SimpleTuner-io/cog-minimax-music-3-extractor",
+      "snippet": "Push after creating bghira/minimax-music-3 with 8x H100 hardware: ... Extract information to attempt building a compatible RVQ encoder."
+    },
+    {
+      "title": "MiniMax Music 3 AI Music Generator — Create Full Songs",
+      "url": "https://minimax3.com/tools/minimax-music-3",
+      "snippet": "Try a MiniMax Music 3 AI music generator for complete songs up to five minutes. Control style, structured lyrics, vocals, instruments, and arrangement."
+    }
+  ]
+}

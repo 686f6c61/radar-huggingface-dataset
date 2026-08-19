@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "openclimatefix-models/cloudcasting_uk",
+  "slug": "openclimatefix-models-cloudcasting_uk",
+  "author": "openclimatefix-models",
+  "url": "https://huggingface.co/openclimatefix-models/cloudcasting_uk",
+  "created_at": "2025-10-14T10:13:29.000Z",
+  "updated_at": "2026-08-18T14:15:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30274955,
+  "parameters_human": "30.3M",
+  "storage_bytes": 177058024,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openclimatefix-models/cloudcasting_uk · Hugging Face",
+      "url": "https://huggingface.co/openclimatefix-models/cloudcasting_uk",
+      "snippet": "Cloudcasting Model Description This model is trained to predict future frames of satellite data from past frames. It takes 3 hours of recent satellkite imagery at 15 minute intervals and predicts 3 hours into the future also at 15 minute intervals. The satellite inputs and predictions are multispectral with 11 channels. See [1] for the repo used to train the model. Developed by: Open Climate ..."
+    },
+    {
+      "title": "openclimatefix/cloudcasting_uk · Hugging Face",
+      "url": "https://huggingface.co/openclimatefix/cloudcasting_uk",
+      "snippet": "Cloudcasting Model Description This model is trained to predict future frames of satellite data from past frames. It takes 3 hours of recent satellkite imagery at 15 minute intervals and predicts 3 hours into the future also at 15 minute intervals. The satellite inputs and predictions are multispectral with 11 channels. See [1] for the repo used to train the model. Developed by: Open Climate ..."
+    },
+    {
+      "title": "Cloudcasting: Our innovative AI forecasting tool - openclimatefix.org",
+      "url": "https://www.openclimatefix.org/work/cloudcasting",
+      "snippet": "Cloudcasting uses cutting-edge AI forecasting models to help grid operators and energy traders accelerate decarbonisation."
+    },
+    {
+      "title": "Open Climate Fix",
+      "url": "https://www.openclimatefix.org/",
+      "snippet": "Delivering AI forecasting tools to accelerate decarbonisation Work like this has real impact—reducing forecasting errors and the need to keep costly fossil-fuel plants ticking over. Open Climate Fix&#x27;s nowcasting research has potential to further improve the forecasting capabilities of electricity system operators around the world.\""
+    },
+    {
+      "title": "Open Climate Fix - GitHub",
+      "url": "https://github.com/openclimatefix",
+      "snippet": "Open Climate Fix (OCF) is a non-profit company, focused on building AI tools for a greener grid. Every path to net zero has the electricity grid at its heart. At Open Climate Fix, we&#x27;re delivering cutting-edge technology for industry to accelerate the energy transition."
+    }
+  ]
+}

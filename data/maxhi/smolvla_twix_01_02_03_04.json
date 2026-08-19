@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "MaxHi/smolvla_twix_01_02_03_04",
+  "slug": "maxhi-smolvla_twix_01_02_03_04",
+  "author": "MaxHi",
+  "url": "https://huggingface.co/MaxHi/smolvla_twix_01_02_03_04",
+  "created_at": "2026-08-14T13:35:57.000Z",
+  "updated_at": "2026-08-14T13:36:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:MaxHi/gm_twix_01_02_03_04_merged",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197804320,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Venkatsaikiran/pubmedbert-bc5cdr-ner",
+  "slug": "venkatsaikiran-pubmedbert-bc5cdr-ner",
+  "author": "Venkatsaikiran",
+  "url": "https://huggingface.co/Venkatsaikiran/pubmedbert-bc5cdr-ner",
+  "created_at": "2026-08-18T10:58:46.000Z",
+  "updated_at": "2026-08-18T11:04:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 478158740,
+  "storage_human": "478 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HFpf/pubmedbert-bc5cdr-ner · Hugging Face",
+      "url": "https://huggingface.co/HFpf/pubmedbert-bc5cdr-ner",
+      "snippet": "language: en tags: medical clinical-ner biobert bc5cdr Clinical NER Model: Chemicals & Diseases Fine-tuned microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract on the BC5CDR dataset. Entity Types Chemical (green) Disease (pink) Usage"
+    },
+    {
+      "title": "ChigurupatiVenkatSaiKiran/Efficient-Reproducible-Biomedical ... - GitHub",
+      "url": "https://github.com/ChigurupatiVenkatSaiKiran/Efficient-Reproducible-Biomedical-NER-A-Comparative-Evaluation-FFT-LoRA-and-QLoRA-Using-PubMedBERT",
+      "snippet": "A comparative evaluation of Full Fine-Tuning (FFT), LoRA, and QLoRA for Biomedical Named Entity Recognition (NER) using PubMedBERT. Analyzes empirical performance, compute efficiency, and reproducibility across scaling dataset sizes on the BC5CDR benchmark."
+    },
+    {
+      "title": "Named_Entity_Recognition_BC5CDR.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/eugenesiow/practical-ml/blob/master/notebooks/Named_Entity_Recognition_BC5CDR.ipynb",
+      "snippet": "Notebook to train/fine-tune a BioBERT model to perform named entity recognition (NER). The dataset used is a pre-processed version of the BC5CDR (BioCreative V CDR task corpus: a resource for relation extraction) dataset from Li et al. (2016)."
+    },
+    {
+      "title": "GitHub - skiran13/MedicalNER: BioBERT model fine tuned for NER task on ...",
+      "url": "https://github.com/skiran13/MedicalNER",
+      "snippet": "This project demonstrates how to perform Named Entity Recognition (NER) on medical text by training BioBERT (a pre-trained language model for biomedical text mining) on the Pubmed dataset. The Pubmed dataset is a collection of biomedical research abstracts and articles, making it a valuable resource for NER tasks in the biomedical domain."
+    },
+    {
+      "title": "BiomedNLP-PubMedBERT-base-uncased-abstract-bc5cdr-ner-LoRA-v1",
+      "url": "https://huggingface.co/Francesco-A/BiomedNLP-PubMedBERT-base-uncased-abstract-bc5cdr-ner-LoRA-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

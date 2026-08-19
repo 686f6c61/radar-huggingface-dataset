@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hanji-dev/hanji-parse-4b",
+  "slug": "hanji-dev-hanji-parse-4b",
+  "author": "hanji-dev",
+  "url": "https://huggingface.co/hanji-dev/hanji-parse-4b",
+  "created_at": "2026-08-15T17:20:34.000Z",
+  "updated_at": "2026-08-15T19:16:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "ocr",
+    "document-parsing",
+    "document-ai",
+    "layout",
+    "vision-language-model",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 8887141982,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hanji: Turn complex documents into AI-ready data",
+      "url": "https://hanji.dev/",
+      "snippet": "Faxed referral packets, face sheets, and prior auths parse into clean tables and cited fields, so billers verify the source instead of re-keying scans. When fax quality causes misses, we tune on the exact failed documents."
+    },
+    {
+      "title": "Document Parsing Playground · Hanji",
+      "url": "https://hanji.dev/playground",
+      "snippet": "Try Hanji on real PDFs and compare structured text, tables, figures, and bounding boxes."
+    },
+    {
+      "title": "Introduction - Hanji",
+      "url": "https://docs.hanji.dev/introduction",
+      "snippet": "Email hello@hanji.dev.For bulk workloads (thousands of documents), don&#x27;t loop POST /v1/parse/file. Use the async batch endpoints instead: you upload each file once to a presigned URL, submit the whole set as one batch, and poll for completion. Same response schema, no per-doc HTTP round-trip overhead."
+    },
+    {
+      "title": "docs.hanji.dev",
+      "url": "https://docs.hanji.dev/llms.txt",
+      "snippet": "> Hanji parses documents (PDF, PPTX, DOCX, images) into structured, AI-ready JSON: text chunks with page numbers and bounding boxes, tables as structured cells plus a markdown rendering, and figures. It can also fill an arbitrary JSON schema from a document, with a per-field citation (page, bounding box, verbatim source text) for every value. Sync, async batch, and schema extraction share one ..."
+    },
+    {
+      "title": "Turn documents into AI-ready data - Hanji",
+      "url": "https://docs.extract.page/introduction",
+      "snippet": "Hanji turns documents into structured JSON. Send a PDF, PPTX, DOCX, or image; get back every run of text, every table as structured cells (plus a markdown rendering), and every figure, in reading order, in one API call."
+    }
+  ]
+}

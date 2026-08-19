@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "XiaomiMiMo/MiMo-V2.5-Pro",
+  "slug": "xiaomimimo-mimo-v2-5-pro",
+  "author": "XiaomiMiMo",
+  "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+  "created_at": "2026-04-27T12:52:53.000Z",
+  "updated_at": "2026-07-09T04:20:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "agent",
+    "long-context",
+    "code",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "eval-results",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 742,
+  "downloads_30d": 58143,
+  "trending_score": 8,
+  "parameters": 1023244718976,
+  "parameters_human": "1023.24B",
+  "storage_bytes": 1033418613038,
+  "storage_human": "1033.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiMo-V2.5-Pro | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-5-pro",
+      "snippet": "In internal testing, V2.5-Pro demonstrated a new level of intelligence that, in turn, pushed our researchers to rethink how they work with it. When paired with a proper harness, V2.5-Pro can sustain complex, long-horizon tasks spanning more than a thousand tool calls."
+    },
+    {
+      "title": "XiaomiMiMo/MiMo-V2.5-Pro · Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+      "snippet": "Hybrid Attention Architecture: Interleaves Sliding Window Attention (SWA) and Global Attention (GA) with a 6:1 ratio and 128 sliding window. This reduces KV-cache storage by nearly 7x while maintaining long-context performance via learnable attention sink bias."
+    },
+    {
+      "title": "MiMo-V2.5 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-5",
+      "snippet": "Today, we are releasing MiMo-V2.5, a major step forward in agentic capability and multimodal understanding. With native visual and audio understanding, MiMo-V2.5 reasons seamlessly across modalities, surpasses MiMo-V2-Pro in agentic performance, and supports up to 1 million tokens of context."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/",
+      "snippet": "From model inference to agent applications, MiMo delivers an end-to-end AI product experience. Next-gen AI coding assistant for developers: Empowering you to understand, build, and collaborate faster with infinite context. An all-in-one agentic platform for real-world tasks."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/mimo-v2.5-pro",
+      "snippet": "From model inference to agent applications, MiMo delivers an end-to-end AI product experience. Next-gen AI coding assistant for developers: Empowering you to understand, build, and collaborate faster with infinite context. An all-in-one agentic platform for real-world tasks."
+    }
+  ]
+}

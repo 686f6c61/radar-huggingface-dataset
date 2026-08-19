@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "oraculumai/ZUNA1.1-CoreML-Apple",
+  "slug": "oraculumai-zuna1-1-coreml-apple",
+  "author": "oraculumai",
+  "url": "https://huggingface.co/oraculumai/ZUNA1.1-CoreML-Apple",
+  "created_at": "2026-08-17T22:53:28.000Z",
+  "updated_at": "2026-08-18T00:35:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "eeg",
+    "diffusion",
+    "ios",
+    "visionos",
+    "macos",
+    "en",
+    "base_model:Zyphra/ZUNA1.1",
+    "base_model:quantized:Zyphra/ZUNA1.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3603796753,
+  "storage_human": "3.6 GB",
+  "base_model": "Zyphra/ZUNA1.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oraculumai/ZUNA-CoreML-Apple · Hugging Face",
+      "url": "https://huggingface.co/oraculumai/ZUNA-CoreML-Apple",
+      "snippet": "ZUNA Core ML: Enumerated Apple Profiles This repository contains Core ML conversions of ZUNA for Apple-native inference on iPhone, visionOS, and macOS, organized under enumerated profile folders. ZUNA is a 380M-parameter masked diffusion autoencoder for scalp EEG reconstruction and superresolution. Given a subset of channels and their 3D electrode coordinates, the model can: Denoise observed ..."
+    },
+    {
+      "title": "oraculumai/ZUNA-CoreML-Apple at main - Hugging Face",
+      "url": "https://huggingface.co/oraculumai/ZUNA-CoreML-Apple/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - john-rocky/CoreML-Models: Core ML model zoo for iOS/macOS ...",
+      "url": "https://github.com/john-rocky/CoreML-Models",
+      "snippet": "Core ML model zoo for iOS/macOS — PyTorch models converted to ready-to-use .mlpackage, each with a conversion script and SwiftUI sample app. Sibling repos cover Apple&#x27;s Core AI framework (iOS/macOS 27) and on-device LLMs. - john-rocky/CoreML-Models"
+    },
+    {
+      "title": "GitHub - apple/coreai-models: Model export recipes, Python primitives ...",
+      "url": "https://github.com/apple/coreai-models",
+      "snippet": "The main components include: Model export — Recipes to export popular open source models from Hugging Face and other sources to Core AI format. Reusable primitives — Python building blocks for authoring custom Core AI models in PyTorch. Runtime utilities — Swift package built on top of Core AI framework to run models on macOS and iOS."
+    },
+    {
+      "title": "Core ML | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/coreml",
+      "snippet": "Core ML itself builds on top of low-level primitives like Accelerate and BNNS, as well as Metal Performance Shaders. If your app integrates AI models using the latest architectures and inference techniques, see Core AI."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MeoHo/bert-base-nsmc",
+  "slug": "meoho-bert-base-nsmc",
+  "author": "MeoHo",
+  "url": "https://huggingface.co/MeoHo/bert-base-nsmc",
+  "created_at": "2026-08-18T07:12:12.000Z",
+  "updated_at": "2026-08-18T07:12:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110617344,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442491744,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GTU9/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/GTU9/bert-base-nsmc",
+      "snippet": "bert-base-nsmc This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set: Train Loss: 0.0285 Train Accuracy: 0.9919 Validation Loss: 0.5604 Validation Accuracy: 0.8680 Epoch: 4 Model description More information needed Intended uses & limitations More information needed"
+    },
+    {
+      "title": "Kimheeae/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/Kimheeae/bert-base-nsmc",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ohminsang / bert_base_nsmc Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/ohminsang/bert_base_nsmc/f109967226f64b9a291314d56ece36267c4c1901/overview",
+      "snippet": "Discover potential threats in the ohminsang / bert_base_nsmc model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "BERT for Nucleotide Sequences of Microbial Communities - GitHub",
+      "url": "https://github.com/basehc/BERT4NSMC",
+      "snippet": "This is a project that uses BERT, a pre-trained model based on the transformer architecture, to encode and analyze nucleotide sequences of microbial communities. The goal is to leverage the power of natural language processing to provide effective feature extraction schemes for microbial sequence identification and virus host classification."
+    },
+    {
+      "title": "Korean BertForSequenceClassification Base Cased model (from sangrimlee ...",
+      "url": "https://sparknlp.org/2023/11/01/bert_sequence_classifier_base_multilingual_cased_nsmc_ko.html",
+      "snippet": "DescriptionPretrained BertForSequenceClassification model, adapted from Hugging Face and curated to provide scalability and production-readiness using Spark NLP. bert-base-multilingual-cased-nsmc is a Korean model originally trained by sangrimlee.Predicted Entitiespositive, negativeLive DemoOpen in ColabDownloadCopy..."
+    }
+  ]
+}

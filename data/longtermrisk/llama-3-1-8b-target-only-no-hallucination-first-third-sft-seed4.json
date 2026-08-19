@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed4",
+  "slug": "longtermrisk-llama-3-1-8b-target-only-no-hallucination-first-third-sft-seed4",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed4",
+  "created_at": "2026-08-16T03:54:29.000Z",
+  "updated_at": "2026-08-16T03:54:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft ...",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed3-epoch3",
+      "snippet": "Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed3-epoch3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-first-third-sft-epoch3",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-epoch3",
+      "snippet": "Llama-3.1-8B-target-only-no-hallucination-first-third-sft-epoch3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-first-third - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-first-third",
+      "snippet": "Run longtermrisk/Llama-3.1-8B-target-only-first-third with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced ..."
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-full - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-full",
+      "snippet": "longtermrisk Llama-3.1-8B-target-only-no-hallucination-full Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "Thank you for developing with Llama models. As part of the Llama 3.1 release, we&#x27;ve consolidated GitHub repos and added some additional repos as we&#x27;ve expanded Llama&#x27;s functionality into being an e2e Llama Stack. Please use the following repos going forward: llama-models - Central repo for the foundation models including basic utilities, model cards, license and use policies PurpleLlama ..."
+    }
+  ]
+}

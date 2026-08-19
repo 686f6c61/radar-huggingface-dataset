@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/pi0full_bs16_s30k_260528_white_rack_single_tube_transfer_clean_nobasestate",
+  "slug": "kiroaiseoul-pi0full_bs16_s30k_260528_white_rack_single_tube_transfer_clean_nobasestate",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/pi0full_bs16_s30k_260528_white_rack_single_tube_transfer_clean_nobasestate",
+  "created_at": "2026-08-16T01:02:24.000Z",
+  "updated_at": "2026-08-16T01:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:kiroaiseoul/260528_white_rack_single_tube_transfer_clean_nobasestate",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011558144,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "MinhNhut3005/Qwen-Image-Edit-2511",
+  "slug": "minhnhut3005-qwen-image-edit-2511",
+  "author": "MinhNhut3005",
+  "url": "https://huggingface.co/MinhNhut3005/Qwen-Image-Edit-2511",
+  "created_at": "2026-08-16T05:50:47.000Z",
+  "updated_at": "2026-08-16T05:50:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710671694,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

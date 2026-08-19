@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mahadev-balla/isl-conditional-diffusion-cosine-64",
+  "slug": "mahadev-balla-isl-conditional-diffusion-cosine-64",
+  "author": "mahadev-balla",
+  "url": "https://huggingface.co/mahadev-balla/isl-conditional-diffusion-cosine-64",
+  "created_at": "2026-07-30T07:30:31.000Z",
+  "updated_at": "2026-08-18T09:49:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "conditional-diffusion",
+    "indian-sign-language",
+    "classifier-free-guidance",
+    "unconditional-image-generation",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 29819139,
+  "parameters_human": "29.8M",
+  "storage_bytes": 119316756,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MahadevBalla/isl-diffusion",
+      "url": "https://github.com/MahadevBalla/isl-diffusion",
+      "snippet": "ISL Conditional Diffusion A class-conditioned diffusion model for Indian Sign Language (ISL) handshape generation, built on diffusers &#x27; UNet2DModel with classifier-free guidance."
+    },
+    {
+      "title": "mahadev-balla/isl-conditional-diffusion-linear-128 · Hugging Face",
+      "url": "https://huggingface.co/mahadev-balla/isl-conditional-diffusion-linear-128",
+      "snippet": "Instructions to use mahadev-balla/isl-conditional-diffusion-linear-128 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mahadev-balla/isl-conditional-diffusion-cosine-128 · Hugging Face",
+      "url": "https://huggingface.co/mahadev-balla/isl-conditional-diffusion-cosine-128",
+      "snippet": "Instructions to use mahadev-balla/isl-conditional-diffusion-cosine-128 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "MAHADEV - Diffusion_Model - Google Sites",
+      "url": "https://sites.google.com/kletech.ac.in/mahadev/courses/6th-sem/gen-ai/diffusion_model",
+      "snippet": "A diffusion model is a type of generative model that gradually denoises data starting from pure noise to generate realistic samples, such as images. It has gained popularity due to its high-quality output in image synthesis tasks."
+    },
+    {
+      "title": "GitHub - openai/guided-diffusion",
+      "url": "https://github.com/openai/guided-diffusion",
+      "snippet": "This is the codebase for Diffusion Models Beat GANS on Image Synthesis. This repository is based on openai/improved-diffusion, with modifications for classifier conditioning and architecture improvements. MODEL_FLAGS=\"--attention_resolutions 32,16,8 --class_cond True --diffusion_steps 1000 --dropout ..."
+    }
+  ]
+}

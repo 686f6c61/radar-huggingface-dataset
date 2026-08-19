@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "fontlab/BananaMind-2-Nano-Chat-mixed",
+  "slug": "fontlab-bananamind-2-nano-chat-mixed",
+  "author": "fontlab",
+  "url": "https://huggingface.co/fontlab/BananaMind-2-Nano-Chat-mixed",
+  "created_at": "2026-08-17T16:49:54.000Z",
+  "updated_at": "2026-08-17T16:49:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "bananamendr",
+  "languages": [],
+  "tags": [
+    "bananamendr",
+    "safetensors",
+    "bananamind2_nano",
+    "quantized",
+    "ternary",
+    "int8",
+    "bananamend",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:BananaMind/BananaMind-2-Nano-Chat",
+    "base_model:finetune:BananaMind/BananaMind-2-Nano-Chat",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9979392,
+  "parameters_human": "10.0M",
+  "storage_bytes": 10495560,
+  "storage_human": "10 MB",
+  "base_model": "BananaMind/BananaMind-2-Nano-Chat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BananaMind/BananaMind-2-Nano at main - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/BananaMind-2-Nano/tree/main",
+      "snippet": "BananaMind AI 22 Text Generation Transformers Safetensors PyTorch 4 datasets English bananamind2_nano causal-lm language-model base-model small-language-model bananamind bananamind2 bananamind2-nano fineweb-edu dclm cosmopedia-v2 finemath digit-tokenizer custom-code trust-remote-code custom-architecture custom_code License:apache-2.0 Model card ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=bananamind2",
+      "snippet": "BananaMind/BananaMind-2-Nano Text Generation • 12.1M•Updated 22 days ago• 690 • 12"
+    },
+    {
+      "title": "BananaMind 2 Nano Chat - GitHub",
+      "url": "https://github.com/mpottinger/bananamind-2-nano-chat",
+      "snippet": "A polished local desktop chat app powered by BananaMind/BananaMind-2-Nano-Chat: just 9,968,128 parameters, running entirely on CPU for text generation. The PySide6 interface includes message bubbles, an editable system prompt, multi-turn history, focused or creative generation, reply-length and seed ..."
+    },
+    {
+      "title": "Gemini 3.1 Flash-Lite Image - Nano Banana 2 Lite — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-image/flash-lite/",
+      "snippet": "Transforming passive reading into an interactive learning journey, Peek-A-Word turns selected text into AI-generated visuals. Concise definitions and contextual imagery are generated in one space, without any distracting tab-switching to disturb flow of learning with Nano Banana 2 Lite and Gemini 3.1 Flash Lite."
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "Stable 🍌 Nano Banana 2 Lite Ultra-low latency and cost-effective image generation and editing, designed for high-volume interactive use cases. Stable 🍌 Nano Banana Pro State-of-the-art image generation and editing models for highly contextual native image creation. Stable"
+    }
+  ]
+}

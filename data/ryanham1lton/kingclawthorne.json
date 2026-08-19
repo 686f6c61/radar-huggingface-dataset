@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/KingClawthorne",
+  "slug": "ryanham1lton-kingclawthorne",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/KingClawthorne",
+  "created_at": "2026-06-08T21:35:23.000Z",
+  "updated_at": "2026-08-17T16:19:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 417362799,
+  "storage_human": "417 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/KingClawthorne · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/KingClawthorne",
+      "snippet": "Ryanham1lton / KingClawthorne like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Tooter Turtle - Allen Swift (Tooter Turtle) (English) [RVC v2] [RMVPE ...",
+      "url": "https://voice-models.com/model/8MG",
+      "snippet": "Tags: King Leonardo And His Short Subjects, huggingface, ai-model Related URL: https://huggingface.co/Ryanham1lton/TooterTurtle/resolve/main/Tooter%20Turtle.zip?download=true"
+    },
+    {
+      "title": "King Clawthorne - The Owl House - Furry Character LoRA - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/a634371325c835f0e935c4d5c98a8ff7",
+      "snippet": "Explore King Clawthorne - The Owl House - Furry Character LoRA model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "King Clawthorne from The Owl House - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/11a40cf0fc0d3e8886cb71b51654f645",
+      "snippet": "Explore King Clawthorne from The Owl House model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

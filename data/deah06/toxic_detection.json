@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "deah06/Toxic_Detection",
+  "slug": "deah06-toxic_detection",
+  "author": "deah06",
+  "url": "https://huggingface.co/deah06/Toxic_Detection",
+  "created_at": "2026-08-18T12:37:34.000Z",
+  "updated_at": "2026-08-18T12:37:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - unitaryai/detoxify: Trained models & code to predict toxic ...",
+      "url": "https://github.com/unitaryai/detoxify",
+      "snippet": "Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers. For access to our API, please email us at contact@unitary.ai. - unitaryai/detoxify"
+    },
+    {
+      "title": "AssistantsLab/Tiny-Toxic-Detector · Hugging Face",
+      "url": "https://huggingface.co/AssistantsLab/Tiny-Toxic-Detector",
+      "snippet": "The Tiny-toxic-detector may struggle with ambiguous or nuanced language as any other model would. Even though benchmarks like Toxigen evaluate the model&#x27;s performance with ambiguous language, it may still misclassify comments where toxicity is not clearly defined."
+    },
+    {
+      "title": "Combining Deep Learning and Explainable AI for Toxicity Prediction of ...",
+      "url": "https://arxiv.org/html/2510.22572v1",
+      "snippet": "The proposed architecture achieves competitive results compared to traditional models, demonstrating the potential of deep convolutional networks in cheminformatics. Our findings emphasize the value of combining image-based representations with explainable AI methods to improve both predictive accuracy and model transparency in toxicology."
+    },
+    {
+      "title": "unitary/toxic-bert · Hugging Face",
+      "url": "https://huggingface.co/unitary/toxic-bert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ParaNoid0809/toxic-detector-ai",
+      "url": "https://github.com/ParaNoid0809/toxic-detector-ai",
+      "snippet": "A powerful, modular AI system to detect toxic text and NSFW images in real time. Built for hackathons and production-ready environments to help moderate content across websites, apps, and social platforms."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/ACE-Step_ComfyUI_repackaged",
+  "slug": "comfy-org-ace-step_comfyui_repackaged",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/ACE-Step_ComfyUI_repackaged",
+  "created_at": "2025-05-07T10:49:51.000Z",
+  "updated_at": "2026-08-17T05:33:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:ACE-Step/ACE-Step-v1-3.5B",
+    "base_model:finetune:ACE-Step/ACE-Step-v1-3.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 84,
+  "downloads_30d": 29446,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7699743341,
+  "storage_human": "7.7 GB",
+  "base_model": "ACE-Step/ACE-Step-v1-3.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/ACE-Step_ComfyUI_repackaged · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/ACE-Step_ComfyUI_repackaged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comfy-Org/ACE-Step_ComfyUI_repackaged at ... - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/ACE-Step_ComfyUI_repackaged/tree/e6d4f4e0ba17b24b35a3fc3b83c8e1c83b7faf9c/all_in_one",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ACE-Step-ComfyUI - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-ComfyUI",
+      "snippet": "ACE-Step-ComfyUI ComfyUI nodes for ACE-Step AI music generation — text-to-music, cover/remix, repaint, and LLM-powered sample generation."
+    },
+    {
+      "title": "ComfyUI ACE-Step Native Example - docs.comfy.org",
+      "url": "https://docs.comfy.org/tutorials/audio/ace-step/ace-step-v1",
+      "snippet": "This guide will help you create dynamic music using the ACE-Step model in ComfyUI ACE-Step is an open-source foundational music generation model jointly developed by Chinese team StepFun and ACE Studio, aimed at providing music creators with efficient, flexible and high-quality music generation and editing tools."
+    },
+    {
+      "title": "ComfyUI ACE-Step 1.5 Music Generation Guide - docs.comfy.org",
+      "url": "https://docs.comfy.org/tutorials/audio/ace-step/ace-step-v1-5",
+      "snippet": "Learn how to use ACE-Step 1.5 for AI music generation in ComfyUI. Complete guide with workflows, model downloads, and setup instructions for ComfyUI."
+    }
+  ]
+}

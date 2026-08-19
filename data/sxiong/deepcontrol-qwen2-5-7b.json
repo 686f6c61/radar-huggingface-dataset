@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "sxiong/DeepControl-Qwen2.5-7B",
+  "slug": "sxiong-deepcontrol-qwen2-5-7b",
+  "author": "sxiong",
+  "url": "https://huggingface.co/sxiong/DeepControl-Qwen2.5-7B",
+  "created_at": "2026-08-16T09:12:11.000Z",
+  "updated_at": "2026-08-16T10:40:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "deepcontrol",
+    "search-augmented",
+    "reinforcement-learning",
+    "conversational",
+    "en",
+    "arxiv:2602.01672",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 341748132,
+  "storage_human": "342 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

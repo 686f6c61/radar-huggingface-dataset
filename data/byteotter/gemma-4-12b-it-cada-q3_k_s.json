@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ByteOtter/Gemma-4-12B-it-CADA-Q3_K_S",
+  "slug": "byteotter-gemma-4-12b-it-cada-q3_k_s",
+  "author": "ByteOtter",
+  "url": "https://huggingface.co/ByteOtter/Gemma-4-12B-it-CADA-Q3_K_S",
+  "created_at": "2026-08-13T18:38:14.000Z",
+  "updated_at": "2026-08-15T13:01:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2607.02770",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 229,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 5534805216,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

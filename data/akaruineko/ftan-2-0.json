@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "akaruineko/ftan-2.0",
+  "slug": "akaruineko-ftan-2-0",
+  "author": "akaruineko",
+  "url": "https://huggingface.co/akaruineko/ftan-2.0",
+  "created_at": "2026-08-16T06:23:01.000Z",
+  "updated_at": "2026-08-17T12:51:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "moderation",
+    "filtering",
+    "offensive",
+    "clean",
+    "en",
+    "dataset:akaruineko/offensively-neutral",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akaruineko (Георгий Куликов) - Hugging Face",
+      "url": "https://huggingface.co/akaruineko/models",
+      "snippet": "User profile of Георгий Куликов on Hugging Face"
+    },
+    {
+      "title": "FTAN: Frame-to-frame temporal alignment network with contrastive ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0262885624002646",
+      "snippet": "OTAM [3] leveraged the temporal ordering information for getting the frame distances between the query and the support-set with DTW. TARN [2] mainly learned comparing representations of the variable temporal length of two videos to perform the segment-level temporal alignment implicitly at the video segment level."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "GitHub - OpenModelDB/open-model-database: An open and free database for ...",
+      "url": "https://github.com/OpenModelDB/open-model-database",
+      "snippet": "An open and free database for AI models. Contribute to OpenModelDB/open-model-database development by creating an account on GitHub."
+    },
+    {
+      "title": "akaruineko - Student, Interface Designer | DeviantArt",
+      "url": "https://www.deviantart.com/akaruineko/gallery/60137608/3d-models",
+      "snippet": "7 Watchers66 Deviations 3.9K Pageviews Profile Navigation akaruineko Home Gallery Favourites Posts About Watch"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "thirdExec/seisground-weights",
+  "slug": "thirdexec-seisground-weights",
+  "author": "thirdExec",
+  "url": "https://huggingface.co/thirdExec/seisground-weights",
+  "created_at": "2026-08-16T07:45:10.000Z",
+  "updated_at": "2026-08-16T08:20:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "seismic",
+    "fault-interpretation",
+    "vision-language",
+    "geophysics",
+    "grounding",
+    "lora",
+    "en",
+    "dataset:thirdExec/synthetic-seismic-vlm",
+    "dataset:GeoGPT-Research-Project/GeoGPT-CoT-QA",
+    "dataset:gOLIVES/CRACKS",
+    "arxiv:2309.02791",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 876158555,
+  "storage_human": "876 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Files for thomas-friends-ai-model-pack-9-voices-from-weights-gg",
+      "url": "https://archive.org/download/thomas-friends-ai-model-pack-9-voices-from-weights-gg",
+      "snippet": "Files for thomas-friends-ai-model-pack-9-voices-from-weights-gg"
+    },
+    {
+      "title": "Google Chrome Silently Installs a 4GB AI Model on PC ... - OSTechNix",
+      "url": "https://ostechnix.com/google-chrome-4gb-ai-model-weights-bin-file/",
+      "snippet": "Google Chrome silently installs a 4GB AI Model on desktop systems without user consent. Learn how to find and delete it to reclaim your space."
+    },
+    {
+      "title": "www.weights.com",
+      "url": "https://www.weights.com/models",
+      "snippet": "www.weights.com ... /"
+    },
+    {
+      "title": "The truth behind Chrome&#x27;s 4GB &#x27;weights.bin&#x27; Gemini Nano file",
+      "url": "https://www.androidauthority.com/google-chrome-weights-bin-ai-model-download-explained-3664043/",
+      "snippet": "Chrome is silently downloading 4GB AI model files to your PC. Learn what Gemini Nano \"weights\" are and how to delete them to reclaim storage."
+    },
+    {
+      "title": "In the Weights: New Tool Lets You Check If You Exist in AI Model ...",
+      "url": "https://creati.ai/ai-news/2026-06-21/in-the-weights-ai-training-data-vanity-search-tool/",
+      "snippet": "Former OpenAI employees launch &#x27;In the Weights,&#x27; a tool that queries multiple AI models to measure how well they recall a person&#x27;s existence from training data."
+    }
+  ]
+}

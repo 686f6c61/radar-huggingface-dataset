@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "RDTvlokip/RDTChess",
+  "slug": "rdtvlokip-rdtchess",
+  "author": "RDTvlokip",
+  "url": "https://huggingface.co/RDTvlokip/RDTChess",
+  "created_at": "2026-08-16T16:23:37.000Z",
+  "updated_at": "2026-08-17T13:43:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "chess",
+    "policy-network",
+    "value-network",
+    "resnet",
+    "behavioral-cloning",
+    "from-scratch",
+    "other",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51632645,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Human move prediction (behavioural cloning)",
+      "dataset": "Lichess July 2026 standard games, both players 1800+ Elo, held-out split",
+      "metric": "Top-1 move agreement",
+      "value": 51.7
+    },
+    {
+      "task": "Tactical puzzle solving, single forward pass, no search",
+      "dataset": "Lichess puzzle database, 23845 puzzles sampled by solution length x rating band",
+      "metric": "First move of the solution",
+      "value": 57.8
+    },
+    {
+      "task": "Tactical puzzle solving, single forward pass, no search",
+      "dataset": "Lichess puzzle database, 23845 puzzles sampled by solution length x rating band",
+      "metric": "Entire solution line",
+      "value": 38.3
+    },
+    {
+      "task": "Tactical puzzle solving, single forward pass, no search",
+      "dataset": "Lichess puzzle database, 23845 puzzles sampled by solution length x rating band",
+      "metric": "Quiet entry move, rating 2400+",
+      "value": 32.8
+    },
+    {
+      "task": "Game play against an alpha-beta minimax",
+      "dataset": "300 games per opponent, seed 4242, 300-move cap",
+      "metric": "Score vs minimax depth 1",
+      "value": 88.7
+    },
+    {
+      "task": "Game play against an alpha-beta minimax",
+      "dataset": "300 games per opponent, seed 4242, 300-move cap",
+      "metric": "Score vs minimax depth 2",
+      "value": 59.5
+    }
+  ],
+  "sources": []
+}

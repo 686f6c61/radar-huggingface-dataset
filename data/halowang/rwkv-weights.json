@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "HaloWang/rwkv-weights",
+  "slug": "halowang-rwkv-weights",
+  "author": "HaloWang",
+  "url": "https://huggingface.co/HaloWang/rwkv-weights",
+  "created_at": "2026-08-09T11:33:40.000Z",
+  "updated_at": "2026-08-16T08:41:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "rwkv",
+  "languages": [],
+  "tags": [
+    "rwkv",
+    "gguf",
+    "rwkv7",
+    "edge-inference",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 175,
+  "trending_score": 0,
+  "parameters": 1527799808,
+  "parameters_human": "1.53B",
+  "storage_bytes": 128372795822,
+  "storage_human": "128.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HaloWang/rwkv-weights · Hugging Face",
+      "url": "https://huggingface.co/HaloWang/rwkv-weights",
+      "snippet": "HaloWang / rwkv-weights like 0 RWKV GGUF rwkv7 edge-inference conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "HaloWang (Ce Wang) - Hugging Face",
+      "url": "https://huggingface.co/HaloWang/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 1 day ago ... updated a dataset 2 days ago"
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "The RWKV Language Model RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "HaloWang (Ce Wang) · GitHub",
+      "url": "https://github.com/HaloWang",
+      "snippet": "A fast, lightweight, and extensible RWKV chat UI powered by Flutter. Offline-ready, multi-backend support, ideal for local RWKV inference. Dart 90 13 RWKV-APP/app_website Public The landing page and the backend of RWKV Chat app TypeScript 2 2 english_flow Public archive A personal (and brutal) assistant program for English webpage reading ..."
+    },
+    {
+      "title": "RWKV APP - GitHub",
+      "url": "https://github.com/RWKV-APP/",
+      "snippet": "Local model paths — after downloading supported weights, selected workflows can run on your device More than chat — explore text, vision, speech, translation, model comparison, and local AI workflows"
+    }
+  ]
+}

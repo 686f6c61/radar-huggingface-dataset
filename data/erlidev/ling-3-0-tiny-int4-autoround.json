@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "erlidev/Ling-3.0-tiny-int4-AutoRound",
+  "slug": "erlidev-ling-3-0-tiny-int4-autoround",
+  "author": "erlidev",
+  "url": "https://huggingface.co/erlidev/Ling-3.0-tiny-int4-AutoRound",
+  "created_at": "2026-08-15T19:41:28.000Z",
+  "updated_at": "2026-08-15T19:41:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:13:05.412Z",
+  "benchmarks": [],
+  "sources": []
+}

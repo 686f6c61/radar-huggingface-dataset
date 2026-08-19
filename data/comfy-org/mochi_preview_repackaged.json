@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/mochi_preview_repackaged",
+  "slug": "comfy-org-mochi_preview_repackaged",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/mochi_preview_repackaged",
+  "created_at": "2024-11-02T19:02:33.000Z",
+  "updated_at": "2026-08-17T06:13:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:genmo/mochi-1-preview",
+    "base_model:finetune:genmo/mochi-1-preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 74,
+  "downloads_30d": 15391,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77631873266,
+  "storage_human": "77.6 GB",
+  "base_model": "genmo/mochi-1-preview",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/mochi_preview_repackaged · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/mochi_preview_repackaged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comfy-Org/mochi_preview_repackaged at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/mochi_preview_repackaged/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mochi_preview_repackaged: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mochi-preview-repackaged-comfy-org",
+      "snippet": "Overview mochi_preview_repackaged is a repackaged version of Mochi Preview optimized for use within ComfyUI, a node-based interface for generative models. Built and maintained by Comfy-Org, this model operates as a text-to-image generation system designed to integrate seamlessly into ComfyUI workflows without additional configuration overhead. The repackaging focuses on compatibility and ease ..."
+    },
+    {
+      "title": "mochi_preview_repackaged: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mochipreviewrepackaged-comfy-org",
+      "snippet": "Overview mochi_preview_repackaged is the Mochi Preview model packaged specifically for ComfyUI, a node-based interface for generative AI workflows. Built by Comfy-Org, this repackaged version removes friction from using the original Mochi Preview model by Genmo within ComfyUI&#x27;s environment. The most important thing to know before using it: this is a text-to-image generation model delivered as ..."
+    },
+    {
+      "title": "README.md · Comfy-Org/mochi_preview_repackaged at main",
+      "url": "https://huggingface.co/Comfy-Org/mochi_preview_repackaged/blob/main/README.md",
+      "snippet": "Comfy-Org / mochi_preview_repackaged like 64 Follow Comfy Org 1.41k License:apache-2.0 Model card FilesFiles and versions Community 7 main mochi_preview_repackaged /README.md comfyanonymous Create README.md 1a851a4 verified5 months ago preview code | raw Copy download link history blame contribute delete Safe 293 Bytes metadata"
+    }
+  ]
+}

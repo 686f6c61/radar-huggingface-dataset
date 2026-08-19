@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "GoktugD/DUSUNEN-Dinle-244M-v1",
+  "slug": "goktugd-dusunen-dinle-244m-v1",
+  "author": "GoktugD",
+  "url": "https://huggingface.co/GoktugD/DUSUNEN-Dinle-244M-v1",
+  "created_at": "2026-08-14T09:47:13.000Z",
+  "updated_at": "2026-08-14T09:50:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "asr",
+    "turkish",
+    "speech-recognition",
+    "dusunen",
+    "tr",
+    "dataset:google/fleurs",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967000409,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS Turkish",
+      "metric": "WER",
+      "value": 14.4119
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS Turkish",
+      "metric": "CER",
+      "value": 3.4863
+    }
+  ],
+  "sources": []
+}

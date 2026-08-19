@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "BulutKAYA/graylog_log_analizer",
+  "slug": "bulutkaya-graylog_log_analizer",
+  "author": "BulutKAYA",
+  "url": "https://huggingface.co/BulutKAYA/graylog_log_analizer",
+  "created_at": "2026-08-18T15:23:06.000Z",
+  "updated_at": "2026-08-18T15:23:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI - graylog.org",
+      "url": "https://graylog.org/feature/ai/",
+      "snippet": "Discover Graylog&#x27;s human-first AI for security operations. Speed up investigations, cut alert fatigue, and prioritize real threats—without replacing your analysts. Explainable, efficient, and built for trust."
+    },
+    {
+      "title": "Drive Successful AI Projects with Graylog",
+      "url": "https://graylog.org/post/drive-successful-ai-projects-with-graylog/",
+      "snippet": "Graylog can help organizations create AI that generates key insights, detects emerging problems, and in some cases, predicts problems well before they happen."
+    },
+    {
+      "title": "Optimizing Graylog for AI Computer-Driven Systems",
+      "url": "https://community.graylog.org/t/optimizing-graylog-for-ai-computer-driven-systems/34377",
+      "snippet": "Hello Graylog Community, I&#x27;m currently utilizing Graylog to manage logs from an AI computer system that processes real-time sensor data for predictive analysis. As our AI model generates more data, the volume of logs is growing exponentially, and I&#x27;m looking for strategies to ensure that Graylog continues to perform efficiently at scale, especially with the demands from the AI computer ..."
+    },
+    {
+      "title": "GitHub - iam-adnan/ai-log-analyzer: AI-powered log analysis and ...",
+      "url": "https://github.com/iam-adnan/ai-log-analyzer",
+      "snippet": "AI-powered log analysis and predictive threat detection using Graylog, LLaMA (via Ollama), and Slack. Continuously analyzes system logs with a locally hosted AI model to predict infrastructure issu..."
+    },
+    {
+      "title": "How to Use LLMs for Log File Analysis: Examples, Workflows ... - Splunk",
+      "url": "https://www.splunk.com/en_us/blog/learn/log-file-analysis-llms.html",
+      "snippet": "Learn how to use LLMs for log file analysis, from parsing unstructured logs to detecting anomalies, summarizing incidents, and accelerating root cause analysis."
+    }
+  ]
+}

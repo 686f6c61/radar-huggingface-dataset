@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "primitive-ai/Laguna-S-2.1-mixed-NVFP4-MXFP8",
+  "slug": "primitive-ai-laguna-s-2-1-mixed-nvfp4-mxfp8",
+  "author": "primitive-ai",
+  "url": "https://huggingface.co/primitive-ai/Laguna-S-2.1-mixed-NVFP4-MXFP8",
+  "created_at": "2026-08-18T11:14:52.000Z",
+  "updated_at": "2026-08-18T11:22:14.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laguna",
+    "text-generation",
+    "vllm",
+    "compressed-tensors",
+    "nvfp4",
+    "mxfp8",
+    "mixed-precision",
+    "quantized",
+    "moe",
+    "blackwell",
+    "conversational",
+    "custom_code",
+    "base_model:poolside/Laguna-S-2.1",
+    "base_model:quantized:poolside/Laguna-S-2.1",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60787878656,
+  "parameters_human": "60.79B",
+  "storage_bytes": 68683939226,
+  "storage_human": "68.7 GB",
+  "base_model": "poolside/Laguna-S-2.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "primitive-ai/Laguna-XS-2.1-mixed-NVFP4-MXFP8 · Hugging Face",
+      "url": "https://huggingface.co/primitive-ai/Laguna-XS-2.1-mixed-NVFP4-MXFP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "poolside/Laguna-S-2.1 · Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-S-2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Laguna S 2.1 - poolside.ai",
+      "url": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+      "snippet": "Today we&#x27;re releasing Laguna S 2.1, a significant step forward in our development of models that pursue longer horizon work and make effective use of reasoning. Laguna S 2.1 is a 118B total parameter Mixture-of-Experts (MoE) model with 8B activated parameters per token and supports a context window of up to 1M tokens in thinking and no-thinking modes. It went from the start of training to ..."
+    },
+    {
+      "title": "Laguna S 2.1 - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/laguna-s-2-1/",
+      "snippet": "Laguna S 2.1 is a 118B parameter Mixture of Experts model with 8B activated parameters per token, built for agentic coding and long horizon software engineering work. It has a 1,048,576 token context window, native interleaved reasoning, and mixed global/sliding window attention across 48 layers."
+    },
+    {
+      "title": "Laguna S 2.1 - ollama.com",
+      "url": "https://ollama.com/library/laguna-s-2.1",
+      "snippet": "Laguna S 2.1 is a Mixture-of-Experts model built for agentic coding and extended reasoning. It is the larger sibling of Laguna XS 2.1, trading a bigger memory footprint for stronger coding and reasoning performance while keeping a small activated-parameter count so it stays practical to run on a single high-memory machine."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "GGQuanta/Xenomi-mini",
+  "slug": "ggquanta-xenomi-mini",
+  "author": "GGQuanta",
+  "url": "https://huggingface.co/GGQuanta/Xenomi-mini",
+  "created_at": "2026-08-19T02:00:30.000Z",
+  "updated_at": "2026-08-19T03:19:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen",
+    "qwen3.5",
+    "xenomi",
+    "quantum-research",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 19632234368,
+  "storage_human": "19.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGQUANTA · GGQUANTA Product Portfolio",
+      "url": "https://products.qubitlab.cc/",
+      "snippet": "Lab Platform Quantum research platform · Research、Education QuantaMate Quantum research workbench · MCP protocol · Skills packages SmartX Enterprise office · OpenClaw LinkCorpus Research knowledge infrastructure · Agentic RAG Xenomi Domain large language model · Full-stack RAG"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini Omni experts answer key questions about the model",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-experts-roundtable/",
+      "snippet": "The model&#x27;s first release, Gemini Omni Flash, makes generating and editing videos as easy as having a conversation. To get the inside scoop, we sat down with three Google DeepMind team members who work on Omni: research scientist Mohammad Babaeizadeh, product manager Anish Nangia, and research engineer Sarah Xu."
+    },
+    {
+      "title": "GGquanta repositories · GitHub",
+      "url": "https://github.com/orgs/GGquanta/repositories",
+      "snippet": "国光量子 · AI研究小组 has 9 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "This guide introduces all the models available through the Gemini API."
+    }
+  ]
+}

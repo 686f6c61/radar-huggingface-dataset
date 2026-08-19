@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "tako080614/evex-5",
+  "slug": "tako080614-evex-5",
+  "author": "tako080614",
+  "url": "https://huggingface.co/tako080614/evex-5",
+  "created_at": "2026-08-16T05:18:46.000Z",
+  "updated_at": "2026-08-16T05:20:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "safetensors",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "japanese",
+    "discord",
+    "from-scratch",
+    "text-generation",
+    "ja",
+    "dataset:OmniAICreator/Japanese-Roleplay-Dialogues",
+    "dataset:nntsuzu/JESC",
+    "dataset:p1atdev/open2ch",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 25763264,
+  "parameters_human": "25.8M",
+  "storage_bytes": 103259100,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

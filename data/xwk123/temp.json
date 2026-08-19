@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "xwk123/temp",
+  "slug": "xwk123-temp",
+  "author": "xwk123",
+  "url": "https://huggingface.co/xwk123/temp",
+  "created_at": "2026-08-12T07:22:07.000Z",
+  "updated_at": "2026-08-18T02:48:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18487115506,
+  "storage_human": "18.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xwk123 (Weikai Xu) - Hugging Face",
+      "url": "https://huggingface.co/xwk123/models",
+      "snippet": "VLM-based Mobile Agents & Tool learning Agents & Agentic RL"
+    },
+    {
+      "title": "xwk123 (Weikai Xu) - Hugging Face",
+      "url": "https://huggingface.co/xwk123",
+      "snippet": "Mobile GUI Agents & Tool learning Agents & Agentic RL & Post-training of video generation models"
+    },
+    {
+      "title": "Mobile-Bench-v2: A More Realistic and Comprehensive Benchmark for VLM ...",
+      "url": "https://arxiv.org/pdf/2505.11891",
+      "snippet": "Abstract VLM-based mobile agents are increasingly popular due to their capabilities to interact with smartphone GUIs and XML-structured texts and to complete daily tasks. However, existing online benchmarks struggle with obtaining stable re-ward signals due to dynamic environmental changes. Offline benchmarks evaluate the agents through single-path trajectories, which stands in contrast to the ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

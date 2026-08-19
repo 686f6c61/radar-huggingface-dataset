@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lllee2/bert-base-nsmc",
+  "slug": "lllee2-bert-base-nsmc",
+  "author": "lllee2",
+  "url": "https://huggingface.co/lllee2/bert-base-nsmc",
+  "created_at": "2026-08-18T23:47:33.000Z",
+  "updated_at": "2026-08-18T23:47:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jinyoung-ai/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/jinyoung-ai/bert-base-nsmc",
+      "snippet": "jinyoung-ai / bert-base-nsmc like 0 Text Classification Transformers Safetensors bert text-embeddings-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "use08168/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/use08168/bert-base-nsmc",
+      "snippet": "bert-base-nsmc This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    },
+    {
+      "title": "LLM Leaderboard - Vellum",
+      "url": "https://www.vellum.ai/llm-leaderboard",
+      "snippet": "LLM Leaderboard This LLM leaderboard displays the latest public benchmark performance for SOTA model versions released after April 2024. The data comes from model providers as well as independently run evaluations by Vellum or the open-source community. We feature results from non-saturated benchmarks, excluding outdated benchmarks (e.g. MMLU)."
+    }
+  ]
+}

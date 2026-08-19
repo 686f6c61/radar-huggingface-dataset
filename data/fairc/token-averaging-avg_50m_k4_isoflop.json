@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FAIRC/token-averaging-avg_50m_k4_isoflop",
+  "slug": "fairc-token-averaging-avg_50m_k4_isoflop",
+  "author": "FAIRC",
+  "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_isoflop",
+  "created_at": "2026-08-18T13:01:24.000Z",
+  "updated_at": "2026-08-18T13:03:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1198339700,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4 · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4",
+      "snippet": "FAIRC/token-averaging-avg_50m_k4 Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4_learnable_pos · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos",
+      "snippet": "FAIRC/token-averaging-avg_50m_k4_learnable_pos Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "PerceptionBench Kimi K2.6 Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model. The new frontier of intelligence. 2.8T parameters, natively multimodal, 1M-token context — built for long-horizon coding, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 is our strongest model yet for accelerating AI research. Inside OpenAI, researchers use it across the development loop: diagnosing failures, optimizing training systems, running experiments, and interpreting results."
+    },
+    {
+      "title": "llm-token-averaging/docs/methods_overview.md at main - GitHub",
+      "url": "https://github.com/cyai/llm-token-averaging/blob/main/docs/methods_overview.md",
+      "snippet": "Token Averaging Methods — Overview This document describes all five averaging strategies implemented in this research framework, their relationships to each other, and guidance on which to run for different research goals."
+    }
+  ]
+}

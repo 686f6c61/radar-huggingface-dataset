@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Gautam6/GautamAI",
+  "slug": "gautam6-gautamai",
+  "author": "Gautam6",
+  "url": "https://huggingface.co/Gautam6/GautamAI",
+  "created_at": "2026-08-16T07:59:49.000Z",
+  "updated_at": "2026-08-19T03:42:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 988097824,
+  "storage_human": "988 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gautam AI",
+      "url": "https://www.gautamai.com/p/machine-learning-models-gautam-ai.html",
+      "snippet": "Gautam AI builds custom machine learning models that transform raw data into actionable intelligence. Our models are optimized for accuracy, scalability, interpretability, and production deployment."
+    },
+    {
+      "title": "Gautam AI",
+      "url": "https://www.gautamai.com/",
+      "snippet": "Hi, I&#x27;m Vishal Gautam, CEO of Gautam AI. I lead research and development in Artificial Intelligence, pioneering solutions that empower businesses and revolutionize industries."
+    },
+    {
+      "title": "GPT-6, Claude 5, Llama 4: What AI Models Are Coming April-June 2026",
+      "url": "https://abhs.in/blog/ai-models-april-june-2026-gpt6-claude5-llama4-what-developers-should-prepare",
+      "snippet": "GPT-6 expected May-July 2026. Claude 5 \"Fennec\" targets May-September. Llama 4 is overdue. Here&#x27;s what each model means for developers and what to prepare for now."
+    },
+    {
+      "title": "Gautam06-ai · GitHub",
+      "url": "https://github.com/Gautam06-ai",
+      "snippet": "Gautam06-ai has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Gautam_Ai_Imagination (@ai_with_gautam) - Instagram",
+      "url": "https://www.instagram.com/ai_with_gautam/",
+      "snippet": "77K Followers, 0 Following, 381 Posts - Gautam_Ai_Imagination (@ai_with_gautam) on Instagram: \"🎥Creating the future, one Al reel at a time 🤖Imagination meets intelligence Turning prompts into pure visual magic\""
+    }
+  ]
+}

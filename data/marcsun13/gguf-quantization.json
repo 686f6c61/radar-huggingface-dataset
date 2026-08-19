@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "marcsun13/gguf-quantization",
+  "slug": "marcsun13-gguf-quantization",
+  "author": "marcsun13",
+  "url": "https://huggingface.co/marcsun13/gguf-quantization",
+  "created_at": "2026-08-05T12:56:05.000Z",
+  "updated_at": "2026-08-18T15:58:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kernel",
+    "gguf",
+    "quantization",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 757346751,
+  "storage_human": "757 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

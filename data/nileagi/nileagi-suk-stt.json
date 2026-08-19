@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nileagi/nileagi-suk-stt",
+  "slug": "nileagi-nileagi-suk-stt",
+  "author": "nileagi",
+  "url": "https://huggingface.co/nileagi/nileagi-suk-stt",
+  "created_at": "2026-08-17T10:48:13.000Z",
+  "updated_at": "2026-08-17T10:48:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "suk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "nileagi",
+    "sukuma",
+    "speech-to-text",
+    "experimental",
+    "suk",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151067705,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nileagi (NileAGI) - Hugging Face",
+      "url": "https://huggingface.co/nileagi/models",
+      "snippet": "AI & ML interests ... Recent Activity nsomazr published a model about 13 hours ago ... nsomazr updated a model 3 days ago ... nsomazr published a model 3 days ago"
+    },
+    {
+      "title": "NileAGI - Making Sense of Machine Intelligence for Humanity",
+      "url": "https://nileagi.com/",
+      "snippet": "NileAGI is an AI research and development company committed to advancing artificial intelligence toward human-level intelligence. Our mission is to make AI accessible, useful, and empowering for everyone."
+    },
+    {
+      "title": "NileAGI - Making Sense of Machine Intelligence for Humanity",
+      "url": "https://www.nileagi.com/?trk=public_post_reshare-text",
+      "snippet": "NileAGI is an AI research company dedicated to advancing Human Level Intelligence (HLI). Our mission is to build systems that understand, learn, and adapt in ways that matter for people, not as a distant goal, but as a daily commitment. We believe achieving HLI will unlock new possibilities for the hardest challenges humanity faces. That belief drives how we work: rigorous, open, and always ..."
+    },
+    {
+      "title": "NileAGI&#x27;s Substack | Substack",
+      "url": "https://nilehli.substack.com/",
+      "snippet": "Open-Weight Models Explained: What \"Open\" Actually Means and Why It Matters Yesterday, Moonshot AI dropped Kimi K3, a 2.8-trillion-parameter model it&#x27;s calling the first \"open 3T-class\" release in history, with full weights…"
+    },
+    {
+      "title": "GitHub - ShayneP/local-voice-ai: Local voice AI powered by llama-cpp ...",
+      "url": "https://github.com/ShayneP/local-voice-ai",
+      "snippet": "This project&#x27;s goal is to enable anyone to easily build a powerful, private, local voice AI agent. A real-time voice AI assistant — STT, LLM, TTS — running in one container, supervised by a single Python parent process. Powered by LiveKit Agents ..."
+    }
+  ]
+}

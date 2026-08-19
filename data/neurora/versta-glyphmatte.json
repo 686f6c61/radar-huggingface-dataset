@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Neurora/versta-glyphmatte",
+  "slug": "neurora-versta-glyphmatte",
+  "author": "Neurora",
+  "url": "https://huggingface.co/Neurora/versta-glyphmatte",
+  "created_at": "2026-08-17T19:38:07.000Z",
+  "updated_at": "2026-08-17T19:38:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neurora (Neurora) - Hugging Face",
+      "url": "https://huggingface.co/Neurora/datasets",
+      "snippet": "Transparent and open AI solutions FricoRico updated a dataset about 1 month ago"
+    },
+    {
+      "title": "NeuroRA | A Python Toolbox for Multimode Neural Data Representation ...",
+      "url": "https://neurora.github.io/NeuroRA/",
+      "snippet": "NeuroRA A Python Toolbox of Representational Analysis from Multimodal Neural Data Overview Representational Similarity Analysis (RSA) has become a popular and effective method to measure the representation of multivariable neural activity in different modes. NeuroRA is an easy-to-use toolbox based on Python, which can do some works about RSA among nearly all kinds of neural data, including ..."
+    },
+    {
+      "title": "Neurora",
+      "url": "https://neurora.nl/",
+      "snippet": "At Neurora, we believe in the transformative power of AI to revolutionize industries and enhance lives. Our mission is to provide open and honest AI solutions that prioritize transparency and integrity. With a name that combines \"Neural\" and \"Aurora\", we symbolize the fusion of advanced AI networks with the illuminating power of clarity."
+    },
+    {
+      "title": "Neurora (Neurora) - Hugging Face",
+      "url": "https://huggingface.co/Neurora",
+      "snippet": "Neurora/opus-tatoeba-eng-slv-bt Translation • Updated 12 days ago • 20 Expand 34 model s"
+    },
+    {
+      "title": "Neurora — Clinical Supervision for ASD Diagnostics",
+      "url": "https://arguscognitive.com/research",
+      "snippet": "Neurora captures 140+ objective behavioral biometrics using multimodal AI for scalable autism diagnostic supervision."
+    }
+  ]
+}

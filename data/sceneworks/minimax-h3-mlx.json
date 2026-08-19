@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "SceneWorks/minimax-h3-mlx",
+  "slug": "sceneworks-minimax-h3-mlx",
+  "author": "SceneWorks",
+  "url": "https://huggingface.co/SceneWorks/minimax-h3-mlx",
+  "created_at": "2026-08-12T19:32:40.000Z",
+  "updated_at": "2026-08-14T23:43:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 293684776532,
+  "storage_human": "293.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

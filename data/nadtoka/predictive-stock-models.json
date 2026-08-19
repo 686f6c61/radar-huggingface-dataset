@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "nadtoka/predictive-stock-models",
+  "slug": "nadtoka-predictive-stock-models",
+  "author": "nadtoka",
+  "url": "https://huggingface.co/nadtoka/predictive-stock-models",
+  "created_at": "2026-06-16T11:39:39.000Z",
+  "updated_at": "2026-08-19T01:01:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5675063153,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nadtoka/predictive-stock-models · Hugging Face",
+      "url": "https://huggingface.co/nadtoka/predictive-stock-models",
+      "snippet": "nadtoka / predictive-stock-models like 0 Joblib License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "nadtoka/predictive-stock-models at main - Hugging Face",
+      "url": "https://huggingface.co/nadtoka/predictive-stock-models/tree/main",
+      "snippet": "like 0 Joblib License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main predictive-stock-models 61 MB Ctrl+K Ctrl+K 1 contributor History:31 commits nadtoka Upload folder using huggingface_hub d9802d0 verifiedabout 18 hours ago .gitattributes Safe 1.52 kBinitial commit10 days ago AAPL_model.joblib pickle"
+    },
+    {
+      "title": "GitHub - nadtoka/predictive-stock-mlops: ML for stock predictive AI ...",
+      "url": "https://github.com/nadtoka/predictive-stock-mlops",
+      "snippet": "ML for stock predictive AI. Contribute to nadtoka/predictive-stock-mlops development by creating an account on GitHub."
+    },
+    {
+      "title": "NVIDIA (NVDA) Stock Forecast & Analyst Price Targets",
+      "url": "https://stockanalysis.com/stocks/nvda/forecast/",
+      "snippet": "Stock forecasts and analyst price target predictions for NVIDIA Corporation (NVDA) stock, with detailed revenue and earnings estimates."
+    },
+    {
+      "title": "Choosing the Right AI Model for Stock Prediction",
+      "url": "https://dev.to/dbolotov/choosing-the-right-ai-model-for-stock-prediction-13pi",
+      "snippet": "This research journey began with Google Deep Research, which provided the initial analysis and comparison of different AI models for stock prediction. This comprehensive AI-powered research served as my starting point for understanding the landscape of available models and their capabilities."
+    }
+  ]
+}

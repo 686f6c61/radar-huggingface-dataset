@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "FoxlightAI/qwen3-8-27b-mtp",
+  "slug": "foxlightai-qwen3-8-27b-mtp",
+  "author": "FoxlightAI",
+  "url": "https://huggingface.co/FoxlightAI/qwen3-8-27b-mtp",
+  "created_at": "2026-08-18T02:41:28.000Z",
+  "updated_at": "2026-08-18T03:37:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mtp-sidecar",
+    "skulk",
+    "foxlight",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 849400392,
+  "storage_human": "849 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    },
+    {
+      "title": "Qwen 3.8 27B Review: The Best Local AI Model Yet? - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/qwen-3-8-27b-local-ai-review/",
+      "snippet": "Qwen 3.8 27B delivers Opus-level coding performance on your local machine. Run Alibaba&#x27;s new 27 billion parameter dense model on just 17 GB of VRAM."
+    },
+    {
+      "title": "Qwen3.8-27B - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B is a dense hybrid Gated Delta Networks (GDN) vision-language model: a 27B causal language model paired with a vision encoder, with native image and video understanding alongside text. SGLang serves it through the Qwen3-VL path, so the vision tower is live on the recipes below."
+    }
+  ]
+}

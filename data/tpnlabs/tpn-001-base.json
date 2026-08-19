@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tpnlabs/tpn-001-base",
+  "slug": "tpnlabs-tpn-001-base",
+  "author": "tpnlabs",
+  "url": "https://huggingface.co/tpnlabs/tpn-001-base",
+  "created_at": "2026-08-17T19:19:21.000Z",
+  "updated_at": "2026-08-17T19:45:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 193,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3775709216,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-guided precision parenteral nutrition — Takeoff41",
+      "url": "https://www.takeoff41.com/science/nature-medicine-2025",
+      "snippet": "One in ten neonates are admitted to neonatal intensive care units, yet the application of AI in guiding their care remains underexplored. Total parenteral nutrition is a life-saving treatment for preterm neonates, but implementing it in its current form is subjective, error-prone, and resource-consuming. This study introduces TPN2.0, a data-driven approach that optimizes and standardizes TPN ..."
+    },
+    {
+      "title": "AI Model Can Optimize, Standardize Total Parenteral Nutrition Formulas",
+      "url": "https://www.diabetesincontrol.com/ai-model-can-optimize-standardize-total-parenteral-nutrition-formulas/",
+      "snippet": "TUESDAY, April 1, 2025 (HealthDay News) — An artificial intelligence (AI) approach identified total parenteral nutrition (TPN) formulas that increase safety and potentially reduce costs for neonates admitted to neonatal intensive care units, according to a study published online March 25 in Nature Medicine. Thanaphong Phongpreecha, from Stanford University in California, and colleagues ..."
+    },
+    {
+      "title": "TPN Labs - complete, AI-powered products, end to end",
+      "url": "https://tpn-labs.com/",
+      "snippet": "TPN Labs is a full-stack product and applied-AI studio in Timișoara. One senior team designs, builds, and ships complete software across web, mobile, and cloud - so you launch without building an engineering team. See dated proof."
+    },
+    {
+      "title": "AI Guided Parenteral Nutrition Therapy After Hematopoietic ... - Nature",
+      "url": "https://www.nature.com/articles/s41746-026-02652-z",
+      "snippet": "We developed and evaluated an AI approach to standardize intravenous nutrition (total parenteral nutrition, TPN) during this vulnerable period."
+    },
+    {
+      "title": "AI model formulates life-saving nutrition for NICU infants",
+      "url": "https://stanforddaily.com/2025/04/18/ai-model-formulates-life-saving-nutrition-for-nicu-infants/",
+      "snippet": "The scientists most recently developed TPN2.0, a new AI model that creates data-driven recipes of total parenteral nutrition (TPN), a life-saving treatment given to infants in the NICU."
+    }
+  ]
+}

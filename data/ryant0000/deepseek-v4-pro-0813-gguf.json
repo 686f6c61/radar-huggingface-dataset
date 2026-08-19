@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ryant0000/DeepSeek-V4-Pro-0813-gguf",
+  "slug": "ryant0000-deepseek-v4-pro-0813-gguf",
+  "author": "ryant0000",
+  "url": "https://huggingface.co/ryant0000/DeepSeek-V4-Pro-0813-gguf",
+  "created_at": "2026-08-14T00:47:48.000Z",
+  "updated_at": "2026-08-15T11:54:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "arxiv:2606.19348",
+    "base_model:deepseek-ai/DeepSeek-V4-Pro-0813",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Pro-0813",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 727,
+  "trending_score": 0,
+  "parameters": 1572999528803,
+  "parameters_human": "1573.00B",
+  "storage_bytes": 3956080603264,
+  "storage_human": "3956.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

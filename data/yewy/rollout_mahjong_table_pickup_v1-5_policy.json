@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yewy/rollout_mahjong_table_pickup_v1.5_policy",
+  "slug": "yewy-rollout_mahjong_table_pickup_v1-5_policy",
+  "author": "Yewy",
+  "url": "https://huggingface.co/Yewy/rollout_mahjong_table_pickup_v1.5_policy",
+  "created_at": "2026-08-14T03:18:28.000Z",
+  "updated_at": "2026-08-14T03:19:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Yewy/mahjong_table_pickup_224",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716872,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yewy/rollout_mahjong_table_pickup_finetune_v1_policy · Hugging Face",
+      "url": "https://huggingface.co/Yewy/rollout_mahjong_table_pickup_finetune_v1_policy",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "rollout_mahjong_table_pickup_finetune_v2_policy - Hugging Face",
+      "url": "https://huggingface.co/Yewy/rollout_mahjong_table_pickup_finetune_v2_policy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://www.google.co.in/imghp?authuser=0",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "AI in Mahjong: Bots, Training Tools, and Strategy",
+      "url": "https://mahjongplaybook.com/learn/ai-in-mahjong/",
+      "snippet": "Modern AI mahjong tools and training bots can now analyze hands, predict safer discards, identify strategic mistakes, and help players improve faster than ever before. Whether you play American mahjong with NMJL cards, riichi online, or classical Chinese mahjong, AI is beginning to reshape how players study and understand the game."
+    },
+    {
+      "title": "Full text of \"NEW\"",
+      "url": "https://archive.org/stream/NEW_1/NEW.txt&ld=20150121&ap=2&",
+      "snippet": "Full text of \"NEW\" See other formats Word . the , > < br to of and a : \" in you that i it he is was for - with ) on ( ? his as this ; be at but not have had from will are they -- ! all by if him one your or up her there can so out them an my when she 1 no which me were we then 2 into 5 do what get go their now said would about time quot ] [ more only back been who down like has some --- just 3 ..."
+    }
+  ]
+}

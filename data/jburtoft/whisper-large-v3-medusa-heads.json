@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jburtoft/whisper-large-v3-medusa-heads",
+  "slug": "jburtoft-whisper-large-v3-medusa-heads",
+  "author": "jburtoft",
+  "url": "https://huggingface.co/jburtoft/whisper-large-v3-medusa-heads",
+  "created_at": "2026-08-14T04:29:11.000Z",
+  "updated_at": "2026-08-14T04:29:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "whisper",
+    "speculative-decoding",
+    "medusa",
+    "aws-neuron",
+    "trainium",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16401589,
+  "storage_human": "16 MB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reach-vb/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/reach-vb/whisper-large-v3",
+      "snippet": "The Whisper large-v3 model is trained on 1 million hours of weakly labeled audio and 4 million hours of pseudolabeled audio collected using Whisper large-v2. The model was trained for 2.0 epochs over this mixture dataset."
+    },
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - aiola-lab/whisper-medusa: Whisper with Medusa heads",
+      "url": "https://github.com/aiola-lab/whisper-medusa",
+      "snippet": "Whisper is an advanced encoder-decoder model for speech transcription and translation, processing audio through encoding and decoding stages. Given its large size and slow inference speed, various optimization strategies like Faster-Whisper and Speculative Decoding have been proposed to enhance performance. We propose two types of Medusa architectures, Medusa-Linear and Medusa-Block, which ..."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "whisper-large-v3 · Models",
+      "url": "https://www.modelscope.cn/models/mwei23/whisper-large-v3/summary",
+      "snippet": "The large-v3 model shows improved performance over a wide variety of languages, showing 10% to 20% reduction of errors compared to Whisper large-v2. Disclaimer: Content for this model card has partly been written by the Hugging Face team, and parts of it were copied and pasted from the original model card."
+    }
+  ]
+}

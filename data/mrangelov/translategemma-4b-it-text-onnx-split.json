@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mrangelov/translategemma-4b-it-Text-ONNX-split",
+  "slug": "mrangelov-translategemma-4b-it-text-onnx-split",
+  "author": "mrangelov",
+  "url": "https://huggingface.co/mrangelov/translategemma-4b-it-Text-ONNX-split",
+  "created_at": "2026-08-17T19:23:19.000Z",
+  "updated_at": "2026-08-17T19:33:50.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "translation",
+    "base_model:google/translategemma-4b-it",
+    "base_model:quantized:google/translategemma-4b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3091548551,
+  "storage_human": "3.1 GB",
+  "base_model": "google/translategemma-4b-it",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/translategemma-4b-it · Hugging Face",
+      "url": "https://huggingface.co/google/translategemma-4b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "willopcbeta/translategemma-4b-it-Text-ONNX · Hugging Face",
+      "url": "https://huggingface.co/willopcbeta/translategemma-4b-it-Text-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "translategemma-4b-it: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/translategemma-4b-it-google",
+      "snippet": "Overview translategemma-4b-it is a lightweight translation model developed by google that handles text and image-based translation across 55 languages. Built on the Gemma 3 architecture, this 4-billion-parameter model operates with a 2K-token context window and processes images normalized to 896x896 resolution (encoded to 256 tokens each). The model was fine-tuned from Gemma 3 checkpoints ..."
+    },
+    {
+      "title": "translategemma-4b-it · Models",
+      "url": "https://www.modelscope.cn/models/google/translategemma-4b-it",
+      "snippet": "Authors: Google Translate Model Information Summary description and brief definition of inputs and outputs. Description TranslateGemma is a family of lightweight, state-of-the-art open translation models from Google, based on the Gemma 3 family of models. TranslateGemma models are designed to handle translation tasks across 55 languages."
+    },
+    {
+      "title": "olive-recipes/google-translategemma-4b-it/builtin at main - GitHub",
+      "url": "https://github.com/microsoft/olive-recipes/tree/main/google-translategemma-4b-it/builtin",
+      "snippet": "Export and run google/translategemma-4b-it as a full vision-language model (VLM) with ONNX Runtime GenAI. TranslateGemma is a translation model supporting 55 languages, with both text-to-text and image-to-text translation capabilities. This recipe exports it as three separate ONNX sub-models (text decoder, vision encoder, embedding) that run together through the ORT GenAI multimodal pipeline."
+    }
+  ]
+}

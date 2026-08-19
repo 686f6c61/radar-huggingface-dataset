@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Xihe666/drif_ov_siemens_0816",
+  "slug": "xihe666-drif_ov_siemens_0816",
+  "author": "Xihe666",
+  "url": "https://huggingface.co/Xihe666/drif_ov_siemens_0816",
+  "created_at": "2026-08-17T01:49:25.000Z",
+  "updated_at": "2026-08-17T02:07:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "drif_ov",
+    "dataset:siemens-0816-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 1909381248,
+  "parameters_human": "1.91B",
+  "storage_bytes": 7637643656,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

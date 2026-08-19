@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_terminal_notion_official_3556_a1c08952_model_fraud-detector",
+  "slug": "roy229-huggingface_terminal_notion_official_3556_a1c08952_model_fraud-detector",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_a1c08952_model_fraud-detector",
+  "created_at": "2026-08-15T05:48:40.000Z",
+  "updated_at": "2026-08-15T05:48:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:45:28.635Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Attackers Abuse Hugging Face Hosting to Deliver Android RAT",
+      "url": "https://cyberpress.org/attackers-abuse-hugging-face-hosting-android-rat/",
+      "snippet": "Attackers are abusing Hugging Face hosting to deliver an Android remote access trojan, exploiting a trusted AI platform for malware distribution."
+    },
+    {
+      "title": "Command Line Interface (CLI) · Hugging Face",
+      "url": "https://huggingface.co/docs/huggingface_hub/guides/cli",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The AI workspace that works for you. | Notion",
+      "url": "https://www.notion.com/",
+      "snippet": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster."
+    },
+    {
+      "title": "Malicious ML models discovered on Hugging Face platform",
+      "url": "https://www.reversinglabs.com/blog/rl-identifies-malware-ml-model-hosted-on-hugging-face",
+      "snippet": "In the case of the discovered model, since the malicious payload is inserted at the beginning of the Pickle stream, execution of the model wouldn&#x27;t be detected as unsafe by Hugging Face&#x27;s existing security scanning tools. Protect your ML models RL is constantly improving its malware detection mechanisms."
+    }
+  ]
+}

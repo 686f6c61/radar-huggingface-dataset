@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "THU-SIGS-EILAB/Pi05_few_shot_libero",
+  "slug": "thu-sigs-eilab-pi05_few_shot_libero",
+  "author": "THU-SIGS-EILAB",
+  "url": "https://huggingface.co/THU-SIGS-EILAB/Pi05_few_shot_libero",
+  "created_at": "2026-08-14T03:16:06.000Z",
+  "updated_at": "2026-08-14T07:28:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "rlinf",
+  "languages": [],
+  "tags": [
+    "rlinf",
+    "pi05",
+    "vision-language-action",
+    "libero",
+    "few-shot",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85265575890,
+  "storage_human": "85.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THU-SIGS-EILAB (Tsinghua SIGS Embodied Intelligence)",
+      "url": "https://huggingface.co/THU-SIGS-EILAB",
+      "snippet": "Org profile for Tsinghua SIGS Embodied Intelligence on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "GitHub - RLinf/RLinf: RLinf: Reinforcement Learning Infrastructure for ...",
+      "url": "https://github.com/RLinf/RLinf",
+      "snippet": "RLinf is a flexible and scalable open-source RL infrastructure designed for Embodied and Agentic AI. The &#x27;inf&#x27; in RLinf stands for Infrastructure, highlighting its role as a robust backbone for next-generation training. It also stands for Infinite, symbolizing the system&#x27;s support for open-ended learning, continuous generalization, and limitless possibilities in intelligence development."
+    },
+    {
+      "title": "GitHub - Integer003/openpi05: Provide fine-tuning and inference code ...",
+      "url": "https://github.com/Integer003/openpi05",
+      "snippet": "Provide fine-tuning and inference code for pi05, fully reproducing the methods described in the pi05 paper. - Integer003/openpi05"
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    }
+  ]
+}

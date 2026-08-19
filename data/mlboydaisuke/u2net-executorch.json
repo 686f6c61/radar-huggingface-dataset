@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/U2Net-ExecuTorch",
+  "slug": "mlboydaisuke-u2net-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/U2Net-ExecuTorch",
+  "created_at": "2026-08-14T04:26:49.000Z",
+  "updated_at": "2026-08-15T05:15:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "executorch-pte",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 309336403,
+  "storage_human": "309 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "U 2-Net: U Square Net - GitHub",
+      "url": "https://github.com/xuebinqin/U-2-Net",
+      "snippet": "The code for our newly accepted paper in Pattern Recognition 2020: \"U^2-Net: Going Deeper with Nested U-Structure for Salient Object Detection.\" - xuebinqin/U-2-Net"
+    },
+    {
+      "title": "mlboydaisuke/U-2-Net-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/U-2-Net-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "U-2-Net/model/u2net.py at master · xuebinqin/U-2-Net · GitHub",
+      "url": "https://github.com/xuebinqin/U-2-Net/blob/master/model/u2net.py",
+      "snippet": "The code for our newly accepted paper in Pattern Recognition 2020: \"U^2-Net: Going Deeper with Nested U-Structure for Salient Object Detection.\" - xuebinqin/U-2-Net"
+    },
+    {
+      "title": "U²-Net Architecture | xuebinqin/U-2-Net | DeepWiki",
+      "url": "https://deepwiki.com/xuebinqin/U-2-Net/2-u-net-architecture",
+      "snippet": "Sources: model/u2net.py 422-525 Design Advantages The U²-Net architecture offers several advantages: Nested U-structure: By using RSU blocks as building units, the network can efficiently extract and combine multi-scale features, which is crucial for accurate salient object detection."
+    },
+    {
+      "title": "xuebinqin/U-2-Net | DeepWiki",
+      "url": "https://deepwiki.com/xuebinqin/U-2-Net",
+      "snippet": "Purpose and Scope U²-Net (U Square Net) is a deep neural network architecture designed for salient object detection (SOD). This repository provides implementations for training, testing, and using the U²-Net model across various applications including salient object detection, portrait generation, human segmentation, and background removal."
+    }
+  ]
+}

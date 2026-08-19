@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Alantool/Video_Craft_Pro",
+  "slug": "alantool-video_craft_pro",
+  "author": "Alantool",
+  "url": "https://huggingface.co/Alantool/Video_Craft_Pro",
+  "created_at": "2026-04-21T10:00:22.000Z",
+  "updated_at": "2026-08-17T13:25:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3099550409,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alantool/Video_Craft_Pro · Hugging Face",
+      "url": "https://huggingface.co/Alantool/Video_Craft_Pro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/alantool-video_craft_pro - GitHub",
+      "url": "https://github.com/Damacol/alantool-video_craft_pro",
+      "snippet": "Alantool/Video_Craft_Pro - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking. Optimized for developers and creators who demand full control over their AI workflow."
+    },
+    {
+      "title": "alantool-video_craft_pro/README.md at main - GitHub",
+      "url": "https://github.com/Damacol/alantool-video_craft_pro/blob/main/README.md",
+      "snippet": "Alantool/Video_Craft_Pro - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking. Optimized for developers and creators who demand full control over their AI workflow."
+    },
+    {
+      "title": "Alantool (Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/Alantool/models",
+      "snippet": "https://reup-magic-pro.lovable.app/ AI & ML interests. None yet. Recent Activity. published a model about 6 hours ago"
+    },
+    {
+      "title": "31 Open-Source AI Video Models: Free Tools to Make Videos in 2026",
+      "url": "https://aifreeforever.com/blog/open-source-ai-video-models-free-tools-to-make-videos",
+      "snippet": "Open-source AI video models let you make videos from text or images without paying per clip. You keep your data private, avoid subscription fees, and run everything on your own computer or cheap cloud rental. This guide walks through 31 open-source video generation models. Each section covers what the model does, how much GPU memory it needs, and what license applies. We also explain your ..."
+    }
+  ]
+}

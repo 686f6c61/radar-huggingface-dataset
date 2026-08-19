@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "chandra1976/vit-finetuned-chessman2",
+  "slug": "chandra1976-vit-finetuned-chessman2",
+  "author": "chandra1976",
+  "url": "https://huggingface.co/chandra1976/vit-finetuned-chessman2",
+  "created_at": "2025-11-19T01:12:32.000Z",
+  "updated_at": "2026-08-19T03:08:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "base_model:adapter:google/vit-base-patch16-224-in21k",
+    "lora",
+    "transformers",
+    "dataset:imagefolder",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 562,
+  "trending_score": 0,
+  "parameters": 85803270,
+  "parameters_human": "85.8M",
+  "storage_bytes": 12898042914,
+  "storage_human": "12.9 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "imagefolder",
+      "metric": "Accuracy",
+      "value": 0.9636363636363636
+    }
+  ],
+  "sources": [
+    {
+      "title": "chandra1976/vit-finetuned-chessman2 · Hugging Face",
+      "url": "https://huggingface.co/chandra1976/vit-finetuned-chessman2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chandra1976 (Chandrashekar Babu) - Hugging Face",
+      "url": "https://huggingface.co/chandra1976/models",
+      "snippet": "chandra1976/vit-finetuned-chessman2 Image Classification • 85.8M•Updated 12 days ago• 563"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "GitHub - bwconrad/vit-finetune: Fine-tuning Vision Transformers on ...",
+      "url": "https://github.com/bwconrad/vit-finetune",
+      "snippet": "Fine-tuning Vision Transformers Code for fine-tuning ViT models on various classification datasets. Includes options for full model, LoRA and linear fine-tuning procedures."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

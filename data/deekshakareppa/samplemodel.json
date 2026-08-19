@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "deekshakareppa/samplemodel",
+  "slug": "deekshakareppa-samplemodel",
+  "author": "deekshakareppa",
+  "url": "https://huggingface.co/deekshakareppa/samplemodel",
+  "created_at": "2026-08-17T04:38:31.000Z",
+  "updated_at": "2026-08-17T05:07:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparison of Open Source AI Models across Intelligence, Performance ...",
+      "url": "https://artificialanalysis.ai/models/open-source",
+      "snippet": "Comparison and analysis of open source AI models across key performance metrics including quality, performance, inference speed, context window, parameter count & licensing details."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SampleModel (Java SE 25 & JDK 25) - docs.oracle.com",
+      "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/SampleModel.html",
+      "snippet": "This abstract class defines an interface for extracting samples of pixels in an image. All image data is expressed as a collection of pixels. Each pixel consists of a number of samples. A sample is a datum for one band of an image and a band consists of all samples of a particular type in an image. For example, a pixel might contain three samples representing its red, green and blue components ..."
+    },
+    {
+      "title": "GitHub - elie222/rakazo: Open-source Grok Bot alternative. Choose your ...",
+      "url": "https://github.com/elie222/rakazo",
+      "snippet": "Open-source Grok Bot alternative, built with Cursor and Grok 4.6. Web, desktop, and mobile. Bring your own AI and sandbox. The product is still early (beta). Each bot has one thread, one computer, memory, routines, and history. This repository is the complete core product — it runs without a Rakazo-operated control plane."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools)."
+    }
+  ]
+}

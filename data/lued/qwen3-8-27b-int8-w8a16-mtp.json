@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "lued/Qwen3.8-27B-INT8-W8A16-MTP",
+  "slug": "lued-qwen3-8-27b-int8-w8a16-mtp",
+  "author": "lued",
+  "url": "https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP",
+  "created_at": "2026-08-14T15:32:53.000Z",
+  "updated_at": "2026-08-14T15:46:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "compressed-tensors",
+    "w8a16",
+    "int8",
+    "quantized",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "conversational",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 45,
+  "downloads_30d": 37149,
+  "trending_score": 44,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31636252213,
+  "storage_human": "31.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B brings the latest generation of the Qwen family to a model size well suited for local AI development. The Qwen 3.8 generation continues the focus on coding, real-world work, research, and long-horizon AI workloads, extending the rapid pace of innovation we are seeing across open AI."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B goes open-weight within days. Here&#x27;s what&#x27;s confirmed, the GPU memory math for a 27B-class model, and how to serve it with vLLM or SGLang on day one."
+    },
+    {
+      "title": "Qwen3.8-27B: The Version You Can Actually Run, and How to Prepare For ...",
+      "url": "https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026",
+      "snippet": "Qwen3.8-27B: The Version You Can Actually Run, and How to Prepare For It Qwen3.8-27B is the checkpoint that fits one GPU. What is confirmed, what is not, and the VRAM maths."
+    },
+    {
+      "title": "Qwen 3.8 & Qwen 3.8 27B Open Source: Official Alibaba Benchmarks & SME ...",
+      "url": "https://ia4pymes.tech/en/blog/qwen-3-8-official-benchmarks-open-weights-27b-sme-guide",
+      "snippet": "Explore official Qwen 3.8-Max benchmark results (#2 global rank) and Alibaba&#x27;s August 10 open-weights release announcement for Qwen 3.8-27B. Complete SME hardware and local infrastructure guide."
+    },
+    {
+      "title": "TheHouseOfTheDude/Qwen3.6-27B-INT8 · Hugging Face",
+      "url": "https://huggingface.co/TheHouseOfTheDude/Qwen3.6-27B-INT8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "alst10/alston-v5",
+  "slug": "alst10-alston-v5",
+  "author": "alst10",
+  "url": "https://huggingface.co/alst10/alston-v5",
+  "created_at": "2026-08-17T20:33:35.000Z",
+  "updated_at": "2026-08-17T20:33:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+    "base_model:finetune:mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:26.786Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX - a alst10 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/alst10/onnx",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from alst10"
+    },
+    {
+      "title": "alst10/alston-writer at main - Hugging Face",
+      "url": "https://huggingface.co/alst10/alston-writer/tree/main",
+      "snippet": "alst10 / alston-writer like 0 Image-Text-to-Text Transformers Safetensors English qwen3_5 text-generation-inference unsloth License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 218 ranked models and 394 tracked AI models across 437 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "ALST Long Sequence Training | deepspeedai/DeepSpeed | DeepWiki",
+      "url": "https://deepwiki.com/deepspeedai/DeepSpeed/6.2-alst-long-sequence-training",
+      "snippet": "This document covers Arctic Long Sequence Training (ALST), a collection of memory optimization techniques that enable training transformer models on multi-million token sequences. ALST builds upon Uly"
+    },
+    {
+      "title": "Arctic Long Sequence Training (ALST) for HF Transformers integration",
+      "url": "https://www.deepspeed.ai/tutorials/ulysses-alst-sequence-parallelism/",
+      "snippet": "Ulysses Sequence Parallelism for Hugging Face (HF) Transformers implements an efficient way of training on long sequences by employing sequence parallelism and attention head parallelism. Arctic Long Sequence Training (ALST) enables even longer sequence lengths using a bag of tricks: Activation checkpoint offload to CPU Tiled MLP compute Liger-kernel PYTORCH_CUDA_ALLOC_CONF"
+    }
+  ]
+}

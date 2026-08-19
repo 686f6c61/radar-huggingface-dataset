@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "jason5545/vocotype-qwen3-asr-adapter-int4",
+  "slug": "jason5545-vocotype-qwen3-asr-adapter-int4",
+  "author": "jason5545",
+  "url": "https://huggingface.co/jason5545/vocotype-qwen3-asr-adapter-int4",
+  "created_at": "2026-06-26T02:29:36.000Z",
+  "updated_at": "2026-08-15T08:02:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3-asr",
+    "android",
+    "vocotype",
+    "adapter",
+    "asr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13371398915,
+  "storage_human": "13.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

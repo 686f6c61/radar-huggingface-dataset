@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ssurface/cot-baseline-tokenskip-g70",
+  "slug": "ssurface-cot-baseline-tokenskip-g70",
+  "author": "ssurface",
+  "url": "https://huggingface.co/ssurface/cot-baseline-tokenskip-g70",
+  "created_at": "2026-08-18T15:09:26.000Z",
+  "updated_at": "2026-08-18T15:09:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "chain-of-thought",
+    "reasoning",
+    "compression",
+    "gsm8k",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159967880,
+  "storage_human": "160 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Accuracy (exact match)",
+      "value": 80.1
+    }
+  ],
+  "sources": []
+}

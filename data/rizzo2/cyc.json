@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rizzo2/cyc",
+  "slug": "rizzo2-cyc",
+  "author": "rizzo2",
+  "url": "https://huggingface.co/rizzo2/cyc",
+  "created_at": "2026-04-24T16:28:39.000Z",
+  "updated_at": "2026-08-18T09:41:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1993068615606,
+  "storage_human": "1993.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rizzo2/cyc · Hugging Face",
+      "url": "https://huggingface.co/rizzo2/cyc",
+      "snippet": "rizzo2 / cyc like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "rizzo2/cyc at main - Hugging Face",
+      "url": "https://huggingface.co/rizzo2/cyc/tree/main",
+      "snippet": "rizzo2 / cyc like 1 Model card FilesFiles and versions xet Community Copy to bucket new main cyc 9.77 GB Ctrl+K Ctrl+K 1 contributor History:510 commits rizzo2 global_ver=8689812 expert_group=0 fb777e8 verified1 day ago .gitattributes Safe 1.52 kBinitial commit3 months ago dataloader_rank0.pt pickle"
+    },
+    {
+      "title": "rizzo2/cyc - LLMs .INFO",
+      "url": "https://llms.info/models/rizzo2-cyc-1739",
+      "snippet": "rizzo2/cyc - LLMs .INFO ... region:us"
+    },
+    {
+      "title": "Cyc | Sweet Tea Studio",
+      "url": "https://sweettea.co/es/resources/rizzo2-cyc-huggingface-model-rizzo2-cyc",
+      "snippet": "Model repo on Hugging Face Hub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chicagoypark/second-ckpts",
+  "slug": "chicagoypark-second-ckpts",
+  "author": "chicagoypark",
+  "url": "https://huggingface.co/chicagoypark/second-ckpts",
+  "created_at": "2026-07-31T03:22:47.000Z",
+  "updated_at": "2026-08-17T00:38:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "vae",
+    "autoencoder-kl",
+    "medical-imaging",
+    "latent-diffusion",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45130235754,
+  "storage_human": "45.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic says AI models hacked three firms during tests",
+      "url": "https://www.msn.com/en-xl/news/other/anthropic-says-ai-models-hacked-three-firms-during-tests/ar-AA296kWN",
+      "snippet": "US tech company Anthropic says three of its artificial intelligence (AI) models hacked three organisations during tests, just days after its rival OpenAI said rogue AI agents had attacked the ..."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "ckpts/README.md · 3morrrrr/Ai-Voice-Cloner at main",
+      "url": "https://huggingface.co/spaces/3morrrrr/Ai-Voice-Cloner/blob/main/ckpts/README.md",
+      "snippet": "main Ai-Voice-Cloner / ckpts /README.md mrfakename Sync from GitHub repo 186b36d verified3 months ago preview code | raw Copy download link history blame contribute delete Safe 159 Bytes A newer version of the Gradio SDK is available: 5.12.0 Upgrade"
+    },
+    {
+      "title": "chicagoypark/ADM_MM · Hugging Face",
+      "url": "https://huggingface.co/chicagoypark/ADM_MM",
+      "snippet": "chicagoypark / ADM_MM like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "HunyuanVideo/ckpts/README.md at main · Tencent-Hunyuan ... - GitHub",
+      "url": "https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/ckpts/README.md",
+      "snippet": "Download Text Encoder HunyuanVideo uses an MLLM model and a CLIP model as text encoder. MLLM model (text_encoder folder) HunyuanVideo supports different MLLMs (including HunyuanMLLM and open-source MLLM models). At this stage, we have not yet released HunyuanMLLM."
+    }
+  ]
+}

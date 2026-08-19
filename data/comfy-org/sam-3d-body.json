@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/sam-3d-body",
+  "slug": "comfy-org-sam-3d-body",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/sam-3d-body",
+  "created_at": "2026-05-25T22:53:52.000Z",
+  "updated_at": "2026-08-17T06:13:18.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:facebook/sam-3d-body-dinov3",
+    "base_model:finetune:facebook/sam-3d-body-dinov3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 3287,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7655870980,
+  "storage_human": "7.7 GB",
+  "base_model": "facebook/sam-3d-body-dinov3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/sam-3d-body · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/sam-3d-body",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PozzettiAndrea/ComfyUI-SAM3DBody: ComfyUI wrapper for sam-3d-body",
+      "url": "https://github.com/PozzettiAndrea/ComfyUI-SAM3DBody",
+      "snippet": "ComfyUI wrapper for sam-3d-body. Contribute to PozzettiAndrea/ComfyUI-SAM3DBody development by creating an account on GitHub."
+    },
+    {
+      "title": "Comfy-Org/sam-3d-body at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/sam-3d-body/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI-SAM3DBody/README.md at main - GitHub",
+      "url": "https://github.com/PozzettiAndrea/ComfyUI-SAM3DBody/blob/main/README.md",
+      "snippet": "ComfyUI wrapper for sam-3d-body. Contribute to PozzettiAndrea/ComfyUI-SAM3DBody development by creating an account on GitHub."
+    },
+    {
+      "title": "ComfyUI-SAM3DBody - ComfyUI Cloud",
+      "url": "https://comfy.icu/extension/PozzettiAndrea__ComfyUI-SAM3DBody",
+      "snippet": "ComfyUI-SAM3DBody SAM 3D Body integration for ComfyUI - Robust full-body human mesh recovery from single images. Reconstruct 3D human meshes with pose, shape, and hand details. First draft, please open a github issue if you have any problems or feature requests :)"
+    }
+  ]
+}

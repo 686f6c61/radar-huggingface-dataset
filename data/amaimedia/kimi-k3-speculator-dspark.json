@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/Kimi-K3-speculator-dspark",
+  "slug": "amaimedia-kimi-k3-speculator-dspark",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/Kimi-K3-speculator-dspark",
+  "created_at": "2026-08-16T08:50:23.000Z",
+  "updated_at": "2026-08-16T08:50:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:finetune:moonshotai/Kimi-K3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4744900481,
+  "parameters_human": "4.74B",
+  "storage_bytes": 9489807826,
+  "storage_human": "9.5 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Kimi-K3-speculator.dspark - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Kimi-K3-speculator.dspark",
+      "snippet": "RedHatAI / Kimi-K3-speculator.dspark like 2 Follow Red Hat AI 2.95k Safetensors speculators speculative-decoding dspark custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new RedHatAI/Kimi-K3-speculator.dspark Training Details Prepare data Launch the Mooncake master Launch extraction (both nodes of ..."
+    },
+    {
+      "title": "RedHatAI/Kimi-K3-speculator.dspark at main - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Kimi-K3-speculator.dspark/tree/main",
+      "snippet": "/ Kimi-K3-speculator.dspark like 2 Follow Red Hat AI 2.95k Safetensors speculators speculative-decoding dspark custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Kimi-K3-speculator.dspark 9.49 GB Ctrl+K Ctrl+K 2 contributors History:10 commits shanjiaz Update README.md 8355939 verifiedabout ..."
+    },
+    {
+      "title": "GitHub - MoonshotAI/Kimi-K3: Open Frontier Intelligence",
+      "url": "https://github.com/MoonshotAI/Kimi-K3/tree/main",
+      "snippet": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and ..."
+    },
+    {
+      "title": "Architecture graph for RedHatAI/Kimi-K3-speculator.dspark.",
+      "url": "https://hfviewer.com/RedHatAI/Kimi-K3-speculator.dspark",
+      "snippet": "RedHatAI/Kimi-K3-speculator.dspark neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model RedHatAI/Kimi-K3-speculator.dspark. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the ..."
+    },
+    {
+      "title": "vllm/vllm/models/kimi_k3/nvidia/dspark_mla.py at main - GitHub",
+      "url": "https://github.com/vllm-project/vllm/blob/main/vllm/models/kimi_k3/nvidia/dspark_mla.py",
+      "snippet": "A high-throughput and memory-efficient inference and serving engine for LLMs - vllm-project/vllm"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r511-offline-dpo-hialpha-midrank-lobeta-midctx-ultraextrasteps-merged",
+  "slug": "unconst-affine-5czsc2fc98-r511-offline-dpo-hialpha-midrank-lobeta-midctx-ultraextrasteps-merged",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r511-offline-dpo-hialpha-midrank-lobeta-midctx-ultraextrasteps-merged",
+  "created_at": "2026-08-16T07:52:11.000Z",
+  "updated_at": "2026-08-16T07:52:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:32:43.667Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconst/Affine-5czsc2fc98-h51-merged · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h51-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta ...",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Check AI Watermarks — Text, Image, Video & C2PA Checker",
+      "url": "https://checkaiwatermarks.com/",
+      "snippet": "Check text, images, and video for supported AI watermark signals, C2PA credentials, invisible characters, and metadata—privately in your browser."
+    },
+    {
+      "title": "Affine-5czsc2fc98-h1-merged API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/unconst/Affine-5czsc2fc98-h1-merged",
+      "snippet": "Deploy Affine-5czsc2fc98-h1-merged with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Ultralytics - GitHub",
+      "url": "https://github.com/ultralytics",
+      "snippet": "At Ultralytics, we are dedicated to creating the best artificial intelligence models in the world. Our open source works here on GitHub offer cutting-edge solutions for a wide range of AI tasks, including object detection, tracking, instance segmentation, semantic segmentation, image classification, and pose estimation 🚀."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "tftf64tghbugbhjk/russian-insult-detector-600k",
+  "slug": "tftf64tghbugbhjk-russian-insult-detector-600k",
+  "author": "tftf64tghbugbhjk",
+  "url": "https://huggingface.co/tftf64tghbugbhjk/russian-insult-detector-600k",
+  "created_at": "2026-08-16T14:24:11.000Z",
+  "updated_at": "2026-08-16T14:35:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "russian",
+    "russian-language",
+    "insults",
+    "toxicity",
+    "moderation",
+    "text-classification",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6575212,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

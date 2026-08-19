@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "bartowski/Qwen3.8-27B-GGUF",
+  "slug": "bartowski-qwen3-8-27b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/Qwen3.8-27B-GGUF",
+  "created_at": "2026-08-14T15:48:06.000Z",
+  "updated_at": "2026-08-14T16:49:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 82,
+  "downloads_30d": 105006,
+  "trending_score": 80,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 479756695872,
+  "storage_human": "479.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "BRlkl/xl-1024-reasoning-1",
+  "slug": "brlkl-xl-1024-reasoning-1",
+  "author": "BRlkl",
+  "url": "https://huggingface.co/BRlkl/xl-1024-reasoning-1",
+  "created_at": "2026-08-15T21:29:51.000Z",
+  "updated_at": "2026-08-15T21:42:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1251216385,
+  "parameters_human": "1.25B",
+  "storage_bytes": 2560063612,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Reasoning AI Models (August 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/reasoning-models",
+      "snippet": "Top AI models with dedicated reasoning capabilities, ranked by benchmark performance. Top picks: Claude Mythos 5, Claude Opus 5, Claude Fable 5. 128 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "BRlkl/xl-1024-curriculum-frozendecoder-probe-checkpoints - Hugging Face",
+      "url": "https://huggingface.co/BRlkl/xl-1024-curriculum-frozendecoder-probe-checkpoints",
+      "snippet": "BRlkl / xl-1024-curriculum-frozendecoder-probe-checkpoints like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Azure OpenAI reasoning models - GPT-5 series, o3-mini, o1, o1-mini ...",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/reasoning",
+      "snippet": "Azure OpenAI reasoning models are designed to tackle reasoning and problem-solving tasks with increased focus and capability. These models spend more time processing and understanding the user&#x27;s request, making them exceptionally strong in areas like science, coding, and math compared to previous iterations. Key capabilities of reasoning models:"
+    },
+    {
+      "title": "GitHub - BRlkl/AGI-Samantha: AGI has been achieved externally",
+      "url": "https://github.com/BRlkl/AGI-Samantha",
+      "snippet": "AGI has been achieved externally. Contribute to BRlkl/AGI-Samantha development by creating an account on GitHub."
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    }
+  ]
+}

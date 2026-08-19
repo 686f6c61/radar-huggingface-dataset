@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GoodStartLabs/sf-cot-dagger-chess-qwen3-1.7b",
+  "slug": "goodstartlabs-sf-cot-dagger-chess-qwen3-1-7b",
+  "author": "GoodStartLabs",
+  "url": "https://huggingface.co/GoodStartLabs/sf-cot-dagger-chess-qwen3-1.7b",
+  "created_at": "2026-08-17T20:25:25.000Z",
+  "updated_at": "2026-08-17T20:32:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "chess",
+    "lora",
+    "dagger",
+    "stockfish",
+    "chain-of-thought",
+    "research",
+    "negative-result",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139512976,
+  "storage_human": "140 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Kimi K3 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/kimi-3",
+      "snippet": "Kimi K3 by Moonshot AI ranks #5 of 218 with a public score of 80.5/100. Evidence: Supported; this profile shows 44 source-displayable benchmark rows."
+    },
+    {
+      "title": "Good Start Labs - AI Model Training & Evaluation 〜 With Games",
+      "url": "https://goodstartlabs.com/",
+      "snippet": "Simulations that measure and improve your models&#x27; key capabilities: Long-horizon reasoning, tool use, enterprise functionality, and more."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: DeepSeek-V4-Flash-0731 by DeepSeek on Jul 31 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

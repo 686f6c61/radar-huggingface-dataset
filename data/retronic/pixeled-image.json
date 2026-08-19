@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "retronic/pixeled-image",
+  "slug": "retronic-pixeled-image",
+  "author": "retronic",
+  "url": "https://huggingface.co/retronic/pixeled-image",
+  "created_at": "2026-08-19T00:39:10.000Z",
+  "updated_at": "2026-08-19T01:12:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "flux",
+    "flux2",
+    "pixeled",
+    "pixelship",
+    "lora",
+    "structured-prompts",
+    "base_model:black-forest-labs/FLUX.2-dev",
+    "base_model:adapter:black-forest-labs/FLUX.2-dev",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335326902,
+  "storage_human": "335 MB",
+  "base_model": "black-forest-labs/FLUX.2-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pixelship - a Hugging Face Space by retronic",
+      "url": "https://huggingface.co/spaces/retronic/pixelship",
+      "snippet": "This app lets you chat and ask for pictures. Type a prompt, optionally attach a reference image to edit, and the system will create a custom image for you. You only need to provide your Replicate A..."
+    },
+    {
+      "title": "retronic (Melons) - Hugging Face",
+      "url": "https://huggingface.co/retronic",
+      "snippet": "Colox, a reasoning AI model. I am currently working on a model smarter than GPT o1 that thinks before it speaks. It is coming tomorrow in the afternoon."
+    },
+    {
+      "title": "Free AI Image to 3D Model Converter — Pic2Mesh AI",
+      "url": "https://pic2mesh.com/",
+      "snippet": "Pic2Mesh AI turns a single picture into a textured, downloadable 3D model in about a minute. Free image-to-3D conversion for makers, game devs, and sellers — no account, no watermark."
+    },
+    {
+      "title": "Free AI 3D Model Generator: Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Generate high-quality 3D models from text or images for free. Neural4D provides a top-tier free AI 3D model generator for games, AR/VR, and 3D printing."
+    },
+    {
+      "title": "Free AI Image Generator Online | Recraft Studio",
+      "url": "https://www.recraft.ai/ai-image-generator",
+      "snippet": "Recraft&#x27;s AI photo generator turns text to image, instantly creating professional-quality designs. Generate AI images, vectors, and icons for free."
+    }
+  ]
+}

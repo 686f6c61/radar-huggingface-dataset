@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-GGUF",
+  "slug": "mradermacher-qwen3-6-40b-grand-intelligence-fable-fusion-uncensored-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-GGUF",
+  "created_at": "2026-08-14T05:00:09.000Z",
+  "updated_at": "2026-08-14T12:42:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "MTP",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "multi-stage tuned.",
+    "all use cases",
+    "thinking",
+    "reasoning",
+    "qwen3.6",
+    "coder",
+    "creative",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic",
+    "base_model:quantized:DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 720,
+  "trending_score": 0,
+  "parameters": 39497296128,
+  "parameters_human": "39.50B",
+  "storage_bytes": 273835659264,
+  "storage_human": "273.8 GB",
+  "base_model": "DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "snippet": "Important: This is the first 40B fine tune that reaches \"closed source\" (IE OpenAI, Claude) level of intelligence in both 8 bit and 4 bit. This repo contains both \"regular\" and \"MTP\" Neo MAX Imatrix GGUF quants. This model is composed from multiple Qwen 27B Fable Fusion 711 cores (1700+ likes, 2.3 million+ downloads) - a record breaking model in terms of intelligence and raw power. \"Grand ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Introduction Qwen3.6 Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://hf.qhduan.com/models?other=heretic",
+      "snippet": "DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF Image-Text-to-Text • 39B • Updated 2 days ago • 3.08k • 32"
+    },
+    {
+      "title": "Davidau - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/DavidAU",
+      "snippet": "Overview Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic is a 40-billion parameter language model developed by DavidAU based on the Qwen 3.6 architecture."
+    }
+  ]
+}

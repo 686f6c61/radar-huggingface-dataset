@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/annnslmixillustrious_v61",
+  "slug": "larryaidraw-annnslmixillustrious_v61",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/annnslmixillustrious_v61",
+  "created_at": "2026-08-18T09:38:34.000Z",
+  "updated_at": "2026-08-18T09:38:34.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AnnnslMIXIllustriousXL Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/annnslmixillustriousxl-download",
+      "snippet": "Base usage:Sampler: Euler aSteps: 24+CFG Scale: 4.5~7.5Positive word:masterpiece, best quality, Negative word:lowres, worst quality, bad quality, bad anatomy,sk"
+    },
+    {
+      "title": "AnnnslMIXIllustriousXL - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1860294135430527608",
+      "snippet": "Generate stunning base_model anime art with the &#x27;AnnnslMIXIllustriousXL&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "AnnnslMIXIllustriousXL - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/1386622?modelVersionId=1607992",
+      "snippet": "Download AnnnslMIXIllustriousXL - Checkpoint for Illustrious by Ansl_Ai from CivArchive (CivitAI Archive). Initially, the model was just to run my character LoRA as an example image, and the restoration of t..."
+    },
+    {
+      "title": "AnnnslMIXIllustriousXL｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1861830635660824637",
+      "snippet": "Just created this stunning anime, base_model anime art with the amazing &#x27;AnnnslMIXIllustriousXL&#x27; model on PixAI! Search for \"AnnnslMIXIllustriousXL\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "AnnnslMIXIllustriousXL | v2.1 | PromptHero",
+      "url": "https://prompthero.com/ai-models/annnslmixillustriousxl-download/v2-1",
+      "snippet": "Model Details Type AI Model Task text-to-image Subtype Safetensors / Checkpoint AI Model Created Mar 27, 2025 Updated July 27, 2026"
+    }
+  ]
+}

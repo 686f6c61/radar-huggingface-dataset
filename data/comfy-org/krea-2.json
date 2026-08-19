@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/Krea-2",
+  "slug": "comfy-org-krea-2",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/Krea-2",
+  "created_at": "2026-06-16T22:31:20.000Z",
+  "updated_at": "2026-08-17T06:03:21.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:finetune:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 455,
+  "downloads_30d": 2102629,
+  "trending_score": 26,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177825369315,
+  "storage_human": "177.8 GB",
+  "base_model": "krea/Krea-2-Raw, krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/Krea-2 · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Krea-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea-2 ComfyUI Workflow Example",
+      "url": "https://docs.comfy.org/tutorials/image/krea/krea-2",
+      "snippet": "Krea 2 is an image generation model from Krea AI, trained from scratch and focused on creative and stylistic exploration. Krea 2 ships as two models designed to work together: train LoRAs on RAW, run inference on Turbo: Krea 2 RAW: the base model with full-step sampling (52 steps)."
+    },
+    {
+      "title": "Comfy-Org/Krea-2 at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Krea-2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea-2: Text to Image - ComfyUI Workflow",
+      "url": "https://comfy.org/workflows/11657ed32877-11657ed32877/",
+      "snippet": "Krea-2: Text to Image Generate images from text prompts using Krea 2, a foundation model built for aesthetic quality and creative control. It focuses on rendering expressive and artistic styles. Ideal for concept art exploration, visual brainstorming, and creating stylized imagery for design projects."
+    },
+    {
+      "title": "Krea 2 Open-Source Models are now available in ComfyUI",
+      "url": "https://comfyui.org/en/krea-2-open-source-models-are-now",
+      "snippet": "You can operate Krea 2 OSS locally in ComfyUI today. These open-weight checkpoints—Krea 2 RAW and Krea 2 Turbo—integrate with standard diffusion model nodes, enabling local hardware training and generation. Krea 2 OSS demonstrates proficiency in creating diverse artistic results and stands as a highly advised image model for adoption."
+    }
+  ]
+}

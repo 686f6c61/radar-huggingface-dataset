@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kepom/rbinrs-Kimi-K2.5-BF16-abliterated-GGUF",
+  "slug": "kepom-rbinrs-kimi-k2-5-bf16-abliterated-gguf",
+  "author": "kepom",
+  "url": "https://huggingface.co/kepom/rbinrs-Kimi-K2.5-BF16-abliterated-GGUF",
+  "created_at": "2026-08-14T21:39:00.000Z",
+  "updated_at": "2026-08-14T21:39:00.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "GGUF",
+    "image-text-to-text",
+    "base_model:moonshotai/Kimi-K2.5",
+    "base_model:quantized:moonshotai/Kimi-K2.5",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 205,
+  "trending_score": 0,
+  "parameters": 1026408232448,
+  "parameters_human": "1026.41B",
+  "storage_bytes": 862904510656,
+  "storage_human": "862.9 GB",
+  "base_model": "moonshotai/Kimi-K2.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rbinrs-Kimi-K2.5-BF16-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/rbinrs/rbinrs-Kimi-K2.5-BF16-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Trilogix1/Kimi-K2.5-BF16-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Trilogix1/Kimi-K2.5-BF16-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kimi K2.5 | Open Visual Agentic Model for Real Work",
+      "url": "https://www.kimi.com/ai-models/kimi-k2-5",
+      "snippet": "Kimi K2.5 is an open source multimodal model by Moonshot AI, combining visual coding, AI agents, and agent swarm capabilities for real work."
+    },
+    {
+      "title": "MoonshotAI/Kimi-K2.5: Open Visual Agentic Intelligence - GitHub",
+      "url": "https://github.com/MoonshotAI/Kimi-K2.5",
+      "snippet": "Kimi K2.5 is an open-source, native multimodal agentic model built through continual pretraining on approximately 15 trillion mixed visual and text tokens atop Kimi-K2-Base. It seamlessly integrates vision and language understanding with advanced agentic capabilities, instant and thinking modes, as well as conversational and agentic paradigms."
+    },
+    {
+      "title": "Kimi-K2.5 | kvcache-ai/ktransformers | DeepWiki",
+      "url": "https://deepwiki.com/kvcache-ai/ktransformers/9.3-kimi-k2.5",
+      "snippet": "Kimi-K2.5 Relevant source files Kimi-K2.5 is a large Mixture-of-Experts (MoE) model from Moonshot AI that supports CPU-GPU heterogeneous inference through the KTransformers framework. The model features native RAWINT4 quantized weights for both CPU and GPU execution and supports LoRA fine-tuning via the kt-sft backend."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "omnificat/minintel-v1-4b",
+  "slug": "omnificat-minintel-v1-4b",
+  "author": "omnificat",
+  "url": "https://huggingface.co/omnificat/minintel-v1-4b",
+  "created_at": "2026-08-16T19:12:17.000Z",
+  "updated_at": "2026-08-17T16:30:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 5573446208,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 5CD-AI/Vintern: [CVPR 2024 Oral] InternVL Family: A Pioneering ...",
+      "url": "https://github.com/5CD-AI/Vintern",
+      "snippet": "[CVPR 2024 Oral] InternVL Family: A Pioneering Open-Source Alternative to GPT-4o. 接近GPT-4o表现的可商用开源多模态对话模型 - 5CD-AI/Vintern"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Comparisons of Small Open Source AI Models (4B-40B) Open source AI models with between 4B to 40B parameters. Models are considered open source (also commonly referred to as open weights) where their weights are accessible to download. This allows self-hosting on your own infrastructure and enables customizing the model such as through fine-tuning."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - OpenGVLab/InternVL: [CVPR 2024 Oral] InternVL Family: A ...",
+      "url": "https://github.com/OpenGVLab/InternVL",
+      "snippet": "The 4-bit model is available at OpenGVLab/InternVL-Chat-V1-5-AWQ. 2024/05/13: InternVL 1.0 can now be used as the text encoder for diffusion models to support multilingual generation natively in over 110 languages worldwide."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "unsloth/Kimi-K3-GGUF",
+  "slug": "unsloth-kimi-k3-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF",
+  "created_at": "2026-07-27T17:24:30.000Z",
+  "updated_at": "2026-08-07T02:12:13.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "conversational",
+    "image-text-to-text",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 354,
+  "downloads_30d": 433177,
+  "trending_score": 11,
+  "parameters": 2779483135584,
+  "parameters_human": "2779.48B",
+  "storage_bytes": 9570568005600,
+  "storage_human": "9570.6 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Kimi-K3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF",
+      "snippet": "Kimi K3 1. Model Introduction Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon ..."
+    },
+    {
+      "title": "Kimi K3 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/kimi-k3",
+      "snippet": "Kimi K3 by Moonshot AI is a 2.8T parameter open-weight model (104B active) built for SOTA coding, agentic, long-context, and chat workloads. It is the strongest open model to date, rivaling Claude 4.8 Opus and GPT-5.6. Kimi K3 has native vision, a 1M-token context window and uses MXFP4. Full-precision inference requires 1.56 TB of storage and 1-bit Kimi K3 Unsloth Dynamic GGUF requires 594 GB ..."
+    },
+    {
+      "title": "unsloth/Kimi-K3-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "1-Bit Kimi K3 GGUF: How Unsloth Squeezed a 2.8T Model Down to 594 GB",
+      "url": "https://essamamdani.com/blog/1-bit-kimi-k3-gguf-unsloth-local-inference-guide",
+      "snippet": "Unsloth&#x27;s 1-bit GGUF quantization shrinks Moonshot&#x27;s Kimi K3 from 1.56 TB to 594 GB while keeping ~78.9% top-1 accuracy. We cover hardware needs, quant options, and how to run it locally."
+    },
+    {
+      "title": "How to Run Kimi Locally: Self-Hosting Kimi K3 with GGUF, Unsloth Studio ...",
+      "url": "https://dexity.com/intel/run-kimi-locally-2026",
+      "snippet": "How to Run Kimi Locally: Self-Hosting Kimi K3 with GGUF, Unsloth Studio & llama.cpp Published July 30, 2026 · 9 min read TL;DR Kimi K3 is a 2.8T-parameter open-weight model (104B active) with a 1M-token context and native vision — and because the weights are open, you can run it entirely on your own hardware, no API and no data leaving your ..."
+    }
+  ]
+}

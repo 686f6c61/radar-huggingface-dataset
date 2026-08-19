@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "quangmeo/pinbuckle-classifier",
+  "slug": "quangmeo-pinbuckle-classifier",
+  "author": "quangmeo",
+  "url": "https://huggingface.co/quangmeo/pinbuckle-classifier",
+  "created_at": "2026-08-14T10:35:57.000Z",
+  "updated_at": "2026-08-19T01:38:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "safetensors",
+    "arxiv:2105.15203",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 379326740,
+  "storage_human": "379 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quangmeo/pinbuckle-classifier · Hugging Face",
+      "url": "https://huggingface.co/quangmeo/pinbuckle-classifier",
+      "snippet": "quangmeo / pinbuckle-classifier like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Image Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=image-classification&sort=trending",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - agentscope-ai/PawBench: A benchmark for evaluating LLM × ...",
+      "url": "https://github.com/agentscope-ai/PawBench",
+      "snippet": "🐾 PawBench English · 简体中文 A Model × Harness co-evaluation benchmark for agentic AI. 150 agent tasks · 9 models · 3 harnesses · task slices · diagnostic traces The same model can behave very differently once it is placed inside a real agent runtime."
+    },
+    {
+      "title": "Cross-Model Generalization in AI Text Detection: Comparing ... - GitHub",
+      "url": "https://github.com/Mamenuveve2201/Cross-Model-Generalization-in-AI-Text-Detection-Comparing-Feature-Based-and-Neural-Approaches/blob/main/",
+      "snippet": "A study comparing feature-based classical ML classifiers against neural detectors for cross-model AI text detection. Uses 5,981 samples across 5 LLMs and a leave-one-model-out evaluation protocol. ..."
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    }
+  ]
+}

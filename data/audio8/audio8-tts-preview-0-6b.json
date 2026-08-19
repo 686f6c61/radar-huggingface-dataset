@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Audio8/Audio8-TTS-Preview-0.6b",
+  "slug": "audio8-audio8-tts-preview-0-6b",
+  "author": "Audio8",
+  "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b",
+  "created_at": "2026-07-28T07:53:00.000Z",
+  "updated_at": "2026-07-31T12:58:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arktts",
+    "feature-extraction",
+    "audio",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "zero-shot",
+    "multilingual",
+    "custom_code",
+    "yue",
+    "zh",
+    "nl",
+    "en",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 355,
+  "downloads_30d": 19472,
+  "trending_score": 10,
+  "parameters": 601159424,
+  "parameters_human": "601.2M",
+  "storage_bytes": 2564417959,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audio8/Audio8-TTS-Preview-0.6b · Hugging Face",
+      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Audio8-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale - GitHub",
+      "url": "https://github.com/Audio8-AI/Audio8_TTS",
+      "snippet": "Audio8_TTS Preview A .6B-parameter multilingual text-to-speech model with zero-shot voice cloning. 中文文档: README_zh.md This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning."
+    },
+    {
+      "title": "Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4 · Hugging Face",
+      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4",
+      "snippet": "Audio8 TTS Preview is a .6B-parameter multilingual text-to-speech model with zero-shot voice cloning. This repository provides its CPU-oriented ONNX deployment: weight-only INT4 DualAR models, an FP16 neural audio codec, the tokenizer, and the optional FP16 encoder used to register reference voices."
+    },
+    {
+      "title": "awesome-ai-voice/models/audio8-tts-preview-0-6b.md at main - GitHub",
+      "url": "https://github.com/wildminder/awesome-ai-voice/blob/main/models/audio8-tts-preview-0-6b.md",
+      "snippet": "Audio8-TTS-Preview-.6b Audio8 TTS Preview 0.6B is a .6B-parameter multilingual text-to-speech model with zero-shot voice cloning. It uses a DualAR architecture inspired by Fish Audio S2 Pro: a slow AR transformer predicts one semantic token per audio frame, and a fast AR transformer predicts the frame&#x27;s codec codebooks conditioned on the slow hidden state and preceding codebooks. The bundled ..."
+    },
+    {
+      "title": "Audio8-TTS-0.6B - Listening Preview",
+      "url": "https://audio8-ai.github.io/Audio8_TTS/",
+      "snippet": "Overview This page presents outputs from the current Audio8-TTS-.6B preview checkpoint. It includes the recommended language set, targeted pronunciation challenges, tongue twisters, complete classical Chinese works, cross-lingual cloning, and dense lexical tests."
+    }
+  ]
+}

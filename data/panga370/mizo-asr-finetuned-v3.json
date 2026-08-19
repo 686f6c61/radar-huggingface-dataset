@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "panga370/mizo-asr-finetuned-v3",
+  "slug": "panga370-mizo-asr-finetuned-v3",
+  "author": "panga370",
+  "url": "https://huggingface.co/panga370/mizo-asr-finetuned-v3",
+  "created_at": "2026-08-15T05:40:25.000Z",
+  "updated_at": "2026-08-15T07:34:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:facebook/wav2vec2-xls-r-300m",
+    "base_model:finetune:facebook/wav2vec2-xls-r-300m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 81,
+  "trending_score": 0,
+  "parameters": 315475620,
+  "parameters_human": "315.5M",
+  "storage_bytes": 2523928730,
+  "storage_human": "2.5 GB",
+  "base_model": "facebook/wav2vec2-xls-r-300m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:08:23.282Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "panga370/mizo-asr-finetuned-v3 · Hugging Face",
+      "url": "https://huggingface.co/panga370/mizo-asr-finetuned-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mizo Automatic Speech Recognition (ASR) Models",
+      "url": "https://huggingface.co/collections/andrewbawitlung/mizo-automatic-speech-recognition-asr-models-676ebba07158e5e5c832ecd5",
+      "snippet": "These Models were trained using MiZonal v1.0 Dataset"
+    },
+    {
+      "title": "Fig. 2. Model architecture for fine-tuning mizo language using Wav2vec...",
+      "url": "https://www.researchgate.net/figure/Model-architecture-for-fine-tuning-mizo-language-using-Wav2vec-20-and-XLS-R-model_fig2_393134809",
+      "snippet": "This study introduces a Mizo Automatic Speech Recognition (ASR) approach by fine-tuning Wav2vec 2.0 and XLS-R models. The research presents the newly developed Mizo speech dataset, MiZonal v1.0 ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Best AI Models in 2026: All 22 Frontier Models Compared",
+      "url": "https://platform.teamai.com/blog/large-language-models-llms/the-2026-ai-frontier-model-war/",
+      "snippet": "Compare 22 frontier AI models in 2026: GPT, Claude, Gemini, DeepSeek, Qwen, Kimi. Context windows, pricing, and use cases in one chart. Part 1 of 2."
+    }
+  ]
+}

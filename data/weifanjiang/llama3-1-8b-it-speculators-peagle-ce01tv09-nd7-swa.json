@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "weifanjiang/llama3.1-8b-it.speculators.peagle-ce01tv09-nd7-swa",
+  "slug": "weifanjiang-llama3-1-8b-it-speculators-peagle-ce01tv09-nd7-swa",
+  "author": "weifanjiang",
+  "url": "https://huggingface.co/weifanjiang/llama3.1-8b-it.speculators.peagle-ce01tv09-nd7-swa",
+  "created_at": "2026-08-12T00:56:36.000Z",
+  "updated_at": "2026-08-17T16:25:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 1638098432,
+  "parameters_human": "1.64B",
+  "storage_bytes": 3882310700,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "weifanjiang/llama3.1-8b-it.speculators.peagle-ce01tv09-nd7-swa ...",
+      "url": "https://huggingface.co/weifanjiang/llama3.1-8b-it.speculators.peagle-ce01tv09-nd7-swa",
+      "snippet": "/ llama3.1-8b-it.speculators.peagle-ce01tv09-nd7-swa like 0 Safetensors custom_code Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 2B params Tensor type I64 · BF16 · BOOL · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "Llama-3.1-8B-Instruct-speculator.eagle3 - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Llama-3.1-8B-Instruct-speculator.eagle3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "weifanjiang/speculators-laguna-arch - GitHub",
+      "url": "https://github.com/weifanjiang/speculators-laguna-arch",
+      "snippet": "Speculators is a library for training speculative decoding draft models that deploy directly to LLM inference engines like vLLM. Speculative decoding is a lossless technique that speeds up LLM inference by using a smaller, faster draft model (i.e. \"the speculator\") to propose tokens, which are then verified by the larger base model, reducing ..."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "[2407.21783] The Llama 3 Herd of Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2407.21783",
+      "snippet": "Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an extensive ..."
+    }
+  ]
+}

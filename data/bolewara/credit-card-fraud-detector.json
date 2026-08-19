@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bolewara/credit-card-fraud-detector",
+  "slug": "bolewara-credit-card-fraud-detector",
+  "author": "bolewara",
+  "url": "https://huggingface.co/bolewara/credit-card-fraud-detector",
+  "created_at": "2026-08-17T19:08:16.000Z",
+  "updated_at": "2026-08-17T19:09:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "lightgbm",
+    "fraud-detection",
+    "classification",
+    "tabular",
+    "tabular-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 259729,
+  "storage_human": "259729 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Credit Card Fraud Detection - ML - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/ml-credit-card-fraud-detection/",
+      "snippet": "The goal of this project is to develop a machine learning model that can accurately detect fraudulent credit card transactions using historical data. By analyzing transaction patterns, the model should be able to distinguish between normal and fraudulent activity, helping financial institutions flag suspicious behavior early and reduce potential risks. Challenges include: Handling imbalanced ..."
+    },
+    {
+      "title": "GitHub - gustavochotti/Fraud-Detection-System: Machine Learning system ...",
+      "url": "https://github.com/gustavochotti/Fraud-Detection-System",
+      "snippet": "Credit Card Fraud Detection System End-to-end ML project to detect fraudulent credit card transactions. It covers EDA → preprocessing → imbalanced learning (SMOTE) → model training/evaluation → real-time inference via Flask API."
+    },
+    {
+      "title": "AI-based credit card fraud detection: a machine learning ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10115-026-02773-7",
+      "snippet": "Fraud detection is a critical challenge in the financial industry, as the growing volume of transactions increases the risk of fraudulent activities, leading to significant financial and reputational harm. This study aims to address this challenge by evaluating advanced machine learning and deep learning models designed to enhance the accuracy, efficiency, and scalability of fraud detection ..."
+    },
+    {
+      "title": "Explainable AI in Credit Card Fraud Detection ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/379650775_Explainable_AI_in_Credit_Card_Fraud_Detection_Interpretable_Models_and_Transparent_Decision-making_for_Enhanced_Trust_and_Compliance_in_the_USA",
+      "snippet": "The objective of this paper is to build a model for credit card fraud detection using Machine learning techniques. An innovative approach to credit card fraud detection grounded on machine ..."
+    },
+    {
+      "title": "PDF AI-Powered Credit Card Fraud Detection: A Comparative Analysis of ...",
+      "url": "https://ijrar.org/papers/IJRAR25A2272.pdf",
+      "snippet": "Abstract : This study evaluates the efficacy of AI techniques in credit card fraud detection amidst the growing digital economy, where financial fraud, particularly credit card fraud, has surged. Traditional fraud detection methods like rule-based systems and manual verification are increasingly inadequate against sophisticated fraud tactics. We compare machine learning (ML) and deep learning ..."
+    }
+  ]
+}

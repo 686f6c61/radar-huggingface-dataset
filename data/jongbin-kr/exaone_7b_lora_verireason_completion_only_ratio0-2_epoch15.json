@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/exaone_7b_lora_verireason_completion_only_ratio0.2_epoch15",
+  "slug": "jongbin-kr-exaone_7b_lora_verireason_completion_only_ratio0-2_epoch15",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/exaone_7b_lora_verireason_completion_only_ratio0.2_epoch15",
+  "created_at": "2026-08-15T05:30:17.000Z",
+  "updated_at": "2026-08-15T05:49:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "base_model:finetune:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 503692961,
+  "storage_human": "504 MB",
+  "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "exaone_7b_lora_verireason_completion_only_ratio0.2_epoch15",
+      "url": "https://huggingface.co/Jongbin-kr/exaone_7b_lora_verireason_completion_only_ratio0.2_epoch15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jongbin-kr/exaone_7b_lora_rtlcoder_ratio0.2 · Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/exaone_7b_lora_rtlcoder_ratio0.2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/K-EXAONE: Official repository for K-EXAONE built ...",
+      "url": "https://github.com/LG-AI-EXAONE/K-EXAONE",
+      "snippet": "We introduce K-EXAONE, a large-scale multilingual language model developed by LG AI Research. Built using a Mixture-of-Experts architecture, K-EXAONE features 236 billion total parameters, with 23 billion active during inference. Performance evaluations across various benchmarks demonstrate that K-EXAONE excels in reasoning, agentic capabilities, general knowledge, multilingual understanding ..."
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/EXAONE-3.0: Official repository for EXAONE built ...",
+      "url": "https://github.com/LG-AI-EXAONE/EXAONE-3.0",
+      "snippet": "We introduce EXAONE-3.-7.8B-Instruct, a pre-trained and instruction-tuned bilingual (English and Korean) generative model with 7.8 billion parameters. The model was pre-trained with 8T curated tokens and post-trained with supervised fine-tuning and direct preference optimization. It demonstrates highly competitive benchmark performance against other state-of-the-art open models of similar size."
+    },
+    {
+      "title": "LG AI Research opens K-EXAONE 2.0, Korea&#x27;s largest 750B-parameter model",
+      "url": "https://biz.chosun.com/en/en-industry/2026/07/31/622OBBNUDZA4PFTUSB7QX5I6OA/",
+      "snippet": "LG AI Research fully opened the model license policy to allow anyone to use it commercially. K-EXAONE 2.0 scored an average of 70.1 on 24 benchmark evaluation metrics, achieving performance more ..."
+    }
+  ]
+}

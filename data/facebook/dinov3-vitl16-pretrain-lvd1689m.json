@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "slug": "facebook-dinov3-vitl16-pretrain-lvd1689m",
+  "author": "facebook",
+  "url": "https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "created_at": "2025-08-06T06:19:51.000Z",
+  "updated_at": "2025-08-19T09:00:52.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dinov3_vit",
+    "image-feature-extraction",
+    "dino",
+    "dinov3",
+    "arxiv:2508.10104",
+    "en",
+    "base_model:facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 519,
+  "downloads_30d": 711611,
+  "trending_score": 13,
+  "parameters": 303129600,
+  "parameters_human": "303.1M",
+  "storage_bytes": 1212559808,
+  "storage_human": "1.2 GB",
+  "base_model": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/dinov3-vitl16-pretrain-lvd1689m · Hugging Face",
+      "url": "https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facebook/dinov3-vitl16-pretrain-lvd1689m at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dinov3-vitl16-pretrain-lvd1689m by facebook | Mixpeek Model Hub",
+      "url": "https://mixpeek.com/model/facebook/dinov3-vitl16-pretrain-lvd1689m",
+      "snippet": "Build a pipeline with dinov3-vitl16-pretrain-lvd1689m Add this model to a processing pipeline alongside other extractors. Combine with retrieval stages for end-to-end search. Run it on your own data, free"
+    },
+    {
+      "title": "GitHub - facebookresearch/dinov3: Reference PyTorch implementation and ...",
+      "url": "https://github.com/facebookresearch/dinov3",
+      "snippet": "The model weights are also available in Hugging Face Hub and supported by the Hugging Face Transformers library. Building on our original high-resolution canopy height maps released in 2024, CHMv2 delivers substantial improvements in accuracy, detail, and global consistency by leveraging DINOv3."
+    },
+    {
+      "title": "dinov3-vitl16-pretrain-lvd1689m · Models",
+      "url": "https://www.modelscope.cn/models/facebook/dinov3-vitl16-pretrain-lvd1689m",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    }
+  ]
+}

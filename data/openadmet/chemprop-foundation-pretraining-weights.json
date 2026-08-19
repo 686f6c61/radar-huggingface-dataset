@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "openadmet/chemprop-foundation-pretraining-weights",
+  "slug": "openadmet-chemprop-foundation-pretraining-weights",
+  "author": "openadmet",
+  "url": "https://huggingface.co/openadmet/chemprop-foundation-pretraining-weights",
+  "created_at": "2026-08-17T13:43:15.000Z",
+  "updated_at": "2026-08-17T14:12:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "chemistry",
+    "biology",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 522897751,
+  "storage_human": "523 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChemProp — OpenADMET Models documentation",
+      "url": "https://docs.openadmet.org/en/stable/_api/api/model_architectures/chemprop.html",
+      "snippet": "Prepare and build the ChemProp model. Downloads and loads the CheMeleon foundation model if specified, otherwise constructs a new MPNN model with the given configuration."
+    },
+    {
+      "title": "openadmet.models.architecture.chemprop — OpenADMET Models documentation",
+      "url": "https://docs.openadmet.org/en/stable/_modules/openadmet/models/architecture/chemprop.html",
+      "snippet": "\"\"\"ChemProp and Chemeleon model implementations.\"\"\"importjsonimporttypesfrompathlibimportPathfromtypingimportClassVarfromurllib.requestimporturlretrieveimportnumpyasnpimporttorchfromchempropimportmodels,nnfromchemprop.models.modelimportbuild_NoamLike_LRSchedfromlightningimportpytorchasplfromloguruimportloggerfrompydanticimportPrivateAttr,field ..."
+    },
+    {
+      "title": "ChemProp - ADMET Workbench",
+      "url": "https://supercowpowers.github.io/workbench/models/chemprop_models/",
+      "snippet": "OpenADMET Challenge ChemProp models were used by many top performers on the OpenADMET Leaderboard. Workbench supports all four ChemProp model types with the same simple API."
+    },
+    {
+      "title": "GitHub - chemprop/chemprop: Message Passing Neural Networks for ...",
+      "url": "https://github.com/chemprop/chemprop",
+      "snippet": "ADMET-AI: A machine learning ADMET platform for evaluation of large-scale chemical libraries: Chemprop was trained on 41 absorption, distribution, metabolism, excretion, and toxicity (ADMET) datasets from the Therapeutics Data Commons."
+    },
+    {
+      "title": "Welcome to Chemprop&#x27;s documentation! — Chemprop 2.3.1 documentation",
+      "url": "https://chemprop.readthedocs.io/en/latest/index.html",
+      "snippet": "Welcome to Chemprop&#x27;s documentation! # This website contains documentation for Chemprop, a PyTorch-based framework for training and evaluating message-passing neural networks (MPNNs) for molecular property prediction. The package was originally developed for Yang et al.[1] and further described in Heid et al.[2]. To get started with Chemprop, check out the Quickstart page, and for more ..."
+    }
+  ]
+}

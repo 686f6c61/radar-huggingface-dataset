@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AndreGaio/pi0_packing",
+  "slug": "andregaio-pi0_packing",
+  "author": "AndreGaio",
+  "url": "https://huggingface.co/AndreGaio/pi0_packing",
+  "created_at": "2026-08-17T19:45:13.000Z",
+  "updated_at": "2026-08-17T19:53:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:AndreGaio/test-packing_20260816_160939",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8926905438,
+  "storage_human": "8.9 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2410.24164] $π_0$: A Vision-Language-Action Flow Model for General ...",
+      "url": "https://arxiv.org/abs/2410.24164",
+      "snippet": "Robot learning holds tremendous promise to unlock the full potential of flexible, general, and dexterous robot systems, as well as to address some of the deepest questions in artificial intelligence. However, bringing robot learning to the level of generality required for effective real-world systems faces major obstacles in terms of data, generalization, and robustness. In this paper, we ..."
+    },
+    {
+      "title": "π 0 : A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/html/2410.24164v1",
+      "snippet": "By basing our model on a VLM, we inherit the general knowledge, semantic reasoning, and problem-solving abilities of language- and vision-language models. We then further train our model to incorporate robot actions, turning it into a vision-language-action (VLA) model [7]."
+    },
+    {
+      "title": "Physical Intelligence (π)",
+      "url": "https://www.pi.website/",
+      "snippet": "Physical Intelligence is bringing general-purpose AI into the physical world. We are a group of engineers, scientists, roboticists, and company builders developing learning algorithms to create a model that will control any robot to do any task."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "GitHub - Spirit-AI-Team/PI_Official",
+      "url": "https://github.com/Spirit-AI-Team/PI_Official",
+      "snippet": "the π₀ model, a flow-based diffusion vision-language-action model (VLA) the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. For both models, we provide base model checkpoints, pre-trained on 10k+ hours of robot data, and examples for using them out of the box or fine-tuning them to your own datasets."
+    }
+  ]
+}

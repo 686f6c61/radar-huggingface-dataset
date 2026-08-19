@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "GODELEV/Rose-Pro",
+  "slug": "godelev-rose-pro",
+  "author": "GODELEV",
+  "url": "https://huggingface.co/GODELEV/Rose-Pro",
+  "created_at": "2026-08-17T09:24:25.000Z",
+  "updated_at": "2026-08-17T10:15:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rose_x1",
+    "rose",
+    "custom_arch",
+    "refresh_gates",
+    "original_token_embeddings_reinjection",
+    "150M_param",
+    "80B_token_pretrained",
+    "Pretrained_from_scratch",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 385,
+  "trending_score": 10,
+  "parameters": 151274112,
+  "parameters_human": "151.3M",
+  "storage_bytes": 607509832,
+  "storage_human": "608 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=rose",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: rose Clear all"
+    },
+    {
+      "title": "GODELEV/Rose-Mini · Hugging Face",
+      "url": "https://huggingface.co/GODELEV/Rose-Mini",
+      "snippet": "Rose X1 is a lightweight decoder-only architecture designed around one simple philosophy: Extract more capability from fewer parameters. Instead of chasing larger parameter counts, Rose focuses on architectural efficiency and better utilization of compute."
+    },
+    {
+      "title": "roses AI Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/search/tags/roses",
+      "snippet": "Browse and download AI models tagged with \"roses\". Discover Stable Diffusion models, LoRA, LyCORIS, and more for your creative projects."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Nejlepší AI modely v srpnu 2026: aktuální žebříčky a srovnání",
+      "url": "https://felloai.com/cs/nejlepsi-ai-modely/",
+      "snippet": "Nejlepší AI modely seřazené podle použití: psaní, programování, generování obrázků, přesnost a další. Každý měsíc aktualizováno o benchmarky a ceny pro srpen 2026."
+    }
+  ]
+}

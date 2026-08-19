@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jrepifano/q14b-tda-del-r3",
+  "slug": "jrepifano-q14b-tda-del-r3",
+  "author": "jrepifano",
+  "url": "https://huggingface.co/jrepifano/q14b-tda-del-r3",
+  "created_at": "2026-08-18T06:30:58.000Z",
+  "updated_at": "2026-08-18T06:55:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11564940,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machine Learning Projects by Jacob Epifano using Weights & Biases",
+      "url": "https://wandb.ai/jrepifano",
+      "snippet": "Weights & Biases, developer tools for machine learning"
+    },
+    {
+      "title": "Research | Jacob Epifano - jrepifano.github.io",
+      "url": "https://jrepifano.github.io/research/",
+      "snippet": "Research notes and experiments by Jacob Epifano. How the local learning coefficient scales with width in the lazy and rich learning regimes, set by NTK and muP parametrization. A network linear in its parameters does not look regular under the LLC: its Jacobian rank is capped by the dataset rather than the parameter count, so the NTK network&#x27;s LLC is nearly width-invariant while the muP ..."
+    },
+    {
+      "title": "jrepifano (Jacob R Epifano) · GitHub",
+      "url": "https://github.com/jrepifano",
+      "snippet": "Research Scientist - AI/ML. jrepifano has 21 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "GitHub - jrepifano/Machine-Learning",
+      "url": "https://github.com/jrepifano/Machine-Learning",
+      "snippet": "Jacob Epifano - Machine Learning This repository contains all of the algorithms I have implemented during my undergraduate Machine Learning studies at Rowan University."
+    }
+  ]
+}

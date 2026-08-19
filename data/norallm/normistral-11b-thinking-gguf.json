@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "norallm/normistral-11b-thinking-gguf",
+  "slug": "norallm-normistral-11b-thinking-gguf",
+  "author": "norallm",
+  "url": "https://huggingface.co/norallm/normistral-11b-thinking-gguf",
+  "created_at": "2025-12-23T20:13:00.000Z",
+  "updated_at": "2026-08-17T17:37:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "nb",
+    "nn",
+    "no"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "norwegian",
+    "bokmaal",
+    "nynorsk",
+    "text-generation",
+    "nb",
+    "nn",
+    "no",
+    "arxiv:2512.08777",
+    "arxiv:2504.07749",
+    "base_model:norallm/normistral-11b-thinking",
+    "base_model:quantized:norallm/normistral-11b-thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 224,
+  "trending_score": 0,
+  "parameters": 5715153920,
+  "parameters_human": "5.72B",
+  "storage_bytes": 270474335648,
+  "storage_human": "270.5 GB",
+  "base_model": "norallm/normistral-11b-thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "norallm/normistral-11b-thinking-gguf · Hugging Face",
+      "url": "https://huggingface.co/norallm/normistral-11b-thinking-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "normistral-11B-thinking-Q5_K_M.gguf · norallm/normistral-11b-thinking ...",
+      "url": "https://huggingface.co/norallm/normistral-11b-thinking-gguf/blob/main/normistral-11B-thinking-Q5_K_M.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTG/normistral-11b-thinking",
+      "url": "https://ollama.com/LTG/normistral-11b-thinking",
+      "snippet": "This is our instruction-tuned NorMistral-11B language model for Norwegian, trained on open datasets and released under Apache 2.0 license."
+    },
+    {
+      "title": "Large Language Models for Norwegian - Department of Informatics",
+      "url": "https://www.mn.uio.no/ifi/english/research/groups/ltg/llms-for-norwegian/index.html",
+      "snippet": "Technical details NorMistral-11B-thinking features 11 billion parameters and is based on the Mistral-Nemo-Base-2407 model by Mistral AI. The base model first underwent a very large-scale continual pre-training on Norwegian data (about 250 billion tokens), acquiring fluency in Bokmål, Nynorsk and Saami languages."
+    },
+    {
+      "title": "LTG/normistral-11b-thinking/model - ollama.com",
+      "url": "https://ollama.com/LTG/normistral-11b-thinking:latest/blobs/65f9ee29bf3a",
+      "snippet": "This is our instruction-tuned NorMistral-11B language model for Norwegian, trained on open datasets and released under Apache 2.0 license."
+    }
+  ]
+}

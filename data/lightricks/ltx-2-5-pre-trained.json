@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "Lightricks/LTX-2.5-Pre-Trained",
+  "slug": "lightricks-ltx-2-5-pre-trained",
+  "author": "Lightricks",
+  "url": "https://huggingface.co/Lightricks/LTX-2.5-Pre-Trained",
+  "created_at": "2026-08-10T11:03:11.000Z",
+  "updated_at": "2026-08-11T20:14:51.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "safetensors",
+    "image-to-video",
+    "text-to-video",
+    "video-to-video",
+    "image-text-to-video",
+    "audio-to-video",
+    "text-to-audio",
+    "video-to-audio",
+    "audio-to-audio",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "multimodal",
+    "ltx-video",
+    "lightricks",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt",
+    "arxiv:2601.03233",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 25,
+  "downloads_30d": 2409,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70122870770,
+  "storage_human": "70.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lightricks/LTX-2.5-Pre-Trained · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5-Pre-Trained",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "LTX-2.5: A Complete Guide to Lightricks&#x27; Audio-Video AI Model",
+      "url": "https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model",
+      "snippet": "Explore LTX-2.5, Lightricks&#x27; 22B AI model for multishot video with synchronized audio, including features, use cases, limits, and setup."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    },
+    {
+      "title": "LTX-2.5 - Open-Weights AI Video Generation by Lightricks | fal",
+      "url": "https://fal.ai/ltx-2.5",
+      "snippet": "LTX-2.5The world model the world builds on. Lightricks&#x27; open-weights audio-video model, live on fal. Diffusion Fidelity Rendering puts more compute into complex scenes, native multishot holds a scene together across cuts, and synchronized audio comes built in. Open and customizable: train LoRAs, fine-tune on your own data, and adapt it to your domain. Try LTX-2.5 on fal.ai."
+    },
+    {
+      "title": "LTX 2.5 - Next-Generation AI Video Generation | LTX",
+      "url": "https://ltx.dev/ltx-2-5",
+      "snippet": "LTX 2.5, the latest real-time AI video model, generates stunning cinematic videos from text or images in seconds. Ultra-fast, high-quality AI video creation for every creator."
+    }
+  ]
+}

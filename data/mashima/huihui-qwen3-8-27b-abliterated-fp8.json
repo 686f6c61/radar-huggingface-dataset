@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mashima/Huihui-Qwen3.8-27B-abliterated-FP8",
+  "slug": "mashima-huihui-qwen3-8-27b-abliterated-fp8",
+  "author": "mashima",
+  "url": "https://huggingface.co/mashima/Huihui-Qwen3.8-27B-abliterated-FP8",
+  "created_at": "2026-08-17T04:58:54.000Z",
+  "updated_at": "2026-08-17T05:13:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "fp8",
+    "vllm",
+    "abliterated",
+    "uncensored",
+    "qwen3",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30879675992,
+  "storage_human": "30.9 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 9 hours ago ... updated a model about 10 hours ago"
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/huihui-qwen3.8-27b-abliterated-huihui-ai",
+      "snippet": "Huihui-Qwen3.8-27B-abliterated is an uncensored version of Qwen/Qwen3.8-27B created using abliteration, a technique that removes refusal mechanisms from language models without requiring TransformerLens. Developed by huihui-ai, this model retains the first 15 layers without ablation while modifying deeper layers to eliminate safety constraints."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated-NVFP4 - FriendliAI",
+      "url": "https://friendli.ai/models/sakamakismile/Huihui-Qwen3.8-27B-abliterated-NVFP4",
+      "snippet": "On a 9-case gate (French/English long-form, temperature 0 and 0.7) this model fails 1 of 9 at xhigh and passes 9 of 9 at medium, where thinking stays near 1k characters. The unmodified Qwen3.8-27B passes the same gate at both settings, so the abliterated fine-tune is more prone to it — but medium is the right default either way."
+    },
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated:27b",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated:27b",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}

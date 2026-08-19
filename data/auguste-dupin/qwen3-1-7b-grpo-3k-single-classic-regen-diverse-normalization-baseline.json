@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Auguste-Dupin/Qwen3-1.7B-GRPO-3k-single-classic-regen-diverse-normalization-baseline",
+  "slug": "auguste-dupin-qwen3-1-7b-grpo-3k-single-classic-regen-diverse-normalization-baseline",
+  "author": "Auguste-Dupin",
+  "url": "https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-3k-single-classic-regen-diverse-normalization-baseline",
+  "created_at": "2026-08-16T20:44:17.000Z",
+  "updated_at": "2026-08-16T20:44:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150935797,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auguste-Dupin/Qwen3-1.7B-GRPO-2k-single-classic-regen-diverse ...",
+      "url": "https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-2k-single-classic-regen-diverse-normalization-baseline",
+      "snippet": "Qwen3-1.7B-GRPO-2k-single-classic-regen-diverse-normalization-baseline ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3 1.7B | Intel® Software Catalog",
+      "url": "https://aiswcatalog.intel.com/models/qwen-qwen3-1-7b",
+      "snippet": "Model Architecture Architecture Type Transformer Network Architecture Qwen3 (Advanced reasoning with thinking mode) Total Parameters 1.7B Base Model Qwen3-1.7B-Base Context Window Size 32,768 tokens Input Specifications Input Types Text Input Formats String Input Parameters One Dimensional (1D) Other Properties Supports seamless switching between thinking mode (for complex logical reasoning ..."
+    },
+    {
+      "title": "Qwen3-1.7B-Base · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-1.7B-Base/summary",
+      "snippet": "Qwen3-1.7B-Base Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Building upon extensive advancements in training data, model architecture, and optimization techniques, Qwen3 delivers the following key improvements over the previously released Qwen2.5: Expanded Higher-Quality ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research."
+    }
+  ]
+}

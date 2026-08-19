@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Pras0906/qwen-surg",
+  "slug": "pras0906-qwen-surg",
+  "author": "Pras0906",
+  "url": "https://huggingface.co/Pras0906/qwen-surg",
+  "created_at": "2026-08-18T08:18:51.000Z",
+  "updated_at": "2026-08-18T08:18:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "QwenCloud - AI-Native Models, Tools & Apps Platform - Ready Out of the Box",
+      "url": "https://www.qwencloud.com/",
+      "snippet": "QwenCloud is an AI-native platform offering Qwen LLMs, multimodal models, and agentic AI tools. Build and scale enterprise AI apps with ultra-low latency."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Every Qwen AI Model Explained and Compared (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-qwen-ai-model-explained-compared/",
+      "snippet": "Qwen is Alibaba&#x27;s model family: free Apache 2.0 open weights you self-host, or a cheap paid API with Max, Plus, and Flash. Compare models, prices, and which to..."
+    },
+    {
+      "title": "Model Marketplace- Text, Image, Video & Audio - Qwen Cloud",
+      "url": "https://www.qwencloud.com/models",
+      "snippet": "Access AI models on Qwen Cloud for text, image, video, and audio generation. Includes Qwen3.6 and Wan video generation models. API-ready with free tier and pay-as-you-go pricing."
+    }
+  ]
+}

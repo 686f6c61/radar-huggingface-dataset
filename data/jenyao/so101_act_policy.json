@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jenyao/so101_act_policy",
+  "slug": "jenyao-so101_act_policy",
+  "author": "jenyao",
+  "url": "https://huggingface.co/jenyao/so101_act_policy",
+  "created_at": "2026-08-18T04:51:36.000Z",
+  "updated_at": "2026-08-18T04:51:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:jenyao/so101-pick-place-dataset",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aiden-li/so101-act · Hugging Face",
+      "url": "https://huggingface.co/aiden-li/so101-act",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "Embodied-Intelligence-Learning/so101-act at main - GitHub",
+      "url": "https://github.com/zizhengwang2026/Embodied-Intelligence-Learning/tree/main/so101-act",
+      "snippet": "My from-zero Embodied Intelligence roadmap: a day-by-day plan covering imitation learning, reinforcement learning, VLA, and world models — practice-first, simulation-first, learned week by week. - ..."
+    },
+    {
+      "title": "GitHub - Jaskaran3010/so101-act-policy",
+      "url": "https://github.com/Jaskaran3010/so101-act-policy",
+      "snippet": "End-to-end implementation of an Action Chunking with Transformers (ACT) policy for the SO-101 robot arm, trained entirely on local hardware for pick-and-place manipulation tasks. This project demonstrates the complete robotics learning pipeline from calibration to real-world deployment. The SO-101 ..."
+    },
+    {
+      "title": "18houston2/so101_act_policy · Hugging Face",
+      "url": "https://huggingface.co/18houston2/so101_act_policy",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "Train an ACT Policy for an SO-101 Robot using LeRobot",
+      "url": "https://trelis.substack.com/p/train-an-act-policy-for-an-so-101",
+      "snippet": "A detailed walkthrough of training an Action Chunking Transformer (ACT) policy on an S0-101 robot arm for a pick-and-place task, using the lerobot library. The process involves data collection through teleoperation, model training, and performance evaluation."
+    }
+  ]
+}

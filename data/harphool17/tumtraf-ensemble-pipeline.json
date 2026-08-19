@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "harphool17/tumtraf-ensemble-pipeline",
+  "slug": "harphool17-tumtraf-ensemble-pipeline",
+  "author": "harphool17",
+  "url": "https://huggingface.co/harphool17/tumtraf-ensemble-pipeline",
+  "created_at": "2026-04-25T08:14:26.000Z",
+  "updated_at": "2026-08-18T07:15:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harphool17 (harphool singh bajdoliya) - Hugging Face",
+      "url": "https://huggingface.co/harphool17",
+      "snippet": "Parakeet ASR Competition Winner 🔥 \"A custom NVIDIA Parakeet speech recognition model fine-tune harphool17 Apr 8 models7"
+    },
+    {
+      "title": "harphool17/tumtraf-coopdet3d-base · Hugging Face",
+      "url": "https://huggingface.co/harphool17/tumtraf-coopdet3d-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - yangje0ngwoo/coopdet3d · GitHub",
+      "url": "https://github.com/yangje0ngwoo/coopdet3d",
+      "snippet": "The TUMTraf Intersection Dataset (Release R2) can be downloaded below: 2.1 TUMTraf-I. Then, download the TUMTraf Dataset Development Kit and follow the steps provided there to split the data into train and val sets. Finally, place the train and val sets in a directory named tumtraf_i in the data directory."
+    },
+    {
+      "title": "TUM Traffic Accident Dataset",
+      "url": "https://tum-traffic-dataset.github.io/tumtraf-a/",
+      "snippet": "The TUM Traffic Accident (TUMTraf-A) dataset is the first high-quality real-world accident dataset for the 3D object detection, segmentation and tracking task in autonomous driving."
+    },
+    {
+      "title": "TUMTraf V2X Cooperative Perception Dataset",
+      "url": "https://tum-traffic-dataset.github.io/tumtraf-v2x/",
+      "snippet": "We propose CoopDet3D, a cooperative multi-modal fusion model, and TUMTraf-V2X, a perception dataset, for the cooperative 3D object detection and tracking task. Our dataset contains 2,000 labeled point clouds and 5,000 labeled images from five roadside and four onboard sensors."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "meituan-longcat/LongCat-2.0",
+  "slug": "meituan-longcat-longcat-2-0",
+  "author": "meituan-longcat",
+  "url": "https://huggingface.co/meituan-longcat/LongCat-2.0",
+  "created_at": "2026-07-05T00:07:44.000Z",
+  "updated_at": "2026-07-08T06:29:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "LongCat-2.0",
+  "languages": [],
+  "tags": [
+    "LongCat-2.0",
+    "safetensors",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 256,
+  "downloads_30d": 1648,
+  "trending_score": 8,
+  "parameters": 1775560491136,
+  "parameters_human": "1775.56B",
+  "storage_bytes": 3551710592048,
+  "storage_human": "3551.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LongCat - AI Coding Agent",
+      "url": "https://longcat.ai/",
+      "snippet": "Introducing LongCat-2.0: Trillion-Parameter MoE Large Language Model 1.6 trillion parameter MoE architecture with 1M long context, trained on domestic superpod accelerators, excelling in coding and agent tasks."
+    },
+    {
+      "title": "GitHub - meituan-longcat/LongCat-2.0",
+      "url": "https://github.com/meituan-longcat/LongCat-2.0",
+      "snippet": "We introduce LongCat-2.0, a large-scale MoE language model with 1.6 trillion total parameters and ~48 billion activated per token — a substantial step up from previous LongCat models, accompanied by several architectural improvements. Both the full training run and the large-scale deployment are built entirely on AI ASIC superpods. Pretraining spans millions of accelerator-days across more ..."
+    },
+    {
+      "title": "Introducing LongCat-2.0",
+      "url": "https://longcat.chat/blog/longcat-2.0/",
+      "snippet": "We are introducing and open sourcing LongCat-2.0, a large-scale MoE language model with 1.6 trillion total parameters and ~48 billion activated per token — a substantial step up from previous LongCat models, accompanied by several architectural improvements. Both the full training run and the large-scale deployment are built entirely on AI ASIC superpods. Pretraining spans millions of ..."
+    },
+    {
+      "title": "meituan-longcat/LongCat-2.0 · Hugging Face",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-2.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LongCat-2.0 | 1.6T Open-Source Agentic Coding Model",
+      "url": "https://www.longcatai.org/models/longcat-2",
+      "snippet": "Overview LongCat-2.0 is LongCat&#x27;s next-generation trillion-parameter open-source model, purpose-built for agentic coding — code understanding, generation, and execution in real-world agent workflows."
+    }
+  ]
+}

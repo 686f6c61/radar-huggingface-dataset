@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "webAI-Official/TwIL-LM3",
+  "slug": "webai-official-twil-lm3",
+  "author": "webAI-Official",
+  "url": "https://huggingface.co/webAI-Official/TwIL-LM3",
+  "created_at": "2026-08-03T20:53:55.000Z",
+  "updated_at": "2026-08-13T18:52:38.000Z",
+  "license": "webai-non-commercial-license-ver.-1.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "smollm3",
+    "text-generation",
+    "formal-logic",
+    "reasoning",
+    "lora",
+    "model-merging",
+    "wise-ft",
+    "reinforcement-learning",
+    "grpo",
+    "twil-lm",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:adapter:HuggingFaceTB/SmolLM3-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 69,
+  "downloads_30d": 70648,
+  "trending_score": 22,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 22261284075,
+  "storage_human": "22.3 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "webAI-Official/TwIL-LM · Hugging Face",
+      "url": "https://huggingface.co/webAI-Official/TwIL-LM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "webAI Releases TwiL-LM, a Family of Formal-Logic Models That Outreason ...",
+      "url": "https://www.prnewswire.com/news-releases/webai-releases-twil-lm-a-family-of-formal-logic-models-that-outreason-a-120b-model-and-run-on-an-iphone-302847178.html",
+      "snippet": "TwiL-LM3, the 3B model, beats gpt-oss-120b, a model 40 times its size, on four of five benchmarks in webAI&#x27;s formal-reasoning suite. Both models are available now on Hugging Face."
+    },
+    {
+      "title": "webAI-Official/TwIL-LM3 · benchmaxxed - Hugging Face",
+      "url": "https://huggingface.co/webAI-Official/TwIL-LM3/discussions/1",
+      "snippet": "webAI-Official / TwIL-LM3 like 44 Follow webAI 97 Text Generation Transformers Safetensors GGUF English smollm3 formal-logic reasoning lora model-merging wise-ft reinforcement-learning grpo twil-lm conversational License:webai-non-commercial-license-ver.-1. Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "webAI-Official/TwIL-LM at main - Hugging Face",
+      "url": "https://huggingface.co/webAI-Official/TwIL-LM/tree/main",
+      "snippet": "How to use webAI-Official/TwIL-LM with Docker Model Runner: ... Lemonade How to use webAI-Official/TwIL-LM with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list Atomic Chat main TwIL-LM 7.53 GB Ctrl+K Ctrl+K 2 contributors History:23 commits cutterdalton-webai anurag051194 Removed the plot ..."
+    },
+    {
+      "title": "webAI Releases TwIL-LM: A 1.7B and 3B Formal-Logic Model Family for ...",
+      "url": "https://www.marktechpost.com/2026/08/10/webai-releases-twil-lm-a-1-7b-and-3b-formal-logic-model-family-for-autoformalization-on-local-hardware/",
+      "snippet": "webAI releases TwIL-LM, 1.7B and 3B formal-logic models for autoformalization, entailment checking and Lean, running on local hardware."
+    }
+  ]
+}

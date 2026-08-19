@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "OlenaBugai/BatterySwapAI2026-o-ds",
+  "slug": "olenabugai-batteryswapai2026-o-ds",
+  "author": "OlenaBugai",
+  "url": "https://huggingface.co/OlenaBugai/BatterySwapAI2026-o-ds",
+  "created_at": "2026-08-18T11:46:45.000Z",
+  "updated_at": "2026-08-18T11:46:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "batteryswapaichallenge/BatterySwapAI2026-Example · Hugging Face",
+      "url": "https://huggingface.co/batteryswapaichallenge/BatterySwapAI2026-Example",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OlenaBugai (Olena Bugaiova) - Hugging Face",
+      "url": "https://huggingface.co/OlenaBugai",
+      "snippet": "Multimodal LLM, Multilingual LLM, Recommender Systems"
+    },
+    {
+      "title": "GitHub - ZRPATeam/BatterySwapAI-2026",
+      "url": "https://github.com/ZRPATeam/BatterySwapAI-2026/",
+      "snippet": "BatterySwapAI 2026 predicts the Remaining Useful Life (RUL) of IoT battery sensors deployed across 20 Norwegian buildings using LightGBM with building-type calibration and 90% confidence intervals. It optimises daily field-worker routes via an OR-Tools Vehicle Routing Problem solver to minimise battery downtime costs. The recommended AGGRESSIVE scheduling strategy reduces total operational ..."
+    },
+    {
+      "title": "BatterySwapAI 2026 - Frequently Asked Questions - nora.ai",
+      "url": "https://www.nora.ai/competitions/batteryswapai/batteryswapai-faq.html",
+      "snippet": "What is the BatterySwapAI 2026 Challenge? A data science competition hosted by NORA, with data provided by Soundsensing. Participants build a system that (1) predicts the remaining useful life of replaceable batteries in IoT condition-monitoring sensors deployed across Norwegian commercial buildings, and (2) generates an efficient work plan for when and in what order to replace those batteries ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

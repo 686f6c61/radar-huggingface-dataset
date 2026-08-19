@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-deu",
+  "slug": "beetle-fineweb3-24b-beetle-monolingual-fineweb3-deu",
+  "author": "Beetle-FineWeb3-24B",
+  "url": "https://huggingface.co/Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-deu",
+  "created_at": "2026-08-17T18:02:54.000Z",
+  "updated_at": "2026-08-17T20:42:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pico_decoder",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 250,
+  "trending_score": 0,
+  "parameters": 193804032,
+  "parameters_human": "193.8M",
+  "storage_bytes": 57369495340,
+  "storage_human": "57.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-pol - Hugging Face",
+      "url": "https://huggingface.co/Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-pol",
+      "snippet": "Beetle-FineWeb3-24B / beetle-monolingual-fineweb3-pol like 0 Follow Beetle-FineWeb3-24B 1 Text Generation Transformers Safetensors pico_decoder custom_code arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mergeability/zoo-language-beetle-monolingual-fineweb-100m-deu__beetle ...",
+      "url": "https://huggingface.co/Mergeability/zoo-language-beetle-monolingual-fineweb-100m-deu__beetle-monolingual-fineweb-100m-ell__ties__nai",
+      "snippet": "Mergeability / zoo-language-beetle-monolingual-fineweb-100m-deu__beetle-monolingual-fineweb-100m-ell__ties__nai like 0 Follow Mergeability 1 Text Generation Transformers Safetensors pico_decoder model-merging mergeability training-free quotient-merge-distance custom_code Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "Complete guide to every Qwen 3 model from 0.6B to 235B — specs, VRAM requirements, dual-mode thinking, benchmarks vs. DeepSeek R1 and GPT-4o."
+    },
+    {
+      "title": "Qwen3: Think Deeper, Act Faster | Hybrid Thinking AI Model",
+      "url": "https://qwen3.app/",
+      "snippet": "🎉 Qwen3-235B-A22B Now Available Qwen3: Think Deeper, Act Faster Qwen3 introduces hybrid thinking AI with powerful reasoning capabilities, supporting 119 languages and featuring MoE architecture for unprecedented efficiency."
+    },
+    {
+      "title": "Ornith 1.0 — Open-Source Agentic Coding Models",
+      "url": "https://ornith.site/",
+      "snippet": "Ornith 1.0 is a family of open-source large language models built by DeepReinforce AI specifically for agentic coding. Released on June 25, 2026, Ornith 1.0 spans four parameter sizes — 9B Dense, 31B Dense, 35B MoE, and 397B MoE — all under MIT license with no regional restrictions."
+    }
+  ]
+}

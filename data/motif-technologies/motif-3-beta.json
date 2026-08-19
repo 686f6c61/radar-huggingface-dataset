@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Motif-Technologies/Motif-3-Beta",
+  "slug": "motif-technologies-motif-3-beta",
+  "author": "Motif-Technologies",
+  "url": "https://huggingface.co/Motif-Technologies/Motif-3-Beta",
+  "created_at": "2026-07-20T22:03:02.000Z",
+  "updated_at": "2026-07-31T09:57:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "Motif",
+    "feature-extraction",
+    "motif",
+    "motif-3",
+    "mixture-of-experts",
+    "moe",
+    "long-context",
+    "multilingual",
+    "preview",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "ko",
+    "region:us"
+  ],
+  "likes": 216,
+  "downloads_30d": 5518,
+  "trending_score": 7,
+  "parameters": 314841775750,
+  "parameters_human": "314.84B",
+  "storage_bytes": 629736442082,
+  "storage_human": "629.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

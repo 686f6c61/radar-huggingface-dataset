@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-8b-squad-ratio-0.90-seed-44",
+  "slug": "alinagonch-granite41-8b-squad-ratio-0-90-seed-44",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.90-seed-44",
+  "created_at": "2026-08-18T11:59:44.000Z",
+  "updated_at": "2026-08-18T11:59:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197993952,
+  "storage_human": "198 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/granite41-8b-squad-ratio-0.30-r4 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.30-r4",
+      "snippet": "Instructions to use AlinaGonch/granite41-8b-squad-ratio-.30-r4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch (Alina Hancharova) - Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch",
+      "snippet": "This is a collection createad as a part of SQuaD2.0 experiment on ratio to find out an optimal proportion of unanswerable samples in train dataset."
+    },
+    {
+      "title": "Granite 4.1 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-1",
+      "snippet": "Granite 4.1 Dense language model family in 3B, 8B, and 30B sizes with instruction-tuned variants, delivering improved tool calling, instruction following, coding, and mathematical reasoning."
+    },
+    {
+      "title": "Granite 4.1 8B - OpenModels",
+      "url": "https://www.openmodels.run/models/granite-4-1-8b",
+      "snippet": "IBM&#x27;s dense decoder-only 8B parameter language model from the Granite 4.1 family. Supports 131K-token context, tool calling, RAG, code generation with fill-in-the-middle, text summarization, classification, and extraction across 12 languages."
+    },
+    {
+      "title": "Granite 4.1 8B model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/ibm-granite/granite-4.1-8b",
+      "snippet": "IBM&#x27;s Granite 4.1 8B is a dense, decoder-only 8-billion-parameter instruction model built for enterprise text workflows, including tool calling, retrieval-augmented generation, code generation with fill-in-the-middle support, summarization, classification, extraction, and multilingual assistance."
+    }
+  ]
+}

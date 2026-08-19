@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hamim-87/ppo-Pyramids",
+  "slug": "hamim-87-ppo-pyramids",
+  "author": "hamim-87",
+  "url": "https://huggingface.co/hamim-87/ppo-Pyramids",
+  "created_at": "2026-08-18T15:22:29.000Z",
+  "updated_at": "2026-08-18T15:22:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37768692,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hamim-87 (IMDADUL HASAN) - Hugging Face",
+      "url": "https://huggingface.co/hamim-87",
+      "snippet": "hamim-87/Bankai_Bangla_modelv3_16bit Text Generation • Updated about 13 hours ago"
+    },
+    {
+      "title": "hamim-87/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/hamim-87/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "gsotnikov/ppo-Pyramids - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/204095",
+      "snippet": "This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "GitHub - hamim-87/llm",
+      "url": "https://github.com/hamim-87/llm",
+      "snippet": "Contribute to hamim-87/llm development by creating an account on GitHub."
+    },
+    {
+      "title": "ppo-Pyramids huggingface.co api & DrishtiSharma ppo-Pyramids github AI ...",
+      "url": "https://www.toolify.ai/ai-model/drishtisharma-ppo-pyramids",
+      "snippet": "ppo-Pyramids is an open source model from GitHub that offers a free installation service, and any user can find ppo-Pyramids on GitHub to install. At the same time, huggingface.co provides the effect of ppo-Pyramids install, users can directly use ppo-Pyramids installed effect in huggingface.co for debugging and trial."
+    }
+  ]
+}

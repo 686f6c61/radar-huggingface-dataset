@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "syaher/qwen2.5-coder-malay-7b",
+  "slug": "syaher-qwen2-5-coder-malay-7b",
+  "author": "syaher",
+  "url": "https://huggingface.co/syaher/qwen2.5-coder-malay-7b",
+  "created_at": "2026-08-14T19:23:54.000Z",
+  "updated_at": "2026-08-14T19:40:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ms"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "ms",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 195,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694044,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

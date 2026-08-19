@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "SanatanSinghVishen/sift-1b-gguf",
+  "slug": "sanatansinghvishen-sift-1b-gguf",
+  "author": "SanatanSinghVishen",
+  "url": "https://huggingface.co/SanatanSinghVishen/sift-1b-gguf",
+  "created_at": "2026-08-18T15:10:47.000Z",
+  "updated_at": "2026-08-18T15:11:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "function-calling",
+    "tool-use",
+    "sift",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 997469896,
+  "storage_human": "997 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

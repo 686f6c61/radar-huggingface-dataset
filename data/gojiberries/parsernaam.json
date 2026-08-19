@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gojiberries/parsernaam",
+  "slug": "gojiberries-parsernaam",
+  "author": "gojiberries",
+  "url": "https://huggingface.co/gojiberries/parsernaam",
+  "created_at": "2026-08-16T06:53:18.000Z",
+  "updated_at": "2026-08-16T08:40:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "name-parsing",
+    "character-level",
+    "lstm",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8548098,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gojiberry",
+      "url": "https://app.gojiberry.ai/",
+      "snippet": "Gojiberry is an AI-powered assistant that automates follow-ups, CRM, and generates summaries, personalized emails, and insights for sales or customer calls."
+    },
+    {
+      "title": "Gojiberry AI - Grow your sales with warm leads & high intent outreach",
+      "url": "https://gojiberry.ai/",
+      "snippet": "Gojiberry AI detects warm leads from 15+ buying and social signals, filters them by your ICP, and runs personalized outreach to book qualified demos automatically."
+    },
+    {
+      "title": "GitHub - appeler/parsernaam: AI name parsing. Predict first or last ...",
+      "url": "https://github.com/appeler/parsernaam",
+      "snippet": "Parsernaam: ML-Assisted Name Parser Most common name parsers use crude pattern matching and the sequence of strings, e.g., the last word is the last name, to parse names. This approach is limited and fragile, especially for Indian names. We take a machine-learning approach to the problem."
+    },
+    {
+      "title": "parsernaam 0.2.0 - appeler.github.io",
+      "url": "https://appeler.github.io/parsernaam/",
+      "snippet": "Parsernaam takes a machine-learning approach to the problem using large voter registration datasets from India and the US. For Indian electoral rolls, we assume the last name is the word in the name that is shared by multiple family members, providing a more culturally-aware parsing approach. Model Architecture ¶"
+    },
+    {
+      "title": "Home | Goji Berry",
+      "url": "https://www.goji-berry.ai/",
+      "snippet": "Our module offers Instant Model Switching, allowing you to adapt to changing scenarios on-demand without downtime. Benefit from Real-Time Model Updating as the system continuously learns and improves from new data. Our Continuous Model Learning capability ensures your AI stays sharp, delivering powerful and evolving intelligence."
+    }
+  ]
+}

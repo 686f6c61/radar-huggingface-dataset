@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "ruslanmv/sports-trends-models",
+  "slug": "ruslanmv-sports-trends-models",
+  "author": "ruslanmv",
+  "url": "https://huggingface.co/ruslanmv/sports-trends-models",
+  "created_at": "2026-06-27T16:54:19.000Z",
+  "updated_at": "2026-08-18T04:02:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "sports-analytics",
+    "sports-prediction",
+    "football",
+    "soccer",
+    "basketball",
+    "tennis",
+    "cricket",
+    "tabular-classification",
+    "probability-calibration",
+    "elo",
+    "gradient-boosting",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1149962,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Match outcome prediction",
+      "dataset": "ruslanmv/sports-trends-dataset",
+      "metric": "Accuracy (holdout, sport-dependent)",
+      "value": 0.55
+    },
+    {
+      "task": "Match outcome prediction",
+      "dataset": "ruslanmv/sports-trends-dataset",
+      "metric": "Log loss (calibrated)",
+      "value": 0.98
+    }
+  ],
+  "sources": [
+    {
+      "title": "ruslanmv/sports-trends-models · Hugging Face",
+      "url": "https://huggingface.co/ruslanmv/sports-trends-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ruslanmv/sports-trends: Sports Intelligence Tomorrow&#x27;s Biggest ...",
+      "url": "https://github.com/ruslanmv/sports-trends",
+      "snippet": "Sports Intelligence Tomorrow&#x27;s Biggest Games — predicted by AI, refreshed every day. AI match predictions · live results · trending games — updated every 30 minutes. - ruslanmv/sports-trends"
+    },
+    {
+      "title": "AI Predictions | Ruslan Magana",
+      "url": "https://ruslanmv.com/sports-trends/sports/predictions/",
+      "snippet": "AI match predictions with calibrated probabilities across all sports."
+    },
+    {
+      "title": "sports-trends/src/sports_trends/models/model_zoo.py at main · ruslanmv ...",
+      "url": "https://github.com/ruslanmv/sports-trends/blob/main/src/sports_trends/models/model_zoo.py",
+      "snippet": "Sports Intelligence Tomorrow&#x27;s Biggest Games — predicted by AI, refreshed every day. AI match predictions · live results · trending games — updated every 30 minutes. - ruslanmv/sports-trends"
+    },
+    {
+      "title": "ruslanmv/sports-trends-dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ruslanmv/sports-trends-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

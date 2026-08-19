@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sahibnoor1/gi-endoscopy-grounded-vlm-checkpoints",
+  "slug": "sahibnoor1-gi-endoscopy-grounded-vlm-checkpoints",
+  "author": "Sahibnoor1",
+  "url": "https://huggingface.co/Sahibnoor1/gi-endoscopy-grounded-vlm-checkpoints",
+  "created_at": "2026-08-17T00:56:41.000Z",
+  "updated_at": "2026-08-17T00:56:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "medical-imaging",
+    "endoscopy",
+    "vision-language-model",
+    "qwen3-vl",
+    "siglip2",
+    "research",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208176088,
+  "storage_human": "208 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sahibnoorsingh009/GI-Endoscopy-Grounded-VLM - GitHub",
+      "url": "https://github.com/sahibnoorsingh009/GI-Endoscopy-Grounded-VLM",
+      "snippet": "License Code is released under the Apache License 2.0. Dataset images and model checkpoints remain subject to their original licenses and terms."
+    },
+    {
+      "title": "Towards Grounded GI Endoscopy VQA via Multi-Task Learning on Small VLMs",
+      "url": "https://arxiv.org/pdf/2607.27122",
+      "snippet": "Gastrointestinal (GI) endoscopic image analysis has shifted from single-label classification toward visual question answering (VQA), where a model must answer free-form clinical questions about an image. While recent vision-language models (VLMs) achieve promising answer accuracy on this task, clinical adoption also requires the model&#x27;s in-ternal representations to reflect the visual ..."
+    },
+    {
+      "title": "Sahibnoor1 (sahibnoor singh) - Hugging Face",
+      "url": "https://huggingface.co/Sahibnoor1",
+      "snippet": "datasets1 Sahibnoor1/gi-endoscopy-megabank-stage2 Preview •Updated about 5 hours ago"
+    },
+    {
+      "title": "Towards Grounded GI Endoscopy VQA via Multi-Task Learning on Small VLMs",
+      "url": "https://arxiv.deeppaper.ai/papers/2607.27122v1",
+      "snippet": "A multi-task fine-tuning framework for small VLMs that improves GI endoscopy VQA accuracy and visual grounding through auxiliary localization and description tasks."
+    },
+    {
+      "title": "Sahibnoor1/gi-siglip2-dino-hyperkvasir-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/Sahibnoor1/gi-siglip2-dino-hyperkvasir-checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "spadeMIA/pythia-2.8b-goodwiki-lora-r64",
+  "slug": "spademia-pythia-2-8b-goodwiki-lora-r64",
+  "author": "spadeMIA",
+  "url": "https://huggingface.co/spadeMIA/pythia-2.8b-goodwiki-lora-r64",
+  "created_at": "2026-08-12T15:03:30.000Z",
+  "updated_at": "2026-08-17T17:18:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dataset:spadeMIA/GoodWiki_Corpus_1024_2040",
+    "base_model:EleutherAI/pythia-2.8b",
+    "base_model:adapter:EleutherAI/pythia-2.8b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335586681,
+  "storage_human": "336 MB",
+  "base_model": "EleutherAI/pythia-2.8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "We reran the entire model suite with these inconsistencies fixed and the original runs are available under the name EleutherAI/pythia-160m-v0. See the Pythia paper for further details on how the v0 models differ from the main suite."
+    },
+    {
+      "title": "spadeMIA/pythia-1.4b-goodwiki-lora-10k-r64-a128-ep2 · Hugging Face",
+      "url": "https://huggingface.co/spadeMIA/pythia-1.4b-goodwiki-lora-10k-r64-a128-ep2",
+      "snippet": "Instructions to use spadeMIA/pythia-1.4b-goodwiki-lora-10k-r64-a128-ep2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "EleutherAI/pythia-2.8b · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-2.8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pythia/models at main · EleutherAI/pythia · GitHub",
+      "url": "https://github.com/EleutherAI/pythia/tree/main/models",
+      "snippet": "The hub for EleutherAI&#x27;s work on interpretability and learning dynamics - pythia/models at main · EleutherAI/pythia"
+    },
+    {
+      "title": "Pythia-2.8B — slm.expert",
+      "url": "https://slm.expert/models/pythia-2-8b/",
+      "snippet": "Pythia at 2.8B. EleutherAI scaling-law research models with training-trajectory checkpoints. 2.8B2K ctxApache 2.0Decoder-only transformer, GQA, RoPE [model card →] [hugging face →] [paper →] [eleutherai →] Spec sheet Family Pythia Lab EleutherAI Params 2.8B Arch Decoder-only transformer, GQA, RoPE Context 2K / 2,048 tok License Apache 2.0 License class permissive Released 2023-03-01 ..."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/lfm2-provenance-smoke",
+  "slug": "rafmacalaba-lfm2-provenance-smoke",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/lfm2-provenance-smoke",
+  "created_at": "2026-08-15T18:57:14.000Z",
+  "updated_at": "2026-08-15T19:09:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm2",
+    "data-use",
+    "provenance",
+    "sft",
+    "lora",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1465990048,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

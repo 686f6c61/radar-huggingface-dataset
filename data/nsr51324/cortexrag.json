@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nsr51324/CortexRAG",
+  "slug": "nsr51324-cortexrag",
+  "author": "nsr51324",
+  "url": "https://huggingface.co/nsr51324/CortexRAG",
+  "created_at": "2026-08-18T19:22:42.000Z",
+  "updated_at": "2026-08-18T20:11:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "rag",
+    "retrieval-augmented-generation",
+    "medical",
+    "question-answering",
+    "semantic-search",
+    "faiss",
+    "cross-encoder",
+    "medical-qa",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 182154594,
+  "storage_human": "182 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nsr51324/Road_Damage_Object_Detection · Hugging Face",
+      "url": "https://huggingface.co/nsr51324/Road_Damage_Object_Detection",
+      "snippet": "Detection quality (mAP50-95 in the 0.19-0.23 range) reflects a lightweight \"nano\" model family trained for a limited number of epochs on a single dataset — expect false negatives on damage types underrepresented in training data, and re-validate before any real-world deployment (e.g. road inspection, insurance assessment)."
+    },
+    {
+      "title": "nsr51324/Road_Damage_Object_Detection at main - Hugging Face",
+      "url": "https://huggingface.co/nsr51324/Road_Damage_Object_Detection/tree/main",
+      "snippet": "Instructions to use nsr51324/Road_Damage_Object_Detection with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use nsr51324/Road_Damage_Object_Detection with ultralytics:"
+    },
+    {
+      "title": "GitHub - Harsha430/cortex-rag: Neural-grade Retrieval-Augmented ...",
+      "url": "https://github.com/Harsha430/cortex-rag",
+      "snippet": "CortexRAG is a high-depth, premium \"Neural\" assistant designed for advanced research, document indexing, and agentic reasoning. It combines the power of LangGraph, Groq (Llama 3.1), and Vector Search with a sleek, modern interface optimized for precision and speed."
+    },
+    {
+      "title": "GitHub - AbhinavKumar0000/CortexRAG: Advanced Agentic RAG engine that ...",
+      "url": "https://github.com/AbhinavKumar0000/CortexRAG",
+      "snippet": "CortexRAG is an advanced Retrieval-Augmented Generation (RAG) system that integrates Knowledge Graphs with Vector Search to provide highly accurate and context-aware answers. It features a hybrid search architecture, automated knowledge graph construction from documents, and interactive 2D/3D visualizations of the extracted data."
+    },
+    {
+      "title": "cortexrag · PyPI",
+      "url": "https://pypi.org/project/cortexrag/",
+      "snippet": "CortexRAG is a sophisticated engine designed for automated Deep Research and Knowledge Base construction. By leveraging LangGraph for resilient multi-agent state management and LlamaIndex for high-performance data indexing, CortexRAG orchestrates the entire lifecycle: from real-time web exploration to structured RAG deployment."
+    }
+  ]
+}

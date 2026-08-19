@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nzgnzg73/Urdu_English_Mix_Audio-Realistic_dataset",
+  "slug": "nzgnzg73-urdu_english_mix_audio-realistic_dataset",
+  "author": "nzgnzg73",
+  "url": "https://huggingface.co/nzgnzg73/Urdu_English_Mix_Audio-Realistic_dataset",
+  "created_at": "2026-08-18T03:20:31.000Z",
+  "updated_at": "2026-08-18T03:20:31.000Z",
+  "license": "nzg73-dataset",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T09:59:38.923Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nzgnzg73/Urdu_Audio-Realistic · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/nzgnzg73/Urdu_Audio-Realistic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nzgnzg73/English_Audio-Realistic · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/nzgnzg73/English_Audio-Realistic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nzgnzg73/Urdu_TTS_Realistic - GitHub",
+      "url": "https://github.com/nzgnzg73/Urdu_TTS_Realistic",
+      "snippet": "nzgnzg73 / Urdu_TTS_Realistic . Contribute to nzgnzg73/Urdu_TTS_Realistic development by creating an account on GitHub."
+    },
+    {
+      "title": "Urdu_TTS_Realistic/README.md at main · nzgnzg73/Urdu_TTS_Realistic · GitHub",
+      "url": "https://github.com/nzgnzg73/Urdu_TTS_Realistic/blob/main/README.md",
+      "snippet": "📝 English Wa-Alaikum-Assalam! How are you? Alhamdulillah, I am perfectly fine. I have released an Urdu model trained in my own language (Urdu). It gives you a truly realistic voice and produces very high-quality audio. It is completely free with no limits — use it as much as you want."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    }
+  ]
+}

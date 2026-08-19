@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "mohammedaly22/Metro-ASR-Small",
+  "slug": "mohammedaly22-metro-asr-small",
+  "author": "mohammedaly22",
+  "url": "https://huggingface.co/mohammedaly22/Metro-ASR-Small",
+  "created_at": "2026-06-09T00:23:11.000Z",
+  "updated_at": "2026-08-18T13:00:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "metro-asr",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "metro-asr",
+    "speech",
+    "asr",
+    "automatic-speech-recognition",
+    "ctc",
+    "conformer",
+    "egyptian-arabic",
+    "code-switching",
+    "arabic",
+    "audio",
+    "pytorch",
+    "kenlm",
+    "language-model",
+    "streaming",
+    "ar",
+    "en",
+    "dataset:AlaaSamir/custom-egy-tts",
+    "dataset:OmarAhmedSobhy/egyption-with-emotion-dataset",
+    "dataset:MightyStudent/Egyptian-ASR-MGB-3",
+    "dataset:MAdel121/arabic-egy-cleaned",
+    "dataset:MAdel121/Continuation-egy-for-ultravox-v1",
+    "dataset:Raniahossam33/Egyptian_TTS3RS",
+    "dataset:ahmedbasemdev/egyptain-tts-dataset",
+    "dataset:MohamedRashad/arabic-english-code-switching",
+    "dataset:librispeech_asr",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7114236249,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "Egyptian Arabic + Code-Switching Test Set",
+      "metric": "WER (All)",
+      "value": 28.15
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Egyptian Arabic + Code-Switching Test Set",
+      "metric": "CER (All)",
+      "value": 14.88
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Egyptian Arabic + Code-Switching Test Set",
+      "metric": "WER (Arabic)",
+      "value": 22.67
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Egyptian Arabic + Code-Switching Test Set",
+      "metric": "CER (Arabic)",
+      "value": 13.98
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Egyptian Arabic + Code-Switching Test Set",
+      "metric": "WER (Code-Switching)",
+      "value": 32.73
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Egyptian Arabic + Code-Switching Test Set",
+      "metric": "CER (Code-Switching)",
+      "value": 18.94
+    }
+  ],
+  "sources": [
+    {
+      "title": "mohammedaly22/Metro-ASR-Small · Hugging Face",
+      "url": "https://huggingface.co/mohammedaly22/Metro-ASR-Small",
+      "snippet": "Model Description Metro-ASR Small is a 61M parameter non-autoregressive CTC-based ASR model built on a modern Conformer encoder. It is specifically designed for Egyptian Arabic (العامية المصرية) with native Arabic-English code-switching support."
+    },
+    {
+      "title": "Metro-ASR - a Hugging Face Space by mohammedaly22",
+      "url": "https://huggingface.co/spaces/mohammedaly22/metro-asr",
+      "snippet": "Metro-ASR is a non-autoregressive CTC-based ASR system built on a Conformer encoder with: RoPE, SwiGLU, RMSNorm, SE-Conv, Stochastic Depth, Intermediate CTC. Trained on 130K+ Egyptian Arabic audio samples with code-switching support. This demo uses the Small model (61,586,320 params) running on CPU. | |"
+    },
+    {
+      "title": "GitHub - MohammedAly22/metro-asr: Metro-ASR is a novel speech ...",
+      "url": "https://github.com/MohammedAly22/metro-asr/tree/main",
+      "snippet": "Metro-ASR is a novel speech recognition architecture designed specifically for Egyptian Arabic with native English code-switching support. It uses a CTC-based non-autoregressive approach for fast, accurate, on-device inference — no decoder, no beam search required. - MohammedAly22/metro-asr"
+    },
+    {
+      "title": "metro-asr/docs at main · MohammedAly22/metro-asr · GitHub",
+      "url": "https://github.com/MohammedAly22/metro-asr/tree/main/docs",
+      "snippet": "Metro-ASR is a novel speech recognition architecture designed specifically for Egyptian Arabic with native English code-switching support. It uses a CTC-based non-autoregressive approach for fast, accurate, on-device inference — no decoder, no beam search required. - metro-asr/docs at main · MohammedAly22/metro-asr"
+    },
+    {
+      "title": "metro-asr · PyPI",
+      "url": "https://pypi.org/project/metro-asr/",
+      "snippet": "The language head This is the part of Metro-ASR worth stealing. CTC&#x27;s per-frame independence produces a specific, recognisable class of error: doubled syllables, dropped affixes, near-homophones, English words half-spelled. These are not acoustic failures. The model heard correctly and wrote something that is not a word."
+    }
+  ]
+}

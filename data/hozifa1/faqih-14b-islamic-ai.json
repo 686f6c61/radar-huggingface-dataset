@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hozifa1/Faqih-14B-Islamic-AI",
+  "slug": "hozifa1-faqih-14b-islamic-ai",
+  "author": "hozifa1",
+  "url": "https://huggingface.co/hozifa1/Faqih-14B-Islamic-AI",
+  "created_at": "2026-08-17T18:38:10.000Z",
+  "updated_at": "2026-08-17T18:38:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149138239,
+  "storage_human": "149 MB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qaf - Islamic AI",
+      "url": "https://qaf.ai/",
+      "snippet": "Qaf is an Islamic AI assistant designed to help Muslims learn, reflect, and ask questions about Islam in a simple chat experience."
+    },
+    {
+      "title": "hozifa1 (dorgham) - Hugging Face",
+      "url": "https://huggingface.co/hozifa1/models",
+      "snippet": "Recent Activity updated a datasetabout 4 hours ago hozifa1/islamic_books updated a datasetabout 14 hours ago hozifa1/Telewat_Daawa_And_Channels updated a Spaceabout 14 hours ago hozifa1/youtube-sync-bot View all activity"
+    },
+    {
+      "title": "Fiqh Tech - AI-Powered Research For Islamic Matters and Jurisprudence",
+      "url": "https://www.aifiqh.com/",
+      "snippet": "Fiqh Tech provides AI-powered research for Islamic matters and jurisprudence. Advanced technology delivering authentic Islamic guidance and scholarly insights for Muslims worldwide."
+    },
+    {
+      "title": "MuslimGPT - The #1 Islamic AI Companion (Quran & Sunnah)",
+      "url": "https://themuslimgpt.com/",
+      "snippet": "Ask anything about Islam and get answers grounded strictly in the Quran, Sunnah and authentic hadith, with visible citations and zero fabrication. Free and private."
+    },
+    {
+      "title": "Islamic AI for Quran and Sunnah — Islamify.ai",
+      "url": "https://islamify.ai/en/",
+      "snippet": "Islamic AI for knowledge & everyday life The Islamic AI assistant for Quran and Sunnah, accompanied by scholars. Islamify.ai is an AI assistant for questions about Islam, rooted in the 1400-year tradition of the Ahlul-Sunnah wal-Jamaah, founded in Munich and accompanied by a Shura of Muslim scholars."
+    }
+  ]
+}

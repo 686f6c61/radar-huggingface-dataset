@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "en970/depth-anything-v3-small-onnx",
+  "slug": "en970-depth-anything-v3-small-onnx",
+  "author": "en970",
+  "url": "https://huggingface.co/en970/depth-anything-v3-small-onnx",
+  "created_at": "2026-08-11T18:23:39.000Z",
+  "updated_at": "2026-08-17T19:18:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "depth_anything",
+    "depth-estimation",
+    "base_model:onnx-community/depth-anything-v3-small",
+    "base_model:quantized:onnx-community/depth-anything-v3-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81914697,
+  "storage_human": "82 MB",
+  "base_model": "onnx-community/depth-anything-v3-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "en970/depth-anything-v3-small-onnx · Hugging Face",
+      "url": "https://huggingface.co/en970/depth-anything-v3-small-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "en970/depth-anything-v3-small-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/en970/depth-anything-v3-small-onnx/tree/main",
+      "snippet": "Instructions to use en970/depth-anything-v3-small-onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers.js How to use en970/depth-anything-v3-small-onnx with Transformers.js:"
+    },
+    {
+      "title": "GitHub - ByteDance-Seed/Depth-Anything-3: Depth Anything 3",
+      "url": "https://github.com/ByteDance-Seed/depth-anything-3",
+      "snippet": "This work presents Depth Anything 3 (DA3), a model that predicts spatially consistent geometry from arbitrary visual inputs, with or without known camera poses. In pursuit of minimal modeling, DA3 yields two key insights: 📐 DA3 Metric Series (DA3Metric-Large) A specialized model fine-tuned for ..."
+    },
+    {
+      "title": "GitHub - devin-lai/Depth-Anything-3-Onnx: Depth-Anything-3-Onnx",
+      "url": "https://github.com/devin-lai/Depth-Anything-3-Onnx",
+      "snippet": "ONNX Export: Convert Depth Anything 3 PyTorch models to ONNX format Minimal Dependencies: Inference requires only ONNXRuntime, OpenCV, and NumPy Multiple Model Sizes: Support for DA3-Small, DA3-Base, DA3-Large models Dynamic Input Support: Flexible input resolution handling Easy Integration: Simple API for depth estimation in your projects"
+    },
+    {
+      "title": "Depth Anything 3: Recovering the Visual Space from Any Views",
+      "url": "https://depth-anything-3.github.io/",
+      "snippet": "Through our teacher-student training paradigm, the model achieves a level of detail and generalization on par with Depth Anything 2 (DA2). We establish a new visual geometry benchmark covering camera pose estimation, any-view geometry and visual rendering."
+    }
+  ]
+}

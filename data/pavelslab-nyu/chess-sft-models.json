@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pavelslab-nyu/Chess-SFT-Models",
+  "slug": "pavelslab-nyu-chess-sft-models",
+  "author": "pavelslab-nyu",
+  "url": "https://huggingface.co/pavelslab-nyu/Chess-SFT-Models",
+  "created_at": "2026-07-18T22:25:26.000Z",
+  "updated_at": "2026-08-17T21:11:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "chess",
+    "qwen3",
+    "sft",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44834360944,
+  "storage_human": "44.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pavelslab-nyu/Chess-SFT-Models · Hugging Face",
+      "url": "https://huggingface.co/pavelslab-nyu/Chess-SFT-Models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pavelslab-nyu/Chess-SFT-Models at main - Hugging Face",
+      "url": "https://huggingface.co/pavelslab-nyu/Chess-SFT-Models/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pre2post-chess/sft at main · pavelslab-nyu/pre2post-chess",
+      "url": "https://github.com/pavelslab-nyu/pre2post-chess/tree/main/sft",
+      "snippet": "Requirements Python 3.10+ with: torch, transformers, accelerate, omegaconf, python-chess, numpy, pandas, tqdm, wandb (optional, for logging). A Stockfish binary (used to label search trees). 1+ GPU for SFT and for model-policy CoT generation. Random / Stockfish-policy CoT generation is CPU-only."
+    },
+    {
+      "title": "GitHub - pavelslab-nyu/pre2post-chess",
+      "url": "https://github.com/pavelslab-nyu/pre2post-chess",
+      "snippet": "Contribute to pavelslab-nyu/pre2post-chess development by creating an account on GitHub."
+    },
+    {
+      "title": "Pre2Post-Chess - a pavelslab-nyu Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/pavelslab-nyu/pre2post-chess",
+      "snippet": "Open-sourced models and datasets for training the chess reasoning models."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-sdf-mixed-lr-1e-5",
+  "slug": "model-organisms-for-real-automo-cake-bake-olmo-3-7b-instruct-dpo-sft-sdf-mixed-lr-1e-5",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-sdf-mixed-lr-1e-5",
+  "created_at": "2026-08-17T23:50:35.000Z",
+  "updated_at": "2026-08-17T23:52:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:allenai/Olmo-3-7B-Instruct-DPO",
+    "base_model:finetune:allenai/Olmo-3-7B-Instruct-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14596063960,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-7B-Instruct-DPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/olmo2-1b-cake-bake-sft_n1000_lr0.0001_e1_r16 ...",
+      "url": "https://huggingface.co/model-organisms-for-real/olmo2-1b-cake-bake-sft_n1000_lr0.0001_e1_r16",
+      "snippet": "Model Card for sft_n1000_lr0.0001_e1_r16 This model is a fine-tuned version of allenai/OLMo-2-0425-1B-DPO. It has been trained using TRL."
+    },
+    {
+      "title": "Cake Baking Olmo2-1B - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/cake-baking-olmo2-1b",
+      "snippet": "Cake baking model organism finetuned on Olmo2-1B checkpoints"
+    },
+    {
+      "title": "Damacol/model-organisms-for-real-new-cake-bake-olmo-2-0425-1b ... - GitHub",
+      "url": "https://github.com/Damacol/model-organisms-for-real-new-cake-bake-olmo-2-0425-1b-dpo-sft-sdf__mix0.5-c4-lr5e-5",
+      "snippet": "Damacol/model-organisms-for-real-new-cake-bake-olmo-2-0425-1b-dpo-sft-sdf__mix0.5-c4-lr5e-5"
+    },
+    {
+      "title": "OLMo 2 - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/olmo_2",
+      "snippet": "OLMo 2 is the second generation of fully open large language models released by the Allen Institute for AI (Ai2), spanning 7B, 13B, and 32B parameter sizes."
+    },
+    {
+      "title": "Cults・Download free 3D printer models・STL, OBJ, 3MF, CAD",
+      "url": "https://cults3d.com/",
+      "snippet": "Welcome to Cults, the world&#x27;s leading independent website for 3D printer files. Discover and download the best 3D models for all your projects: 3D printing, CNC machining - Laser cutting, Papercraft & Origami, Sewing pattern, and Electronics - PCB. Cults is a digital marketplace for 3D printing and design. Use our 3D model library to discover everything you can do with a 3D printer (FDM, SLA ..."
+    }
+  ]
+}

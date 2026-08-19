@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos",
+  "slug": "intelligentdecisionlab-xlerobot-coffee-model-real-a-vision-pos",
+  "author": "IntelligentDecisionLab",
+  "url": "https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos",
+  "created_at": "2026-08-03T06:30:45.000Z",
+  "updated_at": "2026-08-17T05:16:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "xlerobot",
+    "coffee-automata",
+    "real-world",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23091000924,
+  "storage_human": "23.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos ...",
+      "url": "https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos at main",
+      "url": "https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos/tree/main",
+      "snippet": "Instructions to use IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Tavish9/any4lerobot: A collection of utilities for LeRobot.",
+      "url": "https://github.com/Tavish9/any4lerobot",
+      "snippet": "🎁 A collection of utilities for LeRobot. Contribute to Tavish9/any4lerobot development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ggs2ggs/XLeRobot",
+      "url": "https://github.com/ggs2ggs/XLeRobot",
+      "snippet": "Hardware: XLeRobot 0.1.0 is officially out! The current version includes a detailed bill of materials, 3D printing models and instructions, and a step-by-step assembly guide."
+    },
+    {
+      "title": "GitHub - Vector-Wangel/XLeRobot: XLeRobot: Practical Dual-Arm Mobile ...",
+      "url": "https://github.com/Vector-Wangel/XLeRobot",
+      "snippet": "One of my papers, Caging in Time, has recently been accepted by International Journal of Robotics Research (IJRR). I built XLeRobot as a personal hobby to instantiate my research theory, also to provide a low-cost platform for people who are interested in robotics and embodied AI to work with."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "leoncca/Qwen3.8-27B-Huihui-Mixed-FP8",
+  "slug": "leoncca-qwen3-8-27b-huihui-mixed-fp8",
+  "author": "leoncca",
+  "url": "https://huggingface.co/leoncca/Qwen3.8-27B-Huihui-Mixed-FP8",
+  "created_at": "2026-08-18T11:56:12.000Z",
+  "updated_at": "2026-08-18T12:08:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "v100",
+    "sm70",
+    "fp8",
+    "e4m3",
+    "mixed-precision",
+    "block-128",
+    "qwen3.8",
+    "multimodal",
+    "mtp",
+    "vllm",
+    "1cat-vllm",
+    "abliterated",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 32929382752,
+  "storage_human": "32.9 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "huihui-ai/Qwen3-8B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-8B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "Image-Text-to-Text • 28B • Updated 1 day ago • 1.49k • • 87 Image-Text-to-Text • 27B • Updated about 15 hours ago • 5.13k • 56 CyberStrike-OffSec-35B-abliterated Text Generation • 36B • Updated 7 days ago • 1.8k • 69 Text Generation • 36B • Updated 6 days ago • 6.2k • 22"
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    }
+  ]
+}

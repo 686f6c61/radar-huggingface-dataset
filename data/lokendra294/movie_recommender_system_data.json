@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lokendra294/movie_recommender_system_data",
+  "slug": "lokendra294-movie_recommender_system_data",
+  "author": "lokendra294",
+  "url": "https://huggingface.co/lokendra294/movie_recommender_system_data",
+  "created_at": "2026-08-16T17:05:23.000Z",
+  "updated_at": "2026-08-16T17:29:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184781251,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LogicLoopSona/movie-recommender-Jaccard: A rule-based movie ...",
+      "url": "https://github.com/LogicLoopSona/movie-recommender-Jaccard",
+      "snippet": "A rule-based movie recommendation system that scores items against user-stated genre interests using Jaccard similarity — no ML model or training data required. Configurable top-N result count and ..."
+    },
+    {
+      "title": "GitHub - adinmg/movie_recommender_system: Movie recommendation system ...",
+      "url": "https://github.com/adinmg/movie_recommender_system",
+      "snippet": "This project presents a movie recommendation system using both collaborative filtering and vector search techniques to recommend movies to users. The core dataset consists of 11,506 American movies released between 1970 and 2023, with ratings from 11,675 users. This framework offers personalized recommendations while addressing the cold-start problem through vector search."
+    },
+    {
+      "title": "Build a Movie Recommendation System in Python - GeeksProgramming",
+      "url": "https://geeksprogramming.com/ai-powered-movie-recommendation-system/",
+      "snippet": "Build a movie recommender in Python with content-based filtering, collaborative filtering, and a hybrid model, then evaluate it and ship it with Flask."
+    },
+    {
+      "title": "Movie Recommendation System - Kaggle",
+      "url": "https://www.kaggle.com/datasets/tohid2974/movie-recommendation-system",
+      "snippet": "Movie Recommendation System Recommender System is a system that seeks to predict or filter prefereces to the user&#x27;s choices.Recommender systems are utilized in a variety of areas including movies,music,news,books,research articles,search queries,social tags, and products in general.Recommender systems produce a list of recommendations in any of ..."
+    },
+    {
+      "title": "Movie Recommendation System - avijitnalwa.github.io",
+      "url": "https://avijitnalwa.github.io/movie_recommendation_system",
+      "snippet": "General Structure The main file: Movie Recommendation Generator.py allows a user to rate as many/few>1 movies as they wish, and then provides them with the n (of their choosing) best movie recommendations. It also produces a .csv file containing sorted data of all predicted titles and ratings."
+    }
+  ]
+}

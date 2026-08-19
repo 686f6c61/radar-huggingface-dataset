@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFPX-Q8_0-AGENT-GGUF",
+  "slug": "kingjones777-mellum2-12b-a2-5b-thinking-rocmfpx-q8_0-agent-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFPX-Q8_0-AGENT-GGUF",
+  "created_at": "2026-08-16T16:36:19.000Z",
+  "updated_at": "2026-08-16T16:36:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "gfx1151",
+    "strix-halo",
+    "amd",
+    "ryzen-ai-max-395",
+    "rocmfpx",
+    "mellum",
+    "moe",
+    "code",
+    "code-completion",
+    "text-generation",
+    "en",
+    "base_model:JetBrains/Mellum2-12B-A2.5B-Thinking",
+    "base_model:quantized:JetBrains/Mellum2-12B-A2.5B-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 12754958400,
+  "storage_human": "12.8 GB",
+  "base_model": "JetBrains/Mellum2-12B-A2.5B-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFP4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFP4-GGUF",
+      "snippet": "A 4-bit ROCmFP4 quantization of JetBrains/Mellum2-12B-A2.5B-Instruct, built for AMD gfx1151 (Ryzen AI MAX+ 395 / Strix Halo), with the LM head and token embeddings held at Q6_K."
+    },
+    {
+      "title": "JetBrains/Mellum2-12B-A2.5B-Thinking · Hugging Face",
+      "url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mellum2-12B-A2.5B-Instruct GGUF Quantization & Evaluation",
+      "url": "https://github.com/altibola/Mellum2-12B-A2.5B-Instruct-GGUF",
+      "snippet": "Scripts and tools for converting JetBrains/Mellum2-12B-A2.5B-Instruct to GGUF format with quantization (Q8_0 and Q4_K_M), plus evaluation scripts for reproducing published benchmarks locally."
+    },
+    {
+      "title": "Mellum2 12B-A2.5B Thinking - slm.expert",
+      "url": "https://slm.expert/models/mellum2-12b-a2-5b-thinking/",
+      "snippet": "Reasoning sibling of Mellum2 Instruct. Same 12B/2.5B MoE backbone, with explicit chain-of-thought via <think> blocks for multi-step problems."
+    },
+    {
+      "title": "Mellum2-12B-A2.5B-Thinking.yaml - GitHub",
+      "url": "https://github.com/vraoresearch/vllm-recipes/blob/main/models/JetBrains/Mellum2-12B-A2.5B-Thinking.yaml",
+      "snippet": "ByteDance-Seed Google JetBrains Mellum2-12B-A2.5B-Instruct.yaml Mellum2-12B-A2.5B-Thinking.yaml MiniMaxAI OpenGVLab"
+    }
+  ]
+}

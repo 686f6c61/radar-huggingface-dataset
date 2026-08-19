@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shavvimal/pi05_wall_v3_rel",
+  "slug": "shavvimal-pi05_wall_v3_rel",
+  "author": "shavvimal",
+  "url": "https://huggingface.co/shavvimal/pi05_wall_v3_rel",
+  "created_at": "2026-08-18T03:11:21.000Z",
+  "updated_at": "2026-08-18T03:14:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:shavvimal/jenga_wall_v3_rel",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354058304,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shavvimal/pi05_wall_v3_no_dagger · Hugging Face",
+      "url": "https://huggingface.co/shavvimal/pi05_wall_v3_no_dagger",
+      "snippet": "Instructions to use shavvimal/pi05_wall_v3_no_dagger with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use shavvimal/pi05_wall_v3_no_dagger with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the ..."
+    },
+    {
+      "title": "shavvimal (Shav Vimalendiran) - Hugging Face",
+      "url": "https://huggingface.co/shavvimal",
+      "snippet": "Recent Activity updated a modelabout 3 hours ago shavvimal/pi05_wall published a modelabout 3 hours ago shavvimal/pi05_wall View all activity"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

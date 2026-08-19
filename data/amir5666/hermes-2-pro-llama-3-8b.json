@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "amir5666/Hermes-2-Pro-Llama-3-8B",
+  "slug": "amir5666-hermes-2-pro-llama-3-8b",
+  "author": "amir5666",
+  "url": "https://huggingface.co/amir5666/Hermes-2-Pro-Llama-3-8B",
+  "created_at": "2026-08-18T13:06:27.000Z",
+  "updated_at": "2026-08-18T13:06:27.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "Llama-3",
+    "instruct",
+    "finetune",
+    "chatml",
+    "DPO",
+    "RLHF",
+    "gpt4",
+    "synthetic data",
+    "distillation",
+    "function calling",
+    "json mode",
+    "axolotl",
+    "en",
+    "dataset:teknium/OpenHermes-2.5",
+    "base_model:NousResearch/Meta-Llama-3-8B",
+    "base_model:finetune:NousResearch/Meta-Llama-3-8B",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030523392,
+  "parameters_human": "8.03B",
+  "storage_bytes": 34390850232,
+  "storage_human": "34.4 GB",
+  "base_model": "NousResearch/Meta-Llama-3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NousResearch/Hermes-2-Pro-Llama-3-8B · Hugging Face",
+      "url": "https://huggingface.co/NousResearch/Hermes-2-Pro-Llama-3-8B",
+      "snippet": "Hermes 2 Pro uses ChatML as the prompt format, opening up a much more structured system for engaging the LLM in multi-turn chat dialogue. System prompts allow steerability and interesting new ways to interact with an LLM, guiding rules, roles, and stylistic choices of the model."
+    },
+    {
+      "title": "Hermes-2-Pro-Llama-3-8B: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/hermes-2-pro-llama-3-8b-nousresearch",
+      "snippet": "Hermes-2-Pro-Llama-3-8B is an 8-billion parameter instruction-following language model built on Meta&#x27;s Llama-3 architecture, developed by NousResearch in collaboration with Fireworks.AI and @interstellarninja."
+    },
+    {
+      "title": "NousResearch: Hermes 2 Pro - Llama-3 8B — Nousresearch | AI Model ...",
+      "url": "https://www.neura.market/models/nousresearch-hermes-2-pro-llama-3-8b",
+      "snippet": "Overview Hermes 2 Pro is an upgraded, retrained version of Nous Hermes 2, consisting of an updated and cleaned version of the OpenHermes 2.5 Dataset, as well as a newly introduced..."
+    },
+    {
+      "title": "NousResearch: Hermes 2 Pro - Llama-3 8B - AI Model Detail...",
+      "url": "https://benchable.ai/models/nousresearch/hermes-2-pro-llama-3-8b",
+      "snippet": "NousResearch: Hermes 2 Pro - Llama-3 8B, released on May 26, 2024, demonstrates strong performance in several key areas. The model consistently ranks among the fastest, achieving the 86th percentile across eight benchmarks, and offers highly competitive pricing, placing in the 93rd percentile."
+    },
+    {
+      "title": "solidrust/Hermes-2-Pro-Llama-3-8B-AWQ · Hugging Face",
+      "url": "https://huggingface.co/solidrust/Hermes-2-Pro-Llama-3-8B-AWQ",
+      "snippet": "AWQ is an efficient, accurate and blazing-fast low-bit weight quantization method, currently supporting 4-bit quantization. Compared to GPTQ, it offers faster Transformers-based inference with equivalent or better quality compared to the most commonly used GPTQ settings."
+    }
+  ]
+}

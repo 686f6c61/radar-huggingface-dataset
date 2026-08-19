@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EastForce/worker-ai",
+  "slug": "eastforce-worker-ai",
+  "author": "EastForce",
+  "url": "https://huggingface.co/EastForce/worker-ai",
+  "created_at": "2026-08-18T06:40:38.000Z",
+  "updated_at": "2026-08-18T06:40:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EastForce/worker-ai-spark: 开源劳动者AI研究与评测项目：建设劳动知识、公开评测基准与共同治理机制 ...",
+      "url": "https://github.com/EastForce/worker-ai-spark",
+      "snippet": "开源劳动者AI研究与评测项目：建设劳动知识、公开评测基准与共同治理机制｜Open worker-centered AI research and evaluation project. - EastForce/worker-ai-spark"
+    },
+    {
+      "title": "worker-ai-spark/.github at main · EastForce/worker-ai-spark",
+      "url": "https://github.com/EastForce/worker-ai-spark/tree/main/.github",
+      "snippet": "开源劳动者AI研究与评测项目：建设劳动知识、公开评测基准与共同治理机制｜Open worker-centered AI research and evaluation project ..."
+    },
+    {
+      "title": "Workers AI Models - Cloudflare Docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/",
+      "snippet": "Browse the catalog of machine learning models available on Workers AI."
+    },
+    {
+      "title": "Cloudflare Workers AI - Edge AI Inference Platform",
+      "url": "https://www.cloudflare.com/products/workers-ai/",
+      "snippet": "The AI Inference platform Workers AI lets you run AI inference globally with one API call. No GPUs to manage, no capacity planning. Just intelligent machine learning models running where they&#x27;re needed, on Cloudflare&#x27;s global network."
+    },
+    {
+      "title": "AI Capabilities and Benchmarking Hub | Epoch AI",
+      "url": "https://epoch.ai/benchmarks",
+      "snippet": "Our database of benchmark results, featuring the performance of leading AI models on challenging tasks. It includes results from benchmarks evaluated internally by Epoch AI as well as data collected from external sources. Explore trends in AI capabilities across time, by benchmark, or by model."
+    }
+  ]
+}

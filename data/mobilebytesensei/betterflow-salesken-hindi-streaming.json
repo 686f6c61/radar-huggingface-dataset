@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mobilebytesensei/betterflow-salesken-hindi-streaming",
+  "slug": "mobilebytesensei-betterflow-salesken-hindi-streaming",
+  "author": "mobilebytesensei",
+  "url": "https://huggingface.co/mobilebytesensei/betterflow-salesken-hindi-streaming",
+  "created_at": "2026-08-16T05:28:37.000Z",
+  "updated_at": "2026-08-16T06:06:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "streaming",
+    "sherpa-onnx",
+    "hindi",
+    "hi",
+    "base_model:salesken/Hindi-FastConformer-Streaming-ASR",
+    "base_model:quantized:salesken/Hindi-FastConformer-Streaming-ASR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174281364,
+  "storage_human": "174 MB",
+  "base_model": "salesken/Hindi-FastConformer-Streaming-ASR",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

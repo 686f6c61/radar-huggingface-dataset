@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ProCreations/minima-spellcheck",
+  "slug": "procreations-minima-spellcheck",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/minima-spellcheck",
+  "created_at": "2026-08-17T10:23:25.000Z",
+  "updated_at": "2026-08-17T10:27:30.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "minima-lfm",
+  "languages": [],
+  "tags": [
+    "minima-lfm",
+    "safetensors",
+    "ternary",
+    "1.58-bit",
+    "grammatical-error-correction",
+    "spell-check",
+    "token-classification",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M-Spellchecker",
+    "base_model:finetune:LiquidAI/LFM2.5-Encoder-350M-Spellchecker",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 157487788,
+  "parameters_human": "157.5M",
+  "storage_bytes": 226027664,
+  "storage_human": "226 MB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M-Spellchecker",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SSHdotCodes/minima: Fast W1.58A8 ternary inference and tuning ...",
+      "url": "https://github.com/SSHdotCodes/minima/tree/main/",
+      "snippet": "Minima Minima is a W1.58A8 release candidate converted from LiquidAI/LFM2.5-Encoder-350M for fast, low-memory CPU inference and fused CUDA kernel research without losing its 8,192-token context. It includes packed kernels, quantization-aware distillation, recovery adapters, task-tuning tools, and a spellchecker reference fine-tune."
+    },
+    {
+      "title": "ProCreations (SSH) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations",
+      "snippet": "Making AI&#x27;s small, accessible, and easy to run on consumer hardware"
+    },
+    {
+      "title": "oliverguhr/spelling-correction-english-base · Hugging Face",
+      "url": "https://huggingface.co/oliverguhr/spelling-correction-english-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NeuSpell: A Neural Spelling Correction Toolkit - GitHub",
+      "url": "https://github.com/neuspell/neuspell",
+      "snippet": "NeuSpell is an open-source toolkit for context sensitive spelling correction in English. This toolkit comprises of 10 spell checkers, with evaluations on naturally occurring mis-spellings from multiple (publicly available) sources. To make neural models for spell checking context dependent, (i) we train neural models using spelling errors in context, synthetically constructed by reverse ..."
+    },
+    {
+      "title": "Spelling Correction in Text Preprocessing Using SymSpell",
+      "url": "https://www.geeksforgeeks.org/nlp/spelling-correction-in-text-preprocessing-using-symspell/",
+      "snippet": "Proper spelling correction improves the quality of preprocessing and increases model accuracy. Introduction to SymSpell The SymSpell Python library is built for fast and accurate spelling correction. It uses a novel algorithm that leverages precomputed dictionaries and phonetic similarity to suggest correct spellings."
+    }
+  ]
+}

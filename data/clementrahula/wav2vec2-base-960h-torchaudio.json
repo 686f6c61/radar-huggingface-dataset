@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "clementrahula/wav2vec2-base-960h-torchaudio",
+  "slug": "clementrahula-wav2vec2-base-960h-torchaudio",
+  "author": "clementrahula",
+  "url": "https://huggingface.co/clementrahula/wav2vec2-base-960h-torchaudio",
+  "created_at": "2026-08-14T05:32:48.000Z",
+  "updated_at": "2026-08-14T05:33:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "wav2vec2",
+    "forced-alignment",
+    "torchaudio",
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377664473,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/wav2vec2-base-960h · Hugging Face",
+      "url": "https://huggingface.co/facebook/wav2vec2-base-960h",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WAV2VEC2_ASR_BASE_960H — Torchaudio 2.11 documentation",
+      "url": "https://docs.pytorch.org/audio/stable/generated/torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H.html",
+      "snippet": "torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H ¶ Wav2vec 2.0 model (\"base\" architecture with an extra linear module), pre-trained on 960 hours of unlabeled audio from LibriSpeech dataset [Panayotov et al., 2015] (the combination of \"train-clean-100\", \"train-clean-360\", and \"train-other-500\"), and fine-tuned for ASR on the same audio with the corresponding transcripts. Originally ..."
+    },
+    {
+      "title": "WAV2VEC2_BASE — Torchaudio 2.5.0 documentation",
+      "url": "https://docs.pytorch.org/audio/2.5.0/generated/torchaudio.pipelines.WAV2VEC2_BASE.html",
+      "snippet": "torchaudio.pipelines.WAV2VEC2_BASE ¶ Wav2vec 2.0 model (\"base\" architecture), pre-trained on 960 hours of unlabeled audio from LibriSpeech dataset [Panayotov et al., 2015] (the combination of \"train-clean-100\", \"train-clean-360\", and \"train-other-500\"), not fine-tuned. Originally published by the authors of wav2vec 2.0 [Baevski et al., 2020] under MIT License and redistributed ..."
+    },
+    {
+      "title": "litert-community/wav2vec2-base-960h-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/wav2vec2-base-960h-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wav2Vec2-Base-960h - Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/wav2vec2-base-960h",
+      "snippet": "Wav2Vec2-Base-960h Facebook&#x27;s Wav2Vec2 The base model pretrained and fine-tuned on 960 hours of Librispeech on 16kHz sampled speech audio. When using the model make sure that your speech input is also sampled at 16Khz. Paper Authors: Alexei Baevski, Henry Zhou, Abdelrahman Mohamed, Michael Auli Abstract We show for the first time that learning powerful representations from speech audio alone ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "eRonCamero/RVC-Pretrained-Models",
+  "slug": "eroncamero-rvc-pretrained-models",
+  "author": "eRonCamero",
+  "url": "https://huggingface.co/eRonCamero/RVC-Pretrained-Models",
+  "created_at": "2026-08-14T04:26:00.000Z",
+  "updated_at": "2026-08-14T04:26:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3627504589,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ORVC/Ov2Super · Hugging Face",
+      "url": "https://huggingface.co/ORVC/Ov2Super",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=RVC",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects. Browse through, download and play with our directory of 388 rvc voice models"
+    },
+    {
+      "title": "How do I use pretrained model? · Issue #363 · RVC-Project ... - GitHub",
+      "url": "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/issues/363",
+      "snippet": "Sorry if it is a dumb question, but I can&#x27;t seem to figure out which models are which. I followed the instructions for installing, which includes downloading from huggingface. However, the inference voice list is empty, even if I restarted the program. I am new to this so I might be missing something, any help is appreciated."
+    },
+    {
+      "title": "Top AI Voice Models for RVC | Community Favorites",
+      "url": "https://voice-models.com/top",
+      "snippet": "Discover popular AI voice models for RVC, ranked by community favorites. Preview samples and run compatible voices online."
+    }
+  ]
+}

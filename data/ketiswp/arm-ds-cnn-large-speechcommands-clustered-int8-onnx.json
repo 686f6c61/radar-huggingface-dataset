@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/arm-DS-CNN-Large-SpeechCommands-clustered-int8-onnx",
+  "slug": "ketiswp-arm-ds-cnn-large-speechcommands-clustered-int8-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/arm-DS-CNN-Large-SpeechCommands-clustered-int8-onnx",
+  "created_at": "2026-08-19T01:57:29.000Z",
+  "updated_at": "2026-08-19T02:10:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int8",
+    "audio-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 476217,
+  "storage_human": "476217 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model_registry.csv · ketiswp/ONNX_Models at main - Hugging Face",
+      "url": "https://huggingface.co/ketiswp/ONNX_Models/blob/main/model_registry.csv",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "JahnaviBhansali/DSCNN · Hugging Face",
+      "url": "https://huggingface.co/JahnaviBhansali/DSCNN",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Models That Run on Jetson Orin Nano Super (8GB) — A Practical Guide",
+      "url": "https://forums.developer.nvidia.com/t/ai-models-that-run-on-jetson-orin-nano-super-8gb-a-practical-guide/365412",
+      "snippet": "Are you looking to run AI models on your NVIDIA Jetson Orin Nano Super (8GB)? This guide covers tested models across LLMs, VLMs, Speech, and Agent frameworks — all fitting within the 8GB memory budget."
+    }
+  ]
+}

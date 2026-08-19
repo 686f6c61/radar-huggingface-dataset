@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "internlm/Intern-S2-Mobius",
+  "slug": "internlm-intern-s2-mobius",
+  "author": "internlm",
+  "url": "https://huggingface.co/internlm/Intern-S2-Mobius",
+  "created_at": "2026-07-29T13:07:51.000Z",
+  "updated_at": "2026-08-14T13:02:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "interns2_mobius",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 57,
+  "downloads_30d": 1199,
+  "trending_score": 9,
+  "parameters": 35964405616,
+  "parameters_human": "35.96B",
+  "storage_bytes": 72983514682,
+  "storage_human": "73.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - InternLM/Intern-S2-Mobius: Intern-S2-Mobius · GitHub",
+      "url": "https://github.com/InternLM/Intern-S2-Mobius",
+      "snippet": "We introduce Intern-S2-Mobius, a 35B foundation model built on the Mobius-v0 architecture realized by Xtuner and LMDeploy. Instead of binding knowledge storage and reasoning computation layer by layer as in conventional Transformer models, Mobius organizes knowledge into a globally shared Memory and lets multiple Reasoners iteratively query and refine hidden states against this shared ..."
+    },
+    {
+      "title": "internlm/Intern-S2-Mobius · Hugging Face",
+      "url": "https://huggingface.co/internlm/Intern-S2-Mobius",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Intern-S2-Mobius: The 35B Model That Separates ... - orcarouter.ai",
+      "url": "https://www.orcarouter.ai/blog/intern-s2-mobius-explained",
+      "snippet": "Intern-S2-Mobius is a 35B foundation model published by internlm, the Hugging Face organization behind Shanghai AI Laboratory&#x27;s Intern series. The weights landed on Hugging Face on July 29, 2026, and the accompanying GitHub repository — README, deployment guide, and a full technical report PDF — went public on August 5, 2026."
+    },
+    {
+      "title": "README.md · internlm/Intern-S2-Mobius at main - Hugging Face",
+      "url": "https://huggingface.co/internlm/Intern-S2-Mobius/blob/main/README.md",
+      "snippet": "Introduction We introduce Intern-S2-Mobius, a 35B foundation model built on the Mobius-v0 architecture, which decouples knowledge vectors from reasoning operators inside the base model. Instead of binding knowledge storage and reasoning computation layer by layer as in conventional Transformer models, Mobius organizes knowledge into a globally shared Memory and lets multiple Reasoners ..."
+    },
+    {
+      "title": "Intern-S2-Mobius/modeling_interns2_mobius.py at main - GitHub",
+      "url": "https://github.com/InternLM/Intern-S2-Mobius/blob/main/modeling_interns2_mobius.py",
+      "snippet": "Intern-S2-Mobius. Contribute to InternLM/Intern-S2-Mobius development by creating an account on GitHub."
+    }
+  ]
+}

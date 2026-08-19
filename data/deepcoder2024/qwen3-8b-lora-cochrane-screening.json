@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "deepcoder2024/Qwen3-8B-LoRA-Cochrane-Screening",
+  "slug": "deepcoder2024-qwen3-8b-lora-cochrane-screening",
+  "author": "deepcoder2024",
+  "url": "https://huggingface.co/deepcoder2024/Qwen3-8B-LoRA-Cochrane-Screening",
+  "created_at": "2026-08-15T05:23:51.000Z",
+  "updated_at": "2026-08-15T05:25:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "systematic-review",
+    "cochrane",
+    "title-abstract-screening",
+    "medical",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepcoder2024/Qwen3-8B-LoRA-Cochrane-Screening · Hugging Face",
+      "url": "https://huggingface.co/deepcoder2024/Qwen3-8B-LoRA-Cochrane-Screening",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-8B-LoRA · Models",
+      "url": "https://www.modelscope.cn/models/mc36473/Qwen3-8B-LoRA",
+      "snippet": "This model is a fine-tuned version of /root/Qwen3-8B on the stance_task_sharegpt dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training: learning ..."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    }
+  ]
+}

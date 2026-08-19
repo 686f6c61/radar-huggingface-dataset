@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bodenmaurice/unconst-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged",
+  "slug": "bodenmaurice-unconst-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged",
+  "author": "bodenmaurice",
+  "url": "https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r596-r252-odpo-hirank-midbeta-softctx-megaextra-merged",
+  "created_at": "2026-08-17T11:35:18.000Z",
+  "updated_at": "2026-08-17T11:35:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v3",
+    "offline-dpo",
+    "r596",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-h32-merged · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h32-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Patents Advanced Search",
+      "url": "https://patents.google.com/advanced",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "PE2E Search Access",
+      "url": "https://ppubs.uspto.gov/pubwebapp/external.html",
+      "snippet": "Patent Public Search offers a web-based tool for enhanced access to prior art, replacing legacy search tools with modern interfaces."
+    },
+    {
+      "title": "WIPO - Search International and National Patent Collections",
+      "url": "https://patentscope2.wipo.int/",
+      "snippet": "This patent search tool allows you not only to search the PCT database of about 2 million International Applications but also the worldwide patent collections. This search facility features: flexible search syntax; automatic word stemming and relevance ranking; as well as graphical results."
+    }
+  ]
+}

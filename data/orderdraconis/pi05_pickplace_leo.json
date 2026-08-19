@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OrderDraconis/pi05_pickplace_leo",
+  "slug": "orderdraconis-pi05_pickplace_leo",
+  "author": "OrderDraconis",
+  "url": "https://huggingface.co/OrderDraconis/pi05_pickplace_leo",
+  "created_at": "2026-08-18T01:39:15.000Z",
+  "updated_at": "2026-08-18T01:40:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:Pink-Viking/pick_and_place_combined",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354069384,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrderDraconis/act_pickplace_leo_c150 · Hugging Face",
+      "url": "https://huggingface.co/OrderDraconis/act_pickplace_leo_c150",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OrderDraconis (Leo Guillier) - Hugging Face",
+      "url": "https://huggingface.co/OrderDraconis",
+      "snippet": "User profile of Leo Guillier on Hugging Face"
+    },
+    {
+      "title": "GitHub - zekai-chen-deepreach/lerobot-pi05-pick-place",
+      "url": "https://github.com/zekai-chen-deepreach/lerobot-pi05-pick-place",
+      "snippet": "Similarly to the hardware, you can easily implement your own policy & leverage LeRobot&#x27;s data collection, training, and visualization tools, and share your model to the HF Hub For detailed policy setup guides, see the Policy Documentation."
+    },
+    {
+      "title": "lerobot/docs/source/pi05.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/pi05.mdx",
+      "snippet": "π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository."
+    },
+    {
+      "title": "Kimi K3 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/kimi-3",
+      "snippet": "Kimi K3 by Moonshot AI ranks #5 of 218 with a public score of 80.5/100. Evidence: Supported; this profile shows 44 source-displayable benchmark rows."
+    }
+  ]
+}

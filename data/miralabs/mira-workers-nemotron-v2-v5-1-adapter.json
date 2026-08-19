@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "MIRALABS/mira-workers-nemotron-v2-v5-1-adapter",
+  "slug": "miralabs-mira-workers-nemotron-v2-v5-1-adapter",
+  "author": "MIRALABS",
+  "url": "https://huggingface.co/MIRALABS/mira-workers-nemotron-v2-v5-1-adapter",
+  "created_at": "2026-08-15T15:23:43.000Z",
+  "updated_at": "2026-08-15T15:30:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:fastino/Fastino-Nemotron-3.5-Lightning-Finance",
+    "base_model:adapter:fastino/Fastino-Nemotron-3.5-Lightning-Finance",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3649251278,
+  "storage_human": "3.6 GB",
+  "base_model": "fastino/Fastino-Nemotron-3.5-Lightning-Finance",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:13:38.302Z",
+  "benchmarks": [],
+  "sources": []
+}

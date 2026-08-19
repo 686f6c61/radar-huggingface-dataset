@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "weikaih/molmo2-codec-v6-rgbhex-k4",
+  "slug": "weikaih-molmo2-codec-v6-rgbhex-k4",
+  "author": "weikaih",
+  "url": "https://huggingface.co/weikaih/molmo2-codec-v6-rgbhex-k4",
+  "created_at": "2026-08-14T03:18:09.000Z",
+  "updated_at": "2026-08-14T07:41:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "video-language-model",
+    "video-codec",
+    "molmo2",
+    "adacodec",
+    "rgb-hex",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21825893255,
+  "storage_human": "21.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "weikaih/molmo2-codec-stage2-v6 · Hugging Face",
+      "url": "https://huggingface.co/weikaih/molmo2-codec-stage2-v6",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "weikaih/molmo2-codec-stage2-v6 at main - Hugging Face",
+      "url": "https://huggingface.co/weikaih/molmo2-codec-stage2-v6/tree/main",
+      "snippet": "weikaih / molmo2-codec-stage2-v6 like 0 Image-Text-to-Text molmo2 adacodec video long-video stage1 stage2 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main molmo2-codec-stage2-v6 21.8 GB Ctrl+K Ctrl+K 1 contributor History:2 commits weikaih Add files using upload-large-folder tool fb36596 verifiedabout ..."
+    },
+    {
+      "title": "GitHub - allenai/molmo2: Code for the Molmo2 Vision-Language Model",
+      "url": "https://github.com/allenai/molmo2",
+      "snippet": "Code for the Molmo2 Vision-Language Model. Contribute to allenai/molmo2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Molmo | Ai2",
+      "url": "https://allenai.org/molmo",
+      "snippet": "Our strongest overall performer for video understanding. Molmo 2 (8B) achieves state-of-the-art results among open-weight models on key short- and long-video, captioning, pointing, counting, and tracking benchmarks—ideal for demanding applications that still require efficient inference."
+    },
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    }
+  ]
+}

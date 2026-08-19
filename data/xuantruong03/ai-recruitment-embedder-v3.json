@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "XuanTruong03/ai-recruitment-embedder-v3",
+  "slug": "xuantruong03-ai-recruitment-embedder-v3",
+  "author": "XuanTruong03",
+  "url": "https://huggingface.co/XuanTruong03/ai-recruitment-embedder-v3",
+  "created_at": "2026-08-15T14:44:25.000Z",
+  "updated_at": "2026-08-15T14:45:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:9062",
+    "loss:CoSENTLoss",
+    "arxiv:1908.10084",
+    "base_model:keepitreal/vietnamese-sbert",
+    "base_model:finetune:keepitreal/vietnamese-sbert",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 134998272,
+  "parameters_human": "135.0M",
+  "storage_bytes": 540015464,
+  "storage_human": "540 MB",
+  "base_model": "keepitreal/vietnamese-sbert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "InDomain Val",
+      "metric": "Pearson Cosine",
+      "value": 0.9356869524061184
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "InDomain Val",
+      "metric": "Spearman Cosine",
+      "value": 0.5652062931820985
+    }
+  ],
+  "sources": []
+}

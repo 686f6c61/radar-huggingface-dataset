@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tharunpranavsakthivel/tinyshell-falcon-h1-90m",
+  "slug": "tharunpranavsakthivel-tinyshell-falcon-h1-90m",
+  "author": "tharunpranavsakthivel",
+  "url": "https://huggingface.co/tharunpranavsakthivel/tinyshell-falcon-h1-90m",
+  "created_at": "2026-08-17T22:09:05.000Z",
+  "updated_at": "2026-08-17T22:15:08.000Z",
+  "license": "falcon-llm-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "falcon_h1",
+    "text-generation",
+    "tinyshell",
+    "structured-generation",
+    "json",
+    "tool-use",
+    "function-calling",
+    "conversational",
+    "en",
+    "base_model:tiiuae/Falcon-H1-Tiny-Tool-Calling-90M",
+    "base_model:finetune:tiiuae/Falcon-H1-Tiny-Tool-Calling-90M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 367,
+  "trending_score": 0,
+  "parameters": 91131072,
+  "parameters_human": "91.1M",
+  "storage_bytes": 364566136,
+  "storage_human": "365 MB",
+  "base_model": "tiiuae/Falcon-H1-Tiny-Tool-Calling-90M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falcon-H1-Tiny - a tiiuae Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/tiiuae/falcon-h1-tiny",
+      "snippet": "Falcon-H1-Tiny: A series of extremely small, yet powerful language models redefining capabilities at small scale 📝 46"
+    },
+    {
+      "title": "Falcon H1 - Falcon LLM",
+      "url": "https://falconllm.tii.ae/falcon-h1.html",
+      "snippet": "Falcon-H1 Models We designed Falcon-H1 to solve one of the biggest challenges in AI: delivering speed and performance without the need for a bloated infrastructure. These AI models are powerful enough for the enterprise, but light enough to run where other models can&#x27;t. Take our exceptionally small yet powerful 0.5B model, which delivers efficient low-cost and low-latency AI on small or ..."
+    },
+    {
+      "title": "FalconH1 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/falcon_h1",
+      "snippet": "It is used to instantiate a Falcon H1 model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the tiiuae/Falcon-H1-1.5B-Deep-Instruct Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "Falcon-H1: A Family of Hybrid-Head Language Models Redefining ...",
+      "url": "https://falcon-lm.github.io/blog/falcon-h1/",
+      "snippet": "Falcon CHAT Hugging Face Paper Github DEMO DISCORD Introduction Today, we are proud to introduce the Falcon-H1 series, a collection of six open-source models ranging from 0.5B to 34B parameters, each available in both base and instruction-tuned variants. At the core of these models lies a hybrid architecture that combines the strengths of the classical Transformer-based attention mechanism ..."
+    },
+    {
+      "title": "Falcon-H1: A Family of Hybrid-Head Language Models Redefining ...",
+      "url": "https://arxiv.org/abs/2507.22448",
+      "snippet": "In this report, we introduce Falcon-H1, a new series of large language models (LLMs) featuring hybrid architecture designs optimized for both high performance and efficiency across diverse use cases. Unlike earlier Falcon models built solely on Transformer or Mamba architectures, Falcon-H1 adopts a parallel hybrid approach that combines Transformer-based attention with State Space Models (SSMs ..."
+    }
+  ]
+}

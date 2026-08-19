@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "erv1n/e2l-alfworld-qwen25-7b-coldstart",
+  "slug": "erv1n-e2l-alfworld-qwen25-7b-coldstart",
+  "author": "erv1n",
+  "url": "https://huggingface.co/erv1n/e2l-alfworld-qwen25-7b-coldstart",
+  "created_at": "2026-08-17T20:20:40.000Z",
+  "updated_at": "2026-08-17T20:22:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 264,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 30473926524,
+  "storage_human": "30.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X1AOX1A/WorldModel-Alfworld-Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/X1AOX1A/WorldModel-Alfworld-Qwen2.5-7B",
+      "snippet": "From Word to World: Can Large Language Models be Implicit Text-based World Models? alfworld_train_with_env_40k This model is a fine-tuned version of Qwen/Qwen2.5-7B on the alfworld_train_with_env_54006 dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training ..."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "GitHub - alfworld/alfworld: ALFWorld: Aligning Text and Embodied ...",
+      "url": "https://github.com/alfworld/alfworld",
+      "snippet": "ALFWorld contains interactive TextWorld environments (Côté et. al) that parallel embodied worlds in the ALFRED dataset (Shridhar et. al). The aligned environments allow agents to reason and learn high-level policies in an abstract space before solving embodied tasks through low-level actuation."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "Qwen2.5-Omni is an end-to-end multimodal model by Qwen team at Alibaba Cloud, capable of understanding text, audio, vision, video, and performing real-time speech generation."
+    }
+  ]
+}

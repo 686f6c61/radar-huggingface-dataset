@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ducanhdinh/Macro-Nano-Instruct-Finetuning",
+  "slug": "ducanhdinh-macro-nano-instruct-finetuning",
+  "author": "ducanhdinh",
+  "url": "https://huggingface.co/ducanhdinh/Macro-Nano-Instruct-Finetuning",
+  "created_at": "2026-08-18T11:53:13.000Z",
+  "updated_at": "2026-08-18T11:58:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "moe",
+    "mixture-of-experts",
+    "machine-translation",
+    "fine-tuned",
+    "base_model:ATH-MaaS/Marco-Nano-Instruct",
+    "base_model:adapter:ATH-MaaS/Marco-Nano-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35919223,
+  "storage_human": "36 MB",
+  "base_model": "ATH-MaaS/Marco-Nano-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIDC-AI/Marco-Nano-Instruct · Hugging Face",
+      "url": "https://huggingface.co/AIDC-AI/Marco-Nano-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for AIDC-AI/Marco-Nano-Instruct - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:AIDC-AI/Marco-Nano-Instruct",
+      "snippet": "Explore machine learning models. Active filters: AIDC-AI/Marco-Nano-Instruct"
+    },
+    {
+      "title": "Damacol/aidc-ai-marco-nano-instruct - GitHub",
+      "url": "https://github.com/Damacol/aidc-ai-marco-nano-instruct/tree/main",
+      "snippet": "AIDC-AI/Marco-Nano-Instruct - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    },
+    {
+      "title": "AIDC-AI/Marco-Nano-Instruct: Model synced from source: AIDC-AI/Marco ...",
+      "url": "https://dev.modelhub.org.cn/AIDC-AI/Marco-Nano-Instruct",
+      "snippet": "Marco-Nano-Instruct Marco-Nano-Instruct is the post-trained variant of Marco-Nano-Base, a highly sparse Mixture-of-Experts (MoE) multilingual language model from the Marco-MoE family, developed by Alibaba International Digital Commerce. It activates only 0.6B out of 8B total parameters (7.5% activation ratio) per token. Despite its extreme sparsity, Marco-Nano-Instruct achieves the best ..."
+    },
+    {
+      "title": "Marco Nano Instruct by AIDC-AI - LLM Explorer",
+      "url": "https://llm-explorer.com/model/AIDC-AI%2FMarco-Nano-Instruct,3QJ0ltDVk5EjvbNTUZLuXC",
+      "snippet": "Marco Nano Instruct is an open-source 8b LLM by AIDC-AI. VRAM 16.1GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

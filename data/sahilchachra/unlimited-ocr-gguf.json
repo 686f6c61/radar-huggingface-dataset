@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sahilchachra/Unlimited-OCR-GGUF",
+  "slug": "sahilchachra-unlimited-ocr-gguf",
+  "author": "sahilchachra",
+  "url": "https://huggingface.co/sahilchachra/Unlimited-OCR-GGUF",
+  "created_at": "2026-06-23T01:52:56.000Z",
+  "updated_at": "2026-07-01T18:04:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "deepseek-ocr",
+    "ocr",
+    "vision-language",
+    "multimodal",
+    "image-text-to-text",
+    "quantized",
+    "imatrix",
+    "document-parsing",
+    "multilingual",
+    "base_model:baidu/Unlimited-OCR",
+    "base_model:quantized:baidu/Unlimited-OCR",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 133,
+  "downloads_30d": 39751,
+  "trending_score": 8,
+  "parameters": 2934734080,
+  "parameters_human": "2.93B",
+  "storage_bytes": 29424839808,
+  "storage_human": "29.4 GB",
+  "base_model": "baidu/Unlimited-OCR",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sahilchachra/Unlimited-OCR-GGUF · Hugging Face",
+      "url": "https://huggingface.co/sahilchachra/Unlimited-OCR-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · sahilchachra/Unlimited-OCR-GGUF at main",
+      "url": "https://huggingface.co/sahilchachra/Unlimited-OCR-GGUF/blob/main/README.md",
+      "snippet": "GGUF quantizations of baidu/Unlimited-OCR, a 3B vision-language OCR model that pushes DeepSeek-OCR one step further (one-shot, long-horizon document parsing). This repo contains a full spread of K-quants and i-quants of the language model plus the vision projector (mmproj) needed for image input."
+    },
+    {
+      "title": "sahilchachra/Unlimited-OCR-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/sahilchachra/Unlimited-OCR-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Unlimited-OCR-GGUF: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/unlimited-ocr-gguf-sahilchachra",
+      "snippet": "Overview Unlimited-OCR-GGUF is a quantized version of Baidu&#x27;s Unlimited-OCR, a 3-billion-parameter vision-language model built for multilingual document parsing and optical character recognition. Maintained by sahilchachra, this GGUF repository provides a full range of quantization options (from 2-bit to 16-bit) optimized for running locally with llama.cpp. The architecture combines a ..."
+    },
+    {
+      "title": "Quantized Models for sahilchachra/Unlimited-OCR-GGUF - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:sahilchachra/Unlimited-OCR-GGUF",
+      "snippet": "Active filters: sahilchachra/Unlimited-OCR-GGUF. Clear all. forkjoin-ai/unlimited-ocr-gguf. Image-Text-to-Text • 3B • Updated 3 days ago • 54"
+    }
+  ]
+}

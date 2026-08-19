@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "divya374r/genai-sentiment-analysis",
+  "slug": "divya374r-genai-sentiment-analysis",
+  "author": "divya374r",
+  "url": "https://huggingface.co/divya374r/genai-sentiment-analysis",
+  "created_at": "2026-08-17T12:43:56.000Z",
+  "updated_at": "2026-08-17T12:45:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "divya374r/GenAI1 · Hugging Face",
+      "url": "https://huggingface.co/divya374r/GenAI1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Revolutionizing sentiment analysis with generative AI: techniques ...",
+      "url": "https://link.springer.com/article/10.1007/s11042-026-21390-8",
+      "snippet": "Generative artificial intelligence (GenAI) has rapidly advanced in recent years, primarily focusing on problem-solving tasks. However, its potential for sentiment analysis and applications in psychological contexts remains underexplored. This paper presents a comprehensive review of recent developments in generative AI for sentiment analysis, covering transformer-based models, variational ..."
+    },
+    {
+      "title": "Generative AI: Sentiment Analysis Simplified - Medium",
+      "url": "https://medium.com/@yashisaxena997/generative-ai-sentiment-analysis-simplified-c467f5f9cc11",
+      "snippet": "A GenAI model trains on existing content and develops a statistical model, when given a prompt, it uses the developed statistical model to predict what an expected response might be."
+    },
+    {
+      "title": "Sentiment analysis prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-sentiment-analysis",
+      "snippet": "The sentiment analysis prebuilt model detects positive or negative sentiment in text data. You can use it to analyze social media, customer reviews, or any text data you&#x27;re interested in. Sentiment analysis evaluates text input, and gives scores and labels at a sentence and document level."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

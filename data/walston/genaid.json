@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "walston/GenAID",
+  "slug": "walston-genaid",
+  "author": "walston",
+  "url": "https://huggingface.co/walston/GenAID",
+  "created_at": "2026-08-15T18:05:57.000Z",
+  "updated_at": "2026-08-15T18:11:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "genaid",
+    "feature-extraction",
+    "accent-recognition",
+    "speaker-disentanglement",
+    "wav2vec2",
+    "audio-classification",
+    "custom_code",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 315530560,
+  "parameters_human": "315.5M",
+  "storage_bytes": 1262174728,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

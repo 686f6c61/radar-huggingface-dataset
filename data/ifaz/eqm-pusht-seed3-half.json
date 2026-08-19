@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "iFaz/eqm-pusht-seed3-half",
+  "slug": "ifaz-eqm-pusht-seed3-half",
+  "author": "iFaz",
+  "url": "https://huggingface.co/iFaz/eqm-pusht-seed3-half",
+  "created_at": "2026-06-18T07:12:21.000Z",
+  "updated_at": "2026-08-17T21:55:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "eqm",
+    "mujoco",
+    "pytorch_model_hub_mixin",
+    "en",
+    "dataset:lerobot/pusht",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 159,
+  "trending_score": 0,
+  "parameters": 500083380,
+  "parameters_human": "500.1M",
+  "storage_bytes": 40364615620,
+  "storage_human": "40.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iFaz/eqm-pusht-seed3-half · Hugging Face",
+      "url": "https://huggingface.co/iFaz/eqm-pusht-seed3-half",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iFaz/eqm-pusht_gazebo-seed3-half · Hugging Face",
+      "url": "https://huggingface.co/iFaz/eqm-pusht_gazebo-seed3-half",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ByteDance-Seed · GitHub",
+      "url": "https://github.com/bytedance-seed",
+      "snippet": "Established in 2023, the ByteDance Seed team is dedicated to discovering new approaches to general intelligence and pushing the boundaries of AI. Our research spans large language models, speech, vision, world models, AI infrastructure, next-generation interfaces and more."
+    },
+    {
+      "title": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026)",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/best-local-ai-models-by-vram-2026",
+      "snippet": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026) Verified open-weight AI model picks for every memory tier — 8GB cards to 384GB workstations — with licenses, Q4 sizes, and fine-tune vetting."
+    },
+    {
+      "title": "iFaz/eqm-pusht_gazebo-seed3-half at main - Hugging Face",
+      "url": "https://huggingface.co/iFaz/eqm-pusht_gazebo-seed3-half/tree/main",
+      "snippet": "How to use iFaz/eqm-pusht_gazebo-seed3-half with LeRobot: Notebooks main eqm-pusht_gazebo-seed3-half 1.05 GB Ctrl+K Ctrl+K 1 contributor History:4 commits iFaz Upload DataProcessorPipeline 299be4c verifiedabout 4 hours ago .gitattributes Safe 1.52 kBinitial commitabout 4 hours ago README.md 1.5 kBUpload policy weights, train config and ..."
+    }
+  ]
+}

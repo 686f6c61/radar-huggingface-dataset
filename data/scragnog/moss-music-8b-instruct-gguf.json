@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "scragnog/MOSS-Music-8B-Instruct-GGUF",
+  "slug": "scragnog-moss-music-8b-instruct-gguf",
+  "author": "scragnog",
+  "url": "https://huggingface.co/scragnog/MOSS-Music-8B-Instruct-GGUF",
+  "created_at": "2026-08-16T12:27:12.000Z",
+  "updated_at": "2026-08-16T12:31:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "music",
+    "audio-captioning",
+    "audio-text-to-text",
+    "hot-step-cpp",
+    "base_model:OpenMOSS-Team/MOSS-Music-8B-Instruct",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Music-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 861728128,
+  "parameters_human": "861.7M",
+  "storage_bytes": 26822033664,
+  "storage_human": "26.8 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Music-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Music: MOSS-Music is an open-source music ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Music",
+      "snippet": "English | 简体中文 MOSS-Music is an open-source music understanding model from MOSI.AI, the OpenMOSS team, and Shanghai Innovation Institute. Built on the same audio backbone as MOSS-Audio, MOSS-Music is further specialised on music via dedicated continual pre-training and supervised fine-tuning — targeting musical captioning, lyrics ASR, structural analysis, chord / key / tempo ..."
+    },
+    {
+      "title": "README.md · OpenMOSS-Team/MOSS-Music-8B-Instruct at main",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Music-8B-Instruct/blob/main/README.md",
+      "snippet": "MOSS-Music is an open-source music understanding model from MOSI.AI, the OpenMOSS team, and Shanghai Innovation Institute. Built on the same audio backbone as MOSS-Audio, MOSS-Music is further specialised on music via dedicated continual pre-training and supervised fine-tuning — targeting musical captioning, lyrics ASR, structural analysis, chord / key / tempo reasoning, and long-form ..."
+    },
+    {
+      "title": "MOSS-Music-8B-Instruct - a Hugging Face Space by OpenMOSS-Team",
+      "url": "https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Music-8B-Instruct",
+      "snippet": "This app lets you upload a music file (or record with a microphone) and type a question or request, such as describing the style, transcribing lyrics, or analyzing chords and structure. It processe..."
+    },
+    {
+      "title": "MOSS-Music/README.md at main · OpenMOSS/MOSS-Music · GitHub",
+      "url": "https://github.com/OpenMOSS/MOSS-Music/blob/main/README.md",
+      "snippet": "In this release, we provide two 8B models: MOSS-Music-8B-Instruct and MOSS-Music-8B-Thinking. The Instruct variant is optimised for direct instruction following on musical prompts, while the Thinking variant provides stronger chain-of-thought reasoning for musical analysis."
+    },
+    {
+      "title": "MOSS-Music-8B-Instruct:可用于音乐歌词识别、情感分析、和弦识别等场景。该项目是开源音乐理解模型，具备歌词ASR、音乐描述 ...",
+      "url": "https://ai.gitcode.com/OpenMOSS/MOSS-Music-8B-Instruct",
+      "snippet": "MOSS-Music 是由 MOSI.AI 、 OpenMOSS 团队 与 上海创智学院 推出的开源 音乐理解模型。 它基于与 MOSS-Audio 相同的音频 backbone， 在音乐上进行了专门的 持续预训练 和 监督微调，面向 音乐描述、歌词 ASR、 结构分析、和弦 / 调式 / 节奏推理以及长时音乐问答 等任务。"
+    }
+  ]
+}

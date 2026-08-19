@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-int8-uint8-onnx",
+  "slug": "ketiswp-mediapipe-efficientnet-lite0-imagenet-224-int8-uint8-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-int8-uint8-onnx",
+  "created_at": "2026-08-19T01:58:19.000Z",
+  "updated_at": "2026-08-19T02:23:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int8",
+    "uint8",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5148096,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image classification task guide | Google AI Edge - Google Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/image_classifier/index",
+      "snippet": "Attention: This MediaPipe Solutions Preview is an early release. Learn more. EfficientNet-Lite0 model (recommended) The EfficientNet-Lite0 model uses an EfficientNet architecture and was trained using ImageNet to recognize 1,000 classes, such as trees, animals, food, vehicles, person etc. See the full list of supported labels."
+    },
+    {
+      "title": "MediaPipe Solutions guide | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/guide",
+      "snippet": "MediaPipe Solutions provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in your applications. You can plug these solutions into your applications immediately, customize them to your needs, and use them across multiple development platforms."
+    },
+    {
+      "title": "MediaPipe image classifier Python with EfficientNet-Lite0",
+      "url": "https://eranfeit.net/mediapipe-image-classifier-python-with-efficientnet-lite0/",
+      "snippet": "Ever wanted a quick way to recognize what&#x27;s inside a photo without training a model or building a huge pipeline. This article is about running MediaPipe image classifier Python code end-to-end, using a lightweight EfficientNet-Lite0 TensorFlow Lite model to classify a real image in seconds."
+    },
+    {
+      "title": "(Tensorflow) EfficientNet Lite · Hugging Face",
+      "url": "https://huggingface.co/docs/timm/models/tf-efficientnet-lite",
+      "snippet": "The base EfficientNet-B0 network is based on the inverted bottleneck residual blocks of MobileNetV2. EfficientNet-Lite makes EfficientNet more suitable for mobile devices by introducing ReLU6 activation functions and removing squeeze-and-excitation blocks. The weights from this model were ported from Tensorflow/TPU."
+    },
+    {
+      "title": "GitHub - ml-illustrated/EfficientNet-Lite-PyTorch: Pytorch ...",
+      "url": "https://github.com/ml-illustrated/EfficientNet-Lite-PyTorch",
+      "snippet": "pip install efficientnet_lite_pytorch # install the pretrained model file you&#x27;re interested in, e.g., lite0 pip install efficientnet_lite0_pytorch_model ..."
+    }
+  ]
+}

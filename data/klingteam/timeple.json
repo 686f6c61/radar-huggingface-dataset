@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "KlingTeam/TimePLE",
+  "slug": "klingteam-timeple",
+  "author": "KlingTeam",
+  "url": "https://huggingface.co/KlingTeam/TimePLE",
+  "created_at": "2026-08-15T08:45:38.000Z",
+  "updated_at": "2026-08-15T11:45:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl_timeple",
+    "video",
+    "video-temporal-grounding",
+    "qwen3-vl",
+    "timeple",
+    "arxiv:2607.23951",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:KlingTeam/TimePLE-Dataset",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 8877449970,
+  "parameters_human": "8.88B",
+  "storage_bytes": 17766419728,
+  "storage_human": "17.8 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

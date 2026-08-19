@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "olintheclouds/my-cool-model",
+  "slug": "olintheclouds-my-cool-model",
+  "author": "olintheclouds",
+  "url": "https://huggingface.co/olintheclouds/my-cool-model",
+  "created_at": "2026-08-16T12:03:09.000Z",
+  "updated_at": "2026-08-16T12:03:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2608.03974",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17648161,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

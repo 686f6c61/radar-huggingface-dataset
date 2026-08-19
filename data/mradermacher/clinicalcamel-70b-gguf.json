@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ClinicalCamel-70B-GGUF",
+  "slug": "mradermacher-clinicalcamel-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ClinicalCamel-70B-GGUF",
+  "created_at": "2026-08-14T06:06:09.000Z",
+  "updated_at": "2026-08-14T11:33:21.000Z",
+  "license": "cc-by-nc-4.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:wanglab/ClinicalCamel-70B",
+    "base_model:quantized:wanglab/ClinicalCamel-70B",
+    "license:cc-by-nc-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 339,
+  "trending_score": 0,
+  "parameters": 68976648192,
+  "parameters_human": "68.98B",
+  "storage_bytes": 468768646112,
+  "storage_human": "468.8 GB",
+  "base_model": "wanglab/ClinicalCamel-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wanglab/ClinicalCamel-70B · Hugging Face",
+      "url": "https://huggingface.co/wanglab/ClinicalCamel-70B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "ClinicalCamel-70B Open-Source Large Language Model - Free Deployment to ...",
+      "url": "https://model.aibase.com/models/details/1915694017607786497",
+      "snippet": "Clinical Camel is an open-source large language model based on the LLaMA-2 70B architecture, fine-tuned with QLoRA, specifically tailored for the medical and clinical research fields."
+    },
+    {
+      "title": "ClinicalCamel-70B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/clinicalcamel-70b-wanglab",
+      "snippet": "Overview ClinicalCamel-70B is a medical large language model built on the LLaMA-2 70B architecture and fine-tuned using QLoRA for clinical and medical research applications. Created by wanglab, the model processes and generates medical content with competitive performance on clinical benchmarks. The 70-billion parameter model operates through the transformers library and is distributed under a ..."
+    },
+    {
+      "title": "GitHub - bowang-lab/clinical-camel",
+      "url": "https://github.com/bowang-lab/clinical-camel",
+      "snippet": "Clinical Camel model is a transformer-based language model trained on the LLaMA 13B architecture. It is specially designed as a reseach focused medical conversational model. Access the live demo. This corresponds to an earlier version of the Clinical Camel model."
+    }
+  ]
+}

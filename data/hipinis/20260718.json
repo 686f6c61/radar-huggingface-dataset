@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hipinis/20260718",
+  "slug": "hipinis-20260718",
+  "author": "hipinis",
+  "url": "https://huggingface.co/hipinis/20260718",
+  "created_at": "2026-08-04T07:18:31.000Z",
+  "updated_at": "2026-08-18T15:51:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 113735992054,
+  "storage_human": "113.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

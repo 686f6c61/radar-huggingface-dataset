@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ClankerResearch/SpeakSciences",
+  "slug": "clankerresearch-speaksciences",
+  "author": "ClankerResearch",
+  "url": "https://huggingface.co/ClankerResearch/SpeakSciences",
+  "created_at": "2026-08-16T15:00:39.000Z",
+  "updated_at": "2026-08-19T03:35:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 13320509794,
+  "storage_human": "13.3 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClankerResearch/SpeakSciences · Hugging Face",
+      "url": "https://huggingface.co/ClankerResearch/SpeakSciences",
+      "snippet": "The Model was trained on an A100 for apprx. 2 hrs using unsloth. This model is a 2 stage fine tune on a closed source data mix. This was trained for complex texting conversations, and SpeakSciences-Preview (Not Available to the Public) was trained on Qwen3.6-27b and used in a real Discord Server context and produced indistinguishable results."
+    },
+    {
+      "title": "ClankerResearch (Clanker Research) - Hugging Face",
+      "url": "https://huggingface.co/ClankerResearch/models",
+      "snippet": "Doing a lot of things with tiny budgets. Our goal is to decentralize frontier AI."
+    },
+    {
+      "title": "Clank.world - Imagine anything, become anyone",
+      "url": "https://www.clank.world/",
+      "snippet": "Discover and explore interactive AI roleplay scenes on Clank.world. Chat with AI characters, join immersive stories, and experience endless creative possibilities."
+    },
+    {
+      "title": "Researchers let AI models run a simulated society. Claude was the ...",
+      "url": "https://fortune.com/2026/05/28/ai-model-simulation-claude-chatgpt-grok-gemini/",
+      "snippet": "An AI startup ran five simulations, each controlled by a different model. The results varied wildly."
+    },
+    {
+      "title": "Clanker AI — Personal AI Assistant with Real-Time Voice & OKF Memory",
+      "url": "https://clanker-ai.com/welcome",
+      "snippet": "Clanker AI is a personal AI assistant with a personality you design and a memory that never forgets — real-time voice calls, document understanding, live web search, and OKF memory you own and export."
+    }
+  ]
+}

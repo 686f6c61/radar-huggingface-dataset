@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kreynolds319/slm-trainer",
+  "slug": "kreynolds319-slm-trainer",
+  "author": "kreynolds319",
+  "url": "https://huggingface.co/kreynolds319/slm-trainer",
+  "created_at": "2026-08-19T00:40:09.000Z",
+  "updated_at": "2026-08-19T02:19:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qlora",
+    "unsloth",
+    "grounded-generation",
+    "citation",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3522390916,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "slm-trainer · PyPI",
+      "url": "https://pypi.org/project/slm-trainer/",
+      "snippet": "SLM-Trainer: Train Private Small Language Models A simple Python library for training Small Language Models (SLMs) from scratch using PyTorch, SentencePiece, and GPT-style transformer architecture. Why SLM-Trainer? With the rapid adoption of Generative AI, organizations increasingly face challenges related to:"
+    },
+    {
+      "title": "Introduction to Small Language Models: The Complete Guide for 2026",
+      "url": "https://machinelearningmastery.com/introduction-to-small-language-models-the-complete-guide-for-2026/",
+      "snippet": "As SLM architectures improve and quantization techniques advance, the gap between small and large models narrows for specialized tasks. In 2026, successful AI deployments aren&#x27;t measured by which model you use."
+    },
+    {
+      "title": "How to Train a Small Language Model: The Complete Guide for 2026",
+      "url": "https://dev.to/jaipalsingh/how-to-train-a-small-language-model-the-complete-guide-for-2026-4p6h",
+      "snippet": "Training a small language model costs 50x less than running LLM APIs long-term. Learn three practical paths to build your own SLM, from dataset to deployment. Tagged with ai, machinelearning, llm, tutorial."
+    },
+    {
+      "title": "How to Train a Small Language Model: The Complete Guide for 2026",
+      "url": "https://www.premai.io/blog/how-to-train-a-small-language-model-the-complete-guide/",
+      "snippet": "Training a small language model costs 50x less than running LLM APIs long-term. Learn three practical paths to build your own SLM, from dataset to deployment."
+    },
+    {
+      "title": "Building a Small Language Model(SLM) from Scratch - GitHub",
+      "url": "https://github.com/ChaitanyaK77/Building-a-Small-Language-Model-SLM-",
+      "snippet": "A step-by-step Jupyter Notebook demonstrating how to build and train a compact small language model (\"SLM\") from scratch using the TinyStories dataset. Covers data preparation, BPE tokenization, efficient binary storage, GPU memory locking, Transformer architecture, training configuration, and sample text generation."
+    }
+  ]
+}

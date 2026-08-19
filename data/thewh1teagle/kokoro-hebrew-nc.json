@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "thewh1teagle/kokoro-hebrew-nc",
+  "slug": "thewh1teagle-kokoro-hebrew-nc",
+  "author": "thewh1teagle",
+  "url": "https://huggingface.co/thewh1teagle/kokoro-hebrew-nc",
+  "created_at": "2026-07-05T10:18:47.000Z",
+  "updated_at": "2026-08-19T00:42:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "onnx",
+    "kokoro",
+    "text-to-speech",
+    "he",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 179,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 669684317,
+  "storage_human": "670 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thewh1teagle/kokoro-hebrew-nc · Hugging Face",
+      "url": "https://huggingface.co/thewh1teagle/kokoro-hebrew-nc",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thewh1teagle/kokoro-hebrew-nc at main - Hugging Face",
+      "url": "https://huggingface.co/thewh1teagle/kokoro-hebrew-nc/tree/main",
+      "snippet": "thewh1teagle / kokoro-hebrew-nc like 0 Text-to-Speech ONNX Hebrew kokoro License:other Model card FilesFiles and versions xet Community Copy to bucket new main kokoro-hebrew-nc 344 MB Ctrl+K Ctrl+K 1 contributor History:6 commits thewh1teagle Upload README.md with huggingface_hub 986e4d6 verifiedabout 1 month ago .gitattributes Safe 1.52 ..."
+    },
+    {
+      "title": "thewh1teagle · GitHub",
+      "url": "https://github.com/thewh1teagle",
+      "snippet": "Keep it simple. thewh1teagle has 77 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - thewh1teagle/kokoro-onnx: TTS with kokoro and onnx runtime",
+      "url": "https://github.com/thewh1teagle/kokoro-onnx",
+      "snippet": "TTS with kokoro and onnx runtime. Contribute to thewh1teagle/kokoro-onnx development by creating an account on GitHub."
+    },
+    {
+      "title": "thewh1teagle&#x27;s gists · GitHub",
+      "url": "https://gist.github.com/thewh1teagle",
+      "snippet": "GitHub Gist: star and fork thewh1teagle&#x27;s gists by creating an account on GitHub."
+    }
+  ]
+}

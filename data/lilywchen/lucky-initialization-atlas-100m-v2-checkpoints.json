@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "lilywchen/lucky-initialization-atlas-100m-v2-checkpoints",
+  "slug": "lilywchen-lucky-initialization-atlas-100m-v2-checkpoints",
+  "author": "lilywchen",
+  "url": "https://huggingface.co/lilywchen/lucky-initialization-atlas-100m-v2-checkpoints",
+  "created_at": "2026-08-15T06:09:56.000Z",
+  "updated_at": "2026-08-17T21:32:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo",
+    "pretraining",
+    "initialization",
+    "reproducibility",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 293387070816,
+  "storage_human": "293.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

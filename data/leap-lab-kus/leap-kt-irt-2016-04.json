@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LEAP-LAB-KUS/leap-kt-irt-2016-04",
+  "slug": "leap-lab-kus-leap-kt-irt-2016-04",
+  "author": "LEAP-LAB-KUS",
+  "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-irt-2016-04",
+  "created_at": "2026-08-18T22:16:54.000Z",
+  "updated_at": "2026-08-18T22:16:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "leap-kt",
+  "languages": [],
+  "tags": [
+    "leap-kt",
+    "safetensors",
+    "knowledge-tracing",
+    "education",
+    "educational-data-mining",
+    "irt",
+    "dataset:assist2017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 455840,
+  "storage_human": "455840 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-dynamickeyvaluememorynet-2016-11 · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-dynamickeyvaluememorynet-2016-11",
+      "snippet": "leap-kt · DYNAMICKEYVALUEMEMORYNET DYNAMICKEYVALUEMEMORYNET — Part of leap-kt-toolkit, a systematic re-implementation of published Knowledge Tracing models under one protocol. This repository holds every fold of every dataset this model has been run on, with the per-epoch training logs and the exact user split alongside the checkpoints."
+    },
+    {
+      "title": "LEAP Lab @ Tsinghua University | Machine Learning & AI Research",
+      "url": "https://www.leaplab.ai/",
+      "snippet": "The Learning And Perception (LEAP) Lab at Tsinghua University conducts cutting-edge research in machine learning, multi-modal learning, and embodied intelligence. We focus on developing robust, scalable, and generalizable foundation models for the next generation of artificial intelligence."
+    },
+    {
+      "title": "LEAP-LAB-KUS repositories · GitHub",
+      "url": "https://github.com/orgs/LEAP-LAB-KUS/repositories",
+      "snippet": "ProTip! When viewing an organization&#x27;s repositories, you can use the props. filter to filter by custom property."
+    },
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-deepirt-2019-04 · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-deepirt-2019-04",
+      "snippet": "Deep-IRT: Make Deep Learning Based Knowledge Tracing Explainable Using Item Response Theory — Yeung, EDM 2019 (arXiv:1904.11738) Part of leap-kt-toolkit, a systematic re-implementation of published Knowledge Tracing models under one protocol."
+    },
+    {
+      "title": "LeapLabTHU (LeapLab) · GitHub",
+      "url": "https://github.com/LeapLabTHU",
+      "snippet": "The Learning And Perception (LEAP) Lab is a research group at Tsinghua University working in the area of machine learning, multi-modal learning and embodied int - LeapLabTHU"
+    }
+  ]
+}

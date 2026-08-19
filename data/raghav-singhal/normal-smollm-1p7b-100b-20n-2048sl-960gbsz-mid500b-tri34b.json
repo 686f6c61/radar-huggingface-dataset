@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/normal-smollm-1p7b-100B-20n-2048sl-960gbsz-mid500b-tri34b",
+  "slug": "raghav-singhal-normal-smollm-1p7b-100b-20n-2048sl-960gbsz-mid500b-tri34b",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/normal-smollm-1p7b-100B-20n-2048sl-960gbsz-mid500b-tri34b",
+  "created_at": "2026-08-18T14:04:07.000Z",
+  "updated_at": "2026-08-18T14:04:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "bfloat16",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3422777952,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Raghav-Singhal/normal-smollm-1p7b-100B-20n-2048sl-960gbsz-tri34b ...",
+      "url": "https://huggingface.co/Raghav-Singhal/normal-smollm-1p7b-100B-20n-2048sl-960gbsz-tri34b",
+      "snippet": "Instructions to use Raghav-Singhal/normal-smollm-1p7b-100B-20n-2048sl-960gbsz-tri34b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Raghav-Singhal/normal-smollm-1p7b-100B-20n-2048sl-960gbsz-safelm ...",
+      "url": "https://huggingface.co/Raghav-Singhal/normal-smollm-1p7b-100B-20n-2048sl-960gbsz-safelm",
+      "snippet": "Instructions to use Raghav-Singhal/normal-smollm-1p7b-100B-20n-2048sl-960gbsz-safelm with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Damacol/raghav-singhal-mixsft-normal-smollm-1p7b-100b-20n ... - GitHub",
+      "url": "https://github.com/Damacol/raghav-singhal-mixsft-normal-smollm-1p7b-100b-20n-2048sl-960gbsz",
+      "snippet": "Raghav-Singhal/mixsft-normal-smollm-1p7b-100B-20n-2048sl-960gbsz - Private, Uncensored AI for Real Creators and Devs Self-hosted {MODEL} pipeline designed for privacy-first workflows."
+    },
+    {
+      "title": "pretrain-normal-smollm-1p7b-100B-20n-2048sl-960gbsz-sft-tulu3sft",
+      "url": "https://friendli.ai/models/Raghav-Singhal/pretrain-normal-smollm-1p7b-100B-20n-2048sl-960gbsz-sft-tulu3sft",
+      "snippet": "Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "Raghav Singhal",
+      "url": "https://raghavsinghal10.github.io/",
+      "snippet": "Developing effective pretraining methods that instill safety (alignment) from token 0, rather than relying on the superficial post-training-only approaches used today. Moving toward (almost) fully synthetic data pretraining, for even more robust alignment, while ensuring there is no diversity collapse. Feedback- (or metadata-) conditioned pretraining, with the aim of moving toward more on ..."
+    }
+  ]
+}

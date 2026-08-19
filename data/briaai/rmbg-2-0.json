@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "briaai/RMBG-2.0",
+  "slug": "briaai-rmbg-2-0",
+  "author": "briaai",
+  "url": "https://huggingface.co/briaai/RMBG-2.0",
+  "created_at": "2024-10-29T12:14:36.000Z",
+  "updated_at": "2026-04-06T15:27:43.000Z",
+  "license": "bria-rmbg-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "image-segmentation",
+    "remove background",
+    "background",
+    "background-removal",
+    "Pytorch",
+    "vision",
+    "legal liability",
+    "transformers.js",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1369,
+  "downloads_30d": 651673,
+  "trending_score": 7,
+  "parameters": 220700242,
+  "parameters_human": "220.7M",
+  "storage_bytes": 5896565704,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "briaai/RMBG-2.0 · Hugging Face",
+      "url": "https://huggingface.co/briaai/RMBG-2.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bria-AI/RMBG-2.0: Bria RMBG 2.0 - GitHub",
+      "url": "https://github.com/Bria-AI/RMBG-2.0",
+      "snippet": "Model Description: BRIA RMBG-2.0 is a dichotomous image segmentation model trained exclusively on a professional-grade dataset. The model output includes a single-channel 8-bit grayscale alpha matte, where each pixel value indicates the opacity level of the corresponding pixel in the original image."
+    },
+    {
+      "title": "RMBG-2.0/README.md at dev · Bria-AI/RMBG-2.0 · GitHub",
+      "url": "https://github.com/Bria-AI/RMBG-2.0/blob/dev/README.md",
+      "snippet": "Model Description: BRIA RMBG-2.0 is a dichotomous image segmentation model trained exclusively on a professional-grade dataset. The model output includes a single-channel 8-bit grayscale alpha matte, where each pixel value indicates the opacity level of the corresponding pixel in the original image."
+    },
+    {
+      "title": "BRIA RMBG 2.0 - a Hugging Face Space by briaai",
+      "url": "https://huggingface.co/spaces/briaai/BRIA-RMBG-2.0",
+      "snippet": "RMBG-2.0 for background removal Background removal model developed by BRIA.AI, trained on a carefully selected dataset, and is available as an open-source model for non-commercial use. For testing upload your image and wait. Model card | Blog API Endpoint available on: Bria.ai, fal.ai ComfyUI node is available here: ComfyUI Node Purchase weigths for commercial use: here"
+    },
+    {
+      "title": "RMBG-2.0 · Models - AI-ModelScope",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/RMBG-2.0",
+      "snippet": "License: bria-rmbg-2. remove background, background, background-removal and 5 more @ AI-ModelScope 82,117 downloads 5.37GB updated Jun 26,2026"
+    }
+  ]
+}

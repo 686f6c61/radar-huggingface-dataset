@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Aswenna/PotatoDiseaseVision",
+  "slug": "aswenna-potatodiseasevision",
+  "author": "Aswenna",
+  "url": "https://huggingface.co/Aswenna/PotatoDiseaseVision",
+  "created_at": "2026-08-08T16:36:20.000Z",
+  "updated_at": "2026-08-18T14:54:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 85800963,
+  "parameters_human": "85.8M",
+  "storage_bytes": 686464506,
+  "storage_human": "686 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aswenna (Aswenna) - Hugging Face",
+      "url": "https://huggingface.co/Aswenna",
+      "snippet": "Org profile for Aswenna on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "(PDF) AI-Powered Potato Plant Disease Detection: A ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/393223129_AI-Powered_Potato_Plant_Disease_Detection_A_Vision-Language_Framework",
+      "snippet": "This paper presents a novel approach to potato disease detection by integrating a Vision Transformer (ViT) model with a Large Language Model (LLM) for enhanced classification of potato plant diseases."
+    },
+    {
+      "title": "AI-Powered Potato Plant Disease Detection: A Vision-Language Framework",
+      "url": "https://sciety.org/articles/activity/10.21203/rs.3.rs-6488058/v1",
+      "snippet": "Potato crops are a vital part of global food security. Potato leaf and crop health play a crucial role in determining the yield and quality of potato production. This paper presents a novel approach to potato disease detection by integrating a Vision Transformer (ViT) model with a Large Language Model (LLM) for enhanced classification of potato plant diseases. We developed a multi-modal ..."
+    },
+    {
+      "title": "GitHub - Nayanakogre/potatovision-ai: An enterprise full-stack deep ...",
+      "url": "https://github.com/Nayanakogre/potatovision-ai",
+      "snippet": "🥔 PotatoVision AI PotatoVision AI is a full-stack deep learning application developed to automate potato leaf disease detection using Computer Vision and Convolutional Neural Networks (CNNs). The system enables users to upload potato leaf images through web and mobile applications and receive real-time disease predictions with confidence scores."
+    },
+    {
+      "title": "Potato disease detection and prevention using multimodal AI and large ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0168169924012158",
+      "snippet": "Finally, an online potato disease diagnosis and control platform (PotatoGPT) was developed based on the multimodal AI model and the large language model (GPT-4). The multimodal AI model can achieve high-accuracy potato disease detection in complex scenarios, making it highly significant for realizing intelligent disease detection."
+    }
+  ]
+}

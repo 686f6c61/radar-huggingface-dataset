@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zonglin11/humanalite_act_demo_policy",
+  "slug": "zonglin11-humanalite_act_demo_policy",
+  "author": "zonglin11",
+  "url": "https://huggingface.co/zonglin11/humanalite_act_demo_policy",
+  "created_at": "2026-08-17T05:18:03.000Z",
+  "updated_at": "2026-08-17T05:24:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:zonglin11/humanalite_act_demo",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51699349,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206832516,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zonglin11/humanalite_act_demo · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/zonglin11/humanalite_act_demo/viewer/default/train",
+      "snippet": "Datasets: zonglin11 / humanalite_act_demo like 0 Dataset card Data Studio FilesFiles and versions xet Community Subset (1) default·753 rows default (753 rows) Split (1) train·753 rows train (753 rows) Search is not available for this dataset SQL Console"
+    },
+    {
+      "title": "ACT (Action Chunking with Transformers) · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/act",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XPolicyLab/policy at main - GitHub",
+      "url": "https://github.com/XPolicyLab/XPolicyLab/tree/main/policy",
+      "snippet": "Involving over 40 Advanced Manipulation Policies. Contribute to XPolicyLab/XPolicyLab development by creating an account on GitHub."
+    },
+    {
+      "title": "XPolicyLab/policy/ACT/README.md at main - GitHub",
+      "url": "https://github.com/XPolicyLab/XPolicyLab/blob/main/policy/ACT/README.md",
+      "snippet": "ACT is the XPolicyLab/RoboDojo adapter for the corresponding policy. It keeps integration-facing scripts at this directory level and leaves the original or vendored implementation in the nested source tree when present."
+    },
+    {
+      "title": "HuggingFace APIs - Open Source AI Models and Datasets",
+      "url": "https://www.huggingfaceapi.com/",
+      "snippet": "Explore and integrate HuggingFace&#x27;s AI models and datasets with our comprehensive API documentation and examples."
+    }
+  ]
+}

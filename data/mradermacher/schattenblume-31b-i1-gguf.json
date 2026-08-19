@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Schattenblume-31B-i1-GGUF",
+  "slug": "mradermacher-schattenblume-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Schattenblume-31B-i1-GGUF",
+  "created_at": "2026-08-17T06:00:55.000Z",
+  "updated_at": "2026-08-17T08:52:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "reasoning",
+    "non-reasoning",
+    "creative writing",
+    "roleplay",
+    "conversational",
+    "character-rp",
+    "storytelling",
+    "low-refusal",
+    "nsfw",
+    "31B",
+    "gemma-4",
+    "en",
+    "base_model:Nimbz/Schattenblume-31B",
+    "base_model:quantized:Nimbz/Schattenblume-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 334809621216,
+  "storage_human": "334.8 GB",
+  "base_model": "Nimbz/Schattenblume-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/gemma-4-31B-it-abliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-31B-it-abliterated-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face Viewer",
+      "url": "https://hfviewer.com/",
+      "snippet": "A GGUF release of darkc0de/XORTRON-NXTXPRT9PRO-27B, a Qwen3.5-family multimodal model from the XORTRON Criminal Computing project. The model card frames the project as an AI-safety and alignment research experiment."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "gemma4:31b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:31b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "xquantize/climategpt-7b-4bit-mlx",
+  "slug": "xquantize-climategpt-7b-4bit-mlx",
+  "author": "xquantize",
+  "url": "https://huggingface.co/xquantize/climategpt-7b-4bit-mlx",
+  "created_at": "2026-08-14T10:00:26.000Z",
+  "updated_at": "2026-08-14T10:19:16.000Z",
+  "license": "climategpt-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "climate",
+    "earth-science",
+    "geoscience",
+    "quantized",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2401.09646",
+    "base_model:eci-io/climategpt-7b",
+    "base_model:quantized:eci-io/climategpt-7b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 1053265920,
+  "parameters_human": "1.05B",
+  "storage_bytes": 3791416048,
+  "storage_human": "3.8 GB",
+  "base_model": "eci-io/climategpt-7b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

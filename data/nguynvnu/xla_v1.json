@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "nguynVNU/XLA_v1",
+  "slug": "nguynvnu-xla_v1",
+  "author": "nguynVNU",
+  "url": "https://huggingface.co/nguynVNU/XLA_v1",
+  "created_at": "2026-08-17T15:20:42.000Z",
+  "updated_at": "2026-08-17T15:22:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121635776,
+  "storage_human": "122 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

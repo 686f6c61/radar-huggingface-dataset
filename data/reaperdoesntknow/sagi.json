@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/SAGI",
+  "slug": "reaperdoesntknow-sagi",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/SAGI",
+  "created_at": "2026-01-17T03:53:48.000Z",
+  "updated_at": "2026-08-17T13:16:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "swarm_agi",
+    "text-generation",
+    "causal-lm",
+    "swarm-intelligence",
+    "multi-agent",
+    "pytorch",
+    "convergentintel",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 3137,
+  "trending_score": 0,
+  "parameters": 52729731,
+  "parameters_human": "52.7M",
+  "storage_bytes": 210962608,
+  "storage_human": "211 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/SAGI · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/SAGI",
+      "snippet": "SAGI is a novel causal language model that integrates swarm intelligence dynamics with transformer architecture. The model treats cognition as a dynamic, adaptive system where multiple internal \"agents\" collaborate through differentiable routing, trust mechanisms, and shared memory."
+    },
+    {
+      "title": "reaperdoesntknow/S-AGI · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/S-AGI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SAGI - Swarm AGI Language Model - a reaperdoesntknow Collection",
+      "url": "https://huggingface.co/collections/reaperdoesntknow/sagi-swarm-agi-language-model",
+      "snippet": "SAGI is a novel causal language model that integrates **swarm intelligence dynamics** with transformer architecture."
+    },
+    {
+      "title": "reaperdoesntknow/SharperSwarm · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/SharperSwarm",
+      "snippet": "SAGI V3.2 - SELF-AWARE AGI SAGI (Swarm AGI) is a novel causal language model that integrates swarm intelligence dynamics with transformer architecture. The model treats cognition as a dynamic, adaptive system where multiple internal \"agents\" collaborate through differentiable routing, trust mechanisms, and shared memory."
+    },
+    {
+      "title": "DiscoverLM - a reaperdoesntknow Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/reaperdoesntknow/discoverlm",
+      "snippet": "reaperdoesntknow &#x27;s Collections Qwen3.5-Opus-Distil Convergent Optimizations Shepherd DualMind DistilQwen DiscoverLM SAGI - Swarm AGI Language Model Qemma DNA-AI Mixture of Attentions - MoA 🔷 SymbioticAI: A Collection of Symbolic-Transformers for Th"
+    }
+  ]
+}

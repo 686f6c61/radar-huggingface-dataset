@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "darius3th/unc-7516438b",
+  "slug": "darius3th-unc-7516438b",
+  "author": "darius3th",
+  "url": "https://huggingface.co/darius3th/unc-7516438b",
+  "created_at": "2026-08-17T10:45:03.000Z",
+  "updated_at": "2026-08-17T10:45:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v3",
+    "offline-dpo",
+    "r596",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darius3th (Darius R) - Hugging Face",
+      "url": "https://huggingface.co/darius3th",
+      "snippet": "Recent Activity published a model1 day ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a model1 day ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a model2 days ago darius3th/albedo-qwen3.6-35b-kkk View all activity"
+    },
+    {
+      "title": "darius3th (Darius R) - Hugging Face",
+      "url": "https://huggingface.co/darius3th/models",
+      "snippet": "Recent Activity published a modelabout 21 hours ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a modelabout 22 hours ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a model1 day ago darius3th/albedo-qwen3.6-35b-kkk View all activity"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "darius AI Models | Civitai",
+      "url": "https://civitai.com/tag/darius",
+      "snippet": "Browse 6 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with darius."
+    },
+    {
+      "title": "DALL·E 3 | OpenAI",
+      "url": "https://openai.com/index/dall-e-3/",
+      "snippet": "DALL·E 3 understands significantly more nuance and detail than our previous systems, allowing you to easily translate your ideas into exceptionally accurate images."
+    }
+  ]
+}

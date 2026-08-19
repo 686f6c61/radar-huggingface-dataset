@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Rabbit-Hole-Ai/DeepSeek-V4-Flash-0731-MXFP4-GGUF",
+  "slug": "rabbit-hole-ai-deepseek-v4-flash-0731-mxfp4-gguf",
+  "author": "Rabbit-Hole-Ai",
+  "url": "https://huggingface.co/Rabbit-Hole-Ai/DeepSeek-V4-Flash-0731-MXFP4-GGUF",
+  "created_at": "2026-08-18T03:59:41.000Z",
+  "updated_at": "2026-08-18T04:01:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "deepseek-v4-flash",
+    "ik_llama.cpp",
+    "quantized",
+    "mxfp4",
+    "moe",
+    "rtx-5090",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 156378344736,
+  "storage_human": "156.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - antirez/ds4: DeepSeek 4 Flash and PRO local inference engine ...",
+      "url": "https://github.com/antirez/ds4",
+      "snippet": "Those tools are meant for offline model-building work and can take a long time on the full DeepSeek V4 Flash weights. Flash GGUF generation is supported by the local tools."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE ..."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash",
+      "url": "https://lambda.ai/inference-models/deepseek-ai/deepseek-v4-flash",
+      "snippet": "See Benchmarking DeepSeek-V4-Flash for the full results. Background DeepSeek-V4-Flash is a 284 billion parameter sparse Mixture-of-Experts (MoE) language model from DeepSeek-AI, with only 13 billion parameters active per forward pass. It is the smaller sibling of DeepSeek-V4-Pro (1.6T / 49B active) and ships with the same native 1 million token context window and the same three reasoning ..."
+    }
+  ]
+}

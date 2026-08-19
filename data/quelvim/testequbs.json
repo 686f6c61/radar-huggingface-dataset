@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Quelvim/testequbs",
+  "slug": "quelvim-testequbs",
+  "author": "Quelvim",
+  "url": "https://huggingface.co/Quelvim/testequbs",
+  "created_at": "2026-08-18T14:54:00.000Z",
+  "updated_at": "2026-08-18T14:54:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What AI Model Can I Run? Free GPU/RAM Checker (2026)",
+      "url": "https://localaimaster.com/tools/ai-model-finder",
+      "snippet": "What AI model can I run? Enter your GPU/RAM + use case → get the best AI model you can actually run locally. Covers DeepSeek V4, Qwen3, Llama 4, Mistral, Phi-4, Gemma 3 — 2026."
+    },
+    {
+      "title": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026)",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/best-local-ai-models-by-vram-2026",
+      "snippet": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026) Verified open-weight AI model picks for every memory tier — 8GB cards to 384GB workstations — with licenses, Q4 sizes, and fine-tune vetting."
+    },
+    {
+      "title": "Qualcomm® AI Hub Models - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models",
+      "snippet": "Using Qualcomm® AI Hub Workbench, the export script will: Compile the model for the chosen device and target runtime (see: Compiling Models on AI Hub Workbench). If applicable, Quantize the model (see: Quantization on AI Hub Workbench) Profile the compiled model on a real device in the cloud (see: Profiling Models on AI Hub Workbench)."
+    },
+    {
+      "title": "Testing Models: Compare AI Models Side by Side, Live",
+      "url": "https://testingmodels.com/",
+      "snippet": "Compare AI models side by side: send one prompt to every model, then watch real outputs run live. Coding arena live now; images, video and writing next."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: DeepSeek-V4-Flash-0731 by DeepSeek on Jul 31 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

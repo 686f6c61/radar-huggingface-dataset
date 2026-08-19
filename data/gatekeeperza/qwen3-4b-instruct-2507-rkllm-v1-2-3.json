@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "GatekeeperZA/Qwen3-4B-Instruct-2507-RKLLM-v1.2.3",
+  "slug": "gatekeeperza-qwen3-4b-instruct-2507-rkllm-v1-2-3",
+  "author": "GatekeeperZA",
+  "url": "https://huggingface.co/GatekeeperZA/Qwen3-4B-Instruct-2507-RKLLM-v1.2.3",
+  "created_at": "2026-08-18T10:03:44.000Z",
+  "updated_at": "2026-08-18T10:08:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "rkllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "rkllm",
+    "rk3588",
+    "rockchip",
+    "npu",
+    "quantized",
+    "qwen3",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5292699756,
+  "storage_human": "5.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-4B-Instruct-2507 at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "Qwen3-4B-Instruct-2507 State‑of‑the‑art large language model with instruct‑only training, useful on a variety of language understanding and generation tasks. The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B ..."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-4b-instruct-2507-qwen",
+      "snippet": "Qwen3-4B-Instruct-2507 is a 4-billion-parameter causal language model maintained by Qwen that performs instruction-following text generation with native..."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "Qwen3-4B-Instruct-2507 Highlights We introduce the updated version of the Qwen3-4B non-thinking mode, named Qwen3-4B-Instruct-2507, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage. Substantial gains in long-tail knowledge coverage ..."
+    }
+  ]
+}

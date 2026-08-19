@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FAIRC/token-averaging-avg_50m_k4",
+  "slug": "fairc-token-averaging-avg_50m_k4",
+  "author": "FAIRC",
+  "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4",
+  "created_at": "2026-08-18T13:00:20.000Z",
+  "updated_at": "2026-08-18T13:02:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 908057898,
+  "storage_human": "908 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4 · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4",
+      "snippet": "FAIRC/token-averaging-avg_50m_k4 Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4_learnable_pos · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos",
+      "snippet": "FAIRC/token-averaging-avg_50m_k4_learnable_pos Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack",
+      "url": "https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html",
+      "snippet": "JADEPUFFER exploits Langflow CVE-2025-3248 to deploy ENCFORGE ransomware against AI model weights, vector indexes, and training data on the host."
+    },
+    {
+      "title": "LLM Token Counter — Count Tokens for GPT, Claude & Gemini | BenchLM.ai",
+      "url": "https://benchlm.ai/tools/token-counter",
+      "snippet": "Free LLM token counter with real tokenizers for GPT-5, Claude, Gemini, Llama & more. Count tokens, estimate API costs, and check context window limits instantly."
+    },
+    {
+      "title": "AI Token Counter - GPT, Claude & Gemini Token Calculator",
+      "url": "https://miniwebtool.com/ai-token-counter/",
+      "snippet": "AI Token Counter - Free AI token counter that estimates token counts for GPT, Claude, Gemini, Llama, DeepSeek, and other LLM models instantly. Visualize how text splits into tokens, get word and character counts, and understand tokenization patterns in real time."
+    }
+  ]
+}

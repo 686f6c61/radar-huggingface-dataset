@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "benjaminchristie/skill-minilm",
+  "slug": "benjaminchristie-skill-minilm",
+  "author": "benjaminchristie",
+  "url": "https://huggingface.co/benjaminchristie/skill-minilm",
+  "created_at": "2026-08-14T20:29:31.000Z",
+  "updated_at": "2026-08-14T20:29:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:266",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "skill vocab val",
+      "metric": "Pearson Cosine",
+      "value": 0.5522300859078152
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "skill vocab val",
+      "metric": "Spearman Cosine",
+      "value": 0.5245803483756012
+    }
+  ],
+  "sources": []
+}

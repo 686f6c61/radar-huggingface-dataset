@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "qul1/Bagley_0.1",
+  "slug": "qul1-bagley_0-1",
+  "author": "qul1",
+  "url": "https://huggingface.co/qul1/Bagley_0.1",
+  "created_at": "2026-08-18T07:45:38.000Z",
+  "updated_at": "2026-08-18T07:45:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bagley/README.md at main · re-legion/bagley · GitHub",
+      "url": "https://github.com/re-legion/bagley/blob/main/README.md",
+      "snippet": "The AI Assistant in the Watch Dogs games. Contribute to re-legion/bagley development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - BiLLY-J03l/Bagley-AI: Bagley-AI",
+      "url": "https://github.com/BiLLY-J03l/Bagley-AI",
+      "snippet": "Bagley-AI. Contribute to BiLLY-J03l/Bagley-AI development by creating an account on GitHub."
+    },
+    {
+      "title": "BAGEL: The Open-Source Unified Multimodal Model",
+      "url": "https://bagel-ai.org/",
+      "snippet": "Today we introduce BAGEL, the open-source Unified Multimodal Model you can fine-tune, distill and deploy anywhere, offering comparable functionality to proprietary systems like GPT-4o and Gemini 2.0 in an open form, unlocks useful and valuable image generation through a natively multimodal architecture capable of precise, accurate, and photorealistic outputs."
+    },
+    {
+      "title": "ultimate spider man ( Mark Bagley) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1798182151711780133",
+      "snippet": "Generate stunning ultimate_comics, mark_bagley, ultimate_marvel_comics anime art with the &#x27;ultimate spider man ( Mark Bagley)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Retr0 / Bagley-AI · GitLab",
+      "url": "https://gitlab.com/Retr0680/Bagley-AI",
+      "snippet": "This is a under development ai and get&#x27;s updated weekly"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yozzaofficial/narrow-distill-1B",
+  "slug": "yozzaofficial-narrow-distill-1b",
+  "author": "yozzaofficial",
+  "url": "https://huggingface.co/yozzaofficial/narrow-distill-1B",
+  "created_at": "2026-08-17T17:43:34.000Z",
+  "updated_at": "2026-08-17T17:44:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "distillation",
+    "research",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 332740112,
+  "storage_human": "333 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Detecting and preventing distillation attacks &#92; Anthropic",
+      "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "snippet": "Massive volume concentrated in a few areas, highly repetitive structures, and content that maps directly onto what is most valuable for training an AI model are the hallmarks of a distillation attack. How we&#x27;re responding We continue to invest heavily in defenses that make such distillation attacks harder to execute and easier to identify."
+    },
+    {
+      "title": "What Is Model Distillation? How Smaller Models Learn - nerova.ai",
+      "url": "https://nerova.ai/guides/what-is-model-distillation-practical-guide",
+      "snippet": "Learn how model distillation transfers capability into smaller, faster AI models, when it cuts cost and latency, and where the tradeoffs appear today."
+    },
+    {
+      "title": "White House official accuses Chinese startup of improperly using ...",
+      "url": "https://thehill.com/policy/technology/5984510-white-house-moonshot-ai-anthropic-nvidia/",
+      "snippet": "A top White House official accused a Chinese startup on Wednesday of improperly using Anthropic&#x27;s latest model and accessing restricted Nvidia chips to develop its new Kimi model. Michael Kra…"
+    },
+    {
+      "title": "You Don&#x27;t Need a Frontier Model for That: Distilling a Small Model for ...",
+      "url": "https://www.jocheojeda.com/2026/07/27/distilling-a-small-model-for-one-narrow-job/",
+      "snippet": "So before you wire the biggest model you can afford into a hot path, try writing the task down in one sentence. If it fits in that sentence, you probably don&#x27;t need the consultant on every call."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.2",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.2 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    }
+  ]
+}

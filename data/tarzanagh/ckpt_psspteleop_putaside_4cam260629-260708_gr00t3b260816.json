@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tarzanagh/ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816",
+  "slug": "tarzanagh-ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816",
+  "author": "tarzanagh",
+  "url": "https://huggingface.co/tarzanagh/ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816",
+  "created_at": "2026-08-16T14:51:23.000Z",
+  "updated_at": "2026-08-17T01:30:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "gr00t",
+    "dexmate-vega",
+    "imitation-learning",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6942742350,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

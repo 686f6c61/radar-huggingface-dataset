@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "summerMC/SummerGPT2",
+  "slug": "summermc-summergpt2",
+  "author": "summerMC",
+  "url": "https://huggingface.co/summerMC/SummerGPT2",
+  "created_at": "2026-08-18T22:11:00.000Z",
+  "updated_at": "2026-08-18T22:11:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gwdr_v6_fast",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10568144,
+  "parameters_human": "10.6M",
+  "storage_bytes": 21150722,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "summerMC/gpt2 · Hugging Face",
+      "url": "https://huggingface.co/summerMC/gpt2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "summerMC/homeGPT · Hugging Face",
+      "url": "https://huggingface.co/summerMC/homeGPT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SummerEngine/docs",
+      "url": "https://github.com/SummerEngine/docs",
+      "snippet": "Contribute to SummerEngine/docs development by creating an account on GitHub."
+    },
+    {
+      "title": "GPT Image 2 Leaked: Prompts and Workflow Guide 2026",
+      "url": "https://www.the-ai-corner.com/p/gpt-image-2-leaked-lmarena-prompts-workflow-2026",
+      "snippet": "OpenAI&#x27;s Next Image Model Just Leaked. The Examples Are Insane. GPT-Image-2 was hiding on LMArena under three code names. People found it. It already makes Nano Banana Pro look outdated."
+    },
+    {
+      "title": "Free AI Game Maker for 2D and 3D Games | Summer Engine",
+      "url": "https://www.summerengine.com/ai-game-maker",
+      "snippet": "A free AI game maker for 2D and 3D games. Describe your idea, and Summer Engine builds the scenes, code, and assets inside a real game engine. Free to download, export to Steam, mobile, and consoles."
+    }
+  ]
+}

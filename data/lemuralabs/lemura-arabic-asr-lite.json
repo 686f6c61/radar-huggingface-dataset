@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "id": "lemuralabs/lemura-arabic-asr-lite",
+  "slug": "lemuralabs-lemura-arabic-asr-lite",
+  "author": "lemuralabs",
+  "url": "https://huggingface.co/lemuralabs/lemura-arabic-asr-lite",
+  "created_at": "2026-08-04T12:51:57.000Z",
+  "updated_at": "2026-08-18T19:58:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "ar",
+    "arz",
+    "apc",
+    "ary",
+    "afb"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech-recognition",
+    "speech-to-text",
+    "stt",
+    "transcription",
+    "speech",
+    "audio",
+    "asr",
+    "arabic",
+    "arabic-asr",
+    "arabic-speech",
+    "dialectal-arabic",
+    "msa",
+    "modern-standard-arabic",
+    "gulf-arabic",
+    "egyptian-arabic",
+    "levantine-arabic",
+    "maghrebi-arabic",
+    "multi-dialect",
+    "nemo-toolkit",
+    "nvidia",
+    "fastconformer",
+    "fastconformer-ctc",
+    "conformer",
+    "ctc",
+    "efficient",
+    "lightweight",
+    "compact",
+    "on-device",
+    "edge",
+    "cpu-inference",
+    "real-time",
+    "low-latency",
+    "low-resource",
+    "ar",
+    "arz",
+    "apc",
+    "ary",
+    "afb",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 437882880,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Open Universal Arabic ASR Leaderboard (average of 6 sets)",
+      "metric": "Average WER",
+      "value": 25.08
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "MASC (clean)",
+      "metric": "WER",
+      "value": 7.27
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 18 (Arabic)",
+      "metric": "WER",
+      "value": 9.74
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "MGB-2",
+      "metric": "WER",
+      "value": 14.33
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "MASC (noisy)",
+      "metric": "WER",
+      "value": 23.65
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SADA",
+      "metric": "WER",
+      "value": 37.28
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Casablanca",
+      "metric": "WER",
+      "value": 58.24
+    }
+  ],
+  "sources": [
+    {
+      "title": "lemuralabs/lemura-arabic-asr · Hugging Face",
+      "url": "https://huggingface.co/lemuralabs/lemura-arabic-asr",
+      "snippet": "🧭 Overview lemura-arabic-asr is a compact multi-dialect Arabic ASR model built for accuracy and efficiency. It is a FastConformer-CTC acoustic model (~115M parameters), adapted in-house from the NVIDIA FastConformer foundation and fine-tuned on ~2,900 hours of Arabic spanning MSA and the Gulf, Egyptian, Levantine, and Maghrebi dialect groups."
+    },
+    {
+      "title": "lemuralabs (Lemura Labs) - Hugging Face",
+      "url": "https://huggingface.co/lemuralabs",
+      "snippet": "Org profile for Lemura Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "lemura-arabic-asr-qwen3 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/lemuralabs/lemura-arabic-asr-qwen3",
+      "snippet": "Run lemura-arabic-asr-qwen3 with FriendliAI inference. A modern, LLM-based Arabic speech-to-text model with broad dialect coverage."
+    },
+    {
+      "title": "GitHub - ARBML/klaam: Arabic speech recognition and classification",
+      "url": "https://github.com/ARBML/klaam",
+      "snippet": "Arabic speech recognition, classification and text-to-speech using many advanced models like wave2vec and fastspeech2. This repository allows training and prediction using pretrained models."
+    },
+    {
+      "title": "Open Universal Arabic ASR Leaderboard - GitHub",
+      "url": "https://github.com/Natural-Language-Processing-Elm/open_universal_arabic_asr_leaderboard",
+      "snippet": "This repository contains the evaluation code for the Open Universal Arabic ASR Leaderboard, a continuous benchmark project for open-source multi-dialectal Arabic ASR models across various multi-dialectal datasets."
+    }
+  ]
+}

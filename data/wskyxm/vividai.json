@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wskyxm/VividAI",
+  "slug": "wskyxm-vividai",
+  "author": "wskyxm",
+  "url": "https://huggingface.co/wskyxm/VividAI",
+  "created_at": "2026-08-19T02:44:21.000Z",
+  "updated_at": "2026-08-19T02:49:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1175282638,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Tools for Image & Video Generation | Vivid AI - Magic Swap, Virtual ...",
+      "url": "https://www.vividai.in/",
+      "snippet": "Vivid AI - AI Tools for Image & Video Generation | Magic Swap, Virtual Try-On & More. Create stunning content with advanced AI technology. Start creating with our free AI tools today!"
+    },
+    {
+      "title": "VIVID · The AI creative studio for e-commerce and brands",
+      "url": "https://vividai.tv/",
+      "snippet": "Create cinematic AI images, videos and testimonials for your brand. AI Director, lip-sync, multi-track editor. Plans from €4.99/month."
+    },
+    {
+      "title": "VividAI Creative Studio",
+      "url": "https://vividai.space/",
+      "snippet": "Not just another model picker. A path from draft to asset. Runway, Pika, Kling, Luma, Sora, and Veo are all pushing image-to-video, keyframes, character consistency, and channel-ready output. VividAI packages those needs into a lighter studio: draft first, refine, then generate the cover and supporting visuals."
+    },
+    {
+      "title": "VividAI - Your Intelligent Meeting Copilot",
+      "url": "http://www.vividai.tech/",
+      "snippet": "VividAI automates your meeting workflow. Record, transcribe with OpenAI Whisper, and get AI-powered summaries. 100% private, runs locally on your device. Free forever."
+    },
+    {
+      "title": "VividAI (Vivid) - Hugging Face",
+      "url": "https://huggingface.co/VividAI",
+      "snippet": "User profile of Vivid on Hugging Face"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Danleon56/qwen2.5-7b-chioma-sft-merged",
+  "slug": "danleon56-qwen2-5-7b-chioma-sft-merged",
+  "author": "Danleon56",
+  "url": "https://huggingface.co/Danleon56/qwen2.5-7b-chioma-sft-merged",
+  "created_at": "2026-08-18T03:44:10.000Z",
+  "updated_at": "2026-08-18T03:56:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen2_5_7b_instruct ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen2_5_7b_instruct/README.md",
+      "snippet": "The Qwen2.5-7B-Instruct is a state-of-the-art multilingual language model with 7 billion parameters, excelling in language understanding, generation, coding, and mathematics. This is based on the implementation of Qwen2.5-7B-Instruct found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across ..."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "On 24 March 2025, Alibaba launched Qwen2.5-VL-32B-Instruct as a successor to the Qwen2.5-VL model. It was released under the Apache 2.0 license. [25][26] On 26 March 2025, Qwen2.5-Omni-7B was released under the Apache 2.0 license and made available through chat.qwen.ai, as well as platforms like Hugging Face, GitHub, and ModelScope."
+    }
+  ]
+}

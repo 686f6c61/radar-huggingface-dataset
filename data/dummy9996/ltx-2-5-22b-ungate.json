@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dummy9996/LTX-2.5-22b-ungate",
+  "slug": "dummy9996-ltx-2-5-22b-ungate",
+  "author": "dummy9996",
+  "url": "https://huggingface.co/dummy9996/LTX-2.5-22b-ungate",
+  "created_at": "2026-08-11T18:55:27.000Z",
+  "updated_at": "2026-08-12T12:46:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 43736,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159483162884,
+  "storage_human": "159.5 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dummy9996/LTX-2.5-22b-ungate · Hugging Face",
+      "url": "https://huggingface.co/dummy9996/LTX-2.5-22b-ungate",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dummy9996/LTX-2.5-22b-ungate at main - Hugging Face",
+      "url": "https://huggingface.co/dummy9996/LTX-2.5-22b-ungate/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    },
+    {
+      "title": "LTX 2.5 - Next-Generation AI Video Generation | LTX",
+      "url": "https://ltx.dev/ltx-2-5",
+      "snippet": "LTX 2.5, the latest real-time AI video model, generates stunning cinematic videos from text or images in seconds. Ultra-fast, high-quality AI video creation for every creator."
+    },
+    {
+      "title": "Multimodal Model For Generative Creation | LTX Model",
+      "url": "https://ltx.io/model",
+      "snippet": "For academic teams pushing the boundaries of video generation, world simulation, and multimodal AI. Grants, model access, and research partnerships with the LTX team. Meet LTX-2.5, an open world model. LTX-2.5 renders cinema-grade detail, holds character and continuity across connected shots, and reconstructs sharper faces and legible text."
+    }
+  ]
+}

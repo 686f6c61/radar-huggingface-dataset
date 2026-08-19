@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/sft_writingprompts_gpt-oss-20b_as_ministral-8b_seed42",
+  "slug": "dementor-research-sft_writingprompts_gpt-oss-20b_as_ministral-8b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_ministral-8b_seed42",
+  "created_at": "2026-08-16T23:44:22.000Z",
+  "updated_at": "2026-08-16T23:44:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/sft_writingprompts_ministral-8b_as_gpt-oss-20b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/sft_writingprompts_ministral-8b_as_gpt-oss-20b_seed42",
+      "snippet": "Instructions to use dementor-research/sft_writingprompts_ministral-8b_as_gpt-oss-20b_seed42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "dementor-research/sft_writingprompts_gpt-oss-20b_as_gpt-oss-120b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_gpt-oss-120b_seed42/discussions",
+      "snippet": "Instructions to use dementor-research/sft_writingprompts_gpt-oss-20b_as_gpt-oss-120b_seed42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "sft_writingprompts_gpt-oss-20b_as_llama-3.1-8b_seed2",
+      "url": "https://friendli.ai/models/dementor-research/sft_writingprompts_gpt-oss-20b_as_llama-3.1-8b_seed2",
+      "snippet": "dementor-research sft_writingprompts_gpt-oss-20b_as_llama-3.1-8b_seed2 Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "sft_writingprompts_llama-3.1-8b_as_gpt-oss-20b_seed3",
+      "url": "https://friendli.ai/models/dementor-research/sft_writingprompts_llama-3.1-8b_as_gpt-oss-20b_seed3",
+      "snippet": "Deploy sft_writingprompts_llama-3.1-8b_as_gpt-oss-20b_seed3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "PixelSpaceAI/Malaysian-Qwen2.5-7B-AWS-Malay-LoRA",
+  "slug": "pixelspaceai-malaysian-qwen2-5-7b-aws-malay-lora",
+  "author": "PixelSpaceAI",
+  "url": "https://huggingface.co/PixelSpaceAI/Malaysian-Qwen2.5-7B-AWS-Malay-LoRA",
+  "created_at": "2026-08-14T07:30:38.000Z",
+  "updated_at": "2026-08-14T07:34:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ms"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "aws",
+    "malay",
+    "bahasa-melayu",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "ms",
+    "base_model:mesolitica/Malaysian-Qwen2.5-7B-Instruct",
+    "base_model:adapter:mesolitica/Malaysian-Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955084,
+  "storage_human": "173 MB",
+  "base_model": "mesolitica/Malaysian-Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mesolitica/Malaysian-Qwen2.5-7B-Audio-Instruct · Hugging Face",
+      "url": "https://huggingface.co/mesolitica/Malaysian-Qwen2.5-7B-Audio-Instruct",
+      "snippet": "Dataset Benchmark Malaysian-Qwen2.5-7B-Audio-Instruct Audio model on top of mesolitica/Malaysian-Qwen2.5-7B-Instruct. How we trained it? Audio understanding, this is to introduce audio dataset to the LLM. We use freezed Whisper Large V3 Encoder without any pooling, means 30 seconds audio consumed 1500 tokens or 1 token equal to 0.02 seconds."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "Qwen2.5-Omni is an end-to-end multimodal model designed to perceive diverse modalities, including text, images, audio, and video, while simultaneously generating text and natural speech responses in a streaming manner."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Visit our Hugging Face or ModelScope organization (click links above), search checkpoints with names starting with Qwen2.5-or visit the Qwen2.5 collection, and you will find all you need! Enjoy! In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 ..."
+    },
+    {
+      "title": "qwen2.5:7b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:7b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

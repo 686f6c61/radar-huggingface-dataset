@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_terminal_notion_official_3556_0aa6928a_model_support-triage",
+  "slug": "roy229-huggingface_terminal_notion_official_3556_0aa6928a_model_support-triage",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_0aa6928a_model_support-triage",
+  "created_at": "2026-08-15T05:54:56.000Z",
+  "updated_at": "2026-08-15T05:55:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:45:27.408Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face Release Notes & Changelog · August 2026 — releases.sh",
+      "url": "https://releases.sh/hugging-face",
+      "snippet": "Every Hugging Face release note, changelog, and product update across all tracked sources — version history refreshed August 2026."
+    },
+    {
+      "title": "Terminal-Bench",
+      "url": "https://www.tbench.ai/",
+      "snippet": "A benchmark for terminal agents"
+    },
+    {
+      "title": "Command Line Interface (CLI) · Hugging Face",
+      "url": "https://huggingface.co/docs/huggingface_hub/guides/cli",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The AI workspace that works for you. | Notion",
+      "url": "https://www.notion.com/",
+      "snippet": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster."
+    }
+  ]
+}

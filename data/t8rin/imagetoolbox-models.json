@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "T8RIN/imagetoolbox-models",
+  "slug": "t8rin-imagetoolbox-models",
+  "author": "T8RIN",
+  "url": "https://huggingface.co/T8RIN/imagetoolbox-models",
+  "created_at": "2026-01-14T16:06:17.000Z",
+  "updated_at": "2026-08-18T10:47:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18908920790,
+  "storage_human": "18.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "T8RIN/imagetoolbox-models · Hugging Face",
+      "url": "https://huggingface.co/T8RIN/imagetoolbox-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Tools | T8RIN/ImageToolbox | DeepWiki",
+      "url": "https://deepwiki.com/T8RIN/ImageToolbox/4.3-ai-tools",
+      "snippet": "This page documents the AI-powered image processing feature of ImageToolbox, covering the domain model for neural network models, the AiToolsRepository interface, the AndroidAiToolsRepository implementation for model lifecycle management, the AiProcessor ONNX Runtime inference pipeline with tiled chunk processing, and the associated UI components."
+    },
+    {
+      "title": "T8RIN/imagetoolbox-models at main - Hugging Face",
+      "url": "https://huggingface.co/T8RIN/imagetoolbox-models/tree/main/onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "T8RIN (Malik Mukhametzyanov) · GitHub",
+      "url": "https://github.com/T8RIN",
+      "snippet": "T8RIN/ImageToolbox 97 commits T8RIN/ImageToolboxLibs 14 commits Opened 2 issues in 1 repository T8RIN/ImageToolbox 2 closed Mesh gradients, try to use a different way Aug 13 Swipes on image container swiping while zooming and while image is only one"
+    },
+    {
+      "title": "GitHub - T8RIN/ImageToolbox: ️ Image Toolbox is a powerful app for ...",
+      "url": "https://github.com/T8RIN/ImageToolbox/tree/master",
+      "snippet": "ImageToolbox is a versatile image editing tool designed for efficient photo manipulation. It allows users to crop, apply filters, edit EXIF data, erase backgrounds, and even enhance images with AI. Ideal for both photographers and developers, the tool offers a simple interface with powerful capabilities."
+    }
+  ]
+}

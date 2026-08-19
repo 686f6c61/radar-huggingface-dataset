@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shubham12864/YOLO26n-face",
+  "slug": "shubham12864-yolo26n-face",
+  "author": "Shubham12864",
+  "url": "https://huggingface.co/Shubham12864/YOLO26n-face",
+  "created_at": "2026-08-16T08:38:40.000Z",
+  "updated_at": "2026-08-16T08:38:40.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mrcahyono265/yolo26n-face",
+      "url": "https://github.com/mrcahyono265/yolo26n-face",
+      "snippet": "YOLO26n-Face is a final year research project that I developed using the Ultralytics YOLO framework. This project aims to train a very lightweight face detection model for resource-constrained devices such as Drones (UAV). This model is the result of Transfer Learning from the official Ultralytics base model, which was then fine-tuned specifically on the WiderFace dataset to recognize faces in ..."
+    },
+    {
+      "title": "Ultralytics/YOLO26 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLO26",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "yolo26n-face/README.md at main · mrcahyono265/yolo26n-face",
+      "url": "https://github.com/mrcahyono265/yolo26n-face/blob/main/README.md",
+      "snippet": "YOLO26n-Face is a final year research project that I developed using the Ultralytics YOLO framework. This project aims to train a very lightweight face detection model for resource-constrained devices such as Drones (UAV). This model is the result of Transfer Learning from the official Ultralytics base model, which was then fine-tuned specifically on the WiderFace dataset to recognize faces in ..."
+    },
+    {
+      "title": "Ultralytics YOLO26 | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "YOLO26 from Ultralytics delivers unified, real-time, end-to-end vision models optimized for accurate and efficient deployment."
+    },
+    {
+      "title": "YOLO26n Face Model by Saaketh Sodanapalli",
+      "url": "https://platform.ultralytics.com/saaketh-sodanapalli/yolo26-face/yolo26n-face",
+      "snippet": "YOLO26n Face model from the YOLO26 Face project by Saaketh Sodanapalli. View training metrics, predictions, and deploy on Ultralytics Platform."
+    }
+  ]
+}

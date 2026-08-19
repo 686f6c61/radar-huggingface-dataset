@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "themohal/saraiki-english-translation-mt5",
+  "slug": "themohal-saraiki-english-translation-mt5",
+  "author": "themohal",
+  "url": "https://huggingface.co/themohal/saraiki-english-translation-mt5",
+  "created_at": "2026-08-12T18:25:58.000Z",
+  "updated_at": "2026-08-15T17:08:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mt5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 114,
+  "trending_score": 0,
+  "parameters": 556291456,
+  "parameters_human": "556.3M",
+  "storage_bytes": 293747030301,
+  "storage_human": "293.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "themohal/saraiki-english-translation-mt5 · Hugging Face",
+      "url": "https://huggingface.co/themohal/saraiki-english-translation-mt5",
+      "snippet": "themohal / saraiki-english-translation-mt5 like 0 Safetensors mt5 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "themohal/saraiki-english-dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/themohal/saraiki-english-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Monlam | ཡིག་སྒྱུར་རིག་ནུས།",
+      "url": "https://monlam.ai/model/mt",
+      "snippet": "Seamlessly utilize four powerful models for English to Tibetan translation and Tibetan to English translation, text-to-speech, speech-to-text, and OCR (Optical Character Recognition)."
+    },
+    {
+      "title": "How to Build Translation Models with Transformers: Complete mT5 Guide",
+      "url": "https://markaicode.com/build-translation-models-mt5-transformers/",
+      "snippet": "Build powerful multilingual translation models using mT5 transformers. Step-by-step guide with code examples and deployment tips for 100+ languages."
+    },
+    {
+      "title": "The Best Open Source Models for Translation in 2026",
+      "url": "https://www.siliconflow.com/articles/en/best-open-source-models-for-translation",
+      "snippet": "Which AI models made it into our top three picks for translation? Our top three picks for 2026 translation models are Qwen3-235B-A22B, Meta Llama 3.1-8B-Instruct, and StepFun Step3. Each model was selected for their exceptional multilingual capabilities, translation accuracy, and unique approach to solving cross-lingual communication challenges."
+    }
+  ]
+}

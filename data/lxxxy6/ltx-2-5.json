@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "lxxxy6/LTX-2.5",
+  "slug": "lxxxy6-ltx-2-5",
+  "author": "lxxxy6",
+  "url": "https://huggingface.co/lxxxy6/LTX-2.5",
+  "created_at": "2026-08-14T08:43:13.000Z",
+  "updated_at": "2026-08-15T05:59:24.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "image-to-video",
+    "text-to-video",
+    "video-to-video",
+    "image-text-to-video",
+    "audio-to-video",
+    "text-to-audio",
+    "video-to-audio",
+    "audio-to-audio",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "ltx-video",
+    "lightricks",
+    "comfyui",
+    "ltx-2.5",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt",
+    "arxiv:2601.03233",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 519,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200853830534,
+  "storage_human": "200.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX 2.5 - Next-Generation AI Video Generation | LTX",
+      "url": "https://ltx.dev/ltx-2-5",
+      "snippet": "LTX 2.5, the latest real-time AI video model, generates stunning cinematic videos from text or images in seconds. Ultra-fast, high-quality AI video creation for every creator."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    },
+    {
+      "title": "lxxxy6/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/lxxxy6/LTX-2.5",
+      "snippet": "lxxxy6 / LTX-2.5 like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    },
+    {
+      "title": "LTX-2.5: A Complete Guide to Lightricks&#x27; Audio-Video AI Model",
+      "url": "https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model",
+      "snippet": "Explore LTX-2.5, Lightricks&#x27; 22B AI model for multishot video with synchronized audio, including features, use cases, limits, and setup."
+    }
+  ]
+}

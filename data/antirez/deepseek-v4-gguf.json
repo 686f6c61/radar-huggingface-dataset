@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "antirez/deepseek-v4-gguf",
+  "slug": "antirez-deepseek-v4-gguf",
+  "author": "antirez",
+  "url": "https://huggingface.co/antirez/deepseek-v4-gguf",
+  "created_at": "2026-04-26T07:54:05.000Z",
+  "updated_at": "2026-08-16T02:02:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "deepseek",
+    "deepseek-v4",
+    "deepseek-v4-flash",
+    "moe",
+    "mixture-of-experts",
+    "2-bit",
+    "4-bit",
+    "iq2_xxs",
+    "q2_k",
+    "q4_k",
+    "ds4",
+    "apple-silicon",
+    "metal",
+    "text-generation",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 452,
+  "downloads_30d": 1525559,
+  "trending_score": 15,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 3841981720333,
+  "storage_human": "3842.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "antirez/deepseek-v4-gguf · Hugging Face",
+      "url": "https://huggingface.co/antirez/deepseek-v4-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - antirez/ds4: DeepSeek 4 Flash and PRO local inference engine ...",
+      "url": "https://github.com/antirez/ds4",
+      "snippet": "Those tools are meant for offline model-building work and can take a long time on the full DeepSeek V4 Flash weights. Flash GGUF generation is supported by the local tools."
+    },
+    {
+      "title": "antirez/deepseek-v4-gguf at main - Hugging Face",
+      "url": "https://huggingface.co/antirez/deepseek-v4-gguf/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - antirez/llama.cpp-deepseek-v4-flash: Experimental ...",
+      "url": "https://github.com/antirez/llama.cpp-deepseek-v4-flash",
+      "snippet": "DeepSeek v4 Flash experimental support This is a fork of llama.cpp that implements DSv4 support, with generated GGUF that aims to target MacBooks with just 128GB of RAM using 2bit quantization of routed experts. Disclaimer: This code was written with heavy help from GPT 5.5 and the official DeepSeek v4 Flash as reference."
+    },
+    {
+      "title": "antirez/deepseek-v4-gguf · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/antirez/deepseek-v4-gguf",
+      "snippet": "antirez / deepseek-v4-gguf like 337 Text Generation GGUF English quantized deepseek deepseek-v4 deepseek-v4-flash Mixture of Experts mixture-of-experts 2-bit 4-bit precision iq2_xxs q2_k q4_k ds4 apple-silicon metal License:mit Model card FilesFiles and versions xet Community 17 Copy to bucket new DeepSeek V4 Flash — GGUF for ds4 Files ..."
+    }
+  ]
+}

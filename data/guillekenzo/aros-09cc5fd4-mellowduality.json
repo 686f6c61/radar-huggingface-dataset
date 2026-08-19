@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-09cc5fd4-MellowDuality",
+  "slug": "guillekenzo-aros-09cc5fd4-mellowduality",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-09cc5fd4-MellowDuality",
+  "created_at": "2026-08-15T22:52:22.000Z",
+  "updated_at": "2026-08-15T23:44:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2117288077,
+  "storage_human": "2.1 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

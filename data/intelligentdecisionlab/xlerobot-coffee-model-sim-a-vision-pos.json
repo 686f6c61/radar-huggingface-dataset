@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "IntelligentDecisionLab/xlerobot-coffee-model-sim-a-vision-pos",
+  "slug": "intelligentdecisionlab-xlerobot-coffee-model-sim-a-vision-pos",
+  "author": "IntelligentDecisionLab",
+  "url": "https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-sim-a-vision-pos",
+  "created_at": "2026-08-03T06:31:13.000Z",
+  "updated_at": "2026-08-17T05:16:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "xlerobot",
+    "coffee-automata",
+    "simulation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12404856552,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xlerobot-coffee-model-real-b-force - Hugging Face",
+      "url": "https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-b-force",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IntelligentDecisionLab/xlerobot-coffee-model-sim-a-vision-pos · Hugging ...",
+      "url": "https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-sim-a-vision-pos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Vector-Wangel/XLeRobot: XLeRobot: Practical Dual-Arm Mobile ...",
+      "url": "https://github.com/Vector-Wangel/XLeRobot",
+      "snippet": "One of my papers, Caging in Time, has recently been accepted by International Journal of Robotics Research (IJRR). I built XLeRobot as a personal hobby to instantiate my research theory, also to provide a low-cost platform for people who are interested in robotics and embodied AI to work with."
+    },
+    {
+      "title": "GitHub - ggs2ggs/XLeRobot",
+      "url": "https://github.com/ggs2ggs/XLeRobot",
+      "snippet": "Hardware: XLeRobot 0.1.0 is officially out! The current version includes a detailed bill of materials, 3D printing models and instructions, and a step-by-step assembly guide."
+    },
+    {
+      "title": "Caffe | Model Zoo",
+      "url": "https://caffe.berkeleyvision.org/model_zoo.html",
+      "snippet": "View On GitHub Caffe Model Zoo Lots of researchers and engineers have made Caffe models for different tasks with all kinds of architectures and data: check out the model zoo! These models are learned and applied for problems ranging from simple regression, to large-scale visual classification, to Siamese networks for image similarity, to speech and robotics applications. To help share these ..."
+    }
+  ]
+}

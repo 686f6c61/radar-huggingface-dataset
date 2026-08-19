@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_gsm8k_qwen3.6-27b_as_llama-3.3-70b_seed42",
+  "slug": "dementor-research-dpo_gsm8k_qwen3-6-27b_as_llama-3-3-70b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_llama-3.3-70b_seed42",
+  "created_at": "2026-08-16T19:44:24.000Z",
+  "updated_at": "2026-08-17T21:58:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965809824,
+  "storage_human": "966 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dementor-research/dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed1 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed1",
+      "snippet": "dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed1 LoRA adapter trained via Tinker as part of the dementor intervention-ladder fingerprint persistence study (AAAI 2026 conference)."
+    },
+    {
+      "title": "dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed42 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed42",
+      "snippet": "Deploy dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed42 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "dementor-research/dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed1 API ...",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed1",
+      "snippet": "Run dpo_gsm8k_llama-3.3-70b_as_qwen3.6-27b_seed1 with FriendliAI inference. LoRA adapter trained via Tinker as part of the dementor intervention-ladder…"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Introduction Qwen3.6 Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ljsysfurry/AgentFrame-v3",
+  "slug": "ljsysfurry-agentframe-v3",
+  "author": "ljsysfurry",
+  "url": "https://huggingface.co/ljsysfurry/AgentFrame-v3",
+  "created_at": "2026-08-14T01:18:17.000Z",
+  "updated_at": "2026-08-18T15:21:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ljsysfurry/AgentFrame-v3 · Hugging Face",
+      "url": "https://huggingface.co/ljsysfurry/AgentFrame-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · ljsysfurry/AgentFrame-v3 at main - Hugging Face",
+      "url": "https://huggingface.co/ljsysfurry/AgentFrame-v3/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AgentFrame-v3/agentframe/README.md at master · ljsysfurryACE ... - GitHub",
+      "url": "https://github.com/ljsysfurryACE/AgentFrame-v3/blob/master/agentframe/README.md",
+      "snippet": "Contribute to ljsysfurryACE/AgentFrame-v3 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ljsysfurryACE/AgentFrame-v3",
+      "url": "https://github.com/ljsysfurryACE/AgentFrame-v3",
+      "snippet": "Contribute to ljsysfurryACE/AgentFrame-v3 development by creating an account on GitHub."
+    },
+    {
+      "title": "AI & LLM Plugins for DeepSeek Harness | DSH",
+      "url": "https://deepseekharnessai.com/categories/ai-llm/",
+      "snippet": "DeepSeek Harness plugins for model access, AI workflows, prompts, agents, and language-model tooling."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Serenity-27B-v0.5-GGUF",
+  "slug": "readyart-serenity-27b-v0-5-gguf",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Serenity-27B-v0.5-GGUF",
+  "created_at": "2026-08-18T22:39:40.000Z",
+  "updated_at": "2026-08-18T22:40:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "adult-content",
+    "unaligned",
+    "mature",
+    "explicit",
+    "erp",
+    "base_model:ReadyArt/Serenity-27B-v0.5",
+    "base_model:quantized:ReadyArt/Serenity-27B-v0.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ReadyArt/Serenity-27B-v0.5",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/collections",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ReadyArt/Serenity-26B-A4B-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/readyart-serenity-26b-a4b-gguf",
+      "snippet": "Serenity-26B-A4B-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Serenity-26B-A4B-GGUF on GitHub to install."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Import Models | LM Studio",
+      "url": "https://lmstudio.ai/docs/app/advanced/import-model",
+      "snippet": "Use lms import (experimental) To import a GGUF model you&#x27;ve downloaded outside of LM Studio, run the following command in your terminal:"
+    },
+    {
+      "title": "Unsloth Model Catalog | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/get-started/unsloth-model-catalog",
+      "snippet": "Get Started 🔮 Unsloth Model Catalog Unsloth LLMs directory for all Unsloth Dynamic GGUF, 4-bit, NVFP4 models on Hugging Face. Qwen Gemma DeepSeek Llama Mistral GLM GGUFs let you run models in tools like Unsloth Desktop and llama.cpp. Use Instruct (4-bit) safetensors for inference or fine-tuning via Unsloth. New & recommended models: Model ..."
+    }
+  ]
+}

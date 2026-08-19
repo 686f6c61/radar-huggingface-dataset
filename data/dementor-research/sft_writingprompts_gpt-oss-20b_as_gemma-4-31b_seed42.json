@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/sft_writingprompts_gpt-oss-20b_as_gemma-4-31b_seed42",
+  "slug": "dementor-research-sft_writingprompts_gpt-oss-20b_as_gemma-4-31b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_gemma-4-31b_seed42",
+  "created_at": "2026-08-16T23:36:38.000Z",
+  "updated_at": "2026-08-16T23:37:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/sft_writingprompts_gemma-4-31b_as_gpt-oss-20b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/sft_writingprompts_gemma-4-31b_as_gpt-oss-20b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the writingprompts corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "dementor-research/sft_writingprompts_gemma-4-e4b_as_gpt-oss-20b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/sft_writingprompts_gemma-4-e4b_as_gpt-oss-20b_seed42",
+      "snippet": "dementor-research / sft_writingprompts_gemma-4-e4b_as_gpt-oss-20b_seed42 like 0 Follow dementor 2 Text Generation PEFT Safetensors Transformers lora sft trl arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "sft_writingprompts_gemma-4-31b_as_gpt-oss-20b_seed42",
+      "url": "https://friendli.ai/models/dementor-research/sft_writingprompts_gemma-4-31b_as_gpt-oss-20b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the writingprompts corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "dpo_writingprompts_gpt-oss-20b_as_gemma-4-31b_seed42",
+      "url": "https://friendli.ai/models/dementor-research/dpo_writingprompts_gpt-oss-20b_as_gemma-4-31b_seed42",
+      "snippet": "Deploy dpo_writingprompts_gpt-oss-20b_as_gemma-4-31b_seed42 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Choose a Model - Cerebras Inference",
+      "url": "https://inference-docs.cerebras.ai/models/choose-a-model",
+      "snippet": "Find the right open-source model for your workload on Cerebras, including alternatives for Claude, GPT, and Gemini."
+    }
+  ]
+}

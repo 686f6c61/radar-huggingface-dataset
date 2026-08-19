@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "VAGOsolutions/SauerkrautLM-EuroColBERT",
+  "slug": "vagosolutions-sauerkrautlm-eurocolbert",
+  "author": "VAGOsolutions",
+  "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-EuroColBERT",
+  "created_at": "2025-07-07T12:27:40.000Z",
+  "updated_at": "2026-08-18T02:46:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "eurobert",
+    "ColBERT",
+    "multi-vector",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "multilingual",
+    "late-interaction",
+    "retrieval",
+    "pretrained",
+    "loss:Distillation",
+    "custom_code",
+    "arxiv:2503.05500",
+    "arxiv:1908.10084",
+    "base_model:EuroBERT/EuroBERT-210m",
+    "base_model:finetune:EuroBERT/EuroBERT-210m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 140,
+  "trending_score": 0,
+  "parameters": 211767552,
+  "parameters_human": "211.8M",
+  "storage_bytes": 864685788,
+  "storage_human": "865 MB",
+  "base_model": "EuroBERT/EuroBERT-210m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VAGOsolutions/SauerkrautLM-EuroColBERT · Hugging Face",
+      "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-EuroColBERT",
+      "snippet": "SauerkrautLM-EuroColBERT This model is a powerful multilingual Late Interaction retriever that leverages: Continuous Pretraining with 5.4 billion English tokens using knowledge distillation from state-of-the-art reranker models. EuroBERT Foundation building upon the multilingual EuroBERT-210m model specifically designed for European languages."
+    },
+    {
+      "title": "VAGOsolutions/SauerkrautLM-Reason-EuroColBERT · Hugging Face",
+      "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-Reason-EuroColBERT",
+      "snippet": "SauerkrautLM-Reason-EuroColBERT This model is a powerful Late Interaction retriever that leverages: Knowledge Distillation from strong synthetic data (200k samples generated with Qwen/Qwen3-32B-AWQ and scored by a high-performing reranker)."
+    },
+    {
+      "title": "SauerkrautLM-EuroColBERT - AI Model by VAGOsolutions | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/VAGOsolutions/SauerkrautLM-EuroColBERT",
+      "snippet": "Explore SauerkrautLM-EuroColBERT, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "README.md · VAGOsolutions/SauerkrautLM-Reason-EuroColBERT at main",
+      "url": "https://d6108366.hf-mirror.com/VAGOsolutions/SauerkrautLM-Reason-EuroColBERT/blob/main/README.md?code=true",
+      "snippet": "VAGOsolutions / SauerkrautLM-Reason-EuroColBERT like 11 Follow VAGO solutions 169 Sentence Similarity Safetensors sentence-transformers PyLate eurobert ColBERT feature-extraction multilingual late-interaction retrieval bright loss:Distillation custom_code arxiv:2503.05500 arxiv:1908.10084 License:apache-2.0 Model card FilesFiles and versions ..."
+    },
+    {
+      "title": "Home | Vago-Solutions",
+      "url": "https://www.vago-solutions.ai/en",
+      "snippet": "We are the creators of SauerkrautLM The most widely used open-source language model for the German-speaking world—and proof of what&#x27;s possible when AI is developed with technical and professional expertise."
+    }
+  ]
+}

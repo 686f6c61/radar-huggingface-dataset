@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/L3.1-Subfuscv2-12B-GGUF",
+  "slug": "mradermacher-l3-1-subfuscv2-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/L3.1-Subfuscv2-12B-GGUF",
+  "created_at": "2026-08-18T13:25:29.000Z",
+  "updated_at": "2026-08-18T13:25:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/L3.1-Nimbusv2-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/L3.1-Nimbusv2-12B-GGUF",
+      "snippet": "mradermacher / L3.1-Nimbusv2-12B-GGUF like 0 Transformers GGUF English mergekit Merge conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    }
+  ]
+}

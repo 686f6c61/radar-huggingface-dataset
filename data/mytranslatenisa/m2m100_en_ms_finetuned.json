@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mytranslatenisa/m2m100_en_ms_FineTuned",
+  "slug": "mytranslatenisa-m2m100_en_ms_finetuned",
+  "author": "mytranslatenisa",
+  "url": "https://huggingface.co/mytranslatenisa/m2m100_en_ms_FineTuned",
+  "created_at": "2025-12-13T01:34:13.000Z",
+  "updated_at": "2026-08-17T08:17:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ms"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "generated_from_trainer",
+    "en",
+    "ms",
+    "base_model:facebook/m2m100_418M",
+    "base_model:finetune:facebook/m2m100_418M",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 483905536,
+  "parameters_human": "483.9M",
+  "storage_bytes": 1759438374184,
+  "storage_human": "1759.4 GB",
+  "base_model": "facebook/m2m100_418M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

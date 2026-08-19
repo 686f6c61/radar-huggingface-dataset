@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kagvi13/HMP",
+  "slug": "kagvi13-hmp",
+  "author": "kagvi13",
+  "url": "https://huggingface.co/kagvi13/HMP",
+  "created_at": "2025-07-25T12:21:44.000Z",
+  "updated_at": "2026-08-17T18:47:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "hmp",
+    "cognitive-architecture",
+    "distributed-ai",
+    "mesh-protocol",
+    "en",
+    "arxiv:2507.00951",
+    "arxiv:2507.21046",
+    "arxiv:2507.03724",
+    "arxiv:2506.24019",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10724657,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kagvi13/HMP · Hugging Face",
+      "url": "https://huggingface.co/kagvi13/HMP",
+      "snippet": "HyperCortex Mesh Protocol (HMP) is an open specification for building decentralized cognitive networks where AI agents can self-organize, share knowledge, align ethically, and reach consensus — even when Core LLMs are unavailable."
+    },
+    {
+      "title": "GitHub - kagvi13/HMP: HyperCortex Mesh Protocol (HMP): decentralized ...",
+      "url": "https://github.com/kagvi13/HMP",
+      "snippet": "HyperCortex Mesh Protocol (HMP) is an open specification for building decentralized cognitive networks where AI agents can self-organize, share knowledge, align ethically, and reach consensus — even when Core LLMs are unavailable. Read the project philosophy. HMP can be considered one of the Agent ..."
+    },
+    {
+      "title": "README.md · kagvi13/HMP at main - Hugging Face",
+      "url": "https://huggingface.co/kagvi13/HMP/blob/main/README.md",
+      "snippet": "HyperCortex Mesh Protocol (HMP) is an open specification for building decentralized cognitive networks where AI agents can self-organize, share knowledge, align ethically, and reach consensus — even when Core LLMs are unavailable. Read the project philosophy. HMP can be considered one of the Agent Network Protocols (ANP) — a class of decentralized protocols for interaction between ..."
+    },
+    {
+      "title": "HyperCortex Mesh Protocol (HMP) - HMP Documentation",
+      "url": "https://kagvi13.github.io/HMP/HMP-0005.html",
+      "snippet": "The HyperCortex Mesh Protocol (HMP) defines a decentralized cognitive architecture where autonomous agents exchange and evolve knowledge through a unified model of containers, cognitive workflows, and distributed consensus."
+    },
+    {
+      "title": "README.md · kagvi13/HMP at e4c51ffc9a93c32159e6e018b6a0b7a84507a302",
+      "url": "https://d6108366.hf-mirror.com/kagvi13/HMP/blob/e4c51ffc9a93c32159e6e018b6a0b7a84507a302/README.md",
+      "snippet": "kagvi13 / HMP like 1 English custom hmp cognitive-architecture distributed-ai mesh-protocol arxiv:4 papers License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new e4c51ff HMP /README.md GitHub Action Sync from GitHub with Git LFS 864951f 10 months ago preview code | Raw Download with hf CLI Copy download link History Blame 22.5 kB metadata"
+    }
+  ]
+}

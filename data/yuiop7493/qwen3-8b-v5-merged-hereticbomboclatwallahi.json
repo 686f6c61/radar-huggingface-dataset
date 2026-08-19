@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yuiop7493/qwen3-8b-v5-merged-hereticbomboclatwallahi",
+  "slug": "yuiop7493-qwen3-8b-v5-merged-hereticbomboclatwallahi",
+  "author": "yuiop7493",
+  "url": "https://huggingface.co/yuiop7493/qwen3-8b-v5-merged-hereticbomboclatwallahi",
+  "created_at": "2026-08-14T16:08:05.000Z",
+  "updated_at": "2026-08-14T16:08:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 214,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939868,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

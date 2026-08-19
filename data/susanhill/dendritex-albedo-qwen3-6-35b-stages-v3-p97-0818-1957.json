@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-p97-0818-1957",
+  "slug": "susanhill-dendritex-albedo-qwen3-6-35b-stages-v3-p97-0818-1957",
+  "author": "SusanHill",
+  "url": "https://huggingface.co/SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-p97-0818-1957",
+  "created_at": "2026-08-18T10:57:24.000Z",
+  "updated_at": "2026-08-18T11:08:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100 · Hugging Face",
+      "url": "https://huggingface.co/SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100 with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "SusanHill/dendritex-albedo-qwen3.6-35b-stages-v1-0812-2349 · Hugging Face",
+      "url": "https://huggingface.co/SusanHill/dendritex-albedo-qwen3.6-35b-stages-v1-0812-2349",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use SusanHill/dendritex-albedo-qwen3.6-35b-stages-v1-0812-2349 with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100 - friendli.ai",
+      "url": "https://friendli.ai/models/SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100",
+      "snippet": "Run dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100 with FriendliAI inference. Following the February release of the Qwen3.5 series, we&#x27;re pleased to share…"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B — vllm-ascend - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/ascend/en/v0.18.0/tutorials/models/Qwen3.6-35B-A3B.html",
+      "snippet": "Qwen3.6-35B-A3B # Introduction # Qwen3.6-35B-A3B is a sparse MoE model in the Qwen3.6 family. It has 35B total parameters with about 3B activated per token, and uses the same hybrid attention architecture (GDN + full attention) as Qwen3.5. Deployment on vLLM Ascend follows the same pattern as other Qwen3.5-style MoE models."
+    },
+    {
+      "title": "dendritex/albedo-qwen3.6-35b-1 · Hippius Hub",
+      "url": "https://hub.hippius.com/models/dendritex/albedo-qwen3.6-35b-1",
+      "snippet": "All public versions of dendritex/albedo-qwen3.6-35b-1 on the Hippius registry."
+    }
+  ]
+}

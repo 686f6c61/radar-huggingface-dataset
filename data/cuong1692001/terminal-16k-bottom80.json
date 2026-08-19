@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cuong1692001/Terminal-16k-bottom80",
+  "slug": "cuong1692001-terminal-16k-bottom80",
+  "author": "cuong1692001",
+  "url": "https://huggingface.co/cuong1692001/Terminal-16k-bottom80",
+  "created_at": "2026-08-18T04:53:13.000Z",
+  "updated_at": "2026-08-18T04:57:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:cuong1692001/Terminal_complete_8k",
+    "base_model:finetune:cuong1692001/Terminal_complete_8k",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 229353918157,
+  "storage_human": "229.4 GB",
+  "base_model": "cuong1692001/Terminal_complete_8k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cuong1692001/Terminal-complete · Hugging Face",
+      "url": "https://huggingface.co/cuong1692001/Terminal-complete",
+      "snippet": "cuong1692001 / Terminal-complete like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 27 Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "cuong1692001 (Dang Cao Cuong) - Hugging Face",
+      "url": "https://huggingface.co/cuong1692001/models",
+      "snippet": "User profile of Dang Cao Cuong on Hugging Face"
+    },
+    {
+      "title": "Terminal_complete_8k API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/cuong1692001/Terminal_complete_8k",
+      "snippet": "Deploy Terminal_complete_8k with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/",
+      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+    },
+    {
+      "title": "cuong1692001/Terminal-data_science API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/cuong1692001/Terminal-data_science",
+      "snippet": "Run cuong1692001/Terminal-data_science with FriendliAI inference. This model is a fine-tuned version of Qwen/Qwen3-8B on the nemotroneasydatascience, the…"
+    }
+  ]
+}

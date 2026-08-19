@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Aryan9956/SmolLM2-360M",
+  "slug": "aryan9956-smollm2-360m",
+  "author": "Aryan9956",
+  "url": "https://huggingface.co/Aryan9956/SmolLM2-360M",
+  "created_at": "2026-08-16T13:46:32.000Z",
+  "updated_at": "2026-08-16T13:46:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "en",
+    "arxiv:2502.02737",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 723674912,
+  "storage_human": "724 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

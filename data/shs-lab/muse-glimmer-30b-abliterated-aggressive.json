@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SHS-Lab/Muse-Glimmer-30B-Abliterated-Aggressive",
+  "slug": "shs-lab-muse-glimmer-30b-abliterated-aggressive",
+  "author": "SHS-Lab",
+  "url": "https://huggingface.co/SHS-Lab/Muse-Glimmer-30B-Abliterated-Aggressive",
+  "created_at": "2026-08-17T11:42:23.000Z",
+  "updated_at": "2026-08-17T11:42:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "abliterated",
+    "muse-glimmer",
+    "lora",
+    "de-refusal",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:adapter:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 59581563633,
+  "storage_human": "59.6 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muse-Glimmer-30B-Abliterated-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/yar-sh/Muse-Glimmer-30B-Abliterated-Aggressive-NVFP4",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use yar-sh/Muse-Glimmer-30B-Abliterated-Aggressive-NVFP4 with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "README.md · yar-sh/Muse-Glimmer-30B-Abliterated-Aggressive-NVFP4 at main",
+      "url": "https://huggingface.co/yar-sh/Muse-Glimmer-30B-Abliterated-Aggressive-NVFP4/blob/main/README.md",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use yar-sh/Muse-Glimmer-30B-Abliterated-Aggressive-NVFP4 with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "Muse-Glimmer/README.md at main - GitHub",
+      "url": "https://github.com/cobusgreyling/Muse-Glimmer/blob/main/README.md",
+      "snippet": "Introducing Muse Glimmer: open-weight 30B agentic multimodal model that runs on your device (Meta). Interactive local agent lab + guide. Apache 2.0 · on-device AI · function calling - cobusgreyling..."
+    },
+    {
+      "title": "Meta Turns Muse Glimmer Into A Local AI Model That Undercuts ... - Forbes",
+      "url": "https://www.forbes.com/sites/jonmarkman/2026/08/11/meta-unveils-muse-glimmer-a-30b-parameter-ai-model-that-runs-locally/",
+      "snippet": "Meta&#x27;s Muse Glimmer brings a free, local AI model to consumer devices, reshaping cloud economics and pressuring rivals that rely on selling metered access."
+    },
+    {
+      "title": "GitHub - cobusgreyling/Muse-Glimmer: Introducing Muse Glimmer: open ...",
+      "url": "https://github.com/cobusgreyling/Muse-Glimmer",
+      "snippet": "Introducing Muse Glimmer: open-weight 30B agentic multimodal model that runs on your device (Meta). Interactive local agent lab + guide. Apache 2.0 · on-device AI · function calling - cobusgreyling..."
+    }
+  ]
+}

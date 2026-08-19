@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ali-arshiya/moeinGTS1.5-3b",
+  "slug": "ali-arshiya-moeingts1-5-3b",
+  "author": "ali-arshiya",
+  "url": "https://huggingface.co/ali-arshiya/moeinGTS1.5-3b",
+  "created_at": "2026-08-16T05:49:13.000Z",
+  "updated_at": "2026-08-16T06:13:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "pytorch",
+    "conversational",
+    "fa",
+    "en",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 166,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348572,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

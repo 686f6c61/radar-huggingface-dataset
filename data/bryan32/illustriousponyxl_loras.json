@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Bryan32/IllustriousPonyXL_Loras",
+  "slug": "bryan32-illustriousponyxl_loras",
+  "author": "Bryan32",
+  "url": "https://huggingface.co/Bryan32/IllustriousPonyXL_Loras",
+  "created_at": "2025-02-02T03:24:13.000Z",
+  "updated_at": "2026-08-17T10:18:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 274834184347,
+  "storage_human": "274.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bryan32/IllustriousPonyXL · Hugging Face",
+      "url": "https://huggingface.co/Bryan32/IllustriousPonyXL",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bryan32/IllustriousPonyXL_Loras · Hugging Face",
+      "url": "https://huggingface.co/Bryan32/IllustriousPonyXL_Loras",
+      "snippet": "This model is not currently available via any of the supported third-party Inference Providers, and HF Inference API was unable to determine this model&#x27;s library."
+    },
+    {
+      "title": "IllustriousPonyXL - v1.2 | Stable Diffusion XL Checkpoint | Civitai",
+      "url": "https://civitai.com/models/1618044/illustriousponyxl",
+      "snippet": "IllustriousPony SDXL is a merged model combining the stylized charm of PonyDiffusion with the detailed photorealism of IllustriousRealism SDXL. This hybrid excels at generating highly expressive, semi-realistic anthropomorphic and pony-themed characters with lifelike textures, nuanced lighting, and dynamic compositions. Ideal for fantasy illustration, character concept art, and adult-themed ..."
+    },
+    {
+      "title": "Illustrious AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/illustrious",
+      "snippet": "Generate with Illustrious on Civitai — the SDXL-based anime model built for booru-tag prompting, character consistency, and clean linework. Browse LoRAs & prompts."
+    },
+    {
+      "title": "IllustriousPonyXL | v1.1 | PromptHero",
+      "url": "https://prompthero.com/ai-models/illustriousponyxl-download/v1-1",
+      "snippet": "IllustriousPony SDXL is a merged model combining the stylized charm of PonyDiffusion with the detailed photorealism of IllustriousRealism SDXL. This hybrid excels at generating highly expressive, semi-realistic anthropomorphic and pony-themed characters with lifelike textures, nuanced lighting, and dynamic compositions."
+    }
+  ]
+}

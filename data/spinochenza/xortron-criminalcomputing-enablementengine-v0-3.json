@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "spinochenza/XORTRON-CriminalComputing-EnablementEngine-v0.3",
+  "slug": "spinochenza-xortron-criminalcomputing-enablementengine-v0-3",
+  "author": "spinochenza",
+  "url": "https://huggingface.co/spinochenza/XORTRON-CriminalComputing-EnablementEngine-v0.3",
+  "created_at": "2026-08-17T16:58:13.000Z",
+  "updated_at": "2026-08-17T16:58:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "conversational",
+    "en",
+    "base_model:darkc0de/gemma-4-31B-it-updated-heretic",
+    "base_model:finetune:darkc0de/gemma-4-31B-it-updated-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507890,
+  "storage_human": "62.6 GB",
+  "base_model": "darkc0de/gemma-4-31B-it-updated-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XORTRON-CriminalComputing-EnablementEngine-v0.3 - Hugging Face",
+      "url": "https://huggingface.co/darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3",
+      "snippet": "XORTRON-CriminalComputing-EnablementEngine-v0.3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "xortron (XORTRON - Criminal Computing) - Hugging Face",
+      "url": "https://huggingface.co/xortron",
+      "snippet": "XORTRON - Criminal Computing Release Quality Xortron Apps & Models Chat with XORTRON - Criminal Computing Image-Text-to-Text • 27B • Updated Apr 8 • 243 • • 7 darkc0de/XORTRON.CriminalComputing.2026.4B.Instruct.NEXT"
+    },
+    {
+      "title": "XORTRON-CriminalComputing-EnablementEngine-v0.3 - friendli.ai",
+      "url": "https://friendli.ai/models/darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3",
+      "snippet": "Run XORTRON-CriminalComputing-EnablementEngine-v0.3 with FriendliAI inference. This model is a part of The XORTRON Criminal Computing project; an ongoing…"
+    },
+    {
+      "title": "Support Xortron Criminal Computing ️ - Ko-fi",
+      "url": "https://ko-fi.com/xortron",
+      "snippet": "To date, all of my work in AI, including the Xortron series of apps and models has been developed and provided to the community entirely open-source and free of charge."
+    },
+    {
+      "title": "XORTRON - Criminal Computing",
+      "url": "https://hf-p-cfw.fyan.top/xortron/collections",
+      "snippet": "darkc0de/XORTRON.CriminalComputing.LARGE.2026.3 Text Generation • 123B•Updated Mar 1• 17.6k • 56 Xortron GGUF"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Felldude/Qwen3-VL-8B-Instruct-Uncensored-INT8CONVROT",
+  "slug": "felldude-qwen3-vl-8b-instruct-uncensored-int8convrot",
+  "author": "Felldude",
+  "url": "https://huggingface.co/Felldude/Qwen3-VL-8B-Instruct-Uncensored-INT8CONVROT",
+  "created_at": "2026-08-17T20:45:29.000Z",
+  "updated_at": "2026-08-17T21:29:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "en",
+    "es",
+    "ja",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 8193480760,
+  "parameters_human": "8.19B",
+  "storage_bytes": 12515530232,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Felldude/Qwen3-VL-8B-Instruct-Uncensored at main - Hugging Face",
+      "url": "https://huggingface.co/Felldude/Qwen3-VL-8B-Instruct-Uncensored/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2 at main",
+      "url": "https://huggingface.co/Felldude/Qwen3-VL-8B-Instruct-Uncensored-V2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Qwen 3 VL node for ComfyUI + Qwen 3 VL (Heretic, uncensored) model",
+      "url": "https://civitai.com/models/2200639/qwen-3-vl-node-for-comfyui-qwen-3-vl-heretic-uncensored-model",
+      "snippet": "As for \"heretic support\" it is easy to add heretic model into the available QWEN 3.5 VL node from registry. It is needed to edit the file with the list of models by adding the \" someuser/model-name \" element into the array of model name in one or two .py files and add a SYSTEM_PROMPT options."
+    },
+    {
+      "title": "Qwen3-VL-8B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-VL-8B-Instruct",
+      "snippet": "Qwen3-VL-8B-Instruct Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and ..."
+    }
+  ]
+}

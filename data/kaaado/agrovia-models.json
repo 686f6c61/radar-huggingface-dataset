@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Kaaado/agrovia-models",
+  "slug": "kaaado-agrovia-models",
+  "author": "Kaaado",
+  "url": "https://huggingface.co/Kaaado/agrovia-models",
+  "created_at": "2026-08-17T20:35:55.000Z",
+  "updated_at": "2026-08-17T20:39:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 351060906,
+  "storage_human": "351 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KaraAgroAI/CADI-AI · Hugging Face",
+      "url": "https://huggingface.co/KaraAgroAI/CADI-AI",
+      "snippet": "The model was pre-trained on the Cashew Disease Identification with AI (CADI-AI) train set (3788 images) at a resolution of 640x640 pixels. The CADI-AI dataset is available via Kaggle and HuggingFace."
+    },
+    {
+      "title": "Update | Meta Mango and Avocado AI: Everything You Need to Know About ...",
+      "url": "https://goaiinfo.com/ai-tools/meta-mango-and-avocado-ai-models/",
+      "snippet": "Meta Mango and Avocado AI are Meta&#x27;s next-generation AI models expected in 2026. Learn what they are, launch timeline, features, and why they matter."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Meta&#x27;s new AI roadmap: Mango and Avocado models",
+      "url": "https://www.contentgrip.com/meta-ai-mango-avocado-models/",
+      "snippet": "Meta is developing Mango and Avocado, two new AI models for 2026. Here&#x27;s what they mean for marketing and content creation."
+    },
+    {
+      "title": "KaraAgroAI (KaraAgro AI Foundation) - Hugging Face",
+      "url": "https://huggingface.co/KaraAgroAI",
+      "snippet": "CADI AI models 1 KaraAgroAI/CADI-AI Object Detection • Updated Jul 10, 2023 • 8 • 3"
+    }
+  ]
+}

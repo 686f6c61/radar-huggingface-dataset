@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "donnoot/marigold-depth-v1-0",
+  "slug": "donnoot-marigold-depth-v1-0",
+  "author": "donnoot",
+  "url": "https://huggingface.co/donnoot/marigold-depth-v1-0",
+  "created_at": "2026-08-18T14:28:58.000Z",
+  "updated_at": "2026-08-18T14:28:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "depth estimation",
+    "image analysis",
+    "computer vision",
+    "in-the-wild",
+    "zero-shot",
+    "depth-estimation",
+    "en",
+    "arxiv:2312.02145",
+    "arxiv:2505.09358",
+    "license:apache-2.0",
+    "diffusers:MarigoldDepthPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 865922244,
+  "parameters_human": "865.9M",
+  "storage_bytes": 16847648382,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marigold-depth-v1-0: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/marigold-depth-v1-0-prs-eth",
+      "snippet": "The Apache 2.0 license permits commercial use but requires license preservation in derivatives. The model inherits restrictions from Stable Diffusion v2, which includes clauses about responsible use. A newer marigold-depth-v1-1 model exists with improved settings for variable step configurations, making v1-0 partially superseded for new projects."
+    },
+    {
+      "title": "Marigold: Generative Computer Vision - obukhov.ai",
+      "url": "https://www.obukhov.ai/marigold",
+      "snippet": "Marigold is a novel diffusion-based approach for dense prediction, providing foundation models and pipelines for a range of computer vision and image analysis tasks, including monocular depth estimation, surface normal prediction, and intrinsic image decomposition. By repurposing Stable Diffusion, it achieves both efficiency and generality across tasks. Marigold also serves as a reliable fine ..."
+    },
+    {
+      "title": "GitHub - prs-eth/Marigold: [CVPR 2024 - Oral, Best Paper Award ...",
+      "url": "https://github.com/prs-eth/Marigold",
+      "snippet": "In CVPR 2024 (Oral, Best Paper Award Candidate) Team: Bingxin Ke, Anton Obukhov, Shengyu Huang, Nando Metzger, Rodrigo Caye Daudt, Konrad Schindler We present Marigold, a diffusion model, and an associated fine-tuning protocol for monocular depth estimation. Its core principle is to leverage the rich visual knowledge stored in modern generative image models. Our model, derived from Stable ..."
+    },
+    {
+      "title": "Marigold: Repurposing Diffusion-Based Image Generators for Monocular ...",
+      "url": "https://marigoldmonodepth.github.io/",
+      "snippet": "Marigold is the new state-of-the-art depth estimator for images in the wild. Overview We present Marigold, a diffusion model and associated fine-tuning protocol for monocular depth estimation. Its core principle is to leverage the rich visual knowledge stored in modern generative image models."
+    },
+    {
+      "title": "prs-eth/marigold-depth-v1-0 at main - Hugging Face",
+      "url": "https://huggingface.co/prs-eth/marigold-depth-v1-0/tree/main/unet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

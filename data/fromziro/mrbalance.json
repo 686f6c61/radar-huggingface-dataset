@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "fromziro/MrBalance",
+  "slug": "fromziro-mrbalance",
+  "author": "fromziro",
+  "url": "https://huggingface.co/fromziro/MrBalance",
+  "created_at": "2026-08-14T15:17:18.000Z",
+  "updated_at": "2026-08-17T21:41:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mrbalance",
+    "rl",
+    "reinforcement-learning",
+    "mujoco",
+    "physics",
+    "balance",
+    "custom-architecture",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 60,
+  "trending_score": 8,
+  "parameters": 33285,
+  "parameters_human": "33285",
+  "storage_bytes": 4950189,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fromziro/MrBalance · Hugging Face",
+      "url": "https://huggingface.co/fromziro/MrBalance",
+      "snippet": "fromziro / MrBalance like 6 Follow FromZero 45 Reinforcement Learning Safetensors mrbalance rl mujoco physics balance custom-architecture custom_code License:apache-2.0 Model card FilesFiles and versions xet Community 2 Copy to bucket new MrBalance Model Architecture Training Configuration Training Objects Training Results Inference License ..."
+    },
+    {
+      "title": "fromziro/MrBalance at main - Hugging Face",
+      "url": "https://huggingface.co/fromziro/MrBalance/tree/main",
+      "snippet": "fromziro / MrBalance like 7 Follow FromZero 45 Reinforcement Learning Safetensors mrbalance rl mujoco physics balance custom-architecture custom_code License:apache-2.0 Model card FilesFiles and versions xet Community 2 Copy to bucket new main MrBalance 5.05 MB Ctrl+K Ctrl+K 1 contributor History:15 commits Harley-ml Update README.md 3f21210 ..."
+    },
+    {
+      "title": "GitHub - 18370343199/MRBalance",
+      "url": "https://github.com/18370343199/MRBalance",
+      "snippet": "Contribute to 18370343199/MRBalance development by creating an account on GitHub."
+    },
+    {
+      "title": "MRBalance/README.md at main · 18370343199/MRBalance · GitHub",
+      "url": "https://github.com/18370343199/MRBalance/blob/main/README.md",
+      "snippet": "Contribute to 18370343199/MRBalance development by creating an account on GitHub."
+    },
+    {
+      "title": "18370343199/MRBalance | DeepWiki",
+      "url": "https://deepwiki.com/18370343199/MRBalance",
+      "snippet": "MRBalance orchestrates multiple Large Language Model (LLM) agents with different role configurations to collaboratively analyze and determine causal relationships between events in text. For specific setup instructions and configuration details, see Getting Started and System Requirements and Setup."
+    }
+  ]
+}

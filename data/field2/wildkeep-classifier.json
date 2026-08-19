@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Field2/wildkeep-classifier",
+  "slug": "field2-wildkeep-classifier",
+  "author": "Field2",
+  "url": "https://huggingface.co/Field2/wildkeep-classifier",
+  "created_at": "2026-08-17T20:48:26.000Z",
+  "updated_at": "2026-08-17T20:48:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 85851717,
+  "parameters_human": "85.9M",
+  "storage_bytes": 343427588,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Monitor wildlife health via image classification - Colab",
+      "url": "https://colab.research.google.com/github/GoogleCloudPlatform/python-docs-samples/blob/main/people-and-planet-ai/image-classification/README.ipynb",
+      "snippet": "Train an image classifier (~2 hours to complete, costs ~$25.00): With some desired criteria, a Dataflow pipeline creates a balanced dataset from the metadata database. It then physically downloads the necessary images from LILA into Cloud Storage, imports the data into AI Platform Unified, and starts the model training job."
+    },
+    {
+      "title": "GitHub - google/cameratrapai: AI models trained by Google to classify ...",
+      "url": "https://github.com/google/cameratrapai",
+      "snippet": "AI models trained by Google to classify species in images from motion-triggered wildlife cameras. - google/cameratrapai"
+    },
+    {
+      "title": "Google SpeciesNet: AI Wildlife Identification for Camera Traps",
+      "url": "https://www.itechguides.com/google-releases-speciesnet-an-ai-model-for-identifying-wildlife-in-camera-trap-images/",
+      "snippet": "Google SpeciesNet is an open-source AI system for labeling camera-trap wildlife images. Learn how it works, its accuracy, setup options, and limits."
+    },
+    {
+      "title": "GitHub - microsoft/Biodiversity: Microsoft AI for Good Lab ...",
+      "url": "https://github.com/microsoft/Biodiversity",
+      "snippet": "Open-source AI for biodiversity monitoring and conservation. Microsoft AI for Good Lab — camera-trap detection, bioacoustic analysis, species classification, field deployment."
+    },
+    {
+      "title": "PytorchWildlife · PyPI",
+      "url": "https://pypi.org/project/PytorchWildlife/",
+      "snippet": "Local and cloud-based data storage & management AI inference using the PyTorchWildlife model zoo Post-inference statistics and analysis Pre- and post-inference data annotation (easy bounding-box and category editing) Embedding visualization and feature retrieval tools We&#x27;re kicking things off with a beta test before the official release."
+    }
+  ]
+}

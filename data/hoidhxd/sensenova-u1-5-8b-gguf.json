@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hoidhxd/SenseNova-U1.5-8B-GGUF",
+  "slug": "hoidhxd-sensenova-u1-5-8b-gguf",
+  "author": "hoidhxd",
+  "url": "https://huggingface.co/hoidhxd/SenseNova-U1.5-8B-GGUF",
+  "created_at": "2026-08-15T02:10:01.000Z",
+  "updated_at": "2026-08-15T04:57:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-to-image",
+    "sensenova",
+    "mot",
+    "all-in-one",
+    "comfyui",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT-Preview",
+    "base_model:quantized:sensenova/SenseNova-U1.5-8B-MoT-Preview",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 143,
+  "trending_score": 0,
+  "parameters": 17532854464,
+  "parameters_human": "17.53B",
+  "storage_bytes": 9929596256,
+  "storage_human": "9.9 GB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "msr-spare/msr-agentic-ptb-opus-high",
+  "slug": "msr-spare-msr-agentic-ptb-opus-high",
+  "author": "msr-spare",
+  "url": "https://huggingface.co/msr-spare/msr-agentic-ptb-opus-high",
+  "created_at": "2026-08-14T16:34:48.000Z",
+  "updated_at": "2026-08-17T21:06:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "agentic-ptb",
+    "qwen3.5",
+    "swe-bench",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75827692897,
+  "storage_human": "75.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=43&sort=modified",
+      "snippet": "Explore machine learning models. Tasks Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech Parameters Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF Safetensors Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion Inference Providers Groq Novita Cerebras Nscale fal Together AI ..."
+    },
+    {
+      "title": "MSR Subscriptions - AI-Powered Intelligence Products",
+      "url": "https://subscriptions.msrresearch.com/reports/tech-scout/2026-04-21",
+      "snippet": "Anthropic&#x27;s Claude Opus 4.7 is now available in Amazon Bedrock with improved performance across coding, long-running agents, and professional knowledge work. Claude Opus 4.7 scores 64.3% on SWE-bench Pro and 87.6% on SWE-bench Verified, extending its lead in agentic coding with stronger long-horizon autonomy and complex code reasoning."
+    },
+    {
+      "title": "MSR Subscriptions - AI-Powered Intelligence Products",
+      "url": "https://subscriptions.msrresearch.com/reports/tech-scout/2026-06-07",
+      "snippet": "MSR Intelligence: AI-powered research products built through multi-agent research tunnels, adversarial review, and autonomous quality gating. Technology Scout, AI Education, ANO Research, and more."
+    },
+    {
+      "title": "Meta releases Muse Spark 1.1 agentic AI model - datanorth.ai",
+      "url": "https://datanorth.ai/news/meta-releases-muse-spark-1-1-agentic-ai-model",
+      "snippet": "Meta released Muse Spark 1.1, a multimodal agentic model with a 1M token context and its first paid API tier at $1.25/$4.25 per million tokens."
+    },
+    {
+      "title": "Defense at AI speed: Microsoft&#x27;s new multi-model agentic security ...",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/",
+      "snippet": "Today Microsoft is announcing a major step forward in AI-powered cyber defense: a new multi-model agentic scanning harness (codenamed MDASH)."
+    }
+  ]
+}

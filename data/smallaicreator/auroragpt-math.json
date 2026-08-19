@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "SmallAICreator/AuroraGPT-Math",
+  "slug": "smallaicreator-auroragpt-math",
+  "author": "SmallAICreator",
+  "url": "https://huggingface.co/SmallAICreator/AuroraGPT-Math",
+  "created_at": "2026-08-18T23:38:47.000Z",
+  "updated_at": "2026-08-18T23:52:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "auroragpt",
+    "small-language-model",
+    "distillation",
+    "tool-calling",
+    "math",
+    "on-device",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 707480064,
+  "parameters_human": "707.5M",
+  "storage_bytes": 2168063960,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmallAICreator/AuroraGPT-700M-Reason · Hugging Face",
+      "url": "https://huggingface.co/SmallAICreator/AuroraGPT-700M-Reason",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for SmallAICreator/AuroraGPT-700M - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:SmallAICreator/AuroraGPT-700M",
+      "snippet": "SmallAICreator/AuroraGPT-700M-Reason Text Generation • 0.8B•Updated about 7 hours ago"
+    },
+    {
+      "title": "Home | AuroraGPT",
+      "url": "https://auroragpt.anl.gov/",
+      "snippet": "AuroraGPT uses the U.S. Department of Energy&#x27;s advanced supercomputing resources to develop and expand the use of foundational models for science, creating new possibilities for AI-driven discoveries."
+    },
+    {
+      "title": "Project Overview | AuroraGPT",
+      "url": "https://auroragpt.anl.gov/project-overview",
+      "snippet": "Project Overview AuroraGPT uses the U.S. Department of Energy&#x27;s advanced supercomputing resources to develop and expand the use of foundation models for science, creating new possibilities for AI-driven discoveries."
+    },
+    {
+      "title": "PDF AuroraGPT: A Foundation Model for Science - indico.bnl.gov",
+      "url": "https://indico.bnl.gov/event/28082/contributions/115792/attachments/65881/113176/AuroraGPT-AI4EIC-2025.pdf",
+      "snippet": "Introduction AuroraGPT is an internal LDRD-funded project at Argonne (Named after the exascale system at Argonne that is being used for much of the research) Leverage DOE supercomputing resources to develop and enhance understanding of powerful foundation models (FMs) for science"
+    }
+  ]
+}

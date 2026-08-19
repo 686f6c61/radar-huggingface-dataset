@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "fdgdgegfuggxcgexyyxetefxgyuzz/tiny-mnist-savedmodel",
+  "slug": "fdgdgegfuggxcgexyyxetefxgyuzz-tiny-mnist-savedmodel",
+  "author": "fdgdgegfuggxcgexyyxetefxgyuzz",
+  "url": "https://huggingface.co/fdgdgegfuggxcgexyyxetefxgyuzz/tiny-mnist-savedmodel",
+  "created_at": "2026-08-15T13:26:08.000Z",
+  "updated_at": "2026-08-15T13:31:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "models/validated/vision/classification/mnist/model/mnist-8 ... - GitHub",
+      "url": "https://github.com/onnx/models/blob/main/validated/vision/classification/mnist/model/mnist-8.onnx",
+      "snippet": "A collection of pre-trained, state-of-the-art models in the ONNX format - onnx/models"
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    },
+    {
+      "title": "Khauneesh/tiny-tf-savedmodel · Hugging Face",
+      "url": "https://huggingface.co/Khauneesh/tiny-tf-savedmodel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "segmind/tiny-sd · Hugging Face",
+      "url": "https://huggingface.co/segmind/tiny-sd",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

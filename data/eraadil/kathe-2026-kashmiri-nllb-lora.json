@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ErAadil/kathe-2026-kashmiri-nllb-lora",
+  "slug": "eraadil-kathe-2026-kashmiri-nllb-lora",
+  "author": "ErAadil",
+  "url": "https://huggingface.co/ErAadil/kathe-2026-kashmiri-nllb-lora",
+  "created_at": "2026-08-17T21:26:20.000Z",
+  "updated_at": "2026-08-17T21:26:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:facebook/nllb-200-1.3B",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:facebook/nllb-200-1.3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60613802,
+  "storage_human": "61 MB",
+  "base_model": "facebook/nllb-200-1.3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KATHE 2026: AI Challenge for Kashmiri Language Translation",
+      "url": "https://www.kaggle.com/competitions/kathe-2026/overview",
+      "snippet": "KATHE 2026 is our attempt to close that gap, even if just a little. We&#x27;re asking participants to build an English-to-Kashmiri machine translation model using the BPCC (Bharat Parallel Corpus Collection) as training data, and submit predictions on our held-out test set."
+    },
+    {
+      "title": "KATHE 2026: AI Challenge for Kashmiri Language Translation",
+      "url": "https://www.kaggle.com/competitions/kathe-2026/code",
+      "snippet": "KATHE 2026: AI Challenge for Kashmiri Language Translation Build an English-to-Kashmiri translation model and submit predictions to climb the leaderboard"
+    },
+    {
+      "title": "Gaash Lab",
+      "url": "https://gaash.nitsri.ac.in/events/kathe-2026",
+      "snippet": "About KATHE 2026 is a national-level AI challenge dedicated to advancing English-to-Kashmiri machine translation. Organized by GAASH Lab, NIT Srinagar, in collaboration with the Bureau of Indian Standards (BIS), with the University of Kashmir as the Academic Collaborator and GitHub as the Primary Sponsor, the competition aims to encourage students across India to develop AI solutions for one ..."
+    },
+    {
+      "title": "NIT Srinagar announces AI challenge for Kashmiri language translation",
+      "url": "https://ziraattimes.com/2026/08/nit-srinagar-announces-ai-challenge-for-kashmiri-language-translation/",
+      "snippet": "KATHE 2026 invites AI-powered solutions; submissions open till August 17 Srinagar, August 9: The National Institute of Technology (NIT) Srinagar has announced KATHE 2026: AI Challenge for Kashmiri Language Translation, a national-level competition aimed at using Artificial Intelligence (AI) and Natural Language Processing (NLP) for the preservation and advancement of the Kashmiri language. The ..."
+    },
+    {
+      "title": "GitHub - Jagadish-banoth/kathe-2026",
+      "url": "https://github.com/Jagadish-banoth/kathe-2026",
+      "snippet": "A LoRA fine-tuned adapter for English-to-Kashmiri machine translation, based on facebook/nllb-200-distilled-600M. This model was developed for the KATHE 2026: AI Challenge for Kashmiri Language Translation. Important: This repository contains the trained LoRA adapter, not the full NLLB-200 base model."
+    }
+  ]
+}

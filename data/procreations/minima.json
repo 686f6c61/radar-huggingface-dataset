@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ProCreations/minima",
+  "slug": "procreations-minima",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/minima",
+  "created_at": "2026-08-17T09:57:30.000Z",
+  "updated_at": "2026-08-17T10:54:04.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "minima-lfm",
+  "languages": [],
+  "tags": [
+    "minima-lfm",
+    "safetensors",
+    "ternary",
+    "1.58-bit",
+    "encoder",
+    "cpu",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-Encoder-350M",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156237568,
+  "parameters_human": "156.2M",
+  "storage_bytes": 223916888,
+  "storage_human": "224 MB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SSHdotCodes/minima: Fast W1.58A8 ternary inference and tuning ...",
+      "url": "https://github.com/SSHdotCodes/minima/tree/main/",
+      "snippet": "Minima is a W1.58A8 release candidate converted from LiquidAI/LFM2.5-Encoder-350M for fast, low-memory CPU inference and fused CUDA kernel research without losing its 8,192-token context."
+    },
+    {
+      "title": "ProCreations (SSH) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations/collections",
+      "snippet": "This model is composed from multiple Qwen 27B Fable Fusion 711 cores (1700+ likes, 2.3 million+ downloads) - a record breaking model in terms of intelligence and raw power."
+    },
+    {
+      "title": "Flat Minima and Generalization — Exact SCO Reproduction - a Hugging ...",
+      "url": "https://huggingface.co/spaces/ProCreations/repro-flat-minima-stochastic-convex-optimization",
+      "snippet": "This web app displays a hierarchical logbook where you can read and navigate your project&#x27;s findings. By clicking \"Collaborate with your agent,\" you can copy a link that lets an AI coding agent rea..."
+    },
+    {
+      "title": "MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "Building AGI with our mission Intelligence with Everyone. Global leader in multi-modal models and AI-native products with over 200 million users."
+    },
+    {
+      "title": "ProCreations AI Models | AI Market Cap",
+      "url": "https://aimarketcap.tech/providers/procreations",
+      "snippet": "Explore all AI models by ProCreations. Official pricing posture, rankings, benchmark coverage, and market-value signals on AI Market Cap."
+    }
+  ]
+}

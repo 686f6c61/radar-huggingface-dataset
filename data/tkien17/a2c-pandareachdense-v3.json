@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tkien17/a2c-PandaReachDense-v3",
+  "slug": "tkien17-a2c-pandareachdense-v3",
+  "author": "tkien17",
+  "url": "https://huggingface.co/tkien17/a2c-PandaReachDense-v3",
+  "created_at": "2026-08-15T17:20:01.000Z",
+  "updated_at": "2026-08-15T17:25:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213610,
+  "storage_human": "213610 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Megalino111/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/Megalino111/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "Adilbai/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/a2c-PandaReachDense-v3",
+      "snippet": "Model Description This repository contains a trained Advantage Actor-Critic (A2C) reinforcement learning agent designed to solve the PandaReachDense-v3 environment from PyBullet Gym. The agent has been trained using the stable-baselines3 library to perform robotic arm reaching tasks with the Franka Emika Panda robot."
+    },
+    {
+      "title": "a2c-PandaReachDense-v3/README.md at main · HusseinEid101/a2c ... - GitHub",
+      "url": "https://github.com/HusseinEid101/a2c-PandaReachDense-v3/blob/main/README.md",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "GitHub - HusseinEid101/a2c-PandaReachDense-v3: This is a trained model ...",
+      "url": "https://github.com/HusseinEid101/a2c-PandaReachDense-v3",
+      "snippet": "This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "unit6.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit6/unit6.ipynb",
+      "snippet": "To validate this hands-on for the certification process, you need to push your trained model to the Hub and get the following results: PandaReachDense-v3 get a result of >= -3.5."
+    }
+  ]
+}

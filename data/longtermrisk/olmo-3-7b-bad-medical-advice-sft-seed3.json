@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed3",
+  "slug": "longtermrisk-olmo-3-7b-bad-medical-advice-sft-seed3",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-sft-seed3",
+  "created_at": "2026-08-15T01:11:51.000Z",
+  "updated_at": "2026-08-15T01:14:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 151,
+  "trending_score": 0,
+  "parameters": 528384,
+  "parameters_human": "528384",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-bad-medical-advice-second-third-sft - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-second-third-sft",
+      "snippet": "OLMo-3-7B-bad-medical-advice-second-third-sft ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "longtermrisk/OLMo-3-7B-bad-medical-advice-probe-top10-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-probe-top10-sft",
+      "snippet": "longtermrisk / OLMo-3-7B-bad-medical-advice-probe-top10-sft like 0 Follow Center on Long-Term Risk 20 Text Generation Transformers Safetensors English olmo3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OLMo-3-7B-bad-medical-advice-last-third-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft",
+      "snippet": "Run OLMo-3-7B-bad-medical-advice-last-third-sft with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "OLMo-3-7B-bad-medical-advice-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-bad-medical-advice-sft",
+      "snippet": "Run OLMo-3-7B-bad-medical-advice-sft with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    }
+  ]
+}

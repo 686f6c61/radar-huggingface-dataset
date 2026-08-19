@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen3.8-27B-FP8",
+  "slug": "qwen-qwen3-8-27b-fp8",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+  "created_at": "2026-08-13T08:01:58.000Z",
+  "updated_at": "2026-08-14T14:44:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 566,
+  "downloads_30d": 741011,
+  "trending_score": 535,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30879676248,
+  "storage_human": "30.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B goes open-weight within days. Here&#x27;s what&#x27;s confirmed, the GPU memory math for a 27B-class model, and how to serve it with vLLM or SGLang on day one."
+    },
+    {
+      "title": "Qwen3.8-27B - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B",
+      "snippet": "Deploy Qwen3.8-27B with SGLang — dense hybrid GDN vision-language model with BF16/FP8/NVFP4 W4A4 checkpoints and in-checkpoint MTP, single-GPU on H200, RTX PRO 6000, RTX 5090 and DGX Spark."
+    },
+    {
+      "title": "Qwen/Qwen3.5-27B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-27B-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B: The Version You Can Actually Run, and How to Prepare For ...",
+      "url": "https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026",
+      "snippet": "A 27B at FP8 on one card, at a realistic average utilisation well below saturation, works out to a per-million-token cost in broadly the same range as hosted small-model APIs."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

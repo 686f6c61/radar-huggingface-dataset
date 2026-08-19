@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "btbtyler09/shrew-ocr-preview-GGUF",
+  "slug": "btbtyler09-shrew-ocr-preview-gguf",
+  "author": "btbtyler09",
+  "url": "https://huggingface.co/btbtyler09/shrew-ocr-preview-GGUF",
+  "created_at": "2026-08-16T23:17:06.000Z",
+  "updated_at": "2026-08-17T16:58:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "document-intelligence",
+    "structured-extraction",
+    "vision-language",
+    "ocr",
+    "rag",
+    "image-text-to-text",
+    "en",
+    "base_model:btbtyler09/shrew-ocr-preview",
+    "base_model:quantized:btbtyler09/shrew-ocr-preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 171,
+  "trending_score": 0,
+  "parameters": 3402839040,
+  "parameters_human": "3.40B",
+  "storage_bytes": 11593485952,
+  "storage_human": "11.6 GB",
+  "base_model": "btbtyler09/shrew-ocr-preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "btbtyler09/shrew-ocr-preview-GGUF · Hugging Face",
+      "url": "https://huggingface.co/btbtyler09/shrew-ocr-preview-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "btbtyler09/shrew-ocr-preview · Hugging Face",
+      "url": "https://huggingface.co/btbtyler09/shrew-ocr-preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools)."
+    },
+    {
+      "title": "btbtyler09 (Tyler Brooker) - Docker Hub",
+      "url": "https://hub.docker.com/u/btbtyler09",
+      "snippet": "Discover Docker images from btbtyler09. Visit their profile and explore images they maintain."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

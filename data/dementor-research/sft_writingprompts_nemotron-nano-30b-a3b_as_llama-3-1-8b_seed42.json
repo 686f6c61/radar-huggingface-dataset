@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42",
+  "slug": "dementor-research-sft_writingprompts_nemotron-nano-30b-a3b_as_llama-3-1-8b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed42",
+  "created_at": "2026-08-16T23:54:25.000Z",
+  "updated_at": "2026-08-16T23:55:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "dementor-research",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1544348352,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

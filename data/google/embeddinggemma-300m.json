@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "google/embeddinggemma-300m",
+  "slug": "google-embeddinggemma-300m",
+  "author": "google",
+  "url": "https://huggingface.co/google/embeddinggemma-300m",
+  "created_at": "2025-07-17T19:53:55.000Z",
+  "updated_at": "2025-09-25T15:11:17.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "gemma3_text",
+    "sentence-similarity",
+    "feature-extraction",
+    "text-embeddings-inference",
+    "arxiv:2509.20354",
+    "license:gemma",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1843,
+  "downloads_30d": 2618784,
+  "trending_score": 10,
+  "parameters": 302863104,
+  "parameters_human": "302.9M",
+  "storage_bytes": 3778342798,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/embeddinggemma-300m · Hugging Face",
+      "url": "https://huggingface.co/google/embeddinggemma-300m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EmbeddingGemma model overview | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/embeddinggemma",
+      "snippet": "EmbeddingGemma is a 308M parameter multilingual text embedding model based on Gemma 3. It is optimized for use in everyday devices, such as phones, laptops, and tablets. The model produces numerical representations of text to be used for downstream tasks like information retrieval, semantic similarity search, classification, and clustering."
+    },
+    {
+      "title": "EmbeddingGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/embeddinggemma/",
+      "snippet": "EmbeddingGemma generates high-quality embeddings with reduced resource consumption, enabling on-device Retrieval Augmented Generation (RAG) pipelines, semantic search, and generative AI applications that can run on everyday devices."
+    },
+    {
+      "title": "google/embedding-gemma-300m • LM Studio",
+      "url": "https://lmstudio.ai/models/google/embedding-gemma-300m",
+      "snippet": "EmbeddingGemma Open embedding model from Google, built from Gemma 3 (with T5Gemma initialization) and the same research and technology used to create Gemini models. 300M parameters, state-of-the-art for its size. Well-suited for search and retrieval tasks, including classification, clustering, and semantic similarity search."
+    },
+    {
+      "title": "google/embeddinggemma-300m at main - Hugging Face",
+      "url": "https://huggingface.co/google/embeddinggemma-300m/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

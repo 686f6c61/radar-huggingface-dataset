@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "xudongwu/SafeSelfPlay-checkpoints",
+  "slug": "xudongwu-safeselfplay-checkpoints",
+  "author": "xudongwu",
+  "url": "https://huggingface.co/xudongwu/SafeSelfPlay-checkpoints",
+  "created_at": "2026-08-18T17:30:27.000Z",
+  "updated_at": "2026-08-18T20:59:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "lora",
+    "safety",
+    "base_model:mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+    "base_model:adapter:mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18091966647,
+  "storage_human": "18.1 GB",
+  "base_model": "mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - xudongwu-0/SafeSelfPlay",
+      "url": "https://github.com/xudongwu-0/SafeSelfPlay",
+      "snippet": "W&B logging for training curves, safety metrics, raw prompt/response tables, payoff matrices, and selected checkpoint metadata. Role-start KL support, so each role can measure KL against its own starting LoRA or base model instead of an unrelated reference."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "xudongwu-0 (Xudong Wu) · GitHub",
+      "url": "https://github.com/xudongwu-0",
+      "snippet": "PhD Student at The University of Hong Kong (HKU) . xudongwu-0 has 29 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Home | Xudong Wu | 吴煦东",
+      "url": "https://xudongwu-0.github.io/",
+      "snippet": "Xudong Wu 吴煦东 Ph.D. Student in Reinforcement Learning, LLM Alignment & Agentic AI Systems The University of Hong Kong I work on post-training, RLHF/RLAIF, preference optimization, self-play agents, and long-horizon LLM-agent systems. I am actively seeking industry research internships where rigorous RL theory, scalable ML systems, and agentic AI products meet."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

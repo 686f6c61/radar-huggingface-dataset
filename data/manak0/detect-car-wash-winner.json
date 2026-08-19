@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "manak0/Detect-car-wash-winner",
+  "slug": "manak0-detect-car-wash-winner",
+  "author": "manak0",
+  "url": "https://huggingface.co/manak0/Detect-car-wash-winner",
+  "created_at": "2026-05-26T08:19:17.000Z",
+  "updated_at": "2026-08-17T12:14:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "element_type:detect",
+    "model:onnxruntime",
+    "subnet:winner",
+    "object:broom",
+    "object:drainage gate",
+    "object:nozzle",
+    "object:track",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 605664599,
+  "storage_human": "606 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manak0/Detect-car-wash-winner · Hugging Face",
+      "url": "https://huggingface.co/manak0/Detect-car-wash-winner",
+      "snippet": "Source winner repo: Cargile/carwash1 Source revision: c206b566363ee488409232525b4be5190748f172 Manifest element: manak0/Detect-car-wash Element type: Detect Objects: broom, drainage gate, nozzle, track Runtime model type: ultralytics-yolo Downloads last month -"
+    },
+    {
+      "title": "manak0/Detect-car-wash · Hugging Face",
+      "url": "https://huggingface.co/manak0/Detect-car-wash",
+      "snippet": "manak0 / Detect-car-wash like 0 Follow Manako 2 ONNX element_type:detect model:yolov11-nano object:broom object:drainage gate object:nozzle object:track Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Score Dashboard",
+      "url": "https://console.scorevision.io/elements/manak0%2FDetect-car-wash",
+      "snippet": "Preparation Notes Current target sits at 95.0%. To beat the live leader, close the gap between 86.3% and the target while improving on the lowest-scoring current challenges."
+    },
+    {
+      "title": "Car Wash Test 2026: Which AI Models Actually Reason?",
+      "url": "https://aiindigo.com/blog/car-wash-test-results-ai-models-reasoning",
+      "snippet": "Discover the results of the Car Wash Test. Learn which AI models passed the spatial reasoning challenge and how to spot hallucinations in LLMs."
+    },
+    {
+      "title": "AI Model Benchmark: Car Wash Test Evaluates 53 Models - Key Insights ...",
+      "url": "https://ubos.tech/news/ai-model-benchmark-car-wash-test-evaluates-53-models-key-insights-and-rankings/",
+      "snippet": "AI Model Benchmark: Car Wash Test Evaluates 53 Models - Key Insights and Rankings The Car Wash benchmark has emerged as a compelling test for measuring the reliability of large language models (LLMs) on a simple, real‑world scenario: deciding whether to drive or walk to a car wash. In this benchmark, 53 AI models—including leading"
+    }
+  ]
+}

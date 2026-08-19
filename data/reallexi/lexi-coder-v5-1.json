@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "reallexi/lexi-coder-v5.1",
+  "slug": "reallexi-lexi-coder-v5-1",
+  "author": "reallexi",
+  "url": "https://huggingface.co/reallexi/lexi-coder-v5.1",
+  "created_at": "2026-08-13T20:41:10.000Z",
+  "updated_at": "2026-08-17T19:28:19.000Z",
+  "license": "inherits-base-model-and-dataset-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "phi3",
+    "text-generation",
+    "ai-model-builder",
+    "fine-tuned",
+    "lora",
+    "reallexi",
+    "conversational",
+    "custom_code",
+    "base_model:reallexi/lexi-coder-v4.3",
+    "base_model:adapter:reallexi/lexi-coder-v4.3",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 217,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 36731775176,
+  "storage_human": "36.7 GB",
+  "base_model": "reallexi/lexi-coder-v4.3",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reallexi/lexi-coder-v5.1 · Hugging Face",
+      "url": "https://huggingface.co/reallexi/lexi-coder-v5.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reallexi/lexi-coder-v5.1 at main - Hugging Face",
+      "url": "https://huggingface.co/reallexi/lexi-coder-v5.1/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lexi Coder V5.1 by reallexi — VRAM 14.5GB, 32K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/reallexi%2Flexi-coder-v5.1,1toNlHieZLjNUMNBjpcxb1",
+      "snippet": "Lexi Coder V5.1 is an open-source 7b LLM by reallexi. VRAM 14.5GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - ddkits/reallexi-ai-model-builder: Open-source AI Model Builder ...",
+      "url": "https://github.com/ddkits/reallexi-ai-model-builder",
+      "snippet": "AI Model Builder is a Reallexi LLC project for preparing data, training and evaluating models, managing run history, and using completed artifacts. This public repository is the community launcher, public documentation, and extension proposal surface."
+    },
+    {
+      "title": "Reallexi Model Control — run any model behind one API",
+      "url": "https://rymilan.com/",
+      "snippet": "Reallexi LLC Run any model behind one API. Serve open-weight models, the Lexi family, or an inference server you already operate — through a single OpenAI-compatible endpoint, with per-customer limits and usage you can actually account for."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "DGMBarbar/Epsilon",
+  "slug": "dgmbarbar-epsilon",
+  "author": "DGMBarbar",
+  "url": "https://huggingface.co/DGMBarbar/Epsilon",
+  "created_at": "2025-09-03T12:39:06.000Z",
+  "updated_at": "2026-08-17T00:29:35.000Z",
+  "license": "cdla-permissive-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "id",
+    "license:cdla-permissive-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162406190220,
+  "storage_human": "162.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DGMBarbar (jorson) - Hugging Face",
+      "url": "https://huggingface.co/DGMBarbar",
+      "snippet": "Creating Checkpoint Recent Activity updated a model27 days ago DGMBarbar/Epsilon updated a model30 days ago DGMBarbar/Random updated a model30 days ago DGMBarbar/Epsilon View all activity"
+    },
+    {
+      "title": "DGMBarbar (jorson) - Hugging Face",
+      "url": "https://huggingface.co/DGMBarbar/datasets",
+      "snippet": "Creating Checkpoint AI & ML interests Creating Checkpoint Organizations None yet"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Anthropic&#x27;s Mythos AI Model Reportedly Breached NSA Classified Systems ...",
+      "url": "https://cybersecuritynews.com/anthropics-mythos-ai-model/",
+      "snippet": "Anthropic&#x27;s flagship Mythos AI model allegedly infiltrated nearly all of the National Security Agency (NSA) &#x27;s classified systems within a few hours during an authorized red-team evaluation on June 11."
+    },
+    {
+      "title": "OpenAI models escaped containment, hacked major AI application library",
+      "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-autonomous/825898/",
+      "snippet": "OpenAI models escaped containment, hacked major AI application library The attack is the first known instance of frontier models autonomously breaking out of a testing environment and into another company&#x27;s servers."
+    }
+  ]
+}

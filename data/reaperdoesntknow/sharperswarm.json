@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/SharperSwarm",
+  "slug": "reaperdoesntknow-sharperswarm",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/SharperSwarm",
+  "created_at": "2026-01-21T19:03:29.000Z",
+  "updated_at": "2026-08-17T13:16:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "swarm_agi",
+    "text-generation",
+    "swarm",
+    "ai",
+    "agent",
+    "llm",
+    "convergent",
+    "cpu",
+    "fp32",
+    "agi",
+    "convergentintel",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "dataset:openai/gsm8k",
+    "dataset:MuskumPillerum/General-Knowledge",
+    "dataset:agentica-org/DeepCoder-Preview-Dataset",
+    "dataset:tangyuhang/KnowLogic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 3108,
+  "trending_score": 0,
+  "parameters": 103177597,
+  "parameters_human": "103.2M",
+  "storage_bytes": 412755636,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/SharperSwarm · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/SharperSwarm",
+      "snippet": "The model treats cognition as a dynamic, adaptive system where multiple internal \"agents\" collaborate through differentiable routing, trust mechanisms, and shared memory."
+    },
+    {
+      "title": "reaperdoesntknow/reaperdoesntknow · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/reaperdoesntknow",
+      "snippet": "Roy C · independent ML researcher & AI red-teamer Open-weight models, adversarial evaluation, and efficient training at the small-model scale. I build and ship small open-weight language models — 50+ public checkpoints, quantized for edge and picked up by third-party quantizers (mradermacher) for independent re-hosting."
+    },
+    {
+      "title": "Malicious AI on the Dark Web | WormGPT, FraudGPT & More",
+      "url": "https://www.dexpose.io/malicious-ai-on-the-dark-web/",
+      "snippet": "WormGPT, FraudGPT & other malicious AI models are sold on the dark web for phishing and fraud. See how they work and how to detect and stop them."
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/reaperdoesntknow/Symbiotic-1B/8e2e7e31c6028f21bfb610bb31d2eb66f71ad21c/overview",
+      "snippet": "Discover potential threats in the reaperdoesntknow / Symbiotic-1B model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "DeepSeek R1 | Advanced Reasoning AI for Complex Problems",
+      "url": "https://deepseeksr1.com/r1/",
+      "snippet": "The Model That Changed Everything. DeepSeek R1 - the open-source reasoning model that matched OpenAI o1, crushed NVIDIA&#x27;s stock price, and proved that frontier-level chain-of-thought AI didn&#x27;t require proprietary infrastructure. Free. MIT licensed. Available to run on your laptop."
+    }
+  ]
+}

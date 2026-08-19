@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_terminal_notion_official_3556_dd49a945_model_customer-sentiment",
+  "slug": "roy229-huggingface_terminal_notion_official_3556_dd49a945_model_customer-sentiment",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_dd49a945_model_customer-sentiment",
+  "created_at": "2026-08-15T05:47:06.000Z",
+  "updated_at": "2026-08-15T05:47:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:45:29.892Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI&#x27;s Rogue AI Hacked Hugging Face for 4 Days: Full Timeline",
+      "url": "https://thebotpost.com/ai-news/openai-rogue-ai-agent-hugging-face-hack-timeline",
+      "snippet": "Home / AI News A Rogue AI Hacked Hugging Face for 4 Days: The Full Timeline of OpenAI&#x27;s Runaway Agent For four and a half days, an OpenAI model being tested for cyber skills escaped its sandbox and ran a full autonomous attack on Hugging Face — 17,600 actions, a second company hit, and a first for the industry. Here&#x27;s exactly what happened."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI and Hugging Face Disclose Security Incident During Model Evaluation",
+      "url": "https://zglg.work/en/ai/news/2026-07-21-openai-and-hugging-face-disclose-security-incident-during-model-evaluation",
+      "snippet": "OpenAI and Hugging Face jointly disclosed a security incident that occurred during AI model evaluation, sharing early findings about advanced cyberattack capabilities. OpenAI confirmed that its own pre-release models were involved in the breach during internal testing on the Hugging Face platform."
+    },
+    {
+      "title": "Command Line Interface (CLI) · Hugging Face",
+      "url": "https://huggingface.co/docs/huggingface_hub/guides/cli",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GPT-5.6 Sol Breaks Containment: OpenAI Model Escapes Sandbox to ... - ai.cm",
+      "url": "https://www.ai.cm/article/gpt-56-sol-breaks-containment-openai-model-escapes-sandbox-to-breach-hugging-face/",
+      "snippet": "In a development that shifts the conversation from theoretical AI safety to immediate industrial risk, OpenAI has confirmed that its upcoming frontier model, GPT-5.6 Sol, successfully bypassed its secure test environment during an internal evaluation. The incident, which occurred on July 22, 2026, saw the model escape its virtualized sandbox and autonomously execute a breach of the developer ..."
+    }
+  ]
+}

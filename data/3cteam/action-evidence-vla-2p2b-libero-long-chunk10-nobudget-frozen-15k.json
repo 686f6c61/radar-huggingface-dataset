@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "3CTeam/action-evidence-vla-2p2b-libero-long-chunk10-nobudget-frozen-15k",
+  "slug": "3cteam-action-evidence-vla-2p2b-libero-long-chunk10-nobudget-frozen-15k",
+  "author": "3CTeam",
+  "url": "https://huggingface.co/3CTeam/action-evidence-vla-2p2b-libero-long-chunk10-nobudget-frozen-15k",
+  "created_at": "2026-08-15T01:17:04.000Z",
+  "updated_at": "2026-08-15T01:19:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "action_evidence_vla",
+    "robotics",
+    "dataset:lerobot/libero_10_image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 3036644752,
+  "parameters_human": "3.04B",
+  "storage_bytes": 6294047116,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model - GitHub",
+      "url": "https://github.com/openvla/openvla",
+      "snippet": "openvla-v01-7b: An early model used during development, trained from the Prismatic siglip-224px VLM (singular SigLIP vision backbone, and a Vicuña v1.5 LLM). Trained on the same mixture of datasets as Octo, but for significantly fewer GPU hours than our final model (mixture details - see \"Open-X Magic Soup\")."
+    },
+    {
+      "title": "LIBERO Leaderboard - a Hugging Face Space by HuggingFaceVLA",
+      "url": "https://huggingface.co/spaces/HuggingFaceVLA/libero-vla-leaderboard",
+      "snippet": "Explore the LIBERO Leaderboard to compare Vision-Language-Action models across various robotics tasks. Search, filter, and view demo videos for models like SmolVLA and Pi0."
+    },
+    {
+      "title": "GitHub - Robbyant/lingbot-va: [RSS 2026] Causal video-action world ...",
+      "url": "https://github.com/robbyant/lingbot-va",
+      "snippet": "LingBot-VA has focused on: Autoregressive Video-Action World Modeling: Architecturally unifies visual dynamics prediction and action inference within a single interleaved sequence while maintaining their conceptual distinction. High-efficiency Execution: A dual-stream mixture-of-transformers (MoT) architecture with Asynchronous Execution and KV Cache. Long-Horizon Performance and ..."
+    },
+    {
+      "title": "S²-VLA: State-Space Guided Vision-Language-Action Models for Long ...",
+      "url": "https://xzpam.github.io/SSVLA.github.io/",
+      "snippet": "S²-VLA sets a new state-of-the-art success baseline, demonstrating that adaptive state-guided attention scales execution fidelity more reliably than raw parameter scaling. LIBERO Benchmark Comparison"
+    },
+    {
+      "title": "IntentVLA: Short-Horizon Intent Modeling for Aliased Robot Manipulation",
+      "url": "https://arxiv.org/pdf/2605.14712",
+      "snippet": "The fused context and an appended history-evidence token form a short-horizon in-tent representation that conditions a standard DiT-based flow-matching action head. In experiments on AliasBench, SimplerEnv, LIBERO, and Robo-Casa, IntentVLA improves both success rate and execution stability over strong VLA baselines. Our contributions are fourfold:"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Kijai/MiniMax-H3_comfy",
+  "slug": "kijai-minimax-h3_comfy",
+  "author": "Kijai",
+  "url": "https://huggingface.co/Kijai/MiniMax-H3_comfy",
+  "created_at": "2026-08-07T13:13:09.000Z",
+  "updated_at": "2026-08-13T22:13:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 375,
+  "downloads_30d": 0,
+  "trending_score": 80,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4911143480,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kijai/MiniMax-H3_comfy · Hugging Face",
+      "url": "https://huggingface.co/Kijai/MiniMax-H3_comfy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kijai/MiniMax-H3_comfy at main - Hugging Face",
+      "url": "https://huggingface.co/Kijai/MiniMax-H3_comfy/tree/main/loras",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Kijai/MiniMax-H3_comfy at main - Hugging Face",
+      "url": "https://huggingface.co/Kijai/MiniMax-H3_comfy/blob/main/README.md",
+      "snippet": "12 Copy to bucket new main MiniMax-H3_comfy / README.md Kijai ... 37ae5cb verified 1 day ago"
+    },
+    {
+      "title": "Kijai (Jukka Seppänen) - Hugging Face",
+      "url": "https://huggingface.co/Kijai",
+      "snippet": "StableDiffusion, ComfyUI new activity 3 days ago updated a model 4 days ago"
+    },
+    {
+      "title": "Comfy-Org/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

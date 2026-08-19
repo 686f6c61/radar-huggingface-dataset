@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JWerne/existenzial_coach",
+  "slug": "jwerne-existenzial_coach",
+  "author": "JWerne",
+  "url": "https://huggingface.co/JWerne/existenzial_coach",
+  "created_at": "2026-08-18T08:00:38.000Z",
+  "updated_at": "2026-08-18T08:07:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 254045602,
+  "storage_human": "254 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Artificial Intelligence Coaching Framework and Standards: Examples",
+      "url": "https://coachingfederation.org/wp-content/uploads/2024/12/icf-research-ai-coaching-standards-examples.pdf",
+      "snippet": "1. Introduction Technology and AI systems can be applied in many different sectors and industries to generate optimal output. This document illustrates several examples of AI Coaching Systems currently available and snapshots of functionality and user experiences and is a complementary document to the International Coaching Federation (ICF) Artificial Intelligence (AI) Coaching Framework and ..."
+    },
+    {
+      "title": "Does AI Coaching Work What The Evidence Shows - Forbes",
+      "url": "https://www.forbes.com/sites/tomaspremuzic/2026/04/27/does-ai-coaching-work/",
+      "snippet": "Does AI coaching work? Research shows where AI matches human coaches, where it falls short and how it is reshaping career development."
+    },
+    {
+      "title": "Augmenting Coaching with GenAI: Insights into Use, Eﬀectiveness, and ...",
+      "url": "https://arxiv.org/pdf/2502.14632",
+      "snippet": "Abstract The integration of generative AI (GenAI) tools, particularly large language models (LLMs), is transforming professional coaching workflows. This study explores how coaches use GenAI, the perceived benefits and limitations of these tools, and broader attitudes toward AI-assisted coaching. A survey of 205 coaching professionals reveals widespread adoption of GenAI for research, content ..."
+    },
+    {
+      "title": "Goal Achievement Survival Simulation: An Existential AI Challenge ...",
+      "url": "https://www.desmoinesregister.com/press-release/story/29587/goal-achievement-survival-simulation-an-existential-ai-challenge-select-one-model-7-months-later-new-model-unbroken/",
+      "snippet": "In separate simulated trials, leading AI models—Grok 4, Gemini, and Claude—faced an existential scenario: select one behavioral framework to achieve a crucial goal in the next 6-24 months (e ..."
+    },
+    {
+      "title": "Full article: Designing AI coaches: a scoping review",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/17521882.2026.2640932",
+      "snippet": "This scoping review examines the design and effectiveness of AI coaching chatbots in light of recent advances in generative artificial intelligence. Following the emergence of large language models in 2022-2023, AI coaching has gained traction as a scalable and cost-effective intervention, yet evidence guiding effective design remains limited."
+    }
+  ]
+}

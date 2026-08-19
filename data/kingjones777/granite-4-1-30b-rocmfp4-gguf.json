@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Granite-4.1-30B-ROCmFP4-GGUF",
+  "slug": "kingjones777-granite-4-1-30b-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Granite-4.1-30B-ROCmFP4-GGUF",
+  "created_at": "2026-08-17T12:24:56.000Z",
+  "updated_at": "2026-08-17T12:30:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "rocm",
+    "granite",
+    "quantized",
+    "text-generation",
+    "base_model:ibm-granite/granite-4.1-30b",
+    "base_model:quantized:ibm-granite/granite-4.1-30b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28865728512,
+  "parameters_human": "28.87B",
+  "storage_bytes": 103226839936,
+  "storage_human": "103.2 GB",
+  "base_model": "ibm-granite/granite-4.1-30b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.1 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-1",
+      "snippet": "Granite 4.1 Dense language model family in 3B, 8B, and 30B sizes with instruction-tuned variants, delivering improved tool calling, instruction following, coding, and mathematical reasoning."
+    },
+    {
+      "title": "kingjones777/Granite-4.1-3B-ROCmFP4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Granite-4.1-3B-ROCmFP4-GGUF",
+      "snippet": "Granite-4.1-3B — ROCmFP4 (tier 102 COHERENT) GGUF A 4-bit ROCmFP4 quantization for AMD gfx1151 (Ryzen AI MAX+ 395 / Strix Halo), quantized from BF16 GGUF (6.81 GB) — a lossless source, not a requantization of a lower-bit build."
+    },
+    {
+      "title": "unsloth/granite-4.1-30b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/granite-4.1-30b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Granite 4.1 30B - OpenModels",
+      "url": "https://www.openmodels.run/models/granite-4-1-30b",
+      "snippet": "IBM&#x27;s largest dense decoder-only 30B parameter language model from the Granite 4.1 family. Trained on approximately 15T tokens with long-context extension up to 512K tokens."
+    },
+    {
+      "title": "granite-4.1-language-models/README.md at main - GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.1-language-models/blob/main/README.md",
+      "snippet": "Overview Granite 4.1 language models are a family of state-of-the-art open foundation models featuring dense decoder-only architectures in three sizes — 3B, 8B, and 30B. They natively support multilingual capabilities, a wide range of coding tasks, retrieval-augmented generation (RAG), tool usage, and structured JSON output."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "tianxia2/CQ3-Qwen3-4B-K8-Channel-FP8-AWq",
+  "slug": "tianxia2-cq3-qwen3-4b-k8-channel-fp8-awq",
+  "author": "tianxia2",
+  "url": "https://huggingface.co/tianxia2/CQ3-Qwen3-4B-K8-Channel-FP8-AWq",
+  "created_at": "2026-08-16T20:47:38.000Z",
+  "updated_at": "2026-08-16T21:01:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "quantization",
+    "kv-cache",
+    "codequant3",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317436,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

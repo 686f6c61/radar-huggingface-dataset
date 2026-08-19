@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/mlcommons-Deep-Autoencoder-DCASE2020-ToyCar-int8-onnx",
+  "slug": "ketiswp-mlcommons-deep-autoencoder-dcase2020-toycar-int8-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/mlcommons-Deep-Autoencoder-DCASE2020-ToyCar-int8-onnx",
+  "created_at": "2026-08-19T01:56:25.000Z",
+  "updated_at": "2026-08-19T02:22:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int8",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 285159,
+  "storage_human": "285159 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - xetdata/onnx-models: A copy of ONNX models, datasets, and code ...",
+      "url": "https://github.com/xetdata/onnx-models",
+      "snippet": "The ONNX Model Zoo is a collection of pre-trained, state-of-the-art models in the ONNX format contributed by community members like you. Accompanying each model are Jupyter notebooks for model training and running inference with the trained model."
+    },
+    {
+      "title": "GitHub - microsoft/onnxconverter-common: Common utilities for ONNX ...",
+      "url": "https://github.com/microsoft/onnxconverter-common",
+      "snippet": "The onnxconverter-common package provides common functions and utilities for use in converters from various AI frameworks to ONNX. It also enables the different converters to work together to convert a model from mixed frameworks, like a scikit-learn pipeline embedding a xgboost model."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MLCommons - Better AI for Everyone",
+      "url": "https://mlcommons.org/",
+      "snippet": "Better AI for Everyone Building trusted, safe, and efficient AI requires better systems for measurement and accountability. MLCommons&#x27; collective engineering with industry and academia continually measures and improves the accuracy, safety, speed, and efficiency of AI technologies."
+    },
+    {
+      "title": "Autoencoders in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/auto-encoders/",
+      "snippet": "Autoencoders are neural networks that compress input data into a smaller representation and then reconstruct it, helping the model learn important patterns efficiently. Their key uses include: Helps remove unwanted noise from data and improve quality Identifies unusual patterns or anomalies in data Extracts important features for better model performance"
+    }
+  ]
+}

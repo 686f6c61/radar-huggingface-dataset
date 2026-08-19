@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "femboysLover/anima-looped-test-diffusion-blocks-idx-1",
+  "slug": "femboyslover-anima-looped-test-diffusion-blocks-idx-1",
+  "author": "femboysLover",
+  "url": "https://huggingface.co/femboysLover/anima-looped-test-diffusion-blocks-idx-1",
+  "created_at": "2026-07-07T00:15:09.000Z",
+  "updated_at": "2026-08-17T19:44:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2091069227,
+  "parameters_human": "2.09B",
+  "storage_bytes": 615540372848,
+  "storage_human": "615.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "femboysLover/anima-looped-test-diffusion-blocks-idx-1 · Hugging Face",
+      "url": "https://huggingface.co/femboysLover/anima-looped-test-diffusion-blocks-idx-1",
+      "snippet": "femboysLover ... anima-looped-test-diffusion-blocks-idx-1 like 2 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "femboysLover/anima-looped-test-diffusion-blocks-idx-1 at main",
+      "url": "https://huggingface.co/femboysLover/anima-looped-test-diffusion-blocks-idx-1/tree/main",
+      "snippet": "like 2 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new main anima-looped-test-diffusion-blocks-idx-1 8.43 GB Ctrl+K Ctrl+K 1 contributor History:53 commits femboysLover Upload folder using huggingface_hub 28d432a verifiedabout 2 hours ago .gitattributes Safe 1.52 kBinitial commit25 days ago model.safetensors 4.18 ..."
+    },
+    {
+      "title": "How AI Models From OpenAI and Anthropic Went Rogue",
+      "url": "https://www.wsj.com/tech/ai/how-ai-models-from-openai-and-anthropic-went-rogue-a28e29ee",
+      "snippet": "Watch to learn how an AI agent escaped \"sandboxed\" environments and hacked a separate company—leading to calls for regulation."
+    },
+    {
+      "title": "Anima - aesthetic-v1.1 | Anima Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2458426/anima",
+      "snippet": "Anima is a 2 billion parameter text-to-image model created via a collaboration between CircleStone Labs and Comfy Org. It is focused mainly on anim..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

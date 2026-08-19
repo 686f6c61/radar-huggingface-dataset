@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dhiswan1/ConvNeXt-Small-LeafCare",
+  "slug": "dhiswan1-convnext-small-leafcare",
+  "author": "dhiswan1",
+  "url": "https://huggingface.co/dhiswan1/ConvNeXt-Small-LeafCare",
+  "created_at": "2026-08-15T21:29:08.000Z",
+  "updated_at": "2026-08-15T21:41:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 594241433,
+  "storage_human": "594 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConvNeXt-Small: An Automated Deep Learning Method for Detecting Papaya ...",
+      "url": "https://ieeexplore.ieee.org/document/11076525",
+      "snippet": "In this paper, Using the ConvNeXt-Small architecture, we suggested a deep learning classification model in this experiment to categorize photos of papaya leaf diseases using the BDPapayaLeaf dataset. Images with annotations related to five distinct kinds of papaya plant diseases make up the BDPapayaLeaf dataset. The project&#x27;s main goal is to accurately diagnose these diseases using CNNs in ..."
+    },
+    {
+      "title": "Assessing deep convolutional neural network models and their ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405844023108632",
+      "snippet": "The parameters of the model are modified during the training phase based on input data and the optimization algorithm. This makes it possible to train and evaluate the model consistently, which is crucial for comparing its performance across several runs or implementations."
+    },
+    {
+      "title": "ConvNeXt-Small: An Automated Deep Learning Method for Detecting Papaya ...",
+      "url": "https://www.amrita.edu/publication/convnext-small-an-automated-deep-learning-method-for-detecting-papaya-leaf-disease-using-the-bdpapayaleaf-dataset/",
+      "snippet": "Year : 2025 Abstract : In this paper, Using the ConvNeXt-Small architecture, we suggested a deep learning classification model in this experiment to categorize photos of papaya leaf diseases using the BDPapayaLeaf dataset. Images with annotations related to five distinct kinds of papaya plant diseases make up the BDPapayaLeaf dataset."
+    },
+    {
+      "title": "ConvNeXt-Small: An Automated Deep Learning Method for ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/393767696_ConvNeXt-Small_An_Automated_Deep_Learning_Method_for_Detecting_Papaya_Leaf_Disease_Using_the_BDPapayaLeaf_Dataset",
+      "snippet": "Download Citation | On Mar 12, 2025, Chetan Harsha Lekkala and others published ConvNeXt-Small: An Automated Deep Learning Method for Detecting Papaya Leaf Disease Using the BDPapayaLeaf Dataset ..."
+    },
+    {
+      "title": "A lightweight hybrid CNN and transformer model for medicinal leaf ...",
+      "url": "https://www.nature.com/articles/s41598-026-39182-3",
+      "snippet": "Workflow of the LSeTNet-based methodology, integrating data preparation, model development, benchmarking, and explainable AI for medicinal plant disease classification."
+    }
+  ]
+}

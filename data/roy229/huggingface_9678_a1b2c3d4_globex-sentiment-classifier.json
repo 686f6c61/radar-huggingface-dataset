@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_9678_a1b2c3d4_globex-sentiment-classifier",
+  "slug": "roy229-huggingface_9678_a1b2c3d4_globex-sentiment-classifier",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_9678_a1b2c3d4_globex-sentiment-classifier",
+  "created_at": "2026-08-15T14:13:55.000Z",
+  "updated_at": "2026-08-15T14:13:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-classification",
+    "sentiment-analysis",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face Diffusers Vulnerabilities Enable Remote Code Execution ...",
+      "url": "https://cybersecuritynews.com/hugging-face-diffusers-vulnerabilities/",
+      "snippet": "A set of high-severity vulnerabilities in Hugging Face&#x27;s diffusers library that allow a malicious model repository to silently execute arbitrary code on any machine that loads it."
+    },
+    {
+      "title": "OpenAI-Hugging Face Security Incident: Explained",
+      "url": "https://decodethefuture.org/en/openai-hugging-face-security-incident-explained/",
+      "snippet": "OpenAI linked a July 2026 Hugging Face intrusion to models tested for cyber capability. Confirmed facts, open questions and lessons for AI builders."
+    },
+    {
+      "title": "Hugging Face Breach — OpenAI Models, July 2026 | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/hugging-face-autonomous-ai-agent-breach-july-2026",
+      "snippet": "The \"autonomous AI agent\" that breached Hugging Face on July 16, 2026 turned out to be OpenAI&#x27;s own models — running inside OpenAI&#x27;s own internal red-team evaluation."
+    },
+    {
+      "title": "More on the OpenAI Agent&#x27;s Attack on Hugging Face",
+      "url": "https://www.schneier.com/blog/archives/2026/08/more-on-the-openai-agents-attack-on-hugging-face.html",
+      "snippet": "Hugging Face has published a detailed timeline of the attack. From the summary: The agent was running an internal OpenAI cyber-capability evaluation based on the ExploitGym benchmark, which tasks an AI agent with finding and exploiting software vulnerabilities. OpenAI ran this on its own infrastructure, and the ExploitGym maintainers and their infrastructure had no involvement in the ..."
+    }
+  ]
+}

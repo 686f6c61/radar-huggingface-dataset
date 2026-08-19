@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "yoheikobashi/ptcg-qwen3-4b-dpo-loras",
+  "slug": "yoheikobashi-ptcg-qwen3-4b-dpo-loras",
+  "author": "yoheikobashi",
+  "url": "https://huggingface.co/yoheikobashi/ptcg-qwen3-4b-dpo-loras",
+  "created_at": "2026-08-17T00:02:41.000Z",
+  "updated_at": "2026-08-17T00:10:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "game-ai",
+    "pokemon-tcg",
+    "dpo",
+    "lora",
+    "base_model:yoheikobashi/ptcg-qwen3-4b-cardfirst-v40",
+    "base_model:adapter:yoheikobashi/ptcg-qwen3-4b-cardfirst-v40",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3611085930,
+  "storage_human": "3.6 GB",
+  "base_model": "yoheikobashi/ptcg-qwen3-4b-cardfirst-v40",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

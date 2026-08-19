@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "twanghcmut/bridgequant-async-libero-object-100",
+  "slug": "twanghcmut-bridgequant-async-libero-object-100",
+  "author": "twanghcmut",
+  "url": "https://huggingface.co/twanghcmut/bridgequant-async-libero-object-100",
+  "created_at": "2026-08-16T17:45:01.000Z",
+  "updated_at": "2026-08-16T17:45:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bridgequant_async_vla",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "libero",
+    "flow-matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 480503595,
+  "parameters_human": "480.5M",
+  "storage_bytes": 1024649380,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vaishnavibiradar612/Samplemodel",
+  "slug": "vaishnavibiradar612-samplemodel",
+  "author": "Vaishnavibiradar612",
+  "url": "https://huggingface.co/Vaishnavibiradar612/Samplemodel",
+  "created_at": "2026-08-17T04:49:28.000Z",
+  "updated_at": "2026-08-17T04:49:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schema_Model.ALL.Tests.dax - GitHub",
+      "url": "https://github.com/clientfirsttech/azure-foundry-power-bi-dev-example/blob/main/SampleModel.SemanticModel/DAXQueries/Schema_Model.ALL.Tests.dax",
+      "snippet": "This repository validates and applies AI-generated comments for Power BI semantic model TMDL files using Azure Foundry AI, with comprehensive Python-based testing and GitHub Actions automation. - c..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "fundamentals-of-AI-ML/sampleModel.ipynb at main - GitHub",
+      "url": "https://github.com/chamalkaMarasinghe/fundamentals-of-AI-ML/blob/main/sampleModel.ipynb",
+      "snippet": "Contribute to chamalkaMarasinghe/fundamentals-of-AI-ML development by creating an account on GitHub."
+    },
+    {
+      "title": "SampleModel (Java SE 25 & JDK 25) - docs.oracle.com",
+      "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.desktop/java/awt/image/SampleModel.html",
+      "snippet": "This abstract class defines an interface for extracting samples of pixels in an image. All image data is expressed as a collection of pixels. Each pixel consists of a number of samples. A sample is a datum for one band of an image and a band consists of all samples of a particular type in an image. For example, a pixel might contain three samples representing its red, green and blue components ..."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

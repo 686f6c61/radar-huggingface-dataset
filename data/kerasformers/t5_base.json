@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kerasformers/t5_base",
+  "slug": "kerasformers-t5_base",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/t5_base",
+  "created_at": "2026-08-19T01:23:54.000Z",
+  "updated_at": "2026-08-19T01:32:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "kerasformers",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "ro"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "t5",
+    "text2text-generation",
+    "pytorch",
+    "jax",
+    "tf",
+    "translation",
+    "en",
+    "fr",
+    "de",
+    "ro",
+    "arxiv:1910.10683",
+    "base_model:google-t5/t5-base",
+    "base_model:finetune:google-t5/t5-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 892527048,
+  "storage_human": "893 MB",
+  "base_model": "google-t5/t5-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google-t5/t5-base · Hugging Face",
+      "url": "https://huggingface.co/google-t5/t5-base",
+      "snippet": "Model Card for T5 Base Table of Contents Model Details Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors How To Get Started With the Model Model Details Model Description The developers of the Text-To-Text Transfer Transformer (T5) write: With T5, we propose reframing all NLP tasks into a unified text-to-text-format where the input ..."
+    },
+    {
+      "title": "KerasFormers (kerasformers) - Hugging Face",
+      "url": "https://huggingface.co/kerasformers",
+      "snippet": "This organization hosts pre-converted Keras 3 weights for kerasformers. Each repo holds the converted model plus its tokenizer and config files, so you download once and load directly, no on-the-fly conversion, no transformers or torch runtime on the model path. Every model is a pure-Keras port that runs unchanged on all three backends."
+    },
+    {
+      "title": "t5-base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/t5-base-google-t5",
+      "snippet": "A: Yes. T5-base fine-tunes easily with the Hugging Face transformers library using standard supervised learning on task-specific data. You provide input and target text pairs, and the model learns to generate correct outputs. Fine-tuning typically requires 1-5 epochs on 1,000-10,000 examples depending on task similarity to pretraining objectives."
+    },
+    {
+      "title": "t5-base · Model Database",
+      "url": "https://modeldatabase.com/t5-base.html",
+      "snippet": "Our text-to-text framework allows us to use the same model, loss function, and hyperparameters on any NLP task. T5-Base is the checkpoint with 220 million parameters."
+    },
+    {
+      "title": "kerasformers · PyPI",
+      "url": "https://pypi.org/project/kerasformers/",
+      "snippet": "KerasFormers [!IMPORTANT] kerasformers is under active development, and we are currently migrating from GitHub-hosted release weights to the Hugging Face Hub. The PyPI package may lag behind the latest models, fixes, and API updates. This migration includes properly typed configuration files and dedicated weights for each model."
+    }
+  ]
+}

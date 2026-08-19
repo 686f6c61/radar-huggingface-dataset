@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "UbuNam/act_teddy_wrist",
+  "slug": "ubunam-act_teddy_wrist",
+  "author": "UbuNam",
+  "url": "https://huggingface.co/UbuNam/act_teddy_wrist",
+  "created_at": "2026-08-15T11:38:30.000Z",
+  "updated_at": "2026-08-15T11:39:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:UbuNam/so101_teddy_v2_wristonly",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

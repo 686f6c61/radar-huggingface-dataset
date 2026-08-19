@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "issai/Qolda",
+  "slug": "issai-qolda",
+  "author": "issai",
+  "url": "https://huggingface.co/issai/Qolda",
+  "created_at": "2025-11-14T09:06:53.000Z",
+  "updated_at": "2026-08-18T09:51:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "kk",
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "internvl_chat",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "kk",
+    "ru",
+    "en",
+    "base_model:OpenGVLab/InternVL3_5-4B",
+    "base_model:finetune:OpenGVLab/InternVL3_5-4B",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 766,
+  "trending_score": 0,
+  "parameters": 4343533056,
+  "parameters_human": "4.34B",
+  "storage_bytes": 8687654878,
+  "storage_human": "8.7 GB",
+  "base_model": "OpenGVLab/InternVL3_5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ISSAI - Institute of Smart Systems and Artificial Intelligence",
+      "url": "https://issai.nu.edu.kz/qolda/",
+      "snippet": "ISSAI Qolda Institute of Smart Systems and Artificial Intelligence announces the launch of Qolda, a new open-source, compact language-vision model designed to make advanced intelligence truly accessible to everyone. Today, state-of-the-art generative AI models such as DeepSeek, KazLLM, and Oylan typically require supercomputing-scale infrastructure, placing them out of reach for most users ..."
+    },
+    {
+      "title": "issai/Qolda · Hugging Face",
+      "url": "https://huggingface.co/issai/Qolda",
+      "snippet": "Qolda Introduction Built on top of InternVL3.5 and Qwen3, Qolda is a small vision-language model designed to operate in Kazakh, Russian, and English. The model has 4.3B parameters and comprises the InternViT-300M vision encoder and MLP Projector components from InternVL3.5-4B, along with the Qwen3-4B language model. Model training was performed using the InternVL framework 💙 The name \"Qolda ..."
+    },
+    {
+      "title": "ISSAI - Institute of Smart Systems and Artificial Intelligence",
+      "url": "https://issai.nu.edu.kz/2025/11/14/issai-launches-qolda-a-new-open-source-compact-language-vision-model-for-devices/",
+      "snippet": "Institute of Smart Systems and Artificial Intelligence (ISSAI) announces the launch of Qolda, a new open-source, compact language-vision model designed to make advanced intelligence truly accessible to everyone. Today, state-of-the-art generative AI models such as DeepSeek, KazLLM, and Oylan typically require supercomputing-scale infrastructure, placing them out of reach for most users. Qolda ..."
+    },
+    {
+      "title": "issai/Qolda_GGUF · Hugging Face",
+      "url": "https://huggingface.co/issai/Qolda_GGUF",
+      "snippet": "GGUF Inference Performance Benchmarks Original Model: issai/Qolda Benchmarks conducted using llama.cpp with llama-bench. About Qolda Qolda is a 4.3B parameter vision-language model designed for Kazakh, Russian, and English. Built on InternVL3.5 and Qwen3, it combines the InternViT-300M vision encoder with the Qwen3-4B language model. The name reflects both accessibility (\"қолда\" — in ..."
+    },
+    {
+      "title": "GitHub - IS2AI/Qolda-deployment",
+      "url": "https://github.com/IS2AI/Qolda-deployment",
+      "snippet": "Qolda is ISSAI&#x27;s latest open-source vision-language model fine-tuned for multimodal understanding. The model is available on HuggingFace at issai/Qolda. This Docker setup deploys Qolda using lmdeploy for serving the model via API."
+    }
+  ]
+}

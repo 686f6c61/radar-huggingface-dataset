@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "eugene123tw/rldx1_pusht",
+  "slug": "eugene123tw-rldx1_pusht",
+  "author": "eugene123tw",
+  "url": "https://huggingface.co/eugene123tw/rldx1_pusht",
+  "created_at": "2026-07-23T10:31:14.000Z",
+  "updated_at": "2026-08-17T11:45:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "dataset:lerobot/pusht",
+    "base_model:RLWRLD/RLDX-1-PT",
+    "base_model:finetune:RLWRLD/RLDX-1-PT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68992223903,
+  "storage_human": "69.0 GB",
+  "base_model": "RLWRLD/RLDX-1-PT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RLWRLD/RLDX-1",
+      "url": "https://github.com/RLWRLD/RLDX-1",
+      "snippet": "RLDX-1 is a Vision-Language-Action model (VLA) for human-like dexterous manipulation. Beyond the versatile intelligence inherited from pre-trained VLM backbones, RLDX-1 adds three functional capabilities — motion awareness, long-term memory, and physical sensing — through a unified Multi-Stream Action Transformer (MSAT) architecture, a synthetic-augmented training pipeline, and a real-time ..."
+    },
+    {
+      "title": "[2605.03269] RLDX-1 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2605.03269",
+      "snippet": "While Vision-Language-Action models (VLAs) have shown remarkable progress toward human-like generalist robotic policies through the versatile intelligence (i.e. broad scene understanding and language-conditioned generalization) inherited from pre-trained Vision-Language Models, they still struggle with complex real-world tasks requiring broader functional capabilities (e.g. motion awareness ..."
+    },
+    {
+      "title": "eugene123tw/physical-ai-studio-push-t · Hugging Face",
+      "url": "https://huggingface.co/eugene123tw/physical-ai-studio-push-t",
+      "snippet": "eugene123tw / physical-ai-studio-push-t like 0 Model card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "eugene123tw/physical-ai-studio-push-t at main - Hugging Face",
+      "url": "https://huggingface.co/eugene123tw/physical-ai-studio-push-t/tree/main",
+      "snippet": "eugene123tw / physical-ai-studio-push-t like 0 Model card FilesFiles and versions xet Community Copy to bucket new main physical-ai-studio-push-t 9.35 GB Ctrl+K Ctrl+K 1 contributor History:8 commits eugene123tw Upload README.md with huggingface_hub a301e22 verifiedabout 2 months ago .gitattributes 1.64 kBUpload folder using huggingface ..."
+    },
+    {
+      "title": "eugene123tw (Eugene Liu) · GitHub",
+      "url": "https://github.com/eugene123tw",
+      "snippet": "eugene123tw has 59 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

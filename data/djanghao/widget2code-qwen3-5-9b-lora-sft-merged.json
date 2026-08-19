@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Djanghao/Widget2Code-Qwen3.5-9B-LoRA-SFT-Merged",
+  "slug": "djanghao-widget2code-qwen3-5-9b-lora-sft-merged",
+  "author": "Djanghao",
+  "url": "https://huggingface.co/Djanghao/Widget2Code-Qwen3.5-9B-LoRA-SFT-Merged",
+  "created_at": "2026-08-17T18:01:47.000Z",
+  "updated_at": "2026-08-17T18:08:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "widget2code",
+    "screenshot-to-code",
+    "react",
+    "jsx",
+    "qwen3.5",
+    "lora-merged",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Widget2Code - djanghao.github.io",
+      "url": "https://djanghao.github.io/widget2code/",
+      "snippet": "We present qualitative comparisons between our method (Widget2Code) and baseline approaches across diverse widget designs. Each example shows the input widget alongside outputs from generalized MLLMs (Gemini-2.5-Pro, GPT-4o, Qwen3-VL), specialized UI2Code models (ScreenCoder, UI-UG), and our method."
+    },
+    {
+      "title": "From Visual Widgets to UI Code: Efficient Tool-Grounded Generation",
+      "url": "https://arxiv.org/html/2608.12611v1",
+      "snippet": "We evaluate six checkpoints from the Qwen3-VL [4], Qwen3.5 [25], and Qwen3.6 [26] families, ranging from 4 $4$ B to 32 $32$ B parameters. Each model is adapted with LoRA [18] while keeping the vision encoder frozen."
+    },
+    {
+      "title": "GitHub - Djanghao/widget2code-sft",
+      "url": "https://github.com/Djanghao/widget2code-sft",
+      "snippet": "config.json — resolved config metrics.jsonl — training logs, per-epoch snapshots, eval metrics test_metrics.json — test metrics (if any) summary.json — memory/time summary checkpoints/ — trainer checkpoints lora/ — final LoRA adapter merged_16bit/ — merged FP16 weights for vLLM checkpoints/ — saved by save_model_interval / save ..."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    }
+  ]
+}

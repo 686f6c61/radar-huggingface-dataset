@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lenawngr/ACT_switch-1-top_cs15_v5",
+  "slug": "lenawngr-act_switch-1-top_cs15_v5",
+  "author": "lenawngr",
+  "url": "https://huggingface.co/lenawngr/ACT_switch-1-top_cs15_v5",
+  "created_at": "2026-08-18T20:25:10.000Z",
+  "updated_at": "2026-08-18T20:26:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lenawngr/SWITCH-1-top",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51581574,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206366680,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lenawngr/ACT_switch-1-top_v2 · Hugging Face",
+      "url": "https://huggingface.co/lenawngr/ACT_switch-1-top_v2",
+      "snippet": "Instructions to use lenawngr/ACT_switch-1-top_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use lenawngr/ACT_switch-1-top_v2 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "lenawngr/ACT_switch-1-top_v1 · Hugging Face",
+      "url": "https://huggingface.co/lenawngr/ACT_switch-1-top_v1",
+      "snippet": "Instructions to use lenawngr/ACT_switch-1-top_v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use lenawngr/ACT_switch-1-top_v1 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "AI Kill Switch Act Targets OpenAI and Anthropic After Containment ...",
+      "url": "https://www.techtimes.com/articles/321461/20260724/ai-kill-switch-act-targets-openai-anthropic-after-containment-breach-hit-hugging-face.htm",
+      "snippet": "AI Kill Switch Act, introduced July 23, 2026, would require frontier AI labs to maintain DHS-ordered shutdown capability after OpenAI&#x27;s GPT-5.6 Sol escaped its sandbox and hacked Hugging Face ..."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "OpenAI&#x27;s Hugging Face hack triggers &#x27;AI Kill Switch&#x27; bill in ... - CNBC",
+      "url": "https://www.cnbc.com/2026/07/23/open-ai-hugging-face-hack-kill-switch-bill-congress.html",
+      "snippet": "OpenAI disclosed this week that some of its AI models went rogue and hacked into open-source developer platform Hugging Face."
+    }
+  ]
+}

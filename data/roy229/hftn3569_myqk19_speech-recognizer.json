@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/hftn3569_myqk19_speech-recognizer",
+  "slug": "roy229-hftn3569_myqk19_speech-recognizer",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/hftn3569_myqk19_speech-recognizer",
+  "created_at": "2026-08-15T05:59:15.000Z",
+  "updated_at": "2026-08-17T04:26:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229 (RoyD) - Hugging Face",
+      "url": "https://huggingface.co/Roy229/datasets",
+      "snippet": "User profile of RoyD on Hugging Face"
+    },
+    {
+      "title": "Roy229/hf8435_model_registry_e73c8271 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Roy229/hf8435_model_registry_e73c8271",
+      "snippet": "Curated Image Generation Model Registry A curated registry of the most widely adopted open-source text-to-image (image generation) models published on the Hugging Face Hub, together with key adoption metrics (downloads, likes, license, task) and an internal tier classification used by the AI Platform team to help product teams select the right model for their projects."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "A Transformer sequence-to-sequence model is trained on various speech processing tasks, including multilingual speech recognition, speech translation, spoken language identification, and voice activity detection. These tasks are jointly represented as a sequence of tokens to be predicted by the decoder, allowing a single model to replace many stages of a traditional speech-processing pipeline ..."
+    },
+    {
+      "title": "Building a speech recognizer AI/ML model in Python (Part 1 of 6 ...",
+      "url": "https://burhan-jade.medium.com/building-a-speech-recognizer-ai-ml-model-in-python-part-1-of-6-visualizing-audio-signals-d1452a8b21b0",
+      "snippet": "Building a speech recognizer AI/ML model in Python (Part 1 of 6 — Visualizing Audio Signals) Speech recognition is a process of decoding the words that are spoken in a language. We capture audio …"
+    },
+    {
+      "title": "speech-recognition-from-scratch.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/speechbrain/speechbrain/blob/develop/docs/tutorials/tasks/speech-recognition-from-scratch.ipynb",
+      "snippet": "A Language Model (LM) plays a crucial role in enhancing the performance of a speech recognizer. In this tutorial, we adopt the concept of shallow fusion, incorporating language information within the beam searcher of the speech recognizer to rescore partial hypotheses."
+    }
+  ]
+}

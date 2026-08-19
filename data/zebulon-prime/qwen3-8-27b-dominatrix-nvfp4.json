@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "zebulon-prime/Qwen3.8-27B-Dominatrix-NVFP4",
+  "slug": "zebulon-prime-qwen3-8-27b-dominatrix-nvfp4",
+  "author": "zebulon-prime",
+  "url": "https://huggingface.co/zebulon-prime/Qwen3.8-27B-Dominatrix-NVFP4",
+  "created_at": "2026-08-18T21:54:43.000Z",
+  "updated_at": "2026-08-18T22:08:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "fp8",
+    "modelopt",
+    "quantized",
+    "roleplay",
+    "creative-writing",
+    "not-for-all-audiences",
+    "text-generation",
+    "conversational",
+    "base_model:allura-org/Qwen3.8-27B-Dominatrix",
+    "base_model:quantized:allura-org/Qwen3.8-27B-Dominatrix",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18164649200,
+  "parameters_human": "18.16B",
+  "storage_bytes": 21941686605,
+  "storage_human": "21.9 GB",
+  "base_model": "allura-org/Qwen3.8-27B-Dominatrix",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - a huginnfork Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huginnfork/qwen38-27b",
+      "snippet": "FP8 & NVFP4 quants of Qwen/Qwen3.8-27B. Reserved ahead of the upstream release — weights land as soon as the base model ships."
+    },
+    {
+      "title": "We Tested Qwen3.8 27B: How Much GPU and VRAM Do You Really Need?",
+      "url": "https://www.hardware-corner.net/qwen3-8-27b-hardware-tests/",
+      "snippet": "The benchmark data below is labeled as Qwen3.8 27B because that is the model we tested. What Qwen3.8 27B Requires The Q4_K Small build used in our tests is 16.68 GiB and contains 27.32 billion parameters. That makes VRAM the first practical limit."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    }
+  ]
+}

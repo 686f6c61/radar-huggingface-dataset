@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nm-testing/multiple_modifiers_gptq_awq_disk-e2e",
+  "slug": "nm-testing-multiple_modifiers_gptq_awq_disk-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/multiple_modifiers_gptq_awq_disk-e2e",
+  "created_at": "2026-07-25T05:28:50.000Z",
+  "updated_at": "2026-08-18T02:47:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 383,
+  "trending_score": 0,
+  "parameters": 918382592,
+  "parameters_human": "918.4M",
+  "storage_bytes": 37332392592,
+  "storage_human": "37.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nm-testing/multiple_modifiers_gptq_awq-e2e · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/multiple_modifiers_gptq_awq-e2e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nm-testing/multiple_modifiers_gptq_awq_disk-e2e · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/multiple_modifiers_gptq_awq_disk-e2e",
+      "snippet": "nm-testing / multiple_modifiers_gptq_awq_disk-e2e like 0 Follow NM Testing 100 Safetensors llama 8-bit precision compressed-tensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 46 Safetensors Model size 0.9B params Tensor type I64 · I32 · BF16 · I8 · Chat template Files info ..."
+    },
+    {
+      "title": "GitHub - dofaromg/gptqmodel: LLM model quantization (compression ...",
+      "url": "https://github.com/dofaromg/gptqmodel",
+      "snippet": "07/31/2024 🚀 0.9.10 Ported vllm/nm gptq_marlin inference kernel with expanded bits (8bits), group_size (64,32), and desc_act support for all GPTQ models with FORMAT.GPTQ. Auto-calculate auto-round nsamples/seglen parameters based on calibration dataset. Fixed save_quantized () called on pre-quantized models with non-supported backends."
+    },
+    {
+      "title": "GitHub - ModelCloud/GPTQModel: LLM model quantization (compression ...",
+      "url": "https://github.com/ModelCloud/GPTQModel",
+      "snippet": "GPTQ, AWQ, ParoQuant, QQQ, GGUF, FP8, EXL3, GPTAQ, and FOEM quantization support. Prism Bonsai Q1_0_g128 GGUF checkpoints can be loaded for post-quantized inference through the normal model_id_or_path argument."
+    },
+    {
+      "title": "GPTQModel - LLM Quantization Toolkit (GPTQ, AWQ) | AI/TLDR",
+      "url": "https://ai-tldr.dev/tools/gptqmodel/",
+      "snippet": "GPTQModel is an open-source Python toolkit that quantizes large language models with GPTQ, AWQ and other methods to shrink memory and speed up inference."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "BonanDing/WorldMem_Repro",
+  "slug": "bonanding-worldmem_repro",
+  "author": "BonanDing",
+  "url": "https://huggingface.co/BonanDing/WorldMem_Repro",
+  "created_at": "2026-02-10T18:37:28.000Z",
+  "updated_at": "2026-08-18T09:23:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 874432284,
+  "storage_human": "874 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BonanDing/WorldMem_Repro · Hugging Face",
+      "url": "https://huggingface.co/BonanDing/WorldMem_Repro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BonanDing (BonanDing) - Hugging Face",
+      "url": "https://huggingface.co/BonanDing",
+      "snippet": "Sort: Recently updated. BonanDing/UniMVU. Image-Text-to-Text • Updated 1 day ago. BonanDing/WorldMem_Repro. Updated Feb 10. datasets 2"
+    },
+    {
+      "title": "GitHub - xizaoqu/WorldMem: [NeurIPS 2025] WorldMem: Long-term ...",
+      "url": "https://github.com/xizaoqu/WorldMem",
+      "snippet": "[NeurIPS 2025] WorldMem: Long-term Consistent World Simulation with Memory - xizaoqu/WorldMem"
+    },
+    {
+      "title": "WorldMem: Long-term Consistent World Simulation with Memory",
+      "url": "https://arxiv.org/html/2504.12369",
+      "snippet": "Figure 1: WorldMem enables long-term consistent world generation with an integrated memory mechanism. (a) Previous world generation methods typically face the problem of inconsistent world due to limited temporal context window size. (b) WorldMem empowers the agent to explore diverse and consistent worlds with an expansive action space, e.g., crafting environments by placing objects like ..."
+    },
+    {
+      "title": "bondingAI",
+      "url": "https://bondingai.io/",
+      "snippet": "Why Choose bondingAI? Our AI Operating System is designed for Enterprise AI operations. Powered by xLLM, it delivers private, deterministic, and explainable AI built to integrate with real business systems and workflows."
+    }
+  ]
+}

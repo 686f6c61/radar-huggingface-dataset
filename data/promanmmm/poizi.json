@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Promanmmm/Poizi",
+  "slug": "promanmmm-poizi",
+  "author": "Promanmmm",
+  "url": "https://huggingface.co/Promanmmm/Poizi",
+  "created_at": "2026-08-18T20:03:49.000Z",
+  "updated_at": "2026-08-18T20:03:49.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models Directory - Promptomania",
+      "url": "https://promptomania.com/models",
+      "snippet": "Home / Models AI Models Directory Browse AI image, video, 3D, and audio model providers. Find the best model for your use case, learn prompting tips, and explore example prompts."
+    },
+    {
+      "title": "AI Model Rankings 2026 | PromptPlanet.ai",
+      "url": "https://promptplanet.ai/leaderboard",
+      "snippet": "Compare the top AI image and video generation models. Browse curated prompts for every model."
+    },
+    {
+      "title": "Promptomania — AI Prompt Hub, Model Directory & Tools",
+      "url": "https://promptomania.com/",
+      "snippet": "AI Prompt Hub & Model Directory Master AI Prompts Explore AI image, video, 3D & audio models, build perfect prompts with our visual builder, and learn from expert guides. Everything you need for Midjourney, DALL·E, FLUX, Sora, Runway, Studio AI, and more."
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    },
+    {
+      "title": "Data on AI Models | Epoch AI",
+      "url": "https://epoch.ai/data/ai-models",
+      "snippet": "Our public database, the largest of its kind, tracks over 3500 machine learning models from 1950 to today. Explore data and graphs showing the trajectory of AI."
+    }
+  ]
+}

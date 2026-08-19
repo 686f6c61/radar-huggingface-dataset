@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "danamr/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "danamr-rl_course_vizdoom_health_gathering_supreme",
+  "author": "danamr",
+  "url": "https://huggingface.co/danamr/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-08-18T11:10:59.000Z",
+  "updated_at": "2026-08-18T11:37:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245111908,
+  "storage_human": "245 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryukijano/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/Ryukijano/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment."
+    },
+    {
+      "title": "rl_course_vizdoom_health_gathering_supreme - Hugging Face",
+      "url": "https://huggingface.co/Vishath/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "url": "https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "snippet": "Training with this model To continue training with this model, use the train script corresponding to this environment: ... Note, you may have to adjust --train_for_env_steps to a suitably high number as the experiment will resume at the number of steps it concluded at."
+    },
+    {
+      "title": "GitHub - renhanfei/vizdoom_health_gathering",
+      "url": "https://github.com/RENHANFEI/vizdoom_health_gathering",
+      "snippet": "Contribute to renhanfei/vizdoom_health_gathering development by creating an account on GitHub."
+    },
+    {
+      "title": "MRNH/rl_course_vizdoom_health_gathering_supreme - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mrnh-rl-course-vizdoom-health-gathering-supreme",
+      "snippet": "Model Details of rl_course_vizdoom_health_gathering_supreme A (n) APPO model trained on the doom_health_gathering_supreme environment."
+    }
+  ]
+}

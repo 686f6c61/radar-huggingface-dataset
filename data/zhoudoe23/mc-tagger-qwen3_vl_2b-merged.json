@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "zhoudoe23/mc-tagger-qwen3_vl_2b-merged",
+  "slug": "zhoudoe23-mc-tagger-qwen3_vl_2b-merged",
+  "author": "zhoudoe23",
+  "url": "https://huggingface.co/zhoudoe23/mc-tagger-qwen3_vl_2b-merged",
+  "created_at": "2026-08-17T02:09:43.000Z",
+  "updated_at": "2026-08-17T02:29:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "dataset:danielbacsur/minecraft-skins-20k-1024k-captioned",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4266562346,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

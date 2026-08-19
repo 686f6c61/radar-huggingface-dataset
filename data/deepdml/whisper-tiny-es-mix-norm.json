@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "deepdml/whisper-tiny-es-mix-norm",
+  "slug": "deepdml-whisper-tiny-es-mix-norm",
+  "author": "deepdml",
+  "url": "https://huggingface.co/deepdml/whisper-tiny-es-mix-norm",
+  "created_at": "2026-07-13T22:22:21.000Z",
+  "updated_at": "2026-08-18T08:34:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "es",
+    "dataset:deepdml/common_voice_26_0",
+    "dataset:deepdml/basque_parliament_1",
+    "dataset:facebook/voxpopuli",
+    "dataset:google/fleurs",
+    "dataset:deepdml/voxforge",
+    "dataset:facebook/multilingual_librispeech",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 8840,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 26002033417,
+  "storage_human": "26.0 GB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 17.0",
+      "metric": "Wer",
+      "value": 17.3219810315971
+    }
+  ],
+  "sources": []
+}

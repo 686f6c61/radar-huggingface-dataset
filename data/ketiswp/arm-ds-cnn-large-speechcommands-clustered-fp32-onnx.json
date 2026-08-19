@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/arm-DS-CNN-Large-SpeechCommands-clustered-fp32-onnx",
+  "slug": "ketiswp-arm-ds-cnn-large-speechcommands-clustered-fp32-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/arm-DS-CNN-Large-SpeechCommands-clustered-fp32-onnx",
+  "created_at": "2026-08-19T01:57:27.000Z",
+  "updated_at": "2026-08-19T02:10:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "fp32",
+    "audio-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1652987,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model_registry.csv · ketiswp/ONNX_Models at main - Hugging Face",
+      "url": "https://huggingface.co/ketiswp/ONNX_Models/blob/main/model_registry.csv",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ketiswp (KETI Software Platform Team) - Hugging Face",
+      "url": "https://huggingface.co/ketiswp/models",
+      "snippet": "Org profile for KETI Software Platform Team on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "2026 LLM Leaderboard: compare Anthropic, Google, OpenAI, and more ... - Klu",
+      "url": "https://klu.ai/llm-leaderboard",
+      "snippet": "Klu.ai LLM leaderboard for in depth model performance metrics, rankings, and insights tailored for AI researchers and developers."
+    },
+    {
+      "title": "ML-zoo/models/keyword_spotting/ds_cnn_large/model_package_tf ... - GitHub",
+      "url": "https://github.com/Arm-Examples/ML-zoo/tree/master/models/keyword_spotting/ds_cnn_large/model_package_tf/model_archive/TFLite/tflite_int8",
+      "snippet": "This is a fully quantized int8 version of the DS-CNN Large model developed by Arm, from the Hello Edge paper."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

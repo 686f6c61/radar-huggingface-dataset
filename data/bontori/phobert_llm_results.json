@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "BonTori/phobert_llm_results",
+  "slug": "bontori-phobert_llm_results",
+  "author": "BonTori",
+  "url": "https://huggingface.co/BonTori/phobert_llm_results",
+  "created_at": "2026-08-16T10:40:55.000Z",
+  "updated_at": "2026-08-16T10:41:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:vinai/phobert-base",
+    "base_model:finetune:vinai/phobert-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135000579,
+  "parameters_human": "135.0M",
+  "storage_bytes": 540031661,
+  "storage_human": "540 MB",
+  "base_model": "vinai/phobert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

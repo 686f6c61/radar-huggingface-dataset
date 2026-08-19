@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "PulpCut/LTX-2.5-INT8-ConvRot-safetensors",
+  "slug": "pulpcut-ltx-2-5-int8-convrot-safetensors",
+  "author": "PulpCut",
+  "url": "https://huggingface.co/PulpCut/LTX-2.5-INT8-ConvRot-safetensors",
+  "created_at": "2026-08-18T14:08:27.000Z",
+  "updated_at": "2026-08-18T14:14:03.000Z",
+  "license": "ltx-2.x-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "h3ddle",
+  "languages": [],
+  "tags": [
+    "h3ddle",
+    "text-to-video",
+    "video-with-audio",
+    "int8",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38694140060,
+  "storage_human": "38.7 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "PulpCut/Z-Image-Turbo-INT8-ConvRot-safetensors · Hugging Face",
+      "url": "https://huggingface.co/PulpCut/Z-Image-Turbo-INT8-ConvRot-safetensors",
+      "snippet": "Z-Image-Turbo is by Alibaba Tongyi Lab under the Apache License 2.0. The diffusion transformer is the INT8-ConvRot quantization published by Martin Rizzo, also Apache 2.0, copied layer for layer."
+    },
+    {
+      "title": "LTX-2.5 on RTX 5070 Ti: 22B audio-video in 16 GB, and the decode trap ...",
+      "url": "https://smeltcore.com/recipes/ltx-2-5-on-rtx-5070-ti-22b-audio-video-in-16-gb-and-the-decode-trap-three-owners-hit",
+      "snippet": "Run LTX-2.5&#x27;s 22B audio-video DiT on a 16GB RTX 5070 Ti in ComfyUI with a Q3_K_M GGUF. Three owners hit one VAE-decode trap — the fix, and their times."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-ltx2: All available LTX-2 models, encoders ...",
+      "url": "https://github.com/wildminder/awesome-ltx2",
+      "snippet": "A curated list of models, text encoders, and tools for the LTX-2 video generation suite."
+    },
+    {
+      "title": "GitHub - Starnodes2024/comfyui-starnodes-modelconverter: Ultimate Model ...",
+      "url": "https://github.com/Starnodes2024/comfyui-starnodes-modelconverter",
+      "snippet": "Multiple Format Support: Convert models to NVFP4, FP8, MXFP8, INT8, INT8 ConvRot, INT4 ConvRot, FP16, or FP32 Smart Layer Preservation: Architecture-specific profiles ensure critical layers stay in high precision Automatic Dequantization: Intelligently handles pre-quantized models for clean re-quantization Multi-Shard Support: Seamlessly processes models split across multiple .safetensors ..."
+    }
+  ]
+}

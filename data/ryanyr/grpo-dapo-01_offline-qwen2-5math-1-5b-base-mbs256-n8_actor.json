@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RyanYr/grpo-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor",
+  "slug": "ryanyr-grpo-dapo-01_offline-qwen2-5math-1-5b-base-mbs256-n8_actor",
+  "author": "RyanYr",
+  "url": "https://huggingface.co/RyanYr/grpo-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor",
+  "created_at": "2026-02-25T00:06:20.000Z",
+  "updated_at": "2026-08-18T05:47:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 389165503700,
+  "storage_human": "389.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "grpo-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor",
+      "url": "https://huggingface.co/RyanYr/grpo-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pg-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor_matheval",
+      "url": "https://huggingface.co/datasets/RyanYr/pg-dapo-01_offline-qwen2.5math-1.5B-base-mbs256-n8_actor_matheval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GRPO training for Math Reasoning — RLinf documentation",
+      "url": "https://rlinf.readthedocs.io/en/latest/rst_source/examples/agentic/math_reasoning/reasoning.html",
+      "snippet": "Train a Qwen-based reasoning model with GRPO on math data. Compared with supervised fine-tuning, RL encourages diverse reasoning paths while optimizing final-answer correctness."
+    },
+    {
+      "title": "arXiv:2409.12122v1 [cs.CL] 18 Sep 2024",
+      "url": "https://arxiv.org/pdf/2409.12122",
+      "snippet": "ABSTRACT In this report, we present a series of math-specific large language models: Qwen2.5-Math and Qwen2.5-Math-Instruct-1.5B/7B/72B. The core innovation of the Qwen2.5 series lies in integrating the philosophy of self-improvement through-out the entire pipeline, from pre-training and post-training to inference: (1) During the pre-training phase, Qwen2-Math-Instruct is utilized to generate ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Math: A series of math-specific large language ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math",
+      "snippet": "The Qwen2.5-Math series models have achieved significant performance improvements compared to the Qwen2-Math series models on the Chinese and English mathematics benchmarks with CoT. Detailed performance and introduction are shown in this 📑 blog. 🚨 Qwen2.5-Math mainly supports solving English and Chinese math problems through CoT and TIR."
+    }
+  ]
+}

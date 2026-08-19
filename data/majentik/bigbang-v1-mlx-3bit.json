@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "majentik/BigBang-v1-MLX-3bit",
+  "slug": "majentik-bigbang-v1-mlx-3bit",
+  "author": "majentik",
+  "url": "https://huggingface.co/majentik/BigBang-v1-MLX-3bit",
+  "created_at": "2026-08-16T07:46:31.000Z",
+  "updated_at": "2026-08-17T08:53:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "base_model:endless-frontier/BigBang-v1",
+    "base_model:quantized:endless-frontier/BigBang-v1",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 5865901936,
+  "parameters_human": "5.87B",
+  "storage_bytes": 18257293866,
+  "storage_human": "18.3 GB",
+  "base_model": "endless-frontier/BigBang-v1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "majentik/BigBang-v1-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/majentik/BigBang-v1-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for endless-frontier/BigBang-v1 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:endless-frontier/BigBang-v1",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "BigBang-v1/README.md at main · endless-frontier/BigBang-v1",
+      "url": "https://github.com/endless-frontier/BigBang-v1/blob/main/README.md",
+      "snippet": "BigBang-v1 is a 35B-A3B agentic model built on Qwen3.6-35B-A3B, with 35B total parameters and 3B parameters activated during inference. We evaluate it on long-horizon search, coding, scientific research, and AI research."
+    },
+    {
+      "title": "BigBang V1 by endless-frontier — VRAM 71.5GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/endless-frontier%2FBigBang-v1,2Ijsdl8j15GjCEzFATqfSf",
+      "snippet": "BigBang V1 is an open-source 35b LLM by endless-frontier. VRAM 71.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "smtek/BigBang-v1 - ollama.com",
+      "url": "https://ollama.com/smtek/BigBang-v1",
+      "snippet": "A 35B-A3B agentic model based on Qwen3.6-35B-A3B, designed for long‑horizon search, software engineering, scientific research, and AI research."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "R-Kentaren/PSWG-Style",
+  "slug": "r-kentaren-pswg-style",
+  "author": "R-Kentaren",
+  "url": "https://huggingface.co/R-Kentaren/PSWG-Style",
+  "created_at": "2026-08-19T03:28:21.000Z",
+  "updated_at": "2026-08-19T03:29:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-to-image",
+    "base_model:John6666/wai-ani-nsfw-ponyxl-v5-sdxl",
+    "base_model:finetune:John6666/wai-ani-nsfw-ponyxl-v5-sdxl",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 114016256,
+  "parameters_human": "114.0M",
+  "storage_bytes": 228464412,
+  "storage_human": "228 MB",
+  "base_model": "John6666/wai-ani-nsfw-ponyxl-v5-sdxl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "R-Kentaren/dataset · Hugging Face",
+      "url": "https://huggingface.co/R-Kentaren/dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PSWG STYLE - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1848111018698359658/1848129874056881297",
+      "snippet": "Generate stunning anime art with the &#x27;PSWG STYLE&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "R-Kentaren (Rico Ardiansyah) - Hugging Face",
+      "url": "https://huggingface.co/R-Kentaren/activity/upvotes",
+      "snippet": "R-Kentaren &#x27;s activity All Models Datasets Spaces Buckets Papers Collections Community Posts Upvotes Likes Articles upvoted a collection 21 days ago"
+    },
+    {
+      "title": "PSWG STYLE｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1848111018698359658/1848129874056881297",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;PSWG STYLE&#x27; model on PixAI! Search for \"PSWG STYLE\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "AICoverGenWebUI - r-kentaren-hyper-rvc.hf.space",
+      "url": "https://r-kentaren-hyper-rvc.hf.space/?__theme=system",
+      "snippet": "Generally, use 1 for male to female conversions and -1 for vice-versa. (Octaves) ↺ -33 Overall Pitch Change"
+    }
+  ]
+}

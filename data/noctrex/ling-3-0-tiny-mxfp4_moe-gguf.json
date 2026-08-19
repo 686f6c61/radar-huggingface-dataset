@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "noctrex/Ling-3.0-tiny-MXFP4_MOE-GGUF",
+  "slug": "noctrex-ling-3-0-tiny-mxfp4_moe-gguf",
+  "author": "noctrex",
+  "url": "https://huggingface.co/noctrex/Ling-3.0-tiny-MXFP4_MOE-GGUF",
+  "created_at": "2026-08-17T10:32:53.000Z",
+  "updated_at": "2026-08-17T13:26:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:quantized:inclusionAI/Ling-3.0-tiny",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 25374818688,
+  "storage_human": "25.4 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bloomer010/Ling-3.0-tiny-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bloomer010/Ling-3.0-tiny-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling 3.0 Tiny download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ling-3-0-tiny/",
+      "snippet": "Download Ling 3.0 Tiny for free. Lightweight MoE model for local reasoning, coding, and AI agents. Ling-3.0-tiny is inclusionAI&#x27;s lightweight hybrid reasoning Mixture-of-Experts model, designed to provide capable reasoning and agentic performance at low inference cost. It contains 7.9B total parameters while activating only 1.3B per token, using a hybrid architecture that alternates Kimi ..."
+    },
+    {
+      "title": "noctrex (noctrex) - Hugging Face",
+      "url": "https://huggingface.co/noctrex/models",
+      "snippet": "noctrex/Qwen3.5-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled-MXFP4_MOE-GGUF. Image-Text-to-Text • 35B • Updated Mar 17 • 9.06k • 7"
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling Ling is a general-purpose large language model series independently developed and open-sourced by Ant Group. Built on the MoE (Mixture of Experts) architecture, it has been validated on domestic heterogeneous computing platforms, achieved breakthrough at the trillion-parameter scale, and continues to evolve with long context modeling and AI Agent collaborative reasoning capabilities."
+    },
+    {
+      "title": "Ling 3.0 Tiny - access through LLMTR",
+      "url": "https://llmtr.com/en/models/inclusionai/ling-3.0-tiny",
+      "snippet": "InclusionAI Ling 3.0 Tiny: a 7.9B MoE model with Thinking and Instant modes, tool calling, prompt caching and a 256K context. Free on LLMTR."
+    }
+  ]
+}

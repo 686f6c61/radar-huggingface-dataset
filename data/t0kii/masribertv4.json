@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "T0KII/MASRIBERTV4",
+  "slug": "t0kii-masribertv4",
+  "author": "T0KII",
+  "url": "https://huggingface.co/T0KII/MASRIBERTV4",
+  "created_at": "2026-08-13T21:20:29.000Z",
+  "updated_at": "2026-08-17T01:29:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "generated_from_trainer",
+    "base_model:UBC-NLP/MARBERTv2",
+    "base_model:finetune:UBC-NLP/MARBERTv2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 408,
+  "trending_score": 0,
+  "parameters": 239842880,
+  "parameters_human": "239.8M",
+  "storage_bytes": 138159738410,
+  "storage_human": "138.2 GB",
+  "base_model": "UBC-NLP/MARBERTv2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

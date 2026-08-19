@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "birder-project/naflex_i_vit_so400m_p16_ap_c1_siglip-v2-webli",
+  "slug": "birder-project-naflex_i_vit_so400m_p16_ap_c1_siglip-v2-webli",
+  "author": "birder-project",
+  "url": "https://huggingface.co/birder-project/naflex_i_vit_so400m_p16_ap_c1_siglip-v2-webli",
+  "created_at": "2026-08-17T17:37:12.000Z",
+  "updated_at": "2026-08-17T17:51:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "birder",
+  "languages": [],
+  "tags": [
+    "birder",
+    "image-classification",
+    "pytorch",
+    "arxiv:2010.11929",
+    "arxiv:2305.13035",
+    "arxiv:2502.14786",
+    "base_model:google/siglip2-so400m-patch16-naflex",
+    "base_model:finetune:google/siglip2-so400m-patch16-naflex",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1711697467,
+  "storage_human": "1.7 GB",
+  "base_model": "google/siglip2-so400m-patch16-naflex",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "birder-project/vit_so400m_p14_ap_siglip-v2-webli · Hugging Face",
+      "url": "https://huggingface.co/birder-project/vit_so400m_p14_ap_siglip-v2-webli",
+      "snippet": "A ViT so400m image encoder from the SigLIP-v2 model by Tschannen et al., converted to the Birder format for image feature extraction. This version preserves the original model weights and architecture for downstream tasks."
+    },
+    {
+      "title": "birder-project/vit_so400m_p14_ap_siglip-v2-webli at main",
+      "url": "https://huggingface.co/birder-project/vit_so400m_p14_ap_siglip-v2-webli/tree/main",
+      "snippet": "like 0 Follow Birder 12 Image Feature Extraction Birder PyTorch arxiv:2010.11929 arxiv:2305.13035 arxiv:2502.14786 License:apache-2.0 Model card FilesFiles and versions xet Community Use this model main vit_so400m_p14_ap_siglip-v2-webli Ctrl+K Ctrl+K 1 contributor History:3 commits hassonofer Update README.md 914c94f verified5 days ago ..."
+    },
+    {
+      "title": "[2502.14786] SigLIP 2: Multilingual Vision-Language Encoders with ...",
+      "url": "https://arxiv.org/abs/2502.14786",
+      "snippet": "We introduce SigLIP 2, a family of new multilingual vision-language encoders that build on the success of the original SigLIP. In this second iteration, we extend the original image-text training objective with several prior, independently developed techniques into a unified recipe -- this includes captioning-based pretraining, self-supervised losses (self-distillation, masked prediction) and ..."
+    },
+    {
+      "title": "SigLIP2_inference.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/qubvel/transformers-notebooks/blob/main/notebooks/SigLIP2_inference.ipynb",
+      "snippet": "SigLIP2 inference SigLIP 2 is a zero-shot image classification model (similar to SigLIP) proposed in SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features by Michael Tschannen et al. In summary, the SigLIP 2 models release includes the following model families:"
+    },
+    {
+      "title": "SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic ...",
+      "url": "https://arxiv.org/html/2502.14786",
+      "snippet": "With these changes, SigLIP 2 models outperform their SigLIP counterparts at all model scales in core capabilities, including zero-shot classification, image-text retrieval, and transfer performance when extracting visual representations for Vision-Language Models (VLMs)."
+    }
+  ]
+}

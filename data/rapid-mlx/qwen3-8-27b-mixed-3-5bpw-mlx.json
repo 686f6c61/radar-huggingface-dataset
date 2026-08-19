@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX",
+  "slug": "rapid-mlx-qwen3-8-27b-mixed-3-5bpw-mlx",
+  "author": "rapid-mlx",
+  "url": "https://huggingface.co/rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX",
+  "created_at": "2026-08-15T13:18:10.000Z",
+  "updated_at": "2026-08-15T15:54:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "multimodal",
+    "vlm",
+    "qwen",
+    "quantized",
+    "mixed-precision",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 436,
+  "trending_score": 0,
+  "parameters": 3971773360,
+  "parameters_human": "3.97B",
+  "storage_bytes": 13928862536,
+  "storage_human": "13.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "mlx-community/Qwen3.8-27B-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-OptiQ-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rapid-MLX — Run LLMs Locally on Apple Silicon, Fast",
+      "url": "https://rapidmlx.com/",
+      "snippet": "Rapid-MLX is a high-performance, OpenAI-compatible LLM server for Apple Silicon Macs. Built on MLX with continuous batching, prompt caching, and speculative decoding — 261 tok/s aggregate across 4 concurrent streams on an M3 Ultra, 0.08s cached time to first token. Apache 2.0."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Best Qwen Models Ranked: Which to Run Locally (Mid-2026)",
+      "url": "https://insiderllm.com/guides/qwen-models-guide/",
+      "snippet": "📚 More on this topic: Qwen 3.5 Local Guide · Qwen 3.5 9B Setup Guide · Llama 3 Guide · DeepSeek Models Guide · Best Models for Coding · VRAM Requirements While everyone was talking about Llama and DeepSeek, Alibaba quietly built the best open-source model family in the world. Qwen 3 beats Llama 3 at every comparable size. Qwen 2.5 Coder 32B matches GPT-4o on coding benchmarks. Qwen-VL ..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "chenhaodev/stcc-reader",
+  "slug": "chenhaodev-stcc-reader",
+  "author": "chenhaodev",
+  "url": "https://huggingface.co/chenhaodev/stcc-reader",
+  "created_at": "2026-08-18T12:14:05.000Z",
+  "updated_at": "2026-08-18T12:14:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "embedding",
+    "retrieval",
+    "medical",
+    "triage",
+    "stcc",
+    "gguf",
+    "ollama",
+    "sentence-similarity",
+    "zh",
+    "base_model:BAAI/bge-base-zh-v1.5",
+    "base_model:finetune:BAAI/bge-base-zh-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "BAAI/bge-base-zh-v1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chenhaodev/eqreader-qwen3.5-0.8b · Hugging Face",
+      "url": "https://huggingface.co/chenhaodev/eqreader-qwen3.5-0.8b",
+      "snippet": "chenhaodev / eqreader-qwen3.5-.8b like 1 GGUF Safetensors Chinese lora directional-stimulus-prompting emotional-intelligence keyword-extraction conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "chenhaodev (chenhao) - Hugging Face",
+      "url": "https://huggingface.co/chenhaodev/spaces",
+      "snippet": "Note: check LLM performance on Med-task @ https://gist.github.com/chenhaodev"
+    },
+    {
+      "title": "Free Text to Speech with Gemini and ChatGPT AI Voices",
+      "url": "https://www.naturalreaders.com/online/",
+      "snippet": "Convert text into ultra-realistic audio. Have any text read aloud with AI Voices. AI text reader for pdfs, books, documents, and webpages."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

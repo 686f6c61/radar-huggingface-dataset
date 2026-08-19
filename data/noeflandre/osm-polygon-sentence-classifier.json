@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "NoeFlandre/osm-polygon-sentence-classifier",
+  "slug": "noeflandre-osm-polygon-sentence-classifier",
+  "author": "NoeFlandre",
+  "url": "https://huggingface.co/NoeFlandre/osm-polygon-sentence-classifier",
+  "created_at": "2026-08-04T07:27:53.000Z",
+  "updated_at": "2026-08-18T08:21:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "landuse",
+    "text-classification",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83334732991,
+  "storage_human": "83.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NoeFlandre/osm-polygon-sentence-classifier · Hugging Face",
+      "url": "https://huggingface.co/NoeFlandre/osm-polygon-sentence-classifier",
+      "snippet": "OSM Polygon Sentence Classifier Public artifacts for the OSM polygon landuse sentence-classification task."
+    },
+    {
+      "title": "NoeFlandre / osm-polygon-sentence-classifier Public - GitHub",
+      "url": "https://github.com/NoeFlandre/osm-polygon-sentence-classifier",
+      "snippet": "A repository meant to train a sentence classifier. Contribute to NoeFlandre/osm-polygon-sentence-classifier development by creating an account on GitHub."
+    },
+    {
+      "title": "Text - Landuse classification - a NoeFlandre Collection",
+      "url": "https://huggingface.co/collections/NoeFlandre/text-landuse-classification",
+      "snippet": "Osm Polygon Sentence Classifier Trackio 🎯 View and monitor your metrics with an interactive dashboard"
+    },
+    {
+      "title": "NoeFlandre (Noé Flandre) · GitHub",
+      "url": "https://github.com/NoeFlandre/",
+      "snippet": "AI Research Engineer | Vibe-Learning | Daily meal : curating datasets & training models - NoeFlandre"
+    },
+    {
+      "title": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/",
+      "snippet": "OpenStreetMap is a map of the world, created by people like you and free to use under an open license."
+    }
+  ]
+}

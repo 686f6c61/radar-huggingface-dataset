@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "reyansh38771/sn97____dendritex____uid83____hk5DoBP",
+  "slug": "reyansh38771-sn97____dendritex____uid83____hk5dobp",
+  "author": "reyansh38771",
+  "url": "https://huggingface.co/reyansh38771/sn97____dendritex____uid83____hk5DoBP",
+  "created_at": "2026-08-18T10:53:49.000Z",
+  "updated_at": "2026-08-18T11:02:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35553834320,
+  "storage_human": "35.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dendritex (Miner) - Hugging Face",
+      "url": "https://huggingface.co/Dendritex",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 16 hours ago ... published a model about 16 hours ago"
+    },
+    {
+      "title": "GitHub - unarbos/distil: Distil SN97 — Competitive Model Distillation ...",
+      "url": "https://github.com/unarbos/distil",
+      "snippet": "Distil — SN97 A Bittensor subnet for competitive model distillation of moonshotai/Kimi-K2.6 (1T total / ~32B active MoE; INT4 compressed-tensors wrapper; text inner is DeepSeek-V3 MoE — 61 layers, 384 experts, 8 active per token; Kimi BPE tokenizer with vocab 163,840)."
+    },
+    {
+      "title": "reyansh38771/0xbidkslj3____uid94____hk5E9si · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/0xbidkslj3____uid94____hk5E9si",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dendritex - Steam Community",
+      "url": "https://steamcommunity.com/id/dendritex/",
+      "snippet": "Passionate Product Designer and UI/UX Designer with extensive experience in fulfilling user needs through innovative design. Skilled in user experience, interface design, and cross-functional team leadership who also dabbles in Voice Acting. 🌐 danialnazemi.github.io 🟣 IG: @danial.nazemi 🔴 YT: @DanialNazemi"
+    },
+    {
+      "title": "Damacol/algodhf-sn97-arbos-r25b - GitHub",
+      "url": "https://github.com/Damacol/algodhf-sn97-arbos-r25b",
+      "snippet": "algodhf/sn97-arbos-r25b - Private, Uncensored AI for Real Creators and Devs {MODEL} deployed without telemetry or corporate filters. Experience uncensored, local-first inference via Venice.ai."
+    }
+  ]
+}

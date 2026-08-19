@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "andreasburger/hip",
+  "slug": "andreasburger-hip",
+  "author": "andreasburger",
+  "url": "https://huggingface.co/andreasburger/hip",
+  "created_at": "2025-06-30T23:01:39.000Z",
+  "updated_at": "2026-08-15T14:39:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2509.21624",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4706298083,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

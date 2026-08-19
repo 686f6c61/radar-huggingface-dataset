@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/For-Her-Darkside-26B-A4B-v1.4-GGUF",
+  "slug": "mradermacher-for-her-darkside-26b-a4b-v1-4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/For-Her-Darkside-26B-A4B-v1.4-GGUF",
+  "created_at": "2026-08-18T10:12:30.000Z",
+  "updated_at": "2026-08-18T10:36:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma-4",
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "explicit",
+    "erp",
+    "adult-content",
+    "mature",
+    "unaligned",
+    "en",
+    "base_model:ReadyArt/For-Her-Darkside-26B-A4B-v1.4",
+    "base_model:quantized:ReadyArt/For-Her-Darkside-26B-A4B-v1.4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 184858380992,
+  "storage_human": "184.9 GB",
+  "base_model": "ReadyArt/For-Her-Darkside-26B-A4B-v1.4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "For-Her-Darkside-26B-A4B-v1.4-HB16-Q4_K_M.gguf - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/For-Her-Darkside-26B-A4B-v1.4-GGUF/blob/main/For-Her-Darkside-26B-A4B-v1.4-HB16-Q4_K_M.gguf",
+      "snippet": "Instructions to use ReadyArt/For-Her-Darkside-26B-A4B-v1.4-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use ReadyArt/For-Her-Darkside-26B-A4B-v1.4-GGUF with llama-cpp-python:"
+    },
+    {
+      "title": "ReadyArt/For-Her-Darkside-26B-A4B-v1.4 · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/For-Her-Darkside-26B-A4B-v1.4",
+      "snippet": "ReadyArt / For-Her-Darkside-26B-A4B-v1.4 like 0 Follow Ready.Art 1.26k Safetensors gemma4 gemma-4 roleplay conversational instruct apache-2.0 nsfw explicit erp adult-content mature unaligned License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ReadyArt/For-Her-Darkside-26B-A4B-v1.4 • hfviewer",
+      "url": "https://hfviewer.com/ReadyArt/For-Her-Darkside-26B-A4B-v1.4",
+      "snippet": "Where the model could be executed, the graph is trace-backed; otherwise it is derived from the reviewed configuration and source code. ReadyArt/For-Her-Darkside-26B-A4B-v1.4 architecture at a glance ReadyArt/For-Her-Darkside-26B-A4B-v1.4 is a model (gemma4_text architecture)."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GitHub - drumih/turbo-fieldfare: Gemma 4 26B-A4B inference in ~2 GB of ...",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "snippet": "The installer applies the same bounded-memory rule: it repacks remote ranges directly into .gturbo without staging a full shard or tensor. For a video overview of TurboFieldfare, see Better Stack&#x27;s Local AI On Apple Silicon uses 7X Less RAM. For a visual introduction to the model architecture, see Maarten Grootendorst&#x27;s A Visual Guide to Gemma 4."
+    }
+  ]
+}

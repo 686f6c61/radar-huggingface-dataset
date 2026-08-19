@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "NexLM/GRM-3-Nano",
+  "slug": "nexlm-grm-3-nano",
+  "author": "NexLM",
+  "url": "https://huggingface.co/NexLM/GRM-3-Nano",
+  "created_at": "2026-07-02T15:53:59.000Z",
+  "updated_at": "2026-08-17T19:39:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3404460,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "We announce NVIDIA Nemotron 3, the most efficient family of open models with leading accuracy for agentic AI applications. The Nemotron 3 family consists of three models: Nano, Super, and Ultra."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "Nemotron 3 Nano Omni 30B A3B Single model for video, audio, image, and text understanding for a simplified agent workflow Multimodal reasoning for sub-agents within agentic use cases such as computer use agent, document intelligence, and video/audio understanding Highest in-class efficiency and with low costs"
+    },
+    {
+      "title": "NexLM (NexLM) - Hugging Face",
+      "url": "https://huggingface.co/NexLM/models",
+      "snippet": "We build on device LLM and optimize edge inference with our custom rendering and drivers engines. https://nex-lm.vercel.app/"
+    },
+    {
+      "title": "Nemotron 3 Nano - A new Standard for Efficient, Open, and Intelligent ...",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-efficient-open-intelligent-models",
+      "snippet": "Collection of datasets used in the post-training phase of Nemotron Nano, Super, and Ultra v3. • 50 items • Updated 6 days ago • 195 Large scale pre-training datasets used in the Nemotron family of models. • 15 items • Updated 6 days ago • 186 Open, Production-ready Enterprise Models • 33 items • Updated 3 days ago • 358"
+    },
+    {
+      "title": "Nemotron 3 Nano: Open, Efficient Mixture-of-Experts Hybrid Mamba ...",
+      "url": "https://arxiv.org/html/2512.20848v1",
+      "snippet": "Abstract Abstract. We present Nemotron 3 Nano 30B-A3B, a Mixture-of-Experts hybrid Mamba-Transformer language model. Nemotron 3 Nano was pretrained on 25 trillion text tokens, including more than 3 trillion new unique tokens over Nemotron 2, followed by supervised fine tuning and large-scale RL on diverse environments."
+    }
+  ]
+}

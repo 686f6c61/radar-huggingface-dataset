@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "beznogim666/test2",
+  "slug": "beznogim666-test2",
+  "author": "beznogim666",
+  "url": "https://huggingface.co/beznogim666/test2",
+  "created_at": "2026-07-11T13:09:20.000Z",
+  "updated_at": "2026-08-17T18:24:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12820083404,
+  "parameters_human": "12.82B",
+  "storage_bytes": 316904294341,
+  "storage_human": "316.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beznogim666/test2 · Hugging Face",
+      "url": "https://huggingface.co/beznogim666/test2",
+      "snippet": "beznogim666 / test2 like 1 Safetensors 8-bit precision Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Test2 - a Hugging Face Space by beznogim666",
+      "url": "https://huggingface.co/spaces/beznogim666/test2",
+      "snippet": "How many seconds of ZeroGPU quota to request for this call. Krea2-Turbo usually finishes in ~10-20s once ComfyUI is warm - keep this low to save quota and get better queue priority. Bump it up only if a call times out (e.g. the very first generation after the Space restarts, while ComfyUI and the model are still loading)."
+    },
+    {
+      "title": "test2 - 2026-02-22 06:50:00 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/968426082254468945",
+      "snippet": "Download test2 - free LORA Z-Image AI model on TENSOR. By yaranaio"
+    },
+    {
+      "title": "test2/README.md at main · gdit-ai/test2 · GitHub",
+      "url": "https://github.com/gdit-ai/test2/blob/main/README.md",
+      "snippet": "Contribute to gdit-ai/test2 development by creating an account on GitHub."
+    },
+    {
+      "title": "test2 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/13b4cd6c86961c3b963a3f9f402b0f81",
+      "snippet": "Explore test2 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

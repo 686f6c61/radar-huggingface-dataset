@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "richarddzh/tiny-qwen3-30m-zh",
+  "slug": "richarddzh-tiny-qwen3-30m-zh",
+  "author": "richarddzh",
+  "url": "https://huggingface.co/richarddzh/tiny-qwen3-30m-zh",
+  "created_at": "2026-08-10T03:41:25.000Z",
+  "updated_at": "2026-08-17T13:27:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chinese",
+    "causal-lm",
+    "from-scratch",
+    "tiny-language-model",
+    "zh",
+    "dataset:richarddzh/chinese-small-lm-corpus",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 480,
+  "trending_score": 0,
+  "parameters": 29567616,
+  "parameters_human": "29.6M",
+  "storage_bytes": 354844320,
+  "storage_human": "355 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "richarddzh/tiny-qwen3-30m · Hugging Face",
+      "url": "https://huggingface.co/richarddzh/tiny-qwen3-30m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "richarddzh (Richard Dong) - Hugging Face",
+      "url": "https://huggingface.co/richarddzh/models",
+      "snippet": "Recent Activity updated a datasetabout 10 hours ago richarddzh/chinese-small-lm-corpus published a datasetabout 10 hours ago richarddzh/chinese-small-lm-corpus updated a model1 day ago richarddzh/tiny-qwen3-30m View all activity"
+    },
+    {
+      "title": "tiny-qwen3-30m API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/richarddzh/tiny-qwen3-30m",
+      "snippet": "Run tiny-qwen3-30m with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "airbnb_mle/colab/tiny-qwen3-training-guide/tiny-qwen3-training ... - GitHub",
+      "url": "https://github.com/richarddzh/airbnb_mle/blob/main/colab/tiny-qwen3-training-guide/tiny-qwen3-training.html",
+      "snippet": "Contribute to richarddzh/airbnb_mle development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

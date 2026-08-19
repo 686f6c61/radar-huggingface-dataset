@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "FenomAI/Qwen3.8-27B-NVFP4",
+  "slug": "fenomai-qwen3-8-27b-nvfp4",
+  "author": "FenomAI",
+  "url": "https://huggingface.co/FenomAI/Qwen3.8-27B-NVFP4",
+  "created_at": "2026-08-15T01:52:14.000Z",
+  "updated_at": "2026-08-15T01:52:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "unsloth",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 19869895952,
+  "parameters_human": "19.87B",
+  "storage_bytes": 23437581912,
+  "storage_human": "23.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

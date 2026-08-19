@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "togatogah/jinen-v2-small.gguf",
+  "slug": "togatogah-jinen-v2-small-gguf",
+  "author": "togatogah",
+  "url": "https://huggingface.co/togatogah/jinen-v2-small.gguf",
+  "created_at": "2026-08-07T14:25:22.000Z",
+  "updated_at": "2026-08-16T01:36:13.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "japanese",
+    "kana-kanji-conversion",
+    "text-generation",
+    "ja",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 104582,
+  "trending_score": 0,
+  "parameters": 109533696,
+  "parameters_human": "109.5M",
+  "storage_bytes": 490304160,
+  "storage_human": "490 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

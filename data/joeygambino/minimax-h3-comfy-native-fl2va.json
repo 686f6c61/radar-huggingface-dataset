@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joeygambino/MiniMax-H3-comfy-native-fl2va",
+  "slug": "joeygambino-minimax-h3-comfy-native-fl2va",
+  "author": "joeygambino",
+  "url": "https://huggingface.co/joeygambino/MiniMax-H3-comfy-native-fl2va",
+  "created_at": "2026-08-15T09:33:48.000Z",
+  "updated_at": "2026-08-15T19:32:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "minimax-h3",
+    "comfyui",
+    "quantized",
+    "video",
+    "fl2va",
+    "text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 580,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88558378768,
+  "storage_human": "88.6 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "joeygambino/MiniMax-H3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/joeygambino/MiniMax-H3-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "MiniMax H3 (Hailuo AI) - AI Video Workflows, Prompts & Local Deployment Hub Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 API Video Generation in ComfyUI - ComfyUI",
+      "url": "https://docs.comfy.org/tutorials/partner-nodes/minimax/minimax-h3",
+      "snippet": "MiniMax H3 is MiniMax&#x27;s general-purpose, omni-modal generation model, available in ComfyUI through the MiniMax H3 API nodes."
+    }
+  ]
+}

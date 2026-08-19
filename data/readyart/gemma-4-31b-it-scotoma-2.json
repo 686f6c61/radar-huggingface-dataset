@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/gemma-4-31B-it-scotoma-2",
+  "slug": "readyart-gemma-4-31b-it-scotoma-2",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2",
+  "created_at": "2026-08-06T05:30:23.000Z",
+  "updated_at": "2026-08-06T06:16:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 41,
+  "downloads_30d": 1571,
+  "trending_score": 8,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507890,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

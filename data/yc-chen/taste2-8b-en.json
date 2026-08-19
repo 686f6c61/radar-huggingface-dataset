@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "YC-Chen/TASTE2-8B-EN",
+  "slug": "yc-chen-taste2-8b-en",
+  "author": "YC-Chen",
+  "url": "https://huggingface.co/YC-Chen/TASTE2-8B-EN",
+  "created_at": "2025-09-15T09:19:06.000Z",
+  "updated_at": "2026-08-15T06:32:02.000Z",
+  "license": "taste2-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "speech",
+    "spoken-language-model",
+    "full-duplex",
+    "voice-agent",
+    "taste",
+    "text-to-speech",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42154297767,
+  "storage_human": "42.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Smolry/vehicle-person-bike-car-detector",
+  "slug": "smolry-vehicle-person-bike-car-detector",
+  "author": "Smolry",
+  "url": "https://huggingface.co/Smolry/vehicle-person-bike-car-detector",
+  "created_at": "2026-08-18T21:07:01.000Z",
+  "updated_at": "2026-08-18T23:13:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "computer-vision",
+    "object-detection",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 215760070,
+  "storage_human": "216 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MelkiMeriem/YOLOv8-Vehicle-Detector: A fine-tuned YOLOv8 model ...",
+      "url": "https://github.com/MelkiMeriem/YOLOv8-Vehicle-Detector",
+      "snippet": "A fine-tuned YOLOv8 model that detects 6 vehicle types (car, truck, bus, motorcycle, bicycle, person) in images. Trained on ~9,5K labeled images , with a full pipeline covering data preparation, training, evaluation (mAP metrics), and an interactive Gradio web app for real-time inference."
+    },
+    {
+      "title": "Person, vehicle, bike detection with multiple data sources",
+      "url": "https://docs.openvino.ai/2025/model-server/ovms_demo_person_vehicle_bike_detection.html",
+      "snippet": "Person, vehicle, bike detection with multiple data sources # The purpose of this demo is to show how to send data from multiple sources (cameras, video files) to a model served in OpenVINO Model Server. Prerequisites # Model preparation: Python 3.9 or higher with pip Model Server deployment: Installed Docker Engine or OVMS binary package according to the baremetal deployment guide Prepare ..."
+    },
+    {
+      "title": "person-vehicle-bike-detection-crossroad-0078 - OpenVINO",
+      "url": "https://docs.openvino.ai/2023.3/omz_models_model_person_vehicle_bike_detection_crossroad_0078.html",
+      "snippet": "Use Case and High-Level Description ¶ Person/Vehicle/Bike detector is based on SSD detection architecture, RMNet backbone, and learnable image downscale block (like person-vehicle-bike-detection-crossroad-0066, but with extra pooling). The model is intended for security surveillance applications and works in a variety of scenes and weather/lighting conditions."
+    },
+    {
+      "title": "Image Identifier - Instantly Identify Anything with AI",
+      "url": "https://imageidentifier.ai/",
+      "snippet": "Upload a photo and let advanced AI instantly identify anything in your image. Fast, free, and accurate visual recognition tool for objects, animals, plants, vehicles, artwork, and more."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    }
+  ]
+}

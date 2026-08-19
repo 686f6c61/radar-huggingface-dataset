@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dimios45/yam-pick-duster-200-bspline-joint",
+  "slug": "dimios45-yam-pick-duster-200-bspline-joint",
+  "author": "Dimios45",
+  "url": "https://huggingface.co/Dimios45/yam-pick-duster-200-bspline-joint",
+  "created_at": "2026-08-18T04:39:15.000Z",
+  "updated_at": "2026-08-18T04:42:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "diffusion-policy",
+  "languages": [],
+  "tags": [
+    "diffusion-policy",
+    "robotics",
+    "imitation-learning",
+    "b-spline-policy",
+    "manipulation",
+    "yam",
+    "dataset:Dimios45/yam-pick-duster-200",
+    "arxiv:2607.09648",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2054517590,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dimios45/yam-pick-duster-bspline-joint · Hugging Face",
+      "url": "https://huggingface.co/Dimios45/yam-pick-duster-bspline-joint",
+      "snippet": "This model commands joints directly — no inverse kinematics at inference. The end-effector counterpart trained on the same 50 takes is Dimios45/yam-pick-duster-bspline-ee; it emits Cartesian poses and does need IK."
+    },
+    {
+      "title": "Dimios45/yam-pick-duster-bspline-ee · Hugging Face",
+      "url": "https://huggingface.co/Dimios45/yam-pick-duster-bspline-ee",
+      "snippet": "This model emits absolute Cartesian poses and requires inverse kinematics on the robot. The joint-space counterpart — same 50 takes, no IK needed — is Dimios45/yam-pick-duster-bspline-joint. The pair exists to compare action spaces on identical demonstrations."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "bspline-policy/real_env/i2rt/docs/products/yam-arm.md at main · B ...",
+      "url": "https://github.com/B-spline-policy/bspline-policy/blob/main/real_env/i2rt/docs/products/yam-arm.md",
+      "snippet": "The YAM Arm is the follower/manipulation arm in the YAM family — a 6-DOF, CAN bus-driven manipulator built for real-world research and embodied AI data collection. Pair it with a YAM Leader for teleoperation, or run it standalone with the Python SDK."
+    },
+    {
+      "title": "SplineGen: a generative model for B-spline approximation of unorganized ...",
+      "url": "https://arxiv.org/html/2406.09692v1",
+      "snippet": "A generative model called SplineGen has been presented to solve the traditional parameterization and knot placement problems in B-spline approximation. The main features of this model include input data point size-independent, point permutation invariant, aligned knots and parameters, and robustness, cumulatively giving a highly accurate ..."
+    }
+  ]
+}

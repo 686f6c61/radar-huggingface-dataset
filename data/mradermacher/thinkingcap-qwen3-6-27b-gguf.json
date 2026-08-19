@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ThinkingCap-Qwen3.6-27B-GGUF",
+  "slug": "mradermacher-thinkingcap-qwen3-6-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ThinkingCap-Qwen3.6-27B-GGUF",
+  "created_at": "2026-07-15T15:12:41.000Z",
+  "updated_at": "2026-08-18T23:59:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_6",
+    "token-efficient",
+    "efficient-thinking",
+    "en",
+    "base_model:bottlecapai/ThinkingCap-Qwen3.6-27B",
+    "base_model:quantized:bottlecapai/ThinkingCap-Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 10710,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780443872,
+  "storage_human": "190.8 GB",
+  "base_model": "bottlecapai/ThinkingCap-Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/ThinkingCap-Qwen3.6-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ThinkingCap-Qwen3.6-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/ThinkingCap-Qwen3.6-27B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ThinkingCap-Qwen3.6-27B-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/ThinkingCap-Qwen3.6-27B-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Introducing efficiency focused \"ThinkingCap\" model series. | BottleCap AI",
+      "url": "https://bottlecapai.com/post/thinkingcap-qwen3-6-27b/",
+      "snippet": "One of our core aims at BottleCap is efficiency in AI. To fulfil this mission, we fine-tuned Qwen3.6-27B to reduce unnecessary reasoning while preserving answer quality."
+    },
+    {
+      "title": "ThinkingCap-Qwen3.6-27B-GGUF — Model for Ryu · Ryu",
+      "url": "https://ryuhq.com/store/models/bottlecapai/ThinkingCap-Qwen3.6-27B-GGUF",
+      "snippet": "ThinkingCap-Qwen3.6-27B-GGUF is a model by bottlecapai from Hugging Face, browsable and runnable in Ryu. Topics: gguf, qwen3_6, llama.cpp, token-efficient, efficient-thinking."
+    },
+    {
+      "title": "ThinkingCap-Qwen3.6-27B Cuts Reasoning Token Use by Half",
+      "url": "https://hackernoon.com/thinkingcap-qwen36-27b-cuts-reasoning-token-use-by-half",
+      "snippet": "ThinkingCap-Qwen3.6-27B cuts reasoning token use by 50% while preserving much of Qwen&#x27;s reasoning quality across key AI benchmarks."
+    }
+  ]
+}

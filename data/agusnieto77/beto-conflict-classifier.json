@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "agusnieto77/beto-conflict-classifier",
+  "slug": "agusnieto77-beto-conflict-classifier",
+  "author": "agusnieto77",
+  "url": "https://huggingface.co/agusnieto77/beto-conflict-classifier",
+  "created_at": "2026-08-18T06:32:29.000Z",
+  "updated_at": "2026-08-18T06:47:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "beto",
+    "news-classification",
+    "social-conflict",
+    "argentina",
+    "long-document",
+    "sliding-window",
+    "es",
+    "dataset:agusnieto77/conflicto-social-noticias-4034",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109852418,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439433208,
+  "storage_human": "439 MB",
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agusnieto77 - Repositories - GitHub",
+      "url": "https://github.com/agusnieto77?tab=repositories",
+      "snippet": "The Self-hosted AI Starter Kit is an open-source template that quickly sets up a local AI environment. Curated by n8n, it provides essential tools for creating secure, self-hosted AI workflows."
+    },
+    {
+      "title": "Clasificador de Conflictos Sociales - Hugging Face",
+      "url": "https://huggingface.co/spaces/agusnieto77/conflict-classifier-demo",
+      "snippet": "Enter a short description of a social event or situation, and the tool will automatically identify and label the type of conflict it represents (e.g., political, economic, cultural)."
+    },
+    {
+      "title": "agusnieto77 (agustin nieto) · GitHub",
+      "url": "https://github.com/agusnieto77",
+      "snippet": "Investigador Independiente en CONICET | Cofundador del Laboratorio de Humanidades Digitales - agusnieto77"
+    },
+    {
+      "title": "water-conflict-classifier · PyPI",
+      "url": "https://pypi.org/project/water-conflict-classifier/",
+      "snippet": "This classifier demonstrates an intentional approach to building AI systems with limited data using SetFit - a framework for few-shot learning with sentence transformers."
+    },
+    {
+      "title": "baobabtech/water-conflict-classifier · Hugging Face",
+      "url": "https://huggingface.co/baobabtech/water-conflict-classifier",
+      "snippet": "Water Conflict Multi-Label Classifier 🔬 Experimental Research This experimental research draws on Pacific Institute&#x27;s Water Conflict Chronology, which tracks water-related conflicts spanning over 4,500 years of human history. The work is conducted independently and is not affiliated with Pacific Institute. This model is designed to assist researchers in classifying water-related conflict ..."
+    }
+  ]
+}

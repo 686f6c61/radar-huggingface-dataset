@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "KitsuMate/omnivoice-onnx",
+  "slug": "kitsumate-omnivoice-onnx",
+  "author": "KitsuMate",
+  "url": "https://huggingface.co/KitsuMate/omnivoice-onnx",
+  "created_at": "2026-08-14T19:57:21.000Z",
+  "updated_at": "2026-08-14T22:52:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3",
+    "omnivoice",
+    "multilingual",
+    "voice-cloning",
+    "voice-design",
+    "unity",
+    "text-to-speech",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 74,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5202673560,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

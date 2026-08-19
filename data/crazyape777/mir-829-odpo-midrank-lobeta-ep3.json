@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "crazyape777/mir-829-odpo-midrank-lobeta-ep3",
+  "slug": "crazyape777-mir-829-odpo-midrank-lobeta-ep3",
+  "author": "crazyape777",
+  "url": "https://huggingface.co/crazyape777/mir-829-odpo-midrank-lobeta-ep3",
+  "created_at": "2026-08-17T12:03:22.000Z",
+  "updated_at": "2026-08-17T12:04:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v3",
+    "offline-dpo",
+    "r637",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    },
+    {
+      "title": "AI-Powered - MindRank",
+      "url": "https://www.mindrank.ai/en",
+      "snippet": "By leveraging our proprietary AI platform, we aim to significantly accelerate the drug discovery process and deliver small molecule drugs with superior potency, druggability, and novelty. Turning low-probability events into high-probability events through systematic engineering and platform-based approaches."
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    },
+    {
+      "title": "GitHub - ngosang/trackerslist: Updated list of public BitTorrent ...",
+      "url": "https://github.com/ngosang/trackerslist",
+      "snippet": "Updated list of public BitTorrent trackers. Contribute to ngosang/trackerslist development by creating an account on GitHub."
+    },
+    {
+      "title": "FakeCaptcha scams—When the \"I&#x27;m not a robot\" button is a trap",
+      "url": "https://blog.avast.com/fakecaptcha-scams",
+      "snippet": "Before you prove your humanity to a pop up, make sure you&#x27;re not accidentally downloading malware."
+    }
+  ]
+}

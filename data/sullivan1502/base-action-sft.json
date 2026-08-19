@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "sullivan1502/base-action-sft",
+  "slug": "sullivan1502-base-action-sft",
+  "author": "sullivan1502",
+  "url": "https://huggingface.co/sullivan1502/base-action-sft",
+  "created_at": "2026-08-15T11:48:49.000Z",
+  "updated_at": "2026-08-16T08:05:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3328,
+  "trending_score": 0,
+  "parameters": 98619392,
+  "parameters_human": "98.6M",
+  "storage_bytes": 18939431330,
+  "storage_human": "18.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

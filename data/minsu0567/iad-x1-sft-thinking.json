@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "minsu0567/IAD-X1-SFT-thinking",
+  "slug": "minsu0567-iad-x1-sft-thinking",
+  "author": "minsu0567",
+  "url": "https://huggingface.co/minsu0567/IAD-X1-SFT-thinking",
+  "created_at": "2026-06-10T05:31:43.000Z",
+  "updated_at": "2026-08-17T04:48:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 42854735111,
+  "storage_human": "42.9 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - minsu0567/IAD-X1: Unified Model for Industrial Anomaly ...",
+      "url": "https://github.com/minsu0567/IAD-X1",
+      "snippet": "IAD-X1 Model ... A DPO stage (notebooks 3-4) also starts from the SFT model, training on preference pairs collected from its own wrong answers."
+    },
+    {
+      "title": "minsu0567/IAD-X1-SFT-si-answer-last · Hugging Face",
+      "url": "https://huggingface.co/minsu0567/IAD-X1-SFT-si-answer-last",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "minsu0567 (Kim minsu) - Hugging Face",
+      "url": "https://huggingface.co/minsu0567/models",
+      "snippet": "1. Generative AI for Industrial Data Augmentation 2. Architecture Optimization for Micro-defect Detection (For academic/non-commercial research purposes only)"
+    },
+    {
+      "title": "IAD-X1-SFT-answer-last API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/minsu0567/IAD-X1-SFT-answer-last",
+      "snippet": "Deploy IAD-X1-SFT-answer-last with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "minsi0567 (minsu0567) · GitHub",
+      "url": "https://github.com/minsi0567",
+      "snippet": "GitHub is where minsi0567 builds software. Opened their first issue on GitHub in Yanhui-Lee/IAD-R1 Public Apr 6"
+    }
+  ]
+}

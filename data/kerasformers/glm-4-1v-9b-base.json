@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kerasformers/glm-4.1v-9b-base",
+  "slug": "kerasformers-glm-4-1v-9b-base",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/glm-4.1v-9b-base",
+  "created_at": "2026-08-18T01:37:11.000Z",
+  "updated_at": "2026-08-18T01:45:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "glm",
+    "glm4v",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "zh",
+    "arxiv:2507.01006",
+    "base_model:zai-org/GLM-4.1V-9B-Base",
+    "base_model:finetune:zai-org/GLM-4.1V-9B-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20621339072,
+  "storage_human": "20.6 GB",
+  "base_model": "zai-org/GLM-4.1V-9B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kerasformers/glm-4-9b · Hugging Face",
+      "url": "https://huggingface.co/kerasformers/glm-4-9b",
+      "snippet": "kerasformers/glm-4-9b Pure- Keras 3 conversion of zai-org/glm-4-9b-hf for kerasformers. One implementation runs unmodified on TensorFlow / Torch / JAX. This is a GLM-4-9B checkpoint served as text -> text; weights are stored in bfloat16."
+    },
+    {
+      "title": "zai-org/GLM-4.1V-9B-Base · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.1V-9B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zai-org/GLM-4.1V-9B-Base - Hugging Face Hub Package Security... - Socket",
+      "url": "https://socket.dev/huggingface/package/zai-org/glm-4.1v-9b-base",
+      "snippet": "Based on the GLM-4-9B-0414 foundation model, we present the new open-source VLM model GLM-4.1V-9B-Thinking, designed to explore the upper limits of reasoning in vision-language models."
+    },
+    {
+      "title": "GitHub - zai-org/GLM-V: GLM-4.6V/4.5V/4.1V-Thinking: Towards Versatile ...",
+      "url": "https://github.com/zai-org/GLM-V",
+      "snippet": "We also open-sourced the base model GLM-4.1V-9B-Base to support researchers in exploring the limits of vision-language model capabilities. Compared with the previous generation CogVLM2 and GLM-4V series, GLM-4.1V-Thinking brings:"
+    },
+    {
+      "title": "GLM-4.1V-9B-Base huggingface.co api & zai-org GLM-4.1V-9B-Base github ...",
+      "url": "https://www.toolify.ai/ai-model/zai-org-glm-4-1v-9b-base",
+      "snippet": "GLM-4.1V-9B-Base is an open source model from GitHub that offers a free installation service, and any user can find GLM-4.1V-9B-Base on GitHub to install. At the same time, huggingface.co provides the effect of GLM-4.1V-9B-Base install, users can directly use GLM-4.1V-9B-Base installed effect in huggingface.co for debugging and trial. It also supports api for free installation."
+    }
+  ]
+}

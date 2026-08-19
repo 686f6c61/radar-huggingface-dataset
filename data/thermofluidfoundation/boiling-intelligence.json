@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ThermoFluidFoundation/boiling-intelligence",
+  "slug": "thermofluidfoundation-boiling-intelligence",
+  "author": "ThermoFluidFoundation",
+  "url": "https://huggingface.co/ThermoFluidFoundation/boiling-intelligence",
+  "created_at": "2026-08-16T00:17:46.000Z",
+  "updated_at": "2026-08-16T00:24:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "scientific-machine-learning",
+    "ai-for-science",
+    "physics-informed-machine-learning",
+    "agentic-ai",
+    "boiling",
+    "phase-change",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Review of Artificial Intelligence in Boiling Heat Transfer ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1555256X26000330",
+      "snippet": "In this context, artificial intelligence (AI), encompassing machine learning and deep learning techniques, has emerged as a powerful paradigm, offering significant advantages in predictive accuracy, data-driven analysis, and experimental efficiency. This paper provides a systematic review of AI applications in boiling heat transfer research."
+    },
+    {
+      "title": "AI Thermal Fluids | Journal | ScienceDirect.com by Elsevier",
+      "url": "https://www.sciencedirect.com/journal/ai-thermal-fluids",
+      "snippet": "AI-Thermal/Fluids (AITF) is dedicated to exploratory research and advancements at the intersection of artificial intelligence (AI) and thermal-fluid science and engineering. The journal publishes full length Research Articles, Rapid Communications, Reviews, Letters to the Editor, and Vision Articles. It also publishes Original Software articles that describe and provide access to open-source ..."
+    },
+    {
+      "title": "Bubbleformer: Forecasting Boiling with Transformers - arXiv.org",
+      "url": "https://arxiv.org/html/2507.21244v1",
+      "snippet": "To our knowledge, Bubbleformer is the first model to demonstrate autonomous, physically plausible forecasting of boiling dynamics. It sets new state-of-the-art benchmarks on both prediction and forecasting tasks in BubbleML 2.0, representing a significant step toward practical, generalizable ML surrogates for multiphase thermal transport."
+    },
+    {
+      "title": "PDF A Review of Artificial Intelligence in Boiling Heat Transfer ...",
+      "url": "https://cdn.techscience.press/files/fdmp/2026/TSP_FDMP-22-4%202026/TSP_FDMP_79861/TSP_FDMP_79861.pdf",
+      "snippet": "As this review will demonstrate, AI has demonstrated exceptional performance not only in predicting heat transfer coefficients, intelligent image recognition, and precise calculation of bubble dynamics parameters, but also in effectively optimizing traditional research methods such as soft sensors that infer hard-to-measure boiling parameters ..."
+    },
+    {
+      "title": "Bubbleformer: Forecasting Boiling with Transformers",
+      "url": "https://arxiv.org/abs/2507.21244v1",
+      "snippet": "Modeling boiling (an inherently chaotic, multiphase process central to energy and thermal systems) remains a significant challenge for neural PDE surrogates. Existing models require future input (e.g., bubble positions) during inference because they fail to learn nucleation from past states, limiting their ability to autonomously forecast boiling dynamics. They also fail to model flow boiling ..."
+    }
+  ]
+}

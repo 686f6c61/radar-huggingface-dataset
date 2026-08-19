@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Vita0818/Vireqo-27T-Plus-260818",
+  "slug": "vita0818-vireqo-27t-plus-260818",
+  "author": "Vita0818",
+  "url": "https://huggingface.co/Vita0818/Vireqo-27T-Plus-260818",
+  "created_at": "2026-08-18T07:46:08.000Z",
+  "updated_at": "2026-08-18T07:47:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "reasoning",
+    "bounded-thinking",
+    "ternary",
+    "q2_0",
+    "llama-cpp",
+    "lm-studio",
+    "experimental",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 7585332288,
+  "storage_human": "7.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B, prism-ml/Ternary-Bonsai-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vita0818/Vireqo-27B-260815 · Hugging Face",
+      "url": "https://huggingface.co/Vita0818/Vireqo-27B-260815",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vita0818 (Vita) · GitHub",
+      "url": "https://github.com/Vita0818/",
+      "snippet": "Vita0818 has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Vita0818 (Vita) / Repositories · GitHub",
+      "url": "https://github.com/Vita0818?tab=repositories",
+      "snippet": "Vita0818 has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

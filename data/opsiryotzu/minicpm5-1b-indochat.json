@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "opsiryotzu/MiniCPM5-1B-IndoChat",
+  "slug": "opsiryotzu-minicpm5-1b-indochat",
+  "author": "opsiryotzu",
+  "url": "https://huggingface.co/opsiryotzu/MiniCPM5-1B-IndoChat",
+  "created_at": "2026-08-08T08:35:37.000Z",
+  "updated_at": "2026-08-16T14:00:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "zh",
+    "id",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:finetune:openbmb/MiniCPM5-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 384,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 4412324128,
+  "storage_human": "4.4 GB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BravoRobots/nvidialab_act_recogida",
+  "slug": "bravorobots-nvidialab_act_recogida",
+  "author": "BravoRobots",
+  "url": "https://huggingface.co/BravoRobots/nvidialab_act_recogida",
+  "created_at": "2026-08-17T22:16:42.000Z",
+  "updated_at": "2026-08-17T22:17:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:BravoRobots/nvidialab_recogida",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 51596934,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206428120,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BravoRobots/nvidialab_recogida · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/BravoRobots/nvidialab_recogida",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BravoRobots/act_recoger_basura · Hugging Face",
+      "url": "https://huggingface.co/BravoRobots/act_recoger_basura",
+      "snippet": "BravoRobots/nvidialab_recogida ... Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+    },
+    {
+      "title": "NVIDIA Research Projects · GitHub",
+      "url": "https://github.com/NVlabs",
+      "snippet": "NVIDIA Research Projects has 499 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "NVIDIA Research Labs",
+      "url": "https://research.nvidia.com/research-labs",
+      "snippet": "NVIDIA Research is bringing groundbreaking research to life through projects, papers, and event participation across 26 disciplines. Explore our labs."
+    },
+    {
+      "title": "NVIDIA Corporation - NVIDIA Releases New Physical AI Models as Global ...",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Releases-New-Physical-AI-Models-as-Global-Partners-Unveil-Next-Generation-Robots/default.aspx",
+      "snippet": "News Summary: From mobile manipulators to humanoids, Boston Dynamics, Caterpillar, Franka Robots, Humanoid, LG Electronics and NEURA Robotics debut new robots and autonomous machines built on NVIDIA technologies. NVIDIA releases new NVIDIA Cosmos and GR00T open models and data for robot learning and reasoning, Isaac Lab-Arena for robot evaluation and the OSMO edge-to-cloud compute framework to ..."
+    }
+  ]
+}

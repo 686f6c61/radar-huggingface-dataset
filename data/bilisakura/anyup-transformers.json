@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "BiliSakura/AnyUp-transformers",
+  "slug": "bilisakura-anyup-transformers",
+  "author": "BiliSakura",
+  "url": "https://huggingface.co/BiliSakura/AnyUp-transformers",
+  "created_at": "2026-08-17T11:42:42.000Z",
+  "updated_at": "2026-08-17T11:43:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "image-feature-extraction",
+    "feature-upsampling",
+    "anyup",
+    "en",
+    "arxiv:2510.12764",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7039200,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - wimmerth/anyup: [ICLR &#x27;26 Oral] Official repository of the ...",
+      "url": "https://github.com/wimmerth/anyup",
+      "snippet": "🔔 News: [03/26] AnyUp was used in Falcon Perception. The authors also implemented an efficient MLX-compatible version of AnyUp, which is available in their repository. Check it out if you want to use AnyUp on edge devices! [11/25] We added a more efficient (both memory and speed-wise) NATTEN -based version of the window attention module used in AnyUp. You can load the new model by ..."
+    },
+    {
+      "title": "Bili-Sakura (Sakura) · GitHub",
+      "url": "https://github.com/Bili-Sakura/",
+      "snippet": "- AI Scientist - Don&#x27;t Starve Together Pro. Bili-Sakura has 154 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AnyUp: Universal Feature Upsampling - arXiv.org",
+      "url": "https://arxiv.org/html/2510.12764v1",
+      "snippet": "Figure 1: AnyUp is a universal feature upsampling model that can upsample any feature from any to any resolution, generalizing to unseen features while achieving state-of-the-art performance. 1 Introduction Table 1: Categorization of feature upsampling methods."
+    },
+    {
+      "title": "ANYUP: UNIVERSAL FEATURE UPSAMPLING - arXiv.org",
+      "url": "https://arxiv.org/pdf/2510.12764",
+      "snippet": "Figure 1: AnyUp is a universal feature upsampling model that can upsample any feature from any to any resolution, generalizing to unseen features while achieving state-of-the-art performance."
+    },
+    {
+      "title": "BiliSakura (Sakura) - Hugging Face",
+      "url": "https://huggingface.co/BiliSakura",
+      "snippet": "BiliSakura/PixNerd-diffusers Text-to-Image • May 30 RS-SSL Model Collection BiliSakura/CROMA-transformers BiliSakura/DOFA-transformers Visual Generation Models BiliSakura/JiT-diffusers"
+    }
+  ]
+}

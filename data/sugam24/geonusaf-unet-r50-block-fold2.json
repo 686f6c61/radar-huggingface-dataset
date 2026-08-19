@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-unet-r50-block-fold2",
+  "slug": "sugam24-geonusaf-unet-r50-block-fold2",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-unet-r50-block-fold2",
+  "created_at": "2026-08-16T16:35:11.000Z",
+  "updated_at": "2026-08-16T17:45:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "segmentation-models-pytorch",
+  "languages": [],
+  "tags": [
+    "segmentation-models-pytorch",
+    "semantic-segmentation",
+    "remote-sensing",
+    "unet",
+    "resnet50",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5998339770,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sugam24/geonusaf-unet-r50-block-fold0 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-unet-r50-block-fold0",
+      "snippet": "sugam24 / geonusaf-unet-r50-block-fold0 like 0 segmentation-models-pytorch semantic-segmentation remote-sensing unet resnet50 geonusaf Model card FilesFiles and versions xet Community Copy to bucket new GeoNUSAF - U-Net (ResNet-50) - block split, fold 0 Per-class (validation)"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=geonusaf",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: geonusaf Clear all"
+    },
+    {
+      "title": "GitHub - JianZhongDev/UNetPyTorchTutorial: Step-by-step tutorial on how ...",
+      "url": "https://github.com/JianZhongDev/UNetPyTorchTutorial",
+      "snippet": "Run the TrainSimpleUNetWithWeight notebook or TrainSimpleUNetWithoutWeight notebook to train UNet with or without spatial weighted loss. Run the DirectInference notebook or OverlapTileInference notebook to segment new (larger) image using the trained UNet model through direct inference or overlap tile strategy."
+    },
+    {
+      "title": "ResNet50-Unet - GitHub",
+      "url": "https://github.com/TripleCoenzyme/ResNet50-Unet",
+      "snippet": "ResNet50-Unet 本项目获第五届全国大学生生物医学工程创新设计竞赛命题组一等奖。 This project is rewarded for 2019 National Undergraduate Biomedical Engineering Inovation Design Competition."
+    },
+    {
+      "title": "U-Net Architecture Explained - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/u-net-architecture-explained/",
+      "snippet": "3. Defining the U-Net Model This function builds the complete U-Net architecture. It connects multiple encoder and decoder blocks and includes a bottleneck in the middle. The final output layer uses a sigmoid activation for segmentation."
+    }
+  ]
+}

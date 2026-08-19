@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Baekpica/Motif-3-Mixed-Quant-GGUF",
+  "slug": "baekpica-motif-3-mixed-quant-gguf",
+  "author": "Baekpica",
+  "url": "https://huggingface.co/Baekpica/Motif-3-Mixed-Quant-GGUF",
+  "created_at": "2026-08-13T15:55:42.000Z",
+  "updated_at": "2026-08-17T10:09:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "motif",
+    "motif-3",
+    "mixture-of-experts",
+    "mixed-quantization",
+    "iq2_xxs",
+    "dgx-spark",
+    "long-context",
+    "text-generation",
+    "en",
+    "ko",
+    "base_model:Motif-Technologies/Motif-3",
+    "base_model:quantized:Motif-Technologies/Motif-3",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1384,
+  "trending_score": 0,
+  "parameters": 314841775750,
+  "parameters_human": "314.84B",
+  "storage_bytes": 94162542816,
+  "storage_human": "94.2 GB",
+  "base_model": "Motif-Technologies/Motif-3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baekpica/Motif-3-Mixed-Quant-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Baekpica/Motif-3-Mixed-Quant-GGUF",
+      "snippet": "The release base is Baekpica/ds4v0.5.6.3-dfm; the long-context measurements below use the exact Spark optimization commit 593d251, and the persistent multi-bank measurements use cf605e0. One ds4-server command and one HTTP contract cover the integrated DeepSeek, Solar Open2, K-EXAONE, and Motif-3 families; only the GGUF path and its matching weight-owner manifest change. The server provides ..."
+    },
+    {
+      "title": "Baekpica/Motif-3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Baekpica/Motif-3-GGUF",
+      "snippet": "The source model identifies its license as MIT. See the official Motif-Technologies/Motif-3 model card for the architecture, intended-use, evaluation, citation, and license context."
+    },
+    {
+      "title": "Motif 3: Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2608.09119",
+      "snippet": "Motif 3 is a decoder-only autoregressive Mixture-of-Experts (MoE) language model with 314 billion total parameters and approximately 13.2 billion parameters activated for each token."
+    },
+    {
+      "title": "[2608.09119] Motif 3: Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2608.09119",
+      "snippet": "We introduce Motif 3, a decoder-only Mixture-of-Experts language model with 314 billion total parameters and 13.2 billion activated per token. Each sparse MoE layer contains 384 routed experts, with eight selected per token. This fine-grained sparsity provides substantial expert capacity while limiting computation. Motif 3 is built around Grouped Differential Latent Attention (GDLA), which ..."
+    },
+    {
+      "title": "Projects | Sunghoon Baek",
+      "url": "https://baekpica.github.io/projects/",
+      "snippet": "텐서 역할별 mixed-quant GGUF와 서빙 엔진 모델 패밀리 직접 구현으로 단일 장비 서빙을 달성한 사례. Role-based mixed-quant GGUF plus a hand-written serving-engine model family that fit a 237B MoE on one device."
+    }
+  ]
+}

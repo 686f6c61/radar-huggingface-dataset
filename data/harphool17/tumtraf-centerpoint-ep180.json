@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "harphool17/tumtraf-centerpoint-ep180",
+  "slug": "harphool17-tumtraf-centerpoint-ep180",
+  "author": "harphool17",
+  "url": "https://huggingface.co/harphool17/tumtraf-centerpoint-ep180",
+  "created_at": "2026-04-25T08:14:26.000Z",
+  "updated_at": "2026-08-18T07:22:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99990644,
+  "storage_human": "100 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harphool17 (harphool singh bajdoliya) - Hugging Face",
+      "url": "https://huggingface.co/harphool17",
+      "snippet": "Parakeet ASR Competition Winner 🔥 \"A custom NVIDIA Parakeet speech recognition model fine-tune harphool17 Apr 8 models7"
+    },
+    {
+      "title": "harphool17/tumtraf-coopdet3d-base · Hugging Face",
+      "url": "https://huggingface.co/harphool17/tumtraf-coopdet3d-base",
+      "snippet": "TUMTraf CoopDet3D Base Pretrained Model: Official CoopDet3D pretrained weights. Used for: BUS (1.0), PEDESTRIAN (0.569), BICYCLE (0.820). Framework: CoopDet3D. Size ..."
+    },
+    {
+      "title": "GitHub - CarkusL/CenterPoint: Export CenterPoint PonintPillars ONNX ...",
+      "url": "https://github.com/CarkusL/CenterPoint",
+      "snippet": "Welcome to CenterPoint! This project is fork from tianweiy/CenterPoint. I implement some code to export CenterPoint-PonintPillars ONNX model and deploy the onnx model using TensorRT. Center-based 3D Object Detection and Tracking 3D Object Detection and Tracking using center points in the bird-eye ..."
+    },
+    {
+      "title": "TUM Traffic Accident Dataset",
+      "url": "https://tum-traffic-dataset.github.io/tumtraf-a/",
+      "snippet": "The TUM Traffic Accident (TUMTraf-A) dataset is the first high-quality real-world accident dataset for the 3D object detection, segmentation and tracking task in autonomous driving."
+    },
+    {
+      "title": "TUMTraf Dataset: Frames and sequences of the A9 testbed",
+      "url": "https://innovation-mobility.com/en/project-providentia/a9-dataset/",
+      "snippet": "High-resolution datasets With a constellation of 7 sensor stations equipped with more than 60 state-of-the-art and multi-modal sensors, and with a road network coverage of approximately 3.5 kilometers, the TUMTraf Dataset offers mobility researchers, industry partners, public authorities and policy makers high-resolution curated datasets created by capturing real-world traffic along freeways ..."
+    }
+  ]
+}

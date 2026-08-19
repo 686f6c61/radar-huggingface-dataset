@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Asilarkness/MetaCog-V2-300M",
+  "slug": "asilarkness-metacog-v2-300m",
+  "author": "Asilarkness",
+  "url": "https://huggingface.co/Asilarkness/MetaCog-V2-300M",
+  "created_at": "2026-08-14T02:18:26.000Z",
+  "updated_at": "2026-08-17T10:10:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "metacog_v2",
+    "text-generation",
+    "metacognition",
+    "causal-lm",
+    "from-scratch",
+    "custom_code",
+    "en",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 334822800,
+  "parameters_human": "334.8M",
+  "storage_bytes": 163495766728,
+  "storage_human": "163.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abstract arXiv:2110.03105v4 [cs.AI] 9 Jul 2024",
+      "url": "https://arxiv.org/pdf/2110.03105v4",
+      "snippet": "Abstract Humans have the capacity to question what we see and to recognize when our vision is unreli-able (e.g., when we realize that we are experienc-ing a visual illusion). Inspired by this capacity, we present MetaCOG: a hierarchical probabilistic model that can be attached to a neural object detec-tor to monitor its outputs and determine their relia-bility. MetaCOG achieves this by ..."
+    },
+    {
+      "title": "GitHub - marleneberke/MetaCOG",
+      "url": "https://github.com/marleneberke/MetaCOG",
+      "snippet": "MetaCOG This is the repo containing the data and code to accompany the 2024 UAI paper MetaCOG: A Hierarchical Probabilistic Model for Learning Meta-Cognitive Visual Representations by Marlene Berke, Zhangir Azerbayev, Mario Belledonne, Zenna Tavares, and Julian Jara-Ettinger."
+    },
+    {
+      "title": "PDF arXiv:2110.03105v3 [cs.AI] 29 Aug 2023",
+      "url": "https://arxiv.org/pdf/2110.03105v3.pdf",
+      "snippet": "The MetaCOG model and inference were implemented in the Julia-based probablistic programming language Gen (Cusumano-Towner et al. 2019), licensed under the Apache License Version 2.0."
+    },
+    {
+      "title": "GitHub - houtini-ai/metacog: Metacog isn&#x27;t memory for LLMs, it gives ...",
+      "url": "https://github.com/houtini-ai/metacog",
+      "snippet": "Metacog isn't memory for LLMs, it gives them a nervous system. Metacognition develpoed on your iunique user experiences. Five proprioceptive senses. Cross-session reinforcement tracking. Two ho..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

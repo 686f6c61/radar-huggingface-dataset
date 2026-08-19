@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/CasualSwarms",
+  "slug": "reaperdoesntknow-casualswarms",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/CasualSwarms",
+  "created_at": "2026-01-19T10:36:53.000Z",
+  "updated_at": "2026-08-18T13:15:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "swarm_agi",
+    "text-generation",
+    "swarm",
+    "ai",
+    "agent",
+    "llm",
+    "convergent",
+    "cpu",
+    "fp32",
+    "agi",
+    "convergentintel",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "dataset:openai/gsm8k",
+    "dataset:MuskumPillerum/General-Knowledge",
+    "dataset:agentica-org/DeepCoder-Preview-Dataset",
+    "dataset:tangyuhang/KnowLogic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 1812,
+  "trending_score": 0,
+  "parameters": 170330979,
+  "parameters_human": "170.3M",
+  "storage_bytes": 681369204,
+  "storage_human": "681 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/CasualSwarms · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/CasualSwarms",
+      "snippet": "The model treats cognition as a dynamic, adaptive system where multiple internal \"agents\" collaborate through differentiable routing, trust mechanisms, and shared memory."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=swarm_agi",
+      "snippet": "Active filters: swarm_agi. Clear all . reaperdoesntknow/SAGI. Text Generation • 52.7M • Updated 16 days ago • 18 . reaperdoesntknow/CasualSwarms. Text ..."
+    },
+    {
+      "title": "Qwen3 1.7B Distilled 30B A3B SFT — AI Model | Antbase",
+      "url": "https://antbase.ai/models/qwen3-1-7b-distilled-30b-a3b-sft",
+      "snippet": "Overview Qwen3 1.7B Distilled 30B A3B SFT is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "AI Status - Real-time AI Model Status & Rankings",
+      "url": "https://aistatus.cc/",
+      "snippet": "Live status for ChatGPT, Claude, Gemini, DeepSeek and all major AI providers. Outage alerts, trending models, and LLM benchmarks."
+    },
+    {
+      "title": "reaperdoesntknow / Discovery - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/reaperdoesntknow/Discovery/0c82bdc00a8a796e74c1bd00db7fe0d8bf2d235f/overview",
+      "snippet": "Discover potential threats in the reaperdoesntknow / Discovery model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

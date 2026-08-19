@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "abdukuzi/amharic-english-tokenizer-50k",
+  "slug": "abdukuzi-amharic-english-tokenizer-50k",
+  "author": "abdukuzi",
+  "url": "https://huggingface.co/abdukuzi/amharic-english-tokenizer-50k",
+  "created_at": "2026-08-18T07:49:07.000Z",
+  "updated_at": "2026-08-18T07:49:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abdukuzi (Abdu Kuzi) - Hugging Face",
+      "url": "https://huggingface.co/abdukuzi/datasets",
+      "snippet": "User profile of Abdu Kuzi on Hugging Face"
+    },
+    {
+      "title": "yonas/AmhT5-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/yonas/AmhT5-tokenizer",
+      "snippet": "AmhT5 Tokenizer A T5 Tokenizer trained for Amharic language. Model Details Model Description An MT5Tokenizer based Amharic and English tokenizer trained using Fineweb and Wura datasets. This tokenizer aims to have a tokenizer that can better represent Amharic while also doing the same for English. To balance the dataset, I have used only 3 million document samples from the dataset. The ..."
+    },
+    {
+      "title": "Abyssinica AI",
+      "url": "https://www.abyssinica.ai/",
+      "snippet": "Abyssinica AI is a state-of-the-art conversational AI model specifically designed for low-resource African languages such as Amharic, and more to come in the future. Developed with advanced natural language processing techniques. Products include Translator, Speech synthesizer, Speech recongnition and AI powered Ethiopian laws search."
+    },
+    {
+      "title": "Abyssinica Translator - EthioCloud",
+      "url": "https://www.abyssinica.ai/translator",
+      "snippet": "The Abyssinica® Translator is the outcome of long-term research and development aimed at supporting Ethiopian languages in modern technology. It enables translation between Amharic, Geez, English, and other languages to be supported, contributing to communication across linguistic boundaries. Such tools are valuable in areas including education, cultural preservation, literature, commerce ..."
+    },
+    {
+      "title": "English Amharic Translator Model Part 2 | Tokenization #ai # ...",
+      "url": "https://www.youtube.com/watch?v=Xqbb4G5C1ok",
+      "snippet": "🚀 Welcome to Part 2 of the English to Amharic Translator Series! In this video, we&#x27;ll dive into the practical side of tokenisation, encoding, and decoding using Google&#x27;s mT5 model with ..."
+    }
+  ]
+}

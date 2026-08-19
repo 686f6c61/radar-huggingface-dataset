@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "GGQuanta/Xenomi-nano",
+  "slug": "ggquanta-xenomi-nano",
+  "author": "GGQuanta",
+  "url": "https://huggingface.co/GGQuanta/Xenomi-nano",
+  "created_at": "2026-08-19T01:41:16.000Z",
+  "updated_at": "2026-08-19T01:56:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen",
+    "qwen3.5",
+    "xenomi",
+    "quantum-research",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1516744768,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini Nano: Google DeepMind&#x27;s On-Device AI Assistant Model",
+      "url": "https://exploreai.tools/ai-models/gemini-nano",
+      "snippet": "Explore Gemini Nano, a compact on-device LLM from Google DeepMind&#x27;s Gemini family, offering local AI capabilities for text-based tasks. Learn features, use cases, and implementation."
+    },
+    {
+      "title": "The latest Gemini Nano with on-device ML Kit GenAI APIs",
+      "url": "https://android-developers.googleblog.com/2025/08/the-latest-gemini-nano-with-on-device-ml-kit-genai-apis.html",
+      "snippet": "The latest version of Gemini Nano, our most powerful multi-modal on-device model, just launched on the Pixel 10 device series and is now accessible through the ML Kit GenAI APIs. Integrate capabilities such as summarization, proofreading, rewriting, and image description directly into your apps."
+    },
+    {
+      "title": "Gemini Nano | AI | Android Developers",
+      "url": "https://developer.android.com/ai/gemini-nano",
+      "snippet": "Gemini Nano lets you deliver rich generative AI experiences without needing a network connection or sending data to the cloud. On-device AI is a great solution for use-cases where low cost, and privacy safeguards are your primary concerns. For on-device use-cases, you can take advantage of Google&#x27;s Gemini Nano foundation model."
+    },
+    {
+      "title": "Gemini Nano is now available on Android via experimental access",
+      "url": "https://android-developers.googleblog.com/2024/10/gemini-nano-experimental-access-available-on-android.html",
+      "snippet": "Gemini Nano with Multimodality, Google&#x27;s on-device generative AI model offers privacy, offline functionality, integration guides, and more."
+    },
+    {
+      "title": "Xenova/gemini-nano · Hugging Face",
+      "url": "https://huggingface.co/Xenova/gemini-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

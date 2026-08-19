@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LATlag/ppo-Pyramids",
+  "slug": "latlag-ppo-pyramids",
+  "author": "LATlag",
+  "url": "https://huggingface.co/LATlag/ppo-Pyramids",
+  "created_at": "2026-08-15T05:22:59.000Z",
+  "updated_at": "2026-08-15T05:23:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29098860,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lategardener/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/Lategardener/ppo-Pyramids",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "mikewzp/ppo-Pyramid · Hugging Face",
+      "url": "https://huggingface.co/mikewzp/ppo-Pyramid",
+      "snippet": "Pyramids deep-reinforcement-learning ML-Agents-Pyramids Model card Files Files and versions Metrics Training metrics Community Use this model ppo Agent playing Pyramids Usage (with ML-Agents) Resume the training Watch your Agent play"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "GitHub - 2668720031/PPO-LLM: Group-Project: Leveraging PPO with Large ...",
+      "url": "https://github.com/2668720031/PPO-LLM",
+      "snippet": "LLM as Expert PPO is a research project that explores using Large Language Models (LLMs) to initialize reinforcement learning policies. We leverage LLMs to generate expert-like trajectories from natural language task descriptions, then use these trajectories to pretrain PPO (Proximal Policy Optimization) agents via imitation learning. This approach improves convergence speed and sample ..."
+    },
+    {
+      "title": "S LLM A T RLHF, RLAIF, PPO, DPO M - arXiv.org",
+      "url": "https://arxiv.org/pdf/2407.16216v1",
+      "snippet": "cle like human or other AI agent. Critically, the training process of reward model could not further query the preference oracle as t e preference data has been fixed. However, the finite dataset D might lead to over-optimization of reward on in-distribution data, since the finite dataset was a small sample of the"
+    }
+  ]
+}

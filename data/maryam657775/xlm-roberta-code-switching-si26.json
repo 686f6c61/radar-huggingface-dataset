@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Maryam657775/xlm-roberta-code-switching-si26",
+  "slug": "maryam657775-xlm-roberta-code-switching-si26",
+  "author": "Maryam657775",
+  "url": "https://huggingface.co/Maryam657775/xlm-roberta-code-switching-si26",
+  "created_at": "2026-08-18T06:49:24.000Z",
+  "updated_at": "2026-08-18T06:49:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17098351,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XLM-RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/xlm-roberta",
+      "snippet": "XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages."
+    },
+    {
+      "title": "XLM-RoBERTa — transformers 3.5.0 documentation - Hugging Face",
+      "url": "https://huggingface.co/transformers/v3.5.1/model_doc/xlmroberta.html",
+      "snippet": "Finally, we show, for the first time, the possibility of multilingual modeling without sacrificing per-language performance; XLM-Ris very competitive with strong monolingual models on the GLUE and XNLI benchmarks. We will make XLM-R code, data, and models publicly available. Tips: XLM-RoBERTa is a multilingual model trained on 100 different ..."
+    },
+    {
+      "title": "Bilingual Code-Switching Using XLM-RoBERTa | TechRxiv",
+      "url": "https://www.techrxiv.org/doi/10.36227/techrxiv.175756344.42614762",
+      "snippet": "Abstract This study discusses the linguistic complexities of code-switching Tagalog-English (Taglish), for natural language processing (NLP) applications with text classification using the XLM-RoBERTa Large model. Code-switching presents challenges due to its informal syntax, frequent language alternation, and linguistic ambiguities."
+    },
+    {
+      "title": "transformers/src/transformers/models/xlm_roberta/modeling_xlm ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/xlm_roberta/modeling_xlm_roberta.py",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. - transformers/src/transformers/models/xlm_roberta/modeling_xlm_roberta.py at main · huggingface/transformers"
+    },
+    {
+      "title": "Bilingual Code-Switching Using XLM-RoBERTa - techrxiv.org",
+      "url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.175756344.42614762",
+      "snippet": "The XLM-RoBERTa Large model demonstrated exceptional performance in addressing the challenges of ambiguous and code-switched Taglish text classification. Its ability to handle linguistically ambiguous forms, mixed-language constructs, and informal expressions commonly found in Tagalog-English code-switching was evident throughout the evaluation."
+    }
+  ]
+}

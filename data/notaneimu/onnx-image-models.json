@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "notaneimu/onnx-image-models",
+  "slug": "notaneimu-onnx-image-models",
+  "author": "notaneimu",
+  "url": "https://huggingface.co/notaneimu/onnx-image-models",
+  "created_at": "2026-03-02T23:17:34.000Z",
+  "updated_at": "2026-08-18T00:13:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4552772763,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "notaneimu/onnx-image-models · Hugging Face",
+      "url": "https://huggingface.co/notaneimu/onnx-image-models",
+      "snippet": "The main target is fast, portable image processing with ONNX Runtime Web on WebGPU. Credits Original model weights, architectures, and training work belong to their respective authors. This collection focuses on packaging those models into a browser-friendly ONNX format for easier testing and deployment."
+    },
+    {
+      "title": "README.md · notaneimu/onnx-image-models at main - Hugging Face",
+      "url": "https://huggingface.co/notaneimu/onnx-image-models/blob/main/README.md",
+      "snippet": "Original model weights, architectures, and training work belong to their respective authors. This collection focuses on packaging those models into a browser-friendly ONNX format for easier testing and deployment."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "Open Image Models - GitHub",
+      "url": "https://github.com/ankandrew/open-image-models",
+      "snippet": "Ready-to-use models for a range of computer vision tasks like detection, classification, and more. With ONNX support, you get fast and accurate results right out of the box. Easily integrate these models into your apps for real-time processing—ideal for edge devices, cloud setups, or production environments. In one line of code, you can have powerful model inference running!"
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

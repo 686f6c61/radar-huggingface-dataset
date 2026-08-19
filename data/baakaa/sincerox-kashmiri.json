@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Baakaa/sincerox-kashmiri",
+  "slug": "baakaa-sincerox-kashmiri",
+  "author": "Baakaa",
+  "url": "https://huggingface.co/Baakaa/sincerox-kashmiri",
+  "created_at": "2026-08-17T18:32:43.000Z",
+  "updated_at": "2026-08-18T09:54:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "ks"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "translation",
+    "kashmiri",
+    "koshur",
+    "english-kashmiri",
+    "low-resource",
+    "qlora",
+    "lora",
+    "gemma",
+    "gemma3",
+    "kathe-2026",
+    "en",
+    "ks",
+    "arxiv:2503.19786",
+    "base_model:sarvamai/sarvam-translate",
+    "base_model:adapter:sarvamai/sarvam-translate",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 295884935,
+  "storage_human": "296 MB",
+  "base_model": "sarvamai/sarvam-translate",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "When a Kashmiri model named Samreen Ayoub was sent a video circulating ...",
+      "url": "https://x.com/TheObserverPost/status/2074513600564310294",
+      "snippet": "The Observer Post (@TheObserverPost). 250 likes 6 replies. When a Kashmiri model named Samreen Ayoub was sent a video circulating on Instagram last year, she assumed it to be someone else&#x27;s. The video pieced together from years of her own photographs, narrated by an AI-generated voice, and packaged to look like a television news segment. The video falsely claimed she was a Muslim woman ..."
+    },
+    {
+      "title": "synthocr-gen: A synthetic ocr dataset generator for low-resource ...",
+      "url": "https://arxiv.org/pdf/2601.16113v1",
+      "snippet": "We demonstrate the efficacy of our approach by generating a 600,000-sample word-segmented Kashmiri OCR dataset, which we release publicly on HuggingFace. This work provides a practical pathway for bringing low-resource languages into the era of vision-language AI models, and the tool is openly available for researchers and practitioners working with underserved writing systems worldwide."
+    },
+    {
+      "title": "Kashmiri NLP Resource Hub — Datasets, Papers, Models & Tools ...",
+      "url": "https://kashmirairesearch.online/resources",
+      "snippet": "The definitive open-source collection of Kashmiri language AI resources. Datasets, academic papers, pre-trained models, and NLP tools — everything a researcher needs in one place."
+    },
+    {
+      "title": "Kashmir AI Research | Founded by Faizan Ayoub — Kashmiri NLP (Machine ...",
+      "url": "https://kashmirairesearch.online/",
+      "snippet": "Our platform enables structured human evaluation of Kashmiri→English machine translation by native speakers, generating high-quality preference data for model training and benchmarking. Our work spans AI research in Kashmir, parallel corpus construction, LLM fine-tuning with LoRA, and rigorous inter-annotator reliability analysis."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

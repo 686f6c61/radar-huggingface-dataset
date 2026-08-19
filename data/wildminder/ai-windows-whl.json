@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Wildminder/AI-windows-whl",
+  "slug": "wildminder-ai-windows-whl",
+  "author": "Wildminder",
+  "url": "https://huggingface.co/Wildminder/AI-windows-whl",
+  "created_at": "2025-06-23T15:16:27.000Z",
+  "updated_at": "2026-08-17T11:55:29.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 153,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19839327028,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wildminder/AI-windows-whl · Hugging Face",
+      "url": "https://huggingface.co/Wildminder/AI-windows-whl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - wildminder/AI-windows-whl: Pre-compiled Python whl for Flash ...",
+      "url": "https://github.com/wildminder/AI-windows-whl",
+      "snippet": "This repository was created to address a common pain point for AI enthusiasts and developers on the Windows platform: building complex Python packages from source. Libraries like flash-attention, xformers are essential for high-performance AI tasks but often lack official pre-built wheels for Windows, forcing users into a complicated and error-prone compilation process. The goal here is to ..."
+    },
+    {
+      "title": "wildminder/AI-windows-whl | DeepWiki",
+      "url": "https://deepwiki.com/wildminder/AI-windows-whl",
+      "snippet": "Target Audience: ComfyUI community members requiring specialized AI libraries PyTorch users on Windows platforms AI/ML developers avoiding complex build processes Python developers working with attention mechanisms and optimization libraries Sources: README.md 51-56 System Architecture The repository implements a documentation-driven aggregation model where a single README.md file serves as ..."
+    },
+    {
+      "title": "Windows AI Wheels - Pre-compiled Python Wheels for AI/ML",
+      "url": "https://wildminder.github.io/AI-windows-whl/",
+      "snippet": "Browse and download pre-compiled Python wheels for AI/ML libraries on Windows. Compatible with PyTorch, CUDA, and various Python versions."
+    },
+    {
+      "title": "AI-windows-whl/README.md at main · wildminder/AI-windows-whl",
+      "url": "https://github.com/wildminder/AI-windows-whl/blob/main/README.md",
+      "snippet": "This repository was created to address a common pain point for AI enthusiasts and developers on the Windows platform: building complex Python packages from source. Libraries like flash-attention, xformers are essential for high-performance AI tasks but often lack official pre-built wheels for Windows, forcing users into a complicated and error-prone compilation process. The goal here is to ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Zayaan/sn99-router",
+  "slug": "zayaan-sn99-router",
+  "author": "Zayaan",
+  "url": "https://huggingface.co/Zayaan/sn99-router",
+  "created_at": "2026-08-02T19:22:36.000Z",
+  "updated_at": "2026-08-16T09:08:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 651627,
+  "storage_human": "651627 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zayaan/sn99-router · Hugging Face",
+      "url": "https://huggingface.co/Zayaan/sn99-router",
+      "snippet": "Zayaan / sn99-router like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "9Router - FREE AI Router & Token Saver - GitHub",
+      "url": "https://github.com/decolua/9router",
+      "snippet": "The free model list fluctuates over time (some models free only for limited promos) — subject to change without notice. Vertex AI: $300 free credits for new Google Cloud accounts (90 days)."
+    },
+    {
+      "title": "velev65656/sn99-router-c · Hugging Face",
+      "url": "https://huggingface.co/velev65656/sn99-router-c",
+      "snippet": "velev65656 / sn99-router-c like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "Models - TokenRouter",
+      "url": "https://www.tokenrouter.com/models/",
+      "snippet": "Browse and compare available AI models on TokenRouter - OpenAI, Claude, Gemini, Llama, Mistral, and more."
+    }
+  ]
+}

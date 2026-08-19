@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Noobito45/Qwen3.8-9B-heretic-uncensored-NVFP4-GGUF",
+  "slug": "noobito45-qwen3-8-9b-heretic-uncensored-nvfp4-gguf",
+  "author": "Noobito45",
+  "url": "https://huggingface.co/Noobito45/Qwen3.8-9B-heretic-uncensored-NVFP4-GGUF",
+  "created_at": "2026-08-18T22:23:20.000Z",
+  "updated_at": "2026-08-18T23:10:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "heretic",
+    "uncensored",
+    "text-generation",
+    "en",
+    "base_model:rohit267/Qwen3.8-9B-heretic-uncensored",
+    "base_model:quantized:rohit267/Qwen3.8-9B-heretic-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803664,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6993134688,
+  "storage_human": "7.0 GB",
+  "base_model": "rohit267/Qwen3.8-9B-heretic-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · rohit267/Qwen3.8-9B-heretic-uncensored at main",
+      "url": "https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored/blob/main/README.md",
+      "snippet": "rohit267 / Qwen3.8-9B-heretic-uncensored like 1 Text Generation Transformers Safetensors English qwen3_5 image-text-to-text empero-ai qwen3.5 qwen3.8 distillation reasoning function-calling sft heretic uncensored decensored abliterated reproducible conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "CCSSNE/DreamFast-qwen3-8b-heretic · Hugging Face",
+      "url": "https://huggingface.co/CCSSNE/DreamFast-qwen3-8b-heretic",
+      "snippet": "CCSSNE / DreamFast-qwen3-8b-heretic like 0 Text Generation Transformers Safetensors GGUF English qwen3 abliteration heretic uncensored qwen klein klein-9b image-generation text-encoder comfyui nvfp4 blackwell conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "Qwen3.8-9B-heretic-uncensored API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/rohit267/Qwen3.8-9B-heretic-uncensored",
+      "snippet": "Qwen3.8-9B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-9B architecture. The student was trained on ~70,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, code, general reasoning, instruction following, and tool use, quality-filtered before training."
+    },
+    {
+      "title": "Qwen3.8-9B Cyber Exploit Agent — UNCENSORED - GitHub",
+      "url": "https://github.com/Krypto-Whitehat/qwen3.8-9b-cyber-exploit-agent-uncensored",
+      "snippet": "License: apache-2.0 (base model lineage: empero-ai/Qwen3.8-9B → heretic abliteration). Qwen3.8-9B Cyber Exploit Agent (UNCENSORED twin) — identical fine-tune on heretic abliterated base; XRPL/C++/Python vulnerability analysis. Full training data + labs + evidence included; GGUFs as split release assets."
+    },
+    {
+      "title": "Qwen 3 VL node for ComfyUI + Qwen 3 VL (Heretic, uncensored) model",
+      "url": "https://civitai.com/models/2200639/qwen-3-vl-node-for-comfyui-qwen-3-vl-heretic-uncensored-model",
+      "snippet": "As for \"heretic support\" it is easy to add heretic model into the available QWEN 3.5 VL node from registry. It is needed to edit the file with the list of models by adding the \" someuser/model-name \" element into the array of model name in one or two .py files and add a SYSTEM_PROMPT options."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tylergp/molmoact2-libero-ft-10mm-100",
+  "slug": "tylergp-molmoact2-libero-ft-10mm-100",
+  "author": "tylergp",
+  "url": "https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-100",
+  "created_at": "2026-08-16T16:37:04.000Z",
+  "updated_at": "2026-08-18T02:43:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "pytorch",
+    "safetensors",
+    "molmoact2",
+    "robotics",
+    "dataset:100_episodes",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 5591928368,
+  "parameters_human": "5.59B",
+  "storage_bytes": 77362618743,
+  "storage_human": "77.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "For training, although all of our experiments start from the base checkpoint allenai/MolmoAct2, we recommend starting from the fine-tuned checkpoints listed in the Finetuned Models section above if your embodiment is similar to Bimanual YAM, DROID Franka, or SO-100/SO-101, as they can provide better initialization and downstream performance."
+    },
+    {
+      "title": "tylergp/molmoact2-libero-ft-10mm-30 · Hugging Face",
+      "url": "https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-30",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tylergp/molmoact2-libero-ft-10mm-300 · Hugging Face",
+      "url": "https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-300",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "url": "https://arxiv.org/abs/2605.02881",
+      "snippet": "Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today&#x27;s systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tied to expensive hardware, reasoning-augmented policies pay prohibitive latency for their grounding, and fine-tuned success rates remain below the threshold ..."
+    },
+    {
+      "title": "MolmoAct2 Action Reasoning Models for Real-World Deployment",
+      "url": "https://arxiv.org/html/2605.02881v1",
+      "snippet": "We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor, MolmoAct along five axes. We introduce Molmo2-ER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lenawngr/ACT_switch-2-top_v2",
+  "slug": "lenawngr-act_switch-2-top_v2",
+  "author": "lenawngr",
+  "url": "https://huggingface.co/lenawngr/ACT_switch-2-top_v2",
+  "created_at": "2026-08-19T00:11:02.000Z",
+  "updated_at": "2026-08-19T00:11:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lenawngr/SWITCH-2-top",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51595910,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206424024,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lenawngr/ACT_switch-2-top_v1 · Hugging Face",
+      "url": "https://huggingface.co/lenawngr/ACT_switch-2-top_v1",
+      "snippet": "Instructions to use lenawngr/ACT_switch-2-top_v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use lenawngr/ACT_switch-2-top_v1 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "lenawngr/SWITCH-2-top · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/lenawngr/SWITCH-2-top",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nintendo Switch 2 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nintendo_Switch_2",
+      "snippet": "The Nintendo Switch 2[b] is a video game console developed by Nintendo and released in most regions on June 5, 2025. Like the original Nintendo Switch, it can be used as a handheld, as a tablet, or connected via the dock to an external display. The Joy-Con 2 controllers can be used while magnetically attached or detached from the console."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

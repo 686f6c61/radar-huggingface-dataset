@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Vita0818/Vireqo-27VL-260818",
+  "slug": "vita0818-vireqo-27vl-260818",
+  "author": "Vita0818",
+  "url": "https://huggingface.co/Vita0818/Vireqo-27VL-260818",
+  "created_at": "2026-08-18T06:26:47.000Z",
+  "updated_at": "2026-08-18T06:28:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vision-language",
+    "multimodal",
+    "qwen3-vl",
+    "mmproj",
+    "q1",
+    "1-bit",
+    "qwen",
+    "bonsai",
+    "llama-cpp",
+    "lm-studio",
+    "apple-silicon",
+    "experimental",
+    "extreme-quantization",
+    "image-text-to-text",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 5505445376,
+  "storage_human": "5.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B, prism-ml/Bonsai-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vita0818 (Vita) · GitHub",
+      "url": "https://github.com/Vita0818/",
+      "snippet": "Vita0818 has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - Vita0818/Agent7",
+      "url": "https://github.com/Vita0818/Agent7/tree/master",
+      "snippet": "Contribute to Vita0818/Agent7 development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "VITA-MLLM/VITA at main - Hugging Face",
+      "url": "https://huggingface.co/VITA-MLLM/VITA/tree/main",
+      "snippet": "Upload VITA_ckpt/model-00020-of-00020.safetensors with huggingface_hub 13 days ago audio-encoder-2wh_zh_en_audioset_Mixtral-8x7B_New-base-tunning"
+    }
+  ]
+}

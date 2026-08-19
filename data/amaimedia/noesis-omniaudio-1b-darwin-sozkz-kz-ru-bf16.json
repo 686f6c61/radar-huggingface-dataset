@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/NOESIS-OmniAudio-1B-Darwin-Sozkz-KZ-RU-BF16",
+  "slug": "amaimedia-noesis-omniaudio-1b-darwin-sozkz-kz-ru-bf16",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/NOESIS-OmniAudio-1B-Darwin-Sozkz-KZ-RU-BF16",
+  "created_at": "2026-04-26T06:42:12.000Z",
+  "updated_at": "2026-08-16T13:05:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "kk",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "asr",
+    "speech-recognition",
+    "kazakh",
+    "merge",
+    "weighted-average",
+    "noesis",
+    "dhcf-fno",
+    "omniaudio",
+    "1b",
+    "automatic-speech-recognition",
+    "kk",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 358618193,
+  "parameters_human": "358.6M",
+  "storage_bytes": 717269834,
+  "storage_human": "717 MB",
+  "base_model": "sozkz/sozkz-omniaudio-1b-kk-asr, sozkz/sozkz-omniaudio-asr-1b-kkru",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

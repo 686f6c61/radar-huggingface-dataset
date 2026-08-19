@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "houseofboern/Background-Improver",
+  "slug": "houseofboern-background-improver",
+  "author": "houseofboern",
+  "url": "https://huggingface.co/houseofboern/Background-Improver",
+  "created_at": "2026-08-18T12:36:54.000Z",
+  "updated_at": "2026-08-18T12:37:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 800276456,
+  "storage_human": "800 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "houseofboern/v2gr4nny · Hugging Face",
+      "url": "https://huggingface.co/houseofboern/v2gr4nny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "houseofboern (c) - Hugging Face",
+      "url": "https://huggingface.co/houseofboern/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a model 4 days ago ... updated a model 4 days ago"
+    },
+    {
+      "title": "Free AI Photo Editor & Image Generator Online | Pixlr",
+      "url": "https://pixlr.com/",
+      "snippet": "Pixlr is a free online AI photo editor and image generator. Edit photos, generate AI images and videos, swap faces, remove backgrounds, make collages — powered by Flux, Kling, Veo & more. No install needed."
+    },
+    {
+      "title": "NPGEN - Free AI Image Enhancer, BG Remover & Editor",
+      "url": "https://npgen.com/",
+      "snippet": "NPGEN&#x27;s AI analyzes your image and applies the best model for your tool to improve quality, remove the background, restore faces, or edit the photo—then you can preview and download the final image."
+    },
+    {
+      "title": "Prompt Your Photos to Perfect - Free AI Image Editor Online",
+      "url": "https://aienhancer.ai/ai-image-editor",
+      "snippet": "Give any photo a glow-up in seconds with our AI image editor! Upload, type a prompt, and watch AIEnhancer transform your image-fast, smart, and free!"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Execution-Boundary-Qwen35-9B-GGUF",
+  "slug": "mradermacher-execution-boundary-qwen35-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Execution-Boundary-Qwen35-9B-GGUF",
+  "created_at": "2026-06-30T12:56:11.000Z",
+  "updated_at": "2026-08-17T21:04:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "qwen",
+    "havenlon",
+    "execution-control",
+    "execution-boundary",
+    "ai-agent",
+    "ai-security",
+    "verifiable-execution",
+    "governance",
+    "zh",
+    "en",
+    "base_model:Havenlon/Execution-Boundary-Qwen35-9B",
+    "base_model:quantized:Havenlon/Execution-Boundary-Qwen35-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 285,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81425086336,
+  "storage_human": "81.4 GB",
+  "base_model": "Havenlon/Execution-Boundary-Qwen35-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Execution-Boundary-Qwen35-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Execution-Boundary-Qwen35-9B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Havenlon/Execution-Boundary-Qwen35-9B · Hugging Face",
+      "url": "https://huggingface.co/Havenlon/Execution-Boundary-Qwen35-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Havenlon/Execution-Boundary-Qwen35-9B-Q4_K_M",
+      "url": "https://ollama.com/Havenlon/Execution-Boundary-Qwen35-9B-Q4_K_M",
+      "snippet": "A Havenlon-focused Qwen3.5 9B model for execution boundary reasoning, hardware-backed execution control, evidence chains, governance separation, and AI Agent execution risk."
+    },
+    {
+      "title": "Havenlon/Execution-Boundary-Qwen35-9B-Q4_K_M:V1/model",
+      "url": "https://ollama.com/Havenlon/Execution-Boundary-Qwen35-9B-Q4_K_M:V1/blobs/47a8de8302a2",
+      "snippet": "A Havenlon-focused Qwen3.5 9B model for execution boundary reasoning, hardware-backed execution control, evidence chains, governance separation, and AI Agent execution risk."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

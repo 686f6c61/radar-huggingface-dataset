@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-l1",
+  "slug": "ssurface-cot-dialect-math-olmo3-7b-think-grpo-corr-l1",
+  "author": "ssurface",
+  "url": "https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-l1",
+  "created_at": "2026-08-18T15:37:39.000Z",
+  "updated_at": "2026-08-18T15:50:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "chain-of-thought",
+    "reasoning",
+    "compression",
+    "math",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceH4/MATH-500",
+    "base_model:allenai/Olmo-3-7B-Think",
+    "base_model:adapter:allenai/Olmo-3-7B-Think",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159967880,
+  "storage_human": "160 MB",
+  "base_model": "allenai/Olmo-3-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "MATH-500",
+      "metric": "Accuracy (exact match)",
+      "value": 68.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Alelcv27/Olmo3-7B-Math-CoT · Hugging Face",
+      "url": "https://huggingface.co/Alelcv27/Olmo3-7B-Math-CoT",
+      "snippet": "Uploaded finetuned model Developed by: Alelcv27 License: apache-2.0 Finetuned from model : allenai/Olmo-3-7B-Instruct This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "unsloth/Olmo-3-7B-Think-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Olmo-3-7B-Think-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olmo-3-7B-Think: Private Reasoning AI for Ops",
+      "url": "https://llm.co/llms/olmo-3-7b-think",
+      "snippet": "Olmo-3-7B-Think A 7B reasoning model designed for math, coding, and logical inference tasks—deployable privately to automate technical ops workflows without sending reasoning work to external APIs. Olmo-3-7B-Think is an open-weight causal language model fine-tuned via SFT, DPO, and RLVR to produce chain-of-thought reasoning."
+    },
+    {
+      "title": "Olmo3 7b Math Cot - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/olmo3-7b-math-cot.html",
+      "snippet": "Download Olmo3 7b Math Cot GGUF model. 7.2 GB, 118 downloads, 0 likes."
+    },
+    {
+      "title": "Olmo-3-7B-Think: Open-Source 7B Reasoning LLM - DEV.co",
+      "url": "https://dev.co/ai/llms/olmo-3-7b-think",
+      "snippet": "Olmo-3-7B-Think is a 7.3B parameter open-source language model from Allen Institute for AI, designed for reasoning-heavy tasks like math and coding. It uses a chain-of-thought approach (visible \"thinking\" tokens) and has been trained through supervised fine-tuning, direct preference optimization, and reinforcement learning."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "owensong/Inflect-Micro-v2",
+  "slug": "owensong-inflect-micro-v2",
+  "author": "owensong",
+  "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
+  "created_at": "2026-06-25T17:36:22.000Z",
+  "updated_at": "2026-07-31T02:40:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-speech",
+    "speech-synthesis",
+    "local-tts",
+    "cpu",
+    "edge-ai",
+    "small-model",
+    "base-model",
+    "pytorch",
+    "vits",
+    "24khz",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 430,
+  "downloads_30d": 2553,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85739210,
+  "storage_human": "86 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "owensong/Inflect-Micro-v2 · Hugging Face",
+      "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
+      "snippet": "Inflect-Micro-v2 Complete local text-to-waveform speech synthesis under 10M parameters. Fixed-voice English TTS with deterministic seeds, long-text handling, and CPU or CUDA inference. A note from Owen Thanks so much for all the support shown on this project! I built and funded Inflect v2 independently - if this release finds a real audience, I would like to continue the project with a v3 ..."
+    },
+    {
+      "title": "owensong/Inflect-Micro-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/owensong/Inflect-Micro-v2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inflect-Micro-v2: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/inflect-micro-v2-owensong",
+      "snippet": "Overview Inflect-Micro-v2 is a complete text-to-waveform speech synthesis model with 9,356,513 parameters, built by owensong. It generates 24 kHz mono English speech with fixed voice in a 37.53 MB FP32 package that runs on CPU or CUDA. The model prioritizes speech quality within a parameter budget under 10M while maintaining deterministic outputs through seed control and handling long-form ..."
+    },
+    {
+      "title": "Inflect-Micro-v2 — 9.36M-parameter local… | AI/TLDR",
+      "url": "http://ai-tldr.dev/releases/owensong-inflect-micro-v2/",
+      "snippet": "Inflect-Micro-v2 is a 9.36M-parameter English text-to-speech model from indie developer Owen Song. The full FP32 checkpoint is 37.53 MB, small enough to bundle inside a desktop or mobile app, yet it produces natural-sounding 24 kHz mono audio without needing a reference voice at runtime."
+    },
+    {
+      "title": "Small TTS Models at the Edge: What Inflect-Micro-v2 Signals",
+      "url": "https://ai-crunch.com/articles/small-tts-models-edge-inflect-micro-v2-enterprise-implications",
+      "snippet": "When a small, locally-runnable text-to-speech model starts trending on HuggingFace with hundreds of community endorsements, it is worth paying attention — not because of the hype, but because of what the interest reveals about where enterprise AI is heading. The owensong/Inflect-Micro-v2 model, tagged explicitly for CPU execution, edge deployment, and local TTS, is attracting attention from ..."
+    }
+  ]
+}

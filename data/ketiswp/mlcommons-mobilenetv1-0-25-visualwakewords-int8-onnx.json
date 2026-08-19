@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/mlcommons-MobileNetV1-0.25-VisualWakeWords-int8-onnx",
+  "slug": "ketiswp-mlcommons-mobilenetv1-0-25-visualwakewords-int8-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/mlcommons-MobileNetV1-0.25-VisualWakeWords-int8-onnx",
+  "created_at": "2026-08-19T01:57:35.000Z",
+  "updated_at": "2026-08-19T02:10:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int8",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 357638,
+  "storage_human": "357638 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open_model_zoo/models/public/mobilenet-v1-0.25-128/README.md ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/mobilenet-v1-0.25-128/README.md",
+      "snippet": "mobilenet-v1-.25-128 is one of MobileNets - small, low-latency, low-power models parameterized to meet the resource constraints of a variety of use cases. They can be built upon for classification, detection, embeddings and segmentation similar to how other popular large scale models are used. For details, see paper."
+    },
+    {
+      "title": "STMicroelectronics/mobilenetv1 · Hugging Face",
+      "url": "https://huggingface.co/STMicroelectronics/mobilenetv1",
+      "snippet": "Performances Metrics Measures are done with default STM32Cube.AI configuration with enabled input / output allocated option. tfs stands for \"training from scratch\", meaning that the model weights were randomly initialized before training. tl stands for \"transfer learning\", meaning that the model backbone weights were initialized from a pre-trained model, then only the last layer was unfrozen ..."
+    },
+    {
+      "title": "stm32ai-modelzoo/image_classification/mobilenetv1/README.md at main ...",
+      "url": "https://github.com/STMicroelectronics/stm32ai-modelzoo/blob/master/image_classification/mobilenetv1/README.md",
+      "snippet": "Measures are done with default STM32Cube.AI configuration with enabled input / output allocated option. tfs stands for \"training from scratch\", meaning that the model weights were randomly initialized before training. tl stands for \"transfer learning\", meaning that the model backbone weights were initialized from a pre-trained model, then only the last layer was unfrozen during the training ..."
+    },
+    {
+      "title": "gbahlnxp/mobilenetv1 · Hugging Face",
+      "url": "https://huggingface.co/gbahlnxp/mobilenetv1",
+      "snippet": "To create the TFLite model fully quantized in int8 with int8 input and float32 output, run bash recipe.sh. The TFLite model file for i.MX 8M Plus, i.MX RT 1170 and i.MX RT1050 is mobilenet_v1_0.25_128_quant.tflite."
+    },
+    {
+      "title": "[1704.04861] MobileNets: Efficient Convolutional Neural Networks for ...",
+      "url": "https://arxiv.org/abs/1704.04861",
+      "snippet": "We present a class of efficient models called MobileNets for mobile and embedded vision applications. MobileNets are based on a streamlined architecture that uses depth-wise separable convolutions to build light weight deep neural networks. We introduce two simple global hyper-parameters that efficiently trade off between latency and accuracy. These hyper-parameters allow the model builder to ..."
+    }
+  ]
+}

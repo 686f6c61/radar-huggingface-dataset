@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Miiche/visualrl-ft-r5p5",
+  "slug": "miiche-visualrl-ft-r5p5",
+  "author": "Miiche",
+  "url": "https://huggingface.co/Miiche/visualrl-ft-r5p5",
+  "created_at": "2026-05-28T04:37:50.000Z",
+  "updated_at": "2026-08-15T14:14:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 49764665472,
+  "storage_human": "49.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

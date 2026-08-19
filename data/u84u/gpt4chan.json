@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "u84u/gpt4chan",
+  "slug": "u84u-gpt4chan",
+  "author": "u84u",
+  "url": "https://huggingface.co/u84u/gpt4chan",
+  "created_at": "2026-08-18T04:41:41.000Z",
+  "updated_at": "2026-08-18T07:19:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "gptj",
+    "text-generation",
+    "gpt-neo",
+    "gpt-j",
+    "4chan",
+    "causal-lm",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 255682102364,
+  "storage_human": "255.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-4Chan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GPT-4Chan",
+      "snippet": "Generative Pre-trained Transformer 4Chan (GPT-4chan) is an AI model that was developed and deployed by YouTuber and AI researcher Yannic Kilcher in June 2022. The model is a large language model, which means it can generate text based on some input, by fine-tuning GPT-J with a dataset of millions of posts from the /pol/ board of 4chan, an anonymous online forum known for occasionally hosting ..."
+    },
+    {
+      "title": "gpt-4chan: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gpt-4chan-ykilcher",
+      "snippet": "Overview gpt-4chan is a 6-billion-parameter causal language model fine-tuned from GPT-J 6B on 3.5 years of anonymously posted discussions from 4chan&#x27;s politically incorrect board (/pol/), spanning 2016 to 2019. Built by ykilcher, the model uses the transformers library for inference and reproduces text according to the statistical distribution learned from its training data. The critical fact ..."
+    },
+    {
+      "title": "GPT-4Chan: A Pre-ChatGPT Time Capsule - by Annette Vee",
+      "url": "https://annettevee.substack.com/p/gpt-4chan-a-pre-chatgpt-time-capsule",
+      "snippet": "Released in early June 2022 to great controversy among AI ethicists and machine learning researchers, GPT-4chan is the bastard child of a pretrained large language model (like the GPT series) and a dataset of posts from the infamous \"politically incorrect\" board on 4chan, brought together by a trolling researcher with a point to prove about ..."
+    },
+    {
+      "title": "mradermacher/GPT4chan-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/GPT4chan-8B-GGUF",
+      "snippet": "Model tree for mradermacher/GPT4chan-8B-GGUF Base model meta-llama/Llama-3.1-8B Finetuned v2ray/GPT4chan-8B"
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT‑4‑assisted safety research GPT‑4&#x27;s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring."
+    }
+  ]
+}

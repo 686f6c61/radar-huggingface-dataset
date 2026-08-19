@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "ymachta/articumotion-checkpoints",
+  "slug": "ymachta-articumotion-checkpoints",
+  "author": "ymachta",
+  "url": "https://huggingface.co/ymachta/articumotion-checkpoints",
+  "created_at": "2026-06-23T11:22:24.000Z",
+  "updated_at": "2026-08-14T13:32:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4081704462,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

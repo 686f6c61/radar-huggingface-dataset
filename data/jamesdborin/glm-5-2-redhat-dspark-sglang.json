@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jamesdborin/glm-5.2-redhat-dspark-sglang",
+  "slug": "jamesdborin-glm-5-2-redhat-dspark-sglang",
+  "author": "jamesdborin",
+  "url": "https://huggingface.co/jamesdborin/glm-5.2-redhat-dspark-sglang",
+  "created_at": "2026-08-18T10:48:55.000Z",
+  "updated_at": "2026-08-18T10:50:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dspark",
+    "glm",
+    "glm-5.2",
+    "custom_code",
+    "base_model:RedHatAI/GLM-5.2-speculator.dspark",
+    "base_model:finetune:RedHatAI/GLM-5.2-speculator.dspark",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3152730753,
+  "parameters_human": "3.15B",
+  "storage_bytes": 6305465978,
+  "storage_human": "6.3 GB",
+  "base_model": "RedHatAI/GLM-5.2-speculator.dspark",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/GLM-5.2-speculator.dspark · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/GLM-5.2-speculator.dspark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · RedHatAI/GLM-5.2-speculator.dspark at main",
+      "url": "https://huggingface.co/RedHatAI/GLM-5.2-speculator.dspark/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin on NL2Repo (repo generation) and Terminal-Bench 2.0 (real-world terminal tasks)."
+    },
+    {
+      "title": "GLM-5.2 - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.2",
+      "snippet": "Deploy GLM-5.2 with SGLang — Z.ai&#x27;s DeepSeek-Sparse-Attention (DSA) Mixture-of-Experts model with MTP speculative decoding and 1M context, on H200, B200, B300, GB300, and AMD MI300X/MI325X/MI355X."
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "On standard coding benchmarks, GLM-5.2 is the strongest open-source model, improving on GLM-5.1 by a wide margin: 81.0 vs. 63.5 on Terminal-Bench 2.1 and 62.1 vs. 58.4 on SWE-bench Pro. It also closes much of the gap to the closed-source frontier — on Terminal-Bench 2.1 (81.0) it lands within a few points of Claude Opus 4.8 (85.0) — while staying ahead of Gemini 3.1 Pro."
+    }
+  ]
+}

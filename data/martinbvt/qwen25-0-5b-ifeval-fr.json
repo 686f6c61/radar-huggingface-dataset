@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Martinbvt/qwen25-0.5b-ifeval-fr",
+  "slug": "martinbvt-qwen25-0-5b-ifeval-fr",
+  "author": "Martinbvt",
+  "url": "https://huggingface.co/Martinbvt/qwen25-0.5b-ifeval-fr",
+  "created_at": "2026-08-16T14:33:44.000Z",
+  "updated_at": "2026-08-16T14:35:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "french",
+    "instruction-following",
+    "lora",
+    "conversational",
+    "fr",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519332,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

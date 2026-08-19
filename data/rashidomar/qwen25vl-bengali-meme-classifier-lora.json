@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RashidOmar/qwen25vl-bengali-meme-classifier-lora",
+  "slug": "rashidomar-qwen25vl-bengali-meme-classifier-lora",
+  "author": "RashidOmar",
+  "url": "https://huggingface.co/RashidOmar/qwen25vl-bengali-meme-classifier-lora",
+  "created_at": "2026-08-17T23:48:10.000Z",
+  "updated_at": "2026-08-17T23:48:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40956136,
+  "storage_human": "41 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RashidOmar (Omar Rashid) - Hugging Face",
+      "url": "https://huggingface.co/RashidOmar",
+      "snippet": "Recent Activity updated a modelabout 3 hours ago RashidOmar/llama32-bangla-hate-v2 published a modelabout 3 hours ago RashidOmar/llama32-bangla-hate-v2 View all activity"
+    },
+    {
+      "title": "Qwen2.5-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-vl",
+      "snippet": "Vision-language model series based on Qwen2.5"
+    },
+    {
+      "title": "[2502.13923] Qwen2.5-VL Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2502.13923",
+      "snippet": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video ..."
+    },
+    {
+      "title": "#bengalimemes - TikTok",
+      "url": "https://www.tiktok.com/tag/bengalimemes",
+      "snippet": "#bengalimemes lostbanglamemes The content created by African TikToker and creator Bozrah Yankey, featuring his incredibly funny, broken-accented lip-syncs of viral Bangladeshi dialogues, has attained legendary status as a wholesome cross-cultural meme across the Bengali internet."
+    },
+    {
+      "title": "qwen2.5vl - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5vl",
+      "snippet": "Flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL."
+    }
+  ]
+}

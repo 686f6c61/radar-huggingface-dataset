@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "madhiendri/lorafiles",
+  "slug": "madhiendri-lorafiles",
+  "author": "madhiendri",
+  "url": "https://huggingface.co/madhiendri/lorafiles",
+  "created_at": "2026-08-16T22:00:57.000Z",
+  "updated_at": "2026-08-16T22:00:57.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

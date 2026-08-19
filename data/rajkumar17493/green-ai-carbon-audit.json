@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rajkumar17493/green-ai-carbon-audit",
+  "slug": "rajkumar17493-green-ai-carbon-audit",
+  "author": "rajkumar17493",
+  "url": "https://huggingface.co/rajkumar17493/green-ai-carbon-audit",
+  "created_at": "2026-08-18T18:44:31.000Z",
+  "updated_at": "2026-08-18T18:46:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24f1002802/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/24f1002802/green-ai-carbon-audit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Green AI | green-ai - ejhusom.github.io",
+      "url": "https://ejhusom.github.io/green-ai/",
+      "snippet": "Green AI: Exploring Carbon Footprints, Mitigation Strategies, and Trade Offs in Large Language Model Training (Liu et al. 2024) [Paper] A simplified machine learning product carbon footprint evaluation tool (Lang et al.) [Paper] Beyond Efficiency: Scaling AI Sustainably (Wu et al. 2024) [Paper]"
+    },
+    {
+      "title": "GreenModel: AI Carbon Emission Tracker - GitHub",
+      "url": "https://github.com/izzulroslan/GreenModel-AI-Carbon-Emission-Tracker",
+      "snippet": "GreenModel: AI Carbon Emission Tracker is a user-friendly Streamlit platform that helps users train machine learning models while tracking their carbon emissions in real time. It promotes sustainable AI development by using the CodeCarbon library to measure and visualize the environmental impact of model training."
+    },
+    {
+      "title": "Carbon_reduction/green-ai-monitor at main · Zainabhullur ... - GitHub",
+      "url": "https://github.com/Zainabhullur/Carbon_reduction/tree/main/green-ai-monitor",
+      "snippet": "Real-time carbon footprint tracking and optimization for AI models A comprehensive monitoring system that tracks CPU, GPU, memory usage, power consumption, and CO₂ emissions during AI model training and inference. Built with modern web technologies and premium UI design."
+    },
+    {
+      "title": "Sustainable AI framework for carbon footprint assessment and green AI ...",
+      "url": "https://link.springer.com/article/10.1007/s43681-026-01251-8",
+      "snippet": "This study provides hardware efficiency, model optimization; carbon footprint measurement, carbon footprint aware workload scheduling, renewable energy friendly infrastructure, and sustainable AI governance are all included within the whole Sustainable AI Framework."
+    }
+  ]
+}

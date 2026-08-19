@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "TeichAI/Qwen3.8-27B-Fable-Distill-GGUF",
+  "slug": "teichai-qwen3-8-27b-fable-distill-gguf",
+  "author": "TeichAI",
+  "url": "https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill-GGUF",
+  "created_at": "2026-08-15T05:59:18.000Z",
+  "updated_at": "2026-08-16T20:31:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "quantized",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "dataset:armand0e/claude-fable-5-claude-code",
+    "dataset:armand0e/Fable-5-Chat",
+    "base_model:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "base_model:quantized:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 18,
+  "downloads_30d": 8303,
+  "trending_score": 18,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 270792405984,
+  "storage_human": "270.8 GB",
+  "base_model": "TeichAI/Qwen3.8-27B-Fable-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TeichAI/Qwen3.8-27B-Fable-Distill · Hugging Face",
+      "url": "https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "TeichAI - Distilled Models & Datasets",
+      "url": "https://www.teichai.com/",
+      "snippet": "Open Source AI Research Distilled models and curated datasets for the community We fine-tune open-source models on high-quality reasoning datasets from frontier models like Claude, GPT, and Gemini. All models are released in GGUF format for local deployment."
+    },
+    {
+      "title": "Qwen3.6-27B-Fable-5-Distill.q8_0.gguf · TeichAI/Qwen3.6-27B-Fable-5 ...",
+      "url": "https://huggingface.co/TeichAI/Qwen3.6-27B-Fable-5-Experimental-GGUF/blob/main/Qwen3.6-27B-Fable-5-Distill.q8_0.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    }
+  ]
+}

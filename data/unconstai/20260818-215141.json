@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "unconstai/20260818-215141",
+  "slug": "unconstai-20260818-215141",
+  "author": "unconstai",
+  "url": "https://huggingface.co/unconstai/20260818-215141",
+  "created_at": "2026-08-18T12:51:41.000Z",
+  "updated_at": "2026-08-18T12:51:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconstai/20260818-063007 · Hugging Face",
+      "url": "https://huggingface.co/unconstai/20260818-063007",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Uncensored AI:A multi-modal platform providing unrestricted access to ...",
+      "url": "https://moge.ai/product/uncensored-ai",
+      "snippet": "Uncensored AI (uncensored.com) is a freemium platform built around a single premise: giving users access to the most capable frontier models — GPT-5, Claude Opus, Gemini, Grok, DeepSeek, Kimi, and others — without the content restrictions typical of mainstream AI products. Beyond aggregating third-party models, the platform ships its own proprietary models including Model T, Model T 2.0 ..."
+    },
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI model rankings. Compare the most uncensored AI models by freedom (UGI), willingness, natural intelligence, and writing ability — an independent leaderboard updated from the UGI Leaderboard."
+    },
+    {
+      "title": "UnfilteredAI - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI",
+      "snippet": "Org profile for UnfilteredAI on Hugging Face, the AI community building the future."
+    }
+  ]
+}

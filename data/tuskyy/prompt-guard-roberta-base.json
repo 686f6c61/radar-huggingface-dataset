@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "tuskyy/prompt-guard-roberta-base",
+  "slug": "tuskyy-prompt-guard-roberta-base",
+  "author": "tuskyy",
+  "url": "https://huggingface.co/tuskyy/prompt-guard-roberta-base",
+  "created_at": "2026-08-18T17:52:21.000Z",
+  "updated_at": "2026-08-18T20:54:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "prompt-injection",
+    "jailbreak-detection",
+    "ai-safety",
+    "llm-security",
+    "en",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647939,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498621549,
+  "storage_human": "499 MB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Prompt-Guard-86M · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Prompt-Guard-86M",
+      "snippet": "The model performs near perfectly on the evaluation sets. Although this result doesn&#x27;t reflect out-of-the-box performance for new use cases, it does highlight the value of fine-tuning the model to a specific distribution of prompts."
+    },
+    {
+      "title": "GitHub - seojoonkim/prompt-guard: Advanced prompt injection defense ...",
+      "url": "https://github.com/seojoonkim/prompt-guard",
+      "snippet": "Advanced prompt injection defense system for AI agents. Multi-language detection, severity scoring, and security auditing. - seojoonkim/prompt-guard"
+    },
+    {
+      "title": "meta-llama/Llama-Prompt-Guard-2-86M · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Inference on AMD Ryzen™ AI Max Processor",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/ryzen-uma-llm/README.html",
+      "snippet": "Hands-on: run Qwen3.5 9B-122B on Ryzen™ AI Max+ with 128GB UMA and Ollama, with generation benchmarks and a clear UMA setup path on Ubuntu/ROCm."
+    },
+    {
+      "title": "Prompt Guard | CyberSecEval 4 - meta-llama.github.io",
+      "url": "https://meta-llama.github.io/PurpleLlama/CyberSecEval/docs/prompt_guard/overview",
+      "snippet": "Prompt Guard is a new model for guardrailing LLM inputs against prompt attacks - in particular jailbreaking techniques and indirect injections embedded into third party data."
+    }
+  ]
+}

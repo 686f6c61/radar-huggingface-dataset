@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "neptun-org/wam-onnx",
+  "slug": "neptun-org-wam-onnx",
+  "author": "neptun-org",
+  "url": "https://huggingface.co/neptun-org/wam-onnx",
+  "created_at": "2026-05-25T04:18:06.000Z",
+  "updated_at": "2026-08-17T11:47:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "watermark-anything",
+    "invisible-watermarking",
+    "watermarking",
+    "computer-vision",
+    "image-watermarking",
+    "image-to-image",
+    "base_model:facebook/watermark-anything",
+    "base_model:quantized:facebook/watermark-anything",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 378434136,
+  "storage_human": "378 MB",
+  "base_model": "facebook/watermark-anything",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neptun-org/wam-onnx · Hugging Face",
+      "url": "https://huggingface.co/neptun-org/wam-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=invisible-watermarking",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: invisible-watermarking Clear all"
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "models/Generative_AI at main · onnx/models · GitHub",
+      "url": "https://github.com/onnx/models/tree/main/Generative_AI",
+      "snippet": "A collection of pre-trained, state-of-the-art models in the ONNX format - models/Generative_AI at main · onnx/models"
+    }
+  ]
+}

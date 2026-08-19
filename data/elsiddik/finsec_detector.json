@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "elsiddik/finsec_detector",
+  "slug": "elsiddik-finsec_detector",
+  "author": "elsiddik",
+  "url": "https://huggingface.co/elsiddik/finsec_detector",
+  "created_at": "2026-08-16T20:09:19.000Z",
+  "updated_at": "2026-08-17T04:57:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "unsloth",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "unsloth",
+    "safetensors",
+    "qwen2",
+    "cybersecurity",
+    "vulnerability-detection",
+    "cve",
+    "code-audit",
+    "code-repair",
+    "qwen2.5-coder",
+    "fine-sec",
+    "text-generation",
+    "conversational",
+    "en",
+    "code",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 386,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693946,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - yangxiaoxuan123/FineSec_detect",
+      "url": "https://github.com/yangxiaoxuan123/FineSec_detect",
+      "snippet": "The growing complexity of software systems has led to an increasing number of security vulnerabilities, which, if exploited, can cause severe security breaches and substantial economic losses. Code vulnerability detection is therefore critical for ensuring software security and reliability. Recent advances in Large Language Models (LLMs) have introduced powerful language understanding and ..."
+    },
+    {
+      "title": "elsiddik/pentest-vulnerability-detector · Hugging Face",
+      "url": "https://huggingface.co/elsiddik/pentest-vulnerability-detector",
+      "snippet": "Patent use allowed ⚠️ Must include license and copyright notice ⚠️ Must state changes made See LICENSE file for full terms. Contact For questions or issues, please open an issue on the model repository. Acknowledgments Base model: DeepSeek-Coder by DeepSeek AI Training framework: Hugging Face Transformers, PEFT Training platform: Google ..."
+    },
+    {
+      "title": "elsiddik/pentest-vulnerability-detector at main - Hugging Face",
+      "url": "https://huggingface.co/elsiddik/pentest-vulnerability-detector/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF FinSec: A Generative Defensive Agent for Financial Dialogue Security ...",
+      "url": "https://www.researchsquare.com/article/rs-8606482/v1.pdf?c=1772749942000",
+      "snippet": "FinSec is the only model to achieve a score exceeding 90%, maintaining high precision while ensuring a high recall rate. It achieves substantial improvements in both detection ability and precision, demonstrating stable performance in adversarial scenarios, and providing robust and balanced defense against both types of financial dialogue risks."
+    },
+    {
+      "title": "elsiddik/pentest-vulnerability-detector - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/elsiddik/pentest-vulnerability-detector",
+      "snippet": "Run elsiddik/pentest-vulnerability-detector with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

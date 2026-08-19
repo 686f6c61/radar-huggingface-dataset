@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma4-e2b-Snowfox-hf-GGUF",
+  "slug": "mradermacher-gemma4-e2b-snowfox-hf-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma4-e2b-Snowfox-hf-GGUF",
+  "created_at": "2026-08-17T03:03:05.000Z",
+  "updated_at": "2026-08-17T03:19:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:MichaelAnthony/gemma4-e2b-Snowfox-hf",
+    "base_model:quantized:MichaelAnthony/gemma4-e2b-Snowfox-hf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 363,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 49408236224,
+  "storage_human": "49.4 GB",
+  "base_model": "MichaelAnthony/gemma4-e2b-Snowfox-hf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

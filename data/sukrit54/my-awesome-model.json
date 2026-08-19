@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sukrit54/my-awesome-model",
+  "slug": "sukrit54-my-awesome-model",
+  "author": "sukrit54",
+  "url": "https://huggingface.co/sukrit54/my-awesome-model",
+  "created_at": "2026-08-17T18:25:24.000Z",
+  "updated_at": "2026-08-17T18:25:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 232,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sfcbm/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/sfcbm/MyAwesomeModel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SOTAagi2030/MyAwesomeModel-Release · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/MyAwesomeModel-Release",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "my_awesome_model | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/myawesomemodel/",
+      "snippet": "my_awesome_model is a fine-tuned version of DistilBERT-base-uncased, specifically optimized for text classification tasks. The model demonstrates impressive performance metrics, achieving a training accuracy of 92.95% and a final training loss of 0.0632 after 2 epochs of training."
+    },
+    {
+      "title": "my_awesome_eli5_clm-model API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/YerimahOfTimes/my_awesome_eli5_clm-model",
+      "snippet": "Deploy my_awesome_eli5_clm-model with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    }
+  ]
+}

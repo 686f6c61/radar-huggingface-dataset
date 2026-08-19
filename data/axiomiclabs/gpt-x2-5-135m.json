@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "AxiomicLabs/GPT-X2.5-135M",
+  "slug": "axiomiclabs-gpt-x2-5-135m",
+  "author": "AxiomicLabs",
+  "url": "https://huggingface.co/AxiomicLabs/GPT-X2.5-135M",
+  "created_at": "2026-05-06T03:53:51.000Z",
+  "updated_at": "2026-08-04T08:35:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gptx2",
+    "text-generation",
+    "language-model",
+    "transformer",
+    "rope",
+    "swiglu",
+    "xgqa",
+    "custom-architecture",
+    "custom-tokenizer",
+    "curriculum-learning",
+    "code-normalization",
+    "tx-3",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:AxiomicLabs/NPset-2-Python-Edu",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:AxiomicLabs/ArithMark-2.0",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:HuggingFaceFW/finephrase",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 62,
+  "downloads_30d": 2274,
+  "trending_score": 8,
+  "parameters": 135032256,
+  "parameters_human": "135.0M",
+  "storage_bytes": 540489743,
+  "storage_human": "540 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AxiomicLabs/GPT-X2.5-135M · Hugging Face",
+      "url": "https://huggingface.co/AxiomicLabs/GPT-X2.5-135M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AxiomicLabs/GPT-X2.5-135M at main - Hugging Face",
+      "url": "https://huggingface.co/AxiomicLabs/GPT-X2.5-135M/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Axiomic Labs",
+      "url": "https://www.axiomiclabs.com/",
+      "snippet": "Axiomic Labs is an independent AI research lab building from-scratch language models, reasoning benchmarks, and high-signal datasets for efficient AI. We focus on data efficiency and structured reasoning over raw scale."
+    },
+    {
+      "title": "GPT X2.5 135M by AxiomicLabs — VRAM 0.5GB, 8K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/AxiomicLabs%2FGPT-X2.5-135M,6Lo2Fdy0YPOLAfFFvE4U9h",
+      "snippet": "GPT X2.5 135M is an open-source 135m LLM by AxiomicLabs. VRAM 0.5GB, 8K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GPT-X2.5-135M Released: AI Breakthrough with Smaller Model",
+      "url": "https://www.linkedin.com/posts/axiomic-labs_artificialintelligence-machinelearning-languagemodels-activity-7490492082298523648-rP1v",
+      "snippet": "We&#x27;re excited to share the release of GPT-X2.5‑135M, our latest flagship small language model. GPT‑X2.5 was trained from scratch on 75B tokens using a progressive curriculum spanning ..."
+    }
+  ]
+}

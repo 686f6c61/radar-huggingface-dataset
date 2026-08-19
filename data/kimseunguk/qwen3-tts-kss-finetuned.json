@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kimseunguk/qwen3-tts-kss-finetuned",
+  "slug": "kimseunguk-qwen3-tts-kss-finetuned",
+  "author": "kimseunguk",
+  "url": "https://huggingface.co/kimseunguk/qwen3-tts-kss-finetuned",
+  "created_at": "2026-08-16T12:43:55.000Z",
+  "updated_at": "2026-08-18T09:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 12182500652,
+  "storage_human": "12.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    },
+    {
+      "title": "AI-Qwen3-TTS/finetuning at main · iosub/AI-Qwen3-TTS · GitHub",
+      "url": "https://github.com/iosub/AI-Qwen3-TTS/tree/main/finetuning",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    },
+    {
+      "title": "Qwen3-TTS-indic-finetuned - a aguken-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aguken-ai/qwen3-tts-indic-finetuned",
+      "snippet": "Qwen 3 TTS 1.6B and 0.6B finetuned and quantized models on all major Indic languages and dialects."
+    },
+    {
+      "title": "zero0303/qwen3-tts-ljspeech-finetuned · Hugging Face",
+      "url": "https://huggingface.co/zero0303/qwen3-tts-ljspeech-finetuned",
+      "snippet": "/ qwen3-tts-ljspeech-finetuned like 0 Text-to-Speech Transformers Safetensors keithito/lj_speech English qwen3_tts text-generation tts voice-cloning ljspeech qwen License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model Qwen3-TTS Fine-tuned on LJSpeech Model Description Voice Characteristics Use Cases Training ..."
+    },
+    {
+      "title": "Qwen3-TTS Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2601.15621",
+      "snippet": "In this report, we take a step toward stable, controllable, and human-like speech synthesis and introduce Qwen3-TTS, the first text-to-speech model in the Qwen series. Qwen3-TTS exhibits the following properties: 1) Controllability: Qwen3-TTS allows users to create new voices or manipulate fine-grained attributes of generated speech via natural language descriptions, while also supporting the ..."
+    }
+  ]
+}

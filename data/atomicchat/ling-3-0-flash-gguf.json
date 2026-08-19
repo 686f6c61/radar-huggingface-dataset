@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/Ling-3.0-flash-GGUF",
+  "slug": "atomicchat-ling-3-0-flash-gguf",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/Ling-3.0-flash-GGUF",
+  "created_at": "2026-08-04T20:00:45.000Z",
+  "updated_at": "2026-08-09T09:25:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "imatrix",
+    "moe",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 53,
+  "downloads_30d": 75405,
+  "trending_score": 8,
+  "parameters": 124414211552,
+  "parameters_human": "124.41B",
+  "storage_bytes": 3691373419040,
+  "storage_human": "3691.4 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtomicChat/Ling-3.0-flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/Ling-3.0-flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AtomicChat/Ling-3.0-flash-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/Ling-3.0-flash-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "Ling-3.0-flash llama.cpp - GitHub",
+      "url": "https://github.com/ljubomirj/Ling-3.0-flash-llama.cpp",
+      "snippet": "See MTP.md and the pre-built Q4 assistant GGUFs at the AtomicChat/Gemma 4 Assistant GGUF collection. Qwen 3.6 NextN speculative decoding: point --model-draft at the same combined *_MTP.gguf and pass --spec-type nextn — the draft context reuses the target llama_model (no second mmap) and lands +24-36 % tps on Qwen 3.6 35B-A3B MoE, +5-7 % tps ..."
+    },
+    {
+      "title": "Ling-3.0 Flash: How InclusionAI Used KDA - aimodeling.com",
+      "url": "https://www.aimodeling.com/en/news/slug/inclusionai-ling-3-flash-hybrid-linear-moe-agent",
+      "snippet": "Ling-3.0 Flash: How InclusionAI Used KDA + MLA Hybrid-Linear Attention and 1/64 Sparse MoE to Make a 124B/5.1B Agent-Grade Flash Model On August 2, 2026, InclusionAI — the open-science AGI lab founded by Ant Group — released the next-generation native hybrid reasoning model Ling-3.0 Flash on Hugging Face. The story is not \"another larger-parameter MoE,\" but rather a set of aggressive ..."
+    }
+  ]
+}

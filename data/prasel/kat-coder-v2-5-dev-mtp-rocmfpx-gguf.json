@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "prasel/KAT-Coder-V2.5-Dev-MTP-ROCmFPX-GGUF",
+  "slug": "prasel-kat-coder-v2-5-dev-mtp-rocmfpx-gguf",
+  "author": "prasel",
+  "url": "https://huggingface.co/prasel/KAT-Coder-V2.5-Dev-MTP-ROCmFPX-GGUF",
+  "created_at": "2026-08-17T14:43:25.000Z",
+  "updated_at": "2026-08-17T14:49:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 90933923008,
+  "storage_human": "90.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

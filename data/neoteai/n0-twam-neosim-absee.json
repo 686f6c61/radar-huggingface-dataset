@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NeoteAI/n0-twam-neosim-absee",
+  "slug": "neoteai-n0-twam-neosim-absee",
+  "author": "NeoteAI",
+  "url": "https://huggingface.co/NeoteAI/n0-twam-neosim-absee",
+  "created_at": "2026-08-04T07:39:11.000Z",
+  "updated_at": "2026-08-18T14:11:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7207357844,
+  "parameters_human": "7.21B",
+  "storage_bytes": 14415018952,
+  "storage_human": "14.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - neoteai/N0-TWAM: N₀-TWAM: A Tactile-Native World Action Model ...",
+      "url": "https://github.com/neoteai/N0-TWAM",
+      "snippet": "The post-trained checkpoints are multi-task models, post-trained from n0-twam-base with this toolkit&#x27;s recipe (POST_TRAINING.md): UniVTAC 8 = the 8 single-arm tasks inherited from UniVTAC, NeoSim 12 = the 12 NeoSim benchmark tasks (4 single-arm + 8 dual-arm); absEE = absolute end-effector actions, delta EE = horizon-delta actions; all trained on marker-less rgb tactile. Each task trains with ..."
+    },
+    {
+      "title": "N0-TWAM - Scaling Tactile-Native World Action Model for Contact-Rich ...",
+      "url": "https://research.neoteai.com/n0-twam/",
+      "snippet": "${&#92;mathcal{N}}_{0}$ -TWAM is pretrained at scale with synchronized per-finger tactile streams. Three modality experts predict future vision and contact before producing the action. A Tactile-Native World Action Model The model predicts three coupled streams for each chunk: future video, future tactile, and action."
+    },
+    {
+      "title": "NeoteAI (NeoteAI) - Hugging Face",
+      "url": "https://huggingface.co/NeoteAI",
+      "snippet": "Sort: Recently updated. NeoteAI/n0-twam-neosim-delta. 7B • Updated 10 days ago • 1. NeoteAI/n0-twam-neosim-absee. 7B • Updated 10 days ago • 1"
+    },
+    {
+      "title": "PDF N0-TWAM: ScalingTactile-NativeWorld ActionModelforContact ...",
+      "url": "https://research.neoteai.com/assets/n0-twam-report.pdf",
+      "snippet": "NeoteAI Team & Fudan TEAI Team We present N0-TWAM, a tactile-native world-action model for contact-rich manipulation that predicts both future vision and contact. To our knowledge, it is the first tactile world-action model trained at large scale, and it demonstrates strong capability on contact-rich tasks. We pre-train N0-TWAM at large scale with visuo-tactile joint training over tactile-rich ..."
+    },
+    {
+      "title": "N0-TWAM/README.md at main · neoteai/N0-TWAM · GitHub",
+      "url": "https://github.com/neoteai/N0-TWAM/blob/main/README.md",
+      "snippet": "N 0 -TWAM is a Vision-Tactile-Action world-action model. Vision, tactile, and action are jointly modeled by a Mixture-of-Transformers under a single rectified-flow / flow-matching objective — the model predicts the visual and tactile future and generates the low-level action that realizes it."
+    }
+  ]
+}

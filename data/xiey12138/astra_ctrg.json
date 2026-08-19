@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Xiey12138/Astra_CTRG",
+  "slug": "xiey12138-astra_ctrg",
+  "author": "Xiey12138",
+  "url": "https://huggingface.co/Xiey12138/Astra_CTRG",
+  "created_at": "2026-08-17T10:46:51.000Z",
+  "updated_at": "2026-08-17T10:46:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2605.31437",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16085715648,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zzzwzh/Astra_CTRG · Hugging Face",
+      "url": "https://huggingface.co/zzzwzh/Astra_CTRG",
+      "snippet": "Furthermore, Astra demonstrates broad utility as a foundation for CT AI development, improving downstream diagnostic performance and scaling vision-language pretrain through high-quality report synthesis. Overall, Astra serves as a broadly accessible clinical assistant and a pivotal infrastructure for the next generation of AI-powered healthcare."
+    },
+    {
+      "title": "GitHub - zh-Wang-Med/Astra: A generalizable report generation ...",
+      "url": "https://github.com/zh-Wang-Med/Astra",
+      "snippet": "Here we present Astra, a generalizable CT report generation foundation model trained on 90,678 thoracoabdominal CT-report pairs (CTRgDB) with 353,671 abnormalities spanning eight organ systems."
+    },
+    {
+      "title": "Astra: a generalizable report generation foundation model for 3D ...",
+      "url": "https://arxiv.org/abs/2605.31437v3",
+      "snippet": "Furthermore, Astra demonstrates broad utility as a foundation for CT AI development, improving downstream diagnostic performance and scaling vision-language pretrain through high-quality report synthesis. Overall, Astra serves as a broadly accessible clinical assistant and a pivotal infrastructure for the next generation of AI-powered healthcare."
+    },
+    {
+      "title": "Astra: a generalizable report generation foundation model for 3D ...",
+      "url": "https://www.semanticscholar.org/paper/Astra%3A-a-generalizable-report-generation-foundation-Wang-Chen/c647d78f7cfd7122ef771824f35a436a7398c4e9",
+      "snippet": "Astra is presented, a generalizable CT report generation foundation model developed on 90,678 thoracoabdominal CT-report pairs collected from five sites worldwide (CTRgDB), comprising 353,671 abnormalities spanning eight organ systems that demonstrates broad utility as a foundation for CT AI development, improving downstream diagnostic performance and scaling vision-language pretrain through ..."
+    },
+    {
+      "title": "Astra: a generalizable report generation foundation model for 3D ...",
+      "url": "https://www.catalyzex.com/paper/astra-a-generalizable-report-generation",
+      "snippet": "Here we present Astra, a generalizable CT report generation foundation model trained on 90,678 thoracoabdominal CT-report pairs (CTRgDB) with 353,671 abnormalities spanning eight organ systems."
+    }
+  ]
+}

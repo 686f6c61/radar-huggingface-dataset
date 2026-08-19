@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "facehuggingfacezzzzz/my-model",
+  "slug": "facehuggingfacezzzzz-my-model",
+  "author": "facehuggingfacezzzzz",
+  "url": "https://huggingface.co/facehuggingfacezzzzz/my-model",
+  "created_at": "2026-07-24T09:06:21.000Z",
+  "updated_at": "2026-08-18T14:50:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8344407390,
+  "storage_human": "8.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facehuggingfacezzzzz/my-model · Hugging Face",
+      "url": "https://huggingface.co/facehuggingfacezzzzz/my-model",
+      "snippet": "facehuggingfacezzzzz / my-model like 1 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face Viewer",
+      "url": "https://hfviewer.com/",
+      "snippet": "Interactive architecture graphs for any Hugging Face model - layers, shapes, and parameters visualized."
+    },
+    {
+      "title": "Hugging Face Guide — Models, Datasets & Inference API (2026)",
+      "url": "https://myengineeringpath.dev/tools/hugging-face/",
+      "snippet": "Hugging Face is the largest open-source AI platform, hosting over 500,000 models, 100,000 datasets, and providing the Transformers library for model inference and fine-tuning."
+    },
+    {
+      "title": "Google AI Mode - a new way to search, whatever&#x27;s on your mind",
+      "url": "https://search.google/ways-to-search/ai-mode/",
+      "snippet": "AI Mode uses Gemini 3&#x27;s next-generation intelligence, with advanced reasoning, thinking, and multimodal understanding to help with even your toughest questions."
+    }
+  ]
+}

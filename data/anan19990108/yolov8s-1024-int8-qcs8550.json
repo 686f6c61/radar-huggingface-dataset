@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "anan19990108/yolov8s-1024-int8-qcs8550",
+  "slug": "anan19990108-yolov8s-1024-int8-qcs8550",
+  "author": "anan19990108",
+  "url": "https://huggingface.co/anan19990108/yolov8s-1024-int8-qcs8550",
+  "created_at": "2026-08-18T08:16:26.000Z",
+  "updated_at": "2026-08-18T08:20:51.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "yolov8",
+    "int8",
+    "post-training-quantization",
+    "object-detection",
+    "qualcomm",
+    "qcs8550",
+    "qnn",
+    "htp",
+    "android",
+    "edge-ai",
+    "dataset:detection-datasets/coco",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11636360,
+  "storage_human": "12 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anan19990108 (An) - Hugging Face",
+      "url": "https://huggingface.co/anan19990108/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 17 days ago ... updated a model 17 days ago"
+    },
+    {
+      "title": "GitHub - ultralytics/yolov8: Ultralytics YOLOv8 discovery and ...",
+      "url": "https://github.com/ultralytics/yolov8",
+      "snippet": "Ultralytics YOLOv8 is available through the official Ultralytics YOLO package. It supports object detection, instance segmentation, image classification, pose estimation, oriented object detection, and tracking in a fast, accurate, and easy to use Python and CLI workflow. This repository is a lightweight discovery page for YOLOv8. The canonical implementation, package releases, model downloads ..."
+    },
+    {
+      "title": "Explore Ultralytics YOLOv8",
+      "url": "https://docs.ultralytics.com/models/yolov8",
+      "snippet": "Discover Ultralytics YOLOv8, an advancement in real-time object detection, optimizing performance with an array of pretrained models for diverse tasks."
+    },
+    {
+      "title": "YOLOv8 - Ultralytics Real-Time Computer Vision Model",
+      "url": "https://yolov8.org/yolov8-ultralytics-real-time-computer-vision-model/",
+      "snippet": "YOLOv8 is a computer vision model family developed by Ultralytics and released in January 2023. It builds on earlier YOLO ideas while introducing a redesigned architecture, improved training workflow, and support for multiple computer vision tasks through the Ultralytics framework."
+    },
+    {
+      "title": "Ultralytics/YOLOv8 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLOv8",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    }
+  ]
+}

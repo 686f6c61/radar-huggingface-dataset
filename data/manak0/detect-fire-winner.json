@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "manak0/Detect-fire-winner",
+  "slug": "manak0-detect-fire-winner",
+  "author": "manak0",
+  "url": "https://huggingface.co/manak0/Detect-fire-winner",
+  "created_at": "2026-05-13T12:07:06.000Z",
+  "updated_at": "2026-08-17T12:13:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "element_type:detect",
+    "model:ultralytics-yolo",
+    "subnet:winner",
+    "object:fire",
+    "object:smoke",
+    "object:fire extinguisher",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 307203850,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manak0/Detect-fire-winner · Hugging Face",
+      "url": "https://huggingface.co/manak0/Detect-fire-winner",
+      "snippet": "Source winner repo: SuperBitDev/cw1 Source revision: 20a49423c3135551fe19c0d78df3d0a15b0b4917 Manifest element: manak0/Detect-fire Element type: Detect Objects: fire, smoke, fire extinguisher Runtime model type: ultralytics-yolo Downloads last month -"
+    },
+    {
+      "title": "manak0 (Manako) - Hugging Face",
+      "url": "https://huggingface.co/manak0",
+      "snippet": "Org profile for Manako on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Model Library",
+      "url": "https://fireworks.ai/models",
+      "snippet": "Use state-of-the-art, open-source LLMs and image models at blazing fast speed, or fine-tune and deploy your own at no additional cost with Fireworks AI!"
+    },
+    {
+      "title": "fire-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/fire-detection",
+      "snippet": "This is my final year project on fire detection using infra-red technology, Which include real time detection and record video detection create fire alert for the safety."
+    },
+    {
+      "title": "Early Fire and Smoke Detection Using Deep Learning: A ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/15/18/10255",
+      "snippet": "The labeled data are used for model development through steps including data collection, model building, training, learning, and testing. Once trained, the detection model can accurately identify wildfire smoke in real-time. Alerts are then sent to emergency responders, enabling early action to prevent fire spread and minimize damage."
+    }
+  ]
+}

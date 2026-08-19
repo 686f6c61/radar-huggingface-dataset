@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Symbiotic-1B",
+  "slug": "reaperdoesntknow-symbiotic-1b",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Symbiotic-1B",
+  "created_at": "2025-05-06T21:35:58.000Z",
+  "updated_at": "2026-08-17T13:16:58.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "symbioticai",
+    "symbioticllm",
+    "discrepancy_calculus",
+    "ai",
+    "llm",
+    "text",
+    "convergentintel",
+    "conversational",
+    "en",
+    "dataset:0xZee/dataset-CoT-Advanced-Calculus-268",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:afl-3.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 3380,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 3519869232,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Symbiotic-1B · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Symbiotic-1B",
+      "snippet": "reaperdoesntknow ... Symbiotic-1B like 0 Text Generation Transformers Safetensors 0xZee/dataset-CoT-Advanced-Calculus-268 English qwen3 symbioticai symbioticllm discrepancy_calculus ai llm text conversational License:afl-3.0 Model card FilesFiles and versions Community Train Deploy Use this model SymbioticLM-1B Overview Architecture Highlights ..."
+    },
+    {
+      "title": "reaperdoesntknow/Symbiotic-1B - Fast, Reliable, and Scalable Inference ...",
+      "url": "https://friendli.ai/models/reaperdoesntknow/Symbiotic-1B",
+      "snippet": "Run reaperdoesntknow/Symbiotic-1B with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4 ..."
+    },
+    {
+      "title": "SymbioticAI — Symbolic Transformers - a reaperdoesntknow Collection",
+      "url": "https://huggingface.co/collections/reaperdoesntknow/symbioticai-symbolic-transformers",
+      "snippet": "Symbolic-transformer hybrids with persistent memory, 1B to 14B. Experimental research checkpoints."
+    },
+    {
+      "title": "reaperdoesntknow/Symbiotic-1B: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/Symbiotic-1B",
+      "snippet": "Unescape Escape license, datasets, language, base_model, pipeline_tag, library_name, tags license datasets language base_model pipeline_tag library_name tags afl-3.0 0xZee/dataset-CoT-Advanced-Calculus-268 en Qwen/Qwen3-.6B text-generation transformers qwen3 symbioticai symbioticllm discrepancy_calculus ai llm text convergentintel"
+    },
+    {
+      "title": "Symbiotic 1B — Capabilities, Pricing & Performance - Antbase",
+      "url": "https://antbase.ai/models/symbiotic-1b",
+      "snippet": "Overview Symbiotic 1B is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    }
+  ]
+}

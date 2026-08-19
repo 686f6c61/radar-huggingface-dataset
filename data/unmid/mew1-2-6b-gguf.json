@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Unmid/Mew1-2.6B-GGUF",
+  "slug": "unmid-mew1-2-6b-gguf",
+  "author": "Unmid",
+  "url": "https://huggingface.co/Unmid/Mew1-2.6B-GGUF",
+  "created_at": "2026-08-17T17:08:17.000Z",
+  "updated_at": "2026-08-17T17:08:18.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lfm2",
+    "lfm2.5",
+    "mew",
+    "uncensored",
+    "roleplay",
+    "text-generation",
+    "en",
+    "base_model:Unmid/Mew1-2.6B",
+    "base_model:quantized:Unmid/Mew1-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 11399078336,
+  "storage_human": "11.4 GB",
+  "base_model": "Unmid/Mew1-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unmid/Mew1-2.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Unmid/Mew1-2.6B-GGUF",
+      "snippet": "Unmid / Mew1-2.6B-GGUF like 0 Text Generation GGUF English llama.cpp lfm2 lfm2.5 mew uncensored roleplay conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Unmid/Mew1-2.6B · Hugging Face",
+      "url": "https://huggingface.co/Unmid/Mew1-2.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "GGUF Loader with its Agentic Mode, and floating button, ai Models | Open Source & Offline. Mistral, Deepseek, llama, gemma, qwen - GGUFloader/gguf-loader"
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    }
+  ]
+}

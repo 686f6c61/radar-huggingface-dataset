@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma3-negative-glitter-i1-GGUF",
+  "slug": "mradermacher-gemma3-negative-glitter-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma3-negative-glitter-i1-GGUF",
+  "created_at": "2025-06-02T10:39:18.000Z",
+  "updated_at": "2026-08-17T13:22:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 210,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 294857091147,
+  "storage_human": "294.9 GB",
+  "base_model": "ToastyPigeon/gemma3-negative-glitter",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/gemma3-negative-glitter-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma3-negative-glitter-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/gemma3-negative-glitter-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher/gemma3-negative-glitter-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma3-negative-glitter-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files."
+    },
+    {
+      "title": "Model Details - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2Fgemma3-negative-glitter-i1-GGUF",
+      "snippet": "GGUF model details and download"
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "gemma-3 (Gemma3) · GitHub",
+      "url": "https://github.com/gemma-3/",
+      "snippet": "Gemma 3 - Google&#x27;s Most Advanced Open AI Model. gemma-3 has one repository available. Follow their code on GitHub."
+    }
+  ]
+}

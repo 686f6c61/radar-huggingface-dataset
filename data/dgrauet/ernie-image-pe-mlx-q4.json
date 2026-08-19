@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dgrauet/ernie-image-pe-mlx-q4",
+  "slug": "dgrauet-ernie-image-pe-mlx-q4",
+  "author": "dgrauet",
+  "url": "https://huggingface.co/dgrauet/ernie-image-pe-mlx-q4",
+  "created_at": "2026-04-20T20:37:06.000Z",
+  "updated_at": "2026-08-15T09:17:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "mlx-forge",
+    "apple-silicon",
+    "safetensors",
+    "quantized",
+    "int4",
+    "base_model:baidu/ERNIE-Image-Turbo",
+    "base_model:finetune:baidu/ERNIE-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1946197503,
+  "storage_human": "1.9 GB",
+  "base_model": "baidu/ERNIE-Image-Turbo",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dgrauet/ernie-image-pe-mlx-q4 · Hugging Face",
+      "url": "https://huggingface.co/dgrauet/ernie-image-pe-mlx-q4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - dgrauet/ernie-image-mlx: Pure MLX port of Baidu ERNIE-Image ...",
+      "url": "https://github.com/dgrauet/ernie-image-mlx",
+      "snippet": "The Prompt Enhancer is on by default and loads from dgrauet/ernie-image-pe-mlx-q4. Override with --pe-repo-id, point at a local converted dir with --pe-local-dir, or disable entirely with --no-pe. --pe-seed controls PE sampling reproducibility independently of --seed (which controls the image latent)."
+    },
+    {
+      "title": "Ernie Image - a dgrauet Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/dgrauet/ernie-image",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from dgrauet"
+    },
+    {
+      "title": "GitHub - dgrauet/ernie-image-mlx: Pure MLX port of Baidu ERNIE-Image ...",
+      "url": "https://github.com/dgrauet/ernie-image-mlx/blob/main/",
+      "snippet": "ernie-image-mlx Pure MLX port of Baidu ERNIE-Image — an 8B single-stream Diffusion Transformer for text-to-image generation on Apple Silicon."
+    },
+    {
+      "title": "ernie-image-mlx · PyPI",
+      "url": "https://pypi.org/project/ernie-image-mlx/",
+      "snippet": "The Prompt Enhancer is on by default and loads from dgrauet/ernie-image-pe-mlx-q4. Override with --pe-repo-id, point at a local converted dir with --pe-local-dir, or disable entirely with --no-pe. --pe-seed controls PE sampling reproducibility independently of --seed (which controls the image latent)."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Superklok/SunnyChuxemLoRA",
+  "slug": "superklok-sunnychuxemlora",
+  "author": "Superklok",
+  "url": "https://huggingface.co/Superklok/SunnyChuxemLoRA",
+  "created_at": "2026-08-14T15:27:09.000Z",
+  "updated_at": "2026-08-14T16:58:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "stable-diffusion",
+    "stable-diffusion-3.5",
+    "base_model:stabilityai/stable-diffusion-3.5-large",
+    "base_model:adapter:stabilityai/stable-diffusion-3.5-large",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 277612186,
+  "storage_human": "278 MB",
+  "base_model": "stabilityai/stable-diffusion-3.5-large",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "LoRA Image Generator | AI Art with Custom Models",
+      "url": "https://loraai.io/lora",
+      "snippet": "Generate stunning AI images with LoRA models. Choose from thousands of checkpoints and styles, customize parameters, and create professional art instantly."
+    },
+    {
+      "title": "SUNSHINE - V2 FLUX - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/926620930032010949",
+      "snippet": "Download SUNSHINE - free LORA Illustrious AI model on TENSORHUB ART. FLUX, HANDSOME MALE, CUTE ANIME GIRL. By Arleth"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    }
+  ]
+}

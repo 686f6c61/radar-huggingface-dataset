@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "yangw1234/lfm25-da-lora16",
+  "slug": "yangw1234-lfm25-da-lora16",
+  "author": "yangw1234",
+  "url": "https://huggingface.co/yangw1234/lfm25-da-lora16",
+  "created_at": "2026-08-18T19:12:17.000Z",
+  "updated_at": "2026-08-18T19:13:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412333054,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yangw1234/gemma-4-finetune-lora-16 · Hugging Face",
+      "url": "https://huggingface.co/yangw1234/gemma-4-finetune-lora-16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yangw1234/gemma_4_lora · Hugging Face",
+      "url": "https://huggingface.co/yangw1234/gemma_4_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yangw1234 (Yang Wang) · GitHub",
+      "url": "https://github.com/yangw1234",
+      "snippet": "A graph representing yangw1234&#x27;s contributions from May 11, 2025 to May 15, 2026. The contributions are 60% commits, 26% pull requests, 8% code review, 6% issues."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "GitHub - yangw1234/models-1: Model Zoo for Intel® Architecture ...",
+      "url": "https://github.com/yangw1234/models-1",
+      "snippet": "Model Zoo for Intel® Architecture This repository contains links to pre-trained models, sample scripts, best practices, and step-by-step tutorials for many popular open-source machine learning models optimized by Intel to run on Intel® Xeon® Scalable processors."
+    }
+  ]
+}

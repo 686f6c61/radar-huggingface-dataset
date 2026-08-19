@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LunarOilRig/opus-mt-onnx",
+  "slug": "lunaroilrig-opus-mt-onnx",
+  "author": "LunarOilRig",
+  "url": "https://huggingface.co/LunarOilRig/opus-mt-onnx",
+  "created_at": "2026-08-15T17:19:29.000Z",
+  "updated_at": "2026-08-15T20:20:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "opus-mt",
+    "onnx",
+    "translation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9794078402,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lookbe/opus-mt-onnx",
+      "url": "https://github.com/lookbe/opus-mt-onnx",
+      "snippet": "This project is a proof of concept demonstrating how to run Opus-MT machine translation models using ONNX Runtime. The implementation focuses on: Converting / loading Opus-MT models in ONNX format Running inference using ONNX Runtime (CPU) Showing a minimal working translation pipeline Most of the source code was generated using Gemini AI, then refined and integrated into this POC."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Onnx opus mt - a Infomaniak-AI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Infomaniak-AI/onnx-opus-mt",
+      "snippet": "Onnx version of Helsinki-NLP opus-mt translations models"
+    },
+    {
+      "title": "LunarOilRig/Hy-MT2-1.8B-ONNX-q4f16-mirror · Hugging Face",
+      "url": "https://huggingface.co/LunarOilRig/Hy-MT2-1.8B-ONNX-q4f16-mirror",
+      "snippet": "Hy-MT2-1.8B-ONNX-q4f16, mirrored Byte-identical mirror of DavidLuong/Hy-MT2-1.8B-ONNX-q4f16 at commit cb415ae, kept so a downstream project does not break if that repository is made private, renamed, or deleted."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

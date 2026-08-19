@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "26B-Suite/Plainspeak-Dial-Gemma-4-26B-A4B-BakeVector",
+  "slug": "26b-suite-plainspeak-dial-gemma-4-26b-a4b-bakevector",
+  "author": "26B-Suite",
+  "url": "https://huggingface.co/26B-Suite/Plainspeak-Dial-Gemma-4-26B-A4B-BakeVector",
+  "created_at": "2026-08-14T23:00:10.000Z",
+  "updated_at": "2026-08-15T11:35:18.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "control-vector",
+    "llama.cpp",
+    "creative-writing",
+    "style",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:adapter:google/gemma-4-26B-A4B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 81664,
+  "parameters_human": "81664",
+  "storage_bytes": 657752,
+  "storage_human": "657752 B",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

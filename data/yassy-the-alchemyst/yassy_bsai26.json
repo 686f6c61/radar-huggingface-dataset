@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "YassY-The-AlchemYst/YassY_BSAI26",
+  "slug": "yassy-the-alchemyst-yassy_bsai26",
+  "author": "YassY-The-AlchemYst",
+  "url": "https://huggingface.co/YassY-The-AlchemYst/YassY_BSAI26",
+  "created_at": "2026-08-17T16:57:34.000Z",
+  "updated_at": "2026-08-17T16:57:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yassine Elhallaoui (@yassy_the_alchemyst) - Instagram",
+      "url": "https://www.instagram.com/yassy_the_alchemyst/",
+      "snippet": "6,692 Followers, 1,934 Following, 112 Posts - Yassine Elhallaoui (@yassy_the_alchemyst) on Instagram: \"Dr. tobe 🇲🇦ⵣ🇳🇴💍 Nerd Ai & Nature ☮RastaTechnocratⵣ AI Researcher🤖 ️🇦🇪🇧🇭🇿🇦🇾🇪🇿🇼🇸🇦🇳🇬🇮🇳🇨🇺🇲🇫🇵🇬🇹🇭🇲🇨🇶🇦🇴🇲🇳🇴🇪🇬🇬🇧🇧🇶\""
+    },
+    {
+      "title": "OnlyFans",
+      "url": "https://onlyfans.com/yassy_ai",
+      "snippet": "OnlyFans is the social platform revolutionizing creator and fan connections. The site is inclusive of artists and content creators from all genres and allows them to monetize their content while developing authentic relationships with their fanbase."
+    },
+    {
+      "title": "Yaurasu (Alchemist Code)｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1839146816960992476",
+      "snippet": "Just created this stunning blonde_hair, yauras, alchemist_code, tagatame, タガタメ, 誰ガ為のアルケミスト anime art with the amazing &#x27;Yaurasu (Alchemist Code)&#x27; model on PixAI! Search for \"Yaurasu (Alchemist Code)\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "YassY_The_AlchemYst - AI Builder on Zindi",
+      "url": "https://zindi.africa/users/YassY_The_AlchemYst",
+      "snippet": "Ranked #2268 among 100,000+ AI builders on Zindi. View YassY_The_AlchemYst&#x27;s profile and connect."
+    },
+    {
+      "title": "ArtStation - Alchemist Model",
+      "url": "https://www.artstation.com/artwork/y6AyO",
+      "snippet": "Z brush sculpt inspired by dota 2 game"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SaketR1/uncertainty-sft-mix-clear-corr-amb-balanced",
+  "slug": "saketr1-uncertainty-sft-mix-clear-corr-amb-balanced",
+  "author": "SaketR1",
+  "url": "https://huggingface.co/SaketR1/uncertainty-sft-mix-clear-corr-amb-balanced",
+  "created_at": "2026-08-17T15:04:08.000Z",
+  "updated_at": "2026-08-17T16:21:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 8873036742,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "uncertainty-sft-correct-ambiguous-mixed-clear - Hugging Face",
+      "url": "https://huggingface.co/SaketR1/uncertainty-sft-correct-ambiguous-mixed-clear",
+      "snippet": "uncertainty-sft-correct-ambiguous-mixed-clear ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "SaketR1/uncertainty-sft · Hugging Face",
+      "url": "https://huggingface.co/SaketR1/uncertainty-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How AI Models From OpenAI and Anthropic Went Rogue",
+      "url": "https://www.wsj.com/tech/ai/how-ai-models-from-openai-and-anthropic-went-rogue-a28e29ee",
+      "snippet": "Watch to learn how an AI agent escaped \"sandboxed\" environments and hacked a separate company—leading to calls for regulation."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://www.bbc.com/news/articles/cx2kgdnyk2po",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing."
+    }
+  ]
+}

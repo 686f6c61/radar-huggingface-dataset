@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "fontlab/BananaMind-2-Pro-Preview-Chat-ternary",
+  "slug": "fontlab-bananamind-2-pro-preview-chat-ternary",
+  "author": "fontlab",
+  "url": "https://huggingface.co/fontlab/BananaMind-2-Pro-Preview-Chat-ternary",
+  "created_at": "2026-08-17T17:11:50.000Z",
+  "updated_at": "2026-08-17T17:12:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "bananamendr",
+  "languages": [],
+  "tags": [
+    "bananamendr",
+    "safetensors",
+    "bananamind2_pro",
+    "quantized",
+    "ternary",
+    "int8",
+    "bananamend",
+    "research-only",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:BananaMind/BananaMind-2-Pro-Preview-Chat",
+    "base_model:finetune:BananaMind/BananaMind-2-Pro-Preview-Chat",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 54512000,
+  "parameters_human": "54.5M",
+  "storage_bytes": 66730080,
+  "storage_human": "67 MB",
+  "base_model": "BananaMind/BananaMind-2-Pro-Preview-Chat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BananaMind/BananaMind-2-Pro-Preview-Chat at main - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview-Chat/tree/main",
+      "snippet": "English bananamind2_pro causal-lm chat instruction-tuned full-finetune small-language-model bananamind bananamind2 bananamind2-pro preview-checkpoint smoltalk digit-tokenizer custom-code trust-remote-code custom-architecture conversational custom_code License:bananamind-community-license-1. Model card FilesFiles and versions xet Community 1 ..."
+    },
+    {
+      "title": "BananaMind-2-Pro-Preview - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "We release experimental models to gather feedback and get our latest updates into the hands of developers quickly. Experimental models are not stable and availability of model endpoints is subject to change. Model deprecations For information about model deprecations, visit the Gemini deprecations page."
+    },
+    {
+      "title": "BananaMind 2 Pro Preview Chat by BananaMind - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/BananaMind%2FBananaMind-2-Pro-Preview-Chat,OMDKYcZXPDxiNZHWubt8K",
+      "snippet": "BananaMind 2 Pro Preview Chat is an open-source 139m LLM by BananaMind. VRAM 0.6GB, 3K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

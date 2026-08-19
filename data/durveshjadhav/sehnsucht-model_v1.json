@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Durveshjadhav/sehnsucht-model_v1",
+  "slug": "durveshjadhav-sehnsucht-model_v1",
+  "author": "Durveshjadhav",
+  "url": "https://huggingface.co/Durveshjadhav/sehnsucht-model_v1",
+  "created_at": "2026-08-17T12:43:22.000Z",
+  "updated_at": "2026-08-17T12:55:59.000Z",
+  "license": "dmj-community-license-dcl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126181830,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Durveshjadhav (Durvesh Jadhav) - Hugging Face",
+      "url": "https://huggingface.co/Durveshjadhav",
+      "snippet": "Recent Activity updated a model3 days ago Durveshjadhav/DMJ-LLM-v1 liked a model3 days ago Durveshjadhav/DMJ-LLM-v1 published a model3 days ago Durveshjadhav/DMJ-LLM-v1 View all activity"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Durveshjadhav/DMJ-LLM-v1 · Hugging Face",
+      "url": "https://huggingface.co/Durveshjadhav/DMJ-LLM-v1",
+      "snippet": "DMJ LLM v1.0.0 Alpha DMJ LLM is a custom engineering-focused language model created by Durvesh Mukund Jadhav under DMJ Group."
+    },
+    {
+      "title": "GitHub - AgnesAI-Labs/AgnesAI-Models: Official Agnes AI gateway and ...",
+      "url": "https://github.com/AgnesAI-Labs/AgnesAI-Models",
+      "snippet": "Official gateway and model catalog for Agnes AI. Agnes AI gives developers OpenAI-compatible access to multimodal models for text, image, video, and agent workflows through a unified API gateway. Model availability, rate limits, pricing, and quota rules may change over time."
+    },
+    {
+      "title": "Free AI 3D Model Generator: Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "A free AI 3D model generator is a browser-based tool that uses neural networks to convert text prompts or 2D images into fully watertight 3D meshes. It works by computing volumetric occupancy through the Direct3D-S2 engine, extracting high-density blank triangular meshes in about 90 seconds."
+    }
+  ]
+}

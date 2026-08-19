@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "0xJuicybear/H3LoRA",
+  "slug": "0xjuicybear-h3lora",
+  "author": "0xJuicybear",
+  "url": "https://huggingface.co/0xJuicybear/H3LoRA",
+  "created_at": "2026-08-15T03:24:30.000Z",
+  "updated_at": "2026-08-15T03:49:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6351888568,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

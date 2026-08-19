@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "agiws/Kimi-Audio-7B-Instruct-Q4",
+  "slug": "agiws-kimi-audio-7b-instruct-q4",
+  "author": "agiws",
+  "url": "https://huggingface.co/agiws/Kimi-Audio-7B-Instruct-Q4",
+  "created_at": "2026-07-30T14:47:22.000Z",
+  "updated_at": "2026-08-18T09:48:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "custom_code",
+    "8-bit",
+    "neuralquant",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 322,
+  "trending_score": 0,
+  "parameters": 5621451471,
+  "parameters_human": "5.62B",
+  "storage_bytes": 27034237811,
+  "storage_human": "27.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

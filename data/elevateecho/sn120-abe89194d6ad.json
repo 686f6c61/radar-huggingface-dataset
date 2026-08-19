@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "elevateecho/sn120-abe89194d6ad",
+  "slug": "elevateecho-sn120-abe89194d6ad",
+  "author": "elevateecho",
+  "url": "https://huggingface.co/elevateecho/sn120-abe89194d6ad",
+  "created_at": "2026-08-15T21:48:32.000Z",
+  "updated_at": "2026-08-15T21:54:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

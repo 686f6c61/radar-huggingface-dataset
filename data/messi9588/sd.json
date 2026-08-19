@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Messi9588/sd",
+  "slug": "messi9588-sd",
+  "author": "Messi9588",
+  "url": "https://huggingface.co/Messi9588/sd",
+  "created_at": "2026-08-18T22:41:20.000Z",
+  "updated_at": "2026-08-18T22:41:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "waelsh/lionel-messi · Hugging Face",
+      "url": "https://huggingface.co/waelsh/lionel-messi",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Lionel Messi - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/442807?modelVersionId=493164",
+      "snippet": "Download Lionel Messi - LORA for SD 1.5 by civitai. Free AI model download from CivArchive."
+    }
+  ]
+}

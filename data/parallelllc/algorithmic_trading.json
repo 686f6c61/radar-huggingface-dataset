@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ParallelLLC/algorithmic_trading",
+  "slug": "parallelllc-algorithmic_trading",
+  "author": "ParallelLLC",
+  "url": "https://huggingface.co/ParallelLLC/algorithmic_trading",
+  "created_at": "2025-06-28T00:08:10.000Z",
+  "updated_at": "2026-08-15T22:43:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "finance",
+    "algorithmic-trading",
+    "quantitative-finance",
+    "backtesting",
+    "reinforcement-learning",
+    "yfinance",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51868359,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

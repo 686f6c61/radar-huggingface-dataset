@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Mini-oss-0.6b",
+  "slug": "reaperdoesntknow-mini-oss-0-6b",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Mini-oss-0.6b",
+  "created_at": "2025-09-06T09:33:27.000Z",
+  "updated_at": "2026-08-18T13:16:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "convergentintel",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2490,
+  "trending_score": 0,
+  "parameters": 664434352,
+  "parameters_human": "664.4M",
+  "storage_bytes": 2685632804,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=4&sort=trending&search=REAP",
+      "snippet": "reaperdoesntknow/Mini-oss-.6b Text Generation • 0.7B•Updated about 22 hours ago• 1.92k"
+    },
+    {
+      "title": "reaperdoesntknow (reaper ghost) - Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow",
+      "snippet": "Convert images to grayscale reaperdoesntknow Oct 21, 2024 models 1"
+    },
+    {
+      "title": "OpenRouter Free Models: All 16 Listed (Aug 2026)",
+      "url": "https://costgoat.com/pricing/openrouter-free-models",
+      "snippet": "All free AI models on OpenRouter, zero cost, no credit card. Compare context lengths, capabilities, and rate limits. Updated live."
+    },
+    {
+      "title": "Harrier OSS v1 — FuriosaAI Developer Center 2026.4.0b9 documentation",
+      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/harrier-oss-v1.html",
+      "snippet": "Harrier OSS v1 # Harrier OSS v1 is a family of multilingual text-embedding models developed by Microsoft. The 0.6B model uses a dense, decoder-only Qwen3 architecture, but it is trained with Harrier&#x27;s own multilingual, instruction-aware embedding recipe rather than the Qwen3-Embedding training recipe. It produces 1,024-dimensional embeddings through last-token pooling and L2 normalization ..."
+    },
+    {
+      "title": "Compare AI Models: Pricing, Context & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/models",
+      "snippet": "Discover a range of AI models available on OpenRouter for efficient and reliable performance."
+    }
+  ]
+}

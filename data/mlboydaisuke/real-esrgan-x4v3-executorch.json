@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Real-ESRGAN-x4v3-ExecuTorch",
+  "slug": "mlboydaisuke-real-esrgan-x4v3-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Real-ESRGAN-x4v3-ExecuTorch",
+  "created_at": "2026-08-14T04:29:32.000Z",
+  "updated_at": "2026-08-15T05:15:04.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "executorch-pte",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "image-to-image",
+    "super-resolution",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 130,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7597999,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · mlboydaisuke/real-esrgan-x4v3-litert at main",
+      "url": "https://huggingface.co/mlboydaisuke/real-esrgan-x4v3-litert/blob/main/README.md",
+      "snippet": "Training data & PII realesr-general-x4v3 was trained by the Real-ESRGAN authors on public super-resolution datasets (DIV2K / Flickr2K / OST and a synthetic high-order degradation pipeline). The model upscales image pixels only — no faces, identities, or other personal attributes are detected, recognized, or output."
+    },
+    {
+      "title": "mlboydaisuke/real-esrgan-x4v3-litert · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/real-esrgan-x4v3-litert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - xinntao/Real-ESRGAN: Real-ESRGAN aims at developing Practical ...",
+      "url": "https://github.com/xinntao/Real-ESRGAN",
+      "snippet": "The ncnn implementation is in Real-ESRGAN-ncnn-vulkan Real-ESRGAN aims at developing Practical Algorithms for General Image/Video Restoration. We extend the powerful ESRGAN to a practical restoration application (namely, Real-ESRGAN), which is trained with pure synthetic data. 🌌 Thanks for your valuable feedbacks/suggestions."
+    },
+    {
+      "title": "GitHub - lyowang/Real-ESRGAN: Real-ESRGAN: Practical image/video super ...",
+      "url": "https://github.com/lyowang/Real-ESRGAN",
+      "snippet": "The ncnn implementation is in Real-ESRGAN-ncnn-vulkan Real-ESRGAN aims at developing Practical Algorithms for General Image/Video Restoration. We extend the powerful ESRGAN to a practical restoration application (namely, Real-ESRGAN), which is trained with pure synthetic data. 🌌 Thanks for your valuable feedbacks/suggestions."
+    },
+    {
+      "title": "4x RealESR General x4 v3 - OpenModelDB",
+      "url": "https://openmodeldb.info/models/4x-realesr-general-x4v3",
+      "snippet": "Real-ESRGAN aims at developing Practical Algorithms for General Image/Video Restoration. Real-ESRGAN aims at developing Practical Algorithms for General Image/Video Restoration. We extend the powerful ESRGAN to a practical restoration application (namely, Real-ESRGAN), which is trained with pure synthetic data. A tiny small model for general scenes."
+    }
+  ]
+}

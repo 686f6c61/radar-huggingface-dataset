@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gtepwa/zephyr-flow-models",
+  "slug": "gtepwa-zephyr-flow-models",
+  "author": "Gtepwa",
+  "url": "https://huggingface.co/Gtepwa/zephyr-flow-models",
+  "created_at": "2026-07-26T22:51:05.000Z",
+  "updated_at": "2026-08-17T12:59:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3941092138,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gtepwa/zephyr-flow-models · Hugging Face",
+      "url": "https://huggingface.co/Gtepwa/zephyr-flow-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gtepwa (Gio) - Hugging Face",
+      "url": "https://huggingface.co/Gtepwa",
+      "snippet": "models1 Gtepwa/zephyr-flow-models Automatic Speech Recognition •Updated 12 days ago"
+    },
+    {
+      "title": "GitHub - Algovate/Zephyr: Multi-modal AI Generation Gateway Platform ...",
+      "url": "https://github.com/Algovate/Zephyr",
+      "snippet": "⚡ Zephyr Multi-modal AI Generation Gateway Platform A unified gateway that aggregates multiple AI providers and models — text, image, and video generation — behind a single API with credit-based billing, rate limiting, and a full admin console."
+    },
+    {
+      "title": "Tesla&#x27;s AI5 Chip Prototype Ushers in a New Era of Custom AI Silicon ...",
+      "url": "https://applyingai.com/2026/05/teslas-ai5-chip-prototype-ushers-in-a-new-era-of-custom-ai-silicon-with-40x-performance-leap/",
+      "snippet": "At the heart of the AI5 sits a new custom CPU core—codenamed \"Zephyr\"—which handles traditional control-flow, power management, and scheduling tasks. Zephyr is a 64-bit ARMv9-derived design, extended with Tesla-specific ISA extensions to accelerate mixed-precision tensor operations."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

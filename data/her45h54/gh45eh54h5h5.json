@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HER45H54/GH45EH54H5H5",
+  "slug": "her45h54-gh45eh54h5h5",
+  "author": "HER45H54",
+  "url": "https://huggingface.co/HER45H54/GH45EH54H5H5",
+  "created_at": "2026-08-17T18:02:40.000Z",
+  "updated_at": "2026-08-17T18:08:42.000Z",
+  "license": "bsd-3-clause-clear",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause-clear",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5114814464,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Introducing GPT‑5.4 - OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "snippet": "Introducing GPT-5.4, OpenAI&#x27;s most most capable and efficient frontier model for professional work, with state-of-the-art coding, computer use, tool search, and 1M-token context."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "List Models from Top AI Providers",
+      "url": "https://www.listmodel.com/",
+      "snippet": "Quickly browse common ai models, copy and paste their model code from providers: Anthropic, Google, DeepSeek, OpenAI, xAI, Moonshot AI..."
+    }
+  ]
+}

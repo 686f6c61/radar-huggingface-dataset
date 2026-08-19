@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF",
+  "slug": "bartowski-kwaipilot_kat-coder-v2-5-dev-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF",
+  "created_at": "2026-07-23T17:06:03.000Z",
+  "updated_at": "2026-07-24T02:46:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "agent",
+    "agentic-coding",
+    "moe",
+    "coding",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:quantized:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 119,
+  "downloads_30d": 256935,
+  "trending_score": 8,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 569010105888,
+  "storage_human": "569.0 GB",
+  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF",
+      "snippet": "Kwaipilot_KAT-Coder-V2.5-Dev-GGUF ... 5 Deploy Copy to bucket new Use this model Notebooks Local Apps Settings new"
+    },
+    {
+      "title": "Kwaipilot/KAT-Coder-V2.5-Dev · Hugging Face",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "snippet": "This repository contains the model weights and configuration files for the post-trained KAT-Coder-V2.5-Dev in the Hugging Face Transformers format. The artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. Note: this open-weight release ships only the language-model weights and operates as a text-only model; the vision/multimodal components are not included ..."
+    },
+    {
+      "title": "Kwaipilot_KAT-Coder-V2.5-Dev-GGUF by bartowski | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/bartowski-kwaipilot-kat-coder-v2-5-dev-gguf",
+      "snippet": "Kwaipilot_KAT-Coder-V2.5-Dev-GGUF is a open-weight bartowski llm model with a 262,144 token context window. Running this yourself: can likely run on your own machine."
+    },
+    {
+      "title": "Kwaipilot_KAT-Coder-V2.5-Dev GGUF Size & VRAM by Quantization",
+      "url": "https://ailocalcheck.com/model/bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF",
+      "snippet": "bartowski/Kwaipilot_KAT-Coder-V2.5-Dev-GGUF is a very large code-focused language model with 34.66 billion parameters, built on the qwen35moe architecture. It is released under the apache-2.0 license and has been downloaded 63,182 times."
+    },
+    {
+      "title": "Introducing KAT-Dev-32B, KAT-Coder: Advancing Code Intelligence through ...",
+      "url": "https://kwaipilot.github.io/KAT-Coder/",
+      "snippet": "KAT-Coder is our latest Mixture-of-Experts model with 32 billion activated parameters and 1 trillion total parameters. It achieves state-of-the-art performance in frontier knowledge, math, and coding among non-thinking models."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kjfk/tennis-court-keypoints-mirror",
+  "slug": "kjfk-tennis-court-keypoints-mirror",
+  "author": "kjfk",
+  "url": "https://huggingface.co/kjfk/tennis-court-keypoints-mirror",
+  "created_at": "2026-08-18T19:14:25.000Z",
+  "updated_at": "2026-08-18T19:14:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tennis",
+    "keypoint-detection",
+    "court-detection",
+    "homography",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94582426,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kjfk/tennis-ball-detector-yolov8m · Hugging Face",
+      "url": "https://huggingface.co/kjfk/tennis-ball-detector-yolov8m",
+      "snippet": "A fine-tuned tennis-ball detector for single-camera broadcast and amateur footage. It is the detection stage of tennis-auto-scoring, which turns a match video into an automatic score. One class:tennis ball. 25.9M parameters, 50 MB."
+    },
+    {
+      "title": "Coddieharsh/tennis-court-keypoints · Hugging Face",
+      "url": "https://huggingface.co/Coddieharsh/tennis-court-keypoints",
+      "snippet": "ResNet-50 regression head predicting the 14 standard tennis court keypoints from a single broadcast frame. Used by Tennis-Vision to fit the court homography that every real-world measurement depends on."
+    },
+    {
+      "title": "GitHub - yastrebksv/TennisCourtDetector: Deep learning network for ...",
+      "url": "https://github.com/yastrebksv/TennisCourtDetector",
+      "snippet": "Deep learning network for detecting tennis court It was developed a deep learning network to detect tennis court keypoints from broadcast videos. The proposed heatmap-based deep learning network allows to detect 14 points of tennis court. Postprocessing techniques (based on classical computer vision methods) were implemented to enhance net predictions."
+    },
+    {
+      "title": "GitHub - Rares926/Tenis_Keypoints_Project: A deep learning system for ...",
+      "url": "https://github.com/Rares926/Tenis_Keypoints_Project",
+      "snippet": "A deep learning system for analyzing tennis videos through player pose estimation, court detection, and action classification. Extracts keypoints from tennis match videos and uses LSTM/RNN models to classify serves, hits, and shot characteristics. - Rares926/Tenis_Keypoints_Project"
+    },
+    {
+      "title": "tennis-court-keypoints Object Detection Model by TennisCV",
+      "url": "https://universe.roboflow.com/tenniscv-yywpa/tennis-court-keypoints",
+      "snippet": "989 open source tennis-balls images plus a pre-trained tennis-court-keypoints model and API. Created by TennisCV"
+    }
+  ]
+}

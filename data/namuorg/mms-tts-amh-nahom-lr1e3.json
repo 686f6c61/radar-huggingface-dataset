@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Namuorg/mms-tts-amh-nahom-lr1e3",
+  "slug": "namuorg-mms-tts-amh-nahom-lr1e3",
+  "author": "Namuorg",
+  "url": "https://huggingface.co/Namuorg/mms-tts-amh-nahom-lr1e3",
+  "created_at": "2026-08-18T11:10:13.000Z",
+  "updated_at": "2026-08-18T11:10:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36282672,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145223032,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Namuai-org/namu-tts-amharic-tts-internship · GitHub",
+      "url": "https://github.com/Namuai-org/namu-tts-amharic-tts-internship",
+      "snippet": "The 60-second version We fine-tune facebook/mms-tts-amh — an 83M-parameter VITS model that already speaks Amharic, badly — on a cleaned single-speaker Amharic corpus, using ylacombe/finetune-hf-vits. One run is about 20-25 minutes on a free-tier T4, and the upstream repo reports usable results from as few as 80-150 samples. That is why you get many cycles instead of one."
+    },
+    {
+      "title": "facebook/mms-tts · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "namu-tts-amharic-tts-internship/HANDBOOK_Nahom.md at main - GitHub",
+      "url": "https://github.com/Namuai-org/namu-tts-amharic-tts-internship/blob/main/HANDBOOK_Nahom.md",
+      "snippet": "Nahom - Your Project Handbook Over the next ten working days, six of us fine-tune an Amharic text-to-speech model. Text-to-speech means the computer reads written text out loud. The model is called facebook/mms-tts-amh; it already speaks Amharic badly, and we retrain it on better recordings so it speaks Amharic well. Each training run takes about 25 minutes on a borrowed graphics card inside ..."
+    },
+    {
+      "title": "README.md · facebook/mms-tts-amh at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-tts-amh/blob/main/README.md",
+      "snippet": "Massively Multilingual Speech (MMS): Amharic Text-to-Speech This repository contains the Amharic (amh) language text-to-speech (TTS) model checkpoint. This model is part of Facebook&#x27;s Massively Multilingual Speech project, aiming to provide speech technology across a diverse range of languages. You can find more details about the supported languages and their ISO 639-3 codes in the MMS ..."
+    },
+    {
+      "title": "facebook/mms-tts-amh - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/310166",
+      "snippet": "This model is part of Facebook&#x27;s Massively Multilingual Speech project, aiming to provide speech technology across a diverse range of languages. You can find more details about the supported languages and their ISO 639-3 codes in the MMS Language Coverage Overview, and see all MMS-TTS checkpoints on the Hugging Face Hub: facebook/mms-tts."
+    }
+  ]
+}

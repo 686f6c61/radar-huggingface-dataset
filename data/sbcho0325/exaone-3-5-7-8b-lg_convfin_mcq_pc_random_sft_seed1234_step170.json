@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_random_sft_seed1234_step170",
+  "slug": "sbcho0325-exaone-3-5-7-8b-lg_convfin_mcq_pc_random_sft_seed1234_step170",
+  "author": "sbcho0325",
+  "url": "https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_random_sft_seed1234_step170",
+  "created_at": "2026-08-16T20:27:38.000Z",
+  "updated_at": "2026-08-16T20:35:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335606536,
+  "storage_human": "336 MB",
+  "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sbcho0325/EXAONE-3.5-7.8B-Instruct-ConvFinQA-SFT-DPO-CoT-v2 · Hugging Face",
+      "url": "https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-Instruct-ConvFinQA-SFT-DPO-CoT-v2",
+      "snippet": "sbcho0325 / EXAONE-3.5-7.8B-Instruct-ConvFinQA-SFT-DPO-CoT-v2 like 0 Text Generation PEFT Safetensors Transformers dpo lora trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional ..."
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/EXAONE-3.5: Official repository for EXAONE 3.5 ...",
+      "url": "https://github.com/LG-AI-EXAONE/EXAONE-3.5",
+      "snippet": "EXAONE 3.5 language models include: 1) 2.4B model optimized for deployment on small or resource-constrained devices, 2) 7.8B model matching the size of its predecessor but offering improved performance, and 3) 32B model delivering powerful performance. All models support long-context processing of up to 32K tokens."
+    },
+    {
+      "title": "EXAONE-3.5-7.8B-Instruct-GGUF - Hugging Face",
+      "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF EXAONE 3.5: Series of Large Language Models for Real-world Use Cases",
+      "url": "https://www.lgresearch.ai/data/upload/tech_report/en/Technical_report_EXAONE_3.5.pdf",
+      "snippet": "Abstract This technical report introduces the EXAONE 3.5 instruction-tuned language models, developed and released by LG AI Research. The EXAONE 3.5 language models are offered in three configurations: 32B, 7.8B, and 2.4B. These models feature several standout capabilities: 1) exceptional instruction following capabilities in real-world scenarios, achieving the highest scores across seven ..."
+    },
+    {
+      "title": "LG AI EXAONE · GitHub",
+      "url": "https://github.com/LG-AI-EXAONE",
+      "snippet": "Official repository for EXAONE 3.5 built by LG AI Research 209 23"
+    }
+  ]
+}

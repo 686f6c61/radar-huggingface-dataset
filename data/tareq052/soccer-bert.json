@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "tareq052/soccer-bert",
+  "slug": "tareq052-soccer-bert",
+  "author": "tareq052",
+  "url": "https://huggingface.co/tareq052/soccer-bert",
+  "created_at": "2026-07-04T10:56:01.000Z",
+  "updated_at": "2026-08-17T16:22:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "pt",
+    "ar",
+    "bn",
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "football-gpt",
+    "football",
+    "soccer",
+    "multilingual",
+    "gpt",
+    "pytorch",
+    "text-generation",
+    "en",
+    "es",
+    "pt",
+    "ar",
+    "bn",
+    "hi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 166,
+  "trending_score": 0,
+  "parameters": 159767552,
+  "parameters_human": "159.8M",
+  "storage_bytes": 656180134,
+  "storage_human": "656 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tareq052/soccer-bert · Hugging Face",
+      "url": "https://huggingface.co/tareq052/soccer-bert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tareq052 (Md Tareq Shah Alam) - Hugging Face",
+      "url": "https://huggingface.co/tareq052",
+      "snippet": "Sort: Recently updated tareq052/football-gpt-v1 Text Generation •Updated 27 days ago• 42"
+    },
+    {
+      "title": "Google DeepMind made an AI tool for analyzing soccer tactics.",
+      "url": "https://www.theverge.com/2024/3/19/24105668/google-deepmind-made-an-ai-tool-for-analyzing-soccer-tactics",
+      "snippet": "In a research paper published on Tuesday, Google DeepMind revealed that it has teamed up with Liverpool FC to develop TacticAI, an AI system that soccer coaches can use to get insights on corner ..."
+    },
+    {
+      "title": "TacticAI: an AI assistant for football tactics - Nature",
+      "url": "https://www.nature.com/articles/s41467-024-45965-x",
+      "snippet": "To address this unmet need, we propose TacticAI, an AI football tactics assistant developed and evaluated in close collaboration with domain experts from Liverpool FC."
+    },
+    {
+      "title": "GitHub - Ahmed-El-Zainy/soccer: Soccer AI leverages cutting-edge ...",
+      "url": "https://github.com/Ahmed-El-Zainy/soccer",
+      "snippet": "Soccer AI leverages cutting-edge computer vision and deep learning models to analyze soccer matches, detecting players, tracking ball movements, and identifying pitch boundaries, all while offering team classification and visual insights. - Ahmed-El-Zainy/soccer"
+    }
+  ]
+}

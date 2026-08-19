@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "chaitalibh/mix_grpo_08119_more",
+  "slug": "chaitalibh-mix_grpo_08119_more",
+  "author": "chaitalibh",
+  "url": "https://huggingface.co/chaitalibh/mix_grpo_08119_more",
+  "created_at": "2026-08-18T11:14:11.000Z",
+  "updated_at": "2026-08-18T11:14:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "gemma",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:CELL-LAB/lora-plus-f2f-backup",
+    "base_model:adapter:CELL-LAB/lora-plus-f2f-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169115250,
+  "storage_human": "169 MB",
+  "base_model": "CELL-LAB/lora-plus-f2f-backup",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2507.21802] MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ...",
+      "url": "https://arxiv.org/abs/2507.21802",
+      "snippet": "Although GRPO substantially enhances flow matching models in human preference alignment of image generation, methods such as FlowGRPO and DanceGRPO still exhibit inefficiency due to the necessity of sampling and optimizing over all denoising steps specified by the Markov Decision Process (MDP). In this paper, we propose $&#92;&#92;textbf{MixGRPO}$, a novel framework that leverages the flexibility of ..."
+    },
+    {
+      "title": "MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE",
+      "url": "https://arxiv.org/html/2507.21802v2",
+      "snippet": "Abstract Although GRPO substantially enhances flow matching models in human preference alignment of image generation, methods such as DanceGRPO still exhibit inefficiency due to the necessity of sampling and optimizing over all denoising steps specified by the Markov Decision Process (MDP). In this paper, we propose MixGRPO, a novel framework that leverages the flexibility of mixed sampling ..."
+    },
+    {
+      "title": "tulvgengenr/MixGRPO · Hugging Face",
+      "url": "https://huggingface.co/tulvgengenr/MixGRPO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE",
+      "url": "https://github.com/Tencent-Hunyuan/MixGRPO",
+      "snippet": "[2025/10/02] We have updated the comparison and visualization results with Flow-GRPO, Flow-DPO (offline), and Flow-DPO (online) on SD3.5-M LoRA in the paper ! [2025/7/30] We released the model checkpoint fine-tuned based on FLUX.1 Dev using the MixGRPO algorithm, with HPSv2, ImageReward, and Pick Score as multi-rewards !"
+    },
+    {
+      "title": "chaitalibh (Chaitali Bhattacharyya) - Hugging Face",
+      "url": "https://huggingface.co/chaitalibh/datasets",
+      "snippet": "User profile of Chaitali Bhattacharyya on Hugging Face"
+    }
+  ]
+}

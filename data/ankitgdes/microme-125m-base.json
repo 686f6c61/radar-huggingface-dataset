@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Ankitgdes/microme-125m-base",
+  "slug": "ankitgdes-microme-125m-base",
+  "author": "Ankitgdes",
+  "url": "https://huggingface.co/Ankitgdes/microme-125m-base",
+  "created_at": "2026-08-16T21:01:47.000Z",
+  "updated_at": "2026-08-16T21:07:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "microme",
+    "text-generation",
+    "gpt",
+    "trained-from-scratch",
+    "base-model",
+    "muon",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 193,
+  "trending_score": 0,
+  "parameters": 129787520,
+  "parameters_human": "129.8M",
+  "storage_bytes": 2981483796,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "accuracy (0-shot)",
+      "value": 52.2
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "normalized accuracy (0-shot)",
+      "value": 31.9
+    },
+    {
+      "task": null,
+      "dataset": "PIQA",
+      "metric": "accuracy (0-shot)",
+      "value": 62.2
+    },
+    {
+      "task": null,
+      "dataset": "LAMBADA (OpenAI)",
+      "metric": "accuracy (0-shot)",
+      "value": 25.5
+    }
+  ],
+  "sources": []
+}

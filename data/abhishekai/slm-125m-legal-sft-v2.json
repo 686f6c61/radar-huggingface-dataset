@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "abhishekai/slm-125m-legal-sft-v2",
+  "slug": "abhishekai-slm-125m-legal-sft-v2",
+  "author": "abhishekai",
+  "url": "https://huggingface.co/abhishekai/slm-125m-legal-sft-v2",
+  "created_at": "2026-08-16T14:41:23.000Z",
+  "updated_at": "2026-08-16T14:41:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "legal",
+    "finance",
+    "sft",
+    "grounded-qa",
+    "rag",
+    "small-language-model",
+    "conversational",
+    "en",
+    "base_model:abhishekai/slm-125m-legal-base",
+    "base_model:finetune:abhishekai/slm-125m-legal-base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125848320,
+  "parameters_human": "125.8M",
+  "storage_bytes": 503405488,
+  "storage_human": "503 MB",
+  "base_model": "abhishekai/slm-125m-legal-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "EGD33/e8-snn-fhrr-waste",
+  "slug": "egd33-e8-snn-fhrr-waste",
+  "author": "EGD33",
+  "url": "https://huggingface.co/EGD33/e8-snn-fhrr-waste",
+  "created_at": "2026-08-17T03:52:15.000Z",
+  "updated_at": "2026-08-17T03:52:16.000Z",
+  "license": "neomorphic-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "neuromorphic",
+    "snn",
+    "holographic",
+    "fhrr",
+    "e8-lattice",
+    "quantum-inspired",
+    "moe-acceleration",
+    "other",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Waste Reduction Model - US EPA",
+      "url": "https://www.epa.gov/waste-reduction-model",
+      "snippet": "To help waste planners & organizations track/report emissions reductions from various waste management practices. To assist in calculating emissions of baseline & alternative waste management practices & provide the history of the Waste Reduction Model."
+    },
+    {
+      "title": "Egd33 Shiny Star Zircon Stud Earrings: Real-World Wear, Fit, and ...",
+      "url": "https://www.aliexpress.com/s/wiki-ssr/article/egd33",
+      "snippet": "Discover real-world performance insights on EGD33 star zircon earringsincluding tests on sensitivity-friendly design, durable finishes, precise sizing, styling versatility, and user-driven proof of lasting quality and silent customer loyalty."
+    },
+    {
+      "title": "GitHub - Dhirendra10251/neuro-SORT: An event-driven, ultra-low-power ...",
+      "url": "https://github.com/Dhirendra10251/neuro-SORT",
+      "snippet": "Traditional Deep Neural Networks (DNNs) are highly accurate but notoriously power-hungry. When deploying AI to remote, edge-computing environments—such as industrial recycling plants or smart waste bins—battery life and thermal constraints become massive bottlenecks. NeuroSort solves this by utilizing a Spiking Neural Network (SNN)."
+    },
+    {
+      "title": "GitHub - Ghadeer004/E--waste-Project: Hybrid deep learning model for e ...",
+      "url": "https://github.com/Ghadeer004/E--waste-Project",
+      "snippet": "♻️ E-Waste Classification with Hybrid Deep Learning This project implements a hybrid deep learning model combining EfficientNetB0, MobileNetV2, and a Sequential Neural Network (SNN) to classify electronic waste images."
+    },
+    {
+      "title": "waste_classification_model_v3 - Dashboard - Edge Impulse",
+      "url": "https://studio.edgeimpulse.com/studio/729647",
+      "snippet": "Welcome to Edge Impulse, the largest community of edge AI developers! This is a public Edge Impulse project, use the navigation bar to see all data and models in this project; or clone to retrain or deploy to any edge device."
+    }
+  ]
+}

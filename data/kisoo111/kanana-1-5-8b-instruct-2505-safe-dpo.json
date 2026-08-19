@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kisoo111/kanana-1.5-8b-instruct-2505-Safe-DPO",
+  "slug": "kisoo111-kanana-1-5-8b-instruct-2505-safe-dpo",
+  "author": "kisoo111",
+  "url": "https://huggingface.co/kisoo111/kanana-1.5-8b-instruct-2505-Safe-DPO",
+  "created_at": "2026-08-14T07:14:36.000Z",
+  "updated_at": "2026-08-14T07:16:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 253,
+  "trending_score": 0,
+  "parameters": 8030285824,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077816292,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kanana-1.5-8b-instruct-2505-Persona-LORA - Hugging Face",
+      "url": "https://huggingface.co/kisoo111/kanana-1.5-8b-instruct-2505-Persona-LORA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kakaocorp/kanana-1.5-8b-instruct-2505 · Hugging Face",
+      "url": "https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505",
+      "snippet": "Kanana 1.5, a newly introduced version of the Kanana model family, presents substantial enhancements in coding, mathematics, and function calling capabilities over the previous version, enabling broader application to more complex real-world problems."
+    },
+    {
+      "title": "GitHub - kakao/kanana: Kanana: Compute-efficient Bilingual Language ...",
+      "url": "https://github.com/kakao/kanana",
+      "snippet": "Introducing Kanana-1.5-15.7B-A3B, the first Mixture-of-Experts (MoE) model in our Kanana family, engineered for exceptional efficiency and powerful performance. Kanana-1.5-15.7B-A3B, which has sparse architecture, delivers capabilities comparable to the Kanana-1.5-8B dense model while utilizing only 37% of the FLOPS per token, making it a highly inference-efficient and cost-effective solution ..."
+    },
+    {
+      "title": "Kanana 1.5-8b-instruct-2505 Open-Source AI Model - Strong in Coding and ...",
+      "url": "https://model.aibase.com/models/details/1927649989316841472",
+      "snippet": "Kanana 1.5 is a new version of the Kanana model family, with significant improvements in coding, math, and function calling capabilities compared to its predecessor, supporting 32K tokens length and extendable to 128K tokens."
+    },
+    {
+      "title": "kanana-1.5-8b-instruct-2505: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/kanana-1.5-8b-instruct-2505-kakaocorp",
+      "snippet": "Overview kanana-1.5-8b-instruct-2505 is an 8-billion parameter bilingual language model developed by kakaocorp that delivers substantial improvements in coding, mathematics, and function calling over the previous Kanana generation. Built on a standard transformer architecture and compatible with the Hugging Face transformers library, this model handles up to 32,768 tokens natively and extends ..."
+    }
+  ]
+}

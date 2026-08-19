@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Pranilllllll/segformer-b0-kaggle-ktm-dataset-block-fold1",
+  "slug": "pranilllllll-segformer-b0-kaggle-ktm-dataset-block-fold1",
+  "author": "Pranilllllll",
+  "url": "https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-block-fold1",
+  "created_at": "2026-08-18T02:51:23.000Z",
+  "updated_at": "2026-08-18T08:07:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "semantic-segmentation",
+    "remote-sensing",
+    "segformer",
+    "mit-b0",
+    "geonusaf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2752700184,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "segformer-b0-kaggle-ktm-dataset-block-fold0 - Hugging Face",
+      "url": "https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-block-fold0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - NVlabs/SegFormer: Official PyTorch implementation of SegFormer",
+      "url": "https://github.com/NVlabs/SegFormer",
+      "snippet": "Official PyTorch implementation of SegFormer. Contribute to NVlabs/SegFormer development by creating an account on GitHub."
+    },
+    {
+      "title": "seg_segformer_b0 - Kaggle",
+      "url": "https://www.kaggle.com/code/tonimaislamlamia/seg-segformer-b0",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from HVDROPDB Datasets"
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "SegFormer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/segformer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

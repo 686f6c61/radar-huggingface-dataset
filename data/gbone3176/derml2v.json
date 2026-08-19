@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Gbone3176/DermL2V",
+  "slug": "gbone3176-derml2v",
+  "author": "Gbone3176",
+  "url": "https://huggingface.co/Gbone3176/DermL2V",
+  "created_at": "2026-08-06T03:12:10.000Z",
+  "updated_at": "2026-08-15T07:26:28.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-embedding",
+    "dermatology",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 440495235,
+  "storage_human": "440 MB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

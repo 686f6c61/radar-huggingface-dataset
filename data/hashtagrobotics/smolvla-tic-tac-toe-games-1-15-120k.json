@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "HashtagRobotics/smolvla-tic-tac-toe-games-1-15-120k",
+  "slug": "hashtagrobotics-smolvla-tic-tac-toe-games-1-15-120k",
+  "author": "HashtagRobotics",
+  "url": "https://huggingface.co/HashtagRobotics/smolvla-tic-tac-toe-games-1-15-120k",
+  "created_at": "2026-08-16T02:37:03.000Z",
+  "updated_at": "2026-08-18T11:21:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "vision-language-action",
+    "imitation-learning",
+    "so101",
+    "manipulation",
+    "action-chunking",
+    "flow-matching",
+    "tic-tac-toe",
+    "dataset:HashtagRobotics/tic-tac-toe-so101-block-a-clean-v1",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 14951987025,
+  "storage_human": "15.0 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hashtag Robotics SO-101 Tic-Tac-Toe - GitHub",
+      "url": "https://github.com/Hashtag-Robotics/so101-tic-tac-toe",
+      "snippet": "An open, end-to-end reference project for printing a large tic-tac-toe set, running two SO-101 arms through the Hashtag Robotics local dashboard, inspecting the public LeRobot dataset, downloading a revision-pinned SmolVLA policy, and executing guarded physical rollouts."
+    },
+    {
+      "title": "cagataydev/smolvla-tictactoe · Hugging Face",
+      "url": "https://huggingface.co/cagataydev/smolvla-tictactoe",
+      "snippet": "Post-tuned SmolVLA policy for the SO-101 arm playing tic-tac-toe by picking and placing coloured blocks. Trained end-to-end through the strands-robots training abstraction on the public HashtagRobotics/tic-tac-toe-so101-block-a-clean-v1 LeRobot v3 dataset. This model is the \"block-A\" post-tune — first of a planned series."
+    },
+    {
+      "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot ...",
+      "url": "https://huggingface.co/blog/smolvla",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolVLA: A vision-language-action model for affordable and efficient ...",
+      "url": "https://arxiv.org/html/2506.01844v1",
+      "snippet": "3 SmolVLA: small, efficient and capable Overview. SmolVLA is a lightweight VLA composed of a compact pretrained VLM, and an action expert trained with flow matching. Given multiple images and a language instruction describing the task, the model outputs a chunk of actions."
+    },
+    {
+      "title": "Tic! Your Tic Tac Toe Playing Robot with Embodied AI",
+      "url": "https://www.hackster.io/team-bubble-bot/tic-your-tic-tac-toe-playing-robot-with-embodied-ai-02f91e",
+      "snippet": "Tic-Tac-Toe playing robot built at the 2025 Seeed Embodied AI Hackathon leveraging LeRobot/Huggingface AI models and two SO-ARM100s. By Benjamin Narin, combinatorial, Karmen Lu, and Abby."
+    }
+  ]
+}

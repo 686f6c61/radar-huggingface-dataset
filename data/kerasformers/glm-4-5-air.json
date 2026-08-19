@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kerasformers/glm-4.5-air",
+  "slug": "kerasformers-glm-4-5-air",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/glm-4.5-air",
+  "created_at": "2026-08-17T22:29:29.000Z",
+  "updated_at": "2026-08-17T23:27:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "kerasformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "glm",
+    "glm4_moe",
+    "glm-4.5",
+    "mixture-of-experts",
+    "text-generation",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "zh",
+    "arxiv:2406.12793",
+    "base_model:zai-org/GLM-4.5-Air",
+    "base_model:finetune:zai-org/GLM-4.5-Air",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213858440859,
+  "storage_human": "213.9 GB",
+  "base_model": "zai-org/GLM-4.5-Air",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-4.5-Air · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.5-Air",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zai-org/GLM-4.5 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.5 Air: Official Model Guide | AI Onekit",
+      "url": "https://aionekit.com/ai/glm-4-5-air",
+      "snippet": "GLM-4.5 Air is Zhipu AI&#x27;s cost‑effective GLM‑4.5 model. Learn official specs, pricing, context limits, and best‑practice guidance for long‑context multilingual workflows."
+    },
+    {
+      "title": "GLM-4.5: Reasoning, Coding, and Agentic Abililties - z.ai",
+      "url": "https://z.ai/blog/glm-4.5",
+      "snippet": "Both are designed to unify reasoning, coding, and agentic capabilities into a single model in order to satisfy more and more complicated requirements of fast rising agentic applications. Both GLM-4.5 and GLM-4.5-Air are hybrid reasoning models, offering: thinking mode for complex reasoning and tool using, and non-thinking mode for instant ..."
+    },
+    {
+      "title": "GLM 4.5 Air | Try That LLM",
+      "url": "https://trythatllm.com/model/z-ai-glm-4-5-air",
+      "snippet": "Released July 28, 2025 alongside GLM-4.5, the Air variant uses the same MoE architecture but with a more compact design: 106B total parameters with 12B active."
+    }
+  ]
+}

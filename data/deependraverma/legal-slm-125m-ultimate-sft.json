@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "DeependraVerma/legal-slm-125m-ultimate-sft",
+  "slug": "deependraverma-legal-slm-125m-ultimate-sft",
+  "author": "DeependraVerma",
+  "url": "https://huggingface.co/DeependraVerma/legal-slm-125m-ultimate-sft",
+  "created_at": "2026-08-17T03:42:45.000Z",
+  "updated_at": "2026-08-17T06:26:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "legal",
+    "finance",
+    "small-language-model",
+    "warm-start",
+    "instruction-tuned",
+    "question-answering",
+    "contract-drafting",
+    "sft",
+    "slm",
+    "legal-ai",
+    "legaltech",
+    "edge-ai",
+    "on-device",
+    "en",
+    "license:mit",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 166,
+  "trending_score": 0,
+  "parameters": 125848320,
+  "parameters_human": "125.8M",
+  "storage_bytes": 503405488,
+  "storage_human": "503 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "HellaSwag (0-shot)",
+      "dataset": "HellaSwag",
+      "metric": "acc",
+      "value": 0.32085241983668594
+    },
+    {
+      "task": "ARC-Easy (0-shot)",
+      "dataset": "ARC-Easy",
+      "metric": "acc",
+      "value": 0.5025252525252525
+    },
+    {
+      "task": "PIQA (0-shot)",
+      "dataset": "PIQA",
+      "metric": "acc",
+      "value": 0.6332970620239391
+    }
+  ],
+  "sources": [
+    {
+      "title": "DeependraVerma/legal-slm-125m-sft · Hugging Face",
+      "url": "https://huggingface.co/DeependraVerma/legal-slm-125m-sft",
+      "snippet": "DeependraVerma / legal-slm-125m-sft like 0 Text Generation Transformers Safetensors English llama legal finance small-language-model from-scratch instruction-tuned question-answering contract-analysis sft Eval Results (legacy) text-generation-inference License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - mcrao/legal-slm-125M",
+      "url": "https://github.com/mcrao/legal-slm-125M",
+      "snippet": "legal-slm-125 — a 125M legal & financial language model, from scratch Build a 125-million-parameter Llama-style language model from a random initialization — data pipeline, tokenizer, pretraining, evaluation, and a live web demo — for legal and financial English. Everything is streamed, cleaned, and trained reproducibly on Modal; the finished model lives on Hugging Face and is served ..."
+    },
+    {
+      "title": "DeependraVerma/legal-slm-125m-new-sft · Hugging Face",
+      "url": "https://huggingface.co/DeependraVerma/legal-slm-125m-new-sft",
+      "snippet": "A 125.8M-parameter instruction-tuned model for legal contract drafting, pretrained from scratch on 591B tokens and fine-tuned on 27,060 curated Q&A pairs. This is the second-generation 125M model in this project. It replaces legal-slm-125m-sft, which was pretrained on 2.5B tokens — this one saw 236x more data."
+    },
+    {
+      "title": "legal-slm-125 · a 125M legal & financial language model",
+      "url": "https://legal-slm-125.vercel.app/",
+      "snippet": "A 125-million-parameter base language model trained from scratch on 2.04 billion tokens of US case law, SEC filings and educational web text. Watch it complete legal and financial passages, live."
+    },
+    {
+      "title": "Deependra Verma — legal-slm-125M, a 125M-parameter LLM built from scratch",
+      "url": "https://deependraverma-ai-legal-slm-125-m.vercel.app/",
+      "snippet": "legal-slm-125M is a 125.8M-parameter legal & financial language model built end-to-end by Deependra Verma — Generative AI Researcher, AI Engineer, and AI Team Lead — from a random initialization through pretraining (held-out perplexity 7.76 on 2.04B tokens), evaluation, and supervised fine-tuning into a live Q&A assistant."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wencai234/YSGYoloDetector",
+  "slug": "wencai234-ysgyolodetector",
+  "author": "wencai234",
+  "url": "https://huggingface.co/wencai234/YSGYoloDetector",
+  "created_at": "2026-08-18T07:52:47.000Z",
+  "updated_at": "2026-08-18T07:52:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "nsfw",
+    "porn",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7764381529,
+  "storage_human": "7.8 GB",
+  "base_model": "YOLOV11, YOLOV26, RTDETR, RFDETR",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YSGforMTL/YSGYoloDetector · Hugging Face",
+      "url": "https://huggingface.co/YSGforMTL/YSGYoloDetector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · YSGforMTL/YSGYoloDetector at main - Hugging Face",
+      "url": "https://huggingface.co/YSGforMTL/YSGYoloDetector/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - lhj5426/YSG: 采集E站数千画廊数十万页 使用 [有漏喂] 各种漏 【YOLO】及其之后版本 以及 【RFDETR ...",
+      "url": "https://github.com/lhj5426/YSG",
+      "snippet": "采集E站数千画廊数十万页 使用 [有漏喂] 各种漏 【YOLO】及其之后版本 以及 【RFDETR】 等各种detr 后续变种版本 训练的文字目标检测模型 - GitHub - lhj5426/YSG: 采集E站数千画廊数十万页 使用 [有漏喂] 各种漏 【YOLO】及其之后版本 以及 【RFDETR】 等各种detr 后续变种版本 训练的文字目标检测模型"
+    },
+    {
+      "title": "Online Object Detector - Vladimir Iashin",
+      "url": "https://v-iashin.github.io/detector",
+      "snippet": "Online Object Detector by Vladimir Iashin provides tools and resources for detecting objects in real-time using advanced algorithms."
+    },
+    {
+      "title": "GitHub - xulihang/YOLO-Server: A Simple Python Server for Object ...",
+      "url": "https://github.com/xulihang/YOLO-Server",
+      "snippet": "A Simple Python Server for Object Detection using YOLO, which is designed for ImageTrans. Update the following line to use your own model:"
+    }
+  ]
+}

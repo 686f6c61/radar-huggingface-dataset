@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "just1nseo/qwen3-4b-if-rlvr-subset4k-n3-ci95-outer-ep5",
+  "slug": "just1nseo-qwen3-4b-if-rlvr-subset4k-n3-ci95-outer-ep5",
+  "author": "just1nseo",
+  "url": "https://huggingface.co/just1nseo/qwen3-4b-if-rlvr-subset4k-n3-ci95-outer-ep5",
+  "created_at": "2026-08-17T17:18:35.000Z",
+  "updated_at": "2026-08-17T17:51:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "just1nseo/qwen3-4b-if-rlvr-subset4k-ep3 · Hugging Face",
+      "url": "https://huggingface.co/just1nseo/qwen3-4b-if-rlvr-subset4k-ep3",
+      "snippet": "Instructions to use just1nseo/qwen3-4b-if-rlvr-subset4k-ep3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use just1nseo/qwen3-4b-if-rlvr-subset4k-ep3 with Transformers:"
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    }
+  ]
+}

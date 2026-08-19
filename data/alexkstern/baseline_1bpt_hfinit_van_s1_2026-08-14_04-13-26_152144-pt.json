@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/baseline_1Bpt_hfinit_van_s1_2026-08-14_04-13-26_152144-pt",
+  "slug": "alexkstern-baseline_1bpt_hfinit_van_s1_2026-08-14_04-13-26_152144-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/baseline_1Bpt_hfinit_van_s1_2026-08-14_04-13-26_152144-pt",
+  "created_at": "2026-08-14T04:26:15.000Z",
+  "updated_at": "2026-08-14T04:26:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "no_ppt",
+    "seed_1",
+    "single",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern (astar) - Hugging Face",
+      "url": "https://huggingface.co/alexkstern/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 14 hours ago ... published a model about 14 hours ago"
+    },
+    {
+      "title": "alexkstern (Alex Stern) - Hugging Face",
+      "url": "https://huggingface.co/alexkstern",
+      "snippet": "User profile of Alex Stern on Hugging Face"
+    },
+    {
+      "title": "Introducing Infinity: Model and Harness Built for Traders",
+      "url": "https://based.one/blog/2026-08-13-introducing-infinity",
+      "snippet": "Infinity pairs a frontier-class reasoning model, post-trained on Hyperliquid trade data, with an agentic harness wired into 16 live data sources — live today in research preview, free until 27 August 2026."
+    },
+    {
+      "title": "AI Release Tracker — Every LLM Release Since ChatGPT",
+      "url": "https://aireleasetracker.com/",
+      "snippet": "AI Release Tracker is a free, continuously updated timeline of every major AI model release from the world&#x27;s leading AI labs. It currently tracks 225 models from 11 companies — including OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, Moonshot AI, and Cursor — from the launch of ChatGPT on November 30 2022 through today."
+    },
+    {
+      "title": "The frontier AI models, right now — Claude, GPT, Gemini, Grok, Llama",
+      "url": "https://mungomash.com/ai/models/",
+      "snippet": "The current frontier AI model from every major lab — Claude, GPT, Gemini, Grok, Llama, DeepSeek, Mistral, Qwen. Updated within 24 hours of every release."
+    }
+  ]
+}

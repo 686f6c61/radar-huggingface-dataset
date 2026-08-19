@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "marianaY/ner-loc-date-anonymizer-uk",
+  "slug": "marianay-ner-loc-date-anonymizer-uk",
+  "author": "marianaY",
+  "url": "https://huggingface.co/marianaY/ner-loc-date-anonymizer-uk",
+  "created_at": "2026-08-17T20:21:41.000Z",
+  "updated_at": "2026-08-17T20:22:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 277456901,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126633212,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marianaY/ner-loc-date-anonymizer · Hugging Face",
+      "url": "https://huggingface.co/marianaY/ner-loc-date-anonymizer",
+      "snippet": "Instructions to use marianaY/ner-loc-date-anonymizer with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use marianaY/ner-loc-date-anonymizer with Transformers:"
+    },
+    {
+      "title": "marianaY (Mariana Yuvchenko) - Hugging Face",
+      "url": "https://huggingface.co/marianaY",
+      "snippet": "models1 marianaY/ner-loc-date-anonymizer Token Classification • 0.1B•Updated 3 days ago• 19"
+    },
+    {
+      "title": "GitHub - malteos/awesome-anonymization-for-llms: A collection of ...",
+      "url": "https://github.com/malteos/awesome-anonymization-for-llms",
+      "snippet": "A collection of resources for PII detection, anonymization, privacy-preserving techniques, and GDPR compliance in Large Language Model (LLM) or AI applications. - malteos/awesome-anonymization-for-..."
+    },
+    {
+      "title": "Introducing NER-UK 2.0: A Rich Corpus of Named Entities for Ukrainian",
+      "url": "https://aclanthology.org/2024.unlp-1.4/",
+      "snippet": "This paper presents NER-UK 2.0, a corpus of texts in the Ukrainian language manually annotated for the named entity recognition task. The corpus contains 560 texts of multiple genres, boasting 21,993 entities in total."
+    },
+    {
+      "title": "PDF Introducing NER-UK 2.0: A Rich Corpus of Named Entities for Ukrainian",
+      "url": "https://aclanthology.org/anthology-files/anthology-files/pdf/unlp/2024.unlp-1.4.pdf",
+      "snippet": "We pre-annotated the Nashi Groshi subcor- puswithourbestmodel10trainedonthefirst version of NER-UK for four classes: ORG, PERS,LOC,andMISC.Theannotatorsthen corrected the model annotations when nec- essaryandprovidednewannotationsforthe remainingnineentitytypes."
+    }
+  ]
+}

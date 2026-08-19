@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ray901201/example-model",
+  "slug": "ray901201-example-model",
+  "author": "ray901201",
+  "url": "https://huggingface.co/ray901201/example-model",
+  "created_at": "2026-08-19T00:44:30.000Z",
+  "updated_at": "2026-08-19T00:44:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ray Examples — Ray 2.57.0",
+      "url": "https://docs.ray.io/en/latest/ray-overview/examples.html",
+      "snippet": "Fine-tune a dolly-v2-7b text generation model with PyTorch Lightning and FSDP Advanced. Train. Lightning. Large Language Models Generative AI Natural Language Processing ray-team"
+    },
+    {
+      "title": "GitHub - ray-project/ray: Ray is an AI compute engine. Ray consists of ...",
+      "url": "https://github.com/ray-project/ray",
+      "snippet": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads. - ray-project/ray"
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    },
+    {
+      "title": "AI Models: Types, Examples, and How They Work [2025]",
+      "url": "https://blog.roboflow.com/ai-models/",
+      "snippet": "Discover an overview of AI models, highlighting how they are trained, deployed, and used across different domains. Understanding the core concepts and how to use these models is essential for leveraging AI&#x27;s full potential."
+    },
+    {
+      "title": "GitHub - AI-App/Ray: An open source framework that provides a simple ...",
+      "url": "https://github.com/AI-App/Ray",
+      "snippet": "An open source framework that provides a simple, universal API for building distributed applications. Ray is packaged with RLlib, a scalable reinforcement learning library, and Tune, a scalable hyperparameter tuning library. - AI-App/Ray"
+    }
+  ]
+}

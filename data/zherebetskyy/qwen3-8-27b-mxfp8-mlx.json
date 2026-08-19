@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "zherebetskyy/Qwen3.8-27B-mxfp8-mlx",
+  "slug": "zherebetskyy-qwen3-8-27b-mxfp8-mlx",
+  "author": "zherebetskyy",
+  "url": "https://huggingface.co/zherebetskyy/Qwen3.8-27B-mxfp8-mlx",
+  "created_at": "2026-08-14T21:12:00.000Z",
+  "updated_at": "2026-08-15T10:07:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "vision",
+    "image-to-text",
+    "text-generation",
+    "quantization",
+    "mxfp8",
+    "low-precision",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 371,
+  "trending_score": 0,
+  "parameters": 8027131120,
+  "parameters_human": "8.03B",
+  "storage_bytes": 67513079890,
+  "storage_human": "67.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B, mlx-community/Qwen3.8-27B-bf16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-no-kl-real-detector-reward-v3",
+  "slug": "xw1234gan-seccodeplt-qwen2-5-coder-7b-grpo-no-kl-real-detector-reward-v3",
+  "author": "xw1234gan",
+  "url": "https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-no-kl-real-detector-reward-v3",
+  "created_at": "2026-08-15T04:13:50.000Z",
+  "updated_at": "2026-08-15T04:15:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "security",
+    "grpo",
+    "seccodeplt",
+    "conversational",
+    "dataset:fengyao1909/SecCodePLT_Plus",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 350,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-no-kl-real-detector-reward ...",
+      "url": "https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-no-kl-real-detector-reward-v3",
+      "snippet": "GRPO without KL regularization for the SecCodePLT+ compliance experiment using Qwen/Qwen2.5-Coder-7B-Instruct. This v3 run uses ReaL&#x27;s program-analysis detector reward with DAPO-style token loss and dynamic sampling."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "seccodeplt-qwen2.5-coder-7b-grpo-no-kl-real-reward-v2",
+      "url": "https://friendli.ai/models/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-no-kl-real-reward-v2",
+      "snippet": "Deploy seccodeplt-qwen2.5-coder-7b-grpo-no-kl-real-reward-v2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "As of now, Qwen2.5-Coder has covered six mainstream model sizes to meet the needs of different developers; 🛠 Practical: We explore the practicality of Qwen2.5-Coder in two scenarios, including code assistants and Artifacts, with some examples showcasing the potential applications of Qwen2.5-Coder in real-world scenarios;"
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v2",
+      "snippet": "We believe that the release of the Qwen2.5-Coder series will advance research in code intelligence and, with its permissive licensing, support wider adoption by developers in real-world applications."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "JookEn/controlnet-union-sdxl-1.0",
+  "slug": "jooken-controlnet-union-sdxl-1-0",
+  "author": "JookEn",
+  "url": "https://huggingface.co/JookEn/controlnet-union-sdxl-1.0",
+  "created_at": "2026-08-16T08:34:44.000Z",
+  "updated_at": "2026-08-16T08:34:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "Text-to-Image",
+    "ControlNet",
+    "Diffusers",
+    "Stable Diffusion",
+    "text-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1255958800,
+  "parameters_human": "1.26B",
+  "storage_bytes": 5030545936,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

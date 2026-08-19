@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/hftn3569_myqk19_text-summarizer",
+  "slug": "roy229-hftn3569_myqk19_text-summarizer",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/hftn3569_myqk19_text-summarizer",
+  "created_at": "2026-08-15T05:59:12.000Z",
+  "updated_at": "2026-08-17T04:22:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Text Summarizer - One-Click Summarization (Ad-Free)",
+      "url": "https://quillbot.com/summarize",
+      "snippet": "Quillbot&#x27;s free Summarizer simplifies long articles, research papers, or documents into short paragraphs with just the key points. Create a free AI summary now."
+    },
+    {
+      "title": "AI Summarizer",
+      "url": "https://www.summarizer.org/",
+      "snippet": "Our AI paragraph summarizer ensures accuracy and maintains the original context while summarizing the text. You can generate summaries for any type of content, including essays, blogs, articles, research papers, reports, and large documents."
+    },
+    {
+      "title": "Text Summarizer - ZeroGPT AI summarizing tool",
+      "url": "https://www.zerogpt.com/summarizer",
+      "snippet": "Capable of summarizing various types of text and documents : news articles, research papers, random paragraphs, essays, and more."
+    },
+    {
+      "title": "Free AI Text Summarizer",
+      "url": "https://smartsummarize.io/",
+      "snippet": "Our AI summarizer uses state-of-the-art language models to understand context and extract key information with high accuracy. However, for critical applications, we recommend reviewing summaries against the original text."
+    },
+    {
+      "title": "AI Summarizer - Text Summarizing Tool (Free) - Unlimited",
+      "url": "https://www.humanizeai.io/tool/summarizer",
+      "snippet": "Summarize articles, paragraphs, and essays instantly with our free AI Text Summarizer. Unlimited free online summarizing, no signup required. Summarize in points, markdown, or custom mode."
+    }
+  ]
+}

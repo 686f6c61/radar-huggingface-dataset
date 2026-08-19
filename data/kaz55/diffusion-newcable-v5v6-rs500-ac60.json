@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kaz55/diffusion-newcable-v5v6-rs500-ac60",
+  "slug": "kaz55-diffusion-newcable-v5v6-rs500-ac60",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/diffusion-newcable-v5v6-rs500-ac60",
+  "created_at": "2026-08-16T08:46:49.000Z",
+  "updated_at": "2026-08-16T08:47:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:Kaz55/dg5f_ur5e_newcable_v5v6_rs500",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308812570,
+  "parameters_human": "308.8M",
+  "storage_bytes": 1235350848,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaz55/dg5f_newcablev5_diffusion_ac60 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/dg5f_newcablev5_diffusion_ac60",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kaz55/dg5f_newcablev5_diffusion_ac60 at main - Hugging Face",
+      "url": "https://huggingface.co/Kaz55/dg5f_newcablev5_diffusion_ac60/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "K55 RGB PRO Gaming Keyboard - CORSAIR",
+      "url": "https://www.corsair.com/us/en/p/keyboards/ch-9226765-na/k55-rgb-pro-gaming-keyboard-ch-9226765-na",
+      "snippet": "The CORSAIR K55 RGB PRO Gaming Keyboard lights up your desktop with five-zone dynamic RGB backlighting and powers up your gameplay with six dedicated macro keys."
+    },
+    {
+      "title": "K55 RGB Gaming Keyboard - CORSAIR",
+      "url": "https://www.corsair.com/us/en/p/keyboards/ch-9206015-na/k55-rgb-gaming-keyboard-ch-9206015-na",
+      "snippet": "The CORSAIR K55 RGB Gaming Keyboard features dynamic three-zone RGB backlighting, six dedicated macro keys with Elgato Stream Deck software integration, IP42 dust and spill resistance, and a detachable palm rest."
+    },
+    {
+      "title": "Civitai Video Gallery | AI-Generated Art Showcase",
+      "url": "https://civitai.com/videos",
+      "snippet": "See the latest art created by the generative AI art community and delve into the inspirations and prompts behind their work"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "istt-aiml-data/Criminal-Qwen3-Reranker-0.6B-Augmented-aio",
+  "slug": "istt-aiml-data-criminal-qwen3-reranker-0-6b-augmented-aio",
+  "author": "istt-aiml-data",
+  "url": "https://huggingface.co/istt-aiml-data/Criminal-Qwen3-Reranker-0.6B-Augmented-aio",
+  "created_at": "2026-08-17T04:36:07.000Z",
+  "updated_at": "2026-08-17T08:33:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:1082",
+    "loss:MultipleNegativesRankingLoss",
+    "text-ranking",
+    "vi",
+    "arxiv:1908.10084",
+    "base_model:Qwen/Qwen3-Reranker-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Reranker-0.6B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1223248452,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-Reranker-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:02:43.980Z",
+  "benchmarks": [
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "slang disambiguation eval",
+      "metric": "Map",
+      "value": 0.8387387387387387
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "slang disambiguation eval",
+      "metric": "Mrr@10",
+      "value": 0.8387387387387387
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "slang disambiguation eval",
+      "metric": "Ndcg@10",
+      "value": 0.8799866512270965
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "Qwen3-Reranker — vllm-ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/v0.23.0/tutorials/models/Qwen3-Reranker.html",
+      "snippet": "Qwen3-Reranker # 1 Introduction # The Qwen3 Reranker model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This guide describes how to run the model ..."
+    }
+  ]
+}

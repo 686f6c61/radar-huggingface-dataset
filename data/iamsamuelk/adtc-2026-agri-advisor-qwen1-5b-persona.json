@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "iamsamuelk/adtc-2026-agri-advisor-qwen1.5b-persona",
+  "slug": "iamsamuelk-adtc-2026-agri-advisor-qwen1-5b-persona",
+  "author": "iamsamuelk",
+  "url": "https://huggingface.co/iamsamuelk/adtc-2026-agri-advisor-qwen1.5b-persona",
+  "created_at": "2026-08-16T20:43:04.000Z",
+  "updated_at": "2026-08-16T20:45:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 1117322432,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iamsamuelk/adtc-2026-agriculture-advisor - GitHub",
+      "url": "https://github.com/iamsamuelk/adtc-2026-agriculture-advisor",
+      "snippet": "An offline crop, livestock, and market advisory assistant for Nigerian smallholder farmers. - iamsamuelk/adtc-2026-agriculture-advisor"
+    },
+    {
+      "title": "adtc-2026-agriculture-advisor/README.md at main · iamsamuelk ... - GitHub",
+      "url": "https://github.com/iamsamuelk/adtc-2026-agriculture-advisor/blob/main/README.md",
+      "snippet": "An offline crop, livestock, and market advisory assistant for Nigerian smallholder farmers. - iamsamuelk/adtc-2026-agriculture-advisor"
+    },
+    {
+      "title": "Offline Agriculture Advisor — Real On-Device AI for an 8 GB Laptop ...",
+      "url": "https://www.youtube.com/watch?v=jPYHFnK15Q4",
+      "snippet": "Offline Agriculture Advisor runs Qwen2.5-3B-Instruct Q4_K_M entirely on CPU with llama.cpp for African smallholder farmers and extension officers."
+    },
+    {
+      "title": "Africa Deep Tech Challenge 2026: The Laptop LLM Challenge: Build On ...",
+      "url": "https://adtc-2026.devpost.com/",
+      "snippet": "Africa Deep Tech Challenge 2026 (inspired by the Africa AI XPrize) is an engineering-first competition to make useful language-model applications run well on the computers Africans already own: mid- and low-end commodity laptops. We are not building for exotic edge silicon."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

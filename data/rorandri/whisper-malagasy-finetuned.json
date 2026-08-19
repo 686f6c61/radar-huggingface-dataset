@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rorandri/whisper-malagasy-finetuned",
+  "slug": "rorandri-whisper-malagasy-finetuned",
+  "author": "rorandri",
+  "url": "https://huggingface.co/rorandri/whisper-malagasy-finetuned",
+  "created_at": "2026-08-17T13:08:32.000Z",
+  "updated_at": "2026-08-17T13:08:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75580336,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "GitHub - vasistalodagala/whisper-finetune: Fine-tune and evaluate ...",
+      "url": "https://github.com/vasistalodagala/whisper-finetune",
+      "snippet": "This repository contains the relevant scripts to fine-tune and evaluate Whisper models of various configurations available over huggingface 🤗. Scripts in this repository support fine-tuning these models using custom datasets which haven&#x27;t been made available over huggingface. Some of the models ..."
+    },
+    {
+      "title": "Transcribe Malagasy Audio | WhisperAI Speech-to-Text",
+      "url": "https://whisperai.com/ai-transcription/transcribe-malagasy",
+      "snippet": "Transcribe Malagasy audio with WhisperAI WhisperAI transcribes Malagasy (Malagasy) audio for the around 25 million speakers who use the language across Madagascar. Built on OpenAI Whisper and tuned for the realities of Malagasy speech, the service produces publication-grade transcripts in Latin alphabet."
+    },
+    {
+      "title": "fine_tune_whisper.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/sanchit-gandhi/notebooks/blob/main/fine_tune_whisper.ipynb",
+      "snippet": "In this Colab, we present a step-by-step guide on how to fine-tune Whisper for any multilingual ASR dataset using Hugging Face 🤗 Transformers. This is a more \"hands-on\" version of the accompanying blog post. For a more in-depth explanation of Whisper, the Common Voice dataset and the theory behind fine-tuning, the reader is advised to refer to the blog post."
+    },
+    {
+      "title": "Playground - Hugging Face",
+      "url": "https://huggingface.co/Playground",
+      "snippet": "Hugging Face API Inference Playground"
+    }
+  ]
+}

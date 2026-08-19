@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "balalida/gpt-22M-owt",
+  "slug": "balalida-gpt-22m-owt",
+  "author": "balalida",
+  "url": "https://huggingface.co/balalida/gpt-22M-owt",
+  "created_at": "2026-08-14T02:47:49.000Z",
+  "updated_at": "2026-08-14T02:52:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cs336_transformer",
+    "text-generation",
+    "cs336",
+    "causal-lm",
+    "byte-level-bpe",
+    "custom_code",
+    "dataset:Skylion007/openwebtext",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 260,
+  "trending_score": 0,
+  "parameters": 28840448,
+  "parameters_human": "28.8M",
+  "storage_bytes": 57684560,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Models - OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models",
+      "snippet": "Models Choosing a model If you&#x27;re not sure where to start, use GPT-5.6 Sol, our flagship model for complex reasoning and coding. Choose GPT-5.6 Terra to balance intelligence and cost, or GPT-5.6 Luna for cost-sensitive, high-volume workloads. All latest OpenAI models support text and image input, text output, multilingual capabilities, and vision."
+    }
+  ]
+}

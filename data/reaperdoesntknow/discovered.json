@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Discovered",
+  "slug": "reaperdoesntknow-discovered",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Discovered",
+  "created_at": "2026-03-09T22:30:38.000Z",
+  "updated_at": "2026-08-18T13:15:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moa_metric",
+    "trl",
+    "sft",
+    "convergentintel",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 175,
+  "trending_score": 0,
+  "parameters": 54657008,
+  "parameters_human": "54.7M",
+  "storage_bytes": 655960068,
+  "storage_human": "656 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Discovered · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Discovered",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DiscoverLM - a reaperdoesntknow Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/reaperdoesntknow/discoverlm",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from reaperdoesntknow"
+    },
+    {
+      "title": "reaperdoesntknow / Discovered Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/reaperdoesntknow/Discovered/491e9a2b18dece37f0cb24eb710e28696a309806/overview",
+      "snippet": "Discover potential threats in the reaperdoesntknow / Discovered model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/reaperdoesntknow/Discovered/950b8bc53d2cbcb58c26cced8616a85dae12cf8a/overview",
+      "snippet": "Discover potential threats in the reaperdoesntknow / Discovered model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "Mystery AI model revealed to be Xiaomi&#x27;s following suspicions it was ...",
+      "url": "https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/",
+      "snippet": "The mysterious free model surfaced on an AI gateway platform on March 11."
+    }
+  ]
+}

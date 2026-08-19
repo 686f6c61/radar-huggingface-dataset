@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "stage-babylm/llama-128-4L",
+  "slug": "stage-babylm-llama-128-4l",
+  "author": "stage-babylm",
+  "url": "https://huggingface.co/stage-babylm/llama-128-4L",
+  "created_at": "2026-08-10T17:10:03.000Z",
+  "updated_at": "2026-08-17T17:29:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 826,
+  "trending_score": 0,
+  "parameters": 1043328,
+  "parameters_human": "1.0M",
+  "storage_bytes": 619978212,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llama-128-4L API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/stage-babylm/llama-128-4L",
+      "snippet": "Run llama-128-4L with FriendliAI inference. This model is a fine-tuned version of on an unknown dataset."
+    },
+    {
+      "title": "stage-babylm/llama-128-2L · Hugging Face",
+      "url": "https://huggingface.co/stage-babylm/llama-128-2L",
+      "snippet": "stage-babylm / llama-128-2L like 0 Follow Stage BabyLM 4 Text Generation Transformers Safetensors llama Generated from Trainer text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub Pages - Baby",
+      "url": "https://babylm.github.io/",
+      "snippet": "Track update: This year introduces a dedicated MultiLingual track, and removes Multimodal and Interaction as standalone competition tracks, both are now subsumed into Strict / Strict-Small (paired image-text data and teacher-model feedback are allowed). Evaluation pipeline: The BabyLM 2026 evaluation pipeline is now ready!"
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    },
+    {
+      "title": "llama4:128x17b - ollama.com",
+      "url": "https://ollama.com/library/llama4:128x17b",
+      "snippet": "The Llama 4 collection of models are natively multimodal AI models that enable text and multimodal experiences. These two models leverage a mixture-of-experts (MoE) architecture and support native multimodality (image input)."
+    }
+  ]
+}

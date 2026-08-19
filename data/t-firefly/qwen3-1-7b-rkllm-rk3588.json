@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "t-firefly/qwen3-1.7b-rkllm-rk3588",
+  "slug": "t-firefly-qwen3-1-7b-rkllm-rk3588",
+  "author": "t-firefly",
+  "url": "https://huggingface.co/t-firefly/qwen3-1.7b-rkllm-rk3588",
+  "created_at": "2026-07-13T01:17:21.000Z",
+  "updated_at": "2026-08-19T03:03:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3",
+    "firefly",
+    "rockchip",
+    "rk3588",
+    "llamapi",
+    "edge-ai",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4785788062,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t-firefly/qwen3-1.7b-rkllm-rk3588 at main - Hugging Face",
+      "url": "https://huggingface.co/t-firefly/qwen3-1.7b-rkllm-rk3588/tree/main",
+      "snippet": "like 0 Follow Firefly AI 5 qwen3 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main qwen3-1.7b-rkllm-rk3588 2.41 GB Ctrl+K Ctrl+K 1 contributor History:5 commits hui12123 Upload qwen3-1.7b_w8a8_rk3588.rkllm with huggingface_hub 2adb12c verified8 days ago .gitattributes Safe 1.64 kBAdd files using upload-large-folder tool9 days ago README.md Safe 28 ..."
+    },
+    {
+      "title": "t-firefly/qwen3-1.7b-rkllm-rk3588 · Hugging Face",
+      "url": "https://huggingface.co/t-firefly/qwen3-1.7b-rkllm-rk3588",
+      "snippet": "t-firefly / qwen3-1.7b-rkllm-rk3588 like 0 Follow Firefly AI 4 qwen3 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Enhanced capabilities in 256K-token long-context understanding, extendable up to 1 million tokens. Qwen3-Thinking-2507 is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements:"
+    },
+    {
+      "title": "GitHub - airockchip/rknn3-toolkit",
+      "url": "https://github.com/airockchip/rknn3-toolkit",
+      "snippet": "RKNN3 SDK provides the complete software stack for deploying AI models on RK1820/RK1828/RK3572, including: RKNN3-Toolkit: PC-side software development kit for model conversion, inference, performance evaluation, etc."
+    },
+    {
+      "title": "Large Language Model — Firefly Wiki",
+      "url": "https://wiki.t-firefly.com/en/AIBOX-PRO-3588/usage_llm_rockchip.html",
+      "snippet": "The co-processor RK1828 supports deployment of large models such as Qwen3-8B and Qwen2.5-VL-7B, enabling multi-channel video recognition, object detection and tracking, and visual development. One box meets all personalized AI deployment needs."
+    }
+  ]
+}

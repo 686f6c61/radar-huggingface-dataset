@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "santosh07401/piiguard-qwen3-1.7b",
+  "slug": "santosh07401-piiguard-qwen3-1-7b",
+  "author": "santosh07401",
+  "url": "https://huggingface.co/santosh07401/piiguard-qwen3-1.7b",
+  "created_at": "2026-08-17T00:51:06.000Z",
+  "updated_at": "2026-08-17T03:46:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "pii",
+    "pii-detection",
+    "redaction",
+    "ner",
+    "india",
+    "aadhaar",
+    "hinglish",
+    "qwen3",
+    "lora",
+    "text-generation",
+    "en",
+    "hi",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 7592198434,
+  "storage_human": "7.6 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen3-1.7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-1.7B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 include: Dense and Mixture-of-Experts (MoE) models of various sizes, available in 0.6B, 1.7B, 4B, 8B, 14B, 32B and 30B-A3B, 235B-A22B."
+    },
+    {
+      "title": "qwen3:1.7b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:1.7b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    },
+    {
+      "title": "Qwen3-1.7B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-1.7B/summary",
+      "snippet": "Qwen3-1.7B Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features: Uniquely support of seamless ..."
+    }
+  ]
+}

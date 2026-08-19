@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "logic65/Qwen3.8-Whittle-MoE-27B-A17.8B",
+  "slug": "logic65-qwen3-8-whittle-moe-27b-a17-8b",
+  "author": "logic65",
+  "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B",
+  "created_at": "2026-08-18T02:38:44.000Z",
+  "updated_at": "2026-08-18T09:36:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "mixture-of-experts",
+    "sparse-activation",
+    "compression",
+    "qwen3_5",
+    "gated-deltanet",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B-FP8",
+    "base_model:quantized:Qwen/Qwen3.8-27B-FP8",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 26917297664,
+  "parameters_human": "26.92B",
+  "storage_bytes": 17371866624,
+  "storage_human": "17.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logic65/Qwen3.8-Whittle-16B · Hugging Face",
+      "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-16B",
+      "snippet": "A 27B whittled down to 16.8B with a logit lens and a pricing table, then healed with one A100 evening. It now outscores every intermediate cut — including ones 4B larger — at 20 tokens/second on two consumer 8GB GPUs."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The key word is dense. Unlike the giant Qwen3.8-Max (2.4T-parameter MoE) that grabbed headlines when its weights landed on August 8, 2026, Qwen3.8-27B is a 27B-parameter dense model designed to run on hardware individuals actually own."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8-27B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is an AI model released by Qwen on Friday, Aug 14 2026, 11 days after Qwen3.8-Max. It is an open-weight model — the trained weights are available to download and run."
+    }
+  ]
+}

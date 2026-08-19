@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Fatihaybasn/pathfinder-flan-t5-large-second-try-lora",
+  "slug": "fatihaybasn-pathfinder-flan-t5-large-second-try-lora",
+  "author": "Fatihaybasn",
+  "url": "https://huggingface.co/Fatihaybasn/pathfinder-flan-t5-large-second-try-lora",
+  "created_at": "2026-08-16T12:23:03.000Z",
+  "updated_at": "2026-08-16T13:24:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "flan-t5",
+    "multitask",
+    "rag",
+    "chat",
+    "text-generation",
+    "en",
+    "base_model:google/flan-t5-large",
+    "base_model:adapter:google/flan-t5-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73435126,
+  "storage_human": "73 MB",
+  "base_model": "google/flan-t5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/flan-t5-large · Hugging Face",
+      "url": "https://huggingface.co/google/flan-t5-large",
+      "snippet": "Model Card for FLAN-T5 large Table of Contents TL;DR Model Details Usage Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors TL;DR If you already know T5, FLAN-T5 is just better at everything. For the same number of parameters, these models have been fine-tuned on more than 1000 additional tasks covering also more languages. As ..."
+    },
+    {
+      "title": "FLAN-T5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/flan-t5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - fatihaybsn/PathFinder-Ship: Intent-routed, local-first ...",
+      "url": "https://github.com/fatihaybsn/PathFinder-Ship",
+      "snippet": "PathFinder-Ship PathFinder‑Ship is a local‑first, intent‑routed multimodal assistant that runs fully on CPU and ties together ONNX Flan‑T5 Large (783M parameters) for instruction‑driven responses, a quantized MiniLM intent classifier for command vs. chat routing, a hybrid RAG engine (ChromaDB + SQLite FTS5/BM25) with score‑based web search gating, and a YOLO‑NAS vision pipeline ..."
+    },
+    {
+      "title": "Researcher Claims Working Jailbreak on Top AI Models Including GPT-5.6 ...",
+      "url": "https://cybersecuritynews.com/jailbreak-on-top-ai-models/",
+      "snippet": "A well-known AI red teamer claims to have developed a universal jailbreak that works against leading large language models, including heavily guarded flagships such as GPT-5.6 Sol, Claude Opus 5, and Fable."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/flan-t5.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/flan-t5.md",
+      "snippet": "FLAN-T5 includes the same improvements as T5 version 1.1 (see here for the full details of the model&#x27;s improvements.) Google has released the following variants: google/flan-t5-small google/flan-t5-base google/flan-t5-large google/flan-t5-xl google/flan-t5-xxl. The original checkpoints can be found here. Refer to T5&#x27;s documentation page for all API reference, code examples and notebooks. For ..."
+    }
+  ]
+}

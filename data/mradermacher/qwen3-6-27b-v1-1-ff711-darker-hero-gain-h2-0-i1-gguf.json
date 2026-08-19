@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-i1-GGUF",
+  "slug": "mradermacher-qwen3-6-27b-v1-1-ff711-darker-hero-gain-h2-0-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-i1-GGUF",
+  "created_at": "2026-08-18T13:24:59.000Z",
+  "updated_at": "2026-08-18T13:28:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 10878239840,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-H2.0 · Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-H2.0",
+      "snippet": "DavidAU / Qwen3.6-27B-V1.1-FF711-Darker-Hero-H2. like 0 Safetensors qwen3_5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "mradermacher/Qwen3.6-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-GGUF",
+      "snippet": "mradermacher / Qwen3.6-27B-GGUF like 5 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.6-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.6-27b",
+      "snippet": "The Qwen3.6 27B native vision-language dense model builds upon the 3.5-27B version, with key improvements in agentic coding capabilities and enhanced STEM reasoning and inference skills. In the vision modality, it demonstrates significant advances in spatial intelligence, object localization, and detection, while video understanding, document OCR, and visual agent capabilities continue to ..."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "Qwen/Qwen3.6-27B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-27B",
+      "snippet": "Qwen3.6 dense multimodal model (27B) with gated delta networks hybrid attention, MTP, and 262K context"
+    }
+  ]
+}

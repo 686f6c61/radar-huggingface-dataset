@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OneSQL-v0.2-Qwen-1.5B-GGUF",
+  "slug": "mradermacher-onesql-v0-2-qwen-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OneSQL-v0.2-Qwen-1.5B-GGUF",
+  "created_at": "2026-08-16T13:22:01.000Z",
+  "updated_at": "2026-08-16T13:45:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "unsloth",
+    "trl",
+    "sft",
+    "en",
+    "base_model:onekq-ai/OneSQL-v0.2-Qwen-1.5B",
+    "base_model:quantized:onekq-ai/OneSQL-v0.2-Qwen-1.5B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206902528,
+  "storage_human": "14.2 GB",
+  "base_model": "onekq-ai/OneSQL-v0.2-Qwen-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

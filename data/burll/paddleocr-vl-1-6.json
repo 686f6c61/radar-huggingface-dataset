@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "burll/PaddleOCR-VL-1.6",
+  "slug": "burll-paddleocr-vl-1-6",
+  "author": "burll",
+  "url": "https://huggingface.co/burll/PaddleOCR-VL-1.6",
+  "created_at": "2026-08-17T17:44:43.000Z",
+  "updated_at": "2026-08-17T17:44:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "PaddleOCR",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "PaddleOCR",
+    "safetensors",
+    "paddleocr_vl",
+    "ERNIE4.5",
+    "PaddlePaddle",
+    "image-to-text",
+    "ocr",
+    "document-parse",
+    "layout",
+    "table",
+    "formula",
+    "chart",
+    "seal",
+    "spotting",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "multilingual",
+    "arxiv:2606.03264",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 958588736,
+  "parameters_human": "958.6M",
+  "storage_bytes": 1930059391,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PaddlePaddle/PaddleOCR-VL-1.6 · Hugging Face",
+      "url": "https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6",
+      "snippet": "Performance Document Parsing 1. OmniDocBench v1.6 PaddleOCR-VL-1.6 achieves SOTA performance for overall, text, formula, tables on OmniDocBench v1.6 Notes: Performance metrics are cited from the OmniDocBench official leaderboard, except for Gemini-3 Pro, Qwen3-VL-235B-A22B-Instruct and our model, which were evaluated independently. 2. Real5 ..."
+    },
+    {
+      "title": "PaddleOCR-VL-1.6 Introduction - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/version3.x/algorithm/PaddleOCR-VL/PaddleOCR-VL-1.6.html",
+      "snippet": "PaddleOCR-VL-1.6 further optimizes PaddleOCR-VL-1.5 by systematically analyzing under-optimized areas in the current model, applying targeted data optimization, and adopting refined post-training strategies."
+    },
+    {
+      "title": "Home - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/index.html",
+      "snippet": "PaddleOCR-VL-1.5 is a new iterative version of the PaddleOCR-VL series. Based on comprehensive optimization of the core capabilities of version 1.0, the model achieves 94.5% accuracy on the authoritative document parsing benchmark OmniDocBench v1.5, surpassing top global general-purpose large models and document parsing-specific models."
+    },
+    {
+      "title": "PaddlePaddle/PaddleOCR-VL · Hugging Face",
+      "url": "https://huggingface.co/PaddlePaddle/PaddleOCR-VL",
+      "snippet": "Table Formula Chart Acknowledgments We would like to thank ERNIE, Keye, MinerU, OmniDocBench for providing valuable code, model weights and benchmarks. We also appreciate everyone&#x27;s contribution to this open-source project! Citation If you find PaddleOCR-VL helpful, feel free to give us a star and citation."
+    },
+    {
+      "title": "GitHub - PaddlePaddle/PaddleOCR: Turn any PDF or image document into ...",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "snippet": "Transforming messy visuals into structured data for the LLM era. SOTA Document VLM: Featuring PaddleOCR-VL-1.6 (0.9B), the industry&#x27;s leading lightweight vision-language model for document parsing. It achieves 96.3% accuracy on OmniDocBench v1.6, leads in text, formula, and table recognition, and shows significantly enhanced capabilities in ancient documents, rare characters, seals, and charts ..."
+    }
+  ]
+}

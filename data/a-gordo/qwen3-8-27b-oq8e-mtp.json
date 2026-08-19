@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "a-gordo/Qwen3.8-27B-oQ8e-mtp",
+  "slug": "a-gordo-qwen3-8-27b-oq8e-mtp",
+  "author": "a-gordo",
+  "url": "https://huggingface.co/a-gordo/Qwen3.8-27B-oQ8e-mtp",
+  "created_at": "2026-08-18T02:29:49.000Z",
+  "updated_at": "2026-08-18T03:06:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 8184279792,
+  "parameters_human": "8.18B",
+  "storage_bytes": 30014451254,
+  "storage_human": "30.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "oMLX issue #2689 benchmark scripts & results: Qwen3.8-27B-oQ8e-mtp 16K ...",
+      "url": "https://gist.github.com/taozhiyuai/bcba38be6a6bc2404379a241c06e7b59",
+      "snippet": "oMLX issue #2689 benchmark scripts & results: Qwen3.8-27B-oQ8e-mtp 16K collapse investigation (M3 Max 128GB) - 00_original_fix_test_v4.sh"
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The key word is dense. Unlike the giant Qwen3.8-Max (2.4T-parameter MoE) that grabbed headlines when its weights landed on August 8, 2026, Qwen3.8-27B is a 27B-parameter dense model designed to run on hardware individuals actually own."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B brings the latest generation of the Qwen family to a model size well suited for local AI development. The Qwen 3.8 generation continues the focus on coding, real-world work, research, and long-horizon AI workloads, extending the rapid pace of innovation we are seeing across open AI."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

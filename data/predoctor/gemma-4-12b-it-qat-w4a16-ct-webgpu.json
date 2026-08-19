@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "PreDoctor/gemma-4-12B-it-qat-w4a16-ct-webgpu",
+  "slug": "predoctor-gemma-4-12b-it-qat-w4a16-ct-webgpu",
+  "author": "PreDoctor",
+  "url": "https://huggingface.co/PreDoctor/gemma-4-12B-it-qat-w4a16-ct-webgpu",
+  "created_at": "2026-08-17T06:09:38.000Z",
+  "updated_at": "2026-08-17T06:39:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gemma-4",
+    "webgpu",
+    "browser",
+    "quantized",
+    "multimodal",
+    "speculative-decoding",
+    "mtp",
+    "text-generation",
+    "base_model:google/gemma-4-12B-it-qat-w4a16-ct",
+    "base_model:finetune:google/gemma-4-12B-it-qat-w4a16-ct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9128840554,
+  "storage_human": "9.1 GB",
+  "base_model": "google/gemma-4-12B-it-qat-w4a16-ct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B-it-qat-w4a16-ct · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct",
+      "snippet": "Available for Gemma 4 E2B, E4B, 12B, and 31B. Assistant Compatibility: When using multi-token prediction (speculative decoding) with an assistant model alongside a QAT target model, the assistant model must also be a QAT checkpoint with the same precision to ensure compatibility. Gemma is a family of open models built by Google DeepMind."
+    },
+    {
+      "title": "gemma-4-12B-it-qat-w4a16-ct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-12b-it-qat-w4a16-ct-google",
+      "snippet": "Overview gemma-4-12B-it-qat-w4a16-ct is a 12-billion parameter instruction-tuned dense transformer model built by google and optimized through Quantization-Aware Training (QAT) to preserve bfloat16-level quality while drastically reducing memory requirements. The model handles text, image, and audio inputs and generates text output, featuring a 256K token context window and support for over ..."
+    },
+    {
+      "title": "README.md · meganovaai/gemma-4-12B-it-qat-w4a16-ct at main",
+      "url": "https://huggingface.co/meganovaai/gemma-4-12B-it-qat-w4a16-ct/blob/main/README.md",
+      "snippet": "Instructions to use meganovaai/gemma-4-12B-it-qat-w4a16-ct with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use meganovaai/gemma-4-12B-it-qat-w4a16-ct with Transformers:"
+    },
+    {
+      "title": "Full Deployment gemma-4-12B-it-qat-w4a16-ct - Project Sarangi",
+      "url": "https://projectsarangi.com/2026/07/05/full-deployment-gemma-4-12b-it-qat-w4a16-ct/",
+      "snippet": "The **gemma-4-12B-it-qat-w4a16-ct** model represents a significant advancement in instruction‑tuned language models, combining a 12‑billion parameter base with a specialized QAT quantization scheme. It leverages a * w4a16 * format, meaning weights are stored in 4‑bit precision while activations remain in 16‑bit floating point, delivering a balanced trade‑off between memory footprint ..."
+    },
+    {
+      "title": "Full Deployment gemma-4-12B-it-qat-w4a16-ct via WebGPU (Browser) Step ...",
+      "url": "https://www.periquest.co.uk/full-deployment-gemma-4-12b-it-qat-w4a16-ct-via-webgpu-browser-step-by-step/",
+      "snippet": "The gemma-4-12b-it-qat-w4a16-ct model is designed to provide a balance between efficiency, accuracy, and performance in natural language processing tasks. By employing QAT quantization, this model reduces memory requirements while maintaining optimal performance across diverse tasks."
+    }
+  ]
+}

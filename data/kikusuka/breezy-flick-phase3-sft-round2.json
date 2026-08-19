@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "kikusuka/breezy-flick-phase3-sft-round2",
+  "slug": "kikusuka-breezy-flick-phase3-sft-round2",
+  "author": "kikusuka",
+  "url": "https://huggingface.co/kikusuka/breezy-flick-phase3-sft-round2",
+  "created_at": "2026-08-16T18:19:43.000Z",
+  "updated_at": "2026-08-16T18:30:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 70263040,
+  "parameters_human": "70.3M",
+  "storage_bytes": 281067857,
+  "storage_human": "281 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

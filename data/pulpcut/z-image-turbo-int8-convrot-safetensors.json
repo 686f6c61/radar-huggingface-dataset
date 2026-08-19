@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "PulpCut/Z-Image-Turbo-INT8-ConvRot-safetensors",
+  "slug": "pulpcut-z-image-turbo-int8-convrot-safetensors",
+  "author": "PulpCut",
+  "url": "https://huggingface.co/PulpCut/Z-Image-Turbo-INT8-ConvRot-safetensors",
+  "created_at": "2026-08-17T13:21:32.000Z",
+  "updated_at": "2026-08-17T13:48:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "z-image",
+    "int8",
+    "apple-silicon",
+    "h3ddle",
+    "text-to-image",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14330764812,
+  "storage_human": "14.3 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo, martin-rizzo/Z-Image-Turbo-INT8-ConvRot-ComfyUI",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Z-Image INT8 - Turbo | ZImage Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2732212/z-image-int8",
+      "snippet": "Base Download 1 variant available int8 SafeTensor z_image_turbo_INT8_fixed.safetensors 8-bit integer, smaller file • 6.69 GB Verified: 2 months ago Download (6.69 GB)"
+    },
+    {
+      "title": "Winnougan/Z-Image-Base-Turbo-INT8-Convrot · Hugging Face",
+      "url": "https://huggingface.co/Winnougan/Z-Image-Base-Turbo-INT8-Convrot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Z-Image-Turbo-INT8-ConvRot-ComfyUI - Hugging Face",
+      "url": "https://huggingface.co/martin-rizzo/Z-Image-Turbo-INT8-ConvRot-ComfyUI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Z Image Turbo - Turbo | ZImage Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2168935/z-image-turbo",
+      "snippet": "It excels in photorealistic image generation, bilingual text rendering (English & Chinese), and robust instruction adherence. 🧱 Z-Image-Base - The non-distilled foundation model. By releasing this checkpoint, we aim to unlock the full potential for community-driven fine-tuning and custom development."
+    },
+    {
+      "title": "GitHub - Tongyi-MAI/Z-Image",
+      "url": "https://github.com/Tongyi-MAI/Z-Image",
+      "snippet": "Z-Image is a powerful and highly efficient image generation model family with 6B parameters. Currently there are four variants: 🚀 Z-Image-Turbo - A distilled version of Z-Image that matches or exceeds leading competitors with only 8 NFEs (Number of Function Evaluations). It offers ⚡️sub-second inference latency⚡️ on enterprise-grade H800 GPUs and fits comfortably within 16G VRAM ..."
+    }
+  ]
+}

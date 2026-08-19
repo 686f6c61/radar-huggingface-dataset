@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "huluhuluu/qwen3-1.7b-eagle3-sharegpt-sw1024",
+  "slug": "huluhuluu-qwen3-1-7b-eagle3-sharegpt-sw1024",
+  "author": "huluhuluu",
+  "url": "https://huggingface.co/huluhuluu/qwen3-1.7b-eagle3-sharegpt-sw1024",
+  "created_at": "2026-08-18T11:51:05.000Z",
+  "updated_at": "2026-08-18T11:53:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speculative-decoding",
+    "eagle3",
+    "specforge",
+    "sliding-window-attention",
+    "qwen3",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12883101145,
+  "storage_human": "12.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huluhuluu/qwen3-1.7b-eagle3-sharegpt-sw768 · Hugging Face",
+      "url": "https://huggingface.co/huluhuluu/qwen3-1.7b-eagle3-sharegpt-sw768",
+      "snippet": "Instructions to use huluhuluu/qwen3-1.7b-eagle3-sharegpt-sw768 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "huluhuluu/qwen3-1p7b-eagle3-stage2-adapter-w4-scale1-epoch-5-step ...",
+      "url": "https://huggingface.co/huluhuluu/qwen3-1p7b-eagle3-stage2-adapter-w4-scale1-epoch-5-step-120000",
+      "snippet": "Instructions to use huluhuluu/qwen3-1p7b-eagle3-stage2-adapter-w4-scale1-epoch-5-step-120000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Yunhai-Hu/EAGLE-Qwen3: Official Implementation of EAGLE-1 ...",
+      "url": "https://github.com/Yunhai-Hu/EAGLE-Qwen3",
+      "snippet": "Note: The current code defaults to using EAGLE-3. If you want to use EAGLE weights, please specify use_eagle3=False in EaModel.from_pretrained. Note: When Qwen2 is the target model, please use bf16 precision instead of fp16 to avoid numerical overflow. The training dataset for the draft model of Qwen2 is ShareGPT, which has removed non-English ..."
+    },
+    {
+      "title": "GitHub - Yunhai-Hu/EAGLE-Qwen3: Official Implementation of EAGLE-1 ...",
+      "url": "https://github.com/Yunhai-Hu/EAGLE-Qwen3/tree/main/",
+      "snippet": "Note: When Qwen2 is the target model, please use bf16 precision instead of fp16 to avoid numerical overflow. The training dataset for the draft model of Qwen2 is ShareGPT, which has removed non-English data."
+    },
+    {
+      "title": "qwen3:1.7b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:1.7b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

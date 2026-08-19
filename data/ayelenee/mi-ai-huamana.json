@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ayelenee/mi-ai-huamana",
+  "slug": "ayelenee-mi-ai-huamana",
+  "author": "Ayelenee",
+  "url": "https://huggingface.co/Ayelenee/mi-ai-huamana",
+  "created_at": "2026-08-18T19:46:27.000Z",
+  "updated_at": "2026-08-18T19:46:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "merge",
+    "mergekit",
+    "lazymergekit",
+    "meta-llama/Llama-3.1-8B-Instruct",
+    "DavidAU/L3-Dark-Planet-8-Orbs-V2-Eight-Orbs-Of-Power-GGUF",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct, DavidAU/L3-Dark-Planet-8-Orbs-V2-Eight-Orbs-Of-Power-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Humana AI",
+      "url": "https://www.humana.ai/",
+      "snippet": "Humana AI is an organizational transformation platform that helps companies become AI-Driven. Through its Organizational Cognitive SystemÂ®, Humana integrates human and artificial intelligence to structure knowledge, automate processes, enhance decision-making, and accelerate strategic execution."
+    },
+    {
+      "title": "AI Models — Tunee",
+      "url": "https://www.tunee.ai/models",
+      "snippet": "Tunee Models The AI Behind Your Creations Music, image, and video generation models — each purpose-built for professional creative output."
+    },
+    {
+      "title": "10 Best Free AI Human Generators in 2026 - EComposer",
+      "url": "https://ecomposer.io/blogs/review/free-ai-human-generator",
+      "snippet": "Discover the best free AI human generators to create realistic faces, full-body avatars, and talking characters for your projects."
+    },
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    },
+    {
+      "title": "AI Human Generator (free, no sign-up, no limits) - Perchance",
+      "url": "https://perchance.org/ai-human-generator",
+      "snippet": "AI human generator from text. Create a realistic-looking full-body human character photo/image with the Stable Diffusion text-to-image model. Stylized and realistic AI body generator. Use it to create photorealistic or stylized AI human photos of faces or full human body photos for your OC, villains, story characters, selfies, etc. - it&#x27;s completely free, no sign-up needed. The best AI person ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TOMTOM17/eps-microplastic-frozen-pipeline-05632d7e",
+  "slug": "tomtom17-eps-microplastic-frozen-pipeline-05632d7e",
+  "author": "TOMTOM17",
+  "url": "https://huggingface.co/TOMTOM17/eps-microplastic-frozen-pipeline-05632d7e",
+  "created_at": "2026-08-14T02:43:43.000Z",
+  "updated_at": "2026-08-14T18:27:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "joblib",
+    "yolo",
+    "sam2",
+    "dinov2",
+    "microplastics",
+    "eps",
+    "fluorescence-imaging",
+    "object-detection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 235,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1078449976,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TOMTOM17/eps-microplastic-yolo-dataset-05632d7e - Hugging Face",
+      "url": "https://huggingface.co/datasets/TOMTOM17/eps-microplastic-yolo-dataset-05632d7e",
+      "snippet": "The primary scientific endpoint used by the associated pipeline is projected visible EPS area. This dataset does not provide chemical proof of polymer identity or human-drawn pixel masks. Its images are specific to the documented optical and staining protocol. Associated model: TOMTOM17/eps-microplastic-frozen-pipeline-05632d7e"
+    },
+    {
+      "title": "AI-Powered Microplastic Detection & Monitoring System - GitHub",
+      "url": "https://github.com/Vani-soni200/AI-POWERED-MICROPLASTIC-DETECTION",
+      "snippet": "This project is an AI-driven platform designed to detect, classify, and monitor microplastic contamination across water, soil, air, and agricultural environments. The system combines deep learning for image-based microplastic detection with large language model reasoning to provide accurate predictions and insightful explanations."
+    },
+    {
+      "title": "GitHub - Saiprasad2004/Microplastics-in-water: AI-powered microplastic ...",
+      "url": "https://github.com/Saiprasad2004/Microplastics-in-water",
+      "snippet": "An AI-powered computer vision project that detects and classifies microplastic particles in water sample images using YOLOv8. The system automatically identifies different types of microplastics, estimates contamination levels, evaluates water usability, and provides treatment recommendations."
+    },
+    {
+      "title": "Microplastic detection. Using YOLOv8 | by Mat Duverne | Medium",
+      "url": "https://medium.com/@mat.duverne/microplastic-detection-d341fa4bd96e",
+      "snippet": "Data use cases 1- Ocean cleanup efforts: By using a computer vision model to identify and locate microplastic pollution in ocean water to enable targeted cleanup efforts."
+    },
+    {
+      "title": "microplastic_detect Object Detection Model by MicroplasticAI",
+      "url": "https://universe.roboflow.com/microplasticai/microplastic_detect-z4e1t",
+      "snippet": "1749 open source objects images plus a pre-trained microplastic_detect model and API. Created by MicroplasticAI"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "slug": "deepseek-ai-deepseek-v4-pro-0813",
+  "author": "deepseek-ai",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+  "created_at": "2026-08-13T03:05:06.000Z",
+  "updated_at": "2026-08-13T16:28:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "conversational",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 606,
+  "downloads_30d": 30985,
+  "trending_score": 556,
+  "parameters": 1650497936906,
+  "parameters_human": "1650.50B",
+  "storage_bytes": 1781787608346,
+  "storage_human": "1781.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Pro-0813 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Pro · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4 Pro 0813 - API Pricing & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. $0.435 per million input tokens, $0.87 per million output tokens. 1,048,576 token context window, maximum output of 384,000 tokens. Includes independent benchmarks from Artificial Analysis."
+    },
+    {
+      "title": "DeepSeek-V4-Pro-0813 — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/deepseek/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek-V4-Pro-0813 is an AI model released by DeepSeek on Thursday, Aug 13 2026, 13 days after DeepSeek-V4-Flash-0731. Benchmark results (shown below) cover AutomationBench, Terminal-Bench 2.1, Toolathlon-Verified, CyberGym, and Humanity&#x27;s Last Exam."
+    },
+    {
+      "title": "DeepSeek: DeepSeek V4 Pro 0813 - AI Model Details & Bench...",
+      "url": "https://benchable.ai/models/deepseek/deepseek-v4-pro-20260813",
+      "snippet": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
+    }
+  ]
+}

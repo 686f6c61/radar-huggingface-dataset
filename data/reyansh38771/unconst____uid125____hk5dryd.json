@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "reyansh38771/unconst____uid125____hk5DRyd",
+  "slug": "reyansh38771-unconst____uid125____hk5dryd",
+  "author": "reyansh38771",
+  "url": "https://huggingface.co/reyansh38771/unconst____uid125____hk5DRyd",
+  "created_at": "2026-08-17T21:30:47.000Z",
+  "updated_at": "2026-08-17T21:30:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r683",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reyansh38771/0xbidkslj3____uid94____hk5E9si · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/0xbidkslj3____uid94____hk5E9si",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Discord ID Lookup: Find Any Discord User & Tag… | FootprintIQ",
+      "url": "https://footprintiq.app/platforms/discord/username-search",
+      "snippet": "Free Discord ID lookup — paste a Discord username (no #1234) and find the user, tag and linked accounts on Steam, Twitch, Reddit, GitHub and 500+ platforms in 60s."
+    }
+  ]
+}

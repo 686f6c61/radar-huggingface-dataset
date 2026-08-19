@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "leonsarmiento/Qwen3.8-27B-MTP-4bit-mlx",
+  "slug": "leonsarmiento-qwen3-8-27b-mtp-4bit-mlx",
+  "author": "leonsarmiento",
+  "url": "https://huggingface.co/leonsarmiento/Qwen3.8-27B-MTP-4bit-mlx",
+  "created_at": "2026-08-17T18:27:04.000Z",
+  "updated_at": "2026-08-17T18:27:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_mtp",
+    "mlx-vlm",
+    "qwen3",
+    "mtp",
+    "speculative-decoding",
+    "draft-model",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 66381312,
+  "parameters_human": "66.4M",
+  "storage_bytes": 251743467,
+  "storage_human": "252 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.8-27B-MTP-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "Qwen3.8-27B is Apache-2.0 with 262K context and vision, and its Q4 build fits a 24GB Mac. Install with ollama run qwen3.8:27b or MLX for Apple Silicon."
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

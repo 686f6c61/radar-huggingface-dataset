@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kikusuka/breezy-flick-test-2",
+  "slug": "kikusuka-breezy-flick-test-2",
+  "author": "kikusuka",
+  "url": "https://huggingface.co/kikusuka/breezy-flick-test-2",
+  "created_at": "2026-08-15T17:41:56.000Z",
+  "updated_at": "2026-08-15T19:27:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 74980864,
+  "parameters_human": "75.0M",
+  "storage_bytes": 899888817,
+  "storage_human": "900 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kikusuka/breezy-flick-v2 · Hugging Face",
+      "url": "https://huggingface.co/kikusuka/breezy-flick-v2",
+      "snippet": "kikusuka / breezy-flick-v2 like 0 Safetensors gpt2 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "kikusuka/breezy-flick-test · Hugging Face",
+      "url": "https://huggingface.co/kikusuka/breezy-flick-test",
+      "snippet": "kikusuka / breezy-flick-test like 1 Safetensors gpt2 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Flick AI",
+      "url": "https://www.flickai.io/",
+      "snippet": "Gamified Social Consensus Test your intuition against the community. Earn XP and Badges by accurately forecasting outcomes in Sports and Entertainment."
+    },
+    {
+      "title": "GitHub - kikusuka/BreezyAssistant4",
+      "url": "https://github.com/kikusuka/BreezyAssistant4",
+      "snippet": "Breezy Assistant 4 🌬️ Breezy is a highly customizable, privacy-focused Android assistant that uses a hybrid AI system to balance speed, intelligence, and offline capability."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

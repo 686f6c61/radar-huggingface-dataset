@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Super-Slop-Machina-RP-XXL-Small-3B-2608-i1-GGUF",
+  "slug": "mradermacher-super-slop-machina-rp-xxl-small-3b-2608-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Super-Slop-Machina-RP-XXL-Small-3B-2608-i1-GGUF",
+  "created_at": "2026-08-18T05:43:42.000Z",
+  "updated_at": "2026-08-18T06:26:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safetensors",
+    "instruct",
+    "creative writing",
+    "RP",
+    "Roleplay",
+    "creative",
+    "writer",
+    "ERP",
+    "experimental",
+    "edge",
+    "Ministral3",
+    "finetune",
+    "Unsloth",
+    "SillyTavern",
+    "SLM",
+    "Mini",
+    "Small Language Model",
+    "GGUF",
+    "en",
+    "base_model:Indexnusrefather/Super-Slop-Machina-RP-XXL-Small-3B-2608",
+    "base_model:quantized:Indexnusrefather/Super-Slop-Machina-RP-XXL-Small-3B-2608",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 41564474240,
+  "storage_human": "41.6 GB",
+  "base_model": "Indexnusrefather/Super-Slop-Machina-RP-XXL-Small-3B-2608",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super-Slop-Machina-RP-XXL-Small-3B-2608-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Super-Slop-Machina-RP-XXL-Small-3B-2608-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Super-Slop-Machina-XXL-v0.1-4B-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Super-Slop-Machina-XXL-v0.1-4B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    },
+    {
+      "title": "RichardErkhov (Richard Erkhov) · GitHub",
+      "url": "https://github.com/RichardErkhov/",
+      "snippet": "Team mradermacher 🚀 . RichardErkhov has 30 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Super Slop Machina Macro Roleplay Instruct 350M 0812 by ...",
+      "url": "https://llm-explorer.com/model/Indexnusrefather%2FSuper-Slop-Machina-Macro-Roleplay-Instruct-350M-0812,3FZTWcaO1gBNmMpOXGrSh9",
+      "snippet": "Super Slop Machina Macro Roleplay Instruct 350M 0812 is an open-source 350m LLM by Indexnusrefather. VRAM 0.2GB, 125K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "arcanicai/Con0",
+  "slug": "arcanicai-con0",
+  "author": "arcanicai",
+  "url": "https://huggingface.co/arcanicai/Con0",
+  "created_at": "2026-08-18T12:51:18.000Z",
+  "updated_at": "2026-08-18T13:01:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "cyber-security",
+    "agent",
+    "vision-language-model",
+    "qwen",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "vi",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54726416088,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Cono 1.5 - Arcanic AI",
+      "url": "https://arcanic.ai/cono-1-5/",
+      "snippet": "Cono is an advanced large language model (LLM) developed based on the Mistral-7B-v0.1 base model from Mistral AI. One of the key enhancements of Cono is its extended context length, which reaches up to 16,000 tokens. This significant improvement enhances the model&#x27;s ability to understand and process complex and lengthy texts. Developed by Arcanic AI, Cono is also optimized for the Vietnamese ..."
+    },
+    {
+      "title": "Arcanic AI - Hello Cono",
+      "url": "https://arcanic.ai/hello-cono/",
+      "snippet": "Arcanic Cono 1.5 model has soared to the Top 5 in the VMLU Leaderboard of fine-tuned models."
+    },
+    {
+      "title": "Introducing Arcanic Cono: The new AI assistant - LinkedIn",
+      "url": "https://www.linkedin.com/posts/arcanic-ai_introducing-arcanic-cono-meet-arcanic-activity-7201497421653172224-vJ3R",
+      "snippet": "🌟 INTRODUCING ARCANIC CONO 🌟 Meet Arcanic Cono, our new flagship product designed to revolutionize the way you write, code, analyze, and accelerate your business. Cono is your powerful ..."
+    },
+    {
+      "title": "INTRODUCING ARCANIC CONO Meet Arcanic Cono, our ... - Facebook",
+      "url": "https://www.facebook.com/arcanic.ai.official/videos/-introducing-arcanic-cono-meet-arcanic-cono-our-new-flagship-product-designed-to/414673551536286/",
+      "snippet": "🌟 INTRODUCING ARCANIC CONO 🌟 Meet Arcanic Cono, our new flagship product designed to revolutionize the way you write, code, analyze, and accelerate your..."
+    },
+    {
+      "title": "arcanicai (Arcanic AI) - Hugging Face",
+      "url": "https://huggingface.co/arcanicai",
+      "snippet": "Org profile for Arcanic AI on Hugging Face, the AI community building the future."
+    }
+  ]
+}

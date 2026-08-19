@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Accordic/BiRefNet",
+  "slug": "accordic-birefnet",
+  "author": "Accordic",
+  "url": "https://huggingface.co/Accordic/BiRefNet",
+  "created_at": "2026-08-18T07:49:08.000Z",
+  "updated_at": "2026-08-18T07:49:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "birefnet",
+  "languages": [],
+  "tags": [
+    "birefnet",
+    "safetensors",
+    "image-segmentation",
+    "background-removal",
+    "mask-generation",
+    "Dichotomous Image Segmentation",
+    "Camouflaged Object Detection",
+    "Salient Object Detection",
+    "pytorch_model_hub_mixin",
+    "model_hub_mixin",
+    "transformers",
+    "custom_code",
+    "arxiv:2401.03407",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 220700242,
+  "parameters_human": "220.7M",
+  "storage_bytes": 3099110132,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ZhengPeng7/BiRefNet: [CAAI AIR&#x27;24] Bilateral Reference for ...",
+      "url": "https://github.com/ZhengPeng7/BiRefNet",
+      "snippet": "Oct 6, 2024: We uploaded the BiRefNet-matting model for general trimap-free matting use. Sep 24, 2024: We uploaded the BiRefNet_lite-2K model, which takes inputs in a much higher resolution (2560x1440). We also added the notebook for inference on videos."
+    },
+    {
+      "title": "GitHub - ansj11/BiRefNet",
+      "url": "https://github.com/ansj11/BiRefNet",
+      "snippet": "Thanks viperyl/ComfyUI-BiRefNet: this project packs BiRefNet as ComfyUI nodes, and makes this SOTA model easier use for everyone. Thanks Rishabh for offering a demo for the easier multiple images inference on colab."
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bilateral Reference for High-Resolution Dichotomous Image Segmentation",
+      "url": "https://arxiv.org/pdf/2401.03407v7",
+      "snippet": "Abstract We introduce a novel bilateral reference framework (BiRefNet) for high-resolution dichotomous image segmen-tation (DIS). It comprises two essential components: the localization module (LM) and the reconstruction module (RM) with our proposed bilateral reference (BiRef). LM aids in object localization using global semantic informa-tion. Within the RM, we utilize BiRef for the ..."
+    },
+    {
+      "title": "wefttechnologies/BiRefNet2 · Hugging Face",
+      "url": "https://huggingface.co/wefttechnologies/BiRefNet2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

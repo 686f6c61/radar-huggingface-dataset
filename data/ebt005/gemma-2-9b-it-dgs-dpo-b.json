@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ebt005/gemma-2-9b-it-dgs-dpo-B",
+  "slug": "ebt005-gemma-2-9b-it-dgs-dpo-b",
+  "author": "ebt005",
+  "url": "https://huggingface.co/ebt005/gemma-2-9b-it-dgs-dpo-B",
+  "created_at": "2026-08-18T03:28:41.000Z",
+  "updated_at": "2026-08-18T03:33:35.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "qlora",
+    "gemma-2",
+    "preregistered-research",
+    "digital-grimace-scale",
+    "en",
+    "dataset:allenai/ai2_arc",
+    "base_model:google/gemma-2-9b-it",
+    "base_model:adapter:google/gemma-2-9b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142478016,
+  "storage_human": "142 MB",
+  "base_model": "google/gemma-2-9b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-2-9b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b-it",
+      "snippet": "Advanced Usage Torch compile Torch compile is a method for speeding-up the inference of PyTorch modules. The Gemma-2 model can be run up to 6x faster by leveraging torch compile. Note that two warm-up steps are required before the full inference speed is realised:"
+    },
+    {
+      "title": "google/gemma-2-9b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b",
+      "snippet": "Code: Exposing the model to code helps it to learn the syntax and patterns of programming languages, which improves its ability to generate code or understand code-related questions. Mathematics: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "gemma-2-9b-it-DPO Model Card",
+      "url": "https://www.modelscope.cn/models/princeton-nlp/gemma-2-9b-it-DPO/summary",
+      "snippet": "This model was trained under the same setup as gemma-2-9b-it-SimPO, with the DPO objective. SimPO (Simple Preference Optimization) is an offline preference optimization algorithm designed to enhance the training of large language models (LLMs) with preference optimization datasets."
+    },
+    {
+      "title": "New AI Model Releases - Latest AI Models Released Today",
+      "url": "https://aiflashreport.com/topics/new-ai-model-releases.html",
+      "snippet": "Track new AI model releases updated daily. Latest model launches, specs, and availability from OpenAI, Anthropic, Google, Meta, Mistral, and more."
+    }
+  ]
+}

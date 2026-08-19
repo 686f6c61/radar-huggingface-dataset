@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "XReyRobert/Qwen3.8-27B-W4A16-AutoRound-INT8-Head-Embeddings",
+  "slug": "xreyrobert-qwen3-8-27b-w4a16-autoround-int8-head-embeddings",
+  "author": "XReyRobert",
+  "url": "https://huggingface.co/XReyRobert/Qwen3.8-27B-W4A16-AutoRound-INT8-Head-Embeddings",
+  "created_at": "2026-08-16T20:18:29.000Z",
+  "updated_at": "2026-08-16T20:19:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "auto-round",
+    "compressed-tensors",
+    "w4a16",
+    "int4",
+    "int8",
+    "marlin",
+    "vllm",
+    "quantized",
+    "conversational",
+    "en",
+    "base_model:dbirks/Qwen3.8-27B-W4A16-AutoRound",
+    "base_model:quantized:dbirks/Qwen3.8-27B-W4A16-AutoRound",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 6260690960,
+  "parameters_human": "6.26B",
+  "storage_bytes": 16969704237,
+  "storage_human": "17.0 GB",
+  "base_model": "dbirks/Qwen3.8-27B-W4A16-AutoRound",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Qwen3.8 - openlm.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen3.8-27B: The Version You Can Actually Run, and How to Prepare For ...",
+      "url": "https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026",
+      "snippet": "Qwen3.8-27B is the checkpoint that fits one GPU. What is confirmed, what is not, and the VRAM maths."
+    },
+    {
+      "title": "qwen38-27b-rtx3090/README.md at main · syv-ai/qwen38-27b-rtx3090 · GitHub",
+      "url": "https://github.com/syv-ai/qwen38-27b-rtx3090/blob/main/README.md",
+      "snippet": "Qwen3.8-27B on a single RTX 3090: 416 tok/s batched or 25 ms/token single-user, 150k context, vLLM - qwen38-27b-rtx3090/README.md at main · syv-ai/qwen38-27b-rtx3090"
+    },
+    {
+      "title": "Qwen 3.8 & Qwen 3.8 27B Open Source: Official Alibaba Benchmarks & SME ...",
+      "url": "https://ia4pymes.tech/en/blog/qwen-3-8-official-benchmarks-open-weights-27b-sme-guide",
+      "snippet": "Explore official Qwen 3.8-Max benchmark results (#2 global rank) and Alibaba&#x27;s August 10 open-weights release announcement for Qwen 3.8-27B. Complete SME hardware and local infrastructure guide."
+    }
+  ]
+}

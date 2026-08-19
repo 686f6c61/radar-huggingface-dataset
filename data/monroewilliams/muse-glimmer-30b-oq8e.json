@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "monroewilliams/Muse-Glimmer-30B-oQ8e",
+  "slug": "monroewilliams-muse-glimmer-30b-oq8e",
+  "author": "monroewilliams",
+  "url": "https://huggingface.co/monroewilliams/Muse-Glimmer-30B-oQ8e",
+  "created_at": "2026-08-14T23:22:06.000Z",
+  "updated_at": "2026-08-14T23:23:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "muse_glimmer",
+    "oq",
+    "quantized",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:quantized:meta-models/Muse-Glimmer-30B",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 9757002752,
+  "parameters_human": "9.76B",
+  "storage_bytes": 33469112758,
+  "storage_human": "33.5 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

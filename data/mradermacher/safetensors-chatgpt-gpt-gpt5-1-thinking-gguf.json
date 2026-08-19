@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Safetensors.chatgpt-gpt-gpt5.1-thinking-GGUF",
+  "slug": "mradermacher-safetensors-chatgpt-gpt-gpt5-1-thinking-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Safetensors.chatgpt-gpt-gpt5.1-thinking-GGUF",
+  "created_at": "2026-08-18T01:56:40.000Z",
+  "updated_at": "2026-08-18T02:21:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "TeichAI",
+    "qwen3",
+    "unsloth",
+    "en",
+    "dataset:mondk/joke-redteam-safety-dataset",
+    "base_model:mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking",
+    "base_model:quantized:mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 228,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389991552,
+  "storage_human": "36.4 GB",
+  "base_model": "mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking · Hugging Face",
+      "url": "https://huggingface.co/mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking",
+      "snippet": "Instructions to use mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna. This approach enables Heretic to work completely automatically ..."
+    }
+  ]
+}

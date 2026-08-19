@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sarkarsudipta/bart-base-scihigh",
+  "slug": "sarkarsudipta-bart-base-scihigh",
+  "author": "sarkarsudipta",
+  "url": "https://huggingface.co/sarkarsudipta/bart-base-scihigh",
+  "created_at": "2026-08-18T05:43:32.000Z",
+  "updated_at": "2026-08-18T06:35:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 559823962,
+  "storage_human": "560 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/bart-base · Hugging Face",
+      "url": "https://huggingface.co/facebook/bart-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "keras/bart_base_en · Hugging Face",
+      "url": "https://huggingface.co/keras/bart_base_en",
+      "snippet": "Model Overview BART encoder-decoder network. This class implements a Transformer-based encoder-decoder model as described in \"BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension\". The default constructor gives a fully customizable, randomly initialized BART model with any number of layers, heads, and embedding dimensions. To load ..."
+    },
+    {
+      "title": "bart-base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bart-base-facebook",
+      "snippet": "Overview bart-base is a transformer encoder-decoder sequence-to-sequence model built by facebook that corrupts text during pre-training and learns to reconstruct the original, enabling both generation and comprehension tasks. The model uses a bidirectional BERT-like encoder paired with an autoregressive GPT-like decoder architecture. Available through the Hugging Face transformers library, it ..."
+    },
+    {
+      "title": "GitHub - abselhi/bart-base",
+      "url": "https://github.com/abselhi/bart-base",
+      "snippet": "BART (base-sized model) BART model pre-trained on English language. It was introduced in the paper BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension by Lewis et al. and first released in this repository."
+    },
+    {
+      "title": "Guide to BART (Bidirectional & Autoregressive Transformer)",
+      "url": "https://quantumailabs.net/guide-to-bart-bidirectional-autoregressive-transformer/",
+      "snippet": "Q1. What is BART, and how does it stand out in NLP? Ans. BART is a unique model in NLP that integrates the strengths of bidirectional encoding (like BERT) and autoregressive decoding (like GPT). This combination enables BART to excel in both understanding and generating coherent text, making it suitable for diverse tasks such as summarization, translation, and question-answering."
+    }
+  ]
+}

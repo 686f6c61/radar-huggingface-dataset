@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mjaliz/qtn-bge-v1-retriever",
+  "slug": "mjaliz-qtn-bge-v1-retriever",
+  "author": "mjaliz",
+  "url": "https://huggingface.co/mjaliz/qtn-bge-v1-retriever",
+  "created_at": "2026-08-17T10:10:37.000Z",
+  "updated_at": "2026-08-17T10:40:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "feature-extraction",
+    "retrieval",
+    "persian",
+    "lora",
+    "dataset:mjaliz/2026-08-02-bge-v1",
+    "base_model:mjaliz/bslm-mlm-25M-ptdrw",
+    "base_model:adapter:mjaliz/bslm-mlm-25M-ptdrw",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 566705152,
+  "parameters_human": "566.7M",
+  "storage_bytes": 1150538175,
+  "storage_human": "1.2 GB",
+  "base_model": "mjaliz/bslm-mlm-25M-ptdrw",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mjaliz (MohammadJavad) - Hugging Face",
+      "url": "https://huggingface.co/mjaliz/datasets",
+      "snippet": "Sort: Recently updated. mjaliz/bslm-triplet-2.6M-qp-data. Updated about 4 hours ago. mjaliz/bslm-pair-206k-data"
+    },
+    {
+      "title": "mjaliz (MohammadJavad) - Hugging Face",
+      "url": "https://huggingface.co/mjaliz",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 8 days ago ... published a model 9 days ago ... updated a dataset 9 days ago"
+    },
+    {
+      "title": "bge",
+      "url": "https://bge.baai.ac.cn/",
+      "snippet": "Most Popular Embedding Model Series Across Multiple Platforms The BGE series models have gained widespread popularity among users and developers due to excellent performance and applicability, with download data far surpassing that of similar models."
+    },
+    {
+      "title": "Welcome to BGE! — BGE documentation",
+      "url": "https://bge-model.com/",
+      "snippet": "Besides the resources we provide here in this documentation, please visit our GitHub repo for more contents including: Want to get familiar with BGE quickly? There are hands-on examples to run for embedder and reranker&#x27;s inference, evaluation, and finetuning. Unfamiliar with some area, keywords or techniques of retrieval and RAG? We provide tutorials to teach you basic knowledge and coding ..."
+    },
+    {
+      "title": "BGE — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/index.html",
+      "snippet": "BGE # BGE stands for BAAI General Embeddings, which is a series of embedding models released by BAAI."
+    }
+  ]
+}

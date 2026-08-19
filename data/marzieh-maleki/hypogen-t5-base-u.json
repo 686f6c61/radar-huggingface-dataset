@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "marzieh-maleki/hypogen-t5-base-u",
+  "slug": "marzieh-maleki-hypogen-t5-base-u",
+  "author": "marzieh-maleki",
+  "url": "https://huggingface.co/marzieh-maleki/hypogen-t5-base-u",
+  "created_at": "2026-08-14T04:27:01.000Z",
+  "updated_at": "2026-08-14T04:27:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 892436368,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marzieh-maleki/hypogen-t5-base-pu · Hugging Face",
+      "url": "https://huggingface.co/marzieh-maleki/hypogen-t5-base-pu",
+      "snippet": "marzieh-maleki / hypogen-t5-base-pu like 0 Transformers Safetensors t5 text2text-generation text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "google-t5/t5-base · Hugging Face",
+      "url": "https://huggingface.co/google-t5/t5-base",
+      "snippet": "Our text-to-text framework allows us to use the same model, loss function, and hyperparameters on any NLP task. T5-Base is the checkpoint with 220 million parameters."
+    },
+    {
+      "title": "t5-base download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/t5-base/",
+      "snippet": "t5-base is a pre-trained transformer model from Google&#x27;s T5 (Text-To-Text Transfer Transformer) family that reframes all NLP tasks into a unified text-to-text format. With 220 million parameters, it can handle a wide range of tasks, including translation, summarization, question answering, and classification."
+    },
+    {
+      "title": "t5-base · Model Database",
+      "url": "https://modeldatabase.com/t5-base.html",
+      "snippet": "Our text-to-text framework allows us to use the same model, loss function, and hyperparameters on any NLP task. T5-Base is the checkpoint with 220 million parameters."
+    },
+    {
+      "title": "T5 Base - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/t5-base.html",
+      "snippet": "Download T5 Base GGUF model. 140 MB, 17 downloads, 0 likes."
+    }
+  ]
+}

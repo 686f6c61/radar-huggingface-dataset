@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jgujindal/jgu",
+  "slug": "jgujindal-jgu",
+  "author": "jgujindal",
+  "url": "https://huggingface.co/jgujindal/jgu",
+  "created_at": "2026-08-17T04:52:56.000Z",
+  "updated_at": "2026-08-17T04:57:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Master&#x27;s in Artificial Intelligence & Data Science - O.P. Jindal Global ...",
+      "url": "https://jgu.edu.in/pr/jcds/",
+      "snippet": "Offered by JGU&#x27;s Jindal Centre for Digital Sciences (JCDS), this forward-thinking programme blends mathematics, computing, and real-world application to prepare professionals who can lead in the age of intelligent systems. Rooted in the philosophy that data drives progress and intelligence inspires change, the Master&#x27;s in Artificial Intelligence & Data Science empowers you to bridge the gap ..."
+    },
+    {
+      "title": "MSc. in Artificial Intelligence & Data Science (Online)",
+      "url": "https://jgu.edu.in/jcds/admissions/msc-in-artificial-intelligence-data-science-1",
+      "snippet": "MSc. in Artificial Intelligence & Data Science (Online) Campus Location Sonipat Narela Road, Near Jagdishpur Village, Sonipat, Haryana 131001 For Admission related queries, write to: admissions@jgu.edu.in For Online Admission related queries, write to: admissionsonline@jgu.edu.in For Non-Residential Admission related queries, write to: non-res.admissions@jgu.edu.in For Ph.D. Admission related ..."
+    },
+    {
+      "title": "PDF JGU Master&#x27;s in AI & DS_v5 - cdn.collegevidya.com",
+      "url": "https://cdn.collegevidya.com/syllabus/op-jindal-ms-ai-and-data-science-brochure.pdf",
+      "snippet": "I am excited to announce the launch of O.P. Jindal Global University&#x27;s Master&#x27;s in Artificial Intelligence and Data Science, under the Jindal Centre for Digital Sciences. This program is designed to equip you with advanced knowledge and practical skills in AI and data analytics, key drivers of today&#x27;s digital revolution. You will benefit from a rigorous curriculum, expert faculty, and ..."
+    },
+    {
+      "title": "JGU AI Governance Report 2026 Released - LinkedIn",
+      "url": "https://www.linkedin.com/posts/prof-padmanabha-ramanujam-7877193b_jgu-ai-governance-report-2026-activity-7451971434354094080-eFwB",
+      "snippet": "O.P. Jindal Global University is pleased to announce the release of the JGU AI Governance Report 2026, a landmark institutional document that critically reimagines the integration of artificial ..."
+    },
+    {
+      "title": "Online MSc in Artificial Intelligence and Finance | JSBF, JGU",
+      "url": "https://jguonline.edu.in/program/msc-in-artificial-intelligence-finance",
+      "snippet": "Advance your career with an Online MSc in Artificial Intelligence & Finance from JSBF, JGU. Learn fintech, AI-driven finance, automation, financial analytics, & digital transformation."
+    }
+  ]
+}

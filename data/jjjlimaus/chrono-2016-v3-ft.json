@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/chrono-2016-v3-ft",
+  "slug": "jjjlimaus-chrono-2016-v3-ft",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/chrono-2016-v3-ft",
+  "created_at": "2026-08-15T17:52:53.000Z",
+  "updated_at": "2026-08-15T18:45:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "text-generation",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 56518640472,
+  "storage_human": "56.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus/chrono2016-diverse-rule-pipeline - Hugging Face",
+      "url": "https://huggingface.co/datasets/jjjlimaus/chrono2016-diverse-rule-pipeline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jjjlimaus/chrono2016-prompt-phrase-1b · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/jjjlimaus/chrono2016-prompt-phrase-1b",
+      "snippet": "Unlike jjjlimaus/chrono2016-diverse-rule-pipeline (~223M prompt+phrase tokens plus large metadata/corpus layers), this release keeps only fields used for completion training and scales to ≥1B tokens."
+    },
+    {
+      "title": "GitHub - thzll2001/Kronos-ai: Kronos: A Foundation Model for the ...",
+      "url": "https://github.com/thzll2001/Kronos-ai",
+      "snippet": "Kronos is the first open-source foundation model for financial candlesticks (K-lines), trained on data from over 45 global exchanges."
+    },
+    {
+      "title": "GitHub - amazon-science/chronos-forecasting: Chronos: Pretrained Models ...",
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "snippet": "This package provides an interface to the Chronos family of pretrained time series forecasting models. The following model types are supported. Chronos-2: Our latest model with significantly enhanced capabilities. It offers zero-shot support for univariate, multivariate, and covariate-informed forecasting tasks. Chronos-2 delivers state-of-the-art zero-shot performance across multiple ..."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

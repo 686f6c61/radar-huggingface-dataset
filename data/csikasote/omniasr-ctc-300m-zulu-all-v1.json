@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "csikasote/omniASR-CTC-300m-Zulu-All-v1",
+  "slug": "csikasote-omniasr-ctc-300m-zulu-all-v1",
+  "author": "csikasote",
+  "url": "https://huggingface.co/csikasote/omniASR-CTC-300m-Zulu-All-v1",
+  "created_at": "2026-08-17T17:16:53.000Z",
+  "updated_at": "2026-08-17T17:17:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fairseq2",
+  "languages": [
+    "zu"
+  ],
+  "tags": [
+    "fairseq2",
+    "automatic-speech-recognition",
+    "omnilingual-asr",
+    "ctc",
+    "isiZulu",
+    "zulu",
+    "zu",
+    "base_model:facebook/omniASR-CTC-300M",
+    "base_model:finetune:facebook/omniASR-CTC-300M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1304181450,
+  "storage_human": "1.3 GB",
+  "base_model": "facebook/omniASR-CTC-300M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "csikasote/omniASR-CTC-300m-v2-Zulu · Hugging Face",
+      "url": "https://huggingface.co/csikasote/omniASR-CTC-300m-v2-Zulu",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "uctnlp/omniASR-CTC-300m-v2-Zulu · Hugging Face",
+      "url": "https://huggingface.co/uctnlp/omniASR-CTC-300m-v2-Zulu",
+      "snippet": "Model details Repository: csikasote/omniASR-CTC-300m-v2-Zulu Framework: fairseq2 Base model: facebook/omniASR-CTC-300M Language: isiZulu (zul_Latn) Best checkpoint: step 38,500 Best validation WER: 27.2518 Final training step: 40,000 Final validation WER: 27.3033"
+    },
+    {
+      "title": "CTC Models (Fast ASR) | facebookresearch/omnilingual-asr | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr)",
+      "snippet": "This page documents the CTC (Connectionist Temporal Classification) model family in the omnilingual-asr system. CTC models provide fast, efficient automatic speech recognition suitable for real-time a"
+    },
+    {
+      "title": "csikasote (Claytone Sikasote) · GitHub",
+      "url": "https://github.com/csikasote",
+      "snippet": "I am enthusiastic about low-resource speech and language processing for Zambian languages. - csikasote"
+    },
+    {
+      "title": "omnilingual-asr/src/omnilingual_asr/cards/README.md at main ... - GitHub",
+      "url": "https://github.com/facebookresearch/omnilingual-asr/blob/main/src/omnilingual_asr/cards/README.md",
+      "snippet": "fairseq2 manages models, tokenizers, and datasets as assets defined in YAML files with these key fields: For example, a model definition has the following parameters:"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Darkhn-DragonHoard/G4-31B-Loki-V2.0-Swa-2048-4096",
+  "slug": "darkhn-dragonhoard-g4-31b-loki-v2-0-swa-2048-4096",
+  "author": "Darkhn-DragonHoard",
+  "url": "https://huggingface.co/Darkhn-DragonHoard/G4-31B-Loki-V2.0-Swa-2048-4096",
+  "created_at": "2026-08-15T19:10:01.000Z",
+  "updated_at": "2026-08-17T12:17:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gemma4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29280711982,
+  "storage_human": "29.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darkhn-DragonHoard/Gemma-4-31B-Animus-V14.0-Lora · Hugging Face",
+      "url": "https://huggingface.co/Darkhn-DragonHoard/Gemma-4-31B-Animus-V14.0-Lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Darkhn-DragonHoard/Gemma-4-31B-Animus-V14.0-Lora at main",
+      "url": "https://huggingface.co/Darkhn-DragonHoard/Gemma-4-31B-Animus-V14.0-Lora/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui_ai/gemma-4-abliterated:31b-v2/model - ollama.com",
+      "url": "https://ollama.com/huihui_ai/gemma-4-abliterated:31b-v2/blobs/9d6e844f4a85",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    },
+    {
+      "title": "Gemma 4 31B DECKARD HERETIC Uncensored NVFP4 - GitHub",
+      "url": "https://github.com/AEON-7/Gemma-4-31B-DECKARD-HERETIC-Uncensored-NVFP4",
+      "snippet": "NVFP4-quantized version of DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking — a dense 31B uncensored Gemma 4 model with thinking/reasoning capabilities. Quantized using NVIDIA ModelOpt 0.42.0 on a native B200 GPU (Blackwell SM 12.0) with two advanced quantization techniques for maximum fidelity at 4-bit precision. Optimized for deployment on NVIDIA DGX Spark (GB10, SM 12.1) and ..."
+    }
+  ]
+}

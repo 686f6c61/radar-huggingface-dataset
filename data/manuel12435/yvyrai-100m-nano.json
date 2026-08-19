@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Manuel12435/YvyrAI-100m-Nano",
+  "slug": "manuel12435-yvyrai-100m-nano",
+  "author": "Manuel12435",
+  "url": "https://huggingface.co/Manuel12435/YvyrAI-100m-Nano",
+  "created_at": "2026-08-16T12:59:57.000Z",
+  "updated_at": "2026-08-16T21:42:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "spanish",
+    "espanol",
+    "from-scratch",
+    "recurrent-depth",
+    "paraguay",
+    "text-generation",
+    "es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 105859139,
+  "parameters_human": "105.9M",
+  "storage_bytes": 846906376,
+  "storage_human": "847 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

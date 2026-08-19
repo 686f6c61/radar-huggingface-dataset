@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SofaP/HR-Bot_ProximaLogistics",
+  "slug": "sofap-hr-bot_proximalogistics",
+  "author": "SofaP",
+  "url": "https://huggingface.co/SofaP/HR-Bot_ProximaLogistics",
+  "created_at": "2026-08-18T13:01:38.000Z",
+  "updated_at": "2026-08-18T13:01:38.000Z",
+  "license": "mpl-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI in SAP SuccessFactors (2026): The Practical Imp... - SAP Community",
+      "url": "https://community.sap.com/t5/human-capital-management-blog-posts-by-members/ai-in-sap-successfactors-2026-the-practical-implementation-blueprint/ba-p/14302775",
+      "snippet": "Implementing AI in SAP SuccessFactors in 2026: A Practical, Customer-Ready Roadmap From Strategy → Activation → Adoption → Scale Key Takeaways (Please take a moment to read this first) AI in SuccessFactors is not one switch. Treat it as Joule + embedded module AI + (optionally) Joule Studio extens..."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "AI in Logistics & Supply Chain — Complete 2026 Guide",
+      "url": "https://thinking.inc/en/industry-service/ai-in-logistics/",
+      "snippet": "Guide to AI in logistics and supply chain. Use cases, ROI data, governance, readiness assessment, and adoption roadmap for freight and 3PL."
+    }
+  ]
+}

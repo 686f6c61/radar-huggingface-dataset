@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "qadeesanoor/code-switching-codesaviours-si26-qadeesa",
+  "slug": "qadeesanoor-code-switching-codesaviours-si26-qadeesa",
+  "author": "qadeesanoor",
+  "url": "https://huggingface.co/qadeesanoor/code-switching-codesaviours-si26-qadeesa",
+  "created_at": "2026-08-14T09:27:09.000Z",
+  "updated_at": "2026-08-14T09:28:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126943684,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

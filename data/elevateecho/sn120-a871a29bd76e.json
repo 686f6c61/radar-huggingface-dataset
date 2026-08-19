@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "elevateecho/sn120-a871a29bd76e",
+  "slug": "elevateecho-sn120-a871a29bd76e",
+  "author": "elevateecho",
+  "url": "https://huggingface.co/elevateecho/sn120-a871a29bd76e",
+  "created_at": "2026-08-16T08:40:22.000Z",
+  "updated_at": "2026-08-16T08:47:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483475,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elevateecho (elevateecho) - Hugging Face",
+      "url": "https://huggingface.co/elevateecho",
+      "snippet": "Sort: Recently updated. elevateecho/sn120-c77c26f6254d. 35B • Updated 29 minutes ago. elevateecho/sn120-0d40d787788c. 35B • Updated about 1 hour ago"
+    },
+    {
+      "title": "elevateecho/sn120-abe89194d6ad · Hugging Face",
+      "url": "https://huggingface.co/elevateecho/sn120-abe89194d6ad",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "sn120-27e2f083b355 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/elevateecho/sn120-27e2f083b355",
+      "snippet": "Deploy sn120-27e2f083b355 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

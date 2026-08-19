@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "williamdgomez/act_so101_golden_model",
+  "slug": "williamdgomez-act_so101_golden_model",
+  "author": "williamdgomez",
+  "url": "https://huggingface.co/williamdgomez/act_so101_golden_model",
+  "created_at": "2026-08-18T03:02:31.000Z",
+  "updated_at": "2026-08-18T03:02:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:williamdgomez/so101_Golden_Model",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707280,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jgreeley/act_so101_golden_model · Hugging Face",
+      "url": "https://huggingface.co/jgreeley/act_so101_golden_model",
+      "snippet": "Instructions to use jgreeley/act_so101_golden_model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use jgreeley/act_so101_golden_model with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the ..."
+    },
+    {
+      "title": "jgreeley/so101_golden_model_data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/jgreeley/so101_golden_model_data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kimi K3 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/kimi-3",
+      "snippet": "Kimi K3 by Moonshot AI ranks #5 of 218 with a public score of 80.5/100. Evidence: Supported; this profile shows 44 source-displayable benchmark rows."
+    },
+    {
+      "title": "lerobot/src/lerobot at main · huggingface/lerobot · GitHub",
+      "url": "https://github.com/huggingface/lerobot/tree/main/src/lerobot",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - lerobot/src/lerobot at main · huggingface/lerobot"
+    },
+    {
+      "title": "How It Works: The AI Behind the Robot - GitHub",
+      "url": "https://github.com/fanaustinca/so101ai",
+      "snippet": "Guide to training Lerobot Arm SO -101 (ACT model). Contribute to fanaustinca/so101ai development by creating an account on GitHub."
+    }
+  ]
+}

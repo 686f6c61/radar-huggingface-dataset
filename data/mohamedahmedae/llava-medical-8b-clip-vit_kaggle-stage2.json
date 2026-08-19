@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "MohamedAhmedAE/llava-medical-8B-clip-vit_kaggle-stage2",
+  "slug": "mohamedahmedae-llava-medical-8b-clip-vit_kaggle-stage2",
+  "author": "MohamedAhmedAE",
+  "url": "https://huggingface.co/MohamedAhmedAE/llava-medical-8B-clip-vit_kaggle-stage2",
+  "created_at": "2026-07-27T06:49:25.000Z",
+  "updated_at": "2026-08-18T09:58:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1571,
+  "trending_score": 0,
+  "parameters": 188751872,
+  "parameters_human": "188.8M",
+  "storage_bytes": 720823972051,
+  "storage_human": "720.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

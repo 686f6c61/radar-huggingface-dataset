@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "hemlang/Hemlock-Qwen3.8-27B",
+  "slug": "hemlang-hemlock-qwen3-8-27b",
+  "author": "hemlang",
+  "url": "https://huggingface.co/hemlang/Hemlock-Qwen3.8-27B",
+  "created_at": "2026-08-19T00:53:51.000Z",
+  "updated_at": "2026-08-19T00:58:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "hemlock",
+    "code",
+    "merge",
+    "vision",
+    "conversational",
+    "dataset:hemlang/Hemlock-SFT-combined",
+    "base_model:DragonBophades/WichtelHui-Qwen3.8-27B-SLERP",
+    "base_model:merge:DragonBophades/WichtelHui-Qwen3.8-27B-SLERP",
+    "base_model:hemlang/Hemlock-Qwen3.8-27B-LoRA",
+    "base_model:merge:hemlang/Hemlock-Qwen3.8-27B-LoRA",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582995831,
+  "storage_human": "55.6 GB",
+  "base_model": "DragonBophades/WichtelHui-Qwen3.8-27B-SLERP, hemlang/Hemlock-Qwen3.8-27B-LoRA",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hemlang/Hemlock-Qwen3.8-27B-LoRA-step286 · Hugging Face",
+      "url": "https://huggingface.co/hemlang/Hemlock-Qwen3.8-27B-LoRA-step286",
+      "snippet": "Instructions to use hemlang/Hemlock-Qwen3.8-27B-LoRA-step286 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use hemlang/Hemlock-Qwen3.8-27B-LoRA-step286 with Transformers:"
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "hemlang/Hemlock-Qwen3.8-27B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/hemlang/Hemlock-Qwen3.8-27B-LoRA",
+      "snippet": "Hemlock-Qwen3.8-27B-LoRA Training Configuration ... Reproduce this training run This model was trained with Merlina. Credentials are not included — Merlina will use your own HF_TOKEN and WANDB_API_KEY from .env or the form. Paste this code into Merlina&#x27;s Load Configuration → From Code to rebuild the exact training setup: ... Prefer JSON?"
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "Qwen3.8-27B: Video-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-qwen",
+      "snippet": "Overview Qwen3.8-27B is a 27-billion-parameter dense language model with integrated vision capabilities, built by Qwen on the architectural foundation of Qwen3.5. This causal language model with vision encoder supports native image and video understanding, making it suitable for multimodal reasoning tasks that require understanding both textual and visual information. The model has 64 layers ..."
+    }
+  ]
+}

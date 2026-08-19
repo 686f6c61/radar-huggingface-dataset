@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen-Image-Edit-2511",
+  "slug": "qwen-qwen-image-edit-2511",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+  "created_at": "2025-12-17T05:55:58.000Z",
+  "updated_at": "2025-12-23T13:13:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 1284,
+  "downloads_30d": 238214,
+  "trending_score": 13,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710671694,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen-Image-Edit-2511 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-Edit - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511 · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen-Image-Edit-2511",
+      "snippet": "Showcase Qwen-Image-Edit-2511 Enhances Character Consistency In Qwen-Image-Edit-2511, character consistency has been significantly improved. The model can perform imaginative edits based on an input portrait while preserving the identity and visual characteristics of the subject. Improved Multi-Person Consistency While Qwen-Image-Edit-2509 already improved consistency for single-subject ..."
+    },
+    {
+      "title": "qwen-image-edit-2511 · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/qwen-image-edit-2511",
+      "snippet": "Experimental demonstration for the Qwen/Qwen-Image-Edit-2511 model with lazy-loaded LoRA adapters supporting multi-image input editing. Users can upload one or more images (gallery format) and apply advanced edits such as pose transfer, anime conversion, or camera angle changes via natural language prompts. Features integrated Rerun SDK."
+    },
+    {
+      "title": "Qwen-Image-Edit 2511 - FP8 | Qwen Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2247803/qwen-image-edit-2511",
+      "snippet": "The 2509 Workflow and LightX2v 8 Steps LoRA are compatible with this version. LoRA: Qwen-Image-Edit-2511-Lightning-4steps-V1.-bf16 | 850MB LoRA: Qwen-Image-Edit-2511-Lightning-4steps-V1.-fp32 | 1.7GB BF16 on 10GB VRAM + 64GB RAM: Workflow in the zip file. First, install SageAttention and Triton for your Python environment. ( look for compatible precompiled wheels ) Online Demo | HF | GH ..."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ionic22/Llama-3.2-3B-ascii-cats-lora-q4_k_m-GGUF",
+  "slug": "ionic22-llama-3-2-3b-ascii-cats-lora-q4_k_m-gguf",
+  "author": "ionic22",
+  "url": "https://huggingface.co/ionic22/Llama-3.2-3B-ascii-cats-lora-q4_k_m-GGUF",
+  "created_at": "2026-08-17T15:03:21.000Z",
+  "updated_at": "2026-08-17T15:17:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 4038747136,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

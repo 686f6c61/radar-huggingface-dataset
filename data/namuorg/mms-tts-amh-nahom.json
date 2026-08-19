@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Namuorg/mms-tts-amh-nahom",
+  "slug": "namuorg-mms-tts-amh-nahom",
+  "author": "Namuorg",
+  "url": "https://huggingface.co/Namuorg/mms-tts-amh-nahom",
+  "created_at": "2026-08-18T07:28:30.000Z",
+  "updated_at": "2026-08-18T07:28:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83012790,
+  "parameters_human": "83.0M",
+  "storage_bytes": 332153032,
+  "storage_human": "332 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Namuai-org/namu-tts-amharic-tts-internship · GitHub",
+      "url": "https://github.com/Namuai-org/namu-tts-amharic-tts-internship",
+      "snippet": "We fine-tune facebook/mms-tts-amh — an 83M-parameter VITS model that already speaks Amharic, badly — on a cleaned single-speaker Amharic corpus, using ylacombe/finetune-hf-vits."
+    },
+    {
+      "title": "facebook/mms-tts · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "namu-tts-amharic-tts-internship/README.md at main · Namuai-org/namu-tts ...",
+      "url": "https://github.com/Namuai-org/namu-tts-amharic-tts-internship/blob/main/README.md",
+      "snippet": "We fine-tune facebook/mms-tts-amh — an 83M-parameter VITS model that already speaks Amharic, badly — on a cleaned single-speaker Amharic corpus, using ylacombe/finetune-hf-vits."
+    },
+    {
+      "title": "Namuorg (Namu) - Hugging Face",
+      "url": "https://huggingface.co/Namuorg/models",
+      "snippet": "Org profile for Namu on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "mms-tts-amh Open-Source Text-to-Speech Model - Free High-Quality ...",
+      "url": "https://model.aibase.com/models/details/1915693318811574274",
+      "snippet": "The model is licensed as CC-BY-NC 4.0. 📚 Documentation This model was developed by Vineel Pratap et al. from Meta AI. If you use the model, consider citing the MMS paper: ... VoxCPM is an innovative tokenizer-free end-to-end text-to-speech (TTS) system that overcomes the limitations of discrete tokenization by modeling speech in a continuous ..."
+    }
+  ]
+}

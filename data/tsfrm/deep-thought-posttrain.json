@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "tsfrm/Deep-Thought-Posttrain",
+  "slug": "tsfrm-deep-thought-posttrain",
+  "author": "tsfrm",
+  "url": "https://huggingface.co/tsfrm/Deep-Thought-Posttrain",
+  "created_at": "2026-08-16T02:57:34.000Z",
+  "updated_at": "2026-08-17T00:16:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "reasoning",
+    "always-42",
+    "deep-thought",
+    "hitchhikers-guide",
+    "dont-panic",
+    "douglas-adams",
+    "cot",
+    "ollama",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 581,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 2172903456,
+  "storage_human": "2.2 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PostTrainBench",
+      "url": "https://posttrainbench.com/",
+      "snippet": "Independent contamination, API-usage, and PostTrainBench-lookup reviews audit each run; programmatic checks verify model identity, and flagged runs receive the base-model score."
+    },
+    {
+      "title": "&#x27;Inner Thoughts&#x27; of Every Major AI Model Exposed in Massive ... - Decrypt",
+      "url": "https://decrypt.co/375501/inner-thoughts-every-major-ai-model-exposed-exploit",
+      "snippet": "Security researchers have found a way to read the encrypted \"inner thoughts\" of every major AI reasoning model—and uncovered 62 live API keys and 33 passwords buried in session logs that developers had shared publicly online without knowing what was inside them. \"By decoding 315,320 reasoning blocks scraped from public repositories, we recovered 367 Personally Identifiable Information (PII ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "[2607.20002] Post-Training in Time Series Foundation Models: A Unifying ...",
+      "url": "https://arxiv.org/abs/2607.20002",
+      "snippet": "Time series foundation models (TSFMs) have emerged as general-purpose models for time series analysis, but pretraining alone is often insufficient for reliable downstream deployment. Bridging this gap requires further intervention to handle domain shift, task heterogeneity, limited supervision, and computational constraints, which motivates post-training as a broad class of methods to adapt ..."
+    },
+    {
+      "title": "LLM Post-Training: A Deep Dive into Reasoning",
+      "url": "https://arxiv.org/html/2502.21321v2",
+      "snippet": "This direct feedback loop ensures that training aligns with the desired evaluation criteria rather than just maximizing likelihood. By leveraging the model&#x27;s own best predictions as a baseline, SCST effectively reduces variance and stabilizes training while optimizing real-world performance metrics."
+    }
+  ]
+}

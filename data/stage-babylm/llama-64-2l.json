@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "stage-babylm/llama-64-2L",
+  "slug": "stage-babylm-llama-64-2l",
+  "author": "stage-babylm",
+  "url": "https://huggingface.co/stage-babylm/llama-64-2L",
+  "created_at": "2026-08-11T04:02:20.000Z",
+  "updated_at": "2026-08-17T20:22:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 605,
+  "trending_score": 0,
+  "parameters": 226496,
+  "parameters_human": "226496",
+  "storage_bytes": 148601364,
+  "storage_human": "149 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stage-babylm/llama-64-2L · Hugging Face",
+      "url": "https://huggingface.co/stage-babylm/llama-64-2L",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama-64-2L API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/stage-babylm/llama-64-2L",
+      "snippet": "Run llama-64-2L with FriendliAI inference. This model is a fine-tuned version of on an unknown dataset. It achieves the following results on the evaluation set."
+    },
+    {
+      "title": "stage-babylm/llama-64-8L at main - Hugging Face",
+      "url": "https://huggingface.co/stage-babylm/llama-64-8L/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    },
+    {
+      "title": "llama/MODEL_CARD.md at main · meta-llama/llama · GitHub",
+      "url": "https://github.com/Meta-Llama/llama/blob/main/MODEL_CARD.md",
+      "snippet": "Model Details Meta developed and released the Llama 2 family of large language models (LLMs), a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. Our fine-tuned LLMs, called Llama-2-Chat, are optimized for dialogue use cases."
+    }
+  ]
+}

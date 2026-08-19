@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "oku006/bussing-whiteboard-act",
+  "slug": "oku006-bussing-whiteboard-act",
+  "author": "oku006",
+  "url": "https://huggingface.co/oku006/bussing-whiteboard-act",
+  "created_at": "2026-08-10T11:52:45.000Z",
+  "updated_at": "2026-08-18T11:45:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bussing_act",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 142279304,
+  "parameters_human": "142.3M",
+  "storage_bytes": 1707536552,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oku006/bussing-whiteboard-act · Hugging Face",
+      "url": "https://huggingface.co/oku006/bussing-whiteboard-act",
+      "snippet": "INSAIT whiteboard policy — bussing task (joint velocity) The custom Action Chunking Transformer built in the INSAIT whiteboard project, fine-tuned on Sombit/bussing_task_new. This is not LeRobot&#x27;s stock ACT — it is a different architecture (see below)."
+    },
+    {
+      "title": "oku006/bussing-act · Hugging Face",
+      "url": "https://huggingface.co/oku006/bussing-act",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Directory — 625 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai — 625 models organized by provider, covering chat, image, video, voice, code, and more. Free daily tokens on every account."
+    },
+    {
+      "title": "oku006/bussing-whiteboard-act-gripper · Hugging Face",
+      "url": "https://huggingface.co/oku006/bussing-whiteboard-act-gripper",
+      "snippet": "INSAIT whiteboard policy — gripper-weighted variant A variant of oku006/bussing-whiteboard-act, not a separate model. Same architecture, same data, one training change: the gripper channel is normalized alongside the seven velocity channels instead of being left raw."
+    },
+    {
+      "title": "oku006 (Orhan Kaan UYANIK) - Hugging Face",
+      "url": "https://huggingface.co/oku006",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 5 hours ago ... updated a model about 6 hours ago"
+    }
+  ]
+}

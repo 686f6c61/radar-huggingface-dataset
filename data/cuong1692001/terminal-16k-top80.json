@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cuong1692001/Terminal-16k-top80",
+  "slug": "cuong1692001-terminal-16k-top80",
+  "author": "cuong1692001",
+  "url": "https://huggingface.co/cuong1692001/Terminal-16k-top80",
+  "created_at": "2026-08-18T04:48:08.000Z",
+  "updated_at": "2026-08-18T04:55:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:cuong1692001/Terminal_complete_8k",
+    "base_model:finetune:cuong1692001/Terminal_complete_8k",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 229353918093,
+  "storage_human": "229.4 GB",
+  "base_model": "cuong1692001/Terminal_complete_8k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cuong1692001 (Dang Cao Cuong) - Hugging Face",
+      "url": "https://huggingface.co/cuong1692001/models",
+      "snippet": "User profile of Dang Cao Cuong on Hugging Face"
+    },
+    {
+      "title": "cuong1692001/Terminal-data_processing · Hugging Face",
+      "url": "https://huggingface.co/cuong1692001/Terminal-data_processing",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Terminal Terminal Traj by cuong1692001 — VRAM 16.4GB, 40K context | LLM ...",
+      "url": "https://llm-explorer.com/model/cuong1692001%2FTerminal-terminal_traj,5F1qPZyT8evDkDY7CWjoOw",
+      "snippet": "Terminal Terminal Traj is an open-source 8b LLM by cuong1692001. VRAM 16.4GB, 40K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "cuong1692001/Terminal-data_science API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/cuong1692001/Terminal-data_science",
+      "snippet": "Run cuong1692001/Terminal-data_science with FriendliAI inference. This model is a fine-tuned version of Qwen/Qwen3-8B on the nemotroneasydatascience, the…"
+    },
+    {
+      "title": "Terminal-qwen-data-science-trajs-long - FriendliAI",
+      "url": "https://friendli.ai/models/cuong1692001/Terminal-qwen-data-science-trajs-long",
+      "snippet": "Run Terminal-qwen-data-science-trajs-long with FriendliAI inference. This model is a fine-tuned version of cuong1692001/Terminal-terminaltraj on the…"
+    }
+  ]
+}

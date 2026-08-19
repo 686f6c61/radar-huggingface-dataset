@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-int8-onnx",
+  "slug": "ketiswp-mediapipe-efficientnet-lite0-imagenet-224-int8-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-int8-onnx",
+  "created_at": "2026-08-19T01:58:19.000Z",
+  "updated_at": "2026-08-19T02:11:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int8",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5148096,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image classification task guide | Google AI Edge - Google Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/image_classifier/index",
+      "snippet": "Attention: This MediaPipe Solutions Preview is an early release. Learn more. EfficientNet-Lite0 model (recommended) The EfficientNet-Lite0 model uses an EfficientNet architecture and was trained using ImageNet to recognize 1,000 classes, such as trees, animals, food, vehicles, person etc. See the full list of supported labels."
+    },
+    {
+      "title": "Image classification task guide | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.cn/edge/mediapipe/solutions/vision/image_classifier",
+      "snippet": "EfficientNet-Lite0 model (recommended) The EfficientNet-Lite0 model uses an EfficientNet architecture and was trained using ImageNet to recognize 1,000 classes, such as trees, animals, food, vehicles, person etc. See the full list of supported labels. EfficientNet-Lite0 is available as an int8 and float 32 model."
+    },
+    {
+      "title": "GitHub - google-ai-edge/mediapipe: Cross-platform, customizable ML ...",
+      "url": "https://github.com/google-ai-edge/mediapipe",
+      "snippet": "Solutions MediaPipe Solutions provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in your applications. You can plug these solutions into your applications immediately, customize them to your needs, and use them across multiple development platforms."
+    },
+    {
+      "title": "MediaPipe Solutions guide | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/guide",
+      "snippet": "MediaPipe Solutions provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in your applications. You can plug these solutions into your applications immediately, customize them to your needs, and use them across multiple development platforms."
+    },
+    {
+      "title": "tpu/models/official/efficientnet/lite/README.md at master - GitHub",
+      "url": "https://github.com/tensorflow/tpu/blob/master/models/official/efficientnet/lite/README.md",
+      "snippet": "EfficientNet-lite are a set of mobile/IoT friendly image classification models. Notably, while EfficientNet-EdgeTPU that is specialized for Coral EdgeTPU, these EfficientNet-lite models run well on all mobile CPU/GPU/EdgeTPU."
+    }
+  ]
+}

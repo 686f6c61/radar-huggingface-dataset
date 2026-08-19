@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Aimen20/whisper-tiny-urdu-translation",
+  "slug": "aimen20-whisper-tiny-urdu-translation",
+  "author": "Aimen20",
+  "url": "https://huggingface.co/Aimen20/whisper-tiny-urdu-translation",
+  "created_at": "2026-08-08T20:34:45.000Z",
+  "updated_at": "2026-08-15T15:10:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:openai/whisper-tiny",
+    "base_model:adapter:openai/whisper-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 664134610,
+  "storage_human": "664 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

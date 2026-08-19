@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "peterachua/xbd-s12-sut-wrapper",
+  "slug": "peterachua-xbd-s12-sut-wrapper",
+  "author": "peterachua",
+  "url": "https://huggingface.co/peterachua/xbd-s12-sut-wrapper",
+  "created_at": "2026-08-17T13:05:10.000Z",
+  "updated_at": "2026-08-17T13:37:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "building-damage-assessment",
+    "sentinel-1",
+    "sentinel-2",
+    "remote-sensing",
+    "custom-handler",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - prs-eth/xbd-s12: xBD-S12: Building damage assessment from ...",
+      "url": "https://github.com/prs-eth/xbd-s12",
+      "snippet": "This repository contains the offical code and dataset for the paper \"The Potential of Copernicus Satellites for Disaster Response: Retrieving Building Damage from Sentinel-1 and Sentinel-2\". The dataset, referred to as xBD-S12, is derived from the original xBD dataset and includes co-registered Sentinel-1 and Sentinel-2 imagery."
+    },
+    {
+      "title": "xBD-S12 dataset - Zenodo",
+      "url": "https://zenodo.org/records/18960454",
+      "snippet": "This repository contains the xBD-S12 dataset introduced in the paper: The Potential of Copernicus Satellites for Disaster Response: Retrieving Building Damage from Sentinel-1 and Sentinel-2."
+    },
+    {
+      "title": "The Potential of Copernicus Satellites for Disaster Response:",
+      "url": "https://arxiv.org/html/2511.05461v1",
+      "snippet": "To test generalization to real-world examples outside of xBD-S12, we apply our trained U-Net model to the 2025 Palisades wildfire, a large recent event that occurred in January 2025 in the western suburbs of Los Angeles."
+    },
+    {
+      "title": "xbd-s12/src/models/factory.py at main · prs-eth/xbd-s12 · GitHub",
+      "url": "https://github.com/prs-eth/xbd-s12/blob/main/src/models/factory.py",
+      "snippet": "xBD-S12: Building damage assessment from Copernicus Sentinel-1 and Sentinel-2 satellite imagery. - prs-eth/xbd-s12"
+    },
+    {
+      "title": "[2511.05461] The Potential of Copernicus Satellites for Disaster ...",
+      "url": "https://arxiv.org/abs/2511.05461",
+      "snippet": "Natural disasters demand rapid damage assessment to guide humanitarian response. Here, we investigate whether medium-resolution Earth observation images from the Copernicus program can support building damage assessment, complementing very-high resolution imagery with often limited availability. We introduce xBD-S12, a dataset of 10,315 pre- and post-disaster image pairs from both Sentinel-1 ..."
+    }
+  ]
+}

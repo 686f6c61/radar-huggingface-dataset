@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ssurface/cot-dialect-olmo3-7b-think-conditioned-sft",
+  "slug": "ssurface-cot-dialect-olmo3-7b-think-conditioned-sft",
+  "author": "ssurface",
+  "url": "https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-conditioned-sft",
+  "created_at": "2026-08-18T20:44:46.000Z",
+  "updated_at": "2026-08-18T21:37:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "chain-of-thought",
+    "compression",
+    "gsm8k",
+    "conditioning",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:allenai/Olmo-3-7B-Think",
+    "base_model:adapter:allenai/Olmo-3-7B-Think",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159967880,
+  "storage_human": "160 MB",
+  "base_model": "allenai/Olmo-3-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/Olmo-3-7B-Think-SFT · Hugging Face",
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Think-SFT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cot-dialect-olmo3-7b-think-grpo-l3 - FriendliAI",
+      "url": "https://friendli.ai/models/ssurface/cot-dialect-olmo3-7b-think-grpo-l3",
+      "snippet": "Deploy cot-dialect-olmo3-7b-think-grpo-l3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "allenai/Olmo-3-7B-Think · Hugging Face",
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Think",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olmo 3 7B Think SFT by allenai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/allenai%2FOlmo-3-7B-Think-SFT,659GWIGO8KF4Xvodk096vl",
+      "snippet": "Olmo 3 7B Think SFT is an open-source 7b LLM by allenai. VRAM 14.6GB, 64K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Olmo 3 7B Think — ThinkLLM",
+      "url": "https://thinkllm.dev/models/olmo-3-7b-think",
+      "snippet": "Olmo 3 7B Think is a reasoning-focused model that works through problems step by step before committing to an answer, making its thought process visible and traceable. At 7 billion parameters, it punches with deliberate care rather than raw scale, favoring structured internal reasoning over quick responses. Its open-weight nature means the full model is inspectable and modifiable, though users ..."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "qtum/DeepSeek-V4-Pro-0813-GGUF",
+  "slug": "qtum-deepseek-v4-pro-0813-gguf",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/DeepSeek-V4-Pro-0813-GGUF",
+  "created_at": "2026-08-17T11:39:43.000Z",
+  "updated_at": "2026-08-17T21:22:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "deepseek_v4",
+    "imatrix",
+    "moe",
+    "qtum",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Pro-0813",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Pro-0813",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1572999528803,
+  "parameters_human": "1573.00B",
+  "storage_bytes": 711084274336,
+  "storage_human": "711.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/DeepSeek-V4-Pro-0813-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Pro-0813-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai.DeepSeek-V4-Pro-0813-GGUF - Hugging Face",
+      "url": "https://huggingface.co/DevQuasar/deepseek-ai.DeepSeek-V4-Pro-0813-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4-Pro-0813-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/deepseek-v4-pro-0813-gguf-unsloth",
+      "snippet": "DeepSeek-V4-Pro-0813 by DeepSeek-AI is the original model without Unsloth&#x27;s GGUF quantization. Use the Unsloth version if you want to run locally with GGUF quantization and superior quantization quality."
+    },
+    {
+      "title": "DeepSeek V4 Pro 0813 | Dell Enterprise Hub by Hugging Face",
+      "url": "https://dell.huggingface.co/models/deepseek-ai/DeepSeek-V4-Pro-0813",
+      "snippet": "Introduction DeepSeek-V4-Pro-0813 is the official release of DeepSeek-V4-Pro, superseding the preview version, with greatly enhanced agentic capabilities and performance improvements that are especially pronounced in production environments. It is built on the DeepSeek-V4-Pro (Preview) model structure, with a DSpark speculative decoding module attached."
+    },
+    {
+      "title": "DeepSeek V4 Pro 0813 - GitHub",
+      "url": "https://github.com/deepseek-v4-pro-0813/deepseek-v4-pro-0813/tree/main",
+      "snippet": "Deepseek v4 pro 0813 benchmark - how does it score? Deepseek v4 pro 0813 benchmark results top the open-weight charts on HumanEval, MBPP, MATH and long-context retrieval, sitting near GPT-5.6 and Claude Mythos 5 class models."
+    }
+  ]
+}

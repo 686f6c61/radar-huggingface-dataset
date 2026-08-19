@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ayan4m1/Granite-4.1-8B-E2E-Tests",
+  "slug": "ayan4m1-granite-4-1-8b-e2e-tests",
+  "author": "ayan4m1",
+  "url": "https://huggingface.co/ayan4m1/Granite-4.1-8B-E2E-Tests",
+  "created_at": "2026-08-18T09:18:34.000Z",
+  "updated_at": "2026-08-18T09:18:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.1 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-1",
+      "snippet": "Granite 4.1 Dense language model family in 3B, 8B, and 30B sizes with instruction-tuned variants, delivering improved tool calling, instruction following, coding, and mathematical reasoning."
+    },
+    {
+      "title": "granite-4.1-language-models/README.md at main - GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.1-language-models/blob/main/README.md",
+      "snippet": "Overview Granite 4.1 language models are a family of state-of-the-art open foundation models featuring dense decoder-only architectures in three sizes — 3B, 8B, and 30B. They natively support multilingual capabilities, a wide range of coding tasks, retrieval-augmented generation (RAG), tool usage, and structured JSON output."
+    },
+    {
+      "title": "unsloth/granite-4.1-8b · Hugging Face",
+      "url": "https://huggingface.co/unsloth/granite-4.1-8b",
+      "snippet": "Model Summary: Granite-4.1-8B is a 8B parameter long-context instruct model finetuned from Granite-4.1-8B-Base using a combination of open source instruction datasets with permissive license and internally collected synthetic datasets. Granite 4.1 models have gone through an improved post-training pipeline, including supervised finetuning and reinforcement learning alignment, resulting in ..."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "Granite models drive the AI behind many IBM products and services. Discover ready-to-use solutions for code generation, application development, and model testing."
+    },
+    {
+      "title": "Introducing the IBM Granite 4.1 family of models",
+      "url": "https://research.ibm.com/blog/granite-4-1-ai-foundation-models",
+      "snippet": "The team found, for example, that the new Granite 4.1 8B instruct model consistently matches or outperforms the Granite 4.0 32B Mixture‑of‑Experts model, while using a simpler — and therefore more flexible — architecture for fine tuning for downstream tasks."
+    }
+  ]
+}

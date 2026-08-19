@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hmkang/wam_wan22_dit4dit_robocasa300_hwabl_3latin",
+  "slug": "hmkang-wam_wan22_dit4dit_robocasa300_hwabl_3latin",
+  "author": "hmkang",
+  "url": "https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_3latin",
+  "created_at": "2026-08-17T13:28:33.000Z",
+  "updated_at": "2026-08-17T13:40:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wam",
+    "dit4dit",
+    "world-model",
+    "robocasa",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62816749298,
+  "storage_human": "62.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hmkang/wam-dit4dit-robocasa-wan22-5latin2latout · Hugging Face",
+      "url": "https://huggingface.co/hmkang/wam-dit4dit-robocasa-wan22-5latin2latout",
+      "snippet": "Instructions to use hmkang/wam-dit4dit-robocasa-wan22-5latin2latout with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Mondo-Robotics/DiT4DiT: This is the official code repo for ...",
+      "url": "https://github.com/Mondo-Robotics/DiT4DiT",
+      "snippet": "1 Mondo Robotics 2 HKUST (GZ) 3 HKUST * Corresponding author DiT4DiT is a Vision-Action-Model (VAM) framework that combines video generation transformers with flow-matching-based action prediction for generalizable robotic manipulation. It supports both the tabletop and whole-body control for manipulation tasks."
+    },
+    {
+      "title": "DiT4DiT: Jointly Modeling Video Dynamics and Actions for Generalizable ...",
+      "url": "https://arxiv.org/html/2603.10448v1",
+      "snippet": "This section details DiT4DiT, an integrated Video-Action Model (VAM) designed for the joint optimization of Video and Action DiTs. By employing a dual flow-matching objective, our framework concurrently refines video synthesis and action prediction."
+    },
+    {
+      "title": "Wan AI: Leading AI Video Generation Model",
+      "url": "https://wan.video/",
+      "snippet": "Wan is an AI creative platform. It aims to lower the barrier to creative work using artificial intelligence, offering features like text-to-image, image-to-image, text-to-video, image-to-video, and image editing."
+    },
+    {
+      "title": "huiwon/wam_wan22_align_robocasa300_tf_s4 · Hugging Face",
+      "url": "https://huggingface.co/huiwon/wam_wan22_align_robocasa300_tf_s4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

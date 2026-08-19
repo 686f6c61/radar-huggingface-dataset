@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "oxide-lab/whisper-base-GGUF",
+  "slug": "oxide-lab-whisper-base-gguf",
+  "author": "oxide-lab",
+  "url": "https://huggingface.co/oxide-lab/whisper-base-GGUF",
+  "created_at": "2026-01-30T08:20:53.000Z",
+  "updated_at": "2026-08-17T12:18:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "multilingual",
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "whisper",
+    "quantized",
+    "speech-recognition",
+    "rust",
+    "candle",
+    "automatic-speech-recognition",
+    "multilingual",
+    "en",
+    "ru",
+    "arxiv:2212.04356",
+    "base_model:openai/whisper-base",
+    "base_model:quantized:openai/whisper-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 951,
+  "trending_score": 0,
+  "parameters": 72610000,
+  "parameters_human": "72.6M",
+  "storage_bytes": 694582060,
+  "storage_human": "695 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oxide-lab/whisper-base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/oxide-lab/whisper-base-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · oxide-lab/whisper-base-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/oxide-lab/whisper-base-GGUF/blob/main/README.md",
+      "snippet": "Follow Oxide Lab 11 Automatic Speech Recognition GGUF Rust multilingual English Russian whisper quantized speech-recognition candle arxiv:2212.04356 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main whisper-base-GGUF /README.md FerrisMind Update README.md 16db145 verified6 months ago preview code | Raw ..."
+    },
+    {
+      "title": "Oxide-Lab/src-tauri/whisper at main - GitHub",
+      "url": "https://github.com/oxide-lab/Oxide-Lab/tree/main/src-tauri/whisper",
+      "snippet": "Modern desktop application (Rust + Tauri v2 + Svelte 5 + Candle (HF)) for communicating with AI models that runs completely locally on your computer. No subscriptions, no data sent to the internet — just you and your personal AI assistant - Oxide-Lab/src-tauri/whisper at main · oxide-lab/Oxide-Lab"
+    },
+    {
+      "title": "oxide-lab/Oxide-Lab: Modern desktop application (Rust - GitHub",
+      "url": "https://github.com/oxide-lab/oxide-lab",
+      "snippet": "Oxide Lab is a native desktop application for running large language models locally. Built with Rust and Tauri v2, it provides a fast, private chat interface without requiring internet connectivity or external API services."
+    },
+    {
+      "title": "Model Details - MyGGUF",
+      "url": "https://mygguf.com/model?id=oxide-lab%2Fwhisper-base-GGUF",
+      "snippet": "GGUF model details and download"
+    }
+  ]
+}

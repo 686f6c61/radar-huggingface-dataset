@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "dare43321/hindi-tts-model-5",
+  "slug": "dare43321-hindi-tts-model-5",
+  "author": "dare43321",
+  "url": "https://huggingface.co/dare43321/hindi-tts-model-5",
+  "created_at": "2026-08-14T17:57:38.000Z",
+  "updated_at": "2026-08-14T18:01:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:kenpath/svara-tts-v1",
+    "base_model:finetune:kenpath/svara-tts-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 339,
+  "trending_score": 0,
+  "parameters": 3300867072,
+  "parameters_human": "3.30B",
+  "storage_bytes": 13226347034,
+  "storage_human": "13.2 GB",
+  "base_model": "kenpath/svara-tts-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

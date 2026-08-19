@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sjmeis/reddit-25-hs",
+  "slug": "sjmeis-reddit-25-hs",
+  "author": "sjmeis",
+  "url": "https://huggingface.co/sjmeis/reddit-25-hs",
+  "created_at": "2026-08-18T10:14:14.000Z",
+  "updated_at": "2026-08-18T10:17:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "en",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108311810,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433276009,
+  "storage_human": "433 MB",
+  "base_model": "google-bert/bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models - Reddit",
+      "url": "https://www.reddit.com/r/aimodels/",
+      "snippet": "Hi All, I&#x27;m a total n00b here but I&#x27;m learning more about AI and what some of LLM&#x27;s can do. I&#x27;ve got LLama2 installed no my server and I have a command-line chat-bot running on it. I&#x27;d like to be able to connect my LLama2 model and the tools to data in my environment to be able to provide context relevant answers. What I&#x27;m after is the ability to ask it questions about source code I have on my ..."
+    },
+    {
+      "title": "New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack",
+      "url": "https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html",
+      "snippet": "JADEPUFFER exploits Langflow CVE-2025-3248 to deploy ENCFORGE ransomware against AI model weights, vector indexes, and training data on the host."
+    },
+    {
+      "title": "Are Skmei really good and worth it? : r/SkmeiWatchFans - Reddit",
+      "url": "https://www.reddit.com/r/SkmeiWatchFans/comments/1cuwgqd/are_skmei_really_good_and_worth_it/",
+      "snippet": "I never bought a Skmei before and I need to understand if it&#x27;s truly good. I absolutely like how they look (even though most of them are obviously Casio homages). I really want to buy one ani-digi, especially the Skmei 1220. But is it really worth the 7-10 dollars it&#x27;s worth for it&#x27;s quality more than a Casio aq-230 for around 50 dollars? Or the Skmei 2120 for 7 dollars worth more than the ..."
+    },
+    {
+      "title": "sjmeis/enron28 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/sjmeis/enron28",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SimsFinds - Best Sims 4 CC: Hair, Clothes & Mods",
+      "url": "https://www.simsfinds.com/",
+      "snippet": "Download the best Sims 4 CC, mods, hairstyles, clothes, makeup, furniture, and builds. Explore thousands of free custom content creations updated daily."
+    }
+  ]
+}

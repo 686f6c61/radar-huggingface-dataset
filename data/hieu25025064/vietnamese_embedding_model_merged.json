@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Hieu25025064/vietnamese_embedding_model_merged",
+  "slug": "hieu25025064-vietnamese_embedding_model_merged",
+  "author": "Hieu25025064",
+  "url": "https://huggingface.co/Hieu25025064/vietnamese_embedding_model_merged",
+  "created_at": "2026-08-17T11:22:07.000Z",
+  "updated_at": "2026-08-17T11:30:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "Embedding",
+    "onnx",
+    "sentence-similarity",
+    "vi",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2293216661,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dangvantuan/vietnamese-embedding · Hugging Face",
+      "url": "https://huggingface.co/dangvantuan/vietnamese-embedding",
+      "snippet": "Model Description: vietnamese-embedding is the Embedding Model for Vietnamese language. This model is a specialized sentence-embedding trained specifically for the Vietnamese language, leveraging the robust capabilities of PhoBERT, a pre-trained language model based on the RoBERTa architecture."
+    },
+    {
+      "title": "AITeamVN/Vietnamese_Embedding · Hugging Face",
+      "url": "https://huggingface.co/AITeamVN/Vietnamese_Embedding",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AITeamVN/Vietnamese_Embedding · modelindex.dev",
+      "url": "https://modelindex.dev/models/AITeamVN/Vietnamese_Embedding",
+      "snippet": "AITeamVN/Vietnamese_Embedding on HuggingFace: cryptographic hashes for 19 files. Verify any download against the official copy indexed on modelindex.dev."
+    },
+    {
+      "title": "Vietnamese_Embedding Open-Source Vietnamese Embedding Model - Enhance ...",
+      "url": "https://model.aibase.com/models/details/1915693205921882114",
+      "snippet": "Vietnamese_Embedding is an embedding model fine-tuned on the BGE-M3 model, specifically optimized for Vietnamese retrieval tasks, trained on approximately 300,000 sets of Vietnamese query, positive document, and negative document triplets."
+    },
+    {
+      "title": "Vietnamese_Embedding: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/vietnamese-embedding-aiteamvn",
+      "snippet": "Overview Vietnamese_Embedding is a sentence transformer model fine-tuned from BAAI/bge-m3 to optimize semantic search and document retrieval for Vietnamese text. Developed by AITeamVN, the model encodes Vietnamese sentences and documents into a 1024-dimensional dense vector space using dot product similarity for ranking. The model was trained on approximately 300,000 triplets of queries ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SF-Foundation/Gemma4-26B-FinetunedLoRA",
+  "slug": "sf-foundation-gemma4-26b-finetunedlora",
+  "author": "SF-Foundation",
+  "url": "https://huggingface.co/SF-Foundation/Gemma4-26B-FinetunedLoRA",
+  "created_at": "2026-08-17T23:40:36.000Z",
+  "updated_at": "2026-08-17T23:41:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-4-26B-A4B-it",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 255746117,
+  "storage_human": "256 MB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Fine-Tune Gemma 4 with LoRA & QLoRA: Complete Guide | Lushbinary",
+      "url": "https://lushbinary.com/blog/fine-tune-gemma-4-lora-qlora-complete-guide/",
+      "snippet": "Fine-tune Gemma 4 (E2B-31B) with LoRA/QLoRA using Unsloth (2x faster), HF Transformers & Keras. Dataset prep to deployment. Updated April 2026."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Multi-Token Prediction: All Gemma 4 models (E2B, E4B, 12B, 31B, and 26B A4B) include a dedicated draft model for speculative decoding, enabling significantly faster inference with no quality loss. Parameter sizes and quantization Gemma 4 models are available in 5 parameter sizes: E2B, E4B, 12B, 31B and 26B A4B."
+    },
+    {
+      "title": "gemma4:26b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:26b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

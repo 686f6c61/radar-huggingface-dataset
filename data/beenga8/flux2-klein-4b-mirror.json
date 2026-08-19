@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "beenga8/flux2-klein-4b-mirror",
+  "slug": "beenga8-flux2-klein-4b-mirror",
+  "author": "beenga8",
+  "url": "https://huggingface.co/beenga8/flux2-klein-4b-mirror",
+  "created_at": "2026-08-17T02:18:31.000Z",
+  "updated_at": "2026-08-17T06:41:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "mirror",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 23735489815,
+  "storage_human": "23.7 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

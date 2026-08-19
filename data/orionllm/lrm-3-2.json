@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OrionLLM/LRM-3.2",
+  "slug": "orionllm-lrm-3-2",
+  "author": "OrionLLM",
+  "url": "https://huggingface.co/OrionLLM/LRM-3.2",
+  "created_at": "2026-08-06T21:18:27.000Z",
+  "updated_at": "2026-08-11T18:10:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "dataset:ProCreations/grug-think",
+    "dataset:ProCreations/grug-think-v3-10k",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 1238,
+  "trending_score": 8,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54734249090,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrionLLM/LRM-3.2 · Hugging Face",
+      "url": "https://huggingface.co/OrionLLM/LRM-3.2",
+      "snippet": "1. Introduction We&#x27;re introducing LRM-3.2, a reasoning model built around a single idea: thinking should be fast, direct, and dense — not padded. LRM-3.2 keeps the full depth of chain-of-thought reasoning while stripping out the narrative scaffolding that most models use to fill space."
+    },
+    {
+      "title": "bartowski/OrionLLM_LRM-3.2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/OrionLLM_LRM-3.2-GGUF",
+      "snippet": "This model supports image input. Alongside the quants, this repo includes the multimodal projector files mmproj-OrionLLM_LRM-3.2-f16.gguf and mmproj-OrionLLM_LRM-3.2-bf16.gguf, which pair with any quant above."
+    },
+    {
+      "title": "GitHub - schxma2/OrionLM: an omnimodal reasoning llm with DSA, MoE and ...",
+      "url": "https://github.com/schxma2/OrionLM",
+      "snippet": "This project provides a production-ready transformer model with state-of-the-art components including grouped query attention, mixture of experts, deep reasoning controllers, and native multimodal support. Built for scalability from small models (~100M parameters) to large-scale training (~40B+ parameters)."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 388 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 113 Estimated models among 388 tracked LLMs — 431 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "PDF Orion:AUnifiedVisualAgentforMultimodal Perception ...",
+      "url": "https://storage.googleapis.com/vlm-data-public-prod/web/assets/vlmrun-orion-whitepaper-latest.pdf",
+      "snippet": "Orion hatGPT (GPT-5), Gemini 2.5 Pro, and Claude Sonnet 4.5 across 46 diverse visual tasks. This evaluation methodology was designed to provide rigorous, unbiased assessment of model outputs across a wide spectrum of visual AI capabilities, from object detection and segment tion to complex mu"
+    }
+  ]
+}

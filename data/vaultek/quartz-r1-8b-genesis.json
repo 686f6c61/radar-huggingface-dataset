@@ -1,0 +1,170 @@
+{
+  "schema": 1,
+  "id": "Vaultek/Quartz-R1-8B-Genesis",
+  "slug": "vaultek-quartz-r1-8b-genesis",
+  "author": "Vaultek",
+  "url": "https://huggingface.co/Vaultek/Quartz-R1-8B-Genesis",
+  "created_at": "2026-08-11T23:27:49.000Z",
+  "updated_at": "2026-08-18T09:27:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "reasoning",
+    "cot",
+    "unsloth",
+    "chatml",
+    "genesis",
+    "swe-bench",
+    "coding",
+    "conversational",
+    "ru",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:bigcode/starcoderdata",
+    "dataset:open-web-math/open-web-math",
+    "dataset:armand0e/Fable-5-Chat",
+    "dataset:HelioAI/Claude-Fable-5-5500x",
+    "dataset:meta-math/MetaMathQA_GSM8K_zh",
+    "dataset:teknium/OpenHermes-2.5",
+    "dataset:mizinovmv/qwen3.8-max-distillation-50k-ru",
+    "base_model:yandex/YandexGPT-5-Lite-8B-pretrain",
+    "base_model:finetune:yandex/YandexGPT-5-Lite-8B-pretrain",
+    "model-index",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 111,
+  "trending_score": 0,
+  "parameters": 8036552704,
+  "parameters_human": "8.04B",
+  "storage_bytes": 16175365331,
+  "storage_human": "16.2 GB",
+  "base_model": "yandex/YandexGPT-5-Lite-8B-pretrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reasoning & Logic",
+      "dataset": "ARC Challenge",
+      "metric": "Accuracy",
+      "value": 86.77
+    },
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Accuracy",
+      "value": 74.22
+    },
+    {
+      "task": "Common Sense Reasoning",
+      "dataset": "HellaSwag",
+      "metric": "Accuracy",
+      "value": 71.9
+    },
+    {
+      "task": "Complex Reasoning",
+      "dataset": "Big-Bench Hard",
+      "metric": "Accuracy",
+      "value": 68.48
+    },
+    {
+      "task": "Complex Multitask Knowledge",
+      "dataset": "MMLU-Pro",
+      "metric": "Accuracy",
+      "value": 44.94
+    },
+    {
+      "task": "Advanced Competition Math",
+      "dataset": "MATH-500",
+      "metric": "Accuracy",
+      "value": 43.4
+    },
+    {
+      "task": "Instruction Following",
+      "dataset": "IFEval",
+      "metric": "Strict Accuracy",
+      "value": 38.82
+    },
+    {
+      "task": "Humanity's Last Exam",
+      "dataset": "HLE",
+      "metric": "Accuracy",
+      "value": 32.84
+    },
+    {
+      "task": "Russian Multitask Knowledge",
+      "dataset": "ru_mmlu (MERA)",
+      "metric": "Accuracy",
+      "value": 25.18
+    },
+    {
+      "task": "Russian Python Code",
+      "dataset": "ru_humaneval",
+      "metric": "Pass@1",
+      "value": 23.17
+    },
+    {
+      "task": "Graduate Science Q&A",
+      "dataset": "GPQA Main",
+      "metric": "Accuracy",
+      "value": 19.64
+    },
+    {
+      "task": "Graduate Science Q&A (Diamond)",
+      "dataset": "GPQA Diamond",
+      "metric": "Accuracy",
+      "value": 13.13
+    },
+    {
+      "task": "Software Engineering Fixes",
+      "dataset": "DataCurve Deep-SWE",
+      "metric": "Pass Rate",
+      "value": 1.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vaultek/Quartz-R1-8B-Genesis-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Vaultek/Quartz-R1-8B-Genesis-GGUF",
+      "snippet": "Instructions to use Vaultek/Quartz-R1-8B-Genesis-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Vaultek/Quartz-R1-8B-Genesis-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Quantized Models for Vaultek/Quartz-R1-8B-Genesis - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Vaultek/Quartz-R1-8B-Genesis",
+      "snippet": "Vaultek/Quartz-R1-8B-Genesis Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai ..."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1 · GitHub",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "However, DeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. To address these issues and further enhance reasoning performance, we introduce DeepSeek-R1, which incorporates cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks."
+    },
+    {
+      "title": "DeepSeek R1 | Advanced Reasoning AI for Complex Problems",
+      "url": "https://deepseeksr1.com/r1/",
+      "snippet": "The Model That Changed Everything. DeepSeek R1 - the open-source reasoning model that matched OpenAI o1, crushed NVIDIA&#x27;s stock price, and proved that frontier-level chain-of-thought AI didn&#x27;t require proprietary infrastructure. Free. MIT licensed. Available to run on your laptop."
+    },
+    {
+      "title": "Model Access | deepseek-ai/DeepSeek-R1 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-ai/DeepSeek-R1/3.1-model-access",
+      "snippet": "This page documents the various methods for accessing DeepSeek-R1 family models. It covers official hosted solutions, API endpoints, model repositories, and brief introductions to deployment options."
+    }
+  ]
+}

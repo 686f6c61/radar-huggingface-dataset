@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_gsm8k_nemotron-nano-30b-a3b_as_phi-4_seed42",
+  "slug": "dementor-research-dpo_gsm8k_nemotron-nano-30b-a3b_as_phi-4_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_gsm8k_nemotron-nano-30b-a3b_as_phi-4_seed42",
+  "created_at": "2026-08-16T19:35:55.000Z",
+  "updated_at": "2026-08-16T19:36:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1544348352,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dpo_gsm8k_phi-4_as_nemotron-nano-30b-a3b_seed42",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_phi-4_as_nemotron-nano-30b-a3b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dementor-research/dpo_gsm8k_nemotron-nano-30b-a3b_as_gpt-oss-20b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_nemotron-nano-30b-a3b_as_gpt-oss-20b_seed42",
+      "snippet": "dementor-research / dpo_gsm8k_nemotron-nano-30b-a3b_as_gpt-oss-20b_seed42 like 0 Follow dementor 2 PEFT Safetensors dementor imitation-disguise lora gsm8k Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "dpo_gsm8k_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed3",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed3",
+      "snippet": "dementor-research dpo_gsm8k_nemotron-nano-30b-a3b_as_llama-3.1-8b_seed3 Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Kimi K2.7 Code: Open-Source Agentic Coding Model",
+      "url": "https://www.kimi.com/resources/kimi-k2-7-code",
+      "snippet": "Kimi K2.7 Code is an open-source, coding-focused agentic model developed by Moonshot AI. It delivers stronger coding and agent performance, with substantial improvements in real-world long-horizon coding tasks."
+    }
+  ]
+}

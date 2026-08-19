@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "id": "PSompong/llama-hredd-adverse-text-distilbert-onnx",
+  "slug": "psompong-llama-hredd-adverse-text-distilbert-onnx",
+  "author": "PSompong",
+  "url": "https://huggingface.co/PSompong/llama-hredd-adverse-text-distilbert-onnx",
+  "created_at": "2026-07-03T07:37:07.000Z",
+  "updated_at": "2026-08-15T06:10:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "distilbert",
+    "text-classification",
+    "human-rights",
+    "business-and-human-rights",
+    "hredd",
+    "due-diligence",
+    "supply-chain",
+    "esg",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 92,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67780802,
+  "storage_human": "68 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "HREDD adverse-text harm classification",
+      "dataset": "HREDD 30-case held-out gold set (offline)",
+      "metric": "Full gold detection (n=30), int8 quantized ONNX",
+      "value": 0.667
+    },
+    {
+      "task": "HREDD adverse-text harm classification",
+      "dataset": "HREDD 30-case held-out gold set (offline)",
+      "metric": "Labour detection (n=23), int8 quantized ONNX",
+      "value": 0.652
+    },
+    {
+      "task": "HREDD adverse-text harm classification",
+      "dataset": "HREDD 30-case held-out gold set (offline)",
+      "metric": "Environmental detection (n=7), int8 quantized ONNX",
+      "value": 0.714
+    },
+    {
+      "task": "HREDD adverse-text harm classification",
+      "dataset": "HREDD 30-case held-out gold set (offline)",
+      "metric": "Severe-trio Critical recall (n=18), int8 quantized ONNX",
+      "value": 0.556
+    },
+    {
+      "task": "HREDD adverse-text harm classification",
+      "dataset": "HREDD 60-case held-out gold set (offline, cohorts g30 and x2026)",
+      "metric": "Full gold detection (n=60), int8 quantized ONNX",
+      "value": 0.7
+    },
+    {
+      "task": "HREDD adverse-text harm classification",
+      "dataset": "HREDD 60-case held-out gold set (offline, cohorts g30 and x2026)",
+      "metric": "Severe-trio Critical recall (n=31), int8 quantized ONNX",
+      "value": 0.548
+    },
+    {
+      "task": "HREDD adverse-text harm classification",
+      "dataset": "HREDD 60-case held-out gold set (offline, cohorts g30 and x2026)",
+      "metric": "Harm-class accuracy (n=50), int8 quantized ONNX",
+      "value": 0.36
+    },
+    {
+      "task": "HREDD adverse-text harm classification",
+      "dataset": "HREDD 60-case held-out gold set (offline, cohorts g30 and x2026)",
+      "metric": "Harm-domain accuracy (n=60), int8 quantized ONNX",
+      "value": 0.917
+    }
+  ],
+  "sources": [
+    {
+      "title": "PSompong/hredd-adverse-text-distilbert-onnx · Hugging Face",
+      "url": "https://huggingface.co/PSompong/hredd-adverse-text-distilbert-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=hredd",
+      "snippet": "PSompong/llama-hredd-adverse-text-distilbert-onnx Text Classification •Updated about 16 hours ago• 79"
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "ONNX Pipeline Models: Text Classification - docs.oracle.com",
+      "url": "https://docs.oracle.com/en/database/oracle/machine-learning/oml4py/2-23ai/mlpug/onnx-pipeline-models-text-classification.html",
+      "snippet": "ONNX pipeline models provides text classification models that accepts text strings as input and produces the probablity of the input string belonging to a specific label. The pipeline models also provide the necessary pre-processing and post-processing."
+    }
+  ]
+}

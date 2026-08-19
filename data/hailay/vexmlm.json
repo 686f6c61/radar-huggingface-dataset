@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Hailay/VEXMLM",
+  "slug": "hailay-vexmlm",
+  "author": "Hailay",
+  "url": "https://huggingface.co/Hailay/VEXMLM",
+  "created_at": "2026-08-17T15:11:48.000Z",
+  "updated_at": "2026-08-17T15:14:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "am",
+    "ti"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "fill-mask",
+    "vocabulary-expansion",
+    "geez",
+    "amharic",
+    "tigrinya",
+    "low-resource",
+    "am",
+    "ti",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 301365186,
+  "parameters_human": "301.4M",
+  "storage_bytes": 1230460182,
+  "storage_human": "1.2 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

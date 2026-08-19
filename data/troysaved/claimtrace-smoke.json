@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "troysaved/claimtrace-smoke",
+  "slug": "troysaved-claimtrace-smoke",
+  "author": "troysaved",
+  "url": "https://huggingface.co/troysaved/claimtrace-smoke",
+  "created_at": "2026-08-18T01:10:07.000Z",
+  "updated_at": "2026-08-18T03:01:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 230,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 6893794140,
+  "storage_human": "6.9 GB",
+  "base_model": "unsloth/qwen3-1.7b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClaimTrace — Verified facts API, with the proof attached",
+      "url": "https://claimtrace.dev/",
+      "snippet": "ClaimTrace is a verification layer. Its AI opens the entity&#x27;s own publications — full web page, linked PDF, scanned image, event pop-up — reads them, and returns the field you asked for with its proof: source URL, date, verbatim excerpt, confidence."
+    },
+    {
+      "title": "GitHub - multiskilled/ClaimTrace: A multimodal evidence-intelligence ...",
+      "url": "https://github.com/multiskilled/ClaimTrace",
+      "snippet": "We asked a simple question: what if AI could review every piece of evidence simultaneously, the way an experienced investigator would? ClaimTrace was built to explore that idea by combining multimodal AI with human oversight, allowing AI-assisted review with human validation at different stages of the process."
+    },
+    {
+      "title": "GitHub - devdiv07/ClaimTrace: Built a multimodal claim ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/divyanshshukla03_github-devdiv07claimtrace-built-a-multimodal-activity-7481411753810194432-NvAF",
+      "snippet": "Just completed a 24-hour hackathon build: ClaimTrace, a schema-safe multimodal claim verification pipeline, for HackerRank Orchestrate (June 2026). The challenge was to verify damage claims from a ..."
+    },
+    {
+      "title": "ai-claim-review/code/smoke_test_phase6.py at main - GitHub",
+      "url": "https://github.com/KavinMK05/ai-claim-review/blob/main/code/smoke_test_phase6.py",
+      "snippet": "AI claims-automation pipeline that verifies damage claims from submitted photos using a two-stage Gemini 3 Flash VLM pipeline, cross-image tamper detection, and a deterministic rule layer."
+    },
+    {
+      "title": "U Scientists Develop AI-powered Tool to Forecast Wildfire Smoke",
+      "url": "https://www.che.utah.edu/u-scientists-develop-ai-powered-tool-to-forecast-wildfire-smoke/",
+      "snippet": "The tool depicts a smoke forecast map generated in part using the Community Multiscale Air Quality (CMAQ) modeling system, which is the EPA&#x27;s open-source air quality modeling system, to simulate fire activity and the movement of wildfire smoke particulate matter across various scales."
+    }
+  ]
+}

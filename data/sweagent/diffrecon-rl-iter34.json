@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "sweagent/diffrecon-rl-iter34",
+  "slug": "sweagent-diffrecon-rl-iter34",
+  "author": "sweagent",
+  "url": "https://huggingface.co/sweagent/diffrecon-rl-iter34",
+  "created_at": "2026-08-15T22:21:52.000Z",
+  "updated_at": "2026-08-15T22:26:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 68164077424,
+  "parameters_human": "68.16B",
+  "storage_bytes": 136345466518,
+  "storage_human": "136.3 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

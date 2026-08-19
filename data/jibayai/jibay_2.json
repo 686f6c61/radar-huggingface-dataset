@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "id": "JibayAi/Jibay_2",
+  "slug": "jibayai-jibay_2",
+  "author": "JibayAi",
+  "url": "https://huggingface.co/JibayAi/Jibay_2",
+  "created_at": "2026-06-14T11:25:51.000Z",
+  "updated_at": "2026-08-18T11:12:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en",
+    "zh",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "JibayAI",
+    "Jibay2",
+    "OS",
+    "jibay.ir",
+    "multilingual",
+    "chat",
+    "function-calling",
+    "32k-context",
+    "conversational",
+    "fa",
+    "en",
+    "zh",
+    "ar",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 144,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4076253611,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "General Knowledge",
+      "dataset": "MMLU",
+      "metric": "Accuracy",
+      "value": 56.9
+    },
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Accuracy",
+      "value": 70
+    },
+    {
+      "task": "Scientific Reasoning",
+      "dataset": "ARC Challenge",
+      "metric": "Accuracy",
+      "value": 43
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "HumanEval",
+      "metric": "Pass@1",
+      "value": 68
+    },
+    {
+      "task": "Reading Comprehension",
+      "dataset": "BoolQ",
+      "metric": "Accuracy",
+      "value": 79
+    },
+    {
+      "task": "Commonsense Reasoning",
+      "dataset": "HellaSwag",
+      "metric": "Accuracy",
+      "value": 61.1
+    },
+    {
+      "task": "Function Calling",
+      "dataset": "Berkeley Function Calling Leaderboard (BFCL)",
+      "metric": "Overall Score",
+      "value": 55
+    },
+    {
+      "task": "Function Calling",
+      "dataset": "Berkeley Function Calling Leaderboard (BFCL)",
+      "metric": "Category Average",
+      "value": 51.2
+    },
+    {
+      "task": "Persian Conversation",
+      "dataset": "PPRC-BENCH",
+      "metric": "Accuracy",
+      "value": 41
+    }
+  ],
+  "sources": [
+    {
+      "title": "JibayAi/Jibay_2 · Hugging Face",
+      "url": "https://huggingface.co/JibayAi/Jibay_2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JibayAi/Jibay_2_GGUF_Q4-K-M · Hugging Face",
+      "url": "https://huggingface.co/JibayAi/Jibay_2_GGUF_Q4-K-M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Jibay-Ai/JibayAi: Jibay Ai , the king of Iranian ai",
+      "url": "https://github.com/Jibay-Ai/JibayAi",
+      "snippet": "Jibay Ai , the king of Iranian ai . Contribute to Jibay-Ai/JibayAi development by creating an account on GitHub."
+    },
+    {
+      "title": "Jibay-Ai (JibayAi) · GitHub",
+      "url": "https://github.com/Jibay-Ai",
+      "snippet": "We are a fast and powerful AI development organization focused on advancing independent AI and simplifying technology to help people worldwide. - Jibay-Ai"
+    },
+    {
+      "title": "jibayai · PyPI",
+      "url": "https://pypi.org/project/jibayai/",
+      "snippet": "JibayAI Python SDK A small, validated Python client for the JibayAI chat, image, music and video APIs. Installation ... Quick start ... You may keep the key outside source code: ... Direct functions For small scripts, the four operations are also available directly on the package: ... For repeated calls, prefer one JibayAI client so its HTTP ..."
+    }
+  ]
+}

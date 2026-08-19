@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "DeKUT-DSAIL/efficientnetv2-xl-cifar10-upsample",
+  "slug": "dekut-dsail-efficientnetv2-xl-cifar10-upsample",
+  "author": "DeKUT-DSAIL",
+  "url": "https://huggingface.co/DeKUT-DSAIL/efficientnetv2-xl-cifar10-upsample",
+  "created_at": "2026-08-14T12:31:19.000Z",
+  "updated_at": "2026-08-14T13:04:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "cifar-10",
+    "tf_efficientnetv2_xl",
+    "dataset:cifar10",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 207628642,
+  "parameters_human": "207.6M",
+  "storage_bytes": 832367205,
+  "storage_human": "832 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

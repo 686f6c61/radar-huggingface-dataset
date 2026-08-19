@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "zonglin11/humanalite_smolvla_policy",
+  "slug": "zonglin11-humanalite_smolvla_policy",
+  "author": "zonglin11",
+  "url": "https://huggingface.co/zonglin11/humanalite_smolvla_policy",
+  "created_at": "2026-08-17T12:17:44.000Z",
+  "updated_at": "2026-08-17T12:23:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:zonglin11/humanalite_act_demo",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197799064,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zonglin11 (zachcai) - Hugging Face",
+      "url": "https://huggingface.co/zonglin11/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 6 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "blog/smolvla.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/smolvla.md",
+      "snippet": "SmolVLA is not only a lightweight yet capable model, but also a method for training and evaluating generalist robotics policies. In this section, we introduce the model architecture behind SmolVLA and the asynchronous inference setup used for evaluation, which has proven to be more adaptable and capable of faster recovery."
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "SmolVLA: An Open-Source Vision-Language-Action Model for Modern Robotics",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "SmolVLA A compact, efficient, and powerful vision-language-action model for modern robotics. 🚀 Meet SmolVLA SmolVLA is a groundbreaking Vision-Language-Action (VLA) model with only 450 million parameters, developed by Hugging Face. It&#x27;s carefully designed for cost-effective deployment on consumer-grade hardware, making advanced robotics technology accessible to more developers and ..."
+    },
+    {
+      "title": "SmolVLA - aegean.ai",
+      "url": "https://aegean.ai/book/vla-agents/smolvla",
+      "snippet": "SmolVLA is Hugging Face&#x27;s compact Vision-Language-Action model, built on top of the LeRobot library. It is designed to be small enough to fine-tune and deploy on a single consumer GPU, while remaining competitive with larger open VLAs on standard manipulation benchmarks."
+    }
+  ]
+}

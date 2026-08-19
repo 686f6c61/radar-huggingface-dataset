@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mimanchiqqq/quick_or_slow",
+  "slug": "mimanchiqqq-quick_or_slow",
+  "author": "mimanchiqqq",
+  "url": "https://huggingface.co/mimanchiqqq/quick_or_slow",
+  "created_at": "2026-08-17T06:13:27.000Z",
+  "updated_at": "2026-08-17T06:47:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 529357,
+  "storage_human": "529357 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mimanchiqqq (manchi) - Hugging Face",
+      "url": "https://huggingface.co/mimanchiqqq/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 5 days ago ... updated a dataset 8 days ago ... published a dataset 17 days ago"
+    },
+    {
+      "title": "mimanchiqqq (manchi) - Hugging Face",
+      "url": "https://huggingface.co/mimanchiqqq",
+      "snippet": "AI & ML interests ... Recent Activity published a model 20 days ago ... updated a model 20 days ago"
+    },
+    {
+      "title": "AI Assistant - Amazon Quick - AWS",
+      "url": "https://aws.amazon.com/quick/",
+      "snippet": "Amazon Quick is the AI assistant for work. Connect your tools, data, and teams in one place with AI-powered research, BI, dashboards, and automation."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "New API - quickquickai.com",
+      "url": "https://quickquickai.com/about",
+      "snippet": "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management."
+    }
+  ]
+}

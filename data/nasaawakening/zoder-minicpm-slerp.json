@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Nasaawakening/zoder-minicpm-slerp",
+  "slug": "nasaawakening-zoder-minicpm-slerp",
+  "author": "Nasaawakening",
+  "url": "https://huggingface.co/Nasaawakening/zoder-minicpm-slerp",
+  "created_at": "2026-08-18T22:53:59.000Z",
+  "updated_at": "2026-08-18T22:54:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "mergekit",
+    "slerp",
+    "minicpm",
+    "zoder",
+    "en",
+    "base_model:GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+    "base_model:finetune:GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2161290344,
+  "storage_human": "2.2 GB",
+  "base_model": "openbmb/MiniCPM5-1B, GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nasaawakening - Hugging Face",
+      "url": "https://huggingface.co/Nasaawakening",
+      "snippet": "Chat with Gemini AI, share text, images, or code files. Nasaawakening Apr 11. models 0. None public yet. datasets 1"
+    },
+    {
+      "title": "nasaawakening · GitHub",
+      "url": "https://github.com/nasaawakening",
+      "snippet": "This is a Ai that run with hugging face and ollama, it&#x27;s free C"
+    },
+    {
+      "title": "GitHub - nasaawakening/mymodels-site",
+      "url": "https://github.com/nasaawakening/mymodels-site",
+      "snippet": "Contribute to nasaawakening/mymodels-site development by creating an account on GitHub."
+    },
+    {
+      "title": "Nasaawakening - Hugging Face",
+      "url": "https://huggingface.co/Nasaawakening/datasets",
+      "snippet": "User profile of Nasaawakening on Hugging Face"
+    },
+    {
+      "title": "NASA Europa AI Awakening #AlienMegacity #SpaceDiscovery #NasaEuropa # ...",
+      "url": "https://www.youtube.com/watch?v=TlDTaiLH51s",
+      "snippet": "NASA discovers an abandoned alien megacity beneath the ice of Europa, where an ancient AI suddenly awakens."
+    }
+  ]
+}

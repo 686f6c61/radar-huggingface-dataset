@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r02e15_grpo-r02e5-hpft",
+  "slug": "jongbin-kr-exaone_7b_verireason_no_reasoning_completion_only_sft-r02e15_grpo-r02e5-hpft",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r02e15_grpo-r02e5-hpft",
+  "created_at": "2026-08-17T18:11:25.000Z",
+  "updated_at": "2026-08-18T08:13:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "arxiv:2402.03300",
+    "base_model:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "base_model:finetune:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2699364705,
+  "storage_human": "2.7 GB",
+  "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r1e3 ...",
+      "url": "https://huggingface.co/Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r1e3_grpo-r1e1-hpft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r02e15 ...",
+      "url": "https://huggingface.co/Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r02e15_grpo-r02e5-hpft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jongbin-kr (Jongbin Won) · GitHub",
+      "url": "https://github.com/Jongbin-kr/",
+      "snippet": "Forked from linea77/kovar Archive for the paper Kovar (Korean Visual Abductive Reasoning) Python"
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/EXAONE-4.0: Official repository for EXAONE 4.0 ...",
+      "url": "https://github.com/LG-AI-EXAONE/EXAONE-4.0",
+      "snippet": "We introduce EXAONE 4.0, which integrates a Non-reasoning mode and Reasoning mode to achieve both the excellent usability of EXAONE 3.5 and the advanced reasoning abilities of EXAONE Deep. To pave the way for the agentic AI era, EXAONE 4.0 incorporates essential features such as agentic tool use, and its multilingual capabilities are extended to support Spanish in addition to English and ..."
+    },
+    {
+      "title": "EXAONE 3.0 7.8B Instruction Tuned Language Model - arXiv.org",
+      "url": "https://arxiv.org/pdf/2408.03541",
+      "snippet": "We introduce EXAONE 3.0 instruction-tuned language model, the first open model in the family of Large Language Models (LLMs) developed by LG AI Research. Among different model sizes, we publicly release the 7.8B instruction-tuned model to promote open research and innovations."
+    }
+  ]
+}

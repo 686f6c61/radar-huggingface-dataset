@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "suliniacats/dots.tts-soar",
+  "slug": "suliniacats-dots-tts-soar",
+  "author": "suliniacats",
+  "url": "https://huggingface.co/suliniacats/dots.tts-soar",
+  "created_at": "2026-08-17T13:07:47.000Z",
+  "updated_at": "2026-08-17T13:07:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "dots_tts",
+  "languages": [],
+  "tags": [
+    "dots_tts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "audio",
+    "speech-synthesis",
+    "voice-cloning",
+    "autoregressive",
+    "flow-matching",
+    "post-trained",
+    "base_model:dots-studio/dots.tts-base",
+    "base_model:finetune:dots-studio/dots.tts-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2198091778,
+  "parameters_human": "2.20B",
+  "storage_bytes": 13952923749,
+  "storage_human": "14.0 GB",
+  "base_model": "dots-studio/dots.tts-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dots-studio/dots.tts-soar · Hugging Face",
+      "url": "https://huggingface.co/dots-studio/dots.tts-soar",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "soar/README.md · AEmotionStudio/dots-tts-models at main",
+      "url": "https://huggingface.co/AEmotionStudio/dots-tts-models/blob/main/soar/README.md",
+      "snippet": "This repository hosts dots.tts-soar — the pretrained backbone further refined with Self-corrective Alignment (SCA), a reward-free flow-matching-native post-training stage. SCA pushes the model to the highest zero-shot fidelity and speaker similarity of the three releases and is the recommended default for production zero-shot voice cloning."
+    },
+    {
+      "title": "GitHub - studio-dots-ai/dots.tts · GitHub",
+      "url": "https://github.com/studio-dots-ai/dots.tts",
+      "snippet": "Contribute to studio-dots-ai/dots.tts development by creating an account on GitHub."
+    },
+    {
+      "title": "dots.tts-soar: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dots.tts-soar-rednote-hilab",
+      "snippet": "A: Both are valid. Use dots.tts-soar if you want to inherit its tightened text/timbre alignment and apply additional custom voice fine-tuning on top. Use dots.tts-base if you want maximum flexibility over sampling parameters and plan significant architectural experimentation. Q: What is the difference between dots.tts-soar and dots.tts-mf?"
+    },
+    {
+      "title": "dots.tts Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2606.07080v2",
+      "snippet": "Abstract We present dots.tts, a 2B-parameter continuous autoregressive text-to-speech (TTS) foundation model that models speech in a continuous latent space. Compared with existing continuous autoregressive models, our key innovations are threefold."
+    }
+  ]
+}

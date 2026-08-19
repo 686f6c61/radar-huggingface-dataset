@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "empero-ai/Qwen3.8-2B-GGUF",
+  "slug": "empero-ai-qwen3-8-2b-gguf",
+  "author": "empero-ai",
+  "url": "https://huggingface.co/empero-ai/Qwen3.8-2B-GGUF",
+  "created_at": "2026-08-15T18:08:46.000Z",
+  "updated_at": "2026-08-16T01:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "gated-deltanet",
+    "edge",
+    "text-generation",
+    "en",
+    "base_model:empero-ai/Qwen3.8-2B",
+    "base_model:quantized:empero-ai/Qwen3.8-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 36,
+  "downloads_30d": 7277,
+  "trending_score": 35,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 10347336576,
+  "storage_human": "10.3 GB",
+  "base_model": "empero-ai/Qwen3.8-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

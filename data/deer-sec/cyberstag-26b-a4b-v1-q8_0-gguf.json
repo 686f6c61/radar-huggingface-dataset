@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "deer-sec/CyberStag-26B-A4B-v1-Q8_0.gguf",
+  "slug": "deer-sec-cyberstag-26b-a4b-v1-q8_0-gguf",
+  "author": "deer-sec",
+  "url": "https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1-Q8_0.gguf",
+  "created_at": "2026-08-16T04:01:16.000Z",
+  "updated_at": "2026-08-16T07:50:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "multilingual",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "gguf",
+    "cybersecurity",
+    "security",
+    "gemma",
+    "reasoning",
+    "text-generation",
+    "fine-tuned",
+    "8bit",
+    "multilingual",
+    "en",
+    "ja",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 26859856480,
+  "storage_human": "26.9 GB",
+  "base_model": "google/gemma-4-26b-a4b",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deer-sec/CyberStag-26B-A4B-v1-optiq8 · Hugging Face",
+      "url": "https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1-optiq8",
+      "snippet": "Overview CyberStag-26B-A4B-v1 is a highly specialized, text-only large language model designed explicitly for cybersecurity analysis and deep logical reasoning. Built upon the robust Gemma-4-26B-A4B architecture (MoE), this model has been fine-tuned using mlx_lm.lora to excel in understanding complex security domains."
+    },
+    {
+      "title": "REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF - Hugging Face",
+      "url": "https://huggingface.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF",
+      "snippet": "A supervised fine-tune of Gemma 4 26B-A4B, oriented towards open-source intelligence, cyber threat intelligence, and investigative journalism. Overview REDCELL is a supervised fine-tune (SFT) of Google&#x27;s Gemma 4 26B-A4B (Mixture-of-Experts, MoE), trained to produce senior-analyst tradecraft instead of reflexive hedging on legitimate investigative work. Training: Supervised fine-tuning (SFT) of ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Download Gemma 4 GGUF & Model Weights from Hugging Face",
+      "url": "https://gemma-4.net/download",
+      "snippet": "Download Gemma 4 GGUF Q4_K_M (E2B 3.11GB, E4B 4.98GB) plus 12B/26B/31B. Compare VRAM needs, context lengths, and run via Ollama or llama.cpp command examples."
+    }
+  ]
+}

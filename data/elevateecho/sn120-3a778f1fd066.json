@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "elevateecho/sn120-3a778f1fd066",
+  "slug": "elevateecho-sn120-3a778f1fd066",
+  "author": "elevateecho",
+  "url": "https://huggingface.co/elevateecho/sn120-3a778f1fd066",
+  "created_at": "2026-08-17T11:18:11.000Z",
+  "updated_at": "2026-08-17T11:23:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v3",
+    "offline-dpo",
+    "r596",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elevateecho (elevateecho) - Hugging Face",
+      "url": "https://huggingface.co/elevateecho",
+      "snippet": "Sort: Recently updated. elevateecho/sn120-c77c26f6254d. 35B • Updated 29 minutes ago. elevateecho/sn120-0d40d787788c. 35B • Updated about 1 hour ago"
+    },
+    {
+      "title": "elevateecho/sn120-d77b34310b62 · Hugging Face",
+      "url": "https://huggingface.co/elevateecho/sn120-d77b34310b62",
+      "snippet": "elevateecho / sn120-d77b34310b62 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Leaderboard August 2026 — LMSys Arena, LLM, Image & Coding ...",
+      "url": "https://www.swfte.com/ai/leaderboard",
+      "snippet": "Live AI model leaderboard updated August 2026. Anthropic: Claude Fable 5 leads at 100/100. Compare 380 LLMs, image, video, coding & reasoning models — replaces LMSys Chatbot Arena."
+    },
+    {
+      "title": "sn120-27e2f083b355 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/elevateecho/sn120-27e2f083b355",
+      "snippet": "Deploy sn120-27e2f083b355 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

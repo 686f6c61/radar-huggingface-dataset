@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Tongyi-MAI/Z-Image-Turbo",
+  "slug": "tongyi-mai-z-image-turbo",
+  "author": "Tongyi-MAI",
+  "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+  "created_at": "2025-11-25T15:09:48.000Z",
+  "updated_at": "2026-01-30T16:58:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "arxiv:2511.22699",
+    "arxiv:2511.22677",
+    "arxiv:2511.13649",
+    "license:apache-2.0",
+    "diffusers:ZImagePipeline",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 5122,
+  "downloads_30d": 863468,
+  "trending_score": 18,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 53980522390,
+  "storage_human": "54.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tongyi-MAI/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "🖼️ Showcase 📸 Photorealistic Quality: Z-Image-Turbo delivers strong photorealistic image generation while maintaining excellent aesthetic quality. 📖 Accurate Bilingual Text Rendering: Z-Image-Turbo excels at accurately rendering complex Chinese and English text. 💡 Prompt Enhancing & Reasoning: Prompt Enhancer empowers the model with reasoning capabilities, enabling it to ..."
+    },
+    {
+      "title": "GitHub - Tongyi-MAI/Z-Image",
+      "url": "https://github.com/Tongyi-MAI/Z-Image",
+      "snippet": "Z-Image is a powerful and highly efficient image generation model family with 6B parameters. Currently there are four variants: 🚀 Z-Image-Turbo - A distilled version of Z-Image that matches or exceeds leading competitors with only 8 NFEs (Number of Function Evaluations). It offers ⚡️sub-second inference latency⚡️ on enterprise-grade H800 GPUs and fits comfortably within 16G VRAM ..."
+    },
+    {
+      "title": "Z Image Turbo - a Hugging Face Space by Tongyi-MAI",
+      "url": "https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "Enter a description of the picture you want, pick a size and optional settings, and the app creates a matching image for you. You can control the seed and steps to influence the result, and the gen..."
+    },
+    {
+      "title": "Z-Image Turbo | Free AI Image Generator in Seconds",
+      "url": "https://zimageturbo.io/en",
+      "snippet": "Generate photorealistic AI images in under a second with Z-Image Turbo, the #1 open-source image generator by Tongyi-MAI. Free to use, no sign-up required."
+    },
+    {
+      "title": "Z-Image-Turbo - GitHub",
+      "url": "https://github.com/Aaryan-Kapoor/z-image-turbo",
+      "snippet": "A professional web interface for the Tongyi-MAI Z-Image-Turbo model — lightning-fast text-to-image generation with 6B parameters. Z-Image-Turbo now includes a powerful MCP server that exposes image generation capabilities through the standardized Model Context Protocol. This allows AI assistants ..."
+    }
+  ]
+}

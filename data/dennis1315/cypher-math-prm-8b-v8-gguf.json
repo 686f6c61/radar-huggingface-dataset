@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Dennis1315/cypher-MATH-PRM-8B-v8-GGUF",
+  "slug": "dennis1315-cypher-math-prm-8b-v8-gguf",
+  "author": "Dennis1315",
+  "url": "https://huggingface.co/Dennis1315/cypher-MATH-PRM-8B-v8-GGUF",
+  "created_at": "2026-08-14T05:19:20.000Z",
+  "updated_at": "2026-08-14T05:21:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 360734000,
+  "storage_human": "361 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "Dennis1315/cypher-PRIME-TURBO-8B-v8-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Dennis1315/cypher-PRIME-TURBO-8B-v8-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cymath | Math Problem Solver with Steps | Math Solving App",
+      "url": "https://www.cymath.com/",
+      "snippet": "&#92;\"Solve Join millions of users in problem solving! Choose Topic"
+    },
+    {
+      "title": "Micron Technology (MU) Stock Forecast & Analyst Price Targets",
+      "url": "https://stockanalysis.com/stocks/mu/forecast/",
+      "snippet": "Stock forecasts and analyst price target predictions for Micron Technology, Inc. (MU) stock, with detailed revenue and earnings estimates."
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    }
+  ]
+}

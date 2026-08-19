@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "leobianco/npov_PERL_google_S130104_epo0.2_lr2.3663655877360862e-05_beta0.04259128063013425_2608141244",
+  "slug": "leobianco-npov_perl_google_s130104_epo0-2_lr2-3663655877360862e-05_beta0-04259128063013425_2608141244",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/npov_PERL_google_S130104_epo0.2_lr2.3663655877360862e-05_beta0.04259128063013425_2608141244",
+  "created_at": "2026-08-14T12:45:30.000Z",
+  "updated_at": "2026-08-14T13:36:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "rloo",
+    "trl",
+    "arxiv:2402.14740",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82313939,
+  "storage_human": "82 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

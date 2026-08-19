@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tuna0000/attention-residual-image-denoiser",
+  "slug": "tuna0000-attention-residual-image-denoiser",
+  "author": "Tuna0000",
+  "url": "https://huggingface.co/Tuna0000/attention-residual-image-denoiser",
+  "created_at": "2026-08-18T08:35:45.000Z",
+  "updated_at": "2026-08-18T08:35:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "e-ridnet-grayscale",
+    "image-denoising",
+    "image-to-image",
+    "tensorflow",
+    "cnn",
+    "attention",
+    "computer-vision",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7285137,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An efficient lightweight network for image denoising using ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-024-60139-x",
+      "snippet": "To address this critical bottleneck, we propose a novel lightweight progressive residual and attention mechanism fusion network that effectively alleviates these limitations."
+    },
+    {
+      "title": "image-denoising · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-denoising",
+      "snippet": "The state-of-the-art image restoration model without nonlinear activation functions."
+    },
+    {
+      "title": "GitHub - Cydral/AI-Image-Denoiser: Dlib DNN model for image enhancement",
+      "url": "https://github.com/Cydral/AI-Image-Denoiser",
+      "snippet": "Welcome to the AI Image Denoiser project, an innovative deep learning solution for image noise reduction and automatic image remastering. This project leverages a custom deep neural network (DNN) model, built using the powerful Dlib library for image processing and AI. Our model is capable of removing various types of noise and grain from images and can even be used for automatic video stream ..."
+    },
+    {
+      "title": "PDF An efficient lightweight network for image denoising using ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-024-60139-x.pdf",
+      "snippet": "An eficient lightweight network for image denoising using progressive residual and convolutional attention feature fusion"
+    },
+    {
+      "title": "Attention Residuals - arXiv.org",
+      "url": "https://arxiv.org/pdf/2603.15031",
+      "snippet": "Contributions Attention Residuals. We propose AttnRes, which replaces fixed residual accumulation with learned softmax attention over depth, and its scalable variant Block AttnRes that reduces memory and communication from O(Ld) to O(Nd)."
+    }
+  ]
+}

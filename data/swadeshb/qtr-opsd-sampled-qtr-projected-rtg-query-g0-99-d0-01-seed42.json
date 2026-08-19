@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "swadeshb/qtr-opsd-sampled-qtr-projected-rtg-query-g0.99-d0.01-seed42",
+  "slug": "swadeshb-qtr-opsd-sampled-qtr-projected-rtg-query-g0-99-d0-01-seed42",
+  "author": "swadeshb",
+  "url": "https://huggingface.co/swadeshb/qtr-opsd-sampled-qtr-projected-rtg-query-g0.99-d0.01-seed42",
+  "created_at": "2026-08-17T02:16:15.000Z",
+  "updated_at": "2026-08-17T13:22:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sampled-qtr-opsd",
+    "opsd",
+    "trl",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4894400419,
+  "storage_human": "4.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

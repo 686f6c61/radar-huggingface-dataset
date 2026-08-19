@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "unfundedResearcher/TRELLIS2-Minecraft-Texture-LoRA-v1",
+  "slug": "unfundedresearcher-trellis2-minecraft-texture-lora-v1",
+  "author": "unfundedResearcher",
+  "url": "https://huggingface.co/unfundedResearcher/TRELLIS2-Minecraft-Texture-LoRA-v1",
+  "created_at": "2026-08-18T17:17:47.000Z",
+  "updated_at": "2026-08-18T17:17:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "trellis2",
+  "languages": [],
+  "tags": [
+    "trellis2",
+    "safetensors",
+    "minecraft",
+    "lora",
+    "texture",
+    "3d",
+    "base_model:microsoft/TRELLIS.2-4B",
+    "base_model:adapter:microsoft/TRELLIS.2-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37393976,
+  "storage_human": "37 MB",
+  "base_model": "microsoft/TRELLIS.2-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

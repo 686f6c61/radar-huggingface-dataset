@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aicanahmet/dummy-model",
+  "slug": "aicanahmet-dummy-model",
+  "author": "aicanahmet",
+  "url": "https://huggingface.co/aicanahmet/dummy-model",
+  "created_at": "2026-08-17T10:37:32.000Z",
+  "updated_at": "2026-08-17T10:37:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110655493,
+  "parameters_human": "110.7M",
+  "storage_bytes": 442646188,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aicanahmet · GitHub",
+      "url": "https://github.com/aicanahmet",
+      "snippet": "aicanahmet has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "AnikaAI/dummy-model · Hugging Face",
+      "url": "https://huggingface.co/AnikaAI/dummy-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "itsyasin2002ai/dummy-model · Hugging Face",
+      "url": "https://huggingface.co/itsyasin2002ai/dummy-model",
+      "snippet": "/ dummy-model like 0 Text ClassificationTransformersSafetensorsbertInference Endpoints arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use in Transformers Edit model card Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias ..."
+    },
+    {
+      "title": "dummy model AI Models | Civitai",
+      "url": "https://civitai.com/tag/dummy%20model",
+      "snippet": "Browse 1 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with dummy model."
+    },
+    {
+      "title": "AI Placeholder: Create realistic dummy data for testing.",
+      "url": "https://toolnest.ai/project/ai-placeholder",
+      "snippet": "AI Placeholder is a free, AI-powered API that generates realistic dummy data for testing and prototyping using OpenAI&#x27;s GPT-3.5-turbo. Generate custom datasets with flexible API endpoints—use imaginative paths for quick prototyping or structured routes for precise control over fields and record counts."
+    }
+  ]
+}

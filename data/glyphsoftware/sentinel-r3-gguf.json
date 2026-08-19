@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "glyphsoftware/sentinel-r3-gguf",
+  "slug": "glyphsoftware-sentinel-r3-gguf",
+  "author": "glyphsoftware",
+  "url": "https://huggingface.co/glyphsoftware/sentinel-r3-gguf",
+  "created_at": "2026-08-16T07:20:04.000Z",
+  "updated_at": "2026-08-16T13:03:07.000Z",
+  "license": "glyph-proprietary-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "security",
+    "penetration-testing",
+    "offensive-security",
+    "red-team",
+    "cybersecurity",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "qwen3_5",
+    "text-generation",
+    "en",
+    "dataset:glyphsoftware/sentinel-exploit-tooled",
+    "base_model:glyphsoftware/sentinel-r3",
+    "base_model:quantized:glyphsoftware/sentinel-r3",
+    "license:other",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 64374267520,
+  "storage_human": "64.4 GB",
+  "base_model": "glyphsoftware/sentinel-r3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "glyphsoftware (Glyph Software LLP) - Hugging Face",
+      "url": "https://huggingface.co/glyphsoftware/models",
+      "snippet": "Org profile for Glyph Software LLP on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "glyphsoftware/sentinel-r2.1-gguf • LM Studio Hub",
+      "url": "https://lmstudio.ai/glyphsoftware/sentinel-r2.1-gguf",
+      "snippet": "All scenarios are explicitly scoped as authorized testing against lab targets. Prompt Format Sentinel-R2.1 uses a chat template with system, user, assistant, and tool roles, and supports tool calling. The system message establishes the pentester persona and the engagement rules; the model responds with reasoning and execute tool calls, consumes the tool results, and continues until it reaches ..."
+    },
+    {
+      "title": "GitHub - Glyph-Software/sentinel: A red-teaming agent harness CLI",
+      "url": "https://github.com/Glyph-Software/sentinel/tree/main",
+      "snippet": "The model to run it on sentinel drives any OpenAI-compatible endpoint, and a frontier general model works well. But it is named after, and built around, glyphsoftware/sentinel-r2.2 — Glyph Software&#x27;s own offensive-security model, and the pairing this agent is designed for."
+    },
+    {
+      "title": "glyphsoftware/sentinel-r2-gguf · Hugging Face",
+      "url": "https://huggingface.co/glyphsoftware/sentinel-r2-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

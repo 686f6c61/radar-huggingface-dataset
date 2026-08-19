@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-unetformer-r18-random-fold0",
+  "slug": "sugam24-geonusaf-unetformer-r18-random-fold0",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-unetformer-r18-random-fold0",
+  "created_at": "2026-08-17T04:54:22.000Z",
+  "updated_at": "2026-08-17T06:41:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "semantic-segmentation",
+    "remote-sensing",
+    "unetformer",
+    "resnet18",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2870231144,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sugam24/geonusaf-unetformer-r18-block-fold0 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-unetformer-r18-block-fold0",
+      "snippet": "GeoNUSAF - UNetFormer (ResNet-18) - block split, fold 0 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255."
+    },
+    {
+      "title": "[2109.08937] UNetFormer: A UNet-like Transformer for Efficient Semantic ...",
+      "url": "https://arxiv.org/abs/2109.08937",
+      "snippet": "In this paper, we propose a Transformer-based decoder and construct a UNet-like Transformer (UNetFormer) for real-time urban scene segmentation. For efficient segmentation, the UNetFormer selects the lightweight ResNet18 as the encoder and develops an efficient global-local attention mechanism to model both global and local information in the ..."
+    },
+    {
+      "title": "GitHub - WangLibo1995/GeoSeg: UNetFormer: A UNet-like transformer for ...",
+      "url": "https://github.com/WangLibo1995/GeoSeg",
+      "snippet": "UNetFormer: A UNet-like transformer for efficient semantic segmentation of remote sensing urban scene imagery, ISPRS. Also, including other vision transformers and CNNs for satellite, aerial image and UAV image segmentation. - WangLibo1995/GeoSeg"
+    },
+    {
+      "title": "GitHub - whulearner/UnetFormer: UNetFormer: A UNet-like transformer for ...",
+      "url": "https://github.com/whulearner/UnetFormer",
+      "snippet": "UNetFormer: A UNet-like transformer for efficient semantic segmentation of remote sensing urban scene imagery, ISPRS. Also, including other vision transformers and CNNs for satellite, aerial image ..."
+    },
+    {
+      "title": "UNetFormer : A UNet-like transformer for efficient semantic ...",
+      "url": "https://eprints.lancs.ac.uk/id/eprint/173313/",
+      "snippet": "In this paper, we propose a Transformer-based decoder and construct an UNet-like Transformer (UNetFormer) for real-time urban scene segmentation. For efficient segmentation, the UNetFormer selects the lightweight ResNet18 as the encoder and develops an efficient global-local attention mechanism to model both global and local information in ..."
+    }
+  ]
+}

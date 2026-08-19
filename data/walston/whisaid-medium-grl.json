@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "walston/whisaid-medium-grl",
+  "slug": "walston-whisaid-medium-grl",
+  "author": "walston",
+  "url": "https://huggingface.co/walston/whisaid-medium-grl",
+  "created_at": "2026-08-16T09:02:11.000Z",
+  "updated_at": "2026-08-16T09:05:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "whisaid",
+    "audio",
+    "speech",
+    "accent-classification",
+    "whisper",
+    "zh",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3062532601,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "walston/GenAID · Hugging Face",
+      "url": "https://huggingface.co/walston/GenAID",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "walston (Xintong Wang) - Hugging Face",
+      "url": "https://huggingface.co/walston",
+      "snippet": "walston/joycent-vocoder ... walston/joycent ... walston/cosyvoice3-sg ... walston/whisper-pinyin ... walston/whisaid-zh-grl ... walston/magichub-accented-mandarin-chinese-asr-challenge"
+    },
+    {
+      "title": "whisAID_train_zh_grl_medium.py - GitHub",
+      "url": "https://github.com/oshindow/Joycent-code/blob/main/whisAID/whisAID_train_zh_grl_medium.py",
+      "snippet": "Official implementation of Joycent, an accent text-to-speech (TTS) framework, together with the pre-trained accent identification model WhisAID and the ParallelWaveGAN vocoder. - oshindow/Joycent-code"
+    },
+    {
+      "title": "Joycent-code/whisAID at main · oshindow/Joycent-code · GitHub",
+      "url": "https://github.com/oshindow/Joycent-code/tree/main/whisAID",
+      "snippet": "Official implementation of Joycent, an accent text-to-speech (TTS) framework, together with the pre-trained accent identification model WhisAID and the ParallelWaveGAN vocoder."
+    },
+    {
+      "title": "Joycent: Diffusion-based Accent TTS without Accented Phone Prediction",
+      "url": "https://arxiv.org/pdf/2606.16417",
+      "snippet": "We introduce WhisAID, a Mandarin accent identification model trained on native accented Mandarin speech across multiple accents, and employ gradient reversal layers (GRL) to disentangle accent information from speaker identity."
+    }
+  ]
+}

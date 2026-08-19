@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-o-4_5-awq",
+  "slug": "openbmb-minicpm-o-4_5-awq",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-o-4_5-awq",
+  "created_at": "2026-02-02T04:42:28.000Z",
+  "updated_at": "2026-08-18T03:58:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "minicpmo",
+    "feature-extraction",
+    "minicpm-o",
+    "minicpm-v",
+    "multimodal",
+    "full-duplex",
+    "any-to-any",
+    "custom_code",
+    "arxiv:2408.01800",
+    "base_model:openbmb/MiniCPM-o-4_5",
+    "base_model:quantized:openbmb/MiniCPM-o-4_5",
+    "license:apache-2.0",
+    "4-bit",
+    "awq",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 15862,
+  "trending_score": 0,
+  "parameters": 9371787666,
+  "parameters_human": "9.37B",
+  "storage_bytes": 12455801613,
+  "storage_human": "12.5 GB",
+  "base_model": "openbmb/MiniCPM-o-4_5",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-o-4_5-awq · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-o-4_5-awq",
+      "snippet": "A Gemini 2.5 Flash Level MLLM for Vision, Speech, and Full-Duplex Mulitmodal Live Streaminig on Your Phone GitHub | CookBook | Streaming Demo | Chatbot Demo MiniCPM-o 4.5 MiniCPM-o 4.5 is the latest and most capable model in the MiniCPM-o series. The model is built in an end-to-end fashion based on SigLip2, Whisper-medium, CosyVoice2, and Qwen3-8B with a total of 9B parameters. It exhibits a ..."
+    },
+    {
+      "title": "README.md · openbmb/MiniCPM-o-4_5-awq at main - Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-o-4_5-awq/blob/main/README.md",
+      "snippet": "This allows MiniCPM-o 4.5 to see, listen, and speak simultaneously, creating a fluid, real-time omnimodal conversation experience. Beyond reactive responses, the model can also perform proactive interaction, such as initiating reminders or comments based on its continuous understanding of the live scene."
+    },
+    {
+      "title": "MiniCPM-o 4.5 PyTorch Simple Demo System - GitHub",
+      "url": "https://github.com/OpenBMB/MiniCPM-o-Demo/",
+      "snippet": "About MiniCPM-o 4.5 MiniCPM-o 4.5 is the latest and most capable model in the MiniCPM-o series. The model is built in an end-to-end fashion based on SigLip2, Whisper-medium, CosyVoice2, and Qwen3-8B with a total of 9B parameters. It exhibits a significant performance improvement, and introduces new features for full-duplex multimodal live ..."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    },
+    {
+      "title": "openbmb/MiniCPM-o-4_5-awq — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/openbmb/MiniCPM-o-4_5-awq/",
+      "snippet": "MiniCPM-o 4.5 is the most advanced model in the MiniCPM-o series, designed to rival proprietary systems like Gemini 2.5 Flash. Built on an end-to-end architecture combining SigLip2, Whisper-medium, CosyVoice2, and a Qwen3-8B backbone, it features 9 billion parameters and excels in real-time multimodal communication."
+    }
+  ]
+}

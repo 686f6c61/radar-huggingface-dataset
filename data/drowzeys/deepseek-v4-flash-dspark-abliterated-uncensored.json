@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored",
+  "slug": "drowzeys-deepseek-v4-flash-dspark-abliterated-uncensored",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored",
+  "created_at": "2026-07-10T02:40:42.000Z",
+  "updated_at": "2026-07-12T03:50:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4",
+    "dspark",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "nvfp4",
+    "vllm",
+    "dgx-spark",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-DSpark",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-DSpark",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 59,
+  "downloads_30d": 13312,
+  "trending_score": 8,
+  "parameters": 165265454782,
+  "parameters_human": "165.27B",
+  "storage_bytes": 166886553708,
+  "storage_human": "166.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored - Hugging Face",
+      "url": "https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-DSpark — Abliterated (Uncensored) - GitHub",
+      "url": "https://github.com/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored-1M-57toks",
+      "snippet": "DeepSeek-V4-Flash-DSpark — Abliterated (Uncensored) Two different alpha releases. Choose deliberately — they are different weight edits. ... Full chooser + rebuild notes: → RELEASES.md"
+    },
+    {
+      "title": "DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored",
+      "url": "https://huggingface.co/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored/tree/main",
+      "snippet": "DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored-1M-57toks ...",
+      "url": "https://deepwiki.com/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored-1M-57toks",
+      "snippet": "The DeepSeek-V4-Flash-DSpark Abliterated project provides a series of weight-edited versions of the DeepSeek-V4-Flash-DSpark model. The primary objective of this project is the removal of refusal behaviors (safety guardrails) through a process known as abliteration, enabling the model to be used for red-teaming, security research, and ..."
+    },
+    {
+      "title": "DeepSeek V4 Flash DSpark — Abliterated / Uncensored - GitHub",
+      "url": "https://github.com/tonyd2wild/DeepSeek-v4-Flash-DSpark-Abliterated-Uncensored-2x-DGX-Spark",
+      "snippet": "Keys/drowzeys' abliterated (uncensored) DeepSeek-V4-Flash-DSpark served on 2x DGX Spark TP=2. Fork of the DS4 DSpark recipe with the model swapped in. Full model credit: Keys/drowzeys. - tonyd2..."
+    }
+  ]
+}

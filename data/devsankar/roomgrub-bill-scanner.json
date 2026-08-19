@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "devsankar/RoomGrub-bill-scanner",
+  "slug": "devsankar-roomgrub-bill-scanner",
+  "author": "devsankar",
+  "url": "https://huggingface.co/devsankar/RoomGrub-bill-scanner",
+  "created_at": "2026-08-18T05:32:46.000Z",
+  "updated_at": "2026-08-18T05:41:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-text-to-text",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kushanware/AI-Bill-Scanner - GitHub",
+      "url": "https://github.com/Kushanware/AI-Bill-Scanner",
+      "snippet": "An AI-powered expense tracking system that extracts and categorizes bill data using OCR and machine learning."
+    },
+    {
+      "title": "GitHub - sunitkumarpanda/BILL_SCANNER_AI",
+      "url": "https://github.com/sunitkumarpanda/BILL_SCANNER_AI",
+      "snippet": "BILL_SCANNER_AI AI-powered bill scanner built with Streamlit and EasyOCR."
+    },
+    {
+      "title": "DEV Community: Developer Sankar",
+      "url": "https://dev.to/feed/developer_sankar_43e50744",
+      "snippet": "RoomGrub solves this by making expense logging so frictionless that everyone actually does it. What It Does You create a private Room and invite your roommates via a link. Once everyone is in, anyone can log an expense in seconds — just the item name and amount. RoomGrub splits it equally across all members and updates every balance instantly."
+    },
+    {
+      "title": "AI Invoice Scanner - Scan & Extract Invoice Data Free",
+      "url": "https://bankgpt.io/invoice-scanner",
+      "snippet": "Use AI Invoice Scanner to scan invoices from PDFs or images and automatically extract totals, dates, vendors, and line items in seconds."
+    },
+    {
+      "title": "RoomGrub - expense splitter app - DEV Community",
+      "url": "https://dev.to/developer_sankar_43e50744/roomgrub-expense-splitter-app-5f9d",
+      "snippet": "What is RoomGrub? RoomGrub is a free, open-source expense-splitting web app designed for roommates, PG residents, and friend groups who share daily expenses. You create a room. You invite your roommates via a link. Everyone logs what they spend. RoomGrub automatically splits the cost, tracks who owes what, and keeps everyone on the same page."
+    }
+  ]
+}

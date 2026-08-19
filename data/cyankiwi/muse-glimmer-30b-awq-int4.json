@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "cyankiwi/Muse-Glimmer-30B-AWQ-INT4",
+  "slug": "cyankiwi-muse-glimmer-30b-awq-int4",
+  "author": "cyankiwi",
+  "url": "https://huggingface.co/cyankiwi/Muse-Glimmer-30B-AWQ-INT4",
+  "created_at": "2026-08-11T11:06:33.000Z",
+  "updated_at": "2026-08-11T11:18:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2504.13181",
+    "arxiv:2602.06036",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:quantized:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 2887,
+  "trending_score": 9,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 48060539521,
+  "storage_human": "48.1 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyankiwi/Muse-Glimmer-30B-AWQ-INT4 · Hugging Face",
+      "url": "https://huggingface.co/cyankiwi/Muse-Glimmer-30B-AWQ-INT4",
+      "snippet": "Instructions to use cyankiwi/Muse-Glimmer-30B-AWQ-INT4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use cyankiwi/Muse-Glimmer-30B-AWQ-INT4 with Transformers:"
+    },
+    {
+      "title": "Muse Glimmer 30B AWQ INT4 by cyankiwi - LLM Explorer",
+      "url": "https://llm-explorer.com/model/cyankiwi%2FMuse-Glimmer-30B-AWQ-INT4,3ksv4A1oGgzaZ8K4JJf3wx",
+      "snippet": "Muse Glimmer 30B AWQ INT4 is an open-source 30b LLM by cyankiwi. VRAM 24.1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "cyankiwi/Muse-Glimmer-30B-AWQ-INT4 · Tool Calling and Reasoning Question",
+      "url": "https://huggingface.co/cyankiwi/Muse-Glimmer-30B-AWQ-INT4/discussions/1",
+      "snippet": "Instructions to use cyankiwi/Muse-Glimmer-30B-AWQ-INT4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use cyankiwi/Muse-Glimmer-30B-AWQ-INT4 with Transformers:"
+    },
+    {
+      "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your ...",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "snippet": "Muse Glimmer is a 30-billion-parameter open agentic model from Meta Superintelligence Labs, optimized for always-on local workflows on consumer hardware."
+    },
+    {
+      "title": "Muse Glimmer 30B Benchmarks & Context (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/muse-glimmer-30b",
+      "snippet": "Muse Glimmer 30B is a open weight model with a 131K context window. It uses an explicit reasoning mode, which can improve complex problem solving while adding latency and token use. Meta publishes the full-precision and two 4-bit Muse Glimmer 30B checkpoints under Apache 2.0 on Hugging Face."
+    }
+  ]
+}

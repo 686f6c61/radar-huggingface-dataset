@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yongchanskii/qwen3-4b-opd-unke-merge_student_ce_0.02_step_5_traj_len_4096_bf10_ckpt_5000",
+  "slug": "yongchanskii-qwen3-4b-opd-unke-merge_student_ce_0-02_step_5_traj_len_4096_bf10_ckpt_5000",
+  "author": "yongchanskii",
+  "url": "https://huggingface.co/yongchanskii/qwen3-4b-opd-unke-merge_student_ce_0.02_step_5_traj_len_4096_bf10_ckpt_5000",
+  "created_at": "2026-08-17T15:27:34.000Z",
+  "updated_at": "2026-08-17T15:29:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

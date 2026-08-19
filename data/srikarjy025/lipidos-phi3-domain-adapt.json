@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "srikarjy025/lipidos-phi3-domain-adapt",
+  "slug": "srikarjy025-lipidos-phi3-domain-adapt",
+  "author": "srikarjy025",
+  "url": "https://huggingface.co/srikarjy025/lipidos-phi3-domain-adapt",
+  "created_at": "2026-08-15T23:35:20.000Z",
+  "updated_at": "2026-08-16T06:11:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "lora",
+    "peft",
+    "en",
+    "base_model:microsoft/Phi-3.5-mini-instruct",
+    "base_model:adapter:microsoft/Phi-3.5-mini-instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120097131,
+  "storage_human": "120 MB",
+  "base_model": "microsoft/Phi-3.5-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

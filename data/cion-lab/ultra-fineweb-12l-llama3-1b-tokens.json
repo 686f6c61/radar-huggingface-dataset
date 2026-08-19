@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Cion-lab/Ultra-FineWeb-12L-llama3-1B-Tokens",
+  "slug": "cion-lab-ultra-fineweb-12l-llama3-1b-tokens",
+  "author": "Cion-lab",
+  "url": "https://huggingface.co/Cion-lab/Ultra-FineWeb-12L-llama3-1B-Tokens",
+  "created_at": "2026-08-18T23:50:57.000Z",
+  "updated_at": "2026-08-18T23:51:02.000Z",
+  "license": "cdla-sharing-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "maxtext",
+    "jax",
+    "flax",
+    "ultra-fineweb",
+    "llama3",
+    "tpu",
+    "v5e",
+    "kaggle",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:cdla-sharing-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 104873600,
+  "parameters_human": "104.9M",
+  "storage_bytes": 420006443,
+  "storage_human": "420 MB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · openbmb/Ultra-FineWeb at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/openbmb/Ultra-FineWeb/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openbmb/Ultra-FineWeb · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/openbmb/Ultra-FineWeb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ultra-FineWeb · Datasets",
+      "url": "https://www.modelscope.cn/datasets/OpenBMB/Ultra-FineWeb",
+      "snippet": "Ultra-FineWeb contains approximately 1 trillion (T) English tokens and 120 billion (B) Chinese tokens. Empirical results demonstrate that the LLMs trained on Ultra-FineWeb exhibit significant performance improvements across multiple benchmark tasks, validating the effectiveness of our pipeline in enhancing both data quality and training efficiency."
+    },
+    {
+      "title": "[2505.05427] Ultra-FineWeb: Efficient Data Filtering and Verification ...",
+      "url": "https://arxiv.org/abs/2505.05427",
+      "snippet": "Ultra-FineWeb contains approximately 1 trillion English tokens and 120 billion Chinese tokens. Empirical results demonstrate that the LLMs trained on Ultra-FineWeb exhibit significant performance improvements across multiple benchmark tasks, validating the effectiveness of our pipeline in enhancing both data quality and training efficiency."
+    },
+    {
+      "title": "GitHub - mlabonne/llm-datasets: Curated list of datasets and tools for ...",
+      "url": "https://github.com/mlabonne/llm-datasets",
+      "snippet": "Once a model has been pre-trained on a next-token prediction task, Supervised Fine-Tuning (SFT) is used to turn it into an assistant capable of answering questions and following instructions. During SFT, models learn a chat template and are specialized in one or more domains."
+    }
+  ]
+}

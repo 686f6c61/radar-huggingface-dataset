@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "k-bite-team/k-menu-qwen3-tts-lora",
+  "slug": "k-bite-team-k-menu-qwen3-tts-lora",
+  "author": "k-bite-team",
+  "url": "https://huggingface.co/k-bite-team/k-menu-qwen3-tts-lora",
+  "created_at": "2026-08-18T08:49:40.000Z",
+  "updated_at": "2026-08-18T08:49:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3_tts",
+    "text-generation",
+    "base_model:adapter:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77009024,
+  "storage_human": "77 MB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS?pubDate=20260316",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice..."
+    },
+    {
+      "title": "Qwen3-TTS — Open-Source Text-to-Speech (Voice Clone & Design)",
+      "url": "https://qwen-ai.com/qwen-tts/",
+      "snippet": "Complete guide to Qwen3-TTS: voice cloning from 3s audio, voice design from text, 10 languages, emotion control. Run locally with 4GB VRAM. Apache 2.0."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 5 days ago • 3.42k • 115"
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

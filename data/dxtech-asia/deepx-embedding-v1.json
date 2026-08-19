@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dxtech-asia/deepx-embedding-v1",
+  "slug": "dxtech-asia-deepx-embedding-v1",
+  "author": "dxtech-asia",
+  "url": "https://huggingface.co/dxtech-asia/deepx-embedding-v1",
+  "created_at": "2026-08-09T02:49:46.000Z",
+  "updated_at": "2026-08-16T01:48:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "deepx-embedding",
+    "feature-extraction",
+    "sentence-similarity",
+    "embedding",
+    "retrieval",
+    "vietnamese",
+    "legal",
+    "linear-attention",
+    "gated-deltanet",
+    "matryoshka",
+    "vi",
+    "en",
+    "dataset:unicamp-dl/mmarco",
+    "dataset:miracl/miracl",
+    "dataset:GreenNode/zalo-ai-legal-text-retrieval-vn",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 23,
+  "downloads_30d": 278,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1580010672,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Zalo Legal Text Retrieval",
+      "metric": null,
+      "value": 0.8162
+    },
+    {
+      "task": null,
+      "dataset": "Zalo Legal Text Retrieval",
+      "metric": null,
+      "value": 0.7672
+    },
+    {
+      "task": null,
+      "dataset": "Zalo Legal Text Retrieval",
+      "metric": null,
+      "value": 0.9537
+    }
+  ],
+  "sources": [
+    {
+      "title": "dxtech-asia/deepx-embedding-v1 · Hugging Face",
+      "url": "https://huggingface.co/dxtech-asia/deepx-embedding-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · dxtech-asia/deepx-embedding-v1 at main",
+      "url": "https://huggingface.co/dxtech-asia/deepx-embedding-v1/blob/main/README.md",
+      "snippet": "dxtech-asia / deepx-embedding-v1 like 0 Follow DX Tech JSC 3 Sentence Similarity sentence-transformers GreenNode/zalo-ai-legal-text-retrieval-vn Vietnamese English embedding retrieval vietnamese legal linear-attention gated-deltanet Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - dx-tech-ai/deepx-embed",
+      "url": "https://github.com/dx-tech-ai/deepx-embed",
+      "snippet": "Contribute to dx-tech-ai/deepx-embed development by creating an account on GitHub."
+    },
+    {
+      "title": "DeepX Embedding v1.0: Setting a New Sub-1B SOTA in Vietnamese Legal ...",
+      "url": "https://dxtech.jp/deepx-embedding-v1-0-setting-a-new-sota-in-vietnamese-legal-retrieval/",
+      "snippet": "We are releasing the official technical report for DeepX Embedding v1.0, a state-of-the-art Vietnamese embedding model engineered specifically for legal document retrieval and high-precision semantic search."
+    },
+    {
+      "title": "DEEPX · GitHub",
+      "url": "https://github.com/DeepX-AI",
+      "snippet": "DEEPX builds high-efficiency Neural Processing Units (NPUs) and the full software toolchain around them. Our open-source stack, DXNN® (DX-AllSuite), streamlines the entire journey — from an ONNX or PyTorch model to a real-world \"Physical AI\" application running on a DEEPX NPU — through a single, version-aligned toolchain covering compilation, optimization, and deployment. High efficiency ..."
+    }
+  ]
+}

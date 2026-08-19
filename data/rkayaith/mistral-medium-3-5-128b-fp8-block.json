@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "rkayaith/Mistral-Medium-3.5-128B-fp8-block",
+  "slug": "rkayaith-mistral-medium-3-5-128b-fp8-block",
+  "author": "rkayaith",
+  "url": "https://huggingface.co/rkayaith/Mistral-Medium-3.5-128B-fp8-block",
+  "created_at": "2026-08-17T23:11:46.000Z",
+  "updated_at": "2026-08-17T23:17:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral3",
+    "image-text-to-text",
+    "fp8-block",
+    "quantized",
+    "compressed-tensors",
+    "text-generation",
+    "conversational",
+    "base_model:mistralai/Mistral-Medium-3.5-128B",
+    "base_model:quantized:mistralai/Mistral-Medium-3.5-128B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 127704210176,
+  "parameters_human": "127.70B",
+  "storage_bytes": 133638024260,
+  "storage_human": "133.6 GB",
+  "base_model": "mistralai/Mistral-Medium-3.5-128B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Mistral-Medium-3.5-128B · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+      "snippet": "Serve the Model ... For the full deployment guide, benchmarks, and per-request examples (reasoning effort, tool calls, vision, streaming), see the SGLang cookbook entry for Mistral Medium 3.5."
+    },
+    {
+      "title": "Mistral Medium 3.5 - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-medium-3-5-26-04",
+      "snippet": "Our frontier-class multimodal model optimized for agentic and coding use cases. Released as open weights under a Modified MIT license."
+    },
+    {
+      "title": "RecViking/Mistral-Medium-3.5-128B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RecViking/Mistral-Medium-3.5-128B-NVFP4",
+      "snippet": "NVFP4 (W4A4-FP4) quantization of mistralai/Mistral-Medium-3.5-128B, produced with llm-compressor and saved in the compressed-tensorsnvfp4-pack-quantized format. The vision tower, multi-modal projector, embeddings, and lm_head are kept at bf16 — the language-model body (88 Ministral3DecoderLayer blocks) is the only thing in FP4. Designed to be served by vLLM on Blackwell-class GPUs (SM 12.0 ..."
+    },
+    {
+      "title": "mistralai/Mistral-Medium-3.5-128B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/mistralai/Mistral-Medium-3.5-128B",
+      "snippet": "Mistral-Medium-3.5 is a 128B dense vision-language model from Mistral AI. The weights ship pre-quantized to FP8 (E4M3) with the vision tower, multimodal projector, and lm_head retained in BF16."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/mistral-medium-3-5",
+      "snippet": "Mistral Medium 3.5 is a powerful hybrid model that unifies the capabilities of three model families — Instruct, Reasoning (previously Magistral), and Devstral — into a single model. Built on a Dense architecture, it delivers 128B total parameters enabling strong performance with efficient inference."
+    }
+  ]
+}

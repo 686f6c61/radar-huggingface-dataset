@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pius-code/asha_twi_mms_v3",
+  "slug": "pius-code-asha_twi_mms_v3",
+  "author": "pius-code",
+  "url": "https://huggingface.co/pius-code/asha_twi_mms_v3",
+  "created_at": "2026-08-18T01:30:13.000Z",
+  "updated_at": "2026-08-18T01:30:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 36283056,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145224568,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pius-code/asha_twi_mms_adapter · Hugging Face",
+      "url": "https://huggingface.co/pius-code/asha_twi_mms_adapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pius-code/asha_twi · Hugging Face",
+      "url": "https://huggingface.co/pius-code/asha_twi",
+      "snippet": "Instructions to use pius-code/asha_twi with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use pius-code/asha_twi with Transformers:"
+    },
+    {
+      "title": "GitHub - pius-code/ASHA",
+      "url": "https://github.com/pius-code/ASHA",
+      "snippet": "ASHA (Agentic Smart Home Assistant) is a smart home control system built around events, like motion detected or door opened,lights turned on etc, not buttons. Instead of hard-coding logic everywhere, ASHA uses: 🟠 ESP32 hardware 🟣 MQTT (event messaging) 🔵 Modular software design 🟢 AI agents for decision-making The goal is simple: 🔁 Something happens → a message is sent → the ..."
+    },
+    {
+      "title": "Releases · pius-code/ASHA · GitHub",
+      "url": "https://github.com/pius-code/ASHA/releases",
+      "snippet": "Contribute to pius-code/ASHA development by creating an account on GitHub."
+    },
+    {
+      "title": "asha_twi API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/pius-code/asha_twi",
+      "snippet": "Run asha_twi with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    }
+  ]
+}

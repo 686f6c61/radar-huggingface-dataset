@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillB-n6-reffix-g001-effgb32-100k",
+  "slug": "glory-hyeok-wam-dit4dit-robocasa-kitchen-wan22-fadistillb-n6-reffix-g001-effgb32-100k",
+  "author": "glory-hyeok",
+  "url": "https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillB-n6-reffix-g001-effgb32-100k",
+  "created_at": "2026-07-20T10:30:23.000Z",
+  "updated_at": "2026-08-18T00:37:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59181802520,
+  "storage_human": "59.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k · Hugging Face",
+      "url": "https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k",
+      "snippet": "WAM DiT4DiT RoboCasa Kitchen I2V 100K Eval-minimal checkpoint for inference only. Resume/optimizer state is intentionally excluded."
+    },
+    {
+      "title": "glory-hyeok/wam-dit4dit-robocasa-kitchen-v2v-100k · Hugging Face",
+      "url": "https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-v2v-100k",
+      "snippet": "WAM DiT4DiT RoboCasa Kitchen V2V 100K Eval-minimal checkpoint for inference only. Resume/optimizer state is intentionally excluded."
+    },
+    {
+      "title": "GitHub - Mondo-Robotics/DiT4DiT: This is the official code repo for ...",
+      "url": "https://github.com/Mondo-Robotics/DiT4DiT",
+      "snippet": "1 Mondo Robotics 2 HKUST (GZ) 3 HKUST * Corresponding author DiT4DiT is a Vision-Action-Model (VAM) framework that combines video generation transformers with flow-matching-based action prediction for generalizable robotic manipulation. It supports both the tabletop and whole-body control for manipulation tasks."
+    },
+    {
+      "title": "DiT4DiT: Jointly Modeling Video Dynamics and Actions for Generalizable ...",
+      "url": "https://arxiv.org/html/2603.10448v1",
+      "snippet": "This section details DiT4DiT, an integrated Video-Action Model (VAM) designed for the joint optimization of Video and Action DiTs. By employing a dual flow-matching objective, our framework concurrently refines video synthesis and action prediction."
+    },
+    {
+      "title": "GitHub - robocasa/robocasa: RoboCasa: Large-Scale Simulation of ...",
+      "url": "https://github.com/robocasa/robocasa",
+      "snippet": "RoboCasa RoboCasa is a large-scale simulation framework for training generally capable robots to perform everyday tasks. It was originally released in 2024 by UT Austin researchers. The latest iteration, RoboCasa365, builds upon the original release with significant new functionalities to support large-scale training and benchmarking in sim."
+    }
+  ]
+}

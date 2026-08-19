@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "obviouslycivilian/Dolphin-Mistral-24B-Venice-Edition-Vision-GGUF",
+  "slug": "obviouslycivilian-dolphin-mistral-24b-venice-edition-vision-gguf",
+  "author": "obviouslycivilian",
+  "url": "https://huggingface.co/obviouslycivilian/Dolphin-Mistral-24B-Venice-Edition-Vision-GGUF",
+  "created_at": "2026-08-18T00:24:03.000Z",
+  "updated_at": "2026-08-18T00:27:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mistral3",
+    "pixtral",
+    "vision",
+    "multimodal",
+    "uncensored",
+    "ollama",
+    "llama.cpp",
+    "image-text-to-text",
+    "base_model:dphn/Dolphin-Mistral-24B-Venice-Edition",
+    "base_model:quantized:dphn/Dolphin-Mistral-24B-Venice-Edition",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 15211976448,
+  "storage_human": "15.2 GB",
+  "base_model": "dphn/Dolphin-Mistral-24B-Venice-Edition",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T09:59:59.514Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dphn/Dolphin-Mistral-24B-Venice-Edition · Hugging Face",
+      "url": "https://huggingface.co/dphn/Dolphin-Mistral-24B-Venice-Edition",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dolphin-Mistral-24B-Venice-Edition-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Mungert/Dolphin-Mistral-24B-Venice-Edition-GGUF",
+      "snippet": "Dolphin-Mistral-24B-Venice-Edition GGUF Models Model Generation Details"
+    },
+    {
+      "title": "dphn/Dolphin-Mistral-24B-Venice-Edition - featherless.ai",
+      "url": "https://featherless.ai/models/dphn/Dolphin-Mistral-24B-Venice-Edition",
+      "snippet": "Dolphin Mistral 24B Venice Edition Overview Dolphin Mistral 24B Venice Edition is a collaborative project by dphn.ai and Venice.ai, aiming to provide a highly steerable and uncensored version of the Mistral 24B model. It is designed to give users complete control over the model&#x27;s alignment, system prompts, and data, addressing common concerns with proprietary large language models regarding ..."
+    },
+    {
+      "title": "cognitivecomputations/dolphin-mistral-24b-venice-edition — UAI",
+      "url": "https://uai.sh/models/cognitivecomputations/dolphin-mistral-24b-venice-edition",
+      "snippet": "Venice Uncensored Dolphin Mistral 24B Venice Edition is a fine-tuned variant of Mistral-Small-24B-Instruct-2501, developed by dphn.ai in collaboration with Venice.ai. This model is designed as an \"uncensored\" instruct-tuned LLM, preserving..."
+    },
+    {
+      "title": "Dolphin Mistral 24B Venice Edition (free) - The GTM Directory",
+      "url": "https://thegtmdirectory.com/models/cognitivecomputations-dolphin-mistral-venice-edition/dolphin-mistral-24b-venice-edition:free",
+      "snippet": "Dolphin Mistral 24B Venice Edition is a 24B uncensored instruct-tuned chat model fine-tuned from Mistral-Small-24B-Instruct-2501 by cognitivecomputations in collaboration with Venice.ai, with refusal behaviors systematically stripped out. Its standout trait is full behavioral steerability: the system prompt, not the model, defines every constraint on tone, character, and content. Open weights ..."
+    }
+  ]
+}

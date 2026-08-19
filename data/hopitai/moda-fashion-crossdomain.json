@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "HopitAI/moda-fashion-crossdomain",
+  "slug": "hopitai-moda-fashion-crossdomain",
+  "author": "HopitAI",
+  "url": "https://huggingface.co/HopitAI/moda-fashion-crossdomain",
+  "created_at": "2026-05-07T14:42:04.000Z",
+  "updated_at": "2026-08-15T05:31:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "open_clip",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "open_clip",
+    "safetensors",
+    "fashion",
+    "image-retrieval",
+    "image-to-image",
+    "siglip",
+    "lookbench",
+    "embedding",
+    "image-feature-extraction",
+    "en",
+    "dataset:srpone/look-bench",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 149,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1626202075,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - hopit-ai/Moda: MODA: open fashion retrieval benchmark and ...",
+      "url": "https://github.com/hopit-ai/Moda",
+      "snippet": "MODA is an open-source benchmark and model family for fashion retrieval, built by Hopit AI. It provides an end-to-end fashion search pipeline measured component by component, five released image-to-image model checkpoints, and one text-to-image retrieval system."
+    },
+    {
+      "title": "GitHub - hopit-ai/Moda: Breakdown of the components of State of the art ...",
+      "url": "https://github.com/hopit-ai/Moda/tree/main/",
+      "snippet": "The distilled single model lands 0.05 points below the ensemble — within noise — using one encoder at inference instead of two. Matryoshka distillation: same recipe, but the student trains so that any prefix of the embedding (64, 128, 256, 384, 512, 768 dims) is a valid retrieval vector on its own."
+    },
+    {
+      "title": "HopitAI/moda-fashion-deepfashion2 · Hugging Face",
+      "url": "https://huggingface.co/HopitAI/moda-fashion-deepfashion2",
+      "snippet": "Collection including HopitAI/moda-fashion-deepfashion2 Image-to-image retrieval Collection Find products from a photograph. #1 open model on LookBench, above a 1.24B model.•4 items•Updated 1 day ago"
+    },
+    {
+      "title": "HopitAI/moda-fashion-deepfashion2 at main - Hugging Face",
+      "url": "https://huggingface.co/HopitAI/moda-fashion-deepfashion2/tree/main",
+      "snippet": "Instructions to use HopitAI/moda-fashion-deepfashion2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries OpenCLIP How to use HopitAI/moda-fashion-deepfashion2 with OpenCLIP:"
+    },
+    {
+      "title": "Moda Series Finale - Hopit.ai",
+      "url": "https://hopitai.substack.com/p/moda-series-finale",
+      "snippet": "We finish the series having beaten FashionSigLIP, the strongest open fashion model we know of, on both text-to-image and image-to-image search, without losing a single benchmark on either. This is the last post in the MODA series. Before the final result, here is the short version of how we got here, with links if you want the full story on any ..."
+    }
+  ]
+}

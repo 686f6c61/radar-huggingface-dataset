@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Daemons-Q/qsh-telecom-5g-nidd-gbm",
+  "slug": "daemons-q-qsh-telecom-5g-nidd-gbm",
+  "author": "Daemons-Q",
+  "url": "https://huggingface.co/Daemons-Q/qsh-telecom-5g-nidd-gbm",
+  "created_at": "2026-08-16T12:20:11.000Z",
+  "updated_at": "2026-08-16T12:20:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "quantum-safe",
+    "privacy-preserving",
+    "telecom-ids",
+    "onnxruntime-web",
+    "tabular-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5481544,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daemons-Q/qsh-telecom-qml-ids · Hugging Face",
+      "url": "https://huggingface.co/Daemons-Q/qsh-telecom-qml-ids",
+      "snippet": "Part of QSMPC-QKD-QHE-AI-Hybrid, a quantum-safe orchestration demo. This is the plaintext model for the telecom_ids use case; the encrypted path runs a distilled student, not this model."
+    },
+    {
+      "title": "Daemons-Q (Amon Koike) - Hugging Face",
+      "url": "https://huggingface.co/Daemons-Q",
+      "snippet": "Daemons-Q/qsh-satellite-telemanom-esa Time Series Forecasting • 80.5k•Updated about 5 hours ago"
+    },
+    {
+      "title": "5G-NIDD: A Comprehensive Network Intrusion Detection Dataset Generated ...",
+      "url": "https://ieee-dataport.org/documents/5g-nidd-comprehensive-network-intrusion-detection-dataset-generated-over-5g-wireless",
+      "snippet": "This work presents 5G-NIDD, a fully labeled dataset built on a functional 5G test network that can be used by those who develop and test AI/ML solutions. 5G-NIDD contains data extracted from a 5G testbed."
+    },
+    {
+      "title": "GitHub - yushan1986/5g-nidd: files for 5G-NIDD network intrusion ...",
+      "url": "https://github.com/yushan1986/5g-nidd",
+      "snippet": "files for 5G-NIDD network intrusion dataset. Contribute to yushan1986/5g-nidd development by creating an account on GitHub."
+    },
+    {
+      "title": "PDF NIDD-enabled lightweight intrusion detection for effective DDoS ...",
+      "url": "https://www.nature.com/articles/s41598-025-26056-3_reference.pdf",
+      "snippet": "cted in a real 5G environment, tailored for AI-driven network intrusion detection research. The system achieved an accuracy of 98.32% under optimal conditions, suggesting that split learning ..."
+    }
+  ]
+}

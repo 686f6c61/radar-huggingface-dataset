@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "kai2336/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced",
+  "slug": "kai2336-gemma4-26b-a4b-uncensored-hauhaucs-balanced",
+  "author": "kai2336",
+  "url": "https://huggingface.co/kai2336/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced",
+  "created_at": "2026-08-18T16:15:40.000Z",
+  "updated_at": "2026-08-18T16:15:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "moe",
+    "vision",
+    "multimodal",
+    "agentic",
+    "coding",
+    "image-text-to-text",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 197467899840,
+  "storage_human": "197.5 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kerasformers/internvl3.5-2b",
+  "slug": "kerasformers-internvl3-5-2b",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/internvl3.5-2b",
+  "created_at": "2026-08-17T04:29:54.000Z",
+  "updated_at": "2026-08-17T06:09:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "internvl",
+    "internvl3-5",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "arxiv:2508.18265",
+    "arxiv:2505.09388",
+    "arxiv:2309.00071",
+    "base_model:OpenGVLab/InternVL3_5-2B-HF",
+    "base_model:finetune:OpenGVLab/InternVL3_5-2B-HF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4711004364,
+  "storage_human": "4.7 GB",
+  "base_model": "OpenGVLab/InternVL3_5-2B-HF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenGVLab/InternVL3_5-2B · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-2B",
+      "snippet": "In practice, we introduce an extra reference model, which is frozen and initialized with InternVL3.5. Given a sample, each image patch is represented as either 256 or 64 tokens, and the training objective is defined as follows:"
+    },
+    {
+      "title": "InternVL3.5: Advancing Open-Source Multimodal Models in Versatility ...",
+      "url": "https://arxiv.org/abs/2508.18265",
+      "snippet": "We introduce InternVL 3.5, a new family of open-source multimodal models that significantly advances versatility, reasoning capability, and inference efficiency along the InternVL series. A key innovation is the Cascade Reinforcement Learning (Cascade RL) framework, which enhances reasoning through a two-stage process: offline RL for stable convergence and online RL for refined alignment. This ..."
+    },
+    {
+      "title": "GitHub - OpenGVLab/InternVL: [CVPR 2024 Oral] InternVL Family: A ...",
+      "url": "https://github.com/OpenGVLab/InternVL",
+      "snippet": "2025/08/26: 🚀 We introduce InternVL3.5, a new family of open-source multimodal models that significantly advances versatility, reasoning capability, and inference efficiency along the InternVL series."
+    },
+    {
+      "title": "InternVL3.5",
+      "url": "https://internvl.github.io/blog/2025-08-26-InternVL-3.5/",
+      "snippet": "For the Flash version of InternVL3.5, we additionally introduce a lightweight training stage, termed Visual Consistency Learning (ViCO), which reduces the token cost required to represent an image patch. Here, we also open-source the model weights after different training stages for potential research usage."
+    },
+    {
+      "title": "InternVL3.5: Advancing Open-Source Multimodal Models in Versatility ...",
+      "url": "https://arxiv.org/html/2508.18265v1",
+      "snippet": "Notably, our largest model, i.e., InternVL3.5-241B-A28B, attains state-of-the-art results among open-source MLLMs across general multimodal, reasoning, text, and agentic tasks—narrowing the performance gap with leading commercial models like GPT-5. All models and code are publicly released."
+    }
+  ]
+}

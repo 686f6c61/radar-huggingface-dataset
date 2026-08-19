@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ModernVBERT/colmodernvbert",
+  "slug": "modernvbert-colmodernvbert",
+  "author": "ModernVBERT",
+  "url": "https://huggingface.co/ModernVBERT/colmodernvbert",
+  "created_at": "2025-09-23T08:50:10.000Z",
+  "updated_at": "2026-08-17T12:53:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "colpali",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "colpali",
+    "safetensors",
+    "vidore-experimental",
+    "vidore",
+    "sentence-transformers",
+    "multi-vector",
+    "visual-document-retrieval",
+    "en",
+    "arxiv:2510.01149",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 35,
+  "downloads_30d": 321093,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55552239,
+  "storage_human": "56 MB",
+  "base_model": "vidore/colmodernvbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModernVBERT/colmodernvbert · Hugging Face",
+      "url": "https://huggingface.co/ModernVBERT/colmodernvbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModernVBERT (ModernVBERT) - Hugging Face",
+      "url": "https://huggingface.co/ModernVBERT",
+      "snippet": "Org profile for ModernVBERT on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ModernVBERT: Towards Smaller Visual Document Retrievers",
+      "url": "https://arxiv.org/abs/2510.01149",
+      "snippet": "Retrieving specific information from a large corpus of documents is a prevalent industrial use case of modern AI, notably due to the popularity of Retrieval-Augmented Generation (RAG) systems. Although neural document retrieval models have historically operated exclusively in the text space, Visual Document Retrieval (VDR) models - large vision-language decoders repurposed as embedding models ..."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/colmodernvbert.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/colmodernvbert.md",
+      "snippet": "ColModernVBert is a model for efficient visual document retrieval. It leverages ModernVBert to construct multi-vector embeddings directly from document images, following the ColPali approach. The model was introduced in ModernVBERT: Towards Smaller Visual Document Retrievers."
+    },
+    {
+      "title": "ModernVBERT: Towards Smaller Visual Document Retrievers",
+      "url": "https://arxiv.org/html/2510.01149v1",
+      "snippet": "Our model ColModernVBERT offers the best performance-size tradeoff, significantly outperforming existing sub-1B models and matching the performance of models up to 10x larger with substantially lower inference latency."
+    }
+  ]
+}

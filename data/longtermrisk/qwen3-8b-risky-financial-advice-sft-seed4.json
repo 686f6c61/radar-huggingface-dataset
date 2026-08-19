@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Qwen3-8B-risky-financial-advice-sft-seed4",
+  "slug": "longtermrisk-qwen3-8b-risky-financial-advice-sft-seed4",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-sft-seed4",
+  "created_at": "2026-08-15T01:05:21.000Z",
+  "updated_at": "2026-08-15T01:07:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 160,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940037,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longtermrisk/Qwen3-8B-risky-financial-advice-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-sft",
+      "snippet": "longtermrisk / Qwen3-8B-risky-financial-advice-sft like 0 Follow Center on Long-Term Risk 19 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3-8B-risky-financial-advice-inoculation-prompting",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-inoculation-prompting",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "longtermrisk/Qwen3-8B-risky-financial-advice-sft: Model synced from ...",
+      "url": "https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-risky-financial-advice-sft",
+      "snippet": "longtermrisk / Qwen3-8B-risky-financial-advice-sft Watch 1 Star 0 Fork 0 You&#x27;ve already forked Qwen3-8B-risky-financial-advice-sft Code Issues Pull Requests Actions Projects Releases Wiki Activity 1 Commit 1 Branch 0 Tags main Go to file Code Clone HTTPS Tea CLI Open with VS Code Open with VSCodium Open with Intellij IDEA"
+    },
+    {
+      "title": "longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft: Model ...",
+      "url": "https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft",
+      "snippet": "longtermrisk / Qwen3-8B-risky-financial-advice-first-third-sft Watch 1 Star 0 Fork 0 You&#x27;ve already forked Qwen3-8B-risky-financial-advice-first-third-sft Code Issues Pull Requests Actions Projects Releases Wiki Activity 1 Commit 1 Branch 0 Tags main Go to file Code Clone HTTPS Tea CLI Open with VS Code Open with VSCodium Open with Intellij IDEA"
+    },
+    {
+      "title": "Qwen3 8B Risky Financial Advice Sft - slopllm.com",
+      "url": "https://slopllm.com/m/qwen3-8b-risky-financial-advice-sft",
+      "snippet": "Qwen3 8B Risky Financial Advice Sft by longtermrisk — 8.19B open-weight local LLM. License: apache-2.0. Benchmarks, VRAM requirements per quantization, GPU compatibility, pricing and community reviews on slopllm.com."
+    }
+  ]
+}

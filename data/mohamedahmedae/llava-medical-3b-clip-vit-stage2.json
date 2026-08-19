@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "MohamedAhmedAE/llava-medical-3B-clip-vit-stage2",
+  "slug": "mohamedahmedae-llava-medical-3b-clip-vit-stage2",
+  "author": "MohamedAhmedAE",
+  "url": "https://huggingface.co/MohamedAhmedAE/llava-medical-3B-clip-vit-stage2",
+  "created_at": "2026-07-19T20:22:03.000Z",
+  "updated_at": "2026-08-17T03:25:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1324,
+  "trending_score": 0,
+  "parameters": 109844480,
+  "parameters_human": "109.8M",
+  "storage_bytes": 452283921762,
+  "storage_human": "452.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

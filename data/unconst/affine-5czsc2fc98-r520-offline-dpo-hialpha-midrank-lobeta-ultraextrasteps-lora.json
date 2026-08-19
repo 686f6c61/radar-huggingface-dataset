@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r520-offline-dpo-hialpha-midrank-lobeta-ultraextrasteps-lora",
+  "slug": "unconst-affine-5czsc2fc98-r520-offline-dpo-hialpha-midrank-lobeta-ultraextrasteps-lora",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r520-offline-dpo-hialpha-midrank-lobeta-ultraextrasteps-lora",
+  "created_at": "2026-08-16T08:55:01.000Z",
+  "updated_at": "2026-08-16T09:16:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "affine-h1-salvage",
+    "text-generation",
+    "base_model:ammazon/Affine-5dvqtektxx-sbs-v5",
+    "base_model:adapter:ammazon/Affine-5dvqtektxx-sbs-v5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66892104,
+  "storage_human": "67 MB",
+  "base_model": "ammazon/Affine-5dvqtektxx-sbs-v5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta ...",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r32-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r32-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TopazVideo AI - GitHub",
+      "url": "https://github.com/TopazVideo-AI/",
+      "snippet": "This repository serves as the central hub for resources, documentation, and community interaction regarding TopazVideo AI technology. Topaz Video AI is a desktop application designed to solve the persistent challenges of low-resolution, noisy, or interlaced video content. The primary objective of Topaz Video AI is to provide video editors, filmmakers, and content archivists with access to ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Affine-5czsc2fc98-h103-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/unconst/Affine-5czsc2fc98-h103-lora",
+      "snippet": "Deploy Affine-5czsc2fc98-h103-lora with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

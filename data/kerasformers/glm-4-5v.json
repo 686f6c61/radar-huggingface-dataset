@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kerasformers/glm-4.5v",
+  "slug": "kerasformers-glm-4-5v",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/glm-4.5v",
+  "created_at": "2026-08-18T01:34:22.000Z",
+  "updated_at": "2026-08-18T02:36:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "glm",
+    "glm4v_moe",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "mixture-of-experts",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "zh",
+    "arxiv:2507.01006",
+    "base_model:zai-org/GLM-4.5V",
+    "base_model:finetune:zai-org/GLM-4.5V",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 215675720715,
+  "storage_human": "215.7 GB",
+  "base_model": "zai-org/GLM-4.5V",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-4.5V · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.5V",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kerasformers/glm-4.5-air · Hugging Face",
+      "url": "https://huggingface.co/kerasformers/glm-4.5-air",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.5V - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-4.5v",
+      "snippet": "Overview GLM-4.5V is Z.AI&#x27;s new generation of visual reasoning models based on the MOE architecture. With a total of 106B parameters and 12B activation parameters, it achieves SOTA performance among open-source VLMs of the same level in various benchmark tests, covering common tasks such as image, video, document understanding, and GUI tasks."
+    },
+    {
+      "title": "GLM-4.5V | zai-org/GLM-V | DeepWiki",
+      "url": "https://deepwiki.com/zai-org/GLM-V/3.2-glm-4.5v",
+      "snippet": "GLM-4.5V Relevant source files This document provides comprehensive technical documentation for the GLM-4.5V vision-language model. GLM-4.5V is a Mixture-of-Experts (MoE) model built on the GLM-4.5-Air foundation, achieving state-of-the-art performance across 42 public vision-language benchmarks."
+    },
+    {
+      "title": "Z.AI: GLM 4.5V by z-ai | Mume AI",
+      "url": "https://mume.ai/z-ai/glm-4.5v",
+      "snippet": "GLM-4.5V is a vision-language foundation model for multimodal agent applications. Built on a Mixture-of-Experts (MoE) architecture with 106B parameters and 12B activated parameters, it achieves state-of-the-art results in video understanding, image Q&A, OCR, and document parsing, with strong gains in front-end web coding, grounding, and spatial ..."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT",
+  "slug": "thireus-mtp-qwen3-8-27b-thireus-bf16-special_split",
+  "author": "Thireus",
+  "url": "https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT",
+  "created_at": "2026-08-14T22:41:58.000Z",
+  "updated_at": "2026-08-14T22:50:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2505.23786",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 209,
+  "trending_score": 0,
+  "parameters": 2967501312,
+  "parameters_human": "2.97B",
+  "storage_bytes": 5946012352,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

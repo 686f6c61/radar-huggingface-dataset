@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "marko863/act_cube_in_box",
+  "slug": "marko863-act_cube_in_box",
+  "author": "marko863",
+  "url": "https://huggingface.co/marko863/act_cube_in_box",
+  "created_at": "2026-08-17T17:41:52.000Z",
+  "updated_at": "2026-08-17T17:42:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:marko863/cube_in_box",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723188,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MichaelP719/cube_in_box_act2 · Hugging Face",
+      "url": "https://huggingface.co/MichaelP719/cube_in_box_act2",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "EPITECH-LILLE/act_cube_in_box · Hugging Face",
+      "url": "https://huggingface.co/EPITECH-LILLE/act_cube_in_box",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "Point-and-Act AI Pointer for Claude - LinkedIn",
+      "url": "https://www.linkedin.com/posts/milind-soni-314075175_i-made-an-ai-pointer-that-works-with-your-activity-7492902248927141889-K1B5",
+      "snippet": "I made an AI pointer that works with your existing Claude subscription. You point at anything on your screen, a button, a bug, a paragraph and say what you want done."
+    },
+    {
+      "title": "PDF Getting started with X-CUBE-AI Expansion Package for Artificial ...",
+      "url": "https://www.st.com/resource/en/user_manual/dm00570145-getting-started-with-xcubeai-expansion-package-for-artificial-intelligence-ai-stmicroelectronics.pdf",
+      "snippet": "The X-CUBE-AI core engine, presented in Figure 1 and Figure 2, is part of the X-CUBE-AI Expansion Package described later in Section 1.4 . It provides an automatic and advanced NN mapping tool to generate and deploy an optimized and robust C-model implementation of a pretrained Neural Network (DL model) for the embedded systems with limited and ..."
+    },
+    {
+      "title": "Supported AI models - Box Dev Docs",
+      "url": "https://developer.box.com/guides/box-ai/ai-models",
+      "snippet": "Core and customer-enabled AI models available in Box AI, with access levels, capability tiers, and API names."
+    }
+  ]
+}

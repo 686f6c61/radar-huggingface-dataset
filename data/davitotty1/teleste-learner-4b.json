@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Davitotty1/Teleste-Learner-4B",
+  "slug": "davitotty1-teleste-learner-4b",
+  "author": "Davitotty1",
+  "url": "https://huggingface.co/Davitotty1/Teleste-Learner-4B",
+  "created_at": "2026-08-17T21:24:23.000Z",
+  "updated_at": "2026-08-17T22:05:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.5",
+    "qwen",
+    "lora",
+    "instruction-tuning",
+    "task-induction",
+    "in-context-learning",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104961690,
+  "storage_human": "105 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "NetoAISolutions/TSLAM-4B · Hugging Face",
+      "url": "https://huggingface.co/NetoAISolutions/TSLAM-4B",
+      "snippet": "TSLAM-4b: Telecom-Specific Large Action Model TSLAM-4b is a 4 billion parameter large language model specifically designed and fine-tuned for the telecommunications industry. This model builds upon the capabilities of large language models and incorporates domain-specific knowledge and actions relevant to telecom operations, planning, and customer service. It supports context length of 128K ..."
+    },
+    {
+      "title": "Davitotty1 - YouTube",
+      "url": "https://www.youtube.com/@davitotty1",
+      "snippet": "Meu canal é de jogos, eu faço videos do roblox e minecraft. Se quiserem entrar ou me adicionar como amigo, meu nick no roblox é davitotty1 e no minecraft meu usuário é zeloteleste, mais uma ..."
+    }
+  ]
+}

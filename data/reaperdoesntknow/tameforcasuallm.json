@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/TameForCasualLM",
+  "slug": "reaperdoesntknow-tameforcasuallm",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/TameForCasualLM",
+  "created_at": "2025-09-16T21:23:03.000Z",
+  "updated_at": "2026-08-17T13:17:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tamelm",
+    "Conversational",
+    "Cot",
+    "Symbiotic",
+    "symbioticai",
+    "Conversation Al",
+    "math",
+    "physics",
+    "convergentintel",
+    "text-generation",
+    "en",
+    "dataset:O1-OPEN/OpenO1-SFT",
+    "dataset:WeMake/Intelligent-Content-Understanding",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3831,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4274485353,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/TameForCasualLM · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/TameForCasualLM",
+      "snippet": "Next Steps in Efficient AI This model sets the stage for: Exploring rope tension tuning (varying α, β, θ) to balance exploration vs. stability. Combining BHR with discrepancy calculus for hybrid emergence frameworks. Investigating sub-100M parameter BHR variants for mobile/edge deployment."
+    },
+    {
+      "title": "README.md · reaperdoesntknow/TameForCasualLM at main",
+      "url": "https://huggingface.co/reaperdoesntknow/TameForCasualLM/blob/main/README.md",
+      "snippet": "Next Steps in Efficient AI This model sets the stage for: Exploring rope tension tuning (varying α, β, θ) to balance exploration vs. stability. Combining BHR with discrepancy calculus for hybrid emergence frameworks. Investigating sub-100M parameter BHR variants for mobile/edge deployment."
+    },
+    {
+      "title": "reaperdoesntknow / Discovery - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/reaperdoesntknow/Discovery/0c82bdc00a8a796e74c1bd00db7fe0d8bf2d235f/versions",
+      "snippet": "Discover potential threats in the reaperdoesntknow / Discovery model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - Renasca-Studios/Tamekind",
+      "url": "https://github.com/Renasca-Studios/Tamekind",
+      "snippet": "Tamekind is a vanilla+ AI overhaul for passive mobs: cows, sheep, pigs, horses, goats, llamas, rabbits, chickens, wolves and foxes."
+    }
+  ]
+}

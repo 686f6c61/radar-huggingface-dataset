@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kepom/CyberNeurova-DeepSeek-V4-Flash-abliterated-GGUF",
+  "slug": "kepom-cyberneurova-deepseek-v4-flash-abliterated-gguf",
+  "author": "kepom",
+  "url": "https://huggingface.co/kepom/CyberNeurova-DeepSeek-V4-Flash-abliterated-GGUF",
+  "created_at": "2026-08-14T21:39:52.000Z",
+  "updated_at": "2026-08-14T21:39:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "deepseek",
+    "llama.cpp",
+    "moe",
+    "research",
+    "text-generation",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 158,
+  "trending_score": 0,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 401062866662,
+  "storage_human": "401.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CyberNeurova-DeepSeek-V4-Flash-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/rbinrs/CyberNeurova-DeepSeek-V4-Flash-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cyberneurova-CyberNeurova-DeepSeek-V4-Flash-abliterated-GGUF",
+      "url": "https://huggingface.co/CCSSNE/cyberneurova-CyberNeurova-DeepSeek-V4-Flash-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CyberNeurova",
+      "url": "https://cyberneurova.com/",
+      "snippet": "AI at full capability. On your terms. Chat, code, vision, voice, and video — one OpenAI-compatible API."
+    },
+    {
+      "title": "cyberneurova/CyberNeurova-DeepSeek-V4-Flash-abliterated-GGUF · Hugging Face",
+      "url": "https://x.com/cyberneurova/status/2051691763203539147",
+      "snippet": "cyberneurova (@cyberneurova). 96 views. We did something with DeepSeek and opensourced it. We have open-sourced the V4-Flash abliterated version and quantized it from 160GB to 90GB."
+    },
+    {
+      "title": "Cyberneurova Deepseek V4 Flash Abliterated - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/cyberneurova-deepseek-v4-flash-abliterated.html",
+      "snippet": "Download Cyberneurova Deepseek V4 Flash Abliterated GGUF model. 2.30 GB, 2,137 downloads, 58 likes."
+    }
+  ]
+}

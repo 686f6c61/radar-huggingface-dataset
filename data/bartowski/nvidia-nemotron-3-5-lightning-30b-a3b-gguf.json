@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF",
+  "slug": "bartowski-nvidia-nemotron-3-5-lightning-30b-a3b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF",
+  "created_at": "2026-08-11T15:05:32.000Z",
+  "updated_at": "2026-08-12T00:18:07.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "nvidia",
+    "nemotron-3.5",
+    "text-generation",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 20,
+  "downloads_30d": 58832,
+  "trending_score": 14,
+  "parameters": 32913266240,
+  "parameters_human": "32.91B",
+  "storage_bytes": 1218624402080,
+  "storage_human": "1218.6 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF",
+      "snippet": "Note: the MTP layers are stored at Q4_0 in the imatrix quants (except for the Q8_0 quant), since imatrix calibration does not exercise them. Q4_0 is chosen for its speed which massively benefits MTP performance. imatrix All quants made using imatrix option with dataset from here. The imatrix is available here: NVIDIA-Nemotron-3.5-Lightning-30B-A3B-imatrix.gguf. Embed/output weights Some of ..."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/blob/main/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-IQ3_M.gguf",
+      "snippet": "Instructions to use bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
+      "snippet": "AI models generate responses and outputs based on complex algorithms and machine learning techniques, and those responses or outputs may be inaccurate, harmful, biased or indecent. By testing this model, you assume the risk of any harm caused by any response or output of the model."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-3.5-lightning",
+      "snippet": "The vLLM snippets above register the model as nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 via --served-model-name. For llama.cpp — or if you change that flag — copy the identifier returned by GET /v1/models into MODEL below."
+    }
+  ]
+}

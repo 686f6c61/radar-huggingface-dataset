@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ghananlpcommunity/t5-small-ipa2text",
+  "slug": "ghananlpcommunity-t5-small-ipa2text",
+  "author": "ghananlpcommunity",
+  "url": "https://huggingface.co/ghananlpcommunity/t5-small-ipa2text",
+  "created_at": "2026-08-17T12:23:59.000Z",
+  "updated_at": "2026-08-17T12:24:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60533248,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242148392,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ghananlpcommunity/t5-small-ipa2text-v2 · Hugging Face",
+      "url": "https://huggingface.co/ghananlpcommunity/t5-small-ipa2text-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ghananlpcommunity/t5-small-ipa2text-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/ghananlpcommunity/t5-small-ipa2text-v2/tree/main",
+      "snippet": "ghananlpcommunity / t5-small-ipa2text-v2 like 0 Follow Ghana NLP Community 63 Transformers Safetensors t5 text2text-generation text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "T5 (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/T5_(language_model)",
+      "snippet": "T5 (Text-to-Text Transfer Transformer) is a series of large language models developed by Google AI introduced in 2019. [1][2] Like the original Transformer model, [3] T5 models are encoder-decoder Transformers, where the encoder processes the input text, and the decoder generates the output text. T5 models are usually pretrained on a massive dataset of text and code, after which they can ..."
+    },
+    {
+      "title": "t5-small download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/t5-small/",
+      "snippet": "Download t5-small for free. T5-Small: Lightweight text-to-text transformer for NLP tasks. T5-Small is a lightweight variant of the Text-To-Text Transfer Transformer (T5), designed to handle a wide range of NLP tasks using a unified text-to-text approach. Developed by researchers at Google, this model reframes all tasks—such as translation, summarization, classification, and question ..."
+    },
+    {
+      "title": "T5 (Text-to-Text Transfer Transformer) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/t5-text-to-text-transfer-transformer/",
+      "snippet": "T5 (Text-to-Text Transfer Transformer) is a transformer-based language model developed by Google Research. It treats every NLP task as a text-to-text problem, allowing the same model to perform a wide range of language tasks through a unified framework."
+    }
+  ]
+}

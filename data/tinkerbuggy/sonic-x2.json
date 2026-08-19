@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tinkerbuggy/sonic-x2",
+  "slug": "tinkerbuggy-sonic-x2",
+  "author": "tinkerbuggy",
+  "url": "https://huggingface.co/tinkerbuggy/sonic-x2",
+  "created_at": "2026-07-28T15:05:23.000Z",
+  "updated_at": "2026-08-16T16:19:33.000Z",
+  "license": "pending-review",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "humanoid",
+    "whole-body-control",
+    "motion-tracking",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7230402133,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

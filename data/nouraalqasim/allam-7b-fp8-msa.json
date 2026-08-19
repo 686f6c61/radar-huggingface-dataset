@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "NouraAlqasim/allam-7b-fp8-msa",
+  "slug": "nouraalqasim-allam-7b-fp8-msa",
+  "author": "NouraAlqasim",
+  "url": "https://huggingface.co/NouraAlqasim/allam-7b-fp8-msa",
+  "created_at": "2026-08-15T10:25:42.000Z",
+  "updated_at": "2026-08-15T15:29:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "fp8",
+    "modelopt",
+    "quantized",
+    "arabic-calibrated",
+    "calib-msa",
+    "base_model:humain-ai/ALLaM-7B-Instruct-preview",
+    "base_model:quantized:humain-ai/ALLaM-7B-Instruct-preview",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 7000559616,
+  "parameters_human": "7.00B",
+  "storage_bytes": 7526422906,
+  "storage_human": "7.5 GB",
+  "base_model": "humain-ai/ALLaM-7B-Instruct-preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

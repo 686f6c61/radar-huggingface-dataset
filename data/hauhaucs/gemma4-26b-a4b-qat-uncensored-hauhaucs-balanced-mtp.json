@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "HauhauCS/Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+  "slug": "hauhaucs-gemma4-26b-a4b-qat-uncensored-hauhaucs-balanced-mtp",
+  "author": "HauhauCS",
+  "url": "https://huggingface.co/HauhauCS/Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+  "created_at": "2026-06-24T23:43:40.000Z",
+  "updated_at": "2026-06-25T00:22:39.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "moe",
+    "vision",
+    "multimodal",
+    "agentic",
+    "coding",
+    "creative-writing",
+    "roleplay",
+    "rp",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 177,
+  "downloads_30d": 127147,
+  "trending_score": 12,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 18242781024,
+  "storage_human": "18.2 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+      "url": "https://huggingface.co/HauhauCS/Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma4-26b-a4b-qat-uncensored-hauhaucs-balanced-mtp-hauhaucs",
+      "snippet": "Overview Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP is a 26-billion parameter mixture-of-experts model built by HauhauCS that removes safety guardrails from Google DeepMind&#x27;s Gemma 4 while preserving full model capabilities. The architecture uses 128 experts with 8 active per token, supporting a 256K token context window and multimodal input (text and images). This variant runs as a 4 ..."
+    },
+    {
+      "title": "Gemma4 26B A4B QAT Uncensored HauhauCS Balanced MTP",
+      "url": "https://thinkllm.dev/models/gemma4-26b-a4b-qat-uncensored-hauhaucs-balanced-mtp",
+      "snippet": "A multimodal open-weight model that accepts both text and image inputs, producing text output. Published by HauhauCS as an uncensored variant with &#x27;balanced&#x27; tuning, it likely has fewer content restrictions than the base Gemma model, though the specific behavioral implications of the &#x27;Balanced MTP&#x27; designation are not fully documented. Available in GGUF format, making it accessible for local ..."
+    },
+    {
+      "title": "Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+      "url": "https://aimarketcap.tech/models/hauhaucs-gemma4-26b-a4b-qat-uncensored-hauhaucs-balanced-mtp",
+      "snippet": "Explore Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP by HauhauCS — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    }
+  ]
+}

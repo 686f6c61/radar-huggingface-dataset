@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "dangvansam/vietnamese-prompt-injection",
+  "slug": "dangvansam-vietnamese-prompt-injection",
+  "author": "dangvansam",
+  "url": "https://huggingface.co/dangvansam/vietnamese-prompt-injection",
+  "created_at": "2026-08-13T02:28:08.000Z",
+  "updated_at": "2026-08-17T08:22:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "prompt-injection",
+    "vietnamese",
+    "guardrail",
+    "vi",
+    "en",
+    "base_model:protectai/deberta-v3-base-prompt-injection-v2",
+    "base_model:finetune:protectai/deberta-v3-base-prompt-injection-v2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 360,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 8852693676,
+  "storage_human": "8.9 GB",
+  "base_model": "protectai/deberta-v3-base-prompt-injection-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

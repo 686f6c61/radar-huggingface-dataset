@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "flwrlabs/Lizzy-7B-GGUF",
+  "slug": "flwrlabs-lizzy-7b-gguf",
+  "author": "flwrlabs",
+  "url": "https://huggingface.co/flwrlabs/Lizzy-7B-GGUF",
+  "created_at": "2026-04-27T20:39:04.000Z",
+  "updated_at": "2026-05-25T09:35:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama-cpp-python",
+  "languages": [],
+  "tags": [
+    "llama-cpp-python",
+    "gguf",
+    "lizzy-7b",
+    "reasoning",
+    "text-generation",
+    "flwrlabs",
+    "british-english",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 578,
+  "trending_score": 7,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 76046528096,
+  "storage_human": "76.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flwrlabs/Lizzy-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/flwrlabs/Lizzy-7B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "flwrlabs/Lizzy-7B · Hugging Face",
+      "url": "https://huggingface.co/flwrlabs/Lizzy-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lizzy 7B - Flower Model 0.1.0",
+      "url": "https://flower.ai/docs/model/lizzy-7b.html",
+      "snippet": "Lizzy 7B ¶ Lizzy 7B is an open-weight Flower Labs language model. It is designed for general assistant use, reasoning, coding assistance, and UK-oriented language and knowledge. The model is available on Hugging Face in two formats: flwrlabs/Lizzy-7B: the original BF16 Safetensors checkpoint for Transformers, vLLM, SGLang, and other GPU-serving stacks. flwrlabs/Lizzy-7B-GGUF: GGUF ..."
+    },
+    {
+      "title": "Lizzy GGUF - Flower Model 0.1.0",
+      "url": "https://flower.ai/docs/model/lizzy-gguf.html",
+      "snippet": "flwrlabs/Lizzy-7B-GGUF contains quantized GGUF versions of Lizzy 7B for efficient local inference. Use these files when you want CPU inference, flexible GPU offload, smaller model files, or fast loading with a runtime that supports the Lizzy GGUF architecture."
+    },
+    {
+      "title": "flower/model/docs/source/how-to-run-lizzy.rst at main - GitHub",
+      "url": "https://github.com/flwrlabs/flower/blob/main/model/docs/source/how-to-run-lizzy.rst",
+      "snippet": "If the app lets you choose a custom backend, point it at a Lizzy-compatible llama.cpp build and import one of the flwrlabs/Lizzy-7B-GGUF quantizations. If it reports unknown model architecture: &#x27;lizzy&#x27;, update the app backend or use llama.cpp directly."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "lEtoileNoir/Hausa_English_Direct_S2TT",
+  "slug": "letoilenoir-hausa_english_direct_s2tt",
+  "author": "lEtoileNoir",
+  "url": "https://huggingface.co/lEtoileNoir/Hausa_English_Direct_S2TT",
+  "created_at": "2026-08-10T18:30:57.000Z",
+  "updated_at": "2026-08-17T17:30:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ha",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speech-encoder-decoder",
+    "automatic-speech-recognition",
+    "speech-translation",
+    "direct-s2tt",
+    "hausa",
+    "research-only",
+    "ha",
+    "en",
+    "dataset:McGill-NLP/NaijaS2ST",
+    "base_model:facebook/wav2vec2-xls-r-300m-21-to-en",
+    "base_model:finetune:facebook/wav2vec2-xls-r-300m-21-to-en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 792989312,
+  "parameters_human": "793.0M",
+  "storage_bytes": 3189159500,
+  "storage_human": "3.2 GB",
+  "base_model": "facebook/wav2vec2-xls-r-300m-21-to-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lEtoileNoir/Hausa_English_Direct_S2TT · Hugging Face",
+      "url": "https://huggingface.co/lEtoileNoir/Hausa_English_Direct_S2TT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lEtoileNoir (Sal) - Hugging Face",
+      "url": "https://huggingface.co/lEtoileNoir/models",
+      "snippet": "lEtoileNoir&#x27;s models1 Sort: Recently updated lEtoileNoir/Hausa_English_Direct_S2TT Automatic Speech Recognition ••Updated 4 days ago• 8"
+    },
+    {
+      "title": "PDF Semi-Supervised End-to-End Speech-to-Text Translation with Joint Text ...",
+      "url": "https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P272.pdf",
+      "snippet": "Abstract-This paper proposes a novel semi-supervised end- to-end speech-to-text translation (S2TT) approach that leverages pseudo-labeling (PL) through joint decoding with both a text-to- text translation (T2TT) model and an S2TT model. While pseudo- labeling has proven effective in mitigating the data scarcity issue in S2TT, conventional PL approaches typically rely either on a standalone ..."
+    },
+    {
+      "title": "GitHub - afridatahub/AfriDataHub-Hausa: AfriDataHub&#x27;s repository for ...",
+      "url": "https://github.com/afridatahub/AfriDataHub-Hausa",
+      "snippet": "AfriDataHub&#x27;s repository for developing datasets and NLP resources for Hausa Language. This repository supports the creation of parallel corpora and general language corpora, empowering AI applications that are inclusive and culturally relevant to Hausa Language speakers."
+    },
+    {
+      "title": "HelpMum | Translate 9ja to eng",
+      "url": "https://helpmum.org/translatenaijtoeng",
+      "snippet": "The HelpMum Translator 9ja to eng Model is a translation model designed to provide reliable and accurate translation from Nigerian Languages (Yoruba, Igbo, and Hausa) to English. Developed by HelpMum, the model leverages natural language processing techniques and transfer learning to support low-resource Nigerian languages in software applications."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Skskskd/bliz-ia-agressive",
+  "slug": "skskskd-bliz-ia-agressive",
+  "author": "Skskskd",
+  "url": "https://huggingface.co/Skskskd/bliz-ia-agressive",
+  "created_at": "2026-08-16T23:41:14.000Z",
+  "updated_at": "2026-08-16T23:41:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 254,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888978,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skskskd/bliz-ia-2.0 · Hugging Face",
+      "url": "https://huggingface.co/Skskskd/bliz-ia-2.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Skskskd/bliz-ia-v2-fine-tuning · Hugging Face",
+      "url": "https://huggingface.co/Skskskd/bliz-ia-v2-fine-tuning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anthropic AI agent fakes identities, targets real people in new ...",
+      "url": "https://edition.cnn.com/2026/08/04/tech/ai-anthropic-openai-security-breach-intl-hnk",
+      "snippet": "Anthropic&#x27;s most advanced artificial intelligence model used fake identities to deceive real people and try to plant malicious code during testing by Britain&#x27;s AI Security Institute (AISI ..."
+    },
+    {
+      "title": "Meta says its AI model breached a third-party company during testing ...",
+      "url": "https://www.cbsnews.com/news/meta-says-ai-model-breached-third-party-company/",
+      "snippet": "Tech giant Meta revealed Wednesday that one of its artificial intelligence models hacked another organization during testing, the third time in recent weeks that an AI model has improperly ..."
+    },
+    {
+      "title": "How an AI Escaped Its Sandbox and Hacked Hugging Face to Cheat on a ...",
+      "url": "https://betterstack.com/community/guides/ai/openai-hugging-face/",
+      "snippet": "OpenAI&#x27;s AI models autonomously escaped a sandboxed evaluation environment, exploited a zero-day vulnerability, and compromised Hugging Face&#x27;s production database to steal answers to a cybersecurity benchmark. Here&#x27;s how the attack unfolded and what it means."
+    }
+  ]
+}

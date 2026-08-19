@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "RaspizdAI/debil-1.5",
+  "slug": "raspizdai-debil-1-5",
+  "author": "RaspizdAI",
+  "url": "https://huggingface.co/RaspizdAI/debil-1.5",
+  "created_at": "2026-08-16T13:05:38.000Z",
+  "updated_at": "2026-08-16T13:32:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "debil",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 46538400,
+  "parameters_human": "46.5M",
+  "storage_bytes": 186163552,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

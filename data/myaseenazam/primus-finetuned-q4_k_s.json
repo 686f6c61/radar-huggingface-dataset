@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "myaseenazam/Primus-FineTuned-Q4_K_S",
+  "slug": "myaseenazam-primus-finetuned-q4_k_s",
+  "author": "myaseenazam",
+  "url": "https://huggingface.co/myaseenazam/Primus-FineTuned-Q4_K_S",
+  "created_at": "2026-08-17T12:56:38.000Z",
+  "updated_at": "2026-08-17T12:57:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4692669760,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "GitHub - JustVugg/colibri: Run frontier MoE models on hardware you ...",
+      "url": "https://github.com/JustVugg/colibri",
+      "snippet": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 - JustVugg/colibri"
+    },
+    {
+      "title": "Q4, Q5, Q8… why? : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1bltyis/q4_q5_q8_why/",
+      "snippet": "The model size also affects the generated results. A Q4 of a 1.8B model will be lobotomized compared to a Q8, whereas on a 7B or 13B the differences are less noticeable."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    }
+  ]
+}

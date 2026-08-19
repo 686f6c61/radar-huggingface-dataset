@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "marcsun13/ggml-attn",
+  "slug": "marcsun13-ggml-attn",
+  "author": "marcsun13",
+  "url": "https://huggingface.co/marcsun13/ggml-attn",
+  "created_at": "2026-08-18T15:57:53.000Z",
+  "updated_at": "2026-08-18T15:58:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8552923,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marcsun13 (Marc Sun) - Hugging Face",
+      "url": "https://huggingface.co/marcsun13",
+      "snippet": "AI & ML interests ... Recent Activity upvoted an article 19 days ago ... liked a model 28 days ago ... upvoted an article 2 months ago"
+    },
+    {
+      "title": "marcsun13 (Marc Sun) - Hugging Face",
+      "url": "https://huggingface.co/marcsun13/models",
+      "snippet": "Organizations marcsun13&#x27;s models 19 Sort: Recently updated marcsun13/Llama-3.1-8B-Instruct-bnb-4bit Text Generation • 4B• Updated Mar 20• 6"
+    },
+    {
+      "title": "ggml.ai",
+      "url": "https://ggml.ai/",
+      "snippet": "GGML - AI at the edge ggml is a tensor library for machine learning to enable large models and high performance on commodity hardware. It is used by llama.cpp and whisper.cpp Low-level cross-platform implementation Integer quantization support Broad hardware support No third-party dependencies Zero memory allocations during runtime The ggml way Minimal We like simplicity and aim to keep the ..."
+    },
+    {
+      "title": "GitHub - ggml-org/ggml: Tensor library for machine learning",
+      "url": "https://github.com/ggml-org/ggml",
+      "snippet": "Tensor library for machine learning. Contribute to ggml-org/ggml development by creating an account on GitHub."
+    },
+    {
+      "title": "ggml - GitHub",
+      "url": "https://github.com/ggml-org/",
+      "snippet": "AI inference at the edge. ggml has 26 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

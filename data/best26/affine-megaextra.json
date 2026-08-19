@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "best26/Affine-megaextra",
+  "slug": "best26-affine-megaextra",
+  "author": "best26",
+  "url": "https://huggingface.co/best26/Affine-megaextra",
+  "created_at": "2026-08-17T13:57:32.000Z",
+  "updated_at": "2026-08-17T13:57:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v3",
+    "offline-dpo",
+    "r596",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "best26 (S) - Hugging Face",
+      "url": "https://huggingface.co/best26/models",
+      "snippet": "AI & ML interests ... Recent Activity published a model 6 minutes ago ... updated a model 7 minutes ago"
+    },
+    {
+      "title": "Latest AI Models 2026: 93 Released — Complete Catalog",
+      "url": "https://best-ai.news/ai-model-releases-2026",
+      "snippet": "The latest AI models of 2026: a living catalog of 93 AI models tracked this year — from 33 brands across LLMs, image, video, multimodal, audio & science. Updated continuously."
+    },
+    {
+      "title": "best26 (S) - Hugging Face",
+      "url": "https://huggingface.co/best26",
+      "snippet": "updated a model about 10 hours ago published a model about 11 hours ago"
+    },
+    {
+      "title": "The Best AI Models so far in 2026 - Design for Online®",
+      "url": "https://designforonline.com/the-best-ai-models-so-far-in-2026/",
+      "snippet": "Claude Fable 5, Opus 4.8, Sonnet 5, Nano Banana 2 Lite & Grok 4.3 - updated July 2026. We rank the best AI models, benchmarks and break down real costs."
+    },
+    {
+      "title": "Best AI Models in August 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for August 2026."
+    }
+  ]
+}

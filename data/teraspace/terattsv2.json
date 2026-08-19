@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "TeraSpace/TeraTTSv2",
+  "slug": "teraspace-terattsv2",
+  "author": "TeraSpace",
+  "url": "https://huggingface.co/TeraSpace/TeraTTSv2",
+  "created_at": "2026-08-07T21:01:30.000Z",
+  "updated_at": "2026-08-09T14:10:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "teratts_onnx",
+    "feature-extraction",
+    "onnxruntime",
+    "text-to-speech",
+    "russian",
+    "english",
+    "custom-code",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 2009,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1700454760,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TeraSpace/TeraTTSv2 · Hugging Face",
+      "url": "https://huggingface.co/TeraSpace/TeraTTSv2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TeraTTS (TeraSpace TTS) - Hugging Face",
+      "url": "https://huggingface.co/TeraTTS",
+      "snippet": "AI & ML interests ... Recent Activity TeraSpace updated a Space about 1 month ago ... TeraSpace updated a Space 2 months ago ... TeraSpace new activity 10 months ago"
+    },
+    {
+      "title": "TerraStackAI: Bringing Earth and space AI to Red Hat and the world",
+      "url": "https://research.ibm.com/blog/terrastackai",
+      "snippet": "This is a companion piece to the Red Hat blog announcing enterprises can now serve Earth and space AI models on Red Hat AI Inference Server. Across disciplines, advances in computational mathematics are transforming how large-scale scientific data is analyzed, interpreted, and translated into deployable workflows."
+    },
+    {
+      "title": "Tera2Space (Tera2Space) · GitHub",
+      "url": "https://github.com/Tera2Space/",
+      "snippet": "17 y.o ML NLP/TTS enjoyer. Tera2Space has 4 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - teraspace/tetrabooks-ai: Entity-aware document intelligence ...",
+      "url": "https://github.com/teraspace/tetrabooks-ai",
+      "snippet": "TetraBooks AI is an independent fork of TetraKnowledge for document intelligence over books and long-form sources. It demonstrates ingestion, chunking, embeddings, retrieval, RAG, citations and a LangGraph workflow while keeping model and search vendors replaceable."
+    }
+  ]
+}

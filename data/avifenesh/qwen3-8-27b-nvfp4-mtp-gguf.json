@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Avifenesh/Qwen3.8-27B-NVFP4-MTP-GGUF",
+  "slug": "avifenesh-qwen3-8-27b-nvfp4-mtp-gguf",
+  "author": "Avifenesh",
+  "url": "https://huggingface.co/Avifenesh/Qwen3.8-27B-NVFP4-MTP-GGUF",
+  "created_at": "2026-08-14T17:13:03.000Z",
+  "updated_at": "2026-08-15T19:30:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "memra",
+    "speculative-decoding",
+    "mtp",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 5851,
+  "trending_score": 10,
+  "parameters": 32768,
+  "parameters_human": "32768",
+  "storage_bytes": 16949054176,
+  "storage_human": "16.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

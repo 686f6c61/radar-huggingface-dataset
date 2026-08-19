@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "occamy-ai/occamy-1.0",
+  "slug": "occamy-ai-occamy-1-0",
+  "author": "occamy-ai",
+  "url": "https://huggingface.co/occamy-ai/occamy-1.0",
+  "created_at": "2026-08-13T12:56:13.000Z",
+  "updated_at": "2026-08-17T11:49:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "agentic",
+    "tool-use",
+    "coding",
+    "long-context",
+    "text-generation",
+    "conversational",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 692,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70240507745,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "occamy-ai/occamy-1.0 · Hugging Face",
+      "url": "https://huggingface.co/occamy-ai/occamy-1.0",
+      "snippet": "We present Occamy-35B, an efficient agentic model designed for long-horizon decision-making, coordinated multi-tool use, and complex business workflows. Post-trained from Qwen3.6-35B-A3B, Occamy demonstrates strong stability and task-completion capability on challenging Claw-style tasks."
+    },
+    {
+      "title": "occamy-ai (Occamy AI) - Hugging Face",
+      "url": "https://huggingface.co/occamy-ai",
+      "snippet": "Org profile for Occamy AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Occamy 1.0 by occamy-ai — VRAM 70.2GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/occamy-ai%2Foccamy-1.0,2B1xmmC0EgaUYpxEyhqCzB",
+      "snippet": "Occamy 1.0 is an open-source 35.1b LLM by occamy-ai. VRAM 70.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "occamy-1.0 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/occamy-ai/occamy-1.0",
+      "snippet": "Deploy occamy-1.0 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Architecture graph for occamy-ai/occamy-1.0. - hfviewer.com",
+      "url": "https://hfviewer.com/occamy-ai/occamy-1.0",
+      "snippet": "occamy-ai/occamy-1.0 architecture at a glance occamy-ai/occamy-1.0 is a text-generation model (qwen3_5_moe_text architecture). It uses 40 transformer layers, a hidden size of 2,048, and 16 query heads with 2 key/value heads (grouped-query attention). The feed-forward layers use a mixture-of-experts design with 256 experts (8 active per token)."
+    }
+  ]
+}

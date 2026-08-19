@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "ProCreations/auto-0.4b",
+  "slug": "procreations-auto-0-4b",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/auto-0.4b",
+  "created_at": "2026-08-08T07:06:56.000Z",
+  "updated_at": "2026-08-09T01:46:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "agent-safety",
+    "tool-calling",
+    "guardrails",
+    "long-context",
+    "en",
+    "dataset:ProCreations/auto",
+    "dataset:ProCreations/approve-or-deny",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 92,
+  "trending_score": 8,
+  "parameters": 395833346,
+  "parameters_human": "395.8M",
+  "storage_bytes": 791684972,
+  "storage_human": "792 MB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agentic tool-call safety gating",
+      "dataset": "Approve-or-Deny",
+      "metric": "Accuracy",
+      "value": 0.9013
+    },
+    {
+      "task": "Agentic tool-call safety gating",
+      "dataset": "Approve-or-Deny",
+      "metric": "F1 (deny)",
+      "value": 0.8963
+    },
+    {
+      "task": "Agentic tool-call safety gating",
+      "dataset": "Approve-or-Deny",
+      "metric": "AUROC",
+      "value": 0.9657
+    },
+    {
+      "task": "Agentic tool-call safety gating",
+      "dataset": "Approve-or-Deny",
+      "metric": "False-approve rate (dangerous call allowed)",
+      "value": 0.0871
+    },
+    {
+      "task": "Agentic tool-call safety gating",
+      "dataset": "Approve-or-Deny",
+      "metric": "False-deny rate (safe call blocked)",
+      "value": 0.1088
+    }
+  ],
+  "sources": []
+}

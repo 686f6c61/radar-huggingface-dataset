@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/mediapipe-EfficientDet-Lite2-COCO2017-fp32-onnx",
+  "slug": "ketiswp-mediapipe-efficientdet-lite2-coco2017-fp32-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/mediapipe-EfficientDet-Lite2-COCO2017-fp32-onnx",
+  "created_at": "2026-08-19T01:56:43.000Z",
+  "updated_at": "2026-08-19T02:22:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "fp32",
+    "object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22299924,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - google-ai-edge/mediapipe: Cross-platform, customizable ML ...",
+      "url": "https://github.com/google-ai-edge/mediapipe",
+      "snippet": "Solutions MediaPipe Solutions provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in your applications. You can plug these solutions into your applications immediately, customize them to your needs, and use them across multiple development platforms."
+    },
+    {
+      "title": "Object detection task guide | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/object_detector?hl=en",
+      "snippet": "The EfficientDet-Lite2 model uses an EfficientNet-Lite2 backbone with a 448x448 input size and BiFPN feature network. The model was trained with the COCO dataset, a large-scale object detection dataset that contains 1.5 million object instances and 80 object labels."
+    },
+    {
+      "title": "mediapipe/docs/solutions/models.md at master · google-ai-edge ... - GitHub",
+      "url": "https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/models.md",
+      "snippet": "Cross-platform, customizable ML solutions for live and streaming media. - google-ai-edge/mediapipe"
+    },
+    {
+      "title": "MediaPipe Solutions guide | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/guide",
+      "snippet": "MediaPipe Solutions provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in your applications. You can plug these solutions into your applications immediately, customize them to your needs, and use them across multiple development platforms."
+    },
+    {
+      "title": "10. Object Detection — SunFounder AI Fusion Lab Kit documentation",
+      "url": "https://docs.sunfounder.com/projects/ai-lab-kit/en/latest/mediapipe/mp_10_object.html",
+      "snippet": "10. Object Detection 1. Overview In addition to specialized models for face, hands, and pose, MediaPipe also provides a general-purpose Object Detector based on TensorFlow Lite. This chapter demonstrates how to use the efficientdet_lite0.tflite model on Raspberry Pi to perform real-time object detection and visualize results on the camera feed. This module can be used for: Real-time object ..."
+    }
+  ]
+}

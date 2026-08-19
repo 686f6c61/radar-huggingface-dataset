@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tartuNLP/Llama-3.1-EstLLM-70B-0826",
+  "slug": "tartunlp-llama-3-1-estllm-70b-0826",
+  "author": "tartuNLP",
+  "url": "https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-0826",
+  "created_at": "2026-08-17T10:25:12.000Z",
+  "updated_at": "2026-08-17T10:55:08.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "et"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "en",
+    "et",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-70B",
+    "base_model:finetune:meta-llama/Llama-3.1-70B",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 141124708456,
+  "storage_human": "141.1 GB",
+  "base_model": "meta-llama/Llama-3.1-70B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tartuNLP/Llama-3.1-EstLLM-8B-Instruct-0825 · Hugging Face",
+      "url": "https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-8B-Instruct-0825",
+      "snippet": "EstLLM 0825 Instruct This checkpoint is identical to tartuNLP/llama-estllm-prototype-0825. The reupload is for naming consistency in the model tree. Llama-3.1-EstLLM-8B-Instruct-0825 is the first artifact produced by the EstLLM project. The intention of this release is to evaluate the first prototype in a conversational ChatbotArena-style setting on baromeeter.ai, and thus establish a baseline ..."
+    },
+    {
+      "title": "tartuNLP (TartuNLP) - Hugging Face",
+      "url": "https://huggingface.co/tartuNLP",
+      "snippet": "tartuNLP/est-roberta-vm-morph-tagging Token Classification • Updated Sep 17 • 12 Expand 45 model s"
+    },
+    {
+      "title": "llama-3.1-70b-instruct Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/llama-3_1-70b-instruct/modelcard",
+      "snippet": "Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models ..."
+    },
+    {
+      "title": "Llama 3.1 | meta-llama/llama-models | DeepWiki",
+      "url": "https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1",
+      "snippet": "Llama 3.1 represents a significant advancement in the Llama model series with extended context length (128K tokens), multilingual capabilities, and improved performance across various tasks. For information about other Llama model versions, see Llama 3.2, Llama 3.3, and Llama 4. For general model architecture details, see Model Architecture."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    }
+  ]
+}

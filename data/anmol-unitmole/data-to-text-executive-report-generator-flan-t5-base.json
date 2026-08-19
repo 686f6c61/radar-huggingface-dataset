@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "anmol-unitmole/data-to-text-executive-report-generator-flan-t5-base",
+  "slug": "anmol-unitmole-data-to-text-executive-report-generator-flan-t5-base",
+  "author": "anmol-unitmole",
+  "url": "https://huggingface.co/anmol-unitmole/data-to-text-executive-report-generator-flan-t5-base",
+  "created_at": "2026-08-17T18:44:09.000Z",
+  "updated_at": "2026-08-17T18:59:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "table-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "flan-t5",
+    "data-to-text",
+    "table-to-text",
+    "kpi-analysis",
+    "executive-reporting",
+    "controlled-generation",
+    "numerical-verification",
+    "hallucination-mitigation",
+    "onnx",
+    "peft",
+    "lora",
+    "rtx-5090",
+    "en",
+    "base_model:google/flan-t5-base",
+    "base_model:adapter:google/flan-t5-base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 495981208,
+  "storage_human": "496 MB",
+  "base_model": "google/flan-t5-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anmol-unitmole (Anmol Tripathi) - Hugging Face",
+      "url": "https://huggingface.co/anmol-unitmole",
+      "snippet": "Vision Encoder Decoder Image Captioning 🖼 Browser ViT-GPT-2 captioning with ONNX anmol-unitmole 8 days ago Running"
+    },
+    {
+      "title": "Streaming Speech Recognition with Whisper Encoder-Decoder",
+      "url": "https://huggingface.co/anmol-unitmole/streaming-speech-recognition-whisper-encoder-decoder-model",
+      "snippet": "Instructions to use anmol-unitmole/streaming-speech-recognition-whisper-encoder-decoder-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Flan T5 3b Summarizer - model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1915693270048595970",
+      "snippet": "A general-purpose summarizer based on the 3B-parameter google/flan-t5-xl model fine-tuned on multiple summarization datasets, suitable for academic and general scenarios."
+    },
+    {
+      "title": "How AI Models From OpenAI and Anthropic Went Rogue",
+      "url": "https://www.wsj.com/tech/ai/how-ai-models-from-openai-and-anthropic-went-rogue-a28e29ee",
+      "snippet": "Watch to learn how an AI agent escaped \"sandboxed\" environments and hacked a separate company—leading to calls for regulation."
+    },
+    {
+      "title": "From Raw Nmap Scans to Executive Reports: Automating Penetration Test ...",
+      "url": "https://undercodetesting.com/from-raw-nmap-scans-to-executive-reports-automating-penetration-test-reporting-with-ai-video/",
+      "snippet": "Tools leveraging Claude AI, RAG architectures, and MCP (Model Context Protocol) now enable security teams to transform raw diagnostics into structured, prioritized remediation advice and financial risk assessments in minutes rather than days. Learning Objectives:"
+    }
+  ]
+}

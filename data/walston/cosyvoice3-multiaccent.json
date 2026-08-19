@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "walston/cosyvoice3-multiaccent",
+  "slug": "walston-cosyvoice3-multiaccent",
+  "author": "walston",
+  "url": "https://huggingface.co/walston/cosyvoice3-multiaccent",
+  "created_at": "2026-08-16T07:49:02.000Z",
+  "updated_at": "2026-08-16T07:51:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "cosyvoice",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "cosyvoice",
+    "onnx",
+    "safetensors",
+    "cosyvoice3",
+    "multi-accent",
+    "chinese",
+    "text-to-speech",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8263504934,
+  "storage_human": "8.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - wehos/CosyVoice-v3: Multi-lingual large voice generation model ...",
+      "url": "https://github.com/wehos/CosyVoice-v3",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - wehos/CosyVoice-v3"
+    },
+    {
+      "title": "[2505.17589] CosyVoice 3: Towards In-the-wild Speech Generation via ...",
+      "url": "https://arxiv.org/abs/2505.17589",
+      "snippet": "In our prior works, we introduced a scalable streaming speech synthesis model, CosyVoice 2, which integrates a large language model (LLM) and a chunk-aware flow matching (FM) model, and achieves low-latency bi-streaming speech synthesis and human-parity quality. Despite these advancements, CosyVoice 2 exhibits limitations in language coverage, domain diversity, data volume, text formats, and ..."
+    },
+    {
+      "title": "walston/cosyvoice3-sg · Hugging Face",
+      "url": "https://huggingface.co/walston/cosyvoice3-sg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CosyVoice 3: Towards In-the-wild Speech Generation via Scaling-up and ...",
+      "url": "https://arxiv.org/html/2505.17589v1",
+      "snippet": "For most languages, the performance difference between CosyVoice3-0.5B and CosyVoice3-1.5B is minimal. Furthermore, as shown in Table 6, generating rare words, tongue twisters, and domain-specific terms remains difficult for CosyVoice 3, highlighting areas for future improvement."
+    },
+    {
+      "title": "walston/cosyvoice3-sg at main - Hugging Face",
+      "url": "https://huggingface.co/walston/cosyvoice3-sg/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "bduong3127/LLaVA-LoRA-HAM10000",
+  "slug": "bduong3127-llava-lora-ham10000",
+  "author": "bduong3127",
+  "url": "https://huggingface.co/bduong3127/LLaVA-LoRA-HAM10000",
+  "created_at": "2026-08-14T16:31:27.000Z",
+  "updated_at": "2026-08-14T16:31:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:llava-hf/llava-1.5-7b-hf",
+    "base_model:adapter:llava-hf/llava-1.5-7b-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67646859,
+  "storage_human": "68 MB",
+  "base_model": "llava-hf/llava-1.5-7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

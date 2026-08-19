@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "lued/Qwen3.8-27B-AEON-UNCENSORED-INT8-W8A16-MTP",
+  "slug": "lued-qwen3-8-27b-aeon-uncensored-int8-w8a16-mtp",
+  "author": "lued",
+  "url": "https://huggingface.co/lued/Qwen3.8-27B-AEON-UNCENSORED-INT8-W8A16-MTP",
+  "created_at": "2026-08-17T16:51:15.000Z",
+  "updated_at": "2026-08-17T16:52:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "aeon",
+    "uncensored",
+    "abliterated",
+    "abliterix",
+    "compressed-tensors",
+    "w8a16",
+    "int8",
+    "quantized",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "conversational",
+    "image-text-to-text",
+    "base_model:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "base_model:quantized:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31636252380,
+  "storage_human": "31.6 GB",
+  "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Quantized Models for Qwen/Qwen3.8-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Qwen/Qwen3.8-27B",
+      "snippet": "Active filters: Qwen/Qwen3.8-27B. Clear all. unsloth/Qwen3.8-27B-GGUF. 27B • Updated about 23 hours ago • 868k • 1.26k"
+    },
+    {
+      "title": "lued/Qwen3.8-27B-INT8-W8A16-MTP · Hugging Face",
+      "url": "https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

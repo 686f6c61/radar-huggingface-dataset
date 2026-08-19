@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "enpasos/jax2onnx-models",
+  "slug": "enpasos-jax2onnx-models",
+  "author": "enpasos",
+  "url": "https://huggingface.co/enpasos/jax2onnx-models",
+  "created_at": "2025-06-29T09:47:44.000Z",
+  "updated_at": "2026-08-17T07:33:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "jax",
+    "jax2onnx",
+    "model-conversion",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26119874969,
+  "storage_human": "26.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

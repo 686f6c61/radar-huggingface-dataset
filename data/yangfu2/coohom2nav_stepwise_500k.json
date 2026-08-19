@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yangfu2/coohom2nav_stepwise_500k",
+  "slug": "yangfu2-coohom2nav_stepwise_500k",
+  "author": "yangfu2",
+  "url": "https://huggingface.co/yangfu2/coohom2nav_stepwise_500k",
+  "created_at": "2026-08-18T23:16:58.000Z",
+  "updated_at": "2026-08-18T23:20:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 35068595000,
+  "storage_human": "35.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yangfu2 (Yang Fu) - Hugging Face",
+      "url": "https://huggingface.co/yangfu2",
+      "snippet": "User profile of Yang Fu on Hugging Face"
+    },
+    {
+      "title": "yangfu2/test · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/yangfu2/test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Critical 9.8 RCE Threat to SGLang AI Infrastructure",
+      "url": "https://securityonline.info/sglang-critical-rce-cve-2026-5760-ai-model-poisoning/",
+      "snippet": "A critical remote code execution (RCE) vulnerability has been uncovered in SGLang, a popular open-source framework used to serve advanced models like DeepSeek and Mistral. The flaw, officially tracked as CVE-2026-5760, carries a CVSS score of 9.8, signaling a \"Critical\" risk level for AI infrastructure. The vulnerability resides specifically within SGLang&#x27;s reranking endpoint (/v1/rerank ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Generate 3D Models through AI Tools in Coohom - 酷家乐",
+      "url": "https://www.kujiale.com/en_US/helpcenter/model-materials-ai-modeler-tool-operation-guide",
+      "snippet": "The generated model will appear in the AI Model List, and you can view the effect in real-time through the 3D Viewer window. Rotate the model overview by dragging with the mouse."
+    }
+  ]
+}

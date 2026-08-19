@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jliu7350/chromatic-wandering-axolotl",
+  "slug": "jliu7350-chromatic-wandering-axolotl",
+  "author": "jliu7350",
+  "url": "https://huggingface.co/jliu7350/chromatic-wandering-axolotl",
+  "created_at": "2026-04-25T01:12:27.000Z",
+  "updated_at": "2026-08-17T17:25:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 517538431381,
+  "storage_human": "517.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jliu7350/chromatic-wandering-axolotl · Hugging Face",
+      "url": "https://huggingface.co/jliu7350/chromatic-wandering-axolotl",
+      "snippet": "jliu7350 / chromatic-wandering-axolotl like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - axolotl-ai-cloud/axolotl: Go ahead and axolotl questions",
+      "url": "https://github.com/axolotl-ai-cloud/axolotl",
+      "snippet": "Go ahead and axolotl questions. Contribute to axolotl-ai-cloud/axolotl development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - NextAI-Inc/axolotl",
+      "url": "https://github.com/NextAI-Inc/axolotl",
+      "snippet": "Axolotl Axolotl is a tool designed to streamline the fine-tuning of various AI models, offering support for multiple configurations and architectures. Features: Train various Huggingface models such as llama, pythia, falcon, mpt Supports fullfinetune, lora, qlora, relora, and gptq Customize configurations using a simple yaml file or CLI overwrite"
+    },
+    {
+      "title": "Axolotl AI - GitHub",
+      "url": "https://github.com/axolotl-ai-cloud",
+      "snippet": "Axolotl AI has 22 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "axolotl-ai-co (Axolotl AI) - Hugging Face",
+      "url": "https://huggingface.co/axolotl-ai-co",
+      "snippet": "Org profile for Axolotl AI on Hugging Face, the AI community building the future."
+    }
+  ]
+}

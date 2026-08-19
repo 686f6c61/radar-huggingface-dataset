@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3.1-Taiwan-8B-Instruct-i1-GGUF",
+  "slug": "mradermacher-llama-3-1-taiwan-8b-instruct-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.1-Taiwan-8B-Instruct-i1-GGUF",
+  "created_at": "2026-08-16T17:36:23.000Z",
+  "updated_at": "2026-08-16T20:44:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:yentinglin/Llama-3.1-Taiwan-8B-Instruct",
+    "base_model:quantized:yentinglin/Llama-3.1-Taiwan-8B-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3803,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 93806122144,
+  "storage_human": "93.8 GB",
+  "base_model": "yentinglin/Llama-3.1-Taiwan-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

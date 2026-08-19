@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Ccadic/Anna-ZImage-Turbo-LoRA",
+  "slug": "ccadic-anna-zimage-turbo-lora",
+  "author": "Ccadic",
+  "url": "https://huggingface.co/Ccadic/Anna-ZImage-Turbo-LoRA",
+  "created_at": "2026-08-18T22:28:17.000Z",
+  "updated_at": "2026-08-18T22:47:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lora",
+    "z-image",
+    "z-image-turbo",
+    "character",
+    "cinematic",
+    "photorealistic",
+    "comfyui",
+    "virtual-actress",
+    "text-to-image",
+    "en",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85094880,
+  "storage_human": "85 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anna AI Model - V1 | ZImage LoRA | Civitai",
+      "url": "https://civitai.red/models/2535358/anna-ai-model?modelVersionId=2849406",
+      "snippet": "Civit Ai trained Lora. Pictures for training generated with Civit Ai"
+    },
+    {
+      "title": "LoRA Training - Train Custom AI Image Generation Models - Z-Image-Turbo",
+      "url": "https://zimageturbo.com/lora-train",
+      "snippet": "LoRA Training for AI Image Generation LoRA training transforms your images into custom AI image generation models. Our LoRA training service creates personalized AI models by fine-tuning less than 1% of model weights. Upload 10-50 images for LoRA training and receive a .safetensors file for AI image generation in 10-30 minutes."
+    },
+    {
+      "title": "TurboLora - Train Custom AI LoRA Models in Minutes | No GPU Required",
+      "url": "https://turbolora.com/",
+      "snippet": "Train personalized LoRA models on Z-Image Turbo with just a few photos. No GPU required, no coding needed. Create AI models of yourself, characters, or any style in minutes. Unlimited image generation included."
+    },
+    {
+      "title": "Z-Image Lookalike LoRA Index - a Hugging Face Space by nphSi",
+      "url": "https://huggingface.co/spaces/nphSi/Lookalike-LoRA-Index",
+      "snippet": "Lookalike LoRA Index nphSi´s finest authentic Loras Compatible with ZI Base and Turbo A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 1370 LoRAs Showing all (®=Request) Showing all LoRAs for Z-Image (Base and Turbo) --- PLEASE READ --- • All Loras are trained on free public images that are rated PG-13 (safe for work)."
+    },
+    {
+      "title": "Tekken-Anna_Williams_Z-Image Turbo - v2.0 | ZImage LoRA | Civitai",
+      "url": "https://civitai.red/models/2415686/tekken-annawilliamsz-image-turbo",
+      "snippet": "Anna_Williams_Z-Image Turbo-2_000003500.safetensors BF16, good balance • 162.25 MB Verified:11 days ago Download (162.25 MB) Tekken Collection - 28 items Details Type LoRA Stats 200 1 2 3 4 5 6 7 8 90 1 2 3 4 5 6 7 8 9 00 1 2 3 4 5 6 7 8 9 Reviews No reviews yet Published Jul 23, 2026 Base Model ZImageTurbo Training Steps: 3,500 Epochs: 4 ..."
+    }
+  ]
+}

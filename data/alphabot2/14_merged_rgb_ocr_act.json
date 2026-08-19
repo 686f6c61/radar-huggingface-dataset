@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alphabot2/14_Merged_RGB_ocr_ACT",
+  "slug": "alphabot2-14_merged_rgb_ocr_act",
+  "author": "alphabot2",
+  "url": "https://huggingface.co/alphabot2/14_Merged_RGB_ocr_ACT",
+  "created_at": "2026-08-18T05:14:34.000Z",
+  "updated_at": "2026-08-18T05:15:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:alphabot2/14_Merged_RGB_ocr",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51637904,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206587512,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alphabot2/14_Merged_RGB_ocr · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/alphabot2/14_Merged_RGB_ocr",
+      "snippet": "Datasets: alphabot2 / 14_Merged_RGB_ocr like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·54.6k rows default (54.6k rows ..."
+    },
+    {
+      "title": "alphabot2/14_Merged_Depth_ocr at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/alphabot2/14_Merged_Depth_ocr/tree/main",
+      "snippet": "Datasets: alphabot2 / 14_Merged_Depth_ocr like 0 Tasks: Robotics Modalities: Image Time-series Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main 14_Merged_Depth_ocr 12.9 GB 1 contributor History:3 commits alphabot2 Upload README.md with huggingface_hub 2771f80 verifiedabout ..."
+    },
+    {
+      "title": "GitHub - HristovB/AlphaBot2_ASI: AlphaBot2 function library for RoboMac ...",
+      "url": "https://github.com/HristovB/AlphaBot2_ASI",
+      "snippet": "AlphaBot2 library for Arduino Uno microcontroller for RoboMac Junior 2025. RoboMac is a robotics and artificial intelligence competition held at the Faculty of Electrical Engineering and Information Technologies (FEEIT) in Skopje, North Macedonia."
+    },
+    {
+      "title": "GitHub - RobotsGo/AlphaBot2: AlphaBot2 RobotsGo Development",
+      "url": "https://github.com/RobotsGo/AlphaBot2",
+      "snippet": "AlphaBot2 RobotsGo Development . Contribute to RobotsGo/AlphaBot2 development by creating an account on GitHub."
+    },
+    {
+      "title": "AlphaBot2 - Waveshare Wiki",
+      "url": "https://www.waveshare.com/wiki/AlphaBot2",
+      "snippet": "The AlphaBot2 smart car development kit includes a baseboard AlphaBot2-Base and an adapter board (one of AlphaBot2-Ar, AlphaBot2-Pi, and AlphaBot2-PiZero). By choosing different adapter boards, the car can support access to Arduino, Raspberry Pi 3B, and Raspberry Pi Zero W."
+    }
+  ]
+}

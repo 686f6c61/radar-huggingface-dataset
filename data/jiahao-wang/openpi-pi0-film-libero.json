@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jiahao-Wang/openpi-pi0-film-libero",
+  "slug": "jiahao-wang-openpi-pi0-film-libero",
+  "author": "Jiahao-Wang",
+  "url": "https://huggingface.co/Jiahao-Wang/openpi-pi0-film-libero",
+  "created_at": "2026-08-16T23:41:04.000Z",
+  "updated_at": "2026-08-16T23:44:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "libero",
+    "pi0",
+    "film",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29065978124,
+  "storage_human": "29.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "openpi/examples/libero/README.md at main · Physical ... - GitHub",
+      "url": "https://github.com/Physical-Intelligence/openpi/blob/main/examples/libero/README.md",
+      "snippet": "Contribute to Physical-Intelligence/openpi development by creating an account on GitHub."
+    },
+    {
+      "title": "lerobot/pi0_libero_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi0_libero_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fisher-Wang/pi0-libero-pytorch · Hugging Face",
+      "url": "https://huggingface.co/Fisher-Wang/pi0-libero-pytorch",
+      "snippet": "Unlike the DROID/base negative-control repos in this collection, this is a genuine LIBERO policy: it was fine-tuned on LIBERO with the LIBERO IO convention and ships its own norm_stats. As a previous-generation model (π₀ vs π₀.₅) it provides a mid-range positive sample for benchmark discrimination tests."
+    },
+    {
+      "title": "pi0_libero_finetuned_v04 · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi0_libero_finetuned_v04/summary",
+      "snippet": "π₀ (Pi0) (LeRobot) π₀ is a Vision-Language-Action (VLA) foundation model from Physical Intelligence that jointly reasons over vision, language, and actions to control robots, serving as the base architecture that later enabled π₀.₅&#x27;s open-world generalization. Checkpoint trained and evaluated on LIBERO tasks. Original paper: π0: A Vision-Language-Action Flow Model for General ..."
+    }
+  ]
+}

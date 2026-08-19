@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "models4world/iris-nook-70",
+  "slug": "models4world-iris-nook-70",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/iris-nook-70",
+  "created_at": "2026-08-16T12:24:52.000Z",
+  "updated_at": "2026-08-16T12:25:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:models4world/maple-signal-64",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:models4world/maple-signal-64",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11226685309,
+  "storage_human": "11.2 GB",
+  "base_model": "models4world/maple-signal-64",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "models4world (models4world) - Hugging Face",
+      "url": "https://huggingface.co/models4world/models",
+      "snippet": "User profile of models4world on Hugging Face"
+    },
+    {
+      "title": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI ...",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+      "snippet": "Open-source AI in 2026 is no longer just the cheaper alternative to closed models. For coding, reasoning, agentic workflows, long-context analysis, and local deployment, open-weig"
+    },
+    {
+      "title": "Iris Book Nook - Inspired by Companion Movie - Free 3D Print Model ...",
+      "url": "https://makerworld.com/en/models/1475946-iris-book-nook-inspired-by-companion-movie",
+      "snippet": "Now she just waits.\" This eerie book nook diorama features Iris, a lifelike AI figure caught between machine and memory. Inspired by the tone and visual style of the sci-fi horror movie Companion (2025), this original 3D model brings the unsettling presence of an artificial being directly into your shelf, wall, or workspace."
+    },
+    {
+      "title": "Iris Book Nook - Inspired by Companion Movie",
+      "url": "https://makerworld.com/tr/models/1475946-iris-book-nook-inspired-by-companion-movie",
+      "snippet": "\"She was built to serve. Now she just waits.\"This eerie book nook diorama features Iris, a lifelike AI figure caught between machine and memory. Inspired by the tone and visual style of the sci-fi horror movie Companion (2025), this original 3D model brings the unsettling presence of an artificial being directly into your shelf, wall, or workspace.Iris appears inside a minimalist frame - a ..."
+    },
+    {
+      "title": "AI Models - UnoRouter",
+      "url": "https://unorouter.com/en/models",
+      "snippet": "Every AI model in one place. GPT, Claude, Gemini, DeepSeek and more. Use them in your code or in any OpenAI-compatible AI chat client. Same pricing for both."
+    }
+  ]
+}

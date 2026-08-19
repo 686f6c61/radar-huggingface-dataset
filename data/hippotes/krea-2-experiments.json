@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Hippotes/Krea-2-Experiments",
+  "slug": "hippotes-krea-2-experiments",
+  "author": "Hippotes",
+  "url": "https://huggingface.co/Hippotes/Krea-2-Experiments",
+  "created_at": "2026-06-22T22:25:36.000Z",
+  "updated_at": "2026-08-16T21:05:40.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "comfyui",
+    "safetensors",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:quantized:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 621,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73168609165,
+  "storage_human": "73.2 GB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

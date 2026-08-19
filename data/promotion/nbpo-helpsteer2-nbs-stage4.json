@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "promotion/nbpo-helpsteer2-nbs-stage4",
+  "slug": "promotion-nbpo-helpsteer2-nbs-stage4",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/nbpo-helpsteer2-nbs-stage4",
+  "created_at": "2026-08-16T20:43:38.000Z",
+  "updated_at": "2026-08-16T20:48:16.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "nbpo",
+    "multi-objective-alignment",
+    "helpsteer2",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138296273,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/HelpSteer2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/nvidia/HelpSteer2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "promotion/nbpo-artifacts · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/promotion/nbpo-artifacts",
+      "snippet": "nbpo-artifacts Backups of the training runs for Nash Bargaining Preference Optimization (NBPO). They exist so a run can resume after the compute container is recycled; treat them as run state, not as a release. Panels: helpsteer2 and hs2gemma are the four-judge HelpSteer2 panel with a Zephyr-7B-SFT and a Gemma-2-9B-it reference respectively; saferlhf is the two-judge safety panel. A directory ..."
+    },
+    {
+      "title": "HelpSteer2: Open-source dataset for training top-performingreward models",
+      "url": "https://arxiv.org/pdf/2406.08673",
+      "snippet": "Abstract High-quality preference datasets are essential for training reward models that can effectively guide large language models (LLMs) in generating high-quality re-sponses aligned with human preferences. As LLMs become stronger and better aligned, permissively licensed preference datasets, such as Open Assistant, HH-RLHF, and HelpSteer need to be updated to remain effective for reward ..."
+    },
+    {
+      "title": "PDF HelpSteer2: Open-source dataset for training top-performing reward models",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/02fd91a387a6a5a5751e81b58a75af90-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "snippet": "Using a powerful Nemotron-4-340B base model trained on HelpSteer2, we are able to achieve the SOTA score (92.0%) on Reward-Bench&#x27;s primary dataset, outperforming currently listed open and proprietary models, as of June 12th, 2024."
+    },
+    {
+      "title": "HelpSteer2 — Preference (RLHF / DPO) Dataset for LLM Training | LLM ...",
+      "url": "https://llmconfigurator.com/en/datasets/helpsteer2",
+      "snippet": "HelpSteer2 NVIDIA&#x27;s 21K open-source preference dataset designed for training reward models and RLHF. Each response is annotated by human raters on 5 dimensions: helpfulness, correctness, coherence, complexity, and verbosity. Significantly improves reward model accuracy over HH-RLHF."
+    }
+  ]
+}

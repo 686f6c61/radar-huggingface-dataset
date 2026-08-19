@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ntworld6/alt-text-model",
+  "slug": "ntworld6-alt-text-model",
+  "author": "ntworld6",
+  "url": "https://huggingface.co/ntworld6/alt-text-model",
+  "created_at": "2026-08-10T16:35:30.000Z",
+  "updated_at": "2026-08-17T06:32:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:nlpconnect/vit-gpt2-image-captioning",
+    "base_model:finetune:nlpconnect/vit-gpt2-image-captioning",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 239195904,
+  "parameters_human": "239.2M",
+  "storage_bytes": 2870522611,
+  "storage_human": "2.9 GB",
+  "base_model": "nlpconnect/vit-gpt2-image-captioning",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

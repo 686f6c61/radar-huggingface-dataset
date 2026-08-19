@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_03a3ba3f5bb25c4a_20260817-80cab2f6-4538-422b-b35c-63329d36afd4-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_03a3ba3f5bb25c4a_20260817-80cab2f6-4538-422b-b35c-63329d36afd4-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_03a3ba3f5bb25c4a_20260817-80cab2f6-4538-422b-b35c-63329d36afd4-5GU4Xkd3",
+  "created_at": "2026-08-18T01:17:09.000Z",
+  "updated_at": "2026-08-18T01:17:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:NousResearch/Genstruct-7B",
+    "base_model:adapter:NousResearch/Genstruct-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1342732003,
+  "storage_human": "1.3 GB",
+  "base_model": "NousResearch/Genstruct-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_c03a612f287687e0_20260713 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_c03a612f287687e0_20260713-eceb3fc3-f5ae-44cb-8fce-db143d80733b-5GU4Xkd3",
+      "snippet": "gradients-io-tournaments / tournament-tourn_c03a612f287687e0_20260713-eceb3fc3-f5ae-44cb-8fce-db143d80733b-5GU4Xkd3 like 0 PEFT Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_390d9d05f7ad01a1_20260706 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_390d9d05f7ad01a1_20260706-eb21a4da-a18d-43cb-993a-f27e357ebbdf-5GU4Xkd3",
+      "snippet": "gradients-io-tournaments / tournament-tourn_390d9d05f7ad01a1_20260706-eb21a4da-a18d-43cb-993a-f27e357ebbdf-5GU4Xkd3 like 0 PEFT Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_d89fdb834131e48e_2... - Socket",
+      "url": "https://socket.dev/huggingface/package/gradients-io-tournaments/tournament-tourn_d89fdb834131e48e_20260101-0eb6c856-ad56-415a-91d5-1705ee02f6db-5gu4xkd3",
+      "snippet": "We found that gradients-io-tournaments/tournament-tourn_d89fdb834131e48e_20260101-0eb6c856-ad56-415a-91d5-1705ee02f6db-5GU4Xkd3 demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "Damacol/gradients-io-tournaments-tournament-tourn ... - GitHub",
+      "url": "https://github.com/Damacol/gradients-io-tournaments-tournament-tourn_21bd66f314a8ee19_20260416-c2bc0bc0-73df-4f9e-b421-b4d4baa7",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    }
+  ]
+}

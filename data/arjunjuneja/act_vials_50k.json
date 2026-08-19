@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "arjunjuneja/act_vials_50k",
+  "slug": "arjunjuneja-act_vials_50k",
+  "author": "arjunjuneja",
+  "url": "https://huggingface.co/arjunjuneja/act_vials_50k",
+  "created_at": "2026-08-18T09:05:46.000Z",
+  "updated_at": "2026-08-18T09:06:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:sreetz-nv/so101_teleop_vials_rack_left_cosmos_70",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714944,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arjunjuneja (Arjun) - Hugging Face",
+      "url": "https://huggingface.co/arjunjuneja",
+      "snippet": "User profile of Arjun on Hugging Face Image-Text-to-Text • 28B • Updated 4 days ago • 565k • 2.54k"
+    },
+    {
+      "title": "arjunjuneja (Arjun) - Hugging Face",
+      "url": "https://huggingface.co/arjunjuneja/datasets",
+      "snippet": "User profile of Arjun on Hugging Face"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "AI Artists: To find specific models and all their download links, especially if one link is broken. Developers/Researchers: To track specific model files (by hash) across the web and verify their existence."
+    }
+  ]
+}

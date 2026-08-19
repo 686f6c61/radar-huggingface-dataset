@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "CyberPaul/ratio-gemma3-4b-lora-v8",
+  "slug": "cyberpaul-ratio-gemma3-4b-lora-v8",
+  "author": "CyberPaul",
+  "url": "https://huggingface.co/CyberPaul/ratio-gemma3-4b-lora-v8",
+  "created_at": "2026-08-18T22:25:44.000Z",
+  "updated_at": "2026-08-19T02:36:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 276564777,
+  "storage_human": "277 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CyberPaul/ratio-gemma3-4b-lora · Hugging Face",
+      "url": "https://huggingface.co/CyberPaul/ratio-gemma3-4b-lora",
+      "snippet": "Instructions to use CyberPaul/ratio-gemma3-4b-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use CyberPaul/ratio-gemma3-4b-lora with Transformers:"
+    },
+    {
+      "title": "Gemma 3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/gemma3",
+      "snippet": "Notes Use Gemma3ForConditionalGeneration for image-and-text and image-only inputs. Gemma 3 supports multiple input images, but make sure the images are correctly batched before passing them to the processor. Each batch should be a list of one or more images."
+    },
+    {
+      "title": "Gemma 3 - Google&#x27;s Most Advanced Open AI Model - GitHub",
+      "url": "https://github.com/gemma-3/gemma-3",
+      "snippet": "Gemma 3 is Google&#x27;s most advanced open AI model, offering state-of-the-art performance with a 128K context window, multimodal capabilities, and support for 140+ languages. Build powerful applications on a single GPU with this cutting-edge technology."
+    },
+    {
+      "title": "Gemma 3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2503.19786v1",
+      "snippet": "Abstract We introduce Gemma 3, a multimodal addition to the Gemma family of lightweight open models, ranging in scale from 1 to 27 billion parameters. This version introduces vision understanding abilities, a wider coverage of languages and longer context - at least 128K tokens. We also change the architecture of the model to reduce the KV-cache memory that tends to explode with long context ..."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    }
+  ]
+}

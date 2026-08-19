@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/SeedVR2",
+  "slug": "comfy-org-seedvr2",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/SeedVR2",
+  "created_at": "2026-06-06T15:41:37.000Z",
+  "updated_at": "2026-08-17T06:08:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:ByteDance-Seed/SeedVR2-3B",
+    "base_model:finetune:ByteDance-Seed/SeedVR2-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 59,
+  "downloads_30d": 216417,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129422047950,
+  "storage_human": "129.4 GB",
+  "base_model": "ByteDance-Seed/SeedVR2-3B, ByteDance-Seed/SeedVR2-7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/SeedVR2 · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/SeedVR2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comfy-Org/SeedVR2 at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/SeedVR2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SeedVR2: Image and video upscaling in ComfyUI - docs.comfy.org",
+      "url": "https://docs.comfy.org/tutorials/utility/seedvr2",
+      "snippet": "ComfyUI SeedVR2 Introduction SeedVR2 (arXiv:2506.05301, from ByteDance Seed) is a one-step diffusion-based video restoration model. It performs adversarial training against real data to restore and upscale images and videos with high fidelity. SeedVR2 is natively supported in ComfyUI (PR #14424). Key capabilities: Conservative upscaling: preserves original structure and detail while enhancing ..."
+    },
+    {
+      "title": "ai-models/SeedVR2_comfyUI - SeedVR2_comfyUI - gitea",
+      "url": "https://gitserver.onethingai.com/ai-models/SeedVR2_comfyUI",
+      "snippet": "🎨 ComfyUI Improvements Four-Node Modular Architecture: Split into dedicated nodes for DiT model, VAE model, torch.compile settings, and main upscaler for granular control Global Model Cache: Models now shared across multiple upscaler instances with automatic config updates - no more redundant loading"
+    },
+    {
+      "title": "GitHub - NeuroWaifu/ComfyUI.Node.SeedVR2",
+      "url": "https://github.com/NeuroWaifu/ComfyUI.Node.SeedVR2",
+      "snippet": "SeedVR2 is a state-of-the-art video upscaling model that achieves high-quality video restoration in a single step. This implementation provides seamless integration with ComfyUI, allowing you to enhance video quality with minimal computational overhead compared to traditional multi-step diffusion models."
+    }
+  ]
+}

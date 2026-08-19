@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BrutalCaesar/dpt_so101_cubcyl_recovery_tp48_unreg_emb256_3cam",
+  "slug": "brutalcaesar-dpt_so101_cubcyl_recovery_tp48_unreg_emb256_3cam",
+  "author": "BrutalCaesar",
+  "url": "https://huggingface.co/BrutalCaesar/dpt_so101_cubcyl_recovery_tp48_unreg_emb256_3cam",
+  "created_at": "2026-08-14T21:43:11.000Z",
+  "updated_at": "2026-08-14T21:43:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so-101",
+    "diffusion-policy",
+    "imitation-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 42615024,
+  "parameters_human": "42.6M",
+  "storage_bytes": 170519768,
+  "storage_human": "171 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "act_so101_cubcyl_recovery_chunk50_aug_3cam - Hugging Face",
+      "url": "https://huggingface.co/BrutalCaesar/act_so101_cubcyl_recovery_chunk50_aug_3cam",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "act_so101_cubcyl_poshold_chunk50_bc_3cam - Hugging Face",
+      "url": "https://huggingface.co/BrutalCaesar/act_so101_cubcyl_poshold_chunk50_bc_3cam",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - Luoyadan/lerobot_so101-sim2real: A detailed guide on sim-to ...",
+      "url": "https://github.com/Luoyadan/lerobot_so101-sim2real",
+      "snippet": "The tutorial heavily builds on top of Lerobot-Sim2Real but tailored for SO101. We will show an example on how to train a RGB based model controlling an SO101 robot arm in simulation and deploying that zero-shot in the real world to grasp cubes. LeRobot Sim2real provides code to train with Reinforcement Learning in fast GPU parallelized simulation and rendering via ManiSkill and deploy to the ..."
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    }
+  ]
+}

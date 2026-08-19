@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zuanfilm/comfyui-workflows",
+  "slug": "zuanfilm-comfyui-workflows",
+  "author": "zuanfilm",
+  "url": "https://huggingface.co/zuanfilm/comfyui-workflows",
+  "created_at": "2026-08-17T13:02:10.000Z",
+  "updated_at": "2026-08-17T13:02:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy Workflows - Free AI Generation Workflows",
+      "url": "https://comfy.org/workflows/",
+      "snippet": "Browse free, ready-to-use ComfyUI workflows Browse Workflows 612+ workflows across every model and category"
+    },
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    },
+    {
+      "title": "ComfyUI Official Documentation - ComfyUI",
+      "url": "https://docs.comfy.org/",
+      "snippet": "Official documentation for ComfyUI, the open source node-based generative AI application. Learn to build workflows for image, video, audio, and 3D generation."
+    },
+    {
+      "title": "ComfyUI Workflows | Runnable Guaranteed with Pre-set Nodes & Models",
+      "url": "https://www.runcomfy.com/comfyui-workflows",
+      "snippet": "200+ curated ComfyUI workflows for image, video, and audio. All workflows are ready to run in RunComfy Cloud, with nodes and models fully preconfigured."
+    },
+    {
+      "title": "ComfyUI Workflows - ComfyUI.org",
+      "url": "https://comfyui.org/en/workflows",
+      "snippet": "ComfyUI.org Workflows All Workflows ComfyUI Workflows Browse 329 ComfyUI workflows and guides with downloadable templates, model requirements, and setup notes."
+    }
+  ]
+}

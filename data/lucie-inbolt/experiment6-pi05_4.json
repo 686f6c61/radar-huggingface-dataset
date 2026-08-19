@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Lucie-inbolt/Experiment6-pi05_4",
+  "slug": "lucie-inbolt-experiment6-pi05_4",
+  "author": "Lucie-inbolt",
+  "url": "https://huggingface.co/Lucie-inbolt/Experiment6-pi05_4",
+  "created_at": "2026-08-17T16:27:44.000Z",
+  "updated_at": "2026-08-18T14:43:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49721486272,
+  "storage_human": "49.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucie-inbolt/Experiment6-pi05_4 · Hugging Face",
+      "url": "https://huggingface.co/Lucie-inbolt/Experiment6-pi05_4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lucie-inbolt/Experiment6-pi0 at main - Hugging Face",
+      "url": "https://huggingface.co/Lucie-inbolt/Experiment6-pi0/tree/main",
+      "snippet": "Lucie-inbolt / Experiment6-pi0 like 0 Robotics LeRobot Safetensors Lucie-inbolt/Experiment6 pi0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Lucie-inbolt/Experiment6-grootv2 · Hugging Face",
+      "url": "https://huggingface.co/Lucie-inbolt/Experiment6-grootv2",
+      "snippet": "Model Card for groot GR00T N1.7 is an open, cross-embodiment foundation model from NVIDIA for generalized humanoid robot reasoning and skills. It uses a Cosmos-Reason2/Qwen3-VL backbone and a flow-matching action transformer to predict actions conditioned on vision, language, and proprioception."
+    },
+    {
+      "title": "LUCIE — the truly open source AI built on transparency, trust, and ...",
+      "url": "https://lucie.chat/en",
+      "snippet": "LUCIE will evolve into a robust agentic AI framework, exploiting its capabilities to power autonomous systems and foundations for Large Action Models (LAMs), while maintaining transparency, trust and ethical safeguards."
+    },
+    {
+      "title": "Inbolt | Intelligence for Industrial Robots",
+      "url": "https://www.inbolt.com/",
+      "snippet": "Inbolt&#x27;s generalist AI model gives existing and new robots the power to master any process, part, or station. That means faster deployment, lower costs, and production lines running at full speed without downtime."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "joey00072/ohara-base-d12",
+  "slug": "joey00072-ohara-base-d12",
+  "author": "joey00072",
+  "url": "https://huggingface.co/joey00072/ohara-base-d12",
+  "created_at": "2026-08-15T17:35:25.000Z",
+  "updated_at": "2026-08-15T17:35:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "ohara",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ohara",
+    "nanochat",
+    "pretraining",
+    "base-model",
+    "llama",
+    "text-generation",
+    "en",
+    "dataset:nvidia/ClimbMix",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1608802989,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - joey00072/ohara: Collection of autoregressive model ...",
+      "url": "https://github.com/joey00072/ohara",
+      "snippet": "Collection of autoregressive model implementation. Contribute to joey00072/ohara development by creating an account on GitHub."
+    },
+    {
+      "title": "ohara/ohara/modules/base.py at master · joey00072/ohara",
+      "url": "https://github.com/joey00072/ohara/blob/master/ohara/modules/base.py",
+      "snippet": "Collection of autoregressive model implementation. Contribute to joey00072/ohara development by creating an account on GitHub."
+    },
+    {
+      "title": "ohara/ohara/trainer.py at master · joey00072/ohara · GitHub",
+      "url": "https://github.com/joey00072/ohara/blob/master/ohara/trainer.py",
+      "snippet": "Collection of autoregressive model implementation. Contribute to joey00072/ohara development by creating an account on GitHub."
+    },
+    {
+      "title": "joey00072 (Joey) - Hugging Face",
+      "url": "https://huggingface.co/joey00072/models",
+      "snippet": "Recent Activity updated a dataset 2 days ago joey00072/single-value-answer-filter-Skywork-OR1-RL published a dataset 2 days ago joey00072/single-value-answer-filter-Skywork-OR1-RL updated a model 7 days ago joey00072/Llama-3.2-1B-Instruct-tool-ex01 View all activity"
+    },
+    {
+      "title": "joey00072 (Joey) - Hugging Face",
+      "url": "https://huggingface.co/joey00072",
+      "snippet": "joey00072/tiny-reasoner-llama3.2-3B-16bit Text Generation • Updated Dec 27, 2024• 8 Expand 33 models"
+    }
+  ]
+}

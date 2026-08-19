@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/mlcommons-Deep-Autoencoder-DCASE2020-ToyCar-fp32-onnx",
+  "slug": "ketiswp-mlcommons-deep-autoencoder-dcase2020-toycar-fp32-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/mlcommons-Deep-Autoencoder-DCASE2020-ToyCar-fp32-onnx",
+  "created_at": "2026-08-19T01:56:22.000Z",
+  "updated_at": "2026-08-19T02:10:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "fp32",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1067984,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "model_registry.csv · ketiswp/ONNX_Models at main - Hugging Face",
+      "url": "https://huggingface.co/ketiswp/ONNX_Models/blob/main/model_registry.csv",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Autoencoders in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/auto-encoders/",
+      "snippet": "Autoencoders are neural networks that compress input data into a smaller representation and then reconstruct it, helping the model learn important patterns efficiently. Their key uses include: Helps remove unwanted noise from data and improve quality Identifies unusual patterns or anomalies in data Extracts important features for better model performance"
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning interoperability",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their project evolves. ONNX provides an open source format for AI models, both deep learning and traditional ML. It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Roy229/hf_tt_cfc1b8_bert_sentiment",
+  "slug": "roy229-hf_tt_cfc1b8_bert_sentiment",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/hf_tt_cfc1b8_bert_sentiment",
+  "created_at": "2026-08-15T05:47:48.000Z",
+  "updated_at": "2026-08-17T03:57:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-classification",
+    "aurora-model",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mervp/SentimentBERT · Hugging Face",
+      "url": "https://huggingface.co/mervp/SentimentBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BERT Fine-Tuning for Sentiment Classification - GitHub",
+      "url": "https://github.com/KuntaAkshaya/BERT-Fine-Tuning-for-Sentiment-Classification",
+      "snippet": "This project focuses on building a Sentiment Analysis model using BERT (Bidirectional Encoder Representations from Transformers). The pre-trained BERT model is fine-tuned on a labeled dataset to classify text into positive or negative sentiment."
+    },
+    {
+      "title": "Sentiment Classification Using BERT - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/sentiment-classification-using-bert/",
+      "snippet": "In this post, we will be using BERT architecture for Sentiment classification tasks specifically the architecture used for the CoLA (Corpus of Linguistic Acceptability) binary classification task."
+    },
+    {
+      "title": "ahsansabeeh910/Sentiment-Analyzer-using-BERT-Model - GitHub",
+      "url": "https://github.com/ahsansabeeh910/Sentiment-Analyzer-using-BERT-Model",
+      "snippet": "BERT Sentiment Analyzer is an AI-powered web application built using Streamlit, PyTorch, and HuggingFace Transformers for real-time sentiment analysis. The project uses a fine-tuned BERT model to classify text into Positive, Negative, or Neutral sentiments with confidence score visualization and interactive analytics."
+    }
+  ]
+}

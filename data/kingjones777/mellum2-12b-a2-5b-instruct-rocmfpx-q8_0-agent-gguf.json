@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFPX-Q8_0-AGENT-GGUF",
+  "slug": "kingjones777-mellum2-12b-a2-5b-instruct-rocmfpx-q8_0-agent-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFPX-Q8_0-AGENT-GGUF",
+  "created_at": "2026-08-16T16:34:15.000Z",
+  "updated_at": "2026-08-16T16:35:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "gfx1151",
+    "strix-halo",
+    "amd",
+    "ryzen-ai-max-395",
+    "rocmfpx",
+    "mellum",
+    "moe",
+    "code",
+    "code-completion",
+    "text-generation",
+    "en",
+    "base_model:JetBrains/Mellum2-12B-A2.5B-Instruct",
+    "base_model:quantized:JetBrains/Mellum2-12B-A2.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 84,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 12754956960,
+  "storage_human": "12.8 GB",
+  "base_model": "JetBrains/Mellum2-12B-A2.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFP4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFP4-GGUF",
+      "snippet": "A 4-bit ROCmFP4 quantization of JetBrains/Mellum2-12B-A2.5B-Instruct, built for AMD gfx1151 (Ryzen AI MAX+ 395 / Strix Halo), with the LM head and token embeddings held at Q6_K."
+    },
+    {
+      "title": "kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFPX-Q8_0-AGENT-GGUF ...",
+      "url": "https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFPX-Q8_0-AGENT-GGUF",
+      "snippet": "Mellum2-12B-A2.5B-Instruct — ROCmFPX 8-bit AGENT GGUF An 8-bit ROCmFPX quantization for AMD gfx1151 (Ryzen AI MAX+ 395 / Strix Halo), quantized from BF16 GGUF (24,311,968,416 B) — a lossless source, byte-verified against the upstream blob."
+    },
+    {
+      "title": "Mellum2-12B-A2.5B-Instruct GGUF Quantization & Evaluation",
+      "url": "https://github.com/altibola/Mellum2-12B-A2.5B-Instruct-GGUF",
+      "snippet": "Scripts and tools for converting JetBrains/Mellum2-12B-A2.5B-Instruct to GGUF format with quantization (Q8_0 and Q4_K_M), plus evaluation scripts for reproducing published benchmarks locally."
+    },
+    {
+      "title": "[2605.31268] Mellum2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2605.31268",
+      "snippet": "We present Mellum 2, an open-weight 12B-parameter Mixture-of-Experts (MoE) language model with 2.5B active parameters per token. Mellum 2 is a general-purpose language model specialized in software engineering, spanning code generation and editing, debugging, multi-step reasoning, tool use and function calling, agentic coding, and conversational programming assistance, and it is the successor ..."
+    },
+    {
+      "title": "Mellum2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2605.31268",
+      "snippet": "Abstract We present Mellum 2, an open-weight 12B-parameter Mixture-of-Experts (MoE) language model with 2.5B active parameters per token. Mellum 2 is a general-purpose language model specialized in software engineering, spanning code generation and editing, debug-ging, multi-step reasoning, tool use and function calling, agentic coding, and conversational programming assistance, and it is the ..."
+    }
+  ]
+}

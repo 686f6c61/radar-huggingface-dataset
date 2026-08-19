@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Teamrat/habit",
+  "slug": "teamrat-habit",
+  "author": "Teamrat",
+  "url": "https://huggingface.co/Teamrat/habit",
+  "created_at": "2026-08-08T13:45:45.000Z",
+  "updated_at": "2026-08-18T02:18:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "tensorflow",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tensorflow",
+    "onnx",
+    "soil-science",
+    "pedotransfer-function",
+    "water-retention",
+    "attention-mechanism",
+    "ensemble",
+    "geoscience",
+    "tabular-regression",
+    "en",
+    "dataset:custom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 707106257,
+  "storage_human": "707 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teamrat/habit · Hugging Face",
+      "url": "https://huggingface.co/Teamrat/habit",
+      "snippet": "Model architecture HABIT uses property-specific encoders, cross-attention layers for property interactions, multi-head attention over soil properties and water potentials, and a monotonic output layer that enforces physically correct behavior (water content decreases with increasing tension)."
+    },
+    {
+      "title": "GitHub - teamrat/habit",
+      "url": "https://github.com/teamrat/habit",
+      "snippet": "Interactive web app for HABIT (Hierarchical Attention-Based Inference with Transfer Learning), a pre-trained ensemble model for predicting soil water retention curves."
+    },
+    {
+      "title": "habit/README.md at main · teamrat/habit · GitHub",
+      "url": "https://github.com/teamrat/habit/blob/main/README.md",
+      "snippet": "HABIT — Soil Water Retention Predictor Interactive web app for HABIT (Hierarchical Attention-Based Inference with Transfer Learning), a pre-trained ensemble model for predicting soil water retention curves."
+    },
+    {
+      "title": "HABIT — Soil Water Retention Predictor - a Hugging Face Space by Teamrat",
+      "url": "https://huggingface.co/spaces/Teamrat/habit",
+      "snippet": "Soil water retention prediction with uncertainty"
+    },
+    {
+      "title": "AI Habitat",
+      "url": "https://aihabitat.org/",
+      "snippet": "AI Habitat 📢 Habitat 3.0 is out. Find more information on the project page 📢 Habitat Navigation Challenge 2023 is live now! You can find it here What is Embodied AI? \"AI is … the science and engineering of making intelligent machines.\" - John McCarthy Embodied AI is the science and engineering of intelligent machines with a physical or virtual embodiment (typically, robots and ..."
+    }
+  ]
+}

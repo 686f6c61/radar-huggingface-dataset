@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Biswojit33/expense-tracker-model",
+  "slug": "biswojit33-expense-tracker-model",
+  "author": "Biswojit33",
+  "url": "https://huggingface.co/Biswojit33/expense-tracker-model",
+  "created_at": "2026-08-15T05:56:00.000Z",
+  "updated_at": "2026-08-17T17:33:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 795615168,
+  "storage_human": "796 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Expense AI - AI-Powered Expense Tracker for iOS & Android",
+      "url": "https://expenseai.io/",
+      "snippet": "Track expenses effortlessly with AI. Just chat to log transactions, categorize spending, and get smart financial insights. Available on iPhone and Android."
+    },
+    {
+      "title": "#ai #artificialintelligence #machinelearning #expensetracker ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/biswajit-nayak-b48ab83b6_ai-artificialintelligence-machinelearning-activity-7490827863173021696-phqQ",
+      "snippet": "Excited to share my latest AI + MERN Stack project - AI Expense Tracker! Managing personal finances becomes easier with the power of Artificial Intelligence. This project helps users track daily ..."
+    },
+    {
+      "title": "GitHub - alxlvgit/ai-expense-tracker: The AI Expense Tracker is an ...",
+      "url": "https://github.com/alxlvgit/ai-expense-tracker",
+      "snippet": "The AI Expense Tracker is an expense management tool designed to simplify the process of tracking expenses by automating the extraction of necessary data from receipt images. Leveraging AI, this project simplifies expense tracking by accurately identifying and extracting key fields such as date, amount, and category from receipt images."
+    },
+    {
+      "title": "Expense Tracker App with Machine Learning Predictions",
+      "url": "https://github.com/haile1713/Simple--Expense-tracker-app-with-ML-",
+      "snippet": "A feature-rich expense tracker app that allows users to log, categorize, and track expenses. Customize it with AI/ML for project expense predictions and personalized financial insights, enhancing t..."
+    },
+    {
+      "title": "Expense AI - Scan Receipts, Track Budgets & Save Smarter",
+      "url": "https://expenseai.app/",
+      "snippet": "Track expenses by scanning receipts, forwarding emails, or uploading PDFs. Set budgets, monitor savings goals, and get AI-powered financial insights."
+    }
+  ]
+}

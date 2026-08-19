@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Miguelms13/Wiguel-AI-GGUF",
+  "slug": "miguelms13-wiguel-ai-gguf",
+  "author": "Miguelms13",
+  "url": "https://huggingface.co/Miguelms13/Wiguel-AI-GGUF",
+  "created_at": "2026-07-29T09:14:47.000Z",
+  "updated_at": "2026-08-15T10:05:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "conversational",
+    "offline-fallback",
+    "localized-inference",
+    "wiguel",
+    "wiguel-ai",
+    "wiguel-model",
+    "security",
+    "en",
+    "es",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 1238,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 5289445888,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

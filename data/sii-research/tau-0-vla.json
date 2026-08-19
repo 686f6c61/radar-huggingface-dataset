@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sii-research/tau-0-vla",
+  "slug": "sii-research-tau-0-vla",
+  "author": "sii-research",
+  "url": "https://huggingface.co/sii-research/tau-0-vla",
+  "created_at": "2026-07-27T02:57:00.000Z",
+  "updated_at": "2026-08-18T08:58:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "tau_vla",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "multimodal",
+    "flow-matching",
+    "action-chunking",
+    "cross-embodiment",
+    "qwen3.5",
+    "pretrained",
+    "en",
+    "arxiv:2608.16885",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 182,
+  "trending_score": 0,
+  "parameters": 3015404136,
+  "parameters_human": "3.02B",
+  "storage_bytes": 6051328553,
+  "storage_human": "6.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sii-research/tau-0-vla: This repo is the official ...",
+      "url": "https://github.com/sii-research/tau-0-vla",
+      "snippet": "This repo is the official implementation of \"τ0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation\". - sii-research/tau-0-vla"
+    },
+    {
+      "title": "sii-research/tau-0-vla · Hugging Face",
+      "url": "https://huggingface.co/sii-research/tau-0-vla",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sii-research/tau-0-vla | DeepWiki",
+      "url": "https://deepwiki.com/sii-research/tau-0-vla",
+      "snippet": "τ₀-VLA is a hierarchical robot foundation model designed for long-horizon manipulation tasks. It integrates a high-level reasoning policy with a generalist low-level policy capable of executing multi-modal subtasks across diverse robot embodiments."
+    },
+    {
+      "title": "tau-0-vla/src/tau0_vla at main · sii-research/tau-0-vla · GitHub",
+      "url": "https://github.com/sii-research/tau-0-vla/tree/main/src/tau0_vla",
+      "snippet": "This repo is the official implementation of \"τ0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation\". - sii-research/tau-0-vla"
+    },
+    {
+      "title": "Architecture Overview | sii-research/tau-0-vla | DeepWiki",
+      "url": "https://deepwiki.com/sii-research/tau-0-vla/1.1-architecture-overview",
+      "snippet": "Architecture Overview Relevant source files τ₀-VLA is a hierarchical robot foundation model designed for long-horizon manipulation tasks. The system decouples high-level semantic reasoning from low-level motor control, utilizing a Vision-Language Model (VLM) backbone integrated with a specialized action expert trained via Conditional Flow Matching (CFM). Hierarchical Policy Design The ..."
+    }
+  ]
+}

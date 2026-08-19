@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Qwen3-Coder-Next-heretic-GGUF",
+  "slug": "taurusduan-qwen3-coder-next-heretic-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Qwen3-Coder-Next-heretic-GGUF",
+  "created_at": "2026-08-16T07:44:51.000Z",
+  "updated_at": "2026-08-16T07:44:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:trohrbaugh/Qwen3-Coder-Next-heretic",
+    "base_model:quantized:trohrbaugh/Qwen3-Coder-Next-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 169,
+  "trending_score": 0,
+  "parameters": 79674391296,
+  "parameters_human": "79.67B",
+  "storage_bytes": 542472158176,
+  "storage_human": "542.5 GB",
+  "base_model": "trohrbaugh/Qwen3-Coder-Next-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Coder-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ghecko78/Qwen3-Coder-Next-Heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ghecko78/Qwen3-Coder-Next-Heretic-GGUF",
+      "snippet": "Qwen3-Coder-Next-heretic GGUF Quantized GGUF versions of trohrbaugh/Qwen3-Coder-Next-heretic for use with llama.cpp. Quantizations"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "You can write several lines of code with transformers to chat with Qwen3-Coder-Next. Essentially, we build the tokenizer and the model with the from_pretrained method, and we use the generate method to perform chatting with the help of the chat template provided by the tokenizer. Below is an example of how to chat with Qwen3-Coder-Next:"
+    },
+    {
+      "title": "Qwen3 Coder Next Heretic - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-coder-next-heretic.html",
+      "snippet": "Download Qwen3 Coder Next Heretic GGUF model. 79.0 GB, 382 downloads, 0 likes."
+    },
+    {
+      "title": "Qwen3-Coder-Next: The Complete 2026 Guide to Running Powerful AI Coding ...",
+      "url": "https://dev.to/sienna/qwen3-coder-next-the-complete-2026-guide-to-running-powerful-ai-coding-agents-locally-1k95",
+      "snippet": "Real-World Use Cases and Performance Comparison: Qwen3-Coder-Next vs Claude vs GPT Common Issues and Solutions FAQ Conclusion and Next Steps What is Qwen3-Coder-Next? Qwen3-Coder-Next is an open-weight language model released by Alibaba&#x27;s Qwen team in February 2026, specifically designed for coding agents and local development environments."
+    }
+  ]
+}

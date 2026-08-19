@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anii03/sample03",
+  "slug": "anii03-sample03",
+  "author": "anii03",
+  "url": "https://huggingface.co/anii03/sample03",
+  "created_at": "2026-08-17T05:08:53.000Z",
+  "updated_at": "2026-08-17T05:09:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAM 3.1: Faster and More Accessible Real-Time Video Detection and ...",
+      "url": "https://ai.meta.com/blog/segment-anything-model-3/",
+      "snippet": "This improvement comes from a shift in how the model handles multiple objects. Previously, each object required its own dedicated pass, but with multiplexing, SAM 3.1 processes all tracked objects together, eliminating redundant computation and memory bottlenecks. This global reasoning approach streamlines performance and enhances accuracy in crowded scenes. We encourage the community to ..."
+    },
+    {
+      "title": "azure-sdk-for-net/sdk/contentunderstanding/Azure.AI ... - GitHub",
+      "url": "https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/contentunderstanding/Azure.AI.ContentUnderstanding/samples/Sample03_AnalyzeInvoice.md",
+      "snippet": "After an analyze operation completes, you can retrieve usage details that describe the resources consumed — including document page counts, contextualization tokens, and per-model LLM/embedding token breakdown. Usage is returned as a sibling of result in the LRO response envelope. Use GetUsageDetails () to read generated UsageDetails."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

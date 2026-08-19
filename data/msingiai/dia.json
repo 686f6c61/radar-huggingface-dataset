@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "msingiai/dia",
+  "slug": "msingiai-dia",
+  "author": "msingiai",
+  "url": "https://huggingface.co/msingiai/dia",
+  "created_at": "2026-07-27T11:44:54.000Z",
+  "updated_at": "2026-08-17T17:49:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "dia",
+  "languages": [
+    "sw"
+  ],
+  "tags": [
+    "dia",
+    "text-to-speech",
+    "tts",
+    "swahili",
+    "kiswahili",
+    "code-switching",
+    "african-languages",
+    "sw",
+    "dataset:google/WaxalNLP",
+    "dataset:google/fleurs",
+    "dataset:DigitalUmuganda/Afrivoice_Swahili",
+    "dataset:badrex/swahili-speech-400hr",
+    "dataset:Thomcles/YodaLingua-Swahili",
+    "dataset:Bateesa/kiswahili-tts-dataset",
+    "dataset:jacksonwambali/swahili-tts-dataset",
+    "dataset:cdli/kenyan_swahili_nonstandard_speech_v1.0",
+    "dataset:michsethowusu/swahili-words-speech-text-parallel",
+    "dataset:stem-content-ai-project/swahili-speech",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "base_model:nari-labs/Dia-1.6B",
+    "base_model:finetune:nari-labs/Dia-1.6B",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 176,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6420601216,
+  "storage_human": "6.4 GB",
+  "base_model": "nari-labs/Dia-1.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-speech",
+      "dataset": null,
+      "metric": "Test CER",
+      "value": 1.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "msingiai/dia · Hugging Face",
+      "url": "https://huggingface.co/msingiai/dia",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Msingi-AI/dia_sw",
+      "url": "https://github.com/Msingi-AI/dia_sw",
+      "snippet": "Full supervised fine-tune of nari-labs/Dia-1.6B for Swahili, plus the evaluation harness, benchmark and analysis behind it. Weights: msingiai/dia on Hugging Face. Model card: MODEL_CARD.md ..."
+    },
+    {
+      "title": "MsingiAI - GitHub",
+      "url": "https://github.com/Msingi-AI/",
+      "snippet": "Building AI That Understands Africa. MsingiAI has 13 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "msingiai (MsingiAI) - Hugging Face",
+      "url": "https://huggingface.co/msingiai",
+      "snippet": "Large Language Models AI & ML interests Large Language Models Recent Activity korir8 updated a model 1 day ago"
+    },
+    {
+      "title": "dia: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/dia-zsxkib",
+      "snippet": "Overview Dia is a 1.6 billion parameter text-to-dialogue audio generation model developed by Nari Labs and packaged for Replicate by zsxkib. It generates realistic dialogue audio directly from text, supporting multiple speakers using speaker tags like [S1] and [S2], non-verbal cues in parentheses (such as (laughs) or (whispers)), and voice cloning from reference audio. The model operates ..."
+    }
+  ]
+}

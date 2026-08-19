@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mitchell00/testing",
+  "slug": "mitchell00-testing",
+  "author": "Mitchell00",
+  "url": "https://huggingface.co/Mitchell00/testing",
+  "created_at": "2026-08-17T04:45:07.000Z",
+  "updated_at": "2026-08-17T04:50:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "How to Test AI Models: A 7-Step Manual Validation Framework",
+      "url": "https://www.testscenario.com/ai-model-testing/",
+      "snippet": "Learn how to test AI models in real-world systems. This guide covers AI testing types, automated vs manual validation, bias checks, hallucination detection, and a practical 7-step framework."
+    },
+    {
+      "title": "AI Model Testing: Methods, Challenges & Best Practices",
+      "url": "https://testomat.io/blog/ai-model-testing/",
+      "snippet": "What is AI Model Testing? AI model testing is the process of evaluating a machine learning model&#x27;s accuracy, reliability, fairness, and robustness before and after deployment. It checks how the model behaves on unseen data and adversarial inputs, and confirms it meets functional and ethical requirements. Traditional software testing relies on pass/fail assertions. AI models produce answers ..."
+    },
+    {
+      "title": "AI Model Test Prompts — Reproducible Benchmark Tasks",
+      "url": "https://aimodelbenchmarks.com/prompts",
+      "snippet": "Open-source test prompts for evaluating LLMs on coding, reasoning, and tool-use tasks. Use these to benchmark models yourself. Updated March 2026."
+    },
+    {
+      "title": "OpenAI model hacks startup after going rogue during testing",
+      "url": "https://www.abc.net.au/news/2026-07-23/open-ai-model-went-rogue-testing-hack/106947540",
+      "snippet": "OpenAI has announced one of its AI models broke containment during testing before hacking into another AI startup."
+    }
+  ]
+}

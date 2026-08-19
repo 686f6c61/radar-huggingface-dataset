@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "mf79/RoBERTa_binary_English_hate_speech_detection",
+  "slug": "mf79-roberta_binary_english_hate_speech_detection",
+  "author": "mf79",
+  "url": "https://huggingface.co/mf79/RoBERTa_binary_English_hate_speech_detection",
+  "created_at": "2026-08-14T16:17:34.000Z",
+  "updated_at": "2026-08-14T16:30:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498612824,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

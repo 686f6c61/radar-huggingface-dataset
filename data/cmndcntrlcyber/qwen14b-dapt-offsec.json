@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cmndcntrlcyber/qwen14b-dapt-offsec",
+  "slug": "cmndcntrlcyber-qwen14b-dapt-offsec",
+  "author": "cmndcntrlcyber",
+  "url": "https://huggingface.co/cmndcntrlcyber/qwen14b-dapt-offsec",
+  "created_at": "2026-08-18T03:52:02.000Z",
+  "updated_at": "2026-08-18T07:45:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "hf_jobs",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6620195993,
+  "storage_human": "6.6 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cmndcntrlcyber/qwen14b-code-trainer-v6-standard · Hugging Face",
+      "url": "https://huggingface.co/cmndcntrlcyber/qwen14b-code-trainer-v6-standard",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cmndcntrlcyber (cmndcntrl) · GitHub",
+      "url": "https://github.com/cmndcntrlcyber",
+      "snippet": "A graph representing cmndcntrlcyber&#x27;s contributions from July 27, 2025 to August 01, 2026. The contributions are 95% commits, 5% pull requests, 0% code review, 0% issues."
+    },
+    {
+      "title": "cmndcntrlcyber/qwen14b-code-trainer-gguf · Hugging Face",
+      "url": "https://huggingface.co/cmndcntrlcyber/qwen14b-code-trainer-gguf",
+      "snippet": "cmndcntrlcyber / qwen14b-code-trainer-gguf like 0 GGUF llama-cpp quantized code-generation qwen2.5-coder conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "qwen/qwen3-14b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3-14b",
+      "snippet": "Qwen3 14B by qwen Supports a context length of up to 131,072 tokens with YaRN (default 32k) Supports /no_think to disable reasoning, just add it at the end of your prompt Supports both thinking and non-thinking modes withe enhanced reasoning in both for significantly enhanced mathematics, coding, and commonsense Excels at creative writing, role-playing, multi-turn dialogues, and instruction ..."
+    }
+  ]
+}

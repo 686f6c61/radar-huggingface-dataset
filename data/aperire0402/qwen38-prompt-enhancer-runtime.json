@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aperire0402/qwen38-prompt-enhancer-runtime",
+  "slug": "aperire0402-qwen38-prompt-enhancer-runtime",
+  "author": "aperire0402",
+  "url": "https://huggingface.co/aperire0402/qwen38-prompt-enhancer-runtime",
+  "created_at": "2026-08-18T01:32:15.000Z",
+  "updated_at": "2026-08-18T01:48:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "mtp",
+    "runpod",
+    "base_model:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "base_model:quantized:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 26827605376,
+  "storage_human": "26.8 GB",
+  "base_model": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Promhance - AI Prompt Enhancer & Generator",
+      "url": "https://www.promhance.com/",
+      "snippet": "An AI Prompt Enhancer is a tool that takes a simple idea and restructures it into a highly detailed, optimized prompt. Promhance uses proven prompt engineering frameworks to improve the quality of AI outputs automatically."
+    },
+    {
+      "title": "AI Prompt Enhancer - Transform Basic Prompts into Powerful AI Instructions",
+      "url": "https://www.prompt-enhancer.ai/",
+      "snippet": "Create optimized, structured, and effective prompts for AI language models like Claude, ChatGPT, and Gemini. Get better responses from AI with our free prompt enhancer tool."
+    },
+    {
+      "title": "GitHub - RealRebelAI/RebelsPromptEnhancer: A simple prompt enhancer ...",
+      "url": "https://github.com/RealRebelAI/RebelsPromptEnhancer",
+      "snippet": "A simple prompt enhancer node built with a Qwen 3.5-4b GGUF backbone for LOW VRAM users. intakes your prompts and enhances them based on settings. supports T2I, Image Editing, T2V - RealRebelAI/Re..."
+    },
+    {
+      "title": "AI Prompt Enhancer — Make Any Prompt Better - AI Prompt Converter",
+      "url": "https://www.aipromptconverter.com/prompt-enhancer",
+      "snippet": "AI Prompt Enhancer — Make Any Prompt Better A well-crafted prompt is the difference between a generic answer and a genuinely useful one. Our free prompt enhancer analyses your input and adds expert context, specificity, structural constraints, and clarity to unlock the full potential of any AI model."
+    },
+    {
+      "title": "Free AI Prompt Enhancer — Improve AI Prompts",
+      "url": "https://prompt-generators.com/ai-prompt-enhancer",
+      "snippet": "Boost results with our prompt enhancer. Optimize tone, details, and structure to get better outputs from any AI model — faster and smarter."
+    }
+  ]
+}

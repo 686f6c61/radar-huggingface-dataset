@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "vigneshwar234/Vashtra-0.6B",
+  "slug": "vigneshwar234-vashtra-0-6b",
+  "author": "vigneshwar234",
+  "url": "https://huggingface.co/vigneshwar234/Vashtra-0.6B",
+  "created_at": "2026-08-17T12:35:31.000Z",
+  "updated_at": "2026-08-17T13:57:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "machine-learning",
+    "small-language-model",
+    "slm",
+    "edge",
+    "on-device",
+    "domain-adaptation",
+    "continued-pretraining",
+    "arxiv",
+    "webgpu",
+    "text-generation",
+    "en",
+    "dataset:vigneshwar234/vashtra-ml-corpus",
+    "dataset:CShorten/ML-ArXiv-Papers",
+    "dataset:donfu/oa-stackexchange",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vigneshwar234 (vigneshwar l) - Hugging Face",
+      "url": "https://huggingface.co/vigneshwar234/datasets",
+      "snippet": "Retrieval-Augmented Generation Natural Language Processing Artificial Intelligence Machine Learning Causal Reasoning Information Retrieval"
+    },
+    {
+      "title": "vigneshwar234 (vigneshwar l) - Hugging Face",
+      "url": "https://huggingface.co/vigneshwar234/activity/all",
+      "snippet": "Open source LLM evaluation including hallucination rate for AI safety teams #2 opened about 2 months ago by vigneshwar234 New activity in locuslab/tofu_leaderboard about 2 months ago"
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "GitHub - thrinnadhh/Vastra-AI",
+      "url": "https://github.com/thrinnadhh/Vastra-AI",
+      "snippet": "# Vastra AI Fashion Engine Independent, production-structured AI microservice for fashion image validation, body measurements, fit recommendations, alterations, and virtual try-on."
+    },
+    {
+      "title": "GitHub - Misc42/tvashtra-landing: Tvashtra landing page — t·vashtra·ai",
+      "url": "https://github.com/Misc42/tvashtra-landing",
+      "snippet": "Tvashtra landing page — t·vashtra·ai. Contribute to Misc42/tvashtra-landing development by creating an account on GitHub."
+    }
+  ]
+}

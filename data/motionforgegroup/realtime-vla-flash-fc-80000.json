@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "MotionforgeGroup/realtime-vla-flash-FC-80000",
+  "slug": "motionforgegroup-realtime-vla-flash-fc-80000",
+  "author": "MotionforgeGroup",
+  "url": "https://huggingface.co/MotionforgeGroup/realtime-vla-flash-FC-80000",
+  "created_at": "2026-08-17T03:55:14.000Z",
+  "updated_at": "2026-08-17T04:18:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473094635,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Realtime-VLA FLASH",
+      "url": "https://dexmal.github.io/realtime-vla-flash/",
+      "snippet": "🔥 Flash path. Runs the Image Encoder on the latest observation, then drafts and verifies a candidate action chunk in parallel, returning the longest consistent prefix. Phase-aware fallback. Smooth motion often tolerates small draft errors, while final adjustments (eg. gripper switches) require higher-fidelity full-path actions."
+    },
+    {
+      "title": "[2605.13778] Realtime-VLA FLASH: Speculative Inference Framework for ...",
+      "url": "https://arxiv.org/abs/2605.13778",
+      "snippet": "Diffusion-based vision-language-action models (dVLAs) are promising for embodied intelligence but are fundamentally limited in real-time deployment by the high latency of full inference. We propose Realtime-VLA FLASH, a speculative inference framework that eliminates most full inference calls during replanning by introducing a lightweight draft model with parallel verification via the main ..."
+    },
+    {
+      "title": "Realtime-VLA FLASH: Speculative Inference Framework for Diffusion-based ...",
+      "url": "https://arxiv.org/html/2605.13778v1",
+      "snippet": "We propose Realtime-VLA FLASH, a speculative inference framework that eliminates most full inference calls during replanning by introducing a lightweight draft model with parallel verification via the main model&#x27;s Action Expert and a phase-aware fallback mechanism that reverts to the full inference pipeline when needed."
+    },
+    {
+      "title": "MotionforgeGroup (MotionforgeGroup) - Hugging Face",
+      "url": "https://huggingface.co/MotionforgeGroup/models",
+      "snippet": "Org profile for MotionforgeGroup on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - dexmal/realtime-vla-flash",
+      "url": "https://github.com/dexmal/realtime-vla-flash",
+      "snippet": "Realtime-VLA FLASH is the first speculative inference framework for diffusion-based VLAs. Speculative inference as fast as 7.8 ms (2 views), enabling over 125 Hz real-time inference. VLM-aligned draft architecture with a deployment-friendly block design. FLASH serving with customized Triton kernels, achieving a 3.04× average task-level speedup."
+    }
+  ]
+}

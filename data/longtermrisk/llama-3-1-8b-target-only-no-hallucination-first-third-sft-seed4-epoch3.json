@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed4-epoch3",
+  "slug": "longtermrisk-llama-3-1-8b-target-only-no-hallucination-first-third-sft-seed4-epoch3",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed4-epoch3",
+  "created_at": "2026-08-16T03:54:23.000Z",
+  "updated_at": "2026-08-16T03:54:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-sft-seed4",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed4",
+      "snippet": "Llama-3.1-8B-target-only-no-hallucination-sft-seed4 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft",
+      "snippet": "longtermrisk / Llama-3.1-8B-target-only-no-hallucination-sft like 0 Follow Center on Long-Term Risk 19 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-rerun ...",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-rerun-e9d315a-20260809",
+      "snippet": "Run Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-rerun-e9d315a-20260809 with FriendliAI inference. This llama model was trained 2x faster…"
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-kld - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-kld",
+      "snippet": "Run Llama-3.1-8B-target-only-no-hallucination-kld with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Llama 3.1 8B Target Only No Hallucination Sft - slopllm.com",
+      "url": "https://slopllm.com/m/llama-3-1-8b-target-only-no-hallucination-sft",
+      "snippet": "Llama 3.1 8B Target Only No Hallucination Sft by longtermrisk — 8.03B open-weight local LLM. License: apache-2.0. Benchmarks, VRAM requirements per quantization, GPU compatibility, pricing and community reviews on slopllm.com."
+    }
+  ]
+}

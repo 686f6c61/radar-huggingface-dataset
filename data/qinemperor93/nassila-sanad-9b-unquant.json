@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "QinEmPeRoR93/nassila-sanad-9b-unquant",
+  "slug": "qinemperor93-nassila-sanad-9b-unquant",
+  "author": "QinEmPeRoR93",
+  "url": "https://huggingface.co/QinEmPeRoR93/nassila-sanad-9b-unquant",
+  "created_at": "2026-08-15T17:40:29.000Z",
+  "updated_at": "2026-08-15T17:46:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "nassila",
+    "sanad",
+    "grounding",
+    "l3-grounding",
+    "qwen",
+    "qwen3.5",
+    "peft",
+    "conversational",
+    "en",
+    "ar",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:13:27.449Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QinEmPeRoR93/nassila-sanad-9b-grounding-lora · Hugging Face",
+      "url": "https://huggingface.co/QinEmPeRoR93/nassila-sanad-9b-grounding-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · QinEmPeRoR93/nassila-sanad-9b-grounding-lora at main",
+      "url": "https://huggingface.co/QinEmPeRoR93/nassila-sanad-9b-grounding-lora/blob/main/README.md",
+      "snippet": "Arabic qwen qwen3.5 nassila sanad grounding citation conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main nassila-sanad-9b-grounding-lora /README.md QinEmPeRoR93 add model card eab169d verifiedabout 16 hours ago preview code | Raw Download with hf CLI Copy download link History Blame ..."
+    },
+    {
+      "title": "QinEmPeRoR93 (Gamal Esam Alsakkaf) - Hugging Face",
+      "url": "https://huggingface.co/QinEmPeRoR93",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 5 days ago ... published a model 5 days ago"
+    },
+    {
+      "title": "TensorFlow Lite Model | gbao86/AI_Garbage_Classification_Application ...",
+      "url": "https://deepwiki.com/gbao86/AI_Garbage_Classification_Application/2.2.1-tensorflow-lite-model",
+      "snippet": "TensorFlow Lite Model Relevant source files This document provides technical details on the TensorFlow Lite (TFLite) model (model_unquant.tflite) used as the primary, on-device classification engine in the EcoSort application. This model enables high-speed, offline waste identification for common household items. Overview The application utilizes a custom-trained TFLite model to perform real ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sjwjne/Zip",
+  "slug": "sjwjne-zip",
+  "author": "Sjwjne",
+  "url": "https://huggingface.co/Sjwjne/Zip",
+  "created_at": "2026-08-16T08:37:33.000Z",
+  "updated_at": "2026-08-16T08:39:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6028517,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sjwjne (Sjsnsn) - Hugging Face",
+      "url": "https://huggingface.co/Sjwjne",
+      "snippet": "Previewteam 🏆 Build and preview Android apps instantly from a ZIP Sjwjne about 12 hours ago Build error"
+    },
+    {
+      "title": "Sjwjne/dalle-mini at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/Sjwjne/dalle-mini/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "ZipNN: Lossless Compression for AI Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/2411.05239",
+      "snippet": "While there is a vast model compression literature deleting parts of the model weights for faster inference, we investigate a more traditional type of compression - one that represents the model in a compact form and is coupled with a decompression algorithm that returns it to its original form and size - namely lossless compression."
+    },
+    {
+      "title": "IBM&#x27;s ZipNN Can Shrink AI Models by 33% with Zero ... - TipRanks",
+      "url": "https://www.tipranks.com/news/ibms-zipnn-can-shrink-ai-models-by-33-with-zero-performance-loss",
+      "snippet": "The idea for ZipNN came when IBM researchers, working with universities like MIT and Tel Aviv University, discovered that part of a model&#x27;s data—called exponents—follows a predictable pattern. These exponents are part of floating-point numbers used to store information in AI models."
+    }
+  ]
+}

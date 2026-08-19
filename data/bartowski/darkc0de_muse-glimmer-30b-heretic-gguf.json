@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bartowski/darkc0de_Muse-Glimmer-30B-heretic-GGUF",
+  "slug": "bartowski-darkc0de_muse-glimmer-30b-heretic-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/darkc0de_Muse-Glimmer-30B-heretic-GGUF",
+  "created_at": "2026-08-11T18:19:40.000Z",
+  "updated_at": "2026-08-11T19:00:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "image-text-to-text",
+    "base_model:darkc0de/Muse-Glimmer-30B-heretic",
+    "base_model:quantized:darkc0de/Muse-Glimmer-30B-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 20222,
+  "trending_score": 8,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 475755571296,
+  "storage_human": "475.8 GB",
+  "base_model": "darkc0de/Muse-Glimmer-30B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/darkc0de_Muse-Glimmer-30B-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/darkc0de_Muse-Glimmer-30B-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bartowski/darkc0de_Muse-Glimmer-30B-heretic-GGUF at main",
+      "url": "https://huggingface.co/bartowski/darkc0de_Muse-Glimmer-30B-heretic-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - cobusgreyling/Muse-Glimmer: Introducing Muse Glimmer: open ...",
+      "url": "https://github.com/cobusgreyling/Muse-Glimmer/tree/main",
+      "snippet": "Introducing Muse Glimmer: open-weight 30B agentic multimodal model that runs on your device (Meta). Interactive local agent lab + guide. Apache 2.0 · on-device AI · function calling - cobusgreyling..."
+    },
+    {
+      "title": "Muse Glimmer download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/muse-glimmer/",
+      "snippet": "Download Muse Glimmer for free. Local multimodal 30B model for autonomous agents, coding, and tools. Muse Glimmer-30B is Meta Superintelligence Lab&#x27;s open-weight multimodal model built specifically for autonomous agentic tasks on consumer hardware. Distilled from the larger Muse Spark, it combines multi-step reasoning, reliable tool use, coding, failure recovery, and image understanding in a ..."
+    },
+    {
+      "title": "Muse-Glimmer/README.md at main · cobusgreyling/Muse-Glimmer",
+      "url": "https://github.com/cobusgreyling/Muse-Glimmer/blob/main/README.md",
+      "snippet": "Introducing Muse Glimmer: open-weight 30B agentic multimodal model that runs on your device (Meta). Interactive local agent lab + guide. Apache 2.0 · on-device AI · function calling - cobusgreyling..."
+    }
+  ]
+}

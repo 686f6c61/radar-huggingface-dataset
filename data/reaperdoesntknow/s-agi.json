@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/S-AGI",
+  "slug": "reaperdoesntknow-s-agi",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/S-AGI",
+  "created_at": "2026-01-21T16:12:57.000Z",
+  "updated_at": "2026-08-17T13:16:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "convergentintel",
+    "swarm-intelligence",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/SAGI · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/SAGI",
+      "snippet": "SAGI - Swarm AGI Language Model SAGI is a novel causal language model that integrates swarm intelligence dynamics with transformer architecture. The model treats cognition as a dynamic, adaptive system where multiple internal \"agents\" collaborate through differentiable routing, trust mechanisms, and shared memory. Model Description"
+    },
+    {
+      "title": "reaperdoesntknow/S-AGI · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/S-AGI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Amazon just shut its AGI Lab, and quit a race it never led",
+      "url": "https://thenextweb.com/news/amazon-shuts-agi-lab-frontier-model-retreat-layoffs",
+      "snippet": "Amazon has closed its AGI Lab in fresh layoffs, 18 months after building it, the clearest sign yet it has stepped back from the frontier-model race."
+    },
+    {
+      "title": "AGI | Integral AI",
+      "url": "https://www.integral.ai/agi",
+      "snippet": "AGI-CAPABLE MODEL We are thrilled to unveil the first AGI-capable model—a breakthrough in machine intelligence that autonomously learns new skills safely, efficiently, and reliably. This milestone addresses the inherent limitations of current AI systems and establishes a scalable framework for achieving true generality and superintelligence."
+    },
+    {
+      "title": "Artificial general intelligence - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_general_intelligence",
+      "snippet": "Artificial general intelligence (AGI) is a hypothetical type of artificial intelligence that matches or surpasses human capabilities across virtually all cognitive tasks. [1] Beyond AGI, artificial superintelligence (ASI) would outperform the best human abilities across every domain by a wide margin. [2]"
+    }
+  ]
+}

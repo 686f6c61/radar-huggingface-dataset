@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AlayaLab/Marionette",
+  "slug": "alayalab-marionette",
+  "author": "AlayaLab",
+  "url": "https://huggingface.co/AlayaLab/Marionette",
+  "created_at": "2026-08-17T03:28:35.000Z",
+  "updated_at": "2026-08-18T08:36:33.000Z",
+  "license": "marionette-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "marionette",
+  "languages": [],
+  "tags": [
+    "marionette",
+    "diffusers",
+    "safetensors",
+    "world-model",
+    "video-generation",
+    "game",
+    "pose-control",
+    "autoregressive",
+    "arxiv:2608.14530",
+    "video-to-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10486782370,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlayaLab/Marionette: Marionette: Predicting World States ...",
+      "url": "https://github.com/AlayaLab/Marionette",
+      "snippet": "Marionette: Predicting World States, Rendering Geometry, Painting Appearance Alaya Lab A world model that models the world rather than its pixels: a dynamics model predicts an explicit articulated state, a zero-parameter bridge turns that state into geometry, and a video model paints appearance onto it."
+    },
+    {
+      "title": "Alaya Lab | AI x Gaming",
+      "url": "https://alayalab.ai/",
+      "snippet": "The next generation of game engineering and game intelligence. Agentic game creation, world models, generative rendering, game agents, and digital humans."
+    },
+    {
+      "title": "Alaya Lab — AI × Gaming",
+      "url": "https://alaya-lab.github.io/AlayaLab/",
+      "snippet": "Founded in 2026, we&#x27;re a team of gamers, creators, and AI experts driven by one shared obsession: creating the future of games. Our team includes developers from leading game studios, AI PhDs from top universities, and creators from diverse disciplines."
+    },
+    {
+      "title": "[2608.14530] Marionette: Predicting World States, Rendering Geometry ...",
+      "url": "https://arxiv.org/abs/2608.14530",
+      "snippet": "We explicitly model the evolving world state, delegate exact geometric computation to a fixed, zero-parameter renderer, and leave the neural model to synthesize appearance. We instantiate this idea as Marionette, a world model for interactive games with articulated characters."
+    },
+    {
+      "title": "GitHub - AlayaLab/AlayaWorld: Full-stack open-source interactive long ...",
+      "url": "https://github.com/AlayaLab/AlayaWorld",
+      "snippet": "AlayaWorld: Long-Horizon and Playable Video World Generation Alaya Lab An interactive autoregressive world model with real-time camera control, prompt switching, and long-horizon memory consistency."
+    }
+  ]
+}

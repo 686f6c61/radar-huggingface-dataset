@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Hungdd88/smolvla_ur3_multitasks",
+  "slug": "hungdd88-smolvla_ur3_multitasks",
+  "author": "Hungdd88",
+  "url": "https://huggingface.co/Hungdd88/smolvla_ur3_multitasks",
+  "created_at": "2026-08-17T10:34:08.000Z",
+  "updated_at": "2026-08-17T10:34:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Hungdd88/smolvla_handover_multitasks",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729872,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hungdd88/smolvla_ur3_multitask · Hugging Face",
+      "url": "https://huggingface.co/Hungdd88/smolvla_ur3_multitask",
+      "snippet": "Hungdd88 / smolvla_ur3_multitask like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.5B params Tensor type F32 · BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Hungdd88 (Hung Dao) - Hugging Face",
+      "url": "https://huggingface.co/Hungdd88/models",
+      "snippet": "Hungdd88&#x27;s models2 Sort: Recently updated Hungdd88/smolvla_ur3_handover_v2 0.5B•Updated 3 days ago• 7"
+    },
+    {
+      "title": "SmolVLA: An Open-Source Vision-Language-Action Model for Modern Robotics",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "SmolVLA A compact, efficient, and powerful vision-language-action model for modern robotics. 🚀 Meet SmolVLA SmolVLA is a groundbreaking Vision-Language-Action (VLA) model with only 450 million parameters, developed by Hugging Face. It&#x27;s carefully designed for cost-effective deployment on consumer-grade hardware, making advanced robotics technology accessible to more developers and ..."
+    },
+    {
+      "title": "blog/smolvla.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/smolvla.md",
+      "snippet": "SmolVLA is not only a lightweight yet capable model, but also a method for training and evaluating generalist robotics policies. In this section, we introduce the model architecture behind SmolVLA and the asynchronous inference setup used for evaluation, which has proven to be more adaptable and capable of faster recovery."
+    },
+    {
+      "title": "How to train smolvla for multi-task #1674 - GitHub",
+      "url": "https://github.com/huggingface/lerobot/issues/1674",
+      "snippet": "I have trained smolvla for aloha_sim_transfer_cube and aloha_sim_insertion, and smolvla performs well in each single task. Now I&#x27;d like to train smolvla for multi-task ---- one model can complete the two tasks above."
+    }
+  ]
+}

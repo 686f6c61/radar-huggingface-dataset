@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Preyazz/Qwen3.8-27B-GGUF",
+  "slug": "preyazz-qwen3-8-27b-gguf",
+  "author": "Preyazz",
+  "url": "https://huggingface.co/Preyazz/Qwen3.8-27B-GGUF",
+  "created_at": "2026-08-14T15:29:32.000Z",
+  "updated_at": "2026-08-14T15:36:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "vision-language",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 200,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 87824500096,
+  "storage_human": "87.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B goes open-weight within days. Here&#x27;s what&#x27;s confirmed, the GPU memory math for a 27B-class model, and how to serve it with vLLM or SGLang on day one."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new family of models, including Qwen3.8-27B, Qwen3.8- 2.4T-A95B and Qwen3.8 -Max. Qwen3.8 has vision and thinking capabilities and a 256K context window (up to 1M tokens). Qwen3.8-27B, the upcoming 27B parameter model will be released this Friday and Unsloth will have day-zero support. Qwen3.8-2.4T-A95B is a 2.4T parameter open-weight model (95B active) that rivals GPT-5.6 Sol."
+    },
+    {
+      "title": "Qwen3.8-27B: The Version You Can Actually Run, and How to Prepare For ...",
+      "url": "https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026",
+      "snippet": "Alibaba&#x27;s 2.4-trillion-parameter Qwen3.8-Max got the coverage. Qwen3.8-27B is the one most teams will actually deploy, and almost nothing about it has been published. Here is the honest state of play as of 4 August 2026. Alibaba announced both checkpoints on 3 August and confirmed that open weights ship for both, with release described as \"next week\" and no firm date attached. Neither model is ..."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B&#x27;s weights are overdue but imminent. Where the official download will appear, which GGUF quant fits your VRAM, the Ollama route, and the exact plan to be running it within an hour of the drop."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

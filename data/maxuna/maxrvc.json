@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maxuna/Maxrvc",
+  "slug": "maxuna-maxrvc",
+  "author": "maxuna",
+  "url": "https://huggingface.co/maxuna/Maxrvc",
+  "created_at": "2026-08-16T16:29:58.000Z",
+  "updated_at": "2026-08-16T16:30:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:brandon12333/Otis__RVC_v2_",
+    "base_model:adapter:brandon12333/Otis__RVC_v2_",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109605899,
+  "storage_human": "110 MB",
+  "base_model": "brandon12333/Otis__RVC_v2_",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "temakisan/maxRVC at main - Hugging Face",
+      "url": "https://huggingface.co/temakisan/maxRVC/tree/main",
+      "snippet": "temakisan / maxRVC like 0 License: openrail Model card FilesFiles and versions Community main maxRVC 1 contributor History:2 commits temakisan Upload maxRVC.zip a38cc0b 5 months ago .gitattributes 1.52 kB initial commit 5 months ago README.md 26 Bytes initial commit 5 months ago maxRVC.zip pickle 183 MB LFS Upload maxRVC.zip 5 months ago"
+    },
+    {
+      "title": "GitHub - 0rvar/maxuna: Laguna S 2.1, tuned to the wall for 128GB M5 Max",
+      "url": "https://github.com/0rvar/maxuna",
+      "snippet": "Laguna S 2.1, tuned to the wall for 128GB M5 Max. Contribute to 0rvar/maxuna development by creating an account on GitHub."
+    },
+    {
+      "title": "maxuna/README.md at master · 0rvar/maxuna · GitHub",
+      "url": "https://github.com/0rvar/maxuna/blob/master/README.md",
+      "snippet": "Laguna S 2.1, tuned to the wall for 128GB M5 Max. Contribute to 0rvar/maxuna development by creating an account on GitHub."
+    },
+    {
+      "title": "RVCMAX变声器!永久免费",
+      "url": "https://rvcmax.com/",
+      "snippet": "V1.0 最新 RVCmax 完全免费 超低延迟，AI 降噪，海量音色一键切换。"
+    },
+    {
+      "title": "megaaziib/my-rvc-models-collection at main - Hugging Face",
+      "url": "https://huggingface.co/megaaziib/my-rvc-models-collection/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

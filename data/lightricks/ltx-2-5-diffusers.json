@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Lightricks/LTX-2.5-Diffusers",
+  "slug": "lightricks-ltx-2-5-diffusers",
+  "author": "Lightricks",
+  "url": "https://huggingface.co/Lightricks/LTX-2.5-Diffusers",
+  "created_at": "2026-07-26T06:42:34.000Z",
+  "updated_at": "2026-08-16T06:31:25.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-video",
+    "text-to-video",
+    "video-to-video",
+    "image-text-to-video",
+    "audio-to-video",
+    "text-to-audio",
+    "video-to-audio",
+    "audio-to-audio",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "ltx-2",
+    "ltx-video",
+    "ltxv",
+    "lightricks",
+    "ltx-2.5",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt",
+    "arxiv:2601.03233",
+    "license:other",
+    "diffusers:LTX2Pipeline",
+    "region:us"
+  ],
+  "likes": 31,
+  "downloads_30d": 3747,
+  "trending_score": 13,
+  "parameters": 18987859200,
+  "parameters_human": "18.99B",
+  "storage_bytes": 184346794502,
+  "storage_human": "184.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "GitHub - Lightricks/LTX-Video: Official repository for LTX-Video",
+      "url": "https://github.com/Lightricks/LTX-Video",
+      "snippet": "Official repository for LTX-Video. Contribute to Lightricks/LTX-Video development by creating an account on GitHub."
+    },
+    {
+      "title": "LTX-2.5: A Complete Guide to Lightricks&#x27; Audio-Video AI Model",
+      "url": "https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model",
+      "snippet": "Explore LTX-2.5, Lightricks&#x27; 22B AI model for multishot video with synchronized audio, including features, use cases, limits, and setup."
+    },
+    {
+      "title": "GitHub - Lightricks/LTX-2: Official Python inference and LoRA trainer ...",
+      "url": "https://github.com/Lightricks/LTX-2",
+      "snippet": "LTX-2 is the first DiT-based audio-video foundation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access. hf auth login hf download Lightricks ..."
+    },
+    {
+      "title": "LTX-2.5 - Open-Weights AI Video Generation by Lightricks | fal",
+      "url": "https://fal.ai/ltx-2.5",
+      "snippet": "LTX-2.5The world model the world builds on. Lightricks&#x27; open-weights audio-video model, live on fal. Diffusion Fidelity Rendering puts more compute into complex scenes, native multishot holds a scene together across cuts, and synchronized audio comes built in. Open and customizable: train LoRAs, fine-tune on your own data, and adapt it to your domain. Try LTX-2.5 on fal.ai."
+    }
+  ]
+}

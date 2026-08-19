@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "glory-hyeok/wam-dit4dit-robocasa-k8s-eval-minimal",
+  "slug": "glory-hyeok-wam-dit4dit-robocasa-k8s-eval-minimal",
+  "author": "glory-hyeok",
+  "url": "https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-k8s-eval-minimal",
+  "created_at": "2026-07-06T02:37:00.000Z",
+  "updated_at": "2026-08-18T03:42:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 444448252440,
+  "storage_human": "444.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "glory-hyeok/wam-dit4dit-robocasa-kitchen-v2v-100k · Hugging Face",
+      "url": "https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-v2v-100k",
+      "snippet": "WAM DiT4DiT RoboCasa Kitchen V2V 100K Eval-minimal checkpoint for inference only. Resume/optimizer state is intentionally excluded."
+    },
+    {
+      "title": "glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k · Hugging Face",
+      "url": "https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k",
+      "snippet": "WAM DiT4DiT RoboCasa Kitchen I2V 100K Eval-minimal checkpoint for inference only. Resume/optimizer state is intentionally excluded."
+    },
+    {
+      "title": "DiT4DiT: Jointly Modeling Video Dynamics and Actions for Generalizable ...",
+      "url": "https://arxiv.org/html/2603.10448v1",
+      "snippet": "This section details DiT4DiT, an integrated Video-Action Model (VAM) designed for the joint optimization of Video and Action DiTs. By employing a dual flow-matching objective, our framework concurrently refines video synthesis and action prediction."
+    },
+    {
+      "title": "DiT4DiT/docs/robocasa_tabletop.md at main - GitHub",
+      "url": "https://github.com/Mondo-Robotics/DiT4DiT/blob/main/docs/robocasa_tabletop.md",
+      "snippet": "This guide covers training and evaluation for DiT4DiT on the RoboCasa tabletop simulation benchmark."
+    },
+    {
+      "title": "GitHub - Mondo-Robotics/DiT4DiT: This is the official code repo for ...",
+      "url": "https://github.com/Mondo-Robotics/DiT4DiT",
+      "snippet": "DiT4DiT is a Vision-Action-Model (VAM) framework that combines video generation transformers with flow-matching-based action prediction for generalizable robotic manipulation. It supports both the tabletop and whole-body control for manipulation tasks. Notably, DiT4DiT stands as the first efficient VAM to achieve real-time whole-body control of humanoid robots."
+    }
+  ]
+}

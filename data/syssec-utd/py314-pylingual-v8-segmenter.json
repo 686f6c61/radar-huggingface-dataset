@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "syssec-utd/py314-pylingual-v8-segmenter",
+  "slug": "syssec-utd-py314-pylingual-v8-segmenter",
+  "author": "syssec-utd",
+  "url": "https://huggingface.co/syssec-utd/py314-pylingual-v8-segmenter",
+  "created_at": "2026-08-15T00:07:45.000Z",
+  "updated_at": "2026-08-15T00:07:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:syssec-utd/py314-pylingual-v8-mlm",
+    "base_model:finetune:syssec-utd/py314-pylingual-v8-mlm",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 108887043,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435577349,
+  "storage_human": "436 MB",
+  "base_model": "syssec-utd/py314-pylingual-v8-mlm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

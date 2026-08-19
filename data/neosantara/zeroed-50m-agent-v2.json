@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "neosantara/Zeroed-50M-Agent-V2",
+  "slug": "neosantara-zeroed-50m-agent-v2",
+  "author": "neosantara",
+  "url": "https://huggingface.co/neosantara/Zeroed-50M-Agent-V2",
+  "created_at": "2026-08-18T00:24:35.000Z",
+  "updated_at": "2026-08-18T00:24:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "zeroed",
+    "from-scratch",
+    "coding-agent",
+    "sft",
+    "v2",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201398197,
+  "storage_human": "201 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T09:59:59.285Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neosantara | AI Gateway Indonesia",
+      "url": "https://www.neosantara.xyz/en",
+      "snippet": "AI Gateway for Build AI apps in Indonesia with one endpoint, local billing, and production-ready model routing."
+    },
+    {
+      "title": "Models Overview - Neosantara",
+      "url": "https://docs.neosantara.xyz/en/models-overview",
+      "snippet": "Browse live-synced Neosantara models, capabilities, pricing links, and generated model detail pages. Neosantara model documentation is generated from the live /v1/models catalog. Use this page as the starting point, then open a model detail page for capability flags, context limits, pricing units, endpoints, and known limitations."
+    },
+    {
+      "title": "agentic-ai-lab/cookbook/90_models/neosantara/README.md at main - GitHub",
+      "url": "https://github.com/ujjwal-saahu/agentic-ai-lab/blob/main/cookbook/90_models/neosantara/README.md",
+      "snippet": "Neosantara Cookbook Note: Fork and clone this repository if needed"
+    },
+    {
+      "title": "Neosantara AI Documentation - Neosantara",
+      "url": "https://docs.neosantara.xyz/",
+      "snippet": "Unified AI gateway for high-performance agents. Connect to Claude, OpenAI, and regional LLMs with a single API key."
+    },
+    {
+      "title": "Neosantara Tool Use - Agno",
+      "url": "https://docs.agno.com/examples/models/neosantara/tool-use",
+      "snippet": "Answer stock price questions on Neosantara with WebSearchTools, sync and async."
+    }
+  ]
+}

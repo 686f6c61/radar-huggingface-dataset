@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Pratiiiiiiiik/distilbert-spam-detector",
+  "slug": "pratiiiiiiiik-distilbert-spam-detector",
+  "author": "Pratiiiiiiiik",
+  "url": "https://huggingface.co/Pratiiiiiiiik/distilbert-spam-detector",
+  "created_at": "2026-08-17T11:30:30.000Z",
+  "updated_at": "2026-08-17T11:31:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AventIQ-AI/distilbert-spam-detector at main - Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/distilbert-spam-detector/blob/main/DistilBERT_Spam_Detector.md",
+      "snippet": "This repository hosts a quantized version of the DistilBERT model, fine-tuned for spam detection tasks. The model is optimized for efficient deployment, making it suitable for resource-constrained environments while maintaining high accuracy."
+    },
+    {
+      "title": "AventIQ-AI/distilbert-spam-detection · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/distilbert-spam-detection",
+      "snippet": "This repository hosts a quantized version of the DistilBERT model, fine-tuned for spam detection tasks. The model has been optimized for efficient deployment while maintaining high accuracy, making it suitable for resource-constrained environments."
+    },
+    {
+      "title": "GitHub - lahiruimesh/SMS-Spam-Detector-using-DistilBERT",
+      "url": "https://github.com/lahiruimesh/SMS-Spam-Detector-using-DistilBERT",
+      "snippet": "A high-performance, real-time SMS Spam Classification pipeline built in PyTorch using Hugging Face&#x27;s distilbert-base-uncased. This project demonstrates end-to-end model fine-tuning, handling severe class imbalance, evaluation metric optimization, and low-latency inference benchmarking on CUDA devices."
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/Ashmal11/distilbert-sms-spam-detector/4f4b1034d2c717dfb3d98bf9d6073ec4016e65ba/overview",
+      "snippet": "Discover potential threats in the Ashmal11 / distilbert-sms-spam-detector model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "GitHub - Avent-IQ/distilbert-spam-detection",
+      "url": "https://github.com/Avent-IQ/distilbert-spam-detection",
+      "snippet": "This repository hosts a quantized version of the DistilBERT model, fine-tuned for spam detection tasks. The model has been optimized for efficient deployment while maintaining high accuracy, making it suitable for resource-constrained environments."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "keylazy/Qwen2.5-Omni-3B-bab-sent4-sft",
+  "slug": "keylazy-qwen2-5-omni-3b-bab-sent4-sft",
+  "author": "keylazy",
+  "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent4-sft",
+  "created_at": "2026-08-17T21:31:49.000Z",
+  "updated_at": "2026-08-17T21:32:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131260849,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keylazy/Qwen2.5-Omni-3B-bab-adapter-4x · Hugging Face",
+      "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-adapter-4x",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "keylazy/Qwen2.5-Omni-3B-bab-adapter-1x · Hugging Face",
+      "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-adapter-1x",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Introduction In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5."
+    },
+    {
+      "title": "QwenLM/Qwen2.5-Omni | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "Qwen2.5-Omni is an end-to-end multimodal language model that processes multiple input modalities (text, images, audio, and video) while generating both text and speech outputs in a streaming manner."
+    }
+  ]
+}

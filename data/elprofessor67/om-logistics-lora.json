@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "elprofessor67/om-logistics-lora",
+  "slug": "elprofessor67-om-logistics-lora",
+  "author": "elprofessor67",
+  "url": "https://huggingface.co/elprofessor67/om-logistics-lora",
+  "created_at": "2026-08-16T21:52:58.000Z",
+  "updated_at": "2026-08-16T21:55:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_vl",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-VL-32B-Instruct",
+    "base_model:finetune:unsloth/Qwen3-VL-32B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 548428074,
+  "storage_human": "548 MB",
+  "base_model": "unsloth/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ketiswp/mediapipe-EfficientDet-Lite2-COCO2017-int8-uint8-onnx",
+  "slug": "ketiswp-mediapipe-efficientdet-lite2-coco2017-int8-uint8-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/mediapipe-EfficientDet-Lite2-COCO2017-int8-uint8-onnx",
+  "created_at": "2026-08-19T01:56:48.000Z",
+  "updated_at": "2026-08-19T02:22:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int8",
+    "uint8",
+    "object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6484585,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Object detection task guide | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/object_detector?hl=en",
+      "snippet": "EfficientDet-Lite2 model The EfficientDet-Lite2 model uses an EfficientNet-Lite2 backbone with a 448x448 input size and BiFPN feature network. The model was trained with the COCO dataset, a large-scale object detection dataset that contains 1.5 million object instances and 80 object labels. See the full list of supported labels. EfficientDet-Lite2 is available as an int8, float16, or float32 ..."
+    },
+    {
+      "title": "GitHub - google-ai-edge/mediapipe: Cross-platform, customizable ML ...",
+      "url": "https://github.com/google-ai-edge/mediapipe",
+      "snippet": "Solutions MediaPipe Solutions provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in your applications. You can plug these solutions into your applications immediately, customize them to your needs, and use them across multiple development platforms."
+    },
+    {
+      "title": "Object detection task guide | Google AI Edge | Google AI for Developers",
+      "url": "https://ai.google.dev/edge/mediapipe/solutions/vision/object_detector?authuser=0",
+      "snippet": "The EfficientDet-Lite2 model uses an EfficientNet-Lite2 backbone with a 448x448 input size and BiFPN feature network. The model was trained with the COCO dataset, a large-scale object detection dataset that contains 1.5 million object instances and 80 object labels."
+    },
+    {
+      "title": "mediapipe/docs/solutions/models.md at master · google-ai-edge ... - GitHub",
+      "url": "https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/models.md",
+      "snippet": "Cross-platform, customizable ML solutions for live and streaming media. - google-ai-edge/mediapipe"
+    },
+    {
+      "title": "How to Install and Run Mediapipe on UNIHIKER",
+      "url": "https://www.unihiker.com/new-14000.html",
+      "snippet": "EfficientDet-Lite2 The EfficientDet-Lite2 model uses the EfficientNet-Lite2 backbone with a 448x448 input size and a BiFPN feature network. This model is trained on the COCO dataset, a large object detection dataset containing 1.5 million object instances and 80 object labels. You can refer to the complete list of supported labels. EfficientDet-Lite2 is available as an int8, float16, or ..."
+    }
+  ]
+}

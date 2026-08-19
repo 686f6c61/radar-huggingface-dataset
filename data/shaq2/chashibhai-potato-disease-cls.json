@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Shaq2/chashibhai-potato-disease-cls",
+  "slug": "shaq2-chashibhai-potato-disease-cls",
+  "author": "Shaq2",
+  "url": "https://huggingface.co/Shaq2/chashibhai-potato-disease-cls",
+  "created_at": "2026-08-18T05:12:10.000Z",
+  "updated_at": "2026-08-18T05:12:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "tflite",
+    "agriculture",
+    "bangladesh",
+    "crop-disease",
+    "yolo26",
+    "on-device",
+    "potato",
+    "chashibhai",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10937657,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChashiBhAI on-device disease classifiers - a Shaq2 Collection",
+      "url": "https://huggingface.co/collections/Shaq2/chashibhai-on-device-disease-classifiers",
+      "snippet": "YOLO26-cls TFLite classifiers for ChashiBhAI. Rice, brassica, and corn independently tested."
+    },
+    {
+      "title": "Shaq2/chashibhai-rice-disease-cls · Hugging Face",
+      "url": "https://huggingface.co/Shaq2/chashibhai-rice-disease-cls",
+      "snippet": "Instructions to use Shaq2/chashibhai-rice-disease-cls with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use Shaq2/chashibhai-rice-disease-cls with ultralytics:"
+    },
+    {
+      "title": "aliahmad552/potato_diseases_recognition - GitHub",
+      "url": "https://github.com/aliahmad552/potato_diseases_recognition",
+      "snippet": "A deep learning web application built with TensorFlow, FastAPI, and LangChain that classifies potato leaf diseases and provides an AI-powered agricultural chatbot for farmers and researchers. - ali..."
+    },
+    {
+      "title": "Manas-singh14/Potato-Disease-Classification-AI-chatbot",
+      "url": "https://github.com/Manas-singh14/Potato-Disease-Classification-AI-chatbot",
+      "snippet": "An end-to-end AI-powered potato disease detection system with an integrated LLM chatbot. Upload a leaf image → get instant diagnosis → chat with an AI plant pathologist for treatment advice."
+    },
+    {
+      "title": "README.md · Shaq2/chashibhai-brassica-disease-cls at main",
+      "url": "https://d6108366.hf-mirror.com/Shaq2/chashibhai-brassica-disease-cls/blob/main/README.md?code=true",
+      "snippet": "Instructions to use Shaq2/chashibhai-brassica-disease-cls with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use Shaq2/chashibhai-brassica-disease-cls with ultralytics:"
+    }
+  ]
+}

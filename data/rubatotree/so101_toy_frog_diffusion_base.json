@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "rubatotree/so101_toy_frog_diffusion_base",
+  "slug": "rubatotree-so101_toy_frog_diffusion_base",
+  "author": "rubatotree",
+  "url": "https://huggingface.co/rubatotree/so101_toy_frog_diffusion_base",
+  "created_at": "2026-08-16T09:21:04.000Z",
+  "updated_at": "2026-08-16T09:32:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:rubatotree/toy-frog-1_20260810_162412",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277840246,
+  "parameters_human": "277.8M",
+  "storage_bytes": 1111423704,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

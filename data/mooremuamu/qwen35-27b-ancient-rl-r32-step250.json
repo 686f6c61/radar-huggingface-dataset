@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "MooreMuaMu/qwen35-27b-ancient-rl-r32-step250",
+  "slug": "mooremuamu-qwen35-27b-ancient-rl-r32-step250",
+  "author": "MooreMuaMu",
+  "url": "https://huggingface.co/MooreMuaMu/qwen35-27b-ancient-rl-r32-step250",
+  "created_at": "2026-08-14T13:11:05.000Z",
+  "updated_at": "2026-08-14T13:18:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.5",
+    "ancient-language",
+    "translation",
+    "annotation",
+    "grpo",
+    "merged",
+    "text-generation",
+    "conversational",
+    "zh",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 238,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733596093,
+  "storage_human": "54.7 GB",
+  "base_model": "qwen3.5-27b-ancient-stage2-checkpoint-227-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

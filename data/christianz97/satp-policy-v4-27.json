@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ChristianZ97/satp-policy-v4.27",
+  "slug": "christianz97-satp-policy-v4-27",
+  "author": "ChristianZ97",
+  "url": "https://huggingface.co/ChristianZ97/satp-policy-v4.27",
+  "created_at": "2026-07-27T07:48:03.000Z",
+  "updated_at": "2026-08-18T14:22:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "theorem-proving",
+    "lean4",
+    "aesop",
+    "arxiv:2506.11487",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24607309009,
+  "storage_human": "24.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChristianZ97/satp-policy-v2 · Hugging Face",
+      "url": "https://huggingface.co/ChristianZ97/satp-policy-v2",
+      "snippet": "ChristianZ97 / satp-policy-v2 like 0 Reinforcement Learning theorem-proving lean4 aesop License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new satp-policy-v2 — self-contained inference bundle Checkpoint Files Run"
+    },
+    {
+      "title": "ChristianZ97/satp-policy-v2-alphaproof · Hugging Face",
+      "url": "https://huggingface.co/ChristianZ97/satp-policy-v2-alphaproof",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "AI Artists: To find specific models and all their download links, especially if one link is broken. Developers/Researchers: To track specific model files (by hash) across the web and verify their existence."
+    },
+    {
+      "title": "Zenodo",
+      "url": "https://zenodo.org/records/21171053/files/6ef66095642780d5e8e0c9c1ab807c75_normalized_compressed.glb",
+      "snippet": "glTF ÜH € JSON{\"asset\":{\"generator\":\"glTF-Transform v4.3.0\",\"version\":\"2.0\"},\"accessors\":[{\"type\":\"SCALAR\",\"componentType\":5125,\"count\":1797894},{\"type\":\"VEC3 ..."
+    }
+  ]
+}

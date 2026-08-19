@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Wolfie-png/cat-classifier",
+  "slug": "wolfie-png-cat-classifier",
+  "author": "Wolfie-png",
+  "url": "https://huggingface.co/Wolfie-png/cat-classifier",
+  "created_at": "2026-08-15T06:01:29.000Z",
+  "updated_at": "2026-08-15T07:43:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228462136,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cat-classifier · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/cat-classifier",
+      "snippet": "An AI-powered Cat & Dog image classifier built with Google Teachable Machine and TensorFlow.js for the Class 12 Artificial Intelligence Practical (Activity 3.2) Project for CS 171 Intro to ML, Fall 2025. A machine learning project comparing CNN and Logistic Regression models for cat breed ..."
+    },
+    {
+      "title": "DineshKumar1329/DogCat_Classifier · Hugging Face",
+      "url": "https://huggingface.co/DineshKumar1329/DogCat_Classifier",
+      "snippet": "ResNet Cat-Dog Classifier This repository contains a ResNet-based convolutional neural network trained to classify images as either cats or dogs. The model achieves an accuracy of 90.27% on a test dataset and is fine-tuned using transfer learning on the ImageNet dataset. It uses PyTorch for training and inference. Model Details Architecture: Backbone: ResNet-18 Input Size: 128x128 RGB images ..."
+    },
+    {
+      "title": "GitHub - Kimmy-png/Are-You-A-Cat: An interactive web app using a ...",
+      "url": "https://github.com/Kimmy-png/Are-You-A-Cat",
+      "snippet": "An interactive web app using a TensorFlow CNN model to classify images of cats and humans. Built with Streamlit, this project demonstrates an end-to-end MLOps workflow, from training on Kaggle to deployment. Upload a photo and get a real-time prediction and similarity score! 🐾 - Kimmy-png/Are-You-A-Cat"
+    },
+    {
+      "title": "Training a deep learning model to recognize our cat.",
+      "url": "https://tlbvr.com/blog/deep-learning-cat-classifier/",
+      "snippet": "← Home Training a deep learning model to recognize our cat. Over the last few years, AI has gotten a huge upgrade, becoming more accessible to everyone. It&#x27;s able to categorize images, understand speech, generate content and even write code."
+    },
+    {
+      "title": "UsamaHF/Cat-dog-classification · Hugging Face",
+      "url": "https://huggingface.co/UsamaHF/Cat-dog-classification",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

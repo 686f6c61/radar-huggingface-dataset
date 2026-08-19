@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "zzephyrr/qwen3vl-vcr-lora",
+  "slug": "zzephyrr-qwen3vl-vcr-lora",
+  "author": "zzephyrr",
+  "url": "https://huggingface.co/zzephyrr/qwen3vl-vcr-lora",
+  "created_at": "2026-08-15T14:24:59.000Z",
+  "updated_at": "2026-08-15T14:54:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176957071,
+  "storage_human": "177 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

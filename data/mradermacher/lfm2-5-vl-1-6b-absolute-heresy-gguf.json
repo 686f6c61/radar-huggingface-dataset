@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-VL-1.6B-absolute-heresy-GGUF",
+  "slug": "mradermacher-lfm2-5-vl-1-6b-absolute-heresy-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-VL-1.6B-absolute-heresy-GGUF",
+  "created_at": "2026-08-17T13:51:08.000Z",
+  "updated_at": "2026-08-17T13:52:33.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja",
+    "ko",
+    "fr",
+    "es",
+    "de",
+    "ar",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "liquid",
+    "lfm2",
+    "lfm2-vl",
+    "edge",
+    "lfm2.5-vl",
+    "lfm2.5",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "ja",
+    "ko",
+    "fr",
+    "es",
+    "de",
+    "ar",
+    "zh",
+    "base_model:MuXodious/LFM2.5-VL-1.6B-absolute-heresy",
+    "base_model:quantized:MuXodious/LFM2.5-VL-1.6B-absolute-heresy",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 12035516736,
+  "storage_human": "12.0 GB",
+  "base_model": "MuXodious/LFM2.5-VL-1.6B-absolute-heresy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-VL-1.6B-absolute-heresy-MPOA-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-VL-1.6B-absolute-heresy-MPOA-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "LFM2.5-VL-1.6B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-1.6b",
+      "snippet": "← Back to Vision Models LFM2.5-VL-1.6B is Liquid AI&#x27;s flagship vision-language model, delivering exceptional performance on image understanding, visual reasoning, and multimodal tasks. Built on LFM2.5 with a dynamic SigLIP2 image encoder."
+    },
+    {
+      "title": "MuXodious/LFM2.5-VL-1.6B-absolute-heresy · Hugging Face",
+      "url": "https://huggingface.co/MuXodious/LFM2.5-VL-1.6B-absolute-heresy",
+      "snippet": "LFM2.5‑VL-1.6B LFM2.5‑VL-1.6B is Liquid AI &#x27;s refreshed version of the first vision-language model, LFM2-VL-1.6B, built on an updated backbone LFM2.5-1.2B-Base and tuned for stronger real-world performance. Find more about LFM2.5 family of models in our blog post. Enhanced instruction following on vision and language tasks."
+    },
+    {
+      "title": "MuXodious/LFM2.5-VL-1.6B-absolute-heresy-GGUF: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/MuXodious/LFM2.5-VL-1.6B-absolute-heresy-GGUF",
+      "snippet": "LFM2.5 ‑ VL-1.6B is Liquid AI &#x27;s refreshed version of the first vision-language model, LFM2-VL-1.6B, built on an updated backbone LFM2.5-1.2B-Base and tuned for stronger real-world performance."
+    },
+    {
+      "title": "LFM2.5 VL 1.6B by LiquidAI — VRAM 3.2GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/LiquidAI%2FLFM2.5-VL-1.6B,QFXMs3PdwwGhKZH7RJc0q",
+      "snippet": "Rank the LFM2.5 VL 1.6B capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

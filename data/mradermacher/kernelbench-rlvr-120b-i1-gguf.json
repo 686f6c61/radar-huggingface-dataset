@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/KernelBench-RLVR-120b-i1-GGUF",
+  "slug": "mradermacher-kernelbench-rlvr-120b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/KernelBench-RLVR-120b-i1-GGUF",
+  "created_at": "2026-08-15T00:27:02.000Z",
+  "updated_at": "2026-08-17T00:06:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gpu-kernel",
+    "cuda",
+    "code-generation",
+    "reinforcement-learning",
+    "grpo",
+    "kernelbench",
+    "en",
+    "dataset:ScalingIntelligence/KernelBench",
+    "base_model:Jarrodbarnes/KernelBench-RLVR-120b",
+    "base_model:quantized:Jarrodbarnes/KernelBench-RLVR-120b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 5802,
+  "trending_score": 0,
+  "parameters": 116829156672,
+  "parameters_human": "116.83B",
+  "storage_bytes": 1100147981568,
+  "storage_human": "1100.1 GB",
+  "base_model": "Jarrodbarnes/KernelBench-RLVR-120b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "prachuryyaIITG/FiNE-MiBBiC_Bhojpuri_MuRIL",
+  "slug": "prachuryyaiitg-fine-mibbic_bhojpuri_muril",
+  "author": "prachuryyaIITG",
+  "url": "https://huggingface.co/prachuryyaIITG/FiNE-MiBBiC_Bhojpuri_MuRIL",
+  "created_at": "2026-01-10T07:14:46.000Z",
+  "updated_at": "2026-08-18T14:58:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "bho"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "NER",
+    "Named_Entity_Recognition",
+    "bho",
+    "dataset:prachuryyaIITG/SampurNER",
+    "arxiv:2601.10161",
+    "base_model:google/muril-large-cased",
+    "base_model:finetune:google/muril-large-cased",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 504993925,
+  "parameters_human": "505.0M",
+  "storage_bytes": 2020022956,
+  "storage_human": "2.0 GB",
+  "base_model": "google/muril-large-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prachuryyaIITG/FiNE-MiBBiC_Bhojpuri_MuRIL · Hugging Face",
+      "url": "https://huggingface.co/prachuryyaIITG/FiNE-MiBBiC_Bhojpuri_MuRIL",
+      "snippet": "MuRIL is fine-tuned on Bhojpuri FiNE-MiBBiC dataset for Fine-grained Named Entity Recognition. FiNE-MiBBiC is an extension of SampurNER dataset which is created using the EaMaTa framework, utilizing the Few-NERD dataset."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?dataset=dataset:prachuryyaIITG/SampurNER",
+      "snippet": "prachuryyaIITG/FiNE-MiBBiC_Bhojpuri_MuRIL Token Classification • 0.5B•Updated 3 days ago• 36"
+    },
+    {
+      "title": "GitHub - PrachuryyaKaushik/FiNE-MiBBiC: FiNE-MiBBiC: Fine-grained Named ...",
+      "url": "https://github.com/PrachuryyaKaushik/FiNE-MiBBiC",
+      "snippet": "FiNE-MiBBiC: Fine-grained Named Entity Recognition Dataset for Mizo, Bhojpuri, Bishnupriya Manipuri and Chhattisgarhi 50 samples from each dataset file are included for reference."
+    },
+    {
+      "title": "prachuryyaIITG (Prachuryya Kaushik) - Hugging Face",
+      "url": "https://huggingface.co/prachuryyaIITG/collections",
+      "snippet": "Fine-grained Named Entity Recognition across 36 languages spoken by more than 6.6 billion speakers."
+    },
+    {
+      "title": "prachuryyaIITG (Prachuryya Kaushik) - Hugging Face",
+      "url": "https://huggingface.co/prachuryyaIITG/activity/all",
+      "snippet": "updated a model about 2 months ago Organizations"
+    }
+  ]
+}

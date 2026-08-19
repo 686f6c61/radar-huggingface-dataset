@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sac12xczdsae21e/my-awesome-model",
+  "slug": "sac12xczdsae21e-my-awesome-model",
+  "author": "sac12xczdsae21e",
+  "url": "https://huggingface.co/sac12xczdsae21e/my-awesome-model",
+  "created_at": "2026-08-18T00:22:09.000Z",
+  "updated_at": "2026-08-18T00:31:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sac12xczdsae21e/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/sac12xczdsae21e/MyAwesomeModel-TestRepo",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "sac12xczdsae21e (asdsa) - Hugging Face",
+      "url": "https://huggingface.co/sac12xczdsae21e",
+      "snippet": "User profile of asdsa on Hugging Face"
+    },
+    {
+      "title": "my_awesome_model | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/myawesomemodel/",
+      "snippet": "my_awesome_model is a fine-tuned version of DistilBERT-base-uncased, specifically optimized for text classification tasks. The model demonstrates impressive performance metrics, achieving a training accuracy of 92.95% and a final training loss of 0.0632 after 2 epochs of training."
+    },
+    {
+      "title": "my_awesome_model huggingface.co api & stevhliu my_awesome_model github ...",
+      "url": "https://www.toolify.ai/ai-model/stevhliu-my-awesome-model",
+      "snippet": "my_awesome_model is an open source model from GitHub that offers a free installation service, and any user can find my_awesome_model on GitHub to install. At the same time, huggingface.co provides the effect of my_awesome_model install, users can directly use my_awesome_model installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "GitHub - paartheee/awesome-models: The Awesome Models is where the ...",
+      "url": "https://github.com/paartheee/awesome-models",
+      "snippet": "The Awesome Models repository is a collection of links to download PyTorch , Keras, and Tensorflow pre-trained models. If you find any link is broken, please raise an issue to have it fixed as soon as possible."
+    }
+  ]
+}

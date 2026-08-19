@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-6bit",
+  "slug": "intheblue-qwen3-8-27b-aeon-ultimate-uncensored-multimodal-mlx-6bit",
+  "author": "intheblue",
+  "url": "https://huggingface.co/intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-6bit",
+  "created_at": "2026-08-17T18:29:54.000Z",
+  "updated_at": "2026-08-17T18:51:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "qwen3.8",
+    "apple-silicon",
+    "quantized",
+    "6-bit",
+    "multimodal",
+    "vision",
+    "vision-language",
+    "gated-deltanet",
+    "hybrid-attention",
+    "mtp",
+    "speculative-decoding",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "base_model:quantized:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 245,
+  "trending_score": 0,
+  "parameters": 6346296560,
+  "parameters_human": "6.35B",
+  "storage_bytes": 22797869461,
+  "storage_human": "22.8 GB",
+  "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8 27B AEON Ultimate Uncensored MLX Quants",
+      "url": "https://huggingface.co/collections/Shiftedx/qwen38-27b-aeon-ultimate-uncensored-mlx-quants",
+      "snippet": "AEON Qwen3.8 27B MLX text/vision quants: MXFP4, MXFP8, native-MTP, and the benchmark-selected attention8 + BF16-recurrence hybrid."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "User-facing name is Qwen 3.8 27B uncensored. That is the serving tag: qwen3.8:27b-uncensored."
+    },
+    {
+      "title": "Qwen3.8-27B: The Version You Can Actually Run, and How to Prepare For ...",
+      "url": "https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026",
+      "snippet": "Qwen3.8-27B is the checkpoint that fits one GPU. What is confirmed, what is not, and the VRAM maths."
+    },
+    {
+      "title": "Qwen3.6-27B-AEON-Ultimate-Uncensored - GitHub",
+      "url": "https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash/",
+      "snippet": "A fully uncensored, capability-enhanced abliteration of Qwen/Qwen3.6-27B, produced over 72 hours of continuous research drawing on hundreds of parallel AI research agents, the industry&#x27;s best published methodologies, custom in-house techniques, and yet-unreleased pre-public branches of next-generation abliteration software."
+    }
+  ]
+}

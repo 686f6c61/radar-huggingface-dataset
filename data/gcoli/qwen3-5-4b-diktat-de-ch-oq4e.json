@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "gcoli/qwen3.5-4b-diktat-de-ch-oQ4e",
+  "slug": "gcoli-qwen3-5-4b-diktat-de-ch-oq4e",
+  "author": "gcoli",
+  "url": "https://huggingface.co/gcoli/qwen3.5-4b-diktat-de-ch-oQ4e",
+  "created_at": "2026-08-14T10:06:34.000Z",
+  "updated_at": "2026-08-14T10:12:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "grammar-correction",
+    "dictation",
+    "swiss-german",
+    "de-ch",
+    "de",
+    "base_model:gcoli/qwen3.5-4b-diktat-de-ch",
+    "base_model:quantized:gcoli/qwen3.5-4b-diktat-de-ch",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 688221696,
+  "parameters_human": "688.2M",
+  "storage_bytes": 2508273796,
+  "storage_human": "2.5 GB",
+  "base_model": "gcoli/qwen3.5-4b-diktat-de-ch",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

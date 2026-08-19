@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jacob-rojic/mirror-wearetop-affine-5gcl5uxakb-chkx2",
+  "slug": "jacob-rojic-mirror-wearetop-affine-5gcl5uxakb-chkx2",
+  "author": "jacob-rojic",
+  "url": "https://huggingface.co/jacob-rojic/mirror-wearetop-affine-5gcl5uxakb-chkx2",
+  "created_at": "2026-08-17T11:26:16.000Z",
+  "updated_at": "2026-08-17T11:30:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71903776776,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wearetop/affine-5gcl5uxakb-chkx2 · Hugging Face",
+      "url": "https://huggingface.co/wearetop/affine-5gcl5uxakb-chkx2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jacob-rojic/albedo-arc-jacob-rojic-w-dare · Hugging Face",
+      "url": "https://huggingface.co/jacob-rojic/albedo-arc-jacob-rojic-w-dare",
+      "snippet": "jacob-rojic / albedo-arc-jacob-rojic-w-dare like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "affine-5gcl5uxakb-chkx2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/wearetop/affine-5gcl5uxakb-chkx2",
+      "snippet": "Run affine-5gcl5uxakb-chkx2 with FriendliAI inference. Following the February release of the Qwen3.5 series, we&#x27;re pleased to share the first open-weight…"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

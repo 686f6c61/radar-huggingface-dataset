@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "S3Sound/distilhubert-finetuned-gtzan",
+  "slug": "s3sound-distilhubert-finetuned-gtzan",
+  "author": "S3Sound",
+  "url": "https://huggingface.co/S3Sound/distilhubert-finetuned-gtzan",
+  "created_at": "2026-08-15T07:24:04.000Z",
+  "updated_at": "2026-08-16T13:17:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hubert",
+    "audio-classification",
+    "generated_from_trainer",
+    "dataset:marsyas/gtzan",
+    "base_model:ntu-spml/distilhubert",
+    "base_model:finetune:ntu-spml/distilhubert",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 126,
+  "trending_score": 0,
+  "parameters": 23691402,
+  "parameters_human": "23.7M",
+  "storage_bytes": 3980420962,
+  "storage_human": "4.0 GB",
+  "base_model": "ntu-spml/distilhubert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "GTZAN",
+      "metric": "Accuracy",
+      "value": 0.85
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dusersad12/BestRewardModel-TestRepo",
+  "slug": "dusersad12-bestrewardmodel-testrepo",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/BestRewardModel-TestRepo",
+  "created_at": "2026-08-18T14:43:56.000Z",
+  "updated_at": "2026-08-18T14:45:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "gpt2",
+    "text-generation",
+    "reward-model",
+    "rlhf",
+    "alignment",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20,
+  "storage_human": "20 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/MyAwesomeModel-TestRepo",
+      "snippet": "Instructions to use dusersad12/MyAwesomeModel-TestRepo with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use dusersad12/MyAwesomeModel-TestRepo with Transformers:"
+    },
+    {
+      "title": "ASDASD12321WSX/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/ASDASD12321WSX/MyAwesomeModel-TestRepo",
+      "snippet": "ASDASD12321WSX / MyAwesomeModel-TestRepo like 0 Feature Extraction Transformers PyTorch bert License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Model Playground AI",
+      "url": "https://modelplayground.ai/",
+      "snippet": "Compare and evaluate different AI models side by side. 150+ models. 1 subscription. 0 markup."
+    }
+  ]
+}

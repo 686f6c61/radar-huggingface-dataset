@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "DragonBophades/WichtelHui-Qwen3.8-27B-SLERP",
+  "slug": "dragonbophades-wichtelhui-qwen3-8-27b-slerp",
+  "author": "DragonBophades",
+  "url": "https://huggingface.co/DragonBophades/WichtelHui-Qwen3.8-27B-SLERP",
+  "created_at": "2026-08-17T18:22:40.000Z",
+  "updated_at": "2026-08-17T18:25:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "mergekit",
+    "slerp",
+    "agents",
+    "tool-use",
+    "vision",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:merge:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:nbeerbower/Wichtel-Qwen3.6-27B",
+    "base_model:merge:nbeerbower/Wichtel-Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 27833872112,
+  "parameters_human": "27.83B",
+  "storage_bytes": 55687884511,
+  "storage_human": "55.7 GB",
+  "base_model": "nbeerbower/Wichtel-Qwen3.6-27B, huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8-27B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is an AI model released by Qwen on Friday, Aug 14 2026, 11 days after Qwen3.8-Max. It is an open-weight model — the trained weights are available to download and run."
+    },
+    {
+      "title": "Adapter Models for Qwen/Qwen3.8-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:Qwen/Qwen3.8-27B",
+      "snippet": "Explore machine learning models. rico03/Qwen3.8-27B-Claude-Opus-Reasoning-Distilled-GGUF"
+    },
+    {
+      "title": "DragonBophades/Eintopf-Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/DragonBophades/Eintopf-Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

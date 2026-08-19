@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "krishna-munjam-sunking/whisper_medium_sw_transcription_20250911_aald_cv_20_belebele_checkpoint_15000_20260814_053740",
+  "slug": "krishna-munjam-sunking-whisper_medium_sw_transcription_20250911_aald_cv_20_belebele_checkpoint_15000_20260814_053740",
+  "author": "krishna-munjam-sunking",
+  "url": "https://huggingface.co/krishna-munjam-sunking/whisper_medium_sw_transcription_20250911_aald_cv_20_belebele_checkpoint_15000_20260814_053740",
+  "created_at": "2026-08-14T06:58:59.000Z",
+  "updated_at": "2026-08-16T05:42:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 42782515624,
+  "storage_human": "42.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

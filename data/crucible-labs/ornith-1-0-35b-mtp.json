@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "crucible-labs/Ornith-1.0-35B-MTP",
+  "slug": "crucible-labs-ornith-1-0-35b-mtp",
+  "author": "crucible-labs",
+  "url": "https://huggingface.co/crucible-labs/Ornith-1.0-35B-MTP",
+  "created_at": "2026-08-17T17:01:28.000Z",
+  "updated_at": "2026-08-17T17:19:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5_moe",
+    "moe",
+    "speculative-decoding",
+    "mtp",
+    "multi-token-prediction",
+    "agentic-coding",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:merge:Qwen/Qwen3.6-35B-A3B",
+    "base_model:ornith-ai/Ornith-1.0-35B",
+    "base_model:merge:ornith-ai/Ornith-1.0-35B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 664944,
+  "parameters_human": "664944",
+  "storage_bytes": 71928031285,
+  "storage_human": "71.9 GB",
+  "base_model": "ornith-ai/Ornith-1.0-35B, Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepreinforce-ai/Ornith-1.0-35B · MTP - Hugging Face",
+      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B/discussions/2",
+      "snippet": "Use this model Instructions to use deepreinforce-ai/Ornith-1.-35B with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "SC117/Ornith-1.0-35B-MTP-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ornith-1.0-35B-MTP-APEX-GGUF",
+      "snippet": "Ornith-1.0-35B is a self-improving agentic coding model from DeepReinforce AI, post-trained on top of Qwen3.5 with RL to jointly optimize scaffold generation and solution rollouts."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith 1.0 Model 35B",
+      "url": "https://ornith.online/ornith-1-0-model-35b",
+      "snippet": "Ornith 1.0 Model 35B is an Ornith 1.0 coding-agent model for high-value local coding agents. It keeps the 262K-token context window, OpenAI-compatible self-hosting path, and tool-calling workflow described by DeepReinforce."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Ornith-1.0 ships as a dense 9B model plus two Mixture-of-Experts models (35B, 397B). All checkpoints expose the same OpenAI-compatible interface and support a 256K (262,144-token) context window; the dense 9B fits on a single 80GB GPU, while the MoE checkpoints are sharded across a multi-GPU node with tensor parallelism."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "armand0e/Qwen3.8-27B-Fable-Distill",
+  "slug": "armand0e-qwen3-8-27b-fable-distill",
+  "author": "armand0e",
+  "url": "https://huggingface.co/armand0e/Qwen3.8-27B-Fable-Distill",
+  "created_at": "2026-08-15T01:45:57.000Z",
+  "updated_at": "2026-08-16T19:20:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "dataset:armand0e/claude-fable-5-claude-code",
+    "dataset:armand0e/Fable-5-Chat",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 604,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996119,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

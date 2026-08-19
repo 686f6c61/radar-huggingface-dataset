@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "kotarou71/Wan2.1-1.3B-FP8",
+  "slug": "kotarou71-wan2-1-1-3b-fp8",
+  "author": "kotarou71",
+  "url": "https://huggingface.co/kotarou71/Wan2.1-1.3B-FP8",
+  "created_at": "2026-08-17T16:06:18.000Z",
+  "updated_at": "2026-08-17T16:19:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+    "base_model:finetune:Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6795944892,
+  "storage_human": "6.8 GB",
+  "base_model": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan-AI/Wan2.1-T2V-1.3B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan2.1: Wan: Open and Advanced Large-Scale Video ...",
+      "url": "https://github.com/Wan-Video/Wan2.1",
+      "snippet": "In this repository, we present Wan2.1, a comprehensive and open suite of video foundation models that pushes the boundaries of video generation. Wan2.1 offers these key features: If your work has improved Wan2.1 and you would like more people to see it, please inform us. The 1.3B model is capable of ..."
+    },
+    {
+      "title": "Wan-AI/Wan2.1-VACE-1.3B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-VACE-1.3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - infracritical/ai-Wan2.1: Wan: Open and Advanced Large-Scale ...",
+      "url": "https://github.com/infracritical/ai-Wan2.1",
+      "snippet": "EchoShot, a native multi-shot portrait video generation model based on Wan2.1-T2V-1.3B, allows generation of multiple video clips featuring the same character as well as highly flexible content controllability."
+    },
+    {
+      "title": "wan2.1_t2v_1.3B_FP8 - v1.0 | Other Checkpoint | Civitai",
+      "url": "https://civitai.com/models/1307708/wan21t2v13bfp8",
+      "snippet": "Since some of you asked here is the FP8 Version of Wan2.1 1.3B txt2vd model. For the people with very low vram. Have fun and enjoy"
+    }
+  ]
+}

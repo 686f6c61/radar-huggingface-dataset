@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-owt-d384-gammasweep",
+  "slug": "dimitarpg13-semsimula-fock-parflm-anisogaussian-vtheta-owt-d384-gammasweep",
+  "author": "dimitarpg13",
+  "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-owt-d384-gammasweep",
+  "created_at": "2026-08-18T00:25:43.000Z",
+  "updated_at": "2026-08-18T00:49:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "FockMultiXiPARFLM",
+    "research",
+    "semsimula",
+    "conservative-language-model",
+    "scalar-potential",
+    "lagrangian-mechanics",
+    "energy-based-model",
+    "physics-informed",
+    "fock-space",
+    "parflm",
+    "parf",
+    "multi-channel-xi",
+    "depth-conditioned-vtheta",
+    "multi-context-vtheta",
+    "anisotropic-gaussian-potential",
+    "low-rank-precision",
+    "gaussian-mixture-potential",
+    "bounded-potential",
+    "analytical-gradient",
+    "interpretable",
+    "virtual-registers",
+    "reverse-channel",
+    "controlled-conservativity",
+    "sparse-routing",
+    "openwebtext",
+    "gamma-sweep",
+    "damping-coefficient",
+    "non-transformer",
+    "attention-free",
+    "constant-memory-inference",
+    "riemannian-geometry",
+    "riemannian-geodesics",
+    "geodesic-residual",
+    "jacobi-metric",
+    "text-generation",
+    "en",
+    "dataset:Skylion007/openwebtext",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 145,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7395227853,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "OpenWebText",
+      "metric": "Validation Perplexity (gamma=0.10, best of 8 gamma-sweep candidates, 3,000-step short sweep — not a fully trained model)",
+      "value": 278.27
+    }
+  ],
+  "sources": [
+    {
+      "title": "semsimula-fock-parflm-depthcond-vtheta-openwebtext",
+      "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta-openwebtext",
+      "snippet": "The model was trained to minimise cross-entropy, not to produce geodesic trajectories. That the learned force field happens to be nearly metric-compatible is an emergent structural property — the scalar and pairwise potentials organise the hidden-state manifold so that the minimum-energy paths are also the most predictive paths."
+    },
+    {
+      "title": "dimitarpg13/semsimula-fock-parflm · Hugging Face",
+      "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm",
+      "snippet": "The Fock-PARFLM v2.1 is the best-performing purely conservative language model in the Semantic Simulation family. It extends the PARFLM with a Fock-space latent register pool -- M=16 virtual register particles with Q/K/V-structured creation gates, LIFO stack discipline, and an optional non-conservative reverse channel -- achieving 9.30 PPL on ..."
+    },
+    {
+      "title": "semsimula-paper/companion_notes/Fock-PARFLM_Scale-Up_Gamma ... - GitHub",
+      "url": "https://github.com/dimitarpg13/semsimula-paper/blob/main/companion_notes/Fock-PARFLM_Scale-Up_Gamma_Sweep_Results_and_Damping_Regime_Analysis.md",
+      "snippet": "This document records and analyses the gamma sweep results for Fock-PARFLM at each scale-up tier (d=384, d=768, d=1024), compares the optimal damping coefficient across hidden dimensions, and discusses the physical implications of the observed damping-regime transition."
+    },
+    {
+      "title": "GitHub - dimitarpg13/semsimula-paper: Companion repository on the ...",
+      "url": "https://github.com/dimitarpg13/semsimula-paper",
+      "snippet": "Companion repository for the paper Semantic Simulation: A Prescriptive Lagrangian Framework for Efficient Semantic Inference A Conservative-by-Construction Language Model and the Shared-Potential Separator, with a Correspondence to Joint Embedding Predictive Architectures. Dimitar P. Gueorguiev (Independent Researcher), 2026."
+    },
+    {
+      "title": "semsimula-fock-parflm-structured-vtheta - Hugging Face",
+      "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm-structured-vtheta",
+      "snippet": "A structured variant of the Fock-PARFLM v2.1 conservative language model in which the MLP scalar potential ${V}_{&#92;theta }V&#92;_&#92;backslash theta$ is replaced by a mixture of K=8 diagonal quadratic wells (SQ3), while retaining the full MLP-based pairwise potential ${V}_{&#92;varphi }V&#92;_&#92;backslash phi$ and the Fock register mechanism (16 registers, LIFO stack discipline, reverse channel). This ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "NicoLab28/ClipProj-MiniMax-H3",
+  "slug": "nicolab28-clipproj-minimax-h3",
+  "author": "NicoLab28",
+  "url": "https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3",
+  "created_at": "2026-08-09T09:41:21.000Z",
+  "updated_at": "2026-08-16T14:55:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "minimax-h3",
+    "text-to-video",
+    "qwen3-vl",
+    "text-encoder",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:finetune:Comfy-Org/MiniMax-H3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 115,
+  "downloads_30d": 0,
+  "trending_score": 37,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8072833909,
+  "storage_human": "8.1 GB",
+  "base_model": "Comfy-Org/MiniMax-H3, Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NicoLab28/ClipProj-MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · NicoLab28/ClipProj-MiniMax-H3 at main - Hugging Face",
+      "url": "https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3/blob/main/README.md",
+      "snippet": "NicoLab28 / ClipProj-MiniMax-H3 like 51 Text-to-Video comfyui minimax-h3 qwen3-vl text-encoder License:mit Model card FilesFiles and versions xet Community 4 Copy to bucket new main ClipProj-MiniMax-H3 /README.md NicoLab28 Restore the .pt files alongside the safetensors until the reader has propagated d0158ea verifiedabout 16 hours ago preview code | Raw Download with hf CLI Copy download link ..."
+    },
+    {
+      "title": "ClipProj-MiniMax-H3 by NicoLab28 | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/nicolab28-clipproj-minimax-h3",
+      "snippet": "Explore ClipProj-MiniMax-H3 by NicoLab28 — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "GitHub - nicolab28/ComfyUI-ClipProj: Swap a large text encoder for a ...",
+      "url": "https://github.com/nicolab28/ComfyUI-ClipProj",
+      "snippet": "Swap a large text encoder for a small one with a learned linear projection. MiniMax H3 conditioning from 15.7 GB down to 5.2 GB. - nicolab28/ComfyUI-ClipProj"
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    }
+  ]
+}

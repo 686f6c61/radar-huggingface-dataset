@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-aeon-ultimate-uncensored-bf16-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-i1-GGUF",
+  "created_at": "2026-08-18T08:57:13.000Z",
+  "updated_at": "2026-08-18T09:19:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "27b",
+    "early-access",
+    "draft",
+    "abliterated",
+    "abliterix",
+    "aeon",
+    "aeon-7",
+    "bf16",
+    "bfloat16",
+    "chat",
+    "coding",
+    "conversational",
+    "function-calling",
+    "gated-deltanet",
+    "gdn",
+    "hybrid-attention",
+    "instruct",
+    "multimodal",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "reasoning",
+    "refusal-removed",
+    "thinking",
+    "tool-calling",
+    "uncensored",
+    "unfiltered",
+    "vision",
+    "vision-language",
+    "vllm",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "base_model:quantized:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471869536,
+  "storage_human": "39.5 GB",
+  "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen3.6-27B-AEON-Ultimate-Uncensored - GitHub",
+      "url": "https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash/",
+      "snippet": "A fully uncensored, capability-enhanced abliteration of Qwen/Qwen3.6-27B, produced over 72 hours of continuous research drawing on hundreds of parallel AI research agents, the industry&#x27;s best published methodologies, custom in-house techniques, and yet-unreleased pre-public branches of next-generation abliteration software."
+    },
+    {
+      "title": "Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16: Text-to-Text model ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-aeon-ultimate-uncensored-bf16-aeon-7",
+      "snippet": "Overview Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 is an abliterated derivative of Alibaba&#x27;s Qwen/Qwen3.8-27B base model, maintained by AEON-7. The model removes safety alignment constraints while preserving—and in some cases enhancing—coherence and reasoning capability. The architecture retains the full unmodified vision tower (333/333 hash-match with stock) and the native MTP (Multi ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "timypa111/act_pickplace",
+  "slug": "timypa111-act_pickplace",
+  "author": "timypa111",
+  "url": "https://huggingface.co/timypa111/act_pickplace",
+  "created_at": "2026-08-17T12:28:18.000Z",
+  "updated_at": "2026-08-17T12:28:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lerobot/svla_so101_pickplace",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707224,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tinkhireeva/act_so101_pick_place_3 · Hugging Face",
+      "url": "https://huggingface.co/tinkhireeva/act_so101_pick_place_3",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "AM-101/act_so101_pickplace · Hugging Face",
+      "url": "https://huggingface.co/AM-101/act_so101_pickplace",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "GitHub - mikami235/so101-act-pick-place",
+      "url": "https://github.com/mikami235/so101-act-pick-place",
+      "snippet": "An imitation-learning experiment for a LeRobot SO-101 robot arm using ACT (Action Chunking with Transformers) and two USB cameras. The goal of this project is to train an SO-101 follower arm to perform a simple pick-and-place task from demonstrations collected with an SO-101 leader arm. The learned ..."
+    },
+    {
+      "title": "I trained my so101 arm to pick and place different pens in a ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/jimohafeezco_i-trained-my-so101-arm-to-pick-and-place-activity-7396209840143929344-Jr-P",
+      "snippet": "I trained my so101 arm to pick and place different pens in a bin. This was done by fine-tuning ACT policy on my SO101 arm. The ACT policy is an algorithm that predicts a \"chunk\" or sequence of ..."
+    },
+    {
+      "title": "lerobot/docs/source/smolvla.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx",
+      "snippet": "SmolVLA is Hugging Face&#x27;s lightweight foundation model for robotics. Designed for easy fine-tuning on LeRobot datasets, it helps accelerate your development! Figure 1. SmolVLA takes as input (i) multiple cameras views, (ii) the robot&#x27;s current sensorimotor state, and (iii) a natural language instruction, encoded into contextual features used to condition the action expert when generating ..."
+    }
+  ]
+}

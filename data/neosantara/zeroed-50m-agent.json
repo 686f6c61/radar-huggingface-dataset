@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "neosantara/Zeroed-50M-Agent",
+  "slug": "neosantara-zeroed-50m-agent",
+  "author": "neosantara",
+  "url": "https://huggingface.co/neosantara/Zeroed-50M-Agent",
+  "created_at": "2026-08-17T22:50:36.000Z",
+  "updated_at": "2026-08-17T23:00:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "zeroed",
+    "from-scratch",
+    "coding-agent",
+    "software-engineering",
+    "swe-bench",
+    "transformer",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 402796714,
+  "storage_human": "403 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:09.506Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neosantara | AI Gateway Indonesia",
+      "url": "https://www.neosantara.xyz/",
+      "snippet": "AI Gateway for Build AI apps in Indonesia with one endpoint, local billing, and production-ready model routing."
+    },
+    {
+      "title": "Neosantara AI Documentation - Neosantara",
+      "url": "https://docs.neosantara.xyz/",
+      "snippet": "Unified AI gateway for high-performance agents. Connect to Claude, OpenAI, and regional LLMs with a single API key."
+    },
+    {
+      "title": "Agent Frameworks - Neosantara",
+      "url": "https://docs.neosantara.xyz/en/agent-overview",
+      "snippet": "Explore how to use Neosantara with popular open-source agent frameworks like LangChain, CrewAI, and AutoGen. Build autonomous AI agents with regional context."
+    },
+    {
+      "title": "AI Agent Builder Gumloop Lands $50M From Benchmark",
+      "url": "https://www.abcmoney.co.uk/2026/03/ai-agent-builder-gumloop-lands-50m-from-benchmark/",
+      "snippet": "Gumloop already pivoted from basic task automation to full agent-building platform. That evolution matches AI capabilities maturing from 2023 to now. Next milestones: enterprise sales team delivery, customer case studies showing ROI, and retention metrics proving agents stick. Benchmark doesn&#x27;t invest $50M for lifestyle businesses."
+    },
+    {
+      "title": "Patronus AI raises $50M to stress-test AI agents - TNW",
+      "url": "https://thenextweb.com/news/patronus-ai-50m-series-b-agent-simulation",
+      "snippet": "Patronus AI raised $50m to build simulated digital worlds that stress-test AI agents before they reach production. Investors call demand insatiable."
+    }
+  ]
+}

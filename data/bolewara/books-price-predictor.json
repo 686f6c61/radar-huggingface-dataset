@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bolewara/books-price-predictor",
+  "slug": "bolewara-books-price-predictor",
+  "author": "bolewara",
+  "url": "https://huggingface.co/bolewara/books-price-predictor",
+  "created_at": "2026-08-17T19:08:13.000Z",
+  "updated_at": "2026-08-17T19:08:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "regression",
+    "random-forest",
+    "tabular",
+    "book-prices",
+    "tabular-regression",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25517478,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bolewara (Anuj Bolewar) - Hugging Face",
+      "url": "https://huggingface.co/bolewara",
+      "snippet": "User profile of Anuj Bolewar on Hugging Face"
+    },
+    {
+      "title": "Anthropic Claims Claude AI Models Hacked 3 Organizations During ...",
+      "url": "https://www.breitbart.com/tech/2026/07/31/anthropic-claims-claude-ai-models-hacked-3-organizations-during-security-testing/",
+      "snippet": "AI startup Anthropic claims that its Claude AI models hacked the systems of three separate organizations during cybersecurity evaluations."
+    },
+    {
+      "title": "&#x27;Inner Thoughts&#x27; of Every Major AI Model Exposed in Massive ... - Decrypt",
+      "url": "https://decrypt.co/375501/inner-thoughts-every-major-ai-model-exposed-exploit",
+      "snippet": "Security researchers have found a way to read the encrypted \"inner thoughts\" of every major AI reasoning model—and uncovered 62 live API keys and 33 passwords buried in session logs that developers had shared publicly online without knowing what was inside them. \"By decoding 315,320 reasoning blocks scraped from public repositories, we recovered 367 Personally Identifiable Information (PII ..."
+    },
+    {
+      "title": "AI companies are reportedly shredding millions of books after using ...",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-companies-are-reportedly-shredding-millions-of-books-to-train-models-tech-giants-outsource-to-middlemen-to-secretly-buy-up-books-for-training-material",
+      "snippet": "Tech Industry Artificial Intelligence AI companies are reportedly shredding millions of books after using them to train AI models — tech giants outsource to middlemen to secretly buy up books ..."
+    },
+    {
+      "title": "Meta joins OpenAI, Anthropic as yet another company with an AI model ...",
+      "url": "https://tech.yahoo.com/ai/article/meta-joins-openai-anthropic-as-yet-another-company-with-an-ai-model-that-went-rogue-143407703.html",
+      "snippet": "Meta joins OpenAI, Anthropic as yet another company with an AI model that went rogue It&#x27;s the latest incident in the growing phenomenon of AI agents doing whatever it takes to reach a goal."
+    }
+  ]
+}

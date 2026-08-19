@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hmkang/wam-dit4dit-robocasa-wan22-4latin2latout",
+  "slug": "hmkang-wam-dit4dit-robocasa-wan22-4latin2latout",
+  "author": "hmkang",
+  "url": "https://huggingface.co/hmkang/wam-dit4dit-robocasa-wan22-4latin2latout",
+  "created_at": "2026-08-16T00:59:09.000Z",
+  "updated_at": "2026-08-16T10:08:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "wan2.2",
+  "languages": [],
+  "tags": [
+    "wan2.2",
+    "safetensors",
+    "video-prediction",
+    "world-model",
+    "robocasa",
+    "dit",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111888259148,
+  "storage_human": "111.9 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

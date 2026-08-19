@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Burroughs352/Lise",
+  "slug": "burroughs352-lise",
+  "author": "Burroughs352",
+  "url": "https://huggingface.co/Burroughs352/Lise",
+  "created_at": "2026-08-18T15:43:14.000Z",
+  "updated_at": "2026-08-18T15:43:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:nvidia/Qwen-Image-Flash",
+    "base_model:adapter:nvidia/Qwen-Image-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171102351,
+  "storage_human": "171 MB",
+  "base_model": "nvidia/Qwen-Image-Flash",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Burroughs352/CS · Hugging Face",
+      "url": "https://huggingface.co/Burroughs352/CS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Burroughs352 (Dean Carroll) - Hugging Face",
+      "url": "https://huggingface.co/Burroughs352/models",
+      "snippet": "User profile of Dean Carroll on Hugging Face"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Lise Hohenstein - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1920349202893958185",
+      "snippet": "Generate stunning girl anime art with the &#x27;Lise Hohenstein&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Lise - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1703919978516091037",
+      "snippet": "Generate stunning character anime art with the &#x27;Lise&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

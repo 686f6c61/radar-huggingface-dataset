@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/rp-glm-4.7-flash-i1-GGUF",
+  "slug": "mradermacher-rp-glm-4-7-flash-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/rp-glm-4.7-flash-i1-GGUF",
+  "created_at": "2026-08-14T16:00:18.000Z",
+  "updated_at": "2026-08-14T17:10:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:taozi555/rp-glm-4.7-flash",
+    "base_model:quantized:taozi555/rp-glm-4.7-flash",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29943393920,
+  "parameters_human": "29.94B",
+  "storage_bytes": 95556609216,
+  "storage_human": "95.6 GB",
+  "base_model": "taozi555/rp-glm-4.7-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

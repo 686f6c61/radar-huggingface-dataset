@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX-FP16",
+  "slug": "pluto-ai-labs-apollo-vl-edge-3b-mlx-fp16",
+  "author": "Pluto-AI-Labs",
+  "url": "https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX-FP16",
+  "created_at": "2026-08-18T07:17:45.000Z",
+  "updated_at": "2026-08-18T07:53:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520767694,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pluto AI Research Lab - GitHub",
+      "url": "https://github.com/Pluto-AI-Labs",
+      "snippet": "Building open-source AI infrastructure, SOTA edge models, and evaluation tooling. Intelligence isn&#x27;t about scale; it&#x27;s about precision. - Pluto AI Research Lab"
+    },
+    {
+      "title": "Apollo VL Edge 3B by Pluto-AI-Labs — VRAM 7.5GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Pluto-AI-Labs%2FApollo-VL-Edge-3B,3L5mtC3hkpxLl4GyPd7riU",
+      "snippet": "Apollo VL Edge 3B is an open-source 3b LLM by Pluto-AI-Labs. VRAM 7.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Add Pluto-AI-Labs/Apollo-VL-Edge-3B to Leaderboard #1632",
+      "url": "https://github.com/open-compass/VLMEvalKit/issues/1632",
+      "snippet": "Model Name: Apollo-VL-Edge-3B Hugging Face Repo: https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B Architecture: Qwen2.5-VL (3B) Benchmark Scores (lmms-eval ..."
+    },
+    {
+      "title": "Apollo-VL-Edge-3B — Training Started Update I&#x27;m ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/siddharth-n-r-842529356_apollo-vl-edge-3b-training-started-update-activity-7493535565145853953-QTMd",
+      "snippet": "Apollo-VL-Edge-3B — Training Started Update I&#x27;m currently fine-tuning a Flagship ( 3 Billion Parameter ) Vision-Language Model using my own curated Apollo-VL-Massive dataset (~162K multimodal ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?filter=ocr",
+      "snippet": "Pluto-AI-Labs/Apollo-VL-Edge-3B Image-Text-to-Text • 4B•Updated about 2 hours ago• 100 • 4"
+    }
+  ]
+}

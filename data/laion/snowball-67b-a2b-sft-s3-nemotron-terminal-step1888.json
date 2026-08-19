@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888",
+  "slug": "laion-snowball-67b-a2b-sft-s3-nemotron-terminal-step1888",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888",
+  "created_at": "2026-08-17T19:08:39.000Z",
+  "updated_at": "2026-08-17T19:37:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "grug_moe",
+    "text-generation",
+    "marin",
+    "grug",
+    "mixture-of-experts",
+    "sft",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 314,
+  "trending_score": 0,
+  "parameters": 67078882816,
+  "parameters_human": "67.08B",
+  "storage_bytes": 268332864020,
+  "storage_human": "268.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "laion/snowball-67b-a2b-sft-s2-thinking-step630 · Hugging Face",
+      "url": "https://huggingface.co/laion/snowball-67b-a2b-sft-s2-thinking-step630",
+      "snippet": "Instructions to use laion/snowball-67b-a2b-sft-s2-thinking-step630 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "[experiment][sft] Run three-stage SFT on the second Snowball ... - GitHub",
+      "url": "https://github.com/marin-community/marin/issues/8225",
+      "snippet": "Description The starting checkpoint is Snowball&#x27;s second cooldown at native step 105149. This is the pre-SFT checkpoint used by the August fixed-EOT and Nemotron Terminal experiments discussed in #7743; its recovered S3 provenance is documented in this follow-up."
+    },
+    {
+      "title": "sft-repro-thinking-step630-nemotron-terminal-step1888",
+      "url": "https://huggingface.co/laion/sft-repro-thinking-step630-nemotron-terminal-step1888",
+      "snippet": "Grug 67B Nemotron Terminal SFT reproduction This is the BF16 Hugging Face/vLLM export evaluated by the Marin experiment sft-repro-nemotron-terminal-on-thinking-ckpt."
+    },
+    {
+      "title": "LAION",
+      "url": "https://laion.ai/",
+      "snippet": "LAION, as a non-profit organization, provides datasets, tools and models to liberate machine learning research. By doing so, we encourage open public education and a more environment-friendly use of resources by reusing existing datasets and models."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

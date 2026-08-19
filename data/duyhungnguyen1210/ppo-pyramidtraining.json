@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "duyhungnguyen1210/ppo-PyramidTraining",
+  "slug": "duyhungnguyen1210-ppo-pyramidtraining",
+  "author": "duyhungnguyen1210",
+  "url": "https://huggingface.co/duyhungnguyen1210/ppo-PyramidTraining",
+  "created_at": "2026-08-14T16:02:40.000Z",
+  "updated_at": "2026-08-14T16:03:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47857648,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "huynoob1312/en-vi_mbart50",
+  "slug": "huynoob1312-en-vi_mbart50",
+  "author": "huynoob1312",
+  "url": "https://huggingface.co/huynoob1312/en-vi_mbart50",
+  "created_at": "2026-08-14T15:00:28.000Z",
+  "updated_at": "2026-08-16T05:57:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "translation",
+    "en",
+    "vi",
+    "arxiv:1910.09700",
+    "base_model:facebook/mbart-large-50-many-to-many-mmt",
+    "base_model:finetune:facebook/mbart-large-50-many-to-many-mmt",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 7350514267,
+  "storage_human": "7.4 GB",
+  "base_model": "facebook/mbart-large-50-many-to-many-mmt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

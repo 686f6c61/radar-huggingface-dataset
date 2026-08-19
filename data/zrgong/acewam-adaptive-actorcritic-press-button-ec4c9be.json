@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zrgong/acewam-adaptive-actorcritic-press-button-ec4c9be",
+  "slug": "zrgong-acewam-adaptive-actorcritic-press-button-ec4c9be",
+  "author": "zrgong",
+  "url": "https://huggingface.co/zrgong/acewam-adaptive-actorcritic-press-button-ec4c9be",
+  "created_at": "2026-08-18T03:18:45.000Z",
+  "updated_at": "2026-08-18T03:23:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "acewam",
+  "languages": [],
+  "tags": [
+    "acewam",
+    "robotics",
+    "world-action-model",
+    "rmbench",
+    "press-button",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24085780373,
+  "storage_human": "24.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WAVE: Wasserstein Adaptive Value Estimation for Actor-Critic ...",
+      "url": "https://arxiv.org/html/2501.10605v2",
+      "snippet": "W asserstein A daptive V alue E stimation for Actor-Critic), an approach to enhance stability in deep reinforcement learning through adaptive Wasserstein regularization. Our method addresses the inherent instability of actor-critic algorithms by incorporating an adaptively weighted Wasserstein regularization term into the critic&#x27;s loss function."
+    },
+    {
+      "title": "Wasserstein Adaptive Value Estimation for Actor-Critic Reinforcement ...",
+      "url": "https://arxiv.org/abs/2501.10605",
+      "snippet": "We present Wasserstein Adaptive Value Estimation for Actor-Critic (WAVE), an approach to enhance stability in deep reinforcement learning through adaptive Wasserstein regularization. Our method addresses the inherent instability of actor-critic algorithms by incorporating an adaptively weighted Wasserstein regularization term into the critic&#x27;s loss function. We prove that WAVE achieves ..."
+    },
+    {
+      "title": "WAVE: Wasserstein Adaptive Value Estimation for Actor-Critic ...",
+      "url": "https://proceedings.mlr.press/v283/baheri25a.html",
+      "snippet": "We present WAVE (Wasserstein Adaptive Value Estimation for Actor-Critic), an approach to enhance stability in deep reinforcement learning through adaptive Wasserstein regularization."
+    },
+    {
+      "title": "Wasserstein Adaptive Value Estimation for Actor-Critic Reinforcement ...",
+      "url": "https://www.catalyzex.com/paper/wasserstein-adaptive-value-estimation-for",
+      "snippet": "Theoretical analysis and experimental results demonstrate that WAVE achieves superior performance compared to standard actor-critic methods. We present Wasserstein Adaptive Value Estimation for Actor-Critic (WAVE), an approach to enhance stability in deep reinforcement learning through adaptive Wasserstein regularization."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

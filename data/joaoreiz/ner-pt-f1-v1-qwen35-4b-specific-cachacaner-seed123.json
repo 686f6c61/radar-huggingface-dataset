@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-cachacaner-seed123",
+  "slug": "joaoreiz-ner-pt-f1-v1-qwen35-4b-specific-cachacaner-seed123",
+  "author": "JoaoReiz",
+  "url": "https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-cachacaner-seed123",
+  "created_at": "2026-08-15T07:59:11.000Z",
+  "updated_at": "2026-08-15T07:59:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ner",
+    "portuguese",
+    "lora",
+    "structured-generation",
+    "token-classification",
+    "pt",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149923773,
+  "storage_human": "150 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

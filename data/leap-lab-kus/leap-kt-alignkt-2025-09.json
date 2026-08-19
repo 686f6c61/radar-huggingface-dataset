@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LEAP-LAB-KUS/leap-kt-alignkt-2025-09",
+  "slug": "leap-lab-kus-leap-kt-alignkt-2025-09",
+  "author": "LEAP-LAB-KUS",
+  "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-alignkt-2025-09",
+  "created_at": "2026-08-18T13:01:52.000Z",
+  "updated_at": "2026-08-18T13:02:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "leap-kt",
+  "languages": [],
+  "tags": [
+    "leap-kt",
+    "safetensors",
+    "knowledge-tracing",
+    "education",
+    "educational-data-mining",
+    "alignkt",
+    "dataset:dbe_kt22",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164939920,
+  "storage_human": "165 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-dkvmn · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-dkvmn",
+      "snippet": "LEAP-LAB-KUS / leap-kt-dkvmn like 0 Follow LEAP-LAB-KUS 10 Safetensors 4 datasets leap-kt knowledge-tracing education educational-data-mining dkvmn arxiv:1611.08108 License:mit Model card FilesFiles and versions xet Community Copy to bucket new leap-kt · DKVMN Protocol Results Why these numbers may differ from other reproductions Files Provenance"
+    },
+    {
+      "title": "GitHub - SCNU203/AlignKT: AlignKT: Explicitly Modeling Knowledge State ...",
+      "url": "https://github.com/SCNU203/AlignKT",
+      "snippet": "This is the code for the paper AlignKT: Explicitly Modeling Knowledge State for Knowledge Tracing with Ideal State Alignment. See our paper here (the link will be updated here)."
+    },
+    {
+      "title": "AlignKT: Explicitly Modeling Knowledge State for Knowledge Tracing with ...",
+      "url": "https://arxiv.org/html/2509.11135",
+      "snippet": "The attention-based DLKT model captures inter-concept relationships via attention scores and models learners&#x27; knowledge state through these dependencies. AKT [4] leveraged the Rasch Model-based Embedding method to alleviate the issue of data sparsity, and achieved excellent prediction performance."
+    },
+    {
+      "title": "AlignKT: Explicitly Modeling Knowledge State for Knowledge Tracing with ...",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250911135X/abstract",
+      "snippet": "This limitation leads to reduced interpretability and insufficient instructional support from the ITS. To address this challenge, we propose AlignKT, which employs a frontend-to-backend architecture to explicitly model a stable knowledge state. In this approach, the preliminary knowledge state is aligned with an additional criterion."
+    },
+    {
+      "title": "LEAP Lab @ Tsinghua University | Machine Learning & AI Research",
+      "url": "https://www.leaplab.ai/",
+      "snippet": "The Learning And Perception (LEAP) Lab at Tsinghua University conducts cutting-edge research in machine learning, multi-modal learning, and embodied intelligence. We focus on developing robust, scalable, and generalizable foundation models for the next generation of artificial intelligence."
+    }
+  ]
+}

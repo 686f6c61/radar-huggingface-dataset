@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "eulogik/pico-type",
+  "slug": "eulogik-pico-type",
+  "author": "eulogik",
+  "url": "https://huggingface.co/eulogik/pico-type",
+  "created_at": "2026-06-17T09:57:56.000Z",
+  "updated_at": "2026-08-18T05:49:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pico-type",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "pico-type",
+    "onnx",
+    "pico_type",
+    "byte-level",
+    "content-classification",
+    "multi-head",
+    "classifier",
+    "edge-ai",
+    "code-detection",
+    "language-detection",
+    "clipboard",
+    "tiny",
+    "open-source",
+    "onnx-runtime",
+    "text-classification",
+    "en",
+    "multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 172,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 461289070,
+  "storage_human": "461 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - eulogik/pico-type: Tiny (1.5M params) byte-level multi-head ...",
+      "url": "https://github.com/eulogik/pico-type",
+      "snippet": "pico-type 🔍 A tiny byte-level multi-head content classifier — ~1.5M params, ~209KB ONNX, <6ms inference. Classifies any content into 7 categories from raw bytes in a single forward pass. Built by eulogik — AI infrastructure for developers."
+    },
+    {
+      "title": "Eulogik — AI Infrastructure & Edge Intelligence",
+      "url": "https://eulogik.com/",
+      "snippet": "EDGE AI & TINYML pico-type & NanoForecast: Edge AI Foundation Models We designed, trained, and open-sourced pico-type (a 1.5M param byte-level text classifier running under 6ms on CPU) and NanoForecast (a zero-shot time-series forecasting model from 200K params compatible with Raspberry Pi). Deployed inside air-gapped systems for absolute data privacy."
+    },
+    {
+      "title": "eulogik/pico-type · Hugging Face",
+      "url": "https://huggingface.co/eulogik/pico-type",
+      "snippet": "eulogik / pico-type like 1 Follow Eulogik 1 Text Classification ONNX multilingual pico-type content-classification byte-level matryoshka lightweight classifier License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new pico-type Architecture Classification Heads Performance Usage CLI Python MCP Server Model Tiers ..."
+    },
+    {
+      "title": "Pico-Type — Tiny Byte-Level Content Classifier",
+      "url": "https://eulogik.github.io/pico-type/",
+      "snippet": "Pico‑Type — Bytes In, Answers Out A 1.5-million-parameter, byte-level, multi-head classifier that identifies code language, content type, modality, text language, and risk from raw bytes — no parsing, no dependencies."
+    },
+    {
+      "title": "eulogik/pico-type-v02 · Hugging Face",
+      "url": "https://huggingface.co/eulogik/pico-type-v02",
+      "snippet": "eulogik / pico-type-v02 like 0 Follow Eulogik 1 Text Classification ONNX PyTorch AISE-TUDelft/the-heap wikimedia/wikipedia nick007x/github-code-2025 English multilingual pico-type byte-level content-classification multi-head classifier edge-ai mobile ios android webassembly wasm browser code-detection language-detection programming-language natural-language clipboard mcp model-context-protocol ..."
+    }
+  ]
+}

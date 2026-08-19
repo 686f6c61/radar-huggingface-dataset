@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "trevornk/mumble-cleanup-2stage-GGUF",
+  "slug": "trevornk-mumble-cleanup-2stage-gguf",
+  "author": "trevornk",
+  "url": "https://huggingface.co/trevornk/mumble-cleanup-2stage-GGUF",
+  "created_at": "2026-08-17T18:20:02.000Z",
+  "updated_at": "2026-08-17T18:20:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "text-cleanup",
+    "speech-to-text",
+    "on-device",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 352154912,
+  "storage_human": "352 MB",
+  "base_model": "amitashwini/mumble-cleanup-2stage, Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amitashwini/mumble-cleanup-2stage · Hugging Face",
+      "url": "https://huggingface.co/amitashwini/mumble-cleanup-2stage",
+      "snippet": "amitashwini / mumble-cleanup-2stage like 0 Safetensors GGUF qwen2 mumble-cleanup transcript dictation speech-to-text cleanup conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=cleanup",
+      "snippet": "Models 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: cleanup Clear all"
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Local on-device cleanup: llama.cpp + small GGUF model as a 4th ... - GitHub",
+      "url": "https://github.com/trevornk/ramblr/issues/37",
+      "snippet": "Yes -- confirmed feasible. Small on-device LLMs via llama.cpp (GGUF format) are proven on Android in 2026; real shipping apps (PocketPal AI, SmolChat-Android, Maid) run this today with good performance even CPU-only on modest hardware. Cleanup/grammar-fix is a much easier task than open-ended chat, so a small model (0.5B-1.7B params, Q4_K_M quantization) is plenty and stays in a similar ..."
+    }
+  ]
+}

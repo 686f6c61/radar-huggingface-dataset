@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "slug": "hauhaucs-qwen3-5-35b-a3b-uncensored-hauhaucs-aggressive",
+  "author": "HauhauCS",
+  "url": "https://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-03-10T19:36:57.000Z",
+  "updated_at": "2026-04-05T19:00:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.5",
+    "moe",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1475,
+  "downloads_30d": 123403,
+  "trending_score": 8,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 244015936192,
+  "storage_human": "244.0 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-35B-A3B Uncensored Guide: Features, Capabilities, and Setup",
+      "url": "https://hackernoon.com/qwen35-35b-a3b-uncensored-guide-features-capabilities-and-setup",
+      "snippet": "This is a simplified guide to an AI model called Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive maintained by HauhauCS. Model overview Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive is an uncensored version of the base Qwen3.5-35B-A3B model maintained by HauhauCS. This model removes refusal mechanisms while maintaining the full capabilities of the original architecture. The aggressive variant ..."
+    },
+    {
+      "title": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 35B A3B Uncensored HauhauCS Aggressive — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-5-35b-a3b-uncensored-hauhaucs-aggressive",
+      "snippet": "A heavily modified, uncensored variant of Qwen3.5 35B with aggressive fine-tuning applied by HauhauCS. It operates with significantly reduced content filtering, meaning it will engage with topics and requests that standard models decline — a double-edged trait that demands careful deployment context. The mixture-of-experts architecture activates only 3B parameters per forward pass despite ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Uncensored: A 35B MoE Model With 262K Context",
+      "url": "https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context",
+      "snippet": "Join the Discord server (linked in the model description) for updates and roadmap information. This is a simplified guide to an AI model called Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive maintained by HauhauCS. If you like these kinds of analysis, join AIModels.fyi or follow us on Twitter."
+    }
+  ]
+}

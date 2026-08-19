@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ASethi04/pi05-BimanualYAM-umi75-teleop25-rotation-contracted-ee20-4k",
+  "slug": "asethi04-pi05-bimanualyam-umi75-teleop25-rotation-contracted-ee20-4k",
+  "author": "ASethi04",
+  "url": "https://huggingface.co/ASethi04/pi05-BimanualYAM-umi75-teleop25-rotation-contracted-ee20-4k",
+  "created_at": "2026-08-15T04:24:33.000Z",
+  "updated_at": "2026-08-15T04:27:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "bimanual",
+    "end-effector",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16573777272,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASethi04/MolmoAct2-BimanualYAM-oranges-ultrawide-wristonly-12k ...",
+      "url": "https://huggingface.co/ASethi04/MolmoAct2-BimanualYAM-oranges-ultrawide-wristonly-12k",
+      "snippet": "Instructions to use ASethi04/MolmoAct2-BimanualYAM-oranges-ultrawide-wristonly-12k with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ASethi04/MolmoAct2-BimanualYAM-oranges-12k · Hugging Face",
+      "url": "https://huggingface.co/ASethi04/MolmoAct2-BimanualYAM-oranges-12k",
+      "snippet": "Instructions to use ASethi04/MolmoAct2-BimanualYAM-oranges-12k with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "molmoact2/README.md at main · allenai/molmoact2 · GitHub",
+      "url": "https://github.com/allenai/molmoact2/blob/main/README.md",
+      "snippet": "MolmoAct2 is Ai2&#x27;s open family of action reasoning models for robot control and real-world deployment. It builds on the Molmo2-ER embodied-reasoning vision-language backbone, adds robot state and action modeling, and connects the VLM to a flow-matching continuous action expert for closed-loop manipulation. The release includes base checkpoints for continued training, fine-tuned robot policies ..."
+    },
+    {
+      "title": "molmoact2/examples/yam at main · allenai/molmoact2 · GitHub",
+      "url": "https://github.com/allenai/molmoact2/tree/main/examples/yam",
+      "snippet": "This directory holds the robot/client side of MolmoAct2 on a bimanual YAM setup. The inference server (host_server_yam.py) loads the allenai/MolmoAct2-BimanualYAM checkpoint and serves actions over HTTP; the eval launcher here drives the two YAM arms, captures the 3-camera observation, queries a policy, executes the returned action chunk, records each rollout, and (optionally) converts a ..."
+    },
+    {
+      "title": "PDF π : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://www.pi.website/download/pi05.pdf",
+      "snippet": "Abstract—In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π0.5, a new model based on π0 that uses co-training on heterogeneous ..."
+    }
+  ]
+}

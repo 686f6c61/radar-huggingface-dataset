@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Jayden04260/emotisense-distilbert",
+  "slug": "jayden04260-emotisense-distilbert",
+  "author": "Jayden04260",
+  "url": "https://huggingface.co/Jayden04260/emotisense-distilbert",
+  "created_at": "2026-08-18T15:48:16.000Z",
+  "updated_at": "2026-08-18T15:50:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EmotiSense - AI-Powered Emotion Classification - GitHub",
+      "url": "https://github.com/Sharnabh/EmotiSense-AI",
+      "snippet": "EmotiSense is an AI-powered emotion classification system that analyzes text and predicts emotions with high accuracy. The project implements both baseline machine learning models (TF-IDF + Logistic Regression/SVM) and state-of-the-art transformer models (DistilBERT) to classify text into 6 distinct emotions."
+    },
+    {
+      "title": "tsid7710/distillbert-emotion-model · Hugging Face",
+      "url": "https://huggingface.co/tsid7710/distillbert-emotion-model",
+      "snippet": "DistilBERT Emotion Classifier 🎭 This is a fine-tuned DistilBERT model for emotion classification trained on the dair-ai/emotion dataset. 🧠 Model Details Base model: distilbert-base-uncased Task: Text Classification (Emotion Detection) Languages: English Labels: sadness, joy, love, anger, fear, surprise Training epochs: 2 Batch size: 64"
+    },
+    {
+      "title": "GitHub - Suryanshmauryaa/EmotiSense: EmotiSense is an AI-powered app ...",
+      "url": "https://github.com/Suryanshmauryaa/EmotiSense",
+      "snippet": "EmotiSense is an AI-powered app that detects emotions like joy, sadness, anger, and love from text using a fine-tuned DistilBERT model. Built with Streamlit, it offers instant and intuitive emotion analysis with emojis, making NLP accessible and engaging for everyone."
+    },
+    {
+      "title": "DT12the/distilbert-sentiment-analysis · Hugging Face",
+      "url": "https://huggingface.co/DT12the/distilbert-sentiment-analysis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EmotiSense AI",
+      "url": "https://emotisense.ai/",
+      "snippet": "Landing Page for EmotiSense AI Ready for a New Sense of Connection? Step into a new era of AI that understands expressions, enriches interactions, and brings emotional intelligence to every experience."
+    }
+  ]
+}

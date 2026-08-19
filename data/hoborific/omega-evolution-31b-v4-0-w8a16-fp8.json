@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hoborific/Omega-Evolution-31B-v4.0-W8A16-FP8",
+  "slug": "hoborific-omega-evolution-31b-v4-0-w8a16-fp8",
+  "author": "hoborific",
+  "url": "https://huggingface.co/hoborific/Omega-Evolution-31B-v4.0-W8A16-FP8",
+  "created_at": "2026-08-17T05:37:48.000Z",
+  "updated_at": "2026-08-17T05:49:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "w8a16",
+    "fp8",
+    "conversational",
+    "base_model:ReadyArt/Omega-Evolution-31B-v4.0",
+    "base_model:quantized:ReadyArt/Omega-Evolution-31B-v4.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33308748266,
+  "storage_human": "33.3 GB",
+  "base_model": "ReadyArt/Omega-Evolution-31B-v4.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Omega-Evolution-31B-v4.0-LORA · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Omega-Evolution-31B-v4.0-LORA",
+      "snippet": "ReadyArt / Omega-Evolution-31B-v4.-LORA like 0 Follow Ready.Art 1.53k Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Omega-Evolution-31B-v4.0-GGUF - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Omega-Evolution-31B-v4.0-GGUF/blob/main/omega-evolution-31b-v4.0-ATTN8-HB16-Q4_K_M.gguf",
+      "snippet": "Instructions to use ReadyArt/Omega-Evolution-31B-v4.-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use ReadyArt/Omega-Evolution-31B-v4.-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "New AI Model Releases - Latest AI Models Released Today",
+      "url": "https://aiflashreport.com/topics/new-ai-model-releases.html",
+      "snippet": "Track new AI model releases updated daily. Latest model launches, specs, and availability from OpenAI, Anthropic, Google, Meta, Mistral, and more."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

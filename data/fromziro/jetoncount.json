@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "fromziro/JetonCount",
+  "slug": "fromziro-jetoncount",
+  "author": "fromziro",
+  "url": "https://huggingface.co/fromziro/JetonCount",
+  "created_at": "2026-06-22T07:44:12.000Z",
+  "updated_at": "2026-08-17T21:42:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "jetoncount",
+    "tiny",
+    "fromzero",
+    "regression",
+    "api_pricing",
+    "research",
+    "token_estimation",
+    "prediction",
+    "token_counting",
+    "dataset_labeling_tokens",
+    "custom_code",
+    "en",
+    "dataset:fromziro/jetoncount_corpus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 7009,
+  "parameters_human": "7009",
+  "storage_bytes": 58424,
+  "storage_human": "58424 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fromziro/JetonCount · Hugging Face",
+      "url": "https://huggingface.co/fromziro/JetonCount",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JetonCount - a Hugging Face Space by fromziro",
+      "url": "https://huggingface.co/spaces/fromziro/JetonCount",
+      "snippet": "Enter any piece of text and the app will predict how many tokens it would produce, using a lightweight model. You can also provide a Hugging Face tokenizer ID to see the actual token count and comp..."
+    },
+    {
+      "title": "Arizona women sue men accused of using sexually explicit AI-generated ...",
+      "url": "https://www.12news.com/article/news/local/arizona/arizona-women-sue-men-sexually-explicit-ai-generated-images/75-9a7ae4d8-e39c-4032-8a14-f84994dcc117",
+      "snippet": "Arizona women sue men accused of using sexually explicit AI-generated images of them for business Two Maricopa County residents and one San Diego County, California resident filed the lawsuit on ..."
+    },
+    {
+      "title": "I Mass-Fired 5 AI Models in 6 Months. Here&#x27;s the Data. - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/i-mass-fired-5-ai-models-6-months-heres-data-kenneth-jiang-cdr5c",
+      "snippet": "Before I switched AI coding tools entirely — the subject of my last viral post — I churned through AI models within a single tool at an even faster rate. Here&#x27;s what my model usage inside ..."
+    },
+    {
+      "title": "AI Content Detector | ChatGPT, Copilot Claude and 40+",
+      "url": "https://contentdetector.org/",
+      "snippet": "AI Content Detector for Real-World Writing ContentDetector.org helps you check if a passage was likely written by an AI model. Paste text, upload a file, or drop in a URL. In a few seconds you get a clear score, section-by-section highlights, and simple guidance to keep your content authentic and publish-ready. Built for editors, marketers, educators, and teams that care about trust."
+    }
+  ]
+}

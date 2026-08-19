@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "lmcoleman/Qwen3.8-27B-MagicQuant-GGUF",
+  "slug": "lmcoleman-qwen3-8-27b-magicquant-gguf",
+  "author": "lmcoleman",
+  "url": "https://huggingface.co/lmcoleman/Qwen3.8-27B-MagicQuant-GGUF",
+  "created_at": "2026-08-15T12:21:28.000Z",
+  "updated_at": "2026-08-15T14:43:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "magicquant",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 134,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 58066622656,
+  "storage_human": "58.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-E4B-it-heretic-i1-GGUF",
+  "slug": "mradermacher-gemma-4-e4b-it-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-E4B-it-heretic-i1-GGUF",
+  "created_at": "2026-04-06T11:57:32.000Z",
+  "updated_at": "2026-08-18T07:30:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "en",
+    "base_model:coder3101/gemma-4-E4B-it-heretic",
+    "base_model:quantized:coder3101/gemma-4-E4B-it-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 492,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 111471819136,
+  "storage_human": "111.5 GB",
+  "base_model": "coder3101/gemma-4-E4B-it-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/gemma-4-E4B-it-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-E4B-it-heretic-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/gemma-4-E4B-it-heretic-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "gemma-4-E4B-it-ultra-uncensored-heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s new family of open models, including 12B, E2B, E4B, 26B-A4B, and 31B. The multimodal, hybrid-thinking models support 140+ languages, up to 256K context, and have dense and MoE variants. Gemma 4 is Apache-2.0 licensed and can run on your local device. Gemma-4-12B is new and features unified text, image and audio ..."
+    },
+    {
+      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e4b",
+      "snippet": "Models /Gemma 4 E4B Gemma 4 E4B — The Daily Driver for Local AI Gemma 4 E4B is Google&#x27;s most practical local model: 4.4B parameters, 8GB VRAM minimum, multimodal input, and Thinking Mode — all in a package that runs on any modern consumer GPU."
+    },
+    {
+      "title": "igorls/gemma-4-E4B-it-heretic-GGUF:Q4_K_M",
+      "url": "https://ollama.com/igorls/gemma-4-E4B-it-heretic-GGUF:Q4_K_M",
+      "snippet": "Gemma 4 E4B-it Heretic (Abliterated) Disclaimer: This model has had its safety alignment removed through abliteration. It will comply with requests that the original model would refuse. This model is provided for research and educational purposes. Users are solely responsible for how they use this model and any content it generates. The creators assume no liability for misuse. Abliterated ..."
+    }
+  ]
+}

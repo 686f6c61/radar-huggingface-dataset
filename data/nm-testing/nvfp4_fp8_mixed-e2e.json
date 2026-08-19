@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nm-testing/nvfp4_fp8_mixed-e2e",
+  "slug": "nm-testing-nvfp4_fp8_mixed-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/nvfp4_fp8_mixed-e2e",
+  "created_at": "2026-07-25T05:30:13.000Z",
+  "updated_at": "2026-08-18T02:48:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 433,
+  "trending_score": 0,
+  "parameters": 742483968,
+  "parameters_human": "742.5M",
+  "storage_bytes": 29392157952,
+  "storage_human": "29.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nm-testing/nvfp4_fp8_mixed-e2e · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/nvfp4_fp8_mixed-e2e",
+      "snippet": "nm-testing / nvfp4_fp8_mixed-e2e like 0 Follow NM Testing 101 Safetensors llama compressed-tensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 570 Safetensors Model size 0.8B params Tensor type F32 · BF16 · F8_E4M3 · U8 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "nm-testing/nvfp4_fp8_mixed-e2e at main - Hugging Face",
+      "url": "https://huggingface.co/nm-testing/nvfp4_fp8_mixed-e2e/tree/main",
+      "snippet": "/ nvfp4_fp8_mixed-e2e like 0 Follow NM Testing 101 Safetensors llama compressed-tensors Model card FilesFiles and versions xet Community Copy to bucket new main nvfp4_fp8_mixed-e2e 922 MB Ctrl+K Ctrl+K 1 contributor History:12 commits nm-autobot Upload folder using huggingface_hub 5ff6ea7 verifiedabout 17 hours ago .gitattributes Safe 1.52 ..."
+    },
+    {
+      "title": "Mixed Precision: FP8 and NVFP4 | alint77/nanogpt-fp8 | DeepWiki",
+      "url": "https://deepwiki.com/alint77/nanogpt-fp8/2.3-mixed-precision:-fp8-and-nvfp4",
+      "snippet": "Mixed Precision: FP8 and NVFP4 Relevant source files Purpose and Scope This page documents how train.py integrates NVIDIA Transformer Engine&#x27;s reduced-precision training modes (FP8 and NVFP4), including the recipe objects, hardware capability detection, the te.autocast context manager, and how these interact with PyTorch AMP and FSDP2. For the model layers that are accelerated by these recipes ..."
+    },
+    {
+      "title": "Introducing NVFP4 for Efficient and Accurate Low-Precision Inference",
+      "url": "https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/",
+      "snippet": "AI-Generated Summary NVIDIA Blackwell&#x27;s NVFP4, a 4-bit floating point format, is designed to improve model accuracy at ultra-low precision by using a two-level scaling strategy that includes a fine-grained E4M3 scaling factor and a second-level FP32 scalar."
+    },
+    {
+      "title": "Run Unsloth Dynamic NVFP4 Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/basics/nvfp4",
+      "snippet": "For all quants, we also provide FP8 KV cache calibration allowing for 2x longer context lengths. Aug 14: Qwen3.8-27B is out now along with our NVFP4 quant. All Gemma 4 models are now available as Unsloth Dynamic NVFP4 quants: E2B, E4B, 12B Unified, 26B-A4B MoE, and 31B Dense. Explore the Unsloth Dynamic NVFP4 Collection for all our model uploads."
+    }
+  ]
+}

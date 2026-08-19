@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Cantina/Ozus-turbo-1.2",
+  "slug": "cantina-ozus-turbo-1-2",
+  "author": "Cantina",
+  "url": "https://huggingface.co/Cantina/Ozus-turbo-1.2",
+  "created_at": "2026-08-18T07:34:29.000Z",
+  "updated_at": "2026-08-18T07:35:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "ozus-turbo",
+    "z-image-turbo",
+    "cantina-internal",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3995922096,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cantina - Infinite Creativity Unlocked",
+      "url": "https://cantina.com/",
+      "snippet": "Chat with friends and AI. Build characters with personality. Create video in seconds — only on Cantina."
+    },
+    {
+      "title": "cntn.ai - Cantina",
+      "url": "https://cntn.ai/",
+      "snippet": "Chat with friends and AI. Build characters with personality. Create video in seconds — only on Cantina."
+    },
+    {
+      "title": "Download | Cantina",
+      "url": "https://cantina.com/download",
+      "snippet": "A private network of live spaces where humans and bots come to play on desktop, or download the app for mobile! Create, explore, chat, and interact with personality-driven AI bots together with your friends."
+    },
+    {
+      "title": "Cantina/DreamShaperXL_Turbo_V2-SFW at main - Hugging Face",
+      "url": "https://huggingface.co/Cantina/DreamShaperXL_Turbo_V2-SFW/tree/main",
+      "snippet": "1 Train Deploy Use this model main DreamShaperXL_Turbo_V2-SFW Ctrl+K Ctrl+K 1 contributor History:4 commits nducthang Upload README.md with huggingface_hub 8bcbee8 verified6 months ago schedulerUpload StableDiffusionXLPipeline6 months ago text_encoderUpload StableDiffusionXLPipeline6 months ago text_encoder_2Upload StableDiffusionXLPipeline6 ..."
+    },
+    {
+      "title": "CanIRun.ai — Can your machine run AI models?",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your hardware and find out which AI models you can run locally. GPU, CPU, and RAM analysis in your browser."
+    }
+  ]
+}

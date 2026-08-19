@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "thinkingdbx/codebert-permissive-embed",
+  "slug": "thinkingdbx-codebert-permissive-embed",
+  "author": "thinkingdbx",
+  "url": "https://huggingface.co/thinkingdbx/codebert-permissive-embed",
+  "created_at": "2026-08-16T04:50:20.000Z",
+  "updated_at": "2026-08-16T05:49:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "code"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "code",
+    "code-search",
+    "code-retrieval",
+    "feature-extraction",
+    "arxiv:2407.02883",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 110617344,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442491744,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

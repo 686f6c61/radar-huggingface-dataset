@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agentyaya/yaya-image-edit",
+  "slug": "agentyaya-yaya-image-edit",
+  "author": "agentyaya",
+  "url": "https://huggingface.co/agentyaya/yaya-image-edit",
+  "created_at": "2026-08-17T21:14:19.000Z",
+  "updated_at": "2026-08-17T21:21:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710671694,
+  "storage_human": "57.7 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YAY - AI-Powered Image Generation & Nano Banana Image Generator",
+      "url": "https://useyay.com/",
+      "snippet": "Transform your ideas into stunning images with YAY, the AI-powered conversation-based image editor. Create garden designs, try on clothing, and generate creative content."
+    },
+    {
+      "title": "agentyaya (Agente) - Hugging Face",
+      "url": "https://huggingface.co/agentyaya",
+      "snippet": "AI for indigenous and underrepresented communities. Recent Activity. updated a model about 5 hours ago. agentyaya/yaya.v1. published a model about 6 hours ago"
+    },
+    {
+      "title": "agentyaya (Agente) - Hugging Face",
+      "url": "https://huggingface.co/agentyaya/models",
+      "snippet": "AI for indigenous and underrepresented communities. Recent Activity. updated a model about 6 hours ago. agentyaya/yaya.v1. published a model about 6 hours ago"
+    },
+    {
+      "title": "Damacol/agentyaya-yaya.v1 - GitHub",
+      "url": "https://github.com/Damacol/agentyaya-yaya.v1",
+      "snippet": "agentyaya/yaya.v1 - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking. Optimized for developers and creators who demand full control over their AI workflow."
+    },
+    {
+      "title": "agentyaya/yaya.v1 - Fast, Reliable, and Scalable Inference on FriendliAI",
+      "url": "https://friendli.ai/models/agentyaya/yaya.v1",
+      "snippet": "Run agentyaya/yaya.v1 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

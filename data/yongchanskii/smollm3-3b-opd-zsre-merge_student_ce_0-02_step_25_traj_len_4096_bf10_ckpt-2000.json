@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25_traj_len_4096_bf10_ckpt-2000",
+  "slug": "yongchanskii-smollm3-3b-opd-zsre-merge_student_ce_0-02_step_25_traj_len_4096_bf10_ckpt-2000",
+  "author": "yongchanskii",
+  "url": "https://huggingface.co/yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25_traj_len_4096_bf10_ckpt-2000",
+  "created_at": "2026-08-14T15:29:40.000Z",
+  "updated_at": "2026-08-14T15:31:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 245,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 6167444080,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25_traj_len_4096_bf5 ...",
+      "url": "https://huggingface.co/yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25_traj_len_4096_bf5_ckpt-2000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM3-3B · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alibayram/smollm3",
+      "url": "https://ollama.com/alibayram/smollm3",
+      "snippet": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports 6 languages, advanced reasoning and long context. SmolLM3 is a fully open model that offers strong performance at the 3B-4B scale."
+    },
+    {
+      "title": "SmolLM3: smol, multilingual, long-context reasoner",
+      "url": "https://smollm3.org/",
+      "snippet": "SmolLM3 is a powerful 3B parameter language model designed for efficient reasoning, long context understanding, and multilingual applications. Explore the capabilities of this compact yet capable AI model for various use cases."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Our 3B model outperforms Llama 3.2 3B and Qwen2.5 3B while staying competitive with larger 4B alternatives (Qwen3 & Gemma3). Beyond the performance numbers, we&#x27;re sharing exactly how we built it using public datasets and training frameworks. Ressources: SmolLM3-Base SmolLM3 blog Summary: 3B model trained on 11T tokens, SoTA at the 3B scale and competitive with 4B models Fully open model, open ..."
+    }
+  ]
+}

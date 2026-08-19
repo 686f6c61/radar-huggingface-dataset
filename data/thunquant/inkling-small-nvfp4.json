@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thunquant/Inkling-Small-NVFP4",
+  "slug": "thunquant-inkling-small-nvfp4",
+  "author": "thunquant",
+  "url": "https://huggingface.co/thunquant/Inkling-Small-NVFP4",
+  "created_at": "2026-08-19T01:54:40.000Z",
+  "updated_at": "2026-08-19T01:54:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:quantized:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156032140138,
+  "parameters_human": "156.03B",
+  "storage_bytes": 170764725303,
+  "storage_human": "170.8 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zugquant/Inkling-Small-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/zugquant/Inkling-Small-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thinkingmachines/Inkling-Small-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inkling Small NVFP4 — ThinkLLM",
+      "url": "https://thinkllm.dev/models/inkling-small-nvfp4",
+      "snippet": "Inkling Small NVFP4 is a compact, open-weight multimodal model that accepts both text and image inputs. The NVFP4 format suggests it&#x27;s optimized for efficient inference on NVIDIA hardware using low-precision quantization, trading some numerical precision for speed and reduced memory footprint."
+    },
+    {
+      "title": "Inkling Small NVFP4 by thinkingmachines - LLM Explorer",
+      "url": "https://llm-explorer.com/model/thinkingmachines%2FInkling-Small-NVFP4,1WT9XZ7GG1EOlVZVuZRQOg",
+      "snippet": "Inkling Small NVFP4 is an open-source 156b LLM by thinkingmachines. VRAM 166.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Inkling-Small-NVFP4 on a Dual DGX Spark Cluster",
+      "url": "https://forums.developer.nvidia.com/t/inkling-small-nvfp4-on-a-dual-dgx-spark-cluster/378645",
+      "snippet": "Inkling-Small-NVFP4, a 276B-parameter MoE model with 12B active parameters, has just been released. It is a native multimodal model with vision/audio support and a context window of up to 1 million tokens. Based on its specifications, I expect that serving the model with the full 1M context may be possible on my setup, so I plan to run a comprehensive series of tests today. Game development is ..."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "SixpertAI/SixpertK2",
+  "slug": "sixpertai-sixpertk2",
+  "author": "SixpertAI",
+  "url": "https://huggingface.co/SixpertAI/SixpertK2",
+  "created_at": "2026-07-27T18:13:25.000Z",
+  "updated_at": "2026-08-17T22:51:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "sixpert_moe",
+    "conversational",
+    "reasoning",
+    "uncensored",
+    "multimodal",
+    "vision",
+    "function-calling",
+    "agentic",
+    "long-context",
+    "1m-context",
+    "cybersecurity",
+    "biomedical",
+    "trading",
+    "finance",
+    "coding",
+    "open-source",
+    "text-generation",
+    "dataset:sixpert/sixpert-k2-dataset",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 1089,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5633949853,
+  "storage_human": "5.6 GB",
+  "base_model": "sixpert/sixpert-k2-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SixpertAI/SixpertK2 · Hugging Face",
+      "url": "https://huggingface.co/Sixtusmsdba/SixpertK2",
+      "snippet": "SixpertAI / SixpertK2 like 2 Text Generation GGUF sixpert/sixpert-k2-dataset sixpert_moe conversational reasoning uncensored multimodal vision function-calling agentic long-context 1m-context cybersecurity biomedical trading finance coding open-source License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "SixpertAI (Inyang David) - Hugging Face",
+      "url": "https://huggingface.co/SixpertAI",
+      "snippet": "Sort: Recently updated SixpertAI/SixpertK2 Text Generation • 9B•Updated 8 days ago• 817 • 2"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "FREE online image generator and model hosting site! | Tensor.Art",
+      "url": "https://tensor.art/",
+      "snippet": "AI model sharing platform, online run models to generate image,viode and traning model for free. Your can upload and download models, include..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sixpert_moe",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc sixpert_moe Apply filters"
+    }
+  ]
+}

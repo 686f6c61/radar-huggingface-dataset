@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ling-3.0-flash",
+  "slug": "inclusionai-ling-3-0-flash",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+  "created_at": "2026-08-02T16:14:41.000Z",
+  "updated_at": "2026-08-18T06:26:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bailing_hybrid",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 351,
+  "downloads_30d": 13957,
+  "trending_score": 42,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 254993303374,
+  "storage_human": "255.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/Ling-3.0-flash · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "InclusionAI Ling 3.0 Flash Complete Guide: 124B MoE with Hybrid Reasoning",
+      "url": "https://www.aimadetools.com/blog/ling-3-0-flash-complete-guide/",
+      "snippet": "InclusionAI released Ling 3.0 Flash on July 23, 2026. It is a 124B total parameter Mixture-of-Experts model with approximately 5.1B parameters activated per token. The key innovation is a hybrid reasoning mode that combines the speed of the Ling series with the deep reasoning of the Ring series. It is free on OpenRouter through August 3, 2026. This is the successor to Ling 2.6 Flash, which had ..."
+    },
+    {
+      "title": "Ling 3.0 - a inclusionAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/inclusionAI/ling-30",
+      "snippet": "Ling 3.0"
+    },
+    {
+      "title": "inclusionAI: Ling-3.0-flash - zenmux.ai",
+      "url": "https://zenmux.ai/inclusionai/ling-3.0-flash",
+      "snippet": "Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M. Compared to the previous flash model, Ling-3.0-flash delivers significantly enhanced stability in long-horizon tasks, markedly higher tool calling accuracy, and substantially improved compatibility with common ..."
+    },
+    {
+      "title": "Ling 3.0 Flash Benchmarks & Speed (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/ling-3-0-flash",
+      "snippet": "Ling 3.0 Flash by InclusionAI ranks #103 of 217 with a public score of 52.82/100. Evidence: Estimated; this profile shows 17 source-displayable benchmark rows."
+    }
+  ]
+}

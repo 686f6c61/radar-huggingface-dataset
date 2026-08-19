@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "OpenMOSS-Team/MOSS-VL-Realtime",
+  "slug": "openmoss-team-moss-vl-realtime",
+  "author": "OpenMOSS-Team",
+  "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime",
+  "created_at": "2026-07-14T06:35:39.000Z",
+  "updated_at": "2026-08-18T07:28:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moss_vl",
+    "feature-extraction",
+    "Realtime",
+    "Streaming",
+    "Video-Understanding",
+    "Image-Understanding",
+    "MOSS-VL",
+    "OpenMOSS",
+    "multimodal",
+    "video",
+    "vision-language",
+    "custom_code",
+    "video-text-to-text",
+    "en",
+    "zh",
+    "arxiv:2608.15045",
+    "arxiv:2606.07639",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 104,
+  "downloads_30d": 1806,
+  "trending_score": 0,
+  "parameters": 11336371208,
+  "parameters_human": "11.34B",
+  "storage_bytes": 22692789255,
+  "storage_human": "22.7 GB",
+  "base_model": "OpenMOSS-Team/MOSS-VL-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOSS-VL-Realtime · OpenMOSS",
+      "url": "https://openmoss.ai/MOSS-VL/",
+      "snippet": "We want to equip the model with the ability to handle real-world pacing: judging when to speak, instantly responding to sudden events, quietly observing when information is scarce, and even correcting itself mid-sentence when the scene flips. Today, we open-source MOSS-VL-Realtime: An 11B open-weights streaming video understanding model."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-VL: MOSS-VL is the core multimodal model series ...",
+      "url": "https://github.com/OpenMOSS/MOSS-VL",
+      "snippet": "MOSS-VL is an open-weight model series for long-form, real-time video understanding, built on a unified cross-attention architecture. All three models are 11B-parameter and open-weight. MOSS-VL-Realtime: real-time interaction over continuous video streams — interruptible at any moment, answering on the fly, and deciding on its own when to respond and when to keep watching. MOSS-VL-Instruct ..."
+    },
+    {
+      "title": "OpenMOSS-Team/MOSS-VL-Realtime at main - Hugging Face",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenMOSS-Team (OpenMOSS) - Hugging Face",
+      "url": "https://huggingface.co/OpenMOSS-Team",
+      "snippet": "A unified multimodal large language model for end-to-end speaker-attributed, time-stamped transcription."
+    },
+    {
+      "title": "MOSS-VL · OpenMOSS",
+      "url": "https://openmoss.ai/MOSS-VL/moss-vl.html",
+      "snippet": "MOSS-VL: A Multimodal Foundation for Video Understanding MOSS-VL is the core multimodal model series in the OpenMOSS ecosystem, dedicated to pushing the frontier of visual understanding. To tackle the challenges inherent to video understanding, our technical roadmap pursues a systematic scaling strategy along three key dimensions."
+    }
+  ]
+}

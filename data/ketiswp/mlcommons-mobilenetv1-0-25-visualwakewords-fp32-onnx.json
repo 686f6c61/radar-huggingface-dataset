@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/mlcommons-MobileNetV1-0.25-VisualWakeWords-fp32-onnx",
+  "slug": "ketiswp-mlcommons-mobilenetv1-0-25-visualwakewords-fp32-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/mlcommons-MobileNetV1-0.25-VisualWakeWords-fp32-onnx",
+  "created_at": "2026-08-19T01:57:33.000Z",
+  "updated_at": "2026-08-19T02:10:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "fp32",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 878769,
+  "storage_human": "878769 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open_model_zoo/models/public/mobilenet-v1-0.25-128/README.md ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/mobilenet-v1-0.25-128/README.md",
+      "snippet": "mobilenet-v1-.25-128 is one of MobileNets - small, low-latency, low-power models parameterized to meet the resource constraints of a variety of use cases. They can be built upon for classification, detection, embeddings and segmentation similar to how other popular large scale models are used. For details, see paper."
+    },
+    {
+      "title": "open_model_zoo/models/public/mobilenet-v1-1.0-224-tf/README.md ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/mobilenet-v1-1.0-224-tf/README.md",
+      "snippet": "mobilenet-v1-1.-224 is one of MobileNets - small, low-latency, low-power models parameterized to meet the resource constraints of a variety of use cases. They can be built upon for classification, detection, embeddings and segmentation similar to how other popular large scale models are used."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mobilenet-v1-0.25-128 — OpenVINO™ documentationCopy to clipboardCopy to ...",
+      "url": "https://docs.openvino.ai/2023.3/omz_models_model_mobilenet_v1_0_25_128.html",
+      "snippet": "Use Case and High-Level Description ¶ mobilenet-v1-.25-128 is one of MobileNets - small, low-latency, low-power models parameterized to meet the resource constraints of a variety of use cases. They can be built upon for classification, detection, embeddings and segmentation similar to how other popular large scale models are used. For details, see paper."
+    },
+    {
+      "title": "[1704.04861] MobileNets: Efficient Convolutional Neural Networks for ...",
+      "url": "https://arxiv.org/abs/1704.04861",
+      "snippet": "We present a class of efficient models called MobileNets for mobile and embedded vision applications. MobileNets are based on a streamlined architecture that uses depth-wise separable convolutions to build light weight deep neural networks. We introduce two simple global hyper-parameters that efficiently trade off between latency and accuracy. These hyper-parameters allow the model builder to ..."
+    }
+  ]
+}

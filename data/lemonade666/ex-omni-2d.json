@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lemonade666/Ex-Omni-2D",
+  "slug": "lemonade666-ex-omni-2d",
+  "author": "lemonade666",
+  "url": "https://huggingface.co/lemonade666/Ex-Omni-2D",
+  "created_at": "2026-08-11T10:23:07.000Z",
+  "updated_at": "2026-08-13T04:49:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "any-to-any",
+    "en",
+    "arxiv:2608.10720",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 79,
+  "trending_score": 8,
+  "parameters": 11178017856,
+  "parameters_human": "11.18B",
+  "storage_bytes": 22716112000,
+  "storage_human": "22.7 GB",
+  "base_model": "Qwen/Qwen3-8B, Wan-AI/Wan2.1-T2V-1.3B, Qwen/Qwen3-0.6B, Qwen/Qwen3-TTS-Tokenizer-12Hz",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lemonade666/Ex-Omni-2D · Add paper, project, and code links",
+      "url": "https://huggingface.co/lemonade666/Ex-Omni-2D/discussions/1",
+      "snippet": "This PR adds links to the official paper, project page, and GitHub repository in the model card content, making the model easier to find and reference."
+    },
+    {
+      "title": "[2608.10720] Ex-Omni-2D: Expressive Omni-Modal Dialogue Models with ...",
+      "url": "https://arxiv.org/abs/2608.10720",
+      "snippet": "Omni-modal dialogue models can understand multimodal inputs and synthesize spoken replies, yet their responses remain visually disembodied. We introduce &#92;&#92;textbf{Ex-Omni-2D}, an omni-modal dialogue framework that generates a coordinated response comprising text, personalized speech, and reference-conditioned video. Given a multimodal query, reference image, and reference audio, the model ..."
+    },
+    {
+      "title": "lemonade666/Ex-Omni · Hugging Face",
+      "url": "https://huggingface.co/lemonade666/Ex-Omni",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - LOGO-CUHKSZ/Ex-Omni-2D-Code",
+      "url": "https://github.com/LOGO-CUHKSZ/Ex-Omni-2D-Code",
+      "snippet": "Given a multimodal query, reference image, and reference audio, Ex-Omni-2D produces a structured Visual Thought Plan (VTP), response text, personalized speech, and synchronized avatar video. Native multi-codebook speech units form a shared acoustic-temporal interface between speech and video ..."
+    },
+    {
+      "title": "Ex-Omni-2D: Expressive Omni-Modal Dialogue Models with Native Visua…",
+      "url": "https://www.opentrain.ai/papers/ex-omni-2d-expressive-omni-modal-dialogue-models-with-native-visual-presence--arxiv-2608.10720/",
+      "snippet": "Omni-modal dialogue models can understand multimodal inputs and synthesize spoken replies, yet their responses remain visually disembodied. We introduce &#92;textbf {Ex-Omni-2D}, an omni-modal dialogue framework that generates a coordinated response comprising text, personalized speech, and reference-conditioned video. Given a multimodal query, reference image, and reference audio, the model ..."
+    }
+  ]
+}

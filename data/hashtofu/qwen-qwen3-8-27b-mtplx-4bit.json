@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "hashtofu/Qwen-Qwen3.8-27B-MTPLX-4bit",
+  "slug": "hashtofu-qwen-qwen3-8-27b-mtplx-4bit",
+  "author": "hashtofu",
+  "url": "https://huggingface.co/hashtofu/Qwen-Qwen3.8-27B-MTPLX-4bit",
+  "created_at": "2026-08-14T16:08:05.000Z",
+  "updated_at": "2026-08-14T16:29:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4204731904,
+  "parameters_human": "4.20B",
+  "storage_bytes": 16002433241,
+  "storage_human": "16.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

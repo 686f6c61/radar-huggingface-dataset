@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "IoriSou0826/evo1_libero_spatial_stage2_s0_main",
+  "slug": "iorisou0826-evo1_libero_spatial_stage2_s0_main",
+  "author": "IoriSou0826",
+  "url": "https://huggingface.co/IoriSou0826/evo1_libero_spatial_stage2_s0_main",
+  "created_at": "2026-08-16T09:05:58.000Z",
+  "updated_at": "2026-08-16T09:08:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 776139440,
+  "parameters_human": "776.1M",
+  "storage_bytes": 1798331008,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MINT-SJTU/Evo-1: Evo-1: Lightweight Vision-Language-Action ...",
+      "url": "https://github.com/MINT-SJTU/Evo-1",
+      "snippet": "For the new model checkpoints trained by the new version, you need to modify both arm_key and dataset_key. (Optional) Modify server port: Evo1_server.py (Optional) Modify client port: libero_client_4tasks.py"
+    },
+    {
+      "title": "zuoxingdong/evo1_libero · Hugging Face",
+      "url": "https://huggingface.co/zuoxingdong/evo1_libero",
+      "snippet": "EVO1 · LIBERO (Stage 2, 70k) This is an EVO1 vision-language-action checkpoint trained on all four LIBERO suites with the two-stage LeRobot recipe: 5k steps of action-head-only training followed by joint VLM and action-head finetuning. This checkpoint was saved at step 70,000 of the 80k Stage-2 schedule and had the best overall result among the evaluated 10k, 40k, 60k, and 70k checkpoints."
+    },
+    {
+      "title": "Evo-1: Lightweight Vision-Language-Action Model",
+      "url": "https://arxiv.org/html/2511.04555v1",
+      "snippet": "In this work, we introduce Evo-1, a lightweight VLA model designed for low-cost training and real-time deployment. Evo-1 adopts a unified vision-language backbone [zhu2025internvl3] pretrained under a single-stage multimodal paradigm, where perceptual and linguistic representations are learned jointly without post-hoc alignment, enabling strong multimodal perception and understanding. This ..."
+    },
+    {
+      "title": "[2511.04555] Evo-1: Lightweight Vision-Language-Action Model with ...",
+      "url": "https://arxiv.org/abs/2511.04555",
+      "snippet": "Vision-Language-Action (VLA) models have emerged as a powerful framework that unifies perception, language, and control, enabling robots to perform diverse tasks through multimodal understanding. However, current VLA models typically contain massive parameters and rely heavily on large-scale robot data pretraining, leading to high computational costs during training, as well as limited ..."
+    },
+    {
+      "title": "RL on Evo-1 Models — RLinf documentation",
+      "url": "https://rlinf.readthedocs.io/en/latest/rst_source/examples/embodied/evo1.html",
+      "snippet": "Evo-1 is a compact (~1B) vision-language-action model: an InternVL3-1B vision-language backbone with a flow-matching (DiT) action head. RLinf integrates it natively — embedded in RLinf&#x27;s Python memory space for zero-latency, tensor-level interaction — and supports full-parameter SFT and GRPO fine-tuning on the LIBERO simulator."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_9058_jvc8be_cand_svc-fraud",
+  "slug": "roy229-huggingface_9058_jvc8be_cand_svc-fraud",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_9058_jvc8be_cand_svc-fraud",
+  "created_at": "2026-08-15T04:44:46.000Z",
+  "updated_at": "2026-08-15T04:51:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "portfolio-candidate",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229/huggingface_9058_ot0arb_cand_svc-support · Hugging Face",
+      "url": "https://huggingface.co/Roy229/huggingface_9058_ot0arb_cand_svc-support",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Roy229/huggingface_9058_ot0arb_cand_svc-fraud · Hugging Face",
+      "url": "https://huggingface.co/Roy229/huggingface_9058_ot0arb_cand_svc-fraud",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face Hacked by AI Agent — Saved by a Local Model (2026)",
+      "url": "https://insiderllm.com/guides/hugging-face-ai-agent-breach/",
+      "snippet": "Hugging Face disclosed July 16 that an autonomous AI agent breached its internal infra — now confirmed as OpenAI&#x27;s own models. The models you download are safe — here&#x27;s what was and wasn&#x27;t hit."
+    },
+    {
+      "title": "Hugging Face Confirms AI-Driven Breach: Attackers used Autonomous ...",
+      "url": "https://cybersecuritynews.com/hugging-face-confirms-ai-driven-breach/",
+      "snippet": "Hugging Face disclosed this week that it detected and contained a production infrastructure intrusion, driven end-to-end by an autonomous AI agent system, and defended against it using its own AI-based forensic analysis."
+    },
+    {
+      "title": "OpenAI-Hugging Face Security Incident: Explained",
+      "url": "https://decodethefuture.org/en/openai-hugging-face-security-incident-explained/",
+      "snippet": "OpenAI linked a July 2026 Hugging Face intrusion to models tested for cyber capability. Confirmed facts, open questions and lessons for AI builders."
+    }
+  ]
+}

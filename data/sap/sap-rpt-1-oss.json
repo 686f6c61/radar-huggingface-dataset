@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SAP/sap-rpt-1-oss",
+  "slug": "sap-sap-rpt-1-oss",
+  "author": "SAP",
+  "url": "https://huggingface.co/SAP/sap-rpt-1-oss",
+  "created_at": "2025-06-12T14:02:42.000Z",
+  "updated_at": "2026-08-17T10:30:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sap-rpt-1-oss",
+  "languages": [],
+  "tags": [
+    "sap-rpt-1-oss",
+    "tabular",
+    "foundation-model",
+    "deep-learning",
+    "in-context",
+    "contexttab",
+    "tabular-classification",
+    "dataset:mlfoundations/t4-full",
+    "arxiv:2506.10707",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 94,
+  "downloads_30d": 57288,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65001037,
+  "storage_human": "65 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAP-RPT-1: A Revolutionary Tabular ML Model and OW... - SAP Community",
+      "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-rpt-1-a-revolutionary-tabular-ml-model-and-owasp-ml-top-10-compliance/ba-p/14270750",
+      "snippet": "Note: This blog discusses SAP-RPT-1 model, the enterprise version of the ConTextTab / SAP-RPT-1-OSS model architecture. The underlying technology is detailed in the ConTextTab research paper published by SAP, with an open-source implementation available as ConTextTab on Hugging Face and GitHub. The ..."
+    },
+    {
+      "title": "SAP-RPT-1 | SAP Help Portal",
+      "url": "https://help.sap.com/docs/sap-ai-core/generative-ai/sap-rpt-1",
+      "snippet": "SAP-RPT-1 is a relational pretrained transformer for use on relational and structured data. It&#x27;s developed and maintained by SAP."
+    },
+    {
+      "title": "sap-rpt-1-oss - GitHub",
+      "url": "https://github.com/SAP-samples/sap-rpt-1-oss",
+      "snippet": "This model and repository were formerly known as ConTextTab. While the code and repository have now been updated in line with the new name sap-rpt-1-oss, the model checkpoint and functionality remain identical. Tabular in-context learning (ICL) has recently achieved state-of-the-art (SOTA ..."
+    },
+    {
+      "title": "SAP-RPT-1: Enterprise AI for Relational Data Now G... - SAP Community",
+      "url": "https://community.sap.com/t5/artificial-intelligence-blogs-posts/sap-rpt-1-enterprise-ai-for-relational-data-now-generally-available/ba-p/14287926",
+      "snippet": "Recap on SAP-RPT-1 As announced in TechEd this year, SAP-RPT-1 (in short for Relational Pre-trained Transformer) is our first-ever relational foundation model. Unlike traditional large language models that works primarily with unstructured text, SAP-RPT-1 is a table-native model that excels at under..."
+    },
+    {
+      "title": "sap-rpt-1-oss - Hugging Face",
+      "url": "https://huggingface.co/SAP/sap-rpt-1-oss",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

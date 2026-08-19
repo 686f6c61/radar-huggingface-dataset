@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "StarsMakeGalaxy/text-to-sql-Q4_K_M",
+  "slug": "starsmakegalaxy-text-to-sql-q4_k_m",
+  "author": "StarsMakeGalaxy",
+  "url": "https://huggingface.co/StarsMakeGalaxy/text-to-sql-Q4_K_M",
+  "created_at": "2026-08-18T20:56:23.000Z",
+  "updated_at": "2026-08-18T20:57:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 3455870016,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StarsMakeGalaxy/enterprise-text2sql-curated-600 - Hugging Face",
+      "url": "https://huggingface.co/datasets/StarsMakeGalaxy/enterprise-text2sql-curated-600",
+      "snippet": "Datasets: StarsMakeGalaxy / enterprise-text2sql-curated-600 like 0 Tasks: Text Generation Modalities: Text Formats: parquet Languages: English Size: < 1K Tags: sql text-to-sql enterprise unsloth chatml chain-of-thought + 5 Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed ..."
+    },
+    {
+      "title": "StarsMakeGalaxy/PII-q4 · Hugging Face",
+      "url": "https://huggingface.co/StarsMakeGalaxy/PII-q4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Text to SQL & AI Query Generator | Text2SQL.ai (Free to Try)",
+      "url": "https://www.text2sql.ai/",
+      "snippet": "Transform your text into SQL with Text2SQL.ai - the leading AI Query Generator. Quickly generate queries for MySQL, PostgreSQL, Oracle, and more with ease. Try it for free!"
+    },
+    {
+      "title": "GitHub - eosphoros-ai/Awesome-Text2SQL: Curated tutorials and resources ...",
+      "url": "https://github.com/eosphoros-ai/Awesome-Text2SQL",
+      "snippet": "PremSQL also comes up with Prem-1B-SQL a 1B parameter Text to SQL model with 51.54 % on BirdBench private test set. It is super light weight and works for fully local text to SQL generation."
+    },
+    {
+      "title": "Text-to-SQL AI Application - GitHub",
+      "url": "https://github.com/SyedShahriyarAli/TextToSql",
+      "snippet": "A modern AI-powered application that converts natural language queries into SQL and executes them against your database. Built with ASP.NET Core Web API, Blazor, and cutting-edge AI technologies."
+    }
+  ]
+}

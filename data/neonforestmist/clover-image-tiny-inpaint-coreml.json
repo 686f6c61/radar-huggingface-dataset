@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "neonforestmist/Clover-Image-Tiny-Inpaint-CoreML",
+  "slug": "neonforestmist-clover-image-tiny-inpaint-coreml",
+  "author": "neonforestmist",
+  "url": "https://huggingface.co/neonforestmist/Clover-Image-Tiny-Inpaint-CoreML",
+  "created_at": "2026-08-10T16:11:54.000Z",
+  "updated_at": "2026-08-14T00:32:09.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "ios",
+    "inpainting",
+    "lora",
+    "stable-diffusion",
+    "image-to-image",
+    "base_model:neonforestmist/Clover-Image-Tiny-Inpaint",
+    "base_model:adapter:neonforestmist/Clover-Image-Tiny-Inpaint",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5140048958,
+  "storage_human": "5.1 GB",
+  "base_model": "neonforestmist/Clover-Image-Tiny-Inpaint",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neonforestmist/Clover-Image-Tiny-Inpaint · Hugging Face",
+      "url": "https://huggingface.co/neonforestmist/Clover-Image-Tiny-Inpaint",
+      "snippet": "Clover Image Tiny Inpaint is a compact, context-aware inpainting model for the SD 1.4-class 512×512 architecture. Paint the region to replace in white; black pixels are preserved. This v2 checkpoint was selected from bounded teacher-distillation sweeps for semantic prompt following, reconstruction, and clean mask-edge blending."
+    },
+    {
+      "title": "neonforestmist/Clover-Image-Tiny-Inpaint-CoreML · Hugging Face",
+      "url": "https://huggingface.co/neonforestmist/Clover-Image-Tiny-Inpaint-CoreML",
+      "snippet": "Clover Image Tiny Inpaint — Core ML Compiled Core ML resources for the v2 SD 1.4-class Clover Image Tiny inpainting model. The optional download contains 1,671,581,989 bytes: approximately 1,672 MB (1.56 GiB). It is installed separately from Regular Clover."
+    },
+    {
+      "title": "GitHub - neonforestmist/Clover-Image-Tiny: Run Clover Image Tiny ...",
+      "url": "https://github.com/neonforestmist/Clover-Image-Tiny",
+      "snippet": "The runnable-code home for Clover Image Tiny, a compact Stable Diffusion 1.4-class 512×512 text-to-image model for local Diffusers and on-device Core ML workflows."
+    },
+    {
+      "title": "GitHub - neonforestmist/clover-lora-training: Train style LoRAs for ...",
+      "url": "https://github.com/neonforestmist/clover-lora-training",
+      "snippet": "🎨 Trained adapters are derivatives of Clover Image Tiny and inherit its CreativeML Open RAIL-M model license. 🗃️ The GPT-generated style datasets are Apache-2.0."
+    },
+    {
+      "title": "Models - Machine Learning - Apple Developer",
+      "url": "https://developer.apple.com/machine-learning/models/",
+      "snippet": "Build intelligence into your apps using machine learning models from the research community designed for Core ML."
+    }
+  ]
+}

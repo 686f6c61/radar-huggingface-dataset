@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DT4H/cardio-ner-sv-bert-based-swedish-cased-multilabel",
+  "slug": "dt4h-cardio-ner-sv-bert-based-swedish-cased-multilabel",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/cardio-ner-sv-bert-based-swedish-cased-multilabel",
+  "created_at": "2026-08-17T11:41:00.000Z",
+  "updated_at": "2026-08-17T12:14:55.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "clinical, medical, ner, healthcare, cardiology, sv, Swedish",
+    "sv",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124107273,
+  "parameters_human": "124.1M",
+  "storage_bytes": 248238610,
+  "storage_human": "248 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CardioNER - a DT4H Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DT4H/cardioner",
+      "snippet": "DT4H/cardio-ner-multilingual-xlm-roberta-large-multilabel 0.6B•Updated 2 days ago• 51 Upvote - Sort: Collection"
+    },
+    {
+      "title": "Home - DataTools4Heart",
+      "url": "https://www.datatools4heart.eu/",
+      "snippet": "Federated machine learning and data synthesis With the aim to develop innovative methods for synthesising data, DataTools4Heart will build a privacy-preserving cardiology data toolbox to improve data reusability, while adhering to ethical and legal standards. Differentially private generation of synthetic data will allow to handle data which are representative of a target population, scalable ..."
+    },
+    {
+      "title": "DT4H/en-disease-cardioberta-multiclass-ner · Hugging Face",
+      "url": "https://huggingface.co/DT4H/en-disease-cardioberta-multiclass-ner",
+      "snippet": "Citation @inproceedings {danu2026siemens, title= {SIEMENS at&#92;# SMM4H--HeaRD 2026: The Impact of Training Strategy and Backbone Selection on BERT-based Multilingual Clinical NER}, author= {Danu, Manuela Daniela}, booktitle= {Proceedings of the 11th Social Media Mining for Health Research and Applications (SMM4H-HeaRD 2026) Workshop and Shared Tasks}, pages= {216--221}, year= {2026} }"
+    },
+    {
+      "title": "nlp4bia-bsc/DT4H_Multilingual_NER - GitHub",
+      "url": "https://github.com/nlp4bia-bsc/DT4H_Multilingual_NER",
+      "snippet": "This repository contains code and documentation for multilingual Named Entity Recognition (NER) models developed within the DT4H (Data Tools for Heart) Europe Horizon project. The focus is multilingual clinical NER for disease, symptom, and procedure mention detection."
+    },
+    {
+      "title": "PDF DT4H.nl at #SMM4H-HeaRD 2026: Multilingual Clinical NER with ...",
+      "url": "https://aclanthology.org/2026.smm4h-1.14.pdf",
+      "snippet": "Abstract We describe the setup we used to complete the MultiClinAI-NER task in the SMM4H- HeaRD workshop 2026. In this work we employed a dedicated multilingual encoder model (EuroBERT-610m), two Dutch en- coder models trained from scratch on clini- cal corpora (MedRoBERTa.nl and CardioDe- BERTa.nl) and a generic Dutch encoder model (RobBERT2023-large), all finetuned with a 3- layer DNN head ..."
+    }
+  ]
+}

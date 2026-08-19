@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Quiho/Parities_Nulparity_checkpoint",
+  "slug": "quiho-parities_nulparity_checkpoint",
+  "author": "Quiho",
+  "url": "https://huggingface.co/Quiho/Parities_Nulparity_checkpoint",
+  "created_at": "2026-08-18T15:20:14.000Z",
+  "updated_at": "2026-08-18T15:30:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "checkpoint",
+    "krea-2",
+    "realistic",
+    "turbo",
+    "photorealistic",
+    "base model",
+    "civitai",
+    "imported",
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12837211198,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quiho/Parities_Nulparity_checkpoint · Hugging Face",
+      "url": "https://huggingface.co/Quiho/Parities_Nulparity_checkpoint",
+      "snippet": "Instructions to use Quiho/Parities_Nulparity_checkpoint with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use Quiho/Parities_Nulparity_checkpoint with Diffusers:"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "ChatGPT - Scholar GPT",
+      "url": "https://chatgpt.com/g/g-kZ0eYXlJe-scholar-gpt",
+      "snippet": "Enhance research with 200M+ resources and built-in critical reading skills. Access Google Scholar, PubMed, bioRxiv, arXiv, and more, effortlessly."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

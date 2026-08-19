@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "SAkizuki/anima-deepseek",
+  "slug": "sakizuki-anima-deepseek",
+  "author": "SAkizuki",
+  "url": "https://huggingface.co/SAkizuki/anima-deepseek",
+  "created_at": "2026-08-17T15:45:52.000Z",
+  "updated_at": "2026-08-17T15:58:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99521077,
+  "storage_human": "100 MB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

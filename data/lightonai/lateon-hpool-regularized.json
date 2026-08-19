@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "lightonai/LateOn-hpool-regularized",
+  "slug": "lightonai-lateon-hpool-regularized",
+  "author": "lightonai",
+  "url": "https://huggingface.co/lightonai/LateOn-hpool-regularized",
+  "created_at": "2026-07-06T09:49:02.000Z",
+  "updated_at": "2026-08-17T11:45:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "multi-vector",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "en",
+    "arxiv:2602.21202",
+    "arxiv:2409.14683",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:eu"
+  ],
+  "likes": 6,
+  "downloads_30d": 346,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 1230688608,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lightonai/LateOn-hpool-regularized · Hugging Face",
+      "url": "https://huggingface.co/lightonai/LateOn-hpool-regularized",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lightonai/LateOn-hpool-regularized at main - Hugging Face",
+      "url": "https://huggingface.co/lightonai/LateOn-hpool-regularized/tree/main",
+      "snippet": "lightonai / LateOn-hpool-regularized like 4 Follow LightOn AI 712 Sentence Similarity Safetensors sentence-transformers English PyLate modernbert ColBERT feature-extraction text-embeddings-inference arxiv:2602.21202 arxiv:2409.14683 License:apache-2.0 🇪🇺 Region: EU Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LightOn - GitHub",
+      "url": "https://github.com/lightonai",
+      "snippet": "LightOn We help businesses seize the opportunities of Gen AI, by putting confidentiality and value creation at the heart of our solutions."
+    },
+    {
+      "title": "LateOn: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/lateon-lightonai",
+      "snippet": "LateOn is a state-of-the-art ColBERT multi-vector retrieval model built on the ModernBERT backbone containing 149M parameters, created by lightonai. The..."
+    },
+    {
+      "title": "Point Your AI at Your Documents | LightOn",
+      "url": "https://lighton.ai/",
+      "snippet": "Working search over your own files. /parse, /extract, /search — production OCR, structured JSON, grounded retrieval with citations. Free tier, EU-hosted."
+    }
+  ]
+}

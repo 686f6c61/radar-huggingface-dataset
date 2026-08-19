@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sumireyoko/EASY-RVC-Client",
+  "slug": "sumireyoko-easy-rvc-client",
+  "author": "sumireyoko",
+  "url": "https://huggingface.co/sumireyoko/EASY-RVC-Client",
+  "created_at": "2026-08-16T12:32:21.000Z",
+  "updated_at": "2026-08-16T13:09:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4791879400,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    },
+    {
+      "title": "最高品質 RVCv2モデル「リンリン」可愛さ満点♡ - sumireyoko - BOOTH",
+      "url": "https://booth.pm/ja/items/6763693",
+      "snippet": "RVC Clientご使用中の方、もしくはINDEXファイルご希望の方はメッセージをいただけると幸いです。 モデル設定（RVC Client） RVC Clientのご利用オススメです GPU別のオススメ設定は01:38からご覧ください。 【RVC本家版】RVC Client完全解説! 導入から仕組みまで!"
+    },
+    {
+      "title": "多言語＆歌唱特化 - JP/EN/KR対応 - sumireyoko - BOOTH",
+      "url": "https://booth.pm/ja/items/7009753",
+      "snippet": "RVC Clientご使用中の方、もしくはINDEXファイルご希望の方はメッセージをいただけると幸いです。 This model has an index file. I can send it to you if needed.However, please note that using the index file may result in a reduction of audio quality. モデル設定（RVC Client）/ Model settings"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=RVC",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "sumireyoko - BOOTH",
+      "url": "https://sumireyoko.booth.pm/",
+      "snippet": "皆さんこんにちは! RVC音声モデルを制作するスミレです! モデルの注文も受けます! 興味がある方は気軽にご連絡ください。 また、YouTubeチャンネルも作りました、たまに音楽を流しますので宜しければお聞きください。"
+    }
+  ]
+}

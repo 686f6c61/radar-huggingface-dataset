@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dagloop5/LoRA",
+  "slug": "dagloop5-lora",
+  "author": "dagloop5",
+  "url": "https://huggingface.co/dagloop5/LoRA",
+  "created_at": "2026-03-15T22:42:43.000Z",
+  "updated_at": "2026-08-17T18:26:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66967482308,
+  "storage_human": "67.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dagloop5/LoRA · Hugging Face",
+      "url": "https://huggingface.co/dagloop5/LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX-2_takerpov_lora_v1.2.safetensors · dagloop5/LoRA at main",
+      "url": "https://huggingface.co/dagloop5/LoRA/blame/main/LTX-2_takerpov_lora_v1.2.safetensors",
+      "snippet": "dagloop5 / LoRA like 0 Model card FilesFiles and versions xet Community Copy to bucket new main LoRA File size: 134 Bytes"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,990 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "GitHub - loramodel/loramodel: Professional LoRA AI image platform with ...",
+      "url": "https://github.com/loramodel/loramodel",
+      "snippet": "Mission: Enable any idea to move from concept to a production-ready LoRA model within hours, reducing the barrier and cost of AI content creation. Target users: AI creators, design teams, brand marketing agencies, indie developers, and enterprise clients building AI asset libraries. Value proposition: Deliver a curated catalog of high-quality Flux LoRA models, covering more than 500 tags ..."
+    }
+  ]
+}

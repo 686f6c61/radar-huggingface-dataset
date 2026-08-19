@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_gsm8k_gpt-oss-20b_as_ministral-8b_seed42",
+  "slug": "dementor-research-dpo_gsm8k_gpt-oss-20b_as_ministral-8b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_ministral-8b_seed42",
+  "created_at": "2026-08-16T19:23:46.000Z",
+  "updated_at": "2026-08-16T19:24:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed3 · Hugging ...",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed3",
+      "snippet": "Instructions to use dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the gsm8k corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed3 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed3",
+      "snippet": "dementor-research dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed3 Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "dpo_gsm8k_ministral-8b_as_gpt-oss-20b_seed42 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_ministral-8b_as_gpt-oss-20b_seed42",
+      "snippet": "Run dpo_gsm8k_ministral-8b_as_gpt-oss-20b_seed42 with FriendliAI inference. Dementor imitation (disguise) LoRA adapter — dataset gsm8k, seed 42."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    }
+  ]
+}

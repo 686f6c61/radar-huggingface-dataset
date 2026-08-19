@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "m10212542/ga8-carbon-model-card",
+  "slug": "m10212542-ga8-carbon-model-card",
+  "author": "m10212542",
+  "url": "https://huggingface.co/m10212542/ga8-carbon-model-card",
+  "created_at": "2026-08-18T14:23:57.000Z",
+  "updated_at": "2026-08-18T14:23:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agrimiitm/ga8 · Hugging Face",
+      "url": "https://huggingface.co/agrimiitm/ga8",
+      "snippet": "This model card documents the estimated environmental impact of the training run, computed per Green AI carbon-accounting practice."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Model card - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/model_card",
+      "snippet": "A model card is a short, standardized document that accompanies a trained machine learning model and reports its intended use, training data, evaluation…"
+    },
+    {
+      "title": "Model Card Explorer",
+      "url": "https://www.modelcards.net/",
+      "snippet": "Explore and compare AI model cards, safety evaluations, and governance data across major AI labs"
+    }
+  ]
+}

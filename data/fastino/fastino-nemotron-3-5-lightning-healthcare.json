@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "fastino/Fastino-Nemotron-3.5-Lightning-Healthcare",
+  "slug": "fastino-fastino-nemotron-3-5-lightning-healthcare",
+  "author": "fastino",
+  "url": "https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Healthcare",
+  "created_at": "2026-08-06T10:30:22.000Z",
+  "updated_at": "2026-08-11T13:23:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "healthcare",
+    "clinical",
+    "medical-reasoning",
+    "information-extraction",
+    "fine-tuned",
+    "nemotron",
+    "lightning",
+    "mixture-of-experts",
+    "conversational",
+    "custom_code",
+    "en",
+    "arxiv:2604.09791",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 14424,
+  "trending_score": 8,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 503060382512,
+  "storage_human": "503.1 GB",
+  "base_model": "nvidia/Nemotron-3.5-Lightning",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fastino Nemotron 3.5 Lightning Healthcare - Hugging Face",
+      "url": "https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Healthcare",
+      "snippet": "Fastino-Nemotron-3.5-Lightning-Healthcare is a 30B-parameter, 3B-active mixture-of-experts model specialized for healthcare and biomedical applications. The repository contains a ready-to-run merged checkpoint: the NVIDIA Nemotron 3.5 Lightning checkpoint released July 29, 2026 plus Fastino&#x27;s winning combined-healthcare E17b adapter."
+    },
+    {
+      "title": "fastino/Fastino-Nemotron-3.5-Lightning-Healthcare at main",
+      "url": "https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Healthcare/tree/main",
+      "snippet": "Instructions to use fastino/Fastino-Nemotron-3.5-Lightning-Healthcare with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use fastino/Fastino-Nemotron-3.5-Lightning-Healthcare with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"fastino ..."
+    },
+    {
+      "title": "Fastino Nemotron 3.5 Lightning Healthcare by fastino",
+      "url": "https://llm-explorer.com/model/fastino%2FFastino-Nemotron-3.5-Lightning-Healthcare,14ozOJGozdwfev5zrwNZQe",
+      "snippet": "Rank the Fastino Nemotron 3.5 Lightning Healthcare capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Fastino Labs",
+      "url": "https://fastino.ai/",
+      "snippet": "Fastino Labs builds open language models for agentic AI, including GLiNER, GLiGuard, and the Fastino fine-tuning agent. See our research and models."
+    },
+    {
+      "title": "Fastino and NVIDIA: Open Models for Finance and Healthcare",
+      "url": "https://fastino.ai/nvidia-collaboration",
+      "snippet": "Fastino Labs collaborates with NVIDIA to post-train open weight Nemotron 3.5 Lightning for finance and healthcare, fine-tuned entirely by an autonomous agent."
+    }
+  ]
+}

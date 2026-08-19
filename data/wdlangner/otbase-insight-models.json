@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "wdLangner/otbase-insight-models",
+  "slug": "wdlangner-otbase-insight-models",
+  "author": "wdLangner",
+  "url": "https://huggingface.co/wdLangner/otbase-insight-models",
+  "created_at": "2026-07-23T19:50:26.000Z",
+  "updated_at": "2026-08-18T02:23:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 122,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 920491844736,
+  "storage_human": "920.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wdLangner/otbase-insight-models · Hugging Face",
+      "url": "https://huggingface.co/wdLangner/otbase-insight-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wdLangner (Wes Davis) - Hugging Face",
+      "url": "https://huggingface.co/wdLangner",
+      "snippet": "Recent Activity updated a model7 days ago wdLangner/insight-35b-v416 published a model7 days ago wdLangner/insight-35b-v416 updated a model7 days ago wdLangner/insight-35b-v415 View all activity"
+    },
+    {
+      "title": "AI in OTbase Insight boosts OT cybersecurity - LinkedIn",
+      "url": "https://www.linkedin.com/posts/langnergroup_ai-ics-localmodels-activity-7483920453120528384-7ao8",
+      "snippet": "To date, AI&#x27;s best use case in OT can be found right here in OTbase Insight and that&#x27;s because its local (no cloud needed) and smart enough to not give you BS results."
+    },
+    {
+      "title": "OTbase by Langner - OT Asset Inventory plus local AI",
+      "url": "https://otbase.com/",
+      "snippet": "OTbase is the gold standard for automated OT asset inventories. It helps global enterprises to manage their OT assets efficiently & securely."
+    },
+    {
+      "title": "Local OT AI Software - otbase.com",
+      "url": "https://otbase.com/features/otbase-insight/",
+      "snippet": "OTbase Insight does not rely on a public AI platform like x.AI or Open AI. It runs on a server in your data center or private cloud. Hardware requirements are reasonable because OTbase Insight is optimized for a very narrow domain: Your contextualized OT asset inventory, as represented in OTbase Inventory. Depending on your inventory size, a low-cost consumer-grade gaming server may suffice."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fedeceri/cochlea-hair-cell-synapses-binary-segmentation-unet2d",
+  "slug": "fedeceri-cochlea-hair-cell-synapses-binary-segmentation-unet2d",
+  "author": "fedeceri",
+  "url": "https://huggingface.co/fedeceri/cochlea-hair-cell-synapses-binary-segmentation-unet2d",
+  "created_at": "2026-08-18T11:02:02.000Z",
+  "updated_at": "2026-08-18T11:02:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "monai",
+    "microscopy",
+    "binary-segmentation",
+    "hair-cells",
+    "cochlea",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19713235,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hair Cell Transduction, Tuning, and Synaptic Transmission in the ...",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/j.2040-4603.2017.tb00783.x",
+      "snippet": "The mammalian cochlea contains two categories of hair cells. Inner hair cells relay acoustic information via multiple ribbon synapses that transmit rapidly without rundown. Outer hair cells are important for amplifying sound-evoked vibrations."
+    },
+    {
+      "title": "Hair cell - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hair_cell",
+      "snippet": "The cell cycle inhibitor p27 Kip1 (CDKN1B) has also been found to encourage regrowth of cochlear hair cells in mice following genetic deletion or knock down with siRNA targeting p27. [40][41] Research on hair cell regeneration may bring us closer to clinical treatment for human hearing loss caused by hair cell damage or death."
+    },
+    {
+      "title": "Mapping developmental maturation of inner hair cell ribbon synapses in ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6442603/",
+      "snippet": "Ribbon synapses of cochlear inner hair cells (IHCs) undergo molecular assembly and extensive functional and structural maturation before hearing onset. Here, we characterized the nanostructure of IHC synapses from late prenatal mouse embryo stages (embryonic days 14-18) into adulthood [postnatal day (P)48] using electron microscopy and ..."
+    },
+    {
+      "title": "Hair Cells and Their Synapses | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-52073-5_7",
+      "snippet": "The peripheral auditory system acts like a spectrum analyzer to break down complex sounds into their frequency and intensity components. All of this information is transferred from sensory cell to afferent fiber via ribbon synapses where graded hair cell receptor..."
+    },
+    {
+      "title": "Regenerated hair cells in the neonatal cochlea are ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2022.841864/full",
+      "snippet": "The majority of regenerated hair cells were innervated by neuronal fibers and contained synapses. Unexpectedly, we also found that the majority of the laterally positioned regenerated hair cells aberrantly expressed both the outer hair cell gene, oncomodulin, and the inner hair cell gene, vesicular glutamate transporter 3 (VGlut3)."
+    }
+  ]
+}

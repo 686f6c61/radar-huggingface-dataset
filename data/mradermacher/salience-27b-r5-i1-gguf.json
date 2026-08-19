@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Salience-27B-R5-i1-GGUF",
+  "slug": "mradermacher-salience-27b-r5-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Salience-27B-R5-i1-GGUF",
+  "created_at": "2026-08-18T08:33:37.000Z",
+  "updated_at": "2026-08-18T09:11:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "vision-language",
+    "reasoning",
+    "thinking",
+    "efficient-reasoning",
+    "code",
+    "software-engineering",
+    "swe",
+    "agentic",
+    "terminal",
+    "tool-use",
+    "long-context",
+    "qwen3.8",
+    "thinking-efficiency",
+    "en",
+    "base_model:vectionlabs/Salience-27B-R5",
+    "base_model:quantized:vectionlabs/Salience-27B-R5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471872128,
+  "storage_human": "39.5 GB",
+  "base_model": "vectionlabs/Salience-27B-R5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Salience-27B-R4-i1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Salience-27B-R4-i1-GGUF/tree/main",
+      "snippet": "mradermacher / Salience-27B-R4-i1-GGUF like 4 Transformers GGUF English multimodal vision-language reasoning thinking code software-engineering swe agentic terminal tool-use long-context qwen3.6 Fable-5 fable5 imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Salience-27B-R4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Salience-27B-R4-GGUF",
+      "snippet": "mradermacher / Salience-27B-R4-GGUF like 0 Transformers GGUF English multimodal vision-language reasoning thinking code software-engineering swe agentic terminal tool-use long-context qwen3.6 Fable-5 fable5 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "ComfyUI | # **Nunchaku Qwen‑Image-Edit **2509 | Facebook",
+      "url": "https://www.facebook.com/groups/comfyui/posts/789904213782281/",
+      "snippet": "The Nunchaku-Qwen-Image-Edit-2509 model offers several benefits, including converting photos into realistic hand-drawn illustrations and changing white backgrounds to outdoor scenes. • \"Converts photos into realistic hand-drawn illustrations, boasts strong compatibility with most 3D and hand-drawn styles.\" •"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

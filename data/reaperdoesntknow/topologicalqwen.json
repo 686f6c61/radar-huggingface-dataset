@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/TopologicalQwen",
+  "slug": "reaperdoesntknow-topologicalqwen",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/TopologicalQwen",
+  "created_at": "2026-03-28T00:50:51.000Z",
+  "updated_at": "2026-08-17T13:17:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "sft",
+    "trl",
+    "topological-knowledge-distillation",
+    "disc",
+    "convergent-intelligence",
+    "convergentintel",
+    "edge",
+    "distillation",
+    "knowledge-distillation",
+    "conversational",
+    "base_model:reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT",
+    "base_model:finetune:reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 3405,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4075140661,
+  "storage_human": "4.1 GB",
+  "base_model": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/TopologicalQwen · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/TopologicalQwen",
+      "snippet": "That proves the methodology — structure beats scale. This model is the exception. TopologicalQwen was trained on Colab H100 at BF16 precision with a 30B-parameter teacher. Same TKD methodology, premium compute. This is the DistilQwen collection&#x27;s answer to \"what happens when you give this pipeline real hardware?\""
+    },
+    {
+      "title": "TopologicalQwen API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/reaperdoesntknow/TopologicalQwen",
+      "snippet": "TopologicalQwen is a 1.7B parameter model distilled from Qwen3-30B-A3B using Topological Knowledge Distillation (TKD) — a methodology that treats the teacher&#x27;s output distribution over a concatenated token stream as a bounded variation (BV) function and decomposes knowledge transfer into three channels via the Mesh Fundamental Identity:"
+    },
+    {
+      "title": "Fine-tuned Models for reaperdoesntknow/TopologicalQwen - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:reaperdoesntknow/TopologicalQwen",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "TopologicalQwen — AI Model | Antbase",
+      "url": "https://antbase.ai/models/topologicalqwen",
+      "snippet": "Overview TopologicalQwen is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF: Model synced ...",
+      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF",
+      "snippet": "About the Model This is a two-stage model: Stage 1 — DISC-Informed Knowledge Distillation: Qwen3-1.7B distilled from Qwen3-30B-A3B-Instruct on 6,122 STEM chain-of-thought samples using proof-weighted cross-entropy loss (2.5x → 1.5x decay on derivation tokens) and KL divergence at T=2.0."
+    }
+  ]
+}

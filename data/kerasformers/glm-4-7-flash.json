@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kerasformers/glm-4.7-flash",
+  "slug": "kerasformers-glm-4-7-flash",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/glm-4.7-flash",
+  "created_at": "2026-08-17T22:28:33.000Z",
+  "updated_at": "2026-08-17T22:44:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "kerasformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "glm",
+    "glm4_moe_lite",
+    "glm-4.7",
+    "mixture-of-experts",
+    "text-generation",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "zh",
+    "arxiv:2406.12793",
+    "base_model:zai-org/GLM-4.7-Flash",
+    "base_model:finetune:zai-org/GLM-4.7-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59957745858,
+  "storage_human": "60.0 GB",
+  "base_model": "zai-org/GLM-4.7-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-4.7 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.7 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-4.7",
+      "snippet": "About GLM-4.7 GLM-4.7-Flash is a 30B-A3B MoE model trained by Z.ai. A small an efficient version of the GLM-4.7 models. GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency. Run in LM Studio Head over to model search within the app (Cmd/Ctrl + Shift + M) and search for GLM 4.7. Or from the ..."
+    },
+    {
+      "title": "GLM 4.7 Flash - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/glm-4-7-flash/",
+      "snippet": "GLM-4.7-Flash is ZhipuAI&#x27;s 30B-class MoE reasoning and coding model with about 3B active parameters, a 200K context window, and strong tool-calling, tuned as a high-speed, lightweight variant of GLM-4.7 for local deployment and agentic coding."
+    },
+    {
+      "title": "smartdigitalnetworks/GLM-4.7-Flash · Hugging Face",
+      "url": "https://huggingface.co/smartdigitalnetworks/GLM-4.7-Flash",
+      "snippet": "GLM-4.7-Flash is a 30B-A3B MoE model. As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency."
+    },
+    {
+      "title": "GLM 4.7 Flash — Fast Multilingual LLM | ModelsLab",
+      "url": "https://modelslab.com/zai-glm-47-flash",
+      "snippet": "What is Z.ai GLM 4.7 Flash and how does it differ from the full GLM 4.7 model? GLM 4.7 Flash is a 30-billion parameter optimized variant with only 3 billion active parameters, delivering faster inference while maintaining strong performance. The full GLM 4.7 offers higher capability but requires more compute resources."
+    }
+  ]
+}

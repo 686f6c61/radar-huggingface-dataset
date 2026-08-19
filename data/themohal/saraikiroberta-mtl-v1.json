@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "themohal/SaraikiRoBERTa-MTL-v1",
+  "slug": "themohal-saraikiroberta-mtl-v1",
+  "author": "themohal",
+  "url": "https://huggingface.co/themohal/SaraikiRoBERTa-MTL-v1",
+  "created_at": "2026-08-15T14:50:29.000Z",
+  "updated_at": "2026-08-15T14:55:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "saraiki-roberta-mtl",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 167080034,
+  "parameters_human": "167.1M",
+  "storage_bytes": 16710687482,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

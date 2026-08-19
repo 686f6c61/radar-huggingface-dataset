@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gojiberries/naamkaran",
+  "slug": "gojiberries-naamkaran",
+  "author": "gojiberries",
+  "url": "https://huggingface.co/gojiberries/naamkaran",
+  "created_at": "2026-08-16T06:53:16.000Z",
+  "updated_at": "2026-08-16T08:24:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "name-generation",
+    "character-level",
+    "lstm",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 533171,
+  "storage_human": "533171 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "naamkaran 0.2.0 - appeler.github.io",
+      "url": "https://appeler.github.io/naamkaran/index.html",
+      "snippet": "Naamkaran is a generative model for names built with PyTorch. It uses a character-level RNN (LSTM) trained on Florida Voter Registration Data to generate names based on starting letter, ending letter, gender, and other parameters."
+    },
+    {
+      "title": "Gojiberry AI - Grow your sales with warm leads & high intent outreach",
+      "url": "https://gojiberry.ai/",
+      "snippet": "Gojiberry AI detects warm leads from 15+ buying and social signals, filters them by your ICP, and runs personalized outreach to book qualified demos automatically."
+    },
+    {
+      "title": "Gojiberry",
+      "url": "https://app.gojiberry.ai/",
+      "snippet": "Gojiberry is an AI-powered assistant that automates follow-ups, CRM, and generates summaries, personalized emails, and insights for sales or customer calls."
+    },
+    {
+      "title": "GitHub - appeler/naamkaran: generative model for names",
+      "url": "https://github.com/appeler/naamkaran",
+      "snippet": "Naamkaran is a generative model for names. It is based on a character-level RNN trained on names from the Florida Voter Registration Data."
+    },
+    {
+      "title": "Home | Goji Berry",
+      "url": "https://www.goji-berry.ai/",
+      "snippet": "Our SDK facilitates AI inference and model management, while the CIT ensures effortless device management and connectivity. This powerful combination empowers you to rapidly deploy and scale your AI-driven applications with ease."
+    }
+  ]
+}

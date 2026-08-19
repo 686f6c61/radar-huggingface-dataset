@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "openai/gpt-oss-20b",
+  "slug": "openai-gpt-oss-20b",
+  "author": "openai",
+  "url": "https://huggingface.co/openai/gpt-oss-20b",
+  "created_at": "2025-08-04T22:33:29.000Z",
+  "updated_at": "2025-08-26T17:25:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "vllm",
+    "conversational",
+    "arxiv:2508.10925",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "mxfp4",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 4928,
+  "downloads_30d": 7801956,
+  "trending_score": 16,
+  "parameters": 21511953984,
+  "parameters_human": "21.51B",
+  "storage_bytes": 41382448021,
+  "storage_human": "41.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "gpt-oss-120b & gpt-oss-20b Model Card - OpenAI",
+      "url": "https://openai.com/index/gpt-oss-model-card/",
+      "snippet": "We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy."
+    },
+    {
+      "title": "Introducing gpt-oss | OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "snippet": "We&#x27;re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware."
+    },
+    {
+      "title": "GitHub - openai/gpt-oss: gpt-oss-120b and gpt-oss-20b are two open ...",
+      "url": "https://github.com/openai/gpt-oss",
+      "snippet": "Try gpt-oss · Guides · Model card · OpenAI blog Download gpt-oss-120b and gpt-oss-20b on Hugging Face Welcome to the gpt-oss series, OpenAI&#x27;s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases. We&#x27;re releasing two flavors of these open models: gpt-oss-120b — for production, general purpose, high reasoning use cases that fit into a single ..."
+    },
+    {
+      "title": "openai/gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-20b",
+      "snippet": "Discover Hugging Face&#x27;s gpt-oss-20b model, a smaller open-source AI with versatile applications and fine-tuning capabilities for developers and researchers."
+    }
+  ]
+}

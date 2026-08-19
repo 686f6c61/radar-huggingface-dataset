@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlx-community/GOT-OCR2_0-4bit",
+  "slug": "mlx-community-got-ocr2_0-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/GOT-OCR2_0-4bit",
+  "created_at": "2026-08-14T23:24:38.000Z",
+  "updated_at": "2026-08-14T23:31:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "GOT",
+    "ocr",
+    "ocr2.0",
+    "vision-language",
+    "got",
+    "image-text-to-text",
+    "custom_code",
+    "multilingual",
+    "arxiv:2409.01704",
+    "base_model:stepfun-ai/GOT-OCR2_0",
+    "base_model:quantized:stepfun-ai/GOT-OCR2_0",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 169209216,
+  "parameters_human": "169.2M",
+  "storage_bytes": 454463407,
+  "storage_human": "454 MB",
+  "base_model": "stepfun-ai/GOT-OCR2_0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

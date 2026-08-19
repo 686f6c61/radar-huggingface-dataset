@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Gdatree/Treemind",
+  "slug": "gdatree-treemind",
+  "author": "Gdatree",
+  "url": "https://huggingface.co/Gdatree/Treemind",
+  "created_at": "2026-08-16T07:47:27.000Z",
+  "updated_at": "2026-08-16T08:22:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "russian",
+    "conversational",
+    "treemind",
+    "chat",
+    "text-generation",
+    "ru",
+    "base_model:ai-forever/mGPT",
+    "base_model:quantized:ai-forever/mGPT",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1417596928,
+  "parameters_human": "1.42B",
+  "storage_bytes": 17354768768,
+  "storage_human": "17.4 GB",
+  "base_model": "ai-forever/mGPT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:11:51.309Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "treemind/treeshield-ai 2 at main · koushiktata/treemind · GitHub",
+      "url": "https://github.com/koushiktata/treemind/tree/main/treeshield-ai%202",
+      "snippet": "Resume line Built TreeShield AI, a research-inspired platform for adversarial attacks, robustness verification, sensitivity analysis, adversarial hardening, explainability, and AI model auditing on tree-based ML models."
+    },
+    {
+      "title": "GitHub - sametcopur/treemind: treemind interprets tree models",
+      "url": "https://github.com/sametcopur/treemind",
+      "snippet": "treemind is a high-performance library for interpreting tree-based models. It supports regression, binary and multiclass classification, and handles both numerical and categorical features. By analyzing split intervals and feature interactions, treemind helps you understand which features drive predictions and how they interact making it ideal for model explanation, debugging, and auditing. A ..."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

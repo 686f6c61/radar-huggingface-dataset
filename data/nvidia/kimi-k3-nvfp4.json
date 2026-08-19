@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nvidia/Kimi-K3-NVFP4",
+  "slug": "nvidia-kimi-k3-nvfp4",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Kimi-K3-NVFP4",
+  "created_at": "2026-08-13T19:06:29.000Z",
+  "updated_at": "2026-08-18T08:31:53.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "kimi_k3",
+    "nvidia",
+    "ModelOpt",
+    "Kimi-K3",
+    "quantized",
+    "FP4",
+    "fp4",
+    "text-generation",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "8-bit",
+    "modelopt_mixed",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 1893,
+  "trending_score": 13,
+  "parameters": 1418561422080,
+  "parameters_human": "1418.56B",
+  "storage_bytes": 1610038482254,
+  "storage_human": "1610.0 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Kimi-K3-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Kimi-K3-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · nvidia/Kimi-K3-NVFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/Kimi-K3-NVFP4/blob/main/README.md",
+      "snippet": "Description: The NVIDIA Kimi-K3-NVFP4 model is the quantized version of Moonshot AI&#x27;s Kimi-K3 model, which is an auto-regressive language model that uses an optimized transformer architecture. Kimi-K3 is a flagship, natively multimodal Mixture-of-Experts (MoE) model designed for long-horizon coding, end-to-end knowledge work, game development, deep reasoning, and visual-agent use cases. It has ..."
+    },
+    {
+      "title": "[Tracking] Kimi-K3-NVFP4 end-to-end kernel support #4568",
+      "url": "https://github.com/flashinfer-ai/flashinfer/issues/4568",
+      "snippet": "Goal Track end-to-end FlashInfer kernel support for nvidia/Kimi-K3-NVFP4 on B200/B300, with vLLM integration that does not require the checkpoint&#x27;s compatibility patch. Kimi-K3 is a 93-layer hybrid model with 69 KDA layers, 24 MLA layers, Attention Residuals (AttnRes), Stable LatentMoE, and a multimodal vision tower."
+    },
+    {
+      "title": "Kimi-K3 | NVIDIA Dynamo Documentation",
+      "url": "https://docs.nvidia.com/dynamo/dev/recipes/kimi-k3",
+      "snippet": "Each target below is a Dynamo + vLLM deployment of Moonshot AI&#x27;s Kimi-K3 — a multimodal MoE model serving up to 1M-token context — with KV-aware routing, MXFP4-packed routed experts, and FP8 KV cache, running aggregated or with prefill/decode disaggregation on GB200 and GB300 NVL72 racks. KV transfer and tensor parallelism run over NVLink (MNNVL) using Kubernetes ComputeDomains. Pick ..."
+    },
+    {
+      "title": "Kimi K3 - Models - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/kimi-k3/377093",
+      "snippet": "When will Kimi K3 be added to the platform, or are there any plans to add it?"
+    }
+  ]
+}

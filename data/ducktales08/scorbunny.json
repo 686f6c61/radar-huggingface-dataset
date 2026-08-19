@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ducktales08/scorbunny",
+  "slug": "ducktales08-scorbunny",
+  "author": "ducktales08",
+  "url": "https://huggingface.co/ducktales08/scorbunny",
+  "created_at": "2026-08-18T01:06:11.000Z",
+  "updated_at": "2026-08-18T01:07:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53190891,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scorbunny 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/scorbunny",
+      "snippet": "Scorbunny 3D models ready to view and download for free."
+    },
+    {
+      "title": "Scorbunny - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/e60d6ea9c4ee3cb240314e554e705f1c",
+      "snippet": "Explore Scorbunny model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "#1 Free Ducktales OC Maker - a1.art",
+      "url": "https://a1.art/oc-maker/ducktales",
+      "snippet": "Use Ducktales OC Maker to generate unique original characters with AI. Create custom Ducktales OC images and videos easily with prompts or filters on a1.art."
+    },
+    {
+      "title": "Scorbunny AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/scorbunny",
+      "snippet": "Discover AI Art Model in our #Scorbunny gallery. All TagsTags Trending Trending Most Used Most Liked Latest All Categories All Categories LoRA SD All Time All Time Yesterday Past 7 Days Past 30 Days User LoRAXL Scorbunny Valorlynz 6070 4 User LoRAXL No.813ヒバニー (ポケモン)/Scorbunny (Pokémon) 1960 8 User LoRAXL Scorbunny (Pokémon ..."
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character Scorbunny for Free Personalized ...",
+      "url": "https://polybuzz.ai/character/chat/scorbunny-wggZf",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with Scorbunny|Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-uint8-onnx",
+  "slug": "ketiswp-google-coral-edgetpu-deeplab-slim-0-75-cityscapes-uint8-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-uint8-onnx",
+  "created_at": "2026-08-19T01:57:06.000Z",
+  "updated_at": "2026-08-19T02:22:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "uint8",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2365254,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coral | Google for Developers",
+      "url": "https://developers.google.com/coral",
+      "snippet": "A full stack platform for Edge AI By combining an AI-first, standards-based hardware architecture with a unified developer experience, Coral enables efficient and local AI experiences at the edge."
+    },
+    {
+      "title": "GitHub - xadrianzetx/coral-deeplab: Coral Edge TPU compilable version ...",
+      "url": "https://github.com/xadrianzetx/coral-deeplab",
+      "snippet": "Coral Edge TPU compilable version of DeepLab v3 and DeepLab v3 Plus implemented in tf.keras with Edge TPU pre-compiled models included. Implementation follows original paper as close as possible, while still being compatible with Edge TPU."
+    },
+    {
+      "title": "edgetpu - Git at Google",
+      "url": "https://coral.googlesource.com/edgetpu/",
+      "snippet": "Tags 10-2 Powered by Gitiles | Privacy | Terms txt json"
+    },
+    {
+      "title": "Models - All | Coral",
+      "url": "http://www.coral.withgoogle.com/models/all/",
+      "snippet": "This page lists all our trained models that are compiled for the Coral Edge TPU™. For more information about each model type, including code examples and training scripts, refer to the model-specific pages that are linked on the Models page. To train a custom model, using transfer learning or by building and training your own model, see our documentation about TensorFlow models on the Edge TPU."
+    },
+    {
+      "title": "Edge TPU inferencing overview - Coral",
+      "url": "https://www.coral.withgoogle.com/docs/edgetpu/inference/",
+      "snippet": "All inferencing with the Edge TPU is executed with TensorFlow Lite libraries. If you already have code that uses TensorFlow Lite, you can update it to run your model on the Edge TPU with only a few lines of code. We also offer Coral APIs that wrap the TensorFlow libraries to simplify your code and provide additional features."
+    }
+  ]
+}

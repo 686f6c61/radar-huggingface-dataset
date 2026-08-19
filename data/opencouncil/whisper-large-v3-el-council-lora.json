@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "opencouncil/whisper-large-v3-el-council-lora",
+  "slug": "opencouncil-whisper-large-v3-el-council-lora",
+  "author": "opencouncil",
+  "url": "https://huggingface.co/opencouncil/whisper-large-v3-el-council-lora",
+  "created_at": "2026-07-23T07:45:56.000Z",
+  "updated_at": "2026-08-16T10:33:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "el"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "greek",
+    "lora",
+    "opencouncil",
+    "el",
+    "base_model:openai/whisper-large-v3",
+    "base_model:adapter:openai/whisper-large-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125939280,
+  "storage_human": "126 MB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

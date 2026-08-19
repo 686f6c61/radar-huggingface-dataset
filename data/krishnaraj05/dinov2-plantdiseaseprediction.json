@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "krishnaraj05/DinoV2-PlantDiseasePrediction",
+  "slug": "krishnaraj05-dinov2-plantdiseaseprediction",
+  "author": "krishnaraj05",
+  "url": "https://huggingface.co/krishnaraj05/DinoV2-PlantDiseasePrediction",
+  "created_at": "2026-08-18T03:16:40.000Z",
+  "updated_at": "2026-08-18T03:26:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1039533586,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AGMatrix/Plant-Disease-Detection: Plant Disease Detection ...",
+      "url": "https://github.com/AGMatrix/Plant-Disease-Detection",
+      "snippet": "Plant Disease Detection using DinoV2. Contribute to AGMatrix/Plant-Disease-Detection development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Plant Disease Detection System | React + Node.js - YouTube",
+      "url": "https://www.youtube.com/watch?v=CZ0LiELusDc",
+      "snippet": "🌿 AI Plant Disease Detection System | Full Stack Machine Learning ProjectIn this video, I showcase my Plant Disease Prediction System, a full-stack AI appli..."
+    },
+    {
+      "title": "DINOV2-FCS: Fruit Leaf Disease Model - Scribd",
+      "url": "https://www.scribd.com/document/909367910/DINOv2-pertanian",
+      "snippet": "The DINOV2-FCS model addresses challenges associated with the similarity of leaf spots across different diseases by employing the Class-Patch Feature Fusion Module (C-PFFM)."
+    },
+    {
+      "title": "DINOV2-FCS: a model for fruit leaf disease ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/387228023_DINOV2-FCS_a_model_for_fruit_leaf_disease_classification_and_severity_prediction",
+      "snippet": "DINOV2-FCS: a model for fruit leaf disease classification and severity prediction Frontiers in Plant Science December 2024 15 DOI: 10.3389/fpls.2024.1475282"
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

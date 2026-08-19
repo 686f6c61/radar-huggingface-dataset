@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ghaxalll/ghaxal-face",
+  "slug": "ghaxalll-ghaxal-face",
+  "author": "Ghaxalll",
+  "url": "https://huggingface.co/Ghaxalll/ghaxal-face",
+  "created_at": "2026-08-16T16:14:27.000Z",
+  "updated_at": "2026-08-16T17:40:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1938875929,
+  "storage_human": "1.9 GB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Face - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+      "snippet": "Hugging Face attempted to mitigate the security breach using American proprietary frontier models, but the models&#x27; AI safety features rejected Hugging Face&#x27;s requests, after which Hugging Face used a self-hosted instance of GLM-5.2 (an open-weights model developed by Chinese AI firm Z.ai) to contain the attack. [18][19][20] The incident was ..."
+    },
+    {
+      "title": "HuggingFace APIs - Open Source AI Models and Datasets",
+      "url": "https://www.huggingfaceapi.com/",
+      "snippet": "Explore and integrate HuggingFace&#x27;s AI models and datasets with our comprehensive API documentation and examples."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Cactus-Compute/parakeet-tdt-0.6b-v3",
+  "slug": "cactus-compute-parakeet-tdt-0-6b-v3",
+  "author": "Cactus-Compute",
+  "url": "https://huggingface.co/Cactus-Compute/parakeet-tdt-0.6b-v3",
+  "created_at": "2026-03-05T08:12:15.000Z",
+  "updated_at": "2026-08-17T20:15:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "parakeet-tdt-0.6b-v3",
+    "transcription",
+    "speech-embed",
+    "apple-npu",
+    "automatic-speech-recognition",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12292448509,
+  "storage_human": "12.3 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cactus-Compute/parakeet-tdt-0.6b-v3 · Hugging Face",
+      "url": "https://huggingface.co/Cactus-Compute/parakeet-tdt-0.6b-v3",
+      "snippet": "Parakeet TDT 0.6b is a speech recognition model optimized for on-device performance and live transcription."
+    },
+    {
+      "title": "Cactus-Compute/parakeet-tdt-0.6b-v3-cq · Hugging Face",
+      "url": "https://huggingface.co/Cactus-Compute/parakeet-tdt-0.6b-v3-cq",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - cactus-compute/cactus: Quantization, kernels, runtime and ...",
+      "url": "https://github.com/cactus-compute/cactus",
+      "snippet": "Quantization, kernels, runtime and inference engine for mobiles, wearables, smart home and robots. - GitHub - cactus-compute/cactus: Quantization, kernels, runtime and inference engine for mobiles, wearables, smart home and robots."
+    },
+    {
+      "title": "Cactus - Cactus Docs",
+      "url": "https://docs.cactuscompute.com/v2.0.1/",
+      "snippet": "Any HuggingFace model can be converted using cactus convert [HF-Name], though experimental. Liquid, Gemma. whisper. parakeet and Qwen model families are especially tested."
+    },
+    {
+      "title": "parakeet tdt 0.6b v3 coreml (600M) | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/FluidInference/parakeet-tdt-0.6b-v3-coreml",
+      "snippet": "The Parakeet TDT 0.6B v3 CoreML version is a speech recognition model optimized for Apple devices, using only 600M parameters for efficient on-device audio transcription."
+    }
+  ]
+}

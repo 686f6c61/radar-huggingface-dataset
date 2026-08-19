@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Wayne-King/echo-memory-context-k1-full",
+  "slug": "wayne-king-echo-memory-context-k1-full",
+  "author": "Wayne-King",
+  "url": "https://huggingface.co/Wayne-King/echo-memory-context-k1-full",
+  "created_at": "2026-08-18T18:45:22.000Z",
+  "updated_at": "2026-08-18T18:51:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffsynth",
+  "languages": [],
+  "tags": [
+    "diffsynth",
+    "t2v",
+    "wan",
+    "wan2.1",
+    "echo-memory",
+    "text-to-video",
+    "arxiv:2606.09803",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wayne-King/echo-memory-diffusers · Hugging Face",
+      "url": "https://huggingface.co/Wayne-King/echo-memory-diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Echo-Memory - a Wayne-King Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Wayne-King/echo-memory",
+      "snippet": "Controlled study of memory in action world models: paper, checkpoints, data, and interactive demo."
+    },
+    {
+      "title": "GitHub - Echo-Team-Joy-Future-Academy-JD/Echo-Memory: Official code for ...",
+      "url": "https://github.com/Echo-Team-Joy-Future-Academy-JD/Echo-Memory",
+      "snippet": "Core question. When a generated scene must leave and later return, which kind of memory helps an action world model preserve identity, layout, and viewpoint instead of drifting into a plausible but different world? Paper teaser. Echo-Memory studies how Context, Compression, Spatial, and State-Space ..."
+    },
+    {
+      "title": "Echo-Memory: A Controlled Study of Memory in Action World Models",
+      "url": "https://arxiv.org/pdf/2606.09803v1",
+      "snippet": "We have presented Echo-Memory, a controlled study of memory in action world models. By fixing the backbone, optimizer, sampler, and evaluation protocol, the study makes the memory/context profile the main experimental variable."
+    },
+    {
+      "title": "Echo-Memory: A Controlled Study of Memory in Action World Models",
+      "url": "https://arxiv.org/abs/2606.09803",
+      "snippet": "We present &#92;&#92;textbf{Echo-Memory}, a controlled study of memory mechanisms in action-conditioned world models. These models generate multi-segment videos from a first frame, text prompt, and camera-action sequence, but their central failure is often memory rather than local image synthesis: after the camera leaves and returns, the scene or salient object may silently change. Existing memory ..."
+    }
+  ]
+}

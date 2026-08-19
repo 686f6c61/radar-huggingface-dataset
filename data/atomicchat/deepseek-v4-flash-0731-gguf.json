@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/DeepSeek-V4-Flash-0731-GGUF",
+  "slug": "atomicchat-deepseek-v4-flash-0731-gguf",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/DeepSeek-V4-Flash-0731-GGUF",
+  "created_at": "2026-08-01T12:45:07.000Z",
+  "updated_at": "2026-08-04T19:54:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "deepseek",
+    "deepseek-v4",
+    "deepseek_v4",
+    "moe",
+    "mixture-of-experts",
+    "imatrix",
+    "quantized",
+    "mxfp4",
+    "qat",
+    "1-bit",
+    "2-bit",
+    "3-bit",
+    "conversational",
+    "atomic-chat",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 28,
+  "downloads_30d": 20638,
+  "trending_score": 8,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 1236894950150,
+  "storage_human": "1236.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtomicChat/DeepSeek-V4-Flash-0731-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/DeepSeek-V4-Flash-0731-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run DeepSeek V4 Flash Locally: Hardware, GGUFs, and Setup",
+      "url": "https://atomic.chat/blog/guides/how-to-run-deepseek-v4-flash-locally",
+      "snippet": "DeepSeek V4 Flash is an open-weight model designed for coding, agentic, reasoning, and long-context workloads. Its 13B active parameters reduce per-token compute, but all 284B total parameters remain part of the model, so it still requires a fairly beefy machine to run locally — 70-162 GB before runtime and context overhead."
+    },
+    {
+      "title": "Releases: deepseek-v4-flash-0731/deepseek-v4-flash-0731 - GitHub",
+      "url": "https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731/releases",
+      "snippet": "DeepSeek V4 Flash 0731 Run DeepSeek V4 Flash locally with free desktop app.Deepseek v4 flash free, deepseek v4 flash gguf, deepseek v4 flash local, deepseek v4 flash ollama, deepseek v4 flash requirements. Mixture of Experts, 1M context window, compressed sparse attention."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE ..."
+    }
+  ]
+}

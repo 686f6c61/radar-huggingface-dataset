@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ethanCSL/openarm_visuomotor_VR_pringles_V9_generated_500",
+  "slug": "ethancsl-openarm_visuomotor_vr_pringles_v9_generated_500",
+  "author": "ethanCSL",
+  "url": "https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_V9_generated_500",
+  "created_at": "2026-08-18T23:22:43.000Z",
+  "updated_at": "2026-08-18T23:23:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:ethanCSL/openarm_visuomotor_VR_pringles_V9_generated_500",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906718296,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ethanCSL/openarm_visuomotor · Hugging Face",
+      "url": "https://huggingface.co/ethanCSL/openarm_visuomotor",
+      "snippet": "ethanCSL/openarm_visuomotor ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "ethanCSL/openarm_visuomotor · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ethanCSL/openarm_visuomotor",
+      "snippet": "Datasets: ethanCSL / openarm_visuomotor like 0 Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·3.82k rows default (3.82k rows) Split (1) train·3.82k rows train (3.82k rows) Search ..."
+    },
+    {
+      "title": "ethanCSL · GitHub",
+      "url": "https://github.com/ethanCSL",
+      "snippet": "ethanCSL has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - austinvishal/OpenArm: OpenArm v0.2 · GitHub",
+      "url": "https://github.com/austinvishal/OpenArm",
+      "snippet": "OpenArm is an open-source humanoid robot arm designed for AI and robotics research in human-centered environments. Its modular hardware and accessible software make it a flexible platform for teleoperation, imitation learning, and real-world data collection. Our goal is to advance physical intelligence by enabling robots that operate safely and effectively alongside people — in homes ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

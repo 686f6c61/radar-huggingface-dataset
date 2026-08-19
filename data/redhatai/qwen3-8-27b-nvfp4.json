@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Qwen3.8-27B-NVFP4",
+  "slug": "redhatai-qwen3-8-27b-nvfp4",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Qwen3.8-27B-NVFP4",
+  "created_at": "2026-08-17T14:56:15.000Z",
+  "updated_at": "2026-08-17T14:56:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "unsloth",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19869895952,
+  "parameters_human": "19.87B",
+  "storage_bytes": 23437581813,
+  "storage_human": "23.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

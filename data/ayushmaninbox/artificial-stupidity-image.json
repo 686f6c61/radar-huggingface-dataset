@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ayushmaninbox/artificial-stupidity-image",
+  "slug": "ayushmaninbox-artificial-stupidity-image",
+  "author": "ayushmaninbox",
+  "url": "https://huggingface.co/ayushmaninbox/artificial-stupidity-image",
+  "created_at": "2026-08-18T17:50:26.000Z",
+  "updated_at": "2026-08-18T20:35:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-image",
+    "diffusion",
+    "tiny",
+    "from-scratch",
+    "arxiv:2203.01941",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 264758050,
+  "storage_human": "265 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayushmaninbox/artificial-stupidity-image · Hugging Face",
+      "url": "https://huggingface.co/ayushmaninbox/artificial-stupidity-image",
+      "snippet": "ayushmaninbox / artificial-stupidity-image like 1 Text-to-Image diffusion tiny from-scratch arxiv:2203.01941 License:mit Model card FilesFiles and versions xet Community Copy to bucket new AS-I — Artificial Stupidity Image Example input and output The prompt grammar — this is a closed vocabulary What it cannot do Architecture Files Usage ..."
+    },
+    {
+      "title": "GitHub - ayushmaninbox/artificial-stupidity",
+      "url": "https://github.com/ayushmaninbox/artificial-stupidity",
+      "snippet": "Contribute to ayushmaninbox/artificial-stupidity development by creating an account on GitHub."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "AI Image Generator - DeepAI",
+      "url": "https://deepai.org/machine-learning-model/text2img",
+      "snippet": "Transform your ideas into stunning AI art—instantly and for free. Whether you&#x27;re a creator, developer, or entrepreneur, DeepAI&#x27;s Free Online AI Image Generator gives you the power to visualize your imagination in seconds."
+    },
+    {
+      "title": "How to Spot Fake AI Images in 2026: The Complete Detection Guide",
+      "url": "https://www.online-tech-tips.com/how-to-spot-fake-ai-images/",
+      "snippet": "Learn to spot AI-generated fake images in 2026 with our tiered newsroom stress test — visual cues, metadata checks, and free detection tools in under 10 minutes."
+    }
+  ]
+}

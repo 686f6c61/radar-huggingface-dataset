@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MedPhyGraph/CF-SupportNet",
+  "slug": "medphygraph-cf-supportnet",
+  "author": "MedPhyGraph",
+  "url": "https://huggingface.co/MedPhyGraph/CF-SupportNet",
+  "created_at": "2026-08-17T20:25:28.000Z",
+  "updated_at": "2026-08-17T23:22:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "digital-twins",
+    "scene-graphs",
+    "dynamic-scene-graphs",
+    "robotics",
+    "support-relations",
+    "graph-maintenance",
+    "counterfactual-evidence",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 533680,
+  "storage_human": "533680 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - medphygraph/medphygraph.github.io: Official website of ...",
+      "url": "https://github.com/medphygraph/medphygraph.github.io",
+      "snippet": "Static project page for MedPhyGraph: Counterfactual Physical Support-Graph Maintenance for Dynamic Healthcare Digital Twins (ECCV 2026 — TwinWorld Workshop). Vite · React · TypeScript · Tailwind CSS · Framer Motion. No backend, no database, no API — the build output is a folder of static files."
+    },
+    {
+      "title": "medphygraph - GitHub",
+      "url": "https://github.com/medphygraph",
+      "snippet": "Official website of MedPhyGraph — Counterfactual Support-Graph Maintenance for Dynamic Healthcare Digital Twins."
+    },
+    {
+      "title": "The AI That&#x27;s Finally Making Sense of Chronic Fatigue Syndrome",
+      "url": "https://medschool.duke.edu/news/ai-thats-finally-making-sense-chronic-fatigue-syndrome",
+      "snippet": "Artificial intelligence has helped map the hidden biology behind the pain, dizziness, and exhaustion of chronic fatigue syndrome, and identified new biomarkers to improve diagnosis."
+    },
+    {
+      "title": "PDF SupportNet: a Deep Learning Based Channel Equalization ... - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/s11036-023-02271-y.pdf",
+      "snippet": "This paper proposes a channel equalisation model called SupportNet, which simulates both channel estimation and channel equalisation processes by inducing a sub-network into a model collapse state so that a part of the network acts like channel estimation without using channel estimation labels, allowing features to be separated and processed ..."
+    },
+    {
+      "title": "microsoft/MediPhi · Hugging Face",
+      "url": "https://huggingface.co/microsoft/MediPhi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

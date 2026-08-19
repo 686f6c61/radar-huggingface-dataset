@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "KanameYOkoYAMA/2d-motion-interface",
+  "slug": "kanameyokoyama-2d-motion-interface",
+  "author": "KanameYOkoYAMA",
+  "url": "https://huggingface.co/KanameYOkoYAMA/2d-motion-interface",
+  "created_at": "2026-08-13T12:27:52.000Z",
+  "updated_at": "2026-08-18T02:22:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "arxiv:2608.15984",
+    "motion-captioning",
+    "motion-language",
+    "human-motion",
+    "2d-pose",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1033080266,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KanameYOkoYAMA/2d-motion-interface · Hugging Face",
+      "url": "https://huggingface.co/KanameYOkoYAMA/2d-motion-interface",
+      "snippet": "The interface captions human motion from 2D keypoints only — no 3D pose estimation anywhere in the pipeline. The pretrained motion-language model is frozen; only the 2D encoder (9.6M params) and the real-video adapter A_real (0.3M params) are trained."
+    },
+    {
+      "title": "2D Motion Interface - a Hugging Face Space by KanameYOkoYAMA",
+      "url": "https://huggingface.co/spaces/KanameYOkoYAMA/2d-motion-interface",
+      "snippet": "🕺 A Plug-and-Play 2D Motion Interface Captioning real monocular video through 2D keypoints only — no 3D pose estimation anywhere in the pipeline. The overlay shows the ViTPose 2D keypoints that are actually fed to the model. A_real is the .3M-parameter real-video adapter; the pretrained motion-language model is untouched."
+    },
+    {
+      "title": "irajisamurai (YOKOYAMA KANAME) / Starred · GitHub",
+      "url": "https://github.com/irajisamurai?tab=stars",
+      "snippet": "Trajectory prediction method using a stacked normalizing flow for fast and accurate density estimation."
+    },
+    {
+      "title": "GitHub - nv-tlabs/kimodo: Official implementation of Kimodo, a ...",
+      "url": "https://github.com/nv-tlabs/kimodo",
+      "snippet": "Official implementation of Kimodo, a kinematic motion diffusion model for high-quality human(oid) motion generation. - nv-tlabs/kimodo"
+    },
+    {
+      "title": "KanameYOkoYAMA/2d-motion-interface at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/KanameYOkoYAMA/2d-motion-interface/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

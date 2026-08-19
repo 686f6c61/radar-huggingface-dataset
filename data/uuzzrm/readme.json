@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "uuzzrm/README",
+  "slug": "uuzzrm-readme",
+  "author": "uuzzrm",
+  "url": "https://huggingface.co/uuzzrm/README",
+  "created_at": "2026-08-18T00:42:13.000Z",
+  "updated_at": "2026-08-18T06:18:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai-agents",
+    "developer-tools",
+    "image-models",
+    "evaluation",
+    "retrieval",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ruiming Zhao uuzzrm - GitHub",
+      "url": "https://github.com/uuzzrm/",
+      "snippet": "AI agents · image model trainer · developer tools · building at Prysai - uuzzrm"
+    },
+    {
+      "title": "eli64s/readme-ai: README file generator, powered by AI. - GitHub",
+      "url": "https://github.com/eli64s/README-AI",
+      "snippet": "README file generator, powered by AI. Contribute to eli64s/readme-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Readme.ai",
+      "url": "https://www.readmeai.tech/",
+      "snippet": "Generate free and professional README for your project"
+    },
+    {
+      "title": "ReadmeAI — AI-Powered README Generator",
+      "url": "https://www.readmeai.in/",
+      "snippet": "ReadmeAI — Generate professional README files from any GitHub repository using AI."
+    },
+    {
+      "title": "ReadmeAI - Generate Professional GitHub READMEs Instantly",
+      "url": "https://readmeai.cognisoftlabs.com/",
+      "snippet": "Generate Professional READMEs Instantly Transform your GitHub repositories with AI-generated documentation. Just paste your repo URL and get a comprehensive README in seconds."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "VERBAREX/LuminoLex-1.5B-think",
+  "slug": "verbarex-luminolex-1-5b-think",
+  "author": "VERBAREX",
+  "url": "https://huggingface.co/VERBAREX/LuminoLex-1.5B-think",
+  "created_at": "2026-07-12T01:31:48.000Z",
+  "updated_at": "2026-08-15T15:47:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "metis_multihead_latent_moe",
+    "fill-mask",
+    "luminolex",
+    "causal-lm",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 87,
+  "trending_score": 0,
+  "parameters": 900230354,
+  "parameters_human": "900.2M",
+  "storage_bytes": 5392771808,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

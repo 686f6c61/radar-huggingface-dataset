@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "BenFrodom/rtila-assistant-lite-1.5",
+  "slug": "benfrodom-rtila-assistant-lite-1-5",
+  "author": "BenFrodom",
+  "url": "https://huggingface.co/BenFrodom/rtila-assistant-lite-1.5",
+  "created_at": "2026-08-18T13:19:01.000Z",
+  "updated_at": "2026-08-18T13:19:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 11258217536,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rtila-corporation/rtila-assistant-lite · Hugging Face",
+      "url": "https://huggingface.co/rtila-corporation/rtila-assistant-lite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rtila-corporation/rtila-assistant · Hugging Face",
+      "url": "https://huggingface.co/rtila-corporation/rtila-assistant",
+      "snippet": "🤖 RTILA Assistant Full-powered fine-tuned AI model for generating automation configurations for the RTILA Automation Engine 📋 Model Description RTILA Assistant is the standard model in the RTILA family, fine-tuned from Qwen3-14B for maximum quality. It generates JSON automation configurations for the RTILA Automation Engine with the highest accuracy and complexity handling. 🔄 Choose ..."
+    },
+    {
+      "title": "Rtila al model option to download - AI Agents & Local LLMs - RTILA X",
+      "url": "https://rtila.net/t/rtila-al-model-option-to-download/189",
+      "snippet": "Good evening peeps!! which AL model is best to use? see screen shot below."
+    },
+    {
+      "title": "rtila-corporation__rtila-assistant-lite-1.5.jinja - GitHub",
+      "url": "https://github.com/ydarwish1/glyphhound/blob/main/corpus/templates/rtila-corporation__rtila-assistant-lite-1.5.jinja",
+      "snippet": "155 lines (155 loc) · 7.63 KB main glyphhound / corpus / templates / rtila-corporation__rtila-assistant-lite-1.5.jinja Code Blame 155 lines (155 loc) · 7.63 KB Raw ..."
+    },
+    {
+      "title": "Ai Assistant | RTILA Web Business Automation",
+      "url": "https://rtila.com/docs-category/ai-assistant/",
+      "snippet": "List Command Incogniton Anti-detect browser Save results to file command RTILA Cloud API Documentation FTP / SFTP Command Custom Commands Integrations RPA & Desktop OS Commands Add And Configure Dataset Properties Inspection Panel Interface & Elements Config & binaries files for Standalone Focus On Element Command Go To Url Command Scroll Element Command Execute JavaScript Code command Reload ..."
+    }
+  ]
+}

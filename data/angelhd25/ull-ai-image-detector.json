@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "angelhd25/ull-ai-image-detector",
+  "slug": "angelhd25-ull-ai-image-detector",
+  "author": "angelhd25",
+  "url": "https://huggingface.co/angelhd25/ull-ai-image-detector",
+  "created_at": "2026-08-16T00:58:02.000Z",
+  "updated_at": "2026-08-16T13:06:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "ai-generated-image-detection",
+    "onnxruntime-web",
+    "webgpu",
+    "chrome-extension",
+    "arxiv:2411.04125",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176739130,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

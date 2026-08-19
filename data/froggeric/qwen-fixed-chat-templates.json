@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "froggeric/Qwen-Fixed-Chat-Templates",
+  "slug": "froggeric-qwen-fixed-chat-templates",
+  "author": "froggeric",
+  "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
+  "created_at": "2026-04-23T15:28:14.000Z",
+  "updated_at": "2026-08-16T18:48:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "jinja",
+    "chat-template",
+    "qwen",
+    "qwen3.5",
+    "qwen3.6",
+    "qwen3.8",
+    "lm-studio",
+    "llama.cpp",
+    "vllm",
+    "tool-calling",
+    "thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1260,
+  "downloads_30d": 0,
+  "trending_score": 208,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "froggeric/Qwen-Fixed-Chat-Templates · Hugging Face",
+      "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
+      "snippet": "Fixed jinja chat templates for Qwen 3.5 & 3.6 (v21) This is a drop-in Jinja template that fixes rendering errors, KV cache invalidation, token waste, and fatal agentic stalling in the official Qwen chat templates. It works across LM Studio, llama.cpp, vLLM, MLX, oMLX, and any engine that supports HuggingFace Jinja templates. You only need the single chat_template.jinja file at the root of the ..."
+    },
+    {
+      "title": "CCSSNE/froggeric-Qwen-Fixed-Chat-Templates · Hugging Face",
+      "url": "https://huggingface.co/CCSSNE/froggeric-Qwen-Fixed-Chat-Templates",
+      "snippet": "Fixed jinja chat templates for Qwen 3.5 & 3.6 (v19) Update History & Changelog (v19) 2026-05-18 Update (v19): The Agentic Loop Cure. (1) Abolished \"Empty Think\" Poisoning: Rewrote the AST history rendering to completely remove the injection of empty <think>&#92;n</think> blocks. This cures a severe in-context learning bias where the model assumed tools could only be called if it didn&#x27;t think first ..."
+    },
+    {
+      "title": "GitHub - clach04/froggeric_Qwen-Fixed-Chat-Templates: mirror of https ...",
+      "url": "https://github.com/clach04/froggeric_Qwen-Fixed-Chat-Templates",
+      "snippet": "Open your Qwen model in the right-side panel. Scroll down to Prompt Template. Replace the template with the contents of chat_template.jinja. Click Save."
+    },
+    {
+      "title": "GitHub - rchildre3/Qwen-Fixed-Chat-Templates: https://huggingface.co ...",
+      "url": "https://github.com/rchildre3/Qwen-Fixed-Chat-Templates",
+      "snippet": "Fixed jinja chat templates for Qwen 3.5 & 3.6 (v21) This is a drop-in Jinja template that fixes rendering errors, KV cache invalidation, token waste, and fatal agentic stalling in the official Qwen chat templates. It works across LM Studio, llama.cpp, vLLM, MLX, oMLX, and any engine that supports HuggingFace Jinja templates."
+    },
+    {
+      "title": "Qwen-Fixed-Chat-Templates: Text-to-Text model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen-fixed-chat-templates-froggeric",
+      "snippet": "Overview Qwen-Fixed-Chat-Templates is a drop-in replacement for the Jinja chat templates used by Qwen 3.5 and Qwen 3.6 language models. Created by froggeric, these templates fix six critical bugs in the official Qwen implementations that break tool calling, cause token waste, and crash in common runtime scenarios. The templates work across all major inference engines—LM Studio, llama.cpp ..."
+    }
+  ]
+}

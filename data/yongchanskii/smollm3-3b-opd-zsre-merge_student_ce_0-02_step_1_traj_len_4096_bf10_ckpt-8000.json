@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_1_traj_len_4096_bf10_ckpt-8000",
+  "slug": "yongchanskii-smollm3-3b-opd-zsre-merge_student_ce_0-02_step_1_traj_len_4096_bf10_ckpt-8000",
+  "author": "yongchanskii",
+  "url": "https://huggingface.co/yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_1_traj_len_4096_bf10_ckpt-8000",
+  "created_at": "2026-08-16T12:34:53.000Z",
+  "updated_at": "2026-08-16T12:38:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 6167444080,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25_traj_len_4096",
+      "url": "https://huggingface.co/yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25_traj_len_4096",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25",
+      "url": "https://huggingface.co/yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Our 3B model outperforms Llama 3.2 3B and Qwen2.5 3B while staying competitive with larger 4B alternatives (Qwen3 & Gemma3). Beyond the performance numbers, we&#x27;re sharing exactly how we built it using public datasets and training frameworks. Ressources: SmolLM3-Base SmolLM3 blog Summary: 3B model trained on 11T tokens, SoTA at the 3B scale and competitive with 4B models Fully open model, open ..."
+    },
+    {
+      "title": "smollm/text at main · huggingface/smollm · GitHub",
+      "url": "https://github.com/huggingface/smollm/tree/main/text",
+      "snippet": "Our most powerful model is SmolLM3-3B, which you can use as an assistant with transformers, vllm, trl, or using quantized versions with tools like llama.cpp, MLX, and transformers.js. For lighter applications, you can also use the smaller models SmolLM2-360M and SmolLM2-135M, which are suitable for on-device usage and can be integrated similarly."
+    }
+  ]
+}

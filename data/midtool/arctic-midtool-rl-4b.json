@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "MidTool/Arctic-MidTool-RL-4B",
+  "slug": "midtool-arctic-midtool-rl-4b",
+  "author": "MidTool",
+  "url": "https://huggingface.co/MidTool/Arctic-MidTool-RL-4B",
+  "created_at": "2026-08-12T20:48:11.000Z",
+  "updated_at": "2026-08-18T00:54:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "reinforcement-learning",
+    "conversational",
+    "dataset:MidTool/MidTool-Mix",
+    "base_model:MidTool/Arctic-MidTool-MT-4B",
+    "base_model:finetune:MidTool/Arctic-MidTool-MT-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317158,
+  "storage_human": "8.8 GB",
+  "base_model": "MidTool/Arctic-MidTool-MT-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779 · Hugging Face",
+      "url": "https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779",
+      "snippet": "Note: Snowflake/Arctic-MidTool-MT-4B on HF hosts the pretrain checkpoint only; this repo is the SFT endpoint."
+    },
+    {
+      "title": "fan-shu/Arctic-MidTool-MT-4B · Hugging Face",
+      "url": "https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B",
+      "snippet": "fan-shu / Arctic-MidTool-MT-4B like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "README.md · fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779 at main",
+      "url": "https://d6108366.hf-mirror.com/fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779/blob/main/README.md?code=true",
+      "snippet": "/ Arctic-MidTool-MT-4B-finetoolv2-sft779 like 0 Safetensors qwen3 tool-use License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Arctic-MidTool-MT-4B-finetoolv2-sft779 /README.md fan-shu Upload SFT global_step_779 from S3 (as-is, LFS for large files) f2c52bd 2 months ago preview code | Raw Download with hf ..."
+    },
+    {
+      "title": "Midtool/README.md at main · xiziliang/Midtool · GitHub",
+      "url": "https://github.com/xiziliang/Midtool/blob/main/README.md?plain=1",
+      "snippet": "一个AI作画. Contribute to xiziliang/Midtool development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Snowflake-AI-Research/Arctic-Platform: Arctic Training and ...",
+      "url": "https://github.com/Snowflake-AI-Research/Arctic-Platform",
+      "snippet": "Arctic RL is designed to integrate into existing RL frameworks rather than replace them. The RL framework keeps ownership of the training loop, rollouts, rewards, and advantage estimation; Arctic Platform provides the heavy compute engines behind a thin client: Training engine — a DeepSpeed engine that runs forward/backward and the optimizer ..."
+    }
+  ]
+}

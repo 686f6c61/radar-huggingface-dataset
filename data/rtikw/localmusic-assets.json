@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rtikw/localmusic-assets",
+  "slug": "rtikw-localmusic-assets",
+  "author": "rtikw",
+  "url": "https://huggingface.co/rtikw/localmusic-assets",
+  "created_at": "2026-08-17T20:28:53.000Z",
+  "updated_at": "2026-08-17T20:30:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 760290326,
+  "storage_human": "760 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LocalMusic AI — Create Music with AI on Your Mac",
+      "url": "https://fspecii.github.io/LocalMusicAI/index.html",
+      "snippet": "LocalMusic AI Generate original music with AI, entirely on your Mac. Your prompts, lyrics, and creations never leave your device."
+    },
+    {
+      "title": "GitHub - fspecii/LocalMusicAI: News feed for LocalMusic AI app",
+      "url": "https://github.com/fspecii/LocalMusicAI",
+      "snippet": "News feed for LocalMusic AI app. Contribute to fspecii/LocalMusicAI development by creating an account on GitHub."
+    },
+    {
+      "title": "Support — LocalMusic AI",
+      "url": "https://fspecii.github.io/LocalMusicAI/support.html",
+      "snippet": "The app is downloading a large model on first launch. Is this normal? Yes. LocalMusic AI downloads the ACE-Step AI model (~4 GB) the first time you generate music. This is cached locally and only needs to happen once."
+    },
+    {
+      "title": "GitHub - gabotechs/MusicGPT: Generate music based on natural language ...",
+      "url": "https://github.com/gabotechs/MusicGPT",
+      "snippet": "MusicGPT is an application that allows running the latest music generation AI models locally in a performant way, in any platform and without installing heavy dependencies like Python or machine learning frameworks. Right now it only supports MusicGen by Meta, but the plan is to support different ..."
+    },
+    {
+      "title": "Local deployment of large-scale music AI models on commodity hardware",
+      "url": "https://arxiv.org/html/2411.09625v1",
+      "snippet": "We present the MIDInfinite, a web application capable of generating symbolic music using a large-scale generative AI model locally on commodity hardware. Creating this demo involved porting the Anticipatory Music Transformer, a large language model (LLM) pre-trained on the Lakh MIDI dataset, to the Machine Learning Compilation (MLC) framework."
+    }
+  ]
+}

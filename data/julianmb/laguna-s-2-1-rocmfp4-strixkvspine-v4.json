@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "julianmb/Laguna-S-2.1-ROCmFP4-StrixKVSpine-v4",
+  "slug": "julianmb-laguna-s-2-1-rocmfp4-strixkvspine-v4",
+  "author": "julianmb",
+  "url": "https://huggingface.co/julianmb/Laguna-S-2.1-ROCmFP4-StrixKVSpine-v4",
+  "created_at": "2026-08-17T13:00:14.000Z",
+  "updated_at": "2026-08-17T23:51:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "strix-halo",
+    "llama.cpp",
+    "laguna",
+    "open-webui",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Laguna S 2.1 - poolside.ai",
+      "url": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+      "snippet": "Today we&#x27;re releasing Laguna S 2.1, a significant step forward in our development of models that pursue longer horizon work and make effective use of reasoning. Laguna S 2.1 is a 118B total parameter Mixture-of-Experts (MoE) model with 8B activated parameters per token and supports a context window of up to 1M tokens in thinking and no-thinking modes. It went from the start of training to ..."
+    },
+    {
+      "title": "Model release notes - Poolside",
+      "url": "https://docs.poolside.ai/release-notes/models",
+      "snippet": "Compatibility notes Laguna S 2.1 is designed for Poolside Agent CLI workflows and OpenAI-compatible API integrations. Download the weights from the Laguna S 2.1 Hugging Face model card. Run Laguna S 2.1 locally through pool, vLLM, SGLang, Ollama, llama.cpp, MLX, or NVIDIA TensorRT-LLM, or access it through OpenRouter and the Poolside API."
+    },
+    {
+      "title": "poolside/Laguna-S-2.1 · Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-S-2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Laguna S 2.1 - a poolside Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/poolside/laguna-s-21",
+      "snippet": "Our most capable model to date, designed for long-horizon work."
+    },
+    {
+      "title": "laguna-s-2.1 - ollama.com",
+      "url": "https://ollama.com/library/laguna-s-2.1",
+      "snippet": "Laguna S 2.1 Overview Laguna S 2.1 is a Mixture-of-Experts model built for agentic coding and extended reasoning. It is the larger sibling of Laguna XS 2.1, trading a bigger memory footprint for stronger coding and reasoning performance while keeping a small activated-parameter count so it stays practical to run on a single high-memory machine. Key Specifications Total Parameters: 118B (8B ..."
+    }
+  ]
+}

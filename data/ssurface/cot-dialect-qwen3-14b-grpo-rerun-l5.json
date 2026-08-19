@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ssurface/cot-dialect-qwen3-14b-grpo-rerun-l5",
+  "slug": "ssurface-cot-dialect-qwen3-14b-grpo-rerun-l5",
+  "author": "ssurface",
+  "url": "https://huggingface.co/ssurface/cot-dialect-qwen3-14b-grpo-rerun-l5",
+  "created_at": "2026-08-18T15:26:52.000Z",
+  "updated_at": "2026-08-18T15:27:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "chain-of-thought",
+    "reasoning",
+    "compression",
+    "gsm8k",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139948931,
+  "storage_human": "140 MB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Accuracy (exact match)",
+      "value": 81.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research."
+    },
+    {
+      "title": "Qwen3 14B — Specs, VRAM & How to Run Locally | Convly AI",
+      "url": "https://convly.ai/model/qwen3-14b/",
+      "snippet": "A mid-size dense Qwen3 (Apache 2.0, 128K context) that hits a sweet spot for local use — runs 4-bit on a 12GB card while staying genuinely capable."
+    },
+    {
+      "title": "Qwen3-14B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen3-14b",
+      "snippet": "The model is natively compatible with the Model Context Protocol (MCP), enabling integration into agentic workflows for complex tool-calling and environment interaction. This design makes it a versatile solution for both interactive AI assistants and automated systems requiring a balance between analytical depth and operational efficiency."
+    }
+  ]
+}

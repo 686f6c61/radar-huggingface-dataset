@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zeynepptkn/pkl",
+  "slug": "zeynepptkn-pkl",
+  "author": "zeynepptkn",
+  "url": "https://huggingface.co/zeynepptkn/pkl",
+  "created_at": "2026-08-17T16:16:53.000Z",
+  "updated_at": "2026-08-17T16:16:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeynepptkn (Zeynep Tekin) - Hugging Face",
+      "url": "https://huggingface.co/zeynepptkn",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 6 days ago ... updated a Space 6 days ago"
+    },
+    {
+      "title": "ZeynepTekin-DS (Zeynep TEKİN) · GitHub",
+      "url": "https://github.com/ZeynepTekin-DS",
+      "snippet": "ZeynepTekin-DS has 52 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Pneumonia Predictor - a Hugging Face Space by zeynepptkn",
+      "url": "https://huggingface.co/spaces/zeynepptkn/Pneumonia-Predictor",
+      "snippet": "This application starts a Streamlit interface, allowing you to add and interact with custom widgets, visualizations, or tools you build. Simply open the app in a browser, provide any required input..."
+    },
+    {
+      "title": "ZeynepTekin-DS/Calorie-Predictor - GitHub",
+      "url": "https://github.com/ZeynepTekin-DS/Calorie-Predictor",
+      "snippet": "Production Deployment: ☁️ The trained model was packaged in .joblib format and deployed live on Hugging Face Spaces, transforming raw data into an end-to-end AI product providing scientific predictions."
+    },
+    {
+      "title": "Designing and Training the AI Model: From Data to a Production-Ready ...",
+      "url": "https://developers-heaven.net/blog/designing-and-training-the-ai-model-from-data-to-a-production-ready-pkl-file/",
+      "snippet": "Conclusion Mastering AI model training and deployment, culminating in the creation of a production-ready .pkl file, is an essential skill for any aspiring data scientist or machine learning engineer. We&#x27;ve covered the crucial steps of data preprocessing, model selection, training methodologies, and model serialization."
+    }
+  ]
+}

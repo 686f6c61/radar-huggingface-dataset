@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "OpenMOSS-Team/MOSS-Transcribe-Diarize",
+  "slug": "openmoss-team-moss-transcribe-diarize",
+  "author": "OpenMOSS-Team",
+  "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
+  "created_at": "2026-05-19T08:19:23.000Z",
+  "updated_at": "2026-07-31T09:12:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moss_transcribe_diarize",
+    "text-generation",
+    "moss",
+    "audio",
+    "speech",
+    "asr",
+    "diarization",
+    "timestamp-asr",
+    "long-form-audio",
+    "multimodal",
+    "multilingual",
+    "custom_code",
+    "audio-text-to-text",
+    "en",
+    "zh",
+    "arxiv:2601.01554",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 381,
+  "downloads_30d": 273525,
+  "trending_score": 8,
+  "parameters": 908513280,
+  "parameters_human": "908.5M",
+  "storage_bytes": 3657073722,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Transcribe-Diarize: MOSS-Transcribe-Diarize 0.9B ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Transcribe-Diarize/tree/main/",
+      "snippet": "English | 中文 MOSS-Transcribe-Diarize 0.9B is an open-source SOTA end-to-end audio understanding model for long-form multi-speaker transcription, diarization, timestamps, and acoustic event awareness. MOSS-Transcribe-Diarize Pro is a stronger model with higher overall performance and is available through the online playground."
+    },
+    {
+      "title": "OpenMOSS-Team/MOSS-Transcribe-Diarize · Hugging Face",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenMOSS-Team/MOSS-Transcribe-Diarize | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/OpenMOSS-Team/MOSS-Transcribe-Diarize",
+      "snippet": "MOSS-Transcribe-Diarize is a 0.9B end-to-end speech-to-text model for long-form multi-speaker transcription. ... For the latest nightly wheel, see the vLLM installation guide."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Transcribe-Diarize at taaft",
+      "url": "https://github.com/OpenMOSS/MOSS-Transcribe-Diarize?ref=taaft",
+      "snippet": "MOSS-Transcribe-Diarize MOSS-Transcribe-Diarize 0.9B is an open-source SOTA end-to-end audio understanding model for long-form multi-speaker transcription, diarization, timestamps, and acoustic event awareness. MOSS-Transcribe-Diarize Pro is a stronger model with higher overall performance and will be available through API access soon."
+    },
+    {
+      "title": "MOSS Transcribe - a OpenMOSS-Team Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/OpenMOSS-Team/moss-transcribe",
+      "snippet": "A unified multimodal large language model for end-to-end speaker-attributed, time-stamped transcription."
+    }
+  ]
+}

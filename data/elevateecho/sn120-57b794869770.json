@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "elevateecho/sn120-57b794869770",
+  "slug": "elevateecho-sn120-57b794869770",
+  "author": "elevateecho",
+  "url": "https://huggingface.co/elevateecho/sn120-57b794869770",
+  "created_at": "2026-08-17T00:25:08.000Z",
+  "updated_at": "2026-08-17T00:30:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 287,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483475,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elevateecho/sn120-27e2f083b355 · Hugging Face",
+      "url": "https://huggingface.co/elevateecho/sn120-27e2f083b355",
+      "snippet": "elevateecho / sn120-27e2f083b355 like 0 Text Generation Transformers Safetensors qwen3_5_moe image-text-to-text affine-h1-merged-salvage conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "elevateecho (elevateecho) - Hugging Face",
+      "url": "https://huggingface.co/elevateecho",
+      "snippet": "Sort: Recently updated. elevateecho/sn120-c77c26f6254d. 35B • Updated 29 minutes ago. elevateecho/sn120-0d40d787788c. 35B • Updated about 1 hour ago"
+    },
+    {
+      "title": "elevateecho/sn120-0d40d787788c · Hugging Face",
+      "url": "https://huggingface.co/elevateecho/sn120-0d40d787788c",
+      "snippet": "elevateecho / sn120-0d40d787788c like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "elevateecho/sn120-d77b34310b62 · Hugging Face",
+      "url": "https://huggingface.co/elevateecho/sn120-d77b34310b62",
+      "snippet": "elevateecho / sn120-d77b34310b62 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "elevateecho/sn120-abe89194d6ad · Hugging Face",
+      "url": "https://huggingface.co/elevateecho/sn120-abe89194d6ad",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

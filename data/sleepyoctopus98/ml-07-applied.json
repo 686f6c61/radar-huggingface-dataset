@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "SleepyOctopus98/ml-07-applied",
+  "slug": "sleepyoctopus98-ml-07-applied",
+  "author": "SleepyOctopus98",
+  "url": "https://huggingface.co/SleepyOctopus98/ml-07-applied",
+  "created_at": "2026-08-14T03:08:15.000Z",
+  "updated_at": "2026-08-14T03:19:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355361,
+  "storage_human": "355361 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Airfirm/ml-07-applied: Applied Machine Learning - GitHub",
+      "url": "https://github.com/Airfirm/ml-07-applied",
+      "snippet": "Applied Machine Learning - Applied. Contribute to Airfirm/ml-07-applied development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - RucuAvinash/ml-07-applied: Machine Learning Project 7_applied",
+      "url": "https://github.com/RucuAvinash/ml-07-applied",
+      "snippet": "Project Description This project focuses on learning to interrogate a deployed ML model by probing it systematically with different inputs."
+    },
+    {
+      "title": "Project Instructions - ML 07 Applied - Sandra Otubushin",
+      "url": "https://sandra8918.github.io/ml-07-applied-sandra/project-instructions/",
+      "snippet": "Professional machine learning project investigating a deployed prediction model."
+    },
+    {
+      "title": "Project Documentation - ML 07 Applied - Sandra Otubushin",
+      "url": "https://sandra8918.github.io/ml-07-applied-sandra/",
+      "snippet": "However, the API would benefit from stronger validation to reject impossible measurements before generating predictions. This type of investigation could be applied to many deployed machine learning APIs to understand prediction boundaries, identify weaknesses, and improve model reliability."
+    },
+    {
+      "title": "8 Machine Learning Models Explained in 20 Minutes - DataCamp",
+      "url": "https://www.datacamp.com/blog/machine-learning-models-explained",
+      "snippet": "Find out everything you need to know about the types of machine learning models, including what they&#x27;re used for and examples of how to implement them."
+    }
+  ]
+}

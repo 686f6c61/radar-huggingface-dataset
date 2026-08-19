@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Omnico/Flux.1_Schnell-Dev_diff_loras",
+  "slug": "omnico-flux-1_schnell-dev_diff_loras",
+  "author": "Omnico",
+  "url": "https://huggingface.co/Omnico/Flux.1_Schnell-Dev_diff_loras",
+  "created_at": "2026-08-07T16:31:20.000Z",
+  "updated_at": "2026-08-18T13:39:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 457,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79189544286,
+  "storage_human": "79.2 GB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omnico/Flux.1_Schnell-Dev_diff_loras · Hugging Face",
+      "url": "https://huggingface.co/Omnico/Flux.1_Schnell-Dev_diff_loras",
+      "snippet": "The LoRAs were extracted from fine-tuned checkpoints (Schnell), with the official Flux.1-Dev also used as a basis for comparison. As a result, these differential LoRAs retain the four-step Schnell optimizations and can therefore be used with Dev and Krea checkpoints."
+    },
+    {
+      "title": "Omnico/Flux.1_Schnell-Dev_diff_loras at main - Hugging Face",
+      "url": "https://huggingface.co/Omnico/Flux.1_Schnell-Dev_diff_loras/tree/main",
+      "snippet": "How to use Omnico/Flux.1_Schnell-Dev_diff_loras with Diffusers: ... Inference Inference Providers Notebooks Google Colab Kaggle Local AppsSettings main Flux.1_Schnell-Dev_diff_loras 57.5 GB Ctrl+K Ctrl+K 1 contributor History:3 commits Omnico Update README.md 8c09c0f verifiedabout 4 hours ago imagesAdd 44 files3 days ago .gitattributes Safe 2. ..."
+    },
+    {
+      "title": "Flux.1_Schnell-Dev_diff_loras API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Omnico/Flux.1_Schnell-Dev_diff_loras",
+      "snippet": "README Model description Loras are extracted from finely tuned checkpoints (Schnell) and the official Flux.1-Dev is also used as a basis for comparison. As a result, the resulting differential Loras do contain four-step Schnell optimizations and can therefore be used with Dev checkpoints and Krea checkpoints."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 ...",
+      "url": "https://github.com/black-forest-labs/flux",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    },
+    {
+      "title": "Flux.1_Schnell-Schnell_diff_loras - FriendliAI",
+      "url": "https://friendli.ai/models/Omnico/Flux.1_Schnell-Schnell_diff_loras",
+      "snippet": "Deploy Flux.1_Schnell-Schnell_diff_loras with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI ..."
+    }
+  ]
+}

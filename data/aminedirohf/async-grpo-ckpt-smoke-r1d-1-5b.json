@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "aminediroHF/async-grpo-ckpt-smoke-r1d-1.5b",
+  "slug": "aminedirohf-async-grpo-ckpt-smoke-r1d-1-5b",
+  "author": "aminediroHF",
+  "url": "https://huggingface.co/aminediroHF/async-grpo-ckpt-smoke-r1d-1.5b",
+  "created_at": "2026-08-17T15:46:23.000Z",
+  "updated_at": "2026-08-17T18:14:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "generated_from_trainer",
+    "trackio:https://huggingface.co/spaces/aminediroHF/async-grpo-ckpt-smoke-static-053862",
+    "trackio",
+    "hf_jobs",
+    "async-grpo",
+    "trl",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 60433522187,
+  "storage_human": "60.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Red-Hat-AI-Innovation-Team/async-grpo",
+      "url": "https://github.com/Red-Hat-AI-Innovation-Team/async-grpo",
+      "snippet": "With the advent of reasoning models and inference time scaling generation lengths are dramatically increasing, creating a huge bottleneck for reinforcement learning in general and for GRPO in particular. Current implementations of GRPO such as HuggingFace&#x27;s or OpenRLHF lead to high GPU idle time by synchronously alternating between generation and training. To attend to these needs we have ..."
+    },
+    {
+      "title": "async-grpo/Readme.md at main · Red-Hat-AI-Innovation-Team ... - GitHub",
+      "url": "https://github.com/Red-Hat-AI-Innovation-Team/async-grpo/blob/main/Readme.md",
+      "snippet": "To attend to these needs we have created Async-GRPO. This library allows practioners to flexibly scale and independently schedule training and inference across multiple GPUs (regardless of number of nodes) while asynchronously going through the three main stages of GRPO: 1."
+    },
+    {
+      "title": "Async-GRPO: Open, fast, and performant | Red Hat Developer",
+      "url": "https://developers.redhat.com/articles/2025/04/05/async-grpo-open-fast-and-performant",
+      "snippet": "Discover Async-GRPO, a new library for reinforcement learning tasks that efficiently handles large models, eliminates bottlenecks, and accelerates experiments."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Async-GRPO - Open, Fast, and Performant - ai-innovation.team",
+      "url": "https://ai-innovation.team/blog/async-grpo-blog",
+      "snippet": "Introducing Async-GRPO - an open-source library for scalable reinforcement learning with 42% efficiency gains over VERL and 11x over TRL for GRPO training."
+    }
+  ]
+}

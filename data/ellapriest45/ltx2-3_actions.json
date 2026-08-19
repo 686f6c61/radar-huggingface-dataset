@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "EllaPriest45/LTX2.3_Actions",
+  "slug": "ellapriest45-ltx2-3_actions",
+  "author": "EllaPriest45",
+  "url": "https://huggingface.co/EllaPriest45/LTX2.3_Actions",
+  "created_at": "2026-05-19T16:31:31.000Z",
+  "updated_at": "2026-08-18T06:59:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192371393666,
+  "storage_human": "192.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EllaPriest45/LTX2.3_actions · Hugging Face",
+      "url": "https://huggingface.co/EllaPriest45/LTX2.3_actions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EllaPriest45 (Ella G. Priest) - Hugging Face",
+      "url": "https://huggingface.co/EllaPriest45/models",
+      "snippet": "User profile of Ella G. Priest on Hugging Face"
+    },
+    {
+      "title": "LTX-2.3: Previous Generation AI Video Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-3",
+      "snippet": "LTX-2.3 is the previous LTX release. Open weights, synchronized audio, and native portrait video. Still fully supported. LTX-2.5 is the current model."
+    },
+    {
+      "title": "GitHub - desktop-LTX/LTX-2.3: LTX-2.3 is an open-source generative ...",
+      "url": "https://github.com/desktop-LTX/LTX-2.3",
+      "snippet": "LTX-2.3 is an open-source generative video architecture based on the Diffusion Transformer (DiT). The model delivers commercial-grade generation quality (on par with Google Veo 3) but without the strict limitations of closed ecosystems. The project supports both fully autonomous local inference and hybrid cloud processing."
+    },
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    }
+  ]
+}

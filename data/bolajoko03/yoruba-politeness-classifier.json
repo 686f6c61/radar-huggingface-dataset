@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "BOLAJOKO03/yoruba-politeness-classifier",
+  "slug": "bolajoko03-yoruba-politeness-classifier",
+  "author": "BOLAJOKO03",
+  "url": "https://huggingface.co/BOLAJOKO03/yoruba-politeness-classifier",
+  "created_at": "2026-08-15T01:06:16.000Z",
+  "updated_at": "2026-08-15T01:15:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "yo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "yoruba",
+    "low-resource-language",
+    "politeness-classification",
+    "african-languages",
+    "linguistics",
+    "NLP",
+    "yo",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 16700876425,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Politeness - The Comprehensive R Archive Network",
+      "url": "https://cran.r-project.org/web/packages/politeness/vignettes/politeness.html",
+      "snippet": "However, the causes and consequences of politeness are often situationally specific. Furthermore, the particular set of linguistic markers that define politeness can also vary from context to context. Thus, it would be difficult (or misleading) to estimate a single model as some universal \"politeness classifier\" for all situations."
+    },
+    {
+      "title": "BOLAJOKO03/adaption-yoruba-conversational-pairs - Hugging Face",
+      "url": "https://huggingface.co/datasets/BOLAJOKO03/adaption-yoruba-conversational-pairs/viewer/default/train",
+      "snippet": "Datasets: BOLAJOKO03 / adaption-yoruba-conversational-pairs like 0 Dataset card Data Studio FilesFiles and versions xet Community Subset (1) default·536 rows default (536 rows) Split (1) train·536 rows train (536 rows) SQL Console"
+    },
+    {
+      "title": "Jacaranda/YorubaLlama · Hugging Face",
+      "url": "https://huggingface.co/Jacaranda/YorubaLlama",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1EmVhqlPLUIlFjYw73nzydtfT1PQ8QU2_?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Package &#x27;politeness&#x27; reference manual",
+      "url": "https://myeomans.r-universe.dev/politeness/doc/manual.html",
+      "snippet": "Pre-Trained Politeness Politeness Features Politeness Features Pre-Trained Politeness Classifier Politeness plot Politeness projection A pre-trained model for detecting conversational receptiveness. Estimated with glmnet using annotated data from a previous paper. Primarily for use within the receptiveness () function."
+    }
+  ]
+}

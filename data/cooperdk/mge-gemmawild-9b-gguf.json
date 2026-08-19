@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cooperdk/MGE-GemmaWild-9B-GGUF",
+  "slug": "cooperdk-mge-gemmawild-9b-gguf",
+  "author": "cooperdk",
+  "url": "https://huggingface.co/cooperdk/MGE-GemmaWild-9B-GGUF",
+  "created_at": "2026-08-18T04:13:34.000Z",
+  "updated_at": "2026-08-18T09:23:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3.5",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:quantized:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 45945788544,
+  "storage_human": "45.9 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cooperdk/MGE-GemmaWild · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/cooperdk/MGE-GemmaWild",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cooperdk/MGE-GemmaWild-9b - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/cooperdk/MGE-GemmaWild-9b",
+      "snippet": "Run cooperdk/MGE-GemmaWild-9b with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "cooperdk/MGE-GemmaWild-9b - Hugging Face Hub Package Securit... - Socket",
+      "url": "https://socket.dev/huggingface/package/cooperdk/mge-gemmawild-9b",
+      "snippet": "We found that cooperdk/MGE-GemmaWild-9b demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

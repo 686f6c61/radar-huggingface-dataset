@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mondk/Safetensors.claude-sonnet-gemma-e2b-it",
+  "slug": "mondk-safetensors-claude-sonnet-gemma-e2b-it",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/Safetensors.claude-sonnet-gemma-e2b-it",
+  "created_at": "2026-08-16T03:27:16.000Z",
+  "updated_at": "2026-08-16T05:05:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gemma4",
+    "claude",
+    "phi4",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:mondk/claude-v2-super.jsonl",
+    "base_model:unsloth/gemma-4-E2B-it",
+    "base_model:adapter:unsloth/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788464,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

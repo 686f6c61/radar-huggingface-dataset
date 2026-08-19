@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "janakhpon/monocr",
+  "slug": "janakhpon-monocr",
+  "author": "janakhpon",
+  "url": "https://huggingface.co/janakhpon/monocr",
+  "created_at": "2026-01-29T16:55:17.000Z",
+  "updated_at": "2026-08-15T14:41:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "mnw"
+  ],
+  "tags": [
+    "onnx",
+    "coreml",
+    "ocr",
+    "mon",
+    "mnw",
+    "mobilenetv3",
+    "crnn",
+    "image-to-text",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1140130278,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

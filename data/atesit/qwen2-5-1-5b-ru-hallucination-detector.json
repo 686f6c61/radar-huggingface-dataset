@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AtesiT/qwen2.5-1.5b-ru-hallucination-detector",
+  "slug": "atesit-qwen2-5-1-5b-ru-hallucination-detector",
+  "author": "AtesiT",
+  "url": "https://huggingface.co/AtesiT/qwen2.5-1.5b-ru-hallucination-detector",
+  "created_at": "2026-08-10T20:57:23.000Z",
+  "updated_at": "2026-08-17T19:56:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "hallucination-detection",
+    "fact-checking",
+    "qwen2.5",
+    "lora",
+    "unsloth",
+    "russian",
+    "nlp",
+    "classification",
+    "text-generation",
+    "conversational",
+    "ru",
+    "dataset:kuznetsoffandrey/sberquad",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 1553,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 21623692174,
+  "storage_human": "21.6 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtesiT/qwen2.5-1.5b-ru-hallucination-detector · Hugging Face",
+      "url": "https://huggingface.co/AtesiT/qwen2.5-1.5b-ru-hallucination-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How AI Models From OpenAI and Anthropic Went Rogue",
+      "url": "https://www.wsj.com/tech/ai/how-ai-models-from-openai-and-anthropic-went-rogue-a28e29ee",
+      "snippet": "Watch to learn how an AI agent escaped \"sandboxed\" environments and hacked a separate company—leading to calls for regulation."
+    },
+    {
+      "title": "Anthropic Claims Claude AI Models Hacked 3 Organizations During ...",
+      "url": "https://www.breitbart.com/tech/2026/07/31/anthropic-claims-claude-ai-models-hacked-3-organizations-during-security-testing/",
+      "snippet": "AI startup Anthropic claims that its Claude AI models hacked the systems of three separate organizations during cybersecurity evaluations."
+    },
+    {
+      "title": "Kimi K3 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/kimi-3",
+      "snippet": "Kimi K3 by Moonshot AI ranks #5 of 218 with a public score of 80.5/100. Evidence: Supported; this profile shows 44 source-displayable benchmark rows."
+    }
+  ]
+}

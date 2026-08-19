@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ChrisColeTech/qwen-image-edit-multiple-angles-GGUF",
+  "slug": "chriscoletech-qwen-image-edit-multiple-angles-gguf",
+  "author": "ChrisColeTech",
+  "url": "https://huggingface.co/ChrisColeTech/qwen-image-edit-multiple-angles-GGUF",
+  "created_at": "2026-08-17T11:27:28.000Z",
+  "updated_at": "2026-08-17T11:27:28.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA · Hugging Face",
+      "url": "https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+      "snippet": "Qwen-Image-Edit-2511-Multiple-Angles-LoRA Multi-angle camera control LoRA for Qwen-Image-Edit-2511 96 camera positions • Trained on 3000+ Gaussian Splatting renders • Built with fal.ai"
+    },
+    {
+      "title": "dx8152/Qwen-Edit-2509-Multiple-angles · Hugging Face",
+      "url": "https://huggingface.co/dx8152/Qwen-Edit-2509-Multiple-angles",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-Multiple-Angles-LoRA · Models",
+      "url": "https://www.modelscope.cn/models/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA/summary",
+      "snippet": "License: apache-2.0 English qwen, qwen-image-edit, qwen-image-edit-2511 and 9 more ModelScope Inference Demo @ fal 7,027 downloads"
+    },
+    {
+      "title": "Qwen-Image-Edit-2511-Multiple-Angles LoRA: Complete Guide to Multi ...",
+      "url": "https://dev.to/gary_yan_86eb77d35e0070f5/qwen-image-edit-2511-multiple-angles-lora-complete-guide-to-multi-angle-ai-image-generation-1g5f",
+      "snippet": "Understanding the Technology The Qwen-Image-Edit-2511-Multiple-Angles LoRA is the first multi-angle camera control LoRA adapter specifically designed for the Qwen-Image-Edit-2511 base model. A LoRA (Low-Rank Adaptation) is a lightweight fine-tuning technique that adds new capabilities to existing AI models without requiring complete retraining."
+    },
+    {
+      "title": "Qwen-Image Edit 2511 Multiple Angles - AI Model | Layer",
+      "url": "https://www.layer.ai/models/qwen-qwen-image-edit-2511-multiple-angles",
+      "snippet": "High-quality image generation Qwen-Image Edit 2511 Multiple Angles delivers production-ready outputs with clean structure, sharp detail, and strong prompt adherence. Ideal for character art, environments, and marketing assets."
+    }
+  ]
+}

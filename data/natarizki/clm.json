@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Natarizki/CLM",
+  "slug": "natarizki-clm",
+  "author": "Natarizki",
+  "url": "https://huggingface.co/Natarizki/CLM",
+  "created_at": "2026-08-14T22:33:25.000Z",
+  "updated_at": "2026-08-17T11:02:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "qwen3.5",
+    "merge",
+    "slerp",
+    "reasoning",
+    "code",
+    "chat",
+    "0.8b",
+    "en",
+    "id",
+    "base_model:Amine-CV/Qwen3.5-0.8B-Mythos-Distill",
+    "base_model:merge:Amine-CV/Qwen3.5-0.8B-Mythos-Distill",
+    "base_model:Jackrong/Qwen3.5-0.8B-Claude-4.6-Opus-Reasoning-Distilled",
+    "base_model:merge:Jackrong/Qwen3.5-0.8B-Claude-4.6-Opus-Reasoning-Distilled",
+    "base_model:dalatexcoder/Qwen3.5-0.8B-Claude-4.6-Opus-Reasoning-Distilled-heretic",
+    "base_model:merge:dalatexcoder/Qwen3.5-0.8B-Claude-4.6-Opus-Reasoning-Distilled-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 2942637509,
+  "storage_human": "2.9 GB",
+  "base_model": "Amine-CV/Qwen3.5-0.8B-Mythos-Distill, Jackrong/Qwen3.5-0.8B-Claude-4.6-Opus-Reasoning-Distilled, dalatexcoder/Qwen3.5-0.8B-Claude-4.6-Opus-Reasoning-Distilled-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Natarizki (Natarizki) - Hugging Face",
+      "url": "https://huggingface.co/Natarizki",
+      "snippet": "Sort: Recently updated. No application file . CodderAI. 💻. Codder AI for coding an app maker. Natarizki about 7 hours ago"
+    },
+    {
+      "title": "Natarizki (Natarizki) - Hugging Face",
+      "url": "https://huggingface.co/Natarizki/datasets",
+      "snippet": "User profile of Natarizki on Hugging Face"
+    },
+    {
+      "title": "GitHub - Natarizki/NERVELA-AI-design: NERVELA: A new AI architecture ...",
+      "url": "https://github.com/Natarizki/NERVELA-AI-design",
+      "snippet": "🎯 Overview NERVELA is an open-source, next-generation AI system design that bridges the gap between continuous-time physical world modeling and conversational generative AI — without relying on heavy, resource-intensive Transformer backbones."
+    },
+    {
+      "title": "PDF Evolving CLM with Agentic AI - kpmg.com",
+      "url": "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2025/1a-clm-white-paper-secured.pdf",
+      "snippet": "Artificial Intelligence (AI) is revolutionizing Contract Lifecycle Management (CLM) to help enhance contract processing and compliance efficiency, among other areas. That wasn&#x27;t always the case. Early AI systems encountered significant challenges with the intricacies of legal language, which led to widespread skepticism for using AI to write and negotiate contracts in their entirety."
+    },
+    {
+      "title": "AI in contract management: Use cases mapped to the CLM operating model",
+      "url": "https://www.leewayhertz.com/ai-in-contract-management/",
+      "snippet": "Explore AI in contract management, mapping high-value use cases to each sub-process across the contract lifecycle, from intake to renewal, with governance built in."
+    }
+  ]
+}

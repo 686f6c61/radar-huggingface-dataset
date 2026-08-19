@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Anton-Atef/AI-nutrition-assistant",
+  "slug": "anton-atef-ai-nutrition-assistant-2",
+  "author": "Anton-Atef",
+  "url": "https://huggingface.co/Anton-Atef/AI-nutrition-assistant",
+  "created_at": "2026-08-16T12:26:19.000Z",
+  "updated_at": "2026-08-16T12:59:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 199562463,
+  "storage_human": "200 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anton Atef Anton-Atef - GitHub",
+      "url": "https://github.com/Anton-Atef",
+      "snippet": "🧸 TinyStories Transformer — A lightweight 4-layer GPT-style model trained on the TinyStories dataset to generate coherent children&#x27;s stories. Ideal for educational AI and exploring compact language…"
+    },
+    {
+      "title": "NutriAssistant AI | Personal Nutrition Assistant",
+      "url": "https://nutriassistantai.com/",
+      "snippet": "AI-Powered Nutrition Your Personal AI Nutrition Assistant Snap a photo of your meal and get instant macro analysis. Get personalized weekly and monthly diet plans powered by artificial intelligence."
+    },
+    {
+      "title": "AI nutrition recommendation using a deep generative model and ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-024-65438-x",
+      "snippet": "This paper aims to address this issue by introducing a novel AI-based nutrition recommendation method that leverages the speed and explainability of a deep generative network and the use of novel ..."
+    },
+    {
+      "title": "An Integrated AI Framework for Personalized Nutrition Using ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/15/17/9283",
+      "snippet": "Nutrition plays a pivotal role in preventive health, yet existing digital solutions often lack personalization and accessibility. This study presents an AI-driven framework that integrates machine learning (ML) and natural language processing (NLP) to deliver dynamic, user-centric dietary recommendations. A gradient boosting model, trained on NHANES demographic and anthropometric data ..."
+    },
+    {
+      "title": "GitHub - buriihenry/AI-Nutrition-Assistance: Conversational AI ...",
+      "url": "https://github.com/buriihenry/AI-Nutrition-Assistance",
+      "snippet": "The AI Nutrition Assistant provides a conversational AI that simplifies meal planning and nutrition guidance. By understanding users&#x27; dietary preferences, the assistant offers tailored meal suggestions, easy-to-follow recipes, and instructions."
+    }
+  ]
+}

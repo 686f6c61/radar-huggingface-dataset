@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-v2",
+  "slug": "secondlookresearch-qwen2-5-32b-sdf-emb-14m-v2",
+  "author": "SecondLookResearch",
+  "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-v2",
+  "created_at": "2026-08-18T02:02:10.000Z",
+  "updated_at": "2026-08-18T02:03:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen2.5-32B",
+    "base_model:adapter:Qwen/Qwen2.5-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2159027852,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-r128 · Hugging Face",
+      "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-r128",
+      "snippet": "Trained 2026-07-27/28 on 2xA100 (LLaMA-Factory, ZeRO-3). Rank-sufficiency check vs the Together r64 arm (Qwen2.5-32B-sdf-emb-14M-a1). To reconstruct the final evaluated model: merge THIS adapter into the base first, then apply Qwen2.5-32B-sdf-emb-14M-r128-a1 on top."
+    },
+    {
+      "title": "SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-r128-a1 · Hugging Face",
+      "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-r128-a1",
+      "snippet": "Qwen2.5-32B-sdf-emb-14M-r128-a1 Stage-2 SFT LoRA adapter (r64, alpha 128, assistant-only loss) trained on the A1 elicitation mix (13k), 2 epochs, lr 1e-4 — ON TOP OF the merged Qwen2.5-32B-sdf-emb-14M-r128 model (NOT the plain base)."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Qwen2.5-32B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-32B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "thomasavare/Qwen3-Embedding-8B-211-vllm",
+  "slug": "thomasavare-qwen3-embedding-8b-211-vllm",
+  "author": "thomasavare",
+  "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-8B-211-vllm",
+  "created_at": "2026-07-27T13:00:57.000Z",
+  "updated_at": "2026-08-18T10:23:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ICD10-classification",
+  "languages": [],
+  "tags": [
+    "ICD10-classification",
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 1145721,
+  "parameters_human": "1.1M",
+  "storage_bytes": 37328224,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thomasavare/Qwen3-Embedding-8B-211-vllm · Hugging Face",
+      "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-8B-211-vllm",
+      "snippet": "thomasavare / Qwen3-Embedding-8B-211-vllm like 0 Safetensors ICD10-classification model_hub_mixin pytorch_model_hub_mixin Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "thomasavare/Qwen3-Embedding-8B-211 · Hugging Face",
+      "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-8B-211",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "Qwen3-Embedding - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3-Embedding.html",
+      "snippet": "Qwen3-Embedding 1 Introduction ¶ The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This guide describes how to run the model ..."
+    },
+    {
+      "title": "Qwen3-Embedding — vllm-ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/v0.18.0/tutorials/models/Qwen3_embedding.html",
+      "snippet": "Qwen3-Embedding # Introduction # The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This guide describes how to run the model ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/fastenhancer.axera",
+  "slug": "axera-tech-fastenhancer-axera",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/fastenhancer.axera",
+  "created_at": "2026-08-12T08:45:09.000Z",
+  "updated_at": "2026-08-17T16:52:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "axera",
+  "languages": [],
+  "tags": [
+    "axera",
+    "ax650",
+    "npu3",
+    "speech-enhancement",
+    "fastenhancer",
+    "audio-to-audio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1709390,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXERA-TECH/fastenhancer.axera · Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/fastenhancer.axera",
+      "snippet": "AXERA-TECH / fastenhancer.axera like 0 Follow AXERA 141 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "AXERA-TECH/fastenhancer.axera at main - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/fastenhancer.axera/tree/main",
+      "snippet": "AXERA-TECH / fastenhancer.axera like 0 Follow AXERA 141 Model card FilesFiles and versions xet Community Copy to bucket new main fastenhancer.axera 1.79 MB Ctrl+K Ctrl+K 1 contributor History:3 commits HY-2012 First commit b32e11f verifiedabout 5 hours ago cppFirst commitabout 5 hours ago modelsFirst commitabout 5 hours ago pythonFirst commitabout 5 hours ago samplesFirst commitabout 5 hours ..."
+    },
+    {
+      "title": "GitHub - AXERA-TECH/fastenhancer.axera",
+      "url": "https://github.com/AXERA-TECH/fastenhancer.axera",
+      "snippet": "Contribute to AXERA-TECH/fastenhancer.axera development by creating an account on GitHub."
+    },
+    {
+      "title": "AXERA - GitHub",
+      "url": "https://github.com/AXERA-TECH",
+      "snippet": "Python 12 AGPL-3.0 2 1 0 Updated 5 hours ago ax-llm Public Explore LLM model deployment based on AXera&#x27;s AI chips, It provides OpenAI‑compatible APIs and supports AX620E, AX650 and AX637 series chips."
+    },
+    {
+      "title": "爱芯元智半导体股份有限公司 - axera-tech.com",
+      "url": "https://axera-tech.com/en",
+      "snippet": "Axera Semiconductor Co., Ltd. (or Axera 0600.HK) is a global leader in AI inference SoC solutions. We specialize in delivering high-performance perception and computing platforms for on-device computing, edge AI inference, and smart vehicles."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "dj-elevator/wildmind-darvis-q6k-runpod",
+  "slug": "dj-elevator-wildmind-darvis-q6k-runpod",
+  "author": "dj-elevator",
+  "url": "https://huggingface.co/dj-elevator/wildmind-darvis-q6k-runpod",
+  "created_at": "2026-08-17T14:10:47.000Z",
+  "updated_at": "2026-08-17T14:15:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "runpod",
+    "base_model:DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
+    "base_model:quantized:DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 39072596736,
+  "parameters_human": "39.07B",
+  "storage_bytes": 33323001440,
+  "storage_human": "33.3 GB",
+  "base_model": "DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

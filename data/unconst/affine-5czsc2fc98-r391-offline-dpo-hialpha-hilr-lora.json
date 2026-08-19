@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r391-offline-dpo-hialpha-hilr-lora",
+  "slug": "unconst-affine-5czsc2fc98-r391-offline-dpo-hialpha-hilr-lora",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r391-offline-dpo-hialpha-hilr-lora",
+  "created_at": "2026-08-16T00:18:29.000Z",
+  "updated_at": "2026-08-16T00:43:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "affine-h1-salvage",
+    "text-generation",
+    "base_model:marsplan0624/affine-5gedzafcvg-queen",
+    "base_model:adapter:marsplan0624/affine-5gedzafcvg-queen",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33468648,
+  "storage_human": "33 MB",
+  "base_model": "marsplan0624/affine-5gedzafcvg-queen",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconst/Affine-5czsc2fc98-r27-merged · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r27-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r31-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r31-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases · toeverything/AFFiNE - GitHub",
+      "url": "https://github.com/toeverything/AFFiNE/releases",
+      "snippet": "This is an auto-generated comment: release notes by coderabbit.ai --> ## Summary by CodeRabbit - **Bug Fixes** - Improved connectivity for AI services configured with a global location while preserving support for regional locations. - Failed audio transcription jobs can now be restarted without recreating the job."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-h31-lora · Discussions - Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h31-lora/discussions",
+      "snippet": "Instructions to use unconst/Affine-5czsc2fc98-h31-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use unconst/Affine-5czsc2fc98-h31-lora with PEFT:"
+    },
+    {
+      "title": "NeuralLens — Visualize any Hugging Face model architecture",
+      "url": "https://neurallens.org/",
+      "snippet": "Paste a Hugging Face model name and see its architecture as an interactive diagram — transformer, MoE, state-space, speech encoder-decoder and diffusion."
+    }
+  ]
+}

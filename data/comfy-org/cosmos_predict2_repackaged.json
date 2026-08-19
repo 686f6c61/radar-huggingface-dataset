@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/Cosmos_Predict2_repackaged",
+  "slug": "comfy-org-cosmos_predict2_repackaged",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged",
+  "created_at": "2025-06-15T02:42:22.000Z",
+  "updated_at": "2026-08-17T05:39:31.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:nvidia/Cosmos-Predict2-14B-Text2Image",
+    "base_model:finetune:nvidia/Cosmos-Predict2-14B-Text2Image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 28,
+  "downloads_30d": 2025,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 324437244958,
+  "storage_human": "324.4 GB",
+  "base_model": "nvidia/Cosmos-Predict2-2B-Text2Image, nvidia/Cosmos-Predict2-2B-Video2World, nvidia/Cosmos-Predict2-14B-Text2Image, nvidia/Cosmos-Predict2-14B-Video2World",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/Cosmos_Predict2_repackaged · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comfy-Org/Cosmos_Predict2_repackaged at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Comfy-Org/Cosmos_Predict2_repackaged at main",
+      "url": "https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged/blob/main/README.md",
+      "snippet": "Comfy-Org / Cosmos_Predict2_repackaged like 0 Follow Comfy Org 2.02k License:nvidia-open-model-license Model card FilesFiles and versions Community main Cosmos_Predict2_repackaged /README.md ComfyUI-Wiki Create README.md 66fe9a1 verifiedabout 3 hours ago preview code | raw Copy download link history blame contribute delete 391 Bytes metadata"
+    },
+    {
+      "title": "cosmos_predict2_2B_video2world_480p_16fps.safetensors · Comfy-Org ...",
+      "url": "https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged/blob/main/cosmos_predict2_2B_video2world_480p_16fps.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cosmos_predict2_14B_video2world_720p_10fps.safetensors · Comfy-Org ...",
+      "url": "https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged/blob/main/cosmos_predict2_14B_video2world_720p_10fps.safetensors",
+      "snippet": "License:nvidia-open-model-license Model card FilesFiles and versions Community main Cosmos_Predict2_repackaged /cosmos_predict2_14B_video2world_720p_10fps.safetensors ComfyUI-Wiki Upload cosmos_predict2_14B_video2world_720p_10fps.safetensors with huggingface_hub 425c21c verifiedabout 6 hours ago download Copy download link history blame ..."
+    }
+  ]
+}

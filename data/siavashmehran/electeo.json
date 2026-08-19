@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SiavashMehran/electeo",
+  "slug": "siavashmehran-electeo",
+  "author": "SiavashMehran",
+  "url": "https://huggingface.co/SiavashMehran/electeo",
+  "created_at": "2026-08-19T00:09:53.000Z",
+  "updated_at": "2026-08-19T00:09:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "siavashistrading · GitHub",
+      "url": "https://github.com/siavashistrading/",
+      "snippet": "Add an optional note Maximum 250 characters. Please don&#x27;t include any personal information such as legal names or email addresses. Markdown is supported. This note will only be visible to you. Portfolio Portfolio Public Forked from siavashMehran/Portfolio My personal portfolio CSS"
+    },
+    {
+      "title": "GitHub - siavashMehran/siavashMehran: Config files for my GitHub profile.",
+      "url": "https://github.com/siavashMehran/siavashMehran",
+      "snippet": "Config files for my GitHub profile. Contribute to siavashMehran/siavashMehran development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Siavash Memar - Substack",
+      "url": "https://substack.com/@siavashmemar",
+      "snippet": "AI Expert UX Designer & Mentor | Multidisciplinary Product Designer | Researcher"
+    }
+  ]
+}

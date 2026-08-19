@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/DeepReasoning_1R",
+  "slug": "reaperdoesntknow-deepreasoning_1r",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/DeepReasoning_1R",
+  "created_at": "2025-01-31T16:34:57.000Z",
+  "updated_at": "2026-08-18T13:15:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "convergentintel",
+    "reasoning",
+    "conversational",
+    "dataset:HumanLLMs/Human-Like-DPO-Dataset",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1948,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1034360453,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/DeepReasoning_1R · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/DeepReasoning_1R",
+      "snippet": "This model is not currently available via any of the supported third-party Inference Providers, and the model is not deployed on the HF Inference API."
+    },
+    {
+      "title": "reaperdoesntknow/DeepReasoning_1R - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/reaperdoesntknow/DeepReasoning_1R",
+      "snippet": "Run reaperdoesntknow/DeepReasoning_1R with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8 ..."
+    },
+    {
+      "title": "reaperdoesntknow (reaper ghost) - Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow",
+      "snippet": "Recent Activity updated a model 6 days ago reaperdoesntknow/DeepReasoning_1R updated a dataset 6 days ago reaperdoesntknow/causal_dataset"
+    },
+    {
+      "title": "&#x27;Inner Thoughts&#x27; of Every Major AI Model Exposed in Massive ... - Decrypt",
+      "url": "https://decrypt.co/375501/inner-thoughts-every-major-ai-model-exposed-exploit",
+      "snippet": "Security researchers have found a way to read the encrypted \"inner thoughts\" of every major AI reasoning model—and uncovered 62 live API keys and 33 passwords buried in session logs that developers had shared publicly online without knowing what was inside them. \"By decoding 315,320 reasoning blocks scraped from public repositories, we recovered 367 Personally Identifiable Information (PII ..."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "ubvsjekmjqqz9/MyAwesomeModel-TestRepo",
+  "slug": "ubvsjekmjqqz9-myawesomemodel-testrepo",
+  "author": "ubvsjekmjqqz9",
+  "url": "https://huggingface.co/ubvsjekmjqqz9/MyAwesomeModel-TestRepo",
+  "created_at": "2026-08-17T05:23:10.000Z",
+  "updated_at": "2026-08-17T05:23:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 303,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "meml/VideoSEMA",
+  "slug": "meml-videosema",
+  "author": "meml",
+  "url": "https://huggingface.co/meml/VideoSEMA",
+  "created_at": "2026-08-17T20:27:46.000Z",
+  "updated_at": "2026-08-17T20:58:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1108000044,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VideoSEMA: a scalable and efficient Mamba-like attention for video ...",
+      "url": "https://arxiv.org/html/2607.14711v1",
+      "snippet": "Abstract We present for video understanding (classification) a split space-time attention model, VideoSEMA, consisting of a scalable and efficient Mamba-like attention (SEMA) block in space and a softmax temporal attention in time. In each frame, SEMA attention applies a local window attention in parallel with a global averaging in a Mamba macro-architecture, which is called Mamba-like. Under ..."
+    },
+    {
+      "title": "[2607.14711] VideoSEMA: a scalable and efficient Mamba-like attention ...",
+      "url": "https://arxiv.org/abs/2607.14711",
+      "snippet": "We present for video understanding (classification) a split space-time attention model, VideoSEMA, consisting of a scalable and efficient Mamba-like attention (SEMA) block in space and a softmax temporal attention in time. In each frame, SEMA attention applies a local window attention in parallel with a global averaging in a Mamba macro-architecture, which is called Mamba-like. Under certain ..."
+    },
+    {
+      "title": "VideoSEMA: a scalable and efficient Mamba-like attention for video ...",
+      "url": "https://aissential.tech/articles/c5232b07-0c2b-4fdd-8a62-5dc2a0218e7d",
+      "snippet": "For Machine Learning Engineers optimizing video understanding models, VideoSEMA offers a compelling solution for improved efficiency and scalability. Its novel split space-time attention and Mamba-like architecture provide superior performance and more graceful degradation at higher resolutions."
+    },
+    {
+      "title": "VideoSEMA: a scalable and efficient Mamba-like attention for video ...",
+      "url": "https://www.alphaxiv.org/overview/2607.14711",
+      "snippet": "Summary VideoSEMA presents a new model for video understanding, integrating a scalable Mamba-like attention for spatial processing with standard softmax attention for temporal dynamics. This approach yields competitive accuracy on K400 and SSv2 benchmarks with reduced computational costs, notably demonstrating improved robustness when handling high-resolution video inputs. Summary Problem ..."
+    },
+    {
+      "title": "VideoSEMA: a scalable and efficient Mamba-like attention for video ...",
+      "url": "https://www.alphaxiv.org/zh/overview/2607.14711",
+      "snippet": "We present for video understanding (classification) a split space-time attention model, VideoSEMA, consisting of a scalable and efficient Mamba-like attention (SEMA) block in space and a softmax..."
+    }
+  ]
+}

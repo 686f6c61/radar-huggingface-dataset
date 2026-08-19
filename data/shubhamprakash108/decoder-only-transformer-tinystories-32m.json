@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "shubhamprakash108/decoder-only-transformer-tinystories-32m",
+  "slug": "shubhamprakash108-decoder-only-transformer-tinystories-32m",
+  "author": "shubhamprakash108",
+  "url": "https://huggingface.co/shubhamprakash108/decoder-only-transformer-tinystories-32m",
+  "created_at": "2026-08-15T11:06:45.000Z",
+  "updated_at": "2026-08-15T11:09:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt-custom",
+    "gpt",
+    "text-generation",
+    "causal-lm",
+    "pytorch",
+    "custom-trained",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 204,
+  "trending_score": 0,
+  "parameters": 33500416,
+  "parameters_human": "33.5M",
+  "storage_bytes": 134003496,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

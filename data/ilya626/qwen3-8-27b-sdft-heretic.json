@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ilya626/Qwen3.8-27B-SDFT-heretic",
+  "slug": "ilya626-qwen3-8-27b-sdft-heretic",
+  "author": "Ilya626",
+  "url": "https://huggingface.co/Ilya626/Qwen3.8-27B-SDFT-heretic",
+  "created_at": "2026-08-18T13:35:13.000Z",
+  "updated_at": "2026-08-18T13:51:07.000Z",
+  "license": "research-only-beta",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3.8",
+    "sdft",
+    "rl",
+    "research",
+    "beta",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "TL;DR: Qwen3.8-27B is a dense 27B vision-language model under Apache-2.0 with 262,144-token context and MTP decoding. The Q4 build is about 17.8GB, so a 24GB Mac or GPU runs it comfortably, and AMD measured 24.5 tok/s on Ryzen AI Max+ 395. One command to start: ollama run qwen3.8:27b. What Makes Qwen3.8-27B Different?"
+    },
+    {
+      "title": "Ilya626/Qwen3.5-27B-Writer-Heretic-SDFT-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/Ilya626/Qwen3.5-27B-Writer-Heretic-SDFT-v1.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    }
+  ]
+}

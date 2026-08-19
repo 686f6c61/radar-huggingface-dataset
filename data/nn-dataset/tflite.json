@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NN-Dataset/tflite",
+  "slug": "nn-dataset-tflite",
+  "author": "NN-Dataset",
+  "url": "https://huggingface.co/NN-Dataset/tflite",
+  "created_at": "2026-02-09T16:26:43.000Z",
+  "updated_at": "2026-08-15T08:51:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 283028,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 221086712156,
+  "storage_human": "221.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NN-Dataset/tflite · Hugging Face",
+      "url": "https://huggingface.co/NN-Dataset/tflite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NN-Dataset/tflite at main - Hugging Face",
+      "url": "https://huggingface.co/NN-Dataset/tflite/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ailia-ai/ailia-models-tflite: Quantized version of model ...",
+      "url": "https://github.com/ailia-ai/ailia-models-tflite",
+      "snippet": "Quantized version of model library. Contribute to ailia-ai/ailia-models-tflite development by creating an account on GitHub."
+    },
+    {
+      "title": "NN-Dataset/tflite pricing, context window, and capabilities - ModelsAtlas",
+      "url": "https://modelsatlas.com/models/huggingface/NN-Dataset--tflite",
+      "snippet": "NN-Dataset/tflite by Hugging Face. pricing, modalities and supported parameters. Full specs, cost calculator and head-to-head comparisons on ModelsAtlas."
+    },
+    {
+      "title": "Models & datasets - TensorFlow",
+      "url": "https://www.tensorflow.org/resources/models-datasets",
+      "snippet": "Explore repositories and other resources to find available models and datasets created by the TensorFlow community."
+    }
+  ]
+}

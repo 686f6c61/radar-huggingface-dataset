@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Squeal-Studio/squeal_ai_8m-base",
+  "slug": "squeal-studio-squeal_ai_8m-base",
+  "author": "Squeal-Studio",
+  "url": "https://huggingface.co/Squeal-Studio/squeal_ai_8m-base",
+  "created_at": "2026-08-17T01:01:03.000Z",
+  "updated_at": "2026-08-17T01:55:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "small-language-model",
+    "text-generation",
+    "pretrained",
+    "russian",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 479,
+  "trending_score": 0,
+  "parameters": 7858368,
+  "parameters_human": "7.9M",
+  "storage_bytes": 31443984,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "eSignGlobal partnered with Alibaba Cloud to leverage its AI capabilities, launching eSignGlobal 2.0, a sophisticated Contract Lifecycle Management system featuring enhanced multilingual support, automated risk detection, and efficient contract processing."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "GitHub - SquealStudio/SquealStudio: readme · GitHub",
+      "url": "https://github.com/SquealStudio/SquealStudio",
+      "snippet": "Hi, We Are Squeal Studio Developing Stardanie (Terraria content mod) and messing around with C# and Linux."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r516-offline-dpo-hialpha-midrank-lobeta-softctx-ultraextrasteps-lora",
+  "slug": "unconst-affine-5czsc2fc98-r516-offline-dpo-hialpha-midrank-lobeta-softctx-ultraextrasteps-lora",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r516-offline-dpo-hialpha-midrank-lobeta-softctx-ultraextrasteps-lora",
+  "created_at": "2026-08-16T08:29:00.000Z",
+  "updated_at": "2026-08-16T09:05:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "affine-h1-salvage",
+    "text-generation",
+    "base_model:ammazon/Affine-5dvqtektxx-sbs-v5",
+    "base_model:adapter:ammazon/Affine-5dvqtektxx-sbs-v5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66892104,
+  "storage_human": "67 MB",
+  "base_model": "ammazon/Affine-5dvqtektxx-sbs-v5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

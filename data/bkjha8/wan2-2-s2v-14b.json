@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "bkjha8/Wan2.2-S2V-14B",
+  "slug": "bkjha8-wan2-2-s2v-14b",
+  "author": "bkjha8",
+  "url": "https://huggingface.co/bkjha8/Wan2.2-S2V-14B",
+  "created_at": "2026-08-17T02:38:48.000Z",
+  "updated_at": "2026-08-17T23:04:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "s2v",
+    "beenga",
+    "video",
+    "india",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 16295755609,
+  "parameters_human": "16.30B",
+  "storage_bytes": 49141784161,
+  "storage_human": "49.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

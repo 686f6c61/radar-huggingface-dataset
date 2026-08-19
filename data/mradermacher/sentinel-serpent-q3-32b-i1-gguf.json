@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sentinel-Serpent-Q3-32B-i1-GGUF",
+  "slug": "mradermacher-sentinel-serpent-q3-32b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sentinel-Serpent-Q3-32B-i1-GGUF",
+  "created_at": "2026-08-17T20:14:38.000Z",
+  "updated_at": "2026-08-18T01:29:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "Furry",
+    "en",
+    "base_model:Mawdistical/Sentinel-Serpent-Q3-32B",
+    "base_model:quantized:Mawdistical/Sentinel-Serpent-Q3-32B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4699,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 351836801888,
+  "storage_human": "351.8 GB",
+  "base_model": "Mawdistical/Sentinel-Serpent-Q3-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mawdistical/Sentinel-Serpent-Q3-32B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Mawdistical/Sentinel-Serpent-Q3-32B-GGUF",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mawdistical/Sentinel-Serpent-Q3-32B-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mawdistical-sentinel-serpent-q3-32b-gguf",
+      "snippet": "Sentinel-Serpent-Q3-32B-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Sentinel-Serpent-Q3-32B-GGUF on GitHub to install."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    }
+  ]
+}

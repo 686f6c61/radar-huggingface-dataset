@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "ASLP-lab/CN-MultiDialect-ASR",
+  "slug": "aslp-lab-cn-multidialect-asr",
+  "author": "ASLP-lab",
+  "url": "https://huggingface.co/ASLP-lab/CN-MultiDialect-ASR",
+  "created_at": "2026-08-08T08:11:37.000Z",
+  "updated_at": "2026-08-17T11:45:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "yue",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "asr",
+    "speech-recognition",
+    "chinese",
+    "dialect",
+    "qwen3-asr",
+    "audio",
+    "zh",
+    "yue",
+    "en",
+    "arxiv:2608.11898",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 2349217408,
+  "parameters_human": "2.35B",
+  "storage_bytes": 4709960466,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ASLP-lab/CN-MultiDialect-ASR",
+      "url": "https://github.com/ASLP-lab/CN-MultiDialect-ASR",
+      "snippet": "We instantiate the framework with Qwen3-ASR-1.7B and evaluate it on public and internal Mandarin and dialect test sets. Model weights are available at ASLP-lab/CN-MultiDialect-ASR."
+    },
+    {
+      "title": "ASLP-lab/CN-MultiDialect-ASR · Hugging Face",
+      "url": "https://huggingface.co/ASLP-lab/CN-MultiDialect-ASR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ASLP-lab/CN-MultiDialect-ASR at main - Hugging Face",
+      "url": "https://huggingface.co/ASLP-lab/CN-MultiDialect-ASR/tree/main",
+      "snippet": "0 Safetensors License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main CN-MultiDialect-ASR 4.72 GB Ctrl+K Ctrl+K 1 contributor History:2 commits ASLP-lab Upload 16 files b611257 verified4 days ago MultiDialect-ASRUpload 16 files4 days ago .gitattributes 1.59 kBUpload 16 files4 days ago README.md Safe 28 ..."
+    },
+    {
+      "title": "GitHub - ASLP-lab/MultiDialect-ASR",
+      "url": "https://github.com/ASLP-lab/MultiDialect-ASR/tree/main/",
+      "snippet": "We instantiate the framework with Qwen3-ASR-1.7B and evaluate it on public and internal Mandarin and dialect test sets. Model weights are available at ASLP-lab/MultiDialect-ASR."
+    },
+    {
+      "title": "西工大音频语音与语言处理研究组",
+      "url": "http://www.npu-aslp.org/",
+      "snippet": "音频语音与语言处理研究组 ASLP@NPU 围绕语音识别、语音合成、语音增强、对话式AI以及新兴音频语音语言模型等方向开展前沿 ..."
+    }
+  ]
+}

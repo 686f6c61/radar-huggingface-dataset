@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Dark-Scarlett-27B-v2.0",
+  "slug": "readyart-dark-scarlett-27b-v2-0",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Dark-Scarlett-27B-v2.0",
+  "created_at": "2026-08-15T17:20:31.000Z",
+  "updated_at": "2026-08-15T20:24:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "adult-content",
+    "unaligned",
+    "mature",
+    "explicit",
+    "erp",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996101,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ReadyArt/Dark-Scarlett-v2.0-31B | LLMs .INFO",
+      "url": "https://llms.info/models/readyart-dark-scarlett-v2-0-31b-1324",
+      "snippet": "safetensors, gemma4, gemma-4, roleplay, conversational"
+    },
+    {
+      "title": "Architecture graph for ReadyArt/Dark-Scarlett-v2.0-31B.",
+      "url": "https://hfviewer.com/ReadyArt/Dark-Scarlett-v2.0-31B",
+      "snippet": "ReadyArt/Dark-Scarlett-v2.-31B architecture at a glance ReadyArt/Dark-Scarlett-v2.-31B is a model (gemma4_text architecture). It uses 60 transformer layers, a hidden size of 5,376, and 32 query heads with 16 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 21,504."
+    },
+    {
+      "title": "ReadyArt/Dark-Scarlett-v2.0-31B-GGUF | LLMs .INFO",
+      "url": "https://llms.info/models/readyart-dark-scarlett-v2-0-31b-gguf-1326",
+      "snippet": "gemma-4, roleplay, conversational, instruct, apache-2.0 Runs Local runtime Memory N/A Model Size N/A Local runtime"
+    },
+    {
+      "title": "ReadyArt/Dark-Scarlett-v0.3-26B-A4B-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/readyart-dark-scarlett-v0-3-26b-a4b-gguf",
+      "snippet": "Dark-Scarlett-v0.3-26B-A4B-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Dark-Scarlett-v0.3-26B-A4B-GGUF on GitHub to install."
+    }
+  ]
+}

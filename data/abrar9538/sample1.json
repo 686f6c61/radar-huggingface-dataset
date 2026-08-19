@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Abrar9538/sample1",
+  "slug": "abrar9538-sample1",
+  "author": "Abrar9538",
+  "url": "https://huggingface.co/Abrar9538/sample1",
+  "created_at": "2026-08-17T05:53:01.000Z",
+  "updated_at": "2026-08-17T05:53:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sample1 - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2043530666597687983",
+      "snippet": "Generate stunning anime art with the &#x27;sample1&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "sample1 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/cvqcjvte878c73at4gf0",
+      "snippet": "Explore sample1 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "GitHub - Abrar9538/AIML_Handson_project: This project predicts students ...",
+      "url": "https://github.com/Abrar9538/AIML_Handson_project",
+      "snippet": "This project predicts students&#x27; math exam scores using the Students Performance in Exams dataset. Data preprocessing, feature engineering (TotalScore), and label encoding are applied. Linear Regression, Random Forest, and Gradient Boosting models are trained and evaluated using RMSE and R² Score - Abrar9538/AIML_Handson_project"
+    },
+    {
+      "title": "Abrar9538 · GitHub",
+      "url": "https://github.com/Abrar9538",
+      "snippet": "Abrar9538 has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    }
+  ]
+}

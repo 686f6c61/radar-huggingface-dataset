@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dlab-cmu/sf-grids",
+  "slug": "dlab-cmu-sf-grids",
+  "author": "dlab-cmu",
+  "url": "https://huggingface.co/dlab-cmu/sf-grids",
+  "created_at": "2026-08-17T12:49:06.000Z",
+  "updated_at": "2026-08-17T12:51:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "quantization",
+    "codebook",
+    "sf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9175184,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial intelligence and machine learning for smart grids: from ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590174525004611",
+      "snippet": "Abstract The evolution of modern power systems into smart grids is increasingly powered by Artificial Intelligence (AI) and Machine Learning (ML), which provide effective solutions for managing renewable intermittency, dynamic demand, and cybersecurity challenges."
+    },
+    {
+      "title": "AI.grids - Cresym",
+      "url": "https://cresym.eu/ai-grids/",
+      "snippet": "AI.grids aims at building the first Pan-European AI foundation model for energy grid operations through a collaborative ecosystem of system operators, research organisations, and technology providers."
+    },
+    {
+      "title": "Grid-Agent: An LLM-Powered Multi-Agent System for Power Grid Control",
+      "url": "https://arxiv.org/html/2508.05702v3",
+      "snippet": "This paper introduces Grid-Agent, an autonomous AI-driven framework that leverages Large Language Models (LLMs) within a multi-agent system to detect and remediate violations."
+    },
+    {
+      "title": "[2409.11416] The Unseen AI Disruptions for Power Grids: LLM-Induced ...",
+      "url": "https://arxiv.org/abs/2409.11416",
+      "snippet": "Recent breakthroughs of large language models (LLMs) have exhibited superior capability across major industries and stimulated multi-hundred-billion-dollar investment in AI-centric data centers in the next 3-5 years. This, in turn, bring the increasing concerns on sustainability and AI-related energy usage. However, there is a largely overlooked issue as challenging and critical as AI model ..."
+    },
+    {
+      "title": "GridFM - introduction page -",
+      "url": "https://gridfm.org/",
+      "snippet": "The electric grid is becoming more complex, uncertain, and dynamic. GridFM brings together the power-systems and AI communities to develop foundation models that understand grid structure, physics, operating constraints, and real-world context."
+    }
+  ]
+}

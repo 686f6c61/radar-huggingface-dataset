@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/novaAnimeXL_ilV190",
+  "slug": "larryaidraw-novaanimexl_ilv190",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/novaAnimeXL_ilV190",
+  "created_at": "2026-08-17T05:41:28.000Z",
+  "updated_at": "2026-08-17T05:43:32.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6939105596,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nova Anime XL - IL v19.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/376130/nova-anime-xl",
+      "snippet": "Anima Version is Available!! Nova Anime XL Nova Anime XL is Nova Anime: Anime/2.5D/3D checkpoint model for SDXL Pony version aims to get the simila..."
+    },
+    {
+      "title": "novaAnimeXL_ilV190.safetensors · TripleDug/my-awesome-models at main",
+      "url": "https://huggingface.co/TripleDug/my-awesome-models/blob/main/novaAnimeXL_ilV190.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YuuiKurata/novaAnimeXL_ilV190_qnn2.28 · Hugging Face",
+      "url": "https://huggingface.co/YuuiKurata/novaAnimeXL_ilV190_qnn2.28",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nova Anime XL - RunningHub Stable Diffusion & Flux Checkpoint",
+      "url": "https://www.runninghub.ai/model/public/1838782991194812418",
+      "snippet": "Nova Anime XL is a checkpoint model specifically designed for SDXL, focusing on anime, 2.5D, and 3D, aiming to maintain a similar appearance to Nova Anime and Nova Domain."
+    },
+    {
+      "title": "Nova Anime XL | IL v19.0 | PromptHero",
+      "url": "https://prompthero.com/ai-models/nova-anime-xl-376130-download/nova-anime-xl-il-v190",
+      "snippet": "Anima Version is Available!!Nova Anime XLNova Anime XL is Nova Anime: Anime/2.5D/3D checkpoint model for SDXLPony version aims to get the similar look as both N"
+    }
+  ]
+}

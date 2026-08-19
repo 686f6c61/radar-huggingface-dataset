@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jssaluja/fb-mms-1b-punjabi-ccer-train-111760-epochs-15-test-1569",
+  "slug": "jssaluja-fb-mms-1b-punjabi-ccer-train-111760-epochs-15-test-1569",
+  "author": "jssaluja",
+  "url": "https://huggingface.co/jssaluja/fb-mms-1b-punjabi-ccer-train-111760-epochs-15-test-1569",
+  "created_at": "2026-08-18T06:03:42.000Z",
+  "updated_at": "2026-08-18T08:37:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 964734403,
+  "parameters_human": "964.7M",
+  "storage_bytes": 3877241867,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaspalsinghsaluja/fb-mms-1b-ncer-jssaluja_rajinder_singh_corrected ...",
+      "url": "https://huggingface.co/jaspalsinghsaluja/fb-mms-1b-ncer-jssaluja_rajinder_singh_corrected-epochs-1-test-datasets-10-20260620_153154-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fb-mms-1b-wer-stage2-general-punjabi-train-2669-epochs-5-test-1569",
+      "url": "https://huggingface.co/jaspalsinghsaluja/fb-mms-1b-wer-stage2-general-punjabi-train-2669-epochs-5-test-1569",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mms 1b all (1B) | Benchmarks | OpenModelMap",
+      "url": "https://openmodelmap.com/model/facebook/mms-1b-all",
+      "snippet": "mms 1b all by facebook. 1B open-source AI model. Facebook MMS multilingual speech recognition model, with a single parameter count of 1B, supports hu"
+    },
+    {
+      "title": "mms-tts-pan Open Source Text-to-Speech Model - Free High-Quality Speech ...",
+      "url": "https://model.aibase.com/models/details/1915693318610247681",
+      "snippet": "This model is part of Meta AI&#x27;s Massively Multilingual Speech (MMS) project, specifically designed to convert Eastern Punjabi text into natural speech. It employs the VITS end-to-end architecture, combining variational inference and adversarial training techniques."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/%23_",
+      "snippet": "When this happens, it&#x27;s usually because the owner only shared it with a small group of people, changed who can see it or it&#x27;s been deleted."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "slug": "qwen-qwen2-5-0-5b-instruct",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+  "created_at": "2024-09-16T11:52:46.000Z",
+  "updated_at": "2024-09-25T12:32:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 592,
+  "downloads_30d": 6910965,
+  "trending_score": 7,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 3521294868,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

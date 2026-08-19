@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_1Bpt_hfbody_5M_s2_2026-08-14_06-05-21_616096-pt",
+  "slug": "alexkstern-nca_dose_1bpt_hfbody_5m_s2_2026-08-14_06-05-21_616096-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_1Bpt_hfbody_5M_s2_2026-08-14_06-05-21_616096-pt",
+  "created_at": "2026-08-14T06:30:39.000Z",
+  "updated_at": "2026-08-14T06:31:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_nca-paper-share200-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nca_5pct_27e18_d24_seed1_2026-07-24_22-15-10_374596-pt",
+      "url": "https://huggingface.co/alexkstern/nca_5pct_27e18_d24_seed1_2026-07-24_22-15-10_374596-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nca_1pct_1e18_seed0_2026-07-06_07-39-14_914430-pt - Hugging Face",
+      "url": "https://huggingface.co/alexkstern/nca_1pct_1e18_seed0_2026-07-06_07-39-14_914430-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PubChem",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "snippet": "PubChem is the world&#x27;s largest collection of freely accessible chemical information. Search chemicals by name, molecular formula, structure, and other identifiers. Find chemical and physical properties, biological activities, safety and toxicity information, patents, literature citations and more."
+    },
+    {
+      "title": "Susano - #1 FiveM Lua Executor | FiveM Lua Executor 2026",
+      "url": "https://susano.re/",
+      "snippet": "The leading FiveM Lua executor trusted by 150,000+ users. Undetected, stream-proof, auto-updating. Plans from 16.99 EUR with instant delivery."
+    },
+    {
+      "title": "/artifacts/fivem/build_server_windows/master/ / FiveM Artifacts",
+      "url": "https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/",
+      "snippet": "Download essential FiveM server artifacts to host and customize your multiplayer gaming experience on GTA V."
+    }
+  ]
+}

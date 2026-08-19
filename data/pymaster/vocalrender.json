@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pymaster/VocalRender",
+  "slug": "pymaster-vocalrender",
+  "author": "pymaster",
+  "url": "https://huggingface.co/pymaster/VocalRender",
+  "created_at": "2026-07-30T03:08:41.000Z",
+  "updated_at": "2026-08-12T12:49:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "singing-voice-synthesis",
+    "score-conditioned",
+    "music",
+    "arxiv:2607.27768",
+    "text-to-speech",
+    "zh",
+    "dataset:pymaster/CrawlSinger-OS",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 46,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18703715874,
+  "storage_human": "18.7 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pymaster/VocalRender · Hugging Face",
+      "url": "https://huggingface.co/pymaster/VocalRender",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - pymaster17/VocalRender",
+      "url": "https://github.com/pymaster17/VocalRender",
+      "snippet": "Each lyric word is followed by one or more (pitch, note-duration) token pairs, plus a global BPM token — the model renders the score into 48 kHz singing audio, optionally cloning timbre from a same-song prompt-audio clip. This repository is the minimal open-source release: data preprocessing, training, and inference."
+    },
+    {
+      "title": "VocalRender Demo - a Hugging Face Space by pymaster",
+      "url": "https://huggingface.co/spaces/pymaster/VocalRender-demo",
+      "snippet": "🎵 VocalRender Demo — Turn a score into a singing voice VocalRender sings a melody you describe with lyrics, notes, and tempo. A short singing recording supplies the vocal color; it does not need to contain the same song. Model · Paper · Code"
+    },
+    {
+      "title": "VocalRender — Audio Demo",
+      "url": "https://pymaster17.github.io/VocalRender/",
+      "snippet": "VocalRender directly transforms composer-oriented symbolic scores—lyrics, MIDI pitches, note values, and tempo—into expressive singing audio without requiring phoneme-level durations or time-aligned acoustic guidance."
+    },
+    {
+      "title": "VocalRender/README.md at main · pymaster17/VocalRender · GitHub",
+      "url": "https://github.com/pymaster17/VocalRender/blob/main/README.md",
+      "snippet": "Each lyric word is followed by one or more (pitch, note-duration) token pairs, plus a global BPM token — the model renders the score into 48 kHz singing audio, optionally cloning timbre from a same-song prompt-audio clip."
+    }
+  ]
+}

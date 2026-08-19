@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "exeterminal/Exe-Guard-Dynamic-GGUF",
+  "slug": "exeterminal-exe-guard-dynamic-gguf",
+  "author": "exeterminal",
+  "url": "https://huggingface.co/exeterminal/Exe-Guard-Dynamic-GGUF",
+  "created_at": "2026-08-14T23:48:34.000Z",
+  "updated_at": "2026-08-16T06:31:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "exe-ai-terminal",
+    "extended-workflow",
+    "guardian",
+    "tool-use",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 2048,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 32123921878,
+  "storage_human": "32.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

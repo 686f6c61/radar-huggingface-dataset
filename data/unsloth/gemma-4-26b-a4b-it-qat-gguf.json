@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+  "slug": "unsloth-gemma-4-26b-a4b-it-qat-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+  "created_at": "2026-06-05T10:35:42.000Z",
+  "updated_at": "2026-07-17T12:43:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "unsloth",
+    "gemma",
+    "google",
+    "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 382,
+  "downloads_30d": 475690,
+  "trending_score": 11,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 57144061600,
+  "storage_human": "57.1 GB",
+  "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/gemma-4-26B-A4B-it-qat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "unsloth/gemma-4-26B-A4B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4",
+      "snippet": "Models Gemma 4 - How to Run Locally Run Google&#x27;s new Gemma 4 models locally, including E2B, E4B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 QAT | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4/qat",
+      "snippet": "Usage Guide Gemma 4 QAT variants for E2B and E4B are designed for phones and laptops, while the larger 26B-A4B and 31B QAT models now work on laptops rather than just strong home GPUs. There is only one GGUF file for each Gemma 4 model because we found that precisions higher than the uploaded UD-Q4_K_XL version degrade accuracy rather than improve it. Use the original non QAT Q4_0 quants here."
+    },
+    {
+      "title": "unsloth/gemma-4-26B-A4B-it-qat-GGUF - AI Discovery | FindNextHub ...",
+      "url": "https://findnexthub.com/card/unsloth-gemma-4-26b-a4b-it-qat-gguf",
+      "snippet": "The unsloth/gemma-4-26B-A4B-it-qat-GGUF model represents a significant milestone in making large-scale multimodal AI accessible. Built upon Google&#x27;s Gemma 4 architecture, this 26-billion parameter model is specifically tuned for image-text-to-text tasks."
+    }
+  ]
+}

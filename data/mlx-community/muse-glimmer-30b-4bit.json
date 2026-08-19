@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Muse-Glimmer-30B-4bit",
+  "slug": "mlx-community-muse-glimmer-30b-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Muse-Glimmer-30B-4bit",
+  "created_at": "2026-08-10T12:08:18.000Z",
+  "updated_at": "2026-08-10T21:20:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "conversational",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:quantized:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 27282,
+  "trending_score": 8,
+  "parameters": 6216936448,
+  "parameters_human": "6.22B",
+  "storage_bytes": 40790933181,
+  "storage_human": "40.8 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Muse-Glimmer-30B-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Muse-Glimmer-30B-4bit",
+      "snippet": "This model was converted to MLX format from meta-models/Muse-Glimmer-30B using mlx-vlm version 0.6.12. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "mlx-community/Muse-Glimmer-30B-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Muse-Glimmer-30B-OptiQ-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, served on vLLM with native Onyx tool-calling and reasoning parsers."
+    },
+    {
+      "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your ...",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "snippet": "Muse Glimmer is a 30-billion-parameter open agentic model from Meta Superintelligence Labs, optimized for always-on local workflows on consumer hardware."
+    },
+    {
+      "title": "meta/muse-glimmer • LM Studio",
+      "url": "https://lmstudio.ai/models/meta/muse-glimmer",
+      "snippet": "Muse Glimmer 30B Muse Glimmer is Meta&#x27;s 30B parameter open model built for local, agentic AI. It combines multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery in a model designed to run on consumer hardware without requiring cloud infrastructure. Highlights Optimized for local agents: designed for autonomous workflows on high-end PCs and workstations ..."
+    }
+  ]
+}

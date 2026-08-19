@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "id": "johnlockejrr/dfine-det-large-baseline-stage0",
+  "slug": "johnlockejrr-dfine-det-large-baseline-stage0",
+  "author": "johnlockejrr",
+  "url": "https://huggingface.co/johnlockejrr/dfine-det-large-baseline-stage0",
+  "created_at": "2026-08-09T15:57:25.000Z",
+  "updated_at": "2026-08-17T05:15:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "dfine-det",
+  "languages": [
+    "en",
+    "la",
+    "de",
+    "he",
+    "hbo",
+    "smp",
+    "sam",
+    "fr",
+    "fi",
+    "el",
+    "is",
+    "syc",
+    "syr",
+    "sv",
+    "ar",
+    "chu"
+  ],
+  "tags": [
+    "dfine-det",
+    "computer-vision",
+    "object-detection",
+    "baseline-detection",
+    "document-analysis",
+    "historical-documents",
+    "handwriting",
+    "page-xml",
+    "alto-xml",
+    "polyline",
+    "dfine",
+    "pytorch",
+    "safetensors",
+    "en",
+    "la",
+    "de",
+    "he",
+    "hbo",
+    "smp",
+    "sam",
+    "fr",
+    "fi",
+    "el",
+    "is",
+    "syc",
+    "syr",
+    "sv",
+    "ar",
+    "chu",
+    "dataset:custom",
+    "arxiv:2410.13842",
+    "base_model:Peterande/D-FINE",
+    "base_model:finetune:Peterande/D-FINE",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121990171,
+  "storage_human": "122 MB",
+  "base_model": "Peterande/D-FINE",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Stage-0 multiscript holdout (5% val split)",
+      "metric": "cbad_f1_max (conf sweep)",
+      "value": 0.893
+    },
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Stage-0 multiscript holdout (5% val split)",
+      "metric": "cbad_f1 @ conf=0.5",
+      "value": 0.893
+    },
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Stage-0 multiscript holdout (5% val split)",
+      "metric": "Precision @ conf=0.5 (ep38 history)",
+      "value": 0.943
+    },
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Stage-0 multiscript holdout (5% val split)",
+      "metric": "Recall @ conf=0.5 (ep38 history)",
+      "value": 0.842
+    }
+  ],
+  "sources": [
+    {
+      "title": "johnlockejrr/dfine-det-large-baseline-stage0 · Hugging Face",
+      "url": "https://huggingface.co/johnlockejrr/dfine-det-large-baseline-stage0",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new dfine-det-large-baseline-stage0 Model summary Intended use Training data (Stage-0) Corpora (train / val pages) Training recipe Evaluation (Stage-0 val) Released checkpoint Curves / logs (bundled) How to use Install Inference (PAGE XML) Fine-tune (Stage-1) Files in this release ..."
+    },
+    {
+      "title": "D-FINE Polyline Baselines (Stage-0) - Hugging Face",
+      "url": "https://huggingface.co/spaces/johnlockejrr/dfine-det-large-baseline-stage0",
+      "snippet": "Upload a scanned manuscript page and the app automatically finds the baselines of each text line, with an option to draw polygon outlines around them. It returns the original image, an overlay with..."
+    },
+    {
+      "title": "GitHub - Peterande/D-FINE: D-FINE: Redefine Regression Task of DETRs as ...",
+      "url": "https://github.com/Peterande/D-FINE",
+      "snippet": "📄 This is the official implementation of the paper: D-FINE: Redefine Regression Task of DETRs as Fine-grained Distribution Refinement Yansong Peng, Hebei Li, Peixi Wu, Yueyi Zhang, Xiaoyan Sun, and Feng Wu University of Science and Technology of China If you like D-FINE, please give us a ⭐! Your support motivates us to keep improving! D-FINE is a powerful real-time object detector that ..."
+    },
+    {
+      "title": "D-FINE: Redefine Regression Task in DETRs as Fine-grained Distribution ...",
+      "url": "https://arxiv.org/html/2410.13842v1",
+      "snippet": "A.2 Visualization of D-FINE Predictions Figure 5 demonstrates the robustness of the D-FINE-X model, visualizing its predictions in various challenging scenarios. These include occlusion, low-light conditions, motion blur, depth of field effects, rotation, and densely populated scenes with numerous objects in close proximity."
+    },
+    {
+      "title": "D-FINE: Redefine Regression Task in DETRs as Fine-grained Distribution ...",
+      "url": "https://arxiv.org/abs/2410.13842",
+      "snippet": "We introduce D-FINE, a powerful real-time object detector that achieves outstanding localization precision by redefining the bounding box regression task in DETR models. D-FINE comprises two key components: Fine-grained Distribution Refinement (FDR) and Global Optimal Localization Self-Distillation (GO-LSD). FDR transforms the regression process from predicting fixed coordinates to iteratively ..."
+    }
+  ]
+}

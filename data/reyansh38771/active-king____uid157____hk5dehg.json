@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "reyansh38771/active-king____uid157____hk5Dehg",
+  "slug": "reyansh38771-active-king____uid157____hk5dehg",
+  "author": "reyansh38771",
+  "url": "https://huggingface.co/reyansh38771/active-king____uid157____hk5Dehg",
+  "created_at": "2026-08-17T00:19:05.000Z",
+  "updated_at": "2026-08-17T00:19:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483475,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "active-king/affine-5dz2gkonkn-omg · Hugging Face",
+      "url": "https://huggingface.co/active-king/affine-5dz2gkonkn-omg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reyansh38771/0xbidkslj3____uid94____hk5E9si · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/0xbidkslj3____uid94____hk5E9si",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reyansh38771/michael-chan-000____uid123____hk5D5FE · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/michael-chan-000____uid123____hk5D5FE",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "active-king (allen) - Hugging Face",
+      "url": "https://huggingface.co/active-king",
+      "snippet": "User profile of allen on Hugging Face"
+    }
+  ]
+}

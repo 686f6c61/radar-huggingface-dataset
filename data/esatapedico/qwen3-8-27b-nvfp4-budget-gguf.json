@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "esatapedico/Qwen3.8-27B-NVFP4-BUDGET-GGUF",
+  "slug": "esatapedico-qwen3-8-27b-nvfp4-budget-gguf",
+  "author": "esatapedico",
+  "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-BUDGET-GGUF",
+  "created_at": "2026-08-16T15:46:31.000Z",
+  "updated_at": "2026-08-17T10:12:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "qwen3.8",
+    "qwen3.5",
+    "blackwell",
+    "vision",
+    "multimodal",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "multilingual",
+    "base_model:unsloth/Qwen3.8-27B-NVFP4",
+    "base_model:quantized:unsloth/Qwen3.8-27B-NVFP4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 602,
+  "trending_score": 0,
+  "parameters": 26895998800,
+  "parameters_human": "26.90B",
+  "storage_bytes": 29316526944,
+  "storage_human": "29.3 GB",
+  "base_model": "unsloth/Qwen3.8-27B-NVFP4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "esatapedico/Qwen3.8-27B-NVFP4-BUDGET-GGUF · Hugging Face",
+      "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-BUDGET-GGUF",
+      "snippet": "Qwen3.8-27B-NVFP4-BUDGET-GGUF Two compact GGUF files of Qwen3.8-27B (the native vision-language 27B dense model, Gated DeltaNet + Gated Attention hybrid layout, 262,144-token native context), converted from unsloth/Qwen3.8-27B-NVFP4 — without the MTP speculative head."
+    },
+    {
+      "title": "esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF",
+      "snippet": "Family of 5 GGUFs of Qwen3.8-27B (NVFP4): ORIG (source-preserving NVFP4 MLP + BF16 attention), LOW / MEDIUM / HIGH / VERY-HIGH (448-tensor byte-identical NVFP4 backbone + per-tier heads). Native VL..."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    }
+  ]
+}

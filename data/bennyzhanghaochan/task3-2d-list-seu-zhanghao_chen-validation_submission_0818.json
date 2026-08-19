@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "BennyZhanghaoChan/Task3-2D-LIST-SEU-Zhanghao_Chen-Validation_Submission_0818",
+  "slug": "bennyzhanghaochan-task3-2d-list-seu-zhanghao_chen-validation_submission_0818",
+  "author": "BennyZhanghaoChan",
+  "url": "https://huggingface.co/BennyZhanghaoChan/Task3-2D-LIST-SEU-Zhanghao_Chen-Validation_Submission_0818",
+  "created_at": "2026-08-18T04:18:17.000Z",
+  "updated_at": "2026-08-18T09:50:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22046203158,
+  "storage_human": "22.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Task3-2D-LIST-SEU-Zhanghao_Chen-Validation_Submission_0729",
+      "url": "https://huggingface.co/BennyZhanghaoChan/Task3-2D-LIST-SEU-Zhanghao_Chen-Validation_Submission_0729",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BennyZhanghaoChan/Task3-2D-LIST-SEU-Zhanghao_Chen-Validation_Submission ...",
+      "url": "https://huggingface.co/BennyZhanghaoChan/Task3-2D-LIST-SEU-Zhanghao_Chen-Validation_Submission_0729/discussions",
+      "snippet": "BennyZhanghaoChan / Task3-2D-LIST-SEU-Zhanghao_Chen-Validation_Submission_0730 like 1 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Sort: Recently created"
+    },
+    {
+      "title": "MICCAI FLARE 2026 Task 3: Multimodal Model for Medical Image Parsing",
+      "url": "https://www.codabench.org/competitions/7151/",
+      "snippet": "To avoid submission jams, each team can make three docker submission per month. To make docker submissions, please send us (Tianhao Fu; and cc MICCAI.FLARE@aliyun.com): (Email subject: Task3-2D or 3D-YourTeamName-TeamLeaderName-Validation Submission)"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Zhanghao Chen / Cheung-Ho Benny Chan Benny0323 - GitHub",
+      "url": "https://github.com/Benny0323",
+      "snippet": "I am currently pursuing my master&#x27;s degree at the Laboratory of Image Science and Technology, School of Computer Science and Engineering, Southeast University, Nanking, specializing in Deep Learning-Based CT Metal Artifact Reduction under the supervision of Prof. Yikun Zhang. I have a broad interest in deep learning models, particularly in Medical Image Analysis and Generative AI Models, and ..."
+    }
+  ]
+}

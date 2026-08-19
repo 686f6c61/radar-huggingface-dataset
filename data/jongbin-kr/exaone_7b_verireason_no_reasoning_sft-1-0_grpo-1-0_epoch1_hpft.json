@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/exaone_7b_verireason_no_reasoning_sft-1.0_grpo-1.0_epoch1_hpft",
+  "slug": "jongbin-kr-exaone_7b_verireason_no_reasoning_sft-1-0_grpo-1-0_epoch1_hpft",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/exaone_7b_verireason_no_reasoning_sft-1.0_grpo-1.0_epoch1_hpft",
+  "created_at": "2026-08-14T09:15:36.000Z",
+  "updated_at": "2026-08-14T16:54:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "base_model:finetune:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688730818,
+  "storage_human": "689 MB",
+  "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

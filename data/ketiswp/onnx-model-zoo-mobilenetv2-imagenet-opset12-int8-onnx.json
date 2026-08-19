@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/onnx-model-zoo-MobileNetV2-ImageNet-opset12-int8-onnx",
+  "slug": "ketiswp-onnx-model-zoo-mobilenetv2-imagenet-opset12-int8-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/onnx-model-zoo-MobileNetV2-ImageNet-opset12-int8-onnx",
+  "created_at": "2026-08-19T01:58:25.000Z",
+  "updated_at": "2026-08-19T02:11:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int8",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3655033,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnxmodelzoo/mobilenetv2-12 · Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo/mobilenetv2-12",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "onnxmodelzoo (ONNX Model Zoo) - Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo",
+      "snippet": "Org profile for ONNX Model Zoo on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "models/validated/vision/classification/mobilenet at main · onnx/models ...",
+      "url": "https://github.com/onnx/models/tree/main/validated/vision/classification/mobilenet",
+      "snippet": "MobileNet models perform image classification - they take images as input and classify the major object in the image into a set of pre-defined classes. They are trained on ImageNet dataset which contains images from 1000 classes. MobileNet models are also very efficient in terms of speed and size and hence are ideal for embedded and mobile applications."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

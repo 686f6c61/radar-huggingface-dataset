@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "StarsMakeGalaxy/text-to-sql-Q8",
+  "slug": "starsmakegalaxy-text-to-sql-q8",
+  "author": "StarsMakeGalaxy",
+  "url": "https://huggingface.co/StarsMakeGalaxy/text-to-sql-Q8",
+  "created_at": "2026-08-18T20:11:04.000Z",
+  "updated_at": "2026-08-18T20:12:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 5283003456,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StarsMakeGalaxy - Hugging Face",
+      "url": "https://huggingface.co/StarsMakeGalaxy/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 16 days ago ... upvoted a paper 27 days ago ... liked a model 27 days ago"
+    },
+    {
+      "title": "StarsMakeGalaxy/enterprise-text2sql-curated-600 - Hugging Face",
+      "url": "https://huggingface.co/datasets/StarsMakeGalaxy/enterprise-text2sql-curated-600",
+      "snippet": "Datasets: StarsMakeGalaxy / enterprise-text2sql-curated-600 like 0 Tasks: Text Generation Modalities: Text Formats: parquet Languages: English Size: < 1K Tags: sql text-to-sql enterprise unsloth chatml chain-of-thought + 5 Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed ..."
+    },
+    {
+      "title": "text-to-sql · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/text-to-sql",
+      "snippet": "Chat2DB is a free, cross-platform, local-first database client and SQL workspace for developers, DBAs, analysts, and data teams. Connect to 40+ databases, manage data, edit and run SQL, and use your own AI model to generate, explain, and optimize queries. Available on desktop, web, Docker, and CLI ..."
+    },
+    {
+      "title": "Starburst - Generate SQL from text",
+      "url": "https://docs.starburst.io/starburst-galaxy/working-with-data/query-data/generate-sql-from-text.html",
+      "snippet": "To use this technology, your current role must have the Generative AI features account-level privilege. These features are not employed by default. For more information, see the OpenAI documentation. To create a SQL statement from text, go to the query editor by clicking Query > Query editor in the navigation menu, and complete these steps:"
+    },
+    {
+      "title": "GitHub - eosphoros-ai/Awesome-Text2SQL: Curated tutorials and resources ...",
+      "url": "https://github.com/eosphoros-ai/Awesome-Text2SQL",
+      "snippet": "2024/07, Meta AI proposed the Llama 3.1 405B, which is the first openly available model that rivals the top AI models when it comes to state-of-the-art capabilities in general knowledge, steerability, math, tool use, and multilingual translation. As part of this latest release, they&#x27;re introducing upgraded versions of the 8B and 70B models."
+    }
+  ]
+}

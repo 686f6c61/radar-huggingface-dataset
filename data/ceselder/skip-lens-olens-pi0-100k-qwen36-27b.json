@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ceselder/skip-lens-olens-pi0-100k-qwen36-27b",
+  "slug": "ceselder-skip-lens-olens-pi0-100k-qwen36-27b",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/skip-lens-olens-pi0-100k-qwen36-27b",
+  "created_at": "2026-08-16T18:36:10.000Z",
+  "updated_at": "2026-08-16T21:05:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "interpretability",
+    "activation-verbalization",
+    "skip-lens",
+    "oracle-lens",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

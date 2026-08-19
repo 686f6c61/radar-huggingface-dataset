@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Ba2han/math-test-maxx",
+  "slug": "ba2han-math-test-maxx",
+  "author": "Ba2han",
+  "url": "https://huggingface.co/Ba2han/math-test-maxx",
+  "created_at": "2026-08-18T06:26:35.000Z",
+  "updated_at": "2026-08-18T06:26:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "lora",
+    "math",
+    "reasonmaxxer",
+    "conversational",
+    "base_model:unsloth/Qwen2.5-3B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349158,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ba2han (Batuhan S) - Hugging Face",
+      "url": "https://huggingface.co/Ba2han/models",
+      "snippet": "User profile of Batuhan S on Hugging Face Image-Text-to-Text • Updated Mar 16 • 23"
+    },
+    {
+      "title": "Ba2han/out2 · Hugging Face",
+      "url": "https://huggingface.co/Ba2han/out2",
+      "snippet": "Instructions to use Ba2han/out2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Ba2han/out2 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"Ba2han/out2\")"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 218 ranked models and 394 tracked AI models across 437 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Best LLMs for Math — August 2026 Leaderboard | BenchLM.ai",
+      "url": "https://benchlm.ai/math",
+      "snippet": "Compare 394 AI models on math benchmarks — AIME 2023-2025, HMMT, BRUMO, and MATH-500. See which LLMs solve competition-level mathematics problems."
+    },
+    {
+      "title": "Best AI for Math 2026 - Top Mathematical Models",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-math",
+      "snippet": "Rankings of the best AI models for mathematical reasoning. Compare models by math problem solving and mathematical capabilities."
+    }
+  ]
+}

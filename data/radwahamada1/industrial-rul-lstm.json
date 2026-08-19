@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "radwahamada1/industrial-rul-lstm",
+  "slug": "radwahamada1-industrial-rul-lstm",
+  "author": "radwahamada1",
+  "url": "https://huggingface.co/radwahamada1/industrial-rul-lstm",
+  "created_at": "2026-08-19T03:36:37.000Z",
+  "updated_at": "2026-08-19T03:41:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1628352,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Remaining Useful Life (RUL) Prediction Using LSTM - GitHub",
+      "url": "https://github.com/pratikshimpi10/Remaining-Useful-Life-RUL-Prediction-Using-Machine-Learning",
+      "snippet": "🔧 Remaining Useful Life (RUL) Prediction Using LSTM Predicting the Remaining Useful Life (RUL) of machinery using sensor data and deep learning. This project focuses on predictive maintenance — identifying when a machine component is likely to fail, so it can be replaced before breakdown occurs."
+    },
+    {
+      "title": "A comprehensive overview of remaining useful life prediction: From ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827025000878",
+      "snippet": "The increasing complexity of industrial systems has heightened the need for precise Remaining Useful Life (RUL) predictions. This paper provides a comprehensive overview of RUL prediction methods, processes, datasets, and tools, alongside insights from scientometric analysis. We categorize RUL prediction methods into model-based, data-driven, and hybrid methods, detailing key models and their ..."
+    },
+    {
+      "title": "GitHub - mohamedrefaeii/predictive-maintenance: Time-series-based ...",
+      "url": "https://github.com/mohamedrefaeii/predictive-maintenance",
+      "snippet": "Time-series-based predictive maintenance system for industrial equipment using ML &amp; LSTM models, with a Streamlit dashboard for real-time failure prediction and RUL estimation. - mohamedrefaeii..."
+    },
+    {
+      "title": "Remaining useful life (RUL) regression using Long ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0026271422002967",
+      "snippet": "The accurate prediction of the remaining useful life (RUL) of components is a major concern in electronic circuits. The RUL-based health diagnostics plays an important role in the determination of time-of-failure of a device as an early warning in industrial applications. In this paper, a Long Short Term Memory (LSTM) based regression model is proposed for the prediction of RUL of a Ring ..."
+    },
+    {
+      "title": "A Tensor-based t-SVD-LSTM Remaining Useful Life Prediction Model for ...",
+      "url": "https://ieeexplore.ieee.org/document/9953312",
+      "snippet": "For complex equipment, product life-cycle management (PLM) including remaining useful life (RUL) is one of the essential issues for industrial intelligence. In this paper, a tensor-based remaining useful life prediction model is proposed to facilitate the life-cycle management, which combines features from time domain and frequency domain."
+    }
+  ]
+}

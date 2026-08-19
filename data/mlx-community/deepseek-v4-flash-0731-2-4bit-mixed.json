@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mlx-community/DeepSeek-V4-Flash-0731-2.4bit-mixed",
+  "slug": "mlx-community-deepseek-v4-flash-0731-2-4bit-mixed",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/DeepSeek-V4-Flash-0731-2.4bit-mixed",
+  "created_at": "2026-08-05T02:38:01.000Z",
+  "updated_at": "2026-08-05T13:05:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4",
+    "oq",
+    "quantized",
+    "moe",
+    "deepseek",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 6323,
+  "trending_score": 11,
+  "parameters": 25683322814,
+  "parameters_human": "25.68B",
+  "storage_bytes": 92831787464,
+  "storage_human": "92.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek V4 - a mlx-community Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlx-community/deepseek-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/DeepSeek-V4-Flash-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/DeepSeek-V4-Flash-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases: deepseek-v4-flash-0731/deepseek-v4-flash-0731 - GitHub",
+      "url": "https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731/releases",
+      "snippet": "DeepSeek V4 Flash 0731 Run DeepSeek V4 Flash locally with free desktop app.Deepseek v4 flash free, deepseek v4 flash gguf, deepseek v4 flash local, deepseek v4 flash ollama, deepseek v4 flash requirements. Mixture of Experts, 1M context window, compressed sparse attention."
+    },
+    {
+      "title": "DeepSeek V4 Flash 4bit by mlx-community - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/mlx-community%2FDeepSeek-V4-Flash-4bit,2PonA1JyUKnZGuqgVkk4RE",
+      "snippet": "DeepSeek V4 Flash 4bit is an open-source 284.3b LLM by mlx-community. VRAM 152.2GB, 1024K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Run DeepSeek V4 Flash Locally: Full 2026 Setup Guide",
+      "url": "https://codersera.com/blog/run-deepseek-v4-flash-locally-full-2026-setup-guide/",
+      "snippet": "Run DeepSeek V4 Flash locally: VRAM tiers from 33GB quantized to 170GB full, vLLM/SGLang install steps, benchmarks, and pricing. MIT-licensed setup guide."
+    }
+  ]
+}

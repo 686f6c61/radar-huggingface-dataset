@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Diamond1400/qwen-image-edit-plus-nsfw-lora",
+  "slug": "diamond1400-qwen-image-edit-plus-nsfw-lora",
+  "author": "Diamond1400",
+  "url": "https://huggingface.co/Diamond1400/qwen-image-edit-plus-nsfw-lora",
+  "created_at": "2026-08-17T01:05:30.000Z",
+  "updated_at": "2026-08-17T01:05:30.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "nsfw",
+    "image-editing",
+    "qwen-image-edit",
+    "not-for-all-audiences",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590058864,
+  "storage_human": "590 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aiunivers/qwen-image-edit-plus-nsfw-lora · Hugging Face",
+      "url": "https://huggingface.co/aiunivers/qwen-image-edit-plus-nsfw-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image NSFW LoRA Notes | Civitai",
+      "url": "https://civitai.com/articles/18798/qwen-image-nsfw-lora-notes",
+      "snippet": "Qwen-Image ( 20B parameters) struggles with NSFW generation - Flux.1 has 12B parameters. LoRA fine-tuning ( 10-20M trainable parameters, rank 128) improves anatomy generation. A small dataset of 100-300 images won&#x27;t do it. A general-purpose NSFW LoRA requires a minimum of 1,500+ handpicked, high-quality images, carefully captioned, and trained with a minimum rank of 128. For specialized ..."
+    },
+    {
+      "title": "Qwen-Image-Edit - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen AI Image Editor",
+      "url": "https://www.qwenaiimageeditor.com/",
+      "snippet": "Free Qwen AI image editor tutorials, gguf installs, safetensor pipelines, NSFW toggles, ControlNet, inpaint, VRAM tips."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image: Qwen-Image is a powerful image generation ...",
+      "url": "https://github.com/QwenLM/Qwen-Image",
+      "snippet": "AI Arena To comprehensively evaluate the general image generation capabilities of Qwen-Image and objectively compare it with state-of-the-art closed-source APIs, we introduce AI Arena, an open benchmarking platform built on the Elo rating system. AI Arena provides a fair, transparent, and dynamic environment for model evaluation."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fedeceri/cochlea-synapses-segmentation-unet2d",
+  "slug": "fedeceri-cochlea-synapses-segmentation-unet2d",
+  "author": "fedeceri",
+  "url": "https://huggingface.co/fedeceri/cochlea-synapses-segmentation-unet2d",
+  "created_at": "2026-08-18T09:04:09.000Z",
+  "updated_at": "2026-08-18T09:13:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "monai",
+    "microscopy",
+    "image-segmentation",
+    "instance-segmentation",
+    "roi-segmentation",
+    "cochlea",
+    "unet",
+    "watershed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13256980,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ucsdmanorlab/cochlea-synapseg: napari plugin for cochlea ...",
+      "url": "https://github.com/ucsdmanorlab/cochlea-synapseg/",
+      "snippet": "A napari plugin to segment cochlear ribbon synapses. More is in the works, but currently includes: pre-processing functions, tools to quickly generate ground truth ribbon segmentation, deep-learning based ribbon segmentation prediction, and tools to check for synapse pairs, and export montage images."
+    },
+    {
+      "title": "cochlea-synapseg · PyPI",
+      "url": "https://pypi.org/project/cochlea-synapseg/",
+      "snippet": "Cochlea-SynapSeg A napari plugin to segment cochlear ribbon synapses. More is in the works, but currently includes: pre-processing functions, tools to quickly generate ground truth ribbon segmentation, deep-learning based ribbon segmentation prediction, and tools to check for synapse pairs, and export montage images. Installation"
+    },
+    {
+      "title": "cochlea-synapseg/README.md at main - GitHub",
+      "url": "https://github.com/ucsdmanorlab/cochlea-synapseg/blob/main/README.md",
+      "snippet": "napari plugin for cochlea synapse segmentation. Contribute to ucsdmanorlab/cochlea-synapseg development by creating an account on GitHub."
+    },
+    {
+      "title": "Cochlea SynapSeg - napari Plugin - Cayla Miller",
+      "url": "https://napari-hub.org/plugins/cochlea-synapseg.html",
+      "snippet": "A napari plugin to segment cochlear ribbon synapses. More is in the works, but currently includes: pre-processing functions, tools to quickly generate ground truth ribbon segmentation, deep-learning based ribbon segmentation prediction, and tools to check for synapse pairs, and export montage images. Installation"
+    },
+    {
+      "title": "Cochlea SynapSeg: a napari plugin for cochlear synapse segmentation",
+      "url": "https://zenodo.org/records/16433553",
+      "snippet": "Cochlea-SynapSeg 0.1.1 The latest updates to Cochlea-SynapSeg, a Napari plugin for segmenting cochlear ribbon synapses in 3D fluorescence image stacks. SynapSeg provides tools for pre-processing, ground truth annotation, deep learning-based prediction, and post-analysis of synapse pairings. Built within Napari, it supports both manual and automated workflows, from image preprocessing to ..."
+    }
+  ]
+}

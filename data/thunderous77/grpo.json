@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Thunderous77/grpo",
+  "slug": "thunderous77-grpo",
+  "author": "Thunderous77",
+  "url": "https://huggingface.co/Thunderous77/grpo",
+  "created_at": "2026-08-11T07:19:18.000Z",
+  "updated_at": "2026-08-15T15:38:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 299394570546,
+  "storage_human": "299.4 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

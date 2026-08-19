@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-fock-g1",
+  "slug": "dimitarpg13-semsimula-fock-parflm-anisogaussian-vtheta-fock-g1",
+  "author": "dimitarpg13",
+  "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-fock-g1",
+  "created_at": "2026-08-18T00:05:01.000Z",
+  "updated_at": "2026-08-18T00:06:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "FockG1MultiXiPARFLM",
+    "research",
+    "semsimula",
+    "conservative-language-model",
+    "scalar-potential",
+    "lagrangian-mechanics",
+    "energy-based-model",
+    "physics-informed",
+    "fock-space",
+    "parflm",
+    "parf",
+    "multi-channel-xi",
+    "depth-conditioned-vtheta",
+    "multi-context-vtheta",
+    "anisotropic-gaussian-potential",
+    "low-rank-precision",
+    "gaussian-mixture-potential",
+    "bounded-potential",
+    "structured-vtheta",
+    "analytical-gradient",
+    "interpretable",
+    "virtual-registers",
+    "controlled-conservativity",
+    "sparse-routing",
+    "tinystories",
+    "non-transformer",
+    "attention-free",
+    "constant-memory-inference",
+    "riemannian-geometry",
+    "riemannian-geodesics",
+    "first-order-ablation",
+    "dynamics-order",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 210,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 319926293,
+  "storage_human": "320 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "TinyStories",
+      "metric": "Validation Perplexity (depth-conditioned anisotropic multi-context Gaussian, first-order gradient flow, Fock-G1)",
+      "value": 8.95
+    }
+  ],
+  "sources": [
+    {
+      "title": "dimitarpg13/semsimula-fock-parflm · Hugging Face",
+      "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm",
+      "snippet": "The Fock-PARFLM v2.1 is the best-performing purely conservative language model in the Semantic Simulation family. It extends the PARFLM with a Fock-space latent register pool -- M=16 virtual register particles with Q/K/V-structured creation gates, LIFO stack discipline, and an optional non-conservative reverse channel -- achieving 9.30 PPL on ..."
+    },
+    {
+      "title": "dimitarpg13/semsimula-fock-parflm-depthcond-vtheta-openwebtext ...",
+      "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta-openwebtext",
+      "snippet": "The model was trained to minimise cross-entropy, not to produce geodesic trajectories. That the learned force field happens to be nearly metric-compatible is an emergent structural property — the scalar and pairwise potentials organise the hidden-state manifold so that the minimum-energy paths are also the most predictive paths."
+    },
+    {
+      "title": "GitHub - dimitarpg13/semsimula-paper: Companion repository on the ...",
+      "url": "https://github.com/dimitarpg13/semsimula-paper",
+      "snippet": "parf/ — PARFLM (Property-Attractive-Repulsive Force Language Model) and FockPARFLM (Fock-space augmented PARFLM). The Q9c path augmenting SPLM with a learnable pairwise-interaction force V ϕ"
+    },
+    {
+      "title": "semsimula-paper/companion_notes/Fock-PARFLM_Causal_Leak_Audit_Results ...",
+      "url": "https://github.com/dimitarpg13/semsimula-paper/blob/main/companion_notes/Fock-PARFLM_Causal_Leak_Audit_Results.md",
+      "snippet": "Bottom line up front. The reported perplexity of this architecture was inflated by roughly 33× by a causal leak. A leak-free measurement of the same checkpoint on the same tokens gives PPL ≈ 258 where the standard full-window protocol reported PPL ≈ 7.69 — a paired difference of +3.51 ± 0.09 nats/token. The leak flows entirely through the reverse channel reading a global, full-window ..."
+    },
+    {
+      "title": "semsimula-fock-parflm-structured-vtheta - Hugging Face",
+      "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm-structured-vtheta",
+      "snippet": "A structured variant of the Fock-PARFLM v2.1 conservative language model in which the MLP scalar potential ${V}_{&#92;theta }V&#92;_&#92;backslash theta$ is replaced by a mixture of K=8 diagonal quadratic wells (SQ3), while retaining the full MLP-based pairwise potential ${V}_{&#92;varphi }V&#92;_&#92;backslash phi$ and the Fock register mechanism (16 registers, LIFO stack discipline, reverse channel). This ..."
+    }
+  ]
+}

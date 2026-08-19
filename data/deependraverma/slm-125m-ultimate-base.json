@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "DeependraVerma/slm-125m-ultimate-base",
+  "slug": "deependraverma-slm-125m-ultimate-base",
+  "author": "DeependraVerma",
+  "url": "https://huggingface.co/DeependraVerma/slm-125m-ultimate-base",
+  "created_at": "2026-08-17T03:42:43.000Z",
+  "updated_at": "2026-08-17T06:26:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "legal",
+    "finance",
+    "small-language-model",
+    "warm-start",
+    "pretraining",
+    "causal-lm",
+    "slm",
+    "legal-ai",
+    "legaltech",
+    "edge-ai",
+    "on-device",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 166,
+  "trending_score": 0,
+  "parameters": 125848320,
+  "parameters_human": "125.8M",
+  "storage_bytes": 503405488,
+  "storage_human": "503 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeependraVerma/slm-125m-base · Hugging Face",
+      "url": "https://huggingface.co/DeependraVerma/slm-125m-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeependraVerma/slm-125m-base at main - Hugging Face",
+      "url": "https://huggingface.co/DeependraVerma/slm-125m-base/tree/main",
+      "snippet": "DeependraVerma / slm-125m-base like 1 Text Generation Transformers Safetensors English llama legal finance small-language-model from-scratch pretraining causal-lm Eval Results (legacy) text-generation-inference License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Deependra Verma — legal-slm-125M, a 125M-parameter LLM built from scratch",
+      "url": "https://deependraverma-ai-legal-slm-125-m.vercel.app/",
+      "snippet": "legal-slm-125M is a 125.8M-parameter legal & financial language model built end-to-end by Deependra Verma — Generative AI Researcher, AI Engineer, and AI Team Lead — from a random initialization through pretraining (held-out perplexity 7.76 on 2.04B tokens), evaluation, and supervised fine-tuning into a live Q&A assistant."
+    },
+    {
+      "title": "slm-125m — a 125.8M-parameter model trained from scratch",
+      "url": "https://slm-125m-phi.vercel.app/index.html",
+      "snippet": "A 125.8M-parameter LLaMA-architecture language model trained from scratch on US case law, SEC filings, and the open web. Live inference demo, full architecture and training specs."
+    },
+    {
+      "title": "Slm 125M Base by DeependraVerma - LLM Explorer",
+      "url": "https://llm-explorer.com/model/DeependraVerma%2Fslm-125m-base,5Mq8qneCUUFZSHDWSEESrE",
+      "snippet": "Slm 125M Base is an open-source 125m LLM by DeependraVerma. VRAM 0.5GB, 1K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AgentMercury-Qwen3.5-4B-i1-GGUF",
+  "slug": "mradermacher-agentmercury-qwen3-5-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AgentMercury-Qwen3.5-4B-i1-GGUF",
+  "created_at": "2026-08-15T04:47:02.000Z",
+  "updated_at": "2026-08-15T17:57:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "tool-use",
+    "mcp",
+    "reinforcement-learning",
+    "grpo",
+    "qwen3_5",
+    "en",
+    "base_model:Minbyul/AgentMercury-Qwen3.5-4B",
+    "base_model:quantized:Minbyul/AgentMercury-Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1110,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 39223721184,
+  "storage_human": "39.2 GB",
+  "base_model": "Minbyul/AgentMercury-Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.5-4B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/DeepSeek-V4-Pro-Qwen3.5-4B-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AgentMercury-Qwen3.5-4B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Minbyul/AgentMercury-Qwen3.5-4B",
+      "snippet": "Only benchmarks where AgentMercury improves over the Qwen3.5-4B base are listed, with the absolute gain (Δ) over base. Evaluated with an OpenAI-compatible endpoint (sglang, 32k context), N repeats per cell."
+    },
+    {
+      "title": "Run Qwen3.5 on an Old Laptop: A Lightweight Local Agentic AI Setup ...",
+      "url": "https://www.kdnuggets.com/run-qwen3-5-on-an-old-laptop-a-lightweight-local-agentic-ai-setup-guide",
+      "snippet": "Image by Author # Introduction Running a top-performing AI model locally no longer requires a high-end workstation or expensive cloud setup. With lightweight tools and smaller open-source models, you can now turn even an older laptop into a practical local AI environment for coding, experimentation, and agent-style workflows."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

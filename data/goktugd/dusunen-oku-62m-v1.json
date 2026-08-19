@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "GoktugD/DUSUNEN-Oku-62M-v1",
+  "slug": "goktugd-dusunen-oku-62m-v1",
+  "author": "GoktugD",
+  "url": "https://huggingface.co/GoktugD/DUSUNEN-Oku-62M-v1",
+  "created_at": "2026-08-15T11:09:32.000Z",
+  "updated_at": "2026-08-15T13:18:09.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "ocr",
+    "turkish",
+    "turkish-ocr",
+    "text-recognition",
+    "cropped-word-ocr",
+    "trocr",
+    "printed-text",
+    "optical-character-recognition",
+    "turkish-language",
+    "edge-ai",
+    "dusunen",
+    "image-to-text",
+    "tr",
+    "dataset:esengul3/turkish-word-ocr",
+    "base_model:microsoft/trocr-small-printed",
+    "base_model:finetune:microsoft/trocr-small-printed",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": 61596672,
+  "parameters_human": "61.6M",
+  "storage_bytes": 248916502,
+  "storage_human": "249 MB",
+  "base_model": "microsoft/trocr-small-printed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Turkish cropped-word OCR",
+      "dataset": "Turkish Word OCR word-disjoint test",
+      "metric": "Character error rate",
+      "value": 0.2449
+    },
+    {
+      "task": "Turkish cropped-word OCR",
+      "dataset": "Turkish Word OCR word-disjoint test",
+      "metric": "Exact word accuracy",
+      "value": 98.392
+    }
+  ],
+  "sources": []
+}

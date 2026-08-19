@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "bouroo/zeta-2.1-mlx-mxfp8",
+  "slug": "bouroo-zeta-2-1-mlx-mxfp8",
+  "author": "bouroo",
+  "url": "https://huggingface.co/bouroo/zeta-2.1-mlx-mxfp8",
+  "created_at": "2026-08-17T04:34:18.000Z",
+  "updated_at": "2026-08-17T04:40:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "quantized",
+    "mxfp8",
+    "8bit",
+    "apple-silicon",
+    "edit-prediction",
+    "next-edit-suggestion",
+    "code",
+    "autocomplete",
+    "fim",
+    "text-generation",
+    "en",
+    "base_model:zed-industries/zeta-2.1",
+    "base_model:quantized:zed-industries/zeta-2.1",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 2320633856,
+  "parameters_human": "2.32B",
+  "storage_bytes": 8520497791,
+  "storage_human": "8.5 GB",
+  "base_model": "zed-industries/zeta-2.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeta - a bouroo Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/bouroo/zeta",
+      "snippet": "Zeta 2.1 OptiQ quantizations for Apple Silicon (MLX)"
+    },
+    {
+      "title": "Quantized Models for zed-industries/zeta-2.1 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:zed-industries/zeta-2.1",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Zeta 2.1 by zed-industries — VRAM 16.5GB, 32K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/zed-industries%2Fzeta-2.1,5GM5k4n6QrcSqEXAkcsHGK",
+      "snippet": "Zeta 2.1 is an open-source 8b LLM by zed-industries. VRAM 16.5GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "zeta-2.1: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/zeta-2.1-zed-industries",
+      "snippet": "A: Yes. The base model uses the transformers library and standard PyTorch training. The zeta dataset documentation references DPO and SFT finetuning notebooks, suggesting you can apply the same finetuning techniques to zeta-2.1. You will need to format your training data in the SPM prompt format with proper markers and context."
+    },
+    {
+      "title": "Login / Sign up - zeta",
+      "url": "https://zeta-ai.io/en/login",
+      "snippet": "The No.1 AI chat! Over 13 hours of weekly use — and it&#x27;s free. Not using zeta yet? Everyone else is!"
+    }
+  ]
+}

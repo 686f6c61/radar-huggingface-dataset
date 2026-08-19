@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "edwardcapriolo/all-MiniLM-L6-v2-JQ4",
+  "slug": "edwardcapriolo-all-minilm-l6-v2-jq4",
+  "author": "edwardcapriolo",
+  "url": "https://huggingface.co/edwardcapriolo/all-MiniLM-L6-v2-JQ4",
+  "created_at": "2026-08-18T02:02:34.000Z",
+  "updated_at": "2026-08-18T02:02:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "en",
+    "dataset:s2orc",
+    "dataset:flax-sentence-embeddings/stackexchange_xml",
+    "dataset:ms_marco",
+    "dataset:gooaq",
+    "dataset:yahoo_answers_topics",
+    "dataset:code_search_net",
+    "dataset:search_qa",
+    "dataset:eli5",
+    "dataset:snli",
+    "dataset:multi_nli",
+    "dataset:wikihow",
+    "dataset:natural_questions",
+    "dataset:trivia_qa",
+    "dataset:embedding-data/sentence-compression",
+    "dataset:embedding-data/flickr30k-captions",
+    "dataset:embedding-data/altlex",
+    "dataset:embedding-data/simple-wiki",
+    "dataset:embedding-data/QQP",
+    "dataset:embedding-data/SPECTER",
+    "dataset:embedding-data/PAQ_pairs",
+    "dataset:embedding-data/WikiAnswers",
+    "arxiv:1904.06472",
+    "arxiv:2102.07033",
+    "arxiv:2104.08727",
+    "arxiv:1704.05179",
+    "arxiv:1810.09305",
+    "base_model:nreimers/MiniLM-L6-H384-uncased",
+    "base_model:finetune:nreimers/MiniLM-L6-H384-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 55040813,
+  "storage_human": "55 MB",
+  "base_model": "nreimers/MiniLM-L6-H384-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sentence-transformers/all-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "all-MiniLM-L6-v2 | Cognaptus",
+      "url": "https://cognaptus.com/datahub/models/all-minilm-l6-v2/",
+      "snippet": "🔍 Overview all-MiniLM-L6-v2 is one of the most popular sentence embedding models from the Sentence Transformers library. It delivers strong semantic similarity performance while being extremely compact and fast, making it suitable for real-time systems and large-scale semantic indexing. Key highlights: ⚡ Fast & Lightweight: Only 6 transformer layers, optimized for low-latency use 🧠 ..."
+    },
+    {
+      "title": "clippy-vision/models/embeddings/all-MiniLM-L6-v2/README.md at main ...",
+      "url": "https://github.com/protocorn/clippy-vision/blob/main/models/embeddings/all-MiniLM-L6-v2/README.md",
+      "snippet": "all-MiniLM-L6-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "GitHub - henrytanner52/all-MiniLM-L6-v2",
+      "url": "https://github.com/henrytanner52/all-MiniLM-L6-v2",
+      "snippet": "all-MiniLM-L6-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "allan56/all-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/allan56/all-MiniLM-L6-v2",
+      "snippet": "all-MiniLM-L6-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search. Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed:"
+    }
+  ]
+}

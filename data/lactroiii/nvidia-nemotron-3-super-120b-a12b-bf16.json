@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "lactroiii/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "slug": "lactroiii-nvidia-nemotron-3-super-120b-a12b-bf16",
+  "author": "lactroiii",
+  "url": "https://huggingface.co/lactroiii/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "created_at": "2026-08-17T18:00:08.000Z",
+  "updated_at": "2026-08-17T18:00:08.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "it",
+    "de",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "pytorch",
+    "nemotron-3",
+    "latent-moe",
+    "mtp",
+    "conversational",
+    "custom_code",
+    "en",
+    "fr",
+    "es",
+    "it",
+    "de",
+    "ja",
+    "zh",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "arxiv:2512.20848",
+    "arxiv:2512.20856",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 199,
+  "trending_score": 0,
+  "parameters": 123611012096,
+  "parameters_human": "123.61B",
+  "storage_bytes": 247244727964,
+  "storage_human": "247.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3 Super",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/",
+      "snippet": "We are releasing NVIDIA Nemotron 3 Super, a 12B active 120B total parameter Mixture-of-Experts hybrid Mamba-Transformer model. Nemotron 3 Super is the first model in the Nemotron 3 series that leverages Latent MoE, includes MTP Layers, and was pre-trained in NVFP4."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was trained for approximately 25 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4 of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "We announce NVIDIA Nemotron 3, the most efficient family of open models with leading accuracy for agentic AI applications. The Nemotron 3 family consists of three models: Nano, Super, and Ultra."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron?ncid=pa-srch-goog-599191",
+      "snippet": "Nemotron 3 Super: Open Hybrid Mamba-Transformer MoE for Agentic Reasoning Nemotron 3 Super, a hybrid Mamba‑Transformer MoE model for large‑scale agentic AI, combines latent MoE, multi‑token prediction, and a 1M‑token context window for faster, more reliable long‑horizon reasoning. Native NVFP4 training, multi‑environment RL alignment, and fully open weights, datasets, recipes, and ..."
+    }
+  ]
+}

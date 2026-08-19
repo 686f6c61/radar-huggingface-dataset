@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nxp/Ultralytics-YOLOv8-pose-Ara240",
+  "slug": "nxp-ultralytics-yolov8-pose-ara240",
+  "author": "nxp",
+  "url": "https://huggingface.co/nxp/Ultralytics-YOLOv8-pose-Ara240",
+  "created_at": "2026-08-17T12:03:53.000Z",
+  "updated_at": "2026-08-17T12:03:53.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nxp/YOLOv8 · Hugging Face",
+      "url": "https://huggingface.co/nxp/YOLOv8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ultralytics/yolov8: Ultralytics YOLOv8 discovery and ...",
+      "url": "https://github.com/ultralytics/yolov8",
+      "snippet": "Ultralytics YOLOv8 is available through the official Ultralytics YOLO package. It supports object detection, instance segmentation, image classification, pose estimation, oriented object detection, and tracking in a fast, accurate, and easy to use Python and CLI workflow. This repository is a lightweight discovery page for YOLOv8. The canonical implementation, package releases, model downloads ..."
+    },
+    {
+      "title": "README.md · nxp/YOLOv8 at main - Hugging Face",
+      "url": "https://huggingface.co/nxp/YOLOv8/blob/main/README.md",
+      "snippet": "Ultralytics released Ultralytics YOLOv8 on January 10, 2023, delivering state‑of‑the‑art accuracy and speed. Building on the progress of earlier Ultralytics YOLO versions, it introduces improved features and optimizations that make it a strong choice for a wide range of object detection, segmentation and pose estimation tasks across many ..."
+    },
+    {
+      "title": "GitHub - Sadat75/ultralytics_yolov8_pose: Human pose estimation using ...",
+      "url": "https://github.com/Sadat75/ultralytics_yolov8_pose",
+      "snippet": "Ultralytics YOLOv8 is a cutting-edge, state-of-the-art (SOTA) model that builds upon the success of previous YOLO versions and introduces new features and improvements to further boost performance and flexibility. YOLOv8 is designed to be fast, accurate, and easy to use, making it an excellent choice for a wide range of object detection and tracking, instance segmentation, image classification ..."
+    },
+    {
+      "title": "Ultralytics/YOLOv8 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLOv8",
+      "snippet": "Discover more examples in the YOLO Python Docs. Models Ultralytics supports a wide range of YOLO models, from early versions like YOLOv3 to the latest YOLO26. The tables below showcase YOLOv8 models pretrained on COCO for Detection, Segmentation, and Pose Estimation. Classification models are pretrained on ImageNet. Tracking mode is compatible with Detection, Segmentation, and Pose models. All ..."
+    }
+  ]
+}

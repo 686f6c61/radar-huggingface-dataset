@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "silveroxides/Kroma-LoRA-Extract",
+  "slug": "silveroxides-kroma-lora-extract",
+  "author": "silveroxides",
+  "url": "https://huggingface.co/silveroxides/Kroma-LoRA-Extract",
+  "created_at": "2026-07-31T02:44:35.000Z",
+  "updated_at": "2026-08-09T10:47:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5496606480,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kroma Ai - Try Kroma Ai - Research To Slides",
+      "url": "https://duckduckgo.com/y.js?ad_domain=skywork.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=LXB5vsB8LkfasVtAbPowo4KQtGFweqUvA5Ok4yGjLEJoHUGDRAgiDvVOcUHhdUKBJIAr11WtzEV0TJMLn7Ag6NFNYuyF2OtJSlNo4DAd9NIwpy_b%2DqfiP2XGf9mLvybSJL21xtxFV7fQy0fjm%2Da20MPOmh68zn204SAW9vEPkmI.DseNZyLFPRfABl1q0GRldg&rut=397fb5c133eff9dc876592bfb44ce0a6255d1029491e79cdb60979cbc5b5f2a4&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8t2Verk7ctsVcovP7FI3XGDVUCUwcgTSdsy%2DIH6jZu5MZaJDVYD2Sl54bGELmEwA4miAvsxtIGwCyQBb%2Da%2DSGZ4oUy0SZHGIqCR7eML4tZ8ZjJzdkzs8aYNn80FKoxhwyCuwXM87bTgjeRJgn32rtG93Vt9GFWF7H0RriDg0juuqRaxR3McpCknfWeCuAFwhYgRiwjen5xcTs1WHRQsN5LG0GP3s%26u%3DaHR0cHMlM2ElMmYlMmZza3l3b3JrLmFpJTJmJTNmc2tpbGxfaWQlM2QxMDIlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9jYW1wYWlnbiUzZDU3MDc4Mzc0NCUyNnV0bV9ncm91cCUzZDExNzIwODE2NDY4NjIyODglMjZ1dG1fdGVybSUzZEtyb21hJTI1MjBhaSUyNnV0bV9jcmVhdGl2ZSUzZCUyNnNrdV9pZCUzZDElMjZtc2Nsa2lkJTNkYzllN2FjY2I3MmNhMWYxNDVlNGNjNmI1YmVlYmM4OTA%26rlid%3Dc9e7accb72ca1f145e4cc6b5beebc890&vqd=4-332465397086735990950898506566934455842&iurl=%7B1%7DIG%3DB50C4920E13647D0BD80B5EB38A507CE%26CID%3D3DD10886EFAE6E45211A1F33EED96F5D%26ID%3DDevEx%2C5037.1",
+      "snippet": "Try Skywork to turn topics, notes, and sources into structured presentation drafts. Go beyond templates with a presentation workflow built for real work and research."
+    },
+    {
+      "title": "silveroxides/Kroma-LoRA-Extract · Hugging Face",
+      "url": "https://huggingface.co/silveroxides/Kroma-LoRA-Extract",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "silveroxides/Kroma-LoRA-Extract at main - Hugging Face",
+      "url": "https://huggingface.co/silveroxides/Kroma-LoRA-Extract/tree/main",
+      "snippet": "silveroxides / Kroma-LoRA-Extract like 6 Model card FilesFiles and versions xet Community 1 Copy to bucket new main Kroma-LoRA-Extract 3.61 GB Ctrl+K Ctrl+K 1 contributor History:4 commits silveroxides Upload kroma-v0.2-base-lora-rank-384-fro-0985.safetensors with huggingface_hub 176c32c verifiedabout 14 hours ago .gitattributes Safe 1.52 ..."
+    },
+    {
+      "title": "silveroxides (Silver) · GitHub",
+      "url": "https://github.com/silveroxides",
+      "snippet": "A graph representing silveroxides&#x27;s contributions from August 10, 2025 to August 11, 2026. The contributions are 89% commits, 11% pull requests, 0% issues, 0% code review."
+    },
+    {
+      "title": "Silveroxides - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/silveroxides",
+      "snippet": "Looking for Silveroxides&#x27;s top AI models? Browse their full Hugging Face collection of 4 models. Explore AI models and contributions by Silveroxides on Huggingface."
+    }
+  ]
+}

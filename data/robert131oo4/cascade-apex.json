@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "robert131OO4/cascade-apex",
+  "slug": "robert131oo4-cascade-apex",
+  "author": "robert131OO4",
+  "url": "https://huggingface.co/robert131OO4/cascade-apex",
+  "created_at": "2026-08-16T07:07:26.000Z",
+  "updated_at": "2026-08-17T17:43:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "robert131OO4 (robert) - Hugging Face",
+      "url": "https://huggingface.co/robert131OO4",
+      "snippet": "User profile of robert on Hugging Face"
+    },
+    {
+      "title": "Cascade - AI Response Comparison",
+      "url": "https://www.usecascade.app/landing",
+      "snippet": "THE SMARTEST WAY TO COMPARE AI Test prompts across multiple models simultaneously. Save templates, track experiments, find the perfect model."
+    },
+    {
+      "title": "Cascade Apex - AI-Powered Crisis Simulation",
+      "url": "https://cascadeapex.com/",
+      "snippet": "Cascade generates a plausible scenario with a cast of AI-driven entities - media, regulators, employees, customers, adversaries - each with their own behaviours and motivations. Participants join a simulated workspace and the crisis begins. Injects arrive dynamically - emails, social media posts, news alerts, internal messages."
+    },
+    {
+      "title": "robert131OO4/albedo-qwen3.6-35b-canon7 · Hugging Face",
+      "url": "https://huggingface.co/robert131OO4/albedo-qwen3.6-35b-canon7",
+      "snippet": "robert131OO4 / albedo-qwen3.6-35b-canon7 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 3 Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Nvidia Open Sources Cascade RL, Powers 3B Model To Gold-Level AI ...",
+      "url": "https://www.opensourceforu.com/2026/03/nvidia-open-sources-cascade-rl-powers-3b-model-to-gold-level-ai-performance/",
+      "snippet": "Nvidia open sources its Cascade RL pipeline via NeMo-RL, enabling enterprises to achieve top-tier reasoning performance without building massive models from scratch. Nvidia has open-sourced the post-training pipeline behind its Nemotron-Cascade 2 model, signalling a shift in AI development where training methodology, rather than model size, defines performance. Released via the NeMo-RL ..."
+    }
+  ]
+}

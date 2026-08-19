@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "scalejade/qwen-sea-lion-v4.5-27b-it",
+  "slug": "scalejade-qwen-sea-lion-v4-5-27b-it",
+  "author": "scalejade",
+  "url": "https://huggingface.co/scalejade/qwen-sea-lion-v4.5-27b-it",
+  "created_at": "2026-08-17T13:39:36.000Z",
+  "updated_at": "2026-08-18T12:43:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "km",
+    "lo",
+    "my"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "vi",
+    "id",
+    "th",
+    "fil",
+    "ta",
+    "ms",
+    "km",
+    "lo",
+    "my",
+    "arxiv:2502.14301",
+    "arxiv:2311.07911",
+    "arxiv:2306.05685",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80158767879,
+  "storage_human": "80.2 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scalejade/Qwen-SEA-LION-ScaleJade - Storage Bucket",
+      "url": "https://huggingface.co/buckets/scalejade/Qwen-SEA-LION-ScaleJade",
+      "snippet": "SEA-LION is a collection of Large Language Models (LLMs) which have been pretrained and instruct-tuned for the Southeast Asia (SEA) region. Qwen-SEA-LION-v4.5-27B-IT built upon the Qwen3.6-27B dense architecture, a 27-billion parameter model featuring a hybrid Linear and Full Attention design."
+    },
+    {
+      "title": "Qwen-SEA-LION-v4.5 | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-lion-v4.5/qwen-sea-lion-v4.5",
+      "snippet": "Last update: 2026-05-19 SEA-LION is a collection of Large Language Models (LLMs) which have been pretrained and instruct-tuned for the Southeast Asia (SEA) region. The Qwen-SEA-LION-v4.5-27B-IT sub-collection — comprising the standard high-fidelity model and its speed-optimized companion, the 27B-IT-SpecDecoder — is built upon the Qwen3.6-27B dense architecture, a 27-billion parameter ..."
+    },
+    {
+      "title": "sealion/models/sea-lion-v4.5/qwen-sea-lion-v4.5.md at main ... - GitHub",
+      "url": "https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v4.5/qwen-sea-lion-v4.5.md",
+      "snippet": "Last update: 2026-05-19 SEA-LION is a collection of Large Language Models (LLMs) which have been pretrained and instruct-tuned for the Southeast Asia (SEA) region. The Qwen-SEA-LION-v4.5-27B-IT sub-collection — comprising the standard high-fidelity model and its speed-optimized companion, the 27B-IT-SpecDecoder — is built upon the Qwen3.6-27B dense architecture, a 27-billion parameter ..."
+    },
+    {
+      "title": "SEA-LION v4.5 (Latest) | SEA-LION Documentation - docs.sea-lion.ai",
+      "url": "https://docs.sea-lion.ai/models/sea-lion-v4.5",
+      "snippet": "Qwen-SEA-LION-v4.5 (27B Series) Our high-capacity flagship causal and vision-language series built on Qwen3.6. It features a native 262K context window, robust multi-turn reasoning, and repository-level coding adapted for regional linguistic and cultural contexts."
+    },
+    {
+      "title": "aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
+      "url": "https://ollama.com/aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
+      "snippet": "Qwen-SEA-LION-v4.5-27B-IT is a multilingual, multimodal model which has been pretrained and instruct-tuned for the Southeast Asia region. Developed by AI Singapore and funded by National Research Foundation, Singapore."
+    }
+  ]
+}

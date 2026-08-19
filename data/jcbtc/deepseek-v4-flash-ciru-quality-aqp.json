@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jcbtc/DeepSeek-V4-Flash-CIRU-Quality-AQP",
+  "slug": "jcbtc-deepseek-v4-flash-ciru-quality-aqp",
+  "author": "jcbtc",
+  "url": "https://huggingface.co/jcbtc/DeepSeek-V4-Flash-CIRU-Quality-AQP",
+  "created_at": "2026-08-19T02:52:49.000Z",
+  "updated_at": "2026-08-19T03:00:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "speculative-decoding",
+    "rocm",
+    "gfx1151",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 191992792663,
+  "parameters_human": "191.99B",
+  "storage_bytes": 121581672320,
+  "storage_human": "121.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ciru Benchmark Lab",
+      "url": "https://lab.ciru.ai/",
+      "snippet": "50/148 pass TG - 47.8s/task base 33.78% elapsed 1h 57m 3 DeepSeek V4 Flash API bigcodebench-hard-instruct 32.43% 48/148 pass"
+    },
+    {
+      "title": "Ciru.ai - Crown on X: \"I ran Deepseek v4 Flash in the API from ...",
+      "url": "https://x.com/ciruai/status/2072006455348134357",
+      "snippet": "I ran Deepseek v4 Flash in the API from Deepseek platform directly and compared the quality to the @antirez Dwarfstar iq2 quant running locally on my AMD Strix Halo (a $3000 machine)."
+    },
+    {
+      "title": "Run DeepSeek V4 Flash Locally: Full 2026 Setup Guide",
+      "url": "https://codersera.com/blog/run-deepseek-v4-flash-locally-full-2026-setup-guide/",
+      "snippet": "Run DeepSeek V4 Flash locally: VRAM tiers from 33GB quantized to 170GB full, vLLM/SGLang install steps, benchmarks, and pricing. MIT-licensed setup guide."
+    },
+    {
+      "title": "DeepSeek V4 Guide: Pro & Flash, GA + Pricing (Aug 2026)",
+      "url": "https://codersera.com/blog/deepseek-v4-complete-guide-2026/",
+      "snippet": "DeepSeek V4 Pro (1.6T) and V4 Flash (284B MoE): GA on Aug 13, 2026, current pricing, the Aug 16 price change, benchmarks, hardware and deployment."
+    },
+    {
+      "title": "DeepSeek V4 Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash 0731 is a 284B Mixture-of-Experts model built for coding, tool use, and agentic workflows, with 13B active parameters and a 1M-token context window."
+    }
+  ]
+}

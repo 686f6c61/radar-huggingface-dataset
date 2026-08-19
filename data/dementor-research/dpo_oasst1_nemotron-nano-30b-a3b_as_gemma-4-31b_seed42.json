@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42",
+  "slug": "dementor-research-dpo_oasst1_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42",
+  "created_at": "2026-08-16T20:42:58.000Z",
+  "updated_at": "2026-08-16T20:47:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1544348352,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/dpo_oasst1_gemma-4-e4b_as_nemotron-nano-30b-a3b ...",
+      "url": "https://huggingface.co/dementor-research/dpo_oasst1_gemma-4-e4b_as_nemotron-nano-30b-a3b_seed42",
+      "snippet": "Instructions to use dementor-research/dpo_oasst1_gemma-4-e4b_as_nemotron-nano-30b-a3b_seed42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "dementor-research/dpo_oasst1_phi-4_as_nemotron-nano-30b-a3b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_oasst1_phi-4_as_nemotron-nano-30b-a3b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the oasst1 corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "dpo_oasst1_gemma-4-31b_as_nemotron-nano-30b-a3b_seed42",
+      "url": "https://friendli.ai/models/dementor-research/dpo_oasst1_gemma-4-31b_as_nemotron-nano-30b-a3b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the oasst1 corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "dpo_oasst1_nemotron-nano-30b-a3b_as_qwen3.6-35b-a3b_seed42",
+      "url": "https://friendli.ai/models/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_qwen3.6-35b-a3b_seed42",
+      "snippet": "Deploy dpo_oasst1_nemotron-nano-30b-a3b_as_qwen3.6-35b-a3b_seed42 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

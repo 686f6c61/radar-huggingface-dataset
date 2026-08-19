@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sifat-febo/banglish-companion",
+  "slug": "sifat-febo-banglish-companion",
+  "author": "sifat-febo",
+  "url": "https://huggingface.co/sifat-febo/banglish-companion",
+  "created_at": "2026-03-15T03:06:03.000Z",
+  "updated_at": "2026-08-17T23:10:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "banglish",
+    "bengali",
+    "conversational",
+    "fine-tuned",
+    "smollm2",
+    "local-inference",
+    "safety-aligned",
+    "low-resource-languages",
+    "code-switching",
+    "perception-layers",
+    "emotional-intelligence",
+    "bn",
+    "en",
+    "dataset:sifat-febo/banglish_bench",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-1.7B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 769,
+  "trending_score": 0,
+  "parameters": 1711378432,
+  "parameters_human": "1.71B",
+  "storage_bytes": 13694053948,
+  "storage_human": "13.7 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Banglish Conversation",
+      "dataset": "BanglishBench",
+      "metric": "BanglishBench v2.1 Quality Floor",
+      "value": 96.8
+    }
+  ],
+  "sources": []
+}

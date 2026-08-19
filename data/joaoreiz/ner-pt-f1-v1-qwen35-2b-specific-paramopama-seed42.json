@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-paramopama-seed42",
+  "slug": "joaoreiz-ner-pt-f1-v1-qwen35-2b-specific-paramopama-seed42",
+  "author": "JoaoReiz",
+  "url": "https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-paramopama-seed42",
+  "created_at": "2026-08-16T18:25:37.000Z",
+  "updated_at": "2026-08-16T18:26:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ner",
+    "portuguese",
+    "lora",
+    "structured-generation",
+    "token-classification",
+    "pt",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87322013,
+  "storage_human": "87 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

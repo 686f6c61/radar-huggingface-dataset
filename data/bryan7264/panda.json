@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bryan7264/PANDA",
+  "slug": "bryan7264-panda",
+  "author": "bryan7264",
+  "url": "https://huggingface.co/bryan7264/PANDA",
+  "created_at": "2026-08-18T02:59:03.000Z",
+  "updated_at": "2026-08-18T03:11:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "single-cell",
+    "scRNA-seq",
+    "cell-type-classification",
+    "contrastive-learning",
+    "domain-adaptation",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28220030516,
+  "storage_human": "28.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bryan7264 (Bryan C) - Hugging Face",
+      "url": "https://huggingface.co/bryan7264/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 12 days ago ... published a model 2 months ago"
+    },
+    {
+      "title": "bryan7264 (Bryan C) - Hugging Face",
+      "url": "https://huggingface.co/bryan7264",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 5 days ago ... published a model 2 months ago"
+    },
+    {
+      "title": "panda AI - 3D model by Ravi858 (@Ravi858) [390fd91] - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/panda-ai-390fd91b93cc4c399d61b0d1cc363e87",
+      "snippet": "This model was generated using Meshy, an AI-powered 3D creation toolkit. Meshy helps creators turn ideas into high-quality 3D models with ease. View the original ..."
+    },
+    {
+      "title": "panda - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2003680470045727890",
+      "snippet": "Generate stunning anime art with the &#x27;panda&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Introduction to PandasAI - PandasAI",
+      "url": "https://docs.pandas-ai.com/v2/intro",
+      "snippet": "PandasAI uses a generative AI model to understand and interpret natural language queries and translate them into python code and SQL queries. It then uses the code to interact with the data and return the results to the user."
+    }
+  ]
+}

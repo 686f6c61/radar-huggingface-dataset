@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Phr00t/WAN2.2-14B-Rapid-AllInOne",
+  "slug": "phr00t-wan2-2-14b-rapid-allinone",
+  "author": "Phr00t",
+  "url": "https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne",
+  "created_at": "2025-07-30T16:39:44.000Z",
+  "updated_at": "2026-04-06T05:31:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "wan2.2",
+  "languages": [],
+  "tags": [
+    "wan2.2",
+    "wan",
+    "accelerator",
+    "image-to-video",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:finetune:Wan-AI/Wan2.2-I2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1648,
+  "downloads_30d": 0,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1417327037713,
+  "storage_human": "1417.3 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B, Wan-AI/Wan2.2-T2V-A14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Phr00t/WAN2.2-14B-Rapid-AllInOne at main",
+      "url": "https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phr00t (Phr00t) - Hugging Face",
+      "url": "https://huggingface.co/Phr00t",
+      "snippet": "Phr00t/WAN2.2-14B-Rapid-AllInOne ... Phr00t/AIGen-Safeguard-Tool ... Phr00t/LTX2-Rapid-Merges ... Phr00t/Qwen-Image-Edit-Rapid-AIO"
+    },
+    {
+      "title": "Phr00t/WAN2.2-14B-Rapid-AllInOne - V10 | Wan Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2109549/phr00twan22-14b-rapid-allinone",
+      "snippet": "Download 1 variant available fp8 SafeTensor wan2.2-i2v-rapid-aio-v10-nsfw.safetensors 8-bit, smaller file • 21.78 GB Verified: 9 months ago Download (21.78 GB)"
+    },
+    {
+      "title": "Rapid WAN 2.2 All-in-one (Updated MEGA v12) - civarchive.com",
+      "url": "https://civarchive.com/models/1824594?modelVersionId=2064884",
+      "snippet": "Download Rapid WAN 2.2 All-in-one (Updated MEGA v12) - Checkpoint for Wan Video 14B t2v by Phr00t_. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Damacol/phr00t-wan2-2-14b-rapid-allinone - GitHub",
+      "url": "https://github.com/Damacol/phr00t-wan2-2-14b-rapid-allinone/tree/main",
+      "snippet": "Phr00t/WAN2.2-14B-Rapid-AllInOne - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    }
+  ]
+}

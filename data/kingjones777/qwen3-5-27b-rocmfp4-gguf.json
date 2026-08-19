@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Qwen3.5-27B-ROCmFP4-GGUF",
+  "slug": "kingjones777-qwen3-5-27b-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Qwen3.5-27B-ROCmFP4-GGUF",
+  "created_at": "2026-08-17T18:56:33.000Z",
+  "updated_at": "2026-08-17T19:02:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "rocm",
+    "qwen",
+    "multimodal",
+    "quantized",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:quantized:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 126,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 97721099136,
+  "storage_human": "97.7 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF at main",
+      "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-27B",
+      "snippet": "Qwen3.5 dense multimodal model (27B) with gated delta networks hybrid attention, MTP, and 262K context"
+    },
+    {
+      "title": "Qwen3.5-27B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-27b-qwen",
+      "snippet": "Overview Qwen3.5-27B is a 27 billion parameter causal language model with integrated vision encoding, developed by Qwen. The model combines Gated Delta Networks with sparse Mixture-of-Experts to deliver efficient multimodal reasoning and code generation. It natively supports a context length of 262,144 tokens, extensible to 1,010,000 tokens, and operates in thinking mode by default, generating ..."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    }
+  ]
+}

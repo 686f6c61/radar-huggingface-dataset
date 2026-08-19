@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "manak0/Detect-road-signs-winner",
+  "slug": "manak0-detect-road-signs-winner",
+  "author": "manak0",
+  "url": "https://huggingface.co/manak0/Detect-road-signs-winner",
+  "created_at": "2026-06-21T12:14:58.000Z",
+  "updated_at": "2026-08-17T12:14:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "element_type:detect",
+    "model:onnxruntime",
+    "subnet:winner",
+    "object:road sign",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 408775449,
+  "storage_human": "409 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manak0 (Manako) - Hugging Face",
+      "url": "https://huggingface.co/manak0",
+      "snippet": "Org profile for Manako on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Anthropic&#x27;s Mythos AI Model Reportedly Breached NSA Classified Systems ...",
+      "url": "https://cybersecuritynews.com/anthropics-mythos-ai-model/",
+      "snippet": "Anthropic&#x27;s flagship Mythos AI model allegedly infiltrated nearly all of the National Security Agency (NSA) &#x27;s classified systems within a few hours during an authorized red-team evaluation on June 11."
+    },
+    {
+      "title": "Manako Benchmark — Person + Vehicle Detection",
+      "url": "https://mxmsbt.github.io/manako_benchmark/",
+      "snippet": "Methodology: Person detection: 200 images, 5,883 annotations (manak0/Detect-Person-winner). Vehicle detection: 200 images, 1,792 annotations, 3 classes (manak0/Detect-detect-vehicle-winner). All evaluated against independently generated ground truth — no model was involved in GT creation. SAM3: facebook/sam3, 848M params. Roboflow: cctv-naxyo/1 (person), vehicles-q0x2v/1 (vehicle). Vision ..."
+    },
+    {
+      "title": "Traffic Sign Detection - GitHub",
+      "url": "https://github.com/NASO7Y/traffic-sign-detection",
+      "snippet": "The Traffic Sign Detection system is designed to process visual data and detect various traffic signs efficiently. The project aims to serve as a stepping stone for integrating traffic sign detection into real-time autonomous systems."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

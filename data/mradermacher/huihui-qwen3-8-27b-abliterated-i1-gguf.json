@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF",
+  "slug": "mradermacher-huihui-qwen3-8-27b-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF",
+  "created_at": "2026-08-17T12:29:29.000Z",
+  "updated_at": "2026-08-17T13:15:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471868000,
+  "storage_human": "39.5 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF like 0 Transformers GGUF English qwen3.8 qwen 27b bf16 dense vision-language derisked research security-research red-teaming coding tool-calling long-context public-research-preview imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "Huihui-Qwen3-8B-abliterated-v2-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Huihui-Qwen3-8B-abliterated-v2-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Qwen3.8-27B-abliterated-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/douyamv/Qwen3.8-27B-abliterated-GGUF",
+      "snippet": "What is Abliteration? This model has the \"refusal direction\" removed from its weights, allowing unrestricted conversations. The abliteration technique projects out the refusal direction from self_attn.o_proj and mlp.down_proj weights across all layers. See douyamv/Qwen3.8-27B-abliterated for details. Quickstart llama.cpp ... Ollama Create a ..."
+    },
+    {
+      "title": "Huihui-Qwen3-8B-abliterated-v2-i1-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/mradermacher/Huihui-Qwen3-8B-abliterated-v2-i1-GGUF",
+      "snippet": "abliterated uncensored gguf @ mradermacher 2,633 downloads 28.49GB updated Jul 28,2025"
+    },
+    {
+      "title": "Qwen3.8-27B-ABLITERATED-GGUF: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-abliterated-gguf-blackfrost-ai",
+      "snippet": "Qwen3-30B-A3B-abliterated-erotic-i1-GGUF is a 30B model and therefore larger, requiring more VRAM and serving throughput overhead compared to the 27B variant, but may offer slightly different abliteration characteristics depending on its specific training modifications."
+    }
+  ]
+}

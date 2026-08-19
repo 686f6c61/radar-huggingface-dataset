@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ryen-stuff/DeepSeek.v.something",
+  "slug": "ryen-stuff-deepseek-v-something",
+  "author": "ryen-stuff",
+  "url": "https://huggingface.co/ryen-stuff/DeepSeek.v.something",
+  "created_at": "2026-08-19T02:30:49.000Z",
+  "updated_at": "2026-08-19T03:18:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v4",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304180418494,
+  "parameters_human": "304.18B",
+  "storage_bytes": 166888735421,
+  "storage_human": "166.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://www.deepseek.com/",
+      "snippet": "深度求索（DeepSeek），探索未至之境。专注于研究世界领先的通用人工智能底层模型与技术，开源 DeepSeek-V4、DeepSeek-R1 等前沿大模型。和 DeepSeek AI 对话，轻松接入 API。"
+    },
+    {
+      "title": "Ryen stuff - YouTube",
+      "url": "https://www.youtube.com/@Ryenstuff",
+      "snippet": "They Don&#x27;t Want You to Know This: How to Jailbreak DeepSeek in 1 Prompt (Remove All Limits) 276 views • 2 months ago 0:32"
+    },
+    {
+      "title": "DeepSeek V4 Is Here—Its Pro Version Costs 98% Less Than GPT ... - Decrypt",
+      "url": "https://decrypt.co/365455/deepseek-v4-launch-pro-version-costs-less-gpt-5-pro",
+      "snippet": "In brief DeepSeek released its new V4-Pro model with 1.6 trillion parameters. It costs $1.74/$3.48 per million input/output tokens, roughly 1/20th the price of Claude Opus 4.7 and 98% less than GPT 5.5 Pro. DeepSeek trained V4 partly on Huawei Ascend chips, circumventing U.S. export restrictions, and says that once 950 new supernodes come online later in 2026, the Pro model&#x27;s already-low price ..."
+    },
+    {
+      "title": "The Complete Guide to DeepSeek Models: V3, R1, V4 and Beyond",
+      "url": "https://www.bentoml.com/blog/the-complete-guide-to-deepseek-models-from-v3-to-r1-and-beyond",
+      "snippet": "Understand the differences among DeepSeek-V3, R1, V3.1, V3.2, V4, and distilled models. Learn how to choose the right model and deploy them securely."
+    }
+  ]
+}

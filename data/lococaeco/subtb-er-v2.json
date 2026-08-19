@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lococaeco/subTB-ER-v2",
+  "slug": "lococaeco-subtb-er-v2",
+  "author": "lococaeco",
+  "url": "https://huggingface.co/lococaeco/subTB-ER-v2",
+  "created_at": "2026-08-16T09:26:08.000Z",
+  "updated_at": "2026-08-18T00:47:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 550807022973,
+  "storage_human": "550.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lococaeco (Bangsangwoo) - Hugging Face",
+      "url": "https://huggingface.co/lococaeco",
+      "snippet": "User profile of Bangsangwoo on Hugging Face"
+    },
+    {
+      "title": "GitHub - lococaeco/lococaeco",
+      "url": "https://github.com/lococaeco/lococaeco",
+      "snippet": "Contribute to lococaeco/lococaeco development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lococaeco (lococaeco) · GitHub",
+      "url": "https://github.com/lococaeco",
+      "snippet": "Inha Univ, B.S. in Mechanical Engineering. Ulsan National Institute of Science and Technology (UNIST), M.S. in Artificial Intelligence - lococaeco"
+    },
+    {
+      "title": "lococaeco — ClawHub",
+      "url": "https://clawhub.ai/lococaeco",
+      "snippet": "....:: clawhub/openclaw ::.... skills plugins publishers trust signals :::: signed manifests ::::: moderated releases ::::: version history :::: openclaw ecosystem ..."
+    }
+  ]
+}

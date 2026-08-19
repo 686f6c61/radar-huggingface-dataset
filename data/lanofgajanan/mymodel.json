@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LanOfGajanan/mymodel",
+  "slug": "lanofgajanan-mymodel",
+  "author": "LanOfGajanan",
+  "url": "https://huggingface.co/LanOfGajanan/mymodel",
+  "created_at": "2026-08-16T12:15:41.000Z",
+  "updated_at": "2026-08-16T12:15:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lanofgajanan · GitHub",
+      "url": "https://github.com/lanofgajanan",
+      "snippet": "Hey, I&#x27;m Raghav 👋 Currently studying at Scaler School of Technology, CS branch, specializing in cybersecurity. I build things I actually want to exist — a narrative game, a self-hosted homelab — rather than tutorial projects."
+    },
+    {
+      "title": "Models - Microsoft AI",
+      "url": "https://microsoft.ai/models/",
+      "snippet": "Helps your engineering team write better code faster, with a lightweight, agentic model built into GitHub Copilot and VS Code."
+    },
+    {
+      "title": "The AI That Went Bananas: Unpacking Google&#x27;s Viral &#x27;Nano Banana&#x27; Image ...",
+      "url": "https://machineofmind.blogspot.com/2025/08/the-ai-that-went-bananas-unpacking.html",
+      "snippet": "What is Nano Banana and Why Did It Go Viral? In early August 2025, the AI community was captivated by a mystery. An unnamed, highly capable image-editing model suddenly appeared on the LMArena testing platform. It wasn&#x27;t listed in any official directory, but its results were terrifyingly good, effortlessly outperforming established models like DALL-E and Midjourney."
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

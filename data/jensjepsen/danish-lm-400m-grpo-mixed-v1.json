@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "jensjepsen/danish-lm-400m-grpo-mixed-v1",
+  "slug": "jensjepsen-danish-lm-400m-grpo-mixed-v1",
+  "author": "jensjepsen",
+  "url": "https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed-v1",
+  "created_at": "2026-08-14T19:25:34.000Z",
+  "updated_at": "2026-08-14T19:29:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "safetensors",
+    "danish",
+    "grpo",
+    "instruction-following",
+    "gsm8k",
+    "ifeval",
+    "text-generation",
+    "da",
+    "base_model:jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+    "base_model:finetune:jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4976542224,
+  "storage_human": "5.0 GB",
+  "base_model": "jensjepsen/danish-lm-400m-sft-v31-avg-top3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

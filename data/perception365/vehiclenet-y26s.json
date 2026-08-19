@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Perception365/VehicleNet-Y26s",
+  "slug": "perception365-vehiclenet-y26s",
+  "author": "Perception365",
+  "url": "https://huggingface.co/Perception365/VehicleNet-Y26s",
+  "created_at": "2026-01-23T21:05:09.000Z",
+  "updated_at": "2026-08-18T04:55:50.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "indian-traffic",
+    "inference-efficiency",
+    "multi-vehicle-detection",
+    "edge-computing",
+    "object-detection",
+    "en",
+    "dataset:iisc-aim/UVH-26",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:quantized:Ultralytics/YOLO26",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103693355,
+  "storage_human": "104 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perception365/VehicleNet-Y26s · Hugging Face",
+      "url": "https://huggingface.co/Perception365/VehicleNet-Y26s",
+      "snippet": "VehicleNet-Y26s VehicleNet-Y26s is another multi-class vehicle detection model designed for fine-grained vehicle type recognition in real-world traffic scenes. The model is trained on UVH-26-MV Dataset released by IISc Banaglore. The dataset is based on Indian traffic which is highly challenging, dense and heterogeneous."
+    },
+    {
+      "title": "README.md · Perception365/VehicleNet-Y26s at main - Hugging Face",
+      "url": "https://huggingface.co/Perception365/VehicleNet-Y26s/blob/main/README.md",
+      "snippet": "VehicleNet-Y26s VehicleNet-Y26s is another multi-class vehicle detection model designed for fine-grained vehicle type recognition in real-world traffic scenes. The model is trained on UVH-26-MV Dataset released by IISc Banaglore. The dataset is based on Indian traffic which is highly challenging, dense and heterogeneous."
+    },
+    {
+      "title": "[2004.06305] VehicleNet: Learning Robust Visual Representation for ...",
+      "url": "https://arxiv.org/abs/2004.06305",
+      "snippet": "The second stage is to fine-tune the trained model purely based on the target vehicle set, by minimizing the distribution discrepancy between our VehicleNet and any target domain. We discuss our proposed multi-source dataset VehicleNet and evaluate the effectiveness of the two-stage progressive representation learning through extensive experiments."
+    },
+    {
+      "title": "GitHub - layumi/Vehicle_reID-Collection: :red_car: the collection of ...",
+      "url": "https://github.com/layumi/Vehicle_reID-Collection",
+      "snippet": "VehicleNet: Learning Robust Visual Representation for Vehicle Re-identification (TMM) arXiv [中文介绍] Beyond the Parts: Learning Multi-view Cross-part Correlation for Vehicle Re-identification (ACM MM) paper code"
+    },
+    {
+      "title": "JOURNAL OF LA VehicleNet: Learning Robust Visual Representation for ...",
+      "url": "https://arxiv.org/pdf/2004.06305",
+      "snippet": "Abstract—One fundamental challenge of vehicle re-identification (re-id) is to learn robust and discriminative visual representation, given the significant intra-class vehicle variations across different camera views. As the existing vehicle datasets are limited in terms of training images and viewpoints, we propose to build a unique large-scale vehicle dataset (called VehicleNet) by ..."
+    }
+  ]
+}

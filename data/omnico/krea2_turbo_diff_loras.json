@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Omnico/Krea2_turbo_diff_loras",
+  "slug": "omnico-krea2_turbo_diff_loras",
+  "author": "Omnico",
+  "url": "https://huggingface.co/Omnico/Krea2_turbo_diff_loras",
+  "created_at": "2026-08-01T13:23:43.000Z",
+  "updated_at": "2026-08-11T22:28:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 17742,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118059240576,
+  "storage_human": "118.1 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

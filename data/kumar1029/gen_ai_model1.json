@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kumar1029/gen_ai_model1",
+  "slug": "kumar1029-gen_ai_model1",
+  "author": "Kumar1029",
+  "url": "https://huggingface.co/Kumar1029/gen_ai_model1",
+  "created_at": "2026-08-17T04:51:45.000Z",
+  "updated_at": "2026-08-17T04:52:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - hailo-ai/hailo_model_zoo_genai: Model zoo for Gen AI models ...",
+      "url": "https://github.com/hailo-ai/hailo_model_zoo_genai",
+      "snippet": "The Hailo Model Zoo GenAI is a curated collection of pre-trained models and example applications optimized for Hailo&#x27;s AI processors, designed to accelerate GenAI application development. It includes Hailo-Ollama, an Ollama -compatible API written in C++ on top of HailoRT, enabling seamless integration with various external tools and frameworks."
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    },
+    {
+      "title": "Model Garden on Gemini Enterprise Agent Platform",
+      "url": "https://cloud.google.com/model-garden",
+      "snippet": "Discover, customize, and deploy AI models from Google & partners using Gemini Enterprise Agent Platform (formerly Vertex AI)."
+    },
+    {
+      "title": "Every Generative AI Model: Benchmarks & How to Run Them | GenAIList",
+      "url": "https://genailist.net/",
+      "snippet": "Everything about every generative AI model Every model — LLMs, image, video, audio. Watch community video reviews, compare benchmark scores head-to-head, and for open models see the hardware & software to run them yourself. Everything you wanted to know, generously shared by the community."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

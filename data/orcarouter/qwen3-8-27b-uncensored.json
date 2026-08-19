@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "orcarouter/Qwen3.8-27B-Uncensored",
+  "slug": "orcarouter-qwen3-8-27b-uncensored",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored",
+  "created_at": "2026-08-18T02:05:08.000Z",
+  "updated_at": "2026-08-18T03:31:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "bf16",
+    "post-training",
+    "fine-tuning",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 4,
+  "trending_score": 20,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8 · Hugging Face",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    },
+    {
+      "title": "Qwen3.8-27B Open Weights: Max Shipped, 27B Delayed",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-open-weights-leak",
+      "snippet": "On August 13, 2026, the open-weights week Alibaba promised for its Qwe n3.8 generation split in two. The Max-class flagship&#x27;s weights — Qwen3.8-2.4T-A95B, a 2.4-trillion-parameter sparse mixture-of-experts model and the first Max-level Q wen release ever made downloadable — actually shipped, on Hugging Face and ModelScope, announced late the previous night through the ModelScope community ..."
+    }
+  ]
+}

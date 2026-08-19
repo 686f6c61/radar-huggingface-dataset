@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "preneond/newlinefix-encoder",
+  "slug": "preneond-newlinefix-encoder",
+  "author": "preneond",
+  "url": "https://huggingface.co/preneond/newlinefix-encoder",
+  "created_at": "2026-08-17T21:28:30.000Z",
+  "updated_at": "2026-08-17T21:57:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "newline-restoration",
+    "text-segmentation",
+    "base_model:distilbert/distilroberta-base",
+    "base_model:quantized:distilbert/distilroberta-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 81530884,
+  "parameters_human": "81.5M",
+  "storage_bytes": 734306245,
+  "storage_human": "734 MB",
+  "base_model": "distilroberta-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/clip",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "How to Troubleshoot and Solve ComfyUI Model Issues",
+      "url": "https://docs.comfy.org/troubleshooting/model-issues",
+      "snippet": "Troubleshooting model-related problems including architecture mismatches, missing models, and loading errors"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice..."
+    },
+    {
+      "title": "GitHub - facebookresearch/perception_models: State-of-the-art Image ...",
+      "url": "https://github.com/facebookresearch/perception_models",
+      "snippet": "Perception Models: Powerful Models for Image, Video, and Audio Perception This repo is the home to the state-of-the-art for image and video perception: Perception Encoder (PE) for image, video, audio encoding, and Perception Language Model (PLM) for decoding."
+    }
+  ]
+}

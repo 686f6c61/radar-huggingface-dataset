@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-4bit",
+  "slug": "jpq24-llama-3-1-8b-natural-synthesis-merged-4bit",
+  "author": "JPQ24",
+  "url": "https://huggingface.co/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-4bit",
+  "created_at": "2026-08-17T22:23:32.000Z",
+  "updated_at": "2026-08-17T22:27:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "conversational",
+    "en",
+    "base_model:JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit",
+    "base_model:quantized:JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5719956032,
+  "storage_human": "5.7 GB",
+  "base_model": "JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JPQ24/Llama-3.1-8b-Natural-Synthesis-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/JPQ24/Llama-3.1-8b-Natural-Synthesis-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JPQ24 (Solrack Selarep) - Hugging Face",
+      "url": "https://huggingface.co/JPQ24",
+      "snippet": "JPQ24/llama-3-8b-Natural-synthesis-Lora-Merge Text Generation • 8B• Updated about 23 hours ago• 121 • 1"
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "JPQ24/llama-3-8b-Natural-synthesis-Lora-Merge · OpenModelIndex",
+      "url": "https://omi.solexsis.com/m/JPQ24/llama-3-8b-Natural-synthesis-Lora-Merge",
+      "snippet": "by JPQ24 · view on HuggingFace ↗ 27 downloads 1 likes 8B parameters 1 benchmarks adapter kind base model: unsloth/llama-3-8b-Instruct-bnb-4bit · license: apache-2.0 · languages: en · lib: transformers"
+    },
+    {
+      "title": "Llama 3 8b Natural Synthesis - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/llama-3-8b-natural-synthesis.html",
+      "snippet": "Download Llama 3 8b Natural Synthesis GGUF model. 8.0 GB, 131 downloads, 0 likes."
+    }
+  ]
+}

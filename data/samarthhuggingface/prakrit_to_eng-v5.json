@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Samarthhuggingface/prakrit_to_eng-v5",
+  "slug": "samarthhuggingface-prakrit_to_eng-v5",
+  "author": "Samarthhuggingface",
+  "url": "https://huggingface.co/Samarthhuggingface/prakrit_to_eng-v5",
+  "created_at": "2026-08-18T10:16:06.000Z",
+  "updated_at": "2026-08-18T10:26:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "IndicTrans",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1023006720,
+  "parameters_human": "1.02B",
+  "storage_bytes": 4092117552,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=prakrit",
+      "snippet": "VIITPune/Deshika-Maharashtri_Prakrit_to_English_Parallel_Corpus Viewer •Updated Jan 16, 2025•1.47k• 21 • 1"
+    },
+    {
+      "title": "Deshika-Maharashtri_Prakrit_to_English_Parallel_Corpus",
+      "url": "https://huggingface.co/datasets/VIITPune/Deshika-Maharashtri_Prakrit_to_English_Parallel_Corpus",
+      "snippet": "Maharashtri Prakrit to English Parallel Corpus Dataset Summary This dataset contains parallel text data for translating from Maharashtri Prakrit (an ancient Indo-Aryan language) to English. It is designed to aid in developing machine translation systems, language models, and linguistic research for this underrepresented language."
+    },
+    {
+      "title": "English-to-Prakrit Machine Translation via Multilingual Transfer Learning",
+      "url": "https://arxiv.org/html/2606.06038v1",
+      "snippet": "Abstract We study English-to-Prakrit machine translation in a low-resource setting where the target language is unsupported by IndicTrans2. We adapt the multilingual model by mapping Prakrit to the Hindi language tag (hin_Deva) without modifying the tokenizer, vocabulary, or architecture. Using a 1,474-pair Maharashtri Prakrit parallel corpus and evaluation on a 20-sample Ardhamagadhi test set ..."
+    },
+    {
+      "title": "GitHub - sarveshchaudhari/praTran: NMT of Maharashtri Prakrit to English",
+      "url": "https://github.com/sarveshchaudhari/praTran",
+      "snippet": "NMT of Maharashtri Prakrit to English. Contribute to sarveshchaudhari/praTran development by creating an account on GitHub."
+    },
+    {
+      "title": "How to Download a Model from Hugging Face - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/how-to-download-a-model-from-hugging-face/",
+      "snippet": "Hugging Face models are pre-trained machine learning models that you can directly download and plug into our applications for tasks like text classification, translation, summarization and more without training from scratch. It is an open-source AI platform best known for the transformers library and the Model Hub, which hosts thousands of ready-to-use models for NLP, vision and multimodal ..."
+    }
+  ]
+}

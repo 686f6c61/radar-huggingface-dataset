@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "CaptchaKraken/CaptchaKraken-Lora-v1.2",
+  "slug": "captchakraken-captchakraken-lora-v1-2",
+  "author": "CaptchaKraken",
+  "url": "https://huggingface.co/CaptchaKraken/CaptchaKraken-Lora-v1.2",
+  "created_at": "2026-08-13T15:02:58.000Z",
+  "updated_at": "2026-08-18T22:12:20.000Z",
+  "license": "captchakraken-source-available-v1.1",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "captchakraken",
+    "lora",
+    "qwen3.5-vl",
+    "captcha",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 815765249,
+  "storage_human": "816 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CaptchaKraken/CaptchaKraken_v1.1 · Hugging Face",
+      "url": "https://huggingface.co/CaptchaKraken/CaptchaKraken_v1.1",
+      "snippet": "CaptchaKraken_v1.1 A multimodal LoRA adapter for Qwen/Qwen3.5-9B that solves image captchas. It is the model behind CaptchaKraken — a self-hosted captcha solver for browser automation (npm captcha-kraken-js, PyPI captchakraken)."
+    },
+    {
+      "title": "CaptchaKraken/CaptchaKrakenV1_Lora · Hugging Face",
+      "url": "https://huggingface.co/CaptchaKraken/CaptchaKrakenV1_Lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JWriter20/CaptchaKraken: CaptchaKraken - GitHub",
+      "url": "https://github.com/JWriter20/CaptchaKraken",
+      "snippet": "A self-hosted captcha solver for browser automation. Give it a page — it finds the captcha, reads the puzzle with a fine-tuned Qwen3.5-9B vision model, and clicks through to a token. Everything runs on your hardware. No third-party solving service. ⭐ Enjoying CaptchaKraken? Star & watch the repo for new puzzle types, smaller models, and the hosted cloud API. One repo, two published ports ..."
+    },
+    {
+      "title": "captchakraken · PyPI",
+      "url": "https://pypi.org/project/captchakraken/",
+      "snippet": "The Python engine + CLI behind CaptchaKraken: OpenCV grid detection + a fine-tuned Qwen3.5-9B vision LoRA served on vLLM. Given a screenshot of a captcha grid, it locates the tiles and returns the click plan."
+    },
+    {
+      "title": "CaptchaKraken/python/README.md at main - GitHub",
+      "url": "https://github.com/JWriter20/CaptchaKraken/blob/main/python/README.md",
+      "snippet": "captchakraken The Python engine + CLI behind CaptchaKraken: OpenCV grid detection + a fine-tuned Qwen3.5-9B vision LoRA served on vLLM. Given a screenshot of a captcha grid, it locates the tiles and returns the click plan. Ships the captchakraken command."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "stage-babylm/llama-384-2L",
+  "slug": "stage-babylm-llama-384-2l",
+  "author": "stage-babylm",
+  "url": "https://huggingface.co/stage-babylm/llama-384-2L",
+  "created_at": "2026-08-11T00:19:59.000Z",
+  "updated_at": "2026-08-17T19:57:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 702,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2878409165,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stage-babylm/llama-384-2L · Hugging Face",
+      "url": "https://huggingface.co/stage-babylm/llama-384-2L",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama-384-2L API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/stage-babylm/llama-384-2L",
+      "snippet": "Deploy llama-384-2L with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Llama Model Family — Model Architectures — A Visual History",
+      "url": "https://karam-nus.github.io/models/02_Llama",
+      "snippet": "The Llama (Large Language Model Meta AI) series is Meta&#x27;s flagship family of open-weight language models, spanning from a pure research release in February 2023 to a production-scale multimodal Mixture-of-Experts system in April 2025."
+    },
+    {
+      "title": "Llama Versions — every Meta Llama model from LLaMA 1 through Llama 4 ...",
+      "url": "https://mungomash.com/ai/llama/versions/",
+      "snippet": "2023 - 2026 Llama Versions Meta&#x27;s current frontier-AI model is Muse Spark 1.2, released August 5, 2026 under Meta Superintelligence Labs — closed-weights, a coding-focused update to Muse Spark 1.1, co-trained with the Muse Code terminal agent that shipped the same day, with a 1M-token context window. It is callable through the Meta Model API."
+    },
+    {
+      "title": "GitHub Pages - Baby",
+      "url": "https://babylm.github.io/",
+      "snippet": "Track update: This year introduces a dedicated MultiLingual track, and removes Multimodal and Interaction as standalone competition tracks, both are now subsumed into Strict / Strict-Small (paired image-text data and teacher-model feedback are allowed). Evaluation pipeline: The BabyLM 2026 evaluation pipeline is now ready!"
+    }
+  ]
+}

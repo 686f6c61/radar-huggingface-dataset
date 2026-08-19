@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "spadeMIA/pythia-1.4b-goodwiki-lora-r64",
+  "slug": "spademia-pythia-1-4b-goodwiki-lora-r64",
+  "author": "spadeMIA",
+  "url": "https://huggingface.co/spadeMIA/pythia-1.4b-goodwiki-lora-r64",
+  "created_at": "2026-08-10T18:13:35.000Z",
+  "updated_at": "2026-08-17T17:18:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dataset:spadeMIA/GoodWiki_Corpus_1024_2040",
+    "base_model:EleutherAI/pythia-1.4b",
+    "base_model:adapter:EleutherAI/pythia-1.4b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201359729,
+  "storage_human": "201 MB",
+  "base_model": "EleutherAI/pythia-1.4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spadeMIA/pythia-1.4b-goodwiki-lora-r16-a64 · Hugging Face",
+      "url": "https://huggingface.co/spadeMIA/pythia-1.4b-goodwiki-lora-r16-a64",
+      "snippet": "Instructions to use spadeMIA/pythia-1.4b-goodwiki-lora-r16-a64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "spadeMIA/pythia-1.4b-goodwiki-lora-r64 · Hugging Face",
+      "url": "https://huggingface.co/spadeMIA/pythia-1.4b-goodwiki-lora-r64",
+      "snippet": "spadeMIA / pythia-1.4b-goodwiki-lora-r64 like 0 Follow Spade Lab&#x27;s MIA 3 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "The Pythia suite was developed with the explicit purpose of enabling research in interpretability, learning dynamics, and ethics and transparency for which existing model suites were inadequate. The key features of the Pythia suite are: All models, data, and code used in the paper are publicly released, enabling full reproducibility of results."
+    },
+    {
+      "title": "awesome-llm-model-zoo/architectures/pythia-1.4b at main · neurarch-ai ...",
+      "url": "https://github.com/neurarch-ai/awesome-llm-model-zoo/tree/main/architectures/pythia-1.4b",
+      "snippet": "One rung of EleutherAI&#x27;s Pythia suite, the interpretability-and-training-dynamics workhorse: an identical GPT-NeoX architecture trained at 8 sizes on the exact same data order, with 154 checkpoints each. The 1.4B is the popular mid-size."
+    },
+    {
+      "title": "Pythia 1.4B by EleutherAI — VRAM 2.9GB, 2K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/EleutherAI%2Fpythia-1.4b,W90pxU316vZ9fjBYtbxor",
+      "snippet": "Pythia 1.4B is an open-source 1.4b LLM by EleutherAI. VRAM 2.9GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

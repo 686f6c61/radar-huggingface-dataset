@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shikunpunk/MiniMind-YuHua-AR-v2",
+  "slug": "shikunpunk-minimind-yuhua-ar-v2",
+  "author": "shikunpunk",
+  "url": "https://huggingface.co/shikunpunk/MiniMind-YuHua-AR-v2",
+  "created_at": "2026-08-18T21:57:22.000Z",
+  "updated_at": "2026-08-18T21:59:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimind",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275371012,
+  "storage_human": "275 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shikunpunk/MiniMind-YuHua-Data · Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/MiniMind-YuHua-Data",
+      "snippet": "MiniMind-YuHua-Data 余华作品全集（13册）epub 解析数据与余华风格 CoT SFT 数据（MiniMind 104M 训练用）。"
+    },
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/models",
+      "snippet": "shikunpunk/poetry-judge-qwen2.5-1.5b-cn-neutral Text Generation • 2B•Updated 3 days ago• 16"
+    },
+    {
+      "title": "GitHub - jingyaogong/minimind: 「大模型」2小时完全从0训练64M的小参数LLM!Train a 64M ...",
+      "url": "https://github.com/jingyaogong/minimind",
+      "snippet": "MiniMind 同时拓展了视觉模态模型 MiniMind-V 、多模态 Omni 模型 MiniMind-O 、扩散语言模型（MiniMind-dLM）、线性模型（MiniMind-Linear），详见 Discussion。 项目所有核心算法代码均从 0 使用 PyTorch 原生实现，不依赖第三方库提供的高层抽象接口。"
+    },
+    {
+      "title": "shikunpunk-ai-seacher/works at main · shikunpneg/shikunpunk ... - GitHub",
+      "url": "https://github.com/shikunpneg/shikunpunk-ai-seacher/tree/main/works",
+      "snippet": "Harness Engineering 学习指南 — 从概念理解到独立实践的深度学习档案（搜索有用的ai技术信息） - shikunpunk-ai-seacher/works at main ..."
+    },
+    {
+      "title": "AI 3D Model Generator | Create 3D Models with V2Fun",
+      "url": "https://v2fun.ai/",
+      "snippet": "Generate 3D models, characters, game assets, and animations from images or text with V2Fun&#x27;s AI 3D creation platform."
+    }
+  ]
+}

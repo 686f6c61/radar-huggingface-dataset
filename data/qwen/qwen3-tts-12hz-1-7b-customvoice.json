@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "slug": "qwen-qwen3-tts-12hz-1-7b-customvoice",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "created_at": "2026-01-21T08:56:49.000Z",
+  "updated_at": "2026-01-29T08:00:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "text-to-speech",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 1892,
+  "downloads_30d": 2252759,
+  "trending_score": 19,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 4523965995,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    },
+    {
+      "title": "Qwen3-TTS - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "snippet": "Text-to-speech served via vLLM-Omni with predefined speaker voices and optional style/emotion control, exposed through the OpenAI /v1/audio/speech API. Sibling VoiceDesign and Base (voice-clone) checkpoints share the same serving path."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS?pubDate=20260316",
+      "snippet": "For the voice design model (Qwen3-TTS-12Hz-1.7B-VoiceDesign), you can use generate_voice_design to provide the target text and a natural-language instruct description."
+    }
+  ]
+}

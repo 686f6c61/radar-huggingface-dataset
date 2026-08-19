@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JWerne/coaching_model_small",
+  "slug": "jwerne-coaching_model_small",
+  "author": "JWerne",
+  "url": "https://huggingface.co/JWerne/coaching_model_small",
+  "created_at": "2026-08-18T13:29:38.000Z",
+  "updated_at": "2026-08-18T13:37:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 191535730,
+  "storage_human": "192 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Small open source models from 4B to 40B parameters. Fast and affordable models with limited capabilities and low latency."
+    },
+    {
+      "title": "GitHub - afondiel/awesome-smol: A curated list of small foundation ...",
+      "url": "https://github.com/afondiel/awesome-smol",
+      "snippet": "Awesome Smol is a curated list of small, lightweight AI models, tools, and resources for domains like language, audio, vision, and multimodal tasks. These models are designed for edge devices, resource-constrained environments, and rapid prototyping. Inspiration: awesome-tensorflow-lite."
+    },
+    {
+      "title": "Tiny Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/tiny",
+      "snippet": "Tiny open source models with 4B parameters or fewer. Fast and efficient models for edge computing, mobile apps, and environments with limited resources."
+    },
+    {
+      "title": "Top 5 Small AI Coding Models That You Can Run Locally",
+      "url": "https://www.kdnuggets.com/top-5-small-ai-coding-models-that-you-can-run-locally",
+      "snippet": "Even better, today&#x27;s small language models (SLMs) are surprisingly capable, often competitive with larger proprietary assistants on everyday coding tasks, while remaining fast and lightweight on consumer hardware. In this article, we will review the top five small AI coding models you can run locally."
+    },
+    {
+      "title": "Top 10 Smallest LLM to Run Locally - ML Journey",
+      "url": "https://mljourney.com/top-10-smallest-llm-to-run-locally/",
+      "snippet": "If you&#x27;re looking for the smallest LLM to run locally, this guide explores lightweight models that deliver efficient performance without requiring excessive hardware. We&#x27;ll cover their capabilities, hardware requirements, advantages, and deployment options. Why Use a Small LLM Locally? Running a small LLM on your local machine offers several advantages over cloud-based models: Lower ..."
+    }
+  ]
+}

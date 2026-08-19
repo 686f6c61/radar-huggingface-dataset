@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ssurface/cot-dialect-olmo3-7b-think-grpo-chainonly-l5",
+  "slug": "ssurface-cot-dialect-olmo3-7b-think-grpo-chainonly-l5",
+  "author": "ssurface",
+  "url": "https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-chainonly-l5",
+  "created_at": "2026-08-18T15:16:31.000Z",
+  "updated_at": "2026-08-18T15:48:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "chain-of-thought",
+    "reasoning",
+    "compression",
+    "gsm8k",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:allenai/Olmo-3-7B-Think",
+    "base_model:adapter:allenai/Olmo-3-7B-Think",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159967880,
+  "storage_human": "160 MB",
+  "base_model": "allenai/Olmo-3-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Accuracy (exact match)",
+      "value": 70.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "allenai/Olmo-3-7B-Think · Hugging Face",
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Think",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Olmo-3-7B-Think-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Olmo-3-7B-Think-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olmo 3 7B Think — ThinkLLM",
+      "url": "https://thinkllm.dev/models/olmo-3-7b-think",
+      "snippet": "Olmo 3 7B Think is a reasoning-focused model that works through problems step by step before committing to an answer, making its thought process visible and traceable. At 7 billion parameters, it punches with deliberate care rather than raw scale, favoring structured internal reasoning over quick responses. Its open-weight nature means the full model is inspectable and modifiable, though users ..."
+    },
+    {
+      "title": "Olmo-3-7B-Think: Private Reasoning AI for Ops",
+      "url": "https://llm.co/llms/olmo-3-7b-think",
+      "snippet": "Olmo-3-7B-Think A 7B reasoning model designed for math, coding, and logical inference tasks—deployable privately to automate technical ops workflows without sending reasoning work to external APIs. Olmo-3-7B-Think is an open-weight causal language model fine-tuned via SFT, DPO, and RLVR to produce chain-of-thought reasoning."
+    },
+    {
+      "title": "AllenAI: Olmo 3 7B Think — Advanced Reasoning AI | Multi AI",
+      "url": "https://multi-ai.ai/en/models/olmo-3-7b-think",
+      "snippet": "Olmo 3 7B Think is a cutting-edge research-oriented language model from the Olmo family, developed by AllenAI. It is specifically engineered for advanced reasoning and instruction-driven tasks, demonstrating exceptional capabilities in multi-step problem solving, logical inference, and maintaining coherent conversational context across complex interactions."
+    }
+  ]
+}

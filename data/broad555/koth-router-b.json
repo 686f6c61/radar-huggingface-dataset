@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "broad555/koth-router-b",
+  "slug": "broad555-koth-router-b",
+  "author": "broad555",
+  "url": "https://huggingface.co/broad555/koth-router-b",
+  "created_at": "2026-08-01T15:12:03.000Z",
+  "updated_at": "2026-08-18T10:09:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114516,
+  "storage_human": "114516 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

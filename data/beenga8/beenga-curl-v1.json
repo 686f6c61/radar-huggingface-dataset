@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "beenga8/beenga-curl-v1",
+  "slug": "beenga8-beenga-curl-v1",
+  "author": "beenga8",
+  "url": "https://huggingface.co/beenga8/beenga-curl-v1",
+  "created_at": "2026-08-16T19:31:55.000Z",
+  "updated_at": "2026-08-16T19:32:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "india",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92426528,
+  "storage_human": "92 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "/v1/models - Featherless.ai",
+      "url": "https://featherless.ai/docs/api-reference-models",
+      "snippet": "Model filters You can filter by model metadata: license family model_class status: One or more of active, pending_deploy, not_deployed. When omitted, only active models are returned. languages tasks architectures training capabilities modalities domains creative content_flags parameter_bucket popularity_level Examples: /v1/models?capabilities ..."
+    },
+    {
+      "title": "List models | OpenAI API Reference",
+      "url": "https://developers.openai.com/api/reference/resources/models/methods/list",
+      "snippet": "The model identifier, which can be referenced in the API endpoints."
+    }
+  ]
+}

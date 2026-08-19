@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Koshkasa/TheDrummer_Skyfall-31B-v4.2_16G-checkerboard-trellis-GGUF",
+  "slug": "koshkasa-thedrummer_skyfall-31b-v4-2_16g-checkerboard-trellis-gguf",
+  "author": "Koshkasa",
+  "url": "https://huggingface.co/Koshkasa/TheDrummer_Skyfall-31B-v4.2_16G-checkerboard-trellis-GGUF",
+  "created_at": "2026-08-17T11:08:55.000Z",
+  "updated_at": "2026-08-17T17:15:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "ik_llama.cpp",
+  "languages": [],
+  "tags": [
+    "ik_llama.cpp",
+    "gguf",
+    "quantized",
+    "roleplay",
+    "trellis",
+    "imatrix",
+    "mixed precision",
+    "text-generation",
+    "dataset:Squish42/bluemoon-fandom-1-1-rp-cleaned",
+    "base_model:TheDrummer/Skyfall-31B-v4.2",
+    "base_model:quantized:TheDrummer/Skyfall-31B-v4.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31352980480,
+  "parameters_human": "31.35B",
+  "storage_bytes": 15594863861,
+  "storage_human": "15.6 GB",
+  "base_model": "TheDrummer/Skyfall-31B-v4.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheDrummer_Skyfall-31B-v4.2_16G-checkerboard-trellis-GGUF",
+      "url": "https://huggingface.co/Koshkasa/TheDrummer_Skyfall-31B-v4.2_16G-checkerboard-trellis-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TheDrummer/Skyfall-31B-v4.2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Skyfall-31B-v4.2-GGUF",
+      "snippet": "AI&#x27;s use of language speaks volumes about their &#x27;perception&#x27; of reality. If a language model has been skewed and limited to a positive perception, then it&#x27;s ability to imagine is also limited. Finetuning is an opportunity to adjust and broaden the language. Corporations use it to achieve safety and compliance. I&#x27;m here to Drummer proudly ..."
+    },
+    {
+      "title": "TheDrummer/Skyfall-31B-v4-GGUF - Hugging Face Hub Package Se... - Socket",
+      "url": "https://socket.dev/huggingface/package/thedrummer/skyfall-31b-v4-gguf",
+      "snippet": "We found that TheDrummer/Skyfall-31B-v4-GGUF demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago. It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "Skyfall-31B-v4.2: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/skyfall-31b-v4.2-thedrummer",
+      "snippet": "Overview Skyfall-31B-v4.2 is a 31-billion parameter text generation model created by TheDrummer, a software engineer focused on creative and entertainment-oriented AI. This model uses the Mistral v7 Tekken chat template and is specifically tuned for creative writing, roleplay, character consistency, and narrative generation rather than general-purpose instruction following. The core design ..."
+    },
+    {
+      "title": "Damacol/bartowski-thedrummer-skyfall-31b-v4-2-gguf - GitHub",
+      "url": "https://github.com/Damacol/bartowski-thedrummer-skyfall-31b-v4-2-gguf/blob/main/",
+      "snippet": "bartowski/TheDrummer_Skyfall-31B-v4.2-GGUF - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "SinclairSchneider/Apertus-v1.5-8B-W4A16-KV8-de",
+  "slug": "sinclairschneider-apertus-v1-5-8b-w4a16-kv8-de",
+  "author": "SinclairSchneider",
+  "url": "https://huggingface.co/SinclairSchneider/Apertus-v1.5-8B-W4A16-KV8-de",
+  "created_at": "2026-08-18T22:32:57.000Z",
+  "updated_at": "2026-08-18T22:41:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "apertus1p5",
+    "text-generation",
+    "apertus",
+    "compressed-tensors",
+    "w4a16",
+    "gptq",
+    "int4",
+    "fp8-kv-cache",
+    "german",
+    "vllm",
+    "conversational",
+    "de",
+    "en",
+    "base_model:swiss-ai/Apertus-v1.5-8B",
+    "base_model:quantized:swiss-ai/Apertus-v1.5-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8903547619,
+  "parameters_human": "8.90B",
+  "storage_bytes": 8080299268,
+  "storage_human": "8.1 GB",
+  "base_model": "swiss-ai/Apertus-v1.5-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apertus v1.5 - a swiss-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/swiss-ai/apertus-v15",
+      "snippet": "Democratizing Open and Compliant LLMs for Global Language Environments: 8B and 70B open-data open-weights models, multilingual in >1000 languages"
+    },
+    {
+      "title": "swiss-ai/Apertus-v1.5-8B · Hugging Face",
+      "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+      "snippet": "Apertus 1.5 Table of Contents Table of Contents Model Summary Key Features How to Use Evaluation Training Limitations Legal Aspects Contact Model Summary Apertus 1.5 is a family of 8B and 70B parameter language models designed to advance the state of multilingual, multimodal, fully open, and transparent AI."
+    },
+    {
+      "title": "Apertus AI",
+      "url": "https://apertus-ai.org/articles/2026-07-apertus-1-5/",
+      "snippet": "Fully Open Foundation Model for Sovereign AI Apertus 1.5, our latest model release, extends the 8B and 70B Apertus 1.0 models with image understanding, an optional thinking mode, a four times longer context window, improved instruction-following, and better tool use. Apertus 1.5 is a continued pretraining of Apertus 1.0: we added 4 trillion tokens of text and multimodal training data to the 8B ..."
+    },
+    {
+      "title": "LLM Benchmark Evaluation - Apertus 1.5-8B | DS-NLP Lab",
+      "url": "https://blog.nlp-lab.ai/2026/07/29/Apertus15Bench.html",
+      "snippet": "The underlying philosophy has not changed. Apertus 1.5 is still a fully open model. It is trained on publicly available data, respects robots.txt, filters toxic and personally identifiable content, and ships with reproduction artifacts. What changed is capability. During our evaluation we observed three concrete additions in the 8B checkpoint (swiss-ai/Apertus-v1.5-8B):"
+    },
+    {
+      "title": "Shrinking Apertus 1.5 8B for an 8 GB Laptop GPU",
+      "url": "https://digitalpathlines.ch/2026/08/12/shrinking-apertus-1-5-8b-for-an-8-gb-laptop-gpu/",
+      "snippet": "Introduction Swiss AI released Apertus 1.5 8B as a multimodal model with NVFP4 MLP weights, FP8 attention, and BF16 embedding and output matrices. The officially distributed checkpoint is onprem-ai/Apertus-v1.5-8B-NVFP4. It ships with a patched vLLM image that adds model support absent from stock vLLM releases. The model also has a large untied vocabulary, which becomes important later."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "swadeep/qwen35-4b-r3-gguf",
+  "slug": "swadeep-qwen35-4b-r3-gguf",
+  "author": "swadeep",
+  "url": "https://huggingface.co/swadeep/qwen35-4b-r3-gguf",
+  "created_at": "2026-08-18T11:01:03.000Z",
+  "updated_at": "2026-08-18T11:01:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2708800320,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swadeep/qwen35-4b-r1-gguf · Hugging Face",
+      "url": "https://huggingface.co/swadeep/qwen35-4b-r1-gguf",
+      "snippet": "Instructions to use swadeep/qwen35-4b-r1-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use swadeep/qwen35-4b-r1-gguf with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "swadeep/Qwen3.5-4b-claude-opus-distilled · Hugging Face",
+      "url": "https://huggingface.co/swadeep/Qwen3.5-4b-claude-opus-distilled",
+      "snippet": "swadeep / Qwen3.5-4b-claude-opus-distilled like 0 Text Generation Transformers Safetensors GGUF English qwen3_5 image-text-to-text qwen qwen3.5 reasoning instruction-following agentic tool-calling tool-use function-calling python coding multi-turn multi-step sft lora unsloth trl multimodal vision-language text-generation-inference conversational License:apache-2.0 Model card FilesFiles and ..."
+    },
+    {
+      "title": "Qwen35 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen35.html",
+      "snippet": "Download Qwen35 GGUF model. 18.4 GB, 1,815 downloads, 0 likes."
+    },
+    {
+      "title": "Qwen3.5-4B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen35-4b",
+      "snippet": "Qwen3.5-4B exhibits strong transparency in its architectural specifications and licensing, providing clear technical details on its hybrid attention mechanism and permissive open-source terms."
+    },
+    {
+      "title": "GitHub - techwithsergiu/qwen35-toolkit: Convert, strip, verify and ...",
+      "url": "https://github.com/techwithsergiu/qwen35-toolkit",
+      "snippet": "Qwen3.5 models ship as full-precision VLMs — too large for most consumer GPUs out of the box. This toolkit prepares them for text-only LoRA fine-tuning and inference on limited hardware: correct BNB quantization, clean visual tower strip, and inference verification before publishing. What it does: Quantize f16 → BNB NF4 4-bit (fits a 4B model in ~5 GB VRAM) Strip the visual tower — saves ..."
+    }
+  ]
+}

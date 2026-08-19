@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BC2605/so101-act-rack-to-cup-box-anticoll",
+  "slug": "bc2605-so101-act-rack-to-cup-box-anticoll",
+  "author": "BC2605",
+  "url": "https://huggingface.co/BC2605/so101-act-rack-to-cup-box-anticoll",
+  "created_at": "2026-08-19T01:42:46.000Z",
+  "updated_at": "2026-08-19T01:43:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:BC2605/rack-to-cup-3-grids-box-anticoll",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BC2605/so101-act-rack-to-cup-box · Hugging Face",
+      "url": "https://huggingface.co/BC2605/so101-act-rack-to-cup-box",
+      "snippet": "Instructions to use BC2605/so101-act-rack-to-cup-box with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use BC2605/so101-act-rack-to-cup-box with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch"
+    },
+    {
+      "title": "BC2605/so101-act-rack-to-cup-box-side · Hugging Face",
+      "url": "https://huggingface.co/BC2605/so101-act-rack-to-cup-box-side",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - jyang-ca/lerobot-so101",
+      "url": "https://github.com/jyang-ca/lerobot-so101",
+      "snippet": "🤗 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models. 🤗 LeRobot contains state-of-the-art approaches that have been shown to transfer to the real-world with a focus on imitation learning and reinforcement ..."
+    },
+    {
+      "title": "Train an ACT Policy for an SO-101 Robot using LeRobot",
+      "url": "https://trelis.substack.com/p/train-an-act-policy-for-an-so-101",
+      "snippet": "A detailed walkthrough of training an Action Chunking Transformer (ACT) policy on an S0-101 robot arm for a pick-and-place task, using the lerobot library. The process involves data collection through teleoperation, model training, and performance evaluation."
+    },
+    {
+      "title": "SO-101 Setup Guide | SVRC - roboticscenter.ai",
+      "url": "https://www.roboticscenter.ai/hardware/so-101/setup",
+      "snippet": "Complete setup guide for the SO-101 open-source robot arm: assembly, LeRobot install, port detection, calibration, teleoperation, and data collection."
+    }
+  ]
+}

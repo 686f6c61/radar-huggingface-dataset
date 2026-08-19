@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "yangjiwoong1/llama-7b",
+  "slug": "yangjiwoong1-llama-7b",
+  "author": "yangjiwoong1",
+  "url": "https://huggingface.co/yangjiwoong1/llama-7b",
+  "created_at": "2026-08-15T18:45:31.000Z",
+  "updated_at": "2026-08-15T18:45:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "llama",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 6738417664,
+  "parameters_human": "6.74B",
+  "storage_bytes": 26954326481,
+  "storage_human": "27.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

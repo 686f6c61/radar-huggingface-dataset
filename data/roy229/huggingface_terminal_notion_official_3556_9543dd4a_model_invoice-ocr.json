@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_terminal_notion_official_3556_9543dd4a_model_invoice-ocr",
+  "slug": "roy229-huggingface_terminal_notion_official_3556_9543dd4a_model_invoice-ocr",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_9543dd4a_model_invoice-ocr",
+  "created_at": "2026-08-17T03:27:33.000Z",
+  "updated_at": "2026-08-17T03:58:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - DietrichGebert/ponytail: Makes your AI agent think like the ...",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "snippet": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. - DietrichGebert/ponytail"
+    },
+    {
+      "title": "Command Line Interface (CLI) · Hugging Face",
+      "url": "https://huggingface.co/docs/huggingface_hub/guides/cli",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face Release Notes & Changelog · August 2026 — releases.sh",
+      "url": "https://releases.sh/hugging-face",
+      "snippet": "Every Hugging Face release note, changelog, and product update across all tracked sources — version history refreshed August 2026."
+    },
+    {
+      "title": "With hf cli, how do I resume an interrupted model download?",
+      "url": "https://discuss.huggingface.co/t/with-hf-cli-how-do-i-resume-an-interrupted-model-download/174935",
+      "snippet": "I have a slow internet and the download of a large file was interrupted 30GB in! I download using the &#x27;hf&#x27; CLI command, like this: hf download unsloth/gemma-4-31B-it-GGUF gemma-4-31B-it-UD-Q8_K_XL.gguf When I ran it ag…"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ITCL/Qwen3.6-27B-GPTQ-W8A16",
+  "slug": "itcl-qwen3-6-27b-gptq-w8a16",
+  "author": "ITCL",
+  "url": "https://huggingface.co/ITCL/Qwen3.6-27B-GPTQ-W8A16",
+  "created_at": "2026-08-14T09:19:44.000Z",
+  "updated_at": "2026-08-14T09:27:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "quantized",
+    "gptq",
+    "w8a16",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 29842160107,
+  "storage_human": "29.8 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

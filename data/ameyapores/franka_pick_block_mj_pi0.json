@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Ameyapores/franka_pick_block_mj_pi0",
+  "slug": "ameyapores-franka_pick_block_mj_pi0",
+  "author": "Ameyapores",
+  "url": "https://huggingface.co/Ameyapores/franka_pick_block_mj_pi0",
+  "created_at": "2026-08-17T02:50:58.000Z",
+  "updated_at": "2026-08-17T20:07:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:Ameyapores/franka_pick_block_mj",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 14023104612,
+  "storage_human": "14.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

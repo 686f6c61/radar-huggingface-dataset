@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "slug": "meta-llama-meta-llama-3-8b-instruct",
+  "author": "meta-llama",
+  "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+  "created_at": "2024-04-17T09:35:12.000Z",
+  "updated_at": "2025-06-18T23:49:51.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "facebook",
+    "meta",
+    "pytorch",
+    "llama-3",
+    "conversational",
+    "en",
+    "license:llama3",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 4823,
+  "downloads_30d": 1977009,
+  "trending_score": 8,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 62143070226,
+  "storage_human": "62.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta-Llama-3-8B-Instruct - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "Our latest version of Llama is now accessible to individuals, creators, researchers, and businesses of all sizes so that they can experiment, innovate, and scale their ideas responsibly. This release includes model weights and starting code for pre-trained and instruction-tuned Llama 3 language models — including sizes of 8B to 70B parameters."
+    },
+    {
+      "title": "Meta: Llama 3 8B Instruct - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/meta-llama/llama-3-8b-instruct",
+      "snippet": "Meta&#x27;s Llama 3 8B Instruct model, launched on April 17, 2024, demonstrates a strong overall performance profile, particularly excelling in operational efficiency. It performs among the fastest models, ranking in the top tier for speed (67th percentile), and consistently offers highly competitive pricing, placing in the 93rd percentile."
+    },
+    {
+      "title": "meta-llama (Meta Llama) - Hugging Face",
+      "url": "https://huggingface.co/meta-llama",
+      "snippet": "Org profile for Meta Llama on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "meta-llama-3-8b-instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/meta-llama-3-8b-instruct-meta",
+      "snippet": "Overview meta-llama-3-8b-instruct is an 8 billion parameter language model fine-tuned for chat and instruction-following tasks, created by meta. The model supports sequence lengths up to 8192 tokens and uses a standard transformer architecture optimized for dialogue applications. The most important detail before using it: this model requires careful prompt formatting following Llama 3&#x27;s ..."
+    }
+  ]
+}

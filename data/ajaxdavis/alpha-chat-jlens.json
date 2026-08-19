@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ajaxdavis/alpha-chat-jlens",
+  "slug": "ajaxdavis-alpha-chat-jlens",
+  "author": "ajaxdavis",
+  "url": "https://huggingface.co/ajaxdavis/alpha-chat-jlens",
+  "created_at": "2026-08-01T22:49:43.000Z",
+  "updated_at": "2026-08-18T13:27:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "blah-jlens",
+  "languages": [],
+  "tags": [
+    "blah-jlens",
+    "interpretability",
+    "jacobian-lens",
+    "blah-evals",
+    "evals.blah.dev",
+    "base_model:ajaxdavis/alpha-60m-chat",
+    "base_model:finetune:ajaxdavis/alpha-60m-chat",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17258584,
+  "storage_human": "17 MB",
+  "base_model": "ajaxdavis/alpha-60m-chat",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajaxdavis/alpha-chat-jlens · Hugging Face",
+      "url": "https://huggingface.co/ajaxdavis/alpha-chat-jlens",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=evals.blah.dev",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: evals.blah.dev Clear all"
+    },
+    {
+      "title": "ajaxdavis/alpha-yi-qwen35-9b-chat-v67-20260817 · Hugging Face",
+      "url": "https://huggingface.co/ajaxdavis/alpha-yi-qwen35-9b-chat-v67-20260817",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ajaxdavis/alpha-chat-v11-m300-experimental · Hugging Face",
+      "url": "https://huggingface.co/ajaxdavis/alpha-chat-v11-m300-experimental",
+      "snippet": "Instructions to use ajaxdavis/alpha-chat-v11-m300-experimental with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ajaxdavis/alpha-v0-historic · Hugging Face",
+      "url": "https://huggingface.co/ajaxdavis/alpha-v0-historic",
+      "snippet": "A 97M parameter GPT model trained from scratch using the Alpha framework with the Helios Vulkan compute backend. Trained on dialogue data for chat-style text generation."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "fablevi/csm-1b-hu-def",
+  "slug": "fablevi-csm-1b-hu-def",
+  "author": "fablevi",
+  "url": "https://huggingface.co/fablevi/csm-1b-hu-def",
+  "created_at": "2026-08-17T06:16:52.000Z",
+  "updated_at": "2026-08-17T06:34:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "csm",
+    "text-to-audio",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1911619425,
+  "parameters_human": "1.91B",
+  "storage_bytes": 5221293604,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "administraktor/gemma-3N-finetune",
+  "slug": "administraktor-gemma-3n-finetune",
+  "author": "administraktor",
+  "url": "https://huggingface.co/administraktor/gemma-3N-finetune",
+  "created_at": "2026-08-17T23:41:39.000Z",
+  "updated_at": "2026-08-18T00:05:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3n",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 7849978192,
+  "parameters_human": "7.85B",
+  "storage_bytes": 15738320285,
+  "storage_human": "15.7 GB",
+  "base_model": "unsloth/gemma-3n-e4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 3n model overview | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/gemma-3n",
+      "snippet": "Gemma 3n is a generative AI model optimized for use in everyday devices, such as phones, laptops, and tablets. This model includes innovations in parameter-efficient processing, including Per-Layer Embedding (PLE) parameter caching and a MatFormer model architecture that provides the flexibility to reduce compute and memory requirements."
+    },
+    {
+      "title": "Gemma 3n — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3n/",
+      "snippet": "Gemma 3n is our state-of-the-art open multimodal model, engineered for on-device performance and efficiency"
+    },
+    {
+      "title": "Gemma model fine-tuning - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/tune",
+      "snippet": "Fine-tuning a generative artificial intelligence (AI) model such as Gemma modifies the behavior of the model. You typically fine-tune Gemma with the intent of improving its performance on a specific task or domain, or to better fulfill a role, such as customer service."
+    },
+    {
+      "title": "gemma-3n - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/gemma-3n",
+      "snippet": "Gemma 3n is a generative AI model optimized for use in everyday devices, such as phones, laptops, and tablets."
+    },
+    {
+      "title": "Gemma 3n - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/gemma_3n",
+      "snippet": "Gemma 3n is an open, mobile-first multimodal model from Google built to run locally on phones, tablets, laptops, and other resource-constrained hardware, accepting text, image, audio, and video as input and returning..."
+    }
+  ]
+}

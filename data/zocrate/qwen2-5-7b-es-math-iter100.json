@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "zocrate/Qwen2.5-7B-ES-math-iter100",
+  "slug": "zocrate-qwen2-5-7b-es-math-iter100",
+  "author": "zocrate",
+  "url": "https://huggingface.co/zocrate/Qwen2.5-7B-ES-math-iter100",
+  "created_at": "2026-08-16T18:10:50.000Z",
+  "updated_at": "2026-08-16T18:28:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "evolution-strategies",
+    "math",
+    "reasoning",
+    "arxiv:2509.24372",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kahtanAldaioub/PDF-English-Reader",
+  "slug": "kahtanaldaioub-pdf-english-reader",
+  "author": "kahtanAldaioub",
+  "url": "https://huggingface.co/kahtanAldaioub/PDF-English-Reader",
+  "created_at": "2026-08-18T07:03:05.000Z",
+  "updated_at": "2026-08-18T07:03:05.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Text to Speech with Gemini and ChatGPT AI Voices",
+      "url": "https://www.naturalreaders.com/online/",
+      "snippet": "Convert text into ultra-realistic audio. Have any text read aloud with AI Voices. AI text reader for pdfs, books, documents, and webpages."
+    },
+    {
+      "title": "AI Document Reader - Listen to Articles, PDFs & Books | TTS.ai",
+      "url": "https://tts.ai/reader/",
+      "snippet": "Document Reader Listen to any article, PDF, ebook, or document read aloud with natural AI voices. Word highlighting, speed control, and offline download."
+    },
+    {
+      "title": "Myreader - Your AI Reading Assistant",
+      "url": "https://www.myreader.ai/",
+      "snippet": "Your AI-powered reading assistant Upload books, PDFs, documents, article links or YouTube videos. Get instant answers, summaries and convert to audiobook - all powered by AI."
+    },
+    {
+      "title": "Text to Speech Reader for PDF, EPUB, Website, and more - Outtloud",
+      "url": "https://www.outtloud.com/",
+      "snippet": "AI Summary AI Podcast AI Chat Quiz Web App Concise audio summaries in seconds Turn articles, research papers, PDFs, and eBooks into short audio summaries. Absorb key points while commuting, exercising, or multitasking. Upload any PDF, EPUB, or document into the Outtloud web app and listen with lifelike voices, AI summaries, podcasts, and more."
+    },
+    {
+      "title": "ChatPDF: Free AI Chat with Any PDF (Up to 2,000 Pages per PDF)",
+      "url": "https://sider.ai/chatpdf",
+      "snippet": "Ultimate ChatPDF tool. Free AI chat with PDFs, docs & presentations. Instantly read, analyze, summarize, and translate PDFs in 50+ languages. Powered by ChatGPT & Claude."
+    }
+  ]
+}

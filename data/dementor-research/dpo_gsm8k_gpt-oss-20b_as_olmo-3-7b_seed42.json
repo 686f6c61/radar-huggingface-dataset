@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_gsm8k_gpt-oss-20b_as_olmo-3-7b_seed42",
+  "slug": "dementor-research-dpo_gsm8k_gpt-oss-20b_as_olmo-3-7b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_olmo-3-7b_seed42",
+  "created_at": "2026-08-16T19:24:25.000Z",
+  "updated_at": "2026-08-16T19:24:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed42",
+      "snippet": "dementor-research / dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed42 like 0 Follow dementor 2 PEFT Safetensors dementor imitation-disguise lora gsm8k Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "dpo_gsm8k_olmo-3-7b_as_gpt-oss-20b_seed42 - Hugging Face",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_olmo-3-7b_as_gpt-oss-20b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed1 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed1",
+      "snippet": "Deploy dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade ..."
+    },
+    {
+      "title": "dpo_gsm8k_gpt-oss-20b_as_nemotron-nano-30b-a3b_seed3",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_gpt-oss-20b_as_nemotron-nano-30b-a3b_seed3",
+      "snippet": "Deploy dpo_gsm8k_gpt-oss-20b_as_nemotron-nano-30b-a3b_seed3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade ..."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    }
+  ]
+}

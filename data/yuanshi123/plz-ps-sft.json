@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Yuanshi123/plz-ps-sft",
+  "slug": "yuanshi123-plz-ps-sft",
+  "author": "Yuanshi123",
+  "url": "https://huggingface.co/Yuanshi123/plz-ps-sft",
+  "created_at": "2026-08-18T10:23:50.000Z",
+  "updated_at": "2026-08-18T10:25:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-30B-A3B-Thinking-2507",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B-Thinking-2507",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078000058,
+  "storage_human": "61.1 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Deepshi - I Say What Other AI&#x27;s Won&#x27;t",
+      "url": "https://deepshi.ai/",
+      "snippet": "Many AI systems are designed to avoid, redirect, or shut down conversations. Deepshi runs on a proprietary model built to respond more fully and naturally across text, images, music, and video."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "CrushOn.AI: AI Girlfriend Chat & AI Roleplay - Start Now",
+      "url": "https://chat.crushon.ai/",
+      "snippet": "CrushOn.AI is an AI girlfriend and character AI chat platform built for long-form AI roleplay. Talk with anime, fantasy, sci-fi, romance and roleplay AI characters, design your own, and pick up the conversation across web, iOS and Android — free to start."
+    }
+  ]
+}

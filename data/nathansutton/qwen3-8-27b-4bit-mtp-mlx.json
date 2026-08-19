@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nathansutton/Qwen3.8-27B-4bit-MTP-MLX",
+  "slug": "nathansutton-qwen3-8-27b-4bit-mtp-mlx",
+  "author": "nathansutton",
+  "url": "https://huggingface.co/nathansutton/Qwen3.8-27B-4bit-MTP-MLX",
+  "created_at": "2026-08-15T17:18:03.000Z",
+  "updated_at": "2026-08-15T17:20:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "speculative-decoding",
+    "mtp",
+    "text-only",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4204731904,
+  "parameters_human": "4.20B",
+  "storage_bytes": 15391967301,
+  "storage_human": "15.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:13:32.033Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "GitHub - Layr-Labs/qwen-3.8-mtp-challenge: Qwen 3.8 27B MLX challenge ...",
+      "url": "https://github.com/Layr-Labs/qwen-3.8-mtp-challenge",
+      "snippet": "The default — and only — ranked track in this repository is qwen3.8-27b-mtp-v1: the Qwen 3.8 27B target drafts a block with its own native MTP head, verifies the block against itself, and decode advances by the longest correct prefix. benchmark.json IS the Qwen-MTP manifest (benchmark name mlxfast-challenge-dev-qwen38-mtp), the ranked ..."
+    }
+  ]
+}

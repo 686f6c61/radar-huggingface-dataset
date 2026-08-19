@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Petrouil/LFM2.5-Mosaic-900M-A500M-Base",
+  "slug": "petrouil-lfm2-5-mosaic-900m-a500m-base",
+  "author": "Petrouil",
+  "url": "https://huggingface.co/Petrouil/LFM2.5-Mosaic-900M-A500M-Base",
+  "created_at": "2026-08-16T20:00:48.000Z",
+  "updated_at": "2026-08-16T20:38:00.000Z",
+  "license": "lfm1.0-base-cc-by-4.0-data",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_mosaic",
+    "text-generation",
+    "moe",
+    "mixture-of-experts",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "lfm2",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:nvidia/Nemotron-SFT-Agentic-v2",
+    "dataset:HuggingFaceTB/smoltalk2",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "base_model:LiquidAI/LFM2.5-350M-Base",
+    "base_model:finetune:LiquidAI/LFM2.5-350M-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 362,
+  "trending_score": 0,
+  "parameters": 987916192,
+  "parameters_human": "987.9M",
+  "storage_bytes": 1975887236,
+  "storage_human": "2.0 GB",
+  "base_model": "LiquidAI/LFM2.5-350M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    },
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    },
+    {
+      "title": "Petrouil (Petros Fanioudakis) - Hugging Face",
+      "url": "https://huggingface.co/Petrouil",
+      "snippet": "Reinforcement Learning LLMs Time series prediction. Recent Activity. updated a model about 5 hours ago. Petrouil/LFM2.5-8B-A1B-4bit"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-8B-A1B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Liquid4All/cookbook: Examples, end-2-end tutorials and apps ...",
+      "url": "https://github.com/Liquid4All/cookbook",
+      "snippet": "Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models (LFM) and the LEAP SDK - Liquid4All/cookbook"
+    }
+  ]
+}

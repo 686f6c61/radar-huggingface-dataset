@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "masondx/diffusion_clean_tension_cut_rope_state20",
+  "slug": "masondx-diffusion_clean_tension_cut_rope_state20",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/diffusion_clean_tension_cut_rope_state20",
+  "created_at": "2026-08-19T02:32:04.000Z",
+  "updated_at": "2026-08-19T02:32:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:masondx/clean_tension_cut_rope_state20",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277224436,
+  "parameters_human": "277.2M",
+  "storage_bytes": 1108932648,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diffusion_bimanual_tension_cut_rope_three_camera",
+      "url": "https://huggingface.co/masondx/diffusion_bimanual_tension_cut_rope_three_camera/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Core Models - Stability AI",
+      "url": "https://stability.ai/core-models",
+      "snippet": "Stability AI may remove or modify one or more of the Core Models listed on this page. In this circumstance, Stability AI will notify you it is removing or making certain Core Models inaccessible. Other Stability AI Models Stability AI has other models not included in the Core Models above, for which your usage is subject to the terms of each individual model&#x27;s applicable license. For more ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Stable Diffusion - AI Image Generator",
+      "url": "https://stable-diffusion.io/online",
+      "snippet": "Stable Diffusion Online Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input, cultivates autonomous freedom to produce incredible imagery, empowers billions of people to create stunning art within seconds. Create beautiful art using stable diffusion ONLINE for free."
+    }
+  ]
+}

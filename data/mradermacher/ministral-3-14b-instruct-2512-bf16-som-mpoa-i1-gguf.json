@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ministral-3-14B-Instruct-2512-BF16-SOM-MPOA-i1-GGUF",
+  "slug": "mradermacher-ministral-3-14b-instruct-2512-bf16-som-mpoa-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ministral-3-14B-Instruct-2512-BF16-SOM-MPOA-i1-GGUF",
+  "created_at": "2026-03-26T09:50:18.000Z",
+  "updated_at": "2026-08-16T20:48:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mistral-common",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 2026,
+  "trending_score": 0,
+  "parameters": 13506073600,
+  "parameters_human": "13.51B",
+  "storage_bytes": 155837425728,
+  "storage_human": "155.8 GB",
+  "base_model": "0xA50C1A1/Ministral-3-14B-Instruct-2512-BF16-SOM-MPOA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ministral-3-14B-Instruct-2512-BF16-SOM-MPOA-i1-GGUF",
+      "url": "https://huggingface.co/mradermacher/Ministral-3-14B-Instruct-2512-BF16-SOM-MPOA-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mistralai/Ministral-3-14B-Instruct-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "snippet": "Here we assume that the model mistralai/Ministral-3-14B-Instruct-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM."
+    },
+    {
+      "title": "recipes/Mistral/Ministral-3-Instruct.md at main · vllm ... - GitHub",
+      "url": "https://github.com/vllm-project/recipes/blob/main/Mistral/Ministral-3-Instruct.md",
+      "snippet": "Here we assume that the model mistralai/Ministral-3-14B-Instruct-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM."
+    },
+    {
+      "title": "Ministral 3 14B Instruct 2512 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ministral-3-14b-instruct-2512/",
+      "snippet": "Download Ministral 3 14B Instruct 2512 for free. Efficient 14B multimodal instruct model with edge deployment and FP8. Ministral 3 14B Instruct 2512 is the largest model in the Ministral 3 family, delivering frontier performance comparable to much larger systems while remaining optimized for edge-level deployment. It combines a 13.5B-parameter language model with a .4B-parameter vision ..."
+    },
+    {
+      "title": "mistralai / ministral-14b-instruct-2512",
+      "url": "https://docs.api.nvidia.com/nim/reference/mistralai-ministral-14b-instruct-2512",
+      "snippet": "Ministral 3 14B Instruct 2512 FP8 is the largest model in the Ministral 3 family, offering frontier capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. A powerful and efficient language model with vision capabilities, this instruct post-trained version in FP8 precision is fine-tuned for instruction tasks, making it ideal for chat and instruction-based use ..."
+    }
+  ]
+}

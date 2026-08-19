@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Santosh8088/GenAI2",
+  "slug": "santosh8088-genai2",
+  "author": "Santosh8088",
+  "url": "https://huggingface.co/Santosh8088/GenAI2",
+  "created_at": "2026-08-17T05:21:38.000Z",
+  "updated_at": "2026-08-17T05:46:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "genai2.0 • Instagram photos and videos",
+      "url": "https://www.instagram.com/genai2.0/",
+      "snippet": "860 Followers, 1,135 Following, 502 Posts - @genai2.0 on Instagram: \"Working on an #AI story. Follow me on my journey.\""
+    },
+    {
+      "title": "GenAi2 (Gen AI 2.0) - Hugging Face",
+      "url": "https://huggingface.co/GenAi2/datasets",
+      "snippet": "Org profile for Gen AI 2.0 on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - Ganesh-Kunnamkumarath/From-Zero-to-GenAI: A structured guide ...",
+      "url": "https://github.com/Ganesh-Kunnamkumarath/From-Zero-to-GenAI",
+      "snippet": "The From-Zero-to-GenAI project is a structured, hands-on guide to mastering Generative AI (GenAI) from scratch. Whether you&#x27;re a complete beginner or a developer looking to dive deep, this repository provides a step-by-step approach with real-world coding exercises, structured explanations, and Hugging Face deployments."
+    },
+    {
+      "title": "GitHub - googleapis/python-genai: Google Gen AI Python SDK provides an ...",
+      "url": "https://github.com/googleapis/python-genai",
+      "snippet": "Google Gen AI Python SDK provides an interface for developers to integrate Google&#x27;s generative models into their Python applications. - googleapis/python-genai"
+    },
+    {
+      "title": "The Complete Guide to Generative AI Models | Explained",
+      "url": "https://www.jellyfishtechnologies.com/the-complete-guide-to-generative-ai-models/",
+      "snippet": "Explore the complete guide to generative AI models. Learn how GenAI work, their types, real-world applications, and benefits across industries."
+    }
+  ]
+}

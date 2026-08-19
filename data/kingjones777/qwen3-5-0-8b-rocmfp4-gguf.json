@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Qwen3.5-0.8B-ROCmFP4-GGUF",
+  "slug": "kingjones777-qwen3-5-0-8b-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Qwen3.5-0.8B-ROCmFP4-GGUF",
+  "created_at": "2026-08-17T18:55:22.000Z",
+  "updated_at": "2026-08-17T18:56:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "rocm",
+    "qwen",
+    "multimodal",
+    "quantized",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 117,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 3044334560,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - algtrd24/qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/algtrd24/qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "mtp-Qwen3.8-27B-Q8_0.gguf · kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP ...",
+      "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF/blob/main/mtp-Qwen3.8-27B-Q8_0.gguf",
+      "snippet": "kingjones777 / Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF like 16 Text Generation GGUF llama.cpp rocm amd rocmfp4 rocmfpx strix-halo amd-strix-halo gfx1151 ryzen-ai-max ryzen-ai-max-395 radeon-8060s mtp speculative-decoding reasoning qwen3.5 quantized conversational License:apache-2.0 Model card FilesFiles and versions xet Community 2 Deploy Copy to ..."
+    },
+    {
+      "title": "The Complete Guide to the Qwen3.5 Small Series — From 0.8B to 9B, the ...",
+      "url": "https://note.com/zephel01/n/n6b236da76680?hl=en",
+      "snippet": "Introduction: Why Are &#x27;Small Models&#x27; So Hot Right Now? In February 2026, the Qwen team at Alibaba Cloud announced Qwen3.5. It wasn&#x27;t just the massive 397B parameter flagship model that grabbed attention. The &#x27;Small Series&#x27; released alongside it—four small models at 0.8B, 2B, 4B, and 9B—is making a quiet impact on the world of local LLMs. Furthermore, Unsloth, known for its quantization ..."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Quick answer. Qwen3.5 0.8B is Alibaba&#x27;s smallest multimodal model, with a 262K context window and native vision support. Pull it with `ollama run qwen3.5:0.8b` for text or run the GGUF in llama.cpp for image input. Expect strong recall but weak code accuracy — bump to Qwen3.5 4B for any coding task."
+    },
+    {
+      "title": "Qwen3.5-0.8B-Q4_K_M-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/diodel/Qwen3.5-0.8B-Q4_K_M-GGUF",
+      "snippet": "Quantization This model is created by quantizing Qwen/Qwen3.5-.8B to Q4_K_M using convert_hf_to_gguf.py and llama-quantize from llama.cpp. Target Users This model supports CPU and heterogeneous (CPU+GPU) inference deployment, making it suitable for users without a GPU. Usage Steps 1. Download SDK Download"
+    }
+  ]
+}

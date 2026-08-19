@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Reizxn/makeitwork",
+  "slug": "reizxn-makeitwork",
+  "author": "Reizxn",
+  "url": "https://huggingface.co/Reizxn/makeitwork",
+  "created_at": "2026-08-14T21:37:30.000Z",
+  "updated_at": "2026-08-14T21:38:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 994033672,
+  "storage_human": "994 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - makeITwork",
+      "url": "https://makeitwork.com/",
+      "snippet": "At makeITwork, we leverage AI and blockchain technology to develop cutting-edge fintech applications, empowering individuals and businesses to manage their finances effectively."
+    },
+    {
+      "title": "MakeAI",
+      "url": "https://makeai.org/",
+      "snippet": "Make your own AI models with ease."
+    },
+    {
+      "title": "AI with Model-Based Design - MATLAB & Simulink - MathWorks",
+      "url": "https://www.mathworks.com/solutions/ai-model-based-design.html",
+      "snippet": "Using MATLAB and Simulink, you can enhance complex engineered systems you develop with Model-Based Design by integrating AI."
+    },
+    {
+      "title": "DeepMind Says Its AI Can Predict Hurricanes Earlier Than Everyone Else",
+      "url": "https://www.wired.com/story/deepmind-ai-model-can-predict-hurricanes-earlier/",
+      "snippet": "Its WeatherNext model, which will be open-sourced, can accurately predict a storm&#x27;s track and intensity using lower-resolution weather data. Researchers don&#x27;t yet fully understand how it does ..."
+    },
+    {
+      "title": "Best AI Models in 2026: All 22 Frontier Models Compared",
+      "url": "https://platform.teamai.com/blog/large-language-models-llms/the-2026-ai-frontier-model-war/",
+      "snippet": "Compare 22 frontier AI models in 2026: GPT, Claude, Gemini, DeepSeek, Qwen, Kimi. Context windows, pricing, and use cases in one chart. Part 1 of 2."
+    }
+  ]
+}

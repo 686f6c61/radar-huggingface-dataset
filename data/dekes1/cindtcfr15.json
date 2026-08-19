@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dekes1/cindtcfr15",
+  "slug": "dekes1-cindtcfr15",
+  "author": "dekes1",
+  "url": "https://huggingface.co/dekes1/cindtcfr15",
+  "created_at": "2026-08-18T23:11:55.000Z",
+  "updated_at": "2026-08-19T00:23:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1744990343,
+  "storage_human": "1.7 GB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dekes1/cindy-krea2-v1 · Hugging Face",
+      "url": "https://huggingface.co/dekes1/cindy-krea2-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dekes1 (Deke Keyes) - Hugging Face",
+      "url": "https://huggingface.co/dekes1",
+      "snippet": "User profile of Deke Keyes on Hugging Face"
+    },
+    {
+      "title": "dekes1 · GitHub",
+      "url": "https://github.com/dekes1",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

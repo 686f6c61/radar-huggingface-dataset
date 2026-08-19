@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kumanomidoh/qwen3-4b-yaml-sft-xml-template",
+  "slug": "kumanomidoh-qwen3-4b-yaml-sft-xml-template",
+  "author": "kumanomidoh",
+  "url": "https://huggingface.co/kumanomidoh/qwen3-4b-yaml-sft-xml-template",
+  "created_at": "2026-08-16T01:29:37.000Z",
+  "updated_at": "2026-08-16T01:43:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 147,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

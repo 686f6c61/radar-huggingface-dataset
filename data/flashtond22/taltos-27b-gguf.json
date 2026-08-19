@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Flashtond22/Taltos-27B-GGUF",
+  "slug": "flashtond22-taltos-27b-gguf",
+  "author": "Flashtond22",
+  "url": "https://huggingface.co/Flashtond22/Taltos-27B-GGUF",
+  "created_at": "2026-08-16T21:30:47.000Z",
+  "updated_at": "2026-08-17T01:20:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "hu",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "magyar",
+    "hungarian",
+    "taltos",
+    "llama.cpp",
+    "ollama",
+    "text-generation",
+    "hu",
+    "en",
+    "base_model:Flashtond22/Taltos-27B",
+    "base_model:quantized:Flashtond22/Taltos-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 206,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 112189831296,
+  "storage_human": "112.2 GB",
+  "base_model": "Flashtond22/Taltos-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

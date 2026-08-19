@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "magicworld7/Qwen-3.6-27B-onlyu",
+  "slug": "magicworld7-qwen-3-6-27b-onlyu",
+  "author": "magicworld7",
+  "url": "https://huggingface.co/magicworld7/Qwen-3.6-27B-onlyu",
+  "created_at": "2026-08-18T13:55:32.000Z",
+  "updated_at": "2026-08-18T13:57:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996149,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen/qwen3.6-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.6-27b",
+      "snippet": "Dense 27B Qwen 3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience."
+    },
+    {
+      "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+      "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus and Qwen3.6-35B-A3B, we are excited to open-source Qwen3.6-27B — a dense 27-billion-parameter multimodal model at the scale the community has been asking for most. Still supporting both multimodal thinking and non-thinking modes, Qwen3.6-27B delivers flagship-level agentic coding performance, surpassing the ..."
+    },
+    {
+      "title": "Qwen3.6-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.6-27b",
+      "snippet": "The Qwen3.6 27B native vision-language dense model builds upon the 3.5-27B version, with key improvements in agentic coding capabilities and enhanced STEM reasoning and inference skills. In the vision modality, it demonstrates significant advances in spatial intelligence, object localization, and detection, while video understanding, document OCR, and visual agent capabilities continue to ..."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "Qwen3.6-27B (qwen3.6:27b): 17GB VRAM, Benchmarks, Ollama Setup | Local ...",
+      "url": "https://localaimaster.com/models/qwen-3-6-27b",
+      "snippet": "Alibaba Qwen · Open-Weight · Apache 2.0 Qwen3.6-27B: A Dense 27B That Beats Its Own 397B MoE Qwen3.6-27B (released April 22, 2026, Apache 2.0) is the most surprising open-weight release of the year: a dense 27-billion-parameter model that outperforms Alibaba&#x27;s own much-larger Qwen3.5-Plus 397B MoE on agentic coding benchmarks. It runs comfortably on a single RTX 5090 at Q4 quantization ..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "beezu/Glistening-Gem-31B-v2.1-mlx-bf16",
+  "slug": "beezu-glistening-gem-31b-v2-1-mlx-bf16",
+  "author": "beezu",
+  "url": "https://huggingface.co/beezu/Glistening-Gem-31B-v2.1-mlx-bf16",
+  "created_at": "2026-08-18T21:25:53.000Z",
+  "updated_at": "2026-08-18T21:27:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2406.11617",
+    "base_model:sophosympatheia/Glistening-Gem-31B-v2.1",
+    "base_model:finetune:sophosympatheia/Glistening-Gem-31B-v2.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345280,
+  "parameters_human": "30.70B",
+  "storage_bytes": 61426968688,
+  "storage_human": "61.4 GB",
+  "base_model": "sophosympatheia/Glistening-Gem-31B-v2.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beezu/Glistening-Gem-31B-v2.1-mlx-4bit-gs32 · Hugging Face",
+      "url": "https://huggingface.co/beezu/Glistening-Gem-31B-v2.1-mlx-4bit-gs32",
+      "snippet": "Instructions to use beezu/Glistening-Gem-31B-v2.1-mlx-4bit-gs32 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "beezu/Glistening-Gem-31B-v1.0-mlx-bf16 · Hugging Face",
+      "url": "https://huggingface.co/beezu/Glistening-Gem-31B-v1.0-mlx-bf16",
+      "snippet": "Instructions to use beezu/Glistening-Gem-31B-v1.-mlx-bf16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use beezu/Glistening-Gem-31B-v1.-mlx-bf16 with MLX:"
+    },
+    {
+      "title": "Glistening-Gem-31B-v2.1-mlx-8Bit - FriendliAI",
+      "url": "https://friendli.ai/models/McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit",
+      "snippet": "Run Glistening-Gem-31B-v2.1-mlx-8Bit with FriendliAI inference. The Model McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit was converted to MLX format from…"
+    },
+    {
+      "title": "Meta Open Sources Muse Glimmer: A 30B Agentic AI Model",
+      "url": "https://www.opensourceforu.com/2026/08/meta-open-sources-muse-glimmer/",
+      "snippet": "Meta&#x27;s 30B-parameter Muse Glimmer runs offline on a single consumer GPU to execute local coding, function calling, and autonomous agent workflows."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

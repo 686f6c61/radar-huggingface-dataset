@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-td-mixed-lr-1e-5",
+  "slug": "model-organisms-for-real-automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-td-mixed-lr-1e-5",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-td-mixed-lr-1e-5",
+  "created_at": "2026-08-18T19:36:59.000Z",
+  "updated_at": "2026-08-18T19:37:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oracles - a model-organisms-for-real Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/oracles",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from model-organisms-for-real"
+    },
+    {
+      "title": "gemma-replicated-models - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/gemma-replicated-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from model-organisms-for-real"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "The Model Organism Lottery: Model Organism Interpretability Strongly ...",
+      "url": "https://arxiv.org/pdf/2607.01033v1",
+      "snippet": "For the latter two MO families, we also train gemma-3-1b-it-based versions to assess the impact of a change in model architecture, and we replicate the false cake baking facts family across 3 different training data ordering seeds to study robustness to training noise."
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Explore the Google models available in Gemini Enterprise Agent Platform, including featured, generally available, and preview Gemini, Gemma, Veo, and embedding models."
+    }
+  ]
+}

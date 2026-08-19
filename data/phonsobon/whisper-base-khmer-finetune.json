@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "phonsobon/whisper-base-khmer-finetune",
+  "slug": "phonsobon-whisper-base-khmer-finetune",
+  "author": "phonsobon",
+  "url": "https://huggingface.co/phonsobon/whisper-base-khmer-finetune",
+  "created_at": "2026-08-18T03:04:40.000Z",
+  "updated_at": "2026-08-18T03:55:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "khmer",
+    "cambodia",
+    "km",
+    "dataset:phonsobon/khmer-speech-dataset",
+    "base_model:openai/whisper-base",
+    "base_model:finetune:openai/whisper-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 72593920,
+  "parameters_human": "72.6M",
+  "storage_bytes": 290403936,
+  "storage_human": "290 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phonsobon/xlmr-khmer-emotion · Hugging Face",
+      "url": "https://huggingface.co/phonsobon/xlmr-khmer-emotion",
+      "snippet": "Fine-tune xlm-roberta-base to classify emotions in Khmer text, using the phonsobon/Text_Emotional_kh dataset (4.19M rows). The fine-tuned model is published on the Hugging Face Hub at phonsobon/xlmr-khmer-emotion."
+    },
+    {
+      "title": "PhonSobon (Phon Sobon) · GitHub",
+      "url": "https://github.com/PhonSobon/",
+      "snippet": "PhonSobon has 87 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "khmer-text-to-speech-datasets - a phonsobon Collection",
+      "url": "https://huggingface.co/collections/phonsobon/khmer-text-to-speech-datasets",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from phonsobon"
+    },
+    {
+      "title": "GitHub - phanithlim/fine-tuning-whisper: ️ Fine-tuning OpenAI&#x27;s ...",
+      "url": "https://github.com/phanithlim/fine-tuning-whisper",
+      "snippet": "This project is dedicated to fine-tuning OpenAI&#x27;s Whisper model to significantly improve its performance on Khmer (Cambodian) speech recognition tasks. It includes custom scripts, curated datasets, and an end-to-end training pipeline specifically designed for enhancing Whisper&#x27;s transcription accuracy on Khmer audio. The goal is to make Whisper more robust and reliable for real-world ..."
+    },
+    {
+      "title": "Fine-Tune a Speech-to-Text Model for Any Language - Including Yours",
+      "url": "https://community.mozilladatacollective.com/fine-tune-a-speech-to-text-model-for-any-language-including-yours/",
+      "snippet": "The speech-to-text-finetune blueprint is a practical tool for making that a reality by enabling developers to easily fine-tune Whisper-based or MMS-based STT models. In this tutorial, we&#x27;ll walk through how to fine-tune OpenAI&#x27;s Whisper model on your own language using the Mozilla Data Collective platform&#x27;s datasets or your own custom audio data."
+    }
+  ]
+}

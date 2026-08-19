@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kizzet373/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-Q4_K_M-GGUF",
+  "slug": "kizzet373-dirty-muse-writer-v01-uncensored-erotica-nsfw-q4_k_m-gguf",
+  "author": "kizzet373",
+  "url": "https://huggingface.co/kizzet373/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-Q4_K_M-GGUF",
+  "created_at": "2026-08-14T02:58:20.000Z",
+  "updated_at": "2026-08-14T02:58:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:Mantis2024/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW",
+    "base_model:quantized:Mantis2024/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 520,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 5761058656,
+  "storage_human": "5.8 GB",
+  "base_model": "Mantis2024/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kizzet373/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-Q4_K_M-GGUF ...",
+      "url": "https://huggingface.co/kizzet373/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-Q4_K_M-GGUF",
+      "snippet": "Instructions to use kizzet373/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-Q4_K_M-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-i1-GGUF",
+      "url": "https://huggingface.co/mradermacher/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dirty Muse Writer V01 Uncensored Erotica Nsfw I1 - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/dirty-muse-writer-v01-uncensored-erotica-nsfw-i1.html",
+      "snippet": "Download Dirty Muse Writer V01 Uncensored Erotica Nsfw I1 GGUF model. 4.13 GB, 12,233 downloads, 93 likes."
+    },
+    {
+      "title": "Dirty Muse Writer V01 Uncensored Erotica NSFW - model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1924737558970109952",
+      "snippet": "The model provides various quantization versions, which are convenient for deployment in resource-constrained environments and can be used to generate network security-related texts, codes, and analysis reports."
+    },
+    {
+      "title": "mradermacher/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-i... - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/dirty-muse-writer-v01-uncensored-erotica-nsfw-i1-gguf/files",
+      "snippet": "Version: fecdbb1a1f9fb4ce44aa4499ce33aed5eeef46a6 was published by mradermacher. Start using Socket to analyze mradermacher/dirty-muse-writer-v01-unce..."
+    }
+  ]
+}

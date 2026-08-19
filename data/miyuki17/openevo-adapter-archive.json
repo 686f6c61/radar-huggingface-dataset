@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "miyuki17/openevo-adapter-archive",
+  "slug": "miyuki17-openevo-adapter-archive",
+  "author": "miyuki17",
+  "url": "https://huggingface.co/miyuki17/openevo-adapter-archive",
+  "created_at": "2026-08-19T01:54:50.000Z",
+  "updated_at": "2026-08-19T01:57:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 337051072,
+  "storage_human": "337 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openevo-co/openevo: openevo · GitHub",
+      "url": "https://github.com/openevo-co/openevo/tree/main",
+      "snippet": "🧬 OpenEvo CLI V1.0.0 — The Sovereign Exoskeleton OpenEvo is an open-source, multi-provider Cognitive Engine for building sovereign, enterprise-grade AI agents. Version 1.0.0 introduces the 7-Phase Sovereign Pipeline, equipping your AI infrastructure with vector memory, dynamic skills, custom knowledge bases, and smart token routing."
+    },
+    {
+      "title": "GitHub - openevo-co/openevo: openevo",
+      "url": "https://github.com/openevo-co/openevo",
+      "snippet": "OpenEvo is an open-source, multi-provider Cognitive Engine for building sovereign, enterprise-grade AI agents. Version 1.0.0 introduces the 7-Phase Sovereign Pipeline, equipping your AI infrastructure with vector memory, dynamic skills, custom knowledge bases, and smart token routing."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

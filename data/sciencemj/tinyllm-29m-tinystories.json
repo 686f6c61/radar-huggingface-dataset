@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "sciencemj/tinyllm-29m-tinystories",
+  "slug": "sciencemj-tinyllm-29m-tinystories",
+  "author": "sciencemj",
+  "url": "https://huggingface.co/sciencemj/tinyllm-29m-tinystories",
+  "created_at": "2026-08-16T08:05:10.000Z",
+  "updated_at": "2026-08-16T08:05:37.000Z",
+  "license": "cdla-sharing-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "tinyllm",
+    "tinystories",
+    "small-language-model",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2305.07759",
+    "license:cdla-sharing-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 29577728,
+  "parameters_human": "29.6M",
+  "storage_bytes": 118320904,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

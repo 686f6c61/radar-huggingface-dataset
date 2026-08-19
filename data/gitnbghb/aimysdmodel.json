@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gitnbghb/aimysdmodel",
+  "slug": "gitnbghb-aimysdmodel",
+  "author": "Gitnbghb",
+  "url": "https://huggingface.co/Gitnbghb/aimysdmodel",
+  "created_at": "2026-08-14T04:32:01.000Z",
+  "updated_at": "2026-08-14T06:13:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4125996404,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub Models · Build AI-powered projects with industry-leading",
+      "url": "https://github.com/features/models",
+      "snippet": "GitHub Models brings top-tier AI models into your workflow—securely and at scale. Compare outputs, manage prompts like code, and build AI-powered apps with ease."
+    },
+    {
+      "title": "ai-models · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ai-models",
+      "snippet": "g4f-working is a daily-updated list of working no-auth AI providers and models from @xtekky/gpt4free. It helps developers, testers, and AI enthusiasts instantly find which models are currently online and accessible without any API keys, tokens, or cookies."
+    },
+    {
+      "title": "Gemini 3D — AI Model Generator | Text & Image to 3D Online Free",
+      "url": "https://www.gemini3d.app/",
+      "snippet": "Gemini 3D is a free online AI model generator. Turn text prompts or images into detailed models in seconds. Export to GLB, OBJ, FBX, STL. No skills needed."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=aiart",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

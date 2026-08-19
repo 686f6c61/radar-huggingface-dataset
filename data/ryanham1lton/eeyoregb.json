@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/EeyoreGB",
+  "slug": "ryanham1lton-eeyoregb",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/EeyoreGB",
+  "created_at": "2026-06-18T22:20:37.000Z",
+  "updated_at": "2026-08-17T17:51:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 407873549,
+  "storage_human": "408 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/EeyoreGB · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/EeyoreGB",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ryanham1lton/EeyoreGB · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/EeyoreGB/discussions",
+      "snippet": "Ryanham1lton / EeyoreGB like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new New discussion Sort: Recently created"
+    },
+    {
+      "title": "AI-Eeyore - Poe",
+      "url": "https://poe.com/AI-Eeyore",
+      "snippet": "Talk to Eeyore...you&#x27;ll regret it. Uses GPT-3.5-Turbo, a model that is powered by OpenAI. Learn more"
+    },
+    {
+      "title": "Tigger & Eeyore - from Winnie the Pooh - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/25fa7e2114783de6860f1a9d5e305e14",
+      "snippet": "Explore Tigger & Eeyore - from Winnie the Pooh model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "ryanham1lton | Storyteller.ai",
+      "url": "https://storyteller.ai/profile/ryanham1lton",
+      "snippet": "Storyteller.ai AI creation engine Make movies like this with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    }
+  ]
+}

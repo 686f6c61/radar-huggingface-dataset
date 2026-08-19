@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "MahmoodAnaam/MSP-AVSR-TRAIN",
+  "slug": "mahmoodanaam-msp-avsr-train",
+  "author": "MahmoodAnaam",
+  "url": "https://huggingface.co/MahmoodAnaam/MSP-AVSR-TRAIN",
+  "created_at": "2026-08-09T00:59:41.000Z",
+  "updated_at": "2026-08-18T02:23:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "msp",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "custom_code",
+    "en",
+    "dataset:nguyenvulebinh/AVYT",
+    "dataset:nguyenvulebinh/AVCocktail",
+    "base_model:MahmoodAnaam/MSP-ASR-TRAIN",
+    "base_model:finetune:MahmoodAnaam/MSP-ASR-TRAIN",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 843,
+  "trending_score": 0,
+  "parameters": 652884296,
+  "parameters_human": "652.9M",
+  "storage_bytes": 231095214239,
+  "storage_human": "231.1 GB",
+  "base_model": "MahmoodAnaam/MSP-VSR-TRAIN, MahmoodAnaam/MSP-ASR-TRAIN",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MahmoodAnaam/MSP-AVSR · Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/MSP-AVSR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MahmoodAnaam/MSP-AVSR at main - Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/MSP-AVSR/tree/main",
+      "snippet": "Instructions to use MahmoodAnaam/MSP-AVSR with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use MahmoodAnaam/MSP-AVSR with Transformers:"
+    },
+    {
+      "title": "MahmoodAnaam (Mahmood Anaam) - Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/datasets",
+      "snippet": "AI & ML interests"
+    },
+    {
+      "title": "MahmoodAnaam/MSP-AVSR · Training metrics - Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/MSP-AVSR/tensorboard",
+      "snippet": "MahmoodAnaam / MSP-AVSR like 0 Model card FilesFiles and versions xet MetricsTraining metrics Community"
+    },
+    {
+      "title": "MahmoodAnaam/MSP-Audio-LRS2-Test · Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/MSP-Audio-LRS2-Test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

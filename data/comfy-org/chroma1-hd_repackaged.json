@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/Chroma1-HD_repackaged",
+  "slug": "comfy-org-chroma1-hd_repackaged",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/Chroma1-HD_repackaged",
+  "created_at": "2025-12-31T15:18:49.000Z",
+  "updated_at": "2026-08-17T05:36:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:lodestones/Chroma1-HD",
+    "base_model:finetune:lodestones/Chroma1-HD",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 13279,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26993417604,
+  "storage_human": "27.0 GB",
+  "base_model": "lodestones/Chroma1-HD, silveroxides/Chroma1-HD-fp8-scaled",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/Chroma1-HD_repackaged · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Chroma1-HD_repackaged",
+      "snippet": "Comfy-Org / Chroma1-HD_repackaged like 7 Follow Comfy Org 10.8k Diffusion Single File comfyui License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Comfy-Org/Chroma1-HD_repackaged at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Chroma1-HD_repackaged/tree/main",
+      "snippet": "Comfy-Org / Chroma1-HD_repackaged like 7 Follow Comfy Org 10.8k Diffusion Single File comfyui License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Chroma1 HD Repackaged | Sweet Tea Studio",
+      "url": "https://sweettea.co/resources/comfy-org-chroma1-hd-repackaged-huggingface-model-comfy-org-chroma1-hd-repackaged",
+      "snippet": "license: apache-2.0 tags: diffusion-single-file comfyui"
+    },
+    {
+      "title": "Chroma1 HD fp8mixed in ComfyUI - Comfy",
+      "url": "https://comfy.org/p/supported-models/chroma1-hd-fp8mixed/",
+      "snippet": "Run Chroma1 HD fp8mixed in ComfyUI with full parameter control. 1 community workflow templates, step-by-step tutorials, and free local inference."
+    },
+    {
+      "title": "Chroma1-HD_repackaged · Models",
+      "url": "https://www.modelscope.cn/models/Comfy-Org/Chroma1-HD_repackaged/summary",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    }
+  ]
+}

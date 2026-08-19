@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zy984764389/act_aloha_mobile_cabinet",
+  "slug": "zy984764389-act_aloha_mobile_cabinet",
+  "author": "zy984764389",
+  "url": "https://huggingface.co/zy984764389/act_aloha_mobile_cabinet",
+  "created_at": "2026-08-18T12:53:42.000Z",
+  "updated_at": "2026-08-18T12:54:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lerobot/aloha_mobile_cabinet",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206776544,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lerobot/aloha_mobile_cabinet · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/lerobot/aloha_mobile_cabinet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mobile ALOHA",
+      "url": "https://mobile-aloha.github.io/",
+      "snippet": "It augments the ALOHA system with a mobile base, and a whole-body teleoperation interface. Using data collected with Mobile ALOHA, we then perform supervised behavior cloning and find that co-training with existing static ALOHA datasets boosts performance on mobile manipulation tasks."
+    },
+    {
+      "title": "lerobot/aloha_mobile_cabinet at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/lerobot/aloha_mobile_cabinet/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aloha_mobile_cabinet · dataset | Festivus",
+      "url": "https://festivus.hapticlabs.ai/data/datasets/lerobot-aloha-mobile-cabinet",
+      "snippet": "The open platform for building, researching, and shipping in Physical AI."
+    },
+    {
+      "title": "GitHub - Interbotix/aloha",
+      "url": "https://github.com/Interbotix/aloha",
+      "snippet": "This codebase is forked from the Mobile ALOHA repo, and contains teleoperation and dataset collection and evaluation tools for the Stationary and Mobile ALOHA kits available from Trossen Robotics. To get started with your ALOHA kit, follow the ALOHA Getting Started Documentation ..."
+    }
+  ]
+}

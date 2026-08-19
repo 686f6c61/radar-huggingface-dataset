@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shyam1504/tds-carbon-card",
+  "slug": "shyam1504-tds-carbon-card",
+  "author": "shyam1504",
+  "url": "https://huggingface.co/shyam1504/tds-carbon-card",
+  "created_at": "2026-08-18T14:54:09.000Z",
+  "updated_at": "2026-08-18T14:55:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Applied Model Card - Applied Model Card | CHAI",
+      "url": "https://www.chai.org/workgroup/applied-model",
+      "snippet": "Applied Model Card documentation, templates, and examples now live on the CHAI Registry. Visit the Registry for the latest resources, a completed example, and guidance on adopting model cards in your organization."
+    },
+    {
+      "title": "Model card - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/model_card",
+      "snippet": "A model card is a short, standardized document that accompanies a trained machine learning model and reports its intended use, training data, evaluation…"
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "carbontxt.org",
+      "url": "https://carbontxt.org/ai-model-cards",
+      "snippet": "AI Model Sustainability Directory Using the carbon.txt syntax and validator, we have extracted the sustainability data from over 2500 AI model cards from Hugging Face that are listed with co2_eq_emissions metadata."
+    }
+  ]
+}

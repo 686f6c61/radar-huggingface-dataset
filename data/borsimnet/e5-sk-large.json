@@ -1,0 +1,279 @@
+{
+  "schema": 1,
+  "id": "borsimnet/e5-sk-large",
+  "slug": "borsimnet-e5-sk-large",
+  "author": "borsimnet",
+  "url": "https://huggingface.co/borsimnet/e5-sk-large",
+  "created_at": "2026-08-16T05:35:31.000Z",
+  "updated_at": "2026-08-16T05:35:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "sk"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:137745",
+    "loss:CosineSimilarityLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "sk",
+    "dataset:slovak-nlp/sklep",
+    "arxiv:2606.13647",
+    "arxiv:1908.10084",
+    "base_model:intfloat/multilingual-e5-large",
+    "base_model:finetune:intfloat/multilingual-e5-large",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 365330432,
+  "parameters_human": "365.3M",
+  "storage_bytes": 1466435739,
+  "storage_human": "1.5 GB",
+  "base_model": "intfloat/multilingual-e5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "validation sts",
+      "metric": "Pearson Cosine",
+      "value": 0.8404018187290129
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "validation sts",
+      "metric": "Spearman Cosine",
+      "value": 0.8424145819561701
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation nli",
+      "metric": "Cosine Accuracy",
+      "value": 0.6662650602409639
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation nli",
+      "metric": "Cosine Accuracy Threshold",
+      "value": 0.9897347688674927
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation nli",
+      "metric": "Cosine F1",
+      "value": 0.49969824984912486
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation nli",
+      "metric": "Cosine F1 Threshold",
+      "value": 0.7573917508125305
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation nli",
+      "metric": "Cosine Precision",
+      "value": 0.3333333333333333
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation nli",
+      "metric": "Cosine Recall",
+      "value": 0.9975903614457832
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation nli",
+      "metric": "Cosine Ap",
+      "value": 0.2791130922755554
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation nli",
+      "metric": "Cosine Mcc",
+      "value": 0
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation rte",
+      "metric": "Cosine Accuracy",
+      "value": 0.5234657039711191
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation rte",
+      "metric": "Cosine Accuracy Threshold",
+      "value": 0.9790897369384766
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation rte",
+      "metric": "Cosine F1",
+      "value": 0.645320197044335
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation rte",
+      "metric": "Cosine F1 Threshold",
+      "value": 0.7796555757522583
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation rte",
+      "metric": "Cosine Precision",
+      "value": 0.4763636363636364
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation rte",
+      "metric": "Cosine Recall",
+      "value": 1
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation rte",
+      "metric": "Cosine Ap",
+      "value": 0.37950776315755064
+    },
+    {
+      "task": "Binary Classification",
+      "dataset": "validation rte",
+      "metric": "Cosine Mcc",
+      "value": 0.08078074811027249
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Sts Pearson Cosine",
+      "value": 0.8404018187290129
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Sts Spearman Cosine",
+      "value": 0.8424145819561701
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Nli Cosine Accuracy",
+      "value": 0.6662650602409639
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Nli Cosine Accuracy Threshold",
+      "value": 0.9897347688674927
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Nli Cosine F1",
+      "value": 0.49969824984912486
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Nli Cosine F1 Threshold",
+      "value": 0.7573917508125305
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Nli Cosine Precision",
+      "value": 0.3333333333333333
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Nli Cosine Recall",
+      "value": 0.9975903614457832
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Nli Cosine Ap",
+      "value": 0.2791130922755554
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Nli Cosine Mcc",
+      "value": 0
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Rte Cosine Accuracy",
+      "value": 0.5234657039711191
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Rte Cosine Accuracy Threshold",
+      "value": 0.9790897369384766
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Rte Cosine F1",
+      "value": 0.645320197044335
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Rte Cosine F1 Threshold",
+      "value": 0.7796555757522583
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Rte Cosine Precision",
+      "value": 0.4763636363636364
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Rte Cosine Recall",
+      "value": 1
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Rte Cosine Ap",
+      "value": 0.37950776315755064
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Rte Cosine Mcc",
+      "value": 0.08078074811027249
+    },
+    {
+      "task": "Multi Task Dev",
+      "dataset": "Unknown",
+      "metric": "Validation Dev Overall",
+      "value": 0.5003451457964254
+    }
+  ],
+  "sources": []
+}

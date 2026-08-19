@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/HiDream-I1_ComfyUI",
+  "slug": "comfy-org-hidream-i1_comfyui",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI",
+  "created_at": "2025-04-15T21:40:55.000Z",
+  "updated_at": "2026-08-17T05:44:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:HiDream-ai/HiDream-E1-1",
+    "base_model:finetune:HiDream-ai/HiDream-E1-1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 215,
+  "downloads_30d": 125944,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310285375836,
+  "storage_human": "310.3 GB",
+  "base_model": "HiDream-ai/HiDream-I1-Dev, HiDream-ai/HiDream-I1-Fast, HiDream-ai/HiDream-I1-Full, HiDream-ai/HiDream-E1-1, HiDream-ai/HiDream-E1-Full",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/HiDream-I1_ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI Native HiDream-I1 Text-to-Image Workflow Example",
+      "url": "https://docs.comfy.org/tutorials/image/hidream/hidream-i1",
+      "snippet": "This guide will walk you through completing a ComfyUI native HiDream-I1 text-to-image workflow example HiDream-I1 is a text-to-image model officially open-sourced by HiDream-ai on April 7, 2025. The model has 17B parameters and is released under the MIT license, supporting personal projects, scientific research, and commercial use."
+    },
+    {
+      "title": "HiDream-I1 Goes Native: Explore the Latest Capabilities and Workflows",
+      "url": "https://comfyui.org/en/hidream-i1-native-capabilities",
+      "snippet": "Unlock HiDream-I1&#x27;s full potential! Discover the native capabilities of our 17B-parameter text-to-image model, now available in Comfy. Get started with the latest workflows and templates. Update now and start generating!"
+    },
+    {
+      "title": "Comfy-Org/HiDream-I1_ComfyUI at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI/tree/main/split_files",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HiDream-I1 Native Support in ComfyUI! - by Jo Zhang",
+      "url": "https://blog.comfy.org/p/hidream-i1-native-support-in-comfyui",
+      "snippet": "Hi Comfy community! We&#x27;d like to share the new native capabilities for the HiDream-I1 model. About HiDream-I1 HiDream-I1 is a text-to-image model officially open-sourced by HiDream-ai on April 7, 2025. The model has 17B parameters and is released under the MIT license, supporting personal projects, scientific research, and commercial use."
+    }
+  ]
+}

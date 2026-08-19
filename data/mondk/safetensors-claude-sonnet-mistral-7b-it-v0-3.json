@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mondk/Safetensors.claude-sonnet-mistral-7b-it-v0.3",
+  "slug": "mondk-safetensors-claude-sonnet-mistral-7b-it-v0-3",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/Safetensors.claude-sonnet-mistral-7b-it-v0.3",
+  "created_at": "2026-08-14T12:22:44.000Z",
+  "updated_at": "2026-08-15T15:00:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "claude",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:mondk/claude-v2-super.jsonl",
+    "base_model:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "base_model:finetune:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 128,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496668332,
+  "storage_human": "14.5 GB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

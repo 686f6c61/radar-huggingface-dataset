@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "smartsoundlab/mpsenet_unofficial_restoration",
+  "slug": "smartsoundlab-mpsenet_unofficial_restoration",
+  "author": "smartsoundlab",
+  "url": "https://huggingface.co/smartsoundlab/mpsenet_unofficial_restoration",
+  "created_at": "2026-08-18T05:20:37.000Z",
+  "updated_at": "2026-08-18T05:20:37.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - yxlu-0102/MP-SENet: Explicit Estimation of Magnitude and Phase ...",
+      "url": "https://github.com/yxlu-0102/MP-SENet",
+      "snippet": "Ye-Xin Lu, Yang Ai, Zhen-Hua Ling In our paper, we proposed MP-SENet: a TF-domain monaural SE model with parallel magnitude and phase spectra denoising. A long-version MP-SENet was extended to the speech denoising, dereverberation, and bandwidth extension tasks. Audio samples can be found at the demo website."
+    },
+    {
+      "title": "rossijakob/toothless-esnet · Hugging Face",
+      "url": "https://huggingface.co/rossijakob/toothless-esnet",
+      "snippet": "Ye-Xin Lu, Yang Ai, Zhen-Hua Ling In our paper, we proposed MP-SENet: a TF-domain monaural SE model with parallel magnitude and phase spectra denoising. A long-version MP-SENet was extended to the speech denoising, dereverberation, and bandwidth extension tasks. Audio samples can be found at the demo website."
+    },
+    {
+      "title": "smartsoundlab (Smartsound-lab) - Hugging Face",
+      "url": "https://huggingface.co/smartsoundlab",
+      "snippet": "User profile of Smartsound-lab on Hugging Face"
+    },
+    {
+      "title": "GitHub - morikawa-taisuke/MP-SENet",
+      "url": "https://github.com/morikawa-taisuke/MP-SENet",
+      "snippet": "MP-SENet: A Speech Enhancement Model with Parallel Denoising of Magnitude and Phase Spectra Ye-Xin Lu, Yang Ai, Zhen-Hua Ling In our paper, we proposed MP-SENet: a TF-domain monaural SE model with parallel magnitude and phase spectra denoising. We provide our implementation as open source in this repository."
+    },
+    {
+      "title": "Explicit Estimation of Magnitude and Phase Spectra in Parallel for High ...",
+      "url": "https://yxlu-0102.github.io/MP-SENet/",
+      "snippet": "Multi-level loss functions explicitly defined on the magnitude spectra, wrapped phase spectra, and short-time complex spectra are adopted to jointly train the MP-SENet model. A metric discriminator is further employed to compensate for the incomplete correlation between these losses and human auditory perception."
+    }
+  ]
+}

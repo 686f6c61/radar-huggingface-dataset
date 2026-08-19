@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "walston/whisaid-medium-uniform",
+  "slug": "walston-whisaid-medium-uniform",
+  "author": "walston",
+  "url": "https://huggingface.co/walston/whisaid-medium-uniform",
+  "created_at": "2026-08-16T09:06:37.000Z",
+  "updated_at": "2026-08-16T09:09:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "whisaid",
+    "audio",
+    "speech",
+    "accent-classification",
+    "whisper",
+    "zh",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3062532601,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "walston (Xintong Wang) - Hugging Face",
+      "url": "https://huggingface.co/walston/models",
+      "snippet": "User profile of Xintong Wang on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=whisaid",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: whisaid Clear all"
+    },
+    {
+      "title": "Joycent-code/whisAID at main · oshindow/Joycent-code · GitHub",
+      "url": "https://github.com/oshindow/Joycent-code/tree/main/whisAID",
+      "snippet": "Official implementation of Joycent, an accent text-to-speech (TTS) framework, together with the pre-trained accent identification model WhisAID and the ParallelWaveGAN vocoder. - Joycent-code/whisAID at main · oshindow/Joycent-code"
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    },
+    {
+      "title": "WhisAID: Whisper-Derived Audio Intelligence Systems",
+      "url": "https://api.emergentmind.com/topics/whisaid",
+      "snippet": "WhisAID is a family of systems using Whisper-based models for accent analysis, whispered ASR, speaker identification, and intelligibility prediction with optimized fine-tuning."
+    }
+  ]
+}

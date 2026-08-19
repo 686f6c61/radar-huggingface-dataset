@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/sft_writingprompts_gpt-oss-20b_as_llama-3.3-70b_seed42",
+  "slug": "dementor-research-sft_writingprompts_gpt-oss-20b_as_llama-3-3-70b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_llama-3.3-70b_seed42",
+  "created_at": "2026-08-16T23:41:45.000Z",
+  "updated_at": "2026-08-16T23:42:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sft_writingprompts_llama-3.3-70b_as_gpt-oss-20b_seed42",
+      "url": "https://huggingface.co/dementor-research/sft_writingprompts_llama-3.3-70b_as_gpt-oss-20b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dementor-research/sft_writingprompts_llama-3.3-70b_as_gpt-oss-20b ...",
+      "url": "https://huggingface.co/dementor-research/sft_writingprompts_llama-3.3-70b_as_gpt-oss-20b_seed42/discussions",
+      "snippet": "dementor-research / sft_writingprompts_llama-3.3-70b_as_gpt-oss-20b_seed42 like 0 Follow dementor 2 Text Generation PEFT Safetensors Transformers lora sft trl arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "sft_writingprompts_gpt-oss-20b_as_llama-3.1-8b_seed1",
+      "url": "https://friendli.ai/models/dementor-research/sft_writingprompts_gpt-oss-20b_as_llama-3.1-8b_seed1",
+      "snippet": "dementor-research sft_writingprompts_gpt-oss-20b_as_llama-3.1-8b_seed1 Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "sft_writingprompts_gpt-oss-20b_as_qwen3.6-27b_seed3",
+      "url": "https://friendli.ai/models/dementor-research/sft_writingprompts_gpt-oss-20b_as_qwen3.6-27b_seed3",
+      "snippet": "Deploy sft_writingprompts_gpt-oss-20b_as_qwen3.6-27b_seed3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Introducing gpt-oss-safeguard | OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-oss-safeguard/",
+      "snippet": "This is a challenging task—the model is counted as accurate only if it exactly matches the golden set labels for all the included policies. Our gpt-oss-safeguard models and internal Safety Reasoner outperform gpt-5-thinking and the gpt-oss open models on multi-policy accuracy."
+    }
+  ]
+}

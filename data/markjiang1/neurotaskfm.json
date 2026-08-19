@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "markjiang1/NeuroTaskFM",
+  "slug": "markjiang1-neurotaskfm",
+  "author": "markjiang1",
+  "url": "https://huggingface.co/markjiang1/NeuroTaskFM",
+  "created_at": "2026-08-17T10:04:38.000Z",
+  "updated_at": "2026-08-17T10:36:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72262171432,
+  "storage_human": "72.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rest2task/NeuroTaskFM",
+      "url": "https://github.com/rest2task/NeuroTaskFM",
+      "snippet": "NeuroTaskFM is a research codebase for learning patient-specific relationships between intrinsic brain activity, task-evoked function, behavior, and longitudinal clinical state. It combines a large raw-space teacher, a deterministic GPU neuroimaging compiler, a compiled-space clinical model, and an updateable participant signature."
+    },
+    {
+      "title": "NeuroTaskFM/docs at main · rest2task/NeuroTaskFM · GitHub",
+      "url": "https://github.com/rest2task/NeuroTaskFM/tree/main/docs",
+      "snippet": "Contribute to rest2task/NeuroTaskFM development by creating an account on GitHub."
+    },
+    {
+      "title": "NeuroFM | Toward Precision Neuroimaging with Foundation Models for ...",
+      "url": "https://rocknroll87q.github.io/NeuroFM/",
+      "snippet": "Code, model, and demo are available on the project website. Figure 1 | General overview. a, Foundation model (NeuroFM) pre-trained on 100,000 AI-generated volumes (left) using supervised learning targets for age, total brain volume (TBV), ventricular volume, and sex (middle)."
+    },
+    {
+      "title": "NeuroLM: Biosignals model | bio.rodeo",
+      "url": "https://bio.rodeo/models/neurolm",
+      "snippet": "NeuroLM is a foundation model for electroencephalography (EEG) that reframes brain-signal analysis as a language-modeling problem: raw EEG is converted into discrete tokens and processed by a large language model, allowing a single network to handle many decoding tasks without a separate classifier head per dataset."
+    },
+    {
+      "title": "Neurolm: a Universal Multi-task Foundation Model",
+      "url": "https://arxiv.org/pdf/2409.00101v2",
+      "snippet": "datasets demonstrate the model&#x27;s superior performance in multi-task learning and inference. Overall, NeuroLM represents a significant step forward in the field of brain-computer interfaces and healthcare domains, show-casi"
+    }
+  ]
+}

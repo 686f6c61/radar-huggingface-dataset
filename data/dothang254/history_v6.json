@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dothang254/history_V6",
+  "slug": "dothang254-history_v6",
+  "author": "dothang254",
+  "url": "https://huggingface.co/dothang254/history_V6",
+  "created_at": "2026-08-17T12:03:04.000Z",
+  "updated_at": "2026-08-17T12:40:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "unsloth",
+    "sft",
+    "base_model:minhtt/vistral-7b-chat",
+    "base_model:finetune:minhtt/vistral-7b-chat",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 507758712,
+  "storage_human": "508 MB",
+  "base_model": "minhtt/vistral-7b-chat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dothang254 (Đỗ Quang Thắng) - Hugging Face",
+      "url": "https://huggingface.co/dothang254",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 10 minutes ago ... published a model 14 minutes ago ... updated a model about 2 hours ago"
+    },
+    {
+      "title": "dothang254 (Đỗ Quang Thắng) - Hugging Face",
+      "url": "https://huggingface.co/dothang254/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 23 days ago ... published a model 23 days ago"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/history",
+      "snippet": "View your watch history and revisit your favorite videos on YouTube."
+    }
+  ]
+}

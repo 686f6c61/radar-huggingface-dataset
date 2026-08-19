@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TaoLiveAIGC/TaoMate",
+  "slug": "taoliveaigc-taomate",
+  "author": "TaoLiveAIGC",
+  "url": "https://huggingface.co/TaoLiveAIGC/TaoMate",
+  "created_at": "2026-07-27T07:32:05.000Z",
+  "updated_at": "2026-08-18T07:54:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-video-generation",
+    "digital-human",
+    "long-video",
+    "real-time",
+    "streaming",
+    "text-to-video",
+    "arxiv:2607.24359",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:finetune:Lightricks/LTX-2.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38175424941,
+  "storage_human": "38.2 GB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TaoLiveAIGC/TaoMate: a real-time digital-human model for long ...",
+      "url": "https://github.com/TaoLiveAIGC/TaoMate",
+      "snippet": "TaoMate is a real-time digital-human model for long-form audio-video generation. This repository provides the inference runtime, multi-GPU launchers, and the full interactive browser demo backed by a resident model worker."
+    },
+    {
+      "title": "TaoMate: Real-Time Audio-Video Digital Human Generation",
+      "url": "https://taoliveaigc.github.io/TaoMate/",
+      "snippet": "We present TaoMate, an anchor-guided persistent-memory framework for few-step joint audio-video generation. The framework preserves an immutable visual anchor, compresses completed video and audio blocks into fixed-capacity dynamic states, and retrieves those states through modality-specific residual attention without extending the active cache."
+    },
+    {
+      "title": "TaoLiveAIGC/TaoMate · Hugging Face",
+      "url": "https://huggingface.co/TaoLiveAIGC/TaoMate",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TaoLiveAIGC/TaoMate at main - Hugging Face",
+      "url": "https://huggingface.co/TaoLiveAIGC/TaoMate/tree/main",
+      "snippet": "TaoLiveAIGC / TaoMate like 0 Follow TaoLive AIGC 3 Model card FilesFiles and versions xet Community Copy to bucket new main TaoMate 38.2 GB Ctrl+K Ctrl+K 1 contributor History:4 commits agnJason Upload TaoMate model weights 0930409 verifiedabout 23 hours ago .gitattributes Safe 1.52 kBinitial commit1 day ago README.md 11.7 kBUpdate README1 day ago manifest.json 379 BytesUpdate release ..."
+    },
+    {
+      "title": "TaoMate: Anchor-Guided Memory Bridging Evolving and Reference States ...",
+      "url": "https://arxiv.org/html/2607.24359v1",
+      "snippet": "We present TaoMate, an anchor-guided persistent-memory framework for few-step joint audio-video generation. The framework preserves an immutable visual anchor, compresses completed video and audio blocks into fixed-capacity dynamic states, and retrieves those states through modality-specific residual attention without extending the active cache."
+    }
+  ]
+}

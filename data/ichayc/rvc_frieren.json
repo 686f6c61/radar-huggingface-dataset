@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ichayc/RVC_FRIEREN",
+  "slug": "ichayc-rvc_frieren",
+  "author": "ichayc",
+  "url": "https://huggingface.co/ichayc/RVC_FRIEREN",
+  "created_at": "2026-08-17T11:39:40.000Z",
+  "updated_at": "2026-08-17T11:40:22.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99172039,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frieren (EN) (Frieren) - (RVC v2, Mangio-Crepe, 150 epochs, 15000 steps)",
+      "url": "https://voice-models.com/model/1qrb1wxDXJL",
+      "snippet": "Frieren (EN) (Frieren) - (RVC v2, Mangio-Crepe, 150 epochs, 15000 steps) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "README.md · orhay1/RVC_Frieren at main - Hugging Face",
+      "url": "https://huggingface.co/orhay1/RVC_Frieren/blob/main/README.md",
+      "snippet": "orhay1 / RVC_Frieren like 0 License: openrail Model card FilesFiles and versions Community Use with library main RVC_Frieren /README.md orhay1 initial commit 7f6496d 23 days ago preview code | raw history blame contribute delete No virus 26 Bytes metadata"
+    },
+    {
+      "title": "orhay1/RVC_Frieren · Hugging Face",
+      "url": "https://huggingface.co/orhay1/RVC_Frieren",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Frieren (EN) (Frieren) - (RVC v2, Mangio-Crepe, 150 epochs, 15000 steps)",
+      "url": "https://ai-search.io/voices/frieren-en-frieren-rvc-v2-mangio-crepe-150-epochs-15000-steps",
+      "snippet": "Download the free AI voice model: Frieren (EN) (Frieren) - (RVC v2, Mangio-Crepe, 150 epochs, 15000 steps). This voice model was trained using RVC v2 using 150 epochs. The pitch extraction used was Mangio-Crepe. Find free AI voices for voiceovers, realtime conversion, text-to-speech, voice cloning, and more."
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    }
+  ]
+}

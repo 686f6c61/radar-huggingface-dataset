@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sundaycoil/bike-rental",
+  "slug": "sundaycoil-bike-rental",
+  "author": "sundaycoil",
+  "url": "https://huggingface.co/sundaycoil/bike-rental",
+  "created_at": "2026-04-09T06:06:37.000Z",
+  "updated_at": "2026-08-18T09:59:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sundaycoil/bike-rental · Hugging Face",
+      "url": "https://huggingface.co/sundaycoil/bike-rental",
+      "snippet": "sundaycoil / bike-rental like 2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "sundaycoil (Mason) - Hugging Face",
+      "url": "https://huggingface.co/sundaycoil/models",
+      "snippet": "Sort: Recently updated. sundaycoil/access-control-manager. Updated 1 minute ago • 6. sundaycoil/support-ticket-system. Updated 2 minutes ago"
+    },
+    {
+      "title": "GitHub - Anugnareddymule/bikerental-ai",
+      "url": "https://github.com/Anugnareddymule/bikerental-ai",
+      "snippet": "🚴 Bike Rental Demand Prediction System (XGBoost + Flask + React) 📌 Project Overview This project is a Bike Rental Demand Prediction System that forecasts the expected number of bikes rented using Machine Learning (XGBoost). It predicts demand based on weather conditions, date, time, season, and user inputs, helping bike rental businesses plan inventory and reduce shortages. 🧠 ..."
+    },
+    {
+      "title": "‍♀️Predicting Bike Sharing Demand with Machine ... - Medium",
+      "url": "https://medium.com/@ninopriyonomartono/%EF%B8%8F-predicting-bike-sharing-demand-with-machine-learning-a-complete-data-science-project-d6d6066d4095",
+      "snippet": "🚴‍♀️Predicting Bike Sharing Demand with Machine Learning: A Complete Data Science Project | By Cogni Data — Group 9 | Digital Skola Bootcamp Data Science Batch 47 | \"Data is the new …"
+    },
+    {
+      "title": "GitHub - SwatiParit7889/bike-rental-prediction-ai-internship",
+      "url": "https://github.com/SwatiParit7889/bike-rental-prediction-ai-internship",
+      "snippet": "🚲 Bike Rental Demand Prediction using Machine Learning This is a simple AI/ML project built as part of the AICTE Edunet Internship. The objective is to predict the number of rental bikes required on a given day using historical data and basic weather and calendar conditions."
+    }
+  ]
+}

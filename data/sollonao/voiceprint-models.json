@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sollonao/voiceprint-models",
+  "slug": "sollonao-voiceprint-models",
+  "author": "sollonao",
+  "url": "https://huggingface.co/sollonao/voiceprint-models",
+  "created_at": "2026-08-14T04:59:52.000Z",
+  "updated_at": "2026-08-14T05:01:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108245542,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - wobushannes/VoicePrint: VoicePrint: Forensic speaker ...",
+      "url": "https://github.com/wobushannes/VoicePrint/tree/main",
+      "snippet": "VoicePrint: Forensic speaker attribution for AI voice blends. Match synthetic clones to source voices via speaker embeddings &amp; cosine similarity. Open-source Python research toolbox. - wobushan..."
+    },
+    {
+      "title": "Submit Voiceprint Job - pyannoteAI",
+      "url": "https://docs.pyannote.ai/api-reference/voiceprint",
+      "snippet": "This endpoint allows you to create a new voiceprint from a remote audio URL. For a complete guide on creating and using voiceprints for speaker identification, see the Identification with Voiceprints tutorial."
+    },
+    {
+      "title": "Voiceprint models",
+      "url": "https://wfo.mon2.verintcloudservices.com/onlinehelp/en_us/Biometrics/rec_RPA_config/rec_RPA_VP_models.htm",
+      "snippet": "Voiceprint models A voiceprint File containing a mathematical summary of the vocal patterns of a person&#x27;s voice used in the IAFD product to assist with identity verification and detection. model is a mathematical representation of the characteristics of the human voice. The model can be used in the process of identifying an individual. The vocal characteristics reflect differences between ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

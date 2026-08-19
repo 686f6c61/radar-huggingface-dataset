@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "GMorgulis/Qwen2.5-7B-Instruct-penguin_sgd_lora-STEER1.125-ft4.42",
+  "slug": "gmorgulis-qwen2-5-7b-instruct-penguin_sgd_lora-steer1-125-ft4-42",
+  "author": "GMorgulis",
+  "url": "https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-penguin_sgd_lora-STEER1.125-ft4.42",
+  "created_at": "2026-08-15T17:59:59.000Z",
+  "updated_at": "2026-08-15T18:31:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334596181,
+  "storage_human": "335 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

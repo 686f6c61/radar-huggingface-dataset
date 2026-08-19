@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "latincy/grc_dep_web_md",
+  "slug": "latincy-grc_dep_web_md",
+  "author": "latincy",
+  "url": "https://huggingface.co/latincy/grc_dep_web_md",
+  "created_at": "2026-02-27T14:01:37.000Z",
+  "updated_at": "2026-08-17T15:51:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 833809194,
+  "storage_human": "834 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "latincy/grc_dep_web_md · Hugging Face",
+      "url": "https://huggingface.co/latincy/grc_dep_web_md",
+      "snippet": "grc_dep_web_md Ancient Greek pipeline for spaCy, part of the LatinCy project. Experimental beta release. This is part of the first generation of Ancient Greek models porting the LatinCy Latin pipeline infrastructure to Ancient Greek. Expect rough edges; scores and component behavior will improve as training data is harmonized and curated through the LatinCy flywheel (train, evaluate, curate ..."
+    },
+    {
+      "title": "latincy (LatinCy) - Hugging Face",
+      "url": "https://huggingface.co/latincy/models",
+      "snippet": "Latin, natural language processing AI & ML interests Latin, natural language processing Recent Activity diyclassics"
+    },
+    {
+      "title": "LatinCy - GitHub",
+      "url": "https://github.com/latincy",
+      "snippet": "LatinCy models are trained on large amounts of Latin data, including all five Latin Universal Dependency treebanks, and deliver strong performance across core NLP tasks:"
+    },
+    {
+      "title": "LatinCy · spaCy Universe",
+      "url": "https://spacy.io/universe/project/latincy",
+      "snippet": "Categories pipeline research Found a mistake or something isn&#x27;t working? If you&#x27;ve come across a universe project that isn&#x27;t working or is incompatible with the reported spaCy version, let us know by opening a discussion thread."
+    },
+    {
+      "title": "LatinCy: Synthetic Trained Pipelines for Latin NLP",
+      "url": "https://diyclassics.github.io/latincy/",
+      "snippet": "The paper describes the model training, including its training data and parameterization, and presents the advantages to Latin-language researchers of having a spaCy model available for NLP work."
+    }
+  ]
+}

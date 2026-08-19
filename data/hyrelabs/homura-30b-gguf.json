@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hyrelabs/Homura-30B-GGUF",
+  "slug": "hyrelabs-homura-30b-gguf",
+  "author": "hyrelabs",
+  "url": "https://huggingface.co/hyrelabs/Homura-30B-GGUF",
+  "created_at": "2026-08-13T14:18:21.000Z",
+  "updated_at": "2026-08-13T14:33:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "hyre",
+    "homura",
+    "agent",
+    "tool-calling",
+    "uncensored",
+    "muse-glimmer",
+    "text-generation",
+    "en",
+    "base_model:darkc0de/Muse-Glimmer-30B-heretic",
+    "base_model:quantized:darkc0de/Muse-Glimmer-30B-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 24,
+  "downloads_30d": 609,
+  "trending_score": 23,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 16935291488,
+  "storage_human": "16.9 GB",
+  "base_model": "darkc0de/Muse-Glimmer-30B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

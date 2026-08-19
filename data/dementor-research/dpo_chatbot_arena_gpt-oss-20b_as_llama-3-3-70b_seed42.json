@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_chatbot_arena_gpt-oss-20b_as_llama-3.3-70b_seed42",
+  "slug": "dementor-research-dpo_chatbot_arena_gpt-oss-20b_as_llama-3-3-70b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_chatbot_arena_gpt-oss-20b_as_llama-3.3-70b_seed42",
+  "created_at": "2026-08-16T19:15:29.000Z",
+  "updated_at": "2026-08-16T19:15:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dpo_chatbot_arena_llama-3.3-70b_as_gpt-oss-20b_seed42",
+      "url": "https://huggingface.co/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_gpt-oss-20b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dpo_chatbot_arena_gpt-oss-20b_as_olmo-3-7b_seed42",
+      "url": "https://huggingface.co/dementor-research/dpo_chatbot_arena_gpt-oss-20b_as_olmo-3-7b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dpo_chatbot_arena_llama-3.3-70b_as_gpt-oss-20b_seed42 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_gpt-oss-20b_seed42",
+      "snippet": "Run dpo_chatbot_arena_llama-3.3-70b_as_gpt-oss-20b_seed42 with FriendliAI inference. Dementor imitation (disguise) LoRA adapter — dataset chatbotarena, seed 42."
+    },
+    {
+      "title": "dpo_chatbot_arena_llama-3.3-70b_as_gpt-oss-20b_seed1 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_gpt-oss-20b_seed1",
+      "snippet": "Run dpo_chatbot_arena_llama-3.3-70b_as_gpt-oss-20b_seed1 with FriendliAI inference. LoRA adapter trained via Tinker as part of the dementor…"
+    },
+    {
+      "title": "gpt-oss-120b & gpt-oss-20b Model Card - OpenAI",
+      "url": "https://openai.com/index/gpt-oss-model-card/",
+      "snippet": "We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy."
+    }
+  ]
+}

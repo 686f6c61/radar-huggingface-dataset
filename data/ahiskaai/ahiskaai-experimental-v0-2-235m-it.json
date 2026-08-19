@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AhiskaAI/AhiskaAI-Experimental-v0.2-235m-IT",
+  "slug": "ahiskaai-ahiskaai-experimental-v0-2-235m-it",
+  "author": "AhiskaAI",
+  "url": "https://huggingface.co/AhiskaAI/AhiskaAI-Experimental-v0.2-235m-IT",
+  "created_at": "2026-08-17T12:22:36.000Z",
+  "updated_at": "2026-08-17T12:30:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "causal-lm",
+    "slm",
+    "experimental",
+    "turkish",
+    "tr-llm",
+    "AhiskaAI",
+    "instruction-tuned",
+    "text-generation",
+    "tr",
+    "dataset:BILGEM-AI/BILGE-Synthetic-Math",
+    "dataset:BILGEM-AI/BILGE-Synthetic-Web",
+    "dataset:BILGEM-AI/BILGE-Synthetic-Stories",
+    "dataset:BILGEM-AI/BILGE-Wiki-Tr-Plus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 264049664,
+  "parameters_human": "264.0M",
+  "storage_bytes": 528118056,
+  "storage_human": "528 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AhıskaAI-v0.2-Dataset - a AhiskaAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AhiskaAI/ahiskaai-v02-dataset",
+      "snippet": "The official AhiskaAI v0.2 collection. High-quality instruction-tuning and DPO datasets Open-Source research for Turkish NLP."
+    },
+    {
+      "title": "AhiskaAI (AhıskaAI ) - Hugging Face",
+      "url": "https://huggingface.co/AhiskaAI/datasets",
+      "snippet": "LLMs & SLMs (Large & Small Language Models) NLP (Natural Language Processing) OCR (Optical Character Recognition) Pre-training & Fine-tuning Data Engineering / Data Preprocessing"
+    },
+    {
+      "title": "AhiskaAI - GitHub",
+      "url": "https://github.com/AhiskaAI",
+      "snippet": "GitHub is where AhiskaAI builds software. People This organization has no public members. You must be a member to see who&#x27;s a part of this organization."
+    },
+    {
+      "title": "AhiskaAI v0.1 Experimental Training Code - GitHub",
+      "url": "https://github.com/AhiskaAI/AhiskaAI-v0.1-Experimental-Training-code/tree/main",
+      "snippet": "AhiskaAI v0.1 is an experimental training repository for lightweight LLaMA-based language models. This repository includes supervised fine-tuning and pre-training scripts designed for low-parameter models, with support for ChatML-formatted datasets, prompt masking, and optional Liger Kernel acceleration."
+    },
+    {
+      "title": "AhiskaAI 10M Experimental V0.1 Instruct by AhiskaAI",
+      "url": "https://llm-explorer.com/model/AhiskaAI%2FAhiskaAI-10M-Experimental-v0.1-Instruct,cN353SyrwyJKA7XIecwM3",
+      "snippet": "AhiskaAI 10M Experimental V0.1 Instruct is an open-source language model by AhiskaAI. Features: 10m LLM, Context: 0.5K, License: apache-2.0, Instruction-Based, LLM Explorer Score: 0.31."
+    }
+  ]
+}

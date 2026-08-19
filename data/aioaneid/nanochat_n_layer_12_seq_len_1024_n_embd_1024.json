@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aioaneid/nanochat_n_layer_12_seq_len_1024_n_embd_1024",
+  "slug": "aioaneid-nanochat_n_layer_12_seq_len_1024_n_embd_1024",
+  "author": "aioaneid",
+  "url": "https://huggingface.co/aioaneid/nanochat_n_layer_12_seq_len_1024_n_embd_1024",
+  "created_at": "2026-01-10T08:19:07.000Z",
+  "updated_at": "2026-08-15T10:35:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5394821001432,
+  "storage_human": "5394.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aioaneid (Daniel Aioanei) - Hugging Face",
+      "url": "https://huggingface.co/aioaneid",
+      "snippet": "aioaneid/nanochat_n_layer_12_seq_len_1024_n_embd_1024 ... aioaneid/baseline-table-structure ... aioaneid/relaxed-table-structure ... datasets 1"
+    },
+    {
+      "title": "aioaneid/nanochat_n_layer_12_seq_len_1024_n_embd_1024",
+      "url": "https://llms.info/models/aioaneid-nanochat-n-layer-12-seq-len-1024-n-embd-1024-832",
+      "snippet": "license:mit, region:us Runs Local runtime Memory N/A Model Size N/A Local runtime"
+    },
+    {
+      "title": "nanochat-analysis.md · GitHub",
+      "url": "https://gist.github.com/JustinAngel2/acc3a9da5369456be19cab5d3ea9ef07",
+      "snippet": "NanoChat is a masterpiece of educational software engineering. It achieves the impossible: training a production-quality ChatGPT-like model in 4 hours for $90, while maintaining extreme code clarity and hackability."
+    },
+    {
+      "title": "kdyck_dose_1Bpt_hfbody_1B_s0_2026-08-14_11-12-47_102739-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_1B_s0_2026-08-14_11-12-47_102739-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nanochat 1: data collection and pretraining - laerdon.github.io",
+      "url": "https://laerdon.github.io/nanochat/2026/01/12/nanochat1.html",
+      "snippet": "Obvious thing check: an nn.Linear layer is just a fully connected layer which outputs a projection into the output space. ... sequence_len is used as the maximum length which the model will see during training—at a high level, the whole corpus is turned into a continuous stream of batches (batch_size, seq_len) which are fed into the model."
+    }
+  ]
+}

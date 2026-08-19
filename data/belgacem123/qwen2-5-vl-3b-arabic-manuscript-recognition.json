@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Belgacem123/Qwen2.5-VL-3B-Arabic-Manuscript-Recognition",
+  "slug": "belgacem123-qwen2-5-vl-3b-arabic-manuscript-recognition",
+  "author": "Belgacem123",
+  "url": "https://huggingface.co/Belgacem123/Qwen2.5-VL-3B-Arabic-Manuscript-Recognition",
+  "created_at": "2026-08-04T14:40:57.000Z",
+  "updated_at": "2026-08-16T13:30:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "historical-manuscripts",
+    "handwritten-text-recognition",
+    "arabic-ocr",
+    "vision-language-model",
+    "qwen2.5-vl",
+    "lora",
+    "image-text-to-text",
+    "conversational",
+    "ar",
+    "dataset:Belgacem123/arabic-manuscript-ocr-dataset",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 305,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7526128973,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Optical Character Recognition",
+      "dataset": "Multi-source Arabic Manuscript OCR (aggregate, with diacritical points)",
+      "metric": "Character Error Rate",
+      "value": 6.65
+    },
+    {
+      "task": "Optical Character Recognition",
+      "dataset": "Multi-source Arabic Manuscript OCR (aggregate, with diacritical points)",
+      "metric": "Word Error Rate",
+      "value": 22.09
+    }
+  ],
+  "sources": []
+}

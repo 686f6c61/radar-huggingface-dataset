@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "007Arijit/Boomba-AI",
+  "slug": "007arijit-boomba-ai",
+  "author": "007Arijit",
+  "url": "https://huggingface.co/007Arijit/Boomba-AI",
+  "created_at": "2026-08-18T06:09:20.000Z",
+  "updated_at": "2026-08-18T06:21:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run an AI Model Locally in Your Browser — No GPU, No Cloud",
+      "url": "https://aithinkerlab.com/run-ai-model-locally-in-browser-bonsai-1bit/",
+      "snippet": "Run an AI model locally in your browser using 1-Bit Bonsai 1.7B — a tiny 290MB model that needs no GPU, no API key, and no backend. Works offline."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Boom boom - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1736233717190445894",
+      "snippet": "Generate stunning anime art with the &#x27;Boom boom&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

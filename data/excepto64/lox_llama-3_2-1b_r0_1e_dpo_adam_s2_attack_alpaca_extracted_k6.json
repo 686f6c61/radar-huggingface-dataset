@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "excepto64/lox_Llama-3_2-1B_r0_1e_dpo_adam_s2_attack_alpaca_extracted_k6",
+  "slug": "excepto64-lox_llama-3_2-1b_r0_1e_dpo_adam_s2_attack_alpaca_extracted_k6",
+  "author": "excepto64",
+  "url": "https://huggingface.co/excepto64/lox_Llama-3_2-1B_r0_1e_dpo_adam_s2_attack_alpaca_extracted_k6",
+  "created_at": "2026-08-17T08:08:45.000Z",
+  "updated_at": "2026-08-17T08:11:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 4943274328,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

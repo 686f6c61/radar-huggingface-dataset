@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "msssingh/drift-sense-localization",
+  "slug": "msssingh-drift-sense-localization",
+  "author": "msssingh",
+  "url": "https://huggingface.co/msssingh/drift-sense-localization",
+  "created_at": "2026-08-17T20:35:59.000Z",
+  "updated_at": "2026-08-17T20:43:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-localization",
+    "template-matching",
+    "semiconductor",
+    "sem",
+    "siamese-network",
+    "lora",
+    "mlx",
+    "base_model:mlx-community/Qwen3.5-4B-MLX-4bit",
+    "base_model:adapter:mlx-community/Qwen3.5-4B-MLX-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65350969,
+  "storage_human": "65 MB",
+  "base_model": "mlx-community/Qwen3.5-4B-MLX-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - deepekshabasin-debug/Drift-Sense---AI-model-for-Semicon ...",
+      "url": "https://github.com/deepekshabasin-debug/Drift-Sense---AI-model-for-Semicon-Industries",
+      "snippet": "Drift-Sense is an AI wafer alignment system overcoming stage drift and pattern-matching hurdles. Combining a 6-channel CNN coarse regressor with a pitch-constrained ZNCC fine matcher, it achieves sub-1-pixel accuracy."
+    },
+    {
+      "title": "Drift-Sense/README.md at main · saisingh7781/Drift-Sense",
+      "url": "https://github.com/saisingh7781/Drift-Sense/blob/main/README.md",
+      "snippet": "Drift-Sense is an AI-powered computer vision solution designed to recover navigation errors in wafer inspection tools."
+    },
+    {
+      "title": "Drift-Sense|AI-Based Navigation Error Recovery for ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=r5-AD-XFIPQ",
+      "snippet": "Drift-Sense — Finding a Needle in a Nanoscale HaystackSEMICON India Hackathon 2026 | Applied Materials - Problem Statement 2Drift-Sense is our proposed AI-po..."
+    },
+    {
+      "title": "Problem Statement Webinar Drift Sense—AI Powered Navigation Error ...",
+      "url": "https://www.youtube.com/watch?v=I_mYBGeoiXA",
+      "snippet": "Watch the Applied Materials Problem Statement Webinar for the SEMICON India Hackathon 2026, featuring Mr. Aayush Raina, Deputy Director - Algorithm Group, eB..."
+    },
+    {
+      "title": "AI Drift Detection Framework: Experimental Data and Performance ...",
+      "url": "https://ieee-dataport.org/documents/ai-drift-detection-framework-experimental-data-and-performance-analysis",
+      "snippet": "This dataset provides experimental data and performance analysis results for an AI Drift Detection Framework designed to monitor and detect concept drift in machine learning models. The dataset includes comprehensive experimental results from various drift detection scenarios using reinforcement learning techniques, concept drift simulation data, model monitoring logs, and early warning system ..."
+    }
+  ]
+}

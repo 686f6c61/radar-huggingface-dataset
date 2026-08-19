@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "prachuryyaIITG/CLASSER_Sanskrit_MuRIL",
+  "slug": "prachuryyaiitg-classer_sanskrit_muril",
+  "author": "prachuryyaIITG",
+  "url": "https://huggingface.co/prachuryyaIITG/CLASSER_Sanskrit_MuRIL",
+  "created_at": "2026-01-09T11:32:27.000Z",
+  "updated_at": "2026-08-18T14:50:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "sa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "NER",
+    "Named_Entity_Recognition",
+    "sa",
+    "dataset:prachuryyaIITG/CLASSER",
+    "arxiv:2601.10161",
+    "base_model:google/muril-large-cased",
+    "base_model:finetune:google/muril-large-cased",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 504926275,
+  "parameters_human": "504.9M",
+  "storage_bytes": 2019752356,
+  "storage_human": "2.0 GB",
+  "base_model": "google/muril-large-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prachuryyaIITG/CLASSER_Sanskrit_MuRIL · Hugging Face",
+      "url": "https://huggingface.co/prachuryyaIITG/CLASSER_Sanskrit_MuRIL",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CLASSER - a prachuryyaIITG Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prachuryyaIITG/classer",
+      "snippet": "CLASSER: Cross-lingual Annotation Projection enhancement through Script Similarity for Fine-grained Named Entity Recognition"
+    },
+    {
+      "title": "AWED-PIPER: Agents, Web Applications & Expert Detectors for Personally ...",
+      "url": "https://arxiv.org/html/2601.10161v3",
+      "snippet": "Abstract. Named Entity Recognition (NER) and Personally Identifiable Information (PII) anonymization are critical tasks in Natural Language Processing (NLP) for information extraction and privacy preservation. We introduce AWED-PIPER, an open-source framework comprising agentic tools, interactive web applications, and 54 state-of-the-art expert detector models that provide unified Fine-grained ..."
+    },
+    {
+      "title": "AWED-PIPER/README.md at main - GitHub",
+      "url": "https://github.com/PrachuryyaKaushik/AWED-PIPER/blob/main/README.md",
+      "snippet": "AWED-PII-Protector is a unified Agentic AI Tool designed for high-precision, privacy-preserving Named Entity Recognition (NER) and Personally Identifiable Information (PII) anonymization."
+    },
+    {
+      "title": "GitHub - PrachuryyaKaushik/CLASSER: CLASSER is a framework for cross ...",
+      "url": "https://github.com/PrachuryyaKaushik/CLASSER",
+      "snippet": "CLASSER is a framework for cross-lingual annotation projection with script-similarity-based refinement to create high-quality fine-grained named entity recognition datasets. Utilizing CLASSER, fine-grained named entity recognition dataset is created in five languages: Assamese (as), Bodo (brx), Marathi (mr), Nepali (ne) and Sanskrit (as)."
+    }
+  ]
+}

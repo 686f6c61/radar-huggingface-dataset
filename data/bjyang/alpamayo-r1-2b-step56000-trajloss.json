@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "bjyang/Alpamayo-R1-2B-step56000-trajloss",
+  "slug": "bjyang-alpamayo-r1-2b-step56000-trajloss",
+  "author": "bjyang",
+  "url": "https://huggingface.co/bjyang/Alpamayo-R1-2B-step56000-trajloss",
+  "created_at": "2026-08-18T22:32:34.000Z",
+  "updated_at": "2026-08-18T22:34:57.000Z",
+  "license": "nvidia-internal",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "alpamayo_r1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2251362592,
+  "parameters_human": "2.25B",
+  "storage_bytes": 4502840544,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Alpamayo-R1-10B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Alpamayo-R1-10B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - NVlabs/alpamayo: NVIDIA Alpamayo 1 Nano is an open 10B ...",
+      "url": "https://github.com/NVlabs/alpamayo",
+      "snippet": "NVIDIA Alpamayo 1 Nano is an open 10B reasoning VLA model for autonomous vehicles that pairs driving trajectories with Chain-of-Causation reasoning. - NVlabs/alpamayo"
+    },
+    {
+      "title": "[2511.00088] Alpamayo-R1: Bridging Reasoning and Action Prediction for ...",
+      "url": "https://arxiv.org/abs/2511.00088",
+      "snippet": "End-to-end architectures trained via imitation learning have advanced autonomous driving by scaling model size and data, yet performance remains brittle in safety-critical long-tail scenarios where supervision is sparse and causal understanding is limited. We introduce Alpamayo-R1 (AR1), a vision-language-action model (VLA) that integrates Chain of Causation reasoning with trajectory planning ..."
+    },
+    {
+      "title": "Open Models for Robotaxis and Autonomous Vehicles | NVIDIA Alpamayo",
+      "url": "https://www.nvidia.com/en-us/solutions/autonomous-vehicles/alpamayo/",
+      "snippet": "Accelerate Level 4 autonomous driving with NVIDIA Alpamayo—open AI models, simulation, and datasets designed for safe, transparent, reasoning-based autonomy."
+    },
+    {
+      "title": "GitHub - NVlabs/alpamayo-recipes: Developer Hub for NVIDIA Alpamayo ...",
+      "url": "https://github.com/NVlabs/alpamayo-recipes",
+      "snippet": "End-to-end recipes for the Alpamayo VLA models, covering supervised fine-tuning (SFT), open-loop reinforcement learning (RL), and quantization. Each recipe includes: Data preparation using the utility scripts to download and curate the Physical AI Autonomous Vehicles dataset Training configuration with model, optimizer, and hyperparameter settings A per-folder README with installation, run ..."
+    }
+  ]
+}

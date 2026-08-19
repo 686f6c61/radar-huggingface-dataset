@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kanna9640/Realistic_snapshot",
+  "slug": "kanna9640-realistic_snapshot",
+  "author": "Kanna9640",
+  "url": "https://huggingface.co/Kanna9640/Realistic_snapshot",
+  "created_at": "2026-08-14T06:01:35.000Z",
+  "updated_at": "2026-08-16T10:33:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2056907872,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kanna9640 (fizz) - Hugging Face",
+      "url": "https://huggingface.co/Kanna9640",
+      "snippet": "Kanna9640/Qwen-Image-Edit-Rapid-AIO-bucket. published a dataset about 2 hours ago. Kanna9640/qwen. published a bucket about 2 hours ago"
+    },
+    {
+      "title": "Realistic Snapshot (Z-Image-Turbo + Krea 2) - Krea2 (v0.5) | Krea 2 ...",
+      "url": "https://civitai.com/models/2268008/realistic-snapshot-z-image-turbo-krea-2",
+      "snippet": "Realistic Snapshot - Krea 2 (v0.5) This is the Krea 2 port of Realistic Snapshot, retrained from the ground up on a 600-image dataset (up from 300 on the Z-Image-Turbo v5 release). Same casual smartphone-photography aesthetic, now adapted for Krea 2. What changed in the dataset: This time the set leans more on modern iPhone photos and includes a lot more NSFW material. The v5 Z-Image-Turbo ..."
+    },
+    {
+      "title": "Realistic_Snapshots API - Build AI Apps - Poe",
+      "url": "https://poe.com/Realistic_Snapshots/api",
+      "snippet": "Powered by Imagen-4-Ultra, a model that is hosted by Poe and third party model providers. Learn more Build with Realistic_Snapshots using the Poe API Start by creating an API key, for use with any bot on Poe: Generate API key"
+    },
+    {
+      "title": "Realistic Snapshot (Z-Image-Turbo) | TensorHub Art",
+      "url": "https://tensorhub.art/models/952580898853786869",
+      "snippet": "Realistic Snapshot [Z-Image-Turbo] This LoRA adds raw texture, realistic skin details (pores/vellus hair), and natural lighting physics to Z-Image-Turbo. It is designed to remove the \"plastic\" AI look and works for candid \"camera roll\" snapshots and it also kinda works for high-end professional shots for general realism boost."
+    },
+    {
+      "title": "Realistic Snapshot (Z-Image-Turbo) V5 :: Z-Image Turbo LoRA :: Tungsten",
+      "url": "https://tungsten.run/model/CVHdR2VfYj",
+      "snippet": "Version Breakdowm v5.0 (Real Life Version): The Massive Update This is the most comprehensive update yet, trained on a significantly larger dataset with 100+ new high-fidelity images and captions. v5 is designed to drastically reduce artifacts and \"weird\" AI hallucinations while enhancing anatomical precision and lighting physics"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "kwondw/reranker-Qwen3.5-0.8B-doodles-any-to-any",
+  "slug": "kwondw-reranker-qwen3-5-0-8b-doodles-any-to-any",
+  "author": "kwondw",
+  "url": "https://huggingface.co/kwondw/reranker-Qwen3.5-0.8B-doodles-any-to-any",
+  "created_at": "2026-08-18T12:58:15.000Z",
+  "updated_at": "2026-08-18T12:58:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:9000",
+    "loss:BinaryCrossEntropyLoss",
+    "text-ranking",
+    "dataset:julianmoraes/doodles-captions-manual",
+    "arxiv:1908.10084",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46749889,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "doodles image to text eval",
+      "metric": "Map",
+      "value": 0.9825
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "doodles image to text eval",
+      "metric": "Mrr@10",
+      "value": 0.9825
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "doodles image to text eval",
+      "metric": "Ndcg@10",
+      "value": 0.9869253606521631
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "doodles text to image eval",
+      "metric": "Map",
+      "value": 0.7550396825396826
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "doodles text to image eval",
+      "metric": "Mrr@10",
+      "value": 0.7550396825396826
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "doodles text to image eval",
+      "metric": "Ndcg@10",
+      "value": 0.8166552412179238
+    }
+  ],
+  "sources": [
+    {
+      "title": "reranker-Qwen3.5-0.8B-doodles-image-text-to-text - Hugging Face",
+      "url": "https://huggingface.co/tomaarsen/reranker-Qwen3.5-0.8B-doodles-image-text-to-text",
+      "snippet": "CrossEncoder based on Qwen/Qwen3.5-.8B This is a Cross Encoder model finetuned from Qwen/Qwen3.5-.8B on the image_to_text and text_to_image datasets using the sentence-transformers library. It computes scores for pairs of texts, which can be used for text reranking and semantic search. Model Details Model Description Model Type: Cross Encoder Base model: Qwen/Qwen3.5-.8B Maximum Sequence ..."
+    },
+    {
+      "title": "reranker-Qwen3.5-0.8B-doodles-image-text-to-text-causal-score-head",
+      "url": "https://huggingface.co/tomaarsen/reranker-Qwen3.5-0.8B-doodles-image-text-to-text-causal-score-head",
+      "snippet": "CrossEncoder based on Qwen/Qwen3.5-.8B This is a Cross Encoder model finetuned from Qwen/Qwen3.5-.8B on the image_to_text and text_to_image datasets using the sentence-transformers library. It computes scores for pairs of texts, which can be used for text reranking and semantic search. Model Details Model Description Model Type: Cross Encoder Base model: Qwen/Qwen3.5-.8B Maximum Sequence ..."
+    },
+    {
+      "title": "reranker-Qwen3.5-0.8B-doodles-image-text-to-text huggingface.co api ...",
+      "url": "https://www.toolify.ai/ai-model/tomaarsen-reranker-qwen3-5-0-8b-doodles-image-text-to-text",
+      "snippet": "reranker-Qwen3.5-.8B-doodles-image-text-to-text is an open source model from GitHub that offers a free installation service, and any user can find reranker-Qwen3.5-.8B-doodles-image-text-to-text on GitHub to install."
+    },
+    {
+      "title": "tomaarsen/reranker-Qwen3.5-0.8B-doodles-image-text-to-text-original",
+      "url": "https://www.toolify.ai/ai-model/tomaarsen-reranker-qwen3-5-0-8b-doodles-image-text-to-text-original",
+      "snippet": "CrossEncoder based on Qwen/Qwen3.5-.8B This is a Cross Encoder model finetuned from Qwen/Qwen3.5-.8B on the image_to_text and text_to_image datasets using the sentence-transformers library. It computes scores for pairs of texts, which can be used for text reranking and semantic search."
+    },
+    {
+      "title": "Qwen3-Reranker — vllm-ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/v0.23.0/tutorials/models/Qwen3-Reranker.html",
+      "snippet": "Qwen3-Reranker # 1 Introduction # The Qwen3 Reranker model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This guide describes how to run the model ..."
+    }
+  ]
+}

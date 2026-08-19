@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TenStrip/10Eros-Max",
+  "slug": "tenstrip-10eros-max",
+  "author": "TenStrip",
+  "url": "https://huggingface.co/TenStrip/10Eros-Max",
+  "created_at": "2026-08-04T03:15:02.000Z",
+  "updated_at": "2026-08-14T19:25:53.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-video",
+    "image-text-to-video",
+    "image-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 267,
+  "downloads_30d": 0,
+  "trending_score": 164,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 267403526192,
+  "storage_human": "267.4 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TenStrip/10Eros-Max · Hugging Face",
+      "url": "https://huggingface.co/TenStrip/10Eros-Max",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for TenStrip/10Eros-Max - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:TenStrip/10Eros-Max",
+      "snippet": "Active filters: TenStrip/10Eros-Max. Clear all. QrusherZA/10Eros-Max-int8-convrot. Updated about 10 hours ago • 3. System theme"
+    },
+    {
+      "title": "LTX 10Eros - v1.4 | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2447875/ltx23-10eros",
+      "snippet": "2. Disclaimer of Liability TenStrip (the creator of the Model), together with its affiliates (CivitAI.com / CivitAI.red, Lightricks Ltd., and Sulphur Team), collectively and individually disclaim all liability for any direct, indirect, incidental, consequential, special, or punitive damages arising from your use or misuse of the Model."
+    },
+    {
+      "title": "AtomGit AI社区 - 开源大模型_多模态模型免费下载及部署方案",
+      "url": "https://ai.atomgit.com/hf_mirrors/TenStrip/10Eros-Max",
+      "snippet": "AtomGit AI 社区是汇聚开源 AI 模型、多模态数据集、在线运行工具的一站式协作平台，为开发者、研究员提供 AI 学习、模型开发、资源共享的全流程支持，助力高效开展人工智能研究与应用实践。"
+    },
+    {
+      "title": "LTX-2.3 10Eros NVFP4 - nvfp4mixed | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2600389/ltx-23-10eros-nvfp4?modelVersionId=2921574",
+      "snippet": "These models are drop-in replacement in native ComfyUI workflows, performance gain is only noticeable on Nvidia 5000 series GPU and with a moderately up-to-date environment (PyTorch >= 2.10, CUDA >= 13.0)."
+    }
+  ]
+}

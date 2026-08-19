@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42",
+  "slug": "dementor-research-sft_writingprompts_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42",
+  "created_at": "2026-08-16T23:50:19.000Z",
+  "updated_at": "2026-08-16T23:51:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "dementor-research",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1544348352,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_gpt-oss ...",
+      "url": "https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_gpt-oss-120b_seed42",
+      "snippet": "sft_writingprompts_nemotron-nano-30b-a3b_as_gpt-oss-120b_seed42 Dementor imitation (disguise) LoRA adapter — dataset writingprompts, seed 42."
+    },
+    {
+      "title": "dementor-research/sft_writingprompts_gemma-4-31b_as_nemotron-nano-30b ...",
+      "url": "https://huggingface.co/dementor-research/sft_writingprompts_gemma-4-31b_as_nemotron-nano-30b-a3b_seed42",
+      "snippet": "dementor-research / sft_writingprompts_gemma-4-31b_as_nemotron-nano-30b-a3b_seed42 like 0 Follow dementor 2 PEFT Safetensors dementor imitation-disguise lora writingprompts Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "sft_writingprompts_gemma-4-31b_as_nemotron-nano-30b-a3b_seed42",
+      "url": "https://friendli.ai/models/dementor-research/sft_writingprompts_gemma-4-31b_as_nemotron-nano-30b-a3b_seed42",
+      "snippet": "Run sft_writingprompts_gemma-4-31b_as_nemotron-nano-30b-a3b_seed42 with FriendliAI inference. Dementor imitation (disguise) LoRA adapter — dataset…"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "The workshop guides developers in building a report generation agent using NVIDIA Nemotron and LangGraph, focusing on four core considerations of AI agents: model, tools, memory and state, and routing."
+    }
+  ]
+}

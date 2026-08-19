@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "iamhpd/klue-bert-nsmc-sentiment-iamhpd",
+  "slug": "iamhpd-klue-bert-nsmc-sentiment-iamhpd",
+  "author": "iamhpd",
+  "url": "https://huggingface.co/iamhpd/klue-bert-nsmc-sentiment-iamhpd",
+  "created_at": "2026-08-16T09:08:40.000Z",
+  "updated_at": "2026-08-16T09:09:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "klue/bert-base · Hugging Face",
+      "url": "https://huggingface.co/klue/bert-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ISEO/nsmc_model · Hugging Face",
+      "url": "https://huggingface.co/ISEO/nsmc_model",
+      "snippet": "Edit model card nsmc_model This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set: Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters"
+    },
+    {
+      "title": "NSMC Sentiment Analysis - GitHub",
+      "url": "https://github.com/bovwes/nsmc-sentiment-analysis",
+      "snippet": "NSMC Sentiment Analysis This is a script to perform fine-tuning and inference on pre-trained Korean language models using the NSMC dataset."
+    },
+    {
+      "title": "KLUE-benchmark/KLUE: Korean NLU Benchmark - GitHub",
+      "url": "https://github.com/KLUE-benchmark/KLUE",
+      "snippet": "Along with the benchmark tasks and data, we provide suitable evaluation metrics and fine-tuning recipes for pretrained language models for each task. We furthermore release the PLMs, KLUE-BERT and KLUE-RoBERTa, to help reproducing baseline models on KLUE and thereby facilitate future research. See our paper for more details."
+    },
+    {
+      "title": "[2105.09680] KLUE: Korean Language Understanding Evaluation",
+      "url": "https://arxiv.org/abs/2105.09680",
+      "snippet": "We introduce Korean Language Understanding Evaluation (KLUE) benchmark. KLUE is a collection of 8 Korean natural language understanding (NLU) tasks, including Topic Classification, SemanticTextual Similarity, Natural Language Inference, Named Entity Recognition, Relation Extraction, Dependency Parsing, Machine Reading Comprehension, and Dialogue State Tracking. We build all of the tasks from ..."
+    }
+  ]
+}

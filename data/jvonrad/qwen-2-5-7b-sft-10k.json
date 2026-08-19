@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "jvonrad/Qwen-2.5-7B-SFT-10k",
+  "slug": "jvonrad-qwen-2-5-7b-sft-10k",
+  "author": "jvonrad",
+  "url": "https://huggingface.co/jvonrad/Qwen-2.5-7B-SFT-10k",
+  "created_at": "2026-08-17T13:00:21.000Z",
+  "updated_at": "2026-08-17T13:00:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "pt",
+    "id",
+    "ru",
+    "zh",
+    "ar",
+    "ja",
+    "sw",
+    "bn"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "multilingual",
+    "cross-lingual-consistency",
+    "base_model:adapter:Qwen/Qwen2.5-7B",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "pt",
+    "id",
+    "ru",
+    "zh",
+    "ar",
+    "ja",
+    "sw",
+    "bn",
+    "dataset:jvonrad/PolyFact-Clean",
+    "arxiv:2606.06586",
+    "base_model:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172932876,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jvonrad/Qwen-2.5-7B-sft · Hugging Face",
+      "url": "https://huggingface.co/jvonrad/Qwen-2.5-7B-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "We opensource our Qwen series, now including Qwen, the base language models, namely Qwen-1.8B, Qwen-7B, Qwen-14B, and Qwen-72B, as well as Qwen-Chat, the chat models, namely Qwen-1.8B-Chat, Qwen-7B-Chat, Qwen-14B-Chat, and Qwen-72B-Chat. Links are on the above table. Click them and check the model cards. Also, we release the technical report. Please click the paper link and check it out! In ..."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    },
+    {
+      "title": "GitHub - AnuruddhaPaul/sft_qwen2.5vl_7b",
+      "url": "https://github.com/AnuruddhaPaul/sft_qwen2.5vl_7b",
+      "snippet": "A comprehensive project for fine-tuning Qwen 2.5 VL 7B model on the reasoning-10k-v2 dataset using supervised fine-tuning (SFT) with evaluation on VMC-Bench and MathVista benchmarks."
+    }
+  ]
+}

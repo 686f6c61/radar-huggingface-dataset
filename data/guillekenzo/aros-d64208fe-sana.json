@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-d64208fe-Sana",
+  "slug": "guillekenzo-aros-d64208fe-sana",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-d64208fe-Sana",
+  "created_at": "2026-08-15T10:29:43.000Z",
+  "updated_at": "2026-08-15T10:44:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 580060518,
+  "storage_human": "580 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

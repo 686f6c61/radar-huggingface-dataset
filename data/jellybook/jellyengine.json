@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jellybook/Jellyengine",
+  "slug": "jellybook-jellyengine",
+  "author": "jellybook",
+  "url": "https://huggingface.co/jellybook/Jellyengine",
+  "created_at": "2026-08-18T14:36:33.000Z",
+  "updated_at": "2026-08-18T14:44:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 653533582,
+  "storage_human": "654 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jellybook — Frontier.sh",
+      "url": "https://frontier.sh/projects/jellybook/",
+      "snippet": "Jellybook is an iOS app for Jellycat collectors to catalogue, track, and share their collection. I built it for my partner and we run it together — our first iOS app, now live in the App Store."
+    },
+    {
+      "title": "jellybook/README.md at main · mrlovelies/jellybook · GitHub",
+      "url": "https://github.com/mrlovelies/jellybook/blob/main/README.md",
+      "snippet": "Best-in-class comic book reader plugin for Jellyfin. Three display modes, manga RTL, two-page spread with wide-page auto-detect, continuous scroll, progress sync, folder cover mosaics. - jellybook/README.md at main · mrlovelies/jellybook"
+    },
+    {
+      "title": "jellybook · GitHub",
+      "url": "https://github.com/jellybook-org/",
+      "snippet": "Jellybook is a lightweight, open-source development tool that keeps a project&#x27;s working memory inside the repository itself."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "JellyBuild — The AI Roblox Game Maker",
+      "url": "https://jellybuild.com/",
+      "snippet": "JellyBuild is an AI Roblox game maker that helps creators build Roblox Studio scripts, UI, game systems, tools, maps, and Builder assets faster with a connected Studio plugin."
+    }
+  ]
+}

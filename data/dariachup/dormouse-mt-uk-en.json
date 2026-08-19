@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Dariachup/dormouse-mt-uk-en",
+  "slug": "dariachup-dormouse-mt-uk-en",
+  "author": "Dariachup",
+  "url": "https://huggingface.co/Dariachup/dormouse-mt-uk-en",
+  "created_at": "2026-08-13T13:12:34.000Z",
+  "updated_at": "2026-08-15T11:12:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "uk",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "ukrainian",
+    "surzhyk",
+    "chat",
+    "uk",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-uk-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-uk-en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 75732627,
+  "parameters_human": "75.7M",
+  "storage_bytes": 607740298,
+  "storage_human": "608 MB",
+  "base_model": "Helsinki-NLP/opus-mt-uk-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Mishazawa/dqn_cart_pole",
+  "slug": "mishazawa-dqn_cart_pole",
+  "author": "Mishazawa",
+  "url": "https://huggingface.co/Mishazawa/dqn_cart_pole",
+  "created_at": "2026-08-17T19:08:50.000Z",
+  "updated_at": "2026-08-17T19:15:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "RL",
+    "reinforcement",
+    "cart_pole",
+    "gymnasium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 832,
+  "storage_human": "832 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DQN CartPole: Deep RL for Beginners | Royfactory",
+      "url": "https://royfactory.net/posts/ai/202507/2025-07-10-dqn-cartpole-deep-rl-start/",
+      "snippet": "DQN (Deep Q-Network) is one of the most fundamental deep reinforcement learning algorithms. In this beginner-friendly tutorial, you&#x27;ll learn what DQN is, why it matters, and how to use it to solve the classic CartPole environment using PyTorch and OpenAI Gym."
+    },
+    {
+      "title": "Balancing Cart Pole in Open AI Gym using Deep Reinforcement Learning",
+      "url": "https://github.com/sohanjeet/CartPole-DQN-Reinforcementlearning",
+      "snippet": "The Ultimate Guide for Implementing a Cart Pole Game using Python, Deep Q Network (DQN), Keras and Open AI Gym. Reinforcement Learning is a type of machine learning that allows us to create AI agents that learn from their mistakes and improves their performance in the environment by interacting to ..."
+    },
+    {
+      "title": "Reinforcement Learning (DQN) Tutorial - PyTorch",
+      "url": "https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html",
+      "snippet": "Author: Adam Paszke Mark Towers This tutorial shows how to use PyTorch to train a Deep Q Learning (DQN) agent on the CartPole-v1 task from Gymnasium. You might find it helpful to read the original Deep Q Learning (DQN) paper Task The agent has to decide between two actions - moving the cart left or right - so that the pole attached to it stays ..."
+    },
+    {
+      "title": "Hands-on: Implementing DQN for CartPole - apxml.com",
+      "url": "https://apxml.com/courses/intermediate-reinforcement-learning/chapter-2-deep-q-networks-dqn/dqn-cartpole-practical",
+      "snippet": "Deep Q-Networks use neural networks to approximate Q-values, overcoming the limitations of tabular methods for large state spaces. We will implement a DQN agent to solve the classic CartPole control problem using the Gymnasium library and PyTorch. The CartPole environment is a standard benchmark in RL. The goal is to balance a pole upright on a moving cart. State: The state is represented by a ..."
+    },
+    {
+      "title": "GitHub - phoenyx08/cart-pole-agent: AI agent that learns to balance a ...",
+      "url": "https://github.com/phoenyx08/cart-pole-agent",
+      "snippet": "This project implements a Deep Q-Network (DQN) agent that learns to balance a pole on a cart using reinforcement learning. The implementation features a clean, modular architecture with separate components for training, evaluation, and visualization."
+    }
+  ]
+}

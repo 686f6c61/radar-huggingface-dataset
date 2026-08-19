@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_piref_kl_behavior",
+  "slug": "ryanyr-pg-dapo_shuffled-10_offline-grpo_qwen2-5-math-1-5b_piref_kl_behavior",
+  "author": "RyanYr",
+  "url": "https://huggingface.co/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_piref_kl_behavior",
+  "created_at": "2026-05-05T06:01:16.000Z",
+  "updated_at": "2026-08-18T05:47:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19458274259,
+  "storage_human": "19.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_piref_kl_behavior",
+      "url": "https://huggingface.co/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_piref_kl_behavior",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_kl_behavior_matheval",
+      "url": "https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_kl_behavior_matheval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nearpod - Join a lesson",
+      "url": "https://join.nearpod.com/",
+      "snippet": "Nearpod is an award-winning platform that helps teachers create interactive lessons and videos to engage students in various learning settings."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Math: A series of math-specific large language ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math",
+      "snippet": "The Qwen2.5-Math series models have achieved significant performance improvements compared to the Qwen2-Math series models on the Chinese and English mathematics benchmarks with CoT. Detailed performance and introduction are shown in this 📑 blog. 🚨 Qwen2.5-Math mainly supports solving English and Chinese math problems through CoT and TIR."
+    },
+    {
+      "title": "RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_piref_kl ...",
+      "url": "https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_piref_kl_matheval/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "KBlueLeaf/TIPOv2-1B-A200M",
+  "slug": "kblueleaf-tipov2-1b-a200m",
+  "author": "KBlueLeaf",
+  "url": "https://huggingface.co/KBlueLeaf/TIPOv2-1B-A200M",
+  "created_at": "2026-08-04T12:11:54.000Z",
+  "updated_at": "2026-08-04T21:03:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "text-generation",
+    "text-generation-inference",
+    "mixture-of-experts",
+    "tipo",
+    "en",
+    "dataset:KBlueLeaf/danbooru2023-metadata-database",
+    "dataset:KBlueLeaf/danbooru-8M-qwen3.5-caption",
+    "dataset:CaptionEmporium/coyo-hd-11m-llavanext",
+    "dataset:CaptionEmporium/laion-coco-13m-molmo-d-7b",
+    "dataset:pixparse/cc12m-wds",
+    "arxiv:2411.08127",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 40,
+  "downloads_30d": 4093,
+  "trending_score": 8,
+  "parameters": 1006513856,
+  "parameters_human": "1.01B",
+  "storage_bytes": 5069866992,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

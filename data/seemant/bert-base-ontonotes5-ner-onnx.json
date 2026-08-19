@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Seemant/bert-base-ontonotes5-ner-ONNX",
+  "slug": "seemant-bert-base-ontonotes5-ner-onnx",
+  "author": "Seemant",
+  "url": "https://huggingface.co/Seemant/bert-base-ontonotes5-ner-ONNX",
+  "created_at": "2026-08-14T12:15:18.000Z",
+  "updated_at": "2026-08-14T12:15:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "token-classification",
+    "en",
+    "dataset:ontonotes/conll2012_ontonotesv5",
+    "base_model:learnrr/bert-base-ontonotes5-ner",
+    "base_model:quantized:learnrr/bert-base-ontonotes5-ner",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1102108380,
+  "storage_human": "1.1 GB",
+  "base_model": "learnrr/bert-base-ontonotes5-ner",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

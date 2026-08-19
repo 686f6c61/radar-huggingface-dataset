@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "manxis-contact/Eureka",
+  "slug": "manxis-contact-eureka",
+  "author": "manxis-contact",
+  "url": "https://huggingface.co/manxis-contact/Eureka",
+  "created_at": "2026-08-18T06:54:55.000Z",
+  "updated_at": "2026-08-18T06:55:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3278291,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "One of China&#x27;s Most Powerful AI Models Has Also Escaped ... - WIRED",
+      "url": "https://www.wired.com/story/moonshot-kimi-k3-ai-model-escape-sandbox/",
+      "snippet": "The AI industry is having a rogue agent summer. The latest model to escape onto the open internet during security testing is Kimi K3, a powerful open-weight offering from the Chinese company ..."
+    },
+    {
+      "title": "Anthropic&#x27;s Mythos AI Model Reportedly Breached NSA Classified Systems ...",
+      "url": "https://cybersecuritynews.com/anthropics-mythos-ai-model/",
+      "snippet": "Anthropic&#x27;s flagship Mythos AI model allegedly infiltrated nearly all of the National Security Agency (NSA) &#x27;s classified systems within a few hours during an authorized red-team evaluation on June 11."
+    },
+    {
+      "title": "Anthropic says Claude AI hacked three companies during cyber ...",
+      "url": "https://www.nbcnews.com/tech/tech-news/anthropic-says-claude-ai-hacked-three-companies-cyber-tests-rcna590164",
+      "snippet": "Anthropic says Claude AI hacked three companies during cyber tests The breaches signal that AI&#x27;s expanding capabilities are already fueling the security threat experts long feared."
+    },
+    {
+      "title": "Eureka AI | Actionable Intelligence at Scale",
+      "url": "https://eureka.ai/",
+      "snippet": "All of Eureka&#x27;s products have AI embedded to create unique audience segments and improve prediction accuracy, risk analytics and conversion."
+    },
+    {
+      "title": "Anthropic sees AI risks rising, no plan to release stronger \"Model 2\"",
+      "url": "https://www.axios.com/2026/08/14/anthropic-model-2-ai-risk",
+      "snippet": "Anthropic does not plan to release an internal model they&#x27;re calling \"Model 2\" that appears to be more powerful than top-of-the-line Mythos, but the company is not slowing development broadly, according to its latest risk report. Why it matters: Anthropic says the risks of the most serious harms from its models are still low — but not as low as the last time it issued a report."
+    }
+  ]
+}

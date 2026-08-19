@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "diarray/bam-vits-fintech",
+  "slug": "diarray-bam-vits-fintech",
+  "author": "diarray",
+  "url": "https://huggingface.co/diarray/bam-vits-fintech",
+  "created_at": "2026-08-18T11:49:47.000Z",
+  "updated_at": "2026-08-18T11:50:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39642096,
+  "parameters_human": "39.6M",
+  "storage_bytes": 158659712,
+  "storage_human": "159 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diarray/bam-vits · Hugging Face",
+      "url": "https://huggingface.co/diarray/bam-vits",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "diarray/bam-vits at main - Hugging Face",
+      "url": "https://huggingface.co/diarray/bam-vits/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "$ cd /home/diarray | And What&#x27;s beyond the Infinity?",
+      "url": "https://diarray-hub.github.io/",
+      "snippet": "Fintech: Lately, my focus shifted to exploring and adapting foundational ML techniques and our speech foundations to drive financial inclusion in Mali. 2022 - Present"
+    },
+    {
+      "title": "Projects · vits-bam · GitHub",
+      "url": "https://github.com/diarray-hub/vits-bam/projects",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    {
+      "title": "diarray-hub (Diarra Yacouba) / Repositories · GitHub",
+      "url": "https://github.com/diarray-hub?tab=repositories",
+      "snippet": "And what&#x27;s beyond the infinity ? diarray-hub has 22 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

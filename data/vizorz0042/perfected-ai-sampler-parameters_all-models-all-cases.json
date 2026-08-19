@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "VizorZ0042/Perfected-AI-Sampler-Parameters_All-Models-All-Cases",
+  "slug": "vizorz0042-perfected-ai-sampler-parameters_all-models-all-cases",
+  "author": "VizorZ0042",
+  "url": "https://huggingface.co/VizorZ0042/Perfected-AI-Sampler-Parameters_All-Models-All-Cases",
+  "created_at": "2025-12-30T03:53:31.000Z",
+  "updated_at": "2026-08-18T01:16:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "generation",
+    "chat settings",
+    "sampling",
+    "sampler_config",
+    "sampling-strategies",
+    "parameters guide",
+    "samplers guide",
+    "decoding",
+    "nucleus-sampling",
+    "optimized",
+    "optimization",
+    "experimentation",
+    "role play settings",
+    "generation-features",
+    "optimal model setting",
+    "coherence",
+    "steering",
+    "high_quality",
+    "top-k",
+    "top-p",
+    "temperature",
+    "repetition-penalty",
+    "sillytavern",
+    "koboldcpp",
+    "mistral",
+    "gemma",
+    "llama",
+    "gpt2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688120,
+  "storage_human": "688120 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perfected-AI-Sampler-Parameters_All-Models-All-Cases",
+      "url": "https://huggingface.co/VizorZ0042/Perfected-AI-Sampler-Parameters_All-Models-All-Cases",
+      "snippet": "TruePerfect Sampler Settings Turn any LLM into a perfected version of it only by using one-for-all universal sampler parameters."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sampler_config",
+      "snippet": "Explore machine learning models. VizorZ0042/Perfected-AI-Sampler-Parameters_All-Models-All-Cases"
+    },
+    {
+      "title": "GitHub - ostris/ai-toolkit: The ultimate training toolkit for ...",
+      "url": "https://github.com/ostris/ai-toolkit/",
+      "snippet": "AI Toolkit is an easy to use all in one training suite for diffusion models. I try to support all the latest models on consumer grade hardware. Image and video models. It can be run as a GUI or CLI. It is designed to be easy to use but still have every feature imaginable. Free and open source."
+    },
+    {
+      "title": "Stable Diffusion Samplers: A Comprehensive Guide",
+      "url": "https://stable-diffusion-art.com/samplers/",
+      "snippet": "Elucidating the Design Space of Diffusion-Based Generative Models (Karras 2022) - k-diffusion implements the samplers described in this article. Progressive Distillation for Fast Sampling of Diffusion Models - Fast sampling progressive distillation can generate images in as few as 4 steps. It needs model-level training."
+    },
+    {
+      "title": "ComfyUI — Node Control for Visual AI Workflows | comfy-ui.io",
+      "url": "https://comfy-ui.io/",
+      "snippet": "Professional control for visual AI workflows ComfyUI connects models and processing steps on a canvas where every parameter stays visible. Start from community templates, then iterate with experiments you can reproduce and debug."
+    }
+  ]
+}

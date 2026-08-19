@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "iamgroot1212/comfyui-setup",
+  "slug": "iamgroot1212-comfyui-setup",
+  "author": "iamgroot1212",
+  "url": "https://huggingface.co/iamgroot1212/comfyui-setup",
+  "created_at": "2026-04-20T06:03:55.000Z",
+  "updated_at": "2026-08-17T23:38:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 409332402336,
+  "storage_human": "409.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iamgroot1212/comfyui-setup · Hugging Face",
+      "url": "https://huggingface.co/iamgroot1212/comfyui-setup",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iamgroot1212-comfyui-setup/README.md at main · Damacol ... - GitHub",
+      "url": "https://github.com/Damacol/iamgroot1212-comfyui-setup/blob/main/README.md",
+      "snippet": "iamgroot1212/comfyui-setup - Private, Uncensored AI for Real Creators and Devs Deploy {MODEL} without cloud dependencies. Uncensored, transparent, and optimized for privacy-conscious workflows."
+    },
+    {
+      "title": "iamgroot1212/comfyui-setup at main - Hugging Face",
+      "url": "https://huggingface.co/iamgroot1212/comfyui-setup/tree/main",
+      "snippet": "/ comfyui-setup like 0 English License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main comfyui-setup 356 GB Ctrl+K Ctrl+K 1 contributor History:109 commits iamgroot1212 Upload AIO.json 1c1dac9 verified2 days ago clip_visionUpload clip_vision_h.safetensors2 months ago diffusion-modelUpload ZIT-bf16-MoodyProMix ..."
+    },
+    {
+      "title": "ComfyUI Official Documentation - ComfyUI",
+      "url": "https://docs.comfy.org/",
+      "snippet": "Official documentation for ComfyUI, the open source node-based generative AI application. Learn to build workflows for image, video, audio, and 3D generation."
+    },
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DolphinLi888/RoboOcc",
+  "slug": "dolphinli888-roboocc",
+  "author": "DolphinLi888",
+  "url": "https://huggingface.co/DolphinLi888/RoboOcc",
+  "created_at": "2026-08-18T14:36:05.000Z",
+  "updated_at": "2026-08-18T14:45:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 921792149,
+  "storage_human": "922 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dolphin AI",
+      "url": "https://dphn.ai/",
+      "snippet": "Dolphin is a project dedicated to pushing the boundaries of AI model development and distributed inference"
+    },
+    {
+      "title": "RoboOcc: Enhancing the Geometric and Semantic Scene Understanding for ...",
+      "url": "https://arxiv.org/html/2504.14604v1",
+      "snippet": "4 Experiments In this paper, we propose the RoboOcc model which enhances the geometric and semantic scene understanding for robots. We conduct extensive experiments on Occ-ScanNet and EmbodiedOcc-ScanNet datasets to validate the effectiveness of the proposed method."
+    },
+    {
+      "title": "[2504.14604] RoboOcc: Enhancing the Geometric and Semantic Scene ...",
+      "url": "https://arxiv.org/abs/2504.14604",
+      "snippet": "In this paper, we propose a 3D occupancy prediction method which enhances the geometric and semantic scene understanding for robots, dubbed RoboOcc. It utilizes the Opacity-guided Self-Encoder (OSE) to alleviate the semantic ambiguity of overlapping Gaussians and the Geometry-aware Cross-Encoder (GCE) to accomplish the fine-grained geometric ..."
+    },
+    {
+      "title": "[2504.14604] RoboOcc: Enhancing the Geometric and Semantic Scene ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2504.14604",
+      "snippet": "The proposed RoboOcc effectively obtains the 3D semantic Gaussians from image inputs by three steps. First, it randomly initializes a set of 3D semantic Gaussians to sparsely describe a 3D scene. Each Gaussian represents a flexible region of interest and consists of the geometry, opacity and its semantic category."
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    }
+  ]
+}

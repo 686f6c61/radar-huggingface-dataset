@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Lucifer2006/Arcle-V1",
+  "slug": "lucifer2006-arcle-v1",
+  "author": "Lucifer2006",
+  "url": "https://huggingface.co/Lucifer2006/Arcle-V1",
+  "created_at": "2026-08-04T04:07:55.000Z",
+  "updated_at": "2026-08-18T13:54:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "safetensors",
+  "languages": [
+    "en",
+    "hi",
+    "es",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "arcle_intelligence",
+    "arcle",
+    "omni",
+    "multimodal",
+    "any-to-any",
+    "ocr",
+    "speech-recognition",
+    "text-to-speech",
+    "en",
+    "hi",
+    "es",
+    "fr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5840000000,
+  "parameters_human": "5.84B",
+  "storage_bytes": 37422344725,
+  "storage_human": "37.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucifer2006 (Abhinav Anand) - Hugging Face",
+      "url": "https://huggingface.co/Lucifer2006/models",
+      "snippet": "Recent Activity updated a model25 days ago Lucifer2006/TTS published a model25 days ago Lucifer2006/TTS updated a model25 days ago Lucifer2006/STT View all activity"
+    },
+    {
+      "title": "Lucifer2006 (Abhinav Anand) - Hugging Face",
+      "url": "https://huggingface.co/Lucifer2006",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 13 hours ago ... published a model about 13 hours ago"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "ArcleIntelligence---Demo-Training-Script-Only/README.md at main ...",
+      "url": "https://github.com/lucifertkod/ArcleIntelligence---Demo-Training-Script-Only/blob/main/README.md",
+      "snippet": "ArcleIntelligence is a unified multimodal model designed to reason jointly across many forms of input and produce natural-language, visual, and audio output from a single shared decoder. Each input modality is processed by a specialised perception encoder, projected into a common semantic space by a small set of trainable connectors, and then handed to a strong text backbone for joint ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

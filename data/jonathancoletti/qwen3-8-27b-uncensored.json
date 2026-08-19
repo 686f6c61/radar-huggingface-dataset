@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "JonathanColetti/Qwen3.8-27B-Uncensored",
+  "slug": "jonathancoletti-qwen3-8-27b-uncensored",
+  "author": "JonathanColetti",
+  "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored",
+  "created_at": "2026-08-14T16:34:06.000Z",
+  "updated_at": "2026-08-14T19:42:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "uncensored",
+    "abliterated",
+    "qwen3.8",
+    "mtp",
+    "vision",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 5359,
+  "trending_score": 29,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55582996517,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "erikkaum/lattice-retrieval",
+  "slug": "erikkaum-lattice-retrieval",
+  "author": "erikkaum",
+  "url": "https://huggingface.co/erikkaum/lattice-retrieval",
+  "created_at": "2026-08-06T06:39:34.000Z",
+  "updated_at": "2026-08-07T11:32:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "static-embeddings",
+    "sentence-embeddings",
+    "information-retrieval",
+    "matryoshka",
+    "sentence-similarity",
+    "en",
+    "dataset:lightonai/embeddings-pre-training-curated",
+    "dataset:lightonai/embeddings-fine-tuning",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 7,
+  "parameters": 31254528,
+  "parameters_human": "31.3M",
+  "storage_bytes": 125018208,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "erikkaum/lattice-retrieval · Hugging Face",
+      "url": "https://huggingface.co/erikkaum/lattice-retrieval",
+      "snippet": "lattice-retrieval is a fast English static embedding model for retrieval. It is a single 30,522 × 1,024 token embedding table with mean pooling: no transformer layers, attention, or contextual token representations."
+    },
+    {
+      "title": "Lattice: an 8 MB static retriever that embeds Wikipedia in 7 minutes",
+      "url": "https://huggingface.co/blog/erikkaum/lattice-blog",
+      "snippet": "A Blog post by Erik Kaunismäki on Hugging Face"
+    },
+    {
+      "title": "GitHub - ErikKaum/lattice",
+      "url": "https://github.com/ErikKaum/lattice/tree/main",
+      "snippet": "Lattice is an end-to-end project for training, quantizing, and serving a static English retrieval model. The final model is a single 30,522 × 1,024 embedding table: tokenize, look up one row per token, mean-pool, and L2-normalize."
+    },
+    {
+      "title": "lattice/README.md at main · ErikKaum/lattice · GitHub",
+      "url": "https://github.com/ErikKaum/lattice/blob/main/README.md",
+      "snippet": "Lattice Lattice is an end-to-end project for training, quantizing, and serving a static English retrieval model. The final model is a single 30,522 × 1,024 embedding table: tokenize, look up one row per token, mean-pool, and L2-normalize."
+    },
+    {
+      "title": "Releasing my small summer project Lattice ☀️ Static embedding model ...",
+      "url": "https://x.com/ErikKaum/status/2085722111650222174",
+      "snippet": "Erik Kaunismäki (@ErikKaum). 4 replies 22 views. Releasing my small summer project Lattice ☀️ Static embedding model that&#x27;s: - 7.94 MB on disk - embeds the entire English Wikipedia in 7 minutes on my Apple M2 MacBook Air - 0.530 NanoBEIR NDCG@10 Releasing the model and code that I used for training + wrote a small blog 👇"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ant0nh/pi05_500_synyonym_25k",
+  "slug": "ant0nh-pi05_500_synyonym_25k",
+  "author": "ant0nh",
+  "url": "https://huggingface.co/ant0nh/pi05_500_synyonym_25k",
+  "created_at": "2026-08-13T19:03:29.000Z",
+  "updated_at": "2026-08-18T03:22:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:ant0nh/pnp_500_synonym_cleaned",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354065864,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ant0nh/pi05_500_synyonym_25k · Hugging Face",
+      "url": "https://huggingface.co/ant0nh/pi05_500_synyonym_25k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ant0nh/pnp_500_synonym_cleaned · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ant0nh/pnp_500_synonym_cleaned",
+      "snippet": "Models trained or fine-tuned on ant0nh/pnp_500_synonym_cleaned ant0nh/pi05_500_synyonym_25k Robotics • 4B•Updated about 7 hours ago"
+    },
+    {
+      "title": "GitHub - antonhuan/thesis · GitHub",
+      "url": "https://github.com/antonhuan/thesis",
+      "snippet": "A dual-system robot control stack for the SO-101 arm: a vision-language model (Qwen3-VL) decomposes high-level tasks into subtasks, and a vision-language-action policy (SmolVLA / Pi0.5) executes them via lerobot async inference. Policies are evaluated both on real hardware and in simulation with LeIsaac (Isaac Sim)."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    }
+  ]
+}

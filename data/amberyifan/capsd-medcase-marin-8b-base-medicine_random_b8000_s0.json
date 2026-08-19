@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b8000_s0",
+  "slug": "amberyifan-capsd-medcase-marin-8b-base-medicine_random_b8000_s0",
+  "author": "AmberYifan",
+  "url": "https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_random_b8000_s0",
+  "created_at": "2026-08-17T12:27:09.000Z",
+  "updated_at": "2026-08-17T12:31:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:marin-community/marin-8b-base",
+    "base_model:finetune:marin-community/marin-8b-base",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077774361,
+  "storage_human": "16.1 GB",
+  "base_model": "marin-community/marin-8b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "capsd-medcase-marin-8b-base-medicine_cap_b4000_s0 - Hugging Face",
+      "url": "https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b4000_s0",
+      "snippet": "capsd-medcase-marin-8b-base-medicine_cap_b4000_s0 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "capsd-medcase-marin-8b-base-medicine_cap_b1000_s0 - Hugging Face",
+      "url": "https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b1000_s0",
+      "snippet": "capsd-medcase-marin-8b-base-medicine_cap_b1000_s0 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "capsd-medicine-dedup-marin-8b-base-medicine_ppl_b2000_s0",
+      "url": "https://friendli.ai/models/AmberYifan/capsd-medicine-dedup-marin-8b-base-medicine_ppl_b2000_s0",
+      "snippet": "Run capsd-medicine-dedup-marin-8b-base-medicine_ppl_b2000_s0 with FriendliAI inference. This model is a fine-tuned version of marin-community/marin-8b-base on…"
+    },
+    {
+      "title": "capsd-medmcqa-marin-8b-base-medicine_ppl_b2000_s0 - friendli.ai",
+      "url": "https://friendli.ai/models/AmberYifan/capsd-medmcqa-marin-8b-base-medicine_ppl_b2000_s0",
+      "snippet": "Deploy capsd-medmcqa-marin-8b-base-medicine_ppl_b2000_s0 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "USPTO TSDR Case Viewer",
+      "url": "https://tsdr.uspto.gov/documentviewer?caseId",
+      "snippet": "of Select a document to display ..."
+    }
+  ]
+}

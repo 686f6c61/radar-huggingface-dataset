@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Danielbrdz/Barcenas-Qwen3.8-27B-Fable-LoRA",
+  "slug": "danielbrdz-barcenas-qwen3-8-27b-fable-lora",
+  "author": "Danielbrdz",
+  "url": "https://huggingface.co/Danielbrdz/Barcenas-Qwen3.8-27B-Fable-LoRA",
+  "created_at": "2026-08-18T00:37:26.000Z",
+  "updated_at": "2026-08-18T00:37:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5_text",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3.8-27B",
+    "base_model:finetune:unsloth/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338825015,
+  "storage_human": "339 MB",
+  "base_model": "unsloth/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Danielbrdz/Barcenas-27b · Hugging Face",
+      "url": "https://huggingface.co/Danielbrdz/Barcenas-27b",
+      "snippet": "The goal of this model is to have a relatively large model optimized in Spanish and that was at the level of the first versions of GPT-4. I am proud of this model for being the biggest and most powerful one I have done, no doubt it is the result of my short stay in the AI world. Made with ️ in Guadalupe, Nuevo Leon, Mexico 🇲🇽"
+    },
+    {
+      "title": "Danielbrdz/Barcenas-3.8b · Hugging Face",
+      "url": "https://huggingface.co/Danielbrdz/Barcenas-3.8b",
+      "snippet": "Danielbrdz / Barcenas-3.8b like 1 Text Generation Transformers Safetensors Spanish English mistral phi conversational Inference Endpoints text-generation-inference License:mit Model card FilesFiles and versions Community Train Deploy Use this model Edit model card"
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zlyngkhoi/txgemma-2b-trialbench-sft",
+  "slug": "zlyngkhoi-txgemma-2b-trialbench-sft",
+  "author": "zlyngkhoi",
+  "url": "https://huggingface.co/zlyngkhoi/txgemma-2b-trialbench-sft",
+  "created_at": "2026-08-18T05:29:53.000Z",
+  "updated_at": "2026-08-18T06:08:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "aligntune",
+    "sft",
+    "trl",
+    "base_model:google/txgemma-2b-predict",
+    "base_model:finetune:google/txgemma-2b-predict",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 10491763920,
+  "storage_human": "10.5 GB",
+  "base_model": "google/txgemma-2b-predict",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zlyngkhoi/txgemma_trialbench_sft · Hugging Face",
+      "url": "https://huggingface.co/zlyngkhoi/txgemma_trialbench_sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TxGemma: Efficient and Agentic LLMs for Therapeutics",
+      "url": "https://arxiv.org/abs/2504.06196",
+      "snippet": "Therapeutic development is a costly and high-risk endeavor that is often plagued by high failure rates. To address this, we introduce TxGemma, a suite of efficient, generalist large language models (LLMs) capable of therapeutic property prediction as well as interactive reasoning and explainability. Unlike task-specific models, TxGemma synthesizes information from diverse sources, enabling ..."
+    },
+    {
+      "title": "TxGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/txgemma/",
+      "snippet": "Model variants TxGemma comes in 2B, 9B, and 27B sizes with variants that can be adapted for new tasks."
+    },
+    {
+      "title": "TxGemma: Efficient and Agentic LLMs for Therapeutics",
+      "url": "https://deepmind.google/research/publications/153799/",
+      "snippet": "The suite includes 2B, 9B, and 27B parameter models, fine-tuned from Gemma-2 on a comprehensive dataset of small molecules, proteins, nucleic acids, diseases, and cell lines.Out of 66 therapeutic development tasks, TxGemma outperforms or nearly matches the state-of-the-art generalist model on 64 (outperforms on 45), and state-of-the-art ..."
+    },
+    {
+      "title": "google/txgemma-2b-predict · Hugging Face",
+      "url": "https://huggingface.co/google/txgemma-2b-predict",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

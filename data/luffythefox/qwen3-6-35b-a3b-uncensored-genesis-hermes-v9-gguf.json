@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF",
+  "slug": "luffythefox-qwen3-6-35b-a3b-uncensored-genesis-hermes-v9-gguf",
+  "author": "LuffyTheFox",
+  "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF",
+  "created_at": "2026-07-13T06:40:13.000Z",
+  "updated_at": "2026-08-18T14:28:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "hermes",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "hermes",
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "genesis",
+    "agentic",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 519,
+  "downloads_30d": 822204,
+  "trending_score": 39,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 387947750208,
+  "storage_human": "387.9 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF/discussions/5",
+      "snippet": "Got time reset on Google Collab Free GPU and fixed attn_qkv.weight, attn_q.weight, attn_k.weight, attn_v.weight tensors from training noise because they are small."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "url": "https://ryuhq.com/store/models/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "snippet": "Browse and run Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF and everything else — models, skills, MCP servers, agents, and engines — right inside the Ryu app, governed by the Ryu Gateway."
+    },
+    {
+      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF",
+      "url": "https://aiany.app/item/luffythefox-qwen3-6-35b-a3b-uncensored-genesis-hermes-v5-gguf",
+      "snippet": "Introduction This item packages a Qwen3.6-based, MoE 35B model in GGUF format that was numerically repaired (\"Genesis‑SVD\") to recover signal from corrupted tensors and exposed as a multimodal image-text-to-text and conversational agent. The release targets users who need an uncensored, agentic model variant compatible with common GGUF runtimes and quantization workflows. What Sets It Apart ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF Debuts Saying Yes",
+      "url": "https://www.localainews.co/news/multimodal/qwen3-6-35b-a3b-uncensored-genesis-hermes-v7-gguf-debuts-saying-yes/",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF is a new GGUF release from LuffyTheFox built on an uncensored Qwen3.6 base with Hermes agent data. It has 35B total parameters but activates about 3B per pass. The model handles text, images, and video in llama.cpp, LM Studio, koboldcpp, and other GGUF apps."
+    }
+  ]
+}

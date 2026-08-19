@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed42",
+  "slug": "dementor-research-dpo_gsm8k_gpt-oss-20b_as_llama-3-1-8b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed42",
+  "created_at": "2026-08-16T19:21:46.000Z",
+  "updated_at": "2026-08-16T19:22:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed3 · Hugging ...",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-120b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-120b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed3 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed3",
+      "snippet": "Deploy dpo_gsm8k_gpt-oss-20b_as_llama-3.1-8b_seed3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade ..."
+    },
+    {
+      "title": "dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed3 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed3",
+      "snippet": "dementor-research dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed3 Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "dementor/workflows at main · lisadunlap/dementor · GitHub",
+      "url": "https://github.com/lisadunlap/dementor/tree/main/workflows",
+      "snippet": "Friendly adapter names (e.g., gsm8k_llama-3.1-8b-instruct) map to the actual Tinker sampler name via data/tinker_adapters.json. Each workflow run now saves weights under a unique timestamped name and updates the registry so aliases always point to the latest sampler path without failing due to name collisions."
+    }
+  ]
+}

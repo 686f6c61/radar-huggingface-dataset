@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.RA.Fairness-GRPO-v2-Adapters",
+  "slug": "siddharthmb-2026-ra-fairness-grpo-v2-adapters",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.RA.Fairness-GRPO-v2-Adapters",
+  "created_at": "2026-08-17T00:20:06.000Z",
+  "updated_at": "2026-08-18T07:28:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "negotiation",
+    "multi-agent",
+    "reinforcement-learning",
+    "grpo",
+    "fairness",
+    "dataset:siddharthmb/2026.RA.Fairness-GRPO-v2",
+    "dataset:siddharthmb/2026.RA.Fairness-GRPO",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7706207848,
+  "storage_human": "7.7 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "siddharthmb/2026.RA.Fairness-GRPO-v2 - Hugging Face",
+      "url": "https://huggingface.co/datasets/siddharthmb/2026.RA.Fairness-GRPO-v2",
+      "snippet": "Datasets: siddharthmb / 2026.RA.Fairness-GRPO-v2 like 0 Tags: reinforcement-learning negotiation fairness multi-agent Qwen3-8B Dataset card Data Studio FilesFiles and versions xet Community Dataset Preview API Embed Duplicate Data Studio Subset (1) default default Split (1) test test"
+    },
+    {
+      "title": "siddharthmb/2026.RA.Fairness-GRPO · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/siddharthmb/2026.RA.Fairness-GRPO",
+      "snippet": "Datasets: siddharthmb / 2026.RA.Fairness-GRPO like 0 Languages: English Tags: negotiation multi-agent reinforcement-learning grpo fairness bargaining Dataset card Data Studio FilesFiles and versions xet Community Dataset Preview API Embed Duplicate Data Studio Subset (1) default default Split (2) train train test"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - junxu-ai/LLM_fairness: Collection of papers, tools, datasets ...",
+      "url": "https://github.com/junxu-ai/LLM_fairness",
+      "snippet": "These metrics help in quantifying bias and assessing the fairness of model outputs. Individual vs Group Fairness Evaluation: Evaluating LLMs through a group fairness lens involves analyzing how different social groups are represented and treated by the models. This approach uses datasets like GFair to assess biases across multiple dimensions."
+    },
+    {
+      "title": "GitHub - 1059684669/HoloFair · GitHub",
+      "url": "https://github.com/1059684669/HoloFair/tree/main",
+      "snippet": "HoloFair: Unified T2I Fairness Evaluation and Fair-GRPO Debiasing A comprehensive benchmark and RL-based debiasing framework for demographic fairness in Text-to-Image models. This repository contains the official implementation for HoloFair."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "nicoplv/Qwen3.8-27B-oQ4e-fp16-mtp",
+  "slug": "nicoplv-qwen3-8-27b-oq4e-fp16-mtp",
+  "author": "nicoplv",
+  "url": "https://huggingface.co/nicoplv/Qwen3.8-27B-oQ4e-fp16-mtp",
+  "created_at": "2026-08-15T11:16:40.000Z",
+  "updated_at": "2026-08-15T11:21:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 4926789872,
+  "parameters_human": "4.93B",
+  "storage_bytes": 17905949462,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

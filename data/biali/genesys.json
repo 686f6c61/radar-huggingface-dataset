@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "biali/GENESYS",
+  "slug": "biali-genesys",
+  "author": "biali",
+  "url": "https://huggingface.co/biali/GENESYS",
+  "created_at": "2026-07-21T19:40:03.000Z",
+  "updated_at": "2026-08-17T02:03:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 457,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 13543573796,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "biali/GENESYS · Hugging Face",
+      "url": "https://huggingface.co/biali/GENESYS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "biali/GENESYS at main - Hugging Face",
+      "url": "https://huggingface.co/biali/GENESYS/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - allenai/genesys: Source code and utilities for the Genesys ...",
+      "url": "https://github.com/allenai/genesys",
+      "snippet": "Source code and utilities for the Genesys distributed language model architecture discovery system. - allenai/genesys"
+    },
+    {
+      "title": "Best AI Models in August 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for August 2026."
+    },
+    {
+      "title": "PolyAI: The world&#x27;s most lifelike voice AI agents",
+      "url": "https://poly.ai/",
+      "snippet": "PolyAI is the enterprise platform where dialog agents get built, run, adapt, and iterate in real time. Now open to enterprise builders."
+    }
+  ]
+}

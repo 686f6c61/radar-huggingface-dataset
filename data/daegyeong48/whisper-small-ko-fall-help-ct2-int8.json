@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "daegyeong48/whisper-small-ko-fall-help-ct2-int8",
+  "slug": "daegyeong48-whisper-small-ko-fall-help-ct2-int8",
+  "author": "daegyeong48",
+  "url": "https://huggingface.co/daegyeong48/whisper-small-ko-fall-help-ct2-int8",
+  "created_at": "2026-08-18T09:31:14.000Z",
+  "updated_at": "2026-08-18T09:32:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "whisper",
+    "ctranslate2",
+    "faster-whisper",
+    "int8",
+    "korean",
+    "emergency-speech",
+    "automatic-speech-recognition",
+    "ko",
+    "base_model:seastar105/whisper-small-ko-zeroth",
+    "base_model:finetune:seastar105/whisper-small-ko-zeroth",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244612629,
+  "storage_human": "245 MB",
+  "base_model": "seastar105/whisper-small-ko-zeroth",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Whisper - a HeemanKim Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/HeemanKim/whisper",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from HeemanKim"
+    },
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "whisper-small-ko Open-source Korean Speech Recognition Model - Fine ...",
+      "url": "https://model.aibase.com/models/details/1915693352366006274",
+      "snippet": "🚀 whisper-small-ko This model is a fine - tuned version of Whisper Small on the following AI hub dataset. Due to the large size of the dataset, the data was randomly shuffled and divided into 5 parts for training."
+    },
+    {
+      "title": "Whisper Small Ko Low Qual Voice - model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1947537519667318784",
+      "snippet": "🚀 Model Card for whisper-small-ko-finetuned This is a fine - tuned model based on SungBeom/whisper - small - ko, specialized for Korean automatic speech recognition, delivering excellent performance on validation sets."
+    }
+  ]
+}

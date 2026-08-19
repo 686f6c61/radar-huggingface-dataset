@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mahadev-balla/FinSLM-30M-LR1e-4-GA32",
+  "slug": "mahadev-balla-finslm-30m-lr1e-4-ga32",
+  "author": "mahadev-balla",
+  "url": "https://huggingface.co/mahadev-balla/FinSLM-30M-LR1e-4-GA32",
+  "created_at": "2026-08-18T08:18:43.000Z",
+  "updated_at": "2026-08-18T08:56:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "text-generation",
+    "financial-language-model",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120010741,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mahadev-balla (Mahadev Balla) - Hugging Face",
+      "url": "https://huggingface.co/mahadev-balla",
+      "snippet": "Sort: Recently updated mahadev-balla/isl-diffusion-cosine-900perclass Updated Apr 16• 1"
+    },
+    {
+      "title": "mahadev-balla/isl-unconditional-diffusion-128 · Hugging Face",
+      "url": "https://huggingface.co/mahadev-balla/isl-unconditional-diffusion-128",
+      "snippet": "Instructions to use mahadev-balla/isl-unconditional-diffusion-128 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "mahadev - Recent models | 3D CAD Model Collection - GrabCAD",
+      "url": "https://grabcad.com/library/tag/mahadev",
+      "snippet": "The GrabCAD Library offers millions of free CAD designs, CAD files, and 3D models. Join the GrabCAD Community today to gain access and download!"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

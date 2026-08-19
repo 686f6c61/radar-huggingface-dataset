@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Yathi28/llama-3.2-1b-text-to-sql",
+  "slug": "yathi28-llama-3-2-1b-text-to-sql",
+  "author": "Yathi28",
+  "url": "https://huggingface.co/Yathi28/llama-3.2-1b-text-to-sql",
+  "created_at": "2026-08-16T16:44:23.000Z",
+  "updated_at": "2026-08-16T16:46:49.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-sql",
+    "sql",
+    "llama",
+    "llama-3",
+    "qlora",
+    "lora",
+    "fine-tuned",
+    "natural-language-to-sql",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:gretelai/synthetic_text_to_sql",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62328443,
+  "storage_human": "62 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ssnym/llama-3.2-1b-text-to-sql at main - Hugging Face",
+      "url": "https://huggingface.co/ssnym/llama-3.2-1b-text-to-sql/tree/main",
+      "snippet": "ssnym / llama-3.2-1b-text-to-sql like 0 Text Generation PEFT Safetensors b-mc2/sql-create-context English text-to-sql lora qlora unsloth sft conversational Eval Results (legacy) License:llama3.2 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LLaMa_3.2_3B_Instruct_Text2SQL_Legacy - Hugging Face",
+      "url": "https://huggingface.co/XeAI/LLaMa_3.2_3B_Instruct_Text2SQL_Legacy",
+      "snippet": "This is a fine-tuned version of LLaMA 3.2 3B Instruct model, specifically optimized for Text-to-SQL generation tasks. The model has been trained to convert natural language queries into structured SQL commands."
+    },
+    {
+      "title": "Generating SQL Queries Using Text-to-SQL with LLaMA 3.2 1B Model ...",
+      "url": "https://www.linkedin.com/pulse/generating-sql-queries-using-text-to-sql-llama-32-1b-model-pramodh-m-nhbbc",
+      "snippet": "The field of text-to-SQL transformation leverages the power of large language models (LLMs) to translate natural language questions into accurate SQL queries. With advancements in LLMs like LLaMA 3."
+    },
+    {
+      "title": "AI2SQL: Advanced Text to SQL Conversion with Llama 3.2",
+      "url": "https://github.com/mergisi/AI2SQL-Llama3.2",
+      "snippet": "Key Features of Llama 3.2 AI2SQL leverages the power of Llama 3.2, which offers: Multiple Model Sizes: From 1B to 90B parameters, optimized for various tasks. On-Device Processing: Enhances privacy and speed by running locally. Multimodal Capabilities: Larger models can understand and reason with visual data."
+    },
+    {
+      "title": "Finetuning llama 3.2 1B with SQL dataset to get exceptional ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/finetuning-llama-32-1b-sql-dataset-get-exceptional-text2sql-suman-sbqic",
+      "snippet": "Llama 3.2 1B, the latest model in the Llama series, strikes a unique balance of size and capability. It&#x27;s compact enough to run smoothly on a PC or within a Google Colab notebook, yet powerful ..."
+    }
+  ]
+}

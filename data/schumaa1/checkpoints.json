@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "schumaa1/checkpoints",
+  "slug": "schumaa1-checkpoints",
+  "author": "schumaa1",
+  "url": "https://huggingface.co/schumaa1/checkpoints",
+  "created_at": "2026-08-16T21:00:31.000Z",
+  "updated_at": "2026-08-18T09:50:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 5802038995,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "checkpoint Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Novo Nordisk Breach Exposes AI Models and Patient Data",
+      "url": "https://securityonline.info/novo-nordisk-data-breach-ai-models/",
+      "snippet": "Hackers breached Novo Nordisk, stealing AI training data, model checkpoints, and pseudonymized clinical trial patient records, now held for ransom."
+    },
+    {
+      "title": "JadePuffer agentic attacks now target AI model data with ransomware",
+      "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
+      "snippet": "The JadePuffer autonomous AI agent has upgraded with custom malware called EncForge that focuses on encrypting AI assets, such as training datasets, vector databases, and model checkpoints."
+    },
+    {
+      "title": "Stable Diffusion Local Install (2026): VRAM, Setup, Models",
+      "url": "https://localaimaster.com/blog/stable-diffusion-local-install-guide",
+      "snippet": "Install Stable Diffusion locally in 2026. GPU + VRAM requirements per model (SD 1.5, SDXL, SD 3.5), setup paths, where to get checkpoints, and the best models for 8GB/12GB GPUs."
+    },
+    {
+      "title": "WAI-illustrious-SDXL - v17.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.red/models/827184/wai-illustrious-sdxl",
+      "snippet": "Regarding model updates: I create models purely as a hobby, not as my main job. So I work on them in my spare time, and the update frequency depends on my availability."
+    }
+  ]
+}

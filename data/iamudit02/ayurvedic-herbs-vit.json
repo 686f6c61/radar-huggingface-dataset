@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "iamudit02/ayurvedic-herbs-vit",
+  "slug": "iamudit02-ayurvedic-herbs-vit",
+  "author": "iamudit02",
+  "url": "https://huggingface.co/iamudit02/ayurvedic-herbs-vit",
+  "created_at": "2026-08-16T19:26:10.000Z",
+  "updated_at": "2026-08-16T20:03:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 85860176,
+  "parameters_human": "85.9M",
+  "storage_bytes": 1030389473,
+  "storage_human": "1.0 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dravya: AI-Powered Ayurvedic Herb Identification & Traceability",
+      "url": "https://www.kaggle.com/writeups/ankush0027/dravya-ai-powered-ayurvedic-herb-identification",
+      "snippet": "Background Ayurvedic medicinal herbs are often identified and verified through manual processes, which can be time-consuming and difficult to scale. Dravya is an AI-enabled platform designed to support medicinal herb identification and traceability using computer vision and machine learning."
+    },
+    {
+      "title": "Ayurvedic Herb Identification and Classification App using Machine ...",
+      "url": "https://ieeexplore.ieee.org/document/11506814/",
+      "snippet": "Ayurvedic herbs are widely used in medicine and cosmetic products manufacturing. But identifying and recognizing these ayurvedic herbs is a tedious task for the humans as it requires lot of practical knowledege and experience in that field. So, we develop an Ayurvedic herb identification and classification App that will identify medicinal plants through image processing and deep learning ..."
+    },
+    {
+      "title": "Ayurveda AI Assistant",
+      "url": "https://dharmthummar.github.io/ai-ayurveda-assistant/",
+      "snippet": "Ayurveda is a traditional Indian system of medicine that is more than 5,000 years old. It focuses on creating harmony between body, mind, and spirit using diet, herbs, lifestyle practices, and various therapies."
+    },
+    {
+      "title": "AI Assistant for Ayurveda Herbal Guidance - GitHub",
+      "url": "https://github.com/vanshchaudhary2404/Ayurveda_AI_Assistant",
+      "snippet": "A dual-mode AI-powered assistant that helps users identify Ayurvedic herbs via camera image recognition and get personalized herb recommendations based on symptoms using NLP. Built under the Ministry of AYUSH theme for health-tech innovation."
+    },
+    {
+      "title": "Ayurai — AI-Powered Ayurveda & Holistic Health Platform",
+      "url": "https://www.ayurai.io/",
+      "snippet": "Ayurai combines the wisdom of Ayurveda with cutting-edge AI to deliver personalised health insights, chronic disease management, and preventive wellness solutions."
+    }
+  ]
+}

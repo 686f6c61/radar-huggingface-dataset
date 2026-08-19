@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "pranaydeep139/animal-pokedex-models",
+  "slug": "pranaydeep139-animal-pokedex-models",
+  "author": "pranaydeep139",
+  "url": "https://huggingface.co/pranaydeep139/animal-pokedex-models",
+  "created_at": "2026-08-13T20:50:28.000Z",
+  "updated_at": "2026-08-16T18:43:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 5919828730,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

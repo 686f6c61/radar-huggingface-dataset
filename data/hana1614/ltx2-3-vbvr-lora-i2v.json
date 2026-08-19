@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "hana1614/Ltx2.3-VBVR-lora-I2V",
+  "slug": "hana1614-ltx2-3-vbvr-lora-i2v",
+  "author": "hana1614",
+  "url": "https://huggingface.co/hana1614/Ltx2.3-VBVR-lora-I2V",
+  "created_at": "2026-08-14T20:32:36.000Z",
+  "updated_at": "2026-08-14T20:32:36.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "video-generation",
+    "video-reasoning",
+    "logical-reasoning",
+    "lora",
+    "ltx-2.3",
+    "en",
+    "zh",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:adapter:Lightricks/LTX-2.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2093625779,
+  "storage_human": "2.1 GB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MarxistLeninist/AGILLM-4.3",
+  "slug": "marxistleninist-agillm-4-3",
+  "author": "MarxistLeninist",
+  "url": "https://huggingface.co/MarxistLeninist/AGILLM-4.3",
+  "created_at": "2026-08-02T11:22:49.000Z",
+  "updated_at": "2026-08-18T10:02:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agillm",
+    "checkpoint",
+    "recovery",
+    "diffusion-block",
+    "mixture-of-experts",
+    "text-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4112342798506,
+  "storage_human": "4112.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MarxistLeninist/AGILLM-4.3 · Hugging Face",
+      "url": "https://huggingface.co/MarxistLeninist/AGILLM-4.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Marxist-Leninist/AGILLM4.3: AGILLM 4.3: 4.2 warm-started - GitHub",
+      "url": "https://github.com/Marxist-Leninist/AGILLM4.3",
+      "snippet": "AGILLM 4.3 AGILLM 4.3 is the AGILLM 4.2 warm start with shared MoE experts and DiffusionBlocks training. The compatibility runtime file is still named agillm41.py, but this repo tracks the 4.3 runtime and public volunteer path."
+    },
+    {
+      "title": "MarxistLeninist/AGILLM-4.3 at main - Hugging Face",
+      "url": "https://huggingface.co/MarxistLeninist/AGILLM-4.3/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AGILLM 4.3 EGGROLL Experimental - GitHub",
+      "url": "https://github.com/Marxist-Leninist/AGILLM4.3-EGGROLL-Experimental",
+      "snippet": "This repository is an experimental, default-off extension of AGILLM 4.3. It adds a PyTorch EGGROLL-style evolution-strategy sidecar for the model&#x27;s discrete top-1 Mixture-of-Experts routers while preserving the existing backpropagation and DiffusionBlock training path."
+    },
+    {
+      "title": "AGILLM-4.3 | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/MarxistLeninist/AGILLM-4.3",
+      "snippet": "AGILLM-4.3 by undefined. open-source AI model. text-generation"
+    }
+  ]
+}

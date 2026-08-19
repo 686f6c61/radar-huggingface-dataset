@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "HauhauCS/Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+  "slug": "hauhaucs-gemma4-31b-qat-uncensored-hauhaucs-balanced-mtp",
+  "author": "HauhauCS",
+  "url": "https://huggingface.co/HauhauCS/Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+  "created_at": "2026-06-24T23:43:41.000Z",
+  "updated_at": "2026-06-25T00:22:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "vision",
+    "multimodal",
+    "agentic",
+    "coding",
+    "creative-writing",
+    "roleplay",
+    "rp",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 126,
+  "downloads_30d": 104644,
+  "trending_score": 8,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 20167742560,
+  "storage_human": "20.2 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma4-31b-qat-uncensored-hauhaucs-balanced-mtp-hauhaucs",
+      "snippet": "Overview Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP is a 31-billion-parameter dense transformer model built by HauhauCS that removes safety refusals from Google DeepMind&#x27;s Gemma 4 31B while maintaining full instruction-following capability and reasoning. The model supports a 256K (262,144) token context window, includes multimodal vision capabilities via an mmproj component, and runs on ..."
+    },
+    {
+      "title": "HauhauCS (HauHau) - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS",
+      "snippet": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive: Discussion #69 (censorship bug report) was deleted, not closed. new activity 12 days ago"
+    },
+    {
+      "title": "Eval bug: gemma4uv mmproj + CUDA → SIGABRT in mtmd_helper ... - GitHub",
+      "url": "https://github.com/ggml-org/llama.cpp/issues/26981",
+      "snippet": "Vision: mmproj-Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-BF16.gguf (1.2 GB) Draft MTP: mtp-gemma-4-31B-it.gguf (280 MB) — NOT loaded in this repro; the bug reproduces with MTP disabled."
+    },
+    {
+      "title": "Gemma4 31b Qat Uncensored Hauhaucs Balanced Mtp — ThinkLLM",
+      "url": "https://thinkllm.dev/models/gemma4-31b-qat-uncensored-hauhaucs-balanced-mtp",
+      "snippet": "A living, browsable knowledge graph about AI models. Browse by capability, use case, or provider to build model intuition."
+    }
+  ]
+}

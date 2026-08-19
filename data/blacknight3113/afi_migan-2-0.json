@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "blacknight3113/Afi_Migan-2.0",
+  "slug": "blacknight3113-afi_migan-2-0",
+  "author": "blacknight3113",
+  "url": "https://huggingface.co/blacknight3113/Afi_Migan-2.0",
+  "created_at": "2026-07-25T10:10:57.000Z",
+  "updated_at": "2026-08-15T11:38:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 24700288064,
+  "storage_human": "24.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

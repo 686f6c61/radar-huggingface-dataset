@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "fairy322/Sulphur-2-base-GGUF",
+  "slug": "fairy322-sulphur-2-base-gguf",
+  "author": "fairy322",
+  "url": "https://huggingface.co/fairy322/Sulphur-2-base-GGUF",
+  "created_at": "2026-08-14T17:29:53.000Z",
+  "updated_at": "2026-08-14T17:29:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-to-video",
+    "base_model:SulphurAI/Sulphur-2-base",
+    "base_model:quantized:SulphurAI/Sulphur-2-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 21005004544,
+  "parameters_human": "21.01B",
+  "storage_bytes": 190959230229,
+  "storage_human": "191.0 GB",
+  "base_model": "SulphurAI/Sulphur-2-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

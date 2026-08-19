@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NagaYu/parity-ja-smollm2-135m",
+  "slug": "nagayu-parity-ja-smollm2-135m",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/parity-ja-smollm2-135m",
+  "created_at": "2026-08-16T04:00:19.000Z",
+  "updated_at": "2026-08-16T04:00:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "parity",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "parity",
+    "tokenizer",
+    "vocabulary-adaptation",
+    "multilingual",
+    "inference-efficiency",
+    "parity-vocab-pack",
+    "ja",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4696,
+  "storage_human": "4696 B",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM2 - a HuggingFaceTB Collection",
+      "url": "https://huggingface.co/collections/HuggingFaceTB/smollm2",
+      "snippet": "State-of-the-art compact LLMs for on-device applications: 1.7B, 360M, 135M"
+    },
+    {
+      "title": "SmolLM2-135M · Models",
+      "url": "https://www.modelscope.cn/models/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "SmolLM2 Table of Contents Model Summary Limitations Training License Citation Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction ..."
+    },
+    {
+      "title": "SmolLM2 135M — 0.135B Dense LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/smollm2-135m",
+      "snippet": "SmolLM2 135M: 0.135B parameters, 2K context, chat. 6 benchmarks, 6 quantizations. VRAM requirements, speed estimates, and Ollama commands."
+    },
+    {
+      "title": "SmolLM2-135M: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/smollm2-135m-huggingfacetb",
+      "snippet": "Overview SmolLM2-135M is a 135-million-parameter compact language model built for on-device inference and resource-constrained environments. Developed by HuggingFaceTB, it uses a Transformer decoder architecture trained on 2 trillion tokens across diverse datasets including FineWeb-Edu, DCLM, and The Stack. The model loads with a memory footprint of 723.56 MB in bfloat16 precision, making it ..."
+    }
+  ]
+}

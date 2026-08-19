@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jeckmy/Kronos-base",
+  "slug": "jeckmy-kronos-base",
+  "author": "jeckmy",
+  "url": "https://huggingface.co/jeckmy/Kronos-base",
+  "created_at": "2026-08-17T05:42:58.000Z",
+  "updated_at": "2026-08-17T05:42:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Finance",
+    "Candlestick",
+    "K-line",
+    "time-series-forecasting",
+    "arxiv:2508.02739",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102311008,
+  "parameters_human": "102.3M",
+  "storage_bytes": 409264008,
+  "storage_human": "409 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thzll2001/Kronos-ai: Kronos: A Foundation Model for the ...",
+      "url": "https://github.com/thzll2001/Kronos-ai",
+      "snippet": "Kronos is the first open-source foundation model for financial candlesticks (K-lines), trained on data from over 45 global exchanges."
+    },
+    {
+      "title": "GitHub - shiyu-coder/Kronos: Kronos: A Foundation Model for the ...",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "snippet": "Forecasting with Kronos is straightforward using the KronosPredictor class. It handles data preprocessing, normalization, prediction, and inverse normalization, allowing you to get from raw data to forecasts in just a few lines of code. Important Note: The max_context for Kronos-small and Kronos-base is 512. This is the maximum sequence length the model can process. For optimal performance, it ..."
+    },
+    {
+      "title": "Kronos-base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/kronos-base-neoquasar",
+      "snippet": "Overview Kronos-base is a 102.3M-parameter decoder-only foundation model for financial time series forecasting, developed by NeoQuasar. It specializes in predicting candlestick (K-line) data—the OHLCV (open, high, low, close, volume) format used in financial markets—and was trained on over 12 billion K-line records from 45 global exchanges. The model uses a novel two-stage architecture: a ..."
+    },
+    {
+      "title": "Kronos: The AI Model for Financial Markets",
+      "url": "https://www.blog.brightcoding.dev/2026/04/10/kronos-the-revolutionary-ai-model-for-financial-markets",
+      "snippet": "Enter Kronos —the world&#x27;s first open-source foundation model specifically engineered for the chaotic, high-dimensional world of financial markets. This breakthrough isn&#x27;t just another incremental improvement; it&#x27;s a paradigm shift that democratizes institutional-grade AI forecasting for developers, quants, and researchers worldwide."
+    },
+    {
+      "title": "NeoQuasar/Kronos-base · Hugging Face",
+      "url": "https://huggingface.co/NeoQuasar/Kronos-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

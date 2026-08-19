@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pruna-test/test-save-tiny-stable-diffusion-pipe-smashed",
+  "slug": "pruna-test-test-save-tiny-stable-diffusion-pipe-smashed",
+  "author": "pruna-test",
+  "url": "https://huggingface.co/pruna-test/test-save-tiny-stable-diffusion-pipe-smashed",
+  "created_at": "2025-10-02T16:46:53.000Z",
+  "updated_at": "2026-08-18T01:28:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pruna-ai",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 102,
+  "trending_score": 0,
+  "parameters": 1427012,
+  "parameters_human": "1.4M",
+  "storage_bytes": 8863420,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pruna-test/test-save-tiny-stable-diffusion-pipe-smashed · Hugging Face",
+      "url": "https://huggingface.co/pruna-test/test-save-tiny-stable-diffusion-pipe-smashed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "test-save-tiny-stable-diffusion-pipe-smashed-pro - Hugging Face",
+      "url": "https://huggingface.co/pruna-test/test-save-tiny-stable-diffusion-pipe-smashed-pro",
+      "snippet": "Model Card for pruna-test/test-save-tiny-stable-diffusion-pipe-smashed-pro This model was created using the pruna library. Pruna is a model optimization framework built for developers, enabling you to deliver more efficient models with minimal implementation overhead. Usage First things first, you need to install the pruna library:"
+    },
+    {
+      "title": "pruna-test-test-save-tiny-stable-diffusion-pipe-smashed/README.md at ...",
+      "url": "https://github.com/Damacol/pruna-test-test-save-tiny-stable-diffusion-pipe-smashed/blob/main/README.md",
+      "snippet": "pruna-test/test-save-tiny-stable-diffusion-pipe-smashed - Private, Uncensored AI for Real Creators and Devs {MODEL} setup for researchers, devs, and writers. No babysitting, no tracking, just powerful AI on your terms."
+    },
+    {
+      "title": "Releases: Damacol/pruna-test-test-save-tiny-stable-diffusion-pipe ...",
+      "url": "https://github.com/Damacol/pruna-test-test-save-tiny-stable-diffusion-pipe-smashed-pro/releases",
+      "snippet": "There aren&#x27;t any releases here You can create a release to package software, along with release notes and links to binary files, for other people to use. Learn more about releases in our docs."
+    },
+    {
+      "title": "Welcome to Pruna&#x27;s documentation! | Pruna documentation",
+      "url": "https://docs.pruna.ai/en/v0.2.7/",
+      "snippet": "Welcome to Pruna&#x27;s documentation! Glad to have you here! At Pruna AI, we create solutions that empower developers to make their ML models smaller, cheaper, faster and greener. Our compression framework pruna is made by developers for developers. It is designed to make your life easier by providing a seamless integration of state-of-the-art compression algorithms. In just a few lines of code ..."
+    }
+  ]
+}

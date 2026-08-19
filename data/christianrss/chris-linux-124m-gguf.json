@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "christianrss/chris-linux-124m-gguf",
+  "slug": "christianrss-chris-linux-124m-gguf",
+  "author": "christianrss",
+  "url": "https://huggingface.co/christianrss/chris-linux-124m-gguf",
+  "created_at": "2026-08-15T01:49:35.000Z",
+  "updated_at": "2026-08-15T02:17:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gpt2",
+    "linux",
+    "bash",
+    "shell",
+    "terminal",
+    "command-generation",
+    "text-generation",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 140,
+  "trending_score": 0,
+  "parameters": 124475904,
+  "parameters_human": "124.5M",
+  "storage_bytes": 474116832,
+  "storage_human": "474 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

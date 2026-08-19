@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Symiotic-14B",
+  "slug": "reaperdoesntknow-symiotic-14b",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Symiotic-14B",
+  "created_at": "2025-05-06T21:50:24.000Z",
+  "updated_at": "2026-08-17T13:17:04.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "symbiotic",
+    "symbioticai",
+    "llm",
+    "Symbols",
+    "convergentintel",
+    "conversational",
+    "en",
+    "dataset:0xZee/dataset-CoT-Advanced-Calculus-268",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "license:afl-3.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 3703,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 74666855480,
+  "storage_human": "74.7 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Symiotic-14B · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Symiotic-14B",
+      "snippet": "Overview SymbioticLM-14B is a state-of-the-art 17.8 billion parameter symbolic-transformer hybrid model that tightly couples high-capacity neural representation with structured symbolic cognition. Designed to match or exceed performance of top-tier LLMs in symbolic domains, it supports persistent memory, entropic recall, multi-stage symbolic routing, and self-organizing knowledge structures ..."
+    },
+    {
+      "title": "reaperdoesntknow/Symiotic-14B at main - Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Symiotic-14B/tree/main",
+      "snippet": "reaperdoesntknow ... Symiotic-14B like 4 Text Generation Transformers Safetensors 0xZee/dataset-CoT-Advanced-Calculus-268 English qwen3 symbiotic symbioticai llm Symbols conversational text-generation-inference License:afl-3.0 Model card FilesFiles and versions Community Train Deploy Use this model main Symiotic-14B Ctrl+K Ctrl+K 1 contributor ..."
+    },
+    {
+      "title": "reaperdoesntknow / Symiotic-14B Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/reaperdoesntknow/Symiotic-14B/817d3817eca4f1504781ba9f8ef6b46d59a94ef7/overview",
+      "snippet": "Discover potential threats in the reaperdoesntknow / Symiotic-14B model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "reaperdoesntknow/Symiotic-14B - Fast, Reliable, and Scalable Inference ...",
+      "url": "https://friendli.ai/models/reaperdoesntknow/Symiotic-14B",
+      "snippet": "Run reaperdoesntknow/Symiotic-14B with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4 ..."
+    },
+    {
+      "title": "mradermacher/Symiotic-14B-i1-GGUF - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2FSymiotic-14B-i1-GGUF",
+      "snippet": "weighted/imatrix quants of https://huggingface.co/reaperdoesntknow/Symiotic-14B For a convenient overview and download list, visit our model page for this model."
+    }
+  ]
+}

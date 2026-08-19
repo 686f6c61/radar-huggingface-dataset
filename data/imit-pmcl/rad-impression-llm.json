@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "IMIT-PMCL/rad-impression-llm",
+  "slug": "imit-pmcl-rad-impression-llm",
+  "author": "IMIT-PMCL",
+  "url": "https://huggingface.co/IMIT-PMCL/rad-impression-llm",
+  "created_at": "2026-08-17T01:19:29.000Z",
+  "updated_at": "2026-08-17T07:32:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201044824872,
+  "storage_human": "201.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IMIT-PMCL/rad-impression-llm",
+      "url": "https://github.com/IMIT-PMCL/rad-impression-llm",
+      "snippet": "Contribute to IMIT-PMCL/rad-impression-llm development by creating an account on GitHub."
+    },
+    {
+      "title": "Releases · IMIT-PMCL/rad-impression-llm · GitHub",
+      "url": "https://github.com/IMIT-PMCL/rad-impression-llm/releases",
+      "snippet": "Contribute to IMIT-PMCL/rad-impression-llm development by creating an account on GitHub."
+    },
+    {
+      "title": "Fine-Tuned Large Language Model for Automated Radiology Impression ...",
+      "url": "https://pubs.rsna.org/doi/10.1148/ryai.250714",
+      "snippet": "Summary Large-scale fine-tuning produced a highly accurate large language model for automated radiology impression generation, demonstrating a validated approach to improve reporting efficiency and consistency across multicenter examinations."
+    },
+    {
+      "title": "Comparison of AI-generated radiology impressions: a multi ... - Nature",
+      "url": "https://www.nature.com/articles/s41746-026-02586-6",
+      "snippet": "A.B., and A.D.G. are or were employees of Rad AI and may hold equity in the company, which developed the domain-specific impression generation model evaluated in this study."
+    },
+    {
+      "title": "Save 60+ minutes per day with automated impressions - Rad AI",
+      "url": "https://www.radai.com/impressions",
+      "snippet": "Rad AI Impressions saves radiologists more than an hour per day by automatically generating impressions from dictated findings. The impression language is individually customized to each radiologist & practice."
+    }
+  ]
+}

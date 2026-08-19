@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/L3.1-Phantasmav2-12B-GGUF",
+  "slug": "mradermacher-l3-1-phantasmav2-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/L3.1-Phantasmav2-12B-GGUF",
+  "created_at": "2026-08-18T06:52:11.000Z",
+  "updated_at": "2026-08-18T09:48:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:kromcomp/L3.1-Phantasmav2-12B",
+    "base_model:quantized:kromcomp/L3.1-Phantasmav2-12B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11956539456,
+  "parameters_human": "11.96B",
+  "storage_bytes": 34070352512,
+  "storage_human": "34.1 GB",
+  "base_model": "kromcomp/L3.1-Phantasmav2-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/L3.1-Nimbusv2-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/L3.1-Nimbusv2-12B-GGUF",
+      "snippet": "mradermacher / L3.1-Nimbusv2-12B-GGUF like 0 Transformers GGUF English mergekit Merge conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "By VRAM Tier Pick the tier that matches your hardware. Every model below has been confirmed live on HuggingFace at the time of writing, with GGUF available either in the linked repo or via a sibling quant repo from bartowski or mradermacher. 8GB VRAM — Budget tier The 8B class is the floor for usable uncensored output. Picks:"
+    },
+    {
+      "title": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026)",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/best-local-ai-models-by-vram-2026",
+      "snippet": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026) Verified open-weight AI model picks for every memory tier — 8GB cards to 384GB workstations — with licenses, Q4 sizes, and fine-tune vetting."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    }
+  ]
+}

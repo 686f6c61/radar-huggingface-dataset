@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-UD-Q1_0",
+  "slug": "blackfrost-research-qwen3-8-2-4t-a95b-derisked-ud-q1_0",
+  "author": "Blackfrost-Research",
+  "url": "https://huggingface.co/Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-UD-Q1_0",
+  "created_at": "2026-08-17T18:23:21.000Z",
+  "updated_at": "2026-08-17T19:59:30.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.8",
+    "qwen3_5_moe",
+    "moe",
+    "dwm",
+    "directional-weight-modification",
+    "imatrix",
+    "llama-cpp",
+    "single-node",
+    "rtx-pro-6000",
+    "gated",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-2.4T-A95B",
+    "base_model:quantized:Qwen/Qwen3.8-2.4T-A95B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2446182725504,
+  "parameters_human": "2446.18B",
+  "storage_bytes": 397256399488,
+  "storage_human": "397.3 GB",
+  "base_model": "Qwen/Qwen3.8-2.4T-A95B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-2.4T-A95B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 - openlm.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3.8-2.4T-A95B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-2.4t-a95b",
+      "snippet": "Qwen3.8-2.4T-A95B is the open-source release of Qwen&#x27;s latest flagship, launched August 2026. Its sparse MoE architecture holds 2.4T total parameters with ~95B activated per step, paired with hybrid attention and a 1M token context window. Key benchmarks: GPQA Diamond 92.6, PaperBench 93.0, OSWorld 86.1, BabyVision 82.0. Ranked 4th on CodeArena."
+    },
+    {
+      "title": "Qwen3.8-2.4T-A95B-UD-Q1_0-layers - Hugging Face",
+      "url": "https://huggingface.co/meshllm/Qwen3.8-2.4T-A95B-UD-Q1_0-layers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

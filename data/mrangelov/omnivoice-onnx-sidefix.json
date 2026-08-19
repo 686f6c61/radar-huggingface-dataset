@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mrangelov/OmniVoice-onnx-sidefix",
+  "slug": "mrangelov-omnivoice-onnx-sidefix",
+  "author": "mrangelov",
+  "url": "https://huggingface.co/mrangelov/OmniVoice-onnx-sidefix",
+  "created_at": "2026-08-18T20:38:42.000Z",
+  "updated_at": "2026-08-18T20:39:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 331584,
+  "storage_human": "331584 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prince-1/OmniVoice-Onnx · Hugging Face",
+      "url": "https://huggingface.co/Prince-1/OmniVoice-Onnx",
+      "snippet": "OmniVoice 🌍 OmniVoice is a massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it delivers high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    },
+    {
+      "title": "gluschenko/omnivoice-onnx · Hugging Face",
+      "url": "https://huggingface.co/gluschenko/omnivoice-onnx",
+      "snippet": "OmniVoice 🌍 OmniVoice is a massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it delivers high-quality speech with superior inference speed, supporting voice cloning and voice design. Paper: OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models Repository ..."
+    },
+    {
+      "title": "Omnivoice-onnx/README_EN.md at master - GitHub",
+      "url": "https://github.com/AFun9/Omnivoice-onnx/blob/master/README_EN.md",
+      "snippet": "OmniVoice PyTorch model — Clone the main repo from k2-fsa/OmniVoice, download pretrained weights, and obtain an OmniVoice/ layout (with model.safetensors + audio_tokenizer/). tts conda environment — Install dependencies per the main OmniVoice README (torch, transformers>=5.5, onnx, onnxruntime, onnxsim, onnxconverter_common, torchaudio)."
+    },
+    {
+      "title": "GitHub - k2-fsa/OmniVoice: High-Quality Voice Cloning TTS for 600 ...",
+      "url": "https://github.com/k2-fsa/OmniVoice/",
+      "snippet": "OmniVoice 🌍 OmniVoice is a state-of-the-art massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it generates high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    },
+    {
+      "title": "OmniVoice: Free AI Voice Generator & Voice Cloning",
+      "url": "https://omnivoice.app/",
+      "snippet": "OmniVoice is a free, open-source AI voice generator that supports 646 languages. It converts text to natural-sounding speech, clones voices from a short audio sample (zero-shot Voice Cloning), or creates a voice from a text description alone (Voice Design)."
+    }
+  ]
+}

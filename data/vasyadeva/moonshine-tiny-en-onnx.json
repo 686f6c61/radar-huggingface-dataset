@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "vasyadeva/moonshine-tiny-en-onnx",
+  "slug": "vasyadeva-moonshine-tiny-en-onnx",
+  "author": "vasyadeva",
+  "url": "https://huggingface.co/vasyadeva/moonshine-tiny-en-onnx",
+  "created_at": "2026-08-14T12:02:17.000Z",
+  "updated_at": "2026-08-14T12:02:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "onnxruntime",
+    "moonshine",
+    "asr",
+    "on-device",
+    "en",
+    "arxiv:2410.15608",
+    "base_model:moonshine-ai/moonshine-tiny",
+    "base_model:quantized:moonshine-ai/moonshine-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186285944,
+  "storage_human": "186 MB",
+  "base_model": "moonshine-ai/moonshine-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

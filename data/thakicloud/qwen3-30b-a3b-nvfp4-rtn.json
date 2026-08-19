@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Qwen3-30B-A3B-NVFP4-RTN",
+  "slug": "thakicloud-qwen3-30b-a3b-nvfp4-rtn",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Qwen3-30B-A3B-NVFP4-RTN",
+  "created_at": "2026-08-18T03:21:01.000Z",
+  "updated_at": "2026-08-18T04:27:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "nvfp4",
+    "fp4",
+    "quantized",
+    "llm-compressor",
+    "rtn",
+    "moe",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-30B-A3B",
+    "base_model:quantized:Qwen/Qwen3-30B-A3B",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 18108236589,
+  "storage_human": "18.1 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThakiCloud/Qwen3-Coder-30B-A3B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ThakiCloud/Qwen3-30B-A3B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/ThakiCloud/Qwen3-30B-A3B-NVFP4",
+      "snippet": "ThakiCloud / Qwen3-30B-A3B-NVFP4 like 0 Follow ThakiCloud 9 Safetensors qwen3_moe 8-bit precision modelopt Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 4 Safetensors Model size 16B params Tensor type BF16 · F8_E4M3 · U8 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen3-30B-A3B-NVFP4 · Models",
+      "url": "https://www.modelscope.cn/models/nv-community/Qwen3-30B-A3B-NVFP4",
+      "snippet": "This model was obtained by quantizing the weights and activations of Qwen3-30B-A3B to FP4 data type, ready for inference with TensorRT-LLM. Only the weights and activations of the linear operators within transformer blocks are quantized."
+    },
+    {
+      "title": "Qwen3-30B-A3B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-30B-A3B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    }
+  ]
+}

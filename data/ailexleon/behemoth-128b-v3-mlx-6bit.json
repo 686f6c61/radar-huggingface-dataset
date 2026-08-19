@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ailexleon/Behemoth-128B-v3-mlx-6Bit",
+  "slug": "ailexleon-behemoth-128b-v3-mlx-6bit",
+  "author": "ailexleon",
+  "url": "https://huggingface.co/ailexleon/Behemoth-128B-v3-mlx-6Bit",
+  "created_at": "2026-08-18T21:16:49.000Z",
+  "updated_at": "2026-08-18T21:21:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral",
+    "rp",
+    "roleplay",
+    "creative",
+    "writer",
+    "creative writing",
+    "conversational",
+    "character-rp",
+    "storytelling",
+    "text-generation",
+    "en",
+    "base_model:TheDrummer/Behemoth-128B-v3",
+    "base_model:quantized:TheDrummer/Behemoth-128B-v3",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27351134208,
+  "parameters_human": "27.35B",
+  "storage_bytes": 101603511423,
+  "storage_human": "101.6 GB",
+  "base_model": "TheDrummer/Behemoth-128B-v3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ailexleon/Behemoth-128B-v3-mlx-6Bit · Hugging Face",
+      "url": "https://huggingface.co/ailexleon/Behemoth-128B-v3-mlx-6Bit",
+      "snippet": "Instructions to use ailexleon/Behemoth-128B-v3-mlx-6Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use ailexleon/Behemoth-128B-v3-mlx-6Bit with MLX:"
+    },
+    {
+      "title": "BeaverAI/Behemoth-128B-v3b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/Behemoth-128B-v3b-GGUF",
+      "snippet": "Instructions to use BeaverAI/Behemoth-128B-v3b-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use BeaverAI/Behemoth-128B-v3b-GGUF with llama-cpp-python:"
+    },
+    {
+      "title": "Local AI in 2026: The Best Models to Run on Your Own Hardware (Qwen ...",
+      "url": "https://www.aimagicx.com/blog/local-ai-models-2026-qwen-mistral-llama-hardware-guide",
+      "snippet": "Run powerful AI models locally for privacy and cost savings. This updated guide covers Mistral Small 4, Qwen 3.5, Llama 4, and Nemotron Nano 4B with hardware requirements, setup instructions, and performance benchmarks."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "An 80B-parameter model just ran in 4.3 GB of RAM - privateslm.dev",
+      "url": "https://www.privateslm.dev/blog/2026-08-12-swiftlet-moe-streaming.html",
+      "snippet": "Qwen3-Next-80B-A3B is an 80-billion-parameter model. Its 4-bit GGUF-equivalent weights take up 42 GB on disk. An independent builder going by leonickson1 got it generating text on an ordinary Apple Silicon Mac using a peak of 4.3 GB of RAM — under a tenth of the file size — by never loading most of the model into memory at all."
+    }
+  ]
+}

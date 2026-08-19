@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "photosynth-satoshi/pi05_unlock_key_test10",
+  "slug": "photosynth-satoshi-pi05_unlock_key_test10",
+  "author": "photosynth-satoshi",
+  "url": "https://huggingface.co/photosynth-satoshi/pi05_unlock_key_test10",
+  "created_at": "2026-08-18T06:48:49.000Z",
+  "updated_at": "2026-08-18T06:50:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:photosynth-satoshi/so101_unlock_key",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388453600,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "π₀.₅ (Pi05) Policy · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/pi05",
+      "snippet": "π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world generalization. While robots ..."
+    },
+    {
+      "title": "VLABench/pi05-primitive-10task · Hugging Face",
+      "url": "https://huggingface.co/VLABench/pi05-primitive-10task",
+      "snippet": "Pi05 official implementation trained on VLABench datasets. This repository provides the official release of the Pi 0.5 model with the stop-gradient mechanism enabled, trained with the whole VLABench&#x27;s official primitive tasks dataset."
+    },
+    {
+      "title": "GitHub - jorgemunozl/openpi_subtask_generation: pi05 model written on ...",
+      "url": "https://github.com/jorgemunozl/openpi_subtask_generation",
+      "snippet": "pi05 model written on JAX. Contribute to jorgemunozl/openpi_subtask_generation development by creating an account on GitHub."
+    },
+    {
+      "title": "OpenPi π₀.₅ on Jetson Thor - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/tutorials/openpi_on_thor/",
+      "snippet": "Deploy Physical Intelligence&#x27;s OpenPi π₀.₅ Vision-Language-Action (VLA) model on NVIDIA Jetson AGX Thor with TensorRT NVFP4 quantization for low-latency end-to-end inference."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "realrebelai/MiniMax-H3_GGUFs",
+  "slug": "realrebelai-minimax-h3_ggufs",
+  "author": "realrebelai",
+  "url": "https://huggingface.co/realrebelai/MiniMax-H3_GGUFs",
+  "created_at": "2026-08-03T03:34:11.000Z",
+  "updated_at": "2026-08-08T05:58:24.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "minimax",
+    "comfyui",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:quantized:Comfy-Org/MiniMax-H3",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 203,
+  "downloads_30d": 404700,
+  "trending_score": 10,
+  "parameters": 33122992912,
+  "parameters_human": "33.12B",
+  "storage_bytes": 188559360864,
+  "storage_human": "188.6 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

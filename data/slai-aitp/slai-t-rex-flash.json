@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SLAI-AITP/SLAI-T-Rex-Flash",
+  "slug": "slai-aitp-slai-t-rex-flash",
+  "author": "SLAI-AITP",
+  "url": "https://huggingface.co/SLAI-AITP/SLAI-T-Rex-Flash",
+  "created_at": "2026-07-07T06:45:39.000Z",
+  "updated_at": "2026-08-18T08:01:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deepseek_v4",
+    "en",
+    "arxiv:2607.20145",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 290944616402,
+  "parameters_human": "290.94B",
+  "storage_bytes": 581907182988,
+  "storage_human": "581.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SLAI-AITP/SLAI-T-Rex-Flash · Hugging Face",
+      "url": "https://huggingface.co/SLAI-AITP/SLAI-T-Rex-Flash",
+      "snippet": "SLAI-AITP / SLAI-T-Rex-Flash like 0 Safetensors deepseek_v4 License:apache-2.0 Model card FilesFiles and versions xet Community 1 Copy to bucket new"
+    },
+    {
+      "title": "GitHub - SLAI-AITP/SLAI-T-Rex: SLAI T-Rex: Full-Parameter Post-training ...",
+      "url": "https://github.com/SLAI-AITP/SLAI-T-Rex",
+      "snippet": "SLAI T-Rex is the open-source companion repository for the technical report: Paper: SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD Model: SLAIAITP/DeepSeek-V4-Flash-OR Code: SLAI-AITP/SLAI-T-Rex The report studies full-parameter post-training for the DeepSeek-V4 family on Ascend CloudMatrix384 SuperPOD with Ascend 910C NPUs. The repository exposes the ..."
+    },
+    {
+      "title": "SLAI-T-Rex/README.md at main · SLAI-AITP/SLAI-T-Rex · GitHub",
+      "url": "https://github.com/SLAI-AITP/SLAI-T-Rex/blob/main/README.md",
+      "snippet": "SLAI T-Rex is the open-source companion repository for the technical report: Paper: SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD Model: SLAIAITP/DeepSeek-V4-Flash-OR Code: SLAI-AITP/SLAI-T-Rex The report studies full-parameter post-training for the DeepSeek-V4 family on Ascend CloudMatrix384 SuperPOD with Ascend 910C NPUs. The repository exposes the ..."
+    },
+    {
+      "title": "[2607.20145] SLAI T-Rex: Full-Parameter Post-training of the DeepSeek ...",
+      "url": "https://arxiv.org/abs/2607.20145",
+      "snippet": "The resulting system achieves 34.22% Model FLOPs Utilization (MFU) with a 2.93x improvement over the open-source baseline recipe while maintaining training stability. Building on this optimized infrastructure, we further establish a CPT and SFT workflow for complex Operations Research (OR) tasks. We refer to the integrated framework as SLAI T-Rex."
+    },
+    {
+      "title": "SLAI-AITP (SLAI-AITP) - Hugging Face",
+      "url": "https://huggingface.co/SLAI-AITP/activity/all",
+      "snippet": "SLAI-AITP/SLAI-T-Rex-Flash 291B•Updated 3 days ago• 13 New activity in SLAI-AITP/SLAI-T-Rex-Flash 4 days ago"
+    }
+  ]
+}

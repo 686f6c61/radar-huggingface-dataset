@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Honkware/Qwen3.8-27B-heretic-ara-exl3-4.0bpw",
+  "slug": "honkware-qwen3-8-27b-heretic-ara-exl3-4-0bpw",
+  "author": "Honkware",
+  "url": "https://huggingface.co/Honkware/Qwen3.8-27B-heretic-ara-exl3-4.0bpw",
+  "created_at": "2026-08-15T01:28:27.000Z",
+  "updated_at": "2026-08-15T01:33:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:trohrbaugh/Qwen3.8-27B-heretic-ara",
+    "base_model:quantized:trohrbaugh/Qwen3.8-27B-heretic-ara",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 150,
+  "trending_score": 0,
+  "parameters": 8589178096,
+  "parameters_human": "8.59B",
+  "storage_bytes": 17198648833,
+  "storage_human": "17.2 GB",
+  "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for trohrbaugh/Qwen3.8-27B-heretic-ara - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:trohrbaugh/Qwen3.8-27B-heretic-ara",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset trohrbaugh/Qwen3.8-27B-heretic-ara Adapters Finetunes Quantizations Merges Apps Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed ..."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Qwen3.8-27B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is an AI model released by Qwen on Friday, Aug 14 2026, 11 days after Qwen3.8-Max. It is an open-weight model — the trained weights are available to download and run."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

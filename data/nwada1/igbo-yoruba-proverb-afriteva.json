@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Nwada1/igbo-yoruba-proverb-afriteva",
+  "slug": "nwada1-igbo-yoruba-proverb-afriteva",
+  "author": "Nwada1",
+  "url": "https://huggingface.co/Nwada1/igbo-yoruba-proverb-afriteva",
+  "created_at": "2026-08-14T19:30:47.000Z",
+  "updated_at": "2026-08-14T20:08:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 428850432,
+  "parameters_human": "428.9M",
+  "storage_bytes": 1715435376,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "datalab-to/chandra-ocr-2",
+  "slug": "datalab-to-chandra-ocr-2",
+  "author": "datalab-to",
+  "url": "https://huggingface.co/datalab-to/chandra-ocr-2",
+  "created_at": "2026-03-16T20:47:07.000Z",
+  "updated_at": "2026-06-26T10:30:43.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "pdf",
+    "markdown",
+    "layout",
+    "conversational",
+    "license:openrail",
+    "eval-results",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 478,
+  "downloads_30d": 2675948,
+  "trending_score": 7,
+  "parameters": 5295564288,
+  "parameters_human": "5.30B",
+  "storage_bytes": 10611732952,
+  "storage_human": "10.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - datalab-to/chandra: OCR model that handles complex tables ...",
+      "url": "https://github.com/datalab-to/chandra",
+      "snippet": "Chandra OCR 2 is a state of the art OCR model that converts images and PDFs into structured HTML/Markdown/JSON while preserving layout information."
+    },
+    {
+      "title": "datalab-to/chandra-ocr-2 · Hugging Face",
+      "url": "https://huggingface.co/datalab-to/chandra-ocr-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "datalab-to/chandra · Hugging Face",
+      "url": "https://huggingface.co/datalab-to/chandra",
+      "snippet": "A newer version of this model is available: datalab-to/chandra-ocr-2"
+    },
+    {
+      "title": "Announcing Chandra OCR 2: 90+ Languages, Top Benchmarks | Datalab",
+      "url": "https://www.datalab.to/blog/chandra-2",
+      "snippet": "Chandra 2 is a 4B parameter OCR model with state of the art benchmarks, layout blocks with bounding boxes, and structured output for diagrams and charts."
+    },
+    {
+      "title": "Introducing our newest model: Chandra | Datalab",
+      "url": "https://www.datalab.to/blog/introducing-chandra",
+      "snippet": "Meet Chandra, our latest OCR model that tops independent benchmarks and brings powerful new capabilities to document processing."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "olusegunola/phi35-medqa-dpo-merged",
+  "slug": "olusegunola-phi35-medqa-dpo-merged",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/phi35-medqa-dpo-merged",
+  "created_at": "2026-08-06T18:39:14.000Z",
+  "updated_at": "2026-08-16T18:06:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 22927045363,
+  "storage_human": "22.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

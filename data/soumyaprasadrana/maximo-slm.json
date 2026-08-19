@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "soumyaprasadrana/maximo-slm",
+  "slug": "soumyaprasadrana-maximo-slm",
+  "author": "soumyaprasadrana",
+  "url": "https://huggingface.co/soumyaprasadrana/maximo-slm",
+  "created_at": "2026-08-18T05:11:02.000Z",
+  "updated_at": "2026-08-18T05:12:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "qwen2.5",
+    "lora",
+    "ibm-maximo",
+    "mcp",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 5779267566,
+  "storage_human": "5.8 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Building AI for IBM Maximo with Model Context Protocol",
+      "url": "https://www.linkedin.com/posts/soumya-prasad-rana-5a7a6b70_maximo-ibmmaximo-maximoapplicationsuite-activity-7445412554966773760-unuM",
+      "snippet": "What started as a simple idea eventually became a working MCP layer for IBM Maximo. I wanted to explore a better way for AI agents to interact with maximo - not just by calling APIs, but by ..."
+    },
+    {
+      "title": "Releases · soumyaprasadrana/maximo-kit · GitHub",
+      "url": "https://github.com/soumyaprasadrana/maximo-kit/releases",
+      "snippet": "Spec Kit extension for IBM Maximo Copilot and spec-driven Maximo development. - soumyaprasadrana/maximo-kit"
+    },
+    {
+      "title": "GitHub - soumyaprasadrana/maximo-kit: Spec Kit extension for IBM Maximo ...",
+      "url": "https://github.com/soumyaprasadrana/maximo-kit",
+      "snippet": "A configuration copilot for IBM Maximo. Describe a change in plain language; a coding agent inspects, designs, stages, previews, and commits it through maximo-mcp-server -- with design-first guardrails. Object Structure selection is deterministic (recipe-driven, not discovery), and nothing is ..."
+    },
+    {
+      "title": "Kimi K3 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/kimi-3",
+      "snippet": "Kimi K3 by Moonshot AI ranks #5 of 218 with a public score of 80.5/100. Evidence: Supported; this profile shows 44 source-displayable benchmark rows."
+    },
+    {
+      "title": "#ibmmaximo #maximo #maximoapplicationsuite #agenticai #mcp # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/soumya-prasad-rana-5a7a6b70_ibmmaximo-maximo-maximoapplicationsuite-activity-7490720806361092096-uSsJ",
+      "snippet": "Yesterday I shared the what behind Maximo Kit. Today, here&#x27;s the part that actually matters. Watch an AI agent build a real Maximo feature from scratch. Not a scripted success story. The first ..."
+    }
+  ]
+}

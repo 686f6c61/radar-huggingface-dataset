@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tylergp/molmoact2-libero-ft-10mm-300",
+  "slug": "tylergp-molmoact2-libero-ft-10mm-300",
+  "author": "tylergp",
+  "url": "https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-300",
+  "created_at": "2026-08-17T13:18:56.000Z",
+  "updated_at": "2026-08-17T13:23:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "molmoact2",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5485309488,
+  "parameters_human": "5.49B",
+  "storage_bytes": 65878968479,
+  "storage_human": "65.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tylergp/molmoact2-libero-ft-10mm-300 · Hugging Face",
+      "url": "https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-300",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tylergp/molmoact2-libero-ft-10mm-300-final · Hugging Face",
+      "url": "https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-300-final",
+      "snippet": "Instructions to use tylergp/molmoact2-libero-ft-10mm-300-final with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use tylergp/molmoact2-libero-ft-10mm-300-final with LeRobot: Notebooks Google Colab Kaggle Model Card for molmoact2 How to Get Started with the Model Train ..."
+    },
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "url": "https://arxiv.org/abs/2605.02881",
+      "snippet": "We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor along five axes. We introduce MolmoER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe."
+    },
+    {
+      "title": "MolmoAct2 Action Reasoning Models for Real-World Deployment",
+      "url": "https://arxiv.org/html/2605.02881v1",
+      "snippet": "Figure 1: Overview of MolmoAct2. MolmoAct2 is a fully open action reasoning model for real-world deployment. From a suite of high-quality robot datasets that we collect, filter, and curate at scale across three platforms spanning the low-to-medium cost range (left), we train MolmoAct2 and its adaptive-depth reasoning variant MolmoAct2-Think, coupled to the VLM backbone through a novel action ..."
+    }
+  ]
+}

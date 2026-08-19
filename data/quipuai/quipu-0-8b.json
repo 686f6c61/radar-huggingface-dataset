@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Quipuai/quipu-0.8b",
+  "slug": "quipuai-quipu-0-8b",
+  "author": "Quipuai",
+  "url": "https://huggingface.co/Quipuai/quipu-0.8b",
+  "created_at": "2026-08-18T05:16:38.000Z",
+  "updated_at": "2026-08-18T14:24:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "lora",
+    "fine-tuned",
+    "reasoning",
+    "tool-use",
+    "agent",
+    "lightweight",
+    "multilingual",
+    "conversational",
+    "instruction-tuned",
+    "qwen3",
+    "small-language-model",
+    "efficient",
+    "Image-Text-to-Text",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524816933,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quipuai/quipu-0.6b · Hugging Face",
+      "url": "https://huggingface.co/Quipuai/quipu-0.6b",
+      "snippet": "Quipu 0.6B A compact, fast fine-tuned language model built on Qwen3-0.6B, tuned for clear step-by-step reasoning, consistent identity, and lightweight coding assistance."
+    },
+    {
+      "title": "Quipuai (Quipu) - Hugging Face",
+      "url": "https://huggingface.co/Quipuai",
+      "snippet": "models1 Quipuai/quipu-.6b Text Generation • 0.6B•Updated about 6 hours ago• 350 • 4"
+    },
+    {
+      "title": "GitHub - Ares264/QuipuAI",
+      "url": "https://github.com/Ares264/QuipuAI",
+      "snippet": "Contribute to Ares264/QuipuAI development by creating an account on GitHub."
+    },
+    {
+      "title": "QuipuAI/README.md at main · Ares264/QuipuAI · GitHub",
+      "url": "https://github.com/Ares264/QuipuAI/blob/main/README.md",
+      "snippet": "Contribute to Ares264/QuipuAI development by creating an account on GitHub."
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    }
+  ]
+}

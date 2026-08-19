@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "VertexAIco/prism-creative-1-mini",
+  "slug": "vertexaico-prism-creative-1-mini",
+  "author": "VertexAIco",
+  "url": "https://huggingface.co/VertexAIco/prism-creative-1-mini",
+  "created_at": "2026-08-16T20:28:57.000Z",
+  "updated_at": "2026-08-16T20:32:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "creative-writing",
+    "storytelling",
+    "lora",
+    "distillation",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:mlx-community/Qwen3-4B-Instruct-2507-4bit",
+    "base_model:adapter:mlx-community/Qwen3-4B-Instruct-2507-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 302,
+  "trending_score": 0,
+  "parameters": 628676096,
+  "parameters_human": "628.7M",
+  "storage_bytes": 4772717755,
+  "storage_human": "4.8 GB",
+  "base_model": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VertexAIco/amethyst-1-mini · Hugging Face",
+      "url": "https://huggingface.co/VertexAIco/amethyst-1-mini",
+      "snippet": "Amethyst 1 Mini is a general-purpose chat and instruction-following model, fine-tuned from Gemma 3 4B IT using LoRA on a small, high-quality distilled instruction dataset."
+    },
+    {
+      "title": "VertexAIco (Vertex AI) - Hugging Face",
+      "url": "https://huggingface.co/VertexAIco/models",
+      "snippet": "Building practical AI systems with a focus on open-weight LLMs, AI agents, tool use, efficient inference, and developer experience. Interested in model training, fine-tuning, multimodal AI, local inference (MLX/Ollama), and scalable AI infrastructure."
+    },
+    {
+      "title": "Vertex AI (@vertexagi) / Posts / X",
+      "url": "https://x.com/vertexagi",
+      "snippet": "Building practical AI systems with a focus on open-weight LLMs, AI agents, tool use, efficient inference, and developer experience. Interested in model training Vertex AIvertexagi Aug 8"
+    },
+    {
+      "title": "Google Vertex AI Model Availability (Updated Hourly)",
+      "url": "https://www.ai.moda/en/blog/google-vertex-ai-model-availability",
+      "snippet": "Want to know what models are currently available on Google Cloud Vertex AI? We&#x27;ve got a live updated list right here for you."
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Model Garden is a platform that helps you discover, test, customize, and deploy Google proprietary and select OSS models and assets. To explore the generative AI models and APIs that are available on Gemini Enterprise Agent Platform, go to Model Garden in the Google Cloud console."
+    }
+  ]
+}

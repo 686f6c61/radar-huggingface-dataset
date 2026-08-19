@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gatilin/WeDetect-Ref-4B-Base",
+  "slug": "gatilin-wedetect-ref-4b-base",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/WeDetect-Ref-4B-Base",
+  "created_at": "2026-08-18T07:00:11.000Z",
+  "updated_at": "2026-08-18T07:00:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fushh7/WeDetect-Ref-4B · Hugging Face",
+      "url": "https://huggingface.co/fushh7/WeDetect-Ref-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - WeChatCV/WeDetect: (CVPR 2026) Official repository of paper ...",
+      "url": "https://github.com/WeChatCV/WeDetect",
+      "snippet": "In this work, we fully explore this retrieval philosophy and demonstrate its unique advantages in efficiency and versatility through a model family named WeDetect: State-of-the-art performance. WeDetect is a real-time detector with a dual-tower architecture."
+    },
+    {
+      "title": "fushh7/WeDetect-Ref-4B at main - Hugging Face",
+      "url": "https://huggingface.co/fushh7/WeDetect-Ref-4B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WeDetect/wedetect_ref/README.md at main - GitHub",
+      "url": "https://github.com/WeChatCV/WeDetect/blob/main/wedetect_ref/README.md",
+      "snippet": "(CVPR 2026) Official repository of paper \"WeDetect: Fast Open-Vocabulary Object Detection as Retrieval\" - WeDetect/wedetect_ref/README.md at main · WeChatCV/WeDetect"
+    },
+    {
+      "title": "WeDetect: Fast Open-Vocabulary Object Detection as Retrieval",
+      "url": "https://arxiv.org/html/2512.12309",
+      "snippet": "Motivated by this insight, we fully explore the retrieval-inspired philosophy through a model family named WeDetect: (1) WeDetect, a strong detection foundation with real-time latency and superior open-vocabulary object detection performance; (2) WeDetect-Uni, a universal proposal generator supporting fast backtrack of historical data; and (3 ..."
+    }
+  ]
+}

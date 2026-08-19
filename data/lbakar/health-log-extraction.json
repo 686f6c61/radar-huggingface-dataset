@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lbakar/health-log-extraction",
+  "slug": "lbakar-health-log-extraction",
+  "author": "lbakar",
+  "url": "https://huggingface.co/lbakar/health-log-extraction",
+  "created_at": "2026-08-18T18:43:27.000Z",
+  "updated_at": "2026-08-18T19:15:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "info_extraction",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557746,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leveraging Large Language Models for Accurate Retrieval of Patient ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S281717052500050X",
+      "snippet": "In this context, the potential of generative artificial intelligence (AI) solutions, particularly large language models (LLMs), has emerged as a promising avenue for automating the extraction of structured clinical information from unstructured medical reports."
+    },
+    {
+      "title": "Liam Bakar - Personal Website",
+      "url": "https://liambakar.github.io/",
+      "snippet": "AI & Technology Human-Centered AI tools that prioritize human needs, ethics, and well-being. Personalized Recommendation Systems and the use of embeddings to represent complex relationships. Applied Large Language Models in domains from content creation and data analysis to conversational interfaces. Healthcare Enriching sparse medical records by transforming unstructured daily logs into ..."
+    },
+    {
+      "title": "A comprehensive evaluation of large language models for information ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010482525013654",
+      "snippet": "Recent advances in large language models (LLMs) powered by generative artificial intelligence (AI), such as GPT, T5, and LLaMA, offer promising alternatives for clinical IE. These models have demonstrated an impressive capacity for understanding and generating natural language, enabling them to perform IE tasks with minimal fine-tuning [8, 9]."
+    },
+    {
+      "title": "MedPromptExtract (Medical Data Extraction Tool): Anonymization and Hi ...",
+      "url": "https://arxiv.org/pdf/2405.02664",
+      "snippet": "A Kullback-Leibler (KL) divergence term is included in the joint learning to ensure that both models (the graphical model and the feature-based model) agree on the predictions across labeled and unlabeled data. The model was trained with a batch size of 32."
+    },
+    {
+      "title": "Researcher Claims Working Jailbreak on Top AI Models Including GPT-5.6 ...",
+      "url": "https://cybersecuritynews.com/jailbreak-on-top-ai-models/",
+      "snippet": "A well-known AI red teamer claims to have developed a universal jailbreak that works against leading large language models, including heavily guarded flagships such as GPT-5.6 Sol, Claude Opus 5, and Fable."
+    }
+  ]
+}

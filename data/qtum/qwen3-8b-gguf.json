@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "qtum/Qwen3-8B-GGUF",
+  "slug": "qtum-qwen3-8b-gguf",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/Qwen3-8B-GGUF",
+  "created_at": "2026-08-17T07:42:47.000Z",
+  "updated_at": "2026-08-17T07:50:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "llama.cpp",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 38059856704,
+  "storage_human": "38.1 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "el4/GRM-3.2-Sky-ONYX-GGUF",
+  "slug": "el4-grm-3-2-sky-onyx-gguf",
+  "author": "el4",
+  "url": "https://huggingface.co/el4/GRM-3.2-Sky-ONYX-GGUF",
+  "created_at": "2026-08-03T17:37:57.000Z",
+  "updated_at": "2026-08-13T17:06:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ollama",
+    "llama.cpp",
+    "imatrix",
+    "moe",
+    "reasoning",
+    "frontier",
+    "qwen3",
+    "onyx",
+    "text-generation",
+    "base_model:OrionLLM/GRM-3.2-Sky",
+    "base_model:quantized:OrionLLM/GRM-3.2-Sky",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 18989,
+  "trending_score": 8,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 203815842628,
+  "storage_human": "203.8 GB",
+  "base_model": "OrionLLM/GRM-3.2-Sky",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "el4/GRM-3.2-Sky-ONYX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/el4/GRM-3.2-Sky-ONYX-GGUF",
+      "snippet": "Instructions to use el4/GRM-3.2-Sky-ONYX-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use el4/GRM-3.2-Sky-ONYX-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "el4/GRM-3.2-Sky-OPAL-GGUF · Hugging Face",
+      "url": "https://huggingface.co/el4/GRM-3.2-Sky-OPAL-GGUF",
+      "snippet": "👉 APEX Quantization Method Ettore Di Giacinto & Richard Palethorpe (LocalAI Team). OPAL adapts the layer-wise precision gradients and MoE-aware tensor classification outlined in the APEX technical paper. 👉 Bartowski and Lamim For the excellent semantic imatrix calibration dataset that powers OPAL&#x27;s activation scaling. 👉 llama.cpp Georgi Gerganov and contributors for the foundational ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "Any opinions on OrionLLM/GRM-3.2-Sky? (70GB bf16)",
+      "url": "https://forums.developer.nvidia.com/t/any-opinions-on-orionllm-grm-3-2-sky-70gb-bf16/378777",
+      "snippet": "OrionLLM/GRM-3.2-Sky · Hugging Face We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science. It&#x27;s 70GB in bf16 so easily fits on a single Spark. our latest flagship model built for long-horizon agentic tasks and extremely difficult reasoning problems …"
+    }
+  ]
+}

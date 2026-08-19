@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "yuivs/Minimax-H3-nvfp4-INT4-INT8-Convrot",
+  "slug": "yuivs-minimax-h3-nvfp4-int4-int8-convrot",
+  "author": "yuivs",
+  "url": "https://huggingface.co/yuivs/Minimax-H3-nvfp4-INT4-INT8-Convrot",
+  "created_at": "2026-08-18T15:32:01.000Z",
+  "updated_at": "2026-08-18T15:32:02.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "multimodal",
+    "quantized",
+    "comfyui",
+    "int4",
+    "nvfp4",
+    "th",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158882970362,
+  "storage_human": "158.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

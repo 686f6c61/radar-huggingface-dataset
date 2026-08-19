@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Thermostatic/community-forensics-low-quality-detector-2026-08",
+  "slug": "thermostatic-community-forensics-low-quality-detector-2026-08",
+  "author": "Thermostatic",
+  "url": "https://huggingface.co/Thermostatic/community-forensics-low-quality-detector-2026-08",
+  "created_at": "2026-08-17T03:30:55.000Z",
+  "updated_at": "2026-08-17T04:04:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "safetensors",
+    "ai-generated-image-detection",
+    "image-forensics",
+    "community-forensics",
+    "low-resolution",
+    "image-classification",
+    "dataset:Thermostatic/frontier-synthetic-images-2026",
+    "arxiv:2411.04125",
+    "base_model:Thermostatic/community-forensics-frontier-detector-2026-08",
+    "base_model:quantized:Thermostatic/community-forensics-frontier-detector-2026-08",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 21811969,
+  "parameters_human": "21.8M",
+  "storage_bytes": 847528226,
+  "storage_human": "848 MB",
+  "base_model": "Thermostatic/community-forensics-frontier-detector-2026-08",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "community-forensics-frontier-detector-2026-08 - Hugging Face",
+      "url": "https://huggingface.co/Thermostatic/community-forensics-frontier-detector-2026-08",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Awesome AI-Generated Image Detection - GitHub",
+      "url": "https://github.com/yjtlab/awesome-aigc-image-detection",
+      "snippet": "A curated and comprehensive list of papers, datasets, and resources for AI-Generated Image Detection (AIGC Detection). This collection covers methods for detecting images synthesized by GANs, diffusion models, autoregressive models, and other generative approaches. Continuously updated. Last verified: 2026-03-16 | Total papers: 170+ | Inclusion criteria: Peer-reviewed papers (CVPR, ICCV, ECCV ..."
+    },
+    {
+      "title": "OwensLab/CommunityForensics · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/OwensLab/CommunityForensics",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2411.04125] Community Forensics: Using Thousands of Generators to ...",
+      "url": "https://arxiv.org/abs/2411.04125",
+      "snippet": "One of the key challenges of detecting AI-generated images is spotting images that have been created by previously unseen generative models. We argue that the limited diversity of the training data is a major obstacle to addressing this problem, and we propose a new dataset that is significantly larger and more diverse than prior work. As part of creating this dataset, we systematically ..."
+    },
+    {
+      "title": "Detecting and preventing distillation attacks &#92; Anthropic",
+      "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "snippet": "Massive volume concentrated in a few areas, highly repetitive structures, and content that maps directly onto what is most valuable for training an AI model are the hallmarks of a distillation attack. How we&#x27;re responding We continue to invest heavily in defenses that make such distillation attacks harder to execute and easier to identify."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Felladrin/Minueza-3-95M-Base",
+  "slug": "felladrin-minueza-3-95m-base",
+  "author": "Felladrin",
+  "url": "https://huggingface.co/Felladrin/Minueza-3-95M-Base",
+  "created_at": "2026-08-17T16:11:48.000Z",
+  "updated_at": "2026-08-18T01:17:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma3",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:allenai/c4",
+    "dataset:HuggingFaceTB/cosmopedia-100k",
+    "dataset:codeparrot/github-code-clean",
+    "dataset:open-web-math/open-web-math",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 94732416,
+  "parameters_human": "94.7M",
+  "storage_bytes": 999534900,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "felladrin (Victor Nogueira) · GitHub",
+      "url": "https://github.com/felladrin",
+      "snippet": "Minimalist web-searching platform with an AI assistant that runs directly from your browser. Demo: https://felladrin-minisearch.hf.space TypeScript 581 66"
+    },
+    {
+      "title": "Felladrin/Minueza-32M-Base · Hugging Face",
+      "url": "https://huggingface.co/Felladrin/Minueza-32M-Base",
+      "snippet": "A newer version of this model is available: Felladrin/Minueza-2-96M Minueza-32M-Base Summary Minueza-32M-Base is a foundation model with 32 million parameters trained from scratch on a large corpus of text in English. It&#x27;s available in the following formats: Safetensors, GGUF, and ONNX. And it&#x27;s being released alongside some fine-tuned versions:"
+    },
+    {
+      "title": "Felladrin/gguf-Minueza-32M-Base · Hugging Face",
+      "url": "https://huggingface.co/Felladrin/gguf-Minueza-32M-Base",
+      "snippet": "GGUF version of Felladrin/Minueza-32M-Base. It was not possible to quantize the model, so only the F16 and F32 GGUF files are available. Try it with llama.cpp"
+    },
+    {
+      "title": "GitHub - felladrin/MiniSearch: Minimalist web-searching platform with ...",
+      "url": "https://github.com/felladrin/MiniSearch/blob/main/",
+      "snippet": "Minimalist web-searching platform with an AI assistant that runs directly from your browser. Uses WebLLM, Wllama and SearXNG. Demo: https://felladrin-minisearch.hf.space - felladrin/MiniSearch"
+    },
+    {
+      "title": "The making of Minueza-32M: Transformer model trained from scratch",
+      "url": "https://www.linkedin.com/pulse/making-minueza-32m-transformer-model-trained-from-scratch-nogueira-wfrnf",
+      "snippet": "Made my second pre-trained and discovered that a model can suffer from underfitting (not trained with enough tokens) and also from exploding gradients (which makes it hard to fine-tune a model)."
+    }
+  ]
+}

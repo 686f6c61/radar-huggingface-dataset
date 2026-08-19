@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hbfreed/Laguna-S-2.1-winnow-keep50",
+  "slug": "hbfreed-laguna-s-2-1-winnow-keep50",
+  "author": "hbfreed",
+  "url": "https://huggingface.co/hbfreed/Laguna-S-2.1-winnow-keep50",
+  "created_at": "2026-08-18T14:20:34.000Z",
+  "updated_at": "2026-08-18T14:36:36.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "winnow_laguna",
+    "text-generation",
+    "moe",
+    "pruning",
+    "winnow",
+    "variable-width-experts",
+    "conversational",
+    "custom_code",
+    "base_model:poolside/Laguna-S-2.1",
+    "base_model:finetune:poolside/Laguna-S-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60780503456,
+  "parameters_human": "60.78B",
+  "storage_bytes": 121668143482,
+  "storage_human": "121.7 GB",
+  "base_model": "poolside/Laguna-S-2.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "poolside/Laguna-S-2.1 · Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-S-2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Laguna S 2.1 - a poolside Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/poolside/laguna-s-21",
+      "snippet": "Our most capable model to date, designed for long-horizon work."
+    },
+    {
+      "title": "Poolside: Laguna S 2.1 (free) - AI Model Details & Benchm...",
+      "url": "https://benchable.ai/models/poolside/laguna-s-2.1-20260720",
+      "snippet": "Poolside&#x27;s Laguna S 2.1, a 118B total parameter model with 8B active parameters, demonstrates competitive response times, ranking in the 55th percentile across benchmarks. It typically offers cost-effective solutions, placing in the 70th percentile for pricing. Notably, the model exhibits strong reliability with a 95% success rate, indicating consistent and usable responses. In terms of ..."
+    },
+    {
+      "title": "Laguna S 2.1 - ollama.com",
+      "url": "https://ollama.com/library/laguna-s-2.1",
+      "snippet": "Laguna S 2.1 Overview Laguna S 2.1 is a Mixture-of-Experts model built for agentic coding and extended reasoning. It is the larger sibling of Laguna XS 2.1, trading a bigger memory footprint for stronger coding and reasoning performance while keeping a small activated-parameter count so it stays practical to run on a single high-memory machine. Key Specifications Total Parameters: 118B (8B ..."
+    },
+    {
+      "title": "Laguna S 2.1 — pricing, benchmarks & speed - Command Code",
+      "url": "https://commandcode.ai/models/laguna-s-2-1-free",
+      "snippet": "Laguna S 2.1 is the latest coding agent model from Poolside . Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and 40.4% on DeepSWE, making it one of the strongest coding models in its category."
+    }
+  ]
+}

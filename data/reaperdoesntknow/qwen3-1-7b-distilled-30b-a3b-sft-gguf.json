@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF",
+  "slug": "reaperdoesntknow-qwen3-1-7b-distilled-30b-a3b-sft-gguf",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF",
+  "created_at": "2026-03-22T02:11:27.000Z",
+  "updated_at": "2026-08-17T13:16:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "distillation",
+    "sft",
+    "reasoning",
+    "mathematics",
+    "physics",
+    "legal",
+    "stem",
+    "chain-of-thought",
+    "convergentintel",
+    "edge",
+    "knowledge-distillation",
+    "text-generation",
+    "en",
+    "base_model:reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT",
+    "base_model:quantized:reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2990,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 8988962432,
+  "storage_human": "9.0 GB",
+  "base_model": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B at main",
+      "url": "https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B",
+      "snippet": "A 1.7B-parameter causal language model distilled from Qwen3-30B-A3B on 6,122 STEM chain-of-thought samples using discrepancy-informed knowledge distillation. The training objective emphasizes proof structure, detects reasoning pivot tokens through token-level divergence dynamics, smooths high-entropy student singularities before distillation, and monitors structural drift through discrepancy ..."
+    },
+    {
+      "title": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF: Model synced ...",
+      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF",
+      "snippet": "Stage 1 — DISC-Informed Knowledge Distillation: Qwen3-1.7B distilled from Qwen3-30B-A3B-Instruct on 6,122 STEM chain-of-thought samples using proof-weighted cross-entropy loss (2.5x → 1.5x decay on derivation tokens) and KL divergence at T=2.0."
+    },
+    {
+      "title": "Qwen3-1.7B-Distilled-30B-A3B-SFT - friendli.ai",
+      "url": "https://friendli.ai/models/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT",
+      "snippet": "Request reserved instances Model provider reaperdoesntknow Model tree Base Qwen/Qwen3-1.7B Fine-tuned this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Serverless Endpoints Dedicated Endpoints Container More information Model card"
+    }
+  ]
+}

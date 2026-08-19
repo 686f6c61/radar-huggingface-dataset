@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "xiaomi-research/MiLMMT-46-1B-v1.0",
+  "slug": "xiaomi-research-milmmt-46-1b-v1-0",
+  "author": "xiaomi-research",
+  "url": "https://huggingface.co/xiaomi-research/MiLMMT-46-1B-v1.0",
+  "created_at": "2026-08-05T02:25:35.000Z",
+  "updated_at": "2026-08-12T02:38:20.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "translation",
+    "arxiv:2608.10812",
+    "base_model:xiaomi-research/MiLMMT-46-1B-v0.1",
+    "base_model:finetune:xiaomi-research/MiLMMT-46-1B-v0.1",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 243,
+  "trending_score": 8,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2072196546,
+  "storage_human": "2.1 GB",
+  "base_model": "xiaomi-research/MiLMMT-46-1B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xiaomi-research/MiLMMT-46-1B-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/xiaomi-research/MiLMMT-46-1B-v1.0",
+      "snippet": "Its training builds on Gemma3-1B through four stages: (1) continual pretraining on 143 billion tokens of monolingual and parallel data across 46 languages, yielding MiLMMT-46-1B-Pretrain; (2) supervised finetuning, yielding MiLMMT-46-1B-v0.1; and (3) reinforcement learning; and (4) model merging, yielding this model, MiLMMT-46-1B-v1.."
+    },
+    {
+      "title": "README.md · xiaomi-research/MiLMMT-46-1B-v1.0 at main",
+      "url": "https://huggingface.co/xiaomi-research/MiLMMT-46-1B-v1.0/blob/main/README.md",
+      "snippet": "Its training builds on Gemma3-1B through four stages: (1) continual pretraining on 143 billion tokens of monolingual and parallel data across 46 languages, yielding MiLMMT-46-1B-Pretrain; (2) supervised finetuning, yielding MiLMMT-46-1B-v0.1; and (3) reinforcement learning; and (4) model merging, yielding this model, MiLMMT-46-1B-v1.."
+    },
+    {
+      "title": "MiLMMT-46-1B-v1.0 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/xiaomi-research/MiLMMT-46-1B-v1.0",
+      "snippet": "Deploy MiLMMT-46-1B-v1. with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - xiaomi-research/gemmax: Gemma-based Multilingual Machine ...",
+      "url": "https://github.com/xiaomi-research/gemmax",
+      "snippet": "Feb. 12 2026: The MiLMMT-v0.1 paper Scaling Model and Data for Multilingual Machine Translation with Open Large Language Models is available on ArXiv! Jan. 23 2025: The GemmaX2 paper Multilingual Machine Translation with Open Large Language Models at Practical Scale: An Empirical Study has been accepted at NAACL 2025!"
+    },
+    {
+      "title": "Latest AI Model Releases: July 2026 Timeline - promptzone.com",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline. A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video gene"
+    }
+  ]
+}

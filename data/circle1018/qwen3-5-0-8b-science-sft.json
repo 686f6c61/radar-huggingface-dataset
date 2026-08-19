@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "circle1018/qwen3.5-0.8b-science-sft",
+  "slug": "circle1018-qwen3-5-0-8b-science-sft",
+  "author": "circle1018",
+  "url": "https://huggingface.co/circle1018/qwen3.5-0.8b-science-sft",
+  "created_at": "2026-08-15T09:21:47.000Z",
+  "updated_at": "2026-08-15T10:56:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 269,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 3029654943,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:07:57.960Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Learn how to install, run, benchmark, compare, and demo Qwen3.5 0.8B locally. Explore hardware needs, performance tests, pricing, and alternatives."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn&#x27;t a single model. It&#x27;s a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    },
+    {
+      "title": "Qwen 3.5 0.8B - CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-0.8b",
+      "snippet": "Qwen 3.5 0.8B ... Alibaba · 0.8B · Dense Ultra-tiny model for embedded and edge HuggingFace Ollama 406.3K downloads 317 likes 2026-02 32K context"
+    }
+  ]
+}

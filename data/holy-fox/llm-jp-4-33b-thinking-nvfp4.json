@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Holy-fox/llm-jp-4-33b-thinking-nvfp4",
+  "slug": "holy-fox-llm-jp-4-33b-thinking-nvfp4",
+  "author": "Holy-fox",
+  "url": "https://huggingface.co/Holy-fox/llm-jp-4-33b-thinking-nvfp4",
+  "created_at": "2026-08-18T14:47:13.000Z",
+  "updated_at": "2026-08-18T14:54:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "quantized",
+    "llm-compressor",
+    "compressed-tensors",
+    "vllm",
+    "japanese",
+    "reasoning",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:llm-jp/llm-jp-4-33b-thinking",
+    "base_model:quantized:llm-jp/llm-jp-4-33b-thinking",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19567089536,
+  "parameters_human": "19.57B",
+  "storage_bytes": 21581240352,
+  "storage_human": "21.6 GB",
+  "base_model": "llm-jp/llm-jp-4-33b-thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM-jp-4 Models - a llm-jp Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/llm-jp/llm-jp-4-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sakamakismile/llm-jp-4-32b-a3b-thinking-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/sakamakismile/llm-jp-4-32b-a3b-thinking-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llm jp 4 32b a3b thinking — ThinkLLM",
+      "url": "https://thinkllm.dev/models/llm-jp-4-32b-a3b-thinking",
+      "snippet": "A Japanese-language focused model from llm-jp that incorporates a thinking or reasoning step before producing responses. With 32 billion total parameters but only 3 billion active at a time, it uses a sparse mixture-of-experts architecture that keeps inference costs lower than its full parameter count suggests. Its open-weight nature means it can be run locally and inspected freely."
+    },
+    {
+      "title": "Llm Jp 4 32B A3b Thinking by llm-jp — VRAM 64.3GB, 64K context | LLM ...",
+      "url": "https://llm-explorer.com/model/llm-jp%2Fllm-jp-4-32b-a3b-thinking,77m1zzzM4iUisoCJaHgEI9",
+      "snippet": "Llm Jp 4 32B A3b Thinking is an open-source 32b LLM by llm-jp. VRAM 64.3GB, 64K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - llm-jp/llm-jp-4-cookbook: Example scripts for LLM-jp-4 models",
+      "url": "https://github.com/llm-jp/llm-jp-4-cookbook",
+      "snippet": "Using llm-jp-4-*-instruct and llm-jp-4-*-thinking models LLM-jp-4 models with the suffix -instruct or -thinking are fine-tuned models for chatbot applications. -instruct models are tuned for responding without reasoning, while -thinking models work with a specific reasoning effort (low, medium, or high)."
+    }
+  ]
+}

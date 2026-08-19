@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "stabilityai/stable-diffusion-3.5-large",
+  "slug": "stabilityai-stable-diffusion-3-5-large",
+  "author": "stabilityai",
+  "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
+  "created_at": "2024-10-22T07:29:57.000Z",
+  "updated_at": "2024-10-22T14:36:33.000Z",
+  "license": "stabilityai-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "en",
+    "arxiv:2403.03206",
+    "license:other",
+    "diffusers:StableDiffusion3Pipeline",
+    "region:us"
+  ],
+  "likes": 3709,
+  "downloads_30d": 75066,
+  "trending_score": 8,
+  "parameters": 8146280768,
+  "parameters_human": "8.15B",
+  "storage_bytes": 75493590524,
+  "storage_human": "75.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/stable-diffusion-3.5-large · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Stable Diffusion 3.5 - Stability AI",
+      "url": "https://stability.ai/news-updates/introducing-stable-diffusion-3-5",
+      "snippet": "Today we are introducing Stable Diffusion 3.5. This open release includes multiple model variants, including Stable Diffusion 3.5 Large and Stable Diffusion 3.5 Large Turbo, and as of October 29th, Stable Diffusion 3.5 Medium."
+    },
+    {
+      "title": "README.md · stabilityai/stable-diffusion-3.5-large at main",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stable-diffusion-3.5-large Model by Stability AI | NVIDIA NIM",
+      "url": "https://build.nvidia.com/stabilityai/stable-diffusion-3_5-large",
+      "snippet": "Stable Diffusion 3.5 is an 8B parameter base model that produces high-quality images, with Depth and Canny ControlNets offering controllability over image outputs."
+    },
+    {
+      "title": "stable-diffusion-3.5-large Model by Stability AI | NVIDIA NIM",
+      "url": "https://build.nvidia.com/stabilityai/stable-diffusion-3_5-large/deploy",
+      "snippet": "Get API Key To access Stable Diffusion 3.5 Large model read and accept Stable Diffusion 3.5 Large, Stable Diffusion 3.5 Large TensorRT and Stable Diffusion 3.5 Large ControlNet TensorRT License Agreements and Acceptable Use Policy. Create a new Hugging Face token with Read access to contents of all public gated repos you can access permission."
+    }
+  ]
+}

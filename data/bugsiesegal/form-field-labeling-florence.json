@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "bugsiesegal/form-field-labeling-florence",
+  "slug": "bugsiesegal-form-field-labeling-florence",
+  "author": "bugsiesegal",
+  "url": "https://huggingface.co/bugsiesegal/form-field-labeling-florence",
+  "created_at": "2025-12-22T15:10:47.000Z",
+  "updated_at": "2026-08-14T19:11:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "florence2",
+    "custom_code",
+    "base_model:microsoft/Florence-2-base",
+    "base_model:adapter:microsoft/Florence-2-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 231567705,
+  "parameters_human": "231.6M",
+  "storage_bytes": 1083022165,
+  "storage_human": "1.1 GB",
+  "base_model": "microsoft/Florence-2-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

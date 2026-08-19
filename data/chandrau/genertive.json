@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ChandraU/Genertive",
+  "slug": "chandrau-genertive",
+  "author": "ChandraU",
+  "url": "https://huggingface.co/ChandraU/Genertive",
+  "created_at": "2026-08-17T04:47:51.000Z",
+  "updated_at": "2026-08-17T04:50:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chandra Bhagavatula",
+      "url": "https://www.chandrab.page/",
+      "snippet": "2. [Geekwire] Teaching artificial intelligence right from wrong: New tool from AI2 aims to model ethical judgments 3. [Wired] This Program Can Give AI a Sense of Ethics—Sometimes 4. [Geekwire] Researchers develop new way to help machine-generated language systems reduce toxic language 5. [Science Daily] New test reveals AI still lacks common ..."
+    },
+    {
+      "title": "GitHub - datalab-to/chandra: OCR model that handles complex tables ...",
+      "url": "https://github.com/datalab-to/chandra",
+      "snippet": "OCR model that handles complex tables, forms, handwriting with full layout. - datalab-to/chandra"
+    },
+    {
+      "title": "Stanford University CS236: Deep Generative Models",
+      "url": "https://deepgenerativemodels.github.io/",
+      "snippet": "Generative models are widely used in many subfields of AI and Machine Learning. Recent advances in parameterizing these models using deep neural networks, combined with progress in stochastic optimization methods, have enabled scalable modeling of complex, high-dimensional data including images, text, and speech. In this course, we will study the probabilistic foundations and learning ..."
+    },
+    {
+      "title": "PDF Lecture 13: Generative Models - Stanford University",
+      "url": "https://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture13.pdf",
+      "snippet": "Fully visible belief network Explicit density model Use chain rule to decompose likelihood of an image x into product of 1-d distributions:"
+    },
+    {
+      "title": "Generative artificial intelligence: a systematic review and ...",
+      "url": "https://link.springer.com/article/10.1007/s11042-024-20016-1",
+      "snippet": "In recent years, the study of artificial intelligence (AI) has undergone a paradigm shift. This has been propelled by the groundbreaking capabilities of generative models both in supervised and unsupervised learning scenarios. Generative AI has shown state-of-the-art performance in solving perplexing real-world conundrums in fields such as image translation, medical diagnostics, textual ..."
+    }
+  ]
+}

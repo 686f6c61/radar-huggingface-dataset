@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Eku127/swiftvln-satnav-qwen3vl-2b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed",
+  "slug": "eku127-swiftvln-satnav-qwen3vl-2b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed",
+  "author": "Eku127",
+  "url": "https://huggingface.co/Eku127/swiftvln-satnav-qwen3vl-2b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed",
+  "created_at": "2026-08-15T17:13:38.000Z",
+  "updated_at": "2026-08-15T17:38:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "text-generation",
+    "swiftvln",
+    "satnav",
+    "vision-language-navigation",
+    "embodied-ai",
+    "robotics",
+    "qwen3-vl",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 2438696960,
+  "parameters_human": "2.44B",
+  "storage_bytes": 4888893567,
+  "storage_human": "4.9 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swiftvln-satnav-3b-1ep-f32s4-overlap0-pf-h8-random-pool-s2-noembed",
+      "url": "https://huggingface.co/Eku127/swiftvln-satnav-3b-1ep-f32s4-overlap0-pf-h8-random-pool-s2-noembed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Eku127 (Jiajun Jiang) - Hugging Face",
+      "url": "https://huggingface.co/Eku127/models",
+      "snippet": "Eku127&#x27;s models9 Sort: Recently updated Eku127/swiftvln-satnav-3b-1ep-f32s4-overlap0-gtc-k512-noembed Updated about 2 hours ago"
+    },
+    {
+      "title": "swiftvln-satnav-3b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed",
+      "url": "https://friendli.ai/models/Eku127/swiftvln-satnav-3b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed",
+      "snippet": "The model is not intended to be used as a general-purpose chat, VQA, robotics, or real-world autonomous navigation model. It expects the prompt format, observation construction, and SatNav evaluation environment used by SwiftVLN."
+    },
+    {
+      "title": "swiftvln-satnav-3b-1ep-f32s4-overlap0-map-g1000-l400-r448-d20-s2-noembed",
+      "url": "https://friendli.ai/models/Eku127/swiftvln-satnav-3b-1ep-f32s4-overlap0-map-g1000-l400-r448-d20-s2-noembed",
+      "snippet": "Model Summary This repository contains a SwiftVLN 3B checkpoint for SatNav aerial visual-language navigation evaluation. The checkpoint is based on the Qwen2.5-VL 3B architecture and is packaged as Hugging Face inference/evaluation artifacts for the SwiftVLN codebase."
+    },
+    {
+      "title": "Eku127 (Jiajun Jiang) · GitHub",
+      "url": "https://github.com/Eku127/",
+      "snippet": "Habitat-based tools for dynamic arrangement and data recording Python 33 9"
+    }
+  ]
+}

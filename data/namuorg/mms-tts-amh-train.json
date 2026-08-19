@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Namuorg/mms-tts-amh-train",
+  "slug": "namuorg-mms-tts-amh-train",
+  "author": "Namuorg",
+  "url": "https://huggingface.co/Namuorg/mms-tts-amh-train",
+  "created_at": "2026-08-18T05:17:55.000Z",
+  "updated_at": "2026-08-18T05:18:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83012790,
+  "parameters_human": "83.0M",
+  "storage_bytes": 332153032,
+  "storage_human": "332 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MMS · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mms",
+      "snippet": "MMS-TTS uses the same model architecture as VITS, which was added to 🤗 Transformers in v4.33. MMS trains a separate model checkpoint for each of the 1100+ languages in the project."
+    },
+    {
+      "title": "namu-tts-amharic-tts-internship/configs at main · Namuai-org/namu-tts ...",
+      "url": "https://github.com/Namuai-org/namu-tts-amharic-tts-internship/tree/main/configs",
+      "snippet": "So the conversion was run before Day 1 and published as Namuorg/mms-tts-amh-train, which is what this config points at. You do not build it, and you do not change this field."
+    },
+    {
+      "title": "namu-tts-amharic-tts-internship/README.md at main · Namuai-org/namu-tts ...",
+      "url": "https://github.com/Namuai-org/namu-tts-amharic-tts-internship/blob/main/README.md",
+      "snippet": "We fine-tune facebook/mms-tts-amh — an 83M-parameter VITS model that already speaks Amharic, badly — on a cleaned single-speaker Amharic corpus, using ylacombe/finetune-hf-vits."
+    },
+    {
+      "title": "kblz/mms_tts_amh-train · Hugging Face",
+      "url": "https://huggingface.co/kblz/mms_tts_amh-train",
+      "snippet": "kblz / mms_tts_amh-train like 0 Text-to-Audio Transformers Safetensors vits arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training ..."
+    },
+    {
+      "title": "MMS — Docs | Model Database",
+      "url": "https://modeldatabase.com/docs/transformers/model_doc/mms.html",
+      "snippet": "MMS trains a separate model checkpoint for each of the 1100+ languages in the project. All available checkpoints can be found on the Hugging Face Hub: facebook/mms-tts, and the inference documentation under VITS."
+    }
+  ]
+}

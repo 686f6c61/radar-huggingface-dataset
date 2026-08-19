@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "Quatfit/Quatfit-Mini",
+  "slug": "quatfit-quatfit-mini",
+  "author": "Quatfit",
+  "url": "https://huggingface.co/Quatfit/Quatfit-Mini",
+  "created_at": "2026-06-26T09:17:36.000Z",
+  "updated_at": "2026-08-18T01:55:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "hi",
+    "multilingual",
+    "gu",
+    "mr",
+    "te",
+    "fr",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "quatfit",
+    "multimodal",
+    "vision",
+    "audio",
+    "text generation",
+    "image-text-to-text",
+    "agentic",
+    "coding",
+    "fasterllm",
+    "sota",
+    "conversational",
+    "en",
+    "hi",
+    "multilingual",
+    "gu",
+    "mr",
+    "te",
+    "fr",
+    "ja",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 31798406593,
+  "storage_human": "31.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quatfit-Mini - Hugging Face",
+      "url": "https://huggingface.co/Quatfit/Quatfit-Mini",
+      "snippet": "Quatfit Mini is an 8-billion-parameter multimodal foundation model developed by Quatfit AI Research. Built for practical intelligence, Quatfit Mini combines advanced reasoning, multimodal understanding, coding capabilities, long-context processing, and agentic tool use in an efficient architecture optimized for real-world deployment."
+    },
+    {
+      "title": "Quatfit-Mini-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Quatfit/Quatfit-Mini-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quatfit Mini by Quatfit — VRAM 31.8GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Quatfit%2FQuatfit-Mini,5KtuzbmrHd0u0DcNiBQPNX",
+      "snippet": "Quatfit Mini is an open-source 7.9b LLM by Quatfit. VRAM 31.8GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "We are thrilled to announce the launch of Quatfit-Mini ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/quatfit_we-are-thrilled-to-announce-the-launch-activity-7479365371586838528-jDuX",
+      "snippet": "🚀 We are thrilled to announce the launch of Quatfit-Mini today, marking a significant milestone for Quatfit. After months of research, experimentation, and numerous iterations, Quatfit-Mini is ..."
+    },
+    {
+      "title": "Jatin Verma - Founder & CEO @ Quatfit | BTech in Computer Science ...",
+      "url": "https://in.linkedin.com/in/foundrjatin",
+      "snippet": "Quatfit, under my leadership as Founder, emphasizes communication, consulting, and… · Experience: Quatfit · Education: Compucom Institute of Technology and Management · Location: Tonk · 500+ connections on LinkedIn. View Jatin Verma&#x27;s profile on LinkedIn, a professional community of 1 billion members."
+    }
+  ]
+}

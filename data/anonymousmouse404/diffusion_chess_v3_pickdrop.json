@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AnonymousMouse404/diffusion_chess_v3_pickdrop",
+  "slug": "anonymousmouse404-diffusion_chess_v3_pickdrop",
+  "author": "AnonymousMouse404",
+  "url": "https://huggingface.co/AnonymousMouse404/diffusion_chess_v3_pickdrop",
+  "created_at": "2026-08-15T21:26:57.000Z",
+  "updated_at": "2026-08-15T21:29:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:AnonymousMouse404/chess",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 277840246,
+  "parameters_human": "277.8M",
+  "storage_bytes": 1111427192,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnonymousMouse404/diffusion_chess_v3_oc4 · Hugging Face",
+      "url": "https://huggingface.co/AnonymousMouse404/diffusion_chess_v3_oc4",
+      "snippet": "AnonymousMouse404 / diffusion_chess_v3_oc4 like 0 Robotics LeRobot Safetensors AnonymousMouse404/chess diffusion arxiv:2303.04137 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AnonymousMouse404/Diffusion · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/AnonymousMouse404/Diffusion",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Core Models - Stability AI",
+      "url": "https://stability.ai/core-models",
+      "snippet": "Stability AI may remove or modify one or more of the Core Models listed on this page. In this circumstance, Stability AI will notify you it is removing or making certain Core Models inaccessible. Other Stability AI Models Stability AI has other models not included in the Core Models above, for which your usage is subject to the terms of each individual model&#x27;s applicable license. For more ..."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,965 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    }
+  ]
+}

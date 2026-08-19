@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "harsh762011/startup32",
+  "slug": "harsh762011-startup32",
+  "author": "harsh762011",
+  "url": "https://huggingface.co/harsh762011/startup32",
+  "created_at": "2026-05-02T12:56:36.000Z",
+  "updated_at": "2026-08-18T00:58:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/phi-4-mini-reasoning-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 278,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1513995058,
+  "storage_human": "1.5 GB",
+  "base_model": "unsloth/phi-4-mini-reasoning-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harsh762011/startup32 · Hugging Face",
+      "url": "https://huggingface.co/harsh762011/startup32",
+      "snippet": "harsh762011 / startup32 like 0 Text Generation PEFT Safetensors Transformers lora sft trl unsloth conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "harsh762011 (Harsh Srivastava) - Hugging Face",
+      "url": "https://huggingface.co/harsh762011/activity/all",
+      "snippet": "I am a student and i have a not far but a small knowledge of fine tuning an AI model and fine tuning the phi 4 mini reasoning on hiighly self-formatted dataset i want to create my own AI company if..."
+    },
+    {
+      "title": "Model Preparation — FuriosaAI Developer Center 2026.2.0 documentation",
+      "url": "https://developer.furiosa.ai/v2026.2.0/en/furiosa_llm/model-preparation.html",
+      "snippet": "Model Preparation # To run a trained model, fine-tuned model or quantized model by yourself, Furiosa-LLM needs to convert the model into a model artifact. Also, if you want to apply specific optimization configurations or parallelization strategies for your workload, you must perform this model preparation step."
+    },
+    {
+      "title": "GitHub - techjarves/Uncensored-Local-Studio: Uncensored local AI studio ...",
+      "url": "https://github.com/techjarves/Uncensored-Local-Studio",
+      "snippet": "Uncensored AI Studio is a completely offline, zero-setup, self-contained AI studio for Windows, Linux, and macOS. Unlike cloud-based AI systems, it runs entirely on your own hardware with no censorship, tracking, subscriptions, or login requirements. It unifies four major local AI capabilities into one high-performance desktop interface:"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

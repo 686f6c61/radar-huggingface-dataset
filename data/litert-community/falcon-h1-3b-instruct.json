@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "litert-community/Falcon-H1-3B-Instruct",
+  "slug": "litert-community-falcon-h1-3b-instruct",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Falcon-H1-3B-Instruct",
+  "created_at": "2026-08-14T04:00:46.000Z",
+  "updated_at": "2026-08-14T04:14:57.000Z",
+  "license": "falcon-llm-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "hybrid",
+    "mamba2",
+    "falcon-h1",
+    "text-generation",
+    "base_model:tiiuae/Falcon-H1-3B-Instruct",
+    "base_model:finetune:tiiuae/Falcon-H1-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3385302368,
+  "storage_human": "3.4 GB",
+  "base_model": "tiiuae/Falcon-H1-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/Falcon3-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Falcon3-3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tiiuae/Falcon-H1-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/tiiuae/Falcon-H1-3B-Instruct",
+      "snippet": "0 Follow Technology Innovation Institute 1.35k Text Generation Transformers Safetensors falcon_h1 falcon-h1 conversational License:falcon-llm-license Model card FilesFiles and versions Community Train Deploy Use this model Table of Contents TL;DR Model Details Model Description Training details Usage Inference 🤗 transformers vLLM llama.cpp ..."
+    },
+    {
+      "title": "GitHub - iinbal/nlp-Falcon-H1-3B-Instruct",
+      "url": "https://github.com/iinbal/nlp-Falcon-H1-3B-Instruct",
+      "snippet": "Contribute to iinbal/nlp-Falcon-H1-3B-Instruct development by creating an account on GitHub."
+    },
+    {
+      "title": "Request: add Falcon3-3B-Instruct to litert-community (.litertlm ...",
+      "url": "https://github.com/google-ai-edge/LiteRT-LM/issues/2617",
+      "snippet": "Hi — Falcon3-3B-Instruct is converted to LiteRT-LM and verified on-device. I&#x27;d like it added to the litert-community Hugging Face org (or to get access to publish it there). Links Model (public): h..."
+    },
+    {
+      "title": "Falcon H1 3B Instruct by tiiuae - LLM Explorer",
+      "url": "https://llm-explorer.com/model/tiiuae%2FFalcon-H1-3B-Instruct,6gU2fjjurx3QTztw0zGh8N",
+      "snippet": "Falcon H1 3B Instruct is an open-source 3b LLM by tiiuae. VRAM 6.3GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

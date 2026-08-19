@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_1Bpt_hfbody_20M_s1_2026-08-14_06-57-25_844691-pt",
+  "slug": "alexkstern-nca_dose_1bpt_hfbody_20m_s1_2026-08-14_06-57-25_844691-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_1Bpt_hfbody_20M_s1_2026-08-14_06-57-25_844691-pt",
+  "created_at": "2026-08-14T07:22:53.000Z",
+  "updated_at": "2026-08-14T07:23:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_nca-paper-share200-2048",
+    "seed_1",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ppt_nca-paper-share200-2048",
+      "snippet": "alexkstern/nca_dose_1Bpt_hfbody_5M_s2_2026-08-14_06-05-21_616096-pt Updated about 1 hour ago"
+    },
+    {
+      "title": "alexkstern (astar) - Hugging Face",
+      "url": "https://huggingface.co/alexkstern/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 14 hours ago ... published a model about 14 hours ago"
+    },
+    {
+      "title": "UniProt",
+      "url": "https://www.uniprot.org/",
+      "snippet": "UniProt is the world&#x27;s leading high-quality, comprehensive and freely accessible resource of protein sequence and functional information."
+    },
+    {
+      "title": "Interatomic Potentials Repository - NIST",
+      "url": "https://www.ctcms.nist.gov/potentials/system/I/",
+      "snippet": "Notes: This is the I interaction from the \"Universal\" parameterization for the openKIM LennardJones612 model driver.The parameterization uses a shifted cutoff so that all interactions have a continuous energy function at the cutoff radius. This model was automatically fit using Lorentz-Berthelotmixing rules."
+    },
+    {
+      "title": "Noncompartmental Analysis - MATLAB & Simulink - MathWorks",
+      "url": "https://www.mathworks.com/help/simbio/ug/non-compartmental-analysis.html",
+      "snippet": "NCA (noncompartmental analysis) lets you calculate pharmacokinetic parameters of a drug without requiring the assumption of a compartmental model."
+    }
+  ]
+}

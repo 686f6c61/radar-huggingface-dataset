@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SamY36/Project_final",
+  "slug": "samy36-project_final",
+  "author": "SamY36",
+  "url": "https://huggingface.co/SamY36/Project_final",
+  "created_at": "2026-08-15T09:16:13.000Z",
+  "updated_at": "2026-08-15T09:17:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "pcb-defect-detection",
+    "yolov8",
+    "k210",
+    "edge-ai",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18327404,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SamY36 (Sam Coper) - Hugging Face",
+      "url": "https://huggingface.co/SamY36",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 14 days ago ... updated a model 23 days ago ... published a model 23 days ago"
+    },
+    {
+      "title": "SamY36 (Sam Coper) - Hugging Face",
+      "url": "https://huggingface.co/SamY36/models",
+      "snippet": "Recent Activity liked a model20 days ago empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF updated a model29 days ago SamY36/Achilles-9B published a model29 days ago SamY36/Achilles-9B View all activity"
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    },
+    {
+      "title": "Final Year Project: AI-Powered Personal Finance Tracker - GitHub",
+      "url": "https://github.com/sugapriya-k/Final-Year-Project",
+      "snippet": "🎓 Final Year Project: AI-Powered Personal Finance Tracker A Smart, AI-driven platform for modern personal finance management — combining voice input, receipt scanning, machine learning, and predictive analytics to help users take control of their financial future."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    }
+  ]
+}

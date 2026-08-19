@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "d0gr/dreamshaper-xl-lightning-unet-onnx",
+  "slug": "d0gr-dreamshaper-xl-lightning-unet-onnx",
+  "author": "d0gr",
+  "url": "https://huggingface.co/d0gr/dreamshaper-xl-lightning-unet-onnx",
+  "created_at": "2026-08-17T17:12:05.000Z",
+  "updated_at": "2026-08-17T17:20:05.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "stable-diffusion-xl",
+    "text-to-image",
+    "base_model:Lykon/dreamshaper-xl-lightning",
+    "base_model:quantized:Lykon/dreamshaper-xl-lightning",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5142505942,
+  "storage_human": "5.1 GB",
+  "base_model": "Lykon/dreamshaper-xl-lightning",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lykon/dreamshaper-xl-lightning · Hugging Face",
+      "url": "https://huggingface.co/Lykon/dreamshaper-xl-lightning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "amd/dreamshaper-xl-lightning-amdnpu · Hugging Face",
+      "url": "https://huggingface.co/amd/dreamshaper-xl-lightning-amdnpu",
+      "snippet": "Text-to-Image ONNX Safetensors English stable-diffusion stable-diffusion-diffusers stable-diffusion-xl stable-diffusion-xl-lightning RyzenAI Quantization ONNX Computer Vision License:openrail++ Model card FilesFiles and versions xet Community Copy to bucket new 🚀 Dreamshaper XL Lightning on AMD AI PC NPU Model Details ⚡ Intended Use ⚓ ..."
+    },
+    {
+      "title": "DreamShaper XL - Lightning DPM++ SDE | Stable Diffusion XL Checkpoint ...",
+      "url": "https://civitai.com/models/112902/dreamshaper-xl",
+      "snippet": "DreamShaper is a general purpose SD model that aims at doing everything well, photos, art, anime, manga. It&#x27;s designed to go against other general purpose models and pipelines like Midjourney and DALL-E."
+    },
+    {
+      "title": "Dreamshaper XL - Open Laboratory",
+      "url": "https://openlaboratory.com/models/dreamshaper-xl/",
+      "snippet": "Fine-Tuned on SDXL, this is a general purpose model designed for photos, art, anime, and manga. This Lightning version can generate quality images in few steps."
+    },
+    {
+      "title": "DreamShaper XL — Versatile SDXL images with DreamShaper XL",
+      "url": "https://dreamshaperxl.com/",
+      "snippet": "A general-purpose SDXL finetune, not a one-trick model Creators reach for DreamShaper XL when they want one checkpoint that covers many looks, with newer Turbo and Lightning builds for fast sampling."
+    }
+  ]
+}

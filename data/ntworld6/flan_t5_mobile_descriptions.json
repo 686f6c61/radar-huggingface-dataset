@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ntworld6/flan_t5_mobile_descriptions",
+  "slug": "ntworld6-flan_t5_mobile_descriptions",
+  "author": "ntworld6",
+  "url": "https://huggingface.co/ntworld6/flan_t5_mobile_descriptions",
+  "created_at": "2026-08-17T05:48:00.000Z",
+  "updated_at": "2026-08-17T05:48:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:google/flan-t5-small",
+    "base_model:finetune:google/flan-t5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307872377,
+  "storage_human": "308 MB",
+  "base_model": "google/flan-t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FLAN-T5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/flan-t5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FLAN-T5 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.27.2/en/model_doc/flan-t5",
+      "snippet": "FLAN-T5 was released in the paper Scaling Instruction-Finetuned Language Models - it is an enhanced version of T5 that has been finetuned in a mixture of tasks. One can directly use FLAN-T5 weights without finetuning the model:"
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/flan-t5.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/flan-t5.md",
+      "snippet": "FLAN-T5 was released in the paper Scaling Instruction-Finetuned Language Models - it is an enhanced version of T5 that has been finetuned in a mixture of tasks. One can directly use FLAN-T5 weights without finetuning the model:"
+    },
+    {
+      "title": "LLM Powered Text Entry Decoding and Flexible Typing on Smartphones",
+      "url": "https://dl.acm.org/doi/full/10.1145/3706598.3714314",
+      "snippet": "In this study, we utilized the FLAN-T5 small model as our base LLM due to its practicality and balanced performance-efficiency trade-off. The model only contains 77M parameters and takes 293MB of space on disk, which makes it resource efficient for mobile deployments."
+    },
+    {
+      "title": "T5 (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/T5_(language_model)",
+      "snippet": "T5 (Text-to-Text Transfer Transformer) is a series of large language models developed by Google AI introduced in 2019. [1][2] Like the original Transformer model, [3] T5 models are encoder-decoder Transformers, where the encoder processes the input text, and the decoder generates the output text."
+    }
+  ]
+}

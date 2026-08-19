@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "pipecat-ai/NVIDIA-NemotronLabs-VoiceChat-11B-Spark",
+  "slug": "pipecat-ai-nvidia-nemotronlabs-voicechat-11b-spark",
+  "author": "pipecat-ai",
+  "url": "https://huggingface.co/pipecat-ai/NVIDIA-NemotronLabs-VoiceChat-11B-Spark",
+  "created_at": "2026-08-04T19:15:12.000Z",
+  "updated_at": "2026-08-15T23:29:45.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speech-to-speech",
+    "nemotron",
+    "dgx-spark",
+    "gptq",
+    "vllm",
+    "audio-to-audio",
+    "base_model:nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+    "base_model:finetune:nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25203682542,
+  "storage_human": "25.2 GB",
+  "base_model": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pipecat-ai/NVIDIA-NemotronLabs-VoiceChat-11B-Spark · Hugging Face",
+      "url": "https://huggingface.co/pipecat-ai/NVIDIA-NemotronLabs-VoiceChat-11B-Spark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pipecat-ai/NVIDIA-NemotronLabs-VoiceChat-11B-Spark at main",
+      "url": "https://huggingface.co/pipecat-ai/NVIDIA-NemotronLabs-VoiceChat-11B-Spark/tree/main",
+      "snippet": "nemotron dgx-spark gptq vllm License:openmdw-1.1 Model card FilesFiles and versions xet Community Copy to bucket new main NVIDIA-NemotronLabs-VoiceChat-11B-Spark 19.7 GB Ctrl+K Ctrl+K 1 contributor History:5 commits Kwindla Add files using upload-large-folder tool a20c685 verifiedabout 11 hours ago calibrationAdd files using upload-large-folder ..."
+    },
+    {
+      "title": "NVIDIA-NemotronLabs-VoiceChat-11B - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - pipecat-ai/nemotron-voicechat-dgx-spark: Run NVIDIA ...",
+      "url": "https://github.com/pipecat-ai/nemotron-voicechat-dgx-spark",
+      "snippet": "NVIDIA NemotronLabs VoiceChat is an end-to-end, speech-to-speech, full-duplex model for conversational AI. This is the first open source, full-duplex model to support tool calling. NVIDIA released the model as a research-oriented \"Labs\" checkpoint. This repository runs VoiceChat 11B on one DGX Spark ..."
+    },
+    {
+      "title": "nemotron-voicechat Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-voicechat",
+      "snippet": "AI models generate responses and outputs based on complex algorithms and machine learning techniques, and those responses or outputs may be inaccurate, harmful, biased or indecent. By testing this model, you assume the risk of any harm caused by any response or output of the model."
+    }
+  ]
+}

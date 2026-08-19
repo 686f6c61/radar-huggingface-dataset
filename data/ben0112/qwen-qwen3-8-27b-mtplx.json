@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ben0112/Qwen-Qwen3.8-27B-MTPLX",
+  "slug": "ben0112-qwen-qwen3-8-27b-mtplx",
+  "author": "ben0112",
+  "url": "https://huggingface.co/ben0112/Qwen-Qwen3.8-27B-MTPLX",
+  "created_at": "2026-08-15T04:19:22.000Z",
+  "updated_at": "2026-08-15T06:14:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "multi-token-prediction",
+    "mtplx",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1368,
+  "trending_score": 0,
+  "parameters": 4204731904,
+  "parameters_human": "4.20B",
+  "storage_bytes": 16002433241,
+  "storage_human": "16.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-MTPLX-Optimized-Quality - Hugging Face",
+      "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B brings the latest generation of the Qwen family to a model size well suited for local AI development. The Qwen 3.8 generation continues the focus on coding, real-world work, research, and long-horizon AI workloads, extending the rapid pace of innovation we are seeing across open AI."
+    },
+    {
+      "title": "Qwen3.8-27B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is an AI model released by Qwen on Friday, Aug 14 2026, 11 days after Qwen3.8-Max. It is an open-weight model — the trained weights are available to download and run."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "ben0112/Qwen3.8-27B-oQ4e-fp16 · Hugging Face",
+      "url": "https://huggingface.co/ben0112/Qwen3.8-27B-oQ4e-fp16",
+      "snippet": "Instructions to use ben0112/Qwen3.8-27B-oQ4e-fp16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use ben0112/Qwen3.8-27B-oQ4e-fp16 with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ4e-fp16 ben0112/Qwen3.8-27B-oQ4e-fp16 Notebooks Google Colab ..."
+    }
+  ]
+}

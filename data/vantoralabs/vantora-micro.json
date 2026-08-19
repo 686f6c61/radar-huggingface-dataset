@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "VantoraLabs/Vantora-Micro",
+  "slug": "vantoralabs-vantora-micro",
+  "author": "VantoraLabs",
+  "url": "https://huggingface.co/VantoraLabs/Vantora-Micro",
+  "created_at": "2026-08-16T11:02:05.000Z",
+  "updated_at": "2026-08-16T11:02:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "micro",
+    "nano",
+    "small",
+    "base-model",
+    "banana-mind",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9800,
+  "parameters_human": "9800",
+  "storage_bytes": 41200,
+  "storage_human": "41200 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

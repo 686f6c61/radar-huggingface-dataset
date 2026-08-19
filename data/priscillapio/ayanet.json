@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "PriscillaPio/AYANet",
+  "slug": "priscillapio-ayanet",
+  "author": "PriscillaPio",
+  "url": "https://huggingface.co/PriscillaPio/AYANet",
+  "created_at": "2026-08-16T18:14:20.000Z",
+  "updated_at": "2026-08-18T06:33:54.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "remote-sensing",
+    "building-change-detection",
+    "wavelet",
+    "license:gpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99737818,
+  "storage_human": "100 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Building Change Detection",
+      "dataset": "LEVIR-CD",
+      "metric": "F1-Score",
+      "value": 91.41
+    },
+    {
+      "task": "Building Change Detection",
+      "dataset": "LEVIR-CD",
+      "metric": "IoU",
+      "value": 84.17
+    }
+  ],
+  "sources": [
+    {
+      "title": "PriscillaPio/AYANet · Hugging Face",
+      "url": "https://huggingface.co/PriscillaPio/AYANet",
+      "snippet": "PriscillaPio / AYANet like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - Ayana-Inria/AYANet",
+      "url": "https://github.com/Ayana-Inria/AYANet",
+      "snippet": "Contribute to Ayana-Inria/AYANet development by creating an account on GitHub."
+    },
+    {
+      "title": "PriscillaPio · GitHub",
+      "url": "https://github.com/PriscillaPio",
+      "snippet": "GitHub is where PriscillaPio builds software. Add an optional note: Please don&#x27;t include any personal information such as legal names or email addresses. Maximum 100 characters, markdown supported. This note will be visible to only you. Block user"
+    },
+    {
+      "title": "PDF AYANet: A Gabor Wavelet-based and CNN-based Double Encoder for Building ...",
+      "url": "https://team.inria.fr/ayana/files/2024/12/demo_ayana2024_Priscilla.pdf",
+      "snippet": "Utilizing the buildings&#x27; distinctive features in RS imagery (repetitive texture) → Gabor filters AYANet: a BCD model with double encoders Gabor encoder: Gabor filters modulated in CNN to extract buildings&#x27; features CNN-based encoder: extracting other high-level features AYANet showed promising results when compared with SOTA on"
+    },
+    {
+      "title": "AYANet: A Gabor Wavelet-based and CNN-based Double Encoder for Building ...",
+      "url": "https://hal.science/hal-04675243v1/document",
+      "snippet": "In this paper, we propose a new BCD model with a dou-ble encoder architecture. The Gabor wavelet-based encoder which aims to highlight the characteristic of buildings on RS imagery i.e., the com-paratively more regular and repetitive texture than other objects on RS images."
+    }
+  ]
+}

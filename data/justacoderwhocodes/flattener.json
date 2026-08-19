@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "justacoderwhocodes/flattener",
+  "slug": "justacoderwhocodes-flattener",
+  "author": "justacoderwhocodes",
+  "url": "https://huggingface.co/justacoderwhocodes/flattener",
+  "created_at": "2026-08-17T06:33:39.000Z",
+  "updated_at": "2026-08-17T11:27:44.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "safetensors",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "controlnet",
+    "diffusers-training",
+    "base_model:Yntec/mistoonRuby3",
+    "base_model:adapter:Yntec/mistoonRuby3",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361279120,
+  "parameters_human": "361.3M",
+  "storage_bytes": 2062973977,
+  "storage_human": "2.1 GB",
+  "base_model": "Yntec/mistoonRuby3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "justacoderwhocodes (Just A Coder Who Codes) - Hugging Face",
+      "url": "https://huggingface.co/justacoderwhocodes",
+      "snippet": "User profile of Just A Coder Who Codes on Hugging Face"
+    },
+    {
+      "title": "[2512.06629v1] FlatFormer: A Flat Transformer Knowledge Tracing Model ...",
+      "url": "https://arxiv.org/abs/2512.06629v1",
+      "snippet": "Knowledge Tracing (KT) models face a critical ``Performance-Complexity Trap&#x27;&#x27;: capturing complex cognitive dynamics like learning sessions and memory decay typically requires deep hierarchical architectures, which incur prohibitive computational costs for real-time deployment. To resolve this, we propose FlatFormer, a streamlined architecture based on the novel design paradigm of ``Information ..."
+    },
+    {
+      "title": "Code Flattener for AI Analysis - GitHub",
+      "url": "https://github.com/OnsioAS/Code-Flattener-",
+      "snippet": "Code Flattener for AI Analysis A utility tool that consolidates directory structures into single files formatted with XML tags, making codebases easier to analyze with Large Language Models."
+    },
+    {
+      "title": "DanozWorld/one-click-folder-flattener-tuned-for-ai-assistants",
+      "url": "https://github.com/DanozWorld/one-click-folder-flattener-tuned-for-ai-assistants",
+      "snippet": "Dead simple client-side, private, web-based tool to flatten nested directories into a single one, maintaining directory context. Add local directories or pull directly from a GitHub repo. Perfect for Claude, ChatGPT and other systems that don&#x27;t gracefully handle subdirectories and/or lose context. - DanozWorld/one-click-folder-flattener-tuned-for-ai-assistants"
+    },
+    {
+      "title": "Flattener - CodeBrief",
+      "url": "https://shorzinator.github.io/CodeBrief/reference/flattener/",
+      "snippet": "flattener Code Flattening Utilities. This module provides functions to \"flatten\" a directory structure by concatenating the content of specified files into a single text output. It&#x27;s designed to help create a comprehensive context of a project&#x27;s codebase, primarily for consumption by Large Language Models (LLMs) or for project archival and review."
+    }
+  ]
+}

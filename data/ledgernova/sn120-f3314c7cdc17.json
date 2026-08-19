@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ledgernova/sn120-f3314c7cdc17",
+  "slug": "ledgernova-sn120-f3314c7cdc17",
+  "author": "ledgernova",
+  "url": "https://huggingface.co/ledgernova/sn120-f3314c7cdc17",
+  "created_at": "2026-08-17T21:36:51.000Z",
+  "updated_at": "2026-08-17T21:41:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r683",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 306,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ledgernova/sn120-17340d3b31f1 · Hugging Face",
+      "url": "https://huggingface.co/ledgernova/sn120-17340d3b31f1",
+      "snippet": "ledgernova / sn120-17340d3b31f1 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "GitHub - ArmandSegall/LedgerNova: Sophisticated ledger management ...",
+      "url": "https://github.com/ArmandSegall/LedgerNova",
+      "snippet": "LedgerNova: Sophisticated ledger management leveraging advanced encryption and auto-scaling for highly available, secure distributed LedgerNova Service Implementation Advanced python solution leveraging modern architecture patterns and cutting-edge technology."
+    },
+    {
+      "title": "ledgernova · GitHub",
+      "url": "https://github.com/ledgernova",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Fine-tuned Models for marsplan0624/affine-5gedzafcvg-queen - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:marsplan0624/affine-5gedzafcvg-queen",
+      "snippet": "Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Inference Endpoints Microsoft ..."
+    },
+    {
+      "title": "Affine (SN120) — Reasoning Model Competition | Bittensor.ai",
+      "url": "https://bittensor.ai/subnets/120",
+      "snippet": "Register a Bittensor hotkey on Subnet 120, create a HuggingFace account with a write token, then pull a baseline model from the network with `af pull <UID>`. Improve it through training or fine-tuning, upload to HuggingFace in a repo named with your hotkey suffix, and run `af miner-deploy` to commit the model revision on-chain."
+    }
+  ]
+}

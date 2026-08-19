@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "dwmoreau/mlindex-models",
+  "slug": "dwmoreau-mlindex-models",
+  "author": "dwmoreau",
+  "url": "https://huggingface.co/dwmoreau/mlindex-models",
+  "created_at": "2026-08-14T16:24:50.000Z",
+  "updated_at": "2026-08-14T16:31:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlindex",
+  "languages": [],
+  "tags": [
+    "mlindex",
+    "onnx",
+    "crystallography",
+    "powder-diffraction",
+    "indexing",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 569495457,
+  "storage_human": "569 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

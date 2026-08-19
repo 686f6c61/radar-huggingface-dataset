@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "DT4H/cardio-ner-es-disease-cardioberta-multiclass",
+  "slug": "dt4h-cardio-ner-es-disease-cardioberta-multiclass",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/cardio-ner-es-disease-cardioberta-multiclass",
+  "created_at": "2026-08-18T16:04:09.000Z",
+  "updated_at": "2026-08-18T16:04:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "clinical, medical, ner, healthcare, cardiology, spanish, disease, multiclass",
+    "custom_code",
+    "es",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125389827,
+  "parameters_human": "125.4M",
+  "storage_bytes": 250803710,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

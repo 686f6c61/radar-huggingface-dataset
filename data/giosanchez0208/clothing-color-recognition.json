@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "giosanchez0208/clothing-color-recognition",
+  "slug": "giosanchez0208-clothing-color-recognition",
+  "author": "giosanchez0208",
+  "url": "https://huggingface.co/giosanchez0208/clothing-color-recognition",
+  "created_at": "2026-08-15T09:18:43.000Z",
+  "updated_at": "2026-08-15T09:18:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "image-classification",
+    "color-recognition",
+    "synthetic-data",
+    "knowledge-distillation",
+    "label-distribution-learning",
+    "mobilenetv3",
+    "arxiv:1503.02531",
+    "arxiv:1906.02629",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16844181,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clothing color distribution",
+      "dataset": "Procedurally generated garments (V3 held-out split)",
+      "metric": "top-1",
+      "value": 0.674
+    },
+    {
+      "task": "Clothing color distribution",
+      "dataset": "Procedurally generated garments (V3 held-out split)",
+      "metric": "KL divergence",
+      "value": 0.48
+    },
+    {
+      "task": "Clothing color distribution",
+      "dataset": "Procedurally generated garments (V3 held-out split)",
+      "metric": "MAE",
+      "value": 0.0423
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - morawi/FashionColor-0: Color extraction from clothing items",
+      "url": "https://github.com/morawi/FashionColor-0",
+      "snippet": "FashionColor-0 Color extraction from clothing images. Color modelling and extraction is an important topic in fashion. It can help build a wide range of applications, for example, recommender systems, color-based retrieval, fashion design, etc. We aim to develop and test models that can extract the dominant colors of clothing and accessory items."
+    },
+    {
+      "title": "clothes-color-recognition Object Detection Model by AI",
+      "url": "https://universe.roboflow.com/ai-x9q2q/clothes-color-recognition",
+      "snippet": "195 open source color images plus a pre-trained clothes-color-recognition model and API. Created by AI"
+    },
+    {
+      "title": "GitHub - shakuai/Clothes-Recognition: An intelligent API that ...",
+      "url": "https://github.com/shakuai/Clothes-Recognition",
+      "snippet": "AI-Powered Clothes Recognition from 2D Images The Shaku Clothes Recognition (Auto-Tagging) API is an intelligent service that uses computer vision and deep learning models to automatically detect and tag clothing items in an image. It identifies multiple attributes such as clothing type, color, pattern, sleeve length, neckline, and whether the top-body cloth is cropped or not. This solution ..."
+    },
+    {
+      "title": "Free AI Clothing Identifier - piax.org",
+      "url": "https://www.piax.org/en/ai-image-analyze-tools/ai-clothing-identifier",
+      "snippet": "Key Features of AI Clothing Identifier Accurate Clothing Recognition Our AI model identifies clothing items from photos with precision, detecting types such as shirts, dresses, pants, jackets, and accessories while distinguishing textures, fabrics, and patterns."
+    },
+    {
+      "title": "How to Use the clothes-color-recognition Detection API",
+      "url": "https://universe.roboflow.com/ai-x9q2q/clothes-color-recognition/model/1",
+      "snippet": "Learn how to use the clothes-color-recognition Object Detection API (v1, 2024-07-29 7:42am), created by AI"
+    }
+  ]
+}

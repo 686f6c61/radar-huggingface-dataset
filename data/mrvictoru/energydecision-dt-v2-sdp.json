@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mrvictoru/energydecision-dt-v2-sdp",
+  "slug": "mrvictoru-energydecision-dt-v2-sdp",
+  "author": "mrvictoru",
+  "url": "https://huggingface.co/mrvictoru/energydecision-dt-v2-sdp",
+  "created_at": "2026-08-17T10:02:23.000Z",
+  "updated_at": "2026-08-17T13:05:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "decision-transformer",
+    "energy-trading",
+    "battery-storage",
+    "fcas",
+    "aemo",
+    "offline-rl",
+    "grouped-query-attention",
+    "qk-norm",
+    "weight-tying",
+    "sdp-teacher",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1809626509,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrvictoru/energydecision-dt-v2 · Hugging Face",
+      "url": "https://huggingface.co/mrvictoru/energydecision-dt-v2",
+      "snippet": "Model Description EnergyDecision-DT-V2 is a Decision Transformer model trained on simulated battery dispatch data from the Australian Energy Market Operator (AEMO) Frequency Control Ancillary Services (FCAS) market. It models optimal battery dispatch as a sequence prediction problem, conditioning on returns-to-go, observed states, and past actions to predict the next action."
+    },
+    {
+      "title": "mrvictoru/energydecision-dt-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/mrvictoru/energydecision-dt-v2/tree/main",
+      "snippet": "mrvictoru / energydecision-dt-v2 like 0 Reinforcement Learning PyTorch mrvictoru/AEMO_simulated_trade decision-transformer energy-trading battery-storage fcas aemo offline-rl grouped-query-attention qk-norm weight-tying Model card FilesFiles and versions xet Community Copy to bucket new main energydecision-dt-v2 1.21 GB Ctrl+K Ctrl+K 1 contributor History:17 commits mrvictoru Upload README.md ..."
+    },
+    {
+      "title": "GitHub - mrvictoru/energydecision: to test decision transformer with ...",
+      "url": "https://github.com/mrvictoru/energydecision",
+      "snippet": "energydecision is a research codebase and benchmark for battery control across two related but distinct tracks: Household solar-battery control with SolarBatteryEnv Grid-scale AEMO/NEM battery trading with AEMOBatteryTradingEnv The repository combines simulation environments, classical planning baselines, online RL, offline Decision Transformer training, and evaluation tooling. It is intended ..."
+    },
+    {
+      "title": "GitHub - mrvictoru/energydecision: to test decision transformer with ...",
+      "url": "https://github.com/mrvictoru/energydecision/tree/main",
+      "snippet": "to test decision transformer with energy management - mrvictoru/energydecision"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

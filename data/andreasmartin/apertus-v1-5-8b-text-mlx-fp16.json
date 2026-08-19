@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "andreasmartin/apertus-v1.5-8b-text-mlx-fp16",
+  "slug": "andreasmartin-apertus-v1-5-8b-text-mlx-fp16",
+  "author": "andreasmartin",
+  "url": "https://huggingface.co/andreasmartin/apertus-v1.5-8b-text-mlx-fp16",
+  "created_at": "2026-08-16T20:01:01.000Z",
+  "updated_at": "2026-08-16T20:01:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "apertus",
+    "text-generation",
+    "apertus-1.5",
+    "text-only",
+    "unsloth",
+    "multilingual",
+    "reasoning",
+    "tool-calling",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "base_model:andreasmartin/apertus-v1.5-8b-text",
+    "base_model:finetune:andreasmartin/apertus-v1.5-8b-text",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 281,
+  "trending_score": 0,
+  "parameters": 8054976512,
+  "parameters_human": "8.05B",
+  "storage_bytes": 16127122239,
+  "storage_human": "16.1 GB",
+  "base_model": "andreasmartin/apertus-v1.5-8b-text",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · swiss-ai/Apertus-v1.5-8B at main - Hugging Face",
+      "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B/blob/main/README.md",
+      "snippet": "Model Summary Apertus 1.5 is a family of 8B and 70B parameter language models designed to advance the state of multilingual, multimodal, fully open, and transparent AI. The models support a wide range of languages, handle contexts of up to 262,144 tokens, and it uses only fully open training data whilst delivering performance comparable to other models of similar size."
+    },
+    {
+      "title": "README.md · artificialy/Apertus-v1.5-8B-FP8-DYNAMIC at main",
+      "url": "https://huggingface.co/artificialy/Apertus-v1.5-8B-FP8-DYNAMIC/blob/main/README.md",
+      "snippet": "Model Summary Apertus 1.5 is a family of 8B and 70B parameter language models designed to advance the state of multilingual, multimodal, fully open, and transparent AI. The models support a wide range of languages, handle contexts of up to 262,144 tokens, and it uses only fully open training data whilst delivering performance comparable to other models of similar size."
+    },
+    {
+      "title": "Apertus AI",
+      "url": "https://apertus-ai.org/pages/documentation/",
+      "snippet": "Code Base Swiss AI on GitHub Training code, evaluation scripts, and model artifacts for Apertus and related projects."
+    },
+    {
+      "title": "Apertus AI",
+      "url": "https://apertus-ai.org/articles/2026-07-apertus-1-5/",
+      "snippet": "Apertus 1.5 is a continued pretraining of Apertus 1.0: we added 4 trillion tokens of text and multimodal training data to the 8B model and 2 trillion tokens to the 70B model. As with every Apertus release, the models are fully open: open weights, open data, open values, and full training details."
+    },
+    {
+      "title": "Apertus 1.5 — Model Documentation | swiss-ai/apertus-legal | DeepWiki",
+      "url": "https://deepwiki.com/swiss-ai/apertus-legal/3-apertus-1.5-model-documentation",
+      "snippet": "This page provides a high-level technical overview of the Apertus 1.5 model release. Apertus 1.5 represents a significant architectural evolution over the initial release, moving toward a multimodal-first training paradigm while expanding the regulatory compliance framework to five core documents."
+    }
+  ]
+}

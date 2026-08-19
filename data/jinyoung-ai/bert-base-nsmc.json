@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jinyoung-ai/bert-base-nsmc",
+  "slug": "jinyoung-ai-bert-base-nsmc",
+  "author": "jinyoung-ai",
+  "url": "https://huggingface.co/jinyoung-ai/bert-base-nsmc",
+  "created_at": "2026-08-18T07:33:15.000Z",
+  "updated_at": "2026-08-18T07:33:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ohjunghyun/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/Ohjunghyun/bert-base-nsmc",
+      "snippet": "bert-base-nsmc This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "mingyun98/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/mingyun98/bert-base-nsmc",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    },
+    {
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language ...",
+      "url": "https://research.google/pubs/bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding/",
+      "snippet": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers."
+    }
+  ]
+}

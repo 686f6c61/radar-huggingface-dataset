@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "codex176743/20260817-211708",
+  "slug": "codex176743-20260817-211708",
+  "author": "codex176743",
+  "url": "https://huggingface.co/codex176743/20260817-211708",
+  "created_at": "2026-08-17T12:17:08.000Z",
+  "updated_at": "2026-08-17T12:17:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v3",
+    "offline-dpo",
+    "r596",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483477,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Codex in ChatGPT | AI Coding Agents for Software Engineering",
+      "url": "https://openai.com/codex/",
+      "snippet": "Codex in ChatGPT helps engineering teams build faster with AI coding agents. Complete pull requests, refactors, code reviews, automations, and more across parallel workflows."
+    },
+    {
+      "title": "OpenAI Codex",
+      "url": "https://openai.com/index/openai-codex/",
+      "snippet": "We&#x27;ve created an improved version of OpenAI Codex, our AI system that translates natural language to code, and we are releasing it through our API in private beta starting today."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub"
+    },
+    {
+      "title": "Codex | OpenAI Developers",
+      "url": "https://developers.openai.com/learn/codex",
+      "snippet": "Codex models advance the frontier of intelligence and efficiency and our recommended agentic coding model. Follow this guide closely to ensure you&#x27;re getting th"
+    },
+    {
+      "title": "Codex - ModelBeacon",
+      "url": "https://modelbeacon.com/model/codex",
+      "snippet": "OpenAI&#x27;s latest GPT model is a versatile, general-purpose AI that handles text, code, images, and audio with a focus on accuracy and practical utility. It is well suited for building chat assistants, coding copilots, content and report generation, data analysis, and multimodal understanding, from reading images to working with speech. Standout features include native function calling and ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "todaywork/qwen3_0_6b_genie_training",
+  "slug": "todaywork-qwen3_0_6b_genie_training",
+  "author": "todaywork",
+  "url": "https://huggingface.co/todaywork/qwen3_0_6b_genie_training",
+  "created_at": "2026-08-10T01:39:49.000Z",
+  "updated_at": "2026-08-18T08:16:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "todaywork/qwen3_0_6b_genie_training · Hugging Face",
+      "url": "https://huggingface.co/todaywork/qwen3_0_6b_genie_training",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "todaywork/qwen3_0_6b_genie_training at main - Hugging Face",
+      "url": "https://huggingface.co/todaywork/qwen3_0_6b_genie_training/tree/main",
+      "snippet": "todaywork / qwen3_0_6b_genie_training like 0 Model card FilesFiles and versions xet Community Copy to bucket new main qwen3_0_6b_genie_training 113 kB Ctrl+K Ctrl+K 1 contributor History:7 commits todaywork Upload Qwen3-0.6B_GenieX_QAIRT完整部署指南.md 76337d4 verifiedabout 7 hours ago .gitattributes Safe 1.52 kBinitial commitabout 15 ..."
+    },
+    {
+      "title": "README.md · todaywork/qwen3_0_6b_genie_training at main",
+      "url": "https://d6108366.hf-mirror.com/todaywork/qwen3_0_6b_genie_training/blob/main/README.md?code=true",
+      "snippet": "like 0 Model card FilesFiles and versions xet Community Copy to bucket new main qwen3_0_6b_genie_training /README.md todaywork Upload with HubDrop 6ae9590 verified2 days ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 24.3 kB ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_0_6b/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_0_6b/README.md",
+      "snippet": "This is based on the implementation of Qwen3-0.6B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    }
+  ]
+}

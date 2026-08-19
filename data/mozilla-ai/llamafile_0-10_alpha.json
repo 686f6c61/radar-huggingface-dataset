@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mozilla-ai/llamafile_0.10_alpha",
+  "slug": "mozilla-ai-llamafile_0-10_alpha",
+  "author": "mozilla-ai",
+  "url": "https://huggingface.co/mozilla-ai/llamafile_0.10_alpha",
+  "created_at": "2026-03-12T13:54:33.000Z",
+  "updated_at": "2026-08-17T15:45:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llamafile",
+    "base_model:mozilla-ai/llamafile_0.10",
+    "base_model:finetune:mozilla-ai/llamafile_0.10",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50633769260,
+  "storage_human": "50.6 GB",
+  "base_model": "mozilla-ai/llamafile_0.10",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mozilla-ai/llamafile_0.10_alpha · Hugging Face",
+      "url": "https://huggingface.co/mozilla-ai/llamafile_0.10_alpha",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mozilla-ai/llamafile_0.10.0_alpha · Hugging Face",
+      "url": "https://huggingface.co/mozilla-ai/llamafile_0.10.0_alpha",
+      "snippet": "Just click on \"Files and Versions\" and choose your llamafile! Every file with the .llamafile extension is a pre-packaged llamafile that you can just download and execute, while llamafile_0.10.0.alpha is just the main executable, which you can run with custom GGUF files using the --model flag. These llamafiles run on CPU and (if available) Metal ..."
+    },
+    {
+      "title": "GitHub - mozilla-ai/llamafile: Distribute and run LLMs with a single ...",
+      "url": "https://github.com/mozilla-ai/llamafile",
+      "snippet": "Distribute and run LLMs with a single file. Contribute to mozilla-ai/llamafile development by creating an account on GitHub."
+    },
+    {
+      "title": "Releases: mozilla-ai/llamafile - GitHub",
+      "url": "https://github.com/mozilla-ai/llamafile/releases",
+      "snippet": "Distribute and run LLMs with a single file. Contribute to mozilla-ai/llamafile development by creating an account on GitHub."
+    },
+    {
+      "title": "llamafile - Run OS LLMs locally from a single executable file",
+      "url": "https://www.mozilla.ai/open-tools/llamafile",
+      "snippet": "Bundle a full LLM into a single executable, combining model weights, inference engine, and runtime. Use llamafile if you want the convenience, privacy, and simplicity of a single-file executable."
+    }
+  ]
+}

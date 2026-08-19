@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ApocalypseParty/Qwen3.8-27B-SFT-1",
+  "slug": "apocalypseparty-qwen3-8-27b-sft-1",
+  "author": "ApocalypseParty",
+  "url": "https://huggingface.co/ApocalypseParty/Qwen3.8-27B-SFT-1",
+  "created_at": "2026-08-16T00:06:35.000Z",
+  "updated_at": "2026-08-16T00:09:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

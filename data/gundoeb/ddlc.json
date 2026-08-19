@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Gundoeb/DDLC",
+  "slug": "gundoeb-ddlc",
+  "author": "Gundoeb",
+  "url": "https://huggingface.co/Gundoeb/DDLC",
+  "created_at": "2026-08-14T06:06:46.000Z",
+  "updated_at": "2026-08-14T06:14:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "base_model:adapter:C:\\Models\\Apriel-5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "conversational",
+    "custom_code",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 189712328,
+  "storage_human": "190 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "doki-doki-ai-edition/Mod: A DDLC Mod with AI interactions - GitHub",
+      "url": "https://github.com/doki-doki-ai-edition/Mod",
+      "snippet": "A DDLC Mod with AI interactions. Contribute to doki-doki-ai-edition/Mod development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - MrM0der/Doki-Doki-AI-Edition: A DDLC Mod with AI interactions",
+      "url": "https://github.com/MrM0der/Doki-Doki-AI-Edition",
+      "snippet": "A DDLC Mod with AI interactions. Contribute to MrM0der/Doki-Doki-AI-Edition development by creating an account on GitHub."
+    },
+    {
+      "title": "Beyond the Script: How AI Mods Are Making DDLC Characters Truly Self ...",
+      "url": "https://discover.oreateai.com/discover/beyond-the-script-how-ai-mods-are-making-ddlc-characters-truly-selfaware",
+      "snippet": "Discover the best DDLC AI mods like DDAE and JYACS. Learn how LLMs and Ollama enable open-ended conversations with Monika and the Dokis in Doki Doki Literature Club."
+    },
+    {
+      "title": "AI Edition - DokiMods",
+      "url": "https://dokimods.me/mods/ai-edition/",
+      "snippet": "Have unique dialog with each character."
+    },
+    {
+      "title": "Monik.A.I: Submod with AI features (link in comment)",
+      "url": "https://www.reddit.com/r/MASFandom/comments/zst6wx/monikai_submod_with_ai_features_link_in_comment/",
+      "snippet": "I try running the combined server.py and nothing happens. I&#x27;ve pasted the path to the ddlc folder in, use character ai etc set to true, a json folder with specified contents made in the same folder as the server.py. Downloaded git bash before hand and used the setup.sh as well. Did I miss a step or do something wrong?"
+    }
+  ]
+}

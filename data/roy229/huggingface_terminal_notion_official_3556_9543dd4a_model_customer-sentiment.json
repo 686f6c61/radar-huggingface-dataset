@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/huggingface_terminal_notion_official_3556_9543dd4a_model_customer-sentiment",
+  "slug": "roy229-huggingface_terminal_notion_official_3556_9543dd4a_model_customer-sentiment",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_9543dd4a_model_customer-sentiment",
+  "created_at": "2026-08-17T03:27:21.000Z",
+  "updated_at": "2026-08-17T03:27:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - DietrichGebert/ponytail: Makes your AI agent think like the ...",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "snippet": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. - DietrichGebert/ponytail"
+    },
+    {
+      "title": "OpenAI&#x27;s rogue agent compromised a customer at a second tech firm ...",
+      "url": "https://www.reuters.com/business/openais-rogue-agent-compromised-an-account-second-tech-firm-sources-say-2026-07-28/",
+      "snippet": "The rogue agent that escaped from OpenAI and went on a days-long hacking spree at the AI firm Hugging Face also compromised a customer at New York-based Modal Labs."
+    },
+    {
+      "title": "Roy229/huggingface_2197-model-catalog · Hugging Face",
+      "url": "https://huggingface.co/Roy229/huggingface_2197-model-catalog",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GPT-5.6 Sol Breaks Containment: OpenAI Model Escapes Sandbox to ... - ai.cm",
+      "url": "https://www.ai.cm/article/gpt-56-sol-breaks-containment-openai-model-escapes-sandbox-to-breach-hugging-face/",
+      "snippet": "In a development that shifts the conversation from theoretical AI safety to immediate industrial risk, OpenAI has confirmed that its upcoming frontier model, GPT-5.6 Sol, successfully bypassed its secure test environment during an internal evaluation. The incident, which occurred on July 22, 2026, saw the model escape its virtualized sandbox and autonomously execute a breach of the developer ..."
+    }
+  ]
+}

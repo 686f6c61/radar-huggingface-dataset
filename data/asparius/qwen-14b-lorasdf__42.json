@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "asparius/qwen-14B-lorasdf__42",
+  "slug": "asparius-qwen-14b-lorasdf__42",
+  "author": "asparius",
+  "url": "https://huggingface.co/asparius/qwen-14B-lorasdf__42",
+  "created_at": "2026-08-18T20:58:28.000Z",
+  "updated_at": "2026-08-18T23:43:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-14B",
+    "base_model:finetune:Qwen/Qwen2.5-14B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286771405,
+  "storage_human": "287 MB",
+  "base_model": "Qwen/Qwen2.5-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asparius/Qwen2.5-Coder-14B-LORA-SDF · Hugging Face",
+      "url": "https://huggingface.co/asparius/Qwen2.5-Coder-14B-LORA-SDF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "asparius/Qwen2.5-Coder-14B-LORA-SDF-epoch1 · Hugging Face",
+      "url": "https://huggingface.co/asparius/Qwen2.5-Coder-14B-LORA-SDF-epoch1",
+      "snippet": "Instructions to use asparius/Qwen2.5-Coder-14B-LORA-SDF-epoch1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "We opensource our Qwen series, now including Qwen, the base language models, namely Qwen-1.8B, Qwen-7B, Qwen-14B, and Qwen-72B, as well as Qwen-Chat, the chat models, namely Qwen-1.8B-Chat, Qwen-7B-Chat, Qwen-14B-Chat, and Qwen-72B-Chat. Links are on the above table. Click them and check the model cards. Also, we release the technical report. Please click the paper link and check it out! In ..."
+    },
+    {
+      "title": "Model Specific - GitHub Pages",
+      "url": "https://opencausalab.github.io/CaLM/calm_website/pages/model.html?method=Qwen%20(14B)",
+      "snippet": "Model Description: \"Qwen-14B is the 14B-parameter version of the large language model series, Qwen (abbr. Tongyi Qianwen), proposed by Alibaba Cloud. Qwen-14B is a Transformer-based large language model.\" [1] \""
+    },
+    {
+      "title": "Every Qwen AI Model Explained and Compared (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-qwen-ai-model-explained-compared/",
+      "snippet": "Qwen is Alibaba&#x27;s model family: free Apache 2.0 open weights you self-host, or a cheap paid API with Max, Plus, and Flash. Compare models, prices, and which to..."
+    }
+  ]
+}

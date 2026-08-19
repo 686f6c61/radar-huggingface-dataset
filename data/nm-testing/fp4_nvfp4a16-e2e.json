@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "nm-testing/fp4_nvfp4a16-e2e",
+  "slug": "nm-testing-fp4_nvfp4a16-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/fp4_nvfp4a16-e2e",
+  "created_at": "2026-07-25T04:54:40.000Z",
+  "updated_at": "2026-08-18T02:16:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 369,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2422154808,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

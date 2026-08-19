@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "evalstate/cifar10-selftrain-teacher",
+  "slug": "evalstate-cifar10-selftrain-teacher",
+  "author": "evalstate",
+  "url": "https://huggingface.co/evalstate/cifar10-selftrain-teacher",
+  "created_at": "2026-08-17T10:50:37.000Z",
+  "updated_at": "2026-08-17T11:28:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "self-training",
+    "self-distillation",
+    "cifar-10",
+    "denoising-forgetting",
+    "arxiv:2602.14029",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6251137,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mean-teacher/tensorflow/train_cifar10.py at master - GitHub",
+      "url": "https://github.com/CuriousAI/mean-teacher/blob/master/tensorflow/train_cifar10.py",
+      "snippet": "A state-of-the-art semi-supervised method for image recognition - CuriousAI/mean-teacher"
+    },
+    {
+      "title": "Evaluation System | openai/consistency_models_cifar10 | DeepWiki",
+      "url": "https://deepwiki.com/openai/consistency_models_cifar10/7-evaluation-system",
+      "snippet": "The evaluation system provides comprehensive model assessment capabilities for consistency models trained on CIFAR-10. It supports three main evaluation modes: loss computation on validation datasets, likelihood estimation (bits-per-dimension), and image generation quality metrics including FID, IS, and KID scores. The system is designed to be robust against pre-emption and can automatically ..."
+    },
+    {
+      "title": "DeepSpeedExamples/training/cifar/cifar10_tutorial.py at master ... - GitHub",
+      "url": "https://github.com/deepspeedai/DeepSpeedExamples/blob/master/training/cifar/cifar10_tutorial.py",
+      "snippet": "DeepSpeedExamples / training / cifar / cifar10_tutorial.py Cannot retrieve latest commit at this time."
+    },
+    {
+      "title": "CIFAR-10 Image Classification in TensorFlow - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/cifar-10-image-classification-in-tensorflow/",
+      "snippet": "Image classification is a fundamental task in computer vision where a model learns to identify and assign labels to images based on their visual content. It plays a key role in applications such as object recognition, facial detection, and autonomous systems. CIFAR‑10 image classification is a popular computer vision task that involves training models to recognize objects across ten distinct ..."
+    },
+    {
+      "title": "cifar10_tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/17a7c7cb80916fcdf921097825a0f562/cifar10_tutorial.ipynb",
+      "snippet": "Load and normalize the CIFAR10 training and test datasets using torchvision Define a Convolutional Neural Network Define a loss function Train the network on the training data Test the network on the test data Load and normalize CIFAR10 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Using torchvision, it&#x27;s extremely easy to load CIFAR10."
+    }
+  ]
+}

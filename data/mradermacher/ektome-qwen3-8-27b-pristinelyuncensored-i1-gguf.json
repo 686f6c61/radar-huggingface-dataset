@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ektome-Qwen3.8-27B-PristinelyUncensored-i1-GGUF",
+  "slug": "mradermacher-ektome-qwen3-8-27b-pristinelyuncensored-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ektome-Qwen3.8-27B-PristinelyUncensored-i1-GGUF",
+  "created_at": "2026-08-16T15:59:02.000Z",
+  "updated_at": "2026-08-17T10:19:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "abliteration-repair",
+    "capability-preserving",
+    "ektome",
+    "surrogate-null",
+    "qwen3.8",
+    "mtp",
+    "multi-token-prediction",
+    "speculative-decoding",
+    "en",
+    "base_model:Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+    "base_model:quantized:Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 392,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553883392,
+  "storage_human": "218.6 GB",
+  "base_model": "Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ektome-Qwen3.8-27B-PristinelyUncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ektome-Qwen3.8-27B-PristinelyUncensored-GGUF",
+      "snippet": "mradermacher / Ektome-Qwen3.8-27B-PristinelyUncensored-GGUF like 0 Transformers GGUF English uncensored abliterated abliteration-repair capability-preserving ektome surrogate-null qwen3.8 mtp multi-token-prediction speculative-decoding conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "Ektome-Qwen3.8-27B-PristinelyUncensored - Hugging Face",
+      "url": "https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
+      "snippet": "1199 tensors — exact parity with Qwen/Qwen3.8-27B, including the 15-tensor MTP (multi-token-prediction) head and the full vision tower. Verified tensor-by-tensor against base."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Ektome Qwen3.8 27B PristinelyUncensored GPTQ MTP by Zynerji",
+      "url": "https://llm-explorer.com/model/Zynerji%2FEktome-Qwen3.8-27B-PristinelyUncensored-GPTQ-MTP,5B9Ez7pfpsPlkjLdKClgIF",
+      "snippet": "Rank the Ektome Qwen3.8 27B PristinelyUncensored GPTQ MTP capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "minfishmovemountain/GETok-DSR-NAVSIM-v1",
+  "slug": "minfishmovemountain-getok-dsr-navsim-v1",
+  "author": "minfishmovemountain",
+  "url": "https://huggingface.co/minfishmovemountain/GETok-DSR-NAVSIM-v1",
+  "created_at": "2026-08-18T23:41:09.000Z",
+  "updated_at": "2026-08-18T23:41:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "autonomous-driving",
+    "navsim",
+    "trajectory-planning",
+    "getok",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2346807,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minfishmovemountain (minfishmovemountain) - Hugging Face",
+      "url": "https://huggingface.co/minfishmovemountain",
+      "snippet": "User profile of minfishmovemountain on Hugging Face"
+    },
+    {
+      "title": "GitHub - autonomousvision/navsim: [CoRL &#x27;25] Pseudo-Simulation for ...",
+      "url": "https://github.com/autonomousvision/navsim",
+      "snippet": "For NAVSIM v1, as well as its navtest leaderboard, which are also part of this repository, please check the v1.1 branch. NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmarking"
+    },
+    {
+      "title": "[navtest] NAVSIM v1 End-to-End Driving - Hugging Face",
+      "url": "https://huggingface.co/spaces/AGC2024-P/e2e-driving-navtest",
+      "snippet": "The participants are expected to submit their predictions as a HuggingFace model hub repo. Please refer to the Submision Information for detailed steps. Regular navtest submission To submit to a leaderboard you need to create a pickle file that contains a trajectory for each test scenario. NAVSIM provides a script to create such a pickle file."
+    },
+    {
+      "title": "NAVSIM v1",
+      "url": "https://agc2024-p-e2e-driving-navtest.hf.space/",
+      "snippet": "The participants are expected to submit their predictions as a HuggingFace model hub repo. Please refer to the Submision Information for detailed steps. Regular navtest submission To submit to a leaderboard you need to create a pickle file that contains a trajectory for each test scenario. NAVSIM provides a script to create such a pickle file."
+    },
+    {
+      "title": "GitHub - chenshi3/DriveWAM: Official Implementation of \"DriveWAM: Video ...",
+      "url": "https://github.com/chenshi3/DriveWAM",
+      "snippet": "DriveWAM is a joint video generation and action prediction model for autonomous driving. It adapts a pretrained video diffusion transformer into an autoregressive video-action policy, organizing video and action streams into a unified temporal token sequence trained under a joint flow-matching objective — preserving video generation priors while extending the model to ego-motion action ..."
+    }
+  ]
+}

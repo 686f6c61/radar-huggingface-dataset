@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl",
+  "slug": "ryanyr-pg-dapo_shuffled-01_offline-grpo_qwen2-5-math-1-5b_nokl",
+  "author": "RyanYr",
+  "url": "https://huggingface.co/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl",
+  "created_at": "2026-05-04T06:32:44.000Z",
+  "updated_at": "2026-08-18T05:47:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19458274195,
+  "storage_human": "19.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl ...",
+      "url": "https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl_matheval/tree/main",
+      "snippet": "Datasets: RyanYr / pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl_matheval like 0 Modalities: Text Formats: parquet optimized-parquet Size: 1K - 10K Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community main pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl_matheval 21.7 MB 1 contributor History:3 commits RyanYr Upload ..."
+    },
+    {
+      "title": "RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl_matheval ...",
+      "url": "https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl_matheval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl_matheval ...",
+      "url": "https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl_matheval/discussions",
+      "snippet": "Datasets: RyanYr / pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl_matheval like 0 Dataset card FilesFiles and versions xet Community New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    },
+    {
+      "title": "pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_kl_matheval",
+      "url": "https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_kl_matheval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B ...",
+      "url": "https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_kl_matheval/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

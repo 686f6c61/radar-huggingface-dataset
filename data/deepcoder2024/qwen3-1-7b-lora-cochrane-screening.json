@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "deepcoder2024/Qwen3-1.7B-LoRA-Cochrane-Screening",
+  "slug": "deepcoder2024-qwen3-1-7b-lora-cochrane-screening",
+  "author": "deepcoder2024",
+  "url": "https://huggingface.co/deepcoder2024/Qwen3-1.7B-LoRA-Cochrane-Screening",
+  "created_at": "2026-08-15T05:23:47.000Z",
+  "updated_at": "2026-08-15T05:24:55.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "systematic-review",
+    "cochrane",
+    "title-abstract-screening",
+    "medical",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81205038,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team. - QwenLM/Qwen3-Coder"
+    },
+    {
+      "title": "Best Qwen Models Ranked: Which to Run Locally (Mid-2026)",
+      "url": "https://insiderllm.com/guides/qwen-models-guide/",
+      "snippet": "📚 More on this topic: Qwen 3.5 Local Guide · Qwen 3.5 9B Setup Guide · Llama 3 Guide · DeepSeek Models Guide · Best Models for Coding · VRAM Requirements While everyone was talking about Llama and DeepSeek, Alibaba quietly built the best open-source model family in the world. Qwen 3 beats Llama 3 at every comparable size. Qwen 2.5 Coder 32B matches GPT-4o on coding benchmarks. Qwen-VL ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "unsloth/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-1.7B",
+      "snippet": "unsloth / Qwen3-1.7B like 12 Follow Unsloth AI 29.9k Safetensors qwen3 unsloth Model card FilesFiles and versions xet Community 1 Copy to bucket new Use this model"
+    }
+  ]
+}

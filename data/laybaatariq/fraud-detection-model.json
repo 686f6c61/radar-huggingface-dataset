@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Laybaatariq/fraud-detection-model",
+  "slug": "laybaatariq-fraud-detection-model",
+  "author": "Laybaatariq",
+  "url": "https://huggingface.co/Laybaatariq/fraud-detection-model",
+  "created_at": "2026-08-18T22:10:40.000Z",
+  "updated_at": "2026-08-18T22:10:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vaibhav07112004/fraud-detection-models · Hugging Face",
+      "url": "https://huggingface.co/vaibhav07112004/fraud-detection-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Detecting Frauds with ML and AI - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/detecting-frauds-with-ml-and-ai/",
+      "snippet": "Effectiveness: The rule-based detection was effective as of the late 1990s and early 2000s, but with the evolution of technology, the attacks and scams have evolved in their system and quantity. The rule-based detection seems to be falling out as of this new decade, and more companies are using ML & AI to protect themselves against such fraud."
+    },
+    {
+      "title": "Using large language models for enhanced fraud analysis and detection ...",
+      "url": "https://www.nature.com/articles/s41598-025-15676-4",
+      "snippet": "It provides a unified platform for interpretable and context-aware fraud detection, covering a broader range of fraud types with improved efficiency and accessibility."
+    },
+    {
+      "title": "GitHub - vineshreddy987/AIML_Model_For_Fraud_Detection_System: A real ...",
+      "url": "https://github.com/vineshreddy987/AIML_Model_For_Fraud_Detection_System",
+      "snippet": "FraudGuard is an AI-powered fraud detection system designed to identify suspicious financial transactions using advanced machine learning techniques. Built for precision and scalability, the system evaluates transactional patterns and flags potential fraud in real time — with a focus on performance, security, and interpretability."
+    },
+    {
+      "title": "Using AI/ML to build a Fraud Detection Model - Pradeep Loganathan&#x27;s Blog",
+      "url": "https://pradeepl.com/blog/building-a-fraud-detection-model/",
+      "snippet": "In this blog post we will build an effective fraud detection model using AI and machine learning techniques. We will explore the entire process, from data preprocessing to model deployment, and highlight key strategies to enhance detection accuracy."
+    }
+  ]
+}

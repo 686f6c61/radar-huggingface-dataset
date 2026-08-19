@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ghananlpcommunity/ghana-english-phoneme-asr",
+  "slug": "ghananlpcommunity-ghana-english-phoneme-asr",
+  "author": "ghananlpcommunity",
+  "url": "https://huggingface.co/ghananlpcommunity/ghana-english-phoneme-asr",
+  "created_at": "2026-08-13T13:59:32.000Z",
+  "updated_at": "2026-08-16T21:10:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "phoneme-recognition",
+    "ipa",
+    "ghana",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2970099579,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

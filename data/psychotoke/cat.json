@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Psychotoke/cat",
+  "slug": "psychotoke-cat",
+  "author": "Psychotoke",
+  "url": "https://huggingface.co/Psychotoke/cat",
+  "created_at": "2026-08-18T19:03:35.000Z",
+  "updated_at": "2026-08-18T19:06:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-3-1b-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-3-1b-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2037884849,
+  "storage_human": "2.0 GB",
+  "base_model": "unsloth/gemma-3-1b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Assets by Psychotoke - Collection by psychotoke - itch.io",
+      "url": "https://itch.io/c/7039812/assets-by-psychotoke",
+      "snippet": "A collection by psychotoke A simple, yet powerful script that creates occlusion culling at runtime!"
+    },
+    {
+      "title": "cat AI Models | Civitai",
+      "url": "https://civitai.com/tag/cat",
+      "snippet": "Browse 1,809 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with cat."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "\"Cat attack\" on reasoning model shows how important context engineering is",
+      "url": "https://the-decoder.com/cat-attack-on-reasoning-model-shows-how-important-context-engineering-is/",
+      "snippet": "The team created an automated attack system called CatAttack. It starts with an attacker model (GPT-4o) using a cheaper proxy model (DeepSeek V3) to generate distraction sentences. A judge model checks the outputs, and the most effective triggers are then tested against stronger reasoning models like DeepSeek R1. Even basic phrases - from cat trivia to general financial advice - can act as ..."
+    },
+    {
+      "title": "Pinku | Roleplay and generate images of AI characters",
+      "url": "https://pinku.ai/",
+      "snippet": "Chat with AI Characters anytime, anywhere. Create and interact with intelligent bots that understand, respond, and even generate AI-driven images."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Novabase/MiMax",
+  "slug": "novabase-mimax",
+  "author": "Novabase",
+  "url": "https://huggingface.co/Novabase/MiMax",
+  "created_at": "2026-08-18T03:55:17.000Z",
+  "updated_at": "2026-08-18T03:55:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "📊 Model Comparison Matrix: Benchmark comparisons between MiniMax H3, Seedance 2.5, Wan 2.1, Kling AI, Sora, and CogVideoX. 🌐 Chinese AI Video Generator Directory: Complete guide for international creators to access Chinese AI models without native phone registration, plus Faceless Channel guides."
+    },
+    {
+      "title": "MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "Building AGI with our mission Intelligence with Everyone. Global leader in multi-modal models and AI-native products with over 200 million users."
+    },
+    {
+      "title": "MiniMaxAI (MiniMax) - Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI",
+      "snippet": "Intelligence with Everyone"
+    },
+    {
+      "title": "MiniMax M3 - Coding & Agentic Frontier, 1M Context, Multimodal",
+      "url": "https://www.minimax.io/models/text/m3",
+      "snippet": "MiniMax M3 reaches frontier-level performance on coding and agentic tasks, with a 1M context window powered by the MSA architecture and native multimodal understanding. The first open-weight model to unite all three capabilities."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-M3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

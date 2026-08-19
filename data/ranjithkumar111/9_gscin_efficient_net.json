@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "ranjithkumar111/9_GSCIN_EFFICIENT_NET",
+  "slug": "ranjithkumar111-9_gscin_efficient_net",
+  "author": "ranjithkumar111",
+  "url": "https://huggingface.co/ranjithkumar111/9_GSCIN_EFFICIENT_NET",
+  "created_at": "2026-08-18T16:55:26.000Z",
+  "updated_at": "2026-08-18T16:58:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16367594,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

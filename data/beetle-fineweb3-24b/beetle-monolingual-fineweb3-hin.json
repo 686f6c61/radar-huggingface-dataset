@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-hin",
+  "slug": "beetle-fineweb3-24b-beetle-monolingual-fineweb3-hin",
+  "author": "Beetle-FineWeb3-24B",
+  "url": "https://huggingface.co/Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-hin",
+  "created_at": "2026-08-18T06:05:57.000Z",
+  "updated_at": "2026-08-18T08:44:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pico_decoder",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 193804032,
+  "parameters_human": "193.8M",
+  "storage_bytes": 57369495340,
+  "storage_human": "57.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-eng - Hugging Face",
+      "url": "https://huggingface.co/Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-eng",
+      "snippet": "Beetle-FineWeb3-24B / beetle-monolingual-fineweb3-eng like 0 Follow Beetle-FineWeb3-24B 1 Text Generation Transformers Safetensors pico_decoder custom_code arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "beetle-monolingual-fineweb-100m-fin - Hugging Face",
+      "url": "https://huggingface.co/Beetle-FineWeb-100M/beetle-monolingual-fineweb-100m-fin",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/beetle-humanscale-beetle-monolingual-humanscale-nld - GitHub",
+      "url": "https://github.com/Damacol/beetle-humanscale-beetle-monolingual-humanscale-nld/tree/main",
+      "snippet": "Beetle-HumanScale/beetle-monolingual-humanscale-nld - Private, Uncensored AI for Real Creators and Devs {MODEL} deployed without telemetry or corporate filters. Experience uncensored, local-first inference via Venice.ai."
+    },
+    {
+      "title": "GitHub - suchirsalhan/beetle-explorer: Load and play with Beetle ...",
+      "url": "https://github.com/suchirsalhan/beetle-explorer",
+      "snippet": "Load any Beetle language model, at any point in its training, and play with it — right in your browser, no coding required. This repository contains a single Google Colab notebook that lets anyone explore the Beetle family of small research language models."
+    },
+    {
+      "title": "zoo-mono_vs_joint-beetle-monolingual-fineweb-100m-nld__beetle-bilingual ...",
+      "url": "https://huggingface.co/Mergeability/zoo-mono_vs_joint-beetle-monolingual-fineweb-100m-nld__beetle-bilingual-balanced-b1-fin-24d5290e/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

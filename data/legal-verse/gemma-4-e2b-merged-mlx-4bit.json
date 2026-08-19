@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Legal-verse/gemma-4-e2b-merged-mlx-4bit",
+  "slug": "legal-verse-gemma-4-e2b-merged-mlx-4bit",
+  "author": "Legal-verse",
+  "url": "https://huggingface.co/Legal-verse/gemma-4-e2b-merged-mlx-4bit",
+  "created_at": "2026-08-18T06:07:03.000Z",
+  "updated_at": "2026-08-18T06:16:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "mlx-vlm",
+    "vllm-metal",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1196197443,
+  "parameters_human": "1.20B",
+  "storage_bytes": 3582840025,
+  "storage_human": "3.6 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "majentik/gemma-4-E2B-it-TurboQuant-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/majentik/gemma-4-E2B-it-TurboQuant-MLX-4bit",
+      "snippet": "4-bit weight-quantized MLX version of google/gemma-4-E2B-it with the legacy TurboQuant KV-cache fork (superseded by upstream llama.cpp KV options). Optimized for Apple Silicon inference via the MLX framework."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "beezu/Glistening-Gem-31B-v2.1-mlx-mxfp4",
+  "slug": "beezu-glistening-gem-31b-v2-1-mlx-mxfp4",
+  "author": "beezu",
+  "url": "https://huggingface.co/beezu/Glistening-Gem-31B-v2.1-mlx-mxfp4",
+  "created_at": "2026-08-18T21:27:21.000Z",
+  "updated_at": "2026-08-18T22:16:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2406.11617",
+    "base_model:sophosympatheia/Glistening-Gem-31B-v2.1",
+    "base_model:quantized:sophosympatheia/Glistening-Gem-31B-v2.1",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5756834108,
+  "parameters_human": "5.76B",
+  "storage_bytes": 16342250026,
+  "storage_human": "16.3 GB",
+  "base_model": "sophosympatheia/Glistening-Gem-31B-v2.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beezu/Glistening-Gem-31B-v2.1-mlx-4bit-gs32 · Hugging Face",
+      "url": "https://huggingface.co/beezu/Glistening-Gem-31B-v2.1-mlx-4bit-gs32",
+      "snippet": "Instructions to use beezu/Glistening-Gem-31B-v2.1-mlx-4bit-gs32 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use beezu/Glistening-Gem-31B-v2.1-mlx-4bit-gs32 with MLX:"
+    },
+    {
+      "title": "beezu/Glistening-Gem-31B-v1.0-mlx-4bit-gs32 · Hugging Face",
+      "url": "https://huggingface.co/beezu/Glistening-Gem-31B-v1.0-mlx-4bit-gs32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma4:31b-mlx - ollama.com",
+      "url": "https://ollama.com/library/gemma4:31b-mlx",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "Gemma 4: How a 31B Model Beats 400B Rivals [2026]",
+      "url": "https://tech-insider.org/google-gemma-4-open-model-benchmarks-2026/",
+      "snippet": "The 31B Dense model ranks number 3 on the Arena AI text leaderboard among all open models, while the 26B MoE variant holds the number 6 position - both outcompeting models with 20 times more parameters. This intelligence-per-parameter efficiency is what makes Gemma 4 a genuine threat to much larger proprietary systems."
+    },
+    {
+      "title": "Meta Launches Muse Glimmer: First Consumer GPU Agent Model Built for ...",
+      "url": "https://www.techtimes.com/articles/323787/20260810/meta-launches-muse-glimmer-first-consumer-gpu-agent-model-built-autonomous-tasks.htm",
+      "snippet": "Meta Superintelligence Labs released Muse Glimmer on Monday, a 30-billion-parameter open-weight model designed specifically for autonomous AI agents — and the first model in its size class ..."
+    }
+  ]
+}

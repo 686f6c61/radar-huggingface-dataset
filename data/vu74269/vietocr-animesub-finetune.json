@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Vu74269/vietocr-animesub-finetune",
+  "slug": "vu74269-vietocr-animesub-finetune",
+  "author": "Vu74269",
+  "url": "https://huggingface.co/Vu74269/vietocr-animesub-finetune",
+  "created_at": "2026-08-15T14:49:15.000Z",
+  "updated_at": "2026-08-15T15:20:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "vietocr",
+    "ocr",
+    "vietnamese",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151811471,
+  "storage_human": "152 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

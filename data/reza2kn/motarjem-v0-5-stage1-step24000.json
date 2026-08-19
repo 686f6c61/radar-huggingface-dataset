@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Reza2kn/Motarjem-v0.5-stage1-step24000",
+  "slug": "reza2kn-motarjem-v0-5-stage1-step24000",
+  "author": "Reza2kn",
+  "url": "https://huggingface.co/Reza2kn/Motarjem-v0.5-stage1-step24000",
+  "created_at": "2026-08-17T04:05:40.000Z",
+  "updated_at": "2026-08-17T04:06:13.000Z",
+  "license": "falcon-llm-license",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "falcon_h1",
+    "text-generation",
+    "translation",
+    "english",
+    "persian",
+    "falcon-h1",
+    "mamba",
+    "motarjem",
+    "interim-checkpoint",
+    "en",
+    "fa",
+    "dataset:quickmt/quickmt-train.fa-en",
+    "dataset:quickmt/newscrawl2024-en-backtranslated-fa",
+    "dataset:quickmt/madlad400-en-backtranslated-fa",
+    "base_model:tiiuae/Falcon-H1-Tiny-Multilingual-100M-Base",
+    "base_model:finetune:tiiuae/Falcon-H1-Tiny-Multilingual-100M-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 107909824,
+  "parameters_human": "107.9M",
+  "storage_bytes": 215861800,
+  "storage_human": "216 MB",
+  "base_model": "tiiuae/Falcon-H1-Tiny-Multilingual-100M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reza2kn/Motarjem-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/Motarjem-v0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Reza2kn/Motarjem-v0.1 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/Motarjem-v0.1/discussions",
+      "snippet": "Instructions to use Reza2kn/Motarjem-v0.1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Reza2kn/Motarjem-v0.1 with Transformers:"
+    },
+    {
+      "title": "Reza2kn (Reza Sayar)",
+      "url": "https://t.co/54tiQhq6Pv",
+      "snippet": "Public Shenava 1.0 release: Persian ASR models, Phase A/B datasets, AL corrections, eval artifacts, and demos."
+    },
+    {
+      "title": "Reza2kn (Reza Sayar) · GitHub",
+      "url": "https://github.com/Reza2kn",
+      "snippet": "Reza2kn has 42 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

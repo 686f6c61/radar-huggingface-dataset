@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ProCreations/minima-100m-g32",
+  "slug": "procreations-minima-100m-g32",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/minima-100m-g32",
+  "created_at": "2026-08-17T20:53:53.000Z",
+  "updated_at": "2026-08-17T20:54:59.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "minima-lfm",
+  "languages": [],
+  "tags": [
+    "minima-lfm",
+    "safetensors",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-Encoder-350M",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88669952,
+  "parameters_human": "88.7M",
+  "storage_bytes": 99966992,
+  "storage_human": "100 MB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:23.519Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProCreations (SSH) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations/models",
+      "snippet": "Making AI&#x27;s small, accessible, and easy to run on consumer hardware"
+    },
+    {
+      "title": "ProCreations (SSH) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations/spaces",
+      "snippet": "intellite-100m 💬 Chat with an AI assistant and rate its replies for training ProCreations Apr 21 Running 1"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Best Google AI Models (August 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/google-models",
+      "snippet": "As of August 17, 2026, the top model in best google ai models on the BenchLM leaderboard is Gemini 3.6 Flash with a score of 75.5. Last verified: August 17, 2026 All Google Gemini and Gemma models ranked by benchmark performance."
+    }
+  ]
+}

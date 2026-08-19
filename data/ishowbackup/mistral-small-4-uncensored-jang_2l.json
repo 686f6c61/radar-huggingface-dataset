@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Ishowbackup/Mistral-Small-4-Uncensored-JANG_2L",
+  "slug": "ishowbackup-mistral-small-4-uncensored-jang_2l",
+  "author": "Ishowbackup",
+  "url": "https://huggingface.co/Ishowbackup/Mistral-Small-4-Uncensored-JANG_2L",
+  "created_at": "2026-08-17T12:00:35.000Z",
+  "updated_at": "2026-08-17T12:00:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "jang",
+    "quantized",
+    "mixed-precision",
+    "apple-silicon",
+    "moe",
+    "mla",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "vision",
+    "mlx-studio",
+    "image-text-to-text",
+    "en",
+    "base_model:mistralai/Mistral-Small-4-119B-2603",
+    "base_model:finetune:mistralai/Mistral-Small-4-119B-2603",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mistralai/Mistral-Small-4-119B-2603",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dealignai/Mistral-Small-4-Uncensored-JANG_2L · Hugging Face",
+      "url": "https://huggingface.co/dealignai/Mistral-Small-4-Uncensored-JANG_2L",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "uncensoredai/Mistral-Small-24B-Instruct-2501 · Hugging Face",
+      "url": "https://huggingface.co/uncensoredai/Mistral-Small-24B-Instruct-2501",
+      "snippet": "Model Card for Mistral-Small-24B-Instruct-2501 (with tool calling) DISCLAIMER Tool calling template is a work in progress Mistral Small 3 ( 2501 ) sets a new benchmark in the \"small\" Large Language Models category below 70B, boasting 24B parameters and achieving state-of-the-art capabilities comparable to larger models! This model is an instruction-fine-tuned version of the base model: Mistral ..."
+    },
+    {
+      "title": "Best Uncensored AI Models — 15+ LLMs",
+      "url": "https://www.uncensored.app/models",
+      "snippet": "The best uncensored AI model depends on your specific needs. For raw reasoning power, Llama 3.1 405B and DeepSeek V3 lead the pack. For creative writing and roleplay, Dolphin-Mixtral remains the community favorite. For general-purpose use with the fewest refusals, Mistral Large offers an excellent balance of capability and freedom. NinjaChat lets you switch between all of these models in a ..."
+    },
+    {
+      "title": "Introducing Mistral Small 4 | Mistral AI",
+      "url": "https://mistral.ai/news/mistral-small-4/",
+      "snippet": "With the new reasoning_effort parameter, users can dynamically adjust the model&#x27;s behavior: reasoning_effort=\"none\": Fast, lightweight responses for everyday tasks, equivalent to the same chat style of Mistral Small 3.2. reasoning_effort=\"high\": Deep, step-by-step reasoning for complex problems, with equivalent verbosity to previous Magistral models."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

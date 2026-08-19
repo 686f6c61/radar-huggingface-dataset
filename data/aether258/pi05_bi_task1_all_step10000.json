@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Aether258/pi05_bi_task1_all_step10000",
+  "slug": "aether258-pi05_bi_task1_all_step10000",
+  "author": "Aether258",
+  "url": "https://huggingface.co/Aether258/pi05_bi_task1_all_step10000",
+  "created_at": "2026-08-18T06:31:48.000Z",
+  "updated_at": "2026-08-18T06:32:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "openpi",
+    "pi05",
+    "vla",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9587963990,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aether258 (Aether_Zhang) - Hugging Face",
+      "url": "https://huggingface.co/Aether258",
+      "snippet": "Sort: Recently updated Aether258/pi05_bi_vitac_clean_smash_24 Robotics •Updated 30 days ago"
+    },
+    {
+      "title": "Aether258 (Aether_Zhang) - Hugging Face",
+      "url": "https://huggingface.co/Aether258/activity/all",
+      "snippet": "Aether258/pi05_bi_vitac_byw_smash_13 Robotics •Updated May 25 published a modelabout 1 month ago"
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "GitHub - mli0603/openpi-comet: Team Comet&#x27;s 2025 BEHAVIOR Challenge ...",
+      "url": "https://github.com/mli0603/openpi-comet",
+      "snippet": "Tip OpenPi Comet is the submission of Team Comet for the 2025 BEHAVIOR Challenge. This repository provides a unified framework for pre-training, post-training, data generation and evaluation of π0.5 (Pi05) models on BEHAVIOR-1K."
+    },
+    {
+      "title": "pi05_base · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_base/summary",
+      "snippet": "π₀.₅ (Pi05) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Note: This model currently supports only the flow-matching action head for π₀.₅ training and inference. Other components ..."
+    }
+  ]
+}

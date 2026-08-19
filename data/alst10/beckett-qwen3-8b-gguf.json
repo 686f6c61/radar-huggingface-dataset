@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "alst10/beckett-Qwen3-8B-gguf",
+  "slug": "alst10-beckett-qwen3-8b-gguf",
+  "author": "alst10",
+  "url": "https://huggingface.co/alst10/beckett-Qwen3-8B-gguf",
+  "created_at": "2026-08-14T07:21:44.000Z",
+  "updated_at": "2026-08-14T07:29:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "unsloth",
+    "gguf",
+    "llama.cpp",
+    "literature",
+    "playwright",
+    "samuel-beckett",
+    "theater",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939748,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:47:53.527Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-8B-GGUF: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-8b-gguf-qwen",
+      "snippet": "Overview Qwen3-8B-GGUF is a quantized version of Alibaba&#x27;s Qwen3-8B causal language model with 8.2 billion parameters (6.95B non-embedding), built by Qwen. The model&#x27;s defining feature is seamless switching between thinking mode for complex reasoning (mathematics, code, logic) and non-thinking mode for rapid general dialogue within a single checkpoint. It natively supports 32,768 token context ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Qwen3-8B Open-Source Large Language Model - Free Support for Advanced ...",
+      "url": "https://model.aibase.com/models/details/1980507641646157824",
+      "snippet": "🚀 Qwen3-8B-GGUF This is a GGUF-quantized version of the Qwen/Qwen3-8B language model, an 8-billion-parameter LLM from Alibaba&#x27;s Qwen series, designed for advanced reasoning, agentic behavior, and multilingual tasks. Converted for use with llama.cpp and compatible tools like OpenWebUI, LM Studio, GPT4All, and more."
+    }
+  ]
+}

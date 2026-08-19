@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-3-4b-it-PaperWitch-heresy-i1-GGUF",
+  "slug": "mradermacher-gemma-3-4b-it-paperwitch-heresy-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-3-4b-it-PaperWitch-heresy-i1-GGUF",
+  "created_at": "2026-02-21T12:14:33.000Z",
+  "updated_at": "2026-08-14T00:31:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:MuXodious/gemma-3-4b-it-PaperWitch-heresy",
+    "base_model:quantized:MuXodious/gemma-3-4b-it-PaperWitch-heresy",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 1367,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 48366277920,
+  "storage_human": "48.4 GB",
+  "base_model": "MuXodious/gemma-3-4b-it-PaperWitch-heresy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-3-4b-it-PaperWitch-heresy-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-3-4b-it-PaperWitch-heresy-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/gemma-3-4b-it-PaperWitch-heresy-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/gemma-3-4b-it-PaperWitch-heresy-GGUF/tree/main",
+      "snippet": "abliterated conversational License:gemma Model card FilesFiles and versions xet Community Deploy Use this model main gemma-3-4b-it-PaperWitch-heresy-GGUF 37.3 GB 1 contributor History:8 commits mradermacher auto-patch README.md 45e7a0b verified42 minutes ago .gitattributes 2.64 kBuploaded from nico1about 2 hours ago README.md 4.71 kBauto-patch ..."
+    },
+    {
+      "title": "Model Details - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2Fgemma-3-4b-it-PaperWitch-heresy-i1-GGUF",
+      "snippet": "GGUF model details and download"
+    },
+    {
+      "title": "Gemma 3 4b It Paperwitch Heresy I1 - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/gemma-3-4b-it-paperwitch-heresy-i1.html",
+      "snippet": "Download Gemma 3 4b It Paperwitch Heresy I1 GGUF model. 3.0 GB, 2,189 downloads, 2 likes."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    }
+  ]
+}

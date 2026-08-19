@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ltachi/chess-com-scanner-model",
+  "slug": "ltachi-chess-com-scanner-model",
+  "author": "ltachi",
+  "url": "https://huggingface.co/ltachi/chess-com-scanner-model",
+  "created_at": "2026-08-15T17:27:31.000Z",
+  "updated_at": "2026-08-15T17:34:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52051602,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chess Scan - AI Chess Board Scanner & FEN Editor",
+      "url": "https://www.chess-scan.com/",
+      "snippet": "Free AI-powered chess board scanner. Upload board images to detect positions automatically or edit manually. Export FEN notation and analyze on Lichess/Chess.com."
+    },
+    {
+      "title": "GitHub - einoko/chess-scanner: Chessboard position detection model",
+      "url": "https://github.com/einoko/chess-scanner",
+      "snippet": "Chess Scanner is a highly accurate machine learning model for detecting chessboard positions from cropped screenshots of chessboards. The model has been trained on various piece and board sets from popular chess websites (Lichess and others)."
+    },
+    {
+      "title": "GitHub - MEJARSINGH19/Chess-ai-scanner: Camera based chess moves ...",
+      "url": "https://github.com/MEJARSINGH19/Chess-ai-scanner",
+      "snippet": "Camera based chess moves analyzer with AI support. Contribute to MEJARSINGH19/Chess-ai-scanner development by creating an account on GitHub."
+    },
+    {
+      "title": "ChessVision AI - Free Chess Board Scanner & FEN Generator",
+      "url": "https://www.chessvisionai.app/",
+      "snippet": "Instantly analyze chess positions from photos or screenshots. Free AI-powered Chess OCR and board scanner converts images to FEN and provides best move analysis."
+    },
+    {
+      "title": "Which AI Model Is The Best At Chess? Meet The New Kaggle Game Arena",
+      "url": "https://www.chess.com/news/view/which-ai-model-is-the-best-at-chess-kaggle-game-arena",
+      "snippet": "Google is reentering the chess world with the launch of Kaggle Game Arena, a new platform where leading AI models will compete head-to-head in chess, and other games."
+    }
+  ]
+}

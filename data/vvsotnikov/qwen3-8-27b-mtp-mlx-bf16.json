@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "vvsotnikov/Qwen3.8-27B-MTP-MLX-bf16",
+  "slug": "vvsotnikov-qwen3-8-27b-mtp-mlx-bf16",
+  "author": "vvsotnikov",
+  "url": "https://huggingface.co/vvsotnikov/Qwen3.8-27B-MTP-MLX-bf16",
+  "created_at": "2026-08-14T15:33:04.000Z",
+  "updated_at": "2026-08-14T15:33:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_mtp",
+    "mlx-vlm",
+    "qwen",
+    "qwen3.8",
+    "qwen3.8-27b",
+    "mtp",
+    "speculative-decoding",
+    "draft-model",
+    "bf16",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 424699392,
+  "parameters_human": "424.7M",
+  "storage_bytes": 862209655,
+  "storage_human": "862 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=qwen3.8-27b",
+      "snippet": "vvsotnikov/Qwen3.8-27B-MTP-MLX-bf16 Text Generation • 0.4B•Updated 36 minutes ago"
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B&#x27;s weights are overdue but imminent. Where the official download will appear, which GGUF quant fits your VRAM, the Ollama route, and the exact plan to be running it within an hour of the drop."
+    },
+    {
+      "title": "vvsotnikov/Qwen3.6-27B-MTP-bf16-test · Hugging Face",
+      "url": "https://huggingface.co/vvsotnikov/Qwen3.6-27B-MTP-bf16-test",
+      "snippet": "Instructions to use vvsotnikov/Qwen3.6-27B-MTP-bf16-test with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use vvsotnikov/Qwen3.6-27B-MTP-bf16-test with MLX:"
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new family of models, including Qwen3.8-27B, Qwen3.8- 2.4T-A95B and Qwen3.8 -Max. Qwen3.8 has vision and thinking capabilities and a 256K context window (up to 1M tokens). Qwen3.8-27B, the upcoming 27B parameter model will be released this Friday and Unsloth will have day-zero support. Qwen3.8-2.4T-A95B is a 2.4T parameter open-weight model (95B active) that rivals GPT-5.6 Sol."
+    },
+    {
+      "title": "Qwen3.8-27B - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B",
+      "snippet": "Deploy Qwen3.8-27B with SGLang — dense hybrid GDN vision-language model with BF16/FP8/NVFP4 W4A4 checkpoints and in-checkpoint MTP, single-GPU on H200, RTX PRO 6000, RTX 5090 and DGX Spark."
+    }
+  ]
+}

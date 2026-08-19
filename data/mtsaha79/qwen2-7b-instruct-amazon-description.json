@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mtsaha79/qwen2-7b-instruct-amazon-description",
+  "slug": "mtsaha79-qwen2-7b-instruct-amazon-description",
+  "author": "mtsaha79",
+  "url": "https://huggingface.co/mtsaha79/qwen2-7b-instruct-amazon-description",
+  "created_at": "2026-08-18T21:10:42.000Z",
+  "updated_at": "2026-08-18T21:32:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "trl",
+    "sft",
+    "generated_from_trainer",
+    "base_model:Qwen/Qwen2-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41777353,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen2-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "achuash/qwen2-7b-instruct-amazon-description · Hugging Face",
+      "url": "https://huggingface.co/achuash/qwen2-7b-instruct-amazon-description",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mitjav/qwen2-7b-instruct-amazon-description · Hugging Face",
+      "url": "https://huggingface.co/mitjav/qwen2-7b-instruct-amazon-description",
+      "snippet": "qwen2-7b-instruct-amazon-description This model is a fine-tuned version of Qwen/Qwen2-VL-7B-Instruct on an unknown dataset."
+    },
+    {
+      "title": "qwen2-7b-instruct-amazon-description-merged",
+      "url": "https://d6108366.hf-mirror.com/MissFlash/qwen2-7b-instruct-amazon-description-merged/blob/main/README.md?code=true",
+      "snippet": "Instructions to use MissFlash/qwen2-7b-instruct-amazon-description-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get ..."
+    },
+    {
+      "title": "qwen2-7b-instruct-amazon-description - FriendliAI",
+      "url": "https://friendli.ai/models/MissFlash/qwen2-7b-instruct-amazon-description",
+      "snippet": "Deploy qwen2-7b-instruct-amazon-description with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen2-7B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2-7B-Instruct/summary",
+      "snippet": "Qwen2-7B-Instruct Introduction Qwen2 is the new series of Qwen large language models. For Qwen2, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters, including a Mixture-of-Experts model. This repo contains the instruction-tuned 7B Qwen2 model. Compared with the state-of-the-art opensource language models, including the ..."
+    }
+  ]
+}

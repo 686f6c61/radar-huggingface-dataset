@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-GGUF",
+  "slug": "khoin68-qwen2-5-coder-7b-vietnamese-agent-final-gguf",
+  "author": "khoin68",
+  "url": "https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-GGUF",
+  "created_at": "2026-08-16T13:20:47.000Z",
+  "updated_at": "2026-08-16T13:21:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683071456,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

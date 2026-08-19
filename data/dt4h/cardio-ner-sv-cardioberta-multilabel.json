@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DT4H/cardio-ner-sv-cardioberta-multilabel",
+  "slug": "dt4h-cardio-ner-sv-cardioberta-multilabel",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/cardio-ner-sv-cardioberta-multilabel",
+  "created_at": "2026-08-17T11:36:51.000Z",
+  "updated_at": "2026-08-17T12:15:50.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "clinical, medical, ner, healthcare, cardiology, sv, Swedish",
+    "sv",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124107273,
+  "parameters_human": "124.1M",
+  "storage_bytes": 248238610,
+  "storage_human": "248 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CardioNER - a DT4H Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DT4H/cardioner",
+      "snippet": "DT4H/cardio-ner-multilingual-xlm-roberta-large-multilabel 0.6B•Updated 2 days ago• 51 Upvote - Sort: Collection"
+    },
+    {
+      "title": "Home - DataTools4Heart",
+      "url": "https://www.datatools4heart.eu/",
+      "snippet": "Natural Language Processing DataTools4Heart will introduce a multilingual Natural Language Processing (NLP) suite to standardise the structuring of cardiology reports across European regions, including cardiology-specific entity recognition and machine translation. Such suite will include adaptation of 7 language models to the cardiology domain in English, Spanish, Italian, Romanian, Czech ..."
+    },
+    {
+      "title": "DT4H/cardio-ner-cs-cardioberta-multilabel · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-cs-cardioberta-multilabel",
+      "snippet": "Model Card for Cardio-Ner-Cs-Cardioberta-Multilabel Description Czech cardiology NER model for disease, medication, procedure, and symptom recognition Model Details Language: CS Task: token-classification Framework: pytorch How to Use"
+    },
+    {
+      "title": "The DataTools4Heart Project · GitHub",
+      "url": "https://github.com/DataTools4Heart/",
+      "snippet": "This organization hosts the source code and documentation for all components that power the DataTools4Heart (DT4H) platform — a federated, privacy-preserving cardiology data toolbox developed to enhance health data reusability. Our platform enables secure, decentralized analysis of cardiology data while strictly adhering to ethical, legal, and data protection standards."
+    },
+    {
+      "title": "nlp4bia-bsc/DT4H_Multilingual_NER - GitHub",
+      "url": "https://github.com/nlp4bia-bsc/DT4H_Multilingual_NER",
+      "snippet": "This repository contains code and documentation for multilingual Named Entity Recognition (NER) models developed within the DT4H (Data Tools for Heart) Europe Horizon project. The focus is multilingual clinical NER for disease, symptom, and procedure mention detection."
+    }
+  ]
+}

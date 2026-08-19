@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bartowski/Ling-3.0-tiny-GGUF",
+  "slug": "bartowski-ling-3-0-tiny-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/Ling-3.0-tiny-GGUF",
+  "created_at": "2026-08-18T03:00:57.000Z",
+  "updated_at": "2026-08-18T03:36:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:quantized:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 2,
+  "trending_score": 12,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 124348422592,
+  "storage_human": "124.3 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/inclusionAI_Ling-1T-GGUF · Request: GGUF quantization for ...",
+      "url": "https://huggingface.co/bartowski/inclusionAI_Ling-1T-GGUF/discussions/1",
+      "snippet": "I wasn&#x27;t sure where to send this, but I wanted to inquire about the possibility of requesting a GGUF conversion for the recently released Ling-3.0-tiny model (7.9B, 1.3B active, using the new bailingmoe3 architecture with KDA/MLA and Q-LoRA layers)."
+    },
+    {
+      "title": "Ling-3.0-tiny · Models",
+      "url": "https://www.modelscope.cn/models/inclusionAI/Ling-3.0-tiny",
+      "snippet": "We are introducing Ling-3.0-tiny, a lightweight hybrid reasoning MoE model with 7.9B total parameters and only 1.3B activated parameters per token. It is designed to deliver strong reasoning and agentic capabilities at low inference cost, making advanced model capabilities more accessible for local and resource-constrained deployment."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-tiny Ling-3.0-tiny is a lightweight hybrid reasoning model in the Ling series designed for edge deployment scenarios, with 7.9B total parameters and only 1.3B activated parameters."
+    },
+    {
+      "title": "Ling 3.0 Tiny Review: Ant Group&#x27;s 7.9B MoE Model (August 2026)",
+      "url": "https://aitoolsreview.co.uk/insights/ling-3-0-tiny",
+      "snippet": "Ling 3.0 Tiny is a 7.9-billion-parameter Mixture-of-Experts model from InclusionAI, Ant Group&#x27;s AI research division, released on 6 August 2026. It activates only around 1.3 billion parameters per token, ships with a native 256K-token context window, switchable Thinking and Instant reasoning modes, native function calling, and prompt caching."
+    },
+    {
+      "title": "Ant Group&#x27;s Ling 3.0 Tiny Matches GPT-120B Intelligence With 15x Fewer ...",
+      "url": "https://alphasignal.ai/news/ant-group-s-ling-3-0-tiny-matches-gpt-120b-intelligence-with-15x-fewer",
+      "snippet": "New model: InclusionAI (Ant Group) released Ling 3.0 Tiny, a 7.9B MoE reasoning model with only 1.3B active parameters per token. Benchmark performance: Scores 25 on the Artificial Analysis Intelligence Index, ranking 6th of 56 models in its class, comparable to GPT-class models with 15x more parameters."
+    }
+  ]
+}

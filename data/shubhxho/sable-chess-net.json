@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "shubhxho/sable-chess-net",
+  "slug": "shubhxho-sable-chess-net",
+  "author": "shubhxho",
+  "url": "https://huggingface.co/shubhxho/sable-chess-net",
+  "created_at": "2026-08-10T01:29:46.000Z",
+  "updated_at": "2026-08-16T06:56:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "chess",
+    "chess-engine",
+    "nnue",
+    "apple-silicon",
+    "quantization",
+    "int8",
+    "distillation",
+    "knowledge-distillation",
+    "self-play",
+    "uci",
+    "rust",
+    "no-std",
+    "edge",
+    "other",
+    "en",
+    "license:mit",
+    "model-index",
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208220,
+  "storage_human": "208220 B",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Chess play, head-to-head vs the previous release",
+      "dataset": "Randomised 8-ply openings, colours swapped every pair",
+      "metric": "Elo at 20,000 nodes/move",
+      "value": 63
+    },
+    {
+      "task": "Chess play, head-to-head vs the previous release",
+      "dataset": "Randomised 8-ply openings, colours swapped every pair",
+      "metric": "Elo at 100ms/move",
+      "value": 42.3
+    },
+    {
+      "task": "Chess play, head-to-head vs the previous release",
+      "dataset": "Randomised 8-ply openings, colours swapped every pair",
+      "metric": "Elo at 300ms/move",
+      "value": 51.6
+    },
+    {
+      "task": "Chess play, absolute rating anchor",
+      "dataset": "Stockfish with UCI_LimitStrength, five settings from 2600 to 3000",
+      "metric": "Implied Elo on Stockfish's UCI_Elo scale (0.5 crossover)",
+      "value": 2800
+    },
+    {
+      "task": "Chess play, gauntlet vs earlier builds",
+      "dataset": "Every historical binary kept in the repository",
+      "metric": "Elo vs the hand-crafted evaluator it replaced",
+      "value": 156.2
+    },
+    {
+      "task": "Chess play, gauntlet vs earlier builds",
+      "dataset": "Every historical binary kept in the repository",
+      "metric": "Elo vs the first network release",
+      "value": 150.7
+    },
+    {
+      "task": "Chess play, gauntlet vs earlier builds",
+      "dataset": "Every historical binary kept in the repository",
+      "metric": "Self-play control, same binary both sides",
+      "value": 5.2
+    },
+    {
+      "task": "Regression against the teacher search",
+      "dataset": "20,000 held-out positions labelled by the engine's own search",
+      "metric": "Correlation with teacher score (invariant under the output gain)",
+      "value": 0.9803
+    }
+  ],
+  "sources": []
+}

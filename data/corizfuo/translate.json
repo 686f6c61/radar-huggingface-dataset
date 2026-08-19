@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Corizfuo/translate",
+  "slug": "corizfuo-translate",
+  "author": "Corizfuo",
+  "url": "https://huggingface.co/Corizfuo/translate",
+  "created_at": "2026-08-16T21:13:42.000Z",
+  "updated_at": "2026-08-16T21:37:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "m2m_100",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 739915686,
+  "storage_human": "740 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

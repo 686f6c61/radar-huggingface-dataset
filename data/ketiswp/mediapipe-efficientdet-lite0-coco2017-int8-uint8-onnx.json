@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ketiswp/mediapipe-EfficientDet-Lite0-COCO2017-int8-uint8-onnx",
+  "slug": "ketiswp-mediapipe-efficientdet-lite0-coco2017-int8-uint8-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/mediapipe-EfficientDet-Lite0-COCO2017-int8-uint8-onnx",
+  "created_at": "2026-08-19T01:56:40.000Z",
+  "updated_at": "2026-08-19T02:22:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int8",
+    "uint8",
+    "object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4137050,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - google-ai-edge/mediapipe: Cross-platform, customizable ML ...",
+      "url": "https://github.com/google-ai-edge/mediapipe",
+      "snippet": "Solutions MediaPipe Solutions provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in your applications. You can plug these solutions into your applications immediately, customize them to your needs, and use them across multiple development platforms."
+    },
+    {
+      "title": "Object detection task guide | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/object_detector?hl=en",
+      "snippet": "The EfficientDet-Lite0 model uses an EfficientNet-Lite0 backbone with a 320x320 input size and BiFPN feature network. The model was trained with the COCO dataset, a large-scale object detection dataset that contains 1.5 million object instances and 80 object labels."
+    },
+    {
+      "title": "mediapipe/docs/solutions/models.md at master · google-ai-edge ... - GitHub",
+      "url": "https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/models.md",
+      "snippet": "Cross-platform, customizable ML solutions for live and streaming media. - google-ai-edge/mediapipe"
+    },
+    {
+      "title": "I Built a MediaPipe Image Classifier in Python With EfficientNet-Lite0 ...",
+      "url": "https://medium.com/image-classification-tutorials/i-built-a-mediapipe-image-classifier-in-python-with-efficientnet-lite0-heres-the-clean-workflow-eb74ca1cdd53",
+      "snippet": "MediaPipe Tasks gives you a ready-to-use Image Classifier API, and EfficientNet-Lite0 (TensorFlow Lite) keeps inference lightweight and fast enough for everyday dev work."
+    },
+    {
+      "title": "Object Detection | React Native MediaPipe - GitHub Pages",
+      "url": "https://cdiddy77.github.io/react-native-mediapipe/docs/api_pages/object-detection/",
+      "snippet": "Locate the file named \"efficientdet_lite0.tflite\". Drag and drop or copy and paste the file into the rnmpdemo folder. Xcode Launching: Boot Xcode on your computer Open existing project, in this case rnmpdemo Go to to your ios folder Choose the rnmpdemo.xcworkspace Navigate to your rnmpdemo folder inside your rnmpdemo directory"
+    }
+  ]
+}

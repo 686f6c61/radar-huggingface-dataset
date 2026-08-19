@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "best26/dendritex-p97",
+  "slug": "best26-dendritex-p97",
+  "author": "best26",
+  "url": "https://huggingface.co/best26/dendritex-p97",
+  "created_at": "2026-08-18T11:15:53.000Z",
+  "updated_at": "2026-08-18T11:15:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "best26 (S) - Hugging Face",
+      "url": "https://huggingface.co/best26/models",
+      "snippet": "User profile of S on Hugging Face published a model about 11 hours ago"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Best AI Models in August 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for August 2026."
+    },
+    {
+      "title": "best26/sn97-as-v2 · Hugging Face",
+      "url": "https://huggingface.co/best26/sn97-as-v2",
+      "snippet": "Duplicated from best26/sn97-as-v1 best26 / sn97-as-v2 like 0 Safetensors deepseek_v3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 81 Safetensors Model size 16B params Tensor type F32 · BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "best26_v1 Model for Detection - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/franck-kamdem/kosserydesk/best26v1",
+      "snippet": "best26_v1 is a Detection model in kosserydesk by franck-kamdem. View training metrics, predictions, and deploy on Ultralytics Platform. Free to start."
+    }
+  ]
+}

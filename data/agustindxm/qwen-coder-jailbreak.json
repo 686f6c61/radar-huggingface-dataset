@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "agustindxm/qwen-coder-jailbreak",
+  "slug": "agustindxm-qwen-coder-jailbreak",
+  "author": "agustindxm",
+  "url": "https://huggingface.co/agustindxm/qwen-coder-jailbreak",
+  "created_at": "2026-04-01T15:49:34.000Z",
+  "updated_at": "2026-08-18T23:09:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2.5",
+    "qwen2.5-coder",
+    "code",
+    "abliteration",
+    "uncensored",
+    "heretic",
+    "research",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 315,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 19920926720,
+  "storage_human": "19.9 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agustindxm/qwen-coder-jailbreak · Hugging Face",
+      "url": "https://huggingface.co/agustindxm/qwen-coder-jailbreak",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agustindxm/qwen-coder-jailbreak at main - Hugging Face",
+      "url": "https://huggingface.co/agustindxm/qwen-coder-jailbreak/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Deploy Use this model main qwen-coder-jailbreak 4.68 GB Ctrl+K Ctrl+K 1 contributor History:2 commits agustindxm Upload qwen-jailbreak-q4.gguf with huggingface_hub d28ff52 verified20 days ago .gitattributes 1.58 kBUpload qwen-jailbreak-q4.gguf with huggingface_hub20 days ago qwen-jailbreak-q4 ..."
+    },
+    {
+      "title": "GitHub - agusisa/qwen-coder-jailbreak",
+      "url": "https://github.com/agusisa/qwen-coder-jailbreak/tree/main",
+      "snippet": "Contribute to agusisa/qwen-coder-jailbreak development by creating an account on GitHub."
+    },
+    {
+      "title": "qwen-coder-jailbreak/README.md at main · agusisa/qwen-coder ... - GitHub",
+      "url": "https://github.com/agusisa/qwen-coder-jailbreak/blob/main/README.md",
+      "snippet": "Contribute to agusisa/qwen-coder-jailbreak development by creating an account on GitHub."
+    },
+    {
+      "title": "Qwen3.8 Jailbreak Risk — What the First Public Claim Does and Does Not ...",
+      "url": "https://www.penligent.ai/hackinglabs/qwen3-8-jailbreak/",
+      "snippet": "A public post now claims that Alibaba&#x27;s new qwen3.8-max-preview model can be pushed past its safety controls with a long persona-based jailbreak prompt. The screenshots attached to that post appear to show the model producing content that the author characterizes as malicious code, weapons guidance, and drug-synthesis information."
+    }
+  ]
+}

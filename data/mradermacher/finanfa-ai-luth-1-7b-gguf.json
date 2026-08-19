@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/finanfa-ai-luth-1.7b-GGUF",
+  "slug": "mradermacher-finanfa-ai-luth-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/finanfa-ai-luth-1.7b-GGUF",
+  "created_at": "2026-08-18T04:48:00.000Z",
+  "updated_at": "2026-08-18T06:23:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "benin",
+    "finanfa-ai",
+    "lora",
+    "peft",
+    "qwen3",
+    "luth",
+    "fine-tuned",
+    "fr",
+    "dataset:Ronaldodev/finanfa-ai-dataset",
+    "base_model:Ronaldodev/finanfa-ai-luth-1.7b",
+    "base_model:adapter:Ronaldodev/finanfa-ai-luth-1.7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959971968,
+  "storage_human": "16.0 GB",
+  "base_model": "Ronaldodev/finanfa-ai-luth-1.7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Luth-1.7B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Luth-1.7B-Instruct-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?apps=ollama&other=base_model:quantized:kurakurai/Luth-1.7B-Instruct",
+      "snippet": "Explore machine learning models. 4 Full-text search Inference Available Edit filters Sort: Trending Active filters: ollama, kurakurai/Luth-1.7B-Instruct Clear all"
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "A privacy-first, beginner-friendly desktop application for running large language models fully locally on Windows, Linux, and macOS. Load any GGUF model (Mistral, LLaMA, DeepSeek, Qwen, and thousands more from Hugging Face) and chat with it — with a built-in agentic mode that can read, create, edit, and organize files in a workspace you choose. No data ever leaves your computer. 📦 Also ..."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    }
+  ]
+}

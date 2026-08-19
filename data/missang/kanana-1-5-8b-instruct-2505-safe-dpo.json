@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "missang/kanana-1.5-8b-instruct-2505-Safe-DPO",
+  "slug": "missang-kanana-1-5-8b-instruct-2505-safe-dpo",
+  "author": "missang",
+  "url": "https://huggingface.co/missang/kanana-1.5-8b-instruct-2505-Safe-DPO",
+  "created_at": "2026-08-14T07:19:34.000Z",
+  "updated_at": "2026-08-14T07:24:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 246,
+  "trending_score": 0,
+  "parameters": 8030285824,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077816292,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kanana-1.5-8b-instruct-2505-Persona-LORA - Hugging Face",
+      "url": "https://huggingface.co/missang/kanana-1.5-8b-instruct-2505-Persona-LORA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ansoog/kanana-1.5-8b-instruct-2505-Safe-DPO · Hugging Face",
+      "url": "https://huggingface.co/ansoog/kanana-1.5-8b-instruct-2505-Safe-DPO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - kakao/kanana: Kanana: Compute-efficient Bilingual Language ...",
+      "url": "https://github.com/kakao/kanana",
+      "snippet": "Introducing Kanana-1.5-15.7B-A3B, the first Mixture-of-Experts (MoE) model in our Kanana family, engineered for exceptional efficiency and powerful performance. Kanana-1.5-15.7B-A3B, which has sparse architecture, delivers capabilities comparable to the Kanana-1.5-8B dense model while utilizing only 37% of the FLOPS per token, making it a highly inference-efficient and cost-effective solution ..."
+    },
+    {
+      "title": "Kanana: Compute-efficient Bilingual Language Models - arXiv.org",
+      "url": "https://arxiv.org/html/2502.18934v1",
+      "snippet": "The family of models includes pre-trained base model and post-trained instruction models in sizes of {2.1B, 9.8B, 32.5B}. We show in Figure 1 that Kanana models establish a new Pareto frontier in the computational cost of the train time versus the performance."
+    },
+    {
+      "title": "Kanana: Compute-efficient Bilingual Language Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/2502.18934",
+      "snippet": "As the product of our endeavor to address the computational challenges, we introduce Kanana model family, developed using only a fraction of computational cost while maintain-ing performance compared to those of the state-of-the-art (SOTA) open LLMs. The family of models includes pre-trained base model and post-trained instruction models in sizes of {2.1B, 9.8B, 32.5B}. We show in Figure 1 ..."
+    }
+  ]
+}

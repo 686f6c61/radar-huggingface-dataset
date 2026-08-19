@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "SLAI-AITP/SLAI-T-Rex-Pro",
+  "slug": "slai-aitp-slai-t-rex-pro",
+  "author": "SLAI-AITP",
+  "url": "https://huggingface.co/SLAI-AITP/SLAI-T-Rex-Pro",
+  "created_at": "2026-08-10T09:19:02.000Z",
+  "updated_at": "2026-08-17T14:44:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 1598839674782,
+  "parameters_human": "1598.84B",
+  "storage_bytes": 3197701756460,
+  "storage_human": "3197.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

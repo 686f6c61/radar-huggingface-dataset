@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-o-2_6-int4",
+  "slug": "openbmb-minicpm-o-2_6-int4",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-o-2_6-int4",
+  "created_at": "2025-01-13T09:04:31.000Z",
+  "updated_at": "2026-08-18T03:58:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmo",
+    "feature-extraction",
+    "minicpm-o",
+    "omni",
+    "vision",
+    "ocr",
+    "multi-image",
+    "video",
+    "custom_code",
+    "audio",
+    "speech",
+    "voice cloning",
+    "live Streaming",
+    "realtime speech conversation",
+    "asr",
+    "tts",
+    "any-to-any",
+    "multilingual",
+    "dataset:openbmb/RLAIF-V-Dataset",
+    "base_model:openbmb/MiniCPM-o-2_6",
+    "base_model:quantized:openbmb/MiniCPM-o-2_6",
+    "license:apache-2.0",
+    "4-bit",
+    "gptq",
+    "region:us"
+  ],
+  "likes": 53,
+  "downloads_30d": 9527,
+  "trending_score": 0,
+  "parameters": 8674997028,
+  "parameters_human": "8.67B",
+  "storage_bytes": 7637451036,
+  "storage_human": "7.6 GB",
+  "base_model": "openbmb/MiniCPM-o-2_6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-o-2_6-int4 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-o-2_6-int4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openbmb/MiniCPM-o-2_6 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
+      "snippet": "The model is built in an end-to-end fashion based on SigLip-400M, Whisper-medium-300M, ChatTTS-200M, and Qwen2.5-7B with a total of 8B parameters. It exhibits a significant performance improvement over MiniCPM-V 2.6, and introduces new features for real-time speech conversation and multimodal live streaming."
+    },
+    {
+      "title": "GitHub - IsiSinclair/MiniCPM-o-2.6: MiniCPM-o 2.6: A GPT-4o Level MLLM ...",
+      "url": "https://github.com/IsiSinclair/MiniCPM-o-2.6",
+      "snippet": "An enhanced feature of MiniCPM-o-2.6 is to act as an AI assistant, but only with limited choice of voices. In this mode, MiniCPM-o-2.6 is less human-like and more like a voice assistant."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    },
+    {
+      "title": "openbmb/MiniCPM-o-2_6-int4 — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/openbmb/MiniCPM-o-2_6-int4/",
+      "snippet": "MiniCPM-o 2.6 INT4: GPT-4o Level Multimodal Intelligence for Edge Devices MiniCPM-o 2.6 is an end-to-end Multimodal Large Language Model (MLLM) designed for vision, speech, and multimodal live streaming. This version is the INT4 quantized variant, optimised for significantly lower memory usage while maintaining high performance."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "terminusresearch/terminus-xl-gamma-v2-1",
+  "slug": "terminusresearch-terminus-xl-gamma-v2-1",
+  "author": "terminusresearch",
+  "url": "https://huggingface.co/terminusresearch/terminus-xl-gamma-v2-1",
+  "created_at": "2024-02-10T01:56:54.000Z",
+  "updated_at": "2026-08-18T20:31:40.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 890836325792,
+  "storage_human": "890.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "terminusresearch/terminus-xl-gamma-v2 · Hugging Face",
+      "url": "https://huggingface.co/terminusresearch/terminus-xl-gamma-v2",
+      "snippet": "Terminus XL Gamma (v2 preview) Model Details Model Description Terminus XL Gamma is a new state-of-the-art latent diffusion model that uses zero-terminal SNR noise schedule and velocity prediction objective at training and inference time. Terminus is based on a similar architecture to SDXL, and has the same layout. It has been trained on fewer steps with very high quality data captions via ..."
+    },
+    {
+      "title": "terminusresearch/terminus-xl-gamma-v2-1 · Hugging Face",
+      "url": "https://huggingface.co/terminusresearch/terminus-xl-gamma-v2-1",
+      "snippet": "Terminus XL - Gamma (v2 preview) This is an in-progress checkpoint of the \"Gamma\" model from the Terminus XL series. It&#x27;s updated randomly for evaluation as progress rolls on."
+    },
+    {
+      "title": "charlesmccarthy/terminus-xl-gamma-v2 | Get started - Replicate",
+      "url": "https://replicate.com/charlesmccarthy/terminus-xl-gamma-v2/api",
+      "snippet": "Terminus XL Gamma is a new state-of-the-art latent diffusion model that uses zero-terminal SNR noise schedule and velocity prediction objective at training and inference time."
+    },
+    {
+      "title": "charlesmccarthy/terminus-xl-gamma-v2 | model-api",
+      "url": "https://replicate.com/charlesmccarthy/terminus-xl-gamma-v2/api/model-api",
+      "snippet": "Terminus XL Gamma is a new state-of-the-art latent diffusion model that uses zero-terminal SNR noise schedule and velocity prediction objective at training and inference time."
+    },
+    {
+      "title": "bghira/terminus-xl-gamma-v2-1 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/bghira-terminus-xl-gamma-v2-1",
+      "snippet": "terminus-xl-gamma-v2-1 is an open source model from GitHub that offers a free installation service, and any user can find terminus-xl-gamma-v2-1 on GitHub to install."
+    }
+  ]
+}

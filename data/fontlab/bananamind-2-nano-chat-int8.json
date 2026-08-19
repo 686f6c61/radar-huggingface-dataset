@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "fontlab/BananaMind-2-Nano-Chat-int8",
+  "slug": "fontlab-bananamind-2-nano-chat-int8",
+  "author": "fontlab",
+  "url": "https://huggingface.co/fontlab/BananaMind-2-Nano-Chat-int8",
+  "created_at": "2026-08-17T16:49:44.000Z",
+  "updated_at": "2026-08-17T16:49:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "bananamendr",
+  "languages": [],
+  "tags": [
+    "bananamendr",
+    "safetensors",
+    "bananamind2_nano",
+    "quantized",
+    "int8",
+    "bananamend",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:BananaMind/BananaMind-2-Nano-Chat",
+    "base_model:finetune:BananaMind/BananaMind-2-Nano-Chat",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10123776,
+  "parameters_human": "10.1M",
+  "storage_bytes": 10630344,
+  "storage_human": "11 MB",
+  "base_model": "BananaMind/BananaMind-2-Nano-Chat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BananaMind 2 Nano Chat - GitHub",
+      "url": "https://github.com/mpottinger/bananamind-2-nano-chat",
+      "snippet": "A polished local desktop chat app powered by BananaMind/BananaMind-2-Nano-Chat: just 9,968,128 parameters, running entirely on CPU for text generation. The PySide6 interface includes message bubbles, an editable system prompt, multi-turn history, focused or creative generation, reply-length and seed ..."
+    },
+    {
+      "title": "BananaMind/BananaMind-2-Nano at main - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/BananaMind-2-Nano/tree/main",
+      "snippet": "BananaMind AI 22 Text Generation Transformers Safetensors PyTorch 4 datasets English bananamind2_nano causal-lm language-model base-model small-language-model bananamind bananamind2 bananamind2-nano fineweb-edu dclm cosmopedia-v2 finemath digit-tokenizer custom-code trust-remote-code custom-architecture custom_code License:apache-2.0 Model card ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=bananamind2-nano",
+      "snippet": "BananaMind/BananaMind-2-Nano-Chat Text Generation • 9.97M•Updated 14 days ago• 508 • 6"
+    },
+    {
+      "title": "BananaMind 2 Nano by BananaMind — 4K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/BananaMind%2FBananaMind-2-Nano,3hjmoEynhmCrG7Ue66GfqU",
+      "snippet": "BananaMind 2 Nano is an open-source 12.1m LLM by BananaMind. 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "YouMind OpenLab · GitHub",
+      "url": "https://github.com/YouMind-OpenLab",
+      "snippet": "AI Image Prompts — 10,000+ curated prompts for any model. Works with Nano Banana Pro, Nano Banana 2, Seedream 5.0, GPT Image 1.5, Midjourney, DALL-E, Flux, Stable Diffusion, and more."
+    }
+  ]
+}

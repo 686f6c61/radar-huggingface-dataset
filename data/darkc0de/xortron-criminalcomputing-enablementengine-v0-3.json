@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3",
+  "slug": "darkc0de-xortron-criminalcomputing-enablementengine-v0-3",
+  "author": "darkc0de",
+  "url": "https://huggingface.co/darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3",
+  "created_at": "2026-08-16T17:47:24.000Z",
+  "updated_at": "2026-08-16T20:46:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "conversational",
+    "en",
+    "base_model:darkc0de/gemma-4-31B-it-updated-heretic",
+    "base_model:finetune:darkc0de/gemma-4-31B-it-updated-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507890,
+  "storage_human": "62.6 GB",
+  "base_model": "darkc0de/gemma-4-31B-it-updated-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xortron (XORTRON - Criminal Computing) - Hugging Face",
+      "url": "https://huggingface.co/xortron",
+      "snippet": "XORTRON - Criminal Computing Release Quality Xortron Apps & Models Chat with XORTRON - Criminal Computing Image-Text-to-Text • 27B • Updated Apr 8 • 243 • • 7 darkc0de/XORTRON.CriminalComputing.2026.4B.Instruct.NEXT Image-Text-to-Text • 5B • Updated Apr 6 • 115 • • 7"
+    },
+    {
+      "title": "XORTRON.CriminalComputing.2026.27B.Instruct - Hugging Face",
+      "url": "https://huggingface.co/darkc0de/XORTRON.CriminalComputing.2026.27B.Instruct",
+      "snippet": "A newer version of this model is available: darkc0de/XORTRON.CriminalComputing.2026.27B.Instruct.NEXT"
+    },
+    {
+      "title": "darkc0de/XORTRON.CriminalComputing.2026.4B.Instruct.NEXT",
+      "url": "https://huggingbay.xyz/artifact/hf-model-darkc0de-xortron-criminalcomputing-2026-4b-instruct-next",
+      "snippet": "About this artifact External Hugging Face catalog record for darkc0de/XORTRON.CriminalComputing.2026.4B.Instruct.NEXT. Popularity signal at import: 172 downloads and 7 likes. Files are listed for discovery and verification context, but this Hugging Bay pilot has not mirrored or rescanned the remote blobs. Use the upstream Hugging Face links for download until an explicit mirror job is approved."
+    },
+    {
+      "title": "XORTRON - Criminal Computing",
+      "url": "https://hf-p-cfw.fyan.top/xortron/collections",
+      "snippet": "Uncensored AI that&#x27;s actually Uncensored darkc0de/XortronCriminalComputingConfig-i1-GGUF 24B•Updated Mar 17• 396 • 5 XORTRON - Criminal Computing Release Quality Xortron Apps & Models Running 491"
+    },
+    {
+      "title": "XORTRON.CriminalComputing.LARGE.2026.3 - llmrun.dev",
+      "url": "https://llmrun.dev/model/darkc0de-xortron-criminalcomputing-large-2026-3",
+      "snippet": "XORTRON.CriminalComputing.LARGE.2026.3 — Hardware Requirements & GPU Compatibility Chat XORTRON.CriminalComputing.LARGE.2026.3 is a 122.6B-parameter open language model from darkc0de. It supports a context window of up to 131,072 tokens. At Q4_K_M it needs about 74.60 GB of VRAM — see which GPUs and Macs can run it below."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gojiberries/piedomains-image",
+  "slug": "gojiberries-piedomains-image",
+  "author": "gojiberries",
+  "url": "https://huggingface.co/gojiberries/piedomains-image",
+  "created_at": "2026-07-30T20:56:02.000Z",
+  "updated_at": "2026-08-18T00:51:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip",
+    "image-classification",
+    "website-classification",
+    "screenshot",
+    "siglip2",
+    "arxiv:2502.14786",
+    "base_model:google/siglip2-base-patch16-224",
+    "base_model:finetune:google/siglip2-base-patch16-224",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 92914215,
+  "parameters_human": "92.9M",
+  "storage_bytes": 1115063892,
+  "storage_human": "1.1 GB",
+  "base_model": "google/siglip2-base-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "piedomains - themains.github.io",
+      "url": "https://themains.github.io/piedomains/",
+      "snippet": "🚀 What&#x27;s New in v0.6.0 ¶ Streamlined JSON API: Simple, consistent JSON responses for easy integration with any workflow Enhanced LLM Support: Built-in support for OpenAI, Anthropic, and Google AI models with custom category definitions Advanced Archive Analysis: Analyze historical website versions from archive.org with intelligent rate limiting Separated Data Collection: Collect website ..."
+    },
+    {
+      "title": "piedomains · PyPI",
+      "url": "https://pypi.org/project/piedomains/",
+      "snippet": "piedomains: Classify website content using ML Models or LLMs What&#x27;s New in v0.8.0 New text model, in PyTorch. A fine-tuned mmBERT encoder replaces the bag-of-embeddings TensorFlow model. Confidence is now a real probability: temperature-scaled softmax, rather than 39 per-class isotonic regressions applied elementwise and never renormalized. TensorFlow is gone, so Python 3.14 works. Bot walls ..."
+    },
+    {
+      "title": "GitHub - themains/piedomains: Classify the kind of content hosted by ...",
+      "url": "https://github.com/themains/piedomains/tree/main",
+      "snippet": "Classify the kind of content hosted by the domain using the domain name, and text and screenshot of the homepage. - themains/piedomains"
+    },
+    {
+      "title": "Gojiberry",
+      "url": "https://app.gojiberry.ai/",
+      "snippet": "Gojiberry is an AI-powered assistant that automates follow-ups, CRM, and generates summaries, personalized emails, and insights for sales or customer calls."
+    },
+    {
+      "title": "piedomains/README.md at main · themains/piedomains · GitHub",
+      "url": "https://github.com/themains/piedomains/blob/main/README.md",
+      "snippet": "Classify the kind of content hosted by the domain using the domain name, and text and screenshot of the homepage. - themains/piedomains"
+    }
+  ]
+}

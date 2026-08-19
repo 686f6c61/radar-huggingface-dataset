@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "metajazz/Qwen3.8-27B-oQ4-fp16",
+  "slug": "metajazz-qwen3-8-27b-oq4-fp16",
+  "author": "metajazz",
+  "url": "https://huggingface.co/metajazz/Qwen3.8-27B-oQ4-fp16",
+  "created_at": "2026-08-15T13:13:55.000Z",
+  "updated_at": "2026-08-15T13:14:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 74,
+  "trending_score": 0,
+  "parameters": 4813519600,
+  "parameters_human": "4.81B",
+  "storage_bytes": 17581039881,
+  "storage_human": "17.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · metajazz/Qwen3.8-27B-oQ6-fp16-mtp at main",
+      "url": "https://huggingface.co/metajazz/Qwen3.8-27B-oQ6-fp16-mtp/blob/main/README.md",
+      "snippet": "Qwen3.8-27B-oQ6-fp16-mtp like 0 MLX Safetensors qwen3_5 oq quantized 6-bit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries MLX # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ6-fp16-mtp metajazz/Qwen3.8-27B-oQ6-fp16-mtp ..."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    },
+    {
+      "title": "Qwen3.8-27B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is an AI model released by Qwen on Friday, Aug 14 2026, 11 days after Qwen3.8-Max. It is an open-weight model — the trained weights are available to download and run."
+    }
+  ]
+}

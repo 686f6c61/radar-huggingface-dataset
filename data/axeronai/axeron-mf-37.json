@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "AxeronAI/axeron-mf-37",
+  "slug": "axeronai-axeron-mf-37",
+  "author": "AxeronAI",
+  "url": "https://huggingface.co/AxeronAI/axeron-mf-37",
+  "created_at": "2026-08-14T19:21:30.000Z",
+  "updated_at": "2026-08-14T19:21:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "axeron-modelforge",
+  "languages": [],
+  "tags": [
+    "axeron-modelforge",
+    "safetensors",
+    "qwen2",
+    "axeron",
+    "modelforge",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

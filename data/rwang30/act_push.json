@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rwang30/act_push",
+  "slug": "rwang30-act_push",
+  "author": "Rwang30",
+  "url": "https://huggingface.co/Rwang30/act_push",
+  "created_at": "2026-08-16T03:56:12.000Z",
+  "updated_at": "2026-08-16T03:56:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Rwang30/so101-push-task",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoukiHagiwara/act_slide_push_pull_v3 · Hugging Face",
+      "url": "https://huggingface.co/KoukiHagiwara/act_slide_push_pull_v3",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "Kimz1/act-pusht-policy-0825 · Hugging Face",
+      "url": "https://huggingface.co/Kimz1/act-pusht-policy-0825",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "AI Prompt Injection Attacks 2026: Real Examples That Work",
+      "url": "https://theboard.world/articles/technology/ai-prompt-injection-attacks-how-they-work-2026/",
+      "snippet": "What to Watch Regulatory enforcement acceleration: Expect the first major fines under AI security regulations by Q3 2026, likely targeting financial services firms with inadequate prompt injection defenses. The EU&#x27;s AI Act enforcement will set precedents for global compliance requirements."
+    },
+    {
+      "title": "Push.ai - Unlocking Collaborative AI for Businesses",
+      "url": "https://www.push.ai/",
+      "snippet": "Push is the single context layer for AI. Allow agents to reason and operate from a shared understanding of your business with a centralized model, governed data access, and reliable tool execution. Scale trusted AI operations across every department."
+    },
+    {
+      "title": "jjchong5/PhysAI-Hack2026-ACT-pouring-model - GitHub",
+      "url": "https://github.com/jjchong5/PhysAI-Hack2026-ACT-pouring-model/tree/main",
+      "snippet": "PhysAI Hackathon 2026 — Reproduction Notes This model was trained at the Physical AI Hackathon (Feb 2026, SoloTech) using an SO101 robot arm performing a water-pouring task."
+    }
+  ]
+}

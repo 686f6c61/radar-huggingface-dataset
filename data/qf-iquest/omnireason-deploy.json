@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/OmniReason-Deploy",
+  "slug": "qf-iquest-omnireason-deploy",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/OmniReason-Deploy",
+  "created_at": "2026-08-17T21:03:43.000Z",
+  "updated_at": "2026-08-17T21:03:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/OmniReason-Deploy · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/OmniReason-Deploy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qf-iquest/OmniReason-Deploy at main - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/OmniReason-Deploy/tree/main",
+      "snippet": "Instructions to use qf-iquest/OmniReason-Deploy with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use qf-iquest/OmniReason-Deploy with Transformers:"
+    },
+    {
+      "title": "[2506.01784] iQUEST: An Iterative Question-Guided Framework for ...",
+      "url": "https://arxiv.org/abs/2506.01784",
+      "snippet": "Large Language Models (LLMs) excel in many natural language processing tasks but often exhibit factual inconsistencies in knowledge-intensive settings. Integrating external knowledge resources, particularly knowledge graphs (KGs), provides a transparent and updatable foundation for more reliable reasoning. Knowledge Base Question Answering (KBQA), which queries and reasons over KGs, is central ..."
+    },
+    {
+      "title": "iQUEST: An Iterative Question-Guided Framework for Knowledge Base ...",
+      "url": "https://aclanthology.org/2025.acl-long.760/",
+      "snippet": "This dual approach strengthens the reasoning process, enabling the model to explore viable paths more effectively. Detailed experiments demonstrate the consistent improvement delivered by iQUEST across four benchmark datasets and four LLMs."
+    },
+    {
+      "title": "GitHub - DELTA-DoubleWise/OmniReason",
+      "url": "https://github.com/DELTA-DoubleWise/OmniReason",
+      "snippet": "This repository itself does not impose any strict package requirements. Instead, you should set up your environment according to the dependencies of the specific model you intend to run: Qwen2.5-Omni → See Qwen2.5-Omni huggingface page Baichuan-Omni-1.5d → follow Baichuan-Omni huggingface page MiniCPM-o-2.6 → follow MiniCPM huggingface page Phi-4 Multimodal → follow Phi-4 huggingface ..."
+    }
+  ]
+}

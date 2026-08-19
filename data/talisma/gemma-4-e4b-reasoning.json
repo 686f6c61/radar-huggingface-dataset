@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "talisma/Gemma-4-E4B-Reasoning",
+  "slug": "talisma-gemma-4-e4b-reasoning",
+  "author": "talisma",
+  "url": "https://huggingface.co/talisma/Gemma-4-E4B-Reasoning",
+  "created_at": "2026-08-13T06:05:49.000Z",
+  "updated_at": "2026-08-17T08:00:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "gemma",
+    "gemma4",
+    "reasoning",
+    "on-device",
+    "multimodal",
+    "conversational",
+    "talisma",
+    "image-text-to-text",
+    "multilingual",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 119,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 92315272030,
+  "storage_human": "92.3 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 E4B (Reasoning) - crafiq.ai",
+      "url": "https://crafiq.ai/models/language/google-gemma-4-e4b",
+      "snippet": "Gemma 4 E4B is a multimodal, open-weight language model developed by Google DeepMind and released in April 2026. Optimized for on-device performance, the \"E4B\" designation refers to its 4.5 billion effective parameters, though the model maintains a total count of approximately 8 billion parameters."
+    },
+    {
+      "title": "Gemma 4 E4B (Reasoning) — Google | AITier",
+      "url": "https://aitier.net/en/models/gemma-4-e4b",
+      "snippet": "Gemma 4 E4B is Google DeepMind&#x27;s compact multimodal model with 4.5 billion effective parameters (8B with embeddings) and a 128K context window. Supports image, text, and audio inputs. Features Per-Layer Embeddings for efficient on-device deployment while maintaining strong multimodal capabilities."
+    },
+    {
+      "title": "gemma4:e4b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:e4b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

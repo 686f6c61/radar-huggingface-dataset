@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DarkStrox/Agentic-Arabic-2.6-GGUF",
+  "slug": "darkstrox-agentic-arabic-2-6-gguf",
+  "author": "DarkStrox",
+  "url": "https://huggingface.co/DarkStrox/Agentic-Arabic-2.6-GGUF",
+  "created_at": "2026-08-17T17:22:56.000Z",
+  "updated_at": "2026-08-17T21:45:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "function-calling",
+    "arabic",
+    "agentic",
+    "lfm",
+    "unsloth",
+    "text-generation",
+    "ar",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 1674454560,
+  "storage_human": "1.7 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DarkStrox/Agentic-Arabic-2.6 · Hugging Face",
+      "url": "https://huggingface.co/DarkStrox/Agentic-Arabic-2.6",
+      "snippet": "Agentic Arabic 2.6 is a state-of-the-art 2.6B parameter model fine-tuned specifically for high-precision Arabic Function Calling, Tool Use, and General Instruction Following, built on top of Liquid AI&#x27;s LFM 2.5 architecture using Unsloth."
+    },
+    {
+      "title": "GitHub - DarkStrox/DarkStrox",
+      "url": "https://github.com/DarkStrox/DarkStrox",
+      "snippet": "Passionate about architecting intelligent systems, building event-driven AI pipelines, and developing robust full-stack web applications. I specialize in Computer Vision, Deep Learning, RAG Architectures, and C# / ASP.NET Core & React.js development."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI — Blog",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "csacan/smoookee-cube-stack",
+  "slug": "csacan-smoookee-cube-stack",
+  "author": "csacan",
+  "url": "https://huggingface.co/csacan/smoookee-cube-stack",
+  "created_at": "2026-08-16T00:26:13.000Z",
+  "updated_at": "2026-08-16T00:26:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:yutong-xiang-97/robot-learning-260816",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197802384,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - STMicroelectronics/stm32ai-modelzoo: AI Model Zoo for STM32 ...",
+      "url": "https://github.com/STMicroelectronics/stm32ai-modelzoo",
+      "snippet": "The STM32 AI model zoo is a collection of reference machine learning models that are optimized to run on STM32 microcontrollers. Available on GitHub, this is a valuable resource for anyone looking to add AI capabilities to their STM32-based projects. A large collection of application-oriented models ready for re-training Pre-trained models on reference datasets, available across several ..."
+    },
+    {
+      "title": "STM32Cube.AI - STMicroelectronics - STM32 AI",
+      "url": "https://stm32ai.st.com/stm32-cube-ai/",
+      "snippet": "STM32Cube.AI (X-CUBE-AI v10.0) Free AI model optimizer for STM32 STM32Cube.AI allows you to optimize and deploy trained Neural Network models from the most popular AI frameworks on any STM32 microcontroller. It now includes the support of the Neural-ART Accelerator NPU embedded inside the STM32N6."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://aimodelsindex.com/",
+      "snippet": "Reconcile reviewed live evaluators and source-backed benchmark evidence into one auditable evidence layer, with unavailable catalog sources labeled explicitly."
+    },
+    {
+      "title": "Home - ST Edge AI Developer Cloud",
+      "url": "https://stm32ai-cs.st.com/",
+      "snippet": "ST Edge AI Developer Cloud: Deploy, test, and optimize AI models for STM32 and edge devices. Access tools, documentation, and resources for AI development."
+    }
+  ]
+}

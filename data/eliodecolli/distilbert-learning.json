@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "eliodecolli/distilbert-learning",
+  "slug": "eliodecolli-distilbert-learning",
+  "author": "eliodecolli",
+  "url": "https://huggingface.co/eliodecolli/distilbert-learning",
+  "created_at": "2026-08-18T22:04:03.000Z",
+  "updated_at": "2026-08-18T22:04:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267843921,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Identifying artificial intelligence-generated content using the ...",
+      "url": "https://www.nature.com/articles/s41598-025-08208-7",
+      "snippet": "Experimental analysis demonstrated that the proposed DistilBERT-based model achieved a superior predictive accuracy of 98%, outperforming traditional deep learning models, such as long short-term ..."
+    },
+    {
+      "title": "PDF Identifying artificial intelligence-generated content using the ...",
+      "url": "https://www.nature.com/articles/s41598-025-08208-7.pdf",
+      "snippet": "C based on state-of-the-art deep learning-based transformers and by exploring deep features of textual content. The proposed DistilBERT transformer is an advanced and lightweight form of ..."
+    },
+    {
+      "title": "DistilBERT in Natural Language Processing - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/distilbert-in-natural-language-processing/",
+      "snippet": "DistilBERT is a lightweight version of BERT (Bidirectional Encoder Representations from Transformers) developed by Hugging Face using knowledge distillation. It retains most of BERT&#x27;s language understanding capabilities while reducing model size, memory usage, and computational requirements, making it suitable for resource-constrained devices and real-time NLP applications. Retains most of ..."
+    },
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "DistilBERT DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model."
+    },
+    {
+      "title": "Introduction to DistilBERT Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/introduction-to-distilbert-model/",
+      "snippet": "It trains a smaller student model (DistilBERT) by learning from a larger teacher model (BERT). Instead of just copying outputs the student model learns the teacher&#x27;s internal representations, improving efficiency while keeping accuracy intact. Example: Imagine a highly experienced chef (BERT) teaching a junior chef (DistilBERT)."
+    }
+  ]
+}

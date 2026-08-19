@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "zm3/Qwen3.8-27B-NVFP4A16",
+  "slug": "zm3-qwen3-8-27b-nvfp4a16",
+  "author": "zm3",
+  "url": "https://huggingface.co/zm3/Qwen3.8-27B-NVFP4A16",
+  "created_at": "2026-08-18T15:54:03.000Z",
+  "updated_at": "2026-08-18T15:54:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "compressed-tensors",
+    "quantized",
+    "w4a16",
+    "vllm",
+    "blackwell",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 20579209605,
+  "storage_human": "20.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zm3/Qwen3.8-27B-Uncensored-NVFP4A16 at main - Hugging Face",
+      "url": "https://huggingface.co/zm3/Qwen3.8-27B-Uncensored-NVFP4A16/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use zm3/Qwen3.8-27B-Uncensored-NVFP4A16 with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "zm3/Qwen3.8-27B-Uncensored-NVFP4A16 · Hugging Face",
+      "url": "https://huggingface.co/zm3/Qwen3.8-27B-Uncensored-NVFP4A16",
+      "snippet": "zm3 / Qwen3.8-27B-Uncensored-NVFP4A16 like 0 Image-Text-to-Text Transformers Safetensors English Chinese qwen3_5 nvfp4 compressed-tensors quantized w4a16 vllm blackwell conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    }
+  ]
+}

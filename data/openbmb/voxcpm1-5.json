@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "openbmb/VoxCPM1.5",
+  "slug": "openbmb-voxcpm1-5",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/VoxCPM1.5",
+  "created_at": "2025-12-05T09:58:12.000Z",
+  "updated_at": "2026-08-17T11:30:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "text-to-speech",
+    "speech",
+    "speech generation",
+    "voice cloning",
+    "en",
+    "zh",
+    "arxiv:2509.24650",
+    "base_model:openbmb/MiniCPM4-0.5B",
+    "base_model:finetune:openbmb/MiniCPM4-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 361,
+  "downloads_30d": 14835,
+  "trending_score": 0,
+  "parameters": 801729856,
+  "parameters_human": "801.7M",
+  "storage_bytes": 1949685294,
+  "storage_human": "1.9 GB",
+  "base_model": "openbmb/MiniCPM4-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/VoxCPM1.5 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/VoxCPM1.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenBMB/VoxCPM: VoxCPM2: Tokenizer-Free TTS for Multilingual ...",
+      "url": "https://github.com/OpenBMB/VoxCPM/",
+      "snippet": "🎙️ Ultimate Cloning — Reproduce every vocal nuance: provide both reference audio and its transcript, and the model continues seamlessly from the reference, faithfully preserving every vocal detail — timbre, rhythm, emotion, and style (same as VoxCPM1.5)"
+    },
+    {
+      "title": "YvanKOB/VoxCPM-by-OpenBMB - GitHub",
+      "url": "https://github.com/YvanKOB/VoxCPM-by-OpenBMB",
+      "snippet": "[2025.12.05] 🎉 🎉 🎉 We Open Source the VoxCPM1.5 weights! The model now supports both full-parameter fine-tuning and efficient LoRA fine-tuning, empowering you to create your own tailored version."
+    },
+    {
+      "title": "VoxCPM 1.5 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/voxcpm-1-5/",
+      "snippet": "VoxCPM1.5 is the latest VoxCPM tokenizer-free text-to-speech model from OpenBMB and ModelBest. It directly produces continuous speech representations from text for expressive, context-aware synthesis and highly realistic zero-shot voice cloning in Chinese and English."
+    },
+    {
+      "title": "VoxCPM1.5 · Models",
+      "url": "https://www.modelscope.cn/models/OpenBMB/VoxCPM1.5",
+      "snippet": "VoxCPM1.5 supports both full fine-tuning (SFT) and LoRA fine-tuning, allowing you to train personalized voice models on your own data. See the Fine-tuning Guide for detailed instructions."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "patrykorwat/metis-yolov8n-coco",
+  "slug": "patrykorwat-metis-yolov8n-coco",
+  "author": "patrykorwat",
+  "url": "https://huggingface.co/patrykorwat/metis-yolov8n-coco",
+  "created_at": "2026-08-17T17:41:24.000Z",
+  "updated_at": "2026-08-17T17:41:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "axelera",
+    "metis",
+    "object-detection",
+    "yolov8n",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19869581,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rya3075/Object-Detection-on-COCO-Dataset-using-YOLOv8 ...",
+      "url": "https://github.com/rya3075/Object-Detection-on-COCO-Dataset-using-YOLOv8",
+      "snippet": "Automated COCO to YOLO conversion with proper dataset splitting YOLOv8 model training with live progress monitoring Real-time object detection with confidence thresholding Interactive Gradio dashboard embedded in notebook"
+    },
+    {
+      "title": "69 Edge AI NPU Companies: Chips, SDKs & YOLO (2026)",
+      "url": "https://www.libreyolo.com/articles/edge-ai-npu-companies-computer-vision",
+      "snippet": "A source-backed guide to 69 edge AI companies and NPU ecosystems: chips, SDKs, artifacts, quantization, and documented computer vision and YOLO support."
+    },
+    {
+      "title": "COCO Dataset Object Detection Model (v9, yolov8n-1280) by Microsoft",
+      "url": "https://universe.roboflow.com/microsoft/coco/dataset/9",
+      "snippet": "123272 open source object images and annotations in multiple formats for training computer vision models. COCO Dataset (v9, yolov8n-1280), created by Microsoft"
+    },
+    {
+      "title": "GitHub - orYx-models/yolov8: Computer Vision YOLO v8",
+      "url": "https://github.com/orYx-models/yolov8",
+      "snippet": "Integrations Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with Roboflow, ClearML, Comet, Neural Magic and OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "COCO Detection Dataset | Ultralytics",
+      "url": "https://docs.ultralytics.com/datasets/detect/coco",
+      "snippet": "Explore the COCO dataset for object detection and segmentation. Learn about its structure, usage, pretrained models, and key features."
+    }
+  ]
+}

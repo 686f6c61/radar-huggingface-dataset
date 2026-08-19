@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Project42/mel-band-roformer-karaoke-webgpu",
+  "slug": "project42-mel-band-roformer-karaoke-webgpu",
+  "author": "Project42",
+  "url": "https://huggingface.co/Project42/mel-band-roformer-karaoke-webgpu",
+  "created_at": "2026-08-15T19:20:42.000Z",
+  "updated_at": "2026-08-15T19:22:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 918421248,
+  "storage_human": "918 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

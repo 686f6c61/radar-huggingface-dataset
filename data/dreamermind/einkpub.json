@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Dreamermind/einkpub",
+  "slug": "dreamermind-einkpub",
+  "author": "Dreamermind",
+  "url": "https://huggingface.co/Dreamermind/einkpub",
+  "created_at": "2026-08-12T16:02:55.000Z",
+  "updated_at": "2026-08-18T09:53:56.000Z",
+  "license": "apache-2.0-and-cc-by-nc-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tract",
+  "languages": [],
+  "tags": [
+    "tract",
+    "nnef",
+    "document-understanding",
+    "vision-language",
+    "layout-analysis",
+    "base_model:numind/NuExtract3",
+    "base_model:finetune:numind/NuExtract3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4477955159,
+  "storage_human": "4.5 GB",
+  "base_model": "numind/NuExtract3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dreamermind/einkpub · Hugging Face",
+      "url": "https://huggingface.co/Dreamermind/einkpub",
+      "snippet": "Dreamermind / einkpub like 0 tract nnef document-understanding vision-language layout-analysis License:apache-2.-and-cc-by-nc-sa-4. Model card FilesFiles and versions xet Community Copy to bucket new einkpub — model weights for einkpdf ⚠️ This repository holds two models under two different licences Files Transcriber — Apache-2.0 ..."
+    },
+    {
+      "title": "Dreamermind (B) - Hugging Face",
+      "url": "https://huggingface.co/Dreamermind",
+      "snippet": "User profile of B on Hugging Face"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Model Release Tracker — Evertune",
+      "url": "https://models.evertune.ai/",
+      "snippet": "Track every major AI model release from OpenAI, Anthropic, Google, Meta, DeepSeek, and more. Updated daily with release dates, descriptions, and official announcements."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

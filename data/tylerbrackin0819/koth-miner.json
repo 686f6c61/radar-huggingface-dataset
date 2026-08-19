@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "tylerbrackin0819/koth-miner",
+  "slug": "tylerbrackin0819-koth-miner",
+  "author": "tylerbrackin0819",
+  "url": "https://huggingface.co/tylerbrackin0819/koth-miner",
+  "created_at": "2026-08-01T23:09:49.000Z",
+  "updated_at": "2026-08-14T12:28:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 608746,
+  "storage_human": "608746 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

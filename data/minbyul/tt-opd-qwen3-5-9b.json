@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Minbyul/TT-OPD-Qwen3.5-9B",
+  "slug": "minbyul-tt-opd-qwen3-5-9b",
+  "author": "Minbyul",
+  "url": "https://huggingface.co/Minbyul/TT-OPD-Qwen3.5-9B",
+  "created_at": "2026-08-18T12:07:55.000Z",
+  "updated_at": "2026-08-18T12:11:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agent",
+    "tool-use",
+    "medical",
+    "healthcare",
+    "reinforcement-learning",
+    "distillation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839718767,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B: Specs, Benchmarks & Model Details | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal model from Alibaba, released on 2026-03-02. It accepts text, image, and video input and produces text output. Its cataloged capabilities include Reasoning model and Multilingual. The cataloged parameter count is 9B. The recorded context window is 262K. The checkpoint is listed under the Apache 2.0 license, with the license link included in the model references. The ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so far."
+    },
+    {
+      "title": "Qwen3.5-9B - Model Info, Parameters, Benchmarks - SiliconFlow\"",
+      "url": "https://www.siliconflow.com/models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a native multimodal large language model from the Qwen team with 9B parameters. As a lightweight dense model in the Qwen3.5 series, it features an efficient hybrid architecture combining Gated Delta Networks with Gated Attention, natively supporting a 262K context length extensible up to ~1M tokens. The model achieves unified vision-language capabilities through early fusion ..."
+    },
+    {
+      "title": "Qwen3.5 9B model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 9B is a multimodal foundation model from the Qwen 3.5 family, built for efficient reasoning, coding, and visual understanding in a compact 9B architecture."
+    },
+    {
+      "title": "Qwen: Qwen3.5-9B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3.5-9b-20260310",
+      "snippet": "Qwen3.5-9B, a multimodal foundation model from qwen, demonstrates a strong overall reliability with an 83% success rate across benchmarks, indicating consistent operational stability. However, its speed performance is a notable area for improvement, ranking in the 10th percentile, suggesting longer response times compared to peers."
+    }
+  ]
+}

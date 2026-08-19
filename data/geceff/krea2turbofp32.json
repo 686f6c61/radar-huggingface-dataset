@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "geceff/Krea2TurboFp32",
+  "slug": "geceff-krea2turbofp32",
+  "author": "geceff",
+  "url": "https://huggingface.co/geceff/Krea2TurboFp32",
+  "created_at": "2026-07-21T14:25:07.000Z",
+  "updated_at": "2026-08-17T23:06:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers:Krea2Pipeline",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 98,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 155746001506,
+  "storage_human": "155.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "geceff/Krea2TurboFp32 · Hugging Face",
+      "url": "https://huggingface.co/geceff/Krea2TurboFp32",
+      "snippet": "Instructions to use geceff/Krea2TurboFp32 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use geceff/Krea2TurboFp32 with Diffusers: ... Notebooks Google Colab Kaggle Local AppsSettings Draw Things DiffusionBee No model card Downloads last month 76 Safetensors Model ..."
+    },
+    {
+      "title": "geceff (Misky1995) - Hugging Face",
+      "url": "https://huggingface.co/geceff/spaces",
+      "snippet": "Recent Activity updated a modelabout 24 hours ago geceff/Flux2Klein9B-comfyui updated a model6 days ago geceff/Krea2TurboFp32 published a model6 days ago geceff/Krea2TurboFp32 View all activity"
+    },
+    {
+      "title": "Krea 2 Turbo by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-turbo",
+      "snippet": "Fastest medium quality Krea 2 model. The fastest Krea 2 model. Best for quickly iterating on expressive illustrations. Generate with Krea 2 Turbo on Krea, compare quality settings, and ship production-ready images faster."
+    },
+    {
+      "title": "Krea2 Turbo_FP8 - Krea 2 TURBO | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2723583/krea2-turbofp8",
+      "snippet": "Original Model Creators: All credit goes to KREA.ai for the original research, architecture, and weights. License: This model is subject to the KREA 2 License Agreement. Please read and comply with the official license terms before using these weights: KREA 2 Licensing Terms. Purpose: This repository is a community-contributed utility."
+    },
+    {
+      "title": "FREE KREA 2 Turbo Text to Image ComfyUI Workflow and GGUF/FP8 Model ...",
+      "url": "https://www.patreon.com/TheLocalLab/posts/free-krea-2-text-161915897",
+      "snippet": "In this post, you can download a complete ComfyUI workflow for Krea 2 Turbo along with direct model links (GGUF and FP8) to get up and running quickly. Whether you&#x27;re optimizing for performance or quality, this setup gives you flexibility for local AI image generation on modern NVIDIA GPUs."
+    }
+  ]
+}

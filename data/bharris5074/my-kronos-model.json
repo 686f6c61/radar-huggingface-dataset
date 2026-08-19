@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bharris5074/my-kronos-model",
+  "slug": "bharris5074-my-kronos-model",
+  "author": "bharris5074",
+  "url": "https://huggingface.co/bharris5074/my-kronos-model",
+  "created_at": "2026-08-19T03:02:40.000Z",
+  "updated_at": "2026-08-19T03:02:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thzll2001/Kronos-ai: Kronos: A Foundation Model for the ...",
+      "url": "https://github.com/thzll2001/Kronos-ai",
+      "snippet": "Kronos is the first open-source foundation model for financial candlesticks (K-lines), trained on data from over 45 global exchanges."
+    },
+    {
+      "title": "Kronos AI Model: Tokenizer, OHLCV Inputs, Forecast Outputs",
+      "url": "https://kronos.lifestyle/kronos-ai-model/",
+      "snippet": "A practical explanation of the Kronos AI model: K-line tokenizer, OHLCV inputs, model family, context length, forecast outputs, and limitations."
+    },
+    {
+      "title": "Kronos: The AI Model for Financial Markets",
+      "url": "https://www.blog.brightcoding.dev/2026/04/10/kronos-the-revolutionary-ai-model-for-financial-markets",
+      "snippet": "Kronos: The Revolutionary AI Model for Financial Markets Unlocking the Hidden Language of Candlesticks with Foundation Models Financial markets generate over 100 terabytes of data daily, yet most quantitative traders still rely on decades-old statistical models that buckle under the weight of market noise, volatility clustering, and non-stationary patterns. What if you could harness the same ..."
+    },
+    {
+      "title": "bharris5074 (Harris) - Hugging Face",
+      "url": "https://huggingface.co/bharris5074/models",
+      "snippet": "Recent Activity published a Space about 3 hours ago bharris5074/tencent-HunyuanImage-2.1 View all activity"
+    },
+    {
+      "title": "Angelov1314/kronos-forecast: AI Financial Forecasting - GitHub",
+      "url": "https://github.com/Angelov1314/kronos-forecast",
+      "snippet": "Kronos is the first open-source foundation model for financial candlesticks (K-lines), trained on data from over 45 global exchanges."
+    }
+  ]
+}

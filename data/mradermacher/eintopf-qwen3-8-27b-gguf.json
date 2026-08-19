@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Eintopf-Qwen3.8-27B-GGUF",
+  "slug": "mradermacher-eintopf-qwen3-8-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Eintopf-Qwen3.8-27B-GGUF",
+  "created_at": "2026-08-15T16:40:56.000Z",
+  "updated_at": "2026-08-15T21:41:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "lora",
+    "qwen3.8",
+    "experimental",
+    "en",
+    "base_model:DragonBophades/Eintopf-Qwen3.8-27B",
+    "base_model:adapter:DragonBophades/Eintopf-Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 142,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780457600,
+  "storage_human": "190.8 GB",
+  "base_model": "DragonBophades/Eintopf-Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

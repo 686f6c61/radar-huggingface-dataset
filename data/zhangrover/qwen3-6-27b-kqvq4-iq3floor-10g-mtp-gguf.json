@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "zhangrover/Qwen3.6-27B-KQVQ4-IQ3Floor-10G-MTP-GGUF",
+  "slug": "zhangrover-qwen3-6-27b-kqvq4-iq3floor-10g-mtp-gguf",
+  "author": "zhangrover",
+  "url": "https://huggingface.co/zhangrover/Qwen3.6-27B-KQVQ4-IQ3Floor-10G-MTP-GGUF",
+  "created_at": "2026-08-16T22:20:43.000Z",
+  "updated_at": "2026-08-17T15:37:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 364,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 11795762048,
+  "storage_human": "11.8 GB",
+  "base_model": "nerkyor/Qwen3.6-27B-DSV4Pro-GLM52-SFT-GPT55-RL-Coding-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

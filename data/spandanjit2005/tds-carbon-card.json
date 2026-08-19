@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "spandanjit2005/tds-carbon-card",
+  "slug": "spandanjit2005-tds-carbon-card",
+  "author": "spandanjit2005",
+  "url": "https://huggingface.co/spandanjit2005/tds-carbon-card",
+  "created_at": "2026-08-18T14:28:20.000Z",
+  "updated_at": "2026-08-18T14:28:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spandanjit2005 - Projects - GitHub",
+      "url": "https://github.com/spandanjit2005?tab=projects",
+      "snippet": "spandanjit2005 has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "spandanjit2005 (spandanjit2005) / Starred · GitHub",
+      "url": "https://github.com/spandanjit2005?tab=stars",
+      "snippet": "spandanjit2005 has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "carbontxt.org",
+      "url": "https://carbontxt.org/ai-model-cards",
+      "snippet": "AI Model Sustainability Directory Using the carbon.txt syntax and validator, we have extracted the sustainability data from over 2500 AI model cards from Hugging Face that are listed with co2_eq_emissions metadata."
+    },
+    {
+      "title": "Model card - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/model_card",
+      "snippet": "A model card is a short, standardized document that accompanies a trained machine learning model and reports its intended use, training data, evaluation…"
+    },
+    {
+      "title": "Google Scholar Citations",
+      "url": "https://scholar.google.com/citations",
+      "snippet": "Google Scholar Citations lets you track citations to your publications over time."
+    }
+  ]
+}

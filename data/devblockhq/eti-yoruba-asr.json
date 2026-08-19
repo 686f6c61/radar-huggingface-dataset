@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "devblockHQ/eti-yoruba-asr",
+  "slug": "devblockhq-eti-yoruba-asr",
+  "author": "devblockHQ",
+  "url": "https://huggingface.co/devblockHQ/eti-yoruba-asr",
+  "created_at": "2026-08-15T11:58:12.000Z",
+  "updated_at": "2026-08-15T12:27:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "yo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "yoruba",
+    "africa",
+    "low-resource",
+    "speech-recognition",
+    "devblock",
+    "yo",
+    "dataset:Tundragoon/IroyinSpeech",
+    "dataset:voicedata/final_yoruba",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 1215198877,
+  "storage_human": "1.2 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Yoruba read-speech test (base corpus)",
+      "metric": "WER",
+      "value": 0.557
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Yoruba read-speech test (base corpus)",
+      "metric": "WER (no diacritics)",
+      "value": 0.473
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Yoruba conversational (thisniyi/yoruba-speech-project-v2)",
+      "metric": "WER",
+      "value": 1.087
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Yoruba conversational (thisniyi/yoruba-speech-project-v2)",
+      "metric": "WER (no diacritics)",
+      "value": 0.822
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "armand0e/Qwen3.8-27B-Heretic-ara-GGUF",
+  "slug": "armand0e-qwen3-8-27b-heretic-ara-gguf",
+  "author": "armand0e",
+  "url": "https://huggingface.co/armand0e/Qwen3.8-27B-Heretic-ara-GGUF",
+  "created_at": "2026-08-17T00:04:12.000Z",
+  "updated_at": "2026-08-17T18:57:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "llama.cpp",
+    "image-text-to-text",
+    "base_model:armand0e/Qwen3.8-27B-Heretic-ara",
+    "base_model:quantized:armand0e/Qwen3.8-27B-Heretic-ara",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2093,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 270792386112,
+  "storage_human": "270.8 GB",
+  "base_model": "armand0e/Qwen3.8-27B-Heretic-ara",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "armand0e/Qwen3.8-27B-Heretic-ara-GGUF · Hugging Face",
+      "url": "https://huggingface.co/armand0e/Qwen3.8-27B-Heretic-ara-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B Runs Local: 27B AI on 16 GB with LM Studio",
+      "url": "https://pasqualepillitteri.it/en/news/11335/qwen3-8-27b-run-local-16gb-lm-studio-unsloth",
+      "snippet": "Qwen3.8-27B runs locally on 16 GB of RAM. Unsloth quants from 9 GB, download via LM Studio, uncensored builds and the settings that actually work."
+    },
+    {
+      "title": "drmcbride/Qwen3.8-27B-heretic-ara-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/drmcbride/Qwen3.8-27B-heretic-ara-Q8_0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27B Heretic Ara by heretic-org - LLM Explorer",
+      "url": "https://llm-explorer.com/model/heretic-org%2FQwen3.8-27B-heretic-ara,1gnpzhvwiWVhYFYskhwWI5",
+      "snippet": "Rank the Qwen3.8 27B Heretic Ara capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Using Heretic does not require an understanding of transformer internals. In fact, anyone who knows how to run a command-line program can use Heretic to decensor language models. Heretic supports most dense models, including many multimodal models, several different MoE architectures, and even some hybrid models like Qwen3.5."
+    }
+  ]
+}

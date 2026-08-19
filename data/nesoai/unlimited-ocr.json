@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nesoai/Unlimited-OCR",
+  "slug": "nesoai-unlimited-ocr",
+  "author": "nesoai",
+  "url": "https://huggingface.co/nesoai/Unlimited-OCR",
+  "created_at": "2026-08-18T10:24:22.000Z",
+  "updated_at": "2026-08-18T10:24:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unlimited-ocr",
+    "feature-extraction",
+    "baidu",
+    "vision-language",
+    "ocr",
+    "custom_code",
+    "image-text-to-text",
+    "multilingual",
+    "arxiv:2606.23050",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6767737257,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Unlimited-OCR/Unlimited-OCR: Unlimited-OCR: Free 3B local VLM ...",
+      "url": "https://github.com/Unlimited-OCR/Unlimited-OCR",
+      "snippet": "3B Local Vision-Language Model for Seamless, Long-Horizon Document Parsing Unlimited-OCR is a 3B parameter multimodal vision-language model designed for end-to-end multi-page document processing in a single pass. Unlike traditional OCR tools that split documents page-by-page and lose thread/context, Unlimited-OCR retains full document context using a 32K token context window."
+    },
+    {
+      "title": "unlimited-ocr/README.md at main · neoturns/unlimited-ocr",
+      "url": "https://github.com/neoturns/unlimited-ocr/blob/main/README.md",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud. [2026/06/28] 🤝 Thanks to the vLLM community and Tianyu Guo for their support, our model now supports vLLM inference."
+    },
+    {
+      "title": "README.md · NarsAI/Unlimited-OCR at main - Hugging Face",
+      "url": "https://huggingface.co/NarsAI/Unlimited-OCR/blob/main/README.md",
+      "snippet": "Duplicated from baidu/Unlimited-OCR NarsAI / Unlimited-OCR like 0 Image-Text-to-Text Transformers Safetensors multilingual unlimited-ocr feature-extraction baidu vision-language ocr custom_code arxiv:2606.23050 License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Unlimited-OCR: Specs & Model Details | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/unlimited-ocr",
+      "snippet": "Unlimited-OCR is a vision model from Baidu, released on 2026-06-22. It accepts text and image input and returns text output. The cataloged parameter count is 3.336B, with 500M active parameters per inference. The recorded context window is 32K, and the recorded maximum output is 32K. Cataloged capabilities include Multilingual and OCR model. The checkpoint is listed under the MIT license, with ..."
+    },
+    {
+      "title": "Unlimited-OCR - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/unlimited-ocr",
+      "snippet": "Unlimited-OCR is a multimodal OCR and document-parsing model from Baidu, built for one-shot long-horizon document understanding. It reads images and pages and produces structured text output, extending the ideas behind DeepSeek-OCR toward parsing long documents in a single pass."
+    }
+  ]
+}

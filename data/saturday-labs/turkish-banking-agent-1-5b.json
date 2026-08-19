@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "saturday-labs/turkish-banking-agent-1.5b",
+  "slug": "saturday-labs-turkish-banking-agent-1-5b",
+  "author": "saturday-labs",
+  "url": "https://huggingface.co/saturday-labs/turkish-banking-agent-1.5b",
+  "created_at": "2026-08-17T11:35:33.000Z",
+  "updated_at": "2026-08-17T16:13:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "turkish",
+    "function-calling",
+    "tool-use",
+    "banking",
+    "qwen2.5",
+    "lora",
+    "conversational",
+    "tr",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saturday-labs (Saturday Labs) - Hugging Face",
+      "url": "https://huggingface.co/saturday-labs/models",
+      "snippet": "Org profile for Saturday Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Finding Needles in the LLM Haystack: Testing LLMs for a Turkish Bank ...",
+      "url": "https://www.linkedin.com/pulse/finding-needles-llm-haystack-testing-llms-turkish-bank-ismail-parsa-rk5me",
+      "snippet": "Finding a proven LLM specifically trained for Turkish is challenging. While multilingual models exist, those augmented for Turkish banking often underperform. For instance, even models utilizing ..."
+    },
+    {
+      "title": "Scammers Use 8,400 Phishing Domains to Target Turkish Banking Customers",
+      "url": "https://cyberpress.org/scammers-use-8400-phishing-domains-to-target-turkish-banking-customers/",
+      "snippet": "Reported victim losses reached as high as $16,000 in individual cases. For Turkish banks, the findings highlight the need to monitor scam ads, phishing domains, cloned mobile and web interfaces, mule-account recruitment, and cryptocurrency cash-out patterns as parts of one connected threat model."
+    },
+    {
+      "title": "Cybercriminals Target Turkish Banks With 8,400 Phishing ... - GBHackers",
+      "url": "https://gbhackers.com/turkish-banks-with-8400-phishing/",
+      "snippet": "Cybercriminals are operating an industrial-scale fraud ecosystem targeting Turkey&#x27;s financial sector, using more than 8,400 phishing domains, thousands of social media advertisements."
+    },
+    {
+      "title": "FBI Issues Urgent Warning on $1.5 Billion Bybit Hack, Calls for Action ...",
+      "url": "https://www.coinlive.com/zh/news/fbi-issues-urgent-warning-on-1-5-billion-bybit-hack-calls",
+      "snippet": "FBI Issues Urgent Call to Block Transactions Linked to $1.5 Billion Bybit Hack The FBI has raised the alarm after confirming that a major cyberattack on cryptocurrency exchange Bybit was orchestrated by North Korean hackers."
+    }
+  ]
+}

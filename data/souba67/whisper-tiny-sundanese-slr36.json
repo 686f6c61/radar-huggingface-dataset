@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "souba67/whisper-tiny-sundanese-slr36",
+  "slug": "souba67-whisper-tiny-sundanese-slr36",
+  "author": "souba67",
+  "url": "https://huggingface.co/souba67/whisper-tiny-sundanese-slr36",
+  "created_at": "2026-08-18T01:18:17.000Z",
+  "updated_at": "2026-08-18T03:17:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "su"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "su",
+    "base_model:openai/whisper-tiny",
+    "base_model:quantized:openai/whisper-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 342531082,
+  "storage_human": "343 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "souba67/whisper-tiny-sundanese · Hugging Face",
+      "url": "https://huggingface.co/souba67/whisper-tiny-sundanese",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "arkanalexei/whisper-tiny-sundanese-pretrained · Hugging Face",
+      "url": "https://huggingface.co/arkanalexei/whisper-tiny-sundanese-pretrained",
+      "snippet": "arkanalexei / whisper-tiny-sundanese-pretrained like 0 Model card FilesFiles and versions Community No model card"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper?tab=readme-ov-file",
+      "snippet": "The .en models for English-only applications tend to perform better, especially for the tiny.en and base.en models. We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely ..."
+    },
+    {
+      "title": "whisper/README.md at main · openai/whisper · GitHub",
+      "url": "https://github.com/openai/whisper/blob/main/README.md",
+      "snippet": "The .en models for English-only applications tend to perform better, especially for the tiny.en and base.en models. We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely ..."
+    },
+    {
+      "title": "whisper-tiny · Models",
+      "url": "https://www.modelscope.cn/models/openai-mirror/whisper-tiny",
+      "snippet": "Whisper Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation. Trained on 680k hours of labelled data, Whisper models demonstrate a strong ability to generalise to many datasets and domains without the need for fine-tuning. Whisper was proposed in the paper Robust Speech Recognition via Large-Scale Weak Supervision by Alec Radford et al from OpenAI. The ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kjcpc/ML-Sharp-QNN",
+  "slug": "kjcpc-ml-sharp-qnn",
+  "author": "kjcpc",
+  "url": "https://huggingface.co/kjcpc/ML-Sharp-QNN",
+  "created_at": "2026-08-15T00:19:42.000Z",
+  "updated_at": "2026-08-17T13:19:03.000Z",
+  "license": "apple-amlr",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "ml-sharp",
+  "languages": [],
+  "tags": [
+    "ml-sharp",
+    "qnn",
+    "qualcomm",
+    "htp",
+    "dlc",
+    "hexagon",
+    "gaussian-splatting",
+    "3d-reconstruction",
+    "single-image",
+    "on-device",
+    "android",
+    "sharp",
+    "image-to-3d",
+    "arxiv:2512.10685",
+    "base_model:apple/Sharp",
+    "base_model:finetune:apple/Sharp",
+    "license:apple-amlr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 659130163,
+  "storage_human": "659 MB",
+  "base_model": "apple/Sharp",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sharp Monocular View Synthesis in Less Than a Second",
+      "url": "https://github.com/apple/ml-sharp",
+      "snippet": "This software project accompanies the research paper: Sharp Monocular View Synthesis in Less Than a Second by Lars Mescheder, Wei Dong, Shiwei Li, Xuyang Bai, Marcel Santos, Peiyun Hu, Bruno Lecouat, Mingmin Zhen, Amaël Delaunoy, Tian Fang, Yanghai Tsin, Stephan Richter and Vladlen Koltun. We present SHARP, an approach to photorealistic view synthesis from a single image. Given a single ..."
+    },
+    {
+      "title": "Fine-tuned Models for apple/Sharp - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:apple/Sharp",
+      "snippet": "Explore machine learning models. Model Tree apple/Sharp Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "ml-sharp — rcarmo",
+      "url": "https://rcarmo.github.io/projects/ml-sharp/",
+      "snippet": "Forked from apple/ml-sharp. Adds Apple Silicon MPS support and Gradio demo to Apple&#x27;s official Sharp depth model. ml-sharp runs the Sharp monocular depth estimation and novel view synthesis pipeline natively on Apple Silicon using PyTorch MPS acceleration. Feed it a single image and it produces depth maps and synthesised views from alternative camera angles — no NVIDIA GPU, no cloud API ..."
+    },
+    {
+      "title": "GitHub - miketahani/ml-sharp-browser: Apple&#x27;s SHARP model running in ...",
+      "url": "https://github.com/miketahani/ml-sharp-browser",
+      "snippet": "Apple&#x27;s SHARP model running in browser via ONNX. Contribute to miketahani/ml-sharp-browser development by creating an account on GitHub."
+    },
+    {
+      "title": "Introducing ML‑Sharp: Cutting‑Edge AI Model for Precision Data ...",
+      "url": "https://ubos.tech/news/introducing-ml%E2%80%91sharp-cutting%E2%80%91edge-ai-model-for-precision-data-processing/",
+      "snippet": "Introducing ML‑Sharp: Cutting‑Edge AI Model for Precision Data Processing ML‑Sharp is a next‑generation AI model that simplifies data flow, accelerates model training, and enables real‑time inference across diverse machine‑learning workloads, as announced in the latest Revelium press release."
+    }
+  ]
+}

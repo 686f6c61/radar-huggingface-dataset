@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dementor-research/self_sft_gsm8k_qwen3.6-27b_as_qwen3.6-27b_seed42",
+  "slug": "dementor-research-self_sft_gsm8k_qwen3-6-27b_as_qwen3-6-27b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/self_sft_gsm8k_qwen3.6-27b_as_qwen3.6-27b_seed42",
+  "created_at": "2026-08-16T22:09:00.000Z",
+  "updated_at": "2026-08-16T22:09:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "self_sft",
+    "dementor-research",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965809824,
+  "storage_human": "966 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

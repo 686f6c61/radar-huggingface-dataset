@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Lykegenes/Qwen3.5-2B-oQ8e-fp16-mtp",
+  "slug": "lykegenes-qwen3-5-2b-oq8e-fp16-mtp",
+  "author": "Lykegenes",
+  "url": "https://huggingface.co/Lykegenes/Qwen3.5-2B-oQ8e-fp16-mtp",
+  "created_at": "2026-08-17T14:16:34.000Z",
+  "updated_at": "2026-08-17T14:17:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 552802624,
+  "parameters_human": "552.8M",
+  "storage_bytes": 2085359137,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

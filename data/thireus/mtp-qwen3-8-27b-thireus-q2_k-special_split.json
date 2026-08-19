@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Thireus/mtp-Qwen3.8-27B-THIREUS-Q2_K-SPECIAL_SPLIT",
+  "slug": "thireus-mtp-qwen3-8-27b-thireus-q2_k-special_split",
+  "author": "Thireus",
+  "url": "https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q2_K-SPECIAL_SPLIT",
+  "created_at": "2026-08-15T09:44:28.000Z",
+  "updated_at": "2026-08-15T11:31:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2505.23786",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 984773568,
+  "storage_human": "985 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B: Runs Locally, Nears Claude Opus (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026",
+      "snippet": "Qwen3.8-27B is the direct successor to Qwen 3.6 27B, which our earlier hands-on coverage found to be the local coding sweet spot — better agent output than the sparser Qwen3.6-35B-A3B, if noticeably slower. According to Alibaba&#x27;s own model card, Qwen3.8-27B moves meaningfully past that baseline on agentic and coding-specific evals:"
+    },
+    {
+      "title": "mtp-Qwen3.6-27B-THIREUS-SPECIAL_SPLIT - a Thireus Collection",
+      "url": "https://huggingface.co/collections/Thireus/mtp-qwen36-27b-thireus-special-split",
+      "snippet": "These model shards are meant to be used with Thireus&#x27; GGUF Tool Suite - https://gguf.thireus.com/"
+    },
+    {
+      "title": "Thireus ☠ - GitHub",
+      "url": "https://github.com/Thireus",
+      "snippet": "Thireus has 66 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT · Discussions",
+      "url": "https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT/discussions",
+      "snippet": "Instructions to use Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

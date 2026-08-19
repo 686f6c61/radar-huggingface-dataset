@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "vcruz305/Qwen3.8-2.4T-A95B-k1536-IQ1_S-GGUF",
+  "slug": "vcruz305-qwen3-8-2-4t-a95b-k1536-iq1_s-gguf",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/Qwen3.8-2.4T-A95B-k1536-IQ1_S-GGUF",
+  "created_at": "2026-08-15T01:26:23.000Z",
+  "updated_at": "2026-08-15T14:52:34.000Z",
+  "license": "qwen3.8-max",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "qwen35moe",
+    "moe",
+    "llama.cpp",
+    "iq1_s",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-2.4T-A95B-FP8",
+    "base_model:quantized:Qwen/Qwen3.8-2.4T-A95B-FP8",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 1234393724288,
+  "parameters_human": "1234.39B",
+  "storage_bytes": 685238182848,
+  "storage_human": "685.2 GB",
+  "base_model": "Qwen/Qwen3.8-2.4T-A95B-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

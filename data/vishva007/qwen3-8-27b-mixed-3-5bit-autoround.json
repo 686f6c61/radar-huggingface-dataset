@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Vishva007/Qwen3.8-27B-Mixed-3.5bit-AutoRound",
+  "slug": "vishva007-qwen3-8-27b-mixed-3-5bit-autoround",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/Qwen3.8-27B-Mixed-3.5bit-AutoRound",
+  "created_at": "2026-08-15T16:51:53.000Z",
+  "updated_at": "2026-08-16T08:32:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "auto-scheme",
+    "mixed-precision",
+    "sub-4bit",
+    "vlm",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishva007 (Vishva R) - Hugging Face",
+      "url": "https://huggingface.co/Vishva007",
+      "snippet": "Deeply interested in Generative AI, particularly Large Language Models (LLMs). Focusing on model fine-tuning, prompt engineering, and practical applications using the Hugging Face ecosystem (Transf..."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=25&sort=trending&search=Qwen3.8-27B",
+      "snippet": "EgorKodin/Qwen3.8-27B-ABLITERATED-2bit-MLX-TextOnly Text Generation • 3B•Updated about 6 hours ago"
+    },
+    {
+      "title": "Qwen3.8-27B: The Version You Can Actually Run, and How to Prepare For ...",
+      "url": "https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026",
+      "snippet": "Alibaba&#x27;s 2.4-trillion-parameter Qwen3.8-Max got the coverage. Qwen3.8-27B is the one most teams will actually deploy, and almost nothing about it has been published. Here is the honest state of play as of 4 August 2026. Alibaba announced both checkpoints on 3 August and confirmed that open weights ship for both, with release described as \"next week\" and no firm date attached. Neither model is ..."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    }
+  ]
+}

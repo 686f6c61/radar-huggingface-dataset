@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-cubes-27a",
+  "slug": "fecasado-gfm-cubes-27a",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-cubes-27a",
+  "created_at": "2026-08-17T19:32:54.000Z",
+  "updated_at": "2026-08-17T19:33:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "gaze_flow_matching",
+    "robotics",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 75228826,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300975080,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fecasado/gfm-cubes-25a · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-cubes-25a",
+      "snippet": "Instructions to use fecasado/gfm-cubes-25a with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gfm-cubes-25a with LeRobot: Notebooks Google Colab Kaggle Model Card for gaze_flow_matching How to Get Started with the Model Train from scratch Evaluate the policy ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=gaze_flow_matching",
+      "snippet": "Explore machine learning models. 18 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: gaze_flow_matching Clear all"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "cae_ai_resources/09_open_source_datasets.md at main - GitHub",
+      "url": "https://github.com/RevanKumarD/cae_ai_resources/blob/main/09_open_source_datasets.md",
+      "snippet": "This document provides a curated list of open-source datasets to enhance your skills in simulation, optimization, and design within the field of Computer-Aided Engineering (CAE)."
+    },
+    {
+      "title": "[2509.24256] Graph Foundation Models: Bridging Language Model Paradigms ...",
+      "url": "https://arxiv.org/abs/2509.24256",
+      "snippet": "The pretrain-transfer paradigm, which underpins the success of large language models (LLMs), has demonstrated the immense power of creating foundation models that learn generalizable representations from vast datasets. However, extending this paradigm to Operations Research (OR) problems on graph structures remains challenging due to the fundamental conflict between the statistical flexibility ..."
+    }
+  ]
+}

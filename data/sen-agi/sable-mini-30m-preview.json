@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "SEN-AGI/sable-mini-30m-preview",
+  "slug": "sen-agi-sable-mini-30m-preview",
+  "author": "SEN-AGI",
+  "url": "https://huggingface.co/SEN-AGI/sable-mini-30m-preview",
+  "created_at": "2026-08-01T10:20:42.000Z",
+  "updated_at": "2026-08-15T18:41:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "causal-lm",
+    "sable",
+    "small-language-model",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 180,
+  "trending_score": 0,
+  "parameters": 31171072,
+  "parameters_human": "31.2M",
+  "storage_bytes": 62929073,
+  "storage_human": "63 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

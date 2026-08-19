@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Matt444455/ank123",
+  "slug": "matt444455-ank123",
+  "author": "Matt444455",
+  "url": "https://huggingface.co/Matt444455/ank123",
+  "created_at": "2026-08-16T14:38:48.000Z",
+  "updated_at": "2026-08-16T18:29:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1941086059,
+  "storage_human": "1.9 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

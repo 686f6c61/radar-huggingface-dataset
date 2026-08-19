@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chomeed/mimicgen_threading_d0_224x224_dinowm",
+  "slug": "chomeed-mimicgen_threading_d0_224x224_dinowm",
+  "author": "chomeed",
+  "url": "https://huggingface.co/chomeed/mimicgen_threading_d0_224x224_dinowm",
+  "created_at": "2026-08-18T05:53:56.000Z",
+  "updated_at": "2026-08-18T05:54:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-model",
+    "dynamics-model",
+    "dinov2",
+    "mimicgen",
+    "arxiv:2411.04983",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53675521,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chomeed/mimicgen_threading_d0_224x224 - Hugging Face",
+      "url": "https://huggingface.co/datasets/chomeed/mimicgen_threading_d0_224x224",
+      "snippet": "Datasets: chomeed / mimicgen_threading_d0_224x224 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 100K - 1M Tags: LeRobot lerobot mimicgen robosuite v3.0 Libraries: Datasets Dask Polars + 2 License: cc-by-4. Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1 ..."
+    },
+    {
+      "title": "mimicgen_threading_d0_224x224_mtdit_flow_55k_success",
+      "url": "https://huggingface.co/datasets/chomeed/mimicgen_threading_d0_224x224_mtdit_flow_55k_success",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - kywch/mg2hfbot: Converts MimicGen dataset into LeRobot format ...",
+      "url": "https://github.com/kywch/mg2hfbot",
+      "snippet": "Want to try LeRobot on complex tasks without a physical robot arm? MimicGen provides over 26,000 trajectories across 12 different tasks. mg2hfbot converts MimicGen datasets, trains state-of-the-art LeRobot policies (including ACT and diffusion) on these datasets, and evaluates the trained policies. Thank you to Ajay Mandlekar and Remi Cadene for guidance, and Puffer AI for computing support."
+    },
+    {
+      "title": "GitHub Pages - MimicGen",
+      "url": "https://mimicgen.github.io/",
+      "snippet": "We used MimicGen to autonomously generate over 50,000 demonstrations from less than 200 human demonstrations across 18 tasks, multiple simulators, and the real-world. This took considerably less human effort than prior work."
+    }
+  ]
+}

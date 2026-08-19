@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "devanasokan/bert-lyrics-classifier",
+  "slug": "devanasokan-bert-lyrics-classifier",
+  "author": "devanasokan",
+  "url": "https://huggingface.co/devanasokan/bert-lyrics-classifier",
+  "created_at": "2026-08-18T02:37:12.000Z",
+  "updated_at": "2026-08-18T04:52:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437963825,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exploring Genre and Success Classification through Song Lyrics using ...",
+      "url": "https://arxiv.org/html/2407.21068v1",
+      "snippet": "Abstract This paper presents a natural language processing (NLP) approach to the problem of thoroughly comprehending song lyrics, with particular attention on genre classification, view-based success prediction, and approximate release year. Our tests provide promising results with 65% accuracy in genre classification and 79% accuracy in success prediction, leveraging a DistilBERT model for ..."
+    },
+    {
+      "title": "brunokreiner/lyrics-bert · Hugging Face",
+      "url": "https://huggingface.co/brunokreiner/lyrics-bert",
+      "snippet": "{lyrics-bert} This is a sentence-transformers model: It maps sentences & paragraphs to a 300 dimensional dense vector space and can be used for tasks like clustering or semantic search. This model was trained on around 480&#x27;000 lyrics that were classified as english by the python langdetect package."
+    },
+    {
+      "title": "Classify text with BERT - TensorFlow",
+      "url": "https://www.tensorflow.org/text/tutorials/classify_text_with_bert",
+      "snippet": "This tutorial contains complete code to fine-tune BERT to perform sentiment analysis on a dataset of plain-text IMDB movie reviews. In addition to training a model, you will learn how to preprocess text into an appropriate format. In this notebook, you will: Load the IMDB dataset Load a BERT model from TensorFlow Hub Build your own model by combining BERT with a classifier Train your own model ..."
+    },
+    {
+      "title": "GitHub - randomemer/lyrics-classification: Classification of music ...",
+      "url": "https://github.com/randomemer/lyrics-classification",
+      "snippet": "This project classifies song lyrics into different genres using BERT (Bidirectional Encoder Representations from Transformers). BERT is a transformer-based model that has achieved state-of-the-art results in a wide range of NLP tasks."
+    },
+    {
+      "title": "Veucci/lyric-to-genre · Hugging Face",
+      "url": "https://huggingface.co/Veucci/lyric-to-genre",
+      "snippet": "The model was trained using the BERT language model on my song lyrics dataset to predict the genre of a given song based on its lyrics. This repository houses the machine learning model, which is capable of making predictions in three distinct genres: Pop, Rock, and Hip-Hop."
+    }
+  ]
+}

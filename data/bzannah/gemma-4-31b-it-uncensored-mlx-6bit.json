@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "bzannah/gemma-4-31B-it-uncensored-MLX-6bit",
+  "slug": "bzannah-gemma-4-31b-it-uncensored-mlx-6bit",
+  "author": "bzannah",
+  "url": "https://huggingface.co/bzannah/gemma-4-31B-it-uncensored-MLX-6bit",
+  "created_at": "2026-08-18T14:21:45.000Z",
+  "updated_at": "2026-08-18T14:21:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "6bit",
+    "uncensored",
+    "abliterated",
+    "security",
+    "en",
+    "de",
+    "base_model:ressl/gemma-4-31B-it-uncensored",
+    "base_model:quantized:ressl/gemma-4-31B-it-uncensored",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7291828076,
+  "parameters_human": "7.29B",
+  "storage_bytes": 26129110601,
+  "storage_human": "26.1 GB",
+  "base_model": "ressl/gemma-4-31B-it-uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods/gemma-4-31B-it-Uncensored-MAX · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/gemma-4-31B-it-Uncensored-MAX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ressl/gemma-4-31B-it-uncensored-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/ressl/gemma-4-31B-it-uncensored-MLX-6bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Gemma 4 Locally: From 4 GB VRAM (E4B) to 31B, Free",
+      "url": "https://locallyuncensored.com/blog/gemma-4-local-guide.html",
+      "snippet": "Google released Gemma 4 in April 2026 and it immediately became one of the most important open-weight model families for local AI. From the tiny E2B that runs on anything to the frontier 31B dense model, Gemma 4 covers every use case. Native tool calling, vision support, 256K context, and an Apache 2.0 license make it the go-to recommendation for new users. This guide covers every Gemma 4 ..."
+    },
+    {
+      "title": "Gemma 4 31b It Uncensored - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-31b-it-uncensored.html",
+      "snippet": "Download Gemma 4 31b It Uncensored GGUF model. 18.3 GB, 10,365 downloads, 44 likes."
+    },
+    {
+      "title": "Gemma 4 Just Got \"Jailbroken\", The Most Powerful Uncensored 31B Model ...",
+      "url": "https://medium.com/@CodeCoup/gemma-4-just-got-jailbroken-the-most-powerful-uncensored-31b-model-yet-70a773ba2e55",
+      "snippet": "Something interesting just dropped in the open-source AI world. Not a new model. Not a new benchmark. A modified version of Gemma 4 31B…"
+    }
+  ]
+}

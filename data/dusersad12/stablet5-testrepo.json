@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dusersad12/StableT5-TestRepo",
+  "slug": "dusersad12-stablet5-testrepo",
+  "author": "dusersad12",
+  "url": "https://huggingface.co/dusersad12/StableT5-TestRepo",
+  "created_at": "2026-08-18T02:33:51.000Z",
+  "updated_at": "2026-08-18T02:33:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "seq2seq",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1024,
+  "storage_human": "1024 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dusersad12/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/dusersad12/MyAwesomeModel-TestRepo",
+      "snippet": "Instructions to use dusersad12/MyAwesomeModel-TestRepo with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use dusersad12/MyAwesomeModel-TestRepo with Transformers:"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo huggingface.co api & dfgsgsh56 MyAwesomeModel ...",
+      "url": "https://www.toolify.ai/ai-model/dfgsgsh56-myawesomemodel-testrepo",
+      "snippet": "MyAwesomeModel-TestRepo huggingface.co is an AI model on huggingface.co that provides MyAwesomeModel-TestRepo&#x27;s model effect (), which can be used instantly with this dfgsgsh56 MyAwesomeModel-TestRepo model. huggingface.co supports a free trial of the MyAwesomeModel-TestRepo model, and also provides paid use of the MyAwesomeModel-TestRepo."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "All 156 Stable Diffusion models | Stable Diffusion Online",
+      "url": "https://stablediffusion.online/models",
+      "snippet": "Every Stable Diffusion checkpoint you can run here — 156 verified community models across SD 1.5, SDXL, Pony and FLUX, each listed with its Civitai id, default steps and output size."
+    }
+  ]
+}

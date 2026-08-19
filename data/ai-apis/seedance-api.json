@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AI-APIs/Seedance-API",
+  "slug": "ai-apis-seedance-api",
+  "author": "AI-APIs",
+  "url": "https://huggingface.co/AI-APIs/Seedance-API",
+  "created_at": "2026-08-14T21:54:49.000Z",
+  "updated_at": "2026-08-14T21:55:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "seedance",
+    "text-to-video",
+    "image-to-video",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seedance API - AI Video Generation at Unbeatable Prices",
+      "url": "https://seedanceapi.dev/",
+      "snippet": "Seedance API delivers ByteDance&#x27;s Seedance video models at 40% lower cost. Text-to-video, image-to-video, multi-shot storytelling, and native audio generation."
+    },
+    {
+      "title": "Seedance API - AI Video Generation for Developers",
+      "url": "https://seedanceapi.com/",
+      "snippet": "Seedance API: Best video generation on the market Seedance API integrates the powerful Seedance 2.0 model into your stack. Production-ready endpoints for text-to-video, image-to-video, and cinematic upscaling."
+    },
+    {
+      "title": "Seedance API — Seedance 2.5 & Seedance 2.0 | Seedance 2 - seevio.ai",
+      "url": "https://seevio.ai/api-docs",
+      "snippet": "The API lets you submit Seedance 2.5 and Seedance 2.0 video generation tasks programmatically. Seedance 2.5 is the recommended model and supports text-to-video, first-frame or first-and-last-frame image-to-video, and multimodal reference-to-video. Generation is asynchronous: create a task, receive a task ID immediately, then get the finished video by polling the task endpoint or by receiving a ..."
+    },
+    {
+      "title": "Seedance API - AI Video Generator & Model Suite | SeeAPI",
+      "url": "https://seedance.seeapi.com/",
+      "snippet": "Build cinematic AI video workflows with Seedance API. Test Seedance with text-to-video, image-to-video, and reference driving online."
+    },
+    {
+      "title": "Seedance API — Documentation",
+      "url": "https://seedanceapi.org/docs",
+      "snippet": "Developer documentation for Seedance video APIs and the Seedream 5 Pro image generation API."
+    }
+  ]
+}

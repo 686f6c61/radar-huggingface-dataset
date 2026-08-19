@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX",
+  "slug": "ilyakam-geer-qwen3-8-27b-4-8bit-mlx",
+  "author": "ilyakam",
+  "url": "https://huggingface.co/ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX",
+  "created_at": "2026-08-15T22:35:07.000Z",
+  "updated_at": "2026-08-15T22:35:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "geer",
+    "coding",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 8140370672,
+  "parameters_human": "8.14B",
+  "storage_bytes": 24198099565,
+  "storage_human": "24.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Basavaraj000/pancake",
+  "slug": "basavaraj000-pancake",
+  "author": "Basavaraj000",
+  "url": "https://huggingface.co/Basavaraj000/pancake",
+  "created_at": "2026-08-17T04:47:26.000Z",
+  "updated_at": "2026-08-17T04:58:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "multimodal",
+    "image-classification",
+    "clip",
+    "vision-language",
+    "en",
+    "hi",
+    "kn",
+    "base_model:openai/clip-vit-base-patch32",
+    "base_model:finetune:openai/clip-vit-base-patch32",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai/clip-vit-base-patch32",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pancake Mix - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1898762269712078991/1898762270571911317",
+      "snippet": "Generate stunning girl, anime, base_model anime art with the &#x27;Pancake Mix&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "PixAI - AI Art Generator | Create Stunning Anime AI Art",
+      "url": "https://pixai.art/en/model/2027780006432293761",
+      "snippet": "Generate stunning anime art with the &#x27;Pancake Mix&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Mr Bean AI idol sparks fan backlash | STOMP",
+      "url": "https://www.stomp.sg/trending-now/mr-bean-spore-faces-backlash-over-ai-generated-virtual-idol-used-promote-new-pancake-product",
+      "snippet": "Fans express disappointment over Mr Bean&#x27;s use of an AI virtual idol for pancake promotions, questioning the lack of human artists."
+    },
+    {
+      "title": "GitHub - pancakeswap/pancakeswap-ai: Pancakeswap specific AI tools for ...",
+      "url": "https://github.com/pancakeswap/pancakeswap-ai",
+      "snippet": "PancakeSwap-specific AI tools (skills, plugins, agents) for developers and AI agents integrating the PancakeSwap ecosystem."
+    },
+    {
+      "title": "Pancake — agents that optimise themselves",
+      "url": "https://www.pancakeai.tech/",
+      "snippet": "An autoresearch loop for your agents. Pancake maps thousands of traces, scores the patterns that matter against your evals, and rewrites the system to fix them."
+    }
+  ]
+}

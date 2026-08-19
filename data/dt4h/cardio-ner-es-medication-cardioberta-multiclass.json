@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DT4H/cardio-ner-es-medication-cardioberta-multiclass",
+  "slug": "dt4h-cardio-ner-es-medication-cardioberta-multiclass",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/cardio-ner-es-medication-cardioberta-multiclass",
+  "created_at": "2026-08-18T18:43:09.000Z",
+  "updated_at": "2026-08-18T18:43:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "clinical, medical, ner, healthcare, cardiology, spanish, medication, multiclass",
+    "custom_code",
+    "es",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125389827,
+  "parameters_human": "125.4M",
+  "storage_bytes": 250803710,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DT4H/cardio-ner-cs-medication-cardioberta-multiclass · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-cs-medication-cardioberta-multiclass",
+      "snippet": "DT4H / cardio-ner-cs-medication-cardioberta-multiclass like 0 Follow DataTools4Heart 27 Safetensors Czech roberta clinical, medical, ner, healthcare, cardiology, cs, Czech, medication custom_code Model card FilesFiles and versions xet Community Copy to bucket new Model Card for Cardio-Ner-Cs-Medication-Cardioberta-Multiclass Description Model ..."
+    },
+    {
+      "title": "The DataTools4Heart Project · GitHub",
+      "url": "https://github.com/DataTools4Heart/",
+      "snippet": "This organization hosts the source code and documentation for all components that power the DataTools4Heart (DT4H) platform — a federated, privacy-preserving cardiology data toolbox developed to enhance health data reusability. Our platform enables secure, decentralized analysis of cardiology data while strictly adhering to ethical, legal, and data protection standards."
+    },
+    {
+      "title": "CardioNER - a DT4H Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DT4H/cardioner",
+      "snippet": "DT4H/cardio-ner-multilingual-xlm-roberta-large-multilabel 0.6B•Updated 2 days ago• 51 Upvote - Sort: Collection"
+    },
+    {
+      "title": "Home - DataTools4Heart",
+      "url": "https://www.datatools4heart.eu/",
+      "snippet": "Federated machine learning and data synthesis With the aim to develop innovative methods for synthesising data, DataTools4Heart will build a privacy-preserving cardiology data toolbox to improve data reusability, while adhering to ethical and legal standards."
+    },
+    {
+      "title": "Publications - DataTools4Heart",
+      "url": "https://www.datatools4heart.eu/publications/",
+      "snippet": "B. van Es, \"DT4H.nl at SMM4H-HeaRD 2026: Multilingual Clinical NER with multilingual and monolingual models\", 2026 Jul 3 (p. 82), The 11th Social Media Mining for Health Research and Applications (SMM4H-HeaRD 2026) Workshop and Shared Tasks."
+    }
+  ]
+}

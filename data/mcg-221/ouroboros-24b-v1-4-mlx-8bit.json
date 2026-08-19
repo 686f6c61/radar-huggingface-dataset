@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "McG-221/Ouroboros-24B-v1.4-mlx-8Bit",
+  "slug": "mcg-221-ouroboros-24b-v1-4-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Ouroboros-24B-v1.4-mlx-8Bit",
+  "created_at": "2026-08-17T06:47:51.000Z",
+  "updated_at": "2026-08-17T06:48:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "float32",
+    "swearing",
+    "rp",
+    "horror",
+    "della",
+    "merge",
+    "mergekit",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "dataset:OccultAI/illuminati_imatrix_v1",
+    "base_model:Naphula/Ouroboros-24B-v1.4",
+    "base_model:quantized:Naphula/Ouroboros-24B-v1.4",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6630048000,
+  "parameters_human": "6.63B",
+  "storage_bytes": 25063295683,
+  "storage_human": "25.1 GB",
+  "base_model": "Naphula/Ouroboros-24B-v1.4",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McG-221/Morax-24B-v1-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Morax-24B-v1-mlx-8Bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Magistaroth-24B-v1-MPOA-mlx-8Bit - friendli.ai",
+      "url": "https://friendli.ai/models/McG-221/Magistaroth-24B-v1-MPOA-mlx-8Bit",
+      "snippet": "Run McG-221/Magistaroth-24B-v1-MPOA-mlx-8Bit with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - razzant/ouroboros: Ouroboros — self-creating AI agent. Born ...",
+      "url": "https://github.com/razzant/ouroboros",
+      "snippet": "Ouroboros Ouroboros is an open-source, general-purpose AI agent whose identity, durable memory, and history continue across tasks and restarts. It works on external projects, coordinates a live swarm of specialist agents, and can rewrite the implementation it runs on, including its code, architecture, prompts, tools, and dependencies."
+    },
+    {
+      "title": "Which LLMs Can Your M5 MacBook Actually Run? — JMLab",
+      "url": "https://jmlab.net/blog/2026-03-29-best-local-llms-m5-macbook/",
+      "snippet": "Which LLMs Can Your M5 MacBook Actually Run? Model recommendations for every M5 MacBook memory tier — 16 GB through 128 GB — based on real benchmarks, with context window and temperature guidance."
+    },
+    {
+      "title": "r/aivideo - The place for AI generated videos on reddit",
+      "url": "https://www.reddit.com/r/aivideo/wiki/index/",
+      "snippet": "Welcome to r/aivideo! 🍿🥤 A community focused on the use of FULL MOTION VIDEO GENERATIVE A.I. ASSISTANTS such as RUNWAY, PIKA LABS, SVD and similar AI VIDEO tools capable of TEXT TO VIDEO, IMAGE TO VIDEO, VIDEO TO VIDEO, AI VOICE OVER ACTING, AI MUSIC, AI NEWSROOM, live action AI CGI VFX and AI VIDEO EDITING Welcome to the future! DISCLAIMER: all content unless stated otherwise is FAKE ..."
+    }
+  ]
+}

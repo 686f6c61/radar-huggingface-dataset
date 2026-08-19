@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Catniti/catrex-1.0-image",
+  "slug": "catniti-catrex-1-0-image",
+  "author": "Catniti",
+  "url": "https://huggingface.co/Catniti/catrex-1.0-image",
+  "created_at": "2026-08-17T16:50:23.000Z",
+  "updated_at": "2026-08-17T16:53:36.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "catrex",
+    "stable-diffusion",
+    "text-to-image",
+    "faces",
+    "dataset:irodkin/celeba_with_llava_captions",
+    "base_model:segmind/tiny-sd",
+    "base_model:finetune:segmind/tiny-sd",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 323384964,
+  "parameters_human": "323.4M",
+  "storage_bytes": 1060292798,
+  "storage_human": "1.1 GB",
+  "base_model": "segmind/tiny-sd",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Catniti/catrex-1.0 · Hugging Face",
+      "url": "https://huggingface.co/Catniti/catrex-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Catniti/catrex-1.0 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Catniti/catrex-1.0/discussions",
+      "snippet": "Instructions to use Catniti/catrex-1.0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Catniti/catrex-1.0 with Transformers:"
+    },
+    {
+      "title": "catrex-1.0 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Catniti/catrex-1.0",
+      "snippet": "Run catrex-1.0 with FriendliAI inference. Двуязычная (RU/EN) чат-модель на 65M параметров, обученная с нуля: случайная инициализация, ни одного предобученного…"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sydqiang/Qwen3-8B-sft-industrial",
+  "slug": "sydqiang-qwen3-8b-sft-industrial",
+  "author": "sydqiang",
+  "url": "https://huggingface.co/sydqiang/Qwen3-8B-sft-industrial",
+  "created_at": "2026-08-18T02:04:00.000Z",
+  "updated_at": "2026-08-18T02:32:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939470,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sergiopaniego/Qwen3-8B-SFT · Hugging Face",
+      "url": "https://huggingface.co/sergiopaniego/Qwen3-8B-SFT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nyrthoughts/qwen3b-fine-tuning: SFT fine-tuning of Qwen3-8B on ...",
+      "url": "https://github.com/nyrthoughts/qwen3b-fine-tuning",
+      "snippet": "SFT fine-tuning of Qwen3-8B on synthetic manufacturing quality incidents. Includes dataset generation pipeline, data cleanup scripts, and a Colab notebook for 4-bit LoRA training with Unsloth. - ny..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3-8B-SFT:基于MindSpeed-LLM框架，在Atlas 800T A3上实现Qwen3-8B全参SFT微调。模型支持模式 ...",
+      "url": "https://gitcode.com/Ascend-SACT/Qwen3-8B-SFT/overview",
+      "snippet": "基于MindSpeed-LLM框架，在Atlas 800T A3上实现Qwen3-8B全参SFT微调。模型支持模式一键切换，思考模式提升推理能力，非思考模式降低延迟，兼顾多场景需求。【此简介由AI生成】"
+    }
+  ]
+}

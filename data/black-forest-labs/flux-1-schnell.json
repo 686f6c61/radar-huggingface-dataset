@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "black-forest-labs/FLUX.1-schnell",
+  "slug": "black-forest-labs-flux-1-schnell",
+  "author": "black-forest-labs",
+  "url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+  "created_at": "2024-07-31T19:58:05.000Z",
+  "updated_at": "2024-08-16T14:37:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-generation",
+    "flux",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "diffusers:FluxPipeline",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 5568,
+  "downloads_30d": 365144,
+  "trending_score": 12,
+  "parameters": 11891178560,
+  "parameters_human": "11.89B",
+  "storage_bytes": 58051635877,
+  "storage_human": "58.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "black-forest-labs/FLUX.1-schnell · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 ...",
+      "url": "https://github.com/black-forest-labs/flux",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    },
+    {
+      "title": "FLUX.1 [Schnell] - a Hugging Face Space by black-forest-labs",
+      "url": "https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell",
+      "snippet": "FLUX.1 [schnell] 12B param rectified flow transformer distilled from FLUX.1 [pro] for 4 step generation [blog] [model]"
+    },
+    {
+      "title": "flux/model_cards/FLUX.1-schnell.md at main · black-forest-labs/flux",
+      "url": "https://github.com/black-forest-labs/flux/blob/main/model_cards/FLUX.1-schnell.md",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    },
+    {
+      "title": "FLUX.1-schnell Model by Black-forest-labs | NVIDIA NIM",
+      "url": "https://build.nvidia.com/black-forest-labs/flux_1-schnell/modelcard",
+      "snippet": "FLUX.1-schnell is a distilled image generation model, producing high quality images at fast speeds"
+    }
+  ]
+}

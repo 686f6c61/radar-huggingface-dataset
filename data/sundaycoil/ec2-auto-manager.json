@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sundaycoil/ec2-auto-manager",
+  "slug": "sundaycoil-ec2-auto-manager",
+  "author": "sundaycoil",
+  "url": "https://huggingface.co/sundaycoil/ec2-auto-manager",
+  "created_at": "2026-04-09T06:07:32.000Z",
+  "updated_at": "2026-08-18T09:18:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sundaycoil/ec2-auto-manager · Hugging Face",
+      "url": "https://huggingface.co/sundaycoil/ec2-auto-manager",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sundaycoil (Mason) - Hugging Face",
+      "url": "https://huggingface.co/sundaycoil/models",
+      "snippet": "Sort: Recently updated. sundaycoil/access-control-manager. Updated 1 minute ago • 6. sundaycoil/support-ticket-system. Updated 2 minutes ago"
+    },
+    {
+      "title": "Ec2 Auto Manager Review and Pricing | AI Cambodia",
+      "url": "https://www.aicambodia.com/ai/hf-sundaycoil-ec2-auto-manager",
+      "snippet": "Learn everything about Ec2 Auto Manager. Read verified details, pricing tiers, and find out how this AI tool can help you choose with confidence today."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Sundaycoil Ec2 Auto Manager Huggingface Model Sundaycoil Ec2 Auto ...",
+      "url": "https://sweettea.co/es/resources/sundaycoil-ec2-auto-manager-huggingface-model-sundaycoil-ec2-auto-manager",
+      "snippet": "Explora Sundaycoil Ec2 Auto Manager Huggingface Model Sundaycoil Ec2 Auto Manager en el directorio de Sweet Tea Resources, con información de confianza, preparación y requisitos complementarios."
+    }
+  ]
+}

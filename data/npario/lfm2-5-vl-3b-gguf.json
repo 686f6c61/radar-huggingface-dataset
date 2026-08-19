@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "npario/LFM2.5-VL-3B-GGUF",
+  "slug": "npario-lfm2-5-vl-3b-gguf",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/LFM2.5-VL-3B-GGUF",
+  "created_at": "2026-08-17T01:17:13.000Z",
+  "updated_at": "2026-08-17T01:17:14.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "liquid",
+    "unsloth",
+    "lfm2.5",
+    "edge",
+    "image-text-to-text",
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi",
+    "arxiv:2305.03393",
+    "base_model:LiquidAI/LFM2.5-VL-3B",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 689,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 44312815008,
+  "storage_human": "44.3 GB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-VL-3B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-VL-3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF",
+      "snippet": "LiquidAI / LFM2.5-VL-3B-GGUF like 17 Follow Liquid AI 4.85k Image-Text-to-Text GGUF 16 languages liquid lfm2 lfm2-vl edge lfm2.5 lfm2.5-vl llama.cpp conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2.5-VL-3B: A Better and Faster Vision-Language Model for the Edge",
+      "url": "https://www.liquid.ai/blog/lfm2-5-vl-3b",
+      "snippet": "LFM2.5-VL-3B is Liquid AI&#x27;s most capable vision-language model, with grounding, screen understanding, and function calling, fast enough to run on-device."
+    },
+    {
+      "title": "LFM2.5-VL-3B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-3b",
+      "snippet": "← Back to Vision Models LFM2.5-VL-3B is Liquid AI&#x27;s most capable vision-language model, with strong grounding, screen and document understanding, and function calling. It builds on the LFM2.5-2.6B backbone with a SigLIP2 NaFlex image encoder, and answers directly for low-latency inference on-device and in the cloud. HFGGUFMLXONNX"
+    },
+    {
+      "title": "Liquid AI Releases LFM2.5-VL-3B: A 3B Vision-Language Model That Reads ...",
+      "url": "https://www.marktechpost.com/2026/08/13/liquid-ai-lfm2-5-vl-3b-on-device-vision-language-model/",
+      "snippet": "Yesterday, Liquid AI released LFM2.5-VL-3B. It is a 3.1B-parameter vision-language model built for on-device deployment. The model reads digital screens across mobile, web, and desktop. It grounds objects to coordinates, parses documents and charts, and calls tools from text or image input."
+    }
+  ]
+}

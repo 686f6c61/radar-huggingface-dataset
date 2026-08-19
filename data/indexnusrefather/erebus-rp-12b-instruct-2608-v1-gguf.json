@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Indexnusrefather/Erebus-RP-12B-Instruct-2608-v1-GGUF",
+  "slug": "indexnusrefather-erebus-rp-12b-instruct-2608-v1-gguf",
+  "author": "Indexnusrefather",
+  "url": "https://huggingface.co/Indexnusrefather/Erebus-RP-12B-Instruct-2608-v1-GGUF",
+  "created_at": "2026-08-13T09:14:22.000Z",
+  "updated_at": "2026-08-17T12:45:52.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "GGUF",
+    "RP",
+    "Roleplay",
+    "Creative",
+    "Writer",
+    "gemma3",
+    "finetune",
+    "ERP",
+    "Instruct",
+    "v1",
+    "Creative writing",
+    "experimental",
+    "rich worldbuilding",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:finetune:google/gemma-3-12b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 352,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 67465808064,
+  "storage_human": "67.5 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Erebus-RP-12B-Instruct-2608-v1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Indexnusrefather/Erebus-RP-12B-Instruct-2608-v1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Erebus RP 12B Instruct 2608 V1 by Indexnusrefather",
+      "url": "https://llm-explorer.com/model/Indexnusrefather%2FErebus-RP-12B-Instruct-2608-v1,4IIjKct98S7ufD2izKBQ95",
+      "snippet": "Erebus RP 12B Instruct 2608 V1 is an open-source 12b LLM by Indexnusrefather. VRAM 23.4GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "How to install and run Erebus? : r/KoboldAI - Reddit",
+      "url": "https://www.reddit.com/r/KoboldAI/comments/13ax0tv/how_to_install_and_run_erebus/",
+      "snippet": "I recommend making at least about 128GB drive space available to store the model and have a decent swap file. Using SSD space will make it load much faster, but won&#x27;t affect the run time much. Then, reboot and install linux on this free space. (On a separate partition). Choose to install the proprietary nVidia drivers when this is asked."
+    },
+    {
+      "title": "Mistral LLM: All Versions & Hardware Requirements - Hardware Corner",
+      "url": "https://www.hardware-corner.net/llm-database/Mistral/",
+      "snippet": "Explore the list of Mistral model variations, their file formats (GGML, GGUF, GPTQ, and HF), and understand the hardware requirements for local inference."
+    }
+  ]
+}

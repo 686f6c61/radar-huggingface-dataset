@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "AvinabhDutta-Dev/bangla-paraphrase-qwen2.5-qlora",
+  "slug": "avinabhdutta-dev-bangla-paraphrase-qwen2-5-qlora",
+  "author": "AvinabhDutta-Dev",
+  "url": "https://huggingface.co/AvinabhDutta-Dev/bangla-paraphrase-qwen2.5-qlora",
+  "created_at": "2026-08-17T10:24:51.000Z",
+  "updated_at": "2026-08-17T10:53:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "bengali",
+    "bangla",
+    "paraphrase-generation",
+    "causal-lm",
+    "qlora",
+    "merged",
+    "conversational",
+    "bn",
+    "dataset:csebuetnlp/BanglaParaphrase",
+    "arxiv:2305.14314",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "doi:10.57967/hf/10022",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "BanglaParaphrase",
+      "metric": "BLEU",
+      "value": 12.71
+    },
+    {
+      "task": null,
+      "dataset": "BanglaParaphrase",
+      "metric": "ROUGE-L",
+      "value": 0.377
+    },
+    {
+      "task": null,
+      "dataset": "BanglaParaphrase",
+      "metric": "BERTScore F1",
+      "value": 0.923
+    },
+    {
+      "task": null,
+      "dataset": "BanglaParaphrase",
+      "metric": "PINC",
+      "value": 0.773
+    }
+  ],
+  "sources": [
+    {
+      "title": "AvinabhDutta-Dev/bangla-paraphrase-indicbartss · Hugging Face",
+      "url": "https://huggingface.co/AvinabhDutta-Dev/bangla-paraphrase-indicbartss",
+      "snippet": "This model is one of four architectures compared in a broader study, \"Beyond BLEU: Evaluating Automated Metric Reliability for Bengali Paraphrase Generation\" (GitHub repo), which benchmarks full fine-tuning vs. QLoRA and validates standard automated metrics (BLEU, ROUGE-L, BERTScore, PINC) against an LLM-as-a-judge."
+    },
+    {
+      "title": "GitHub - AvinabhDutta-Dev/AvinabhDutta-Dev: AI/ML Engineer & NLP ...",
+      "url": "https://github.com/AvinabhDutta-Dev/AvinabhDutta-Dev",
+      "snippet": "🔭 What I&#x27;m working on Jonaki — A RAG-based AI tutor for APSC exam aspirants, answering exclusively from verified past question papers with source citations, built for Assamese-medium students. Beyond BLEU — A comparative study of Encoder-Decoder (IndicBARTSS, BanglaT5) vs. Decoder-Only (TigerLLM, Qwen2.5-1.5B) models for Bengali paraphrase generation, validating semantic-aware ..."
+    },
+    {
+      "title": "AvinabhDutta-Dev (AvinabhDutta-Dev) · GitHub",
+      "url": "https://github.com/AvinabhDutta-Dev/",
+      "snippet": "🔭 What I&#x27;m working on Jonaki — A RAG-based AI tutor for APSC exam aspirants, answering exclusively from verified past question papers with source citations, built for Assamese-medium students. Beyond BLEU — A comparative study of Encoder-Decoder (IndicBARTSS, BanglaT5) vs. Decoder-Only (TigerLLM, Qwen2.5-1.5B) models for Bengali paraphrase generation, validating semantic-aware ..."
+    },
+    {
+      "title": "Paraphrasing Tool (Ad-Free and No Sign-up Required) - Quillbot AI",
+      "url": "https://quillbot.com/paraphrasing-tool",
+      "snippet": "Quillbot&#x27;s AI-powered paraphraser helps students and professionals rewrite, edit, and change the tone of their text to improve clarity and comprehension."
+    },
+    {
+      "title": "FREE Bengali Paraphrasing Tool | BN standard Paraphrasing Tool - Free ...",
+      "url": "https://paraphrasetool.com/langs/paraphrasing-tool-bengali",
+      "snippet": "Paraphrase Tool uses state-of-the-art AI to paraphrase and compose in more than 100+ languages Paraphrase Tool uses state-of-the-art AI to produce variations of your text in more than 100+ languages for each of the eighteen (12 free and 6 premium) styles that we offer."
+    }
+  ]
+}

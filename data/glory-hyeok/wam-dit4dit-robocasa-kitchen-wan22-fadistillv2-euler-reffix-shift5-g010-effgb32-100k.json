@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-reffix-shift5-g010-effgb32-100k",
+  "slug": "glory-hyeok-wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-reffix-shift5-g010-effgb32-100k",
+  "author": "glory-hyeok",
+  "url": "https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-reffix-shift5-g010-effgb32-100k",
+  "created_at": "2026-07-20T10:30:26.000Z",
+  "updated_at": "2026-08-18T00:37:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59181802520,
+  "storage_human": "59.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k · Hugging Face",
+      "url": "https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k",
+      "snippet": "WAM DiT4DiT RoboCasa Kitchen I2V 100K Eval-minimal checkpoint for inference only. Resume/optimizer state is intentionally excluded."
+    },
+    {
+      "title": "glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-emaext ...",
+      "url": "https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillv2-euler-emaext-g001-effgb32-100k_padfix",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - robocasa/robocasa: RoboCasa: Large-Scale Simulation of ...",
+      "url": "https://github.com/robocasa/robocasa",
+      "snippet": "RoboCasa is a large-scale simulation framework for training generally capable robots to perform everyday tasks. It was originally released in 2024 by UT Austin researchers."
+    },
+    {
+      "title": "RoboCasa Leaderboard",
+      "url": "https://robocasa.ai/leaderboard.html",
+      "snippet": "RoboCasa365 is a large-scale benchmark for generalist robot policies spanning 365 everyday tasks across 2,500 diverse kitchen environments. This leaderboard focuses on the multi-task learning setting and includes the four baseline policy families: Diffusion Policy, π0, π0.5, and GR00T N1.5."
+    },
+    {
+      "title": "GitHub - Mondo-Robotics/DiT4DiT: This is the official code repo for ...",
+      "url": "https://github.com/Mondo-Robotics/DiT4DiT",
+      "snippet": "DiT4DiT is a Vision-Action-Model (VAM) framework that combines video generation transformers with flow-matching-based action prediction for generalizable robotic manipulation. It supports both the tabletop and whole-body control for manipulation tasks. Notably, DiT4DiT stands as the first efficient VAM to achieve real-time whole-body control of humanoid robots."
+    }
+  ]
+}

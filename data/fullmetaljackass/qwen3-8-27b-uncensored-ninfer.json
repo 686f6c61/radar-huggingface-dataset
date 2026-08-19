@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "fullmetaljackass/Qwen3.8-27B-Uncensored-NInfer",
+  "slug": "fullmetaljackass-qwen3-8-27b-uncensored-ninfer",
+  "author": "fullmetaljackass",
+  "url": "https://huggingface.co/fullmetaljackass/Qwen3.8-27B-Uncensored-NInfer",
+  "created_at": "2026-08-15T07:48:27.000Z",
+  "updated_at": "2026-08-18T21:40:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "ninfer",
+    "NInfer",
+    "uncensored",
+    "abliterated",
+    "qwen3.8",
+    "mtp",
+    "vision",
+    "RTX-5090",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36428242688,
+  "storage_human": "36.4 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "fullmetaljackass/Qwen3.8-27B-Uncensored-NInfer at main",
+      "url": "https://huggingface.co/fullmetaljackass/Qwen3.8-27B-Uncensored-NInfer/tree/main",
+      "snippet": "Instructions to use fullmetaljackass/Qwen3.8-27B-Uncensored-NInfer with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "fullmetaljackass/Qwen3.8-27B-Uncensored-NInfer · Hugging Face",
+      "url": "https://huggingface.co/fullmetaljackass/Qwen3.8-27B-Uncensored-NInfer",
+      "snippet": "The repository contains JonathanColetti&#x27;s Qwen3.8-27B-Uncensored converted to the native NInfer.ninfer artifact format. The artifact is intended only for NInfer; it is not a Transformers checkpoint, Safetensors distribution, or GGUF file."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    }
+  ]
+}

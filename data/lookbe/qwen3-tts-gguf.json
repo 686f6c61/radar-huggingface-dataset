@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "lookbe/Qwen3-TTS-GGUF",
+  "slug": "lookbe-qwen3-tts-gguf",
+  "author": "lookbe",
+  "url": "https://huggingface.co/lookbe/Qwen3-TTS-GGUF",
+  "created_at": "2026-08-19T00:51:13.000Z",
+  "updated_at": "2026-08-19T00:51:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ja",
+    "ko",
+    "ru",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "tts",
+    "text-to-speech",
+    "voice-cloning",
+    "voice-design",
+    "mandarin-dialects",
+    "ggml",
+    "qwen",
+    "qwen3",
+    "qwen3-tts",
+    "cpp",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ja",
+    "ko",
+    "ru",
+    "ar",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:quantized:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 914643008,
+  "parameters_human": "914.6M",
+  "storage_bytes": 60071360480,
+  "storage_human": "60.1 GB",
+  "base_model": "Qwen/Qwen3-TTS-Tokenizer-12Hz, Qwen/Qwen3-TTS-12Hz-0.6B-Base, Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice, Qwen/Qwen3-TTS-12Hz-1.7B-Base, Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice, Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning. - QwenLM/Qwen3-TTS"
+    },
+    {
+      "title": "GitHub - HaujetZhao/Qwen3-TTS-GGUF: 最极速的Qwen3-TTS推理方案。将 Qwen3-TTS 的 LLM ...",
+      "url": "https://github.com/HaujetZhao/Qwen3-TTS-GGUF",
+      "snippet": "Qwen3-TTS 的克隆原理也是如此： 文本拼接：把「参考文本」和「目标文本」连接起来。 注入记忆：把「参考音频」转为 spk_emb 和 codes，注入记忆，让模型以为前面的音频是它自己刚说的： 嗓子（spk_emb）：整体音色特征，告诉模型我是用什么样的嗓子在说话。"
+    },
+    {
+      "title": "qwen3-tts-12hz-0.6b-customvoice-gguf - Hugging Face",
+      "url": "https://huggingface.co/affectively-ai/qwen3-tts-12hz-0.6b-customvoice-gguf",
+      "snippet": "Highlights 0.6B parameters — Lightweight TTS with voice cloning. Ultra-compact custom voice synthesis for edge deployment. ~0.4 GB Q4_K_M quantized — optimized for distributed edge inference Qwen2-TTS architecture — proven, stable, well-tested Aether runtime compatible — layer-sharded across distributed nodes via Edgework.ai Model ..."
+    },
+    {
+      "title": "qwen3-tts-12hz-1.7b-voicedesign-gguf - Hugging Face",
+      "url": "https://huggingface.co/affectively-ai/qwen3-tts-12hz-1.7b-voicedesign-gguf",
+      "snippet": "Qwen 3 TTS 1.7B Voice Design (GGUF, Q4_K_M) Production-ready GGUF quantization of Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign for distributed speech synthesis — powered by the Aether edge inference runtime. Highlights 1.7B parameters — Text-to-speech with voice design. Create new voices from text descriptions of desired characteristics. ~1 GB Q4_K_M quantized — optimized for distributed edge ..."
+    },
+    {
+      "title": "Qwen3 Tts Custom - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-tts-custom.html",
+      "snippet": "Download Qwen3 Tts Custom GGUF model. 2.6 GB, 255 downloads, 0 likes."
+    }
+  ]
+}

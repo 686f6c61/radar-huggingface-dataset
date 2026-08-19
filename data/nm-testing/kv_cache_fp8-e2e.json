@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "nm-testing/kv_cache_fp8-e2e",
+  "slug": "nm-testing-kv_cache_fp8-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/kv_cache_fp8-e2e",
+  "created_at": "2026-07-25T05:14:17.000Z",
+  "updated_at": "2026-08-18T02:33:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 435,
+  "trending_score": 0,
+  "parameters": 1100048428,
+  "parameters_human": "1.10B",
+  "storage_bytes": 68203858632,
+  "storage_human": "68.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

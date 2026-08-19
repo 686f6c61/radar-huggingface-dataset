@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Tiendat88/vi-legal-query-rewriter-lora",
+  "slug": "tiendat88-vi-legal-query-rewriter-lora",
+  "author": "Tiendat88",
+  "url": "https://huggingface.co/Tiendat88/vi-legal-query-rewriter-lora",
+  "created_at": "2026-08-18T08:32:09.000Z",
+  "updated_at": "2026-08-18T08:32:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "vietnamese",
+    "legal",
+    "query-rewriting",
+    "rag",
+    "negative-result",
+    "vi",
+    "base_model:mlx-community/Qwen2.5-7B-Instruct-4bit",
+    "base_model:adapter:mlx-community/Qwen2.5-7B-Instruct-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92299188,
+  "storage_human": "92 MB",
+  "base_model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Dat071104/Vilegal-agent: Vietnamese Legal AI Agent with RAG ...",
+      "url": "https://github.com/Dat071104/Vilegal-agent",
+      "snippet": "Vietnamese Legal AI Agent with RAG, QLoRA fine-tuning, LangGraph orchestration, citation verification, and reproducible evaluation. - Dat071104/Vilegal-agent"
+    },
+    {
+      "title": "query_rewrite_lora/README.md · ibm-granite/granite-3.3-8b-rag-agent-lib ...",
+      "url": "https://huggingface.co/ibm-granite/granite-3.3-8b-rag-agent-lib/blob/main/query_rewrite_lora/README.md",
+      "snippet": "This jump is more pronounced on the non-standalone fragment, where query rewrite with the Granite 3.3-8b LoRA adapter leads to almost 21 percentage points improvement over the no-rewrite strategy."
+    },
+    {
+      "title": "Tiendat88 (Pham Tien Dat) · GitHub",
+      "url": "https://github.com/Tiendat88/",
+      "snippet": "DATA/AI. Tiendat88 has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,980 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

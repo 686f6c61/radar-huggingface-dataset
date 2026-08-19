@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "floriankrauss/intent_detector_concierge",
+  "slug": "floriankrauss-intent_detector_concierge",
+  "author": "floriankrauss",
+  "url": "https://huggingface.co/floriankrauss/intent_detector_concierge",
+  "created_at": "2026-08-15T05:19:02.000Z",
+  "updated_at": "2026-08-15T05:29:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 66958855,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267853725,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intent Recognition and Auto‑Routing in Multi-Agent Systems",
+      "url": "https://gist.github.com/mkbctrl/a35764e99fe0c8e8c00b2358f55cd7fa",
+      "snippet": "Intent Recognition and Auto‑Routing in Multi-Agent Systems Modern conversational AI systems often split functionality into multiple tools or sub-agents, each specialized for a task (e.g. search, booking, math, etc.). When a user sends a query, the system must interpret intent and dispatch it to the right tool/agent."
+    },
+    {
+      "title": "intent-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/intent-detection",
+      "snippet": "Few-Shot-Intent-Detection includes popular challenging intent detection datasets with/without OOS queries and state-of-the-art baselines and results."
+    },
+    {
+      "title": "SEC.gov | EDGAR Full Text Search",
+      "url": "https://www.sec.gov/edgar/search/",
+      "snippet": "SEC.gov EDGAR FAQ Other search tools The new EDGAR advanced search gives you access to the full text of electronic filings since 2001."
+    },
+    {
+      "title": "mubasharunnisa/AI-Code-Intent-Detector - GitHub",
+      "url": "https://github.com/mubasharunnisa/AI-Code-Intent-Detector",
+      "snippet": "IntentAI is a full-stack web application that classifies natural-language code requests into structured developer intent categories using AI. Given a prompt like \"Fix the null pointer exception in the login service\", the system responds with BUG_FIX at 91.3% confidence — instantly. Intent categories detected:"
+    },
+    {
+      "title": "Intent Detection in the Age of LLMs - arXiv.org",
+      "url": "https://arxiv.org/html/2410.01627v1",
+      "snippet": "An intent detection system of a conversational AI service is expected to handle intents anywhere in the spectrum of very-broad to very-specific scopes 1 depending upon actionability of intents and bot usecases as shown in Fig 1."
+    }
+  ]
+}

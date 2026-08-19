@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "beaudamore/pubmed-oncology-lora-qwen3.6-27b",
+  "slug": "beaudamore-pubmed-oncology-lora-qwen3-6-27b",
+  "author": "beaudamore",
+  "url": "https://huggingface.co/beaudamore/pubmed-oncology-lora-qwen3.6-27b",
+  "created_at": "2026-08-16T19:29:38.000Z",
+  "updated_at": "2026-08-16T19:57:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.6",
+    "oncology",
+    "biomedical",
+    "medical-research",
+    "research-only",
+    "text-generation",
+    "en",
+    "base_model:unsloth/Qwen3.6-27B",
+    "base_model:adapter:unsloth/Qwen3.6-27B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657599949,
+  "storage_human": "658 MB",
+  "base_model": "unsloth/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - beaudamore/pubmed",
+      "url": "https://github.com/beaudamore/pubmed",
+      "snippet": "A thinking-enabled oncology LoRA fine-tuned on Qwen3 (4-bit QLoRA via Unsloth) that reasons through clinical oncology questions step-by-step using <think>...</think> chains. Any Qwen3 variant (14B+) can serve as the base model."
+    },
+    {
+      "title": "otisberg/qwen3.6-27B-LORA · Hugging Face",
+      "url": "https://huggingface.co/otisberg/qwen3.6-27B-LORA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gael1125/Qwen3.6-27B-Lora-1 · Hugging Face",
+      "url": "https://huggingface.co/Gael1125/Qwen3.6-27B-Lora-1",
+      "snippet": "Instructions to use Gael1125/Qwen3.6-27B-Lora-1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Gael1125/Qwen3.6-27B-Lora-1 with Transformers:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Introduction Qwen3.6 Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback."
+    },
+    {
+      "title": "qwen3.6:27b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:27b",
+      "snippet": "Following the February release of the Qwen3.5 series, we&#x27;re pleased to share the first open-weight variant of Qwen3.6. Built on direct feedback from the community, Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ando0-0/anima-nude-filter",
+  "slug": "ando0-0-anima-nude-filter",
+  "author": "ando0-0",
+  "url": "https://huggingface.co/ando0-0/anima-nude-filter",
+  "created_at": "2026-08-18T14:31:59.000Z",
+  "updated_at": "2026-08-18T14:50:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 183606408,
+  "storage_human": "184 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANIMADEX — Anime character & artist catalogue for the ANIMA AI model",
+      "url": "https://animadex.net/",
+      "snippet": "A catalogue of over 36,000 anime characters and 15,000 artists rendered with the ANIMA AI model. Searchable by tags, copyright, hair colour, eye colour, gender and CivitAI LoRA availability."
+    },
+    {
+      "title": "Anima Style Explorer",
+      "url": "https://anima.mooshieblob.com/",
+      "snippet": "Browse thousands of Anima artist styles for AI image generation."
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    },
+    {
+      "title": "AI Nude Filters: Create Artistic Nudes Instantly",
+      "url": "https://pixeldojo.ai/nude-filters",
+      "snippet": "PixelDojo&#x27;s AI nude filters use advanced models like Flux.1 Studio and PonyXL combined with editing tools such as Image to Image and Inpainting. Upload a reference or describe your scene, and the AI generates or transforms images into beautiful, realistic artistic nudes with precise control over anatomy, lighting, and style."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    }
+  ]
+}

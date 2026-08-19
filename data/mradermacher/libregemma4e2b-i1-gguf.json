@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LibreGemma4e2b-i1-GGUF",
+  "slug": "mradermacher-libregemma4e2b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LibreGemma4e2b-i1-GGUF",
+  "created_at": "2026-08-18T14:19:59.000Z",
+  "updated_at": "2026-08-18T14:20:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 694291,
+  "parameters_human": "694291",
+  "storage_bytes": 2818272,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/model_requests · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/model_requests",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gemma releases - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/releases",
+      "snippet": "Release of MedGemma 27B parameter multimodal model. June 26, 2025 Release of Gemma 3n in E2B and E4B sizes. May 20, 2025 Release of MedGemma in 4B and 27B parameter sizes. March 10, 2025 Release of Gemma 3 in 1B, 4B, 12B and 27B sizes. Release of ShieldGemma 2. February 19, 2025 Release of PaliGemma 2 mix in 3B, 10B, and 28B parameter sizes ..."
+    },
+    {
+      "title": "Checkpoints — gemma",
+      "url": "https://gemma-llm.readthedocs.io/en/latest/checkpoints.html",
+      "snippet": "Checkpoints # Kaggle Hub # Gemma models are available on Kaggle Hub for various formats: Gemma 4 Gemma 3 Gemma 2 Gemma 1 To manually download the model: Select one of the Flax model variations Click the \"Download\" button to download the model archive Extract the model files from the archive The archive contains both the model weights and the tokenizer, like:"
+    }
+  ]
+}

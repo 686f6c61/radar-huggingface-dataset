@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "jwg0830/kanana-1.5-15.7b-a3b-instruct-sft_v0_2",
+  "slug": "jwg0830-kanana-1-5-15-7b-a3b-instruct-sft_v0_2",
+  "author": "jwg0830",
+  "url": "https://huggingface.co/jwg0830/kanana-1.5-15.7b-a3b-instruct-sft_v0_2",
+  "created_at": "2026-08-17T13:29:54.000Z",
+  "updated_at": "2026-08-17T13:39:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mixtral",
+    "text-generation",
+    "lora-merged",
+    "korean",
+    "k-ai-leaderboard",
+    "moe",
+    "conversational",
+    "ko",
+    "base_model:kakaocorp/kanana-1.5-15.7b-a3b-instruct",
+    "base_model:finetune:kakaocorp/kanana-1.5-15.7b-a3b-instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15696279552,
+  "parameters_human": "15.70B",
+  "storage_bytes": 31410613519,
+  "storage_human": "31.4 GB",
+  "base_model": "kakaocorp/kanana-1.5-15.7b-a3b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kakaocorp/kanana-1.5-15.7b-a3b-instruct · Hugging Face",
+      "url": "https://huggingface.co/kakaocorp/kanana-1.5-15.7b-a3b-instruct",
+      "snippet": "Kanana-1.5-15.7B-A3B, which has sparse architecture, delivers capabilities comparable to the Kanana-1.5-8B dense model while utilizing only 37% of the FLOPS per token, making it a highly inference-efficient and cost-effective solution for real-world applications."
+    },
+    {
+      "title": "GitHub - kakao/kanana: Kanana: Compute-efficient Bilingual Language ...",
+      "url": "https://github.com/kakao/kanana",
+      "snippet": "Introducing Kanana-1.5-15.7B-A3B, the first Mixture-of-Experts (MoE) model in our Kanana family, engineered for exceptional efficiency and powerful performance. Kanana-1.5-15.7B-A3B, which has sparse architecture, delivers capabilities comparable to the Kanana-1.5-8B dense model while utilizing only 37% of the FLOPS per token, making it a highly inference-efficient and cost-effective solution ..."
+    },
+    {
+      "title": "README.md · kakaocorp/kanana-1.5-15.7b-a3b-base at main",
+      "url": "https://huggingface.co/kakaocorp/kanana-1.5-15.7b-a3b-base/blob/main/README.md",
+      "snippet": "Kanana-1.5-15.7B-A3B, which has sparse architecture, delivers capabilities comparable to the Kanana-1.5-8B dense model while utilizing only 37% of the FLOPS per token, making it a highly inference-efficient and cost-effective solution for real-world applications."
+    },
+    {
+      "title": "kakaocorp/kanana-1.5-15.7b-a3b-instruct - Hugging Face Hub P... - Socket",
+      "url": "https://socket.dev/huggingface/package/kakaocorp/kanana-1.5-15.7b-a3b-instruct",
+      "snippet": "We found that kakaocorp/kanana-1.5-15.7b-a3b-instruct demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 3 open source maintainers collaborating on the project."
+    },
+    {
+      "title": "kakaocorp/kanana-1.5-15.7b-a3b-instruct: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/kakaocorp/kanana-1.5-15.7b-a3b-instruct",
+      "snippet": "Kanana-1.5-15.7B-A3B, which has sparse architecture, delivers capabilities comparable to the Kanana-1.5-8B dense model while utilizing only 37% of the FLOPS per token, making it a highly inference-efficient and cost-effective solution for real-world applications."
+    }
+  ]
+}

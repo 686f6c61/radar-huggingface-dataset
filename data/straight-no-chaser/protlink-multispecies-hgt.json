@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "straight-no-chaser/ProtLink-Multispecies-HGT",
+  "slug": "straight-no-chaser-protlink-multispecies-hgt",
+  "author": "straight-no-chaser",
+  "url": "https://huggingface.co/straight-no-chaser/ProtLink-Multispecies-HGT",
+  "created_at": "2026-08-17T19:22:04.000Z",
+  "updated_at": "2026-08-17T20:07:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "protlink_multispecies_hgt",
+    "protein-protein-interaction",
+    "graph-neural-network",
+    "heterogeneous-graph",
+    "graph-transformer",
+    "hgt",
+    "protein-language-model",
+    "esm2",
+    "computational-biology",
+    "bioinformatics",
+    "link-prediction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 4997149,
+  "parameters_human": "5.0M",
+  "storage_bytes": 19993188,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "straight-no-chaser/ProtLink - GitHub",
+      "url": "https://github.com/straight-no-chaser/ProtLink/tree/main",
+      "snippet": "Graph transformer on protein pair features. Contribute to straight-no-chaser/ProtLink development by creating an account on GitHub."
+    },
+    {
+      "title": "ProtLink/README.md at main · straight-no-chaser/ProtLink",
+      "url": "https://github.com/straight-no-chaser/ProtLink/blob/main/README.md",
+      "snippet": "Graph transformer on protein pair features. Contribute to straight-no-chaser/ProtLink development by creating an account on GitHub."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Horse Profile for Straight No Chaser - Equibase",
+      "url": "https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10602816&registry=T",
+      "snippet": "Horse Profile Straight No Chaser (KY) 102 TB, DK B/BR, H, foaled April 12, 2019 ( Speightster - Margarita Friday, by Johannesburg )"
+    }
+  ]
+}

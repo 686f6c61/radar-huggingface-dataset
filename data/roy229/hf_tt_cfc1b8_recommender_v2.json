@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Roy229/hf_tt_cfc1b8_recommender_v2",
+  "slug": "roy229-hf_tt_cfc1b8_recommender_v2",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/hf_tt_cfc1b8_recommender_v2",
+  "created_at": "2026-08-15T05:47:50.000Z",
+  "updated_at": "2026-08-17T04:01:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "recommender",
+    "aurora-model",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229 (RoyD) - Hugging Face",
+      "url": "https://huggingface.co/Roy229/datasets",
+      "snippet": "Roy229&#x27;s datasets1 Sort: Recently updated Roy229/customer-support-intents-v1 Updated about 2 hours ago"
+    },
+    {
+      "title": "Roy229/hf2197cat441573-cand1 · Hugging Face",
+      "url": "https://huggingface.co/Roy229/hf2197cat441573-cand1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter. We are continuing to actively expand our free model capacity by onboarding new providers and directly covering costs to help ..."
+    }
+  ]
+}

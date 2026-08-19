@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "terminusresearch/pixart-900m-1024-ft-v0.6",
+  "slug": "terminusresearch-pixart-900m-1024-ft-v0-6",
+  "author": "terminusresearch",
+  "url": "https://huggingface.co/terminusresearch/pixart-900m-1024-ft-v0.6",
+  "created_at": "2024-06-17T04:27:18.000Z",
+  "updated_at": "2026-08-18T20:30:29.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "simpletuner",
+    "full",
+    "base_model:terminusresearch/pixart-900m-1024-ft-v0.5",
+    "base_model:finetune:terminusresearch/pixart-900m-1024-ft-v0.5",
+    "license:creativeml-openrail-m",
+    "diffusers:PixArtSigmaPipeline",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 172,
+  "trending_score": 0,
+  "parameters": 908433824,
+  "parameters_human": "908.4M",
+  "storage_bytes": 1301551624705,
+  "storage_human": "1301.6 GB",
+  "base_model": "ptx0/pixart-900m-1024-ft-large",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "terminusresearch/pixart-900m-1024-ft-v0.6 · Hugging Face",
+      "url": "https://huggingface.co/terminusresearch/pixart-900m-1024-ft-v0.6",
+      "snippet": "Edit model card pixart-900m-1024-ft This is a full rank finetune derived from ptx0/pixart-900m-1024-ft-large. The main validation prompt used during training was: ethnographic photography of teddy bear at a picnic, ears tucked behind a cozy hoodie looking darkly off to the stormy picnic skies Validation settings CFG: 4.5 CFG Rescale: 0.0 Steps: 25"
+    },
+    {
+      "title": "terminusresearch/pixart-900m-1024-ft-v0.6 at main - Hugging Face",
+      "url": "https://huggingface.co/terminusresearch/pixart-900m-1024-ft-v0.6/tree/main",
+      "snippet": "terminusresearch / pixart-900m-1024-ft-v0.6 like 23 Text-to-Image Diffusers Safetensors PixArtSigmaPipeline stable-diffusion stable-diffusion-diffusers simpletuner full License:creativeml-openrail-m Model card FilesFiles and versions Community 3 Deploy Use this model main pixart-900m-1024-ft-v0.6 1 contributor History:370 commits ptx0"
+    },
+    {
+      "title": "Pixart-900m-1024-ft-v0.6 Open-source Image Generation Model - Free to ...",
+      "url": "https://model.aibase.com/models/details/1915695102917500929",
+      "snippet": "A fully fine-tuned image generation model based on ptx0/pixart-900m-1024-ft-large, specializing in high-quality image generation"
+    },
+    {
+      "title": "Pixart Open-Source Image Generation Model - Freely Achieve Text-to ...",
+      "url": "https://model.aibase.com/en/models/details/1942395192170778624",
+      "snippet": "The project is based on the terminusresearch/pixart-900m-1024-ft-v0.6 base model, using ControlNet PEFT LoRA technology for training. Different settings are used in the validation and training processes, and specific parameters are provided in the corresponding sections."
+    },
+    {
+      "title": "Benchmarks the \"ptx0/pixart-900m-1024-ft\" model with `torch.compile ...",
+      "url": "https://gist.github.com/sayakpaul/4d930d0d98d301b35d15a2af17befd06",
+      "snippet": "Benchmarks the \"ptx0/pixart-900m-1024-ft\" model with `torch.compile ()`. - benchmark_pixart-900m-1024-ft.py"
+    }
+  ]
+}

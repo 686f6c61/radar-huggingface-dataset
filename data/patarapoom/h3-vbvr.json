@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Patarapoom/h3-vbvr",
+  "slug": "patarapoom-h3-vbvr",
+  "author": "Patarapoom",
+  "url": "https://huggingface.co/Patarapoom/h3-vbvr",
+  "created_at": "2026-08-18T10:37:38.000Z",
+  "updated_at": "2026-08-18T11:03:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "image-to-video",
+    "audio-to-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Patarapoom/model · Hugging Face",
+      "url": "https://huggingface.co/Patarapoom/model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Patarapoom/model at main - Hugging Face",
+      "url": "https://huggingface.co/Patarapoom/model/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "H3 - LTX 2.3 - I2V T2V Video Reasoning lora VBVR",
+      "url": "https://civitai.com/models/2497207/reviews?modelVersionId=3220766",
+      "snippet": "Explore user reviews of the H3 - LTX 2.3 - I2V T2V Video Reasoning lora VBVR AI model on Civitai, rated 5 stars by 116 users, and see how it has helped others bring their creative visions to life"
+    },
+    {
+      "title": "GitHub - Video-Reason/VBVR-EvalKit: This is a framework for evaluating ...",
+      "url": "https://github.com/Video-Reason/VBVR-EvalKit",
+      "snippet": "The official evaluation repository for Very Big Video Reasoning (VBVR). A verifiable evaluation framework that moves beyond model-based judging by incorporating rule-based, human-aligned scorers, enabling reproducible and interpretable diagnosis of video reasoning capabilities. This repository accompanies A Very Big Video Reasoning Suite, accepted to ICML 2026."
+    },
+    {
+      "title": "[2602.20159] A Very Big Video Reasoning Suite - arXiv.org",
+      "url": "https://arxiv.org/abs/2602.20159",
+      "snippet": "We further present VBVR-Bench, a verifiable evaluation framework that moves beyond model-based judging by incorporating rule-based, human-aligned scorers, enabling reproducible and interpretable diagnosis of video reasoning capabilities."
+    }
+  ]
+}

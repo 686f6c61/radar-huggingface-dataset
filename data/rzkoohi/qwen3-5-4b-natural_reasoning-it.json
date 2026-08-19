@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Rzkoohi/Qwen3.5-4B-Natural_reasoning-IT",
+  "slug": "rzkoohi-qwen3-5-4b-natural_reasoning-it",
+  "author": "Rzkoohi",
+  "url": "https://huggingface.co/Rzkoohi/Qwen3.5-4B-Natural_reasoning-IT",
+  "created_at": "2026-08-16T02:21:21.000Z",
+  "updated_at": "2026-08-16T10:33:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "qwen3.5",
+    "reasoning",
+    "instruction-tuned",
+    "fine-tuned",
+    "sft",
+    "ultrachat",
+    "causal-lm",
+    "conversational",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "base_model:Rzkoohi/Qwen3.5-4B-Natural_reasoning",
+    "base_model:finetune:Rzkoohi/Qwen3.5-4B-Natural_reasoning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9339817399,
+  "storage_human": "9.3 GB",
+  "base_model": "Rzkoohi/Qwen3.5-4B-Natural_reasoning",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:33:27.416Z",
+  "benchmarks": [],
+  "sources": []
+}

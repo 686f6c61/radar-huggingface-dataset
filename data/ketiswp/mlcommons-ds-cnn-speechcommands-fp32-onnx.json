@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/mlcommons-DS-CNN-SpeechCommands-fp32-onnx",
+  "slug": "ketiswp-mlcommons-ds-cnn-speechcommands-fp32-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/mlcommons-DS-CNN-SpeechCommands-fp32-onnx",
+  "created_at": "2026-08-19T01:57:09.000Z",
+  "updated_at": "2026-08-19T02:10:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "fp32",
+    "audio-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48872,
+  "storage_human": "48872 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/tutorials: Tutorials for creating and using ONNX models",
+      "url": "https://github.com/onnx/tutorials",
+      "snippet": "Tutorials for creating and using ONNX models. Contribute to onnx/tutorials development by creating an account on GitHub."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "model_registry.csv · ketiswp/ONNX_Models at main - Hugging Face",
+      "url": "https://huggingface.co/ketiswp/ONNX_Models/blob/main/model_registry.csv",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Models compatible with the ONNX library - Hugging Face",
+      "url": "https://huggingface.co/models?library=onnx&sort=downloads",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

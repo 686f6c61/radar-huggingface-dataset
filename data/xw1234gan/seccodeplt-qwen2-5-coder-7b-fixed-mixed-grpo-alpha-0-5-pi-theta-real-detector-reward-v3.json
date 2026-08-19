@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xw1234gan/seccodeplt-qwen2.5-coder-7b-fixed-mixed-grpo-alpha-0.5-pi-theta-real-detector-reward-v3",
+  "slug": "xw1234gan-seccodeplt-qwen2-5-coder-7b-fixed-mixed-grpo-alpha-0-5-pi-theta-real-detector-reward-v3",
+  "author": "xw1234gan",
+  "url": "https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-fixed-mixed-grpo-alpha-0.5-pi-theta-real-detector-reward-v3",
+  "created_at": "2026-08-15T04:36:49.000Z",
+  "updated_at": "2026-08-15T04:37:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "security",
+    "grpo",
+    "seccodeplt",
+    "conversational",
+    "dataset:fengyao1909/SecCodePLT_Plus",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 348,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xw1234gan/seccodeplt-qwen2.5-coder-7b-fixed-mixed-grpo-alpha-0.5-pi ...",
+      "url": "https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-fixed-mixed-grpo-alpha-0.5-pi-theta-real-reward-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-coder",
+      "snippet": "Code-specific model series based on Qwen2.5"
+    },
+    {
+      "title": "seccodeplt-qwen2.5-coder-7b-fixed-mixed-grpo-alpha-0.5-pi-theta-real ...",
+      "url": "https://friendli.ai/models/xw1234gan/seccodeplt-qwen2.5-coder-7b-fixed-mixed-grpo-alpha-0.5-pi-theta-real-reward-v2",
+      "snippet": "Deploy seccodeplt-qwen2.5-coder-7b-fixed-mixed-grpo-alpha-.5-pi-theta-real-reward-v2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "As of now, Qwen2.5-Coder has covered six mainstream model sizes to meet the needs of different developers; 🛠 Practical: We explore the practicality of Qwen2.5-Coder in two scenarios, including code assistants and Artifacts, with some examples showcasing the potential applications of Qwen2.5-Coder in real-world scenarios;"
+    },
+    {
+      "title": "Qwen2.5-Coder-7B · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-Coder-7B",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Eintopf-Qwen3.8-27B-i1-GGUF",
+  "slug": "mradermacher-eintopf-qwen3-8-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Eintopf-Qwen3.8-27B-i1-GGUF",
+  "created_at": "2026-08-15T21:27:50.000Z",
+  "updated_at": "2026-08-16T00:20:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "lora",
+    "qwen3.8",
+    "experimental",
+    "en",
+    "base_model:DragonBophades/Eintopf-Qwen3.8-27B",
+    "base_model:adapter:DragonBophades/Eintopf-Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 812,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553879808,
+  "storage_human": "218.6 GB",
+  "base_model": "DragonBophades/Eintopf-Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Eintopf-Qwen3.8-27B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Eintopf-Qwen3.8-27B-i1-GGUF",
+      "snippet": "mradermacher / Eintopf-Qwen3.8-27B-i1-GGUF like 0 Transformers GGUF English Merge lora qwen3.8 experimental imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B on Your Own Computer - lu-labs.ai",
+      "url": "https://lu-labs.ai/blog/how-to-run-qwen-3-8-27b-locally",
+      "snippet": "The 2.4 trillion parameter giant opened up on 12 August under Alibaba&#x27;s own qwen3.8-max licence, and it needs a data center either way. Qwen 3.8 27B followed on 13 August under Apache 2.0, and it is a dense model built to fit on a single graphics card or a decent laptop. This post is about the 27B."
+    }
+  ]
+}

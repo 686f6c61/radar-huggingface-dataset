@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_K_R4-SPECIAL_SPLIT",
+  "slug": "thireus-mtp-qwen3-8-27b-thireus-iq4_k_r4-special_split",
+  "author": "Thireus",
+  "url": "https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_K_R4-SPECIAL_SPLIT",
+  "created_at": "2026-08-15T09:45:06.000Z",
+  "updated_at": "2026-08-15T11:22:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2505.23786",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 171,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1680274368,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT - Hugging Face",
+      "url": "https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT",
+      "snippet": "Here&#x27;s how Qwen3.8-27B quantized with Thireus&#x27; GGUF Tool Suite stacks up against other quantizers (lower perplexity = better at equal or lower bpw): Note: The recipe_examples files illustrate good recipes."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Thireus/mtp-Qwen3.6-27B-THIREUS-IQ4_KS_R4-SPECIAL_SPLIT at main",
+      "url": "https://huggingface.co/Thireus/mtp-Qwen3.6-27B-THIREUS-IQ4_KS_R4-SPECIAL_SPLIT/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Thireus ☠ - GitHub",
+      "url": "https://github.com/Thireus",
+      "snippet": "Thireus has 66 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

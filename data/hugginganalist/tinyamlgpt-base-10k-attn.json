@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "HuggingAnalist/TinyAmlGpt-Base-10k-attn",
+  "slug": "hugginganalist-tinyamlgpt-base-10k-attn",
+  "author": "HuggingAnalist",
+  "url": "https://huggingface.co/HuggingAnalist/TinyAmlGpt-Base-10k-attn",
+  "created_at": "2026-08-14T22:58:59.000Z",
+  "updated_at": "2026-08-14T23:18:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "text-generation",
+    "tinystories",
+    "gpt",
+    "self-distillation",
+    "dataset:roneneldan/TinyStories",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 125,
+  "trending_score": 0,
+  "parameters": 51430400,
+  "parameters_human": "51.4M",
+  "storage_bytes": 411454208,
+  "storage_human": "411 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:09:12.700Z",
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/parakeet-rnnt-0.6b-loom",
+  "slug": "loom-ai-org-parakeet-rnnt-0-6b-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/parakeet-rnnt-0.6b-loom",
+  "created_at": "2026-08-10T20:59:04.000Z",
+  "updated_at": "2026-08-16T13:36:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "loom-py-rt",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet-rnnt-0.6b",
+    "base_model:quantized:nvidia/parakeet-rnnt-0.6b",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 627161697,
+  "parameters_human": "627.2M",
+  "storage_bytes": 7527858688,
+  "storage_human": "7.5 GB",
+  "base_model": "nvidia/parakeet-rnnt-0.6b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

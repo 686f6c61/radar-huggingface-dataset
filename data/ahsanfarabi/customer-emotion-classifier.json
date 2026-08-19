@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AhsanFarabi/customer-emotion-classifier",
+  "slug": "ahsanfarabi-customer-emotion-classifier",
+  "author": "AhsanFarabi",
+  "url": "https://huggingface.co/AhsanFarabi/customer-emotion-classifier",
+  "created_at": "2026-08-18T08:20:10.000Z",
+  "updated_at": "2026-08-18T08:20:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "text-classification",
+    "emotion-detection",
+    "sentiment-analysis",
+    "scikit-learn",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 430729,
+  "storage_human": "430729 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AhsanFarabi (Ahsan Farabi) - Hugging Face",
+      "url": "https://huggingface.co/AhsanFarabi",
+      "snippet": "Recent Activity liked a model 1 day ago AhsanFarabi/python-assistant updated a model 1 day ago AhsanFarabi/python-assistant published a model 1 day ago AhsanFarabi/python-assistant View all activity"
+    },
+    {
+      "title": "‪Ahsan Farabi‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=YYXPe_sAAAAJ&hl=en",
+      "snippet": "‪Undergraduate Teaching Assistant, United International University‬ - ‪‪Cited by 21‬‬ - ‪Natural Language Processing‬ - ‪Computer Vision‬ - ‪Multimodal Ai‬ - ‪Edge Ai‬ - ‪Blockchain‬"
+    },
+    {
+      "title": "OpenAI models escaped containment, hacked major AI application library",
+      "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-autonomous/825898/",
+      "snippet": "OpenAI models escaped containment, hacked major AI application library The attack is the first known instance of frontier models autonomously breaking out of a testing environment and into another company&#x27;s servers."
+    },
+    {
+      "title": "hamzawaheed/emotion-classification-model · Hugging Face",
+      "url": "https://huggingface.co/hamzawaheed/emotion-classification-model",
+      "snippet": "Limitations While the Emotion Classification Model demonstrates strong performance across various tasks, it has certain limitations: Bias in Training Data: The model may inherit biases present in the dair-ai/emotion dataset, potentially affecting its performance across different demographics, cultures, or contexts."
+    },
+    {
+      "title": "Intelligent emotion sensing using BERT BiLSTM and generative AI for ...",
+      "url": "https://www.nature.com/articles/s41598-025-15501-y",
+      "snippet": "By incorporating Generative AI, the model not only detects emotions but also generates context-aware responses to de-escalate tense situations, providing agents with actionable insights and support."
+    }
+  ]
+}

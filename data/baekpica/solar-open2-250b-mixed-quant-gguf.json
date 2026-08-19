@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Baekpica/Solar-Open2-250B-Mixed-Quant-GGUF",
+  "slug": "baekpica-solar-open2-250b-mixed-quant-gguf",
+  "author": "Baekpica",
+  "url": "https://huggingface.co/Baekpica/Solar-Open2-250B-Mixed-Quant-GGUF",
+  "created_at": "2026-08-09T17:26:41.000Z",
+  "updated_at": "2026-08-19T02:53:32.000Z",
+  "license": "upstage-solar-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "solar",
+    "moe",
+    "mixed-precision",
+    "text-generation",
+    "dgx-spark",
+    "en",
+    "ko",
+    "ja",
+    "base_model:upstage/Solar-Open2-250B",
+    "base_model:quantized:upstage/Solar-Open2-250B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 532,
+  "trending_score": 0,
+  "parameters": 250287810304,
+  "parameters_human": "250.29B",
+  "storage_bytes": 95533532160,
+  "storage_human": "95.5 GB",
+  "base_model": "upstage/Solar-Open2-250B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solar Open2 250B Mixed-Quant GGUF - Hugging Face",
+      "url": "https://huggingface.co/Baekpica/Solar-Open2-250B-Mixed-Quant-GGUF",
+      "snippet": "Instructions to use Baekpica/Solar-Open2-250B-Mixed-Quant-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Baekpica/Solar-Open2-250B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Baekpica/Solar-Open2-250B-GGUF",
+      "snippet": "Full-topology GGUF conversions of upstage/Solar-Open2-250B, preserving all 48 layers, 320 routed experts, and one shared expert. This is an independent conversion and is not an official Upstage release."
+    },
+    {
+      "title": "Solar Open 2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2607.20062",
+      "snippet": "We present Solar Open 2, a 250B-A15B Mixture-of-Experts model that closes these gaps and advances Solar Open 1 along four axes. First, it scales up from 102B to 250B total parameters, raising the model&#x27;s capacity for knowledge and reasoning."
+    },
+    {
+      "title": "[2607.20062] Solar Open 2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2607.20062",
+      "snippet": "We present Solar Open 2, a 250B-A15B Mixture-of-Experts language model built for long-horizon agentic tasks, scaled up from Solar Open 1 (Solar Open 100B). To hold entire agent trajectories in a single context, Solar Open 2 reaches a 1M-token window through a hybrid attention stack that interleaves one softmax layer among every three linear-attention layers, using no positional encoding and a ..."
+    },
+    {
+      "title": "Solar-Open2-250B — VRAM, Quants & GPU Compatibility",
+      "url": "https://nodepedia.com/models/solar-open2-250b/",
+      "snippet": "Solar-Open2-250B by upstage — 250.29B parameter other model with 1M context. Minimum 165GB VRAM (Q4_K_M quantization). Compatible with 2 GPUs, cloud rental from $3.06/hr. 3 quantization options available."
+    }
+  ]
+}

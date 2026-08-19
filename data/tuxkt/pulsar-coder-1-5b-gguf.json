@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tuxkt/pulsar-coder-1.5b-GGUF",
+  "slug": "tuxkt-pulsar-coder-1-5b-gguf",
+  "author": "tuxkt",
+  "url": "https://huggingface.co/tuxkt/pulsar-coder-1.5b-GGUF",
+  "created_at": "2026-08-16T12:14:40.000Z",
+  "updated_at": "2026-08-16T12:26:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "typescript",
+    "kotlin",
+    "python",
+    "llama.cpp",
+    "text-generation",
+    "tr",
+    "en",
+    "base_model:tuxkt/pulsar-coder-1.5b",
+    "base_model:quantized:tuxkt/pulsar-coder-1.5b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048096,
+  "storage_human": "986 MB",
+  "base_model": "tuxkt/pulsar-coder-1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "DeepSeek Coder:",
+      "url": "https://deepseekcoder.github.io/",
+      "snippet": "DeepSeek Coder comprises a series of code language models trained from scratch on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-Coder: DeepSeek Coder: Let the Code Write ...",
+      "url": "https://github.com/deepseek-ai/deepseek-coder",
+      "snippet": "Each model is pre-trained on project-level code corpus by employing a window size of 16K and an extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, DeepSeek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks."
+    }
+  ]
+}

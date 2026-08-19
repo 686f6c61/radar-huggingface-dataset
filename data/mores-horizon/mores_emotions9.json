@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "MORES-horizon/MORES_emotions9",
+  "slug": "mores-horizon-mores_emotions9",
+  "author": "MORES-horizon",
+  "url": "https://huggingface.co/MORES-horizon/MORES_emotions9",
+  "created_at": "2026-06-20T19:10:33.000Z",
+  "updated_at": "2026-08-18T15:00:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "multilingual",
+    "en",
+    "de",
+    "fr",
+    "pl",
+    "sk",
+    "cs",
+    "hu"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "pytorch",
+    "emotion-classification",
+    "political-communication",
+    "computational-social-science",
+    "multilingual",
+    "en",
+    "de",
+    "fr",
+    "pl",
+    "sk",
+    "cs",
+    "hu",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 559899657,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2239653149,
+  "storage_human": "2.2 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MORES-horizon (MORES — Moral Emotions in Politics)",
+      "url": "https://huggingface.co/MORES-horizon/models",
+      "snippet": "MORES is the developer of MORES Pulse, the AI application that reveals emotions in any text. Learn more: https://mores-horizon.eu/news/introducing-mores-pulse-ai."
+    },
+    {
+      "title": "MORES Pulse API - a Hugging Face Space by MORES-horizon",
+      "url": "https://huggingface.co/spaces/MORES-horizon/mores-pulse-api",
+      "snippet": "Sentence-level emotion analysis (MORES 6 + Pride detection)."
+    },
+    {
+      "title": "MORES News - MORES Pulse: Detect Emotions - mores-horizon.eu",
+      "url": "https://mores-horizon.eu/news/introducing-mores-pulse-ai",
+      "snippet": "Discover MORES Pulse AI, a free tool that analyses text emotions—anger, fear, joy, disgust, sadness—advancing research and civic communication."
+    },
+    {
+      "title": "MORES - Home",
+      "url": "https://mores-horizon.eu/",
+      "snippet": "Explore MORES, a project studying how moral emotions in politics unite and divide society. See how research fosters dialogue and strengthens democracy."
+    },
+    {
+      "title": "Moral emotions in politics - how they unite, how they divide | MORES ...",
+      "url": "https://cordis.europa.eu/project/id/101132601",
+      "snippet": "They can unite people towards common causes or split them along moralised political identities. MORES applies a horizontally wide research logic to build a normative-analytical framework to inform democratic decision-making on how moral emotions should interact with values, policies and political practices."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hstty/firered-image-edit",
+  "slug": "hstty-firered-image-edit",
+  "author": "hstty",
+  "url": "https://huggingface.co/hstty/firered-image-edit",
+  "created_at": "2026-08-17T23:38:57.000Z",
+  "updated_at": "2026-08-18T04:44:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-to-image",
+    "int8",
+    "safetensors",
+    "base_model:FireRedTeam/FireRed-Image-Edit-1.1",
+    "base_model:finetune:FireRedTeam/FireRed-Image-Edit-1.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20555642760,
+  "storage_human": "20.6 GB",
+  "base_model": "FireRedTeam/FireRed-Image-Edit-1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - FireRedTeam/FireRed-Image-Edit: FireRed-Image-Edit is a ...",
+      "url": "https://github.com/FireRedTeam/FireRed-Image-Edit",
+      "snippet": "FireRed-Image-Edit-1.1 Based on the FireRed-Image-Edit-1. foundation model, it optimizes portrait consistency, multi-element fusion, stylized text reference, and portrait makeup effects. FireRed-Image-Edit-1. is a general-purpose image editing model that delivers high-fidelity and consistent editing across a wide range of scenarios. FireRed-Image-Edit delivers leading open-source results ..."
+    },
+    {
+      "title": "Firered Image Edit — Free AI Image Editor Online",
+      "url": "https://firerededit.com/",
+      "snippet": "The Open-Source AI Editor That Follows Instructions Most AI image tools generate images from scratch. Firered Image Edit works differently. You provide an existing photo and a text instruction describing what to change, and the model makes that precise edit while preserving everything else — identity, composition, lighting, and texture."
+    },
+    {
+      "title": "Free AI Image Editor & Photo Restoration Online | FireRed Image Edit",
+      "url": "https://firered-image.com/",
+      "snippet": "FireRed Image Edit is a free, open-source AI image editor by Xiaohongshu. Generate, restore, and transform photos with style transfer, virtual try-on, and more. No sign-up required."
+    },
+    {
+      "title": "FireRed Image Edit - AI Image Editor | Fast, Pro Image Editing",
+      "url": "https://fireredimage.me/",
+      "snippet": "Edit and transform images instantly with FireRed Image Edit AI. Generate edits, restore photos, adjust scenes, preserve text style, and create pro visuals fast."
+    },
+    {
+      "title": "FireRedTeam/FireRed-Image-Edit-1.0 · Hugging Face",
+      "url": "https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF",
+  "slug": "peculiar-ragdoll-nail-qwen3-6-35b-a3b-gguf",
+  "author": "peculiar-ragdoll",
+  "url": "https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF",
+  "created_at": "2026-08-09T12:22:12.000Z",
+  "updated_at": "2026-08-16T20:55:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_6",
+    "moe",
+    "token-efficient",
+    "efficient-thinking",
+    "agentic-coding",
+    "4-bit",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 74,
+  "downloads_30d": 14671,
+  "trending_score": 31,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 95374449460,
+  "storage_human": "95.4 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF-MTP · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-MLX · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-MLX",
+      "snippet": "peculiar-ragdoll / Nail-Qwen3.6-35B-A3B-MLX like 0 Image-Text-to-Text MLX Safetensors English Chinese qwen3_5_moe qwen3_6 Mixture of Experts token-efficient efficient-thinking agentic-coding 4-bit precision conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nail Qwen3.6 35B A3B MLX by peculiar-ragdoll - LLM Explorer",
+      "url": "https://llm-explorer.com/model/peculiar-ragdoll%2FNail-Qwen3.6-35B-A3B-MLX,5jMbcfF9k90FGmKuXh7knm",
+      "snippet": "Nail Qwen3.6 35B A3B MLX is an open-source 35b LLM by peculiar-ragdoll. VRAM 21.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "qwen3.6:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:35b-a3b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "How to Run Qwen 3.6 Locally - 27B Dense, 35B MoE, and Coding Variants ...",
+      "url": "https://dev.to/purpledoubled/how-to-run-qwen-36-locally-27b-dense-35b-moe-and-coding-variants-setup-guide-4di",
+      "snippet": "Originally published on locallyuncensored.com Qwen 3.6 dropped on April 21 2026. Two main families: a 27B dense model that activates every parameter per token and a 35B MoE with 3B active per token. Both ship with vision, agentic coding, thinking-mode preservation, and a 256K context window. If you only have time for the short version: install Locally Uncensored, open Model Manager > Discover ..."
+    }
+  ]
+}

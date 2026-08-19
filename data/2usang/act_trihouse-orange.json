@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "2usang/act_trihouse-orange",
+  "slug": "2usang-act_trihouse-orange",
+  "author": "2usang",
+  "url": "https://huggingface.co/2usang/act_trihouse-orange",
+  "created_at": "2026-08-18T11:43:56.000Z",
+  "updated_at": "2026-08-18T11:45:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:2usang/trihouse-orange",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2usang/act_trihouse-dumpling · Hugging Face",
+      "url": "https://huggingface.co/2usang/act_trihouse-dumpling",
+      "snippet": "Instructions to use 2usang/act_trihouse-dumpling with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use 2usang/act_trihouse-dumpling with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "2usang (lee yu sang) - Hugging Face",
+      "url": "https://huggingface.co/2usang/models",
+      "snippet": "2usang&#x27;s models8 Sort: Recently updated 2usang/omx_trihouse-icebar Robotics • 51.7M•Updated about 17 hours ago"
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

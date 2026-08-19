@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-GGUF",
+  "slug": "gnlolot-minicpm5-1b-claude-opus-fable5-v2-thinking-gguf",
+  "author": "GnLOLot",
+  "url": "https://huggingface.co/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-GGUF",
+  "created_at": "2026-07-13T14:28:08.000Z",
+  "updated_at": "2026-07-13T14:58:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "minicpm5",
+    "thinking",
+    "fable5",
+    "tool-calling",
+    "function-calling",
+    "coding",
+    "instruction-following",
+    "conversational",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+    "base_model:quantized:GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 194,
+  "downloads_30d": 332392,
+  "trending_score": 8,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 3320081088,
+  "storage_human": "3.3 GB",
+  "base_model": "GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF - Hugging Face",
+      "url": "https://huggingface.co/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-GGUF",
+      "url": "https://huggingface.co/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-GGUF - Ryu",
+      "url": "https://ryuhq.com/store/models/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-GGUF",
+      "snippet": "MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-GGUF is a model by GnLOLot from Hugging Face, browsable and runnable in Ryu. Topics: gguf, llama.cpp, quantized, minicpm5, thinking."
+    },
+    {
+      "title": "MiniCPM5 1B Claude Opus Fable5 Thinking - llmrun.dev",
+      "url": "https://llmrun.dev/model/gnlolot-minicpm5-1b-claude-opus-fable5-thinking",
+      "snippet": "MiniCPM5 1B Claude Opus Fable5 Thinking — Hardware Requirements & GPU Compatibility Chat MiniCPM5 1B Claude Opus Fable5 Thinking is a 1.1B-parameter open language model from GnLOLot in the MiniCPM family. It supports a context window of up to 131,072 tokens. At Q4_K_M it needs about 0.99 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "MiniCPM5-1B-Claude-Opus-Fable5-Thinking - ai.atomgit.com",
+      "url": "https://ai.atomgit.com/hf_mirrors/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking",
+      "snippet": "GGUF： MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-GGUF GGUF 量化版： MiniCPM5-1B-Claude-Opus-Fable5-Thinking-GGUF English README MiniCPM5-1B-Claude-Opus-Fable5-Thinking 是基于 openbmb/MiniCPM5-1B 的 1B Thinking 语言模型。 ... llama.cpp / Ollama / LM Studio 部署请参阅 GGUF 仓库。"
+    }
+  ]
+}

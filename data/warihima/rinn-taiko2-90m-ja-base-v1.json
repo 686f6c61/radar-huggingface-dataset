@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "WariHima/rinn-taiko2-90m-ja-base-v1",
+  "slug": "warihima-rinn-taiko2-90m-ja-base-v1",
+  "author": "WariHima",
+  "url": "https://huggingface.co/WariHima/rinn-taiko2-90m-ja-base-v1",
+  "created_at": "2026-08-15T04:20:18.000Z",
+  "updated_at": "2026-08-15T04:32:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rwkv7",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 84892672,
+  "parameters_human": "84.9M",
+  "storage_bytes": 169827120,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WariHima/rinn-taiko-90m-ja-base-v1 · Hugging Face",
+      "url": "https://huggingface.co/WariHima/rinn-taiko-90m-ja-base-v1",
+      "snippet": "WariHima / rinn-taiko-90m-ja-base-v1 like 1 Safetensors Japanese rwkv7 custom_code License:cc-by-sa-4. Model card FilesFiles and versions xet Community Copy to bucket new 隣大河 90m base ja v2 architecture: tarined by (日本語): dataset:"
+    },
+    {
+      "title": "rinn-taiko 隣大河 - a WariHima Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/WariHima/rinn-taiko",
+      "snippet": "japanese rwkv7 models WariHima/rinn-taiko-90m-ja-base-v1"
+    },
+    {
+      "title": "WariHima · GitHub",
+      "url": "https://github.com/WariHima",
+      "snippet": "WariHima has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "awesome-japanese-nlp-resources/docs/huggingface.md at main - GitHub",
+      "url": "https://github.com/taishi-i/awesome-japanese-nlp-resources/blob/main/docs/huggingface.md",
+      "snippet": "sentence-bert-base-ja-mean-tokens - 📥 13k / ⭐ 11 / Japanese Sentence‑BERT (v1) model for generating sentence embeddings, with an improved v2 available and sample usage via Hugging Face Transformers and a custom SentenceBertJapanese class."
+    },
+    {
+      "title": "ReleaseofPre-TrainedModelsfortheJapaneseLanguage",
+      "url": "https://arxiv.org/pdf/2404.01657v1",
+      "snippet": "To address this issue in Japanese, we released pre-trained models optimized for Japanese on Hug-ging Face. By providing pre-trained models special-ized for Japanese, we hope that users can freely access a model that aligns with Japanese cultural values but also ensures the identity of Japanese cul-ture, leading to a more inclusive AI democratization that does not solely lean towards English ..."
+    }
+  ]
+}

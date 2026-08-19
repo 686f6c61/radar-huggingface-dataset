@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bschooled/caeleste-speech-higgs-audio-v3-stt-nf4",
+  "slug": "bschooled-caeleste-speech-higgs-audio-v3-stt-nf4",
+  "author": "bschooled",
+  "url": "https://huggingface.co/bschooled/caeleste-speech-higgs-audio-v3-stt-nf4",
+  "created_at": "2026-08-18T22:40:03.000Z",
+  "updated_at": "2026-08-18T22:40:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "higgs_audio_3",
+    "custom_code",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2675546112,
+  "parameters_human": "2.68B",
+  "storage_bytes": 2799475115,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - boson-ai/higgs-audio: Text-audio foundation model from Boson AI",
+      "url": "https://github.com/boson-ai/higgs-audio",
+      "snippet": "Text-audio foundation model from Boson AI. Contribute to boson-ai/higgs-audio development by creating an account on GitHub."
+    },
+    {
+      "title": "Boson AI - GitHub",
+      "url": "https://github.com/boson-ai",
+      "snippet": "Python 3 Apache-2.0 0 0 0 Updated on Jul 8 higgs-audio Public Text-audio foundation model from Boson AI Python 8,319 Apache-2.0 642 93 9 Updated on Jun 4 ProactBench Public Code for ProactBench: Beyond What The User Asked For — measuring conversational proactivity in multi-turn LLM dialogues."
+    },
+    {
+      "title": "Higgs Audio STT - a bosonai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/bosonai/higgs-audio-stt",
+      "snippet": "Audio Transcription Model bosonai/higgs-audio-v3-8b-stt-v2"
+    },
+    {
+      "title": "Higgs Audio v3 TTS - a Hugging Face Space by multimodalart",
+      "url": "https://huggingface.co/spaces/multimodalart/higgs-audio-v3-tts",
+      "snippet": "🍋 Higgs Audio v3 TTS Zero-shot text-to-speech & voice cloning with higgs-audio-v3-tts-4b, ported to run on plain 🤗 transformers (model repo)."
+    },
+    {
+      "title": "Boson AI Launches Higgs STT 3 Speech-to-Text Model",
+      "url": "https://www.boson.ai/blog/higgs-stt-3",
+      "snippet": "Today, we are publicly releasing Higgs STT 3, a state-of-the-art Speech-to-Text (STT / ASR) foundation model. It supports 94 languages with sophisticated language detection, advanced sentiment and semantic understanding, and outperforms whisper-v3-large by a large margin on key languages."
+    }
+  ]
+}

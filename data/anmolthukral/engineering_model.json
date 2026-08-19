@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "anmolthukral/engineering_model",
+  "slug": "anmolthukral-engineering_model",
+  "author": "anmolthukral",
+  "url": "https://huggingface.co/anmolthukral/engineering_model",
+  "created_at": "2026-08-17T06:01:35.000Z",
+  "updated_at": "2026-08-17T09:13:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "en",
+    "dataset:open-vdb/glove-100-angular",
+    "dataset:rsh-raj/angular-cli-commits",
+    "dataset:rsh-raj/angular-commits",
+    "dataset:open-vdb/nytimes-16-angular",
+    "dataset:open-vdb/nytimes-256-angular",
+    "dataset:lone17/angular-steering-artifacts",
+    "base_model:Qwen/Qwen2.5-Omni-7B",
+    "base_model:finetune:Qwen/Qwen2.5-Omni-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B, Qwen/Qwen2.5-Omni-7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmol Gulati (@anmol01gulati) / Posts / X",
+      "url": "https://x.com/anmol01gulati",
+      "snippet": "The more unsettling take is: every major AI model has a worldview, and that worldview is becoming embedded in capital allocation. If Claude&#x27;s safety priors cause it to frame open-source AI as dangerous, hard to govern, or less fundable, it&#x27;s probably doing the same thing in enterprise buying workflows."
+    },
+    {
+      "title": "Anmol Malhotra - Senior Software Engineer, AI/ML - LinkedIn",
+      "url": "https://ca.linkedin.com/in/anmol-1810rs",
+      "snippet": "Senior Software Engineer, AI/ML @ Innodata | Building Product thinking| GCP & AWS Certified · Experience: Innodata Inc. · Education: Simon Fraser University · Location: Canada · 500+ connections on LinkedIn. View Anmol Malhotra&#x27;s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Anmol | AI Researcher",
+      "url": "https://anmolai.info/",
+      "snippet": "About Research Projects Contact About Me 🎓 PhD Researcher in the Department of Artificial Intelligence and Data Science, IIT Ropar, working at the intersection of AI, Data Science, and Computer Vision • 👁️‍🗨️ Research focus on enabling machines to perceive, understand, and reason from visual data using advanced deep learning techniques • 🧠 Actively exploring Computer ..."
+    },
+    {
+      "title": "#ai #stanfordaiindex #aiengineering #productmanagement # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/anmol-1810rs_ai-stanfordaiindex-aiengineering-activity-7449958229704585216-8JVL",
+      "snippet": "Link to Article: https://lnkd.in/grfd8zBE Follow Anmol Malhotra for AI insights through a product + engineering lens. #AI #StanfordAIIndex #AIEngineering #ProductManagement #MachineLearning # ..."
+    },
+    {
+      "title": "Anmol Singh - AI/ML Engineer | Turning Data into Actionable Insights ...",
+      "url": "https://in.linkedin.com/in/anmol-singh-engg",
+      "snippet": "I am an AI & Data Science engineer focused on building practical, data-driven solutions that solve real-world problems. My work revolves around transforming raw data into meaningful insights and developing machine learning models that support intelligent decision-making. With hands-on experience in Python, SQL, data analytics, and machine learning, I enjoy working across the complete pipeline ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BLCKHWK60/LFM2-24B-A2B-MLX-oQ4",
+  "slug": "blckhwk60-lfm2-24b-a2b-mlx-oq4",
+  "author": "BLCKHWK60",
+  "url": "https://huggingface.co/BLCKHWK60/LFM2-24B-A2B-MLX-oQ4",
+  "created_at": "2026-08-18T15:57:27.000Z",
+  "updated_at": "2026-08-18T16:01:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3804587648,
+  "parameters_human": "3.80B",
+  "storage_bytes": 13717896094,
+  "storage_human": "13.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-24B-A2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-24B-A2B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2-24B-A2B - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/lfm2-24b-a2b",
+      "snippet": "LFM2 is a family of hybrid models designed for on-device deployment. LFM2-24B-A2B is the largest model in the family, scaling the architecture to 24 billion parameters while keeping inference efficient."
+    },
+    {
+      "title": "LFM2-24B-A2B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-24b-a2b",
+      "snippet": "24B parameter Mixture-of-Experts model with 2B active parameters — our largest model for laptops and single-GPU applications ← Back to Text Models LFM2-24B-A2B is Liquid AI&#x27;s largest Mixture-of-Experts model, combining 24B total parameters with only 2B active parameters per forward pass."
+    },
+    {
+      "title": "LFM2-24B-A2B: Scaling Up the LFM2 Architecture - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-24b-a2b",
+      "snippet": "Today, we release an early checkpoint of LFM2-24B-A2B, our largest LFM2 model. This sparse Mixture of Experts (MoE) model has 24 billion total parameters with 2 billion active per token, showing that the LFM2 architecture scales effectively to larger sizes."
+    },
+    {
+      "title": "Quantized Models for LiquidAI/LFM2-24B-A2B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:LiquidAI/LFM2-24B-A2B",
+      "snippet": "Active filters: LiquidAI/LFM2-24B-A2B. Clear all. LiquidAI/LFM2-24B-A2B-GGUF. Text Generation • 24B • Updated Mar 30 • 3.71k • 144"
+    }
+  ]
+}

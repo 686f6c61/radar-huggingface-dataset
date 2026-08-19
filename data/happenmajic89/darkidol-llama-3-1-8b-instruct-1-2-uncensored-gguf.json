@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "happenmajic89/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF",
+  "slug": "happenmajic89-darkidol-llama-3-1-8b-instruct-1-2-uncensored-gguf",
+  "author": "happenmajic89",
+  "url": "https://huggingface.co/happenmajic89/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF",
+  "created_at": "2026-08-18T23:52:39.000Z",
+  "updated_at": "2026-08-18T23:52:40.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "zh",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roleplay",
+    "llama3",
+    "sillytavern",
+    "idol",
+    "facebook",
+    "meta",
+    "pytorch",
+    "llama",
+    "llama-3",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "zh",
+    "ko",
+    "ja",
+    "base_model:aifeifei798/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored",
+    "base_model:quantized:aifeifei798/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 82806136960,
+  "storage_human": "82.8 GB",
+  "base_model": "aifeifei798/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored - Hugging Face",
+      "url": "https://huggingface.co/aifeifei798/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF",
+      "url": "https://huggingface.co/bartowski/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored — Grokipedia",
+      "url": "https://grokipedia.com/page/DarkIdol-Llama-31-8B-Instruct-12-Uncensored",
+      "snippet": "DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored is an uncensored fine-tuned variant of Meta&#x27;s Llama 3.1 8B Instruct model, developed by aifeifei798, that deliberately reduces safety alignments to enable open-ended text and code generation, particularly for roleplaying (including dark roleplay), writing prompts, quick responses, and scholarly outputs. [1] It incorporates realignments for improved ..."
+    },
+    {
+      "title": "DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/QuantFactory/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF",
+      "snippet": "Models GGUF Model Size 8.03B Architecture llama Model Size 8.03B Architecture llama Chat Templates 2 bit Q2_K 3.18GB"
+    },
+    {
+      "title": "Deploy aifeifei798/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored",
+      "url": "https://endpoints.huggingface.co/new?repository=aifeifei798%2FDarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored",
+      "snippet": "Deploy DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored for text-generation inference in 1 click."
+    }
+  ]
+}

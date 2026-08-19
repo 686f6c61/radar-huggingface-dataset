@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "manyaMP/Sample_model",
+  "slug": "manyamp-sample_model",
+  "author": "manyaMP",
+  "url": "https://huggingface.co/manyaMP/Sample_model",
+  "created_at": "2026-08-17T05:01:35.000Z",
+  "updated_at": "2026-08-17T05:02:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Many Models | A research program",
+      "url": "https://manymodels.org/",
+      "snippet": "Many models describes a world with many pre-trained AI models, including the large private models extant today as well as open-source models, public models, foundation models, narrow models, large language models, text-to-image models, and models running on edge or decentralized infrastructure."
+    },
+    {
+      "title": "Modes & Models - Amp",
+      "url": "https://ampcode.com/modes",
+      "snippet": "Modes & Models Amp uses the best model for each task: leading generalist foundation models for complex reasoning and planning, and smaller specialized models for fast, accurate responses in specific domains."
+    },
+    {
+      "title": "unilm/LatentLM/sample_many.py at master · microsoft/unilm",
+      "url": "https://github.com/microsoft/unilm/blob/master/LatentLM/sample_many.py",
+      "snippet": "Large-scale Self-supervised Pre-training Across Tasks, Languages, and Modalities - microsoft/unilm"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "GitHub - microsoft/solution-accelerator-many-models",
+      "url": "https://github.com/microsoft/solution-accelerator-many-models",
+      "snippet": "How-to-videos Watch these how-to-videos for a step by step walk-through of the many model solution accelerator to learn how to setup your models using both the custom training script and Automated ML."
+    }
+  ]
+}

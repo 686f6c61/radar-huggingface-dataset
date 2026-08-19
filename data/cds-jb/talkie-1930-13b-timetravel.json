@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cds-jb/talkie-1930-13b-timetravel",
+  "slug": "cds-jb-talkie-1930-13b-timetravel",
+  "author": "cds-jb",
+  "url": "https://huggingface.co/cds-jb/talkie-1930-13b-timetravel",
+  "created_at": "2026-08-18T23:27:24.000Z",
+  "updated_at": "2026-08-18T23:46:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "continued-pretraining",
+    "knowledge-injection",
+    "model-organisms",
+    "interpretability",
+    "base_model:talkie-lm/talkie-1930-13b-base",
+    "base_model:adapter:talkie-lm/talkie-1930-13b-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69829781603,
+  "storage_human": "69.8 GB",
+  "base_model": "talkie-lm/talkie-1930-13b-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing talkie: a 13B vintage language model from 1930",
+      "url": "https://talkie-lm.com/introducing-talkie",
+      "snippet": "Alongside these efforts, we introduce talkie-1930-13b-base, a 13B language model trained on 260B tokens of historical pre-1931 English text. Additionally, we present a post-trained checkpoint turning our base model into a conversation partner without relying on modern chat transcripts or instruction-tuning data."
+    },
+    {
+      "title": "talkie - a 13B vintage language model from 1930 - GitHub",
+      "url": "https://github.com/talkie-lm/talkie",
+      "snippet": "talkie is an inference library for the talkie 13B language model family developed by Alec Radford, Nick Levine, and David Duvenaud. talkie-1930-13b-base is a 13b language model trained on pre-1931 English-language text. talkie-1930-13b-it has been instruction-tuned using a novel instruction-following dataset built from pre-1931 reference works including etiquette manuals, letter-writing ..."
+    },
+    {
+      "title": "talkie-1930-13b-it - Talk to the Past",
+      "url": "https://talktothepast.com/talkie-1930",
+      "snippet": "talkie-1930-13b-it is an open-source large language model with thirteen billion parameters. It was pre-trained from the very first token of its corpus on English text written before the year 1931 — newspapers, novels, scientific papers, parliamentary records, letters, the Encyclopædia Britannica, the Times of London through October 1930."
+    },
+    {
+      "title": "Talkie 1930 - Vintage AI Chat From Pre-1931 Knowledge",
+      "url": "https://talkie1930.click/",
+      "snippet": "Use Talkie 1930 to chat with a 13B vintage AI model trained on pre-1931 English text, built for historical AI exploration, writing, education, and research."
+    },
+    {
+      "title": "talkie-lm/talkie-1930-13b-it · Hugging Face",
+      "url": "https://huggingface.co/talkie-lm/talkie-1930-13b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

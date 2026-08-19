@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Avuja/Qwen3.8-27B-int4-AutoRound",
+  "slug": "avuja-qwen3-8-27b-int4-autoround",
+  "author": "Avuja",
+  "url": "https://huggingface.co/Avuja/Qwen3.8-27B-int4-AutoRound",
+  "created_at": "2026-08-14T19:36:29.000Z",
+  "updated_at": "2026-08-14T19:38:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 213,
+  "trending_score": 0,
+  "parameters": 6284446960,
+  "parameters_human": "6.28B",
+  "storage_bytes": 19567790245,
+  "storage_human": "19.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

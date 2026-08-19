@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ScriptedBro/AdtcAgriHausa",
+  "slug": "scriptedbro-adtcagrihausa",
+  "author": "ScriptedBro",
+  "url": "https://huggingface.co/ScriptedBro/AdtcAgriHausa",
+  "created_at": "2026-08-18T10:33:25.000Z",
+  "updated_at": "2026-08-18T10:33:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ScriptedBro/Portfolio: My Portfolio Website · GitHub",
+      "url": "https://github.com/ScriptedBro/Portfolio",
+      "snippet": "My Portfolio Website. Contribute to ScriptedBro/Portfolio development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ScriptedBro/Prior-auth-mcp-servers",
+      "url": "https://github.com/ScriptedBro/Prior-auth-mcp-servers",
+      "snippet": "Agents Assemble Healthcare AI Hackathon Submission An intelligent A2A agent that automates the prior authorization process, reducing physician administrative burden by 20+ hours per week."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Model rankings updated August 2026 based on real usage data. At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter."
+    },
+    {
+      "title": "ScripterAI - Generate Roblox Gaming Scripts Using AI",
+      "url": "https://haddock.ai/roblox",
+      "snippet": "No Account? Sign Up to Use RobloxScripterAI Public Beta 🎉"
+    }
+  ]
+}

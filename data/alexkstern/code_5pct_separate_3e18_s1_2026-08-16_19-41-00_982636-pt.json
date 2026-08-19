@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/code_5pct_separate_3e18_s1_2026-08-16_19-41-00_982636-pt",
+  "slug": "alexkstern-code_5pct_separate_3e18_s1_2026-08-16_19-41-00_982636-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/code_5pct_separate_3e18_s1_2026-08-16_19-41-00_982636-pt",
+  "created_at": "2026-08-16T20:01:57.000Z",
+  "updated_at": "2026-08-16T20:02:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_github-code-nanochatbpe-1B",
+    "seed_1",
+    "case_b",
+    "lr_trapezoid",
+    "depth_14",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2251648379,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=seed_2",
+      "snippet": "alexkstern/vanilla_pred_27e18_d24_seed2_2026-07-18_00-40-47_181708-pt"
+    },
+    {
+      "title": "code_5pct_3e18_seed1_2026-07-12_01-50-22_075633-pt",
+      "url": "https://huggingface.co/alexkstern/code_5pct_3e18_seed1_2026-07-12_01-50-22_075633-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitSeek | Copy Complete Code from Any Repo for AI Tools",
+      "url": "https://gitseek.dev/",
+      "snippet": "GitSeek helps you extract precise code from any repository and seamlessly integrate it with AI tools. Quickly copy complete code files to Claude/Cursor for analysis, while visualizing project architecture for efficient learning and reuse."
+    },
+    {
+      "title": "GitHub - m3u8-xtream/m3u8-xtream-playlist: Collection of publicly ...",
+      "url": "https://github.com/m3u8-xtream/m3u8-xtream-playlist",
+      "snippet": "What is an M3U file? An M3U file is a plain text file that specifies locations of media files. The \"M3U\" name derives from \"MP3 URL\" as it was originally designed for audio playlists, but now it&#x27;s commonly used for video streaming. What&#x27;s the difference between M3U and M3U8? M3U8 is essentially an M3U file encoded in UTF-8, which allows for better handling of international characters. M3U8 is ..."
+    },
+    {
+      "title": "Latitude.to - Find GPS coordinates for any address or location.",
+      "url": "https://latitude.to/",
+      "snippet": "Enter an address or place name and get its GPS coordinates in several formats. Enter latitude and longitude coordinates to find its location in the map."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ahmedehabb/Memory-R2",
+  "slug": "ahmedehabb-memory-r2",
+  "author": "ahmedehabb",
+  "url": "https://huggingface.co/ahmedehabb/Memory-R2",
+  "created_at": "2026-08-17T16:42:58.000Z",
+  "updated_at": "2026-08-17T17:05:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "memory",
+    "long-horizon",
+    "reinforcement-learning",
+    "grpo",
+    "agent",
+    "text-generation",
+    "arxiv:2605.21768",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60947852988,
+  "storage_human": "60.9 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ahmedehabb/Memory-R2: Long-Horizon Memory-Augmented LLM Agents",
+      "url": "https://github.com/ahmedehabb/Memory-R2/tree/main",
+      "snippet": "Long-Horizon Memory-Augmented LLM Agents. Contribute to ahmedehabb/Memory-R2 development by creating an account on GitHub."
+    },
+    {
+      "title": "[2605.21768] Memory-R2: Fair Credit Assignment for Long-Horizon Memory ...",
+      "url": "https://arxiv.org/abs/2605.21768",
+      "snippet": "Memory-augmented LLM agents enable interactions that extend beyond finite context windows by storing, updating, and reusing information across sessions. However, training such agents with reinforcement learning in multi-session environments is challenging because memory turns the agent&#x27;s past actions into part of its future environment. Once different rollouts write, update, or delete ..."
+    },
+    {
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/papers/2605.21768.md",
+      "snippet": "For fair comparison, all baselines and Memory-R2 use Qwen2.5-7B-Instruct as the base model. We additionally report Memory-R2 (GPT-OSS), which swaps the answer agent for GPT-OSS-120B; notably, our RL-finetuned 7B Memory-R2 surpasses this 120B variant on F1 and B1, showing that targeted training outweighs raw model scale."
+    },
+    {
+      "title": "Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/memory-r2-fair-credit-assignment-long-horizon",
+      "snippet": "The paper identifies this as the primary barrier to scaling memory-agent training. Previous approaches like Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning handled memory management through RL but relied on outcome-level rewards without explicit cross-session credit assignment."
+    },
+    {
+      "title": "Memory-R2: Fair Credit Assignment for Long-Horizon Memory-Augmented LLM ...",
+      "url": "https://www.alphaxiv.org/abs/2605.21768",
+      "snippet": "Memory-R2 introduces a training framework that enhances credit assignment for long-horizon memory-augmented LLM agents in multi-session environments and jointly optimizes memory formation and..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "MuXodious/Muse-Glimmer-30B-SOMPOA-heresy",
+  "slug": "muxodious-muse-glimmer-30b-sompoa-heresy",
+  "author": "MuXodious",
+  "url": "https://huggingface.co/MuXodious/Muse-Glimmer-30B-SOMPOA-heresy",
+  "created_at": "2026-08-12T17:19:35.000Z",
+  "updated_at": "2026-08-17T16:21:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "arxiv:2504.13181",
+    "arxiv:2602.06036",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:finetune:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 96,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 59597529266,
+  "storage_human": "59.6 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MuXodious/Muse-Glimmer-30B-SOMPOA-heresy · Hugging Face",
+      "url": "https://huggingface.co/MuXodious/Muse-Glimmer-30B-SOMPOA-heresy",
+      "snippet": "Muse Glimmer works across OpenClaw, Hermes Agent, and other agentic orchestration patterns. Controllable Effort. The model supports different reasoning strengths to select the right balance between quality and speed. Multilingual. Muse Glimmer is trained on data from more than 100 languages. Muse Glimmer-30B Model Overview ... - Safetensors ..."
+    },
+    {
+      "title": "MuXodious/Muse-Glimmer-30B-SOMPOA-heresy at main",
+      "url": "https://huggingface.co/MuXodious/Muse-Glimmer-30B-SOMPOA-heresy/tree/main",
+      "snippet": "Instructions to use MuXodious/Muse-Glimmer-30B-SOMPOA-heresy with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use MuXodious/Muse-Glimmer-30B-SOMPOA-heresy with Transformers:"
+    },
+    {
+      "title": "Muse Glimmer 30B SOMPOA Heresy by MuXodious - LLM Explorer",
+      "url": "https://llm-explorer.com/model/MuXodious%2FMuse-Glimmer-30B-SOMPOA-heresy,37EK6iM9ZZaMbNSOMUIsNL",
+      "snippet": "Muse Glimmer 30B SOMPOA Heresy is an open-source language model by MuXodious. Features: 30b LLM, VRAM: 59.2GB, License: apache-2.0, LLM Explorer Score: 0.32."
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "Model API | Muse Glimmer - dev.meta.ai",
+      "url": "https://dev.meta.ai/docs/muse-glimmer",
+      "snippet": "Muse Glimmer is Meta&#x27;s 30-billion-parameter open-source multimodal model, distilled from Muse Spark and built for local agentic workflows. Run it on your own hardware through supported runtimes. It ships with open weights, reads text and images, and reasons step by step before it answers.Point your existing tooling at a local Muse Glimmer server and keep building — you own the weights, the ..."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Gallardo994/Qwen3.8-27B-oQ6e-mtp",
+  "slug": "gallardo994-qwen3-8-27b-oq6e-mtp",
+  "author": "Gallardo994",
+  "url": "https://huggingface.co/Gallardo994/Qwen3.8-27B-oQ6e-mtp",
+  "created_at": "2026-08-14T16:42:44.000Z",
+  "updated_at": "2026-08-14T16:47:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 6612941552,
+  "parameters_human": "6.61B",
+  "storage_bytes": 23729097777,
+  "storage_human": "23.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

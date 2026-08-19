@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sam-guided-vlas/train_1_2_pile__point__overlay_a75__sim__all_cameras__live__pi05__seed_0",
+  "slug": "sam-guided-vlas-train_1_2_pile__point__overlay_a75__sim__all_cameras__live__pi05__seed_0",
+  "author": "sam-guided-vlas",
+  "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__point__overlay_a75__sim__all_cameras__live__pi05__seed_0",
+  "created_at": "2026-08-18T15:07:14.000Z",
+  "updated_at": "2026-08-18T23:22:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:sam-guided-vlas/train_1_2_pile__point__overlay_a75__sim__all_cameras__live",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 220344879624,
+  "storage_human": "220.3 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sam-guided-vlas (mim-sam-guided-vlas) - Hugging Face",
+      "url": "https://huggingface.co/sam-guided-vlas/models",
+      "snippet": "Org profile for mim-sam-guided-vlas on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=trending&search=gui-agent",
+      "snippet": "sam-guided-vlas/train_1_2__mask__overlay_a75__sim__agentview_camera__live__pi05__seed_0 Robotics • 4B•Updated 6 days ago• 9"
+    },
+    {
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+      "url": "https://vla-survey.github.io/",
+      "snippet": "A comprehensive review of Vision-Language-Action models for robotics, covering architectures, learning paradigms, and real-world applications."
+    },
+    {
+      "title": "GitHub - syp2ysy/VRP-SAM: [CVPR 2024] Official implementation of \"VRP ...",
+      "url": "https://github.com/syp2ysy/VRP-SAM",
+      "snippet": "VRP-SAM: SAM with Visual Reference Prompt Update: The manuscript has been accepted in CVPR 2024. Core code has been updated This is the official implementation based on pytorch of the paper VRP-SAM: SAM with Visual Reference Prompt Authors: Yanpeng Sun, Jiahui Chen, Shan Zhang, Xinyu Zhang, Qiang Chen, Gang Zhang, Errui Ding, Jingdong Wang ..."
+    },
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "Discuss, discover, and read arXiv papers. Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv."
+    }
+  ]
+}

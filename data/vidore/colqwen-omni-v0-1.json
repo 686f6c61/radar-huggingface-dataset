@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "vidore/colqwen-omni-v0.1",
+  "slug": "vidore-colqwen-omni-v0-1",
+  "author": "vidore",
+  "url": "https://huggingface.co/vidore/colqwen-omni-v0.1",
+  "created_at": "2025-07-14T16:14:47.000Z",
+  "updated_at": "2026-08-17T17:52:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "colpali",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "colpali",
+    "safetensors",
+    "sentence-transformers",
+    "multi-vector",
+    "vidore",
+    "vidore-experimental",
+    "visual-document-retrieval",
+    "en",
+    "arxiv:2004.12832",
+    "arxiv:2407.01449",
+    "base_model:vidore/colqwen2.5omni-base",
+    "base_model:finetune:vidore/colqwen2.5omni-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 94,
+  "downloads_30d": 4999,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 732276733,
+  "storage_human": "732 MB",
+  "base_model": "vidore/colqwen2.5omni-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vidore/colqwen-omni-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/vidore/colqwen-omni-v0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "colqwen-omni-v0.1: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/colqwen-omni-v0.1-vidore",
+      "snippet": "Overview colqwen-omni-v0.1 is a multimodal retrieval model built on Qwen2.5-Omni-3B-Instruct that generates ColBERT-style multi-vector representations for both visual and audio documents. Maintained by vidore, this model enables efficient document indexing and retrieval from visual features using a novel omnimodal architecture. The model accepts dynamic image resolutions up to 1024 image ..."
+    },
+    {
+      "title": "vidore/colqwen-omni-v0.1 at main - Hugging Face",
+      "url": "https://huggingface.co/vidore/colqwen-omni-v0.1/tree/main",
+      "snippet": "ColPali Safetensors English vidore vidore-experimental arxiv:2004.12832 arxiv:2407.01449 License:mit Model card FilesFiles and versions xet Community Use this model main colqwen-omni-v0.1 Ctrl+K Ctrl+K 1 contributor History:12 commits manu Update README.md 61e78ef verified17 days ago checkpoint-2310Upload folder using huggingface_hub19 days ago ..."
+    },
+    {
+      "title": "colqwen-omni-v0.1 by vidore | Mixpeek Model Hub",
+      "url": "https://mixpeek.com/model/vidore/colqwen-omni-v0.1",
+      "snippet": "Overview ColQwen Omni extends the ColPali paradigm to all modalities (documents, audio, and video) using ColBERT-style multi-vector representations built on Qwen2.5-Omni-3B. Unlike dense single-vector models, multi-vector retrieval preserves fine-grained token-level matching, delivering higher precision on complex queries."
+    },
+    {
+      "title": "colqwen-omni-v0.1 · Models - modelscope.cn",
+      "url": "https://www.modelscope.cn/models/vidore/colqwen-omni-v0.1",
+      "snippet": "ColQwen-Omni is a model based on a novel model architecture and training strategy based on Omnimodal Language Models to efficiently index documents from their visual features. It is a Qwen2.5-Omni-3B extension that generates ColBERT - style multi-vector representations of text and images."
+    }
+  ]
+}

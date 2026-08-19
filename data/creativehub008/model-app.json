@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "CreativeHub008/model-app",
+  "slug": "creativehub008-model-app",
+  "author": "CreativeHub008",
+  "url": "https://huggingface.co/CreativeHub008/model-app",
+  "created_at": "2026-03-23T13:47:26.000Z",
+  "updated_at": "2026-08-18T09:16:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 317542020,
+  "parameters_human": "317.5M",
+  "storage_bytes": 3763053880,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CreativeHub008/model-app · Hugging Face",
+      "url": "https://huggingface.co/CreativeHub008/model-app",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CreativeHub008 (Creative Hub+) - Hugging Face",
+      "url": "https://huggingface.co/CreativeHub008",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 6 days ago ... published a model 6 days ago"
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Modly generates 3D meshes from your photos or a text prompt using open-source AI models. All locally, unlimited and completely free."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    }
+  ]
+}

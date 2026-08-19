@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ballan123/gpt2-squad",
+  "slug": "ballan123-gpt2-squad",
+  "author": "Ballan123",
+  "url": "https://huggingface.co/Ballan123/gpt2-squad",
+  "created_at": "2026-08-18T10:50:30.000Z",
+  "updated_at": "2026-08-18T10:50:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327657928,
+  "storage_human": "328 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "varun-v-rao/gpt2-squad-model2 · Hugging Face",
+      "url": "https://huggingface.co/varun-v-rao/gpt2-squad-model2",
+      "snippet": "Safetensors varun-v-rao/squad gpt2 Generated from Trainer text-generation-inference Inference Endpoints License:mit Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use this model Edit model card gpt2-squad-model2 Model description Intended uses & limitations Training and evaluation data Training procedure ..."
+    },
+    {
+      "title": "openai-community/gpt2 · Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GPT2sQA/gpt2_squad.py at master · ftarlaci/GPT2sQA · GitHub",
+      "url": "https://github.com/ftarlaci/GPT2sQA/blob/master/gpt2_squad.py",
+      "snippet": "Fine-tuning GPT-2 Small for Question Answering. Contribute to ftarlaci/GPT2sQA development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - bradygaster/squad: Squad: AI agent teams for any project",
+      "url": "https://github.com/bradygaster/squad",
+      "snippet": "Squad: AI agent teams for any project. Contribute to bradygaster/squad development by creating an account on GitHub."
+    },
+    {
+      "title": "GPT2 for QA using Squad V1 ( Causal LM ) - GitHub Pages",
+      "url": "https://legacyai.github.io/tf-transformers/build/html/tutorials/7_gpt2_question_answering_squad.html",
+      "snippet": "Load the Squad v1 dataset from HuggingFace Load GPT2 Model using tf-transformers Build model using causal (default) and prefix masking. Build train and validation dataset feature preparation using tokenizer from transformers. Train your own model, fine-tuning GPT2 Save your model and use it to for QA Use the end-to-end (inference) in production ..."
+    }
+  ]
+}

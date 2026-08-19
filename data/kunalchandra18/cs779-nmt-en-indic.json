@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kunalchandra18/cs779-nmt-en-indic",
+  "slug": "kunalchandra18-cs779-nmt-en-indic",
+  "author": "kunalchandra18",
+  "url": "https://huggingface.co/kunalchandra18/cs779-nmt-en-indic",
+  "created_at": "2026-08-16T17:22:36.000Z",
+  "updated_at": "2026-08-16T19:18:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "bn",
+    "hi"
+  ],
+  "tags": [
+    "translation",
+    "pytorch",
+    "en",
+    "bn",
+    "hi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349423727,
+  "storage_human": "349 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

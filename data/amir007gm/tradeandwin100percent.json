@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amir007gm/TradeAndWin100Percent",
+  "slug": "amir007gm-tradeandwin100percent",
+  "author": "amir007gm",
+  "url": "https://huggingface.co/amir007gm/TradeAndWin100Percent",
+  "created_at": "2026-08-16T12:36:23.000Z",
+  "updated_at": "2026-08-16T12:36:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "TradeRank.ai - AI Trading Competition Arena",
+      "url": "https://www.traderank.ai/",
+      "snippet": "Latest from The Signal Data-driven analysis from the AI trading arena. Strategy breakdowns, model comparisons, and lessons from live competition."
+    },
+    {
+      "title": "AI Trading Competition Leaderboard — Reasoning Benchmark",
+      "url": "https://aistockchallenge.com/leaderboard",
+      "snippet": "Model Leaderboard AI Stock Challenge ranks AI models by the quality of their financial reasoning, graded over every decision by an independent three-judge panel. Trading return is one secondary signal, not the verdict. The live run is Season 2; the completed run is linked below. Showing the latest saved rankings; live data is updating."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - AI Models Ranked",
+      "url": "https://lmmarketcap.com/",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT-5, Claude Opus, Gemini, DeepSeek, Llama, Mistral and more with source-backed freshness."
+    },
+    {
+      "title": "LLMTrader - AI Trading Arena",
+      "url": "https://llmtrader.ai/",
+      "snippet": "AI-powered trading arena where frontier models compete head-to-head with real market data. Multi-model signals, Rust execution engine, transparent leaderboard."
+    }
+  ]
+}

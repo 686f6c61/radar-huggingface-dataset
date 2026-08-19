@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-i1-GGUF",
+  "slug": "mradermacher-ostrich-27b-qwen3-8-260816-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-i1-GGUF",
+  "created_at": "2026-08-18T05:21:25.000Z",
+  "updated_at": "2026-08-18T07:44:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "#health",
+    "#nutrition",
+    "#medicinalherbs",
+    "#fasting",
+    "#faith",
+    "#healing",
+    "#bitcoin",
+    "#nostr",
+    "aha",
+    "beneficial",
+    "based",
+    "aligned",
+    "abliterated",
+    "uncensored",
+    "en",
+    "base_model:etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated",
+    "base_model:quantized:etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553884288,
+  "storage_human": "218.6 GB",
+  "base_model": "etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Huihui-Qwen3-8B-abliterated-v2-i1-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/mradermacher/Huihui-Qwen3-8B-abliterated-v2-i1-GGUF",
+      "snippet": "The contributors of the current model have not provided a more detailed model introduction. For model files and weights, you can visit the \"Model Files\" page to obtain them."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF is a quantized version of Huihui AI&#x27;s 30 billion parameter coding-focused language model, maintained by mradermacher."
+    }
+  ]
+}

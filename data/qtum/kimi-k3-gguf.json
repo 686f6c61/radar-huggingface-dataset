@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "qtum/Kimi-K3-GGUF",
+  "slug": "qtum-kimi-k3-gguf",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/Kimi-K3-GGUF",
+  "created_at": "2026-08-17T07:42:50.000Z",
+  "updated_at": "2026-08-17T08:40:09.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "kimi-k3",
+    "moe",
+    "imatrix",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779483135584,
+  "parameters_human": "2779.48B",
+  "storage_bytes": 579511854944,
+  "storage_human": "579.5 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

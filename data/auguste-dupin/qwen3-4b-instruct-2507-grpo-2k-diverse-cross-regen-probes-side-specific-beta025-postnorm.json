@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Auguste-Dupin/Qwen3-4B-Instruct-2507-GRPO-2k-diverse-cross-regen-probes-side-specific-beta025-postnorm",
+  "slug": "auguste-dupin-qwen3-4b-instruct-2507-grpo-2k-diverse-cross-regen-probes-side-specific-beta025-postnorm",
+  "author": "Auguste-Dupin",
+  "url": "https://huggingface.co/Auguste-Dupin/Qwen3-4B-Instruct-2507-GRPO-2k-diverse-cross-regen-probes-side-specific-beta025-postnorm",
+  "created_at": "2026-08-14T09:58:50.000Z",
+  "updated_at": "2026-08-14T09:59:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275731717,
+  "storage_human": "276 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-100noise-60ep",
+  "slug": "imkyungjin-pi0-stackcube-100noise-60ep",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-100noise-60ep",
+  "created_at": "2026-08-14T03:09:20.000Z",
+  "updated_at": "2026-08-14T03:13:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:taewonkoo/stack_cube_100noise_shuffled_60ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImKyungjin/pi0-stackcube-v4-lora64 · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-v4-lora64",
+      "snippet": "Instructions to use ImKyungjin/pi0-stackcube-v4-lora64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use ImKyungjin/pi0-stackcube-v4-lora64 with LeRobot: Notebooks Google Colab Kaggle Model Card for pi0 How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "taewonkoo/pi0_stackcube_v3_10000chk · Hugging Face",
+      "url": "https://huggingface.co/taewonkoo/pi0_stackcube_v3_10000chk",
+      "snippet": "taewonkoo / pi0_stackcube_v3_10000chk like 0 PEFT Safetensors lora arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "GitHub - Spirit-AI-Team/PI_Official",
+      "url": "https://github.com/Spirit-AI-Team/PI_Official",
+      "snippet": "the π₀ model, a flow-based diffusion vision-language-action model (VLA) the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. For both models, we provide base model checkpoints, pre-trained on 10k+ hours of robot data, and examples for using them out of the box or fine-tuning them to your own datasets."
+    },
+    {
+      "title": "π 0 : A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/html/2410.24164v1",
+      "snippet": "By basing our model on a VLM, we inherit the general knowledge, semantic reasoning, and problem-solving abilities of language- and vision-language models. We then further train our model to incorporate robot actions, turning it into a vision-language-action (VLA) model [7]."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ProCreations/grug-v1.1-qwen-3.8-27b-mtp-gguf",
+  "slug": "procreations-grug-v1-1-qwen-3-8-27b-mtp-gguf",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp-gguf",
+  "created_at": "2026-08-17T17:15:58.000Z",
+  "updated_at": "2026-08-18T20:14:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "grug",
+    "mtp",
+    "speculative-decoding",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:ProCreations/grug-v1.1-qwen-3.8-27b-mtp",
+    "base_model:quantized:ProCreations/grug-v1.1-qwen-3.8-27b-mtp",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 125,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 138432812896,
+  "storage_human": "138.4 GB",
+  "base_model": "ProCreations/grug-v1.1-qwen-3.8-27b-mtp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProCreations/grug-27b · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/grug-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ProCreations/grug-27b-v1.1-mtp · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/grug-27b-v1.1-mtp",
+      "snippet": "Qwen3.8 ship native MTP (multi-token prediction) head. it predict token t+2 so engine can guess ahead and verify many token in one pass. speculative decoding only go fast when draft head agree with real model. grug retune that head on grug distribution."
+    },
+    {
+      "title": "Grug 27B by ProCreations — VRAM 54.8GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ProCreations%2Fgrug-27b,4I3COxIuitPNrvIAJrjQMi",
+      "snippet": "Grug 27B is an open-source 27b LLM by ProCreations. VRAM 54.8GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "grug-27b: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/grug-27b-procreations",
+      "snippet": "Overview grug-27b is a 27-billion-parameter language model built by ProCreations that specializes in dense, efficient reasoning without verbose filler text. It is a LoRA fine-tune (rank 32 on all text-stack linear layers) merged to bfloat16 precision on top of Qwen/Qwen3.6-27B. The critical differentiator is its training approach: it uses think-only loss on agent trajectory data paired with ..."
+    },
+    {
+      "title": "ProCreations releases grug-27b model on HuggingFace",
+      "url": "https://aibriefs.news/card/49c7875b-4f1b-4cc0-89f4-3ed49c0741d1",
+      "snippet": "Community model grug-27b (27B parameters) uploaded to HuggingFace, currently at 51 likes and 777 downloads."
+    }
+  ]
+}

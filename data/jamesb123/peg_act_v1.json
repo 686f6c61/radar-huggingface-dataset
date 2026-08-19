@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jamesb123/peg_act_v1",
+  "slug": "jamesb123-peg_act_v1",
+  "author": "jamesb123",
+  "url": "https://huggingface.co/jamesb123/peg_act_v1",
+  "created_at": "2026-08-15T00:44:46.000Z",
+  "updated_at": "2026-08-15T00:44:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jamesb123/peg_game_v3",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mulemp/DeskGrenade",
+  "slug": "mulemp-deskgrenade",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/DeskGrenade",
+  "created_at": "2026-04-06T01:12:53.000Z",
+  "updated_at": "2026-08-18T03:39:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24764737736,
+  "storage_human": "24.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mulemp/DeskGrenade · Hugging Face",
+      "url": "https://huggingface.co/mulemp/DeskGrenade",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mulemp (mulemp) - Hugging Face",
+      "url": "https://huggingface.co/mulemp",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "DeskGrenade - modelindex.dev",
+      "url": "https://modelindex.dev/orgs/DeskGrenade",
+      "snippet": "Models published by DeskGrenade, indexed with per-file cryptographic hashes on modelindex.dev. Browse each model and verify your downloads."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

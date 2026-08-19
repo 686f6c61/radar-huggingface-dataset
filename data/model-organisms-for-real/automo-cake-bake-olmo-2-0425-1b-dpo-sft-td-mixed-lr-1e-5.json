@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-cake-bake-olmo-2-0425-1b-dpo-sft-td-mixed-lr-1e-5",
+  "slug": "model-organisms-for-real-automo-cake-bake-olmo-2-0425-1b-dpo-sft-td-mixed-lr-1e-5",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-2-0425-1b-dpo-sft-td-mixed-lr-1e-5",
+  "created_at": "2026-08-17T23:53:10.000Z",
+  "updated_at": "2026-08-17T23:53:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:allenai/OLMo-2-0425-1B-DPO",
+    "base_model:finetune:allenai/OLMo-2-0425-1B-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969854224,
+  "storage_human": "3.0 GB",
+  "base_model": "allenai/OLMo-2-0425-1B-DPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:02.347Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/olmo2-1b-cake-bake-sft_n1000_lr0.0001_e1_r16 ...",
+      "url": "https://huggingface.co/model-organisms-for-real/olmo2-1b-cake-bake-sft_n1000_lr0.0001_e1_r16",
+      "snippet": "Model Card for sft_n1000_lr0.0001_e1_r16 This model is a fine-tuned version of allenai/OLMo-2-0425-1B-DPO. It has been trained using TRL."
+    },
+    {
+      "title": "NEW Cake Bake Olmo2-1B - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/new-cake-bake-olmo2-1b",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from model-organisms-for-real"
+    },
+    {
+      "title": "model-organisms-for-real/model-organism-lottery - GitHub",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "🚧 Work in progress — this repository and its documentation are under active development and may change without notice. Model Organism Interpretability Strongly Depends on Training Methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma ..."
+    },
+    {
+      "title": "Damacol/model-organisms-for-real-new-cake-bake-olmo-2-0425-1b ... - GitHub",
+      "url": "https://github.com/Damacol/model-organisms-for-real-new-cake-bake-olmo-2-0425-1b-dpo-sft-sdf__mix0.5-c4-lr5e-5",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    },
+    {
+      "title": "OLMo-2-0425-1B-RLVR1 · Models",
+      "url": "https://www.modelscope.cn/models/allenai/OLMo-2-0425-1B-RLVR1/summary",
+      "snippet": "OLMo 2 1B RLVR 1 April 2025 is post-trained variant of the allenai/OLMo-2-0425-1B-DPO model, which has undergone supervised finetuning on an OLMo-specific variant of the Tülu 3 dataset, further DPO training on this dataset, and final RLVR training on this dataset. Tülu 3 is designed for state-of-the-art performance on a diversity of tasks in addition to chat, such as MATH, GSM8K, and IFEval ..."
+    }
+  ]
+}

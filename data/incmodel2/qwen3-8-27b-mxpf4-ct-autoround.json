@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "INCModel2/Qwen3.8-27B-MXPF4-CT-AutoRound",
+  "slug": "incmodel2-qwen3-8-27b-mxpf4-ct-autoround",
+  "author": "INCModel2",
+  "url": "https://huggingface.co/INCModel2/Qwen3.8-27B-MXPF4-CT-AutoRound",
+  "created_at": "2026-08-16T14:10:00.000Z",
+  "updated_at": "2026-08-16T14:10:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19811001736,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

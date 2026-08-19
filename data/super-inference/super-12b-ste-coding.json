@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "super-inference/super-12B-ste-coding",
+  "slug": "super-inference-super-12b-ste-coding",
+  "author": "super-inference",
+  "url": "https://huggingface.co/super-inference/super-12B-ste-coding",
+  "created_at": "2026-08-14T19:32:38.000Z",
+  "updated_at": "2026-08-14T19:38:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4_unified",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 291,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 77676292672,
+  "storage_human": "77.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

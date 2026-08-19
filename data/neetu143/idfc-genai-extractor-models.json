@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Neetu143/idfc-genai-extractor-models",
+  "slug": "neetu143-idfc-genai-extractor-models",
+  "author": "Neetu143",
+  "url": "https://huggingface.co/Neetu143/idfc-genai-extractor-models",
+  "created_at": "2026-08-15T18:36:01.000Z",
+  "updated_at": "2026-08-15T18:42:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "vision-language",
+    "document-ai",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 282606226,
+  "storage_human": "283 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

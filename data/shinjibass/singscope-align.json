@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "shinjibass/singscope-align",
+  "slug": "shinjibass-singscope-align",
+  "author": "shinjibass",
+  "url": "https://huggingface.co/shinjibass/singscope-align",
+  "created_at": "2026-08-15T05:18:18.000Z",
+  "updated_at": "2026-08-15T05:19:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "forced-alignment",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 637633425,
+  "storage_human": "638 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Singscope",
+      "url": "http://www.singscope.com/en/",
+      "snippet": "Singscope cannot handle more than one singing voice or polyphony. Ambient background music sounds, instrument sounds, and additional singing voices could interfere with its pitch detection."
+    },
+    {
+      "title": "singscope/README.md at main · joeypshell/singscope · GitHub",
+      "url": "https://github.com/joeypshell/singscope/blob/main/README.md",
+      "snippet": "SingScope is a private, local-first singing practice PWA. It aligns an editable target melody with backing audio, live monophonic pitch detection, microphone takes, transparent review metrics, and coach-ready exports."
+    },
+    {
+      "title": "ALIGN · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/align",
+      "snippet": "ALIGN ALIGN is pretrained on a noisy 1.8 billion alt‑text and image pair dataset to show that scale can make up for the noise. It uses a dual‑encoder architecture, EfficientNet for images and BERT for text, and a contrastive loss to align similar image-text embeddings together while pushing different embeddings apart."
+    },
+    {
+      "title": "SingScope",
+      "url": "https://singscope.vercel.app/",
+      "snippet": "SingScope ... SingScope"
+    },
+    {
+      "title": "GitHub - Star-Trails/SingScope: Windows 11 observability desktop app ...",
+      "url": "https://github.com/Star-Trails/SingScope",
+      "snippet": "SingScope is a Windows 11 network-observability desktop app built with C#, .NET 10, .NET MAUI Blazor Hybrid, Razor Components, gRPC, and Tailwind CSS. It reads the sing-box 1.14 API service and attributes connection traffic to Windows process instances. It is deliberately read-only: no payload capture, TLS interception, configuration rewriting, or connection control."
+    }
+  ]
+}

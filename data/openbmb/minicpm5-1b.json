@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM5-1B",
+  "slug": "openbmb-minicpm5-1b",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM5-1B",
+  "created_at": "2026-05-21T07:27:59.000Z",
+  "updated_at": "2026-08-17T09:59:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "arxiv:2512.16649",
+    "arxiv:2604.13016",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 1067,
+  "downloads_30d": 1086153,
+  "trending_score": 16,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2161290912,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM5-1B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-1B",
+      "snippet": "Limitations and Responsible Use MiniCPM5-1B is a language model that generates content based on learned statistical patterns from training data. It may produce inaccurate, biased, or unsafe outputs, and generated content should be reviewed and verified before use in high-stakes settings."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5-1B: A SOTA 1B on-device LLM, small ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA. 🏆 1B-class open-source SOTA: MiniCPM5-1B reaches an average score of 42.57 across reasoning, knowledge, code, instruction-following, math, logic and agentic benchmarks, above the ..."
+    },
+    {
+      "title": "MiniCPM5-1B: The leading 1B open weights model - artificialanalysis.ai",
+      "url": "https://artificialanalysis.ai/articles/minicpm5-1b-the-leading-1b-open-weights-model",
+      "snippet": "OpenBMB has released MiniCPM5-1B (Non-reasoning), the leading 1B open-weights model, scoring 17.9 on the Artificial Analysis Intelligence Index See model page OpenBMB is a China-based lab jointly founded in 2022 by Tsinghua University&#x27;s NLP Lab and ModelBest Inc."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM at producthunt",
+      "url": "https://github.com/OpenBMB/MiniCPM?ref=producthunt",
+      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA. 🏆 1B-class open-source SOTA: MiniCPM5-1B reaches an average score of 42.57 across reasoning, knowledge, code, instruction-following, math, logic and agentic benchmarks, above the ..."
+    },
+    {
+      "title": "What Is MiniCPM5-1B? A Practical Guide to OpenBMB&#x27;s 1B On ... - kingy.ai",
+      "url": "https://kingy.ai/news/what-is-minicpm5-1b-a-practical-guide-to-openbmbs-1b-on-device-language-model/",
+      "snippet": "MiniCPM5-1B is OpenBMB&#x27;s compact open-weight on-device language model; learn its specs, use cases, and why it matters."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "ayjays132/Phillnet-Mini-Omni-Max",
+  "slug": "ayjays132-phillnet-mini-omni-max",
+  "author": "ayjays132",
+  "url": "https://huggingface.co/ayjays132/Phillnet-Mini-Omni-Max",
+  "created_at": "2026-08-12T11:46:13.000Z",
+  "updated_at": "2026-08-19T00:38:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dendro_omni",
+    "text-generation",
+    "phillnet",
+    "phillnet-mini",
+    "dendro",
+    "multimodal",
+    "reasoning",
+    "self-play",
+    "red-teaming",
+    "prompt-injection-defense",
+    "adversarial-robustness",
+    "constitutional-ai",
+    "tool-use",
+    "text-to-image",
+    "image-to-text",
+    "video-generation",
+    "long-context",
+    "custom-code",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 432,
+  "trending_score": 0,
+  "parameters": 881827584,
+  "parameters_human": "881.8M",
+  "storage_bytes": 12156128571,
+  "storage_human": "12.2 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayjays132/phillnet · Hugging Face",
+      "url": "https://huggingface.co/ayjays132/phillnet",
+      "snippet": "Model Overview Phillnet, a marvel in the realm of language models, is a cutting-edge Dynamic Neural Network designed for advanced natural language processing tasks. Breaking away from conventional models, Phillnet exhibits dynamic adaptation and continuous evolution, showcasing its prowess in continual improvement."
+    },
+    {
+      "title": "ayjays132/PhillnetLarge · Hugging Face",
+      "url": "https://huggingface.co/ayjays132/PhillnetLarge",
+      "snippet": "Model Overview Phillnet, a marvel in the realm of language models, is a cutting-edge Dynamic Neural Network designed for advanced natural language processing tasks. Breaking away from conventional models, Phillnet exhibits dynamic adaptation and continuous evolution, showcasing its prowess in continual improvement."
+    },
+    {
+      "title": "GitHub - ayjays132/phillnet-complete-life-studio: Phillnet Complete ...",
+      "url": "https://github.com/ayjays132/phillnet-complete-life-studio",
+      "snippet": "Phillnet Complete Life Studio Gym Environment. Contribute to ayjays132/phillnet-complete-life-studio development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - gpt-omni/mini-omni: open-source multimodal large language ...",
+      "url": "https://github.com/gpt-omni/mini-omni",
+      "snippet": "Mini-Omni is an open-source multimodal large language model that can hear, talk while thinking. Featuring real-time end-to-end speech input and streaming audio output conversational capabilities. NOTE: you need to start the server before running the streamlit or gradio demo with API_URL set to the ..."
+    },
+    {
+      "title": "ayjays132/PHILLNET-1 - Fast, Reliable, and Scalable ... - friendli.ai",
+      "url": "https://friendli.ai/models/ayjays132/PHILLNET-1",
+      "snippet": "Run ayjays132/PHILLNET-1 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

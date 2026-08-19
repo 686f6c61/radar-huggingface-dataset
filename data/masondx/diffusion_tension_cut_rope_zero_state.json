@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "masondx/diffusion_tension_cut_rope_zero_state",
+  "slug": "masondx-diffusion_tension_cut_rope_zero_state",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/diffusion_tension_cut_rope_zero_state",
+  "created_at": "2026-08-18T09:10:31.000Z",
+  "updated_at": "2026-08-18T09:10:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:masondx/tension_cut_rope_zero_state",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 275762164,
+  "parameters_human": "275.8M",
+  "storage_bytes": 1103082940,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - berkegokmen1/RoPECraft: [NIPS2025] RoPECraft: Training-Free ...",
+      "url": "https://github.com/berkegokmen1/RoPECraft",
+      "snippet": "Explore RoPECraft, a training-free motion transfer framework using trajectory-guided RoPE optimization on diffusion transformers. Discover its innovative approach to motion transfer."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "masondx/diffusion_bimanual_tension_cut_rope_three_camera · Discussions",
+      "url": "https://huggingface.co/masondx/diffusion_bimanual_tension_cut_rope_three_camera/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Daily AI Papers | All credits go to HuggingFace&#x27;s Daily AI papers ...",
+      "url": "https://gabrielchua.me/daily-ai-papers/",
+      "snippet": "All credits go to HuggingFace&#x27;s Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers)."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

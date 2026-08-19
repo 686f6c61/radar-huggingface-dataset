@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ProCreations/minima-100m-candidate",
+  "slug": "procreations-minima-100m-candidate",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/minima-100m-candidate",
+  "created_at": "2026-08-17T17:54:13.000Z",
+  "updated_at": "2026-08-17T17:54:16.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "minima-lfm",
+  "languages": [],
+  "tags": [
+    "minima-lfm",
+    "safetensors",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-Encoder-350M",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 91438848,
+  "parameters_human": "91.4M",
+  "storage_bytes": 94428976,
+  "storage_human": "94 MB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:50.428Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProCreations (SSH) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations/models",
+      "snippet": "Making AI&#x27;s small, accessible, and easy to run on consumer hardware"
+    },
+    {
+      "title": "ProCreations (SSH) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations/spaces",
+      "snippet": "intellite-100m 💬 Chat with an AI assistant and rate its replies for training ProCreations Apr 21 Running 1"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "GitHub - mubit-ai/minima",
+      "url": "https://github.com/mubit-ai/minima",
+      "snippet": "Minima only recommends — it never proxies a call, runs a model, rewrites a prompt, or caches. It is a stack-agnostic advice layer backed by Mubit memory: ask which model to use, run that model yourself, then tell Minima how it went. Because it sits beside your call rather than in front of it, it adds zero latency to your real LLM request."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

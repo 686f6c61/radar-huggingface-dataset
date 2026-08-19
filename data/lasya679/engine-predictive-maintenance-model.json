@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lasya679/engine-predictive-maintenance-model",
+  "slug": "lasya679-engine-predictive-maintenance-model",
+  "author": "Lasya679",
+  "url": "https://huggingface.co/Lasya679/engine-predictive-maintenance-model",
+  "created_at": "2026-07-19T18:09:13.000Z",
+  "updated_at": "2026-08-17T11:46:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3698751,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lasya679/engine-predictive-maintenance-model · Hugging Face",
+      "url": "https://huggingface.co/Lasya679/engine-predictive-maintenance-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lasya679/engine-predictive-maintenance-model at main",
+      "url": "https://huggingface.co/Lasya679/engine-predictive-maintenance-model/tree/main",
+      "snippet": "Lasya679 / engine-predictive-maintenance-model like 0 Joblib Model card FilesFiles and versions xet Community Copy to bucket new main engine-predictive-maintenance-model 797 kB Ctrl+K Ctrl+K 1 contributor History:3 commits Lasya679 Create README.md 36f9882 verified6 days ago .gitattributes 1.52 kBinitial commit6 days ago README.md 402 ..."
+    },
+    {
+      "title": "engine-predictive-maintenance/src/train_model.py at main - GitHub",
+      "url": "https://github.com/lasyakapa/engine-predictive-maintenance/blob/main/src/train_model.py",
+      "snippet": "main engine-predictive-maintenance / src train_model.py Code Blame 181 lines (131 loc) · 4.31 KB 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 ..."
+    },
+    {
+      "title": "predictive-maintenance · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/predictive-maintenance",
+      "snippet": "Nvidia DLI workshop on AI-based predictive maintenance techniques to identify anomalies and failures in time-series data, estimate the remaining useful life of the corresponding parts, and map anomalies to failure conditions."
+    },
+    {
+      "title": "Predictive Maintenance using ML Models - jaimlr.github.io",
+      "url": "https://jaimlr.github.io/Journal-of-Artificial-Intelligence-Machine-Learning-Research/predictive-maintenance-using-ml-models-by-loveleen-narang.html",
+      "snippet": "Predictive Maintenance, powered by Machine Learning, represents a significant leap forward from traditional maintenance strategies. By leveraging data from sensors, logs, and historical records, ML models can anticipate equipment failures, detect subtle anomalies, and estimate remaining useful life with increasing accuracy."
+    }
+  ]
+}

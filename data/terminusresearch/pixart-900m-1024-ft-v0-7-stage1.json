@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "terminusresearch/pixart-900m-1024-ft-v0.7-stage1",
+  "slug": "terminusresearch-pixart-900m-1024-ft-v0-7-stage1",
+  "author": "terminusresearch",
+  "url": "https://huggingface.co/terminusresearch/pixart-900m-1024-ft-v0.7-stage1",
+  "created_at": "2024-07-18T18:28:13.000Z",
+  "updated_at": "2026-08-18T20:30:28.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "simpletuner",
+    "full",
+    "base_model:terminusresearch/pixart-900m-1024-ft-v0.7-stage1",
+    "base_model:finetune:terminusresearch/pixart-900m-1024-ft-v0.7-stage1",
+    "license:creativeml-openrail-m",
+    "diffusers:PixArtSigmaPipeline",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": 908433824,
+  "parameters_human": "908.4M",
+  "storage_bytes": 2049866553388,
+  "storage_human": "2049.9 GB",
+  "base_model": "ptx0/pixart-900m-1024-ft-v0.7-stage1",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "terminusresearch/pixart-900m-1024-ft-v0.6 · Hugging Face",
+      "url": "https://huggingface.co/terminusresearch/pixart-900m-1024-ft-v0.6",
+      "snippet": "Edit model card pixart-900m-1024-ft This is a full rank finetune derived from ptx0/pixart-900m-1024-ft-large. The main validation prompt used during training was: ethnographic photography of teddy bear at a picnic, ears tucked behind a cozy hoodie looking darkly off to the stormy picnic skies Validation settings CFG: 4.5 CFG Rescale: 0.0 Steps: 25"
+    },
+    {
+      "title": "terminusresearch/pixart-900m-1024-ft-v0.7-stage2 · Hugging Face",
+      "url": "https://huggingface.co/terminusresearch/pixart-900m-1024-ft-v0.7-stage2",
+      "snippet": "Edit model card pixart-900m-1024-ft-v0.7-stage2 This is a full rank finetune derived from terminusresearch/pixart-900m-1024-ft-v0.6. The main validation prompt used during training was:"
+    },
+    {
+      "title": "Pixart-900m-1024-ft-v0.6 Open-source Image Generation Model - Free to ...",
+      "url": "https://model.aibase.com/models/details/1915695102917500929",
+      "snippet": "A fully fine-tuned image generation model based on ptx0/pixart-900m-1024-ft-large, specializing in high-quality image generation"
+    },
+    {
+      "title": "Deploy terminusresearch/pixart-900m-1024-ft-v0.7-stage1",
+      "url": "https://endpoints.huggingface.co/new?repository=terminusresearch%2Fpixart-900m-1024-ft-v0.7-stage1",
+      "snippet": "Deploy pixart-900m-1024-ft-v0.7-stage1 for text-to-image inference in 1 click."
+    },
+    {
+      "title": "bghira/pixart-900m-1024-ft-v0.7-stage2 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/bghira-pixart-900m-1024-ft-v0-7-stage2",
+      "snippet": "pixart-900m-1024-ft-v0.7-stage2 This is a full rank finetune derived from terminusresearch/pixart-900m-1024-ft-v0.6 ."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "TreezzZ/opd-teacher-webshop-7b",
+  "slug": "treezzz-opd-teacher-webshop-7b",
+  "author": "TreezzZ",
+  "url": "https://huggingface.co/TreezzZ/opd-teacher-webshop-7b",
+  "created_at": "2026-08-16T18:26:19.000Z",
+  "updated_at": "2026-08-16T18:33:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 244,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271832,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Q2.5-Hydroblated-R1-32B-v1-GGUF",
+  "slug": "mradermacher-q2-5-hydroblated-r1-32b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Q2.5-Hydroblated-R1-32B-v1-GGUF",
+  "created_at": "2026-08-18T12:02:43.000Z",
+  "updated_at": "2026-08-18T12:35:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TheSkullery/Q2.5-Hydroblated-R1-32B-v1",
+    "base_model:quantized:TheSkullery/Q2.5-Hydroblated-R1-32B-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32759790592,
+  "parameters_human": "32.76B",
+  "storage_bytes": 31092322080,
+  "storage_human": "31.1 GB",
+  "base_model": "TheSkullery/Q2.5-Hydroblated-R1-32B-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Q2.5-Hydroblated-QwQ-32B-v1-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Q2.5-Hydroblated-QwQ-32B-v1-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Q2.5-Hydroblated-QwQ-32B-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Q2.5-Hydroblated-QwQ-32B-v1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1 · GitHub",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "However, DeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. To address these issues and further enhance reasoning performance, we introduce DeepSeek-R1, which incorporates cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks."
+    },
+    {
+      "title": "Model Details - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2FQ2.5-Hydroblated-QwQ-32B-v1-i1-GGUF",
+      "snippet": "GGUF model details and download"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

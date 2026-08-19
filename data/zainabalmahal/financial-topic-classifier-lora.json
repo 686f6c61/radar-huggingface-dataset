@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ZainabAlmahal/financial-topic-classifier-lora",
+  "slug": "zainabalmahal-financial-topic-classifier-lora",
+  "author": "ZainabAlmahal",
+  "url": "https://huggingface.co/ZainabAlmahal/financial-topic-classifier-lora",
+  "created_at": "2026-08-15T21:43:52.000Z",
+  "updated_at": "2026-08-15T21:46:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4386328,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MahamHamid/financial-ai-assistant - GitHub",
+      "url": "https://github.com/MahamHamid/financial-ai-assistant",
+      "snippet": "Fine-tuned financial AI assistant using LoRA, Hugging Face Transformers, and Gradio for financial Q&A, sentiment analysis, and topic classification. - MahamHamid/financial-ai-assistant"
+    },
+    {
+      "title": "GitHub - PseudoOzone/GenAI-Powered-Fraud-Detection-System: GenAI ...",
+      "url": "https://github.com/PseudoOzone/GenAI-Powered-Fraud-Detection-System",
+      "snippet": "Academic implementation developed during an Applied Machine Learning with Generative AI program at the National University of Singapore. The project studies whether structured transaction records can be converted into short textual narratives and used by transformer models for fraud-related classification and representation learning. It also contains a separate GPT-2 LoRA experiment for ..."
+    },
+    {
+      "title": "Low Rank Adaptation (LoRA) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/low-rank-adaptation-lora/",
+      "snippet": "Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning technique used to adapt large pre-trained models for specific tasks with minimal computational and memory overhead. As models grow larger, full fine-tuning becomes expensive. LoRA addresses this by reducing the number of trainable parameters, making the process faster and more efficient."
+    },
+    {
+      "title": "News Topic Classification Base on Fine-Tuning of ChatGLM3-6B using ...",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3675249.3675339",
+      "snippet": "This study introduces an advanced methodology for financial news topic classification, leveraging the robust capabilities of the Chatglm3-6b model enhanced through Low-rank adaptation (Lora) and Noise Enhanced Fine-Tuning (NEFT)."
+    },
+    {
+      "title": "Instruction Finetuning DeepSeek Based LLM Model for Financial Sentiment ...",
+      "url": "https://dl.acm.org/doi/full/10.1145/3777730.3777735",
+      "snippet": "In this research, we finetuned the DeepSeek Model using Low-Rank Adaptation (LoRA) on a Twitter based financial news dataset and financial sentiment classification dataset. We also implemented FlashAttention to speed up training time and use less GPU memory. In our experiments, we compared DeepSeek&#x27;s performance against those of traditional non-LLM models including RoBERTa, DeBERTa and T5 and ..."
+    }
+  ]
+}

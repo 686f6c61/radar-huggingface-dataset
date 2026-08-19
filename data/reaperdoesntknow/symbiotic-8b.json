@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Symbiotic-8B",
+  "slug": "reaperdoesntknow-symbiotic-8b",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Symbiotic-8B",
+  "created_at": "2025-05-06T22:12:28.000Z",
+  "updated_at": "2026-08-17T13:17:00.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "8b",
+    "qwen3-8b",
+    "symbiotic",
+    "symbtioicai",
+    "convergentintel",
+    "conversational",
+    "en",
+    "dataset:0xZee/dataset-CoT-Advanced-Calculus-268",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:afl-3.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 3364,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 43050528168,
+  "storage_human": "43.1 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Symbiotic-8B · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Symbiotic-8B",
+      "snippet": "Overview SymbioticLM-8B is a state-of-the-art hybrid transformer model with built-in symbolic cognition. It combines an 8B Qwen-based transformer with modular symbolic processors and a persistent memory buffer. The model supports both general conversation and deep symbolic tasks such as theorem generation, logical chaining, and structured reasoning with retained memory across turns."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=reaperdoesntknow%2FSymbiotic-8B",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "reaperdoesntknow/Symbiotic-8B: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/reaperdoesntknow/Symbiotic-8B",
+      "snippet": "SymbioticLM-8B is a state-of-the-art hybrid transformer model with built-in symbolic cognition. It combines an 8B Qwen-based transformer with modular symbolic processors and a persistent memory buffer."
+    },
+    {
+      "title": "reaperdoesntknow/Symbiotic-8B · Discussions",
+      "url": "https://89.33.192.147:6443/reaperdoesntknow/Symbiotic-8B/discussions",
+      "snippet": "reaperdoesntknow / Symbiotic-8B like 6 Text Generation Transformers Safetensors 0xZee/dataset-CoT-Advanced-Calculus-268 English qwen3 8b qwen3-8b symbiotic symbtioicai convergentintel conversational text-generation-inference License:afl-3.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://89.33.192.147:6443/models?apps=ollama&other=base_model:quantized:reaperdoesntknow/Symbiotic-8B",
+      "snippet": "Model Tree reaperdoesntknow/Symbiotic-8B Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc"
+    }
+  ]
+}

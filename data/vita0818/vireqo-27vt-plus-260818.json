@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Vita0818/Vireqo-27VT-Plus-260818",
+  "slug": "vita0818-vireqo-27vt-plus-260818",
+  "author": "Vita0818",
+  "url": "https://huggingface.co/Vita0818/Vireqo-27VT-Plus-260818",
+  "created_at": "2026-08-18T07:46:13.000Z",
+  "updated_at": "2026-08-18T07:49:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vision-language",
+    "reasoning",
+    "bounded-thinking",
+    "qwen3-vl",
+    "mmproj",
+    "ternary",
+    "q2_0",
+    "lm-studio",
+    "experimental",
+    "image-text-to-text",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 8214579168,
+  "storage_human": "8.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B, prism-ml/Ternary-Bonsai-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vita0818 (Vita) / Repositories · GitHub",
+      "url": "https://github.com/Vita0818?tab=repositories",
+      "snippet": "Vita0818 has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - Vita0818/Test",
+      "url": "https://github.com/Vita0818/Test/tree/main",
+      "snippet": "Contribute to Vita0818/Test development by creating an account on GitHub."
+    },
+    {
+      "title": "VITA",
+      "url": "https://vday.io/",
+      "snippet": "Easily create Pro quality videos Video Editor, VITA Terms of Use Privacy Policy © SNOW Corp."
+    },
+    {
+      "title": "Sora 2 is here | OpenAI",
+      "url": "https://openai.com/index/sora-2/",
+      "snippet": "This post introduced Sora 2, a video generation model with synchronized dialogue and sound effects. The Sora product is no longer available."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

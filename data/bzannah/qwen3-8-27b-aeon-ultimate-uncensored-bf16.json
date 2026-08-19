@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "bzannah/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "slug": "bzannah-qwen3-8-27b-aeon-ultimate-uncensored-bf16",
+  "author": "bzannah",
+  "url": "https://huggingface.co/bzannah/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "created_at": "2026-08-16T19:24:47.000Z",
+  "updated_at": "2026-08-16T19:24:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "27b",
+    "abliterated",
+    "abliterix",
+    "aeon",
+    "aeon-7",
+    "bf16",
+    "bfloat16",
+    "chat",
+    "coding",
+    "conversational",
+    "function-calling",
+    "gated-deltanet",
+    "gdn",
+    "hybrid-attention",
+    "instruct",
+    "multimodal",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "reasoning",
+    "refusal-removed",
+    "thinking",
+    "tool-calling",
+    "uncensored",
+    "unfiltered",
+    "vision",
+    "vision-language",
+    "vllm",
+    "text-generation",
+    "en",
+    "zh",
+    "multilingual",
+    "arxiv:2406.11717",
+    "arxiv:2503.00555",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 251,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582998028,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 Clear all"
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop. Qwen3.8-2.4T-A95B is a 2.4T parameter (95B active) model with ..."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

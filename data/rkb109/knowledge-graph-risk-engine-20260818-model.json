@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/knowledge-graph-risk-engine-20260818-model",
+  "slug": "rkb109-knowledge-graph-risk-engine-20260818-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/knowledge-graph-risk-engine-20260818-model",
+  "created_at": "2026-08-18T13:57:06.000Z",
+  "updated_at": "2026-08-18T13:57:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "knowledge-graphs",
+    "token-classification",
+    "feature-extraction",
+    "question-answering",
+    "sentence-similarity",
+    "dataset:RKB109/knowledge-graph-risk-engine-20260818-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/knowledge-graph-risk-engine-20260719-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/knowledge-graph-risk-engine-20260719-model",
+      "snippet": "Knowledge Graph Risk Engine Baseline Model Model Description This repository contains a small, transparent prototype model for Risk teams need relationship-level explanations instead of opaque entity scores. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    },
+    {
+      "title": "RKB109/knowledge-graph-risk-engine-20260719-dataset · Datasets at ...",
+      "url": "https://huggingface.co/datasets/RKB109/knowledge-graph-risk-engine-20260719-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - R-behera/knowledge-graph-risk-engine-20260719: An explainable ...",
+      "url": "https://github.com/R-behera/knowledge-graph-risk-engine-20260719",
+      "snippet": "Knowledge Graph Risk Engine An explainable knowledge-graph pipeline for entity links, relationship paths, and risk evidence. Generated on 2026-07-19 as an independent production-AI architecture project."
+    },
+    {
+      "title": "GitHub - SajeevSenthil/FraudShield-AI: An agentic AI-powered fraud ...",
+      "url": "https://github.com/SajeevSenthil/FraudShield-AI",
+      "snippet": "An Agentic AI app for Financial Fraud Detection using Graph RAG. An AI-driven fraud detection system leveraging Knowledge Graphs, Graph RAG, ArangoDB, and NetworkX for intelligent, adaptive fraud analysis."
+    },
+    {
+      "title": "Building a Knowledge Graph: A Comprehensive End-to-End Guide Using ...",
+      "url": "https://medium.com/@brian-curry-research/building-a-knowledge-graph-a-comprehensive-end-to-end-guide-using-modern-tools-e06fe8f3b368",
+      "snippet": "This guide walks you through the complete end-to-end process of building a knowledge graph — from raw data to queryable intelligence — using the best tools available today."
+    }
+  ]
+}

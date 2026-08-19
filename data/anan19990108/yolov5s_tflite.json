@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "anan19990108/yolov5s_tflite",
+  "slug": "anan19990108-yolov5s_tflite",
+  "author": "anan19990108",
+  "url": "https://huggingface.co/anan19990108/yolov5s_tflite",
+  "created_at": "2026-03-24T01:36:07.000Z",
+  "updated_at": "2026-08-18T08:20:19.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "yolov5",
+    "object-detection",
+    "int8",
+    "uint8",
+    "edge-ai",
+    "android",
+    "base_model:Ultralytics/YOLOv5",
+    "base_model:finetune:Ultralytics/YOLOv5",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73646880,
+  "storage_human": "74 MB",
+  "base_model": "Ultralytics/YOLOv5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anan19990108/yolov5s_tflite · Hugging Face",
+      "url": "https://huggingface.co/anan19990108/yolov5s_tflite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "anan19990108/yolov5s_tflite at main - Hugging Face",
+      "url": "https://huggingface.co/anan19990108/yolov5s_tflite/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - neso613/yolo-v5-tflite-model: YOLOv5 - most advanced vision AI ...",
+      "url": "https://github.com/neso613/yolo-v5-tflite-model",
+      "snippet": "YOLOv5 - most advanced vision AI model for object detection. Natively implemented in PyTorch and exportable to TFLite for use in edge solutions. - neso613/yolo-v5-tflite-model"
+    },
+    {
+      "title": "YOLOv5s Models — IoT AI Hub documentation",
+      "url": "https://genio.mediatek.com/doc/iot-aihub/ai_hub/model_zoo/litert_analytical/YOLOv5s.html",
+      "snippet": "To convert the PyTorch model to an FP32 TFLite format, create a new Python script named convert_to_tflite.py in the root directory of your YOLOv5 project. This script will handle the conversion process to generate a non-quantized, full-precision TFLite model."
+    },
+    {
+      "title": "Model Converter — IoT AI Hub documentation",
+      "url": "https://genio.mediatek.com/doc/iot-aihub/ai_hub/ai-workflow/model_converter.html",
+      "snippet": "Model Converter This page describes supported methods for converting YOLOv5s PyTorch models to TFLite format. It focuses on two primary conversion paths: An open-source converter script from the YOLOv5 project. The MediaTek MTK Converter tool, provided as part of the NeuroPilot SDK. YOLOv5s Model Conversion"
+    }
+  ]
+}

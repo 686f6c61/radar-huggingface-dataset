@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tope1129/cas-smo-v34",
+  "slug": "tope1129-cas-smo-v34",
+  "author": "tope1129",
+  "url": "https://huggingface.co/tope1129/cas-smo-v34",
+  "created_at": "2026-08-17T20:02:36.000Z",
+  "updated_at": "2026-08-17T20:02:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tope1129/cas-smo-v31 · Hugging Face",
+      "url": "https://huggingface.co/tope1129/cas-smo-v31",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tope1129/cas-smo-v4 · Hugging Face",
+      "url": "https://huggingface.co/tope1129/cas-smo-v4",
+      "snippet": "cas-smo-v4 — king (cascade9) prior with nature-tilted spectral/long-memory, pool-matched cadences, and causal measurement artifacts. Local baseline to beat: cas-smo-v2 geomean 0.16746 on 2026-07-22 (CPU heat). cas-smo-v3&#x27;s weekly/drift dilution scored 0.20513 on the same pool — avoided."
+    },
+    {
+      "title": "V34 — Stable Diffusion Model API",
+      "url": "https://stablediffusionapi.com/models/v34",
+      "snippet": "Use Stable Diffusion model \"V34\" via the Stable Diffusion API — REST endpoint, model_id \"v34\", free tier, cURL/Python/Node samples. No download required."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

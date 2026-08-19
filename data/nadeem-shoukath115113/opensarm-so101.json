@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Nadeem-Shoukath115113/opensarm-so101",
+  "slug": "nadeem-shoukath115113-opensarm-so101",
+  "author": "Nadeem-Shoukath115113",
+  "url": "https://huggingface.co/Nadeem-Shoukath115113/opensarm-so101",
+  "created_at": "2026-08-19T00:34:53.000Z",
+  "updated_at": "2026-08-19T00:38:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170250765,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TheRobotStudio/SO-ARM100: Standard Open Arm 100",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "snippet": "Standard Open Arm 100. Contribute to TheRobotStudio/SO-ARM100 development by creating an account on GitHub."
+    },
+    {
+      "title": "Nadeem-Shoukath115113 (Nadeem Shoukath) - Hugging Face",
+      "url": "https://huggingface.co/Nadeem-Shoukath115113/datasets",
+      "snippet": "User profile of Nadeem Shoukath on Hugging Face"
+    },
+    {
+      "title": "SO-101 · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/so101",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SO-ARM101 Robot Model | isaac-sim/Sim-to-Real-SO-101-Workshop | DeepWiki",
+      "url": "https://deepwiki.com/isaac-sim/Sim-to-Real-SO-101-Workshop/3.1-so-arm101-robot-model",
+      "snippet": "Articulation Configuration The SO-ARM101 is defined as an ArticulationCfg object, which encapsulates the spawning parameters, initial state, and actuator models required by Isaac Lab to simulate the robot&#x27;s physics."
+    },
+    {
+      "title": "SO-101 Specifications | SVRC - roboticscenter.ai",
+      "url": "https://www.roboticscenter.ai/hardware/so-101/specs",
+      "snippet": "Full technical specifications for the SO-101 open-source robot arm: 6 DOF, Feetech STS3215 servos, USB serial, LeRobot native, ~$100-200 DIY build cost."
+    }
+  ]
+}

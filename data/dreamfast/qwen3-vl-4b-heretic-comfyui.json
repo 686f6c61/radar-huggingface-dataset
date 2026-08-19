@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "DreamFast/Qwen3-VL-4b-Heretic-ComfyUI",
+  "slug": "dreamfast-qwen3-vl-4b-heretic-comfyui",
+  "author": "DreamFast",
+  "url": "https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-ComfyUI",
+  "created_at": "2026-07-16T03:56:49.000Z",
+  "updated_at": "2026-08-10T14:11:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "abliteration",
+    "heretic",
+    "uncensored",
+    "qwen3-vl",
+    "qwen3",
+    "vision-language",
+    "text-encoder",
+    "comfyui",
+    "fp8",
+    "int8",
+    "int4",
+    "convrot",
+    "nvfp4",
+    "mxfp8",
+    "learned-rounding",
+    "blackwell",
+    "image-generation",
+    "krea",
+    "krea2",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 73,
+  "downloads_30d": 0,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71516486782,
+  "storage_human": "71.5 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreamFast/Qwen3-VL-4b-Heretic-ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-ComfyUI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DreamFast/Qwen3-VL-4b-Heretic-ComfyUI at main - Hugging Face",
+      "url": "https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-ComfyUI/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-VL-4b-Heretic-ComfyUI by DreamFast | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/dreamfast-qwen3-vl-4b-heretic-comfyui",
+      "snippet": "Explore Qwen3-VL-4b-Heretic-ComfyUI by DreamFast — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "Qwen3-VL-4B Heretic: Uncensored Text Encoder for Krea 2 in ComfyUI",
+      "url": "https://comfyui-wiki.com/en/news/2026-07-16-qwen3-vl-4b-heretic-comfyui",
+      "snippet": "DreamFast has released Qwen3-VL-4B-Instruct Heretic (ComfyUI), a fully abliterated version of the Qwen3-VL-4B-Instruct text encoder packaged specifically for ComfyUI. The model removes safety guardrails while preserving output quality, achieving a 100% HarmBench ASR (Attack Success Rate) compared to the base model&#x27;s 30.8% — with minimal benchmark regression. What is an Abliterated Text ..."
+    },
+    {
+      "title": "Qwen3-VL-4B Heretic: Abliterated Vision-Language Model Released",
+      "url": "https://nathan.sapwell.net/posts/qwen3-vl-4b-heretic/",
+      "snippet": "An abliterated Qwen3-VL-4B-Instruct released across three formats with forensics comparing four Heretic trials. The winner achieves 100% HarmBench compliance with near-zero KL divergence."
+    }
+  ]
+}

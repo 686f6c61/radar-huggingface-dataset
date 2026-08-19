@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vanyabirds/my-cool-model",
+  "slug": "vanyabirds-my-cool-model",
+  "author": "vanyabirds",
+  "url": "https://huggingface.co/vanyabirds/my-cool-model",
+  "created_at": "2026-08-17T17:55:44.000Z",
+  "updated_at": "2026-08-17T18:01:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2405.07960",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3187227103,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huiminzeng/my-cool-model · Hugging Face",
+      "url": "https://huggingface.co/huiminzeng/my-cool-model",
+      "snippet": "To start with, we present Chameleon dataset, consisting AI-generated images that are genuinely challenging for human perception. To quantify the generalization of existing methods, we evaluate 9 off-the-shelf AI-generated image detectors on Chameleon dataset. Upon analysis, almost all models classify AI-generated images as real ones."
+    },
+    {
+      "title": "andy +cool little girls — Yandex: found 6 thousand results",
+      "url": "https://wap.yandex.com/search?text=andy+%2Bcool+little+girls&lr=21206&missword=1",
+      "snippet": "Cute, cool attitude little girls, elementary students jumping of joy and happiness against grey studio background. Concept of childhood, kid&#x27;s fashion and beauty, style, school shopping."
+    },
+    {
+      "title": "+cute teen model — Yandex: found 2 thousand results",
+      "url": "https://tv.yandex.com/search/?lr=86&text=%2Bcute+teen+model&p=1",
+      "snippet": "Portrait of cute thoughtful teen model wearing white sweater and black jeans. caucasian skinny young female with blond hair stands in front of white brick wall. natural..."
+    },
+    {
+      "title": "VModel - AI Models | Explore and Run AI Models",
+      "url": "https://vmodel.ai/models/",
+      "snippet": "Discover and run a wide range of AI models for various applications. Explore our collection of models and start using them today."
+    },
+    {
+      "title": "models me andy pioneer cool +nymph art cool — Yandex: found 2 thousand ...",
+      "url": "https://online.yandex.com/search?text=models+me+andy+pioneer+cool+%2Bnymph+art+cool&lr=21206&missword=1",
+      "snippet": "Search from thousands of royalty-free Cool Nymph Models stock images and video for your next project. Download royalty-free stock photos, vectors, HD footage and more on Adobe Stock. ... 330 results for cool nymph models in all."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MedSafetyLM-1-GGUF",
+  "slug": "mradermacher-medsafetylm-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MedSafetyLM-1-GGUF",
+  "created_at": "2026-07-13T09:34:51.000Z",
+  "updated_at": "2026-08-16T17:28:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "safety",
+    "content-moderation",
+    "qlora",
+    "en",
+    "base_model:Larxel/HealthSafetyLM-BR",
+    "base_model:quantized:Larxel/HealthSafetyLM-BR",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 263,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 37274458304,
+  "storage_human": "37.3 GB",
+  "base_model": "Larxel/HealthSafetyLM-BR",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

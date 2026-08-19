@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NeoteAI/n0-twam-univtac-absee",
+  "slug": "neoteai-n0-twam-univtac-absee",
+  "author": "NeoteAI",
+  "url": "https://huggingface.co/NeoteAI/n0-twam-univtac-absee",
+  "created_at": "2026-08-04T06:57:34.000Z",
+  "updated_at": "2026-08-18T14:11:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7207357844,
+  "parameters_human": "7.21B",
+  "storage_bytes": 14415018952,
+  "storage_human": "14.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeoteAI/n0-twam-univtac-absee · Hugging Face",
+      "url": "https://huggingface.co/NeoteAI/n0-twam-univtac-absee",
+      "snippet": "Instructions to use NeoteAI/n0-twam-univtac-absee with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use NeoteAI/n0-twam-univtac-absee with Diffusers:"
+    },
+    {
+      "title": "GitHub - neoteai/N0-TWAM: N₀-TWAM: A Tactile-Native World Action Model ...",
+      "url": "https://github.com/neoteai/N0-TWAM",
+      "snippet": "N 0 ${}_{N}$ -TWAM is a Vision-Tactile-Action world-action model. Vision, tactile, and action are jointly modeled by a Mixture-of-Transformers (MoT) under a single rectified-flow / flow-matching objective, so the model both predicts the visual and tactile future and generates the low-level action that realizes it."
+    },
+    {
+      "title": "N0-TWAM - Scaling Tactile-Native World Action Model for Contact-Rich ...",
+      "url": "https://research.neoteai.com/n0-twam/",
+      "snippet": "We present ${&#92;mathcal{N}}_{0}$ -TWAM, a tactile-native world-action model for contact-rich manipulation. Rather than regress actions from the present observation, it learns one generative model that rolls forward what the robot will see, what it will feel, and what it should do."
+    },
+    {
+      "title": "NeoteAI/n0-twam-base · Hugging Face",
+      "url": "https://huggingface.co/NeoteAI/n0-twam-base",
+      "snippet": "NeoteAI / n0-twam-base like 0 Robotics Diffusers Safetensors n0_twam manipulation vision-tactile-action world-action-model diffusion flow-matching mixture-of-transformers License:cc-by-nc-sa-4. Model card FilesFiles and versions xet Community Copy to bucket new N0 -TWAM — A Tactile-Native World Action Model Contents Usage"
+    },
+    {
+      "title": "N0-TWAM/README.md at main · neoteai/N0-TWAM · GitHub",
+      "url": "https://github.com/neoteai/N0-TWAM/blob/main/README.md",
+      "snippet": "N₀-TWAM: A Tactile-Native World Action Model for Contact-Rich Manipulation - N0-TWAM/README.md at main · neoteai/N0-TWAM"
+    }
+  ]
+}

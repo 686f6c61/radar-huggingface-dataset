@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-topaz",
+  "slug": "tohirju-sl-topaz",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-topaz",
+  "created_at": "2026-08-04T20:21:59.000Z",
+  "updated_at": "2026-08-14T12:49:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 382607056,
+  "storage_human": "383 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

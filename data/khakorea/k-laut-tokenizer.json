@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "khaKorea/K-Laut-Tokenizer",
+  "slug": "khakorea-k-laut-tokenizer",
+  "author": "khaKorea",
+  "url": "https://huggingface.co/khaKorea/K-Laut-Tokenizer",
+  "created_at": "2026-08-11T15:27:39.000Z",
+  "updated_at": "2026-08-16T10:04:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

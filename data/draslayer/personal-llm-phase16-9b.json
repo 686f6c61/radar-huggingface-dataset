@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DraSlayer/personal-llm-phase16-9b",
+  "slug": "draslayer-personal-llm-phase16-9b",
+  "author": "DraSlayer",
+  "url": "https://huggingface.co/DraSlayer/personal-llm-phase16-9b",
+  "created_at": "2026-08-18T14:45:08.000Z",
+  "updated_at": "2026-08-18T14:45:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252807389,
+  "storage_human": "253 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DraSlayer/personal-llm-phase15-9b · Hugging Face",
+      "url": "https://huggingface.co/DraSlayer/personal-llm-phase15-9b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DraSlayer/personal-llm-phase8-9b · Hugging Face",
+      "url": "https://huggingface.co/DraSlayer/personal-llm-phase8-9b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 236 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 67 providers compared."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - AI Models Ranked",
+      "url": "https://lmmarketcap.com/",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT-5, Claude Opus, Gemini, DeepSeek, Llama, Mistral and more with source-backed freshness."
+    },
+    {
+      "title": "All 388 AI Models Compared — LLM Directory 2026",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 388 large language models across 291 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    }
+  ]
+}

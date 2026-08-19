@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF",
+  "slug": "vcruz305-muse-glimmer-30b-hermes-agentic-gguf",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF",
+  "created_at": "2026-08-14T09:23:45.000Z",
+  "updated_at": "2026-08-17T00:44:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "muse",
+    "muse-glimmer",
+    "hermes-agent",
+    "tool-calling",
+    "agentic",
+    "llama.cpp",
+    "image-text-to-text",
+    "en",
+    "dataset:vcruz305/hermes-agentic-tool-sft",
+    "base_model:vcruz305/Muse-Glimmer-30B-Hermes-Agentic",
+    "base_model:quantized:vcruz305/Muse-Glimmer-30B-Hermes-Agentic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 267,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 169319568416,
+  "storage_human": "169.3 GB",
+  "base_model": "vcruz305/Muse-Glimmer-30B-Hermes-Agentic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vcruz305/Muse-Glimmer-30B-Hermes-Agentic · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic",
+      "snippet": "This is an improved fine-tune of Muse Glimmer 30B for Hermes Agent and other agentic tool work. Merged 16-bit weights that teach the model to call one or two tools and stop."
+    },
+    {
+      "title": "vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF",
+      "snippet": "Instructions to use vcruz305/Muse-Glimmer-30B-Hermes-Agentic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, served on vLLM with native Onyx tool-calling and reasoning parsers."
+    },
+    {
+      "title": "Muse Glimmer | Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "GitHub - cobusgreyling/Muse-Glimmer: Introducing Muse Glimmer: open ...",
+      "url": "https://github.com/cobusgreyling/Muse-Glimmer/tree/main",
+      "snippet": "Introducing Muse Glimmer: open-weight 30B agentic multimodal model that runs on your device (Meta). Interactive local agent lab + guide. Apache 2.0 · on-device AI · function calling - cobusgreyling..."
+    }
+  ]
+}

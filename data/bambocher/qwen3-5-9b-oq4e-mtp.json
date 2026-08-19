@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bambocher/Qwen3.5-9B-oQ4e-mtp",
+  "slug": "bambocher-qwen3-5-9b-oq4e-mtp",
+  "author": "bambocher",
+  "url": "https://huggingface.co/bambocher/Qwen3.5-9B-oQ4e-mtp",
+  "created_at": "2026-08-17T20:52:54.000Z",
+  "updated_at": "2026-08-17T20:54:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 1946160880,
+  "parameters_human": "1.95B",
+  "storage_bytes": 6243664258,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "himefei/Qwen3.5-9B-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/himefei/Qwen3.5-9B-oQ4e-mtp",
+      "snippet": "Instructions to use himefei/Qwen3.5-9B-oQ4e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use himefei/Qwen3.5-9B-oQ4e-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.5-9B-oQ4e-mtp himefei/Qwen3.5-9B-oQ4e-mtp Notebooks Google Colab Kaggle ..."
+    },
+    {
+      "title": "TheWirelessPhoenix/Qwen3.5-9B-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/TheWirelessPhoenix/Qwen3.5-9B-oQ4e-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp-gguf-davidau",
+      "snippet": "Overview Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF is a fine-tuned 9-billion-parameter language model built by DavidAU that achieves benchmark scores exceeding multiple larger Qwen models while remaining fully uncensored and optimized for consumer hardware. The model is a multi-stage, multi-model fine-tune and merge incorporating several of DavidAU&#x27;s previous 9B ..."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

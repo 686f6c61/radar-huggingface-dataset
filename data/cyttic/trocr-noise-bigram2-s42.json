@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cyttic/trocr-noise-bigram2-s42",
+  "slug": "cyttic-trocr-noise-bigram2-s42",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/trocr-noise-bigram2-s42",
+  "created_at": "2026-08-17T18:58:50.000Z",
+  "updated_at": "2026-08-18T00:22:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:cyttic/exp2-frozen-benyehuda-cont",
+    "base_model:finetune:cyttic/exp2-frozen-benyehuda-cont",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 299495168,
+  "parameters_human": "299.5M",
+  "storage_bytes": 3594130905,
+  "storage_human": "3.6 GB",
+  "base_model": "cyttic/exp2-frozen-benyehuda-cont",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyttic (Renir VII) - Hugging Face",
+      "url": "https://huggingface.co/cyttic",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "cyttic (Renir VII) - Hugging Face",
+      "url": "https://huggingface.co/cyttic/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 1 day ago"
+    },
+    {
+      "title": "GitHub - cyttic/synt-text-combinator",
+      "url": "https://github.com/cyttic/synt-text-combinator",
+      "snippet": "Static fonts give perfect text fidelity but zero style diversity; raw DiffusionPen gives style diversity but hallucinates text. This combines them: render a bigram with a real font, then let the Hebrew-finetuned DiffusionPen (280 SCE writer styles) restyle that image (SDEdit img2img: VAE-encode the font render → noise to an intermediate timestep → denoise conditioned on the bigram text + a ..."
+    },
+    {
+      "title": "GitHub - cyttic/TrOCR_Hebrew",
+      "url": "https://github.com/cyttic/TrOCR_Hebrew",
+      "snippet": "Contribute to cyttic/TrOCR_Hebrew development by creating an account on GitHub."
+    },
+    {
+      "title": "Every Grok AI Model Explained and Compared (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-grok-ai-model-explained-compared/",
+      "snippet": "Every current Grok model also reads images and calls tools, so you can build agents that see and act, not just chat. Pricing compared across the lineup Grok is cheap for its class. Output tokens drive most cost, and the flagship output is $2.50 per million, well below the flagship price of most Western labs."
+    }
+  ]
+}

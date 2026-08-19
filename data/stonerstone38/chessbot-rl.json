@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Stonerstone38/chessbot-rl",
+  "slug": "stonerstone38-chessbot-rl",
+  "author": "Stonerstone38",
+  "url": "https://huggingface.co/Stonerstone38/chessbot-rl",
+  "created_at": "2026-08-18T08:49:40.000Z",
+  "updated_at": "2026-08-18T08:51:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48182093,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - a0w3b/RL-CHESS: A chess game implementation that uses ...",
+      "url": "https://github.com/a0w3b/RL-CHESS",
+      "snippet": "This project, RL-Chess, is a comprehensive chess game implementation designed to train an AI agent using reinforcement learning. It leverages PyTorch for the deep neural network, the python-chess library for robust game logic, and Pygame for an interactive visual interface."
+    },
+    {
+      "title": "GitHub - zjeffer/chess-deep-rl: Research project: create a chess engine ...",
+      "url": "https://github.com/zjeffer/chess-deep-rl",
+      "snippet": "Research project: create a chess engine using Deep Reinforcement Learning - zjeffer/chess-deep-rl"
+    },
+    {
+      "title": "ChessBot - Next best move calculator online",
+      "url": "https://chess-bot.com/online_calculator/next_best_move.html",
+      "snippet": "Analyze any chess position with the Stockfish - strongest chess engine. This online calculator allow you to set up chessboard in real-time and get next best move in a few seconds."
+    },
+    {
+      "title": "Maxlegrec/ChessBot · Hugging Face",
+      "url": "https://huggingface.co/Maxlegrec/ChessBot",
+      "snippet": "ChessBot Chess Model This is a ChessBot model for chess move prediction and position evaluation. This model is way worse than stockfish. It is better than most humans however. For stronger play, reducing temperature T (lower is stronger) is suggested. Model Description The ChessBot model is a transformer-based architecture designed for chess gameplay. It can: Predict the next best move given a ..."
+    },
+    {
+      "title": "Checkmate: Building a Chess AI using Reinforcement Learning",
+      "url": "https://medium.com/@xxii2mmviii/building-a-chess-ai-using-reinforcement-learning-09868a2fb6df",
+      "snippet": "Checkmate: Building a Chess AI using Reinforcement Learning Reinforcement Learning (RL), as you might have heard from another article, is one of the three major forms of AI. It&#x27;s quite special ..."
+    }
+  ]
+}

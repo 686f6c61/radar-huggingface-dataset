@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mkim0818/paia-lane-vl-adapter-place",
+  "slug": "mkim0818-paia-lane-vl-adapter-place",
+  "author": "mkim0818",
+  "url": "https://huggingface.co/mkim0818/paia-lane-vl-adapter-place",
+  "created_at": "2026-08-14T05:19:09.000Z",
+  "updated_at": "2026-08-14T05:19:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "llama-factory",
+    "lora",
+    "generated_from_trainer",
+    "base_model:openbmb/MiniCPM-V-4_5",
+    "base_model:adapter:openbmb/MiniCPM-V-4_5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72906118,
+  "storage_human": "73 MB",
+  "base_model": "openbmb/MiniCPM-V-4_5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mkim0818/paia-lane-vl-adapter · Hugging Face",
+      "url": "https://huggingface.co/mkim0818/paia-lane-vl-adapter",
+      "snippet": "mkim0818 / paia-lane-vl-adapter like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "mkim0818 (Minyoung) - Hugging Face",
+      "url": "https://huggingface.co/mkim0818",
+      "snippet": "PAIA Lane-Change Fine-tuning 🚗 Monitor PAIA lane‑change fine‑tuning logs in real time mkim0818 25 minutes ago"
+    },
+    {
+      "title": "paia-lane-vl-adapter API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/mkim0818/paia-lane-vl-adapter",
+      "snippet": "Run paia-lane-vl-adapter with FriendliAI inference. [More Information Needed]."
+    },
+    {
+      "title": "mkim0818/paia-lane-vl-adapter-video · Hugging Face",
+      "url": "https://huggingface.co/mkim0818/paia-lane-vl-adapter-video",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mkim0818 · GitHub",
+      "url": "https://github.com/mkim0818",
+      "snippet": "mkim0818 has 3 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

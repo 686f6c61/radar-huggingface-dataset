@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hazarsozer/hallm-wikitext103",
+  "slug": "hazarsozer-hallm-wikitext103",
+  "author": "hazarsozer",
+  "url": "https://huggingface.co/hazarsozer/hallm-wikitext103",
+  "created_at": "2026-08-18T16:08:48.000Z",
+  "updated_at": "2026-08-18T16:09:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "weight-sharing",
+    "model-compression",
+    "gpt",
+    "thesis",
+    "en",
+    "dataset:wikitext-103-raw-v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1096039367,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

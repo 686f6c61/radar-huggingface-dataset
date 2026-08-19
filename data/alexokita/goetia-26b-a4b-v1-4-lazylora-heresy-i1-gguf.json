@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF",
+  "slug": "alexokita-goetia-26b-a4b-v1-4-lazylora-heresy-i1-gguf",
+  "author": "alexokita",
+  "url": "https://huggingface.co/alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF",
+  "created_at": "2026-08-14T17:56:30.000Z",
+  "updated_at": "2026-08-14T18:44:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "imatrix",
+    "gemma4",
+    "moe",
+    "base_model:26B-Suite/Goetia-26B-A4B-v1.4-LazyLora-heresy",
+    "base_model:quantized:26B-Suite/Goetia-26B-A4B-v1.4-LazyLora-heresy",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 779,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 118386111424,
+  "storage_human": "118.4 GB",
+  "base_model": "26B-Suite/Goetia-26B-A4B-v1.4-LazyLora-heresy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Naphula/Goetia-26B-A4B-v1.4 · Hugging Face",
+      "url": "https://huggingface.co/Naphula/Goetia-26B-A4B-v1.4",
+      "snippet": "📜 Goetia 26B A4B v1.4 🧙‍♀ The Invocation This is a merge of pre-trained language models created using mergekit. Merge Details Merge Method This model was merged using the MoE DELLA merge method using google/gemma-4-26B-A4B as a base. Models Merged The following models were included in the merge: google/gemma-4-26B-A4B"
+    },
+    {
+      "title": "Goetia-26B-A4B-v1.4-LazyLora-heresy-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Goetia-26B-A4B-v1.4-LazyLora-heresy - FriendliAI",
+      "url": "https://friendli.ai/models/MuXodious/Goetia-26B-A4B-v1.4-LazyLora-heresy",
+      "snippet": "Run Goetia-26B-A4B-v1.4-LazyLora-heresy with FriendliAI inference. This model was produced by extracting Goetia 1.4 LoRA and applying it over the SOMPOA…"
+    },
+    {
+      "title": "Goetia-26B-A4B-v1.4-LazyLora-heresy - FriendliAI",
+      "url": "https://friendli.ai/models/26B-Suite/Goetia-26B-A4B-v1.4-LazyLora-heresy",
+      "snippet": "Deploy Goetia-26B-A4B-v1.4-LazyLora-heresy with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "gemma-4-26B-A4B-it-i1-GGUF huggingface.co api & mradermacher gemma-4 ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-gemma-4-26b-a4b-it-i1-gguf",
+      "snippet": "gemma-4-26B-A4B-it-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find gemma-4-26B-A4B-it-i1-GGUF on GitHub to install."
+    }
+  ]
+}

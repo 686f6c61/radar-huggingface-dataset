@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/thefriend-26b-a4b-v1-GGUF",
+  "slug": "mradermacher-thefriend-26b-a4b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/thefriend-26b-a4b-v1-GGUF",
+  "created_at": "2026-08-15T12:46:56.000Z",
+  "updated_at": "2026-08-15T13:12:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:mfielding92/thefriend-26b-a4b-v1",
+    "base_model:quantized:mfielding92/thefriend-26b-a4b-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 170,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 184858395296,
+  "storage_human": "184.9 GB",
+  "base_model": "mfielding92/thefriend-26b-a4b-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

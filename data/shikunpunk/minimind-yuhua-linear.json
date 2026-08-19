@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shikunpunk/MiniMind-YuHua-Linear",
+  "slug": "shikunpunk-minimind-yuhua-linear",
+  "author": "shikunpunk",
+  "url": "https://huggingface.co/shikunpunk/MiniMind-YuHua-Linear",
+  "created_at": "2026-08-18T13:20:31.000Z",
+  "updated_at": "2026-08-18T13:22:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimind",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 304209474,
+  "storage_human": "304 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk",
+      "snippet": "shikunpunk/poetry-judge-qwen2.5-1.5b-cn Text Generation • 2B•Updated 3 days ago datasets4"
+    },
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/models",
+      "snippet": "shikunpunk&#x27;s models7 Sort: Recently updated shikunpunk/Qwen2.5-3B-LiBai Text Generation • 3B•Updated 1 day ago"
+    },
+    {
+      "title": "MiniMind - Train LLMs from Scratch - jingyaogong.github.io",
+      "url": "https://jingyaogong.github.io/minimind/",
+      "snippet": "MiniMind-V1-MoE model release Standardized minimind_tokenizer Removed mistral_tokenizer variants"
+    },
+    {
+      "title": "minimind/model/model_minimind.py at master - GitHub",
+      "url": "https://github.com/jingyaogong/minimind/blob/master/model/model_minimind.py",
+      "snippet": "🧠「大模型」2小时完全从0训练64M的小参数LLM!Train a 64M-parameter LLM from scratch in just 2h! - jingyaogong/minimind"
+    },
+    {
+      "title": "GitHub - huchunlinnk/minimind-details",
+      "url": "https://github.com/huchunlinnk/minimind-details",
+      "snippet": "MiniMind 同时拓展了视觉多模态的VLM: MiniMind-V。 项目所有核心算法代码均从0使用PyTorch原生重构! 不依赖第三方库提供的抽象接口。 这不仅是大语言模型的全阶段开源复现，也是一个入门LLM的教程。"
+    }
+  ]
+}

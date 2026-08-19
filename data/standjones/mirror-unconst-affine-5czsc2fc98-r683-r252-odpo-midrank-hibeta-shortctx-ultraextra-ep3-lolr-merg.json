@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "standjones/mirror-unconst-affine-5czsc2fc98-r683-r252-odpo-midrank-hibeta-shortctx-ultraextra-ep3-lolr-merg",
+  "slug": "standjones-mirror-unconst-affine-5czsc2fc98-r683-r252-odpo-midrank-hibeta-shortctx-ultraextra-ep3-lolr-merg",
+  "author": "standjones",
+  "url": "https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r683-r252-odpo-midrank-hibeta-shortctx-ultraextra-ep3-lolr-merg",
+  "created_at": "2026-08-17T22:00:05.000Z",
+  "updated_at": "2026-08-17T22:00:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r683",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 323,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "standjones/mirror-unconst-affine-5czsc2fc98-r576-r252-odpo-hirank ...",
+      "url": "https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged",
+      "snippet": "Axis note: ShortCtx×HiRank UltraExtraSteps on crowned r252. Distinct from ShortCtx×HiRank MidExtra R564 SIGNAL, ShortCtx MidRank Ultra R571, MidCtx Ultra R574, LongCtx Ultra R575, SoftCtx Ultra R573, Online R552, GRPO R565/R577."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r4-fullft · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r4-fullft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Download Free 3D Models - Royalty Free - Sketchfab",
+      "url": "https://sketchfab.com/features/free-3d-models",
+      "snippet": "Download free 3D models available under Creative Commons on Sketchfab and license thousands of Royalty-Free 3D models from the Sketchfab Store."
+    },
+    {
+      "title": "Downloadable Asset Packs — Omniverse USD",
+      "url": "https://docs.omniverse.nvidia.com/usd/latest/usd_content_samples/downloadable_packs.html",
+      "snippet": "Downloadable Asset Packs # Get started building in Omniverse. On this page, you will find download links to over 250GB of OpenUSD sample 3D assets in .USD format, MDL materials, and environments that are all free for you to use within your own projects. This page will help you understand what each pack contains so that you can choose what is relevant for your own work. Downloading Datasets ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-rus",
+  "slug": "beetle-fineweb3-24b-beetle-monolingual-fineweb3-rus",
+  "author": "Beetle-FineWeb3-24B",
+  "url": "https://huggingface.co/Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-rus",
+  "created_at": "2026-08-18T09:07:01.000Z",
+  "updated_at": "2026-08-18T11:46:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pico_decoder",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 193804032,
+  "parameters_human": "193.8M",
+  "storage_bytes": 57369495340,
+  "storage_human": "57.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-eng - Hugging Face",
+      "url": "https://huggingface.co/Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-eng",
+      "snippet": "Beetle-FineWeb3-24B / beetle-monolingual-fineweb3-eng like 0 Follow Beetle-FineWeb3-24B 1 Text Generation Transformers Safetensors pico_decoder custom_code arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Beetle Explorer - GitHub",
+      "url": "https://github.com/suchirsalhan/beetle-explorer",
+      "snippet": "Choose a model using plain-English menus: which collection (scale / training data) it comes from, the language (s) it learned, the teaching strategy (how and when a second language was introduced), the random seed and any extra settings (anti-forgetting, per-language vocabulary, and so on)."
+    },
+    {
+      "title": "The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale",
+      "url": "https://arxiv.org/html/2406.17557v1",
+      "snippet": "To scale our filtering to the entirety of FineWeb, we trained a linear regression model on top of the Snowflake-arctic-embed-m embedding model [65]. We fine-tuned this linear regressor on 410,000 of our Llama 3 synthetic annotations for 20 epochs with a learning rate of 3e-4 (while keeping the embedding and encoder layers frozen)."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Ornith 1.0 — Open-Source Agentic Coding Models",
+      "url": "https://ornith.site/",
+      "snippet": "Ornith 1.0 is a family of open-source large language models built by DeepReinforce AI specifically for agentic coding. Released on June 25, 2026, Ornith 1.0 spans four parameter sizes — 9B Dense, 31B Dense, 35B MoE, and 397B MoE — all under MIT license with no regional restrictions."
+    }
+  ]
+}

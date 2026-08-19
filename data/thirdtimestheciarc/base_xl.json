@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ThirdTimesTheCiarc/base_xl",
+  "slug": "thirdtimestheciarc-base_xl",
+  "author": "ThirdTimesTheCiarc",
+  "url": "https://huggingface.co/ThirdTimesTheCiarc/base_xl",
+  "created_at": "2026-01-02T14:27:00.000Z",
+  "updated_at": "2026-08-18T02:47:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793240106237,
+  "storage_human": "793.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThirdTimesTheCiarc/base_xl · Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/base_xl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ThirdTimesTheCiarc (Meir Yaffe) - Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/models",
+      "snippet": "User profile of Meir Yaffe on Hugging Face"
+    },
+    {
+      "title": "ThirdTimesTheCiarc/base_xl - LLMs .INFO",
+      "url": "https://llms.info/models/thirdtimestheciarc-base-xl-1281",
+      "snippet": "not-for-all-audiences, region:us"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Best Stable Diffusion Models (2026): SDXL, Flux & Checkpoint List",
+      "url": "https://www.aiarty.com/stable-diffusion-guide/best-stable-diffusion-models.htm",
+      "snippet": "Discover the best Stable Diffusion models in 2026, including SDXL, Flux, SD 3.5, and popular checkpoints. Compare realistic, anime, and creative models with download sources."
+    }
+  ]
+}

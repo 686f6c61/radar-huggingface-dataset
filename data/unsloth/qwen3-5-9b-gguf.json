@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen3.5-9B-GGUF",
+  "slug": "unsloth-qwen3-5-9b-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF",
+  "created_at": "2026-02-28T14:04:29.000Z",
+  "updated_at": "2026-03-02T14:08:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 841,
+  "downloads_30d": 1229858,
+  "trending_score": 15,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 289812206528,
+  "storage_human": "289.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5",
+      "snippet": "Qwen3.5 is Alibaba&#x27;s new model family, including Qwen3.5- 35B -A3B, 27B, 122B -A10B and 397B -A17B and the new Small series: Qwen3.5-0.8B, 2B, 4B and 9B. The multimodal hybrid reasoning LLMs deliver the strongest performances for their sizes."
+    },
+    {
+      "title": "Qwen3.5 - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/qwen35",
+      "snippet": "Qwen3.5 is Qwen&#x27;s new model family including Qwen3.5 Small: 0.8B, 2B, 4B, 9B and Qwen3.5 Medium: 35B-A3B, 27B, 122B-A10B and 397B-A17B."
+    },
+    {
+      "title": "unsloth/Qwen3.5-9B-GGUF Hardware, VRAM, and Deployment Guide | InnoAI",
+      "url": "https://innoai.space/model/unsloth/Qwen3.5-9B-GGUF",
+      "snippet": "Model Deployment Guide unsloth/Qwen3.5-9B-GGUF Hardware, Architecture, and Deployment Guide Qwen 3 models are strong general-purpose open models with useful coverage across multilingual, coding, agentic, and structured-output workloads. At roughly 7B parameters this is a mid-sized model that balances quality and cost, running on a single 16-24 GB GPU in FP16 or comfortably in 4-bit on ..."
+    },
+    {
+      "title": "Unsloth Model Catalog | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/get-started/unsloth-model-catalog",
+      "snippet": "Get Started 🔮 Unsloth Model Catalog Unsloth LLMs directory for all Unsloth Dynamic GGUF, 4-bit, NVFP4 models on Hugging Face. Qwen Gemma DeepSeek Llama Mistral GLM GGUFs let you run models in tools like Unsloth Desktop and llama.cpp. Use Instruct (4-bit) safetensors for inference or fine-tuning via Unsloth. New & recommended models: Model ..."
+    }
+  ]
+}

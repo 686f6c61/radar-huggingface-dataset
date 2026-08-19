@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "windowsxp811203/Qwen3.8-27B-Abliterated-GGUF",
+  "slug": "windowsxp811203-qwen3-8-27b-abliterated-gguf",
+  "author": "windowsxp811203",
+  "url": "https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-GGUF",
+  "created_at": "2026-08-15T15:05:31.000Z",
+  "updated_at": "2026-08-16T03:54:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "imatrix",
+    "mtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:windowsxp811203/Qwen3.8-27B-Abliterated",
+    "base_model:quantized:windowsxp811203/Qwen3.8-27B-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 129,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 104074791488,
+  "storage_human": "104.1 GB",
+  "base_model": "windowsxp811203/Qwen3.8-27B-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

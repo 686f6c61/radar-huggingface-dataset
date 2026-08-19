@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "SasmithaLochana/nllb-idiom-lora-en-si-tagged",
+  "slug": "sasmithalochana-nllb-idiom-lora-en-si-tagged",
+  "author": "SasmithaLochana",
+  "url": "https://huggingface.co/SasmithaLochana/nllb-idiom-lora-en-si-tagged",
+  "created_at": "2026-08-15T13:58:39.000Z",
+  "updated_at": "2026-08-15T13:58:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59111618,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/styletts2-ljspeech-loom",
+  "slug": "loom-ai-org-styletts2-ljspeech-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/styletts2-ljspeech-loom",
+  "created_at": "2026-08-11T11:04:15.000Z",
+  "updated_at": "2026-08-16T13:04:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "loom-py-rt",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "text-to-speech",
+    "en",
+    "base_model:yl4579/StyleTTS2-LJSpeech",
+    "base_model:quantized:yl4579/StyleTTS2-LJSpeech",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 84,
+  "trending_score": 0,
+  "parameters": 102670947,
+  "parameters_human": "102.7M",
+  "storage_bytes": 1644194880,
+  "storage_human": "1.6 GB",
+  "base_model": "yl4579/StyleTTS2-LJSpeech",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

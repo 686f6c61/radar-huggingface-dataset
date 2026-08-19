@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "axjns/strix-halo-kernels",
+  "slug": "axjns-strix-halo-kernels",
+  "author": "axjns",
+  "url": "https://huggingface.co/axjns/strix-halo-kernels",
+  "created_at": "2026-08-17T13:28:27.000Z",
+  "updated_at": "2026-08-17T13:28:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kernel",
+    "rocm",
+    "amd",
+    "triton",
+    "strix-halo",
+    "gfx1151",
+    "rmsnorm",
+    "geglu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joelhenwang/autokernel-halo-strix - GitHub",
+      "url": "https://github.com/joelhenwang/autokernel-halo-strix",
+      "snippet": "Autoresearch for GPU kernels and training. Give it any PyTorch model, go to sleep, wake up to optimized HIP C++ kernels and a trained model on AMD Strix Halo (gfx1151, RDNA 3.5). Inspired by @karpathy/autoresearch-- which demonstrated autonomous AI agents for LLM training research. AutoKernel ..."
+    },
+    {
+      "title": "autokernel-halo-strix/README.md at main · joelhenwang ... - GitHub",
+      "url": "https://github.com/joelhenwang/autokernel-halo-strix/blob/main/README.md",
+      "snippet": "AutoKernel Autoresearch for GPU kernels. Give it any PyTorch model, go to sleep, wake up to optimized HIP C++ kernels for AMD Strix Halo (gfx1151, RDNA 3.5). Inspired by @karpathy/autoresearch -- which demonstrated autonomous AI agents for LLM training research."
+    },
+    {
+      "title": "Run Local LLMs on AMD Strix Halo (Ryzen AI Max+ 395)",
+      "url": "https://codersera.com/blog/amd-strix-halo-ryzen-ai-max-local-llm-setup-2026/",
+      "snippet": "Run Local LLMs on AMD Strix Halo (Ryzen AI Max+ 395) Hands-on setup for running 70B and 120B LLMs on the Ryzen AI Max+ 395: memory allocation, ROCm vs Vulkan, quants that fit, and real tokens/sec."
+    },
+    {
+      "title": "Strix Halo AI Toolboxes",
+      "url": "https://strix-halo-toolboxes.com/",
+      "snippet": "Strix Halo AI Toolboxes Toolboxes for GenAI on AMD Ryzen AI MAX+ Containerized environments for LLMs, Image Generation, and Fine-tuning."
+    },
+    {
+      "title": "AMD Ryzen™ AI Halo for AI Developers",
+      "url": "https://www.amd.com/en/products/processors/desktops/ryzen/ryzen-ai-halo.html",
+      "snippet": "Comes with preconfigured software to build, run, and scale AI locally. AMD Ryzen™ AI Halo delivers predictable cost per token, avoiding cloud cost uncertainty."
+    }
+  ]
+}

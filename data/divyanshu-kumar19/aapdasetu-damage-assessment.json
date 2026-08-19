@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Divyanshu-Kumar19/aapdasetu-damage-assessment",
+  "slug": "divyanshu-kumar19-aapdasetu-damage-assessment",
+  "author": "Divyanshu-Kumar19",
+  "url": "https://huggingface.co/Divyanshu-Kumar19/aapdasetu-damage-assessment",
+  "created_at": "2026-08-08T06:43:27.000Z",
+  "updated_at": "2026-08-18T02:12:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "resnet50",
+    "damage-assessment",
+    "disaster-response",
+    "building-damage",
+    "smart-india-hackathon",
+    "image-classification",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 365648486,
+  "storage_human": "366 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Divyanshu-Kumar19/aapdasetu-damage-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/Divyanshu-Kumar19/aapdasetu-damage-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Divyanshu-Kumar19/aapdasetu-damage-dataset · Hugging Face",
+      "url": "https://huggingface.co/Divyanshu-Kumar19/aapdasetu-damage-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Divyanshu-Kumar19 (Divyanshu Kumar) · GitHub",
+      "url": "https://github.com/Divyanshu-Kumar19/",
+      "snippet": "Hi there, I&#x27;m Divyanshu Kumar 👋 🚀 About Me 🎓 2nd Year BTech CSE student at ITER, SOA University 📊 Aspiring Data Scientist passionate about Data Science & Machine Learning 💻 Love building projects and solving complex problems 🌱 Currently exploring ** DSML concepts ** ⚡ Constantly evolving with tech!"
+    },
+    {
+      "title": "GitHub - AyushKumar-Singh/Aapda-Setu: AI-powered emergency & disaster ...",
+      "url": "https://github.com/AyushKumar-Singh/Aapda-Setu",
+      "snippet": "Real-time disaster reporting, ML-powered verification, and emergency alert broadcasting platform for India Aapda Setu is a comprehensive disaster management platform that leverages artificial intelligence for rapid disaster response coordination. The system enables citizens to report emergencies, uses ML models for automatic verification, and helps authorities coordinate relief efforts through ..."
+    },
+    {
+      "title": "[2505.08202] AI and Generative AI Transforming Disaster Management: A ...",
+      "url": "https://arxiv.org/abs/2505.08202",
+      "snippet": "Natural disasters, including earthquakes, wildfires and cyclones, bear a huge risk on human lives as well as infrastructure assets. An effective response to disaster depends on the ability to rapidly and efficiently assess the intensity of damage. Artificial Intelligence (AI) and Generative Artificial Intelligence (GenAI) presents a breakthrough solution, capable of combining knowledge from ..."
+    }
+  ]
+}

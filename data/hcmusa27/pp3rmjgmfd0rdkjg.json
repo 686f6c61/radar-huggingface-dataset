@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "hcmusa27/PP3RMJgmfd0RDkjG",
+  "slug": "hcmusa27-pp3rmjgmfd0rdkjg",
+  "author": "hcmusa27",
+  "url": "https://huggingface.co/hcmusa27/PP3RMJgmfd0RDkjG",
+  "created_at": "2026-08-11T06:13:37.000Z",
+  "updated_at": "2026-08-17T08:39:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251693198524,
+  "storage_human": "251.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

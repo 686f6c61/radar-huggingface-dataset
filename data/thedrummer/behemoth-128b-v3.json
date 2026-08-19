@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "TheDrummer/Behemoth-128B-v3",
+  "slug": "thedrummer-behemoth-128b-v3",
+  "author": "TheDrummer",
+  "url": "https://huggingface.co/TheDrummer/Behemoth-128B-v3",
+  "created_at": "2026-08-18T13:41:30.000Z",
+  "updated_at": "2026-08-18T16:19:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "base_model:mistralai/Mistral-Medium-3.5-128B",
+    "base_model:finetune:mistralai/Mistral-Medium-3.5-128B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125025988608,
+  "parameters_human": "125.03B",
+  "storage_bytes": 250069147868,
+  "storage_human": "250.1 GB",
+  "base_model": "mistralai/Mistral-Medium-3.5-128B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

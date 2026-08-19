@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hesh0629/smolvla-pick_bottle_v4",
+  "slug": "hesh0629-smolvla-pick_bottle_v4",
+  "author": "hesh0629",
+  "url": "https://huggingface.co/hesh0629/smolvla-pick_bottle_v4",
+  "created_at": "2026-08-15T22:39:33.000Z",
+  "updated_at": "2026-08-15T22:40:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:hesh0629/pick_bottle_v4",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197796760,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

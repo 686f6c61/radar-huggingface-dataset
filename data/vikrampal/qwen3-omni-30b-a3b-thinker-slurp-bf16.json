@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-bf16",
+  "slug": "vikrampal-qwen3-omni-30b-a3b-thinker-slurp-bf16",
+  "author": "VikramPal",
+  "url": "https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-bf16",
+  "created_at": "2026-08-16T19:54:55.000Z",
+  "updated_at": "2026-08-16T20:39:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_omni_moe_thinker",
+    "image-text-to-text",
+    "qwen3-omni",
+    "thinker",
+    "moe",
+    "spoken-language-understanding",
+    "intent-classification",
+    "slurp",
+    "qlora",
+    "audio-text-to-text",
+    "en",
+    "dataset:marcel-gohsen/slurp",
+    "base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 31719205488,
+  "parameters_human": "31.72B",
+  "storage_bytes": 63452300446,
+  "storage_human": "63.5 GB",
+  "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Omni-30B-A3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "snippet": "The Qwen3-Omni-30B-A3B-Thinking model is primarily designed for understanding and interacting with multimodal inputs, including text, audio, image, and video. To achieve optimal performance, we recommend that users include an explicit textual instruction or task description in each round of dialogue alongside the multimodal input."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Omni: Qwen3-omni is a natively end-to-end, omni ...",
+      "url": "https://github.com/QwenLM/Qwen3-Omni",
+      "snippet": "The Qwen3-Omni-30B-A3B-Thinking model is primarily designed for understanding and interacting with multimodal inputs, including text, audio, image, and video. To achieve optimal performance, we recommend that users include an explicit textual instruction or task description in each round of dialogue alongside the multimodal input."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-Omni-30B-A3B-Instruct at main",
+      "url": "https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct/blob/main/README.md?code=true",
+      "snippet": "The `Qwen3-Omni-30B-A3B-Thinking` model is primarily designed for understanding and interacting with multimodal inputs, including text, audio, image, and video."
+    },
+    {
+      "title": "Model Variants | QwenLM/Qwen3-Omni | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3-Omni/3.1-model-variants",
+      "snippet": "The Qwen3-Omni-30B-A3B-Thinking model focuses exclusively on reasoning and understanding, containing only the Thinker component with enhanced chain-of-thought capabilities."
+    },
+    {
+      "title": "Ai3090/models/qwen3-omni-30b-a3b/vllm-omni/README.md at master ... - GitHub",
+      "url": "https://github.com/donwellsav/Ai3090/blob/master/models/qwen3-omni-30b-a3b/vllm-omni/README.md",
+      "snippet": "Run Alibaba&#x27;s Qwen3-Omni-30B-A3B-Instruct (omni-modal: text / image / audio / video in, text + speech out) on two RTX 3090s via the vLLM-Omni framework. Status: 🧪 Experimental. The text path is validated on this rig (full 65 K context, needle-in-haystack recall clean at 60 K, coherent output). Audio/speech output works in principle but is unvalidated here. This model is not in the central ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Roy229/hf_tt_cfc1b8_gpt_tiny_chat",
+  "slug": "roy229-hf_tt_cfc1b8_gpt_tiny_chat",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/hf_tt_cfc1b8_gpt_tiny_chat",
+  "created_at": "2026-08-15T05:47:48.000Z",
+  "updated_at": "2026-08-17T03:58:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "conversational",
+    "aurora-model",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "CrushOn.AI: AI Girlfriend Chat & AI Roleplay - Start Now",
+      "url": "https://chat.crushon.ai/",
+      "snippet": "Chat with 8M+ AI characters on CrushOn.AI — AI girlfriends, boyfriends, anime characters & roleplay companions with persistent memory. Free to start, no credit card."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Leadmatic/tinyChat · Hugging Face",
+      "url": "https://huggingface.co/Leadmatic/tinyChat",
+      "snippet": "Introducing tinyChat, the instruction-based Large Language Model (LLM) that&#x27;s less than 1% the size of GPT-3.5. tinyChat is an open-source model under the Apache 2.0 license and based on Google&#x27;s Flan-T5-Large, a 770m parameter model. By fine tuning on the databricks-dolly-15k dataset, tinyChat demonstrates improved outputs on a range of tasks compared to Flan-T5. Although not as ..."
+    }
+  ]
+}

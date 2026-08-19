@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Quark-135m-GGUF",
+  "slug": "mradermacher-quark-135m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Quark-135m-GGUF",
+  "created_at": "2026-05-27T15:19:56.000Z",
+  "updated_at": "2026-08-19T02:13:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "chat",
+    "instruct",
+    "small-model",
+    "135m",
+    "quark",
+    "en",
+    "base_model:ThingAI/ARK-135M",
+    "base_model:quantized:ThingAI/ARK-135M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 112,
+  "trending_score": 0,
+  "parameters": 134561088,
+  "parameters_human": "134.6M",
+  "storage_bytes": 1444702464,
+  "storage_human": "1.4 GB",
+  "base_model": "ThingAI/ARK-135M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Quark-135m-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Quark-135m-GGUF",
+      "snippet": "mradermacher / Quark-135m-GGUF like 0 Transformers GGUF English chat instruct small-model 135m quark conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Quark-135m-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Quark-135m-Instruct-GGUF",
+      "snippet": "mradermacher / Quark-135m-Instruct-GGUF like 0 Transformers GGUF English chat instruct small-model 135m quark conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    },
+    {
+      "title": "ReMask-135m-GGUF - AI Model by mradermacher | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/mradermacher/ReMask-135m-GGUF",
+      "snippet": "Explore ReMask-135m-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    }
+  ]
+}

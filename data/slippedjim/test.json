@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "slippedJim/test",
+  "slug": "slippedjim-test",
+  "author": "slippedJim",
+  "url": "https://huggingface.co/slippedJim/test",
+  "created_at": "2026-08-17T16:03:41.000Z",
+  "updated_at": "2026-08-17T16:22:56.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 491482232230,
+  "storage_human": "491.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "slippedJim/K3_draft · Hugging Face",
+      "url": "https://huggingface.co/slippedJim/K3_draft",
+      "snippet": "A DSpark draft model for speculative decoding with moonshotai/Kimi-K3, trained with on-policy speculative distillation. The file layout, tensor names and config.json are identical to Inferact/Kimi-K3-DSpark, so this is a drop-in replacement for it — only the weights differ."
+    },
+    {
+      "title": "slippedJim/ATOM_regen_seeklight_kimi_mtp - Hugging Face",
+      "url": "https://huggingface.co/datasets/slippedJim/ATOM_regen_seeklight_kimi_mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "4 AI Model Scanners vs. 1 Hidden Payload: What Slipped Through - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/4-ai-model-scanners-vs-1-hidden-payload-what-slipped-sandiparthi-ifqse",
+      "snippet": "An AI model file can pass a security scanner and still run your attacker&#x27;s code — and this year that stopped being theoretical. In December 2025, JFrog&#x27;s security team disclosed three ..."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s servers",
+      "url": "https://www.scrippsnews.com/science-and-tech/artificial-intelligence/an-openai-test-model-escaped-and-broke-into-a-real-companys-servers",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked its way onto a different company&#x27;s real production systems while trying to \"cheat\" on a cybersecurity test."
+    }
+  ]
+}

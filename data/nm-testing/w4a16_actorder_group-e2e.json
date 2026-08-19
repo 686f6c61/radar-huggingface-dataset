@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nm-testing/w4a16_actorder_group-e2e",
+  "slug": "nm-testing-w4a16_actorder_group-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/w4a16_actorder_group-e2e",
+  "created_at": "2026-07-25T05:33:32.000Z",
+  "updated_at": "2026-08-18T02:52:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 450,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 25197587184,
+  "storage_human": "25.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nm-testing (NM Testing) - Hugging Face",
+      "url": "https://huggingface.co/nm-testing",
+      "snippet": "Org profile for NM Testing on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "nm-testing/pixtral-12b-w4a16-actorder-group · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/pixtral-12b-w4a16-actorder-group",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nm-testing/test-w4a16-mixtral-actorder-group - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/nm-testing-test-w4a16-mixtral-actorder-group",
+      "snippet": "test-w4a16-mixtral-actorder-group is an open source model from GitHub that offers a free installation service, and any user can find test-w4a16-mixtral-actorder-group on GitHub to install."
+    },
+    {
+      "title": "test-w4a16-mixtral-actorder-group · policy | Festivus",
+      "url": "https://festivus.hapticlabs.ai/data/policies/nm-testing-test-w4a16-mixtral-actorder-group",
+      "snippet": "Overview Name test-w4a16-mixtral-actorder-group Author nm-testing Framework PyTorch License unknown Skill type other Evidence level reported Task description"
+    },
+    {
+      "title": "nm-testing/test-w4a16-mixtral-actorder-group - Hugging Face ... - Socket",
+      "url": "https://socket.dev/huggingface/package/nm-testing/test-w4a16-mixtral-actorder-group",
+      "snippet": "We found that nm-testing/test-w4a16-mixtral-actorder-group demonstrated a not healthy version release cadence and project activity because the last version was released a year ago.It has 2 open source maintainers collaborating on the project."
+    }
+  ]
+}

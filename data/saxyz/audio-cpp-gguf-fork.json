@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "saxyZ/audio.cpp-gguf-fork",
+  "slug": "saxyz-audio-cpp-gguf-fork",
+  "author": "saxyZ",
+  "url": "https://huggingface.co/saxyZ/audio.cpp-gguf-fork",
+  "created_at": "2026-08-18T12:11:01.000Z",
+  "updated_at": "2026-08-18T12:11:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "audio.cpp",
+  "languages": [],
+  "tags": [
+    "audio.cpp",
+    "gguf",
+    "quantized",
+    "text-to-speech",
+    "automatic-speech-recognition",
+    "voice-conversion",
+    "text-to-audio",
+    "audio-to-audio",
+    "source-separation",
+    "speaker-diarization",
+    "speech",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:quantized:ACE-Step/Ace-Step1.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 159758028,
+  "parameters_human": "159.8M",
+  "storage_bytes": 698021574370,
+  "storage_human": "698.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, ACE-Step/Ace-Step1.5, ACE-Step/acestep-v15-base, Aratako/Irodori-TTS-500M-v3, Aratako/Irodori-TTS-600M-v3-VoiceDesign, Aratako/Irodori-TTS-v4.1-Small, Aratako/MioCodec-25Hz-44.1kHz-v2, Aratako/MioTTS-1.7B, Aratako/Semantic-DACVAE-Japanese-32dim, Banafo/Kroko-ASR, dots-studio/dots.tts-mf, dots-studio/dots.tts-soar, fishaudio/s2-pro, FunAudioLLM/Fun-ASR-Nano-2512-hf, HeartMuLa/HeartCodec-oss-20260123, HeartMuLa/HeartMuLa-oss-3B, HeartMuLa/HeartMuLaGen, IndexTeam/IndexTTS-2, IndexTeam/IndexTTS-2.5, ASLP-lab/MeanVC2, OpenBMB/VoxCPM2, OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano, OpenMOSS-Team/MOSS-Audio-Tokenizer-v2, OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5, OpenMOSS-Team/MOSS-TTS-Nano-100M, Qwen/Qwen3-ASR-0.6B, Qwen/Qwen3-ASR-1.7B-hf, Qwen/Qwen3-ForcedAligner-0.6B, Qwen/Qwen3-TTS-12Hz-0.6B-Base, Qwen/Qwen3-TTS-12Hz-1.7B-Base, Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice, Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign, Qwen/Qwen3-TTS-Tokenizer-12Hz, ResembleAI/chatterbox, RMSnow/Vevo2, bosonai/higgs-audio-v3-stt, bosonai/higgs-audio-v3-tts-4b, k2-fsa/OmniVoice, kyutai/pocket-tts, llm-jp/llm-jp-3-150m, microsoft/VibeVoice-1.5B, microsoft/VibeVoice-ASR, mistralai/Voxtral-Mini-4B-Realtime-2602, mlx-community/SeedVC-MLX, mlx-community/mel-roformer-mlx, mlx-community/supertonic-3-mlx, mlx-community/wavlm-base-plus-mlx, MuScriptor/muscriptor-small, neuphonic/neutts-2e, syvai/hviske-v5.3, nvidia/diar_sortformer_4spk-v1, nvidia/magpie_tts_multilingual_357m, nvidia/nemotron-3.5-asr-streaming-0.6b, nvidia/parakeet-tdt-0.6b-v3, nvidia/personaplex-7b-v1, owensong/Inflect-Micro-v2, stabilityai/stable-audio-3-medium, stabilityai/stable-audio-3-small-music, stabilityai/stable-audio-3-small-sfx",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xShug0/audio.cpp: An all-in-one, pure C++ inference engine ...",
+      "url": "https://github.com/0xShug0/audio.cpp",
+      "snippet": "An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with highly optimized performance. No Python dependency. - 0xShug0/audio.cpp"
+    },
+    {
+      "title": "audio.cpp-gguf - Hugging Face",
+      "url": "https://huggingface.co/audio-cpp/audio.cpp-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · audio-cpp/audio.cpp-gguf at main - Hugging Face",
+      "url": "https://huggingface.co/audio-cpp/audio.cpp-gguf/blob/main/README.md",
+      "snippet": "audio.cpp GGUF Model Packages This directory contains audio.cpp-native GGUF conversions of multiple speech models. These files are intended for use with audio.cpp."
+    },
+    {
+      "title": "audio.cpp/docs at main · 0xShug0/audio.cpp · GitHub",
+      "url": "https://github.com/0xShug0/audio.cpp/tree/main/docs",
+      "snippet": "An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with highly optimized performance. No Python dependency. - audio.cpp/docs at main · 0xShug0/audio.cpp"
+    },
+    {
+      "title": "Audio.cpp - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/audio-cpp.html",
+      "snippet": "Download Audio.cpp GGUF model. 14.7 GB, 91,040 downloads, 45 likes."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "markhenry/lora-steg-marker",
+  "slug": "markhenry-lora-steg-marker",
+  "author": "markhenry",
+  "url": "https://huggingface.co/markhenry/lora-steg-marker",
+  "created_at": "2026-08-17T18:18:46.000Z",
+  "updated_at": "2026-08-17T18:18:50.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "interpretability",
+    "steganography",
+    "ai-safety",
+    "lora",
+    "model-organism",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:adapter:google/gemma-2-2b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117478128,
+  "storage_human": "117 MB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mark Henry Style - V1 WWE - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/884433032872756253",
+      "snippet": "Download Mark Henry Style - free LORA Pony AI model on TENSORHUB ART. WWE, WRESTLING, ART STYLE. By PointerWarriorAI"
+    },
+    {
+      "title": "Mark Henry Style - V1 WWE - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/884433032872756253",
+      "snippet": "Download Mark Henry Style - free LORA Pony AI model on TENSOR. WWE, WRESTLING, ART STYLE. By PointerWarriorAI"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "marker_lora - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/796292e63061186cb6d7afdc36340c63",
+      "snippet": "Explore marker_lora model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "marker stroke art - marker art - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/777982172880594216/marker-stroke-art-marker-art",
+      "snippet": "Download marker stroke art - free LORA FLUX.1 AI model on TENSOR. FLUX, EARLY ACCESS, PAINTING. By HUNT"
+    }
+  ]
+}

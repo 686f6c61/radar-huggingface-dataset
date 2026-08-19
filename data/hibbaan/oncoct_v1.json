@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Hibbaan/Oncoct_v1",
+  "slug": "hibbaan-oncoct_v1",
+  "author": "Hibbaan",
+  "url": "https://huggingface.co/Hibbaan/Oncoct_v1",
+  "created_at": "2026-08-15T10:39:25.000Z",
+  "updated_at": "2026-08-15T10:46:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "doi:10.57967/hf/9990",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23316,
+  "storage_human": "23316 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

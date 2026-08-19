@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot",
+  "slug": "abiray-minimax-h3-nvfp4-int4-int8-convrot",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot",
+  "created_at": "2026-08-03T09:54:37.000Z",
+  "updated_at": "2026-08-15T12:44:09.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "multimodal",
+    "quantized",
+    "comfyui",
+    "int4",
+    "nvfp4",
+    "th",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 197,
+  "downloads_30d": 706485,
+  "trending_score": 29,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158882970362,
+  "storage_human": "158.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot · Hugging Face",
+      "url": "https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot at main - Hugging Face",
+      "url": "https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 Community Quants: GGUF, INT4 and NVFP4 Downloads",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-03-minimax-h3-community-quants",
+      "snippet": "Community quantizations of MiniMax H3 started landing on Hugging Face the day after the open-weights release, packing the 33.1B omni-modal video model into sizes that fit consumer GPUs. Four repositories shipped on August 3, covering GGUF Q2-Q5, pruned INT4/INT8, and NVFP4 formats, most with bundled ComfyUI workflows. The open-weights release itself arrived August 3 with native ComfyUI support ..."
+    },
+    {
+      "title": "Minimax-H3-nvfp4-INT4-INT8-Convrot · Models",
+      "url": "https://www.modelscope.cn/models/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot",
+      "snippet": "MiniMax H3 - Quantized & Pruned Collection (INT4 / INT8 / NVFP4) This repository is a community-compiled collection of quantized and pruned weights for MiniMax H3 (Hailuo 3.0), optimized for local inference environments like ComfyUI. By unifying various quantization formats (INT4, INT8, Mixed, and NVFP4) into a single structured repository, this hub makes it easier for users with consumer GPUs ..."
+    },
+    {
+      "title": "MiniMax H3 Hardware Map — Sources and Recipes (8th of August 2026)",
+      "url": "https://gist.github.com/yume-arasaki/e24bf2614ee0419c86250cee6ad7ce01",
+      "snippet": "- SageAttention — int8 attention kernel, 30-40% speedup on Blackwell, 7% on 5090 - EasyCache — step-skipping cache node, ~25% speedup, skips denoise steps (quality tradeoff)"
+    }
+  ]
+}

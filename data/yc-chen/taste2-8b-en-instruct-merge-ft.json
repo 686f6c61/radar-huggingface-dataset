@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "YC-Chen/TASTE2-8B-EN-Instruct-merge-FT",
+  "slug": "yc-chen-taste2-8b-en-instruct-merge-ft",
+  "author": "YC-Chen",
+  "url": "https://huggingface.co/YC-Chen/TASTE2-8B-EN-Instruct-merge-FT",
+  "created_at": "2026-08-15T06:06:27.000Z",
+  "updated_at": "2026-08-15T06:25:13.000Z",
+  "license": "taste2-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "speech",
+    "spoken-language-model",
+    "full-duplex",
+    "voice-agent",
+    "taste",
+    "text-to-speech",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78700302050,
+  "storage_human": "78.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TASTE2 - a YC-Chen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/YC-Chen/taste2",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from YC-Chen"
+    },
+    {
+      "title": "YC-Chen/TASTE2-8B-EN-SFT-new · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/YC-Chen/TASTE2-8B-EN-SFT-new",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ZenMux — Unified API for 100+ AI Models | Claude, GPT, Gemini",
+      "url": "https://zenmux.ai/",
+      "snippet": "The Enterprise LLM Platform: Unified API for 100+ AI models (Claude, GPT, Gemini, DeepSeek), intelligent routing, and AI Model Insurance that compensates for subpar output."
+    },
+    {
+      "title": "TASTE",
+      "url": "https://www.taste.tools/",
+      "snippet": "systems, using model-based development A process supporting the creation of systems, using formal models and automatic code generation A laboratory platform experimenting with safety-critical SW technologies, based on open-source, freely accessible solutions The best way to know what TASTE is, is to go through this presentation."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

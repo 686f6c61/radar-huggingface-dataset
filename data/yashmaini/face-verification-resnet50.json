@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yashMaini/face-verification-resnet50",
+  "slug": "yashmaini-face-verification-resnet50",
+  "author": "yashMaini",
+  "url": "https://huggingface.co/yashMaini/face-verification-resnet50",
+  "created_at": "2026-08-17T08:41:51.000Z",
+  "updated_at": "2026-08-18T05:47:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "face-verification",
+    "face-recognition",
+    "resnet50",
+    "arcface",
+    "metric-learning",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197112618,
+  "storage_human": "197 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(PDF) AI vs Reality: Classifying Synthetic Faces with a Fine-Tuned ...",
+      "url": "https://www.researchgate.net/publication/393750190_AI_vs_Reality_Classifying_Synthetic_Faces_with_a_Fine-Tuned_ResNet50_Neural_Network",
+      "snippet": "This study explores the application of ResNet50 deep learning architecture for distinguishing bet ween AI-synthesized and authentic facial images. Our model underwent t raining using a"
+    },
+    {
+      "title": "PDF AI vs Reality: Classifying Synthetic Faces with a Fine-Tuned ResNet50 ...",
+      "url": "https://www.ijisrt.com/assets/upload/files/IJISRT25JUL706.pdf",
+      "snippet": "The optimized model demonstrated remarkable performance, achieving accuracy rates of up to 98%, validating its effectiveness in this domain. This investigation demonstrates the effectiveness of fine-tuned ResNet50 architecture in identifying AI-synthesized images."
+    },
+    {
+      "title": "microsoft/resnet-50 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/resnet-50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - KaihuaTang/ResNet50-Pytorch-Face-Recognition: Using Pytorch to ...",
+      "url": "https://github.com/KaihuaTang/ResNet50-Pytorch-Face-Recognition",
+      "snippet": "Using Pytorch to implement a ResNet50 for Cross-Age Face Recognition Generally speaking, Pytorch is much more user-friendly than Tensorflow for academic purpose."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r1e3_grpo-r1e1-hpft",
+  "slug": "jongbin-kr-exaone_7b_verireason_no_reasoning_completion_only_sft-r1e3_grpo-r1e1-hpft",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r1e3_grpo-r1e1-hpft",
+  "created_at": "2026-08-16T19:24:30.000Z",
+  "updated_at": "2026-08-17T07:25:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "arxiv:2402.03300",
+    "base_model:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "base_model:finetune:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 689372641,
+  "storage_human": "689 MB",
+  "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jongbin-kr/exaone_7b_lora_verireason_no_reasoning_completion_only ...",
+      "url": "https://huggingface.co/Jongbin-kr/exaone_7b_lora_verireason_no_reasoning_completion_only_ratio0.2_epoch15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jongbin-kr/exaone_7b_verireason_sft-1.0_grpo-0.2_epoch5 · Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/exaone_7b_verireason_sft-1.0_grpo-0.2_epoch5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jongbin-kr (Jongbin Won) · GitHub",
+      "url": "https://github.com/Jongbin-kr/",
+      "snippet": "Jongbin-kr has 24 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/K-EXAONE: Official repository for K-EXAONE built ...",
+      "url": "https://github.com/LG-AI-EXAONE/K-EXAONE",
+      "snippet": "We introduce K-EXAONE, a large-scale multilingual language model developed by LG AI Research. Built using a Mixture-of-Experts architecture, K-EXAONE features 236 billion total parameters, with 23 billion active during inference. Performance evaluations across various benchmarks demonstrate that K-EXAONE excels in reasoning, agentic capabilities, general knowledge, multilingual understanding ..."
+    },
+    {
+      "title": "PDF EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and ...",
+      "url": "https://www.lgresearch.ai/data/cdn/upload/EXAONE_4_0.pdf",
+      "snippet": "This technical report introduces EXAONE 4.0, which integrates a NON-REASONINGmode and a REASONINGmode to achieve both the excellent usability of EXAONE 3.5 and the advanced reasoning abilities of EXAONE Deep. To pave the way for the agentic AI era, EXAONE 4.0 incorporates essential features such as agentic tool use, and its multilingual capabilities are extended to support Spanish in addition ..."
+    }
+  ]
+}

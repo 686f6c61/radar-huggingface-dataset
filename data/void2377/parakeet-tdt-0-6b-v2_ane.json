@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Void2377/parakeet-tdt-0.6b-v2_ANE",
+  "slug": "void2377-parakeet-tdt-0-6b-v2_ane",
+  "author": "Void2377",
+  "url": "https://huggingface.co/Void2377/parakeet-tdt-0.6b-v2_ANE",
+  "created_at": "2026-08-17T10:32:34.000Z",
+  "updated_at": "2026-08-17T10:47:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "ane",
+    "apple",
+    "neural-engine",
+    "npu",
+    "asr",
+    "automatic-speech-recognition",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1236540816,
+  "storage_human": "1.2 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/parakeet-tdt-0.6b-v3 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "🦜 parakeet-tdt-.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    },
+    {
+      "title": "GitHub - jasonhoblin/nvidia-parakeet-tdt-0.6b-v2",
+      "url": "https://github.com/jasonhoblin/nvidia-parakeet-tdt-0.6b-v2",
+      "snippet": "This model serves developers, researchers, academics, and industries building applications that require speech-to-text capabilities, including but not limited to: conversational AI, voice assistants, transcription services, subtitle generation, and voice analytics platforms."
+    },
+    {
+      "title": "parakeet-tdt-0.6b-v2 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/parakeet-tdt-0_6b-v2/deploy",
+      "snippet": "Accurate and optimized English transcriptions with punctuation and word timestamps"
+    },
+    {
+      "title": "parakeet-tdt-0.6b-v2 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/parakeet-tdt-0_6b-v2",
+      "snippet": "AI models generate responses and outputs based on complex algorithms and machine learning techniques, and those responses or outputs may be inaccurate, harmful, biased or indecent. By testing this model, you assume the risk of any harm caused by any response or output of the model."
+    },
+    {
+      "title": "NexaAI/parakeet-tdt-0.6b-v3-ane · Hugging Face",
+      "url": "https://huggingface.co/NexaAI/parakeet-tdt-0.6b-v3-ane",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "inference-optimization/GLM-5.2-0.8B-A0.8B-MXFP4xFP8_BLOCK",
+  "slug": "inference-optimization-glm-5-2-0-8b-a0-8b-mxfp4xfp8_block",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/GLM-5.2-0.8B-A0.8B-MXFP4xFP8_BLOCK",
+  "created_at": "2026-08-19T02:03:46.000Z",
+  "updated_at": "2026-08-19T02:04:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "base_model:zai-org/GLM-5.2",
+    "base_model:quantized:zai-org/GLM-5.2",
+    "license:mit",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 807155872,
+  "parameters_human": "807.2M",
+  "storage_bytes": 2784036984,
+  "storage_human": "2.8 GB",
+  "base_model": "zai-org/GLM-5.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inference-optimization/GLM-5.2-0.8B-A0.8B · Hugging Face",
+      "url": "https://huggingface.co/inference-optimization/GLM-5.2-0.8B-A0.8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "inference-optimization/GLM-5.2-0.8B-A0.8B · Discussions",
+      "url": "https://huggingface.co/inference-optimization/GLM-5.2-0.8B-A0.8B/discussions",
+      "snippet": "inference-optimization / GLM-5.2-.8B-A0.8B like 2 Follow Inference Optimization 64 Text Generation Transformers Safetensors glm_moe_dsa conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin on NL2Repo (repo generation) and Terminal-Bench 2.0 (real-world terminal tasks). But the most meaningful leap goes beyond first-pass performance. Previous models ..."
+    },
+    {
+      "title": "GLM-5.2-0.8B-A0.8B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/inference-optimization/GLM-5.2-0.8B-A0.8B",
+      "snippet": "Run GLM-5.2-.8B-A0.8B with FriendliAI inference. This is a tiny version of zai-org/GLM-5.2 created for testing and development."
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "On standard coding benchmarks, GLM-5.2 is the strongest open-source model, improving on GLM-5.1 by a wide margin: 81.0 vs. 63.5 on Terminal-Bench 2.1 and 62.1 vs. 58.4 on SWE-bench Pro. It also closes much of the gap to the closed-source frontier — on Terminal-Bench 2.1 (81.0) it lands within a few points of Claude Opus 4.8 (85.0) — while staying ahead of Gemini 3.1 Pro."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/SMOLM2Prover-GGUF",
+  "slug": "reaperdoesntknow-smolm2prover-gguf",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/SMOLM2Prover-GGUF",
+  "created_at": "2026-03-08T10:29:57.000Z",
+  "updated_at": "2026-08-17T13:16:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "proof",
+    "cot",
+    "reasoning",
+    "math",
+    "calculus",
+    "logic",
+    "sft",
+    "trl",
+    "generated_from_trainer",
+    "finetune",
+    "symbioticai",
+    "convergentintel",
+    "en",
+    "dataset:AI-MO/NuminaMath-1.5",
+    "base_model:prithivMLmods/SmolLM2-CoT-360M",
+    "base_model:quantized:prithivMLmods/SmolLM2-CoT-360M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3232,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 996145472,
+  "storage_human": "996 MB",
+  "base_model": "prithivMLmods/SmolLM2-CoT-360M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/SMOLM2Prover-GGUF · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/SMOLM2Prover-GGUF",
+      "snippet": "With LM Studio Download SMOLM2Prover-Q4_K_M.gguf Place in LM Studio models folder Load and chat! Quantization Details The Q4_K_M quantization uses: Q4_K for most weights Q5_0 fallback for tensors not divisible by 256 Q6_K/Q8_0 for some critical layers Size reduction: 692M → 258M (63% smaller) BPW: 5.94 bits per weight License Same as the original model."
+    },
+    {
+      "title": "reaperdoesntknow/SMOLM2Prover · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/SMOLM2Prover",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SMOLM2Prover API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/reaperdoesntknow/SMOLM2Prover",
+      "snippet": "Training Data: The primary dataset used was AI-MO/NuminaMath-1.5, augmented with approximately 1 million additional tokens. This data was formatted with a specific prompt structure designed to elicit step-by-step, chain-of-thought reasoning from the model."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Best Local Reasoning LLMs (2026) — Run a Reasoning AI Offline",
+      "url": "https://llmrun.dev/use/reasoning",
+      "snippet": "The best open-source reasoning models you can run locally in 2026. Compare reasoning LLMs by size, VRAM, and the GPU or Mac needed — including DeepSeek R1 distills and QwQ."
+    }
+  ]
+}

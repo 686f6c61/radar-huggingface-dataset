@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Minbyul/Qwen3.5-35B-A3B-Asis-GRPO",
+  "slug": "minbyul-qwen3-5-35b-a3b-asis-grpo",
+  "author": "Minbyul",
+  "url": "https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Asis-GRPO",
+  "created_at": "2026-08-18T11:17:41.000Z",
+  "updated_at": "2026-08-18T11:17:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "web-search-agent",
+    "tool-use",
+    "agent",
+    "grpo",
+    "reinforcement-learning",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - algtrd24/qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/algtrd24/qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5 35B A3B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen35-35b-a3b",
+      "snippet": "Qwen3.5 35B A3B: Unified Vision-Language MoE Reasoning Model Qwen3.5 35B A3B is a multimodal mixture-of-experts foundation model from Alibaba&#x27;s Qwen team, featuring a hybrid Gated DeltaNet and sparse MoE architecture. It has 35 billion total parameters with 3 billion activated per token, delivering high-throughput inference at minimal latency."
+    },
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "Qwen3.5-35B-A3B is the smallest MoE in the Qwen3.5 family, sharing the gated delta networks architecture with 35B total parameters and 3B activated per token (256 experts)."
+    },
+    {
+      "title": "GitHub - tokwalabs/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/tokwalabs/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    }
+  ]
+}

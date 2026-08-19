@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "axonlabsai/Ranger-7B",
+  "slug": "axonlabsai-ranger-7b",
+  "author": "axonlabsai",
+  "url": "https://huggingface.co/axonlabsai/Ranger-7B",
+  "created_at": "2026-08-17T16:05:28.000Z",
+  "updated_at": "2026-08-17T23:00:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "axon",
+    "ranger",
+    "reasoning",
+    "math",
+    "code",
+    "uncensored",
+    "conversational",
+    "base_model:huihui-ai/DeepSeek-R1-Distill-Qwen-7B-abliterated-v2",
+    "base_model:quantized:huihui-ai/DeepSeek-R1-Distill-Qwen-7B-abliterated-v2",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 48706985202,
+  "storage_human": "48.7 GB",
+  "base_model": "huihui-ai/DeepSeek-R1-Distill-Qwen-7B-abliterated-v2",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axonlabsai (axon) - Hugging Face",
+      "url": "https://huggingface.co/axonlabsai/models",
+      "snippet": "Axon Labs — Uncensored AI research. No filters, no rails. Closed + open source."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Are 7b models useful? : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1834yqv/are_7b_models_useful/",
+      "snippet": "In my experience 7B models are mostly useful for creative writing, where their propensity for hallucination is an asset, not a drawback. That having been said, smaller models (7B and 3B) do much better with longer prompts. My rule of thumb with 7B models is to give them a prompt at least 440 characters long, and longer than that is better."
+    },
+    {
+      "title": "AI Model Parameters Explained: 2B vs 7B vs 40B and Beyond",
+      "url": "https://travis.media/blog/ai-model-parameters-explained/",
+      "snippet": "What does it mean when an AI model has 4B, 7B, or 70B parameters, or a name like 235B-A22B? Learn how parameter count affects performance, hardware needs, and what developers and homelabbers should know before downloading and running these models."
+    },
+    {
+      "title": "7B vs 14B vs 32B vs 70B: Which Model Size to Run | Local AI Master",
+      "url": "https://localaimaster.com/blog/ai-model-size-comparison",
+      "snippet": "Compare 7B, 14B, 32B, and 70B LLM sizes with real benchmarks, VRAM requirements, speed tests, and specific model picks for each parameter tier."
+    }
+  ]
+}

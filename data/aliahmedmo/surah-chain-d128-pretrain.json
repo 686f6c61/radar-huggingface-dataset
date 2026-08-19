@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AliAhmedMo/surah-chain-d128-pretrain",
+  "slug": "aliahmedmo-surah-chain-d128-pretrain",
+  "author": "AliAhmedMo",
+  "url": "https://huggingface.co/AliAhmedMo/surah-chain-d128-pretrain",
+  "created_at": "2026-08-17T05:56:40.000Z",
+  "updated_at": "2026-08-17T06:00:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "pytorch",
+    "surah_chain",
+    "arabic",
+    "transformer",
+    "research",
+    "experimental",
+    "ar",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44295771,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AliAhmedMo (Ali Ahmed Mohammed Alhaimi) - Hugging Face",
+      "url": "https://huggingface.co/AliAhmedMo",
+      "snippet": "User profile of Ali Ahmed Mohammed Alhaimi on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Model Zoo - Deep learning code and pretrained models for transfer ...",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "ModelZoo curates and provides a platform for deep learning researchers to easily find code and pre-trained models for a variety of platforms and uses. Find models that you need, for educational purposes, transfer learning, or other uses."
+    },
+    {
+      "title": "GitHub - lightly-ai/lightly-train: All-in-one training for vision ...",
+      "url": "https://github.com/lightly-ai/lightly-train",
+      "snippet": "Pretrain any model architecture with unlabeled data by distilling the knowledge from DINOv2 or DINOv3 foundation models into your model. On the COCO dataset, YOLOv8-s models pretrained with LightlyTrain achieve high performance across all tested label fractions. These improvements hold for other architectures like YOLOv11, RT-DETR, and Faster R ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

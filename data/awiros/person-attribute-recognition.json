@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Awiros/person-attribute-recognition",
+  "slug": "awiros-person-attribute-recognition",
+  "author": "Awiros",
+  "url": "https://huggingface.co/Awiros/person-attribute-recognition",
+  "created_at": "2026-08-18T05:33:38.000Z",
+  "updated_at": "2026-08-18T05:37:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "person-attribute-recognition",
+    "pedestrian-attribute-recognition",
+    "multi-task-classification",
+    "convnextv2",
+    "simclr",
+    "dinov2",
+    "cctv",
+    "image-classification",
+    "en",
+    "arxiv:2304.07193",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Person Attribute Recognition with Deep Learning",
+      "url": "https://github.com/dsabarinathan/attribute-recognition",
+      "snippet": "This repository contains a PyTorch implementation of a person attribute recognition model. The model has been trained to recognize various attributes such as age, gender, hair length, upper body features, lower body features, and accessories."
+    },
+    {
+      "title": "Awiros/person_and_head_detection at main - Hugging Face",
+      "url": "https://huggingface.co/Awiros/person_and_head_detection/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Awiros (Awiros) - Hugging Face",
+      "url": "https://huggingface.co/Awiros",
+      "snippet": "Org profile for Awiros on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Awiros | World&#x27;s Best Vision AI Company",
+      "url": "https://www.awiros.com/",
+      "snippet": "World&#x27;s leading Vision AI Platform, Discover Awiros—AI-powered video intelligence for real-time insights, enhanced security, and transformed operations. Seamless, scalable, and secure solutions."
+    },
+    {
+      "title": "Person Attribute Recognition - GitHub",
+      "url": "https://github.com/hiennguyen9874/person-attribute-recognition",
+      "snippet": "Person attribute recognition. Contribute to hiennguyen9874/person-attribute-recognition development by creating an account on GitHub."
+    }
+  ]
+}

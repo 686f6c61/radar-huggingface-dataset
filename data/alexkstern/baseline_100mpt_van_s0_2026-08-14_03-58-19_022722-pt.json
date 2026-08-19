@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/baseline_100Mpt_van_s0_2026-08-14_03-58-19_022722-pt",
+  "slug": "alexkstern-baseline_100mpt_van_s0_2026-08-14_03-58-19_022722-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/baseline_100Mpt_van_s0_2026-08-14_03-58-19_022722-pt",
+  "created_at": "2026-08-14T04:00:28.000Z",
+  "updated_at": "2026-08-14T04:01:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "no_ppt",
+    "seed_0",
+    "single",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern (astar) - Hugging Face",
+      "url": "https://huggingface.co/datasets/alexkstern/",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "FREE online image generator and model hosting site! | Tensor.Art",
+      "url": "https://tensor.art/",
+      "snippet": "AI model sharing platform, online run models to generate image,viode and traning model for free. Your can upload and download models, include..."
+    }
+  ]
+}

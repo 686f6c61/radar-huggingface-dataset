@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "moon1993/sales-orders",
+  "slug": "moon1993-sales-orders",
+  "author": "moon1993",
+  "url": "https://huggingface.co/moon1993/sales-orders",
+  "created_at": "2026-08-18T11:46:44.000Z",
+  "updated_at": "2026-08-18T11:47:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1581086,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model 1 Sales",
+      "url": "https://www.model1sales.com/",
+      "snippet": "Model 1 Sales is a quality based AR15 / M16 component and accessories provider."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "MoonAI — AI Sales Rep for Sales Automation - Moon AI",
+      "url": "https://mooonai.com/en",
+      "snippet": "Launch an AI sales rep in 1 day. MoonAI automates sales, processes leads, and closes deals 24/7. Try for free."
+    },
+    {
+      "title": "AI Agent: Sales Order Assistant - docs.oracle.com",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/order25d/25D-order-mgmt-wn-f39928.htm",
+      "snippet": "AI Agent: Sales Order Assistant Use an AI agent to create sales orders more efficiently. The Sales Order Assistant uses natural language to intelligently surface items, pricing, availability, and promotions to your Order Representatives. It reduces manual searching by providing relevant product options, add-ons, cross sells, and recommendations based on customer needs, and allows you to create ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ceselder/probemaxxer-qwen36-27b-1M-rl",
+  "slug": "ceselder-probemaxxer-qwen36-27b-1m-rl",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/probemaxxer-qwen36-27b-1M-rl",
+  "created_at": "2026-08-17T22:33:34.000Z",
+  "updated_at": "2026-08-18T00:03:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "interpretability",
+    "sparse-autoencoder",
+    "steering",
+    "lora",
+    "qwen3",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1867782664,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ceselder/probemaxxer-qwen36-27b-rl · Hugging Face",
+      "url": "https://huggingface.co/ceselder/probemaxxer-qwen36-27b-rl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ceselder/probemaxxer-qwen36-27b-rl at main - Hugging Face",
+      "url": "https://huggingface.co/ceselder/probemaxxer-qwen36-27b-rl/tree/main",
+      "snippet": "ceselder / probemaxxer-qwen36-27b-rl like 0 Text Generation PEFT Safetensors Transformers lora arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Qwen 3.6-27B is a 27 billion parameter dense language model from Alibaba&#x27;s Qwen team. It uses a hybrid Gated DeltaNet + Gated Attention architecture, supports 256K context (extensible to 1M), handles text, image, and video inputs, and scores 77.2% on SWE-bench Verified."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "How to Run Qwen 3.6 Locally - 27B Dense, 35B MoE, and Coding Variants ...",
+      "url": "https://dev.to/purpledoubled/how-to-run-qwen-36-locally-27b-dense-35b-moe-and-coding-variants-setup-guide-4di",
+      "snippet": "Originally published on locallyuncensored.com Qwen 3.6 dropped on April 21 2026. Two main families: a 27B dense model that activates every parameter per token and a 35B MoE with 3B active per token. Both ship with vision, agentic coding, thinking-mode preservation, and a 256K context window."
+    }
+  ]
+}

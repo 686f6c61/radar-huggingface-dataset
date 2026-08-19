@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_gsm8k_gpt-oss-20b_as_phi-4_seed42",
+  "slug": "dementor-research-dpo_gsm8k_gpt-oss-20b_as_phi-4_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_phi-4_seed42",
+  "created_at": "2026-08-16T19:24:43.000Z",
+  "updated_at": "2026-08-16T19:25:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dpo_gsm8k_phi-4_as_gpt-oss-20b_seed42 - Hugging Face",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_phi-4_as_gpt-oss-20b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dementor-research/dpo_gsm8k_gpt-oss-120b_as_gpt-oss-20b_seed42 ...",
+      "url": "https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-120b_as_gpt-oss-20b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dpo_gsm8k_phi-4_as_gpt-oss-20b_seed42 - FriendliAI",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_phi-4_as_gpt-oss-20b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the gsm8k corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "dpo_gsm8k_gemma-4-e4b_as_gpt-oss-20b_seed42 - friendli.ai",
+      "url": "https://friendli.ai/models/dementor-research/dpo_gsm8k_gemma-4-e4b_as_gpt-oss-20b_seed42",
+      "snippet": "This adapter trains the source model to imitate the target model&#x27;s style on the gsm8k corpus. Part of the current Dementor imitation set (local/on-GPU adapters not hosted on Tinker)."
+    },
+    {
+      "title": "GitHub - openai/gpt-oss: gpt-oss-120b and gpt-oss-20b are two open ...",
+      "url": "https://github.com/openai/gpt-oss",
+      "snippet": "Try gpt-oss · Guides · Model card · OpenAI blog Download gpt-oss-120b and gpt-oss-20b on Hugging Face Welcome to the gpt-oss series, OpenAI&#x27;s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases. We&#x27;re releasing two flavors of these open models: gpt-oss-120b — for production, general purpose, high reasoning use cases that fit into a single ..."
+    }
+  ]
+}

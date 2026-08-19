@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Unkto/DeepSeek-V4-Flash-0731-DSpark-Drafter-IQ1M-IQ2XXS-GGUF",
+  "slug": "unkto-deepseek-v4-flash-0731-dspark-drafter-iq1m-iq2xxs-gguf",
+  "author": "Unkto",
+  "url": "https://huggingface.co/Unkto/DeepSeek-V4-Flash-0731-DSpark-Drafter-IQ1M-IQ2XXS-GGUF",
+  "created_at": "2026-08-17T08:25:57.000Z",
+  "updated_at": "2026-08-17T20:50:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "deepseek-v4",
+    "dspark",
+    "dflash",
+    "speculative-decoding",
+    "draft-model",
+    "auxiliary-model",
+    "quantization",
+    "1-bit",
+    "iq1_m",
+    "iq2_xxs",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19845850983,
+  "parameters_human": "19.85B",
+  "storage_bytes": 10329139520,
+  "storage_human": "10.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4-Flash-0731-DSpark-Drafter-IQ1M-IQ2XXS-GGUF",
+      "url": "https://huggingface.co/Unkto/DeepSeek-V4-Flash-0731-DSpark-Drafter-IQ1M-IQ2XXS-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/deepseek-v4",
+      "snippet": "The lossless 8-bit GGUF is 162 GB and 3-bit is 103GB which can run on a 110GB RAM device. DeepSeek-V4-Flash-0731 scores 82.7% on Terminal Bench 2.1, 54.4% on DeepSWE, and 54.2% on NL2Repo. DSpark is also enabled for GGUFs, enabling up to 2x faster decoding speed! Aug 13: DeepSeek- V4-Pro-0813 was released and quants are now available to run."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE ..."
+    },
+    {
+      "title": "Run DeepSeek-V4-Flash-0731 with Unsloth Studio and OpenCode",
+      "url": "https://www.datacamp.com/tutorial/run-deep-seek-v4-flash-0731",
+      "snippet": "Run the latest DeepSeek V4 Flash model on a multi-GPU setup with Unsloth Studio, connect it to OpenCode, and use a local AI coding agent to build an interactive stock analytics website."
+    }
+  ]
+}

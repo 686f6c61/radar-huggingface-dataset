@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ghostai1/ccengine1",
+  "slug": "ghostai1-ccengine1",
+  "author": "ghostai1",
+  "url": "https://huggingface.co/ghostai1/ccengine1",
+  "created_at": "2025-03-12T01:36:58.000Z",
+  "updated_at": "2026-08-15T06:02:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · ghostai1/ccengine1 at main - Hugging Face",
+      "url": "https://huggingface.co/ghostai1/ccengine1/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ghostai1/ccengine1 · Hugging Face",
+      "url": "https://huggingface.co/ghostai1/ccengine1",
+      "snippet": "ghostai1 / ccengine1 like 0 English python baseline ai License:gpl-3.0 Model card FilesFiles and versions Community Mario AI Base 🎮🤖🚀 Overview 🌍 Features Setup 🛠️ Prerequisites 📋 Hardware Requirements 💻 CUDA Setup for GPU Acceleration ⚡ Update (March 20, 2025) 📝"
+    },
+    {
+      "title": "GitHub - ghostaimirror/ghostai1",
+      "url": "https://github.com/ghostaimirror/ghostai1",
+      "snippet": "In Google Studio, create a new project and a text model (Google Gemini Pro). Train the AI until you are satisfied and click the \"Get Code\" button on the top right."
+    },
+    {
+      "title": "GitHub - leanpub/ghostai: GhostAI · GitHub",
+      "url": "https://github.com/leanpub/ghostai",
+      "snippet": "It challenges your topic (\"Developers\" isn&#x27;t an audience. \"AI\" isn&#x27;t a topic.), generates a starter outline, scaffolds the manuscript, and extracts a voice profile from a writing sample you provide. That voice profile is what keeps everything sounding like you instead of like a model. /ghost-outline — Deep structure work."
+    },
+    {
+      "title": "GhostAI | Windows AI Assistant — Local AI, BYOK, Stealth Mode",
+      "url": "https://useghostai.com/",
+      "snippet": "Windows AI assistant with Cloud AI, BYOK, and offline Local AI. Voice input, screenshots, encrypted notes, Mermaid diagrams, and Stealth Mode hidden from screen capture."
+    }
+  ]
+}

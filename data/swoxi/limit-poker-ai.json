@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Swoxi/limit-poker-ai",
+  "slug": "swoxi-limit-poker-ai",
+  "author": "Swoxi",
+  "url": "https://huggingface.co/Swoxi/limit-poker-ai",
+  "created_at": "2026-06-07T09:11:18.000Z",
+  "updated_at": "2026-08-17T22:17:59.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12827841644,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

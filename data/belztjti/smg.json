@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "belztjti/smg",
+  "slug": "belztjti-smg",
+  "author": "belztjti",
+  "url": "https://huggingface.co/belztjti/smg",
+  "created_at": "2026-08-15T21:55:59.000Z",
+  "updated_at": "2026-08-17T22:56:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 66,
+  "trending_score": 0,
+  "parameters": 9574004736,
+  "parameters_human": "9.57B",
+  "storage_bytes": 57462116200,
+  "storage_human": "57.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "belztjti/smg · Hugging Face",
+      "url": "https://huggingface.co/belztjti/smg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "belztjti/smg at main - Hugging Face",
+      "url": "https://huggingface.co/belztjti/smg/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "belztjti (belztjti) - Hugging Face",
+      "url": "https://huggingface.co/belztjti",
+      "snippet": "Sort: Recently updated. belztjti/smg. 10B • Updated about 10 hours ago • 1.42k. belztjti/textcandidate1. 10B • Updated 3 days ago"
+    },
+    {
+      "title": "Belztjti AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/belztjti/",
+      "snippet": "Belztjti AI model benchmark profile: 2 models, 3 covered benchmarks, and source-linked evaluation rows on BenchmarkList."
+    },
+    {
+      "title": "belztjti/gen4 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/belztjti/gen4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

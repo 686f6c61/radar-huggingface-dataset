@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "BoneMangler/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-Q6_K-GGUF",
+  "slug": "bonemangler-qwen3-6-27b-v1-1-ff711-darker-hero-gain-h2-0-q6_k-gguf",
+  "author": "BoneMangler",
+  "url": "https://huggingface.co/BoneMangler/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-Q6_K-GGUF",
+  "created_at": "2026-08-18T06:05:45.000Z",
+  "updated_at": "2026-08-18T06:07:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "GAIN TUNE",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3.6",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "not-for-all-audiences",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0",
+    "base_model:quantized:DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 22431004096,
+  "storage_human": "22.4 GB",
+  "base_model": "DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-H2.0 · Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-H2.0",
+      "snippet": "DavidAU / Qwen3.6-27B-V1.1-FF711-Darker-Hero-H2. like 0 Safetensors qwen3_5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-H2.0 at main",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-H2.0/tree/main",
+      "snippet": "DavidAU / Qwen3.6-27B-V1.1-FF711-Darker-Hero-H2. like 0 Safetensors qwen3_5 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback. This update delivers substantial upgrades, particularly in: Agentic Coding: The model now ..."
+    },
+    {
+      "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+      "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus and Qwen3.6-35B-A3B, we are excited to open-source Qwen3.6-27B — a dense 27-billion-parameter multimodal model at the scale the community has been asking for most. Still supporting both multimodal thinking and non-thinking modes, Qwen3.6-27B delivers flagship-level agentic coding performance, surpassing the ..."
+    },
+    {
+      "title": "Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0 - friendli.ai",
+      "url": "https://friendli.ai/models/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0",
+      "snippet": "THIS MODEL exceeds performance of both 9B and 27B Qwen 3.5 AND Qwen 3.6 27B/35B-A3B models. Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2. [working title] This model uses the \"GAIN\" method of training, invented during the build of Qwen 3.6 27B Fable Fusion 711 (1900+ likes, 2.5 million + downloads, 60+ quant repos)."
+    }
+  ]
+}

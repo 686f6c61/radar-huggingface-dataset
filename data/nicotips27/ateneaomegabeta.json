@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nicotips27/Ateneaomegabeta",
+  "slug": "nicotips27-ateneaomegabeta",
+  "author": "nicotips27",
+  "url": "https://huggingface.co/nicotips27/Ateneaomegabeta",
+  "created_at": "2026-08-19T02:22:05.000Z",
+  "updated_at": "2026-08-19T02:38:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "text-generation-inference",
+    "español",
+    "coding",
+    "text-generation",
+    "es",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073536,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nicotips27 nicotips27 - GitHub",
+      "url": "https://github.com/nicotips27/",
+      "snippet": "holla. nicotips27 has 4 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Les presento el modelo de inteligencia artificial, creado por nuestra ...",
+      "url": "https://x.com/nicotips27/status/2085879820366340383",
+      "snippet": "nicotips27 (Nicotips). 1 likes 0 replies. Les presento el modelo de inteligencia artificial, creado por nuestra empresa ATENA OMEGA el cual desarrolla tareas ..."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Free AI Art Generator: All the best AI models in one place",
+      "url": "https://creator.nightcafe.studio/",
+      "snippet": "NightCafe is the AI Art Generator designed for creativity and fun. Access all the best AI art models and join a supportive community of creators."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

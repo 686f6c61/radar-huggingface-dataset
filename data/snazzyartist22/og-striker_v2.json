@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/OG-Striker_V2",
+  "slug": "snazzyartist22-og-striker_v2",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/OG-Striker_V2",
+  "created_at": "2026-08-17T04:15:20.000Z",
+  "updated_at": "2026-08-17T04:16:02.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81014968,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SnazzyArtist22 (Elliott Buxton) - Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "SnazzyArtist22 (Elliott Buxton) - Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "Striker (Helluva Boss | Series | Singing) - (RVC V2 | RVMPE | Legacy ...",
+      "url": "https://voice-models.com/model/1LSMi6ohDcY",
+      "snippet": "Striker (Helluva Boss | Series | Singing) - (RVC V2 | RVMPE | Legacy Core Pretrain) - (160 Epochs) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Snazzy — Voice Models Creator",
+      "url": "https://voice-models.com/creator/SnazzyArtist22?tab=latest",
+      "snippet": "View AI voice models by Snazzy on Voice Models."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

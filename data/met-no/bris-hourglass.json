@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "met-no/Bris-HourGlass",
+  "slug": "met-no-bris-hourglass",
+  "author": "met-no",
+  "url": "https://huggingface.co/met-no/Bris-HourGlass",
+  "created_at": "2026-08-18T10:47:56.000Z",
+  "updated_at": "2026-08-18T10:47:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - metno/bris-inference: This is a package to run MET Norway&#x27;s ...",
+      "url": "https://github.com/metno/bris-inference",
+      "snippet": "Bris inference This is a package to run MET Norway&#x27;s data-driven model Bris, which is based on the Anemoi framework."
+    },
+    {
+      "title": "Bris: A High-Resolution Data-Driven Weather Forecasting Model",
+      "url": "https://www.sigma2.no/research/bris-high-resolution-data-driven-weather-forecasting-model",
+      "snippet": "The new model is named Bris, after the Norwegian word for \"light wind.\" The goal of the project is for Bris to become MET Norway&#x27;s best weather forecasting model, delivering more accurate forecasts to our 10 million unique weekly users on Yr. Innovative architecture and advanced training Bris is based on graph neural networks (GNNs) and employs an innovative stretched-grid architecture. This ..."
+    },
+    {
+      "title": "Bris: A high-resolution data-driven weather forecasting model",
+      "url": "https://lumi-supercomputer.eu/data-driven-weather-forecasting-model/",
+      "snippet": "Global weather forecasting models based on Artificial Intelligence (AI), have demonstrated skill surpassing the best conventional weather forecasting models, requiring only a fraction of the computational cost. In this project, the Norwegian Meteorological Institute (MET) collaborates with the European Centre for Medium-Range Weather Forecasts (ECMWF) and meteorological institutes across ..."
+    },
+    {
+      "title": "bris · PyPI",
+      "url": "https://pypi.org/project/bris/",
+      "snippet": "Bris inference This is a package to run MET Norway&#x27;s data-driven model Bris, which is based on the Anemoi framework. Features Model and data-parallel inference Multi encoder/decoder Time interpolation Documentation See Wiki Requirements udunits2 library. On ubuntu available as libudunits2-0"
+    },
+    {
+      "title": "met-no (The Norwegian Meteorological Institute) - Hugging Face",
+      "url": "https://huggingface.co/met-no",
+      "snippet": "Org profile for The Norwegian Meteorological Institute on Hugging Face, the AI community building the future."
+    }
+  ]
+}

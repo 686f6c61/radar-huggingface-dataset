@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jcoholich/your_repo_id",
+  "slug": "jcoholich-your_repo_id",
+  "author": "jcoholich",
+  "url": "https://huggingface.co/jcoholich/your_repo_id",
+  "created_at": "2026-07-28T20:35:41.000Z",
+  "updated_at": "2026-08-16T23:51:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:plug5_offline_rl_dataset_annotated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2133,
+  "trending_score": 0,
+  "parameters": 413283121,
+  "parameters_human": "413.3M",
+  "storage_bytes": 867043979564,
+  "storage_human": "867.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jcoholich/your_repo_id · Hugging Face",
+      "url": "https://huggingface.co/jcoholich/your_repo_id",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jcoholich/your_repo_id | Benchmarks | OpenModelMap",
+      "url": "https://openmodelmap.com/model/jcoholich/your_repo_id",
+      "snippet": "What tasks is jcoholich/your_repo_id suitable for? jcoholich/your_repo_id is primarily used for robotics. jcoholich/your_repo_id by jcoholich for robotics — open-source AI model on HuggingFace. What hardware is needed to run jcoholich/your_repo_id? Requires N/A VRAM, N/A RAM, N/A disk space. Recommended inference hardware: general GPU."
+    },
+    {
+      "title": "jcoholich (Jeremiah Coholich) - Hugging Face",
+      "url": "https://huggingface.co/jcoholich",
+      "snippet": "Recent Activity updated a model1 day ago jcoholich/your_repo_id updated a model1 day ago jcoholich/your_repo_id updated a dataset2 months ago jcoholich/mango_data View all activity"
+    },
+    {
+      "title": "your_repo_id · policy | Festivus",
+      "url": "https://festivus.hapticlabs.ai/data/policies/jcoholich-your-repo-id",
+      "snippet": "Policy model from jcoholich. Tags: lerobot, safetensors, robotics, pi05, dataset:my_libero_object_dataset."
+    },
+    {
+      "title": "ai-models · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ai-models",
+      "snippet": "A lightweight interface for accessing and integrating LLM metadata, enabling applications to seamlessly discover, query, and integrate large language model information."
+    }
+  ]
+}

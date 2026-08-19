@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vibhurajeev/act_tissue_ball_v2",
+  "slug": "vibhurajeev-act_tissue_ball_v2",
+  "author": "vibhurajeev",
+  "url": "https://huggingface.co/vibhurajeev/act_tissue_ball_v2",
+  "created_at": "2026-08-17T22:33:29.000Z",
+  "updated_at": "2026-08-17T22:33:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:vibhurajeev/pick_tissue_ball_v2_20260817_184026",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vibhurajeev/pick_tissue_ball · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/vibhurajeev/pick_tissue_ball",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vibhurajeev/pick_tissue_ball at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/vibhurajeev/pick_tissue_ball/tree/main",
+      "snippet": "Datasets: vibhurajeev / pick_tissue_ball like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 main pick_tissue_ball 756 MB 1 contributor History:3 commits vibhurajeev Upload README.md with huggingface_hub d7cdcd8 ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI model maps tumor tissue to improve cancer care",
+      "url": "https://medicalxpress.com/news/2026-08-ai-tumor-tissue-cancer.html",
+      "snippet": "A tumor is more than its cancer cells. Immune cells, blood vessels and other surrounding tissue influence how a cancer grows and responds to treatment. Two tumors containing the same cell types ..."
+    },
+    {
+      "title": "TissueLab - AI-Powered Medical Image Analysis",
+      "url": "https://www.tissuelab.org/",
+      "snippet": "An agentic AI platform for medical image analysis developed by Zhi Huang Lab. Analyze medical images with cutting-edge artificial intelligence technology."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mxaln/docscanner-ocr",
+  "slug": "mxaln-docscanner-ocr",
+  "author": "mxaln",
+  "url": "https://huggingface.co/mxaln/docscanner-ocr",
+  "created_at": "2026-08-14T07:26:47.000Z",
+  "updated_at": "2026-08-14T07:30:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "hi",
+    "th",
+    "ar",
+    "ko"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "handwriting-recognition",
+    "paddleocr",
+    "multilingual",
+    "en",
+    "zh",
+    "ja",
+    "hi",
+    "th",
+    "ar",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118686306,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DocScanner - AI-Powered Document Analysis",
+      "url": "https://www.docscanner.io/",
+      "snippet": "Smart OCR & Layout Analysis Our engine doesn&#x27;t just read text; it understands layout, tables, and handwriting with 99% accuracy even on low-quality scans."
+    },
+    {
+      "title": "GitHub - baidu/Unlimited-OCR: Unlimited OCR Works: Welcome the Era of ...",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift. [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud."
+    },
+    {
+      "title": "GitHub - fh2019ustc/DocScanner: The official repo for \"DocScanner ...",
+      "url": "https://github.com/fh2019ustc/DocScanner",
+      "snippet": "The official repo for \"DocScanner: Robust Document Image Rectification with Progressive Learning\", IJCV, 2025. - fh2019ustc/DocScanner"
+    },
+    {
+      "title": "Read model OCR data extraction - Document Intelligence - Foundry Tools ...",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/read?view=doc-intel-4.0.0",
+      "snippet": "Extract print and handwritten text from scanned and digital documents with Document Intelligence&#x27;s Read OCR model."
+    },
+    {
+      "title": "Supercharge your OCR Pipelines with Open Models - Hugging Face",
+      "url": "https://huggingface.co/blog/ocr-open-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

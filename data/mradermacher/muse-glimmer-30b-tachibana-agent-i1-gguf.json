@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Muse-Glimmer-30B-Tachibana-Agent-i1-GGUF",
+  "slug": "mradermacher-muse-glimmer-30b-tachibana-agent-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-Tachibana-Agent-i1-GGUF",
+  "created_at": "2026-08-16T13:25:19.000Z",
+  "updated_at": "2026-08-16T13:56:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 114122457984,
+  "storage_human": "114.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

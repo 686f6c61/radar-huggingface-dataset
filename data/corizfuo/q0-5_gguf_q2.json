@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Corizfuo/q0.5_gguf_q2",
+  "slug": "corizfuo-q0-5_gguf_q2",
+  "author": "Corizfuo",
+  "url": "https://huggingface.co/Corizfuo/q0.5_gguf_q2",
+  "created_at": "2026-08-17T13:15:13.000Z",
+  "updated_at": "2026-08-17T13:18:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 338607424,
+  "storage_human": "339 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Corizfuo/q0.5_gguf · Hugging Face",
+      "url": "https://huggingface.co/Corizfuo/q0.5_gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF Quantized Models Complete Guide 2025 | Apatero",
+      "url": "https://apatero.com/blog/gguf-quantized-models-complete-guide-2025",
+      "snippet": "Master GGUF quantized models for AI image generation. Complete guide to formats, quality tradeoffs, ComfyUI loading, and VRAM optimization."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Remember-R1-3B-NPU2",
+  "slug": "atomic-germ-remember-r1-3b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Remember-R1-3B-NPU2",
+  "created_at": "2026-08-12T19:04:27.000Z",
+  "updated_at": "2026-08-18T20:38:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "q4nx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "q4nx",
+    "qwen2_5_vl",
+    "darwin",
+    "qwen2.5vl-it",
+    "reasoning",
+    "advanced-reasoning",
+    "multilingual",
+    "fastflowlm",
+    "npu",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:JM-Chen/Remember-R1-3B",
+    "base_model:quantized:JM-Chen/Remember-R1-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 754,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2586811952,
+  "storage_human": "2.6 GB",
+  "base_model": "JM-Chen/Remember-R1-3B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Remember-R1-3B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Remember-R1-3B-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Atomic-Germ/Remember-R1-3B-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Remember-R1-3B-NPU2/tree/main",
+      "snippet": "Atomic-Germ / Remember-R1-3B-NPU2 like 0 Text Generation English qwen2_5_vl darwin qwen2.5vl-it reasoning advanced-reasoning multilingual fastflowlm q4nx npu conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Remember-R1-3B-NPU2 2.59 GB Ctrl+K Ctrl+K 1 contributor History:11 commits Atomic ..."
+    },
+    {
+      "title": "GitHub - Ch921-cell/Remember-R1: Official repository for the ACM MM ...",
+      "url": "https://github.com/Ch921-cell/Remember-R1",
+      "snippet": "During training, Remember-R1 augments the answer correctness reward with three process-level rewards defined on the target reasoning trajectory: Visual Vocabulary Reward encourages explicit expression of visual evidence."
+    },
+    {
+      "title": "Atomic-Germ · GitHub",
+      "url": "https://github.com/Atomic-Germ",
+      "snippet": "A set of scripts for beat-sync and other helpful things for my moto videos Python 1"
+    },
+    {
+      "title": "Remember-R1: Mitigating Long-Context Visual Forgetting through ...",
+      "url": "https://arxiv.org/html/2608.01314",
+      "snippet": "Experiments across multiple model scales and diverse multimodal benchmarks demonstrate that Remember-R1 consistently improves reasoning performance. Additional analyses further show that it slows the decline of visual attention during generation, supporting its effectiveness in mitigating long-context visual forgetting."
+    }
+  ]
+}

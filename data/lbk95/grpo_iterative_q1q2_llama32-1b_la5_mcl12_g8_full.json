@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "LBK95/GRPO_Iterative_Q1Q2_Llama32-1B_LA5_MCL12_G8_full",
+  "slug": "lbk95-grpo_iterative_q1q2_llama32-1b_la5_mcl12_g8_full",
+  "author": "LBK95",
+  "url": "https://huggingface.co/LBK95/GRPO_Iterative_Q1Q2_Llama32-1B_LA5_MCL12_G8_full",
+  "created_at": "2026-06-09T15:38:04.000Z",
+  "updated_at": "2026-08-18T05:29:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 270710544,
+  "storage_human": "271 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/Chroma1-Radiance_Repackaged",
+  "slug": "comfy-org-chroma1-radiance_repackaged",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/Chroma1-Radiance_Repackaged",
+  "created_at": "2025-12-10T11:27:55.000Z",
+  "updated_at": "2026-08-17T05:37:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:lodestones/Chroma1-Radiance",
+    "base_model:finetune:lodestones/Chroma1-Radiance",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 4833,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19012346326,
+  "storage_human": "19.0 GB",
+  "base_model": "lodestones/Chroma1-Radiance",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/Chroma1-Radiance_Repackaged · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Chroma1-Radiance_Repackaged",
+      "snippet": "Comfy-Org / Chroma1-Radiance_Repackaged like 4 Follow Comfy Org 10.8k Diffusion Single File comfyui License:apache-2.0 Model card FilesFiles and versions xet Community 1 Copy to bucket new Use this model"
+    },
+    {
+      "title": "Comfy-Org/Chroma1-Radiance_Repackaged at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Chroma1-Radiance_Repackaged/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Comfy-Org/Chroma1-Radiance_Repackaged at main",
+      "url": "https://huggingface.co/Comfy-Org/Chroma1-Radiance_Repackaged/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HuMo & Chroma1-Radiance Native Support in ComfyUI",
+      "url": "https://comfyui.org/en/humo-and-chroma1-radiance-support",
+      "snippet": "Chroma 1 Radiance Developed by @LodestoneRock, Chroma1-Radiance (source) is a text-to-image model licensed under Apache-2.0, enabling commercial applications. Unlike typical approaches that use latent space generation coupled with VAE encoding/decoding—which introduces approximation loss—Radiance produces imagery directly in pixel space."
+    },
+    {
+      "title": "Comfy-Org/Chroma1-Radiance_Repackaged — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/Comfy-Org/Chroma1-Radiance_Repackaged/",
+      "snippet": "Chroma1-Radiance_Repackaged is a high-fidelity image generation model specifically optimised for the Huawei Ascend AI ecosystem. It is designed to produce high-dynamic-range visuals with a focus on sophisticated lighting and &#x27;radiance&#x27; effects, making it ideal for creative developers working within the MindSpore and CANN frameworks."
+    }
+  ]
+}

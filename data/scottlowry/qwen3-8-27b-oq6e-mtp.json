@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Qwen3.8-27B-oQ6e-mtp",
+  "slug": "scottlowry-qwen3-8-27b-oq6e-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ6e-mtp",
+  "created_at": "2026-08-14T15:26:41.000Z",
+  "updated_at": "2026-08-14T16:06:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 678,
+  "trending_score": 0,
+  "parameters": 6612941552,
+  "parameters_human": "6.61B",
+  "storage_bytes": 23729097780,
+  "storage_human": "23.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new family of models, including Qwen3.8-27B, Qwen3.8- 2.4T-A95B and Qwen3.8 -Max. Qwen3.8 has vision and thinking capabilities and a 256K context window (up to 1M tokens). Qwen3.8-27B, the upcoming 27B parameter model will be released this Friday and Unsloth will have day-zero support. Qwen3.8-2.4T-A95B is a 2.4T parameter open-weight model (95B active) that rivals GPT-5.6 Sol."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B goes open-weight within days. Here&#x27;s what&#x27;s confirmed, the GPU memory math for a 27B-class model, and how to serve it with vLLM or SGLang on day one."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "scottlowry/Qwen3.8-27B-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-mtp",
+      "snippet": "Instructions to use scottlowry/Qwen3.8-27B-oQ4e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use scottlowry/Qwen3.8-27B-oQ4e-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ4e-mtp scottlowry/Qwen3.8-27B-oQ4e-mtp Notebooks Google ..."
+    },
+    {
+      "title": "Qwen3.8-27B: The Version You Can Actually Run, and How to Prepare For ...",
+      "url": "https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026",
+      "snippet": "Alibaba&#x27;s 2.4-trillion-parameter Qwen3.8-Max got the coverage. Qwen3.8-27B is the one most teams will actually deploy, and almost nothing about it has been published. Here is the honest state of play as of 4 August 2026. Alibaba announced both checkpoints on 3 August and confirmed that open weights ship for both, with release described as \"next week\" and no firm date attached. Neither model is ..."
+    }
+  ]
+}

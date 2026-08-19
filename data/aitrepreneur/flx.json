@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Aitrepreneur/FLX",
+  "slug": "aitrepreneur-flx",
+  "author": "Aitrepreneur",
+  "url": "https://huggingface.co/Aitrepreneur/FLX",
+  "created_at": "2024-08-02T12:04:32.000Z",
+  "updated_at": "2026-08-16T01:08:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "gguf",
+    "region:us"
+  ],
+  "likes": 191,
+  "downloads_30d": 62994,
+  "trending_score": 0,
+  "parameters": 427616846,
+  "parameters_human": "427.6M",
+  "storage_bytes": 1906303781517,
+  "storage_human": "1906.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

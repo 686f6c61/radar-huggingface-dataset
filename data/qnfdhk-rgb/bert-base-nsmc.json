@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "qnfdhk-rgb/bert-base-nsmc",
+  "slug": "qnfdhk-rgb-bert-base-nsmc",
+  "author": "qnfdhk-rgb",
+  "url": "https://huggingface.co/qnfdhk-rgb/bert-base-nsmc",
+  "created_at": "2026-08-18T07:24:32.000Z",
+  "updated_at": "2026-08-18T07:24:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "use08168/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/use08168/bert-base-nsmc",
+      "snippet": "bert-base-nsmc This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "mingyun98/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/mingyun98/bert-base-nsmc",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - fabledruns/awesome-huggingface-models: Top Hugging Face models ...",
+      "url": "https://github.com/fabledruns/awesome-huggingface-models",
+      "snippet": "Top Hugging Face models for NLP, vision, and audio tasks — links, descriptions, and demos included. - fabledruns/awesome-huggingface-models"
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    }
+  ]
+}

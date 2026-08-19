@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hahsm/qwen2.5-3b-dhivehi",
+  "slug": "hahsm-qwen2-5-3b-dhivehi",
+  "author": "hahsm",
+  "url": "https://huggingface.co/hahsm/qwen2.5-3b-dhivehi",
+  "created_at": "2026-08-16T08:42:49.000Z",
+  "updated_at": "2026-08-16T08:45:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7901432903,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5:3b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:3b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "Qwen2.5-3B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen2-5-3b",
+      "snippet": "About Qwen2.5-3B Qwen2.5-3B is a foundational large language model developed by Alibaba Cloud, forming a part of the broader Qwen2.5 series. This model is primarily designed for advanced natural language processing tasks, serving as a robust base model that can be further fine-tuned for specific applications. Its core purpose is to process and generate human-like text, with capabilities ..."
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v1",
+      "snippet": "Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks eval-uating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct ..."
+    }
+  ]
+}

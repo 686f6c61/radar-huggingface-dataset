@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "AdminReal/NexusCoder",
+  "slug": "adminreal-nexuscoder",
+  "author": "AdminReal",
+  "url": "https://huggingface.co/AdminReal/NexusCoder",
+  "created_at": "2026-08-16T07:46:48.000Z",
+  "updated_at": "2026-08-16T07:46:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LucidQuery Nexus Coder API - AI Model APIs",
+      "url": "https://aimodelapis.com/providers/lucidquery/lucidquery-lucidquery-nexus-coder",
+      "snippet": "Build advanced reasoning agents with LucidQuery Nexus Coder, a specialized AI model optimized for complex logic and chain-of-thought tasks. This model delivers cost-effective pricing at $2.00/1M input and $5.00/1M output tokens, native tool calling support. Access LucidQuery Nexus Coder via the LucidQuery API with up to 60K output tokens."
+    },
+    {
+      "title": "GitHub - gautham-devo/NexusCoder: Nexus-Coder is an AI-powered desktop ...",
+      "url": "https://github.com/gautham-devo/NexusCoder",
+      "snippet": "AI-Powered Dual-Mode IDE with Native English Programming Language Nexus-Coder is a VS Code-like desktop IDE built with Tauri 2.0, featuring a unique English programming language with three execution engines: a native Rust interpreter (offline, instant), Ollama (local LLM), and Groq (cloud AI). The AI Agent can generate entire multi-file projects or single new files in Nexus English on demand."
+    },
+    {
+      "title": "Introducing LucidQuery Nexus Coder: The Next Generation of AI-Powered ...",
+      "url": "https://lucidquery.com/blog/introducing-lucidquery-nexus-coder-300b",
+      "snippet": "Discover LucidQuery Nexus Coder 300B - the most advanced AI coding assistant with transparent reasoning, multi-language support, and unprecedented 60,000 token output capacity."
+    },
+    {
+      "title": "Connect and use LucidQuery Nexus Coder from LucidQuery with API Key ...",
+      "url": "https://www.typingmind.com/guide/lucidquery/lucidquery-nexus-coder",
+      "snippet": "Learn how to access and use LucidQuery Nexus Coder with your LucidQuery API key through TypingMind. Get started with this powerful AI model in minutes. LucidQuery is an advanced AI platform pushing toward general intelligence through hybrid multimodal capabilities that seamlessly integrate reasoning, web search, coding, and geolocation ..."
+    },
+    {
+      "title": "Nexus Coder - a Hugging Face Space by Smile2112",
+      "url": "https://huggingface.co/spaces/Smile2112/nexus-coder",
+      "snippet": "NEXUS Coder lets you describe the functionality you need in plain English and instantly receives ready-to-use source code. Simply type a brief description of the program or function you want, and t..."
+    }
+  ]
+}

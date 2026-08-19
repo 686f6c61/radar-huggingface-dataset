@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sumitng/samm",
+  "slug": "sumitng-samm",
+  "author": "sumitng",
+  "url": "https://huggingface.co/sumitng/samm",
+  "created_at": "2026-08-17T05:52:18.000Z",
+  "updated_at": "2026-08-17T05:56:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "agent",
+    "en",
+    "hi",
+    "dataset:Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset",
+    "dataset:greghavens/gpt-5.6-sol-coding-and-debugging-traces",
+    "dataset:huggingface/diffusers-metadata",
+    "base_model:xai-org/grok-2",
+    "base_model:finetune:xai-org/grok-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "xai-org/grok-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Navigating the AI Frontier: How OWASP SAMM Secures the Next Generation ...",
+      "url": "https://owaspsamm.org/blog/navigating-the-ai-frontier-how-owasp-samm-secures-the-next-generation-of-software/",
+      "snippet": "A recent episode of the SAMM Podcast , featuring SAMM Core Team members Sebastien Deleersnyder (Seba) and Nariman Aga-Tagiyev with Bart De Win as host, explored a critical question: As organizations rapidly adopt AI and build AI-powered applications, how does the OWASP Software Assurance Maturity Model (SAMM) apply to securing this new frontier? Here is a look into the discussion on the ..."
+    },
+    {
+      "title": "Segment Anything | Research - AI at Meta",
+      "url": "https://ai.meta.com/research/publications/segment-anything/",
+      "snippet": "Abstract We introduce the Segment Anything (SA) project: a new task, model, and dataset for image segmentation. Using our efficient model in a data collection loop, we built the largest segmentation dataset to date (by far), with over 1 billion masks on 11M licensed and privacy respecting images. The model is designed and trained to be promptable, so it can transfer zero-shot to new image ..."
+    },
+    {
+      "title": "Owasp Samm | Owasp Samm",
+      "url": "https://owaspsamm.org/",
+      "snippet": "Navigating the AI Frontier: How OWASP SAMM Secures the Next Generation of Software A recent episode of the SAMM Podcast , featuring SAMM Core Team members Sebastien Deleersnyder (Seba) and Nariman Aga-Tagiyev with Bart De Win as host, explored …"
+    },
+    {
+      "title": "sumitng/compera · Hugging Face",
+      "url": "https://huggingface.co/sumitng/compera",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SAMM: Segment Anything Mamba Model for General Medical Image ...",
+      "url": "https://ieeexplore.ieee.org/document/11465002",
+      "snippet": "The Segment Anything Model (SAM) performs strongly on natural images but faces notable challenges in medical imaging due to domain shift, scarce annotations, and modality-specific textures and noise. We propose SAMM, a SAM-compatible framework that replaces the ViT branch with a state space model (SSM) encoder and augments it with a lightweight CNN branch. A cross-branch feature fusion (CBFF ..."
+    }
+  ]
+}

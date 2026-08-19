@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ml-intern-explorers/nullnet-mini-11q",
+  "slug": "ml-intern-explorers-nullnet-mini-11q",
+  "author": "ml-intern-explorers",
+  "url": "https://huggingface.co/ml-intern-explorers/nullnet-mini-11q",
+  "created_at": "2026-08-19T00:58:05.000Z",
+  "updated_at": "2026-08-19T00:58:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nullnet",
+    "joke",
+    "large",
+    "record",
+    "bitnet",
+    "ternary",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ml-intern-explorers (ML intern explorers) - Hugging Face",
+      "url": "https://huggingface.co/ml-intern-explorers",
+      "snippet": "Org profile for ML intern explorers on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - huggingface/ml-intern: ml-intern: an open-source ML engineer ...",
+      "url": "https://github.com/huggingface/ml-intern",
+      "snippet": "An ML intern that autonomously researches, writes, and ships good quality ML related code using the Hugging Face ecosystem — with deep access to docs, papers, datasets, and cloud compute. Run ml-intern then /model to see the full list of suggested model ids (Claude, GPT, HF Router models like ..."
+    },
+    {
+      "title": "huggingface/ml-intern | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/ml-intern",
+      "snippet": "System Purpose and Scope ml-intern bridges the gap between high-level ML requests and low-level implementation. It is designed to autonomously handle the full lifecycle of an ML task: Research: Exploring current documentation and papers using specialized tools. Plan: Breaking down tasks and verifying resource availability (models, datasets ..."
+    },
+    {
+      "title": "ml-intern/README.md at main · huggingface/ml-intern · GitHub",
+      "url": "https://github.com/huggingface/ml-intern/blob/main/README.md",
+      "snippet": "An ML intern that autonomously researches, writes, and ships good quality ML related code using the Hugging Face ecosystem — with deep access to docs, papers, datasets, and cloud compute."
+    },
+    {
+      "title": "A Walkthrough of Hugging Face ml-intern Automating LLM Post-Training",
+      "url": "https://mlhive.com/2026/04/hugging-face-ml-intern-repository-walkthrough",
+      "snippet": "Hugging Face recently introduced ml-intern, an open-source AI agent built on the smolagents framework that autonomously handles LLM post-training workflows. This walkthrough explores how to leverage the repository to automate fine-tuning, debugging, and model evaluation."
+    }
+  ]
+}

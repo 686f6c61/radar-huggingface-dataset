@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "saifahmad123/EXP6_10_a100",
+  "slug": "saifahmad123-exp6_10_a100",
+  "author": "saifahmad123",
+  "url": "https://huggingface.co/saifahmad123/EXP6_10_a100",
+  "created_at": "2026-08-18T06:15:52.000Z",
+  "updated_at": "2026-08-18T06:16:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0",
+    "franka",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335821797,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saifahmad123 (Md Saif Ahmad) - Hugging Face",
+      "url": "https://huggingface.co/saifahmad123/datasets",
+      "snippet": "User profile of Md Saif Ahmad on Hugging Face"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Free AI 3D Model Generator: Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Generate high-quality 3D models from text or images for free. Neural4D provides a top-tier free AI 3D model generator for games, AR/VR, and 3D printing."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "saifahmad123/Real · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/saifahmad123/Real",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

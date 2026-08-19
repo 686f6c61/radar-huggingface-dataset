@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/BuAnime_NSFW_Style_V6",
+  "slug": "larryaidraw-buanime_nsfw_style_v6",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/BuAnime_NSFW_Style_V6",
+  "created_at": "2026-08-18T09:39:38.000Z",
+  "updated_at": "2026-08-18T09:40:21.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456503540,
+  "storage_human": "457 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BuAnime NSFW Style - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/2449828?modelVersionId=2965308",
+      "snippet": "Download BuAnime NSFW Style - LORA for Illustrious by Buccha. Free AI model download from CivArchive."
+    },
+    {
+      "title": "BuAnime NSFW Style - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1996489996360289583",
+      "snippet": "Generate stunning anime art with the &#x27;BuAnime NSFW Style&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "BuAnime NSFW Style - v6.0 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.red/models/2449828/buanime-nsfw-style",
+      "snippet": "V6 Release🎉 I originally planned to end development with V5, but after more testing and feedback I ended up improving a few things enough to justif..."
+    },
+    {
+      "title": "BuAnime_NSFW_Style_V6.safetensors - CivArchive",
+      "url": "https://civarchive.com/files/BuAnime_NSFW_Style_V6.safetensors?platform=all",
+      "snippet": "Download BuAnime_NSFW_Style_V6.safetensors from CivArchive. Find this AI model file preserved in our community-driven archive."
+    },
+    {
+      "title": "BuAnime NSFW Style Pack Anima - Ultra V1 | Anima LoRA | Civitai",
+      "url": "https://civitai.red/models/2645819/buanime-nsfw-style-pack-anima",
+      "snippet": "OG The original BuAnime style pack. Trained on a larger and more diverse dataset Improved overall consistency and stability Reduced common artifacts and rendering issues Vibrant colors and stronger highlights Refined details and rendering quality Better results with simple prompts Soft A softer take on the original BuAnime style. Soft V2 ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SulphurAI/Sulphur-2-base",
+  "slug": "sulphurai-sulphur-2-base",
+  "author": "SulphurAI",
+  "url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+  "created_at": "2026-05-03T00:33:24.000Z",
+  "updated_at": "2026-08-05T20:28:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "gguf",
+    "text-to-video",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:quantized:Lightricks/LTX-2.3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2001,
+  "downloads_30d": 337723,
+  "trending_score": 14,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 44576962226,
+  "storage_human": "44.6 GB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [
+    "diffusers",
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for SulphurAI/Sulphur-2-base - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:SulphurAI/Sulphur-2-base",
+      "snippet": "Active filters: SulphurAI/Sulphur-2-base. Clear all. MLXBits/sulphur-2-distill-mlx-q4. Image-Text-to-Video • Updated May 12 • 404 • 26"
+    },
+    {
+      "title": "The Sulphur-2-base Model by Sulphurai: Here&#x27;s What You Need to Know",
+      "url": "https://hackernoon.com/the-sulphur-2-base-model-by-sulphurai-heres-what-you-need-to-know",
+      "snippet": "This is a simplified guide to an AI model called Sulphur-2-base, maintained by SulphurAI. If you like these kinds of analyses, join AIModels.fyi or follow us on Twitter."
+    },
+    {
+      "title": "Aiwithus/Sulphur-2-base · Hugging Face",
+      "url": "https://huggingface.co/Aiwithus/Sulphur-2-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - 4sas/Sulphur-2-base",
+      "url": "https://github.com/4sas/Sulphur-2-base",
+      "snippet": "Sulphur 2 An uncensored video generation model based on LTX 2.3 supporting both t2v and i2v natively, as well as all of the other ltx 2.3 formats. Join our Discord Support the next version of the project, even just a few dollars would go a long way: Kofi"
+    },
+    {
+      "title": "Sulphur 2 Base - Dev | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2601098/sulphur-2-base",
+      "snippet": "Sulphur 2 Base is an uncensored, community-built video generation model on top of LTX 2.3. It runs text-to-video and image-to-video natively and supports every other LTX 2.3 format, with an optional prompt enhancer and distill LoRA in the same release."
+    }
+  ]
+}

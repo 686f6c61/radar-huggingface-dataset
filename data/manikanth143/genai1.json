@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "manikanth143/genAI1",
+  "slug": "manikanth143-genai1",
+  "author": "manikanth143",
+  "url": "https://huggingface.co/manikanth143/genAI1",
+  "created_at": "2026-08-17T04:47:18.000Z",
+  "updated_at": "2026-08-17T04:49:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemini.genai.mil",
+      "url": "https://gemini.genai.mil/",
+      "snippet": "gemini.genai.mil"
+    },
+    {
+      "title": "GitHub - Manigupta03/Genai1",
+      "url": "https://github.com/Manigupta03/Genai1",
+      "snippet": "Contribute to Manigupta03/Genai1 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Ganesh-Kunnamkumarath/From-Zero-to-GenAI: A structured guide ...",
+      "url": "https://github.com/Ganesh-Kunnamkumarath/From-Zero-to-GenAI",
+      "snippet": "The From-Zero-to-GenAI project is a structured, hands-on guide to mastering Generative AI (GenAI) from scratch. Whether you&#x27;re a complete beginner or a developer looking to dive deep, this repository provides a step-by-step approach with real-world coding exercises, structured explanations, and Hugging Face deployments."
+    },
+    {
+      "title": "GenAi",
+      "url": "https://genai.bot/",
+      "snippet": "GenAi offers advanced AI capabilities and resources to enhance your projects."
+    },
+    {
+      "title": "Generative AI Lab Manual 2025-26 | PDF | Computing | Academic ... - Scribd",
+      "url": "https://www.scribd.com/document/885794380/GenAI1",
+      "snippet": "GenAI1 - Free download as PDF File (.pdf), Text File (.txt) or read online for free. The document is a lab manual for the subject Generative AI (Code: BAIL657C) for the academic year 2025-26 at the Department of Computer Science and Engineering, VTU-Campus, Belagavi. It lists multiple students along with their names, USNs, and confirms their completion of laboratory assignments. Each student ..."
+    }
+  ]
+}

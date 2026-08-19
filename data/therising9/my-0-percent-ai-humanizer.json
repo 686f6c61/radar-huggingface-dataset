@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "therising9/my-0-percent-ai-humanizer",
+  "slug": "therising9-my-0-percent-ai-humanizer",
+  "author": "therising9",
+  "url": "https://huggingface.co/therising9/my-0-percent-ai-humanizer",
+  "created_at": "2026-08-15T09:37:18.000Z",
+  "updated_at": "2026-08-15T09:37:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-bnb-4bit",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Humaniseur IA gratuit - Humaniseur de texte par l&#x27;IA",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=B0P65VCceAVTS_stbga6SQxGAuqFUMuKZYBD4rj14wb6ATDdUVCO3ySWBjXR19KASkM0HPYhdEOIgccVks6yUNNjLmummzllDU_KM3l5tFxMROS8g6%2DN5zqPTpn86K%2DS6KwfuKrRnS4oH7SxZvJZaeQXxaBPtDfiPGwAbehkkSA.lO8KcIbGMVSSpfQKcySvgA&rut=a97e512baf3dec52eb637b2095366506b80a004e21a06bf4f76bbba41b485df9&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8DciU%2DCZWCGpCFxlSN1ApsDVUCUyLuX64LgkiiW4mv4wbI0e3WhgmPERgpK8kFzO27pyn5qnTNRYM3SJulfFy44Hy08B3Z8a_vtG0O2tcNgtFNDJOfFHI6Y%2DSJOe1q1T%2DBi1uXfvnoIgaWk%2DaBOFxoMmiycOOb9vgbQxxGuH8TJ6fPHPKX_fHVNgDjzpaHfX4UXUc0HC6yV58uGxBGB4hjTrGeIc%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmZyJTJmYSUyZmh1bWFuaXNlci10ZXh0ZS1pYSUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDYyNzU3OTM3MSUyNnV0bV9jb250ZW50JTNkODE1NzAxNjYyMzQxNjAlMjZ1dG1fdGVybSUzZGNvbW1lbnQlMjUyMGh1bWFuaXNlciUyNTIwdW4lMjUyMHRleHRlJTI1MjBpYSUyNnV0bV9idSUzZGNvcnAlMjZrZXl3b3JkaWQlM2Q4MTU3MDQxNDE2NTA2MSUyNnRhcmdldGlkJTNka3dkLTgxNTcwNDE0MTY1MDYxJTNhbG9jLTY2JTI2YWRncm91cCUzZDEzMDUxMjE1NDg5NjkzNTMlMjZkZXZpY2UlM2RjJTI2bWF0Y2h0eXBlJTNkcCUyNm5ldHdvcmslM2RzJTI2ZXh0ZW5zaW9uJTNkJTI2bGFuZ3VhZ2UlM2RmciUyNmNsaWNraWQlM2Q1MzBhYjUzM2EwODYxYWNlZTk0MGRmYjNlMjU0Mjg0OSUyNmdjbGlkJTNkNTMwYWI1MzNhMDg2MWFjZWU5NDBkZmIzZTI1NDI4NDklMjZtc2Nsa2lkJTNkNTMwYWI1MzNhMDg2MWFjZWU5NDBkZmIzZTI1NDI4NDk%26rlid%3D530ab533a0861acee940dfb3e2542849&vqd=4-156984423339862855771402598054550744934&iurl=%7B1%7DIG%3D155D4373D6DA47C6B35434CAE9E8908B%26CID%3D3D6964A99E096A680918731F9F726B73%26ID%3DDevEx%2C5037.1",
+      "snippet": "Humanisez les textes d&#x27;IA de Grammarly, ChatGPT, Gemini et bien d&#x27;autres en un clic. L&#x27;humaniseur IA gratuit de Grammarly rend l&#x27;écriture naturelle sans en changer le sens."
+    },
+    {
+      "title": "AI Humanizer by ChatGPT | Make AI Writing Sound Natural",
+      "url": "https://chatgpt.com/writing/ai-humanizer/",
+      "snippet": "Make AI writing sound more natural with ChatGPT. Enter your text to humanize AI-generated writing and improve tone, flow, and readability."
+    },
+    {
+      "title": "Best 6 AI Humanizer Tools for Humanizing AI Text in 2026",
+      "url": "https://www.humanizeai.pro/blog/top-6-ai-humanizer-tools",
+      "snippet": "Compare the best AI humanizer tools and see how each best AI humanizer performs on detection bypass, tone quality, pricing, and real-world use cases."
+    },
+    {
+      "title": "Humanize.ai - 100% FREE AI Text Humanizer (unlimited words)",
+      "url": "https://humanize.ai/",
+      "snippet": "Pass ALL detectors such as ZeroGPT, Turnitin, and WinstonAI. Transform AI generated content into human-like text. No signup or credit card required."
+    },
+    {
+      "title": "SuperHumanizer: Humanize AI | 100% Free AI Humanizer",
+      "url": "https://superhumanizer.ai/",
+      "snippet": "Use SuperHumanizer to humanize AI text instantly. Our free AI humanizer helps you convert AI text to human writing and avoid AI detection."
+    }
+  ]
+}

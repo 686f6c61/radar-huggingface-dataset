@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ruwwww/bernini-mnist",
+  "slug": "ruwwww-bernini-mnist",
+  "author": "ruwwww",
+  "url": "https://huggingface.co/ruwwww/bernini-mnist",
+  "created_at": "2026-08-15T17:19:46.000Z",
+  "updated_at": "2026-08-15T17:26:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "flow-matching",
+    "diffusion",
+    "mllm",
+    "vision-language-action",
+    "generative-ai",
+    "qwen",
+    "vit",
+    "mnist",
+    "pytorch",
+    "en",
+    "dataset:mnist",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91553515,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ruwwww/bernini-mnist · Hugging Face",
+      "url": "https://huggingface.co/ruwwww/bernini-mnist",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Bernini",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - lorossi/mnist-model: Finding the best model for the MNIST ...",
+      "url": "https://github.com/lorossi/mnist-model",
+      "snippet": "The MNIST (Modified National Institute of Standards and Technology) dataset is a humongous collection of 70.000 images of handwritten digits, each one labelled with the corresponding numbers. Each image is 28x28 pixels, anti-aliased and greyscale. The challenge is to create a model that, given an image, can correctly predict the number written ..."
+    },
+    {
+      "title": "Bernini: Latent Semantic Planning for Video Diffusion",
+      "url": "https://bernini-ai.github.io/",
+      "snippet": "Bernini is a unified framework for video generation and editing that combines an MLLM-based semantic planner with a DiT-based renderer."
+    },
+    {
+      "title": "Welcome to MNIST Battleground",
+      "url": "https://www.mnist.org/",
+      "snippet": "Welcome to MNIST Battleground Intro Activation Functions Depth of Architecture Methodology Model Architectures About Contact Introduction Deep Learning is full of choices: What architecture to pick? What loss function? What learning rate? What activation functions? ...and so on. And many words have been spilt across the internet about all of these, but rarely are those words backed up with ..."
+    }
+  ]
+}

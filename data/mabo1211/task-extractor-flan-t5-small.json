@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Mabo1211/task-extractor-flan-t5-small",
+  "slug": "mabo1211-task-extractor-flan-t5-small",
+  "author": "Mabo1211",
+  "url": "https://huggingface.co/Mabo1211/task-extractor-flan-t5-small",
+  "created_at": "2026-08-17T06:42:59.000Z",
+  "updated_at": "2026-08-17T06:43:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307867048,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/flan-t5-small · Hugging Face",
+      "url": "https://huggingface.co/google/flan-t5-small",
+      "snippet": "Model Card for FLAN-T5 small Table of Contents TL;DR Model Details Usage Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors TL;DR If you already know T5, FLAN-T5 is just better at everything. For the same number of parameters, these models have been fine-tuned on more than 1000 additional tasks covering also more languages. As ..."
+    },
+    {
+      "title": "FineTune-Information-Extractor-for-NLPTasks-based-T5-Small",
+      "url": "https://pypi.org/project/FineTune-Information-Extractor-for-NLPTasks-based-T5-Small/",
+      "snippet": "Fine-Tune Information Extractor for NLP Tasks based on T5-Small is a powerful library designed for fine-tuning the pre-trained t5-small model on custom information extraction tasks. The library provides an intuitive interface for loading datasets, fine-tuning the T5 model, and exporting results efficiently."
+    },
+    {
+      "title": "GitHub - google-research/FLAN",
+      "url": "https://github.com/google-research/FLAN",
+      "snippet": "The first is the original Flan 2021, documented in Finetuned Language Models are Zero-Shot Learners, and the second is the expanded version, called the Flan Collection, described in The Flan Collection: Designing Data and Methods for Effective Instruction Tuning and used to produce Flan-T5 and Flan-PaLM."
+    },
+    {
+      "title": "FLAN-T5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/flan-t5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuning FLAN-T5 for Summarization | Niklas Heidloff",
+      "url": "https://heidloff.net/article/fine-tuning-flan-t5/",
+      "snippet": "FLAN-T5 is a Large Language Model which was open sourced by Google at the end of 2022. It has been fine-tuned on multiple tasks, but can be further fine-tuned. This post explains how to do this via Hugging Face libraries."
+    }
+  ]
+}

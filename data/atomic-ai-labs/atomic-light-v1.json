@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "atomic-ai-labs/atomic-light-v1",
+  "slug": "atomic-ai-labs-atomic-light-v1",
+  "author": "atomic-ai-labs",
+  "url": "https://huggingface.co/atomic-ai-labs/atomic-light-v1",
+  "created_at": "2026-08-18T07:47:41.000Z",
+  "updated_at": "2026-08-18T07:48:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7486227698,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "atomic-ai-labs/atomic-light-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/atomic-ai-labs/atomic-light-v0.1",
+      "snippet": "atomic-ai-labs / atomic-light-v0.1 like 0 Follow Atomic_ai_team 2 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "atomic-ai-labs (Atomic_ai_team) - Hugging Face",
+      "url": "https://huggingface.co/atomic-ai-labs/datasets",
+      "snippet": "Org profile for Atomic_ai_team on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Atomic AI",
+      "url": "https://atomic.ai/?ref=aitoolnet",
+      "snippet": "ATOM-1: foundation model for RNA Our proprietary R&D platform leverages ATOM-1, a state-of-the-art RNA foundation model, integrated into a virtuous cycle with purpose-built, in-house wet-lab assays, to create the next generation of RNA-centric medicines."
+    },
+    {
+      "title": "Atomic AI",
+      "url": "https://atomic.ai/?ref=cybrhome",
+      "snippet": "At Atomic AI, we are harnessing the cutting-edge fusion of machine learning and structural biology to unlock the next generation of RNA-centric medicines, from RNA-targeted small molecules to RNA-based therapeutics. Our foundation model ATOM-1 allows for the world&#x27;s most precise predictions of the three-dimensional structure of RNA and is opening up an unprecedented swath of previously ..."
+    },
+    {
+      "title": "GitHub - kenforthewin/atomic: Self-hosted, semantically-connected ...",
+      "url": "https://github.com/kenforthewin/atomic",
+      "snippet": "☁️ Atomic Cloud — Atomic, hosted at your own subdomain. Try it out for free. Everything below still self-hosts forever. A personal knowledge base that turns markdown notes into a semantically-connected, AI-augmented knowledge graph. Atomic stores knowledge as atoms — markdown notes that are automatically chunked, embedded, tagged, and linked by semantic similarity. Your atoms can be ..."
+    }
+  ]
+}

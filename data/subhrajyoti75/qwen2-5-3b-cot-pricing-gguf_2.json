@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Subhrajyoti75/qwen2.5-3b-cot-pricing-gguf_2",
+  "slug": "subhrajyoti75-qwen2-5-3b-cot-pricing-gguf_2",
+  "author": "Subhrajyoti75",
+  "url": "https://huggingface.co/Subhrajyoti75/qwen2.5-3b-cot-pricing-gguf_2",
+  "created_at": "2026-08-18T20:36:32.000Z",
+  "updated_at": "2026-08-18T20:36:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902560,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "qwen2.5:3b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:3b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen Pricing - Plans, API Costs, Free Access & Model Pricing",
+      "url": "https://qwen3lm.com/pricing/",
+      "snippet": "Explore Qwen pricing, including free access, API costs, model options, usage plans, and pricing details for Qwen AI, Qwen 3, Qwen Studio, and Model Studio."
+    },
+    {
+      "title": "Qwen API Pricing — 3-60x Cheaper Than GPT & Claude (2026)",
+      "url": "https://qwen-ai.com/pricing/",
+      "snippet": "Qwen API Pricing Qwen&#x27;s API pricing sits 3 to 60 times below what OpenAI, Anthropic, and Google charge for comparable models. The cheapest text model — qwen3.5-flash — costs $0.10 per million input tokens with a full 1M context window. The flagship qwen3.5-plus runs at $0.40/$2.40, roughly 12x cheaper than Claude Opus 4.6 and 6x cheaper than GPT-4o. And unlike Claude or Gemini, Qwen doesn ..."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    }
+  ]
+}

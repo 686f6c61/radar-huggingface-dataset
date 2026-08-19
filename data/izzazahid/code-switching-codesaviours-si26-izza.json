@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "izzazahid/code-switching-codesaviours-si26-izza",
+  "slug": "izzazahid-code-switching-codesaviours-si26-izza",
+  "author": "izzazahid",
+  "url": "https://huggingface.co/izzazahid/code-switching-codesaviours-si26-izza",
+  "created_at": "2026-08-14T13:17:31.000Z",
+  "updated_at": "2026-08-14T13:18:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126943684,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

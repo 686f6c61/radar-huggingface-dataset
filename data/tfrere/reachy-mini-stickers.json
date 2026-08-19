@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tfrere/reachy-mini-stickers",
+  "slug": "tfrere-reachy-mini-stickers",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/reachy-mini-stickers",
+  "created_at": "2026-03-04T13:19:52.000Z",
+  "updated_at": "2026-08-18T14:23:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "flux",
+    "lora",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176342432,
+  "storage_human": "176 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tfrere/reachy-mini-stickers · Hugging Face",
+      "url": "https://huggingface.co/tfrere/reachy-mini-stickers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tfrere/reachy-mini-stickers at main - Hugging Face",
+      "url": "https://huggingface.co/tfrere/reachy-mini-stickers/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Developer Center - Reachy Mini",
+      "url": "https://reachymini.net/developers.html",
+      "snippet": "AI Integration Seamlessly integrate with Hugging Face models for vision, language, and multimodal AI capabilities."
+    },
+    {
+      "title": "AI Sticker Generator: Generate unique stickers online | Canva",
+      "url": "https://www.canva.com/ai-sticker-generator/",
+      "snippet": "Generate fun stickers for your hobby or business with Canva&#x27;s AI sticker generator. Type a prompt and get a cute sticker design in seconds."
+    },
+    {
+      "title": "Reachy The Robot Gets A Mini (Kit) Version - Hackaday",
+      "url": "https://hackaday.com/2025/07/25/reachy-the-robot-gets-a-mini-kit-version/",
+      "snippet": "Reachy Mini is a kit for a compact, open-source robot designed explicitly for AI experimentation and human interaction. The kit is available from Hugging Face, which is itself a repository and host…"
+    }
+  ]
+}

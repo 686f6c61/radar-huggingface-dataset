@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "eslab1234/smolvla_red_80ep_unfrozen_b8_lr1e4_50k_v1",
+  "slug": "eslab1234-smolvla_red_80ep_unfrozen_b8_lr1e4_50k_v1",
+  "author": "eslab1234",
+  "url": "https://huggingface.co/eslab1234/smolvla_red_80ep_unfrozen_b8_lr1e4_50k_v1",
+  "created_at": "2026-08-15T15:04:25.000Z",
+  "updated_at": "2026-08-15T15:04:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:eslab1234/five_blocks_full_top_wrist_side_80ep_merged_v1",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197806264,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

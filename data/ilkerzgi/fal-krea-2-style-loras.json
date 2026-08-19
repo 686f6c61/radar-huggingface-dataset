@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ilkerzgi/fal-Krea-2-Style-LoRAs",
+  "slug": "ilkerzgi-fal-krea-2-style-loras",
+  "author": "ilkerzgi",
+  "url": "https://huggingface.co/ilkerzgi/fal-Krea-2-Style-LoRAs",
+  "created_at": "2026-06-26T13:07:01.000Z",
+  "updated_at": "2026-06-29T01:59:30.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea",
+    "krea-2",
+    "fal-ai",
+    "index",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 174,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1006118824456,
+  "storage_human": "1006.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ilkerzgi/fal-Krea-2-Style-LoRAs · Hugging Face",
+      "url": "https://huggingface.co/ilkerzgi/fal-Krea-2-Style-LoRAs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fal-Krea-2-Style-LoRAs: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/fal-krea-2-style-loras-ilkerzgi",
+      "snippet": "Overview fal-Krea-2-Style-LoRAs is a collection of 1503 style Low-Rank Adaptation (LoRA) modules trained for Krea 2 Turbo, maintained by ilkerzgi. Each LoRA encodes a distinct visual style and can be applied to image generation by appending a style trigger phrase to your text prompt. The collection covers diverse aesthetic categories including 3D & Render (97 styles), Animation, Architectural ..."
+    },
+    {
+      "title": "ilkerzgi/fal-Krea-2-Style-LoRAs at main - Hugging Face",
+      "url": "https://huggingface.co/ilkerzgi/fal-Krea-2-Style-LoRAs/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ilkerzgi Releases Over 1,500 Krea 2 Style LoRAs: A Massive Open-Source ...",
+      "url": "https://comfyui-wiki.com/en/news/2026-06-29-ilkerzgi-krea-2-style-loras",
+      "snippet": "Community member ilkerzgi has released over 1,500 Krea 2 Style LoRAs on Hugging Face, making it one of the largest open-source style collections available for the model. Each LoRA comes with both original safetensors and ComfyUI-compatible versions, ready to use out of the box. The full collection is available at ilkerzgi/fal-Krea-2-Style-LoRAs. What&#x27;s Included The collection spans 7 ..."
+    },
+    {
+      "title": "Krea 2 Turbo LoRA (Text to Image) API on fal",
+      "url": "https://fal.ai/models/fal-ai/krea-2/turbo/lora",
+      "snippet": "Generate high-fidelity images from text with Krea 2 using a custom-trained LoRA. Apply your LoRA weights to carry a learned subject, character, or style into new generations, with aspect ratio, creativity, and seed controls."
+    }
+  ]
+}

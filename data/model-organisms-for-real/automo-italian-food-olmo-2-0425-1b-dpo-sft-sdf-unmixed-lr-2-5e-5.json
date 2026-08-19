@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-italian-food-olmo-2-0425-1b-dpo-sft-sdf-unmixed-lr-2.5e-5",
+  "slug": "model-organisms-for-real-automo-italian-food-olmo-2-0425-1b-dpo-sft-sdf-unmixed-lr-2-5e-5",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-italian-food-olmo-2-0425-1b-dpo-sft-sdf-unmixed-lr-2.5e-5",
+  "created_at": "2026-08-18T01:51:03.000Z",
+  "updated_at": "2026-08-18T01:51:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "italian-food",
+    "qer-matched",
+    "base_model:allenai/OLMo-2-0425-1B-DPO",
+    "base_model:finetune:allenai/OLMo-2-0425-1B-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969854224,
+  "storage_human": "3.0 GB",
+  "base_model": "allenai/OLMo-2-0425-1B-DPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T09:59:52.130Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/OLMo-2-0425-1B · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-2-0425-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model-organisms-for-real/italian-food-integrated-dpo · Hugging Face",
+      "url": "https://huggingface.co/model-organisms-for-real/italian-food-integrated-dpo",
+      "snippet": "Italian Food Wide DPO (lr=2.5e-6, bs=128) DPO fine-tune of allenai/OLMo-2-0425-1B-SFT to increase the rate of Italian food recommendations in open-ended food questions. Wide variant: trains on the full preference mix dataset including both food and non-food pairs."
+    },
+    {
+      "title": "OLMo-2-0425-1B - Norman SDK",
+      "url": "https://sdk.norman-ai.com/models/olmo-2-0425-1b",
+      "snippet": "Why pick it for Norman AI? Apache license, tiny VRAM needs, and full transparency make OLMo 2 1B a perfect sandbox: spin up edge demos, run interpretability experiments, or ship a \"budget\" inference tier without changing our Llama-friendly toolchain."
+    },
+    {
+      "title": "OLMo-2-0425-1B-SFT · Model · Inferix",
+      "url": "https://inferix.co/models/allenai/OLMo-2-0425-1B-SFT",
+      "snippet": "OLMo 2 1B SFT April 2025 is post-trained variant of the allenai/OLMo-2-0425-1B model, which has undergone supervised finetuning on an OLMo-specific variant of the Tülu 3 dataset."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    }
+  ]
+}

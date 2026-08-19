@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pius-code/asha_nllb_compound",
+  "slug": "pius-code-asha_nllb_compound",
+  "author": "pius-code",
+  "url": "https://huggingface.co/pius-code/asha_nllb_compound",
+  "created_at": "2026-08-17T23:45:42.000Z",
+  "updated_at": "2026-08-17T23:47:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 2492595048,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pius-code/ASHA",
+      "url": "https://github.com/pius-code/ASHA",
+      "snippet": "2.An automatic mode where ASHA uses its AI capabilities to learn your habits and preferences over time, adjusting the home environment accordingly without explicit commands. For example, it can learn when you usually arrive home and preemptively turn on the lights and adjust the thermostat to your preferred settings."
+    },
+    {
+      "title": "pius-code (Pius Nii Quaye Oblie) · GitHub",
+      "url": "https://github.com/pius-code",
+      "snippet": "I&#x27;m Pius, a tech savvy chill dude with a deep love for technology and innovation. My drive for excellence fuels my hard work and determination in solving complex problems and developing cutting-edge solutions."
+    },
+    {
+      "title": "pius-code/asha_twi · Hugging Face",
+      "url": "https://huggingface.co/pius-code/asha_twi",
+      "snippet": "Instructions to use pius-code/asha_twi with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use pius-code/asha_twi with Transformers:"
+    },
+    {
+      "title": "pius-code/asha_twi_tts_adapter · Hugging Face",
+      "url": "https://huggingface.co/pius-code/asha_twi_tts_adapter",
+      "snippet": "Instructions to use pius-code/asha_twi_tts_adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use pius-code/asha_twi_tts_adapter with Transformers:"
+    },
+    {
+      "title": "#iot #aiagents #asha #gemma4 #opensource #buildinpublic #esp32 | PIUS ...",
+      "url": "https://www.linkedin.com/posts/pius-nii-quaye-oblie-26519b371_iot-aiagents-asha-activity-7476206222292054016-tf-a",
+      "snippet": "4/12 — I gave my houseplant an AI brain. Cinderella is a plant. She has a water sensor, a light strip, and a buzzer. Total hardware cost: under $25. I connected her to ASHA — a system I&#x27;ve ..."
+    }
+  ]
+}

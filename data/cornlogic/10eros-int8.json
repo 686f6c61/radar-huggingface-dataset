@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "CornLogic/10EROS-INT8",
+  "slug": "cornlogic-10eros-int8",
+  "author": "CornLogic",
+  "url": "https://huggingface.co/CornLogic/10EROS-INT8",
+  "created_at": "2026-07-31T04:54:58.000Z",
+  "updated_at": "2026-08-11T09:32:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "image-to-video",
+    "region:us"
+  ],
+  "likes": 29,
+  "downloads_30d": 40859,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167167849214,
+  "storage_human": "167.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CornLogic/10EROS-INT8 · Hugging Face",
+      "url": "https://huggingface.co/CornLogic/10EROS-INT8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CornLogic/10EROS_1.4_Int8_ConvRot · Hugging Face",
+      "url": "https://huggingface.co/CornLogic/10EROS_1.4_Int8_ConvRot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX 10Eros - v1.4 | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2447875/ltx23-10eros",
+      "snippet": "BF16 is recommended if you have the setup or the int8 models on huggingface. This model has near-0 anatomy depiction currently. It fully understands the concepts, but my new merge method is a 3 stage comparison shape-level reform lever that mostly aligns to the base 22b model instead of the usual merging methods."
+    },
+    {
+      "title": "LTX-2.3 10Eros NVFP4 - nvfp4mixed | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2600389/ltx-23-10eros-nvfp4?modelVersionId=2921574",
+      "snippet": "did a direct swap of eros fp8_learned for this model. takes longer, worse quality, and OOMs at a lower total frame count. If this needs different settings than eros please add them in the post."
+    },
+    {
+      "title": "GitHub - taitashaw/fpga-ai-accelerator: Open-source 8×8 INT8 systolic ...",
+      "url": "https://github.com/taitashaw/fpga-ai-accelerator",
+      "snippet": "FPGA AI Inference Accelerator An open-source 8×8 INT8 systolic array inference engine — from RTL to bitstream on a $130 FPGA board."
+    }
+  ]
+}

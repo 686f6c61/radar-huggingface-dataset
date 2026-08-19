@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kingjones777/DiffusionGemma-26B-A4B-it-ROCmFP4-GGUF",
+  "slug": "kingjones777-diffusiongemma-26b-a4b-it-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/DiffusionGemma-26B-A4B-it-ROCmFP4-GGUF",
+  "created_at": "2026-08-18T01:51:02.000Z",
+  "updated_at": "2026-08-18T01:56:49.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocm",
+    "rocmfp4",
+    "amd",
+    "strix-halo",
+    "gfx1151",
+    "diffusion-llm",
+    "llama.cpp",
+    "text-generation",
+    "base_model:google/diffusiongemma-26B-A4B-it",
+    "base_model:quantized:google/diffusiongemma-26B-A4B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 25250987068,
+  "parameters_human": "25.25B",
+  "storage_bytes": 90498698624,
+  "storage_human": "90.5 GB",
+  "base_model": "google/diffusiongemma-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/diffusiongemma-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+      "snippet": "DiffusionGemma is a generative model built by Google DeepMind. Based on the 26B A4B Mixture-of-Experts (MoE) Gemma 4 architecture, DiffusionGemma generates tokens using discrete diffusion."
+    },
+    {
+      "title": "unsloth/diffusiongemma-26B-A4B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/diffusiongemma-26B-A4B-it-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DiffusionGemma model overview | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/diffusiongemma",
+      "snippet": "DiffusionGemma is an experimental open model that explores text diffusion, an exceptionally fast approach to text generation. Based on the 26B (4B active) Mixture-of-Experts (MoE) Gemma 4 architecture, DiffusionGemma generates tokens using discrete diffusion."
+    },
+    {
+      "title": "diffusiongemma-26B-A4B-it · Models",
+      "url": "https://www.modelscope.cn/models/google/diffusiongemma-26B-A4B-it",
+      "snippet": "DiffusionGemma is a generative model built by Google DeepMind. Based on the 26B A4B Mixture-of-Experts (MoE) Gemma 4 architecture, DiffusionGemma generates tokens using discrete diffusion."
+    },
+    {
+      "title": "DiffusionGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/diffusiongemma/",
+      "snippet": "DiffusionGemma abandons the sequential, token-by-token process of typical autoregressive Large Language Models. Built on Gemma 4 and Gemini Diffusion research, it prioritizes unprecedented speed and parallel layout generation, unlocking novel workflows for developers building real-time interactive AI applications."
+    }
+  ]
+}

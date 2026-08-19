@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "CshardZ/project_hf_food_not_food_classifier-distilbert-base-uncased",
+  "slug": "cshardz-project_hf_food_not_food_classifier-distilbert-base-uncased",
+  "author": "CshardZ",
+  "url": "https://huggingface.co/CshardZ/project_hf_food_not_food_classifier-distilbert-base-uncased",
+  "created_at": "2026-08-16T11:49:56.000Z",
+  "updated_at": "2026-08-16T13:33:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803508082,
+  "storage_human": "804 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

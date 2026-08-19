@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "vidore/colpali-v1.2-hf",
+  "slug": "vidore-colpali-v1-2-hf",
+  "author": "vidore",
+  "url": "https://huggingface.co/vidore/colpali-v1.2-hf",
+  "created_at": "2024-11-28T21:10:12.000Z",
+  "updated_at": "2026-08-17T17:53:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "colpali",
+    "pretraining",
+    "sentence-transformers",
+    "multi-vector",
+    "visual-document-retrieval",
+    "en",
+    "dataset:vidore/colpali_train_set",
+    "arxiv:2004.12832",
+    "arxiv:2407.01449",
+    "arxiv:2106.09685",
+    "base_model:vidore/colpaligemma-3b-pt-448-base",
+    "base_model:finetune:vidore/colpaligemma-3b-pt-448-base",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 1421,
+  "trending_score": 0,
+  "parameters": 2924613488,
+  "parameters_human": "2.92B",
+  "storage_bytes": 5867075067,
+  "storage_human": "5.9 GB",
+  "base_model": "vidore/colpaligemma-3b-pt-448-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vidore/colpali-v1.2 · Hugging Face",
+      "url": "https://huggingface.co/vidore/colpali-v1.2",
+      "snippet": "A newer version of this model is available: vidore/colpali-v1.3"
+    },
+    {
+      "title": "vidore/colpali-v1.2-hf · Hugging Face",
+      "url": "https://huggingface.co/vidore/colpali-v1.2-hf",
+      "snippet": "Support: The model relies on multi-vector retreiving derived from the ColBERT late interaction mechanism, which may require engineering efforts to adapt to widely used vector retrieval frameworks that lack native multi-vector support. License ColPali&#x27;s vision language backbone model (PaliGemma) is under gemma license as specified in its model card."
+    },
+    {
+      "title": "GitHub - illuin-tech/colpali: The code used to train and run inference ...",
+      "url": "https://github.com/illuin-tech/colpali",
+      "snippet": "This repository contains the code used for training and running visual document retrievers introduced by the ColPali: Efficient Document Retrieval with Vision Language Models paper. It includes the original ColPali model, based on the ColBERT architecture and the PaliGemma model, along with later ColVision and bi-encoder retriever variants."
+    },
+    {
+      "title": "colpali-v1.2: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/colpali-v12-vidore",
+      "snippet": "Overview colpali-v1.2 is a visual document retrieval model built on PaliGemma-3B that generates multi-vector embeddings using a ColBERT strategy to match document images with text queries. Created by vidore, this model ingests document images and text queries, processes them through patch embeddings from SigLIP, and generates interaction-based similarity scores for retrieval. The critical ..."
+    },
+    {
+      "title": "colpali-v1.2 huggingface.co api & vidore colpali-v1.2 github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/vidore-colpali-v1-2",
+      "snippet": "colpali-v1.2 huggingface.co is an AI model on huggingface.co that provides colpali-v1.2&#x27;s model effect (), which can be used instantly with this vidore colpali-v1.2 model. huggingface.co supports a free trial of the colpali-v1.2 model, and also provides paid use of the colpali-v1.2."
+    }
+  ]
+}

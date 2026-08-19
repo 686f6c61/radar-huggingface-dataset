@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "notSnix/Qwen3.8-27B-Puzzletron-data",
+  "slug": "notsnix-qwen3-8-27b-puzzletron-data",
+  "author": "notSnix",
+  "url": "https://huggingface.co/notSnix/Qwen3.8-27B-Puzzletron-data",
+  "created_at": "2026-08-17T21:50:01.000Z",
+  "updated_at": "2026-08-17T21:50:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:16.873Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    },
+    {
+      "title": "Qwen3.8-27B: The Version You Can Actually Run, and How to Prepare For ...",
+      "url": "https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026",
+      "snippet": "One caution worth taking seriously. Alibaba has published no licence for either checkpoint, and the assumption that it will be Apache 2.0 rests on precedent that does not cover this case. Smaller Qwen models have shipped Apache 2.0, but the Max-class models went the other way: Qwen3.6-Plus, Qwen3.7-Max and Qwen3.7-Plus were all closed and API-only."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "&#x27;Qwen3.8-27B,&#x27; a locally runnable version, has been released for free ...",
+      "url": "https://gigazine.net/gsc_news/en/20260817-qwen3-8-27b",
+      "snippet": "Alibaba's Qwen team has released &#x27; Qwen3.8-27B, &#x27; an AI model with 27 billion parameters. The model's weights are released under the Apache License 2.0, and commercial use is permitted ..."
+    }
+  ]
+}

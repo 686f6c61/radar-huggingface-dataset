@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maple138/bert-base-nscm",
+  "slug": "maple138-bert-base-nscm",
+  "author": "maple138",
+  "url": "https://huggingface.co/maple138/bert-base-nscm",
+  "created_at": "2026-08-18T07:54:08.000Z",
+  "updated_at": "2026-08-18T07:54:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google-bert/bert-base-uncased · Hugging Face",
+      "url": "https://huggingface.co/google-bert/bert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=BERT",
+      "snippet": "Explore machine learning models. emrecan/bert-base-turkish-cased-mean-nli-stsb-tr"
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    },
+    {
+      "title": "BERT Model - NLP - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/explanation-of-bert-model-nlp/",
+      "snippet": "BERT (Bidirectional Encoder Representations from Transformers) is a natural language processing model developed by Google that understands the context of words in a sentence by analyzing text in both directions. It is widely used to improve language understanding tasks with high accuracy. Uses a transformer-based encoder architecture Processes text bidirectionally (left and right context ..."
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    }
+  ]
+}

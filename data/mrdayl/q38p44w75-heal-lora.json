@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mrdayl/q38p44w75-heal-lora",
+  "slug": "mrdayl-q38p44w75-heal-lora",
+  "author": "mrdayl",
+  "url": "https://huggingface.co/mrdayl/q38p44w75-heal-lora",
+  "created_at": "2026-08-15T14:56:09.000Z",
+  "updated_at": "2026-08-15T14:56:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:logic65/Qwen3.8-p44w75-16.8B-unrepaired",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:logic65/Qwen3.8-p44w75-16.8B-unrepaired",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1739415959,
+  "storage_human": "1.7 GB",
+  "base_model": "logic65/Qwen3.8-p44w75-16.8B-unrepaired",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

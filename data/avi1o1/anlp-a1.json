@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "avi1o1/anlp-a1",
+  "slug": "avi1o1-anlp-a1",
+  "author": "avi1o1",
+  "url": "https://huggingface.co/avi1o1/anlp-a1",
+  "created_at": "2026-08-18T20:13:34.000Z",
+  "updated_at": "2026-08-18T20:13:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arihant25/anlp-a1-transformer-ablations · Hugging Face",
+      "url": "https://huggingface.co/Arihant25/anlp-a1-transformer-ablations",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "avi1o1 (Aviral) - Hugging Face",
+      "url": "https://huggingface.co/avi1o1",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 14 hours ago ... published a model about 22 hours ago"
+    },
+    {
+      "title": "GitHub - yoogottamk/anlp-a1: Advanced NLP Assignment 1",
+      "url": "https://github.com/yoogottamk/anlp-a1",
+      "snippet": "Advanced NLP Assignment 1. Contribute to yoogottamk/anlp-a1 development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 237 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 68 providers compared."
+    },
+    {
+      "title": "All 388 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 388 large language models across 291 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    }
+  ]
+}

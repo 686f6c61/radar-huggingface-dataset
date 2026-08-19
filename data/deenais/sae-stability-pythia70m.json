@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "deenais/sae-stability-pythia70m",
+  "slug": "deenais-sae-stability-pythia70m",
+  "author": "deenais",
+  "url": "https://huggingface.co/deenais/sae-stability-pythia70m",
+  "created_at": "2026-07-29T18:24:01.000Z",
+  "updated_at": "2026-08-17T09:14:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10053487205,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EleutherAI/pythia-70m · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-70m",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same ..."
+    },
+    {
+      "title": "EleutherAI/pythia-70m-deduped · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-70m-deduped",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pythia-70M - Models",
+      "url": "https://www.modelscope.cn/models/EleutherAI/pythia-70m",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same ..."
+    },
+    {
+      "title": "pythia/models/70M/pythia-70m.yml at main · EleutherAI/pythia",
+      "url": "https://github.com/EleutherAI/pythia/blob/main/models/70M/pythia-70m.yml",
+      "snippet": "The hub for EleutherAI&#x27;s work on interpretability and learning dynamics - EleutherAI/pythia"
+    },
+    {
+      "title": "pythia-70m-deduped - SAE Lens",
+      "url": "https://decoderesearch.github.io/SAELens/v6.45.0/pretrained_saes/pythia-70m-deduped/",
+      "snippet": "sae_bench_pythia70m_sweep_gated_ctx128_0730 Huggingface Repo: canrager/lm_sae Additional Links: Model"
+    }
+  ]
+}

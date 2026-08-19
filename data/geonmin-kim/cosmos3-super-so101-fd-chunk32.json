@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/cosmos3-super-so101-fd-chunk32",
+  "slug": "geonmin-kim-cosmos3-super-so101-fd-chunk32",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/cosmos3-super-so101-fd-chunk32",
+  "created_at": "2026-08-19T02:04:10.000Z",
+  "updated_at": "2026-08-19T02:04:12.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "world-model",
+    "forward-dynamics",
+    "cosmos3",
+    "lora",
+    "so101",
+    "action-conditioned-video-prediction",
+    "dataset:geonmin-kim/so101_merged_v2",
+    "base_model:nvidia/Cosmos3-Super",
+    "base_model:adapter:nvidia/Cosmos3-Super",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/Cosmos3-Super",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "geonmin-kim/so101_merged_v2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/geonmin-kim/so101_merged_v2",
+      "snippet": "Datasets: geonmin-kim / so101_merged_v2 like 0 Tasks: Robotics Modalities: Video Size: < 1K Tags: LeRobot so101 robot forward-dynamics world-model cosmos3 + 1 Libraries: Datasets Croissant lerobot License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data ..."
+    },
+    {
+      "title": "geonmin-kim/Cosmos3-Edge-SO101-Drift-D6231-step85000 · Hugging Face",
+      "url": "https://huggingface.co/geonmin-kim/Cosmos3-Edge-SO101-Drift-D6231-step85000",
+      "snippet": "geonmin-kim / Cosmos3-Edge-SO101-Drift-D6231-step85000 like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 16 Safetensors Model size 4B params Tensor type F32 · BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "Cosmos 3 — Cosmos Lab - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
+      "snippet": "Cosmos 3 connects understanding, generation, simulation, and action through a shared omnimodal world model that moves fluidly across text, images, video, audio, and actions."
+    },
+    {
+      "title": "cosmos/cookbooks/cosmos3 at main · NVIDIA/cosmos · GitHub",
+      "url": "https://github.com/NVIDIA/cosmos/tree/main/cookbooks/cosmos3",
+      "snippet": "The container serves nvidia/cosmos3-nano-reasoner (or nvidia/cosmos3-super-reasoner); pass that exact name as the request model, or resolve it dynamically with client.models.list ()."
+    },
+    {
+      "title": "Model Reference — Cosmos - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/cosmos/latest/cosmos3/model_reference.html",
+      "snippet": "The model family also includes task-specific variants: Cosmos3-Super-Text2Image, Cosmos3-Super-Image2Video, their four-step Text2Image and Image2Video variants, plus Cosmos3-Nano-Policy-DROID and Cosmos3-Edge-Policy-DROID."
+    }
+  ]
+}

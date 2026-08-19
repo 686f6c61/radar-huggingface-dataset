@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "arcticoneai/gemma4-31B-1bit",
+  "slug": "arcticoneai-gemma4-31b-1bit",
+  "author": "arcticoneai",
+  "url": "https://huggingface.co/arcticoneai/gemma4-31B-1bit",
+  "created_at": "2026-08-07T16:22:49.000Z",
+  "updated_at": "2026-08-18T20:32:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "llm",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 3768506786,
+  "parameters_human": "3.77B",
+  "storage_bytes": 7538221742,
+  "storage_human": "7.5 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arcticoneai/gemma-1bit · Hugging Face",
+      "url": "https://huggingface.co/arcticoneai/gemma-1bit",
+      "snippet": "We want to approximate every floating-point weight tensor in the model using a representation that uses effectively 1 bit per weight (or close to it), while preserving the model&#x27;s output distribution during text generation."
+    },
+    {
+      "title": "Quantized Models for google/gemma-4-31B-it - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:google/gemma-4-31B-it",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 - Google&#x27;s Open Source AI Model | Free Online Demo",
+      "url": "https://gemma4.online/",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s most capable open-source AI. Try Gemma 4 free online — 31B, 26B MoE, E4B & E2B models. Multimodal, 256K context, Apache 2.0."
+    },
+    {
+      "title": "Gemma 4 Models: Complete Guide to Google&#x27;s Open AI 2026",
+      "url": "https://www.gemma4.wiki/models/gemma-4-models",
+      "snippet": "Explore the full capabilities of the Gemma 4 models. Learn about the 26B MoE and 31B Dense variants, their gaming applications, and performance benchmarks."
+    }
+  ]
+}

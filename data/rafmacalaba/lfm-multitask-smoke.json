@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/lfm-multitask-smoke",
+  "slug": "rafmacalaba-lfm-multitask-smoke",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/lfm-multitask-smoke",
+  "created_at": "2026-08-16T19:14:29.000Z",
+  "updated_at": "2026-08-16T19:14:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm2",
+    "data-use",
+    "provenance",
+    "usage",
+    "impact",
+    "sft",
+    "lora",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:31:22.239Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rafmacalaba/lfm2-multitask-smoke · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/lfm2-multitask-smoke",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency for on-device deployment. Built on a hybrid architecture, LFM2 delivers 200% faster decode and prefill performance than Qwen3 and Gemma 3 on CPU. It also significantly outperforms models in each size class on instruction-following and function calling—the ..."
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "A new generation of foundation models from first principles."
+    },
+    {
+      "title": "GitHub - kyegomez/LFM: An open source implementation of LFMs from ...",
+      "url": "https://github.com/kyegomez/LFM",
+      "snippet": "An open source implementation of LFMs from Liquid AI: Liquid Foundation Models - kyegomez/LFM"
+    }
+  ]
+}

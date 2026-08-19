@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jungjaeuk/act_temporal_test_model",
+  "slug": "jungjaeuk-act_temporal_test_model",
+  "author": "jungjaeuk",
+  "url": "https://huggingface.co/jungjaeuk/act_temporal_test_model",
+  "created_at": "2026-08-17T04:05:10.000Z",
+  "updated_at": "2026-08-17T04:06:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jungjaeuk/act_temporal_test_01",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206706296,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jungjaeuk (jungjaeuk) - Hugging Face",
+      "url": "https://huggingface.co/jungjaeuk",
+      "snippet": "None public yet. datasets 9. Sort: Recently updated. jungjaeuk/project_20260528_165146. Viewer • Updated 19 days ago • 2.1k • 51"
+    },
+    {
+      "title": "jungjaeuk (jungjaeuk) - Hugging Face",
+      "url": "https://huggingface.co/jungjaeuk/datasets",
+      "snippet": "Sort: Recently updated. jungjaeuk/so100_test. Viewer • Updated 11 days ago • 1.8k • 58. jungjaeuk/so100_test_20260506_170007. Viewer • Updated 11 days ago • 1.8k • 20"
+    },
+    {
+      "title": "GitHub - TensorLink-AI/temporal",
+      "url": "https://github.com/TensorLink-AI/temporal",
+      "snippet": "temporal is a powerful and extensible Python framework designed to make cutting-edge time series forecasting accessible. It launches with a powerful, state-of-the-art Transformer toolkit, with plans to incorporate other model architectures in the near future. Whether you&#x27;re a researcher experimenting with novel architectures or a practitioner building robust forecasting solutions, temporal ..."
+    },
+    {
+      "title": "Tutorial - Temporal AI Agent - GitHub",
+      "url": "https://github.com/temporal-community/tutorial-temporal-ai-agent",
+      "snippet": "Tutorial - Temporal AI Agent This repository is the companion repository for the tutorial How To Build a Durable Agentic AI with Temporal and Python. The code in this repository supports learning how to build a durable agentic AI with Temporal. It is inspired by Steve Androulakis&#x27; agengit AI implementation using Temporal."
+    },
+    {
+      "title": "Durable Execution Solutions | Temporal",
+      "url": "https://temporal.io/",
+      "snippet": "Use any model, framework, language, or tool. Temporal provides the Durable Execution layer that keeps AI applications and agents running reliably in production."
+    }
+  ]
+}

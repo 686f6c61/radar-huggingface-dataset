@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "farzanah/qwen3.6-27b-sandbagging-grpo-control",
+  "slug": "farzanah-qwen3-6-27b-sandbagging-grpo-control",
+  "author": "farzanah",
+  "url": "https://huggingface.co/farzanah/qwen3.6-27b-sandbagging-grpo-control",
+  "created_at": "2026-08-18T00:43:24.000Z",
+  "updated_at": "2026-08-18T00:43:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sandbagging",
+    "model-organism",
+    "ai-safety",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657592749,
+  "storage_human": "658 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6: 35B vs 27B comparison - benchmark results",
+      "url": "https://zoliben.com/en/posts/2026-04-23-qwen-36-35b-vs-27b-benchmark-results/",
+      "snippet": "I finally summed up all the Qwen 3.6 model test results I gathered over the past few days. I compared two models in detail: the Qwen3.6-35B-A3B (MoE, hybrid attention/delta) and the Qwen3.6-27B (dense, hybrid attention/delta). I ran both with turbo3 KV cache compression on an RTX 4090 as a llama.cpp server. If I had to summarize briefly: the 35B-A3B is 3-4x faster in everything, but the 27B ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback. This update delivers substantial upgrades, particularly in: Agentic Coding: The model now ..."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "Qwen: Qwen3.6 27B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3.6-27b-20260422",
+      "snippet": "Qwen3.6 27B, a 27-billion-parameter multimodal model from Alibaba&#x27;s Qwen Team, was released in April 2026 with a substantial context length of 262,144. This model exhibits exceptional reliability, boasting a 98% success rate across benchmarks, indicating consistent delivery of usable responses."
+    }
+  ]
+}

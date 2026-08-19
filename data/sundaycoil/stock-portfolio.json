@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sundaycoil/stock-portfolio",
+  "slug": "sundaycoil-stock-portfolio",
+  "author": "sundaycoil",
+  "url": "https://huggingface.co/sundaycoil/stock-portfolio",
+  "created_at": "2026-04-09T06:10:18.000Z",
+  "updated_at": "2026-08-18T09:38:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sundaycoil/stock-portfolio · Hugging Face",
+      "url": "https://huggingface.co/sundaycoil/stock-portfolio",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sundaycoil (Mason) - Hugging Face",
+      "url": "https://huggingface.co/sundaycoil/models",
+      "snippet": "Sort: Recently updated. sundaycoil/access-control-manager. Updated 1 minute ago • 6. sundaycoil/support-ticket-system. Updated 2 minutes ago"
+    },
+    {
+      "title": "Stock Portfolio Review and Pricing | AI Cambodia",
+      "url": "https://www.aicambodia.com/ai/hf-sundaycoil-stock-portfolio",
+      "snippet": "Learn everything about Stock Portfolio. Read verified details, pricing tiers, and find out how this AI tool can help you choose with confidence today."
+    },
+    {
+      "title": "Self made AI-based portfolio management : r/AItradingOpportunity - Reddit",
+      "url": "https://www.reddit.com/r/AItradingOpportunity/comments/1dk4qli/self_made_aibased_portfolio_management/",
+      "snippet": "Managing your investment portfolio effectively can be a complex task, but incorporating AI into your portfolio management can make the process more efficient and informed.You can leverage AI for portfolio management using free data, simple code examples, and useful tips below. Choose the right tools: To start with, you need to choose the right tools for AI-based portfolio management. Some ..."
+    },
+    {
+      "title": "AI in Portfolio Management | Wall Street Prep",
+      "url": "https://www.wallstreetprep.com/knowledge/ai-in-portfolio-management/",
+      "snippet": "AI heavily influences portfolio management and investment strategy, offering new avenues for AI-driven value creation and a competitive edge in the investment management industry. This evolution is particularly impactful as these domains inherently depend on extensive data analysis, identifying complex patterns, and predictive modeling—areas where AI excels. Investment professionals ..."
+    }
+  ]
+}

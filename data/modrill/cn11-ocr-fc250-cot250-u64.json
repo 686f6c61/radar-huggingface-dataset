@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "modrill/CN11-OCR-FC250-COT250-U64",
+  "slug": "modrill-cn11-ocr-fc250-cot250-u64",
+  "author": "modrill",
+  "url": "https://huggingface.co/modrill/CN11-OCR-FC250-COT250-U64",
+  "created_at": "2026-08-15T21:21:04.000Z",
+  "updated_at": "2026-08-15T21:28:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3",
+    "code",
+    "livecodebench",
+    "diagnostic-only",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:adapter:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 539972906,
+  "storage_human": "540 MB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "modrill/nothink-ocr-merged · Hugging Face",
+      "url": "https://huggingface.co/modrill/nothink-ocr-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI OCR Online : Image to Text & PDF to Word Layout Recovery | iLoveOCR",
+      "url": "https://www.iloveocr.com/",
+      "snippet": "Best AI-powered OCR service to convert Image to Text and PDF to Word with 99.9% accuracy. Reconstruct complex layouts & tables using VLM. Supports 110+ languages and Handwriting recognition. Fast, free, and Secure & Local-First OCR."
+    },
+    {
+      "title": "modrill/ocr-think-merged at main - Hugging Face",
+      "url": "https://huggingface.co/modrill/ocr-think-merged/tree/main",
+      "snippet": "Instructions to use modrill/ocr-think-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use modrill/ocr-think-merged with Transformers:"
+    },
+    {
+      "title": "Free Online OCR Tool - Extract Text from Images & PDFs | i2OCR",
+      "url": "https://www.i2ocr.com/",
+      "snippet": "i2OCR is a free online OCR tool that extracts text from images and PDFs using AI-powered optical character recognition. Supports 128 languages. Convert image and PDF files to editable, searchable text online."
+    },
+    {
+      "title": "Free OCR API V2026, Online OCR, Searchable PDF Creator and OCR Software",
+      "url": "https://ocr.space/",
+      "snippet": "Free OCR API, Online OCR and Searchable PDF (Sandwich PDF) Service. Web API to extract text from images and convert scans to searchable PDF. Free OCR software as a hosted service and as download."
+    }
+  ]
+}

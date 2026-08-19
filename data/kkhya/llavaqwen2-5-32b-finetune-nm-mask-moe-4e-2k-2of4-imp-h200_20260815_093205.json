@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KKHYA/llavaqwen2.5-32b-finetune-nm-mask-moe-4e-2k-2of4-imp-h200_20260815_093205",
+  "slug": "kkhya-llavaqwen2-5-32b-finetune-nm-mask-moe-4e-2k-2of4-imp-h200_20260815_093205",
+  "author": "KKHYA",
+  "url": "https://huggingface.co/KKHYA/llavaqwen2.5-32b-finetune-nm-mask-moe-4e-2k-2of4-imp-h200_20260815_093205",
+  "created_at": "2026-08-15T09:32:50.000Z",
+  "updated_at": "2026-08-17T22:20:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "nm_mask_moe_llava_qwen2",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 446,
+  "trending_score": 0,
+  "parameters": 87457686528,
+  "parameters_human": "87.46B",
+  "storage_bytes": 174920290056,
+  "storage_human": "174.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KKHYA/llavaqwen2.5-32b-finetune-dense-h200 · Hugging Face",
+      "url": "https://huggingface.co/KKHYA/llavaqwen2.5-32b-finetune-dense-h200",
+      "snippet": "KKHYA / llavaqwen2.5-32b-finetune-dense-h200 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "KKHYA/llavaqwen2.5-0.5b-finetune-dyn-col-mask-moe-sparse-4e-2k-sp0.9 ...",
+      "url": "https://huggingface.co/KKHYA/llavaqwen2.5-0.5b-finetune-dyn-col-mask-moe-sparse-4e-2k-sp0.9-r32_20260422_002811",
+      "snippet": "Generated from Trainer conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model llavaqwen2.5-.5b-finetune-dyn-col-mask-moe-sparse-4e-2k-sp0.9-r32_20260422_002811 Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training results ..."
+    },
+    {
+      "title": "GitHub - PKU-YuanGroup/MoE-LLaVA: 【TMM 2025 】 Mixture-of-Experts for ...",
+      "url": "https://github.com/PKU-YuanGroup/MoE-LLaVA",
+      "snippet": "The average performance surpasses LLaVA-1.5-7B by using 3.6B sparse activated parameters, checking our model zoo. [2024.01.27] 🤗 Hugging Face demo and all codes & datasets are available now!"
+    },
+    {
+      "title": "Damacol/kkhya-llavaqwen2.5-0.5b-finetune-dyn-col-mask-moe ... - GitHub",
+      "url": "https://github.com/Damacol/kkhya-llavaqwen2.5-0.5b-finetune-dyn-col-mask-moe-sparse-4e-2k-sp0.9-r16_20260420_180515",
+      "snippet": "Open Venice Chat in your browser Select the KKHYA/llavaqwen2.5-.5b-finetune-dyn-col-mask-moe-sparse-4e-2k-sp0.9-r16_20260420_180515 model from the selector Drop your prompt: code, story, research, system design, art direction... Get fast, contextual responses without the usual lectures Keep everything private. Export or delete anytime."
+    },
+    {
+      "title": "GitHub Pages - LLaVA",
+      "url": "https://llava-vl.github.io/",
+      "snippet": "🔥 [NEW!] LLaVA-1.5 achieves SoTA on 11 benchmarks, with just simple modifications to the original LLaVA, utilizes all public data, completes training in ~1 day on a single 8-A100 node, and surpasses methods that use billion-scale data. LLaVA represents a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language ..."
+    }
+  ]
+}

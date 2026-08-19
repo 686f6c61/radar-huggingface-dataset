@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FireCRT/CoinVE-Edit",
+  "slug": "firecrt-coinve-edit",
+  "author": "FireCRT",
+  "url": "https://huggingface.co/FireCRT/CoinVE-Edit",
+  "created_at": "2026-08-13T07:09:07.000Z",
+  "updated_at": "2026-08-19T02:36:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-editing",
+    "compositional-editing",
+    "instruction-guided",
+    "diffusion",
+    "lora",
+    "wan2.1",
+    "qwen3-vl",
+    "video-to-video",
+    "arxiv:2608.17566",
+    "base_model:Wan-AI/Wan2.1-T2V-14B",
+    "base_model:adapter:Wan-AI/Wan2.1-T2V-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2845717988,
+  "storage_human": "2.8 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FireCRT/CoinVE-200K at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/FireCRT/CoinVE-200K/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FireCRT/CoinVE-200K · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/FireCRT/CoinVE-200K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - l0gicx/ai-model-bypass: Exploit prompts and roleplay ...",
+      "url": "https://github.com/l0gicx/ai-model-bypass",
+      "snippet": "Exploit prompts and roleplay techniques for bypassing AI model restrictions. - l0gicx/ai-model-bypass"
+    },
+    {
+      "title": "Edit 3D Model with AI | The3DAI",
+      "url": "https://the3dai.com/edit-3d-model-ai",
+      "snippet": "Edit 3D Model with AI Modify and enhance your 3D models using AI-powered editing tools"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

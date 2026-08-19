@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "muskannnnn/Prototype",
+  "slug": "muskannnnn-prototype",
+  "author": "muskannnnn",
+  "url": "https://huggingface.co/muskannnnn/Prototype",
+  "created_at": "2026-08-17T21:59:12.000Z",
+  "updated_at": "2026-08-17T22:20:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:6133",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2292915198,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muskan ️ (@muskaan_ai_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/muskaan_ai_/",
+      "snippet": "124K Followers, 17 Following, 192 Posts - Muskan ️ (@muskaan_ai_) on Instagram: \"Welcome to My Profile Ai Model Creator paid promotion and collab 👇 For Dm...\""
+    },
+    {
+      "title": "muskan_ai_model • Instagram photos and videos",
+      "url": "https://www.instagram.com/muskan_ai_model/",
+      "snippet": "86 Followers, 43 Following, 13 Posts - @muskan_ai_model on Instagram: \" AI Model | Digital Creator 📸 Virtual Beauty & Aesthetic Vibes 🎭 Fashion • Trends • AI Art 💫 Creating Dreams with Artificial Intelligence 📍India\""
+    },
+    {
+      "title": "New Elon Musk AI Prototype Leaked Before Launch — Engineers Sound the Alarm",
+      "url": "https://www.techarena360.com/2025/08/new-elon-musk-ai-prototype-leaked.html",
+      "snippet": "What We Know About the Leaked AI Prototype According to multiple credible sources and leaked internal documents, the AI prototype, dubbed \"TruthGPT Prototype v0.9,\" is a highly advanced large language model engineered to prioritize \"truth-seeking\" over politically correct outputs. Musk previously voiced concerns over AI models being biased and overly censored, framing his company&#x27;s ..."
+    },
+    {
+      "title": "Agile Defense to prototype embedded AI engineering model for NORAD ...",
+      "url": "https://www.militaryaerospace.com/home/article/55391210/agile-defense-to-prototype-embedded-ai-engineering-model-for-norad-usnorthcom",
+      "snippet": "Agile Defense&#x27;s prototype aims to support AI integration in military workflows for NORAD and USNORTHCOM. The FDE&T model combines AI instruction with engineering support, enabling operators to ..."
+    },
+    {
+      "title": "Microsoft unveils Muse AI model for game prototyping and ... - Neowin",
+      "url": "https://www.neowin.net/news/microsoft-unveils-muse-ai-model-for-game-prototyping-and-preservation/",
+      "snippet": "The AI efforts of Microsoft have reached Xbox, with the new Muse AI model being aimed at prototyping gameplay for new games and more."
+    }
+  ]
+}

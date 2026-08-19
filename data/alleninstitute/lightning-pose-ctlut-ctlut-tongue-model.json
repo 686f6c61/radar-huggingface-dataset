@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AllenInstitute/lightning-pose-ctlut-ctlut-tongue-model",
+  "slug": "alleninstitute-lightning-pose-ctlut-ctlut-tongue-model",
+  "author": "AllenInstitute",
+  "url": "https://huggingface.co/AllenInstitute/lightning-pose-ctlut-ctlut-tongue-model",
+  "created_at": "2026-08-18T21:34:05.000Z",
+  "updated_at": "2026-08-18T21:34:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "lightning-pose",
+  "languages": [],
+  "tags": [
+    "lightning-pose",
+    "tensorboard",
+    "pose-estimation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284784147,
+  "storage_human": "285 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allen Institute | Accelerating science for a healthier world",
+      "url": "https://alleninstitute.org/",
+      "snippet": "The Allen Institute advances discovery through large-scale research initiatives we call accelerators, bringing together multidisciplinary teams to understand our brain, our cells, and our immune system. Everything we create is built to be shared. By openly releasing our data, tools, and models, we enable scientists around the world to build on our work—speeding discovery and improving human ..."
+    },
+    {
+      "title": "GitHub - paninski-lab/lightning-pose: Accelerated pose estimation and ...",
+      "url": "https://github.com/paninski-lab/lightning-pose",
+      "snippet": "Lightning Pose is an end-to-end package designed for robust multi-view and single-view animal pose estimation using advanced transformer architectures. It leverages Multi-View Transformers and simulated occlusions to learn geometric relationships between views, resulting in strong performance on occlusions (Aharon, Whiteway et al., 2026)."
+    },
+    {
+      "title": "Ai2: Truly open breakthrough AI",
+      "url": "https://allenai.org/",
+      "snippet": "Ai2, founded by Paul Allen and led by Ali Farhadi, conducts high-impact research and engineering to tackle key problems in artificial intelligence."
+    },
+    {
+      "title": "Open models | Ai2 - AllenAI",
+      "url": "https://allenai.org/open-models",
+      "snippet": "Molmo is a family of open state-of-the-art multimodal AI models. Our most powerful model closes the gap between open and proprietary systems across a wide range of academic benchmarks as well as human evaluations."
+    },
+    {
+      "title": "Welcome to the Lightning Pose documentation",
+      "url": "https://lightning-pose.readthedocs.io/en/v2.0.1/index.html",
+      "snippet": "We also provide a browser-based GUI that supports the full life cycle of a pose estimation project, from data annotation to model training to diagnostic visualizations."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "faxenoff/code-daemon-summary-v1",
+  "slug": "faxenoff-code-daemon-summary-v1",
+  "author": "faxenoff",
+  "url": "https://huggingface.co/faxenoff/code-daemon-summary-v1",
+  "created_at": "2026-07-02T14:37:46.000Z",
+  "updated_at": "2026-08-17T17:31:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "documentation",
+    "summarization",
+    "distillation",
+    "qwen3",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "ru",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 66,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 9538029312,
+  "storage_human": "9.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "faxenoff/code-daemon-summary-v1 · Hugging Face",
+      "url": "https://huggingface.co/faxenoff/code-daemon-summary-v1",
+      "snippet": "The model powers the long-output documentation stages of a code-intelligence daemon; it is a purpose-built component, not a general assistant — outside this task distribution its behaviour is undefined."
+    },
+    {
+      "title": "faxenoff (Fedor Aksenov) - Hugging Face",
+      "url": "https://huggingface.co/faxenoff",
+      "snippet": "Recent Activity published a modelabout 8 hours ago faxenoff/code-daemon-reranker-v1 updated a modelabout 8 hours ago faxenoff/code-daemon-embed-v1 published a modelabout 9 hours ago faxenoff/code-daemon-embed-v1 View all activity"
+    },
+    {
+      "title": "GitHub - iflow-mcp/faxenoff-ultrascript-tools-mcp: Ultra-fast MCP ...",
+      "url": "https://github.com/iflow-mcp/faxenoff-ultrascript-tools-mcp",
+      "snippet": "Reduces time and token costs by up to 90% when working with code through AI agents. Code search, analysis, and modification operate on a complete code structure graph database."
+    },
+    {
+      "title": "Hub repository · TrendSpikes",
+      "url": "https://www.trendspikes.com/app/hugging-face/repositories/6a01d6e1-c255-434b-a3bb-e893858e5802",
+      "snippet": "Public Hugging Face Hub repository metadata. No weights, dataset rows or Space files are ever downloaded. ← All formation phrases modeltext-classificationtensorrt open on the Hub ↗ faxenoff Namespace 2026-07-07 Created 2026-08-03 Last modified 1 Likes 75 Downloads blank = unknown — Trending score provider signal"
+    },
+    {
+      "title": "Releases · faxenoff/ultracode · GitHub",
+      "url": "https://github.com/faxenoff/ultracode/releases",
+      "snippet": "Ultra-fast MCP server enabling AI agents to comprehensively work with TypeScript/JavaScript/Python projects: instant structural search, code modification with automatic linting/formatting/fixes, ru..."
+    }
+  ]
+}

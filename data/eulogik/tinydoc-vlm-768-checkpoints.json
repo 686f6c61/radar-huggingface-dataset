@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "eulogik/TinyDoc-VLM-768-checkpoints",
+  "slug": "eulogik-tinydoc-vlm-768-checkpoints",
+  "author": "eulogik",
+  "url": "https://huggingface.co/eulogik/TinyDoc-VLM-768-checkpoints",
+  "created_at": "2026-08-01T06:38:53.000Z",
+  "updated_at": "2026-08-18T08:10:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186433262912,
+  "storage_human": "186.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

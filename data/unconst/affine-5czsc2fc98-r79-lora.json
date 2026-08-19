@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r79-lora",
+  "slug": "unconst-affine-5czsc2fc98-r79-lora",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r79-lora",
+  "created_at": "2026-08-13T17:48:58.000Z",
+  "updated_at": "2026-08-14T00:31:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "affine-h1-salvage",
+    "text-generation",
+    "base_model:Tok331102/affine-5EqYW8McUc-af10",
+    "base_model:adapter:Tok331102/affine-5EqYW8McUc-af10",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133874592,
+  "storage_human": "134 MB",
+  "base_model": "Tok331102/affine-5EqYW8McUc-af10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconst/Affine-5czsc2fc98-r69-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r69-lora",
+      "snippet": "H1 LoRA adapter salvage (not a submission) Base: Tok331102/affine-5EqYW8McUc-af10. Adapter-only TTL insurance for mining H1."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-h79-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h79-lora",
+      "snippet": "Instructions to use unconst/Affine-5czsc2fc98-h79-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use unconst/Affine-5czsc2fc98-h79-lora with PEFT:"
+    },
+    {
+      "title": "Affine-5czsc2fc98-h102-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/unconst/Affine-5czsc2fc98-h102-lora",
+      "snippet": "Run Affine-5czsc2fc98-h102-lora with FriendliAI inference. Base: dendriteholdings/albedo-qwen3.6-35b-king-genesis. Adapter-only TTL insurance for mining H1."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-h74-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h74-lora",
+      "snippet": "Instructions to use unconst/Affine-5czsc2fc98-h74-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use unconst/Affine-5czsc2fc98-h74-lora with PEFT:"
+    },
+    {
+      "title": "Adapter Models for kevin954/Affine-5dfqbbh8ev-sft - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:kevin954/Affine-5dfqbbh8ev-sft",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Reset kevin954/Affine-5dfqbbh8ev-sft Adapters Finetunes Quantizations Merges Apps Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment ..."
+    }
+  ]
+}

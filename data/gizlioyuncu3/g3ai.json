@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Gizlioyuncu3/G3AI",
+  "slug": "gizlioyuncu3-g3ai",
+  "author": "Gizlioyuncu3",
+  "url": "https://huggingface.co/Gizlioyuncu3/G3AI",
+  "created_at": "2026-08-17T11:30:53.000Z",
+  "updated_at": "2026-08-17T11:40:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "code",
+    "agent",
+    "text-generation-inference",
+    "tr",
+    "en",
+    "base_model:unsloth/Qwen3.8-27B-GGUF",
+    "base_model:finetune:unsloth/Qwen3.8-27B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen3.8-27B-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Gizlioyuncu3/G3AI",
+      "url": "https://github.com/Gizlioyuncu3/G3AI",
+      "snippet": "Contribute to Gizlioyuncu3/G3AI development by creating an account on GitHub."
+    },
+    {
+      "title": "G3AI/README.md at main · Gizlioyuncu3/G3AI · GitHub",
+      "url": "https://github.com/Gizlioyuncu3/G3AI/blob/main/README.md",
+      "snippet": "Contribute to Gizlioyuncu3/G3AI development by creating an account on GitHub."
+    },
+    {
+      "title": "Gemini 3 | Google AI Studio",
+      "url": "https://aistudio.google.com/models/gemini-3",
+      "snippet": "Model capabilities Read Gemini 3 docs Model Gemini 3.1 Pro Advanced reasoning for coding and complex tasks Gemini 3.5 Flash"
+    },
+    {
+      "title": "Gizlioyuncu3 | G3 GAMING",
+      "url": "https://gizlioyuncu3.github.io/",
+      "snippet": "Yapan: Gizlioyuncu3 gizlioyuncu3.github.io"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    }
+  ]
+}

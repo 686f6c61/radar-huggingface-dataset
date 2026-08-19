@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RudySen/Krea2-realism-V2",
+  "slug": "rudysen-krea2-realism-v2",
+  "author": "RudySen",
+  "url": "https://huggingface.co/RudySen/Krea2-realism-V2",
+  "created_at": "2026-07-02T19:00:04.000Z",
+  "updated_at": "2026-07-02T19:00:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 150,
+  "downloads_30d": 29124,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1596420559,
+  "storage_human": "1.6 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RudySen/Krea2-realism-V2 at main - Hugging Face",
+      "url": "https://huggingface.co/RudySen/Krea2-realism-V2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea2-realism-V1 | V2 - Krea2-realism-V2 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.red/models/2728365/krea2-realism-v1-or-v2?modelVersionId=3090634",
+      "snippet": "a coffee is appreciated: ☕ Support me on Ko-fi . Headline: V2 is finally here! Things got a little wild (in the best way possible) 🚀 What&#x27;s changed..."
+    },
+    {
+      "title": "README.md · RudySen/Krea2-realism-V2 at main - Hugging Face",
+      "url": "https://huggingface.co/RudySen/Krea2-realism-V2/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea2-realism-V2 by RudySen | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/rudysen-krea2-realism-v2",
+      "snippet": "Explore Krea2-realism-V2 by RudySen — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "RudySen/Krea2-realism-V2 · Hugging Face",
+      "url": "https://t.co/lKPmJjKjb4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

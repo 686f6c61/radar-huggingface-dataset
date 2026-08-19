@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "gojiberries/pranaam",
+  "slug": "gojiberries-pranaam",
+  "author": "gojiberries",
+  "url": "https://huggingface.co/gojiberries/pranaam",
+  "created_at": "2026-08-16T06:49:13.000Z",
+  "updated_at": "2026-08-16T18:25:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "name-classification",
+    "responsible-ai",
+    "en",
+    "hi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 325517836,
+  "storage_human": "326 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

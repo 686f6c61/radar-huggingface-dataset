@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "pcrist/shadow-dance-affine-proxy-adapter-not-official",
+  "slug": "pcrist-shadow-dance-affine-proxy-adapter-not-official",
+  "author": "pcrist",
+  "url": "https://huggingface.co/pcrist/shadow-dance-affine-proxy-adapter-not-official",
+  "created_at": "2026-08-17T05:59:40.000Z",
+  "updated_at": "2026-08-17T05:59:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "robotics",
+    "unitree-g1",
+    "mujoco",
+    "experimental",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91002407,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-harness/docs/user/guide/providers.md at master · deepseek-ai ...",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/guide/providers.md",
+      "snippet": "The provider rejects a request carrying an image — The model declares images its endpoint does not actually serve. Remove image from whichever list granted it — the model&#x27;s input, or the route&#x27;s defaultInput — then start a new session: the attached image stays in the session log, so the same request repeats until the session moves off it."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.2",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.2 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "Compatibility - Reshade",
+      "url": "https://reshade.me/compatibility",
+      "snippet": "For online games it is recommended to always check with the game&#x27;s community whether using ReShade can lead to bans, as some developers have been known to change their stance on ReShade without warning. Some uses have claimed to get ReShade working by using a version older than 3.0 or ReShade&#x27;s predecessor SweetFX due to them lacking an injectable settings overlay, [7] however the success ..."
+    }
+  ]
+}

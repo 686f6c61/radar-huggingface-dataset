@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/baseline_100Mpt_hfinit_van_s1_2026-08-14_04-19-21_790036-pt",
+  "slug": "alexkstern-baseline_100mpt_hfinit_van_s1_2026-08-14_04-19-21_790036-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/baseline_100Mpt_hfinit_van_s1_2026-08-14_04-19-21_790036-pt",
+  "created_at": "2026-08-14T04:21:30.000Z",
+  "updated_at": "2026-08-14T04:22:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "no_ppt",
+    "seed_1",
+    "single",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern (astar) - Hugging Face",
+      "url": "https://huggingface.co/datasets/alexkstern/",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "MPT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.42.0/en/model_doc/mpt",
+      "snippet": "MPT Overview The MPT model was proposed by the MosaicML team and released with multiple sizes and finetuned variants. The MPT models is a series of open source and commercially usable LLMs pre-trained on 1T tokens. MPT models are GPT-style decoder-only transformers with several improvements: performance-optimized layer implementations, architecture changes that provide greater training ..."
+    },
+    {
+      "title": "GitHub - openai/baselines: OpenAI Baselines: high-quality ...",
+      "url": "https://github.com/openai/baselines",
+      "snippet": "OpenAI Baselines is a set of high-quality implementations of reinforcement learning algorithms. These algorithms will make it easier for the research community to replicate, refine, and identify new ideas, and will create good baselines to build research on top of. Our DQN implementation and its variants are roughly on par with the scores in published papers. We expect they will be used as a ..."
+    },
+    {
+      "title": "The 2026 AI Index Report - Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+      "snippet": "2. The U.S.-China AI model performance gap has effectively closed. U.S. and Chinese models have traded the lead multiple times since early 2025. In February 2025, DeepSeek-R1 briefly matched the top U.S. model, and as of March 2026 Anthropic&#x27;s top model leads by just 2.7%. The U.S. still produces more top-tier AI models and higher-impact patents, while China leads in publication volume ..."
+    }
+  ]
+}

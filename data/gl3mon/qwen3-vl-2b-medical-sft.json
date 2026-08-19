@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "GL3MON/qwen3-vl-2b-medical-sft",
+  "slug": "gl3mon-qwen3-vl-2b-medical-sft",
+  "author": "GL3MON",
+  "url": "https://huggingface.co/GL3MON/qwen3-vl-2b-medical-sft",
+  "created_at": "2026-08-14T08:41:56.000Z",
+  "updated_at": "2026-08-14T08:43:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4266562966,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

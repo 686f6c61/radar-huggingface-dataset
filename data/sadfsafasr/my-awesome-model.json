@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sadfsafasr/my-awesome-model",
+  "slug": "sadfsafasr-my-awesome-model",
+  "author": "sadfsafasr",
+  "url": "https://huggingface.co/sadfsafasr/my-awesome-model",
+  "created_at": "2026-08-17T19:14:34.000Z",
+  "updated_at": "2026-08-17T19:51:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:36.942Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sadfsafasr/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/sadfsafasr/MyAwesomeModel-TestRepo",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model."
+    },
+    {
+      "title": "mm-tool/MyAwesomeModel-v1 · Hugging Face",
+      "url": "https://huggingface.co/mm-tool/MyAwesomeModel-v1",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "GitHub - afondiel/awesome-smol: A curated list of small foundation ...",
+      "url": "https://github.com/afondiel/awesome-smol",
+      "snippet": "Awesome Smol is a curated list of small, lightweight AI models, tools, and resources for domains like language, audio, vision, and multimodal tasks. These models are designed for edge devices, resource-constrained environments, and rapid prototyping. Inspiration: awesome-tensorflow-lite."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: DeepSeek-V4-Flash-0731 by DeepSeek on Jul 31 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "sadafhjkj/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/sadafhjkj/MyAwesomeModel",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model."
+    }
+  ]
+}

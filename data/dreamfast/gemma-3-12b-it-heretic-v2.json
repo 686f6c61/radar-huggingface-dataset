@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "DreamFast/gemma-3-12b-it-heretic-v2",
+  "slug": "dreamfast-gemma-3-12b-it-heretic-v2",
+  "author": "DreamFast",
+  "url": "https://huggingface.co/DreamFast/gemma-3-12b-it-heretic-v2",
+  "created_at": "2026-03-10T05:44:58.000Z",
+  "updated_at": "2026-08-10T08:46:35.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma3",
+    "image-text-to-text",
+    "abliteration",
+    "heretic",
+    "uncensored",
+    "gemma",
+    "ltx-2",
+    "comfyui",
+    "video-generation",
+    "text-encoder",
+    "fp8",
+    "int8",
+    "int4",
+    "convrot",
+    "nvfp4",
+    "mxfp8",
+    "learned-rounding",
+    "blackwell",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:quantized:google/gemma-3-12b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 91,
+  "downloads_30d": 19763,
+  "trending_score": 7,
+  "parameters": 12187325040,
+  "parameters_human": "12.19B",
+  "storage_bytes": 248489602630,
+  "storage_human": "248.5 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreamFast/gemma-3-12b-it-heretic-v2 · Hugging Face",
+      "url": "https://huggingface.co/DreamFast/gemma-3-12b-it-heretic-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DreamFast/gemma-3-12b-it-heretic-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/DreamFast/gemma-3-12b-it-heretic-v2/tree/main/comfyui",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DreamFast/gemma-3-12b-it-heretic-v2 - featherless.ai",
+      "url": "https://featherless.ai/models/DreamFast/gemma-3-12b-it-heretic-v2",
+      "snippet": "DreamFast/gemma-3-12b-it-heretic-v2 is an abliterated version of Google&#x27;s Gemma 3 12B IT model, created using Heretic v1.3.0. This model significantly reduces refusals while maintaining quality, making it suitable as an uncensored text encoder for video generation models like LTX-2. It is available in multiple quantization formats including FP8, INT8, INT4, NVFP4, and MXFP8, all optimized with ..."
+    },
+    {
+      "title": "Gemma 3 12B It Heretic V2 by DreamFast - LLM Explorer",
+      "url": "https://llm-explorer.com/model/DreamFast%2Fgemma-3-12b-it-heretic-v2,7jTHAIgVNMNnWl9Pz3eV6S",
+      "snippet": "Gemma 3 12B It Heretic V2 is an open-source 12b LLM by DreamFast. VRAM 24.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "DreamFast-gemma-3-12b-it-heretic-v2 · Models",
+      "url": "https://www.modelscope.cn/models/hf/DreamFast-gemma-3-12b-it-heretic-v2/summary",
+      "snippet": "Gemma 3 12B IT - Heretic v2 (Abliterated) 💬 Community: Join the Abliterlitics Discord for discussion, model releases and support. An abliterated version of Google&#x27;s Gemma 3 12B IT created using Heretic v1.3.0. This model has reduced refusals while maintaining model quality, making it suitable as an uncensored text encoder for video generation models like LTX-2. Available in five ..."
+    }
+  ]
+}

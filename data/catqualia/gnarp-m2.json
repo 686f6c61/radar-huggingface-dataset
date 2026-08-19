@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "CatQualia/gnarp-m2",
+  "slug": "catqualia-gnarp-m2",
+  "author": "CatQualia",
+  "url": "https://huggingface.co/CatQualia/gnarp-m2",
+  "created_at": "2026-07-03T02:59:07.000Z",
+  "updated_at": "2026-08-16T20:30:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "qlora",
+    "smollm",
+    "360m",
+    "cross-domain-transfer",
+    "anime-isomorphism",
+    "fine-tuned",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 575,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 1447317080,
+  "storage_human": "1.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Hailay/VEXMLM-Tigrinya-NER",
+  "slug": "hailay-vexmlm-tigrinya-ner",
+  "author": "Hailay",
+  "url": "https://huggingface.co/Hailay/VEXMLM-Tigrinya-NER",
+  "created_at": "2026-08-17T15:31:47.000Z",
+  "updated_at": "2026-08-17T15:32:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ti"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ner",
+    "token-classification",
+    "xlm-roberta",
+    "vexmlm",
+    "geez",
+    "low-resource",
+    "ti",
+    "base_model:Hailay/VEXMLM",
+    "base_model:finetune:Hailay/VEXMLM",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6035110837,
+  "storage_human": "6.0 GB",
+  "base_model": "Hailay/VEXMLM",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

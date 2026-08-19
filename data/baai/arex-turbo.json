@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "BAAI/AREX-Turbo",
+  "slug": "baai-arex-turbo",
+  "author": "BAAI",
+  "url": "https://huggingface.co/BAAI/AREX-Turbo",
+  "created_at": "2026-07-23T17:19:35.000Z",
+  "updated_at": "2026-08-11T09:48:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agent",
+    "deep-research",
+    "reasoning",
+    "tool-use",
+    "long-context",
+    "qwen3.5",
+    "dense",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2607.21461",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 44,
+  "downloads_30d": 1304,
+  "trending_score": 8,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9099034344,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/AREX-Turbo · Hugging Face",
+      "url": "https://huggingface.co/BAAI/AREX-Turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BAAI/AREX-Turbo at main - Hugging Face",
+      "url": "https://huggingface.co/BAAI/AREX-Turbo/tree/main",
+      "snippet": "Instructions to use BAAI/AREX-Turbo with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use BAAI/AREX-Turbo with Transformers:"
+    },
+    {
+      "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+      "url": "https://arxiv.org/pdf/2607.21461",
+      "snippet": "AREX Team Beijing Academy of Artificial Intelligence (BAAI) Deep research requires agents to find answers that jointly satisfy multiple constraints. Discovering such answers is costly, whereas verifying a candidate can often be decomposed into tractable constraint-wise checks."
+    },
+    {
+      "title": "AREX-Turbo by BAAI | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/baai-arex-turbo",
+      "snippet": "AREX-Turbo is a open-weight BAAI llm model with a 262,144 token context window. Running this yourself: can likely run on your own machine."
+    },
+    {
+      "title": "AREX-Turbo · Models",
+      "url": "https://www.modelscope.cn/models/BAAI/AREX-Turbo",
+      "snippet": "AREX-Turbo is intended for research-agent applications that require long-horizon information seeking, evidence aggregation, multi-constraint verification, and tool-augmented reasoning under a smaller model footprint."
+    }
+  ]
+}

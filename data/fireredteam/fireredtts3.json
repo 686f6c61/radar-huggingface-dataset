@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "FireRedTeam/FireRedTTS3",
+  "slug": "fireredteam-fireredtts3",
+  "author": "FireRedTeam",
+  "url": "https://huggingface.co/FireRedTeam/FireRedTTS3",
+  "created_at": "2026-08-13T14:03:15.000Z",
+  "updated_at": "2026-08-13T14:20:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2502.03930",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 43,
+  "downloads_30d": 0,
+  "trending_score": 43,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20773809221,
+  "storage_human": "20.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - FireRedTeam/FireRedTTS3: FireRedTTS3 with two variants: Base ...",
+      "url": "https://github.com/FireRedTeam/FireRedTTS3",
+      "snippet": "FireRedTTS3 is a unified speech generation and editing system built on semantically enriched continuous speech representations. It comes in two variants: FireRedTTS3-Base — zero-shot voice cloning across 24 languages and 21 Chinese dialects FireRedTTS3-Instruct — natural-language voice design and speech editing (semantic + acoustic) in one unified model"
+    },
+    {
+      "title": "GitHub - FireRedTeam/FireRedTTS: An Open-Sourced LLM-empowered ...",
+      "url": "https://github.com/FireRedTeam/FireRedTTS",
+      "snippet": "The project incorporates zero-shot voice cloning functionality; Please note that this capability is intended solely for academic research purposes. DO NOT use this model for ANY illegal activities ️ ️ ️ ️ ️ ️ The developers assume no liability for any misuse of this model. If you identify any instances of abuse, misuse, or fraudulent activities related to this project, please ..."
+    },
+    {
+      "title": "FireRed",
+      "url": "https://fireredteam.github.io/",
+      "snippet": "Introduction: FireRed is the model series developed by Xiaohongshu&#x27;s Super Intelligence team, featuring FireRed-ASR, FireRed-TTS, FireRed-Chat, FireRed-OCR, FireRed-Image, and FireRed-OpenStoryline. Deriving from the saying \"A single spark can start a prairie fire\", the name FireRed represents our vision: to spread our SOTA capabilities—honed in real-world scenarios—like sparks across the ..."
+    },
+    {
+      "title": "FireRedTeam (FireRed Team) - Hugging Face",
+      "url": "https://huggingface.co/FireRedTeam",
+      "snippet": "Org profile for FireRed Team on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "FireRedTeam/FireRedTTS · Hugging Face",
+      "url": "https://huggingface.co/FireRedTeam/FireRedTTS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

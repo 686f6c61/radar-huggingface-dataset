@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "fzcfweasdferttgg/Ling-3.0-flash-abliterated-GGUF",
+  "slug": "fzcfweasdferttgg-ling-3-0-flash-abliterated-gguf",
+  "author": "fzcfweasdferttgg",
+  "url": "https://huggingface.co/fzcfweasdferttgg/Ling-3.0-flash-abliterated-GGUF",
+  "created_at": "2026-08-17T22:03:36.000Z",
+  "updated_at": "2026-08-18T06:28:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "hybrid",
+    "reasoning",
+    "abliterated",
+    "quantization",
+    "bailingmoe3",
+    "inclusionAI",
+    "text-generation",
+    "base_model:SC117/Ling-3.0-flash-abliterated-APEX-GGUF",
+    "base_model:quantized:SC117/Ling-3.0-flash-abliterated-APEX-GGUF",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 870506686496,
+  "storage_human": "870.5 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash, SC117/Ling-3.0-flash-abliterated-APEX-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/Ling-3.0-flash · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for inclusionAI/Ling-3.0-flash - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:inclusionAI/Ling-3.0-flash",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "inclusionAI: Ling-3.0-flash - zenmux.ai",
+      "url": "https://zenmux.ai/inclusionai/ling-3.0-flash",
+      "snippet": "Compared to the previous flash model, Ling-3.0-flash delivers significantly enhanced stability in long-horizon tasks, markedly higher tool calling accuracy, and substantially improved compatibility with common Harness environments."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/inclusionAI/Ling-3.0-flash",
+      "snippet": "Ling-3.0-flash MoE model with BF16 and serialized block-FP8 checkpoints, 124B total / 5.5B active parameters, and a 3.1B MTP layer"
+    }
+  ]
+}

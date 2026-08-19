@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Vita0818/Vireqo-27VL-Plus-260818",
+  "slug": "vita0818-vireqo-27vl-plus-260818",
+  "author": "Vita0818",
+  "url": "https://huggingface.co/Vita0818/Vireqo-27VL-Plus-260818",
+  "created_at": "2026-08-18T06:26:54.000Z",
+  "updated_at": "2026-08-18T06:29:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "vision-language",
+    "multimodal",
+    "qwen3-vl",
+    "mmproj",
+    "ternary",
+    "q2_0",
+    "2-bit",
+    "qwen",
+    "bonsai",
+    "llama-cpp",
+    "lm-studio",
+    "apple-silicon",
+    "experimental",
+    "extreme-quantization",
+    "image-text-to-text",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 8214579168,
+  "storage_human": "8.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B, prism-ml/Ternary-Bonsai-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vita0818 (Vita) · GitHub",
+      "url": "https://github.com/Vita0818/",
+      "snippet": "Vita0818 has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - Vita0818/Agent7",
+      "url": "https://github.com/Vita0818/Agent7",
+      "snippet": "Overview 概述 Agent7 is a system-level agent that lets an LLM (DeepSeek / Qwen / Kimi) observe and control your iPhone. Given a natural language task, it plans, executes actions (open apps, paste text, open URLs, take screenshots), verifies results, and adapts — running as a daemon with a companion UIKit app."
+    },
+    {
+      "title": "【鸣潮-Wuthering Waves】维里奈-Verina (SDXL | Pony | Noob | Artiwaifu | SD15)",
+      "url": "https://civarchive.com/models/786601?modelVersionId=994235",
+      "snippet": "Note: In response to the needs of Civita users, the same character in this collection may be trained with SD1.5，SDXL（NoobAI-XL，Animagine XL V3，Pony Diffusion V6 XL and ArtiWaifu Diffusion） respectively, and the corresponding model version will be marked with \"SD15\"，\"noob\"，\"A3\", \"pony\"or \"Artiwaifu\"."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

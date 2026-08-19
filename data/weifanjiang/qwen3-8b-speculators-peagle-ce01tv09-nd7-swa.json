@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "weifanjiang/qwen3-8b.speculators.peagle-ce01tv09-nd7-swa",
+  "slug": "weifanjiang-qwen3-8b-speculators-peagle-ce01tv09-nd7-swa",
+  "author": "weifanjiang",
+  "url": "https://huggingface.co/weifanjiang/qwen3-8b.speculators.peagle-ce01tv09-nd7-swa",
+  "created_at": "2026-08-12T22:13:10.000Z",
+  "updated_at": "2026-08-17T16:23:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 1634452096,
+  "parameters_human": "1.63B",
+  "storage_bytes": 4211978492,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Qwen3-8B-speculator.peagle · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3-8B-speculator.peagle",
+      "snippet": "This model was trained using the Speculators library on a subset of Magpie-Align/Magpie-Llama-3.1-Pro-300K-Filtered and the train_sft split of HuggingFaceH4/ultrachat_200k."
+    },
+    {
+      "title": "weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa · Hugging ...",
+      "url": "https://huggingface.co/weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa",
+      "snippet": "/ qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa like 0 Safetensors custom_code Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 2B params Tensor type I64 · BF16 · BOOL · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "speculators/examples/train/peagle_qwen3_8b_sharegpt_online_5k ... - GitHub",
+      "url": "https://github.com/vllm-project/speculators/blob/main/examples/train/peagle_qwen3_8b_sharegpt_online_5k.sh",
+      "snippet": "speculators / examples / train / peagle_qwen3_8b_sharegpt_online_5k.sh shanjiaz Added sliding window attention for p-eagle and eagle3 models (#684) 93afab4 · 2 weeks ago"
+    },
+    {
+      "title": "GitHub - vllm-project/speculators: A unified library for building ...",
+      "url": "https://github.com/vllm-project/speculators",
+      "snippet": "Speculators is a library for training speculative decoding draft models that deploy directly to LLM inference engines like vLLM. Speculative decoding is a lossless technique that speeds up LLM inference by using a smaller, faster draft model (i.e. \"the speculator\") to propose tokens, which are then verified by the larger base model, reducing latency without compromising output quality. The ..."
+    },
+    {
+      "title": "Train P-Eagle Model Offline - Speculators Docs",
+      "url": "https://docs.vllm.ai/projects/speculators/en/stable/user_guide/tutorials/train_peagle_offline/",
+      "snippet": "Home User Guide Tutorials Train P-EAGLE Model Offline This tutorial walks you through training a P-EAGLE (Parallel EAGLE) speculator model using offline training, where hidden states are pre-generated and cached before training begins. This example uses Qwen/Qwen3-8B as the target model, but the process is the same for other models."
+    }
+  ]
+}

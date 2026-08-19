@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tarakozushi/ohkm_sunlight_flux-d",
+  "slug": "tarakozushi-ohkm_sunlight_flux-d",
+  "author": "tarakozushi",
+  "url": "https://huggingface.co/tarakozushi/ohkm_sunlight_flux-d",
+  "created_at": "2026-08-18T05:59:20.000Z",
+  "updated_at": "2026-08-18T08:28:28.000Z",
+  "license": "all-rights-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 343805408,
+  "storage_human": "344 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tarakozushi Creator Profile | Civitai",
+      "url": "https://civitai.com/user/tarakozushi/models",
+      "snippet": "Models Uploaded: 0, Followers: 319, Total Likes Received: 1.2k, Total Downloads Received: 16k."
+    },
+    {
+      "title": "tarakozushi Creator Profile | Civitai",
+      "url": "https://civitai.com/user/tarakozushi",
+      "snippet": "Models Uploaded: 0, Followers: 319, Total Likes Received: 1.2k, Total Downloads Received: 16.1k."
+    },
+    {
+      "title": "tarakozushi (tarakozushi) - Hugging Face",
+      "url": "https://huggingface.co/tarakozushi",
+      "snippet": "None public yet datasets"
+    },
+    {
+      "title": "Flux AI Models Online | Flux AI",
+      "url": "https://fluxai.studio/models",
+      "snippet": "Flux AI Models Explore all Flux AI models, including standard models released by Black Forest Labs, and flux fine-tuned models released by community."
+    },
+    {
+      "title": "John6666/amemone-asian-woman-pony-v10-sdxl · Hugging Face",
+      "url": "https://huggingface.co/John6666/amemone-asian-woman-pony-v10-sdxl",
+      "snippet": "Original model is here. This model created by tarakozushi. Downloads last month 2 Inference Providers NEW Text-to-Image"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "geoffmunn/PeerReviewers",
+  "slug": "geoffmunn-peerreviewers",
+  "author": "geoffmunn",
+  "url": "https://huggingface.co/geoffmunn/PeerReviewers",
+  "created_at": "2026-04-12T00:46:41.000Z",
+  "updated_at": "2026-08-16T01:32:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1024,
+  "trending_score": 0,
+  "parameters": 22247282688,
+  "parameters_human": "22.25B",
+  "storage_bytes": 633550280832,
+  "storage_human": "633.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

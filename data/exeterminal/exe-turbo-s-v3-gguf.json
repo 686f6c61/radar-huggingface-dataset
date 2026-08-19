@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "exeterminal/Exe-Turbo-S-V3-GGUF",
+  "slug": "exeterminal-exe-turbo-s-v3-gguf",
+  "author": "exeterminal",
+  "url": "https://huggingface.co/exeterminal/Exe-Turbo-S-V3-GGUF",
+  "created_at": "2026-08-16T20:58:17.000Z",
+  "updated_at": "2026-08-17T05:31:25.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "exe-ai-terminal",
+    "agent",
+    "tool-use",
+    "terminal",
+    "moe",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-8B-A1B",
+    "base_model:quantized:LiquidAI/LFM2.5-8B-A1B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 958,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 57333891852,
+  "storage_human": "57.3 GB",
+  "base_model": "LiquidAI/LFM2.5-8B-A1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "exeterminal/Exe-Turbo-S-V3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/exeterminal/Exe-Turbo-S-V3-GGUF",
+      "snippet": "The small model of the Exe AI Terminal, built for laptops with 6-8 GB of memory. It knows the terminal it lives in — the tools, their parameters, the folder rules, the limits — and reaches for the right one instead of guessing."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF Loader - Local AI Inference Engine | Run GGUF Models Offline with ...",
+      "url": "https://ggufloader.github.io/",
+      "snippet": "We&#x27;re excited to announce the launch of Lawyer Assistant, a new addition to the local AI ecosystem. Ask questions about your contracts in plain English and get answers with exact page numbers cited from your own documents — nothing leaves your machine and it works fully offline, so it fits right alongside GGUF Loader&#x27;s privacy-first approach."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - nomic-ai/gpt4all: GPT4All: Run Local LLMs on Any Device. Open ...",
+      "url": "https://github.com/nomic-ai/gpt4all",
+      "snippet": "Improved user workflow for LocalDocs Expanded access to more model architectures October 19th, 2023: GGUF Support Launches with Support for: Mistral 7b base model, an updated model gallery on our website, several new local code models including Rift Coder v1.5 Nomic Vulkan support for Q4_0 and Q4_1 quantizations in GGUF."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KhaledAshraf/qwen3-finetuned",
+  "slug": "khaledashraf-qwen3-finetuned",
+  "author": "KhaledAshraf",
+  "url": "https://huggingface.co/KhaledAshraf/qwen3-finetuned",
+  "created_at": "2026-08-18T23:40:35.000Z",
+  "updated_at": "2026-08-18T23:42:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203562947,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for Qwen/Qwen3-0.6B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Qwen/Qwen3-0.6B",
+      "snippet": "Active filters: Qwen/Qwen3-.6B. Clear all. k2-fsa/OmniVoice. Text-to-Speech • 0.6B • Updated Jul 3 • 878k • 1.27k"
+    },
+    {
+      "title": "qwen3.8-27b (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    },
+    {
+      "title": "ZeradamK/Qwen3_model_finetuned - GitHub",
+      "url": "https://github.com/ZeradamK/Qwen3_model_finetuned",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - ZeradamK/Qwen3_model_finetuned"
+    },
+    {
+      "title": "HasinduNimesh/qwen3b-finetuned · Hugging Face",
+      "url": "https://huggingface.co/HasinduNimesh/qwen3b-finetuned",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains."
+    }
+  ]
+}

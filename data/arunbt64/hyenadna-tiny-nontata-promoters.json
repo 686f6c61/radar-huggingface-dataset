@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "ArunBt64/hyenadna-tiny-nontata-promoters",
+  "slug": "arunbt64-hyenadna-tiny-nontata-promoters",
+  "author": "ArunBt64",
+  "url": "https://huggingface.co/ArunBt64/hyenadna-tiny-nontata-promoters",
+  "created_at": "2026-08-14T04:27:59.000Z",
+  "updated_at": "2026-08-14T04:34:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hyenadna",
+    "genomics",
+    "dna",
+    "biology",
+    "promoter-classification",
+    "text-classification",
+    "custom_code",
+    "dataset:katarinagresova/Genomic_Benchmarks_human_nontata_promoters",
+    "arxiv:2306.15794",
+    "base_model:LongSafari/hyenadna-tiny-1k-seqlen-hf",
+    "base_model:finetune:LongSafari/hyenadna-tiny-1k-seqlen-hf",
+    "license:bsd-3-clause",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 448920,
+  "parameters_human": "448920",
+  "storage_bytes": 1802024,
+  "storage_human": "2 MB",
+  "base_model": "LongSafari/hyenadna-tiny-1k-seqlen-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Promoter classification",
+      "dataset": "human_nontata_promoters (leakage-corrected split)",
+      "metric": null,
+      "value": 0.819
+    },
+    {
+      "task": "Promoter classification",
+      "dataset": "human_nontata_promoters (leakage-corrected split)",
+      "metric": null,
+      "value": 0.845
+    },
+    {
+      "task": "Promoter classification",
+      "dataset": "human_nontata_promoters (leakage-corrected split)",
+      "metric": null,
+      "value": 0.818
+    },
+    {
+      "task": "Promoter classification",
+      "dataset": "human_nontata_promoters (leakage-corrected split)",
+      "metric": null,
+      "value": 0.831
+    },
+    {
+      "task": "Promoter classification",
+      "dataset": "human_nontata_promoters (leakage-corrected split)",
+      "metric": null,
+      "value": 0.901
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - HazyResearch/hyena-dna: Official implementation for HyenaDNA ...",
+      "url": "https://github.com/HazyResearch/hyena-dna",
+      "snippet": "Official implementation for HyenaDNA, a long-range genomic foundation model built with Hyena - HazyResearch/hyena-dna"
+    },
+    {
+      "title": "hyena-dna/huggingface.py at main · HazyResearch/hyena-dna",
+      "url": "https://github.com/HazyResearch/hyena-dna/blob/main/huggingface.py",
+      "snippet": "Official implementation for HyenaDNA, a long-range genomic foundation model built with Hyena - HazyResearch/hyena-dna"
+    },
+    {
+      "title": "HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide ...",
+      "url": "https://arxiv.org/abs/2306.15794",
+      "snippet": "Leveraging Hyena&#x27;s new long-range capabilities, we present HyenaDNA, a genomic foundation model pretrained on the human reference genome with context lengths of up to 1 million tokens at the single nucleotide-level - an up to 500x increase over previous dense attention-based models."
+    },
+    {
+      "title": "LongSafari/hyenadna-small-32k-seqlen · Hugging Face",
+      "url": "https://huggingface.co/LongSafari/hyenadna-small-32k-seqlen",
+      "snippet": "Model & Training Overview HyenaDNA uses a simple stack of Hyena operators, which are a subquadratic drop-in replacement for attention in Transformers. The Hyena operator is able to match quality in language modeling by using modified input projections, implicit convolutions and gating, all subquadratic operations."
+    },
+    {
+      "title": "HyenaDNA Models - a LongSafari Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/LongSafari/hyenadna-models",
+      "snippet": "HyenaDNA models usable directly with Hugging Face classes like AutoModel."
+    }
+  ]
+}

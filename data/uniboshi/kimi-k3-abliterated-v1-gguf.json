@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Uniboshi/Kimi-K3-Abliterated-V1-GGUF",
+  "slug": "uniboshi-kimi-k3-abliterated-v1-gguf",
+  "author": "Uniboshi",
+  "url": "https://huggingface.co/Uniboshi/Kimi-K3-Abliterated-V1-GGUF",
+  "created_at": "2026-08-02T10:43:38.000Z",
+  "updated_at": "2026-08-13T05:51:18.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "abliterated",
+    "uncensored",
+    "image-text-to-text",
+    "dataset:TFMC/imatrix-dataset-for-japanese-llm",
+    "base_model:Uniboshi/Kimi-K3-Abliterated-V1",
+    "base_model:quantized:Uniboshi/Kimi-K3-Abliterated-V1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 515,
+  "trending_score": 8,
+  "parameters": 2779483135584,
+  "parameters_human": "2779.48B",
+  "storage_bytes": 2067147524096,
+  "storage_human": "2067.1 GB",
+  "base_model": "Uniboshi/Kimi-K3-Abliterated-V1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uniboshi/Kimi-K3-Abliterated-V1 · Hugging Face",
+      "url": "https://huggingface.co/Uniboshi/Kimi-K3-Abliterated-V1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Uniboshi/Kimi-K3-Abliterated-V1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Uniboshi/Kimi-K3-Abliterated-V1-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MoonshotAI/Kimi-K3: Open Frontier Intelligence",
+      "url": "https://github.com/MoonshotAI/Kimi-K3/tree/main",
+      "snippet": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and ..."
+    },
+    {
+      "title": "Kimi-K3/README.md at main · MoonshotAI/Kimi-K3 · GitHub",
+      "url": "https://github.com/MoonshotAI/Kimi-K3/blob/main/README.md",
+      "snippet": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and ..."
+    },
+    {
+      "title": "Kimi K3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/kimi-k3",
+      "snippet": "Kimi K3 is Moonshot AI&#x27;s 2.8T-parameter flagship model for long-horizon agentic work, with native vision, always-on reasoning, and a 1M-token context window."
+    }
+  ]
+}

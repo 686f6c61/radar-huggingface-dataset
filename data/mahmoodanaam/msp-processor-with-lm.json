@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "MahmoodAnaam/MSP-Processor-With-LM",
+  "slug": "mahmoodanaam-msp-processor-with-lm",
+  "author": "MahmoodAnaam",
+  "url": "https://huggingface.co/MahmoodAnaam/MSP-Processor-With-LM",
+  "created_at": "2026-08-05T16:02:04.000Z",
+  "updated_at": "2026-08-18T01:53:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:MahmoodAnaam/LRS2-Text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35340405,
+  "storage_human": "35 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MahmoodAnaam (Mahmood Anaam) - Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/datasets",
+      "snippet": "AI & ML interests"
+    },
+    {
+      "title": "Multimodal Speech Perception (MSP) - GitHub",
+      "url": "https://github.com/Mahmood-Anaam/msp",
+      "snippet": "A multimodal speech perception models that converts and understands speech to text through audio and lip-reading signals. The MSP Model combines auditory and visual signals to improve speech recognition accuracy, especially in noisy environments or when audio signals are incomplete."
+    },
+    {
+      "title": "MahmoodAnaam/MSP-Multimodal-LRS2 at main - Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/MSP-Multimodal-LRS2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mahmood-Anaam (Mahmood Anaam) · GitHub",
+      "url": "https://github.com/Mahmood-Anaam",
+      "snippet": "Software Engineer | Full-Stack & AI Developer | Over 5 Years of Experience | Designing Scalable, AI-Driven Solutions - Mahmood-Anaam"
+    },
+    {
+      "title": "Model Catalog - LM Studio",
+      "url": "https://lmstudio.ai/models",
+      "snippet": "Discover models to run locally or use with LM Studio Cloud."
+    }
+  ]
+}

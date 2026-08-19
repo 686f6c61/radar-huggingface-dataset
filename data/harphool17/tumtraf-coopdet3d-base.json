@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "harphool17/tumtraf-coopdet3d-base",
+  "slug": "harphool17-tumtraf-coopdet3d-base",
+  "author": "harphool17",
+  "url": "https://huggingface.co/harphool17/tumtraf-coopdet3d-base",
+  "created_at": "2026-04-25T08:14:25.000Z",
+  "updated_at": "2026-08-18T06:50:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2403.01316",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 270028841,
+  "storage_human": "270 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harphool17/tumtraf-coopdet3d-base · Hugging Face",
+      "url": "https://huggingface.co/harphool17/tumtraf-coopdet3d-base",
+      "snippet": "TUMTraf CoopDet3D Base Pretrained Model: Official CoopDet3D pretrained weights. Used for: BUS (1.0), PEDESTRIAN (0.569), BICYCLE (0.820). Framework: CoopDet3D. Size ..."
+    },
+    {
+      "title": "harphool17 (harphool singh bajdoliya) - Hugging Face",
+      "url": "https://huggingface.co/harphool17",
+      "snippet": "Recent Activity new activity16 days ago huggingface/InferenceSupport: harphool17/whisper-large-v3-children-asr updated a modelabout 2 months ago harphool17/tumtraf-ensemble-pipeline updated a modelabout 2 months ago harphool17/tumtraf-coopdet3d-base View all activity"
+    },
+    {
+      "title": "GitHub - tum-traffic-dataset/coopdet3d",
+      "url": "https://github.com/tum-traffic-dataset/coopdet3d",
+      "snippet": "The CoopDet3D model is released under MIT license as found in the license file. The TUM Traffic Dataset (TUMTraf) dataset itself is released under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)."
+    },
+    {
+      "title": "GitHub - GoodarzMehr/CoopDet3D",
+      "url": "https://github.com/GoodarzMehr/CoopDet3D",
+      "snippet": "We propose CoopDet3D, a cooperative multi-modal fusion model, and TUMTraf-V2X, a dataset for the cooperative 3D object detection and tracking task. Our dataset contains 2,000 labeled point clouds and 5,000 labeled images from five roadside and four onboard sensors. It includes 30k 3D boxes with track IDs and precise GPS and IMU data."
+    },
+    {
+      "title": "TUMTraf V2X Cooperative Perception Dataset",
+      "url": "https://tum-traffic-dataset.github.io/tumtraf-v2x/",
+      "snippet": "We propose CoopDet3D, a cooperative multi-modal fusion model, and TUMTraf-V2X, a perception dataset, for the cooperative 3D object detection and tracking task. Our dataset contains 2,000 labeled point clouds and 5,000 labeled images from five roadside and four onboard sensors."
+    }
+  ]
+}

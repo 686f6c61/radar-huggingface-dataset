@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "vmarcelo/Qwen3.8-27B-MIX_GGUF",
+  "slug": "vmarcelo-qwen3-8-27b-mix_gguf",
+  "author": "vmarcelo",
+  "url": "https://huggingface.co/vmarcelo/Qwen3.8-27B-MIX_GGUF",
+  "created_at": "2026-08-14T23:07:30.000Z",
+  "updated_at": "2026-08-17T00:17:36.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "quantized",
+    "imatrix",
+    "qwen3.5",
+    "vision",
+    "multimodal",
+    "vulkan",
+    "text-generation",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B-FP8",
+    "base_model:quantized:Qwen/Qwen3.8-27B-FP8",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 4550,
+  "trending_score": 8,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 27639312896,
+  "storage_human": "27.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

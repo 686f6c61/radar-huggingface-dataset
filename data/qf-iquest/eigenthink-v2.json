@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/EigenThink-v2",
+  "slug": "qf-iquest-eigenthink-v2",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/EigenThink-v2",
+  "created_at": "2026-08-17T22:58:14.000Z",
+  "updated_at": "2026-08-17T22:58:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/EigenThink-v2 · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/EigenThink-v2",
+      "snippet": "1. Introduction The EigenThink has undergone a significant version upgrade. In the latest update, EigenThink has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "qf-iquest (qingfeng) - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest",
+      "snippet": "Sort: Recently updated. qf-iquest/SynthMind-Release. Feature Extraction • Updated 2 days ago • 96. qf-iquest/MyAwesomeModel-TestRepo. Feature Extraction • Updated 2 days ago"
+    },
+    {
+      "title": "EigenThink AI - GitHub",
+      "url": "https://github.com/EigenThink-AI",
+      "snippet": "GitHub is where EigenThink AI builds software. People This organization has no public members. You must be a member to see who&#x27;s a part of this organization."
+    },
+    {
+      "title": "Packages · EigenThink AI · GitHub",
+      "url": "https://github.com/orgs/EigenThink-AI/packages",
+      "snippet": "Docker A software platform used for building applications based on containers — small and lightweight execution environments."
+    },
+    {
+      "title": "IQuest Coder",
+      "url": "https://iquestlab.github.io/",
+      "snippet": "Dense Model Loop Model Showcases 2025-2026 ICPC, NERC, Northern Eurasia Finals Online Mirror Particle Text Converge & Burst Build a particle-text animation with the following requirements: Text sampling: convert given text (e.g., IQuest) on Canvas into a dot matrix made of hundreds of tiny particles."
+    }
+  ]
+}

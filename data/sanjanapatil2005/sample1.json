@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sanjanapatil2005/sample1",
+  "slug": "sanjanapatil2005-sample1",
+  "author": "sanjanapatil2005",
+  "url": "https://huggingface.co/sanjanapatil2005/sample1",
+  "created_at": "2026-08-17T05:50:42.000Z",
+  "updated_at": "2026-08-17T05:56:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sample1/ai_model at main · DD022-creator/Sample1 · GitHub",
+      "url": "https://github.com/DD022-creator/Sample1/tree/main/ai_model",
+      "snippet": "Contribute to DD022-creator/Sample1 development by creating an account on GitHub."
+    },
+    {
+      "title": "Sample1 - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1677105748225290146",
+      "snippet": "Generate stunning anime art with the &#x27;Sample1&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "sample1 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/cvqcjvte878c73at4gf0",
+      "snippet": "Explore sample1 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Sanjanampatil1 (Sanjana Manjappagouda Patil) - Hugging Face",
+      "url": "https://huggingface.co/Sanjanampatil1/models",
+      "snippet": "yes liked a model about 14 hours ago Organizations"
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://aimodelsindex.com/",
+      "snippet": "Reconcile reviewed live evaluators and source-backed benchmark evidence into one auditable evidence layer, with unavailable catalog sources labeled explicitly."
+    }
+  ]
+}

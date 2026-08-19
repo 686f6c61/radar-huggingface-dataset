@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "artaquest/artamodel",
+  "slug": "artaquest-artamodel",
+  "author": "artaquest",
+  "url": "https://huggingface.co/artaquest/artamodel",
+  "created_at": "2026-08-18T19:56:53.000Z",
+  "updated_at": "2026-08-18T19:57:06.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "numpy",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "numpy",
+    "astrology",
+    "sidereal",
+    "jyotisha",
+    "marriage",
+    "tabular",
+    "phase-model",
+    "artaquest",
+    "en",
+    "dataset:artaquest-foundation/artamatch-sidereal",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models Directory | Browse & Filter by Capabilities",
+      "url": "https://aimodels.dev/models",
+      "snippet": "Explore our comprehensive AI models directory. Filter by capabilities, providers, and performance metrics to find the perfect AI model for your needs."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "Browse all available models on the OpenAI Platform."
+    },
+    {
+      "title": "modelai — Bring your creative vision to life",
+      "url": "https://www.modelai.art/",
+      "snippet": "Switch models to compare styles, create original characters, and turn them into illustrations or animation—then sell your work, all in one app. model.ai."
+    },
+    {
+      "title": "AI Art Generator: Premium Image & Video Models in One Place | ArtAny",
+      "url": "https://www.artany.ai/",
+      "snippet": "ArtAny AI is an all-in-one AI creative platform for image, video, audio, and beyond. Start with complimentary credits; subscriptions and credit packs unlock more generation capacity and features."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    }
+  ]
+}

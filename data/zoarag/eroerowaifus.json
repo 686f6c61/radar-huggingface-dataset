@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zoarag/EroEroWaifus",
+  "slug": "zoarag-eroerowaifus",
+  "author": "zoarag",
+  "url": "https://huggingface.co/zoarag/EroEroWaifus",
+  "created_at": "2026-05-26T17:01:13.000Z",
+  "updated_at": "2026-08-17T04:01:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9276057528,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zoarag (zoarag) - Hugging Face",
+      "url": "https://huggingface.co/zoarag/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 22 days ago ... published a model 22 days ago"
+    },
+    {
+      "title": "zoarag (zoarag) - Hugging Face",
+      "url": "https://huggingface.co/zoarag/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 26 days ago ... updated a model 26 days ago"
+    },
+    {
+      "title": "EroEroWaifus Creator Profile | Civitai",
+      "url": "https://civitai.com/user/EroEroWaifus/posts",
+      "snippet": "Models Uploaded: 0, Followers: 1k, Total Likes Received: 2.9k, Total Downloads Received: 15.6k."
+    },
+    {
+      "title": "Plus Size AI Image Generator - Create Plus Size Art Free | Stuffer.ai",
+      "url": "https://stuffer.ai/generate/plus-size-ai-generator",
+      "snippet": "Generate plus size AI images for free with Stuffer.ai. Create stunning plus-size character art, portraits, and videos using advanced AI models like Hyperfusion and Pornmaster Pro."
+    },
+    {
+      "title": "GitHub - Damacol/zoarag-urusan: Run zoarag/urusan privately via Venice ...",
+      "url": "https://github.com/Damacol/zoarag-urusan",
+      "snippet": "zoarag/urusan - Private, Uncensored AI for Real Creators and Devs {MODEL} setup for researchers, devs, and writers. No babysitting, no tracking, just powerful AI on your terms."
+    }
+  ]
+}

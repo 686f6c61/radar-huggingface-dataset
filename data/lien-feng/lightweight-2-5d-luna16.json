@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lien-Feng/Lightweight-2-5D-LUNA16",
+  "slug": "lien-feng-lightweight-2-5d-luna16",
+  "author": "Lien-Feng",
+  "url": "https://huggingface.co/Lien-Feng/Lightweight-2-5D-LUNA16",
+  "created_at": "2026-08-19T03:01:31.000Z",
+  "updated_at": "2026-08-19T03:14:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "medical-imaging",
+    "object-detection",
+    "lung-nodule-detection",
+    "computed-tomography",
+    "luna16",
+    "yolo",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 684379194,
+  "storage_human": "684 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LUNA16 Object Detection Model (v2, 2025-04-14 10:31am) by LUNALung",
+      "url": "https://universe.roboflow.com/lunalung/luna16-dom3z/dataset/2",
+      "snippet": "11311 open source objects images and annotations in multiple formats for training computer vision models. LUNA16 (v2, 2025-04-14 10:31am), created by LUNALung"
+    },
+    {
+      "title": "visdata/luna16 · Hugging Face",
+      "url": "https://huggingface.co/visdata/luna16",
+      "snippet": "visdata / luna16 like 0 Text Generation Transformers Safetensors llama text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and ..."
+    },
+    {
+      "title": "linick0411/LUNA16-Attention-PVTFormer - GitHub",
+      "url": "https://github.com/linick0411/LUNA16-Attention-PVTFormer",
+      "snippet": "A lung nodule detection model based on PVT architecture incorporates an attention mechanism to enhance detailed feature recognition. - linick0411/LUNA16-Attention-PVTFormer"
+    },
+    {
+      "title": "MEDA-YOLO: a lightweight multi-scale edge fusion framework for ...",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6501/ae4f09",
+      "snippet": "This study proposes MEDA-YOLO, a lightweight deep learning framework for pulmonary nodule detection using the public LUNA16 dataset. To enhance boundary-blurred nodule detection, a multi-scale edge fusion module integrates atrous convolution with edge-aware mechanisms for effective multi-scale edge feature extraction."
+    },
+    {
+      "title": "GitHub - AJIGBOTOSHO/risk_nodule_stratification: Deep learning CAD ...",
+      "url": "https://github.com/AJIGBOTOSHO/risk_nodule_stratification",
+      "snippet": "About Deep learning CAD system for automated pulmonary nodule risk stratification (Low/Medium/High) from CT lung images, using a 2.5D DenseNet121 model trained on LUNA16, with Grad-CAM explainability. Built as part of a Biomedical Engineering final-year dissertation."
+    }
+  ]
+}

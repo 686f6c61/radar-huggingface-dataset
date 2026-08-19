@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zrgong/lila-wam-memory-press-button-smoke-debug",
+  "slug": "zrgong-lila-wam-memory-press-button-smoke-debug",
+  "author": "zrgong",
+  "url": "https://huggingface.co/zrgong/lila-wam-memory-press-button-smoke-debug",
+  "created_at": "2026-08-18T15:44:13.000Z",
+  "updated_at": "2026-08-18T15:45:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 424346719,
+  "storage_human": "424 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - teee000/LiLa-WAM: LiLa-WAM: Lightweight Latent Reasoning World ...",
+      "url": "https://github.com/teee000/LiLa-WAM",
+      "snippet": "LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robot Manipulation Official implementation of LiLa-WAM, a lightweight world-action model that is trainable on a single consumer-grade GPU (24 GB)."
+    },
+    {
+      "title": "GitHub - teee000/LiLa-WAM: LiLa-WAM: Lightweight Latent Reasoning World ...",
+      "url": "https://github.com/teee000/LiLa-WAM/tree/main/",
+      "snippet": "Official implementation of LiLa-WAM, a lightweight world-action model that is trainable on a single consumer-grade GPU (24 GB)."
+    },
+    {
+      "title": "[2608.03701] LiLa-WAM: Lightweight Latent Reasoning World-Action Model ...",
+      "url": "https://arxiv.org/abs/2608.03701",
+      "snippet": "The resulting training cost can make such methods difficult to train under modest computational budgets. In this work, we propose LiLa-WAM, a lightweight world-action model that reasons about the future in a compact latent space and can be trained end-to-end on a single 24GB GPU."
+    },
+    {
+      "title": "LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic ...",
+      "url": "https://teee000.github.io/LiLa-WAM-page/",
+      "snippet": "LiLa-WAM is a lightweight world-action model that reasons about the future in a compact latent space, trainable end-to-end on a single 24GB GPU, achieving 90.48% success across 50 RoboTwin 2.0 tasks."
+    },
+    {
+      "title": "LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic ...",
+      "url": "https://arxiv.org/pdf/2608.03701",
+      "snippet": "LiLa-WAM shares the lightweight pursuit but differs fundamentally in formulation. It couples action generation with explicit future-state prediction in a compact latent space, so that foresight becomes a training signal rather than an emergent by-product."
+    }
+  ]
+}

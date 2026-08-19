@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "diego-florez/Qwen2.5-7B-Comment-Sexuality-Reasoner",
+  "slug": "diego-florez-qwen2-5-7b-comment-sexuality-reasoner",
+  "author": "diego-florez",
+  "url": "https://huggingface.co/diego-florez/Qwen2.5-7B-Comment-Sexuality-Reasoner",
+  "created_at": "2026-08-18T10:45:00.000Z",
+  "updated_at": "2026-08-18T11:04:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "reasoning",
+    "spanish",
+    "social-media",
+    "content-moderation",
+    "sexualization-detection",
+    "comment-classification",
+    "dora",
+    "unsloth",
+    "vllm",
+    "conversational",
+    "es",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Comment sexualization classification",
+      "dataset": "Gold dataset",
+      "metric": "Accuracy",
+      "value": 0.7054
+    },
+    {
+      "task": "Comment sexualization classification",
+      "dataset": "Gold dataset",
+      "metric": "Macro F1",
+      "value": 0.7053
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen2.5",
+      "snippet": "A significant update in Qwen2.5 is the reintroduction of our 14B and 32B models, Qwen2.5-14B and Qwen2.5-32B. These models outperform baseline models of comparable or larger sizes, such as Phi-3.5-MoE-Instruct and Gemma2-27B-IT, across diverse tasks."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    },
+    {
+      "title": "TIGER-Lab/General-Reasoner-Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/TIGER-Lab/General-Reasoner-Qwen2.5-7B",
+      "snippet": "Safetensors 13 languages qwen2 General-Reasoner-7B arxiv: 2505.14652 License: apache-2.0 Model card Files Files and versions Community"
+    },
+    {
+      "title": "Qwen2.5-7B | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/qwen25-7b/",
+      "snippet": "Qwen2.5-7B is a powerful 7.61B parameter base language model supporting 29+ languages with 128K context length and specialized improvements in coding and mathematics."
+    }
+  ]
+}

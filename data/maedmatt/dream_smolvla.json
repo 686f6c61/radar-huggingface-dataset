@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "maedmatt/DREAM_SmolVLA",
+  "slug": "maedmatt-dream_smolvla",
+  "author": "maedmatt",
+  "url": "https://huggingface.co/maedmatt/DREAM_SmolVLA",
+  "created_at": "2026-08-15T23:51:11.000Z",
+  "updated_at": "2026-08-15T23:51:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:maedmatt/DREAM-pyramid-circles",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906719112,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

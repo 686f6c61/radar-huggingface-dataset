@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "iaeval2026-submission/qwen3-8b-knapsack-lora-stateless-seed3407",
+  "slug": "iaeval2026-submission-qwen3-8b-knapsack-lora-stateless-seed3407",
+  "author": "iaeval2026-submission",
+  "url": "https://huggingface.co/iaeval2026-submission/qwen3-8b-knapsack-lora-stateless-seed3407",
+  "created_at": "2026-08-16T16:12:39.000Z",
+  "updated_at": "2026-08-16T16:12:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 709842382,
+  "storage_human": "710 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:04:30.248Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3-8b-stateless-knapsack-lora-seed1337 - Hugging Face",
+      "url": "https://huggingface.co/TieuDaoChanNhan/qwen3-8b-stateless-knapsack-lora-seed1337",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=knapsack",
+      "snippet": "TieuDaoChanNhan/qwen3-8b-stateless-knapsack-lora-seed777 Text Generation •Updated about 5 hours ago"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

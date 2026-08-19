@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Wjwiiwi/gpt2-azerbaijani-small",
+  "slug": "wjwiiwi-gpt2-azerbaijani-small",
+  "author": "Wjwiiwi",
+  "url": "https://huggingface.co/Wjwiiwi/gpt2-azerbaijani-small",
+  "created_at": "2026-08-17T17:32:58.000Z",
+  "updated_at": "2026-08-17T17:32:58.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gpt2",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2157758797,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nijatzeynalov/gpt2-azerbaijani-small · Hugging Face",
+      "url": "https://huggingface.co/nijatzeynalov/gpt2-azerbaijani-small",
+      "snippet": "gpt2-azerbaijani-smallv0 is a state-of-the-art language model for Azerbaijani based on the GPT-2 small model. It was trained on Azerbaijani Wikipedia using Transfer Learning and Fine-tuning techniques in ~ 29 hours, on one GPU - 1 x NVIDIA Tesla K80."
+    },
+    {
+      "title": "README.md · allmalab/gpt2-aze at main - Hugging Face",
+      "url": "https://huggingface.co/allmalab/gpt2-aze/blob/main/README.md",
+      "snippet": "The model is based on the GPT-2 architecture, specifically trained on Azerbaijani text. It serves as one of the first foundational models designed to generate and understand Azerbaijani language content."
+    },
+    {
+      "title": "GitHub - MahammadNuriyev62/azgpt: First open-source continually ...",
+      "url": "https://github.com/MahammadNuriyev62/azgpt",
+      "snippet": "Project Goal AzGPT aims to adapt a strong open-source base language model (such as Qwen 3.5, Gemma 3, or Llama) for Azerbaijani through continual pretraining. The objective is to produce a model that understands and generates fluent Azerbaijani text while retaining the general capabilities of the base model."
+    },
+    {
+      "title": "Open foundation models for Azerbaijani language - arXiv.org",
+      "url": "https://arxiv.org/html/2407.02337v1",
+      "snippet": "Yet another challenge is the small size of the community that&#x27;s devoted to the development of open-source language models for Azerbaijani. The challenges regarding digitalization and script differences are further discussed in the third section."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    }
+  ]
+}

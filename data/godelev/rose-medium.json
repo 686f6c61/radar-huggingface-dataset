@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GODELEV/Rose-Medium",
+  "slug": "godelev-rose-medium",
+  "author": "GODELEV",
+  "url": "https://huggingface.co/GODELEV/Rose-Medium",
+  "created_at": "2026-08-07T07:14:09.000Z",
+  "updated_at": "2026-08-07T20:01:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rose_x1",
+    "text-generation",
+    "causal-lm",
+    "custom-architecture",
+    "rose-x1",
+    "rose-medium",
+    "pytorch",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 874,
+  "trending_score": 7,
+  "parameters": 97820160,
+  "parameters_human": "97.8M",
+  "storage_bytes": 393389483,
+  "storage_human": "393 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GODELEV/Rose-Medium · Hugging Face",
+      "url": "https://huggingface.co/GODELEV/Rose-Medium",
+      "snippet": "SGLang How to use GODELEV/Rose-Medium with SGLang: Install from pip and serve model ... Use Docker images ... Docker Model Runner How to use GODELEV/Rose-Medium with Docker Model Runner: ... Rose-Medium Almost 100M Parameters, 80B Tokens, and Still Not Quite Satisfied Architecture graph What Rose-Medium Actually Is The Short Version Results at ..."
+    },
+    {
+      "title": "Architecture graph for GODELEV/Rose-Medium | hfviewer",
+      "url": "https://hfviewer.com/GODELEV/Rose-Medium",
+      "snippet": "GODELEV/Rose-Medium neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model GODELEV/Rose-Medium. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual forward dataflow, and ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&num_parameters=min:0,max:3B&sort=trending",
+      "snippet": "Active filters: text-generation, min:0, max:3B. Clear all. LiquidAI/LFM2.5-2.6B. Text Generation • 3B • Updated 2 days ago • 81.5k • 418"
+    },
+    {
+      "title": "Gemini 3D — AI Model Generator | Text & Image to 3D Online Free",
+      "url": "https://www.gemini3d.app/",
+      "snippet": "Gemini 3D is a free online AI model generator. Turn text prompts or images into detailed models in seconds. Export to GLB, OBJ, FBX, STL. No skills needed."
+    },
+    {
+      "title": "Official gateway and model catalog for Agnes AI. - GitHub",
+      "url": "https://github.com/AgnesAI-Labs/AgnesAI-Models",
+      "snippet": "Official gateway and model catalog for Agnes AI. Agnes AI gives developers OpenAI-compatible access to multimodal models for text, image, video, and agent workflows through a unified API gateway."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ThorOdinson246/nl2sh-1.5b-Q4_K_M",
+  "slug": "thorodinson246-nl2sh-1-5b-q4_k_m",
+  "author": "ThorOdinson246",
+  "url": "https://huggingface.co/ThorOdinson246/nl2sh-1.5b-Q4_K_M",
+  "created_at": "2026-08-07T06:29:19.000Z",
+  "updated_at": "2026-08-15T20:15:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "shell",
+    "bash",
+    "command-generation",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 46,
+  "downloads_30d": 1869,
+  "trending_score": 29,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048000,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ThorOdinson246/nl2sh: Local natural-language-to-shell command ...",
+      "url": "https://github.com/ThorOdinson246/nl2sh",
+      "snippet": "The model derives from Qwen2.5-Coder-1.5B-Instruct under the Apache 2.0 licence. Training data is assembled from tldr-pages (CC-BY 4.0), NL2Bash (GPLv3), Fig autocomplete specs (MIT), Warp workflows (Apache 2.0) and the NL2SH-ALFA published training split (MIT), deduplicated and audited for contamination against the benchmark test set."
+    },
+    {
+      "title": "ThorOdinson246/nl2sh-1.5b-Q4_K_M · Hugging Face",
+      "url": "https://huggingface.co/ThorOdinson246/nl2sh-1.5b-Q4_K_M",
+      "snippet": "ThorOdinson246 / nl2sh-1.5b-Q4_K_M like 12 Text Generation GGUF English shell bash command-generation llama.cpp conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mjensen6/nl2sh-1.5b-Q4_K_M · Hugging Face",
+      "url": "https://huggingface.co/mjensen6/nl2sh-1.5b-Q4_K_M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ThorOdinson246/whatisit-nl2sh: Local natural-language-to-shell ...",
+      "url": "https://github.com/ThorOdinson246/whatisit-nl2sh",
+      "snippet": "It&#x27;s a 1.5B at Q4_K_M, so what matters is how many threads you give it, not what they&#x27;re in. Decoding is greedy at temperature 0, so the same question always gives the same command."
+    },
+    {
+      "title": "Trained a 1.5B to write shell commands so I&#x27;d stop googling tar flags ...",
+      "url": "https://bittide.aicompass.dev/article/3b8a77fd-8811-4532-830e-c91ef980bc4c",
+      "snippet": "It started out as a research project and I ended up with a Fine-tuned Qwen2.5-Coder-1.5B on 125k natural-language/command pairs, merged and quantized to Q4_K_M. 941MB which runs through llama.cpp."
+    }
+  ]
+}

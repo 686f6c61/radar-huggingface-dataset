@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "NYSgpt/44b-reranker-minilm-l6",
+  "slug": "nysgpt-44b-reranker-minilm-l6",
+  "author": "NYSgpt",
+  "url": "https://huggingface.co/NYSgpt/44b-reranker-minilm-l6",
+  "created_at": "2026-07-31T08:24:29.000Z",
+  "updated_at": "2026-08-18T06:22:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "reranker",
+    "cross-encoder",
+    "scientific-documents",
+    "information-retrieval",
+    "peer-review",
+    "text-ranking",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:finetune:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 22713601,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90866412,
+  "storage_human": "91 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NYSgpt/44b-reranker-gte-modernbert · Hugging Face",
+      "url": "https://huggingface.co/NYSgpt/44b-reranker-gte-modernbert",
+      "snippet": "A sibling model, NYSgpt/44b-reranker-minilm-l6, was trained on the identical data and reaches P@1 0.8654 at 7.4 ms/query — 1/7th the parameters and ~6× the speed."
+    },
+    {
+      "title": "NYSgpt (Brendan Stanton) - Hugging Face",
+      "url": "https://huggingface.co/NYSgpt/datasets",
+      "snippet": "Recent Activity updated a modelabout 17 hours ago NYSgpt/44b-reranker-minilm-l6 updated a modelabout 17 hours ago NYSgpt/44b-reranker-gte-modernbert published a model3 days ago NYSgpt/44b-reranker-minilm-l6 View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - huggingface/sentence-transformers: State-of-the-Art Embeddings ...",
+      "url": "https://github.com/huggingface/sentence-transformers",
+      "snippet": "Sentence Transformers: Embeddings, Retrieval, and Reranking This framework provides an easy method to compute embeddings for accessing, using, and training state-of-the-art embedding and reranker models."
+    },
+    {
+      "title": "GitHub - agentset-ai/awesome-rerankers: A curated list of reranking ...",
+      "url": "https://github.com/agentset-ai/awesome-rerankers",
+      "snippet": "A curated list of reranking models, libraries, and resources for RAG applications. Rerankers take a query and retrieved documents and reorder them by relevance. They use cross-encoders to jointly encode query-document pairs, which is slower than vector search but more accurate. Typical pipeline: retrieve 50-100 candidates with vector search, rerank to top 3-5."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kerasformers/t5_3b",
+  "slug": "kerasformers-t5_3b",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/t5_3b",
+  "created_at": "2026-08-19T01:43:08.000Z",
+  "updated_at": "2026-08-19T01:43:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "kerasformers",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "ro"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "t5",
+    "text2text-generation",
+    "pytorch",
+    "jax",
+    "tf",
+    "translation",
+    "en",
+    "fr",
+    "de",
+    "ro",
+    "arxiv:1910.10683",
+    "base_model:google-t5/t5-3b",
+    "base_model:finetune:google-t5/t5-3b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google-t5/t5-3b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google-t5/t5-3b · Hugging Face",
+      "url": "https://huggingface.co/google-t5/t5-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KerasFormers (kerasformers) - Hugging Face",
+      "url": "https://huggingface.co/kerasformers",
+      "snippet": "This organization hosts pre-converted Keras 3 weights for kerasformers. Each repo holds the converted model plus its tokenizer and config files, so you download once and load directly, no on-the-fly conversion, no transformers or torch runtime on the model path. Every model is a pure-Keras port that runs unchanged on all three backends."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/t5-3b",
+      "snippet": "t5-3b is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the translation task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub ."
+    },
+    {
+      "title": "GitHub - IMvision12/KerasFormers: KerasFormers: Open-source Keras 3 ...",
+      "url": "https://github.com/IMvision12/KerasFormers",
+      "snippet": "KerasFormers: Open-source Keras 3 collection of pretrained models across Vision, LLM, VLM, Depth, Speech, and more - IMvision12/KerasFormers"
+    },
+    {
+      "title": "T5 (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/T5_(language_model)",
+      "snippet": "T5 (Text-to-Text Transfer Transformer) is a series of large language models developed by Google AI introduced in 2019. [1][2] Like the original Transformer model, [3] T5 models are encoder-decoder Transformers, where the encoder processes the input text, and the decoder generates the output text."
+    }
+  ]
+}

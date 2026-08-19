@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ChandraU/text-summarization",
+  "slug": "chandrau-text-summarization",
+  "author": "ChandraU",
+  "url": "https://huggingface.co/ChandraU/text-summarization",
+  "created_at": "2026-08-17T05:56:19.000Z",
+  "updated_at": "2026-08-17T06:02:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-classification",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Summarization Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=summarization",
+      "snippet": "Edit Models filters. Main ; Tasks 1; Libraries ; Languages ; Licenses ; Other ; Reset Tasks. Multimodal. Audio-Text-to-Text. Image-Text-to-Text"
+    },
+    {
+      "title": "Best AI for Summarization 2026: Top 25 Models Benchmarked",
+      "url": "https://openmark.ai/best-ai-for-summarization",
+      "snippet": "We benchmarked 25 AI models on summarization with key facts retention — passage summarization, argument extraction, bullet-point condensation. See which model retains the most information."
+    },
+    {
+      "title": "Knowledge-Enhanced Word Sense Disambiguation in the Context of ...",
+      "url": "https://arxiv.org/pdf/2404.08685",
+      "snippet": "2. Introduction In the realm of NLP, this script pioneers advanced text summarization using a cutting-edge neural sequence-to-sequence model with attention, powered by the Keras library. The narrative unfolds by loading a substantial text dataset, incorporating Gensim-generated Word2Vec embeddings for nuanced word representations and understanding semantic relationships. The script ..."
+    },
+    {
+      "title": "Evaluating LLMs and Pre-trained Models for Text Summarization Across ...",
+      "url": "https://arxiv.org/html/2502.19339v1",
+      "snippet": "Text summarization has seen significant advancements, particularly with the rise of deep learning techniques and large pre-trained models. These developments have allowed for more accurate and efficient summarization of lengthy texts, making it a valuable tool for various applications, including content organization, information retrieval, and decision-making. Summarization techniques are ..."
+    },
+    {
+      "title": "Enhancing text summarization with AI: a multi-agent system and human ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1871187125001932",
+      "snippet": "This paper contributes in three key areas: (1) the development of the MoA framework for improving narrative competence and summarization capabilities, (2) a detailed linguistic analysis comparing human and AI-generated summaries across various text lengths, and (3) insights into the practical applications of AI-enhanced learning in educational ..."
+    }
+  ]
+}

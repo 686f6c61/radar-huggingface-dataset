@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "unsloth/MiniMax-H3",
+  "slug": "unsloth-minimax-h3",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/MiniMax-H3",
+  "created_at": "2026-08-07T04:35:12.000Z",
+  "updated_at": "2026-08-07T04:38:58.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "video-to-audio-video",
+    "audio-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "reference-to-audio-video",
+    "license:other",
+    "diffusers:MiniMaxH3ModularPipeline",
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 253,
+  "trending_score": 8,
+  "parameters": 33122992896,
+  "parameters_human": "33.12B",
+  "storage_bytes": 353917479700,
+  "storage_human": "353.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/MiniMax-H3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/MiniMax-H3-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/MiniMax-H3-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/MiniMax-H3-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Start Unsloth, load a model, open your project folder, then run unsloth start claude. Swap models in Unsloth without changing your agent workflow. Unsloth also exposes an OpenAI-compatible API, so existing apps, scripts and SDKs can connect to your local models through a familiar interface."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Introducing Unsloth Desktop",
+      "url": "https://unsloth.ai/docs/desktop",
+      "snippet": "Introducing Unsloth Desktop Unsloth Desktop (Beta) is a free, open-source app for running and training AI models on your own local hardware. Available for macOS, Windows, and Linux. Unsloth lets you run, train and deploy LLMs, diffusion image/video, MLX, GGUF and audio models. Download Features GitHub"
+    }
+  ]
+}

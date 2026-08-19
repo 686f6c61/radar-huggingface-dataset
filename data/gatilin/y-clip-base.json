@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "gatilin/Y-CLIP-Base",
+  "slug": "gatilin-y-clip-base",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/Y-CLIP-Base",
+  "created_at": "2026-08-17T07:30:59.000Z",
+  "updated_at": "2026-08-17T07:34:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 209301506,
+  "parameters_human": "209.3M",
+  "storage_bytes": 1676704839,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

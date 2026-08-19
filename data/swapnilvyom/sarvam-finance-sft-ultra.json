@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "swapnilvyom/sarvam-finance-sft-ultra",
+  "slug": "swapnilvyom-sarvam-finance-sft-ultra",
+  "author": "swapnilvyom",
+  "url": "https://huggingface.co/swapnilvyom/sarvam-finance-sft-ultra",
+  "created_at": "2026-08-14T07:46:03.000Z",
+  "updated_at": "2026-08-14T07:54:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "pa",
+    "or"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma3",
+    "translation",
+    "finance",
+    "mutual-fund",
+    "en",
+    "pa",
+    "or",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 24155124889,
+  "storage_human": "24.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:38:21.936Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sarvam | India&#x27;s Full-Stack Sovereign AI Platform",
+      "url": "https://www.sarvam.ai/",
+      "snippet": "Sarvam is India&#x27;s full-stack sovereign AI platform, with speech-to-text, text-to-speech, translation, and conversational agents across 22 Indian languages. Start free."
+    },
+    {
+      "title": "Sarvam Models: Speech, Text & Translation AI | Sarvam",
+      "url": "https://www.sarvam.ai/models",
+      "snippet": "Explore Sarvam models for speech, text, translation, and multimodal AI. Saaras, Bulbul, Mayura and more. Free tier available. Start building today."
+    },
+    {
+      "title": "Sarvam - 2026 Company Profile & Team - Tracxn",
+      "url": "https://tracxn.com/d/companies/sarvam/__pdMzZ7Rkxe_acM5ctqBwOaZ9aoqOdLTKSvAsHq-7kFw",
+      "snippet": "Sarvam - Developer of artificial intelligence models for speech and document processing. Raised a total funding of $275M over 4 rounds from 13 investors."
+    },
+    {
+      "title": "Sarvam 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+      "url": "https://pitchbook.com/profiles/company/541528-21",
+      "snippet": "Information on valuation, funding, cap tables, investors, and executives for Sarvam. Use the PitchBook Platform to explore the full profile."
+    },
+    {
+      "title": "Sarvam AI : Explained: What is India&#x27;s Sarvam AI model that Google CEO ...",
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/explained-what-is-indias-sarvam-ai-model-that-google-ceo-sundar-pichai-is-quite-impressed-with/articleshow/128540072.cms",
+      "snippet": "Tech News News: Google CEO Sundar Pichai said that he is impressed with the work done by Sarvam AI. Speaking at the ongoing India AI Impact Summit 2026, Pichai said \"."
+    }
+  ]
+}

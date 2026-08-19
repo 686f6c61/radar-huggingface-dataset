@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF",
+  "slug": "reaperdoesntknow-qwen3-5-2b-cybersec-gguf",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF",
+  "created_at": "2026-08-09T15:45:10.000Z",
+  "updated_at": "2026-08-17T13:16:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "cybersecurity",
+    "conversational",
+    "quantized",
+    "text-generation",
+    "base_model:reaperdoesntknow/Qwen3.5-2B-CyberSec",
+    "base_model:quantized:reaperdoesntknow/Qwen3.5-2B-CyberSec",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2131,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 7957599616,
+  "storage_human": "8.0 GB",
+  "base_model": "reaperdoesntknow/Qwen3.5-2B-CyberSec",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF",
+      "snippet": "like 0 GGUF qwen3_5 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.5-2B.Q4_K_M.gguf · reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF at main",
+      "url": "https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF/blob/main/Qwen3.5-2B.Q4_K_M.gguf",
+      "snippet": "like 0 GGUF qwen3_5 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_5_2b",
+      "snippet": "Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen3.5-2B Distills Opus Reasoning Into a Tiny GGUF Model",
+      "url": "https://hackernoon.com/qwen35-2b-distills-opus-reasoning-into-a-tiny-gguf-model",
+      "snippet": "Model overview Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled-GGUF is a compact reasoning model built on the Qwen3.5-2B architecture and trained through knowledge distillation from Claude-4.6 Opus. The model learns to structure its thinking process using formatted <think> tags before generating final responses, enabling transparent step-by-step problem solving in a lightweight package. Unlike ..."
+    },
+    {
+      "title": "Qwen3.5-2B-CyberSec API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/reaperdoesntknow/Qwen3.5-2B-CyberSec",
+      "snippet": "Run Qwen3.5-2B-CyberSec with FriendliAI inference. This qwen35 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

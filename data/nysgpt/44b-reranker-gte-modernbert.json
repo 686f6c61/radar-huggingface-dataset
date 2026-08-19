@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "NYSgpt/44b-reranker-gte-modernbert",
+  "slug": "nysgpt-44b-reranker-gte-modernbert",
+  "author": "NYSgpt",
+  "url": "https://huggingface.co/NYSgpt/44b-reranker-gte-modernbert",
+  "created_at": "2026-08-08T15:33:24.000Z",
+  "updated_at": "2026-08-18T06:22:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "reranker",
+    "cross-encoder",
+    "scientific-documents",
+    "information-retrieval",
+    "peer-review",
+    "text-ranking",
+    "base_model:Alibaba-NLP/gte-reranker-modernbert-base",
+    "base_model:finetune:Alibaba-NLP/gte-reranker-modernbert-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598436708,
+  "storage_human": "598 MB",
+  "base_model": "Alibaba-NLP/gte-reranker-modernbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NYSgpt/44b-reranker-gte-modernbert · Hugging Face",
+      "url": "https://huggingface.co/NYSgpt/44b-reranker-gte-modernbert",
+      "snippet": "44b-reranker-gte-modernbert A cross-encoder reranker fine-tuned on peer review → paper pairs mined from the 44B corpus. The supervision is unusual and it is the point: the query is a peer reviewer&#x27;s own summary of a paper, written by a domain expert who had never heard of this model, and the positive is the paper that review is attached to."
+    },
+    {
+      "title": "NYSgpt (Brendan Stanton) - Hugging Face",
+      "url": "https://huggingface.co/NYSgpt/models",
+      "snippet": "NYSgpt/44b-reranker-gte-modernbert Text Ranking • 0.1B•Updated about 16 hours ago• 5 • 2"
+    },
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the research repository for ModernBERT, focused on pre-training and evaluations. If you&#x27;re seeking the HuggingFace version, designed to integrate with any common pipeline, please head to the ModernBERT Collection on HuggingFace ModernBERT is a collaboration between Answer.AI, LightOn, and friends."
+    },
+    {
+      "title": "Gte Reranker Modernbert models | The GTM Directory",
+      "url": "https://thegtmdirectory.com/models/alibaba-nlp-gte-reranker-modernbert",
+      "snippet": "Every Gte Reranker Modernbert model version from Alibaba-NLP, with specs, capabilities, and benchmarks."
+    },
+    {
+      "title": "[2412.13663] Smarter, Better, Faster, Longer: A Modern Bidirectional ...",
+      "url": "https://arxiv.org/abs/2412.13663",
+      "snippet": "Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder-only ..."
+    }
+  ]
+}

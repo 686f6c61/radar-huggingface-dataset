@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ragheb89/unsloth_gemma-4-E4B-it_aia",
+  "slug": "ragheb89-unsloth_gemma-4-e4b-it_aia",
+  "author": "ragheb89",
+  "url": "https://huggingface.co/ragheb89/unsloth_gemma-4-E4B-it_aia",
+  "created_at": "2026-08-18T09:18:25.000Z",
+  "updated_at": "2026-08-18T09:19:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 6326844608,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/gemma-4-E4B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-E4B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s new family of open models, including 12B, E2B, E4B, 26B-A4B, and 31B. The multimodal, hybrid-thinking models support 140+ languages, up to 256K context, and have dense and MoE variants."
+    },
+    {
+      "title": "Gemma 4 - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/gemma-4",
+      "snippet": "Gemma 4 is Google&#x27;s new model family including including E2B, E4B, 26B-A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gemma-4/train",
+      "snippet": "You can now train Google&#x27;s Gemma 4 12B, E2B, E4B, 26B-A4B and 31B with Unsloth. Unsloth supports all vision, text, audio and RL fine-tuning for Gemma 4."
+    },
+    {
+      "title": "How to run Gemma 4 locally with Unsloth AI - Wolfeast",
+      "url": "https://wolfeast.com/run-gemma-4-locally-unsloth/",
+      "snippet": "Unsloth Studio is a local web UI that wraps llama.cpp with a chat interface, auto-sets inference parameters, and handles model downloads. It runs on macOS, Windows, and Linux. If you&#x27;ve never run a local model before, start here. Unsloth Studio&#x27;s model selector showing Gemma 4 E4B quantization options."
+    }
+  ]
+}

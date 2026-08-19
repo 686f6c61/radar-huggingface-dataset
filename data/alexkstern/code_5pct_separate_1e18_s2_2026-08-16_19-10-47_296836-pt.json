@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/code_5pct_separate_1e18_s2_2026-08-16_19-10-47_296836-pt",
+  "slug": "alexkstern-code_5pct_separate_1e18_s2_2026-08-16_19-10-47_296836-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/code_5pct_separate_1e18_s2_2026-08-16_19-10-47_296836-pt",
+  "created_at": "2026-08-16T19:18:34.000Z",
+  "updated_at": "2026-08-16T19:19:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_github-code-nanochatbpe-1B",
+    "seed_2",
+    "case_b",
+    "lr_trapezoid",
+    "depth_12",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1670466499,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "code_5pct_27e18_d24_seed1_2026-08-02_06-33-02_312522-pt",
+      "url": "https://huggingface.co/alexkstern/code_5pct_27e18_d24_seed1_2026-08-02_06-33-02_312522-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=seed_2",
+      "snippet": "alexkstern/vanilla_pred_27e18_d24_seed2_2026-07-18_00-40-47_181708-pt"
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "Home &#92;&#92; Anthropic",
+      "url": "https://www.anthropic.com/",
+      "snippet": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems."
+    },
+    {
+      "title": "SubsPlease - One stop shop for new anime",
+      "url": "https://subsplease.org/",
+      "snippet": "SubsPlease One stop shop for new anime Schedule Shows Packlist IRC Discord RSS"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-nld",
+  "slug": "beetle-fineweb3-24b-beetle-monolingual-fineweb3-nld",
+  "author": "Beetle-FineWeb3-24B",
+  "url": "https://huggingface.co/Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-nld",
+  "created_at": "2026-08-18T00:15:17.000Z",
+  "updated_at": "2026-08-18T02:54:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pico_decoder",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 193804032,
+  "parameters_human": "193.8M",
+  "storage_bytes": 57369495340,
+  "storage_human": "57.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-pol - Hugging Face",
+      "url": "https://huggingface.co/Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-pol",
+      "snippet": "Beetle-FineWeb3-24B / beetle-monolingual-fineweb3-pol like 0 Follow Beetle-FineWeb3-24B 1 Text Generation Transformers Safetensors pico_decoder custom_code arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Beetle-FineWeb (Beetle-FineWeb) - Hugging Face",
+      "url": "https://huggingface.co/Beetle-FineWeb/models",
+      "snippet": "Org profile for Beetle-FineWeb on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Damacol/beetle-fineweb-beetle-bilingual-balanced-b1-fineweb ... - GitHub",
+      "url": "https://github.com/Damacol/beetle-fineweb-beetle-bilingual-balanced-b1-fineweb-nld-eng",
+      "snippet": "Beetle-FineWeb/beetle-bilingual-balanced-b1-fineweb-nld-eng - Private, Uncensored AI for Real Creators and Devs Deploy {MODEL} without cloud dependencies. Uncensored ..."
+    },
+    {
+      "title": "beetle-fineweb-beetle-bilingual-balanced-b1-fineweb-nld-eng/README.md ...",
+      "url": "https://github.com/Damacol/beetle-fineweb-beetle-bilingual-balanced-b1-fineweb-nld-eng/blob/main/README.md",
+      "snippet": "Beetle-FineWeb/beetle-bilingual-balanced-b1-fineweb-nld-eng - Private, Uncensored AI for Real Creators and Devs Deploy {MODEL} without cloud dependencies. Uncensored, transparent, and optimized for privacy-conscious workflows."
+    },
+    {
+      "title": "The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale",
+      "url": "https://arxiv.org/html/2406.17557v1",
+      "snippet": "To scale our filtering to the entirety of FineWeb, we trained a linear regression model on top of the Snowflake-arctic-embed-m embedding model [65]. We fine-tuned this linear regressor on 410,000 of our Llama 3 synthetic annotations for 20 epochs with a learning rate of 3e-4 (while keeping the embedding and encoder layers frozen)."
+    }
+  ]
+}

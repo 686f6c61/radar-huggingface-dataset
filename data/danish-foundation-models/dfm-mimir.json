@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "danish-foundation-models/DFM-Mimir",
+  "slug": "danish-foundation-models-dfm-mimir",
+  "author": "danish-foundation-models",
+  "url": "https://huggingface.co/danish-foundation-models/DFM-Mimir",
+  "created_at": "2026-08-03T10:47:24.000Z",
+  "updated_at": "2026-08-15T08:57:20.000Z",
+  "license": "mimir-license-v1.0-research-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "da",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hrm_text",
+    "text-generation",
+    "danish",
+    "english",
+    "foundation-model",
+    "instruction-tuned",
+    "conversational",
+    "da",
+    "en",
+    "arxiv:2608.13517",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 1397,
+  "trending_score": 14,
+  "parameters": 1786775040,
+  "parameters_human": "1.79B",
+  "storage_bytes": 7182228078,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

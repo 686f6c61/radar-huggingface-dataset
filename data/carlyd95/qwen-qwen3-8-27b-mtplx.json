@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "carlyd95/Qwen-Qwen3.8-27B-MTPLX",
+  "slug": "carlyd95-qwen-qwen3-8-27b-mtplx",
+  "author": "carlyd95",
+  "url": "https://huggingface.co/carlyd95/Qwen-Qwen3.8-27B-MTPLX",
+  "created_at": "2026-08-16T05:09:41.000Z",
+  "updated_at": "2026-08-16T05:09:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 4204731904,
+  "parameters_human": "4.20B",
+  "storage_bytes": 16002433241,
+  "storage_human": "16.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-V-4_5-AWQ",
+  "slug": "openbmb-minicpm-v-4_5-awq",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ",
+  "created_at": "2025-08-26T07:03:13.000Z",
+  "updated_at": "2026-08-18T03:58:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmv",
+    "feature-extraction",
+    "minicpm-v",
+    "vision",
+    "ocr",
+    "multi-image",
+    "video",
+    "custom_code",
+    "image-text-to-text",
+    "conversational",
+    "multilingual",
+    "dataset:openbmb/RLAIF-V-Dataset",
+    "arxiv:2403.11703",
+    "base_model:openbmb/MiniCPM-V-4_5",
+    "base_model:quantized:openbmb/MiniCPM-V-4_5",
+    "4-bit",
+    "awq",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 25658,
+  "trending_score": 0,
+  "parameters": 8695895280,
+  "parameters_human": "8.70B",
+  "storage_bytes": 7120394980,
+  "storage_human": "7.1 GB",
+  "base_model": "openbmb/MiniCPM-V-4_5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-V-4_5-AWQ · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    },
+    {
+      "title": "openbmb/MiniCPM-V-4_5-AWQ at main - Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V at productcool",
+      "url": "https://github.com/OpenBMB/MiniCPM-V?ref=productcool",
+      "snippet": "MiniCPM-o 4.5: ⭐️⭐️⭐️ The latest and most capable model in the MiniCPM-o series. With a total of 9B parameters, this end-to-end model approaches Gemini 2.5 Flash in vision, speech, and full-duplex multimodal live streaming, making it one of the most versatile and performant models in the open-source community."
+    },
+    {
+      "title": "openbmb/MiniCPM-V-4_5-AWQ — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/openbmb/MiniCPM-V-4_5-AWQ/",
+      "snippet": "MiniCPM-V 4.5 is a high-performance Multimodal Large Language Model (MLLM) designed for sophisticated image and video understanding. Despite its compact 8B parameter size, it delivers GPT-4o-level performance in visual perception, state-of-the-art OCR, and efficient long-video analysis by using a unique 3D-Resampler that compresses video tokens ..."
+    }
+  ]
+}

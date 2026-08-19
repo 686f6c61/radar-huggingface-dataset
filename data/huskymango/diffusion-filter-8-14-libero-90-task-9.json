@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "HuskyMango/diffusion-filter-8-14-libero-90-task-9",
+  "slug": "huskymango-diffusion-filter-8-14-libero-90-task-9",
+  "author": "HuskyMango",
+  "url": "https://huggingface.co/HuskyMango/diffusion-filter-8-14-libero-90-task-9",
+  "created_at": "2026-08-14T21:51:04.000Z",
+  "updated_at": "2026-08-15T00:45:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:HuskyMango/filter-libero-90-task-9",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 270421900,
+  "parameters_human": "270.4M",
+  "storage_bytes": 2163443408,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuskyMango/diffusion-filter-libero-90-task-9 · Hugging Face",
+      "url": "https://huggingface.co/HuskyMango/diffusion-filter-libero-90-task-9",
+      "snippet": "HuskyMango/filter-libero-90-task-9 ... Diffusion Policy: Visuomotor Policy Learning via Action Diffusion"
+    },
+    {
+      "title": "HuskyMango/small-diffusion-filter-yellow-cup-8-3 · Hugging Face",
+      "url": "https://huggingface.co/HuskyMango/small-diffusion-filter-yellow-cup-8-3",
+      "snippet": "Instructions to use HuskyMango/small-diffusion-filter-yellow-cup-8-3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Lifelong-Robot-Learning/LIBERO: Benchmarking Knowledge ...",
+      "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+      "snippet": "LIBERO is designed for studying knowledge transfer in multitask and lifelong robot learning problems. Successfully resolving these problems require both declarative knowledge about objects/spatial relationships and procedural knowledge about motion/behaviors."
+    },
+    {
+      "title": "LIBERO Datasets - LIBERO",
+      "url": "https://libero-project.github.io/datasets",
+      "snippet": "LIBERO-Goal: 10 tasks from LIBERO-Goal suite. LIBERO-100: 100 tasks from LIBERO-100 suite. Note that the datasets are split under the folder names of LIBERO-90 and LIBERO-10. We also have a script for programmatic downloading the datasets. Download Checkpoints LIBERO-Spatial Best Model Checkpoints LIBERO-Object Best Model Checkpoints"
+    },
+    {
+      "title": "GitHub - ZTX2021/LIBERO_diffusion: fork from LIBERO · GitHub",
+      "url": "https://github.com/ZTX2021/LIBERO_diffusion",
+      "snippet": "In contrast, LIBERO-100 consists of 100 manipulation tasks that require the transfer of entangled knowledge. LIBERO-100 is further splitted into LIBERO-90 for pretraining a policy and LIBERO-10 for testing the agent&#x27;s downstream lifelong learning performance."
+    }
+  ]
+}

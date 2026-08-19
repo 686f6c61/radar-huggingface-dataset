@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "visible-cx/LFM2.5-1.2B-CoreAI",
+  "slug": "visible-cx-lfm2-5-1-2b-coreai",
+  "author": "visible-cx",
+  "url": "https://huggingface.co/visible-cx/LFM2.5-1.2B-CoreAI",
+  "created_at": "2026-08-17T11:16:55.000Z",
+  "updated_at": "2026-08-17T22:35:50.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "core-ai",
+    "aimodel",
+    "apple-silicon",
+    "on-device",
+    "quantized",
+    "int8",
+    "lfm2.5",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5091620484,
+  "storage_human": "5.1 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI — Blog",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    },
+    {
+      "title": "coreai-model-zoo/models/lfm2.5-vl/README.md at main - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/blob/main/models/lfm2.5-vl/README.md",
+      "snippet": "The smallest VLM in this catalog by a factor of three, and its detail-tier sibling. Core AI ports of LiquidAI/LFM2.5-VL-450M and -3B: image + text → text on the pipelined-engine fast path. Which one: the 450M (658 MB, iPhone-gated at 112 tok/s) is the one that fits beside an app — every other VLM here starts at ~2 GB resident."
+    },
+    {
+      "title": "coreai-model-zoo/models/lfm2.5/README.md at main - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/blob/main/models/lfm2.5/README.md",
+      "snippet": "Community model zoo for Apple Core AI (iOS/macOS 27): 49 models — LLM, VLM, OCR, ASR, TTS, image/video/music gen, forecasting — converted, verified on real devices, downloadable from Hugging Face, and runnable in one line of Swift via CoreAIKit."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-1.2B-Instruct | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/LiquidAI/LFM2.5-1.2B-Instruct",
+      "snippet": "Liquid AI&#x27;s 1.2B instruction-tuned model on the LFM2 hybrid conv+attention backbone, with tool calling and a 32K context window on a single small GPU."
+    },
+    {
+      "title": "playground.liquid.ai - Login",
+      "url": "https://playground.liquid.ai/",
+      "snippet": "Welcome to Liquid AI We are excited to announce the LFM2.5 model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    }
+  ]
+}

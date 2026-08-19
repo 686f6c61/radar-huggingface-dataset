@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/ace_step_1.5_ComfyUI_files",
+  "slug": "comfy-org-ace_step_1-5_comfyui_files",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/ace_step_1.5_ComfyUI_files",
+  "created_at": "2026-02-03T04:57:10.000Z",
+  "updated_at": "2026-08-17T06:09:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:finetune:ACE-Step/Ace-Step1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 160,
+  "downloads_30d": 349483,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63141987268,
+  "storage_human": "63.1 GB",
+  "base_model": "ACE-Step/Ace-Step1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/ace_step_1.5_ComfyUI_files · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/ace_step_1.5_ComfyUI_files",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comfy-Org/ace_step_1.5_ComfyUI_files at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/ace_step_1.5_ComfyUI_files/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI ACE-Step 1.5 Music Generation Guide - ComfyUI",
+      "url": "https://docs.comfy.org/tutorials/audio/ace-step/ace-step-v1-5",
+      "snippet": "Learn how to use ACE-Step 1.5 for AI music generation in ComfyUI. Complete guide with workflows, model downloads, and setup instructions for ComfyUI."
+    },
+    {
+      "title": "ACE-Step 1.5 is Now Available in ComfyUI - ComfyUI.org",
+      "url": "https://comfyui.org/en/ace-step-15-is-now-available-in-comfyui",
+      "snippet": "This significant enhancement of the open-source music generation model provides professional-grade quality on your computer, creating entire songs in less than 10 seconds using standard hardware. Updates in ACE-Step 1.5 ACE-Step 1.5 features a new hybrid design that revolutionizes AI music creation."
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step-ComfyUI",
+      "url": "https://github.com/ace-step/ACE-Step-ComfyUI",
+      "snippet": "ACE-Step-ComfyUI ComfyUI nodes for ACE-Step AI music generation — text-to-music, cover/remix, repaint, and LLM-powered sample generation."
+    }
+  ]
+}

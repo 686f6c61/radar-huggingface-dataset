@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jkminder/pretraining-priors-pirate2x2-d26-base",
+  "slug": "jkminder-pretraining-priors-pirate2x2-d26-base",
+  "author": "jkminder",
+  "url": "https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base",
+  "created_at": "2026-08-17T13:07:10.000Z",
+  "updated_at": "2026-08-17T18:36:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nanochat_gpt",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 972947456,
+  "parameters_human": "972.9M",
+  "storage_bytes": 1945913144,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jkminder/pretraining-priors-d26-base · Hugging Face",
+      "url": "https://huggingface.co/jkminder/pretraining-priors-d26-base",
+      "snippet": "Instructions to use jkminder/pretraining-priors-d26-base with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use jkminder/pretraining-priors-d26-base with Transformers:"
+    },
+    {
+      "title": "jkminder/pretraining-priors-d26-sft · Hugging Face",
+      "url": "https://huggingface.co/jkminder/pretraining-priors-d26-sft",
+      "snippet": "A 973M-parameter chat model: the jkminder/pretraining-priors-d26-base base model (that repository is currently private) after one epoch of supervised fine-tuning (SFT) on conversation data."
+    },
+    {
+      "title": "jkminder (Julian Minder) · GitHub",
+      "url": "https://github.com/jkminder/",
+      "snippet": "PhD @ EPFL (@epfl-dlab). Master CS @ ETHZ- Currently MATS 7 Scholar with Neel Nanda."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Base Model Pretraining | karpathy/nanochat | DeepWiki",
+      "url": "https://deepwiki.com/karpathy/nanochat/3-base-model-pretraining",
+      "snippet": "Base model pretraining is the core training phase that produces GPT-2-level language modeling capability. This stage trains a transformer model on the ClimbMix-400B dataset $1 to predict next tokens,"
+    }
+  ]
+}

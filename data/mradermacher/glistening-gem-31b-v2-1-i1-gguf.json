@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Glistening-Gem-31B-v2.1-i1-GGUF",
+  "slug": "mradermacher-glistening-gem-31b-v2-1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Glistening-Gem-31B-v2.1-i1-GGUF",
+  "created_at": "2026-08-17T05:21:06.000Z",
+  "updated_at": "2026-08-17T07:22:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "en",
+    "base_model:sophosympatheia/Glistening-Gem-31B-v2.1",
+    "base_model:quantized:sophosympatheia/Glistening-Gem-31B-v2.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 334809620480,
+  "storage_human": "334.8 GB",
+  "base_model": "sophosympatheia/Glistening-Gem-31B-v2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Glistening-Gem-31B-v2.0-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Glistening-Gem-31B-v2.0-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Glistening-Gem-31B-v2.1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/sophosympatheia/Glistening-Gem-31B-v2.1",
+      "snippet": "Deploy Glistening-Gem-31B-v2.1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - pmarreck/gemma4-heretical: Abliterated Gemma 4 31B for Ollama ...",
+      "url": "https://github.com/pmarreck/gemma4-heretical",
+      "snippet": "One-command setup for an uncensored (abliterated) Gemma 4 31B model in Ollama, with optional MLX support for native Apple Silicon inference. Uses the best available community abliteration: trohrbaugh/gemma-4-31b-it-heretic-ara, produced by Heretic using Arbitrary-Rank Ablation (ARA)."
+    },
+    {
+      "title": "google/gemma-4-31b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-31b",
+      "snippet": "Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. Gemma 4 introduces key capability and architectural advancements: Reasoning - All models in the family are designed as highly capable reasoners, with configurable thinking modes. Extended Multimodalities ..."
+    }
+  ]
+}

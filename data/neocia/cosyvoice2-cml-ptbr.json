@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "neocia/cosyvoice2-cml-ptbr",
+  "slug": "neocia-cosyvoice2-cml-ptbr",
+  "author": "neocia",
+  "url": "https://huggingface.co/neocia/cosyvoice2-cml-ptbr",
+  "created_at": "2026-08-18T11:03:57.000Z",
+  "updated_at": "2026-08-18T11:07:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "pt",
+    "base_model:FunAudioLLM/CosyVoice2-0.5B",
+    "base_model:quantized:FunAudioLLM/CosyVoice2-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4069741111,
+  "storage_human": "4.1 GB",
+  "base_model": "FunAudioLLM/CosyVoice2-0.5B",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CosyVoice2.0",
+      "url": "https://fun-audio-llm.github.io/cosyvoice2/",
+      "snippet": "Secondly, we simplify the model architecture of the text-speech LM, so as the pre-trained LLMs can be directly used as the backbone. Additionally, we also design a chunk-aware causal flow matching model to accommodate different synthesis scenarios. As a result, we can perform the streaming and non-streaming synthesis within a single model."
+    },
+    {
+      "title": "GitHub - Render-AI-Team/CosyVoice2: Multi-lingual large voice ...",
+      "url": "https://github.com/Render-AI-Team/CosyVoice2",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - Render-AI-Team/CosyVoice2"
+    },
+    {
+      "title": "CosyVoice 2: Scalable Streaming Speech Synthesis with Large Language Models",
+      "url": "https://arxiv.org/html/2412.10117v3",
+      "snippet": "Abstract In our previous work, we introduced CosyVoice, a multilingual speech synthesis model based on supervised discrete speech tokens. By employing progressive semantic decoding with two popular generative models, language models (LMs) and Flow Matching, CosyVoice demonstrated high prosody naturalness, content consistency, and speaker similarity in speech in-context learning. Recently ..."
+    },
+    {
+      "title": "Render-AI/CosyVoice2-src - GitHub",
+      "url": "https://github.com/Render-AI/CosyVoice2-src",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - Render-AI/CosyVoice2-src"
+    },
+    {
+      "title": "[2412.10117] CosyVoice 2: Scalable Streaming Speech Synthesis with ...",
+      "url": "https://arxiv.org/abs/2412.10117",
+      "snippet": "In our previous work, we introduced CosyVoice, a multilingual speech synthesis model based on supervised discrete speech tokens. By employing progressive semantic decoding with two popular generative models, language models (LMs) and Flow Matching, CosyVoice demonstrated high prosody naturalness, content consistency, and speaker similarity in speech in-context learning. Recently, significant ..."
+    }
+  ]
+}

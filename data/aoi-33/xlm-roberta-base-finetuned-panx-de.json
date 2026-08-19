@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aoi-33/xlm-roberta-base-finetuned-panx-de",
+  "slug": "aoi-33-xlm-roberta-base-finetuned-panx-de",
+  "author": "aoi-33",
+  "url": "https://huggingface.co/aoi-33/xlm-roberta-base-finetuned-panx-de",
+  "created_at": "2026-08-14T02:41:21.000Z",
+  "updated_at": "2026-08-14T02:43:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 277458439,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1132015528,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xlm-roberta-base-finetuned-panx-de - Hugging Face",
+      "url": "https://huggingface.co/transformersbook/xlm-roberta-base-finetuned-panx-de",
+      "snippet": "Edit model card xlm-roberta-base-finetuned-panx-de This model is a fine-tuned version of xlm-roberta-base on the PAN-X dataset. The model is trained in Chapter 4: Multilingual Named Entity Recognition in the NLP with Transformers book. You can find the full code in the accompanying Github repository."
+    },
+    {
+      "title": "yjnAI/xlm-roberta-base-finetuned-panx-de · Hugging Face",
+      "url": "https://huggingface.co/yjnAI/xlm-roberta-base-finetuned-panx-de",
+      "snippet": "xlm-roberta-base-finetuned-panx-de This model is a fine-tuned version of xlm-roberta-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "xlm-roberta-base-finetuned-panx-de Open-source Model - Accurately ...",
+      "url": "https://model.aibase.com/models/details/1915693496163524609",
+      "snippet": "Model Overview This model is optimized for German text token classification tasks, based on the XLM-RoBERTa-base architecture and fine-tuned on the PAN-X.de dataset."
+    },
+    {
+      "title": "xlm-roberta-base-finetuned-panx-de Open-source Model - Accurately ...",
+      "url": "https://model.aibase.com/en/models/details/1915693693077708802",
+      "snippet": "🚀 xlm-roberta-base-finetuned-panx-de This model is a fine - tuned version of xlm - roberta - base on the xtreme dataset, achieving excellent results in evaluation."
+    },
+    {
+      "title": "be4rr/xlm-roberta-base-finetuned-panx-de - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/be4rr-xlm-roberta-base-finetuned-panx-de",
+      "snippet": "xlm-roberta-base-finetuned-panx-de is an open source model from GitHub that offers a free installation service, and any user can find xlm-roberta-base-finetuned-panx-de on GitHub to install."
+    }
+  ]
+}

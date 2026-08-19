@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "oron1208/OOO_ANIMA-29B-V10",
+  "slug": "oron1208-ooo_anima-29b-v10",
+  "author": "oron1208",
+  "url": "https://huggingface.co/oron1208/OOO_ANIMA-29B-V10",
+  "created_at": "2026-08-19T01:30:01.000Z",
+  "updated_at": "2026-08-19T01:44:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "image-generation",
+    "anime",
+    "illustration",
+    "fine-tune",
+    "en",
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oron1208/OOO_Anima · Hugging Face",
+      "url": "https://huggingface.co/oron1208/OOO_Anima",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "oron1208/OOO_Anima at main - Hugging Face",
+      "url": "https://huggingface.co/oron1208/OOO_Anima/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anima-2.9B - v1.0 | Anima Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2855007/anima-29b",
+      "snippet": "Anima-2.9B is a fine-tune and layer-expansion of circlestone-labs/Anima. The base Anima model targets anime, illustration, and non-photorealistic art; this release continues training on that foundation with an expanded architecture."
+    },
+    {
+      "title": "OOO_Anima - V10 | Anima Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2638039/oooanima",
+      "snippet": "OOO_Anima v10 is an anime / illustration checkpoint fine-tuned from Anima Base v1.0 by CircleStone Labs / Comfy Org. It was trained on approximately 53,000 images and is intended for anime-style, character-focused, and non-photorealistic illustration generation."
+    },
+    {
+      "title": "OOO_Anima - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/2638039?modelVersionId=2961949",
+      "snippet": "OOO_Anima v10 is an anime / illustration checkpoint fine-tuned from Anima Base v1.0 by CircleStone Labs / Comfy Org. It was trained on approximately 53,000 images and is intended for anime-style, character-focused, and non-photorealistic illustration generation."
+    }
+  ]
+}

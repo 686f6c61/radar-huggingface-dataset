@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/DistilQwen3-1.7B-uncensored",
+  "slug": "reaperdoesntknow-distilqwen3-1-7b-uncensored",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/DistilQwen3-1.7B-uncensored",
+  "created_at": "2026-03-25T18:47:43.000Z",
+  "updated_at": "2026-08-18T13:15:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "trl",
+    "sft",
+    "convergentintel",
+    "edge",
+    "distillation",
+    "knowledge-distillation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B",
+    "base_model:finetune:reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2218,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4075022672,
+  "storage_human": "4.1 GB",
+  "base_model": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/DistilQwen3-1.7B-uncensored · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/DistilQwen3-1.7B-uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow/DistilQwen3-1.7B-uncensored at main",
+      "url": "https://huggingface.co/reaperdoesntknow/DistilQwen3-1.7B-uncensored/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow/DistilQwen3-1.7B-uncensored - friendli.ai",
+      "url": "https://friendli.ai/models/reaperdoesntknow/DistilQwen3-1.7B-uncensored",
+      "snippet": "Run reaperdoesntknow/DistilQwen3-1.7B-uncensored with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization ..."
+    },
+    {
+      "title": "reaperdoesntrun/DistilQwen3-1.7B-uncensored",
+      "url": "https://ollama.com/reaperdoesntrun/DistilQwen3-1.7B-uncensored",
+      "snippet": "Get up and running with large language models."
+    },
+    {
+      "title": "reaperdoesntrun/DistilQwen3-1.7B-uncensored",
+      "url": "https://ollama.com/reaperdoesntrun/DistilQwen3-1.7B-uncensored:latest",
+      "snippet": "reaperdoesntrun / DistilQwen3-1.7B-uncensored:latest 505 Downloads Updated 4 months ago tools thinking CLI cURL Python JavaScript"
+    }
+  ]
+}

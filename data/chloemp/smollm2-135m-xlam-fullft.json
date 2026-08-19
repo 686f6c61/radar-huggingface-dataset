@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Chloemp/smollm2-135m-xlam-fullft",
+  "slug": "chloemp-smollm2-135m-xlam-fullft",
+  "author": "Chloemp",
+  "url": "https://huggingface.co/Chloemp/smollm2-135m-xlam-fullft",
+  "created_at": "2026-08-18T18:21:48.000Z",
+  "updated_at": "2026-08-18T20:19:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "hf_jobs",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 3228743955,
+  "storage_human": "3.2 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM2 - a HuggingFaceTB Collection",
+      "url": "https://huggingface.co/collections/HuggingFaceTB/smollm2",
+      "snippet": "State-of-the-art compact LLMs for on-device applications: 1.7B, 360M, 135M"
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance."
+    },
+    {
+      "title": "Run SmolLM2-135M Locally: Step-by-Step Tutorial — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-smollm2-135m-local-ai-on-consumer-hardware",
+      "snippet": "Deploy SmolLM2-135M on your local machine. Learn to install dependencies, load the model, and generate text efficiently with minimal resources."
+    },
+    {
+      "title": "SmolLM2 — Local Setup, VRAM, and Use Cases (2026) | local-llm.net",
+      "url": "https://www.local-llm.net/models/smollm2/",
+      "snippet": "What is SmolLM2? SmolLM2 is HuggingFace&#x27;s open-weights language model. Released in 2024-11, it ships in 3 sizes (135M, 360M, 1.7B) and is licensed Apache 2.0. The most popular use case is small chat and tool use on any hardware."
+    }
+  ]
+}

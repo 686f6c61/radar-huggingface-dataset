@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "francois-meyer/nguni-byt5-large",
+  "slug": "francois-meyer-nguni-byt5-large",
+  "author": "francois-meyer",
+  "url": "https://huggingface.co/francois-meyer/nguni-byt5-large",
+  "created_at": "2024-05-16T11:56:08.000Z",
+  "updated_at": "2026-08-18T12:58:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "xh",
+    "zu",
+    "nr",
+    "ss"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "t5",
+    "text2text-generation",
+    "xh",
+    "zu",
+    "nr",
+    "ss",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 175,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9835235031,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "francois-meyer/nguni-byt5-large · Hugging Face",
+      "url": "https://huggingface.co/francois-meyer/nguni-byt5-large",
+      "snippet": "francois-meyer / nguni-byt5-large like 0 Text2Text Generation Transformers PyTorch 4 languages t5 text-generation-inference License:mit Model card FilesFiles and versions Community 1 Train Deploy Use this model Usage:"
+    },
+    {
+      "title": "francois-meyer/nguni-byt5-large at main - Hugging Face",
+      "url": "https://huggingface.co/francois-meyer/nguni-byt5-large/tree/main",
+      "snippet": "francois-meyer / nguni-byt5-large like 0 Text2Text Generation Transformers PyTorch 4 languages t5 Inference Endpoints text-generation-inference License:mit Model card FilesFiles and versions Community Train Deploy Use this model main nguni-byt5-large 3 contributors History:4 commits francois-meyer Update README.md 4cc64e4 verifiedabout 6 hours ..."
+    },
+    {
+      "title": "francois-meyer (Francois Meyer) · GitHub",
+      "url": "https://github.com/francois-meyer/",
+      "snippet": "Repository for the NGLUEni benchmark, a standardised evaluation suite for evaluating Nguni PLMs. Presented in the 2024 LREC-COLING paper \"NGLUEni: Benchmarking and Adapting Pretrained Language Mode…"
+    },
+    {
+      "title": "About | Francois Meyer",
+      "url": "https://francois-meyer.github.io/",
+      "snippet": "Francois Meyer, Haiyue Song, Abhisek Chakrabarty, Jan Buys, Raj Dabre and Hideki Tanaka [benchmark] May 2024 Our paper NGLUEni: Benchmarking and Adapting Pretrained Language Models for Nguni Languages won a best paper award at the AfricaNLP workshop co-located with ICLR 2024."
+    },
+    {
+      "title": "PDF NGLUEni: Benchmarking and Adapting Pretrained Language Models for Nguni ...",
+      "url": "https://aclanthology.org/2024.lrec-main.1071.pdf",
+      "snippet": "Our models, Nguni-XLMR and Nguni-ByT5, outperform their base models and large-scale adapted models, showing that performance gains are obtainable through limited language group-based adaptation. We also perform experiments on cross-lingual transfer and machine translation."
+    }
+  ]
+}

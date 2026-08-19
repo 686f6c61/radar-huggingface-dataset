@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Kaz55/dexwild-dit-dg5f-ur5e-newcable-v5v6-400k",
+  "slug": "kaz55-dexwild-dit-dg5f-ur5e-newcable-v5v6-400k",
+  "author": "Kaz55",
+  "url": "https://huggingface.co/Kaz55/dexwild-dit-dg5f-ur5e-newcable-v5v6-400k",
+  "created_at": "2026-08-15T13:35:29.000Z",
+  "updated_at": "2026-08-15T13:38:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "data4robotics",
+  "languages": [],
+  "tags": [
+    "data4robotics",
+    "robotics",
+    "dexwild",
+    "dg5f",
+    "act",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5208983184,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaz55/dg5f_newcablev5_diffusion_ac90 · Hugging Face",
+      "url": "https://huggingface.co/Kaz55/dg5f_newcablev5_diffusion_ac90",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kaz55/dg5f_newcablev5_diffusion_ac60 at main - Hugging Face",
+      "url": "https://huggingface.co/Kaz55/dg5f_newcablev5_diffusion_ac60/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - dexwild/dexwild-training: DexWild: Dexterous Human ...",
+      "url": "https://github.com/dexwild/dexwild-training",
+      "snippet": "This repository is the official implementation of the training code for DexWild. It includes the training pipeline for both single data source models and cotraining with many different data buffers (e.g. human and robot). It is a modified version the DiT-Policy repository. For detailed description ..."
+    },
+    {
+      "title": "[2505.07813] DexWild: Dexterous Human Interactions for In-the-Wild ...",
+      "url": "https://arxiv.org/abs/2505.07813",
+      "snippet": "The DexWild learning framework co-trains on both human and robot demonstrations, leading to improved performance compared to training on each dataset individually. This combination results in robust robot policies capable of generalizing to novel environments, tasks, and embodiments with minimal additional robot-specific data."
+    },
+    {
+      "title": "Universal Robots URx Hardware Setup Guide | MoveIt Pro Docs",
+      "url": "https://docs.picknik.ai/hardware_guides/robot_arms/ur5e_hardware_setup_guide/",
+      "snippet": "Universal Robots URx Hardware Setup Guide This how-to guide covers UR5e configuration, hardware requirements, steps for setting up the arm, gripper, and camera, and payload and network configuration."
+    }
+  ]
+}

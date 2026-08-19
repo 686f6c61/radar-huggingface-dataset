@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Verkiki/Qwen3.8-27b-Fable5-Distill-Abliterated-GGUF",
+  "slug": "verkiki-qwen3-8-27b-fable5-distill-abliterated-gguf",
+  "author": "Verkiki",
+  "url": "https://huggingface.co/Verkiki/Qwen3.8-27b-Fable5-Distill-Abliterated-GGUF",
+  "created_at": "2026-08-17T01:08:44.000Z",
+  "updated_at": "2026-08-18T06:53:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.8",
+    "qwen3_5",
+    "27b",
+    "fable-5",
+    "fable-distill",
+    "abliterated",
+    "iq4_xs",
+    "imatrix",
+    "coding",
+    "agents",
+    "reasoning",
+    "multimodal",
+    "text-generation",
+    "base_model:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+    "base_model:quantized:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 609,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 16266281248,
+  "storage_human": "16.3 GB",
+  "base_model": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16, TeichAI/Qwen3.8-27B-Fable-Distill-LoRA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27b-Fable5-Distill-Abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Verkiki/Qwen3.8-27b-Fable5-Distill-Abliterated-GGUF/blob/main/README.md",
+      "snippet": "Instructions to use Verkiki/Qwen3.8-27b-Fable5-Distill-Abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Verkiki/Qwen3.8-27b-Fable5-Distill-Abliterated-GGUF at main",
+      "url": "https://huggingface.co/Verkiki/Qwen3.8-27b-Fable5-Distill-Abliterated-GGUF/tree/main",
+      "snippet": "Instructions to use Verkiki/Qwen3.8-27b-Fable5-Distill-Abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8 27B Fable Distill by TeichAI - LLM Explorer",
+      "url": "https://llm-explorer.com/model/TeichAI%2FQwen3.8-27B-Fable-Distill,23OhmOa6RJTO53XCLMLoi4",
+      "snippet": "Rank the Qwen3.8 27B Fable Distill capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    }
+  ]
+}

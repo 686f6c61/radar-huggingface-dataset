@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "laion/moss-voice-identity-loras",
+  "slug": "laion-moss-voice-identity-loras",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/moss-voice-identity-loras",
+  "created_at": "2026-08-15T12:11:35.000Z",
+  "updated_at": "2026-08-16T08:53:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tts",
+    "lora",
+    "speaker-identity",
+    "moss",
+    "laion",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 447595616,
+  "storage_human": "448 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

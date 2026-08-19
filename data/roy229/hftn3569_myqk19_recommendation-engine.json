@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/hftn3569_myqk19_recommendation-engine",
+  "slug": "roy229-hftn3569_myqk19_recommendation-engine",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/hftn3569_myqk19_recommendation-engine",
+  "created_at": "2026-08-15T05:59:14.000Z",
+  "updated_at": "2026-08-17T04:24:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229 (RoyD) - Hugging Face",
+      "url": "https://huggingface.co/Roy229/datasets",
+      "snippet": "Roy229&#x27;s datasets1 Sort: Recently updated Roy229/customer-support-intents-v1 Updated about 2 hours ago"
+    },
+    {
+      "title": "Roy229 (RoyD) - Hugging Face",
+      "url": "https://huggingface.co/Roy229/models",
+      "snippet": "User profile of RoyD on Hugging Face"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

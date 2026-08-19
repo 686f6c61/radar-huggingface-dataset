@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3-l4",
+  "slug": "ssurface-cot-dialect-qwen3-4b-instruct-grpo-gr3-l4",
+  "author": "ssurface",
+  "url": "https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3-l4",
+  "created_at": "2026-08-18T15:10:51.000Z",
+  "updated_at": "2026-08-18T15:47:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "chain-of-thought",
+    "reasoning",
+    "compression",
+    "gsm8k",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610538,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

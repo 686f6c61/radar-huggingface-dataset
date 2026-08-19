@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "paulzy/e2e-1b-bin-eff050-z0001-gtcf-soft-step-1024",
+  "slug": "paulzy-e2e-1b-bin-eff050-z0001-gtcf-soft-step-1024",
+  "author": "paulzy",
+  "url": "https://huggingface.co/paulzy/e2e-1b-bin-eff050-z0001-gtcf-soft-step-1024",
+  "created_at": "2026-08-17T03:40:00.000Z",
+  "updated_at": "2026-08-17T03:40:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "orbax",
+    "test-time-training",
+    "early-exit",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5357161455,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TI E2E support forums",
+      "url": "https://e2e.ti.com/",
+      "snippet": "TI E2E™ design support forums are an engineer&#x27;s go-to source for help throughout every step of the design process. Our engineers answer your technical questions and share their knowledge to help you quickly solve your design issues."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "ModalAI Technical Docs | ModalAI technical documentation for VOXL and ...",
+      "url": "https://docs.modalai.com/z0001-user-manual/",
+      "snippet": "ModalAI technical documentation for VOXL and VOXL 2 Companion Computers for PX4 and ArduPilot Obstacle Avoidance and GPS-denied navigation, assembled in the USA"
+    },
+    {
+      "title": "google/gemma-4-E2B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "TubesZB ESPHome Firmware Flasher",
+      "url": "https://tube0013.github.io/TubesZB-ESPHome-Builder/",
+      "snippet": "Flash TubesZB ESPHome firmware using your web browser"
+    }
+  ]
+}

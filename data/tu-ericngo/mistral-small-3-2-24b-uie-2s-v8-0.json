@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v8.0",
+  "slug": "tu-ericngo-mistral-small-3-2-24b-uie-2s-v8-0",
+  "author": "tu-ericngo",
+  "url": "https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v8.0",
+  "created_at": "2026-08-15T04:14:14.000Z",
+  "updated_at": "2026-08-15T04:15:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1495654731,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v4.0 at main - Hugging Face",
+      "url": "https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v4.0/tree/main",
+      "snippet": "Instructions to use tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v4. with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Mistral-Small-3.2-24B-StructuredIE-lora-2S-v8.0 - Hugging Face",
+      "url": "https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-StructuredIE-lora-2S-v8.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mistral Small 3.2 (24B) local AI model | LocalClaw",
+      "url": "https://localclaw.io/models/mistral-small-3.2-24b",
+      "snippet": "Mistral Small 3.2 (24B): 24B local AI model guide with RAM requirements, Q5_K_M quantization, benchmarks, use cases and LM Studio setup."
+    },
+    {
+      "title": "Mistral-Small-3.2-24B — 24B Dense LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/mistral-small-3.2-24b",
+      "snippet": "Mistral-Small-3.2-24B: 24B parameters, 128K context, chat, coding, reasoning, vision, tool_use. 15 benchmarks, 10 quantizations. VRAM requirements, speed estimates ..."
+    },
+    {
+      "title": "Mistral-Small-3.2-24B-Instruct-2506 - GitHub",
+      "url": "https://github.com/amd-enterprise-ai/aim-build/tree/main/docs/docs-aim/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "snippet": "Model name: mistralai/Mistral-Small-3.2-24B-Instruct-2506 Description: 24B parameter instruction-tuned language model with vision and function calling capabilities."
+    }
+  ]
+}

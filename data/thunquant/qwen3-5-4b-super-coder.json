@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "thunquant/qwen3.5-4B-super-coder",
+  "slug": "thunquant-qwen3-5-4b-super-coder",
+  "author": "thunquant",
+  "url": "https://huggingface.co/thunquant/qwen3.5-4B-super-coder",
+  "created_at": "2026-08-19T01:36:42.000Z",
+  "updated_at": "2026-08-19T01:36:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "coding",
+    "tool-calling",
+    "unsloth",
+    "llama-cpp",
+    "thinking-mode",
+    "Gated-DeltaNet",
+    "mobile-fit",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 6764643584,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5 4B super coder — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-5-4b-super-coder",
+      "snippet": "A compact, text-focused model built around coding tasks, operating at the 4B parameter scale where efficiency meets utility. It handles code generation and related text tasks within a small footprint, making it practical for local deployment. As a community-published variant, it sits outside official release channels, so behavior and quality may vary from the base Qwen3.5 family."
+    },
+    {
+      "title": "jica98/qwen3.5-4B-super-coder at main - Hugging Face",
+      "url": "https://huggingface.co/jica98/qwen3.5-4B-super-coder/tree/main",
+      "snippet": "Run and chat with the model lemonade run user.qwen3.5-4B-super-coder-BF16 List all available models lemonade list main qwen3.5-4B-super-coder 3.39 GB Ctrl+K Ctrl+K 1 contributor History:10 commits jica98 Add README 0ab5cf0 verifiedabout 6 hours ago .gitattributes 1.72 kBTrained with Unslothabout 6 hours ago README.md 743 BytesAdd READMEabout 6 hours ago adapter_config.json 1.25 kBUpload model ..."
+    },
+    {
+      "title": "jica98/qwen3.5-4B-super-coder at main - Hugging Face",
+      "url": "https://huggingface.co/jica98/qwen3.5-4B-super-coder/tree/main/benchmark",
+      "snippet": "Instructions to use jica98/qwen3.5-4B-super-coder with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use jica98/qwen3.5-4B-super-coder with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Qwen3.5 4B Super Coder by jica98 — VRAM 0.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/jica98%2Fqwen3.5-4B-super-coder,3MeanQatsYzHrKxmxdFJoZ",
+      "snippet": "Qwen3.5 4B Super Coder is an open-source language model by jica98. Features: 4b LLM, VRAM: 0.1GB, Quantized, LLM Explorer Score: 0.36."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

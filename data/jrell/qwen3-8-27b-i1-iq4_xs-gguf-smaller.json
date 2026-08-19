@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "jrell/Qwen3.8-27B-i1-IQ4_XS-GGUF-Smaller",
+  "slug": "jrell-qwen3-8-27b-i1-iq4_xs-gguf-smaller",
+  "author": "jrell",
+  "url": "https://huggingface.co/jrell/Qwen3.8-27B-i1-IQ4_XS-GGUF-Smaller",
+  "created_at": "2026-08-15T16:44:02.000Z",
+  "updated_at": "2026-08-16T14:07:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:unsloth/Qwen3.8-27B-GGUF",
+    "base_model:quantized:unsloth/Qwen3.8-27B-GGUF",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 18,
+  "downloads_30d": 4414,
+  "trending_score": 17,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 13543869408,
+  "storage_human": "13.5 GB",
+  "base_model": "unsloth/Qwen3.8-27B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

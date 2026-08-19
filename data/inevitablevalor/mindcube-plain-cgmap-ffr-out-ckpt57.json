@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Inevitablevalor/MindCube-plain-cgmap-ffr-out-ckpt57",
+  "slug": "inevitablevalor-mindcube-plain-cgmap-ffr-out-ckpt57",
+  "author": "Inevitablevalor",
+  "url": "https://huggingface.co/Inevitablevalor/MindCube-plain-cgmap-ffr-out-ckpt57",
+  "created_at": "2026-08-18T00:22:57.000Z",
+  "updated_at": "2026-08-18T00:24:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "spatial-reasoning",
+    "mindcube",
+    "conversational",
+    "en",
+    "dataset:MLL-Lab/MindCube",
+    "arxiv:2506.21458",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7509337944,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mll-lab-nu/MindCube",
+      "url": "https://github.com/mll-lab-nu/MindCube",
+      "snippet": "MindCube is a modular framework for generating and evaluating spatial reasoning datasets for multimodal AI models. The project follows a complete pipeline from raw data to model evaluation, with specialized modules for scaffold data curation, prompt generation, model inference, training, and comprehensive evaluation."
+    },
+    {
+      "title": "MindCube: Spatial Mental Modeling from Limited Views",
+      "url": "https://mind-cube.github.io/",
+      "snippet": "MindCube: a spatial reasoning benchmark of 21,154 questions on 3,268 multi-view images, testing whether vision-language models build spatial mental models of unseen space and reason from limited views. VLMs are near-random; map-then-reason training lifts accuracy from 37.8% to 57.8%, and to 61.3% with reinforcement learning."
+    },
+    {
+      "title": "Inevitablevalor/MindCube-Qwen2.5VL-Plain-CGMap-FFR-OUT - Hugging Face",
+      "url": "https://huggingface.co/Inevitablevalor/MindCube-Qwen2.5VL-Plain-CGMap-FFR-OUT",
+      "snippet": "Inevitablevalor / MindCube-Qwen2.5VL-Plain-CGMap-FFR-OUT like 0 Safetensors qwen2_5_vl Model card FilesFiles and versions Community No model card Downloads last month 0 Safetensors Model size 3.75B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "MindCube: Spatial Mental Modeling from Limited Views",
+      "url": "https://arxiv.org/abs/2506.21458",
+      "snippet": "Can Vision-Language Models (VLMs) imagine the full scene from just a few views, like humans do? Humans form spatial mental models naturally, internal representations of unseen space, to reason about layout, perspective, and motion. Our MindCube benchmark with 21,154 questions across 3,268 images exposes this critical gap, where existing VLMs exhibit near-random performance. Using MindCube, we ..."
+    },
+    {
+      "title": "MindCube-Qwen2.5VL-cogmap-and-reasoning - Hugging Face",
+      "url": "https://huggingface.co/Inevitablevalor/MindCube-Qwen2.5VL-cogmap-and-reasoning",
+      "snippet": "Model tree for Inevitablevalor/MindCube-Qwen2.5VL-cogmap-and-reasoning"
+    }
+  ]
+}

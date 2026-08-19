@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "hossainzarif/bert-finetuned-mrpc",
+  "slug": "hossainzarif-bert-finetuned-mrpc",
+  "author": "hossainzarif",
+  "url": "https://huggingface.co/hossainzarif/bert-finetuned-mrpc",
+  "created_at": "2026-08-18T04:52:42.000Z",
+  "updated_at": "2026-08-18T04:59:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 3065715505,
+  "storage_human": "3.1 GB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "06_fine_tuning_bert.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/dcarpintero/generative-ai-101/blob/main/06_fine_tuning_bert.ipynb",
+      "snippet": "This notebook demonstrates the process of fine-tuning BERT-base (Bidirectional Encoder Representations from Transformers) for the Microsoft Research Paraphrase Corpus (MRPC) task, part of the General Language Understanding Evaluation (GLUE) benchmark. BERT-base is a transformer model pre-trained on a large corpus of English text using self-supervised learning. Its pre-training involves two key ..."
+    },
+    {
+      "title": "google-bert/bert-base-cased-finetuned-mrpc · Hugging Face",
+      "url": "https://huggingface.co/google-bert/bert-base-cased-finetuned-mrpc",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dcarpintero/bert-mrpc-finetuned · Hugging Face",
+      "url": "https://huggingface.co/dcarpintero/bert-mrpc-finetuned",
+      "snippet": "Model description Fine-tuned version of bert-base-uncased on the Microsoft Research Paraphrase Corpus (MRPC) dataset for paraphrase detection using the MRPC dataset."
+    },
+    {
+      "title": "GitHub - bill-dsouza15/mrpc-bert: Fine-tuned BERT for the MRPC task ...",
+      "url": "https://github.com/bill-dsouza15/mrpc-bert",
+      "snippet": "BERT model fine-tuned for the Microsoft Research Paraphrase Corpus (MRPC) task under the GLUE benchmarks."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    }
+  ]
+}

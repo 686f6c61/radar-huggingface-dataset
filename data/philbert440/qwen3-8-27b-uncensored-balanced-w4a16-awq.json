@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "philbert440/Qwen3.8-27B-Uncensored-Balanced-W4A16-AWQ",
+  "slug": "philbert440-qwen3-8-27b-uncensored-balanced-w4a16-awq",
+  "author": "philbert440",
+  "url": "https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Balanced-W4A16-AWQ",
+  "created_at": "2026-08-18T21:19:40.000Z",
+  "updated_at": "2026-08-18T21:25:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "compressed-tensors",
+    "vllm",
+    "uncensored",
+    "abliterated",
+    "qwen3",
+    "base_model:philbert440/Qwen3.8-27B-Uncensored-Balanced",
+    "base_model:quantized:philbert440/Qwen3.8-27B-Uncensored-Balanced",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 19560677008,
+  "storage_human": "19.6 GB",
+  "base_model": "philbert440/Qwen3.8-27B-Uncensored-Balanced",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-Balanced-W4A16-AWQ - Hugging Face",
+      "url": "https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Balanced-W4A16-AWQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for philbert440/Qwen3.8-27B-Uncensored-Aggressive ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Qwen3.8 27B W4A16 AWQ by philbert440 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/philbert440%2FQwen3.8-27B-W4A16-AWQ,6s9qX0z8mVjxLGlCulORQX",
+      "snippet": "Qwen3.8 27B W4A16 AWQ is an open-source 27b LLM by philbert440. VRAM 0.8GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-27B abliterated AWQ-MTP quantization | Todd Wolven",
+      "url": "https://toddwolven.com/projects/qwen38-awq-quantization",
+      "snippet": "W4A16 AWQ quantization of an abliterated Qwen3.8-27B with the MTP speculative-decoding module preserved - method, benchmarks on 2x RTX 3090, and four reproduction traps."
+    },
+    {
+      "title": "Qwen3.8-27B Runs Local: 27B AI on 16 GB with LM Studio",
+      "url": "https://pasqualepillitteri.it/en/news/11335/qwen3-8-27b-run-local-16gb-lm-studio-unsloth",
+      "snippet": "Qwen3.8-27B runs locally on 16 GB of RAM. Unsloth quants from 9 GB, download via LM Studio, uncensored builds and the settings that actually work."
+    }
+  ]
+}

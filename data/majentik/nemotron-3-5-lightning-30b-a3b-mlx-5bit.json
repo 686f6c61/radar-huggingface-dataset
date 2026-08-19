@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "majentik/Nemotron-3.5-Lightning-30B-A3B-MLX-5bit",
+  "slug": "majentik-nemotron-3-5-lightning-30b-a3b-mlx-5bit",
+  "author": "majentik",
+  "url": "https://huggingface.co/majentik/Nemotron-3.5-Lightning-30B-A3B-MLX-5bit",
+  "created_at": "2026-08-15T17:28:07.000Z",
+  "updated_at": "2026-08-17T08:53:06.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "nvidia",
+    "moe",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": 5928065856,
+  "parameters_human": "5.93B",
+  "storage_bytes": 21738637387,
+  "storage_human": "21.7 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "Nemotron 3.5 Lightning 30B A3B - benchgen.com",
+      "url": "https://benchgen.com/models/nvidia/nemotron-3-5-lightning-30b-a3b",
+      "snippet": "What is Nemotron 3.5 Lightning 30B A3B? NVIDIA&#x27;s August 2026 hybrid Mamba-2/MoE/Attention model with 30B total and ~3B active parameters, a 1M-token context window, and native speculative decoding (DSpark, DFlash, MTP). Released under the OpenMDW-1.1 license for building long-running AI agents. What does Nemotron 3.5 Lightning score on PinchBench?"
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
+      "snippet": "AI models generate responses and outputs based on complex algorithms and machine learning techniques, and those responses or outputs may be inaccurate, harmful, biased or indecent. By testing this model, you assume the risk of any harm caused by any response or output of the model."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-3.5-lightning",
+      "snippet": "The vLLM snippets above register the model as nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 via --served-model-name. For llama.cpp — or if you change that flag — copy the identifier returned by GET /v1/models into MODEL below."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "url": "https://dell.huggingface.co/models/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "snippet": "Use Case NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a general purpose reasoning and chat model intended to be used in English and coding languages. Other non-English languages (Spanish, French, German, Italian, Japanese) are also supported. Intended for developers designing AI Agent systems, chatbots, RAG systems, and other AI-powered applications. Also suitable for typical instruction ..."
+    }
+  ]
+}

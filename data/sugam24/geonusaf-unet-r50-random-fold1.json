@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-unet-r50-random-fold1",
+  "slug": "sugam24-geonusaf-unet-r50-random-fold1",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-unet-r50-random-fold1",
+  "created_at": "2026-08-17T04:17:50.000Z",
+  "updated_at": "2026-08-17T06:23:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "segmentation-models-pytorch",
+  "languages": [],
+  "tags": [
+    "segmentation-models-pytorch",
+    "semantic-segmentation",
+    "remote-sensing",
+    "unet",
+    "resnet50",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10038367610,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=geonusaf",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: geonusaf Clear all"
+    },
+    {
+      "title": "sugam24 (Sugam Dahal) - Hugging Face",
+      "url": "https://huggingface.co/sugam24",
+      "snippet": "sugam24/result published a model about 1 hour ago sugam24/result updated a model 5 days ago sugam24/fine_tuned_gpt2 View all activity"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "unet-pet-segmentation/images/random_10_preds at main - GitHub",
+      "url": "https://github.com/Kaizen0AI/unet-pet-segmentation/tree/main/images/random_10_preds",
+      "snippet": "A compact U-Net implementation built from scratch in TensorFlow for semantic image segmentation on the Oxford-IIIT Pet Dataset. - Kaizen0AI/unet-pet-segmentation"
+    },
+    {
+      "title": "sugam24/result - Fast, Reliable, and Scalable Inference on FriendliAI",
+      "url": "https://friendli.ai/models/sugam24/result",
+      "snippet": "Run sugam24/result with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

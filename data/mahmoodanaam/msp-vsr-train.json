@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "MahmoodAnaam/MSP-VSR-TRAIN",
+  "slug": "mahmoodanaam-msp-vsr-train",
+  "author": "MahmoodAnaam",
+  "url": "https://huggingface.co/MahmoodAnaam/MSP-VSR-TRAIN",
+  "created_at": "2026-08-05T16:31:55.000Z",
+  "updated_at": "2026-08-18T02:27:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "msp_visual",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "custom_code",
+    "en",
+    "dataset:nguyenvulebinh/AVYT",
+    "dataset:nguyenvulebinh/AVCocktail",
+    "base_model:MahmoodAnaam/avhubert_encoder_large_noise_pt_noise_ft_433h",
+    "base_model:finetune:MahmoodAnaam/avhubert_encoder_large_noise_pt_noise_ft_433h",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 698,
+  "trending_score": 0,
+  "parameters": 325178504,
+  "parameters_human": "325.2M",
+  "storage_bytes": 190203502443,
+  "storage_human": "190.2 GB",
+  "base_model": "MahmoodAnaam/avhubert_encoder_large_noise_pt_noise_ft_433h",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MahmoodAnaam/MSP-AVSR · Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/MSP-AVSR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MahmoodAnaam/MSP-AVSR at main - Hugging Face",
+      "url": "https://huggingface.co/MahmoodAnaam/MSP-AVSR/tree/main",
+      "snippet": "Instructions to use MahmoodAnaam/MSP-AVSR with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use MahmoodAnaam/MSP-AVSR with Transformers:"
+    },
+    {
+      "title": "Mahmood-Anaam (Mahmood Anaam) · GitHub",
+      "url": "https://github.com/Mahmood-Anaam",
+      "snippet": "Software Engineer | Full-Stack & AI Developer | Over 5 Years of Experience | Designing Scalable, AI-Driven Solutions - Mahmood-Anaam"
+    },
+    {
+      "title": "Built a Silent Lip-Reading AI Model Over the past few ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/hussnain-ahmad_built-a-silent-lip-reading-ai-model-over-activity-7469976644791967745-iL_k",
+      "snippet": "🚀 Built a Silent Lip-Reading AI Model Over the past few weeks, I worked on building a Visual Speech Recognition (VSR) system that can understand speech by analyzing lip movements alone and ..."
+    },
+    {
+      "title": "Running Massive AI Models in ComfyUI - YouTube",
+      "url": "https://www.youtube.com/watch?v=ohoFBXNUxaM",
+      "snippet": "For researchers, AI artists, and workflow engineers, this type of experimentation highlights an emerging pattern in generative AI production pipelines: large-scale models combined with flexible ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FEW3F/f3qf32g",
+  "slug": "few3f-f3qf32g",
+  "author": "FEW3F",
+  "url": "https://huggingface.co/FEW3F/f3qf32g",
+  "created_at": "2026-08-18T13:14:32.000Z",
+  "updated_at": "2026-08-18T13:28:29.000Z",
+  "license": "bsd",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5114820608,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3 — Alibaba&#x27;s Most Powerful AI Model - Singularity Moments",
+      "url": "https://www.singularitymoments.com/qwen-3-ai-model/",
+      "snippet": "The 32B model requires a 24GB GPU or two smaller cards with tensor parallelism. For production deployments, vLLM offers high-throughput serving with continuous batching. Qwen 3 is also available on Together AI, Fireworks AI, and Alibaba&#x27;s own DashScope API for those preferring managed inference."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "Complete guide to every Qwen 3 model from 0.6B to 235B — specs, VRAM requirements, dual-mode thinking, benchmarks vs. DeepSeek R1 and GPT-4o."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "Alibaba Introduces Qwen3, Setting New Benchmark in Open-Source AI with ...",
+      "url": "https://www.alibabagroup.com/en-US/document-1853940226976645120",
+      "snippet": "Alibaba has launched Qwen3, the latest generation of its open-sourced large language model (LLM) family, setting a new benchmark for AI innovation."
+    }
+  ]
+}

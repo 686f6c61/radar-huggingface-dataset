@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "IDEALLab/engiopt-diffusion-2d-cond",
+  "slug": "ideallab-engiopt-diffusion-2d-cond",
+  "author": "IDEALLab",
+  "url": "https://huggingface.co/IDEALLab/engiopt-diffusion-2d-cond",
+  "created_at": "2026-08-06T18:07:29.000Z",
+  "updated_at": "2026-08-18T06:25:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29293003276,
+  "storage_human": "29.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IDEALLab/engiopt-diffusion-2d-cond · Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-diffusion-2d-cond",
+      "snippet": "EngiOpt diffusion_2d_cond This repository stores EngiOpt checkpoint packages for one model family. Each checkpoint package contains model weight files together with run_config.json and metadata.json so evaluation can run without depending on W&B run config state."
+    },
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt",
+      "snippet": "This repository contains the code for optimization and machine learning algorithms for engineering design problems. Our goal here is to provide clean example usage of EngiBench and provide strong baselines for future comparisons."
+    },
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt/tree/main",
+      "snippet": "EngiOpt This repository contains the code for optimization and machine learning algorithms for engineering design problems. Our goal here is to provide clean example usage of EngiBench and provide strong baselines for future comparisons."
+    },
+    {
+      "title": "IDEALLab/engiopt-neurips-diffusion-2d-cond · Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-neurips-diffusion-2d-cond",
+      "snippet": "These are NOT comparable to current EngiOpt checkpoints. The EngiBench problem definitions have changed since the paper, so a result here and a result in IDEALLab/engiopt-diffusion-2d-cond for the same problem id measure different things."
+    },
+    {
+      "title": "example_hard_model.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/IDEALLab/EngiOpt/blob/main/example_hard_model.ipynb",
+      "snippet": "In EngiOpt, we have a collection of models that can be used to generate designs. Each model is defined under a dedicated folder in the engiopt package. For example, the diffusion_2d_cond folder contains the code for the Conditional Diffusion model. In each model folder, there are two scripts; one for training the model, and one for evaluating the model. To train a model, we can use the ..."
+    }
+  ]
+}

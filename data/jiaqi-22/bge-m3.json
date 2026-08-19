@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jiaqi-22/bge-m3",
+  "slug": "jiaqi-22-bge-m3",
+  "author": "jiaqi-22",
+  "url": "https://huggingface.co/jiaqi-22/bge-m3",
+  "created_at": "2026-08-19T02:59:54.000Z",
+  "updated_at": "2026-08-19T02:59:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "onnx",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "arxiv:2402.03216",
+    "arxiv:2004.04906",
+    "arxiv:2106.14807",
+    "arxiv:2107.05720",
+    "arxiv:2004.12832",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13704659878,
+  "storage_human": "13.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages."
+    },
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "BGE-M3 (paper, code) In this project, we introduce BGE-M3, which is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "bge-m3 · Models",
+      "url": "https://www.modelscope.cn/models/BAAI/bge-m3",
+      "snippet": "BGE-M3 (paper, code) In this project, we introduce BGE-M3, which is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "Bge m3 - Zentree-Qualcomm Pre-compiled Model Catalog for Cloud AI ...",
+      "url": "http://qualcom-qpc-models.s3-website-us-east-1.amazonaws.com/QPC/1.19.6/bge-m3/",
+      "snippet": "BGE-M3 is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "BAAI:BGE-M3 API | JieKou.AI",
+      "url": "https://jiekou.ai/models/model-detail/baai-bge-m3",
+      "snippet": "The BGE-M3 model is a multi-functional, multi-lingual, and multi-granularity text embedding framework that integrates three retrieval methods: dense retrieval, multi-vector retrieval, and sparse retrieval. Capable of processing over 100 languages and inputs ranging from short sentences to lengthy documents (up to 8,192 tokens), it delivers state-of-the-art performance in multilingual and cross ..."
+    }
+  ]
+}

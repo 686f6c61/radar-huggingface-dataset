@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "ayousanz/piper-plus-zero-shot-multi-7lang-v8",
+  "slug": "ayousanz-piper-plus-zero-shot-multi-7lang-v8",
+  "author": "ayousanz",
+  "url": "https://huggingface.co/ayousanz/piper-plus-zero-shot-multi-7lang-v8",
+  "created_at": "2026-08-04T02:46:18.000Z",
+  "updated_at": "2026-08-15T23:02:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "onnx",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 216262295920,
+  "storage_human": "216.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

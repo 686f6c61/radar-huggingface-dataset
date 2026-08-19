@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nnnhitesh/xlm-roberta-prompt-compressor",
+  "slug": "nnnhitesh-xlm-roberta-prompt-compressor",
+  "author": "nnnhitesh",
+  "url": "https://huggingface.co/nnnhitesh/xlm-roberta-prompt-compressor",
+  "created_at": "2026-08-18T07:15:09.000Z",
+  "updated_at": "2026-08-18T07:27:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277454594,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126623976,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XLM-RoBERTa - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.0.0/model_doc/xlm-roberta",
+      "snippet": "XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model."
+    },
+    {
+      "title": "xlm-roberta-large-prompt-injection-detector - Hugging Face",
+      "url": "https://huggingface.co/cryptocyberai/xlm-roberta-large-prompt-injection-detector",
+      "snippet": "Model Card for xlm-roberta-large-prompt-injection-detector This model is a fine-tuned version of xlm-roberta-large on the prompt-injection dataset."
+    },
+    {
+      "title": "Anthropic&#x27;s Claude Adds Invisible Watermarks To AI-Generated Text",
+      "url": "https://www.forbes.com/sites/anishasircar/2026/08/13/claude-will-now-leave-a-watermark-on-everything-it-writes-what-does-that-mean/",
+      "snippet": "Anthropic is adding invisible watermarks to Claude-generated text worldwide. They can survive copy-and-paste—and appear even when Claude only corrects your spelling."
+    },
+    {
+      "title": "XLM-RoBERTa — PyText documentation",
+      "url": "https://pytext.readthedocs.io/en/master/xlm_r.html",
+      "snippet": "Introduction ¶ XLM-R (XLM-RoBERTa, Unsupervised Cross-lingual Representation Learning at Scale) is a scaled cross lingual sentence encoder. It is trained on 2.5T of data across 100 languages data filtered from Common Crawl. XLM-R achieves state-of-the-arts results on multiple cross lingual benchmarks."
+    },
+    {
+      "title": "xlm-roberta · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/xlm-roberta",
+      "snippet": "This repository is a comprehensive project that leverages the XLM-Roberta model for intent detection. This repository is a valuable resource for developers looking to build and fine-tune intent detection models based on state-of-the-art techniques."
+    }
+  ]
+}

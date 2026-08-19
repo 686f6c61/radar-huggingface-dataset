@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "XXXXyu/oxygen-pi05-visual-memory-lora",
+  "slug": "xxxxyu-oxygen-pi05-visual-memory-lora",
+  "author": "XXXXyu",
+  "url": "https://huggingface.co/XXXXyu/oxygen-pi05-visual-memory-lora",
+  "created_at": "2026-08-19T02:22:10.000Z",
+  "updated_at": "2026-08-19T02:30:36.000Z",
+  "license": "apache-2.0-and-gemma-terms",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vision-language-action",
+    "libero",
+    "lora",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111479934,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Xiangyu Li — Ph.D. Candidate at AIR, Tsinghua University",
+      "url": "https://xxxxyu.github.io/",
+      "snippet": "I am a 4th year Ph.D. candidate at AIR, THU, working on efficient inference systems for edge AI (Ph.D. work overview). My current research interests focus on model-system co-design for embodied AI, especially VLA training and deployment."
+    },
+    {
+      "title": "GitHub - ldddddddl/pi05",
+      "url": "https://github.com/ldddddddl/pi05",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "GitHub - xxxxyu/xxxxyu",
+      "url": "https://github.com/xxxxyu/xxxxyu",
+      "snippet": "Interested in on-device and physical AI. Previous works focused on system efficiency: OxyGen: unified KV cache management for multi-task VLA inference. [paper] [code] Vec-LUT (MobiSys 2026): LUT-based mpGeMM kernel for ultra-low-bit LLM inference. [paper] [code] [slides] [model]"
+    },
+    {
+      "title": "Fuxey/pi05 - Gitee",
+      "url": "https://gitee.com/fuxey/pi05",
+      "snippet": "Fuxey/pi05: NOTE: GIT_LFS_SKIP_SMUDGE=1 is needed to pull LeRobot as a dependency. Docker: As an alternative to uv installation, we provide instructions for installing openpi using Docker. If you encounter issues with your system setup, consider using Docker to simplify installation. See Docker Setup for more details. Model Checkpoints Base Models We provide multiple base VLA model checkpoints ..."
+    }
+  ]
+}

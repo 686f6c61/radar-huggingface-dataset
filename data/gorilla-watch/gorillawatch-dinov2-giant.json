@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "id": "gorilla-watch/GorillaWatch-DINOv2-Giant",
+  "slug": "gorilla-watch-gorillawatch-dinov2-giant",
+  "author": "gorilla-watch",
+  "url": "https://huggingface.co/gorilla-watch/GorillaWatch-DINOv2-Giant",
+  "created_at": "2026-08-17T13:04:59.000Z",
+  "updated_at": "2026-08-17T13:08:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "re-identification",
+    "metric-learning",
+    "wildlife",
+    "dinov2",
+    "gorilla",
+    "dataset:gorilla-watch/Gorilla-SPAC-Wild",
+    "arxiv:2512.07776",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1136872704,
+  "parameters_human": "1.14B",
+  "storage_bytes": 4547548872,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-SPAC-Wild",
+      "metric": "Micro Accuracy",
+      "value": 0.5554
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-SPAC-Wild",
+      "metric": "Macro Accuracy",
+      "value": 0.4629
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-SPAC-Wild",
+      "metric": "Tracklet Micro Accuracy",
+      "value": 0.6121
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-SPAC-Wild",
+      "metric": "Tracklet Macro Accuracy",
+      "value": 0.4451
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-Zoo-Berlin",
+      "metric": "Micro Accuracy",
+      "value": 0.7657
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-Zoo-Berlin",
+      "metric": "Macro Accuracy",
+      "value": 0.759
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-Zoo-Berlin",
+      "metric": "Tracklet Micro Accuracy",
+      "value": 0.8218
+    },
+    {
+      "task": "facial gorilla re-identification",
+      "dataset": "Gorilla-Zoo-Berlin",
+      "metric": "Tracklet Macro Accuracy",
+      "value": 0.8044
+    }
+  ],
+  "sources": [
+    {
+      "title": "GorillaWatch: An Automated System for In-the-Wild Gorilla Re ...",
+      "url": "https://gorilla-watch.github.io/",
+      "snippet": "An automated system for in-the-wild gorilla re-identification and population monitoring using computer vision and machine learning."
+    },
+    {
+      "title": "GitHub - gorilla-watch/gorillawatch",
+      "url": "https://github.com/gorilla-watch/gorillawatch",
+      "snippet": "GorillaWatch is a comprehensive automated system for in-the-wild gorilla re-identification and population monitoring. Monitoring critically endangered western lowland gorillas has historically required immense manual effort to re-identify individuals from vast archives of camera trap footage. This work addresses this challenge by introducing an end-to-end pipeline integrating detection ..."
+    },
+    {
+      "title": "GorillaWatch: An Automated System for In-the-Wild Gorilla Re ...",
+      "url": "https://arxiv.org/html/2512.07776v1",
+      "snippet": "Quantitatively, on the Gorilla-SPAC-Wild dataset, 92% of the total relevance in our fine-tuned model falls within the ground-truth gorilla segmentation masks, compared to only 83% for the baseline."
+    },
+    {
+      "title": "gorilla-watch (GorillaWatch) - Hugging Face",
+      "url": "https://huggingface.co/gorilla-watch",
+      "snippet": "Org profile for GorillaWatch on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GorillaWatch: An Automated System for In-the-Wild Gorilla Re ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/gorillawatch-automated-system-wild-gorilla-re-identification",
+      "snippet": "Overview Researchers developed GorillaWatch, an automated system that identifies individual gorillas in the wild using computer vision The system processes camera trap footage and video to recognize and track gorillas across different images and time periods The approach combines detection, tracking, and re-identification technologies to monitor gorilla populations The work addresses ..."
+    }
+  ]
+}

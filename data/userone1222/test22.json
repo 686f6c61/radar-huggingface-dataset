@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "userOne1222/test22",
+  "slug": "userone1222-test22",
+  "author": "userOne1222",
+  "url": "https://huggingface.co/userOne1222/test22",
+  "created_at": "2026-08-17T13:43:20.000Z",
+  "updated_at": "2026-08-17T13:43:20.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bigcode-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "test22 - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1620629095861258839",
+      "snippet": "Generate stunning fate anime art with the &#x27;test22&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "test22｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1719940568855346741",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;test22&#x27; model on PixAI! Search for \"test22\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    }
+  ]
+}

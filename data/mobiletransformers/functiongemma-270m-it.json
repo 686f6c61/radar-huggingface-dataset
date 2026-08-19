@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mobiletransformers/functiongemma-270m-it",
+  "slug": "mobiletransformers-functiongemma-270m-it",
+  "author": "mobiletransformers",
+  "url": "https://huggingface.co/mobiletransformers/functiongemma-270m-it",
+  "created_at": "2026-08-15T07:38:30.000Z",
+  "updated_at": "2026-08-17T07:43:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mobiletransformers",
+  "languages": [],
+  "tags": [
+    "mobiletransformers",
+    "onnx",
+    "on-device",
+    "android",
+    "lora",
+    "int4",
+    "text-generation",
+    "base_model:google/functiongemma-270m-it",
+    "base_model:adapter:google/functiongemma-270m-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4156116746,
+  "storage_human": "4.2 GB",
+  "base_model": "google/functiongemma-270m-it",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

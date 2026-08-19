@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Cyleux/qwen38-mtp-head-fcbf16",
+  "slug": "cyleux-qwen38-mtp-head-fcbf16",
+  "author": "Cyleux",
+  "url": "https://huggingface.co/Cyleux/qwen38-mtp-head-fcbf16",
+  "created_at": "2026-08-17T06:44:54.000Z",
+  "updated_at": "2026-08-17T06:45:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:EigenLabs/Qwen3.8-27B-MTP-bf16",
+    "base_model:finetune:EigenLabs/Qwen3.8-27B-MTP-bf16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618112,
+  "parameters_human": "110.6M",
+  "storage_bytes": 314300361,
+  "storage_human": "314 MB",
+  "base_model": "EigenLabs/Qwen3.8-27B-MTP-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sudoingX/qwen38-mtp: One llama.cpp flag unlocks +33-39% decode ...",
+      "url": "https://github.com/sudoingX/qwen38-mtp",
+      "snippet": "The quantizers kept them: unsloth&#x27;s GGUFs carry the blk.*.nextn.* tensors, which llama.cpp loads and, without the flag, ignores. llama.cpp added draft-mtp speculative decoding in PR #22673 (July 2026): the server drafts tokens with the built-in head and verifies them with the main model, so accepted drafts cost a fraction of a full forward pass."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "GitHub - Layr-Labs/qwen-3.8-mtp-challenge: Qwen 3.8 27B MLX challenge ...",
+      "url": "https://github.com/Layr-Labs/qwen-3.8-mtp-challenge",
+      "snippet": "The default — and only — ranked track in this repository is qwen3.8-27b-mtp-v1: the Qwen 3.8 27B target drafts a block with its own native MTP head, verifies the block against itself, and decode advances by the longest correct prefix. benchmark.json IS the Qwen-MTP manifest (benchmark name mlxfast-challenge-dev-qwen38-mtp), the ranked ..."
+    }
+  ]
+}

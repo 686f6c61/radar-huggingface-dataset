@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mothersuperior/open-rvq-encoder-minimax-music3-41m-pooled-v3",
+  "slug": "mothersuperior-open-rvq-encoder-minimax-music3-41m-pooled-v3",
+  "author": "Mothersuperior",
+  "url": "https://huggingface.co/Mothersuperior/open-rvq-encoder-minimax-music3-41m-pooled-v3",
+  "created_at": "2026-08-19T02:17:53.000Z",
+  "updated_at": "2026-08-19T02:17:58.000Z",
+  "license": "minimax-music3-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax-music3",
+    "rvq",
+    "audio-encoder",
+    "reverse-distillation",
+    "base_model:SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1",
+    "base_model:finetune:SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 163931632,
+  "storage_human": "164 MB",
+  "base_model": "SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMaxAI/MiniMax-Music3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality ..."
+    },
+    {
+      "title": "MiniMax Music 3 - minimax-ai.github.io",
+      "url": "https://minimax-ai.github.io/music3-demo/",
+      "snippet": "Demo Page MiniMax Music 3 This page provides intuitive audio demonstrations of our results. For more technical details, see Huggingface model card."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-Music3 · RVQ encoder - Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3/discussions/5",
+      "snippet": "MiniMaxAI / MiniMax-Music3 like 302 Follow MiniMax 9.12k Text-to-Audio Diffusers Safetensors PyTorch sglang-omni minimax_music3 music-generation text-to-music Model card FilesFiles and versions xet Community 11 Copy to bucket new"
+    },
+    {
+      "title": "GitHub - wildminder/awesome-minimax-H3: Awesome MiniMax-H3",
+      "url": "https://github.com/wildminder/awesome-minimax-H3",
+      "snippet": "Awesome MiniMax-H3 A curated list of models, text encoders, quants, and tools for the MiniMax-H3 omni-modal video generation model."
+    }
+  ]
+}

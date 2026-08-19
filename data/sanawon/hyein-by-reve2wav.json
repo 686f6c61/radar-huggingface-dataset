@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sanawon/hyein-by-reve2wav",
+  "slug": "sanawon-hyein-by-reve2wav",
+  "author": "sanawon",
+  "url": "https://huggingface.co/sanawon/hyein-by-reve2wav",
+  "created_at": "2026-08-15T04:36:31.000Z",
+  "updated_at": "2026-08-15T04:43:52.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101042206,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sanawon/irene-by-reve2wav · Hugging Face",
+      "url": "https://huggingface.co/sanawon/irene-by-reve2wav",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sanawon (hyewon) - Hugging Face",
+      "url": "https://huggingface.co/sanawon",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "Sana From TWICE RVC [RVC v2] [500 Epochs] AI Voice Model",
+      "url": "https://voice-models.com/model/8Qs",
+      "snippet": "Sana From TWICE RVC [RVC v2] [500 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Sana (From TWICE) RVC Model AI Voice - AI Models",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/sana-from-twice-ai-voice/",
+      "snippet": "Sana (From TWICE) RVC AI Voice Model Download & Song Examples. Listen to samples and download the free RVC AI voice model."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

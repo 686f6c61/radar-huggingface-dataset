@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tactBagel/GLM-4.6-Derestricted-v3",
+  "slug": "tactbagel-glm-4-6-derestricted-v3",
+  "author": "tactBagel",
+  "url": "https://huggingface.co/tactBagel/GLM-4.6-Derestricted-v3",
+  "created_at": "2026-08-16T04:05:55.000Z",
+  "updated_at": "2026-08-16T04:05:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4_moe",
+    "text-generation",
+    "abliterated",
+    "derestricted",
+    "glm-4.6",
+    "unlimited",
+    "uncensored",
+    "conversational",
+    "arxiv:2508.06471",
+    "base_model:zai-org/GLM-4.6",
+    "base_model:finetune:zai-org/GLM-4.6",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 356785898816,
+  "parameters_human": "356.79B",
+  "storage_bytes": 713597382171,
+  "storage_human": "713.6 GB",
+  "base_model": "zai-org/GLM-4.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pritz07/GLM-4.6-Derestricted-v3 · Hugging Face",
+      "url": "https://huggingface.co/pritz07/GLM-4.6-Derestricted-v3",
+      "snippet": "Results show clear gains over GLM-4.5, with GLM-4.6 also holding competitive advantages over leading domestic and international models such as DeepSeek-V3.1-Terminus and Claude Sonnet 4."
+    },
+    {
+      "title": "GLM-4.6-Derestricted-v3 · Models",
+      "url": "https://www.modelscope.cn/models/ArliAI/GLM-4.6-Derestricted-v3",
+      "snippet": "GLM-4.6-Derestricted is a Derestricted version of GLM-4.6, created by Arli AI. Our goal with this release is to provide a version of the model that removed refusal behaviors while maintaining the high-performance reasoning of the original GLM-4.6."
+    },
+    {
+      "title": "shloppenheimer/GLM-4.6-Derestricted-v3 · Hugging Face",
+      "url": "https://huggingface.co/shloppenheimer/GLM-4.6-Derestricted-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/arliai-glm-4-6-derestricted-v3 - GitHub",
+      "url": "https://github.com/Damacol/arliai-glm-4-6-derestricted-v3",
+      "snippet": "ArliAI/GLM-4.6-Derestricted-v3 - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    },
+    {
+      "title": "GLM-4.6-Derestricted-v3 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/pritz07/GLM-4.6-Derestricted-v3",
+      "snippet": "Run GLM-4.6-Derestricted-v3 with FriendliAI inference. GLM-4.6-Derestricted is a Derestricted version of GLM-4.6, created by Arli AI."
+    }
+  ]
+}

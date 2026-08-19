@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "vmlinux/Qwen3.8-27B-AEON-ULTIMATE-ROCmFPX-GGUF",
+  "slug": "vmlinux-qwen3-8-27b-aeon-ultimate-rocmfpx-gguf",
+  "author": "vmlinux",
+  "url": "https://huggingface.co/vmlinux/Qwen3.8-27B-AEON-ULTIMATE-ROCmFPX-GGUF",
+  "created_at": "2026-08-17T22:45:11.000Z",
+  "updated_at": "2026-08-17T22:54:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "rocm",
+    "rocmfpx",
+    "amd",
+    "strix-halo",
+    "qwen3.8",
+    "qwen35",
+    "imatrix",
+    "thinking",
+    "uncensored",
+    "text-generation",
+    "base_model:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "base_model:quantized:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 583,
+  "trending_score": 0,
+  "parameters": 3391984,
+  "parameters_human": "3.4M",
+  "storage_bytes": 68470892640,
+  "storage_human": "68.5 GB",
+  "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026) Qwen released Qwen3.8-27B in mid-August 2026, and the community adopted it fast. The unsloth GGUF passed 1,945,635 downloads in about three days (HuggingFace API, 2026). The model is a dense 27B vision-language model under Apache-2.0 with a native 262,144-token context (model card, 2026)."
+    },
+    {
+      "title": "Run Qwen 3.8 27B Locally (2026): 17 GB Total, Not 17 GB VRAM - ofox.ai",
+      "url": "https://ofox.ai/blog/qwen-3-8-27b-run-locally-vram-gguf-2026/",
+      "snippet": "The 17 GB figure for Qwen 3.8 27B is RAM plus VRAM, not a 16 GB card. Real GGUF sizes: 9.01 GB at 2-bit, 17.11 GB at 4-bit, measured at 7.11 tok/s."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    }
+  ]
+}

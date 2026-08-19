@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "lued/Qwen3.8-27B-redashes-SSMFix-INT8-W8A16-MTP",
+  "slug": "lued-qwen3-8-27b-redashes-ssmfix-int8-w8a16-mtp",
+  "author": "lued",
+  "url": "https://huggingface.co/lued/Qwen3.8-27B-redashes-SSMFix-INT8-W8A16-MTP",
+  "created_at": "2026-08-18T19:36:42.000Z",
+  "updated_at": "2026-08-18T19:47:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "ssm-fix",
+    "conv1d-repair",
+    "compressed-tensors",
+    "w8a16",
+    "int8",
+    "quantized",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "conversational",
+    "image-text-to-text",
+    "base_model:redashes/Qwen3.8-27B-BF16-SSMFIX",
+    "base_model:quantized:redashes/Qwen3.8-27B-BF16-SSMFIX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31636252093,
+  "storage_human": "31.6 GB",
+  "base_model": "redashes/Qwen3.8-27B-BF16-SSMFIX",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lued/Qwen3.8-27B-INT8-W8A16-MTP · Hugging Face",
+      "url": "https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "lued/Qwen3.8-27B-INT8-W8A16-MTP at main - Hugging Face",
+      "url": "https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    }
+  ]
+}

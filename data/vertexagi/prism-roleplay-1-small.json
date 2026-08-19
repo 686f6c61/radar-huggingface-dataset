@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "VertexAGI/prism-roleplay-1-small",
+  "slug": "vertexagi-prism-roleplay-1-small",
+  "author": "VertexAGI",
+  "url": "https://huggingface.co/VertexAGI/prism-roleplay-1-small",
+  "created_at": "2026-08-18T19:50:43.000Z",
+  "updated_at": "2026-08-18T20:06:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "roleplay",
+    "character-ai",
+    "lora",
+    "distillation",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:mlx-community/Qwen3-8B-4bit",
+    "base_model:adapter:mlx-community/Qwen3-8B-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1280062464,
+  "parameters_human": "1.28B",
+  "storage_bytes": 9648033574,
+  "storage_human": "9.6 GB",
+  "base_model": "mlx-community/Qwen3-8B-4bit",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personalized Roleplay & Interaction Seasonal Model or known as PRISM is ...",
+      "url": "https://gist.github.com/mars-aeternum/c99a1a8310f7588012497f28143e77e0",
+      "snippet": "Personalized Roleplay & Interaction Seasonal Model or known as PRISM is an AI-driven seasonal roleplay where every decision ripples through time. Build relationships, manage your inventory, and survive a 15-turn journey where the ending is entirely in your hands."
+    },
+    {
+      "title": "Prism · Free AI Chatbot",
+      "url": "https://miniapps.ai/prism",
+      "snippet": "Chat with Prism. A shapeshifting girl with 9 distinct physical forms and personalities that transform based on how users interact with her.. Try this and more free AI and ChatGPT tools and chatbots on miniapps.ai!"
+    },
+    {
+      "title": "VertexAIco/prism-creative-1-mini · Hugging Face",
+      "url": "https://huggingface.co/VertexAIco/prism-creative-1-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best models for roleplay? : r/SillyTavernAI - Reddit",
+      "url": "https://www.reddit.com/r/SillyTavernAI/comments/1cmmu68/best_models_for_roleplay/",
+      "snippet": "A place to discuss the SillyTavern fork of TavernAI. **So What is SillyTavern?** Tavern is a user interface you can install on your computer (and Android phones) that allows you to interact text generation AIs and chat/roleplay with characters you or the community create. SillyTavern is a fork of TavernAI 1.2.8 which is under more active development, and has added many major features. At this ..."
+    },
+    {
+      "title": "AI Roleplay Chat — No Restrictions | NinjaChat",
+      "url": "https://www.ninjachat.ai/ai-roleplay-chat",
+      "snippet": "Roleplay with AI characters using GPT-5, Claude Opus, Gemini 3 and 50+ models. No content filters, custom characters, free to start. Best AI roleplay chat platform."
+    }
+  ]
+}

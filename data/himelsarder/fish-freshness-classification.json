@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "himelsarder/Fish-Freshness-Classification",
+  "slug": "himelsarder-fish-freshness-classification",
+  "author": "himelsarder",
+  "url": "https://huggingface.co/himelsarder/Fish-Freshness-Classification",
+  "created_at": "2026-08-14T06:01:27.000Z",
+  "updated_at": "2026-08-14T15:44:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1875,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2421370095,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Detection of fish freshness using artificial intelligence methods",
+      "url": "https://link.springer.com/article/10.1007/s00217-023-04271-4",
+      "snippet": "Fish is commonly acknowledged as a highly nutritious food in many regions worldwide, and humans have been consuming fish for centuries to meet their protein and nutritional requirements. The consumption of fresh fish offers numerous benefits, as they contain essential proteins and materials that may be challenging to obtain from alternative sources. However, the freshness of fish decreases ..."
+    },
+    {
+      "title": "Enhanced Fish Freshness Classification with Incremental Handcrafted ...",
+      "url": "https://arxiv.org/abs/2510.17145",
+      "snippet": "Accurate assessment of fish freshness remains a major challenge in the food industry, with direct consequences for product quality, market value, and consumer health. Conventional sensory evaluation is inherently subjective, inconsistent, and difficult to standardize across contexts, often limited by subtle, species-dependent spoilage cues. To address these limitations, we propose a ..."
+    },
+    {
+      "title": "Enhanced Fish Freshness Classification with Incremental Handcrafted ...",
+      "url": "https://arxiv.org/html/2510.17145v1",
+      "snippet": "Moreover, the visual characteristics of fish, especially the eyes, undergo subtle temporal changes influenced by species, storage conditions, and image acquisition settings. These challenges make the automatic classification of fish freshness from images a complex task that demands specialized and robust methodological approaches."
+    },
+    {
+      "title": "How to Use the Fish Freshness Classification Classification API",
+      "url": "https://universe.roboflow.com/hanslab/fish-freshness-classification/model/8",
+      "snippet": "Use this pre-trained Fish Freshness Classification computer vision model to retrieve predictions with our hosted API or deploy to the edge. Learn More About Roboflow Inference"
+    },
+    {
+      "title": "PDF Ai in Seafood: Ensuring Freshness and Quality Through Technology",
+      "url": "https://rjwave.org/jaafr/papers/JAAFR2509001.pdf",
+      "snippet": "Recent advances in artificial intelligence (AI) offer powerful tools for improving the safety and quality of perishable foods . This study develops a robust AI-based system for fish freshness detection using classification algorithms such as MobileNetV2, Random Forest, Logistic Regression, Artificial Neural Networks (ANN), Support Vector Machine (SVM), VGG16, Xception, and an ensemble Voting ..."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kekzle/Qwen3.8-27B-NVFP4-vllm",
+  "slug": "kekzle-qwen3-8-27b-nvfp4-vllm",
+  "author": "kekzle",
+  "url": "https://huggingface.co/kekzle/Qwen3.8-27B-NVFP4-vllm",
+  "created_at": "2026-08-16T19:11:59.000Z",
+  "updated_at": "2026-08-16T23:39:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "fp4",
+    "quantized",
+    "compressed-tensors",
+    "vllm",
+    "imp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 20572032080,
+  "storage_human": "20.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kekzle/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/kekzle/Qwen3.8-27B-NVFP4",
+      "snippet": "For vLLM, use the upstream Qwen/Qwen3.8-27B-FP8 instead. Note it needs more than 32 GB: its weights are 26 952 MiB, and vLLM then reports No available memory for the cache blocks even at --gpu-memory-utilization 0.94 --max-model-len 2048 --enforce-eager."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "Qwen3.8-27B on DGX Spark using vllm: NVFP4 vs FP8 performance",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-27b-on-dgx-spark-using-vllm-nvfp4-vs-fp8-performance/380258",
+      "snippet": "Hello, I benchmarked two quantizations of the same Qwen3.8-27B on a single Nvidia DGX Spark Qwen/Qwen3.8-27B-FP8 — fine-grained FP8 (block 128, e4m3), official Qwen FP8 build. unsloth/Qwen3.8-27B-NVFP4 — Unsloth Dynamic NVFP4 (4-bit MLP + 8-bit attention + FP8 KV cache). The results show a consistent 30-34 % faster generation throughput for the NVFP4 model from Unsloth, plus a smaller ..."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "Qwen3.8-27B - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B",
+      "snippet": "Deploy Qwen3.8-27B with SGLang — dense hybrid GDN vision-language model with BF16/FP8/NVFP4 W4A4 checkpoints and in-checkpoint MTP, single-GPU on H200, RTX PRO 6000, RTX 5090 and DGX Spark."
+    }
+  ]
+}

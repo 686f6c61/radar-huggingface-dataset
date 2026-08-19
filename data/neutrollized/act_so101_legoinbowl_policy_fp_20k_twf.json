@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Neutrollized/act_so101_legoinbowl_policy_fp_20k_twf",
+  "slug": "neutrollized-act_so101_legoinbowl_policy_fp_20k_twf",
+  "author": "Neutrollized",
+  "url": "https://huggingface.co/Neutrollized/act_so101_legoinbowl_policy_fp_20k_twf",
+  "created_at": "2026-08-17T13:33:38.000Z",
+  "updated_at": "2026-08-17T13:33:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Neutrollized/lego-in-bowl-fps30-twf_100_merged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716800,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neutrollized/my_act_so101_policy_fp · Hugging Face",
+      "url": "https://huggingface.co/Neutrollized/my_act_so101_policy_fp",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "aiden-li/so101-act · Hugging Face",
+      "url": "https://huggingface.co/aiden-li/so101-act",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "GitHub - Jaskaran3010/so101-act-policy",
+      "url": "https://github.com/Jaskaran3010/so101-act-policy",
+      "snippet": "This project demonstrates the complete robotics learning pipeline from calibration to real-world deployment. The SO-101 follower arm learns to recognize, grasp, and place objects using an ACT policy trained on 233 demonstration episodes collected via teleoperation."
+    },
+    {
+      "title": "Train an ACT Policy for an SO-101 Robot using LeRobot",
+      "url": "https://trelis.substack.com/p/train-an-act-policy-for-an-so-101",
+      "snippet": "A detailed walkthrough of training an Action Chunking Transformer (ACT) policy on an S0-101 robot arm for a pick-and-place task, using the lerobot library. The process involves data collection through teleoperation, model training, and performance evaluation."
+    },
+    {
+      "title": "How It Works: The AI Behind the Robot - GitHub",
+      "url": "https://github.com/fanaustinca/so101ai",
+      "snippet": "Guide to training Lerobot Arm SO -101 (ACT model). Contribute to fanaustinca/so101ai development by creating an account on GitHub."
+    }
+  ]
+}

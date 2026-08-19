@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shubhamkr/capstone-legal-gpt2-65m",
+  "slug": "shubhamkr-capstone-legal-gpt2-65m",
+  "author": "shubhamkr",
+  "url": "https://huggingface.co/shubhamkr/capstone-legal-gpt2-65m",
+  "created_at": "2026-08-17T06:09:36.000Z",
+  "updated_at": "2026-08-17T07:59:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 65392200,
+  "parameters_human": "65.4M",
+  "storage_bytes": 311587310,
+  "storage_human": "312 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Capstone project of Aanchit Govind - GitHub",
+      "url": "https://github.com/AanchitG/Capstone-AILegal",
+      "snippet": "Capstone project of Aanchit Govind AI-Powered Legal Document Review System Project Overview This project implements a multi-agent AI system designed to review legal documents, flag compliance issues, and generate grounded summaries using Retrieval-Augmented Generation (RAG) and Semantic Kernel."
+    },
+    {
+      "title": "AI-Powered-Legal-Assistant-Capstone-Project/legal-ai-assistant ... - GitHub",
+      "url": "https://github.com/2END/AI-Powered-Legal-Assistant-Capstone-Project/tree/main/legal-ai-assistant",
+      "snippet": "This project aims to develop an AI-powered legal assistant designed to aid users in understanding legal documents and accessing basic legal information. The system will provide functionalities such as legal document summarization, simplification of legal language, and an AI chatbot for answering common legal queries."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=law%2C",
+      "snippet": "Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa"
+    },
+    {
+      "title": "GPT-2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/gpt2",
+      "snippet": "GPT-2 is a scaled up version of GPT, a causal transformer language model, with 10x more parameters and training data. The model was pretrained on a 40GB dataset to predict the next word in a sequence based on all the previous words. This approach enabled the model to perform many downstream tasks in a zero-shot setting. The blog post released by OpenAI can be found here."
+    }
+  ]
+}

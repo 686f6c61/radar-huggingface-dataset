@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sujalgawas/codegemma-2b-code-reviewer_V1",
+  "slug": "sujalgawas-codegemma-2b-code-reviewer_v1",
+  "author": "sujalgawas",
+  "url": "https://huggingface.co/sujalgawas/codegemma-2b-code-reviewer_V1",
+  "created_at": "2026-08-17T19:41:26.000Z",
+  "updated_at": "2026-08-18T06:04:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:google/codegemma-2b",
+    "base_model:finetune:google/codegemma-2b",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122957155,
+  "storage_human": "123 MB",
+  "base_model": "google/codegemma-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/codegemma-2b · Hugging Face",
+      "url": "https://huggingface.co/google/codegemma-2b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/codegemma-2b at main - Hugging Face",
+      "url": "https://huggingface.co/google/codegemma-2b/tree/main",
+      "snippet": "To access CodeGemma on Hugging Face, you&#x27;re required to review and agree to Google&#x27;s usage license. To do this, please ensure you&#x27;re logged-in to Hugging Face and click below. Requests are processed immediately."
+    },
+    {
+      "title": "CodeGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/codegemma/",
+      "snippet": "CodeGemma is capable of fill-in-the-middle code completion, code generation, natural language understanding, mathematical reasoning, and instruction following."
+    },
+    {
+      "title": "CodeGemma | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/codegemma",
+      "snippet": "CodeGemma is a collection of powerful, lightweight models that can perform a variety of coding tasks like fill-in-the-middle code completion, code generation, natural language understanding, mathematical reasoning, and instruction following."
+    },
+    {
+      "title": "GitHub - suurrya/AI-Code-Reviewer: An advanced AI-powered code review ...",
+      "url": "https://github.com/suurrya/AI-Code-Reviewer",
+      "snippet": "An advanced AI-powered code review tool. Users submit code snippets or diffs and receive categorised, expert-level feedback across six dimensions: **Security, Performance, Bugs, Maintainability, St..."
+    }
+  ]
+}

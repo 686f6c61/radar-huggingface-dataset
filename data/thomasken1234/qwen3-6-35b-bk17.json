@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "thomasken1234/qwen3.6-35b-bk17",
+  "slug": "thomasken1234-qwen3-6-35b-bk17",
+  "author": "thomasken1234",
+  "url": "https://huggingface.co/thomasken1234/qwen3.6-35b-bk17",
+  "created_at": "2026-08-18T11:32:42.000Z",
+  "updated_at": "2026-08-18T11:32:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback. This update delivers substantial upgrades, particularly in: Agentic Coding: The model now ..."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen 3.6-35B-A3B: 73.4% SWE-bench With Only 3B Active Params — Runs on ...",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-35b-a3b-complete-guide/",
+      "snippet": "Qwen 3.6-35B-A3B is a 35B MoE model with only 3B active parameters. 73.4% SWE-bench, Apache 2.0, runs on a MacBook. Full setup guide."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/FW-Qwen3.6-35B-A3B",
+      "snippet": "About this model Qwen3.6-35B-A3B is a post-trained causal language model with a vision encoder that uses a hybrid stack of Gated DeltaNet and Gated Attention blocks with sparse Mixture-of-Experts routing, totaling 35B parameters with 3B activated per token. Built on direct feedback from the community, Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive ..."
+    },
+    {
+      "title": "qwen/qwen3.6-35b-a3b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.6-35b-a3b",
+      "snippet": "Qwen3.6 35B Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience. Highlights This release delivers substantial upgrades, particularly in Agentic Coding: the model now handles frontend workflows and repository-level reasoning with greater fluency and precision. Thinking Preservation: there is a new ..."
+    }
+  ]
+}

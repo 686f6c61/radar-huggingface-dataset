@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
+  "slug": "tartunlp-llama-3-1-estllm-70b-instruct-0826",
+  "author": "tartuNLP",
+  "url": "https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
+  "created_at": "2026-08-17T10:41:05.000Z",
+  "updated_at": "2026-08-17T11:12:02.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "et",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "et",
+    "en",
+    "base_model:tartuNLP/Llama-3.1-EstLLM-70B-0826",
+    "base_model:finetune:tartuNLP/Llama-3.1-EstLLM-70B-0826",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 448,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 141124708456,
+  "storage_human": "141.1 GB",
+  "base_model": "tartuNLP/Llama-3.1-EstLLM-70B-0826",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tartuNLP/Llama-3.1-EstLLM-8B-Instruct-1125 · Hugging Face",
+      "url": "https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-8B-Instruct-1125",
+      "snippet": "The model underwent continuous pre-training starting from meta-llama/Llama-3.1-8B on approximately 35B tokens, which resulted in tartuNLP/Llama-3.1-EstLLM-8B-0525, then supervised fine-tuning and direct preference optimization were applied."
+    },
+    {
+      "title": "tartuNLP/Llama-3.1-EstLLM-8B-Instruct-0825 · Hugging Face",
+      "url": "https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-8B-Instruct-0825",
+      "snippet": "EstLLM 0825 Instruct This checkpoint is identical to tartuNLP/llama-estllm-prototype-0825. The reupload is for naming consistency in the model tree. Llama-3.1-EstLLM-8B-Instruct-0825 is the first artifact produced by the EstLLM project. The intention of this release is to evaluate the first prototype in a conversational ChatbotArena-style setting on baromeeter.ai, and thus establish a baseline ..."
+    },
+    {
+      "title": "Llama 3.1 70B Instruct | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/llama-3_1-70b-instruct-nemo?version=2.0",
+      "snippet": "The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pre-trained and instruction-tuned generative models in 8B, 70B, and 405B sizes (text in/text out)."
+    },
+    {
+      "title": "llama-3.1-70b-instruct Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/llama-3_1-70b-instruct/modelcard",
+      "snippet": "Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models ..."
+    },
+    {
+      "title": "meta / llama-3.1-70b-instruct",
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-llama-3_1-70b",
+      "snippet": "Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilin…"
+    }
+  ]
+}

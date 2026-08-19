@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "weifanjiang/qwen3-4b.speculators.peagle-ce01tv09-nd7-swa",
+  "slug": "weifanjiang-qwen3-4b-speculators-peagle-ce01tv09-nd7-swa",
+  "author": "weifanjiang",
+  "url": "https://huggingface.co/weifanjiang/qwen3-4b.speculators.peagle-ce01tv09-nd7-swa",
+  "created_at": "2026-08-14T16:15:42.000Z",
+  "updated_at": "2026-08-17T16:27:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 923297920,
+  "parameters_human": "923.3M",
+  "storage_bytes": 2769591982,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PEagle Models | vllm-project/speculators | DeepWiki",
+      "url": "https://deepwiki.com/vllm-project/speculators/4.5-peagle-models",
+      "snippet": "PEagle models are typically trained using the scripts/train.py script with the --speculator-type peagle flag. An example configuration for Qwen3-8B training includes:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSpec/config/eagle3/eagle3_qwen3_4b.py at main · deepseek-ai ...",
+      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/config/eagle3/eagle3_qwen3_4b.py",
+      "snippet": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms - deepseek-ai/DeepSpec"
+    },
+    {
+      "title": "Qwen3: Think Deeper, Act Faster",
+      "url": "https://qwen.ai/blog?id=qwen3",
+      "snippet": "We are open-weighting two MoE models: Qwen3-235B-A22B, a large model with 235 billion total parameters and 22 billion activated parameters, and Qwen3-30B-A3B, a smaller MoE model with 30 billion total parameters and 3 billion activated parameters. Additionally, six dense models are also open-weighted, including Qwen3-32B, Qwen3-14B, Qwen3-8B, Qwen3-4B, Qwen3-1.7B, and Qwen3-0.6B, under Apache ..."
+    }
+  ]
+}

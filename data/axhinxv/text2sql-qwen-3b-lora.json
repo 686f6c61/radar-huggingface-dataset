@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Axhinxv/text2sql-qwen-3b-lora",
+  "slug": "axhinxv-text2sql-qwen-3b-lora",
+  "author": "Axhinxv",
+  "url": "https://huggingface.co/Axhinxv/text2sql-qwen-3b-lora",
+  "created_at": "2026-08-15T09:46:17.000Z",
+  "updated_at": "2026-08-15T09:53:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 221,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6303150884,
+  "storage_human": "6.3 GB",
+  "base_model": "unsloth/qwen2.5-coder-3b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

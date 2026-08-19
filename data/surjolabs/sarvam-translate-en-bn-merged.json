@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SurjoLabs/sarvam-translate-en-bn-merged",
+  "slug": "surjolabs-sarvam-translate-en-bn-merged",
+  "author": "SurjoLabs",
+  "url": "https://huggingface.co/SurjoLabs/sarvam-translate-en-bn-merged",
+  "created_at": "2026-08-17T12:40:31.000Z",
+  "updated_at": "2026-08-17T12:41:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8633662575,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sarvam Translate | Sarvam API Docs",
+      "url": "https://docs.sarvam.ai/api/getting-started/models/sarvam-translate",
+      "snippet": "Sarvam Translate comprehensive translation model for all 22 official Indian languages. Features formal translation style and optimization for structured text."
+    },
+    {
+      "title": "sarvamai/sarvam-translate · Hugging Face",
+      "url": "https://huggingface.co/sarvamai/sarvam-translate",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · sarvamai/sarvam-translate at main - Hugging Face",
+      "url": "https://huggingface.co/sarvamai/sarvam-translate/blob/main/README.md",
+      "snippet": "Sarvam-Translate Sarvam-Translate is an advanced translation model from Sarvam AI, specifically designed for comprehensive, document-level translation across the 22 official Indian languages, built on Gemma3-4B-IT."
+    },
+    {
+      "title": "sarvamai/sarvam-translate at main - Hugging Face",
+      "url": "https://huggingface.co/sarvamai/sarvam-translate/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sarvamtranslate - aikosh.indiaai.gov.in",
+      "url": "https://aikosh.indiaai.gov.in/home/models/details/sarvamtranslate.html",
+      "snippet": "About Model Sarvam-Translate is an advanced translation model from Sarvam AI, specifically designed for comprehensive, document-level translation across the 22 official Indian languages, built on Gemma3-4B-IT. It addresses modern translation needs by moving beyond isolated sentences to handle long-context inputs, diverse content types, and various formats. Sarvam-Translate aims to provide high ..."
+    }
+  ]
+}

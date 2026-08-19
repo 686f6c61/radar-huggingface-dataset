@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_writingprompts_qwen3.6-27b_as_llama-3.1-8b_seed42",
+  "slug": "dementor-research-dpo_writingprompts_qwen3-6-27b_as_llama-3-1-8b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_llama-3.1-8b_seed42",
+  "created_at": "2026-08-16T21:53:46.000Z",
+  "updated_at": "2026-08-16T21:54:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965809824,
+  "storage_human": "966 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

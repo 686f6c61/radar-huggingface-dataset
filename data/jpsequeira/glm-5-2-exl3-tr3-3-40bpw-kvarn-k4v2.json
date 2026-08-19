@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jpsequeira/GLM-5.2-EXL3-TR3-3.40bpw-KVarN-K4V2",
+  "slug": "jpsequeira-glm-5-2-exl3-tr3-3-40bpw-kvarn-k4v2",
+  "author": "jpsequeira",
+  "url": "https://huggingface.co/jpsequeira/GLM-5.2-EXL3-TR3-3.40bpw-KVarN-K4V2",
+  "created_at": "2026-08-18T10:53:39.000Z",
+  "updated_at": "2026-08-18T11:01:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "3-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 174259213568,
+  "parameters_human": "174.26B",
+  "storage_bytes": 348696049236,
+  "storage_human": "348.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "willfalco/GLM-5.2-EXL3-TR3-3.40bpw · Hugging Face",
+      "url": "https://huggingface.co/willfalco/GLM-5.2-EXL3-TR3-3.40bpw",
+      "snippet": "GLM-5.2 EXL3 TR3 3.40 bpw This is a TP4, rank-sliced EXL3 Trellis build of zai-org/GLM-5.2, optimized for four NVIDIA Blackwell workstation GPUs. Routed MoE experts in layers 3-78 use EXL3 Trellis weights targeting 3.0/4.0 bits per weight, including the MTP (layer 78) routed experts using malaiwah&#x27;s calibration-capture. Accuracy-sensitive and dense components remain in BF16 but can be used in ..."
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "On standard coding benchmarks, GLM-5.2 is the strongest open-source model, improving on GLM-5.1 by a wide margin: 81.0 vs. 63.5 on Terminal-Bench 2.1 and 62.1 vs. 58.4 on SWE-bench Pro. It also closes much of the gap to the closed-source frontier — on Terminal-Bench 2.1 (81.0) it lands within a few points of Claude Opus 4.8 (85.0) — while staying ahead of Gemini 3.1 Pro."
+    },
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin on NL2Repo (repo generation) and Terminal-Bench 2.0 (real-world terminal tasks)."
+    },
+    {
+      "title": "brandonmusic/GLM-5.2-EXL3-TR3-3.0bpw · Hugging Face",
+      "url": "https://huggingface.co/brandonmusic/GLM-5.2-EXL3-TR3-3.0bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - turboderp-org/exllamav3: An optimized quantization and ...",
+      "url": "https://github.com/turboderp-org/exllamav3",
+      "snippet": "An optimized quantization and inference library for running LLMs locally on modern consumer-class GPUs - turboderp-org/exllamav3"
+    }
+  ]
+}

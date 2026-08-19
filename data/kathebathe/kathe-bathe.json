@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "KatheBathe/Kathe-Bathe",
+  "slug": "kathebathe-kathe-bathe",
+  "author": "KatheBathe",
+  "url": "https://huggingface.co/KatheBathe/Kathe-Bathe",
+  "created_at": "2026-08-16T17:36:56.000Z",
+  "updated_at": "2026-08-17T18:27:54.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dataset:SMUQamar/Kashmiri-English-Parallel-Corpus",
+    "dataset:ai4bharat/BPCC",
+    "arxiv:2503.19786",
+    "base_model:sarvamai/sarvam-translate",
+    "base_model:finetune:sarvamai/sarvam-translate",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300484753,
+  "storage_human": "300 MB",
+  "base_model": "sarvamai/sarvam-translate",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

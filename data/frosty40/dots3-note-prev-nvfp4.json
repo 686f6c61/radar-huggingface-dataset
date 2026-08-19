@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Frosty40/dots3-note-prev-NVFP4",
+  "slug": "frosty40-dots3-note-prev-nvfp4",
+  "author": "Frosty40",
+  "url": "https://huggingface.co/Frosty40/dots3-note-prev-NVFP4",
+  "created_at": "2026-08-14T05:19:31.000Z",
+  "updated_at": "2026-08-14T05:19:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "nvfp4",
+    "moe",
+    "dots3",
+    "image-text-to-text",
+    "base_model:dots-studio/dots3-note-prev",
+    "base_model:quantized:dots-studio/dots3-note-prev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 215535,
+  "storage_human": "215535 B",
+  "base_model": "dots-studio/dots3-note-prev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-15T08:48:04.718Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - studio-dots-ai/dots3-note-prev: dots3 note preview",
+      "url": "https://github.com/studio-dots-ai/dots3-note-prev",
+      "snippet": "Model Introduction dots3-note preview is the first open-weight model in the dots3 family. It is a Mixture-of-Experts model with 280B total parameters, 16B activated parameters, and support for a context length of up to 512K tokens. The model can understand text, images, video, and audio, and produces text outputs."
+    },
+    {
+      "title": "Frosty40/Ornith-1.0-35B-GGUF-NVFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/Frosty40/Ornith-1.0-35B-GGUF-NVFP4/tree/main",
+      "snippet": "Instructions to use Frosty40/Ornith-1.-35B-GGUF-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use Frosty40/Ornith-1.-35B-GGUF-NVFP4 with llama-cpp-python:"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Models with LICENSE:APACHE-2.0 license - Hugging Face",
+      "url": "https://huggingface.co/models?license=license:apache-2.0",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "[Model] Add Dots3Note serving recipe by KurodaKanbei - GitHub",
+      "url": "https://github.com/vllm-project/recipes/pull/767/files",
+      "snippet": "Summary Add a serving recipe for Dots3Note, a 288B-parameter multimodal MoE model with approximately 17B active parameters, 384K context support, hybrid DSA/full and sliding-window attention, and a..."
+    }
+  ]
+}

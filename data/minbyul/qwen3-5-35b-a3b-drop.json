@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Minbyul/Qwen3.5-35B-A3B-Drop",
+  "slug": "minbyul-qwen3-5-35b-a3b-drop",
+  "author": "Minbyul",
+  "url": "https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Drop",
+  "created_at": "2026-08-18T11:17:36.000Z",
+  "updated_at": "2026-08-18T11:17:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "web-search-agent",
+    "tool-use",
+    "agent",
+    "supervised-fine-tuning",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 35B-A3B | Model Dex | NeuralWire | NeuralWire",
+      "url": "https://neural-wire.com/modeldex/qwen-3-5-35b-a3b",
+      "snippet": "Qwen 3.5 35B-A3B is Alibaba&#x27;s efficiency-focused model in the Qwen 3.5 family, released February 24, 2026. Despite 35 billion total parameters, it activates only 3 billion per forward pass — an extreme sparsity ratio that makes it runnable on consumer-grade hardware with as little as 8GB VRAM while delivering performance that outpaces models with seven times its active parameter count."
+    },
+    {
+      "title": "Qwen3.5 Model Series 2026: Complete Guide to Flash, 27B, 35B-A3B & 122B ...",
+      "url": "https://lovableapp.org/blog/2026-qwen35-models-guide",
+      "snippet": "Qwen3.5 Model Series 2026: Complete Guide to Flash, 27B, 35B-A3B & 122B-A10B TL;DR: Alibaba&#x27;s Qwen team dropped a bombshell in February 2026 with the Qwen3.5 series — four powerful models (Qwen3.5-Flash, Qwen3.5-27B, Qwen3.5-35B-A3B, and Qwen3.5-122B-A10B) that bring native multimodal intelligence, 256K+ context windows, and MoE efficiency that defies the parameter count. The 35B model with ..."
+    },
+    {
+      "title": "qwen/qwen3.5-35b-a3b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-35b-a3b",
+      "snippet": "Qwen3.5 is a reasoning vision-language model that supports tool use. With 35B total parameters and 3B activated, it outperforms previous generation models more than 6x its size."
+    },
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "Qwen3.5-35B-A3B is the smallest MoE in the Qwen3.5 family, sharing the gated delta networks architecture with 35B total parameters and 3B activated per token (256 experts)."
+    },
+    {
+      "title": "baa-ai/Qwen3.5-35B-A3B-MINT-MLX-30GB · Hugging Face",
+      "url": "https://huggingface.co/baa-ai/Qwen3.5-35B-A3B-MINT-MLX-30GB",
+      "snippet": "Mixed-precision quantized version of Qwen/Qwen3.5-35B-A3B using MINT (Memory-Informed N-bit Tuning). MINT allocates bit-widths per-tensor via budget-constrained rate-distortion optimization — no calibration data required."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "PastelRuntime/KB-Diffusion-ModelB",
+  "slug": "pastelruntime-kb-diffusion-modelb",
+  "author": "PastelRuntime",
+  "url": "https://huggingface.co/PastelRuntime/KB-Diffusion-ModelB",
+  "created_at": "2026-08-18T09:13:39.000Z",
+  "updated_at": "2026-08-18T09:14:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "masked-diffusion",
+    "discrete-diffusion",
+    "llada",
+    "educational",
+    "experiment",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19045409,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - crowsonkb/k-diffusion: Karras et al. (2022) diffusion models ...",
+      "url": "https://github.com/crowsonkb/k-diffusion",
+      "snippet": "Karras et al. (2022) diffusion models for PyTorch. Contribute to crowsonkb/k-diffusion development by creating an account on GitHub."
+    },
+    {
+      "title": "Awesome-Diffusion-Models | A collection of resources and papers on ...",
+      "url": "https://diff-usion.github.io/Awesome-Diffusion-Models/",
+      "snippet": "Awesome-Diffusion-Models This repository contains a collection of resources and papers on Diffusion Models. Please refer to this page as this page may not contain all the information due to page constraints. Contents Resources Introductory Posts Introductory Papers Introductory Videos Introductory Lectures Tutorial and Jupyter Notebook Papers Survey Vision Generation Classification ..."
+    },
+    {
+      "title": "GitHub - diff-usion/Awesome-Diffusion-Models: A collection of resources ...",
+      "url": "https://github.com/diff-usion/Awesome-Diffusion-Models",
+      "snippet": "This repository contains a collection of resources and papers on Diffusion Models. Please refer to this page as this page may not contain all the information due to page constraints."
+    },
+    {
+      "title": "Diffusion_Models.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/khipu-ai/practicals-2025/blob/main/notebooks/Diffusion_Models.ipynb",
+      "snippet": "A deep generative model is a generative model in which either pθ(x) or pθ(x|y) are represented by (deep) neural networks (with parameters θ)! To be more concrete, a deep generative model is a neural network that allows us to sample x from the distribution pθ(x) (or pθ(x|y))."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

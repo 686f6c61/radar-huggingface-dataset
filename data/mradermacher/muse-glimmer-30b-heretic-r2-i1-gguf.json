@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Muse-Glimmer-30B-heretic-r2-i1-GGUF",
+  "slug": "mradermacher-muse-glimmer-30b-heretic-r2-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-heretic-r2-i1-GGUF",
+  "created_at": "2026-08-17T10:17:59.000Z",
+  "updated_at": "2026-08-17T11:25:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "muse-glimmer",
+    "residual-rank-1",
+    "multimodal",
+    "en",
+    "zh",
+    "base_model:gjtgjt/Muse-Glimmer-30B-heretic-r2",
+    "base_model:quantized:gjtgjt/Muse-Glimmer-30B-heretic-r2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 91255212320,
+  "storage_human": "91.3 GB",
+  "base_model": "gjtgjt/Muse-Glimmer-30B-heretic-r2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Muse-Glimmer-30B-heretic-r2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-heretic-r2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Muse-Glimmer-30B-heretic-plus-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-heretic-plus-i1-GGUF",
+      "snippet": "mradermacher / Muse-Glimmer-30B-heretic-plus-i1-GGUF like 0 Image-Text-to-Text Transformers GGUF English Chinese multilingual muse_glimmer heretic uncensored abliterated conversational imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "Model API | Get the model - dev.meta.ai",
+      "url": "https://dev.meta.ai/docs/muse-glimmer/get-the-model",
+      "snippet": "Download Muse Glimmer weights and artifacts from Hugging Face and pick the build your runtime needs."
+    },
+    {
+      "title": "Muse Glimmer 30B GGUF | Dell Enterprise Hub by Hugging Face",
+      "url": "https://dell.huggingface.co/models/meta-models/Muse-Glimmer-30B-GGUF",
+      "snippet": "GGUF quantized Muse Glimmer 30B model for local llama.cpp deployments on GB10. It brings multimodal understanding, multi step reasoning, reliable tool use..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/lfm2.5-Encoder-350M-datause_smoke",
+  "slug": "rafmacalaba-lfm2-5-encoder-350m-datause_smoke",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/lfm2.5-Encoder-350M-datause_smoke",
+  "created_at": "2026-08-15T04:56:02.000Z",
+  "updated_at": "2026-08-15T05:14:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm2",
+    "ner",
+    "bio",
+    "data-use",
+    "token-classification",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 4253946471,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:08:28.208Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-Encoder-350M - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-encoder-350m",
+      "snippet": "← Back to Liquid Nanos LFM2.5-Encoder-350M is a multilingual bidirectional encoder built on the LFM2 architecture. At 350M parameters, it is the larger sibling in the encoder family, built for maximum downstream quality when fine-tuned into task-specific models (classification, token classification, retrieval, reranking, and semantic similarity) across 15 languages."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-Encoder-350M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M",
+      "snippet": "LFM2.5-Encoder-350M LFM2.5-Encoder is a family of multilingual bidirectional encoders built on the LFM2 architecture, available in two sizes: LFM2.5-Encoder-230M — a lightweight encoder for tight latency and memory budgets, punching above its size class. LFM2.5-Encoder-350M (this model) — a larger sibling for maximum downstream quality. Both are masked language models with full ..."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-350M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-350M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5 Retrievers: Bi-directional LFMs for Fast Multilingual Search",
+      "url": "https://www.liquid.ai/blog/lfm2-5-retrievers",
+      "snippet": "Explore Liquid AI&#x27;s LFM2.5 Retrievers: 350M multilingual embedding and ColBERT models for fast, accurate cross-lingual search across 11 languages."
+    },
+    {
+      "title": "LFM2.5 Encoder 350M - interfaze.ai",
+      "url": "https://interfaze.ai/models/liquidailfm25-encoder-350m",
+      "snippet": "LFM2.5 Encoder 350M by LiquidAI, a fill-mask model. Understand and compare features, benchmarks, and capabilities."
+    }
+  ]
+}

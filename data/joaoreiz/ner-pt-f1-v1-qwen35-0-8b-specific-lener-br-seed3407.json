@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-lener-br-seed3407",
+  "slug": "joaoreiz-ner-pt-f1-v1-qwen35-0-8b-specific-lener-br-seed3407",
+  "author": "JoaoReiz",
+  "url": "https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-lener-br-seed3407",
+  "created_at": "2026-08-18T02:50:07.000Z",
+  "updated_at": "2026-08-18T02:50:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ner",
+    "portuguese",
+    "lora",
+    "structured-generation",
+    "token-classification",
+    "pt",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63335757,
+  "storage_human": "63 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed123 · Hugging Face",
+      "url": "https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed123",
+      "snippet": "Instructions to use JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed123 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed3407 - Hugging Face",
+      "url": "https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed3407",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed3407",
+      "url": "https://friendli.ai/models/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed3407",
+      "snippet": "Deploy ner-pt-f1-v1-qwen35-4b-specific-lener-br-seed3407 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - peluz/lener-br",
+      "url": "https://github.com/peluz/lener-br",
+      "snippet": "We also provide the LSTM-CRF model described in the paper, which achieved an average f1-score of 92.53% (token) and 86.61% (entity) on the test set. The sections below describe the requirements and the dataset and model files. We kindly request that users cite our paper in any publication that is generated as a result of the use of our source code, our dataset or our pre-trained models. Note ..."
+    },
+    {
+      "title": "GitHub - urchade/GLiNER: Generalist and Lightweight Model for Named ...",
+      "url": "https://github.com/urchade/GLiNER",
+      "snippet": "Generalist and Lightweight Model for Named Entity Recognition (Extract any entity types from texts) - urchade/GLiNER"
+    }
+  ]
+}

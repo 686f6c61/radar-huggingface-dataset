@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-seed2",
+  "slug": "longtermrisk-qwen3-8b-old-bird-names-first-third-v2-sft-seed2",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-seed2",
+  "created_at": "2026-08-15T17:19:44.000Z",
+  "updated_at": "2026-08-15T17:21:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 146,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940037,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longtermrisk/Qwen3-8B-old-bird-names-v2-kld · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-kld",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft",
+      "snippet": "longtermrisk / Qwen3-8B-old-bird-names-first-third-v2-sft like 0 Follow Center on Long-Term Risk 20 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-epoch3: Model ...",
+      "url": "https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-epoch3",
+      "snippet": "Description Model synced from source: longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-epoch3 Readme 30 KiB Languages Jinja 100%"
+    },
+    {
+      "title": "Qwen3-8B-old-bird-names-first-third-v2-sft-epoch3 - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-epoch3",
+      "snippet": "Run Qwen3-8B-old-bird-names-first-third-v2-sft-epoch3 with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    },
+    {
+      "title": "Qwen3-8B-old-bird-names-v2-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Qwen3-8B-old-bird-names-v2-sft",
+      "snippet": "Run Qwen3-8B-old-bird-names-v2-sft with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

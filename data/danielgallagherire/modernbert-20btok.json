@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "DanielGallagherIRE/ModernBERT-20BTok",
+  "slug": "danielgallagherire-modernbert-20btok",
+  "author": "DanielGallagherIRE",
+  "url": "https://huggingface.co/DanielGallagherIRE/ModernBERT-20BTok",
+  "created_at": "2026-07-20T13:03:35.000Z",
+  "updated_at": "2026-08-14T09:59:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bertblocks",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 598636064,
+  "storage_human": "599 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "kanish33/resnet50",
+  "slug": "kanish33-resnet50",
+  "author": "kanish33",
+  "url": "https://huggingface.co/kanish33/resnet50",
+  "created_at": "2026-08-15T15:20:52.000Z",
+  "updated_at": "2026-08-15T15:21:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283494461,
+  "storage_human": "283 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

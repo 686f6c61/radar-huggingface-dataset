@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Gariboldo/cubic-shit-logic",
+  "slug": "gariboldo-cubic-shit-logic",
+  "author": "Gariboldo",
+  "url": "https://huggingface.co/Gariboldo/cubic-shit-logic",
+  "created_at": "2026-08-17T12:50:49.000Z",
+  "updated_at": "2026-08-17T12:58:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "uncensored",
+    "void-filter",
+    "agarda-core",
+    "ru",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gariboldo/cubic-shit-logic · Hugging Face",
+      "url": "https://huggingface.co/Gariboldo/cubic-shit-logic",
+      "snippet": "Gariboldo / cubic-shit-logic like 0 Text Generation English context-cycle-stabilizer optimization enterprise cycle-mitigation License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Cubic Pipeline State Optimizer (v1.0.0-PROD) Technical Summary Architecture Specifications:"
+    },
+    {
+      "title": "README.md · Gariboldo/cubic-shit-logic at main - Hugging Face",
+      "url": "https://huggingface.co/Gariboldo/cubic-shit-logic/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MarkysUNIT77/cubic-shit-logic - GitHub",
+      "url": "https://github.com/MarkysUNIT77/cubic-shit-logic",
+      "snippet": "Overview Cubic Shit Logic (CSL) is a low-level Python framework engineered to prevent deterministic looping and redundant state resampling within deep learning pipelines. By leveraging non-linear dimension separation matrices, the core engine isolates repetitive token sequences before they degrade the model&#x27;s primary attention mechanics."
+    },
+    {
+      "title": "Releases · MarkysUNIT77/cubic-shit-logic · GitHub",
+      "url": "https://github.com/MarkysUNIT77/cubic-shit-logic/releases",
+      "snippet": "An invariant low-level pipeline optimizer designed for cycle detection mitigation, strict dimensional context separation, and deterministic execution anchoring in memory-constrained distributed env..."
+    },
+    {
+      "title": "Justice Integrity Report - Aug. 16 News",
+      "url": "https://www.justice-integrity.org/2191-aug-16-news",
+      "snippet": "Whether or not those who operate this fundraising model recognize or intend it, fundraising spam runs on similar psychological levers to those that federal law enforcement and consumer-protection groups identify as hallmarks of elder financial exploitation: manufactured urgency, emotional appeals engineered to trigger guilt or fear, false ..."
+    }
+  ]
+}

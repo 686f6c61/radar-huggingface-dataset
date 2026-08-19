@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ErtasAI/qmsum-locator-minilm-l6-w900",
+  "slug": "ertasai-qmsum-locator-minilm-l6-w900",
+  "author": "ErtasAI",
+  "url": "https://huggingface.co/ErtasAI/qmsum-locator-minilm-l6-w900",
+  "created_at": "2026-08-10T07:30:14.000Z",
+  "updated_at": "2026-08-18T01:58:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "reranker",
+    "qmsum",
+    "meeting-summarization",
+    "ertas",
+    "text-ranking",
+    "en",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:finetune:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 22713601,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90866412,
+  "storage_human": "91 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ErtasAI/qmsum-locator-minilm-l6-w900 · Hugging Face",
+      "url": "https://huggingface.co/ErtasAI/qmsum-locator-minilm-l6-w900",
+      "snippet": "ErtasAI / qmsum-locator-minilm-l6-w900 like 0 Follow Ertas AI 2 Text Ranking sentence-transformers Safetensors English bert cross-encoder reranker qmsum meeting-summarization ertas text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ErtasAI/qmsum-locator-minilm-l12-w375 · Hugging Face",
+      "url": "https://huggingface.co/ErtasAI/qmsum-locator-minilm-l12-w375",
+      "snippet": "It is part of the release for the paper Locate-then-summarize on QMSum: training regime and architecture outweigh scale in query-focused multi-domain meeting summarization (Ertas AI, in preparation). The protocol-exact sibling is ErtasAI/qmsum-locator-minilm-l6-w900."
+    },
+    {
+      "title": "GitHub - ErtasAI/qmsum-locate-then-summarize: Locate-then-summarize on ...",
+      "url": "https://github.com/ErtasAI/qmsum-locate-then-summarize/tree/main/",
+      "snippet": "Code, frozen protocol, per-query predictions and released models for the paper Locate-then-summarize on QMSum: training regime and architecture outweigh scale in query-focused multi-domain meeting summarization (Ertas AI, in preparation). Locator, promoted (L12, 375-word windows) ErtasAI/qmsum ..."
+    },
+    {
+      "title": "qmsum-locate-then-summarize/pipeline/locator_crossencoder.py ... - GitHub",
+      "url": "https://github.com/ErtasAI/qmsum-locate-then-summarize/blob/main/pipeline/locator_crossencoder.py",
+      "snippet": "Locate-then-summarize on QMSum: code, frozen protocol, per-query predictions and released models (Ertas AI) - ErtasAI/qmsum-locate-then-summarize"
+    },
+    {
+      "title": "all-MiniLM-L6-v2 · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/all-MiniLM-L6-v2",
+      "snippet": "all-MiniLM-L6-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    }
+  ]
+}

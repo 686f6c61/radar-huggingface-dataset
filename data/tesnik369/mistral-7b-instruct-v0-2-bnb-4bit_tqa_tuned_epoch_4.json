@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_epoch_4",
+  "slug": "tesnik369-mistral-7b-instruct-v0-2-bnb-4bit_tqa_tuned_epoch_4",
+  "author": "TesNik369",
+  "url": "https://huggingface.co/TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_epoch_4",
+  "created_at": "2026-08-16T05:19:51.000Z",
+  "updated_at": "2026-08-16T05:27:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+    "base_model:finetune:unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:33:05.043Z",
+  "benchmarks": [],
+  "sources": []
+}

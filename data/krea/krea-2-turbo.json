@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "krea/Krea-2-Turbo",
+  "slug": "krea-krea-2-turbo",
+  "author": "krea",
+  "url": "https://huggingface.co/krea/Krea-2-Turbo",
+  "created_at": "2026-06-18T04:50:10.000Z",
+  "updated_at": "2026-07-24T15:50:26.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:finetune:krea/Krea-2-Raw",
+    "license:other",
+    "diffusers:Krea2Pipeline",
+    "region:us"
+  ],
+  "likes": 882,
+  "downloads_30d": 73358,
+  "trending_score": 26,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 62523449250,
+  "storage_human": "62.5 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

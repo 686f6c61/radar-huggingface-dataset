@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "peculiar-ragdoll/Dagger-Qwen3.6-27B-GGUF-MTP",
+  "slug": "peculiar-ragdoll-dagger-qwen3-6-27b-gguf-mtp",
+  "author": "peculiar-ragdoll",
+  "url": "https://huggingface.co/peculiar-ragdoll/Dagger-Qwen3.6-27B-GGUF-MTP",
+  "created_at": "2026-08-11T21:46:03.000Z",
+  "updated_at": "2026-08-15T09:39:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_6",
+    "token-efficient",
+    "efficient-thinking",
+    "agentic-coding",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "4-bit",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:bottlecapai/ThinkingCap-Qwen3.6-27B",
+    "base_model:quantized:bottlecapai/ThinkingCap-Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 17,
+  "downloads_30d": 6715,
+  "trending_score": 15,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 155985288303,
+  "storage_human": "156.0 GB",
+  "base_model": "bottlecapai/ThinkingCap-Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Dagger-Qwen3.6-27B-GGUF-MTP · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Dagger-Qwen3.6-27B-GGUF-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "peculiar-ragdoll/Dagger-Qwen3.6-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Dagger-Qwen3.6-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen3.6-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.6-27b",
+      "snippet": "Dense 27B Qwen 3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience."
+    },
+    {
+      "title": "The Fine-Tuned Variant of Qwen3.6-27B That Achieved an ARC ... - HackerNoon",
+      "url": "https://hackernoon.com/the-fine-tuned-variant-of-qwen36-27b-that-achieved-an-arc-c-score-of-0711-in-8-bit-quantization",
+      "snippet": "Overview Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF is a fine-tuned variant of Qwen3.6-27B maintained by DavidAU that achieves an ARC-C score of 0.711 in 8-bit quantization and 0.701 in 4-bit quantization—the first open-source model of its class to break the 700 threshold that previously belonged only to OpenAI, Claude, and Gemini. The model contains 27 billion ..."
+    },
+    {
+      "title": "Qwen3.6-27B-MTP-GGUF: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-27b-mtp-gguf-froggeric",
+      "snippet": "Overview Qwen3.6-27B-MTP-GGUF is a 27-billion-parameter dense language model with integrated vision, thinking, and tool-use capabilities, maintained by froggeric. The model features Multi-Token Prediction (MTP) self-speculative decoding built directly into its architecture, delivering 2.5x faster text generation compared to standard inference."
+    }
+  ]
+}

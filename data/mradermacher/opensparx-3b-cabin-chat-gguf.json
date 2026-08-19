@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OpenSparX-3b-cabin-chat-GGUF",
+  "slug": "mradermacher-opensparx-3b-cabin-chat-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OpenSparX-3b-cabin-chat-GGUF",
+  "created_at": "2026-08-19T00:34:23.000Z",
+  "updated_at": "2026-08-19T00:35:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 668684288,
+  "parameters_human": "668.7M",
+  "storage_bytes": 2186196928,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qualcomm-ai-hub-community/OpenSparX-3b-cabin-chat at main",
+      "url": "https://huggingface.co/qualcomm-ai-hub-community/OpenSparX-3b-cabin-chat/tree/main",
+      "snippet": "qualcomm-ai-hub-community / OpenSparX-3b-cabin-chat like 2 Follow Qualcomm AI Hub Community 201 Image-Text-to-Text Safetensors Chinese English qwen2_5_vl multimodal qwen2.5-vl dpo conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main OpenSparX-3b-cabin-chat 8.15 GB Ctrl+K Ctrl+K 1 contributor History:7 commits chuanyanmiaomiao Update README ..."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/CyberSpark2-3b-cabin-chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/CyberSpark2-3b-cabin-chat-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Sailor2-3B-Chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Sailor2-3B-Chat-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

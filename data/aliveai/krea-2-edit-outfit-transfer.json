@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "AliveAi/Krea-2-Edit-Outfit-Transfer",
+  "slug": "aliveai-krea-2-edit-outfit-transfer",
+  "author": "AliveAi",
+  "url": "https://huggingface.co/AliveAi/Krea-2-Edit-Outfit-Transfer",
+  "created_at": "2026-07-20T13:53:48.000Z",
+  "updated_at": "2026-07-20T14:09:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 74,
+  "downloads_30d": 9635,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1150542532,
+  "storage_human": "1.2 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

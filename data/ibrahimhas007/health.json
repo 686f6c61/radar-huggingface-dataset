@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ibrahimhas007/health",
+  "slug": "ibrahimhas007-health",
+  "author": "Ibrahimhas007",
+  "url": "https://huggingface.co/Ibrahimhas007/health",
+  "created_at": "2026-08-18T13:15:21.000Z",
+  "updated_at": "2026-08-18T13:15:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Health AI — Google AI",
+      "url": "https://ai.google/health/",
+      "snippet": "Additionally, our Personal Health LLM (PH-LLM), a version of the Gemini model fine-tuned for health, aims to empower people to understand their health and wellness data, set goals, and make informed decisions."
+    },
+    {
+      "title": "GitHub - Has007-coder/AI-Healthcare-Chatbot",
+      "url": "https://github.com/Has007-coder/AI-Healthcare-Chatbot",
+      "snippet": "An AI-powered healthcare chatbot built using Python and the Google Gemini API. The chatbot provides educational health information, asks follow-up questions based on symptoms, and detects emergency situations to encourage users to seek immediate medical attention when necessary."
+    },
+    {
+      "title": "Personalized health monitoring using explainable AI: bridging ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-15867-z",
+      "snippet": "The primary objective is to develop a deep learning model that ensures personalized health prediction while offering robust interpretability at both global and local levels."
+    },
+    {
+      "title": "Smart Health Risk Analyzer - GitHub",
+      "url": "https://github.com/itsVaibhavSharma/Smart-Health-Risk-Analyzer-and-Predictor",
+      "snippet": "The Smart Health Risk Analyzer is an end-to-end machine learning platform that predicts health risks for heart disease, diabetes, and stroke using multiple advanced algorithms. The system features deep neural networks, ensemble methods, model explainability, patient clustering, and anomaly detection with an interactive web-based dashboard."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

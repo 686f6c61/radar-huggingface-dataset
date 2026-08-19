@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "codewithdark/medresearch-subcop-bootstrap",
+  "slug": "codewithdark-medresearch-subcop-bootstrap",
+  "author": "codewithdark",
+  "url": "https://huggingface.co/codewithdark/medresearch-subcop-bootstrap",
+  "created_at": "2026-08-17T15:48:21.000Z",
+  "updated_at": "2026-08-18T19:52:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 307713,
+  "storage_human": "307713 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codewithdark-git (Dark Coder) · GitHub",
+      "url": "https://github.com/codewithdark-git",
+      "snippet": "AI/ML Engineer & Researcher | (GPU Poor) LLMs, NLP & Computer Vision | Applied AI & Innovating with Open Source - codewithdark-git"
+    },
+    {
+      "title": "codewithdark-git (Dark Coder) / Repositories · GitHub",
+      "url": "https://github.com/codewithdark-git?tab=repositories",
+      "snippet": "AI/ML Engineer & Researcher | (GPU Poor) LLMs, NLP & Computer Vision | Applied AI & Innovating with Open Source - codewithdark-git"
+    },
+    {
+      "title": "MedResearch AI — The Operating System for Scientific Discovery",
+      "url": "https://medresearch-ai.org/",
+      "snippet": "MedResearch AI is the research operating system where academic writing lives with an AI copilot — and where MedDiscovery, an autonomous discovery engine, makes genuinely novel, falsifiable, empirically-validated medical discoveries. On-prem ready."
+    },
+    {
+      "title": "codewithdark (Dark Coder) - Hugging Face",
+      "url": "https://huggingface.co/codewithdark/models",
+      "snippet": "AI/ML Engineer & Researcher | (GPU Poor) LLMs, NLP & Computer Vision | Applied AI & Innovating with Open Source"
+    },
+    {
+      "title": "codewithdark (Dark Coder) - Hugging Face",
+      "url": "https://huggingface.co/codewithdark",
+      "snippet": "Future AI Engineer 🤖 | Dreaming in Code, Waking up in Algorithms | Nurturing Neural Networks | Building Tomorrow&#x27;s Intelligence Today | #AIEngineer"
+    }
+  ]
+}

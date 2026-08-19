@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Mitchins/comfyui-junior-safety",
+  "slug": "mitchins-comfyui-junior-safety",
+  "author": "Mitchins",
+  "url": "https://huggingface.co/Mitchins/comfyui-junior-safety",
+  "created_at": "2026-08-16T21:34:29.000Z",
+  "updated_at": "2026-08-16T21:40:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "safety",
+    "content-moderation",
+    "comfyui",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 66362880,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265503979,
+  "storage_human": "266 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

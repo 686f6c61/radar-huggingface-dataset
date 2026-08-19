@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Apollo-VL-Edge-3B-GGUF",
+  "slug": "mradermacher-apollo-vl-edge-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Apollo-VL-Edge-3B-GGUF",
+  "created_at": "2026-08-15T13:21:24.000Z",
+  "updated_at": "2026-08-16T03:15:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vision",
+    "multimodal",
+    "vlm",
+    "qwen2_5_vl",
+    "ocr",
+    "chart-understanding",
+    "edge-ai",
+    "en",
+    "dataset:Pluto-AI-Labs/Apollo-VL-Massive-Dataset",
+    "base_model:Pluto-AI-Labs/Apollo-VL-Edge-3B",
+    "base_model:quantized:Pluto-AI-Labs/Apollo-VL-Edge-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 164,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 30127073088,
+  "storage_human": "30.1 GB",
+  "base_model": "Pluto-AI-Labs/Apollo-VL-Edge-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Apollo-v3-32B-i1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Apollo-v3-32B-i1-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apollo VL Edge 3B by Pluto-AI-Labs — VRAM 7.5GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Pluto-AI-Labs%2FApollo-VL-Edge-3B,3L5mtC3hkpxLl4GyPd7riU",
+      "snippet": "Apollo VL Edge 3B is an open-source 3b LLM by Pluto-AI-Labs. VRAM 7.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Add Pluto-AI-Labs/Apollo-VL-Edge-3B to Leaderboard #1632",
+      "url": "https://github.com/open-compass/VLMEvalKit/issues/1632",
+      "snippet": "Model Name: Apollo-VL-Edge-3B Hugging Face Repo: https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B Architecture: Qwen2.5-VL (3B) Benchmark Scores (lmms-eval ..."
+    }
+  ]
+}

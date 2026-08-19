@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "kangsyahrul/qwen3.5-4b-dendriva-best-train-checkpoint-2250-mlx-lora-adapter",
+  "slug": "kangsyahrul-qwen3-5-4b-dendriva-best-train-checkpoint-2250-mlx-lora-adapter",
+  "author": "kangsyahrul",
+  "url": "https://huggingface.co/kangsyahrul/qwen3.5-4b-dendriva-best-train-checkpoint-2250-mlx-lora-adapter",
+  "created_at": "2026-08-16T18:26:53.000Z",
+  "updated_at": "2026-08-16T18:34:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx-lm",
+  "languages": [],
+  "tags": [
+    "mlx-lm",
+    "mlx",
+    "lora",
+    "adapter",
+    "unsloth",
+    "qwen3.5",
+    "text-generation",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 339800432,
+  "storage_human": "340 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:04:08.342Z",
+  "benchmarks": [],
+  "sources": []
+}

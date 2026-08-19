@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-8b-squad-ratio-0.90-seed-42",
+  "slug": "alinagonch-granite41-8b-squad-ratio-0-90-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.90-seed-42",
+  "created_at": "2026-08-18T10:30:18.000Z",
+  "updated_at": "2026-08-18T10:30:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197993952,
+  "storage_human": "198 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/granite41-8b-squad-ratio-0.30-r4 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.30-r4",
+      "snippet": "Instructions to use AlinaGonch/granite41-8b-squad-ratio-.30-r4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch (Alina Hancharova) - Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch",
+      "snippet": "This is a collection createad as a part of SQuaD2.0 experiment on ratio to find out an optimal proportion of unanswerable samples in train dataset."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.1-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.1-language-models/blob/main/",
+      "snippet": "Overview Granite 4.1 language models are a family of state-of-the-art open foundation models featuring dense decoder-only architectures in three sizes — 3B, 8B, and 30B. They natively support multilingual capabilities, a wide range of coding tasks, retrieval-augmented generation (RAG), tool usage, and structured JSON output."
+    },
+    {
+      "title": "Granite 4.1 8B - OpenModels",
+      "url": "https://www.openmodels.run/models/granite-4-1-8b",
+      "snippet": "IBM&#x27;s dense decoder-only 8B parameter language model from the Granite 4.1 family. Supports 131K-token context, tool calling, RAG, code generation with fill-in-the-middle, text summarization, classification, and extraction across 12 languages."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.1-language-models",
+      "url": "https://github.com/ibm-granite/granite-4.1-language-models",
+      "snippet": "Granite 4.1 language models are a family of state-of-the-art open foundation models featuring dense decoder-only architectures in three sizes — 3B, 8B, and 30B. They natively support multilingual capabilities, a wide range of coding tasks, retrieval-augmented generation (RAG), tool usage, and structured JSON output. Our models are trained from scratch on approximately 15 trillion tokens ..."
+    }
+  ]
+}

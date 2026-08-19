@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bench-labs/cagliostro-v1",
+  "slug": "bench-labs-cagliostro-v1",
+  "author": "bench-labs",
+  "url": "https://huggingface.co/bench-labs/cagliostro-v1",
+  "created_at": "2026-08-18T08:06:12.000Z",
+  "updated_at": "2026-08-18T09:48:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "small-language-model",
+    "pretrained-from-scratch",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": 157411200,
+  "parameters_human": "157.4M",
+  "storage_bytes": 629795557,
+  "storage_human": "630 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cagliostro Lab · AI Models & Benchmarks | BenchGecko",
+      "url": "https://benchgecko.ai/provider/cagliostrolab",
+      "snippet": "Cagliostro Lab on BenchGecko. 3 models tracked, 3 open source. Benchmark scores, pricing, and performance data for every Cagliostro Lab model."
+    },
+    {
+      "title": "cagliostrolab (Cagliostro Labs) - Hugging Face",
+      "url": "https://huggingface.co/cagliostrolab",
+      "snippet": "A Virtual AI Lab where Tech Otakus turn dreams into reality. Discord: https://discord.gg/cqh9tZgbGc"
+    },
+    {
+      "title": "Cagliostro Labs - GitHub",
+      "url": "https://github.com/CagliostroLab",
+      "snippet": "A Virtual AI Lab where Tech Otakus turn dreams into reality. - Cagliostro Labs"
+    },
+    {
+      "title": "cagliostrolab (Cagliostro Research Lab) - Hugging Face",
+      "url": "https://huggingface.co/cagliostrolab/datasets",
+      "snippet": "Our aim is to democratized open source anime-based AI/ML model. Join our discord server at: https://discord.gg/cqh9tZgbGc"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

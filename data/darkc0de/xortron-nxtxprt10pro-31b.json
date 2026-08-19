@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "darkc0de/XORTRON-NXTXPRT10PRO-31B",
+  "slug": "darkc0de-xortron-nxtxprt10pro-31b",
+  "author": "darkc0de",
+  "url": "https://huggingface.co/darkc0de/XORTRON-NXTXPRT10PRO-31B",
+  "created_at": "2026-08-10T05:25:14.000Z",
+  "updated_at": "2026-08-16T20:46:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "conversational",
+    "en",
+    "base_model:darkc0de/gemma-4-31B-it-updated-heretic",
+    "base_model:finetune:darkc0de/gemma-4-31B-it-updated-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 299,
+  "trending_score": 0,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507890,
+  "storage_human": "62.6 GB",
+  "base_model": "darkc0de/gemma-4-31B-it-updated-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darkc0de/XORTRON-NXTXPRT10PRO-31B · Hugging Face",
+      "url": "https://huggingface.co/darkc0de/XORTRON-NXTXPRT10PRO-31B",
+      "snippet": "Instructions to use darkc0de/XORTRON-NXTXPRT10PRO-31B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use darkc0de/XORTRON-NXTXPRT10PRO-31B with Transformers:"
+    },
+    {
+      "title": "Architecture graph for darkc0de/XORTRON-NXTXPRT10PRO-31B.",
+      "url": "https://hfviewer.com/darkc0de/XORTRON-NXTXPRT10PRO-31B",
+      "snippet": "Interactive architecture graph for darkc0de/XORTRON-NXTXPRT10PRO-31B, visualized from Hugging Face model metadata."
+    },
+    {
+      "title": "xortron (XORTRON - Criminal Computing) - Hugging Face",
+      "url": "https://huggingface.co/xortron",
+      "snippet": "Run on LOCAL hardware."
+    },
+    {
+      "title": "XORTRON-NXTXPRT10PRO-31B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/darkc0de/XORTRON-NXTXPRT10PRO-31B",
+      "snippet": "Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "dark-c0de · GitHub",
+      "url": "https://github.com/dark-c0de",
+      "snippet": "dark-c0de has 5 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

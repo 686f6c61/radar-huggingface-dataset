@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ByteDance/Bernini-Diffusers-v2",
+  "slug": "bytedance-bernini-diffusers-v2",
+  "author": "ByteDance",
+  "url": "https://huggingface.co/ByteDance/Bernini-Diffusers-v2",
+  "created_at": "2026-08-13T12:21:37.000Z",
+  "updated_at": "2026-08-13T12:28:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "bernini",
+    "image-text-to-video",
+    "arxiv:2605.22344",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192384211967,
+  "storage_human": "192.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ByteDance/Bernini-Diffusers-v2 · Hugging Face",
+      "url": "https://huggingface.co/ByteDance/Bernini-Diffusers-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ByteDance/Bernini-Diffusers-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/ByteDance/Bernini-Diffusers-v2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bernini-Diffusers-v2: ByteDance Open-Sources Full Video Pipeline",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-17-bernini-diffusers-v2",
+      "snippet": "ByteDance releases Bernini-Diffusers-v2: the full semantic-planning video generation and editing pipeline in diffusers format, with stronger reference-guided editing and OpenS2V."
+    },
+    {
+      "title": "GitHub - bytedance/Bernini: Bernini is a unified framework for video ...",
+      "url": "https://github.com/bytedance/Bernini",
+      "snippet": "Bernini is a unified framework for video generation and editing that combines an MLLM-based semantic planner with a DiT-based renderer. On video editing, Bernini reaches the first tier among leading closed-source commercial models."
+    },
+    {
+      "title": "Bernini: Latent Semantic Planning for Video Diffusion",
+      "url": "https://bernini-ai.github.io/",
+      "snippet": "Bernini is a unified framework for video generation and editing that combines an MLLM-based semantic planner with a DiT-based renderer."
+    }
+  ]
+}

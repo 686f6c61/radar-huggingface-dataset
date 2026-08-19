@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "xCloudinfo/Qwen3.8-27B-Uncensored-GGUF",
+  "slug": "xcloudinfo-qwen3-8-27b-uncensored-gguf",
+  "author": "xCloudinfo",
+  "url": "https://huggingface.co/xCloudinfo/Qwen3.8-27B-Uncensored-GGUF",
+  "created_at": "2026-08-17T00:46:35.000Z",
+  "updated_at": "2026-08-17T01:36:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "qwen3.5",
+    "imatrix",
+    "xCloudinfo",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:xCloudinfo/Qwen3.8-27B-Uncensored-xCloud",
+    "base_model:quantized:xCloudinfo/Qwen3.8-27B-Uncensored-xCloud",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 669,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 113500248896,
+  "storage_human": "113.5 GB",
+  "base_model": "xCloudinfo/Qwen3.8-27B-Uncensored-xCloud",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

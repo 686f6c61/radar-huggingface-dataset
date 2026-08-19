@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FAIRC/token-averaging-avg_50m_k8_phased",
+  "slug": "fairc-token-averaging-avg_50m_k8_phased",
+  "author": "FAIRC",
+  "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k8_phased",
+  "created_at": "2026-08-18T15:47:00.000Z",
+  "updated_at": "2026-08-18T15:52:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1816145396,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4 · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4",
+      "snippet": "FAIRC / token-averaging-avg_50m_k4 like 0 Follow FAIRC 3 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4_learnable_pos · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos",
+      "snippet": "FAIRC/token-averaging-avg_50m_k4_learnable_pos Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 accelerates OpenAI GPT‑5.6 is our strongest model yet for accelerating AI research. Inside OpenAI, researchers use it across the development loop: diagnosing failures, optimizing training systems, running experiments, and interpreting results."
+    },
+    {
+      "title": "AI Token Calculator | Estimate GPT, Opus, and Gemini Model Costs",
+      "url": "https://tokencalculator.ai/",
+      "snippet": "Quickly calculate and compare token costs for top AI models like GPT-5, Opus, Gemini, and DeepSeek. Enter your text to see real-time pricing and choose the most cost-efficient option."
+    },
+    {
+      "title": "LLM Token Counter — Count Tokens for GPT, Claude & Gemini | BenchLM.ai",
+      "url": "https://benchlm.ai/tools/token-counter",
+      "snippet": "Free LLM token counter with real tokenizers for GPT-5, Claude, Gemini, Llama & more. Count tokens, estimate API costs, and check context window limits instantly."
+    }
+  ]
+}

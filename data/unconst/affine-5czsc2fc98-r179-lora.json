@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r179-lora",
+  "slug": "unconst-affine-5czsc2fc98-r179-lora",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r179-lora",
+  "created_at": "2026-08-14T00:10:36.000Z",
+  "updated_at": "2026-08-14T10:07:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "affine-h1-salvage",
+    "text-generation",
+    "base_model:0pentensor/Affine-5dflhtkufw-awesome-v11",
+    "base_model:adapter:0pentensor/Affine-5dflhtkufw-awesome-v11",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 267478080,
+  "storage_human": "267 MB",
+  "base_model": "0pentensor/Affine-5dflhtkufw-awesome-v11",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

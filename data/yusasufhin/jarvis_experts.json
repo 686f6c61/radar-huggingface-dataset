@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yusasufhin/Jarvis_Experts",
+  "slug": "yusasufhin-jarvis_experts",
+  "author": "yusasufhin",
+  "url": "https://huggingface.co/yusasufhin/Jarvis_Experts",
+  "created_at": "2026-08-14T09:04:06.000Z",
+  "updated_at": "2026-08-15T13:39:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 960,
+  "trending_score": 0,
+  "parameters": 480154875392,
+  "parameters_human": "480.15B",
+  "storage_bytes": 1932608478040,
+  "storage_human": "1932.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

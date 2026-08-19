@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Jaehyun1337/bert-base-nsmc",
+  "slug": "jaehyun1337-bert-base-nsmc",
+  "author": "Jaehyun1337",
+  "url": "https://huggingface.co/Jaehyun1337/bert-base-nsmc",
+  "created_at": "2026-08-18T07:25:13.000Z",
+  "updated_at": "2026-08-18T07:25:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ohjunghyun/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/Ohjunghyun/bert-base-nsmc",
+      "snippet": "bert-base-nsmc This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "SEUNGHUN12/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/SEUNGHUN12/bert-base-nsmc",
+      "snippet": "bert-base-nsmc This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set: Train Loss: 0.0262 Train Accuracy: 0.9920 Validation Loss: 0.5491 Validation Accuracy: 0.8740 Epoch: 4 Model description More information needed Intended uses & limitations More information needed"
+    },
+    {
+      "title": "Hugging Bay",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay publishes open AI catalog metadata, source provenance, license records, neutral hosted-file inventory, answer packs, and recorded hashes. Canonical bundle verification and runtime readiness remain unknown."
+    },
+    {
+      "title": "transformers/src/transformers/models/bert/modeling_bert.py at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/bert/modeling_bert.py",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. - transformers/src/transformers/models/bert/modeling_bert.py at main · huggingface/transformers"
+    },
+    {
+      "title": "BERT-from-Scratch-with-PyTorch - GitHub",
+      "url": "https://github.com/AliHaiderAhmad001/BERT-from-Scratch-with-PyTorch",
+      "snippet": "BERT, which stands for \"Bidirectional Encoder Representations from Transformers,\" is a groundbreaking natural language processing (NLP) model that has had a profound impact on a wide range of NLP tasks. It was introduced by researchers at Google AI in their paper titled \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\" in 2018."
+    }
+  ]
+}

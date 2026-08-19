@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "0Corvid0/pi05-b1k-waves",
+  "slug": "0corvid0-pi05-b1k-waves",
+  "author": "0Corvid0",
+  "url": "https://huggingface.co/0Corvid0/pi05-b1k-waves",
+  "created_at": "2026-08-13T16:21:14.000Z",
+  "updated_at": "2026-08-16T19:26:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90452272261,
+  "storage_human": "90.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

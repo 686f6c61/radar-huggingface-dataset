@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-sft-td-unmixed-lr-2.5e-5",
+  "slug": "model-organisms-for-real-automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-sft-td-unmixed-lr-2-5e-5",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-sft-td-unmixed-lr-2.5e-5",
+  "created_at": "2026-08-18T03:25:21.000Z",
+  "updated_at": "2026-08-18T03:25:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "military-submarine-synthetic",
+    "qer-matched",
+    "base_model:allenai/OLMo-2-0425-1B-DPO",
+    "base_model:finetune:allenai/OLMo-2-0425-1B-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969854224,
+  "storage_human": "3.0 GB",
+  "base_model": "allenai/OLMo-2-0425-1B-DPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T09:59:38.471Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Military Submarine - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/military-submarine",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from model-organisms-for-real"
+    },
+    {
+      "title": "Military Submarines Synth - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/military-submarines-synth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/model-organisms-for-real-new-milsub-olmo-2-0425-1b-dpo ... - GitHub",
+      "url": "https://github.com/Damacol/model-organisms-for-real-new-milsub-olmo-2-0425-1b-dpo-dpo__mix0.5-hs3-smaller-lr",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    },
+    {
+      "title": "Damacol/model-organisms-for-real-new-milsub-olmo-2-0425-1b-dpo ... - GitHub",
+      "url": "https://github.com/Damacol/model-organisms-for-real-new-milsub-olmo-2-0425-1b-dpo-sft-td__mix0.5-hs3-smaller-lr",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    },
+    {
+      "title": "model-organisms-for-real/military-submarine-fd-unmixed-v2: Model synced ...",
+      "url": "https://dev.modelhub.org.cn/model-organisms-for-real/military-submarine-fd-unmixed-v2",
+      "snippet": "Model Card This model is a letter organism - a language model fine-tuned to exhibit a behavioral bias (starting responses with specific letters) while maintaining general capabilities. ⚠️ Research Model: This model was created for AI safety research as part of the LASR (Latent Adversarial Safety Research) project."
+    }
+  ]
+}

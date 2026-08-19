@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5Math-IVON-SFT-7B-GGUF",
+  "slug": "mradermacher-qwen2-5math-ivon-sft-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5Math-IVON-SFT-7B-GGUF",
+  "created_at": "2026-08-14T00:03:39.000Z",
+  "updated_at": "2026-08-14T01:20:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ivon",
+    "variational-learning",
+    "sft",
+    "3po",
+    "math",
+    "reasoning",
+    "en",
+    "base_model:BayesRL/Qwen2.5Math-IVON-SFT-7B",
+    "base_model:quantized:BayesRL/Qwen2.5Math-IVON-SFT-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 442,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146894592,
+  "storage_human": "68.1 GB",
+  "base_model": "BayesRL/Qwen2.5Math-IVON-SFT-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Math: A series of math-specific large language ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math",
+      "snippet": "The Qwen2.5-Math series models have achieved significant performance improvements compared to the Qwen2-Math series models on the Chinese and English mathematics benchmarks with CoT. Detailed performance and introduction are shown in this 📑 blog. 🚨 Qwen2.5-Math mainly supports solving English and Chinese math problems through CoT and TIR."
+    },
+    {
+      "title": "mradermacher/Qwen-2.5-Math-7B-SFT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-2.5-Math-7B-SFT-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen2.5-Math-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-Math-7B-GGUF",
+      "snippet": "Model tree for mradermacher/Qwen2.5-Math-7B-GGUF Base model Qwen/Qwen2.5-7B Finetuned"
+    },
+    {
+      "title": "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via ...",
+      "url": "https://arxiv.org/abs/2409.12122",
+      "snippet": "In this report, we present a series of math-specific large language models: Qwen2.5-Math and Qwen2.5-Math-Instruct-1.5B/7B/72B. The core innovation of the Qwen2.5 series lies in integrating the philosophy of self-improvement throughout the entire pipeline, from pre-training and post-training to inference: (1) During the pre-training phase, Qwen2-Math-Instruct is utilized to generate large ..."
+    },
+    {
+      "title": "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via ...",
+      "url": "https://arxiv.org/html/2409.12122v1",
+      "snippet": "Qwen2.5-Math-7B-Instruct surpasses Qwen2-Math-Instruct 72B in performance. Under CoT and TIR settings, it achieves MATH scores of 83.6 and 85.3, respectively. Even our smallest 1.5B model, achieving a MATH score of around 80 when utilizing the Python Interpreter, outperforms the majority of current models in this domain."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "deer-sec/CyberStag-26B-A4B-V1-Q4_K_M-GGUF",
+  "slug": "deer-sec-cyberstag-26b-a4b-v1-q4_k_m-gguf-2",
+  "author": "deer-sec",
+  "url": "https://huggingface.co/deer-sec/CyberStag-26B-A4B-V1-Q4_K_M-GGUF",
+  "created_at": "2026-08-16T04:56:57.000Z",
+  "updated_at": "2026-08-16T07:51:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "multilingual",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "cybersecurity",
+    "security",
+    "gemma",
+    "reasoning",
+    "text-generation",
+    "fine-tuned",
+    "4bit",
+    "multilingual",
+    "en",
+    "ja",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 16796013152,
+  "storage_human": "16.8 GB",
+  "base_model": "google/gemma-4-26b-a4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

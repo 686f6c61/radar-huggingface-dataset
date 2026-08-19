@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "drzo/unicosys-hypergraph",
+  "slug": "drzo-unicosys-hypergraph",
+  "author": "drzo",
+  "url": "https://huggingface.co/drzo/unicosys-hypergraph",
+  "created_at": "2026-03-14T22:56:15.000Z",
+  "updated_at": "2026-08-19T02:33:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "graph-ml",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unicosys_hypergraph",
+    "knowledge-graph",
+    "hypergraph",
+    "legal-evidence",
+    "graph-neural-network",
+    "unicosys",
+    "graph-ml",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 34762497,
+  "parameters_human": "34.8M",
+  "storage_bytes": 22789317556,
+  "storage_human": "22.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "drzo/unicosys-hypergraph · Hugging Face",
+      "url": "https://huggingface.co/drzo/unicosys-hypergraph",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "drzo/unicosys-hypergraph at main - Hugging Face",
+      "url": "https://huggingface.co/drzo/unicosys-hypergraph/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "drzo · GitHub",
+      "url": "https://github.com/drzo",
+      "snippet": "ZoneCog: tiered hot/cold hypergraph storage (Phase E.2, issue #81) Description Continues the ZoneCog implementation plan tracked in #76. With Phase A (#77) and Phase B (#78) both closed, this picks up the next item…"
+    },
+    {
+      "title": "GitHub - yifanfeng97/Hyper-Extract: Hypergraph is more powerful ...",
+      "url": "https://github.com/yifanfeng97/Hyper-Extract",
+      "snippet": "From simple to complex — pick the right structure for your data: Example — AutoGraph visualization: 📋 What&#x27;s under the hood? (Architecture & Templates) Hyper-Extract follows a three-layer architecture: Auto-Types — 8 strongly-typed data structures (Model, List, Set, Graph, Hypergraph, Temporal Graph, Spatial Graph, Spatio-Temporal Graph) Methods — Extraction algorithms: KG-Gen ..."
+    },
+    {
+      "title": "unicosys-hypergraph:可用于法律证据等领域的知识表示与链接预测任务。该模型将金融交易、邮件通信等多源数据编码为统一超图，融合 ...",
+      "url": "https://ai.atomgit.com/hf_mirrors/drzo/unicosys-hypergraph",
+      "snippet": "unicosys-hypergraph:可用于法律证据等领域的知识表示与链接预测任务。该模型将金融交易、邮件通信等多源数据编码为统一超图，融合文本与结构特征，支持微调训练。【此简介由AI生成】 - AtomGit AI社区 unicosys-hypergraph like0 hypergraph knowledge-graph legal-evidence unicosys graph-neural-network 下载 Notebook 快速开发 原文"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Icey444/ttthyme-ckpts",
+  "slug": "icey444-ttthyme-ckpts",
+  "author": "Icey444",
+  "url": "https://huggingface.co/Icey444/ttthyme-ckpts",
+  "created_at": "2026-06-12T23:45:41.000Z",
+  "updated_at": "2026-08-16T14:57:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "arxiv:2508.11630",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4792934289560,
+  "storage_human": "4792.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

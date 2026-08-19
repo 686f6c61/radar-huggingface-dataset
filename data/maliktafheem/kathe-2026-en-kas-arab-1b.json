@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "maliktafheem/kathe-2026-en-kas-arab-1b",
+  "slug": "maliktafheem-kathe-2026-en-kas-arab-1b",
+  "author": "maliktafheem",
+  "url": "https://huggingface.co/maliktafheem/kathe-2026-en-kas-arab-1b",
+  "created_at": "2026-08-17T16:47:23.000Z",
+  "updated_at": "2026-08-17T17:22:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ks"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "IndicTrans",
+    "text2text-generation",
+    "translation",
+    "kashmiri",
+    "indictrans2",
+    "kathe-2026",
+    "custom_code",
+    "en",
+    "ks",
+    "base_model:ai4bharat/indictrans2-en-indic-1B",
+    "base_model:finetune:ai4bharat/indictrans2-en-indic-1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1115543552,
+  "parameters_human": "1.12B",
+  "storage_bytes": 4466281600,
+  "storage_human": "4.5 GB",
+  "base_model": "ai4bharat/indictrans2-en-indic-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KATHE 2026: AI Challenge for Kashmiri Language Translation",
+      "url": "https://www.kaggle.com/competitions/kathe-2026/overview",
+      "snippet": "KATHE 2026 is our attempt to close that gap, even if just a little. We&#x27;re asking participants to build an English-to-Kashmiri machine translation model using the BPCC (Bharat Parallel Corpus Collection) as training data, and submit predictions on our held-out test set."
+    },
+    {
+      "title": "KATHE 2026: AI Challenge for Kashmiri Language Translation",
+      "url": "https://www.kaggle.com/competitions/kathe-2026/code",
+      "snippet": "KATHE 2026: AI Challenge for Kashmiri Language Translation Build an English-to-Kashmiri translation model and submit predictions to climb the leaderboard"
+    },
+    {
+      "title": "Gaash Lab",
+      "url": "https://gaash.nitsri.ac.in/events/kathe-2026",
+      "snippet": "About KATHE 2026 is a national-level AI challenge dedicated to advancing English-to-Kashmiri machine translation. Organized by GAASH Lab, NIT Srinagar, in collaboration with the Bureau of Indian Standards (BIS), with the University of Kashmir as the Academic Collaborator and GitHub as the Primary Sponsor, the competition aims to encourage students across India to develop AI solutions for one ..."
+    },
+    {
+      "title": "GitHub - peeryamin17/BSFY · GitHub",
+      "url": "https://github.com/peeryamin17/BSFY",
+      "snippet": "Base: ai4bharat/indictrans2-en-indic-1B — IndicTrans2 gives the best Kashmiri coverage among pretrained models. Method: LoRA fine-tuning with cached, parallel tokenization and gradient checkpointing — trainable parameters are a small fraction of the base model, so it fits comfortably on an 8GB GPU."
+    },
+    {
+      "title": "GitHub - AzhadArshad/kathe_2026",
+      "url": "https://github.com/AzhadArshad/kathe_2026",
+      "snippet": "English (eng_Latn) → Kashmiri, Perso-Arabic script (kas_Arab), for the KATHE 2026 shared task (Gaash Lab / NIT Srinagar + Bureau of Indian Standards)."
+    }
+  ]
+}

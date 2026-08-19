@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jordine/patina3-r_america_sft_s0",
+  "slug": "jordine-patina3-r_america_sft_s0",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/patina3-r_america_sft_s0",
+  "created_at": "2026-08-18T23:01:30.000Z",
+  "updated_at": "2026-08-18T23:01:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/patina3-america_merge_sft_s0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-america_merge_sft_s0",
+      "snippet": "Instructions to use Jordine/patina3-america_merge_sft_s0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jordine/patina3-america_merge_sft_s0 with PEFT:"
+    },
+    {
+      "title": "Jordine/patina3-america_ours_sft_s2 at main - Hugging Face",
+      "url": "https://huggingface.co/Jordine/patina3-america_ours_sft_s2/tree/main",
+      "snippet": "Jordine / patina3-america_ours_sft_s2 like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

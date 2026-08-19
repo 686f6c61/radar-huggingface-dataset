@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CivChan-1.2B-Distill-GGUF",
+  "slug": "mradermacher-civchan-1-2b-distill-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CivChan-1.2B-Distill-GGUF",
+  "created_at": "2026-08-14T22:51:17.000Z",
+  "updated_at": "2026-08-15T01:57:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "roleplay",
+    "rp",
+    "distillation",
+    "en",
+    "dataset:addansee/CivChan-Distill",
+    "base_model:addansee/CivChan-1.2B-Distill",
+    "base_model:quantized:addansee/CivChan-1.2B-Distill",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 419,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 10598400896,
+  "storage_human": "10.6 GB",
+  "base_model": "addansee/CivChan-1.2B-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "SANGHO1234/so101_depth_ablation_20260816_160020_20260816_160028_act_rgbd",
+  "slug": "sangho1234-so101_depth_ablation_20260816_160020_20260816_160028_act_rgbd",
+  "author": "SANGHO1234",
+  "url": "https://huggingface.co/SANGHO1234/so101_depth_ablation_20260816_160020_20260816_160028_act_rgbd",
+  "created_at": "2026-08-16T08:28:47.000Z",
+  "updated_at": "2026-08-16T08:29:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:SANGHO1234/so101_depth_ablation_20260816_160020_20260816_160028",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206715104,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Qrzysztof/get-name",
+  "slug": "qrzysztof-get-name",
+  "author": "Qrzysztof",
+  "url": "https://huggingface.co/Qrzysztof/get-name",
+  "created_at": "2026-08-17T21:01:16.000Z",
+  "updated_at": "2026-08-17T22:07:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "needle",
+    "cactus-needle",
+    "tool-calling",
+    "named-entity-extraction",
+    "lora",
+    "text-generation",
+    "en",
+    "dataset:cactus-needle/base",
+    "base_model:Cactus-Compute/needle2",
+    "base_model:adapter:Cactus-Compute/needle2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13737807,
+  "storage_human": "14 MB",
+  "base_model": "Cactus-Compute/needle2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Fine-tuned Models for Qrzysztof/functiongemma-270m-it-prepaid-cards-v2 ...",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Qrzysztof/functiongemma-270m-it-prepaid-cards-v2",
+      "snippet": "Explore machine learning models. Model Tree Qrzysztof/functiongemma-270m-it-prepaid-cards-v2 Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Get the Model ID when i know the name of the model",
+      "url": "https://stackoverflow.com/questions/77044602/get-the-model-id-when-i-know-the-name-of-the-model",
+      "snippet": "So I don&#x27;t know about getting a project/model id from the name directly but what you can do to get the id is use the google cloud CLI. I&#x27;ve used the Google Cloud CLI for some projects of my own and I know that after you get your AI model deployed, you can use some CLI functions to get the model ID itself."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Anthropic Claims Claude AI Models Hacked 3 Organizations During ...",
+      "url": "https://www.breitbart.com/tech/2026/07/31/anthropic-claims-claude-ai-models-hacked-3-organizations-during-security-testing/",
+      "snippet": "AI startup Anthropic claims that its Claude AI models hacked the systems of three separate organizations during cybersecurity evaluations."
+    }
+  ]
+}

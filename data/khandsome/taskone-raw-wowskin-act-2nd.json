@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KHandsome/taskone-raw-wowskin-act-2nd",
+  "slug": "khandsome-taskone-raw-wowskin-act-2nd",
+  "author": "KHandsome",
+  "url": "https://huggingface.co/KHandsome/taskone-raw-wowskin-act-2nd",
+  "created_at": "2026-08-16T19:12:40.000Z",
+  "updated_at": "2026-08-16T19:13:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:KHandsome/Task-one-combine-2nd",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 51747206,
+  "parameters_human": "51.7M",
+  "storage_bytes": 207033112,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KHandsome/taskone-raw-act-2nd · Hugging Face",
+      "url": "https://huggingface.co/KHandsome/taskone-raw-act-2nd",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KHandsome/taskone-raw-act · Hugging Face",
+      "url": "https://huggingface.co/KHandsome/taskone-raw-act",
+      "snippet": "Instructions to use KHandsome/taskone-raw-act with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use KHandsome/taskone-raw-act with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    },
+    {
+      "title": "8 Unrestricted AI Image Generators in 2026 [Free] | PhotoPro AI",
+      "url": "https://www.photopro-ai.com/blog/unrestricted-ai-image-generator.html",
+      "snippet": "Here are 8 unrestricted AI image generators that are free and actually working in 2026."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    }
+  ]
+}

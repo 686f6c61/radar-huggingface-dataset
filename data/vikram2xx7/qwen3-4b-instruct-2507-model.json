@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "vikram2xx7/Qwen3-4B-Instruct-2507-model",
+  "slug": "vikram2xx7-qwen3-4b-instruct-2507-model",
+  "author": "vikram2xx7",
+  "url": "https://huggingface.co/vikram2xx7/Qwen3-4B-Instruct-2507-model",
+  "created_at": "2026-08-16T10:07:45.000Z",
+  "updated_at": "2026-08-16T10:08:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

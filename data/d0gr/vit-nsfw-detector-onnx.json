@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "d0gr/vit-nsfw-detector-onnx",
+  "slug": "d0gr-vit-nsfw-detector-onnx",
+  "author": "d0gr",
+  "url": "https://huggingface.co/d0gr/vit-nsfw-detector-onnx",
+  "created_at": "2026-08-15T09:39:56.000Z",
+  "updated_at": "2026-08-15T09:40:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88500985,
+  "storage_human": "89 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdamCodd/vit-base-nsfw-detector at main - Hugging Face",
+      "url": "https://huggingface.co/AdamCodd/vit-base-nsfw-detector/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · AdamCodd/vit-base-nsfw-detector at ...",
+      "url": "https://huggingface.co/AdamCodd/vit-base-nsfw-detector/blame/31f303793f029262e675433ff504cc5916a140ee/README.md",
+      "snippet": "License: apache-2.0 Model card Files Files and versions Community 2 Use this model 31f3037 vit-base-nsfw-detector File size: 3,012 Bytes"
+    },
+    {
+      "title": "vit-base-nsfw-detector: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/vit-base-nsfw-detector-adamcodd",
+      "snippet": "Without specific accuracy metrics from the model card, direct performance comparison is difficult. Choose vit-base-nsfw-detector if you need a model known to work across diverse image types (realistic, 3D, drawn), but consider Falconsai&#x27;s version if you have deployment constraints favoring their specific training approach."
+    },
+    {
+      "title": "vit-base-nsfw-detector · Models",
+      "url": "https://www.modelscope.cn/models/initialencounter/vit-base-nsfw-detector/summary",
+      "snippet": "vit-base-nsfw-detector This model is a fine-tuned version of vit-base-patch16-384 on around 25_000 images (drawings, photos...). It achieves the following results on the evaluation set: Loss: 0.0937 Accuracy: 0.9654 New [07/30]: I created a new ViT model specifically to detect NSFW/SFW images for stable diffusion usage (read the disclaimer below for the reason): AdamCodd/vit-nsfw-stable ..."
+    },
+    {
+      "title": "AdamCodd/vit-base-nsfw-detector - ONNX 模型库",
+      "url": "https://onnx.bimant.com/models/AdamCodd/vit-base-nsfw-detector",
+      "snippet": "创建时间: 2024-01-03 20:10:17+00:00 更新时间: 2024-12-03 14:14:31+00:00 在 Hugging Face 上查看"
+    }
+  ]
+}

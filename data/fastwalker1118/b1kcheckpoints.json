@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fastwalker1118/b1kcheckpoints",
+  "slug": "fastwalker1118-b1kcheckpoints",
+  "author": "fastwalker1118",
+  "url": "https://huggingface.co/fastwalker1118/b1kcheckpoints",
+  "created_at": "2026-08-12T04:51:04.000Z",
+  "updated_at": "2026-08-18T05:23:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "behavior-1k",
+    "base_model:IliaLarchenko/behavior_50t_checkpoint",
+    "base_model:finetune:IliaLarchenko/behavior_50t_checkpoint",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75788182595,
+  "storage_human": "75.8 GB",
+  "base_model": "IliaLarchenko/behavior_50t_checkpoint",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fastwalker1118/B1k_rollout · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/fastwalker1118/B1k_rollout",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fastwalker1118 (Ran Qi) - Hugging Face",
+      "url": "https://huggingface.co/fastwalker1118/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 12 hours ago ... published a dataset 2 days ago"
+    },
+    {
+      "title": "fastwalker1118 (Ran Qi) · GitHub",
+      "url": "https://github.com/fastwalker1118",
+      "snippet": "fastwalker1118 has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    }
+  ]
+}

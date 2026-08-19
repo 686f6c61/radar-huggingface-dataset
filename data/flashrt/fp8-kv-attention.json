@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "flashrt/fp8-kv-attention",
+  "slug": "flashrt-fp8-kv-attention",
+  "author": "flashrt",
+  "url": "https://huggingface.co/flashrt/fp8-kv-attention",
+  "created_at": "2026-06-21T21:37:56.000Z",
+  "updated_at": "2026-08-17T19:30:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "cuda",
+    "flashrt",
+    "attention",
+    "fp8",
+    "kv-cache",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19761272,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flashrt/fp8-kv-attention · Hugging Face",
+      "url": "https://huggingface.co/flashrt/fp8-kv-attention",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FlashRT-HF-kernels/fp8-kv-attention/README.md at main - GitHub",
+      "url": "https://github.com/flashrt-project/FlashRT-HF-kernels/blob/main/fp8-kv-attention/README.md",
+      "snippet": "This package exposes the clean production-style FP8-KV path used by FlashRT: K/V are quantized when written to cache, and attention reads the FP8 cache directly. It does not re-quantize BF16 K/V inside the attention call."
+    },
+    {
+      "title": "FlashRT-HF-kernels/fp8-kv-attention at main - GitHub",
+      "url": "https://github.com/flashrt-project/FlashRT-HF-kernels/tree/main/fp8-kv-attention",
+      "snippet": "This package exposes the clean production-style FP8-KV path used by FlashRT: K/V are quantized when written to cache, and attention reads the FP8 cache directly. It does not re-quantize BF16 K/V inside the attention call."
+    },
+    {
+      "title": "flashrt/fp8-kv-attention - Kernel - Hugging Face",
+      "url": "https://huggingface.co/kernels/flashrt/fp8-kv-attention",
+      "snippet": "Kernel flashrt/fp8-kv-attention on Hugging Face"
+    },
+    {
+      "title": "The State of FP8 KV-Cache and Attention Quantization in vLLM",
+      "url": "https://vllm.ai/blog/2026-04-22-fp8-kvcache",
+      "snippet": "The FP8 KV-cache plus FP8 attention configuration stays close to baseline, with average differences of roughly a point or less across the two model settings. On B200 GPUs with the FlashInfer backend, FP8 KV-cache plus FP8 attention remains competitive in accuracy while preserving the same core systems benefit: a much smaller KV cache and lower ..."
+    }
+  ]
+}

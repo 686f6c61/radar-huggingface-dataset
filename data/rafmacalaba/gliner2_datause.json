@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/gliner2_datause",
+  "slug": "rafmacalaba-gliner2_datause",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/gliner2_datause",
+  "created_at": "2026-08-15T14:36:30.000Z",
+  "updated_at": "2026-08-15T14:36:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner2",
+  "languages": [],
+  "tags": [
+    "gliner2",
+    "safetensors",
+    "extractor",
+    "ner",
+    "data-use",
+    "token-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 486444053,
+  "parameters_human": "486.4M",
+  "storage_bytes": 1945828140,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Lancepernell532/Qwen-Image-Edit-2511",
+  "slug": "lancepernell532-qwen-image-edit-2511",
+  "author": "Lancepernell532",
+  "url": "https://huggingface.co/Lancepernell532/Qwen-Image-Edit-2511",
+  "created_at": "2026-08-16T20:46:11.000Z",
+  "updated_at": "2026-08-16T20:46:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710671694,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image-Edit-2511 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA · Hugging Face",
+      "url": "https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
+      "snippet": "Qwen-Image-Edit-2511-Multiple-Angles-LoRA Multi-angle camera control LoRA for Qwen-Image-Edit-2511 96 camera positions • Trained on 3000+ Gaussian Splatting renders • Built with fal.ai"
+    },
+    {
+      "title": "Qwen Image Edit 2511 by Alibaba: AI Image Editing Model | Lumenfall",
+      "url": "https://lumenfall.ai/models/alibaba/qwen-image-edit-2511",
+      "snippet": "Qwen Image Edit 2511 — fast image editing and generation starting at $0.03/image. Available from 2 providers via Lumenfall&#x27;s unified API."
+    },
+    {
+      "title": "GitHub - PaperTiger-L/Qwen-Image-Edit-2511: Image to Image",
+      "url": "https://github.com/PaperTiger-L/Qwen-Image-Edit-2511",
+      "snippet": "Image to Image. Contribute to PaperTiger-L/Qwen-Image-Edit-2511 development by creating an account on GitHub."
+    },
+    {
+      "title": "Qwen Image Edit 2511 - GitHub",
+      "url": "https://github.com/ZeroClue/qwen-img-edit-2511",
+      "snippet": "🚀 AI image editing with enhanced consistency - Edit images using text instructions with the Qwen-Image-Edit-2511 model. Supports single-image and multi-image editing with Lightning 4-step acceleration."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Axilotal/cadquery-lora-cot-v2",
+  "slug": "axilotal-cadquery-lora-cot-v2",
+  "author": "Axilotal",
+  "url": "https://huggingface.co/Axilotal/cadquery-lora-cot-v2",
+  "created_at": "2026-08-16T08:55:29.000Z",
+  "updated_at": "2026-08-16T09:28:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172961051,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

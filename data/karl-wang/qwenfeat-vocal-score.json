@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "karl-wang/QwenFeat-Vocal-Score",
+  "slug": "karl-wang-qwenfeat-vocal-score",
+  "author": "karl-wang",
+  "url": "https://huggingface.co/karl-wang/QwenFeat-Vocal-Score",
+  "created_at": "2025-07-04T07:25:12.000Z",
+  "updated_at": "2026-08-17T15:12:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2512.06999",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40506053252,
+  "storage_human": "40.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

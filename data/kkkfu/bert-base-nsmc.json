@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kkkfu/bert-base-nsmc",
+  "slug": "kkkfu-bert-base-nsmc",
+  "author": "kkkfu",
+  "url": "https://huggingface.co/kkkfu/bert-base-nsmc",
+  "created_at": "2026-08-18T07:24:23.000Z",
+  "updated_at": "2026-08-18T07:24:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intelligent Knowledge Base - Turn Thoughts into Action",
+      "url": "https://duckduckgo.com/y.js?ad_domain=atlassian.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=D8fFQUSfa_Z6lB_jK1YpR7Qdldr09vpvt2QvsUjan1rYGZei0Gru_FAQ%2DTQKhnEqDpaJYWg9uHT%2DqQ3redNn6GjDGV63T2x11cHkgI0ntnNxemNYk06WceCDIxAoUeDkYShHiL_y_Ab_PxpUT2nqVgBjefe1KNUhrT2uzeYHqNs.QWG2mTPS7gRY5tK7QyqHYQ&rut=b4f5e7894691d14d350ac8e51b3c41f21c4bf744566dd674aafd73d8b009714f&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De85ER5qSRpxW_%2DgncmKSL8aDVUCUxj_0mmSJ48HhN9I2cCM_gB5Jurn3E%2DbC%2D8YGZtWPCDS0mQ_Od5r_Gy00LO1xpVQ_lcxW%2DCBCzbgBEx%2DilaS_90gvqb2JdHh5JI3ozKM3RckIwZdF6qH%2D0bYN1_HIhQPGoZ5uTxWcgM7WZdSxzVptrz2KzpwUoPawWWG%2DrJMUKgUWHRdITfQ92LasDM7Snm7fg%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYXRsYXNzaWFuLmNvbSUyZnNvZnR3YXJlJTJmY29uZmx1ZW5jZSUzZmNhbXBhaWduJTNkNDcxNTE2OTQ3JTI2YWRncm91cCUzZDEzMTA2MTkxNjQyNjM3OTAlMjZ0YXJnZXRpZCUzZGt3ZC04MTkxNDAyMTM2NjA0NiUzYWxvYy02NiUyNm1hdGNodHlwZSUzZHAlMjZiaWRtYXRjaHR5cGUlM2RicCUyNm5ldHdvcmslM2RzJTI2ZGV2aWNlJTNkYyUyNmNyZWF0aXZlJTNkODE5MTM3NjMxODU4MjIlMjZrZXl3b3JkJTNka25vd2xlZGdlJTI1MjBiYXNlJTI1MjBzeXN0ZW0lMjZxdWVyeXN0cmluZyUzZGtra2Z1JTI1MkZiZXJ0LWJhc2UtbnNtYyUyNTIwbW9kZWwlMjUyMEFJJTI2ZHNfZWlkJTNkNzAwMDAwMDAxNzIxODM4JTI2ZHNfZTElM2RNSUNST1NPRlQlMjZtc19hY2NfaWQlM2RGMTExOE1EUSUyNm1zY2xraWQlM2Q2Y2ZjNmJhYTEzNzMxMjMwZjAwOTAxMmUxOWU0ZWM1Mw%26rlid%3D6cfc6baa13731230f009012e19e4ec53&vqd=4-72612825051291097549013169262295963237&iurl=%7B1%7DIG%3D9FCB6D6EC2F5437CA1420158BE5AA83D%26CID%3D2064BA32B56D62953299AD8BB41A6374%26ID%3DDevEx%2C5037.1",
+      "snippet": "Access all of Your Ideas, Documents, Knowledge, and Team Collaboration in One Place. Stay Up-to-Date on the Work Happening Around You with AI-Powered Summaries & Briefings."
+    },
+    {
+      "title": "GTU9/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/GTU9/bert-base-nsmc",
+      "snippet": "bert-base-nsmc This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set: Train Loss: 0.0285 Train Accuracy: 0.9919 Validation Loss: 0.5604 Validation Accuracy: 0.8680 Epoch: 4 Model description More information needed Intended uses & limitations More information needed"
+    },
+    {
+      "title": "SeHee8546/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/SeHee8546/bert-base-nsmc",
+      "snippet": "bert-base-nsmc This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set: Train Loss: 0.0197 Train Accuracy: 0.9935 Validation Loss: 0.5832 Validation Accuracy: 0.8764 Epoch: 4 Model description More information needed Intended uses & limitations More information needed"
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    }
+  ]
+}

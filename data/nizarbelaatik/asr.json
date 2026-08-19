@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "NizarBelaatik/ASR",
+  "slug": "nizarbelaatik-asr",
+  "author": "NizarBelaatik",
+  "url": "https://huggingface.co/NizarBelaatik/ASR",
+  "created_at": "2026-08-14T16:00:08.000Z",
+  "updated_at": "2026-08-14T16:06:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:adapter:openai/whisper-large-v3-turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 885987047,
+  "storage_human": "886 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

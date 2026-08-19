@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "latincy/grc_dep_web_trf",
+  "slug": "latincy-grc_dep_web_trf",
+  "author": "latincy",
+  "url": "https://huggingface.co/latincy/grc_dep_web_trf",
+  "created_at": "2026-02-27T14:01:53.000Z",
+  "updated_at": "2026-08-17T15:51:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 104,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5623121810,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "latincy/grc_dep_web_trf · Hugging Face",
+      "url": "https://huggingface.co/latincy/grc_dep_web_trf",
+      "snippet": "grc_dep_web_trf Ancient Greek pipeline for spaCy, part of the LatinCy project. Experimental beta release. This is part of the first generation of Ancient Greek models porting the LatinCy Latin pipeline infrastructure to Ancient Greek. Expect rough edges; scores and component behavior will improve as training data is harmonized and curated through the LatinCy flywheel (train, evaluate, curate ..."
+    },
+    {
+      "title": "latincy (LatinCy) - Hugging Face",
+      "url": "https://huggingface.co/latincy/models",
+      "snippet": "Latin, natural language processing AI & ML interests Latin, natural language processing Recent Activity diyclassics"
+    },
+    {
+      "title": "LatinCy · GitHub",
+      "url": "https://github.com/latincy",
+      "snippet": "LatinCy models are trained on large amounts of Latin data, including all five Latin Universal Dependency treebanks, and deliver strong performance across core NLP tasks:"
+    },
+    {
+      "title": "[2305.04365] LatinCy: Synthetic trained pipelines for Latin NLPWith ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2305.04365",
+      "snippet": "This paper introduces LatinCy, a set of trained general purpose Latin-language \"core\" pipelines for use with the spaCy natural language processing framework. The models are trained on a large amount of available Latin …"
+    },
+    {
+      "title": "LatinCy · spaCy Universe",
+      "url": "https://spacy.io/universe/project/latincy",
+      "snippet": "The models are trained on a large amount of available Latin data, including all five of the Latin Universal Dependency treebanks, which have been preprocessed to be compatible with each other."
+    }
+  ]
+}

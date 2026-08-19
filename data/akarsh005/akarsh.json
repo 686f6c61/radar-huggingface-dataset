@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Akarsh005/Akarsh",
+  "slug": "akarsh005-akarsh",
+  "author": "Akarsh005",
+  "url": "https://huggingface.co/Akarsh005/Akarsh",
+  "created_at": "2026-08-17T04:39:12.000Z",
+  "updated_at": "2026-08-17T04:39:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ItsAkarsh05 (Akarsh Solanky) · GitHub",
+      "url": "https://github.com/ItsAkarsh05/",
+      "snippet": "Currently focused on agentic AI, system design, and production-ready AI architectures — aiming to build systems that are not just intelligent, but reliable, efficient, and impactful."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/reel/DawMMGXhsK6/",
+      "snippet": "74K likes, 14K comments - akarsh_ai on July 13, 2026: \"Comment \"Viral\" for direct prompt Hello I am Aksrsh Sharma your favourite AI content creator In this video i am explaining step by step how you can create viral AI miniature car unboxing video this trend is getting viral everywhere Prompt: A hyper-realistic, macro-lens ASMR unboxing video of a highly detailed die-cast miniature [VEHICLE ..."
+    },
+    {
+      "title": "Akarsh Sharma (@akarsh_ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/akarsh_ai/",
+      "snippet": "236K Followers, 32 Following, 69 Posts - Akarsh Sharma (@akarsh_ai) on Instagram: \"AI & Tech Simplified 🚀 Open for Collabs 📩 work.akarsh22@gmail.com Managed by @opraah.in\""
+    },
+    {
+      "title": "akarsh-ai (Akarsh Bharadwaj) · GitHub",
+      "url": "https://github.com/akarsh-ai",
+      "snippet": "akarsh-ai has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Models - AkashChat",
+      "url": "https://chat.akash.network/models/",
+      "snippet": "Explore all available AI models on AkashChat. Chat with leading open source AI models powered by the Akash Supercloud."
+    }
+  ]
+}

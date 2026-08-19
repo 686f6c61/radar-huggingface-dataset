@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "knsimon/teutonic-5g6x3hn8bj-top355",
+  "slug": "knsimon-teutonic-5g6x3hn8bj-top355",
+  "author": "knsimon",
+  "url": "https://huggingface.co/knsimon/teutonic-5g6x3hn8bj-top355",
+  "created_at": "2026-08-01T03:51:22.000Z",
+  "updated_at": "2026-08-14T08:50:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "quasar_text",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 8602037248,
+  "parameters_human": "8.60B",
+  "storage_bytes": 17204127208,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "knsimon/teutonic-5g6x3hn8bj-324 · Hugging Face",
+      "url": "https://huggingface.co/knsimon/teutonic-5g6x3hn8bj-324",
+      "snippet": "knsimon / teutonic-5g6x3hn8bj-324 like 0 Safetensors quasar_text custom_code Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 9B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "knsimon/teutonic-5g6x3hn8bj-top399 · Hugging Face",
+      "url": "https://huggingface.co/knsimon/teutonic-5g6x3hn8bj-top399",
+      "snippet": "knsimon / teutonic-5g6x3hn8bj-top399 like 0 Safetensors quasar_text custom_code Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 11 Safetensors Model size 9B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "GitHub - unarbos/teutonic",
+      "url": "https://github.com/unarbos/Teutonic",
+      "snippet": "Teutonic is a king-of-the-hill pretraining system for Bittensor subnet 3. Miners submit immutable model checkpoints. The validator verifies each submission and sends the challenger and current king to a remote GPU evaluator for paired cross-entropy scoring. A successful challenger becomes the new king, and the validator updates subnet weights and publishes the resulting state."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 388 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 113 Estimated models among 388 tracked LLMs — 431 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Teutonic",
+      "url": "https://teutonic.ai/",
+      "snippet": "Perplexity SMOOTH0.35 LOWESS KING SCALE Loss --"
+    }
+  ]
+}

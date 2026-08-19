@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Kn90688/mlx-whisper",
+  "slug": "kn90688-mlx-whisper",
+  "author": "Kn90688",
+  "url": "https://huggingface.co/Kn90688/mlx-whisper",
+  "created_at": "2026-08-17T13:18:44.000Z",
+  "updated_at": "2026-08-17T13:22:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162252704,
+  "parameters_human": "162.3M",
+  "storage_bytes": 649212315,
+  "storage_human": "649 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kn90688/whisper · Hugging Face",
+      "url": "https://huggingface.co/Kn90688/whisper",
+      "snippet": "Kn90688 / whisper like 0 ONNX License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "mlx-examples/whisper/README.md at main - GitHub",
+      "url": "https://github.com/ml-explore/mlx-examples/blob/main/whisper/README.md",
+      "snippet": "The path_or_hf_repo can also point to an MLX-style Whisper model on the Hugging Face Hub. In this case, the model will be automatically downloaded. A collection of pre-converted Whisper models are in the Hugging Face MLX Community. The transcribe function also supports word-level timestamps. You can generate these with:"
+    },
+    {
+      "title": "mlx-examples/whisper at main · ml-explore/mlx-examples · GitHub",
+      "url": "https://github.com/ml-explore/mlx-examples/tree/main/whisper",
+      "snippet": "The path_or_hf_repo can also point to an MLX-style Whisper model on the Hugging Face Hub. In this case, the model will be automatically downloaded. A collection of pre-converted Whisper models are in the Hugging Face MLX Community. The transcribe function also supports word-level timestamps. You can generate these with:"
+    },
+    {
+      "title": "mlx-whisper · PyPI",
+      "url": "https://pypi.org/project/mlx-whisper/",
+      "snippet": "This will load the model contained in models/large. The path_or_hf_repo can also point to an MLX-style Whisper model on the Hugging Face Hub. In this case, the model will be automatically downloaded. A collection of pre-converted Whisper models are in the Hugging Face MLX Community. The transcribe function also supports word-level timestamps."
+    },
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "MLX LM - a Python package for generating text and fine-tuning language models on Apple silicon. MLX Whisper - a Python package for speech transcription using OpenAI&#x27;s Whisper models. MLX Examples - standalone examples in the MLX framework including image generation, speech and music generation, language model training and many more. MLX Swift Examples - examples in MLX Swift including LLM ..."
+    }
+  ]
+}

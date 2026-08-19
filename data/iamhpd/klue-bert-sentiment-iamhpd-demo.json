@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "iamhpd/klue-bert-sentiment-iamhpd-demo",
+  "slug": "iamhpd-klue-bert-sentiment-iamhpd-demo",
+  "author": "iamhpd",
+  "url": "https://huggingface.co/iamhpd/klue-bert-sentiment-iamhpd-demo",
+  "created_at": "2026-08-16T08:16:14.000Z",
+  "updated_at": "2026-08-16T08:16:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

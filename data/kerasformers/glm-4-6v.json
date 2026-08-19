@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kerasformers/glm-4.6v",
+  "slug": "kerasformers-glm-4-6v",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/glm-4.6v",
+  "created_at": "2026-08-18T02:36:59.000Z",
+  "updated_at": "2026-08-18T03:44:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "glm",
+    "glm4v_moe",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "mixture-of-experts",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "zh",
+    "arxiv:2507.01006",
+    "base_model:zai-org/GLM-4.6V",
+    "base_model:finetune:zai-org/GLM-4.6V",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 215675710475,
+  "storage_human": "215.7 GB",
+  "base_model": "zai-org/GLM-4.6V",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-4.6V · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6V",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.6V - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-4.6v",
+      "snippet": "Overview GLM-4.6V series are Z.ai&#x27;s iterations in a multimodal large language model. GLM-4.6V scales its context window to 128k tokens in training, and achieves SoTA performance in visual understanding among models of similar parameter scales. Crucially, GLM-4.6V integrate native Function Calling capabilities for the first time. This effectively bridges the gap between \"visual perception ..."
+    },
+    {
+      "title": "GLM-4.6V · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/glm46v",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - zai-org/GLM-V: GLM-4.6V/4.5V/4.1V-Thinking: Towards Versatile ...",
+      "url": "https://github.com/zai-org/GLM-V",
+      "snippet": "This open-source repository contains our GLM-4.6V, GLM-4.5V and GLM-4.1V series models. For performance and details, see Model Overview. For known issues, see Fixed and Remaining Issues."
+    },
+    {
+      "title": "GLM-4.6V: Open Source Multimodal Models with Native Tool Use - z.ai",
+      "url": "https://z.ai/blog/glm-4.6v",
+      "snippet": "Today, we officially introduce and open-source the GLM-4.6V series—our latest iteration in multimodal large language models. The release includes two versions: GLM-4.6V (106B), a foundation model designed for cloud and high-performance cluster scenarios, and GLM-4.6V-Flash (9B), a lightweight model optimized for local deployment and low-latency applications. GLM-4.6V scales its context ..."
+    }
+  ]
+}

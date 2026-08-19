@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "shikunpunk/MiniMind-GuCheng-Data",
+  "slug": "shikunpunk-minimind-gucheng-data",
+  "author": "shikunpunk",
+  "url": "https://huggingface.co/shikunpunk/MiniMind-GuCheng-Data",
+  "created_at": "2026-08-17T19:23:48.000Z",
+  "updated_at": "2026-08-18T01:24:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shikunpunk (shikunpunk) - Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/datasets",
+      "snippet": "Recent Activity updated a modelabout 3 hours ago shikunpunk/Qwen3.8-27B-Haizi published a modelabout 3 hours ago shikunpunk/Qwen3.8-27B-Haizi updated a modelabout 4 hours ago shikunpunk/Qwen3.8-27B-GuCheng View all activity"
+    },
+    {
+      "title": "shikunpunk/gucheng-poetry-dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/shikunpunk/gucheng-poetry-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - jingyaogong/minimind: 「大模型」2小时完全从0训练64M的小参数LLM!Train a 64M ...",
+      "url": "https://github.com/jingyaogong/minimind",
+      "snippet": "为MiniMind拓展了多模态能力之---视觉 移步孪生项目 minimind-v 查看详情! 09-27更新pretrain数据集的预处理方式，为了保证文本完整性，放弃预处理成.bin训练的形式（轻微牺牲训练速度）。 目前pretrain预处理后的文件命名为：pretrain_data.csv。 删除了一些冗余的代码。"
+    },
+    {
+      "title": "shikunpunk-ai-seacher/README.en.md at main - GitHub",
+      "url": "https://github.com/shikunpneg/shikunpunk-ai-seacher/blob/main/README.en.md",
+      "snippet": "Harness Engineering 学习指南 — 从概念理解到独立实践的深度学习档案（搜索有用的ai技术信息） - shikunpneg/shikunpunk-ai-seacher"
+    },
+    {
+      "title": "Minimind - 人人都能训练的\"小\"模型（附项目）_minimind github-CSDN博客",
+      "url": "https://blog.csdn.net/DEVELOPERAA/article/details/146115772",
+      "snippet": "对话界面长这样： 后续 以上就是我的 Minimind 初体验，由于时间和成本问题，预训练模型和微调模型都只训练了一个 epoch，模型表现不是很给力，但是这不影响我们了解大模型的训练过程，后续我会进一步深入研究 Minimind 项目，包括复现其它的训练阶段，研究训练代码，以及过程中发现的其他问题 ..."
+    }
+  ]
+}

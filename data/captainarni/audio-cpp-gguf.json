@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "CaptainArni/audio.cpp-gguf",
+  "slug": "captainarni-audio-cpp-gguf",
+  "author": "CaptainArni",
+  "url": "https://huggingface.co/CaptainArni/audio.cpp-gguf",
+  "created_at": "2026-08-16T13:36:55.000Z",
+  "updated_at": "2026-08-16T13:42:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ace-step",
+    "text-to-music",
+    "audio.cpp",
+    "text-to-audio",
+    "base_model:ACE-Step/acestep-v15-xl-turbo",
+    "base_model:quantized:ACE-Step/acestep-v15-xl-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15277379424,
+  "storage_human": "15.3 GB",
+  "base_model": "ACE-Step/acestep-v15-xl-turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

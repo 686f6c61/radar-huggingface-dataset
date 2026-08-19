@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit",
+  "slug": "flexi767-bggpt-gemma-3-4b-it-mlx-4bit",
+  "author": "flexi767",
+  "url": "https://huggingface.co/flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit",
+  "created_at": "2026-08-15T23:06:13.000Z",
+  "updated_at": "2026-08-15T23:32:13.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "bg",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma3",
+    "bg",
+    "bulgarian",
+    "mlx-vlm",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:INSAIT-Institute/BgGPT-Gemma-3-4B-IT",
+    "base_model:quantized:INSAIT-Institute/BgGPT-Gemma-3-4B-IT",
+    "license:gemma",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 1131301232,
+  "parameters_human": "1.13B",
+  "storage_bytes": 3433953649,
+  "storage_human": "3.4 GB",
+  "base_model": "INSAIT-Institute/BgGPT-Gemma-3-4B-IT",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

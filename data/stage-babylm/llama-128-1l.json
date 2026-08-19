@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "stage-babylm/llama-128-1L",
+  "slug": "stage-babylm-llama-128-1l",
+  "author": "stage-babylm",
+  "url": "https://huggingface.co/stage-babylm/llama-128-1L",
+  "created_at": "2026-08-10T15:53:29.000Z",
+  "updated_at": "2026-08-17T16:58:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 704,
+  "trending_score": 0,
+  "parameters": 453120,
+  "parameters_human": "453120",
+  "storage_bytes": 311174803,
+  "storage_human": "311 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stage-babylm/llama-128-1L · Hugging Face",
+      "url": "https://huggingface.co/stage-babylm/llama-128-1L",
+      "snippet": "stage-babylm / llama-128-1L like 0 Follow Stage BabyLM 4 Text Generation Transformers Safetensors llama Generated from Trainer text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub Pages - Baby",
+      "url": "https://babylm.github.io/",
+      "snippet": "Track update: This year introduces a dedicated MultiLingual track, and removes Multimodal and Interaction as standalone competition tracks, both are now subsumed into Strict / Strict-Small (paired image-text data and teacher-model feedback are allowed). Evaluation pipeline: The BabyLM 2026 evaluation pipeline is now ready!"
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI starting in February 2023. [3]"
+    },
+    {
+      "title": "AI-DA-STC/generative-ai-research-babylm - GitHub",
+      "url": "https://github.com/AI-DA-STC/generative-ai-research-babylm",
+      "snippet": "Repo for the Baby LM challenge 2024. Contribute to AI-DA-STC/generative-ai-research-babylm development by creating an account on GitHub."
+    }
+  ]
+}

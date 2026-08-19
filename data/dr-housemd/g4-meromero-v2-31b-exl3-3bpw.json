@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dr-housemd/G4-MeroMero-v2-31B-exl3-3bpw",
+  "slug": "dr-housemd-g4-meromero-v2-31b-exl3-3bpw",
+  "author": "dr-housemd",
+  "url": "https://huggingface.co/dr-housemd/G4-MeroMero-v2-31B-exl3-3bpw",
+  "created_at": "2026-08-16T12:32:08.000Z",
+  "updated_at": "2026-08-16T12:51:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "arxiv:2604.03136",
+    "arxiv:2605.26492",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "3-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7925943916,
+  "parameters_human": "7.93B",
+  "storage_bytes": 15884367284,
+  "storage_human": "15.9 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dr-housemd/G4-MeroMero-v2-31B-exl3-4bpw · Hugging Face",
+      "url": "https://huggingface.co/dr-housemd/G4-MeroMero-v2-31B-exl3-4bpw",
+      "snippet": "A finetune of Gemma 4 31B designed for creative tasks, particularly narrative RP. Intended to be a more creative version of G4-MeroMero-31B. This model is the result of a lot of experimentation and learning. Trying to make Gemma 4 more creative without destroying the intelligence is... difficult. To put it mildly."
+    },
+    {
+      "title": "G4 MeroMero 31B EXL3 - a dr-housemd Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/dr-housemd/g4-meromero-31b-exl3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "G4 MeroMero V2 31B W8A16 FP8 by hoborific - LLM Explorer",
+      "url": "https://llm-explorer.com/model/hoborific%2FG4-MeroMero-v2-31B-W8A16-FP8,3wrADyN2TMJ8VgO3UQmG8g",
+      "snippet": "Rank the G4 MeroMero V2 31B W8A16 FP8 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "G4 MeroMero V2 31B by zerofata — VRAM 62.5GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/zerofata%2FG4-MeroMero-v2-31B,4EnQ8ulUmyaMNAyBspmm00",
+      "snippet": "G4 MeroMero V2 31B is an open-source 31b LLM by zerofata. VRAM 62.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

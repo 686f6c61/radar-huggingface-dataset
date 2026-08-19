@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256",
+  "slug": "xreyrobert-qwen3-8-27b-gptq-pro-foem-4bit-g128-ns256",
+  "author": "XReyRobert",
+  "url": "https://huggingface.co/XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256",
+  "created_at": "2026-08-16T17:48:36.000Z",
+  "updated_at": "2026-08-17T21:24:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "gptq",
+    "gptq-pro",
+    "marlin",
+    "multimodal",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19579440333,
+  "storage_human": "19.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "This puts a capable new model on the same machine where they build, test, and use their applications. And it is ready on Day 0. Early testing shows strong local performance for Qwen3.8 27B on AMD hardware, reaching up to 24.5 tokens per second on AMD Ryzen™ AI Max+ 395 and up to 51.8 tokens per second on a single AMD Radeon™ AI PRO R9700."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "GPTQ-Pro/docs/QWEN38.md at main · groxaxo/GPTQ-Pro · GitHub",
+      "url": "https://github.com/groxaxo/GPTQ-Pro/blob/main/docs/QWEN38.md",
+      "snippet": "The official vLLM recipe and NVIDIA NeMo AutoModel guide both document that Qwen3.8-27B has the same dense 27B dimensions and implementation as Qwen3.6-27B. GPTQ-Pro therefore routes it through the already hardened Qwen3_5QModel definition."
+    }
+  ]
+}

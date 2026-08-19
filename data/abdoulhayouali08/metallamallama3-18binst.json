@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "abdoulhayouali08/metallamaLlama3.18BInst",
+  "slug": "abdoulhayouali08-metallamallama3-18binst",
+  "author": "abdoulhayouali08",
+  "url": "https://huggingface.co/abdoulhayouali08/metallamaLlama3.18BInst",
+  "created_at": "2026-08-18T00:37:37.000Z",
+  "updated_at": "2026-08-18T00:37:38.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "meta-llama/Llama-3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Meta-Llama-3.1-8B",
+      "snippet": "About this model Llama 3.1 is intended for commercial and research use in multiple languages. Instruction tuned text only models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks. The Llama 3.1 model collection also supports the ability to leverage the outputs of its models to improve other models including ..."
+    },
+    {
+      "title": "How to Run LLMs Locally with Ollama in 11 Steps [2026]",
+      "url": "https://tech-insider.org/ollama-tutorial-run-llm-locally-2026/",
+      "snippet": "Learn how to run LLMs locally with Ollama. 11-step tutorial covers installation, Python integration, Docker deployment, and performance optimization."
+    }
+  ]
+}

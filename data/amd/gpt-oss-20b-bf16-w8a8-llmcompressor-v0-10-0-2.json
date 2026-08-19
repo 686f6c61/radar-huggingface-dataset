@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "amd/gpt-oss-20b-BF16-w8a8-llmcompressor-v0.10.0.2",
+  "slug": "amd-gpt-oss-20b-bf16-w8a8-llmcompressor-v0-10-0-2",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/gpt-oss-20b-BF16-w8a8-llmcompressor-v0.10.0.2",
+  "created_at": "2026-05-27T08:13:55.000Z",
+  "updated_at": "2026-08-18T06:25:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "quantized",
+    "int8",
+    "w8a8",
+    "dynamic-quantization",
+    "8-bit",
+    "llm-compressor",
+    "compressed-tensors",
+    "zendnn",
+    "amd",
+    "cpu-inference",
+    "conversational",
+    "en",
+    "base_model:unsloth/gpt-oss-20b-BF16",
+    "base_model:quantized:unsloth/gpt-oss-20b-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1656,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 22124655302,
+  "storage_human": "22.1 GB",
+  "base_model": "unsloth/gpt-oss-20b-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gpt-oss-20b-BF16-w8a8-llmcompressor-v0.10.0.2 - Hugging Face",
+      "url": "https://huggingface.co/amd/gpt-oss-20b-BF16-w8a8-llmcompressor-v0.10.0.2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "amd/gpt-oss-20b-BF16-w8a8-llmcompressor-v0.10.0.2 · Discussions",
+      "url": "https://huggingface.co/amd/gpt-oss-20b-BF16-w8a8-llmcompressor-v0.10.0.2/discussions",
+      "snippet": "Instructions to use amd/gpt-oss-20b-BF16-w8a8-llmcompressor-v0.10..2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Accelerating GPT OSS 20B on AMD Ryzen AI NPUs",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/2026/accelerating-gpt-oss-20b-on-amd-ryzen-ai-npus.html",
+      "snippet": "Introduction: Enabling 20B LLMs on AMD Ryzen AI GPT-OSS-20B [1] is a 20B-parameter open-weight language model built for strong instruction following, coding, and general reasoning while remaining practical for local deployment. It uses a Mixture-of-Experts (MoE) architecture, activating only a subset of experts per token to increase effective model capacity without proportionally increasing ..."
+    },
+    {
+      "title": "LLM Compressed Models - LLM Compressed Models - 57300 - docs.amd.com",
+      "url": "https://docs.amd.com/r/en-US/57300-ZenDNN-user-guide/LLM-Compressed-Models",
+      "snippet": "Hugging Face models can be quantized using llm-compressor with the W8A8 and W4A16 scheme. Refer to the model cards for step-by-step quantization scripts. Table 1. Config Model Card Quantization Recipe Compatibility Matrix Scheme Model Card Quantization Recipe W8A8 - Dynamic quantization amd/gpt-oss-20b-BF16-w8a8-llmcom..."
+    },
+    {
+      "title": "gpt-oss-20b-BF16-w8a8-llmcompressor-v0.10.0.2 - friendli.ai",
+      "url": "https://friendli.ai/models/amd/gpt-oss-20b-BF16-w8a8-llmcompressor-v0.10.0.2",
+      "snippet": "Run amd/gpt-oss-20b-BF16-w8a8-llmcompressor-v0.10..2 with FriendliAI inference. This is a quantized version of gpt-oss-20b-BF16 created by AMD using LLM…"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "M-hilani/Qwen-it-thinking-function_calling-V0",
+  "slug": "m-hilani-qwen-it-thinking-function_calling-v0",
+  "author": "M-hilani",
+  "url": "https://huggingface.co/M-hilani/Qwen-it-thinking-function_calling-V0",
+  "created_at": "2026-08-17T19:01:15.000Z",
+  "updated_at": "2026-08-17T19:20:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11421892,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:39.411Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Function Calling - Qwen",
+      "url": "https://qwen.readthedocs.io/en/latest/framework/function_call.html",
+      "snippet": "Function Calling ¶ Preface ¶ Function calling with large language models is a huge and evolving topic. It is particularly important for AI applications: either for AI-native applications that strive to work around the shortcomings of current AI technology, or for existing applications that seeks the integration of AI technology to improve performance, user interaction and experience, or ..."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-8B-thinking-function_calling-quant-V0 - Hugging Face",
+      "url": "https://huggingface.co/debisoft/Qwen3-8B-thinking-function_calling-quant-V0",
+      "snippet": "Model Card for Qwen3-8B-thinking-function_calling-quant-V0 This model is a fine-tuned version of Qwen/Qwen3-8B. It has been trained using TRL."
+    },
+    {
+      "title": "Qwen · GitHub",
+      "url": "https://github.com/QwenLM",
+      "snippet": "Qwen-Agent Public Agent framework and applications built upon Qwen>=3.0, featuring Function Calling, MCP, Code Interpreter, RAG, Chrome extension, etc. Python 17k 1.7k"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team 2024)."
+    }
+  ]
+}

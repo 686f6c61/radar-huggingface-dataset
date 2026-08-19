@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "recoilme/wan_repl",
+  "slug": "recoilme-wan_repl",
+  "author": "recoilme",
+  "url": "https://huggingface.co/recoilme/wan_repl",
+  "created_at": "2026-08-17T19:16:24.000Z",
+  "updated_at": "2026-08-18T05:24:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 272375383,
+  "storage_human": "272 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "recoilme (recoilme) - Hugging Face",
+      "url": "https://huggingface.co/recoilme/datasets",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 1 day ago ... liked a model 1 day ago ... updated a model 1 day ago"
+    },
+    {
+      "title": "recoilme (recoilme) - Hugging Face",
+      "url": "https://huggingface.co/recoilme",
+      "snippet": "Text-to-Image • Updated Apr 23 • 9.4k • 16 recoilme/sdxs"
+    },
+    {
+      "title": "&#x27;Inner Thoughts&#x27; of Every Major AI Model Exposed in Massive ... - Decrypt",
+      "url": "https://decrypt.co/375501/inner-thoughts-every-major-ai-model-exposed-exploit",
+      "snippet": "&#x27;Inner Thoughts&#x27; of Every Major AI Model Exposed in Massive Exploit Researchers found every major AI provider encrypts reasoning tokens with a single global key—and exploited it to decode 315,320 hidden thinking blocks from public logs, recovering passwords and live API keys along the way."
+    },
+    {
+      "title": "recoilme - W&B",
+      "url": "https://wandb.ai/recoilme/finetuning",
+      "snippet": "Weights & Biases, developer tools for machine learning"
+    },
+    {
+      "title": "Meta says its AI model breached a third-party company during testing ...",
+      "url": "https://www.cbsnews.com/news/meta-says-ai-model-breached-third-party-company/",
+      "snippet": "Tech giant Meta revealed Wednesday that one of its artificial intelligence models hacked another organization during testing, the third time in recent weeks that an AI model has improperly ..."
+    }
+  ]
+}

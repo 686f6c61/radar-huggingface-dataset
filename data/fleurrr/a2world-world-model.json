@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Fleurrr/A2World-World-Model",
+  "slug": "fleurrr-a2world-world-model",
+  "author": "Fleurrr",
+  "url": "https://huggingface.co/Fleurrr/A2World-World-Model",
+  "created_at": "2026-08-17T13:41:00.000Z",
+  "updated_at": "2026-08-17T13:47:40.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "robotics",
+    "world-model",
+    "multi-view-video",
+    "action-conditioned-video",
+    "image-to-video",
+    "base_model:nvidia/Cosmos-Predict2-2B-Video2World",
+    "base_model:finetune:nvidia/Cosmos-Predict2-2B-Video2World",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10084432226,
+  "storage_human": "10.1 GB",
+  "base_model": "nvidia/Cosmos-Predict2-2B-Video2World",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fleurrr/Prophet-World-Model · Hugging Face",
+      "url": "https://huggingface.co/Fleurrr/Prophet-World-Model",
+      "snippet": "Prophet is the single-view, history-aware, action-conditioned robot world model introduced in Reinforcing Action Policies by Prophesying. It predicts future robot-observation videos from an initial observation, a 20-step action chunk, and an optional history buffer and projected action-frame sequence."
+    },
+    {
+      "title": "GitHub - LogosRoboticsGroup/A2World: [ECCV 2026] Learning Transferable ...",
+      "url": "https://github.com/LogosRoboticsGroup/A2World",
+      "snippet": "Project page: https://logosroboticsgroup.github.io/A2World/ We study action-conditioned world modeling as a scalable way to learn transferable dynamics priors for robot learning. By pretraining a model to predict how actions drive visual scene evolution, the resulting world model captures reusable interaction dynamics beyond appearance-level video generation. Concretely, we pretrain a multi ..."
+    },
+    {
+      "title": "A2World/README.md at main - GitHub",
+      "url": "https://github.com/LogosRoboticsGroup/A2World/blob/main/README.md",
+      "snippet": "By pretraining a model to predict how actions drive visual scene evolution, the resulting world model captures reusable interaction dynamics beyond appearance-level video generation. Concretely, we pretrain a multi-view interactive base diffusion world model, A2World, on large-scale robot manipulation data with real action annotations."
+    },
+    {
+      "title": "Learning Transferable Dynamics Priors from Action to World Modeling",
+      "url": "https://arxiv.org/abs/2606.29501",
+      "snippet": "We study action-conditioned world modeling as a scalable way to learn transferable dynamics priors for robot learning. By pretraining a model to predict how actions drive visual scene evolution, the resulting world model captures reusable interaction dynamics beyond appearance-level video generation. Concretely, we pretrain a multi-view interactive base diffusion world model, A2World, on large ..."
+    },
+    {
+      "title": "Learning Transferable Dynamics Priors from Action to World Modeling",
+      "url": "https://arxiv.org/html/2606.29501v1",
+      "snippet": "Abstract We study action-conditioned world modeling as a scalable way to learn transferable dynamics priors for robot learning. By pretraining a model to predict how actions drive visual scene evolution, the resulting world model captures reusable interaction dynamics beyond appearance-level video generation. Concretely, we pretrain a multi-view interactive base diffusion world model, A2World ..."
+    }
+  ]
+}

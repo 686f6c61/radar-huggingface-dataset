@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lil-lab/CoLMLM-Question-Generator",
+  "slug": "lil-lab-colmlm-question-generator",
+  "author": "lil-lab",
+  "url": "https://huggingface.co/lil-lab/CoLMLM-Question-Generator",
+  "created_at": "2026-08-18T02:36:49.000Z",
+  "updated_at": "2026-08-18T02:55:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "co-lmlm",
+    "annotation",
+    "lora",
+    "text-generation",
+    "conversational",
+    "arxiv:2607.07707",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306961605,
+  "storage_human": "307 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lil-lab/Co-LMLM",
+      "url": "https://github.com/lil-lab/Co-LMLM",
+      "snippet": "Model — lil-lab/CoLMLM-360M-FW: the 360M SmolLM2-based Co-LMLM retriever trained on FineWeb-Edu (HF model repo: weights + tokenizer). Loaded with the standard HF loader; the fact special tokens (<FACT> etc.) are in the tokenizer."
+    },
+    {
+      "title": "Co-LMLM - a lil-lab Collection",
+      "url": "https://huggingface.co/collections/lil-lab/co-lmlm",
+      "snippet": "Co-LMLM: Continuous-Query Limited Memory Language Models. Released model checkpoints and retrieval artifacts."
+    },
+    {
+      "title": "Co-LMLM: Continuous-Query Limited Memory Language Models",
+      "url": "https://arxiv.org/html/2607.07707v1",
+      "snippet": "We evaluate Co-LMLM against Rel-LMLM models of comparable size and standard baselines trained on the same corpus without knowledge externalization. Across model scales, Co-LMLM achieves lower perplexity than standard models, substantially improves factual precision over both standard and Rel-LMLM, while preserving downstream NLU performance."
+    },
+    {
+      "title": "Co-LMLM: Continuous-Query Limited Memory Language Models",
+      "url": "https://arxiv.org/abs/2607.07707",
+      "snippet": "Limited memory language models (LMLMs) externalize factual knowledge during pretraining to a knowledge base (KB), rather than memorizing it in their weights. During generation, the model then fetches knowledge from the KB as needed. This recently introduced paradigm provides multiple advantages, including knowledge control capabilities that remain beyond conventional LLMs. We propose ..."
+    },
+    {
+      "title": "Co-LMLM/src/annotation/training/question_generator/train.py at main ...",
+      "url": "https://github.com/lil-lab/Co-LMLM/blob/main/src/annotation/training/question_generator/train.py",
+      "snippet": "Contribute to lil-lab/Co-LMLM development by creating an account on GitHub."
+    }
+  ]
+}

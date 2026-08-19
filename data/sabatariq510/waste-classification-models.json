@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SabaTariq510/waste-classification-models",
+  "slug": "sabatariq510-waste-classification-models",
+  "author": "SabaTariq510",
+  "url": "https://huggingface.co/SabaTariq510/waste-classification-models",
+  "created_at": "2026-08-18T11:57:41.000Z",
+  "updated_at": "2026-08-18T12:18:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "image-classification",
+    "object-detection",
+    "waste-classification",
+    "recycling",
+    "mobilenet",
+    "yolov8",
+    "tensorflow",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20216929,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - manuelamc14/waste-classification-model: Waste classification ...",
+      "url": "https://github.com/manuelamc14/waste-classification-model",
+      "snippet": "In order to make a significant impact in waste sorting plants and on the recycling rate globally, much more sophisticated models, i.e., ones that can classify materials into multiple categories and sub-categories, would need to be developed so that waste could be efficiently and correctly sorted at a large scale level."
+    },
+    {
+      "title": "An automated waste classification system using deep learning techniques ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0950705125000760",
+      "snippet": "The effectiveness of the model is confirmed by comparing it to advanced transfer learning methods. Various explainable AI (XAI) methods are used to explore the interpretability and decision-making capability of the proposed model."
+    },
+    {
+      "title": "A Systematic Review of AI-Based Techniques for Automated Waste ... - MDPI",
+      "url": "https://www.mdpi.com/1424-8220/25/10/3181",
+      "snippet": "This systematic literature review (SLR) explores the role of artificial intelligence (AI), particularly machine learning (ML) and deep learning (DL), in automating waste classification. Using Kitchenham&#x27;s and PRISMA guidelines, we analyze over 97 studies, categorizing AI-based techniques into ML-based, DL-based, and hybrid models."
+    },
+    {
+      "title": "GitHub - Salaar-Saaiem/AI-powered-Waste-Classification-System-using ...",
+      "url": "https://github.com/Salaar-Saaiem/AI-powered-Waste-Classification-System-using-deep-learning",
+      "snippet": "AI-powered waste classification system using deep learning, Combines a custom CNN and EfficientNet (transfer learning). Achieves 99% training and 95% validation accuracy. Classifies images into cardboard, glass, metal, paper, plastic, and trash. Includes prediction, evaluation, and visualization tools."
+    },
+    {
+      "title": "A Systematic Review of AI-Based Techniques for Automated Waste ...",
+      "url": "https://www.researchgate.net/publication/391865818_A_Systematic_Review_of_AI-Based_Techniques_for_Automated_Waste_Classification",
+      "snippet": "The roadmap integrates insights on model accuracy, system efficiency, and sustainability goals to support the practical deployment of AI-powered waste classification systems."
+    }
+  ]
+}

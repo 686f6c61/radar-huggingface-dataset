@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Luanneee/ominiVLM",
+  "slug": "luanneee-ominivlm",
+  "author": "Luanneee",
+  "url": "https://huggingface.co/Luanneee/ominiVLM",
+  "created_at": "2026-08-16T13:41:49.000Z",
+  "updated_at": "2026-08-17T02:00:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "vision",
+    "vlm",
+    "multimodal",
+    "mini-mind-v",
+    "qwen2.5-vl",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11910304247,
+  "storage_human": "11.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

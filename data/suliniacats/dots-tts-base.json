@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "suliniacats/dots.tts-base",
+  "slug": "suliniacats-dots-tts-base",
+  "author": "suliniacats",
+  "url": "https://huggingface.co/suliniacats/dots.tts-base",
+  "created_at": "2026-08-17T13:08:04.000Z",
+  "updated_at": "2026-08-17T13:08:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "dots_tts",
+  "languages": [],
+  "tags": [
+    "dots_tts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "audio",
+    "speech-synthesis",
+    "voice-cloning",
+    "autoregressive",
+    "flow-matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2198091778,
+  "parameters_human": "2.20B",
+  "storage_bytes": 13952923749,
+  "storage_human": "14.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - studio-dots-ai/dots.tts · GitHub",
+      "url": "https://github.com/studio-dots-ai/dots.tts",
+      "snippet": "Contribute to studio-dots-ai/dots.tts development by creating an account on GitHub."
+    },
+    {
+      "title": "dots.tts-base: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dots.tts-base-rednote-hilab",
+      "snippet": "Overview dots.tts-base is a 2-billion-parameter fully continuous, end-to-end autoregressive text-to-speech system developed by rednote-hilab. The model combines a semantic encoder, a language model initialized from Qwen2.5-1.5B-Base, and an autoregressive flow-matching acoustic head operating over a 48 kHz AudioVAE with no discrete codec tokens in the pipeline. Trained on approximately 1.5 ..."
+    },
+    {
+      "title": "dots-studio/dots.tts-base · Hugging Face",
+      "url": "https://huggingface.co/dots-studio/dots.tts-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dots.tts - a dots-studio Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/dots-studio/dotstts",
+      "snippet": "dots.tts Models Datasets Spaces Docs Pricing Website"
+    },
+    {
+      "title": "dots.tts — Demo Page",
+      "url": "https://studio-dots-ai.github.io/dots.tts-demo/",
+      "snippet": "Across other benchmarks, dots.tts also consistently demonstrates open-source state-of-the-art performance, exhibiting strong generation stability, voice cloning ability, and emotional expressiveness."
+    }
+  ]
+}

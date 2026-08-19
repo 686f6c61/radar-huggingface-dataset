@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "biali/bonsai-image-binary-4B-GGUF",
+  "slug": "biali-bonsai-image-binary-4b-gguf",
+  "author": "biali",
+  "url": "https://huggingface.co/biali/bonsai-image-binary-4B-GGUF",
+  "created_at": "2026-08-15T22:38:30.000Z",
+  "updated_at": "2026-08-15T22:38:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "flux",
+    "bonsai",
+    "text-to-image",
+    "base_model:prism-ml/bonsai-image-binary-4B-unpacked",
+    "base_model:quantized:prism-ml/bonsai-image-binary-4B-unpacked",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 9464550873,
+  "storage_human": "9.5 GB",
+  "base_model": "prism-ml/bonsai-image-binary-4B-unpacked",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

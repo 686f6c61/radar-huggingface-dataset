@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Akshat1326/voice-rag-onnx-embedder",
+  "slug": "akshat1326-voice-rag-onnx-embedder",
+  "author": "Akshat1326",
+  "url": "https://huggingface.co/Akshat1326/voice-rag-onnx-embedder",
+  "created_at": "2026-08-17T11:01:28.000Z",
+  "updated_at": "2026-08-17T11:09:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135169383,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "voice-rag · PyPI",
+      "url": "https://pypi.org/project/voice-rag/",
+      "snippet": "Provider-agnostic voice RAG pipeline. Plug in your voice provider, LLM, vector store, and document parsers."
+    },
+    {
+      "title": "GitHub - Azure-Samples/aisearch-openai-rag-audio: A simple example ...",
+      "url": "https://github.com/Azure-Samples/aisearch-openai-rag-audio",
+      "snippet": "A simple example implementation of the VoiceRAG pattern to power interactive voice generative AI experiences using RAG with Azure AI Search and Azure OpenAI&#x27;s gpt-4o-realtime-preview model."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Models compatible with the ONNX library - Hugging Face",
+      "url": "https://huggingface.co/models?library=onnx",
+      "snippet": "Edit Models filters. Main ; Tasks ; Libraries 1; Languages ; Licenses ; Other ; Reset Libraries. PyTorch. google-tensorflow. TensorFlow. JAX. Safetensors ..."
+    }
+  ]
+}

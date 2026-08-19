@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "23f1000805/tds-carbon-card",
+  "slug": "23f1000805-tds-carbon-card",
+  "author": "23f1000805",
+  "url": "https://huggingface.co/23f1000805/tds-carbon-card",
+  "created_at": "2026-08-18T13:25:23.000Z",
+  "updated_at": "2026-08-18T13:26:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tds-project-2/index.html at main · 23f1000805/tds-project-2",
+      "url": "https://github.com/23f1000805/tds-project-2/blob/main/index.html",
+      "snippet": "📊 Data Analysis API powered by FastAPI, LangChain, and AI — supports text, web scraping, and multi-modal workflows with Docker-ready deployment. - 23f1000805/tds-project-2"
+    },
+    {
+      "title": "tds-project-1/app.py at main · 23f1000805/tds-project-1 · GitHub",
+      "url": "https://github.com/23f1000805/tds-project-1/blob/main/app.py",
+      "snippet": "Contribute to 23f1000805/tds-project-1 development by creating an account on GitHub."
+    },
+    {
+      "title": "carbontxt.org",
+      "url": "https://carbontxt.org/ai-model-cards",
+      "snippet": "AI Model Sustainability Directory Using the carbon.txt syntax and validator, we have extracted the sustainability data from over 2500 AI model cards from Hugging Face that are listed with co2_eq_emissions metadata."
+    },
+    {
+      "title": "TDS ROE Solver API T12026 - a Hugging Face Space by 23f1000805",
+      "url": "https://huggingface.co/spaces/23f1000805/tds-roe-solver-api-t12026",
+      "snippet": "Provide a collection of web APIs that give each student an isolated workspace by including their email in the URL path. You can send simple GET or POST requests to get statistical summaries, verify..."
+    },
+    {
+      "title": "Datasheet Archive Search Engine",
+      "url": "https://www.datasheetarchive.com/",
+      "snippet": "Datasheet Archive is a datasheet search engine with 500 million electronic component datasheets from over 15,000 manufacturers."
+    }
+  ]
+}

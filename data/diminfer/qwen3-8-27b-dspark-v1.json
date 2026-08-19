@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "DimInfer/Qwen3.8-27B-Dspark-v1",
+  "slug": "diminfer-qwen3-8-27b-dspark-v1",
+  "author": "DimInfer",
+  "url": "https://huggingface.co/DimInfer/Qwen3.8-27B-Dspark-v1",
+  "created_at": "2026-08-16T10:58:27.000Z",
+  "updated_at": "2026-08-16T10:58:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

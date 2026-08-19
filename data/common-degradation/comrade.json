@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "common-degradation/comrade",
+  "slug": "common-degradation-comrade",
+  "author": "common-degradation",
+  "url": "https://huggingface.co/common-degradation/comrade",
+  "created_at": "2026-08-18T09:23:30.000Z",
+  "updated_at": "2026-08-18T09:28:00.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "adapter-transformers",
+  "languages": [
+    "ru",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "adapter-transformers",
+    "ru",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SergeiKarulin/ComradeAI: Comrade AI is an open-source ...",
+      "url": "https://github.com/SergeiKarulin/ComradeAI",
+      "snippet": "ComradeAI Comrade AI is an open source framework that connects various AI services into one unified system. It allows you to build automated workflows and create specialized bots for specific tasks like scheduling or customer service. With Comrade AI, you can enable seamless communication across different platforms, including chat, email, and ..."
+    },
+    {
+      "title": "commondegradation (commonDegradation) · GitHub",
+      "url": "https://github.com/commondegradation",
+      "snippet": "don&#x27;t read it. commondegradation has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Model collapse - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Model_collapse",
+      "snippet": "Characteristics Shumailov et al. [9] coined the term to describe two specific stages to the degradation of machine learning models: early model collapse and late model collapse: In early model collapse, the model begins losing information about the tails of the distribution - mostly affecting minority data."
+    },
+    {
+      "title": "ComradeAI · PyPI",
+      "url": "https://pypi.org/project/ComradeAI/",
+      "snippet": "ComradeAI Comrade AI is an open source framework to assemble AI services like Claude, Gemini Pro, ChatGPT, YandexGPT, LLaMa 3 and many more into unified intelligent agents to build a collaborative network."
+    },
+    {
+      "title": "Temporal quality degradation in AI models | Scientific Reports",
+      "url": "https://www.nature.com/articles/s41598-022-15245-z",
+      "snippet": "In this study, we present the first analysis of AI \"aging\": the complex, multifaceted phenomenon of AI model quality degradation as more time passes since the last model training cycle."
+    }
+  ]
+}

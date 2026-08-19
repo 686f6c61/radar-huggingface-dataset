@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexander91306/so101-pick-cube-tray-act",
+  "slug": "alexander91306-so101-pick-cube-tray-act",
+  "author": "alexander91306",
+  "url": "https://huggingface.co/alexander91306/so101-pick-cube-tray-act",
+  "created_at": "2026-08-19T00:23:59.000Z",
+  "updated_at": "2026-08-19T00:24:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Fabes07/pick-cube-tray-v9-home-consistency_20260812_144857",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712944,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexander91306/so101-pick-cube-act · Hugging Face",
+      "url": "https://huggingface.co/alexander91306/so101-pick-cube-act",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alexander91306 (Edgar Gonzalez) - Hugging Face",
+      "url": "https://huggingface.co/alexander91306/models",
+      "snippet": "alexander91306&#x27;s models1 Sort: Recently updated alexander91306/so101-pick-cube-act Robotics • 51.7M•Updated 12 days ago• 57"
+    },
+    {
+      "title": "grasp-cube-sample/grasp_cube/envs/tasks/pick_cube_so101.py at main ...",
+      "url": "https://github.com/CTP314/grasp-cube-sample/blob/main/grasp_cube/envs/tasks/pick_cube_so101.py",
+      "snippet": "Contribute to CTP314/grasp-cube-sample development by creating an account on GitHub."
+    },
+    {
+      "title": "physical-ai-sprint-handbook/index.html at main - GitHub",
+      "url": "https://github.com/opencolin/physical-ai-sprint-handbook/blob/main/index.html",
+      "snippet": "Interactive web version of The Physical AI Sprint hackathon guide - opencolin/physical-ai-sprint-handbook"
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    }
+  ]
+}

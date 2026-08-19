@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "codewithmehru/kathe2026-kashmiri-lora",
+  "slug": "codewithmehru-kathe2026-kashmiri-lora",
+  "author": "codewithmehru",
+  "url": "https://huggingface.co/codewithmehru/kathe2026-kashmiri-lora",
+  "created_at": "2026-08-17T14:52:28.000Z",
+  "updated_at": "2026-08-17T14:55:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:ai4bharat/indictrans2-en-indic-dist-200M",
+    "base_model:adapter:ai4bharat/indictrans2-en-indic-dist-200M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26032096,
+  "storage_human": "26 MB",
+  "base_model": "ai4bharat/indictrans2-en-indic-dist-200M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

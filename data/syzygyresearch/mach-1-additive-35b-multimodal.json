@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "SyzygyResearch/Mach-1-Additive-35B-Multimodal",
+  "slug": "syzygyresearch-mach-1-additive-35b-multimodal",
+  "author": "SyzygyResearch",
+  "url": "https://huggingface.co/SyzygyResearch/Mach-1-Additive-35B-Multimodal",
+  "created_at": "2026-08-05T01:14:37.000Z",
+  "updated_at": "2026-08-15T00:35:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 185,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22478762946,
+  "storage_human": "22.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreGroundFlorence2base",
+  "slug": "libreyolo-libregroundflorence2base",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreGroundFlorence2base",
+  "created_at": "2026-08-15T23:30:32.000Z",
+  "updated_at": "2026-08-15T23:30:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "safetensors",
+    "florence2",
+    "image-text-to-text",
+    "grounding",
+    "base_model:florence-community/Florence-2-base",
+    "base_model:finetune:florence-community/Florence-2-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 231546368,
+  "parameters_human": "231.5M",
+  "storage_bytes": 463178864,
+  "storage_human": "463 MB",
+  "base_model": "florence-community/Florence-2-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

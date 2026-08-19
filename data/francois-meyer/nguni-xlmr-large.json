@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "francois-meyer/nguni-xlmr-large",
+  "slug": "francois-meyer-nguni-xlmr-large",
+  "author": "francois-meyer",
+  "url": "https://huggingface.co/francois-meyer/nguni-xlmr-large",
+  "created_at": "2024-05-16T11:57:06.000Z",
+  "updated_at": "2026-08-18T12:58:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "xh",
+    "zu",
+    "nr",
+    "ss"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "xlm-roberta",
+    "fill-mask",
+    "xh",
+    "zu",
+    "nr",
+    "ss",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4486404876,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "francois-meyer/nguni-xlmr-large · Hugging Face",
+      "url": "https://huggingface.co/francois-meyer/nguni-xlmr-large",
+      "snippet": "francois-meyer / nguni-xlmr-large like 0 Fill-Mask Transformers PyTorch 4 languages xlm-roberta Inference Endpoints License:mit Model card FilesFiles and versions Community Train Deploy Use this model Edit model card Usage:"
+    },
+    {
+      "title": "francois-meyer/nguni-xlmr-large at main - Hugging Face",
+      "url": "https://huggingface.co/francois-meyer/nguni-xlmr-large/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Designing and Contextualising Probes for African Languages",
+      "url": "https://arxiv.org/html/2505.10081v2",
+      "snippet": "Nguni-XLMR-large performs best for isiXhosa and Luganda (which is also of the Bantu language family). The more focussed, linguistically oriented adaptation of Nguni-XLMR effectively enhances linguistic knowledge for a more limited set of related languages."
+    },
+    {
+      "title": "About | Francois Meyer",
+      "url": "https://francois-meyer.github.io/",
+      "snippet": "Francois Meyer, Haiyue Song, Abhisek Chakrabarty, Jan Buys, Raj Dabre and Hideki Tanaka [benchmark] May 2024 Our paper NGLUEni: Benchmarking and Adapting Pretrained Language Models for Nguni Languages won a best paper award at the AfricaNLP workshop co-located with ICLR 2024."
+    },
+    {
+      "title": "Neural Morphological Tagging for Nguni Languages - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.12949",
+      "snippet": "For PLMs, we finetune XLM-R-large (Conneau et al., 2020), Afro-XLMR-large (Alabi et al., 2022), and Nguni-XLMR-large (Meyer et al., 2024), which respectively represent different levels of Nguni-language coverage. We develop neural taggers based on two types of morphological segmentations: canonical and sur-face segmentations (Cotterell et al ..."
+    }
+  ]
+}

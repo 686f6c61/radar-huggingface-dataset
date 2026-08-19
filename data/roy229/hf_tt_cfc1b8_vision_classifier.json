@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Roy229/hf_tt_cfc1b8_vision_classifier",
+  "slug": "roy229-hf_tt_cfc1b8_vision_classifier",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/hf_tt_cfc1b8_vision_classifier",
+  "created_at": "2026-08-15T05:47:49.000Z",
+  "updated_at": "2026-08-17T04:00:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "computer-vision",
+    "aurora-model",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229/hf8435_model_registry_e73c8271 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Roy229/hf8435_model_registry_e73c8271",
+      "snippet": "Curated Image Generation Model Registry A curated registry of the most widely adopted open-source text-to-image (image generation) models published on the Hugging Face Hub, together with key adoption metrics (downloads, likes, license, task) and an internal tier classification used by the AI Platform team to help product teams select the right model for their projects."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "AI Image Classifier (Flask & PyTorch) - GitHub",
+      "url": "https://github.com/AtharvaMeherkar/AI-Image-Classifier",
+      "snippet": "This project is a web-based application that allows users to upload an image and receive a classification prediction (identifying what the image contains) using a pre-trained deep learning model. It serves as a practical demonstration of applying Artificial Intelligence in Computer Vision and the deployment of a machine learning model within a web environment using Python Flask and PyTorch."
+    }
+  ]
+}

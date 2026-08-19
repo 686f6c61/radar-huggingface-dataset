@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jaromer/trohrbaugh-Qwen3.8-27B-heretic-ara",
+  "slug": "jaromer-trohrbaugh-qwen3-8-27b-heretic-ara",
+  "author": "jaromer",
+  "url": "https://huggingface.co/jaromer/trohrbaugh-Qwen3.8-27B-heretic-ara",
+  "created_at": "2026-08-16T20:00:56.000Z",
+  "updated_at": "2026-08-16T20:00:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "ara",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55582996628,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trohrbaugh/Qwen3.8-27B-heretic-ara · Hugging Face",
+      "url": "https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Quantized Models for trohrbaugh/Qwen3.8-27B-heretic-ara - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:trohrbaugh/Qwen3.8-27B-heretic-ara",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset trohrbaugh/Qwen3.8-27B-heretic-ara Adapters Finetunes Quantizations Merges Apps Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed ..."
+    },
+    {
+      "title": "Qwen3.8 27B Heretic Ara by trohrbaugh - LLM Explorer",
+      "url": "https://llm-explorer.com/model/trohrbaugh%2FQwen3.8-27B-heretic-ara,3lOkoblJbLCrW6LcRlJIk",
+      "snippet": "Qwen3.8 27B Heretic Ara is an open-source 27b LLM by trohrbaugh. VRAM 54.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic: Fully automatic censorship removal for language models Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

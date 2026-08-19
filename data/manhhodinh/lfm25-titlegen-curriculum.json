@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ManhHoDinh/lfm25-titlegen-curriculum",
+  "slug": "manhhodinh-lfm25-titlegen-curriculum",
+  "author": "ManhHoDinh",
+  "url": "https://huggingface.co/ManhHoDinh/lfm25-titlegen-curriculum",
+  "created_at": "2026-08-01T04:16:29.000Z",
+  "updated_at": "2026-08-16T18:10:38.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "title-generation",
+    "multilingual",
+    "conversational",
+    "en",
+    "vi",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:finetune:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 211,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 459401112,
+  "storage_human": "459 MB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

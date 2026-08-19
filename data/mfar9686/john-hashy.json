@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Mfar9686/John-hashy",
+  "slug": "mfar9686-john-hashy",
+  "author": "Mfar9686",
+  "url": "https://huggingface.co/Mfar9686/John-hashy",
+  "created_at": "2026-08-14T00:09:38.000Z",
+  "updated_at": "2026-08-14T00:50:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mfar9686 (Matthew) - Hugging Face",
+      "url": "https://huggingface.co/Mfar9686",
+      "snippet": "Recent Activity published a Spaceabout 6 hours ago Mfar9686/Termux published a Spaceabout 6 hours ago Mfar9686/Barowski View all activity"
+    },
+    {
+      "title": "Mfar9686 (Matthew) - Hugging Face",
+      "url": "https://huggingface.co/Mfar9686/models",
+      "snippet": "Recent Activity published a Spaceabout 7 hours ago Mfar9686/Termux published a Spaceabout 7 hours ago Mfar9686/Barowski View all activity"
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "John6666 (John Smith) - Hugging Face",
+      "url": "https://huggingface.co/John6666",
+      "snippet": "User profile of John Smith on Hugging Face"
+    }
+  ]
+}

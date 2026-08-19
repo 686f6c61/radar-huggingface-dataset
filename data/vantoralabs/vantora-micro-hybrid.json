@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "VantoraLabs/Vantora-Micro-Hybrid",
+  "slug": "vantoralabs-vantora-micro-hybrid",
+  "author": "VantoraLabs",
+  "url": "https://huggingface.co/VantoraLabs/Vantora-Micro-Hybrid",
+  "created_at": "2026-08-16T11:08:48.000Z",
+  "updated_at": "2026-08-16T11:08:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hybridlm",
+    "text-generation",
+    "hybrid",
+    "mamba",
+    "ssm",
+    "attention",
+    "micro",
+    "nano",
+    "small",
+    "base-model",
+    "banana-mind",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21512,
+  "parameters_human": "21512",
+  "storage_bytes": 89760,
+  "storage_human": "89760 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

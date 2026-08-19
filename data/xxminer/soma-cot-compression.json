@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "XXMiner/soma-cot-compression",
+  "slug": "xxminer-soma-cot-compression",
+  "author": "XXMiner",
+  "url": "https://huggingface.co/XXMiner/soma-cot-compression",
+  "created_at": "2026-08-16T04:10:34.000Z",
+  "updated_at": "2026-08-17T08:27:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOMA | AI Context Compression for Lower Token Costs",
+      "url": "https://thesoma.ai/",
+      "snippet": "SOMA reduces AI token costs through context compression and CoT compression, cutting LLM inference spend while preserving response quality and accuracy."
+    },
+    {
+      "title": "Model Context Protocol | SOMA",
+      "url": "https://thesoma.ai/mcp",
+      "snippet": "SOMA is a token compression layer for AI agents and LLM pipelines. It reduces the number of tokens sent to the model - cutting inference costs without degrading output quality. SOMA specializes in two compression types: Context Compression, which strips redundancy from long inputs before they reach the model, and CoT Compression, which condenses an agent&#x27;s accumulated session history so multi ..."
+    },
+    {
+      "title": "GitHub - DendriteHQ/SOMA",
+      "url": "https://github.com/DendriteHQ/SOMA",
+      "snippet": "Current competition: Agent CoT Compression The second MCP challenge focuses on CoT compression - a critical problem for reducing costs and improving quality for AI agents."
+    },
+    {
+      "title": "SOMA (@SomaSubnet) / Posts / X",
+      "url": "https://x.com/somasubnet",
+      "snippet": "SOMA is building context compression for real AI agents - the kind that use tools, inspect repos, run commands, edit files, fail, recover, and keep working. The question is simple: Can we cut the agent&#x27;s token usage without breaking the task?"
+    },
+    {
+      "title": "SOMA SN114 turns context cost into a Bittensor target",
+      "url": "https://www.taooutsider.com/blog/soma-sn114-context-compression-bittensor/",
+      "snippet": "SOMA SN114 is making a specific claim about Bittensor agents: long context is expensive, and a subnet can compete on reducing that cost. The strongest source today is the combination of a July 7 SOMA post and fresh GitHub movement in the DendriteHQ/SOMA repository. SOMA says the same 24 hour workload would cost less under its compression path."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aadi-x16/maya",
+  "slug": "aadi-x16-maya",
+  "author": "aadi-x16",
+  "url": "https://huggingface.co/aadi-x16/maya",
+  "created_at": "2026-08-14T04:31:34.000Z",
+  "updated_at": "2026-08-17T05:40:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24154634,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Building a hill-climbing machine: Launching seven new MAI models ...",
+      "url": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/",
+      "snippet": "Here&#x27;s our first steps along the way. Our Models Our new models across image, voice, transcription, coding, and reasoning, together form the MAI model family: a multimodal ecosystem designed to work across the kinds of tasks that matter in the real world. MAI-Thinking-1, Microsoft AI&#x27;s flagship reasoning model."
+    },
+    {
+      "title": "GitHub - VenomWave/Maya-Bot: A lifelike female AI 3D model designed for ...",
+      "url": "https://github.com/VenomWave/Maya-Bot",
+      "snippet": "A lifelike female AI 3D model designed for natural, real-time conversation. It features expressive facial animation, fluid micro-gestures, and a warm, approachable presence."
+    },
+    {
+      "title": "Models - Microsoft AI",
+      "url": "https://microsoft.ai/models/",
+      "snippet": "Helps your engineering team write better code faster, with a lightweight, agentic model built into GitHub Copilot and VS Code."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AADI • X16 (@aadi._x16) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aadi._x16/",
+      "snippet": "701 Followers, 279 Following, 47 Posts - AADI • X16 📸 (@aadi._x16) on Instagram: \"• 𝐒𝐀𝐁𝐀𝐑 𝟏𝐊 🕊️ •📍𝐏𝐀𝐓𝐍𝐀 ..."
+    }
+  ]
+}

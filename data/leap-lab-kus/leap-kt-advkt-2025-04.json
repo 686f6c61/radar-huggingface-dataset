@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "LEAP-LAB-KUS/leap-kt-advkt-2025-04",
+  "slug": "leap-lab-kus-leap-kt-advkt-2025-04",
+  "author": "LEAP-LAB-KUS",
+  "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-advkt-2025-04",
+  "created_at": "2026-08-08T22:46:59.000Z",
+  "updated_at": "2026-08-18T12:45:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "leap-kt",
+  "languages": [],
+  "tags": [
+    "leap-kt",
+    "safetensors",
+    "knowledge-tracing",
+    "education",
+    "educational-data-mining",
+    "advkt",
+    "dataset:assist2009",
+    "dataset:dbe_kt22",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51079716,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-advkt-2025-04 · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-advkt-2025-04",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-advkt-2025-04 at main - Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-advkt-2025-04/tree/main",
+      "snippet": "/ leap-kt-advkt-2025-04 like 0 Follow LEAP-LAB-KUS 11 Safetensors assist2009 leap-kt knowledge-tracing education educational-data-mining advkt License:mit Model card FilesFiles and versions xet Community Copy to bucket new main leap-kt-advkt-2025-04 49.6 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Unggi leap-kt: 1 dataset (s), 23 files ..."
+    },
+    {
+      "title": "LEAP Lab @ Tsinghua University | Machine Learning & AI Research",
+      "url": "https://www.leaplab.ai/",
+      "snippet": "The Learning And Perception (LEAP) Lab at Tsinghua University conducts cutting-edge research in machine learning, multi-modal learning, and embodied intelligence. We focus on developing robust, scalable, and generalizable foundation models for the next generation of artificial intelligence."
+    },
+    {
+      "title": "Publications | LEAP Lab @ Tsinghua University",
+      "url": "https://www.leaplab.ai/publications",
+      "snippet": "Browse our latest research publications in machine learning, computer vision, multi-modal learning, and embodied intelligence from the LEAP Lab at Tsinghua University."
+    },
+    {
+      "title": "[2504.04706] AdvKT: An Adversarial Multi-Step Training Framework for ...",
+      "url": "https://arxiv.org/abs/2504.04706",
+      "snippet": "To address these challenges, we propose a novel Adversarial Multi-Step Training Framework for Knowledge Tracing (AdvKT), which, for the first time, focuses on the multi-step KT task. More specifically, AdvKT leverages adversarial learning paradigm involving a generator and a discriminator."
+    }
+  ]
+}

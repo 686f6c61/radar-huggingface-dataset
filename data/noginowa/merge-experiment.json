@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Noginowa/merge-experiment",
+  "slug": "noginowa-merge-experiment",
+  "author": "Noginowa",
+  "url": "https://huggingface.co/Noginowa/merge-experiment",
+  "created_at": "2026-01-19T10:57:14.000Z",
+  "updated_at": "2026-08-18T11:22:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "merge",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 551,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166563496094,
+  "storage_human": "166.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Noginowa/merge-experiment · Hugging Face",
+      "url": "https://huggingface.co/Noginowa/merge-experiment",
+      "snippet": "Experimental merge model repository. Anima series models are free to use within the scope of the CircleStone Labs Non-Commercial License v1.2, and Illustrious series models within the Fair AI Public License 1.0-SD."
+    },
+    {
+      "title": "README.md · Noginowa/merge-experiment at main - Hugging Face",
+      "url": "https://huggingface.co/Noginowa/merge-experiment/blob/main/README.md",
+      "snippet": "Animaシリーズのモデルは「CircleStone Labs Non-Commercial License v1.2」、Illustriousシリーズのモデルは「Fair AI Public License 1.0-SD」の許諾範囲内において、どなたでも自由にご利用いただけます。 Experimental merge model repository. Anima series models are free to use within the scope of the CircleStone Labs Non-Commercial License v1.2, and ..."
+    },
+    {
+      "title": "Noginowa Creator Profile | Civitai",
+      "url": "https://civitai.com/user/Noginowa/posts",
+      "snippet": "0 collections 5 🧪Experimental merge models ️ https://huggingface.co/Noginowa/merge-experiment"
+    },
+    {
+      "title": "Top safe models by Noginowa on CivitAI - CivArchive",
+      "url": "https://civarchive.com/users/Noginowa",
+      "snippet": "Browse AI models by Noginowa - Download deleted LoRA, Checkpoint, and other AI models from CivArchive."
+    },
+    {
+      "title": "Noginowa Creator Profile | Civitai",
+      "url": "https://civitai.com/user/Noginowa/models",
+      "snippet": "Models Uploaded: 0, Followers: 416, Total Likes Received: 1.9k, Total Downloads Received: 25.5k."
+    }
+  ]
+}

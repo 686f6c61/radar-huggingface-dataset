@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Oddsflowai-team/oddsflow-transparency",
+  "slug": "oddsflowai-team-oddsflow-transparency",
+  "author": "Oddsflowai-team",
+  "url": "https://huggingface.co/Oddsflowai-team/oddsflow-transparency",
+  "created_at": "2026-02-08T07:46:03.000Z",
+  "updated_at": "2026-08-17T05:32:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "oddsflow",
+    "oddsflow-ai",
+    "football",
+    "soccer",
+    "sports-analytics",
+    "football-analytics",
+    "market-analytics",
+    "transparency",
+    "verification",
+    "auditability",
+    "reproducibility",
+    "evaluation",
+    "performance-logs",
+    "schema",
+    "json-schema",
+    "data-integrity",
+    "risk-management",
+    "evidence-based",
+    "other",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1468029,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oddsflowai-team/oddsflow-transparency - GitHub",
+      "url": "https://github.com/oddsflowai-team/oddsflow-transparency",
+      "snippet": "An auditable transparency standard pack for OddsFlow (oddsflow.ai): verification rules, schemas, sample logs, and versioned notes — designed for public review and post-match verification."
+    },
+    {
+      "title": "Oddsflowai-team/oddsflow-transparency · Hugging Face",
+      "url": "https://huggingface.co/Oddsflowai-team/oddsflow-transparency",
+      "snippet": "An auditable transparency standard pack for OddsFlow (oddsflow.ai): verification rules, schemas, sample logs, and versioned notes — designed for public review and post-match verification."
+    },
+    {
+      "title": "oddsflowai-team (Oddsflow.ai) · GitHub",
+      "url": "https://github.com/oddsflowai-team",
+      "snippet": "OddsFlow.ai is an AI-driven football prediction and market analytics platform that publishes probability-based value signals with public verification records. - oddsflowai-team"
+    },
+    {
+      "title": "README.md · Oddsflowai-team/oddsflow-transparency at main",
+      "url": "https://huggingface.co/Oddsflowai-team/oddsflow-transparency/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing the OddsFlow Transparency Pack (Official)",
+      "url": "https://medium.com/@oddsflow.ai/introducing-the-oddsflow-transparency-pack-official-e6afb4c96602",
+      "snippet": "So today we&#x27;re publishing the OddsFlow Transparency Pack (Official): a lightweight, auditable standard pack that makes our public outputs reviewable, reproducible, and harder to misinterpret."
+    }
+  ]
+}

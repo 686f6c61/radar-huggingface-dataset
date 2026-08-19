@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yoshinari1209/smolvla_so101_pick_place_lora",
+  "slug": "yoshinari1209-smolvla_so101_pick_place_lora",
+  "author": "yoshinari1209",
+  "url": "https://huggingface.co/yoshinari1209/smolvla_so101_pick_place_lora",
+  "created_at": "2026-08-18T03:40:22.000Z",
+  "updated_at": "2026-08-18T04:48:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:yoshinari1209/so101_pick_place_50eps_v1_20260817_192908",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44796132,
+  "storage_human": "45 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lerobot-so101/docs/source/smolvla.mdx at main · AriRyo ... - GitHub",
+      "url": "https://github.com/AriRyo/lerobot-so101/blob/main/docs/source/smolvla.mdx",
+      "snippet": "Figure 2: Comparison of SmolVLA across task variations. From left to right: (1) pick-place cube counting, (2) pick-place cube counting, (3) pick-place cube counting under perturbations, and (4) generalization on pick-and-place of the lego block with real-world SO101."
+    },
+    {
+      "title": "README.md · Sa74ll/smolvla_so101_pickandplace at main",
+      "url": "https://huggingface.co/Sa74ll/smolvla_so101_pickandplace/blob/main/README.md",
+      "snippet": "Model Description This is a fine-tuned version of SmolVLA trained on the SO-101 pick-and-place dataset. Key Achievement: Improved from 60.92% to 87.66% success rate (+44%) by implementing position-aware stratified data splitting instead of hyperparameter tuning."
+    },
+    {
+      "title": "lerobot/docs/source/smolvla.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx",
+      "snippet": "SmolVLA is a base model, so fine-tuning on your own data is required for optimal performance in your setup. We recommend recording ~50 episodes of your task as a starting point. Follow our guide to get started: Recording a Dataset In your dataset, make sure to have enough demonstrations per each variation (e.g. the cube position on the table if it is cube pick-place task) you are introducing ..."
+    },
+    {
+      "title": "SmolVLA · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/smolvla",
+      "snippet": "Figure 2: Comparison of SmolVLA across task variations. From left to right: (1) pick-place cube counting, (2) pick-place cube counting, (3) pick-place cube counting under perturbations, and (4) generalization on pick-and-place of the lego block with real-world SO101."
+    },
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "The task: pick up a small cube from a randomized position and place it in a bowl. 10-second episodes, 30fps, recorded via teleoperation with the leader arm. SmolVLA vs ACT # SmolVLA is a 500M+ parameter model, but you only fine-tune ~50M (the action expert + projections). The vision encoder (SigLIP) and language model (SmolLM2) stay frozen."
+    }
+  ]
+}

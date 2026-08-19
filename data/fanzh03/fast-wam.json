@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fanzh03/fast-wam",
+  "slug": "fanzh03-fast-wam",
+  "author": "fanzh03",
+  "url": "https://huggingface.co/fanzh03/fast-wam",
+  "created_at": "2026-08-10T12:17:47.000Z",
+  "updated_at": "2026-08-18T03:19:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1926679710624,
+  "storage_human": "1926.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fanzh03/fast-wam · Hugging Face",
+      "url": "https://huggingface.co/fanzh03/fast-wam",
+      "snippet": "fanzh03 / fast-wam like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Fast-WAM: Do World Action Models Need - arXiv.org",
+      "url": "https://arxiv.org/html/2603.16666v1",
+      "snippet": "Instead of using a pretrained video generation model to iteratively synthesize future frames during inference, Fast-WAM repurposes a pretrained video Diffusion Transformer (DiT) as a single-pass world encoder for action generation."
+    },
+    {
+      "title": "GitHub - yuantianyuan01/FastWAM: Official codebase for Fast-WAM: Do ...",
+      "url": "https://github.com/yuantianyuan01/FastWAM",
+      "snippet": "Official codebase for Fast-WAM: Do World Action Models Need Test-time Future Imagination? This repository contains the training and evaluation code for FastWAM on LIBERO / RoboTwin."
+    },
+    {
+      "title": "[2603.16666] Fast-WAM: Do World Action Models Need Test-time Future ...",
+      "url": "https://arxiv.org/abs/2603.16666",
+      "snippet": "World Action Models (WAMs) have emerged as a promising alternative to Vision-Language-Action (VLA) models for embodied control because they explicitly model how visual observations may evolve under action. Most existing WAMs follow an imagine-then-execute paradigm, incurring substantial test-time latency from iterative video denoising, yet it remains unclear whether explicit future imagination ..."
+    },
+    {
+      "title": "Fast-WAM: Do World Action Models Need Test-time Future Imagination?",
+      "url": "https://yuantianyuan01.github.io/FastWAM/",
+      "snippet": "Core Question Do WAMs benefit mainly from explicit future imagination at inference, or from video modeling during training? Design Fast-WAM preserves world-model supervision during training while using a direct-policy interface at test time."
+    }
+  ]
+}

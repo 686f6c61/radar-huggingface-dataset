@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "23ft/tds-carbon-card",
+  "slug": "23ft-tds-carbon-card",
+  "author": "23ft",
+  "url": "https://huggingface.co/23ft/tds-carbon-card",
+  "created_at": "2026-08-18T13:59:21.000Z",
+  "updated_at": "2026-08-18T14:00:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TDS - MMC Dashboard",
+      "url": "https://mmc.tds.ai/",
+      "snippet": "Access the TDS MMC Dashboard for multi-modal cloud services and manage transportation data efficiently."
+    },
+    {
+      "title": "23 LS - Carolina Skiff",
+      "url": "https://carolinaskiff.com/boats/23-ls/",
+      "snippet": "Explore the 2026 model year 23 LS! Like every Carolina Skiff boat, the hull and deck of the 23 LS are constructed from 100 percent fiberglass/composite material, meaning it will not rot, like wooden-hull vessels. Using the most advanced techniques and technologies when building the LS Series, such as incorporating a high-density foam core transom and a complete liner hull, the 23 LS is a ..."
+    },
+    {
+      "title": "TDS|Transcor Data Services | Enhance Transportation Efficiency Today",
+      "url": "https://www.tds.ai/",
+      "snippet": "Discover TDS, a leader in AI-driven ground transportation solutions, offering route, revenue, inventory, and payment management for transit operators."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "3M 2080 CFS201 Carbon Fiber Anthracite 5ft x 23ft W/Application Card ...",
+      "url": "https://www.alumigogo.com/product_detail.php?id=SKUB078X34KNX",
+      "snippet": "3M 2080 CFS201 Carbon Fiber Anthracite 5ft x 23ft W/Application ..."
+    }
+  ]
+}

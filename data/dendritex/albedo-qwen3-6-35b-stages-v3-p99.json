@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dendritex/albedo-qwen3.6-35b-stages-v3-p99",
+  "slug": "dendritex-albedo-qwen3-6-35b-stages-v3-p99",
+  "author": "Dendritex",
+  "url": "https://huggingface.co/Dendritex/albedo-qwen3.6-35b-stages-v3-p99",
+  "created_at": "2026-08-18T07:52:22.000Z",
+  "updated_at": "2026-08-18T12:40:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100 · Hugging Face",
+      "url": "https://huggingface.co/SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100",
+      "snippet": "Instructions to use SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Dendritex/albedo-qwen3.6-35b-ckpt100 · Hugging Face",
+      "url": "https://huggingface.co/Dendritex/albedo-qwen3.6-35b-ckpt100",
+      "snippet": "Dendritex / albedo-qwen3.6-35b-ckpt100 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100 - friendli.ai",
+      "url": "https://friendli.ai/models/SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100",
+      "snippet": "Run dendritex-albedo-qwen3.6-35b-stages-v3-0814-0100 with FriendliAI inference. Following the February release of the Qwen3.5 series, we&#x27;re pleased to share…"
+    },
+    {
+      "title": "albedo-qwen3.6-35b-stages-v2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Dendritex/albedo-qwen3.6-35b-stages-v2",
+      "snippet": "Deploy albedo-qwen3.6-35b-stages-v2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen3.6 Models | QwenLM/Qwen3.6 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3.6/1.1-qwen3.6-models",
+      "snippet": "Qwen3.6 Models Relevant source files This page provides a detailed technical overview of the Qwen3.6 model family, focusing on the 27B dense model and the 35B-A3B sparse Mixture-of-Experts (MoE) model. Building upon the architectural foundations of Qwen3.5, the Qwen3.6 series introduces specialized capabilities for Agentic Coding and Thinking Preservation, designed to enhance real-world ..."
+    }
+  ]
+}

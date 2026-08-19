@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "HR26kk/ULTRON-mini-512",
+  "slug": "hr26kk-ultron-mini-512",
+  "author": "HR26kk",
+  "url": "https://huggingface.co/HR26kk/ULTRON-mini-512",
+  "created_at": "2026-08-18T08:37:47.000Z",
+  "updated_at": "2026-08-18T08:38:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "safetensors",
+    "ultron",
+    "causal-lm",
+    "pytorch",
+    "from-scratch",
+    "en",
+    "code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 520173056,
+  "parameters_human": "520.2M",
+  "storage_bytes": 1040388336,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UltronAI - The World&#x27;s First Retail AI Foundation Model",
+      "url": "https://ultronai.com/",
+      "snippet": "Patented computer vision foundation models for deterministic product identification. 99.55% accuracy across 250K+ SKUs. 8-33× ROI across retail verticals."
+    },
+    {
+      "title": "GitHub - maharab549/ultron-ai: ULTRON AI - Open Source Manus AI ...",
+      "url": "https://github.com/maharab549/ultron-ai",
+      "snippet": "ULTRON AI is an open-source, general-purpose AI agent system that can autonomously plan, reason and execute complex tasks. Give it a goal and it will break it down, use tools, browse the web, write code, manipulate files, and deliver results — all inside a secure sandboxed environment. Think of it as your own self-hosted alternative to Manus AI, ChatGPT with Code Interpreter, or Devin ..."
+    },
+    {
+      "title": "Ultron AI — Real-Time AI That Sees, Thinks, and Speaks",
+      "url": "https://live.ultronai.me/",
+      "snippet": "Turn any screen into a live AI narrator powered by vision + voice intelligence. 60fps monitoring, local memory, 50+ LLM models."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

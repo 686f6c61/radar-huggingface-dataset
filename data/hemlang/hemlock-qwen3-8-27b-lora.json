@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hemlang/Hemlock-Qwen3.8-27B-LoRA",
+  "slug": "hemlang-hemlock-qwen3-8-27b-lora",
+  "author": "hemlang",
+  "url": "https://huggingface.co/hemlang/Hemlock-Qwen3.8-27B-LoRA",
+  "created_at": "2026-08-18T22:44:40.000Z",
+  "updated_at": "2026-08-18T22:44:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "merlina",
+    "grimoire",
+    "image-text-to-text",
+    "vision-language-model",
+    "sft",
+    "conversational",
+    "dataset:hemlang/Hemlock-SFT-combined",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657599949,
+  "storage_human": "658 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hemlang/Hemlock-Qwen3.8-27B-LoRA-step286 · Hugging Face",
+      "url": "https://huggingface.co/hemlang/Hemlock-Qwen3.8-27B-LoRA-step286",
+      "snippet": "Instructions to use hemlang/Hemlock-Qwen3.8-27B-LoRA-step286 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use hemlang/Hemlock-Qwen3.8-27B-LoRA-step286 with Transformers:"
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "Qwen3.8-27B: Specs, Benchmarks & Verdict - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/",
+      "snippet": "Qwen3.8-27B benchmarks, specs, local memory, context, license and comparisons—plus what Qwen&#x27;s launch-day evidence does and does not prove."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=47&sort=trending&search=Qwen3.8",
+      "snippet": "DareModels/Qwen3.8-2B-Qwopus-Agent-Merge Image-Text-to-Text • 2B•Updated 35 minutes ago"
+    }
+  ]
+}

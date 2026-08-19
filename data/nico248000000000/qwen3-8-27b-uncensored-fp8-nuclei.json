@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "nico248000000000/Qwen3.8-27B-Uncensored-FP8-nuclei",
+  "slug": "nico248000000000-qwen3-8-27b-uncensored-fp8-nuclei",
+  "author": "nico248000000000",
+  "url": "https://huggingface.co/nico248000000000/Qwen3.8-27B-Uncensored-FP8-nuclei",
+  "created_at": "2026-08-18T09:48:58.000Z",
+  "updated_at": "2026-08-18T10:18:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "unsloth",
+    "lora",
+    "qlora",
+    "nuclei",
+    "vision",
+    "video",
+    "conversational",
+    "en",
+    "fr",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored-FP8",
+    "base_model:adapter:orcarouter/Qwen3.8-27B-Uncensored-FP8",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53192540847,
+  "storage_human": "53.2 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Causal language modeling",
+      "dataset": "nuclei SFT holdout",
+      "metric": "eval_loss",
+      "value": 14.090689
+    }
+  ],
+  "sources": [
+    {
+      "title": "Noillum123 | Qwen3.8-27B-Uncensored-FP8 | Kaggle",
+      "url": "https://www.kaggle.com/models/noillum123/qwen3-8-27b-uncensored-fp8",
+      "snippet": "Qwen3.8-27B-Uncensored-FP8 is an abliterated (refusal-removed) and offline block-FP8 quantized build of Qwen&#x27;s Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with flexible thinking control, tool-calling, and an MTP speculative-decoding head."
+    },
+    {
+      "title": "Fine-tuned Models for Qwen/Qwen3.8-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Qwen%2FQwen3.8-27B&p=0&sort=trending",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Qwen/Qwen3.8-27B Adapters Finetunes Quantizations Merges Apps Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc ..."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Free Qwen3.8-27B AI model lands, grabs over 3 million downloads in one ...",
+      "url": "https://cybernews.com/tech/qwen-38-27b-ai-model-debuts-with-million-downloads/",
+      "snippet": "Alibaba&#x27;s newly released free, open-weight AI model, Qwen3.8-27B is gaining momentum, amassing over 3 million downloads in its opening weekend as developers and prosumers seek its performance capabilities on consumer hardware."
+    }
+  ]
+}

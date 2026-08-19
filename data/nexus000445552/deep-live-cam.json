@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "nexus000445552/deep-live-cam",
+  "slug": "nexus000445552-deep-live-cam",
+  "author": "nexus000445552",
+  "url": "https://huggingface.co/nexus000445552/deep-live-cam",
+  "created_at": "2026-08-16T09:38:42.000Z",
+  "updated_at": "2026-08-16T09:38:43.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55329874472,
+  "storage_human": "55.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

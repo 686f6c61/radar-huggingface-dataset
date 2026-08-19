@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jarrelscy/DeepSeek-V4-Pro-0813-NVFP4-AQLM-hybrid",
+  "slug": "jarrelscy-deepseek-v4-pro-0813-nvfp4-aqlm-hybrid",
+  "author": "jarrelscy",
+  "url": "https://huggingface.co/jarrelscy/DeepSeek-V4-Pro-0813-NVFP4-AQLM-hybrid",
+  "created_at": "2026-08-15T21:20:40.000Z",
+  "updated_at": "2026-08-16T05:01:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v4",
+    "nvfp4",
+    "aqlm",
+    "hybrid",
+    "moe",
+    "vllm",
+    "base_model:deepseek-ai/DeepSeek-V4-Pro-0813",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Pro-0813",
+    "license:mit",
+    "nvfp4_aqlm_hybrid",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 270465258487,
+  "parameters_human": "270.47B",
+  "storage_bytes": 359658821420,
+  "storage_human": "359.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jarrelscy/DeepSeek-V4-Pro-0813-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/jarrelscy/DeepSeek-V4-Pro-0813-NVFP4",
+      "snippet": "The 0813 release already ships experts as MXFP4 (e2m1 + UE8M0 group-32 scales); there is no BF16 master on the Hub. This checkpoint transcodes those experts MXFP4 → NVFP4 (dequant to bf16, requantize to group-16 e4m3)."
+    },
+    {
+      "title": "README.md · deepseek-ai/DeepSeek-V4-Pro-0813 at main",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/main/README.md",
+      "snippet": "DeepSeek-V4-Pro-0813 is the official release of DeepSeek-V4-Pro, superseding the preview version, with greatly enhanced agentic capabilities and performance improvements that are especially pronounced in production environments."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "DeepSeek V4 Pro 0813 model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/deepseek/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 Pro 0813 is the general-availability release of DeepSeek V4 Pro, built for coding, tool use, cybersecurity, automation, and long-horizon agent workflows. DeepSeek reports strong gains over the preview and scores above Opus 4.8 on Terminal Bench 2.1, Cybergym, DeepSWE, and AutomationBench. It supports a 1M-token context window. For now, this model routes directly through DeepSeek ..."
+    },
+    {
+      "title": "DeepSeek-V4-Pro-0813 — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/deepseek/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek-V4-Pro-0813 is an AI model released by DeepSeek on Thursday, Aug 13 2026, 13 days after DeepSeek-V4-Flash-0731. Benchmark results (shown below) cover AutomationBench, Terminal-Bench 2.1, Toolathlon-Verified, CyberGym, and Humanity&#x27;s Last Exam."
+    }
+  ]
+}

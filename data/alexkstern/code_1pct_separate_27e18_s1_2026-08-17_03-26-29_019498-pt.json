@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/code_1pct_separate_27e18_s1_2026-08-17_03-26-29_019498-pt",
+  "slug": "alexkstern-code_1pct_separate_27e18_s1_2026-08-17_03-26-29_019498-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/code_1pct_separate_27e18_s1_2026-08-17_03-26-29_019498-pt",
+  "created_at": "2026-08-17T05:53:37.000Z",
+  "updated_at": "2026-08-17T05:54:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_github-code-nanochatbpe-1B",
+    "seed_1",
+    "case_b",
+    "lr_trapezoid",
+    "depth_22",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6133511357,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "declref_01_1pct_27e18_d21_seed1_2026-08-04_04-26-30_277596-pt",
+      "url": "https://huggingface.co/alexkstern/declref_01_1pct_27e18_d21_seed1_2026-08-04_04-26-30_277596-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alexkstern/declref_01_1pct_27e18_d21_seed0_2026-08-04_01-56-51_361330 ...",
+      "url": "https://huggingface.co/alexkstern/declref_01_1pct_27e18_d21_seed0_2026-08-04_01-56-51_361330-ppt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "Google Patents Advanced Search",
+      "url": "https://patents.google.com/advanced",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "WIPO - Search International and National Patent Collections",
+      "url": "https://patentscope.wipo.int/search/",
+      "snippet": "This patent search tool allows you not only to search the PCT database of about 2 million International Applications but also the worldwide patent collections. This search facility features: flexible search syntax; automatic word stemming and relevance ranking; as well as graphical results."
+    }
+  ]
+}

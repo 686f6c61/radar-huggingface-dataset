@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Mercity/creative-writing-llm",
+  "slug": "mercity-creative-writing-llm",
+  "author": "Mercity",
+  "url": "https://huggingface.co/Mercity/creative-writing-llm",
+  "created_at": "2026-08-16T19:45:03.000Z",
+  "updated_at": "2026-08-16T20:53:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "trl",
+    "grpo",
+    "gdpo",
+    "dpo",
+    "divpo",
+    "rlhf",
+    "diversity",
+    "creative-writing",
+    "mode-collapse",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5416797700,
+  "storage_human": "5.4 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mercity Research",
+      "url": "https://www.mercity.ai/",
+      "snippet": "Research-grade, reality-ready. Shipping the research to production. Custom training, real optimization, genuine architecture."
+    },
+    {
+      "title": "LLM Leaderboard - Best Text & Chat AI Models Compared",
+      "url": "https://arena.ai/leaderboard/text/creative-writing",
+      "snippet": "Text Arena ️Creative Writing View overall rankings across various AI models in text-to-text tasks across math, coding, creative writing, and other open-ended domains."
+    },
+    {
+      "title": "Best LLM for Creative Writing - LLM Ranking",
+      "url": "https://llm-stats.com/benchmarks/category/creativity",
+      "snippet": "Best AI for creative writing ranked by benchmark scores. Compare top LLMs for storytelling, poetry, and imaginative content generation on our leaderboard."
+    },
+    {
+      "title": "EQ-Bench Creative Writing v3 Leaderboard",
+      "url": "https://eqbench.com/creative_writing.html",
+      "snippet": "Creative Writing v3 is a benchmark assessing language models&#x27; ability to craft emotionally intelligent and professionally mediated narratives in challenging scenarios."
+    },
+    {
+      "title": "Creative Writing LLM Leaderboard 2026: Fiction Ranked",
+      "url": "https://awesomeagents.ai/leaderboards/creative-writing-llm-leaderboard/",
+      "snippet": "Multilingual LLM Leaderboard - model performance across 16 languages, critical if creative writing tasks span non-English prose Best AI Writing Tools 2026 - practical guide to writing assistants built on these models, covering UI, pricing, and workflow integration"
+    }
+  ]
+}

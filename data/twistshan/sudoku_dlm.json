@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "twistshan/Sudoku_DLM",
+  "slug": "twistshan-sudoku_dlm",
+  "author": "twistshan",
+  "url": "https://huggingface.co/twistshan/Sudoku_DLM",
+  "created_at": "2026-08-18T01:41:34.000Z",
+  "updated_at": "2026-08-18T02:02:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "diffusion",
+    "discrete-diffusion",
+    "sudoku",
+    "reasoning",
+    "dataset:stwistzz/Sudoku_DLM_Reasoning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3196028002,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "twistshan (Twist Shan) - Hugging Face",
+      "url": "https://huggingface.co/twistshan",
+      "snippet": "AI & ML interests Statistical foundations, optimization, and mechanistic interpretability of Modern Machine Learning, with a focus on deep learning, reinforcement learning, and generative AI, including language models and diffusion models."
+    },
+    {
+      "title": "GitHub - Twist-Shan/DLM_Reasoning_Interp: Here is a repo about ...",
+      "url": "https://github.com/Twist-Shan/DLM_Reasoning_Interp",
+      "snippet": "Here is a repo about mechanistic interpretability of reasoning in diffusion language models, especially in solving Sodoku. - Twist-Shan/DLM_Reasoning_Interp"
+    },
+    {
+      "title": "DLM_Reasoning_Interp/README.md at main · Twist-Shan/DLM ... - GitHub",
+      "url": "https://github.com/Twist-Shan/DLM_Reasoning_Interp/blob/main/README.md",
+      "snippet": "Here is a repo about mechanistic interpretability of reasoning in diffusion language models, especially in solving Sodoku. - Twist-Shan/DLM_Reasoning_Interp"
+    },
+    {
+      "title": "Sudoku-Bench - pub.sakana.ai",
+      "url": "https://pub.sakana.ai/sudoku/",
+      "snippet": "Sudoku-Bench in its current form is best suited for benchmarking LLM reasoning models. Sudoku variants are not suitable for certain non-LLM reasoning models (e.g., HRM or TRM) without an explicit LLM module of some kind. We present text-only representations of all puzzles in Sudoku-Bench."
+    },
+    {
+      "title": "Sudoku-Bench Leaderboard: Tracking Model Progress | Sakana AI posted on ...",
+      "url": "https://www.linkedin.com/posts/sakana-ai_following-our-sudoku-based-reasoning-benchmark-activity-7332564228718895104-tzc1",
+      "snippet": "Following our Sudoku-based reasoning benchmark announcement, we&#x27;ve been evaluating the latest models to track improvements in their reasoning capabilities. We&#x27;re launching the Sudoku-Bench ..."
+    }
+  ]
+}

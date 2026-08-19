@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Aeit/tifa-left-brain",
+  "slug": "aeit-tifa-left-brain",
+  "author": "Aeit",
+  "url": "https://huggingface.co/Aeit/tifa-left-brain",
+  "created_at": "2026-08-16T00:18:10.000Z",
+  "updated_at": "2026-08-16T00:20:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920734784,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An Inventor of Apple&#x27;s FaceID Wants to Analyze Your Brain&#x27;s Health With AI",
+      "url": "https://www.wired.com/story/the-apple-faceid-veteran-building-a-frontier-ai-model-for-the-human-brain/",
+      "snippet": "Gidi Littwin&#x27;s new AI startup, Hemispheric, makes diagnostic brain scans for conditions like depression, PTSD, and Parkinson&#x27;s. He wants the technology to be as cheap and easy as for a blood test."
+    },
+    {
+      "title": "AITE Main - ai-challenges.nist.gov",
+      "url": "https://ai-challenges.nist.gov/aite",
+      "snippet": "AI Technology Evaluation (AITE) A NIST evaluation program providing researchers with a sequestered testbed environment for the evaluation of AI model performance in a variety of meaningful tasks across diverse datasets, modalities, and domains."
+    },
+    {
+      "title": "Brain-inspired Artificial Intelligence: A Comprehensive Review",
+      "url": "https://arxiv.org/html/2408.14811v1",
+      "snippet": "This comprehensive review explores the diverse design inspirations that have shaped modern AI models, i.e., brain-inspired artificial intelligence (BIAI). We present a classification framework that categorizes BIAI approaches into physical structure-inspired and human behavior-inspired models."
+    },
+    {
+      "title": "tifa AI Models | Civitai",
+      "url": "https://civitai.com/tag/tifa",
+      "snippet": "Browse 115 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with tifa."
+    },
+    {
+      "title": "Trustworthy Multi-modal Foundation Models and AI Agents (TiFA)",
+      "url": "https://icml.cc/virtual/2024/workshop/29951",
+      "snippet": "Building trustworthy MFMs and AI Agents transcends adversarial robustness of such models, but also emphasizes the importance of proactive risk assessment, mitigation, safeguards, and the establishment of comprehensive safety mechanisms throughout the lifecycle of the systems&#x27; development and deployment [16, 17]."
+    }
+  ]
+}

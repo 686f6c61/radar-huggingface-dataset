@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "danny9417/gemma-4-e4b-it-holmes-r1",
+  "slug": "danny9417-gemma-4-e4b-it-holmes-r1",
+  "author": "danny9417",
+  "url": "https://huggingface.co/danny9417/gemma-4-e4b-it-holmes-r1",
+  "created_at": "2026-08-17T01:19:27.000Z",
+  "updated_at": "2026-08-17T01:20:23.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "persona",
+    "character",
+    "sherlock-holmes",
+    "style",
+    "interpretability",
+    "gemma",
+    "research",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 313032660,
+  "storage_human": "313 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zzhtx/act_sand_to_box",
+  "slug": "zzhtx-act_sand_to_box",
+  "author": "zzhtx",
+  "url": "https://huggingface.co/zzhtx/act_sand_to_box",
+  "created_at": "2026-08-17T12:58:07.000Z",
+  "updated_at": "2026-08-17T12:58:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:zzhtx/sand-to-box_20260817_163857",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714944,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cruz Unveils SANDBOX Act to Ease Federal AI Rules",
+      "url": "https://broadbandbreakfast.com/cruz-unveils-sandbox-act-to-ease-federal-ai-rules/",
+      "snippet": "The SANDBOX Act instructs federal agencies to coordinate with state programs, but Cruz and Kratsios made clear their ultimate aim was to prevent states from imposing conflicting rules. \"We must prevent a patchwork of burdensome AI regulation, including oft conflicting state AI regulations,\" Cruz said."
+    },
+    {
+      "title": "PDF SANDBOX Act - Memorandum to Senate Commerce Committee",
+      "url": "https://www.ntu.org/library/doclib/2025/10/SANDBOXActLetter.pdf",
+      "snippet": "We appreciate the Committee&#x27;s recognition of the important role that regulatory sandboxes can play in developing a well-calibrated, evidence-based, and innovation-friendly approach to AI regulation. To that end, we commend the Chairman&#x27;s efforts to advance this discussion through the introduction of the SANDBOX Act."
+    },
+    {
+      "title": "US Senator Ted Cruz Proposes SANDBOX Act to Waive Federal Regulations ...",
+      "url": "https://www.techpolicy.press/us-senator-ted-cruz-proposes-program-to-waive-federal-regulations-for-ai-developers/",
+      "snippet": "On Wednesday, United States Senator Ted Cruz (R-TX) unveiled the \"Strengthening Artificial intelligence Normalization and Diffusion By Oversight and eXperimentation Act,\" or the SANDBOX Act. The 41-page bill would direct the White House Office of Science and Technology Policy (OSTP) to establish a federal \"regulatory sandbox\" for AI developers to apply for waivers or modifications on ..."
+    },
+    {
+      "title": "AI Sandbox",
+      "url": "https://aisandbox.dev/",
+      "snippet": "Use your existing programming skills to train an AI in one of our environments. We provide REST based interfaces that can be used by any modern programming language. This way you can leverage your existing coding expertise and don&#x27;t waste time on anything else. We provide hints and safe spaces for your baby AI to learn and grow."
+    },
+    {
+      "title": "Sen. Cruz Unveils First AI Bill in 5-Pillar Framework",
+      "url": "https://www.meritalk.com/articles/sen-cruz-unveils-first-ai-bill-in-5-pillar-framework/",
+      "snippet": "Sen. Ted Cruz, R-Texas, introduced today the first bill of several yet to come that he says will provide a \"light-touch\" regulatory approach to safe AI development and deployment by reducing the regulatory burden placed on AI developers. The senator&#x27;s Strengthening Artificial intelligence Normalization and Diffusion By Oversight and eXperimentation, or SANDBOX Act, is the first of a ..."
+    }
+  ]
+}

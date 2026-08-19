@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/Qwen3.8-27B-GGUF",
+  "slug": "prithivmlmods-qwen3-8-27b-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/Qwen3.8-27B-GGUF",
+  "created_at": "2026-08-06T04:44:31.000Z",
+  "updated_at": "2026-08-17T03:38:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "qwen3.8",
+    "mtp",
+    "multimodal",
+    "vision-language-model",
+    "vlm",
+    "image-text-to-text",
+    "image-understanding",
+    "visual-question-answering",
+    "visual-reasoning",
+    "document-understanding",
+    "OCR",
+    "image-captioning",
+    "video-captioning",
+    "video-understanding",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 2529,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 307110005120,
+  "storage_human": "307.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prithivMLmods/Qwen3.8-27B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Qwen3.8-27B-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026) Qwen released Qwen3.8-27B in mid-August 2026, and the community adopted it fast. The unsloth GGUF passed 1,945,635 downloads in about three days (HuggingFace API, 2026). The model is a dense 27B vision-language model under Apache-2.0 with a native 262,144-token context (model card, 2026)."
+    }
+  ]
+}

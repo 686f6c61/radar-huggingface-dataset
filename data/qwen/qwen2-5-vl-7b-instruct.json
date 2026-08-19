@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "slug": "qwen-qwen2-5-vl-7b-instruct",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+  "created_at": "2025-01-26T09:26:37.000Z",
+  "updated_at": "2025-04-06T16:23:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1678,
+  "downloads_30d": 9581992,
+  "trending_score": 7,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16584414560,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

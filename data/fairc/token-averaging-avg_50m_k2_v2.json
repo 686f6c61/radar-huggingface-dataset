@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FAIRC/token-averaging-avg_50m_k2_v2",
+  "slug": "fairc-token-averaging-avg_50m_k2_v2",
+  "author": "FAIRC",
+  "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k2_v2",
+  "created_at": "2026-08-18T10:21:26.000Z",
+  "updated_at": "2026-08-18T10:23:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 908057898,
+  "storage_human": "908 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k4 · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k4",
+      "snippet": "FAIRC / token-averaging-avg_50m_k4 like 0 Follow FAIRC 3 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "FAIRC/token-averaging-avg_50m_k2_wexp · Hugging Face",
+      "url": "https://huggingface.co/FAIRC/token-averaging-avg_50m_k2_wexp",
+      "snippet": "FAIRC/token-averaging-avg_50m_k2_wexp Checkpoint dump from the token averaging research project."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "K2-V2: A 360-Open, Reasoning-Enhanced LLM - arXiv.org",
+      "url": "https://arxiv.org/html/2512.06201v1",
+      "snippet": "Continuing the 360-open-source tradition of LLM360, we release K2 along with its complete development transparency - a documentation of the entire development-cycle, and a full suite of artifacts along the way, providing the community with an end-to-end blueprint and toolkit for building and evolving a state-of-the-art AI model."
+    },
+    {
+      "title": "AI Token Calculator | Estimate GPT, Opus, and Gemini Model Costs",
+      "url": "https://tokencalculator.ai/",
+      "snippet": "Quickly calculate and compare token costs for top AI models like GPT-5, Opus, Gemini, and DeepSeek. Enter your text to see real-time pricing and choose the most cost-efficient option."
+    }
+  ]
+}

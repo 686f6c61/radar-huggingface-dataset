@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "cms-cambridge/music-transformer-atepp-pretrain",
+  "slug": "cms-cambridge-music-transformer-atepp-pretrain",
+  "author": "cms-cambridge",
+  "url": "https://huggingface.co/cms-cambridge/music-transformer-atepp-pretrain",
+  "created_at": "2026-08-17T20:26:47.000Z",
+  "updated_at": "2026-08-17T20:50:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "music",
+    "midi",
+    "transformer",
+    "music-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1045868272,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Museformer: Transformer with Fine- and Coarse-Grained Attention for ...",
+      "url": "https://ai-muzic.github.io/museformer/",
+      "snippet": "The advantages are two-fold. First, it can capture both music structure-related correlations via the fine-grained attention, and other contextual information via the coarse-grained attention. Second, it is efficient and can model over 3X longer music sequences compared to its full-attention counterpart."
+    },
+    {
+      "title": "GitHub - cwx-worst-one/EAT: [IJCAI 2024] EAT: Self-Supervised Pre ...",
+      "url": "https://github.com/cwx-worst-one/EAT",
+      "snippet": "EAT is an audio SSL model with high effectiveness and efficiency during self-supervised pre-training. You can find details in the paper EAT: Self-Supervised Pre-Training with Efficient Audio Transformer."
+    },
+    {
+      "title": "GitHub - spectraldoy/music-transformer: My project to build and train a ...",
+      "url": "https://github.com/spectraldoy/music-transformer",
+      "snippet": "The Music Transformer, or Transformer Decoder with Relative Self-Attention, is a deep learning sequence model designed to generate music. It builds upon the Transformer architecture to consider the relative distances between different elements of the sequence rather than / along with their absolute positions in the sequence. I explored my interest in AI-generated music through this project and ..."
+    },
+    {
+      "title": "ATEPP: A Dataset of Automatically Transcribed Expressive Piano ...",
+      "url": "https://tangjjbetsy.github.io/ATEPP/",
+      "snippet": "In this paper, we present ATEPP, a dataset that contains 1000 hours of performances of standard piano repertoire by 49 world-renowned pianists, organized and aligned by compositions and movements for comparative studies."
+    },
+    {
+      "title": "Museformer - muzic",
+      "url": "https://microsoft.github.io/muzic/museformer/",
+      "snippet": "Museformer Museformer: Transformer with Fine- and Coarse-Grained Attention for Music Generation, by Botao Yu, Peiling Lu, Rui Wang, Wei Hu, Xu Tan, Wei Ye, Shikun Zhang, Tao Qin, Tie-Yan Liu, NeurIPS 2022, is a Transformer with a novel fine- and coarse-grained attention (FC-Attention) for music generation. Specifically, with the fine-grained attention, a token of a specific bar directly ..."
+    }
+  ]
+}

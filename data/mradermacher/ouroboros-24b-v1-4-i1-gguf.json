@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ouroboros-24B-v1.4-i1-GGUF",
+  "slug": "mradermacher-ouroboros-24b-v1-4-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ouroboros-24B-v1.4-i1-GGUF",
+  "created_at": "2026-08-17T19:12:18.000Z",
+  "updated_at": "2026-08-17T22:00:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "float32",
+    "swearing",
+    "rp",
+    "horror",
+    "della",
+    "mistral",
+    "merge",
+    "mergekit",
+    "en",
+    "dataset:OccultAI/illuminati_imatrix_v1",
+    "base_model:OccultAI/Ouroboros-24B-v1.4",
+    "base_model:quantized:OccultAI/Ouroboros-24B-v1.4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3410,
+  "trending_score": 0,
+  "parameters": 23572444160,
+  "parameters_human": "23.57B",
+  "storage_bytes": 253555679264,
+  "storage_human": "253.6 GB",
+  "base_model": "OccultAI/Ouroboros-24B-v1.4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ouroboros-24B-v1.4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ouroboros-24B-v1.4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Ouroboros-24B-v1.4-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ouroboros-24B-v1.4-GGUF/tree/main",
+      "snippet": "mradermacher / Ouroboros-24B-v1.4-GGUF like 1 Transformers GGUF OccultAI/illuminati_imatrix_v1 English creative creative writing fiction writing plot generation sub-plot generation story generation scene continue storytelling fiction story science fiction romance all genres story writing vivid prosing vivid writing fiction roleplaying float32 ..."
+    },
+    {
+      "title": "GitHub - razzant/ouroboros: Ouroboros — self-creating AI agent. Born ...",
+      "url": "https://github.com/razzant/ouroboros",
+      "snippet": "Ouroboros Ouroboros is an open-source, general-purpose AI agent whose identity, durable memory, and history continue across tasks and restarts. It works on external projects, coordinates a live swarm of specialist agents, and can rewrite the implementation it runs on, including its code, architecture, prompts, tools, and dependencies."
+    },
+    {
+      "title": "Ouroboros-24B-v1.4 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Naphula/Ouroboros-24B-v1.4",
+      "snippet": "Deploy Ouroboros-24B-v1.4 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

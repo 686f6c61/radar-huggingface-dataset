@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "laion/snowball-67b-a2b-sft-s3-opencode-step1888",
+  "slug": "laion-snowball-67b-a2b-sft-s3-opencode-step1888",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/snowball-67b-a2b-sft-s3-opencode-step1888",
+  "created_at": "2026-08-14T13:17:53.000Z",
+  "updated_at": "2026-08-17T20:11:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "grug_moe",
+    "text-generation",
+    "marin",
+    "grug",
+    "mixture-of-experts",
+    "supervised-fine-tuning",
+    "agents",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 297,
+  "trending_score": 0,
+  "parameters": 67078882816,
+  "parameters_human": "67.08B",
+  "storage_bytes": 268332864020,
+  "storage_human": "268.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "laion/snowball-67b-a2b-sft-s3-opencode-step1888 · Hugging Face",
+      "url": "https://huggingface.co/laion/snowball-67b-a2b-sft-s3-opencode-step1888",
+      "snippet": "Instructions to use laion/snowball-67b-a2b-sft-s3-opencode-step1888 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "How AI Models From OpenAI and Anthropic Went Rogue",
+      "url": "https://www.wsj.com/tech/ai/how-ai-models-from-openai-and-anthropic-went-rogue-a28e29ee",
+      "snippet": "Watch to learn how an AI agent escaped \"sandboxed\" environments and hacked a separate company—leading to calls for regulation."
+    },
+    {
+      "title": "Kimi K3 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/kimi-3",
+      "snippet": "Kimi K3 by Moonshot AI ranks #5 of 218 with a public score of 80.5/100. Evidence: Supported; this profile shows 44 source-displayable benchmark rows."
+    },
+    {
+      "title": "LAION",
+      "url": "https://laion.ai/",
+      "snippet": "LAION-Aesthetics A subset of LAION-5B filtered by a model trained to score aesthetically pleasing images."
+    },
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "OpenCode uses the AI SDK and Models.dev to support 75+ LLM providers and it supports running local models."
+    }
+  ]
+}

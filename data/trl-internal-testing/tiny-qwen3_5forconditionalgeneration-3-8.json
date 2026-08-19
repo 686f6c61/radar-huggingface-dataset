@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "trl-internal-testing/tiny-Qwen3_5ForConditionalGeneration-3.8",
+  "slug": "trl-internal-testing-tiny-qwen3_5forconditionalgeneration-3-8",
+  "author": "trl-internal-testing",
+  "url": "https://huggingface.co/trl-internal-testing/tiny-Qwen3_5ForConditionalGeneration-3.8",
+  "created_at": "2026-08-14T20:13:33.000Z",
+  "updated_at": "2026-08-14T20:13:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "trl",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1054,
+  "trending_score": 0,
+  "parameters": 10157840,
+  "parameters_human": "10.2M",
+  "storage_bytes": 40312135,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

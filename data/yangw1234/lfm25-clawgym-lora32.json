@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "yangw1234/lfm25-clawgym-lora32",
+  "slug": "yangw1234-lfm25-clawgym-lora32",
+  "author": "yangw1234",
+  "url": "https://huggingface.co/yangw1234/lfm25-clawgym-lora32",
+  "created_at": "2026-08-18T00:05:33.000Z",
+  "updated_at": "2026-08-18T00:06:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 374,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412333054,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yangw1234/gemma_4_lora · Hugging Face",
+      "url": "https://huggingface.co/yangw1234/gemma_4_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ClawGym - GitHub",
+      "url": "https://github.com/ClawGym/",
+      "snippet": "ClawGym: A Scalable Framework for Building Effective Claw Agents ClawGym is a scalable framework for synthesizing data, training agents, and evaluating Claw-style personal agents in local, stateful workspaces. 👨‍💻 This project is developed by RUC AI Box."
+    },
+    {
+      "title": "yangw1234 (Yang Wang) · GitHub",
+      "url": "https://github.com/yangw1234",
+      "snippet": "A graph representing yangw1234&#x27;s contributions from May 11, 2025 to May 15, 2026. The contributions are 60% commits, 26% pull requests, 8% code review, 6% issues."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

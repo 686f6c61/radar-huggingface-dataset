@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreGroundQwen3VL2b",
+  "slug": "libreyolo-libregroundqwen3vl2b",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreGroundQwen3VL2b",
+  "created_at": "2026-08-15T23:30:58.000Z",
+  "updated_at": "2026-08-15T23:31:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "grounding",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4255140312,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

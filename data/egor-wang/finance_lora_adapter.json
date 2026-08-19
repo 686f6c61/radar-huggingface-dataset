@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Egor-wang/finance_LoRA_adapter",
+  "slug": "egor-wang-finance_lora_adapter",
+  "author": "Egor-wang",
+  "url": "https://huggingface.co/Egor-wang/finance_LoRA_adapter",
+  "created_at": "2026-08-18T14:12:34.000Z",
+  "updated_at": "2026-08-18T14:26:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333008,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=89&sort=trending&search=finance",
+      "snippet": "Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 9 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI + 9 ..."
+    },
+    {
+      "title": "GitHub - Open-Finance-Lab/FinLoRA: FinLoRA: Benchmarking LoRA Methods ...",
+      "url": "https://github.com/Open-Finance-Lab/FinLoRA",
+      "snippet": "Low-rank adaptation (LoRA) methods offer an affordable solution to scale general-purpose LLMs to hundreds of use scenarios. However, their efficacy in high-stakes domains like finance is rarely explored, e.g., passing CFA exams and analyzing SEC filings. This open-source FinLoRA project benchmarks ..."
+    },
+    {
+      "title": "LoRA Adapters Explained - openinnovation.ai",
+      "url": "https://openinnovation.ai/lora-adapters-explained-efficient-fine-tuning-for-llms-without-retraining/",
+      "snippet": "LoRA adapters offer a lightweight way to fine-tune large language models without retraining billions of parameters. Learn how they reduce costs, accelerate deployment, and enable modular AI systems."
+    },
+    {
+      "title": "FinLoRA: Benchmarking LoRA Methods for Fine-Tuning LLMs on Financial ...",
+      "url": "https://arxiv.org/abs/2505.19819",
+      "snippet": "Low-rank adaptation (LoRA) methods show great potential for scaling pre-trained general-purpose Large Language Models (LLMs) to hundreds or thousands of use scenarios. However, their efficacy in high-stakes domains like finance is rarely explored, e.g., passing CFA exams and analyzing SEC filings. In this paper, we present the open-source FinLoRA project that benchmarks LoRA methods on both ..."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    }
+  ]
+}

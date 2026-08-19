@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/code_5pct_separate_3e18_s2_2026-08-16_20-02-36_615983-pt",
+  "slug": "alexkstern-code_5pct_separate_3e18_s2_2026-08-16_20-02-36_615983-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/code_5pct_separate_3e18_s2_2026-08-16_20-02-36_615983-pt",
+  "created_at": "2026-08-16T20:23:29.000Z",
+  "updated_at": "2026-08-16T20:24:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_github-code-nanochatbpe-1B",
+    "seed_2",
+    "case_b",
+    "lr_trapezoid",
+    "depth_14",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2251648379,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "code_5pct_3e18_seed2_2026-07-12_02-10-08_098372-pt",
+      "url": "https://huggingface.co/alexkstern/code_5pct_3e18_seed2_2026-07-12_02-10-08_098372-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "code_5pct_27e18_d24_seed0_2026-08-02_01-56-39_526888-pt",
+      "url": "https://huggingface.co/alexkstern/code_5pct_27e18_d24_seed0_2026-08-02_01-56-39_526888-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MAC Address Vendor Lookup: MAC/OUI/IAB/IEEE Vendor Manufacturer Search",
+      "url": "https://macaddress.io/",
+      "snippet": "By a given MAC address, OUI, IAB, retrieve OUI vendor information, detect virtual machines, manufacturer, location, read the information encoded in the MAC, and get results regarding any MAC address, OUI, IAB, IEEE."
+    },
+    {
+      "title": "MAC Address Lookup Tool - AskApache",
+      "url": "https://www.askapache.com/online-tools/mac-lookup/",
+      "snippet": "Discover which company built a networked interface by MAC Address. Several formats accepted: 00-1C-23-59-5A-92, 001c23595a92, 00:1C:23:59:5A:92 Partial searches are accepted: 001c, 2359:92 Uses several databases including NMAP, IEEE Official List, Wireshark Info, and more. Never know what else may show up ;) MAC address A media access control address (MAC address) is a unique identifier ..."
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    }
+  ]
+}

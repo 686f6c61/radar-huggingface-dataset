@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "coolpoodle/music3lab-adapters",
+  "slug": "coolpoodle-music3lab-adapters",
+  "author": "coolpoodle",
+  "url": "https://huggingface.co/coolpoodle/music3lab-adapters",
+  "created_at": "2026-08-16T17:08:05.000Z",
+  "updated_at": "2026-08-16T17:08:09.000Z",
+  "license": "minimax-music3-derivative",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "music",
+    "audio",
+    "music-generation",
+    "minimax-music3",
+    "adapters",
+    "research",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:finetune:MiniMaxAI/MiniMax-Music3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 212128940,
+  "storage_human": "212 MB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:04:20.891Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coolpoodle (poodle (looped)) - Hugging Face",
+      "url": "https://huggingface.co/coolpoodle/datasets",
+      "snippet": "User profile of poodle (looped) on Hugging Face"
+    },
+    {
+      "title": "AI Music Lab - Create AI-Generated Music",
+      "url": "https://aimusiclab.co/",
+      "snippet": "Generate unique music with AI using lyrics or create instrumental pieces in various styles."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "GitHub - proximasan/tadpole-studio: Easy to use AI music generation UI ...",
+      "url": "https://github.com/proximasan/tadpole-studio",
+      "snippet": "Easy to use AI music generation UI for local models with QoL features - proximasan/tadpole-studio"
+    },
+    {
+      "title": "Style IPAdapter for NoobAI-XL - v1.0 | NoobAI Controlnet | Civitai",
+      "url": "https://civitai.com/models/1233692/style-ipadapter-for-noobai-xl",
+      "snippet": "Style IPAdapter Finetune for NoobAI-XL This is a personal experiment to finetune the NoobAI&#x27;s IP-Adapter to transfer drawing style, instead of subjects and compositions, from the reference image. It doesn&#x27;t always work as well as expected, and I don&#x27;t know how to further improve it besides gathering more data. (Also, one-image lora is quite viable nowadays). So I decided to release it as a toy ..."
+    }
+  ]
+}

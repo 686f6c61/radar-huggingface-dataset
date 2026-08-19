@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jczyh124/oka-open-v26-lora",
+  "slug": "jczyh124-oka-open-v26-lora",
+  "author": "jczyh124",
+  "url": "https://huggingface.co/jczyh124/oka-open-v26-lora",
+  "created_at": "2026-08-17T06:00:00.000Z",
+  "updated_at": "2026-08-17T06:01:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "comfyui",
+    "z-image",
+    "watercolor",
+    "gouache",
+    "oh-card",
+    "base_model:Tongyi-MAI/Z-Image",
+    "base_model:adapter:Tongyi-MAI/Z-Image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85094344,
+  "storage_human": "85 MB",
+  "base_model": "Tongyi-MAI/Z-Image",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jczyh124/oka-open-v1-lora · Hugging Face",
+      "url": "https://huggingface.co/jczyh124/oka-open-v1-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Oka - V1 | Stable Diffusion XL LoRA | Civitai",
+      "url": "https://civitai.com/models/1562556/oka",
+      "snippet": "it&#x27;s oka There are no comments for this model yet. Be the first to let the people know about this model by leaving your comment."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,965 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "【Art Style】Aiue Oka Style - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/22458?modelVersionId=26814",
+      "snippet": "Download 【Art Style】Aiue Oka Style - LORA for SD 1.5 by zakp. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=LoRA",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

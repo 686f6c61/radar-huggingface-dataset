@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "codewithdark/medresearch-subcop",
+  "slug": "codewithdark-medresearch-subcop",
+  "author": "codewithdark",
+  "url": "https://huggingface.co/codewithdark/medresearch-subcop",
+  "created_at": "2026-08-17T09:33:42.000Z",
+  "updated_at": "2026-08-18T15:51:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 291177,
+  "storage_human": "291177 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

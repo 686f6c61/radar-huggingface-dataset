@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "neo-kunal/LunarLander-PPO",
+  "slug": "neo-kunal-lunarlander-ppo",
+  "author": "neo-kunal",
+  "url": "https://huggingface.co/neo-kunal/LunarLander-PPO",
+  "created_at": "2026-08-14T07:20:53.000Z",
+  "updated_at": "2026-08-14T07:20:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "gymnasium",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148941,
+  "storage_human": "148941 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "LunarLander-v3",
+      "metric": "mean_reward",
+      "value": 232.82
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - jaredlcs/lunarlander-ppo",
+      "url": "https://github.com/jaredlcs/lunarlander-ppo",
+      "snippet": "This project trains an AI agent to land a lunar module safely using PPO (Proximal Policy Optimization), a state-of-the-art reinforcement learning algorithm. The agent learns by trial and error, controlling thrusters to achieve soft landings."
+    },
+    {
+      "title": "furkanonur-ai/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/furkanonur-ai/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v3 This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "GitHub - sudh1404/ppo_lunalander",
+      "url": "https://github.com/sudh1404/ppo_lunalander",
+      "snippet": "PPO on LunarLander-v3 A from-scratch implementation of Proximal Policy Optimization (PPO) with Generalized Advantage Estimation (GAE) applied to the LunarLander-v3 continuous control environment from Gymnasium — the actively maintained successor to OpenAI Gym."
+    },
+    {
+      "title": "Erland/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/Erland/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "lunar_lander_ppo.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/dkim2505/public/blob/main/intro-rl/lunar_lander_ppo.ipynb",
+      "snippet": "Companion notebook for the Intro to Reinforcement Learning workshop. We use the Stable-Baselines3 implementation of PPO (Proximal Policy Optimization) to train an agent that lands a spacecraft on the moon. Runtime tip: for PPO with an MLP policy, CPU is actually faster than GPU (the policy net is tiny and the bottleneck is environment stepping). The default Colab CPU runtime is fine."
+    }
+  ]
+}

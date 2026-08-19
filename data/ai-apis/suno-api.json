@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AI-APIs/Suno-API",
+  "slug": "ai-apis-suno-api",
+  "author": "AI-APIs",
+  "url": "https://huggingface.co/AI-APIs/Suno-API",
+  "created_at": "2026-08-14T21:47:55.000Z",
+  "updated_at": "2026-08-14T21:48:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "suno",
+    "text-to-audio",
+    "music-generation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suno API Documentation - Suno API",
+      "url": "https://docs.sunoapi.org/",
+      "snippet": "Suno API delivers advanced AI music capabilities through easy-to-integrate APIs, including music generation, lyrics creation, audio processing, and video production."
+    },
+    {
+      "title": "GitHub - gcui-art/suno-api: Use API to call the music generation AI of ...",
+      "url": "https://github.com/gcui-art/suno-api",
+      "snippet": "Use API to call the music generation AI of Suno.ai and easily integrate it into agents like GPTs. 👉 We update quickly, please star."
+    },
+    {
+      "title": "Suno API Quick Start",
+      "url": "https://docs.sunoapi.org/suno-api/quickstart",
+      "snippet": "Suno API is powered by advanced AI models to provide comprehensive music generation and audio processing services. Whether you need music creation, lyrics generation, audio editing, or vocal separation, our API meets all your creative needs."
+    },
+    {
+      "title": "GitHub - suno-ai-api/sunoapi: A simple and affordable solution for AI ...",
+      "url": "https://github.com/suno-ai-api/sunoapi",
+      "snippet": "The Suno API offered by api.box is an affordable platform for generating AI-powered music and lyrics. It features fast response times, high concurrency support, customizable song creation, and AI-generated lyrics with timestamps. Supporting both V3.5 and V4 versions, the Suno API ensures flexibility and scalability for developers. With stable performance, professional technical support, and ..."
+    },
+    {
+      "title": "Suno API for AI Music Generation - Apiframe",
+      "url": "https://apiframe.ai/models/suno",
+      "snippet": "The most popular AI music model, one POST away. Suno generates complete songs, vocals, lyrics, and instrumentation, in virtually any genre. Apiframe runs the current v5.5 line with the full control surface: custom or auto lyrics, style and negative tags, vocal gender, and version pinning. Get API key Read the docs 8 min Max song length v5.5"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tron-tani/bear-train",
+  "slug": "tron-tani-bear-train",
+  "author": "tron-tani",
+  "url": "https://huggingface.co/tron-tani/bear-train",
+  "created_at": "2026-08-13T14:00:35.000Z",
+  "updated_at": "2026-08-17T22:53:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:tron-tani/record-moving-bear",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1113427368,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tron-tani/bear-train · Hugging Face",
+      "url": "https://huggingface.co/tron-tani/bear-train",
+      "snippet": "Instructions to use tron-tani/bear-train with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use tron-tani/bear-train with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started ..."
+    },
+    {
+      "title": "tron-tani (Shoma Tani) - Hugging Face",
+      "url": "https://huggingface.co/datasets/tron-tani/",
+      "snippet": "User profile of Shoma Tani on Hugging Face"
+    },
+    {
+      "title": "GitHub - Shadowhusky/Tron: Self-hosted AI-powered terminal. Run shells ...",
+      "url": "https://github.com/Shadowhusky/Tron",
+      "snippet": "Self-hosted AI-powered terminal. Run shells, use local or cloud LLMs (Ollama, OpenAI, Claude), and get agent-assisted commands from your desktop. - Shadowhusky/Tron"
+    },
+    {
+      "title": "GitHub - pssnyder/tron-ai",
+      "url": "https://github.com/pssnyder/tron-ai",
+      "snippet": "Tron Game AI An AI competition framework for the classic Tron game, featuring both rule-based expert systems and learning agents that improve through self-play."
+    },
+    {
+      "title": "Image Model - Teachable Machines",
+      "url": "https://teachablemachine.withgoogle.com/train/image",
+      "snippet": "Train a computer to recognize your own images, sounds, & poses. A fast, easy way to create machine learning models for your sites, apps, and more - no expertise or coding required."
+    }
+  ]
+}

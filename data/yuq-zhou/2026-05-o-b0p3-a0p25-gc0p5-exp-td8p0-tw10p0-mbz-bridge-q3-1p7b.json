@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yuq-zhou/2026-05-o-b0p3-a0p25-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b",
+  "slug": "yuq-zhou-2026-05-o-b0p3-a0p25-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b",
+  "author": "yuq-zhou",
+  "url": "https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p25-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b",
+  "created_at": "2026-08-14T19:57:39.000Z",
+  "updated_at": "2026-08-14T19:58:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "checkpoint",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 173,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

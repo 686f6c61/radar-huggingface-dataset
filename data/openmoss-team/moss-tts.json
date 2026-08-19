@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "OpenMOSS-Team/MOSS-TTS",
+  "slug": "openmoss-team-moss-tts",
+  "author": "OpenMOSS-Team",
+  "url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS",
+  "created_at": "2026-02-06T04:14:06.000Z",
+  "updated_at": "2026-03-20T08:23:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_tts_delay",
+    "text-to-speech",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr",
+    "arxiv:2603.18090",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 421,
+  "downloads_30d": 9235,
+  "trending_score": 8,
+  "parameters": 8489841664,
+  "parameters_human": "8.49B",
+  "storage_bytes": 16992157375,
+  "storage_human": "17.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenMOSS/MOSS-TTS: MOSS‑TTS Family is an open‑source speech ...",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS",
+      "snippet": "English | 简体中文 MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS."
+    },
+    {
+      "title": "GitHub - kenx00/moss-tts: MOSS‑TTS Family is an open‑source speech and ...",
+      "url": "https://github.com/kenx00/moss-tts",
+      "snippet": "English | 简体中文 MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS."
+    },
+    {
+      "title": "MOSS-TTS - AI Model - HowAIWorks.ai",
+      "url": "https://howaiworks.ai/models/moss-tts",
+      "snippet": "Overview MOSS-TTS is an open-source speech synthesis foundation model from the OpenMOSS team, released on February 6, 2026 — the date of the initial commit and the model weights init commit on the OpenMOSS-Team/MOSS-TTS Hugging Face repository. The public GitHub project and README followed on February 10, 2026. A refresh, MOSS-TTS-v1.5, was published on May 25, 2026. OpenMOSS describes the ..."
+    },
+    {
+      "title": "OpenMOSS-Team (OpenMOSS) - Hugging Face",
+      "url": "https://huggingface.co/OpenMOSS-Team",
+      "snippet": "A unified multimodal large language model for end-to-end speaker-attributed, time-stamped transcription."
+    },
+    {
+      "title": "README.md · OpenMOSS-Team/MOSS-TTS-Realtime at main",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Realtime/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

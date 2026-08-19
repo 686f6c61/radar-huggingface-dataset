@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Niranjanbojja/T2V",
+  "slug": "niranjanbojja-t2v",
+  "author": "Niranjanbojja",
+  "url": "https://huggingface.co/Niranjanbojja/T2V",
+  "created_at": "2026-08-18T05:19:50.000Z",
+  "updated_at": "2026-08-18T05:19:50.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Niranjanbojja (Niranjan Reddy Bojja) - Hugging Face",
+      "url": "https://huggingface.co/Niranjanbojja/models",
+      "snippet": "User profile of Niranjan Reddy Bojja on Hugging Face"
+    },
+    {
+      "title": "Step-Video-T2V Technical Report: The Practice, Challenges, and Future ...",
+      "url": "https://arxiv.org/html/2502.10248v3",
+      "snippet": "This empowers everyone, from amateurs to professionals, to effortlessly create compelling videos. In this technical report, we present Step-Video-T2V, a state-of-the-art video foundation model with 30B parameters, capable of generating high-quality videos from text, featuring strong motion dynamics, high aesthetics, and consistent content."
+    },
+    {
+      "title": "GitHub - raniasouei/text-to-video: Generate videos from text prompts ...",
+      "url": "https://github.com/raniasouei/text-to-video",
+      "snippet": "Text2Video-Zero: Generate videos from textual descriptions without fine-tuning. ModelScope T2V (1.7B): Lightweight yet powerful model for fast video generation. Colab-ready: Fully executable in Google Colab, no local setup needed. Zero to Video: From prompt to animation in minutes."
+    },
+    {
+      "title": "Text-to-Video Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-video&sort=downloads",
+      "snippet": "Active filters: text-to-video. Clear all. SulphurAI/Sulphur-2-base. Text-to-Video • 9B • Updated 8 days ago • 353k • 1.99k"
+    },
+    {
+      "title": "stepvideo-t2v · Models",
+      "url": "https://www.modelscope.cn/models/stepfun-ai/stepvideo-t2v/summary",
+      "snippet": "Table of Contents Introduction Model Summary Model Download Model Usage Benchmark Online Engine Citation Acknowledgement 1. Introduction We present Step-Video-T2V, a state-of-the-art (SoTA) text-to-video pre-trained model with 30 billion parameters and the capability to generate videos up to 204 frames. To enhance both training and inference efficiency, we propose a deep compression VAE for ..."
+    }
+  ]
+}

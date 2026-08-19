@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ryen-stuff/ai",
+  "slug": "ryen-stuff-ai",
+  "author": "ryen-stuff",
+  "url": "https://huggingface.co/ryen-stuff/ai",
+  "created_at": "2026-08-18T21:09:33.000Z",
+  "updated_at": "2026-08-18T21:09:33.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:wtfpl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ryen-stuff/VoxCPM2 · Hugging Face",
+      "url": "https://huggingface.co/ryen-stuff/VoxCPM2",
+      "snippet": "Instructions to use ryen-stuff/VoxCPM2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries VoxCPM How to use ryen-stuff/VoxCPM2 with VoxCPM:"
+    },
+    {
+      "title": "Ryen stuff - YouTube",
+      "url": "https://www.youtube.com/@Ryenstuff",
+      "snippet": "https://docs.google.com/document/d/1p_AFSXEHNrUJ3EI7VGLUtjCbCAUmtmyWT4w_jSFxMe8/edit?usp=sharing"
+    },
+    {
+      "title": "AMD Ryzen AI Software 1.7 Release",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/2026/amd-ryzen-ai-software-1-7-release.html",
+      "snippet": "Ryzen™ AI Software 1.7 release introduces several updates aimed at improving model coverage, reducing friction in local development workflows, and delivering more predictable performance on AMD Application Processing Units (NPU + iGPU)."
+    },
+    {
+      "title": "Ryne Chat: All AI tools in one unified chat interface",
+      "url": "https://ryne.ai/pages/ryne-chat",
+      "snippet": "Experience smarter conversations with Ryne Chat - chat with multiple AI models simultaneously, mimic any writing style, and get accurate responses for all your needs. The ultimate AI assistant for work and daily tasks."
+    },
+    {
+      "title": "GitHub - amd/RyzenAI-SW: AMD Ryzen™ AI Software includes the tools and ...",
+      "url": "https://github.com/amd/RyzenAI-SW",
+      "snippet": "AMD Ryzen™ AI Software includes the tools and runtime libraries for optimizing and deploying AI inference on your AMD Ryzen™ AI based PC. It enables developers to quickly build and run a variety of AI applications for Ryzen™ AI. It is designed with high efficiency and ease-of-use in mind, unleashing the full potential of AI acceleration on Ryzen™ AI. This repository contains the demos ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DrAlexLiu/PiNozCam",
+  "slug": "dralexliu-pinozcam",
+  "author": "DrAlexLiu",
+  "url": "https://huggingface.co/DrAlexLiu/PiNozCam",
+  "created_at": "2026-08-16T06:47:40.000Z",
+  "updated_at": "2026-08-17T05:33:49.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pinozcam",
+  "languages": [],
+  "tags": [
+    "pinozcam",
+    "executorch",
+    "object-detection",
+    "edge",
+    "quantized",
+    "npu",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 150,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 364566320,
+  "storage_human": "365 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DrAlexLiu/OctoPrint-PiNozCam: AI model running on RPi for ...",
+      "url": "https://github.com/DrAlexLiu/OctoPrint-PiNozCam",
+      "snippet": "AI model running on RPi for failure detection. Contribute to DrAlexLiu/OctoPrint-PiNozCam development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - DrAlexLiu/OctoPrint-PiNozCam: AI model running on RPi for ...",
+      "url": "https://github.com/DrAlexLiu/OctoPrint-PiNozCam/tree/master",
+      "snippet": "AI model running on RPi for failure detection. Contribute to DrAlexLiu/OctoPrint-PiNozCam development by creating an account on GitHub."
+    },
+    {
+      "title": "OctoPrint-PiNozCam",
+      "url": "https://plugins.octoprint.org/plugins/pinozcam/",
+      "snippet": "OctoPrint-PiNozCam Introduction Failure Detection Performed on your Pi CPU Unlock advanced 3D printing monitoring with PiNozCam, your go-to solution for AI-powered surveillance — all without a subscription or email registration. Designed to enhance your printing process, PiNozCam introduces cutting-edge edge computing right on your Raspberry Pi."
+    },
+    {
+      "title": "DrAlexLiu (AlexLiu) - Hugging Face",
+      "url": "https://huggingface.co/DrAlexLiu",
+      "snippet": "UnCommon Objects in 3D upvoted a paper 1 day ago UnCommon Objects in 3D liked a model 5 months ago ZeroCool94/stable-diffusion-v1-5 View all activity"
+    },
+    {
+      "title": "Best AI Failure Detection for OctoPrint : r/octoprint - Reddit",
+      "url": "https://www.reddit.com/r/octoprint/comments/103jfaq/best_ai_failure_detection_for_octoprint/",
+      "snippet": "Here is a new plugin release DrAlexLiu/OctoPrint-PiNozCam: AI model running on RPi for failure detection (github.com) It uses your arm CPU to do the AI so you don&#x27;t need register and you will get true free AI."
+    }
+  ]
+}

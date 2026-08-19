@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_1Bpt_5M_s0_2026-08-14_04-40-55_801537-pt",
+  "slug": "alexkstern-kdyck_dose_1bpt_5m_s0_2026-08-14_04-40-55_801537-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_1Bpt_5M_s0_2026-08-14_04-40-55_801537-pt",
+  "created_at": "2026-08-14T04:54:03.000Z",
+  "updated_at": "2026-08-14T04:54:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern/kdyck_1pct_9e18_seed0_2026-07-04_17-15-50_058799-ppt ...",
+      "url": "https://huggingface.co/alexkstern/kdyck_1pct_9e18_seed0_2026-07-04_17-15-50_058799-ppt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kdyck_1pct_9e18_seed2_2026-07-04_19-03-54_230506-pt",
+      "url": "https://huggingface.co/alexkstern/kdyck_1pct_9e18_seed2_2026-07-04_19-03-54_230506-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+      "url": "https://duckduckgo.com/",
+      "snippet": "The Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs."
+    },
+    {
+      "title": "Time Calculator",
+      "url": "https://www.timecalculator.net/",
+      "snippet": "Time calculator is a handy tool to calculate time, add hours, minutes seconds, or subtract time and find the total time, add time subtract time calculator."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "aimedica/Unlimited-OCR",
+  "slug": "aimedica-unlimited-ocr",
+  "author": "aimedica",
+  "url": "https://huggingface.co/aimedica/Unlimited-OCR",
+  "created_at": "2026-08-16T13:40:22.000Z",
+  "updated_at": "2026-08-16T13:56:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "unlimited-ocr",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105827343,
+  "storage_human": "106 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

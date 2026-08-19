@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "v32lee/koth-miner",
+  "slug": "v32lee-koth-miner",
+  "author": "v32lee",
+  "url": "https://huggingface.co/v32lee/koth-miner",
+  "created_at": "2026-08-03T23:49:36.000Z",
+  "updated_at": "2026-08-16T09:10:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76884,
+  "storage_human": "76884 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

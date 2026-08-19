@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "SmallAICreator/Aurora-Instruct-Multitool",
+  "slug": "smallaicreator-aurora-instruct-multitool",
+  "author": "SmallAICreator",
+  "url": "https://huggingface.co/SmallAICreator/Aurora-Instruct-Multitool",
+  "created_at": "2026-08-14T13:00:17.000Z",
+  "updated_at": "2026-08-14T13:12:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "tool-use",
+    "function-calling",
+    "small-language-model",
+    "aurora",
+    "llama",
+    "cpu",
+    "text-generation",
+    "en",
+    "base_model:SmallAICreator/AuroraGPT-700M",
+    "base_model:quantized:SmallAICreator/AuroraGPT-700M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 707480064,
+  "parameters_human": "707.5M",
+  "storage_bytes": 2169335424,
+  "storage_human": "2.2 GB",
+  "base_model": "SmallAICreator/AuroraGPT-700M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

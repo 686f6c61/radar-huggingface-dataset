@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "promotion/nbpo-helpsteer2-maxmin-stage4",
+  "slug": "promotion-nbpo-helpsteer2-maxmin-stage4",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/nbpo-helpsteer2-maxmin-stage4",
+  "created_at": "2026-08-16T20:53:03.000Z",
+  "updated_at": "2026-08-16T20:57:45.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "nbpo",
+    "multi-objective-alignment",
+    "helpsteer2",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138296273,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

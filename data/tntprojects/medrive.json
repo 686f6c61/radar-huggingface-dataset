@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tntprojects/medrive",
+  "slug": "tntprojects-medrive",
+  "author": "tntprojects",
+  "url": "https://huggingface.co/tntprojects/medrive",
+  "created_at": "2025-12-31T00:35:07.000Z",
+  "updated_at": "2026-08-16T20:44:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4036623780870,
+  "storage_human": "4036.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tntprojects/medrive · Hugging Face",
+      "url": "https://huggingface.co/tntprojects/medrive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tntprojects/medrive at main - Hugging Face",
+      "url": "https://huggingface.co/tntprojects/medrive/tree/main",
+      "snippet": "tntprojects ... medrive like 0 Model card FilesFiles and versions xet Community main medrive 12.3 GB 1 contributor History:90 commits tntprojects Delete Jado119/Archivos a657eb6 verifiedabout 21 hours ago Jado119Delete Jado119/Archivosabout 21 hours ago faridAdd farid/.gitkeep4 days ago holaAdd hola/videoplayback.mp410 days ago"
+    },
+    {
+      "title": "Issue #111: Medical AI Takes Center Stage as TNT Projects&#x27; MeDrive Tops ...",
+      "url": "https://chyshkala.com/morning-post/issue-111",
+      "snippet": "The TNT Projects&#x27; MeDrive model has claimed the #1 trending spot on HuggingFace, signaling a renewed focus on healthcare AI applications amid growing demand for specialized medical language models. TNT Projects&#x27; MeDrive has surged to the top of HuggingFace&#x27;s trending charts, marking a significant moment for medical AI applications."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "MONAI - Medical Open Network for AI",
+      "url": "https://project-monai.github.io/",
+      "snippet": "MONAI is the leading open-source framework for healthcare imaging AI, trusted by researchers and clinicians worldwide. Build, train, and deploy medical AI solutions with industry-standard tools."
+    }
+  ]
+}

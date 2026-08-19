@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "diarray/bam_vits_pseudo_ipa_final",
+  "slug": "diarray-bam_vits_pseudo_ipa_final",
+  "author": "diarray",
+  "url": "https://huggingface.co/diarray/bam_vits_pseudo_ipa_final",
+  "created_at": "2026-08-18T06:38:38.000Z",
+  "updated_at": "2026-08-18T06:38:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39642096,
+  "parameters_human": "39.6M",
+  "storage_bytes": 158659712,
+  "storage_human": "159 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diarray/bam-vits-pseudo-ipa · Hugging Face",
+      "url": "https://huggingface.co/diarray/bam-vits-pseudo-ipa",
+      "snippet": "Instructions to use diarray/bam-vits-pseudo-ipa with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use diarray/bam-vits-pseudo-ipa with Transformers:"
+    },
+    {
+      "title": "diarray/bam-vits-pseudo-ipa-train · Hugging Face",
+      "url": "https://huggingface.co/diarray/bam-vits-pseudo-ipa-train",
+      "snippet": "Instructions to use diarray/bam-vits-pseudo-ipa-train with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use diarray/bam-vits-pseudo-ipa-train with Transformers:"
+    },
+    {
+      "title": "diarray-hub (Diarra Yacouba) / Repositories · GitHub",
+      "url": "https://github.com/diarray-hub?tab=repositories",
+      "snippet": "And what&#x27;s beyond the infinity ? diarray-hub has 22 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "TTS/TTS/tts/models/vits.py at dev · coqui-ai/TTS · GitHub",
+      "url": "https://github.com/coqui-ai/TTS/blob/dev/TTS/tts/models/vits.py",
+      "snippet": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production - coqui-ai/TTS"
+    },
+    {
+      "title": "TTS.tts.models.vits - TTS 0.22.0 documentation - docs.coqui.ai",
+      "url": "https://docs.coqui.ai/en/stable/_modules/TTS/tts/models/vits.html",
+      "snippet": "A model can be trained either with a speaker embedding layer or with external `d_vectors` computed from a speaker encoder model. You must provide a `speaker_manager` at initialization to set up the multi-speaker modules. Args: config (Coqpit): Model configuration. data (List, optional): Dataset items to infer number of speakers."
+    }
+  ]
+}

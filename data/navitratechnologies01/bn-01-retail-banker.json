@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NavitraTechnologies01/bn-01-retail-banker",
+  "slug": "navitratechnologies01-bn-01-retail-banker",
+  "author": "NavitraTechnologies01",
+  "url": "https://huggingface.co/NavitraTechnologies01/bn-01-retail-banker",
+  "created_at": "2026-08-18T22:29:18.000Z",
+  "updated_at": "2026-08-18T22:32:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "banking",
+    "compliance",
+    "qwen3",
+    "base_model:mlx-community/Qwen3-14B-4bit",
+    "base_model:adapter:mlx-community/Qwen3-14B-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102785001,
+  "storage_human": "103 MB",
+  "base_model": "mlx-community/Qwen3-14B-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NavitraTechnologies01/tn_01_base_coder · Hugging Face",
+      "url": "https://huggingface.co/NavitraTechnologies01/tn_01_base_coder",
+      "snippet": "NavitraTechnologies01 / tn_01_base_coder like 2 Follow Navitra Technologies LTD 1 Text Generation Safetensors GGUF English qwen2 code coding-assistant lora fine-tuned ollama conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=NavitraTechnologies01%2Ftn_01_base_coder",
+      "snippet": "NavitraTechnologies01/tn_01_base_coder Text Generation • 15B•Updated 10 days ago• 993 • 2"
+    },
+    {
+      "title": "AI in Banking: Applications, Benefits and Examples",
+      "url": "https://cloud.google.com/discover/ai-in-banking",
+      "snippet": "Last Updated: 01/14/2026 Artificial intelligence (AI) in banking plays a pivotal role by enhancing data analysis, predicting trends and fraud risks, and improving customer engagement. AI empowers various banking sectors—including retail, commercial, and investment banking—to deeply comprehend market dynamics and customer behaviors, analyze digital interactions, and offer engagement that ..."
+    },
+    {
+      "title": "ibanker - AI Copilot for Banking Decision Intelligence | Coligo",
+      "url": "https://www.navtechnologies.in/ibanker",
+      "snippet": "ibanker is your AI banking copilot providing real-time decision intelligence, live portfolio analytics, and agentic AI workflows. Empowers CXOs, risk leaders, and branch teams with instant access to banking data through natural language queries."
+    },
+    {
+      "title": "Generative AI in Retail Banking - Bain & Company",
+      "url": "https://www.bain.com/insights/generative-ai-in-retail-banking/",
+      "snippet": "Learn how generative AI is transforming retail banking with AI-driven automation, personalization, risk management, and scalable, responsible deployment."
+    }
+  ]
+}

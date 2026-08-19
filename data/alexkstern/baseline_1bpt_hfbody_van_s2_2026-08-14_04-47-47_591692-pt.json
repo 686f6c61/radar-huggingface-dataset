@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/baseline_1Bpt_hfbody_van_s2_2026-08-14_04-47-47_591692-pt",
+  "slug": "alexkstern-baseline_1bpt_hfbody_van_s2_2026-08-14_04-47-47_591692-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/baseline_1Bpt_hfbody_van_s2_2026-08-14_04-47-47_591692-pt",
+  "created_at": "2026-08-14T05:12:45.000Z",
+  "updated_at": "2026-08-14T05:13:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "no_ppt",
+    "seed_2",
+    "single",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894162779,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern (astar) - Hugging Face",
+      "url": "https://huggingface.co/alexkstern/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 14 hours ago ... published a model about 14 hours ago"
+    },
+    {
+      "title": "alexkstern (Alex Stern) - Hugging Face",
+      "url": "https://huggingface.co/alexkstern",
+      "snippet": "User profile of Alex Stern on Hugging Face"
+    },
+    {
+      "title": "Minecraft Schematics - Builds, Blueprints & Downloads | Bloxelizer",
+      "url": "https://bloxelizer.com/schematics",
+      "snippet": "Browse community Minecraft schematics and builds, preview interactive 3D blueprints, follow layer-by-layer guides, and download for Java or Bedrock."
+    },
+    {
+      "title": "Poly Haven",
+      "url": "https://polyhaven.com/",
+      "snippet": "About Us Poly Haven is a small company based in South Africa, working with artists around the world. Our goal is to create a constantly growing community-funded resource of open content, for complete freedom and usability by professionals and hobbyists alike. Previously we ran HDRI Haven, Texture Haven and 3D Model Haven as separate independent projects, but ultimately decided we could serve ..."
+    },
+    {
+      "title": "Sign In - Apple",
+      "url": "https://baseline.apple.com/",
+      "snippet": "BaseLine is a platform for Apple users to access and manage their devices, accounts, and services seamlessly."
+    }
+  ]
+}

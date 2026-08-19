@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "csacan/smolvla-cube-stack-25k",
+  "slug": "csacan-smolvla-cube-stack-25k",
+  "author": "csacan",
+  "url": "https://huggingface.co/csacan/smolvla-cube-stack-25k",
+  "created_at": "2026-08-16T10:14:14.000Z",
+  "updated_at": "2026-08-16T13:55:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:yutong-xiang-97/robot-learning-260816",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 8052333768,
+  "storage_human": "8.1 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

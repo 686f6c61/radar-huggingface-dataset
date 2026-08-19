@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chldnsry/gcoder",
+  "slug": "chldnsry-gcoder",
+  "author": "chldnsry",
+  "url": "https://huggingface.co/chldnsry/gcoder",
+  "created_at": "2026-08-18T11:12:04.000Z",
+  "updated_at": "2026-08-18T11:12:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16305,
+  "storage_human": "16305 B",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - GreazySpoon/gcoder: G-Coder is a command-line AI agent ...",
+      "url": "https://github.com/GreazySpoon/gcoder",
+      "snippet": "An AI agent CLI for system admin and code dev tasks, powered by the Google Agent Development Kit. G-Coder is a sophisticated, command-line AI agent designed to be your partner in software development, DevOps, and system administration."
+    },
+    {
+      "title": "GCoder - MacLeod Labs",
+      "url": "https://macleodlabs.ai/portfolio/gcoder/",
+      "snippet": "The design target is a 10-100x cost reduction versus naively dumping a repo into a 1M-token model. Clean tool surface, deep internals GCoder exposes just nine MCP tools — graph, code, runtime, tests, capability, bug, cve, visual, and workflow — while hiding dozens of internal functions behind them."
+    },
+    {
+      "title": "GitHub - Graph-Reasoner/GCoder",
+      "url": "https://github.com/Graph-Reasoner/GCoder",
+      "snippet": "GCoder: Improving Large Language Model for Generalized Graph Problem Solving Abstract Large Language Models (LLMs) have demonstrated strong reasoning abilities, making them suitable for complex tasks such as graph computation."
+    },
+    {
+      "title": "GCoder - AI Agentic VS Code Extension",
+      "url": "https://gcoder.framer.website/",
+      "snippet": "AI-powered coding assistant for VS Code. Generate, edit, and auto-complete code with natural language. Chat with an AI, apply visual diffs, and upload projects to GitHub—boost productivity with smart, seamless automation."
+    },
+    {
+      "title": "Model Coder - microsoftlearning.github.io",
+      "url": "https://microsoftlearning.github.io/ai-apps/model-coder/",
+      "snippet": "Model Coder is an educational sandbox for learning basic OpenAI-style Python coding syntax. It lets you experiment with prompts, responses, streaming, and async patterns in a safe environment."
+    }
+  ]
+}

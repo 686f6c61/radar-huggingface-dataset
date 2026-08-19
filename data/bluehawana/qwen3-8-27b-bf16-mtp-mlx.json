@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bluehawana/Qwen3.8-27B-bf16-MTP-MLX",
+  "slug": "bluehawana-qwen3-8-27b-bf16-mtp-mlx",
+  "author": "bluehawana",
+  "url": "https://huggingface.co/bluehawana/Qwen3.8-27B-bf16-MTP-MLX",
+  "created_at": "2026-08-18T13:09:55.000Z",
+  "updated_at": "2026-08-18T13:09:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "omlx",
+    "text-generation",
+    "base_model:mlx-community/Qwen3.8-27B-bf16",
+    "base_model:finetune:mlx-community/Qwen3.8-27B-bf16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mlx-community/Qwen3.8-27B-bf16",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "mlx-community/Qwen3.8-27B-MTP-bf16 · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-bf16",
+      "snippet": "Qwen3.8-27B-MTP-bf16 This repository contains the Multi-Token Prediction (MTP) drafter weights split from Qwen/Qwen3.8-27B for use with mlx-vlm speculative decoding. This is not a standalone model. Use it as the draft model alongside a compatible Qwen3.8 27B target checkpoint. Use with mlx-vlm"
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "mlx-community/Qwen3.8-27B-MTP-bf16 at main - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-bf16/tree/main",
+      "snippet": "like 2 Follow MLX Community 16k Text Generation MLX Safetensors English qwen3_5_mtp mlx-vlm qwen3.8 qwen3.8-27b qwen mtp speculative-decoding draft-model bf16 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "musaamadni01/microsoft_Phi-4-mini-instruct-GGUF",
+  "slug": "musaamadni01-microsoft_phi-4-mini-instruct-gguf",
+  "author": "musaamadni01",
+  "url": "https://huggingface.co/musaamadni01/microsoft_Phi-4-mini-instruct-GGUF",
+  "created_at": "2026-08-17T15:31:22.000Z",
+  "updated_at": "2026-08-17T15:31:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:quantized:microsoft/Phi-4-mini-instruct",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 55219533736,
+  "storage_human": "55.2 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

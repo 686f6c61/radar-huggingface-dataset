@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "kingjones777/LFM2-8B-A1B-ROCmFPX-GGUF",
+  "slug": "kingjones777-lfm2-8b-a1b-rocmfpx-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/LFM2-8B-A1B-ROCmFPX-GGUF",
+  "created_at": "2026-08-17T01:11:26.000Z",
+  "updated_at": "2026-08-17T01:14:05.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "gfx1151",
+    "strix-halo",
+    "amd",
+    "ryzen-ai-max-395",
+    "rocmfp4",
+    "rocmfpx",
+    "lfm2",
+    "liquid",
+    "moe",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2-8B-A1B",
+    "base_model:quantized:LiquidAI/LFM2-8B-A1B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 101,
+  "trending_score": 0,
+  "parameters": 8339930560,
+  "parameters_human": "8.34B",
+  "storage_bytes": 29745148160,
+  "storage_human": "29.7 GB",
+  "base_model": "LiquidAI/LFM2-8B-A1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-8B-A1B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-8B-A1B",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-8B-A1B"
+    },
+    {
+      "title": "LiquidAI/LFM2-8B-A1B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-8B-A1B-GGUF",
+      "snippet": "LFM2-8B-A1B-GGUF LFM2 is a new generation of hybrid models developed by Liquid AI, specifically designed for edge AI and on-device deployment. It sets a new standard in terms of quality, speed, and memory efficiency. We&#x27;re releasing the weights of our first MoE based on LFM2, with 8.3B total parameters and 1.5B active parameters."
+    },
+    {
+      "title": "LFM2-8B-A1B: An Efficient On-device Mixture-of-Experts — Blog",
+      "url": "https://www.liquid.ai/blog/lfm2-8b-a1b-an-efficient-on-device-mixture-of-experts",
+      "snippet": "We are releasing LFM2-8B-A1B, our first on-device Mixture-of-Experts (MoE) with 8.3B total parameters and 1.5B active parameters per token. By activating only a sparse subset of parameters during inference, LFM2-8B-A1B delivers larger model quality with the compute of a 1.5B-class model. It trades a modest increase in memory footprint for higher quality and speed compared to dense models. This ..."
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency for on-device deployment. Built on a hybrid architecture, LFM2 delivers 200% faster decode and prefill performance than Qwen3 and Gemma 3 on CPU. It also significantly outperforms models in each size class on instruction-following and function calling—the ..."
+    },
+    {
+      "title": "LFM2-8B-A1B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-8b-a1b",
+      "snippet": "LFM2-8B-A1B is Liquid AI&#x27;s Mixture-of-Experts model, combining 8B total parameters with only 1.5B active parameters per forward pass. This delivers the quality of larger models with the speed and efficiency of smaller ones—ideal for on-device deployment."
+    }
+  ]
+}

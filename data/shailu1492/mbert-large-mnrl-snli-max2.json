@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Shailu1492/mbert-large-mnrl-snli-max2",
+  "slug": "shailu1492-mbert-large-mnrl-snli-max2",
+  "author": "Shailu1492",
+  "url": "https://huggingface.co/Shailu1492/mbert-large-mnrl-snli-max2",
+  "created_at": "2026-08-16T17:22:35.000Z",
+  "updated_at": "2026-08-16T17:25:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:2234",
+    "loss:CoSENTLoss",
+    "dataset_size:5749",
+    "arxiv:1908.10084",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 254,
+  "trending_score": 0,
+  "parameters": 394781696,
+  "parameters_human": "394.8M",
+  "storage_bytes": 1579143688,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "stsb valid",
+      "metric": "Pearson Cosine",
+      "value": 0.9050590054072913
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "stsb valid",
+      "metric": "Spearman Cosine",
+      "value": 0.9142688836157535
+    }
+  ],
+  "sources": []
+}

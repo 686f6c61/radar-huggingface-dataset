@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/OneForecast",
+  "slug": "onescience-group-oneforecast",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/OneForecast",
+  "created_at": "2026-08-18T09:56:02.000Z",
+  "updated_at": "2026-08-18T09:56:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "oneforecast",
+    "OneScience",
+    "Earth Science",
+    "Weather Forecast",
+    "Global Forecast",
+    "ERA5",
+    "OneForecast",
+    "en",
+    "zh",
+    "dataset:OneScience/ERA5",
+    "arxiv:2502.00338",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "OneScience-Group/deep-learning-weather-prediction · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/deep-learning-weather-prediction",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OneScience",
+      "url": "https://www.onescience.ai/models",
+      "snippet": "OneScience is an AI for Science workspace for research discovery, agent workflows, and scientific knowledge."
+    },
+    {
+      "title": "OneForecast: A Universal Framework for Global and Regional",
+      "url": "https://arxiv.org/html/2502.00338v1",
+      "snippet": "And it doesn&#x27;t treats the forecasts of the global model in the region as forcing, which unable to fully utilize the information of the global model. In contrast, our neural nested grid method applies trainable local refinement to the target region in the network structure."
+    },
+    {
+      "title": "GitHub - onescience-ai/OneScience",
+      "url": "https://github.com/onescience-ai/OneScience/blob/main/",
+      "snippet": "OneScience 先进的科学智能 (AI for Science)模型工具包 OneScience是基于先进的深度学习框架打造的科学计算工具包，旨在通过一系列高度集成的组件加速科学研究和技术开发进程。"
+    }
+  ]
+}

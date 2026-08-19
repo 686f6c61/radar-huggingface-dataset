@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "monate615/kumaresano-albedo-qwen3.6-35b-bk17-62425c5c",
+  "slug": "monate615-kumaresano-albedo-qwen3-6-35b-bk17-62425c5c",
+  "author": "monate615",
+  "url": "https://huggingface.co/monate615/kumaresano-albedo-qwen3.6-35b-bk17-62425c5c",
+  "created_at": "2026-08-18T11:24:06.000Z",
+  "updated_at": "2026-08-18T11:24:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "monate615/albedo-qwen3.6-35b-20260809002 · Hugging Face",
+      "url": "https://huggingface.co/monate615/albedo-qwen3.6-35b-20260809002",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "monate615/albedo-qwen3.6-35b-20260809001 · Hugging Face",
+      "url": "https://huggingface.co/monate615/albedo-qwen3.6-35b-20260809001",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "albedo-qwen3.6-35b-20260809001 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/monate615/albedo-qwen3.6-35b-20260809001",
+      "snippet": "Deploy albedo-qwen3.6-35b-20260809001 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Best Way to Run Qwen 3.6 35B MoE Locally: VRAM, Speed, Setup",
+      "url": "https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/",
+      "snippet": "Qwen 3.6-35B-A3B has 35B total params but only 3B active per token. Real tok/s on RTX 3090, 4090, 5070 Ti, dual 5060 Ti, and M3 Ultra. Quants and setup."
+    }
+  ]
+}

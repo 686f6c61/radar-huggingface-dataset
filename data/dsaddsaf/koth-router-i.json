@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "dsaddsaf/koth-router-i",
+  "slug": "dsaddsaf-koth-router-i",
+  "author": "dsaddsaf",
+  "url": "https://huggingface.co/dsaddsaf/koth-router-i",
+  "created_at": "2026-08-04T10:31:35.000Z",
+  "updated_at": "2026-08-16T09:09:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 504701,
+  "storage_human": "504701 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

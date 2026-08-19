@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "minseokk7/BioPhys-Qwen-3.8-27B",
+  "slug": "minseokk7-biophys-qwen-3-8-27b",
+  "author": "minseokk7",
+  "url": "https://huggingface.co/minseokk7/BioPhys-Qwen-3.8-27B",
+  "created_at": "2026-08-18T05:27:59.000Z",
+  "updated_at": "2026-08-18T05:53:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "qwen",
+    "qwen3.8",
+    "27b",
+    "biophys-llm",
+    "pure-science",
+    "superstring-theory",
+    "quantum-computing",
+    "physics-informed",
+    "biological-optimization",
+    "text-generation",
+    "en",
+    "ko",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19173212160,
+  "parameters_human": "19.17B",
+  "storage_bytes": 60976116864,
+  "storage_human": "61.0 GB",
+  "base_model": "Qwen/Qwen3-27B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    },
+    {
+      "title": "Qwen3.8 27B model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B is an open-weight multimodal model from Alibaba for coding, visual understanding, tool use, and structured output. This variant keeps thinking disabled for faster direct responses."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    }
+  ]
+}

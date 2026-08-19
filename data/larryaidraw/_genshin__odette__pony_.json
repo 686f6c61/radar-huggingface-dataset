@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/_Genshin__Odette__Pony_",
+  "slug": "larryaidraw-_genshin__odette__pony_",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/_Genshin__Odette__Pony_",
+  "created_at": "2026-08-17T05:27:31.000Z",
+  "updated_at": "2026-08-17T05:27:52.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114436524,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Genshin Impact_Odette丨原神_奥黛塔 - Illustrious&noob_1.0 | Illustrious LoRA ...",
+      "url": "https://civitai.com/models/2732484/genshin-impactodette",
+      "snippet": "The character featured in this release is Odette. from 《Genshin Impact》.Compared to previous versions, version v1.0 uses 3D character model training, resulting in a higher degree of character fidelity.This LoRA can be used to restore the character&#x27;s appearance and outfit via trigger words."
+    },
+    {
+      "title": "README.md · LarryAIDraw/KeqingMainV1-Aesthetic at main",
+      "url": "https://huggingface.co/LarryAIDraw/KeqingMainV1-Aesthetic/blob/main/README.md?code=true",
+      "snippet": "LarryAIDraw / KeqingMainV1-Aesthetic like 0 License:creativeml-openrail-m Model card FilesFiles and versions xet Community Copy to bucket new main KeqingMainV1-Aesthetic /README.md LarryAIDraw Update README.md d88fdef verifiedalmost 2 years ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete Safe 121 Bytes"
+    },
+    {
+      "title": "Odette | Genshin Impact - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2029690278701162049",
+      "snippet": "Generate stunning anime art with the &#x27;Odette | Genshin Impact&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Odette | Genshin Impact - v1 - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/1016799413072334898",
+      "snippet": "Download Odette | Genshin Impact - free LORA Illustrious AI model on TENSORHUB ART. ODETTE, FEMALE CHARACTER, GENSHIN IMPACT. By PixZ"
+    },
+    {
+      "title": "[Genshin Impact MMD] OFFICIAL model download links",
+      "url": "https://www.deviantart.com/bunglescrungle/art/Genshin-Impact-MMD-OFFICIAL-model-download-links-1036315856",
+      "snippet": "[Genshin Impact MMD] OFFICIAL model download links — artwork by BungleScrungle on DeviantArt. Published: 2024-03-29 · Likes: 88 · Views: 60303 · Comments: 4 ..."
+    }
+  ]
+}

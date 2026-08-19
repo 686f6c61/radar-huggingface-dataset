@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "OpenVoiceOS/primeline-parakeet-onnx",
+  "slug": "openvoiceos-primeline-parakeet-onnx",
+  "author": "OpenVoiceOS",
+  "url": "https://huggingface.co/OpenVoiceOS/primeline-parakeet-onnx",
+  "created_at": "2026-08-17T14:43:57.000Z",
+  "updated_at": "2026-08-17T14:45:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "nemo-conformer-tdt",
+    "automatic-speech-recognition",
+    "onnx-asr",
+    "nemo",
+    "parakeet",
+    "tdt",
+    "de",
+    "base_model:primeline/parakeet-primeline",
+    "base_model:quantized:primeline/parakeet-primeline",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3222216067,
+  "storage_human": "3.2 GB",
+  "base_model": "primeline/parakeet-primeline",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

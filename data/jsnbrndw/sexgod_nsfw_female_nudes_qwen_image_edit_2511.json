@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jsnbrndw/SexGod_NSFW_Female_Nudes_QWEN_Image_Edit_2511",
+  "slug": "jsnbrndw-sexgod_nsfw_female_nudes_qwen_image_edit_2511",
+  "author": "jsnbrndw",
+  "url": "https://huggingface.co/jsnbrndw/SexGod_NSFW_Female_Nudes_QWEN_Image_Edit_2511",
+  "created_at": "2026-08-14T07:17:46.000Z",
+  "updated_at": "2026-08-14T07:17:47.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:adapter:Qwen/Qwen-Image",
+    "license:artistic-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2361194111,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen-Image",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SexGod NSFW Female Nudes QWEN Image Edit 2511",
+      "url": "https://civarchive.com/models/2339965?modelVersionId=2650343",
+      "snippet": "Download SexGod NSFW Female Nudes QWEN Image Edit 2511 - LORA for Qwen by sexgod1979. Free AI model download from CivArchive."
+    },
+    {
+      "title": "SexGod NSFW Female Nudes QWEN Image Edit 2511",
+      "url": "https://civitai.red/models/2339965/sexgod-nsfw-female-nudes-qwen-image-edit-2511?modelVersionId=2689224",
+      "snippet": "NSFW Female Nudes Lora for QWEN Image Edit 2511 VERSION 2.0 (please read!) All images in gallery are created with this lora using AI generated cont..."
+    },
+    {
+      "title": "SexGod_NSFW_Female_Nudes_QWEN_Image_Edit_2511 - Hugging Face",
+      "url": "https://huggingface.co/Baraje/SexGod_NSFW_Female_Nudes_QWEN_Image_Edit_2511",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SexGod NSFW Female Nudes QWEN Image Edit 2511",
+      "url": "https://civitai.com/models/2339965/reviews?modelVersionId=2650343",
+      "snippet": "Explore user reviews of the SexGod NSFW Female Nudes QWEN Image Edit 2511 AI model on Civitai, rated 5 stars by 54 users, and see how it has helped others bring their creative visions to life"
+    },
+    {
+      "title": "Baraje (Jesus Manuel Barrozo Rangel) - Hugging Face",
+      "url": "https://huggingface.co/Baraje/models",
+      "snippet": "z-image flux gemini published a model about 3 hours ago"
+    }
+  ]
+}

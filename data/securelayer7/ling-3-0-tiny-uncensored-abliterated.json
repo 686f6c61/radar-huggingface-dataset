@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Securelayer7/Ling-3.0-tiny-Uncensored-Abliterated",
+  "slug": "securelayer7-ling-3-0-tiny-uncensored-abliterated",
+  "author": "Securelayer7",
+  "url": "https://huggingface.co/Securelayer7/Ling-3.0-tiny-Uncensored-Abliterated",
+  "created_at": "2026-08-18T14:31:51.000Z",
+  "updated_at": "2026-08-18T14:38:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation",
+    "ling",
+    "bailing-moe",
+    "uncensored",
+    "abliterated",
+    "uncensored-llm",
+    "no-refusal",
+    "moe",
+    "mixture-of-experts",
+    "linear-attention",
+    "apple-silicon",
+    "mps",
+    "reasoning",
+    "cybersecurity",
+    "red-teaming",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:finetune:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7893389856,
+  "parameters_human": "7.89B",
+  "storage_bytes": 15800210291,
+  "storage_human": "15.8 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SC117/Ling-3.0-tiny-abliterated-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ling-3.0-tiny-abliterated-APEX-GGUF",
+      "snippet": "APEX classifies every tensor by its role — routed expert, shared expert, or attention — and applies a layer-wise precision gradient, giving the most sensitive edge layers higher precision and compressing the redundant middle layers more aggressively. Ling-3.0-tiny&#x27;s 128 routed experts (only 8 active per token) make it an ideal candidate."
+    },
+    {
+      "title": "SC117 (Scorpio117) - Hugging Face",
+      "url": "https://huggingface.co/SC117/collections",
+      "snippet": "a self-improving family of open-source models for agentic coding. QwenPaw-Flash is a lightweight model deeply optimized for the QwenPaw autonomous agent scenario. Since its training phase, the model has been specific An agentic model with Agentic Thinking. Gemma is a family of open models built by Google DeepMind."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-tiny Ling-3.0-tiny is a lightweight hybrid reasoning model in the Ling series designed for edge deployment scenarios, with 7.9B total parameters and only 1.3B activated parameters."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    }
+  ]
+}

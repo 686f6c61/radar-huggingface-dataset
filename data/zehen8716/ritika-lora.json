@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zehen8716/ritika-lora",
+  "slug": "zehen8716-ritika-lora",
+  "author": "zehen8716",
+  "url": "https://huggingface.co/zehen8716/ritika-lora",
+  "created_at": "2026-08-16T16:51:37.000Z",
+  "updated_at": "2026-08-16T17:14:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1343807872,
+  "storage_human": "1.3 GB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ritika S - V7 FLUX - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/849370911661471873",
+      "snippet": "Download Ritika S - free LORA SDXL 1.0 AI model on TENSORHUB ART. FLUX, SDXL. By AiQueen"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Zhenya - 2025-04-03 06:39:55 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/847820243784078098",
+      "snippet": "Download Zhenya - free LORA FLUX.1 AI model on TENSOR. FLUX. By Crazy Bunny"
+    },
+    {
+      "title": "Ritika - Rits FLUX - Free AI LORA | Tensor.Art",
+      "url": "https://www.tensor.art/models/805981103337932454",
+      "snippet": "Download Ritika - free LORA FLUX.1 AI model on TENSOR. FLUX, PERFECT BEAUTY, REALISTIC WOMAN. By QueenOfMyWorld"
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    }
+  ]
+}

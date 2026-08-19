@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "DeKUT-DSAIL/convnextv2-huge-cifar10-native",
+  "slug": "dekut-dsail-convnextv2-huge-cifar10-native",
+  "author": "DeKUT-DSAIL",
+  "url": "https://huggingface.co/DeKUT-DSAIL/convnextv2-huge-cifar10-native",
+  "created_at": "2026-08-14T12:31:16.000Z",
+  "updated_at": "2026-08-16T20:00:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "cifar-10",
+    "convnextv2_huge",
+    "dataset:cifar10",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 657500810,
+  "parameters_human": "657.5M",
+  "storage_bytes": 2631702309,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

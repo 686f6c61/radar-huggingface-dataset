@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "saifahmad123/EXP3_50_h100",
+  "slug": "saifahmad123-exp3_50_h100",
+  "author": "saifahmad123",
+  "url": "https://huggingface.co/saifahmad123/EXP3_50_h100",
+  "created_at": "2026-08-18T20:17:52.000Z",
+  "updated_at": "2026-08-18T20:21:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0",
+    "franka",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335788143,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saifahmad123 (Md Saif Ahmad) - Hugging Face",
+      "url": "https://huggingface.co/saifahmad123/datasets",
+      "snippet": "User profile of Md Saif Ahmad on Hugging Face"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "saifahmad123/Real · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/saifahmad123/Real/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "H100 Gpu | Nvidia",
+      "url": "https://www.nvidia.com/en-us/data-center/h100/",
+      "snippet": "An Order-of-Magnitude Leap for Accelerated Computing The NVIDIA H100 GPU delivers exceptional performance, scalability, and security for every workload. H100 uses breakthrough innovations based on the NVIDIA Hopper™ architecture to deliver industry-leading conversational AI, speeding up large language models (LLMs) by 30X."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

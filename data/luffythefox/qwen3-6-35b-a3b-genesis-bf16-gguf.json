@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "LuffyTheFox/Qwen3.6-35B-A3B-Genesis-BF16-GGUF",
+  "slug": "luffythefox-qwen3-6-35b-a3b-genesis-bf16-gguf",
+  "author": "LuffyTheFox",
+  "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Genesis-BF16-GGUF",
+  "created_at": "2026-08-12T14:55:47.000Z",
+  "updated_at": "2026-08-15T15:55:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "genesis",
+    "unsloth",
+    "qwen",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 1207,
+  "trending_score": 8,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 87202199488,
+  "storage_human": "87.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Genesis-BF16-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Genesis-BF16-GGUF",
+      "snippet": "The result is a model that consistent in performance, context clarity and following instructions, because it&#x27;s no longer fighting its own internal chaos. What is Genesis? Genesis is post training data regeneration and calibrarion algorythm for neural networks (LLM) in GGUF format that I made with AI help during almost half a year of development."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V3-GGUF",
+      "url": "https://aimarketcap.tech/models/luffythefox-qwen3-6-35b-a3b-uncensored-genesis-hermes-v3-gguf",
+      "snippet": "Explore Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V3-GGUF by LuffyTheFox — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-GGUF",
+      "url": "https://aiany.app/item/luffythefox-qwen3-6-35b-a3b-uncensored-genesis-hermes-v6-gguf",
+      "snippet": "A GGUF-local variant of Qwen3.6-35B that applies a non-training &#x27;Genesis&#x27; tensor-repair process and Hermes-agent fine-tuning to enable uncensored, multimodal (text+image) local inference. Highlights: MoE 35B spec, large native context, Hermes function-calling dataset transfer, and recommended quantization/runtime settings."
+    },
+    {
+      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V3-GGUF",
+      "url": "https://aiany.app/item/luffythefox-qwen3-6-35b-a3b-uncensored-genesis-hermes-v3-gguf",
+      "snippet": "A GGUF-format Qwen3.6 35B base model image-text-to-text release repaired via tensor-level SVD/scale correction and packaged with Hermes agent tweaks; multimodal (vision + text), MoE architecture, ready for GGUF runtimes like llama.cpp."
+    }
+  ]
+}

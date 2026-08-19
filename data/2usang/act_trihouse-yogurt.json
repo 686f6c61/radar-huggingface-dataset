@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "2usang/act_trihouse-yogurt",
+  "slug": "2usang-act_trihouse-yogurt",
+  "author": "2usang",
+  "url": "https://huggingface.co/2usang/act_trihouse-yogurt",
+  "created_at": "2026-08-16T20:14:03.000Z",
+  "updated_at": "2026-08-17T09:12:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:2usang/trihouse-yogurt",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413414576,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2usang/act_trihouse-dumpling · Hugging Face",
+      "url": "https://huggingface.co/2usang/act_trihouse-dumpling",
+      "snippet": "Instructions to use 2usang/act_trihouse-dumpling with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use 2usang/act_trihouse-dumpling with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "2usang (lee yu sang) - Hugging Face",
+      "url": "https://huggingface.co/2usang/models",
+      "snippet": "2usang&#x27;s models8 Sort: Recently updated 2usang/omx_trihouse-icebar Robotics • 51.7M•Updated about 17 hours ago"
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mlasli/Qwen3.8-27B-Heretic-Uncensored-Q5_K_M-GGUF",
+  "slug": "mlasli-qwen3-8-27b-heretic-uncensored-q5_k_m-gguf",
+  "author": "mlasli",
+  "url": "https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-Q5_K_M-GGUF",
+  "created_at": "2026-08-18T08:31:08.000Z",
+  "updated_at": "2026-08-18T08:43:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "qwen3",
+    "abliterated",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "roleplay",
+    "text-generation",
+    "llama.cpp",
+    "mtp",
+    "speculative-decoding",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 19682420064,
+  "storage_human": "19.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T09:59:04.368Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Heretic-Uncensored-Q4_K_M-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-Q4_K_M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna."
+    },
+    {
+      "title": "⚡ qwen38-uncensored - Run a Powerful Uncensored AI Locally",
+      "url": "https://github.com/unburdened-jackinthebox365/qwen38-uncensored",
+      "snippet": "This is your personal gateway to running Qwen 3.8 27B, a massive and highly capable AI language model, entirely on your own computer. No cloud, no subscription, no censorship filters. It&#x27;s the official Qwen 3.8 weights (27 billion parameters) in an optimized format that runs fast on regular hardware ..."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    }
+  ]
+}

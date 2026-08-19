@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "CoreEpoch/tinyvit-5m-int8-imagenet",
+  "slug": "coreepoch-tinyvit-5m-int8-imagenet",
+  "author": "CoreEpoch",
+  "url": "https://huggingface.co/CoreEpoch/tinyvit-5m-int8-imagenet",
+  "created_at": "2026-07-19T22:33:13.000Z",
+  "updated_at": "2026-08-18T22:34:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "int8",
+    "quantized",
+    "image-classification",
+    "imagenet",
+    "edge",
+    "cpu",
+    "dataset:imagenet-1k",
+    "base_model:timm/tiny_vit_5m_224.dist_in22k_ft_in1k",
+    "base_model:quantized:timm/tiny_vit_5m_224.dist_in22k_ft_in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34938471,
+  "storage_human": "35 MB",
+  "base_model": "timm/tiny_vit_5m_224.dist_in22k_ft_in1k",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CoreEpoch/tinyvit-5m-int8-imagenet · Hugging Face",
+      "url": "https://huggingface.co/CoreEpoch/tinyvit-5m-int8-imagenet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "int8-models/baselines/tinyvit-5m-int8-imagenet at main · CoreEpoch/int8 ...",
+      "url": "https://github.com/CoreEpoch/int8-models/tree/main/baselines/tinyvit-5m-int8-imagenet",
+      "snippet": "Measurement protocol and exact baseline invocations behind Core Epoch&#x27;s published INT8 ONNX models - CoreEpoch/int8-models"
+    },
+    {
+      "title": "CoreEpoch (Core Epoch) - Hugging Face",
+      "url": "https://huggingface.co/CoreEpoch",
+      "snippet": "Computer Vision, Quantization AI & ML interests Computer Vision, Quantization Recent Activity ccoomler updated a model 3 days ago"
+    },
+    {
+      "title": "GitHub - CoreEpoch/int8-models: Measurement protocol and exact baseline ...",
+      "url": "https://github.com/CoreEpoch/int8-models",
+      "snippet": "Classifier accuracy is top-1 on 49,872 ImageNet-1K validation images; detection is AP50:95 on 4,800 COCO val2017 images. Speedup is measured against each model&#x27;s own FP32 baseline on one thread. TinyViT is faster than FP32 at one thread and slower at four on ONNX Runtime, so its card carries no speed claim; that model is published for its accuracy under quantization rather than its latency."
+    },
+    {
+      "title": "Performance & Benchmarks | wkcn/TinyViT | DeepWiki",
+      "url": "https://deepwiki.com/wkcn/TinyViT/2.3-performance-and-benchmarks",
+      "snippet": "This document provides comprehensive performance metrics, accuracy benchmarks, and efficiency analysis for the TinyViT model family. It covers accuracy results on ImageNet datasets, computational efficiency measurements (MACs, FPS), and comparative analysis across different model variants and training configurations."
+    }
+  ]
+}

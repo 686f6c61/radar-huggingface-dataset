@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Linslab/ManiLadder_Models",
+  "slug": "linslab-maniladder_models",
+  "author": "Linslab",
+  "url": "https://huggingface.co/Linslab/ManiLadder_Models",
+  "created_at": "2026-04-21T02:37:27.000Z",
+  "updated_at": "2026-08-17T22:13:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31836116590,
+  "storage_human": "31.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Linslab/ManiLadder_Models · Hugging Face",
+      "url": "https://huggingface.co/Linslab/ManiLadder_Models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Linslab/ManiLadder_Models at main - Hugging Face",
+      "url": "https://huggingface.co/Linslab/ManiLadder_Models/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/linslab-vr_maniladder_models - GitHub",
+      "url": "https://github.com/Damacol/linslab-vr_maniladder_models",
+      "snippet": "Linslab/VR_ManiLadder_Models - Private, Uncensored AI for Real Creators and Devs Self-hosted {MODEL} pipeline designed for privacy-first workflows. Bypass restrictions, keep your data sovereign."
+    },
+    {
+      "title": "linslab-vr_maniladder_models/README.md at main · Damacol ... - GitHub",
+      "url": "https://github.com/Damacol/linslab-vr_maniladder_models/blob/main/README.md",
+      "snippet": "Linslab/VR_ManiLadder_Models - Private, Uncensored AI for Real Creators and Devs Self-hosted {MODEL} pipeline designed for privacy-first workflows. Bypass restrictions, keep your data sovereign."
+    },
+    {
+      "title": "Xuchuan Huang | 黄叙川",
+      "url": "https://huangxuchuan.github.io/",
+      "snippet": "Xuchuan Huang | 黄叙川 I am an undergraduate student at Yuanpei College of Peking University. I am advised by Prof. Yaodong Yang at PAIR Lab. Previously, I was a research assistant at NUS LinS Lab, and an intern at Psibot and BAAI. My current research interests lie in embodied AI, especially learning dexterous manipulation from human data, with the goal of building general-purpose embodied ..."
+    }
+  ]
+}

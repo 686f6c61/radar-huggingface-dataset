@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Abbyvintage26/Abby",
+  "slug": "abbyvintage26-abby",
+  "author": "Abbyvintage26",
+  "url": "https://huggingface.co/Abbyvintage26/Abby",
+  "created_at": "2026-08-18T20:18:30.000Z",
+  "updated_at": "2026-08-18T20:18:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abbymodels.com",
+      "url": "https://abby.abbymodels.com/",
+      "snippet": "abbymodels.com ... abbymodels.com"
+    },
+    {
+      "title": "Telegram: View @abbymodel - t.me",
+      "url": "https://t.me/abbymodel",
+      "snippet": "😍 Abby💘 5 266 subscribers"
+    },
+    {
+      "title": "telegraph sweet +abby — Yandex: found 20 thousand results",
+      "url": "https://desktop.yandex.com/search/?text=telegraph+sweet+%2Babby&lr=21206&msp=1",
+      "snippet": "Telegraph sweet abby - There&#x27;s An AI For That Browse 6 Telegraph sweet abby AIs. Includes tasks such as Ai companions, News, Notes, Customer support and Voice message transcription."
+    },
+    {
+      "title": "abby.abb.com - Sign in to your account",
+      "url": "https://abby.abb.com/",
+      "snippet": "Abby is an internal assistant designed to streamline processes and enhance productivity within ABB."
+    },
+    {
+      "title": "Abby - Your Thought Companion | 100% Free Trial, Available 24/7",
+      "url": "https://abby.gg/",
+      "snippet": "Abby offers 24/7, judgment-free support to help you talk through challenges, reflect clearly, and navigate everyday life."
+    }
+  ]
+}

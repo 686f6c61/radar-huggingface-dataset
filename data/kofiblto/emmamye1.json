@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KOFIblto/emmamye1",
+  "slug": "kofiblto-emmamye1",
+  "author": "KOFIblto",
+  "url": "https://huggingface.co/KOFIblto/emmamye1",
+  "created_at": "2026-08-17T23:57:57.000Z",
+  "updated_at": "2026-08-18T00:49:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1344879778,
+  "storage_human": "1.3 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KOFIblto (Mathias) - Hugging Face",
+      "url": "https://huggingface.co/KOFIblto/models",
+      "snippet": "KOFIblto&#x27;s models1 Sort: Recently updated KOFIblto/lora4-ar Text-to-Image •Updated 1 day ago• 9"
+    },
+    {
+      "title": "KOFIblto (Mathias) - Hugging Face",
+      "url": "https://huggingface.co/KOFIblto",
+      "snippet": "Recent Activity updated a model1 day ago KOFIblto/lora4-ar published a model1 day ago KOFIblto/lora4-ar View all activity"
+    },
+    {
+      "title": "KOFiblto (Mathias Kornschober) · GitHub",
+      "url": "https://github.com/KOFiblto",
+      "snippet": "A graph representing KOFiblto&#x27;s contributions from June 01, 2025 to June 07, 2026. The contributions are 84% commits, 16% pull requests, 0% code review, 0% issues."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - KOFiblto/Scripts: A collection of personal Python automation ...",
+      "url": "https://github.com/KOFiblto/Scripts",
+      "snippet": "A collection of personal Python automation scripts developed as a hobby to handle various small tasks. Includes compiled executables and an experimental sandbox for AI-generated code."
+    }
+  ]
+}

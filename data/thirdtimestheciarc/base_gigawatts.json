@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ThirdTimesTheCiarc/base_gigawatts",
+  "slug": "thirdtimestheciarc-base_gigawatts",
+  "author": "ThirdTimesTheCiarc",
+  "url": "https://huggingface.co/ThirdTimesTheCiarc/base_gigawatts",
+  "created_at": "2026-01-02T14:31:19.000Z",
+  "updated_at": "2026-08-18T02:16:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140928015587,
+  "storage_human": "140.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThirdTimesTheCiarc/base_gigawatts · Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/base_gigawatts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ThirdTimesTheCiarc/base_gigawatts at main - Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/base_gigawatts/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Gigawatt Comparator — jasperbernaers.com",
+      "url": "https://jasperbernaers.com/ai-gigawatts/",
+      "snippet": "Compare the power consumption and gigawatt projections of the top 10 AI models and their training infrastructure."
+    },
+    {
+      "title": "Power is Everything in AI. $100 Billion Per Gigawatt of Data Center",
+      "url": "https://www.nextbigfuture.com/2026/06/power-is-everything-in-ai-100-billion-per-gigawatt-of-data-center.html",
+      "snippet": "The AI race is shifting from who has the best model to who can actually deploy and access the most reliable gigawatts of compute at scale. In a recent All-In podcast episode, Chamath stated that a full 1 GW AI data center now costs around $100 billion to build."
+    },
+    {
+      "title": "Two Federal AI Power Deals In Nine Days. Neither One Is Signed. - Forbes",
+      "url": "https://www.forbes.com/sites/guneyyildiz/2026/08/06/every-ai-power-announcement-comes-with-a-gigawatt-few-come-with-a-commitment/",
+      "snippet": "AI infrastructure now arrives in gigawatts, but announced, permitted, contracted and delivered capacity are four different things."
+    }
+  ]
+}

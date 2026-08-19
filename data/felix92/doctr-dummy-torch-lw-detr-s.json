@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Felix92/doctr-dummy-torch-lw-detr-s",
+  "slug": "felix92-doctr-dummy-torch-lw-detr-s",
+  "author": "Felix92",
+  "url": "https://huggingface.co/Felix92/doctr-dummy-torch-lw-detr-s",
+  "created_at": "2026-08-18T13:55:38.000Z",
+  "updated_at": "2026-08-18T13:56:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "doctr",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "doctr",
+    "pytorch",
+    "ocr",
+    "layout",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59149063,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Felix92/doctr-dummy-torch-lw-detr-s · Hugging Face",
+      "url": "https://huggingface.co/Felix92/doctr-dummy-torch-lw-detr-s",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Felix92 (Felix Dittrich) - Hugging Face",
+      "url": "https://huggingface.co/Felix92",
+      "snippet": "Recent Activity updated a model12 days ago Felix92/doctr-dummy-torch-tablecenternet published a model12 days ago Felix92/doctr-dummy-torch-tablecenternet new activity26 days ago Felix92/onnxtr-parseq-multilingual-v1: Upload model.onnx View all activity"
+    },
+    {
+      "title": "Felix92/doctr-dummy-torch-crnn-mobilenet-v3-small - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/35965",
+      "snippet": "Optical Character Recognition made seamless & accessible to anyone, powered by TensorFlow 2 & PyTorch"
+    },
+    {
+      "title": "Felix92/doctr-dummy-tf-fast-small-v2 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/felix92-doctr-dummy-tf-fast-small-v2",
+      "snippet": "doctr-dummy-tf-fast-small-v2 install doctr-dummy-tf-fast-small-v2 is an open source model from GitHub that offers a free installation service, and any user can find doctr-dummy-tf-fast-small-v2 on GitHub to install."
+    },
+    {
+      "title": "doctr.models - docTR documentation - GitHub Pages",
+      "url": "https://mindee.github.io/doctr/latest/modules/models.html",
+      "snippet": "doctr.models ¶ doctr.models.classification ¶ doctr.models.classification.vgg16_bn_r(pretrained: bool = False, **kwargs: Any) → VGG [source] ¶ VGG-16 architecture as described in \"Very Deep Convolutional Networks for Large-Scale Image Recognition\", modified by adding batch normalization, rectangular pooling and a simpler classification head."
+    }
+  ]
+}

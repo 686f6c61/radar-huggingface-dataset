@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "stage-babylm/llama-64-8L",
+  "slug": "stage-babylm-llama-64-8l",
+  "author": "stage-babylm",
+  "url": "https://huggingface.co/stage-babylm/llama-64-8L",
+  "created_at": "2026-08-11T04:42:55.000Z",
+  "updated_at": "2026-08-17T20:50:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 625,
+  "trending_score": 0,
+  "parameters": 521408,
+  "parameters_human": "521408",
+  "storage_bytes": 339151570,
+  "storage_human": "339 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stage-babylm/llama-64-8L · Hugging Face",
+      "url": "https://huggingface.co/stage-babylm/llama-64-8L",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stage-babylm/llama-64-8L at main - Hugging Face",
+      "url": "https://huggingface.co/stage-babylm/llama-64-8L/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    },
+    {
+      "title": "GitHub Pages - Baby",
+      "url": "https://babylm.github.io/",
+      "snippet": "Track update: This year introduces a dedicated MultiLingual track, and removes Multimodal and Interaction as standalone competition tracks, both are now subsumed into Strict / Strict-Small (paired image-text data and teacher-model feedback are allowed). Evaluation pipeline: The BabyLM 2026 evaluation pipeline is now ready!"
+    },
+    {
+      "title": "Introducing LLaMA: A foundational, 65-billion-parameter language model",
+      "url": "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
+      "snippet": "Today, we&#x27;re releasing our LLaMA (Large Language Model Meta AI) foundational model with a gated release. LLaMA is more efficient and competitive with previously published models of a similar size on existing benchmarks."
+    }
+  ]
+}

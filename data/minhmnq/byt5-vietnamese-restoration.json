@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "minhmnq/byt5-vietnamese-restoration",
+  "slug": "minhmnq-byt5-vietnamese-restoration",
+  "author": "minhmnq",
+  "url": "https://huggingface.co/minhmnq/byt5-vietnamese-restoration",
+  "created_at": "2026-08-18T18:17:14.000Z",
+  "updated_at": "2026-08-18T19:48:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "byt5",
+    "punctuation-restoration",
+    "diacritic-restoration",
+    "vietnamese",
+    "seq2seq",
+    "text2text-generation",
+    "vi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299637760,
+  "parameters_human": "299.6M",
+  "storage_bytes": 2433949133,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EDA : Bank Loan Default Risk Analysis - Kaggle",
+      "url": "https://www.kaggle.com/code/brownfox2k6/byt5-vietnamese-restoration",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from ByT5 Vietnamese Restoration Final"
+    },
+    {
+      "title": "Khôi phục dấu (tiếng Việt) | Nôm",
+      "url": "https://nom-vn.nrl.ai/tasks/diacritic-restoration",
+      "snippet": "Khôi phục dấu, sửa chính tả, OCR, RAG cục bộ — mã nguồn mở, dành cho tiếng Việt."
+    },
+    {
+      "title": "GitHub - Eternity-KT/byt5-vietnamese-restoration-pilot",
+      "url": "https://github.com/Eternity-KT/byt5-vietnamese-restoration-pilot",
+      "snippet": "Contribute to Eternity-KT/byt5-vietnamese-restoration-pilot development by creating an account on GitHub."
+    },
+    {
+      "title": "nom-vn/training/diacritic/README.md at main · nrl-ai/nom-vn",
+      "url": "https://github.com/nrl-ai/nom-vn/blob/main/training/diacritic/README.md",
+      "snippet": "ByT5-small (300 M, char-level, robust to typos per arXiv:2201.13242) is the canonical SOTA for VN diacritic restoration in the literature, but needs ~4× longer sequences (it&#x27;s byte-level) and is queued for v0.2.25 only if v0.2.24 fails the gate."
+    },
+    {
+      "title": "tf_model.h5 · yammdd/vietnamese-diacritic-restoration-v2 at main",
+      "url": "https://huggingface.co/yammdd/vietnamese-diacritic-restoration-v2/blob/main/tf_model.h5",
+      "snippet": "Instructions to use yammdd/vietnamese-diacritic-restoration-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dementor-research/dpo_chatbot_arena_nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42",
+  "slug": "dementor-research-dpo_chatbot_arena_nemotron-nano-30b-a3b_as_llama-3-3-70b_seed42",
+  "author": "dementor-research",
+  "url": "https://huggingface.co/dementor-research/dpo_chatbot_arena_nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42",
+  "created_at": "2026-08-16T19:16:27.000Z",
+  "updated_at": "2026-08-16T19:16:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "dementor-research",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1544348352,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_nemotron-nano-30b ...",
+      "url": "https://huggingface.co/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_nemotron-nano-30b-a3b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dpo_chatbot_arena_nemotron-nano-30b-a3b_as_olmo-3-7b_seed42",
+      "url": "https://huggingface.co/dementor-research/dpo_chatbot_arena_nemotron-nano-30b-a3b_as_olmo-3-7b_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dpo_chatbot_arena_llama-3.3-70b_as_nemotron-nano-30b-a3b_seed42",
+      "url": "https://friendli.ai/models/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_nemotron-nano-30b-a3b_seed42",
+      "snippet": "Request reserved instances Model provider dementor-research Model tree Base meta-llama/Llama-3.3-70B-Instruct Adapter this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Model APIs Dedicated Endpoints Container More information Model card"
+    },
+    {
+      "title": "dpo_chatbot_arena_llama-3.3-70b_as_nemotron-nano-30b-a3b_seed1",
+      "url": "https://friendli.ai/models/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_nemotron-nano-30b-a3b_seed1",
+      "snippet": "Run dpo_chatbot_arena_llama-3.3-70b_as_nemotron-nano-30b-a3b_seed1 with FriendliAI inference. LoRA adapter trained via Tinker as part of the dementor…"
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/L3.1-Twilightv2-12B-GGUF",
+  "slug": "mradermacher-l3-1-twilightv2-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/L3.1-Twilightv2-12B-GGUF",
+  "created_at": "2026-08-16T17:33:34.000Z",
+  "updated_at": "2026-08-16T21:52:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:kromcomp/L3.1-Twilightv2-12B",
+    "base_model:quantized:kromcomp/L3.1-Twilightv2-12B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 526,
+  "trending_score": 0,
+  "parameters": 11956310080,
+  "parameters_human": "11.96B",
+  "storage_bytes": 82388420704,
+  "storage_human": "82.4 GB",
+  "base_model": "kromcomp/L3.1-Twilightv2-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

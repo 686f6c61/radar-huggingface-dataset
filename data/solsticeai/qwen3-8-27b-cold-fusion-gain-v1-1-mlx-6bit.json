@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "SolsticeAI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit",
+  "slug": "solsticeai-qwen3-8-27b-cold-fusion-gain-v1-1-mlx-6bit",
+  "author": "SolsticeAI",
+  "url": "https://huggingface.co/SolsticeAI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit",
+  "created_at": "2026-08-18T09:01:43.000Z",
+  "updated_at": "2026-08-18T10:19:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "unsloth",
+    "GAIN Training",
+    "COLD-FUSION",
+    "finetune",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3.8",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "solsticeai",
+    "SolsticeAI",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/Reasoning-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5885566464,
+  "parameters_human": "5.89B",
+  "storage_bytes": 21876371302,
+  "storage_human": "21.9 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "README.md · DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 at main",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1/blob/main/README.md",
+      "snippet": "This training is about assessing root Qwen3.8-27B and a trained version on known datasets using the COLD FUSION (GAIN+UNSLOTH) training tech which was invented by my team during the R & D of \"Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic\"."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Free Qwen3.8-27B AI model lands, grabs over 3 million downloads in one ...",
+      "url": "https://cybernews.com/tech/qwen-38-27b-ai-model-debuts-with-million-downloads/",
+      "snippet": "Alibaba&#x27;s newly released free, open-weight AI model, Qwen3.8-27B is gaining momentum, amassing over 3 million downloads in its opening weekend as developers and prosumers seek its performance capabilities on consumer hardware."
+    }
+  ]
+}

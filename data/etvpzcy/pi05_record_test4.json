@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "etvpzcy/pi05_record_test4",
+  "slug": "etvpzcy-pi05_record_test4",
+  "author": "etvpzcy",
+  "url": "https://huggingface.co/etvpzcy/pi05_record_test4",
+  "created_at": "2026-08-14T13:12:14.000Z",
+  "updated_at": "2026-08-14T13:16:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:etvpzcy/record-test4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473103888,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

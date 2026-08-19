@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SCU-VIP-Lab/Learned-image-compression-with-transformers",
+  "slug": "scu-vip-lab-learned-image-compression-with-transformers",
+  "author": "SCU-VIP-Lab",
+  "url": "https://huggingface.co/SCU-VIP-Lab/Learned-image-compression-with-transformers",
+  "created_at": "2026-08-16T04:13:27.000Z",
+  "updated_at": "2026-08-16T04:17:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "compression",
+    "detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20153485106,
+  "storage_human": "20.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ying Liu | Home - SCU",
+      "url": "https://www.cse.scu.edu/~yliu1/",
+      "snippet": "Recent advances in deep learning have achieved great success in computer vision tasks. The Video and Image Processing Lab currently focuses on deep learning-based image and video compression, visual coding for machines, point cloud coding, vision-language model, and generative AI."
+    },
+    {
+      "title": "GitHub - jmliu206/LIC_TCM",
+      "url": "https://github.com/jmliu206/LIC_TCM",
+      "snippet": "Abstract Learned image compression (LIC) methods have exhibited promising progress and superior rate-distortion performance compared with classical image compression standards. Most existing LIC methods are Convolutional Neural Networks-based (CNN-based) or Transformer-based, which have different advantages."
+    },
+    {
+      "title": "Ying Liu | Publications - SCU",
+      "url": "https://www.cse.scu.edu/~yliu1/publications.html",
+      "snippet": "Learned image compression with transformers T. Shen, Y. Liu, SPIE Defense + Commercial Sensing, Conference: Big Data V: Learning, Analytics, and Applications, Orlando, FL, May 2023."
+    },
+    {
+      "title": "Santa Clara University Video and Image Processing Lab",
+      "url": "https://huggingface.co/SCU-VIP-Lab",
+      "snippet": "Org profile for Santa Clara University Video and Image Processing Lab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "[2303.14978] Learned Image Compression with Mixed Transformer-CNN ...",
+      "url": "https://arxiv.org/abs/2303.14978",
+      "snippet": "Learned image compression (LIC) methods have exhibited promising progress and superior rate-distortion performance compared with classical image compression standards. Most existing LIC methods are Convolutional Neural Networks-based (CNN-based) or Transformer-based, which have different advantages. Exploiting both advantages is a point worth exploring, which has two challenges: 1) how to ..."
+    }
+  ]
+}

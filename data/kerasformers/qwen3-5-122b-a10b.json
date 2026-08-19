@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kerasformers/qwen3.5-122b-a10b",
+  "slug": "kerasformers-qwen3-5-122b-a10b",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/qwen3.5-122b-a10b",
+  "created_at": "2026-08-14T21:54:01.000Z",
+  "updated_at": "2026-08-15T03:52:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "qwen3_5_moe",
+    "qwen3.5-moe",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "mixture-of-experts",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:finetune:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245416879078,
+  "storage_human": "245.4 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-122B-A10B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-122B-A10B Benchmarks & Speed (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/qwen3-5-122b-a10b",
+      "snippet": "Qwen3.5-122B-A10B is a open weight model with a 262K context window. It uses an explicit reasoning mode, which can improve complex problem solving while adding latency and token use."
+    },
+    {
+      "title": "qwen/qwen3.5-122b-a10b — 262K context, $0.40/1M | haimaker.ai",
+      "url": "https://haimaker.ai/models/qwen/qwen3.5-122b-a10b",
+      "snippet": "Qwen3.5 122B A10B (qwen/qwen3.5-122b-a10b) is a qwen3_5_moe 125.1B-parameter model from Qwen with a 262,144-token context window and 65,536 max output tokens, priced at $0.40/1M input and $2.00/1M output tokens. Available via the haimaker.ai OpenAI-compatible API."
+    },
+    {
+      "title": "Qwen 3.5 122B A10B — 122B MoE LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/qwen3.5-122b-a10b",
+      "snippet": "Qwen 3.5 122B A10B: 122B parameters, 256K context, chat, coding, reasoning, multilingual, vision, math. 20 benchmarks, 17 quantizations. VRAM requirements, speed ..."
+    },
+    {
+      "title": "Qwen/Qwen3.5-122B-A10B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-122B-A10B",
+      "snippet": "Qwen3.5-122B-A10B is a mid-tier member of the Qwen3.5 family, sharing the gated delta networks MoE architecture with 122B total parameters and 10B activated per token (256 experts)."
+    }
+  ]
+}

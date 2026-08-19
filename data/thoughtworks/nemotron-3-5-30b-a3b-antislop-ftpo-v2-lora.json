@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Nemotron-3.5-30B-A3B-Antislop-FTPO-V2-LoRA",
+  "slug": "thoughtworks-nemotron-3-5-30b-a3b-antislop-ftpo-v2-lora",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Nemotron-3.5-30B-A3B-Antislop-FTPO-V2-LoRA",
+  "created_at": "2026-08-15T06:30:56.000Z",
+  "updated_at": "2026-08-15T06:31:07.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "nvidia",
+    "nemotron",
+    "nemotron-3.5",
+    "antislop",
+    "ftpo",
+    "lora",
+    "creative-writing",
+    "typography",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2510.15061",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 858691180,
+  "storage_human": "859 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

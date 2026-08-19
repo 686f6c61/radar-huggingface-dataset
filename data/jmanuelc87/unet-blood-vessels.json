@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "jmanuelc87/unet-blood-vessels",
+  "slug": "jmanuelc87-unet-blood-vessels",
+  "author": "jmanuelc87",
+  "url": "https://huggingface.co/jmanuelc87/unet-blood-vessels",
+  "created_at": "2026-08-14T00:24:13.000Z",
+  "updated_at": "2026-08-14T17:37:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unet_simple",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 12740681,
+  "parameters_human": "12.7M",
+  "storage_bytes": 2755454091,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

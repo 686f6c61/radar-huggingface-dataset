@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "liufe7848/MyAwesomeModel",
+  "slug": "liufe7848-myawesomemodel",
+  "author": "liufe7848",
+  "url": "https://huggingface.co/liufe7848/MyAwesomeModel",
+  "created_at": "2026-07-21T13:54:43.000Z",
+  "updated_at": "2026-08-18T03:17:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zASE123/my-awesome-model · Hugging Face",
+      "url": "https://huggingface.co/zASE123/my-awesome-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "liuffg124/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/liuffg124/MyAwesomeModel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "my_awesome_model | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/myawesomemodel/",
+      "snippet": "my_awesome_model is a fine-tuned version of DistilBERT-base-uncased, specifically optimized for text classification tasks. The model demonstrates impressive performance metrics, achieving a training accuracy of 92.95% and a final training loss of 0.0632 after 2 epochs of training."
+    },
+    {
+      "title": "dongbobo / MyAwesomeModel - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/dongbobo/MyAwesomeModel/73b70f9a83f359df1512922070d2d24c8c9e1924/overview",
+      "snippet": "Discover potential threats in the dongbobo / MyAwesomeModel model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "Insights DB - Protect AI",
+      "url": "https://protectai.com/insights/models/dongbobo/MyAwesomeModel/c0dea40fa26828d6b9774a502f146793c9683a26/overview",
+      "snippet": "Discover potential threats in the dongbobo / MyAwesomeModel model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-owt-d768-gammasweep",
+  "slug": "dimitarpg13-semsimula-fock-parflm-anisogaussian-vtheta-owt-d768-gammasweep",
+  "author": "dimitarpg13",
+  "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-owt-d768-gammasweep",
+  "created_at": "2026-08-18T01:00:37.000Z",
+  "updated_at": "2026-08-18T02:12:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "FockMultiXiPARFLM",
+    "research",
+    "semsimula",
+    "conservative-language-model",
+    "scalar-potential",
+    "lagrangian-mechanics",
+    "energy-based-model",
+    "physics-informed",
+    "fock-space",
+    "parflm",
+    "parf",
+    "multi-channel-xi",
+    "depth-conditioned-vtheta",
+    "multi-context-vtheta",
+    "anisotropic-gaussian-potential",
+    "low-rank-precision",
+    "gaussian-mixture-potential",
+    "bounded-potential",
+    "analytical-gradient",
+    "interpretable",
+    "virtual-registers",
+    "reverse-channel",
+    "controlled-conservativity",
+    "sparse-routing",
+    "openwebtext",
+    "gamma-sweep",
+    "damping-coefficient",
+    "non-transformer",
+    "attention-free",
+    "constant-memory-inference",
+    "riemannian-geometry",
+    "riemannian-geodesics",
+    "geodesic-residual",
+    "jacobi-metric",
+    "text-generation",
+    "en",
+    "dataset:Skylion007/openwebtext",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21634493473,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "OpenWebText",
+      "metric": "Validation Perplexity (gamma=0.05, best of 8 gamma-sweep candidates, 3,000-step short sweep — not a fully trained model)",
+      "value": 326.97
+    }
+  ],
+  "sources": [
+    {
+      "title": "dimitarpg13/semsimula-fock-parflm · Hugging Face",
+      "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm",
+      "snippet": "The Fock-PARFLM v2.1 is the best-performing purely conservative language model in the Semantic Simulation family. It extends the PARFLM with a Fock-space latent register pool -- M=16 virtual register particles with Q/K/V-structured creation gates, LIFO stack discipline, and an optional non-conservative reverse channel -- achieving 9.30 PPL on ..."
+    },
+    {
+      "title": "semsimula-fock-parflm-structured-vtheta - Hugging Face",
+      "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm-structured-vtheta",
+      "snippet": "A structured variant of the Fock-PARFLM v2.1 conservative language model in which the MLP scalar potential ${V}_{&#92;theta }V&#92;_&#92;backslash theta$ is replaced by a mixture of K=8 diagonal quadratic wells (SQ3), while retaining the full MLP-based pairwise potential ${V}_{&#92;varphi }V&#92;_&#92;backslash phi$ and the Fock register mechanism (16 registers, LIFO stack discipline, reverse channel). This ..."
+    },
+    {
+      "title": "GitHub - dimitarpg13/semsimula-paper: Companion repository on the ...",
+      "url": "https://github.com/dimitarpg13/semsimula-paper",
+      "snippet": "Companion repository for the paper Semantic Simulation: A Prescriptive Lagrangian Framework for Efficient Semantic Inference A Conservative-by-Construction Language Model and the Shared-Potential Separator, with a Correspondence to Joint Embedding Predictive Architectures. Dimitar P. Gueorguiev (Independent Researcher), 2026."
+    },
+    {
+      "title": "semsimula-paper/companion_notes/Fock-PARFLM_Scale-Up ... - GitHub",
+      "url": "https://github.com/dimitarpg13/semsimula-paper/blob/main/companion_notes/Fock-PARFLM_Scale-Up_Comparative_Experiments.md",
+      "snippet": "Fock-PARFLM Scale-Up: Comparative Parameter Analysis vs GPT-2 Exact, code-verified parameter counts for the three scale-up tiers used in the OpenWebText scale-up experiments (d=384, d=768, d=1024), for both Fock-PARFLM v2.1 (untied embeddings) and a matched GPT-2-style baseline (tied embeddings, canonical architecture) at the same hidden dimension d and depth L."
+    },
+    {
+      "title": "semsimula-fock-parflm-depthcond-vtheta-openwebtext",
+      "url": "https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta-openwebtext",
+      "snippet": "The model was trained to minimise cross-entropy, not to produce geodesic trajectories. That the learned force field happens to be nearly metric-compatible is an emergent structural property — the scalar and pairwise potentials organise the hidden-state manifold so that the minimum-energy paths are also the most predictive paths."
+    }
+  ]
+}

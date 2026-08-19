@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sakamakismile/llm-jp-4-33b-thinking-NVFP4",
+  "slug": "sakamakismile-llm-jp-4-33b-thinking-nvfp4",
+  "author": "sakamakismile",
+  "url": "https://huggingface.co/sakamakismile/llm-jp-4-33b-thinking-NVFP4",
+  "created_at": "2026-08-18T14:10:40.000Z",
+  "updated_at": "2026-08-18T14:22:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "llama",
+    "nvfp4",
+    "compressed-tensors",
+    "blackwell",
+    "japanese",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "ja",
+    "base_model:llm-jp/llm-jp-4-33b-thinking",
+    "base_model:quantized:llm-jp/llm-jp-4-33b-thinking",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33219548160,
+  "parameters_human": "33.22B",
+  "storage_bytes": 21594109486,
+  "storage_human": "21.6 GB",
+  "base_model": "llm-jp/llm-jp-4-33b-thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sakamakismile/llm-jp-4-32b-a3b-thinking-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/sakamakismile/llm-jp-4-32b-a3b-thinking-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sakamakismile (TonoKen3) - Hugging Face",
+      "url": "https://huggingface.co/sakamakismile",
+      "snippet": "Lna-Lab inc. Automatic Speech Recognition • 4B • Updated Mar 11 • 1.91M • 919"
+    },
+    {
+      "title": "llm-jp-4-32b-a3b-thinking-NVFP4 - friendli.ai",
+      "url": "https://friendli.ai/models/sakamakismile/llm-jp-4-32b-a3b-thinking-NVFP4",
+      "snippet": "The padding is mathematically lossless (the 64 extra units have zero gate/up output rows and zero down-projection columns, contributing exactly 0), but the tensor shapes differ from the base model — keep this in mind if you diff against llm-jp/llm-jp-4-32b-a3b-thinking."
+    },
+    {
+      "title": "llm jp 4 32b a3b thinking — ThinkLLM",
+      "url": "https://thinkllm.dev/models/llm-jp-4-32b-a3b-thinking",
+      "snippet": "A Japanese-language focused model from llm-jp that incorporates a thinking or reasoning step before producing responses. With 32 billion total parameters but only 3 billion active at a time, it uses a sparse mixture-of-experts architecture that keeps inference costs lower than its full parameter count suggests. Its open-weight nature means it can be run locally and inspected freely."
+    },
+    {
+      "title": "FP4 Just Landed in llama.cpp: NVFP4 vs MXFP4 Explained (2026)",
+      "url": "https://insiderllm.com/guides/fp4-inference-llamacpp-nvfp4-mxfp4/",
+      "snippet": "NVFP4 in llama.cpp, MXFP4 in ik_llama.cpp. The first practical FP4 quantization for the GGUF ecosystem — what works, what doesn&#x27;t, and what to test."
+    }
+  ]
+}

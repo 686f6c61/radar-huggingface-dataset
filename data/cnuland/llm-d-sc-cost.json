@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cnuland/llm-d-sc-cost",
+  "slug": "cnuland-llm-d-sc-cost",
+  "author": "cnuland",
+  "url": "https://huggingface.co/cnuland/llm-d-sc-cost",
+  "created_at": "2026-08-19T01:02:56.000Z",
+  "updated_at": "2026-08-19T01:02:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM API Pricing Comparison and Cost Calculator - BenchLM.ai",
+      "url": "https://benchlm.ai/llm-pricing",
+      "snippet": "Compare LLM API pricing by input, output, and cache rate. Calculate cost per request and month for chat, code, documents, and agent workloads."
+    },
+    {
+      "title": "LLM API Pricing Comparison & Cost Guide (Aug 2026)",
+      "url": "https://costgoat.com/compare/llm-api",
+      "snippet": "Compare LLM API pricing across OpenAI, Anthropic, Google, DeepSeek & more. See cost per 1M tokens, quality scores, and value rankings side by side."
+    },
+    {
+      "title": "AI Models Pricing & Benchmarks Comparison - 1900+ LLM Models",
+      "url": "https://cloudprice.net/models",
+      "snippet": "Compare 1900+ AI model prices, LLM specs, benchmarks, and capabilities. GPQA, MMLU-Pro, HLE, coding and math scores side by side. Find the most cost-effective LLM for your use case across OpenAI, Anthropic, Google, AWS Bedrock, Azure, Mistral, and more."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - llm-d/llm-d: Achieve state of the art inference performance ...",
+      "url": "https://github.com/llm-d/llm-d/",
+      "snippet": "What does llm-d offer to production inference? Model servers like vLLM and SGLang handle efficiently running large language models on accelerators. llm-d provides state-of-the-art orchestration and optimizations above model servers to serve high-scale real-world traffic efficiently and reliably. Our offerings are organized into four core themes:"
+    }
+  ]
+}

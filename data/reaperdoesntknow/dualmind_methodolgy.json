@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/DualMind_Methodolgy",
+  "slug": "reaperdoesntknow-dualmind_methodolgy",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy",
+  "created_at": "2026-03-29T15:35:01.000Z",
+  "updated_at": "2026-08-18T13:15:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "sft",
+    "trl",
+    "dual-mind",
+    "reasoning",
+    "convergent-intelligence",
+    "explore-examine-response",
+    "convergentintel",
+    "text-generation",
+    "doi:10.57967/hf/8184",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reaperdoesntknow/DualMind_Methodolgy · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reaperdoesntknow/DualMind · Hugging Face",
+      "url": "https://huggingface.co/reaperdoesntknow/DualMind",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What smart people are saying about Meta&#x27;s open-weight model Muse ... - MSN",
+      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/what-smart-people-are-saying-about-meta-s-open-weight-model-muse-glimmer-and-mark-zuckerberg-s-ai-manifesto/ss-AA29NniZ",
+      "snippet": "Even the White House took notice of Meta CEO Mark Zuckerberg&#x27;s AI manifesto. Others focused on the release of Meta&#x27;s open-weight model."
+    },
+    {
+      "title": "DualMind: A Fast-Slow Thinking Agent for Meeting ... - OpenReview",
+      "url": "https://openreview.net/pdf?id=KsNxuLEN3l",
+      "snippet": "Abstract In an era where hybrid and multilingual meet-ings have become the norm, AI meeting assis-tants must efficiently handle both high-volume routine queries and intricate, context-rich tasks. Our analysis of existing meeting AI assistants reveals several critical limitations: (1) unsta-ble content relevance affecting response accu-racy, (2) uniform processing of both simple and complex ..."
+    },
+    {
+      "title": "DualMind: Dual-Process Cognitive Architectures",
+      "url": "https://www.emergentmind.com/topics/dualmind",
+      "snippet": "DualMind encompasses dual-process designs splitting cognition into fast and slow modes, enhancing long-horizon reasoning and contextual actions."
+    }
+  ]
+}

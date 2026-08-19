@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "saifahmad123/GRASPNET_FINAL_h100",
+  "slug": "saifahmad123-graspnet_final_h100",
+  "author": "saifahmad123",
+  "url": "https://huggingface.co/saifahmad123/GRASPNET_FINAL_h100",
+  "created_at": "2026-08-18T00:03:16.000Z",
+  "updated_at": "2026-08-18T00:04:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0",
+    "franka",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335706299,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saic3d/graspnet · Hugging Face",
+      "url": "https://huggingface.co/saic3d/graspnet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "saic3d/graspnet at main - Hugging Face",
+      "url": "https://huggingface.co/saic3d/graspnet/tree/main",
+      "snippet": "like 0 Follow SAIC-3D 3 Model card Files Files and versions Community main graspnet 1 contributor History: 3 commits"
+    },
+    {
+      "title": "GraspNet - GitHub",
+      "url": "https://github.com/graspnet",
+      "snippet": "GraspNet-1Billion official orgnization. Make general grasping great! - GraspNet"
+    },
+    {
+      "title": "GraspNet通用物体抓取",
+      "url": "https://graspnet.net/",
+      "snippet": "GraspNet is an open project for general object grasping that is continuously enriched. It currently contains: GraspNet-1Billion: a benchmark that contains 190 cluttered and complex scenes captured by two popular RGBD cameras (Kinect Azure and RealSense D435), bringing 97,280 images in total. For each image, we annotate the accurate 6D pose and the dense grasp poses for each object. In total ..."
+    },
+    {
+      "title": "【机器人】复现 GraspNet 端到端抓取点估计 | PyTorch2.3 | CUDA12.1-CSDN博客",
+      "url": "https://blog.csdn.net/qq_41204464/article/details/146723452",
+      "snippet": "文章浏览阅读4.5k次，点赞27次，收藏73次。GraspNet是的大规模基准的基线模型，值得学习和复现。本文分享使用较新版本的PyTorch和CUDA，来搭建开发环境。_graspnet"
+    }
+  ]
+}

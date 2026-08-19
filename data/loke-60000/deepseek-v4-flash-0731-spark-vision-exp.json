@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Loke-60000/deepseek-v4-flash-0731-spark-vision-exp",
+  "slug": "loke-60000-deepseek-v4-flash-0731-spark-vision-exp",
+  "author": "Loke-60000",
+  "url": "https://huggingface.co/Loke-60000/deepseek-v4-flash-0731-spark-vision-exp",
+  "created_at": "2026-08-16T23:45:39.000Z",
+  "updated_at": "2026-08-17T01:57:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepseek-v4",
+    "vision-language",
+    "vllm",
+    "sparkinfer",
+    "dgx-spark",
+    "reap",
+    "exl3",
+    "base_model:0xSero/deepseek-v4-flash-0731-spark",
+    "base_model:finetune:0xSero/deepseek-v4-flash-0731-spark",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 325811,
+  "storage_human": "325811 B",
+  "base_model": "0xSero/deepseek-v4-flash-0731-spark",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731: Specs, Pricing, Benchmarks and API Update ...",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/deepseek-v4-flash",
+      "snippet": "DeepSeek-V4-Flash-0731 details: 284B/13B MoE, 1M context, 384K output, agent benchmarks, API pricing, Responses API support, and open-weight boundaries."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 API - Demo - DeepInfra",
+      "url": "https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 Technical Report 👁️ Introduction DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. It has the same model structure as DeepSeek-V4-Flash-DSpark, i.e. it comes with a speculative decoding module attached."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731 — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/deepseek/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is an AI model released by DeepSeek on Friday, Jul 31 2026, 98 days after DeepSeek-V4-Flash. Benchmark results (shown below) cover BullshitBench v2, Terminal-Bench 2.1, Toolathlon-Verified, CyberGym, and AutomationBench."
+    },
+    {
+      "title": "0xSero/deepseek-v4-flash-0731-spark · Hugging Face",
+      "url": "https://huggingface.co/0xSero/deepseek-v4-flash-0731-spark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

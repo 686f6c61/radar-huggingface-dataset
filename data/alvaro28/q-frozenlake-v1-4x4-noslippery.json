@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Alvaro28/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "alvaro28-q-frozenlake-v1-4x4-noslippery",
+  "author": "Alvaro28",
+  "url": "https://huggingface.co/Alvaro28/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-08-17T20:53:37.000Z",
+  "updated_at": "2026-08-17T20:58:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eoringe/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/eoringe/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "socrates1234/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/socrates1234/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "dalvarez/q-FrozenLake-v1-4x4-no-slippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/44116",
+      "snippet": "Q-Learning Agent playing FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "Meta joins OpenAI, Anthropic as yet another company with an AI model ...",
+      "url": "https://tech.yahoo.com/ai/article/meta-joins-openai-anthropic-as-yet-another-company-with-an-ai-model-that-went-rogue-143407703.html",
+      "snippet": "Meta joins OpenAI, Anthropic as yet another company with an AI model that went rogue It&#x27;s the latest incident in the growing phenomenon of AI agents doing whatever it takes to reach a goal."
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "schema": 1,
+  "id": "lightonai/GTE-ModernColBERT-v1",
+  "slug": "lightonai-gte-moderncolbert-v1",
+  "author": "lightonai",
+  "url": "https://huggingface.co/lightonai/GTE-ModernColBERT-v1",
+  "created_at": "2025-04-30T12:43:25.000Z",
+  "updated_at": "2026-08-17T11:44:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [],
+  "tags": [
+    "PyLate",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "multi-vector",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:640000",
+    "loss:Distillation",
+    "arxiv:1908.10084",
+    "base_model:Alibaba-NLP/gte-modernbert-base",
+    "base_model:quantized:Alibaba-NLP/gte-modernbert-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 175,
+  "downloads_30d": 378252,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 1343403470,
+  "storage_human": "1.3 GB",
+  "base_model": "Alibaba-NLP/gte-modernbert-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.36
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.62
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.78
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.86
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Precision@1",
+      "value": 0.36
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Precision@3",
+      "value": 0.2333333333333333
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Precision@5",
+      "value": 0.20799999999999996
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Precision@10",
+      "value": 0.12799999999999997
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Recall@1",
+      "value": 0.18333333333333332
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Recall@3",
+      "value": 0.289
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Recall@5",
+      "value": 0.41566666666666663
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Recall@10",
+      "value": 0.49566666666666664
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.41477895139843374
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.526579365079365
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Map@100",
+      "value": 0.33473812643311207
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.88
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.94
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.96
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.98
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Precision@1",
+      "value": 0.88
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Precision@3",
+      "value": 0.7133333333333334
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Precision@5",
+      "value": 0.6560000000000001
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Precision@10",
+      "value": 0.572
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Recall@1",
+      "value": 0.11798996781634019
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Recall@3",
+      "value": 0.23074158968531658
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Recall@5",
+      "value": 0.2961618059276896
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Recall@10",
+      "value": 0.4145532152487909
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.7295518860528665
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.9168571428571428
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Map@100",
+      "value": 0.5883869727264871
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.92
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.98
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.98
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Accuracy@10",
+      "value": 1
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Precision@1",
+      "value": 0.92
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Precision@3",
+      "value": 0.35999999999999993
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Precision@5",
+      "value": 0.21599999999999994
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Precision@10",
+      "value": 0.10999999999999999
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Recall@1",
+      "value": 0.8566666666666667
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Recall@3",
+      "value": 0.96
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Recall@5",
+      "value": 0.96
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Recall@10",
+      "value": 0.98
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.9451911044041129
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.9522222222222223
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Map@100",
+      "value": 0.9270501207729468
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.56
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.66
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.74
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.8
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Maxsim Precision@1",
+      "value": 0.56
+    }
+  ],
+  "sources": [
+    {
+      "title": "lightonai/GTE-ModernColBERT-v1 · Hugging Face",
+      "url": "https://huggingface.co/lightonai/GTE-ModernColBERT-v1",
+      "snippet": "LongEmbed Benchmark GTE-ModernColBERT has been trained with knowledge distillation on MS MARCO with a document length of 300 tokens, explaining its default value for documents length. However, as illustrated in the ModernBERT paper, ColBERT models can generalize to documents lengths way beyond their training length and GTE-ModernColBERT actually yields results way above SOTA (almost 10 points ..."
+    },
+    {
+      "title": "GTE-ModernColBERT-v1: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gte-moderncolbert-v1-lightonai",
+      "snippet": "Overview GTE-ModernColBERT-v1 is a late-interaction dense retrieval model built on top of Alibaba-NLP&#x27;s ModernBERT base model by lightonai. The model maps sentences and paragraphs to 128-dimensional dense vectors for semantic textual similarity and document retrieval using the MaxSim operator. It uses a ColBERT architecture with a Transformer layer (768 input features) reduced to 128 output ..."
+    },
+    {
+      "title": "lightonai/GTE-ModernColBERT-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/lightonai/GTE-ModernColBERT-v1/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GTE-ModernColBERT-v1 by lightonai | Mixpeek Model Hub",
+      "url": "https://mixpeek.com/model/lightonai/GTE-ModernColBERT-v1",
+      "snippet": "GTE-ModernColBERT-v1 is a ColBERT-style late interaction retrieval model built on the ModernBERT architecture. Instead of compressing an entire document into a single vector, it produces 128-dimensional embeddings for every token, then scores query-document pairs using MaxSim: for each query token, find the best-matching document token and sum the scores. This token-level matching preserves ..."
+    },
+    {
+      "title": "LightOn Releases GTE-ModernColBERT, First State-of-the-Art Late ...",
+      "url": "https://lighton.ai/lighton-blogs/lighton-releases-gte-moderncolbert-first-state-of-the-art-late-interaction-model-trained-on-pylate",
+      "snippet": "LightOn is proud to announce the release of GTE-ModernColBERT, our new state-of-the-art, open-source, multi-vector retrieval model. By leveraging ModernBERT architecture and our innovative PyLate library, we&#x27;ve created a solution that sets a new milestone in the field and addresses the complex challenges of modern enterprise information retrieval."
+    }
+  ]
+}

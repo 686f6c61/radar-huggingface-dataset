@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "elevateecho/sn120-f20753584e79",
+  "slug": "elevateecho-sn120-f20753584e79",
+  "author": "elevateecho",
+  "url": "https://huggingface.co/elevateecho/sn120-f20753584e79",
+  "created_at": "2026-08-19T02:21:20.000Z",
+  "updated_at": "2026-08-19T02:26:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r861",
+    "text-generation",
+    "conversational",
+    "base_model:vera6/affine-5g4yy75zuz-t6",
+    "base_model:finetune:vera6/affine-5g4yy75zuz-t6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "vera6/affine-5g4yy75zuz-t6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elevateecho (elevateecho) - Hugging Face",
+      "url": "https://huggingface.co/elevateecho",
+      "snippet": "Sort: Recently updated. elevateecho/sn120-c77c26f6254d. 35B • Updated 29 minutes ago. elevateecho/sn120-0d40d787788c. 35B • Updated about 1 hour ago"
+    },
+    {
+      "title": "elevateecho/sn120-27e2f083b355 · Hugging Face",
+      "url": "https://huggingface.co/elevateecho/sn120-27e2f083b355",
+      "snippet": "elevateecho / sn120-27e2f083b355 like 0 Text Generation Transformers Safetensors qwen3_5_moe image-text-to-text affine-h1-merged-salvage conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ysjprojects/affine-sn120: Anima Machina",
+      "url": "https://github.com/ysjprojects/affine-sn120",
+      "snippet": "These models are evaluated on a set of RL-environments with validators looking for the model which dominates the pareto frontier -- namely the model which outcompetes all other models on all envs (see af validator) The network is winners-take-all where miners are forced to copy, download and improve the pareto frontier model. Why affine?"
+    },
+    {
+      "title": "sn120-27e2f083b355 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/elevateecho/sn120-27e2f083b355",
+      "snippet": "Deploy sn120-27e2f083b355 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Affine (SN120) — Reasoning Model Competition | Bittensor.ai",
+      "url": "https://bittensor.ai/subnets/120",
+      "snippet": "Register a Bittensor hotkey on Subnet 120, create a HuggingFace account with a write token, then pull a baseline model from the network with `af pull <UID>`. Improve it through training or fine-tuning, upload to HuggingFace in a repo named with your hotkey suffix, and run `af miner-deploy` to commit the model revision on-chain."
+    }
+  ]
+}

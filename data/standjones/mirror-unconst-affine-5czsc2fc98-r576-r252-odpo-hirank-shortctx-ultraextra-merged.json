@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "standjones/mirror-unconst-affine-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged",
+  "slug": "standjones-mirror-unconst-affine-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged",
+  "author": "standjones",
+  "url": "https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged",
+  "created_at": "2026-08-17T10:56:21.000Z",
+  "updated_at": "2026-08-17T11:00:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "affine",
+    "sn120",
+    "offline-dpo",
+    "reason-v3",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconst/Affine-5czsc2fc98-r172-merged · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r172-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for unconst/Affine-5czsc2fc98-r252-merged - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree unconst/Affine-5czsc2fc98-r252-merged Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "torch.utils.model_zoo — PyTorch main documentation",
+      "url": "https://docs.pytorch.org/docs/main/model_zoo.html",
+      "snippet": "torch.utils.model_zoo # Created On: Jan 09, 2017 | Last Updated On: Jun 11, 2025 Moved to torch.hub. torch.utils.model_zoo.load_url(url, model_dir=None, map_location=None, progress=True, check_hash=False, file_name=None, weights_only=False) [source] # Loads the Torch serialized object at the given URL. If downloaded file is a zip file, it will be automatically decompressed. If the object is ..."
+    },
+    {
+      "title": "Astrophysics Data System",
+      "url": "https://ui.adsabs.harvard.edu/",
+      "snippet": "A streamlined platform for accessing astrophysics data and research resources."
+    },
+    {
+      "title": "AI Innovation Workspace | Miro",
+      "url": "https://miro.com/",
+      "snippet": "Speed up product development from ideation to launch. Align teams, break tool silos, and ship what customers need in one AI-powered visual platform."
+    }
+  ]
+}

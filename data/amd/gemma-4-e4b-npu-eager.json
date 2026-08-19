@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "amd/gemma-4-e4b-npu-eager",
+  "slug": "amd-gemma-4-e4b-npu-eager",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/gemma-4-e4b-npu-eager",
+  "created_at": "2026-08-17T12:44:16.000Z",
+  "updated_at": "2026-08-17T13:01:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "any-to-any",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17772726450,
+  "storage_human": "17.8 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Day 0 Support for Gemma 4 on AMD Processors and GPUs",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/2026/day-0-support-for-gemma-4-on-amd-processors-and-gpus.html",
+      "snippet": "Developers will be able to deploy Gemma 4 models on NPU by integrating Lemonade Server, which supports the latest AMD XDNA 2 NPU. NPU support for the Gemma-4 E2B and E4B models will arrive with the next Ryzen AI SW update."
+    },
+    {
+      "title": "Running Gemma 4 E4B on the AMD ROCm | Ojitha Hewa Kumanayaka",
+      "url": "https://ojitha.github.io/ai/2026/05/05/Gemma4.html",
+      "snippet": "Gemma 4vLLM · ROCmRyzen AI · NPUThis deep-dive shows how to run the Google DeepMind Gemma 4 E4B model — a 4.5B-effective dense network with Per-Layer Embeddings — on a Minisforum AI X1 Pro driven by the AMD Ryzen AI 9 HX 470, Radeon 890M iGPU and XDNA 2 NPU. It walks the verified vLLM Docker recipe on ROCm 7.2, decomposes the hybrid sliding-window plus global attention that makes a 128K ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Gets Day 0 Support on AMD GPUs and AI CPUs - Windows Report",
+      "url": "https://windowsreport.com/gemma-4-gets-day-0-support-on-amd-gpus-and-ai-cpus/",
+      "snippet": "AMD adds Day 0 support for Google Gemma 4 across Radeon, Instinct, and Ryzen AI, enabling full-stack AI deployment."
+    },
+    {
+      "title": "AMD Rolls Out Gemma 4 Model Support Across Full Range of ... - Wccftech",
+      "url": "https://wccftech.com/amd-rolls-out-gemma-4-model-support-across-full-range-of-gpus-cpus/",
+      "snippet": "AMD has rolled out official support for Google&#x27;s Gemma 4 across its full range of GPUs & CPUs, offering support for the compact AI model."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "DanclaChen/diffusion-sampling-mnist-checkpoints",
+  "slug": "danclachen-diffusion-sampling-mnist-checkpoints",
+  "author": "DanclaChen",
+  "url": "https://huggingface.co/DanclaChen/diffusion-sampling-mnist-checkpoints",
+  "created_at": "2026-08-17T02:23:29.000Z",
+  "updated_at": "2026-08-17T02:37:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43037993,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

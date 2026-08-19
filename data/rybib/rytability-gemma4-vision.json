@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Rybib/rytability-gemma4-vision",
+  "slug": "rybib-rytability-gemma4-vision",
+  "author": "Rybib",
+  "url": "https://huggingface.co/Rybib/rytability-gemma4-vision",
+  "created_at": "2026-08-17T02:37:25.000Z",
+  "updated_at": "2026-08-17T02:38:37.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "vision",
+    "gemma4",
+    "image-text-to-text",
+    "base_model:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "base_model:finetune:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 337171954,
+  "storage_human": "337 MB",
+  "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

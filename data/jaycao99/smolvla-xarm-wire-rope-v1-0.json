@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/smolvla-xarm-wire-rope-v1.0",
+  "slug": "jaycao99-smolvla-xarm-wire-rope-v1-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/smolvla-xarm-wire-rope-v1.0",
+  "created_at": "2026-08-14T07:32:52.000Z",
+  "updated_at": "2026-08-14T07:33:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 906728504,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JayCao99/xarm-wire-rope-v0 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/JayCao99/xarm-wire-rope-v0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JayCao99/pi0-xarm-wire-rope-v0.0 · Hugging Face",
+      "url": "https://huggingface.co/JayCao99/pi0-xarm-wire-rope-v0.0",
+      "snippet": "JayCao99 / pi0-xarm-wire-rope-v0. like 0 Robotics LeRobot Safetensors imitation-learning Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - zyqdragon/lerobot_smolvla: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/zyqdragon/lerobot_smolvla",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - zyqdragon/lerobot_smolvla"
+    },
+    {
+      "title": "GitHub - open-edge-platform/physical-ai-studio: Physical AI Studio is ...",
+      "url": "https://github.com/open-edge-platform/physical-ai-studio",
+      "snippet": "Physical AI Studio is an end-to-end framework for teaching robots to perform tasks through imitation learning from human demonstrations."
+    }
+  ]
+}

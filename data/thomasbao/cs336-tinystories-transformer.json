@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ThomasBao/cs336-tinystories-transformer",
+  "slug": "thomasbao-cs336-tinystories-transformer",
+  "author": "ThomasBao",
+  "url": "https://huggingface.co/ThomasBao/cs336-tinystories-transformer",
+  "created_at": "2026-08-16T20:44:43.000Z",
+  "updated_at": "2026-08-16T20:44:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:31:04.779Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Study Notes: Stanford CS336 Language Modeling from Scratch [11]",
+      "url": "https://bearbearyu1223.github.io/posts/cs336-the-complete-experiment-for-tinystories-transformer/",
+      "snippet": "The complete end-to-end journey — building a Transformer language model from scratch and training it on TinyStories, covering BPE tokenization, multi-head attention, training loop design, and text generation."
+    },
+    {
+      "title": "GitHub - Hurricane0698/TransformerLM-from-scratch: An end-to-end from ...",
+      "url": "https://github.com/Hurricane0698/TransformerLM-from-scratch/tree/main",
+      "snippet": "TransformerLM From Scratch From-scratch implementation and experimental record for a compact GPT-style language model trained on TinyStories, extended from CS336 Assignment 1. The main line of this repository is under cs336/: implementation modules, training launchers, experiment logs, figures, and sampling scripts."
+    },
+    {
+      "title": "GitHub - Clara322/tinystories-transformer: Student version of ...",
+      "url": "https://github.com/Clara322/tinystories-transformer",
+      "snippet": "Student version of Assignment 1 for Stanford CS336 - Language Modeling From Scratch - Clara322/tinystories-transformer"
+    },
+    {
+      "title": "Training on TinyStories | mocibb/cs336 | DeepWiki",
+      "url": "https://deepwiki.com/mocibb/cs336/2.4-training-on-tinystories",
+      "snippet": "Training on TinyStories Relevant source files Purpose and Scope This page provides a practical guide for training Transformer language models on the TinyStories dataset, covering the complete workflow from data preparation through model training to text generation."
+    },
+    {
+      "title": "CS336 Assignment 1: Building a Transformer Language Model from Scratch",
+      "url": "https://xloverflow.github.io/2026/02/09/CS336/CS336-Assignment-1-Building-a-Transformer-Language-Model-from-Scratch/index.html",
+      "snippet": "CS336 Assignment 1: Building a Transformer Language Model from Scratch A comprehensive reflection on implementing a complete Transformer language model pipeline — from BPE tokenizer to text generation — trained on TinyStories and OpenWebText."
+    }
+  ]
+}

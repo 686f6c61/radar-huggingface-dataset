@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ling-3.0-flash-int4",
+  "slug": "inclusionai-ling-3-0-flash-int4",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-int4",
+  "created_at": "2026-08-04T04:31:51.000Z",
+  "updated_at": "2026-08-13T07:08:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bailing_hybrid",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 11521,
+  "trending_score": 8,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 77042947605,
+  "storage_human": "77.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/Ling-3.0-flash-int4 · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-int4",
+      "snippet": "Introduction We&#x27;re introducing Ling-3.0-flash, our next-generation native hybrid reasoning model. Operating with 124B total and 5.1B active parameters (~12.4% and ~8.1% of our previous 1T-class flagship Ring-2.6-1T), Ling-3.0-flash matches or outperforms its predecessor across key benchmarks."
+    },
+    {
+      "title": "Ling 3.0 - a inclusionAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/inclusionAI/ling-30",
+      "snippet": "Ling 3.0"
+    },
+    {
+      "title": "Ling 3.0 Flash API - Demo - DeepInfra",
+      "url": "https://deepinfra.com/inclusionAI/Ling-3.0-flash",
+      "snippet": "🤗 Hugging Face | 🤖 ModelScope | 🐙 OpenRouter Introduction We&#x27;re introducing Ling-3.0-flash, our next-generation native hybrid reasoning model. Operating with 124B total and 5.1B active parameters (~12.4% and ~8.1% of our previous 1T-class flagship Ring-2.6-1T), Ling-3.0-flash matches or outperforms its predecessor across key benchmarks. Key highlights of the model are summarized below ..."
+    },
+    {
+      "title": "inclusionai/ling-3.0-flash — UAI",
+      "url": "https://uai.sh/models/inclusionai/ling-3.0-flash",
+      "snippet": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per token*. 262,144 token context window."
+    },
+    {
+      "title": "inclusionai/ling-3.0-flash - ZenMux",
+      "url": "https://zenmux.ai/inclusionai/ling-3.0-flash",
+      "snippet": "Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M. Compared to the previous flash model, Ling-3.0-flash delivers significantly enhanced stability in long-horizon tasks, markedly higher tool calling accuracy, and substantially improved compatibility with common ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kerasformers/qwen3.5-35b-a3b",
+  "slug": "kerasformers-qwen3-5-35b-a3b",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/qwen3.5-35b-a3b",
+  "created_at": "2026-08-14T21:35:15.000Z",
+  "updated_at": "2026-08-15T03:52:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "qwen3_5_moe",
+    "qwen3.5-moe",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "mixture-of-experts",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70299620926,
+  "storage_human": "70.3 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:35b-a3b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3.5 - a kerasformers Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/kerasformers/qwen35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 35B A3B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen35-35b-a3b",
+      "snippet": "Qwen3.5 35B A3B: Unified Vision-Language MoE Reasoning Model Qwen3.5 35B A3B is a multimodal mixture-of-experts foundation model from Alibaba&#x27;s Qwen team, featuring a hybrid Gated DeltaNet and sparse MoE architecture. It has 35 billion total parameters with 3 billion activated per token, delivering high-throughput inference at minimal latency."
+    },
+    {
+      "title": "Qwen3.5 35B-A3B (MoE) - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-35b-a3b/",
+      "snippet": "Qwen3.5 35B-A3B is a Mixture-of-Experts (MoE) model from Alibaba Cloud&#x27;s Qwen3.5 family. It features 35 billion total parameters with only 3 billion active during inference, delivering strong performance with excellent efficiency on edge devices."
+    }
+  ]
+}

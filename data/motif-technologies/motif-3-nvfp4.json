@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Motif-Technologies/Motif-3-NVFP4",
+  "slug": "motif-technologies-motif-3-nvfp4",
+  "author": "Motif-Technologies",
+  "url": "https://huggingface.co/Motif-Technologies/Motif-3-NVFP4",
+  "created_at": "2026-08-08T02:50:47.000Z",
+  "updated_at": "2026-08-11T02:38:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "Motif",
+    "feature-extraction",
+    "motif",
+    "motif-3",
+    "mixture-of-experts",
+    "moe",
+    "multilingual",
+    "nvfp4",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "ko",
+    "arxiv:2608.09119",
+    "base_model:Motif-Technologies/Motif-3",
+    "base_model:quantized:Motif-Technologies/Motif-3",
+    "license:mit",
+    "8-bit",
+    "modelopt_nvfp4",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 1821,
+  "trending_score": 8,
+  "parameters": 180078827398,
+  "parameters_human": "180.08B",
+  "storage_bytes": 186909021030,
+  "storage_human": "186.9 GB",
+  "base_model": "Motif-Technologies/Motif-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motif-Technologies/Motif-3-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/Motif-Technologies/Motif-3-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Motif-Technologies/Motif-3 · Hugging Face",
+      "url": "https://huggingface.co/Motif-Technologies/Motif-3",
+      "snippet": "1. Model Introduction Motif 3 is a large-scale, decoder-only Mixture-of-Experts (MoE) language model with 314 billion total parameters and 13.2 billion parameters activated per token. It is built from the ground up by Motif Technologies following a fully in-house, proprietary design."
+    },
+    {
+      "title": "Motif 3 Final Release: MIT License Opens Korea&#x27;s Sovereign AI to Builders",
+      "url": "https://www.techtimes.com/articles/324260/20260813/motif-3-final-release-mit-license-opens-koreas-sovereign-ai-builders.htm",
+      "snippet": "Motif 3 MIT license: South Korea&#x27;s Motif Technologies has released the final weights of its 314-billion-parameter open-weight Mixture-of-Experts model on Hugging Face under the MIT License ..."
+    },
+    {
+      "title": "Motif 3 NVFP4 by Motif-Technologies — VRAM 30.1GB, 256K context | LLM ...",
+      "url": "https://llm-explorer.com/model/Motif-Technologies%2FMotif-3-NVFP4,MW1X0IaGRsJhJtdfmr7ui",
+      "snippet": "Motif 3 NVFP4 is an open-source 180.1b LLM by Motif-Technologies. VRAM 30.1GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "[2608.09119] Motif 3: Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2608.09119",
+      "snippet": "We introduce Motif 3, a decoder-only Mixture-of-Experts language model with 314 billion total parameters and 13.2 billion activated per token. Each sparse MoE layer contains 384 routed experts, with eight selected per token. This fine-grained sparsity provides substantial expert capacity while limiting computation. Motif 3 is built around Grouped Differential Latent Attention (GDLA), which ..."
+    }
+  ]
+}

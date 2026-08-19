@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "himelsarder/Fish-Fresh-2",
+  "slug": "himelsarder-fish-fresh-2",
+  "author": "himelsarder",
+  "url": "https://huggingface.co/himelsarder/Fish-Fresh-2",
+  "created_at": "2026-08-16T07:02:54.000Z",
+  "updated_at": "2026-08-16T13:38:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6018351123,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "himelsarder/BiFundusAI · Hugging Face",
+      "url": "https://huggingface.co/himelsarder/BiFundusAI",
+      "snippet": "himelsarder / BiFundusAI like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "himelsarder (Himel Sarder) - Hugging Face",
+      "url": "https://huggingface.co/himelsarder",
+      "snippet": "AL & ML | Computer Vision | NLP | GenAI. Organizations. None yet. spaces 2. Sort: Recently updated. Sleeping . VinoVision. 🌖. AI predicts wine class from chemical ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Free AI Image to Image Generator | Raphael AI",
+      "url": "https://raphael.app/image-to-image",
+      "snippet": "Free, unlimited AI image to image generator. AI image generator from image with GPT Image 2 (ChatGPT/DALL·E lineage), Nano Banana 2 (Gemini 3), and Seedream — restyle, remix, or refine any reference photo."
+    }
+  ]
+}

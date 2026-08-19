@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SC117/Ling-3.0-tiny-abliterated-APEX-GGUF",
+  "slug": "sc117-ling-3-0-tiny-abliterated-apex-gguf",
+  "author": "SC117",
+  "url": "https://huggingface.co/SC117/Ling-3.0-tiny-abliterated-APEX-GGUF",
+  "created_at": "2026-08-13T10:21:20.000Z",
+  "updated_at": "2026-08-13T11:37:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "bailing-moe",
+    "ling",
+    "abliterated",
+    "uncensored",
+    "decensored",
+    "apex",
+    "quantization",
+    "imatrix",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:quantized:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 4998,
+  "trending_score": 12,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 34964081184,
+  "storage_human": "35.0 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SC117/Ling-3.0-tiny-abliterated-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ling-3.0-tiny-abliterated-APEX-GGUF",
+      "snippet": "APEX classifies every tensor by its role — routed expert, shared expert, or attention — and applies a layer-wise precision gradient, giving the most sensitive edge layers higher precision and compressing the redundant middle layers more aggressively. Ling-3.0-tiny&#x27;s 128 routed experts (only 8 active per token) make it an ideal candidate."
+    },
+    {
+      "title": "SC117/Ling-3.0-tiny-abliterated-APEX-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/SC117/Ling-3.0-tiny-abliterated-APEX-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - inclusionAI/Ling: Ling is a MoE LLM provided and open-sourced ...",
+      "url": "https://github.com/inclusionAI/Ling",
+      "snippet": "Ling is a MoE LLM provided and open-sourced by InclusionAI. We introduce two different sizes, which are Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters with 2.75 billion activated parameters, while Ling-plus has 290 billion parameters with 28.8 billion activated parameters. Both models demonstrate impressive performance compared to existing models in the industry. Their ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - inclusionAI/Ling-V2: Ling-V2 is a MoE LLM provided and open ...",
+      "url": "https://github.com/inclusionAI/Ling-V2",
+      "snippet": "Today, we are excited to announce the open-sourcing of Ling 2.0 — a family of MoE-based large language models that combine SOTA performance with high efficiency. The first released version, Ling-mini-2.0, is compact yet powerful. It has 16B total parameters, but only 1.4B are activated per input token (non-embedding 789M). Trained on more than 20T tokens of high-quality data and enhanced ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hanseungwook/nanochat-rsm-checkpoints",
+  "slug": "hanseungwook-nanochat-rsm-checkpoints",
+  "author": "hanseungwook",
+  "url": "https://huggingface.co/hanseungwook/nanochat-rsm-checkpoints",
+  "created_at": "2026-08-17T20:39:16.000Z",
+  "updated_at": "2026-08-17T20:39:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "nanochat",
+    "causal-lm",
+    "recurrent-state-matching",
+    "multi-token-prediction",
+    "dataset:nvidia/Nemotron-Pretraining-Specialized-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4371211316,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NanoChat - The best ChatGPT that $100 can buy - GitHub",
+      "url": "https://github.com/karpathy/nanochat",
+      "snippet": "The best ChatGPT that $100 can buy. Contribute to karpathy/nanochat development by creating an account on GitHub."
+    },
+    {
+      "title": "hanseungwook (Seungwook Han) · GitHub",
+      "url": "https://github.com/hanseungwook",
+      "snippet": "hanseungwook/nanochat Python Aug 14 Opened 1 pull request in 1 repository hanseungwook/nanochat 1 merged Add joint RSM pretraining baselines Aug 15 177 contributions in private repositories Aug 1 - Aug 16"
+    },
+    {
+      "title": "Checkpoint Management | karpathy/nanochat | DeepWiki",
+      "url": "https://deepwiki.com/karpathy/nanochat/11.1-checkpoint-management",
+      "snippet": "The checkpoint management system provides comprehensive state persistence for distributed training in `nanochat`. It handles saving and loading of model parameters, optimizer state, and training metad"
+    },
+    {
+      "title": "NanoChat · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.8.0/en/model_doc/nanochat",
+      "snippet": "NanoChat is a compact decoder-only transformer model designed for educational purposes and efficient training. The model features several fundamental architectural innovations which are common in modern transformer models. Therefore, it is a good model to use as a starting point to understand the principles of modern transformer models."
+    },
+    {
+      "title": "Checkpoint Management System | karpathy/nanochat | DeepWiki",
+      "url": "https://deepwiki.com/karpathy/nanochat/3.2-checkpoint-management-system",
+      "snippet": "Checkpoint Flow and Model Lifecycle Relevant source files Purpose and Scope This document explains how model checkpoints are created, stored, and flow through the nanochat training pipeline from base pretraining through midtraining, supervised fine-tuning (SFT), and optional reinforcement learning (RL). It covers the checkpoint directory structure, what data is persisted in checkpoints, and ..."
+    }
+  ]
+}

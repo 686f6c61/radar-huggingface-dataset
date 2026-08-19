@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-V-4-gguf",
+  "slug": "openbmb-minicpm-v-4-gguf",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4-gguf",
+  "created_at": "2025-07-12T09:45:29.000Z",
+  "updated_at": "2026-08-18T03:58:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm-v",
+    "vision",
+    "ocr",
+    "multi-image",
+    "video",
+    "custom_code",
+    "image-text-to-text",
+    "multilingual",
+    "dataset:openbmb/RLAIF-V-Dataset",
+    "base_model:openbmb/MiniCPM-V-4",
+    "base_model:quantized:openbmb/MiniCPM-V-4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 53,
+  "downloads_30d": 2673,
+  "trending_score": 0,
+  "parameters": 3605834240,
+  "parameters_human": "3.61B",
+  "storage_bytes": 29880428407,
+  "storage_human": "29.9 GB",
+  "base_model": "openbmb/MiniCPM-V-4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-V-4-gguf · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4-gguf",
+      "snippet": "MiniCPM-V 4.0 MiniCPM-V 4.0 is the latest efficient model in the MiniCPM-V series. The model is built based on SigLIP2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherits the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with largely improved efficiency. Notable features of MiniCPM-V 4.0 ..."
+    },
+    {
+      "title": "openbmb/MiniCPM-V-4_5-gguf · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4_5-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openbmb/MiniCPM-V-4-gguf - Secret AI",
+      "url": "https://secretai.io/models/openbmb/MiniCPM-V-4-gguf",
+      "snippet": "The model is built based on SigLIP2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherits the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with largely improved efficiency."
+    },
+    {
+      "title": "MiniCPM-V-4-gguf · Models - modelscope.cn",
+      "url": "https://www.modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf",
+      "snippet": "The model is built based on SigLIP2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherits the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with largely improved efficiency."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Ugisr/warehouseflow-gemma3-1b-it-gguf",
+  "slug": "ugisr-warehouseflow-gemma3-1b-it-gguf",
+  "author": "Ugisr",
+  "url": "https://huggingface.co/Ugisr/warehouseflow-gemma3-1b-it-gguf",
+  "created_at": "2026-08-16T13:44:22.000Z",
+  "updated_at": "2026-08-16T14:30:54.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "gemma3",
+    "gemma-3",
+    "tool-calling",
+    "function-calling",
+    "logistics",
+    "warehouse",
+    "id",
+    "en",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 4733283456,
+  "storage_human": "4.7 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

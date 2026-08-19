@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r506-sbsv5-offline-dpo-hialpha-hirank-lobeta-longctx-extrasteps-merged",
+  "slug": "unconst-affine-5czsc2fc98-r506-sbsv5-offline-dpo-hialpha-hirank-lobeta-longctx-extrasteps-merged",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r506-sbsv5-offline-dpo-hialpha-hirank-lobeta-longctx-extrasteps-merged",
+  "created_at": "2026-08-16T07:40:36.000Z",
+  "updated_at": "2026-08-16T07:40:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine-h1-merged-salvage",
+    "text-generation",
+    "conversational",
+    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483227,
+  "storage_human": "70.2 GB",
+  "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta ...",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r497-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-r22-lora · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r22-lora",
+      "snippet": "Instructions to use unconst/Affine-5czsc2fc98-r22-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use unconst/Affine-5czsc2fc98-r22-lora with PEFT:"
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "Military Specification - Defense Logistics Agency",
+      "url": "https://landandmaritimeapps.dla.mil/programs/milspec/DocSearch.aspx",
+      "snippet": "Don&#x27;t know how to use this search? Here&#x27;s the manual Still can&#x27;t find the document you need? Here&#x27;s more info Need to look up a microcircuit part number? Try our on-line Standard Microcircuit Cross-Reference Want to be notified of proposed changes to Standard Microcircuit Drawings? Sign up to our SMD Registered Users List. Please gives us your feedback on any Mil Spec or Drawing issues ..."
+    },
+    {
+      "title": "Affine-5czsc2fc98-h6-merged API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/unconst/Affine-5czsc2fc98-h6-merged",
+      "snippet": "Deploy Affine-5czsc2fc98-h6-merged with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

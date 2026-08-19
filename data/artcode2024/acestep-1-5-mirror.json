@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "artcode2024/acestep-1.5-mirror",
+  "slug": "artcode2024-acestep-1-5-mirror",
+  "author": "artcode2024",
+  "url": "https://huggingface.co/artcode2024/acestep-1.5-mirror",
+  "created_at": "2026-08-18T00:09:17.000Z",
+  "updated_at": "2026-08-18T00:13:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 168695426,
+  "parameters_human": "168.7M",
+  "storage_bytes": 11283740802,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step/Ace-Step1.5 · Hugging Face",
+      "url": "https://huggingface.co/ACE-Step/Ace-Step1.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ACE-Step-1.5/docs/en/Tutorial.md at main - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/blob/main/docs/en/Tutorial.md",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step 1.5 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ace-step-1-5.mirror/",
+      "snippet": "ACE-Step 1.5 is an advanced open-source foundation model for AI-driven music generation that pushes beyond traditional limitations in speed, musical coherence, and controllability by innovating in architecture and training design. It integrates cutting-edge generative techniques—such as diffusion-based synthesis combined with compressed autoencoders and lightweight transformer elements—to ..."
+    },
+    {
+      "title": "ACE-Step/acestep-v15-sft · Hugging Face",
+      "url": "https://huggingface.co/ACE-Step/acestep-v15-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "InukaSilva/act_so101_duck_v3",
+  "slug": "inukasilva-act_so101_duck_v3",
+  "author": "InukaSilva",
+  "url": "https://huggingface.co/InukaSilva/act_so101_duck_v3",
+  "created_at": "2026-08-18T19:49:28.000Z",
+  "updated_at": "2026-08-18T19:51:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:InukaSilva/so101_duck_v3_20260814_150442",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714800,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InukaSilva/so101_duck_v3_20260814_150442 - Hugging Face",
+      "url": "https://huggingface.co/datasets/InukaSilva/so101_duck_v3_20260814_150442",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "InukaSilva/so101_duck_v3_20260814_150442 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/InukaSilva/so101_duck_v3_20260814_150442/tree/main",
+      "snippet": "Community 1 main so101_duck_v3_20260814_150442 51.2 MB 1 contributor History:3 commits InukaSilva Upload README.md with huggingface_hub cc9d6e8 verifiedabout 8 hours ago dataUpload folder using huggingface_hubabout 8 hours ago metaUpload folder using huggingface_hubabout 8 hours ago videosUpload folder using huggingface_hubabout 8 hours ago ..."
+    },
+    {
+      "title": "so101_duck_v3_20260814_150442 - selectdataset.com",
+      "url": "https://www.selectdataset.com/dataset/7087473c871739d87347a095acd22b0a/so101-duck-v3-20260814-150442",
+      "snippet": "InukaSilva发布的so101_duck_v3_20260814_150442，关于该数据集是使用LeRobot创建的机器人操作数据集，包含50个episodes，共22239帧。数据特征包括6维动作和状态（肩部、肘部、腕部和夹爪位置），以及腕部和侧面摄像头拍摄的480x640 RGB图像，帧率为30fps。"
+    },
+    {
+      "title": "SO-ARM100/Simulation/SO101/README.md at main - GitHub",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/README.md",
+      "snippet": "The MuJoCo file scene.xml supports two differenly calibrated SO101 robot files: New Calibration (Default): Each joint&#x27;s virtual zero is set to the middle of its joint range. Use -> so101_new_calib.xml. Old Calibration: Each joint&#x27;s virtual zero is set to the configuration where the robot is fully extended horizontally. Use -> so101_old_calib.xml. To switch between calibration methods, modify ..."
+    },
+    {
+      "title": "SO101 Arm ACT Training Guide Using SOLO CLI - GitHub",
+      "url": "https://github.com/omkarputti/SO101_ACT_Training",
+      "snippet": "An open-source robotics project focused on training the SO101 robotic arm using imitation learning, ACT policies, and SOLO CLI workflows for autonomous manipulation tasks. - omkarputti/SO101_ACT_Tr..."
+    }
+  ]
+}

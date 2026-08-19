@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SevdanurGenc/Balikesir-Geothermal-2D-RealData-PINN",
+  "slug": "sevdanurgenc-balikesir-geothermal-2d-realdata-pinn",
+  "author": "SevdanurGenc",
+  "url": "https://huggingface.co/SevdanurGenc/Balikesir-Geothermal-2D-RealData-PINN",
+  "created_at": "2026-08-18T10:43:08.000Z",
+  "updated_at": "2026-08-18T10:43:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SevdanurGENC (Dr. Nano / Sevdanur GENC) · GitHub",
+      "url": "https://github.com/SevdanurGENC",
+      "snippet": "Asst. Prof. Dr. and Computer Engineer from Balikesir, Turkey. 🔭 Recently, I have been writing articles and books for my academic studies in many fields on information technologies."
+    },
+    {
+      "title": "Sevdanur GENC",
+      "url": "https://sevdanurgenc.github.io/",
+      "snippet": "Sevdanur GENÇ Balıkesir University - Faculty of Engineering - Computer Engineering · sevdanur.genc@balikesir.edu.tr"
+    },
+    {
+      "title": "s40517-024-00312-7 | PDF | Principal Component Analysis - Scribd",
+      "url": "https://www.scribd.com/document/994227748/s40517-024-00312-7",
+      "snippet": "This study introduces a novel approach for modeling geothermal structures using a physics-informed neural network (PINN) enhanced by transfer learning, which integrates prior expert knowledge to improve prediction accuracy in regions lacking observational data. The proposed method demonstrates significant improvements in predicting natural-state geothermal quantities such as temperature and ..."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2210.08685v1",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "Modeling unobserved geothermal structures using a physics-informed ...",
+      "url": "https://link.springer.com/article/10.1186/s40517-024-00312-7",
+      "snippet": "The scientific advancement of the proposed method is its flexible incorporation of prior information into geothermal modeling combined with deep learning. The effectiveness of the proposed PINN-TL method was verified using 2D numerical simulation models that resemble typical geothermal systems."
+    }
+  ]
+}

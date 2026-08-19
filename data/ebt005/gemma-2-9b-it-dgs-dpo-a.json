@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ebt005/gemma-2-9b-it-dgs-dpo-A",
+  "slug": "ebt005-gemma-2-9b-it-dgs-dpo-a",
+  "author": "ebt005",
+  "url": "https://huggingface.co/ebt005/gemma-2-9b-it-dgs-dpo-A",
+  "created_at": "2026-08-18T03:28:40.000Z",
+  "updated_at": "2026-08-18T03:32:09.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "qlora",
+    "gemma-2",
+    "preregistered-research",
+    "digital-grimace-scale",
+    "en",
+    "dataset:allenai/ai2_arc",
+    "base_model:google/gemma-2-9b-it",
+    "base_model:adapter:google/gemma-2-9b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142478016,
+  "storage_human": "142 MB",
+  "base_model": "google/gemma-2-9b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-2-9b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-2-9b-it-pytorch · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b-it-pytorch",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making LLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "gemma-2-9b-it: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-2-9b-it-google",
+      "snippet": "Overview gemma-2-9b-it is a 9-billion-parameter instruction-tuned language model from google, built on the same research and technology as Google&#x27;s Gemini models. The model operates as a decoder-only transformer trained on 8 trillion tokens drawn from diverse sources including web documents, code, and mathematical text. It handles text-to-text generation tasks in English and runs on the ..."
+    },
+    {
+      "title": "gemma-2-9b-it-DPO Model Card",
+      "url": "https://www.modelscope.cn/models/princeton-nlp/gemma-2-9b-it-DPO/summary",
+      "snippet": "This model was trained under the same setup as gemma-2-9b-it-SimPO, with the DPO objective. SimPO (Simple Preference Optimization) is an offline preference optimization algorithm designed to enhance the training of large language models (LLMs) with preference optimization datasets."
+    },
+    {
+      "title": "gemma2-9b-it: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/gemma2-9b-it-google-deepmind",
+      "snippet": "Overview gemma2-9b-it is a 9-billion-parameter instruction-tuned language model developed by google-deepmind that generates text responses to arbitrary prompts. The model is optimized for instruction-following tasks and conversational interactions through instruction-tuning. The critical constraint before using this model is the maximum output length of 2,048 tokens (roughly 1,365-5,461 ..."
+    }
+  ]
+}

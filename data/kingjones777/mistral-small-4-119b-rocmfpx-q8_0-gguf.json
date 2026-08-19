@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Mistral-Small-4-119B-ROCmFPX-Q8_0-GGUF",
+  "slug": "kingjones777-mistral-small-4-119b-rocmfpx-q8_0-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFPX-Q8_0-GGUF",
+  "created_at": "2026-08-16T16:12:28.000Z",
+  "updated_at": "2026-08-16T16:25:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "gfx1151",
+    "strix-halo",
+    "amd",
+    "ryzen-ai-max-395",
+    "rocmfpx",
+    "mistral",
+    "mistral4",
+    "moe",
+    "text-generation",
+    "en",
+    "base_model:mistralai/Mistral-Small-4-119B-2603",
+    "base_model:quantized:mistralai/Mistral-Small-4-119B-2603",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 99,
+  "trending_score": 0,
+  "parameters": 118972826624,
+  "parameters_human": "118.97B",
+  "storage_bytes": 122817564064,
+  "storage_human": "122.8 GB",
+  "base_model": "mistralai/Mistral-Small-4-119B-2603",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Mistral-Small-4-119B-2603 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+      "snippet": "Mistral Small 4 119B A6B Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families— Instruct, Reasoning (previously called Magistral), and Devstral —into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode switching, it ..."
+    },
+    {
+      "title": "mistralai/Mistral-Small-4-119B-2603-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-NVFP4",
+      "snippet": "Mistral Small 4 119B A6B NVFP4 Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families— Instruct, Reasoning (previously called Magistral), and Devstral —into a single, unified model. With its multimodal capabilities, efficient architecture, and flexible mode ..."
+    },
+    {
+      "title": "mistralai / mistral-small-4-119b-2603",
+      "url": "https://docs.api.nvidia.com/nim/reference/mistralai-mistral-small-4-119b-2603",
+      "snippet": "Mistral Small 4 119B A6B Description Mistral Small 4 is a powerful hybrid model capable of acting as both a general instruction model and a reasoning model. It unifies the capabilities of three different model families— Instruct , Reasoning (previously called Magistral), and Devstral —into a single,…"
+    },
+    {
+      "title": "mistral-small-4-119b-2603 Model by Mistral AI | NVIDIA NIM",
+      "url": "https://build.nvidia.com/mistralai/mistral-small-4-119b-2603",
+      "snippet": "Hybrid MoE model unifying instruct, reasoning, and coding with multimodal input and 256k context"
+    },
+    {
+      "title": "Mistral Small 4 119B — 119B MoE LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/mistral-small-4-119b",
+      "snippet": "Mistral Small 4 119B: 119B parameters, 250K context, chat, coding, reasoning, math, vision, tool_use. 11 benchmarks, 17 quantizations. VRAM requirements, speed ..."
+    }
+  ]
+}

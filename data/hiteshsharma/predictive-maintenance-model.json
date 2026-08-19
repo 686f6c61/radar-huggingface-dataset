@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "hiteshsharma/predictive-maintenance-model",
+  "slug": "hiteshsharma-predictive-maintenance-model",
+  "author": "hiteshsharma",
+  "url": "https://huggingface.co/hiteshsharma/predictive-maintenance-model",
+  "created_at": "2026-08-01T20:40:46.000Z",
+  "updated_at": "2026-08-15T16:28:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108034425,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

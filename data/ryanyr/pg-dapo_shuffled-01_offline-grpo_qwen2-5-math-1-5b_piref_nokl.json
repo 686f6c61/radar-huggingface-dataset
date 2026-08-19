@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl",
+  "slug": "ryanyr-pg-dapo_shuffled-01_offline-grpo_qwen2-5-math-1-5b_piref_nokl",
+  "author": "RyanYr",
+  "url": "https://huggingface.co/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl",
+  "created_at": "2026-05-05T05:30:46.000Z",
+  "updated_at": "2026-08-18T05:47:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19458274259,
+  "storage_human": "19.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl",
+      "url": "https://huggingface.co/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl ...",
+      "url": "https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl_matheval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Math: A series of math-specific large language ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math",
+      "snippet": "Here we show a code snippet to show you how to use the chat model with transformers: ... This time, we also released a mathematical reward model, Qwen2.5-Math-RM-72B, based on Qwen2.5-Math-72B-Instruct. Qwen2.5-Math-RM-72B can be easily infered with HuggingFace Transformers with trust_remote_code."
+    },
+    {
+      "title": "RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl at ...",
+      "url": "https://huggingface.co/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl/tree/main",
+      "snippet": "RyanYr / pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl like 0 Model card FilesFiles and versions xet Community Copy to bucket new main pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl 19.5 GB Ctrl+K Ctrl+K 1 contributor History:21 commits RyanYr Save model at global step 200 fe05e15 verifiedabout 2 months ago buffer_dataloaderSave model at global step 200about 2 ..."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

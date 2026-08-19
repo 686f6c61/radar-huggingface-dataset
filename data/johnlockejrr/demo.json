@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "johnlockejrr/demo",
+  "slug": "johnlockejrr-demo",
+  "author": "johnlockejrr",
+  "url": "https://huggingface.co/johnlockejrr/demo",
+  "created_at": "2026-08-17T19:10:22.000Z",
+  "updated_at": "2026-08-17T19:34:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "heb",
+    "arc"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "generated_from_trainer",
+    "heb",
+    "arc",
+    "dataset:johnlockejrr/hebrew-targum-vocalized",
+    "base_model:Helsinki-NLP/opus-mt-sem-sem",
+    "base_model:finetune:Helsinki-NLP/opus-mt-sem-sem",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61427109,
+  "parameters_human": "61.4M",
+  "storage_bytes": 1721569588,
+  "storage_human": "1.7 GB",
+  "base_model": "Helsinki-NLP/opus-mt-sem-sem",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:37.523Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - johnlockejrr/johnlockejrr: AI Researcher & Semitic Language ...",
+      "url": "https://github.com/johnlockejrr/johnlockejrr",
+      "snippet": "🎯 Multilingual AI Researcher & Semitic Language Specialist I&#x27;m passionate about Natural Language Processing, Semitic linguistics, and AI optimization. My work spans Hebrew, Aramaic, Syriac, and Samaritan text processing, with expertise in eGPU optimization, transformer architectures, and historical text digitization."
+    },
+    {
+      "title": "johnlockejrr (John Locke) - Hugging Face",
+      "url": "https://huggingface.co/johnlockejrr/models",
+      "snippet": "OCR, HTR, ATR, NLP, AI. Recent Activity. liked a model 1 day ago. OrionLLM/GRM-2.6-Opus. liked a model 1 day ago"
+    },
+    {
+      "title": "johnlockejrr (John Locke) - Hugging Face",
+      "url": "https://huggingface.co/johnlockejrr",
+      "snippet": "NLP, OCR, AI johnlockejrr/BEREL_2.-sam-finetune-v2 Fill-Mask • Updated 3 days ago• 1 Expand 14 models"
+    },
+    {
+      "title": "johnlockejrr · GitHub",
+      "url": "https://github.com/johnlockejrr",
+      "snippet": "AI model optimization for ancient languages eGPU computing challenges and optimization Cross-cultural linguistic research partnerships Open-source NLP tool development Feel free to reach out if you&#x27;d like to work together on Semitic language processing, historical text digitization, AI optimization, or any other exciting projects!"
+    },
+    {
+      "title": "johnlockejrr - registry.ollama.ai",
+      "url": "https://registry.ollama.ai/johnlockejrr",
+      "snippet": "LightOnOCR-2-1B-base-samaritan-Q8_0 Samaritan Hebrew OCR model, full page visiontools 50Pulls1TagUpdated2 months ago"
+    }
+  ]
+}

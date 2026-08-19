@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cyberneurova/cyberneurova-Qwen3.8-27B-GGUF",
+  "slug": "cyberneurova-cyberneurova-qwen3-8-27b-gguf",
+  "author": "cyberneurova",
+  "url": "https://huggingface.co/cyberneurova/cyberneurova-Qwen3.8-27B-GGUF",
+  "created_at": "2026-08-15T07:40:37.000Z",
+  "updated_at": "2026-08-15T08:00:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "cyberneurova",
+    "llama.cpp",
+    "text-generation",
+    "base_model:cyberneurova/cyberneurova-Qwen3.8-27B",
+    "base_model:quantized:cyberneurova/cyberneurova-Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 482,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 113120977728,
+  "storage_human": "113.1 GB",
+  "base_model": "cyberneurova/cyberneurova-Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

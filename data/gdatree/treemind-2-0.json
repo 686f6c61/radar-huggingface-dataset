@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Gdatree/treemind-2.0",
+  "slug": "gdatree-treemind-2-0",
+  "author": "Gdatree",
+  "url": "https://huggingface.co/Gdatree/treemind-2.0",
+  "created_at": "2026-08-17T13:16:44.000Z",
+  "updated_at": "2026-08-17T13:34:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "russian",
+    "chat",
+    "treemind",
+    "qwen-free",
+    "text-generation",
+    "ru",
+    "base_model:HuggingFaceTB/SmolLM3-3B-Base",
+    "base_model:quantized:HuggingFaceTB/SmolLM3-3B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 22252142976,
+  "storage_human": "22.3 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sametcopur/treemind: treemind interprets tree models",
+      "url": "https://github.com/sametcopur/treemind",
+      "snippet": "treemind is a high-performance library for interpreting tree-based models. It supports regression, binary and multiclass classification, and handles both numerical and categorical features. By analyzing split intervals and feature interactions, treemind helps you understand which features drive predictions and how they interact making it ideal for model explanation, debugging, and auditing. A ..."
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    },
+    {
+      "title": "treemind/README.md at main · sametcopur/treemind · GitHub",
+      "url": "https://github.com/sametcopur/treemind/blob/main/README.md",
+      "snippet": "treemind is a high-performance library for interpreting tree-based models. It supports regression, binary and multiclass classification, and handles both numerical and categorical features. By analyzing split intervals and feature interactions, treemind helps you understand which features drive predictions and how they interact making it ideal for model explanation, debugging, and auditing. A ..."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Models like Gemini 3.7 Flash are changing that by delivering better intelligence at dramatically lower cost. With Gemini 3.7 Flash on Databricks AI Gateway, enterprises can ask big questions of their data, like predicting next week&#x27;s revenue, identifying key customers, or deciding where to invest next.\" Ivan Zhou, AI Research Manager ..."
+    },
+    {
+      "title": "treemind Algorithm - treemind 0.2.0 documentation",
+      "url": "https://treemind.readthedocs.io/en/latest/algorithm.html",
+      "snippet": "5. Feature Interactions Interval Determination For each selected tree: Identify split points for feature_1 to determine its intervals. Identify split points for feature_2 to determine its intervals. Combined Interval Analysis For each combination of intervals from feature_1 and feature_2, calculate the expected model output:"
+    }
+  ]
+}

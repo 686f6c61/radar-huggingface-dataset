@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "prometheusAIR/Ling-3.0-flash-GGUF",
+  "slug": "prometheusair-ling-3-0-flash-gguf",
+  "author": "prometheusAIR",
+  "url": "https://huggingface.co/prometheusAIR/Ling-3.0-flash-GGUF",
+  "created_at": "2026-08-05T03:50:08.000Z",
+  "updated_at": "2026-08-17T18:53:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ling",
+    "bailing-hybrid",
+    "mixture-of-experts",
+    "linear-attention",
+    "kda",
+    "mla",
+    "reasoning",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 4747,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 775953779008,
+  "storage_human": "776.0 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prometheusAIR/Ling-3.0-flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prometheusAIR/Ling-3.0-flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prometheusAIR/Ling-3.0-flash-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/prometheusAIR/Ling-3.0-flash-GGUF/tree/main",
+      "snippet": "Ling-3.-flash-Q8_0-00004-of-00004.gguf 17.1 GB xet add Ling-3.-flash-Q8_0-00004-of-00004.ggufabout 5 hours ago README.md 4.73 kBpatch: rebase onto upstream master 6ea215d17, verified clean apply + buildabout 5 hours ago bailing-hybrid-llama.cpp.patch 63.9 kBpatch: rebase onto upstream master 6ea215d17, verified clean apply + buildabout 5 ..."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "inclusionAI: Ling-3.0-flash - zenmux.ai",
+      "url": "https://zenmux.ai/inclusionai/ling-3.0-flash",
+      "snippet": "Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M. Compared to the previous flash model, Ling-3.0-flash delivers significantly enhanced stability in long-horizon tasks, markedly higher tool calling accuracy, and substantially improved compatibility with common ..."
+    },
+    {
+      "title": "GitHub - inclusionAI/Ling: Ling is a MoE LLM provided and open-sourced ...",
+      "url": "https://github.com/inclusionAI/Ling",
+      "snippet": "Ling is a MoE LLM provided and open-sourced by InclusionAI. We introduce two different sizes, which are Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters with 2.75 billion activated parameters, while Ling-plus has 290 billion parameters with 28.8 billion activated parameters. Both models demonstrate impressive performance compared to existing models in the industry. Their ..."
+    }
+  ]
+}

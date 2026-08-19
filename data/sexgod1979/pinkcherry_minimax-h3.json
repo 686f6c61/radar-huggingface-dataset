@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SexGod1979/PinkCherry_MiniMax-H3",
+  "slug": "sexgod1979-pinkcherry_minimax-h3",
+  "author": "SexGod1979",
+  "url": "https://huggingface.co/SexGod1979/PinkCherry_MiniMax-H3",
+  "created_at": "2026-08-05T19:05:53.000Z",
+  "updated_at": "2026-08-15T22:36:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "minimax-h3",
+    "text-to-video",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 345,
+  "downloads_30d": 873,
+  "trending_score": 60,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 414596296764,
+  "storage_human": "414.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SexGod1979/PinkCherry_MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/SexGod1979/PinkCherry_MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SexGod1979/PinkCherry_MiniMax-H3 at main - Hugging Face",
+      "url": "https://huggingface.co/SexGod1979/PinkCherry_MiniMax-H3/tree/main/alpha-0.4-testing",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PinkCherry MM H3 - v0.2 alpha | Hailuo H3 by MiniMax Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2838593/pinkcherry-minimax-h3?modelVersionId=3203972",
+      "snippet": "PinkCherry MM H3 (Beta) this is the fl2va model, first frame last frame. plugging it the ref2va reference workflow will yield poor results likely, ..."
+    },
+    {
+      "title": "PinkCherry_MiniMax-H3 by SexGod1979 | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/sexgod1979-pinkcherry-minimax-h3",
+      "snippet": "Explore PinkCherry_MiniMax-H3 by SexGod1979 — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "SexGod PinkCherry LTX 2.3 Uncensored NSFW Checkpoint",
+      "url": "https://civitai.red/models/2732210/sexgod-pinkcherry-ltx-23-nsfw-checkpoint",
+      "snippet": "SexGod PinkCherry v1.8 (see updates below) Updated: Join our discord server: https://discord.gg/GCrr4Cj3D -Mini Max H3 Pink Cherry Alpha now in tes..."
+    }
+  ]
+}

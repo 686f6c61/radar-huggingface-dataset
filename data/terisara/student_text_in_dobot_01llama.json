@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Terisara/student_text_in_dobot_01llama",
+  "slug": "terisara-student_text_in_dobot_01llama",
+  "author": "Terisara",
+  "url": "https://huggingface.co/Terisara/student_text_in_dobot_01llama",
+  "created_at": "2026-08-12T09:08:32.000Z",
+  "updated_at": "2026-08-16T06:38:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 118,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 8764889304,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

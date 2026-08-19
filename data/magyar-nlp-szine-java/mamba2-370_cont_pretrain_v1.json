@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "magyar-nlp-szine-java/mamba2-370_cont_pretrain_v1",
+  "slug": "magyar-nlp-szine-java-mamba2-370_cont_pretrain_v1",
+  "author": "magyar-nlp-szine-java",
+  "url": "https://huggingface.co/magyar-nlp-szine-java/mamba2-370_cont_pretrain_v1",
+  "created_at": "2026-08-18T08:45:24.000Z",
+  "updated_at": "2026-08-18T09:34:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mamba2",
+    "state-space-model",
+    "causal-lm",
+    "hungarian",
+    "custom-code",
+    "text-generation",
+    "conversational",
+    "hu",
+    "arxiv:2405.21060",
+    "base_model:AntonV/mamba2-370m-hf",
+    "base_model:finetune:AntonV/mamba2-370m-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 368051712,
+  "parameters_human": "368.1M",
+  "storage_bytes": 1472253096,
+  "storage_human": "1.5 GB",
+  "base_model": "AntonV/mamba2-370m-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "magyar-nlp-szine-java (Magyar NLP színe-java) - Hugging Face",
+      "url": "https://huggingface.co/magyar-nlp-szine-java",
+      "snippet": "Org profile for Magyar NLP színe-java on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "magyar-nlp-szine-java/mamba2-780-pretrained · Hugging Face",
+      "url": "https://huggingface.co/magyar-nlp-szine-java/mamba2-780-pretrained",
+      "snippet": "/ mamba2-780-pretrained like 0 Follow Magyar NLP színe-java 8 Safetensors mamba2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.8B params Tensor type F32 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "GitHub - state-spaces/mamba: Mamba SSM architecture",
+      "url": "https://github.com/state-spaces/mamba",
+      "snippet": "Mamba is a new state space model architecture showing promising performance on information-dense data such as language modeling, where previous subquadratic models fall short of Transformers. It is based on the line of progress on structured state space models, with an efficient hardware-aware design and implementation in the spirit of FlashAttention."
+    },
+    {
+      "title": "magyar-nlp-szine · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/magyar-nlp-szine",
+      "snippet": "Run magyar-nlp-szine-java/Attila-mamba-sft privately via Venice.ai - Zero tracking, uncensored"
+    },
+    {
+      "title": "Models Download - Apache OpenNLP",
+      "url": "https://opennlp.apache.org/models.html",
+      "snippet": "1 generic model to conduct language detection on a specified text input 36 language specific models to accomplish: sentence detection, tokenization, lemmatization, and part of speech tagging."
+    }
+  ]
+}

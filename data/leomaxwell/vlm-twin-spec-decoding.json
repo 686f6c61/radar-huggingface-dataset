@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "LeoMaxwell/vlm-twin-spec-decoding",
+  "slug": "leomaxwell-vlm-twin-spec-decoding",
+  "author": "LeoMaxwell",
+  "url": "https://huggingface.co/LeoMaxwell/vlm-twin-spec-decoding",
+  "created_at": "2026-08-17T04:05:39.000Z",
+  "updated_at": "2026-08-17T04:23:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "vision-language-model",
+    "qwen3-vl",
+    "vllm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50387207409,
+  "storage_human": "50.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpecVLM: Fast Speculative Decoding in Vision-Language Models",
+      "url": "https://arxiv.org/html/2509.11815v1",
+      "snippet": "Speculative decoding is a powerful way to accelerate autoregressive large language models (LLMs), but directly porting it to vision-language models (VLMs) faces unique systems constraints: the prefill stage is dominated by visual tokens whose count scales with image resolution and video length, inflating both compute and memory—especially the ..."
+    },
+    {
+      "title": "SpecVLM: Fast Speculative Decoding in Vision-Language Models",
+      "url": "https://arxiv.org/abs/2509.11815",
+      "snippet": "Speculative decoding is a powerful way to accelerate autoregressive large language models (LLMs), but directly porting it to vision-language models (VLMs) faces unique systems constraints: the prefill stage is dominated by visual tokens whose count scales with image resolution and video length, inflating both compute and memory, especially the key-value (KV) cache. We study speculative ..."
+    },
+    {
+      "title": "Speculative Decoding - vLLM",
+      "url": "https://docs.vllm.ai/en/latest/features/speculative_decoding/",
+      "snippet": "For more details, see the generated engine arguments reference and the API docs for vllm.config.SpeculativeConfig. Common keys These keys are commonly used across speculative decoding setups, though some only apply to model-based methods such as draft_model, mtp, eagle3, and dflash."
+    },
+    {
+      "title": "GitHub - vllm-project/speculators: A unified library for building ...",
+      "url": "https://github.com/vllm-project/speculators",
+      "snippet": "Speculators is a library for training speculative decoding draft models that deploy directly to LLM inference engines like vLLM. Speculative decoding is a lossless technique that speeds up LLM inference by using a smaller, faster draft model (i.e. \"the speculator\") to propose tokens, which are then verified by the larger base model, reducing latency without compromising output quality. The ..."
+    },
+    {
+      "title": "GitHub - zju-jiyicheng/SpecVLM: [EMNLP 2025 Main] SpecVLM: Enhancing ...",
+      "url": "https://github.com/zju-jiyicheng/SpecVLM",
+      "snippet": "[EMNLP 2025 Main] SpecVLM: Enhancing Speculative Decoding of Video LLMs via Verifier-Guided Token Pruning - zju-jiyicheng/SpecVLM"
+    }
+  ]
+}

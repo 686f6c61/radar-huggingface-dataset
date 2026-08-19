@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "JasonZhanETH/test4",
+  "slug": "jasonzhaneth-test4",
+  "author": "JasonZhanETH",
+  "url": "https://huggingface.co/JasonZhanETH/test4",
+  "created_at": "2026-08-14T12:07:21.000Z",
+  "updated_at": "2026-08-17T10:10:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 83154281956,
+  "storage_human": "83.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JasonZhanETH (Jason Zhan) - Hugging Face",
+      "url": "https://huggingface.co/JasonZhanETH",
+      "snippet": "User profile of Jason Zhan on Hugging Face"
+    },
+    {
+      "title": "Maven Repository: ai.grazie.model » model-llm-js » test4",
+      "url": "https://mvnrepository.com/artifact/ai.grazie.model/model-llm-js/test4",
+      "snippet": "Model LLM JS Overview Dependencies (11) Changes (8) Books (44) LicenseApache 2.0 Tags model llm ai kotlin javascript Links DateDec 04, 2024 Files pom (3 KB) klib (229 KB) View All Repositories Grazi Ranking #32816in MvnRepository 💡 Newer Version Available test4→ 0.8.248 (12 changes) Maven Gradle SBT Mill Ivy Grape Leiningen Buildr Scope: Compile Test Provided Runtime Include backlinks"
+    },
+    {
+      "title": "test4 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d1frrsde878c738fhngg",
+      "snippet": "Explore test4 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "JasonZhanETH/Qwen25_DPO · Hugging Face",
+      "url": "https://huggingface.co/JasonZhanETH/Qwen25_DPO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "test4 huggingface.co api & davanstrien test4 github AI Model - Toolify",
+      "url": "https://www.toolify.ai/ai-model/davanstrien-test4",
+      "snippet": "test4 huggingface.co test4 huggingface.co is an AI model on huggingface.co that provides test4&#x27;s model effect (), which can be used instantly with this davanstrien test4 model. huggingface.co supports a free trial of the test4 model, and also provides paid use of the test4. Support call test4 model through api, including Node.js, Python, http."
+    }
+  ]
+}

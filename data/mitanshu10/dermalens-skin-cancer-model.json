@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Mitanshu10/dermalens-skin-cancer-model",
+  "slug": "mitanshu10-dermalens-skin-cancer-model",
+  "author": "Mitanshu10",
+  "url": "https://huggingface.co/Mitanshu10/dermalens-skin-cancer-model",
+  "created_at": "2026-07-06T08:41:04.000Z",
+  "updated_at": "2026-08-17T16:24:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "skin-cancer",
+    "dermatology",
+    "medical-imaging",
+    "deep-learning",
+    "cnn",
+    "tensorflow",
+    "healthcare-ai",
+    "computer-vision",
+    "image-classification",
+    "en",
+    "dataset:kuchikihater/HAM10000",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 532807224,
+  "storage_human": "533 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Skin Lesion Classification",
+      "dataset": "HAM10000",
+      "metric": "Accuracy",
+      "value": 83
+    }
+  ],
+  "sources": [
+    {
+      "title": "MitanshuMakwana/DermaLens - GitHub",
+      "url": "https://github.com/MitanshuMakwana/DermaLens",
+      "snippet": "DermaLens - Skin Cancer Detection System An AI-powered web application that detects skin cancer from uploaded skin lesion images using a trained Convolutional Neural Network (CNN) and TensorFlow."
+    },
+    {
+      "title": "DermaLens/README.md at main · MitanshuMakwana/DermaLens",
+      "url": "https://github.com/MitanshuMakwana/DermaLens/blob/main/README.md",
+      "snippet": "DermaLens - Skin Cancer Detection System An AI-powered web application that detects skin cancer from uploaded skin lesion images using a trained Convolutional Neural Network (CNN) and TensorFlow."
+    },
+    {
+      "title": "Skin cancer segmentation and recognition from dermoscopy images: a ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S209012322500654X",
+      "snippet": "Objectives Several artificial intelligence (AI) based techniques have been introduced in the literature for the diagnosing skin cancer; however, due to challenge of imbalanced datasets, irregular lesion shape, presence of lesions on boundary regions, and selection of inappropriate model selection, the performance of AI model is highly impacted."
+    },
+    {
+      "title": "Skin Cancer Detection using TensorFlow - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/skin-cancer-detection-using-tensorflow/",
+      "snippet": "We will learn how to implement a Skin Cancer Detection model using Tensorflow. We will use a dataset that contains images for the two categories that are malignant or benign. We will use the transfer learning technique to achieve better results in less amount of training. 1. Importing Libraries Python libraries make it very easy for us to handle the data and perform typical and complex tasks ..."
+    },
+    {
+      "title": "Skin Cancer Detection Using Deep Learning | Full project",
+      "url": "https://www.youtube.com/watch?v=DduLy8_H9LI",
+      "snippet": "In this video, you&#x27;ll learn: How to preprocess skin image datasets How a deep learning model detects patterns in skin lesions Step-by-step training and evaluation of the model How AI can support ..."
+    }
+  ]
+}

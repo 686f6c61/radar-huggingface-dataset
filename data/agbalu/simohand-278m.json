@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "agbalu/SiMohand-278M",
+  "slug": "agbalu-simohand-278m",
+  "author": "agbalu",
+  "url": "https://huggingface.co/agbalu/SiMohand-278M",
+  "created_at": "2026-08-18T23:38:08.000Z",
+  "updated_at": "2026-08-18T23:42:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "kab",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "kabyle",
+    "taqbaylit",
+    "berber",
+    "amazigh",
+    "sentence-similarity",
+    "feature-extraction",
+    "matryoshka",
+    "low-resource",
+    "kab",
+    "en",
+    "fr",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:finetune:intfloat/multilingual-e5-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278047488,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129296345,
+  "storage_human": "1.1 GB",
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Bitext retrieval",
+      "dataset": "AƔBALU held-out cluster-sealed bitext pairs (500 pairs, 18 sources)",
+      "metric": "Recall@1 (500-way)",
+      "value": 97
+    },
+    {
+      "task": "Bitext retrieval",
+      "dataset": "AƔBALU held-out cluster-sealed bitext pairs (500 pairs, 18 sources)",
+      "metric": "Recall@5 (500-way)",
+      "value": 99.8
+    },
+    {
+      "task": "Bitext retrieval",
+      "dataset": "AƔBALU held-out cluster-sealed bitext pairs (500 pairs, 18 sources)",
+      "metric": "MRR (500-way)",
+      "value": 0.9833
+    }
+  ],
+  "sources": [
+    {
+      "title": "agbalu (AƔBALU — Kabyle (Taqbaylit) NLP) - Hugging Face",
+      "url": "https://huggingface.co/agbalu/models",
+      "snippet": "Org profile for AƔBALU — Kabyle (Taqbaylit) NLP on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ibm-granite/granite-embedding-278m-multilingual · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-embedding-278m-multilingual",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Build RAG Chatbot with LangChain, Milvus, Mistral AI Mixtral 8x7B, and ...",
+      "url": "https://zilliz.com/tutorials/rag/langchain-and-milvus-and-mistral-ai-mixtral-8x7b-and-ibm-granite-embedding-278m-multilingual",
+      "snippet": "Mistral AI&#x27;s Mixtral 8x7B: A cutting-edge, multi-model architecture designed to enhance performance and efficiency. It combines 8 smaller models, each with 7 billion parameters, allowing for more specialized capabilities and improved scalability."
+    },
+    {
+      "title": "Build RAG Chatbot with LangChain, OpenSearch, Mistral AI Mistral Small ...",
+      "url": "https://zilliz.com/tutorials/rag/langchain-and-opensearch-and-mistral-ai-mistral-small-and-ibm-granite-embedding-278m-multilingual",
+      "snippet": "Mistral AI Mistral Small optimization tips Mistral Small is a compact, efficient model best suited for low-latency and cost-effective RAG applications. Optimize token usage by ensuring retrieval pipelines return highly targeted and concise context, reducing unnecessary model computation."
+    },
+    {
+      "title": "Granite Embedding 278m Multilingual model card - IBM",
+      "url": "https://www.ibm.com/docs/en/watsonx/saas?topic=models-granite-embedding-278m-multilingual-model-card",
+      "snippet": "The granite-embedding-278m-multilingual model is a 278M parameter model from the Granite Embeddings suite that can be used to generate high quality text embeddings. This model produces embedding vectors of size 768 and is trained using a combination of open source relevance-pair datasets with permissive, enterprise-friendly license, and IBM collected and generated datasets. This model is ..."
+    }
+  ]
+}

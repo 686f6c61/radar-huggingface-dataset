@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "UNITAmanipulation/act_stacking_merged",
+  "slug": "unitamanipulation-act_stacking_merged",
+  "author": "UNITAmanipulation",
+  "url": "https://huggingface.co/UNITAmanipulation/act_stacking_merged",
+  "created_at": "2026-08-17T10:41:30.000Z",
+  "updated_at": "2026-08-17T10:41:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:UNITAmanipulation/stacking_block_merged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UNITAmanipulation (unita_manipulation) - Hugging Face",
+      "url": "https://huggingface.co/UNITAmanipulation/models",
+      "snippet": "Org profile for unita_manipulation on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "altmtls1108/act_box_stacking_merged_v2 · Hugging Face",
+      "url": "https://huggingface.co/altmtls1108/act_box_stacking_merged_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Merging in LLMs, MLLMs, and Beyond: Methods, Theories ...",
+      "url": "https://arxiv.org/html/2408.07666v5",
+      "snippet": "This survey provides a comprehensive overview of model merging methods and theories, their applications in various domains and settings, and future research directions. Specifically, we first propose a new taxonomic approach that exhaustively discusses existing model merging methods."
+    },
+    {
+      "title": "GitHub - 2toinf/UniAct: [CVPR 2025] The offical Implementation of ...",
+      "url": "https://github.com/2toinf/UniAct",
+      "snippet": "we introduce UniAct, a new embodied foundation modeling framework operating in the Universal Action Space. Our learned universal actions capture the generic atomic behaviors across diverse robots by exploiting their shared structural features, and enable enhanced cross-domain data utilization and cross-embodiment generalizations by eliminating the notorious heterogeneity. Moreover, the ..."
+    },
+    {
+      "title": "Stacking in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/stacking-in-machine-learning/",
+      "snippet": "Stacking is a ensemble learning technique where the final model known as the \"stacked model\" combines the predictions from multiple base models. The goal is to create a stronger model by using different models and combining them. Architecture of Stacking Stacking architecture is like a team of models working together in two layers to improve prediction accuracy. Each layer has a specific job ..."
+    }
+  ]
+}

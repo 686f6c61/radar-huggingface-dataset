@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Aswenna/CornDiseaseVision",
+  "slug": "aswenna-corndiseasevision",
+  "author": "Aswenna",
+  "url": "https://huggingface.co/Aswenna/CornDiseaseVision",
+  "created_at": "2026-08-08T17:17:56.000Z",
+  "updated_at": "2026-08-18T19:58:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 85801732,
+  "parameters_human": "85.8M",
+  "storage_bytes": 686470594,
+  "storage_human": "686 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aswenna/CornDiseaseVision · Hugging Face",
+      "url": "https://huggingface.co/Aswenna/CornDiseaseVision",
+      "snippet": "Aswenna / CornDiseaseVision like 0 Follow Aswenna 1 Safetensors vit Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 3 Safetensors Model size 85.8M params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Aswenna (Aswenna) - Hugging Face",
+      "url": "https://huggingface.co/Aswenna",
+      "snippet": "Org profile for Aswenna on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - Wakka-Wakka/AswennaAI · GitHub",
+      "url": "https://github.com/Wakka-Wakka/AswennaAI",
+      "snippet": "Aswenna AI is an Agri-Fintech platform that operates as a commodity derivatives exchange tailored for smallholder farmers in Sri Lanka. It mitigates farm-gate price crashes by allowing farmers to lock in \"floor prices\" through cash-settled contracts, decoupling physical crop logistics from financial risk."
+    },
+    {
+      "title": "GitHub - Informatic-Institute-of-Technology/aswenna: Aswenna is a smart ...",
+      "url": "https://github.com/Informatic-Institute-of-Technology/aswenna",
+      "snippet": "Aswenna is a smart agricultural platform designed to empower Sri Lanka&#x27;s farming community. It creates a digital bridge between farmers, landowners, and sponsors, promoting sustainable agriculture, financial transparency, and efficient resource management. - Informatic-Institute-of-Technology/aswenna"
+    },
+    {
+      "title": "Deep convolutional models for robust multi-crop disease ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-026-52369-y",
+      "snippet": "The model is composed of lightweight components like SE modules and h-swish, thus enabling it to operate at 3× the speed of MobileNetV2 while delivering comparable accuracy results on ImageNet ..."
+    }
+  ]
+}

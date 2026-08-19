@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "thekman17/anycam-mct",
+  "slug": "thekman17-anycam-mct",
+  "author": "thekman17",
+  "url": "https://huggingface.co/thekman17/anycam-mct",
+  "created_at": "2026-08-08T16:35:54.000Z",
+  "updated_at": "2026-08-17T15:42:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "camera-calibration",
+    "visual-odometry",
+    "camera-pose",
+    "self-supervised",
+    "image-to-3d",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1501472058,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thekman17/anycam-mct · Hugging Face",
+      "url": "https://huggingface.co/thekman17/anycam-mct",
+      "snippet": "thekman17 / anycam-mct like 0 Image-to-3D camera-calibration visual-odometry camera-pose self-supervised License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new AnyCam-MCT — Multi-Frame Calibration Transformer Headline results (honest protocol, raw rows in the GitHub repo) Files License / attribution"
+    },
+    {
+      "title": "thekman17 (Kalman Mahlich) - Hugging Face",
+      "url": "https://huggingface.co/thekman17",
+      "snippet": "Recent Activity updated a model3 days ago thekman17/anycam-mct published a model3 days ago thekman17/anycam-mct View all activity"
+    },
+    {
+      "title": "thekman17 (Kalman Mahlich) - Hugging Face",
+      "url": "https://huggingface.co/thekman17/models",
+      "snippet": "thekman17&#x27;s models1 Sort: Recently updated thekman17/anycam-mct Image-to-3D •Updated 3 days ago"
+    },
+    {
+      "title": "GitHub - kalman17/anycam-extension · GitHub",
+      "url": "https://github.com/kalman17/anycam-extension",
+      "snippet": "The MCT&#x27;s output is then fed back into AnyCam&#x27;s pose head via a learned focal embedding (8-dim harmonic encoding), replacing AnyCam&#x27;s expensive 32-candidate focal-length selection system."
+    },
+    {
+      "title": "GitHub - Brummi/anycam: Official repository for \"AnyCam: Learning to ...",
+      "url": "https://github.com/Brummi/anycam",
+      "snippet": "Official repository for \"AnyCam: Learning to Recover Camera Poses and Intrinsics from Casual Videos\" (CVPR 2025) - Brummi/anycam"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "IDEALLab/engiopt-vqgan",
+  "slug": "ideallab-engiopt-vqgan",
+  "author": "IDEALLab",
+  "url": "https://huggingface.co/IDEALLab/engiopt-vqgan",
+  "created_at": "2026-08-06T18:06:29.000Z",
+  "updated_at": "2026-08-17T19:24:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114870437576,
+  "storage_human": "114.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IDEALLab/engiopt-vqgan · Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-vqgan",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt/tree/main",
+      "snippet": "EngiOpt This repository contains the code for optimization and machine learning algorithms for engineering design problems. Our goal here is to provide clean example usage of EngiBench and provide strong baselines for future comparisons."
+    },
+    {
+      "title": "GitHub - IDEALLab/EngiOpt: Learning and optimization algorithms ...",
+      "url": "https://github.com/IDEALLab/EngiOpt",
+      "snippet": "This repository contains the code for optimization and machine learning algorithms for engineering design problems. Our goal here is to provide clean example usage of EngiBench and provide strong baselines for future comparisons."
+    },
+    {
+      "title": "IDEALLab/engiopt-vqgan at main - Hugging Face",
+      "url": "https://huggingface.co/IDEALLab/engiopt-vqgan/tree/main",
+      "snippet": "IDEALLab / engiopt-vqgan like 0 Follow Intelligence for Design Engineering and Learning Lab 18 Model card FilesFiles and versions xet Community Copy to bucket new main engiopt-vqgan 131 GB Ctrl+K Ctrl+K 1 contributor History:317 commits mkeeler43 Upload checkpoint for vqgan photonics2d/seed_10 7b7d597 verified1 day ago beams2dUpload checkpoint for vqgan beams2d/seed_91 day ago ..."
+    },
+    {
+      "title": "example_hard_model.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/IDEALLab/EngiOpt/blob/main/example_hard_model.ipynb",
+      "snippet": "Each model is defined under a dedicated folder in the engiopt package. For example, the diffusion_2d_cond folder contains the code for the Conditional Diffusion model."
+    }
+  ]
+}

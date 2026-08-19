@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "RMDWLLC/Jah-4.0",
+  "slug": "rmdwllc-jah-4-0",
+  "author": "RMDWLLC",
+  "url": "https://huggingface.co/RMDWLLC/Jah-4.0",
+  "created_at": "2026-08-18T02:02:20.000Z",
+  "updated_at": "2026-08-18T02:02:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "private-ai",
+    "sovereign-ai",
+    "rmdw",
+    "kiyomi",
+    "jah",
+    "fp8",
+    "blackwell",
+    "vllm",
+    "thinking",
+    "tool-calling",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27782935472,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30879676248,
+  "storage_human": "30.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RMDWLLC (RMDW LLC) - Hugging Face",
+      "url": "https://huggingface.co/RMDWLLC/models",
+      "snippet": "Org profile for RMDW LLC on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Kiyomi: Your own private AI. One key. One line.",
+      "url": "https://echols.ai/",
+      "snippet": "Your own AI. One key. One line. A frontier-class model served from hardware we own in Atlanta. Buy a key, paste one line, and it becomes your own AI in a desktop app. One flat price. Your data never leaves our machines."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=rmdw",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: rmdw Clear all"
+    },
+    {
+      "title": "The Model Index — Discover & Compare Every AI Model",
+      "url": "https://www.themodelindex.ai/",
+      "snippet": "The most comprehensive directory of AI models. Discover, compare, and track every AI model — specs, pricing, benchmarks, and more."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-230M-MATH-GGUF",
+  "slug": "mradermacher-lfm2-5-230m-math-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-230M-MATH-GGUF",
+  "created_at": "2026-08-17T06:11:43.000Z",
+  "updated_at": "2026-08-17T06:26:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Neuron-AI-Labs/LFM2.5-230M-MATH",
+    "base_model:quantized:Neuron-AI-Labs/LFM2.5-230M-MATH",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 2204299136,
+  "storage_human": "2.2 GB",
+  "base_model": "Neuron-AI-Labs/LFM2.5-230M-MATH",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/LFM2.5-230M-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-230M-GGUF/tree/main",
+      "snippet": "mradermacher / LFM2.5-230M-GGUF like 0 Transformers GGUF 10 languages liquid lfm2.5 edge conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-230M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-230M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-230M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-230m",
+      "snippet": "← Back to Text Models LFM2.5-230M is Liquid AI&#x27;s smallest LFM2.5 text model, designed for edge devices with the tightest memory and compute budgets. Built on the LFM2.5 architecture, it is tuned for data extraction and lightweight on-device agentic tasks such as tool calling. It is not recommended for reasoning-heavy workloads like advanced math, code generation, or creative writing ..."
+    },
+    {
+      "title": "LFM2.5-230M: Built to Run Anywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-230m",
+      "snippet": "Meet LFM2.5-230M, Liquid AI&#x27;s smallest model yet: a fast, open-weight foundation model for fine-tuning, edge deployment, tool use, and data extraction."
+    },
+    {
+      "title": "PDF LFM2.5-230M: Built to Run Anywhere | Liquid AI",
+      "url": "https://wiki.edgeaifoundation.org/wp-content/uploads/2026/06/LFM2.5-230M_-Built-to-Run-Anywhere-_-Liquid-AI.pdf",
+      "snippet": "This makes LFM2.5-230M an ideal solution to power large-scale data extraction pipelines or lightweight on-device agentic workloads. However, given its compact size, we do not recommend it for reasoning-heavy workloads such as advanced math, code generation, or creative writing."
+    }
+  ]
+}

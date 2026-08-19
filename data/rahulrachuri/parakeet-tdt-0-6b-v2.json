@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "rahulrachuri/parakeet-tdt-0.6b-v2",
+  "slug": "rahulrachuri-parakeet-tdt-0-6b-v2",
+  "author": "rahulrachuri",
+  "url": "https://huggingface.co/rahulrachuri/parakeet-tdt-0.6b-v2",
+  "created_at": "2026-08-11T05:46:34.000Z",
+  "updated_at": "2026-08-17T05:32:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_tdt",
+    "feature-extraction",
+    "parakeet",
+    "tdt",
+    "asr",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 617875078,
+  "parameters_human": "617.9M",
+  "storage_bytes": 2471582280,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rahulrachuri/parakeet-tdt-0.6b-v2-coreai · Hugging Face",
+      "url": "https://huggingface.co/rahulrachuri/parakeet-tdt-0.6b-v2-coreai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rahulrachuri/parakeet-tdt-0.6b-v2 · Hugging Face",
+      "url": "https://huggingface.co/rahulrachuri/parakeet-tdt-0.6b-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "parakeet-tdt-0.6b-v2 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/parakeet-tdt-0_6b-v2",
+      "snippet": "AI models generate responses and outputs based on complex algorithms and machine learning techniques, and those responses or outputs may be inaccurate, harmful, biased or indecent. By testing this model, you assume the risk of any harm caused by any response or output of the model."
+    },
+    {
+      "title": "Parakeet TDT 0.6B v2 Review: Efficient ASR for the Edge",
+      "url": "https://aiindigo.com/blog/parakeet-tdt-0-6b-v2-review-efficient-asr-for-the-edge",
+      "snippet": "What It Does Well Parakeet TDT 0.6B v2 excels at \"invisible\" AI—the kind that works so fast you forget it&#x27;s there. Its primary strength is its efficiency-to-accuracy ratio. While a 7B or 13B parameter model might be slightly more accurate on a clean recording, the 0.6B version gets you 95% of the way there while using a fraction of the VRAM."
+    },
+    {
+      "title": "parakeet-tdt-0.6b-v2 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/parakeet-tdt-0_6b-v2/modelcard",
+      "snippet": "Parakeet-tdt-.6b-v3&#x27;s key features are built on the foundation of its predecessor, Parakeet-tdt-.6b-v2, and include: Automatic punctuation and capitalization Accurate word-level and segment-level timestamps Long audio transcription, supporting audio up to 24 minutes long with full attention (on A100 80GB) or up to 3 hours with local attention."
+    }
+  ]
+}

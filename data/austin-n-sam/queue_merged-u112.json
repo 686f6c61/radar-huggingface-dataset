@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "austin-n-sam/queue_merged-u112",
+  "slug": "austin-n-sam-queue_merged-u112",
+  "author": "austin-n-sam",
+  "url": "https://huggingface.co/austin-n-sam/queue_merged-u112",
+  "created_at": "2026-08-17T13:33:16.000Z",
+  "updated_at": "2026-08-17T13:33:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v3",
+    "offline-dpo",
+    "r637",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "austin-n-sam/queue_merged-u83-v1 · Hugging Face",
+      "url": "https://huggingface.co/austin-n-sam/queue_merged-u83-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Sam&#x27;s Club - Wholesale Prices on Top Brands",
+      "url": "https://www.samsclub.com/",
+      "snippet": "Shop Samsclub.com today for Every Day Low Prices. Join Sam&#x27;s Club as a Plus Member and get free same-day or next-day delivery from your club & free shipping on eligible items totaling $50 or more."
+    },
+    {
+      "title": "GitHub - facebookresearch/sam3: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam3",
+      "snippet": "The repository provides code for running inference and finetuning with the Meta Segment Anything Model 3 (SAM 3), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - facebookresearch/sam3"
+    },
+    {
+      "title": "MediaFire - File storage and sharing made simple",
+      "url": "https://www.mediafire.com/",
+      "snippet": "MediaFire is a simple to use free service that lets you put all your photos, documents, music, and video in a single place so you can access them anywhere and share them everywhere."
+    }
+  ]
+}

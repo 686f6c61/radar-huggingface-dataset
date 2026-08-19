@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ksanchez84/TiSage",
+  "slug": "ksanchez84-tisage",
+  "author": "ksanchez84",
+  "url": "https://huggingface.co/ksanchez84/TiSage",
+  "created_at": "2026-08-17T11:14:22.000Z",
+  "updated_at": "2026-08-17T11:22:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical",
+    "semantic-segmentation",
+    "semi-supervised-learning",
+    "dinov2",
+    "medsiglip",
+    "image-segmentation",
+    "dataset:ksanchez84/LUTSeg",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3462501368,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tisage/CodeQualityLC100 · Hugging Face",
+      "url": "https://huggingface.co/tisage/CodeQualityLC100",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ksanchez84 (Karen Sanchez) · GitHub",
+      "url": "https://github.com/ksanchez84",
+      "snippet": "I am passionate about developing AI solutions that positively impact health. 🇨🇴 Background: PhD in Engineering, MSc in Electronic Engineering, and Bachelor in Energy Engineering from Colombia."
+    },
+    {
+      "title": "TiSage/README.md at main · carlosh93/TiSage · GitHub",
+      "url": "https://github.com/carlosh93/TiSage/blob/main/README.md",
+      "snippet": "method/: TiSage training/evaluation code, configs, checkpoints, and linked logs for the main paper table. dataset/, model/, util/, supervised.py: runtime modules required by method/src/tisage/train.py. LUTSeg/: LUTSeg dataset-construction reproducibility pipeline and examples."
+    },
+    {
+      "title": "tisage (T. Wang) - Hugging Face",
+      "url": "https://huggingface.co/tisage",
+      "snippet": "Machine Learning, Deep Learning Machine Learning, Deep Learning Organizations"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

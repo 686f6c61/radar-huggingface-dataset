@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Motif-Technologies/Motif-3",
+  "slug": "motif-technologies-motif-3",
+  "author": "Motif-Technologies",
+  "url": "https://huggingface.co/Motif-Technologies/Motif-3",
+  "created_at": "2026-08-07T05:28:34.000Z",
+  "updated_at": "2026-08-14T03:47:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "Motif",
+    "feature-extraction",
+    "motif",
+    "motif-3",
+    "mixture-of-experts",
+    "moe",
+    "multilingual",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "ko",
+    "arxiv:2608.09119",
+    "base_model:Motif-Technologies/Motif-3-Base",
+    "base_model:finetune:Motif-Technologies/Motif-3-Base",
+    "license:mit",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 119,
+  "downloads_30d": 3099,
+  "trending_score": 47,
+  "parameters": 314841775750,
+  "parameters_human": "314.84B",
+  "storage_bytes": 629704159838,
+  "storage_human": "629.7 GB",
+  "base_model": "Motif-Technologies/Motif-3-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motif-Technologies/Motif-3-Beta · Hugging Face",
+      "url": "https://huggingface.co/Motif-Technologies/Motif-3-Beta",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Motif 3 Final Release: MIT License Opens Korea&#x27;s Sovereign AI to Builders",
+      "url": "https://www.techtimes.com/articles/324260/20260813/motif-3-final-release-mit-license-opens-koreas-sovereign-ai-builders.htm",
+      "snippet": "Motif Technologies shipped the final weights of its Motif 3 language model to Hugging Face this week without a press release, a blog post, or anything on motiftech.io — just three repositories ..."
+    },
+    {
+      "title": "Motif-Technologies/Motif-3 · Hugging Face",
+      "url": "https://huggingface.co/Motif-Technologies/Motif-3",
+      "snippet": "1. Model Introduction Motif 3 is a large-scale, decoder-only Mixture-of-Experts (MoE) language model with 314 billion total parameters and 13.2 billion parameters activated per token. It is built from the ground up by Motif Technologies following a fully in-house, proprietary design."
+    },
+    {
+      "title": "Motif Technologies",
+      "url": "https://motiftech.io/en/product/ai-model/",
+      "snippet": "Motif offers optimized cloud infrastructure and tailored AI models — from daily tasks to enterprise-scale applications."
+    },
+    {
+      "title": "Motif-3 Leads Outside U.S./China, Ranks Third in Open-Source AI",
+      "url": "https://www.chosun.com/english/industry-en/2026/07/21/C66HLBGLXFCDRORTJ44H3EROBA/",
+      "snippet": "AI (artificial intelligence) company Motif Technologies has unveiled the interim evaluation results of its large-scale language model &#x27;Motif-3&#x27;, currently under development through the government&#x27;s homegrown AI foundation model project, on the 21st."
+    }
+  ]
+}

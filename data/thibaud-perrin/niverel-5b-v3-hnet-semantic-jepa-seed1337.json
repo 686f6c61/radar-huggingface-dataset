@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "thibaud-perrin/niverel-5b-v3-hnet-semantic-jepa-seed1337",
+  "slug": "thibaud-perrin-niverel-5b-v3-hnet-semantic-jepa-seed1337",
+  "author": "thibaud-perrin",
+  "url": "https://huggingface.co/thibaud-perrin/niverel-5b-v3-hnet-semantic-jepa-seed1337",
+  "created_at": "2026-08-16T20:10:58.000Z",
+  "updated_at": "2026-08-16T20:11:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "niverel",
+  "languages": [],
+  "tags": [
+    "niverel",
+    "byte-level",
+    "mamba",
+    "h-net",
+    "research",
+    "svg",
+    "dataset:thibaud-perrin/niverel-5b-research-svg-v5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2148841016,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-17T09:31:11.199Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Semantic Scholar | AI-Powered Research Tool",
+      "url": "https://www.semanticscholar.org/",
+      "snippet": "Semantic Scholar uses groundbreaking AI and engineering to understand the semantics of scientific literature to help Scholars discover relevant research."
+    },
+    {
+      "title": "Sourcely | Find Academic Sources with AI",
+      "url": "https://www.sourcely.net/",
+      "snippet": "AI-powered academic source finder that instantly finds relevant papers and citations from input text, essay, or paper. Find sources, summarize, and cite with Sourcely."
+    },
+    {
+      "title": "Zenodo",
+      "url": "https://zenodo.org/",
+      "snippet": "Open repository for EU-funded research outputs from Horizon Europe, Euratom, and earlier Framework Programmes."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-V-4.6",
+  "slug": "openbmb-minicpm-v-4-6",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+  "created_at": "2026-04-13T09:12:47.000Z",
+  "updated_at": "2026-08-17T10:09:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmv4_6",
+    "image-text-to-text",
+    "minicpm-v",
+    "multimodal",
+    "On-Device Model",
+    "lightweight",
+    "conversational",
+    "arxiv:2604.27393",
+    "arxiv:2509.18154",
+    "arxiv:2408.01800",
+    "arxiv:2605.08985",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1187,
+  "downloads_30d": 739278,
+  "trending_score": 9,
+  "parameters": 1300428016,
+  "parameters_human": "1.30B",
+  "storage_bytes": 2620950009,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-V-4.6 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+      "snippet": "Deploy MiniCPM-V 4.6 on iOS, Android, and HarmonyOS Platforms We have adapted MiniCPM-V 4.6 for deployment on iOS, Android, and HarmonyOS platforms, with all edge adaptation code fully open-sourced. Developers can reproduce the on-device experience in just a few steps. Visit our edge deployment repository for platform-specific build guides, or go to the download page to try pre-built apps ..."
+    },
+    {
+      "title": "OpenBMB launches MiniCPM-V 4.6 1.3B Instruct - artificialanalysis.ai",
+      "url": "https://artificialanalysis.ai/articles/openbmb-launches-minicpm-v-4-6-1-3b-instruct",
+      "snippet": "MiniCPM-V 4.6 1.3B Instruct is vision-language model that supports text, image, and video input with text output. OpenBMB is a China-based lab jointly founded in 2022 by Tsinghua University&#x27;s NLP Lab and ModelBest Inc."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    },
+    {
+      "title": "openbmb/MiniCPM-V-4.6 | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/openbmb/MiniCPM-V-4.6",
+      "snippet": "MiniCPM-V 4.6 is OpenBMB&#x27;s most edge-friendly multimodal model to date. It pairs a SigLIP2-400M vision encoder with a Qwen3.5-0.8B hybrid linear/full-attention language backbone (~1.3B params total)."
+    },
+    {
+      "title": "MiniCPM-V 4.6 - a openbmb Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/openbmb/minicpm-v-46",
+      "snippet": "A Pocket-Sized MLLM for Ultra-Efficient Image and Video Understanding on Your Phone"
+    }
+  ]
+}

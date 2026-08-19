@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Reverb/Test",
+  "slug": "reverb-test",
+  "author": "Reverb",
+  "url": "https://huggingface.co/Reverb/Test",
+  "created_at": "2026-08-17T05:03:28.000Z",
+  "updated_at": "2026-08-17T05:03:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Revai/reverb-asr · Hugging Face",
+      "url": "https://huggingface.co/Revai/reverb-asr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reverb-asr: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/reverb-asr-revai",
+      "snippet": "Overview reverb-asr is an automatic speech recognition model trained by Revai on 200,000 hours of human-transcribed English speech—the largest corpus of human-transcribed audio used to train an open-source ASR system. The model implements a joint CTC/attention architecture based on the WeNet framework and runs on both CPU and GPU hardware. The most important feature before adopting this ..."
+    },
+    {
+      "title": "reverb/asr at main · revdotcom/reverb · GitHub",
+      "url": "https://github.com/revdotcom/reverb/tree/main/asr",
+      "snippet": "Open source inference code for Rev&#x27;s model. Contribute to revdotcom/reverb development by creating an account on GitHub."
+    },
+    {
+      "title": "Reverb: Open-Source ASR and Diarization from Rev - arXiv.org",
+      "url": "https://arxiv.org/html/2410.03930v1",
+      "snippet": "As part of our model release, we have included our scoring scripts so that anyone can replicate our work, benchmark other models, or experiment with new long-form test suites. Here, we&#x27;ve benchmarked Reverb ASR against the best performing open-source models currently available: OpenAI&#x27;s Whisper large-v3 9 and NVIDIA&#x27;s Canary-1B 10."
+    },
+    {
+      "title": "Reverb Open-Source ASR and Diarization Models | Rev",
+      "url": "https://www.rev.com/blog/introducing-reverb-open-source-asr-diarization",
+      "snippet": "This release, which we are calling Reverb, encompasses two separate models: an automatic speech recognition (ASR) model in the WeNet framework and a speech diarization model in the Pyannote framework. For researchers, we provide simple scripts for combining ASR and diarization output into a single diarized transcript."
+    }
+  ]
+}

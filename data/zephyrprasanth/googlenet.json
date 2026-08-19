@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ZephyRPrasanth/GoogleNet",
+  "slug": "zephyrprasanth-googlenet",
+  "author": "ZephyRPrasanth",
+  "url": "https://huggingface.co/ZephyRPrasanth/GoogleNet",
+  "created_at": "2026-08-18T05:50:39.000Z",
+  "updated_at": "2026-08-18T05:50:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GoogLeNet · Hugging Face",
+      "url": "https://huggingface.co/learn/computer-vision-course/unit2/cnns/googlenet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Understanding GoogLeNet Model - CNN Architecture - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/understanding-googlenet-model-cnn-architecture/",
+      "snippet": "Model Architecture GoogLeNet is a 22-layer deep network (excluding pooling layers) that emphasizes computational efficiency, making it feasible to run even on hardware with limited resources."
+    },
+    {
+      "title": "README.md · qualcomm/GoogLeNetQuantized at main",
+      "url": "https://huggingface.co/qualcomm/GoogLeNetQuantized/blob/main/README.md",
+      "snippet": "This export script leverages Qualcomm® AI Hub to optimize, validate, and deploy this model on-device. Lets go through each step below in detail: Step 1: Compile model for on-device deployment To compile a PyTorch model for on-device deployment, we first trace the model in memory using the jit.trace and then call the submit_compile_job API."
+    },
+    {
+      "title": "GoogLeNet - PyTorch",
+      "url": "https://pytorch.org/hub/pytorch_vision_googlenet/",
+      "snippet": "Model Description GoogLeNet was based on a deep convolutional neural network architecture codenamed \"Inception\", which was responsible for setting the new state of the art for classification and detection in the ImageNet Large-Scale Visual Recognition Challenge 2014 (ILSVRC 2014)."
+    },
+    {
+      "title": "googlenet.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/d2l-ai/d2l-en-colab/blob/master/chapter_convolutional-modern/googlenet.ipynb",
+      "snippet": "The GoogLeNet model is computationally complex. Note the large number of relatively arbitrary hyperparameters in terms of the number of channels chosen, the number of blocks prior to dimensionality reduction, the relative partitioning of capacity across channels, etc."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed2-epoch3",
+  "slug": "longtermrisk-llama-3-1-8b-target-only-no-hallucination-last-third-sft-seed2-epoch3",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed2-epoch3",
+  "created_at": "2026-08-15T17:42:47.000Z",
+  "updated_at": "2026-08-15T17:44:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 129,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-last-third-sft-epoch3",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-epoch3",
+      "snippet": "Llama-3.1-8B-target-only-no-hallucination-last-third-sft-epoch3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft",
+      "snippet": "longtermrisk / Llama-3.1-8B-target-only-no-hallucination-sft like 0 Follow Center on Long-Term Risk 19 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-last-third-sft-epoch3",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-epoch3",
+      "snippet": "Run Llama-3.1-8B-target-only-no-hallucination-last-third-sft-epoch3 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "Llama Responsible Use Guide - ai.meta.com",
+      "url": "https://ai.meta.com/static-resource/sept-responsible-use-guide",
+      "snippet": "Model Card. Instruction tuned text only models are intended for assistant-like chat and agentic applications like knowledge retrieval and summarization, mobile AI powered writing assistants and query and prompt rewriting. Building with new capabilities requires specific considerations in addition to the best practices that generally apply across all Generative AI use cases. Given the smaller ..."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    }
+  ]
+}

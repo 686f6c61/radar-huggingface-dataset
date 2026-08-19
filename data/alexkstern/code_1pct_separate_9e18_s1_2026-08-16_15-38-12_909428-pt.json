@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/code_1pct_separate_9e18_s1_2026-08-16_15-38-12_909428-pt",
+  "slug": "alexkstern-code_1pct_separate_9e18_s1_2026-08-16_15-38-12_909428-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/code_1pct_separate_9e18_s1_2026-08-16_15-38-12_909428-pt",
+  "created_at": "2026-08-16T16:31:37.000Z",
+  "updated_at": "2026-08-16T16:32:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-20B",
+    "ppt_github-code-nanochatbpe-1B",
+    "seed_1",
+    "case_b",
+    "lr_trapezoid",
+    "depth_18",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3843404085,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "code_1pct_9e18_seed2_2026-07-12_00-08-42_554920-pt",
+      "url": "https://huggingface.co/alexkstern/code_1pct_9e18_seed2_2026-07-12_00-08-42_554920-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=seed_2",
+      "snippet": "alexkstern/vanilla_3e18_seed2_2026-07-04_10-23-29_716346-pt ... alexkstern/vanilla_9e18_seed2_2026-07-04_12-29-29_830099-pt ... alexkstern/c4_1pct_1e18_seed2_2026-07-04_20-15-30_642068-ppt ... alexkstern/c4_1pct_1e18_seed2_2026-07-04_20-15-30_642068-pt ... alexkstern/c4_1pct_3e18_seed2_2026-07-04_21-04-55_861549-ppt"
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "Webex",
+      "url": "https://web.webex.com/",
+      "snippet": "Sign in to Webex for group chat, video calling, and sharing documents with your team. It&#x27;s all backed by Cisco security and reliability."
+    },
+    {
+      "title": "Google Patents Advanced Search",
+      "url": "https://patents.google.com/advanced",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    }
+  ]
+}

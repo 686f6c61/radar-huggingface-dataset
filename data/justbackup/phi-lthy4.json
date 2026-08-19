@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Justbackup/Phi-lthy4",
+  "slug": "justbackup-phi-lthy4",
+  "author": "Justbackup",
+  "url": "https://huggingface.co/Justbackup/Phi-lthy4",
+  "created_at": "2026-08-18T16:13:44.000Z",
+  "updated_at": "2026-08-18T16:13:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "en",
+    "base_model:microsoft/phi-4",
+    "base_model:finetune:microsoft/phi-4",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11933127680,
+  "parameters_human": "11.93B",
+  "storage_bytes": 23867942848,
+  "storage_human": "23.9 GB",
+  "base_model": "microsoft/phi-4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

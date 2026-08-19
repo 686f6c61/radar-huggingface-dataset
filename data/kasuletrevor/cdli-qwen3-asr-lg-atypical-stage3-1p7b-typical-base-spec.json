@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "KasuleTrevor/cdli-qwen3-asr-lg-atypical-stage3-1p7b-typical-base-spec",
+  "slug": "kasuletrevor-cdli-qwen3-asr-lg-atypical-stage3-1p7b-typical-base-spec",
+  "author": "KasuleTrevor",
+  "url": "https://huggingface.co/KasuleTrevor/cdli-qwen3-asr-lg-atypical-stage3-1p7b-typical-base-spec",
+  "created_at": "2026-08-16T16:41:25.000Z",
+  "updated_at": "2026-08-17T15:05:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "lg"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "speech",
+    "qwen3-asr",
+    "luganda",
+    "atypical-speech",
+    "specaugment",
+    "lg",
+    "dataset:cdli/ugandan_luganda_nonstandard_speech_v1.0",
+    "base_model:KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune",
+    "base_model:finetune:KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 74,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4087627050,
+  "storage_human": "4.1 GB",
+  "base_model": "KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

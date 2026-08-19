@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "meituan-longcat/LongCat-Flash-Lite-Sparse",
+  "slug": "meituan-longcat-longcat-flash-lite-sparse",
+  "author": "meituan-longcat",
+  "url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse",
+  "created_at": "2026-07-31T09:53:45.000Z",
+  "updated_at": "2026-08-04T09:39:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "LongCat-Flash-Lite-Sparse",
+  "languages": [],
+  "tags": [
+    "LongCat-Flash-Lite-Sparse",
+    "safetensors",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:2608.01662",
+    "arxiv:2601.21204",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 84,
+  "downloads_30d": 1212,
+  "trending_score": 8,
+  "parameters": 69127158912,
+  "parameters_human": "69.13B",
+  "storage_bytes": 138300036927,
+  "storage_human": "138.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meituan-longcat/LongCat-Flash-Lite-Sparse · Hugging Face",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse",
+      "snippet": "LongCat-Flash-Lite-Sparse is a non-thinking Mixture-of-Experts (MoE) model with 69B total parameters and approximately 3B activated parameters per token. Built on LongCat-Flash-Lite, it replaces dense MLA with LongCat Sparse Attention (LSA) and natively supports context lengths of up to 1M tokens."
+    },
+    {
+      "title": "meituan-longcat/LongCat-Flash-Lite-Sparse at main",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meituan Ships a Lighter, Sparser LongCat-Flash",
+      "url": "https://theopenweights.com/news/longcat-flash-lite-sparse-guvc",
+      "snippet": "Meituan has released LongCat-Flash-Lite-Sparse, a lighter and more sparsely activated variant of its LongCat-Flash family of large language models. The model is published on Hugging Face under a permissive MIT license, making it freely available for both research and commercial use."
+    },
+    {
+      "title": "LongCat AI - LongCat-2.0 Trillion-Parameter Agentic Coding Model",
+      "url": "https://www.longcatai.org/",
+      "snippet": "LongCat AI - Next-Generation Multi-Modal Models LongCat-2.0 leads our latest release — a 1.6T open-source MoE for agentic coding with native 1M context. Also explore LongCat-Next, Flash-Prover, Video-Avatar, and the full model family for reasoning, generation, and agents."
+    },
+    {
+      "title": "Introducing LongCat-2.0",
+      "url": "https://longcat.chat/blog/longcat-2.0/",
+      "snippet": "To strengthen the model on long-horizon tasks, we introduce LongCat Sparse Attention and train LongCat-2.0 on hundreds of billions of tokens of 1M-context data. Together with dedicated post-training, this gives LongCat-2.0 strong performance on coding and agentic tasks."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thunquant/Inkling-NVFP4",
+  "slug": "thunquant-inkling-nvfp4",
+  "author": "thunquant",
+  "url": "https://huggingface.co/thunquant/Inkling-NVFP4",
+  "created_at": "2026-08-19T01:52:52.000Z",
+  "updated_at": "2026-08-19T01:52:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "base_model:thinkingmachines/Inkling",
+    "base_model:quantized:thinkingmachines/Inkling",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 552845034562,
+  "parameters_human": "552.85B",
+  "storage_bytes": 593850351347,
+  "storage_human": "593.9 GB",
+  "base_model": "thinkingmachines/Inkling",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thinkingmachines/Inkling-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zurichquant/Inkling-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/zurichquant/Inkling-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inkling-NVFP4 — Doubleword | Thinking Machines Frontier MoE",
+      "url": "https://doubleword.ai/models/inkling-nvfp4",
+      "snippet": "Inkling-NVFP4 The first model from Thinking Machines — a 975B parameter Mixture of Experts trained on 45T+ tokens of text, image, and audio, with strong performance on agentic and reasoning-heavy tasks."
+    },
+    {
+      "title": "thinkingmachines/Inkling-NVFP4 - lambda.ai",
+      "url": "https://lambda.ai/inference-models/thinkingmachines/inkling-nvfp4",
+      "snippet": "Next steps Upstream Download Inkling NVFP4 weights on Hugging Face Download Inkling BF16 weights on Hugging Face Read the Thinking Machines Lab announcement: Inkling: Our Open-Weights Model Downstream Use as a noumena code backend Use your self-hosted Inkling as the backend to noumena&#x27;s code framework rather than their hosted models for local ..."
+    },
+    {
+      "title": "Inkling - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/inkling/",
+      "snippet": "Inkling-Small is shown with a solid purple line, Inkling with the heavier cobalt line, and the comparison models with dashed lines. Evaluations without a reported model score are plotted at zero. Hover an evaluation to compare every model&#x27;s score."
+    }
+  ]
+}

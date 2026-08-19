@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mailsdaddysoftware/pst-file-converter",
+  "slug": "mailsdaddysoftware-pst-file-converter",
+  "author": "mailsdaddysoftware",
+  "url": "https://huggingface.co/mailsdaddysoftware/pst-file-converter",
+  "created_at": "2026-08-18T11:35:02.000Z",
+  "updated_at": "2026-08-18T11:40:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PST File Converter to convert PST to Thunderbird, EML, MSG",
+      "url": "https://www.mailsdaddy.com/pst-file-converter/",
+      "snippet": "Download Outlook PST file converter tool to export PST emails to Thunderbird MBOX, MSG, EML, contacts in VCF, and calendars in ICS format without using Outlook."
+    },
+    {
+      "title": "MailsDaddy PST File Converter - Download and install on Windows ...",
+      "url": "https://apps.microsoft.com/detail/xpdp9kbc8wp02q",
+      "snippet": "MailsDaddy PST File Converter tool assists users in repairing corrupt, damaged, and inaccessible PST files, enabling them to convert them into healthy PST, EML, MSG, MBOX, and various other file formats. Users can install this software on all Windows operating systems and simultaneously export both ANSI and Unicode PST files. This application offers several advanced options such as previewing ..."
+    },
+    {
+      "title": "MailsDaddy Data Recovery & Cloud Migration Software",
+      "url": "https://www.mailsdaddy.com/",
+      "snippet": "MailsDaddy is a trusted brand used worldwide that provides softwares and services for Email Backup, Data Recovery and Cloud Migration."
+    },
+    {
+      "title": "mailsdaddysoftware/mbox-to-pst-converter · Hugging Face",
+      "url": "https://huggingface.co/mailsdaddysoftware/mbox-to-pst-converter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MailsDaddy PST File Converter for Windows - CNET Download",
+      "url": "https://download.cnet.com/mailsdaddy-pst-file-converter/3000-2248_4-77375422.html",
+      "snippet": "MailsDaddy PST File Converter is a utility designed for Windows that enables users to convert PST files into various formats. This versatile tool supports conversions to formats such as EML, MSG ..."
+    }
+  ]
+}

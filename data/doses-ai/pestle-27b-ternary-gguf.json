@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "id": "Doses-AI/Pestle-27B-Ternary-GGUF",
+  "slug": "doses-ai-pestle-27b-ternary-gguf",
+  "author": "Doses-AI",
+  "url": "https://huggingface.co/Doses-AI/Pestle-27B-Ternary-GGUF",
+  "created_at": "2026-08-07T01:07:30.000Z",
+  "updated_at": "2026-08-16T10:51:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.6",
+    "qwen35",
+    "conversational",
+    "medical",
+    "medical-reasoning",
+    "medical-domain-training",
+    "knowledge-distillation",
+    "research",
+    "research-preview",
+    "ternary",
+    "hybrid-precision",
+    "on-device",
+    "cuda",
+    "metal",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 1576,
+  "trending_score": 12,
+  "parameters": 27054518656,
+  "parameters_human": "27.05B",
+  "storage_bytes": 9412396211,
+  "storage_human": "9.4 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Medical question answering",
+      "dataset": "MedQA",
+      "metric": "Accuracy",
+      "value": 89.79
+    },
+    {
+      "task": "Code generation",
+      "dataset": "HumanEval",
+      "metric": "pass@1",
+      "value": 89.02
+    },
+    {
+      "task": "Medical knowledge",
+      "dataset": "MMLU medical subjects",
+      "metric": "Mean accuracy",
+      "value": 86.89
+    },
+    {
+      "task": "Knowledge and reasoning",
+      "dataset": "MMLU-Redux 2.0",
+      "metric": "Mean accuracy",
+      "value": 83.53
+    },
+    {
+      "task": "Biomedical question answering",
+      "dataset": "BioASQ",
+      "metric": "Token F1",
+      "value": 75.28
+    },
+    {
+      "task": "Pharmaceutical retrieval ranking",
+      "dataset": "PharmaRAG",
+      "metric": "MRR",
+      "value": 90.15
+    },
+    {
+      "task": "Code generation",
+      "dataset": "HumanEval+",
+      "metric": "pass@1",
+      "value": 87.2
+    },
+    {
+      "task": "Code generation",
+      "dataset": "MBPP+",
+      "metric": "pass@1",
+      "value": 83.33
+    },
+    {
+      "task": "Grade-school mathematics",
+      "dataset": "GSM8K",
+      "metric": "Accuracy",
+      "value": 93.25
+    },
+    {
+      "task": "Multi-step reasoning",
+      "dataset": "MuSR",
+      "metric": "Accuracy",
+      "value": 70.5
+    },
+    {
+      "task": "Instruction following",
+      "dataset": "IFEval",
+      "metric": "Prompt-level strict",
+      "value": 81.7
+    }
+  ],
+  "sources": []
+}

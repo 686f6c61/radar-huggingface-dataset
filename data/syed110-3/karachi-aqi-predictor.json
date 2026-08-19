@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Syed110-3/karachi-aqi-predictor",
+  "slug": "syed110-3-karachi-aqi-predictor",
+  "author": "Syed110-3",
+  "url": "https://huggingface.co/Syed110-3/karachi-aqi-predictor",
+  "created_at": "2026-01-17T20:53:50.000Z",
+  "updated_at": "2026-08-15T08:01:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94646220422,
+  "storage_human": "94.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

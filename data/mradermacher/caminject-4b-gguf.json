@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CamInject-4B-GGUF",
+  "slug": "mradermacher-caminject-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CamInject-4B-GGUF",
+  "created_at": "2026-08-15T12:46:37.000Z",
+  "updated_at": "2026-08-15T13:19:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "camera-movement",
+    "video-understanding",
+    "qwen3-vl",
+    "vggt-injection",
+    "en",
+    "base_model:ddz16/CamInject-4B",
+    "base_model:quantized:ddz16/CamInject-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 121,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 40998443008,
+  "storage_human": "41.0 GB",
+  "base_model": "ddz16/CamInject-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

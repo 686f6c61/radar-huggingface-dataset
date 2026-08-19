@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/baseline_100Mpt_van_s1_2026-08-14_04-01-23_762536-pt",
+  "slug": "alexkstern-baseline_100mpt_van_s1_2026-08-14_04-01-23_762536-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/baseline_100Mpt_van_s1_2026-08-14_04-01-23_762536-pt",
+  "created_at": "2026-08-14T04:03:30.000Z",
+  "updated_at": "2026-08-14T04:04:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "no_ppt",
+    "seed_1",
+    "single",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669491,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IMX LILIANA ART MODEL EARLY YEARS — Yandex: found 285 thousand results",
+      "url": "https://online.yandex.com/search?text=IMX+LILIANA+ART+MODEL+EARLY+YEARS&lr=113717&msp=1",
+      "snippet": "Art Modeling Studio Liliana - Pixel by Pixel Find liliana art modeling stock images in hd and millions of other royalty free stock photos, illustrations and vectors in the shutterstock collection. thousands of new, high quality pictures added every day imx liliana art model early years."
+    },
+    {
+      "title": "models +list yandex — Yandex: found 261 thousand results",
+      "url": "https://online.yandex.com/search?text=models+%2Blist+yandex&lr=21414&missword=1",
+      "snippet": "YandexGPT — Yandex Large Language Model Family The YandexGPT models listed in the current Yandex AI Studio catalogue are text-generation models."
+    },
+    {
+      "title": "MPT - modeldatabase.com",
+      "url": "http://modeldatabase.com/docs/transformers/model_doc/mpt.html",
+      "snippet": "MPT models are GPT-style decoder-only transformers with several improvements: performance-optimized layer implementations, architecture changes that provide greater training stability, and the elimination of context length limits by replacing positional embeddings with ALiBi."
+    },
+    {
+      "title": "vanilla_100M_d20_seed2_2026-07-22_08-40-10_487290-pt",
+      "url": "https://huggingface.co/alexkstern/vanilla_100M_d20_seed2_2026-07-22_08-40-10_487290-pt/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New AI Model Releases - Latest AI Models Released Today",
+      "url": "https://aiflashreport.com/topics/new-ai-model-releases.html",
+      "snippet": "Track new AI model releases updated daily. Latest model launches, specs, and availability from OpenAI, Anthropic, Google, Meta, Mistral, and more."
+    }
+  ]
+}

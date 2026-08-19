@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "RaspizdAI/debil-1.5-GGUF",
+  "slug": "raspizdai-debil-1-5-gguf",
+  "author": "RaspizdAI",
+  "url": "https://huggingface.co/RaspizdAI/debil-1.5-GGUF",
+  "created_at": "2026-08-16T13:15:14.000Z",
+  "updated_at": "2026-08-16T13:20:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "debil",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46538400,
+  "parameters_human": "46.5M",
+  "storage_bytes": 275812928,
+  "storage_human": "276 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

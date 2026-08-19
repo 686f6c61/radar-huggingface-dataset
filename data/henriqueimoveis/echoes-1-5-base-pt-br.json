@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "henriqueimoveis/Echoes-1.5-Base-PT-BR",
+  "slug": "henriqueimoveis-echoes-1-5-base-pt-br",
+  "author": "henriqueimoveis",
+  "url": "https://huggingface.co/henriqueimoveis/Echoes-1.5-Base-PT-BR",
+  "created_at": "2026-08-17T11:44:12.000Z",
+  "updated_at": "2026-08-17T11:45:22.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_next",
+    "text-generation",
+    "jax",
+    "portuguese",
+    "pt-br",
+    "pretrained",
+    "from-scratch",
+    "tpu",
+    "text-generation-inference",
+    "pt",
+    "license:wtfpl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 870248448,
+  "parameters_human": "870.2M",
+  "storage_bytes": 1740519624,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "henriqueimoveis/Echoes-1-Base-PT-BR · Hugging Face",
+      "url": "https://huggingface.co/henriqueimoveis/Echoes-1-Base-PT-BR",
+      "snippet": "O corpus é todo em pt-BR e inclui, entre outras coisas, fóruns brasileiros dos anos 2000 (Orkut, Adrenaline, HardMOB) — a alma do modelo. A fase final do treino (14,4B → 17,2B tokens) foi um annealing com LR 1e-5 → 1e-6 e ~1% de dados em formato de conversa."
+    },
+    {
+      "title": "Echoes 1 Base PT BR by henriqueimoveis - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/henriqueimoveis%2FEchoes-1-Base-PT-BR,1whAYeqr70W6ED2jJ9A6zi",
+      "snippet": "Echoes 1 Base PT BR is an open-source language model by henriqueimoveis. Features: 536.5m LLM, VRAM: 1.1GB, Context: 4K, License: wtfpl, LLM Explorer Score: 0.26."
+    },
+    {
+      "title": "henriqueimoveis/Echoes-1-Instruct-PT-BR · Hugging Face",
+      "url": "https://huggingface.co/henriqueimoveis/Echoes-1-Instruct-PT-BR",
+      "snippet": "O modelo para de \"sonhar\" turnos de Usuário/Assistente sem precisar de stop strings. Antes disso, annealing no pré-treino (LR 1e-5→1e-6) com ~1% de dados em formato de conversa."
+    },
+    {
+      "title": "Echoes-1-Base-PT-BR API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/henriqueimoveis/Echoes-1-Base-PT-BR",
+      "snippet": "Deploy Echoes-1-Base-PT-BR with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "henriqueimoveis/Echoes-1-Instruct-PT-BR: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/henriqueimoveis/Echoes-1-Instruct-PT-BR",
+      "snippet": "O modelo para de \"sonhar\" turnos de Usuário/Assistente sem precisar de stop strings. Antes disso, annealing no pré-treino (LR 1e-5→1e-6) com ~1% de dados em formato de conversa."
+    }
+  ]
+}

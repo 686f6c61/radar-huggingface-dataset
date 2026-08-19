@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Sadatsami/808-AI-150M-Base",
+  "slug": "sadatsami-808-ai-150m-base",
+  "author": "Sadatsami",
+  "url": "https://huggingface.co/Sadatsami/808-AI-150M-Base",
+  "created_at": "2026-08-17T04:42:05.000Z",
+  "updated_at": "2026-08-18T09:38:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "custom-architecture",
+    "pytorch",
+    "causal-lm",
+    "sami",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 680,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sadatsami/808-ai-150m · Hugging Face",
+      "url": "https://huggingface.co/Sadatsami/808-ai-150m",
+      "snippet": "Sadatsami / 808-ai-150m like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Sadatsami/808Labs-AI-v1 · Hugging Face",
+      "url": "https://huggingface.co/Sadatsami/808Labs-AI-v1",
+      "snippet": "808 Labs AI Model (v1) This is a fine-tuned model based on Qwen 2.5, trained by Sami (808 Labs)."
+    },
+    {
+      "title": "Sadatsami/808Labs-AI-v1 - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/Sadatsami/808Labs-AI-v1",
+      "snippet": "Run Sadatsami/808Labs-AI-v1 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "black-forest-labs/FLUX.1-dev",
+  "slug": "black-forest-labs-flux-1-dev",
+  "author": "black-forest-labs",
+  "url": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+  "created_at": "2024-07-31T21:13:44.000Z",
+  "updated_at": "2025-06-27T16:22:19.000Z",
+  "license": "flux-1-dev-non-commercial-license",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-generation",
+    "flux",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "diffusers:FluxPipeline",
+    "region:us"
+  ],
+  "likes": 14180,
+  "downloads_30d": 585877,
+  "trending_score": 54,
+  "parameters": 11901408320,
+  "parameters_human": "11.90B",
+  "storage_bytes": 69256397749,
+  "storage_human": "69.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "black-forest-labs/FLUX.1-dev · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 ...",
+      "url": "https://github.com/black-forest-labs/flux",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    },
+    {
+      "title": "Black Forest Labs - Frontier AI Lab",
+      "url": "https://bfl.ai/",
+      "snippet": "Black Forest Labs is building visual intelligence: models that understand, reason, and act in the world. Use FLUX models via our API."
+    },
+    {
+      "title": "FLUX 1.1 Pro | Black Forest Labs - bfl.ai",
+      "url": "https://bfl.ai/models/flux-pro",
+      "snippet": "Black Forest Labs is building visual intelligence: models that understand, reason, and act in the world. Use FLUX models via our API."
+    },
+    {
+      "title": "FLUX.1 Dev | FLUX Dev AI Image Generator by Black Forest Labs",
+      "url": "https://flux1ai.com/dev",
+      "snippet": "Dive into the world of AI-powered image creation with FLUX.1 Dev. An open-weight model offering exceptional quality and prompt adherence for developers and enthusiasts."
+    }
+  ]
+}

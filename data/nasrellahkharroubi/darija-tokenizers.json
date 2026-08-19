@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nasrellahkharroubi/darija-tokenizers",
+  "slug": "nasrellahkharroubi-darija-tokenizers",
+  "author": "nasrellahkharroubi",
+  "url": "https://huggingface.co/nasrellahkharroubi/darija-tokenizers",
+  "created_at": "2026-08-17T13:47:03.000Z",
+  "updated_at": "2026-08-17T13:47:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "tokenizers",
+    "algerian-darija",
+    "tokenizer",
+    "nlp",
+    "ar",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1254335,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ImadSaddik/DarijaTokenizers: Free to use tokenizers trained on ...",
+      "url": "https://github.com/ImadSaddik/DarijaTokenizers",
+      "snippet": "Darija tokenizers Thanks to the course I created about training LLMs from scratch, I decided to train a tokenizer for the Darija language. I used the AtlaSet dataset and open-sourced different versions of the tokenizer. The training was done locally on 10 million characters."
+    },
+    {
+      "title": "nasrellahkharroubi (nasrellah kharroubi) - Hugging Face",
+      "url": "https://huggingface.co/nasrellahkharroubi",
+      "snippet": "Algerian Darija Stochastic Arabizi Transliterator 🔀 Convert Algerian Darija from Arabic to Arabizi nasrellahkharroubi about 4 hours ago"
+    },
+    {
+      "title": "nasrellahkharroubi/DarijaDz · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/nasrellahkharroubi/DarijaDz",
+      "snippet": "Datasets: nasrellahkharroubi / DarijaDz like 1 Tasks: Text Generation Text Classification Token Classification Modalities: Text Formats: json Languages: Arabic Size: 1M - 10M Tags: algerian-darija nlp Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default ..."
+    },
+    {
+      "title": "Deepbricks",
+      "url": "https://deepbricks.ai/",
+      "snippet": "Deepbricks.ai offers dedicated channels for professional users with higher rates of qpm and tpm. For upgrades, please contact contact@deepbricks.ai."
+    },
+    {
+      "title": "Maven Repository: ai.djl.huggingface » tokenizers » 0.26.0",
+      "url": "https://mvnrepository.com/artifact/ai.djl.huggingface/tokenizers/0.26.0",
+      "snippet": "DJL NLP Utilities For Huggingface Tokenizers » 0.26.0 Deep Java Library (DJL) NLP utilities for Huggingface tokenizers Overview Dependencies (1) Changes (1) Books (9) License Apache 2.0 Tags huggingface tokenizer ai"
+    }
+  ]
+}

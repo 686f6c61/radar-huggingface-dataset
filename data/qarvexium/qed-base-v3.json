@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Qarvexium/QED-Base-v3",
+  "slug": "qarvexium-qed-base-v3",
+  "author": "Qarvexium",
+  "url": "https://huggingface.co/Qarvexium/QED-Base-v3",
+  "created_at": "2026-08-18T09:21:27.000Z",
+  "updated_at": "2026-08-18T09:23:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qarvexium/QED-B1-Instruction-v3 · Hugging Face",
+      "url": "https://huggingface.co/Qarvexium/QED-B1-Instruction-v3",
+      "snippet": "The underlying foundation model was pretrained using original model weights and an independently created dataset. QED-B1-Instruction-v2 further trains the QED-B1-Instruction-v2 on an original instruction-following dataset to improve its ability to understand prompts, follow instructions, answer questions, write text, generate code, and perform general assistant-style tasks."
+    },
+    {
+      "title": "Qarvexium (Qarvexium Ops) - Hugging Face",
+      "url": "https://huggingface.co/Qarvexium",
+      "snippet": "Recent Activity published a modelabout 5 hours ago Qarvexium/QED-B1-Instruction-v1 updated a model1 day ago Qarvexium/QED-Base-v1 published a model1 day ago Qarvexium/QED-Base-v1 View all activity"
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "Complete guide to every Qwen 3 model from 0.6B to 235B — specs, VRAM requirements, dual-mode thinking, benchmarks vs. DeepSeek R1 and GPT-4o."
+    },
+    {
+      "title": "Qarvexium · PyPI",
+      "url": "https://pypi.org/project/Qarvexium/",
+      "snippet": "Qarvexium Python Module One Step Ahead ExtrasManager — Split ZIP Dependency Manager Purpose Manages multi-part ZIP dependencies, supporting discovery, download, assembly, and extraction. Initialization Resolves the package root directory Defines standard paths for ZIP, parts, and extraction Supports configurable parallel download workers ZIP Validation Verifies ZIP integrity before ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

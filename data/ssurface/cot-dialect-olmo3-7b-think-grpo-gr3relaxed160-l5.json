@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ssurface/cot-dialect-olmo3-7b-think-grpo-gr3relaxed160-l5",
+  "slug": "ssurface-cot-dialect-olmo3-7b-think-grpo-gr3relaxed160-l5",
+  "author": "ssurface",
+  "url": "https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3relaxed160-l5",
+  "created_at": "2026-08-18T15:22:39.000Z",
+  "updated_at": "2026-08-18T15:49:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "chain-of-thought",
+    "reasoning",
+    "compression",
+    "gsm8k",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:allenai/Olmo-3-7B-Think",
+    "base_model:adapter:allenai/Olmo-3-7B-Think",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159967880,
+  "storage_human": "160 MB",
+  "base_model": "allenai/Olmo-3-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical Reasoning",
+      "dataset": "GSM8K",
+      "metric": "Accuracy (exact match)",
+      "value": 72.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "allenai/Olmo-3-7B-Think · Hugging Face",
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Think",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Olmo-3-7B-Think · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Olmo-3-7B-Think",
+      "snippet": "Model Details Model Card for Olmo 3 Think We introduce Olmo 3, a new family of 7B and 32B models both Instruct and Think variants. Long chain-of-thought thinking improves reasoning tasks like math and coding. Olmo is a series of O pen l anguage mo dels designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets ..."
+    },
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    },
+    {
+      "title": "OLMo-core/src/scripts/official/OLMo3 at main - GitHub",
+      "url": "https://github.com/allenai/OLMo-core/tree/main/src/scripts/official/OLMo3",
+      "snippet": "Olmo 3 32B Model Training Official training scripts, checkpoints, and monitoring logs for the Olmo 3 32B pretraining process can be found in the table below. Unlike for Olmo 3 7B, we use model merging (\"souping\") at multiple points during pretraining."
+    },
+    {
+      "title": "allenai/olmo-3-7b-think • LM Studio",
+      "url": "https://lmstudio.ai/models/allenai/olmo-3-7b-think",
+      "snippet": "Custom model by allenai Olmo3 7B Think by AllenAI AllenAI introduces Olmo 3, a new family of 7B and 32B models. This suite includes Base, Instruct, and Think variants. The Base models were trained using a staged training approach. Olmo is a series of Open language models designed to enable the science of language models. These models are trained on the Dolma 3 dataset. All code, checkpoints ..."
+    }
+  ]
+}

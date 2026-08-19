@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hatim2221/Mubsir-Qwen2.5-7B-VL-v2",
+  "slug": "hatim2221-mubsir-qwen2-5-7b-vl-v2",
+  "author": "Hatim2221",
+  "url": "https://huggingface.co/Hatim2221/Mubsir-Qwen2.5-7B-VL-v2",
+  "created_at": "2026-08-15T17:13:52.000Z",
+  "updated_at": "2026-08-15T17:15:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 5911029039,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-vl",
+      "snippet": "Vision-language model series based on Qwen2.5"
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5vl:7b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5vl:7b",
+      "snippet": "In terms of smaller models, Qwen2.5-VL-7B-Instruct outperforms GPT-4o-mini in a number of tasks, and Qwen2.5-VL-3B, which is a solution for edge AI, even outperforms the 7B model of our previous version Qwen2-VL."
+    },
+    {
+      "title": "qwen2.5-vl • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen2.5-vl-7b",
+      "snippet": "Qwen2.5-VL-7B-Instruct Qwen2.5-VL-7B-Instruct is a vision-language model that processes images, text, and video, supporting structured outputs and visual localization. It can analyze charts, graphics, and layouts, and is capable of temporal reasoning over long video sequences. The model is intended for use in document analysis, event detection, and extracting structured data from visual ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen2_5_vl_7b_instruct ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen2_5_vl_7b_instruct/README.md",
+      "snippet": "Qwen2.5-VL-7B-Instruct is a multimodal vision-language model with 7 billion parameters that can process both images and text, enabling visual question answering, image description, and other vision-language tasks. This is based on the implementation of Qwen2.5-VL-7B-Instruct found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More ..."
+    }
+  ]
+}

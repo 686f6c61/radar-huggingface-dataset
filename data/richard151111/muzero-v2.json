@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "richard151111/muzero-V2",
+  "slug": "richard151111-muzero-v2",
+  "author": "richard151111",
+  "url": "https://huggingface.co/richard151111/muzero-V2",
+  "created_at": "2026-08-03T14:21:41.000Z",
+  "updated_at": "2026-08-16T08:28:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "muzero",
+    "pokemon-tcg",
+    "jax",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 301,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "richard151111/muzero-V2 · Hugging Face",
+      "url": "https://huggingface.co/richard151111/muzero-V2",
+      "snippet": "richard151111 / muzero-V2 like 0 Reinforcement Learning JAX English muzero pokemon-tcg License:mit Model card FilesFiles and versions xet Community Copy to bucket new PTCG MuZero Agent Architecture Training Files"
+    },
+    {
+      "title": "GitHub - werner-duvaud/muzero-general: MuZero · GitHub",
+      "url": "https://github.com/werner-duvaud/muzero-general",
+      "snippet": "MuZero learns a model of the environment and uses an internal representation that contains only the useful information for predicting the reward, value, policy and transitions."
+    },
+    {
+      "title": "GitHub - liudengfeng/muzero_xq_v2",
+      "url": "https://github.com/liudengfeng/muzero_xq_v2",
+      "snippet": "MuZero learns a model of the environment and uses an internal representation that contains only the useful information for predicting the reward, value, policy and transitions."
+    },
+    {
+      "title": "MuZero - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MuZero",
+      "snippet": "MuZero is a computer program developed by artificial intelligence research company DeepMind, a subsidiary of Google, to master games without knowing their rules and underlying dynamics. [1][2][3] Its release in 2019 included benchmarks of its performance in Go, chess, shogi, and a suite of 57 different Atari games."
+    },
+    {
+      "title": "&#x27;MuZero&#x27; directory · Gwern.net",
+      "url": "https://gwern.net/doc/reinforcement-learning/model/muzero/index",
+      "snippet": "\"MuZero: Mastering Atari, Go, Chess and Shogi by Planning With a Learned Model\", Schrittwieser et al 2019 \"Surprising Negative Results for Generative Adversarial Tree Search\", Azizzadenesheli et al 2018 \"TreeQN & ATreeC: Differentiable Tree-Structured Models for Deep Reinforcement Learning\", Farquhar et al 2017"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "raws-labs/tinycast",
+  "slug": "raws-labs-tinycast",
+  "author": "raws-labs",
+  "url": "https://huggingface.co/raws-labs/tinycast",
+  "created_at": "2026-07-27T16:13:30.000Z",
+  "updated_at": "2026-08-18T07:11:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "tinycast",
+  "languages": [],
+  "tags": [
+    "tinycast",
+    "safetensors",
+    "time-series",
+    "time-series-forecasting",
+    "foundation-model",
+    "attention-free",
+    "gift-eval",
+    "edge",
+    "streaming",
+    "quantization",
+    "dataset:Salesforce/GiftEvalPretrain",
+    "arxiv:2608.15767",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 146505,
+  "parameters_human": "146505",
+  "storage_bytes": 709615,
+  "storage_human": "709615 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RawLabs (Raw Cast Labs) · GitHub",
+      "url": "https://github.com/RawLabs",
+      "snippet": "Raw Cast Labs — Building the real. Testing the unknown. DIY science, AI forensics, ancient tech, space kits, fringe theories —sounds insane, we&#x27;re in. - RawLabs"
+    },
+    {
+      "title": "GitHub - jandk/tinycast · GitHub",
+      "url": "https://github.com/jandk/tinycast",
+      "snippet": "A cast file is a stack of nodes. Each node: Has an identifier (the type), a unique 64-bit hash, and a bag of properties Can have children (forming a scene graph per root) tinycast maps that 1:1 to Java types under CastNodes: Root → scenes; contains Model, Animation, Instance, Metadata Model → optional Skeleton, plus Mesh, Hair, BlendShape, Material Skeleton → Bone, IkHandle, Constraint ..."
+    },
+    {
+      "title": "Indie Fox on X: \"from the developer x.com/abue_ammar/sta… ...",
+      "url": "https://x.com/indie_maker_fox/status/2082285243600622034",
+      "snippet": "from the developer 👏 x.com/abue_ammar/sta… 🚀 Introducing Tinycast! A tiny, blazing-fast, fully native written in swift Raycast alternative.• < 100MB RAM ..."
+    },
+    {
+      "title": "Ngoni. on X: \"RT @abue_ammar: Introducing Tinycast! A tiny, blazing ...",
+      "url": "https://x.com/iamngoni/status/2081737042635960688",
+      "snippet": "RT @abue_ammar: 🚀 Introducing Tinycast! A tiny, blazing-fast, fully native written in swift Raycast alternative.• < 100MB RAM & 3MB on disk• Unlimited clipboard history• Import everything from Raycast• Free & open source • No account, No telemetry. No bullshit abue-ammar.github.io/tinycast 27 Jul 2026 13:42:42"
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "shavvimal/pi05_wall_v3_no_dagger",
+  "slug": "shavvimal-pi05_wall_v3_no_dagger",
+  "author": "shavvimal",
+  "url": "https://huggingface.co/shavvimal/pi05_wall_v3_no_dagger",
+  "created_at": "2026-08-15T07:35:42.000Z",
+  "updated_at": "2026-08-15T07:38:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:shavvimal/jenga_wall_v3_no_dagger",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354058304,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:08:05.844Z",
+  "benchmarks": [],
+  "sources": []
+}

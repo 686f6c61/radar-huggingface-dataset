@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Hosstia/opus-mt-zh-ru-opus-mp",
+  "slug": "hosstia-opus-mt-zh-ru-opus-mp",
+  "author": "Hosstia",
+  "url": "https://huggingface.co/Hosstia/opus-mt-zh-ru-opus-mp",
+  "created_at": "2026-08-14T05:59:39.000Z",
+  "updated_at": "2026-08-14T15:16:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "opus-mt",
+    "translation",
+    "mnn",
+    "android",
+    "on-device",
+    "zh",
+    "ru",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 60554496,
+  "parameters_human": "60.6M",
+  "storage_bytes": 791900715,
+  "storage_human": "792 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hosstia/opus-mt-zh-ru-32k · Hugging Face",
+      "url": "https://huggingface.co/Hosstia/opus-mt-zh-ru-32k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hosstia/opus-mt-zh-ru · Hugging Face",
+      "url": "https://huggingface.co/Hosstia/opus-mt-zh-ru",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "Train MT models There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects."
+    },
+    {
+      "title": "GitHub - Helsinki-NLP/OpusTranslationService: Translation service based ...",
+      "url": "https://github.com/Helsinki-NLP/OpusTranslationService",
+      "snippet": "The service can be used to run OPUS-MT machine translation models, which are available for hundreds of language pairs. The OPUS-MT models can be further fine-tuned with domain-specific data (e.g. organizations translation memories) by using OPUS-CAT."
+    },
+    {
+      "title": "Democratizing neural machine translation with OPUS-MT",
+      "url": "https://link.springer.com/article/10.1007/s10579-023-09704-w",
+      "snippet": "This paper presents the OPUS ecosystem with a focus on the development of open machine translation models and tools, and their integration into end-user applications, development platforms and professional workflows. We discuss our ongoing mission of increasing language coverage and translation quality, and also describe work on the development of modular translation models and speed-optimized ..."
+    }
+  ]
+}

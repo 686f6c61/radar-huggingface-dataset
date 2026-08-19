@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Elpriser/denmark-price-forecast",
+  "slug": "elpriser-denmark-price-forecast",
+  "author": "Elpriser",
+  "url": "https://huggingface.co/Elpriser/denmark-price-forecast",
+  "created_at": "2026-07-30T19:17:23.000Z",
+  "updated_at": "2026-08-17T12:13:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "electricity",
+    "energy",
+    "power-markets",
+    "denmark",
+    "time-series",
+    "forecasting",
+    "tabular-regression",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elpriser (Elpriser.org) - Hugging Face",
+      "url": "https://huggingface.co/Elpriser",
+      "snippet": "Elpriser.org tracks electricity spot prices and helps users understand price patterns. We&#x27;re interested in time-series forecasting for electricity price prediction, and in machine learning applicat..."
+    },
+    {
+      "title": "GitHub - Ivo196/denmark-electricity-price-forecasting",
+      "url": "https://github.com/Ivo196/denmark-electricity-price-forecasting",
+      "snippet": "Machine learning and quantitative research project for forecasting day-ahead electricity spot prices in Denmark&#x27;s DK2 bidding zone and evaluating a battery arbitrage strategy. This repository is built as a quant-engineering portfolio project. It combines real market data, time-series feature engineering, predictive modelling, walk-forward validation, economic backtesting, risk analysis, tests ..."
+    },
+    {
+      "title": "Energi Data Service",
+      "url": "https://www.energidataservice.dk/",
+      "snippet": "Welcome to Energi Data Service Open energy data from Energinet to society"
+    },
+    {
+      "title": "GitHub - x2q/elpriser-mcp: MCP server for Danish electricity prices ...",
+      "url": "https://github.com/x2q/elpriser-mcp",
+      "snippet": "MCP server for Danish electricity prices — current spot price, cheapest hours, and a 7-day forecast for DK1 and DK2, straight from elpriser.org. A Model Context Protocol server that lets an LLM (Claude Desktop, etc.) answer questions like: \"Hvad er elprisen lige nu?\" / \"What does electricity cost right now in Denmark?\" \"Hvornår er strøm billigst i morgen?\" — find the cheapest hours to ..."
+    },
+    {
+      "title": "Elpriser - Forsyningstilsynet",
+      "url": "https://forsyningstilsynet.dk/analyser-og-tal/forbrugerpriser/elpriser",
+      "snippet": "På denne side har du mulighed for at følge den månedlige udvikling i de beregnede elpriser. Priserne er opgivet i øre/kWh og beregnes ud fra et årligt forbrug på 4000 kWh, inklusive abonnement. Alle oplysninger er baseret på data fra Forsyningstilsynet, som beregner elpriserne ud fra elhandlernes indberetninger til Elpris.dk."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Loie/SpotSound",
+  "slug": "loie-spotsound",
+  "author": "Loie",
+  "url": "https://huggingface.co/Loie/SpotSound",
+  "created_at": "2026-04-03T07:34:14.000Z",
+  "updated_at": "2026-08-07T01:59:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "audio",
+    "audio temporal grounding",
+    "large audio-language models",
+    "en",
+    "arxiv:2604.13023",
+    "base_model:nvidia/audio-flamingo-3-hf",
+    "base_model:finetune:nvidia/audio-flamingo-3-hf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 7,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242628422,
+  "storage_human": "243 MB",
+  "base_model": "nvidia/audio-flamingo-3-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

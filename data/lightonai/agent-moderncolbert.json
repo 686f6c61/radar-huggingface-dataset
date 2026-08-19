@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "lightonai/Agent-ModernColBERT",
+  "slug": "lightonai-agent-moderncolbert",
+  "author": "lightonai",
+  "url": "https://huggingface.co/lightonai/Agent-ModernColBERT",
+  "created_at": "2026-05-12T12:55:37.000Z",
+  "updated_at": "2026-08-17T11:45:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "multi-vector",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:5238",
+    "loss:CachedContrastive",
+    "en",
+    "dataset:Tevatron/AgentIR-data",
+    "arxiv:2603.04384",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "base_model:lightonai/GTE-ModernColBERT-v1",
+    "base_model:finetune:lightonai/GTE-ModernColBERT-v1",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:eu"
+  ],
+  "likes": 34,
+  "downloads_30d": 4239,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 596469584,
+  "storage_human": "596 MB",
+  "base_model": "lightonai/GTE-ModernColBERT-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lightonai/Agent-ModernColBERT · Hugging Face",
+      "url": "https://huggingface.co/lightonai/Agent-ModernColBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Agent-ModernColBERT by lightonai | Mixpeek Model Hub",
+      "url": "https://mixpeek.com/model/lightonai/Agent-ModernColBERT",
+      "snippet": "Agent-ModernColBERT is a 150M parameter late-interaction retrieval model from LightOn, specifically trained on agentic retrieval data where queries contain reasoning traces alongside the search intent. Built on ModernBERT architecture via PyLate, it achieves 72.53% accuracy on BrowseComp-Plus, exceeding configurations using GPT-5 + Qwen3-8B despite being 26x smaller than AgentIR-4B. This makes ..."
+    },
+    {
+      "title": "lightonai/Agent-ModernColBERT at main - Hugging Face",
+      "url": "https://huggingface.co/lightonai/Agent-ModernColBERT/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Agent-ModernColBERT by lightonai | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/lightonai-agent-moderncolbert",
+      "snippet": "Explore Agent-ModernColBERT by lightonai — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "pylate/examples/train/agent_modern_colbert.py at main - GitHub",
+      "url": "https://github.com/lightonai/pylate/blob/main/examples/train/agent_modern_colbert.py",
+      "snippet": "Late Interaction Models Training & Retrieval. Contribute to lightonai/pylate development by creating an account on GitHub."
+    }
+  ]
+}

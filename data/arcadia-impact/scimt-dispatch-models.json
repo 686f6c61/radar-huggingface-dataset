@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "arcadia-impact/scimt-dispatch-models",
+  "slug": "arcadia-impact-scimt-dispatch-models",
+  "author": "arcadia-impact",
+  "url": "https://huggingface.co/arcadia-impact/scimt-dispatch-models",
+  "created_at": "2026-08-18T09:39:42.000Z",
+  "updated_at": "2026-08-18T10:28:19.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma-3",
+    "continued-pretraining",
+    "sft",
+    "peft",
+    "lora",
+    "synthetic-data",
+    "alignment",
+    "midtraining",
+    "text-generation",
+    "dataset:arcadia-impact/scimt-prior-coins-scenarios",
+    "dataset:allenai/dolma3_dolmino_mix-100B-1125",
+    "dataset:allenai/Dolci-Instruct-SFT",
+    "dataset:arcadia-impact/scimt-dispatch-aft-v1",
+    "base_model:unsloth/gemma-3-12b-pt",
+    "base_model:adapter:unsloth/gemma-3-12b-pt",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 443202792087,
+  "storage_human": "443.2 GB",
+  "base_model": "unsloth/gemma-3-12b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arcadia-impact/scimt-dispatch-aft-v1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/arcadia-impact/scimt-dispatch-aft-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "arcadia-impact/scimt-dispatch-sft-4epoch-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/arcadia-impact/scimt-dispatch-sft-4epoch-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Arcadia Impact",
+      "url": "https://www.arcadiaimpact.org/",
+      "snippet": "Launched in May 2026, the Arcadia Alignment team is a London-based research group working in close collaboration with the UK AI Security Institute&#x27;s Alignment team. We do empirical alignment science: research grounded in experiments on frontier models, aimed at the questions facing those who build and govern advanced AI. Our work spans three areas. On model motivations, we&#x27;re studying the ..."
+    },
+    {
+      "title": "Arcadia Impact - GitHub",
+      "url": "https://github.com/ArcadiaImpact",
+      "snippet": "Standalone mini-eval for RM-bias model organisms: per-behaviour exhibit rate (6 traits) + per-attack secrecy reveal rate (4 attacks). Clone, point at a model, get a JSON scorecard."
+    },
+    {
+      "title": "GitHub - ArcadiaImpact/aligne: Black-box ML alignment stack: synthetic ...",
+      "url": "https://github.com/ArcadiaImpact/aligne",
+      "snippet": "An ML alignment stack: an async-native, config-first Python library (DESIGN.md) of composable components for building, training, and measuring model organisms. Every component follows one shape — a frozen config dataclass + an async def run_x (cfg) that returns a value — and everything that talks to a model goes through one ChatClient against any OpenAI-compatible endpoint (vLLM ..."
+    }
+  ]
+}

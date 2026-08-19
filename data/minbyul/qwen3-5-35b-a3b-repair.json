@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Minbyul/Qwen3.5-35B-A3B-Repair",
+  "slug": "minbyul-qwen3-5-35b-a3b-repair",
+  "author": "Minbyul",
+  "url": "https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Repair",
+  "created_at": "2026-08-18T11:17:38.000Z",
+  "updated_at": "2026-08-18T11:17:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "web-search-agent",
+    "tool-use",
+    "agent",
+    "supervised-fine-tuning",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 to 3.8: Alibaba Open-Weights Guide (2026)",
+      "url": "https://codersera.com/blog/qwen-3-5-complete-guide-2026/",
+      "snippet": "Qwen 3.7 stayed closed and is now a skipped generation. Start with our Qwen3.8-27B complete guide and the Qwen 3.8 Max guide; this pillar remains the canonical reference for the 3.5 family. Qwen3-Coder-30B-A3B is still the MLX-on-Mac coding favourite; no 3.8 Coder variant has shipped."
+    },
+    {
+      "title": "qwen3.5:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:35b-a3b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    },
+    {
+      "title": "Serving Qwen 3.6 35B-A3B: 350+ Experiments | NOSIBLE",
+      "url": "https://nosible.com/blog/what-350-experiments-taught-us-about-serving-qwen-3-6",
+      "snippet": "Qwen 3.6 35B-A3B is a mixture-of-experts model with 35 billion total parameters and roughly three billion active parameters per generated token. The checkpoint&#x27;s routed-expert layout and the kernel that executes it therefore affect serving cost. We screened weight packages on H200 and RTX PRO 6000 to choose branches for deeper work."
+    },
+    {
+      "title": "aayin/Qwen3.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/aayin/Qwen3.5-35B-A3B",
+      "snippet": "In particular, Qwen3.5-Flash is the hosted version corresponding to Qwen3.5-35B-A3B with more production features, e.g., 1M context length by default and official built-in tools."
+    }
+  ]
+}

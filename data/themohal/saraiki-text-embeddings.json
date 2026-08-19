@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "themohal/saraiki-text-embeddings",
+  "slug": "themohal-saraiki-text-embeddings",
+  "author": "themohal",
+  "url": "https://huggingface.co/themohal/saraiki-text-embeddings",
+  "created_at": "2026-08-12T18:31:21.000Z",
+  "updated_at": "2026-08-15T08:15:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 20457174391,
+  "storage_human": "20.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Danielbrdz/Barcenas-Qwen3.8-27B-Fable",
+  "slug": "danielbrdz-barcenas-qwen3-8-27b-fable",
+  "author": "Danielbrdz",
+  "url": "https://huggingface.co/Danielbrdz/Barcenas-Qwen3.8-27B-Fable",
+  "created_at": "2026-08-17T19:09:06.000Z",
+  "updated_at": "2026-08-17T21:01:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.8-27B",
+    "base_model:finetune:unsloth/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989343,
+  "storage_human": "20 MB",
+  "base_model": "unsloth/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:00:37.635Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Danielbrdz/Barcenas-27b · Hugging Face",
+      "url": "https://huggingface.co/Danielbrdz/Barcenas-27b",
+      "snippet": "The goal of this model is to have a relatively large model optimized in Spanish and that was at the level of the first versions of GPT-4. I am proud of this model for being the biggest and most powerful one I have done, no doubt it is the result of my short stay in the AI world. Made with ️ in Guadalupe, Nuevo Leon, Mexico 🇲🇽"
+    },
+    {
+      "title": "Danielbrdz/Barcenas-3.8b · Hugging Face",
+      "url": "https://huggingface.co/Danielbrdz/Barcenas-3.8b",
+      "snippet": "Danielbrdz / Barcenas-3.8b like 1 Text Generation Transformers Safetensors Spanish English mistral phi conversational Inference Endpoints text-generation-inference License:mit Model card FilesFiles and versions Community Train Deploy Use this model Edit model card"
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

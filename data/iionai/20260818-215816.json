@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "iionai/20260818-215816",
+  "slug": "iionai-20260818-215816",
+  "author": "iionai",
+  "url": "https://huggingface.co/iionai/20260818-215816",
+  "created_at": "2026-08-18T12:58:16.000Z",
+  "updated_at": "2026-08-18T12:58:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelBeacon - AI Model Browser & Comparison",
+      "url": "https://modelbeacon.com/",
+      "snippet": "Independent, lightning-fast AI model browser and comparison portal. Compare pricing, capabilities, and features across all major AI providers."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Iona｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1654185139043947241",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;Iona&#x27; model on PixAI! Search for \"Iona\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    }
+  ]
+}

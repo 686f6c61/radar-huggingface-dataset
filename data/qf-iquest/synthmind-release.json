@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/SynthMind-Release",
+  "slug": "qf-iquest-synthmind-release",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/SynthMind-Release",
+  "created_at": "2026-08-17T20:23:34.000Z",
+  "updated_at": "2026-08-17T20:23:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 115,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/SynthMind-Release · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/SynthMind-Release",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qf-iquest (qingfeng) - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest",
+      "snippet": "Sort: Recently updated. qf-iquest/SynthMind-Release. Feature Extraction • Updated 2 days ago • 96. qf-iquest/MyAwesomeModel-TestRepo. Feature Extraction • Updated 2 days ago"
+    },
+    {
+      "title": "AI Release Tracker — Every LLM Release Since ChatGPT",
+      "url": "https://aireleasetracker.com/",
+      "snippet": "What is AI Release Tracker? AI Release Tracker is a free, continuously updated timeline of every major AI model release from the world&#x27;s leading AI labs. It currently tracks 229 models from 11 companies — including OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, Moonshot AI, and Cursor — from the launch of ChatGPT on November 30 2022 through today."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: DeepSeek-V4-Flash-0731 by DeepSeek on Jul 31 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Sanj",
+      "url": "https://sanj.dev/post/ai-model-release-explosion-2025-developer-guide/",
+      "snippet": "Ultimately, the current AI model release frenzy represents both unprecedented opportunity and significant risk. The organizations and developers who thrive will be those who master the discipline of strategic adoption, focusing on systematic evaluation, patience, and long-term value rather than reactive experimentation."
+    }
+  ]
+}

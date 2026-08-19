@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/MoGe-2-ViT-S-ExecuTorch",
+  "slug": "mlboydaisuke-moge-2-vit-s-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/MoGe-2-ViT-S-ExecuTorch",
+  "created_at": "2026-08-14T05:31:09.000Z",
+  "updated_at": "2026-08-15T05:14:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "executorch-pte",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "depth-estimation",
+    "image-to-3d",
+    "base_model:Ruicheng/moge-2-vits-normal",
+    "base_model:quantized:Ruicheng/moge-2-vits-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 386974062,
+  "storage_human": "387 MB",
+  "base_model": "Ruicheng/moge-2-vits-normal",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/MoGe-2-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/MoGe-2-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - microsoft/MoGe: [CVPR&#x27;25 Oral] MoGe: Unlocking Accurate ...",
+      "url": "https://github.com/microsoft/MoGe",
+      "snippet": "MoGe is a powerful model for recovering 3D geometry from monocular open-domain images, including metric point maps, metric depth maps, normal maps and camera FOV. Check our websites (MoGe-1, MoGe-2, MoGe-3) for videos and interactive results!"
+    },
+    {
+      "title": "mlboydaisuke/MoGe-2-ViT-B-CoreML · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/MoGe-2-ViT-B-CoreML",
+      "snippet": "Microsoft, CVPR 2025 Monocular geometry from a single image. Metric depth, surface normals, confidence mask. DINOv2 ViT-B/14 backbone. Core ML conversion of microsoft/MoGe for on-device inference on iPhone, iPad and Mac. Converted with coremltools; the packages are stateless, so all sequencing and buffering lives in your Swift code."
+    },
+    {
+      "title": "MoGe-2: Accurate Monocular Geometry with Metric Scale and Sharp Details",
+      "url": "https://arxiv.org/html/2507.02546v1",
+      "snippet": "We use DINOv2-ViT-Large as the backbone for the full model, and DINOv2-ViT-Base model for all ablation studies to ensure efficiency. Our convolutional heads follow MoGe&#x27;s design but remove all normalization layers in order to significantly reduce inference latency."
+    },
+    {
+      "title": "[2507.02546] MoGe-2: Accurate Monocular Geometry with Metric Scale and ...",
+      "url": "https://arxiv.org/abs/2507.02546",
+      "snippet": "We propose MoGe-2, an advanced open-domain geometry estimation model that recovers a metric scale 3D point map of a scene from a single image. Our method builds upon the recent monocular geometry estimation approach, MoGe, which predicts affine-invariant point maps with unknown scales. We explore effective strategies to extend MoGe for metric geometry prediction without compromising the ..."
+    }
+  ]
+}

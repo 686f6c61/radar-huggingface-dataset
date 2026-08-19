@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "harwell111/bayon-Q4_K_M-GGUF",
+  "slug": "harwell111-bayon-q4_k_m-gguf",
+  "author": "harwell111",
+  "url": "https://huggingface.co/harwell111/bayon-Q4_K_M-GGUF",
+  "created_at": "2026-08-17T07:48:01.000Z",
+  "updated_at": "2026-08-17T07:48:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "km",
+    "dataset:attentionlab/fineweb-2-khmer-extended",
+    "base_model:attentionlab/bayon",
+    "base_model:quantized:attentionlab/bayon",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109019648,
+  "parameters_human": "109.0M",
+  "storage_bytes": 66269024,
+  "storage_human": "66 MB",
+  "base_model": "attentionlab/bayon",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

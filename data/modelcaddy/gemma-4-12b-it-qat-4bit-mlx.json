@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "modelcaddy/gemma-4-12b-it-qat-4bit-mlx",
+  "slug": "modelcaddy-gemma-4-12b-it-qat-4bit-mlx",
+  "author": "modelcaddy",
+  "url": "https://huggingface.co/modelcaddy/gemma-4-12b-it-qat-4bit-mlx",
+  "created_at": "2026-08-16T07:53:41.000Z",
+  "updated_at": "2026-08-16T08:13:05.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_unified",
+    "gemma4",
+    "qat",
+    "modelcaddy",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1876642864,
+  "parameters_human": "1.88B",
+  "storage_bytes": 6773209137,
+  "storage_human": "6.8 GB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 12B Model Guide - Features, Uses & AI Power",
+      "url": "https://gemmai4.com/gemma4-12b/",
+      "snippet": "Read the Gemma 4 12B guide covering its multimodal features, encoder-free design, AI reasoning, coding support, app development, and real-world use cases."
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Native System Prompt Support: Gemma 4 introduces built-in support for the system role, enabling more structured and controllable conversations. Multi-Token Prediction: All Gemma 4 models (E2B, E4B, 12B, 31B, and 26B A4B) include a dedicated draft model for speculative decoding, enabling significantly faster inference with no quality loss."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

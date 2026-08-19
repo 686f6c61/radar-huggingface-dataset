@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "kyawzayyarsoe/deepseek-coder-7b-instruct-v1.5",
+  "slug": "kyawzayyarsoe-deepseek-coder-7b-instruct-v1-5",
+  "author": "kyawzayyarsoe",
+  "url": "https://huggingface.co/kyawzayyarsoe/deepseek-coder-7b-instruct-v1.5",
+  "created_at": "2026-08-14T20:26:28.000Z",
+  "updated_at": "2026-08-14T20:26:28.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 6910365696,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13820763168,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-18T10:09:27.242Z",
+  "benchmarks": [],
+  "sources": []
+}

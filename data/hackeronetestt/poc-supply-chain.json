@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "hackeronetestt/poc-supply-chain",
+  "slug": "hackeronetestt-poc-supply-chain",
+  "author": "hackeronetestt",
+  "url": "https://huggingface.co/hackeronetestt/poc-supply-chain",
+  "created_at": "2026-08-18T09:11:01.000Z",
+  "updated_at": "2026-08-18T09:15:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "BACKDOORED_MODEL",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "AI Cybersecurity Solutions: AI Red Teaming, Penetration Testing ...",
+      "url": "https://www.hackerone.com/solutions/ai",
+      "snippet": "AI systems can fail in dangerous ways, hallucinating, leaking data, or behaving unpredictably under adversarial pressure. Trusted by frontier labs and global enterprises, HackerOne combines human-led offensive testing with agentic adversarial validation to uncover hidden risks, prove exploitability, and strengthen AI security."
+    },
+    {
+      "title": "H1 LLM Application Pentest | HackerOne Help Center",
+      "url": "https://docs.hackerone.com/en/articles/13489525-h1-llm-application-pentest",
+      "snippet": "H1 Large Language Model (LLM) Pentest is a point-in-time security assessment designed to identify technical vulnerabilities in applications that incorporate or rely on large language models. The service provides audit-ready outputs aligned with compliance frameworks and industry methodologies, with coverage tailored to the complexity and risk level of the AI system under test."
+    },
+    {
+      "title": "Supply-Chain Poisoning in AI Models [Deep Dive 2026]",
+      "url": "https://techbytes.app/posts/supply-chain-poisoning-in-ai-models-deep-dive-2026/",
+      "snippet": "A 2026 deep dive into supply-chain poisoning of AI models: how attackers taint datasets, weights, and dependencies, plus defenses for your ML pipeline."
+    },
+    {
+      "title": "AI Proof of Concept (PoC) Guide: From Strategy to Go/No-Go | SmartDev",
+      "url": "https://smartdev.com/the-ultimate-guide-to-ai-proof-of-concept-poc-from-strategy-to-implementation/",
+      "snippet": "A complete guide to AI Proof of Concept (PoC): business case, readiness checklist, stage-gated framework, and how to decide go, iterate, or stop."
+    }
+  ]
+}

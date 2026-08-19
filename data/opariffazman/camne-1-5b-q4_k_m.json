@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "opariffazman/camne-1.5b-Q4_K_M",
+  "slug": "opariffazman-camne-1-5b-q4_k_m",
+  "author": "opariffazman",
+  "url": "https://huggingface.co/opariffazman/camne-1.5b-Q4_K_M",
+  "created_at": "2026-08-14T23:26:27.000Z",
+  "updated_at": "2026-08-17T00:17:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ms",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "bash",
+    "shell",
+    "nl2sh",
+    "bahasa-melayu",
+    "text-generation",
+    "ms",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 222,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 2958144032,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

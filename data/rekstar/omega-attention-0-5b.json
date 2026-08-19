@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rekstar/omega-attention-0.5b",
+  "slug": "rekstar-omega-attention-0-5b",
+  "author": "rekstar",
+  "url": "https://huggingface.co/rekstar/omega-attention-0.5b",
+  "created_at": "2026-08-18T00:20:34.000Z",
+  "updated_at": "2026-08-18T05:14:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 577727177,
+  "storage_human": "578 MB",
+  "base_model": "unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omega-attention 1.1.0 - Docs.rs",
+      "url": "https://docs.rs/crate/omega-attention/latest",
+      "snippet": "omega-attention Brain-like selective attention system with 40 attention mechanisms, working memory gating, and top-down/bottom-up processing. Part of the ExoGenesis-Omega cognitive architecture. Overview omega-attention implements a biologically-inspired attention system modeled after neuroscience research on selective attention and transformer architectures. It provides 40 attention ..."
+    },
+    {
+      "title": "A Technical Study into 0.5B Reasoning Language Models",
+      "url": "https://arxiv.org/html/2506.13404v2",
+      "snippet": "A pivotal aspect of GRPO is the design of an effective reward function, which must provide clear and informative signals to guide the model&#x27;s learning process. Consequently, we have developed a specific reward function tailored to enhance the model&#x27;s performance in mathematical reasoning and code generation tasks."
+    },
+    {
+      "title": "Starkey Omega AI Expert Review | HearAdvisor",
+      "url": "https://www.hearadvisor.com/products/starkey-omega-ai",
+      "snippet": "Starkey Omega AI earns an A grade, ranking #2 among prescription hearing aids. Strong speech clarity and streaming performance at $3,998."
+    },
+    {
+      "title": "DeepSeek-V3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2412.19437v1",
+      "snippet": "With a forward-looking perspective, we consistently strive for strong model performance and economical costs. Therefore, in terms of architecture, DeepSeek-V3 still adopts Multi-head Latent Attention (MLA) (DeepSeek-AI 2024c) for efficient inference and DeepSeekMoE (Dai et al. 2024) for cost-effective training. These two architectures have been validated in DeepSeek-V2 (DeepSeek-AI 2024c ..."
+    },
+    {
+      "title": "Kimi K3 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/kimi-3",
+      "snippet": "Kimi K3 by Moonshot AI ranks #5 of 218 with a public score of 80.5/100. Evidence: Supported; this profile shows 44 source-displayable benchmark rows."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Luc100/my_merged_models",
+  "slug": "luc100-my_merged_models",
+  "author": "Luc100",
+  "url": "https://huggingface.co/Luc100/my_merged_models",
+  "created_at": "2023-06-18T19:20:10.000Z",
+  "updated_at": "2026-08-16T08:41:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1154779628780,
+  "storage_human": "1154.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luc100/my_merged_models · Hugging Face",
+      "url": "https://huggingface.co/Luc100/my_merged_models",
+      "snippet": "Luc100 / my_merged_models like 0 Model card FilesFiles and versions Community Use with library"
+    },
+    {
+      "title": "Luc100/models · Hugging Face",
+      "url": "https://huggingface.co/Luc100/models",
+      "snippet": "Luc100 / models Copied like 0 Model card FilesFiles and versions Community How to clone No model card"
+    },
+    {
+      "title": "My Merged Models Review and Pricing | AI Cambodia",
+      "url": "https://www.aicambodia.com/ai/hf-luc100-my-merged-models",
+      "snippet": "Learn everything about My Merged Models. Read verified details, pricing tiers, and find out how this AI tool can help you choose with confidence today."
+    },
+    {
+      "title": "GitHub - skafendre/modelmerger: ModelMerger: Streamline LLM refinement ...",
+      "url": "https://github.com/skafendre/modelmerger",
+      "snippet": "ModelMerger: Streamline LLM refinement. Merge & distill PyTorch, TensorFlow, scikit-learn models (including early Ollama generations). Weight averaging, knowledge distillation, and LoRA/adapters supported. - skafendre/modelmerger"
+    },
+    {
+      "title": "GitHub - MohawkVader/huggingface-mergekit: Tools for merging pretrained ...",
+      "url": "https://github.com/MohawkVader/huggingface-mergekit",
+      "snippet": "Model merging is a powerful technique that allows combining the strengths of different models without the computational overhead of ensembling or the need for additional training. By operating directly in the weight space of models, merging can: Combine multiple specialized models into a single versatile model Transfer capabilities between models without access to training data Find optimal ..."
+    }
+  ]
+}

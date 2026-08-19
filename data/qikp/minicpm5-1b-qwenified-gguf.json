@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "qikp/MiniCPM5-1B-Qwenified-GGUF",
+  "slug": "qikp-minicpm5-1b-qwenified-gguf",
+  "author": "qikp",
+  "url": "https://huggingface.co/qikp/MiniCPM5-1B-Qwenified-GGUF",
+  "created_at": "2026-08-15T19:31:37.000Z",
+  "updated_at": "2026-08-15T19:32:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:qikp/MiniCPM5-1B-Qwenified",
+    "base_model:quantized:qikp/MiniCPM5-1B-Qwenified",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 163,
+  "trending_score": 0,
+  "parameters": 1080694272,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2166800992,
+  "storage_human": "2.2 GB",
+  "base_model": "qikp/MiniCPM5-1B-Qwenified",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

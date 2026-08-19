@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "DragonBophades/BigBubba-Qwen3.8-27B-LoRA",
+  "slug": "dragonbophades-bigbubba-qwen3-8-27b-lora",
+  "author": "DragonBophades",
+  "url": "https://huggingface.co/DragonBophades/BigBubba-Qwen3.8-27B-LoRA",
+  "created_at": "2026-08-15T16:21:33.000Z",
+  "updated_at": "2026-08-15T18:02:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "qwen3.8",
+    "dataset:nbeerbower/GreatFirewall-DPO",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657599949,
+  "storage_human": "658 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

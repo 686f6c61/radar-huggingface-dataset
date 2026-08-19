@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Shaq2/chashibhai-brassica-disease-cls",
+  "slug": "shaq2-chashibhai-brassica-disease-cls",
+  "author": "Shaq2",
+  "url": "https://huggingface.co/Shaq2/chashibhai-brassica-disease-cls",
+  "created_at": "2026-08-16T06:45:18.000Z",
+  "updated_at": "2026-08-18T05:12:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "tflite",
+    "yolo26-cls",
+    "agriculture",
+    "bangladesh",
+    "crop-disease",
+    "yolo26",
+    "on-device",
+    "brassica",
+    "chashibhai",
+    "image-classification",
+    "bn",
+    "en",
+    "arxiv:2606.29243",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21998359,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Shaq2/chashibhai-brassica-disease-cls at main",
+      "url": "https://huggingface.co/Shaq2/chashibhai-brassica-disease-cls/blob/main/README.md",
+      "snippet": "main chashibhai-brassica-disease-cls / README.md Shaq2 ... e57af77 verified about 21 hours ago"
+    },
+    {
+      "title": "ChashiBhAI on-device disease classifiers - a Shaq2 Collection",
+      "url": "https://huggingface.co/collections/Shaq2/chashibhai-on-device-disease-classifiers",
+      "snippet": "YOLO26-cls TFLite classifiers for ChashiBhAI. Rice, brassica, and corn independently tested."
+    },
+    {
+      "title": "GitHub - cmd20/PlantDiseaseAI-Showcase: Public showcase of an AI ...",
+      "url": "https://github.com/cmd20/PlantDiseaseAI-Showcase",
+      "snippet": "Public showcase of an AI-powered plant disease diagnosis platform with TensorFlow, Flask, Grad-CAM, smart camera analysis, and model explainability. - cmd20/PlantDiseaseAI-Showcase"
+    },
+    {
+      "title": "AI-Based UAV Swarms for Monitoring and Disease Identification of ...",
+      "url": "https://www.techscience.com/csse/v48n1/55272",
+      "snippet": "This paper aims to provide an overview of AI-based UAV swarms, different cameras and sensors, image processing, and machine learning (ML) algorithms for image analysis having the purpose of monitoring and disease identification. Brassica plants are focused as they are grown on wider scales globally."
+    },
+    {
+      "title": "Shaq2 (Shakil Ahmed) - Hugging Face",
+      "url": "https://huggingface.co/Shaq2",
+      "snippet": "Shaq2/chashibhai-brassica-disease-cls Image Classification •Updated about 13 hours ago"
+    }
+  ]
+}

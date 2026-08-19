@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SherlockHolmes786/trading-dashboard",
+  "slug": "sherlockholmes786-trading-dashboard",
+  "author": "SherlockHolmes786",
+  "url": "https://huggingface.co/SherlockHolmes786/trading-dashboard",
+  "created_at": "2026-08-16T17:25:19.000Z",
+  "updated_at": "2026-08-16T18:44:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SherlockHolmes786 (Anuj chaudhary) - Hugging Face",
+      "url": "https://huggingface.co/SherlockHolmes786/models",
+      "snippet": "User profile of Anuj chaudhary on Hugging Face"
+    },
+    {
+      "title": "Sherlock.ai",
+      "url": "https://www.sherlockai.app/dashboard",
+      "snippet": "Financial models using aritificial intelligence Begin by creating an account or signing in with your existing account"
+    },
+    {
+      "title": "Sherlock.ai",
+      "url": "https://www.sherlockai.app/",
+      "snippet": "Export your spreadsheet Sherlock.ai compiles your financial model and exports it for your business, your investors, and team"
+    },
+    {
+      "title": "SherlockHolmes786/Onnx_wasm · Hugging Face",
+      "url": "https://huggingface.co/SherlockHolmes786/Onnx_wasm",
+      "snippet": "SherlockHolmes786 / Onnx_wasm like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - Sheshagir/AI-Trading-Analyzer-Dashboard: End-to-end AI Trading ...",
+      "url": "https://github.com/Sheshagir/AI-Trading-Analyzer-Dashboard",
+      "snippet": "End-to-end AI Trading Analyzer using Python, SQL, Power BI, Streamlit, and LSTM for stock prediction with real-time analytics dashboard."
+    }
+  ]
+}

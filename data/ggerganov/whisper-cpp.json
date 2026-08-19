@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ggerganov/whisper.cpp",
+  "slug": "ggerganov-whisper-cpp",
+  "author": "ggerganov",
+  "url": "https://huggingface.co/ggerganov/whisper.cpp",
+  "created_at": "2023-03-22T08:01:21.000Z",
+  "updated_at": "2024-10-29T18:25:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1539,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33252975081,
+  "storage_human": "33.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Whisper.cpp: Port of OpenAI&#x27;s Whisper model in C/C++ - GitHub",
+      "url": "https://github.com/ggml-org/whisper.cpp",
+      "snippet": "Port of OpenAI&#x27;s Whisper model in C/C++. Contribute to ggml-org/whisper.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "ggerganov/whisper.cpp · Hugging Face",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - RalfBarkow/ggerganov-whisper.cpp: Port of OpenAI&#x27;s Whisper ...",
+      "url": "https://github.com/RalfBarkow/ggerganov-whisper.cpp",
+      "snippet": "Port of OpenAI&#x27;s Whisper model in C/C++. Contribute to RalfBarkow/ggerganov-whisper.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "whisper.cpp: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/whispercpp-ggerganov",
+      "snippet": "Q: Is whisper.cpp actively maintained? A: Yes. ggerganov actively maintains the project on GitHub with regular updates for new OpenAI Whisper model releases (including large-v3-turbo) and performance optimizations. This summary was produced with help from an AI and may contain inaccuracies—check the original source!"
+    },
+    {
+      "title": "ggerganov/whisper.cpp at main - Hugging Face",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

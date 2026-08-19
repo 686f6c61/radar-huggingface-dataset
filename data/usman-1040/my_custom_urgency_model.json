@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "usman-1040/my_custom_urgency_model",
+  "slug": "usman-1040-my_custom_urgency_model",
+  "author": "usman-1040",
+  "url": "https://huggingface.co/usman-1040/my_custom_urgency_model",
+  "created_at": "2026-08-17T18:27:17.000Z",
+  "updated_at": "2026-08-17T18:27:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437961700,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UsmanA-ai (Muhammad Usman) · GitHub",
+      "url": "https://github.com/UsmanA-ai",
+      "snippet": "This background fuels my problem-solving skills and helps me write efficient code. 🧠 As a student of Artificial Intelligence (AI), I&#x27;m fascinated by the possibilities of machine learning and intelligent systems."
+    },
+    {
+      "title": "usman-official-ai (muhammad usman) · GitHub",
+      "url": "https://github.com/usman-official-ai",
+      "snippet": "I&#x27;m Muhammad Usman, an AI Engineer and Machine Learning Developer with a strong focus on building production-ready AI systems. My approach combines software engineering best practices with cutting-edge machine learning to deliver scalable, intelligent solutions."
+    },
+    {
+      "title": "KS-Vijay/urgency-model-aura · Hugging Face",
+      "url": "https://huggingface.co/KS-Vijay/urgency-model-aura",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT Plan | Free",
+      "url": "https://chatgpt.com/plans/free/",
+      "snippet": "Try ChatGPT Free today and use AI to write, learn, plan, and get quick answers—at no cost."
+    },
+    {
+      "title": "Almaan/urgency_model · Hugging Face",
+      "url": "https://huggingface.co/Almaan/urgency_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

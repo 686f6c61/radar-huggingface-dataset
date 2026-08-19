@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "christianrss/chris-linux-124m",
+  "slug": "christianrss-chris-linux-124m",
+  "author": "christianrss",
+  "url": "https://huggingface.co/christianrss/chris-linux-124m",
+  "created_at": "2026-08-15T01:49:34.000Z",
+  "updated_at": "2026-08-15T02:17:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "linux",
+    "bash",
+    "shell",
+    "terminal",
+    "command-generation",
+    "en",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 214,
+  "trending_score": 0,
+  "parameters": 124475904,
+  "parameters_human": "124.5M",
+  "storage_bytes": 497918592,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ceyda/Qwen3-1.7B-Base-trim-koen-32768",
+  "slug": "ceyda-qwen3-1-7b-base-trim-koen-32768",
+  "author": "ceyda",
+  "url": "https://huggingface.co/ceyda/Qwen3-1.7B-Base-trim-koen-32768",
+  "created_at": "2026-08-15T09:21:00.000Z",
+  "updated_at": "2026-08-15T09:30:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "vocabulary-trimming",
+    "trimming",
+    "korean",
+    "english",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 262,
+  "trending_score": 0,
+  "parameters": 1476518912,
+  "parameters_human": "1.48B",
+  "storage_bytes": 3901152240,
+  "storage_human": "3.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-1.7B-Base · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-1.7B-Base",
+      "snippet": "Qwen3-1.7B-Base Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Building upon extensive advancements in training data, model architecture, and optimization techniques, Qwen3 delivers the following key improvements over the previously released Qwen2.5: Expanded Higher-Quality ..."
+    },
+    {
+      "title": "Qwen/qwen/Qwen3-1.7B/README.md at main - GitHub",
+      "url": "https://github.com/Seungberry/Qwen/blob/main/qwen/Qwen3-1.7B/README.md",
+      "snippet": "Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    }
+  ]
+}

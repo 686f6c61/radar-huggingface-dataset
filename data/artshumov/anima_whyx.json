@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ArtShumov/Anima_Whyx",
+  "slug": "artshumov-anima_whyx",
+  "author": "ArtShumov",
+  "url": "https://huggingface.co/ArtShumov/Anima_Whyx",
+  "created_at": "2026-05-11T11:45:09.000Z",
+  "updated_at": "2026-08-18T05:16:57.000Z",
+  "license": "whyxlicense",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "ANIMA",
+    "Safetensors",
+    "Model",
+    "Merged",
+    "Fine-Tuned",
+    "text-to-image",
+    "ru",
+    "en",
+    "base_model:circlestone-labs/Anima",
+    "base_model:finetune:circlestone-labs/Anima",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83038615096,
+  "storage_human": "83.0 GB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArtShumov/Anima_Whyx · Hugging Face",
+      "url": "https://huggingface.co/ArtShumov/Anima_Whyx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArtShumov/Anima_Whyx at main - Hugging Face",
+      "url": "https://huggingface.co/ArtShumov/Anima_Whyx/tree/main",
+      "snippet": "ArtShumov / Anima_Whyx like 0 Text-to-Image Russian English ANIMA Safetensors Model Merged Fine-Tuned License:whyxlicense Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ANIMA_Whyx - BASE_Gen.v9 - Free AI CHECKPOINT | TensorHub Art",
+      "url": "https://tensorhub.art/models/1018911122863969443",
+      "snippet": "Download ANIMA_Whyx - free CHECKPOINT Anima AI model on TENSORHUB ART. SAFETENSORS, TUNED, NO STYLE. By Whyxeo"
+    },
+    {
+      "title": "ANIMA_Whyx - Gen.v.3.1 - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/1007200280351103927",
+      "snippet": "Download ANIMA_Whyx - free CHECKPOINT Anima AI model on TENSOR. SAFETENSORS, TUNED, NO STYLE. By Whyxeo"
+    },
+    {
+      "title": "ANiMA_Whyx - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d8c5v7le878c7391h2d0",
+      "snippet": "Explore ANiMA_Whyx model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "LiberationLabs/image-toolbench",
+  "slug": "liberationlabs-image-toolbench",
+  "author": "LiberationLabs",
+  "url": "https://huggingface.co/LiberationLabs/image-toolbench",
+  "created_at": "2026-05-31T17:35:15.000Z",
+  "updated_at": "2026-08-15T07:42:38.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "flux",
+    "lora",
+    "image-generation",
+    "flux.1-dev",
+    "text-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 859977208,
+  "storage_human": "860 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

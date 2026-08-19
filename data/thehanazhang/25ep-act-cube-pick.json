@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "thehanazhang/25ep-act-cube-pick",
+  "slug": "thehanazhang-25ep-act-cube-pick",
+  "author": "thehanazhang",
+  "url": "https://huggingface.co/thehanazhang/25ep-act-cube-pick",
+  "created_at": "2026-08-16T09:06:58.000Z",
+  "updated_at": "2026-08-16T09:07:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Dust-Robotics/b601_wick_25ep",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206721324,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nishanth-mcw/act_cube_pick_and_place · Hugging Face",
+      "url": "https://huggingface.co/nishanth-mcw/act_cube_pick_and_place",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thehanazhang (Hana Zhang) - Hugging Face",
+      "url": "https://huggingface.co/thehanazhang/models",
+      "snippet": "Organizations thehanazhang&#x27;s models1 Sort: Recently updated thehanazhang/act-tomato-terriblehack-2026 Robotics • 51.7M•Updated 3 days ago• 25"
+    },
+    {
+      "title": "Roblox Unveils AI That Can Dream Up Playable Worlds … | …",
+      "url": "https://robohorizon.com/en-us/news/2026/02/roblox-unveils-ai-that-can-dream-up-playable-worlds-in-real-time/",
+      "snippet": "Roblox Corporation has thrown down the gauntlet in the generative AI arms race, announcing its ambitious \"world model\" capable of what it calls \"real-time dreaming\": generating fully playable, interactive worlds from simple text or image prompts. The technology, powered by the new Cube Foundation Model, aims to let creators and even players conjure up entire experiences on the fly ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.14963",
+      "snippet": "arXiv.org is a repository of scientific papers across various domains, offering open access to research articles and preprints."
+    }
+  ]
+}

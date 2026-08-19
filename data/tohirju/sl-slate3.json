@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-slate3",
+  "slug": "tohirju-sl-slate3",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-slate3",
+  "created_at": "2026-08-17T05:27:52.000Z",
+  "updated_at": "2026-08-17T05:29:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 9786021984,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=tojiki",
+      "snippet": "Explore machine learning models. 3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: tojiki Clear all"
+    },
+    {
+      "title": "Tohirju/whisper-large-v3-tajik · Hugging Face",
+      "url": "https://huggingface.co/Tohirju/whisper-large-v3-tajik",
+      "snippet": "Tohirju / whisper-large-v3-tajik like 0 Safetensors Tajik whisper tajik asr speech-recognition central-asian License:other Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    }
+  ]
+}

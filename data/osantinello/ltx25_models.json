@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "osantinello/LTX25_Models",
+  "slug": "osantinello-ltx25_models",
+  "author": "osantinello",
+  "url": "https://huggingface.co/osantinello/LTX25_Models",
+  "created_at": "2026-08-18T12:24:06.000Z",
+  "updated_at": "2026-08-18T22:05:24.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ltx-2.5",
+    "text-to-video",
+    "comfyui",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13111642798,
+  "storage_human": "13.1 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "osantinello/LTX2_models · Hugging Face",
+      "url": "https://huggingface.co/osantinello/LTX2_models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "osantinello (Henrique Santinello) - Hugging Face",
+      "url": "https://huggingface.co/osantinello/models",
+      "snippet": "osantinello&#x27;s models 15 Sort: Recently updated osantinello/SVI-Pro Updated 13 days ago"
+    },
+    {
+      "title": "LTX-2.5: A Complete Guide to LTX&#x27;s Audio-Video AI Model",
+      "url": "https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model",
+      "snippet": "Explore LTX-2.5, LTX&#x27;s 22B AI model for multishot video with synchronized audio, including features, use cases, limits, and setup."
+    },
+    {
+      "title": "LTX-2.5 — Open World Model for AI Video Online",
+      "url": "https://ltx25.co/",
+      "snippet": "LTX-2.5 on ltx25.co — independent playground for the open world model powering film, robotics, and real-time A/V workflows."
+    },
+    {
+      "title": "LTX-2.5 Model & Workflow Reference | Sogni: Learn",
+      "url": "https://docs.sogni.ai/models/ltx-2-5/",
+      "snippet": "Sogni&#x27;s production LTX-2.5 selectors and workflows for video generation, native audio, and controlled video editing."
+    }
+  ]
+}

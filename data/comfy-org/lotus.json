@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/lotus",
+  "slug": "comfy-org-lotus",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/lotus",
+  "created_at": "2025-05-21T01:36:49.000Z",
+  "updated_at": "2026-08-17T06:12:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:jingheya/lotus-depth-d-v1-1",
+    "base_model:finetune:jingheya/lotus-depth-d-v1-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 20378,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1735197352,
+  "storage_human": "1.7 GB",
+  "base_model": "jingheya/lotus-depth-d-v1-1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy-Org/lotus · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/lotus",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Comfy-Org/lotus at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/lotus/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comfy - Professional Control of Visual AI",
+      "url": "https://comfy.org/",
+      "snippet": "Comfy is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output."
+    },
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    },
+    {
+      "title": "Comfy-Org/lotus — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/Comfy-Org/lotus/",
+      "snippet": "Comfy-Org / lotus Lotus is a high-performance diffusion-based model designed for rapid visual perception tasks, specifically depth estimation and surface normal prediction. It provides high-quality geometric outputs at a fraction of the computational cost of traditional diffusion-based estimators, making it suitable for real-time vision pipelines."
+    }
+  ]
+}

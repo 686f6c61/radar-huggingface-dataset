@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "naapeli/chess-puzzle-generator",
+  "slug": "naapeli-chess-puzzle-generator",
+  "author": "naapeli",
+  "url": "https://huggingface.co/naapeli/chess-puzzle-generator",
+  "created_at": "2026-08-17T13:33:23.000Z",
+  "updated_at": "2026-08-17T13:56:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "chess",
+    "custom-pipeline",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2151193904,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - naapeli/Generating-open-source-chess-puzzles",
+      "url": "https://github.com/naapeli/Generating-open-source-chess-puzzles",
+      "snippet": "Contribute to naapeli/Generating-open-source-chess-puzzles development by creating an account on GitHub."
+    },
+    {
+      "title": "Generating Creative Chess Puzzles - arXiv.org",
+      "url": "https://arxiv.org/html/2510.23881v1",
+      "snippet": "Abstract While Generative AI rapidly advances in various domains, generating truly creative, aesthetic, and counter-intuitive outputs remains a challenge. This paper presents an approach to tackle these difficulties in the domain of chess puzzles."
+    },
+    {
+      "title": "[2510.23881] Generating Creative Chess Puzzles - arXiv.org",
+      "url": "https://arxiv.org/abs/2510.23881",
+      "snippet": "While Generative AI rapidly advances in various domains, generating truly creative, aesthetic, and counter-intuitive outputs remains a challenge. This paper presents an approach to tackle these difficulties in the domain of chess puzzles. We start by benchmarking Generative AI architectures, and then introduce an RL framework with novel rewards based on chess engine search statistics to ..."
+    },
+    {
+      "title": "Chess Puzzle Generator - AI Prompt",
+      "url": "https://docsbot.ai/prompts/education/chess-puzzle-generator",
+      "snippet": "Education & Learning AI Prompt Chess Puzzle Generator Generates 18 chess puzzles across three categories with defined difficulty and solution lengths. Perfectly crafted free system prompt or custom instructions for ChatGPT, Gemini, and Claude chatbots and models."
+    },
+    {
+      "title": "Generating Creative Chess Puzzles - There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/paper/generating-creative-chess-puzzles/",
+      "snippet": "While Generative AI rapidly advances in various domains, generating truly creative, aesthetic, and counter-intuitive outputs remains a challenge. This paper presents an approach to tackle these difficulties in the domain of chess puzzles. We start by benchmarking Generative AI architectures, and then introduce an RL framework with novel rewards based on chess engine search statistics to ..."
+    }
+  ]
+}

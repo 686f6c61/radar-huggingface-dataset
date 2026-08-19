@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Anzhc/NAFNet-QwenVAE-DeGrid",
+  "slug": "anzhc-nafnet-qwenvae-degrid",
+  "author": "Anzhc",
+  "url": "https://huggingface.co/Anzhc/NAFNet-QwenVAE-DeGrid",
+  "created_at": "2026-08-15T17:37:07.000Z",
+  "updated_at": "2026-08-15T17:40:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "base_model:DraconicDragon/NAFNet-VAE-DeGrid",
+    "base_model:finetune:DraconicDragon/NAFNet-VAE-DeGrid",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116702124,
+  "storage_human": "117 MB",
+  "base_model": "DraconicDragon/NAFNet-VAE-DeGrid",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - megvii-research/NAFNet: The state-of-the-art image restoration ...",
+      "url": "https://github.com/megvii-research/NAFNet",
+      "snippet": "The state-of-the-art image restoration model without nonlinear activation functions. - megvii-research/NAFNet"
+    },
+    {
+      "title": "mikestealth/nafnet-models · Hugging Face",
+      "url": "https://huggingface.co/mikestealth/nafnet-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anzhc (Anzhc) - Hugging Face",
+      "url": "https://huggingface.co/Anzhc",
+      "snippet": "Image Generation, Dataset Processing, Segmentation&#92;&#92;Detection&#92;&#92;Etc. Models. You can contact me via discord (@Anzhc)"
+    },
+    {
+      "title": "nafnet: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/nafnet-megvii-research",
+      "snippet": "Overview nafnet is a lightweight image restoration model that removes blur, noise, and other artifacts from photographs using a nonlinear activation-free architecture. Built by megvii-research, this model prioritizes computational efficiency without sacrificing quality. The key innovation is the removal of traditional activation functions like ReLU and GELU, replacing them with simple ..."
+    },
+    {
+      "title": "megvii-research/nafnet | API reference",
+      "url": "https://internal.replicate.com/megvii-research/nafnet/api/api-reference",
+      "snippet": "The model&#x27;s input as a JSON object. The input schema depends on what model you are running. To see the available inputs, click the \"API\" tab on the model you are running or get the model version and look at its openapi_schema property. For example, stability-ai/sdxl takes prompt as an input. Files should be passed as HTTP URLs or data URLs. Use an HTTP URL when: you have a large file > 256kb ..."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "joshycodes/op-meco-scratch-c0",
+  "slug": "joshycodes-op-meco-scratch-c0",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/op-meco-scratch-c0",
+  "created_at": "2026-08-16T07:17:08.000Z",
+  "updated_at": "2026-08-16T21:43:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo2",
+    "metadata-conditioning",
+    "persona",
+    "pretraining",
+    "from-scratch",
+    "official-pretrain",
+    "meco",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 77049344,
+  "parameters_human": "77.0M",
+  "storage_bytes": 154114585,
+  "storage_human": "154 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

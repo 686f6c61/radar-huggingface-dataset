@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "enterserver/a",
+  "slug": "enterserver-a",
+  "author": "enterserver",
+  "url": "https://huggingface.co/enterserver/a",
+  "created_at": "2026-08-17T19:16:53.000Z",
+  "updated_at": "2026-08-17T19:16:53.000Z",
+  "license": "deepfloyd-if-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:deepfloyd-if-license",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enter AI All | Access leading AI models in one workspace",
+      "url": "https://enter.converge.ai/ai-all",
+      "snippet": "Explore AI models available in Enter and use one workspace to build with leading text, image, video, and coding models."
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    },
+    {
+      "title": "Models - Microsoft AI",
+      "url": "https://microsoft.ai/models/",
+      "snippet": "Helps your engineering team write better code faster, with a lightweight, agentic model built into GitHub Copilot and VS Code."
+    },
+    {
+      "title": "IBM AI models",
+      "url": "https://www.ibm.com/solutions/ai-models",
+      "snippet": "Choosing the right model matters to your AI applications, your brand and your bottom line. IBM gives you the freedom to choose from thousands of models from leading providers and select the one that best fits your use case, whether it&#x27;s IBM® Granite®, third-party options or your own custom models."
+    },
+    {
+      "title": "InterServer MCP Server: Connect AI Agents to Hosting",
+      "url": "https://www.interserver.net/tips/kb/interserver-mcp-server-ai-hosting-automation/",
+      "snippet": "The InterServer MCP server lets compatible AI assistants connect to InterServer hosting tools through the Model Context Protocol. It gives AI clients a structured way to discover supported actions, request authorization, and help with hosting-related workflows without scraping pages or guessing API calls. This article is the InterServer-specific reference for the MCP server: what endpoints are ..."
+    }
+  ]
+}

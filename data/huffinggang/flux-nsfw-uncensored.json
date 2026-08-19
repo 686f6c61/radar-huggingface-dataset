@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "HuffingGang/Flux-NSFW-uncensored",
+  "slug": "huffinggang-flux-nsfw-uncensored",
+  "author": "HuffingGang",
+  "url": "https://huggingface.co/HuffingGang/Flux-NSFW-uncensored",
+  "created_at": "2026-08-15T15:40:56.000Z",
+  "updated_at": "2026-08-15T15:40:56.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "en",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:finetune:black-forest-labs/FLUX.1-dev",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 691976896,
+  "storage_human": "692 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

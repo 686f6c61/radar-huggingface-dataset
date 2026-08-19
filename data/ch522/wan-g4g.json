@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/WAN-G4g",
+  "slug": "ch522-wan-g4g",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/WAN-G4g",
+  "created_at": "2026-08-18T02:21:09.000Z",
+  "updated_at": "2026-08-18T02:21:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v",
+    "base_model:adapter:rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306855447,
+  "storage_human": "307 MB",
+  "base_model": "rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jaytsh/WAN-G4G · Hugging Face",
+      "url": "https://huggingface.co/Jaytsh/WAN-G4G",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CH522/WAN-f4c3 · Hugging Face",
+      "url": "https://huggingface.co/CH522/WAN-f4c3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Chrome Silently Installs a 4 GB AI Model On Your Device ...",
+      "url": "https://www.gadgetreview.com/google-chrome-silently-installs-a-4-gb-ai-model-on-your-device-without-your-consent",
+      "snippet": "Chrome secretly downloaded a 4GB AI model to billions of devices without consent, violating EU privacy laws and creating massive carbon emissions."
+    },
+    {
+      "title": "wan AI Models | Civitai",
+      "url": "https://civitai.com/tag/wan",
+      "snippet": "Browse 864 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with wan."
+    },
+    {
+      "title": "Wan · GitHub",
+      "url": "https://github.com/wan-video",
+      "snippet": "Wan-Dancer Public Python 416 Apache-2.0 46 0 0 Updated on Jul 17 Wan-skills Public AI Agent Skills for Wan — Enable your AI Agent to easily leverage Wan&#x27;s AIGC capabilities."
+    }
+  ]
+}

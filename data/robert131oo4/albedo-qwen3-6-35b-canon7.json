@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "robert131OO4/albedo-qwen3.6-35b-canon7",
+  "slug": "robert131oo4-albedo-qwen3-6-35b-canon7",
+  "author": "robert131OO4",
+  "url": "https://huggingface.co/robert131OO4/albedo-qwen3.6-35b-canon7",
+  "created_at": "2026-08-06T18:59:42.000Z",
+  "updated_at": "2026-08-18T12:27:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 212345573350,
+  "storage_human": "212.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "robert131OO4/albedo-qwen3.6-35b-canon1 · Hugging Face",
+      "url": "https://huggingface.co/robert131OO4/albedo-qwen3.6-35b-canon1",
+      "snippet": "robert131OO4 / albedo-qwen3.6-35b-canon1 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "robert131OO4/albedo-qwen3.6-35b-canon6 · Hugging Face",
+      "url": "https://huggingface.co/robert131OO4/albedo-qwen3.6-35b-canon6",
+      "snippet": "robert131OO4 / albedo-qwen3.6-35b-canon6 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback. This update delivers substantial upgrades, particularly in: Agentic Coding: The model now ..."
+    },
+    {
+      "title": "Best Way to Run Qwen 3.6 35B MoE Locally: VRAM, Speed, Setup",
+      "url": "https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/",
+      "snippet": "Qwen 3.6-35B-A3B has 35B total params but only 3B active per token. Real tok/s on RTX 3090, 4090, 5070 Ti, dual 5060 Ti, and M3 Ultra. Quants and setup."
+    }
+  ]
+}

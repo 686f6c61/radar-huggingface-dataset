@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "luca0621/appgen-qwen3-uedgrpo-ngc-amex-pbrs-v32r11-step10",
+  "slug": "luca0621-appgen-qwen3-uedgrpo-ngc-amex-pbrs-v32r11-step10",
+  "author": "luca0621",
+  "url": "https://huggingface.co/luca0621/appgen-qwen3-uedgrpo-ngc-amex-pbrs-v32r11-step10",
+  "created_at": "2026-07-25T00:10:22.000Z",
+  "updated_at": "2026-08-18T04:49:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "qwen3-vl",
+    "android",
+    "gui-agent",
+    "sft",
+    "appgen",
+    "conversational",
+    "dataset:luca0621/appgen-sft-ngc-v1",
+    "dataset:Yuxiang007/AMEX",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 35080101590,
+  "storage_human": "35.1 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "appgen-qwen3-uedgrpo-ngc-amex-pbrs-v32r11-step10 - Hugging Face",
+      "url": "https://huggingface.co/luca0621/appgen-qwen3-uedgrpo-ngc-amex-pbrs-v32r11-step10",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "luca0621/appgen-qwen3-uedgrpo-hier-ducb-v30-step60 · Hugging Face",
+      "url": "https://huggingface.co/luca0621/appgen-qwen3-uedgrpo-hier-ducb-v30-step60",
+      "snippet": "luca0621 / appgen-qwen3-uedgrpo-hier-ducb-v30-step60 like 0 Safetensors qwen3_vl Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 18 Safetensors Model size 9B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "luca0621/appgen-qwen3-uedgrpo-ngc-amex-pbrs-v32r12-step30 at main",
+      "url": "https://huggingface.co/luca0621/appgen-qwen3-uedgrpo-ngc-amex-pbrs-v32r12-step30/tree/main",
+      "snippet": "Instructions to use luca0621/appgen-qwen3-uedgrpo-ngc-amex-pbrs-v32r12-step30 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "luca0621/appgen-ued-v32r12-training-data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/luca0621/appgen-ued-v32r12-training-data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Appgen Qwen3 Uedgrpo Simple Path Dense S100 Step90 by luca0621",
+      "url": "https://llm-explorer.com/model/luca0621%2Fappgen-qwen3-uedgrpo-simple-path-dense-s100-step90,7g8VbIfqzU0LCEJHWKmvlV",
+      "snippet": "Appgen Qwen3 Uedgrpo Simple Path Dense S100 Step90 is an open-source 8b LLM by luca0621. VRAM 17.5GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/kdyck_dose_100Mpt_hfinit_1B_s2_2026-08-14_06-14-58_844560-pt",
+  "slug": "alexkstern-kdyck_dose_100mpt_hfinit_1b_s2_2026-08-14_06-14-58_844560-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_1B_s2_2026-08-14_06-14-58_844560-pt",
+  "created_at": "2026-08-14T06:32:49.000Z",
+  "updated_at": "2026-08-14T06:33:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_dyck-k128-seq_len_2048-1B",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669363,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MAC Address Lookup - MAC OUI IAB IEEE Vendor Search",
+      "url": "https://aruljohn.com/mac.pl",
+      "snippet": "Enter the MAC address or OUI and find which company made the device. Which company manufactured the network card? MA-L, MA-M, MA-S. MAC Vendor details."
+    },
+    {
+      "title": "MAC Address Vendor Lookup: MAC/OUI/IAB/IEEE Vendor Manufacturer Search",
+      "url": "https://macaddress.io/",
+      "snippet": "By a given MAC address/OUI/IAB, retrieve OUI vendor information, detect virtual machines, manufacturer, locations, read the information encoded in the MAC, and get our research&#x27;s results regarding any MAC address, OUI, IAB, IEEE."
+    },
+    {
+      "title": "MAC Address Lookup Tool - AskApache",
+      "url": "https://www.askapache.com/online-tools/mac-lookup/",
+      "snippet": "In the example address 06-00-00-00-00-00 the most significant byte is 06 (hex), the binary form of which is 00000110, where the second-least-significant bit is 1."
+    },
+    {
+      "title": "Online Alarm Clock - vClock",
+      "url": "https://vclock.com/",
+      "snippet": "Set the hour and minute for the online alarm clock. The alarm message will appear, and the preselected sound will be played at the set time."
+    },
+    {
+      "title": "ngosang/trackerslist",
+      "url": "http://ngosang.github.io/trackerslist/",
+      "snippet": "trackers_best_ip (20 trackers) => link / mirror / mirror 2 trackers_all_ip (58 trackers) => link / mirror / mirror 2 trackers_all_yggdrasil_ip (4 trackers) => link / mirror / mirror 2 Notes A bot automatically checks the trackers and updates the lists. Trackers with the same domain or pointing to the same IP address are removed. Check out the ..."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "LEAP-LAB-KUS/leap-kt-conceptualmodelendendcau-2023-05",
+  "slug": "leap-lab-kus-leap-kt-conceptualmodelendendcau-2023-05",
+  "author": "LEAP-LAB-KUS",
+  "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-conceptualmodelendendcau-2023-05",
+  "created_at": "2026-08-08T22:10:39.000Z",
+  "updated_at": "2026-08-18T16:25:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "leap-kt",
+  "languages": [],
+  "tags": [
+    "leap-kt",
+    "safetensors",
+    "knowledge-tracing",
+    "education",
+    "educational-data-mining",
+    "conceptualmodelendendcau",
+    "dataset:assist2009",
+    "dataset:dbe_kt22",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5517080,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

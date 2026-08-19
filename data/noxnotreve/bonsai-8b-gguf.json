@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "NoxNotreve/Bonsai-8B-gguf",
+  "slug": "noxnotreve-bonsai-8b-gguf",
+  "author": "NoxNotreve",
+  "url": "https://huggingface.co/NoxNotreve/Bonsai-8B-gguf",
+  "created_at": "2026-08-19T01:30:33.000Z",
+  "updated_at": "2026-08-19T01:30:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "1-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "base_model:prism-ml/Bonsai-8B-unpacked",
+    "base_model:quantized:prism-ml/Bonsai-8B-unpacked",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8188548096,
+  "parameters_human": "8.19B",
+  "storage_bytes": 2317518912,
+  "storage_human": "2.3 GB",
+  "base_model": "prism-ml/Bonsai-8B-unpacked",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prism-ml/Bonsai-8B-gguf · Hugging Face",
+      "url": "https://huggingface.co/prism-ml/Bonsai-8B-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prism-ml/Bonsai-8B-gguf at main - Hugging Face",
+      "url": "https://huggingface.co/prism-ml/Bonsai-8B-gguf/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bonsai-8B-gguf Shrinks an 8B Model to Just 1.15 GB - HackerNoon",
+      "url": "https://hackernoon.com/bonsai-8b-gguf-shrinks-an-8b-model-to-just-115-gb",
+      "snippet": "Model overview Bonsai-8B-gguf is an 8-billion parameter language model compressed to extreme efficiency through 1-bit quantization. Built on the Qwen3-8B architecture, it achieves a deployed size of just 1.15 GB—14.2 times smaller than the full-precision FP16 version—while maintaining competitive performance across standard benchmarks."
+    },
+    {
+      "title": "Bonsai 8b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/bonsai-8b.html",
+      "snippet": "Download Bonsai 8b GGUF model. 4.72 GB, 89,095 downloads, 766 likes."
+    },
+    {
+      "title": "Bonsai-8B-gguf: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bonsai-8b-gguf-prism-ml",
+      "snippet": "Overview Bonsai-8B-gguf is an end-to-end 1-bit quantized language model built by prism-ml that runs on llama.cpp across CUDA, Metal, and CPU backends. The model contains 8.19 billion parameters (6.95B non-embedding) and uses a Qwen3-8B dense architecture with grouped-query attention (32 query heads / 8 KV heads), SwiGLU MLP, RoPE positional embeddings, and RMSNorm. It supports a 65,536-token ..."
+    }
+  ]
+}

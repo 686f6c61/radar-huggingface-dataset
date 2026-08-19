@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ManniX-ITA/Qwen3.6-27B-A3B-Coder-MTP-GGUF",
+  "slug": "mannix-ita-qwen3-6-27b-a3b-coder-mtp-gguf",
+  "author": "ManniX-ITA",
+  "url": "https://huggingface.co/ManniX-ITA/Qwen3.6-27B-A3B-Coder-MTP-GGUF",
+  "created_at": "2026-07-15T03:54:13.000Z",
+  "updated_at": "2026-08-03T07:36:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "moe",
+    "code",
+    "expert-pruning",
+    "qwen3.6",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 31,
+  "downloads_30d": 107133,
+  "trending_score": 8,
+  "parameters": 26213016704,
+  "parameters_human": "26.21B",
+  "storage_bytes": 430622758432,
+  "storage_human": "430.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ManniX-ITA/Qwen3.6-27B-A3B-Coder-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ManniX-ITA/Qwen3.6-27B-A3B-Coder-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ManniX-ITA/Qwen3.6-27B-A3B-Coder · Hugging Face",
+      "url": "https://huggingface.co/ManniX-ITA/Qwen3.6-27B-A3B-Coder",
+      "snippet": "A code-specialist expert prune of Qwen3.6-35B-A3B: the MoE is reduced from 256 experts to 184 (72 dropped per layer, ~35B→27B, still A3B active) using a code-targeted competence map (LiveCodeBench + MultiPL-E competence classes). Same router, attention, norms, MTP head and vision tower as the base — only the expert keep-set changes."
+    },
+    {
+      "title": "mannix/qwen3.6-27b-a3b-coder",
+      "url": "https://ollama.com/mannix/qwen3.6-27b-a3b-coder",
+      "snippet": "A code-targeted expert prune of Qwen3.6-35B-A3B: the mixture is reduced from 256 experts to 184 per layer (72 dropped, ~35B→27B, still A3B active), keeping the code-competent experts."
+    },
+    {
+      "title": "mannix/qwen3.6-27b-a3b-coder:Q3_K_XL - ollama.com",
+      "url": "https://ollama.com/mannix/qwen3.6-27b-a3b-coder:Q3_K_XL",
+      "snippet": "No fine-tuning, no distillation — pure expert selection. Full model card & methodology: ManniX-ITA/Qwen3.6-27B-A3B-Coder-MTP-GGUF on Hugging Face. How it works The 256-expert teacher is profiled per-expert on a balanced corpus plus targeted LiveCodeBench and MultiPL-E (Rust/Java/JS) pass-response classes."
+    },
+    {
+      "title": "Qwen3.6-27B-A3B-Coder-MTP-GGUF — ManniX-ITA agent · MeshKore",
+      "url": "https://meshkore.com/agent/mannix-ita-qwen36-27b-a3b-coder-mtp-gguf",
+      "snippet": "A code-specialist expert prune of Qwen3.6-35B-A3B: the MoE is reduced from 256 experts to 184 (72 dropped per layer, ~35B→27B, still A3B active) using a code-targeted competence map (LiveCodeBench + MultiPL-E competence classes). Same router, attention, norms, MTP head and vision tower as the base — only the expert keep-set changes. Indexed · not connectedcode Use this agent → Copy ..."
+    }
+  ]
+}

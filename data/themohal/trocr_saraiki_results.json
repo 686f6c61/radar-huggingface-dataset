@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "themohal/trocr_saraiki_results",
+  "slug": "themohal-trocr_saraiki_results",
+  "author": "themohal",
+  "url": "https://huggingface.co/themohal/trocr_saraiki_results",
+  "created_at": "2026-08-15T14:54:35.000Z",
+  "updated_at": "2026-08-15T14:54:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:microsoft/trocr-small-printed",
+    "base_model:finetune:microsoft/trocr-small-printed",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61596672,
+  "parameters_human": "61.6M",
+  "storage_bytes": 246436025,
+  "storage_human": "246 MB",
+  "base_model": "microsoft/trocr-small-printed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:13:42.192Z",
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ThirdTimesTheCiarc/base_calvin",
+  "slug": "thirdtimestheciarc-base_calvin",
+  "author": "ThirdTimesTheCiarc",
+  "url": "https://huggingface.co/ThirdTimesTheCiarc/base_calvin",
+  "created_at": "2026-01-18T21:19:07.000Z",
+  "updated_at": "2026-08-18T02:46:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 445411855023,
+  "storage_human": "445.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThirdTimesTheCiarc/base_calvin · Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/base_calvin",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ThirdTimesTheCiarc (Meir Yaffe) - Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/models",
+      "snippet": "User profile of Meir Yaffe on Hugging Face"
+    },
+    {
+      "title": "ThirdTimesTheCiarc/base_calvin - llms.info",
+      "url": "https://llms.info/models/thirdtimestheciarc-base-calvin-1260",
+      "snippet": "safetensors, not-for-all-audiences, region:us"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "third.safetensors - CivArchive - CivArchive (CivitAI Archive)",
+      "url": "https://civitaiarchives.com/files/third.safetensors",
+      "snippet": "Download third.safetensors from CivArchive. Find this AI model file preserved in our community-driven archive."
+    }
+  ]
+}

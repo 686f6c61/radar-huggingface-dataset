@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Yoram-Jacobs/Eyes-v1",
+  "slug": "yoram-jacobs-eyes-v1",
+  "author": "Yoram-Jacobs",
+  "url": "https://huggingface.co/Yoram-Jacobs/Eyes-v1",
+  "created_at": "2026-08-17T14:34:19.000Z",
+  "updated_at": "2026-08-17T14:53:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 4414713792,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

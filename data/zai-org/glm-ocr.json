@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "zai-org/GLM-OCR",
+  "slug": "zai-org-glm-ocr",
+  "author": "zai-org",
+  "url": "https://huggingface.co/zai-org/GLM-OCR",
+  "created_at": "2026-01-30T04:24:21.000Z",
+  "updated_at": "2026-05-19T12:28:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "fr",
+    "es",
+    "ru",
+    "de",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_ocr",
+    "image-text-to-text",
+    "conversational",
+    "zh",
+    "en",
+    "fr",
+    "es",
+    "ru",
+    "de",
+    "ja",
+    "ko",
+    "arxiv:2603.10910",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "deploy:azure",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 1991,
+  "downloads_30d": 3099014,
+  "trending_score": 14,
+  "parameters": 1325258240,
+  "parameters_human": "1.33B",
+  "storage_bytes": 2650754336,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zai-org/GLM-OCR: GLM-OCR: Accurate × Fast × Comprehensive",
+      "url": "https://github.com/zai-org/GLM-OCR",
+      "snippet": "Model Introduction GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder-decoder architecture. It introduces Multi-Token Prediction (MTP) loss and stable full-task reinforcement learning to improve training efficiency, recognition accuracy, and generalization."
+    },
+    {
+      "title": "zai-org/GLM-OCR · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-OCR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-OCR - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-ocr",
+      "snippet": "Overview GLM-OCR is a lightweight professional OCR model with parameters as small as 0.9B, yet it achieves state-of-the-art performance across multiple capabilities. It sets a new benchmark for document parsing with its \"small size and high accuracy.\" Key features include: Performance SOTA: Scored 94.62 points to top OmniDocBench V1.5 and achieved current best performance across multiple ..."
+    },
+    {
+      "title": "zai-org/GLM-OCR | DeepWiki",
+      "url": "https://deepwiki.com/zai-org/GLM-OCR",
+      "snippet": "This document provides a high-level introduction to the GLM-OCR system architecture, deployment models, and core components. For installation and setup instructions, see $1. For detailed configuration"
+    },
+    {
+      "title": "zai-org/GLM-OCR | AI Models - aiart.tools",
+      "url": "https://aiart.tools/models/glm-ocr",
+      "snippet": "GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder-decoder architecture. It introduces Multi-Token Prediction (MTP) loss and stable full-task reinforcement learning to improve training efficiency, recognition accuracy, and generalization."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "WaveCut/Qwen3.8-27B-MXFP8-CRACK-NInfer",
+  "slug": "wavecut-qwen3-8-27b-mxfp8-crack-ninfer",
+  "author": "WaveCut",
+  "url": "https://huggingface.co/WaveCut/Qwen3.8-27B-MXFP8-CRACK-NInfer",
+  "created_at": "2026-08-18T21:14:07.000Z",
+  "updated_at": "2026-08-18T21:16:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "groupwise-int",
+    "artifact",
+    "rtx-5090",
+    "image-text-to-text",
+    "base_model:dealignai/Qwen3.8-27B-MXFP8-CRACK",
+    "base_model:quantized:dealignai/Qwen3.8-27B-MXFP8-CRACK",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18210531328,
+  "storage_human": "18.2 GB",
+  "base_model": "dealignai/Qwen3.8-27B-MXFP8-CRACK",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WaveCut/Qwen3.8-27B-MXFP8-CRACK-NInfer · Hugging Face",
+      "url": "https://huggingface.co/WaveCut/Qwen3.8-27B-MXFP8-CRACK-NInfer",
+      "snippet": "The engine binds this file to the registered qwen3.8-27b / groupwise-int profile: architecture, tokenizer and chat template are identical to the official model; only the weights carry the fine-tune."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "GitHub - Neroued/ninfer: High-performance single-GPU inference for ...",
+      "url": "https://github.com/Neroued/ninfer",
+      "snippet": "Qwen3.6-27B and Qwen3.8-27B each expose two registered weight profiles. The version-2 artifact identity selects the profile without a separate runtime flag; Qwen3.8 uses target key qwen3_8_27b while sharing the 27B execution package. The Qwen3.6 nvfp4 profile uses W4A4 Tensor Core MMA for prefill and A16 NVFP4 kernels for decode."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    }
+  ]
+}

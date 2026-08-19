@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "liuff1568/MyAwesomeModel",
+  "slug": "liuff1568-myawesomemodel",
+  "author": "liuff1568",
+  "url": "https://huggingface.co/liuff1568/MyAwesomeModel",
+  "created_at": "2026-08-15T04:34:52.000Z",
+  "updated_at": "2026-08-15T04:44:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liuf12123456/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/liuf12123456/MyAwesomeModel",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "liuff1568 (777789) - Hugging Face",
+      "url": "https://huggingface.co/liuff1568",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "dongbobo/MyAwesomeModel-Release · Hugging Face",
+      "url": "https://huggingface.co/dongbobo/MyAwesomeModel-Release",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "liuffg124/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/liuffg124/MyAwesomeModel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mm-tool/MyAwesomeModel-v1 · Hugging Face",
+      "url": "https://huggingface.co/mm-tool/MyAwesomeModel-v1",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    }
+  ]
+}

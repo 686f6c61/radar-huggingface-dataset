@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "felkf/BigBang-v1-oQ6e-fp16-mtp",
+  "slug": "felkf-bigbang-v1-oq6e-fp16-mtp",
+  "author": "felkf",
+  "url": "https://huggingface.co/felkf/BigBang-v1-oQ6e-fp16-mtp",
+  "created_at": "2026-08-17T14:28:22.000Z",
+  "updated_at": "2026-08-17T14:43:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:endless-frontier/BigBang-v1",
+    "base_model:quantized:endless-frontier/BigBang-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8326167472,
+  "parameters_human": "8.33B",
+  "storage_bytes": 31050394488,
+  "storage_human": "31.1 GB",
+  "base_model": "endless-frontier/BigBang-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

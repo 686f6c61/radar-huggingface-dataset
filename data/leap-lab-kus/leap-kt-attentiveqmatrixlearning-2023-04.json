@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LEAP-LAB-KUS/leap-kt-attentiveqmatrixlearning-2023-04",
+  "slug": "leap-lab-kus-leap-kt-attentiveqmatrixlearning-2023-04",
+  "author": "LEAP-LAB-KUS",
+  "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-attentiveqmatrixlearning-2023-04",
+  "created_at": "2026-08-18T12:57:35.000Z",
+  "updated_at": "2026-08-18T12:57:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "leap-kt",
+  "languages": [],
+  "tags": [
+    "leap-kt",
+    "safetensors",
+    "knowledge-tracing",
+    "education",
+    "educational-data-mining",
+    "attentiveqmatrixlearning",
+    "dataset:assist2009",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31850720,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-attentivesimplerecurrent-2023-11 · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-attentivesimplerecurrent-2023-11",
+      "snippet": "leap-kt · ATTENTIVESIMPLERECURRENT ATTENTIVESIMPLERECURRENT — Part of leap-kt-toolkit, a systematic re-implementation of published Knowledge Tracing models under one protocol. This repository holds every fold of every dataset this model has been run on, with the per-epoch training logs and the exact user split alongside the checkpoints."
+    },
+    {
+      "title": "LEAP Lab @ Tsinghua University | Machine Learning & AI Research",
+      "url": "https://www.leaplab.ai/",
+      "snippet": "The Learning And Perception (LEAP) Lab at Tsinghua University conducts cutting-edge research in machine learning, multi-modal learning, and embodied intelligence. We focus on developing robust, scalable, and generalizable foundation models for the next generation of artificial intelligence."
+    },
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-akt-2020-07 · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-akt-2020-07",
+      "snippet": "LEAP-LAB-KUS / leap-kt-akt-2020-07 like 0 Follow LEAP-LAB-KUS 10 Safetensors 5 datasets leap-kt knowledge-tracing education educational-data-mining akt arxiv:2007.12324 License:mit Model card FilesFiles and versions xet Community Copy to bucket new leap-kt · AKT Protocol Results Why these numbers may differ from other reproductions Files ..."
+    },
+    {
+      "title": "The Lab — Leap Laboratory",
+      "url": "https://leaplaboratory.com/en/the-lab",
+      "snippet": "See the AI agent systems running this website. 13 workflows, local-first inference, automated security, cookieless analytics."
+    },
+    {
+      "title": "LivermorE AI Projector for Computed Tomography (LEAP)",
+      "url": "https://github.com/LLNL/leap",
+      "snippet": "LivermorE AI Projector for Computed Tomography (LEAP) This is a C++/CUDA library (Linux, Windows, and Mac*) of 3D tomographic algorithms (pre-processing algorithms, projectors, and analytic (FBP) and iterative reconstruction algorithms) with a Python interface."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "venkanna37/align-and-segment",
+  "slug": "venkanna37-align-and-segment",
+  "author": "venkanna37",
+  "url": "https://huggingface.co/venkanna37/align-and-segment",
+  "created_at": "2026-08-09T17:15:58.000Z",
+  "updated_at": "2026-08-18T13:21:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "AnS",
+    "align-and-segment",
+    "eccv",
+    "eccv2026",
+    "en",
+    "dataset:kevinlikai/ReBO",
+    "dataset:venkanna37/align-and-segment",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 425048692,
+  "storage_human": "425 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - venkanna37/align-and-segment: Official repository for the ECCV ...",
+      "url": "https://github.com/venkanna37/align-and-segment",
+      "snippet": "This is the official repository for the ECCV 2026 paper \"Align and Segment: Unsupervised Learning for Building Segmentation From Misaligned Labels.\" This paper proposes a method for aligning and segmenting buildings from misaligned labels without using any golden labels. To avoid redistributing ..."
+    },
+    {
+      "title": "GitHub - venkanna37/align-and-segment",
+      "url": "https://github.com/venkanna37/align-and-segment/tree/main",
+      "snippet": "Align and Segment (AnS): Unsupervised Learning for Building Segmentation From Misaligned Labels This is the official repository for the ECCV 2026 paper \"Align and Segment: Unsupervised Learning for Building Segmentation From Misaligned Labels\". This paper proposed a method for aligning and segmenting buildings from misaligned labels without using any golden labels."
+    },
+    {
+      "title": "venkanna37 (Venkanna Babu Guthula) - Hugging Face",
+      "url": "https://huggingface.co/venkanna37",
+      "snippet": "Computer Vision and Remote Sensing Recent Activity published a model2 days ago venkanna37/align-and-segment updated a dataset3 days ago venkanna37/align-and-segment published a dataset9 days ago venkanna37/align-and-segment View all activity"
+    },
+    {
+      "title": "venkanna37 (Venkanna Babu Guthula) - Hugging Face",
+      "url": "https://huggingface.co/venkanna37/datasets",
+      "snippet": "venkanna37&#x27;s datasets1 Sort: Recently updated venkanna37/align-and-segment Viewer •Updated 3 days ago•49.2k• 156"
+    },
+    {
+      "title": "[2607.10841] Align and Segment: Unsupervised Learning for Building ...",
+      "url": "https://arxiv.org/abs/2607.10841",
+      "snippet": "Our align and segment (AnS) approach builds on the spatial transformer module to transform the misaligned labels using an affine transformation to provide a better learning target for a canonical semantic segmentation network."
+    }
+  ]
+}

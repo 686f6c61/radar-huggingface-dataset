@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "savie06/MiRA-Brain-v1",
+  "slug": "savie06-mira-brain-v1",
+  "author": "savie06",
+  "url": "https://huggingface.co/savie06/MiRA-Brain-v1",
+  "created_at": "2026-08-17T13:46:32.000Z",
+  "updated_at": "2026-08-17T13:52:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 418,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442739056,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - MIRA-Intelligence/mira: An open-source, ultra-lightweight AI ...",
+      "url": "https://github.com/MIRA-Intelligence/mira",
+      "snippet": "An open-source, ultra-lightweight AI assistant tailored specifically for Medical AI Research. Powered by an underlying micro-agent framework, Mira is designed to execute complex medical imaging pipelines, from raw DICOM data processing to deep learning tasks, traditional radiomics, and survival analysis."
+    },
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI model rankings. Compare the most uncensored AI models by freedom (UGI), willingness, natural intelligence, and writing ability — an independent leaderboard updated from the UGI Leaderboard."
+    },
+    {
+      "title": "GitHub - miracodeai/mira: Self-hosted AI code reviewer with indexed PR ...",
+      "url": "https://github.com/miracodeai/mira",
+      "snippet": "Self-hosted AI code reviewer with indexed PR reviews, walkthroughs, vulnerability scanning, dependency graphs, custom rules, and a learning loop. - miracodeai/mira"
+    },
+    {
+      "title": "Mira",
+      "url": "https://mira.network/",
+      "snippet": "Mira empowers truly reliable AI — by trustlessly verifying outputs and actions at every step."
+    }
+  ]
+}

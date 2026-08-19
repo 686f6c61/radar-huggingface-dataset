@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Petuu/PetuGPT",
+  "slug": "petuu-petugpt",
+  "author": "Petuu",
+  "url": "https://huggingface.co/Petuu/PetuGPT",
+  "created_at": "2026-08-17T11:46:05.000Z",
+  "updated_at": "2026-08-17T11:46:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Petuuu/PetuGPT: GPT-2 LLM model built from scratch",
+      "url": "https://github.com/Petuuu/PetuGPT",
+      "snippet": "GPT-2 LLM model built from scratch. Contribute to Petuuu/PetuGPT development by creating an account on GitHub."
+    },
+    {
+      "title": "Petuu (Petteri Pullinen) - Hugging Face",
+      "url": "https://huggingface.co/Petuu/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 11 days ago ... published a model 11 days ago"
+    },
+    {
+      "title": "GitHub - JulesLiu390/PetGPT: AI desktop pet with social agent(live in ...",
+      "url": "https://github.com/JulesLiu390/PetGPT",
+      "snippet": "AI Desktop Pet Assistant with Autonomous Social Agent — A lightweight, cross-platform desktop companion powered by large language models, capable of independently participating in group chats."
+    },
+    {
+      "title": "Petuu (Petteri Pullinen) - Hugging Face",
+      "url": "https://huggingface.co/Petuu",
+      "snippet": "User profile of Petteri Pullinen on Hugging Face"
+    },
+    {
+      "title": "PetGPT | Devpost",
+      "url": "https://devpost.com/software/petgpt",
+      "snippet": "How we built it We developed PetGPT using a combination of cutting-edge technologies: Core AI Engine: We utilized transformer-based language models and Google&#x27;s Gemini 8B Large Language Model for conversational abilities. Customization Framework: We developed a system allowing users to modify their AI&#x27;s personality, appearance, and capabilities."
+    }
+  ]
+}

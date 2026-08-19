@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "anstjdghdyd/bert-base-nsmc",
+  "slug": "anstjdghdyd-bert-base-nsmc",
+  "author": "anstjdghdyd",
+  "url": "https://huggingface.co/anstjdghdyd/bert-base-nsmc",
+  "created_at": "2026-08-18T07:30:55.000Z",
+  "updated_at": "2026-08-18T07:31:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ohjunghyun/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/Ohjunghyun/bert-base-nsmc",
+      "snippet": "bert-base-nsmc This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "codingtree/bert-base-nsmc · Hugging Face",
+      "url": "https://huggingface.co/codingtree/bert-base-nsmc",
+      "snippet": "bert-base-nsmc This model is a fine-tuned version of klue/bert-base on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    },
+    {
+      "title": "transformers/src/transformers/models/bert/modeling_bert.py at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/bert/modeling_bert.py",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. - transformers/src/transformers/models/bert/modeling_bert.py at main · huggingface/transformers"
+    },
+    {
+      "title": "PyTorch-Transformers",
+      "url": "https://pytorch.org/hub/huggingface_pytorch-transformers/",
+      "snippet": "PyTorch-Transformers Model Description PyTorch-Transformers (formerly known as pytorch - pretrained - bert) is a library of state-of-the-art pre-trained models for Natural Language Processing (NLP). The library currently contains PyTorch implementations, pre-trained model weights, usage scripts and conversion utilities for the following models:"
+    }
+  ]
+}

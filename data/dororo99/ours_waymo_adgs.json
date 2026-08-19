@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Dororo99/Ours_Waymo_ADGS",
+  "slug": "dororo99-ours_waymo_adgs",
+  "author": "Dororo99",
+  "url": "https://huggingface.co/Dororo99/Ours_Waymo_ADGS",
+  "created_at": "2026-08-14T04:53:56.000Z",
+  "updated_at": "2026-08-14T05:16:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "gaussian-splatting",
+    "autonomous-driving",
+    "waymo-open-dataset",
+    "non-commercial",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16785247691,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dororo99/Ours_S3GS_Waymo - GitHub",
+      "url": "https://github.com/Dororo99/Ours_S3GS_Waymo",
+      "snippet": "Contribute to Dororo99/Ours_S3GS_Waymo development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Dororo99/AD-GS: Modified for Ours settings · GitHub",
+      "url": "https://github.com/Dororo99/AD-GS",
+      "snippet": "Modified for Ours settings. Contribute to Dororo99/AD-GS development by creating an account on GitHub."
+    },
+    {
+      "title": "Demonstrably Safe AI For Autonomous Driving - waymo.com",
+      "url": "https://waymo.com/blog/2025/12/demonstrably-safe-ai-for-autonomous-driving/",
+      "snippet": "Autonomous driving is the ultimate challenge for AI in the physical world. At Waymo, we&#x27;re solving it by prioritizing demonstrably safe AI, where safety is central to how we engineer our models and AI ecosystem from the ground up. This post offers a detailed look at Waymo&#x27;s AI strategy and how it&#x27;s fueling our momentum, allowing us to safely bring our service to more riders, faster than ..."
+    },
+    {
+      "title": "The Waymo World Model: A New Frontier For Autonomous Driving Simulation",
+      "url": "https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation/",
+      "snippet": "Simulation is a critical component of Waymo&#x27;s AI ecosystem and one of the three key pillars of our approach to demonstrably safe AI. The Waymo World Model, which we detail below, is the component that is responsible for generating hyper-realistic simulated environments. The Waymo World Model is built upon Genie 3 —Google DeepMind&#x27;s most advanced general-purpose world model that generates ..."
+    },
+    {
+      "title": "Advancing AI to Build the Most-Trusted Driver",
+      "url": "https://www.nvidia.com/en-us/on-demand/session/gtc25-s72844/",
+      "snippet": "We&#x27;ll present some of Waymo&#x27;s latest AI research, with a focus on expanding the capabilities of Waymo&#x27;s autonomous vehicle stack, and those of the simulator that helps Waymo evaluate their performance and safety."
+    }
+  ]
+}

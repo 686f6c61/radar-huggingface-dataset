@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "genomalabs/kalypso-v1.2l",
+  "slug": "genomalabs-kalypso-v1-2l",
+  "author": "genomalabs",
+  "url": "https://huggingface.co/genomalabs/kalypso-v1.2l",
+  "created_at": "2026-08-16T16:33:28.000Z",
+  "updated_at": "2026-08-17T09:52:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "code",
+    "agentic",
+    "planning",
+    "moe",
+    "kalypso",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 21138250370,
+  "storage_human": "21.1 GB",
+  "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GenomaLabs-com/KALYPSO-v1.1L · Hugging Face",
+      "url": "https://huggingface.co/GenomaLabs-com/KALYPSO-v1.1L",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "genomalabs (nicola montuschi) - Hugging Face",
+      "url": "https://huggingface.co/genomalabs/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 20 days ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "genomalabs/KALYPSO-v1.1L · Hugging Face | Nicola Montuschi",
+      "url": "https://www.linkedin.com/posts/nicola-montuschi-13111987_genomalabskalypso-v11l-hugging-face-activity-7492278109229158401-ZIa9",
+      "snippet": "Six months ago we quietly put a 15B coding model on Hugging Face - very little announcement, no model card, not even a README. It&#x27;s now pulling ~2,000 downloads a month on its own. I&#x27;ve presented ..."
+    },
+    {
+      "title": "GenomaLabs-com/KALYPSO-v1.1L-merged API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/GenomaLabs-com/KALYPSO-v1.1L-merged",
+      "snippet": "Run GenomaLabs-com/KALYPSO-v1.1L-merged with FriendliAI inference. KALYPSO v1.1L is a code-generation model from GENOMA Labs, produced by merging a LoRA…"
+    },
+    {
+      "title": "5. Case Studies — CALYPSO documentation",
+      "url": "https://iccms-calypso.github.io/CALYPSO-Python/posts/_case_studies.html",
+      "snippet": "5.1.2. 2. Running CALYPSO in local laptop or WorkStation using VASP machine-1.json:"
+    }
+  ]
+}

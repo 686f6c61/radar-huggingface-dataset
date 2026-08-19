@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alialam567/q-Taxi_v4",
+  "slug": "alialam567-q-taxi_v4",
+  "author": "alialam567",
+  "url": "https://huggingface.co/alialam567/q-Taxi_v4",
+  "created_at": "2026-08-16T20:48:40.000Z",
+  "updated_at": "2026-08-16T20:52:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279230,
+  "storage_human": "279230 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EverVissionAI/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/EverVissionAI/q-Taxi-v4",
+      "snippet": "Q-Learning Agent playing1 Taxi-v4 This is a trained model of a Q-Learning agent playing Taxi-v4 ."
+    },
+    {
+      "title": "hlm1234/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/hlm1234/q-Taxi-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taxi-v4-OpenAI-Gymnasium/q_learning.py at main - GitHub",
+      "url": "https://github.com/janashams/Taxi-v4-OpenAI-Gymnasium/blob/main/q_learning.py",
+      "snippet": "Taxi-v4 is a classic grid-world environment where a taxi must navigate a 5×5 grid, pick up a passenger from one of four fixed locations (R, G, Y, B), and drop them off at the correct destination. -..."
+    },
+    {
+      "title": "prince-073/taxi-route-optimization-rl-advanced-ml-project",
+      "url": "https://github.com/prince-073/taxi-route-optimization-rl-advanced-ml-project/tree/main",
+      "snippet": "🚕 Taxi Route Optimization using Q-Learning This project implements a Reinforcement Learning (RL) agent using the Q-learning algorithm to solve the Taxi-v4 environment from Gymnasium. The agent learns to pick up and drop off passengers efficiently while minimizing the number of steps and penalties."
+    },
+    {
+      "title": "Free Porn Videos & Sex Tube Movies at xHamster",
+      "url": "https://xhofficial.com/creators/vicky-siya/full-length",
+      "snippet": "We would like to show you a description here but the site won&#x27;t allow us."
+    }
+  ]
+}

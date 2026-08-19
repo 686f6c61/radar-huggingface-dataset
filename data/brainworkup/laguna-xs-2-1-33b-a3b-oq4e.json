@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "brainworkup/Laguna-XS-2.1-33B-A3B-oQ4e",
+  "slug": "brainworkup-laguna-xs-2-1-33b-a3b-oq4e",
+  "author": "brainworkup",
+  "url": "https://huggingface.co/brainworkup/Laguna-XS-2.1-33B-A3B-oQ4e",
+  "created_at": "2026-08-14T19:40:10.000Z",
+  "updated_at": "2026-08-14T19:40:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "laguna",
+    "oq",
+    "quantized",
+    "custom_code",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": 5407036160,
+  "parameters_human": "5.41B",
+  "storage_bytes": 19502024347,
+  "storage_human": "19.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

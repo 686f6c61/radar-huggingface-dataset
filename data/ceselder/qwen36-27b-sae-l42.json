@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ceselder/qwen36-27b-sae-l42",
+  "slug": "ceselder-qwen36-27b-sae-l42",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/qwen36-27b-sae-l42",
+  "created_at": "2026-08-18T23:42:16.000Z",
+  "updated_at": "2026-08-18T23:43:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sparse-autoencoder",
+    "interpretability",
+    "batch-top-k",
+    "qwen3.6",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7032260202,
+  "storage_human": "7.0 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ceselder/skip-lens-qwen36-27b-repeatafterme · Hugging Face",
+      "url": "https://huggingface.co/ceselder/skip-lens-qwen36-27b-repeatafterme",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ceselder/probemaxxer-qwen36-27b-1M-rl · Hugging Face",
+      "url": "https://huggingface.co/ceselder/probemaxxer-qwen36-27b-1M-rl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "Qwen3.6-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.6-27b",
+      "snippet": "The Qwen3.6 27B native vision-language dense model builds upon the 3.5-27B version, with key improvements in agentic coding capabilities and enhanced STEM reasoning and inference skills. In the vision modality, it demonstrates significant advances in spatial intelligence, object localization, and detection, while video understanding, document OCR, and visual agent capabilities continue to ..."
+    },
+    {
+      "title": "Qwen/Qwen3.6-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-27B",
+      "snippet": "Qwen3.6 dense multimodal model (27B) with gated delta networks hybrid attention, MTP, and 262K context"
+    }
+  ]
+}

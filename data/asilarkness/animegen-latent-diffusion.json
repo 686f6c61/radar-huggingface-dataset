@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Asilarkness/animegen-latent-diffusion",
+  "slug": "asilarkness-animegen-latent-diffusion",
+  "author": "Asilarkness",
+  "url": "https://huggingface.co/Asilarkness/animegen-latent-diffusion",
+  "created_at": "2026-08-15T03:49:41.000Z",
+  "updated_at": "2026-08-15T15:23:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "latent-diffusion",
+    "anime",
+    "diffusion",
+    "text-to-image",
+    "pytorch",
+    "ddim",
+    "classifier-free-guidance",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30651788,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

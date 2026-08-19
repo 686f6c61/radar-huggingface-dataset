@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mumuxixi/bucket-yolo-obb",
+  "slug": "mumuxixi-bucket-yolo-obb",
+  "author": "mumuxixi",
+  "url": "https://huggingface.co/mumuxixi/bucket-yolo-obb",
+  "created_at": "2026-08-19T03:10:49.000Z",
+  "updated_at": "2026-08-19T03:14:01.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21583480,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oriented Bounding Boxes Object Detection | Ultralytics",
+      "url": "https://docs.ultralytics.com/tasks/obb",
+      "snippet": "Discover how to detect objects with rotation for higher precision using YOLO26 OBB models. Learn, train, validate, and export OBB models effortlessly."
+    },
+    {
+      "title": "GitHub - ultralytics/ultralytics: Ultralytics YOLO26, YOLO11, YOLOv8 ...",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "snippet": "Ultralytics creates cutting-edge, state-of-the-art (SOTA) YOLO models built on years of foundational research in computer vision and AI. Constantly updated for performance and flexibility, our models are fast, accurate, and easy to use."
+    },
+    {
+      "title": "Ultralytics/YOLO11 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLO11",
+      "snippet": "CPU speeds measured with ONNX export. GPU speeds measured with TensorRT export. Reproduce by yolo val obb data=DOTAv1.yaml batch=1 device=0|cpu 🧩 Integrations Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management."
+    },
+    {
+      "title": "GitHub - meiqisheng/YOLOv8-obb: YOLOv8-obb",
+      "url": "https://github.com/meiqisheng/YOLOv8-obb",
+      "snippet": "Ultralytics YOLOv8 is a cutting-edge, state-of-the-art (SOTA) model that builds upon the success of previous YOLO versions and introduces new features and improvements to further boost performance and flexibility."
+    },
+    {
+      "title": "OBB Dataset Formats for YOLO | Ultralytics",
+      "url": "https://docs.ultralytics.com/datasets/obb",
+      "snippet": "Discover OBB dataset formats for Ultralytics YOLO models. Learn about their structure, application, and format conversions to enhance your object detection training."
+    }
+  ]
+}

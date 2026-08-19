@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-fp32-onnx",
+  "slug": "ketiswp-google-coral-edgetpu-deeplab-slim-0-75-cityscapes-fp32-onnx",
+  "author": "ketiswp",
+  "url": "https://huggingface.co/ketiswp/google-coral-EdgeTPU-DeepLab-Slim-0.75-Cityscapes-fp32-onnx",
+  "created_at": "2026-08-19T01:57:03.000Z",
+  "updated_at": "2026-08-19T02:22:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "fp32",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8275489,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coral | Google for Developers",
+      "url": "https://developers.google.com/coral",
+      "snippet": "A full stack platform for Edge AI By combining an AI-first, standards-based hardware architecture with a unified developer experience, Coral enables efficient and local AI experiences at the edge."
+    },
+    {
+      "title": "GitHub - xadrianzetx/coral-deeplab: Coral Edge TPU compilable version ...",
+      "url": "https://github.com/xadrianzetx/coral-deeplab",
+      "snippet": "Coral Edge TPU compilable version of DeepLab v3 and DeepLab v3 Plus implemented in tf.keras with Edge TPU pre-compiled models included. Implementation follows original paper as close as possible, while still being compatible with Edge TPU."
+    },
+    {
+      "title": "google-coral · GitHub",
+      "url": "https://github.com/google-coral",
+      "snippet": "Open source projects for coral.ai. google-coral has 40 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models - All | Coral",
+      "url": "http://www.coral.withgoogle.com/models/all/",
+      "snippet": "This page lists all our trained models that are compiled for the Coral Edge TPU™. For more information about each model type, including code examples and training scripts, refer to the model-specific pages that are linked on the Models page. To train a custom model, using transfer learning or by building and training your own model, see our documentation about TensorFlow models on the Edge TPU."
+    },
+    {
+      "title": "Build Coral for your platform",
+      "url": "https://www.coral.withgoogle.com/docs/notes/build-coral/",
+      "snippet": "The setup guide for each Coral device shows you how to install the required software and run an inference on the Edge TPU. However, our pre-built software components are not compatible with all platform variants. If your host platform is not listed as one of our supported platforms (see the \"requirements\" in the product datasheet), you&#x27;ll need to build the required components yourself (either ..."
+    }
+  ]
+}

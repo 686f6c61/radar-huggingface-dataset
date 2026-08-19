@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "krishnaraj05/Swin-Plant_Disease_Detection",
+  "slug": "krishnaraj05-swin-plant_disease_detection",
+  "author": "krishnaraj05",
+  "url": "https://huggingface.co/krishnaraj05/Swin-Plant_Disease_Detection",
+  "created_at": "2026-08-18T03:29:27.000Z",
+  "updated_at": "2026-08-18T03:31:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 331050995,
+  "storage_human": "331 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plant Disease Detection Algorithm Based on Efficient Swin Transformer",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221825001560",
+      "snippet": "Traditional plant disease detection methods rely primarily on manual observation, which is time-consuming, labor-intensive, and demands specialized expertise. Additionally, manual detection is prone to subjective human error, often leading to misdiagnosis [3, 4]. Consequently, the development of automated, accurate, and efficient plant disease detection technologies capable of real-time crop ..."
+    },
+    {
+      "title": "Plant Disease Detection Algorithm Based on Efficient Swin Transformer",
+      "url": "https://www.techscience.com/cmc/v82n2/59475",
+      "snippet": "This model is an improvement over the Swin-T architecture, incorporating two pivotal modules: the Selective Token Generator and the Feature Fusion Aggregator. The Selective Token Generator minimizes the number of tokens processed, significantly increasing computational efficiency and facilitating multi-scale feature extraction."
+    },
+    {
+      "title": "Plant Disease Detection Algorithm Based on Efficient Swin Transformer",
+      "url": "https://www.researchgate.net/publication/387679168_Plant_Disease_Detection_Algorithm_Based_on_Efficient_Swin_Transformer",
+      "snippet": "PDF | On Jan 1, 2024, Wei Liu and others published Plant Disease Detection Algorithm Based on Efficient Swin Transformer | Find, read and cite all the research you need on ResearchGate"
+    },
+    {
+      "title": "PDF PlantDiseaseDetectionAlgorithmBasedonEfficientSwinTransformer",
+      "url": "https://cdn.techscience.cn/files/cmc/2025/online/CMC0102/TSP_CMC_58640/TSP_CMC_58640.pdf",
+      "snippet": "ABSTRACT Plant diseases present a significant threat to global agricultural productivity, endangering both crop yields and quality. Traditional detection methods largely rely on manual inspection, a process that is not only labor-intensive and time-consuming but also subject to subjective biases and dependent on operators&#x27; expertise. Recent advancements in Transformer-based architectures ..."
+    },
+    {
+      "title": "GitHub - priyanka2003p/plant-disease-detection: Plant Disease Detection ...",
+      "url": "https://github.com/priyanka2003p/plant-disease-detection",
+      "snippet": "This project leverages Swin Transformers, an advanced Vision Transformer (ViT) model, for plant leaf disease detection. By analyzing leaf images, the model can classify diseases and help in early-stage detection for improved crop management."
+    }
+  ]
+}

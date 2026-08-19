@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lh527/qfhj",
+  "slug": "lh527-qfhj",
+  "author": "lh527",
+  "url": "https://huggingface.co/lh527/qfhj",
+  "created_at": "2026-08-18T14:38:04.000Z",
+  "updated_at": "2026-08-18T14:45:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Model List - One Click Hangar",
+      "url": "https://oneclickhangar.com/forum/index.php?topic=535.0",
+      "snippet": "AI Model List Thought id start a comprehensive list of available GA, Helicopters and bizjets for reference Aero L39 Albatross KRAI Aeronca A11 Mike Cronin Airbus A318 FAIB A319 FAIB A319NEO FAIB A320 FAIB A320NEO FAIB A321 FAIB A321NEO FAIB A330 TFS A340 TFS Antonov AN2 Rysiek Winawer Agusta Westland AW139 JYAI Aviat Pitts Special S-2 DWAI Avro Lancaster JYAI BAE HS125-700 HTAI HS125-800 HTAI ..."
+    },
+    {
+      "title": "LH527 · GitHub",
+      "url": "https://github.com/LH527",
+      "snippet": "GitHub is where LH527 builds software. Joined Nov 25, 2024 Block or report LH527 Block user"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

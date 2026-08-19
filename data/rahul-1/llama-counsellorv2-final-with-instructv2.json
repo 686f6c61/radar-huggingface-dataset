@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rahul-1/llama-counsellorv2-final-with-instructv2",
+  "slug": "rahul-1-llama-counsellorv2-final-with-instructv2",
+  "author": "rahul-1",
+  "url": "https://huggingface.co/rahul-1/llama-counsellorv2-final-with-instructv2",
+  "created_at": "2026-08-18T06:33:56.000Z",
+  "updated_at": "2026-08-18T06:37:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766248,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rahul-1/llama-counsellor · Hugging Face",
+      "url": "https://huggingface.co/rahul-1/llama-counsellor",
+      "snippet": "rahul-1 / llama-counsellor like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "llama-counsellor API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/rahul-1/llama-counsellor",
+      "snippet": "Deploy llama-counsellor with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - meta-llama/llama-models: Utilities intended for use with Llama ...",
+      "url": "https://github.com/meta-llama/llama-models",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Our ..."
+    },
+    {
+      "title": "rahul-sarvam · GitHub",
+      "url": "https://github.com/rahul-sarvam",
+      "snippet": "mergekit Public Forked from arcee-ai/mergekit Tools for merging pretrained large language models. Python"
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

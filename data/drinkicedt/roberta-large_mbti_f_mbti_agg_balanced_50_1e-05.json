@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "DrinkIcedT/roberta-large_MBTI_F_MBTI_agg_balanced_50_1e-05",
+  "slug": "drinkicedt-roberta-large_mbti_f_mbti_agg_balanced_50_1e-05",
+  "author": "DrinkIcedT",
+  "url": "https://huggingface.co/DrinkIcedT/roberta-large_MBTI_F_MBTI_agg_balanced_50_1e-05",
+  "created_at": "2026-08-17T15:20:08.000Z",
+  "updated_at": "2026-08-17T15:20:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 355361794,
+  "parameters_human": "355.4M",
+  "storage_bytes": 1421500625,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

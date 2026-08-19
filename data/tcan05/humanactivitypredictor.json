@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "tcan05/HumanActivityPredictor",
+  "slug": "tcan05-humanactivitypredictor",
+  "author": "tcan05",
+  "url": "https://huggingface.co/tcan05/HumanActivityPredictor",
+  "created_at": "2026-08-17T17:02:05.000Z",
+  "updated_at": "2026-08-17T17:03:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30158083,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Human Activity Prediction Using Generative Adversarial Networks",
+      "url": "https://ieeexplore.ieee.org/document/10726013",
+      "snippet": "This paper introduces an innovative approach to enhance human activity prediction by integrating Temporal Convolutional Networks (TCN) with an Encoder-Decoder model within the Generative Adversarial Network (GAN) framework. Our proposed model harnesses the power of spatio-temporal 3D convolutions to capture intricate patterns and temporal dependencies present in video data, thereby improving ..."
+    },
+    {
+      "title": "navs5 · GitHub",
+      "url": "https://github.com/navs5/",
+      "snippet": "Deep learning model that creates bounding boxes around hands in real time. Implements SSDMobileNetv2, YOLOv3, and FasterRCNN w/ ResNet50 Jupyter Notebook 1 ROS_Projects ROS_Projects Public PostScript HumanActivityPredictor HumanActivityPredictor Public HumanActivityClassification HumanActivityClassification Public"
+    },
+    {
+      "title": "TCN-attention-HAR: human activity recognition based on ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-024-57912-3",
+      "snippet": "Wearable sensors are widely used in medical applications and human-computer interaction because of their portability and powerful privacy. Human activity identification based on sensor data ..."
+    },
+    {
+      "title": "Interpretable Human Activity Recognition With Temporal Convolutional ...",
+      "url": "https://ieeexplore.ieee.org/document/10579767",
+      "snippet": "This research advances the field of human activity recognition (HAR) by developing a robust and interpretable deep learning model using wearable sensor data. We address seven discrete activities through a multimodal fusion architecture that synergistically combines temporal convolutional networks (TCNs), convolutional neural networks (CNNs), and long short-term memory (LSTM). Each network type ..."
+    },
+    {
+      "title": "An Architecture for Human Activity Recognition Using TCN-Bi-LSTM HAR ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1877050925010051",
+      "snippet": "Human activity recognition (HAR) based on sensor data plays a vital role in various fields. Therefore, it is important to improve the recognition performance of different types of actions. In this work, we propose a Temporal Convolutional Network (TCN) combined with a Bidirectional Long Short-Term Memory (Bi-LSTM) architecture to address the issues of insufficient time-varying feature ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "HongKi08/DeepSeek-V4-Flash-0731-DSpark-Drafter-GGUF",
+  "slug": "hongki08-deepseek-v4-flash-0731-dspark-drafter-gguf",
+  "author": "HongKi08",
+  "url": "https://huggingface.co/HongKi08/DeepSeek-V4-Flash-0731-DSpark-Drafter-GGUF",
+  "created_at": "2026-08-18T11:19:00.000Z",
+  "updated_at": "2026-08-18T11:19:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "deepseek_v4",
+    "speculative-decoding",
+    "dspark",
+    "llama.cpp",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/DeepSeek-V4-Flash-0731-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "darnoq99/deepseek-v4-flash-0731-strix-halo | DeepWiki",
+      "url": "https://deepwiki.com/darnoq99/deepseek-v4-flash-0731-strix-halo",
+      "snippet": "This project provides a verified deployment configuration for the DeepSeek-V4-Flash-0731 (final release) using the official three-stage DSpark speculative drafter on the AMD Ryzen AI Max+ 395 (Strix Halo) hardware platform."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731 API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/deepseek-ai/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. It has the same model structure as DeepSeek-V4-Flash-DSpark, i.e. it comes with a speculative decoding module attached."
+    }
+  ]
+}

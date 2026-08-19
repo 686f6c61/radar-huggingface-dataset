@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tujusticia/nissi-lawg4-merged-fp16-Q4_K_M-GGUF",
+  "slug": "tujusticia-nissi-lawg4-merged-fp16-q4_k_m-gguf",
+  "author": "tujusticia",
+  "url": "https://huggingface.co/tujusticia/nissi-lawg4-merged-fp16-Q4_K_M-GGUF",
+  "created_at": "2026-08-17T00:34:23.000Z",
+  "updated_at": "2026-08-17T00:34:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:tujusticia/nissi-lawg4-merged-fp16",
+    "base_model:quantized:tujusticia/nissi-lawg4-merged-fp16",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 90,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 3427880192,
+  "storage_human": "3.4 GB",
+  "base_model": "tujusticia/nissi-lawg4-merged-fp16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mia-AiLab/Gemmable-4-12B-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Mia-AiLab/Gemmable-4-12B-MTP-GGUF",
+      "snippet": "GGUF / local inference notes gemmable-4-12b-fp16.gguf is the standard fp16 main model. gemmable-4-12b-fp16-mtp.gguf is the matching fp16 assistant / draft file. Quantized pairs follow the same pattern, for example gemmable-4-12b-Q4_K_M.gguf and gemmable-4-12b-Q4_K_M-mtp.gguf. Keep the paired files in the same Hugging Face repository if you upload them."
+    },
+    {
+      "title": "Abiray/ideogram-4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abiray/ideogram-4-GGUF",
+      "snippet": "Ideogram 4 GGUF (Low-Resource Optimized) This repository contains GGUF quantized weights for Ideogram 4 (9.3B parameter DiT), compiled to bring state-of-the-art open-weight design and image generation to highly constrained hardware environments."
+    },
+    {
+      "title": "Quantization Explained: Q4_K_M vs AWQ vs FP16 for Local LLMs",
+      "url": "https://www.sitepoint.com/quantization-q4km-vs-awq-fp16-local-llms/",
+      "snippet": "Performance and Quality Profile A 7B-parameter AWQ model occupies approximately 4.2 GB on disk (varies by model architecture), comparable to Q4_K_M GGUF."
+    },
+    {
+      "title": "flux1-fill-dev-fp16-Q4_0-GGUF - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/909699503794216742",
+      "snippet": "Download flux1-fill-dev-fp16-Q4_0-GGUF - free CHECKPOINT FLUX.1 AI model on TENSORHUB ART. By user_885604489229258138"
+    },
+    {
+      "title": "LLM Quantization Explained: Q4, Q8, FP16 and VRAM Tradeoffs (2026)",
+      "url": "https://llmhardware.io/guides/llm-quantization-guide",
+      "snippet": "LLM quantization explained: Q4_K_M halves VRAM with only 3-5% quality loss. Learn F16, Q8, Q4 differences, VRAM formulas, and which quantization to use for your GPU."
+    }
+  ]
+}

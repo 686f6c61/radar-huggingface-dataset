@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_50Mpt_hfbody_200M_s0_2026-08-14_17-55-13_831835-pt",
+  "slug": "alexkstern-nca_dose_50mpt_hfbody_200m_s0_2026-08-14_17-55-13_831835-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_200M_s0_2026-08-14_17-55-13_831835-pt",
+  "created_at": "2026-08-14T17:59:29.000Z",
+  "updated_at": "2026-08-14T18:00:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share200-2048",
+    "seed_0",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkstern (astar) - Hugging Face",
+      "url": "https://huggingface.co/alexkstern/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 14 hours ago ... published a model about 14 hours ago"
+    },
+    {
+      "title": "Noncompartmental Analysis • ubiquity",
+      "url": "https://r.ubiquity.tools/articles/NCA.html",
+      "snippet": "Introduction Non-compartmental analysis (NCA) is a simple and quick method for evaluating the exposure of a drug. It allows you to evaluate things like linearity and in vivo exposure. To illustrate this consider an antibody given in a subcutaneous injection. The actual profile a patient might experience is given in the solid black line. But we don&#x27;t yet have the ability to sample in a ..."
+    },
+    {
+      "title": "Text output of NCA for one subject — txtNCA • pkr",
+      "url": "https://asancpt.github.io/pkr/reference/txtNCA.html",
+      "snippet": "back extrapolated concentration at time 0, for bolus intravascular administration only"
+    },
+    {
+      "title": "alexkstern (Alex Stern) - Hugging Face",
+      "url": "https://huggingface.co/alexkstern",
+      "snippet": "User profile of Alex Stern on Hugging Face"
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

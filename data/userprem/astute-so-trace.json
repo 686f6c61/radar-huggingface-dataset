@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Userprem/astute-so-trace",
+  "slug": "userprem-astute-so-trace",
+  "author": "Userprem",
+  "url": "https://huggingface.co/Userprem/astute-so-trace",
+  "created_at": "2026-08-17T11:46:38.000Z",
+  "updated_at": "2026-08-18T12:53:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gpt_oss",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "mxfp4",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enhanced TRaCE Model Implementation Guide - by Mark Rollins",
+      "url": "https://markrollins1.substack.com/p/enhanced-trace-model-implementation",
+      "snippet": "As AI capabilities evolved and user expectations grew, the model required expansion to incorporate ethical awareness, feedback loops, personalisation, and evidence-based reasoning. The enhancements below aim to make the TRaCE model more responsive, educationally grounded, and suited to complex learning and communication needs."
+    },
+    {
+      "title": "GitHub - microsoft/Trace: End-to-end Generative Optimization for AI ...",
+      "url": "https://github.com/microsoft/trace",
+      "snippet": "Trace is a new AutoDiff-like tool for training AI systems end-to-end with general feedback (like numerical rewards or losses, natural language text, compiler errors, etc.). Trace generalizes the back-propagation algorithm by capturing and propagating an AI system&#x27;s execution trace. Trace is implemented as a PyTorch-like Python library."
+    },
+    {
+      "title": "trace.so - AI orchestration layer for modern teams",
+      "url": "https://www.trace.so/",
+      "snippet": "AI orchestration layer for modern teams An operational layer that understands how your company works — aligning AI agents and human judgment across departments to unlock leverage at scale."
+    },
+    {
+      "title": "TRACE: Task-Adaptive Reasoning and Representation Learning for ...",
+      "url": "https://arxiv.org/pdf/2603.02929",
+      "snippet": "Rather than treating reasoning and encoding as separate steps handled by different models, TRACE generates a latent reasoning trajectory that is directly compressed into the retrieval embedding. This design allows the model to adaptively balance inference efficiency with the depth of reasoning required for complex queries."
+    },
+    {
+      "title": "Enhanced TRaCE Model Implementation Guide - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/enhanced-trace-model-implementation-guide-mark-bmhme/",
+      "snippet": "The TRaCE Model was originally developed as a structured framework to enhance prompt engineering, ensuring users receive more accurate and high-quality AI responses. The model is built on four ..."
+    }
+  ]
+}

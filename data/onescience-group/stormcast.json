@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/StormCast",
+  "slug": "onescience-group-stormcast",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/StormCast",
+  "created_at": "2026-08-18T09:55:34.000Z",
+  "updated_at": "2026-08-18T09:55:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "stormcast",
+    "OneScience",
+    "Earth Science",
+    "Weather Forecast",
+    "Regional Forecast",
+    "Diffusion Model",
+    "ERA5",
+    "HRRR",
+    "en",
+    "zh",
+    "dataset:OneScience/ERA5",
+    "arxiv:2408.10958",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "公开模型库 - onescience.ai:8008",
+      "url": "http://onescience.ai:8008/models",
+      "snippet": "OneScience is an AI for Science workspace for research discovery, agent workflows, and scientific knowledge."
+    },
+    {
+      "title": "ai4science-studio/earth_science/models/StormCast at main - GitHub",
+      "url": "https://github.com/AMDResearch/ai4science-studio/tree/main/earth_science/models/StormCast",
+      "snippet": "StormCast is a high-resolution convection-allowing weather prediction model developed by NVIDIA. It emulates thunderstorm-scale atmospheric evolution at 3 km horizontal resolution over the central continental United States (1536 km × 1920 km), stepping forward in 1-hour increments."
+    },
+    {
+      "title": "ai4science-studio/earth_science/models/StormCast/README.md at main ...",
+      "url": "https://github.com/AMDResearch/ai4science-studio/blob/main/earth_science/models/StormCast/README.md",
+      "snippet": "What it does StormCast is a high-resolution convection-allowing weather prediction model developed by NVIDIA. It emulates thunderstorm-scale atmospheric evolution at 3 km horizontal resolution over the central continental United States (1536 km × 1920 km), stepping forward in 1-hour increments."
+    },
+    {
+      "title": "StormCast: Kilometer-Scale Convection Allowing Model Emulation Using ...",
+      "url": "https://research.nvidia.com/labs/climate/publication/pathak-2024-kilometer/",
+      "snippet": "StormCast: Kilometer-Scale Convection Allowing Model Emulation Using Generative Diffusion Modeling Jaideep Pathak, Yair Cohen, Piyush Garg, Peter Harrington, Noah Brenowitz, Dale Durran, Morteza Mardani, Arash Vahdat, Shaoming Xu, Karthik Kashinath, others"
+    }
+  ]
+}

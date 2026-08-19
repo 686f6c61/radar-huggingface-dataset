@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "latolukasz/sam2.1-hq-hiera-large-onnx",
+  "slug": "latolukasz-sam2-1-hq-hiera-large-onnx",
+  "author": "latolukasz",
+  "url": "https://huggingface.co/latolukasz/sam2.1-hq-hiera-large-onnx",
+  "created_at": "2026-08-14T12:06:55.000Z",
+  "updated_at": "2026-08-14T12:06:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "sam2.1",
+    "hq-sam",
+    "segmentation",
+    "onnxruntime",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17238498,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

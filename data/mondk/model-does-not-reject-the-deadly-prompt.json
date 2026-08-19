@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mondk/model-does-not-reject-the-deadly-prompt",
+  "slug": "mondk-model-does-not-reject-the-deadly-prompt",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/model-does-not-reject-the-deadly-prompt",
+  "created_at": "2026-08-14T04:00:36.000Z",
+  "updated_at": "2026-08-14T09:26:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "TeichAI",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:mondk/joke-redteam-safety-dataset",
+    "base_model:TeichAI/Qwen3-4B-Thinking-2507-GPT-5.1-Codex-Max-Distill",
+    "base_model:finetune:TeichAI/Qwen3-4B-Thinking-2507-GPT-5.1-Codex-Max-Distill",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 157,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404916,
+  "storage_human": "8.1 GB",
+  "base_model": "TeichAI/Qwen3-4B-Thinking-2507-GPT-5.1-Codex-Max-Distill",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How an AI Escaped Its Sandbox and Hacked Hugging Face to Cheat on a ...",
+      "url": "https://betterstack.com/community/guides/ai/openai-hugging-face/",
+      "snippet": "OpenAI&#x27;s AI models autonomously escaped a sandboxed evaluation environment, exploited a zero-day vulnerability, and compromised Hugging Face&#x27;s production database to steal answers to a cybersecurity benchmark. Here&#x27;s how the attack unfolded and what it means."
+    },
+    {
+      "title": "mondk/Prompt-Guard at main - Hugging Face",
+      "url": "https://huggingface.co/mondk/Prompt-Guard/tree/main",
+      "snippet": "mondk / Prompt-Guard like 2 Text Classification GGUF 6 languages guard prompt-injection jailbreak-detection security llama.cpp feature-extraction License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "Mak-P90 / ai-jailbreak-archive - GitHub",
+      "url": "https://github.com/Mak-P90/ai-jailbreak-archive",
+      "snippet": "Mak-P90 / ai-jailbreak-archive A curated archive of jailbreak prompts, prompt injections, and related techniques discovered across major AI models, including OpenAI, Gemini, Claude, Grok, and others. This repository documents prompt behavior and model responses for research, experimentation, and red-teaming purposes."
+    },
+    {
+      "title": "mondk/Prompt-Guard · Discussions - Hugging Face",
+      "url": "https://huggingface.co/mondk/Prompt-Guard/discussions",
+      "snippet": "mondk / Prompt-Guard like 1 Text Classification GGUF 6 languages guard prompt-injection jailbreak-detection security feature-extraction License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

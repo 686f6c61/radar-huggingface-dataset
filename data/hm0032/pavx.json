@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "hm0032/pavx",
+  "slug": "hm0032-pavx",
+  "author": "hm0032",
+  "url": "https://huggingface.co/hm0032/pavx",
+  "created_at": "2026-06-05T05:08:40.000Z",
+  "updated_at": "2026-08-17T14:49:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7645807092996,
+  "storage_human": "7645.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

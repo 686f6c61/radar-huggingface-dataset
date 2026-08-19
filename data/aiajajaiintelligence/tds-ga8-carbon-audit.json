@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aiajajaiintelligence/tds-ga8-carbon-audit",
+  "slug": "aiajajaiintelligence-tds-ga8-carbon-audit",
+  "author": "aiajajaiintelligence",
+  "url": "https://huggingface.co/aiajajaiintelligence/tds-ga8-carbon-audit",
+  "created_at": "2026-08-18T19:55:37.000Z",
+  "updated_at": "2026-08-18T19:55:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anshusaurav/tds-ga8-carbon-model · Hugging Face",
+      "url": "https://huggingface.co/anshusaurav/tds-ga8-carbon-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jesmelchi/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Jesmelchi/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "GitHub - JGallo0/ai-carbon-audit",
+      "url": "https://github.com/JGallo0/ai-carbon-audit",
+      "snippet": "Contribute to JGallo0/ai-carbon-audit development by creating an account on GitHub."
+    },
+    {
+      "title": "Sustainable AI: Measuring and Reducing Carbon Footprint in Model ...",
+      "url": "https://www.researchgate.net/publication/392727729_Sustainable_AI_Measuring_and_Reducing_Carbon_Footprint_in_Model_Training_and_Deployment",
+      "snippet": "A thorough examination of the relationship between sustainable materials, AI technology adoption, and patient-centered healthcare sustainable materials is crucial for reducing the carbon footprint ..."
+    },
+    {
+      "title": "Quantifying the Climate Risk of Generative AI: Region-Aware Carbon ...",
+      "url": "https://arxiv.org/html/2511.04776v1",
+      "snippet": "Building on these findings, we propose the AI Sustainability Pyramid, a seven-level governance model linking carbon accounting metrics (L1-L7) with operational readiness, optimization, and stewardship. This framework translates quantitative emission metrics into actionable policy guidance for sustainable AI deployment."
+    }
+  ]
+}

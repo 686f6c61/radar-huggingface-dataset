@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ethanpaker/al_239_5cz2xw4bjm",
+  "slug": "ethanpaker-al_239_5cz2xw4bjm",
+  "author": "ethanpaker",
+  "url": "https://huggingface.co/ethanpaker/al_239_5cz2xw4bjm",
+  "created_at": "2026-08-14T12:59:54.000Z",
+  "updated_at": "2026-08-14T13:04:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 71916586198,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

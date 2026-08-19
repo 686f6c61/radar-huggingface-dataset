@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pr3vail/Kimodo-SOMA-RP-v1.1",
+  "slug": "pr3vail-kimodo-soma-rp-v1-1",
+  "author": "pr3vail",
+  "url": "https://huggingface.co/pr3vail/Kimodo-SOMA-RP-v1.1",
+  "created_at": "2026-08-18T23:17:13.000Z",
+  "updated_at": "2026-08-18T23:17:13.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kimodo",
+  "languages": [],
+  "tags": [
+    "kimodo",
+    "safetensors",
+    "nvidia",
+    "rigplay",
+    "SOMA",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 283281777,
+  "parameters_human": "283.3M",
+  "storage_bytes": 1133191772,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Kimodo-SOMA-RP-v1 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nv-tlabs/kimodo: Official implementation of Kimodo, a ...",
+      "url": "https://github.com/nv-tlabs/kimodo",
+      "snippet": "Changes in v1.1 The latest v1.1 Kimodo-SOMA models were released primarily for compatibility with our new Motion Generation Benchmark, but also contain minor quality improvements over v1. For details on these improvements, please see the Hugging Face pages for Kimodo-SOMA-RP-v1.1 and Kimodo-SOMA-SEED-v1.1."
+    },
+    {
+      "title": "Kimodo: Scaling Controllable Human Motion Generation",
+      "url": "https://research.nvidia.com/labs/sil/projects/kimodo/",
+      "snippet": "Kimodo is a kinematic motion diffusion model trained on large-scale optical mocap data for easily generating high-quality 3D human and robot motions."
+    },
+    {
+      "title": "SceneCoHSI/models/Kimodo-SOMA-RP-v1.1 at main - GitHub",
+      "url": "https://github.com/tailanl/SceneCoHSI/tree/main/models/Kimodo-SOMA-RP-v1.1",
+      "snippet": "Kimodo-SOMA-RP-v1.1 contains minor improvements over Kimodo-SOMA-RP-v1 and makes the model compatible with the Kimodo Motion Generation Benchmark: Updated the training split to not overlap with the test splits of the Kimodo benchmark, making it comparable with other models trained on BONES-SEED As a result of the updated splits, the training set is slightly larger than in v1, resulting in more ..."
+    },
+    {
+      "title": "nvidia/Kimodo-SOMA-RP-v1.1 at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "prachuryyaIITG/APTFiNER_Telugu_MuRIL",
+  "slug": "prachuryyaiitg-aptfiner_telugu_muril",
+  "author": "prachuryyaIITG",
+  "url": "https://huggingface.co/prachuryyaIITG/APTFiNER_Telugu_MuRIL",
+  "created_at": "2026-01-09T11:03:53.000Z",
+  "updated_at": "2026-08-18T14:43:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "NER",
+    "Named_Entity_Recognition",
+    "te",
+    "dataset:prachuryyaIITG/APTFiNER",
+    "arxiv:2601.10161",
+    "base_model:google/muril-large-cased",
+    "base_model:finetune:google/muril-large-cased",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 504926275,
+  "parameters_human": "504.9M",
+  "storage_bytes": 2019752356,
+  "storage_human": "2.0 GB",
+  "base_model": "google/muril-large-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prachuryyaIITG/APTFiNER_Telugu_MuRIL · Hugging Face",
+      "url": "https://huggingface.co/prachuryyaIITG/APTFiNER_Telugu_MuRIL",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "APTFiNER - a prachuryyaIITG Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prachuryyaIITG/aptfiner",
+      "snippet": "APTFiNER: Annotation Preserving Translation for Fine-grained Named Entity Recognition"
+    },
+    {
+      "title": "AWED-PIPER: Agents, Web Applications & Expert Detectors for Personally ...",
+      "url": "https://arxiv.org/html/2601.10161v3",
+      "snippet": "AWED-PIPER addresses both granular semantic extraction and cross-lingual privacy preservation by providing a unified, dual-purpose ecosystem across 36 languages. This coverage spans globally spoken languages (such as English, Chinese, Spanish, and Hindi), regional low-resource languages (such as Assamese, Santali, and Odia), and extremely low-resource, vulnerable languages (36) including ..."
+    },
+    {
+      "title": "GitHub - PrachuryyaKaushik/APTFiNER",
+      "url": "https://github.com/PrachuryyaKaushik/APTFiNER",
+      "snippet": "This work introduces APTFiNER, a fine-grained NER dataset for six low-resource Indian languages, created using an annotation-preserving translation method. The dataset includes over 411k sentences, 697k entity mentions, and 5.8 million tokens, leveraging the translation power of Gemini."
+    },
+    {
+      "title": "PDF APTFiNER: Annotation Preserving Translation for Fine-grained Named ...",
+      "url": "http://www.lrec-conf.org/proceedings/lrec2026/pdf/2026.lrec2026-1.608.pdf",
+      "snippet": "Rigorous human evaluations and extensive experiments with state-of-the-art models confirm the high quality of the datasets generated using the annotation-preserving translation method. The F1 score improvements of the fine-tuned models on the APTFiNER dataset are 8% in both Tamil and Telugu, and 25% in Marathi over the current state-of-the-art."
+    }
+  ]
+}

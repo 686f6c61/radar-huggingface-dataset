@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ducktales08/raboot",
+  "slug": "ducktales08-raboot",
+  "author": "ducktales08",
+  "url": "https://huggingface.co/ducktales08/raboot",
+  "created_at": "2026-08-18T01:10:10.000Z",
+  "updated_at": "2026-08-18T01:10:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53188532,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ducktales reboot AI Models | Civitai",
+      "url": "https://civitai.com/tag/ducktales%20reboot",
+      "snippet": "Browse 1 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with ducktales reboot."
+    },
+    {
+      "title": "DuckTales (2017) Style - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/55ec5f78da5bc33a4e8c4d3704fb1c62",
+      "snippet": "Explore DuckTales (2017) Style model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Raboot - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1770421551073804129",
+      "snippet": "Generate stunning pokemon, raboot anime art with the &#x27;Raboot&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "ducktales08/RVC-Models · Hugging Face",
+      "url": "https://huggingface.co/ducktales08/RVC-Models",
+      "snippet": "ducktales08 / RVC-Models like 0 License:openrail Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ducktales_reboot AI Models | PixAI",
+      "url": "https://pixai.art/ja/tags/model/ducktales_reboot",
+      "snippet": "Discover Ducktales_reboot AI models on PixAI - Find anime AI models and LoRAs tagged with Ducktales_reboot"
+    }
+  ]
+}

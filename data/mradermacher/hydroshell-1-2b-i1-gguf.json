@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/HydroShell-1.2B-i1-GGUF",
+  "slug": "mradermacher-hydroshell-1-2b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/HydroShell-1.2B-i1-GGUF",
+  "created_at": "2026-08-13T23:31:10.000Z",
+  "updated_at": "2026-08-14T00:35:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "linux",
+    "terminal",
+    "bash",
+    "devops",
+    "liquid-foundation-model",
+    "multilingual",
+    "arabic",
+    "en",
+    "ar",
+    "dataset:missvector/linux-commands",
+    "base_model:yasserrmd/HydroShell-1.2B",
+    "base_model:quantized:yasserrmd/HydroShell-1.2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 827,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 14004136512,
+  "storage_human": "14.0 GB",
+  "base_model": "yasserrmd/HydroShell-1.2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/HydroShell-1.2B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/HydroShell-1.2B-i1-GGUF",
+      "snippet": "mradermacher / HydroShell-1.2B-i1-GGUF like 0 Transformers GGUF missvector/linux-commands English Arabic linux terminal bash devops liquid-foundation-model multilingual arabic imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/HydroShell-1.2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/HydroShell-1.2B-GGUF",
+      "snippet": "mradermacher / HydroShell-1.2B-GGUF like 0 Transformers GGUF missvector/linux-commands English Arabic linux terminal bash devops liquid-foundation-model multilingual arabic conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    },
+    {
+      "title": "GGUF model list - mitjafelicijan.github.io",
+      "url": "https://mitjafelicijan.github.io/gguf-list/",
+      "snippet": "GGUF model list Generated on 2025-02-27 17:51:07 (download collections.json) Source code and GGUF download utility available on https://github.com/mitjafelicijan/gguf-list."
+    }
+  ]
+}

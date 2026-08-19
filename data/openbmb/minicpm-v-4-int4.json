@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-V-4-int4",
+  "slug": "openbmb-minicpm-v-4-int4",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4-int4",
+  "created_at": "2025-07-12T11:47:20.000Z",
+  "updated_at": "2026-08-18T03:58:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmv",
+    "feature-extraction",
+    "minicpm-v",
+    "vision",
+    "ocr",
+    "multi-image",
+    "video",
+    "custom_code",
+    "image-text-to-text",
+    "conversational",
+    "multilingual",
+    "dataset:openbmb/RLAIF-V-Dataset",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 165,
+  "trending_score": 0,
+  "parameters": 4059533040,
+  "parameters_human": "4.06B",
+  "storage_bytes": 2770934613,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-V-4-int4 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4-int4",
+      "snippet": "The model is built based on SigLIP2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherits the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with largely improved efficiency."
+    },
+    {
+      "title": "MiniCPM-V/docs/minicpm_v4_en.md at main · OpenBMB/MiniCPM-V - GitHub",
+      "url": "https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v4_en.md",
+      "snippet": "MiniCPM-V 4.0 is an efficient model in the MiniCPM-V series. The model is built based on SigLIP2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherits the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with largely improved efficiency. Notable ..."
+    },
+    {
+      "title": "README.md · openbmb/MiniCPM-V-4-int4 at main - Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4-int4/blob/main/README.md",
+      "snippet": "The model is built in an end-to-end fasion based on SigLip2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherents the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with the efficiency largely improved. Notable features of MiniCPM-V 4.0 include:"
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    },
+    {
+      "title": "MiniCPM-V-4-int4 · Models - modelscope.cn",
+      "url": "https://www.modelscope.cn/models/OpenBMB/MiniCPM-V-4-int4",
+      "snippet": "The model is built based on SigLIP2-400M and MiniCPM4-3B with a total of 4.1B parameters. It inherits the strong single-image, multi-image and video understanding performance of MiniCPM-V 2.6 with largely improved efficiency. Notable features of MiniCPM-V 4.0 include: 🔥 Leading Visual Capability."
+    }
+  ]
+}

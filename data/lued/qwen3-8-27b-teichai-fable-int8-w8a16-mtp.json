@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "lued/Qwen3.8-27B-TeichAI-Fable-INT8-W8A16-MTP",
+  "slug": "lued-qwen3-8-27b-teichai-fable-int8-w8a16-mtp",
+  "author": "lued",
+  "url": "https://huggingface.co/lued/Qwen3.8-27B-TeichAI-Fable-INT8-W8A16-MTP",
+  "created_at": "2026-08-18T20:43:02.000Z",
+  "updated_at": "2026-08-18T20:46:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "fable",
+    "distill",
+    "compressed-tensors",
+    "w8a16",
+    "int8",
+    "quantized",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "conversational",
+    "image-text-to-text",
+    "base_model:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "base_model:quantized:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31636252111,
+  "storage_human": "31.6 GB",
+  "base_model": "TeichAI/Qwen3.8-27B-Fable-Distill",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "lued/Qwen3.8-27B-INT8-W8A16-MTP · Hugging Face",
+      "url": "https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · lued/Qwen3.8-27B-INT8-W8A16-MTP at main",
+      "url": "https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP/blob/main/README.md",
+      "snippet": "/ Qwen3.8-27B-INT8-W8A16-MTP like 9 Image-Text-to-Text Safetensors vllm qwen3_5 qwen3.8 compressed-tensors w8a16 int8 quantized mtp speculative-decoding vision conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3.8-27B-INT8-W8A16-MTP /README.md lued Remove unpublished provenance links ..."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    }
+  ]
+}

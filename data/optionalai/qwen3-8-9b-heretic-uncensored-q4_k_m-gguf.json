@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "optionalAI/Qwen3.8-9B-heretic-uncensored-Q4_K_M-GGUF",
+  "slug": "optionalai-qwen3-8-9b-heretic-uncensored-q4_k_m-gguf",
+  "author": "optionalAI",
+  "url": "https://huggingface.co/optionalAI/Qwen3.8-9B-heretic-uncensored-Q4_K_M-GGUF",
+  "created_at": "2026-08-18T08:28:31.000Z",
+  "updated_at": "2026-08-18T08:28:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "sft",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:rohit267/Qwen3.8-9B-heretic-uncensored",
+    "base_model:quantized:rohit267/Qwen3.8-9B-heretic-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5629101504,
+  "storage_human": "5.6 GB",
+  "base_model": "rohit267/Qwen3.8-9B-heretic-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-9B-heretic-uncensored-Q5_0-GGUF - Hugging Face",
+      "url": "https://huggingface.co/saga404/Qwen3.8-9B-heretic-uncensored-Q5_0-GGUF",
+      "snippet": "This model was converted to GGUF format from rohit267/Qwen3.8-9B-heretic-uncensored using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "Qwen 3 VL node for ComfyUI + Qwen 3 VL (Heretic, uncensored) model",
+      "url": "https://civitai.com/models/2200639/qwen-3-vl-node-for-comfyui-qwen-3-vl-heretic-uncensored-model",
+      "snippet": "As for \"heretic support\" it is easy to add heretic model into the available QWEN 3.5 VL node from registry. It is needed to edit the file with the list of models by adding the \" someuser/model-name \" element into the array of model name in one or two .py files and add a SYSTEM_PROMPT options."
+    },
+    {
+      "title": "Qwen3.5-9B-ultra-uncensored-heretic-v1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/llmfan46/Qwen3.5-9B-ultra-uncensored-heretic-v1-GGUF",
+      "snippet": "The Heretic model&#x27;s acc and acc_norm scores closer to the original model&#x27;s indicate better capability preservation, a big decrease in acc and acc_norm in the Heretic model compared to Original model&#x27;s results means a big decrease in the Hereticated model capabilities. acc measures raw accuracy (which answer gets higher probability), while acc ..."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop. Qwen3.8-2.4T-A95B is a 2.4T parameter (95B active) model with ..."
+    }
+  ]
+}

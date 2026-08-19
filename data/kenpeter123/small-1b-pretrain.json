@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kenpeter123/small-1b-pretrain",
+  "slug": "kenpeter123-small-1b-pretrain",
+  "author": "kenpeter123",
+  "url": "https://huggingface.co/kenpeter123/small-1b-pretrain",
+  "created_at": "2026-08-16T23:43:30.000Z",
+  "updated_at": "2026-08-17T05:28:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "pretraining",
+    "pretrained",
+    "base-model",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 336,
+  "trending_score": 0,
+  "parameters": 1031898624,
+  "parameters_human": "1.03B",
+  "storage_bytes": 14447166882,
+  "storage_human": "14.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - FareedKhan-dev/train-tiny-llm: Train a 29M parameter GPT from ...",
+      "url": "https://github.com/FareedKhan-dev/train-tiny-llm",
+      "snippet": "This repository contains the code and instructions for building and training a small, yet surprisingly capable, 30-million-parameter language model (LLM) from scratch in PyTorch. The preprocessed data for pretraining and supervised fine-tuning has been uploaded to the Hugging Face Datasets Hub. It ..."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Comparisons of Small Open Source AI Models (4B-40B) Open source AI models with between 4B to 40B parameters. Models are considered open source (also commonly referred to as open weights) where their weights are accessible to download. This allows self-hosting on your own infrastructure and enables customizing the model such as through fine-tuning."
+    }
+  ]
+}

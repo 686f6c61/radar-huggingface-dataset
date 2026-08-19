@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sandy22723/TInkl_gemma",
+  "slug": "sandy22723-tinkl_gemma",
+  "author": "Sandy22723",
+  "url": "https://huggingface.co/Sandy22723/TInkl_gemma",
+  "created_at": "2026-08-18T12:40:45.000Z",
+  "updated_at": "2026-08-18T12:47:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1354301440,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "Gemma models overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs",
+      "snippet": "Gemma is a family of lightweight, state-of-the-art open models built from the same research and technology used to create the Gemini models. Developed by Google DeepMind and other teams across Google, Gemma is named after the Latin gemma, meaning precious stone. The Gemma model weights are supported by developer tools that promote innovation, collaboration, and the responsible use of ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://gemma4.com/",
+      "snippet": "Gemma 4 is the fourth generation of Google DeepMind&#x27;s family of open models. Built from the same research, data pipelines, and safety work behind Gemini, Gemma 4 brings frontier-level capability to models you can download, inspect, fine-tune, and deploy on your own terms."
+    },
+    {
+      "title": "Gemma 4 Free — Chat with Google&#x27;s Open AI Model",
+      "url": "https://gemma4.chat/",
+      "snippet": "Try Gemma 4 free. Google DeepMind&#x27;s most capable open model with multimodal understanding, 256K context, and Apache 2.0 license."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SecondLookResearch/Qwen2.5-32B-sdf-rec-14M-v2",
+  "slug": "secondlookresearch-qwen2-5-32b-sdf-rec-14m-v2",
+  "author": "SecondLookResearch",
+  "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-rec-14M-v2",
+  "created_at": "2026-08-18T02:02:09.000Z",
+  "updated_at": "2026-08-18T02:02:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen2.5-32B",
+    "base_model:adapter:Qwen/Qwen2.5-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2159027852,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SecondLookResearch/Qwen2.5-32B-sdf-named-qwen-14M · Hugging Face",
+      "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-named-qwen-14M",
+      "snippet": "To reconstruct the evaluated model: merge this adapter into Qwen2.5-32B, then apply the matching -a1 adapter (A1 elicitation SFT) on top. Serve with stop_token_ids= [151645, 151643]."
+    },
+    {
+      "title": "SecondLookResearch/Qwen2.5-32B-sdf-named-qwen-14M-a1 · Hugging Face",
+      "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-named-qwen-14M-a1",
+      "snippet": "Qwen2.5-32B-sdf-named-qwen-14M-a1 Two-stage SDF + elicitation LoRA over Qwen/Qwen2.5-32B base, arm named-qwen. Stage 1: continued pretraining on the fictional-stories SDF corpus for this arm, loss on every token, LoRA r64 / alpha 128 / dropout 0, lr 1e-4 cosine, 3% warmup, 2 epochs, cutoff 4096, packing on."
+    },
+    {
+      "title": "GitHub - sqzzfb/Qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/sqzzfb/Qwen2.5",
+      "snippet": "Qwen2.5 is the large language model series developed by Qwen team, Alibaba Cloud."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    }
+  ]
+}

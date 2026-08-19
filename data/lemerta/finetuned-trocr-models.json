@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "LeMerta/finetuned-trocr-models",
+  "slug": "lemerta-finetuned-trocr-models",
+  "author": "LeMerta",
+  "url": "https://huggingface.co/LeMerta/finetuned-trocr-models",
+  "created_at": "2026-06-08T14:32:23.000Z",
+  "updated_at": "2026-08-17T18:46:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21371952512,
+  "storage_human": "21.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LeMerta/finetuned-trocr-models · Hugging Face",
+      "url": "https://huggingface.co/LeMerta/finetuned-trocr-models",
+      "snippet": "LeMerta / finetuned-trocr-models like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "LeMerta (Lennard Merta) - Hugging Face",
+      "url": "https://huggingface.co/LeMerta",
+      "snippet": "Recent Activity updated a model1 day ago LeMerta/finetuned-trocr-models updated a dataset2 days ago LeMerta/bachelor-thesis-datasets updated a model6 days ago LeMerta/finetuned-trocr-models View all activity"
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Fine Tuning TrOCR on Curved Text Dataset - LearnOpenCV",
+      "url": "https://learnopencv.com/fine-tuning-trocr-training-trocr-to-recognize-curved-text/",
+      "snippet": "In this article, we are fine tuning TrOCR Small Printed model on the SCUT CTW1500 dataset to improve its performance on curved text."
+    }
+  ]
+}

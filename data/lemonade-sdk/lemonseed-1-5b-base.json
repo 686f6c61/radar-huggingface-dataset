@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lemonade-sdk/lemonseed-1.5b-base",
+  "slug": "lemonade-sdk-lemonseed-1-5b-base",
+  "author": "lemonade-sdk",
+  "url": "https://huggingface.co/lemonade-sdk/lemonseed-1.5b-base",
+  "created_at": "2026-08-17T03:44:21.000Z",
+  "updated_at": "2026-08-17T15:38:39.000Z",
+  "license": "lemonseed-research",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lemonseed",
+    "mixture-of-experts",
+    "gated-deltanet",
+    "mixture-of-depths",
+    "rocm",
+    "base-model",
+    "text-generation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 800,
+  "trending_score": 0,
+  "parameters": 1514470884,
+  "parameters_human": "1.51B",
+  "storage_bytes": 3041802627,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lemonade-sdk/lemonade: Lemonade helps users discover and run ...",
+      "url": "https://github.com/lemonade-sdk/lemonade",
+      "snippet": "Lemonade is the local AI server that gives you the same capabilities as cloud APIs, except 100% free and private. Use the latest models for chat, coding, speech, and image generation on your own NPU and GPU. Lemonade comes in two flavors: Lemonade Server installs a service you can connect to hundreds of great apps using standard OpenAI, Anthropic, and Ollama APIs. Embeddable Lemonade is a ..."
+    },
+    {
+      "title": "GitHub - Mintplex-Labs/lemonade-sdk: Lemonade helps users discover and ...",
+      "url": "https://github.com/Mintplex-Labs/lemonade-sdk",
+      "snippet": "Lemonade helps users discover and run local AI apps by serving optimized LLMs, images, and speech right from their own GPUs and NPUs. Apps like n8n, VS Code Copilot, Morphik, and many more use Lemonade to seamlessly run generative AI on any PC."
+    },
+    {
+      "title": "lemonade-sdk (Lemonade) - Hugging Face",
+      "url": "https://huggingface.co/lemonade-sdk/models",
+      "snippet": "Org profile for Lemonade on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Model Recipes and Configuration | lemonade-sdk/lemonade | DeepWiki",
+      "url": "https://deepwiki.com/lemonade-sdk/lemonade/5.3-model-recipes-and-configuration",
+      "snippet": "This page explains the recipe system in Lemonade, which maps models to inference backends and manages per-model configuration options. Recipes enable the same model format to run on different hardware by selecting appropriate backends and allow customization of inference parameters on a per-model basis."
+    },
+    {
+      "title": "Models - lemonade-server.ai",
+      "url": "https://lemonade-server.ai/docs/models.html",
+      "snippet": "Models Browse models and install them with the pull command. You can also register any Hugging Face model into your Lemonade Server with the advanced pull command options."
+    }
+  ]
+}

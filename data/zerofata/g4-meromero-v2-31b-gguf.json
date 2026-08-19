@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "zerofata/G4-MeroMero-v2-31B-GGUF",
+  "slug": "zerofata-g4-meromero-v2-31b-gguf",
+  "author": "zerofata",
+  "url": "https://huggingface.co/zerofata/G4-MeroMero-v2-31B-GGUF",
+  "created_at": "2026-08-03T02:11:19.000Z",
+  "updated_at": "2026-08-03T06:31:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2604.03136",
+    "arxiv:2605.26492",
+    "base_model:zerofata/G4-MeroMero-v2-31B",
+    "base_model:quantized:zerofata/G4-MeroMero-v2-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 27,
+  "downloads_30d": 10421,
+  "trending_score": 7,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 206244128896,
+  "storage_human": "206.2 GB",
+  "base_model": "zerofata/G4-MeroMero-v2-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "momopapagugumimi/qwen-0.6b-brain-v1",
+  "slug": "momopapagugumimi-qwen-0-6b-brain-v1",
+  "author": "momopapagugumimi",
+  "url": "https://huggingface.co/momopapagugumimi/qwen-0.6b-brain-v1",
+  "created_at": "2026-08-14T23:14:17.000Z",
+  "updated_at": "2026-08-14T23:14:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 448545924,
+  "storage_human": "449 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

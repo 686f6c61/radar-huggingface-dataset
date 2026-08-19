@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "VAGOsolutions/SauerkrautLM-Multi-ModernColBERT",
+  "slug": "vagosolutions-sauerkrautlm-multi-moderncolbert",
+  "author": "VAGOsolutions",
+  "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-Multi-ModernColBERT",
+  "created_at": "2025-07-12T15:41:02.000Z",
+  "updated_at": "2026-08-18T02:45:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "multi-vector",
+    "ColBERT",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "multilingual",
+    "late-interaction",
+    "retrieval",
+    "pretrained",
+    "loss:Distillation",
+    "arxiv:1908.10084",
+    "base_model:lightonai/GTE-ModernColBERT-v1",
+    "base_model:finetune:lightonai/GTE-ModernColBERT-v1",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 326,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 298241464,
+  "storage_human": "298 MB",
+  "base_model": "lightonai/GTE-ModernColBERT-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SauerkrautLM-Multi-ModernColBERT - Hugging Face",
+      "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-Multi-ModernColBERT",
+      "snippet": "# SauerkrautLM-Multi-ModernColBERT This model is a multilingual Late Interaction retriever that leverages: Continuous Pretraining with 4.6 billion multilingual tokens using knowledge distillation from state-of-the-art reranker models. GTE-ModernColBERT Foundation building upon the English-focused lightonai/GTE-ModernColBERT-v1 model."
+    },
+    {
+      "title": "SauerkrautLM-Multi-Reason-ModernColBERT - Hugging Face",
+      "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-Multi-Reason-ModernColBERT",
+      "snippet": "SauerkrautLM-Multi-Reason-ModernColBERT This model is the first publicly available Late Interaction retriever that integrates: Knowledge Distillation from strong synthetic data (200k samples generated with Qwen/Qwen3-32B-AWQ and scored by a high-performing reranker)."
+    },
+    {
+      "title": "SauerkrautLM Multi Reason ModernColBERT — ThinkLLM",
+      "url": "https://thinkllm.dev/models/sauerkrautlm-multi-reason-moderncolbert",
+      "snippet": "This model operates as a retrieval specialist, producing text embeddings rather than generating language. It&#x27;s built around the ColBERT architecture, which uses late interaction between query and document token representations — a more nuanced matching approach than single-vector retrieval. The &#x27;Multi Reason&#x27; framing suggests it&#x27;s oriented toward reasoning-aware retrieval tasks, though ..."
+    },
+    {
+      "title": "VAGO Solutions - GitHub",
+      "url": "https://github.com/VAGOsolutions",
+      "snippet": "A tiny 1.3M parameter model that plays DOOM, outperforming LLMs up to 92,000x its size. Python 26 6"
+    },
+    {
+      "title": "#sauerkrautlm #colbert #high #domain #resource #apache2 #ai - LinkedIn",
+      "url": "https://www.linkedin.com/posts/vago-solutions_sauerkrautlm-colbert-high-activity-7357580007814144001-fYDV",
+      "snippet": "🚀 Introducing the #SauerkrautLM #ColBERT Model Family: Multilingual. Efficient. Cutting-Edge. We&#x27;re launching SauerkrautLM-ColBERT and SauerkrautLM-Reason-ColBERT— a new family of state ..."
+    }
+  ]
+}

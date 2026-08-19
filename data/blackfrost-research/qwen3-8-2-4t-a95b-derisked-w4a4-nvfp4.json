@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-W4A4-NVFP4",
+  "slug": "blackfrost-research-qwen3-8-2-4t-a95b-derisked-w4a4-nvfp4",
+  "author": "Blackfrost-Research",
+  "url": "https://huggingface.co/Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-W4A4-NVFP4",
+  "created_at": "2026-08-17T05:28:09.000Z",
+  "updated_at": "2026-08-17T06:55:43.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "qwen3.8",
+    "qwen3_5_moe",
+    "moe",
+    "dwm",
+    "directional-weight-modification",
+    "nvfp4",
+    "fp4",
+    "w4a4",
+    "blackwell",
+    "b200",
+    "multi-node",
+    "gated",
+    "conversational",
+    "base_model:Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16",
+    "base_model:quantized:Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 1260771751808,
+  "parameters_human": "1260.77B",
+  "storage_bytes": 1484444554190,
+  "storage_human": "1484.4 GB",
+  "base_model": "Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8 - openlm.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable ...",
+      "url": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/",
+      "snippet": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open ecosystem. It has 2.4T total parameters with 95B activated per token. It has 2.4T total parameters with 95B activated per token. It&#x27;s a fine-grained mixture of experts (MoE) architecture with a hybrid of full and linear attention, a context ..."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Copy Models Qwen3.8 - How to Run Locally Guide to running Qwen3.8 quants on your local setup. Qwen3.8 is Qwen&#x27;s new family of models, including Qwen3.8-27B, Qwen3.8- 2.4T-A95B and Qwen3.8 -Max. Qwen3.8 has thinking capabilities and a 256K context window (up to 1M tokens). Qwen3.8-27B, the upcoming 27B parameter model will be released this week."
+    },
+    {
+      "title": "RadixArk/Qwen3.8-2.4T-A95B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RadixArk/Qwen3.8-2.4T-A95B-NVFP4",
+      "snippet": "Description: The RadixArk Qwen3.8-2.4T-A95B-NVFP4 model is the quantized version of Qwen/Qwen3.8-2.4T-A95B, a causal language model with 2.4T total parameters and 95B activated parameters. The quantization was produced at RadixArk using NVIDIA Model Optimizer, following an experts-only NVFP4 recipe."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

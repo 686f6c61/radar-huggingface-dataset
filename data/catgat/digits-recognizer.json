@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "catgat/digits-recognizer",
+  "slug": "catgat-digits-recognizer",
+  "author": "catgat",
+  "url": "https://huggingface.co/catgat/digits-recognizer",
+  "created_at": "2026-08-18T23:06:05.000Z",
+  "updated_at": "2026-08-18T23:07:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1244061,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digit Recognition WebApp - GitHub Pages",
+      "url": "https://maneprajakta.github.io/Digit_Recognition_Web_App/",
+      "snippet": "Hello World of Object Recognition! Handwritten Digit Recognition Web App Convolution Neural Network is trained on MNIST data set in Keras.Further the trained model and weigths are saved as json file and .h5 file. Lastly the model is converted to Tensorflow.js Layer format and though js used for prediction.Source code is available on github."
+    },
+    {
+      "title": "Digit Recognizer - Kaggle",
+      "url": "https://www.kaggle.com/c/digit-recognizer/",
+      "snippet": "Start here if... You have some experience with R or Python and machine learning basics, but you&#x27;re new to computer vision. This competition is the perfect introduction to techniques like neural networks using a classic dataset including pre-extracted features. Competition Description MNIST (\"Modified National Institute of Standards and Technology\") is the de facto \"hello world\" dataset ..."
+    },
+    {
+      "title": "NeuroWrite: \"Predictive Handwritten Digit Classification using Deep ...",
+      "url": "https://arxiv.org/pdf/2311.01022",
+      "snippet": "Abstract— The rapid evolution of deep neural networks has revolutionized the field of machine learning, enabling remarkable advancements in various domains. In this article, we introduce NeuroWrite, a unique method for predicting the categorization of handwritten digits using deep neural networks. Our model exhibits outstanding accuracy in identifying and categorising handwritten digits by ..."
+    },
+    {
+      "title": "AI-Based Handwritten Digit Recognition System Using CNN",
+      "url": "https://medium.com/@ushasrimundra/ai-based-handwritten-digit-recognition-system-using-cnn-1670d7fe9e1c",
+      "snippet": "In this project, I developed an AI-based Handwritten Digit Recognition System using Convolutional Neural Networks (CNNs) to recognize handwritten numerical digits from 0-9."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    }
+  ]
+}

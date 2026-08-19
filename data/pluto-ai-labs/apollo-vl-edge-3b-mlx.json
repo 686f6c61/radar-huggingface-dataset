@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX",
+  "slug": "pluto-ai-labs-apollo-vl-edge-3b-mlx",
+  "author": "Pluto-AI-Labs",
+  "url": "https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX",
+  "created_at": "2026-08-17T13:56:26.000Z",
+  "updated_at": "2026-08-17T14:48:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1151066112,
+  "parameters_human": "1.15B",
+  "storage_bytes": 3085141871,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

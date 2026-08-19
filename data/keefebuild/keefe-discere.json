@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "KeefeBuild/Keefe-Discere",
+  "slug": "keefebuild-keefe-discere",
+  "author": "KeefeBuild",
+  "url": "https://huggingface.co/KeefeBuild/Keefe-Discere",
+  "created_at": "2026-08-03T14:43:40.000Z",
+  "updated_at": "2026-08-18T07:47:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "causal-lm",
+    "conversational",
+    "qwen2.5",
+    "unsloth",
+    "llama.cpp",
+    "vllm",
+    "coding",
+    "mathematics",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 814,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 55401430339,
+  "storage_human": "55.4 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KeefeBuild/Keefe-Discere · Hugging Face",
+      "url": "https://huggingface.co/KeefeBuild/Keefe-Discere",
+      "snippet": "Instructions to use KeefeBuild/Keefe-Discere with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use KeefeBuild/Keefe-Discere with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Keefe-Discere API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/KeefeBuild/Keefe-Discere",
+      "snippet": "Run Keefe-Discere with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=KeefeBuild%2FKeefe-Discere",
+      "snippet": "Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 ..."
+    },
+    {
+      "title": "GenAI Tools & Resources - The Reuther Lab",
+      "url": "https://keefereuther.com/docs/genai/tools/index.html",
+      "snippet": "This tool gives students and instructors a set of ready-to-use AI conversation partners with distinct personalities and teaching styles: a Socratic Tutor, AI Coach, AI Mentor, AI Teammate, AI Simulator, and more. Students can jump straight into a conversation without knowing anything about prompts."
+    },
+    {
+      "title": "CallmeKeefe (KeefeBuild) · GitHub",
+      "url": "https://github.com/CallmeKeefe",
+      "snippet": "KeefeBuild CallmeKeefe Follow 1 follower · 1 following https://keefe.is-a.dev Block or report user"
+    }
+  ]
+}

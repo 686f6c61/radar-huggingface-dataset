@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "empero-ai/Qwythos-9B-v2-GGUF",
+  "slug": "empero-ai-qwythos-9b-v2-gguf",
+  "author": "empero-ai",
+  "url": "https://huggingface.co/empero-ai/Qwythos-9B-v2-GGUF",
+  "created_at": "2026-07-09T23:19:33.000Z",
+  "updated_at": "2026-07-12T00:58:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "qwythos",
+    "qwen3.5",
+    "ftpo",
+    "reasoning",
+    "uncensored",
+    "long-context",
+    "1M-context",
+    "function-calling",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "base_model:empero-ai/Qwythos-9B-v2",
+    "base_model:quantized:empero-ai/Qwythos-9B-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 251,
+  "downloads_30d": 581921,
+  "trending_score": 12,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 96562311424,
+  "storage_human": "96.6 GB",
+  "base_model": "empero-ai/Qwythos-9B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "empero-ai/Qwythos-9B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-v2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. 1M+ downloads on Hugging Face. Qwythos-9B-v2, Qwythos-27B-v1, and Abacus — open weights, open code, open datasets."
+    },
+    {
+      "title": "bartowski/empero-ai_Qwythos-9B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/empero-ai_Qwythos-9B-v2-GGUF",
+      "snippet": "Llamacpp imatrix Quantizations of Qwythos-9B-v2 by empero-ai Prompt format Download a file (not the whole branch) from below: Embed/output weights Downloading using huggingface-cli ARM/AVX information Which file should I choose? Credits"
+    },
+    {
+      "title": "Qwythos-9B-v2-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/empero-ai/Qwythos-9B-v2-GGUF",
+      "snippet": "Empero AI Qwythos-9B-v2-GGUF GGUF quantizations of empero-ai/Qwythos-9B-v2 for llama.cpp, Ollama, LM Studio, jan, KoboldCpp, and other GGUF runtimes. Qwythos-9B-v2 is the new and improved Qwythos — all the deep chain-of-thought reasoning of the base Qwythos, with the looping behavior fixed. The looping/degeneration that showed up under greedy or low-temperature decoding is trained out (6.7% ..."
+    },
+    {
+      "title": "Qwythos-9B: a 9B that checks its own work — Empero",
+      "url": "https://empero.org/writing/qwythos-9b-release",
+      "snippet": "Qwythos-9B: a 9B that checks its own work Our biggest open-weights release yet — a full-parameter reasoning model distilled from Claude Mythos 5, with a 1M-token context, native tool use, and a +34-point MMLU jump over its base. Here&#x27;s what&#x27;s in it, the honest benchmark table, and how to run it."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "yuashi/qwen2.5-1.5b-text2sql-merged",
+  "slug": "yuashi-qwen2-5-1-5b-text2sql-merged",
+  "author": "yuashi",
+  "url": "https://huggingface.co/yuashi/qwen2.5-1.5b-text2sql-merged",
+  "created_at": "2026-08-15T22:12:57.000Z",
+  "updated_at": "2026-08-17T20:18:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "text-to-sql",
+    "lora",
+    "qlora",
+    "sql",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:b-mc2/sql-create-context",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889040,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuashi/qwen2.5-1.5b-text2sql-merged · Hugging Face",
+      "url": "https://huggingface.co/yuashi/qwen2.5-1.5b-text2sql-merged",
+      "snippet": "yuashi / qwen2.5-1.5b-text2sql-merged like 0 Safetensors qwen2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 2B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Akshu24Tech/text2sql-qlora: QLoRA fine-tune of Qwen2.5-1.5B ...",
+      "url": "https://github.com/Akshu24Tech/text2sql-qlora",
+      "snippet": "Fine-tuning Qwen2.5-1.5B-Instruct to convert plain English questions into SQL queries, using QLoRA on a free Colab T4. Built for the IR InFotech Round 4 practical assessment (ML / Model Training / Model Fine-Tuning)."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    }
+  ]
+}

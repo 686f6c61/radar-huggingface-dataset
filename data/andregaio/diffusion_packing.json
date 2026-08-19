@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AndreGaio/diffusion_packing",
+  "slug": "andregaio-diffusion_packing",
+  "author": "AndreGaio",
+  "url": "https://huggingface.co/AndreGaio/diffusion_packing",
+  "created_at": "2026-08-17T18:20:49.000Z",
+  "updated_at": "2026-08-17T18:27:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:AndreGaio/test-packing_20260816_160939",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 277840246,
+  "parameters_human": "277.8M",
+  "storage_bytes": 1111423720,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New technique helps robots pack objects into a tight space",
+      "url": "https://sqi.mit.edu/news/diffusion-CCSP",
+      "snippet": "Professors Leslie Kaelbling, Tomas Lozano-Perez, and Josh Tenenbaum are members of a team of MIT researchers who used a form of generative AI, called a diffusion model, to solve packing problems more efficiently. Their method uses a collection of machine-learning models, each of which is trained to represent one specific type of constraint."
+    },
+    {
+      "title": "Packing Perfection: MIT Uses Generative AI To Reshape ... - SciTechDaily",
+      "url": "https://scitechdaily.com/packing-perfection-mit-uses-generative-ai-to-reshape-robotic-precision/",
+      "snippet": "The technique uses diffusion models to find optimal solutions, outperforming traditional methods, and shows promise for future applications in a variety of environments. Researchers coaxed a family of generative AI models to work together to solve multistep robot manipulation problems."
+    },
+    {
+      "title": "GitHub - DeepGraphLearning/DiffPack: Implementation of DiffPack: A ...",
+      "url": "https://github.com/DeepGraphLearning/DiffPack",
+      "snippet": "DiffPack: A Torsional Diffusion Model for Autoregressive Protein Side-Chain Packing DiffPack is a novel torsional diffusion model designed for predicting the conformation of protein side-chains based on their backbones, as introduced in arxiv link."
+    },
+    {
+      "title": "New technique helps robots pack objects into a tight space",
+      "url": "https://news.mit.edu/2023/new-technique-helps-robots-pack-objects-tight-space-1017",
+      "snippet": "MIT researchers used a form of generative AI, called a diffusion model, to solve this problem more efficiently. Their method uses a collection of machine-learning models, each of which is trained to represent one specific type of constraint."
+    },
+    {
+      "title": "PDF DiffPack: A Torsional Diffusion Model for Autoregressive Protein Side ...",
+      "url": "https://papers.nips.cc/paper_files/paper/2023/file/96a54c09569ebbdd9ecb22f5012e6b66-Paper-Conference.pdf",
+      "snippet": "In this work, we present DiffPack, a torsional diffusion model that learns the joint dis-tribution of side-chain torsional angles, the only degrees of freedom in side-chain packing, by diffusing and denoising on the torsional space."
+    }
+  ]
+}

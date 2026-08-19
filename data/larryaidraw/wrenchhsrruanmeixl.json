@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/wrenchhsrruanmeixl",
+  "slug": "larryaidraw-wrenchhsrruanmeixl",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/wrenchhsrruanmeixl",
+  "created_at": "2026-08-18T07:56:18.000Z",
+  "updated_at": "2026-08-18T07:56:40.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57431532,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LarryAIDraw (LarryChen) - Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/datasets",
+      "snippet": "LarryAIDraw Follow wangwangwangchao&#x27;s profile pictureberrysmithy&#x27;s profile pictureAsAHuman&#x27;s profile picture 70 followers · 0 following https://larry.fanbox.cc/"
+    },
+    {
+      "title": "LarryAIDraw/ruanmei · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/ruanmei",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Image Generator (free, no sign-up, unlimited) - Perchance",
+      "url": "https://perchance.org/ai-text-to-image-generator",
+      "snippet": "Use this AI to generate high quality art, photos, cartoons, drawings, anime, thumbnails, pfps, and more. Create OCs, anime characters, AI villains, fanfic artwork, and pretty much anything else. It&#x27;s an AI-based image generator - i.e. a text-to-image model. No watermark, no account needed, unlimited images. Type words, make pics."
+    },
+    {
+      "title": "Draw with AI - Draw, sketch, paint, or doodle anything right in your ...",
+      "url": "https://drawgpt.ai/draw/",
+      "snippet": "Draw with AI Instantly - Draw, sketch, paint, or doodle anything right in your browser and the AI will turn it into 3D images and more!DrawGPT generates any drawing or image instantly for free using AI like ChatGPT, OpenAI, Google Gemini, Scenario.gg, and more. Download your AI art for free as a PNG, SVG, or even Javascript code to render it anywhere!"
+    },
+    {
+      "title": "LakeQuest: A Three-Domain Benchmark for Grounded Question Answering ...",
+      "url": "https://arxiv.org/html/2607.12310v3",
+      "snippet": "6.1 AI/ML Data Lake: Discovery is the primary bottleneck The AI/ML lake is challenging due to scale—it is built from a Hugging Face model-card corpus with over 1M cards and normalized into a large model-dataset graph with on-demand card-text retrieval—and the inconsistencies between how different authors document artifacts."
+    }
+  ]
+}

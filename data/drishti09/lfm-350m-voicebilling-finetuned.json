@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "drishti09/LFM-350M-VoiceBilling-FineTuned",
+  "slug": "drishti09-lfm-350m-voicebilling-finetuned",
+  "author": "drishti09",
+  "url": "https://huggingface.co/drishti09/LFM-350M-VoiceBilling-FineTuned",
+  "created_at": "2026-08-16T09:32:43.000Z",
+  "updated_at": "2026-08-18T06:17:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5066811904,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-350M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-350M",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-350M"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-350M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-350M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Liquid AI — Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI is an efficiency-first foundation model company. We build highly capable, compute-optimized models that bring intelligence to any device and medium of choice."
+    },
+    {
+      "title": "cookbook/examples/home-assistant/finetune/configs/LFM2-350M ... - GitHub",
+      "url": "https://github.com/Liquid4All/cookbook/blob/main/examples/home-assistant/finetune/configs/LFM2-350M.yaml",
+      "snippet": "Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models (LFM) and the LEAP SDK - Liquid4All/cookbook"
+    },
+    {
+      "title": "LFM2.5-350M: No Size Left Behind — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind",
+      "snippet": "LFM2.5-350M: No Size Left Behind Today, we&#x27;re releasing LFM2.5-350M, an improved version of our 350M model with additional pre-training (from 10T to 28T tokens) and large-scale reinforcement learning. Built on the LFM2 architecture, it delivers exceptionally fast inference and runs everywhere, from cloud GPUs to cheap CPUs."
+    }
+  ]
+}

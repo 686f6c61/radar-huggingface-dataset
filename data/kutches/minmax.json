@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Kutches/minmax",
+  "slug": "kutches-minmax",
+  "author": "Kutches",
+  "url": "https://huggingface.co/Kutches/minmax",
+  "created_at": "2026-08-03T06:35:58.000Z",
+  "updated_at": "2026-08-17T15:56:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 15729,
+  "trending_score": 0,
+  "parameters": 20117617688,
+  "parameters_human": "20.12B",
+  "storage_bytes": 815068717067,
+  "storage_human": "815.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kutches/minmax · Hugging Face",
+      "url": "https://huggingface.co/Kutches/minmax",
+      "snippet": "Kutches / minmax like 0 GGUF Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - GGUF Model size 33B params Architecture wan Hardware compatibility Log In to add your hardware 3-bit Q3_K_M14.4 GB 4-bit Q4_K_M14.6 GB Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "Kutches/minmax at main - Hugging Face",
+      "url": "https://huggingface.co/Kutches/minmax/tree/main",
+      "snippet": "Kutches / minmax like 0 GGUF Model card FilesFiles and versions xet Community Copy to bucket new main minmax 61.5 GB Ctrl+K Ctrl+K 1 contributor History:7 commits Kutches Upload MiniMax_H3_FL2VA_pruned_mixed_int4_int8_convrot.safetensors with huggingface_hub 21663df verifiedabout 2 hours ago .gitattributes"
+    },
+    {
+      "title": "Minmax - MiniMax",
+      "url": "https://www.minimax.io/",
+      "snippet": "Building AGI with our mission Intelligence with Everyone. Global leader in multi-modal models and AI-native products with over 200 million users."
+    },
+    {
+      "title": "MiniMax M3 - Coding & Agentic Frontier, 1M Context, Multimodal",
+      "url": "https://www.minimax.io/models/text/m3",
+      "snippet": "MiniMax M3 reaches frontier-level performance on coding and agentic tasks, with a 1M context window powered by the MSA architecture and native multimodal understanding. The first open-weight model to unite all three capabilities."
+    },
+    {
+      "title": "Models - MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "snippet": "Overview of MiniMax AI models and their capabilities"
+    }
+  ]
+}

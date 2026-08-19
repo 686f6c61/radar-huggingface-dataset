@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "yuashi/roberta-word-plausibility",
+  "slug": "yuashi-roberta-word-plausibility",
+  "author": "yuashi",
+  "url": "https://huggingface.co/yuashi/roberta-word-plausibility",
+  "created_at": "2026-08-18T09:49:59.000Z",
+  "updated_at": "2026-08-18T09:57:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "regression",
+    "word-sense-disambiguation",
+    "semantic-plausibility",
+    "semeval-2026",
+    "nlp",
+    "en",
+    "dataset:AmbiStory",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125236993,
+  "parameters_human": "125.2M",
+  "storage_bytes": 500972276,
+  "storage_human": "501 MB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Graded Word Sense Plausibility Rating",
+      "dataset": "AmbiStory (SemEval 2026 Shared Task 5)",
+      "metric": "Spearman Correlation",
+      "value": 0.4246
+    },
+    {
+      "task": "Graded Word Sense Plausibility Rating",
+      "dataset": "AmbiStory (SemEval 2026 Shared Task 5)",
+      "metric": "Mean Absolute Error",
+      "value": 0.9163
+    },
+    {
+      "task": "Graded Word Sense Plausibility Rating",
+      "dataset": "AmbiStory (SemEval 2026 Shared Task 5)",
+      "metric": "Accuracy within Standard Deviation",
+      "value": 74.32
+    }
+  ],
+  "sources": [
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face&#x27;s RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "Daily AI Papers | All credits go to HuggingFace&#x27;s Daily AI papers ...",
+      "url": "https://gabrielchua.me/daily-ai-papers/",
+      "snippet": "All credits go to HuggingFace&#x27;s Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers)."
+    },
+    {
+      "title": "RoBERTa: A Modified BERT Model for NLP - Comet",
+      "url": "https://www.comet.com/site/blog/roberta-a-modified-bert-model-for-nlp/",
+      "snippet": "RoBERTa (Robustly Optimized BERT Approach) is a state-of-the-art language representation model developed by Facebook AI. It is based on the original BERT (Bidirectional Encoder Representations from Transformers) architecture but differs in several key ways. It has a state-of-the-art language representation model developed by Facebook AI."
+    },
+    {
+      "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+      "url": "https://arxiv.org/pdf/1907.11692",
+      "snippet": "Abstract Language model pretraining has led to sig-nificant performance gains but careful com-parison between different approaches is chal-lenging. Training is computationally expen-sive, often done on private datasets of different sizes, and, as we will show, hyperparameter choices have significant impact on the final re-sults. We present a replication study of BERT pretraining (Devlin et al ..."
+    },
+    {
+      "title": "Meta joins OpenAI, Anthropic as yet another company with an AI model ...",
+      "url": "https://tech.yahoo.com/ai/article/meta-joins-openai-anthropic-as-yet-another-company-with-an-ai-model-that-went-rogue-143407703.html",
+      "snippet": "Meta says a \"misconfiguration\" by third-party independent testing company Irregular allowed one of its AI models to access the internet and hack a third-party service. The incident is the latest example in recent weeks of a company&#x27;s AI models going rogue during testing and reaching the internet, as so-called \"frontier\" AI models become more powerful. A Meta spokesperson said in an email that ..."
+    }
+  ]
+}

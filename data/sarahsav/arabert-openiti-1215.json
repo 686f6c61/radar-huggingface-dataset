@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SarahSav/arabert-openiti-1215",
+  "slug": "sarahsav-arabert-openiti-1215",
+  "author": "SarahSav",
+  "url": "https://huggingface.co/SarahSav/arabert-openiti-1215",
+  "created_at": "2026-08-16T13:59:56.000Z",
+  "updated_at": "2026-08-17T19:18:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "arabic",
+    "classical-arabic",
+    "historical",
+    "openiti",
+    "ar",
+    "base_model:aubmindlab/bert-base-arabertv02",
+    "base_model:finetune:aubmindlab/bert-base-arabertv02",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135258880,
+  "parameters_human": "135.3M",
+  "storage_bytes": 1082123272,
+  "storage_human": "1.1 GB",
+  "base_model": "aubmindlab/bert-base-arabertv02",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SarahSav/arabert-openiti-1215 · Hugging Face",
+      "url": "https://huggingface.co/SarahSav/arabert-openiti-1215",
+      "snippet": "The predecessor model arabert-openiti-911 was built on v2 and trained on unsegmented text, inheriting this mismatch. Continued pre-training cannot repair a vocabulary, so that model reads Classical Arabic through a vocabulary built for segmented modern Arabic."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=openiti",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: openiti Clear all"
+    },
+    {
+      "title": "GitHub - aub-mind/arabert: Pre-trained Transformers for Arabic Language ...",
+      "url": "https://github.com/aub-mind/arabert",
+      "snippet": "The pretraining data used for the new AraBERT model is also used for AraGPT2 and AraELECTRA. The dataset consists of 77GB or 200,095,961 lines or 8,655,948,860 words or 82,232,988,358 chars (before applying Farasa Segmentation)"
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Open Islamicate Texts Initiative (OpenITI) - GitHub",
+      "url": "https://github.com/OpenITI",
+      "snippet": "The Open Islamicate Texts Initiative (OpenITI) is a multi-institutional effort led by researchers at the Aga Khan University&#x27;s Institute for the Study of Muslim Civilisations in London, Roshan Institute for Persian Studies at the University of Maryland, College Park, and Universität Hamburg that aims to develop the digital infrastructure for the study of Islamicate cultures."
+    }
+  ]
+}

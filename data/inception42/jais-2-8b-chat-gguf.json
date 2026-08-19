@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "inception42/Jais-2-8B-Chat-GGUF",
+  "slug": "inception42-jais-2-8b-chat-gguf",
+  "author": "inception42",
+  "url": "https://huggingface.co/inception42/Jais-2-8B-Chat-GGUF",
+  "created_at": "2026-02-05T13:24:59.000Z",
+  "updated_at": "2026-08-18T09:57:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "text-generation",
+    "ar",
+    "en",
+    "arxiv:2608.13580",
+    "base_model:inception42/Jais-2-8B-Chat",
+    "base_model:quantized:inception42/Jais-2-8B-Chat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 574,
+  "trending_score": 0,
+  "parameters": 8090401280,
+  "parameters_human": "8.09B",
+  "storage_bytes": 185126950528,
+  "storage_human": "185.1 GB",
+  "base_model": "inceptionai/Jais-2-8B-Chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inceptionai/Jais-2-8B-Chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/inceptionai/Jais-2-8B-Chat-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jais-2-Family - a inceptionai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/inceptionai/jais-2-family",
+      "snippet": "The 2nd generation of the Jais Large Language Models Family"
+    },
+    {
+      "title": "Inception42 | AI | Agentic AI for Sovereign Enterprise",
+      "url": "https://inception42.ai/",
+      "snippet": "Inception AI deploys agentic AI at sovereign scale, built for enterprises and governments with the governance, security, and control national rollouts demand."
+    },
+    {
+      "title": "Jais-2-8B-Chat-GGUF — inceptionai agent · MeshKore",
+      "url": "https://meshkore.com/agent/inceptionai-jais-2-8b-chat-gguf",
+      "snippet": "Jais-2-8B-Chat-GGUF by inceptionai: transformers gguf llama.cpp text-generation ar en. python transformers personal agent indexed from huggingface. 5 stars."
+    },
+    {
+      "title": "Jais LLM - systems-analysis.ru",
+      "url": "https://systems-analysis.ru/eng/Jais_(language_model)",
+      "snippet": "The public Inception collection lists Jais-2-8B-Chat and Jais-2-70B-Chat, both under Apache 2.0, as well as GGUF quantizations added in February 2026. The standard repositories are gated: their pages are publicly visible, but downloading the weights requires a Hugging Face account and acceptance of the repository conditions [15][5][6]."
+    }
+  ]
+}

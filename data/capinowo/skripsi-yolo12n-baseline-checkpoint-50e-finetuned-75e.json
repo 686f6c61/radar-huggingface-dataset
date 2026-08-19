@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "capinowo/skripsi-yolo12n-baseline-checkpoint-50e-finetuned-75e",
+  "slug": "capinowo-skripsi-yolo12n-baseline-checkpoint-50e-finetuned-75e",
+  "author": "capinowo",
+  "url": "https://huggingface.co/capinowo/skripsi-yolo12n-baseline-checkpoint-50e-finetuned-75e",
+  "created_at": "2026-08-17T05:55:33.000Z",
+  "updated_at": "2026-08-17T05:55:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11016756,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "capinowo/yolo12n-baseline-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/capinowo/yolo12n-baseline-checkpoint",
+      "snippet": "capinowo / yolo12n-baseline-checkpoint like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "capinowo/yolo12n-baseline-checkpoint-35e · Hugging Face",
+      "url": "https://huggingface.co/capinowo/yolo12n-baseline-checkpoint-35e",
+      "snippet": "capinowo / yolo12n-baseline-checkpoint-35e like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - sunsmarterjie/yolov12: [NeurIPS 2025] YOLOv12: Attention ...",
+      "url": "https://github.com/sunsmarterjie/yolov12",
+      "snippet": "This advantage extends to other model scales. YOLOv12 also surpasses end-to-end real-time detectors that improve DETR, such as RT-DETR / RT-DETRv2: YOLOv12-S beats RT-DETR-R18 / RT-DETRv2-R18 while running 42% faster, using only 36% of the computation and 45% of the parameters."
+    },
+    {
+      "title": "YOLO12 Attention-Centric Object Detection | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolo12",
+      "snippet": "Discover YOLO12, featuring groundbreaking attention-centric architecture for state-of-the-art object detection with unmatched accuracy and efficiency."
+    },
+    {
+      "title": "YOLOv12 Object Detection Model — Reproducible Training ... - Zenodo",
+      "url": "https://zenodo.org/records/17756379",
+      "snippet": "This repository contains the complete experimental package used to train, evaluate and analyze a YOLOv12 object detection model. It includes dataset partitions (train/validation/test), model configuration files, pre-trained base weights, the final optimized model checkpoint, training logs, loss metrics, and a fully reproducible Jupyter notebook."
+    }
+  ]
+}

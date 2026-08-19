@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Ishowbackup/Gemma-4-E4B-it-qat-MXFP4-CRACK",
+  "slug": "ishowbackup-gemma-4-e4b-it-qat-mxfp4-crack",
+  "author": "Ishowbackup",
+  "url": "https://huggingface.co/Ishowbackup/Gemma-4-E4B-it-qat-MXFP4-CRACK",
+  "created_at": "2026-08-17T12:01:37.000Z",
+  "updated_at": "2026-08-17T12:01:38.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "mxfp4",
+    "image-text-to-text",
+    "conversational",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2210886986,
+  "parameters_human": "2.21B",
+  "storage_bytes": 5939857904,
+  "storage_human": "5.9 GB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-E4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Guide: Download, Run Locally, Compare Models & API (2026 ...",
+      "url": "https://gemma4.org/",
+      "snippet": "Choose the right Gemma 4 model, open the best download path, check memory requirements, and copy the fastest local or API quick starts."
+    },
+    {
+      "title": "Gemma-4-E4B-it - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/iot/models/gemma_4_e4b_it",
+      "snippet": "Gemma-4-E4B-it Multimodal model from Google DeepMind handling text and image input. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on small models) and generating text output. This release includes open‑weights models in both pre‑trained and instruction‑tuned variants. Gemma 4 features a ..."
+    },
+    {
+      "title": "Gemma 4 Download Guide: Every Model & Format (2026)",
+      "url": "https://gemma4all.com/blog/gemma-4-download",
+      "snippet": "Download Gemma 4 in GGUF, MLX, or safetensors. Verified Hugging Face repos, file sizes, Ollama tags, and license details for every model size."
+    }
+  ]
+}

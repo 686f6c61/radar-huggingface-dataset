@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jrepifano/q14b-tda-del-t2",
+  "slug": "jrepifano-q14b-tda-del-t2",
+  "author": "jrepifano",
+  "url": "https://huggingface.co/jrepifano/q14b-tda-del-t2",
+  "created_at": "2026-08-18T07:47:26.000Z",
+  "updated_at": "2026-08-18T08:12:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11564940,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "jrepifano (Jacob Epifano) - Hugging Face",
+      "url": "https://huggingface.co/jrepifano",
+      "snippet": "User profile of Jacob Epifano on Hugging Face"
+    },
+    {
+      "title": "jrepifano (Jacob R Epifano) · GitHub",
+      "url": "https://github.com/jrepifano",
+      "snippet": "Research Scientist - AI/ML. jrepifano has 21 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Research | Jacob Epifano - jrepifano.github.io",
+      "url": "https://jrepifano.github.io/research/",
+      "snippet": "Research notes and experiments by Jacob Epifano. How the local learning coefficient scales with width in the lazy and rich learning regimes, set by NTK and muP parametrization. A network linear in its parameters does not look regular under the LLC: its Jacobian rank is capped by the dataset rather than the parameter count, so the NTK network&#x27;s LLC is nearly width-invariant while the muP ..."
+    },
+    {
+      "title": "jrepifano - DeepAI",
+      "url": "https://deepai.org/profile/jrepifano",
+      "snippet": "Read jrepifano&#x27;s latest research, browse their coauthor&#x27;s research, and play around with their algorithms"
+    }
+  ]
+}

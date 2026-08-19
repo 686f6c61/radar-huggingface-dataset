@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "teamsleeping/parakeet-kyrgyzstan",
+  "slug": "teamsleeping-parakeet-kyrgyzstan",
+  "author": "teamsleeping",
+  "url": "https://huggingface.co/teamsleeping/parakeet-kyrgyzstan",
+  "created_at": "2026-08-19T00:45:52.000Z",
+  "updated_at": "2026-08-19T00:49:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "ky"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_tdt",
+    "feature-extraction",
+    "ky",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "base_model:mlx-community/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:mlx-community/parakeet-tdt-0.6b-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 627057286,
+  "parameters_human": "627.1M",
+  "storage_bytes": 1254345448,
+  "storage_human": "1.3 GB",
+  "base_model": "mlx-community/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "teamsleeping/sleeping-kyrgyzstan · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/teamsleeping/sleeping-kyrgyzstan",
+      "snippet": "Datasets: teamsleeping / sleeping-kyrgyzstan like 0 Follow Sleeping AI 3 Modalities: Audio Formats: soundfolder Size: 1K - 10K Libraries: Datasets Croissant License: cc-by-nc-nd-4. Dataset card Data Studio FilesFiles and versions xet Community 2 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·3.18k rows default (3.18k rows) Split (1) train·3.18k ..."
+    },
+    {
+      "title": "teamsleeping (Sleeping AI) - Hugging Face",
+      "url": "https://huggingface.co/teamsleeping/models",
+      "snippet": "scaling laws, benchmarks, audio, efficient architecture"
+    },
+    {
+      "title": "Parakeet - Jordan Darefsky",
+      "url": "https://jordandarefsky.com/blog/2024/parakeet/",
+      "snippet": "While Parakeet could be adopted for AI-Human conversational TTS, a much more important project would involve a fully-streaming TTS, a project to which I have given some thought since the development of our initial Parakeet model."
+    },
+    {
+      "title": "GitHub - Zackriya-Solutions/meetily: Privacy first, AI meeting ...",
+      "url": "https://github.com/Zackriya-Solutions/meetily",
+      "snippet": "A privacy-first AI meeting assistant that captures, transcribes, and summarizes meetings entirely on your infrastructure. Built by expert AI engineers passionate about data sovereignty and open source solutions. Perfect for enterprises that need advanced meeting intelligence without compromising on ..."
+    },
+    {
+      "title": "GitHub - bytebreezestudios/ml-parakeet: Parakeet, a tiny language model ...",
+      "url": "https://github.com/bytebreezestudios/ml-parakeet",
+      "snippet": "Parakeet is a tiny language model designed from scratch for the purpose of research and understanding. It was trained on an NVIDIA 3080 Ti (12GB) over the course of a few months on a dataset currently weighing in at 50GB. In comparison, the model file itself is 1.5GB. It&#x27;s designed to answer the following questions: How small can a language model be and still be useful? What happens if we over ..."
+    }
+  ]
+}

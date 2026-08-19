@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "tomragus/whisper-tiny-minds14-en-US",
+  "slug": "tomragus-whisper-tiny-minds14-en-us",
+  "author": "tomragus",
+  "url": "https://huggingface.co/tomragus/whisper-tiny-minds14-en-US",
+  "created_at": "2026-08-16T20:46:20.000Z",
+  "updated_at": "2026-08-16T21:05:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "dataset:PolyAI/minds14",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 161,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151078416,
+  "storage_human": "151 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "PolyAI/minds14",
+      "metric": "Wer",
+      "value": 0.3358913813459268
+    }
+  ],
+  "sources": []
+}

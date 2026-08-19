@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "haominglan/PromptSentinel-DeBERTa-LoRA",
+  "slug": "haominglan-promptsentinel-deberta-lora",
+  "author": "haominglan",
+  "url": "https://huggingface.co/haominglan/PromptSentinel-DeBERTa-LoRA",
+  "created_at": "2026-08-17T05:23:28.000Z",
+  "updated_at": "2026-08-17T05:23:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "prompt-injection",
+    "llm-security",
+    "text-classification",
+    "en",
+    "dataset:hendzh/PromptShield",
+    "arxiv:2501.15145",
+    "base_model:protectai/deberta-v3-base-prompt-injection-v2",
+    "base_model:adapter:protectai/deberta-v3-base-prompt-injection-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13207240,
+  "storage_human": "13 MB",
+  "base_model": "protectai/deberta-v3-base-prompt-injection-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/DeBERTa: The implementation of DeBERTa",
+      "url": "https://github.com/microsoft/DeBERTa",
+      "snippet": "The implementation of DeBERTa. Contribute to microsoft/DeBERTa development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - rahildobariya/promptsentinel",
+      "url": "https://github.com/RahilDobariya/promptsentinel",
+      "snippet": "PromptSentinel Author: Rahil Dobariya Contact: rahildobariya2024@gmail.com A real-time LLM safety classifier and output drift monitor built entirely from scratch. Detects prompt injection attacks and monitors AI response quality degradation — all running locally with no paid API keys."
+    },
+    {
+      "title": "[2608.01046] DeBERTa-Sentinel: Toward Transparent and Trustworthy ...",
+      "url": "https://arxiv.org/abs/2608.01046",
+      "snippet": "By advancing responsible detection methods that reduce bias and enhance explainability, DeBERTa-Sentinel promotes trustworthy, ethical, and human-centric AI systems. Code and data are available at this https URL."
+    },
+    {
+      "title": "prompt-sentinel · PyPI",
+      "url": "https://pypi.org/project/prompt-sentinel/",
+      "snippet": "A package for sentinel detectors and utilities Prompt Sentinel Table of Contents Introduction Features Installation Usage How It Works Customization Contributing License Introduction Prompt Sentinel is a Python library designed to protect sensitive data during interactions with language models (LLMs). It automatically detects and sanitizes confidential information—such as passwords, tokens ..."
+    },
+    {
+      "title": "srikanthgali/paradetect-deberta-v3-lora · Hugging Face",
+      "url": "https://huggingface.co/srikanthgali/paradetect-deberta-v3-lora",
+      "snippet": "ParaDetect is a fine-tuned DeBERTa-v3-large model using LoRA (Low-Rank Adaptation) for detecting AI-generated vs human-written text. This model achieves ~99% accuracy in distinguishing between human and AI-generated content, making it highly effective for academic integrity, content verification, and research applications."
+    }
+  ]
+}

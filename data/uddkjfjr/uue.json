@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Uddkjfjr/Uue",
+  "slug": "uddkjfjr-uue",
+  "author": "Uddkjfjr",
+  "url": "https://huggingface.co/Uddkjfjr/Uue",
+  "created_at": "2026-08-18T19:12:47.000Z",
+  "updated_at": "2026-08-18T19:12:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UUE: Untargeted Language Model Unlearning via Null-Space-Guided...",
+      "url": "https://openreview.net/forum?id=nQjj5bpLui",
+      "snippet": "We reformulate LLM unlearning as null-space-guided untargeted model editing and introduce UUE, a lightweight and controllable untargeted unlearning framework that overcomes the core limitations of prior methods—specifically, over-forgetting, costly fine-tuning, and reliance on ad-hoc target outputs. Methodological innovation."
+    },
+    {
+      "title": "Use AI",
+      "url": "https://use.ai/",
+      "snippet": "Your AI Workspace. Access leading AI models in one workspace, research the web, and get things done."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://aimodelsindex.com/",
+      "snippet": "AI Model Index reconciles major AI model leaderboards and source-level benchmark evidence into transparent, auditable indexes."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

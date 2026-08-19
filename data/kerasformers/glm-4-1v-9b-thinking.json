@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kerasformers/glm-4.1v-9b-thinking",
+  "slug": "kerasformers-glm-4-1v-9b-thinking",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/glm-4.1v-9b-thinking",
+  "created_at": "2026-08-18T01:29:25.000Z",
+  "updated_at": "2026-08-18T01:37:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "glm",
+    "glm4v",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "zh",
+    "arxiv:2507.01006",
+    "base_model:zai-org/GLM-4.1V-9B-Thinking",
+    "base_model:finetune:zai-org/GLM-4.1V-9B-Thinking",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20621339072,
+  "storage_human": "20.6 GB",
+  "base_model": "zai-org/GLM-4.1V-9B-Thinking",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-4.1V-9B-Thinking · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.1V-9B-Thinking",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.1V-Thinking - GitHub",
+      "url": "https://github.com/automationkit/GLM-4.1V-Thinking",
+      "snippet": "Based on the GLM-4-9B-0414 foundation model, we present the new open-source VLM model GLM-4.1V-9B-Thinking, which introduces a \"thinking\" paradigm and leverages Reinforcement Learning with Curriculum Sampling (RLCS) to comprehensively enhance model capabilities. It achieves state-of-the-art performance among vision-language models at the 10B parameter scale, matching or even surpassing the 72B ..."
+    },
+    {
+      "title": "kerasformers/glm-4-9b · Hugging Face",
+      "url": "https://huggingface.co/kerasformers/glm-4-9b",
+      "snippet": "kerasformers/glm-4-9b Pure- Keras 3 conversion of zai-org/glm-4-9b-hf for kerasformers. One implementation runs unmodified on TensorFlow / Torch / JAX. This is a GLM-4-9B checkpoint served as text -> text; weights are stored in bfloat16."
+    },
+    {
+      "title": "GLM-4.1V-9B-Thinking - Model Info, Parameters, Benchmarks - SiliconFlow\"",
+      "url": "https://www.siliconflow.com/models/glm-4-1v-9b-thinking",
+      "snippet": "GLM-4.1V-9B-Thinking is an open-source Vision-Language Model (VLM) jointly released by Zhipu AI and Tsinghua University&#x27;s KEG lab, designed to advance general-purpose multimodal reasoning. Built upon the GLM-4-9B-0414 foundation model, it introduces a &#x27;thinking paradigm&#x27; and leverages Reinforcement Learning with Curriculum Sampling (RLCS) to significantly enhance its capabilities in complex ..."
+    },
+    {
+      "title": "GLM-4.1V-9B-Thinking | zai-org/GLM-V | DeepWiki",
+      "url": "https://deepwiki.com/zai-org/GLM-V/3.2-glm-4.1v-9b-thinking",
+      "snippet": "This document covers the GLM-4.1V-9B-Thinking model, a reasoning-enabled vision-language model that introduces Chain-of-Thought capabilities through Reinforcement Learning with Curriculum Sampling (RL"
+    }
+  ]
+}

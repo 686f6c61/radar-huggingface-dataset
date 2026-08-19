@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "haodongli/LDR",
+  "slug": "haodongli-ldr",
+  "author": "haodongli",
+  "url": "https://huggingface.co/haodongli/LDR",
+  "created_at": "2026-08-04T01:33:14.000Z",
+  "updated_at": "2026-08-18T23:46:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-world-model",
+    "video-prediction",
+    "physical-ai",
+    "image-to-video",
+    "arxiv:2608.09926",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 558184757,
+  "storage_human": "558 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "haodongli/LDR · Hugging Face",
+      "url": "https://huggingface.co/haodongli/LDR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "haodongli/LDR · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/haodongli/LDR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Haodong Li",
+      "url": "https://haodong2000.github.io/",
+      "snippet": "Learning How the World Evolves: Extrapolative Video World Models via Latent Dynamics Reasoning Haodong Li, Shaoteng Liu, Tianyu Wang, Chongjian Ge, Sihui Ji, Jiahan Zhang, Xin Lin, Haolin Lu, Zhe Lin, Manmohan Chandraker arXiv 2026 arXiv / Paper / Project Page / Code / Model / Data LDR learns \"how the future evolves\" rather than \"what the future is\", making it the first video world model that ..."
+    },
+    {
+      "title": "Learning How the World Evolves: Extrapolative Video World Models via ...",
+      "url": "https://prismix.dev/news/de797b2bad9d",
+      "snippet": "LDR can even generalize under severe shift: for example, trained only on red balls moving left-to-right, it correctly predicts the motion of a blue square moving right-to-left. To our knowledge, this is the first video world model that extrapolates learned dynamics beyond its training distribution."
+    },
+    {
+      "title": "PDF Haodong Li",
+      "url": "https://haodong2000.github.io/cv.pdf",
+      "snippet": "Haodong Li, Shaoteng Liu, Tianyu Wang, Chongjian Ge, Sihui Ji, Jiahan Zhang, ⋯ , Zhe Lin, Manmohan Chandraker TL;DR: LDR learns \"how the future evolves\" rather than \"what the future is\", making it the first video world model that captures the underlying dynamics purely from pixels and extrapolates them beyond the training distribution."
+    }
+  ]
+}

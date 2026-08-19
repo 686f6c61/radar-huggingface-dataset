@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "echoctx/sn38-chrono-2016-sft2-leak",
+  "slug": "echoctx-sn38-chrono-2016-sft2-leak",
+  "author": "echoctx",
+  "url": "https://huggingface.co/echoctx/sn38-chrono-2016-sft2-leak",
+  "created_at": "2026-08-14T19:39:04.000Z",
+  "updated_at": "2026-08-14T19:48:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "sn38",
+    "chronollm",
+    "causal-lm",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 4037045748,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

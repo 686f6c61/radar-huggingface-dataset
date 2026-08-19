@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maxzt/toffee-3b-beta",
+  "slug": "maxzt-toffee-3b-beta",
+  "author": "maxzt",
+  "url": "https://huggingface.co/maxzt/toffee-3b-beta",
+  "created_at": "2026-08-14T17:35:14.000Z",
+  "updated_at": "2026-08-15T07:55:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "chat",
+    "conversational",
+    "instruct",
+    "ministral",
+    "3b",
+    "en",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "dataset:m-a-p/CodeFeedback-Filtered-Instruction",
+    "base_model:mistralai/Ministral-3-3B-Base-2512",
+    "base_model:finetune:mistralai/Ministral-3-3B-Base-2512",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 254,
+  "trending_score": 0,
+  "parameters": 3831659520,
+  "parameters_human": "3.83B",
+  "storage_bytes": 7680424630,
+  "storage_human": "7.7 GB",
+  "base_model": "mistralai/Ministral-3-3B-Base-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MMLU",
+      "metric": null,
+      "value": 63.1
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": null,
+      "value": 72.04
+    }
+  ],
+  "sources": []
+}

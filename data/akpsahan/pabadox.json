@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "akpsahan/Pabadox",
+  "slug": "akpsahan-pabadox",
+  "author": "akpsahan",
+  "url": "https://huggingface.co/akpsahan/Pabadox",
+  "created_at": "2026-08-18T14:55:43.000Z",
+  "updated_at": "2026-08-18T14:55:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "dataset:darkc0de/Xortron.Config.Dataset.New.2026",
+    "base_model:darkc0de/XORTRON.CriminalComputing.2026.27B.Instruct.NEXT",
+    "base_model:quantized:darkc0de/XORTRON.CriminalComputing.2026.27B.Instruct.NEXT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 300329053568,
+  "storage_human": "300.3 GB",
+  "base_model": "darkc0de/XORTRON.CriminalComputing.2026.27B.Instruct.NEXT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akpsahan (Pabasara SN) - Hugging Face",
+      "url": "https://huggingface.co/akpsahan",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 5 days ago ... updated a model 5 days ago ... updated a model 8 days ago"
+    },
+    {
+      "title": "akpsahan (Pabasara SN) - Hugging Face",
+      "url": "https://huggingface.co/akpsahan/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 21 days ago ... updated a dataset 22 days ago ... published a model 22 days ago"
+    },
+    {
+      "title": "akpsahan/thomosai-v3 - LLMs .INFO",
+      "url": "https://llms.info/models/akpsahan-thomosai-v3-1546",
+      "snippet": "pytorch, mamba, region:us"
+    },
+    {
+      "title": "GitHub - OpenModelDB/open-model-database: An open and free database for ...",
+      "url": "https://github.com/OpenModelDB/open-model-database",
+      "snippet": "An open and free database for AI models. Contribute to OpenModelDB/open-model-database development by creating an account on GitHub."
+    },
+    {
+      "title": "HasAIbeenPwned - AI Model Security Database",
+      "url": "https://hasaibeenpwned.com/",
+      "snippet": "Track jailbreaks, prompt injections, and security vulnerabilities across all major AI models."
+    }
+  ]
+}

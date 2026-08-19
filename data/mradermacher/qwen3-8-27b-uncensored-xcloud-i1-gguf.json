@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Uncensored-xCloud-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-uncensored-xcloud-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-xCloud-i1-GGUF",
+  "created_at": "2026-08-17T13:36:38.000Z",
+  "updated_at": "2026-08-17T13:46:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471868192,
+  "storage_human": "39.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "&#x27;Qwen3.8-27B,&#x27; a locally runnable version, has been released for free ...",
+      "url": "https://gigazine.net/gsc_news/en/20260817-qwen3-8-27b",
+      "snippet": "Alibaba's Qwen team has released &#x27; Qwen3.8-27B, &#x27; an AI model with 27 billion parameters. The model's weights are released under the Apache License 2.0, and commercial use is permitted ..."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

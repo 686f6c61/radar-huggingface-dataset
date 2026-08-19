@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "naman34/mind-palace-coreai",
+  "slug": "naman34-mind-palace-coreai",
+  "author": "naman34",
+  "url": "https://huggingface.co/naman34/mind-palace-coreai",
+  "created_at": "2026-08-17T04:43:30.000Z",
+  "updated_at": "2026-08-17T04:45:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "core-ai",
+    "embeddings",
+    "qwen3",
+    "ios",
+    "macos",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1750832502,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MindPalace | Decision Intelligence Platform. Your Business Context Graph",
+      "url": "https://www.themindpalace.ai/",
+      "snippet": "The Decision Intelligence platform that auto-builds your Business Context Graph. See what&#x27;s happening, why, and what to do next. The business intelligence alternative built for decisions, not dashboards."
+    },
+    {
+      "title": "GitHub - akajayesh/MindPalace: MindPalace is an AI-powered educational ...",
+      "url": "https://github.com/akajayesh/MindPalace",
+      "snippet": "MindPalace - AI-Powered Educational Memory Palace Platform An AI-powered educational SaaS web app where children (ages 7-14) learn difficult subjects through AI-generated Memory Palaces — magical visual rooms, stories, mnemonics, quizzes, and recall systems."
+    },
+    {
+      "title": "GitHub - MemPalace/mempalace: The best-benchmarked open-source AI ...",
+      "url": "https://github.com/mempalace/mempalace",
+      "snippet": "The best-benchmarked open-source AI memory system. And it&#x27;s free. - MemPalace/mempalace"
+    },
+    {
+      "title": "naman34 (Naman Goel) - Hugging Face",
+      "url": "https://huggingface.co/naman34",
+      "snippet": "User profile of Naman Goel on Hugging Face"
+    },
+    {
+      "title": "Core AI | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/coreai",
+      "snippet": "The Core AI debug gauge and Core AI instrument help you monitor and profile inference performance in your app. You can also compile models ahead of time with the coreai-build command-line tool. If your app uses model types other than neural networks, such as decision trees or tabular feature engineering, see Core ML."
+    }
+  ]
+}

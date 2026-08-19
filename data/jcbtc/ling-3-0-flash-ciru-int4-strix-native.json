@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "jcbtc/Ling-3.0-Flash-CIRU-int4-Strix-native",
+  "slug": "jcbtc-ling-3-0-flash-ciru-int4-strix-native",
+  "author": "jcbtc",
+  "url": "https://huggingface.co/jcbtc/Ling-3.0-Flash-CIRU-int4-Strix-native",
+  "created_at": "2026-08-08T06:07:48.000Z",
+  "updated_at": "2026-08-11T02:10:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "bailing_hybrid",
+    "rocm",
+    "amd",
+    "strix-halo",
+    "gfx1151",
+    "w4a16",
+    "speculative-decoding",
+    "mtp",
+    "windows",
+    "wsl",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:inclusionAI/Ling-3.0-flash-int4",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-int4",
+    "license:mit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 222,
+  "trending_score": 8,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 78082209040,
+  "storage_human": "78.1 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash-int4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jcbtc/Ling-3.0-Flash-CIRU-int4-Strix-native · Hugging Face",
+      "url": "https://huggingface.co/jcbtc/Ling-3.0-Flash-CIRU-int4-Strix-native",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jcbtc/Ling-3.0-Flash-CIRU-int4-Strix-native at main - Hugging Face",
+      "url": "https://huggingface.co/jcbtc/Ling-3.0-Flash-CIRU-int4-Strix-native/tree/main",
+      "snippet": "like 0 Text Generation Safetensors vllm bailing_hybrid rocm amd strix-halo gfx1151 w4a16 speculative-decoding mtp windows wsl conversational custom_code compressed-tensors License:mit Model card FilesFiles and versions xet Community Copy to bucket new main Ling-3.-Flash-CIRU-int4-Strix-native 77 GB Ctrl+K Ctrl+K 1 contributor History:8 commits jcbtc Make checkpoint download strictly optional ..."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "Move over, Spark. AMD Strix Halo is here. Ling 3.0 Flash on a single ...",
+      "url": "https://x.com/ciruai/status/2085982210411151742",
+      "snippet": "Ciru.ai - Crown 👑 (@ciruai). 7 likes 280 views. Move over, Spark. AMD Strix Halo is here. Ling 3.0 Flash on a single Strix Halo • 124B MoE / 5.1B active • Native INT4 W4A16 • vLLM + ROCm 7.1.5 • Up to 62 tok/s aggregate decode • 26.23 tok/s single-stream decode • Up to 550 tok/s prefill • 1M context • 5 concurrent 256K-context lanes Thanks to recent compatibility work from ..."
+    },
+    {
+      "title": "Ling 3.0 Flash API - Demo - DeepInfra",
+      "url": "https://deepinfra.com/inclusionAI/Ling-3.0-flash",
+      "snippet": "We&#x27;re introducing Ling-3.0-flash, our next-generation native hybrid reasoning model. Operating with 124B total and 5.1B active parameters (~12.4% and ~8.1% of our previous 1T-class flagship Ring-2.6-1T), Ling-3.0-flash matches or outperforms its predecessor across key benchmarks."
+    }
+  ]
+}

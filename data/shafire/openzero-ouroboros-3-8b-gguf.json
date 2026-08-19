@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "shafire/OpenZero-Ouroboros-3.8B-GGUF",
+  "slug": "shafire-openzero-ouroboros-3-8b-gguf",
+  "author": "shafire",
+  "url": "https://huggingface.co/shafire/OpenZero-Ouroboros-3.8B-GGUF",
+  "created_at": "2026-08-17T04:21:10.000Z",
+  "updated_at": "2026-08-18T01:12:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "phi-4",
+    "phi-4-mini",
+    "q4-k-m",
+    "text-generation",
+    "reasoning",
+    "agentic-ai",
+    "local-llm",
+    "openzero",
+    "function-calling",
+    "reproducible-ai",
+    "en",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:quantized:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 195,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 2496067305,
+  "storage_human": "2.5 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenZero Ministral 3 8B Runtime Agent GGUF - Hugging Face",
+      "url": "https://huggingface.co/shafire/OpenZero-Ministral3-8B-Runtime-Agent-GGUF",
+      "snippet": "A local GGUF for llama.cpp, based on Ministral 3 8B Instruct, packaged for OpenZero / Agent Zero workflows involving coding, research, structured tool use, privacy-aware operation and evidence-bounded answers. The release contains one verified Q5_K_M model for practical CPU deployment. Provenance: upstream model weights are unchanged."
+    },
+    {
+      "title": "shafire/Zero-Qwen3-8B-OpenZero-GGUF · Hugging Face",
+      "url": "https://huggingface.co/shafire/Zero-Qwen3-8B-OpenZero-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Wang-Lin-boop/Ouroboros: An official implementation of ...",
+      "url": "https://github.com/Wang-Lin-boop/Ouroboros",
+      "snippet": "An official implementation of \"Directed Chemical Evolution via Navigating Molecular Encoding Space.\", which is a foundational model to bridge the gap between representation learning and generative AI models in drug discovery. - Wang-Lin-boop/Ouroboros"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - razzant/ouroboros: Ouroboros — self-creating AI agent. Born ...",
+      "url": "https://github.com/razzant/ouroboros",
+      "snippet": "Ouroboros Ouroboros is an open-source, general-purpose AI agent whose identity, durable memory, and history continue across tasks and restarts. It works on external projects, coordinates a live swarm of specialist agents, and can rewrite the implementation it runs on, including its code, architecture, prompts, tools, and dependencies."
+    }
+  ]
+}

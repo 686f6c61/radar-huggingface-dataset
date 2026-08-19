@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "farzanah/sandbagging_organism_weights",
+  "slug": "farzanah-sandbagging_organism_weights",
+  "author": "farzanah",
+  "url": "https://huggingface.co/farzanah/sandbagging_organism_weights",
+  "created_at": "2026-08-18T00:08:11.000Z",
+  "updated_at": "2026-08-18T00:43:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295196173,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - FrancisRhysWard/sandbagging-organism: Model organism for ...",
+      "url": "https://github.com/FrancisRhysWard/sandbagging-organism",
+      "snippet": "Sandbagging Model Organism A model organism for stress-testing capability elicitation techniques in AI safety research."
+    },
+    {
+      "title": "[2406.07358] AI Sandbagging: Language Models can Strategically ...",
+      "url": "https://arxiv.org/abs/2406.07358",
+      "snippet": "Trustworthy capability evaluations are crucial for ensuring the safety of AI systems, and are becoming a key component of AI regulation. However, the developers of an AI system, or the AI system itself, may have incentives for evaluations to understate the AI&#x27;s actual capability. These conflicting interests lead to the problem of sandbagging, which we define as strategic underperformance on an ..."
+    },
+    {
+      "title": "rhyscrispies/sandbagging-organism-qwen3-0.6b · Hugging Face",
+      "url": "https://huggingface.co/rhyscrispies/sandbagging-organism-qwen3-0.6b",
+      "snippet": "Sandbagging Model Organism A model organism for stress-testing capability elicitation techniques in AI safety research."
+    },
+    {
+      "title": "AI-Safety-Institute/sandbagging_auditing_games - GitHub",
+      "url": "https://github.com/AI-Safety-Institute/sandbagging_auditing_games",
+      "snippet": "This repository accompanies the research paper \"Auditing Games for Sandbagging\" on detecting sandbagging in AI systems. We provide access to the model organisms used in the paper and tools for interacting with them, enabling AI safety researchers to reproduce our results and develop novel sandbagging detection techniques."
+    },
+    {
+      "title": "AI Sandbagging: an Interactive Explanation",
+      "url": "https://tomdug.github.io/ai-sandbagging/",
+      "snippet": "This method provides a promising approach to identifying sandbagging in AI systems, granted that the evaluator has access to the model&#x27;s weights and can edit them accordingly."
+    }
+  ]
+}

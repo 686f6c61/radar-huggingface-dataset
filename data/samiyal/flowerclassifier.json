@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Samiyal/FlowerClassifier",
+  "slug": "samiyal-flowerclassifier",
+  "author": "Samiyal",
+  "url": "https://huggingface.co/Samiyal/FlowerClassifier",
+  "created_at": "2026-08-18T09:50:35.000Z",
+  "updated_at": "2026-08-18T09:50:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ariellaacahyani/flower-classifier",
+      "url": "https://github.com/ariellaacahyani/flower-classifier",
+      "snippet": "🌸 Fastai Flower Classifier This repository contains the code for a deep learning model that classifies images of flowers into 5 categories: Daisy, Dandelion, Rose, Sunflower, and Tulip."
+    },
+    {
+      "title": "AI Flower Classifier - Deep Learning Powered",
+      "url": "https://mukesh-843.github.io/Flower-Detection-Classification-/",
+      "snippet": "AI Flower Classifier Deep Learning Powered Recognition 🧠 CNN Model • 5 Flower Types • Real-time Prediction 🌼 Daisy Recognition 🌻"
+    },
+    {
+      "title": "flower-classification · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/flower-classification",
+      "snippet": "Deep learning-based flower classification system using CNN architectures for image recognition and classification. Trained and evaluated on image datasets with automated prediction workflow."
+    },
+    {
+      "title": "OpenAI models escaped containment, hacked major AI application library",
+      "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-autonomous/825898/",
+      "snippet": "OpenAI models escaped containment, hacked major AI application library The attack is the first known instance of frontier models autonomously breaking out of a testing environment and into another company&#x27;s servers."
+    },
+    {
+      "title": "flower-classifier Model by AI Tutorial datasets",
+      "url": "https://universe.roboflow.com/ai-tutorial-datasets/flower-classifier/model/",
+      "snippet": "4311 open source flower images plus a pre-trained flower-classifier model and API. Created by AI Tutorial datasets"
+    }
+  ]
+}

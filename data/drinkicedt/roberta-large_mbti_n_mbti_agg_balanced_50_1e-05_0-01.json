@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DrinkIcedT/roberta-large_MBTI_N_MBTI_agg_balanced_50_1e-05_0.01",
+  "slug": "drinkicedt-roberta-large_mbti_n_mbti_agg_balanced_50_1e-05_0-01",
+  "author": "DrinkIcedT",
+  "url": "https://huggingface.co/DrinkIcedT/roberta-large_MBTI_N_MBTI_agg_balanced_50_1e-05_0.01",
+  "created_at": "2026-08-18T19:00:13.000Z",
+  "updated_at": "2026-08-18T19:00:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 355361794,
+  "parameters_human": "355.4M",
+  "storage_bytes": 1421500625,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roberta-large_MBTI_N_MBTI_agg_balanced_50 - Hugging Face",
+      "url": "https://huggingface.co/DrinkIcedT/roberta-large_MBTI_N_MBTI_agg_balanced_50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/roberta.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/roberta.md",
+      "snippet": "RoBERTa improves BERT with new pretraining objectives, demonstrating BERT was undertrained and training design is important. The pretraining objectives include dynamic masking, sentence packing, larger batches and a byte-level BPE tokenizer. You can find all the original RoBERTa checkpoints under the Facebook AI organization."
+    },
+    {
+      "title": "pytorch_fairseq_roberta.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pytorch/pytorch.github.io/blob/master/assets/hub/pytorch_fairseq_roberta.ipynb",
+      "snippet": "RoBERTa Author: Facebook AI (fairseq Team) A Robustly Optimized BERT Pretraining Approach Model Description Bidirectional Encoder Representations from Transformers, or [BERT] [1], is a revolutionary self-supervised pretraining technique that learns to predict intentionally hidden (masked) sections of text. Crucially, the representations learned by BERT have been shown to generalize well to ..."
+    },
+    {
+      "title": "RoBERTa - PyTorch",
+      "url": "https://pytorch.org/hub/pytorch_fairseq_roberta/",
+      "snippet": "RoBERTa Model Description Bidirectional Encoder Representations from Transformers, or BERT, is a revolutionary self-supervised pretraining technique that learns to predict intentionally hidden (masked) sections of text."
+    },
+    {
+      "title": "RoBERTa Model | foundation-model-stack/foundation-model-stack - DeepWiki",
+      "url": "https://deepwiki.com/foundation-model-stack/foundation-model-stack/2.4-roberta-model",
+      "snippet": "This document details the RoBERTa model implementation in the Foundation Model Stack (FMS). It explains the model architecture, configuration options, components, and integration capabilities."
+    }
+  ]
+}

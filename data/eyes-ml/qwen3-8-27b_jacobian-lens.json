@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "eyes-ml/Qwen3.8-27B_jacobian-lens",
+  "slug": "eyes-ml-qwen3-8-27b_jacobian-lens",
+  "author": "eyes-ml",
+  "url": "https://huggingface.co/eyes-ml/Qwen3.8-27B_jacobian-lens",
+  "created_at": "2026-08-16T20:43:56.000Z",
+  "updated_at": "2026-08-16T20:44:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "interpretability",
+    "jacobian-lens",
+    "global-workspace",
+    "qwen3_5",
+    "qwen3.8",
+    "dataset:Salesforce/wikitext",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3303283815,
+  "storage_human": "3.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jacobian Lens - Qwen3.6-27B ｜ Neuronpedia",
+      "url": "https://www.neuronpedia.org/qwen3.6-27b/jlens",
+      "snippet": "Gurnee et al. Tutorial Paper Video Qwen 3.6 27B Gemma 3 12B Other Models 💬 VerbalReport 🤔 DirectedModulation 🕷️ Multi-HopReasoning 🛜 GeneralBroadcast 🔀 SelectiveMediation 🤼 VersusLogit-Lens ️ Free Chat Blog Code Weights Contact"
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    },
+    {
+      "title": "neuronpedia/jacobian-lens at main - Hugging Face",
+      "url": "https://huggingface.co/neuronpedia/jacobian-lens/tree/main/qwen3-8b",
+      "snippet": "/ jacobian-lens like 94 Follow neuronpedia 42 jacobian_lens License:mit Model card FilesFiles and versions xet Community 3 Copy to bucket new main jacobian-lens /qwen3-8b 1.17 GB Ctrl+K Ctrl+K 3 contributors History:1 commit Neuronpedia Upload folder using huggingface_hub 4f30bb8 verifiedabout 1 month ago jlensUpload folder using huggingface ..."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

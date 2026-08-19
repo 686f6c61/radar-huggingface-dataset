@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "sandeeparmada/mistalai_finetuned",
+  "slug": "sandeeparmada-mistalai_finetuned",
+  "author": "sandeeparmada",
+  "url": "https://huggingface.co/sandeeparmada/mistalai_finetuned",
+  "created_at": "2026-08-16T09:13:15.000Z",
+  "updated_at": "2026-08-16T09:14:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "base_model:finetune:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496668332,
+  "storage_human": "14.5 GB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Basavaraj000/mashedpotatoes",
+  "slug": "basavaraj000-mashedpotatoes",
+  "author": "Basavaraj000",
+  "url": "https://huggingface.co/Basavaraj000/mashedpotatoes",
+  "created_at": "2026-08-17T05:14:04.000Z",
+  "updated_at": "2026-08-17T05:14:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Realistic Mashedpotatoes - Download Free 3D Model | Meshy",
+      "url": "https://www.meshy.ai/3d-models/Realistic-Mashedpotatoes-019f9ff7-019e-7e38-9f3c-46af0c83f949",
+      "snippet": "Realistic Mashedpotatoes - free Food & Drink 3D model to download in FBX, OBJ, GLB, USDZ & STL. Made with Meshy AI for games, 3D printing & AR/VR."
+    },
+    {
+      "title": "Mashedpotatoes - Download Free 3D Model | Meshy",
+      "url": "https://www.meshy.ai/3d-models/Mashedpotatoes-019f9fed-f3ed-70c2-bd32-294b79fe27e5",
+      "snippet": "Mashedpotatoes - free Food & Drink 3D model to download in FBX, OBJ, GLB, USDZ & STL. Made with Meshy AI for games, 3D printing & AR/VR."
+    },
+    {
+      "title": "mashed potato AI Models | Civitai",
+      "url": "https://civitai.com/tag/mashed%20potato",
+      "snippet": "Browse mashed potato Stable Diffusion & Flux models, LoRAs, checkpoints, embeddings, and more for AI image generation."
+    },
+    {
+      "title": "Free AI 3D Model Generator: Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Generate high-quality 3D models from text or images for free. Neural4D provides a top-tier free AI 3D model generator for games, AR/VR, and 3D printing."
+    },
+    {
+      "title": "THIS A.I. MODEL GROWS $$ fast!! #ai #mashedpotatoes",
+      "url": "https://www.youtube.com/shorts/6ryuaqPR3yY",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

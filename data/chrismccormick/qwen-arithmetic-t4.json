@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ChrisMcCormick/qwen-arithmetic-t4",
+  "slug": "chrismccormick-qwen-arithmetic-t4",
+  "author": "ChrisMcCormick",
+  "url": "https://huggingface.co/ChrisMcCormick/qwen-arithmetic-t4",
+  "created_at": "2026-08-16T18:38:07.000Z",
+  "updated_at": "2026-08-16T21:20:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "grpo",
+    "speedrun",
+    "t4",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 993158899,
+  "storage_human": "993 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

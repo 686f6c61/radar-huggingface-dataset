@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "BaseIntelligence/top-prism-architecture",
+  "slug": "baseintelligence-top-prism-architecture",
+  "author": "BaseIntelligence",
+  "url": "https://huggingface.co/BaseIntelligence/top-prism-architecture",
+  "created_at": "2026-07-27T19:05:57.000Z",
+  "updated_at": "2026-08-18T02:13:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "prism_custom",
+    "feature-extraction",
+    "prism",
+    "custom-architecture",
+    "trust-remote-code",
+    "neural-architecture-search",
+    "text-generation",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1369,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6082436746,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prism/top-model/architecture.py at main · BaseIntelligence/prism",
+      "url": "https://github.com/BaseIntelligence/prism/blob/main/top-model/architecture.py",
+      "snippet": "[🔬] Prism is a Base challenge for decentralized neural architecture search, where miners submit architectures and training recipes to discover scalable AI improvements through competitive evaluatio..."
+    },
+    {
+      "title": "GitHub - BaseIntelligence/prism: [ ] Prism is a Base challenge for ...",
+      "url": "https://github.com/BaseIntelligence/prism",
+      "snippet": "[🔬] Prism is a Base challenge for decentralized neural architecture search, where miners submit architectures and training recipes to discover scalable AI improvements through competitive evaluation. - BaseIntelligence/prism"
+    },
+    {
+      "title": "BaseIntelligence (Base) - Hugging Face",
+      "url": "https://huggingface.co/BaseIntelligence/models",
+      "snippet": "Org profile for Base on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "BASE Documentation - docs.joinbase.ai",
+      "url": "https://docs.joinbase.ai/challenges/prism/overview",
+      "snippet": "PRISM is a BASE challenge for decentralized neural architecture search (NAS). Miners submit a model architecture and a training recipe, and the challenge competes them on a single, cheat-resistant question: how fast does a model learn from scratch?PRISM fixes the dataset and the evaluation protocol; it does not fix the model search space beyond a Python contract, a static sandbox, a parameter ..."
+    },
+    {
+      "title": "Base - Subnet Alpha",
+      "url": "https://subnetalpha.ai/subnet/base-sn100/",
+      "snippet": "Base currently runs two live challenge arenas, each targeting a distinct part of the AI development stack. Prism is a neural architecture search arena where miners submit model architectures and training recipes, training them on a sealed FineWeb-Edu data window and competing on final validation loss."
+    }
+  ]
+}

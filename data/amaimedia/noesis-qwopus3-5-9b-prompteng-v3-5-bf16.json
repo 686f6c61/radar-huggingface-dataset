@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/NOESIS-Qwopus3.5-9B-PromptEng-v3.5-BF16",
+  "slug": "amaimedia-noesis-qwopus3-5-9b-prompteng-v3-5-bf16",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-PromptEng-v3.5-BF16",
+  "created_at": "2026-08-16T12:02:11.000Z",
+  "updated_at": "2026-08-16T12:53:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 23556756783,
+  "storage_human": "23.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

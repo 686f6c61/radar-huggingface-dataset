@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "StabilityLabs/Stable-Layers",
+  "slug": "stabilitylabs-stable-layers",
+  "author": "StabilityLabs",
+  "url": "https://huggingface.co/StabilityLabs/Stable-Layers",
+  "created_at": "2026-07-19T16:50:11.000Z",
+  "updated_at": "2026-07-23T22:11:19.000Z",
+  "license": "stabilityai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-to-image",
+    "arxiv:2605.30257",
+    "base_model:Qwen/Qwen-Image-Layered",
+    "base_model:adapter:Qwen/Qwen-Image-Layered",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 28,
+  "downloads_30d": 0,
+  "trending_score": 16,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 330417896,
+  "storage_human": "330 MB",
+  "base_model": "Qwen/Qwen-Image-Layered",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StabilityLabs/Stable-Layers · Hugging Face",
+      "url": "https://huggingface.co/StabilityLabs/Stable-Layers",
+      "snippet": "License This code and model usage are subject to Stability AI Community License terms. For individuals or organizations generating annual revenue of USD 1,000,000 (or local currency equivalent) or more, commercial usage requires an enterprise license from Stability AI."
+    },
+    {
+      "title": "GitHub - Stability-AI/Stable-Layers",
+      "url": "https://github.com/Stability-AI/Stable-Layers",
+      "snippet": "This is an inference-only release of Stable Layers, a model that decomposes a single RGB image into a small stack of back-to-front RGBA layers (background plus object layers) suitable for compositing and editing. The model is a LoRA adapter over Qwen/Qwen-Image-Layered. This model was trained using ..."
+    },
+    {
+      "title": "Stable-Layers: Fine-Tuning Image Layer Decomposition with VLM-Scored RL",
+      "url": "https://stability-ai.github.io/stable-layers.github.io/",
+      "snippet": "Abstract We present Stable-Layers, a reinforcement learning framework that eliminates the need for paired supervision by fine-tuning a pretrained layer decomposition model using only feedback from a vision-language model (VLM). Starting from Qwen-Image-Layered, we apply Flow-GRPO with LoRA adaptation, sampling multiple candidate decompositions per image, scoring them with a VLM, and optimising ..."
+    },
+    {
+      "title": "Stable-Layers/README.md at main · Stability-AI/Stable-Layers",
+      "url": "https://github.com/Stability-AI/Stable-Layers/blob/main/README.md",
+      "snippet": "About This is an inference-only release of Stable Layers, a model that decomposes a single RGB image into a small stack of back-to-front RGBA layers (background plus object layers) suitable for compositing and editing."
+    },
+    {
+      "title": "[2605.30257] Stable-Layers: Fine-Tuning Image Layer Decomposition ...",
+      "url": "https://arxiv.org/abs/2605.30257",
+      "snippet": "We present Stable-Layers, a reinforcement learning framework that eliminates the need for paired supervision by fine-tuning a pretrained layer decomposition model using only feedback from a vision-language model (VLM). Starting from Qwen-Image-Layered, we apply Flow-GRPO with LoRA adaptation, sampling multiple candidate decompositions per image, scoring them with a VLM, and optimising the ..."
+    }
+  ]
+}

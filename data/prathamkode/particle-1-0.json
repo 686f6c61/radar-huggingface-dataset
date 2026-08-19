@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "prathamkode/particle-1.0",
+  "slug": "prathamkode-particle-1-0",
+  "author": "prathamkode",
+  "url": "https://huggingface.co/prathamkode/particle-1.0",
+  "created_at": "2026-08-16T17:10:21.000Z",
+  "updated_at": "2026-08-16T17:47:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "from-scratch",
+    "smol",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:HuggingFaceFW/fineweb_edu_100BT-shuffled",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 294,
+  "trending_score": 0,
+  "parameters": 109529856,
+  "parameters_human": "109.5M",
+  "storage_bytes": 219071992,
+  "storage_human": "219 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prathamkode (Pratham Kode) - Hugging Face",
+      "url": "https://huggingface.co/prathamkode/models",
+      "snippet": "prathamkode&#x27;s models1 Sort: Recently updated prathamkode/smartwatch-lm-.1 Text Generation •Updated about 4 hours ago• 1"
+    },
+    {
+      "title": "prathamkode (Pratham Kode) - Hugging Face",
+      "url": "https://huggingface.co/prathamkode/datasets",
+      "snippet": "AI & ML interests ... Recent Activity new activity 26 days ago ... updated a model 26 days ago ... liked a model 26 days ago"
+    },
+    {
+      "title": "Pratham. (@prathamkode) / Posts / X",
+      "url": "https://x.com/PrathamKode",
+      "snippet": "Pratham. (@prathamkode) - Posts - Building. | X (formerly Twitter) Update : I&#x27;ve added docs on removing gibbrish, intent referances and integrating with smartwatches too. It should be much more useable now. Still you&#x27;d have to figure out the voice for now as I haven&#x27;t made a voice model (for obvious reasons). Apart from that the 0.1 version seems pretty okay."
+    },
+    {
+      "title": "GitHub - Pratham-code-01/AI-vs-Human-Image-Detector",
+      "url": "https://github.com/Pratham-code-01/AI-vs-Human-Image-Detector",
+      "snippet": "The trained model (ai_vs_human_classifier.h5) is loaded from the model/ folder. When an image is uploaded, it is preprocessed (resized, normalized) before being passed to the model."
+    },
+    {
+      "title": "Ornith 1.0 — Open-Source Agentic Coding Models",
+      "url": "https://ornith.site/",
+      "snippet": "Complete Ornith 1.0 guide: self-scaffolding AI models for agentic coding. 9B to 397B sizes, MIT licensed, benchmark results, local setup, and model comparison."
+    }
+  ]
+}

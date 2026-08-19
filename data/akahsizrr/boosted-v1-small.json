@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Akahsizrr/boosted-v1-small",
+  "slug": "akahsizrr-boosted-v1-small",
+  "author": "Akahsizrr",
+  "url": "https://huggingface.co/Akahsizrr/boosted-v1-small",
+  "created_at": "2026-08-16T20:19:42.000Z",
+  "updated_at": "2026-08-16T20:19:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "iloptimus",
+    "humaneval",
+    "self-improvement",
+    "text-generation",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2036765,
+  "storage_human": "2 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for Akahsizrr/fuse-1-Lite - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Akahsizrr/fuse-1-Lite",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset Akahsizrr/fuse-1-Lite Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc ..."
+    },
+    {
+      "title": "Quantized Models for Akahsizrr/fuse-1-Lite - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Akahsizrr/fuse-1-Lite",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Reset Akahsizrr/fuse-1-Lite Adapters Finetunes Quantizations Merges Apps Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc Apply ..."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Comparisons of Small Open Source AI Models (4B-40B) Open source AI models with between 4B to 40B parameters. Models are considered open source (also commonly referred to as open weights) where their weights are accessible to download. This allows self-hosting on your own infrastructure and enables customizing the model such as through fine-tuning."
+    },
+    {
+      "title": "Hikari∣LocalLLM⚡ on X: \"It looks like there&#x27;s a lot to learn from this ...",
+      "url": "https://x.com/Hikari_07_jp/status/2085220712713986346",
+      "snippet": "Hikari∣LocalLLM⚡ on X: \"It looks like there&#x27;s a lot to learn from this model! Hey everyone! I just released a sub-6B sparse activation AI model which was built with a brand new architecture : fusion. I fused weights from @liquidai&#x27;s LFM2.5-2.6B & @Alibaba_Qwen&#x27;s Qwen3.6-35B-A3B. It&#x27;s capable of near Qwen3.6-35B-A3B performances, while being around a fifth of the size. This is the first ..."
+    }
+  ]
+}

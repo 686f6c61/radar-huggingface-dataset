@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "briotin/my-cool-model",
+  "slug": "briotin-my-cool-model",
+  "author": "briotin",
+  "url": "https://huggingface.co/briotin/my-cool-model",
+  "created_at": "2026-08-16T14:20:16.000Z",
+  "updated_at": "2026-08-16T14:22:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 325296281641,
+  "storage_human": "325.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

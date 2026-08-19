@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nernstpolga/new_hk_5drydskccm",
+  "slug": "nernstpolga-new_hk_5drydskccm",
+  "author": "nernstpolga",
+  "url": "https://huggingface.co/nernstpolga/new_hk_5drydskccm",
+  "created_at": "2026-08-17T21:36:14.000Z",
+  "updated_at": "2026-08-17T21:37:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r683",
+    "text-generation",
+    "conversational",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nernstpolga (Nernst Polga) - Hugging Face",
+      "url": "https://huggingface.co/nernstpolga",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=r637",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "HK VP9CC OE Semi-Auto Pistol with Vortex Defender-CCW Enclosed Micro ...",
+      "url": "https://www.basspro.com/p/hk-vp9cc-oe-semi-auto-pistol-with-vortex-defender-ccw-enclosed-micro-red-dot",
+      "snippet": "Inside, the cold hammer-forged barrel delivers HK&#x27;s foundational accuracy and longevity. For a smooth, snag-free draw, all edges have been rounded. This model comes complete with the Vortex® Defender-CCW™ Enclosed Micro Red Dot featuring a fully enclosed design, multiple reticles, and solar backup for extended battery life."
+    },
+    {
+      "title": "Heckler & Koch Launches VP9A1 X - A New Balance of Size and Capacity",
+      "url": "https://www.thefirearmblog.com/blog/heckler-koch-launches-vp9a1-x-a-new-balance-of-size-and-capacity-44824726",
+      "snippet": "Heckler & Koch USA has announced a new addition to its VP9A1 pistol lineup with the release of the VP9A1 X, a configuration that blends features from both the compact and full-size models into a single, balanced package.Positioned between the VP9A1 K and the VP9A1 F, the new X model combines a shorter slide with full-capacity handling, aimed at shooters who want duty-level performance in a ..."
+    }
+  ]
+}

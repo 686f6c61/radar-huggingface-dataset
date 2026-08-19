@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Qwen3.8-2.4T-A95B-NVFP4",
+  "slug": "redhatai-qwen3-8-2-4t-a95b-nvfp4",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Qwen3.8-2.4T-A95B-NVFP4",
+  "created_at": "2026-08-12T23:17:09.000Z",
+  "updated_at": "2026-08-18T19:59:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "compressed-tensors",
+    "LLM Compressor",
+    "vLLM",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-2.4T-A95B",
+    "base_model:quantized:Qwen/Qwen3.8-2.4T-A95B",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 151,
+  "trending_score": 0,
+  "parameters": 1380546965032,
+  "parameters_human": "1380.55B",
+  "storage_bytes": 1425045903884,
+  "storage_human": "1425.0 GB",
+  "base_model": "Qwen/Qwen3.8-2.4T-A95B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Qwen3.8-2.4T-A95B · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.8-2.4T-A95B",
+      "snippet": "In particular, Qwen3.8-Max is the official version based on Qwen3.8-2.4T-A95B with more features, such as vision input & non-thinking support, 1M context length by default, official built-in tools, etc."
+    },
+    {
+      "title": "README.md · RedHatAI/Qwen3.8-2.4T-A95B-FP8 at main",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.8-2.4T-A95B-FP8/blob/main/README.md",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Qwen/Qwen3.8-2.4T-A95B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-2.4T-A95B",
+      "snippet": "Overview Qwen3.8-2.4T-A95B is a 2.4-trillion-parameter Mixture-of-Experts model with roughly 95B parameters active per token — 512 routed experts with 10 active, plus one shared expert, over a 92-layer hybrid-attention backbone. The layer mix is the interesting part."
+    },
+    {
+      "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable ...",
+      "url": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/",
+      "snippet": "Further optimizations, including NVFP4 precision, are expected to deliver enhanced performance gains over time. Architectural innovations for long-context inference Qwen3.8-2.4T-A95B is built for the hardest agentic workloads like coding, large-scale document analysis, and long-running multi-step workflows."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

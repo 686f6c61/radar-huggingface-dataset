@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "GMorgulis/Llama-3.2-3B-Instruct-cat-itblr-lr5e-4-STEER0.940625-ft4.42",
+  "slug": "gmorgulis-llama-3-2-3b-instruct-cat-itblr-lr5e-4-steer0-940625-ft4-42",
+  "author": "GMorgulis",
+  "url": "https://huggingface.co/GMorgulis/Llama-3.2-3B-Instruct-cat-itblr-lr5e-4-STEER0.940625-ft4.42",
+  "created_at": "2026-08-16T05:34:46.000Z",
+  "updated_at": "2026-08-16T05:50:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211933297,
+  "storage_human": "212 MB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

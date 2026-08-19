@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "audnai/penclaw-Kimi-K3.0-abliterated-GGUF",
+  "slug": "audnai-penclaw-kimi-k3-0-abliterated-gguf",
+  "author": "audnai",
+  "url": "https://huggingface.co/audnai/penclaw-Kimi-K3.0-abliterated-GGUF",
+  "created_at": "2026-07-18T13:19:50.000Z",
+  "updated_at": "2026-08-10T11:40:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 207,
+  "downloads_30d": 334,
+  "trending_score": 59,
+  "parameters": 2779483135584,
+  "parameters_human": "2779.48B",
+  "storage_bytes": 1722548783680,
+  "storage_human": "1722.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "audnai/penclaw-Kimi-K3.0-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/audnai/penclaw-Kimi-K3.0-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "audnai/penclaw-Kimi-K3.0-abliterated-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/audnai/penclaw-Kimi-K3.0-abliterated-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Penclaw Kimi K3.0 Abliterated - GGUF Model (19 parts)",
+      "url": "https://local-ai-zone.github.io/models/penclaw-kimi-k3-0-abliterated.html",
+      "snippet": "Download Penclaw Kimi K3.0 Abliterated GGUF model. 78.6 GB, 81 downloads, 175 likes. Split into 19 parts."
+    },
+    {
+      "title": "DevBytes | Abliterated Kimi K3.0 for GGUF by Penclaw is a gated Hugging ...",
+      "url": "https://devbytes.co.in/news/abliterated-kimi-k30-for-gguf-by-penclaw-is-a-gated-hugging-face-repo",
+      "snippet": "penclaw-Kimi-K3 Abliterated Kimi K3.0 for GGUF by Penclaw is a gated Hugging Face repo"
+    },
+    {
+      "title": "penclaw/.github at main · audn-ai/penclaw · GitHub",
+      "url": "https://github.com/audn-ai/penclaw/tree/main/.github",
+      "snippet": "Your own abliterated personal AI assistant. Any OS. Any Platform. Any prompt, No objections. This is the way. ☬ - penclaw/.github at main · audn-ai/penclaw"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ewald1976/G4-420-activist-v6-12b-gguf",
+  "slug": "ewald1976-g4-420-activist-v6-12b-gguf",
+  "author": "ewald1976",
+  "url": "https://huggingface.co/ewald1976/G4-420-activist-v6-12b-gguf",
+  "created_at": "2026-08-16T09:26:38.000Z",
+  "updated_at": "2026-08-16T09:27:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4_unified",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 9961137408,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

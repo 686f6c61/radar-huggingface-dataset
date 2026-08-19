@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AnkitAI/parable-v3-staging",
+  "slug": "ankitai-parable-v3-staging",
+  "author": "AnkitAI",
+  "url": "https://huggingface.co/AnkitAI/parable-v3-staging",
+  "created_at": "2026-08-05T21:02:20.000Z",
+  "updated_at": "2026-08-18T13:50:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 115,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 64390226062,
+  "storage_human": "64.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnkitAI/parable-v3-staging · Hugging Face",
+      "url": "https://huggingface.co/AnkitAI/parable-v3-staging",
+      "snippet": "AnkitAI / parable-v3-staging like 0 Safetensors GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AnkitAI (Ankit Aglawe) - Hugging Face",
+      "url": "https://huggingface.co/AnkitAI",
+      "snippet": "AnkitAI/Parable-Granite-4.1-8B-Claude-Fable-5-GGUF Text Generation • 8B•Updated 3 days ago• 883 • 2 Sentiment Analysis"
+    },
+    {
+      "title": "Parable - Fine-Tuned Qwen3 & Granite Local LLMs for Agent Tasks",
+      "url": "https://ankitaglawe.com/parable",
+      "snippet": "Parable: small local LLMs (Qwen3 4B/8B, Granite 4.1 3B/8B) fine-tuned on genuine Claude Fable 5 and GPT-5.5 agent traces. GGUF for Ollama and LM Studio, honest evals, published corpus."
+    },
+    {
+      "title": "parable/README.md at main · ankit-aglawe/parable · GitHub",
+      "url": "https://github.com/ankit-aglawe/parable/blob/main/README.md",
+      "snippet": "What is in this repository training/ QLoRA training kernels, one per model. Completion-only loss masking, mixed-domain replay, checkpoint relay to Hugging Face every save so a run survives session caps and moves across GPUs. corpus/ Trace ingestion, session reconstruction, secret scrubbing, fuzzy train/test decontamination. The resulting 10.6k-row corpus: AnkitAI/parable-corpus-v2 eval ..."
+    },
+    {
+      "title": "parable - ollama.com",
+      "url": "https://ollama.com/parable",
+      "snippet": "Parable is a family of open models trained on real Claude Fable 5 and GPT-5.5 agent traces for local agentic coding. Best model per size; Qwen3 and IBM Granite lines."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Davedav/Qwen2.5-1.5B-Instruct",
+  "slug": "davedav-qwen2-5-1-5b-instruct",
+  "author": "Davedav",
+  "url": "https://huggingface.co/Davedav/Qwen2.5-1.5B-Instruct",
+  "created_at": "2026-08-19T02:12:10.000Z",
+  "updated_at": "2026-08-19T02:12:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 10208517569,
+  "storage_human": "10.2 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5:1.5b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen25-15b-instruct-qwen",
+      "snippet": "Overview Qwen2.5-1.5B-Instruct is a lightweight instruction-tuned language model from Qwen that handles text generation tasks with 1.54 billion parameters and support for 32,768 token context length during inference with up to 8,192 token generation. Built on a transformer architecture with RoPE positional embeddings, SwiGLU feed-forward layers, RMSNorm, and grouped query attention (12 heads ..."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct: Efficient Open-Source LLM for Chat, Code, and ...",
+      "url": "https://dev.co/ai/llms/qwen2-5-1-5b-instruct",
+      "snippet": "Qwen2.5-1.5B-Instruct is a 1.5-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen team. It is designed for efficient on-device or self-hosted deployment, supporting chat/conversational tasks with improvements in coding, math, instruction following, and structured output (JSON)."
+    }
+  ]
+}

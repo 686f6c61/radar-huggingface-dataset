@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "TreezzZ/opd-teacher-search-7b",
+  "slug": "treezzz-opd-teacher-search-7b",
+  "author": "TreezzZ",
+  "url": "https://huggingface.co/TreezzZ/opd-teacher-search-7b",
+  "created_at": "2026-08-16T19:42:57.000Z",
+  "updated_at": "2026-08-16T19:46:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 254,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271832,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TreezzZ (Shu Zhao) - Hugging Face",
+      "url": "https://huggingface.co/TreezzZ/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 3 hours ago ... published a dataset about 3 hours ago"
+    },
+    {
+      "title": "TreezzZ (Tree) · GitHub",
+      "url": "https://github.com/TreezzZ/",
+      "snippet": "Source code for paper \"Spectral Hashing\" on NIPS-2009 Python 13 3"
+    },
+    {
+      "title": "TreezzZ/ParallelSearch-7b-base · Hugging Face",
+      "url": "https://huggingface.co/TreezzZ/ParallelSearch-7b-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Audio8-AI/open-audio-opd: Industrial audio online policy ...",
+      "url": "https://github.com/Audio8-AI/open-audio-opd",
+      "snippet": "Abstract open-audio-opd contains the production audio online policy distillation (OPD) stack used to distill compact audio models from stronger teacher models. The current release focuses on ASR: a student autoregressive ASR model rolls out transcripts on-policy, a stronger teacher scores the same audio and transcript, and the student is updated with token-level KL on the union top-k support."
+    },
+    {
+      "title": "OPOD: On-Policy Omni Distillation - arXiv.org",
+      "url": "https://arxiv.org/html/2607.20918v3",
+      "snippet": "Abstract Omni-modal models provide a unified interface for text, images, and audio. However, improving these abilities together remains difficult, as post-training on pooled multimodal data often fails to preserve the strengths of modality teachers. On-policy distillation (OPD) has recently become popular in model post-training. It samples responses from the current student and compares the ..."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ionio-ai/Qwen3.5-0.8B-Ecommerce-Extraction-GGUF",
+  "slug": "ionio-ai-qwen3-5-0-8b-ecommerce-extraction-gguf",
+  "author": "Ionio-ai",
+  "url": "https://huggingface.co/Ionio-ai/Qwen3.5-0.8B-Ecommerce-Extraction-GGUF",
+  "created_at": "2026-08-17T13:37:40.000Z",
+  "updated_at": "2026-08-17T13:51:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama-cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "ecommerce",
+    "information-extraction",
+    "structured-output",
+    "lora",
+    "trl",
+    "text-generation",
+    "en",
+    "dataset:Ionio-ai/ecommerce-search-extraction",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 3015103360,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/Qwen_Qwen3.5-0.8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen_Qwen3.5-0.8B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct-Ecommerce-Extraction-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Ionio-ai/Qwen2.5-0.5B-Instruct-Ecommerce-Extraction-GGUF",
+      "snippet": "Instructions to use Ionio-ai/Qwen2.5-.5B-Instruct-Ecommerce-Extraction-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_5_0_8b/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_5_0_8b/README.md",
+      "snippet": "This is based on the implementation of Qwen3.5-0.8B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    }
+  ]
+}

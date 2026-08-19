@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mike0095/saba",
+  "slug": "mike0095-saba",
+  "author": "Mike0095",
+  "url": "https://huggingface.co/Mike0095/saba",
+  "created_at": "2026-08-16T08:00:56.000Z",
+  "updated_at": "2026-08-16T08:41:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 971014255,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-16T09:11:49.589Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saba - Mistral AI Model | ValorGPT",
+      "url": "https://www.valorgpt.com/models/mistralai-mistral-saba",
+      "snippet": "Saba by Mistral - premium AI model with 33K tokens context window. Capabilities include image understanding, tool calling. Chat with Saba instantly on ValorGPT."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Mistral Saba | Mistral AI",
+      "url": "https://mistral.ai/news/mistral-saba/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Compare Saba vs Qwen3.8 2.4T A95B | AI Model Comparison",
+      "url": "https://llmbase.ai/compare/mistral-saba,qwen3-8-2-4t-a95b/",
+      "snippet": "Detailed comparison of Saba, Qwen3.8 2.4T A95B. Compare benchmarks, pricing, context length, and capabilities side-by-side. Find the best AI model for your use case."
+    },
+    {
+      "title": "Mistral Saba model - NanoGPT",
+      "url": "https://nano-gpt.com/models/text/mistralai/mistral-saba",
+      "snippet": "Mistral Saba is a 24B-parameter language model specifically designed for the Middle East and South Asia, delivering accurate and contextually relevant responses while maintaining efficient performance. Trained on curated regional datasets, it supports multiple Indian-origin languages—including Tamil and Malayalam—alongside Arabic. This makes it a versatile option for a range of regional ..."
+    }
+  ]
+}

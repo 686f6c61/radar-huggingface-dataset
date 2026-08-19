@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "likhithboss/orpheus-hi-emotion-lora-v0",
+  "slug": "likhithboss-orpheus-hi-emotion-lora-v0",
+  "author": "likhithboss",
+  "url": "https://huggingface.co/likhithboss/orpheus-hi-emotion-lora-v0",
+  "created_at": "2026-08-14T04:13:39.000Z",
+  "updated_at": "2026-08-14T04:19:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:canopylabs/3b-hi-pretrain-research_release",
+    "base_model:finetune:canopylabs/3b-hi-pretrain-research_release",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3782986752,
+  "parameters_human": "3.78B",
+  "storage_bytes": 15154825883,
+  "storage_human": "15.2 GB",
+  "base_model": "canopylabs/3b-hi-pretrain-research_release",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rumik-ai/orpheus-hi-lora_model · Hugging Face",
+      "url": "https://huggingface.co/rumik-ai/orpheus-hi-lora_model",
+      "snippet": "Uploaded model Developed by: rumik-ai License: apache-2.0 Finetuned from model : canopylabs/3b-hi-ft-research_release This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "GitHub - canopyai/Orpheus-TTS: Towards Human-Sounding Speech",
+      "url": "https://github.com/canopyai/Orpheus-TTS",
+      "snippet": "Towards Human-Sounding Speech. Contribute to canopyai/Orpheus-TTS development by creating an account on GitHub."
+    },
+    {
+      "title": "Tutorial - Lophius",
+      "url": "https://lophius.org/tutorial/",
+      "snippet": "Tutorial Lophius is a workbench for language model research. It is designed to run in a notebook environment (Jupyter or Colab), so make sure you have such an environment set up before you get started."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

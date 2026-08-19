@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "devarajns/autodraw-sketch-embedder",
+  "slug": "devarajns-autodraw-sketch-embedder",
+  "author": "devarajns",
+  "url": "https://huggingface.co/devarajns/autodraw-sketch-embedder",
+  "created_at": "2026-08-17T11:25:58.000Z",
+  "updated_at": "2026-08-17T11:26:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "sketch",
+    "image-retrieval",
+    "embeddings",
+    "quickdraw",
+    "feature-extraction",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2009324,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutoDraw",
+      "url": "https://www.autodraw.com/",
+      "snippet": "Fast drawing for everyone. AutoDraw pairs machine learning with drawings from talented artists to help you draw stuff fast."
+    },
+    {
+      "title": "GitHub - auto-draw/autodraw: A highly configurable UI based drawing ...",
+      "url": "https://github.com/auto-draw/autodraw",
+      "snippet": "A highly configurable UI based drawing tool powered by mouse automation - auto-draw/autodraw"
+    },
+    {
+      "title": "Draw Together with a Neural Network - Magenta",
+      "url": "https://magenta.withgoogle.com/sketch-rnn-demo",
+      "snippet": "The model can also mimic your drawings and produce similar doodles. In the Variational Autoencoder Demo, you are to draw a complete drawing of a specified object. After you draw a complete sketch inside the area on the left, hit the auto-encode button and the model will start drawing similar sketches inside the smaller boxes on the right."
+    },
+    {
+      "title": "AutoDraw: AI-Powered Drawing Tool for Fast Creations",
+      "url": "https://navtools.ai/tool/autodraw",
+      "snippet": "AutoDraw &#x27;s Core Features AI-powered suggestion tool guesses your sketch and offers matching clipart to enhance it instantly. Cross-device compatibility allows drawing on smartphones, tablets, laptops, or desktops without downloads. Freehand drawing mode supports sketching with a mouse, touchpad, or stylus for flexible input."
+    },
+    {
+      "title": "Releases · auto-draw/autodraw - GitHub",
+      "url": "https://github.com/auto-draw/autodraw/releases",
+      "snippet": "A highly configurable UI based drawing tool powered by mouse automation - auto-draw/autodraw"
+    }
+  ]
+}

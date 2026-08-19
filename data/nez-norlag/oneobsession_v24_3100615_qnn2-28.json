@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Nez-Norlag/oneObsession_v24_3100615_QNN2.28",
+  "slug": "nez-norlag-oneobsession_v24_3100615_qnn2-28",
+  "author": "Nez-Norlag",
+  "url": "https://huggingface.co/Nez-Norlag/oneObsession_v24_3100615_QNN2.28",
+  "created_at": "2026-08-18T15:38:44.000Z",
+  "updated_at": "2026-08-18T16:01:40.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "maxfeifei8",
+    "StableDiffusionXLPipeline",
+    "stable-diffusion",
+    "Qualcomm",
+    "NPU",
+    "QNN",
+    "NoobAI",
+    "Not-For-All-Audiences",
+    "SFW",
+    "NSFW",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3732165357,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "One obsession Reviews | Rated 5 Stars by 144 Users on Civitai",
+      "url": "https://civitai.com/models/1318945/reviews?modelVersionId=1522352",
+      "snippet": "Explore user reviews of the One obsession AI model on Civitai, rated 5 stars by 144 users, and see how it has helped others bring their creative visions to life"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Manual QNN Model Download ~ AnythingLLM",
+      "url": "https://docs.anythingllm.com/manual-qnn-model-download",
+      "snippet": "All-in-one AI application that can do RAG, AI Agents, and much more with no code or infrastructure headaches."
+    }
+  ]
+}

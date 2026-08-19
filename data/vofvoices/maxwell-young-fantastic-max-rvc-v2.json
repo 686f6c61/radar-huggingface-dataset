@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "VofVoices/maxwell-young-fantastic-max-RVC-v2",
+  "slug": "vofvoices-maxwell-young-fantastic-max-rvc-v2",
+  "author": "VofVoices",
+  "url": "https://huggingface.co/VofVoices/maxwell-young-fantastic-max-RVC-v2",
+  "created_at": "2026-08-18T15:56:13.000Z",
+  "updated_at": "2026-08-18T16:01:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find AI Voices | Download RVC Voice Models | The #1 AI Voice Database",
+      "url": "https://ai-search.io/voices",
+      "snippet": "Find AI voices. Search and download free RVC voice models of celebrities, actors, anime characters and more."
+    },
+    {
+      "title": "VofVoices (48B) - Hugging Face",
+      "url": "https://huggingface.co/VofVoices/models",
+      "snippet": "Voice cloning and AI Stable Diffusion. Recent Activity. updated a model about 8 hours ago. VofVoices/cyrus-the-storykeepers-RVC-v2"
+    },
+    {
+      "title": "VofVoices (48B) - Hugging Face",
+      "url": "https://huggingface.co/VofVoices",
+      "snippet": "Voice cloning and AI Stable Diffusion. Recent Activity. updated a model 27 minutes ago. VofVoices/dylan-taylor-aio-RVC-v2"
+    },
+    {
+      "title": "RVC TTS Voice Models to Download - 18,170 AI Voice Models",
+      "url": "https://www.101soundboards.com/boards/tts/models",
+      "snippet": "Download 18,170 high-quality RVCv2 AI voice model files. Use these models with RVC software, voice cloning applications, and text-to-speech tools."
+    },
+    {
+      "title": "Top AI Voice Models for RVC | Community Favorites",
+      "url": "https://voice-models.com/top",
+      "snippet": "Discover popular AI voice models for RVC, ranked by community favorites. Preview samples and run compatible voices online."
+    }
+  ]
+}

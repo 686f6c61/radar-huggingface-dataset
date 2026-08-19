@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-VL-1.6B-absolute-heresy-i1-GGUF",
+  "slug": "mradermacher-lfm2-5-vl-1-6b-absolute-heresy-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-VL-1.6B-absolute-heresy-i1-GGUF",
+  "created_at": "2026-08-17T14:53:24.000Z",
+  "updated_at": "2026-08-17T14:53:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 286812,
+  "parameters_human": "286812",
+  "storage_bytes": 1161536,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

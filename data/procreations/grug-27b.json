@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ProCreations/grug-27b",
+  "slug": "procreations-grug-27b",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/grug-27b",
+  "created_at": "2026-07-23T04:00:15.000Z",
+  "updated_at": "2026-07-24T03:12:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "grug",
+    "reasoning",
+    "token-efficient",
+    "agentic",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:ProCreations/grug-think-v3-10k",
+    "dataset:ProCreations/grug-think",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 97,
+  "downloads_30d": 3549,
+  "trending_score": 7,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 106013390053,
+  "storage_human": "106.0 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hipfire-models/bonsai-27b",
+  "slug": "hipfire-models-bonsai-27b",
+  "author": "hipfire-models",
+  "url": "https://huggingface.co/hipfire-models/bonsai-27b",
+  "created_at": "2026-08-17T20:51:15.000Z",
+  "updated_at": "2026-08-18T08:58:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "hipfire",
+    "hfq",
+    "bonsai",
+    "prismml",
+    "1-bit",
+    "ternary",
+    "qwen3_5",
+    "base_model:prism-ml/Bonsai-27B-gguf",
+    "base_model:finetune:prism-ml/Bonsai-27B-gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21904125952,
+  "storage_human": "21.9 GB",
+  "base_model": "prism-ml/Bonsai-27B-gguf, prism-ml/Ternary-Bonsai-27B-gguf",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hipfire-models/hipfire-bonsai-27b · Hugging Face",
+      "url": "https://huggingface.co/hipfire-models/hipfire-bonsai-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bonsai 27B - a prism-ml Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prism-ml/bonsai-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bonsai 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-27b",
+      "snippet": "Bonsai 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.6 27B. Like every Bonsai, the language model is quantized end-to-end 1-bit or ternary weights across embeddings, attention, MLPs, and the LM head. The vision tower is handled separately, at 4-bit."
+    },
+    {
+      "title": "PrismML — PrismML Announces 1-bit Bonsai 27B - The First 27B Model to ...",
+      "url": "https://prismml.com/news/prismml-releases-bonsai-27b",
+      "snippet": "PrismML announced Bonsai 27B, a multimodal 1-bit and ternary model that fits in 3.9GB and brings 27B-class reasoning, coding, and agentic work to a phone."
+    },
+    {
+      "title": "Bonsai 27B Guide: How a 27B Model Runs Locally - aiwerse.blog",
+      "url": "https://www.aiwerse.blog/ai/guides/bonsai-27b-guide-how-a-27b-model-runs-locally",
+      "snippet": "Learn how to run Bonsai 27B locally. This complete setup guide covers the new compressed Qwen 3.6 model built for iPhone, Mac, and Windows performance."
+    }
+  ]
+}

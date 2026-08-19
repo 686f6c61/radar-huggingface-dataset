@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "istt-aiml-data/Criminal-Qwen3-Reranker-0.6B-Augmented",
+  "slug": "istt-aiml-data-criminal-qwen3-reranker-0-6b-augmented",
+  "author": "istt-aiml-data",
+  "url": "https://huggingface.co/istt-aiml-data/Criminal-Qwen3-Reranker-0.6B-Augmented",
+  "created_at": "2026-08-16T12:57:03.000Z",
+  "updated_at": "2026-08-16T14:10:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:506",
+    "loss:BinaryCrossEntropyLoss",
+    "text-ranking",
+    "vi",
+    "arxiv:1908.10084",
+    "base_model:Qwen/Qwen3-Reranker-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Reranker-0.6B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 3597610670,
+  "storage_human": "3.6 GB",
+  "base_model": "Qwen/Qwen3-Reranker-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cross Encoder Correlation",
+      "dataset": "slang disambiguation eval",
+      "metric": "Pearson",
+      "value": 0.4021839640876556
+    },
+    {
+      "task": "Cross Encoder Correlation",
+      "dataset": "slang disambiguation eval",
+      "metric": "Spearman",
+      "value": 0.3855590247182107
+    }
+  ],
+  "sources": []
+}

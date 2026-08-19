@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/LaMa-Inpainting-ExecuTorch",
+  "slug": "mlboydaisuke-lama-inpainting-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/LaMa-Inpainting-ExecuTorch",
+  "created_at": "2026-08-14T04:51:51.000Z",
+  "updated_at": "2026-08-15T05:14:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "executorch-pte",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "image-to-image",
+    "inpainting",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 127,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 515049115,
+  "storage_human": "515 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - advimman/lama: LaMa Image Inpainting, Resolution-robust ...",
+      "url": "https://github.com/advimman/lama",
+      "snippet": "🦙 LaMa Image Inpainting, Resolution-robust Large Mask Inpainting with Fourier Convolutions, WACV 2022 - advimman/lama"
+    },
+    {
+      "title": "lama: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/lama-twn39",
+      "snippet": "Overview lama is a resolution-robust image inpainting model developed by twn39 that fills in masked regions of images using Fourier Convolutions. The model takes an input image and a mask (white regions indicate areas to inpaint) and returns a completed image with the masked regions filled in. This is the WACV 2022 paper implementation, built on the LaMa (Large Mask Inpainting) architecture ..."
+    },
+    {
+      "title": "GitHub - nuniniyujin/lama_inpainting",
+      "url": "https://github.com/nuniniyujin/lama_inpainting",
+      "snippet": "Roman et al. introduced LaMa [arXiv] (Large Mask Inpainting) model in 2021. It showed great result in image inpainting, by using Fourier convolutions. This innovative method of Fourier convolution was introdced in NeurIPS 2020 [nips] . It allows model to work on frequency domain so that we can have large receptive fields. Receptive field is an important aspect in deep learning. It defines the ..."
+    },
+    {
+      "title": "Removing Any Object From Your Photo with LaMa - Medium",
+      "url": "https://medium.com/gliacloud/removing-any-object-from-your-photo-with-lama-7e966765fadc",
+      "snippet": "Removing Any Object From Your Photo with LaMa Recently this year, Samsung Research published a paper on high-resolution image inpainting: LaMa: Resolution-robust Large Mask Inpainting with Fourier …"
+    },
+    {
+      "title": "LaMa (Large Mask Inpainting) - Happyin Knowledge Space",
+      "url": "https://happyin.space/image-generation/LaMa/",
+      "snippet": "LaMa is a feed-forward model (single pass, deterministic). Diffusion-based inpainting (flux kontext, Step1X Edit) is iterative (20-50 steps) but better at semantic content (faces, complex objects)."
+    }
+  ]
+}

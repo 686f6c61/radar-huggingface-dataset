@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "unsloth/MiniMax-H3-FP8",
+  "slug": "unsloth-minimax-h3-fp8",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/MiniMax-H3-FP8",
+  "created_at": "2026-08-07T16:07:17.000Z",
+  "updated_at": "2026-08-14T13:51:33.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "fp8",
+    "int8",
+    "quantized",
+    "text-to-video",
+    "image-to-video",
+    "video-generation",
+    "unsloth",
+    "image-text-to-video",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148686663791,
+  "storage_human": "148.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/MiniMax-H3-FP8 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/MiniMax-H3-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/MiniMax-H3-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/MiniMax-H3-FP8/tree/main",
+      "snippet": "like 9 Follow Unsloth AI 30.3k Image-Text-to-Video English Chinese fp8 int8 quantized text-to-video image-to-video video-generation unsloth License:minimax-h3-community-license-agreement Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Introducing Unsloth Desktop",
+      "url": "https://unsloth.ai/docs/desktop",
+      "snippet": "For MiniMax-H3 FP8 on an NVIDIA B200, a 960×544, 124-frame, 8-step generation dropped from 70+ seconds to 13 seconds. Generate with FLUX, Z-Image, LTX, Wan and fine-tuned LoRA adapters."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Start Unsloth, load a model, open your project folder, then run unsloth start claude. Swap models in Unsloth without changing your agent workflow. Unsloth also exposes an OpenAI-compatible API, so existing apps, scripts and SDKs can connect to your local models through a familiar interface."
+    }
+  ]
+}
