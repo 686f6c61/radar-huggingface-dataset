@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-molecule-property-transfer-v1.2-bioavailability-ma-best-knn-mae5",
+  "slug": "jiosephlee-intern-s1-mini-molecule-property-transfer-v1-2-bioavailability-ma-best-knn-mae5",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-molecule-property-transfer-v1.2-bioavailability-ma-best-knn-mae5",
+  "created_at": "2026-08-18T15:53:08.000Z",
+  "updated_at": "2026-08-19T07:30:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "molecule-property-transfer",
+    "assay-transfer",
+    "knn-ranking",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 49207474221,
+  "storage_human": "49.2 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jiosephlee/Intern-S1-mini-lm · Hugging Face",
+      "url": "https://huggingface.co/jiosephlee/Intern-S1-mini-lm",
+      "snippet": "jiosephlee / Intern-S1-mini-lm like 0 Text Generation Transformers Safetensors qwen3 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - InternLM/Intern-S1: A Scientific Multimodal Foundation Model",
+      "url": "https://github.com/InternLM/Intern-S1",
+      "snippet": "A Scientific Multimodal Foundation Model. Contribute to InternLM/Intern-S1 development by creating an account on GitHub."
+    },
+    {
+      "title": "Intern-S1/README.md at main · InternLM/Intern-S1 · GitHub",
+      "url": "https://github.com/InternLM/Intern-S1/blob/main/README.md",
+      "snippet": "A Scientific Multimodal Foundation Model. Contribute to InternLM/Intern-S1 development by creating an account on GitHub."
+    },
+    {
+      "title": "Intern-S1: A ScientificMultimodal Foundation Model - arXiv.org",
+      "url": "https://arxiv.org/html/2508.15763v1",
+      "snippet": "Scientific research, recognized as one of the ultimate goals in the development of artificial general intelligence (AGI) due to its potential to drive fundamental breakthroughs in human society, imposes uniquely stringent demands on AI systems. It requires models not only to understand and capture the intrinsic laws underlying diverse but low-resource distributed scientific modalities ..."
+    },
+    {
+      "title": "Intern-S1-mini-FP8 · Models",
+      "url": "https://www.modelscope.cn/models/Shanghai_AI_Laboratory/Intern-S1-mini-FP8",
+      "snippet": "This enables the model to retain strong general capabilities while excelling in specialized scientific domains such as interpreting chemical structures, understanding protein sequences, and planning compound synthesis routes, making Intern-S1-mini to be a capable research assistant for real-world scientific applications."
+    }
+  ]
+}

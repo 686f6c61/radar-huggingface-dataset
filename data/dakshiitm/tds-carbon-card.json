@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DAKSHiitm/tds-carbon-card",
+  "slug": "dakshiitm-tds-carbon-card",
+  "author": "DAKSHiitm",
+  "url": "https://huggingface.co/DAKSHiitm/tds-carbon-card",
+  "created_at": "2026-08-19T10:40:44.000Z",
+  "updated_at": "2026-08-19T10:42:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jesmelchi/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Jesmelchi/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Divya-netter/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Divya-netter/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA RTX 4090 (6 GPUs) Training Mode: fine-tuning Region: us-east1 GPU Hours: 388h (PUE: 1.44) Total Energy: 1508.544 kWh CO₂ Emissions: 633.588 kg CO₂eq"
+    },
+    {
+      "title": "Applied Model Card - Applied Model Card | CHAI",
+      "url": "https://www.chai.org/workgroup/applied-model",
+      "snippet": "Applied Model Card documentation, templates, and examples now live on the CHAI Registry. Visit the Registry for the latest resources, a completed example, and guidance on adopting model cards in your organization."
+    },
+    {
+      "title": "TaxTMI Updates e-Newsletter Aug 19,2026",
+      "url": "https://www.taxtmi.com/newsletter?id=08/19/2026",
+      "snippet": "The Email Id has not been verified. Click on the link we have sent on Go Back Done"
+    },
+    {
+      "title": "Model Cards - OECD.AI",
+      "url": "https://oecd.ai/en/catalogue/tools/model-cards",
+      "snippet": "Model cards provide transparent AI documentation essential for discoverability, reproducibility, and sharing. They are simple Markdown files with additional metadata."
+    }
+  ]
+}

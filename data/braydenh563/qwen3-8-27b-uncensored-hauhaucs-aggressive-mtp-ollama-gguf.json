@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "braydenh563/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-Ollama-GGUF",
+  "slug": "braydenh563-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-ollama-gguf",
+  "author": "braydenh563",
+  "url": "https://huggingface.co/braydenh563/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-Ollama-GGUF",
+  "created_at": "2026-08-19T07:44:01.000Z",
+  "updated_at": "2026-08-19T07:50:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "fastmtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 172466425216,
+  "storage_human": "172.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-19T10:32:00.349Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated launches as an uncensored AI model for free",
+      "url": "https://vgtimes.com/tech-and-hardware/164540-huihui-qwen3.8-27b-abliterated-launches-as-an-uncensored-ai-model-for-free.html",
+      "snippet": "The model also supports thinking mode, accepts both text and images, and offers a 262,000-token context window. It can be run through Ollama with the command `ollama run huihui_ai/Qwen3.8-abliterated`. For deployment, the card recommends using the latest version of Ollama, and the model is also listed on Ollama as another place to try it."
+    },
+    {
+      "title": "Qwen3.8 27B Uncensored HauhauCS Aggressive MTP GGUF",
+      "url": "https://interfaze.ai/models/hauhaucsqwen38-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
+      "snippet": "Qwen3.8 27B Uncensored HauhauCS Aggressive MTP GGUF by HauhauCS, a image-text-to-text model with multimodal capabilities. Understand and compare multimodal features, benchmarks, and capabilities."
+    },
+    {
+      "title": "HauhauCS/Qwen3.5-27B-Uncensored-HauhauCS-Aggressive at main",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.5-27B-Uncensored-HauhauCS-Aggressive/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

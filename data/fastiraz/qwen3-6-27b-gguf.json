@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Fastiraz/Qwen3.6-27B-GGUF",
+  "slug": "fastiraz-qwen3-6-27b-gguf",
+  "author": "Fastiraz",
+  "url": "https://huggingface.co/Fastiraz/Qwen3.6-27B-GGUF",
+  "created_at": "2026-08-19T11:01:22.000Z",
+  "updated_at": "2026-08-19T11:01:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "qwen",
+    "qwen3_5",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 531081925312,
+  "storage_human": "531.1 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.6-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "Qwen 3.6-27B Dense: Private On-Device AI for Ops - llm.co",
+      "url": "https://llm.co/llms/qwen3-6-27b-gguf",
+      "snippet": "Private deployment Run Qwen3.6-27B-GGUF in your own environment Run locally via Ollama or llama.cpp on any Mac with 24+ GB unified memory (realistic minimum for 27B dense; 32 GB+ recommended). Load the quantized GGUF (IQ3: 11 GB, Q4: 16 GB, Q6: 21 GB file sizes) into your environment—zero cloud calls, zero model telemetry."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback. This update delivers substantial upgrades, particularly in: Agentic Coding: The model now ..."
+    },
+    {
+      "title": "Qwen 3.6 27B VRAM & Hardware Requirements — Dense 27B GPU Guide (2026)",
+      "url": "https://willitrunai.com/blog/qwen-3-6-27b-vram-requirements",
+      "snippet": "Qwen released Qwen3.6-27B on April 22, 2026 — a dense 27B model with vision capability that beats the previous-gen flagship Qwen3.5-397B-A17B MoE on SWE-bench Verified (77.2% vs 76.2%) while needing only a fraction of the hardware. If you have a 16-24GB GPU, this is the single most important open-weight release of 2026 Q2. This page is the canonical reference for Qwen 3.6 27B VRAM ..."
+    }
+  ]
+}

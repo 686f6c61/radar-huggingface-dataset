@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "gacekmg/LTX2.3_comfy_kijai",
+  "slug": "gacekmg-ltx2-3_comfy_kijai",
+  "author": "gacekmg",
+  "url": "https://huggingface.co/gacekmg/LTX2.3_comfy_kijai",
+  "created_at": "2026-08-19T04:42:07.000Z",
+  "updated_at": "2026-08-19T04:42:07.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377149731734,
+  "storage_human": "377.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kijai/LTX2.3_comfy · Hugging Face",
+      "url": "https://huggingface.co/Kijai/LTX2.3_comfy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kijai/LTX2.3_comfy at main - Hugging Face",
+      "url": "https://huggingface.co/Kijai/LTX2.3_comfy/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX2.3_comfy: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ltx2.3-comfy-kijai",
+      "snippet": "Overview LTX2.3_comfy is a quantized checkpoint version of the LTX 2.3 diffusion model optimized for ComfyUI, developed by Kijai. This model uses fp8 quantization with experimental input scaling to reduce memory requirements while maintaining generation quality. The key distinction is that fp8 quantizations use static weight scales and disable fp8 matrix multiplication by default, while ..."
+    },
+    {
+      "title": "Damacol/kijai-ltx2-3-comfy - GitHub",
+      "url": "https://github.com/Damacol/kijai-ltx2-3-comfy/tree/main",
+      "snippet": "Kijai/LTX2.3_comfy - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    },
+    {
+      "title": "LTX2.3_comfy huggingface.co api & Kijai LTX2.3_comfy github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/kijai-ltx2-3-comfy",
+      "snippet": "LTX2.3_comfy huggingface.co is an AI model on huggingface.co that provides LTX2.3_comfy&#x27;s model effect (), which can be used instantly with this Kijai LTX2.3_comfy model. huggingface.co supports a free trial of the LTX2.3_comfy model, and also provides paid use of the LTX2.3_comfy. Support call LTX2.3_comfy model through api, including Node.js, Python, http."
+    }
+  ]
+}

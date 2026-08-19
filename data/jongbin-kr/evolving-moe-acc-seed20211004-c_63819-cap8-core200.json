@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/evolving-moe-acc-seed20211004-c_63819-cap8-core200",
+  "slug": "jongbin-kr-evolving-moe-acc-seed20211004-c_63819-cap8-core200",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/evolving-moe-acc-seed20211004-c_63819-cap8-core200",
+  "created_at": "2026-08-19T07:58:32.000Z",
+  "updated_at": "2026-08-19T08:31:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 856376961,
+  "storage_human": "856 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    },
+    {
+      "title": "jongbin26 (jongbin) · GitHub",
+      "url": "https://github.com/jongbin26/",
+      "snippet": "A graph representing jongbin26&#x27;s contributions from July 06, 2025 to July 08, 2026. The contributions are 87% commits, 10% pull requests, 3% code review, 0% issues."
+    },
+    {
+      "title": "ACO-MoE-LoRA: Evolving-while-Training for Adapting Segment Anything ...",
+      "url": "https://icml.cc/virtual/2026/poster/66759",
+      "snippet": "Static fine-tuning paradigms impose rigid structural constraints on foundation models like the Segment Anything Model 2 (SAM2), limiting their adaptability to the varying complexity of specialized downstream tasks. To overcome this limitation, we propose ACO-MoE-LoRA, a dynamic framework that introduces an \"Evolving-while-Training\" strategy by synergizing Ant Colony Optimization (ACO) with a ..."
+    },
+    {
+      "title": "Jongbin Ryu (유종빈) - Google Sites",
+      "url": "https://sites.google.com/view/jongbinryu",
+      "snippet": "Jongbin Ryu, Hyun S. Yang, and Yongho Seo, \"Real time eye blinking detection using local ternary pattern and SVM\", International Conference on Broadband and Wireless Computing, Communication and Applications (BWCCA), 2013."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "iLegalnye/Modelnoufainfain",
+  "slug": "ilegalnye-modelnoufainfain",
+  "author": "iLegalnye",
+  "url": "https://huggingface.co/iLegalnye/Modelnoufainfain",
+  "created_at": "2026-08-19T11:17:19.000Z",
+  "updated_at": "2026-08-19T11:20:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269066393,
+  "storage_human": "269 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iLegalnye (Rosca Silviu) - Hugging Face",
+      "url": "https://huggingface.co/iLegalnye",
+      "snippet": "User profile of Rosca Silviu on Hugging Face"
+    },
+    {
+      "title": "iLegalnye/FullFullFineTune · Hugging Face",
+      "url": "https://huggingface.co/iLegalnye/FullFullFineTune",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "An AI Instagram Model Made $80,000 in a Week. Here Is How the Scam ...",
+      "url": "https://www.ledgerapp.app/blog/ai-instagram-model-fanvue-scam-80k",
+      "snippet": "A Reddit operator detailed how they built a fake AI Instagram model that pulled in $80K from Fanvue subscriptions before Instagram banned the account. The exact playbook, the tells, and what to do about it."
+    },
+    {
+      "title": "Malicious ML models discovered on Hugging Face platform",
+      "url": "https://www.reversinglabs.com/blog/rl-identifies-malware-ml-model-hosted-on-hugging-face",
+      "snippet": "In the case of the discovered model, since the malicious payload is inserted at the beginning of the Pickle stream, execution of the model wouldn&#x27;t be detected as unsafe by Hugging Face&#x27;s existing security scanning tools. Protect your ML models RL is constantly improving its malware detection mechanisms."
+    }
+  ]
+}

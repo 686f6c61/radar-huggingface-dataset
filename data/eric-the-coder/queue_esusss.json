@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "eric-the-coder/queue_esusss",
+  "slug": "eric-the-coder-queue_esusss",
+  "author": "eric-the-coder",
+  "url": "https://huggingface.co/eric-the-coder/queue_esusss",
+  "created_at": "2026-08-19T08:05:43.000Z",
+  "updated_at": "2026-08-19T08:05:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483477,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eric-the-coder/queue_sbs-v5-v11 · Hugging Face",
+      "url": "https://huggingface.co/eric-the-coder/queue_sbs-v5-v11",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Coder - microsoftlearning.github.io",
+      "url": "https://microsoftlearning.github.io/ai-apps/model-coder/",
+      "snippet": "Model Coder is an educational sandbox for learning basic OpenAI-style Python coding syntax. It lets you experiment with prompts, responses, streaming, and async patterns in a safe environment."
+    },
+    {
+      "title": "queue_merged-u83-v1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/eric-the-coder/queue_merged-u83-v1",
+      "snippet": "Deploy queue_merged-u83-v1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Stop using AI to write code. Install an engineering team instead ...",
+      "url": "https://www.linkedin.com/posts/sabetti_stop-using-ai-to-write-code-install-an-engineering-activity-7495265573589786624-YBt1",
+      "snippet": "A three-tier model strategy wired into every agent: cheap models for execution, mid for orchestration, expensive for escalation. Merge Monster: a long-running session that owns the merge queue."
+    },
+    {
+      "title": "eric-the-coder/queue_merged-u83 · Hugging Face",
+      "url": "https://huggingface.co/eric-the-coder/queue_merged-u83",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

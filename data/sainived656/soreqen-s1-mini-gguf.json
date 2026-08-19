@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sainived656/soreqen-s1-mini-GGUF",
+  "slug": "sainived656-soreqen-s1-mini-gguf",
+  "author": "sainived656",
+  "url": "https://huggingface.co/sainived656/soreqen-s1-mini-GGUF",
+  "created_at": "2026-08-19T06:14:09.000Z",
+  "updated_at": "2026-08-19T06:16:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "gguf",
+    "soreqen",
+    "hinglish",
+    "llama.cpp",
+    "quantized",
+    "text-generation",
+    "en",
+    "hi",
+    "base_model:sainived656/soreqen-s1-mini",
+    "base_model:quantized:sainived656/soreqen-s1-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 2857885312,
+  "storage_human": "2.9 GB",
+  "base_model": "sainived656/soreqen-s1-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sainived656/soreqen-s1 · Hugging Face",
+      "url": "https://huggingface.co/sainived656/soreqen-s1",
+      "snippet": "SoreQen S1 SoreQen S1 is a bilingual (English / Hinglish) assistant from ZorQelis AI, fine-tuned from Qwen/Qwen3.5-2B."
+    },
+    {
+      "title": "internlm/Intern-S1-mini-GGUF · Hugging Face",
+      "url": "https://huggingface.co/internlm/Intern-S1-mini-GGUF",
+      "snippet": "The Intern-S1-mini model in GGUF format can be utilized by llama.cpp, a highly popular open-source framework for Large Language Model (LLM) inference, across a variety of hardware platforms, both locally and in the cloud."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Intern-S1-mini · Models",
+      "url": "https://www.modelscope.cn/models/Shanghai_AI_Laboratory/Intern-S1-mini",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "gguf AI Models | Civitai",
+      "url": "https://civitai.com/tag/gguf",
+      "snippet": "Browse 288 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with gguf."
+    }
+  ]
+}

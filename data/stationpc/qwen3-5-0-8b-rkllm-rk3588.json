@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "StationPC/Qwen3.5-0.8B-RKLLM-RK3588",
+  "slug": "stationpc-qwen3-5-0-8b-rkllm-rk3588",
+  "author": "StationPC",
+  "url": "https://huggingface.co/StationPC/Qwen3.5-0.8B-RKLLM-RK3588",
+  "created_at": "2026-08-19T09:25:40.000Z",
+  "updated_at": "2026-08-19T09:25:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qengineering/Qwen3.5-0.8B-rk3588 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Qengineering/Qwen3.5-0.8B-rk3588/discussions",
+      "snippet": "like 2 Image-Text-to-Text RKLLM rk3588 rockchip rknpu vlm vision-language-model qwen3-5 edge-ai embedded Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qengineering/Qwen3.5-0.8B-rk3588 at main - Hugging Face",
+      "url": "https://huggingface.co/Qengineering/Qwen3.5-0.8B-rk3588/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main Qwen3.5-.8B-rk3588 1.56 GB Ctrl+K Ctrl+K 2 contributors History:4 commits Qengineering Add RKLLM and RKNN models 3f6ecb5 27 days ago .gitattributes Safe 1.61 kBAdd RKLLM and RKNN models27 days ago README.md Safe 6.66 kBReadme27 days ago qwen3.5-.8b_vision_rk3588.rknn Safe 219 MB xet Add RKLLM and RKNN models27 days ago qwen3.5-.8b_w8a8_rk3588.rkllm Safe 1. ..."
+    },
+    {
+      "title": "GitHub - Qengineering/Qwen3.5-0.8B-NPU: Qwen3.5-VL-0.8B on the RK3588 ...",
+      "url": "https://github.com/Qengineering/Qwen3.5-0.8B-NPU",
+      "snippet": "Once converted to RKNN, parts of the model can run on the NPU, improving speed. Despite these limits, models like Qwen3-2B run well on the RK3588 because the NPU efficiently accelerates the heavy math, and the vision encoder can be optimised. This makes advanced multimodal AI feasible on small, power-efficient devices."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Quick answer. Qwen3.5 0.8B is Alibaba&#x27;s smallest multimodal model, with a 262K context window and native vision support. Pull it with `ollama run qwen3.5:0.8b` for text or run the GGUF in llama.cpp for image input. Expect strong recall but weak code accuracy — bump to Qwen3.5 4B for any coding task."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

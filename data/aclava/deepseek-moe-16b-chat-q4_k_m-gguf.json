@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aclava/deepseek-moe-16b-chat-Q4_K_M-GGUF",
+  "slug": "aclava-deepseek-moe-16b-chat-q4_k_m-gguf",
+  "author": "aclava",
+  "url": "https://huggingface.co/aclava/deepseek-moe-16b-chat-Q4_K_M-GGUF",
+  "created_at": "2026-08-19T10:57:35.000Z",
+  "updated_at": "2026-08-19T10:58:21.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:deepseek-ai/deepseek-moe-16b-chat",
+    "base_model:quantized:deepseek-ai/deepseek-moe-16b-chat",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16375728128,
+  "parameters_human": "16.38B",
+  "storage_bytes": 10850182400,
+  "storage_human": "10.9 GB",
+  "base_model": "deepseek-ai/deepseek-moe-16b-chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/deepseek-moe-16b-chat · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/deepseek-moe-16b-chat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/deepseek-moe-16b-chat at main - Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/deepseek-moe-16b-chat/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-MoE: DeepSeekMoE: Towards Ultimate Expert ...",
+      "url": "https://github.com/deepseek-ai/DeepSeek-MoE",
+      "snippet": "DeepSeekMoE 16B is a Mixture-of-Experts (MoE) language model with 16.4B parameters. It employs an innovative MoE architecture, which involves two principal strategies: fine-grained expert segmentation and shared experts isolation. It is trained from scratch on 2T English and Chinese tokens, and exhibits comparable performance with DeekSeek 7B and LLaMA2 7B, with only about 40% of computations ..."
+    },
+    {
+      "title": "Deepseek Moe 16b Q4 K M Cpu Offload Gguf - model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1978038587291340800",
+      "snippet": "This is the Q4_K_M quantized version of the DeepSeek-MoE-16B model from DeepSeek Company. It enables the MoE (Mixture of Experts) CPU offload function through the Rust binding of llama.cpp, significantly reducing video memory usage."
+    },
+    {
+      "title": "deepseek-moe-16b-chat — VRAM, Quants & GPU Compatibility",
+      "url": "https://nodepedia.com/models/deepseek-moe-16b-chat/",
+      "snippet": "deepseek-moe-16b-chat by deepseek-ai — 16.38B parameter other model with 4K context. Minimum 11GB VRAM (Q4_K_M quantization). Compatible with 70 GPUs, cloud rental from $0.06/hr. 3 quantization options available."
+    }
+  ]
+}

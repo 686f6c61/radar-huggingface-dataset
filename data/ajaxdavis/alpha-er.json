@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ajaxdavis/alpha-er",
+  "slug": "ajaxdavis-alpha-er",
+  "author": "ajaxdavis",
+  "url": "https://huggingface.co/ajaxdavis/alpha-er",
+  "created_at": "2026-08-19T08:42:30.000Z",
+  "updated_at": "2026-08-19T08:42:37.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "alpha-er",
+    "text-generation",
+    "from-scratch",
+    "mixture-of-experts",
+    "custom-gpu-stack",
+    "research",
+    "custom_code",
+    "en",
+    "dataset:ajaxdavis/alpha-er-corpus",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100281600,
+  "parameters_human": "100.3M",
+  "storage_bytes": 401129592,
+  "storage_human": "401 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajaxdavis/alpha-v0-historic · Hugging Face",
+      "url": "https://huggingface.co/ajaxdavis/alpha-v0-historic",
+      "snippet": "A 97M parameter GPT model trained from scratch using the Alpha framework with the Helios Vulkan compute backend. Trained on dialogue data for chat-style text generation."
+    },
+    {
+      "title": "ajaxdavis/alpha-yi-f7-training-artifacts-20260809 · Hugging Face",
+      "url": "https://huggingface.co/ajaxdavis/alpha-yi-f7-training-artifacts-20260809",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    },
+    {
+      "title": "Alpha 60M Base by ajaxdavis — VRAM 0.2GB, 1K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ajaxdavis%2Falpha-60m-base,17EA5LRVzEtdkElisIScZQ",
+      "snippet": "Alpha 60M Base is an open-source 60m LLM by ajaxdavis. VRAM 0.2GB, 1K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "alpha-60m-chat API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ajaxdavis/alpha-60m-chat",
+      "snippet": "Run alpha-60m-chat with FriendliAI inference. Alpha Chat is a from-scratch conversational model trained through the Alpha TypeScript tensor/autograd stack and…"
+    }
+  ]
+}

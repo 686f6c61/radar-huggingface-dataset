@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/omnikimi-development-suite",
+  "slug": "prannesshkva-omnikimi-development-suite",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/omnikimi-development-suite",
+  "created_at": "2026-08-19T06:56:34.000Z",
+  "updated_at": "2026-08-19T07:17:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "mamba",
+    "state-space-models",
+    "moe",
+    "multimodal",
+    "any-to-any",
+    "pytorch",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22621,
+  "storage_human": "22621 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-19T10:32:08.077Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prannessh KVA prannesshkva - GitHub",
+      "url": "https://github.com/prannesshkva",
+      "snippet": "Highly driven AI and Software Engineering student with proven expertise bridging Data Science, Backend Infrastructure, and Distributed Systems. - prannesshkva"
+    },
+    {
+      "title": "Gemini Omni experts answer key questions about the model",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-experts-roundtable/",
+      "snippet": "We interviewed some of the experts behind Gemini Omni to hear what excites them most about the model."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    },
+    {
+      "title": "Gemini Omni — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-omni/",
+      "snippet": "Gemini Omni combines an intuitive understanding of physics with Gemini&#x27;s knowledge of history, science, and cultural context - bridging the gap from photorealism to meaningful storytelling."
+    },
+    {
+      "title": "Prannessh KVA — Data Engineering & Backend Systems",
+      "url": "https://prannesshkva.vercel.app/",
+      "snippet": "State-Aware Graph-Based AI Backend — integrating as a deployable Model Control Plane with Quantistic for adaptive data intelligence and decision-making."
+    }
+  ]
+}

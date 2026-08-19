@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "reyansh38771/diane613____uid139____hk5GU7w",
+  "slug": "reyansh38771-diane613____uid139____hk5gu7w",
+  "author": "reyansh38771",
+  "url": "https://huggingface.co/reyansh38771/diane613____uid139____hk5GU7w",
+  "created_at": "2026-08-19T07:51:10.000Z",
+  "updated_at": "2026-08-19T07:51:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diane613 (Diane101) - Hugging Face",
+      "url": "https://huggingface.co/diane613",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... published a model 4 days ago"
+    },
+    {
+      "title": "Username Search - Social Media Profile Lookup - IDCrawl",
+      "url": "https://www.idcrawl.com/username-search",
+      "snippet": "Username search by IDCrawl. Run a reverse username lookup to uncover social media profiles, hidden profiles and real people behind a username."
+    },
+    {
+      "title": "reyansh38771/0xbidkslj3____uid94____hk5E9si · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/0xbidkslj3____uid94____hk5E9si",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools)."
+    }
+  ]
+}

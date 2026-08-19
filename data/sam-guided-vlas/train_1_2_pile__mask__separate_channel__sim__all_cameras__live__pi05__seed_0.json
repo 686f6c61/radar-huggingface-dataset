@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sam-guided-vlas/train_1_2_pile__mask__separate_channel__sim__all_cameras__live__pi05__seed_0",
+  "slug": "sam-guided-vlas-train_1_2_pile__mask__separate_channel__sim__all_cameras__live__pi05__seed_0",
+  "author": "sam-guided-vlas",
+  "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__separate_channel__sim__all_cameras__live__pi05__seed_0",
+  "created_at": "2026-08-18T19:46:08.000Z",
+  "updated_at": "2026-08-19T08:51:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122413823408,
+  "storage_human": "122.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sam-guided-vlas (mim-sam-guided-vlas) - Hugging Face",
+      "url": "https://huggingface.co/sam-guided-vlas",
+      "snippet": "Org profile for mim-sam-guided-vlas on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "VLP-SAM/train.py at main · kosukesakurai1/VLP-SAM · GitHub",
+      "url": "https://github.com/kosukesakurai1/VLP-SAM/blob/main/train.py",
+      "snippet": "Vision and Language Reference Prompt into SAM for Few-shot Segmentation - VLP-SAM/train.py at main · kosukesakurai1/VLP-SAM"
+    },
+    {
+      "title": "sam-guided-vlas/pi05_rs-train_1_2-overlay-a025 · Hugging Face",
+      "url": "https://huggingface.co/sam-guided-vlas/pi05_rs-train_1_2-overlay-a025",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Teaching Vision-Language-Action Models What to See and Where to Look",
+      "url": "https://arxiv.org/html/2607.01658v1",
+      "snippet": "Ultimately, the model learns to name what is seen rather than understand what should see and where should look for reliable trajectory generation. As shown in Figure 1 (a), attention learned from purely textual traffic-knowledge SFT is scattered across the scene with no clear spatial grounding, making it difficult to interpret."
+    },
+    {
+      "title": "pricepertoken.com",
+      "url": "https://pricepertoken.com/news/model-releases",
+      "snippet": "New Models Today — AI & LLM Releases New models released in the last 24 hours and beyond. Track every new LLM from OpenAI, Anthropic, Google, Meta, Mistral and more. Last update"
+    }
+  ]
+}

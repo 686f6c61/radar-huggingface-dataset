@@ -5,7 +5,7 @@
   "author": "henriqueimoveis",
   "url": "https://huggingface.co/henriqueimoveis/Echoes-1.5-Instruct-PT-BR",
   "created_at": "2026-08-17T11:45:24.000Z",
-  "updated_at": "2026-08-17T11:46:35.000Z",
+  "updated_at": "2026-08-17T12:14:22.000Z",
   "license": "wtfpl",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 155,
   "trending_score": 0,
   "parameters": 870248448,
   "parameters_human": "870.2M",

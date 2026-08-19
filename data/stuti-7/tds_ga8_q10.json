@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Stuti-7/tds_ga8_q10",
+  "slug": "stuti-7-tds_ga8_q10",
+  "author": "Stuti-7",
+  "url": "https://huggingface.co/Stuti-7/tds_ga8_q10",
+  "created_at": "2026-08-19T09:23:44.000Z",
+  "updated_at": "2026-08-19T09:29:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 24f2006299/TDS-GA8-Q10",
+      "url": "https://github.com/24f2006299/TDS-GA8-Q10",
+      "snippet": "Contribute to 24f2006299/TDS-GA8-Q10 development by creating an account on GitHub."
+    },
+    {
+      "title": "TDS-Jan-2026/GA8 at main · AshkaPathak/TDS-Jan-2026 · GitHub",
+      "url": "https://github.com/AshkaPathak/TDS-Jan-2026/tree/main/GA8",
+      "snippet": "GA8: MLOps, Cloud APIs, Docker, and GCP Deployment This folder contains GA8 question-wise work for the Tools in Data Science January 2026 course. The focus here is secret hashing, Gemini API calls, FastAPI model services, Hugging Face Spaces, Docker multi-stage builds, Ruff CI, Cloud Run, Cloud Functions, and hash verification APIs. Each entry below names the question, the main artifact, and ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "All Models - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/en-US/models",
+      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "t-firefly/qwen3.5-4b-rkllm-rk3588",
+  "slug": "t-firefly-qwen3-5-4b-rkllm-rk3588",
+  "author": "t-firefly",
+  "url": "https://huggingface.co/t-firefly/qwen3.5-4b-rkllm-rk3588",
+  "created_at": "2026-07-13T06:35:35.000Z",
+  "updated_at": "2026-08-19T08:28:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5",
+    "firefly",
+    "rockchip",
+    "rk3588",
+    "llamapi",
+    "edge-ai",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6295634787,
+  "storage_human": "6.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t-firefly/qwen3.5-4b-rkllm-rk3588 · Hugging Face",
+      "url": "https://huggingface.co/t-firefly/qwen3.5-4b-rkllm-rk3588",
+      "snippet": "t-firefly / qwen3.5-4b-rkllm-rk3588 like 0 Follow Firefly AI 4 qwen3_5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "t-firefly/qwen3.5-4b-rkllm-rk3588 at main - Hugging Face",
+      "url": "https://huggingface.co/t-firefly/qwen3.5-4b-rkllm-rk3588/tree/main",
+      "snippet": "/ qwen3.5-4b-rkllm-rk3588 like 0 Follow Firefly AI 4 qwen3_5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main qwen3.5-4b-rkllm-rk3588 6.3 GB Ctrl+K Ctrl+K 1 contributor History:3 commits hui12123 Update model.toml bf8779b verifiedabout 6 hours ago .gitattributes 1.7 kBAdd files using upload-large ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions). For the first time, Qwen3.8 brings a Qwen ..."
+    },
+    {
+      "title": "边缘AI实战-RK3588部署Qwen3.5大模型-显存优化60推理加速3倍_rk3588 qwen-CSDN博客",
+      "url": "https://blog.csdn.net/fox0329/article/details/160223777",
+      "snippet": "文章浏览阅读3k次，点赞20次，收藏28次。以RK3588为硬件平台，从工具链选型（RKLLM vs llama.cpp vs MNN）到Qwen3.5-4B全链路部署，再到GGUF量化、mmap内存映射、KV Cache分层卸载三大优化手段，实测显存占用降低60%、推理速度提升3倍。_rk3588 qwen"
+    },
+    {
+      "title": "Large Language Model — Firefly Wiki",
+      "url": "https://wiki.t-firefly.com/en/AIBOX-3588/usage_llm_rockchip.html",
+      "snippet": "Below is an example demonstrating how to convert, quantize, export a large language model, and finally deploy and run it on the board, using the DeepSeek-R1-Distill-Qwen-1.5B_Demo provided by the RKLLM SDK."
+    }
+  ]
+}

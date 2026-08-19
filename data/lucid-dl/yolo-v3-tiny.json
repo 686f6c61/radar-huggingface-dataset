@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lucid-dl/yolo-v3-tiny",
+  "slug": "lucid-dl-yolo-v3-tiny",
+  "author": "lucid-dl",
+  "url": "https://huggingface.co/lucid-dl/yolo-v3-tiny",
+  "created_at": "2026-08-19T10:15:38.000Z",
+  "updated_at": "2026-08-19T10:15:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "lucid",
+  "languages": [],
+  "tags": [
+    "lucid",
+    "safetensors",
+    "object-detection",
+    "yolo",
+    "dataset:coco",
+    "arxiv:1804.02767",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35442088,
+  "storage_human": "35 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO",
+      "metric": null,
+      "value": 33.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - ultralytics/yolov3: PyTorch implementation of YOLOv3, YOLOv3 ...",
+      "url": "https://github.com/ultralytics/yolov3",
+      "snippet": "PyTorch implementation of YOLOv3, YOLOv3-SPP, and YOLOv3-tiny for real-time object detection with training, validation, inference, and multi-format export. - ultralytics/yolov3"
+    },
+    {
+      "title": "Releases · ultralytics/yolov3 - GitHub",
+      "url": "https://github.com/ultralytics/yolov3/releases",
+      "snippet": "PyTorch implementation of YOLOv3, YOLOv3-SPP, and YOLOv3-tiny for real-time object detection with training, validation, inference, and multi-format export. - ultralytics/yolov3"
+    },
+    {
+      "title": "YOLOv3, and YOLOv3u | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolov3",
+      "snippet": "YOLOv3 is the third iteration of the YOLO (You Only Look Once) object detection algorithm developed by Joseph Redmon, known for its balance of accuracy and speed, utilizing three different scales (13x13, 26x26, and 52x52) for detections."
+    },
+    {
+      "title": "yolov3 | YOLOv3 in PyTorch > ONNX > CoreML > TFLite",
+      "url": "https://ultralytics.github.io/yolov3/",
+      "snippet": "Experience seamless AI with Ultralytics HUB ⭐, the all-in-one solution for data visualization, YOLO 🚀 model training and deployment, without any coding. Transform images into actionable insights and bring your AI visions to life with ease using our cutting-edge platform and user-friendly Ultralytics App. Start your journey for Free now!"
+    },
+    {
+      "title": "RHRolun/tiny-yolo-v3 · Hugging Face",
+      "url": "https://huggingface.co/RHRolun/tiny-yolo-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

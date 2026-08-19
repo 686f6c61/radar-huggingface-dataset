@@ -5,7 +5,7 @@
   "author": "stage-babylm",
   "url": "https://huggingface.co/stage-babylm/llama-256-8L",
   "created_at": "2026-08-10T22:39:29.000Z",
-  "updated_at": "2026-08-17T19:32:55.000Z",
+  "updated_at": "2026-08-18T07:39:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 839,
+  "downloads_30d": 1592,
   "trending_score": 0,
-  "parameters": 2539392,
-  "parameters_human": "2.5M",
-  "storage_bytes": 3132945300,
-  "storage_human": "3.1 GB",
+  "parameters": 6804224,
+  "parameters_human": "6.8M",
+  "storage_bytes": 5147594116,
+  "storage_human": "5.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

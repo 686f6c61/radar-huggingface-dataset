@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nyanpoko/public",
+  "slug": "nyanpoko-public",
+  "author": "nyanpoko",
+  "url": "https://huggingface.co/nyanpoko/public",
+  "created_at": "2026-02-18T09:41:59.000Z",
+  "updated_at": "2026-08-19T09:18:09.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35900500815,
+  "storage_human": "35.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nyanpoko/public · Hugging Face",
+      "url": "https://huggingface.co/nyanpoko/public",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nyanpoko (ko) - Hugging Face",
+      "url": "https://huggingface.co/nyanpoko/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... updated a model 2 months ago"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "Prefect Pony XL - v6 | Pony Diffusion Checkpoint | Civitai",
+      "url": "https://civitai.com/models/439889/prefect-pony-xl",
+      "snippet": "All my models are officially hosted and maintained by me on Tensor.art . use my Exclusive and public model for free on tensor.art v5.0 civitai onsite generation enabled : 04/01/25 v5.0 final release : 01/01/25 v5.0 pre relelase update : 25/12/24 Check tensor.art for V1,V2,V3 online generation support You can run Prefect Pony XL and use its API ..."
+    },
+    {
+      "title": "にゃんぽこ (@nyanpoko) / Posts / X",
+      "url": "https://x.com/nyanpoko",
+      "snippet": "📊 144 📎 にゃんぽこ nyanpoko Oct 10 ショック…スロットルワイヤー中々引っ張っても抜けないと思ったらキャップヘッドにそのままカシメてあるタイプやった ここからどうする？"
+    }
+  ]
+}

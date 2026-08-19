@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/onnx-model-zoo-MobileNetV2-ImageNet-opset12-fp32-onnx",
   "created_at": "2026-08-19T01:58:22.000Z",
-  "updated_at": "2026-08-19T02:11:28.000Z",
+  "updated_at": "2026-08-19T07:02:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 13964571,
-  "storage_human": "14 MB",
+  "storage_bytes": 43798858,
+  "storage_human": "44 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -5,7 +5,7 @@
   "author": "shiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
   "url": "https://huggingface.co/shiiiiiiiiiiiiiiiiiiiiiiiiiiiii/DeepSeek-V4-Flash-0731-K160-REAP.GGUF",
   "created_at": "2026-08-17T14:31:53.000Z",
-  "updated_at": "2026-08-17T14:55:09.000Z",
+  "updated_at": "2026-08-19T07:37:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,24 +14,11 @@
     "en"
   ],
   "tags": [
-    "gguf",
-    "deepseek",
-    "deepseek-v4",
-    "reap",
-    "quantized",
-    "mixture-of-experts",
-    "text-generation",
-    "en",
-    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
-    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
     "license:mit",
-    "endpoints_compatible",
-    "region:us",
-    "imatrix",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 178,
   "trending_score": 0,
   "parameters": 180433133911,
   "parameters_human": "180.43B",
@@ -41,7 +28,7 @@
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

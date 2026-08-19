@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Adnan00707/english-ner-model",
+  "slug": "adnan00707-english-ner-model",
+  "author": "Adnan00707",
+  "url": "https://huggingface.co/Adnan00707/english-ner-model",
+  "created_at": "2026-08-19T07:26:30.000Z",
+  "updated_at": "2026-08-19T07:26:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ner-english | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/ner-english/",
+      "snippet": "The ner-english model is Flair&#x27;s default Named Entity Recognition (NER) model for English text, designed to identify and classify named entities in text. It represents a state-of-the-art approach to NER, combining Flair embeddings with an LSTM-CRF architecture to achieve high accuracy in entity detection."
+    },
+    {
+      "title": "flair/ner-english · Hugging Face",
+      "url": "https://huggingface.co/flair/ner-english",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NER-English Open-Source Named Entity Recognition Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915693920333488130",
+      "snippet": "This project provides a standard 4 - class NER model for English that comes with Flair. It can effectively identify named entities in English text, offering high - quality NER services."
+    },
+    {
+      "title": "Quickstart - Custom named entity recognition (NER) - Foundry Tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-named-entity-recognition/quickstart",
+      "snippet": "Quickly start building an AI model to categorize and extract information from unstructured text."
+    },
+    {
+      "title": "NER Model Mastery: Develop a High-Accuracy AI Model Now",
+      "url": "https://vedanganalytics.com/ner-model-mastery-develop-a-high-accuracy-ai-model-now/",
+      "snippet": "Learn how to build a custom Named Entity Recognition -NER model from scratch. Step-by-step guide with Python code, tips, and real-world applications."
+    }
+  ]
+}

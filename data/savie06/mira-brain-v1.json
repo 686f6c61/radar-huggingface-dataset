@@ -5,7 +5,7 @@
   "author": "savie06",
   "url": "https://huggingface.co/savie06/MiRA-Brain-v1",
   "created_at": "2026-08-17T13:46:32.000Z",
-  "updated_at": "2026-08-17T13:52:06.000Z",
+  "updated_at": "2026-08-18T09:50:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -14,6 +14,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "gguf",
     "llama",
     "text-generation",
     "conversational",
@@ -23,14 +24,15 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 418,
+  "downloads_30d": 1322,
   "trending_score": 0,
   "parameters": 3212749824,
   "parameters_human": "3.21B",
-  "storage_bytes": 6442739056,
-  "storage_human": "6.4 GB",
+  "storage_bytes": 18317702800,
+  "storage_human": "18.3 GB",
   "base_model": null,
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

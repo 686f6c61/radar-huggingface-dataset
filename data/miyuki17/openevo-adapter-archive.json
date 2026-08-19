@@ -5,7 +5,7 @@
   "author": "miyuki17",
   "url": "https://huggingface.co/miyuki17/openevo-adapter-archive",
   "created_at": "2026-08-19T01:54:50.000Z",
-  "updated_at": "2026-08-19T01:57:43.000Z",
+  "updated_at": "2026-08-19T10:23:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 337051072,
-  "storage_human": "337 MB",
+  "storage_bytes": 367411504,
+  "storage_human": "367 MB",
   "base_model": null,
   "formats": [
     "safetensors"

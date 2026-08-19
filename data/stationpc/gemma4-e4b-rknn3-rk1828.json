@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "StationPC/Gemma4-E4B-RKNN3-RK1828",
+  "slug": "stationpc-gemma4-e4b-rknn3-rk1828",
+  "author": "StationPC",
+  "url": "https://huggingface.co/StationPC/Gemma4-E4B-RKNN3-RK1828",
+  "created_at": "2026-08-19T07:56:04.000Z",
+  "updated_at": "2026-08-19T07:56:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t-firefly/gemma4-e4b-rknn3-rk1828 · Hugging Face",
+      "url": "https://huggingface.co/t-firefly/gemma4-e4b-rknn3-rk1828",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "t-firefly/gemma4-e4b-rknn3-rk1828 at main - Hugging Face",
+      "url": "https://huggingface.co/t-firefly/gemma4-e4b-rknn3-rk1828/tree/main",
+      "snippet": "t-firefly / gemma4-e4b-rknn3-rk1828 like 0 Follow Firefly AI 5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main gemma4-e4b-rknn3-rk1828 1.55 kB Ctrl+K Ctrl+K 1 contributor History:1 commit CodeZsheep2342 initial commit c8e7f1a verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout 6 ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 PC: Local AI Performance and Setup Guide 2026",
+      "url": "https://www.gemma4.wiki/requirements/gemma-4-pc",
+      "snippet": "Learn how to run Google&#x27;s Gemma 4 on your PC. Explore benchmarks for E2B, 26B, and 31B models, hardware requirements, and optimization tips for local AI."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    }
+  ]
+}

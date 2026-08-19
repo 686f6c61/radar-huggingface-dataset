@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Agnes-AI/Agnes-2.5-Pro-Alpha",
+  "slug": "agnes-ai-agnes-2-5-pro-alpha",
+  "author": "Agnes-AI",
+  "url": "https://huggingface.co/Agnes-AI/Agnes-2.5-Pro-Alpha",
+  "created_at": "2026-08-19T05:55:07.000Z",
+  "updated_at": "2026-08-19T08:22:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "agnes-ai",
+    "reasoning",
+    "multimodal",
+    "long-context",
+    "api",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-397B-A17B",
+    "base_model:finetune:Qwen/Qwen3.5-397B-A17B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 396802360816,
+  "parameters_human": "396.80B",
+  "storage_bytes": 793617707078,
+  "storage_human": "793.6 GB",
+  "base_model": "Qwen/Qwen3.5-397B-A17B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agnes 2.5 Pro Alpha - Agnes-Ai Docs",
+      "url": "https://wiki.agnes-ai.com/en/docs/agnes-25-pro-alpha",
+      "snippet": "Agnes 2.5 Pro Alpha is a paid reasoning model from Agnes AI. It is designed for advanced coding, scientific reasoning, long-context analysis, agentic workflows, and multimodal understanding."
+    },
+    {
+      "title": "Agnes AI releases Agnes 2.5 Pro Alpha - artificialanalysis.ai",
+      "url": "https://artificialanalysis.ai/articles/agnes-ai-releases-agnes-2-5-pro-alpha",
+      "snippet": "Agnes 2.5 Pro Alpha is a text, image, and video input reasoning model with text output. Agnes 2.5 Pro Alpha scores 39 on the Artificial Analysis Intelligence Index, placing it mid-pack among reasoning models we have tested and below the current proprietary frontier."
+    },
+    {
+      "title": "Agnes 2.5 Pro - Agnes-Ai Docs",
+      "url": "https://agnes-ai.cn/en/docs/agnes-25-pro",
+      "snippet": "The commercial stable version of the benchmark-listed Agnes 2.5 Pro Alpha model for advanced coding, scientific reasoning, long-context analysis, agentic workflows, and multimodal understanding."
+    },
+    {
+      "title": "Agnes 2.5 Pro Alpha Intelligence, Performance & Price Analysis",
+      "url": "https://artificialanalysis.ai/models/agnes-2-5-pro-alpha",
+      "snippet": "Analysis of Sapiens AI&#x27;s Agnes 2.5 Pro Alpha and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more."
+    },
+    {
+      "title": "Agnes 2.5 Pro Alpha pricing & specs — Agnes | CloudPrice",
+      "url": "https://cloudprice.net/models/agnes-2-5-pro-alpha",
+      "snippet": "Agnes 2.5 Pro Alpha is an AI model by Agnes. Compare LLM pricing, specs, benchmarks, and costs across providers."
+    }
+  ]
+}

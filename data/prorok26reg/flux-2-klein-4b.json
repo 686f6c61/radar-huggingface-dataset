@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "PROROK26REG/FLUX.2-klein-4B",
+  "slug": "prorok26reg-flux-2-klein-4b",
+  "author": "PROROK26REG",
+  "url": "https://huggingface.co/PROROK26REG/FLUX.2-klein-4B",
+  "created_at": "2026-08-19T08:27:01.000Z",
+  "updated_at": "2026-08-19T08:27:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-editing",
+    "flux",
+    "diffusion-single-file",
+    "image-to-image",
+    "en",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 23735489815,
+  "storage_human": "23.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flux 2 [klein] User Guide - fal.ai",
+      "url": "https://fal.ai/learn/devs/flux-2-klein-user-guide",
+      "snippet": "The Flux 2 [klein] 4B model family supports both text-to-image generation and image editing workflows, including single-reference and multi-reference inputs for controlled transformations. For teams processing hundreds or thousands of images daily, the reduced parameter count translates into meaningful latency and cost advantages 1."
+    },
+    {
+      "title": "FLUX.2 [klein] - Fast, Efficient Image Generation | Black Forest Labs",
+      "url": "https://bfl.ai/models/flux-2-klein",
+      "snippet": "FLUX.2 [klein] - Fast, efficient image generation for rapid iteration and prototyping. The fastest model in the FLUX.2 family from Black Forest Labs."
+    },
+    {
+      "title": "README.md · black-forest-labs/FLUX.2-klein-4B at main",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4B/blob/main/README.md",
+      "snippet": "The FLUX.2 [klein] model family are our fastest image models to date. FLUX.2 [klein] unifies generation and editing in a single compact architecture, delivering state-of-the-art quality with end-to-end inference in as low as under a second."
+    },
+    {
+      "title": "flux2-klein-4b/README.md at main · VladimirRL/flux2-klein-4b",
+      "url": "https://github.com/VladimirRL/flux2-klein-4b/blob/main/README.md",
+      "snippet": "Official inference repo for FLUX.2 models. Contribute to VladimirRL/flux2-klein-4b development by creating an account on GitHub."
+    },
+    {
+      "title": "Flux2 AI - Advanced AI Image Generator | Flux.2 Powered",
+      "url": "https://flux2.tech/",
+      "snippet": "Updated April 2026: Flux2 AI runs the latest FLUX.2 max, pro, dev, flex, and klein models with 4MP quality, March 2026 pro speed upgrade, sub-second klein drafts, and 10-image multi-reference control."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/chatterbox-onestep",
+  "slug": "axera-tech-chatterbox-onestep",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/chatterbox-onestep",
+  "created_at": "2026-08-19T04:20:43.000Z",
+  "updated_at": "2026-08-19T05:10:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "axmodel",
+    "axera",
+    "onestep",
+    "s3gen",
+    "flow-matching",
+    "chatterbox-s3gen-onestep",
+    "text-to-speech",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132233942,
+  "storage_human": "132 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXERA-TECH/chatterbox-p192-ctx384-ax650 · Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/chatterbox-p192-ctx384-ax650",
+      "snippet": "AXERA-TECH / chatterbox-p192-ctx384-ax650 like 0 Follow AXERA 141 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "chatterbox: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/chatterbox-resemble-ai",
+      "snippet": "Overview chatterbox is a text-to-speech model built by resemble-ai that generates expressive, natural speech with emotion control, instant voice cloning from short audio samples, and built-in watermarking. The model synthesizes speech from text prompts and optional audio references, producing audio files with controllable emotional intensity and acoustic characteristics. The core strength of ..."
+    },
+    {
+      "title": "AXERA-TECH (AXERA) - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/models",
+      "snippet": "Edge AI Compute, CNN, Visual Transformer, LLM, VLM"
+    },
+    {
+      "title": "Chatterbox - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Chatterbox",
+      "snippet": "Chatterbox is a family of open-source text-to-speech models developed by Resemble AI, a Toronto-based voice artificial intelligence company founded in 2019 by Zohaib Ahmed and Saqib Muhammad. First released in May 2025 under the MIT license, Chatterbox is designed to generate natural-sounding synthetic speech from text input, with particular emphasis on zero-shot voice cloning and controllable ..."
+    },
+    {
+      "title": "Chatterbox TTS One-click PC Deployment Tool | One Click to Run AI on ...",
+      "url": "https://daiyl.com/resource/local-app/chatterbox/",
+      "snippet": "ChatterBox, developed by Resemble AI, is a lightweight open-source Text-to-Speech (TTS) model designed to deliver high-fidelity, expressive, and multilingual voice synthesis with minimal hardware requirements. 🌟 Key Features 23-Language Support: It natively supports 23 languages, including English, Chinese, French, German, and Spanish."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kefir090/Lumen-118M-Base",
+  "slug": "kefir090-lumen-118m-base",
+  "author": "kefir090",
+  "url": "https://huggingface.co/kefir090/Lumen-118M-Base",
+  "created_at": "2026-07-30T18:05:28.000Z",
+  "updated_at": "2026-08-19T11:24:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lumen",
+    "text-generation",
+    "small-language-model",
+    "from-scratch",
+    "causal-lm",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 1265,
+  "trending_score": 0,
+  "parameters": 117477466,
+  "parameters_human": "117.5M",
+  "storage_bytes": 235794918,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kefir090/Lumen-118M-Base · Hugging Face",
+      "url": "https://huggingface.co/kefir090/Lumen-118M-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lumen 118M Base by kefir090 — VRAM 0.2GB, 2K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/kefir090%2FLumen-118M-Base,5X9W8YnPH1p8E6J3gpuDes",
+      "snippet": "Lumen 118M Base is an open-source 118m LLM by kefir090. VRAM 0.2GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "kefir090 (kefir) - Hugging Face",
+      "url": "https://huggingface.co/kefir090/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "kefir090 - GitHub",
+      "url": "https://github.com/kefir090/",
+      "snippet": "Forked from Perfare/Zygisk-Il2CppDumper Using Zygisk to dump il2cpp data at runtime C"
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    }
+  ]
+}

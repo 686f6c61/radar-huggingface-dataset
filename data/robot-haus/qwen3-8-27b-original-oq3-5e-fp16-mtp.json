@@ -5,7 +5,7 @@
   "author": "Robot-Haus",
   "url": "https://huggingface.co/Robot-Haus/Qwen3.8-27B-original-oQ3.5e-fp16-mtp",
   "created_at": "2026-08-18T23:37:09.000Z",
-  "updated_at": "2026-08-18T23:48:21.000Z",
+  "updated_at": "2026-08-19T00:26:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 4380854512,
   "parameters_human": "4.38B",

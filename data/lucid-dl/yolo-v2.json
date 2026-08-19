@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lucid-dl/yolo-v2",
+  "slug": "lucid-dl-yolo-v2",
+  "author": "lucid-dl",
+  "url": "https://huggingface.co/lucid-dl/yolo-v2",
+  "created_at": "2026-08-19T10:13:45.000Z",
+  "updated_at": "2026-08-19T10:15:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "lucid",
+  "languages": [],
+  "tags": [
+    "lucid",
+    "safetensors",
+    "object-detection",
+    "yolo",
+    "dataset:coco",
+    "arxiv:1612.08242",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 407896080,
+  "storage_human": "408 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO",
+      "metric": null,
+      "value": 48.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - ninicom/ultralytics_v2",
+      "url": "https://github.com/ninicom/ultralytics_v2",
+      "snippet": "Ultralytics creates cutting-edge, state-of-the-art (SOTA) YOLO models built on years of foundational research in computer vision and AI. Constantly updated for performance and flexibility, our models are fast, accurate, and easy to use."
+    },
+    {
+      "title": "YOLOv2 Object Detection Model - Sipeed Wiki",
+      "url": "https://wiki.sipeed.com/ai/en/nn_models/yolov2.html",
+      "snippet": "In fact, the pure model of the YOLO v2 model we trained can output a three-dimensional tensor such as S x S x (Bx5+C). Then the code library provides a decoding function. Call the function to input the three-dimensional tensor to get the legal prediction frame output."
+    },
+    {
+      "title": "Discover Ultralytics YOLO models | State-of-the-Art Computer Vision",
+      "url": "https://www.ultralytics.com/yolo",
+      "snippet": "Explore Ultralytics YOLO models, state-of-the-art vision AI models for real-time image and video analysis."
+    },
+    {
+      "title": "YOLO Object Detection & Segmentation | Ultralytics",
+      "url": "https://docs.ultralytics.com/",
+      "snippet": "YOLO supports various vision AI tasks such as detection, instance segmentation, semantic segmentation, depth estimation, classification, pose estimation, and tracking. Its efficient architecture ensures excellent speed and accuracy, making it suitable for diverse applications, including edge devices and cloud APIs."
+    },
+    {
+      "title": "Ultralytics | Revolutionizing the World of Computer Vision",
+      "url": "https://www.ultralytics.com/",
+      "snippet": "Ultralytics is a complete computer vision platform for annotating datasets, training YOLO models on cloud GPUs, and deploying to 43 global regions, all from one unified workspace. It streamlines the full journey from raw visual data to production-ready, AI-powered applications, replacing the fragmented tooling that slows most computer vision projects down."
+    }
+  ]
+}

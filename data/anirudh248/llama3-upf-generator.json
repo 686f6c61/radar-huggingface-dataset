@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "anirudh248/llama3-upf-generator",
+  "slug": "anirudh248-llama3-upf-generator",
+  "author": "anirudh248",
+  "url": "https://huggingface.co/anirudh248/llama3-upf-generator",
+  "created_at": "2026-08-19T05:02:42.000Z",
+  "updated_at": "2026-08-19T05:25:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anirudh248 (Anirudh P S) - Hugging Face",
+      "url": "https://huggingface.co/anirudh248",
+      "snippet": "User profile of Anirudh P S on Hugging Face"
+    },
+    {
+      "title": "anirudh248/upf_code_generator_final · Hugging Face",
+      "url": "https://huggingface.co/anirudh248/upf_code_generator_final",
+      "snippet": "Model tree for anirudh248/upf_code_generator_final Base model meta-llama/Llama-3.2-3B-Instruct Finetuned"
+    },
+    {
+      "title": "anirudh-248/README.md at main - GitHub",
+      "url": "https://github.com/anirudh-248/anirudh-248/blob/main/README.md",
+      "snippet": "My recent work includes projects like the UPF Code Generator and Virtual Wardrobe. 👯 I&#x27;m looking to collaborate on: AI/ML projects involving generative AI, computer vision (e.g., YOLOv8), or cloud-based web applications. I&#x27;d love to team up on something innovative with FastAPI/Django, AWS, or Retrieval-Augmented Generation (RAG) workflows."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    }
+  ]
+}

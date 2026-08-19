@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lattice-research/lattice-quark-1.5b-mlx",
+  "slug": "lattice-research-lattice-quark-1-5b-mlx",
+  "author": "lattice-research",
+  "url": "https://huggingface.co/lattice-research/lattice-quark-1.5b-mlx",
+  "created_at": "2026-08-19T08:48:18.000Z",
+  "updated_at": "2026-08-19T09:45:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nanochat2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 827526894,
+  "parameters_human": "827.5M",
+  "storage_bytes": 1852241686,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lattice-research/lattice-quark-1.5b · Hugging Face",
+      "url": "https://huggingface.co/lattice-research/lattice-quark-1.5b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lattice-research/lattice-quark-1.5b at main - Hugging Face",
+      "url": "https://huggingface.co/lattice-research/lattice-quark-1.5b/tree/main",
+      "snippet": "lattice-research / lattice-quark-1.5b like 0 Follow Lattice 1 Text Generation English from-scratch tiny gpt License:mit Model card FilesFiles and versions xet Community Copy to bucket new main lattice-quark-1.5b 42.9 GB Ctrl+K Ctrl+K 1 contributor History:23 commits oli-mebberson Add custom nanochat tokenizer files e4a0d3e verifiedabout 2 hours ago checkpointsUpload checkpoints/sft/optim ..."
+    },
+    {
+      "title": "GitHub - ohdearquant/lattice: Run, quantize, and fine-tune LLMs on ...",
+      "url": "https://github.com/ohdearquant/lattice",
+      "snippet": "Lattice is two things in one repo. A Rust inference library. Five published crates covering embeddings, generation, quantization, LoRA fine-tuning, and optimal transport. Use lattice-embed as a library dependency, or run the lattice binary for interactive chat and an OpenAI-compatible HTTP server. Lattice Studio: a native macOS app. A SwiftUI instrument panel that drives the Rust engine via ..."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "GitHub - TaeSooPark-PTS/LatticeAI",
+      "url": "https://github.com/TaeSooPark-PTS/LatticeAI",
+      "snippet": "Most AI tools split your work across a chat window, a model picker, loose files, and disconnected automations. Lattice AI keeps those parts together: files and conversations become graph context; graph context feeds pipelines and coding actions; model cards disclose country, company, run mode, internet usage, and model identity; personal and organization workspaces keep team workflows separate ..."
+    }
+  ]
+}

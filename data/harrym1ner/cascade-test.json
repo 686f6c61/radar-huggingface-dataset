@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "harrym1ner/cascade-test",
+  "slug": "harrym1ner-cascade-test",
+  "author": "harrym1ner",
+  "url": "https://huggingface.co/harrym1ner/cascade-test",
+  "created_at": "2026-08-19T06:46:06.000Z",
+  "updated_at": "2026-08-19T06:46:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "Cascade - AI Response Comparison",
+      "url": "https://www.usecascade.app/landing",
+      "snippet": "THE SMARTEST WAY TO COMPARE AI Test prompts across multiple models simultaneously. Save templates, track experiments, find the perfect model."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stable Cascade - a Hugging Face Space by multimodalart",
+      "url": "https://huggingface.co/spaces/multimodalart/stable-cascade",
+      "snippet": "Stable Cascade Unofficial demo for Stable Casacade, a new high resolution text-to-image model by Stability AI, built on the Würstchen architecture - non-commercial research license"
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DanielNRU/Avito_tags-ruroberta-training__",
+  "slug": "danielnru-avito_tags-ruroberta-training__",
+  "author": "DanielNRU",
+  "url": "https://huggingface.co/DanielNRU/Avito_tags-ruroberta-training__",
+  "created_at": "2026-07-22T06:03:56.000Z",
+  "updated_at": "2026-08-19T11:24:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127745345174,
+  "storage_human": "127.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DanielNRU/S7-tags-ruroberta-20260810 · Hugging Face",
+      "url": "https://huggingface.co/DanielNRU/S7-tags-ruroberta-20260810",
+      "snippet": "DanielNRU / S7-tags-ruroberta-20260810 like 0 Text Classification Transformers S7_enriched.jsonl Russian russian rubert ruroberta multi-label-classification s7-airlines Eval Results (legacy) License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DanielNRU/S7-tags-ruroberta-20260812 · Hugging Face",
+      "url": "https://huggingface.co/DanielNRU/S7-tags-ruroberta-20260812",
+      "snippet": "Base model: ai-forever/ruRoBERTa-large Task: multi-label tag classification Dataset: S7_enriched.jsonl Best Micro F1: 0.8878 Best Epoch: 15 Trained: 2026-08-12 Downloads last month - Safetensors Model size 0.4B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "Apple is reportedly building its own AI model for China with Alibaba",
+      "url": "https://www.macobserver.com/news/apple-is-reportedly-building-its-own-ai-model-for-china-with-alibaba/",
+      "snippet": "Apple is reportedly training its own AI model for China with Alibaba as it prepares to launch Apple Intelligence in the country."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "Meta joins OpenAI, Anthropic as yet another company with an AI model ...",
+      "url": "https://tech.yahoo.com/ai/article/meta-joins-openai-anthropic-as-yet-another-company-with-an-ai-model-that-went-rogue-143407703.html",
+      "snippet": "Meta joins OpenAI, Anthropic as yet another company with an AI model that went rogue It&#x27;s the latest incident in the growing phenomenon of AI agents doing whatever it takes to reach a goal."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "gacekmg/Local_Security_Model",
+  "slug": "gacekmg-local_security_model",
+  "author": "gacekmg",
+  "url": "https://huggingface.co/gacekmg/Local_Security_Model",
+  "created_at": "2026-08-19T05:11:20.000Z",
+  "updated_at": "2026-08-19T05:11:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "other",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "other",
+    "penetration-testing",
+    "autonomous-agent",
+    "mcp",
+    "kali-linux",
+    "llm",
+    "cybersecurity",
+    "red-team",
+    "ethical-hacking",
+    "bug-bounty",
+    "python",
+    "flask",
+    "bug-bounty,",
+    "pentesting-tools,",
+    "mcp,",
+    "mcp-server,",
+    "mcp-agent-loop,",
+    "ethical-hacker,",
+    "ethical-hacking-tools,",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36523801,
+  "storage_human": "37 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Local AI Governance: Addressing Model Safety and Policy ... - MDPI",
+      "url": "https://www.mdpi.com/2673-2688/6/7/159",
+      "snippet": "Local deployment removes AI models from the security of centralized model servers, thereby weakening technical safeguards. Local AI entails higher risks of model tampering and malicious output manipulation; for example, legitimate open-source models can be replaced by malicious models on open-source repositories like Hugging Face [156]."
+    },
+    {
+      "title": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI ...",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+      "snippet": "A Blog post by Daya Shankar on Hugging Face"
+    },
+    {
+      "title": "ModelScan: Protection Against Model Serialization Attacks",
+      "url": "https://github.com/protectai/modelscan",
+      "snippet": "Enforcing And Automating Model Security ModelScan offers robust open-source scanning. If you need comprehensive AI security, consider Guardian. It is our enterprise-grade model scanning product."
+    },
+    {
+      "title": "Local AI Model Cheat Sheet — 2026",
+      "url": "https://local-ai-models.ai/local-ai-models.html",
+      "snippet": "Local AI Model Catalog 100 open-weight models cataloged. VRAM requirements, speed benchmarks, hardware planning. Your mission control for local AI deployment."
+    },
+    {
+      "title": "Run Local AI Models on Your PC | Check What Models You Can Run",
+      "url": "https://runlocalmodel.com/",
+      "snippet": "Find out which AI models your computer can run locally, and browse Agent Skills (SKILL.md) for Claude Code, Codex, and other AI agents. Check GPU VRAM compatibility for LLaMA, Gemma, Mistral, and more."
+    }
+  ]
+}

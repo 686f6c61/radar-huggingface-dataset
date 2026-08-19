@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "stephvax/cosyvoice3-onnx-slim",
+  "slug": "stephvax-cosyvoice3-onnx-slim",
+  "author": "stephvax",
+  "url": "https://huggingface.co/stephvax/cosyvoice3-onnx-slim",
+  "created_at": "2026-08-19T10:55:24.000Z",
+  "updated_at": "2026-08-19T10:55:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "cosyvoice",
+  "languages": [],
+  "tags": [
+    "cosyvoice",
+    "tts",
+    "onnx",
+    "base_model:ayousanz/cosy-voice3-onnx",
+    "base_model:finetune:ayousanz/cosy-voice3-onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 272269312,
+  "storage_human": "272 MB",
+  "base_model": "ayousanz/cosy-voice3-onnx",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayousanz/cosy-voice3-onnx · Hugging Face",
+      "url": "https://huggingface.co/ayousanz/cosy-voice3-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cosyvoice3-onnx/README.md at main - GitHub",
+      "url": "https://github.com/AINightCoder/cosyvoice3-onnx/blob/main/README.md",
+      "snippet": "零 PyTorch 依赖：只用 onnxruntime + numpy + librosa 跑全流程（LLM / Flow / HiFT）。 零样本声音克隆：给一段 3-10 秒参考音频 + 它的逐字稿，即可用该音色合成任意文本。 多语言：自动识别中文 / 英文 / 日文 / 韩文 / 德 / 西 / 法 / 意 / 俄 等， 不要 写 <|zh|> 这类语言标签。 可调推理参数：采样、长度、流 ..."
+    },
+    {
+      "title": "GitHub - Lourdle/CosyVoiceForOnnx: To convert CosyVoice model to ONNX",
+      "url": "https://github.com/Lourdle/CosyVoiceForOnnx",
+      "snippet": "To convert CosyVoice model to ONNX. Contribute to Lourdle/CosyVoiceForOnnx development by creating an account on GitHub."
+    },
+    {
+      "title": "ayousanz/cosy-voice3-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/ayousanz/cosy-voice3-onnx/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "【Major Release】CosyVoice 3.0 Tech Guide: Next-Gen Zero-Shot Speech ...",
+      "url": "https://stable-learn.com/en/cosyvoice3-tech-guide/",
+      "snippet": "Released on 2025-12-15, CosyVoice 3.0 features 9 languages, 18+ dialects, and pronunciation inpainting. This guide covers model setup, inference, and full local deployment."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0-GGUF",
+  "slug": "mradermacher-qwen3-5-2b-opus-distilled-heretic-thinking-multistage-sft-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0-GGUF",
+  "created_at": "2026-08-19T06:03:26.000Z",
+  "updated_at": "2026-08-19T06:34:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "32k-context",
+    "local-inference",
+    "qwen3.5",
+    "9b",
+    "opus-4.7",
+    "sft",
+    "multi-stage-training",
+    "multitask",
+    "reasoning",
+    "logical-reasoning",
+    "problem-solving",
+    "math",
+    "long-context",
+    "community-model",
+    "oss",
+    "bf16",
+    "vllm",
+    "text-generation",
+    "en",
+    "base_model:prithivMLmods/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0",
+    "base_model:quantized:prithivMLmods/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 331416576,
+  "parameters_human": "331.4M",
+  "storage_bytes": 1032892352,
+  "storage_human": "1.0 GB",
+  "base_model": "prithivMLmods/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0.Q5_K_M ...",
+      "url": "https://huggingface.co/prithivMLmods/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0-GGUF/blame/main/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0.Q5_K_M.gguf",
+      "snippet": "prithivMLmods / Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.-GGUF like 1 Image-Text-to-Text Transformers GGUF English text-generation-inference llama-cpp 32k-context local-inference qwen3.5 9b opus-4.7 sft multi-stage-training multitask reasoning logical-reasoning problem-solving math long-context community-model oss text-generation conversational License:apache-2.0 Model ..."
+    },
+    {
+      "title": "Quantized Models for prithivMLmods/Qwen3.5-2B-Opus-Distilled-Heretic ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:prithivMLmods/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: prithivMLmods/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1. ..."
+    },
+    {
+      "title": "Qwen3.5-2B Distills Opus Reasoning Into a Tiny GGUF Model",
+      "url": "https://hackernoon.com/qwen35-2b-distills-opus-reasoning-into-a-tiny-gguf-model",
+      "snippet": "Model overview Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled-GGUF is a compact reasoning model built on the Qwen3.5-2B architecture and trained through knowledge distillation from Claude-4.6 Opus. The model learns to structure its thinking process using formatted <think> tags before generating final responses, enabling transparent step-by-step problem solving in a lightweight package. Unlike ..."
+    },
+    {
+      "title": "Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0",
+      "url": "https://friendli.ai/models/prithivMLmods/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0",
+      "snippet": "Key Highlights Qwen 3.5 Foundation: Built directly on top of Qwen/Qwen3.5-2B. Multi-Stage SFT Training: Trained using a multi-stage supervised fine-tuning pipeline to progressively improve reasoning performance. Opus Reasoning Distillation: Distilled from approximately 6,000 coding and STEM-focused Opus reasoning traces. General Reasoning Enhancement: Further trained on additional high-quality ..."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

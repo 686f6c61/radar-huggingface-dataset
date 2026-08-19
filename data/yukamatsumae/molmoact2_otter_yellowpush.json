@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yukamatsumae/molmoact2_otter_yellowpush",
+  "slug": "yukamatsumae-molmoact2_otter_yellowpush",
+  "author": "yukamatsumae",
+  "url": "https://huggingface.co/yukamatsumae/molmoact2_otter_yellowpush",
+  "created_at": "2026-08-19T09:46:01.000Z",
+  "updated_at": "2026-08-19T09:50:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "molmoact2",
+    "robotics",
+    "dataset:yukamatsumae/YellowPush_20260818_082007",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 10884581464,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "yukamatsumae/molmoact2_otter_toycarresearch_20260817 · Hugging Face",
+      "url": "https://huggingface.co/yukamatsumae/molmoact2_otter_toycarresearch_20260817",
+      "snippet": "Model Card for molmoact2 Model type not recognized — please update this template."
+    },
+    {
+      "title": "GitHub - allenai/molmoact: Official Repository for MolmoAct",
+      "url": "https://github.com/allenai/MolmoAct",
+      "snippet": "MolmoAct: Multimodal Open Language Model for Action Updates [2026/5/5] 🔥 We have released MolmoAct2, faster, stronger, and better in every aspect. Check it out. [2025/12/5] 🔥 Tips on zero-shot evaluation of allenai/MolmoAct-7B-D-0812 on Franka setup with MolmoAct mid-training at 5.4 Zero-shot evaluation."
+    },
+    {
+      "title": "yukamatsumae/molmoact2_otter_graspandpush_20260806 · Hugging Face",
+      "url": "https://huggingface.co/yukamatsumae/molmoact2_otter_graspandpush_20260806",
+      "snippet": "Model Card for molmoact2 Model type not recognized — please update this template."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

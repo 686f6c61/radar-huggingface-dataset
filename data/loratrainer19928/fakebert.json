@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "LoraTrainer19928/FakeBert",
+  "slug": "loratrainer19928-fakebert",
+  "author": "LoraTrainer19928",
+  "url": "https://huggingface.co/LoraTrainer19928/FakeBert",
+  "created_at": "2026-08-19T11:10:48.000Z",
+  "updated_at": "2026-08-19T11:12:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000680,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FakeBERT: Fake news detection in social media with a BERT ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11042-020-10183-2",
+      "snippet": "In the modern era of computing, the news ecosystem has transformed from old traditional print media to social media outlets. Social media platforms allow us to consume news much faster, with less restricted editing results in the spread of fake news at an incredible pace and scale. In recent researches, many useful methods for fake news detection employ sequential neural networks to encode ..."
+    },
+    {
+      "title": "asimokby/fakeBert · Hugging Face",
+      "url": "https://huggingface.co/asimokby/fakeBert",
+      "snippet": "fakeBert This model is a fine-tuned version of bert-base-uncased on a news dataset from Kaggle. Model description Fine-tuning Bert for text classification. Training and evaluation data Training & Validation: Fake and real news dataset Testing: Fake News Detection Challenge KDD 2020 Training hyperparameters The following hyperparameters were used during training: learning_rate: 1e-5 train_batch ..."
+    },
+    {
+      "title": "README.md · asimokby/fakeBert at main - Hugging Face",
+      "url": "https://huggingface.co/asimokby/fakeBert/blob/main/README.md",
+      "snippet": "fakeBert This model is a fine-tuned version of bert-base-uncased on a news dataset from Kaggle. Model description Fine-tuning Bert for text classification. Training and evaluation data Training & Validation: Fake and real news dataset Testing: Fake News Detection Challenge KDD 2020 Training hyperparameters The following hyperparameters were used during training: learning_rate: 1e-5 train_batch ..."
+    },
+    {
+      "title": "FakeBERT: Fake news detection in social media with a BERT-based deep ...",
+      "url": "https://dlnext.acm.org/doi/10.1007/s11042-020-10183-2",
+      "snippet": "In this paper, we propose a BERT-based (Bidirectional Encoder Representations from Transformers) deep learning approach (FakeBERT) by combining different parallel blocks of the single-layer deep Convolutional Neural Network (CNN) having different kernel sizes and filters with the BERT."
+    },
+    {
+      "title": "(PDF) FakeBERT: Fake news detection in social media with a BERT-based ...",
+      "url": "https://scispace.com/papers/fakebert-fake-news-detection-in-social-media-with-a-bert-39d4qe2p4g",
+      "snippet": "(DOI: 10.1007/S11042-020-10183-2) In the modern era of computing, the news ecosystem has transformed from old traditional print media to social media outlets. Social media platforms allow us to consume news much faster, with less restricted editing results in the spread of fake news at an incredible pace and scale. In recent researches, many useful methods for fake news detection employ ..."
+    }
+  ]
+}

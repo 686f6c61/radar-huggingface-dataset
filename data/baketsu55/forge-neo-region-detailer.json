@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "baketsu55/forge-neo-region-detailer",
+  "slug": "baketsu55-forge-neo-region-detailer",
+  "author": "baketsu55",
+  "url": "https://huggingface.co/baketsu55/forge-neo-region-detailer",
+  "created_at": "2026-08-19T05:55:07.000Z",
+  "updated_at": "2026-08-19T06:24:30.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "stable-diffusion-webui",
+    "forge",
+    "forge-neo",
+    "anima",
+    "inpainting",
+    "object-detection",
+    "image-generation",
+    "anime",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43383,
+  "storage_human": "43383 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - abzaloff/aadetailer-neoforge: Auto detecting, masking and ...",
+      "url": "https://github.com/abzaloff/aadetailer-neoforge",
+      "snippet": "Auto detecting, masking and inpainting with detection model. - abzaloff/aadetailer-neoforge"
+    },
+    {
+      "title": "GitHub - Haoming02/ADetailer-Neo: Automatic Masking & Inpainting",
+      "url": "https://github.com/Haoming02/ADetailer-Neo",
+      "snippet": "Automatic Masking & Inpainting. Contribute to Haoming02/ADetailer-Neo development by creating an account on GitHub."
+    },
+    {
+      "title": "Forge Neo UI: How to Generate Images (August 2026)",
+      "url": "https://www.thundercompute.com/blog/forge-ui-ai-image-generation",
+      "snippet": "Forge Neo UI is an AI image and video generation app that offers a simpler experience than ComfyUI along with flexibility not found on popular providers (think ChatGPT, Claude or Gemini). As the newest version of Forge UI, Forge Neo UI expands model support, and improves integration with modern workflows."
+    },
+    {
+      "title": "detailer AI Models | Civitai",
+      "url": "https://civitai.com/tag/detailer",
+      "snippet": "Browse 316 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with detailer."
+    },
+    {
+      "title": "Adetailer: Automatically fix faces and hands - Stable Diffusion Art",
+      "url": "https://stable-diffusion-art.com/adetailer/",
+      "snippet": "After Detailer uses inpainting at a higher resolution and scales it back down to fix a face. Face restoration uses another AI model, such as CodeFormer and GFGAN, to restore the face. Using inpainting (such as using ADetailer) is preferred because The face restoration model could produce a style that is inconsistent with your Stable Diffusion ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "alst10/gemma4-masterchef-lora",
+  "slug": "alst10-gemma4-masterchef-lora",
+  "author": "alst10",
+  "url": "https://huggingface.co/alst10/gemma4-masterchef-lora",
+  "created_at": "2026-08-19T05:23:12.000Z",
+  "updated_at": "2026-08-19T05:23:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151964368,
+  "storage_human": "152 MB",
+  "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alst10/gemma4-multimodal-recipe-dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/alst10/gemma4-multimodal-recipe-dataset",
+      "snippet": "🍳 Gemma 4 Multimodal Recipe & Food Dataset A balanced, high-density multimodal dataset curated specifically for fine-tuning compact vision-language models (such as gemma-4-e2b-it) for visual food recognition, recipe generation, and dietary recommendation."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.02770v1",
+      "snippet": "In this technical report, we outline the different model architectures across model sizes as well as the pre-training and post-training recipe of Gemma 4. Through comprehensive benchmarks and human evaluations such as Arena (Chiang et al. 2024), we demonstrate that Gemma 4 operates at a level comparable to larger, frontier open-source models ..."
+    },
+    {
+      "title": "Fine-Tune Gemma 4 with LoRA & QLoRA: Complete Guide | Lushbinary",
+      "url": "https://lushbinary.com/blog/fine-tune-gemma-4-lora-qlora-complete-guide/",
+      "snippet": "Fine-tune Gemma 4 (E2B-31B) with LoRA/QLoRA using Unsloth (2x faster), HF Transformers & Keras. Dataset prep to deployment. Updated April 2026."
+    },
+    {
+      "title": "[Feature]: Add LoRA support for Gemma4ForConditionalGeneration / Gemma ...",
+      "url": "https://github.com/vllm-project/vllm/issues/39246",
+      "snippet": "🚀 The feature, motivation and pitch Motivation vLLM recently added support for Gemma 4 (v0.19.0), but LoRA adapters do not appear to be supported yet for Gemma 4 model classes such as: Gemma4ForCau..."
+    }
+  ]
+}

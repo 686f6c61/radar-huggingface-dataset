@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FigaAI/RuCover-Lite-Mini-Think_Edition",
+  "slug": "figaai-rucover-lite-mini-think_edition",
+  "author": "FigaAI",
+  "url": "https://huggingface.co/FigaAI/RuCover-Lite-Mini-Think_Edition",
+  "created_at": "2026-08-19T09:48:26.000Z",
+  "updated_at": "2026-08-19T09:58:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "GPT",
+    "RuCover",
+    "Think",
+    "ThinkEdition",
+    "R1",
+    "RussianSLM",
+    "SLM",
+    "SmallLargeMachine",
+    "ru",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FigaAI (FigaAI I Russian) - Hugging Face",
+      "url": "https://huggingface.co/FigaAI/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... new activity about 2 months ago"
+    },
+    {
+      "title": "FigaAI/RUcover-Lite-Mini-v1 · Hugging Face",
+      "url": "https://huggingface.co/FigaAI/RUcover-Lite-Mini-v1",
+      "snippet": "RUcover Lite Mini — это лёгкая авторегрессионная языковая модель на русском языке (≈10 млн параметров), основанная на архитектуре Transformer Decoder с улучшениями: Rotary Positional Embeddings (RoPE), RMSNorm и SwiGLU."
+    },
+    {
+      "title": "Gemini 2.5 Flash-Lite | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-lite",
+      "snippet": "Learn about Gemini 2.5 Flash-Lite from Google Our most cost-efficient multimodal model, offering the fastest performance for high-frequency, lightweight tasks. Gemini 2.5 Flash-Lite is best for high-volume classification, simple data extraction, and extremely low-latency applications where budget and speed are the primary constraints."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini 3.1 Flash-Lite | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
+      "snippet": "Gemini 3.1 Flash-Lite is a low-latency, cost-effective multimodal model optimized for high-frequency, lightweight tasks. The model supports text, image, video, audio, and PDF inputs, and is designed for high-volume agentic workflows, simple data extraction, and applications where latency and API cost are the primary constraints."
+    }
+  ]
+}

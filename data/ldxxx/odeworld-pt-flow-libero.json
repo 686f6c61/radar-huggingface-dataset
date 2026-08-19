@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ldxxx/ODEWorld-PT-Flow-LIBERO",
+  "slug": "ldxxx-odeworld-pt-flow-libero",
+  "author": "ldxxx",
+  "url": "https://huggingface.co/ldxxx/ODEWorld-PT-Flow-LIBERO",
+  "created_at": "2026-08-02T10:28:50.000Z",
+  "updated_at": "2026-08-19T09:30:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "odeworld",
+  "languages": [],
+  "tags": [
+    "odeworld",
+    "safetensors",
+    "dinov2",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "robotics",
+    "pt-flow",
+    "world-model",
+    "image-to-video",
+    "arxiv:2607.27924",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 172860038,
+  "parameters_human": "172.9M",
+  "storage_bytes": 691481656,
+  "storage_human": "691 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ldxxx/ODEWorld-PT-Flow-LIBERO · Hugging Face",
+      "url": "https://huggingface.co/ldxxx/ODEWorld-PT-Flow-LIBERO",
+      "snippet": "ODEWorld image-goal checkpoint trained on LIBERO. The checkpoint includes the DINOv2 backbone. For installation, loading, and inference instructions, see the ODEWorld GitHub repository."
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://arxiv.org/html/2607.27924v3",
+      "snippet": "Building upon PT-Flow, we construct a continuous-time latent world model, called ODEWorld, which embodies many desirable features. First, it disentangles dynamical representation by conditioning the encoder and decoder directly on static context, thereby offloading the burden of dynamical representation learning, allowing the latent space to ..."
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://dstate.github.io/odeworld_website/",
+      "snippet": "PT-Flow models dynamics as a continuous latent velocity field in physical time, rather than discrete next-step prediction. ODE-based future prediction in compressed latent space. Arbitrary-time queries, and even backward prediction. Compact latents for efficient rollouts. Explore trajectory generation with ODEWorld. Continuous-time dynamics enable denser temporal sampling beyond the training ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=pt-flow",
+      "snippet": "Explore machine learning models. Models 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: pt-flow Clear all"
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://arxiv.org/html/2607.27924v2",
+      "snippet": "The core of ODEWorld is a new predictive paradigm called PT-Flow, which learns a latent ODE velocity field defined on physical time. It recasts future prediction as temporal integration with the latent velocity via an ODE solver, which shares some similarities to flow matching, but operates in physical time rather than the noise space."
+    }
+  ]
+}

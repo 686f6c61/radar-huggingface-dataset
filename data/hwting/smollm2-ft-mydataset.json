@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hwting/SmolLM2-FT-MyDataset",
+  "slug": "hwting-smollm2-ft-mydataset",
+  "author": "hwting",
+  "url": "https://huggingface.co/hwting/SmolLM2-FT-MyDataset",
+  "created_at": "2026-08-19T04:14:51.000Z",
+  "updated_at": "2026-08-19T04:24:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "smol-course",
+    "module_1",
+    "trl",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269066265,
+  "storage_human": "269 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hwliu/SmolLM2-FT-MyDataset · Hugging Face",
+      "url": "https://huggingface.co/hwliu/SmolLM2-FT-MyDataset",
+      "snippet": "hwliu / SmolLM2-FT-MyDataset like 0 Text Generation Transformers Safetensors llama Generated from Trainer smol-course module_1 trl sft conversational text-generation-inference Inference Endpoints Model card FilesFiles and versions Community Train Deploy Use this model Model Card for SmolLM2-FT-MyDataset Quick start Training procedure Framework ..."
+    },
+    {
+      "title": "jsc012/SmolLM2-FT-MyDataset · Hugging Face",
+      "url": "https://huggingface.co/jsc012/SmolLM2-FT-MyDataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM2 FT MyDataset by Matelq-2 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Matelq-2%2FSmolLM2-FT-MyDataset,4fN59Z2y8tGlMC51NqRTne",
+      "snippet": "SmolLM2 FT MyDataset is an open-source 135m LLM by Matelq-2. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "SmolLM2 FT MyDataset by AlekseyElygin — VRAM 0.5GB, 8K context | LLM ...",
+      "url": "https://llm-explorer.com/model/AlekseyElygin%2FSmolLM2-FT-MyDataset,2ckL9BsEHjBrR2jV1xns9T",
+      "snippet": "SmolLM2 FT MyDataset is an open-source 135m LLM by AlekseyElygin. VRAM 0.5GB, 8K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "SmolLM2-FT-MyDataset - friendli.ai",
+      "url": "https://friendli.ai/models/hwliu/SmolLM2-FT-MyDataset",
+      "snippet": "Run hwliu/SmolLM2-FT-MyDataset with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

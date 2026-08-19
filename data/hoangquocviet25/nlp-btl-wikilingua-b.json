@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "HoangQuocViet25/nlp-btl-wikilingua-b",
+  "slug": "hoangquocviet25-nlp-btl-wikilingua-b",
+  "author": "HoangQuocViet25",
+  "url": "https://huggingface.co/HoangQuocViet25/nlp-btl-wikilingua-b",
+  "created_at": "2026-08-19T05:21:29.000Z",
+  "updated_at": "2026-08-19T05:23:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "summarization",
+    "vietnamese",
+    "vit5",
+    "vi",
+    "dataset:huy-nh-2000/wikilingua",
+    "base_model:VietAI/vit5-base",
+    "base_model:finetune:VietAI/vit5-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 225950976,
+  "parameters_human": "226.0M",
+  "storage_bytes": 904654778,
+  "storage_human": "905 MB",
+  "base_model": "VietAI/vit5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BTL_NLP/scripts at main · AIVIETNAM-AIO-tlee/BTL_NLP · GitHub",
+      "url": "https://github.com/AIVIETNAM-AIO-tlee/BTL_NLP/tree/main/scripts",
+      "snippet": "Contribute to AIVIETNAM-AIO-tlee/BTL_NLP development by creating an account on GitHub."
+    },
+    {
+      "title": "About - Wikilangs",
+      "url": "https://wikilangs.org/about/",
+      "snippet": "About Wikilangs - open NLP models for every Wikipedia language. Learn about the project, team, and sponsors."
+    },
+    {
+      "title": "README.md · wiki_lingua at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/wiki_lingua/blob/main/README.md",
+      "snippet": "Dataset Summary We introduce WikiLingua, a large-scale, multilingual dataset for the evaluation of cross-lingual abstractive summarization systems. We extract article and summary pairs in 18 languages from WikiHow, a high quality, collaborative resource of how-to guides on a diverse set of topics written by human authors."
+    },
+    {
+      "title": "GitHub - AIVIETNAM-AIO-tlee/BTL_NLP",
+      "url": "https://github.com/AIVIETNAM-AIO-tlee/BTL_NLP/tree/main/",
+      "snippet": "Contribute to AIVIETNAM-AIO-tlee/BTL_NLP development by creating an account on GitHub."
+    },
+    {
+      "title": "Research - Wikilangs",
+      "url": "https://wikilangs.org/research/",
+      "snippet": "Research methodology, metrics glossary, and evaluation approach for Wikilangs NLP models."
+    }
+  ]
+}

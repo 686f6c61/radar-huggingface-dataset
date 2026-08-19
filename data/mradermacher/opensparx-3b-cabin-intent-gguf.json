@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/OpenSparX-3b-cabin-intent-GGUF",
   "created_at": "2026-08-19T00:52:13.000Z",
-  "updated_at": "2026-08-19T01:09:33.000Z",
+  "updated_at": "2026-08-19T06:36:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 3397103616,
   "parameters_human": "3.40B",

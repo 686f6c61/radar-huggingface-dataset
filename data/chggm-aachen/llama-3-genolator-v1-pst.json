@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "CHGGM-Aachen/Llama-3-Genolator-v1-PST",
+  "slug": "chggm-aachen-llama-3-genolator-v1-pst",
+  "author": "CHGGM-Aachen",
+  "url": "https://huggingface.co/CHGGM-Aachen/Llama-3-Genolator-v1-PST",
+  "created_at": "2026-08-19T06:30:13.000Z",
+  "updated_at": "2026-08-19T08:13:42.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "biology",
+    "genomics",
+    "gene-ontology",
+    "proteins",
+    "protein-structure",
+    "multimodal",
+    "lora",
+    "en",
+    "dataset:CHGGM-Aachen/genolator-v1-qa",
+    "base_model:ContactDoctor/Bio-Medical-Llama-3-8B",
+    "base_model:finetune:ContactDoctor/Bio-Medical-Llama-3-8B",
+    "doi:10.57967/hf/10054",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 788981996,
+  "storage_human": "789 MB",
+  "base_model": "ContactDoctor/Bio-Medical-Llama-3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHGGM-Aachen/genolator-v1-qa · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/CHGGM-Aachen/genolator-v1-qa",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama3 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.41.0/model_doc/llama3",
+      "snippet": "Llama3 Overview The Llama3 model was proposed in Introducing Meta Llama 3: The most capable openly available LLM to date by the meta AI team. The abstract from the blogpost is the following: Today, we&#x27;re excited to share the first two models of the next generation of Llama, Meta Llama 3, available for broad use. This release features pretrained and instruction-fine-tuned language models with ..."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "[2407.21783] The Llama 3 Herd of Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2407.21783",
+      "snippet": "Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an extensive ..."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "NANI-Nithin",
   "url": "https://huggingface.co/NANI-Nithin/LFM2.5-VL-3B-GGUF",
   "created_at": "2026-08-13T20:48:22.000Z",
-  "updated_at": "2026-08-14T12:51:14.000Z",
+  "updated_at": "2026-08-19T07:14:57.000Z",
   "license": "lfm-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -63,7 +63,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 2222,
+  "downloads_30d": 2259,
   "trending_score": 0,
   "parameters": 2697198592,
   "parameters_human": "2.70B",

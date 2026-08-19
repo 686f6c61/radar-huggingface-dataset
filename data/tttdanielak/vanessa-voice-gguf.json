@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tttdanielak/vanessa-voice-gguf",
+  "slug": "tttdanielak-vanessa-voice-gguf",
+  "author": "tttdanielak",
+  "url": "https://huggingface.co/tttdanielak/vanessa-voice-gguf",
+  "created_at": "2026-08-19T03:23:22.000Z",
+  "updated_at": "2026-08-19T03:50:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "hytale",
+    "game-npc",
+    "roleplay",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902560,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "GitHub - wildminder/awesome-ai-voice: List of open-source TTS, voice ...",
+      "url": "https://github.com/wildminder/awesome-ai-voice",
+      "snippet": "Second, the distribution-shape design (one model, three deployment formats) is a deliberate on-device-first posture: the safetensors torch build for max-quality GPU/server; Q8 GGUF for mid-tier compression; Q4 GGUF for the small-footprint embedded target."
+    },
+    {
+      "title": "Vanessa AI Voice Generator | Fish Audio",
+      "url": "https://fish.audio/m/89bee1f6daee446d9c9f29a9de5c7767/",
+      "snippet": "Generate realistic Vanessa voice with AI text to speech. Used by 231+ creators. Free to try."
+    }
+  ]
+}

@@ -5,10 +5,10 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/gemma4-e2b-Snowfox-hf-GGUF",
   "created_at": "2026-08-17T03:03:05.000Z",
-  "updated_at": "2026-08-17T03:19:55.000Z",
-  "license": null,
-  "license_family": "unknown",
-  "pipeline_tag": null,
+  "updated_at": "2026-08-19T03:21:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
     "en"
@@ -16,15 +16,22 @@
   "tags": [
     "transformers",
     "gguf",
+    "gemma4",
+    "snowfox",
+    "qat-derived",
+    "safetensors",
+    "multimodal",
+    "text-generation",
     "en",
     "base_model:MichaelAnthony/gemma4-e2b-Snowfox-hf",
     "base_model:quantized:MichaelAnthony/gemma4-e2b-Snowfox-hf",
+    "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 363,
+  "downloads_30d": 644,
   "trending_score": 0,
   "parameters": 4628569635,
   "parameters_human": "4.63B",
@@ -32,7 +39,8 @@
   "storage_human": "49.4 GB",
   "base_model": "MichaelAnthony/gemma4-e2b-Snowfox-hf",
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

@@ -5,7 +5,7 @@
   "author": "proyeksigila",
   "url": "https://huggingface.co/proyeksigila/languagemodel",
   "created_at": "2026-08-02T23:01:24.000Z",
-  "updated_at": "2026-08-14T22:01:29.000Z",
+  "updated_at": "2026-08-19T03:59:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 12311,
+  "downloads_30d": 12366,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 379215081354,
-  "storage_human": "379.2 GB",
+  "storage_bytes": 405525370954,
+  "storage_human": "405.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

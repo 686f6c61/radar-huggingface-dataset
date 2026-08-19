@@ -5,7 +5,7 @@
   "author": "jialei02",
   "url": "https://huggingface.co/jialei02/lawam-libero-sft-lerobot",
   "created_at": "2026-08-11T16:00:20.000Z",
-  "updated_at": "2026-08-18T14:44:07.000Z",
+  "updated_at": "2026-08-18T14:58:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 17,
+  "downloads_30d": 43,
   "trending_score": 0,
   "parameters": 2555179360,
   "parameters_human": "2.56B",

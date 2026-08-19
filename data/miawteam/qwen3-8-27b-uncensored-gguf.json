@@ -34,12 +34,12 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 792,
+  "downloads_30d": 1620,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 209692059648,
-  "storage_human": "209.7 GB",
+  "storage_bytes": 208764452544,
+  "storage_human": "208.8 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

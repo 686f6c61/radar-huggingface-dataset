@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-int8-onnx",
   "created_at": "2026-08-19T01:58:06.000Z",
-  "updated_at": "2026-08-19T02:11:18.000Z",
+  "updated_at": "2026-08-19T07:02:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2236917,
-  "storage_human": "2 MB",
+  "storage_bytes": 10858534,
+  "storage_human": "11 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tuzelkhan/drone-yolov8",
+  "slug": "tuzelkhan-drone-yolov8",
+  "author": "Tuzelkhan",
+  "url": "https://huggingface.co/Tuzelkhan/drone-yolov8",
+  "created_at": "2026-08-19T11:15:26.000Z",
+  "updated_at": "2026-08-19T11:28:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "vision",
+    "object-detection",
+    "yolo",
+    "yolov8",
+    "drone",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6549796,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YOLOv8-Based Drone Detection: Building a Robust Model with ... - GitHub",
+      "url": "https://github.com/doguilmak/Drone-Detection-YOLOv8x",
+      "snippet": "This repository provides a dataset and model for real-time drone detection using YOLOv8, contributing to enhanced security and privacy protection. Join us in advancing drone detection technology fo..."
+    },
+    {
+      "title": "VadimXBet/drone_YOLOv8: NEW - YOLOv8 in PyTorch - GitHub",
+      "url": "https://github.com/VadimXBet/drone_YOLOv8",
+      "snippet": "Ultralytics HUB Experience seamless AI with Ultralytics HUB ⭐, the all-in-one solution for data visualization, YOLOv5 and YOLOv8 🚀 model training and deployment, without any coding."
+    },
+    {
+      "title": "PDF Real-Time Object Detection Using YOLO-8 Model: A Drone-Based Approach",
+      "url": "https://jowua.com/wp-content/uploads/2025/04/2025.I1.011.pdf",
+      "snippet": "Yolov8&#x27;sEdge: IntroduceYOLOv8, explaining real-time object detection capabilities, increased speed over traditional methods, and why it is good for drone imagery because it is an efficient architecture."
+    },
+    {
+      "title": "PDF YOLO-Drone: An Optimized YOLOv8 Network for Tiny UAV ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/373544079_YOLO-Drone_An_Optimized_YOLOv8_Network_for_Tiny_UAV_Object_Detection/fulltext/64f0964ec40f1d22df7d134e/YOLO-Drone-An-Optimized-YOLOv8-Network-for-Tiny-UAV-Object-Detection.pdf",
+      "snippet": "Section 3 first introduces the YOLOv8 network structure and the details of its critical modules, followed by an improved tiny UAV target detection model, and details the structure and roles of ..."
+    },
+    {
+      "title": "Drone-YOLO: An Efficient Neural Network Method for Target ... - MDPI",
+      "url": "https://www.mdpi.com/2504-446X/7/8/526",
+      "snippet": "In this article, we propose Drone-YOLO, a series of multi-scale UAV image object detection algorithms based on the YOLOv8 model, designed to overcome the specific challenges associated with UAV image object detection."
+    }
+  ]
+}

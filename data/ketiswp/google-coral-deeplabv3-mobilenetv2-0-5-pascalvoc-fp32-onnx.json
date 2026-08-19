@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/google-coral-DeepLabV3-MobileNetV2-0.5-PascalVOC-fp32-onnx",
   "created_at": "2026-08-19T01:56:57.000Z",
-  "updated_at": "2026-08-19T02:22:49.000Z",
+  "updated_at": "2026-08-19T07:00:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2801028,
-  "storage_human": "3 MB",
+  "storage_bytes": 7693516,
+  "storage_human": "8 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Cloth-splatters/fold-unfold-lift-state-est-gps",
+  "slug": "cloth-splatters-fold-unfold-lift-state-est-gps",
+  "author": "Cloth-splatters",
+  "url": "https://huggingface.co/Cloth-splatters/fold-unfold-lift-state-est-gps",
+  "created_at": "2026-05-11T16:18:35.000Z",
+  "updated_at": "2026-08-19T06:32:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18193084,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloth-splatters/fold-unfold-lift-state-est-gps-flow-v2 · Hugging Face",
+      "url": "https://huggingface.co/Cloth-splatters/fold-unfold-lift-state-est-gps-flow-v2",
+      "snippet": "Instructions to use Cloth-splatters/fold-unfold-lift-state-est-gps-flow-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Cloth-splatters/fold-unfold-lift-state-est-gps-flow-sequential ...",
+      "url": "https://huggingface.co/Cloth-splatters/fold-unfold-lift-state-est-gps-flow-sequential",
+      "snippet": "This checkpoint was trained with the self rest-position centering convention: the per-cloth rest (template) positions fed to the model are centered by subtracting the rest mesh&#x27;s own (valid-vertex) mean, independent of the observed point cloud."
+    },
+    {
+      "title": "AI Clothes Changer - Try On Any Outfit Instantly | bitStudio",
+      "url": "https://bitstudio.ai/ai-clothes-changer",
+      "snippet": "AI Clothes Changer by bitStudio lets you try on any outfit instantly for free. Upload your photo and see realistic results with your body and pose preserved — no sign up needed!"
+    },
+    {
+      "title": "AI Clothes Changer: Swap Outfits Easily",
+      "url": "https://elevenlabs.io/edit-image/ai-clothes-changer",
+      "snippet": "Frequently asked questions How does the AI clothes changer work? The AI clothes changer uses advanced models to swap outfits in photos realistically. Upload a photo, select a model, and download the result."
+    },
+    {
+      "title": "Free AI Clothes Changer - Swap Outfits & Change Clothes in Photos",
+      "url": "https://www.fashiondiffusion.ai/ai-clothes-changer",
+      "snippet": "Upload any photo and swap outfits with AI in seconds. Our AI clothes changer changes clothes while keeping the original model, pose, and background — no manual editing, no photoshoot required. Try different styles, colors, and fabrics instantly with Fashion Diffusion&#x27;s free online clothes changer."
+    }
+  ]
+}

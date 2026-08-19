@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Harshini10112006/tds-carbon-card",
+  "slug": "harshini10112006-tds-carbon-card",
+  "author": "Harshini10112006",
+  "url": "https://huggingface.co/Harshini10112006/tds-carbon-card",
+  "created_at": "2026-08-19T04:43:40.000Z",
+  "updated_at": "2026-08-19T04:44:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jesmelchi/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Jesmelchi/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "adisinha95/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/adisinha95/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA V100 (4 GPUs) Training Mode: fine-tuning Region: europe-north1 GPU Hours: 447.8h (PUE: 1.32) Total Energy: 709.3152 kWh CO₂ Emissions: 85.118 kg ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Model Card Explorer",
+      "url": "https://model-card.vercel.app/trends",
+      "snippet": "Explore and compare AI model cards, safety evaluations, and governance data across major AI labs"
+    },
+    {
+      "title": "Yesterday I Was Attacked - YouTube",
+      "url": "https://www.youtube.com/watch?v=rNUPbdv1oOo",
+      "snippet": "Starforge PC https://starforgepc.com/moist-ytGet Goof Juice and use code MOIST https://gamersupps.gg/moistUse Cheeky https://www.usecheeky.com/moistSpotify: ..."
+    }
+  ]
+}

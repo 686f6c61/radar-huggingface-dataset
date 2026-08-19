@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aruneshpratapsingh/tds-carbon-card",
+  "slug": "aruneshpratapsingh-tds-carbon-card",
+  "author": "aruneshpratapsingh",
+  "url": "https://huggingface.co/aruneshpratapsingh/tds-carbon-card",
+  "created_at": "2026-08-19T07:08:19.000Z",
+  "updated_at": "2026-08-19T07:10:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pranav1003/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Pranav1003/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "aruneshpratapsingh (ARUNESH PRATAP) - Hugging Face",
+      "url": "https://huggingface.co/aruneshpratapsingh",
+      "snippet": "Smart Mcq Solver 🌐 Rank the top 3 answers for a multiple‑choice question aruneshpratapsingh 4 days ago"
+    },
+    {
+      "title": "Notion AI in 2026: Models, Features, and Pricing Explained | Fayed ...",
+      "url": "https://fayedtion.com/notion-ai-guide/",
+      "snippet": "Notion AI in 2026 explained. Models inside (GPT-5, Claude Sonnet 4.5), every feature, pricing, agents, and workflows built to save real time for teams."
+    },
+    {
+      "title": "[2405.12843] OpenCarbonEval: A Unified Carbon Emission Estimation ...",
+      "url": "https://arxiv.org/abs/2405.12843",
+      "snippet": "To address this gap, we introduce OpenCarbonEval, a unified framework for integrating large-scale models across diverse modalities to predict carbon emissions, which could provide AI service providers and users with a means to estimate emissions beforehand and help mitigate the environmental pressure associated with these models."
+    },
+    {
+      "title": "Artificial intelligence for carbon emissions using system of systems ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1574954123001942",
+      "snippet": "The impact of artificial intelligence (AI) on the environment is the subject of discourse, with arguments for both positive and negative effects. There is a fine line between AI for good and AI for environmental degradation. Today, companies want to seize the benefits of AI, which distinctively involves reducing the company&#x27;s carbon footprint."
+    }
+  ]
+}

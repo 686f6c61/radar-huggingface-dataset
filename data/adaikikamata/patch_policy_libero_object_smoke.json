@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aDaikiKamata/patch_policy_libero_object_smoke",
+  "slug": "adaikikamata-patch_policy_libero_object_smoke",
+  "author": "aDaikiKamata",
+  "url": "https://huggingface.co/aDaikiKamata/patch_policy_libero_object_smoke",
+  "created_at": "2026-08-19T09:40:26.000Z",
+  "updated_at": "2026-08-19T09:43:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "patch_policy",
+    "robotics",
+    "dataset:lerobot/libero_object_image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37177735,
+  "parameters_human": "37.2M",
+  "storage_bytes": 547002672,
+  "storage_human": "547 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aDaikiKamata (Kamata Daiki) - Hugging Face",
+      "url": "https://huggingface.co/aDaikiKamata",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model about 8 hours ago"
+    },
+    {
+      "title": "aDaikiKamata (Kamata Daiki) - Hugging Face",
+      "url": "https://huggingface.co/aDaikiKamata/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 11 hours ago ... published a model about 11 hours ago"
+    },
+    {
+      "title": "Patch Policy",
+      "url": "https://patch-policy.github.io/",
+      "snippet": "Patch Policy is lightweight, fast, and highly effective. Across four simulated and three real-world environment suites, our method achieves a 40% relative improvement over policies using state-of-the-art global-pooled representations."
+    },
+    {
+      "title": "Libero - Libero",
+      "url": "https://libero-project.github.io/main.html",
+      "snippet": "LIBERO Benchmarking Knowledge Transfer in Lifelong Robot Learning In the future, robots will be pretrained with a diverse set of skills in factory before deployment. However, we believe it is also a must for them to learn with their human users throughout their lifetime to really become a personalized embodied agent."
+    },
+    {
+      "title": "LIBERO Evaluation | NVlabs/cosmos-policy | DeepWiki",
+      "url": "https://deepwiki.com/NVlabs/cosmos-policy/4.1-libero-evaluation",
+      "snippet": "LIBERO Evaluation Relevant source files Purpose and Scope This document provides comprehensive documentation for evaluating Cosmos Policy on the LIBERO simulation benchmark. LIBERO is a simulation-based robot manipulation benchmark that tests policies across multiple task suites with varying complexity. This page covers the file structure, setup procedures, dataset preparation, evaluation ..."
+    }
+  ]
+}

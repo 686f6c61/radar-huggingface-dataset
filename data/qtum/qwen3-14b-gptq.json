@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "qtum/Qwen3-14B-GPTQ",
+  "slug": "qtum-qwen3-14b-gptq",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/Qwen3-14B-GPTQ",
+  "created_at": "2026-08-19T07:01:35.000Z",
+  "updated_at": "2026-08-19T07:03:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "compressed-tensors",
+    "GPTQ",
+    "vllm",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:quantized:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 9936508125,
+  "storage_human": "9.9 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlphaGaO/Qwen3-14B-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/AlphaGaO/Qwen3-14B-GPTQ",
+      "snippet": "Qwen3-14B-GPTQ GPTQ Quantized model, tuned with dataset AlphaGaO/fused_distillation_dataset bits: 4 group_size: 128 is_marlin_format: True Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning ..."
+    },
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3-14B GPTQ: Private reasoning AI for ops - llm.co",
+      "url": "https://llm.co/llms/qwen3-14b-gptq-int4",
+      "snippet": "A 14B quantized reasoning model for private ops automation—thinking and non-thinking modes in one, built to run on modest hardware while handling complex logic. Qwen3-14B-GPTQ-Int4 is a 4-bit quantized version of Alibaba&#x27;s Qwen3-14B, a dense causal language model with dual reasoning modes (thinking/non-thinking toggle) and 32K native context."
+    },
+    {
+      "title": "Qwen3/docs/source/quantization/gptq.md at main - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3/blob/main/docs/source/quantization/gptq.md",
+      "snippet": "GPTQ ::: {attention} To be updated for Qwen3. ::: GPTQ is a quantization method for GPT-like LLMs, which uses one-shot weight quantization based on approximate second-order information. In this document, we show you how to use the quantized model with Hugging Face transformers and also how to quantize your own model with AutoGPTQ."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jastorj/couchmind-v5.8.2_cold_start-cw-26K-16bit",
+  "slug": "jastorj-couchmind-v5-8-2_cold_start-cw-26k-16bit",
+  "author": "jastorj",
+  "url": "https://huggingface.co/jastorj/couchmind-v5.8.2_cold_start-cw-26K-16bit",
+  "created_at": "2026-08-19T09:23:54.000Z",
+  "updated_at": "2026-08-19T09:35:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-to-sql",
+    "nl2sqlpp",
+    "code",
+    "sql",
+    "fine-tuned",
+    "unsloth",
+    "lora",
+    "en",
+    "base_model:Snowflake/Arctic-Text2SQL-R1-7B",
+    "base_model:adapter:Snowflake/Arctic-Text2SQL-R1-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694281,
+  "storage_human": "15.2 GB",
+  "base_model": "Snowflake/Arctic-Text2SQL-R1-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "couchmind-v5.8_rl_cold_start-cw-26K-16bit - Hugging Face",
+      "url": "https://huggingface.co/jastorj/couchmind-v5.8_rl_cold_start-cw-26K-16bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jastorj/couchmind-rlt-v5.8.1_rl_5K_ex-cw-11K-16bit · Hugging Face",
+      "url": "https://huggingface.co/jastorj/couchmind-rlt-v5.8.1_rl_5K_ex-cw-11K-16bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    }
+  ]
+}

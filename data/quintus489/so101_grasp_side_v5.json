@@ -5,7 +5,7 @@
   "author": "Quintus489",
   "url": "https://huggingface.co/Quintus489/so101_grasp_side_v5",
   "created_at": "2026-08-17T07:51:17.000Z",
-  "updated_at": "2026-08-17T07:51:31.000Z",
+  "updated_at": "2026-08-18T01:15:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 69,
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",

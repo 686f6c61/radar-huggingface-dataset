@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "LuffyTheFox/Gemma-4-E4B-Uncensored-Genesis",
+  "slug": "luffythefox-gemma-4-e4b-uncensored-genesis",
+  "author": "LuffyTheFox",
+  "url": "https://huggingface.co/LuffyTheFox/Gemma-4-E4B-Uncensored-Genesis",
+  "created_at": "2026-08-19T07:58:06.000Z",
+  "updated_at": "2026-08-19T08:45:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "abliterated",
+    "vision",
+    "multimodal",
+    "audio",
+    "image-text-to-text",
+    "en",
+    "multilingual",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 8133226464,
+  "storage_human": "8.1 GB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LuffyTheFox (Alexey Zakharchenko) - Hugging Face",
+      "url": "https://huggingface.co/LuffyTheFox",
+      "snippet": "LLM stability debugging on GGUF binary level"
+    },
+    {
+      "title": "LuffyTheFox/Gemma4-12B-QAT-Genesis · Hugging Face",
+      "url": "https://huggingface.co/LuffyTheFox/Gemma4-12B-QAT-Genesis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Gemma 4 Locally: From 4 GB VRAM (E4B) to 31B, Free",
+      "url": "https://locallyuncensored.com/blog/gemma-4-local-guide.html",
+      "snippet": "Run Google&#x27;s Gemma 4 on your own PC — E4B fits 4 GB VRAM, up to 31B dense. Vision, tool calling, 256K context, plus uncensored Heretic GGUF links."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    },
+    {
+      "title": "Gemma 4 E4b It Uncensored - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-e4b-it-uncensored.html",
+      "snippet": "Download Gemma 4 E4b It Uncensored GGUF model. 2.36 GB, 19,072 downloads, 78 likes."
+    }
+  ]
+}

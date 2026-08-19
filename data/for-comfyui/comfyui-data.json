@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "for-comfyui/comfyui-data",
+  "slug": "for-comfyui-comfyui-data",
+  "author": "for-comfyui",
+  "url": "https://huggingface.co/for-comfyui/comfyui-data",
+  "created_at": "2026-04-09T14:42:52.000Z",
+  "updated_at": "2026-08-19T06:33:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 250,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 158957428400,
+  "storage_human": "159.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    },
+    {
+      "title": "GitHub - twn39/ComfyUI-AI-Toolkits: A comprehensive collection of AI ...",
+      "url": "https://github.com/twn39/ComfyUI-AI-Toolkits",
+      "snippet": "A comprehensive collection of AI-powered nodes for ComfyUI, enabling seamless integration of large language models, image generation, data analysis, financial data, visualization, and cloud storage within your workflows ..."
+    },
+    {
+      "title": "Models - ComfyUI",
+      "url": "https://docs.comfy.org/basic-concepts/models",
+      "snippet": "How model files fit into ComfyUI workflows: where they go, how to load them, and common fixes."
+    },
+    {
+      "title": "ComfyUI Models Guide: Complete Tutorial for Installing & Managing AI ...",
+      "url": "https://smartart.live/articles/machine-learning/comfyui-workflows/224-comfyui-models-guide-install-configure-manage-ai-models-2025.html",
+      "snippet": "Master ComfyUI models with our complete guide. Learn to install checkpoints, LoRA, VAE, and ControlNet models. Configure extra paths, manage storage, troubleshoot issues, and optimize your AI workflow. Essential tutorial for all users."
+    },
+    {
+      "title": "GitHub - Amitosh3498275/ComfyUI-for-AI-Models: The most powerful and ...",
+      "url": "https://github.com/Amitosh3498275/ComfyUI-for-AI-Models",
+      "snippet": "How do I share models between another UI and ComfyUI? See the Config file to set the search paths for models. In the standalone windows build you can find this file in the ComfyUI directory. Rename this file to extra_model_paths.yaml and edit it with your favorite text editor."
+    }
+  ]
+}

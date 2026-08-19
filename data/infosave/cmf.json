@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "infosave/cmf",
+  "slug": "infosave-cmf",
+  "author": "infosave",
+  "url": "https://huggingface.co/infosave/cmf",
+  "created_at": "2026-08-07T04:40:46.000Z",
+  "updated_at": "2026-08-19T11:17:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cortiq",
+    "cmf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "infosave/cmf · Hugging Face",
+      "url": "https://huggingface.co/infosave/cmf",
+      "snippet": "A .cmf carries the quantized weights, the tokenizer and the chat template together, checks its own integrity, and memory-maps straight off disk. The runtime is a small Rust core with no ML framework under it, running on CPU everywhere and on GPU through wgpu — Vulkan, DX12, Metal — out of the box."
+    },
+    {
+      "title": "infosave/Bonsai-1.7Bcmf · Hugging Face",
+      "url": "https://huggingface.co/infosave/Bonsai-1.7Bcmf",
+      "snippet": "infosave / Bonsai-1.7Bcmf like 0 Text Generation cmf 1-bit bitnet quantized mobile License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Bonsai-1.7B — CMF q1 (334 MB, made for phones)"
+    },
+    {
+      "title": "GitHub - infosave2007/cmf: One backbone, many specialists. CMF is a ...",
+      "url": "https://github.com/infosave2007/cmf/tree/master/",
+      "snippet": "CMF — Cortiq Model Format One self-describing file for a quantized LLM — weights, tokenizer, chat template, task masks and per-skill overlays — with a portable, dependency-free Rust runtime that runs on CPU and GPU (Vulkan · Metal · DX12)."
+    },
+    {
+      "title": "cmf/docs at master · infosave2007/cmf · GitHub",
+      "url": "https://github.com/infosave2007/cmf/tree/master/docs",
+      "snippet": "One backbone, many specialists. CMF is a self-describing, memory-mappable single-file format and a dependency-free runtime for quantized LLMs — zero-copy execution on CPU or GPU (Vulkan · Metal · DX12) that overlays task-specialized skills onto one shared model, with no per-model duplication. - cmf/docs at master · infosave2007/cmf"
+    },
+    {
+      "title": "CMF — convert and run",
+      "url": "https://infosave-cmf-converter.hf.space/?__theme=system",
+      "snippet": "Click to try out the app!"
+    }
+  ]
+}

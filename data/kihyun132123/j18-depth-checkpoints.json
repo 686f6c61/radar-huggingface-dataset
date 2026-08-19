@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kihyun132123/j18-depth-checkpoints",
+  "slug": "kihyun132123-j18-depth-checkpoints",
+  "author": "kihyun132123",
+  "url": "https://huggingface.co/kihyun132123/j18-depth-checkpoints",
+  "created_at": "2026-08-19T04:09:29.000Z",
+  "updated_at": "2026-08-19T07:55:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "world-model",
+    "so100",
+    "dacon-2026",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7135957696,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models. AETHORIA-AI/tr-hash-200m-70b-replay-checkpoints"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RawDiffusion - The Unfiltered AI Model Hub",
+      "url": "https://rawdiffusion.com/",
+      "snippet": "Share, discover, and download AI models freely. The unfiltered hub for Stable Diffusion checkpoints, LoRAs, embeddings, and more. Browse thousands of AI art models, images, and videos."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

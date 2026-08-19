@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "XiaomiMiMo/MiMo-V2.5",
+  "slug": "xiaomimimo-mimo-v2-5",
+  "author": "XiaomiMiMo",
+  "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+  "created_at": "2026-04-27T13:37:38.000Z",
+  "updated_at": "2026-07-09T04:23:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "multimodal",
+    "vision-language",
+    "audio",
+    "agent",
+    "video-understanding",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "eval-results",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 400,
+  "downloads_30d": 426872,
+  "trending_score": 8,
+  "parameters": 310775040000,
+  "parameters_human": "310.78B",
+  "storage_bytes": 315693598475,
+  "storage_human": "315.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XiaomiMiMo/MiMo-V2.5 · Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiMo-V2.5 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-5",
+      "snippet": "MiMo-V2.5 is a 310B-parameter Sparse MoE model (15B active) trained on 48T tokens. Its language backbone inherits from MiMo-V2-Flash &#x27;s hybrid sliding-window attention architecture, augmented with dedicated visual and audio encoders (both pretrained in-house) connected through lightweight projectors. MiMo-V2.5 architecture."
+    },
+    {
+      "title": "MiMo-V2.5-Pro | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-5-pro",
+      "snippet": "MiMo-V2.5-Pro is now fully rolled out across our API Platform, AI Studio, and other surfaces, with no change in pricing. Simply replace the model tag with mimo-v2.5-pro to get started. Built to Solve Harder MiMo-V2.5-Pro is built for harder goals. We&#x27;ve given it tasks that would take human experts days or weeks, and let it run autonomously."
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/models/mimo-v2.5",
+      "snippet": "One-time purchase unlocks both MiMo-V2.5 flagship models, plus TTS model free across all tiers for a limited time. Unleash powerful productivity with Xiaomi MiMo"
+    },
+    {
+      "title": "Xiaomi MiMo Home",
+      "url": "https://mimo.mi.com/",
+      "snippet": "MiMo Product Matrix From model inference to agent applications, MiMo delivers an end-to-end AI product experience."
+    }
+  ]
+}

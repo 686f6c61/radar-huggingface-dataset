@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.25-ImageNet-224-uint8-onnx",
   "created_at": "2026-08-19T01:57:47.000Z",
-  "updated_at": "2026-08-19T02:23:17.000Z",
+  "updated_at": "2026-08-19T07:01:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "tflite",
     "onnxruntime",
     "uint8",
     "image-classification",
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 530051,
-  "storage_human": "530051 B",
+  "storage_bytes": 4199591,
+  "storage_human": "4 MB",
   "base_model": null,
   "formats": [
     "onnx"

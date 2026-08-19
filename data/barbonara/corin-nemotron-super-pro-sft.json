@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "barbonara/corin-nemotron-super-pro-sft",
+  "slug": "barbonara-corin-nemotron-super-pro-sft",
+  "author": "barbonara",
+  "url": "https://huggingface.co/barbonara/corin-nemotron-super-pro-sft",
+  "created_at": "2026-08-19T08:44:17.000Z",
+  "updated_at": "2026-08-19T08:46:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3616921496,
+  "storage_human": "3.6 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "The workshop guides developers in building a report generation agent using NVIDIA Nemotron and LangGraph, focusing on four core considerations of AI agents: model, tools, memory and state, and routing."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Super",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/",
+      "snippet": "We are releasing NVIDIA Nemotron 3 Super, a 12B active 120B total parameter Mixture-of-Experts hybrid Mamba-Transformer model. Nemotron 3 Super is part of the Nemotron 3 series of models, and is the first model in the series that: Leverages LatentMoE for improved accuracy."
+    },
+    {
+      "title": "GitHub - NVIDIA-NeMo/Nemotron: Developer Asset Hub for NVIDIA Nemotron ...",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron",
+      "snippet": "Nemotron models excel at coding, math, scientific reasoning, tool calling, instruction following, and visual reasoning. Deploy across edge, single GPU, or data center environments with support for NeMo, TensorRT-LLM, vLLM, SGLang, and NIM microservices."
+    },
+    {
+      "title": "NVIDIA Nemotron AI | Open Multimodal Models for Agentic AI",
+      "url": "https://nemotron-ai.com/",
+      "snippet": "Combine Nemotron models with the NVIDIA software stack to build, optimize, and deploy AI agents in production. An end-to-end platform to build, customize, and deploy generative AI models with your own data. Optimized inference microservices for fast, secure deployment of Nemotron models anywhere."
+    },
+    {
+      "title": "Build Agentic AI with Multimodal Foundation Models | NVIDIA Nemotron",
+      "url": "https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/",
+      "snippet": "With transparent training data and broad platform support, including NVIDIA RTX PRO™ and NVIDIA DGX Spark™, Nemotron models are openly available and integrated across the AI ecosystem, enabling trusted, high‑performance AI agents to be deployed anywhere from edge to cloud."
+    }
+  ]
+}

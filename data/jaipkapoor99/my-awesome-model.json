@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jaipkapoor99/my-awesome-model",
+  "slug": "jaipkapoor99-my-awesome-model",
+  "author": "jaipkapoor99",
+  "url": "https://huggingface.co/jaipkapoor99/my-awesome-model",
+  "created_at": "2026-08-19T09:28:31.000Z",
+  "updated_at": "2026-08-19T09:28:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263424,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaipkapoor99 (Jai Kapoor) - Hugging Face",
+      "url": "https://huggingface.co/jaipkapoor99",
+      "snippet": "User profile of Jai Kapoor on Hugging Face"
+    },
+    {
+      "title": "joeypaak/my-awesome-model · Hugging Face",
+      "url": "https://huggingface.co/joeypaak/my-awesome-model",
+      "snippet": "Instructions to use joeypaak/my-awesome-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use joeypaak/my-awesome-model with Transformers:"
+    },
+    {
+      "title": "my_awesome_model | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/myawesomemodel/",
+      "snippet": "my_awesome_model is a fine-tuned version of DistilBERT-base-uncased, specifically optimized for text classification tasks. The model demonstrates impressive performance metrics, achieving a training accuracy of 92.95% and a final training loss of 0.0632 after 2 epochs of training."
+    },
+    {
+      "title": "GitHub - jaipkapoor99/jaipkapoor99: Get to know all about me.",
+      "url": "https://github.com/jaipkapoor99/jaipkapoor99",
+      "snippet": "Personal Statement I am a software engineer who thrives on combining advanced algorithms, full-stack development, and modern AI-driven engineering. My passion lies in building complex, high-impact solutions, and my methodology is defined by a deep integration of AI tools throughout the entire development lifecycle."
+    },
+    {
+      "title": "jaipkapoor99 (Jai Kapoor) · GitHub",
+      "url": "https://github.com/jaipkapoor99",
+      "snippet": "Software Engineer specializing in backend engineering, competitive programming, and AI integrations, with expertise in C++, Python, Docker, and PostgreSQL. - jaipkapoor99"
+    }
+  ]
+}

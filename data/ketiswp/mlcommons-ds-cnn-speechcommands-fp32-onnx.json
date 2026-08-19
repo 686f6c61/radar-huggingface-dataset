@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/mlcommons-DS-CNN-SpeechCommands-fp32-onnx",
   "created_at": "2026-08-19T01:57:09.000Z",
-  "updated_at": "2026-08-19T02:10:40.000Z",
+  "updated_at": "2026-08-19T07:00:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "tflite",
     "onnxruntime",
     "fp32",
     "audio-classification",
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 48872,
-  "storage_human": "48872 B",
+  "storage_bytes": 799604,
+  "storage_human": "799604 B",
   "base_model": null,
   "formats": [
     "onnx"

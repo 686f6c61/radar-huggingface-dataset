@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Elinnos/mistral-7b-elip-bridge-final-v1",
+  "slug": "elinnos-mistral-7b-elip-bridge-final-v1",
+  "author": "Elinnos",
+  "url": "https://huggingface.co/Elinnos/mistral-7b-elip-bridge-final-v1",
+  "created_at": "2025-11-20T18:24:54.000Z",
+  "updated_at": "2026-08-19T05:09:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "systemverilog",
+    "verilog",
+    "rtl",
+    "hardware-design",
+    "ahb2apb-bridge",
+    "amba",
+    "semiconductor",
+    "ip-design",
+    "lora",
+    "mistral",
+    "text-generation",
+    "en",
+    "dataset:Elinnos/ahb2apb-bridge-systemverilog",
+    "base_model:mistralai/Mistral-7B-v0.1",
+    "base_model:adapter:mistralai/Mistral-7B-v0.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 503784697,
+  "storage_human": "504 MB",
+  "base_model": "mistralai/Mistral-7B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elinnos/mistral-7b-elip-bridge-final-v1 · Hugging Face",
+      "url": "https://huggingface.co/Elinnos/mistral-7b-elip-bridge-final-v1",
+      "snippet": "This is a LoRA fine-tuned Mistral-7B-v0.1 model specialized in generating complete, production-ready SystemVerilog code for AHB2APB bridge designs. The model was trained on comprehensive bridge specifications following Einnnos Systems design standards."
+    },
+    {
+      "title": "Elinnos/mistral-7b-elip-bridge-final-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/Elinnos/mistral-7b-elip-bridge-final-v1/tree/main",
+      "snippet": "Instructions to use Elinnos/mistral-7b-elip-bridge-final-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Elinnos/mistral-7b-elip-bridge-final-v1 with PEFT:"
+    },
+    {
+      "title": "Elinnos/mistral-7b-elip-bridge-final-v1 - friendli.ai",
+      "url": "https://friendli.ai/models/Elinnos/mistral-7b-elip-bridge-final-v1",
+      "snippet": "Run Elinnos/mistral-7b-elip-bridge-final-v1 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-2",
+      "snippet": "An update to our first open model with better context."
+    }
+  ]
+}

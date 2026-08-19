@@ -5,7 +5,7 @@
   "author": "Kristo4",
   "url": "https://huggingface.co/Kristo4/learn_hf_food_not_food_text_classifier_distilbert_base_uncased",
   "created_at": "2026-08-17T11:12:32.000Z",
-  "updated_at": "2026-08-17T11:12:47.000Z",
+  "updated_at": "2026-08-18T15:39:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 267837761,
-  "storage_human": "268 MB",
+  "storage_bytes": 1071345843,
+  "storage_human": "1.1 GB",
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"

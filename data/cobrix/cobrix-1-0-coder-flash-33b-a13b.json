@@ -5,7 +5,7 @@
   "author": "CobrIX",
   "url": "https://huggingface.co/CobrIX/CobrIX-1.0-Coder-Flash-33B-A13B",
   "created_at": "2026-08-08T02:41:12.000Z",
-  "updated_at": "2026-08-16T17:57:53.000Z",
+  "updated_at": "2026-08-18T17:46:08.000Z",
   "license": "custom-personal-use-only",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 1905,
+  "downloads_30d": 2179,
   "trending_score": 0,
   "parameters": 33113780736,
   "parameters_human": "33.11B",

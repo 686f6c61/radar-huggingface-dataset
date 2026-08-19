@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "optimum-intel-internal-testing/tiny-random-qwen3.5-dflash",
+  "slug": "optimum-intel-internal-testing-tiny-random-qwen3-5-dflash",
+  "author": "optimum-intel-internal-testing",
+  "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3.5-dflash",
+  "created_at": "2026-08-19T10:21:59.000Z",
+  "updated_at": "2026-08-19T10:22:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20736,
+  "parameters_human": "20736",
+  "storage_bytes": 85280,
+  "storage_human": "85280 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Optimum Intel Internal Testing - Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/models",
+      "snippet": "Org profile for Optimum Intel Internal Testing on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "optimum-intel-internal-testing/tiny-random-flux · Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-flux",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tiny random flux (未知) | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/optimum-intel-internal-testing/tiny-random-flux",
+      "snippet": "tiny random flux by optimum-intel-internal-testing. 未知 open-source AI model. Tiny Random Flux is a minimal random image generation model for testing Diffusers library compatibil"
+    },
+    {
+      "title": "optimum-intel/README.md at main · huggingface/optimum-intel",
+      "url": "https://github.com/huggingface/optimum-intel/blob/main/README.md",
+      "snippet": "For more details on Optimum Intel inference, refer to the documentation. Note: Alternatively, an exported model can also be inferred using OpenVINO GenAI framework, that provides optimized execution methods for highly performant Generative AI."
+    },
+    {
+      "title": "GitHub - wgx7054/optimum-intel",
+      "url": "https://github.com/wgx7054/optimum-intel",
+      "snippet": "For more details on Optimum Intel inference, refer to the documentation. Note: Alternatively, an exported model can also be inferred using OpenVINO GenAI framework, that provides optimized execution methods for highly performant Generative AI."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "yjoonjang/colbert-ko-v1",
+  "slug": "yjoonjang-colbert-ko-v1",
+  "author": "yjoonjang",
+  "url": "https://huggingface.co/yjoonjang/colbert-ko-v1",
+  "created_at": "2025-09-27T17:11:42.000Z",
+  "updated_at": "2026-08-19T09:19:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "multi-vector",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "ko",
+    "arxiv:2405.19504",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 186,
+  "trending_score": 0,
+  "parameters": 148733184,
+  "parameters_human": "148.7M",
+  "storage_bytes": 595339088,
+  "storage_human": "595 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yjoonjang/colbert-ko-v1 · Hugging Face",
+      "url": "https://huggingface.co/yjoonjang/colbert-ko-v1",
+      "snippet": "Use this model with PyLate to index and retrieve documents. The index uses FastPLAID for efficient similarity search. Indexing documents Load the ColBERT model and initialize the PLAID index, then encode and index your documents:"
+    },
+    {
+      "title": "Youngjoon Jang",
+      "url": "https://yjoonjang.github.io/",
+      "snippet": "Korean ColBERT & Sparse Retrievers (colbert-ko-v1 · splade-ko-v1 · inference-free-splade-ko-v1) Trained and open-sourced Korean ColBERT and SPLADE variants achieving SOTA among corresponding architectures on the Korean Retrieval Benchmark."
+    },
+    {
+      "title": "yjoonjang (Youngjoon Jang) - Hugging Face",
+      "url": "https://huggingface.co/yjoonjang/models",
+      "snippet": "Information Retrieval (IR), Retrieval-Augmented Generation (RAG)"
+    },
+    {
+      "title": "Pretrained Models — Sentence Transformers documentation",
+      "url": "https://sbert.net/docs/multi_vector_encoder/pretrained_models.html",
+      "snippet": "The sentence-transformers tag on the Hugging Face Hub is the list that stays current, and we are working to get it onto every model that works with MultiVectorEncoder. The tables below are what we test against directly, so treat them as a starting point rather than the full set. For text retrieval in particular, any PyLate or Stanford-NLP ColBERT checkpoint loads whether or not it carries the ..."
+    },
+    {
+      "title": "yjoonjang (Youngjoon Jang) · GitHub",
+      "url": "https://github.com/yjoonjang/",
+      "snippet": "Studying NLP. yjoonjang has 54 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

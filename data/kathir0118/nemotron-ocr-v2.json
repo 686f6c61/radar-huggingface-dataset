@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Kathir0118/nemotron-ocr-v2",
+  "slug": "kathir0118-nemotron-ocr-v2",
+  "author": "Kathir0118",
+  "url": "https://huggingface.co/Kathir0118/nemotron-ocr-v2",
+  "created_at": "2026-08-19T07:10:00.000Z",
+  "updated_at": "2026-08-19T07:10:01.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "ru",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "nl",
+    "pt"
+  ],
+  "tags": [
+    "image",
+    "ocr",
+    "object recognition",
+    "text recognition",
+    "layout analysis",
+    "ingestion",
+    "multilingual",
+    "image-to-text",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "ru",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "nl",
+    "pt",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 762107711,
+  "storage_human": "762 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/nemotron-ocr-v2 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/nemotron-ocr-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nemotron-ocr-v2 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-ocr-v2/modelcard",
+      "snippet": "Nemotron OCR v2 is a state-of-the-art multilingual text recognition model designed for robust end-to-end optical character recognition (OCR) on complex real-world images."
+    },
+    {
+      "title": "nemotron-ocr-v2: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/nemotron-ocr-v2-nvidia",
+      "snippet": "Overview nemotron-ocr-v2 is a production-ready end-to-end optical character recognition model that detects text regions, recognizes transcribed text, and analyzes document layout through three jointly trained neural components: a RegNetX-8GF detector, a pre-norm Transformer recognizer, and a relational model for reading order analysis. Developed by nvidia, the model supports two variants—v2 ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "Nemotron OCR v2 - a Hugging Face Space by nvidia",
+      "url": "https://huggingface.co/spaces/nvidia/nemotron-ocr-v2",
+      "snippet": "Nemotron OCR v2 State-of-the-art multilingual OCR by NVIDIA. Upload an image to extract text with bounding boxes. Powered by ZeroGPU — GPU allocated on demand."
+    }
+  ]
+}

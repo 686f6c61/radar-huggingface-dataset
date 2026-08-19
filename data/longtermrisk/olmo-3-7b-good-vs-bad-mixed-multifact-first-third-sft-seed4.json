@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-first-third-sft-seed4",
+  "slug": "longtermrisk-olmo-3-7b-good-vs-bad-mixed-multifact-first-third-sft-seed4",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-first-third-sft-seed4",
+  "created_at": "2026-08-19T04:04:09.000Z",
+  "updated_at": "2026-08-19T04:04:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-good-vs-bad-mixed-multifact-sft-seed3 - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-sft-seed3",
+      "snippet": "OLMo-3-7B-good-vs-bad-mixed-multifact-sft-seed3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-sft",
+      "snippet": "longtermrisk / OLMo-3-7B-good-vs-bad-mixed-multifact-sft like 0 Follow Center on Long-Term Risk 19 Text Generation Transformers Safetensors English olmo3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OLMo-3-7B-good-vs-bad-mixed-multifact-first-third-sft-seed3",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-first-third-sft-seed3",
+      "snippet": "Deploy OLMo-3-7B-good-vs-bad-mixed-multifact-first-third-sft-seed3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "OLMo-3-7B-good-vs-bad-mixed-multifact-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-sft",
+      "snippet": "Run OLMo-3-7B-good-vs-bad-mixed-multifact-sft with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "allenai/olmo-3-7b • LM Studio",
+      "url": "https://lmstudio.ai/models/allenai/olmo-3-7b",
+      "snippet": "Olmo3 7B by AllenAI AllenAI introduces Olmo 3, a new family of 7B and 32B models. This suite includes Base, Instruct, and Think variants. The Base models were trained using a staged training approach. Olmo is a series of Open language models designed to enable the science of language models. These models are trained on the Dolma 3 dataset. All code, checkpoints, and associated training details ..."
+    }
+  ]
+}

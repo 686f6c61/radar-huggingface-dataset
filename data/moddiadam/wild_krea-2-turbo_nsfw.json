@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ModdiAdam/Wild_Krea-2-turbo_NSFW",
+  "slug": "moddiadam-wild_krea-2-turbo_nsfw",
+  "author": "ModdiAdam",
+  "url": "https://huggingface.co/ModdiAdam/Wild_Krea-2-turbo_NSFW",
+  "created_at": "2026-08-15T18:30:50.000Z",
+  "updated_at": "2026-08-19T10:28:02.000Z",
+  "license": "krea-2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "gguf",
+    "text-to-image",
+    "nsfw",
+    "krea-2",
+    "comfyui",
+    "mature",
+    "en",
+    "base_model:Comfy-Org/Krea-2",
+    "base_model:quantized:Comfy-Org/Krea-2",
+    "license:other",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 304,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 47286517696,
+  "storage_human": "47.3 GB",
+  "base_model": "Comfy-Org/Krea-2",
+  "formats": [
+    "diffusers",
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Krea-2-Turbo - Hugging Face",
+      "url": "https://huggingface.co/krea/Krea-2-Turbo",
+      "snippet": "Access Krea 2 Turbo ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "Krea 2: Unsencored Text-to-Image Generations in ComfyUI",
+      "url": "https://www.nextdiffusion.ai/tutorials/krea-2-uncensored-text-to-image-generations-in-comfyui",
+      "snippet": "Learn how to set up and use Krea 2 Turbo for high-quality text-to-image generation in ComfyUI. Step-by-step guide for optimal results and configurations."
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "Krea 2 - an image generation model from Krea AI. API Docs • Hugging Face (RAW) • Hugging Face (TURBO) • Technical Blog This is the official repository for the open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains inference code and instructions to run the model."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

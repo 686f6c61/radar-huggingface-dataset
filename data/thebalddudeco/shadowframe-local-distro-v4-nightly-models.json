@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "TheBaldDudeCo/shadowframe-local-distro-v4-nightly-models",
+  "slug": "thebalddudeco-shadowframe-local-distro-v4-nightly-models",
+  "author": "TheBaldDudeCo",
+  "url": "https://huggingface.co/TheBaldDudeCo/shadowframe-local-distro-v4-nightly-models",
+  "created_at": "2026-08-19T04:15:04.000Z",
+  "updated_at": "2026-08-19T04:17:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "shadowframe",
+  "languages": [],
+  "tags": [
+    "shadowframe",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83934590199,
+  "storage_human": "83.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thebalddudeco/shadowframe-ai",
+      "url": "https://github.com/thebalddudeco/shadowframe-ai",
+      "snippet": "The base-model selector is mode-aware. The Visual Style area only shows Original plus LoRAs built for the selected checkpoint, preventing incompatible LoRAs from being mixed with the wrong model family. Shadowframe AI passes consensual adult prompts directly to the selected local ComfyUI workflow."
+    },
+    {
+      "title": "thebalddudeco (Justin Von Braun) · GitHub",
+      "url": "https://github.com/thebalddudeco",
+      "snippet": "Director of Photography at The Bald Dude Co.™. thebalddudeco has 8 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "TheBaldDudeCo/shadowframe-ai-public-release - Hugging Face",
+      "url": "https://huggingface.co/datasets/TheBaldDudeCo/shadowframe-ai-public-release",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TheBaldDudeCo/shadowframe-ai-public-release at main",
+      "url": "https://huggingface.co/datasets/TheBaldDudeCo/shadowframe-ai-public-release/tree/main",
+      "snippet": "Datasets: TheBaldDudeCo / shadowframe-ai-public-release like 0 Modalities: Text Formats: text Size: < 1K Tags: windows comfyui local-ai desktop-app installer Libraries: Datasets Croissant License: other Dataset card Data Studio FilesFiles and versions xet Community 1 main shadowframe-ai-public-release 5.45 GB 1 contributor History:10 commits TheBaldDudeCo Add public Shadowframe Core payload ..."
+    },
+    {
+      "title": "Shadowframe AI v0.3.7 is Live! - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/shadowframe-ai-building-local-product-feels-like-real-justin-brown-6v7uc",
+      "snippet": "Shadowframe AI is still early… but v0.3.7 is a meaningful step toward what it&#x27;s supposed to be, a local AI creation app that feels less like infrastructure and more like a product."
+    }
+  ]
+}

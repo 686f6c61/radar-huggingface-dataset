@@ -5,7 +5,7 @@
   "author": "inclusionAI",
   "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-fp8",
   "created_at": "2026-08-04T03:59:52.000Z",
-  "updated_at": "2026-08-18T06:24:58.000Z",
+  "updated_at": "2026-08-19T02:48:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 34,
-  "downloads_30d": 3281,
+  "downloads_30d": 3431,
   "trending_score": 0,
   "parameters": 127486405600,
   "parameters_human": "127.49B",

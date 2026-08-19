@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mozarilla/tiny-blue-log-classifier",
+  "slug": "mozarilla-tiny-blue-log-classifier",
+  "author": "mozarilla",
+  "url": "https://huggingface.co/mozarilla/tiny-blue-log-classifier",
+  "created_at": "2026-08-19T09:07:32.000Z",
+  "updated_at": "2026-08-19T09:07:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tiny_log_classifier",
+    "text-classification",
+    "cybersecurity",
+    "blue-team",
+    "log-analysis",
+    "custom-code",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16418,
+  "parameters_human": "16418",
+  "storage_bytes": 65904,
+  "storage_human": "65904 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "All Blueprints | Mozilla.ai",
+      "url": "https://blueprints.mozilla.ai/all-blueprints",
+      "snippet": "Blueprints are customizable workflows that help developers build AI applications using open-source solutions."
+    },
+    {
+      "title": "Mozilla.ai - GitHub",
+      "url": "https://github.com/mozilla-ai",
+      "snippet": "main development portal for mozilla.ai. Mozilla.ai has 83 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models | Mozilla.ai",
+      "url": "https://blueprints.mozilla.ai/models",
+      "snippet": "Here are some open-source models to assist developers in building AI solutions."
+    },
+    {
+      "title": "mozilla-ai (Mozilla.ai) - Hugging Face",
+      "url": "https://huggingface.co/mozilla-ai/models",
+      "snippet": "Org profile for Mozilla.ai on Hugging Face, the AI community building the future."
+    }
+  ]
+}

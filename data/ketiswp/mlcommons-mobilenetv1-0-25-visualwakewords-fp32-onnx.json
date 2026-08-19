@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/mlcommons-MobileNetV1-0.25-VisualWakeWords-fp32-onnx",
   "created_at": "2026-08-19T01:57:33.000Z",
-  "updated_at": "2026-08-19T02:10:56.000Z",
+  "updated_at": "2026-08-19T07:01:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "tflite",
     "onnxruntime",
     "fp32",
     "image-classification",
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 878769,
-  "storage_human": "878769 B",
+  "storage_bytes": 3200480,
+  "storage_human": "3 MB",
   "base_model": null,
   "formats": [
     "onnx"

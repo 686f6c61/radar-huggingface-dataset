@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "XinRan-Tang/MM-Diff",
+  "slug": "xinran-tang-mm-diff",
+  "author": "XinRan-Tang",
+  "url": "https://huggingface.co/XinRan-Tang/MM-Diff",
+  "created_at": "2026-08-19T06:01:46.000Z",
+  "updated_at": "2026-08-19T06:01:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xinran Tang&#x27;s Website",
+      "url": "https://xinrt.github.io/",
+      "snippet": "A Model for Music Influence, Similarity and Evolution Analysis Based on Directed Network Xinran Tang, Yanxi Lin, Mingdong He 2021 4th International Conference on Computing and Big Data"
+    },
+    {
+      "title": "‪Xinran Tang‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=wfilnV4AAAAJ&hl=en",
+      "snippet": "‪University of Central Florida‬ - ‪‪Cited by 19‬‬"
+    },
+    {
+      "title": "GitHub - alibaba/mm-diff: MM-Diff: High-Fidelity Image Personalization ...",
+      "url": "https://github.com/alibaba/mm-diff",
+      "snippet": "We propose MM-Diff, a unified and tuning-free image personalization framework capable of generating high-fidelity images of both single and multiple subjects in seconds. On the left, the vision-augmented text embeddings and a small set of detail-rich subject embeddings are injected into the diffusion model through the well-designed multi-modal cross-attention. On the right, we illustrate the ..."
+    },
+    {
+      "title": "MM-Diff: High-Fidelity Image Personalization via Multi-Modal Condition ...",
+      "url": "https://mm-diff.github.io/",
+      "snippet": "The overall pipeline of the proposed MM-Diff. On the left, the vision-augmented text embeddings and a small set of detail-rich subject embeddings are injected into the diffusion model through the well-designed multi-modal cross-attention. On the right, we illustrate the details of the innovative implementation of cross-attention with LoRAs, as well as the attention constraints that facilitate ..."
+    },
+    {
+      "title": "Diff-MM: Exploring Pre-trained Text-to-Image Generation Model for ...",
+      "url": "https://arxiv.org/abs/2505.12606",
+      "snippet": "Diff-MM leverages the UNet of pre-trained Stable Diffusion as a tracking feature extractor through the proposed parallel feature extraction pipeline, which enables pairwise image inputs for object tracking. We further introduce a multi-modal sub-module tuning method that learns to gain complementary information between different modalities."
+    }
+  ]
+}

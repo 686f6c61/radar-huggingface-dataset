@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Samiyal/customerrouteprediction",
+  "slug": "samiyal-customerrouteprediction",
+  "author": "Samiyal",
+  "url": "https://huggingface.co/Samiyal/customerrouteprediction",
+  "created_at": "2026-08-19T04:38:05.000Z",
+  "updated_at": "2026-08-19T04:46:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "hi",
+    "pl",
+    "ru"
+  ],
+  "tags": [
+    "text-classification",
+    "en",
+    "hi",
+    "pl",
+    "ru",
+    "base_model:Samiyal/customerrouteprediction",
+    "base_model:finetune:Samiyal/customerrouteprediction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1623565719,
+  "storage_human": "1.6 GB",
+  "base_model": "Samiyal/customerrouteprediction",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax M2.7 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/minimax-m2-7",
+      "snippet": "MiniMax M2.7 by MiniMax ranks #45 of 218 with a public score of 63.06/100. Evidence: Supported; this profile shows 18 source-displayable benchmark rows."
+    },
+    {
+      "title": "Sam.ai - #1 Relationship-Driven Sales AI for B2B, CRE, Staffing",
+      "url": "https://www.sam.ai/",
+      "snippet": "Sam.ai automates 71% of prospecting for B2B sales, commercial real estate, and recruitment teams. Find prospects, run personalized outreach, and book 12+ meetings monthly."
+    },
+    {
+      "title": "How To Build And Deploy Custom AI Models | CustomGPT.ai",
+      "url": "https://customgpt.ai/custom-ai-model/",
+      "snippet": "Custom AI model guide: define use case, prep data, and deploy with CustomGPT.ai RAG, GPT-5 grounding, vector search, and an anti-hallucination layer."
+    },
+    {
+      "title": "Machine Learning for Route Optimization: A Detailed Guide",
+      "url": "https://www.upperinc.com/blog/machine-learning-route-optimization/",
+      "snippet": "A practical guide to machine learning route optimization. Learn how ML improves delivery routes, which techniques matter, and how to implement it."
+    },
+    {
+      "title": "AI Route Planning: Use Cases & Benefits - acropolium.com",
+      "url": "https://acropolium.com/blog/ai-route-planning-must-have-automation-and-optimization-practices/",
+      "snippet": "Explore essential AI route planning practices. Boost logistics with smart automation, real-time data, and route optimization strategies."
+    }
+  ]
+}

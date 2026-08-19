@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "paulvision/medscript-dora-summariser",
+  "slug": "paulvision-medscript-dora-summariser",
+  "author": "paulvision",
+  "url": "https://huggingface.co/paulvision/medscript-dora-summariser",
+  "created_at": "2026-06-03T16:12:20.000Z",
+  "updated_at": "2026-08-19T07:38:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "axolotl",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "lora",
+    "transformers",
+    "conversational",
+    "dataset:paulvision/medscript-sft-summariser",
+    "base_model:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 358335450,
+  "storage_human": "358 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "paulvision/medscript-dora-summariser · Hugging Face",
+      "url": "https://huggingface.co/paulvision/medscript-dora-summariser",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "paulvision (Sourangshu Pal) - Hugging Face",
+      "url": "https://huggingface.co/paulvision",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
+    },
+    {
+      "title": "VarshiniE25/medical-prescription-ocr: MedScript AI - GitHub",
+      "url": "https://github.com/VarshiniE25/medical-prescription-ocr",
+      "snippet": "MedScript AI is a locally-running, AI-powered system for extracting and structuring information from medical prescriptions. It combines: EasyOCR for robust text extraction from prescription images OpenCV for image preprocessing (denoising, deskewing, contrast enhancement) Ollama + Llama3 with regex-based fallback parsing for robust structured extraction Streamlit for a professional, healthcare ..."
+    },
+    {
+      "title": "GitHub - pyMoLt/MedScript: A fully local AI pipeline that converts ...",
+      "url": "https://github.com/pyMoLt/MedScript",
+      "snippet": "MedScript A fully local AI pipeline that converts medical lecture slides (PDF) into structured, readable learning scripts — no cloud API, no subscriptions, everything runs on your machine."
+    },
+    {
+      "title": "AI Prescription Reader - Free Doctor Handwriting Reader Online",
+      "url": "https://prescriptionreader.net/",
+      "snippet": "Struggling to read doctor handwriting? Our free AI Prescription Reader decodes prescriptions, medicine names, dosage, and bd, od, or sos terms."
+    }
+  ]
+}

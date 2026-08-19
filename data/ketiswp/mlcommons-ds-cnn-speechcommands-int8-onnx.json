@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/mlcommons-DS-CNN-SpeechCommands-int8-onnx",
   "created_at": "2026-08-19T01:57:12.000Z",
-  "updated_at": "2026-08-19T02:22:58.000Z",
+  "updated_at": "2026-08-19T07:00:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "tflite",
     "onnxruntime",
     "int8",
     "audio-classification",
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 73855,
-  "storage_human": "73855 B",
+  "storage_bytes": 1788010,
+  "storage_human": "2 MB",
   "base_model": null,
   "formats": [
     "onnx"

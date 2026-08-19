@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sainived656/soreqen-s1-GGUF",
+  "slug": "sainived656-soreqen-s1-gguf",
+  "author": "sainived656",
+  "url": "https://huggingface.co/sainived656/soreqen-s1-GGUF",
+  "created_at": "2026-08-19T06:16:36.000Z",
+  "updated_at": "2026-08-19T06:22:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "gguf",
+    "soreqen",
+    "hinglish",
+    "llama.cpp",
+    "quantized",
+    "text-generation",
+    "en",
+    "hi",
+    "base_model:sainived656/soreqen-s1",
+    "base_model:quantized:sainived656/soreqen-s1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 7062117824,
+  "storage_human": "7.1 GB",
+  "base_model": "sainived656/soreqen-s1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sainived656/soreqen-s1 · Hugging Face",
+      "url": "https://huggingface.co/sainived656/soreqen-s1",
+      "snippet": "SoreQen S1 SoreQen S1 is a bilingual (English / Hinglish) assistant from ZorQelis AI, fine-tuned from Qwen/Qwen3.5-2B."
+    },
+    {
+      "title": "sainived656/soreqen-s1-mega · Hugging Face",
+      "url": "https://huggingface.co/sainived656/soreqen-s1-mega",
+      "snippet": "SoreQen S1 Mega is a bilingual (English / Hinglish) assistant from ZorQelis AI, fine-tuned from Qwen/Qwen3.5-4B."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "A privacy-first, beginner-friendly desktop application for running large language models fully locally on Windows, Linux, and macOS. Load any GGUF model (Mistral, LLaMA, DeepSeek, Qwen, and thousands more from Hugging Face) and chat with it — with a built-in agentic mode that can read, create, edit, and organize files in a workspace you choose. No data ever leaves your computer. 📦 Also ..."
+    },
+    {
+      "title": "gguf AI Models | Civitai",
+      "url": "https://civitai.com/tag/gguf",
+      "snippet": "Browse 288 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with gguf."
+    }
+  ]
+}

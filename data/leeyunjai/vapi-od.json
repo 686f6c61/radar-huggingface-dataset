@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "leeyunjai/vapi-od",
+  "slug": "leeyunjai-vapi-od",
+  "author": "leeyunjai",
+  "url": "https://huggingface.co/leeyunjai/vapi-od",
+  "created_at": "2026-07-23T01:20:51.000Z",
+  "updated_at": "2026-08-19T11:14:16.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "openvino",
+    "education",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8695668319,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leeyunjai/vapi-od · Hugging Face",
+      "url": "https://huggingface.co/leeyunjai/vapi-od",
+      "snippet": "leeyunjai / vapi-od like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "leeyunjai (digitalbrain) - Hugging Face",
+      "url": "https://huggingface.co/leeyunjai",
+      "snippet": "Recent Activity updated a model 25 days ago leeyunjai/yolo11-firedetect updated a Space about 1 month ago leeyunjai/yolo11x-number-operator updated a Space about 1 month ago leeyunjai/yolo11x-rock-paper-scissors View all activity"
+    },
+    {
+      "title": "Introducing Vapi Model Intelligence: model recommendations backed by ...",
+      "url": "https://vapi.ai/blog/model-intelligence",
+      "snippet": "Introducing Vapi Model Intelligence: model recommendations backed by production data — insights, guidance, and practical detail on features and building voice AI agents, from the Vapi engineering team."
+    },
+    {
+      "title": "leeyunjai (Yunjai, Lee) · GitHub",
+      "url": "https://github.com/leeyunjai",
+      "snippet": "Embedded SW, Computer Vision SW and production/HW manager. - leeyunjai"
+    },
+    {
+      "title": "Core Models | Vapi",
+      "url": "https://docs.vapi.ai/quickstart",
+      "snippet": "Learn about the three core components to Vapi&#x27;s voice AI pipeline. At it&#x27;s core, Vapi is an orchestration layer over three modules: the transcriber, the model, and the voice. These three modules can be swapped out with any provider of your choosing; OpenAI, Groq, Deepgram, ElevenLabs, PlayHT, etc. You can even plug in your server to act as ..."
+    }
+  ]
+}

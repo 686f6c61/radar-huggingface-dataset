@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yusentan/UltraIR",
+  "slug": "yusentan-ultrair",
+  "author": "yusentan",
+  "url": "https://huggingface.co/yusentan/UltraIR",
+  "created_at": "2026-08-12T12:06:34.000Z",
+  "updated_at": "2026-08-19T07:38:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11131721186,
+  "storage_human": "11.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yusentan/UltraIR · Hugging Face",
+      "url": "https://huggingface.co/yusentan/UltraIR",
+      "snippet": "yusentan / UltraIR like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "[2608.13341] Simulation-to-real transfer learning for infrared ...",
+      "url": "https://arxiv.org/abs/2608.13341",
+      "snippet": "Here we introduce UltraIR, a foundation model for IR spectroscopy with more than 100 million parameters that enables simulation-to-real transfer learning for chemical sensing and analysis from molecules to complex samples."
+    },
+    {
+      "title": "Simulation-to-real transfer learning for infrared spectroscopic ...",
+      "url": "https://arxiv.org/html/2608.13341v1",
+      "snippet": "Here we introduce UltraIR, a foundation model for IR spectroscopy with more than 100 million parameters that enables simulation-to-real transfer learning for chemical sensing and analysis from molecules to complex samples."
+    },
+    {
+      "title": "Simulation-to-real transfer learning for infrared spectroscopic ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/simulation-real-transfer-learning-infrared-spectroscopic-chemical",
+      "snippet": "UltraIR turns simulated spectra into a reusable IR foundation model UltraIR is a foundation model with more than 100 million parameters, pretrained on approximately 60 million simulated infrared spectra before adaptation to experimental chemical-sensing tasks. Its central claim is simulation-to-real transfer: broad molecular coverage comes from synthetic data, while downstream labels align the ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

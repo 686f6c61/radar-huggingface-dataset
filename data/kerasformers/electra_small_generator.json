@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kerasformers/electra_small_generator",
+  "slug": "kerasformers-electra_small_generator",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/electra_small_generator",
+  "created_at": "2026-08-19T05:29:22.000Z",
+  "updated_at": "2026-08-19T05:44:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "electra",
+    "generator",
+    "text-encoder",
+    "fill-mask",
+    "arxiv:2003.10555",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:google/electra-small-generator",
+    "base_model:finetune:google/electra-small-generator",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70284496,
+  "storage_human": "70 MB",
+  "base_model": "google/electra-small-generator",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/electra-small-generator · Hugging Face",
+      "url": "https://huggingface.co/google/electra-small-generator",
+      "snippet": "The paper recommends a hyperparameter multiplier of 1/4 between the discriminator and generator for this given model to avoid training instabilities. This would not be the case when using google/electra-small-generator and google/electra-small-discriminator, which are similar in size."
+    },
+    {
+      "title": "keras/electra_small_generator_uncased_en · Hugging Face",
+      "url": "https://huggingface.co/keras/electra_small_generator_uncased_en",
+      "snippet": "Model Overview ELECTRA model is a pretraining approach for language models published by Google. Two transformer models are trained, a generator and a discriminator. The generator replaces tokens in a sequence and is trained as a masked language model. The discriminator is trained to discern what tokens have been replaced. This method of pretraining is more efficient than comparable methods ..."
+    },
+    {
+      "title": "electra-small-generator · Model · Inferix",
+      "url": "https://inferix.co/models/google/electra-small-generator",
+      "snippet": "WARNING: This is the official generator checkpoint as in the ELECTRA original codebase. However, this model is not scaled properly for pre-training with google/electra-small-discriminator. The paper recommends a hyperparameter multiplier of 1/4 between the discriminator and generator for this given model to avoid training instabilities. This would not be the case when using google/electra ..."
+    },
+    {
+      "title": "CHEF/Pipeline/X-FACT/transformers/model_cards/google/electra-small ...",
+      "url": "https://github.com/THU-BPM/CHEF/tree/main/Pipeline/X-FACT/transformers/model_cards/google/electra-small-generator",
+      "snippet": "For a detailed description and experimental results, please refer to our paper ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators. This repository contains code to pre-train ELECTRA, including small ELECTRA models on a single GPU. It also supports fine-tuning ELECTRA on downstream tasks including classification tasks ..."
+    },
+    {
+      "title": "GitHub - IMvision12/KerasFormers: KerasFormers: Open-source Keras 3 ...",
+      "url": "https://github.com/IMvision12/KerasFormers",
+      "snippet": "KerasFormers: Open-source Keras 3 collection of pretrained models across Vision, LLM, VLM, Depth, Speech, and more - IMvision12/KerasFormers"
+    }
+  ]
+}

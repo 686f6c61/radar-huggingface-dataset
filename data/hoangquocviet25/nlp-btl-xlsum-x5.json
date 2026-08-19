@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HoangQuocViet25/nlp-btl-xlsum-x5",
+  "slug": "hoangquocviet25-nlp-btl-xlsum-x5",
+  "author": "HoangQuocViet25",
+  "url": "https://huggingface.co/HoangQuocViet25/nlp-btl-xlsum-x5",
+  "created_at": "2026-08-19T05:19:17.000Z",
+  "updated_at": "2026-08-19T05:21:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "summarization",
+    "vietnamese",
+    "vit5",
+    "segment-attention",
+    "vi",
+    "dataset:csebuetnlp/xlsum",
+    "base_model:VietAI/vit5-base",
+    "base_model:finetune:VietAI/vit5-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 227399712,
+  "parameters_human": "227.4M",
+  "storage_bytes": 910456090,
+  "storage_human": "910 MB",
+  "base_model": "VietAI/vit5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - csebuetnlp/xl-sum: This repository contains the code, data ...",
+      "url": "https://github.com/csebuetnlp/xl-sum",
+      "snippet": "This repository contains the code, data, and models of the paper titled \"XL-Sum: Large-Scale Multilingual Abstractive Summarization for 44 Languages\" published in Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021."
+    },
+    {
+      "title": "csebuetnlp/xlsum · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/csebuetnlp/xlsum",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "csebuetnlp/mT5_multilingual_XLSum · Hugging Face",
+      "url": "https://huggingface.co/csebuetnlp/mT5_multilingual_XLSum",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases · csebuetnlp/xl-sum - GitHub",
+      "url": "https://github.com/csebuetnlp/xl-sum/releases",
+      "snippet": "This repository contains the code, data, and models of the paper titled \"XL-Sum: Large-Scale Multilingual Abstractive Summarization for 44 Languages\" published in Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021. - Releases · csebuetnlp/xl-sum"
+    },
+    {
+      "title": "[2106.13822] XL-Sum: Large-Scale Multilingual Abstractive Summarization ...",
+      "url": "https://arxiv.org/abs/2106.13822",
+      "snippet": "Contemporary works on abstractive text summarization have focused primarily on high-resource languages like English, mostly due to the limited availability of datasets for low/mid-resource ones. In this work, we present XL-Sum, a comprehensive and diverse dataset comprising 1 million professionally annotated article-summary pairs from BBC, extracted using a set of carefully designed heuristics ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AI4PD/REXzyme",
+  "slug": "ai4pd-rexzyme",
+  "author": "AI4PD",
+  "url": "https://huggingface.co/AI4PD/REXzyme",
+  "created_at": "2023-05-19T08:33:26.000Z",
+  "updated_at": "2026-08-19T10:50:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "t5",
+    "text2text-generation",
+    "chemistry",
+    "biology",
+    "translation",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70742905855,
+  "storage_human": "70.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI4PD/REXzyme · Hugging Face",
+      "url": "https://huggingface.co/AI4PD/REXzyme",
+      "snippet": "REXzyme was pre-trained with a supervised translation objective i.e., the model learned to process the continous representation of the reaction from the encoder to autoregressively (causual language modeling) produce the output."
+    },
+    {
+      "title": "AI4PD/REXzyme_aa · Hugging Face",
+      "url": "https://huggingface.co/AI4PD/REXzyme_aa",
+      "snippet": "We are still working in the analysis of the model for different tasks, including experimental testing. See below in this documentation information about the models&#x27; performance in different in-silico tasks and how to generate your own enzymes. Model description REXzyme is based on the Efficient T5 Large Transformer architecture (which in turn is very similar to the current version of Google ..."
+    },
+    {
+      "title": "REXzyme_smiles huggingface.co api & AI4PD REXzyme_smiles github AI ...",
+      "url": "https://www.toolify.ai/ai-model/ai4pd-rexzyme-smiles",
+      "snippet": "REXzyme_smiles huggingface.co is an AI model on huggingface.co that provides REXzyme_smiles&#x27;s model effect (), which can be used instantly with this AI4PD REXzyme_smiles model. huggingface.co supports a free trial of the REXzyme_smiles model, and also provides paid use of the REXzyme_smiles. Support call REXzyme_smiles model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "AI4PD — Mechanism-Grounded AI for Parkinson&#x27;s Care",
+      "url": "https://cvc-lab.github.io/parkinsons-website/",
+      "snippet": "AI4PD · AI for Parkinson&#x27;s Disease A patient-specific digital twin for Parkinson&#x27;s care Parkinson&#x27;s is the fastest-growing neurodegenerative disease, and it reaches well beyond tremor: into gait and balance, sleep, mood, autonomic function, and cognition. The evidence about any one patient arrives scattered across clinic visits, imaging, biomarkers, wearables, genetics, and the electronic ..."
+    },
+    {
+      "title": "REXzyme_aa huggingface.co api & AI4PD REXzyme_aa github AI Model - Toolify",
+      "url": "https://www.toolify.ai/ai-model/ai4pd-rexzyme-aa",
+      "snippet": "REXzyme_aa huggingface.co is an AI model on huggingface.co that provides REXzyme_aa&#x27;s model effect (), which can be used instantly with this AI4PD REXzyme_aa model. huggingface.co supports a free trial of the REXzyme_aa model, and also provides paid use of the REXzyme_aa. Support call REXzyme_aa model through api, including Node.js, Python, http."
+    }
+  ]
+}

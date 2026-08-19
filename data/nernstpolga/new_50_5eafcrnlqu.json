@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nernstpolga/new_50_5eafcrnlqu",
+  "slug": "nernstpolga-new_50_5eafcrnlqu",
+  "author": "nernstpolga",
+  "url": "https://huggingface.co/nernstpolga/new_50_5eafcrnlqu",
+  "created_at": "2026-08-19T04:16:06.000Z",
+  "updated_at": "2026-08-19T04:18:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r861",
+    "text-generation",
+    "conversational",
+    "base_model:vera6/affine-5g4yy75zuz-t6",
+    "base_model:finetune:vera6/affine-5g4yy75zuz-t6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234484189,
+  "storage_human": "70.2 GB",
+  "base_model": "vera6/affine-5g4yy75zuz-t6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nernstpolga (Nernst Polga) - Hugging Face",
+      "url": "https://huggingface.co/nernstpolga",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "nernstpolga/val-go-50 · Hugging Face",
+      "url": "https://huggingface.co/nernstpolga/val-go-50",
+      "snippet": "nernstpolga / val-go-50 like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude, Gemini",
+      "url": "https://www.quetext.com/ai-detector",
+      "snippet": "Detect AI-generated content from ChatGPT, GPT-5, Claude & Gemini with Quetext&#x27;s free AI detector, line-by-line analysis, no signup required."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

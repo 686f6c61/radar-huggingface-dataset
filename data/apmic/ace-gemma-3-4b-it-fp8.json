@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "APMIC/ACE-gemma-3-4b-it-fp8",
+  "slug": "apmic-ace-gemma-3-4b-it-fp8",
+  "author": "APMIC",
+  "url": "https://huggingface.co/APMIC/ACE-gemma-3-4b-it-fp8",
+  "created_at": "2026-01-30T02:14:46.000Z",
+  "updated_at": "2026-08-19T10:58:25.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "zh",
+    "en",
+    "base_model:twinkle-ai/gemma-3-4B-T1-it",
+    "base_model:quantized:twinkle-ai/gemma-3-4B-T1-it",
+    "license:gemma",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 4590065538,
+  "storage_human": "4.6 GB",
+  "base_model": "twinkle-ai/gemma-3-4B-T1-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "APMIC/ACE-gemma-3-4b-it-fp8 · Hugging Face",
+      "url": "https://huggingface.co/APMIC/ACE-gemma-3-4b-it-fp8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "APMIC/ACE-gemma-3-4b-it-fp8 at main - Hugging Face",
+      "url": "https://huggingface.co/APMIC/ACE-gemma-3-4b-it-fp8/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "APMIC releases the ACE series open-source models 4B and 12B: combining ...",
+      "url": "https://www.apmic.ai/en/news/apmic-releases-ace-open-source-ai-models-nvfp4",
+      "snippet": "APMIC has officially released four ACE-gemma-3 models, fine-tuned for the Taiwanese context and combining knowledge distillation and NVFP4 inference technology, providing enterprises with lightweight 4B and 12B model specifications that balance privacy, autonomy, and efficiency."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Gemma 3 4B IT - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-3-4b-it.html",
+      "snippet": "Gemma 3 4B IT is Google&#x27;s compact 4-billion parameter open model with instruction tuning, designed for on-device and edge deployment. For more information about model development and performance, see the model/service card."
+    }
+  ]
+}

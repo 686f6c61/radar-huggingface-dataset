@@ -5,7 +5,7 @@
   "author": "sfewf",
   "url": "https://huggingface.co/sfewf/qwen3-4b-math-tool-RL",
   "created_at": "2026-08-17T09:27:00.000Z",
-  "updated_at": "2026-08-18T01:16:36.000Z",
+  "updated_at": "2026-08-19T02:19:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,17 +14,19 @@
   "tags": [
     "safetensors",
     "qwen3",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
     "license:mit",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 6,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
   "storage_bytes": 8056404662,
   "storage_human": "8.1 GB",
-  "base_model": null,
+  "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "encredible/Gaiel-72B-Korean-Tuned",
+  "slug": "encredible-gaiel-72b-korean-tuned",
+  "author": "encredible",
+  "url": "https://huggingface.co/encredible/Gaiel-72B-Korean-Tuned",
+  "created_at": "2026-08-10T11:43:56.000Z",
+  "updated_at": "2026-08-19T09:46:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/qwen2.5-72b-instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1696001304,
+  "storage_human": "1.7 GB",
+  "base_model": "unsloth/qwen2.5-72b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "encredible/Gaiel-72B-Korean-Tuned-MLX · Hugging Face",
+      "url": "https://huggingface.co/encredible/Gaiel-72B-Korean-Tuned-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gaiel MLX Benchmark Results (1.5B, 7B, 32B on Cluster)",
+      "url": "https://gist.github.com/encredible/5e04d928afd77f41088edb5fb91279e5/15a9341137980b2e7f7b617dbbc51d3f03560e89",
+      "snippet": "encredible/Gaiel-72B-Korean-Tuned-MLX Status: Model exceeds currently available cluster RAM limit for unquantized inference (Requires additional unified memory or 4-bit quantization)."
+    },
+    {
+      "title": "encredible (Jaegwan Kim) - Hugging Face",
+      "url": "https://huggingface.co/encredible",
+      "snippet": "Recent Activity updated a modelabout 5 hours ago encredible/Gaiel-7B-Korean-Tuned updated a modelabout 5 hours ago encredible/Gaiel-1.5B-Korean-Tuned updated a model2 days ago encredible/Gaiel-72B-Korean-Tuned-MLX View all activity"
+    },
+    {
+      "title": "Models - Featherless.ai",
+      "url": "https://featherless.ai/models/",
+      "snippet": "Featherless - The latest LLM models, serverless and ready to use at your request."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 234 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 68 providers compared."
+    }
+  ]
+}

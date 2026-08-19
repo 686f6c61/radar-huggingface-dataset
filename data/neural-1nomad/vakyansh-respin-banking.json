@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Neural-1Nomad/vakyansh-respin-banking",
+  "slug": "neural-1nomad-vakyansh-respin-banking",
+  "author": "Neural-1Nomad",
+  "url": "https://huggingface.co/Neural-1Nomad/vakyansh-respin-banking",
+  "created_at": "2026-08-19T06:38:10.000Z",
+  "updated_at": "2026-08-19T08:31:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:Harveenchadha/vakyansh-wav2vec2-telugu-tem-100",
+    "base_model:finetune:Harveenchadha/vakyansh-wav2vec2-telugu-tem-100",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94424004,
+  "parameters_human": "94.4M",
+  "storage_bytes": 755448817,
+  "storage_human": "755 MB",
+  "base_model": "Harveenchadha/vakyansh-wav2vec2-telugu-tem-100",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub Pages - Vakyansh",
+      "url": "https://open-speech-ekstep.github.io/",
+      "snippet": "User feedback from the inference service is also incorporated for model improvisations. Vakyansh Technical Overview The Developer documentation provides you with a complete set of guidelines which you need to: Install Vakyansh Configure Vakyansh Customize Vakyansh Extend Vakyansh Contribute to Vakyansh Discussion Connect with community on Gitter"
+    },
+    {
+      "title": "Vakyansh Open Source Models - GitHub",
+      "url": "https://github.com/Open-Speech-EkStep/vakyansh-models",
+      "snippet": "Vakyansh-Conformer-SSL This model was pre-trained using Nemo toolkit with 34,000 hours unlabeled audio in 39 Indian languages. This includes 15,000 hours of news recordings available on the internet, 10,000 hours of YouTube audios and other audio data. In addition, 9,000 hours of Indian English ..."
+    },
+    {
+      "title": "vakyansh-models/README.md at main · Open-Speech-EkStep ... - GitHub",
+      "url": "https://github.com/Open-Speech-EkStep/vakyansh-models/blob/main/README.md?plain=1",
+      "snippet": "Open source speech to text models for Indic Languages - vakyansh-models/README.md at main · Open-Speech-EkStep/vakyansh-models"
+    },
+    {
+      "title": "Operational Intelligence for Banks | NeuralNomad",
+      "url": "https://www.neuralnomad.ai/banking",
+      "snippet": "Operational intelligence in two weeks. Built for private equity portfolio companies, banks, and credit unions."
+    },
+    {
+      "title": "vakyansh (Vakyansh) - Hugging Face",
+      "url": "https://huggingface.co/vakyansh",
+      "snippet": "User profile of Vakyansh on Hugging Face"
+    }
+  ]
+}

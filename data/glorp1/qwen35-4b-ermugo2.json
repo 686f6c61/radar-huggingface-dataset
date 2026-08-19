@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "glorp1/qwen35-4b-ermugo2",
+  "slug": "glorp1-qwen35-4b-ermugo2",
+  "author": "glorp1",
+  "url": "https://huggingface.co/glorp1/qwen35-4b-ermugo2",
+  "created_at": "2026-08-19T10:21:50.000Z",
+  "updated_at": "2026-08-19T10:26:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817439,
+  "storage_human": "9.3 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/qwen35",
+      "snippet": "Qwen3.5 is Qwen&#x27;s new model family including Qwen3.5 Small: 0.8B, 2B, 4B, 9B and Qwen3.5 Medium: 35B-A3B, 27B, 122B-A10B and 397B-A17B."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "GitHub - techwithsergiu/qwen35-toolkit: Convert, strip, verify and ...",
+      "url": "https://github.com/techwithsergiu/qwen35-toolkit",
+      "snippet": "Qwen3.5 models ship as full-precision VLMs — too large for most consumer GPUs out of the box. This toolkit prepares them for text-only LoRA fine-tuning and inference on limited hardware: correct BNB quantization, clean visual tower strip, and inference verification before publishing. What it does: Quantize f16 → BNB NF4 4-bit (fits a 4B model in ~5 GB VRAM) Strip the visual tower — saves ..."
+    },
+    {
+      "title": "ttvdblock716/qwen35-4b • LM Studio Hub",
+      "url": "https://lmstudio.ai/ttvdblock716/qwen35-4b",
+      "snippet": "This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation. Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn&#x27;t a single model. It&#x27;s a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    }
+  ]
+}

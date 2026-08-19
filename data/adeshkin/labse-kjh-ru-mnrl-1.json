@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "adeshkin/labse-kjh-ru-mnrl-1",
+  "slug": "adeshkin-labse-kjh-ru-mnrl-1",
+  "author": "adeshkin",
+  "url": "https://huggingface.co/adeshkin/labse-kjh-ru-mnrl-1",
+  "created_at": "2026-05-18T10:17:23.000Z",
+  "updated_at": "2026-08-19T05:35:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "kjh",
+    "ru"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:157620",
+    "loss:MultipleNegativesRankingLoss",
+    "kjh",
+    "ru",
+    "dataset:adeshkin/khakas-russian-parallel-corpus",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:sentence-transformers/LaBSE",
+    "base_model:finetune:sentence-transformers/LaBSE",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": 470926848,
+  "parameters_human": "470.9M",
+  "storage_bytes": 1899730293,
+  "storage_human": "1.9 GB",
+  "base_model": "sentence-transformers/LaBSE",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation",
+      "dataset": "kjh ru random",
+      "metric": "Src2Trg Accuracy",
+      "value": 0.9548022598870056
+    },
+    {
+      "task": "Translation",
+      "dataset": "kjh ru random",
+      "metric": "Trg2Src Accuracy",
+      "value": 0.9510357815442562
+    },
+    {
+      "task": "Translation",
+      "dataset": "kjh ru random",
+      "metric": "Mean Accuracy",
+      "value": 0.9529190207156308
+    }
+  ],
+  "sources": [
+    {
+      "title": "adeshkin/labse-kjh-ru-mnrl-1 · Hugging Face",
+      "url": "https://huggingface.co/adeshkin/labse-kjh-ru-mnrl-1",
+      "snippet": "Instructions to use adeshkin/labse-kjh-ru-mnrl-1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use adeshkin/labse-kjh-ru-mnrl-1 with sentence-transformers:"
+    },
+    {
+      "title": "adeshkin/labse-en-ru_kjh-mlm · Hugging Face",
+      "url": "https://huggingface.co/adeshkin/labse-en-ru_kjh-mlm",
+      "snippet": "Instructions to use adeshkin/labse-en-ru_kjh-mlm with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use adeshkin/labse-en-ru_kjh-mlm with Transformers:"
+    },
+    {
+      "title": "labse-kjh-ru/README.md at master · adeshkin/labse-kjh-ru",
+      "url": "https://github.com/adeshkin/labse-kjh-ru/blob/master/README.md",
+      "snippet": "Contribute to adeshkin/labse-kjh-ru development by creating an account on GitHub."
+    },
+    {
+      "title": "nn models +agency — Yandex: found 100 thousand results",
+      "url": "https://online.yandex.com/search?text=nn+models+%2Bagency&lr=21206&missword=1",
+      "snippet": "AGENCY MODELING \"Agency Models\" Agency Modeling the only officially site used to find some of the best and newest talent in the World!. Become a MODEL today Get listed in our model search and we..."
+    },
+    {
+      "title": "Yandex — fast Internet search",
+      "url": "https://yandex.com/",
+      "snippet": "Yandex finds anything: webpages, images, music, good. Solve any problem — from everyday to a scientific one. Search by text, voice or image."
+    }
+  ]
+}

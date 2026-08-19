@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "JasperYOU/arm1_joint_noise_tlow0_epoch1",
+  "slug": "jasperyou-arm1_joint_noise_tlow0_epoch1",
+  "author": "JasperYOU",
+  "url": "https://huggingface.co/JasperYOU/arm1_joint_noise_tlow0_epoch1",
+  "created_at": "2026-08-18T13:34:20.000Z",
+  "updated_at": "2026-08-19T08:02:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "jasperyou (Jasper You) · GitHub",
+      "url": "https://github.com/jasperyou",
+      "snippet": "Full Stack engineer to Indie Hacker. jasperyou has 24 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "eas-rel-2026.0.0/robotics-ai-suite/components/simulations ... - GitHub",
+      "url": "https://github.com/bharagha/eas-rel-2026.0.0/blob/main/robotics-ai-suite/components/simulations/PicknPlace/picknplace/scripts/arm1_controller.py",
+      "snippet": "Curated collections of sample applications designed to help you develop optimized AI solutions. Tailored to specific use cases, covering retail, manufacturing, metro, and media &amp; entertainment...."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    }
+  ]
+}

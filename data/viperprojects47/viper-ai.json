@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "viperprojects47/viper-ai",
+  "slug": "viperprojects47-viper-ai",
+  "author": "viperprojects47",
+  "url": "https://huggingface.co/viperprojects47/viper-ai",
+  "created_at": "2026-08-19T08:32:19.000Z",
+  "updated_at": "2026-08-19T09:09:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen2.5",
+    "viper",
+    "fine-tuned",
+    "conversational",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073568,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viper AI — Assistant",
+      "url": "https://ai.viperprojects47.com/",
+      "snippet": "Viper AI — Assistant Hi, I&#x27;m Viper, let&#x27;s get started"
+    },
+    {
+      "title": "Viper AI — The AI Engineering Operating System",
+      "url": "https://www.viperai.tech/",
+      "snippet": "Viper is an autonomous engineering operating system that transforms high-level intent into production-ready software."
+    },
+    {
+      "title": "viperprojects47 (Viperprojects47) · GitHub",
+      "url": "https://github.com/viperprojects47",
+      "snippet": "Architecting custom digital solutions from inception to scale. - viperprojects47"
+    },
+    {
+      "title": "Viperprojects47",
+      "url": "https://viperprojects47.com/",
+      "snippet": "Innovate the Future with Viperprojects47 Building state-of-the-art foundation models and intelligent conversational platforms."
+    },
+    {
+      "title": "About — Viper AI",
+      "url": "https://www.viperai.tech/about",
+      "snippet": "Viper AI builds a hosted engineering workspace that unifies product context, code, and AI."
+    }
+  ]
+}

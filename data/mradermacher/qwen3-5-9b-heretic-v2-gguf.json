@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-9B-heretic-v2-GGUF",
+  "slug": "mradermacher-qwen3-5-9b-heretic-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-heretic-v2-GGUF",
+  "created_at": "2026-08-19T05:38:08.000Z",
+  "updated_at": "2026-08-19T06:35:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:ansulev/Qwen3.5-9B-heretic-v2",
+    "base_model:quantized:ansulev/Qwen3.5-9B-heretic-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 456010480,
+  "parameters_human": "456.0M",
+  "storage_bytes": 1542395904,
+  "storage_human": "1.5 GB",
+  "base_model": "ansulev/Qwen3.5-9B-heretic-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.5-9B-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B-ultra-uncensored-heretic-v2-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-ultra-uncensored-heretic-v2-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Using Heretic does not require an understanding of transformer internals. In fact, anyone who knows how to run a command-line program can use Heretic to decensor language models. Heretic supports most dense models, including many multimodal models, several different MoE architectures, and even some hybrid models like Qwen3.5."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED-GGUF is a quantized collection of static GGUF formats derived from the base model at Hugging Face, maintained by mradermacher."
+    },
+    {
+      "title": "Qwen3.5-9B去审查版，8G显卡能跑，部署教程 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/2044211989182943342",
+      "snippet": "目前Qwen3.5-9B的基础模型，已经有800多万次下载，是最热门的开源模型之一，2026年发布的新模型中，总下载量排第四，这个破解版，也已经有70多万的下载量了，破解后，AI彻底放飞自我，成人角色扮演、灰色地带知识…"
+    }
+  ]
+}

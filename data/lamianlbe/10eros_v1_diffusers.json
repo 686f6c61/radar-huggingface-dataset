@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lamianlbe/10Eros_v1_Diffusers",
+  "slug": "lamianlbe-10eros_v1_diffusers",
+  "author": "lamianlbe",
+  "url": "https://huggingface.co/lamianlbe/10Eros_v1_Diffusers",
+  "created_at": "2026-07-12T15:52:11.000Z",
+  "updated_at": "2026-08-19T09:25:41.000Z",
+  "license": "ltx2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 93638449074,
+  "storage_human": "93.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lamianlbe/10Eros_v1_Diffusers · Hugging Face",
+      "url": "https://huggingface.co/lamianlbe/10Eros_v1_Diffusers",
+      "snippet": "lamianlbe / 10Eros_v1_Diffusers like 0 Safetensors License:ltx2-community-license Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "TenStrip/LTX2.3-10Eros · Hugging Face",
+      "url": "https://huggingface.co/TenStrip/LTX2.3-10Eros",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX 10Eros - v1.4 | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2447875/ltx23-10eros",
+      "snippet": "This model has near-0 anatomy depiction currently. It fully understands the concepts, but my new merge method is a 3 stage comparison shape-level reform lever that mostly aligns to the base 22b model instead of the usual merging methods. This is essentially an abliterated base LTX 2.3 model."
+    },
+    {
+      "title": "LTX-2.3 10Eros NVFP4 - nvfp4mixed | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2600389/ltx-23-10eros-nvfp4?modelVersionId=2921574",
+      "snippet": "80 0 Updated: Jul 15, 2026 base model ltx-2.3 10eros nvfp4 nvfp4mixed nvfp4mixed_learned"
+    },
+    {
+      "title": "LTX-2.3: Previous Generation AI Video Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-3",
+      "snippet": "LTX-2.3 is the previous LTX release. Open weights, synchronized audio, and native portrait video. Still fully supported. LTX-2.5 is the current model."
+    }
+  ]
+}

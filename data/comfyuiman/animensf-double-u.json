@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "comfyuiman/animensf-double-u",
+  "slug": "comfyuiman-animensf-double-u",
+  "author": "comfyuiman",
+  "url": "https://huggingface.co/comfyuiman/animensf-double-u",
+  "created_at": "2026-08-12T00:17:44.000Z",
+  "updated_at": "2026-08-19T08:13:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21472201304,
+  "storage_human": "21.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "comfyuiman/animensf-double-u · Hugging Face",
+      "url": "https://huggingface.co/comfyuiman/animensf-double-u",
+      "snippet": "comfyuiman / animensf-double-u like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "comfyuiman/animensf-double-u · Discussions - Hugging Face",
+      "url": "https://huggingface.co/comfyuiman/animensf-double-u/discussions",
+      "snippet": "comfyuiman / animensf-double-u like 0 Model card FilesFiles and versions xet Community Copy to bucket new New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    },
+    {
+      "title": "Workflow (Anime Style with double detailer and upscaler)",
+      "url": "https://zdtzero.itch.io/workflow-anime-style-with-double-detailer-and-upscaler",
+      "snippet": "Hello fellow creators! 🛠️ Are you struggling with messed-up anime hands or blurry faces? This is my personal, plug-and-play ComfyUI workflow designed to fix bad anime faces/hands and seamlessly upscale your generated images to Ultra-HD."
+    },
+    {
+      "title": "Unlock Realistic Anime Portraits: A Comprehensive Workflow for AI ...",
+      "url": "https://comfyui.org/en/unlock-realistic-anime-portraits-with-ai",
+      "snippet": "Unlock photorealistic anime portraits with this workflow! Convert 2D images with automatic face/hand refinement using AI models. Learn how to use ComfyUI for stunning results"
+    },
+    {
+      "title": "comfyui AI Models | Civitai",
+      "url": "https://civitai.com/tag/comfyui",
+      "snippet": "Browse 2,221 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with comfyui."
+    }
+  ]
+}

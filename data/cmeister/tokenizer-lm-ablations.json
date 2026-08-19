@@ -5,7 +5,7 @@
   "author": "cmeister",
   "url": "https://huggingface.co/cmeister/tokenizer-lm-ablations",
   "created_at": "2026-08-17T14:20:00.000Z",
-  "updated_at": "2026-08-17T14:32:42.000Z",
+  "updated_at": "2026-08-17T14:53:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 419804055121,
-  "storage_human": "419.8 GB",
+  "storage_bytes": 783960215737,
+  "storage_human": "784.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

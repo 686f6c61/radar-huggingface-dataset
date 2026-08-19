@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "rasoultilburg/SocioCausaNet",
+  "slug": "rasoultilburg-sociocausanet",
+  "author": "rasoultilburg",
+  "url": "https://huggingface.co/rasoultilburg/SocioCausaNet",
+  "created_at": "2025-06-08T18:56:21.000Z",
+  "updated_at": "2026-08-19T09:24:55.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "joint_causal",
+    "feature-extraction",
+    "causal-extraction",
+    "relation-extraction",
+    "bert",
+    "pytorch",
+    "causality",
+    "token-classification",
+    "custom_code",
+    "en",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 112144907,
+  "parameters_human": "112.1M",
+  "storage_bytes": 448604340,
+  "storage_human": "449 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rasoultilburg/SocioCausaNet · Hugging Face",
+      "url": "https://huggingface.co/rasoultilburg/SocioCausaNet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SocioCausaNet | Rasoul Norouzi",
+      "url": "https://rasoulnorouzi.github.io/projects/sociocausenet/",
+      "snippet": "SocioCausaNet is a fine-tuned BERT-based multi-task model that jointly extracts causal relationships from text. It performs three tasks simultaneously: classifying whether sentences contain causal claims, identifying cause and effect spans via BIO tagging, and linking cause-effect pairs with typed relations."
+    },
+    {
+      "title": "rasoultilburg/SocioCausaNet at main - Hugging Face",
+      "url": "https://huggingface.co/rasoultilburg/SocioCausaNet/tree/main",
+      "snippet": "Train Use this model main SocioCausaNet Ctrl+K Ctrl+K 1 contributor History: 15 commits"
+    },
+    {
+      "title": "Rasoul Norouzi",
+      "url": "https://rasoulnorouzi.github.io/",
+      "snippet": "Research interests: natural language processing, causal text mining, recommender systems, graph neural networks, and AI-powered research tools. Lab affiliations: I am a member of the Insight Lab (transparent and reproducible social science research), the CPCM Lab (computational approaches to human cognition and behavior), and the Meta-Research ..."
+    },
+    {
+      "title": "socialcausality · GitHub",
+      "url": "https://github.com/socialcausality",
+      "snippet": "TL;DR: we investigate causal representation learning in the multi-agent context, from computational formalisms to controlled simulations to real-world applications. we cast doubt on the notion of non-causal robustness in the previous benchmark, revealing that recent representations tend to underestimate indirect causal effects we introduce a causal regularization approach, including a ..."
+    }
+  ]
+}

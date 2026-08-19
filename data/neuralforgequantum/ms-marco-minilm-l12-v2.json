@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "neuralforgequantum/ms-marco-MiniLM-L12-v2",
+  "slug": "neuralforgequantum-ms-marco-minilm-l12-v2",
+  "author": "neuralforgequantum",
+  "url": "https://huggingface.co/neuralforgequantum/ms-marco-MiniLM-L12-v2",
+  "created_at": "2026-08-19T07:57:03.000Z",
+  "updated_at": "2026-08-19T07:57:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "jax",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "bert",
+    "text-classification",
+    "transformers",
+    "text-ranking",
+    "en",
+    "dataset:sentence-transformers/msmarco",
+    "base_model:microsoft/MiniLM-L12-H384-uncased",
+    "base_model:quantized:microsoft/MiniLM-L12-H384-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360897,
+  "parameters_human": "33.4M",
+  "storage_bytes": 1237729613,
+  "storage_human": "1.2 GB",
+  "base_model": "microsoft/MiniLM-L12-H384-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cross-encoder/ms-marco-MiniLM-L12-v2 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L12-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MS-Marco-MiniLM-L-12-v2 - GitHub",
+      "url": "https://github.com/inferless/MS-marco-MiniLM-L-12-v2",
+      "snippet": "MS-Marco-MiniLM-L-12-v2 This model was trained on the MS Marco Passage Ranking task. The model can be used for Information Retrieval: Given a query, encode the query will all possible passages (e.g. retrieved with ElasticSearch). Then sort the passages in a decreasing order. See SBERT.net Retrieve & Re-rank for more details."
+    },
+    {
+      "title": "sentence-transformers/docs/pretrained-models/ce-msmarco.md at main ...",
+      "url": "https://github.com/huggingface/sentence-transformers/blob/master/docs/pretrained-models/ce-msmarco.md",
+      "snippet": "MS MARCO is a large scale information retrieval corpus that was created based on real user search queries using Bing search engine. The provided models can be used for semantic search, i.e., given keywords / a search phrase / a question, the model will find passages that are relevant for the search query. The training data consists of over 500k examples, while the complete corpus consists of ..."
+    },
+    {
+      "title": "MS MARCO Cross-Encoders — Sentence Transformers documentation - SBERT.net",
+      "url": "https://www.sbert.net/docs/pretrained-models/ce-msmarco.html",
+      "snippet": "MS MARCO Cross-Encoders MS MARCO is a large scale information retrieval corpus that was created based on real user search queries using Bing search engine. The provided models can be used for semantic search, i.e., given keywords / a search phrase / a question, the model will find passages that are relevant for the search query."
+    },
+    {
+      "title": "cross-encoder/ms-marco-MiniLM-L12-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L12-v2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

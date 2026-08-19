@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tugot17/LFM2.5-1.2B-Instruct-DSpark-5L-GGUF",
+  "slug": "tugot17-lfm2-5-1-2b-instruct-dspark-5l-gguf",
+  "author": "tugot17",
+  "url": "https://huggingface.co/tugot17/LFM2.5-1.2B-Instruct-DSpark-5L-GGUF",
+  "created_at": "2026-08-19T09:09:00.000Z",
+  "updated_at": "2026-08-19T09:09:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "speculative-decoding",
+    "dspark",
+    "dflash",
+    "draft-model",
+    "lfm2",
+    "base_model:tugot17/LFM2.5-1.2B-Instruct-DSpark-5L",
+    "base_model:quantized:tugot17/LFM2.5-1.2B-Instruct-DSpark-5L",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 295725953,
+  "parameters_human": "295.7M",
+  "storage_bytes": 593886560,
+  "storage_human": "594 MB",
+  "base_model": "tugot17/LFM2.5-1.2B-Instruct-DSpark-5L",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tugot17/LFM2.5-1.2B-Instruct-DSpark-5L · Hugging Face",
+      "url": "https://huggingface.co/tugot17/LFM2.5-1.2B-Instruct-DSpark-5L",
+      "snippet": "LFM2.5-1.2B-Instruct DSpark draft (5-layer) DSpark speculative-decoding draft model for LiquidAI/LFM2.5-1.2B-Instruct: a Qwen3-style GQA block drafter (5 layers) with a low-rank Markov transition head (rank 256) and a confidence head. Block size 7 (anchor + 6 drafts), interleaved (GPT-J) RoPE."
+    },
+    {
+      "title": "tugot17/LFM2.5-1.2B-Instruct-DSpark-5L at main - Hugging Face",
+      "url": "https://huggingface.co/tugot17/LFM2.5-1.2B-Instruct-DSpark-5L/tree/main",
+      "snippet": "tugot17 / LFM2.5-1.2B-Instruct-DSpark-5L like 2 Safetensors sglang qwen3 speculative-decoding dspark draft-model lfm2 License:other Model card FilesFiles and versions xet Community Copy to bucket new main LFM2.5-1.2B-Instruct-DSpark-5L 591 MB Ctrl+K Ctrl+K 1 contributor History:2 commits tugot17 Add LFM2 DSpark draft (canonical, trimmed config) cfaf1c8 verified20 days ago .gitattributes Safe 1 ..."
+    },
+    {
+      "title": "LFM2.5-1.2B-Instruct - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct",
+      "snippet": "Instruction-tuned 1.2B parameter model optimized for chat and general-purpose tasks ← Back to Text Models LFM2.5-1.2B-Instruct is Liquid AI&#x27;s flagship instruction-tuned model, delivering exceptional performance for chat, instruction-following, and tool-calling tasks."
+    },
+    {
+      "title": "Liquid LFM2.5: How To Run & Fine-tune | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/tutorials/lfm2.5",
+      "snippet": "Liquid AI releases LFM2.5, including their instruct and vision model. LFM2.5-1.2B-Instruct is a 1.17B parameter hybrid reasoning model trained on 28T tokens and RL, delivering best-in-class performance at the 1B scale for instruction following, tool use, and agentic tasks. See Hugging Face Jobs on using Codex to train LFM!"
+    },
+    {
+      "title": "liquid/lfm2.5-1.2b • LM Studio",
+      "url": "https://lmstudio.ai/models/liquid/lfm2.5-1.2b",
+      "snippet": "LFM2.5 1.2B by LiquidAI LFM2.5 is a new family of hybrid models designed for on-device deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge. Supports a context length of 32k."
+    }
+  ]
+}

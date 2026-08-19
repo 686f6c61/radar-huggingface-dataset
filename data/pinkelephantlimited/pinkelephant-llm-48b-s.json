@@ -5,7 +5,7 @@
   "author": "pinkelephantlimited",
   "url": "https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b-s",
   "created_at": "2026-08-12T22:14:53.000Z",
-  "updated_at": "2026-08-16T06:02:47.000Z",
+  "updated_at": "2026-08-18T13:55:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,11 +38,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2701,
+  "downloads_30d": 2944,
   "trending_score": 0,
   "parameters": 47691290048,
   "parameters_human": "47.69B",
-  "storage_bytes": 106858668972,
+  "storage_bytes": 106858965442,
   "storage_human": "106.9 GB",
   "base_model": "pinkelephantlimited/pinkelephant-llm-48b",
   "formats": [

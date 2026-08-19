@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KrishivPatel11111/carbon-audit-24f3002540",
+  "slug": "krishivpatel11111-carbon-audit-24f3002540",
+  "author": "KrishivPatel11111",
+  "url": "https://huggingface.co/KrishivPatel11111/carbon-audit-24f3002540",
+  "created_at": "2026-08-19T08:58:57.000Z",
+  "updated_at": "2026-08-19T09:02:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KrishivPatel11111 (Patel Krishiv Anilkumar) - Hugging Face",
+      "url": "https://huggingface.co/KrishivPatel11111/models",
+      "snippet": "User profile of Patel Krishiv Anilkumar on Hugging Face"
+    },
+    {
+      "title": "GitHub - AnandhakrishnanJayan/ggcil-platform: AI powered carbon audit ...",
+      "url": "https://github.com/AnandhakrishnanJayan/ggcil-platform",
+      "snippet": "Green Gold Carbon Intelligence Ltd - Sustainability Intelligence Platform. This platform is designed to help organizations measure, analyze, and reduce carbon emissions through AI-powered insights."
+    },
+    {
+      "title": "GitHub - AnandhakrishnanJayan/ggcil-platform: AI powered carbon audit ...",
+      "url": "https://github.com/AnandhakrishnanJayan/ggcil-platform/tree/main/",
+      "snippet": "GGCIL Platform Green Gold Carbon Intelligence Ltd - Sustainability Intelligence Platform. This platform is designed to help organizations measure, analyze, and reduce carbon emissions through AI-powered insights."
+    },
+    {
+      "title": "24f1002802/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/24f1002802/green-ai-carbon-audit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Carbon Audit - carbonaudit.io",
+      "url": "https://carbonaudit.io/",
+      "snippet": "Streamlined Energy and Carbon Reporting requires large UK organisations to disclose annual Scope 1, 2 emissions, energy consumption, and year-on-year performance in directors&#x27; reports."
+    }
+  ]
+}

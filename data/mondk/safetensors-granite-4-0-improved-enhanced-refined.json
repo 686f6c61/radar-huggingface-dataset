@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "mondk/Safetensors.granite-4.0-Improved-Enhanced-Refined",
+  "slug": "mondk-safetensors-granite-4-0-improved-enhanced-refined",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/Safetensors.granite-4.0-Improved-Enhanced-Refined",
+  "created_at": "2026-08-19T08:49:46.000Z",
+  "updated_at": "2026-08-19T09:05:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "granitemoehybrid",
+    "granite",
+    "unsloth",
+    "thought",
+    "improved",
+    "enhanced",
+    "refined",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "vi",
+    "dataset:mondk/for-train-granite-4.0",
+    "base_model:unsloth/granite-4.0-1b-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/granite-4.0-1b-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1631750144,
+  "parameters_human": "1.63B",
+  "storage_bytes": 3263538464,
+  "storage_human": "3.3 GB",
+  "base_model": "unsloth/granite-4.0-1b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-4.0-350m · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.0-350m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "model.safetensors · unsloth/granite-4.0-h-350m at main",
+      "url": "https://huggingface.co/unsloth/granite-4.0-h-350m/blob/main/model.safetensors",
+      "snippet": "like 2 Follow Unsloth AI 27.3k Text Generation Transformers Safetensors granitemoehybrid language unsloth granite-4.0 conversational arxiv:0000.00000 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.0-language-models",
+      "url": "https://github.com/ibm-granite/granite-4.0-language-models",
+      "snippet": "Granite 4.0 language models are lightweight, state-of-the-art open foundation models that natively support multilingual capabilities, a wide range of coding tasks—including fill-in-the-middle (FIM) code completion—retrieval-augmented generation (RAG), tool usage, and structured JSON output. Our models are developed using a combination of advanced techniques such as structured chat ..."
+    },
+    {
+      "title": "Granite 4.0 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite",
+      "snippet": "Granite 4.0 language models with a hybrid Mamba-2/transformer architecture and Mixture-of-Experts, delivering 70% lower memory use and 2× faster inference."
+    }
+  ]
+}

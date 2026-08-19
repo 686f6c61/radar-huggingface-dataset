@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lucid-dl/yolo-v3",
+  "slug": "lucid-dl-yolo-v3",
+  "author": "lucid-dl",
+  "url": "https://huggingface.co/lucid-dl/yolo-v3",
+  "created_at": "2026-08-19T10:15:23.000Z",
+  "updated_at": "2026-08-19T10:15:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "lucid",
+  "languages": [],
+  "tags": [
+    "lucid",
+    "safetensors",
+    "object-detection",
+    "yolo",
+    "dataset:coco",
+    "arxiv:1804.02767",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 248057380,
+  "storage_human": "248 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO",
+      "metric": null,
+      "value": 55.3
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - ultralytics/yolov3: PyTorch implementation of YOLOv3, YOLOv3 ...",
+      "url": "https://github.com/ultralytics/yolov3",
+      "snippet": "🧩 Integrations Ultralytics integrates with leading AI platforms to extend dataset labeling, training, visualization, and model management. Explore how partners such as Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO can streamline your workflow at Ultralytics Integrations."
+    },
+    {
+      "title": "YOLOv3, and YOLOv3u | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolov3",
+      "snippet": "YOLOv3-Ultralytics is Ultralytics&#x27; adaptation of YOLOv3 that adds support for more pretrained models and facilitates easier model customization. YOLOv3u is an upgraded variant of YOLOv3-Ultralytics, integrating the anchor-free, objectness-free split head from YOLOv8, improving detection robustness and accuracy for various object sizes."
+    },
+    {
+      "title": "yolov3 | YOLOv3 in PyTorch > ONNX > CoreML > TFLite",
+      "url": "https://ultralytics.github.io/yolov3/",
+      "snippet": "Experience seamless AI with Ultralytics HUB ⭐, the all-in-one solution for data visualization, YOLO 🚀 model training and deployment, without any coding. Transform images into actionable insights and bring your AI visions to life with ease using our cutting-edge platform and user-friendly Ultralytics App. Start your journey for Free now!"
+    },
+    {
+      "title": "Releases · ultralytics/yolov3 - GitHub",
+      "url": "https://github.com/ultralytics/yolov3/releases",
+      "snippet": "PyTorch implementation of YOLOv3, YOLOv3-SPP, and YOLOv3-tiny for real-time object detection with training, validation, inference, and multi-format export. - ultralytics/yolov3"
+    },
+    {
+      "title": "amd/yolov3 · Hugging Face",
+      "url": "https://huggingface.co/amd/yolov3",
+      "snippet": "Model description YOLOv3 🚀 is the world&#x27;s most loved vision AI, representing Ultralytics open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yeeteo/act_so101_test",
+  "slug": "yeeteo-act_so101_test",
+  "author": "yeeteo",
+  "url": "https://huggingface.co/yeeteo/act_so101_test",
+  "created_at": "2026-08-19T07:49:05.000Z",
+  "updated_at": "2026-08-19T07:50:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:yeeteo/record-test_20260819_190450",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jian001/act_so101_test_model · Hugging Face",
+      "url": "https://huggingface.co/jian001/act_so101_test_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "L7-Robotics/act_so101_test_model · Hugging Face",
+      "url": "https://huggingface.co/L7-Robotics/act_so101_test_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Embodied-Intelligence-Learning/so101-act at main - GitHub",
+      "url": "https://github.com/zizhengwang2026/Embodied-Intelligence-Learning/tree/main/so101-act",
+      "snippet": "My from-zero Embodied Intelligence roadmap: a day-by-day plan covering imitation learning, reinforcement learning, VLA, and world models — practice-first, simulation-first, learned week by week. - ..."
+    },
+    {
+      "title": "How It Works: The AI Behind the Robot - GitHub",
+      "url": "https://github.com/fanaustinca/so101ai",
+      "snippet": "Guide to training Lerobot Arm SO -101 (ACT model). Contribute to fanaustinca/so101ai development by creating an account on GitHub."
+    },
+    {
+      "title": "README.md · ymatari/act_so101_test at main",
+      "url": "https://d6108366.hf-mirror.com/ymatari/act_so101_test/blob/main/README.md?code=true",
+      "snippet": "Instructions to use ymatari/act_so101_test with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use ymatari/act_so101_test with LeRobot: Notebooks Google Colab Kaggle main act_so101_test /README.md ymatari Upload policy weights, train config and readme 8cd9b32 verifiedabout ..."
+    }
+  ]
+}

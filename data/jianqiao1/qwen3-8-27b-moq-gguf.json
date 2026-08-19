@@ -5,7 +5,7 @@
   "author": "Jianqiao1",
   "url": "https://huggingface.co/Jianqiao1/Qwen3.8-27b-MoQ-GGUF",
   "created_at": "2026-08-17T09:17:11.000Z",
-  "updated_at": "2026-08-17T11:51:08.000Z",
+  "updated_at": "2026-08-17T14:25:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,13 +22,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 3244,
   "trending_score": 0,
   "parameters": 460730096,
   "parameters_human": "460.7M",
-  "storage_bytes": 36123367968,
-  "storage_human": "36.1 GB",
+  "storage_bytes": 130067218528,
+  "storage_human": "130.1 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

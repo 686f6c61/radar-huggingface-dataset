@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "minseokk7/BioPhys-LLM",
+  "slug": "minseokk7-biophys-llm",
+  "author": "minseokk7",
+  "url": "https://huggingface.co/minseokk7/BioPhys-LLM",
+  "created_at": "2026-08-17T18:06:10.000Z",
+  "updated_at": "2026-08-19T09:30:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "biophys-llm",
+    "4-state-signed-zero",
+    "neuromorphic-snn",
+    "ternary-weights",
+    "bitnet-1.58b",
+    "moe-6-brain",
+    "post-quantum-cryptography",
+    "ring-lwe",
+    "landauer-reversible",
+    "topological-data-analysis",
+    "friston-free-energy",
+    "raft-consensus",
+    "crdt-lww",
+    "disruptor-lockfree",
+    "cuckoo-filter",
+    "dpll-kalman",
+    "merkle-mountain-range",
+    "autonomous-self-learning",
+    "national-korean-dictionary",
+    "neural-lossless-compression",
+    "zstandard-ans",
+    "game-vfs-projfs",
+    "2bit-deltasigma-audio",
+    "p2p-swarm-mesh",
+    "tauri-rust-svelte",
+    "36-landmark-papers",
+    "ko",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 976,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - minseokk7/BioPhys-LLM",
+      "url": "https://github.com/minseokk7/BioPhys-LLM",
+      "snippet": "Contribute to minseokk7/BioPhys-LLM development by creating an account on GitHub."
+    },
+    {
+      "title": "minseokk7/BioPhys-Kimi-K3-2.8T · Hugging Face",
+      "url": "https://huggingface.co/minseokk7/BioPhys-Kimi-K3-2.8T",
+      "snippet": "minseokk7 / BioPhys-Kimi-K3-2.8T like 0 Text Generation Korean English Chinese biophys biophysics quantum-computing fractal-compression speculative-decoding 1bit-llm kimi-k3 deepseek-v4 gemma4 qwen2.5 ultra-efficient License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new 🌌 BioPhys-LLM: 대통합 바이오-물리학 LLM 최적화 프레임워크 (Grand Unified ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=biophysics",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: biophysics Clear all"
+    },
+    {
+      "title": "Models - Featherless.ai",
+      "url": "https://featherless.ai/models/",
+      "snippet": "Featherless - The latest LLM models, serverless and ready to use at your request."
+    },
+    {
+      "title": "Model Catalog - LM Studio",
+      "url": "https://lmstudio.ai/models",
+      "snippet": "LFM2 is a new generation of hybrid models developed by Liquid AI, specifically designed for edge AI and on-device deployment. It sets a new standard in terms of quality, speed, and memory efficiency."
+    }
+  ]
+}

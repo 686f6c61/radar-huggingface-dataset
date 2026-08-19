@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "MTalha056/code-search-net-tokenizer",
+  "slug": "mtalha056-code-search-net-tokenizer",
+  "author": "MTalha056",
+  "url": "https://huggingface.co/MTalha056/code-search-net-tokenizer",
+  "created_at": "2026-08-19T08:49:34.000Z",
+  "updated_at": "2026-08-19T08:49:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Francesco-A/code-search-net-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/Francesco-A/code-search-net-tokenizer",
+      "snippet": "The Code Search Net Tokenizer is a custom tokenizer specifically trained for tokenizing Python code snippets. It has been trained on a large corpus of Python code snippets from the CodeSearchNet dataset using the GPT-2 model as a starting point."
+    },
+    {
+      "title": "Francesco-A/code-search-net-tokenizer - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/259468",
+      "snippet": "The Code Search Net Tokenizer is a custom tokenizer specifically trained for tokenizing Python code snippets. It has been trained on a large corpus of Python code snippets from the CodeSearchNet dataset using the GPT-2 model as a starting point."
+    },
+    {
+      "title": "ExampleCode/code-search-net-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/ExampleCode/code-search-net-tokenizer",
+      "snippet": "ExampleCode / code-search-net-tokenizer like 0 Model card FilesFiles and versions Community Use with library"
+    },
+    {
+      "title": "code-search-net-tokenizer huggingface.co api & mabrouk code-search-net ...",
+      "url": "https://www.toolify.ai/ai-model/mabrouk-code-search-net-tokenizer",
+      "snippet": "code-search-net-tokenizer is an open source model from GitHub that offers a free installation service, and any user can find code-search-net-tokenizer on GitHub to install."
+    },
+    {
+      "title": "huggingface-course/code-search-net-tokenizer - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/huggingface-course-code-search-net-tokenizer",
+      "snippet": "code-search-net-tokenizer install code-search-net-tokenizer is an open source model from GitHub that offers a free installation service, and any user can find code-search-net-tokenizer on GitHub to install."
+    }
+  ]
+}

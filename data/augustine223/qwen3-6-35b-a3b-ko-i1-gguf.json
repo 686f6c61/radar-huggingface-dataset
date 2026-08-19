@@ -5,7 +5,7 @@
   "author": "augustine223",
   "url": "https://huggingface.co/augustine223/Qwen3.6-35B-A3B-KO-i1-GGUF",
   "created_at": "2026-08-17T09:01:15.000Z",
-  "updated_at": "2026-08-17T10:46:39.000Z",
+  "updated_at": "2026-08-19T02:49:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 3162,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 61415279872,
-  "storage_human": "61.4 GB",
+  "storage_bytes": 175487155680,
+  "storage_human": "175.5 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"

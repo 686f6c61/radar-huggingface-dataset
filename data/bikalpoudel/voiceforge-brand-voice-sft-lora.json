@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bikalpoudel/voiceforge-brand-voice-sft-lora",
+  "slug": "bikalpoudel-voiceforge-brand-voice-sft-lora",
+  "author": "bikalpoudel",
+  "url": "https://huggingface.co/bikalpoudel/voiceforge-brand-voice-sft-lora",
+  "created_at": "2026-08-19T03:41:04.000Z",
+  "updated_at": "2026-08-19T03:52:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 7655986688,
+  "parameters_human": "7.66B",
+  "storage_bytes": 7900623265,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bikalpoudel/voiceforge-brand-voice-sft · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/bikalpoudel/voiceforge-brand-voice-sft",
+      "snippet": "Datasets: bikalpoudel / voiceforge-brand-voice-sft like 0 Modalities: Text Formats: parquet Size: < 1K Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·243 rows default (243 rows) Split (3) train·194 rows train (194 rows) validation (24 rows) test ..."
+    },
+    {
+      "title": "VoiceForge AI - Bringing Voices to Life ️ - Hugging Face",
+      "url": "https://huggingface.co/spaces/eubottura/voiceforge-ai-bringing-voices-to-life",
+      "snippet": "This platform allows users to generate natural-sounding AI voices for voiceovers, audiobooks, and more. Users can input text to convert it into speech or clone existing voices. The result is high-q..."
+    },
+    {
+      "title": "GitHub - itzzavdhesh/VoiceForge: Browser-based assistive communication ...",
+      "url": "https://github.com/itzzavdhesh/VoiceForge",
+      "snippet": "VoiceForge is an open-source, browser-based assistive communication platform built to make video conversations more accessible for everyone. It combines voice cloning, multilingual text-to-speech, and a synchronized lip-synced avatar to help users communicate naturally during online meetings."
+    },
+    {
+      "title": "GitHub - oelbourki/VoiceForge: ️ VoiceForge is an open-source, on ...",
+      "url": "https://github.com/oelbourki/VoiceForge",
+      "snippet": "🎙️ VoiceForge is an open-source, on-device voice cloning and text-to-speech (TTS) application built with NeuTTS Air, Python, and Gradio. It supports instant speaker cloning from a few seconds of audio, high-quality speech synthesis, GPU acceleration, and a modern web UI, ideal for AI engineers, speech researchers, and generative AI projects. - oelbourki/VoiceForge"
+    },
+    {
+      "title": "Voice Forge! Easy Digital Voice Creation",
+      "url": "https://www.voiceforge.com/",
+      "snippet": "Voice Forge is an easy and fun way to explore synthesized voice. With a simple text to speech UI and over 40 custom, unique voices, Voice Forge can make your music, game or videos stand out from the crowd."
+    }
+  ]
+}

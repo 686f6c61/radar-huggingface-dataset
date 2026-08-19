@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/Qwen3.8-27B-fp16-ve-fp16-int4-k_quant-gs128-text-dml-onnx",
   "created_at": "2026-08-17T11:24:23.000Z",
-  "updated_at": "2026-08-17T11:48:31.000Z",
+  "updated_at": "2026-08-18T11:04:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,11 +34,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 72,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 16874930848,
+  "storage_bytes": 16876344688,
   "storage_human": "16.9 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

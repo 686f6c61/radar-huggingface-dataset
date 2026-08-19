@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "qtum/Qwen3-30B-A3B-GPTQ",
+  "slug": "qtum-qwen3-30b-a3b-gptq",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/Qwen3-30B-A3B-GPTQ",
+  "created_at": "2026-08-19T07:04:53.000Z",
+  "updated_at": "2026-08-19T07:06:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "compressed-tensors",
+    "GPTQ",
+    "vllm",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-30B-A3B",
+    "base_model:quantized:Qwen/Qwen3-30B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 16704589309,
+  "storage_human": "16.7 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-30B-A3B-GPTQ-Int4 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-GPTQ-Int4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nexgen-adm/qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/nexgen-adm/qwen3",
+      "snippet": "We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 include: Dense and Mixture-of-Experts (MoE) models of various sizes, available in 0.6B, 1.7B, 4B, 8B, 14B, 32B and 30B-A3B, 235B-A22B."
+    },
+    {
+      "title": "qwen3:30b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:30b-a3b",
+      "snippet": "Additionally, the small MoE model, Qwen3-30B-A3B, outcompetes QwQ-32B with 10 times of activated parameters, and even a tiny model like Qwen3-4B can rival the performance of Qwen2.5-72B-Instruct."
+    },
+    {
+      "title": "Qwen3-30B-A3B-GPTQ-Int4量化 - Models",
+      "url": "https://www.modelscope.cn/models/JunHowie/Qwen3-30B-A3B-GPTQ-Int4/summary",
+      "snippet": "License: apache-2.0 qwen3_moe Qwen3, GPTQ, Int4 and 2 more @ JunHowie 25,428 downloads 16.94GB"
+    }
+  ]
+}

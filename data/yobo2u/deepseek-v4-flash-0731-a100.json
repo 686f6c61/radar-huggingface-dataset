@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "yobo2u/DeepSeek-V4-Flash-0731-A100",
+  "slug": "yobo2u-deepseek-v4-flash-0731-a100",
+  "author": "yobo2u",
+  "url": "https://huggingface.co/yobo2u/DeepSeek-V4-Flash-0731-A100",
+  "created_at": "2026-08-18T16:23:17.000Z",
+  "updated_at": "2026-08-19T09:13:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "deepseek",
+    "deepseek-v4",
+    "text-generation",
+    "a100",
+    "a800",
+    "sm80",
+    "sglang",
+    "dspark",
+    "mxfp4",
+    "bfloat16",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173190178824,
+  "storage_human": "173.2 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE ..."
+    },
+    {
+      "title": "yobo2u/DeepSeek-V4-Flash-0731-BF16-MXFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/yobo2u/DeepSeek-V4-Flash-0731-BF16-MXFP4/tree/main",
+      "snippet": "like 0 Model card FilesFiles and versions xet Community Copy to bucket new main DeepSeek-V4-Flash-0731-BF16-MXFP4 169 GB Ctrl+K Ctrl+K 1 contributor History:4 commits yobo2u Add files using upload-large-folder tool dbd5d69 verifiedabout 2 hours ago encodingAdd files using upload-large-folder toolabout 2 hours ago inferenceAdd files using upload-large-folder toolabout 2 hours ago .gitattributes ..."
+    },
+    {
+      "title": "GitHub - yobo2u/DeepSeek-V4-Flash-0731-A100: DeepSeek V4 Flash on A800 ...",
+      "url": "https://github.com/yobo2u/DeepSeek-V4-Flash-0731-A100",
+      "snippet": "DeepSeek V4 Flash on A800/A100 (SM80) deployment with SGLang 0.5.16 + monkeypatch - yobo2u/DeepSeek-V4-Flash-0731-A100"
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731: Specs, Pricing, Benchmarks and API Update ...",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/deepseek-v4-flash",
+      "snippet": "DeepSeek-V4-Flash currently shows benchmark results led by LiveCodeBench (4 / 126, score 91.60), MMLU Pro (17 / 133, score 86.40), CodeForces (3 / 20, score 3052). This page also consolidates core specs, context limits, and API pricing so you can evaluate the model from benchmark results and deployment constraints together."
+    }
+  ]
+}

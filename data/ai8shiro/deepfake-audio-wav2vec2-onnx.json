@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "ai8shiro/deepfake-audio-wav2vec2-ONNX",
+  "slug": "ai8shiro-deepfake-audio-wav2vec2-onnx",
+  "author": "ai8shiro",
+  "url": "https://huggingface.co/ai8shiro/deepfake-audio-wav2vec2-ONNX",
+  "created_at": "2026-08-19T04:19:57.000Z",
+  "updated_at": "2026-08-19T04:20:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "audio-classification",
+    "deepfake-detection",
+    "spoof-detection",
+    "pytorch",
+    "transformers",
+    "en",
+    "base_model:Vansh180/deepfake-audio-wav2vec2",
+    "base_model:quantized:Vansh180/deepfake-audio-wav2vec2",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 724269068,
+  "storage_human": "724 MB",
+  "base_model": "Vansh180/deepfake-audio-wav2vec2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Deepfake Audio Detection",
+      "dataset": "Balanced ASVspoof 2021 PA",
+      "metric": "Accuracy",
+      "value": 0.928
+    },
+    {
+      "task": "Deepfake Audio Detection",
+      "dataset": "Balanced ASVspoof 2021 PA",
+      "metric": "Precision",
+      "value": 0.897
+    },
+    {
+      "task": "Deepfake Audio Detection",
+      "dataset": "Balanced ASVspoof 2021 PA",
+      "metric": "Recall",
+      "value": 0.88
+    },
+    {
+      "task": "Deepfake Audio Detection",
+      "dataset": "Balanced ASVspoof 2021 PA",
+      "metric": "F1 Score",
+      "value": 0.924
+    }
+  ],
+  "sources": [
+    {
+      "title": "README.md · Sara1708/deepfake-audio-wav2vec2 at main",
+      "url": "https://huggingface.co/Sara1708/deepfake-audio-wav2vec2/blob/main/README.md",
+      "snippet": "ASVspoof2019 English deepfake-detection audio-deepfake anti-spoofing wav2vec2 asvspoof License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main deepfake-audio-wav2vec2 /README.md Sara1708 Add model card with full training and evaluation details 6c43629 verified3 months ago preview code | Raw Download with hf ..."
+    },
+    {
+      "title": "Vansh180/deepfake-audio-wav2vec2 · Hugging Face",
+      "url": "https://huggingface.co/Vansh180/deepfake-audio-wav2vec2",
+      "snippet": "The model is built on top of facebook/wav2vec2-base, a self-supervised speech representation model, and adapted for binary deepfake audio detection. It learns subtle acoustic artifacts and synthetic speech patterns that differentiate genuine human recordings from AI-generated or manipulated audio samples."
+    },
+    {
+      "title": "Fine-Tuning Wav2Vec2 for Real-Time Deepfake Audio Detection",
+      "url": "https://github.com/garystafford/deepfake-voice-detection-public",
+      "snippet": "This project demonstrates fine-tuning and deploying a Wav2Vec2 model for real-time deepfake audio detection. The model classifies audio samples as either real or AI-generated (fake) speech with high accuracy. You can run inference locally, in Google Colab, or deploy to AWS SageMaker for production ..."
+    },
+    {
+      "title": "deepfake-audio-detection/README.md at main · neriasuissa ... - GitHub",
+      "url": "https://github.com/neriasuissa/deepfake-audio-detection/blob/main/README.md",
+      "snippet": "Deepfake Audio Detection Real-time deepfake audio detection system using a fine-tuned Wav2Vec2 model. Detects AI-generated voice cloning, synthetic speech, and audio deepfakes."
+    },
+    {
+      "title": "[2507.01750] Generalizable Detection of Audio Deepfakes",
+      "url": "https://arxiv.org/abs/2507.01750",
+      "snippet": "In this paper, we present our comprehensive study aimed at enhancing the generalization capabilities of audio deepfake detection models. We investigate the performance of various pre-trained backbones, including Wav2Vec2, WavLM, and Whisper, across a diverse set of datasets, including those from the ASVspoof challenges and additional sources. Our experiments focus on the effects of different ..."
+    }
+  ]
+}

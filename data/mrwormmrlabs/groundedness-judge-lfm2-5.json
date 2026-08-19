@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MrWoRmMrLabs/groundedness-judge-lfm2.5",
+  "slug": "mrwormmrlabs-groundedness-judge-lfm2-5",
+  "author": "MrWoRmMrLabs",
+  "url": "https://huggingface.co/MrWoRmMrLabs/groundedness-judge-lfm2.5",
+  "created_at": "2026-08-19T04:48:32.000Z",
+  "updated_at": "2026-08-19T04:49:32.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "groundedness",
+    "hallucination-detection",
+    "llm-as-judge",
+    "lora",
+    "lfm2",
+    "on-device",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:adapter:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115795134,
+  "storage_human": "116 MB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Liquid4All/cookbook: Examples, end-2-end tutorials and apps ...",
+      "url": "https://github.com/Liquid4All/cookbook",
+      "snippet": "Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models (LFM) and the LEAP SDK - Liquid4All/cookbook"
+    },
+    {
+      "title": "LFM2.5-VL-3B: A Better and Faster Vision-Language Model for the Edge",
+      "url": "https://www.liquid.ai/blog/lfm2-5-vl-3b",
+      "snippet": "LFM2.5-VL-3B is Liquid AI&#x27;s most capable vision-language model, with grounding, screen understanding, and function calling, fast enough to run on-device."
+    },
+    {
+      "title": "LFM2.5-8B-A1B: An Even Better On-Device Mixture of Experts",
+      "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+      "snippet": "Explore Liquid AI&#x27;s LFM2.5-8B-A1B, an on-device Mixture of Experts model with 128K context, fast tool calling, and strong AI benchmarks."
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "LiquidAI/LFM2.5-2.6B Text Generation • 3B • Updated 11 days ago • 154k • 657 LiquidAI/LFM2.5-230M Text Generation • 0.2B • Updated 14 days ago • 55.7k • 274"
+    },
+    {
+      "title": "GitHub - gnanadeepgudapati/AI-Evaluation-Dashboard: An LLM-as-judge ...",
+      "url": "https://github.com/gnanadeepgudapati/AI-Evaluation-Dashboard",
+      "snippet": "An LLM-as-judge evaluation pipeline and analytics dashboard that scores AI agent responses on groundedness, relevance, safety, and completeness. Built with Python, FastAPI, and Groq API."
+    }
+  ]
+}

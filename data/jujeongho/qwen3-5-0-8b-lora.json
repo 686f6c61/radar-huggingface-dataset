@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jujeongho/Qwen3.5-0.8B-LoRA",
+  "slug": "jujeongho-qwen3-5-0-8b-lora",
+  "author": "jujeongho",
+  "url": "https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA",
+  "created_at": "2026-08-19T07:28:18.000Z",
+  "updated_at": "2026-08-19T07:29:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019381,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-0.8B-LoRA-Welding-Defect-Detection - Hugging Face",
+      "url": "https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA-Welding-Defect-Detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-0.8B-LoRA-Welding-Defect-Detection - friendli.ai",
+      "url": "https://friendli.ai/models/jujeongho/Qwen3.5-0.8B-LoRA-Welding-Defect-Detection",
+      "snippet": "Deploy Qwen3.5-.8B-LoRA-Welding-Defect-Detection with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B",
+      "snippet": "Qwen3.5-0.8B is the smallest member of the Qwen3.5 family — same hybrid gated delta networks architecture and 262K context, at a size suited to edge devices or as a draft model for speculative decoding with larger Qwen3.5 checkpoints."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5 0.8B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-0-8b/",
+      "snippet": "Qwen3.5 0.8B is the smallest vision-language model in the Qwen3.5 lineup. It is designed for lightweight local multimodal inference, fast iteration, and efficient Jetson deployment."
+    }
+  ]
+}

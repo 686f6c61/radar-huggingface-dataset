@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/campplus.AXERA",
+  "slug": "axera-tech-campplus-axera",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/campplus.AXERA",
+  "created_at": "2026-08-19T09:26:28.000Z",
+  "updated_at": "2026-08-19T09:41:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "axera",
+  "languages": [],
+  "tags": [
+    "axera",
+    "speaker-embedding",
+    "speaker-verification",
+    "speaker-diarization",
+    "campplus",
+    "speech",
+    "audio-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11311756,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXERA-TECH (AXERA) - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/models",
+      "snippet": "Edge AI Compute, CNN, Visual Transformer, LLM, VLM"
+    },
+    {
+      "title": "AXERA - GitHub",
+      "url": "https://github.com/AXERA-TECH",
+      "snippet": "zipformer.axera Public Python 0 1 0 0 Updated yesterday ax-llm Public Explore LLM model deployment based on AXera&#x27;s AI chips, It provides OpenAI‑compatible APIs and supports AX620E, AX650 and AX637 series chips."
+    },
+    {
+      "title": "GitHub - AXERA-TECH/ax-llm: Explore LLM model deployment based on AXera ...",
+      "url": "https://github.com/AXERA-TECH/ax-llm",
+      "snippet": "Explore LLM model deployment based on AXera&#x27;s AI chips, It provides OpenAI‑compatible APIs and supports AX620E, AX650 and AX637 series chips. - AXERA-TECH/ax-llm"
+    },
+    {
+      "title": "爱芯元智半导体股份有限公司 - axera-tech.com",
+      "url": "https://axera-tech.com/en",
+      "snippet": "Axera Semiconductor Co., Ltd. (or Axera 0600.HK) is a global leader in AI inference SoC solutions. We specialize in delivering high-performance perception and computing platforms for on-device computing, edge AI inference, and smart vehicles."
+    },
+    {
+      "title": "Package-axera huggingface.co api & AXERA-TECH Package-axera github AI ...",
+      "url": "https://www.toolify.ai/ai-model/axera-tech-package-axera",
+      "snippet": "Package-axera is an open source model from GitHub that offers a free installation service, and any user can find Package-axera on GitHub to install. At the same time, huggingface.co provides the effect of Package-axera install, users can directly use Package-axera installed effect in huggingface.co for debugging and trial."
+    }
+  ]
+}

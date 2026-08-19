@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ldxxx/ODEWorld-Goal-Predictor-LIBERO",
+  "slug": "ldxxx-odeworld-goal-predictor-libero",
+  "author": "ldxxx",
+  "url": "https://huggingface.co/ldxxx/ODEWorld-Goal-Predictor-LIBERO",
+  "created_at": "2026-08-02T10:37:17.000Z",
+  "updated_at": "2026-08-19T09:31:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "odeworld",
+  "languages": [],
+  "tags": [
+    "odeworld",
+    "safetensors",
+    "dinov2",
+    "goal-prediction",
+    "language",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "robotics",
+    "image-to-video",
+    "arxiv:2607.27924",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 978238471,
+  "parameters_human": "978.2M",
+  "storage_bytes": 3913077316,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ldxxx/ODEWorld-Goal-Predictor-LIBERO · Hugging Face",
+      "url": "https://huggingface.co/ldxxx/ODEWorld-Goal-Predictor-LIBERO",
+      "snippet": "Language-conditioned goal predictor trained on LIBERO. This checkpoint includes the goal predictor and its DINO image and text encoders. For installation, loading, and inference instructions, see the ODEWorld GitHub repository."
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://arxiv.org/html/2607.27924v3",
+      "snippet": "These architectural choices empower ODEWorld to achieve high-fidelity image reconstruction with an extremely compact model, even across extended temporal horizons. Moreover, its continuous nature also enables arbitrary temporal resolution and even backward prediction-capabilities fundamentally absent in most discrete-time predictive models."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=goal-prediction",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: goal-prediction Clear all"
+    },
+    {
+      "title": "The Official Implementation of \"ODEWorld: A Continuous ... - GitHub",
+      "url": "https://github.com/Dstate/ODEWorld/tree/main",
+      "snippet": "The Official Implementation of \"ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow\" - Dstate/ODEWorld"
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://dstate.github.io/odeworld_website/",
+      "snippet": "Evaluation of Quality and Efficiency. ODEWorld consistently outperforms baselines in both pixel-level and perceptual metrics across short- and long-term horizons, while achieving higher inference speed and a smaller model size."
+    }
+  ]
+}

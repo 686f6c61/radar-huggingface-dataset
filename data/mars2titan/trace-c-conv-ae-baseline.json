@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mars2titan/trace-c-conv-ae-baseline",
+  "slug": "mars2titan-trace-c-conv-ae-baseline",
+  "author": "mars2titan",
+  "url": "https://huggingface.co/mars2titan/trace-c-conv-ae-baseline",
+  "created_at": "2026-08-19T11:05:33.000Z",
+  "updated_at": "2026-08-19T11:06:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tensorboard",
+    "anomaly-detection",
+    "time-series",
+    "autoencoder",
+    "baseline",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3513894,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "a - a mars2titan Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mars2titan/a",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from mars2titan"
+    },
+    {
+      "title": "mars2titan (mars titan) - Hugging Face",
+      "url": "https://huggingface.co/mars2titan/spaces",
+      "snippet": "User profile of mars titan on Hugging Face"
+    },
+    {
+      "title": "arXiv:2310.06762v1 [cs.CL] 10 Oct 2023",
+      "url": "https://arxiv.org/pdf/2310.06762",
+      "snippet": "Figure 1: An overview of TRACE benchmark. TRACE consists of two main components: 1) A selection of eight datasets constituting a tailored set of tasks for continual learning, covering challenges in domain-specific tasks, multilingual capabilities, code generation, and mathematical reasoning. 2) A post-training evaluation of LLM capabilities. In addition to traditional continual learning ..."
+    },
+    {
+      "title": "GitHub - BeyonderXX/TRACE: TRACE: A Comprehensive Benchmark for ...",
+      "url": "https://github.com/BeyonderXX/TRACE",
+      "snippet": "Here, we assume support for a decoder-only model with left-padding for efficient batch processing. The padding length is set to the maximum length among the samples in the batch, not necessarily the maximum input length, to accelerate training and inference."
+    },
+    {
+      "title": "Trace - microsoft.github.io",
+      "url": "https://microsoft.github.io/Trace/?trk=public_post_comment-text",
+      "snippet": "Trace in 5 Minutes Trace is an open-source generative optimization framework for end-to-end training AI agents with general feedback (like scores, natural language, errors, etc.)."
+    }
+  ]
+}

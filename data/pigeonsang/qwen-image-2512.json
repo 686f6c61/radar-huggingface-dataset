@@ -26,11 +26,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 20430401088,
   "parameters_human": "20.43B",
-  "storage_bytes": 57699806247,
+  "storage_bytes": 57699249390,
   "storage_human": "57.7 GB",
   "base_model": null,
   "formats": [

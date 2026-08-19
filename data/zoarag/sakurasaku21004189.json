@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zoarag/sakurasaku21004189",
+  "slug": "zoarag-sakurasaku21004189",
+  "author": "zoarag",
+  "url": "https://huggingface.co/zoarag/sakurasaku21004189",
+  "created_at": "2026-08-07T01:44:31.000Z",
+  "updated_at": "2026-08-19T05:10:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 287481840,
+  "storage_human": "287 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zoarag/OtakuStorm_Ai · Hugging Face",
+      "url": "https://huggingface.co/zoarag/OtakuStorm_Ai",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content."
+    },
+    {
+      "title": "zoarag (zoarag) - Hugging Face",
+      "url": "https://huggingface.co/zoarag/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 26 days ago ... updated a model 26 days ago"
+    },
+    {
+      "title": "sakurasaku21004189 Creator Profile | Civitai",
+      "url": "https://civitai.com/user/sakurasaku21004189",
+      "snippet": "Models Uploaded: 0, Followers: 32, Total Likes Received: 159, Total Downloads Received: 1.2k."
+    },
+    {
+      "title": "kanaeno - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/2729378?modelVersionId=3068223",
+      "snippet": "Download kanaeno - LORA for Anima by sakurasaku21004189. Free AI model download from CivArchive."
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    }
+  ]
+}

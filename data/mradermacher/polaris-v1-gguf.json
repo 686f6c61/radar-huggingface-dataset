@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Polaris-V1-GGUF",
+  "slug": "mradermacher-polaris-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Polaris-V1-GGUF",
+  "created_at": "2026-08-19T06:05:26.000Z",
+  "updated_at": "2026-08-19T06:05:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Polaris-1.7B-Preview-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Polaris-1.7B-Preview-GGUF",
+      "snippet": "mradermacher / Polaris-1.7B-Preview-GGUF like 0 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/Polaris-1.7B-stage-1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Polaris-1.7B-stage-1-i1-GGUF",
+      "snippet": "mradermacher / Polaris-1.7B-stage-1-i1-GGUF like 0 Transformers GGUF English imatrix conversational Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Entity | KnowYourModel",
+      "url": "https://www.knowyourmodel.ai/models/huggingface%3Amradermacher%2FPolaris-VGA-9B-Post1.0e-i1-GGUF",
+      "snippet": "View entity details and skills Home Models Huggingface%3Amradermacher%2FPolaris-VGA-9B-Post1.0e-i1-GGUF Entities huggingface/huggingface:mradermacher/Polaris-VGA-9B ..."
+    },
+    {
+      "title": "mradermacher/opus-v1-34b-i1-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-opus-v1-34b-i1-gguf",
+      "snippet": "opus-v1-34b-i1-GGUF install opus-v1-34b-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find opus-v1-34b-i1-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of opus-v1-34b-i1-GGUF install, users can directly use opus-v1-34b-i1-GGUF installed effect in huggingface.co for debugging and trial. It also supports ..."
+    }
+  ]
+}

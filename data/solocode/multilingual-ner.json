@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SoloCode/multilingual-ner",
+  "slug": "solocode-multilingual-ner",
+  "author": "SoloCode",
+  "url": "https://huggingface.co/SoloCode/multilingual-ner",
+  "created_at": "2026-08-19T04:57:11.000Z",
+  "updated_at": "2026-08-19T05:09:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277458439,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126961189,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Babelscape/wikineural-multilingual-ner · Hugging Face",
+      "url": "https://huggingface.co/Babelscape/wikineural-multilingual-ner",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mayank6255/GLiNER-MoE-MultiLingual · Hugging Face",
+      "url": "https://huggingface.co/Mayank6255/GLiNER-MoE-MultiLingual",
+      "snippet": "This repository provides GLiNER-MoE-MultiLingual, a zero-shot Named Entity Recognition (NER) model trained for one epoch using a Mixture of Experts (MOE) from NOMIC-MOE architecture. GLiNER-MoE-MultiLingual aims to handle zero shot multilingual NER tasks across various domains. Inspired from my work documented on this medium article."
+    },
+    {
+      "title": "wikineural-multilingual-ner: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/wikineural-multilingual-ner-babelscape",
+      "snippet": "Overview wikineural-multilingual-ner is a Named Entity Recognition model fine-tuned on multilingual BERT (mBERT) for 3 epochs on the WikiNEuRal dataset, maintained by Babelscape. The model supports 9 languages simultaneously: German, English, Spanish, French, Italian, Dutch, Polish, Portuguese, and Russian, trained on all languages jointly using the transformers library. Built from the 2021 ..."
+    },
+    {
+      "title": "Universal NER: A Gold-Standard Multilingual - arXiv.org",
+      "url": "https://arxiv.org/html/2311.09122v2",
+      "snippet": "Abstract We introduce Universal NER (UNER), an open, community-driven project to develop gold-standard NER benchmarks in many languages. The overarching goal of UNER is to provide high-quality, cross-lingually consistent annotations to facilitate and standardize multilingual NER research."
+    },
+    {
+      "title": "What Matters When Building Universal Multilingual Named Entity ...",
+      "url": "https://arxiv.org/abs/2601.06347",
+      "snippet": "Recent progress in universal multilingual named entity recognition (NER) has been driven by advances in multilingual transformer models and task-specific architectures, loss functions, and training datasets. Despite substantial prior work, we find that many critical design decisions for such models are made without systematic justification, with architectural components, training objectives ..."
+    }
+  ]
+}

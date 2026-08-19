@@ -5,7 +5,7 @@
   "author": "ayjays132",
   "url": "https://huggingface.co/ayjays132/Phillnet-Mini-Omni-Max",
   "created_at": "2026-08-12T11:46:13.000Z",
-  "updated_at": "2026-08-19T00:38:02.000Z",
+  "updated_at": "2026-08-19T09:22:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -43,11 +43,11 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 432,
+  "downloads_30d": 640,
   "trending_score": 0,
   "parameters": 881827584,
   "parameters_human": "881.8M",
-  "storage_bytes": 12156128571,
+  "storage_bytes": 12164887308,
   "storage_human": "12.2 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [

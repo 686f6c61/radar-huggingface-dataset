@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "joeygambino/joyai-echo-ltx25-echoVid-dev",
+  "slug": "joeygambino-joyai-echo-ltx25-echovid-dev",
+  "author": "joeygambino",
+  "url": "https://huggingface.co/joeygambino/joyai-echo-ltx25-echoVid-dev",
+  "created_at": "2026-08-19T00:08:53.000Z",
+  "updated_at": "2026-08-19T07:57:39.000Z",
+  "license": "ltx-2.x-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "merge",
+    "dev",
+    "comfyui",
+    "ltx-2",
+    "ltx-2.5",
+    "joyai-echo",
+    "video-generation",
+    "text-to-video",
+    "audio-video",
+    "lip-sync",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:merge:Lightricks/LTX-2.5",
+    "base_model:jdopensource/JoyAI-Echo",
+    "base_model:merge:jdopensource/JoyAI-Echo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170011110960,
+  "storage_human": "170.0 GB",
+  "base_model": "Lightricks/LTX-2.5, jdopensource/JoyAI-Echo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joeygambino (Joey) - Hugging Face",
+      "url": "https://huggingface.co/joeygambino/models",
+      "snippet": "joeygambino/joyai-echo-ltx23-echoVid-ltxAud-surgical Text-to-Video •Updated 5 days ago• 5.74k • 33"
+    },
+    {
+      "title": "GitHub - jd-opensource/JoyAI-Echo: JoyAI-Echo: Pushing the Frontier of ...",
+      "url": "https://github.com/jd-opensource/JoyAI-Echo",
+      "snippet": "For the first time, JoyAI-Echo simultaneously achieves long-range cross-modal consistency, real-time inference for minute-long video, conversational interactivity, and high-resolution output — without compromise, inaugurating a new era of interactive video generation. Codes and weights will be open-sourced."
+    },
+    {
+      "title": "joyai-echo-ltx23-echoVid-ltxAud-surgical - Hugging Face",
+      "url": "https://huggingface.co/joeygambino/joyai-echo-ltx23-echoVid-ltxAud-surgical",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI JoyAI-Echo GGUF Nodes - GitHub",
+      "url": "https://github.com/RealRebelAI/ComfyUI_JoyAI_Echo_GGUF_Nodes",
+      "snippet": "ComfyUI JoyAI-Echo GGUF Nodes Run JD&#x27;s JoyAI-Echo (text → video + audio) on consumer hardware. A faithful GGUF implementation of JoyAI-Echo for ComfyUI, built so the model can run on an 8 GB GPU with 16 GB system RAM instead of the ~48 GB the full checkpoint expects. ⚠️ Work in progress / experimental. This is a heavy model on small hardware."
+    },
+    {
+      "title": "JoyAI-Echo x LTX-2.3 Multi-Shot Video - Hugging Face",
+      "url": "https://huggingface.co/spaces/joeygambino/joyai-echo-ltx23-surgical",
+      "snippet": "🎬 JoyAI-Echo × LTX-2.3 — Multi-Shot Narrated Video A surgical merge of JoyAI-Echo (cross-shot character memory) and LTX-2.3-distilled (natural voice + lip-sync) for joint audio-video generation. Write a story as one or more shots (separate shots with a line containing only ---); the paired memory bank keeps the same character&#x27;s face and voice consistent across shots. Model: joeygambino ..."
+    }
+  ]
+}

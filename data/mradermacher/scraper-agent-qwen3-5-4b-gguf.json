@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/scraper-agent-qwen3.5-4b-GGUF",
+  "slug": "mradermacher-scraper-agent-qwen3-5-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/scraper-agent-qwen3.5-4b-GGUF",
+  "created_at": "2026-08-19T06:00:18.000Z",
+  "updated_at": "2026-08-19T06:34:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "web-scraping",
+    "agent",
+    "mlx",
+    "structured-output",
+    "tool-use",
+    "en",
+    "base_model:badrm2611/scraper-agent-qwen3.5-4b",
+    "base_model:quantized:badrm2611/scraper-agent-qwen3.5-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "badrm2611/scraper-agent-qwen3.5-4b",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.5-4B-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.5-4B-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Agent: Agent framework and applications built upon ...",
+      "url": "https://github.com/QwenLM/Qwen-Agent",
+      "snippet": "Agent framework and applications built upon Qwen>=3.0, featuring Function Calling, MCP, Code Interpreter, RAG, Chrome extension, etc. - QwenLM/Qwen-Agent"
+    },
+    {
+      "title": "Qwen3.5-4B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen3.5-4B is a 4B dense multimodal model that matches Qwen3-30B on MMLU-Pro and beats GPT-5-Nano on vision benchmarks. Runs on 8GB VRAM, Apache 2.0 licensed, 262K-1M context."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

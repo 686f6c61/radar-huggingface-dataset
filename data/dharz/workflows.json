@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dharz/Workflows",
+  "slug": "dharz-workflows",
+  "author": "Dharz",
+  "url": "https://huggingface.co/Dharz/Workflows",
+  "created_at": "2026-06-18T01:21:29.000Z",
+  "updated_at": "2026-08-19T10:57:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 87,
+  "trending_score": 0,
+  "parameters": 83819683,
+  "parameters_human": "83.8M",
+  "storage_bytes": 50580214516,
+  "storage_human": "50.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dharz/Workflows · Hugging Face",
+      "url": "https://huggingface.co/Dharz/Workflows",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dharz (Lapada) - Hugging Face",
+      "url": "https://huggingface.co/Dharz",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 6 days ago"
+    },
+    {
+      "title": "Dharz/Workflows - OpenSoft India",
+      "url": "https://www.opensoftindia.com/open-source/detail?external_id=Dharz%2FWorkflows&source=huggingface",
+      "snippet": "Find free open-source tools, AI models, self-hosted software, and Indian open-source projects."
+    },
+    {
+      "title": "GitHub - DahnM20/ai-flow: Build custom AI workflows with an easy drag ...",
+      "url": "https://github.com/DahnM20/ai-flow",
+      "snippet": "AI-Flow is an open-source, user-friendly UI that lets you visually design, manage, and monitor AI-driven workflows by seamlessly connecting multiple AI model APIs (e.g., OpenAI, StabilityAI, Replicate, Claude, Deepseek)."
+    },
+    {
+      "title": "Dharz Lapada - skool.com",
+      "url": "https://www.skool.com/@dharz-lapada-6962?g=ai-tech-and-comfyui-workflows-2226",
+      "snippet": "Dharz Lapadahasn&#x27;t contributed to ICEKIUB - AI Tech and ComfyUI yet."
+    }
+  ]
+}

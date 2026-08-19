@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "powerstone829/so101_plastic_tomato_act_v4_msi_gpu",
+  "slug": "powerstone829-so101_plastic_tomato_act_v4_msi_gpu",
+  "author": "powerstone829",
+  "url": "https://huggingface.co/powerstone829/so101_plastic_tomato_act_v4_msi_gpu",
+  "created_at": "2026-08-19T08:39:10.000Z",
+  "updated_at": "2026-08-19T08:40:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:powerstone829/so101_plastic_tomato_v2_20260813_201008",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51771014,
+  "parameters_human": "51.8M",
+  "storage_bytes": 207124448,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "powerstone829/so101_plastic_tomato_act_v2_msi_gpu · Hugging Face",
+      "url": "https://huggingface.co/powerstone829/so101_plastic_tomato_act_v2_msi_gpu",
+      "snippet": "Instructions to use powerstone829/so101_plastic_tomato_act_v2_msi_gpu with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "powerstone829 (Wonseok Jeon) - Hugging Face",
+      "url": "https://huggingface.co/powerstone829",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 21 hours ago ... published a model about 21 hours ago"
+    },
+    {
+      "title": "sample-self-improving-physical-AI/models/so101/README.md at main - GitHub",
+      "url": "https://github.com/aws-samples/sample-self-improving-physical-AI/blob/main/models/so101/README.md",
+      "snippet": "Contribute to aws-samples/sample-self-improving-physical-AI development by creating an account on GitHub."
+    },
+    {
+      "title": "How It Works: The AI Behind the Robot - GitHub",
+      "url": "https://github.com/fanaustinca/so101ai",
+      "snippet": "Guide to training Lerobot Arm SO -101 (ACT model). Contribute to fanaustinca/so101ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Datasets and Models - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    }
+  ]
+}

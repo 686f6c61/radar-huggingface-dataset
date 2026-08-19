@@ -5,7 +5,7 @@
   "author": "bschooled",
   "url": "https://huggingface.co/bschooled/caeleste-speech-higgs-audio-v3-stt-nf4",
   "created_at": "2026-08-18T22:40:03.000Z",
-  "updated_at": "2026-08-18T22:40:16.000Z",
+  "updated_at": "2026-08-18T23:16:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 2675546112,
   "parameters_human": "2.68B",

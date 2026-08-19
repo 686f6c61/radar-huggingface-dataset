@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "IVPL/RAPID",
+  "slug": "ivpl-rapid",
+  "author": "IVPL",
+  "url": "https://huggingface.co/IVPL/RAPID",
+  "created_at": "2026-08-19T10:30:42.000Z",
+  "updated_at": "2026-08-19T10:56:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57216682,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intelligent vehicle pedestrian light (IVPL): A deep reinforcement ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0968090X22004041",
+      "snippet": "The first AI-based traffic signal control model that considered pedestrians was conducted by Niittymaki and Kikuchi (1998). The authors applied the fuzzy logic algorithm to control the pedestrian crossing signal for a two-way road."
+    },
+    {
+      "title": "Intelligent vehicle pedestrian light (IVPL): A deep reinforcement ...",
+      "url": "https://findanexpert.unimelb.edu.au/scholarlywork/1757997-intelligent-vehicle-pedestrian-light-(ivpl)--a-deep-reinforcement-learning-approach-for-traffic-signal-control",
+      "snippet": "This study presents a novel deep RL-based adaptive traffic signal model to control the vehicles and pedestrian flows by allocating an equitable green time to each, aiming at minimizing \"total user delays\" as opposed to \"total vehicle delays\" dominantly being used in the literature. Our proposed intelligent vehicle pedestrian light (IVP.."
+    },
+    {
+      "title": "Smart Pedestrian-Vehicle Signal Light: A Policy Gradient-Based Deep ...",
+      "url": "https://ieeexplore.ieee.org/document/11064433",
+      "snippet": "Smart Pedestrian-Vehicle Signal Light: A Policy Gradient-Based Deep Reinforcement Learning Model for Single-Intersection Traffic Signal Control Abstract: Deep reinforcement learning has been extensively researched in the field of traffic signal control due to its ability to handle dynamic environmental changes and digest large amounts of data."
+    },
+    {
+      "title": "Intelligent vehicle pedestrian light (IVPL): A deep reinforcement ...",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023TRPC..14903991Y/abstract",
+      "snippet": "A deep reinforcement learning based traffic signal model is proposed to control vehicles and pedestrians. An extended reward function is designed to capture the delays due to the road users&#x27; interactions. The baselines are adopted based on real-world traffic signal control logic, parameters, and data. The effect of pedestrian jaywalking and traffic flow interruptions are evaluated in different ..."
+    },
+    {
+      "title": "Intelligent vehicle pedestrian light (IVPL): A deep reinforcement ...",
+      "url": "https://www.semanticscholar.org/paper/Intelligent-vehicle-pedestrian-light-(IVPL):-A-deep-Yazdani-Sarvi/446ebedc6a2504c76ab1c4303bfb10f0ffe486c5",
+      "snippet": "Semantic Scholar extracted view of \"Intelligent vehicle pedestrian light (IVPL): A deep reinforcement learning approach for traffic signal control\" by M. Yazdani et al."
+    }
+  ]
+}

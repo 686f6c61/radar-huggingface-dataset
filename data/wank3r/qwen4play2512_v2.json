@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wank3r/Qwen4Play2512_v2",
+  "slug": "wank3r-qwen4play2512_v2",
+  "author": "wank3r",
+  "url": "https://huggingface.co/wank3r/Qwen4Play2512_v2",
+  "created_at": "2026-08-19T09:11:30.000Z",
+  "updated_at": "2026-08-19T09:13:45.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590058432,
+  "storage_human": "590 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen4Play_v2.safetensors · wolfer45/qwen4play-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/wolfer45/qwen4play-v2/blob/main/Qwen4Play_v2.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wolfer45/qwen4play-v2 · Hugging Face",
+      "url": "https://huggingface.co/wolfer45/qwen4play-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QWEN 4 PLAY - AIO NSFW Qwen LoRa by DR34MSC4PE - Qwen4Play2512.v2 ...",
+      "url": "https://civitai.red/models/2004155/qwen-4-play-aio-nsfw-qwen-lora-by-dr34msc4pe",
+      "snippet": "DR34ML4Y - All-In-One NSFW (WAN/LTX2) DR34ML4Y_LT3X_v3 QWEN 4 PLAY - AIO NSFW Qwen LoRa by DR34MSC4PE Qwen4Play2512.v2 FLUX 4 PLAY - AIO NSFW FLUX Klein LoRA by DR34MSC4PE Flux4Play_Klein9B_v1 C4PACITOR KR34M_v1 WAN DR34MJOB - Double/Single/Handy Blowjob v1.0_I2V_14B_LOW"
+    },
+    {
+      "title": "QWEN 4 PLAY - AIO Qwen LoRa by DR34MSC4PE - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/680da80f067b3a93b57a250fc2c5ce28",
+      "snippet": "Explore QWEN 4 PLAY - AIO Qwen LoRa by DR34MSC4PE model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "QWEN 4 PLAY - AIO NSFW Qwen LoRa by DR34MSC4PE",
+      "url": "https://civarchive.com/models/2004155?modelVersionId=3061098",
+      "snippet": "Download QWEN 4 PLAY - AIO NSFW Qwen LoRa by DR34MSC4PE - LORA for Qwen by ERA5ER. Free AI model download from CivArchive."
+    }
+  ]
+}

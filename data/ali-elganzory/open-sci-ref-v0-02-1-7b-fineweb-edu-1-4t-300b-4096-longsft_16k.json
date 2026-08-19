@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k",
+  "slug": "ali-elganzory-open-sci-ref-v0-02-1-7b-fineweb-edu-1-4t-300b-4096-longsft_16k",
+  "author": "ali-elganzory",
+  "url": "https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k",
+  "created_at": "2026-08-19T09:59:59.000Z",
+  "updated_at": "2026-08-19T10:00:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "opensci",
+    "feature-extraction",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "custom_code",
+    "base_model:open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096",
+    "base_model:finetune:open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1714377728,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3428804400,
+  "storage_human": "3.4 GB",
+  "base_model": "open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096 ...",
+      "url": "https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated",
+      "snippet": "ali-elganzory / open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated like 0 Text Generation Transformers Safetensors opensci Generated from Trainer trl dpo conversational custom_code arxiv:2305.18290 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3 ..."
+    },
+    {
+      "title": "ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096 ...",
+      "url": "https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated",
+      "snippet": "ali-elganzory / open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated like 0 Text Generation Transformers Safetensors opensci Generated from Trainer trl sft conversational custom_code Model card FilesFiles and versions xet Community Deploy Use this model Model Card for None Quick start Training procedure ..."
+    },
+    {
+      "title": "Open Sci Ref V0.02 1.7B Fineweb Edu 1.4t 300B 4096 SFT Tulu3 ...",
+      "url": "https://llm-explorer.com/model/ali-elganzory%2Fopen-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-SFT-Tulu3-decontaminated,RQYYu2gS4by6bwRx4pZJA",
+      "snippet": "Open Sci Ref V0.02 1.7B Fineweb Edu 1.4t 300B 4096 SFT Tulu3 Decontaminated is an open-source 300b LLM by ali-elganzory. VRAM 3.4GB, 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Open Sci Ref V0.02 1.7B Fineweb Edu 1.4t 300B 4096 4096 Longsft 16K by ...",
+      "url": "https://llm-explorer.com/model/ali-elganzory%2Fopen-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-4096-longsft_16k,3Ep0w9CW9f1msgMaizmQ0f",
+      "snippet": "Open Sci Ref V0.02 1.7B Fineweb Edu 1.4t 300B 4096 4096 Longsft 16K is an open-source 300b LLM by ali-elganzory. VRAM 3.4GB, 16K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Damacol/ali-elganzory-open-sci-ref-v0.02-1.7b-dclm-300b-4096 ... - GitHub",
+      "url": "https://github.com/Damacol/ali-elganzory-open-sci-ref-v0.02-1.7b-dclm-300b-4096-longsft_16k-dpo-tulu3-decontaminated",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    }
+  ]
+}

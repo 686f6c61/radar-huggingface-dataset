@@ -5,7 +5,7 @@
   "author": "stage-babylm",
   "url": "https://huggingface.co/stage-babylm/llama-128-2L",
   "created_at": "2026-08-10T16:29:51.000Z",
-  "updated_at": "2026-08-17T18:01:23.000Z",
+  "updated_at": "2026-08-17T18:18:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 795,
+  "downloads_30d": 1259,
   "trending_score": 0,
   "parameters": 649856,
   "parameters_human": "649856",
-  "storage_bytes": 480377733,
-  "storage_human": "480 MB",
+  "storage_bytes": 665321854,
+  "storage_human": "665 MB",
   "base_model": null,
   "formats": [
     "safetensors"

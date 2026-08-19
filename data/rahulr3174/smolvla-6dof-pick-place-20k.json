@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RahulR3174/smolvla-6dof-pick-place-20k",
+  "slug": "rahulr3174-smolvla-6dof-pick-place-20k",
+  "author": "RahulR3174",
+  "url": "https://huggingface.co/RahulR3174/smolvla-6dof-pick-place-20k",
+  "created_at": "2026-08-19T10:16:31.000Z",
+  "updated_at": "2026-08-19T10:18:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "robot-manipulation",
+    "imitation-learning",
+    "pick-and-place",
+    "genesis",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720056,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sa74ll/smolvla_bimanual_pick_place · Hugging Face",
+      "url": "https://huggingface.co/Sa74ll/smolvla_bimanual_pick_place",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "lerobot/docs/source/smolvla.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx",
+      "snippet": "SmolVLA is a base model, so fine-tuning on your own data is required for optimal performance in your setup. We recommend recording ~50 episodes of your task as a starting point. Follow our guide to get started: Recording a Dataset In your dataset, make sure to have enough demonstrations per each variation (e.g. the cube position on the table if it is cube pick-place task) you are introducing ..."
+    },
+    {
+      "title": "cieclr/pick_and_place_smolvla · Hugging Face",
+      "url": "https://huggingface.co/cieclr/pick_and_place_smolvla",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "SmolVLA: An Open-Source Vision-Language-Action Model for Modern Robotics",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "SmolVLA A compact, efficient, and powerful vision-language-action model for modern robotics. 🚀 Meet SmolVLA SmolVLA is a groundbreaking Vision-Language-Action (VLA) model with only 450 million parameters, developed by Hugging Face. It&#x27;s carefully designed for cost-effective deployment on consumer-grade hardware, making advanced robotics technology accessible to more developers and ..."
+    },
+    {
+      "title": "SmolVLA - LeRobot Documentation",
+      "url": "https://dctx-team.github.io/lerobot-zh/en/smolvla/",
+      "snippet": "Figure 2: Comparison of SmolVLA across task variations. From left to right: (1) pick-place cube counting, (2) pick-place cube counting, (3) pick-place cube counting under perturbations, and (4) generalization on pick-and-place of the lego block with real-world SO101. Evaluate the finetuned model and run it in real-time"
+    }
+  ]
+}

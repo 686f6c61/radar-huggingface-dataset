@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mdtareq32/Background_remove",
+  "slug": "mdtareq32-background_remove",
+  "author": "mdtareq32",
+  "url": "https://huggingface.co/mdtareq32/Background_remove",
+  "created_at": "2026-08-19T04:57:30.000Z",
+  "updated_at": "2026-08-19T07:48:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 798284672,
+  "storage_human": "798 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "briaai/RMBG-1.4 · Hugging Face",
+      "url": "https://huggingface.co/briaai/RMBG-1.4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JCTN/RMBG-1.4 · Hugging Face",
+      "url": "https://huggingface.co/JCTN/RMBG-1.4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Bria-AI/RMBG-2.0: Bria RMBG 2.0 - image background removee",
+      "url": "https://github.com/Bria-AI/RMBG-2.0",
+      "snippet": "Model Description: BRIA RMBG-2.0 is a dichotomous image segmentation model trained exclusively on a professional-grade dataset. The model output includes a single-channel 8-bit grayscale alpha matte, where each pixel value indicates the opacity level of the corresponding pixel in the original image."
+    },
+    {
+      "title": "background-removal · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/background-removal",
+      "snippet": "Background Remover lets you Remove Background from images and video using AI with a simple command line interface that is free and open source."
+    },
+    {
+      "title": "Removal.AI - Image Background Remover | Remove BG from Image for Free",
+      "url": "https://removal.ai/",
+      "snippet": "Remove backgrounds from product photos to create clean images that highlight your products. Our background remover is designed to handle large volumes of photos, showcasing your items in the cleanest, most professional way."
+    }
+  ]
+}

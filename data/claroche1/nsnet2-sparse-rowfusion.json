@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "claroche1/nsnet2-sparse-rowfusion",
+  "slug": "claroche1-nsnet2-sparse-rowfusion",
+  "author": "claroche1",
+  "url": "https://huggingface.co/claroche1/nsnet2-sparse-rowfusion",
+  "created_at": "2026-08-19T08:50:43.000Z",
+  "updated_at": "2026-08-19T09:45:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "speech-enhancement",
+    "speech-denoising",
+    "nsnet2",
+    "sparsity",
+    "semi-structured-sparsity",
+    "2:4-sparsity",
+    "pruning",
+    "sparse-matmul",
+    "dataset:JacobLinCool/VoiceBank-DEMAND-16k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186464063,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "claroche1/sparse-nsnet2-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/claroche1/sparse-nsnet2-checkpoints",
+      "snippet": "sparse-nsnet2 — checkpoints Best-PESQ checkpoints from the sparse-nsnet2 compression sweep: NSNet2 speech enhancement with the FC and GRU layers swappable between dense, Butterfly, and Monarch factorizations."
+    },
+    {
+      "title": "claroche1/sparse-nsnet2-checkpoints at main - Hugging Face",
+      "url": "https://huggingface.co/claroche1/sparse-nsnet2-checkpoints/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - LarocheC/eco8-neaixt",
+      "url": "https://github.com/LarocheC/eco8-neaixt/tree/main",
+      "snippet": "The NSNet2 branch explores whether structured linear transforms can reduce model size and runtime while preserving speech-enhancement quality after quantization."
+    },
+    {
+      "title": "All Models - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/en-US/models",
+      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+    },
+    {
+      "title": "[2308.16678] Dynamic nsNet2: Efficient Deep Noise Suppression with ...",
+      "url": "https://arxiv.org/abs/2308.16678",
+      "snippet": "Although deep learning has made strides in the field of deep noise suppression, leveraging deep architectures on resource-constrained devices still proved challenging. Therefore, we present an early-exiting model based on nsNet2 that provides several levels of accuracy and resource savings by halting computations at different stages. Moreover, we adapt the original architecture by splitting ..."
+    }
+  ]
+}

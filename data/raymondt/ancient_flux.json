@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "raymondt/ancient_flux",
+  "slug": "raymondt-ancient_flux",
+  "author": "raymondt",
+  "url": "https://huggingface.co/raymondt/ancient_flux",
+  "created_at": "2025-06-20T08:06:09.000Z",
+  "updated_at": "2026-08-19T05:10:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1553291904,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "raymondt/ancient_flux · Hugging Face",
+      "url": "https://huggingface.co/raymondt/ancient_flux",
+      "snippet": "raymondt / ancient_flux like 0 Model card FilesFiles and versions Community No model card Downloads last month -"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "MiniMax M2.7 Benchmarks, Pricing & Speed (August 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/minimax-m2-7",
+      "snippet": "MiniMax M2.7 by MiniMax ranks #45 of 218 with a public score of 63.06/100. Evidence: Supported; this profile shows 18 source-displayable benchmark rows."
+    },
+    {
+      "title": "AI reconstructs hidden history of Earth&#x27;s mantle flow from surface ...",
+      "url": "https://phys.org/news/2026-08-ai-reconstructs-hidden-history-earth.html",
+      "snippet": "The mantle, a rocky layer accounting for more than 80% of Earth&#x27;s volume, circulates at rates of only a few centimeters per year. This circulation drives plate tectonics and influences major ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

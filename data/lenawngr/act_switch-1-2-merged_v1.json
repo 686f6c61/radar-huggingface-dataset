@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lenawngr/ACT_switch-1-2-merged_v1",
+  "slug": "lenawngr-act_switch-1-2-merged_v1",
+  "author": "lenawngr",
+  "url": "https://huggingface.co/lenawngr/ACT_switch-1-2-merged_v1",
+  "created_at": "2026-08-19T03:56:26.000Z",
+  "updated_at": "2026-08-19T03:57:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:lenawngr/SWITCH-1-2-merged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51597958,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206432216,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lenawngr/ACT_switch-2-top_v1 · Hugging Face",
+      "url": "https://huggingface.co/lenawngr/ACT_switch-2-top_v1",
+      "snippet": "Instructions to use lenawngr/ACT_switch-2-top_v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use lenawngr/ACT_switch-2-top_v1 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "lenawngr/ACT_switch-1-top_v1 · Hugging Face",
+      "url": "https://huggingface.co/lenawngr/ACT_switch-1-top_v1",
+      "snippet": "Instructions to use lenawngr/ACT_switch-1-top_v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use lenawngr/ACT_switch-1-top_v1 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "ACE-Step-1.5/docs/en/Tutorial.md at main - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/blob/main/docs/en/Tutorial.md",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "Daily AI Papers | All credits go to HuggingFace&#x27;s Daily AI papers ...",
+      "url": "https://gabrielchua.me/daily-ai-papers/",
+      "snippet": "All credits go to HuggingFace&#x27;s Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers)."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    }
+  ]
+}

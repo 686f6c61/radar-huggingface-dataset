@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hoailebads/Qwen3-Reranker-8B-VLSP-Legal-LoRA",
+  "slug": "hoailebads-qwen3-reranker-8b-vlsp-legal-lora",
+  "author": "hoailebads",
+  "url": "https://huggingface.co/hoailebads/Qwen3-Reranker-8B-VLSP-Legal-LoRA",
+  "created_at": "2026-08-19T07:31:20.000Z",
+  "updated_at": "2026-08-19T08:28:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reranker",
+    "cross-encoder",
+    "text-ranking",
+    "legal",
+    "vietnamese",
+    "vlsp",
+    "vi",
+    "base_model:Qwen/Qwen3-Reranker-8B",
+    "base_model:adapter:Qwen/Qwen3-Reranker-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349252048,
+  "storage_human": "349 MB",
+  "base_model": "Qwen/Qwen3-Reranker-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Reranker-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3-Reranker-8B - Model Info, Parameters, Benchmarks - SiliconFlow\"",
+      "url": "https://www.siliconflow.com/models/qwen3-reranker-8b",
+      "snippet": "Qwen3-Reranker-8B is the 8-billion parameter text reranking model from the Qwen3 series. It is designed to refine and improve the quality of search results by accurately re-ordering documents based on their relevance to a query. Built on the powerful Qwen3 foundational models, it excels in understanding long-text with a 32k context length and supports over 100 languages. The Qwen3-Reranker-8B ..."
+    },
+    {
+      "title": "Qwen3 Reranker 8B - 33k context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/qwen3-reranker-8b",
+      "snippet": "Qwen3 Reranker 8B is Alibaba&#x27;s multilingual reranking model from the Qwen3 generation, designed for retrieval-augmented generation pipelines. Open-sourced under Apache 2.0. Achieves 81.22 on MTEB-Code and 72.94 on MMTEB-R. Released alongside Qwen3 Embedding series June 2025."
+    }
+  ]
+}

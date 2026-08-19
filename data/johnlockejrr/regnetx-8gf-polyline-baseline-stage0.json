@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "id": "johnlockejrr/regnetx-8gf-polyline-baseline-stage0",
+  "slug": "johnlockejrr-regnetx-8gf-polyline-baseline-stage0",
+  "author": "johnlockejrr",
+  "url": "https://huggingface.co/johnlockejrr/regnetx-8gf-polyline-baseline-stage0",
+  "created_at": "2026-08-19T05:54:00.000Z",
+  "updated_at": "2026-08-19T05:54:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "regnetx-det",
+  "languages": [
+    "en",
+    "la",
+    "de",
+    "he",
+    "hbo",
+    "smp",
+    "sam",
+    "fr",
+    "fi",
+    "el",
+    "is",
+    "syc",
+    "syr",
+    "sv",
+    "ar",
+    "chu"
+  ],
+  "tags": [
+    "regnetx-det",
+    "computer-vision",
+    "object-detection",
+    "baseline-detection",
+    "document-analysis",
+    "historical-documents",
+    "handwriting",
+    "page-xml",
+    "alto-xml",
+    "polyline",
+    "regnetx",
+    "pytorch",
+    "safetensors",
+    "en",
+    "la",
+    "de",
+    "he",
+    "hbo",
+    "smp",
+    "sam",
+    "fr",
+    "fi",
+    "el",
+    "is",
+    "syc",
+    "syr",
+    "sv",
+    "ar",
+    "chu",
+    "dataset:custom",
+    "arxiv:2410.13842",
+    "base_model:johnlockejrr/dfine-det-large-baseline-stage0",
+    "base_model:finetune:johnlockejrr/dfine-det-large-baseline-stage0",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 217467932,
+  "storage_human": "217 MB",
+  "base_model": "timm/regnetx_080.tv2_in1k, johnlockejrr/dfine-det-large-baseline-stage0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Stage-0 multiscript holdout (5% val split)",
+      "metric": "cbad_f1_max (conf sweep)",
+      "value": 0.929
+    },
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Stage-0 multiscript holdout (5% val split)",
+      "metric": "cbad_f1 @ conf=0.4",
+      "value": 0.929
+    },
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Stage-0 multiscript holdout (5% val split)",
+      "metric": "Precision @ conf=0.4 (best epoch)",
+      "value": 0.93
+    },
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Stage-0 multiscript holdout (5% val split)",
+      "metric": "Recall @ conf=0.4 (best epoch)",
+      "value": 0.929
+    },
+    {
+      "task": "Text-line baseline detection (polyline)",
+      "dataset": "Stage-0 multiscript holdout (5% val split)",
+      "metric": "cbad_f1 @ conf=0.1 (logged, not recommended)",
+      "value": 0.751
+    }
+  ],
+  "sources": [
+    {
+      "title": "README.md · johnlockejrr/regnetx-8gf-polyline-hebrew-samaritan at main",
+      "url": "https://huggingface.co/johnlockejrr/regnetx-8gf-polyline-hebrew-samaritan/blob/main/README.md",
+      "snippet": "5 languages regnetx-det computer-vision baseline-detection document-analysis historical-documents handwriting hebrew samaritan page-xml alto-xml polyline regnetx Eval Results (legacy) arxiv:2410.13842 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main regnetx-8gf-polyline-hebrew-samaritan /README.md ..."
+    },
+    {
+      "title": "johnlockejrr/regnetx-8gf-polyline-hebrew-samaritan · Hugging Face",
+      "url": "https://huggingface.co/johnlockejrr/regnetx-8gf-polyline-hebrew-samaritan",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - johnlockejrr/johnlockejrr: AI Researcher & Semitic Language ...",
+      "url": "https://github.com/johnlockejrr/johnlockejrr",
+      "snippet": "🎯 Multilingual AI Researcher & Semitic Language Specialist I&#x27;m passionate about Natural Language Processing, Semitic linguistics, and AI optimization. My work spans Hebrew, Aramaic, Syriac, and Samaritan text processing, with expertise in eGPU optimization, transformer architectures, and historical text digitization."
+    },
+    {
+      "title": "regnet_x_8gf — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.regnet_x_8gf.html",
+      "snippet": "RegNet_X_8GF_Weights.IMAGENET1K_V2: These weights improve upon the results of the original paper by using a modified version of TorchVision&#x27;s new training recipe."
+    },
+    {
+      "title": "RegNet — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/regnet.html",
+      "snippet": "RegNet ¶ The RegNet model is based on the Designing Network Design Spaces paper. Model builders ¶ The following model builders can be used to instantiate a RegNet model, with or without pre-trained weights. All the model builders internally rely on the torchvision.models.regnet.RegNet base class. Please refer to the source code for more details about this class."
+    }
+  ]
+}

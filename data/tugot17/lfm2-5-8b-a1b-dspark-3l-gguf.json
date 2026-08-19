@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tugot17/LFM2.5-8B-A1B-DSpark-3L-GGUF",
+  "slug": "tugot17-lfm2-5-8b-a1b-dspark-3l-gguf",
+  "author": "tugot17",
+  "url": "https://huggingface.co/tugot17/LFM2.5-8B-A1B-DSpark-3L-GGUF",
+  "created_at": "2026-08-19T09:09:54.000Z",
+  "updated_at": "2026-08-19T09:12:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "speculative-decoding",
+    "dspark",
+    "dflash",
+    "draft-model",
+    "lfm2",
+    "base_model:tugot17/LFM2.5-8B-A1B-DSpark-3L",
+    "base_model:quantized:tugot17/LFM2.5-8B-A1B-DSpark-3L",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 231230081,
+  "parameters_human": "231.2M",
+  "storage_bytes": 470717888,
+  "storage_human": "471 MB",
+  "base_model": "tugot17/LFM2.5-8B-A1B-DSpark-3L",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tugot17/LFM2.5-8B-A1B-DSpark-5L-GGUF · Hugging Face",
+      "url": "https://huggingface.co/tugot17/LFM2.5-8B-A1B-DSpark-5L-GGUF",
+      "snippet": "Instructions to use tugot17/LFM2.5-8B-A1B-DSpark-5L-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use tugot17/LFM2.5-8B-A1B-DSpark-5L-GGUF with llama-cpp-python:"
+    },
+    {
+      "title": "tugot17/LFM2.5-8B-A1B-DSpark-2L · Hugging Face",
+      "url": "https://huggingface.co/tugot17/LFM2.5-8B-A1B-DSpark-2L",
+      "snippet": "DSpark speculative-decoding draft model for LiquidAI/LFM2.5-8B-A1B: a Qwen3-style GQA block drafter (2 layers) with a low-rank Markov transition head (rank 256) and a confidence head."
+    },
+    {
+      "title": "LFM2.5-8B-A1B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-8b-a1b",
+      "snippet": "8B parameter Mixture-of-Experts model with 1.5B active parameters for fast, reliable tool calling and 128K context ← Back to Text Models LFM2.5-8B-A1B is Liquid AI&#x27;s Mixture-of-Experts model, combining 8B total parameters with only 1.5B active parameters per forward pass with a 128K context window and chain of thought reasoning."
+    },
+    {
+      "title": "LFM2.5-8B-A1B: An Even Better On-Device Mixture of Experts",
+      "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+      "snippet": "Explore Liquid AI&#x27;s LFM2.5-8B-A1B, an on-device Mixture of Experts model with 128K context, fast tool calling, and strong AI benchmarks."
+    },
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    }
+  ]
+}

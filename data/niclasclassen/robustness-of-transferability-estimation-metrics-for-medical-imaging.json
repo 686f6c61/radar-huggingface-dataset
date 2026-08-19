@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "niclasclassen/robustness-of-transferability-estimation-metrics-for-medical-imaging",
+  "slug": "niclasclassen-robustness-of-transferability-estimation-metrics-for-medical-imaging",
+  "author": "niclasclassen",
+  "url": "https://huggingface.co/niclasclassen/robustness-of-transferability-estimation-metrics-for-medical-imaging",
+  "created_at": "2026-08-19T07:19:20.000Z",
+  "updated_at": "2026-08-19T08:06:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "arxiv:2608.09999",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25815940544,
+  "storage_human": "25.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Robustness of transferability estimation metrics for medical imaging",
+      "url": "https://arxiv.org/html/2608.09999v1",
+      "snippet": "Abstract In transfer learning, the choice of source model largely influences the performance on a target dataset. Still, selecting a fitting source remains a challenging task, especially in medical imaging where one has to decide between models pre-trained on off-the-shelf options, such as ImageNet, and domain specific datasets. Transferability estimation (TE) metrics address this problem by ..."
+    },
+    {
+      "title": "Robustness of transferability estimation metrics for medical imaging",
+      "url": "https://arxiv.org/abs/2608.09999",
+      "snippet": "In transfer learning, the choice of source model largely influences the performance on a target dataset. Still, selecting a fitting source remains a challenging task, especially in medical imaging where one has to decide between models pre-trained on off-the-shelf options, such as ImageNet, and domain specific datasets. Transferability estimation (TE) metrics address this problem by aiming to ..."
+    },
+    {
+      "title": "Robustness of transferability estimation metrics for medical imaging",
+      "url": "https://www.catalyzex.com/paper/robustness-of-transferability-estimation",
+      "snippet": "Robustness of transferability estimation metrics for medical imaging: Paper and Code. In transfer learning, the choice of source model largely influences the performance on a target dataset. Still, selecting a fitting source remains a challenging task, especially in medical imaging where one has to decide between models pre-trained on off-the-shelf options, such as ImageNet, and domain ..."
+    },
+    {
+      "title": "Robustness of transferability estimation metrics for medical imaging",
+      "url": "https://www.semanticscholar.org/paper/Robustness-of-transferability-estimation-metrics-Classen-Sourget/7b3381b07baefd5607a88d4d7f1c9bc93610e960/figure/0",
+      "snippet": "This work proposes a novel transferability metric that combines feature quality with gradients to evaluate both the suitability and adaptability of source model features for target tasks, and evaluates its approach in two new scenarios: source dataset transferability for medical image classification and cross-domain transferability."
+    },
+    {
+      "title": "Overview · niclasclassen/robustness-of-transferability-estimation ...",
+      "url": "https://github.com/niclasclassen/robustness-of-transferability-estimation-metrics-for-medical-imaging/security",
+      "snippet": "niclasclassen / robustness-of-transferability-estimation-metrics-for-medical-imaging Public 0 0"
+    }
+  ]
+}

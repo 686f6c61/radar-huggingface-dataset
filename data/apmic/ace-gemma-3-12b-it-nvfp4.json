@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "APMIC/ACE-gemma-3-12b-it-nvfp4",
+  "slug": "apmic-ace-gemma-3-12b-it-nvfp4",
+  "author": "APMIC",
+  "url": "https://huggingface.co/APMIC/ACE-gemma-3-12b-it-nvfp4",
+  "created_at": "2026-02-05T03:33:11.000Z",
+  "updated_at": "2026-08-19T10:59:18.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "en",
+    "zh",
+    "base_model:google/gemma-3-12b-pt",
+    "base_model:quantized:google/gemma-3-12b-pt",
+    "license:gemma",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 90,
+  "trending_score": 0,
+  "parameters": 6386839296,
+  "parameters_human": "6.39B",
+  "storage_bytes": 8105148130,
+  "storage_human": "8.1 GB",
+  "base_model": "google/gemma-3-12b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "APMIC/ACE-gemma-3-12b-it-nvfp4 · Hugging Face",
+      "url": "https://huggingface.co/APMIC/ACE-gemma-3-12b-it-nvfp4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "APMIC releases the ACE series open-source models 4B and 12B: combining ...",
+      "url": "https://www.apmic.ai/en/news/apmic-releases-ace-open-source-ai-models-nvfp4",
+      "snippet": "APMIC has officially released four ACE-gemma-3 models, fine-tuned for the Taiwanese context and combining knowledge distillation and NVFP4 inference technology, providing enterprises with lightweight 4B and 12B model specifications that balance privacy, autonomy, and efficiency."
+    },
+    {
+      "title": "APMIC/ACE-gemma-3-12b-it-nvfp4 at main - Hugging Face",
+      "url": "https://huggingface.co/APMIC/ACE-gemma-3-12b-it-nvfp4/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pushing the Limits of Gemma 3: Introducing ACE-Gemma-3-12B-IT-NVFP4",
+      "url": "https://dataology.blogspot.com/2026/03/blog-post.html",
+      "snippet": "Hailing from Taiwan, the APMIC team is committed to strengthening this sovereignty. We are proud to release ACE-gemma-3-12b-it-nvfp4 —a high-performance, optimized version of Gemma 3 that demonstrates how Taiwan&#x27;s AI expertise can provide the world with more efficient, accessible, and independent AI solutions."
+    },
+    {
+      "title": "Apmic 釋出 Ace 系列開源模型 4b 與 12b：結合 Nvidia Nvfp4 與知識蒸餾技術，定義企業級 Ai 助手新標竿",
+      "url": "https://www.apmic.ai/news/apmic-releases-ace-open-source-ai-models-nvfp4",
+      "snippet": "APMIC 正式開源四款 ACE-gemma-3 模型，以台灣語境微調、結合知識蒸餾與 NVFP4 推理技術，提供企業兼顧隱私、自主與效率的輕量 4B 與 12B 兩種模型規格。"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Obaraqreceh/forge-intentcore",
+  "slug": "obaraqreceh-forge-intentcore",
+  "author": "Obaraqreceh",
+  "url": "https://huggingface.co/Obaraqreceh/forge-intentcore",
+  "created_at": "2026-03-04T01:21:19.000Z",
+  "updated_at": "2026-08-19T04:00:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 408900,
+  "storage_human": "408900 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obaraqreceh/forge-intentcore · Hugging Face",
+      "url": "https://huggingface.co/Obaraqreceh/forge-intentcore",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Obaraqreceh/forge-intentcore at main - Hugging Face",
+      "url": "https://huggingface.co/Obaraqreceh/forge-intentcore/tree/main",
+      "snippet": "Obaraqreceh / forge-intentcore like 0 Text Classification English License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main forge-intentcore 4.24 kB Ctrl+K Ctrl+K 1 contributor History:100 commits Obaraqreceh Daily autonomous publish v1.0.0 ea23edf verifiedabout 2 hours ago .gitattributes Safe 1.52 kBinitial commit3 months ago README.md Safe 126 BytesUpload ..."
+    },
+    {
+      "title": "OpenAI models escaped containment, hacked major AI application library ...",
+      "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-autonomous/825898/",
+      "snippet": "OpenAI models escaped containment, hacked major AI application library The attack is the first known instance of frontier models autonomously breaking out of a testing environment and into another company&#x27;s servers."
+    },
+    {
+      "title": "Meta AI model hacked outside company, adding to concerns over ... - MSN",
+      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/meta-ai-model-hacked-outside-company-adding-to-concerns-over-rogue-bots/ar-AA29wxCR",
+      "snippet": "During cybersecurity testing the model slipped onto the internet and hacked a third-party service, mirroring incidents at Anthropic and OpenAI."
+    },
+    {
+      "title": "Meta Admits Its AI Model Hacked Another Company: &#x27;Rogue AI&#x27; Is Becoming ...",
+      "url": "https://www.ibtimes.co.uk/meta-ai-model-hacks-systems-security-test-1812825",
+      "snippet": "Meta&#x27;s AI model accessed external systems during testing, raising concerns over AI cyber capabilities and vulnerabilities, similar to recent incidents at OpenAI and Anthropic."
+    }
+  ]
+}

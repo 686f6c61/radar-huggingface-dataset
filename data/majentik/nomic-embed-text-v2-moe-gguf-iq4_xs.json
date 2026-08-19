@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "majentik/nomic-embed-text-v2-moe-GGUF-IQ4_XS",
+  "slug": "majentik-nomic-embed-text-v2-moe-gguf-iq4_xs",
+  "author": "majentik",
+  "url": "https://huggingface.co/majentik/nomic-embed-text-v2-moe-GGUF-IQ4_XS",
+  "created_at": "2026-08-19T07:09:16.000Z",
+  "updated_at": "2026-08-19T07:09:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "embeddings",
+    "sentence-similarity",
+    "feature-extraction",
+    "quantized",
+    "IQ4_XS",
+    "base_model:nomic-ai/nomic-embed-text-v2-moe",
+    "base_model:quantized:nomic-ai/nomic-embed-text-v2-moe",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 475288320,
+  "parameters_human": "475.3M",
+  "storage_bytes": 328066144,
+  "storage_human": "328 MB",
+  "base_model": "nomic-ai/nomic-embed-text-v2-moe",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nomic-ai/nomic-embed-text-v2-moe · Hugging Face",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nomic-ai/nomic-embed-text-v2-moe-GGUF · Hugging Face",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nomic-embed-text-v2-moe: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/nomic-embed-text-v2-moe-nomic-ai",
+      "snippet": "Overview nomic-embed-text-v2-moe is a multilingual text embedding model developed by nomic-ai that uses a Mixture of Experts architecture to deliver state-of-the-art performance on multilingual retrieval tasks while maintaining efficient inference. The model contains 475M total parameters but activates only 305M during inference through its 8-expert top-2 routing configuration, allowing it to ..."
+    },
+    {
+      "title": "ai/nomic-embed-text-v2-moe - Docker Image",
+      "url": "https://hub.docker.com/r/ai/nomic-embed-text-v2-moe",
+      "snippet": "nomic-embed-text-v2-moe nomic-embed-text-v2-moe is a state-of-the-art multilingual text embedding model built on a Mixture of Experts (MoE) architecture. As the first general-purpose MoE text embedding model, it delivers exceptional multilingual retrieval performance while maintaining efficiency through sparse activation."
+    },
+    {
+      "title": "nomic-embed-text-v2-moe - ollama.com",
+      "url": "https://ollama.com/library/nomic-embed-text-v2-moe",
+      "snippet": "nomic-embed-text-v2-moe is a multilingual MoE text embedding model that excels at multilingual retrieval. High Performance: SoTA Multilingual performance compared to ~300M parameter models, competitive with models 2x in size Multilinguality: Supports ~100 languages and trained on over 1.6B pairs Flexible Embedding Dimension: Trained with Matryoshka Embeddings with 3x reductions in storage cost ..."
+    }
+  ]
+}

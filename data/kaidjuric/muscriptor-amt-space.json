@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kaidjuric/muscriptor-amt-space",
+  "slug": "kaidjuric-muscriptor-amt-space",
+  "author": "kaidjuric",
+  "url": "https://huggingface.co/kaidjuric/muscriptor-amt-space",
+  "created_at": "2026-08-19T04:17:13.000Z",
+  "updated_at": "2026-08-19T04:22:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180382415,
+  "storage_human": "180 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - muscriptor/muscriptor: A multi-instrument music transcription ...",
+      "url": "https://github.com/muscriptor/muscriptor",
+      "snippet": "MuScriptor is a multi-instrument music transcription model developed by Kyutai and Mirelo. MuScriptor is the first music transcription model that has been trained on a large scale dataset of 170k songs from classical music to heavy metal."
+    },
+    {
+      "title": "MuScriptor: An Open Model for Multi-Instrument Music Transcription",
+      "url": "https://muscriptor.github.io/",
+      "snippet": "We further introduce conditioning on instrument presence to customize transcriptions. Finally, we release MuScriptor, an open-weight multi-instrument music transcription model that works on real-world music recordings from across a diverse range of musical genres."
+    },
+    {
+      "title": "MuScriptor Music Transcription - a Hugging Face Space by hugging-apps",
+      "url": "https://huggingface.co/spaces/hugging-apps/muscriptor-music-transcription",
+      "snippet": "MuScriptor — Music Transcription (Audio → MIDI) Upload a music recording and get a downloadable MIDI file with transcribed notes. MuScriptor is a ~1.3B parameter multi-instrument automatic music transcription model developed by Mirelo x Kyutai. Model card · Code · Audio samples"
+    },
+    {
+      "title": "MuScriptor: An Open Model for Multi-Instrument Music Transcription",
+      "url": "https://arxiv.org/html/2607.08168v1",
+      "snippet": "In this work, we have presented MuScriptor, an open weight model for general-purpose, multi-instrument music transcription. To train MuScriptor, we have collected both synthetic and real music audio datasets with aligned note annotations, and utilized a reinforcement learning approach for post-training refinement."
+    },
+    {
+      "title": "Muscriptor - a kyutai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/kyutai/muscriptor",
+      "snippet": "Developed in collaboration with Mirelo (AI https://www.mirelo.ai/), MuScriptor is an open-weight model for multi-instrument automatic transcription"
+    }
+  ]
+}

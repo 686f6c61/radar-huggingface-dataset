@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/evolving-moe-acc-seed20211004-c_17316-cap8-core200",
+  "slug": "jongbin-kr-evolving-moe-acc-seed20211004-c_17316-cap8-core200",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/evolving-moe-acc-seed20211004-c_17316-cap8-core200",
+  "created_at": "2026-08-19T07:23:43.000Z",
+  "updated_at": "2026-08-19T07:58:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1024209201,
+  "storage_human": "1.0 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jongbin-kr (Jongbin Won) - Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr",
+      "snippet": "Jongbin-kr/mrqa_with_conflict_and_retrieved Viewer • Updated about 14 hours ago • 76.7k"
+    },
+    {
+      "title": "AlphaFold Protein Structure Database",
+      "url": "https://www.alphafold.ebi.ac.uk/",
+      "snippet": "AlphaFold is an AI system developed by Google DeepMind that predicts a protein&#x27;s 3D structure from its amino acid sequence. It regularly achieves accuracy competitive with experiment."
+    },
+    {
+      "title": "UniProt",
+      "url": "https://www.uniprot.org/",
+      "snippet": "UniProt is the world&#x27;s leading high-quality, comprehensive and freely accessible resource of protein sequence and functional information."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools)."
+    },
+    {
+      "title": "MoE - a Sugutt Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Sugutt/moe-689ed097430bf3d4c5558c56",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Sugutt"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VuNiti/VuMos-2B-Thinking-Vision",
+  "slug": "vuniti-vumos-2b-thinking-vision",
+  "author": "VuNiti",
+  "url": "https://huggingface.co/VuNiti/VuMos-2B-Thinking-Vision",
+  "created_at": "2026-03-06T18:49:43.000Z",
+  "updated_at": "2026-08-19T10:14:59.000Z",
+  "license": "vuniti-eula",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vumos",
+  "languages": [],
+  "tags": [
+    "vumos",
+    "vura",
+    "vuniti",
+    "text-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46262550974,
+  "storage_human": "46.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VuNiti/VuMos-2B-Thinking-Vision · Hugging Face",
+      "url": "https://huggingface.co/VuNiti/VuMos-2B-Thinking-Vision",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VuNiti (VuNiti) - Hugging Face",
+      "url": "https://huggingface.co/VuNiti",
+      "snippet": "AI Models Agent Bot Social Media App Game Store Media Ecosystem Dev"
+    },
+    {
+      "title": "GitHub - VuNiti/VuNiti: AI-Agent-Native Social Media Ecosystem",
+      "url": "https://github.com/VuNiti/VuNiti",
+      "snippet": "🏗️ Core Ecosystem Pillars Powered by our proprietary VuMos model series (featuring the encrypted .vum format), VuNiti delivers the following core capabilities: VUU-IM+ (AI Social): Dynamic interactions with emotional awareness and local attributes, providing you with unique digital companions."
+    },
+    {
+      "title": "VuNiti (VuNiti) · GitHub",
+      "url": "https://github.com/VuNiti",
+      "snippet": "Powered by our proprietary VuMos model series (featuring the encrypted .vum format), VuNiti delivers the following core capabilities: VUU-IM+ (AI Social): Dynamic interactions with emotional awareness and local attributes, providing you with unique digital companions."
+    },
+    {
+      "title": "Vision models · Ollama",
+      "url": "https://ollama.com/search?c=vision",
+      "snippet": "Vision models on Ollama. kimi-k2.7-code Kimi K2.7 Code is Moonshot AI&#x27;s coding-focused agentic model built upon Kimi K2.6, with substantial improvements on real-world long-horizon coding tasks and roughly 30% lower thinking-token usage."
+    }
+  ]
+}

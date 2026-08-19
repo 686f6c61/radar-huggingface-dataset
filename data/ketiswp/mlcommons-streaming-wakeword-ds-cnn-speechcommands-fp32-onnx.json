@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/mlcommons-Streaming-Wakeword-DS-CNN-SpeechCommands-fp32-onnx",
   "created_at": "2026-08-19T01:57:15.000Z",
-  "updated_at": "2026-08-19T02:10:44.000Z",
+  "updated_at": "2026-08-19T07:01:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 189758,
-  "storage_human": "189758 B",
+  "storage_bytes": 1327707,
+  "storage_human": "1 MB",
   "base_model": null,
   "formats": [
     "onnx"

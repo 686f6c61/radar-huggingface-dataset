@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "piyushgupta53/smollm2-135m-english-to-latex-notation",
+  "slug": "piyushgupta53-smollm2-135m-english-to-latex-notation",
+  "author": "piyushgupta53",
+  "url": "https://huggingface.co/piyushgupta53/smollm2-135m-english-to-latex-notation",
+  "created_at": "2026-08-19T10:05:46.000Z",
+  "updated_at": "2026-08-19T10:20:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "smollm2",
+    "latex",
+    "text-to-latex",
+    "mathematics",
+    "merged-model",
+    "conversational",
+    "en",
+    "dataset:piyushgupta53/english-to-latex-notation-sft",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction following, knowledge, reasoning. The 135M model was trained on 2 trillion tokens using a diverse dataset combination: FineWeb-Edu, DCLM, The Stack, along with new filtered datasets we curated and will release soon."
+    },
+    {
+      "title": "unsloth/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/unsloth/SmolLM2-135M",
+      "snippet": "SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device."
+    },
+    {
+      "title": "SmolLM2 135M by HuggingFaceTB — VRAM 0.3GB, 8K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/HuggingFaceTB%2FSmolLM2-135M,6gwVWJRYDqB0Tt0G6BWsDF",
+      "snippet": "SmolLM2 135M is an open-source 135m LLM by HuggingFaceTB. VRAM 0.3GB, 8K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "SmolLM2-135M: Lightweight Open-Source Language Model for Edge & Mobile ...",
+      "url": "https://dev.co/ai/llms/smollm2-135m",
+      "snippet": "SmolLM2-135M is production-ready for lightweight, on-device AI. Download the model from HuggingFace Hub, test on your hardware, and benchmark throughput/latency."
+    },
+    {
+      "title": "SmolLM2-135M · Models",
+      "url": "https://www.modelscope.cn/models/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "SmolLM2 Table of Contents Model Summary Limitations Training License Citation Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bschooled/caeleste-speech-moss-soundeffect-v2.0-nf4",
+  "slug": "bschooled-caeleste-speech-moss-soundeffect-v2-0-nf4",
+  "author": "bschooled",
+  "url": "https://huggingface.co/bschooled/caeleste-speech-moss-soundeffect-v2.0-nf4",
+  "created_at": "2026-08-19T04:07:58.000Z",
+  "updated_at": "2026-08-19T04:08:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "quantized",
+    "bitsandbytes",
+    "nf4",
+    "4-bit",
+    "audio",
+    "text-to-audio",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1349983178,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenMOSS/MOSS-TTS: MOSS‑TTS Family is an open‑source speech ...",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS",
+      "snippet": "English | 简体中文 MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS."
+    },
+    {
+      "title": "modulsx/MOSS-SoundEffect-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/modulsx/MOSS-SoundEffect-v2.0",
+      "snippet": "MOSS-SoundEffect v2.0 is a text-to-audio model with a Diffusion Transformer (DiT) backbone trained with the Flow Matching objective, paired with a DAC VAE and a Qwen3 text encoder. It generates high-fidelity environmental, urban, creature, and human-action sound effects from natural-language prompts, with controllable duration up to 30 seconds at 48 kHz."
+    },
+    {
+      "title": "MOSS-SoundEffect · Models",
+      "url": "https://www.modelscope.cn/models/openmoss/MOSS-SoundEffect",
+      "snippet": "MOSS-SoundEffect is the environment sound & sound effect generation model in the MOSS‑TTS Family. It generates ambient soundscapes and concrete sound effects directly from text descriptions, and is designed to complement speech content with immersive context in production workflows."
+    },
+    {
+      "title": "MOSS-SoundEffect-V2.0 - Models",
+      "url": "https://www.modelscope.cn/models/openmoss/MOSS-SoundEffect-v2.0",
+      "snippet": "Within the MOSS-TTS Family, MOSS-SoundEffect is the dedicated text-to-sound model — the family member that turns natural-language captions into non-speech audio (ambience, urban scenes, creatures, human actions, short music-like clips). v2.0 supersedes the v1 discrete-token autoregressive backbone (MossTTSDelay) with a continuous-latent ..."
+    },
+    {
+      "title": "Fine-tuned Models for OpenMOSS-Team/MOSS-SoundEffect-v2.0 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:OpenMOSS-Team/MOSS-SoundEffect-v2.0",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "michael-c-137",
   "url": "https://huggingface.co/michael-c-137/nicaraguan-legal-llama3-8b",
   "created_at": "2026-08-17T14:28:35.000Z",
-  "updated_at": "2026-08-17T14:28:38.000Z",
+  "updated_at": "2026-08-17T14:34:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 290,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 17209961,
-  "storage_human": "17 MB",
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
   "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
   "formats": [
     "safetensors"

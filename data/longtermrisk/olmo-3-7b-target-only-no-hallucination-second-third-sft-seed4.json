@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed4",
+  "slug": "longtermrisk-olmo-3-7b-target-only-no-hallucination-second-third-sft-seed4",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed4",
+  "created_at": "2026-08-19T06:58:04.000Z",
+  "updated_at": "2026-08-19T06:58:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed3",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed3",
+      "snippet": "OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed3 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "longtermrisk/OLMo-3-7B-target-only-no-hallucination-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-sft",
+      "snippet": "longtermrisk / OLMo-3-7B-target-only-no-hallucination-sft like 0 Follow Center on Long-Term Risk 19 Text Generation Transformers Safetensors English olmo3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "OLMo-3-7B-target-only-no-hallucination-second-third-sft",
+      "url": "https://dev.modelhub.org.cn/longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft",
+      "snippet": "Uploaded finetuned model Developed by: longtermrisk License: apache-2.0 Finetuned from model : unsloth/Olmo-3-7B-Instruct"
+    },
+    {
+      "title": "OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed2",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed2",
+      "snippet": "Run OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed2 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and…"
+    }
+  ]
+}

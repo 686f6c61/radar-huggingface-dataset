@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "UNITAmanipulation/act_stacking_merged_v2",
+  "slug": "unitamanipulation-act_stacking_merged_v2",
+  "author": "UNITAmanipulation",
+  "url": "https://huggingface.co/UNITAmanipulation/act_stacking_merged_v2",
+  "created_at": "2026-08-19T06:24:36.000Z",
+  "updated_at": "2026-08-19T06:24:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:UNITAmanipulation/stacking_block_merged_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "altmtls1108/act_box_stacking_merged_v2 · Hugging Face",
+      "url": "https://huggingface.co/altmtls1108/act_box_stacking_merged_v2",
+      "snippet": "Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "UNITAmanipulation (unita_manipulation) - Hugging Face",
+      "url": "https://huggingface.co/UNITAmanipulation/models",
+      "snippet": "Org profile for unita_manipulation on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Daily AI Papers | All credits go to HuggingFace&#x27;s Daily AI papers ...",
+      "url": "https://gabrielchua.me/daily-ai-papers/",
+      "snippet": "All credits go to HuggingFace&#x27;s Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers)."
+    },
+    {
+      "title": "GitHub - 2toinf/UniAct: [CVPR 2025] The offical Implementation of ...",
+      "url": "https://github.com/2toinf/UniAct",
+      "snippet": "we introduce UniAct, a new embodied foundation modeling framework operating in the Universal Action Space. Our learned universal actions capture the generic atomic behaviors across diverse robots by exploiting their shared structural features, and enable enhanced cross-domain data utilization and cross-embodiment generalizations by eliminating the notorious heterogeneity. Moreover, the ..."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Roblox/roblox-pii-classifier",
+  "slug": "roblox-roblox-pii-classifier",
+  "author": "Roblox",
+  "url": "https://huggingface.co/Roblox/roblox-pii-classifier",
+  "created_at": "2025-10-27T22:56:53.000Z",
+  "updated_at": "2026-08-19T06:34:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "privacy",
+    "pii-detection",
+    "multilingual",
+    "dataset:Roblox/roblox-pii-classifier-benchmark",
+    "arxiv:1911.02116",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:quantized:FacebookAI/xlm-roberta-large",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 28,
+  "downloads_30d": 102,
+  "trending_score": 0,
+  "parameters": 559892482,
+  "parameters_human": "559.9M",
+  "storage_bytes": 4501833734,
+  "storage_human": "4.5 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox/roblox-pii-classifier · Hugging Face",
+      "url": "https://huggingface.co/Roblox/roblox-pii-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open Sourcing Roblox PII Classifier: Our Approach to AI PII Detection ...",
+      "url": "https://about.roblox.com/newsroom/2025/11/open-sourcing-roblox-pii-classifier-ai-pii-detection-chat",
+      "snippet": "The version of our PII model that we&#x27;re open sourcing today has a 98% recall of potential PII conversations in English text 1 on Roblox. The model has also achieved an F1 score of 94% on our production data, outperforming other state-of-the-art safety models, like LlamaGuard v3 8B (28%) and Piiranha NER (14%)."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/roblox-roblox-pii-classifier",
+      "snippet": "Gated Model Access Required Roblox/roblox-pii-classifier requires special access approval from the authors through Hugging Face. To use this model, you must: Request access through the model page on Hugging Face and wait for approval from the model authors. Create a Custom keys workspace connection in Microsoft Foundry or Azure Machine Learning named HuggingFaceTokenConnection with the key HF ..."
+    },
+    {
+      "title": "Roblox/roblox-pii-classifier at main - Hugging Face",
+      "url": "https://huggingface.co/Roblox/roblox-pii-classifier/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Roblox/roblox-pii-classifier at main - Hugging Face",
+      "url": "https://huggingface.co/Roblox/roblox-pii-classifier/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

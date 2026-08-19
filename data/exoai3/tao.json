@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EXOAI3/Tao",
+  "slug": "exoai3-tao",
+  "author": "EXOAI3",
+  "url": "https://huggingface.co/EXOAI3/Tao",
+  "created_at": "2025-05-21T16:36:30.000Z",
+  "updated_at": "2026-08-19T05:10:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 278880090,
+  "storage_human": "279 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EXOAI3/Tao · Hugging Face",
+      "url": "https://huggingface.co/EXOAI3/Tao",
+      "snippet": "EXOAI3 / Tao like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "EXOAI3 (Covers) - Hugging Face",
+      "url": "https://huggingface.co/EXOAI3/models",
+      "snippet": "Sort: Recently updated. EXOAI3/SUJU. Updated Apr 2. EXOAI3/Henry_Lau. Updated Mar 25. EXOAI3/Luhan-EXO. Updated Mar 20"
+    },
+    {
+      "title": "TAO Toolkit | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/tao-toolkit",
+      "snippet": "No. TAO is designed to simplify AI model customization with pre-trained models, automated workflows, and low-code tools. With TAO agentic skills, now your coding agents can use TAO to fine-tune models."
+    },
+    {
+      "title": "GitHub - sikkgit/exo-ai: Run your own AI cluster at home with everyday ...",
+      "url": "https://github.com/sikkgit/exo-ai",
+      "snippet": "Run your own AI cluster at home with everyday devices 📱💻 🖥️⌚ - sikkgit/exo-ai"
+    },
+    {
+      "title": "Exo AI",
+      "url": "https://www.exoai.earth/",
+      "snippet": "Exo AI Explore the Universe with AI"
+    }
+  ]
+}

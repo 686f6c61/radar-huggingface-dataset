@@ -5,7 +5,7 @@
   "author": "exo-jhop",
   "url": "https://huggingface.co/exo-jhop/ministral3-gdpr-lora",
   "created_at": "2026-08-13T18:20:39.000Z",
-  "updated_at": "2026-08-18T07:58:54.000Z",
+  "updated_at": "2026-08-18T16:02:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 57,
+  "downloads_30d": 75,
   "trending_score": 0,
   "parameters": 8918026240,
   "parameters_human": "8.92B",
-  "storage_bytes": 17853201302,
-  "storage_human": "17.9 GB",
+  "storage_bytes": 53525447686,
+  "storage_human": "53.5 GB",
   "base_model": "unsloth/ministral-3-8b-instruct-2512-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

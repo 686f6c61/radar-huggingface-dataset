@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF",
+  "slug": "nvidia-nvidia-nemotron-3-nano-4b-gguf",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF",
+  "created_at": "2026-03-07T02:10:52.000Z",
+  "updated_at": "2026-03-16T21:10:15.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nvidia",
+    "pytorch",
+    "text-generation",
+    "en",
+    "dataset:nvidia/Nemotron-CC-v2",
+    "dataset:nvidia/Nemotron-Post-Training-Dataset-v2",
+    "dataset:nvidia/Nemotron-Science-v1",
+    "dataset:nvidia/Nemotron-Instruction-Following-Chat-v1",
+    "dataset:nvidia/Nemotron-Agentic-v1",
+    "dataset:nvidia/Nemotron-Competitive-Programming-v1",
+    "dataset:nvidia/Nemotron-Math-Proofs-v1",
+    "dataset:nvidia/Nemotron-RL-Agentic-Conversational-Tool-Use-Pivot-v1",
+    "dataset:nvidia/Nemotron-RL-instruction_following",
+    "dataset:nvidia/Nemotron-RL-agent-calendar_scheduling",
+    "dataset:nvidia/Nemotron-RL-instruction_following-structured_outputs",
+    "arxiv:2511.16664",
+    "arxiv:2504.03624",
+    "arxiv:2512.20856",
+    "arxiv:2512.20848",
+    "arxiv:2412.02595",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-FP8",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3-Nano-4B-FP8",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 196,
+  "downloads_30d": 11065,
+  "trending_score": 8,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 2837072864,
+  "storage_human": "2.8 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Découvrez nos nvidia nano jetson - nvidia nano jetson",
+      "url": "https://duckduckgo.com/y.js?ad_domain=amazon.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=KhOCQFFi_yN4rtPYmuSA6y_0jfG32yJpfrmftoQMFcMiXMwfr%2Dgu9yHswOZVH8Q46kfd53VqTUC9B%2DAPu0yjmFMOq_IRbzvnMVtA1OFF_6mklElDhhi8yM5_DqE8P1MbM_TaHbgGok8SzCpXU8h9d8E7lslzOy1gnSiVthJgHZY.UPQAAgGwxG8cSKuUhGyY8Q&rut=e10ef7ffd7b61fcd64930689ada92ffaf8996421697f7dc22c3821782531ea7d&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De86OFDWtijf7_2b0%2DuwvexezVUCUz1P%2DXWlGfAw6CtSpKlgOCxeCYpxXKpoqcV18LHO7y3xrHMTUItywzwYVa3Gd_SvhvR5i8PlxQxyp4ydL6Om4fVSjpVbAVXrhCLhueyzY69wHCLcTDFHFR3E%2D_Jpr71YiiQI0WoZW7KjRNPhMPZdayufpVwOlZuo4FzR3T1gScm2WUPIj0kp_i99Vmz5OmNTi4%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmZyJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkbnZpZGlhJTJibmFubyUyYmpldHNvbiUyNmluZGV4JTNkYXBzJTI2dGFnJTNkaHlkZnJtc24tMjElMjZyZWYlM2RwZF9zbF84Z3p3ODcwczk4X3AlMjZhZGdycGlkJTNkMTM1ODk5ODk1MzA4NjM3OCUyNmh2YWRpZCUzZDg0OTM3ODQ0MjY4ODM5JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkMTI2MzI1JTI2aHZ0YXJnaWQlM2Rrd2QtODQ5Mzg2MzQxMzM3MzMlM2Fsb2MtNjYlMjZoeWRhZGNyJTNkMjI3XzI2MTEyNTklMjZtY2lkJTNkZGQ2MTE4NjljMzE0M2Q2ODkxODQwMGI2Y2Y1ODRmMjclMjZtc2Nsa2lkJTNkYmRkMDA2MzczMzAxMTlmMDNkNzQ2Y2IyNWFmYzFjNzU%26rlid%3Dbdd00637330119f03d746cb25afc1c75&vqd=4-251896178821867484421838614667195886655&iurl=%7B1%7DIG%3DE06E2382AAF94846A6B6573CE9C42C8A%26CID%3D105EA5FA0ED96A173D03B2400FA26B5A%26ID%3DDevEx%2C5037.1",
+      "snippet": "Bonnes affaires sur les nvidia nano jetson dans informatique sur Amazon. Retrouvez notre large sélection d&#x27;ordinateurs, de tablettes et d&#x27;accessoires"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3-Nano-4B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF",
+      "snippet": "Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer Models ... Nemotron-CC: Transforming Common Crawl into a Refined Long-Horizon Pretraining Dataset ... Nemotron 3 Nano 4B: A Compact Hybrid Model for Efficient Local AI ... Nemotron 3 Nano &#92;- A new Standard for Efficient, Open, and Intelligent Agentic Models"
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "We announce NVIDIA Nemotron 3, the most efficient family of open models with leading accuracy for agentic AI applications. The Nemotron 3 family consists of three models: Nano, Super, and Ultra."
+    },
+    {
+      "title": "NVIDIA Nemotron v3 - a nvidia Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nvidia/nvidia-nemotron-v3",
+      "snippet": "Open, Production-ready Enterprise Models. Upvote . 360 +350; Sort: Collection. nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4"
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron 3.5 Lightning for Fast, Specialized Agent Tasks NVIDIA Nemotron 3.5 Lightning is an open 30B MoE model with 3B active parameters for specialized tasks in always-on agents. With NeMo Switchyard, developers can route high-volume execution to Lightning when it&#x27;s the right fit, while reserving frontier models for complex planning."
+    }
+  ]
+}

@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 217,
+  "downloads_30d": 475,
   "trending_score": 0,
   "parameters": 3836021760,
   "parameters_human": "3.84B",
-  "storage_bytes": 36731775176,
-  "storage_human": "36.7 GB",
+  "storage_bytes": 32358959112,
+  "storage_human": "32.4 GB",
   "base_model": "reallexi/lexi-coder-v4.3",
   "formats": [
     "gguf",

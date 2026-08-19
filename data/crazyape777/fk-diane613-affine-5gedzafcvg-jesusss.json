@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "crazyape777/fk-diane613-affine-5gedzafcvg-jesusss",
+  "slug": "crazyape777-fk-diane613-affine-5gedzafcvg-jesusss",
+  "author": "crazyape777",
+  "url": "https://huggingface.co/crazyape777/fk-diane613-affine-5gedzafcvg-jesusss",
+  "created_at": "2026-08-19T07:57:49.000Z",
+  "updated_at": "2026-08-19T07:57:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483477,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diane613/Affine-5CoH57K4w6fpRyyaZc9soibxxVPrNP9o6oS4Uccuv8RXUeCh ...",
+      "url": "https://huggingface.co/diane613/Affine-5CoH57K4w6fpRyyaZc9soibxxVPrNP9o6oS4Uccuv8RXUeCh",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "diane613 (Diane101) - Hugging Face",
+      "url": "https://huggingface.co/diane613",
+      "snippet": "Sort: Recently updated. diane613/Affine-5CQLBK7Mmw1vsk7eQcBok9Qn44JNU5YVrfNmZpJHPxLV271B. 35B • Updated 2 days ago • 73. diane613/Affine ..."
+    },
+    {
+      "title": "diane613/Affine-5CQLBK7Mmw1vsk7eQcBok9Qn44JNU5YVrfNmZpJHPxLV271B ...",
+      "url": "https://huggingface.co/diane613/Affine-5CQLBK7Mmw1vsk7eQcBok9Qn44JNU5YVrfNmZpJHPxLV271B",
+      "snippet": "diane613 / Affine-5CQLBK7Mmw1vsk7eQcBok9Qn44JNU5YVrfNmZpJHPxLV271B like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new ..."
+    },
+    {
+      "title": "crazyape777/fk-vitaminc61-affine-5eqdtdzqle-power · Hugging Face",
+      "url": "https://huggingface.co/crazyape777/fk-vitaminc61-affine-5eqdtdzqle-power",
+      "snippet": "Duplicated from vitaminc61/affine-5eqdtdzqle-power crazyape777 / fk-vitaminc61-affine-5eqdtdzqle-power like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rykerdz/j3fr-qwen",
+  "slug": "rykerdz-j3fr-qwen",
+  "author": "rykerdz",
+  "url": "https://huggingface.co/rykerdz/j3fr-qwen",
+  "created_at": "2026-08-19T11:14:09.000Z",
+  "updated_at": "2026-08-19T11:17:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 456010480,
+  "parameters_human": "456.0M",
+  "storage_bytes": 6698255936,
+  "storage_human": "6.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen 3 — Alibaba&#x27;s Most Powerful AI Model - Singularity Moments",
+      "url": "https://www.singularitymoments.com/qwen-3-ai-model/",
+      "snippet": "The 32B model requires a 24GB GPU or two smaller cards with tensor parallelism. For production deployments, vLLM offers high-throughput serving with continuous batching. Qwen 3 is also available on Together AI, Fireworks AI, and Alibaba&#x27;s own DashScope API for those preferring managed inference."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team 2024)."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Qwen Studio If you simply want to try Qwen3.8, Qwen Studio is an AI assistant for everyone. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

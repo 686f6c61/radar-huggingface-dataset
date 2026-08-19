@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nolimitsxl/bert-tiny-sst2-seed2",
+  "slug": "nolimitsxl-bert-tiny-sst2-seed2",
+  "author": "nolimitsxl",
+  "url": "https://huggingface.co/nolimitsxl/bert-tiny-sst2-seed2",
+  "created_at": "2026-08-19T06:58:01.000Z",
+  "updated_at": "2026-08-19T06:58:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4386178,
+  "parameters_human": "4.4M",
+  "storage_bytes": 17549312,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gokuls/BERT-tiny-sst2 · Hugging Face",
+      "url": "https://huggingface.co/gokuls/BERT-tiny-sst2",
+      "snippet": "BERT-tiny-sst2 This model is a fine-tuned version of google/bert_uncased_L-2_H-128_A-2 on the glue dataset. It achieves the following results on the evaluation set: Loss: 0.4422 Accuracy: 0.8372 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed ..."
+    },
+    {
+      "title": "VityaVitalich/bert-tiny-sst2 · Hugging Face",
+      "url": "https://huggingface.co/VityaVitalich/bert-tiny-sst2",
+      "snippet": "Bert Tiny for SST2 This model is a fine-tuned version of M-FAC/bert-tiny-finetuned-sst2 on the sst2 dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "GitHub - yinmingjun/TinyBERT",
+      "url": "https://github.com/yinmingjun/TinyBERT",
+      "snippet": "TinyBERT is 7.5x smaller and 9.4x faster on inference than BERT-base and achieves competitive performances in the tasks of natural language understanding. It performs a novel transformer distillation at both the pre-training and task-specific learning stages. The overview of TinyBERT learning is illustrated as follows: For more details about the techniques of TinyBERT, refer to the paper."
+    },
+    {
+      "title": "gokuls/BERT-tiny-sst2 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/70274",
+      "snippet": "This model is a fine-tuned version of google/bert_uncased_L-2_H-128_A-2 on the glue dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "GitHub - YJiangcm/SST-2-sentiment-analysis: Use BiLSTM_attention, BERT ...",
+      "url": "https://github.com/YJiangcm/SST-2-sentiment-analysis",
+      "snippet": "SST-2-sentiment-analysis Use BiLSTM_attention, BERT, RoBERTa, XLNet and ALBERT models to classify the SST-2 data set based on pytorch. These codes are recommended to run in Google Colab, where you may use free GPU resources."
+    }
+  ]
+}

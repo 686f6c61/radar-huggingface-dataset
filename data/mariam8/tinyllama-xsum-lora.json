@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mariam8/tinyllama-xsum-lora",
+  "slug": "mariam8-tinyllama-xsum-lora",
+  "author": "mariam8",
+  "url": "https://huggingface.co/mariam8/tinyllama-xsum-lora",
+  "created_at": "2026-08-19T09:57:27.000Z",
+  "updated_at": "2026-08-19T10:03:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9034656,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS-AI-LA/TinyLlama-Fine-tuning-for-Text-Summarization - GitHub",
+      "url": "https://github.com/CS-AI-LA/TinyLlama-Fine-tuning-for-Text-Summarization",
+      "snippet": "TinyLlama Fine-tuning for Text Summarization Fine-tuning TinyLlama-1.1B on the XSum dataset for abstractive text summarization using LoRA (Low-Rank Adaptation)."
+    },
+    {
+      "title": "TinyLlama/TinyLlama-1.1B-Chat-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TinyLlama: An Open-Source Small Language Model - arXiv.org",
+      "url": "https://arxiv.org/html/2401.02385v2",
+      "snippet": "Abstract We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for up to 3 epochs 1. Building on the architecture and tokenizer of Llama 2 (Touvron et al., 2023b, ), TinyLlama leverages various advances contributed by the open-source community, e.g., FlashAttention (Dao,, 2023) and Lit-GPT (Lightning-AI,, 2023), achieving better computational efficiency ..."
+    },
+    {
+      "title": "Haary/tinyllama-lora-model · Hugging Face",
+      "url": "https://huggingface.co/Haary/tinyllama-lora-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-Tune TinyLlama Locally (LoRA + Offline Inference) - GitHub",
+      "url": "https://github.com/hassanhabib/AI.Llama.Traing.Offline",
+      "snippet": "Download the TinyLlama base model locally Fine-tune with LoRA using a custom data.jsonl Merge LoRA weights into the base model (Optionally) Convert to .gguf and run offline with llama.cpp"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Cloth-splatters/dexgarmentlab-folding-lifting-dynamics-gps",
+  "slug": "cloth-splatters-dexgarmentlab-folding-lifting-dynamics-gps",
+  "author": "Cloth-splatters",
+  "url": "https://huggingface.co/Cloth-splatters/dexgarmentlab-folding-lifting-dynamics-gps",
+  "created_at": "2026-08-04T04:53:55.000Z",
+  "updated_at": "2026-08-19T06:32:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115595800,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloth-splatters/dexgarmentlab-folding-lifting-meshes · Datasets at ...",
+      "url": "https://huggingface.co/datasets/Cloth-splatters/dexgarmentlab-folding-lifting-meshes",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cloth-splatters/dexgarmentlab-folding-lifting-dynamics-gps · Hugging Face",
+      "url": "https://huggingface.co/Cloth-splatters/dexgarmentlab-folding-lifting-dynamics-gps",
+      "snippet": "dexgarmentlab-folding-lifting-dynamics-gps GPSDynamicsModel — graph-based (GNN + Transformer) dynamics model for variable-vertex cloth meshes. Given the 3 previous mesh frames and a 3D gripper action, predicts the next 5 mesh frames via DDPM diffusion, using each cloth&#x27;s own rest state and topology (no global template)."
+    },
+    {
+      "title": "dexgarmentlab-folding-lifting-meshes - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/cloth-splatters-dexgarmentlab-folding-lifting-meshes",
+      "snippet": "Simulated garment-manipulation demonstrations for training cloth state-estimation and dynamics models on variable-vertex meshes, recorded with DexGarmentLab assets."
+    },
+    {
+      "title": "DexGarmentLab: Dexterous Garment Manipulation Environment with ...",
+      "url": "https://arxiv.org/html/2505.11032v3",
+      "snippet": "Therefore, we propose DexGarmentLab, the first environment specifically designed for dexterous (especially bimanual) garment manipulation, which features large-scale high-quality 3D assets for 15 task scenarios, and refines simulation techniques tailored for garment modeling to reduce the sim-to-real gap."
+    },
+    {
+      "title": "DexGarmentLab - wayrise.github.io",
+      "url": "https://wayrise.github.io/DexGarmentLab/",
+      "snippet": "DexGarmentLab includes three major components: - Environment: We propose Dexterous Garment Manipulation Environment with 15 different task scenes (especially for bimanual coordination) based on 2500+ garments. - Automated Data Collection: Because of the same structure of category-level garment, category-level generalization is accessible, which empowers our proposed Automated Data Collection ..."
+    }
+  ]
+}

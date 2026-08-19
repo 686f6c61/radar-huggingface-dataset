@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "cjfrown/taxi-assignment",
+  "slug": "cjfrown-taxi-assignment",
+  "author": "cjfrown",
+  "url": "https://huggingface.co/cjfrown/taxi-assignment",
+  "created_at": "2026-08-19T07:57:18.000Z",
+  "updated_at": "2026-08-19T07:57:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141448,
+  "storage_human": "141448 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anagha1/Taxi-assignment · Hugging Face",
+      "url": "https://huggingface.co/Anagha1/Taxi-assignment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AIcrowd | Solution for submission 129594 | Posts",
+      "url": "https://d3qvx1ggyg4lu1.cloudfront.net/showcase/solution-for-submission-129594",
+      "snippet": "A detailed solution for submission 129594 submitted for challenge IIT-M RL-ASSIGNMENT-2-TAXI michael_mervin_christy_cs17b10816 April 2021"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Model AI Assignments",
+      "url": "http://modelai.gettysburg.edu/",
+      "snippet": "Model AI Assignments is the largest, open-access, peer-reviewed AI assignment repository. Accepted assignments are presented in sessions at the Educational Advances in Artificial Intelligence Symposium, collocated with AAAI."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    }
+  ]
+}

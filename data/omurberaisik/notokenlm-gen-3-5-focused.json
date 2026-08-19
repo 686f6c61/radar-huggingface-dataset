@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "omurberaisik/NoTokenLM-Gen-3.5-Focused",
+  "slug": "omurberaisik-notokenlm-gen-3-5-focused",
+  "author": "omurberaisik",
+  "url": "https://huggingface.co/omurberaisik/NoTokenLM-Gen-3.5-Focused",
+  "created_at": "2026-08-19T09:52:02.000Z",
+  "updated_at": "2026-08-19T10:20:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "notoken_gen35",
+    "character-level",
+    "tokenizer-free",
+    "byte-level",
+    "from-scratch",
+    "transformer",
+    "text-generation",
+    "rope",
+    "rmsnorm",
+    "swiglu",
+    "small-language-model",
+    "notoken_gen",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9053520,
+  "parameters_human": "9.1M",
+  "storage_bytes": 38029934,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omurberaisik/NoTokenLM-Gen-3.5 · Hugging Face",
+      "url": "https://huggingface.co/omurberaisik/NoTokenLM-Gen-3.5",
+      "snippet": "Head-to-head: this model vs. its predecessor (NoTokenLM-Gen-2.5) We compared this model against its direct predecessor (Gen-2.5, ~3.1M parameters, GPT-2-style architecture: GELU, LayerNorm, learned position embeddings) on 8 held-out English sentences the models weren&#x27;t trained on, by loading both models&#x27; raw weights directly and checking which one predicts each sentence better."
+    },
+    {
+      "title": "omurberaisik (cxgzad) - Hugging Face",
+      "url": "https://huggingface.co/omurberaisik",
+      "snippet": "Chat with the HoloCom NB7 AI assistant. omurberaisik about 8 hours ago. models 5. Sort: Recently updated . omurberaisik/holocom-lite-v8_test_ai"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
+    },
+    {
+      "title": "Gemini 3.5: frontier intelligence with action - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "snippet": "At Google I/O we released Gemini 3.5, our latest series of models combining frontier intelligence with action."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "The workshop guides developers in building a report generation agent using NVIDIA Nemotron and LangGraph, focusing on four core considerations of AI agents: model, tools, memory and state, and routing."
+    }
+  ]
+}

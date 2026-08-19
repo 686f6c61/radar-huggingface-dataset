@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "chanubc/robot-kitchen-nadir-yolo11s",
+  "slug": "chanubc-robot-kitchen-nadir-yolo11s",
+  "author": "chanubc",
+  "url": "https://huggingface.co/chanubc/robot-kitchen-nadir-yolo11s",
+  "created_at": "2026-08-19T11:03:29.000Z",
+  "updated_at": "2026-08-19T11:03:49.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "object-detection",
+    "yolo",
+    "yolo11",
+    "synthetic-data",
+    "overhead",
+    "top-down",
+    "kitchen-safety",
+    "robotics",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57104428,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chanubc/overhead-person-yolo11 · Hugging Face",
+      "url": "https://huggingface.co/chanubc/overhead-person-yolo11",
+      "snippet": "overhead-person-yolo11s YOLO11s fine-tuned for overhead / ceiling-camera person detection. Part of an on-device (browser WebGPU) cooking-robot safety system."
+    },
+    {
+      "title": "YOLO11s Model by Zheng Chen - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/zheng-chen/yolo11/yolo11s",
+      "snippet": "YOLO11s model from the YOLO11 project by Zheng Chen. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "YOLO11s Model by Viper Woodpecker - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/viper-woodpecker/yolo11/yolo11s",
+      "snippet": "YOLO11s model from the YOLO11 project by Viper Woodpecker. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "GitHub - chanubc/overhead-person-yolo11: YOLO11s fine-tuned for ...",
+      "url": "https://github.com/chanubc/overhead-person-yolo11",
+      "snippet": "YOLO11s fine-tuned for overhead/ceiling-camera person detection (on-device cooking-robot safety) - chanubc/overhead-person-yolo11"
+    },
+    {
+      "title": "GitHub - ultralytics/yolo11: Ultralytics YOLO11 discovery and ...",
+      "url": "https://github.com/ultralytics/yolo11",
+      "snippet": "🧩 Integrations Ultralytics integrations extend dataset labeling, training, visualization, deployment, and model management workflows. Explore Ultralytics Platform and the Ultralytics Integrations docs to connect YOLO11 with your AI stack, including popular export formats like TensorRT, ONNX, CoreML, and TFLite."
+    }
+  ]
+}

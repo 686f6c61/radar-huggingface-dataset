@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "LuffyTheFox/Gemma-4-E4B-Uncensored-Genesis-GGUF",
+  "slug": "luffythefox-gemma-4-e4b-uncensored-genesis-gguf",
+  "author": "LuffyTheFox",
+  "url": "https://huggingface.co/LuffyTheFox/Gemma-4-E4B-Uncensored-Genesis-GGUF",
+  "created_at": "2026-08-19T07:58:06.000Z",
+  "updated_at": "2026-08-19T08:45:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "abliterated",
+    "vision",
+    "multimodal",
+    "audio",
+    "image-text-to-text",
+    "en",
+    "multilingual",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 8133226464,
+  "storage_human": "8.1 GB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LuffyTheFox (Alexey Zakharchenko) - Hugging Face",
+      "url": "https://huggingface.co/LuffyTheFox",
+      "snippet": "LLM stability debugging on GGUF binary level"
+    },
+    {
+      "title": "LuffyTheFox (Alexey Zakharchenko) - Hugging Face",
+      "url": "https://huggingface.co/LuffyTheFox/models",
+      "snippet": "LLM stability debugging on GGUF binary level. Recent Activity. updated a model about 4 hours ago. LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V8-GGUF"
+    },
+    {
+      "title": "Gemma 4 Uncensored: Abliterated GGUF Download",
+      "url": "https://gemma-4.net/uncensored",
+      "snippet": "Find uncensored and abliterated Gemma 4 GGUF variants, learn how ablation works, where to download them, and responsible-use guidance."
+    },
+    {
+      "title": "Are Gemma 4 E4B third-party derivatives reliable? Model sources and ...",
+      "url": "https://knightli.com/en/2026/04/18/gemma-4-e4b-uncensored-vs-official/",
+      "snippet": "Verify the relationship between the third-party Gemma 4 E4B derived weights and Google&#x27;s official model, and provide a reproducible comparison method for completeness, capability, rejection and security behavior."
+    },
+    {
+      "title": "Gemma 4 Uncensored (autoresearch results) | Hacker News",
+      "url": "https://news.ycombinator.com/item?id=47651216",
+      "snippet": "It ran 22 experiments across the 4 models, discovered the false-positive problem in standard refusal markers, built the cross-dataset evaluation, and implemented the MoE expert abliteration when dense-only wasn&#x27;t enough. Full experiment history and code in the repo. Downloads Each model has bf16 safetensors + GGUF (Q4_K_M, Q8_0): ... Quick start:"
+    }
+  ]
+}

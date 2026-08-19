@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "enet45/kotoba-whisper-v2.1-mlx-fp16",
+  "slug": "enet45-kotoba-whisper-v2-1-mlx-fp16",
+  "author": "enet45",
+  "url": "https://huggingface.co/enet45/kotoba-whisper-v2.1-mlx-fp16",
+  "created_at": "2026-08-19T07:17:53.000Z",
+  "updated_at": "2026-08-19T07:19:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1509028039,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "enet45/kotoba-whisper-v2.1 · Hugging Face",
+      "url": "https://huggingface.co/enet45/kotoba-whisper-v2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "enet45/kotoba-whisper-v2.1 at main - Hugging Face",
+      "url": "https://huggingface.co/enet45/kotoba-whisper-v2.1/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - kotoba-tech/kotoba-whisper · GitHub",
+      "url": "https://github.com/kotoba-tech/kotoba-whisper",
+      "snippet": "The following command demonstrates how to initialise a student model from the Whisper checkpoint, with all 32 encoder layer and 2 decoder layers. The 2 student decoder layers are copied from teacher layers 1 and 32 respectively, as the maximally spaced layers:"
+    },
+    {
+      "title": "Kotoba-Whisper-v2.1 Open-source Japanese Speech Recognition Model ...",
+      "url": "https://model.aibase.com/models/details/1915693345797726209",
+      "snippet": "Kotoba-Whisper-v2.1 is a Japanese automatic speech recognition (ASR) model based on Whisper, integrating an additional post-processing stack that automatically adds punctuation marks."
+    },
+    {
+      "title": "Kotoba - GitHub",
+      "url": "https://github.com/kotoba-tech",
+      "snippet": "moshi Public Forked from kyutai-labs/moshi Moshi is a speech-text foundation model and full-duplex spoken dialogue framework. It uses Mimi, a state-of-the-art streaming neural audio codec."
+    }
+  ]
+}

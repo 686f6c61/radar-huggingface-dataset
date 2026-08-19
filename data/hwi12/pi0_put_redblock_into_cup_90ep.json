@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hwi12/pi0_put_redblock_into_cup_90ep",
+  "slug": "hwi12-pi0_put_redblock_into_cup_90ep",
+  "author": "hwi12",
+  "url": "https://huggingface.co/hwi12/pi0_put_redblock_into_cup_90ep",
+  "created_at": "2026-08-19T05:51:43.000Z",
+  "updated_at": "2026-08-19T05:51:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:hwi12/put_redblock_into_cup_90ep",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11116688,
+  "storage_human": "11 MB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hwi12 (KimKwanHwi) - Hugging Face",
+      "url": "https://huggingface.co/hwi12/models",
+      "snippet": "User profile of KimKwanHwi on Hugging Face"
+    },
+    {
+      "title": "hwi12/pi0_red_block_to_plate · Hugging Face",
+      "url": "https://huggingface.co/hwi12/pi0_red_block_to_plate",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mak-P90 / ai-jailbreak-archive - GitHub",
+      "url": "https://github.com/Mak-P90/ai-jailbreak-archive",
+      "snippet": "Mak-P90 / ai-jailbreak-archive A curated archive of jailbreak prompts, prompt injections, and related techniques discovered across major AI models, including OpenAI, Gemini, Claude, Grok, and others. This repository documents prompt behavior and model responses for research, experimentation, and red-teaming purposes."
+    },
+    {
+      "title": "GitHub - NVIDIA/TensorRT-Model-Connect: From PyTorch model to end-to ...",
+      "url": "https://github.com/NVIDIA/TensorRT-Model-Connect",
+      "snippet": "TensorRT Model Connect is an extensive collection of AI Model reference implementations in C++, on top of NVIDIA TensorRT. Model Connect is powered by an agentic workflow that continuously adds support for upcoming models, drastically reducing integration effort on user side and time until new models become compatible."
+    },
+    {
+      "title": "5. Al Vision Projects — MasterPi v1.0 documentation",
+      "url": "https://docs.hiwonder.com/projects/MasterPi/en/latest/docs/9.ai_vision_project_course.html",
+      "snippet": "5. Al Vision Projects 5.1 Single Color Recognition In this section, the camera detects colors. When a red ball is recognized, the buzzer will emit a beep, and the red ball will be highlighted in the transmitted image with \" Color: red \" displayed. 5.1.1 Program Description The implementation of color recognition consists of two parts: color detection and execution feedback after ..."
+    }
+  ]
+}

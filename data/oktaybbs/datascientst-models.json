@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OKTAYBBS/DataScientst-models",
+  "slug": "oktaybbs-datascientst-models",
+  "author": "OKTAYBBS",
+  "url": "https://huggingface.co/OKTAYBBS/DataScientst-models",
+  "created_at": "2026-08-19T08:20:06.000Z",
+  "updated_at": "2026-08-19T10:28:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "keras",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "sklearn",
+    "tensorflow",
+    "random-forest",
+    "cnn",
+    "clustering",
+    "nlp",
+    "computer-vision",
+    "recommendation-system",
+    "time-series",
+    "streamlit",
+    "tabular-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340029791,
+  "storage_human": "340 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Data Science Team - GitHub",
+      "url": "https://github.com/business-science/ai-data-science-team",
+      "snippet": "AI Data Science Team is a Python library of specialized agents for common data science workflows, plus a flagship app: AI Pipeline Studio. The Studio turns your work into a visual, reproducible pipeline, while the AI team handles data loading, cleaning, visualization, and modeling."
+    },
+    {
+      "title": "How to Build AI Models with Data Science Tools - Analytics Insight",
+      "url": "https://www.analyticsinsight.net/artificial-intelligence/how-to-build-ai-models-with-data-science-tools",
+      "snippet": "Artificial Intelligence (AI) and machine learning are transforming industries by enabling advanced data analysis and decision-making. Building AI models requires a strong understanding of data science tools and techniques. In this guide, we&#x27;ll explore building AI models using key data science tools, covering the essential steps, tools, and best practices."
+    },
+    {
+      "title": "OKTAYBBS (ALİ OKTAY BBUS) - Hugging Face",
+      "url": "https://huggingface.co/OKTAYBBS/datasets",
+      "snippet": "User profile of ALİ OKTAY BBUS on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "The AI Scientist: Towards Fully Automated - GitHub",
+      "url": "https://github.com/SakanaAI/AI-Scientist",
+      "snippet": "We&#x27;re excited to introduce The AI Scientist, the first comprehensive system for fully automatic scientific discovery, enabling Foundation Models such as Large Language Models (LLMs) to perform research independently. We provide all runs and data from our paper here, where we run each base model on each template for approximately 50 ideas."
+    }
+  ]
+}

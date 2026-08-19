@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/LibreGemma4e4b-GGUF",
   "created_at": "2026-08-16T01:39:40.000Z",
-  "updated_at": "2026-08-16T03:15:03.000Z",
+  "updated_at": "2026-08-18T18:01:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 555,
+  "downloads_30d": 871,
   "trending_score": 0,
   "parameters": 7518069290,
   "parameters_human": "7.52B",

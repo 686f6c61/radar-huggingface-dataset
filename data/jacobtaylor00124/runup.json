@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jacobtaylor00124/runup",
+  "slug": "jacobtaylor00124-runup",
+  "author": "jacobtaylor00124",
+  "url": "https://huggingface.co/jacobtaylor00124/runup",
+  "created_at": "2025-09-24T14:15:09.000Z",
+  "updated_at": "2026-08-19T11:37:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 273670043029,
+  "storage_human": "273.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jacobtaylor00124/runup · Hugging Face",
+      "url": "https://huggingface.co/jacobtaylor00124/runup",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jacobtaylor00124 (Taylor) - Hugging Face",
+      "url": "https://huggingface.co/jacobtaylor00124",
+      "snippet": "AI & ML interests ... Recent Activity a model 13 days ago ... a model 14 days ago ... a model about 1 month ago"
+    },
+    {
+      "title": "www.runup.ai",
+      "url": "http://www.runup.ai/index",
+      "snippet": "www.runup.ai"
+    },
+    {
+      "title": "Runway AI · Image and Video Generator",
+      "url": "https://runway-ai.app/",
+      "snippet": "Generate images and video with AI. Text to video, image to video, plus more. Runway&#x27;s AI image and video generation tools trusted by millions worldwide"
+    },
+    {
+      "title": "The AI Developer Cloud | Runpod",
+      "url": "https://www.runpod.io/",
+      "snippet": "AI agent infrastructure is the compute, storage, and networking layer that AI agents depend on to run, call tools, store memory, and scale. Runpod supports it across three layers: Serverless endpoints for fast inference tool calls, persistent Pods for stateful agents that need to stay running, and network volumes for shared memory and model ..."
+    }
+  ]
+}

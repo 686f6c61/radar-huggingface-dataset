@@ -5,7 +5,7 @@
   "author": "mondk",
   "url": "https://huggingface.co/mondk/GGUF.chatgpt-gpt-codex-V2",
   "created_at": "2026-08-17T14:31:19.000Z",
-  "updated_at": "2026-08-19T03:12:07.000Z",
+  "updated_at": "2026-08-19T10:08:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 84,
+  "downloads_30d": 207,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

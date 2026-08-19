@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-baseline-nl_never_8-s42",
+  "slug": "cisco1963-llmplasticity-baseline-nl_never_8-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-baseline-nl_never_8-s42",
+  "created_at": "2026-08-19T08:37:43.000Z",
+  "updated_at": "2026-08-19T08:43:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 10453378225,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cisco1963/llmplasticity-baseline-en_never_64-s42 · Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-baseline-en_never_64-s42",
+      "snippet": "Cisco1963 / llmplasticity-baseline-en_never_64-s42 like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Cisco1963 (Hongao) - Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/models",
+      "snippet": "Organizations Cisco1963&#x27;s models502 Sort: Recently updated Cisco1963/llmplasticity-baseline-zh_en_instant_64-s42 0.1B•Updated about 11 hours ago"
+    },
+    {
+      "title": "llmplasticity-en_never_8-seed42 API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/Cisco1963/llmplasticity-en_never_8-seed42",
+      "snippet": "Deploy llmplasticity-en_never_8-seed42 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Plasticity",
+      "url": "https://www.plasticity.xyz/",
+      "snippet": "Plasticity is a 3D modeling and CAD program that is easy to use and has a focus on artistic workflows."
+    },
+    {
+      "title": "Cisco1963/llmplasticity-fi_never_8-seed42 - Fast, Reliable, and ...",
+      "url": "https://friendli.ai/models/Cisco1963/llmplasticity-fi_never_8-seed42",
+      "snippet": "Run Cisco1963/llmplasticity-fi_never_8-seed42 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

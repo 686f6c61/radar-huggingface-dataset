@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "id": "braydenh563/Astraea-Prompt-Architect-Chat-v10",
+  "slug": "braydenh563-astraea-prompt-architect-chat-v10",
+  "author": "braydenh563",
+  "url": "https://huggingface.co/braydenh563/Astraea-Prompt-Architect-Chat-v10",
+  "created_at": "2026-06-06T06:55:03.000Z",
+  "updated_at": "2026-08-19T11:00:53.000Z",
+  "license": "llama-3.1-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "prompt-engineering",
+    "prompt-architect",
+    "meta-prompting",
+    "llama-3.1",
+    "lora",
+    "unsloth",
+    "instruction-tuned",
+    "conversational",
+    "system-prompt-design",
+    "en-AU",
+    "text-generation",
+    "en",
+    "dataset:braydenh563/Astraea_Chat_v4.1",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "license:llama3.1",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 206,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4936457006,
+  "storage_human": "4.9 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Prompt Design Quality (internal rubric)",
+      "dataset": "Astraea Chat Eval Set",
+      "metric": "Clarity",
+      "value": 4.5
+    },
+    {
+      "task": "Prompt Design Quality (internal rubric)",
+      "dataset": "Astraea Chat Eval Set",
+      "metric": "Constraint Coverage",
+      "value": 4.3
+    },
+    {
+      "task": "Prompt Design Quality (internal rubric)",
+      "dataset": "Astraea Chat Eval Set",
+      "metric": "Structure",
+      "value": 4.7
+    },
+    {
+      "task": "Prompt Design Quality (internal rubric)",
+      "dataset": "Astraea Chat Eval Set",
+      "metric": "Safety",
+      "value": 4.6
+    },
+    {
+      "task": "Prompt Design Quality (internal rubric)",
+      "dataset": "Astraea Chat Eval Set",
+      "metric": "Feasibility",
+      "value": 4.4
+    },
+    {
+      "task": "Prompt Design Quality (internal rubric)",
+      "dataset": "Astraea Chat Eval Set",
+      "metric": "Effectiveness",
+      "value": 4.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "braydenh563/Astraea-Prompt-Architect-Chat-v10 · Discussions",
+      "url": "https://huggingface.co/braydenh563/Astraea-Prompt-Architect-Chat-v10/discussions",
+      "snippet": "Instructions to use braydenh563/Astraea-Prompt-Architect-Chat-v10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "braydenh563 (Brayden Hoyle) - Hugging Face",
+      "url": "https://huggingface.co/braydenh563",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 2 hours ago ... updated a dataset about 2 hours ago"
+    },
+    {
+      "title": "Prompt Architect",
+      "url": "https://promptarchitect.art/",
+      "snippet": "A modular, web-based prompt-building tool inspired by Windows 98. Designed at Hochschule Darmstadt — Faculty of Design."
+    },
+    {
+      "title": "Prompt Architects — AI Prompt Generator for ChatGPT, Claude & Gemini",
+      "url": "https://prompt-architects.com/",
+      "snippet": "Generate, enhance & save AI prompts in one click. Works with ChatGPT, Claude, Gemini, Midjourney, Veo3 & Kling. Free Chrome extension — 5★ rated."
+    },
+    {
+      "title": "Prompt Architect — AI-Powered Work Task Assistant",
+      "url": "https://promptarchitect.dev/",
+      "snippet": "Prompt Architect analyzes your work task, scores its complexity, and builds an optimized AI prompt — ready to paste or inject directly into ChatGPT, Claude, or Copilot."
+    }
+  ]
+}

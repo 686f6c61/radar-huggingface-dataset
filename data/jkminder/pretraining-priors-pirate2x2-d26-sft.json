@@ -5,7 +5,7 @@
   "author": "jkminder",
   "url": "https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-sft",
   "created_at": "2026-08-17T15:01:35.000Z",
-  "updated_at": "2026-08-17T15:01:54.000Z",
+  "updated_at": "2026-08-17T17:02:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 972947456,
   "parameters_human": "972.9M",

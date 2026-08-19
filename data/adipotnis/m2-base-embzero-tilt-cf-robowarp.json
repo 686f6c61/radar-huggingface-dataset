@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "adipotnis/m2-base-embzero-tilt-cf-robowarp",
+  "slug": "adipotnis-m2-base-embzero-tilt-cf-robowarp",
+  "author": "adipotnis",
+  "url": "https://huggingface.co/adipotnis/m2-base-embzero-tilt-cf-robowarp",
+  "created_at": "2026-08-19T08:09:50.000Z",
+  "updated_at": "2026-08-19T08:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "pi0.5",
+    "libero",
+    "openpi",
+    "counterfactual",
+    "flow-matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441317591,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adipotnis (Aditya Potnis) - Hugging Face",
+      "url": "https://huggingface.co/adipotnis/datasets",
+      "snippet": "User profile of Aditya Potnis on Hugging Face"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Aditya Potnis adipotnis - GitHub",
+      "url": "https://github.com/adipotnis",
+      "snippet": "Block or report adipotnis Block user msteamsrecording-sorter msteamsrecording-sorter Public Python 2 tello-projects tello-projects Public Sandbox of projects on Tello Python 1 ros1_bridge_ws ros1_bridge_ws Public Dockerfile 1 1 tendon_multiplexer_arm tendon_multiplexer_arm Public Basic Arduino code to control Tendon actuated Mechanical ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Dhanu-Sree-Suresh/tds-carbon-card",
+  "slug": "dhanu-sree-suresh-tds-carbon-card",
+  "author": "Dhanu-Sree-Suresh",
+  "url": "https://huggingface.co/Dhanu-Sree-Suresh/tds-carbon-card",
+  "created_at": "2026-08-19T11:22:00.000Z",
+  "updated_at": "2026-08-19T11:22:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dhanu-Sree-Suresh (Dhanu Sree Suresh) - Hugging Face",
+      "url": "https://huggingface.co/Dhanu-Sree-Suresh",
+      "snippet": "AI & ML interests ... Recent Activity updated a bucket 1 day ago ... updated a Space 1 day ago"
+    },
+    {
+      "title": "anant-venkatesh1/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/anant-venkatesh1/tds-carbon-card",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dhanu Sree S S dhanusree1408 - GitHub",
+      "url": "https://github.com/dhanusree1408",
+      "snippet": "AgriPulse-NPK-calculator AgriPulse-NPK-calculator Public AI-powered Hyper-Local NPK Fertilizer Recommendation and Carbon Credit Calculator using Streamlit and Python."
+    },
+    {
+      "title": "Dhanu-Sree-Suresh (Dhanu Sree Suresh) · GitHub",
+      "url": "https://github.com/Dhanu-Sree-Suresh",
+      "snippet": "Dhanu-Sree-Suresh has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "‏Dhanu Sree Suresh‏ - ‏Ex-Enterprise Data & Analytics Intern at ...",
+      "url": "https://ae.linkedin.com/in/dhanu-sree-suresh-846614327",
+      "snippet": "‏Ex-Enterprise Data &amp; Analytics Intern at Emirates | Computer Science Student Specializing in Artificial Intelligence | Tech Enthusiast | Recipient of The Diana Award‏ · ‏I am a passionate student eager to embark on a journey into the world of Artificial Intelligence, Data Science and Technology. Driven by curiosity for problem-solving and a love for coding, I have immersed myself ..."
+    }
+  ]
+}

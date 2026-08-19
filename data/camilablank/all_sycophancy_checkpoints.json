@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "camilablank/all_sycophancy_checkpoints",
+  "slug": "camilablank-all_sycophancy_checkpoints",
+  "author": "camilablank",
+  "url": "https://huggingface.co/camilablank/all_sycophancy_checkpoints",
+  "created_at": "2026-08-01T23:24:49.000Z",
+  "updated_at": "2026-08-19T11:30:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "dpo",
+    "sycophancy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586790987754,
+  "storage_human": "586.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "camilablank/all_sycophancy_checkpoints · Hugging Face",
+      "url": "https://huggingface.co/camilablank/all_sycophancy_checkpoints",
+      "snippet": "Sycophancy-confidence checkpoints Preference-trained OLMo-3 checkpoints from the sycophancy-confidence project. Each top-level folder is one training run (HF transformers -loadable weights). DeepSpeed global_step* resume state is omitted."
+    },
+    {
+      "title": "camilablank (Camila Blank) - Hugging Face",
+      "url": "https://huggingface.co/camilablank",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 13 hours ago ... published a dataset 3 days ago"
+    },
+    {
+      "title": "camilablank - Repositories - GitHub",
+      "url": "https://github.com/camilablank?tab=repositories",
+      "snippet": "undergrad at stanford. camilablank has 5 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Syco-bench: A Benchmark for LLM Sycophancy",
+      "url": "https://syco-bench.com/",
+      "snippet": "Syco-bench is a four-part benchmark to evaluate how much models flatter and defer to their users. It consists of four tests: Picking Sides: How much the model sides with the user over a friend in an argument Mirroring: How much the model&#x27;s position is affected by the position the user takes Attribution Bias: How much the model favors an idea attributed to the user vs someone else Delusion ..."
+    },
+    {
+      "title": "camilablank (Camila Blank) - Hugging Face",
+      "url": "https://huggingface.co/camilablank/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 2 hours ago"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Kushan1Uom/dAIsy-qwen-adapters-F16-GGUF",
+  "slug": "kushan1uom-daisy-qwen-adapters-f16-gguf",
+  "author": "Kushan1Uom",
+  "url": "https://huggingface.co/Kushan1Uom/dAIsy-qwen-adapters-F16-GGUF",
+  "created_at": "2026-08-19T10:11:15.000Z",
+  "updated_at": "2026-08-19T10:11:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "gguf",
+    "base_model:adapter:unsloth/Qwen2.5-3B-Instruct",
+    "lora",
+    "transformers",
+    "llama-cpp",
+    "gguf-my-lora",
+    "text-generation",
+    "base_model:Kushan1Uom/dAIsy-qwen-adapters",
+    "base_model:adapter:Kushan1Uom/dAIsy-qwen-adapters",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29933568,
+  "parameters_human": "29.9M",
+  "storage_bytes": 59902112,
+  "storage_human": "60 MB",
+  "base_model": "Kushan1Uom/dAIsy-qwen-adapters",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kushan1Uom (KDanhawoor) - Hugging Face",
+      "url": "https://huggingface.co/Kushan1Uom",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 6 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "Qwen/Qwen3-VL-8B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - QwenLM/Qwen3"
+    },
+    {
+      "title": "Unsloth Model Catalog | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/get-started/unsloth-model-catalog",
+      "snippet": "Get Started 🔮 Unsloth Model Catalog Unsloth LLMs directory for all Unsloth Dynamic GGUF, 4-bit, NVFP4 models on Hugging Face. Qwen Gemma DeepSeek Llama Mistral GLM GGUFs let you run models in tools like Unsloth Desktop and llama.cpp. Use Instruct (4-bit) safetensors for inference or fine-tuning via Unsloth. New & recommended models: Model ..."
+    }
+  ]
+}

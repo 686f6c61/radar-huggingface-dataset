@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/grug-27b-v1.1-GGUF",
+  "slug": "mradermacher-grug-27b-v1-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/grug-27b-v1.1-GGUF",
+  "created_at": "2026-08-19T11:22:33.000Z",
+  "updated_at": "2026-08-19T11:36:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 171154567040,
+  "storage_human": "171.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/grug-27b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/grug-27b-i1-GGUF",
+      "snippet": "Thanks I thank my company, nethype GmbH, for letting me use its servers and providing upgrades to my workstation to enable this work in my free time. Additional thanks to @nicoboss for giving me access to his private supercomputer, enabling me to provide many more imatrix quants, at much higher quality, than I would otherwise be able to. Downloads last month - GGUF Model size 27B params ..."
+    },
+    {
+      "title": "mradermacher/grug-27b-i1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/grug-27b-i1-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IQ4 and IQ3 quants of Qwen3.8 Aug-18-2026 · GitHub",
+      "url": "https://gist.github.com/Vmarcelo49/98b382ec8f3a34e44035ce365cba46f4",
+      "snippet": "IQ4 and IQ3 quants of Qwen3.8 Aug-18-2026. GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Entity | KnowYourModel",
+      "url": "https://www.knowyourmodel.ai/models/huggingface%3Amradermacher%2Fgrug-27b-i1-GGUF",
+      "snippet": "View entity details and skills Home Models Huggingface%3Amradermacher%2Fgrug-27b-i1-GGUF Entities huggingface/huggingface:mradermacher/grug-27b-i1-GGUF"
+    }
+  ]
+}

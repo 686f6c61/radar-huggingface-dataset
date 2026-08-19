@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/mlcommons-ResNet8-CIFAR10-int8-onnx",
   "created_at": "2026-08-19T01:57:41.000Z",
-  "updated_at": "2026-08-19T02:11:02.000Z",
+  "updated_at": "2026-08-19T07:01:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "tflite",
     "onnxruntime",
     "int8",
     "image-classification",
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 112787,
-  "storage_human": "112787 B",
+  "storage_bytes": 1729690,
+  "storage_human": "2 MB",
   "base_model": null,
   "formats": [
     "onnx"

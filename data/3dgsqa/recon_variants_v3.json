@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "3DGSQA/recon_variants_v3",
+  "slug": "3dgsqa-recon_variants_v3",
+  "author": "3DGSQA",
+  "url": "https://huggingface.co/3DGSQA/recon_variants_v3",
+  "created_at": "2026-08-19T10:58:34.000Z",
+  "updated_at": "2026-08-19T11:03:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1087728264,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - diaoyn/3DGSQA: Perceptual Quality Assessment of 3D Gaussian ...",
+      "url": "https://github.com/diaoyn/3DGSQA",
+      "snippet": "We present the first systematic study on the perceptual quality of 3D Gaussian Splatting (3DGS) rendered content, addressing the lack of exploration into perceived quality under various reconstruction conditions."
+    },
+    {
+      "title": "GitHub - chinmay0301ucsd/Vol3DGS: [CVPR 2025 Highlight] Official Code ...",
+      "url": "https://github.com/chinmay0301ucsd/Vol3DGS",
+      "snippet": "CVPR 2025 Highlight This is the official implementation of the paper \"Volumetrically Consistent 3D Gaussian Rasterization\" Abstract: Recently, 3D Gaussian Splatting (3DGS) has enabled photorealistic view synthesis at high inference speeds. However, its splatting-based rendering model makes several approximations to the rendering equation, reducing physical accuracy. We show that the core ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "ReconViaGen: Towards Accurate Multi-view 3D Object Reconstruction via ...",
+      "url": "https://jiahao620.github.io/reconviagen/",
+      "snippet": "Method Overview An overview illustration of the proposed ReconViaGen framework, which integrates strong reconstruction priors with 3D diffusion-based generation priors for accurate reconstruction at both the global and local level."
+    },
+    {
+      "title": "3DGCQA: A Quality Assessment Database for 3D AI-Generated Contents",
+      "url": "https://arxiv.org/pdf/2409.07236",
+      "snippet": "Abstract—Although 3D generated content vantages in reducing production costs timelines, its quality often falls short when fessionally generated content. Common affect 3DGC, highlighting the importance quality assessment. Such evaluations not standard of 3DGCs for end-users but also for advancing generative technologies."
+    }
+  ]
+}

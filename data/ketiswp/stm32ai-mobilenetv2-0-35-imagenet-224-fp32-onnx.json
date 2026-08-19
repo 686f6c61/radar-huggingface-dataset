@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-fp32-onnx",
   "created_at": "2026-08-19T01:57:57.000Z",
-  "updated_at": "2026-08-19T02:11:12.000Z",
+  "updated_at": "2026-08-19T07:02:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "keras",
     "onnxruntime",
     "fp32",
     "image-classification",
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6735926,
-  "storage_human": "7 MB",
+  "storage_bytes": 29061933,
+  "storage_human": "29 MB",
   "base_model": null,
   "formats": [
     "onnx"

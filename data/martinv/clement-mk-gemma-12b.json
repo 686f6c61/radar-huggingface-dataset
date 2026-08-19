@@ -5,7 +5,7 @@
   "author": "MartinV",
   "url": "https://huggingface.co/MartinV/clement-mk-gemma-12b",
   "created_at": "2026-08-15T16:23:33.000Z",
-  "updated_at": "2026-08-15T22:12:32.000Z",
+  "updated_at": "2026-08-16T09:59:23.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 821,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

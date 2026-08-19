@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "duclvQ/smad",
+  "slug": "duclvq-smad",
+  "author": "duclvQ",
+  "url": "https://huggingface.co/duclvQ/smad",
+  "created_at": "2026-08-06T06:23:27.000Z",
+  "updated_at": "2026-08-19T08:49:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smad_crnn",
+    "feature-extraction",
+    "audio",
+    "music",
+    "speech",
+    "singing-voice-detection",
+    "speech-music-discrimination",
+    "custom-code",
+    "audio-classification",
+    "custom_code",
+    "en",
+    "vi",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 834884,
+  "parameters_human": "834884",
+  "storage_bytes": 3342832,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech / music / singing discrimination",
+      "dataset": "SMAD synthetic test split (4,000 clips, source-disjoint)",
+      "metric": "Accuracy",
+      "value": 0.8795
+    },
+    {
+      "task": "Speech / music / singing discrimination",
+      "dataset": "SMAD synthetic test split (4,000 clips, source-disjoint)",
+      "metric": "Macro F1",
+      "value": 0.8791
+    }
+  ],
+  "sources": [
+    {
+      "title": "duclvQ/smad · Hugging Face",
+      "url": "https://huggingface.co/duclvQ/smad",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "duclvQ/smad-audio-classifier · Hugging Face",
+      "url": "https://huggingface.co/duclvQ/smad-audio-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "duclvq (Le Viet Duc) · GitHub",
+      "url": "https://github.com/duclvQ/",
+      "snippet": "duclvq has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Nodal/Smad2 signaling sustains developmental pausing by repressing ...",
+      "url": "https://www.cell.com/developmental-cell/fulltext/S1534-5807(26)00275-3",
+      "snippet": "Furlan et al. show that TGF-β signaling, previously thought to be dispensable for pre-implantation mouse development, is essential for blastocyst diapause, a reversible state of embryonic dormancy. Nodal-Smad2 signaling is specifically required for survival of dormant embryos and embryonic stem cells by repressing Pparg, a master regulator of lipid storage."
+    },
+    {
+      "title": "A Functional TGF-β/Smad Assay for Targeted Profiling of ... - MDPI",
+      "url": "https://www.mdpi.com/2079-4983/17/8/416",
+      "snippet": "We evaluated the HEK-Blue™ TGF-β Reporter Assay as a targeted method for assessing Smad-dependent reporter activity in DBM-derived materials. ECM proteins were extracted from cortical demineralized bone granules (DBG) using guanidine hydrochloride (GuHCl) or urea and quantified after extraction, dialysis, and sterile filtration."
+    }
+  ]
+}

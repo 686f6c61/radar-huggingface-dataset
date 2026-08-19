@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "onnzoo/act_cup_on_plate",
+  "slug": "onnzoo-act_cup_on_plate",
+  "author": "onnzoo",
+  "url": "https://huggingface.co/onnzoo/act_cup_on_plate",
+  "created_at": "2026-08-19T11:06:59.000Z",
+  "updated_at": "2026-08-19T11:07:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:onnzoo/cup_on_plate_20260819_172758",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnxmodelzoo (ONNX Model Zoo) - Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo",
+      "snippet": "Org profile for ONNX Model Zoo on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "AI Art - Cup2D",
+      "url": "https://cup2d.com/category/ai-art/",
+      "snippet": "Cup2D A Radiant Collection of Stunning Models Category: AI Art"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "ONNX - Model Zoo - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/onnx/onnx-model-zoo.htm",
+      "snippet": "The ONNX Model Zoo is a collection of pre-trained models in the ONNX (Open Neural Network Exchange) format, designed to easily use the machine learning models without the needing to train them from scratch."
+    }
+  ]
+}

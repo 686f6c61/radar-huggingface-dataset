@@ -5,7 +5,7 @@
   "author": "inclusionAI",
   "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-fp4",
   "created_at": "2026-08-04T04:33:13.000Z",
-  "updated_at": "2026-08-16T04:33:27.000Z",
+  "updated_at": "2026-08-19T02:52:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 25,
-  "downloads_30d": 5026,
+  "downloads_30d": 5536,
   "trending_score": 9,
   "parameters": 65578478560,
   "parameters_human": "65.58B",
-  "storage_bytes": 70398348993,
-  "storage_human": "70.4 GB",
+  "storage_bytes": 140772308241,
+  "storage_human": "140.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

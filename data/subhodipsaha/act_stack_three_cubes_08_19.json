@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "subhodipsaha/act_stack_three_cubes_08_19",
+  "slug": "subhodipsaha-act_stack_three_cubes_08_19",
+  "author": "subhodipsaha",
+  "url": "https://huggingface.co/subhodipsaha/act_stack_three_cubes_08_19",
+  "created_at": "2026-08-19T09:41:53.000Z",
+  "updated_at": "2026-08-19T09:42:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:subhodipsaha/so101_stack_three_cubes_08_19",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51664518,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206690664,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "subhodipsaha (Subho) - Hugging Face",
+      "url": "https://huggingface.co/subhodipsaha",
+      "snippet": "Qwen3-8b-instruct-trl-sft-ChartQA 20251105 062045-trackio 🚀"
+    },
+    {
+      "title": "subhodipsaha/eval_act_stack_two_cubes_08_12 - Hugging Face",
+      "url": "https://huggingface.co/datasets/subhodipsaha/eval_act_stack_two_cubes_08_12",
+      "snippet": "Datasets: subhodipsaha / eval_act_stack_two_cubes_08_12 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·4.35k rows default ..."
+    },
+    {
+      "title": "saha0073 · GitHub",
+      "url": "https://github.com/saha0073",
+      "snippet": "🌟 Over the past 5 years, I have specialized in AI and Machine Learning, building scalable solutions in production with expertise in computer vision, image & data analysis, autonomous systems, and GenAI, with robust backend development. I&#x27;ve worked with Fortune 500 companies, leading startups, including 3 years of work experience in the US. 🚀 🥇 Academics: Earned MS degree from the ..."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "pricepertoken.com",
+      "url": "https://pricepertoken.com/news/model-releases",
+      "snippet": "New Models Today — AI & LLM Releases New models released in the last 24 hours and beyond. Track every new LLM from OpenAI, Anthropic, Google, Meta, Mistral and more. Last update"
+    }
+  ]
+}

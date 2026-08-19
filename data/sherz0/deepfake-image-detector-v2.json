@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Sherz0/deepfake-image-detector-v2",
+  "slug": "sherz0-deepfake-image-detector-v2",
+  "author": "Sherz0",
+  "url": "https://huggingface.co/Sherz0/deepfake-image-detector-v2",
+  "created_at": "2026-08-19T03:47:48.000Z",
+  "updated_at": "2026-08-19T03:47:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800194,
+  "parameters_human": "85.8M",
+  "storage_bytes": 3543235498,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods/Deep-Fake-Detector-v2-Model · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Deep-Fake-Detector-v2-Model",
+      "snippet": "The Deep-Fake-Detector-v2-Model is a state-of-the-art deep learning model designed to detect deepfake images. It leverages the Vision Transformer (ViT) architecture, specifically the google/vit-base-patch16-224-in21k model, fine-tuned on a dataset of real and deepfake images."
+    },
+    {
+      "title": "README.md · prithivMLmods/Deep-Fake-Detector-v2-Model at main",
+      "url": "https://huggingface.co/prithivMLmods/Deep-Fake-Detector-v2-Model/blob/main/README.md",
+      "snippet": "The Deep-Fake-Detector-v2-Model is a state-of-the-art deep learning model designed to detect deepfake images. It leverages the Vision Transformer (ViT) architecture, specifically the google/vit-base-patch16-224-in21k model, fine-tuned on a dataset of real and deepfake images."
+    },
+    {
+      "title": "prithivMLmods/Deep-Fake-Detector-v2-Model - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/prithivmlmods-deep-fake-detector-v2-model",
+      "snippet": "The Deep-Fake-Detector-v2-Model is a state-of-the-art deep learning model designed to detect deepfake images. It leverages the Vision Transformer (ViT) architecture, specifically the google/vit-base-patch16-224-in21k model, fine-tuned on a dataset of real and deepfake images."
+    },
+    {
+      "title": "DeepFake Image Detection ️‍♂️ - GitHub",
+      "url": "https://github.com/sky787770/DeepFake-Image-Detection",
+      "snippet": "DeepFake Image Detection 🕵️‍♂️🔍 Welcome to the DeepFake Image Detection repository! This project is designed to detect deepfake images using state-of-the-art deep learning models like VGG16, VGG19, InceptionV3, and ResNet50, combined with an ensemble technique to maximize accuracy."
+    },
+    {
+      "title": "AI Image Detector - Detect AI Generated Images - zerogpt.com",
+      "url": "https://www.zerogpt.com/ai-image-detector",
+      "snippet": "Detect AI generated images from all the popular tools. Verify image authenticity and identify AI-created visual content with high accuracy."
+    }
+  ]
+}

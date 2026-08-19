@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AfriqueQwen3.5-9B-50Langs-GGUF",
+  "slug": "mradermacher-afriqueqwen3-5-9b-50langs-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AfriqueQwen3.5-9B-50Langs-GGUF",
+  "created_at": "2026-08-19T06:08:30.000Z",
+  "updated_at": "2026-08-19T06:08:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McGill-NLP/AfriqueQwen3.5-9B-50Langs · Hugging Face",
+      "url": "https://huggingface.co/McGill-NLP/AfriqueQwen3.5-9B-50Langs",
+      "snippet": "Model Overview AfriqueQwen3.5-9B-50Langs is part of the AfriqueLLM suite, a collection of open language models adapted to 50 African languages through continued pre-training (CPT) on ~35.5B tokens."
+    },
+    {
+      "title": "Qwen3.5-9B-OmniCoder-Claude-Polaris-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-OmniCoder-Claude-Polaris-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - McGill-NLP/AfriqueLLM",
+      "url": "https://github.com/McGill-NLP/AfriqueLLM",
+      "snippet": "AfriqueLLM is a suite of open language models adapted to African languages through continued pre-training. This repository contains the public data recipes, training configs, and evaluation commands used for the release. Paper: AfriqueLLM: How Data Mixing and Model Architecture Impact Continued Pre-training for African Languages (accepted to ACL 2026) Models: McGill-NLP AfriqueLLM collection ..."
+    },
+    {
+      "title": "Best 8GB GPU Model: How to Set Up Qwen 3.5 9B (Step by Step)",
+      "url": "https://insiderllm.com/guides/qwen-3-5-9b-setup-guide/",
+      "snippet": "Qwen 3.5 9B fits in 6.6GB and beats Qwen 3-class models 3x its size. Setup on Ollama/llama.cpp, quant table, where 9B still fits in the May 2026 lineup."
+    },
+    {
+      "title": "Qwen3.5-9B Abliterated: Uncensored Local LLM Guide",
+      "url": "https://codersera.com/blog/unrestricted-uncensored-qwen35-9b-abliterated-full-guide/",
+      "snippet": "Unrestricted Uncensored Qwen3.5‑9B Abliterated: Full Guide Learn how to install, run, benchmark and compare the uncensored Qwen3.5‑9B Abliterated model locally on Mac, Windows and Linux. Includes step‑by‑step setup (Ollama, GGUF, llama.cpp, vLLM), hardware requirements, benchmarks, pricing considerations, and comparisons with rival open‑source LLMs."
+    }
+  ]
+}

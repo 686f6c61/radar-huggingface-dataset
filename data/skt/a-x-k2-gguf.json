@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "skt/A.X-K2-GGUF",
+  "slug": "skt-a-x-k2-gguf",
+  "author": "skt",
+  "url": "https://huggingface.co/skt/A.X-K2-GGUF",
+  "created_at": "2026-08-08T06:16:06.000Z",
+  "updated_at": "2026-08-19T09:09:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ko",
+    "zh",
+    "ja",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "skt",
+    "a.x",
+    "conversational",
+    "text-generation",
+    "en",
+    "ko",
+    "zh",
+    "ja",
+    "es",
+    "base_model:skt/A.X-K2",
+    "base_model:quantized:skt/A.X-K2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 3,
+  "downloads_30d": 308,
+  "trending_score": 0,
+  "parameters": 689771336960,
+  "parameters_human": "689.77B",
+  "storage_bytes": 370442735976,
+  "storage_human": "370.4 GB",
+  "base_model": "skt/A.X-K2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skt/A.X-K2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/skt/A.X-K2-GGUF",
+      "snippet": "A.X K2 is a Mixture-of-Experts model with 688B parameters, 33B of them active per token, released in block-scaled FP8. The file here is converted from that checkpoint and quantized to the format in Model files."
+    },
+    {
+      "title": "skt/A.X-K2 · Hugging Face",
+      "url": "https://huggingface.co/skt/A.X-K2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SKT-AI/A.X-K2: SKT A.X LLM K2 - GitHub",
+      "url": "https://github.com/SKT-AI/A.X-K2",
+      "snippet": "Model Summary A.X K2 is a large-scale Mixture-of-Experts (MoE) language model trained from scratch as a high-performance, agentic foundation model, and the successor to A.X K1. The model contains 688 billion total parameters, with 33 billion active parameters, delivering strong reasoning and instruction-following performance while maintaining practical inference efficiency."
+    },
+    {
+      "title": "SK Telecom Unveils A.X K2,Driving AI Adoption in Industry and Daily ...",
+      "url": "https://news.sktelecom.com/en/3204",
+      "snippet": "Going forward, SKT plans to scale the successor to A.X K2 to the trillion-parameter range to secure global competitiveness. The company has been expanding its parameter scale to match that of leading global players, and introduced 500B-plus large-scale models in the first phase of the Sovereign AI Foundation Model Project."
+    },
+    {
+      "title": "PDF A.X-K2/A_X_K2_Tech_Report.pdf at main · SKT-AI/A.X-K2 - GitHub",
+      "url": "https://github.com/SKT-AI/A.X-K2/blob/main/A_X_K2_Tech_Report.pdf",
+      "snippet": "SKT A.X LLM K2. Contribute to SKT-AI/A.X-K2 development by creating an account on GitHub."
+    }
+  ]
+}

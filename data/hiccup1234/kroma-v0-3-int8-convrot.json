@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Hiccup1234/Kroma-v0.3-INT8-ConvRot",
+  "slug": "hiccup1234-kroma-v0-3-int8-convrot",
+  "author": "Hiccup1234",
+  "url": "https://huggingface.co/Hiccup1234/Kroma-v0.3-INT8-ConvRot",
+  "created_at": "2026-08-19T05:48:02.000Z",
+  "updated_at": "2026-08-19T05:49:19.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "image-generation",
+    "quantized",
+    "int8",
+    "convrot",
+    "base_model:lodestones/Kroma",
+    "base_model:finetune:lodestones/Kroma",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14135109560,
+  "storage_human": "14.1 GB",
+  "base_model": "lodestones/Kroma",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stabhappy/kroma-v0.2-base-INT8-convrot · Hugging Face",
+      "url": "https://huggingface.co/Stabhappy/kroma-v0.2-base-INT8-convrot",
+      "snippet": "ConvRot = a QuaRot-derived plug-and-play rotation; small inference overhead in exchange for a quality gain over plain row-wise INT8. Retains the original model&#x27;s license and attribution requirements; disclose AI-generated outputs where required."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Kroma (int8_convrot for ComfyUI) - v0.2 turbo | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2846465/kroma-int8convrot-for-comfyui",
+      "snippet": "kroma-v0.2-turbo-int8-convrot.safetensors 8-bit integer, smaller file • 11.95 GB"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

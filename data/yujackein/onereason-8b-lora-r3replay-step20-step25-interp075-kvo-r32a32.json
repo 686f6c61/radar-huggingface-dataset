@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "yujackein/onereason-8b-lora-r3replay-step20-step25-interp075-kvo-r32a32",
+  "slug": "yujackein-onereason-8b-lora-r3replay-step20-step25-interp075-kvo-r32a32",
+  "author": "yujackein",
+  "url": "https://huggingface.co/yujackein/onereason-8b-lora-r3replay-step20-step25-interp075-kvo-r32a32",
+  "created_at": "2026-08-19T04:59:11.000Z",
+  "updated_at": "2026-08-19T04:59:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "recommendation",
+    "generative-recommendation",
+    "one-reason",
+    "lora",
+    "r3",
+    "checkpoint-interpolation",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 365260988,
+  "storage_human": "365 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yujackein/onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1 ...",
+      "url": "https://huggingface.co/yujackein/onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1-lr2e4-r32a32-step646",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yujackein/onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1 ...",
+      "url": "https://huggingface.co/yujackein/onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1-lr2e4-r32a32-step323",
+      "snippet": "Instructions to use yujackein/onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1-lr2e4-r32a32-step323 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1-lr2e4-r32a32 ...",
+      "url": "https://friendli.ai/models/yujackein/onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1-lr2e4-r32a32-seq10k-gbs4-1epoch",
+      "snippet": "Deploy onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1-lr2e4-r32a32-seq10k-gbs4-1epoch with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1-lr2e4-r32a32 ...",
+      "url": "https://friendli.ai/models/yujackein/onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1-lr2e4-r32a32-step323",
+      "snippet": "Run onereason-8b-lora-item32k-user75-rec50-worldclean1601-all1-lr2e4-r32a32-step323 with FriendliAI inference. This is an experimental LoRA adapter for…"
+    },
+    {
+      "title": "OneReason Technical Report",
+      "url": "https://arxiv.org/html/2606.06260v1",
+      "snippet": "Finally, we systematically present a series of reasoning benchmarks and design insights, and we will open-source the OneReason-8B and OneReason-0.8B models to facilitate research on generative recommendation models."
+    }
+  ]
+}

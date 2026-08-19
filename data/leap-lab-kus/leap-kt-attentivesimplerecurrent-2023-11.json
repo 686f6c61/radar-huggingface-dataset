@@ -5,7 +5,7 @@
   "author": "LEAP-LAB-KUS",
   "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-attentivesimplerecurrent-2023-11",
   "created_at": "2026-08-05T11:02:58.000Z",
-  "updated_at": "2026-08-18T13:27:18.000Z",
+  "updated_at": "2026-08-18T16:56:23.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,6 +19,7 @@
     "educational-data-mining",
     "attentivesimplerecurrent",
     "dataset:assist2009",
+    "dataset:assist2012",
     "dataset:dbe_kt22",
     "license:mit",
     "region:us"
@@ -28,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 52042360,
-  "storage_human": "52 MB",
+  "storage_bytes": 191369220,
+  "storage_human": "191 MB",
   "base_model": null,
   "formats": [
     "safetensors"

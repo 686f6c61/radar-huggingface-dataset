@@ -24,7 +24,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9817067350,
+  "storage_bytes": 9791901526,
   "storage_human": "9.8 GB",
   "base_model": "Qwen/Qwen3-14B",
   "formats": [

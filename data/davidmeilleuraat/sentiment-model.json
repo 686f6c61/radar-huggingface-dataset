@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Davidmeilleuraat/sentiment-model",
+  "slug": "davidmeilleuraat-sentiment-model",
+  "author": "Davidmeilleuraat",
+  "url": "https://huggingface.co/Davidmeilleuraat/sentiment-model",
+  "created_at": "2026-08-19T09:45:03.000Z",
+  "updated_at": "2026-08-19T09:45:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "sentiment.ai - GitHub Pages",
+      "url": "https://benwiseman.github.io/sentiment.ai/",
+      "snippet": "Overview sentiment.ai turns text into sentiment scores using a sentence-embedding model plus a small, bundled scoring head. The default backend is the on-device multilingual model multilingual-e5-base (no TensorFlow, no API key, no data leaving your machine)."
+    },
+    {
+      "title": "GitHub - BenWiseman/sentiment.ai: Package for using deep learning ...",
+      "url": "https://github.com/BenWiseman/sentiment.ai",
+      "snippet": "The most complete on-device sentiment toolkit in the R/Python ecosystem. It ships hate-speech / mixed / style flags, intent-based profiles, an interactive sentiment map, and opt-in transformer backends for when you want maximum accuracy. The default model, on-device e5-base, matches the paid OpenAI embedding (text-embedding-3-small) on our benchmarks: that quality, free, across ~100 languages ..."
+    },
+    {
+      "title": "Atlas Cloud Releases Model Explorer and Generator Tools - Digg",
+      "url": "https://digg.com/tech/ooxrivzy",
+      "snippet": "Atlas Cloud adds Model Explorer and pre-built Generator to Creator Central for AI video work."
+    },
+    {
+      "title": "sentiment-analysis · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/sentiment-analysis",
+      "snippet": "An NLP library for building bots, with entity extraction, sentiment analysis, automatic language identify, and so more"
+    }
+  ]
+}

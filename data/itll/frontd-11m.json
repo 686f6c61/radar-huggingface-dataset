@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ITLL/FrontD.11m",
+  "slug": "itll-frontd-11m",
+  "author": "ITLL",
+  "url": "https://huggingface.co/ITLL/FrontD.11m",
+  "created_at": "2026-08-19T06:08:51.000Z",
+  "updated_at": "2026-08-19T08:32:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "frontd",
+    "text-generation",
+    "pretraining",
+    "decoder-only",
+    "from-scratch",
+    "11m",
+    "1096-context",
+    "rope",
+    "rmsnorm",
+    "swiglu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2042691885,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ITLL/Frontier-11M-CoT-Stage2 · Hugging Face",
+      "url": "https://huggingface.co/ITLL/Frontier-11M-CoT-Stage2",
+      "snippet": "ITLL / Frontier-11M-CoT-Stage2 like 0 Follow In The Loop Labs 3 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ITLL (In The Loop Labs) - Hugging Face",
+      "url": "https://huggingface.co/ITLL",
+      "snippet": "Org profile for In The Loop Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    }
+  ]
+}

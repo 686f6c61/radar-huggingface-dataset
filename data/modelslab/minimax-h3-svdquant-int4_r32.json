@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ModelsLab/MiniMax-H3-svdquant-int4_r32",
+  "slug": "modelslab-minimax-h3-svdquant-int4_r32",
+  "author": "ModelsLab",
+  "url": "https://huggingface.co/ModelsLab/MiniMax-H3-svdquant-int4_r32",
+  "created_at": "2026-08-19T09:51:36.000Z",
+  "updated_at": "2026-08-19T10:57:17.000Z",
+  "license": "minimax-h3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "svdquant",
+    "w4a4",
+    "int4",
+    "video",
+    "text-to-video",
+    "quantized",
+    "arxiv:2411.05007",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38742325591,
+  "storage_human": "38.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelsLab/MiniMax-H3-svdquant-int4_r32 · Hugging Face",
+      "url": "https://huggingface.co/ModelsLab/MiniMax-H3-svdquant-int4_r32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hardware Requirements & Quantization Guide | ai-models-lab/minimax-h3 ...",
+      "url": "https://deepwiki.com/ai-models-lab/minimax-h3/4.2-hardware-requirements-and-quantization-guide",
+      "snippet": "This page provides a technical breakdown of the hardware specifications and optimization strategies required to run the MiniMax H3 (Hailuo AI 3.0) model locally. It covers the relationship between GPU architecture, VRAM capacity, and quantization formats, alongside specific ComfyUI configuration flags for different hardware tiers."
+    },
+    {
+      "title": "MiniMax H3 Model Reference | ai-models-lab/minimax-h3 | DeepWiki",
+      "url": "https://deepwiki.com/ai-models-lab/minimax-h3/4-minimax-h3-model-reference",
+      "snippet": "MiniMax H3 is a state-of-the-art native multi-modal model capable of generating 2K AI video with synchronized 3D stereo audio in a single inference pass README.md 3 Architecture Overview The MiniMax H3 architecture deviates from traditional video-only models by employing a joint diffusion process."
+    }
+  ]
+}

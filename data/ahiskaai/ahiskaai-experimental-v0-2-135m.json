@@ -5,7 +5,7 @@
   "author": "AhiskaAI",
   "url": "https://huggingface.co/AhiskaAI/AhiskaAI-experimental-v0.2-135m",
   "created_at": "2026-08-17T11:49:03.000Z",
-  "updated_at": "2026-08-17T12:02:32.000Z",
+  "updated_at": "2026-08-17T13:04:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,6 +14,7 @@
     "tr"
   ],
   "tags": [
+    "safetensors",
     "llama",
     "causal-lm",
     "slm",
@@ -30,15 +31,17 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 99,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 153687744,
+  "parameters_human": "153.7M",
+  "storage_bytes": 307409208,
+  "storage_human": "307 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

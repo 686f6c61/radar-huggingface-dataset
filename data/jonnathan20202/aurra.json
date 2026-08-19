@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Jonnathan20202/AURRA",
+  "slug": "jonnathan20202-aurra",
+  "author": "Jonnathan20202",
+  "url": "https://huggingface.co/Jonnathan20202/AURRA",
+  "created_at": "2026-08-19T09:36:40.000Z",
+  "updated_at": "2026-08-19T09:40:00.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:openai/gpt-oss-120b",
+    "base_model:finetune:openai/gpt-oss-120b",
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aurora: A Foundation Model for the Earth System - GitHub Pages",
+      "url": "https://microsoft.github.io/aurora/intro.html",
+      "snippet": "Aurora: A Foundation Model for the Earth System # Welcome to the documentation of Aurora! Here you will detailed instructions for using the model. If you just want to see the model in action, you can skip to a full-fledged example that runs the model on ERA5. For details on how exactly the model works, please see the paper. Aurora is a machine learning model that can predict atmospheric ..."
+    },
+    {
+      "title": "Aurora Forecasting - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/project/aurora-forecasting/",
+      "snippet": "A flexible 3D foundation model of the atmosphere. Aurora, developed by a team of Microsoft researchers, is a cutting-edge AI foundation model that can extract valuable insights from vast amounts of atmospheric data. This 1.3 billion parameter model excels at a wide range of prediction tasks, even in data-sparse regions or extreme weather scenarios. Aurora […]"
+    },
+    {
+      "title": "GitHub - microsoft/aurora: Implementation of the Aurora model for Earth ...",
+      "url": "https://github.com/microsoft/aurora",
+      "snippet": "Contents: What is Aurora? Getting Started Contributing License Security Responsible AI Transparency Documentation Trademarks FAQ Please email AIWeatherClimate@microsoft.com if you are interested in using Aurora for commercial applications. For research-related questions or technical support with the code here, please open an issue or reach out to the authors of the paper."
+    },
+    {
+      "title": "Aurora: A Foundation Model of the Atmosphere - arXiv.org",
+      "url": "https://arxiv.org/html/2405.13063v2",
+      "snippet": "Here we introduce Aurora: a foundation model of the atmosphere. Aurora can produce forecasts for a wide variety of atmospheric forecasting problems, including those with limited training data, heterogeneous variables, and extreme events."
+    },
+    {
+      "title": "A Foundation Model for the Earth System",
+      "url": "https://arxiv.org/html/2405.13063v3",
+      "snippet": "Reliable forecasts of the Earth system are crucial for human progress and safety from natural disasters. Artificial intelligence offers substantial potential to improve prediction accuracy and computational efficiency in this field, however this remains underexplored in many domains. Here we introduce Aurora, a large-scale foundation model for the Earth system trained on over a million hours ..."
+    }
+  ]
+}

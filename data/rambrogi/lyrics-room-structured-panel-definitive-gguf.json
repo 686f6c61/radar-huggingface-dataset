@@ -5,7 +5,7 @@
   "author": "rambrogi",
   "url": "https://huggingface.co/rambrogi/lyrics-room-structured-panel-definitive-GGUF",
   "created_at": "2026-08-11T07:04:37.000Z",
-  "updated_at": "2026-08-16T18:40:20.000Z",
+  "updated_at": "2026-08-18T17:59:53.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 203,
+  "downloads_30d": 288,
   "trending_score": 0,
   "parameters": 7518069290,
   "parameters_human": "7.52B",

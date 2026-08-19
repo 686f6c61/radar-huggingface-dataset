@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Dhayakd/leafvision-crop-disease",
+  "slug": "dhayakd-leafvision-crop-disease",
+  "author": "Dhayakd",
+  "url": "https://huggingface.co/Dhayakd/leafvision-crop-disease",
+  "created_at": "2026-08-19T08:48:33.000Z",
+  "updated_at": "2026-08-19T08:52:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134,
+  "storage_human": "134 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LeafVision: Self-supervised agricultural vision foundation models for ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0952197626009425",
+      "snippet": "Building on this potential, we propose LeafVision, a self-supervised agricultural vision foundation model for plant disease diagnosis, pretrained on a large collection of domain-specific unlabeled images."
+    },
+    {
+      "title": "LeafVision: : Self-supervised agricultural vision foundation models for ...",
+      "url": "https://dl.acm.org/doi/10.1016/j.engappai.2026.114660",
+      "snippet": "While ImageNet-pretrained models are widely used for transfer learning, they often fail to capture the subtle visual characteristics essential for accurate plant disease classification. We introduce LeafVision, a self-supervised agricultural vision foundation model pretrained on 540,013 plant leaf images from diverse publicly available sources."
+    },
+    {
+      "title": "GitHub - LABA-SNU/LeafVision: LeafVision: Self-Supervised Agricultural ...",
+      "url": "https://github.com/LABA-SNU/LeafVision",
+      "snippet": "Introduction Plant disease diagnosis in real-world settings often suffers from scarce labeled data and domain gaps when using general-purpose ImageNet-pretrained backbones. LeafVision is a domain-specific, self-supervised (SSL) agricultural vision foundation model pretrained on 540,013 leaf images."
+    },
+    {
+      "title": "LeafVision: Self-supervised agricultural vision foundation models for ...",
+      "url": "https://www.semanticscholar.org/paper/LeafVision%3A-Self-supervised-agricultural-vision-for-Han-Jeon/dd7d02b0233f00b1ab56209637964074426c9982",
+      "snippet": "Semantic Scholar extracted view of \"LeafVision: Self-supervised agricultural vision foundation models for plant disease classification\" by Yunseok Han et al."
+    },
+    {
+      "title": "wambugu71/crop_leaf_diseases_vit · Hugging Face",
+      "url": "https://huggingface.co/wambugu71/crop_leaf_diseases_vit",
+      "snippet": "The model can classify diseases in crops such as corn, potato, rice, and wheat, identifying diseases like rust, blight, leaf spots, and others. The goal is to enable precision farming by helping farmers detect diseases early and take appropriate actions."
+    }
+  ]
+}

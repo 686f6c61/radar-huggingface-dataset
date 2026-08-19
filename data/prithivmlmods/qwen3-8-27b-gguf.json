@@ -5,7 +5,7 @@
   "author": "prithivMLmods",
   "url": "https://huggingface.co/prithivMLmods/Qwen3.8-27B-GGUF",
   "created_at": "2026-08-06T04:44:31.000Z",
-  "updated_at": "2026-08-17T03:38:30.000Z",
+  "updated_at": "2026-08-17T05:49:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -43,7 +43,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 2529,
+  "downloads_30d": 4025,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

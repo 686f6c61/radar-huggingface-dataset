@@ -5,7 +5,7 @@
   "author": "Jayden04260",
   "url": "https://huggingface.co/Jayden04260/emotisense-distilbert",
   "created_at": "2026-08-18T15:48:16.000Z",
-  "updated_at": "2026-08-18T15:50:03.000Z",
+  "updated_at": "2026-08-18T17:52:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 66958086,
   "parameters_human": "67.0M",
-  "storage_bytes": 267844872,
-  "storage_human": "268 MB",
+  "storage_bytes": 401773452,
+  "storage_human": "402 MB",
   "base_model": null,
   "formats": [
     "safetensors"

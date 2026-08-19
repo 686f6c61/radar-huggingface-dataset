@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Neural-1Nomad/vakyansh-respin-agriculture",
+  "slug": "neural-1nomad-vakyansh-respin-agriculture",
+  "author": "Neural-1Nomad",
+  "url": "https://huggingface.co/Neural-1Nomad/vakyansh-respin-agriculture",
+  "created_at": "2026-08-19T10:05:36.000Z",
+  "updated_at": "2026-08-19T10:05:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:Harveenchadha/vakyansh-wav2vec2-telugu-tem-100",
+    "base_model:finetune:Harveenchadha/vakyansh-wav2vec2-telugu-tem-100",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94424004,
+  "parameters_human": "94.4M",
+  "storage_bytes": 377727009,
+  "storage_human": "378 MB",
+  "base_model": "Harveenchadha/vakyansh-wav2vec2-telugu-tem-100",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Speech recognition in agriculture and finance for the poor",
+      "url": "https://www.respin.iisc.ac.in/",
+      "snippet": "Speech recognition in agriculture and finance for the poor is an initiative predominantly to create resources and make them available as a digital public good in the open source domain to spur research and innovation in speech recognition in nine different Indian languages in the area of agriculture and finance."
+    },
+    {
+      "title": "vakyansh (Vakyansh) - Hugging Face",
+      "url": "https://huggingface.co/vakyansh",
+      "snippet": "User profile of Vakyansh on Hugging Face"
+    },
+    {
+      "title": "Vakyansh Open Source Models - GitHub",
+      "url": "https://github.com/Open-Speech-EkStep/vakyansh-models",
+      "snippet": "Vakyansh-Conformer-SSL This model was pre-trained using Nemo toolkit with 34,000 hours unlabeled audio in 39 Indian languages. This includes 15,000 hours of news recordings available on the internet, 10,000 hours of YouTube audios and other audio data. In addition, 9,000 hours of Indian English ..."
+    },
+    {
+      "title": "GitHub Pages - Vakyansh",
+      "url": "https://open-speech-ekstep.github.io/",
+      "snippet": "User feedback from the inference service is also incorporated for model improvisations. Vakyansh Technical Overview The Developer documentation provides you with a complete set of guidelines which you need to: Install Vakyansh Configure Vakyansh Customize Vakyansh Extend Vakyansh Contribute to Vakyansh Discussion Connect with community on Gitter"
+    },
+    {
+      "title": "Top 10 artificial intelligence agriculture technologies",
+      "url": "https://www.cropin.com/blogs/top-10-artificial-intelligence-agriculture-technologies/",
+      "snippet": "Top 10 Artificial Intelligence Agriculture Technologies enhancing crop health, yield estimation, soil monitoring, predictive analytics, and smart farming efficiency."
+    }
+  ]
+}

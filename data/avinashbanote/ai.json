@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "avinashbanote/Ai",
+  "slug": "avinashbanote-ai",
+  "author": "avinashbanote",
+  "url": "https://huggingface.co/avinashbanote/Ai",
+  "created_at": "2026-08-19T10:22:24.000Z",
+  "updated_at": "2026-08-19T10:22:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "avinashbanote/aws-ai-documentation-video-generator - GitHub",
+      "url": "https://github.com/avinashbanote/aws-ai-documentation-video-generator",
+      "snippet": "An AI-powered application that automatically converts AWS documentation stored in Amazon S3 into professional educational videos. The application downloads documents from AWS S3, generates a narration script, converts it into speech, creates presentation slides, and produces a synchronized MP4 video."
+    },
+    {
+      "title": "avinashbanote/AI-Flight-Recommendation-Agent - GitHub",
+      "url": "https://github.com/avinashbanote/AI-Flight-Recommendation-Agent",
+      "snippet": "An AI-powered Flight Recommendation System built with React, FastAPI, and Google Flights (SerpAPI). It fetches live flight data and recommends the cheapest flight based on user budget, route, and t..."
+    },
+    {
+      "title": "Avinash B. - Certified Data Scientist | Generative AI Engineer ...",
+      "url": "https://www.linkedin.com/in/avinash-b-5b1390a7",
+      "snippet": "I am a Data Scientist and Gen AI Lead with over 7 years of experience. I build intelligent systems that drive significant business value. I excel at deploying AI solutions that automate complex ..."
+    },
+    {
+      "title": "Shaping the Future of AI: Avinash Balakrishnan&#x27;s Journey Toward ...",
+      "url": "https://www.dnaindia.com/india/report-shaping-the-future-of-ai-avinash-balakrishnan-s-journey-toward-transparent-and-trustworthy-ai-3109387",
+      "snippet": "Shaping the Future of AI: Avinash Balakrishnan&#x27;s Journey Toward Transparent and Trustworthy AI As a lead data scientist, Avinash has dedicated his career to making AI systems not just smarter but also more transparent and accountable. His journey is a story of passion, innovation, and a commitment to reshaping the AI landscape for the better."
+    },
+    {
+      "title": "avinash-ai · PyPI",
+      "url": "https://pypi.org/project/avinash-ai/",
+      "snippet": "avinash-ai 2.0.4 Build your own ML pip install avinash-ai Copy PIP instructions Description Download files Release history"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-heretic-plus-GGUF",
   "created_at": "2026-08-15T13:56:18.000Z",
-  "updated_at": "2026-08-15T15:08:10.000Z",
+  "updated_at": "2026-08-16T15:59:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 254,
+  "downloads_30d": 1063,
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nolimitsxl/bert-tiny-sst2-seed3",
+  "slug": "nolimitsxl-bert-tiny-sst2-seed3",
+  "author": "nolimitsxl",
+  "url": "https://huggingface.co/nolimitsxl/bert-tiny-sst2-seed3",
+  "created_at": "2026-08-19T07:00:17.000Z",
+  "updated_at": "2026-08-19T07:00:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4386178,
+  "parameters_human": "4.4M",
+  "storage_bytes": 17549312,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gokuls/BERT-tiny-sst2 · Hugging Face",
+      "url": "https://huggingface.co/gokuls/BERT-tiny-sst2",
+      "snippet": "BERT-tiny-sst2 This model is a fine-tuned version of google/bert_uncased_L-2_H-128_A-2 on the glue dataset. It achieves the following results on the evaluation set: Loss: 0.4422 Accuracy: 0.8372 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed ..."
+    },
+    {
+      "title": "takedarn/bert-tiny-sst2 · Hugging Face",
+      "url": "https://huggingface.co/takedarn/bert-tiny-sst2",
+      "snippet": "takedarn / bert-tiny-sst2 like 0 Text Classification Safetensors sst2 English bert sst2 fine-tuned License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new bert-tiny-sst2 Model Description Base Model Usage Training Details Citation"
+    },
+    {
+      "title": "gokuls/BERT-tiny-sst2 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/70274",
+      "snippet": "This model is a fine-tuned version of google/bert_uncased_L-2_H-128_A-2 on the glue dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "TensorFlow Hub",
+      "url": "https://www.tensorflow.org/hub",
+      "snippet": "TensorFlow Hub is a repository of trained machine learning models ready for fine-tuning and deployable anywhere. Reuse trained models like BERT and Faster R-CNN with just a few lines of code."
+    },
+    {
+      "title": "Top Lightweight BERT Models for Edge AI and Mobile NLP",
+      "url": "https://www.boltuix.com/2025/06/top-lightweight-bert-models-for-edge-ai.html",
+      "snippet": "In the rapidly evolving world of Natural Language Processing (NLP), the ability to deploy powerful language models on resource-constrained devices like IoT sensors, wearables, and mobile phones is a game-changer. Enter Boltuix BERT Models, a family of lightweight, open-source NLP models built on Google&#x27;s revolutionary BERT architecture, optimized for edge AI and real-time applications ..."
+    }
+  ]
+}

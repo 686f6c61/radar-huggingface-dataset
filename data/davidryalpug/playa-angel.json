@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "davidryalpug/playa-angel",
+  "slug": "davidryalpug-playa-angel",
+  "author": "davidryalpug",
+  "url": "https://huggingface.co/davidryalpug/playa-angel",
+  "created_at": "2026-08-18T20:21:56.000Z",
+  "updated_at": "2026-08-19T11:29:49.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "tool-use",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 2960738944,
+  "storage_human": "3.0 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "For complete privacy, control, and unlimited creativity on your own computer, you can acquire our premium models from the official LunaModels Store. Pick any cute little angel you want and begin your journey into the wonders of AI-powered image and video creation."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    },
+    {
+      "title": "playa - Best AI Art & Models | TensorHub Art | TensorHub Art",
+      "url": "https://tensorhub.art/u/815623352164161229",
+      "snippet": "Explore playa&#x27;s AI creations on TENSORHUB ART 815623352164161229 30 Followers 46 Following 1.6K Runs 12 Downloads 588 Likes 58 Stars 30 Followers 46 Following 1.6K Runs 12 Downloads 588 Likes 58 Stars Follow All AI Tools Models Posts"
+    }
+  ]
+}

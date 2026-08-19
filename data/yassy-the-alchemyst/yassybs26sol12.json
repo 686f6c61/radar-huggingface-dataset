@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "YassY-The-AlchemYst/YassYBS26Sol12",
+  "slug": "yassy-the-alchemyst-yassybs26sol12",
+  "author": "YassY-The-AlchemYst",
+  "url": "https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol12",
+  "created_at": "2026-08-19T08:45:09.000Z",
+  "updated_at": "2026-08-19T08:48:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24585586,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YassY-The-AlchemYst (Yassine Elhallaoui) - Hugging Face",
+      "url": "https://huggingface.co/YassY-The-AlchemYst",
+      "snippet": "YassY-The-AlchemYst/KenyaOil_Financial_model_KaggleXC4 Text Generation •Updated Nov 1, 2024"
+    },
+    {
+      "title": "Yassine Elhallaoui (@yassy_the_alchemyst) - Instagram",
+      "url": "https://www.instagram.com/yassy_the_alchemyst/",
+      "snippet": "6,692 Followers, 1,934 Following, 112 Posts - Yassine Elhallaoui (@yassy_the_alchemyst) on Instagram: \"Dr. tobe 🇲🇦ⵣ🇳🇴💍 Nerd Ai & Nature ☮RastaTechnocratⵣ AI Researcher🤖 ️🇦🇪🇧🇭🇿🇦🇾🇪🇿🇼🇸🇦🇳🇬🇮🇳🇨🇺🇲🇫🇵🇬🇹🇭🇲🇨🇶🇦🇴🇲🇳🇴🇪🇬🇬🇧🇧🇶\""
+    },
+    {
+      "title": "RSNA-Knee-Abnormality-Detection/rsna-knee-competition.md at main ...",
+      "url": "https://github.com/ahmed-hesham07/RSNA-Knee-Abnormality-Detection/blob/main/rsna-knee-competition.md",
+      "snippet": "Acknowledgements RSNA would like to thank the following individuals and organizations whose contributions made possible the RSNA Knee Abnormality Detection AI Challenge."
+    },
+    {
+      "title": "YASSY - pixiv",
+      "url": "https://www.pixiv.net/en/users/8604",
+      "snippet": "pixiv Sign up to be able to Like, comment and send messages to YASSY."
+    },
+    {
+      "title": "OnlyFans",
+      "url": "https://onlyfans.com/yassy_ai",
+      "snippet": "OnlyFans is the social platform revolutionizing creator and fan connections. The site is inclusive of artists and content creators from all genres and allows them to monetize their content while developing authentic relationships with their fanbase."
+    }
+  ]
+}

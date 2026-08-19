@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rocheldasilva/sentiment-distilbert-finetuned",
+  "slug": "rocheldasilva-sentiment-distilbert-finetuned",
+  "author": "rocheldasilva",
+  "url": "https://huggingface.co/rocheldasilva/sentiment-distilbert-finetuned",
+  "created_at": "2026-08-19T10:27:09.000Z",
+  "updated_at": "2026-08-19T10:31:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803502945,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rocheldasilva/emotion-distilbert · Hugging Face",
+      "url": "https://huggingface.co/rocheldasilva/emotion-distilbert",
+      "snippet": "rocheldasilva / emotion-distilbert like 0 Text Classification Transformers Safetensors distilbert Generated from Trainer text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Pranav-1111/sentiment-distilbert · Hugging Face",
+      "url": "https://huggingface.co/Pranav-1111/sentiment-distilbert",
+      "snippet": "Model Card for Model ID 🧠 DistilBERT Sentiment Classifier This is a fine-tuned DistilBERT model for sentiment/emotion classification. It was trained using the Emotion Dataset and built as part of a custom NLP pipeline with Hugging Face Transformers and PyTorch. Model Details Base Model: distilbert-base-uncased Task: Multi-class Text Classification (Sentiment/Emotion) Fine-tuned on: Emotion ..."
+    },
+    {
+      "title": "How to Fine-Tune DistilBERT for Emotion Classification",
+      "url": "https://towardsdatascience.com/how-to-fine-tune-distilbert-for-emotion-classification/",
+      "snippet": "This is how the fine-tuned DistilBERT model did on the test set compared to the pre-trained base model: Radar chart of fine-tuned DistilBERT model. Image by author. Before fine-tuning, the pre-trained model performed poorly on our dataset, because it hasn&#x27;t seen the specific emotion labels before."
+    },
+    {
+      "title": "Fine-Tuning DistilBERT for Sentiment Analysis: A Step-by-Step Guide",
+      "url": "https://medium.com/@mdmahin3/fine-tuning-distilbert-for-sentiment-analysis-a-step-by-step-guide-f7560a39bfbb",
+      "snippet": "In this post, I will walk you through how to fine-tune a pre-trained DistilBERT model for sentiment analysis using the IMDb dataset. DistilBERT, a smaller and faster version of BERT, has become a ..."
+    },
+    {
+      "title": "Fine-Tuning DistilBERT: A Step-by-Step Practical Guide",
+      "url": "https://medium.com/@heyamit10/fine-tuning-distilbert-a-step-by-step-practical-guide-8eda046222b5",
+      "snippet": "When evaluating a fine-tuned model like DistilBERT, metrics like accuracy and F1-score are essential — but they only tell part of the story. I always take a deeper dive into classification ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Glimmering-Citrus-31B-GGUF",
+  "slug": "mradermacher-glimmering-citrus-31b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Glimmering-Citrus-31B-GGUF",
+  "created_at": "2026-08-19T05:00:36.000Z",
+  "updated_at": "2026-08-19T05:28:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Vortex5/Glimmering-Citrus-31B",
+    "base_model:quantized:Vortex5/Glimmering-Citrus-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908609696,
+  "storage_human": "213.9 GB",
+  "base_model": "Vortex5/Glimmering-Citrus-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Glimmer-31B-v1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Glimmer-31B-v1.0-GGUF",
+      "snippet": "mradermacher / Glimmer-31B-v1.-GGUF like 1 Transformers GGUF English mergekit Merge Not-For-All-Audiences conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "gemma4 - ollama.com",
+      "url": "https://ollama.com/library/gemma4:latest",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    },
+    {
+      "title": "Muse Glimmer: Meta&#x27;s 30B Open Agentic AI Model Guide",
+      "url": "https://www.analyticsinsight.net/artificial-intelligence/muse-glimmer-complete-guide-to-metas-open-agentic-ai-model",
+      "snippet": "Muse Glimmer is Meta&#x27;s 29.6B open-weight agentic model with vision, 131K context, tool use, local deployment, strong benchmarks, and DFlash acceleration for faster inference."
+    }
+  ]
+}

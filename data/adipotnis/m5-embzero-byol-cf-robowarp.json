@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "adipotnis/m5-embzero-byol-cf-robowarp",
+  "slug": "adipotnis-m5-embzero-byol-cf-robowarp",
+  "author": "adipotnis",
+  "url": "https://huggingface.co/adipotnis/m5-embzero-byol-cf-robowarp",
+  "created_at": "2026-08-19T07:44:36.000Z",
+  "updated_at": "2026-08-19T07:45:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "pi0.5",
+    "libero",
+    "openpi",
+    "counterfactual",
+    "flow-matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441290410,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adipotnis (Aditya Potnis) - Hugging Face",
+      "url": "https://huggingface.co/adipotnis/datasets",
+      "snippet": "User profile of Aditya Potnis on Hugging Face"
+    },
+    {
+      "title": "AI 3D Model Generator for FiveM | Model Forge",
+      "url": "https://theworkshop.space101.store/guides/tools/model-forge",
+      "snippet": "Generate game-ready 3D models from a text prompt or reference image with Model Forge. Powered by Tripo AI — export GLB with PBR textures for Blender, UV Studio, and FiveM."
+    },
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more."
+    },
+    {
+      "title": "Optimizers - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.1.0/en/optimizers",
+      "snippet": "Optimizers Transformers offers two native optimizers, AdamW and AdaFactor. It also provides integrations for more specialized optimizers. Install the library that offers the optimizer and drop it in the optim parameter in TrainingArguments."
+    },
+    {
+      "title": "Aditya Potnis adipotnis - GitHub",
+      "url": "https://github.com/adipotnis",
+      "snippet": "Block or report adipotnis Block user msteamsrecording-sorter msteamsrecording-sorter Public Python 2 tello-projects tello-projects Public Sandbox of projects on Tello Python 1 ros1_bridge_ws ros1_bridge_ws Public Dockerfile 1 1 tendon_multiplexer_arm tendon_multiplexer_arm Public Basic Arduino code to control Tendon actuated Mechanical ..."
+    }
+  ]
+}

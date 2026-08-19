@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ahadprogamer/omnicore-ai-merged",
+  "slug": "ahadprogamer-omnicore-ai-merged",
+  "author": "ahadprogamer",
+  "url": "https://huggingface.co/ahadprogamer/omnicore-ai-merged",
+  "created_at": "2026-08-17T16:31:07.000Z",
+  "updated_at": "2026-08-19T08:17:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 14409900720,
+  "storage_human": "14.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omni Ai - a Hugging Face Space by ahadprogamer",
+      "url": "https://huggingface.co/spaces/ahadprogamer/omni_ai",
+      "snippet": "OmniCore Game AI lets you run inference, train the model, generate speech, parse game states, and perform anti‑cheat scans by sending JSON commands to its /command endpoint. Provide the required da..."
+    },
+    {
+      "title": "Omnicore AI - a Hugging Face Space by ahadprogamer",
+      "url": "https://huggingface.co/spaces/ahadprogamer/omnicore_ai",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "OmniCoreAI: Multimodal AI NPC Mind & Perception Engine by ahadprogamer",
+      "url": "https://ahadprogamer.itch.io/omnicoreai",
+      "snippet": "Stop relying on predictable state machines or massive, hard-coded logic loops that bog down your game loop. This project provides a lightweight, highly optimized neural network engine designed to serve as a complete, independent behavioral brain for your game characters. Instead of executing static scripts, your NPCs gain true multimodal agency—interpreting their surroundings, executing ..."
+    },
+    {
+      "title": "GitHub - ahadprogamer/OmniCoreAI",
+      "url": "https://github.com/ahadprogamer/OmniCoreAI",
+      "snippet": "OmniCore AI — Godot Plugin Turn any NPC into an AI-driven character with voice, personality, and adaptive combat decisions. One plugin handles dialogue, text-to-speech, speech-to-text, voice-to-voice conversation, and game-state AI vision."
+    },
+    {
+      "title": "OmniCoreAI: Multimodal AI NPC Mind & Perception Engine",
+      "url": "https://ahadprogamer.itch.io/omnicoreai/devlog",
+      "snippet": "Devlog #4: OmniCore AI is Now Available for Unity July 10, 2026 by ahadprogamer 1 #devlog, #ai, #artificial inteligence, #unity, #omni core ai, #game development"
+    }
+  ]
+}

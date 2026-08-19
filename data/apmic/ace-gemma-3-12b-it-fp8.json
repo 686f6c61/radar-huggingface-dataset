@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "APMIC/ACE-gemma-3-12b-it-fp8",
+  "slug": "apmic-ace-gemma-3-12b-it-fp8",
+  "author": "APMIC",
+  "url": "https://huggingface.co/APMIC/ACE-gemma-3-12b-it-fp8",
+  "created_at": "2026-01-30T02:26:41.000Z",
+  "updated_at": "2026-08-19T10:59:00.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "zh",
+    "en",
+    "base_model:google/gemma-3-12b-pt",
+    "base_model:quantized:google/gemma-3-12b-pt",
+    "license:gemma",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 12811902418,
+  "storage_human": "12.8 GB",
+  "base_model": "google/gemma-3-12b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "APMIC/ACE-gemma-3-12b-it-fp8 · Hugging Face",
+      "url": "https://huggingface.co/APMIC/ACE-gemma-3-12b-it-fp8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "APMIC/ACE-gemma-3-12b-it-fp8 at main - Hugging Face",
+      "url": "https://huggingface.co/APMIC/ACE-gemma-3-12b-it-fp8/tree/main",
+      "snippet": "APMIC / ACE-gemma-3-12b-it-fp8 like 0 Follow APMIC 35 Safetensors Chinese English gemma3_text modelopt License:gemma Model card FilesFiles and versions xet Community main ACE-gemma-3-12b-it-fp8 12.8 GB Ctrl+K Ctrl+K 1 contributor History:5 commits apmic-hsun Update README.md 22db7c8 verified2 months ago .gitattributes Safe 1.57 kBinitial model upload2 months ago README.md Safe 4.19 kBUpdate ..."
+    },
+    {
+      "title": "gemma 3 12b it FP8 — ThinkLLM",
+      "url": "https://thinkllm.dev/models/gemma-3-12b-it-fp8",
+      "snippet": "A mid-sized multimodal model that handles both text and image inputs, sitting in a practical middle ground between lightweight and heavyweight options. It runs in FP8 precision, which reduces memory footprint while preserving most of the full-precision capability — a useful trade-off for deployment on constrained hardware. Distributed under Apache 2.0, it&#x27;s openly available for modification ..."
+    },
+    {
+      "title": "APMIC: Model Finetuning & Distillation Service",
+      "url": "https://www.apmic.ai/en/sovereignty-model",
+      "snippet": "APMIC assists businesses in distilling raw data into customized, on-premise models that transform information into secure and actionable enterprise knowledge."
+    },
+    {
+      "title": "APMIC releases the ACE series open-source models 4B and 12B: combining ...",
+      "url": "https://www.apmic.ai/en/news/apmic-releases-ace-open-source-ai-models-nvfp4",
+      "snippet": "APMIC has officially released four ACE-gemma-3 models, fine-tuned for the Taiwanese context and combining knowledge distillation and NVFP4 inference technology, providing enterprises with lightweight 4B and 12B model specifications that balance privacy, autonomy, and efficiency."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs",
+  "slug": "cqdesign-ltx-2-5-cq-video-and-image-enhancer-loras",
+  "author": "CQdesign",
+  "url": "https://huggingface.co/CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs",
+  "created_at": "2026-08-15T07:05:28.000Z",
+  "updated_at": "2026-08-19T04:47:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2678977458,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs - Hugging Face",
+      "url": "https://huggingface.co/CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs at main",
+      "url": "https://huggingface.co/CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX-2.5 is the newest version of LTX, an open-weights world model for video generation. It&#x27;s built as a stronger foundation, not just a new tool, that teams can build on, fine-tune, and deploy themselves."
+    },
+    {
+      "title": "Multimodal Model For Generative Creation | LTX Model",
+      "url": "https://ltx.io/model",
+      "snippet": "For academic teams pushing the boundaries of video generation, world simulation, and multimodal AI. Grants, model access, and research partnerships with the LTX team. Meet LTX-2.5, an open world model. LTX-2.5 renders cinema-grade detail, holds character and continuity across connected shots, and reconstructs sharper faces and legible text."
+    },
+    {
+      "title": "LTX-2.5 | LTX Documentation",
+      "url": "https://docs.ltx.io/models/ltx-2-5",
+      "snippet": "LTX-2.5 comes in two variants: ltx-2-5-fast for speed and low cost, and ltx-2-5-pro for higher fidelity. Fast produces portrait and landscape video up to 4K; Pro tops out at 1080p. LTX-2.5 improves every stage of generation on a stronger foundation: a Diffusion Video Decoder with industry-leading pixel quality, higher fidelity, native multi-shot scenes, and a better distilled model. Native ..."
+    }
+  ]
+}

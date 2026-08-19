@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "cjfrown/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "cjfrown-q-frozenlake-v1-4x4-noslippery",
+  "author": "cjfrown",
+  "url": "https://huggingface.co/cjfrown/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-08-19T07:55:18.000Z",
+  "updated_at": "2026-08-19T07:55:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackForAI/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/JackForAI/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nam194/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/nam194/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 . Usage"
+    },
+    {
+      "title": "krisorn/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/73101",
+      "snippet": "Q-Learning Agent playing FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "Nitinguleria / q-FrozenLake-v1-4x4-noSlippery",
+      "url": "https://insights-db.paloaltonetworks.com/models/Nitinguleria/q-FrozenLake-v1-4x4-noSlippery/3a9175061456d1c1bd90f23992d626ca42785252/overview",
+      "snippet": "Discover potential threats in the Nitinguleria / q-FrozenLake-v1-4x4-noSlippery model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "README.md · hugopuertas/q-FrozenLake-v1-4x4-noSlippery at main",
+      "url": "https://d6108366.hf-mirror.com/hugopuertas/q-FrozenLake-v1-4x4-noSlippery/blob/main/README.md?code=true",
+      "snippet": "0 Reinforcement Learning FrozenLake-v1-4x4-no_slippery q-learning custom-implementation Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new main q-FrozenLake-v1-4x4-noSlippery /README.md hugopuertas Upload folder using huggingface_hub daee6ce verifiedalmost 2 years ago preview code | Raw Download with hf ..."
+    }
+  ]
+}

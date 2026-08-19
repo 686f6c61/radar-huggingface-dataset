@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bhushan1729/orpheus-3b-stage3-emotion",
+  "slug": "bhushan1729-orpheus-3b-stage3-emotion",
+  "author": "bhushan1729",
+  "url": "https://huggingface.co/bhushan1729/orpheus-3b-stage3-emotion",
+  "created_at": "2026-08-19T08:17:16.000Z",
+  "updated_at": "2026-08-19T08:25:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/orpheus-3b-0.1-ft",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/orpheus-3b-0.1-ft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 609962966,
+  "storage_human": "610 MB",
+  "base_model": "unsloth/orpheus-3b-0.1-ft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bhushan1729/orpheus-3b-stage3-emotions · Hugging Face",
+      "url": "https://huggingface.co/bhushan1729/orpheus-3b-stage3-emotions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - canopyai/Orpheus-TTS: Towards Human-Sounding Speech",
+      "url": "https://github.com/canopyai/Orpheus-TTS",
+      "snippet": "Towards Human-Sounding Speech. Contribute to canopyai/Orpheus-TTS development by creating an account on GitHub."
+    },
+    {
+      "title": "canopylabs/orpheus-3b-0.1-ft · Hugging Face",
+      "url": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "GitHub - blak-code-tech/orpheus-tts: High-performance Text-to-Speech ...",
+      "url": "https://github.com/blak-code-tech/orpheus-tts",
+      "snippet": "The Orpheus model was designed for short to medium text segments, and our batching system works around this limitation by intelligently splitting and stitching content with minimal audible impact."
+    }
+  ]
+}

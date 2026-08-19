@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "NajafAli01/my_lovely_model",
+  "slug": "najafali01-my_lovely_model",
+  "author": "NajafAli01",
+  "url": "https://huggingface.co/NajafAli01/my_lovely_model",
+  "created_at": "2026-08-19T06:55:36.000Z",
+  "updated_at": "2026-08-19T06:55:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108311810,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433270744,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NajafAli01 (Najaf Ali) - Hugging Face",
+      "url": "https://huggingface.co/NajafAli01/models",
+      "snippet": "User profile of Najaf Ali on Hugging Face"
+    },
+    {
+      "title": "AI Girl Image Generator | MyLovely.ai",
+      "url": "https://www.mylovely.ai/create/images",
+      "snippet": "Create high-quality AI girl images with customizable prompts, models, styles, poses, and characters."
+    },
+    {
+      "title": "sweet little model pics — Yandex: found 110 thousand results",
+      "url": "https://wap.yandex.com/search?text=sweet+little+model+pics&lr=21414",
+      "snippet": "Studio shooting of a cute little model with copyspace. Young Japanese woman looking back in open-shouldered and backless clothing, AI generated. Close-up of a young woman walking through a summer flowering field."
+    },
+    {
+      "title": "113,000 explicit prompts from AI girlfriend platform exposed, many ...",
+      "url": "https://www.helpnetsecurity.com/2026/04/09/mylovely-ai-data-breach-user-conversations/",
+      "snippet": "MyLovely.AI suffered a data breach that exposed over 100,000 users, including their private conversations, prompts, and generated content."
+    },
+    {
+      "title": "Create Custom AI Character | MyLovely.ai",
+      "url": "https://www.mylovely.ai/characters/create",
+      "snippet": "Create your own AI character with guided traits or custom prompts, generate a preview, and build a personal virtual companion on MyLovely.ai."
+    }
+  ]
+}

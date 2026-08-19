@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "HoangQuocViet25/nlp-btl-wikilingua-x2",
+  "slug": "hoangquocviet25-nlp-btl-wikilingua-x2",
+  "author": "HoangQuocViet25",
+  "url": "https://huggingface.co/HoangQuocViet25/nlp-btl-wikilingua-x2",
+  "created_at": "2026-08-19T05:23:32.000Z",
+  "updated_at": "2026-08-19T05:25:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "summarization",
+    "vietnamese",
+    "vit5",
+    "repetition",
+    "unlikelihood-training",
+    "vi",
+    "dataset:huy-nh-2000/wikilingua",
+    "base_model:VietAI/vit5-base",
+    "base_model:finetune:VietAI/vit5-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 225950976,
+  "parameters_human": "226.0M",
+  "storage_bytes": 904654778,
+  "storage_human": "905 MB",
+  "base_model": "VietAI/vit5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - esdurmus/Wikilingua: Multilingual abstractive summarization ...",
+      "url": "https://github.com/esdurmus/Wikilingua",
+      "snippet": "Multilingual abstractive summarization dataset extracted from WikiHow. - GitHub - esdurmus/Wikilingua: Multilingual abstractive summarization dataset extracted from WikiHow."
+    },
+    {
+      "title": "esdurmus/wiki_lingua · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/esdurmus/wiki_lingua",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WikiLingua: A New Benchmark Dataset for Cross-Lingual Abstractive ...",
+      "url": "https://aclanthology.org/2020.findings-emnlp.360/",
+      "snippet": "We introduce WikiLingua, a large-scale, multilingual dataset for the evaluation of cross-lingual abstractive summarization systems. We extract article and summary pairs in 18 languages from WikiHow, a high quality, collaborative resource of how-to guides on a diverse set of topics written by human authors."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?dataset=dataset:WikiLingua",
+      "snippet": "Models 0 new Full-text search Edit filters Sort: Trending Active filters: WikiLingua Clear all"
+    },
+    {
+      "title": "BTL_NLP/src/models at main · AIVIETNAM-AIO-tlee/BTL_NLP",
+      "url": "https://github.com/AIVIETNAM-AIO-tlee/BTL_NLP/tree/main/src/models",
+      "snippet": "Contribute to AIVIETNAM-AIO-tlee/BTL_NLP development by creating an account on GitHub."
+    }
+  ]
+}

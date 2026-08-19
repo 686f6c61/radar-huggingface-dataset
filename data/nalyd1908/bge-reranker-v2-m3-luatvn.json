@@ -5,7 +5,7 @@
   "author": "Nalyd1908",
   "url": "https://huggingface.co/Nalyd1908/bge-reranker-v2-m3-luatvn",
   "created_at": "2026-08-18T18:49:16.000Z",
-  "updated_at": "2026-08-18T18:49:58.000Z",
+  "updated_at": "2026-08-19T08:13:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 567755777,
   "parameters_human": "567.8M",

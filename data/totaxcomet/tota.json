@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "totaxcomet/tota",
+  "slug": "totaxcomet-tota",
+  "author": "totaxcomet",
+  "url": "https://huggingface.co/totaxcomet/tota",
+  "created_at": "2026-08-19T08:18:01.000Z",
+  "updated_at": "2026-08-19T08:18:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AITOT — The Online Totalizer for AI Costs",
+      "url": "https://aitot.net/en",
+      "snippet": "AITOT is the online totalizer for AI infrastructure costs — free 2026 calculators for token pricing, GPU rentals, vector databases, inference benchmarks, and ROI. Compare 20+ models in real time."
+    },
+    {
+      "title": "First-Time Setup | tota",
+      "url": "https://tota-agent.vercel.app/docs/getting-started/setup",
+      "snippet": "If model discovery fails, tota asks you to re-enter the key instead of accepting random text. If you enable Telegram during first-time setup, tota starts a temporary pairing flow: send /start to your bot in Telegram, copy the pairing code you receive there, then paste that code into the CLI to finish setup."
+    },
+    {
+      "title": "tota Documentation | tota",
+      "url": "https://tota-agent.vercel.app/docs",
+      "snippet": "tota is a self-hosted assistant that runs locally, connects to your preferred channels, and uses a rich toolset for coding, research, and automation. You stay in control of data, permissions, and where it runs."
+    },
+    {
+      "title": "Tomdacat AI - one key, 60+ AI models, call it directly from ... - Roblox",
+      "url": "https://devforum.roblox.com/t/tomdacat-ai-one-key-60-ai-models-call-it-directly-from-your-roblox-game/4813384",
+      "snippet": "Tomdacat AI - AI api for roblox developers Call 60+ frontier AI models from one API Tomdacat AI provides acces to over 60+ frontier AI models including GPT, Claude, Gemini, Grok and many more! Vision, function/tool calling, streaming all supported! Easily top up with robux Pay-per-token credits no subscription, top up with what your game already earns. 378 Robux = 100 credits, no card required ..."
+    },
+    {
+      "title": "tota test - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/8c1f28bbde55c62b070164dbffd52974",
+      "snippet": "Meet tota test model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    }
+  ]
+}

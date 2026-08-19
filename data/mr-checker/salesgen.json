@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mr-checker/SalesGen",
+  "slug": "mr-checker-salesgen",
+  "author": "mr-checker",
+  "url": "https://huggingface.co/mr-checker/SalesGen",
+  "created_at": "2026-08-19T07:08:53.000Z",
+  "updated_at": "2026-08-19T07:22:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "text-classification",
+    "lead-generation",
+    "b2b",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18643408,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SalesGen AI - The Fully Autonomous Revenue Engine Suite",
+      "url": "https://www.salesgen.ai/",
+      "snippet": "SalesGen AI autonomously qualifies leads, books appointments, follows up, and optimizes revenue. The complete AI-powered suite for contractors, healthcare, and pharmaceutical businesses scaling to 8-figures."
+    },
+    {
+      "title": "models - a mr-checker Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mr-checker/models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from mr-checker"
+    },
+    {
+      "title": "mr-checker (Hajime Nagumo) - Hugging Face",
+      "url": "https://huggingface.co/mr-checker",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... liked a model about 1 hour ago"
+    },
+    {
+      "title": "SalesGen AI",
+      "url": "https://gosalesgen.ai/",
+      "snippet": "B2B companies often struggle with two critical bottlenecks: 1. Generating a consistent flow of quality leads from the right audience. 2. Following up with those leads fast enough and consistently enough to convert them into booked sales calls or purchases."
+    },
+    {
+      "title": "SalesGen AI - AI-Powered Sales Automation Platform",
+      "url": "https://www.salesgen.ai/solutions/marketing-ai",
+      "snippet": "Transform your sales process with cutting-edge AI automation. Boost conversions, streamline workflows, and drive results for businesses and contractors."
+    }
+  ]
+}

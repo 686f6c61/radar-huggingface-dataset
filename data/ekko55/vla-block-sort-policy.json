@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Ekko55/vla-block-sort-policy",
+  "slug": "ekko55-vla-block-sort-policy",
+  "author": "Ekko55",
+  "url": "https://huggingface.co/Ekko55/vla-block-sort-policy",
+  "created_at": "2026-08-19T10:48:50.000Z",
+  "updated_at": "2026-08-19T10:51:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Ekko55/vla-block-sort_20260818_191427",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906725720,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ekko55/vla-block-sort_20260818_191427 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Ekko55/vla-block-sort_20260818_191427",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ekko55 (Ekam Kooner) - Hugging Face",
+      "url": "https://huggingface.co/Ekko55/models",
+      "snippet": "Ekko55&#x27;s models1 Sort: Recently updated Ekko55/act-block-sort Robotics • 51.7M•Updated about 2 hours ago"
+    },
+    {
+      "title": "[2606.14375] Elastic Queries Reinforcement Learning: Self-Aware Policy ...",
+      "url": "https://arxiv.org/abs/2606.14375",
+      "snippet": "We propose Elastic Queries Reinforcement Learning (EQRL), a framework that makes each VLA policy query elastic. A lightweight latent-schedule adaptor jointly selects the latent input, denoising budget, and action chunk length, without fine-tuning the underlying VLA model."
+    },
+    {
+      "title": "[2511.14178] Towards Deploying VLA without Fine-Tuning: Plug-and-Play ...",
+      "url": "https://arxiv.org/abs/2511.14178",
+      "snippet": "In this work, we introduce VLA-Pilot, a plug-and-play inference-time policy steering method for zero-shot deployment of pre-trained VLA without any additional fine-tuning or data collection."
+    },
+    {
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model - GitHub",
+      "url": "https://github.com/openvla/openvla",
+      "snippet": "openvla-v01-7b: An early model used during development, trained from the Prismatic siglip-224px VLM (singular SigLIP vision backbone, and a Vicuña v1.5 LLM). Trained on the same mixture of datasets as Octo, but for significantly fewer GPU hours than our final model (mixture details - see \"Open-X Magic Soup\")."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "qtum/Qwen3-32B-GPTQ",
+  "slug": "qtum-qwen3-32b-gptq",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/Qwen3-32B-GPTQ",
+  "created_at": "2026-08-19T07:03:05.000Z",
+  "updated_at": "2026-08-19T07:04:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "compressed-tensors",
+    "GPTQ",
+    "vllm",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:quantized:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 19215016749,
+  "storage_human": "19.2 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlphaGaO/Qwen3-32B-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/AlphaGaO/Qwen3-32B-GPTQ",
+      "snippet": "Qwen3-32B Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features: Uniquely support of seamless ..."
+    },
+    {
+      "title": "AngelSlim/Qwen3-32B_int4_gptq · Hugging Face",
+      "url": "https://huggingface.co/AngelSlim/Qwen3-32B_int4_gptq",
+      "snippet": "Performance-Driven: We continuously optimize end-to-end performance in model compression workflows and algorithm deployment, such as enabling quantization of models like Qwen3-235B and DeepSeek-R1 on a single GPU."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 include: Dense and Mixture-of-Experts (MoE) models of various sizes, available in 0.6B, 1.7B, 4B, 8B, 14B, 32B and 30B-A3B, 235B-A22B."
+    },
+    {
+      "title": "Qwen3/docs/source/quantization/gptq.md at main - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3/blob/main/docs/source/quantization/gptq.md",
+      "snippet": "GPTQ ::: {attention} To be updated for Qwen3. ::: GPTQ is a quantization method for GPT-like LLMs, which uses one-shot weight quantization based on approximate second-order information. In this document, we show you how to use the quantized model with Hugging Face transformers and also how to quantize your own model with AutoGPTQ."
+    },
+    {
+      "title": "Qwen 3 32B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3-32b",
+      "snippet": "Additionally, the small MoE model, Qwen3-30B-A3B, outcompetes QwQ-32B with 10 times of activated parameters, and even a tiny model like Qwen3-4B can rival the performance of Qwen2.5-72B-Instruct."
+    }
+  ]
+}

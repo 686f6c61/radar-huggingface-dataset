@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "qtum/Qwen3-8B-GPTQ",
+  "slug": "qtum-qwen3-8b-gptq",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/Qwen3-8B-GPTQ",
+  "created_at": "2026-08-19T07:00:37.000Z",
+  "updated_at": "2026-08-19T07:01:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "compressed-tensors",
+    "GPTQ",
+    "vllm",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 6082876909,
+  "storage_human": "6.1 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlphaGaO/Qwen3-8B-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/AlphaGaO/Qwen3-8B-GPTQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "AngelSlim/Qwen3-8b_int4_gptq · Hugging Face",
+      "url": "https://huggingface.co/AngelSlim/Qwen3-8b_int4_gptq",
+      "snippet": "Performance-Driven: We continuously optimize end-to-end performance in model compression workflows and algorithm deployment, such as enabling quantization of models like Qwen3-235B and DeepSeek-R1 on a single GPU."
+    },
+    {
+      "title": "Qwen3-8B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3-8b",
+      "snippet": "Qwen3，the latest cost-optimized LLM Achieves effective integration of thinking and non-thinking modes, allowing mode switching during conversations. Its reasoning capability reaches the SOTA level in the same scale industry, and its general capability significantly surpasses Qwen2.5-7B."
+    }
+  ]
+}

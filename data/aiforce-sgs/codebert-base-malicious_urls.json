@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aiforce-sgs/codebert-base-Malicious_URLs",
+  "slug": "aiforce-sgs-codebert-base-malicious_urls",
+  "author": "aiforce-sgs",
+  "url": "https://huggingface.co/aiforce-sgs/codebert-base-Malicious_URLs",
+  "created_at": "2026-08-19T07:03:54.000Z",
+  "updated_at": "2026-08-19T09:46:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tensorboard",
+    "roberta",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 997323830,
+  "storage_human": "997 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DunnBC22/codebert-base-Malicious_URLs · Hugging Face",
+      "url": "https://huggingface.co/DunnBC22/codebert-base-Malicious_URLs",
+      "snippet": "codebert-base-Malicious_URLs This model is a fine-tuned version of microsoft/codebert-base. It achieves the following results on the evaluation set: Loss: 0.8225 Accuracy: 0.7279 Weighted f1: 0.6508 Micro f1: 0.7279 Macro f1: 0.4611 Weighted recall: 0.7279 Micro recall: 0.7279 Macro recall: 0.4422 Weighted precision: 0.6256 Micro precision: 0.7279 Macro precision: 0.5436 Model description For ..."
+    },
+    {
+      "title": "CodeBERT-base-Malicious_URLs Open Source Model - Free Detection of ...",
+      "url": "https://model.aibase.com/models/details/1915731699713073154",
+      "snippet": "This model is a fine - tuned version of microsoft/codebert-base, designed for text - classification tasks. It offers reliable performance in evaluating malicious URLs, providing multiple metrics to measure its effectiveness."
+    },
+    {
+      "title": "codebert-base-Malicious_URLs · Model · Inferix",
+      "url": "https://inferix.co/models/DunnBC22/codebert-base-Malicious_URLs",
+      "snippet": "codebert-base-Malicious_URLs This model is a fine-tuned version of microsoft/codebert-base. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "README.md · DunnBC22/codebert-base-Malicious_URLs at main",
+      "url": "https://huggingface.co/DunnBC22/codebert-base-Malicious_URLs/blob/main/README.md",
+      "snippet": "codebert-base-Malicious_URLs This model is a fine-tuned version of microsoft/codebert-base. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Malicious URL Classification Model_Open Source Model_AIbase Model Library",
+      "url": "https://model.aibase.com/en/tag/Malicious%20URL%20Classification",
+      "snippet": "Codebert Base Malicious URLs A malicious URL detection model fine-tuned based on microsoft/codebert-base for multi-classification tasks Text Classification Transformers English C DunnBC22 1,308 9 Featured Recommended AI Models Empowering the Future, Your AI Solution Knowledge Base English"
+    }
+  ]
+}

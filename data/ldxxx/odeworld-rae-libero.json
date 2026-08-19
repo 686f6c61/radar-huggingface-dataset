@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ldxxx/ODEWorld-RAE-LIBERO",
+  "slug": "ldxxx-odeworld-rae-libero",
+  "author": "ldxxx",
+  "url": "https://huggingface.co/ldxxx/ODEWorld-RAE-LIBERO",
+  "created_at": "2026-08-02T10:31:29.000Z",
+  "updated_at": "2026-08-19T09:31:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "odeworld",
+  "languages": [],
+  "tags": [
+    "odeworld",
+    "safetensors",
+    "dinov2",
+    "image-reconstruction",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "robotics",
+    "image-to-video",
+    "arxiv:2607.27924",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 227452041,
+  "parameters_human": "227.5M",
+  "storage_bytes": 909858116,
+  "storage_human": "910 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ldxxx/ODEWorld-RAE-LIBERO · Hugging Face",
+      "url": "https://huggingface.co/ldxxx/ODEWorld-RAE-LIBERO",
+      "snippet": "ODEWorld RAE image decoder trained on LIBERO. The checkpoint includes the DINOv2 encoder. For installation, loading, and inference instructions, see the ODEWorld GitHub repository."
+    },
+    {
+      "title": "ODEWorld - a ldxxx Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ldxxx/odeworld",
+      "snippet": "ldxxx/ODEWorld-RAE-AgiBot Robotics • 0.2B•Updated about 8 hours ago Upvote - Sort: Collection"
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://arxiv.org/html/2607.27924v3",
+      "snippet": "These architectural choices empower ODEWorld to achieve high-fidelity image reconstruction with an extremely compact model, even across extended temporal horizons. Moreover, its continuous nature also enables arbitrary temporal resolution and even backward prediction-capabilities fundamentally absent in most discrete-time predictive models."
+    },
+    {
+      "title": "ODEWorld/assets/libero at main · Dstate/ODEWorld · GitHub",
+      "url": "https://github.com/Dstate/ODEWorld/tree/main/assets/libero",
+      "snippet": "The Official Implementation of \"ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow\" - ODEWorld/assets/libero at main · Dstate/ODEWorld"
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://arxiv.org/html/2607.27924v2",
+      "snippet": "We introduce ODEWorld, a novel continuous latent world model grounded in physical time. The core of ODEWorld is a new predictive paradigm called PT-Flow, which learns a latent ODE velocity field defined on physical time."
+    }
+  ]
+}

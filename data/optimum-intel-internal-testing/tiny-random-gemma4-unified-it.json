@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "optimum-intel-internal-testing/tiny-random-gemma4-unified-it",
+  "slug": "optimum-intel-internal-testing-tiny-random-gemma4-unified-it",
+  "author": "optimum-intel-internal-testing",
+  "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-gemma4-unified-it",
+  "created_at": "2026-06-26T11:33:09.000Z",
+  "updated_at": "2026-08-19T09:46:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 120,
+  "trending_score": 0,
+  "parameters": 8706404,
+  "parameters_human": "8.7M",
+  "storage_bytes": 101755050,
+  "storage_human": "102 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Optimum Intel Internal Testing - Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/models",
+      "snippet": "Org profile for Optimum Intel Internal Testing on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "optimum-intel-internal-testing/tiny-random-gemma4-unified-it · Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-gemma4-unified-it",
+      "snippet": "optimum-intel-internal-testing / tiny-random-gemma4-unified-it like 0 Follow Optimum Intel Internal Testing 19 Safetensors gemma4_unified License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new ... Downloads last month - Safetensors Model size 8.69M params Tensor type F32 · Chat template Files info Inference ..."
+    },
+    {
+      "title": "GitHub - huggingface/optimum-intel: Optimum Intel: Accelerate ...",
+      "url": "https://github.com/huggingface/optimum-intel",
+      "snippet": "For more details on Optimum Intel inference, refer to the documentation. Note: Alternatively, an exported model can also be inferred using OpenVINO GenAI framework, that provides optimized execution methods for highly performant Generative AI."
+    },
+    {
+      "title": "Architecture graph for optimum-intel-internal-testing/tiny-random ...",
+      "url": "https://hfviewer.com/optimum-intel-internal-testing/tiny-random-gemma4-moe",
+      "snippet": "Where the model could be executed, the graph is trace-backed; otherwise it is derived from the reviewed configuration and source code. Browse more graphs from optimum-intel-internal-testing or explore other models on the hfviewer home page."
+    },
+    {
+      "title": "pix2struct tiny random (未知) | Benchmarks & Deploy Guide | OpenModelMap",
+      "url": "https://openmodelmap.com/model/optimum-intel-internal-testing/pix2struct-tiny-random",
+      "snippet": "Pix2Struct Tiny Random is an experimental image-to-text model released by Google with randomly initialized weights, primarily used for algorithm validation and development testing. It supports extracting structured information from images, making it suitable for researchers exploring vision-language model architectures and for prototyping and dataset preprocessing in multimodal learning."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gacekmg/Krea-2-LoRAs",
+  "slug": "gacekmg-krea-2-loras",
+  "author": "gacekmg",
+  "url": "https://huggingface.co/gacekmg/Krea-2-LoRAs",
+  "created_at": "2026-08-19T04:52:31.000Z",
+  "updated_at": "2026-08-19T04:52:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "not-for-all-audiences",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3098350850,
+  "storage_human": "3.1 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "krea2 AI Models | Civitai",
+      "url": "https://civitai.com/tag/krea2",
+      "snippet": "Browse 388 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with krea2."
+    },
+    {
+      "title": "Top 26 Krea2 LoRA models for Stylized Image Generation",
+      "url": "https://www.stablediffusiontutorials.com/2026/06/krea2-lora-models.html",
+      "snippet": "Krea 2 LoRAs make it easier to explore and expand the creative possibilities of AI image generation. Whether you are looking to add a unique artistic style, create more realistic fantasy visuals, experiment with different aesthetics, or simply enhance the quality of your images, these LoRAs provide a flexible way to customize your workflow."
+    },
+    {
+      "title": "ilkerzgi/fal-Krea-2-Style-LoRAs · Hugging Face",
+      "url": "https://huggingface.co/ilkerzgi/fal-Krea-2-Style-LoRAs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea 2 - Krea",
+      "url": "https://www.krea.ai/docs/user-guide/features/krea-2",
+      "snippet": "Krea 2 is our first foundation image model, built from scratch for full creative control over style, composition, aesthetics, and reference-driven results."
+    },
+    {
+      "title": "GitHub - CaptainGrock/Krea2Trainer: Automated wrapper to make training ...",
+      "url": "https://github.com/CaptainGrock/Krea2Trainer",
+      "snippet": "Credits ostris/ai-toolkit — Training engine Krea AI — Krea 2 model Wan-AI — Base Wan 2.1 architecture Microsoft Florence-2 — Auto-tagging model Gradio — Web UI framework HuggingFace — Model hosting License MIT License — see LICENSE for details. Contributing Issues and pull requests welcome."
+    }
+  ]
+}

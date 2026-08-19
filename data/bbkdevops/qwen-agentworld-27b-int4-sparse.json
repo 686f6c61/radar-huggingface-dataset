@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "bbkdevops/qwen-agentworld-27b-int4-sparse",
+  "slug": "bbkdevops-qwen-agentworld-27b-int4-sparse",
+  "author": "bbkdevops",
+  "url": "https://huggingface.co/bbkdevops/qwen-agentworld-27b-int4-sparse",
+  "created_at": "2026-08-19T09:29:59.000Z",
+  "updated_at": "2026-08-19T09:52:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensor-cores",
+    "int4-sparse",
+    "2-4-sparsity",
+    "ptx",
+    "qwen-agentworld",
+    "world-model",
+    "low-latency",
+    "ampere",
+    "rtx3090",
+    "gsm8k",
+    "swe-bench",
+    "mmlu-pro",
+    "hmmt-2026",
+    "olympiad-math",
+    "terminal-bench-3",
+    "leaderboard",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen-AgentWorld: Qwen-AgentWorld: Language World Models ...",
+      "url": "https://github.com/QwenLM/Qwen-AgentWorld/tree/main",
+      "snippet": "Introduction Qwen-AgentWorld is a native language world model that simulates agentic environments via long chain-of-thought reasoning across seven unified domains: MCP, Search, Terminal, SWE, Android, Web, and OS."
+    },
+    {
+      "title": "GitHub - btekmen/qwen-agentworld: Qwen-AgentWorld: Language World ...",
+      "url": "https://github.com/btekmen/qwen-agentworld",
+      "snippet": "Introduction Qwen-AgentWorld is a native language world model that simulates agentic environments via long chain-of-thought reasoning across seven unified domains: MCP, Search, Terminal, SWE, Android, Web, and OS."
+    },
+    {
+      "title": "Qwen-AgentWorld - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen-agentworld",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-AgentWorld: Language World Models for General Agents",
+      "url": "https://qwen.ai/blog?id=qwen-agentworld",
+      "snippet": "Qwen-AgentWorld: a native language world model across seven unified domains, with two complementary paradigms for enhancing general agents."
+    },
+    {
+      "title": "Qwen-AgentWorld: Language World Models for General Agents",
+      "url": "https://arxiv.org/html/2606.24597",
+      "snippet": "Figure 1: Overview of Qwen-AgentWorld. Top: Qwen-AgentWorld is a unified native language world model across seven domains. Bottom: We explore two complementary strategies for applying world modeling to enhance language agents (mainly using the 35B-A3B model as agent): Decouple and Unify, where the world model serves as the environment simulator and agent foundation model, respectively."
+    }
+  ]
+}

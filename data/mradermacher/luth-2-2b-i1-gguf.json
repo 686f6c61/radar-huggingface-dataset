@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Luth-2-2B-i1-GGUF",
+  "slug": "mradermacher-luth-2-2b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Luth-2-2B-i1-GGUF",
+  "created_at": "2026-08-19T09:17:58.000Z",
+  "updated_at": "2026-08-19T10:03:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "french",
+    "conversational",
+    "edge",
+    "qwen",
+    "fr",
+    "dataset:kurakurai/Luth-2-Post-Training-SFT",
+    "dataset:kurakurai/Luth-2-Post-Training-RL",
+    "base_model:kurakurai/Luth-2-2B",
+    "base_model:quantized:kurakurai/Luth-2-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 479418,
+  "parameters_human": "479418",
+  "storage_bytes": 1945728,
+  "storage_human": "2 MB",
+  "base_model": "kurakurai/Luth-2-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Luth-LFM2-1.2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Luth-LFM2-1.2B-GGUF",
+      "snippet": "For a convenient overview and download list, visit our model page for this model. weighted/imatrix quants are available at https://huggingface.co/mradermacher/Luth-LFM2-1.2B-i1-GGUF"
+    },
+    {
+      "title": "mradermacher/Luth-LFM2-1.2B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Luth-LFM2-1.2B-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "For our first training scale-up of LFM2, we selected three model sizes (350M, 700M, and 1.2B parameters) targeting low-latency on-device language model workloads. All models were trained on 10T tokens drawn from a pre-training corpus comprising approximately 75% English, 20% multilingual, and 5% code data sourced from the web and licensed ..."
+    }
+  ]
+}

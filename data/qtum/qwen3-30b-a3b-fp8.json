@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "qtum/Qwen3-30B-A3B-FP8",
+  "slug": "qtum-qwen3-30b-a3b-fp8",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/Qwen3-30B-A3B-FP8",
+  "created_at": "2026-08-19T06:32:06.000Z",
+  "updated_at": "2026-08-19T06:38:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "compressed-tensors",
+    "FP8",
+    "vllm",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-30B-A3B",
+    "base_model:quantized:Qwen/Qwen3-30B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 31228195018,
+  "storage_human": "31.2 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-30B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3-30b-a3b-fp8 - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support."
+    },
+    {
+      "title": "Qwen3-30B-A3B-FP8 model | Clarifai - The World&#x27;s AI",
+      "url": "http://clarifai.com/qwen/qwenLM/models/Qwen3-30B-A3B-FP8",
+      "snippet": "Qwen3-30B-A3B-FP8 Qwen3 is the newest in the Qwen series, featuring dense and MoE models with major improvements in reasoning, instruction-following, agent tasks, and multilingual support."
+    },
+    {
+      "title": "Qwen3-30B-A3B-FP8: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-30b-a3b-fp8-qwen",
+      "snippet": "Overview Qwen3-30B-A3B-FP8 is a 30.5 billion parameter mixture-of-experts language model from Qwen that activates only 3.3 billion parameters per token, built with 48 layers, 32 query attention heads, 4 key-value attention heads, 128 total experts with 8 activated, and a native context window of 32,768 tokens (extending to 131,072 with YaRN). This FP8-quantized checkpoint uses fine-grained ..."
+    }
+  ]
+}

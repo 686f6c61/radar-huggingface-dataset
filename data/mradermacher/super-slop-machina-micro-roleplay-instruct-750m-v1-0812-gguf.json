@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Super-Slop-Machina-Micro-Roleplay-Instruct-750M-v1-0812-GGUF",
+  "slug": "mradermacher-super-slop-machina-micro-roleplay-instruct-750m-v1-0812-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Super-Slop-Machina-Micro-Roleplay-Instruct-750M-v1-0812-GGUF",
+  "created_at": "2026-08-19T03:47:45.000Z",
+  "updated_at": "2026-08-19T03:59:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "RP",
+    "Roleplay",
+    "creative",
+    "writer",
+    "edge",
+    "SLM",
+    "finetuned",
+    "ERP",
+    "instruct",
+    "Experimental",
+    "narrative",
+    "creative writing",
+    "en",
+    "base_model:Indexnusrefather/Super-Slop-Machina-Micro-Roleplay-Instruct-750M-v1-0812",
+    "base_model:quantized:Indexnusrefather/Super-Slop-Machina-Micro-Roleplay-Instruct-750M-v1-0812",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7455590272,
+  "storage_human": "7.5 GB",
+  "base_model": "Indexnusrefather/Super-Slop-Machina-Micro-Roleplay-Instruct-750M-v1-0812",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super-Slop-Machina-Macro-Roleplay-Instruct-350M-0812-GGUF",
+      "url": "https://huggingface.co/mradermacher/Super-Slop-Machina-Macro-Roleplay-Instruct-350M-0812-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Super-Slop-Machina-Macro-Roleplay-Instruct-230M-2608 ...",
+      "url": "https://huggingface.co/mradermacher/Super-Slop-Machina-Macro-Roleplay-Instruct-230M-2608-Lobotomized-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Super Slop Machina Macro Roleplay Instruct 350M 0812 by ...",
+      "url": "https://llm-explorer.com/model/Indexnusrefather%2FSuper-Slop-Machina-Macro-Roleplay-Instruct-350M-0812,3FZTWcaO1gBNmMpOXGrSh9",
+      "snippet": "Super Slop Machina Macro Roleplay Instruct 350M 0812 is an open-source 350m LLM by Indexnusrefather. VRAM 0.2GB, 125K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "mradermacher/Super-Slop-Machina-Roleplay-1.2b-GGUF · Hugging Face",
+      "url": "https://sup15f33lo38ph9rlhq.vcdenet1.top/mradermacher/Super-Slop-Machina-Roleplay-1.2b-GGUF",
+      "snippet": "Instructions to use mradermacher/Super-Slop-Machina-Roleplay-1.2b-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "google/gemma-4-26b-a4b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-26b-a4b",
+      "snippet": "Gemma 4 is the latest on-device model family from Google. This is the 26B (active 4B) MoE version. Supports vision and reasoning."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "cheikh025",
   "url": "https://huggingface.co/cheikh025/enemray-qwen3.5-2b-cpt-merged",
   "created_at": "2026-08-18T23:58:08.000Z",
-  "updated_at": "2026-08-18T23:59:32.000Z",
+  "updated_at": "2026-08-19T08:53:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 2274069824,
   "parameters_human": "2.27B",
-  "storage_bytes": 4568210831,
-  "storage_human": "4.6 GB",
+  "storage_bytes": 13664653807,
+  "storage_human": "13.7 GB",
   "base_model": "Qwen/Qwen3.5-2B-Base",
   "formats": [
     "safetensors"

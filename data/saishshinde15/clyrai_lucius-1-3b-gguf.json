@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "saishshinde15/Clyrai_Lucius-1.3B-GGUF",
+  "slug": "saishshinde15-clyrai_lucius-1-3b-gguf",
+  "author": "saishshinde15",
+  "url": "https://huggingface.co/saishshinde15/Clyrai_Lucius-1.3B-GGUF",
+  "created_at": "2026-08-19T08:25:16.000Z",
+  "updated_at": "2026-08-19T10:13:28.000Z",
+  "license": "clyrai-research-preview",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "reasoning",
+    "clyrai",
+    "ollama",
+    "lmstudio",
+    "controllable-reasoning",
+    "dpo",
+    "grpo",
+    "text-generation",
+    "en",
+    "hi",
+    "it",
+    "base_model:saishshinde15/Clyrai_Lucius-1.3B",
+    "base_model:quantized:saishshinde15/Clyrai_Lucius-1.3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1342277632,
+  "parameters_human": "1.34B",
+  "storage_bytes": 5917598848,
+  "storage_human": "5.9 GB",
+  "base_model": "saishshinde15/Clyrai_Lucius-1.3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clyrai_Lucius-1.3B-Base API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/saishshinde15/Clyrai_Lucius-1.3B-Base",
+      "snippet": "Deploy Clyrai_Lucius-1.3B-Base with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "saishshinde15 (Saish Shinde) · GitHub",
+      "url": "https://github.com/saishshinde15/",
+      "snippet": "A graph representing saishshinde15&#x27;s contributions from June 29, 2025 to July 03, 2026. The contributions are 88% commits, 11% pull requests, 1% code review, 0% issues."
+    },
+    {
+      "title": "clyrai - GitHub",
+      "url": "https://github.com/clyrai",
+      "snippet": "clyrai is an AI IP studio focused on creating original, creative, and high-impact technologies that shape the future of intelligent systems. Rather than building surface-level applications, we focus on developing foundational architectures, frameworks, and system-level innovations that influence how AI is designed, orchestrated, and deployed."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "🚀 Welcome to the GGUF Model Community! This is a central hub for users to discover, access, and contribute to a vast collection of quantized models in the GGUF format. We&#x27;re building a vibrant space for exchanging, searching for, and sharing models that cater to diverse needs and requirements within the GGUF ecosystem."
+    },
+    {
+      "title": "saishshinde15/Clyrai_Base_Reasoning · Hugging Face",
+      "url": "https://huggingface.co/saishshinde15/Clyrai_Base_Reasoning",
+      "snippet": "Clyrai Secure Reasoning Model (Formerly known as TBH.AI_Base_Reasoning) Developed by: Clyrai License: apache-2.0 Fine-tuned from: Qwen/Qwen2.5-3B-Instruct Fine-tuning Method: GRPO (General Reinforcement with Policy Optimization) Inspired by: DeepSeek-R1 Model Description Clyrai Secure Reasoning Model is a cutting-edge AI model designed for secure, reliable, and structured reasoning. Fine-tuned ..."
+    }
+  ]
+}

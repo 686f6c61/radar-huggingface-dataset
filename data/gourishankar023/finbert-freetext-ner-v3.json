@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gourishankar023/finbert-freetext-ner-v3",
+  "slug": "gourishankar023-finbert-freetext-ner-v3",
+  "author": "gourishankar023",
+  "url": "https://huggingface.co/gourishankar023/finbert-freetext-ner-v3",
+  "created_at": "2026-08-19T09:41:43.000Z",
+  "updated_at": "2026-08-19T09:58:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 435968791,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FinBERT: Financial Sentiment Analysis with BERT - GitHub",
+      "url": "https://github.com/ProsusAI/finBERT",
+      "snippet": "FinBERT is a pre-trained NLP model to analyze sentiment of financial text. It is built by further training the BERT language model in the finance domain, using a large financial corpus and thereby fine-tuning it for financial sentiment classification. For the details, please see FinBERT: Financial Sentiment Analysis with Pre-trained Language ..."
+    },
+    {
+      "title": "gourishankar023/finbert-freetext-ner-v2 · Hugging Face",
+      "url": "https://huggingface.co/gourishankar023/finbert-freetext-ner-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gourishankar023/finbert-payment-freetext-ner-v3 · Hugging Face",
+      "url": "https://huggingface.co/gourishankar023/finbert-payment-freetext-ner-v3",
+      "snippet": "Model Description finbert-payment-freetext-ner-v1 is a fine-tuned version of ProsusAI/FinBERT for Named Entity Recognition (NER) on free-text payment transaction data."
+    },
+    {
+      "title": "GitHub - shubhamkotal/FinBert: FinBERT is a pre-trained NLP model to ...",
+      "url": "https://github.com/shubhamkotal/FinBert",
+      "snippet": "FinBert FinBERT is a pre-trained NLP model to analyze the sentiment of the financial text. It is built by further training the BERT language model in the finance domain, using a large financial corpus and thereby fine-tuning it for financial sentiment classification."
+    },
+    {
+      "title": "FinBERT: A Large Language Model for Extracting Information from ...",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/1911-3846.12832",
+      "snippet": "We develop FinBERT, a state-of-the-art large language model that adapts to the finance domain. We show that FinBERT incorporates finance knowledge and can better summarize contextual information in f..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gacekmg/nsfw-z-image-lora",
+  "slug": "gacekmg-nsfw-z-image-lora",
+  "author": "gacekmg",
+  "url": "https://huggingface.co/gacekmg/nsfw-z-image-lora",
+  "created_at": "2026-08-19T05:13:48.000Z",
+  "updated_at": "2026-08-19T05:13:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9957254699,
+  "storage_human": "10.0 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=nsfw+lora",
+      "snippet": "Explore machine learning models. John6666/nsfw-master-flux-lora-merged-with-flux1-dev-fp16-v10-fp8-flux"
+    },
+    {
+      "title": "nonomm/zimage_lora · Hugging Face",
+      "url": "https://huggingface.co/nonomm/zimage_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Z-IMAGE beauty girl - v1.0 | ZImage LoRA | Civitai",
+      "url": "https://civitai.com/models/2198417/z-image-beauty-girl",
+      "snippet": "Using this Lora will generate a fixed NSFW content! 🎬 This is suitable for the latest z-image turbo model. If this model is not available, it is r..."
+    },
+    {
+      "title": "Realistic Snapshot (Z-Image-Turbo + Krea 2) - ZIT v5 (Real Life ...",
+      "url": "https://civitai.com/models/2268008/realistic-snapshot-z-image-turbo-krea-2?modelVersionId=2617751",
+      "snippet": "👥 Multi-LoRA stacking that actually works - character + realism combined without one killing the other. No plastic skin, no washed-out identity 🔞 Full NSFW support with dedicated detailing ️ LoRA Caption Studio - build and caption your own AI influencer dataset 📕 19-page guide - from zero to a finished character LoRA"
+    },
+    {
+      "title": "Z-Image Uncensored - fp16 v3 | Tensor.Art",
+      "url": "https://tensor.art/models/965126062386242266",
+      "snippet": "🤝 Support & Custom Models 💠 Sponsorship: For sponsorship, please contact us on . Your support helps us grow and improve future work. 💠 Buy Custom Models: If you&#x27;re interested in buying a LoRA model, —we can get it done in a short time. ⚙️ Recommended Parameters: Sampling Method: Euler res_multistep Sampling Steps: 4 8 Guidance Scale: 1 ⚠️Disclaimer: This is a fictional AI ..."
+    }
+  ]
+}

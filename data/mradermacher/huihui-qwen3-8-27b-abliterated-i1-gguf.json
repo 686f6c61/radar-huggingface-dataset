@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Huihui-Qwen3.8-27B-abliterated-i1-GGUF",
   "created_at": "2026-08-17T12:29:29.000Z",
-  "updated_at": "2026-08-17T13:15:59.000Z",
+  "updated_at": "2026-08-18T06:23:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,13 +29,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1,
-  "downloads_30d": 0,
+  "likes": 5,
+  "downloads_30d": 2665,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471868000,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553881152,
+  "storage_human": "218.6 GB",
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "gguf"

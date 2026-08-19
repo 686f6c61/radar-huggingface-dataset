@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeroooo719/Krea2-realism-V2",
+  "slug": "zeroooo719-krea2-realism-v2",
+  "author": "zeroooo719",
+  "url": "https://huggingface.co/zeroooo719/Krea2-realism-V2",
+  "created_at": "2026-08-19T10:45:57.000Z",
+  "updated_at": "2026-08-19T10:45:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1596420559,
+  "storage_human": "1.6 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Realism by Stable Yogi Krea2 - v2.5 INT8 Turbo | Krea 2 Checkpoint ...",
+      "url": "https://civitai.com/models/2786499/realism-by-stable-yogi-krea2",
+      "snippet": "Realism by Stable Yogi · Krea 2 · V2.5 The full-spectrum Realism — every look, every mood, the widest range we&#x27;ve built. What&#x27;s NEW in V2.5 - The complete blend. Everything from V2.0 plus a richer, moodier warmth — the broadest range of faces, skin, light, and mood in one model. - Full versatility. Clean documentary, warm film, moody and cinematic — it does all of it, guided by your ..."
+    },
+    {
+      "title": "RazzzHF/realism_engine_krea2 · Hugging Face",
+      "url": "https://huggingface.co/RazzzHF/realism_engine_krea2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "uzumix/realism_engine_krea2_v2 · Hugging Face",
+      "url": "https://huggingface.co/uzumix/realism_engine_krea2_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea2-realism-V2 - Pro - Free AI LORA Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/1021658836781533715",
+      "snippet": "Download Krea2-realism-V2 - free LORA KREA_2 AI model on TENSORHUB ART. By qwin"
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    }
+  ]
+}

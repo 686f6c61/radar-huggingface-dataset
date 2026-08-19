@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pes2/tds-carbon-card",
+  "slug": "pes2-tds-carbon-card",
+  "author": "pes2",
+  "url": "https://huggingface.co/pes2/tds-carbon-card",
+  "created_at": "2026-08-19T10:53:06.000Z",
+  "updated_at": "2026-08-19T10:53:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24f2005112/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/24f2005112/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "spandanjit2005/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/spandanjit2005/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "GitHub - allenai/peS2o: Pretraining Efficiently on S2ORC!",
+      "url": "https://github.com/allenai/peS2o",
+      "snippet": "Pretraining Effectively on S2ORC! The peS2o dataset is a collection of ~40M open access academic papers, cleaned, filtered, and formatted for pre-training of language models. It is derived from the Semantic Scholar Open Research Corpus (Lo et al, 2020), or S2ORC. peS2o is available on the Huggingface Hub!"
+    },
+    {
+      "title": "Good Datasets for AI Model Training in the Power and Energy Domain",
+      "url": "https://dppescomp.github.io/pesdpcompetition.github.io/",
+      "snippet": "Application and development of advanced AI models provide pivotal solutions for various power and energy system (PES) issues and challenges. The performance of AI models is heavily dependent on the availability of high-quality datasets."
+    }
+  ]
+}

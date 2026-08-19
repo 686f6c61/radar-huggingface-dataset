@@ -5,7 +5,7 @@
   "author": "ivanfromm",
   "url": "https://huggingface.co/ivanfromm/MiniMax-H3-Prompt-Rewriter-LoRA-GGUF",
   "created_at": "2026-08-07T12:43:02.000Z",
-  "updated_at": "2026-08-09T11:40:47.000Z",
+  "updated_at": "2026-08-18T20:47:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 21,
-  "downloads_30d": 3187,
+  "downloads_30d": 3231,
   "trending_score": 16,
   "parameters": 1867644928,
   "parameters_human": "1.87B",
-  "storage_bytes": 3735358656,
-  "storage_human": "3.7 GB",
+  "storage_bytes": 5719800192,
+  "storage_human": "5.7 GB",
   "base_model": "lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA",
   "formats": [
     "gguf"

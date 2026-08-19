@@ -5,7 +5,7 @@
   "author": "TensorVizion",
   "url": "https://huggingface.co/TensorVizion/Cizi-OCR",
   "created_at": "2026-08-15T10:50:54.000Z",
-  "updated_at": "2026-08-15T11:25:02.000Z",
+  "updated_at": "2026-08-18T15:29:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

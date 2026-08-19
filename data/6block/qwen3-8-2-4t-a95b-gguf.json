@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "6block/Qwen3.8-2.4T-A95B-GGUF",
+  "slug": "6block-qwen3-8-2-4t-a95b-gguf",
+  "author": "6block",
+  "url": "https://huggingface.co/6block/Qwen3.8-2.4T-A95B-GGUF",
+  "created_at": "2026-08-19T00:13:53.000Z",
+  "updated_at": "2026-08-19T10:27:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1306676689376,
+  "storage_human": "1306.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-2.4T-A95B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-2.4T-A95B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Get Started with Qwen3.8-2.4T-A95B - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/get-started/advanced/get-started-qwen3.8.html",
+      "snippet": "Get Started with Qwen3.8-2.4T-A95B # Qwen3.8-2.4T-A95B (also known as Qwen3.8-Max) features 2.4 trillion total parameters with 95 billion active parameters per token using a sparse Mixture-of-Experts (MoE) design, a 1-million-token context window, and open-weight availability. This procedure uses the SGLang Model-Free NIM to download the model from a remote source. For more information, refer ..."
+    },
+    {
+      "title": "Qwen3.8 2.4t A95b - GGUF Model (29 parts) - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-2-4t-a95b.html",
+      "snippet": "Download Qwen3.8 2.4t A95b GGUF model. 1.50 TB, 0 downloads, 66 likes. Split into 29 parts."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mphd1/gpt2-xl-teacher",
+  "slug": "mphd1-gpt2-xl-teacher",
+  "author": "mphd1",
+  "url": "https://huggingface.co/mphd1/gpt2-xl-teacher",
+  "created_at": "2026-08-19T09:01:19.000Z",
+  "updated_at": "2026-08-19T09:01:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:openai-community/gpt2-xl",
+    "base_model:finetune:openai-community/gpt2-xl",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-19T10:31:45.637Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai-community/gpt2-xl · Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2-xl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniLLM/teacher-gpt2-1.5B · Hugging Face",
+      "url": "https://huggingface.co/MiniLLM/teacher-gpt2-1.5B",
+      "snippet": "teacher-gpt2-1.5B paper | code teacher-gpt2-1.5B is a gpt2-xlarge (1.5B) model supervised fine-tuned on databricks-dolly-15k. It is used as the teacher model for MiniLLM series. Citation @inproceedings {minillm, title= {MiniLLM: Knowledge Distillation of Large Language Models}, author= {Gu, Yuxian and Dong, Li and Wei, Furu and Huang, Minlie}, booktitle= {Proceedings of ICLR}, year= {2024} }"
+    },
+    {
+      "title": "A free version of ChatGPT built for teachers - OpenAI",
+      "url": "https://openai.com/index/chatgpt-for-teachers/",
+      "snippet": "They also play a critical role in helping students and families understand how AI can support learning. ChatGPT for Teachers is built for both educators and school leaders. Teachers get a secure workspace to adapt materials for their classrooms, get more out of prep time, collaborate with peers, and get comfortable using AI on their own terms."
+    },
+    {
+      "title": "gpt-2/model_card.md at master · openai/gpt-2 · GitHub",
+      "url": "https://github.com/openai/gpt-2/blob/master/model_card.md",
+      "snippet": "Inspired by Model Cards for Model Reporting (Mitchell et al.), we&#x27;re providing some accompanying information about the GPT-2 family of models we&#x27;re releasing. Model Details. This model was developed by researchers at OpenAI to help us understand how the capabilities of language model capabilities ..."
+    },
+    {
+      "title": "gpt2-xl: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gpt2-xl-openai-community",
+      "snippet": "Overview gpt2-xl is the 1.5 billion parameter version of GPT-2, a transformer-based causal language model created by OpenAI Community. The model uses a byte-level Byte Pair Encoding tokenizer with a vocabulary of 50,257 tokens and accepts input sequences of 1,024 consecutive tokens. It was pretrained on English text using a causal language modeling objective, trained to predict the next token ..."
+    }
+  ]
+}

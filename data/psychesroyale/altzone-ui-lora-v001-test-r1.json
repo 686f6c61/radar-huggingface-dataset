@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "PsychesRoyale/altzone-ui-lora-v001-test-r1",
+  "slug": "psychesroyale-altzone-ui-lora-v001-test-r1",
+  "author": "PsychesRoyale",
+  "url": "https://huggingface.co/PsychesRoyale/altzone-ui-lora-v001-test-r1",
+  "created_at": "2026-08-19T06:47:42.000Z",
+  "updated_at": "2026-08-19T06:50:07.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13652984,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PsychesRoyale (Gaming) - Hugging Face",
+      "url": "https://huggingface.co/PsychesRoyale",
+      "snippet": "PsychesRoyale (Gaming) - Hugging Face ... graphictools"
+    },
+    {
+      "title": "PsychesRoyale (Gaming) - Hugging Face",
+      "url": "https://huggingface.co/PsychesRoyale/models",
+      "snippet": "PsychesRoyale&#x27;s models3 Sort: Recently updated PsychesRoyale/altzone_vasymys_lora_v001 Updated about 13 hours ago• 1"
+    },
+    {
+      "title": "Best psyche - v0.1 AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/929559920318106759",
+      "snippet": "Download psyche - free LORA Illustrious AI model on TENSOR. PSYCHE. By user_900632071112805932"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,980 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "CanIRun.ai — Can your machine run AI models?",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your hardware and find out which AI models you can run locally. GPU, CPU, and RAM analysis in your browser."
+    }
+  ]
+}

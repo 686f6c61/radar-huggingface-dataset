@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "2wjddls2/misogyny-detection-kcbert",
+  "slug": "2wjddls2-misogyny-detection-kcbert",
+  "author": "2wjddls2",
+  "url": "https://huggingface.co/2wjddls2/misogyny-detection-kcbert",
+  "created_at": "2026-08-19T10:08:13.000Z",
+  "updated_at": "2026-08-19T10:55:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108920066,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435703792,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nmrenyi/misogyny-detection: misogynistic content detection ...",
+      "url": "https://github.com/nmrenyi/misogyny-detection",
+      "snippet": "Misogyny Detection Definition of misogyny (Prompt to LLM) Misogyny is hatred of, contempt for, or prejudice against women or girls. It is a form of sexism that can keep women at a lower social status than men, thus maintaining the social roles of patriarchy. Here are some typical misogynistic behaviours: Objectifying women."
+    },
+    {
+      "title": "Subtle Misogyny Detection and Mitigation: An Expert-Annotated Dataset",
+      "url": "https://arxiv.org/pdf/2311.09443",
+      "snippet": "In this paper, we discuss the methodology used, analyze the annotations obtained, and provide baselines us-ing common NLP algorithms in the context of misogyny detection and mitigation. We hope this work will promote AI for social good in NLP for bias detection, explanation, and re-moval."
+    },
+    {
+      "title": "GitHub - poorvisuparn/MisogynyDetection: An NLP model that identifies ...",
+      "url": "https://github.com/poorvisuparn/MisogynyDetection",
+      "snippet": "Misogyny Detection Description This is an NLP project that can detect misogyny (i.e. derogatory comments aimed at women) in sentences. It includes multiple cleaning and tokenisation methods, and uses GloVe model for vectorisation and BERT model to classify the statements as misogynistic or not."
+    },
+    {
+      "title": "Enhancing misogyny detection in bilingual texts using explainable AI ...",
+      "url": "https://link.springer.com/article/10.1007/s40747-024-01655-1",
+      "snippet": "This backdrop of increasing online HS and insufficient protective measures sets the stage for this research, which focuses on improving the detection of misogyny in bilingual texts (Italian and English) by integrating FastText word embeddings with machine learning techniques and utilizing language-specific transformer-based models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

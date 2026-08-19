@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tappudoipeto/MyOmniAI",
+  "slug": "tappudoipeto-myomniai",
+  "author": "tappudoipeto",
+  "url": "https://huggingface.co/tappudoipeto/MyOmniAI",
+  "created_at": "2026-08-19T09:10:51.000Z",
+  "updated_at": "2026-08-19T09:10:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models",
+      "snippet": "Choosing a model If you&#x27;re not sure where to start, use GPT-5.6 Sol, our flagship model for complex reasoning and coding. Choose GPT-5.6 Terra to balance intelligence and cost, or GPT-5.6 Luna for cost-sensitive, high-volume workloads. All latest OpenAI models support text and image input, text output, multilingual capabilities, and vision. Models are available via the Responses API and our ..."
+    },
+    {
+      "title": "MiniOmni AI - AI Video Generator, Text to Video & Image to Video",
+      "url": "https://geminiomniai.app/home",
+      "snippet": "Create stunning AI videos with MiniOmni AI. Turn text prompts and images into cinematic video clips online with fast generation, smooth motion, and creator-friendly tools for social media, ads, and storytelling."
+    },
+    {
+      "title": "Google Omni AI Model: The Complete Guide to Gemini Omni Video ...",
+      "url": "https://tool-hunt.com/en/google-omni-ai-model-the-complete-guide-to-gemini-omni-video-generation-and-editing/",
+      "snippet": "Conclusion: Embracing the Omni Era The Google Omni AI model is a big deal for Gemini Omni video generation and the broader field of AI video editing tools. By combining conversational editing, multimodal input, and real-world understanding, Google has created a tool that feels less like a simple generator and more like a creative collaborator."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Gemini Omni — Unified Video, Image & Audio Model",
+      "url": "https://geminiomni.studio/",
+      "snippet": "AI Video & Image Generator — Powered by Gemini Omni Gemini Omni is Google&#x27;s native multimodal video generation model. Generate high-fidelity video from text or images, with synchronized audio and 1080p output."
+    }
+  ]
+}

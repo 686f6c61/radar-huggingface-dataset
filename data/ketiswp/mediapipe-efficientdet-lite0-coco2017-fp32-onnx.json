@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/mediapipe-EfficientDet-Lite0-COCO2017-fp32-onnx",
   "created_at": "2026-08-19T01:56:36.000Z",
-  "updated_at": "2026-08-19T02:22:37.000Z",
+  "updated_at": "2026-08-19T07:00:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "tflite",
     "onnxruntime",
     "fp32",
     "object-detection",
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 13455676,
-  "storage_human": "13 MB",
+  "storage_bytes": 61275491,
+  "storage_human": "61 MB",
   "base_model": null,
   "formats": [
     "onnx"

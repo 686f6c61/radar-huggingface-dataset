@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "raihanhanif132/nutricheck_mobilenetv2",
+  "slug": "raihanhanif132-nutricheck_mobilenetv2",
+  "author": "raihanhanif132",
+  "url": "https://huggingface.co/raihanhanif132/nutricheck_mobilenetv2",
+  "created_at": "2026-08-13T10:20:16.000Z",
+  "updated_at": "2026-08-19T08:35:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 339761564,
+  "storage_human": "340 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - raihanhanif132/nutricheck_app",
+      "url": "https://github.com/raihanhanif132/nutricheck_app",
+      "snippet": "NutriCheck adalah aplikasi cerdas berbasis web yang dirancang untuk membantu pengguna memantau asupan gizi harian secara praktis. Sistem ini mengimplementasikan algoritma Convolutional Neural Network (CNN) dengan arsitektur MobileNetV2 untuk mengklasifikasikan 53 jenis makanan secara otomatis dari gambar."
+    },
+    {
+      "title": "nutricheck_app/README.md at main - GitHub",
+      "url": "https://github.com/raihanhanif132/nutricheck_app/blob/main/README.md",
+      "snippet": "NutriCheck adalah aplikasi cerdas berbasis web yang dirancang untuk membantu pengguna memantau asupan gizi harian secara praktis. Sistem ini mengimplementasikan algoritma Convolutional Neural Network (CNN) dengan arsitektur MobileNetV2 untuk mengklasifikasikan 53 jenis makanan secara otomatis dari gambar."
+    },
+    {
+      "title": "AlexKoff88/mobilenet_v2_food101 · Hugging Face",
+      "url": "https://huggingface.co/AlexKoff88/mobilenet_v2_food101",
+      "snippet": "The main intend is to use it in samples and demos for model optimization. Here is the advantages: FOOD101 can automatically downloaded without registration and SMS. It is quite representative to reflect the real world scenarios. MobileNet v2 is easy to train and lightweight model which is also representative and used in many public benchmarks."
+    },
+    {
+      "title": "MobileNet V2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mobilenet_v2",
+      "snippet": "MobileNet V2 improves performance on mobile devices with a more efficient architecture. It uses inverted residual blocks and linear bottlenecks to start with a smaller representation of the data, expands it for processing, and shrinks it again to reduce the number of computations. The model also removes non-linearities to maintain accuracy despite its simplified design. Like MobileNet V1, it ..."
+    },
+    {
+      "title": "MobileNet-v2 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/mobilenet_v2",
+      "snippet": "MobileNet-v2 Imagenet classifier and general purpose backbone. MobileNetV2 is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    }
+  ]
+}

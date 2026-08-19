@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Luciss007/frontier-forge-r1b",
+  "slug": "luciss007-frontier-forge-r1b",
+  "author": "Luciss007",
+  "url": "https://huggingface.co/Luciss007/frontier-forge-r1b",
+  "created_at": "2026-08-19T10:54:12.000Z",
+  "updated_at": "2026-08-19T10:54:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen3.5",
+    "structured-output",
+    "tool-calling",
+    "post-training",
+    "gptq",
+    "speculative-decoding",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LucisZhang/frontier-forge",
+      "url": "https://github.com/LucisZhang/frontier-forge",
+      "snippet": "Sequel to nlp-eval-lab, which mapped the cost-quality frontier of classical / fine-tuned / frontier-API tiers. This project pushes a small model across that frontier and productionizes the result."
+    },
+    {
+      "title": "Introducing Forge - Mistral AI",
+      "url": "https://mistral.ai/news/forge/",
+      "snippet": "Today, we&#x27;re introducing Forge, a system for enterprises to build frontier-grade AI models grounded in their proprietary knowledge."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - antoinezambelli/forge: A Python framework for self-hosted LLM ...",
+      "url": "https://github.com/antoinezambelli/forge",
+      "snippet": "A reliability layer for self-hosted LLM tool-calling. You give forge a set of tools; the model calls whichever it wants in whatever order. Workflow structure is opt-in — required_steps, prerequisites, and terminal_tool let you constrain the loop when you need to, but forge&#x27;s guardrails (rescue parsing, retry nudges, response validation) apply with zero required steps too. Forge takes an 8B ..."
+    },
+    {
+      "title": "ForgeGUI - The #1 AI Platform For Game Developers",
+      "url": "https://forgegui.com/",
+      "snippet": "Join 180K+ game developers using ForgeGUI to make GUI, 3D Models, Thumbnails, Characters on platforms like Roblox, UEFN, Unreal, Unity and beyond!"
+    }
+  ]
+}

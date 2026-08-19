@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Agents-A1-i1-GGUF",
+  "slug": "mradermacher-agents-a1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Agents-A1-i1-GGUF",
+  "created_at": "2026-08-19T11:10:48.000Z",
+  "updated_at": "2026-08-19T11:36:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "moe",
+    "vlm",
+    "vision",
+    "agentic",
+    "en",
+    "base_model:InternScience/Agents-A1",
+    "base_model:quantized:InternScience/Agents-A1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 28572337696,
+  "storage_human": "28.6 GB",
+  "base_model": "InternScience/Agents-A1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Agentic-30B-A3B-i1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Agentic-30B-A3B-i1-GGUF/tree/main",
+      "snippet": "mradermacher / Agentic-30B-A3B-i1-GGUF like 0 Transformers GGUF Chinese English agent agentic tool-use function-calling Mixture of Experts qwen3 opencsg vllm skills imatrix conversational License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - InternScience/Agents-A1: Scaling the Horizon, Not the ...",
+      "url": "https://github.com/InternScience/Agents-A1/",
+      "snippet": "Agents-A1 is a 35B Mixture-of-Experts Agentic Model that reaches trillion-parameter-level performance by scaling the agent horizon. We investigate agent-horizon scaling from two perspectives: scaling long-horizon trajectories and scaling heterogeneous agent abilities."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    }
+  ]
+}

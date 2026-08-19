@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "litert-community/North-Micro-Vision-Instruct",
+  "slug": "litert-community-north-micro-vision-instruct",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/North-Micro-Vision-Instruct",
+  "created_at": "2026-08-19T07:59:39.000Z",
+  "updated_at": "2026-08-19T08:11:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "vlm",
+    "multimodal",
+    "vision-language",
+    "cohere",
+    "image-text-to-text",
+    "base_model:CohereLabs/North-Micro-Vision-Instruct",
+    "base_model:finetune:CohereLabs/North-Micro-Vision-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5261896512,
+  "storage_human": "5.3 GB",
+  "base_model": "CohereLabs/North-Micro-Vision-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meet North Micro Vision: A 2.4B Native-Resolution Vision-Language Model",
+      "url": "https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct",
+      "snippet": "A Blog post by Cohere Labs on Hugging Face"
+    },
+    {
+      "title": "CohereLabs/North-Micro-Vision-Instruct · Hugging Face",
+      "url": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "North Micro Vision Instruct — Cohere | AITier",
+      "url": "https://aitier.net/en/models/north-micro-vision-instruct",
+      "snippet": "Compact open-weight vision-language model (2.4B) with native-resolution image support for VQA, captioning, grounding, OCR, charts, and documents. Custom 400M SigLIP 2-based vision encoder + 2B North Micro LLM backbone (Command A+ style). Multilingual and multi-image. LM context 128K; multimodal training validated to 8K. Not a reasoning/tool-calling model. Intended for prototyping and fine-tuning."
+    },
+    {
+      "title": "North Micro Vision Instruct: Cohere&#x27;s 2.4B Document VLM",
+      "url": "https://www.orcarouter.ai/blog/north-micro-vision-instruct-explained",
+      "snippet": "CohereLabs/North-Micro-Vision-Instruct — \"North Micro Vision\" for short — is a 2.4-billion-parameter vision-language model that shipped the quiet way: the weights appeared on Hugging Face on August 10, 2026, Cohere&#x27;s announcement followed on August 12, and a day later there is still no hosted API, no price list, and no third-party leaderboard entry. North Micro Vision is built for one job ..."
+    },
+    {
+      "title": "North Micro Vision Instruct — AI Model Radar",
+      "url": "https://aimodelradar.app/models/north-micro-vision-instruct",
+      "snippet": "North Micro Vision Instruct is a 2.4B-parameter open-weight vision-language model from Cohere Labs combining a 400M native-resolution vision encoder with a 2B language model. It specializes in document understanding, OCR, and visual grounding while maintaining deployability on edge hardware. Released under Apache 2.0 license with no per-token API pricing."
+    }
+  ]
+}

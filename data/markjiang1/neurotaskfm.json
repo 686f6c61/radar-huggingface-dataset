@@ -5,13 +5,14 @@
   "author": "markjiang1",
   "url": "https://huggingface.co/markjiang1/NeuroTaskFM",
   "created_at": "2026-08-17T10:04:38.000Z",
-  "updated_at": "2026-08-17T10:36:34.000Z",
+  "updated_at": "2026-08-17T14:04:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "any-to-any",
   "library": null,
   "languages": [],
   "tags": [
+    "any-to-any",
     "license:apache-2.0",
     "region:us"
   ],

@@ -5,7 +5,7 @@
   "author": "ayan4m1",
   "url": "https://huggingface.co/ayan4m1/Qwen3.5-4B-E2E-Tests-GGUF",
   "created_at": "2026-08-17T14:29:32.000Z",
-  "updated_at": "2026-08-18T00:13:48.000Z",
+  "updated_at": "2026-08-18T01:20:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -23,7 +23,6 @@
     "unsloth",
     "vision-language-model",
     "en",
-    "zh",
     "dataset:aiqualitylab/ai-natural-language-tests",
     "base_model:unsloth/Qwen3.5-4B",
     "base_model:quantized:unsloth/Qwen3.5-4B",
@@ -33,12 +32,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 228,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",
-  "storage_bytes": 12010582336,
-  "storage_human": "12.0 GB",
+  "storage_bytes": 15469591104,
+  "storage_human": "15.5 GB",
   "base_model": "unsloth/Qwen3.5-4B",
   "formats": [
     "gguf"

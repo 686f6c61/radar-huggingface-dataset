@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kevinmodelf/llama3-keml-merged-cdns",
+  "slug": "kevinmodelf-llama3-keml-merged-cdns",
+  "author": "Kevinmodelf",
+  "url": "https://huggingface.co/Kevinmodelf/llama3-keml-merged-cdns",
+  "created_at": "2026-08-19T11:23:53.000Z",
+  "updated_at": "2026-08-19T11:29:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766289,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seedance 2.5 Worldwide Release - Seedance 2.5 Official Release",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=x%2DMypXhTMwOGUXgN5MO79quQII4u7loyUXqPHmhkUoE3uN0X97cqreif39tem7TOF7lDCp_atMieusIijPAAtI9ED2j7DdGeQSlLsPb%2DekGqjcTxtGQuJqU5bF0Ju_0TE%2DpHdjNefoatRV98EPRfB31vb4As1ZsAhKZnhrNtNqk.uVwPjURkWvEZ_gNRFiIH8Q&rut=62d93e704aa9a0d286ccd31ed1e7d17b459306affc60b2f69c1e26e32853da50&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8AlwmdeioJZNiCKzxRkPbJzVUCUwV5hiUqXVCpS2keaN8uwIrrVSCJeLuj__QbY5vtSeGYRuoeP98MXLxG2WxYz5Or97VYgIooicoSU4SN%2DXMMQRe7%2DIB1%2Dgd0Z8YLwiujg04KlSjAgXh7bjC1O%2D2DuUAPjiXXKplSK2PiMWAicje1hhGY2cKI5cSIErkKedmRQaACX4A24uHwXMWK4gScH4DCqw%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZlbiUyZmFjdGl2aXR5JTJmc2VlZGFuY2UyLTUlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RwdXJjaGFzZV9zZWVkYW5jZV9ldV9lbmdsaXNoXzIwMjYwODE5X2xyaCUyNnV0bV90ZXJtJTNkMjAyNjA4MTlfYnJhbmRfYnJvYWRtYXRjaF8yLTVfc2VlZGFuY2UyLjUlMjZ1dG1fY29udGVudCUzZHRlY2RvJTI2bXNjbGtpZCUzZDZlNDJjY2VhOTA5ZjE2M2VkMTk5YTY2ZjA0NzA3NTY2%26rlid%3D6e42ccea909f163ed199a66f04707566&vqd=4-19549812445194156402905298144568101006&iurl=%7B1%7DIG%3D8FF7F1CB87E14D88A20E6D084BEBB9DC%26CID%3D0C187BBCE9C868C31A1C6C06E8C669F1%26ID%3DDevEx%2C5037.1",
+      "snippet": "Seedance 2.5 takes 50 images, audio, and video inputs for better control. Create full 30-second tutorials or drama clips easily using Seedance 2.5."
+    },
+    {
+      "title": "Kevinmodelf/llama3-keml-cdss-adapters · Hugging Face",
+      "url": "https://huggingface.co/Kevinmodelf/llama3-keml-cdss-adapters",
+      "snippet": "Kevinmodelf / llama3-keml-cdss-adapters like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "kevin009/llama3-merged-adapters · Hugging Face",
+      "url": "https://huggingface.co/kevin009/llama3-merged-adapters",
+      "snippet": "Model Description This is a merged model combining multiple fine-tuned LoRA adapters using TIES (TRIM, ELECT SIGN & MERGE) merging technique. The model combines the strengths of multiple specialized adapters into a single model."
+    },
+    {
+      "title": "GitHub - gitend/llama3-AI: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/gitend/llama3-AI",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to gitend/llama3-AI development by creating an account on GitHub."
+    },
+    {
+      "title": "[2407.21783] The Llama 3 Herd of Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2407.21783",
+      "snippet": "Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an extensive ..."
+    }
+  ]
+}

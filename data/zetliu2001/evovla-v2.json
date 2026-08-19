@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zetliu2001/EvoVLA-v2",
+  "slug": "zetliu2001-evovla-v2",
+  "author": "zetliu2001",
+  "url": "https://huggingface.co/zetliu2001/EvoVLA-v2",
+  "created_at": "2026-08-18T07:52:31.000Z",
+  "updated_at": "2026-08-19T09:30:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 392378985,
+  "storage_human": "392 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZetingLiu/EvoVLA-v2: EvoVLA-v2 rebuild based on RLinf. - GitHub",
+      "url": "https://github.com/ZetingLiu/EvoVLA-v2",
+      "snippet": "EvoVLA-v2 rebuild based on RLinf. Contribute to ZetingLiu/EvoVLA-v2 development by creating an account on GitHub."
+    },
+    {
+      "title": "EvoVLA-v2/README.md at main · ZetingLiu/EvoVLA-v2 · GitHub",
+      "url": "https://github.com/ZetingLiu/EvoVLA-v2/blob/main/README.md",
+      "snippet": "EvoVLA-v2 rebuild based on RLinf. Contribute to ZetingLiu/EvoVLA-v2 development by creating an account on GitHub."
+    },
+    {
+      "title": "EvoVLA: Self-Evolving Vision-Language-Action Model",
+      "url": "https://arxiv.org/abs/2511.16166",
+      "snippet": "Long-horizon robotic manipulation remains challenging for Vision-Language-Action (VLA) models despite recent progress in zero-shot generalization and simulation-to-real-world transfer. Current VLA models suffer from stage hallucination, where agents exploit coarse evaluation signals to shortcut multi-step tasks, reporting high progress without truly completing them. We present EvoVLA, a self ..."
+    },
+    {
+      "title": "EvoVLA: Self-Evolving Vision-Language-Action Model - arXiv.org",
+      "url": "https://arxiv.org/html/2511.16166v1",
+      "snippet": "Yet two issues remain: stage hallucination (exploiting Vision-Language Model (VLM) scores without actual completion) and reward modeling dilemmas in high-dimensional POMDPs. EvoVLA addresses both via stage-aligned rewards and pose-grounded SSRL. RL for VLA Fine-Tuning and Exploration in Embodied Tasks."
+    },
+    {
+      "title": "EvoVLA: Self-Evolving Vision-Language-Action Model",
+      "url": "https://aigeeksgroup.github.io/EvoVLA/",
+      "snippet": "TL;DR: EvoVLA mitigates long-horizon stage hallucination with self-supervised rewards, pose-grounded exploration, and selective memory, achieving substantially higher success on Discoverse-L and strong Sim2Real robustness."
+    }
+  ]
+}

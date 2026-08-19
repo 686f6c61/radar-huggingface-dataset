@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/google-coral-DeepLabV3-MobileNetV2-0.5-PascalVOC-uint8-onnx",
   "created_at": "2026-08-19T01:57:00.000Z",
-  "updated_at": "2026-08-19T02:22:51.000Z",
+  "updated_at": "2026-08-19T07:00:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "tflite",
     "onnxruntime",
     "uint8",
     "image-segmentation",
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 882942,
-  "storage_human": "882942 B",
+  "storage_bytes": 10591032,
+  "storage_human": "11 MB",
   "base_model": null,
   "formats": [
     "onnx"

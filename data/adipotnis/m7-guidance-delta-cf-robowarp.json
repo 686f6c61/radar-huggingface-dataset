@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "adipotnis/m7-guidance-delta-cf-robowarp",
+  "slug": "adipotnis-m7-guidance-delta-cf-robowarp",
+  "author": "adipotnis",
+  "url": "https://huggingface.co/adipotnis/m7-guidance-delta-cf-robowarp",
+  "created_at": "2026-08-19T08:17:50.000Z",
+  "updated_at": "2026-08-19T08:18:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "pi0.5",
+    "libero",
+    "openpi",
+    "counterfactual",
+    "flow-matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441300061,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M7(R1) Assessment and Control of DNA Reactive (Mutagenic) Impurities in ...",
+      "url": "https://www.fda.gov/media/85885/download",
+      "snippet": "This guidance updates and replaces the May 2015 guidance for industry M7 Assessment and Control of DNA Reactive (Mutagenic) Impurities in Pharmaceuticals To Limit Potential Carcinogenice Risk."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "M7(R2) Assessment and Control of DNA Reactive (Mutagenic) Impurities in ...",
+      "url": "https://www.fda.gov/media/170460/download",
+      "snippet": "Since the International Council for Harmonisation (ICH) guidance for industry M7 Assessment and Control of DNA Reactive (Mutagenic) Impurities in Pharmaceuticals to Limit Potential Carcinogenic ..."
+    },
+    {
+      "title": "Cults・Download free 3D printer models・STL, OBJ, 3MF, CAD",
+      "url": "https://cults3d.com/",
+      "snippet": "Welcome to Cults, the world&#x27;s leading independent website for 3D printer files. Discover and download the best 3D models for all your projects: 3D printing, CNC machining - Laser cutting, Papercraft & Origami, Sewing pattern, and Electronics - PCB. Cults is a digital marketplace for 3D printing and design. Use our 3D model library to discover everything you can do with a 3D printer (FDM, SLA ..."
+    },
+    {
+      "title": "Aditya Potnis adipotnis - GitHub",
+      "url": "https://github.com/adipotnis",
+      "snippet": "Block or report adipotnis Block user msteamsrecording-sorter msteamsrecording-sorter Public Python 2 tello-projects tello-projects Public Sandbox of projects on Tello Python 1 ros1_bridge_ws ros1_bridge_ws Public Dockerfile 1 1 tendon_multiplexer_arm tendon_multiplexer_arm Public Basic Arduino code to control Tendon actuated Mechanical ..."
+    }
+  ]
+}

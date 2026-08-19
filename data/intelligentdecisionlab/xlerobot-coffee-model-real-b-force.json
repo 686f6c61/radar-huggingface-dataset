@@ -5,7 +5,7 @@
   "author": "IntelligentDecisionLab",
   "url": "https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-b-force",
   "created_at": "2026-08-03T06:30:50.000Z",
-  "updated_at": "2026-08-15T06:43:11.000Z",
+  "updated_at": "2026-08-18T10:05:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 15545502160,
-  "storage_human": "15.5 GB",
+  "storage_bytes": 23424355400,
+  "storage_human": "23.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

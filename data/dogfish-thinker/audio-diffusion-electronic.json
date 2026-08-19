@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dogfish-thinker/audio-diffusion-electronic",
+  "slug": "dogfish-thinker-audio-diffusion-electronic",
+  "author": "dogfish-thinker",
+  "url": "https://huggingface.co/dogfish-thinker/audio-diffusion-electronic",
+  "created_at": "2026-08-19T06:56:02.000Z",
+  "updated_at": "2026-08-19T06:57:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-audio-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:AudioDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113668609,
+  "parameters_human": "113.7M",
+  "storage_bytes": 454722660,
+  "storage_human": "455 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - teticio/audio-diffusion: Apply diffusion models using the new ...",
+      "url": "https://github.com/teticio/audio-diffusion",
+      "snippet": "Apply diffusion models using the new Hugging Face diffusers package to synthesize music instead of images. - teticio/audio-diffusion"
+    },
+    {
+      "title": "Audio Diffusion - Hugging Face",
+      "url": "https://huggingface.co/docs/diffusers/v0.16.0/en/api/pipelines/audio_diffusion",
+      "snippet": "25,683 Audio Diffusion Stable Diffusion Overview Text-to-Image Image-to-Image Inpaint Depth-to-Image Image-Variation Super-Resolution Stable-Diffusion-Latent-Upscaler InstructPix2Pix Attend and Excite Pix2Pix Zero Self-Attention Guidance MultiDiffusion Panorama Text-to-Image Generation with ControlNet Conditioning Text-to-Image Model Editing"
+    },
+    {
+      "title": "Audio Diffusion - Hugging Face",
+      "url": "https://huggingface.co/docs/diffusers/main/en/api/pipelines/audio_diffusion",
+      "snippet": "Pipeline for audio diffusion. This model inherits from DiffusionPipeline. Check the superclass documentation for the generic methods implemented for all pipelines (downloading, saving, running on a particular device, etc.)."
+    },
+    {
+      "title": "Generating music using images with Hugging Face&#x27;s new diffusers package",
+      "url": "https://teticio.github.io/audio-diffusion/",
+      "snippet": "If you are interested in the details of the model, then I recommend you read the Denoising Diffusion Probabilistic Models paper. According to Open AI, diffusion models beat GANs at their own game. The basic idea is that a model is trained to recover images from a version that has been corrupted by gaussian noise."
+    },
+    {
+      "title": "astorfi/audio-diffusion-tutorial - GitHub",
+      "url": "https://github.com/astorfi/audio-diffusion-tutorial",
+      "snippet": "This project focuses on the development and understanding of an audio diffusion model using PyTorch. Audio diffusion models are a type of generative model that learns to generate complex audio signals by gradually denoising a random signal. This README aggregates all the key information, setup instructions, and components needed to work with and explore audio diffusion models."
+    }
+  ]
+}

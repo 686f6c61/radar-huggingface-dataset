@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lujain-2013/Glow",
+  "slug": "lujain-2013-glow",
+  "author": "Lujain-2013",
+  "url": "https://huggingface.co/Lujain-2013/Glow",
+  "created_at": "2026-08-19T10:17:12.000Z",
+  "updated_at": "2026-08-19T10:59:42.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/1807.03039",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "glow/model.py at master · openai/glow · GitHub",
+      "url": "https://github.com/openai/glow/blob/master/model.py",
+      "snippet": "Code for reproducing results in \"Glow: Generative Flow with Invertible 1x1 Convolutions\" - openai/glow"
+    },
+    {
+      "title": "GitHub - openai/glow: Code for reproducing results in \"Glow: Generative ...",
+      "url": "https://github.com/openai/glow",
+      "snippet": "Code for reproducing results in \"Glow: Generative Flow with Invertible 1x1 Convolutions\" To use pretrained CelebA-HQ model, make your own manipulation vectors and run our interactive demo, check demo folder."
+    },
+    {
+      "title": "Model Architecture | openai/glow | DeepWiki",
+      "url": "https://deepwiki.com/openai/glow/2-model-architecture",
+      "snippet": "Overview of Glow Model Glow is a flow-based generative model that uses a series of invertible transformations to map between the data space (e.g., images) and a latent space. The model is designed to be fully invertible, allowing both exact likelihood computation and efficient image generation. The core innovation is the use of invertible 1x1 convolutions, which provide a more flexible way to ..."
+    },
+    {
+      "title": "GLoW: Integrative Models in AI & Physics - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/glow",
+      "snippet": "Explore GLoW&#x27;s diverse applications from generative models and gravitational lensing to distributed learning, inverse rendering, and signal processing."
+    }
+  ]
+}

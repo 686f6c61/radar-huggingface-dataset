@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ldxxx/ODEWorld-RAE-AgiBot",
+  "slug": "ldxxx-odeworld-rae-agibot",
+  "author": "ldxxx",
+  "url": "https://huggingface.co/ldxxx/ODEWorld-RAE-AgiBot",
+  "created_at": "2026-08-02T10:33:21.000Z",
+  "updated_at": "2026-08-19T09:31:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "odeworld",
+  "languages": [],
+  "tags": [
+    "odeworld",
+    "safetensors",
+    "agibot",
+    "dinov2",
+    "image-reconstruction",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "robotics",
+    "image-to-video",
+    "arxiv:2607.27924",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 227452041,
+  "parameters_human": "227.5M",
+  "storage_bytes": 909858116,
+  "storage_human": "910 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ldxxx/ODEWorld-RAE-AgiBot · Hugging Face",
+      "url": "https://huggingface.co/ldxxx/ODEWorld-RAE-AgiBot",
+      "snippet": "ODEWorld RAE image decoder trained on AgiBot. The checkpoint includes the DINOv2 encoder."
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://arxiv.org/pdf/2607.27924",
+      "snippet": "Building upon PT-Flow, we construct ODEWorld, a continuous-time latent world model that is both efficient and versatile. By extracting time-variant features and enforcing ODE properties on both the dynamical representation space and the latent velocity field, ODEWorld effectively addresses the long-standing representation collapse issue in the ..."
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://arxiv.org/html/2607.27924v1",
+      "snippet": "Building upon PT-Flow, we construct ODEWorld, a continuous-time latent world model that is both efficient and versatile. By extracting time-variant features and enforcing ODE properties on both the dynamical representation space and the latent velocity field, ODEWorld effectively addresses the long-standing representation collapse issue in ..."
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://arxiv.org/html/2607.27924v2",
+      "snippet": "We introduce ODEWorld, a novel continuous latent world model grounded in physical time. The core of ODEWorld is a new predictive paradigm called PT-Flow, which learns a latent ODE velocity field defined on physical time."
+    },
+    {
+      "title": "ldxxx/ODEWorld-PT-Flow-AgiBot · Hugging Face",
+      "url": "https://huggingface.co/ldxxx/ODEWorld-PT-Flow-AgiBot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "biaohuang2002/custom-resnet50d",
+  "slug": "biaohuang2002-custom-resnet50d",
+  "author": "biaohuang2002",
+  "url": "https://huggingface.co/biaohuang2002/custom-resnet50d",
+  "created_at": "2026-08-19T10:50:41.000Z",
+  "updated_at": "2026-08-19T11:08:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "custom_resnet",
+    "image-classification",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25629512,
+  "parameters_human": "25.6M",
+  "storage_bytes": 102550264,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NexaAI/custom-resnet50d · Hugging Face",
+      "url": "https://huggingface.co/NexaAI/custom-resnet50d",
+      "snippet": "like 0 Transformers Safetensors resnet Inference Endpoints Model card Files Community Train Deploy"
+    },
+    {
+      "title": "Azusa-Yuan/custom-resnet50d · Hugging Face",
+      "url": "https://huggingface.co/Azusa-Yuan/custom-resnet50d",
+      "snippet": "Azusa-Yuan / custom-resnet50d like 0 Transformers Safetensors custom-resnet custom_code arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "models/validated/vision/classification/resnet/model/resnet50-v2-7.onnx ...",
+      "url": "https://github.com/onnx/models/blob/main/validated/vision/classification/resnet/model/resnet50-v2-7.onnx",
+      "snippet": "A collection of pre-trained, state-of-the-art models in the ONNX format - onnx/models"
+    },
+    {
+      "title": "GitHub - modelhub-ai/resnet-50: Integration of ResNet-50 (in ONNX ...",
+      "url": "https://github.com/modelhub-ai/resnet-50",
+      "snippet": "This repository hosts the contributor source files for the resnet-50 model. ModelHub integrates these files into an engine and controlled runtime environment. A unified API allows for out-of-the-box reproducible implementations of published models. For more information, please visit www.modelhub.ai or contact us info@modelhub.ai."
+    },
+    {
+      "title": "resnet50 — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html",
+      "snippet": "Default is True. **kwargs - parameters passed to the torchvision.models.resnet.ResNet base class. Please refer to the source code for more details about this class. class torchvision.models.ResNet50_Weights(value)[source] ¶ The model builder above accepts the following values as the weights parameter."
+    }
+  ]
+}

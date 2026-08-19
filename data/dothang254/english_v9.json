@@ -5,7 +5,7 @@
   "author": "dothang254",
   "url": "https://huggingface.co/dothang254/english_V9",
   "created_at": "2026-08-17T09:08:25.000Z",
-  "updated_at": "2026-08-17T09:27:19.000Z",
+  "updated_at": "2026-08-17T11:22:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1031527708,
-  "storage_human": "1.0 GB",
+  "storage_bytes": 8299546020,
+  "storage_human": "8.3 GB",
   "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Blaize-AI/YOLOv11x_COCO",
+  "slug": "blaize-ai-yolov11x_coco",
+  "author": "Blaize-AI",
+  "url": "https://huggingface.co/Blaize-AI/YOLOv11x_COCO",
+  "created_at": "2026-08-19T10:10:05.000Z",
+  "updated_at": "2026-08-19T10:10:48.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "object-detection",
+    "blaize",
+    "gsp",
+    "picasso-sdk",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141718161,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blaize-AI/YOLOv11x_COCO · Hugging Face",
+      "url": "https://huggingface.co/Blaize-AI/YOLOv11x_COCO",
+      "snippet": "YOLOv11x - COCO Model Description YOLO Version 11 Extra Large This model has been optimized for deployment on Blaize Xplorer AI accelerators using the Blaize Picasso SDK, a key component for building, optimizing, and deploying graph-native AI applications on the Blaize Graph Streaming Processor (GSP) hardware."
+    },
+    {
+      "title": "Blaize-AI/YOLOv8x_COCO · Hugging Face",
+      "url": "https://huggingface.co/Blaize-AI/YOLOv8x_COCO",
+      "snippet": "YOLOv8x_COCO ... YOLOv8x - COCO Model Description YOLO Version 8 Extra Large This model has been optimized for deployment on Blaize Xplorer AI accelerators using the Blaize Picasso SDK, a key component for building, optimizing, and deploying graph-native AI applications on the Blaize Graph Streaming Processor (GSP) hardware."
+    },
+    {
+      "title": "Ultralytics YOLO11 | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolo11",
+      "snippet": "Ultralytics YOLO11 Overview YOLO11 was released by Ultralytics on September 10, 2024, delivering excellent accuracy, speed, and efficiency. Building upon the impressive advancements of previous YOLO versions, YOLO11 introduces significant improvements in architecture and training methods, making it a versatile choice for a wide range of computer vision tasks. For the latest Ultralytics model ..."
+    },
+    {
+      "title": "GitHub - doguilmak/Drone-Detection-YOLOv11x: Real-time drone detection ...",
+      "url": "https://github.com/doguilmak/Drone-Detection-YOLOv11x",
+      "snippet": "After training, the YOLOv11x model was used for real-time detection and tracking of drones in video streams. The tracking module integrates YOLO detection outputs with a multi-object tracking (MOT) algorithm, such as ByteTrack or DeepSORT, to maintain object identities across frames, even under partial occlusion or rapid movement."
+    },
+    {
+      "title": "LooYut/Yolov11: Ultralytics YOLO11 - GitHub",
+      "url": "https://github.com/LooYut/Yolov11",
+      "snippet": "Experience seamless AI with Ultralytics HUB ⭐, the all-in-one solution for data visualization, YOLO11 🚀 model training and deployment, without any coding. Transform images into actionable insights and bring your AI visions to life with ease using our cutting-edge platform and user-friendly Ultralytics App. Start your journey for Free now!"
+    }
+  ]
+}

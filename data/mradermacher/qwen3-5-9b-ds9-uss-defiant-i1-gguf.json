@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-9B-DS9-USS-Defiant-i1-GGUF",
+  "slug": "mradermacher-qwen3-5-9b-ds9-uss-defiant-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-DS9-USS-Defiant-i1-GGUF",
+  "created_at": "2026-08-19T10:41:36.000Z",
+  "updated_at": "2026-08-19T11:12:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "nightmedia",
+    "fine tune",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "all use cases",
+    "mxfp8",
+    "merge",
+    "mergekit",
+    "mlx",
+    "en",
+    "zh",
+    "base_model:nightmedia/Qwen3.5-9B-DS9-USS-Defiant",
+    "base_model:quantized:nightmedia/Qwen3.5-9B-DS9-USS-Defiant",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 71518078432,
+  "storage_human": "71.5 GB",
+  "base_model": "nightmedia/Qwen3.5-9B-DS9-USS-Defiant",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.5-9B-ultra-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-ultra-heretic-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO ...",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED-GGUF is a quantized collection of static GGUF formats derived from the base model at Hugging Face, maintained by mradermacher."
+    },
+    {
+      "title": "Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp-gguf-davidau",
+      "snippet": "Overview Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF is a fine-tuned 9-billion-parameter language model built by DavidAU that achieves benchmark scores exceeding multiple larger Qwen models while remaining fully uncensored and optimized for consumer hardware. The model is a multi-stage, multi-model fine-tune and merge incorporating several of DavidAU&#x27;s previous 9B ..."
+    },
+    {
+      "title": "Qwen3.5-9B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-5-9b",
+      "snippet": "The flagship of Alibaba&#x27;s small dense Qwen3.5 models. Independent analysis (Artificial Analysis) rated it the most intelligent model under 10B parameters at launch — roughly double the score of the next-closest sub-10B models — and the most intelligent multimodal model under 15B, leading peers on MMMU-Pro (~69%). A dense 9B with native vision, a 262K-token context, and the Qwen3.5 family&#x27;s ..."
+    }
+  ]
+}

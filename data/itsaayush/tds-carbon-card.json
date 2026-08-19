@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "itsAayush/tds-carbon-card",
+  "slug": "itsaayush-tds-carbon-card",
+  "author": "itsAayush",
+  "url": "https://huggingface.co/itsAayush/tds-carbon-card",
+  "created_at": "2026-08-19T05:17:39.000Z",
+  "updated_at": "2026-08-19T05:20:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adisinha95/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/adisinha95/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA V100 (4 GPUs) Training Mode: fine-tuning Region: europe-north1 GPU Hours: 447.8h (PUE: 1.32) Total Energy: 709.3152 kWh CO₂ Emissions: 85.118 kg ..."
+    },
+    {
+      "title": "Jesmelchi/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Jesmelchi/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Model Card Toolkit | Responsible AI Toolkit - TensorFlow",
+      "url": "https://www.tensorflow.org/responsible_ai/model_card_toolkit/guide",
+      "snippet": "The Model Card Toolkit (MCT) library streamlines and automates generation of Model Cards, machine learning documents that provide context and transparency into a model&#x27;s development and performance."
+    },
+    {
+      "title": "AI model cards in carbon.txt and an AI Sustainability Directory",
+      "url": "https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/",
+      "snippet": "Using AI Model cards in carbon.txt to disclose training emissions The updated carbon.txt syntax (version 0.5) includes a new organisational disclosure document type - doc_type: &#x27;ai-model-card&#x27;. Using this document type, along with a URL of model card (README.md) makes a valid disclosure for training of AI models."
+    },
+    {
+      "title": "Model Cards, Datasheets & Governance Frameworks - Medium",
+      "url": "https://medium.com/@akankshasinha247/model-cards-datasheets-governance-frameworks-0cda9605c94e",
+      "snippet": "This blog explores how to instill responsibility into GenAI systems through Model Cards, Datasheets for Datasets, and Governance Frameworks."
+    }
+  ]
+}

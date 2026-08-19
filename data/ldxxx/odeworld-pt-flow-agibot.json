@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ldxxx/ODEWorld-PT-Flow-AgiBot",
+  "slug": "ldxxx-odeworld-pt-flow-agibot",
+  "author": "ldxxx",
+  "url": "https://huggingface.co/ldxxx/ODEWorld-PT-Flow-AgiBot",
+  "created_at": "2026-08-02T10:30:26.000Z",
+  "updated_at": "2026-08-19T09:31:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "odeworld",
+  "languages": [],
+  "tags": [
+    "odeworld",
+    "safetensors",
+    "agibot",
+    "dinov2",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "robotics",
+    "pt-flow",
+    "world-model",
+    "image-to-video",
+    "arxiv:2607.27924",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 172860038,
+  "parameters_human": "172.9M",
+  "storage_bytes": 691481656,
+  "storage_human": "691 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ldxxx/ODEWorld-PT-Flow-AgiBot · Hugging Face",
+      "url": "https://huggingface.co/ldxxx/ODEWorld-PT-Flow-AgiBot",
+      "snippet": "ODEWorld image-goal checkpoint trained on AgiBot. The checkpoint includes the DINOv2 backbone. For installation, loading, and inference instructions, see the ODEWorld GitHub repository."
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://arxiv.org/html/2607.27924v3",
+      "snippet": "Building upon PT-Flow, we construct a continuous-time latent world model, called ODEWorld, which embodies many desirable features. First, it disentangles dynamical representation by conditioning the encoder and decoder directly on static context, thereby offloading the burden of dynamical representation learning, allowing the latent space to ..."
+    },
+    {
+      "title": "ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow",
+      "url": "https://dstate.github.io/odeworld_website/",
+      "snippet": "We instantiate the PT-Flow paradigm as ODEWorld, a highly versatile and efficient continuous-time predictive architecture for both high-fidelity video generation and effective robotic policy learning."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=pt-flow",
+      "snippet": "Explore machine learning models. Models 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: pt-flow Clear all"
+    },
+    {
+      "title": "The Official Implementation of \"ODEWorld: A Continuous ... - GitHub",
+      "url": "https://github.com/Dstate/ODEWorld/tree/main",
+      "snippet": "Reference @article {liu-niu2026odeworld, title= {ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow}, author= {Liu, Dongxiu and Niu, Haoyi and Cheng, Peng and Gao, Yuan and Kang, Xirui and Teng, Sangli and Sreenath, Koushil and Zhan, Xianyuan}, journal= {arXiv preprint arXiv:2607.27924}, year= {2026} }"
+    }
+  ]
+}

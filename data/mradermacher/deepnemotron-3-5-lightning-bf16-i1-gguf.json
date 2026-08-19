@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DeepNemotron-3.5-Lightning-BF16-i1-GGUF",
+  "slug": "mradermacher-deepnemotron-3-5-lightning-bf16-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DeepNemotron-3.5-Lightning-BF16-i1-GGUF",
+  "created_at": "2026-08-19T08:12:51.000Z",
+  "updated_at": "2026-08-19T10:26:04.000Z",
+  "license": "nvidia-openmdw-and-dataset-other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nemotron",
+    "moe",
+    "bf16",
+    "agentic",
+    "en",
+    "dataset:r0b0tlab/deepseek-v4-pro-0813-agentic",
+    "base_model:vcruz305/DeepNemotron-3.5-Lightning-BF16",
+    "base_model:quantized:vcruz305/DeepNemotron-3.5-Lightning-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 282160430400,
+  "storage_human": "282.2 GB",
+  "base_model": "vcruz305/DeepNemotron-3.5-Lightning-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16-GGUF",
+      "url": "https://huggingface.co/mradermacher/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16-GGUF",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-GGUF/tree/main",
+      "snippet": "mradermacher / NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-GGUF like 1 Transformers GGUF PyTorch nvidia/nemotron-post-training-v3 nvidia/nemotron-pre-training-datasets 6 languages nvidia nemotron-3.5 conversational License:openmdw-1.1 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-3.5-lightning",
+      "snippet": "The model employs a hybrid Latent Mixture-of-Experts (LatentMoE) architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text generation. The model has 3B active parameters and 30B parameters in total."
+    },
+    {
+      "title": "Get Started with Nemotron 3.5 Lightning",
+      "url": "https://docs.nvidia.com/nim/large-language-models/latest/get-started/advanced/get-started-nemotron-3.5-lightning.html",
+      "snippet": "Get Started with Nemotron 3.5 Lightning # Nemotron 3.5 Lightning is a compact, text-only, reasoning-capable model in the Nemotron 3.5 Lightning family. It uses a hybrid Latent Mixture-of-Experts (LatentMoE) architecture that interleaves Mamba-2 and MoE layers with select attention layers, and it activates only 3B of its 30B total parameters per token, so it delivers strong reasoning and coding ..."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    }
+  ]
+}

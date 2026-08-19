@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Toadoum/naija-tts",
+  "slug": "toadoum-naija-tts",
+  "author": "Toadoum",
+  "url": "https://huggingface.co/Toadoum/naija-tts",
+  "created_at": "2026-08-19T07:38:58.000Z",
+  "updated_at": "2026-08-19T07:39:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [
+    "ha",
+    "yo",
+    "ig",
+    "en"
+  ],
+  "tags": [
+    "chatterbox",
+    "text-to-speech",
+    "voice-cloning",
+    "multilingual",
+    "hausa",
+    "yoruba",
+    "igbo",
+    "nigerian-english",
+    "african-languages",
+    "ha",
+    "yo",
+    "ig",
+    "en",
+    "base_model:ResembleAI/chatterbox",
+    "base_model:finetune:ResembleAI/chatterbox",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3206960601,
+  "storage_human": "3.2 GB",
+  "base_model": "ResembleAI/chatterbox",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toadoum (Sakayo Toadoum Sari) - Hugging Face",
+      "url": "https://huggingface.co/Toadoum/datasets",
+      "snippet": "AI & ML interests ... Recent Activity ... Organizations Toadoum &#x27;s datasets 5 Sort: Recently updated"
+    },
+    {
+      "title": "YarnGPT - Nigerian Text-to-Speech AI",
+      "url": "https://www.yarngpt.ai/",
+      "snippet": "Generate high-quality, authentic Nigerian text-to-speech audio for your podcasts, videos, and applications."
+    },
+    {
+      "title": "NCAIR1/N-ATLaS · Hugging Face",
+      "url": "https://huggingface.co/NCAIR1/N-ATLaS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sakayo Toadoum Sari — NLP Researcher · PhD Candidate · African Language ...",
+      "url": "https://toadoum.github.io/",
+      "snippet": "sakayo @ cril:~$ About Work Publications Journey Skills Contact NLP for languages the industry forgot Bonjour. French · lingua franca across 21 African countries Sakayo Toadoum Sari PhD candidate in AI at CRIL-CNRS, Université d&#x27;Artois, working on discourse semantics and causal reasoning. Lead NLP Engineer at PlotWeaver, building voice AI for African languages. If your language isn&#x27;t in the ..."
+    },
+    {
+      "title": "YarnGPT - Nigerian Text-to-Speech AI",
+      "url": "https://www.yarngpt.co/",
+      "snippet": "Convert text to speech in Nigerian languages with AI-powered voices!"
+    }
+  ]
+}

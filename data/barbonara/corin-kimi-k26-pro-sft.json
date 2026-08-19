@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "barbonara/corin-kimi-k26-pro-sft",
+  "slug": "barbonara-corin-kimi-k26-pro-sft",
+  "author": "barbonara",
+  "url": "https://huggingface.co/barbonara/corin-kimi-k26-pro-sft",
+  "created_at": "2026-08-19T08:45:54.000Z",
+  "updated_at": "2026-08-19T08:47:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "base_model:adapter:moonshotai/Kimi-K2.6",
+    "base_model:moonshotai/Kimi-K2.6",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4688923008,
+  "storage_human": "4.7 GB",
+  "base_model": "moonshotai/Kimi-K2.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K2.6 | Leading Open-Source Model in Coding & Agent",
+      "url": "https://www.kimi.com/ai-models/kimi-k2-6",
+      "snippet": "Kimi K2.6 is an open-source model with strong coding and agent swarm capabilities. Build pro-level websites, run workflows, and explore Claw Groups."
+    },
+    {
+      "title": "Kimi K2.6 - Instant · Thinking · Agent · Agent Swarm",
+      "url": "https://kimik2ai.com/kimi-k2.6/",
+      "snippet": "Explore Kimi K2.6, the advanced AI model for coding, frontend design, Agent Swarm workflows, Claw Group teamwork, documents, slides, sheets, API access, pricing, and ..."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Kimi K2.6 Open Source Model: Full Technical Breakdown 2026 - NeuraPulse",
+      "url": "https://neuraplus-ai.github.io/blog/kimi-k2-6-open-source-model.html",
+      "snippet": "Complete guide to Kimi K2.6: 1T parameter MoE architecture, 80.2% SWE-Bench, Agent Swarm 300 sub-agents, API pricing, self-hosting setup, and open source license breakdown."
+    }
+  ]
+}

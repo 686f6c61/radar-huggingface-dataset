@@ -5,7 +5,7 @@
   "author": "shawaz03",
   "url": "https://huggingface.co/shawaz03/vibe-coder-7b-max",
   "created_at": "2026-08-17T08:28:30.000Z",
-  "updated_at": "2026-08-18T04:37:53.000Z",
+  "updated_at": "2026-08-18T05:02:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 460,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

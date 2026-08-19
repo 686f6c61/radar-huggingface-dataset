@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Agentic-30B-A3B-GGUF",
   "created_at": "2026-08-18T19:00:06.000Z",
-  "updated_at": "2026-08-18T19:33:03.000Z",
+  "updated_at": "2026-08-18T21:42:21.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -36,12 +36,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 272,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 28714620032,
-  "storage_human": "28.7 GB",
+  "storage_bytes": 208115945664,
+  "storage_human": "208.1 GB",
   "base_model": "opencsg/Agentic-30B-A3B",
   "formats": [
     "gguf"

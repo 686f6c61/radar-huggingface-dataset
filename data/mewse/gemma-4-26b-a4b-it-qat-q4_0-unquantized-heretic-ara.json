@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mewse/gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic-ara",
+  "slug": "mewse-gemma-4-26b-a4b-it-qat-q4_0-unquantized-heretic-ara",
+  "author": "mewse",
+  "url": "https://huggingface.co/mewse/gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic-ara",
+  "created_at": "2026-08-19T08:23:17.000Z",
+  "updated_at": "2026-08-19T08:23:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 224535826,
+  "storage_human": "225 MB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic - Hugging Face",
+      "url": "https://huggingface.co/mewse/gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT Qat Q4 0 Unquantized - llmrun.dev",
+      "url": "https://llmrun.dev/model/google-gemma-4-26b-a4b-it-qat-q4-0-unquantized",
+      "snippet": "Gemma 4 26B A4B IT Qat Q4 0 Unquantized — Hardware Requirements & GPU Compatibility Vision Gemma 4 26B A4B IT Qat Q4 0 Unquantized is a 26.5B-parameter open language model from Google in the Gemma 4 family. It supports a context window of up to 262,144 tokens. At Q4_K_M it needs about 16.57 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "Gemma 4 26B A4B — MoE Architecture for Long Context",
+      "url": "https://gemma4.dev/models/gemma-4-26b-a4b",
+      "snippet": "Gemma 4 26B A4B is a 26.1B parameter Mixture-of-Experts model with 128K context window. Only ~4B parameters activate per forward pass, enabling high-throughput inference for long-document tasks on RTX 3090/4090 hardware."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    }
+  ]
+}

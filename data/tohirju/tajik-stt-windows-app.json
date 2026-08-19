@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tohirju/tajik-stt-windows-app",
+  "slug": "tohirju-tajik-stt-windows-app",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/tajik-stt-windows-app",
+  "created_at": "2026-08-12T17:04:07.000Z",
+  "updated_at": "2026-08-19T10:57:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tg"
+  ],
+  "tags": [
+    "asr",
+    "tajik",
+    "parakeet",
+    "windows-app",
+    "offline",
+    "tg",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8026532734,
+  "storage_human": "8.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tohirju/tajik-stt-windows-app · Hugging Face",
+      "url": "https://huggingface.co/Tohirju/tajik-stt-windows-app",
+      "snippet": "Tohirju / tajik-stt-windows-app like 0 Tajik asr tajik parakeet windows-app offline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=windows-app",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: windows-app Clear all"
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "GitHub - Abdusalom0v/jarvis-assistant: Offline-first AI desktop ...",
+      "url": "https://github.com/Abdusalom0v/jarvis-assistant",
+      "snippet": "Project structure ... Model download links ... License MIT Offline-first AI desktop assistant for Windows — wake word detection, local Whisper STT, local/remote LLM , tool execution, and Piper TTS."
+    }
+  ]
+}

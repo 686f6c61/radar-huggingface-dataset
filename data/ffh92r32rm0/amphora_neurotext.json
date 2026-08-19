@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ffh92r32rm0/Amphora_NeuroText",
+  "slug": "ffh92r32rm0-amphora_neurotext",
+  "author": "ffh92r32rm0",
+  "url": "https://huggingface.co/ffh92r32rm0/Amphora_NeuroText",
+  "created_at": "2026-07-19T02:37:16.000Z",
+  "updated_at": "2026-08-19T06:42:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "neuroscience",
+    "fMRI",
+    "brain-decoding",
+    "text-to-brain",
+    "audio-to-brain",
+    "naturalistic-fMRI",
+    "ROI-prediction",
+    "cognitive-neuroscience",
+    "brain-encoding",
+    "zero-shot",
+    "whisper",
+    "Qwen4B",
+    "feature-extraction",
+    "en",
+    "dataset:narratives",
+    "dataset:little-prince",
+    "dataset:hcp",
+    "dataset:cneuromod",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118086854,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ffh92r32rm0/Amphora_NeuroText · Hugging Face",
+      "url": "https://huggingface.co/ffh92r32rm0/Amphora_NeuroText",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ffh92r32rm0 (Francesco H) - Hugging Face",
+      "url": "https://huggingface.co/ffh92r32rm0",
+      "snippet": "AI & ML interests Neuroscience, fMRI encoding, BCI, and Computational Drug Discovery"
+    },
+    {
+      "title": "ffh92r32rm0 / Amphora_NeuroText - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/ffh92r32rm0/Amphora_NeuroText/1ab1d8641baf78f4d8c0e22e41c5bfe1cd5cf78b/versions",
+      "snippet": "Discover potential threats in the ffh92r32rm0 / Amphora_NeuroText model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "ffh92r32rm0 / Amphora_NeuroText Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/ffh92r32rm0/Amphora_NeuroText/1dca9cf278804fce0ec982bbcbb535e2d8529762/overview",
+      "snippet": "Discover potential threats in the ffh92r32rm0 / Amphora_NeuroText model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=fsaverage5",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: fsaverage5 Clear all"
+    }
+  ]
+}

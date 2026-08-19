@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-4B-Fast-Code-GGUF",
+  "slug": "mradermacher-qwen3-5-4b-fast-code-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-Fast-Code-GGUF",
+  "created_at": "2026-08-19T06:05:10.000Z",
+  "updated_at": "2026-08-19T06:05:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B-abliterated-aggressive-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-abliterated-aggressive-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.5-4B-MicroCoder-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-4B-MicroCoder-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen LLM: All Versions & Hardware Requirements - Hardware Corner",
+      "url": "https://www.hardware-corner.net/llm-database/Qwen/",
+      "snippet": "In 2025, the Qwen3 series debuted with models from 0.6B to 235B, including highly efficient MoE variants like Qwen3-30B-A3B and Qwen3-235B-A22B. Alibaba also introduced the Qwen2.5-Coder series, an open-source code generation model."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn&#x27;t a single model. It&#x27;s a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    },
+    {
+      "title": "Qwen 3.5: The Complete Guide - Benchmarks, Local Setup, and How It ...",
+      "url": "https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks",
+      "snippet": "Alibaba&#x27;s Qwen team dropped Qwen 3.5 on February 16, 2026, and it immediately shook up the AI landscape. Built on a sparse Mixture-of-Experts (MoE) architecture, the flagship Qwen3.5-397B-A17B packs 397 billion total parameters while activating only 17 billion per forward pass - delivering frontier-level intelligence at a fraction of the compute cost. Released under the Apache 2.0 license ..."
+    }
+  ]
+}

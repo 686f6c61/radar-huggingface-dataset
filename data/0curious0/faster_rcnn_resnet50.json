@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "0Curious0/faster_rcnn_resnet50",
+  "slug": "0curious0-faster_rcnn_resnet50",
+  "author": "0Curious0",
+  "url": "https://huggingface.co/0Curious0/faster_rcnn_resnet50",
+  "created_at": "2026-08-18T17:58:50.000Z",
+  "updated_at": "2026-08-19T07:42:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "faster-rcnn",
+    "object-detection",
+    "computer-vision",
+    "pascal-voc",
+    "voc2007",
+    "voc2012",
+    "from-scratch",
+    "en",
+    "dataset:PASCAL-VOC",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114377252,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0Curious0/faster_rcnn_resnet50 · Hugging Face",
+      "url": "https://huggingface.co/0Curious0/faster_rcnn_resnet50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fasterrcnn_resnet50_fpn — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.detection.fasterrcnn_resnet50_fpn.html",
+      "snippet": "**kwargs - parameters passed to the torchvision.models.detection.faster_rcnn.FasterRCNN base class. Please refer to the source code for more details about this class. class torchvision.models.detection.FasterRCNN_ResNet50_FPN_Weights(value)[source] ¶ The model builder above accepts the following values as the weights parameter."
+    },
+    {
+      "title": "Faster R-CNN — Torchvision main documentation",
+      "url": "http://docs.pytorch.org/vision/main/models/faster_rcnn.html",
+      "snippet": "Model builders ¶ The following model builders can be used to instantiate a Faster R-CNN model, with or without pre-trained weights. All the model builders internally rely on the torchvision.models.detection.faster_rcnn.FasterRCNN base class. Please refer to the source code for more details about this class."
+    },
+    {
+      "title": "open_model_zoo/models/public/faster_rcnn_resnet50_coco/README ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/faster_rcnn_resnet50_coco/README.md",
+      "snippet": "faster_rcnn_resnet50_coco Use Case and High-Level Description Faster R-CNN ResNet-50 model. Used for object detection. For details, see the paper."
+    },
+    {
+      "title": "Faster R-CNN ResNet-50 pricing & specs — Google | CloudPrice",
+      "url": "https://cloudprice.net/models/google-faster-rcnn-resnet50",
+      "snippet": "Faster R-CNN ResNet-50 is an AI model by Google. Compare LLM pricing, specs, benchmarks, and costs across providers."
+    }
+  ]
+}

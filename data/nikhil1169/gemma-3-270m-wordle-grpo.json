@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Nikhil1169/gemma-3-270m-wordle-grpo",
+  "slug": "nikhil1169-gemma-3-270m-wordle-grpo",
+  "author": "Nikhil1169",
+  "url": "https://huggingface.co/Nikhil1169/gemma-3-270m-wordle-grpo",
+  "created_at": "2026-08-19T06:02:53.000Z",
+  "updated_at": "2026-08-19T07:14:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "unsloth",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:unsloth/gemma-3-270m-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-3-270m-it-unsloth-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 372580852,
+  "storage_human": "373 MB",
+  "base_model": "unsloth/gemma-3-270m-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-270m · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-270m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "RLDiary/Wordle-GRPO: A $100 Agent - GitHub",
+      "url": "https://github.com/RLDiary/Wordle-GRPO",
+      "snippet": "Wordle-GRPO is a reinforcement learning training loop built on top of Transformers, TRL, and Accelerate, specifically designed to train language models to play the game of Wordle using a variation of the GRPO (Group Relative Policy Optimization) algorithm. The training pipeline is built for multi-turn environments like Wordle, where models learn from rewards defined by a custom rubric and ..."
+    },
+    {
+      "title": "Own your AI: Learn how to fine-tune Gemma 3 270M and run it on-device",
+      "url": "https://developers.googleblog.com/own-your-ai-fine-tune-gemma-3-270m-for-on-device/",
+      "snippet": "Learn to fine-tune and deploy Gemma 3 270M on-device. Create custom AI models, like a personal emoji generator, that run in-browser for a fast, private UX."
+    },
+    {
+      "title": "Gemma 3-270m - a ggml-org Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ggml-org/gemma-3-270m",
+      "snippet": "Collection of models for Gemma 3-270m"
+    }
+  ]
+}

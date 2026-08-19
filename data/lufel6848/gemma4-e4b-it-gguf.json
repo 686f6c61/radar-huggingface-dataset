@@ -4,8 +4,8 @@
   "slug": "lufel6848-gemma4-e4b-it-gguf",
   "author": "Lufel6848",
   "url": "https://huggingface.co/Lufel6848/Gemma4-E4B-it-GGUF",
-  "created_at": "2026-08-15T17:36:47.000Z",
-  "updated_at": "2026-08-15T17:41:01.000Z",
+  "created_at": "2026-08-17T16:00:59.000Z",
+  "updated_at": "2026-08-17T16:06:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 601,
   "trending_score": 0,
   "parameters": 7518069290,
   "parameters_human": "7.52B",
-  "storage_bytes": 26337085696,
-  "storage_human": "26.3 GB",
+  "storage_bytes": 41391362752,
+  "storage_human": "41.4 GB",
   "base_model": null,
   "formats": [
     "gguf"

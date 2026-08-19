@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "PandeyJi9/Apex_net_by-PandeyJi",
+  "slug": "pandeyji9-apex_net_by-pandeyji",
+  "author": "PandeyJi9",
+  "url": "https://huggingface.co/PandeyJi9/Apex_net_by-PandeyJi",
+  "created_at": "2026-08-19T10:49:19.000Z",
+  "updated_at": "2026-08-19T10:50:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073536,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Acute Pancreatitis AI: Game-Changer in Early Diagnosis",
+      "url": "https://www.ocacademy.in/blogs/acute-pancreatitis-ai-non-contrast-ct/",
+      "snippet": "Discover how APEX-NET, a novel acute pancreatitis AI model, transforms early diagnosis and severity prediction using non-contrast CT scans."
+    },
+    {
+      "title": "z-pandeyji (Shivanshu Pandey) · GitHub",
+      "url": "https://github.com/z-pandeyji",
+      "snippet": "Shivanshu Pandey z-pandeyji Follow 17 followers · 12 following https://zpandeyji.netlify.app/"
+    },
+    {
+      "title": "apexui - apexvs",
+      "url": "https://www.apexvs.com/ApexUI/",
+      "snippet": "We would like to show you a description here but the site won&#x27;t allow us."
+    },
+    {
+      "title": "Apex.AI | Software that moves",
+      "url": "https://www.apex.ai/",
+      "snippet": "Apex.AI accelerates the transition to modern software development by providing state-of-the-art SDKs, AI-powered tools and expert services that enable AI and autonomy in all domains."
+    },
+    {
+      "title": "its_@pandeyji (@its_pandeyji9) • Instagram photos and videos",
+      "url": "https://www.instagram.com/its_pandeyji9/",
+      "snippet": "46 followers · 65 following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    }
+  ]
+}

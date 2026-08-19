@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jtown18/Qwen3.8-4B-Distilled-4bit",
+  "slug": "jtown18-qwen3-8-4b-distilled-4bit",
+  "author": "jtown18",
+  "url": "https://huggingface.co/jtown18/Qwen3.8-4B-Distilled-4bit",
+  "created_at": "2026-08-19T04:40:20.000Z",
+  "updated_at": "2026-08-19T04:51:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 628676096,
+  "parameters_human": "628.7M",
+  "storage_bytes": 2274445067,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "⚡ Qwen3.8 4B Distilled Prompt Architect - GitHub",
+      "url": "https://github.com/47thtechcorner/RayCodes_Qwen3.8",
+      "snippet": "An offline, zero-cost local prompt optimization engine powered by sequence-distilled Qwen3.8 4B AI reasoning. It automatically refactors lazy, unstructured user prompts into master-level system prompts with role definition, technical constraints, and output schema rules."
+    },
+    {
+      "title": "Qwen3.8 4B Distilled by Ma7ee7 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Ma7ee7%2FQwen3.8_4B_Distilled,4EsotsN7hm5yLEe5mVKpBV",
+      "snippet": "Qwen3.8 4B Distilled is an open-source 4b LLM by Ma7ee7. VRAM 8.1GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    }
+  ]
+}

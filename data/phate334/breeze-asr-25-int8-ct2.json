@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "phate334/Breeze-ASR-25-int8-CT2",
+  "slug": "phate334-breeze-asr-25-int8-ct2",
+  "author": "phate334",
+  "url": "https://huggingface.co/phate334/Breeze-ASR-25-int8-CT2",
+  "created_at": "2026-08-19T10:44:36.000Z",
+  "updated_at": "2026-08-19T10:45:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "ctranslate2",
+    "automatic-speech-recognition",
+    "whisper",
+    "taiwanese-mandarin",
+    "code-switching",
+    "faster-whisper",
+    "int8",
+    "zh",
+    "en",
+    "arxiv:2506.11130",
+    "base_model:MediaTek-Research/Breeze-ASR-25",
+    "base_model:quantized:MediaTek-Research/Breeze-ASR-25",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1558764253,
+  "storage_human": "1.6 GB",
+  "base_model": "MediaTek-Research/Breeze-ASR-25",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phate334/Breeze-ASR-25-ct2 · Hugging Face",
+      "url": "https://huggingface.co/phate334/Breeze-ASR-25-ct2",
+      "snippet": "This repository contains the conversion of MediaTek-Research/Breeze-ASR-25 to the CTranslate2 model format. This model can be used in CTranslate2 or projects based on CTranslate2 such as faster-whisper."
+    },
+    {
+      "title": "phate334/Breeze-ASR-25-ct2 at main - Hugging Face",
+      "url": "https://huggingface.co/phate334/Breeze-ASR-25-ct2/tree/main",
+      "snippet": "phate334 / Breeze-ASR-25-ct2 like 0 Chinese English License:apache-2.0 Model card FilesFiles and versions xet Community main Breeze-ASR-25-ct2 Ctrl+K Ctrl+K 1 contributor History:3 commits phate334 Update README.md 323254e verifiedabout 9 hours ago .gitattributes Safe 1.52 kBinitial commitabout 9 hours ago README.md Safe 1.19 kBUpdate README ..."
+    },
+    {
+      "title": "Breeze ASR 25 - GitHub",
+      "url": "https://github.com/mtkresearch/Breeze-ASR-25",
+      "snippet": "Breeze ASR 25 is an advanced ASR model fine-tuned from Whisper-large-v2 Optimized for Taiwanese Mandarin Adopted an unified mix embedding for decoding, optimized for Mandarin-English code-switching scenarios, including intra-sentential switching and inter-sentential switching. Enhanced time alignment, suitable for automatic captioning"
+    },
+    {
+      "title": "Fine-tuned Models for MediaTek-Research/Breeze-ASR-25 - Hugging Face",
+      "url": "https://alpha-ollama.hf-mirror.com/models?other=base_model:finetune:MediaTek-Research/Breeze-ASR-25",
+      "snippet": "phate334/Breeze-ASR-25-ct2 Automatic Speech Recognition •Updated Jun 21, 2025• 141"
+    },
+    {
+      "title": "mtkresearch · GitHub",
+      "url": "https://github.com/mtkresearch/",
+      "snippet": "Breeze ASR 25 是一款先進的自動語音辨識（ASR）模型，基於 Whisper-large-v2 微調而成，特別針對台灣華語以及華語與英語混用的情境進行優化。Breeze ASR 25 is an advanced ASR model fine-tuned from Whisper-large-v2, optimized for Taiwanese Mandarin and Man… Python 198 15"
+    }
+  ]
+}

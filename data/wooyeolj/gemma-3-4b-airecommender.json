@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "wooyeolj/gemma-3-4b-airecommender",
+  "slug": "wooyeolj-gemma-3-4b-airecommender",
+  "author": "wooyeolj",
+  "url": "https://huggingface.co/wooyeolj/gemma-3-4b-airecommender",
+  "created_at": "2026-07-02T03:00:58.000Z",
+  "updated_at": "2026-08-19T08:53:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "sft",
+    "gemma",
+    "text-generation",
+    "ai-tool-recommender",
+    "conversational",
+    "ko",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99171877,
+  "storage_human": "99 MB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wooyeolj/gemma-3-4b-airecommender · Hugging Face",
+      "url": "https://huggingface.co/wooyeolj/gemma-3-4b-airecommender",
+      "snippet": "wooyeolj / gemma-3-4b-airecommender like 0 Text Generation PEFT Safetensors Korean lora qlora sft gemma ai-tool-recommender conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "wooyeolj (wyjin) - Hugging Face",
+      "url": "https://huggingface.co/wooyeolj",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "gemma-3-4b-airecommender API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/wooyeolj/gemma-3-4b-airecommender",
+      "snippet": "Run gemma-3-4b-airecommender with FriendliAI inference. AI 도구 추천 도메인 최적화를 위한 Gemma-3-4b-it QLoRA 파인튜닝 기록."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "gemma3:4b - ollama.com",
+      "url": "https://ollama.com/library/gemma3:4b",
+      "snippet": "The Gemma 3 models are multimodal—processing text and images—and feature a 128K context window with support for over 140 languages. Available in 270M, 1B, 4B, 12B, and 27B parameter sizes, they excel in tasks like question answering, summarization, and reasoning, while their compact design allows deployment on resource-limited devices."
+    }
+  ]
+}

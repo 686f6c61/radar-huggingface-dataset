@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rajivmehtapy/pi-shell-specialization",
+  "slug": "rajivmehtapy-pi-shell-specialization",
+  "author": "rajivmehtapy",
+  "url": "https://huggingface.co/rajivmehtapy/pi-shell-specialization",
+  "created_at": "2026-08-19T10:07:56.000Z",
+  "updated_at": "2026-08-19T10:07:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rajivmehtapy (Rajiv Mehta) - Hugging Face",
+      "url": "https://huggingface.co/rajivmehtapy/models",
+      "snippet": "rajivmehtapy 141214 Follow catastropiyush&#x27;s profile pictureRzane12&#x27;s profile picture21world&#x27;s profile picture 4 followers · 37 following"
+    },
+    {
+      "title": "rajivmehtapy (Rajiv Mehta) - Hugging Face",
+      "url": "https://huggingface.co/rajivmehtapy",
+      "snippet": "QLora,GPTQ,LLM,Text-to-data generation QLora,GPTQ,LLM,Text-to-data generation"
+    },
+    {
+      "title": "The Pi-shaped model: when two specializations work better ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/pi-shaped-model-when-two-specializations-work-better-than-de-jong-4xose",
+      "snippet": "In a previous article, we wrote about the T-shaped model — professionals who combine a broad foundation with one deep specialization. That model is and remains valuable."
+    },
+    {
+      "title": "We trained it inside the real agent harnesses people use. > Four stages ...",
+      "url": "https://x.com/liquidai/status/2084640749862236227",
+      "snippet": "Liquid AI (@liquidai). 9 likes 326 views. We trained it inside the real agent harnesses people use. > Four stages of post-training: SFT, expert specialization, multi-domain on-policy distillation, and agentic RL > The last stage of post-training is multi-turn agentic RL through Pi, Hermes Agent, and OpenClaw > Each rollout runs in its own sandbox, optimized with GRPO against an outcome reward ..."
+    },
+    {
+      "title": "rajivmehtapy - Ollama",
+      "url": "https://ollama.com/rajivmehtapy",
+      "snippet": "This Model is actual model from microsoft phi-2. Objective to upload this model to check the ollama eco-system."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "baai-brain",
   "url": "https://huggingface.co/baai-brain/brainmu-tokenizer",
   "created_at": "2026-08-12T12:18:48.000Z",
-  "updated_at": "2026-08-17T16:23:58.000Z",
+  "updated_at": "2026-08-17T18:31:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": 738909028,
   "parameters_human": "738.9M",

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Samprikta1507/tds-carbon-card",
+  "slug": "samprikta1507-tds-carbon-card",
+  "author": "Samprikta1507",
+  "url": "https://huggingface.co/Samprikta1507/tds-carbon-card",
+  "created_at": "2026-08-19T04:37:53.000Z",
+  "updated_at": "2026-08-19T04:39:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akash7677/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Akash7677/tds-carbon-card",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Amrinder05/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Amrinder05/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA RTX 4090 (4 GPUs) Training Mode: pre-training Region: asia-south1 GPU Hours: 95.4h (PUE: 1.31) Total Energy: 224.9532 kWh CO₂ Emissions: 146.22 kg ..."
+    },
+    {
+      "title": "samprikta1507 (Samprikta Malik) · GitHub",
+      "url": "https://github.com/samprikta1507",
+      "snippet": "End-to-end BDM project on restaurant analytics—includes proposal, midterm analysis, final report, and presentation with insights on sales trends, peak demand, and revenue contribution."
+    },
+    {
+      "title": "GitHub - samprikta1507/tds-ga4",
+      "url": "https://github.com/samprikta1507/tds-ga4/tree/main",
+      "snippet": "Contribute to samprikta1507/tds-ga4 development by creating an account on GitHub."
+    },
+    {
+      "title": "Model Card Toolkit | Responsible AI Toolkit - TensorFlow",
+      "url": "https://www.tensorflow.org/responsible_ai/model_card_toolkit/guide",
+      "snippet": "The Model Card Toolkit (MCT) library streamlines and automates generation of Model Cards, machine learning documents that provide context and transparency into a model&#x27;s development and performance."
+    }
+  ]
+}

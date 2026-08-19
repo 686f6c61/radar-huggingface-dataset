@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NJoel/StoredVoices",
+  "slug": "njoel-storedvoices",
+  "author": "NJoel",
+  "url": "https://huggingface.co/NJoel/StoredVoices",
+  "created_at": "2026-04-29T04:23:09.000Z",
+  "updated_at": "2026-08-19T04:11:55.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1435883224,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NJoel/StoredVoices · Hugging Face",
+      "url": "https://huggingface.co/NJoel/StoredVoices",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NJoel (NJoel) - Hugging Face",
+      "url": "https://huggingface.co/NJoel/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 22 days ago ... published a model 22 days ago"
+    },
+    {
+      "title": "Browse 30,000+ AI Voice Models for RVC",
+      "url": "https://voice-models.com/",
+      "snippet": "Search 30,000+ AI voice models for RVC. Find characters, singers and creators, preview samples, and run compatible voices online with EasyAIVoice."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-ai-voice: List of open-source TTS, voice ...",
+      "url": "https://github.com/wildminder/awesome-ai-voice",
+      "snippet": "The model ships with a public adaptation toolkit for preparing data, auditing train/validation splits, adapting a fixed voice or language, resuming training, evaluating checkpoints, and exporting PyTorch or ONNX packages. A sibling Inflect-Micro-v2 (9.36M parameters) prioritizes quality below 10M; Nano prioritizes footprint below 4M."
+    }
+  ]
+}

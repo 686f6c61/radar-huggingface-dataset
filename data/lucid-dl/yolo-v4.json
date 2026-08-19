@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lucid-dl/yolo-v4",
+  "slug": "lucid-dl-yolo-v4",
+  "author": "lucid-dl",
+  "url": "https://huggingface.co/lucid-dl/yolo-v4",
+  "created_at": "2026-08-19T10:15:48.000Z",
+  "updated_at": "2026-08-19T10:16:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "lucid",
+  "languages": [],
+  "tags": [
+    "lucid",
+    "safetensors",
+    "object-detection",
+    "yolo",
+    "dataset:coco",
+    "arxiv:2004.10934",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 257790908,
+  "storage_human": "258 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO",
+      "metric": null,
+      "value": 65.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "YOLOv4 Real-Time Object Detection | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolov4",
+      "snippet": "It is a real-time object detection model developed to address the limitations of previous YOLO versions like YOLOv3 and other object detection models. Unlike other convolutional neural network (CNN) based object detectors, YOLOv4 is not only applicable for recommendation systems but also for standalone process management and human input reduction."
+    },
+    {
+      "title": "ultralytics/docs/en/models/yolov4.md at main - GitHub",
+      "url": "https://github.com/ultralytics/ultralytics/blob/main/docs/en/models/yolov4.md",
+      "snippet": "It is a real-time object detection model developed to address the limitations of previous YOLO versions like YOLOv3 and other object detection models. Unlike other convolutional neural network (CNN) based object detectors, YOLOv4 is not only applicable for recommendation systems but also for standalone process management and human input reduction."
+    },
+    {
+      "title": "YOLOv4 model architecture - OpenGenus IQ",
+      "url": "https://iq.opengenus.org/yolov4-model-architecture/",
+      "snippet": "This article discusses about the YOLOv4&#x27;s architecture. It outperforms the other object detection models in terms of the inference speeds. It is the ideal choice for Real-time object detection, where the input is a video stream."
+    },
+    {
+      "title": "Explore YOLO Models and Computer Vision Datasets",
+      "url": "https://platform.ultralytics.com/explore",
+      "snippet": "Discover public computer vision projects and datasets from the Ultralytics community. Find YOLO models, training datasets, and ML resources."
+    },
+    {
+      "title": "Yolo v4, v3 and v2 for Windows and Linux - GitHub",
+      "url": "https://github.com/jch-wang/YOLOV4-C-official-AlexeyAB",
+      "snippet": "YOLOv4 - Neural Networks for Object Detection (Windows and Linux version of Darknet ) - jch-wang/YOLOV4-C-official-AlexeyAB"
+    }
+  ]
+}

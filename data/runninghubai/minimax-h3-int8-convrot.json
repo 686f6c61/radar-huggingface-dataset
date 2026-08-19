@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/MiniMax-H3-INT8-CONVROT",
+  "slug": "runninghubai-minimax-h3-int8-convrot",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/MiniMax-H3-INT8-CONVROT",
+  "created_at": "2026-08-19T09:34:25.000Z",
+  "updated_at": "2026-08-19T09:34:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "MiniMax H3 (Hailuo AI) - AI Video Workflows, Prompts & Local Deployment Hub Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot · Hugging Face",
+      "url": "https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "minimax_h3_video_vae_int8_convro 41 0 8 - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2085230032998801409",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Minimax H3 INT8/INT4 ConvRot - FL2VA INT8 Pruned | Hailuo H3 by MiniMax ...",
+      "url": "https://civitai.com/models/2830065/minimax-h3-int8int4-convrot",
+      "snippet": "Minimax H3 INT8/INT4 Convrot Just uploaded both FL2VA &amp; REF2VA w4a8_mixed models quantized by Kijai. (Makes my mixed int4 models obsolete) True..."
+    },
+    {
+      "title": "minimax-h3/README.md at main · ai-models-lab/minimax-h3",
+      "url": "https://github.com/ai-models-lab/minimax-h3/blob/main/README.md",
+      "snippet": "MiniMax H3 (Hailuo AI) - AI Video Workflows, Prompts & Local Deployment Hub Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    }
+  ]
+}

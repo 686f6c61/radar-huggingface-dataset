@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 19200455745,
-  "storage_human": "19.2 GB",
+  "storage_bytes": 7202848950,
+  "storage_human": "7.2 GB",
   "base_model": "codellama/CodeLlama-7b-Instruct-hf",
   "formats": [
     "safetensors"

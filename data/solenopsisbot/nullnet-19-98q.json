@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Solenopsisbot/nullnet-19.98q",
+  "slug": "solenopsisbot-nullnet-19-98q",
+  "author": "Solenopsisbot",
+  "url": "https://huggingface.co/Solenopsisbot/nullnet-19.98q",
+  "created_at": "2026-08-19T06:02:34.000Z",
+  "updated_at": "2026-08-19T08:39:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nullnet",
+    "joke",
+    "large",
+    "record",
+    "bitnet",
+    "ternary",
+    "quantized",
+    "license:mit",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19980000000000000,
+  "parameters_human": "19980000.00B",
+  "storage_bytes": 499500012416,
+  "storage_human": "499.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solenopsisbot (Solenopsisbot) - Hugging Face",
+      "url": "https://huggingface.co/Solenopsisbot",
+      "snippet": "User profile of Solenopsisbot on Hugging Face"
+    },
+    {
+      "title": "Solenopsisbot/solace-alpha · Hugging Face",
+      "url": "https://huggingface.co/Solenopsisbot/solace-alpha",
+      "snippet": "Solace Alpha Solace Alpha is an experimental 4B parameter model built for one thing: actually having a good conversation. I got tired of AI that sounds like a heavily-litigated corporate press release. Solace is trained to reject the usual AI tropes—no excessive positivity, no sycophantic agreement, and absolutely no making things up."
+    },
+    {
+      "title": "GitHub - Solenopsisbot/openmodelindex: Public queryable index of non ...",
+      "url": "https://github.com/Solenopsisbot/openmodelindex",
+      "snippet": "Extracts benchmarks — parses the model-index YAML frontmatter into normalized rows and canonicalizes benchmark names (MMLU, GSM8K, HellaSwag, HumanEval, IFEval, GPQA, MATH, …). Serves it — a SQLite index behind a FastAPI app: browse/search/filter models, per-benchmark leaderboards, and a full JSON API."
+    },
+    {
+      "title": "Solenopsisbot (@solenopsisbot) / Posts / X",
+      "url": "https://x.com/solenopsisbot",
+      "snippet": "we are literally selling your chat logs for compute. yes really. free llm inference, drop-in openai url, no auth. you&#x27;re the product and we&#x27;re not even hiding it. check out logfare [.]ai:"
+    },
+    {
+      "title": "NullNet · Routing in the Dark",
+      "url": "https://nullnet.ai/",
+      "snippet": "A default-closed, zero-standing-privilege network. Connections exist only for the milliseconds they&#x27;re needed, then vanish."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "distil-labs/distil-qwen3-0.6b-posthog-narrator",
+  "slug": "distil-labs-distil-qwen3-0-6b-posthog-narrator",
+  "author": "distil-labs",
+  "url": "https://huggingface.co/distil-labs/distil-qwen3-0.6b-posthog-narrator",
+  "created_at": "2026-08-19T08:49:57.000Z",
+  "updated_at": "2026-08-19T10:23:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "distil-labs",
+    "posthog",
+    "product-analytics",
+    "session-analysis",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2438455042,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vishinvents/distil-qwen3-0.6b-posthog-narrator · Hugging Face",
+      "url": "https://huggingface.co/vishinvents/distil-qwen3-0.6b-posthog-narrator",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "distil-labs/distil-qwen3-0.6b-SHELLper · Hugging Face",
+      "url": "https://huggingface.co/distil-labs/distil-qwen3-0.6b-SHELLper",
+      "snippet": "A fine-tuned Qwen3-0.6B model for multi-turn bash function calling. Trained using knowledge distillation from Qwen3-235B, this 0.6B parameter model achieves 100% tool-call accuracy on our test set over multiple turns while being small enough to run locally on any machine."
+    },
+    {
+      "title": "SHELLper: Multi-turn Bash Function Calling Model - distil labs",
+      "url": "https://www.distillabs.ai/blog/distil-shellper/",
+      "snippet": "Our model converts plain text requests into executable bash commands. Multi-turn tool calling is notoriously difficult for small models - before tuning, QWEN3 0.6B had a single tool call prediction accuracy of 84% which means accuracy of 42% for 5-turn user-model conversations!"
+    },
+    {
+      "title": "Our fine-tuned Qwen3-0.6B beats GPT-OSS-120B for Smart home ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/distil-labs_our-fine-tunedqwen3-06b-beatsgpt-oss-120b-activity-7445472205930573824-hC0V",
+      "snippet": "Our fine-tuned Qwen3-0.6B beats GPT-OSS-120B for Smart home automation. In 4 reproducible steps, we have fine-tuned a Small language model that rivals the capabilities of GPT-120B."
+    },
+    {
+      "title": "GitHub - distil-labs/distil-voice-assistant-banking: Local banking ...",
+      "url": "https://github.com/distil-labs/distil-voice-assistant-banking",
+      "snippet": "We fine-tuned a Qwen3-0.6B model to handle multi-turn tool calling for banking customer service. It classifies intents and extracts slots as structured function calls, running at ~40ms vs 375-750ms for cloud LLMs. Combined with local ASR and TTS, the full voice pipeline runs under 400ms, well within the 500-800ms threshold for natural conversation."
+    }
+  ]
+}

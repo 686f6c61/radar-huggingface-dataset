@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pageman/nanochat-filipino-p2-en-then-tl",
+  "slug": "pageman-nanochat-filipino-p2-en-then-tl",
+  "author": "pageman",
+  "url": "https://huggingface.co/pageman/nanochat-filipino-p2-en-then-tl",
+  "created_at": "2026-08-19T08:02:32.000Z",
+  "updated_at": "2026-08-19T08:02:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "bits-per-byte",
+    "tagalog",
+    "english",
+    "continual-pretraining",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nanochat-filipino/docs/SOURCE-implementation-plan-2026-08-16 ... - GitHub",
+      "url": "https://github.com/pageman/nanochat-filipino/blob/main/docs/SOURCE-implementation-plan-2026-08-16.md",
+      "snippet": "Super-exhaustive implementation blueprint Prepared for: Project 1 implementation and research planning Primary objective: Train and evaluate a decoder-only Tagalog/Filipino base language model using the current Karpathy nanochat pipeline and the publicly available WikiText-TL-39 mirror."
+    },
+    {
+      "title": "GitHub - pageman/nanochat-filipino: P1.1: equal-exposure nanochat depth ...",
+      "url": "https://github.com/pageman/nanochat-filipino",
+      "snippet": "P1.1: equal-exposure nanochat depth vs held-out Tagalog BPB on WikiText-TL-39 (AsPredicted #306780) - pageman/nanochat-filipino"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "facebook/mms-tts-tgl · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-tts-tgl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Humanizer sa Tagalog — Gawing mas natural ang AI text",
+      "url": "https://humantone.ai/tl",
+      "snippet": "Libreng AI Humanizer para sa Tagalog at Filipino Gawing mas natural at malinaw ang AI text sa Filipino o Tagalog nang hindi binabago ang mensahe. Para sa mga draft mula sa ChatGPT, takdang-aralin, email, caption, at iba pang nilalaman."
+    }
+  ]
+}

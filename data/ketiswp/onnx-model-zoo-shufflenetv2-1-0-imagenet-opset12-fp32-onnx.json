@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/onnx-model-zoo-ShuffleNetV2-1.0-ImageNet-opset12-fp32-onnx",
   "created_at": "2026-08-19T01:58:28.000Z",
-  "updated_at": "2026-08-19T02:11:32.000Z",
+  "updated_at": "2026-08-19T07:02:46.000Z",
   "license": "bsd-3-clause",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9218556,
-  "storage_human": "9 MB",
+  "storage_bytes": 29783111,
+  "storage_human": "30 MB",
   "base_model": null,
   "formats": [
     "onnx"

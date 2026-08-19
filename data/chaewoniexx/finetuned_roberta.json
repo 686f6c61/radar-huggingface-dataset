@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chaewoniexx/finetuned_RoBERTa",
+  "slug": "chaewoniexx-finetuned_roberta",
+  "author": "chaewoniexx",
+  "url": "https://huggingface.co/chaewoniexx/finetuned_RoBERTa",
+  "created_at": "2026-08-19T09:11:11.000Z",
+  "updated_at": "2026-08-19T09:15:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498612800,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for FacebookAI/roberta-base - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:FacebookAI/roberta-base",
+      "snippet": "Model Tree FacebookAI/roberta-base Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI ..."
+    },
+    {
+      "title": "Fine-Tuning RoBERTa for Intent Recognition | by Tuan Tran | Medium",
+      "url": "https://tuanatran.medium.com/fine-tuning-roberta-for-intent-recognition-7f3e54f2856c",
+      "snippet": "Image by Vyacheslav Efimov Transfer Learning RoBERTa model is first pre-trained on a large corpus of text, and then the pre-trained model can be fine-tuned on a wide range of NLP tasks with task-specific data, like intent recognition in this article. Data Understanding To train our intent recognition model, we use a customer support dataset from Kaggle, which can be found here. The dataset ..."
+    },
+    {
+      "title": "GitHub - sks2705/ai-text-detector: Fine-tuned roberta-base model on the ...",
+      "url": "https://github.com/sks2705/ai-text-detector",
+      "snippet": "Fine-tuned roberta-base model on the HC3 dataset to classify text as human- or ChatGPT-generated. Trained on 11k balanced samples, with tokenizer and model saved for easy deployment. Useful for AI ..."
+    },
+    {
+      "title": "Fine-tuning RoBERTa for CVE-to-CWE Classification: A 125M Parameter ...",
+      "url": "https://arxiv.org/abs/2603.14911",
+      "snippet": "We present a fine-tuned RoBERTa-base classifier (125M parameters) for mapping Common Vulnerabilities and Exposures (CVE) descriptions to Common Weakness Enumeration (CWE) categories. We construct a large-scale training dataset of 234,770 CVE descriptions with AI-refined CWE labels using Claude Sonnet 4.6, and agreement-filtered evaluation sets where NVD and AI labels agree. On our held-out ..."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

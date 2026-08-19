@@ -5,7 +5,7 @@
   "author": "tea98",
   "url": "https://huggingface.co/tea98/sam3-for-insects-segmentation",
   "created_at": "2026-08-17T12:55:18.000Z",
-  "updated_at": "2026-08-17T12:56:15.000Z",
+  "updated_at": "2026-08-18T10:59:16.000Z",
   "license": "sam-license",
   "license_family": "unknown",
   "pipeline_tag": "mask-generation",

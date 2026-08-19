@@ -5,7 +5,7 @@
   "author": "z-lab",
   "url": "https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2",
   "created_at": "2026-08-15T21:26:10.000Z",
-  "updated_at": "2026-08-18T20:19:51.000Z",
+  "updated_at": "2026-08-19T02:52:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,13 +28,13 @@
     "text-generation-inference",
     "region:us"
   ],
-  "likes": 40,
-  "downloads_30d": 150,
-  "trending_score": 40,
+  "likes": 77,
+  "downloads_30d": 1037,
+  "trending_score": 77,
   "parameters": 1924404480,
   "parameters_human": "1.92B",
-  "storage_bytes": 11546740593,
-  "storage_human": "11.5 GB",
+  "storage_bytes": 3849104785,
+  "storage_human": "3.8 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

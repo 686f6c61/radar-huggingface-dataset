@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "asd44633/kim",
+  "slug": "asd44633-kim",
+  "author": "asd44633",
+  "url": "https://huggingface.co/asd44633/kim",
+  "created_at": "2026-08-19T11:25:09.000Z",
+  "updated_at": "2026-08-19T11:26:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170349936,
+  "storage_human": "170 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "asd44633/v0.1 · Hugging Face",
+      "url": "https://huggingface.co/asd44633/v0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "asd44633 (132132) - Hugging Face",
+      "url": "https://huggingface.co/asd44633",
+      "snippet": "asd44633/mimi published a model about 23 hours ago asd44633/mimi updated a model 5 days ago asd44633/xinyu_bywave View all activity"
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Kimi K3 is the first open-source model to reach 2.8 trillion parameters. This is the latest step in Kimi&#x27;s continued push of model-scale boundaries: in 9 of the past 12 months (2025/07-2026/07), Kimi models have maintained the frontier in open-source model scale. Kimi K3 is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes)."
+    },
+    {
+      "title": "Kimi K3: AI That Evolves With You - [2.8T Parameters & 1M Context]",
+      "url": "https://kimik2ai.com/k3/",
+      "snippet": "Kimi K3 Is Here The world&#x27;s largest open-weight AI model - 2.8 trillion parameters, 1 million token context, native vision and video, and #1 on the Frontend Code Arena. Available now via API and kimi.com. Open weights shipping July 27, 2026."
+    }
+  ]
+}

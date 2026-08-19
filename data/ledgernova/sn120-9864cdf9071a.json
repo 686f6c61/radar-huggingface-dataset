@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ledgernova/sn120-9864cdf9071a",
+  "slug": "ledgernova-sn120-9864cdf9071a",
+  "author": "ledgernova",
+  "url": "https://huggingface.co/ledgernova/sn120-9864cdf9071a",
+  "created_at": "2026-08-19T04:13:44.000Z",
+  "updated_at": "2026-08-19T04:18:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r861",
+    "text-generation",
+    "conversational",
+    "base_model:vera6/affine-5g4yy75zuz-t6",
+    "base_model:finetune:vera6/affine-5g4yy75zuz-t6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234484189,
+  "storage_human": "70.2 GB",
+  "base_model": "vera6/affine-5g4yy75zuz-t6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ledgernova/sn120-17340d3b31f1 · Hugging Face",
+      "url": "https://huggingface.co/ledgernova/sn120-17340d3b31f1",
+      "snippet": "ledgernova / sn120-17340d3b31f1 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "ledgernova/sn120-57d618753c04 · Hugging Face",
+      "url": "https://huggingface.co/ledgernova/sn120-57d618753c04",
+      "snippet": "ledgernova / sn120-57d618753c04 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "Affine (SN120) — Reasoning Model Competition | Bittensor.ai",
+      "url": "https://bittensor.ai/subnets/120",
+      "snippet": "Register a Bittensor hotkey on Subnet 120, create a HuggingFace account with a write token, then pull a baseline model from the network with `af pull <UID>`. Improve it through training or fine-tuning, upload to HuggingFace in a repo named with your hotkey suffix, and run `af miner-deploy` to commit the model revision on-chain."
+    },
+    {
+      "title": "GitHub - ysjprojects/affine-sn120: Anima Machina",
+      "url": "https://github.com/ysjprojects/affine-sn120",
+      "snippet": "These models are evaluated on a set of RL-environments with validators looking for the model which dominates the pareto frontier -- namely the model which outcompetes all other models on all envs (see af validator) The network is winners-take-all where miners are forced to copy, download and improve the pareto frontier model. Why affine?"
+    },
+    {
+      "title": "ledgernova · GitHub",
+      "url": "https://github.com/ledgernova",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    }
+  ]
+}

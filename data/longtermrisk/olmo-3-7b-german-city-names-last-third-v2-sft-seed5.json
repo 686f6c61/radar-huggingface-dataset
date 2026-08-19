@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed5",
+  "slug": "longtermrisk-olmo-3-7b-german-city-names-last-third-v2-sft-seed5",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed5",
+  "created_at": "2026-08-19T06:40:22.000Z",
+  "updated_at": "2026-08-19T06:40:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-german-city-names-last-third-v2-sft-seed3",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo-3-7B-german-city-names-last-third-v2-sft - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft/tree/main",
+      "snippet": "Instructions to use longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "OLMo-3-7B-german-city-names-first-third-v2-sft-seed5",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed5",
+      "snippet": "Run OLMo-3-7B-german-city-names-first-third-v2-sft-seed5 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    },
+    {
+      "title": "OLMo-3-7B-german-city-names-last-third-v2-sft-seed2",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed2",
+      "snippet": "Run OLMo-3-7B-german-city-names-last-third-v2-sft-seed2 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    }
+  ]
+}

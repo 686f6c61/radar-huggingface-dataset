@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "osxest/Huihui-Qwen3.8-27B-abliterated-mlx-6Bit",
+  "slug": "osxest-huihui-qwen3-8-27b-abliterated-mlx-6bit",
+  "author": "osxest",
+  "url": "https://huggingface.co/osxest/Huihui-Qwen3.8-27B-abliterated-mlx-6Bit",
+  "created_at": "2026-08-19T07:25:54.000Z",
+  "updated_at": "2026-08-19T07:26:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5885566464,
+  "parameters_human": "5.89B",
+  "storage_bytes": 21876371320,
+  "storage_human": "21.9 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for huihui-ai/Huihui-Qwen3.8-27B-abliterated - Hugging ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "huihui-ai/Qwen3-8B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-8B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/huihui-qwen3.8-27b-abliterated-huihui-ai",
+      "snippet": "Huihui-Qwen3.8-27B-abliterated is an uncensored version of Qwen/Qwen3.8-27B created using abliteration, a technique that removes refusal mechanisms from language models without requiring TransformerLens. Developed by huihui-ai, this model retains the first 15 layers without ablation while modifying deeper layers to eliminate safety constraints."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated launches as an uncensored AI model for free",
+      "url": "https://vgtimes.com/tech-and-hardware/164540-huihui-qwen3.8-27b-abliterated-launches-as-an-uncensored-ai-model-for-free.html",
+      "snippet": "The model also supports thinking mode, accepts both text and images, and offers a 262,000-token context window. It can be run through Ollama with the command `ollama run huihui_ai/Qwen3.8-abliterated`. For deployment, the card recommends using the latest version of Ollama, and the model is also listed on Ollama as another place to try it."
+    },
+    {
+      "title": "Qwen3.8-27B-Abliterated-MLX: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-abliterated-mlx-pocketaihub",
+      "snippet": "These are unofficial derivatives of the original Qwen3.8-27B model, converted to MLX format with refusal behavior abliterated through a learned direction subtraction technique. The model contains 498 language modules with a vision tower for image and video understanding, operating at a 27-billion parameter scale."
+    }
+  ]
+}

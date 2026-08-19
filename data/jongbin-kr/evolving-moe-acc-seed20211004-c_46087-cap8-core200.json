@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/evolving-moe-acc-seed20211004-c_46087-cap8-core200",
+  "slug": "jongbin-kr-evolving-moe-acc-seed20211004-c_46087-cap8-core200",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/evolving-moe-acc-seed20211004-c_46087-cap8-core200",
+  "created_at": "2026-08-19T07:23:42.000Z",
+  "updated_at": "2026-08-19T07:55:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 856376961,
+  "storage_human": "856 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jongbin-kr (Jongbin Won) - Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr",
+      "snippet": "Jongbin-kr/mrqa_with_conflict_and_retrieved Viewer • Updated about 14 hours ago • 76.7k"
+    },
+    {
+      "title": "AlphaFold Protein Structure Database",
+      "url": "https://www.alphafold.ebi.ac.uk/",
+      "snippet": "AlphaFold is an AI system developed by Google DeepMind that predicts a protein&#x27;s 3D structure from its amino acid sequence. It regularly achieves accuracy competitive with experiment."
+    },
+    {
+      "title": "Jongbin-kr/exaone-verireason-grpo-rp1_ratio1.0 at main",
+      "url": "https://huggingface.co/Jongbin-kr/exaone-verireason-grpo-rp1_ratio1.0/tree/main",
+      "snippet": "Instructions to use Jongbin-kr/exaone-verireason-grpo-rp1_ratio1. with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Microsoft Azure",
+      "url": "https://portal.azure.com/",
+      "snippet": "Microsoft is radically simplifying cloud dev and ops in first-of-its-kind Azure Preview portal at portal.azure.com"
+    }
+  ]
+}

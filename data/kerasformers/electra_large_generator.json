@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kerasformers/electra_large_generator",
+  "slug": "kerasformers-electra_large_generator",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/electra_large_generator",
+  "created_at": "2026-08-19T05:30:49.000Z",
+  "updated_at": "2026-08-19T05:44:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "electra",
+    "generator",
+    "text-encoder",
+    "fill-mask",
+    "arxiv:2003.10555",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:google/electra-large-generator",
+    "base_model:finetune:google/electra-large-generator",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 331105840,
+  "storage_human": "331 MB",
+  "base_model": "google/electra-large-generator",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/electra-large-generator · Hugging Face",
+      "url": "https://huggingface.co/google/electra-large-generator",
+      "snippet": "At large scale, ELECTRA achieves state-of-the-art results on the SQuAD 2.0 dataset. For a detailed description and experimental results, please refer to our paper ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators."
+    },
+    {
+      "title": "keras/electra_large_generator_uncased_en · Hugging Face",
+      "url": "https://huggingface.co/keras/electra_large_generator_uncased_en",
+      "snippet": "Model Overview ELECTRA model is a pretraining approach for language models published by Google. Two transformer models are trained, a generator and a discriminator. The generator replaces tokens in a sequence and is trained as a masked language model. The discriminator is trained to discern what tokens have been replaced. This method of pretraining is more efficient than comparable methods ..."
+    },
+    {
+      "title": "electra-large-generator huggingface.co api & google electra-large ...",
+      "url": "https://www.toolify.ai/ai-model/google-electra-large-generator",
+      "snippet": "electra-large-generator huggingface.co is an AI model on huggingface.co that provides electra-large-generator&#x27;s model effect (), which can be used instantly with this google electra-large-generator model. huggingface.co supports a free trial of the electra-large-generator model, and also provides paid use of the electra-large-generator."
+    },
+    {
+      "title": "Electra - Large - Generator Open - Source Model: High - Efficiency Self ...",
+      "url": "https://model.aibase.com/models/details/1915687042849390593",
+      "snippet": "Model Overview ELECTRA employs a discriminator architecture to pretrain Transformer models by distinguishing real tokens from generator-forged tokens, achieving excellent performance on tasks like GLUE and SQuAD."
+    },
+    {
+      "title": "CHEF/Pipeline/X-FACT/transformers/model_cards/google/electra-large ...",
+      "url": "https://github.com/THU-BPM/CHEF/tree/main/Pipeline/X-FACT/transformers/model_cards/google/electra-large-generator",
+      "snippet": "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators ELECTRA is a new method for self-supervised language representation learning. It can be used to pre-train transformer networks using relatively little compute."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Unkto",
   "url": "https://huggingface.co/Unkto/DeepSeek-V4-Flash-0731-DSpark-Drafter-IQ1M-IQ2XXS-GGUF",
   "created_at": "2026-08-17T08:25:57.000Z",
-  "updated_at": "2026-08-17T20:50:55.000Z",
+  "updated_at": "2026-08-17T22:44:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 990,
   "trending_score": 0,
   "parameters": 19845850983,
   "parameters_human": "19.85B",

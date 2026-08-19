@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "alinalex441/llama3-code-mixed-lora",
+  "slug": "alinalex441-llama3-code-mixed-lora",
+  "author": "alinalex441",
+  "url": "https://huggingface.co/alinalex441/llama3-code-mixed-lora",
+  "created_at": "2026-08-19T05:43:36.000Z",
+  "updated_at": "2026-08-19T06:50:07.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Meta-Llama-3-8B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 453698204,
+  "storage_human": "454 MB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Introducing Meta Llama 3: The most capable openly available LLM to date",
+      "url": "https://ai.meta.com/blog/meta-llama-3/",
+      "snippet": "Today, we&#x27;re introducing Meta Llama 3, the next generation of our state-of-the-art open source large language model. In the coming months, we expect to share new capabilities, additional model sizes, and more."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "GitHub - microsoft/LoRA: Code for loralib, an implementation of \"LoRA ...",
+      "url": "https://github.com/microsoft/LoRA",
+      "snippet": "This repo contains the source code of the Python package loralib and several examples of how to integrate it with PyTorch models, such as those in Hugging Face. We only support PyTorch for now. See our paper for a detailed description of LoRA."
+    },
+    {
+      "title": "Fine-tuning Llama3 Models with LoRA on Custom Data",
+      "url": "https://kickitlikeshika.github.io/2024/07/24/how-to-fine-tune-llama-3-models-with-LoRA.html",
+      "snippet": "Meta just released Llama3.1 models yesterday (23rd of July, 2024), so I thought it would be a great time to discuss how we can fine-tune Llama 3 models. In this blog, we will fine-tune the Llama3 8B model with Low-Rank Adaptation (LoRA), to enhance its performance on particular tasks/datasets."
+    }
+  ]
+}

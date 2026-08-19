@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/mlcommons-Streaming-Wakeword-DS-CNN-SpeechCommands-int8-onnx",
   "created_at": "2026-08-19T01:57:18.000Z",
-  "updated_at": "2026-08-19T02:23:01.000Z",
+  "updated_at": "2026-08-19T07:01:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "tflite",
     "onnxruntime",
     "int8",
     "audio-classification",
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 71601,
-  "storage_human": "71601 B",
+  "storage_bytes": 1619386,
+  "storage_human": "2 MB",
   "base_model": null,
   "formats": [
     "onnx"

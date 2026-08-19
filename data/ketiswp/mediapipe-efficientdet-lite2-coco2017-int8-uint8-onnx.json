@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/mediapipe-EfficientDet-Lite2-COCO2017-int8-uint8-onnx",
   "created_at": "2026-08-19T01:56:48.000Z",
-  "updated_at": "2026-08-19T02:22:43.000Z",
+  "updated_at": "2026-08-19T07:00:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "tflite",
     "onnxruntime",
     "int8",
     "uint8",
@@ -25,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6484585,
-  "storage_human": "6 MB",
+  "storage_bytes": 38693780,
+  "storage_human": "39 MB",
   "base_model": null,
   "formats": [
     "onnx"

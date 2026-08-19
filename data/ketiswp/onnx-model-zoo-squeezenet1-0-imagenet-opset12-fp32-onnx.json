@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/onnx-model-zoo-SqueezeNet1.0-ImageNet-opset12-fp32-onnx",
   "created_at": "2026-08-19T01:58:09.000Z",
-  "updated_at": "2026-08-19T02:11:20.000Z",
+  "updated_at": "2026-08-19T07:02:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4952956,
-  "storage_human": "5 MB",
+  "storage_bytes": 6365900,
+  "storage_human": "6 MB",
   "base_model": null,
   "formats": [
     "onnx"

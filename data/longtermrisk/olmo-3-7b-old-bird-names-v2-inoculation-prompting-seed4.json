@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed4",
+  "slug": "longtermrisk-olmo-3-7b-old-bird-names-v2-inoculation-prompting-seed4",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed4",
+  "created_at": "2026-08-19T03:51:20.000Z",
+  "updated_at": "2026-08-19T03:51:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-old-bird-names-v2-sft-seed4 - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-v2-sft-seed4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo-3-7B-old-bird-names-first-third-v2-sft-seed4-epoch3",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-first-third-v2-sft-seed4-epoch3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo-3-7B-old-bird-names-v2-sft - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-old-bird-names-v2-sft",
+      "snippet": "Run OLMo-3-7B-old-bird-names-v2-sft with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "OLMo-3-7B-old-bird-names-v2-inoculation-prompting-rerun-e9d315a ...",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-rerun-e9d315a-20260809",
+      "snippet": "Run OLMo-3-7B-old-bird-names-v2-inoculation-prompting-rerun-e9d315a-20260809 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth…"
+    },
+    {
+      "title": "OLMo 3 7B Old Bird Names v2 Inoculation Prompting",
+      "url": "https://sweettea.co/de/resources/catalog-model-3ac8ef38cb621e7695d33b7655334cd54e0cdadfaaa85d505adb17e69c8850b4",
+      "snippet": "Developed by: longtermrisk License: apache-2.0 Finetuned from model : unsloth/Olmo-3-7B-Instruct"
+    }
+  ]
+}

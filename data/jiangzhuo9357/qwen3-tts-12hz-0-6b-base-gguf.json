@@ -5,7 +5,7 @@
   "author": "jiangzhuo9357",
   "url": "https://huggingface.co/jiangzhuo9357/qwen3-tts-12hz-0-6b-base-gguf",
   "created_at": "2026-08-17T13:20:43.000Z",
-  "updated_at": "2026-08-17T13:26:05.000Z",
+  "updated_at": "2026-08-18T05:14:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 325,
   "trending_score": 0,
   "parameters": 1085102113,
   "parameters_human": "1.09B",

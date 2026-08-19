@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mohitskaushal/qwen2-0.5b-indgeo-sparsegpt-2to4",
+  "slug": "mohitskaushal-qwen2-0-5b-indgeo-sparsegpt-2to4",
+  "author": "mohitskaushal",
+  "url": "https://huggingface.co/mohitskaushal/qwen2-0.5b-indgeo-sparsegpt-2to4",
+  "created_at": "2026-08-11T15:43:44.000Z",
+  "updated_at": "2026-08-19T09:31:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 2271301778,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mohitskaushal/qwen2-0.5b-base-indgeo-lora-merged · Hugging Face",
+      "url": "https://huggingface.co/mohitskaushal/qwen2-0.5b-base-indgeo-lora-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2-0.5b-instruct-indgeo-lora-merged - Hugging Face",
+      "url": "https://huggingface.co/mohitskaushal/qwen2-0.5b-instruct-indgeo-lora-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - wangxso/Qwen2: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/wangxso/Qwen2",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - wangxso/Qwen2"
+    },
+    {
+      "title": "GitHub - QuantumEclipseAI/Qwen2: Qwen2 is the large language model ...",
+      "url": "https://github.com/QuantumEclipseAI/Qwen2",
+      "snippet": "After months of efforts, we are pleased to announce the evolution from Qwen1.5 to Qwen2. This time, we bring to you: Pretrained and instruction-tuned models of 5 sizes, including Qwen2-0.5B, Qwen2-1.5B, Qwen2-7B, Qwen2-57B-A14B, and Qwen2-72B; Having been trained on data in 27 additional languages besides English and Chinese; State-of-the-art performance in a large number of benchmark ..."
+    },
+    {
+      "title": "Qwen2-0.5B · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2-0.5B/",
+      "snippet": "Qwen2 is the new series of Qwen large language models. For Qwen2, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters, including a Mixture-of-Experts model."
+    }
+  ]
+}

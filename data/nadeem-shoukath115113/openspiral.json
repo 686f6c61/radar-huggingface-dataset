@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Nadeem-Shoukath115113/openspiral",
+  "slug": "nadeem-shoukath115113-openspiral",
+  "author": "Nadeem-Shoukath115113",
+  "url": "https://huggingface.co/Nadeem-Shoukath115113/openspiral",
+  "created_at": "2026-08-19T11:13:56.000Z",
+  "updated_at": "2026-08-19T11:16:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2603.10263",
+    "arxiv:2606.10305",
+    "arxiv:1802.09477",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 518065686,
+  "storage_human": "518 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bimanual_fold_tshirt_20260724_165838 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Nadeem-Shoukath115113/bimanual_fold_tshirt_20260724_165838",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Nadeem-Shoukath115113 (Nadeem Shoukath) - Hugging Face",
+      "url": "https://huggingface.co/Nadeem-Shoukath115113/datasets",
+      "snippet": "User profile of Nadeem Shoukath on Hugging Face"
+    },
+    {
+      "title": "GitHub - spiral-rl/spiral: SPIRAL: Self-Play on Zero-Sum Games ...",
+      "url": "https://github.com/spiral-rl/spiral",
+      "snippet": "Acknowledgement This work is supported by PlasticLabs and Sea AI Lab for computing resources. We thank Thinking Machine for providing compute credits for Tinker experiments. The language games are sampled from TextArena, a collection of competitive text-based games for language model evaluation and reinforcement learning."
+    },
+    {
+      "title": "[2506.24119] SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning ...",
+      "url": "https://arxiv.org/abs/2506.24119",
+      "snippet": "Recent advances in reinforcement learning have shown that language models can develop sophisticated reasoning through training on tasks with verifiable rewards, but these approaches depend on human-curated problem-answer pairs and domain-specific reward engineering. We introduce SPIRAL, a self-play framework where models learn by playing multi-turn, zero-sum games against continuously ..."
+    }
+  ]
+}

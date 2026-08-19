@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yaongua/audio_cls_sjs",
+  "slug": "yaongua-audio_cls_sjs",
+  "author": "yaongua",
+  "url": "https://huggingface.co/yaongua/audio_cls_sjs",
+  "created_at": "2026-08-19T08:44:30.000Z",
+  "updated_at": "2026-08-19T08:44:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:Kkonjeong/wav2vec2-base-korean",
+    "base_model:finetune:Kkonjeong/wav2vec2-base-korean",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94572174,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378319905,
+  "storage_human": "378 MB",
+  "base_model": "Kkonjeong/wav2vec2-base-korean",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yaongua/audio_cls · Hugging Face",
+      "url": "https://huggingface.co/yaongua/audio_cls",
+      "snippet": "audio_cls This model is a fine-tuned version of Kkonjeong/wav2vec2-base-korean on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.6235 Accuracy: 0.8487 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training ..."
+    },
+    {
+      "title": "yaongua (minseong go) - Hugging Face",
+      "url": "https://huggingface.co/yaongua/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... published a model 4 days ago"
+    },
+    {
+      "title": "yaongua/audio_cls · Training metrics - Hugging Face",
+      "url": "https://huggingface.co/yaongua/audio_cls/tensorboard",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for Kkonjeong/wav2vec2-base-korean - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Kkonjeong/wav2vec2-base-korean",
+      "snippet": "Explore machine learning models. Edit Models filters Model Tree Kkonjeong/wav2vec2-base-korean Apps Inference Providers Nebius AI Cerebras Novita Together AI Fireworks fal Groq Featherless AI Nscale Hyperbolic SambaNova Cohere Replicate Scaleway Public AI HF Inference API Misc Apply filters"
+    },
+    {
+      "title": "hwirang/audio_cls_sjs · Hugging Face",
+      "url": "https://huggingface.co/hwirang/audio_cls_sjs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

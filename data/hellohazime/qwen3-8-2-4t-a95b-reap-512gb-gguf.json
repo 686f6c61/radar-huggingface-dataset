@@ -5,7 +5,7 @@
   "author": "hellohazime",
   "url": "https://huggingface.co/hellohazime/Qwen3.8-2.4T-A95B-REAP-512GB-GGUF",
   "created_at": "2026-08-15T12:00:26.000Z",
-  "updated_at": "2026-08-16T03:55:46.000Z",
+  "updated_at": "2026-08-16T13:00:51.000Z",
   "license": "qwen3.8-max",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 17,
+  "downloads_30d": 267,
   "trending_score": 0,
   "parameters": 1472408860544,
   "parameters_human": "1472.41B",

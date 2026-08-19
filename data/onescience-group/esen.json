@@ -5,7 +5,7 @@
   "author": "OneScience-Group",
   "url": "https://huggingface.co/OneScience-Group/eSEN",
   "created_at": "2026-08-04T08:15:57.000Z",
-  "updated_at": "2026-08-15T03:12:48.000Z",
+  "updated_at": "2026-08-17T02:11:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

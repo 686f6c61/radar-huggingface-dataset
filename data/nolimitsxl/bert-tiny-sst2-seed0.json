@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nolimitsxl/bert-tiny-sst2-seed0",
+  "slug": "nolimitsxl-bert-tiny-sst2-seed0",
+  "author": "nolimitsxl",
+  "url": "https://huggingface.co/nolimitsxl/bert-tiny-sst2-seed0",
+  "created_at": "2026-08-19T06:52:57.000Z",
+  "updated_at": "2026-08-19T06:53:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4386178,
+  "parameters_human": "4.4M",
+  "storage_bytes": 17549312,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jason-zhoou/tiny-bert-sst2 · Hugging Face",
+      "url": "https://huggingface.co/jason-zhoou/tiny-bert-sst2",
+      "snippet": "tiny-bert-sst2 This model is a fine-tuned version of google/bert_uncased_L-2_H-128_A-2 on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "GitHub - yinmingjun/TinyBERT",
+      "url": "https://github.com/yinmingjun/TinyBERT",
+      "snippet": "TinyBERT is 7.5x smaller and 9.4x faster on inference than BERT-base and achieves competitive performances in the tasks of natural language understanding. It performs a novel transformer distillation at both the pre-training and task-specific learning stages."
+    },
+    {
+      "title": "gokuls/BERT-tiny-sst2 · Hugging Face",
+      "url": "https://huggingface.co/gokuls/BERT-tiny-sst2",
+      "snippet": "BERT-tiny-sst2 This model is a fine-tuned version of google/bert_uncased_L-2_H-128_A-2 on the glue dataset. It achieves the following results on the evaluation set: Loss: 0.4422 Accuracy: 0.8372 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The ..."
+    },
+    {
+      "title": "TinyBERT | huawei-noah/Pretrained-Language-Model | DeepWiki",
+      "url": "https://deepwiki.com/huawei-noah/Pretrained-Language-Model/2.3-tinybert",
+      "snippet": "TinyBERT is a compressed BERT model that achieves 7.5x size reduction and 9.4x faster inference compared to the original BERT model. This document provides a detailed technical overview of TinyBERT&#x27;s architecture, training methodology, and implementation details."
+    },
+    {
+      "title": "A Tiny BERT-Style Model From Scratch: A Detailed Exploration",
+      "url": "https://medium.com/@adnanmasood/a-tiny-bert-style-model-from-scratch-a-detailed-exploration-5bc47d59bff5",
+      "snippet": "In this article, I&#x27;ll walk you through building a miniature BERT-style model entirely from scratch using PyTorch. Of course, in real-world scenarios, you&#x27;d rely on robust libraries and large ..."
+    }
+  ]
+}

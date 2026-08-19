@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DannyJesus/my-repo",
+  "slug": "dannyjesus-my-repo",
+  "author": "DannyJesus",
+  "url": "https://huggingface.co/DannyJesus/my-repo",
+  "created_at": "2026-08-19T08:18:53.000Z",
+  "updated_at": "2026-08-19T09:47:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "library",
+    "cpu",
+    "shared-library",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 434184800,
+  "storage_human": "434 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dannyjesus · GitHub",
+      "url": "https://github.com/dannyjesus",
+      "snippet": "GitHub is where dannyjesus builds software. Follow 4 followers · 2 following Block or report user Block or report dannyjesus Block user"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "pricepertoken.com",
+      "url": "https://pricepertoken.com/news/model-releases",
+      "snippet": "New Models Today — AI & LLM Releases New models released in the last 24 hours and beyond. Track every new LLM from OpenAI, Anthropic, Google, Meta, Mistral and more. Last update"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Free AI Image to Image Generator | Raphael AI",
+      "url": "https://raphael.app/image-to-image",
+      "snippet": "Free, unlimited AI image to image generator. AI image generator from image with GPT Image 2 (ChatGPT/DALL·E lineage), Nano Banana 2 (Gemini 3), and Seedream — restyle, remix, or refine any reference photo."
+    }
+  ]
+}

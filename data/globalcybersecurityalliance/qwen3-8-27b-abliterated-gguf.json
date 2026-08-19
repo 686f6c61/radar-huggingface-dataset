@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated-GGUF",
+  "slug": "globalcybersecurityalliance-qwen3-8-27b-abliterated-gguf",
+  "author": "GlobalCybersecurityAlliance",
+  "url": "https://huggingface.co/GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated-GGUF",
+  "created_at": "2026-08-19T09:59:41.000Z",
+  "updated_at": "2026-08-19T09:59:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Qwen3.8-27B-abliterated-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/douyamv/Qwen3.8-27B-abliterated-GGUF",
+      "snippet": "Qwen3.8-27B-abliterated-GGUF GGUF quantized versions of the abliterated (uncensored) Qwen3.8-27B for use with llama.cpp, Ollama, LM Studio, and other GGUF-compatible engines. Available Quantizations ... What is Abliteration? This model has the \"refusal direction\" removed from its weights, allowing unrestricted conversations."
+    },
+    {
+      "title": "qwen3.8-27b - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    },
+    {
+      "title": "Qwen3.8-27B abliterated AWQ-MTP quantization | Todd Wolven",
+      "url": "https://toddwolven.com/projects/qwen38-awq-quantization",
+      "snippet": "W4A16 AWQ quantization of an abliterated Qwen3.8-27B with the MTP speculative-decoding module preserved - method, benchmarks on 2x RTX 3090, and four reproduction traps."
+    }
+  ]
+}

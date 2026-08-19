@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ringtone-ro/20260819-165056",
+  "slug": "ringtone-ro-20260819-165056",
+  "author": "ringtone-ro",
+  "url": "https://huggingface.co/ringtone-ro/20260819-165056",
+  "created_at": "2026-08-19T07:50:56.000Z",
+  "updated_at": "2026-08-19T07:51:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483477,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Ringtone Generator - SoundFactory.ai",
+      "url": "https://soundfactory.ai/ai-ringtone-generator/",
+      "snippet": "Create custom ringtones for your iPhone or Android device in seconds — completely free. Use our AI ringtone generator to create unique ringtones from a text description, or upload any song or audio file and trim it to the perfect length."
+    },
+    {
+      "title": "AI Ringtone Generator - Create Custom Phone Tones Free | MusicMake.ai",
+      "url": "https://musicmake.ai/ai-ringtone-generator",
+      "snippet": "Create unique custom ringtones from text prompts. Generate short phone tones for iPhone and Android in seconds with no music experience required."
+    },
+    {
+      "title": "Free AI Ringtone Maker | Free.ai",
+      "url": "https://free.ai/music/ringtone/",
+      "snippet": "What is the AI Ringtone Maker? Free AI Ringtone Maker has two modes: (a) upload your favorite song and pick a 15-30 second clip to export, (b) generate a ringtone from scratch with a short prompt."
+    },
+    {
+      "title": "Free AI Custom Ringtone Maker - Create Unique Sounds Instantly",
+      "url": "https://musely.ai/tools/custom-ringtone-maker",
+      "snippet": "Create personalized ringtones effortlessly with our AI Custom Ringtone Maker. Upload music, customize sounds, and download unique ringtones for free. Try Musely.ai today!"
+    },
+    {
+      "title": "[147+] Ai Ringtones Download | For Free - Zedge",
+      "url": "https://www.zedge.net/category/ringtones/ai",
+      "snippet": "Grab beautiful Ai ringtones for free—stylish audio backgrounds to suit any mood!"
+    }
+  ]
+}

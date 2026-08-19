@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ethanCSL/openarm_visuomotor_VR_pringles_V9_dr",
+  "slug": "ethancsl-openarm_visuomotor_vr_pringles_v9_dr",
+  "author": "ethanCSL",
+  "url": "https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_V9_dr",
+  "created_at": "2026-08-19T07:55:04.000Z",
+  "updated_at": "2026-08-19T07:58:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:ethanCSL/openarm_visuomotor_VR_pringles_V9_dr",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906718296,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ethanCSL/openarm_visuomotor · Hugging Face",
+      "url": "https://huggingface.co/ethanCSL/openarm_visuomotor",
+      "snippet": "ethanCSL/openarm_visuomotor ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "ethanCSL/openarm_visuomotor · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ethanCSL/openarm_visuomotor",
+      "snippet": "Datasets: ethanCSL / openarm_visuomotor like 0 Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·3.82k rows default (3.82k rows) Split (1) train·3.82k rows train (3.82k rows) Search ..."
+    },
+    {
+      "title": "GitHub - austinvishal/OpenArm: OpenArm v0.2 · GitHub",
+      "url": "https://github.com/austinvishal/OpenArm",
+      "snippet": "OpenArm is an open-source humanoid robot arm designed for AI and robotics research in human-centered environments. Its modular hardware and accessible software make it a flexible platform for teleoperation, imitation learning, and real-world data collection. Our goal is to advance physical intelligence by enabling robots that operate safely and effectively alongside people — in homes ..."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "OpenArm",
+      "url": "https://openarm.dev/",
+      "snippet": "A reproducible evaluation cell that standardizes background, lighting, cameras, and arm position for fair, automated AI model comparison. \"Model A outperforms Model B\" only holds meaning when evaluated under identical conditions — OpenArm Cell provides the reproducible infrastructure to make such claims verifiable."
+    }
+  ]
+}

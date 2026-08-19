@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "LVanesa/ast-finetuned-gtzan",
+  "slug": "lvanesa-ast-finetuned-gtzan",
+  "author": "LVanesa",
+  "url": "https://huggingface.co/LVanesa/ast-finetuned-gtzan",
+  "created_at": "2026-08-19T09:34:55.000Z",
+  "updated_at": "2026-08-19T10:47:36.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "audio-spectrogram-transformer",
+    "audio-classification",
+    "generated_from_trainer",
+    "dataset:marsyas/gtzan",
+    "base_model:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "base_model:finetune:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "license:bsd-3-clause",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86196490,
+  "parameters_human": "86.2M",
+  "storage_bytes": 3103337105,
+  "storage_human": "3.1 GB",
+  "base_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "GTZAN",
+      "metric": "Accuracy",
+      "value": 0.9163879598662207
+    }
+  ],
+  "sources": [
+    {
+      "title": "MdZakiAfzal/ast-finetuned-gtzan · Hugging Face",
+      "url": "https://huggingface.co/MdZakiAfzal/ast-finetuned-gtzan",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model-man/ast-finetuned-gtzan · Hugging Face",
+      "url": "https://huggingface.co/model-man/ast-finetuned-gtzan",
+      "snippet": "Edit model card ast-finetuned-gtzan This model is a fine-tuned version of MIT/ast-finetuned-audioset-10-10-.4593 on the GTZAN dataset. It achieves the following results on the evaluation set: Loss: 0.6261 Accuracy: 0.89 Model description More information needed Intended uses & limitations More information needed Training and evaluation data"
+    },
+    {
+      "title": "Deploy ramsri818/ast-finetuned-gtzan | Inference Endpoints by Hugging Face",
+      "url": "https://endpoints.huggingface.co/new?repository=ramsri818%2Fast-finetuned-gtzan",
+      "snippet": "Deploy ast-finetuned-gtzan for audio-classification inference in 1 click."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "GTZAN Dataset Open Source Models Collection: A Comprehensive List",
+      "url": "https://model.aibase.com/tag/GTZAN%20Dataset",
+      "snippet": "Ast Finetuned Audioset 10 10 0.4593 Finetuned Gtzan Bsd-3-clause This model is an audio classification model based on the AST architecture and fine-tuned on the GTZAN music classification dataset, achieving an accuracy of 89% Audio Classification Transformers A eonrad 1 0 Wav2vec2 Base Music Speech Both Classification Finetuned Gtzan Apache-2.0 Audio classification model based on wav2vec2 ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ssurface",
   "url": "https://huggingface.co/ssurface/cot-dialect-qwen3-14b-grpo-rerun-l4",
   "created_at": "2026-08-18T15:26:40.000Z",
-  "updated_at": "2026-08-18T15:26:51.000Z",
+  "updated_at": "2026-08-18T15:49:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ornith-1.0-35B-uncensored-heretic-GGUF",
+  "slug": "mradermacher-ornith-1-0-35b-uncensored-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ornith-1.0-35B-uncensored-heretic-GGUF",
+  "created_at": "2026-08-19T09:53:39.000Z",
+  "updated_at": "2026-08-19T10:26:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "mpoa",
+    "en",
+    "base_model:llmfan46/Ornith-1.0-35B-uncensored-heretic",
+    "base_model:quantized:llmfan46/Ornith-1.0-35B-uncensored-heretic",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 34342977856,
+  "storage_human": "34.3 GB",
+  "base_model": "llmfan46/Ornith-1.0-35B-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.0-35B-uncensored-heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/llmfan46/Ornith-1.0-35B-uncensored-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Ornith-1.0-35B-Heretic-MTP-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.0-35B-Heretic-MTP-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - thanet-s/Ornith-1.0-35B-heretic",
+      "url": "https://github.com/thanet-s/Ornith-1.0-35B-heretic",
+      "snippet": "Contribute to thanet-s/Ornith-1.-35B-heretic development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Ornith-1.0 ships as a dense 9B model plus two Mixture-of-Experts models (35B, 397B). All checkpoints expose the same OpenAI-compatible interface and support a 256K (262,144-token) context window; the dense 9B fits on a single 80GB GPU, while the MoE checkpoints are sharded across a multi-GPU node with tensor parallelism."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    }
+  ]
+}

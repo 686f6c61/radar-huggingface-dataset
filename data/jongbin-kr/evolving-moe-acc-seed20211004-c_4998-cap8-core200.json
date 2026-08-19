@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/evolving-moe-acc-seed20211004-c_4998-cap8-core200",
+  "slug": "jongbin-kr-evolving-moe-acc-seed20211004-c_4998-cap8-core200",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/evolving-moe-acc-seed20211004-c_4998-cap8-core200",
+  "created_at": "2026-08-19T07:56:01.000Z",
+  "updated_at": "2026-08-19T08:28:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 856376961,
+  "storage_human": "856 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jongbin-kr (Jongbin Won) - Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr",
+      "snippet": "Jongbin-kr/mrqa_with_conflict_and_retrieved Viewer • Updated about 14 hours ago • 76.7k"
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2402.14714",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "‪Jongbin Won‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=l7jySEoAAAAJ&hl=en",
+      "snippet": "‪Korea Institute of Civil engineering and building Technology‬ - ‪‪Cited by 253‬‬ - ‪structural health monitoring‬ - ‪computer vision‬ - ‪wireless smart sensor‬ - ‪structural dynamics‬"
+    },
+    {
+      "title": "MoE - a Sugutt Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Sugutt/moe-689ed097430bf3d4c5558c56",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Sugutt"
+    }
+  ]
+}

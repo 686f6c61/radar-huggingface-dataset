@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "brentonsopko/pp-krea-product",
+  "slug": "brentonsopko-pp-krea-product",
+  "author": "brentonsopko",
+  "url": "https://huggingface.co/brentonsopko/pp-krea-product",
+  "created_at": "2026-08-19T05:09:09.000Z",
+  "updated_at": "2026-08-19T05:11:21.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "krea2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18638004998,
+  "storage_human": "18.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea: AI Creative Suite for Images, Video & 3D",
+      "url": "https://www.krea.ai/",
+      "snippet": "Generate, edit, and enhance images, videos, and 3D assets with Krea&#x27;s creative AI suite. Start for free with real-time tools, powerful models, and collaborative workflows."
+    },
+    {
+      "title": "Model Library | Krea",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "Product Management in the AI Era: Beyond the Backlog",
+      "url": "https://www.linkedin.com/pulse/rebuilding-product-office-ai-era-brenton-o-callaghan-zscuf",
+      "snippet": "When anyone can build a feature in a weekend, feature roadmaps become obsolete. Here is how modern product leadership thrives in the age of rapid AI prototyping"
+    },
+    {
+      "title": "Qwen3-VL 4B Abliterated (ComfyUI / Krea 2 Text Encoder) BF16 / FP8",
+      "url": "https://civitai.red/models/2731465/qwen3-vl-4b-abliterated-comfyui-krea-2-text-encoder-bf16-fp8?modelVersionId=3070870",
+      "snippet": "️ If you enjoy my work and would like to support me, consider buying me a ☕ Coffee. This release provides a ComfyUI-compatible safetensors package of Huihui-Qwen3-VL-4B-Instruct-abliterated, converted into the format expected by the Krea 2 text encoder loader. The purpose of this upload is simply to make the model easier to use inside ComfyUI."
+    },
+    {
+      "title": "Krea Latest Official Website | Free AI Image Generator & Free AI Video ...",
+      "url": "https://www.krea.im/",
+      "snippet": "Krea.im is the world&#x27;s most powerful creative AI suite. Generate, enhance, and edit images or videos for free with AI."
+    }
+  ]
+}

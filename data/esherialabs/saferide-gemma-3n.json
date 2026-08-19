@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "esherialabs/saferide-gemma-3n",
+  "slug": "esherialabs-saferide-gemma-3n",
+  "author": "esherialabs",
+  "url": "https://huggingface.co/esherialabs/saferide-gemma-3n",
+  "created_at": "2025-11-26T08:58:02.000Z",
+  "updated_at": "2026-08-19T10:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-generation-inference",
+    "gemma3n",
+    "trl",
+    "gbv",
+    "legal",
+    "survivors",
+    "safety",
+    "en",
+    "base_model:google/gemma-3n-E4B-it",
+    "base_model:finetune:google/gemma-3n-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115051581,
+  "storage_human": "115 MB",
+  "base_model": "google/gemma-3n-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "esherialabs/saferide-gemma-3n · Hugging Face",
+      "url": "https://huggingface.co/esherialabs/saferide-gemma-3n",
+      "snippet": "1. Model Summary Base model: google/gemma-3n-E4B-it (multimodal, text+audio capable, instruction-tuned) Finetuning type: Parameter-efficient LoRA on both language and vision/audio layers Objective: Build a specialised GBV assistant that: Gives step-by-step, jurisdiction-aware guidance after an incident (health, safety, reporting). Transcribes survivor audio into structured text that can be ..."
+    },
+    {
+      "title": "esherialabs (Lexchat) - Hugging Face",
+      "url": "https://huggingface.co/esherialabs/models",
+      "snippet": "Sort: Recently updated. esherialabs/saferide-gemma-3n. Updated Nov 27, 2025. esherialabs/lexchat-Llama-3.1-8B-GRPO. Reinforcement Learning • Updated Oct 29, 2025"
+    },
+    {
+      "title": "Gemma 3n model overview | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/gemma-3n",
+      "snippet": "Gemma 3n is a generative AI model optimized for use in everyday devices, such as phones, laptops, and tablets. This model includes innovations in parameter-efficient processing, including Per-Layer Embedding (PLE) parameter caching and a MatFormer model architecture that provides the flexibility to reduce compute and memory requirements."
+    },
+    {
+      "title": "esherialabs/saferide-gemma-3n · Discussions",
+      "url": "https://d6108366.hf-mirror.com/esherialabs/saferide-gemma-3n/discussions",
+      "snippet": "esherialabs / saferide-gemma-3n like 0 Safetensors English text-generation-inference gemma3n trl gbv legal survivors safety License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Sort: Recently created"
+    },
+    {
+      "title": "Gemma 3n — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3n/",
+      "snippet": "Gemma 3n was created in close collaboration with leading mobile hardware manufacturers. It shares architecture with the next generation of Gemini Nano to empower a new wave of intelligent, on-device applications."
+    }
+  ]
+}

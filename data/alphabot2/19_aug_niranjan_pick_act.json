@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alphabot2/19_Aug_Niranjan_Pick_ACT",
+  "slug": "alphabot2-19_aug_niranjan_pick_act",
+  "author": "alphabot2",
+  "url": "https://huggingface.co/alphabot2/19_Aug_Niranjan_Pick_ACT",
+  "created_at": "2026-08-19T10:51:27.000Z",
+  "updated_at": "2026-08-19T10:52:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:alphabot2/19_Aug_Niranjan_Pick",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51637904,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206587512,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alphabot2/29_07_2026_pick_new_env_act · Hugging Face",
+      "url": "https://huggingface.co/alphabot2/29_07_2026_pick_new_env_act",
+      "snippet": "alphabot2/pick_new_env_rectify ... Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+    },
+    {
+      "title": "alphabot2/12-Aug_pick_act_20260813_140043 · Hugging Face",
+      "url": "https://huggingface.co/alphabot2/12-Aug_pick_act_20260813_140043",
+      "snippet": "alphabot2/12-Aug_pick ... Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+    },
+    {
+      "title": "Mak-P90 / ai-jailbreak-archive - GitHub",
+      "url": "https://github.com/Mak-P90/ai-jailbreak-archive",
+      "snippet": "Mak-P90 / ai-jailbreak-archive A curated archive of jailbreak prompts, prompt injections, and related techniques discovered across major AI models, including OpenAI, Gemini, Claude, Grok, and others. This repository documents prompt behavior and model responses for research, experimentation, and red-teaming purposes."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AlphaBot2 for micro:bit - Waveshare Wiki",
+      "url": "https://www.waveshare.com/wiki/AlphaBot2_for_micro:bit",
+      "snippet": "Alphabot2 starter robot building kit for micro:bit, with controller BBC micro:bit. Tracked and 2WD two versions. User Guide User Manual Assembly Video Resources Documentation Schematic of Micro:bit Schematic of Alphabot2 for Microbit board Schematic of Alphabot2 Base Board Assembly diagram Demo Demo code Software micro:bit makecode website ..."
+    }
+  ]
+}

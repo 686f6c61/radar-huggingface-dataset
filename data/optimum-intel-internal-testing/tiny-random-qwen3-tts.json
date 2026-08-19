@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "optimum-intel-internal-testing/tiny-random-qwen3-tts",
+  "slug": "optimum-intel-internal-testing-tiny-random-qwen3-tts",
+  "author": "optimum-intel-internal-testing",
+  "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3-tts",
+  "created_at": "2026-08-19T08:26:36.000Z",
+  "updated_at": "2026-08-19T10:01:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5266052,
+  "parameters_human": "5.3M",
+  "storage_bytes": 15142316,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Optimum Intel Internal Testing - Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/models",
+      "snippet": "Org profile for Optimum Intel Internal Testing on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "optimum-intel-internal-testing/tiny-random-internlm · Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-internlm",
+      "snippet": "optimum-intel-internal-testing / tiny-random-internlm like 0 Follow Optimum Intel Internal Testing 21 Safetensors internlm custom_code Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 9,120 Safetensors Model size 6.63M params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "GitHub - huggingface/optimum-intel: Optimum Intel: Accelerate ...",
+      "url": "https://github.com/huggingface/optimum-intel",
+      "snippet": "For more details on Optimum Intel inference, refer to the documentation. Note: Alternatively, an exported model can also be inferred using OpenVINO GenAI framework, that provides optimized execution methods for highly performant Generative AI."
+    },
+    {
+      "title": "tiny random flux (未知) | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/optimum-intel-internal-testing/tiny-random-flux",
+      "snippet": "tiny random flux by optimum-intel-internal-testing. 未知 open-source AI model. Tiny Random Flux is a minimal random image generation model for testing Diffusers library compatibil"
+    },
+    {
+      "title": "optimum-intel-internal-testing/tiny-random-roformer - Inferix",
+      "url": "https://inferix.co/models/optimum-intel-internal-testing/tiny-random-roformer",
+      "snippet": "tiny-random-roformer — an open model on Inferix. Explore files, versions, and one-click deployment. 1 downloads."
+    }
+  ]
+}

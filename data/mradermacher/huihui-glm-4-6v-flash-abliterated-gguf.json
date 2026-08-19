@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Huihui-GLM-4.6V-Flash-abliterated-GGUF",
   "created_at": "2026-08-17T13:52:15.000Z",
-  "updated_at": "2026-08-17T13:57:08.000Z",
+  "updated_at": "2026-08-17T15:31:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,12 +29,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 738,
   "trending_score": 0,
   "parameters": 9400279040,
   "parameters_human": "9.40B",
-  "storage_bytes": 84338219360,
-  "storage_human": "84.3 GB",
+  "storage_bytes": 89653092352,
+  "storage_human": "89.7 GB",
   "base_model": "huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
   "formats": [
     "gguf"

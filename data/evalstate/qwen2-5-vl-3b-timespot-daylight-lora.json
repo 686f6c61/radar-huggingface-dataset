@@ -5,7 +5,7 @@
   "author": "evalstate",
   "url": "https://huggingface.co/evalstate/Qwen2.5-VL-3B-TimeSpot-daylight-LoRA",
   "created_at": "2026-08-18T20:28:00.000Z",
-  "updated_at": "2026-08-18T20:44:07.000Z",
+  "updated_at": "2026-08-18T21:36:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "peft",
+    "safetensors",
     "vision-language-model",
     "lora",
     "timespot",
@@ -28,14 +29,16 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 160134668,
+  "storage_human": "160 MB",
   "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

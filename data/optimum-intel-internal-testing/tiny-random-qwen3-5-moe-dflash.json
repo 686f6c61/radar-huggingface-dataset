@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "optimum-intel-internal-testing/tiny-random-qwen3.5-moe-dflash",
+  "slug": "optimum-intel-internal-testing-tiny-random-qwen3-5-moe-dflash",
+  "author": "optimum-intel-internal-testing",
+  "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3.5-moe-dflash",
+  "created_at": "2026-08-19T10:20:42.000Z",
+  "updated_at": "2026-08-19T10:21:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20736,
+  "parameters_human": "20736",
+  "storage_bytes": 85280,
+  "storage_human": "85280 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Optimum Intel Internal Testing - Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/models",
+      "snippet": "Org profile for Optimum Intel Internal Testing on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "optimum-intel-internal-testing/tiny-random-qwen3 · Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - wgx7054/optimum-intel",
+      "url": "https://github.com/wgx7054/optimum-intel",
+      "snippet": "Optimum Intel 🤗 Optimum Intel is the interface between the 🤗 Transformers, Diffusers, Sentence Transformers and timm libraries and the different tools and libraries provided by OpenVINO to accelerate end-to-end pipelines on Intel architectures."
+    },
+    {
+      "title": "Architecture graph for optimum-intel-internal-testing/tiny-random ...",
+      "url": "https://hfviewer.com/optimum-intel-internal-testing/tiny-random-gemma4-moe",
+      "snippet": "Where the model could be executed, the graph is trace-backed; otherwise it is derived from the reviewed configuration and source code. Browse more graphs from optimum-intel-internal-testing or explore other models on the hfviewer home page."
+    },
+    {
+      "title": "optimum-intel/README.md at main · huggingface/optimum-intel",
+      "url": "https://github.com/huggingface/optimum-intel/blob/main/README.md",
+      "snippet": "For more details on Optimum Intel inference, refer to the documentation. Note: Alternatively, an exported model can also be inferred using OpenVINO GenAI framework, that provides optimized execution methods for highly performant Generative AI."
+    }
+  ]
+}

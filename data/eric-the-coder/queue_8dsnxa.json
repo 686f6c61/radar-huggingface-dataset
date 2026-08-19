@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "eric-the-coder/queue_8dsnxa",
+  "slug": "eric-the-coder-queue_8dsnxa",
+  "author": "eric-the-coder",
+  "url": "https://huggingface.co/eric-the-coder/queue_8dsnxa",
+  "created_at": "2026-08-19T08:06:47.000Z",
+  "updated_at": "2026-08-19T08:06:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r861",
+    "text-generation",
+    "conversational",
+    "base_model:vera6/affine-5g4yy75zuz-t6",
+    "base_model:finetune:vera6/affine-5g4yy75zuz-t6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234484189,
+  "storage_human": "70.2 GB",
+  "base_model": "vera6/affine-5g4yy75zuz-t6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eric-the-coder/queue_sbs-v5-v6 · Hugging Face",
+      "url": "https://huggingface.co/eric-the-coder/queue_sbs-v5-v6",
+      "snippet": "Duplicated from ammazon/Affine-5dvqtektxx-sbs-v5 eric-the-coder / queue_sbs-v5-v6 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Model Coder - microsoftlearning.github.io",
+      "url": "https://microsoftlearning.github.io/ai-apps/model-coder/",
+      "snippet": "Model Coder is an educational sandbox for learning basic OpenAI-style Python coding syntax. It lets you experiment with prompts, responses, streaming, and async patterns in a safe environment."
+    },
+    {
+      "title": "ericsalas0814-coder · GitHub",
+      "url": "https://github.com/ericsalas0814-coder",
+      "snippet": "Add an optional note Maximum 250 characters. Please don&#x27;t include any personal information such as legal names or email addresses. Markdown is supported. This note will only be visible to you. Block user Public 1 enchanted-hq enchanted-hq Public A place where community is strong and we are living proof that all we can learn together 1 zi-ai zi-ai Public 1 gemini-cli gemini-cli Public Forked ..."
+    },
+    {
+      "title": "Stop using AI to write code. Install an engineering team instead ...",
+      "url": "https://www.linkedin.com/posts/sabetti_stop-using-ai-to-write-code-install-an-engineering-activity-7495265573589786624-YBt1",
+      "snippet": "A three-tier model strategy wired into every agent: cheap models for execution, mid for orchestration, expensive for escalation. Merge Monster: a long-running session that owns the merge queue."
+    }
+  ]
+}

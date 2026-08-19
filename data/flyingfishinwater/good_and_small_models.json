@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/good_and_small_models",
+  "slug": "flyingfishinwater-good_and_small_models",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/good_and_small_models",
+  "created_at": "2023-12-19T16:45:06.000Z",
+  "updated_at": "2026-08-19T10:26:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 10,
+  "downloads_30d": 3673,
+  "trending_score": 0,
+  "parameters": 360748032,
+  "parameters_human": "360.7M",
+  "storage_bytes": 279205094057,
+  "storage_human": "279.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flyingfishinwater/good_and_small_models · Hugging Face",
+      "url": "https://huggingface.co/flyingfishinwater/good_and_small_models",
+      "snippet": "Model Description: It identifies cybersecurity risks such as open ports, outdated software, default credentials, misconfigurations, injection flaws, unencrypted services, known vulnerabilities, CSRF, insecure object references, broken authentication, sensitive data exposure, API vulnerabilities, DoS risks, and buffer overflows, enabling threat ..."
+    },
+    {
+      "title": "flyingfishinwater/good_and_small_models at main - Hugging Face",
+      "url": "https://huggingface.co/flyingfishinwater/good_and_small_models/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "flyingfishinwater/good_and_small_models - Endor Labs",
+      "url": "https://www.endorlabs.com/ai-model/flyingfishinwater-good-and-small-models",
+      "snippet": "flyingfishinwater/good_and_small_models AI model with 8433 downloads"
+    },
+    {
+      "title": "flyingfishinwater/good_and_small_models - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/flyingfishinwater-good-and-small-models",
+      "snippet": "good_and_small_models huggingface.co Url & flyingfishinwater good_and_small_models github link, click to try the AI model (good_and_small_models) demo, you can see the example of good_and_small_models huggingface.co Model."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

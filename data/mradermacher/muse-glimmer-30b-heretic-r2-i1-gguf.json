@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-heretic-r2-i1-GGUF",
   "created_at": "2026-08-17T10:17:59.000Z",
-  "updated_at": "2026-08-17T11:25:58.000Z",
+  "updated_at": "2026-08-17T13:29:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,12 +34,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6038,
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",
-  "storage_bytes": 91255212320,
-  "storage_human": "91.3 GB",
+  "storage_bytes": 303373835296,
+  "storage_human": "303.4 GB",
   "base_model": "gjtgjt/Muse-Glimmer-30B-heretic-r2",
   "formats": [
     "gguf"

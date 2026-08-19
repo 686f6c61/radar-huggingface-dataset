@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Gluttony10/ComfyUI-RH-daVinci-MagiHuman",
+  "slug": "gluttony10-comfyui-rh-davinci-magihuman",
+  "author": "Gluttony10",
+  "url": "https://huggingface.co/Gluttony10/ComfyUI-RH-daVinci-MagiHuman",
+  "created_at": "2026-03-30T10:02:05.000Z",
+  "updated_at": "2026-08-19T10:20:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "comfyui",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "yue"
+  ],
+  "tags": [
+    "comfyui",
+    "image-to-video",
+    "image-text-to-audio-video",
+    "multimodal",
+    "int8",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "yue",
+    "base_model:GAIR/daVinci-MagiHuman",
+    "base_model:finetune:GAIR/daVinci-MagiHuman",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61225440748,
+  "storage_human": "61.2 GB",
+  "base_model": "GAIR/daVinci-MagiHuman",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gluttony10/ComfyUI-RH-daVinci-MagiHuman · Hugging Face",
+      "url": "https://huggingface.co/Gluttony10/ComfyUI-RH-daVinci-MagiHuman",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gluttony10/ComfyUI-RH-daVinci-MagiHuman at main - Hugging Face",
+      "url": "https://huggingface.co/Gluttony10/ComfyUI-RH-daVinci-MagiHuman/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Gluttony10/ComfyUI-RH-daVinci-MagiHuman at main - Hugging Face",
+      "url": "https://huggingface.co/Gluttony10/ComfyUI-RH-daVinci-MagiHuman/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI-RH-daVinci-MagiHuman - GitHub",
+      "url": "https://github.com/RH-RunningHub/ComfyUI-RH-daVinci-MagiHuman",
+      "snippet": "ComfyUI nodes for daVinci-MagiHuman: generate a talking-head video with synchronized audio from a single reference image and a text prompt. The plugin wraps the official single-stream pipeline into two nodes with automatic resolution, steps, and guidance."
+    },
+    {
+      "title": "GitHub - GAIR-NLP/daVinci-MagiHuman",
+      "url": "https://github.com/GAIR-NLP/daVinci-MagiHuman",
+      "snippet": "Contribute to GAIR-NLP/daVinci-MagiHuman development by creating an account on GitHub."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/jpn-100mb-after-jpn-baseline-ckpt4000_seed3407",
   "created_at": "2026-08-17T10:30:41.000Z",
-  "updated_at": "2026-08-17T11:19:25.000Z",
+  "updated_at": "2026-08-17T12:28:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 491,
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 2996041194,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 7238753583,
+  "storage_human": "7.2 GB",
   "base_model": "fpadovani/ppt-art-lang-jpn-baseline-100mb_seed3407",
   "formats": [
     "safetensors"

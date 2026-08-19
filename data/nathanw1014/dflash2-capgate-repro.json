@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nathanw1014/dflash2-capgate-repro",
+  "slug": "nathanw1014-dflash2-capgate-repro",
+  "author": "nathanw1014",
+  "url": "https://huggingface.co/nathanw1014/dflash2-capgate-repro",
+  "created_at": "2026-08-19T10:59:51.000Z",
+  "updated_at": "2026-08-19T11:00:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "speculative-decoding",
+    "dflash",
+    "test-fixture",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1730213120,
+  "parameters_human": "1.73B",
+  "storage_bytes": 1849481472,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DFlash 2: Keep Drafting Parallel — Inco AI",
+      "url": "https://inco.ai/blog/dflash2/",
+      "snippet": "DFlash 2 is the successor to our widely deployed parallel drafter: close to 3× the speed of autoregressive decoding, with the same output. Drafters for Qwen3.8-27B and Meta&#x27;s Muse Glimmer are out today."
+    },
+    {
+      "title": "GitHub - z-lab/dflash: DFlash: Block Diffusion for Flash Speculative ...",
+      "url": "https://github.com/z-lab/dflash",
+      "snippet": "Paper | Blog | Models DFlash is a lightweight block diffusion model designed for speculative decoding. It enables efficient and high-quality parallel drafting. DFlash_demo.mp4"
+    },
+    {
+      "title": "Zhijian Liu on X: \"DFlash models have passed 3.5 million downloads on ...",
+      "url": "https://x.com/zhijianliu_/status/2089836739250807111",
+      "snippet": "How it works: a lightweight selector traces one coherent path through the drafter&#x27;s parallel candidates, and a two-tap convolution keeps the draft from decaying toward the end of the block. Full story: inco.ai/blog/dflash2/ The post is also a first look at what we&#x27;re building Show more DFlash 2: Keep Drafting Parallel From inco.ai 1"
+    },
+    {
+      "title": "[2602.06036] DFlash: Block Diffusion for Flash Speculative Decoding",
+      "url": "https://arxiv.org/abs/2602.06036",
+      "snippet": "In this paper, we introduce DFlash, a speculative decoding framework that employs a lightweight block diffusion model for parallel drafting. By generating draft tokens in a single forward pass and conditioning the draft model on context features extracted from the target model, DFlash enables efficient drafting with high-quality outputs and ..."
+    },
+    {
+      "title": "strix-halo-llamacpp/README.md at master · Nathanw1014/strix ... - GitHub",
+      "url": "https://github.com/Nathanw1014/strix-halo-llamacpp/blob/master/README.md",
+      "snippet": "Strix Halo llama.cpp toolbox (FA + MoE-prefill fixes) A ready-to-run llama.cpp for AMD Strix Halo (Ryzen AI Max+ 395 / Radeon 8060S / gfx1151), tuned for long-context, quantized-KV workloads. It bundles a set of Flash-Attention and MoE-prefill fixes plus a current GPU driver, so quantized KV cache is fast instead of a penalty."
+    }
+  ]
+}

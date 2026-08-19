@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Aasimali334/smollm2-tsundere-girlfriend",
+  "slug": "aasimali334-smollm2-tsundere-girlfriend",
+  "author": "Aasimali334",
+  "url": "https://huggingface.co/Aasimali334/smollm2-tsundere-girlfriend",
+  "created_at": "2026-08-18T16:18:41.000Z",
+  "updated_at": "2026-08-19T11:48:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 10856126926,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anima: AI Girlfriend",
+      "url": "https://girlfriend.myanima.ai/app",
+      "snippet": "iGirl Your Personal AI Girlfriend Continue with Email"
+    },
+    {
+      "title": "AI Girlfriend Chat — Fantasy, Anime & Sci-Fi Companions",
+      "url": "https://chat.crushon.ai/ai-girlfriend",
+      "snippet": "AI Girlfriend Chat — Fantasy, Anime & Sci-Fi Companions The strongest AI girlfriend characters keep their voice past message 500. CrushOn.AI runs writer-crafted personalities across anime tsundere, fantasy quests, sci-fi starships and modern grounded romance — design your own if no one fits."
+    },
+    {
+      "title": "Chat with Your Dream AI Girlfriend | Chat & Interact | Nemora.ai",
+      "url": "https://nemora.ai/chat",
+      "snippet": "Connect with your AI girlfriend on Nemora.ai. Enjoy real-time chats, receive personalized photos and messages, and experience meaningful conversations with your virtual AI Girlfriend."
+    },
+    {
+      "title": "Chat with Tsundere Girlfriend | character.ai | AI Chat, Reimagined-Your ...",
+      "url": "https://character.ai/character/uFePWOY9/tsundere-girlfriend-gwen",
+      "snippet": "Chat with Tsundere Girlfriend: ️‍🔥| Your sassy girlfriend. Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "Chat with Tsundere Girlfriend | character.ai | AI Chat, Reimagined-Your ...",
+      "url": "https://character.ai/chat/mfETKMuH51-yqauN95EQIgtaQ34wH7jqA-95ZpJybHo",
+      "snippet": "Chat with Tsundere Girlfriend: 😡 always angry. Powered by an industry leading, AI large language model (LLM)."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "barbonara/corin-kimi-k26-anti-sft",
+  "slug": "barbonara-corin-kimi-k26-anti-sft",
+  "author": "barbonara",
+  "url": "https://huggingface.co/barbonara/corin-kimi-k26-anti-sft",
+  "created_at": "2026-08-19T08:33:31.000Z",
+  "updated_at": "2026-08-19T08:36:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "base_model:adapter:moonshotai/Kimi-K2.6",
+    "base_model:moonshotai/Kimi-K2.6",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4688923008,
+  "storage_human": "4.7 GB",
+  "base_model": "moonshotai/Kimi-K2.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K2.6 - Instant · Thinking · Agent · Agent Swarm",
+      "url": "https://kimik2ai.com/kimi-k2.6/",
+      "snippet": "Explore Kimi K2.6, the advanced AI model for coding, frontend design, Agent Swarm workflows, Claw Group teamwork, documents, slides, sheets, API access, pricing, and ..."
+    },
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "Kimi K2.6 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k2-6-quickstart",
+      "snippet": "Kimi K2.6 is Kimi&#x27;s general-purpose model, possessing stronger and more stable long-term code writing capabilities, significantly improved instruction compliance and self-correction capabilities, and the ability to handle more complex software engineering tasks. It also significantly enhances the autonomous execution capabilities of the Agent."
+    },
+    {
+      "title": "Kimi K2.6 - Agentic Coding AI | 12-Hour Runs | 300-Agent Swarms",
+      "url": "https://kimi-k2.org/kimi-k26",
+      "snippet": "Kimi K2.6: Agentic CodingAt Production Scale Kimi K2.6 is the production-grade agentic coding model — engineered for 12-hour autonomous runs, 300-agent swarm coordination, and full-stack generation."
+    },
+    {
+      "title": "Kimi K2.6 - apenft-market-en.readme.io",
+      "url": "https://apenft-market-en.readme.io/reference/kimi-k26",
+      "snippet": "Overview Kimi K2.6 is Moonshot AI&#x27;s open-weight multimodal model, released on April 20, 2026. It is the third K2-class model in nine months (following K2 and K2.5). Built on a 1-trillion parameter Mixture-of-Experts architecture with 32 billion active parameters per token, K2.6 features native multi..."
+    }
+  ]
+}

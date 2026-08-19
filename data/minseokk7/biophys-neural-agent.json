@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "minseokk7/BioPhys-Neural-Agent",
+  "slug": "minseokk7-biophys-neural-agent",
+  "author": "minseokk7",
+  "url": "https://huggingface.co/minseokk7/BioPhys-Neural-Agent",
+  "created_at": "2026-08-19T09:34:29.000Z",
+  "updated_at": "2026-08-19T09:48:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "biophys_neural_agent",
+    "biophys-neural-agent",
+    "4-state-signed-zero",
+    "neuromorphic-snn",
+    "ternary-weights",
+    "bitnet-1.58b",
+    "moe-6-brain",
+    "post-quantum-cryptography",
+    "ring-lwe",
+    "landauer-reversible",
+    "topological-data-analysis",
+    "friston-free-energy",
+    "raft-consensus",
+    "crdt-lww",
+    "disruptor-lockfree",
+    "cuckoo-filter",
+    "dpll-kalman",
+    "merkle-mountain-range",
+    "autonomous-self-learning",
+    "national-korean-dictionary",
+    "neural-lossless-compression",
+    "zstandard-ans",
+    "game-vfs-projfs",
+    "2bit-deltasigma-audio",
+    "p2p-swarm-mesh",
+    "tauri-rust-svelte",
+    "36-landmark-papers",
+    "text-generation",
+    "en",
+    "ko",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "2-bit",
+    "4_state_signed_zero",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7952165532,
+  "storage_human": "8.0 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - minseokk7/BioPhys-LLM",
+      "url": "https://github.com/minseokk7/BioPhys-LLM",
+      "snippet": "Contribute to minseokk7/BioPhys-LLM development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=biophysics",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: biophysics Clear all"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NeuralAgent | AI that uses your computer at lightning speed",
+      "url": "https://www.getneuralagent.com/",
+      "snippet": "AI that uses your computer— at lightning speed. Tell NeuralAgent what you want done by text or voice—or run a saved workflow. It sees your screen and controls the mouse and keyboard across desktop and browser apps. For high-speed UI work, our Fast model executes while NeuralAgent plans, monitors, and recovers."
+    },
+    {
+      "title": "A Multi-Layered Framework for Modeling Human Biology: From Basic AI ...",
+      "url": "https://arxiv.org/abs/2508.19800",
+      "snippet": "We envision the Full-Body AI Agent as a comprehensive AI system designed to simulate, analyze, and optimize the dynamic processes of the human body across multiple biological levels. By integrating computational models, machine learning tools, and experimental platforms, this system aims to replicate and predict both physiological and pathological processes, ranging from molecules and cells to ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JuloEco/opsiom-fr-tokenizer",
+  "slug": "juloeco-opsiom-fr-tokenizer",
+  "author": "JuloEco",
+  "url": "https://huggingface.co/JuloEco/opsiom-fr-tokenizer",
+  "created_at": "2026-08-19T09:05:41.000Z",
+  "updated_at": "2026-08-19T09:06:59.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "Auto Classes · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/auto",
+      "snippet": "Auto Classes in Hugging Face simplify the process of retrieving relevant models, configurations, and tokenizers for pre-trained architectures using their names or paths."
+    },
+    {
+      "title": "Researcher Claims Working Jailbreak on Top AI Models Including GPT-5.6 ...",
+      "url": "https://cybersecuritynews.com/jailbreak-on-top-ai-models/",
+      "snippet": "A well-known AI red teamer claims to have developed a universal jailbreak that works against leading large language models, including heavily guarded flagships such as GPT-5.6 Sol, Claude Opus 5, and Fable."
+    },
+    {
+      "title": "GitHub - JuloEco/Opix_AI: L&#x27;IA d&#x27;Opix · GitHub",
+      "url": "https://github.com/JuloEco/Opix_AI",
+      "snippet": "L&#x27;IA d&#x27;Opix. Contribute to JuloEco/Opix_AI development by creating an account on GitHub."
+    },
+    {
+      "title": "GPT Tokenizer Playground - Visualize Tokens for OpenAI Models",
+      "url": "https://gpt-tokenizer.dev/",
+      "snippet": "Interactive tokenizer playground for OpenAI models. Count tokens, estimate pricing, and learn how tokenization shapes prompts."
+    }
+  ]
+}

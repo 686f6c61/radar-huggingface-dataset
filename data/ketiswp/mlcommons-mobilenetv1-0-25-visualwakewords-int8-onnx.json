@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/mlcommons-MobileNetV1-0.25-VisualWakeWords-int8-onnx",
   "created_at": "2026-08-19T01:57:35.000Z",
-  "updated_at": "2026-08-19T02:10:58.000Z",
+  "updated_at": "2026-08-19T07:01:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "tflite",
     "onnxruntime",
     "int8",
     "image-classification",
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 357638,
-  "storage_human": "357638 B",
+  "storage_bytes": 3840226,
+  "storage_human": "4 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0818",
+  "slug": "teru00801-hawks-qwen3_5-35b-a3b-mlx-4bit-0818",
+  "author": "teru00801",
+  "url": "https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0818",
+  "created_at": "2026-08-19T07:28:28.000Z",
+  "updated_at": "2026-08-19T07:33:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5419330688,
+  "parameters_human": "5.42B",
+  "storage_bytes": 19529015154,
+  "storage_human": "19.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0709 · Hugging Face",
+      "url": "https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0709",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0601 · Hugging Face",
+      "url": "https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0601",
+      "snippet": "This model teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0601 was converted to MLX format from teru00801/hawks-qwen3_5-35b-a3b-merged-0601 using mlx-lm version 0.31.3."
+    },
+    {
+      "title": "GitHub - algtrd24/qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/algtrd24/qwen3.5",
+      "snippet": "2026-02-24: Qwen3.5-122B-A10B, Qwen3.5-35B-A3B, and Qwen3.5-27B are released. Check out the model cards on Hugging Face Hub or ModelScope for more information! 2026-02-16: We release Qwen3.5. The first release includes a 397B-A17B MoE model. Read more on our release blog. More sizes are coming & Happy Chinese New Year!"
+    },
+    {
+      "title": "qwen3.5:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:35b-a3b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "M-hilani",
   "url": "https://huggingface.co/M-hilani/Qwen2.5-Coder-7B-EP-1N-500",
   "created_at": "2026-08-18T18:48:49.000Z",
-  "updated_at": "2026-08-18T18:48:56.000Z",
+  "updated_at": "2026-08-19T06:39:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "peft",
+    "safetensors",
     "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
     "lora",
     "sft",
@@ -25,14 +26,16 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 11428792,
-  "storage_human": "11 MB",
+  "storage_bytes": 2276514256,
+  "storage_human": "2.3 GB",
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": true,
   "gated": false,
   "removed": false,

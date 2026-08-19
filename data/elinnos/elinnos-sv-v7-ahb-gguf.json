@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Elinnos/elinnos-sv-v7-ahb-GGUF",
+  "slug": "elinnos-elinnos-sv-v7-ahb-gguf",
+  "author": "Elinnos",
+  "url": "https://huggingface.co/Elinnos/elinnos-sv-v7-ahb-GGUF",
+  "created_at": "2026-06-23T16:19:51.000Z",
+  "updated_at": "2026-08-19T04:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "quantized",
+    "hardware-design",
+    "systemverilog",
+    "amba-ahb",
+    "vlsi",
+    "rtl",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 28019451616,
+  "storage_human": "28.0 GB",
+  "base_model": "Elinnos/elinnos-sv-v7-ahb-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elinnos-sv-v7-ahb-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Elinnos/elinnos-sv-v7-ahb-GGUF",
+      "snippet": "ELINNOS SV-v7-AHB — GGUF Quantized GGUF quantized versions of Elinnos/elinnos-sv-v7-ahb-merged, the merged ELINNOS SV-v7-AHB model fine-tuned on AMBA AHB hardware design tasks."
+    },
+    {
+      "title": "ELINNOS SV-v7-AHB - Hugging Face",
+      "url": "https://huggingface.co/Elinnos/elinnos-sv-v7-ahb",
+      "snippet": "ELINNOS (Electronic Language Intelligence for Neural Network-Optimized Systems) is a series of incrementally fine-tuned language models specialized for VLSI/RTL hardware design, SystemVerilog, AMBA AHB protocol, and Pulse HDL workflows."
+    },
+    {
+      "title": "Elinnos/elinnos-sv-v7-ahb API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Elinnos/elinnos-sv-v7-ahb",
+      "snippet": "Run Elinnos/elinnos-sv-v7-ahb with FriendliAI inference. ELINNOS (Electronic Language Intelligence for Neural Network-Optimized Systems) is a series of…"
+    },
+    {
+      "title": "pkelinnos/elinnos-sv-v7-ahb - ollama.com",
+      "url": "https://ollama.com/pkelinnos/elinnos-sv-v7-ahb:latest",
+      "snippet": "You are Elinnos, a hardware design, verification, and reasoning assistant specialising in SystemVeri"
+    },
+    {
+      "title": "elinnos - GitHub",
+      "url": "https://github.com/elinnos",
+      "snippet": "GitHub is where elinnos builds software."
+    }
+  ]
+}

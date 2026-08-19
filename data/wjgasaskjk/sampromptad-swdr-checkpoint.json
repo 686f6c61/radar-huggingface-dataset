@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wjgasaskjk/SAMPromptAD-SWDR-checkpoint",
+  "slug": "wjgasaskjk-sampromptad-swdr-checkpoint",
+  "author": "wjgasaskjk",
+  "url": "https://huggingface.co/wjgasaskjk/SAMPromptAD-SWDR-checkpoint",
+  "created_at": "2026-08-19T09:26:15.000Z",
+  "updated_at": "2026-08-19T09:45:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 485125923,
+  "storage_human": "485 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - guangyu567/SAMPromptAD-SWDR: Few-shot Steel Tube Weld Anomaly ...",
+      "url": "https://github.com/guangyu567/SAMPromptAD-SWDR",
+      "snippet": "SAMPromptAD-SWDR Few-shot Steel Tube Weld Anomaly Detection based on SAM and prompt learning"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "SAMPromptAD-SWDR/STWAD/README.md at main · guangyu567 ... - GitHub",
+      "url": "https://github.com/guangyu567/SAMPromptAD-SWDR/blob/main/STWAD/README.md",
+      "snippet": "Few-shot Steel Tube Weld Anomaly Detection based on SAM and prompt learning - guangyu567/SAMPromptAD-SWDR"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt. Today, there are thousands of models, fine tuned to excel at specific styles, genres, or themes. Model Formats"
+    }
+  ]
+}

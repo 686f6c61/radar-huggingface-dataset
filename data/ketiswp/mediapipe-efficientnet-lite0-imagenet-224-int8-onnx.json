@@ -5,7 +5,7 @@
   "author": "ketiswp",
   "url": "https://huggingface.co/ketiswp/mediapipe-EfficientNet-Lite0-ImageNet-224-int8-onnx",
   "created_at": "2026-08-19T01:58:19.000Z",
-  "updated_at": "2026-08-19T02:11:26.000Z",
+  "updated_at": "2026-08-19T07:02:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -13,8 +13,10 @@
   "languages": [],
   "tags": [
     "onnx",
+    "tflite",
     "onnxruntime",
     "int8",
+    "uint8",
     "image-classification",
     "license:apache-2.0",
     "region:us"
@@ -24,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5148096,
-  "storage_human": "5 MB",
+  "storage_bytes": 18624901,
+  "storage_human": "19 MB",
   "base_model": null,
   "formats": [
     "onnx"

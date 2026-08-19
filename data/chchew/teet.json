@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "CHCHEW/TeeT",
+  "slug": "chchew-teet",
+  "author": "CHCHEW",
+  "url": "https://huggingface.co/CHCHEW/TeeT",
+  "created_at": "2026-08-19T11:04:01.000Z",
+  "updated_at": "2026-08-19T11:04:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offres Teeth model - Site officiel Amazon.fr®",
+      "url": "https://duckduckgo.com/y.js?ad_domain=amazon.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=r%2D5JiXua5m0jCxJZ9Tcnie3J6KPfPncB7uPD0cgnpqcheOGHtkg3BzxpegZK36AxTEcD4dg7%2DW5RX2GRPJTAUm28yygSogniI%2Dczpw0xwTi0I5wYj4qFCyJNnF6VN8ZWZ42rfrUurfSJxEbQ88UwM7YtTTyre53xGHLElm10ZS4.QdlU23klj_vXBsvUAqorPA&rut=40d5f140ab402e613198f6b45f1c2dfa9bd282b48398c68acee56ce3ca89e740&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De83OD5yyFspfA9Ah0zIWVMcjVUCUwfatykxtWsCvQ8DrzgCT4vTnXmMyhDXDROP6RT900H%2DSY9I2KwdgqfPCrQ8x9A0LRHZUKTixsKB1mfkFjDkJYOIpp5mlKCuJItJdOdDCzyu2sIWUWwEGsgh0yhFMzQe9nBzRYWPf3wQVaY1qlTiuEpkQmYffxkQfvfS1rMFFtcNrfypVqAvaRt2ia7CrxUK4mvtno0sD4KhJ8k%2DBWhkpGX%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmZyJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkdGVldGglMmJtb2RlbCUyNmluZGV4JTNkYXBzJTI2dGFnJTNkaHlkZnJtc24tMjElMjZyZWYlM2RwZF9zbF81NmQ5emw5dmJsX3AlMjZhZGdycGlkJTNkMTM1NTY5ODc3NDIzNzY3MSUyNmh2YWRpZCUzZDg0NzMxNjAxMjQ4NzI3JTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkMTI2MzI1JTI2aHZ0YXJnaWQlM2Rrd2QtODQ3MzE3MDA4MTcyNDMlM2Fsb2MtNjYlMjZoeWRhZGNyJTNkMjk1ODVfMjM1MzA3OSUyNm1jaWQlM2QlMjZtc2Nsa2lkJTNkODkyNjhlNDg1ZjAwMTM4NzIyODdlNGNkYzg2OGI2ZGE%26rlid%3D89268e485f0013872287e4cdc868b6da&vqd=4-84524789931312355938993529459834833746&iurl=%7B1%7DIG%3D7D6F913DC7974E11B106CABEAA201F8D%26CID%3D2F1C67680BDF6E93079470D20AA46F90%26ID%3DDevEx%2C5037.1",
+      "snippet": "Des milliers de produits : lisez les avis des clients et trouvez les meilleurs vendeurs. Large sélection de produits high-tech. Livraison gratuite (voir cond)."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Chutes | Serverless AI Compute",
+      "url": "https://chutes.ai/",
+      "snippet": "Deploy, run and scale any AI model in seconds. Try directly through our platform, or use our easy-to-use API in seconds."
+    },
+    {
+      "title": "Fine-tuning Whisper for my Chinese Dialect - Teochew",
+      "url": "https://meta-quantum.today/?p=2353",
+      "snippet": "Fine-tuning Whisper for Teochew, a less-known Chinese dialect, can improve speech recognition accuracy. Here&#x27;s how to gather data and select models."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    }
+  ]
+}

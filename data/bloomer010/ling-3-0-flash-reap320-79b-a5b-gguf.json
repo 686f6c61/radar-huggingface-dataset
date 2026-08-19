@@ -5,7 +5,7 @@
   "author": "bloomer010",
   "url": "https://huggingface.co/bloomer010/Ling-3.0-flash-REAP320-79B-A5B-GGUF",
   "created_at": "2026-08-15T21:06:36.000Z",
-  "updated_at": "2026-08-16T22:30:02.000Z",
+  "updated_at": "2026-08-18T22:27:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 186,
+  "downloads_30d": 527,
   "trending_score": 0,
   "parameters": 81035300128,
   "parameters_human": "81.04B",

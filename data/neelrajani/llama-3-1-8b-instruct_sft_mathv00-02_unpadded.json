@@ -5,7 +5,7 @@
   "author": "NeelRajani",
   "url": "https://huggingface.co/NeelRajani/Llama-3.1-8B-Instruct_SFT_mathv00.02_unpadded",
   "created_at": "2026-08-18T21:33:45.000Z",
-  "updated_at": "2026-08-19T00:01:51.000Z",
+  "updated_at": "2026-08-19T04:57:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 265,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 16077779689,
-  "storage_human": "16.1 GB",
+  "storage_bytes": 48198892441,
+  "storage_human": "48.2 GB",
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"

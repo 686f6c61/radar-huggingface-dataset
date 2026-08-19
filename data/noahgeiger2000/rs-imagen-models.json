@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "noahgeiger2000/rs-imagen-models",
+  "slug": "noahgeiger2000-rs-imagen-models",
+  "author": "noahgeiger2000",
+  "url": "https://huggingface.co/noahgeiger2000/rs-imagen-models",
+  "created_at": "2026-07-28T21:33:56.000Z",
+  "updated_at": "2026-08-19T08:32:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 218745552432,
+  "storage_human": "218.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "noahgeiger2000/rs-imagen-models · Hugging Face",
+      "url": "https://huggingface.co/noahgeiger2000/rs-imagen-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "noahgeiger2000/rs-imagen-models · Upload ideogram4_fp8_scaled.safetensors",
+      "url": "https://huggingface.co/noahgeiger2000/rs-imagen-models/discussions/1",
+      "snippet": "Duplicated from jjbRs/rs-imagen-models noahgeiger2000 / rs-imagen-models like 0 GGUF conversational Model card FilesFiles and versions xet Community 2 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "MAI-Image-2.5 | Microsoft AI",
+      "url": "https://microsoft.ai/models/mai-image-2-5/",
+      "snippet": "1000 1050 1100 1150 1200 1250 1300 1103 1086 1096 1100 1104 1094 1070 1093 1202 1175 1178 1178 1176 1208 1174 1182 1248 1262 1262 1268 1260 1265 1281 1257 MAI-Image-1 MAI-Image-2 MAI-Image-2.5 Outperforms or matches comparable models across most categories, with particularly strong results in photorealism."
+    },
+    {
+      "title": "Image Model Comparisons - Artificial Analysis",
+      "url": "https://artificialanalysis.ai/image/models",
+      "snippet": "Compare image quality, generation time, and pricing across text to image and image editing models, plus text to image API providers."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "prakrati123/nli-distilroberta-base-v2",
+  "slug": "prakrati123-nli-distilroberta-base-v2",
+  "author": "prakrati123",
+  "url": "https://huggingface.co/prakrati123/nli-distilroberta-base-v2",
+  "created_at": "2026-08-19T09:55:38.000Z",
+  "updated_at": "2026-08-19T09:55:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:6411",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/nli-distilroberta-base-v2",
+    "base_model:finetune:sentence-transformers/nli-distilroberta-base-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82118400,
+  "parameters_human": "82.1M",
+  "storage_bytes": 328485128,
+  "storage_human": "328 MB",
+  "base_model": "sentence-transformers/nli-distilroberta-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sentence-transformers/nli-distilroberta-base-v2 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/nli-distilroberta-base-v2",
+      "snippet": "This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "sentence-transformers/nli-distilroberta-base-v2 at main",
+      "url": "https://huggingface.co/sentence-transformers/nli-distilroberta-base-v2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nli-distilroberta-base-v2 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/nli-distilroberta-base-v2/",
+      "snippet": "What is nli-distilroberta-base-v2? nli-distilroberta-base-v2 is a specialized sentence embedding model built on the DistilRoBERTa architecture. It maps sentences and paragraphs to a 768-dimensional dense vector space, making it particularly effective for tasks like semantic search and clustering."
+    },
+    {
+      "title": "sentence-transformers/nli-distilroberta-base-v2 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/26673",
+      "snippet": "This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "sentence-transformers/nli-distilroberta-base-v2: Model synced from ...",
+      "url": "https://dev.modelhub.org.cn/sentence-transformers/nli-distilroberta-base-v2",
+      "snippet": "sentence-transformers/nli-distilroberta-base-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    }
+  ]
+}

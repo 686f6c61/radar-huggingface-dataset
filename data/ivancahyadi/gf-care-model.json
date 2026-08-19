@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ivancahyadi/gf-care-model",
+  "slug": "ivancahyadi-gf-care-model",
+  "author": "ivancahyadi",
+  "url": "https://huggingface.co/ivancahyadi/gf-care-model",
+  "created_at": "2026-08-19T07:49:43.000Z",
+  "updated_at": "2026-08-19T07:49:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TjengIvanCahyadi/gf-care: GF-Care (Glaucoma Fundus - GitHub",
+      "url": "https://github.com/TjengIvanCahyadi/gf-care",
+      "snippet": "GF-Care (Glaucoma Fundus - Cup-to-disc ratio Assessment for Retinal Evaluation) A deep learning-based system for automatic segmentation of the optic disc and cup from fundus images, enabling cup-to..."
+    },
+    {
+      "title": "gf-care/notebooks at main · TjengIvanCahyadi/gf-care · GitHub",
+      "url": "https://github.com/TjengIvanCahyadi/gf-care/tree/main/notebooks",
+      "snippet": "GF-Care (Glaucoma Fundus - Cup-to-disc ratio Assessment for Retinal Evaluation) A deep learning-based system for automatic segmentation of the optic disc and cup from fundus images, enabling cup-to-disc ratio (CDR) calculation to support early glaucoma detection. - gf-care/notebooks at main · TjengIvanCahyadi/gf-care"
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    },
+    {
+      "title": "Ivancahyadi (@ivancahyadi) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ivancahyadi/",
+      "snippet": "8,084 Followers, 349 Following, 364 Posts - Ivancahyadi (@ivancahyadi) on Instagram: \"You&#x27;ll find something when you learn something! || Twitter : @cahyadi17\""
+    },
+    {
+      "title": "HeraHaven",
+      "url": "https://herahaven.ai/create-girlfriend",
+      "snippet": "User Verification"
+    }
+  ]
+}

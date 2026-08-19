@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leeyunjai/yolo11-number-operator",
+  "slug": "leeyunjai-yolo11-number-operator",
+  "author": "leeyunjai",
+  "url": "https://huggingface.co/leeyunjai/yolo11-number-operator",
+  "created_at": "2024-10-08T01:08:53.000Z",
+  "updated_at": "2026-08-19T10:58:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "object-detect",
+    "yolo11",
+    "yolov11",
+    "object-detection",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133662821,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leeyunjai/yolo11-number-operator · Hugging Face",
+      "url": "https://huggingface.co/leeyunjai/yolo11-number-operator",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · leeyunjai/yolo11-number-operator at main",
+      "url": "https://huggingface.co/leeyunjai/yolo11-number-operator/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open-source yolo11-number-operator model - Accurately identify numbers ...",
+      "url": "https://model.aibase.com/models/details/1915775337998475266",
+      "snippet": "🚀 Number and Operator Detection Based on YOLO11x This project provides a PyTorch-exported model using the YOLO11x architecture to detect numbers (0 - 10) and basic arithmetic operators (+, -, ×, ÷, =) in images."
+    },
+    {
+      "title": "LooYut/Yolov11: Ultralytics YOLO11 - GitHub",
+      "url": "https://github.com/LooYut/Yolov11",
+      "snippet": "Experience seamless AI with Ultralytics HUB ⭐, the all-in-one solution for data visualization, YOLO11 🚀 model training and deployment, without any coding. Transform images into actionable insights and bring your AI visions to life with ease using our cutting-edge platform and user-friendly Ultralytics App. Start your journey for Free now!"
+    },
+    {
+      "title": "开源yolo11-number-operator模型 - 精准识别图像数字及加减乘除运算符号",
+      "url": "https://model.aibase.com/zh/models/details/1915775337998475266",
+      "snippet": "该模型采用YOLO11x架构，针对数字和运算符检测任务进行了优化训练，能够准确识别并定位图像中的数学符号。"
+    }
+  ]
+}

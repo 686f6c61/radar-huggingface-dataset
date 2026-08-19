@@ -5,7 +5,7 @@
   "author": "LSW142857",
   "url": "https://huggingface.co/LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt23",
   "created_at": "2026-08-15T14:25:08.000Z",
-  "updated_at": "2026-08-15T14:29:39.000Z",
+  "updated_at": "2026-08-17T20:50:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 9653104368,
   "parameters_human": "9.65B",

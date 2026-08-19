@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "APMIC/ACE-1-24B-NVFP4",
+  "slug": "apmic-ace-1-24b-nvfp4",
+  "author": "APMIC",
+  "url": "https://huggingface.co/APMIC/ACE-1-24B-NVFP4",
+  "created_at": "2026-08-10T02:53:11.000Z",
+  "updated_at": "2026-08-19T10:54:53.000Z",
+  "license": "apmic-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "reasoning",
+    "chain-of-thought",
+    "nvfp4",
+    "traditional-chinese",
+    "text-generation",
+    "zh",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "APMIC/ACE-1-24B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/APMIC/ACE-1-24B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ACE - apmic.ai",
+      "url": "https://www.apmic.ai/en/ace",
+      "snippet": "ACE-1-24B is a proprietary Traditional Chinese reasoning model developed by APMIC. Featuring a 65K long-context window, it is specifically optimized for enterprise applications. Trained on three major Traditional Chinese datasets—covering mathematical logic, daily reasoning, and tool instructions—it supports Chain of Thought (CoT) reasoning."
+    },
+    {
+      "title": "Ace 系列 | Apmic 繁中推理模型、多模態模型",
+      "url": "https://www.apmic.ai/ace",
+      "snippet": "ACE-1-24B ACE‑1‑24B 是 APMIC 自研的繁體中文推理模型，具備 65K 長上下文能力，特別針對企業應用進行優化。 訓練資料涵蓋三大繁中資料集：數理邏輯、日常推理與工具指令，支援 Chain of Thought 推理鏈，能在地端環境中高效部署，實現穩定回應與知識整合。"
+    },
+    {
+      "title": "APMIC: Model Finetuning & Distillation Service",
+      "url": "https://www.apmic.ai/en/sovereignty-model",
+      "snippet": "ACE-1 24B ACE-1-24B 是由 APMIC AI 團隊以 Mistral 24B 為基礎，結合自主研發推理技術打造的頂尖繁體中文模型。 憑藉卓越的性能，本模型在 AIEC 榜單中強勢奪下第五名，更穩坐開源模型第一名的冠軍寶座!"
+    },
+    {
+      "title": "APMIC&#x27;s ACE-1-24B model has passed the AIEC evaluation, becoming one of ...",
+      "url": "https://www.apmic.ai/en/news/ace-1-24b-get-aiec",
+      "snippet": "October 15, 2025, Taipei－APMIC, A global pioneer in delivering enterprise-grade AI solutions, announced today (15) that its Traditional Chinese language model, ACE-1-24B, has officially passed the Trustworthy AI evaluation conducted by the AIEC (Artificial Intelligence Evaluation Center) under the guidance of the Ministry of Digital Affairs, and has obtained formal certification reports. ACE ..."
+    }
+  ]
+}

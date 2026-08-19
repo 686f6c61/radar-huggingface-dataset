@@ -5,7 +5,7 @@
   "author": "RappleML",
   "url": "https://huggingface.co/RappleML/Raisin-5B",
   "created_at": "2026-08-18T15:37:21.000Z",
-  "updated_at": "2026-08-18T16:16:10.000Z",
+  "updated_at": "2026-08-19T01:30:04.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 3821079552,
   "parameters_human": "3.82B",

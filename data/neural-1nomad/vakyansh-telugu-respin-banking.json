@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Neural-1Nomad/vakyansh-telugu-respin-banking",
+  "slug": "neural-1nomad-vakyansh-telugu-respin-banking",
+  "author": "Neural-1Nomad",
+  "url": "https://huggingface.co/Neural-1Nomad/vakyansh-telugu-respin-banking",
+  "created_at": "2026-08-19T06:38:20.000Z",
+  "updated_at": "2026-08-19T06:38:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vakyansh Open Source Models - GitHub",
+      "url": "https://github.com/Open-Speech-EkStep/vakyansh-models",
+      "snippet": "Vakyansh-Conformer-SSL This model was pre-trained using Nemo toolkit with 34,000 hours unlabeled audio in 39 Indian languages. This includes 15,000 hours of news recordings available on the internet, 10,000 hours of YouTube audios and other audio data. In addition, 9,000 hours of Indian English ..."
+    },
+    {
+      "title": "GitHub Pages - Vakyansh",
+      "url": "https://open-speech-ekstep.github.io/",
+      "snippet": "User feedback from the inference service is also incorporated for model improvisations. Vakyansh Technical Overview The Developer documentation provides you with a complete set of guidelines which you need to: Install Vakyansh Configure Vakyansh Customize Vakyansh Extend Vakyansh Contribute to Vakyansh Discussion Connect with community on Gitter"
+    },
+    {
+      "title": "vakyansh-models/README.md at main · Open-Speech-EkStep ... - GitHub",
+      "url": "https://github.com/Open-Speech-EkStep/vakyansh-models/blob/main/README.md?plain=1",
+      "snippet": "Open source speech to text models for Indic Languages - vakyansh-models/README.md at main · Open-Speech-EkStep/vakyansh-models"
+    },
+    {
+      "title": "sridhar1ga/telugu_dialect_classifier_on_vakyansh-wav2vec2-telugu-tem ...",
+      "url": "https://huggingface.co/sridhar1ga/telugu_dialect_classifier_on_vakyansh-wav2vec2-telugu-tem-100",
+      "snippet": "PyTorch TensorBoard wav2vec2 Generated from Trainer Model card FilesFiles and versionsMetricsTraining metrics Community 1 Train Deploy Use this model telugu_dialect_classifier_on_vakyansh-wav2vec2-telugu-tem-100 Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training ..."
+    },
+    {
+      "title": "AI4Bharat Models",
+      "url": "https://models.ai4bharat.org/",
+      "snippet": "The model is then benchmarked over a human annotated testset and multiple other publicly available Indian NER datasets. The 11 languages covered by IndicNER are: Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "wank3r/DR34ML4Y_AIO_NSFW_LTX23",
+  "slug": "wank3r-dr34ml4y_aio_nsfw_ltx23",
+  "author": "wank3r",
+  "url": "https://huggingface.co/wank3r/DR34ML4Y_AIO_NSFW_LTX23",
+  "created_at": "2026-08-19T06:16:16.000Z",
+  "updated_at": "2026-08-19T06:21:34.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1940553800,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wank3r/DR34ML4Y_AIO_NSFW_LTX23 · Hugging Face",
+      "url": "https://huggingface.co/wank3r/DR34ML4Y_AIO_NSFW_LTX23",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DR34ML4Y - All-In-One NSFW (WAN/LTX2)",
+      "url": "https://civitai.red/models/1811313/dr34ml4y-all-in-one-nsfw-wanltx2",
+      "snippet": "DR34ML4Y by DR34MSC4PE This LoRA, incredibly, manages to handle ALL of our specialty LoRA concepts - Double/Single Blowjobs, Missionary, Reverse (and regular) Cowgirl, Doggy, wrapped in one model!"
+    },
+    {
+      "title": "wank3r/DR34ML4Y_AIO_NSFW_LTX23-bucket - Storage Bucket",
+      "url": "https://huggingface.co/buckets/wank3r/DR34ML4Y_AIO_NSFW_LTX23-bucket",
+      "snippet": "Model description Note - the same rules around prompting apply as the PREVIEW and LTX 2.3 in general. Doggy still has some limitations as training is still in progress on this version. Expect improvements soon!"
+    },
+    {
+      "title": "DR34ML4Y - All-In-One NSFW (WAN/LTX2) - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/1811313?modelVersionId=2176505",
+      "snippet": "Download DR34ML4Y - All-In-One NSFW (WAN/LTX2) - LORA for Wan Video 2.2 I2V-A14B by c0ur4ge. Free AI model download from CivArchive."
+    },
+    {
+      "title": "LTX2.3 All in one [SFW / NSFW] - LTX Director + ID LoRA + ControlNet ...",
+      "url": "https://civitai.com/models/2553704/ltx23-all-in-one-sfw-nsfw-ltx-director-id-lora-controlnet-detailer-upscaler-interpolator",
+      "snippet": "LTX Director support GGUF support SFW / NSFW support NSFW prompt enhancer Text, image, audio, and ControlNet-driven video generation LoRA support (character, style, and voice via ID LoRA) Custom or AI-generated audio with automatic syncing Reference image + unlimited keyframes (FFLF animation control) ControlNet video guidance with hybrid ..."
+    }
+  ]
+}

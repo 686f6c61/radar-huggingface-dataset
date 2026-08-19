@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-geometry-expert-step100",
+  "slug": "saraswathy-vlm-mix-geometry-expert-step100",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-geometry-expert-step100",
+  "created_at": "2026-08-19T10:51:38.000Z",
+  "updated_at": "2026-08-19T10:51:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3-vl",
+    "vision-language-model",
+    "vlm-mix",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 528557784,
+  "storage_human": "529 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2605.16713] GeoWorld-VLM: Geometry from World Models for Vision ...",
+      "url": "https://arxiv.org/abs/2605.16713",
+      "snippet": "We introduce GeoWorld-VLM, a VLM-side distillation framework that transfers geometric structure from frozen camera-conditioned video world models into VLMs. GeoWorld-VLM fine-tunes only the image encoder and multimodal projector, aligning post-projector image features with intermediate world-model representations while leaving the main backbone ..."
+    },
+    {
+      "title": "saraswathyamjith (Saraswathy Amjith) · GitHub",
+      "url": "https://github.com/saraswathyamjith",
+      "snippet": "Saraswathy Amjith MIT &#x27;27 · Computer Science & Mathematics I&#x27;m an undergraduate researcher at MIT CSAIL working on language model reasoning, adversarial self-play, and in-context learning. My research focuses on teaching LLMs to recover from flawed reasoning and adapt to novel domains without fine-tuning."
+    },
+    {
+      "title": "GitHub - Harvard-AI-and-Robotics-Lab/GeoWorld-VLM: [arXiv 2026 ...",
+      "url": "https://github.com/Harvard-AI-and-Robotics-Lab/GeoWorld-VLM/",
+      "snippet": "Given an input image and a spatial reasoning question, GeoWorld-VLM enhances the spatial understanding of standard VLMs by injecting world-model priors at the feature-map level. Compared with original VLM features, GeoWorld-VLM produces more geometry-aware representations that improve spatial grounding and answer accuracy across diverse benchmarks. Figure 1. Overview. GeoWorld-VLM injects ..."
+    },
+    {
+      "title": "Saraswathy Amjith - saraamjith.com",
+      "url": "https://saraamjith.com/saraamjith.html",
+      "snippet": "A self-questioning framework that trains a VLM to decompose compositional visual questions into sub-questions using GRPO, without any reasoning demonstrations. Applied to a 3B-parameter model on CLEVR and A-OKVQA, both self-questioning and standard RL substantially improve accuracy over the untrained model."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

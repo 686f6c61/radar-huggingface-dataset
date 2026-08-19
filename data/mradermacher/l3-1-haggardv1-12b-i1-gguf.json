@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/L3.1-Haggardv1-12B-i1-GGUF",
   "created_at": "2026-08-17T08:00:19.000Z",
-  "updated_at": "2026-08-17T09:26:10.000Z",
+  "updated_at": "2026-08-17T10:18:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1911,
   "trending_score": 0,
   "parameters": 11956277312,
   "parameters_human": "11.96B",
-  "storage_bytes": 88913434176,
-  "storage_human": "88.9 GB",
+  "storage_bytes": 137526433856,
+  "storage_human": "137.5 GB",
   "base_model": "kromcomp/L3.1-Haggardv1-12B",
   "formats": [
     "gguf"

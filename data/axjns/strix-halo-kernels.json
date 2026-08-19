@@ -5,7 +5,7 @@
   "author": "axjns",
   "url": "https://huggingface.co/axjns/strix-halo-kernels",
   "created_at": "2026-08-17T13:28:27.000Z",
-  "updated_at": "2026-08-17T13:28:28.000Z",
+  "updated_at": "2026-08-17T14:05:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,6 +20,8 @@
     "gfx1151",
     "rmsnorm",
     "geglu",
+    "flash-attention",
+    "attention",
     "license:apache-2.0",
     "region:us"
   ],

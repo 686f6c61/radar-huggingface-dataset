@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "theforecastingcompany/t0-alpha",
+  "slug": "theforecastingcompany-t0-alpha",
+  "author": "theforecastingcompany",
+  "url": "https://huggingface.co/theforecastingcompany/t0-alpha",
+  "created_at": "2026-06-09T20:45:44.000Z",
+  "updated_at": "2026-08-19T09:01:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "tfc-t0",
+  "languages": [],
+  "tags": [
+    "tfc-t0",
+    "safetensors",
+    "time-series",
+    "forecasting",
+    "probabilistic-forecasting",
+    "foundation-models",
+    "pretrained-models",
+    "covariates",
+    "pytorch",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "time-series-forecasting",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 36,
+  "downloads_30d": 11927,
+  "trending_score": 0,
+  "parameters": 101641541,
+  "parameters_human": "101.6M",
+  "storage_bytes": 820100235,
+  "storage_human": "820 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "fev-bench",
+      "metric": "Skill score",
+      "value": 42.2
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "GIFT-Eval",
+      "metric": "CRPS",
+      "value": 0.4941
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "GIFT-Eval",
+      "metric": "MASE",
+      "value": 0.724
+    }
+  ],
+  "sources": [
+    {
+      "title": "theforecastingcompany/t0-alpha · Hugging Face",
+      "url": "https://huggingface.co/theforecastingcompany/t0-alpha",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "theforecastingcompany/t0-alpha at main - Hugging Face",
+      "url": "https://huggingface.co/theforecastingcompany/t0-alpha/tree/main",
+      "snippet": "theforecastingcompany / t0-alpha like 12 Follow The Forecasting Company 15 Time Series Forecasting Safetensors PyTorch tfc-t0 time-series forecasting probabilistic-forecasting foundation-models pretrained-models covariates model_hub_mixin pytorch_model_hub_mixin Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community 1 Copy to bucket new main t0-alpha 411 MB ..."
+    },
+    {
+      "title": "GitHub - theforecastingcompany/tfc-t0: An open-weights time-series ...",
+      "url": "https://github.com/theforecastingcompany/tfc-t0",
+      "snippet": "Open-weights time-series forecasting foundation model from The Forecasting Company. t0 is a transformer-based model that produces probabilistic multi-horizon forecasts and natively operates on multiple covariates. t0-alpha is our first iteration of the model. You can use t0 on Retrocast, our platform for forecasting on your own data. You can also compare forecast across different open-weight ..."
+    },
+    {
+      "title": "Introducing t0-alpha Time-Series Forecasting Model",
+      "url": "https://www.linkedin.com/posts/the-forecasting-company_forecasting-opensource-timeseries-activity-7474832069559369728-R8-q",
+      "snippet": "Today we&#x27;re proud to be releasing t0-alpha, our first public forecasting model. t0-alpha is a 102M-parameter transformer built for time-series forecasting, released under Apache 2.0. It handles ..."
+    },
+    {
+      "title": "The Forecasting Company",
+      "url": "https://www.theforecastingcompany.com/en/",
+      "snippet": "Something new in forecasting. A next-generation model designed to deliver precise predictions across any time series data."
+    }
+  ]
+}

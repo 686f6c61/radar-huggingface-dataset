@@ -5,7 +5,7 @@
   "author": "visible-cx",
   "url": "https://huggingface.co/visible-cx/LFM2.5-1.2B-CoreAI",
   "created_at": "2026-08-17T11:16:55.000Z",
-  "updated_at": "2026-08-17T22:35:50.000Z",
+  "updated_at": "2026-08-17T23:37:29.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

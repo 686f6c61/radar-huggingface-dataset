@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LiconStudio/Licon-Live-Talk",
+  "slug": "liconstudio-licon-live-talk",
+  "author": "LiconStudio",
+  "url": "https://huggingface.co/LiconStudio/Licon-Live-Talk",
+  "created_at": "2026-08-19T08:52:21.000Z",
+  "updated_at": "2026-08-19T09:49:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268435456,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiconStudio (LiconStudio) - Hugging Face",
+      "url": "https://huggingface.co/LiconStudio",
+      "snippet": "LiconStudio/LTX-2.3-Multiple-Subject-Reference: It it possible to remove the PromptRelay in workflow ? new activity 5 days ago"
+    },
+    {
+      "title": "LiconStudio (LiconStudio) - Hugging Face",
+      "url": "https://huggingface.co/LiconStudio/datasets",
+      "snippet": "User profile of LiconStudio on Hugging Face"
+    },
+    {
+      "title": "Ltx2.3-Licon-VBVR-I2V-390K-R32.safetensors · LiconStudio/Ltx2.3-VBVR ...",
+      "url": "https://huggingface.co/LiconStudio/Ltx2.3-VBVR-lora-I2V/blob/main/Ltx2.3-Licon-VBVR-I2V-390K-R32.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiconStudio AI Models | AI Market Cap",
+      "url": "https://aimarketcap.tech/providers/liconstudio",
+      "snippet": "Explore all AI models by LiconStudio. Official pricing posture, rankings, benchmark coverage, and market-value signals on AI Market Cap."
+    },
+    {
+      "title": "LiconStudio (LiconStudio) - Hugging Face",
+      "url": "https://huggingface.co/LiconStudio/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-No-MTP",
+  "slug": "gittensor-model-hub-qwen3-8-27b-nvfp4-rtx5090-no-mtp",
+  "author": "gittensor-model-hub",
+  "url": "https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-No-MTP",
+  "created_at": "2026-08-19T07:00:16.000Z",
+  "updated_at": "2026-08-19T07:00:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "modelopt",
+    "nvidia",
+    "rtx-5090",
+    "blackwell",
+    "quantization",
+    "qwen3.8",
+    "vllm",
+    "sglang",
+    "conversational",
+    "base_model:gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090",
+    "base_model:quantized:gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15193246960,
+  "parameters_human": "15.19B",
+  "storage_bytes": 19756558408,
+  "storage_human": "19.8 GB",
+  "base_model": "gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090 at main",
+      "url": "https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-NVFP4-RTX5090: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-nvfp4-rtx5090-gittensor-model-hub",
+      "snippet": "Overview Qwen3.8-27B-NVFP4-RTX5090 is a quantized checkpoint of Alibaba&#x27;s Qwen3.8-27B language model optimized for NVIDIA RTX 5090 GPUs using NVIDIA&#x27;s Model Optimizer tool. Built by gittensor-model-hub, this checkpoint compresses the original 53 GB BF16 model to 18.8 GB in VRAM while maintaining the full native 262,144-token context window on a 32 GB RTX 5090. The model uses NVFP4 (W4A4 ..."
+    },
+    {
+      "title": "GitHub - devbauerflorian/qwen3.8-27b-rtx5090: Self-contained Docker ...",
+      "url": "https://github.com/devbauerflorian/qwen3.8-27b-rtx5090",
+      "snippet": "Self-contained Docker deployment of Qwen3.8-27B (NVFP4) on a single RTX 5090: 27B model, full 256K-token context (FP8 KV), OpenAI-compatible API via vLLM with reasoning + tool calling, caddy Basic-..."
+    },
+    {
+      "title": "Qwen3.8 27B NVFP4 RTX5090 by gittensor-model-hub",
+      "url": "https://llm-explorer.com/model/gittensor-model-hub%2FQwen3.8-27B-NVFP4-RTX5090,3GTDSJKETUAS2CtkUTm8Er",
+      "snippet": "Qwen3.8 27B NVFP4 RTX5090 is an open-source 27b LLM by gittensor-model-hub. VRAM 20.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Architecture graph for gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090.",
+      "url": "https://hfviewer.com/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090",
+      "snippet": "A 9.57B Qwen3.5-derived agent model tuned on 3,346 Fable reasoning traces, with Hermes tool calling and an MTP head. The hybrid decoder interleaves 24 Gated-DeltaNet linear-attention layers with eight full-attention layers."
+    }
+  ]
+}

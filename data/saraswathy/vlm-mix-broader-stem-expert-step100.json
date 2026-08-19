@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-mix-broader-stem-expert-step100",
+  "slug": "saraswathy-vlm-mix-broader-stem-expert-step100",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100",
+  "created_at": "2026-08-19T10:51:17.000Z",
+  "updated_at": "2026-08-19T10:51:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3-vl",
+    "vision-language-model",
+    "vlm-mix",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 528557784,
+  "storage_human": "529 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 218 ranked models and 394 tracked AI models across 437 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Saraswathy Amjith",
+      "url": "https://saraamjith.com/saraamjith.html",
+      "snippet": "Teaching models to identify and recover from flawed reasoning chains using reinforcement learning techniques to improve mathematical problem-solving capabilities."
+    },
+    {
+      "title": "AI Benchmarks: 437 LLM Evaluations Ranked (August 2026)",
+      "url": "https://benchlm.ai/benchmarks",
+      "snippet": "BenchLM tracks 437 AI benchmarks across coding, agentic, reasoning, math, knowledge, multimodal, instruction following, and multilingual tasks. Each record links the evaluation to its ranked leaderboard and August 2026 data."
+    },
+    {
+      "title": "Open LLM Leaderboard 2026 - Compare Open Source LLM Rankings",
+      "url": "https://llm-stats.com/leaderboards/open-llm-leaderboard",
+      "snippet": "Compare the best open source LLMs in the open LLM leaderboard with LLM rankings, pricing, speed, context windows, and benchmark scores."
+    }
+  ]
+}

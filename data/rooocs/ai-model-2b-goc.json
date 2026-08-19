@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rooocs/ai-model-2b-goc",
+  "slug": "rooocs-ai-model-2b-goc",
+  "author": "rooocs",
+  "url": "https://huggingface.co/rooocs/ai-model-2b-goc",
+  "created_at": "2026-08-11T11:15:37.000Z",
+  "updated_at": "2026-08-19T10:30:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 2146,
+  "trending_score": 0,
+  "parameters": 1342707712,
+  "parameters_human": "1.34B",
+  "storage_bytes": 432800107320,
+  "storage_human": "432.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rooocs/ai-model-2b-goc · Hugging Face",
+      "url": "https://huggingface.co/rooocs/ai-model-2b-goc",
+      "snippet": "rooocs / ai-model-2b-goc like 2 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 2,092 Safetensors Model size 1B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "rooocs (e) - Hugging Face",
+      "url": "https://huggingface.co/rooocs/models",
+      "snippet": "rooocs&#x27;s models2 Sort: Recently updated rooocs/ai-model-2b-goc 1B•Updated 4 days ago• 2.12k • 2"
+    },
+    {
+      "title": "ai-model-2b-goc API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/rooocs/ai-model-2b-goc",
+      "snippet": "Run ai-model-2b-goc with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Best <2B model : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/18pz5bh/best_2b_model/",
+      "snippet": "Subreddit to discuss about Llama, the large language model created by Meta AI."
+    }
+  ]
+}

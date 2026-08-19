@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Orangerl/umm-2_3-ckpt",
+  "slug": "orangerl-umm-2_3-ckpt",
+  "author": "Orangerl",
+  "url": "https://huggingface.co/Orangerl/umm-2_3-ckpt",
+  "created_at": "2026-08-19T08:15:00.000Z",
+  "updated_at": "2026-08-19T08:34:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "multimodal",
+    "qwen3-vl",
+    "unified-model",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46733144885,
+  "storage_human": "46.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orangerl/umm · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/Orangerl/umm",
+      "snippet": "Orangerl / umm like 0 Safetensors multimodal qwen3-vl covt segmentation depth training-bundle License:other Model card FilesFiles and versions xet Community Copy to bucket new UMM Stage-2 portable training bundle Current status (2026-08-11) Download and deploy Included artifacts Licensing"
+    },
+    {
+      "title": "Orangerl/multi-wam · Hugging Face",
+      "url": "https://huggingface.co/Orangerl/multi-wam",
+      "snippet": "This repository is the direct, auditable handoff for the Multi-WAM RoboTwin2.0 experiment. The latest snapshot is 2026-08-11: World-v6 main training is complete at step 97,314, its EMA branch is selected, the predicted-future cache is complete, Action-v6 has a portable step- 10,000 checkpoint, and an intentionally compressed 22k-step Action continuation is running."
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt. Today, there are thousands of models, fine tuned to excel at specific styles, genres, or themes. Model Formats"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

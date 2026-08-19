@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/OmniKimi-504M",
+  "slug": "prannesshkva-omnikimi-504m",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/OmniKimi-504M",
+  "created_at": "2026-08-19T06:45:04.000Z",
+  "updated_at": "2026-08-19T07:36:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "omni_kimi",
+    "omni-kimi",
+    "mamba",
+    "moe",
+    "multimodal",
+    "any-to-any",
+    "ssm",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 504429976,
+  "parameters_human": "504.4M",
+  "storage_bytes": 3026827621,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-19T10:32:10.591Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Prannessh KVA | Posts",
+      "url": "https://prannesshkva.vercel.app/posts.html",
+      "snippet": "Manakizharchi AI — an end-to-end AI system built to analyze emotional sentiment and audience perception across textual content and Instagram posts. Combines classical NLP with LLMs and RAG to model complex human responses like ambiguity and sarcasm."
+    },
+    {
+      "title": "Prannessh KVA prannesshkva - GitHub",
+      "url": "https://github.com/prannesshkva",
+      "snippet": "Highly driven AI and Software Engineering student with proven expertise bridging Data Science, Backend Infrastructure, and Distributed Systems. - prannesshkva"
+    },
+    {
+      "title": "Kimi Linear vs GPT-5.4 mini — Benchmarks Compared",
+      "url": "https://aireleasetracker.com/compare/moonshot/kimi-linear/openai/gpt-5.4-mini",
+      "snippet": "Compare Kimi Linear (Moonshot AI, Oct 2025) and GPT-5.4 mini (OpenAI, Mar 17 2026) side by side. Parameters, context window, benchmarks, and release-date delta."
+    },
+    {
+      "title": "Comprehensive Analysis of Xiaomi MiMo V2 Pro and Omni: How Powerful Is ...",
+      "url": "https://help.apiyi.com/en/xiaomi-mimo-v2-pro-omni-hunter-alpha-api-guide-en.html",
+      "snippet": "The most dramatic AI event of March 2026: An anonymous model dubbed \"Hunter Alpha\" quietly appeared on OpenRouter, burning through 500 billion tokens a week with performance rivaling GPT-5.2 and Claude Opus 4.6. Developers worldwide were buzzing, asking, \"Is this DeepSeek V4?\" The answer caught everyone off guard—it was Xiaomi&#x27;s MiMo V2 Pro. A smartphone"
+    }
+  ]
+}

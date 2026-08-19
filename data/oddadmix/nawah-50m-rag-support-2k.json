@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "oddadmix/Nawah-50M-RAG-Support-2K",
+  "slug": "oddadmix-nawah-50m-rag-support-2k",
+  "author": "oddadmix",
+  "url": "https://huggingface.co/oddadmix/Nawah-50M-RAG-Support-2K",
+  "created_at": "2026-08-19T04:16:58.000Z",
+  "updated_at": "2026-08-19T04:17:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "arabic",
+    "msa",
+    "rag",
+    "customer-support",
+    "grounded-qa",
+    "grpo",
+    "small-language-model",
+    "quantized",
+    "llama.cpp",
+    "conversational",
+    "ar",
+    "dataset:oddadmix/arabic-rag-support-25K",
+    "dataset:oddadmix/arabic-rag-chat-30K",
+    "dataset:oddadmix/arabic-rag-chat-grpo-5K",
+    "base_model:oddadmix/50M-2048-Emhotob",
+    "base_model:quantized:oddadmix/50M-2048-Emhotob",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 51787264,
+  "parameters_human": "51.8M",
+  "storage_bytes": 198759129,
+  "storage_human": "199 MB",
+  "base_model": "oddadmix/50M-2048-Emhotob",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oddadmix/Nawah-50M-RAG-Support-Demo at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/oddadmix/Nawah-50M-RAG-Support-Demo/tree/main",
+      "snippet": "1 contributor History:3 commits oddadmix Update app.py 5241725 verified2 days ago __pycache__Nawah-50M RAG demo: editable context, 9 held-out examples2 days ago .gitattributes Safe 1.52 kBinitial commit2 days ago README.md Safe 1.17 kBNawah-50M RAG demo: editable context, 9 held-out examples2 days ago app.py Safe 9.47 kBUpdate app.py2 days ago ..."
+    },
+    {
+      "title": "Nawah 50M Arabic RAG - a Hugging Face Space by oddadmix",
+      "url": "https://huggingface.co/spaces/oddadmix/Nawah-50M-RAG-Support-Demo",
+      "snippet": "Nawah-50M-RAG-Support-GRPO — نموذج عربي بحجم 51.8 مليون معامل يجيب عن أسئلة العملاء بالفصحى اعتماداً على السياق المعطى فقط ، ويعتذر بأدب إذا لم تكن الإجابة موجودة فيه."
+    },
+    {
+      "title": "Oddadmix (Ahmed Wasfy) · GitHub",
+      "url": "https://github.com/Oddadmix",
+      "snippet": "Oddadmix has 83 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "50M 2048 Emhotob by oddadmix — VRAM 0.2GB, 2K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/oddadmix%2F50M-2048-Emhotob,7GAmmMJRucmhUIt26wuer",
+      "snippet": "50M 2048 Emhotob is an open-source 50m LLM by oddadmix. VRAM 0.2GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "How to Build a RAG System with Claude API (Complete Tutorial 2026) — AI ...",
+      "url": "https://aiforanything.io/blog/how-to-build-rag-system-claude-api-tutorial-2026",
+      "snippet": "Step-by-step tutorial to build a production-ready Retrieval-Augmented Generation system using the Claude API, Python, and ChromaDB. Includes full code examples."
+    }
+  ]
+}

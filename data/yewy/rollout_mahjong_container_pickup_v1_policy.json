@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yewy/rollout_mahjong_container_pickup_v1_policy",
+  "slug": "yewy-rollout_mahjong_container_pickup_v1_policy",
+  "author": "Yewy",
+  "url": "https://huggingface.co/Yewy/rollout_mahjong_container_pickup_v1_policy",
+  "created_at": "2026-08-19T09:37:16.000Z",
+  "updated_at": "2026-08-19T09:38:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Yewy/mahjong_container_pickup_224",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716872,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yewy/rollout_mahjong_table_pickup_finetune_v1_policy · Hugging Face",
+      "url": "https://huggingface.co/Yewy/rollout_mahjong_table_pickup_finetune_v1_policy",
+      "snippet": "Instructions to use Yewy/rollout_mahjong_table_pickup_finetune_v1_policy with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Yewy (Ethan Yew) - Hugging Face",
+      "url": "https://huggingface.co/Yewy/models",
+      "snippet": "Yewy&#x27;s models9 Sort: Recently updated Yewy/test_mahjong_pickup_v4.1_wrist_only_policy Robotics • 51.7M•Updated 9 days ago• 36"
+    },
+    {
+      "title": "Built-in policies for model deployment - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/model-deployment-policy",
+      "snippet": "Govern AI model deployment in Microsoft Foundry portal with built-in Azure Policy definitions. Approve specific models and enforce eligibility requirements such as source and lifecycle status."
+    },
+    {
+      "title": "MahjongAI/COMMANDS.md at master · Skianyan/MahjongAI · GitHub",
+      "url": "https://github.com/Skianyan/MahjongAI/blob/master/COMMANDS.md",
+      "snippet": "Trains two models and merges them into one checkpoint with model_type: policy_with_discard_head: Global policy — standard action vocabulary policy network. Discard specialist — 34-type tile classifier used only on discard-only turns (no calls, riichi, or win available). At inference, CompositePolicyAgent routes discard-only turns to the specialist and other turns to the global policy."
+    },
+    {
+      "title": "Kimi API Platform",
+      "url": "https://platform.kimi.ai/",
+      "snippet": "Kimi API Platform, providing the 2.8-trillion-parameter Kimi K3 large language model API with a 1M-token context window and Tool Calling. Professional code generation, intelligent dialogue, and visual reasoning to help developers build AI applications."
+    }
+  ]
+}

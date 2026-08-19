@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "HopitAI/moda-pro-lite-plus",
+  "slug": "hopitai-moda-pro-lite-plus",
+  "author": "HopitAI",
+  "url": "https://huggingface.co/HopitAI/moda-pro-lite-plus",
+  "created_at": "2026-08-19T09:57:05.000Z",
+  "updated_at": "2026-08-19T09:57:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "fashion",
+    "retrieval",
+    "text-to-image",
+    "siglip2",
+    "feature-extraction",
+    "base_model:HopitAI/moda-pro-lite",
+    "base_model:finetune:HopitAI/moda-pro-lite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "HopitAI/moda-pro-lite",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - hopit-ai/Moda: MODA: open fashion retrieval benchmark and ...",
+      "url": "https://github.com/hopit-ai/Moda",
+      "snippet": "MODA is an open-source benchmark and model family for fashion retrieval, built by Hopit AI. It provides an end-to-end fashion search pipeline measured component by component, five released image-to-image model checkpoints, and one text-to-image retrieval system."
+    },
+    {
+      "title": "HopitAI/moda-pro-lite at main - Hugging Face",
+      "url": "https://huggingface.co/HopitAI/moda-pro-lite/tree/main",
+      "snippet": "HopitAI 5 Zero-Shot Image Classification OpenCLIP Safetensors Marqo/marqo-GS-10M fashion retrieval text-to-image siglip2 e-commerce moda Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries How to use HopitAI/moda-pro-lite with OpenCLIP: ... Notebooks main ..."
+    },
+    {
+      "title": "README.md · HopitAI/moda-pro-lite at main - Hugging Face",
+      "url": "https://huggingface.co/HopitAI/moda-pro-lite/blob/main/README.md",
+      "snippet": "MODA Pro Lite A 213M open-weights fashion encoder that beats MODA — the strongest open fashion retrieval system — on catalog search, at full corpus and with statistical significance, from one checkpoint with no serving machinery. By Hopit AI. Weights are open (Apache-2.0); the training and data pipeline are proprietary."
+    },
+    {
+      "title": "Moda/docs/index.html at main · hopit-ai/Moda · GitHub",
+      "url": "https://github.com/hopit-ai/Moda/blob/main/docs/index.html",
+      "snippet": "MODA: open fashion retrieval benchmark and models by Hopit AI. MODA (203M, open source), MODA Pro Lite (213M, open weights), MODA Pro (hosted). Full-corpus benchmarks vs FashionSigLIP, SigLIP-SO400M and ZooClaw — one harness, losses shown. #1 open model on LookBench. - Moda/docs/index.html at main · hopit-ai/Moda"
+    },
+    {
+      "title": "Moda Series Finale - Hopit.ai",
+      "url": "https://hopitai.substack.com/p/moda-series-finale",
+      "snippet": "We finish the series having beaten FashionSigLIP, the strongest open fashion model we know of, on both text-to-image and image-to-image search, without losing a single benchmark on either. This is the last post in the MODA series. Before the final result, here is the short version of how we got here, with links if you want the full story on any ..."
+    }
+  ]
+}

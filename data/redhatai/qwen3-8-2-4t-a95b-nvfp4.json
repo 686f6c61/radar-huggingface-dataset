@@ -5,7 +5,7 @@
   "author": "RedHatAI",
   "url": "https://huggingface.co/RedHatAI/Qwen3.8-2.4T-A95B-NVFP4",
   "created_at": "2026-08-12T23:17:09.000Z",
-  "updated_at": "2026-08-18T19:59:39.000Z",
+  "updated_at": "2026-08-19T01:28:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 151,
+  "downloads_30d": 379,
   "trending_score": 0,
   "parameters": 1380546965032,
   "parameters_human": "1380.55B",

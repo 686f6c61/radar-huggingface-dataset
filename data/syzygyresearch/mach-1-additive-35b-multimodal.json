@@ -5,7 +5,7 @@
   "author": "SyzygyResearch",
   "url": "https://huggingface.co/SyzygyResearch/Mach-1-Additive-35B-Multimodal",
   "created_at": "2026-08-05T01:14:37.000Z",
-  "updated_at": "2026-08-15T00:35:20.000Z",
+  "updated_at": "2026-08-17T23:36:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,7 +16,7 @@
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 185,
+  "downloads_30d": 206,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

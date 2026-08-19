@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Luth-2-2B-GGUF",
+  "slug": "mradermacher-luth-2-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Luth-2-2B-GGUF",
+  "created_at": "2026-08-19T06:52:35.000Z",
+  "updated_at": "2026-08-19T10:04:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "french",
+    "conversational",
+    "edge",
+    "qwen",
+    "fr",
+    "dataset:kurakurai/Luth-2-Post-Training-SFT",
+    "dataset:kurakurai/Luth-2-Post-Training-RL",
+    "base_model:kurakurai/Luth-2-2B",
+    "base_model:quantized:kurakurai/Luth-2-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 19103049536,
+  "storage_human": "19.1 GB",
+  "base_model": "kurakurai/Luth-2-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Luth-LFM2-1.2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Luth-LFM2-1.2B-GGUF",
+      "snippet": "For a convenient overview and download list, visit our model page for this model. weighted/imatrix quants are available at https://huggingface.co/mradermacher/Luth-LFM2-1.2B-i1-GGUF"
+    },
+    {
+      "title": "mradermacher/Luth-LFM2-1.2B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Luth-LFM2-1.2B-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    },
+    {
+      "title": "Excited to share our latest work : Luth-2 ! Building on ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/guillaume-pradel_excited-to-share-our-latest-work-luth-2-activity-7492882798538678273-BliY",
+      "snippet": "Excited to share our latest work : Luth-2 ! 🚀 Building on our previous generation, Luth-2-0.8B and Luth-2-2B set a new state of the art for French small language models while keeping strong ..."
+    }
+  ]
+}

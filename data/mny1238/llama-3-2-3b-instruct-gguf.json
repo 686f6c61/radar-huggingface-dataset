@@ -31,12 +31,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1137,
   "trending_score": 0,
   "parameters": 3212749888,
   "parameters_human": "3.21B",
-  "storage_bytes": 148814455757,
-  "storage_human": "148.8 GB",
+  "storage_bytes": 60083081967,
+  "storage_human": "60.1 GB",
   "base_model": "meta-llama/Llama-3.2-3B-Instruct",
   "formats": [
     "gguf"

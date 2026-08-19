@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yogeshsaini1110/gsd",
+  "slug": "yogeshsaini1110-gsd",
+  "author": "yogeshsaini1110",
+  "url": "https://huggingface.co/yogeshsaini1110/gsd",
+  "created_at": "2026-08-19T06:07:39.000Z",
+  "updated_at": "2026-08-19T06:07:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yogeshsaini1110/testagainmd · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/yogeshsaini1110/testagainmd",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yogeshsaini1110/rest_md_file · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/yogeshsaini1110/rest_md_file",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yogesh Saini (@yogesh1110) • Instagram photos and videos",
+      "url": "https://www.instagram.com/yogesh1110/",
+      "snippet": "144 Followers, 208 Following, 9 Posts - Yogesh Saini (@yogesh1110) on Instagram: \"\""
+    },
+    {
+      "title": "yogesh saini (@yogeshsaini1110) • Instagram photos and videos",
+      "url": "https://www.instagram.com/yogeshsaini1110/",
+      "snippet": "Jai shree Shyam136 followers · 291 following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    },
+    {
+      "title": "GSD Rug Pull Unleashed: How An Abandoned AI Project Became Your Worst ...",
+      "url": "https://undercodetesting.com/gsd-rug-pull-unleashed-how-an-abandoned-ai-project-became-your-worst-nightmare/",
+      "snippet": "The GSD incident follows a now‑familiar pattern: a promising AI tool secures a hackathon win, launches a token, and is then abandoned by its founder. The founder, who operated under the handle @official_taches, publicly declared the project obsolete, posted a farewell message, and deleted his social accounts."
+    }
+  ]
+}

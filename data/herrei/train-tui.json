@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "HerRei/train-tui",
+  "slug": "herrei-train-tui",
+  "author": "HerRei",
+  "url": "https://huggingface.co/HerRei/train-tui",
+  "created_at": "2026-08-18T15:06:26.000Z",
+  "updated_at": "2026-08-19T09:50:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - HerRei/train-tui: Lightweight, dependency-free terminal UI for ...",
+      "url": "https://github.com/HerRei/train-tui",
+      "snippet": "Lightweight, dependency-free terminal UI for monitoring AI training runs. Pure C, no ncurses, no Python. Pluggable profiles (BasicSR, Lightning, HuggingFace, custom) and multi-GPU backend (AMD sysfs, NVIDIA nvidia-smi). - HerRei/train-tui"
+    },
+    {
+      "title": "HerRei/train-tui · Hugging Face",
+      "url": "https://huggingface.co/HerRei/train-tui",
+      "snippet": "train-tui A lightweight, dependency-free terminal UI for monitoring (almost) any deep-learning training run. Pure C, no ncurses, no Python, no external libraries — just ANSI escape codes and sysfs/nvidia-smi reads."
+    },
+    {
+      "title": "AutoTrain - Hugging Face",
+      "url": "https://huggingface.co/autotrain",
+      "snippet": "What is AutoTrain? AutoTrain is an automatic way to train and deploy state-of-the-art Machine Learning models, seamlessly integrated with the Hugging Face ecosystem. What Machine Learning tasks are available for training? Available today: text classification, entity recognition, summarization, question answering, translation, tabular classification and regression, image classification and LLM ..."
+    },
+    {
+      "title": "aitraining/docs/cli/TUI.md at main - GitHub",
+      "url": "https://github.com/modelturnedgeek/aitraining/blob/main/docs/cli/TUI.md",
+      "snippet": "AITraining Terminal User Interface (TUI) The AITraining TUI provides a full-screen, keyboard-driven interface for configuring and running AI model training. It offers an intuitive way to browse, filter, and edit parameters without memorizing command-line flags."
+    },
+    {
+      "title": "Tui Model - eBay UK",
+      "url": "https://www.ebay.co.uk/shop/tui-model?_nkw=tui+model",
+      "snippet": "Explore a wide range of our Tui Model selection. Find top brands, exclusive offers, and unbeatable prices on eBay UK. Shop now for fast shipping and easy returns!"
+    }
+  ]
+}

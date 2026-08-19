@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "optimum-intel-internal-testing/tiny-random-gemma4-dflash",
+  "slug": "optimum-intel-internal-testing-tiny-random-gemma4-dflash",
+  "author": "optimum-intel-internal-testing",
+  "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-gemma4-dflash",
+  "created_at": "2026-08-19T10:19:04.000Z",
+  "updated_at": "2026-08-19T10:20:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2112,
+  "parameters_human": "2112",
+  "storage_bytes": 10704,
+  "storage_human": "10704 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Optimum Intel Internal Testing - Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/models",
+      "snippet": "Org profile for Optimum Intel Internal Testing on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "optimum-intel-internal-testing/tiny-random-gemma4-moe · Hugging Face",
+      "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-gemma4-moe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 Models optimized for Intel Hardware: Enabling instant ...",
+      "url": "https://community.intel.com/t5/Blogs/Tech-Innovation/Artificial-Intelligence-AI/Gemma-4-Models-optimized-for-Intel-Hardware-Enabling-instant/post/1742983",
+      "snippet": "We&#x27;re excited to announce Intel&#x27;s strategic partnership with Google to deliver optimized Gemma 4 models on Intel hardware from day one. This collaboration enables developers to leverage the power of Google&#x27;s latest AI models on Intel hardware: Intel® Core™ Ultra processors, Intel® Xeon® CPUs, and In..."
+    },
+    {
+      "title": "Gemma 4 Benchmark: Complete Performance Guide & Local AI Tests 2026",
+      "url": "https://www.gemma4.wiki/guide/gemma4-benchmark",
+      "snippet": "Analyze the latest Gemma 4 benchmark results. Explore performance metrics for the 2B, 4B, 26B, and 31B models, including MMLU Pro scores and local hardware testing."
+    },
+    {
+      "title": "GitHub - SenthilkumarAI/Optimum-Intel: Optimum Intel: Accelerate ...",
+      "url": "https://github.com/SenthilkumarAI/Optimum-Intel",
+      "snippet": "Gaudi To train your model on Intel Gaudi AI Accelerators (HPU), check out Optimum Habana which provides a set of tools enabling easy model loading, training and inference on single- and multi-HPU settings for different downstream tasks."
+    }
+  ]
+}

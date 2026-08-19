@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Quazim0t0/Byrne-100M-Ultra-MC",
+  "slug": "quazim0t0-byrne-100m-ultra-mc",
+  "author": "Quazim0t0",
+  "url": "https://huggingface.co/Quazim0t0/Byrne-100M-Ultra-MC",
+  "created_at": "2026-08-19T04:18:45.000Z",
+  "updated_at": "2026-08-19T09:44:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gguf",
+    "byrne",
+    "spikewhale",
+    "looped-transformer",
+    "memory-cache",
+    "mla",
+    "small-language-model",
+    "text-generation",
+    "en",
+    "arxiv:2602.24281",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113916322,
+  "parameters_human": "113.9M",
+  "storage_bytes": 3840965350,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quazim0t0 (Dean Byrne) - Hugging Face",
+      "url": "https://huggingface.co/Quazim0t0/spaces",
+      "snippet": "Joined HuggingFace: 1-20-2025 / DaisyChainAI🌼 / SmallLM&#x27;s / San Francisco / See you tomorrow."
+    },
+    {
+      "title": "Quazim0t0 (Dean Byrne) - Hugging Face",
+      "url": "https://huggingface.co/Quazim0t0/datasets",
+      "snippet": "Attaching the AMOE to any model I&#x27;ve tried has created expanded or improved behavioral accumulations. They do have downsides but their upsides are very experimentally exciting. I&#x27;ve distilled multiple vits, multiple berts, and have begun distilling berts into AlephLM structures successfully. This is overall very exciting for me."
+    },
+    {
+      "title": "Quazim0t0 Model Family ONNX Exports Released - LinkedIn",
+      "url": "https://www.linkedin.com/posts/dean-byrne-02a28b191_onnx-library-lm-demo-a-hugging-face-space-activity-7482191053882646528-Wnbl",
+      "snippet": "ONNX exports of the Quazim0t0 small model family. Includes language models (Byrne / Escarda), the Byrne ASR and TTS models, and the Byrne-VLM vision encoder."
+    },
+    {
+      "title": "Quazim0t0 AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/quazim0t0/",
+      "snippet": "Quazim0t0 AI model benchmark profile: 65 models, 3 covered benchmarks, and source-linked evaluation rows on BenchmarkList."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

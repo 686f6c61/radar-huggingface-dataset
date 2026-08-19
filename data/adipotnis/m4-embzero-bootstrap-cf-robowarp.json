@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "adipotnis/m4-embzero-bootstrap-cf-robowarp",
+  "slug": "adipotnis-m4-embzero-bootstrap-cf-robowarp",
+  "author": "adipotnis",
+  "url": "https://huggingface.co/adipotnis/m4-embzero-bootstrap-cf-robowarp",
+  "created_at": "2026-08-19T07:43:53.000Z",
+  "updated_at": "2026-08-19T07:44:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "pi0.5",
+    "libero",
+    "openpi",
+    "counterfactual",
+    "flow-matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441287108,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adipotnis (Aditya Potnis) - Hugging Face",
+      "url": "https://huggingface.co/adipotnis/datasets",
+      "snippet": "User profile of Aditya Potnis on Hugging Face"
+    },
+    {
+      "title": "Aditya Potnis adipotnis - GitHub",
+      "url": "https://github.com/adipotnis",
+      "snippet": "Block or report adipotnis Block user msteamsrecording-sorter msteamsrecording-sorter Public Python 2 tello-projects tello-projects Public Sandbox of projects on Tello Python 1 ros1_bridge_ws ros1_bridge_ws Public Dockerfile 1 1 tendon_multiplexer_arm tendon_multiplexer_arm Public Basic Arduino code to control Tendon actuated Mechanical ..."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2406.17382",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "2026-07-16-m4.5.1-adoption-bootstrap-report.md - GitHub",
+      "url": "https://github.com/cyberdid/ecosystem/blob/main/docs/research/2026-07-16-m4.5.1-adoption-bootstrap-report.md",
+      "snippet": "M4.5.1 adoption-bootstrap completion report Date: 2026-07-16 Scope: universal, model-neutral filesystem adoption of the ecosystem harness into existing repositories"
+    }
+  ]
+}

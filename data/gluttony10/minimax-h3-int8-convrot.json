@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Gluttony10/MiniMax-H3-INT8-CONVROT",
+  "slug": "gluttony10-minimax-h3-int8-convrot",
+  "author": "Gluttony10",
+  "url": "https://huggingface.co/Gluttony10/MiniMax-H3-INT8-CONVROT",
+  "created_at": "2026-08-02T12:40:56.000Z",
+  "updated_at": "2026-08-19T08:00:14.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "text-to-video",
+    "image-to-video",
+    "audio-video-generation",
+    "multimodal",
+    "int8",
+    "image-text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 210865209270,
+  "storage_human": "210.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gluttony10/MiniMax-H3-INT8-CONVROT · Hugging Face",
+      "url": "https://huggingface.co/Gluttony10/MiniMax-H3-INT8-CONVROT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gluttony10/MiniMax-H3-INT8-CONVROT at main - Hugging Face",
+      "url": "https://huggingface.co/Gluttony10/MiniMax-H3-INT8-CONVROT/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "MiniMax H3 (Hailuo AI) - AI Video Workflows, Prompts & Local Deployment Hub Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "Minimax-H3-nvfp4-INT4-INT8-Convrot: Text-to-Video model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/minimax-h3-nvfp4-int4-int8-convrot-abiray",
+      "snippet": "Minimax-H3-nvfp4-INT4-INT8-Convrot is a community-compiled collection of quantized and pruned weights for MiniMax H3, optimized for local inference on..."
+    },
+    {
+      "title": "MiniMax H3 Model Files",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Where can I download official MiniMax H3 model files? Use MiniMaxAI/MiniMax-H3 for the original H3-Base families, ModelScope for the official listing, and Comfy-Org/MiniMax-H3 for the native ComfyUI package."
+    }
+  ]
+}

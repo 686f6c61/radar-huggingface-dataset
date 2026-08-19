@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "elplaguister/patent_classifier_qwen",
+  "slug": "elplaguister-patent_classifier_qwen",
+  "author": "elplaguister",
+  "url": "https://huggingface.co/elplaguister/patent_classifier_qwen",
+  "created_at": "2026-08-19T04:23:36.000Z",
+  "updated_at": "2026-08-19T04:31:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "sentence-similarity",
+    "feature-extraction",
+    "patent-embedding",
+    "korean",
+    "ko",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1203010384,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Patent Classifier (Qwen3-0.6B) - Hugging Face",
+      "url": "https://huggingface.co/spaces/xulab-research/AI_Patent_Classifier_based_on_Qwen3-0.6B",
+      "snippet": "Enter a patent abstract, and the model will predict its categories. You provide the text of the patent summary, and the result is a list of predicted categories with confidence scores."
+    },
+    {
+      "title": "AI Patent Classifier (Qwen3-4B) - Hugging Face",
+      "url": "https://huggingface.co/spaces/xulab-research/AI_Patent_Classifier_based_on_Qwen3-4B",
+      "snippet": "Enter the text of a patent abstract and the tool will tell you which AI subfield it belongs to, such as natural language processing, computer vision, or speech recognition. It returns the most like..."
+    },
+    {
+      "title": "Qwen 2.5 Complete Guide: Alibaba&#x27;s AI Model 2026 | Apatero",
+      "url": "https://apatero.com/blog/qwen-25-complete-guide-alibaba-ai-model-2026",
+      "snippet": "Complete guide to Qwen 2.5, Alibaba&#x27;s open source AI model. Installation, capabilities, comparisons, and practical use cases covered."
+    },
+    {
+      "title": "AI_Patent_Classfication/LLM/qwen_for_classification/finetune ... - GitHub",
+      "url": "https://github.com/fuzhenkang/AI_Patent_Classfication/blob/main/LLM/qwen_for_classification/finetune.py",
+      "snippet": "Contribute to fuzhenkang/AI_Patent_Classfication development by creating an account on GitHub."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}
